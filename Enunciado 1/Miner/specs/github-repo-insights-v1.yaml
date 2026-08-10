@@ -1,0 +1,56 @@
+# specs/github-repo-insights-v1.yaml
+id: "github-repo-insights-v1"
+version: "1.0.0"
+provider: "github-graphql"
+description: "Extrai métricas gerais do repositório, Pull Requests abertos e Issues recentes."
+
+# Query declarativa enviada diretamente à API GraphQL do GitHub
+graphqlQuery: |
+  query GetRepoInsights($owner: String!, $name: String!, $after: String) {
+    repository(owner: $owner, name: $name) {
+      stargazerCount
+      forkCount
+      pullRequests(states: OPEN, first: 50, after: $after) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+        totalCount
+        nodes {
+          id
+          title
+          createdAt
+          additions
+          deletions
+          author {
+            login
+          }
+        }
+      }
+      issues(first: 20, states: OPEN) {
+        totalCount
+      }
+    }
+    rateLimit {
+      cost
+      remaining
+      resetAt
+    }
+  }
+
+# Regras de extração via JSONPath/JMESPath para alimentar a camada analítica
+extractionRules:
+  - metricName: "stars_count"
+    jsonPath: "$.repository.stargazerCount"
+
+  - metricName: "forks_count"
+    jsonPath: "$.repository.forkCount"
+
+  - metricName: "open_prs_count"
+    jsonPath: "$.repository.pullRequests.totalCount"
+
+  - metricName: "open_prs_list"
+    jsonPath: "$.repository.pullRequests.nodes[*]"
+
+  - metricName: "open_issues_count"
+    jsonPath: "$.repository.issues.totalCount"

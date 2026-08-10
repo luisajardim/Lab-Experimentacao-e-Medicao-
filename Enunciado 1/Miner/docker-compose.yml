@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # 1. Banco de Dados Analítico + Raw Data (JSONB)
+  postgres:
+    image: postgres:16-alpine
+    container_name: miner_postgres
+    environment:
+      POSTGRES_USER: miner_user
+      POSTGRES_PASSWORD: miner_password
+      POSTGRES_DB: repository_miner
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U miner_user -d repository_miner"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. Broker de Filas e Cache de Rate Limit
+  redis:
+    image: redis:7-alpine
+    container_name: miner_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  # 3. Painel Visual para Monitorar as Filas (BullMQ Board / Bull-Board)
+  # Opcional, mas MUITO útil para o grupo visualizar os jobs de mineração
+  redis-insight:
+    image: redis/redisinsight:latest
+    container_name: miner_redis_insight
+    ports:
+      - "5540:5540"
+
+volumes:
+  postgres_data:
+  redis_data:
