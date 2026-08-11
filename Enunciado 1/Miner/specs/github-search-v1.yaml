@@ -1,0 +1,45 @@
+id: "github-search-v1"
+version: "1.0.0"
+provider: "github-graphql"
+description: "Busca repositórios populares e extrai nós de métricas gerais."
+
+graphqlQuery: |
+  query GetPopularRepos($cursor: String) {
+    search(query: "stars:>1 sort:stars-desc", type: REPOSITORY, first: 100, after: $cursor) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        ... on Repository {
+          nameWithOwner
+          createdAt
+          pushedAt
+          primaryLanguage {
+            name
+          }
+          pullRequests(states: MERGED) {
+            totalCount
+          }
+          releases {
+            totalCount
+          }
+          closedIssues: issues(states: CLOSED) {
+            totalCount
+          }
+          totalIssues: issues {
+            totalCount
+          }
+        }
+      }
+    }
+    rateLimit {
+      remaining
+      resetAt
+    }
+  }
+
+# Regras de extração via JSONPath que o index.ts lerá dinamicamente
+extractionRules:
+  - metricName: "repositories"
+    jsonPath: "$.search.nodes[*]"
