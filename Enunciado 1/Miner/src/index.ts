@@ -74,7 +74,27 @@ function saveToCsv(dataList: any[], outputFileName: string) {
   console.log(`\n💾 CSV salvo com sucesso em: ${outputPath}`);
 }
 
-function flattenRepositories(repositories: any[]) {
+/**
+ * RQ01: idade do repositório (em anos), da criação até a data da coleta.
+ */
+function calcularIdadeAnos(createdAt: string, dataColeta: Date): number {
+  const criadoEm = new Date(createdAt);
+  const diffMs = dataColeta.getTime() - criadoEm.getTime();
+  const anos = diffMs / (1000 * 60 * 60 * 24 * 365.25);
+  return parseFloat(anos.toFixed(2));
+}
+
+/**
+ * RQ04: tempo desde a última atualização (em dias), do último push até a data da coleta.
+ */
+function calcularDiasDesdeUltimoPush(pushedAt: string, dataColeta: Date): number {
+  const ultimoPush = new Date(pushedAt);
+  const diffMs = dataColeta.getTime() - ultimoPush.getTime();
+  const dias = diffMs / (1000 * 60 * 60 * 24);
+  return Math.round(dias);
+}
+
+function flattenRepositories(repositories: any[], dataColeta: Date) {
   return repositories.map((repo: any) => {
     const totalIssues = repo.totalIssues?.totalCount || 0;
     const closedIssues = repo.closedIssues?.totalCount || 0;
@@ -83,18 +103,24 @@ function flattenRepositories(repositories: any[]) {
     return {
       nome: repo.nameWithOwner,
       data_criacao: repo.createdAt,
+      idade_anos: calcularIdadeAnos(repo.createdAt, dataColeta),
       ultimo_push: repo.pushedAt,
+      dias_desde_ultima_atualizacao: calcularDiasDesdeUltimoPush(repo.pushedAt, dataColeta),
       linguagem: repo.primaryLanguage?.name || 'N/A',
       merged_prs: repo.pullRequests?.totalCount || 0,
       releases: repo.releases?.totalCount || 0,
       total_issues: totalIssues,
       closed_issues: closedIssues,
       ratio_closed_issues: closedIssuesRatio,
+      data_coleta: dataColeta.toISOString(),
     };
   });
 }
 
 async function run() {
+  // Momento da coleta, usado como referência para RQ01 (idade) e RQ04 (dias desde o último push)
+  const dataColeta = new Date();
+
   try {
     // 2. Carrega a especificação YAML desejada
     const specPath = process.argv[2] || './specs/github-search-v1.yaml';
@@ -141,7 +167,7 @@ async function run() {
 
     // 7. Camada 3: Exportação para CSV consolidado
     const fileName = `${spec.id}_${Date.now()}.csv`;
-    saveToCsv(flattenRepositories(repositories), fileName);
+    saveToCsv(flattenRepositories(repositories, dataColeta), fileName);
 
     console.log('\n🚀 Execução concluída com sucesso!');
   } catch (err: any) {

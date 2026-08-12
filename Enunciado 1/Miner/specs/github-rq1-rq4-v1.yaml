@@ -1,0 +1,35 @@
+id: "github-rq1-rq4-v1"
+version: "1.0.0"
+provider: "github-graphql"
+description: >
+  Coleta repositórios populares com os campos necessários para responder
+  RQ01 (idade do repositório até a data da coleta) e RQ04 (tempo desde a
+  última atualização, em dias). Amostra reduzida (first: 10), usada para
+  implementar e validar a extração individualmente antes de integrar ao
+  script único do grupo.
+
+graphqlQuery: |
+  query GetPopularReposForRQ1RQ4($cursor: String) {
+    search(query: "stars:>1 sort:stars-desc", type: REPOSITORY, first: 10, after: $cursor) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        ... on Repository {
+          nameWithOwner
+          url
+          createdAt
+          pushedAt
+        }
+      }
+    }
+    rateLimit {
+      remaining
+      resetAt
+    }
+  }
+
+extractionRules:
+  - metricName: "repositories"
+    jsonPath: "$.search.nodes[*]"
