@@ -30,7 +30,7 @@ export class GitHubGraphQLProvider implements IMiningProvider {
       try {
         console.log(`[Requisicao] Buscando dados GraphQL... (Cursor: ${endCursor || 'Inicio'})`);
 
-        const response = await fetch(GITHUB_API_URL, {
+        const response: Response = await fetch(GITHUB_API_URL, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

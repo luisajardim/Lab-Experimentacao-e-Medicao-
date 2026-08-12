@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import 'dotenv/config';
 import YAML from 'yaml';
 import jp from 'jsonpath';
 import { Parser } from 'json2csv';
@@ -56,8 +57,25 @@ function saveToCsv(dataList: any[], outputFileName: string) {
     return;
   }
 
-  // Achatamento simples do objeto para colunas legíveis no CSV
-  const flattenedData = dataList.map((repo: any) => {
+  // 1. Garante que o diretório /data existe
+  const dataDir = path.resolve('./data');
+  if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir, { recursive: true });
+  }
+
+  // 2. Converte JSON -> CSV
+  const json2csvParser = new Parser();
+  const csvContent = json2csvParser.parse(dataList);
+
+  // 3. Grava o arquivo na pasta ./data/
+  const outputPath = path.join(dataDir, outputFileName);
+  fs.writeFileSync(outputPath, csvContent, 'utf8');
+
+  console.log(`\n💾 CSV salvo com sucesso em: ${outputPath}`);
+}
+
+function flattenRepositories(repositories: any[]) {
+  return repositories.map((repo: any) => {
     const totalIssues = repo.totalIssues?.totalCount || 0;
     const closedIssues = repo.closedIssues?.totalCount || 0;
     const closedIssuesRatio = totalIssues > 0 ? parseFloat((closedIssues / totalIssues).toFixed(4)) : 0;
@@ -74,22 +92,6 @@ function saveToCsv(dataList: any[], outputFileName: string) {
       ratio_closed_issues: closedIssuesRatio,
     };
   });
-
-  // 1. Garante que o diretório /data existe
-  const dataDir = path.resolve('./data');
-  if (!fs.existsSync(dataDir)) {
-    fs.mkdirSync(dataDir, { recursive: true });
-  }
-
-  // 2. Converte JSON -> CSV
-  const json2csvParser = new Parser();
-  const csvContent = json2csvParser.parse(flattenedData);
-
-  // 3. Grava o arquivo na pasta ./data/
-  const outputPath = path.join(dataDir, outputFileName);
-  fs.writeFileSync(outputPath, csvContent, 'utf8');
-
-  console.log(`\n💾 CSV salvo com sucesso em: ${outputPath}`);
 }
 
 async function run() {
@@ -107,6 +109,8 @@ async function run() {
     // 4. Inicia a mineração (Passando o Target genérico e a Spec lida)
     const miningTarget = { owner: '', repo: '' }; // Pode ser estendido se necessário
     const iterator = provider.fetchRepositoryData(miningTarget, spec);
+    const maxRepositories = 100;
+    const repositories: any[] = [];
 
     for await (const chunk of iterator) {
       console.log(`\n✅ Chunk recebido! Rate Limit Restante: ${chunk.rateLimit.remaining}`);
@@ -122,13 +126,22 @@ async function run() {
 
       const repos = metrics.repositories || [];
 
-      // 7. Camada 3: Exportação para CSV
-      const fileName = `${spec.id}_${Date.now()}.csv`;
-      saveToCsv(repos, fileName);
+      for (const repo of repos) {
+        repositories.push(repo);
+        if (repositories.length >= maxRepositories) {
+          break;
+        }
+      }
 
-      // Limita a 1 página apenas para teste local
-      break;
+      if (repositories.length >= maxRepositories) {
+        console.log(`\n🧮 Limite de ${maxRepositories} repositórios atingido.`);
+        break;
+      }
     }
+
+    // 7. Camada 3: Exportação para CSV consolidado
+    const fileName = `${spec.id}_${Date.now()}.csv`;
+    saveToCsv(flattenRepositories(repositories), fileName);
 
     console.log('\n🚀 Execução concluída com sucesso!');
   } catch (err: any) {
