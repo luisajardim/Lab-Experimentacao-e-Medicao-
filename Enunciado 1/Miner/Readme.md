@@ -121,6 +121,27 @@ REDIS_PORT=6379
 GITHUB_PERSONAL_ACCESS_TOKEN=github_pat_xxxxxxx
 ```
 
+## Como rodar o script de mineração
+
+Depois de configurar o `.env` (passo acima), a mineração roda direto com Node,
+sem precisar do Docker:
+
+```bash
+npm install
+npm run dev -- ./specs/<nome-da-spec>.yaml
+```
+
+Cada spec em `specs/` descreve uma consulta GraphQL diferente. Por exemplo:
+
+```bash
+npm run dev -- ./specs/github-rq1-rq4-v1.yaml
+```
+
+O script pagina automaticamente até atingir o limite configurado em
+`src/index.ts` (`maxRepositories`), imprime o progresso no terminal (rate
+limit, chunks recebidos) e salva o resultado em
+`data/<id-da-spec>_<timestamp>.csv`.
+
 ## Execução com Docker Compose
 
 Subir os serviços:
@@ -151,10 +172,29 @@ docker compose logs -f
 
 | Variável | Descrição | Exemplo |
 |---|---|---|
-| `NODE-ENV` | Ambiente de execução | `development` |
-| `PORT`     | Porta da instância do Miner | `3003` |
-| `DATABASE-URL` | Nível de log | `postgresql://miner_user:miner_password@localhost:5432/repository_miner?schema=public` |
-| `REDIS_HOST` | URL da fonte de dados | `localhost` |
-| `REDIS_PORT` | Token/chave de acesso | `6379` |
-| `GITHUB-PERSONAL-ACCESS-TOKEN` | Diretório de saída dos artefatos | `gh_<seu-token>` |
+| `NODE_ENV` | Ambiente de execução | `development` |
+| `PORT` | Porta da instância do Miner | `3003` |
+| `DATABASE_URL` | String de conexão com o Postgres | `postgresql://miner_user:miner_password@localhost:5432/repository_miner?schema=public` |
+| `REDIS_HOST` | Host do Redis | `localhost` |
+| `REDIS_PORT` | Porta do Redis | `6379` |
+| `GITHUB_PERSONAL_ACCESS_TOKEN` | Token pessoal do GitHub, usado para autenticar a query GraphQL. Gere em GitHub → Settings → Developer settings → Personal access tokens, com escopo de leitura de repositórios públicos (`public_repo` no clássico, ou "Public Repositories (read-only)" no fine-grained). Cada dev usa o seu próprio token, para não estourar o rate limit compartilhado durante os testes. | `ghp_xxxxxxx` ou `github_pat_xxxxxxx` |
+
+## Decisões técnicas do grupo
+
+Estas decisões valem para a coleta e para a análise das RQs, e servem de
+rascunho para a seção de metodologia do relatório final — se algo mudar aqui,
+atualize também o relatório (`../RELATORIO.md`).
+
+- **Definição de "PR aceita" (RQ02):** consideramos aceita a pull request com
+  status `MERGED` no GitHub. Implementado nas specs via
+  `pullRequests(states: MERGED) { totalCount }` (ver
+  `specs/github-search-v1.yaml` e `specs/github-rq2-rq3-v1.yaml`). PRs
+  fechadas sem merge (`CLOSED` sem merge) não contam como aceitas.
+- **Repositórios sem releases (RQ03):** entram no cálculo com o valor `0`
+  (não são excluídos da amostra). Implementado em `src/index.ts`, na função
+  `flattenRepositories`, com o fallback `repo.releases?.totalCount || 0`.
+- **Fonte para "linguagens mais populares" (RQ05):** `[preencher — decisão
+  pendente de quem está responsável pela RQ05: escolher e citar uma única
+  fonte (ex.: TIOBE Index, GitHut ou GitHub Octoverse) e usá-la em todo o
+  laboratório]`.
 
