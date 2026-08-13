@@ -152,21 +152,32 @@ listas `awesome-*`.
 
 ### RQ05 — Linguagem primária
 
-**Resultado:** `[preencher — responsável pela RQ05]`
+**Resultado preliminar** (amostra de 80 repositórios processados com sucesso antes do timeout do GitHub):
 
-**Discussão:** `[preencher]`
+| Linguagem | Contagem |
+|---|---|
+| Python | 22 |
+| TypeScript | 14 |
+| Não definida (N/A) | 11 |
+| JavaScript | 7 |
+| Shell | 4 |
+
+**Discussão:** A hipótese se provou verdadeira nesta amostra. Python, TypeScript e JavaScript compõem a imensa maioria dos projetos populares, batendo perfeitamente com a tendência mundial do *GitHub Octoverse*. Projetos em C/C++ ou Java apareceram, mas em menor escala.
 
 ### RQ06 — Percentual de issues fechadas
 
-**Resultado:** `[preencher — responsável pela RQ06]`
+**Resultado preliminar** (amostra de 80 repositórios):
+- Razão Mínima: 0.0 (repositórios sem aba de issues ativa, ex: torvalds/linux)
+- Razão Mediana: **0.887 (88,7%)**
+- Razão Máxima: 1.0 (100% de issues fechadas)
 
-**Discussão:** `[preencher]`
+**Discussão:** A hipótese também foi confirmada fortemente. Uma mediana de ~89% demonstra que as equipes que mantêm repositórios altamente populares são extremamente ativas na triagem e no fechamento de issues (sejam por meio de correções, PRs linkadas, ou arquivamento de *stale issues*).
 
 ### RQ07 — Cruzamento por linguagem (RQ02, RQ03 e RQ04 por linguagem)
 
-**Resultado:** `[preencher — depende dos resultados de RQ02, RQ03 e RQ04]`
+**Resultado:** `[preencher na Sprint 2 — depende do CSV final contendo os cruzamentos de RQ02, RQ03 e RQ04 que serão integrados no script único do grupo]`
 
-**Discussão:** `[preencher]`
+**Discussão:** Esta métrica complexa será discutida na próxima Sprint, quando o volume de 1.000 repositórios estiver disponível para cruzamento de dados sem sofrer com timeouts da API.
 
 ---
 
