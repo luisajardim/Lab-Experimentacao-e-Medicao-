@@ -5,7 +5,9 @@ description: "Busca repositórios populares e extrai nós de métricas gerais."
 
 graphqlQuery: |
   query GetPopularRepos($cursor: String) {
-    search(query: "stars:>1 sort:stars-desc", type: REPOSITORY, first: 100, after: $cursor) {
+    # first: 10 — query pesada (múltiplos campos agregados) causava timeout HTTP 502 com valores maiores.
+    # O loop em index.ts pagina automaticamente até coletar os 100 repositórios totais.
+    search(query: "stars:>1 sort:stars-desc", type: REPOSITORY, first: 10, after: $cursor) {
       pageInfo {
         hasNextPage
         endCursor
