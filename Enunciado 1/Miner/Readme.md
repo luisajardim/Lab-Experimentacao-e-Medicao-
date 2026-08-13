@@ -193,8 +193,5 @@ atualize também o relatório (`../RELATORIO.md`).
 - **Repositórios sem releases (RQ03):** entram no cálculo com o valor `0`
   (não são excluídos da amostra). Implementado em `src/index.ts`, na função
   `flattenRepositories`, com o fallback `repo.releases?.totalCount || 0`.
-- **Fonte para "linguagens mais populares" (RQ05):** `[preencher — decisão
-  pendente de quem está responsável pela RQ05: escolher e citar uma única
-  fonte (ex.: TIOBE Index, GitHut ou GitHub Octoverse) e usá-la em todo o
-  laboratório]`.
+- **Fonte para "linguagens mais populares" (RQ05):** Escolhemos utilizar o **GitHub Octoverse** como nossa referência oficial, uma vez que ele reflete a atividade real dos desenvolvedores na mesma plataforma de onde estamos extraindo os dados (GitHub), garantindo maior consistência para a nossa análise.
 

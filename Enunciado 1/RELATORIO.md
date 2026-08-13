@@ -53,16 +53,13 @@ ou ferramentas que já atingiram um estado de maturidade e não precisam de
 mudanças constantes.
 
 **RQ05 — Sistemas populares são escritos nas linguagens mais populares?**
-Hipótese: `[preencher — responsável pela RQ05]`
-*(lembrem de definir e citar a fonte usada para "linguagens mais populares" —
-ex.: TIOBE Index, GitHut ou Octoverse do GitHub — e manter a mesma referência
-no restante do laboratório.)*
+Hipótese: Sim. Baseando-se no **GitHub Octoverse**, linguagens como JavaScript, Python e TypeScript dominam o ecossistema. Esperamos que a maior parte dos repositórios populares utilize essas tecnologias, visto que comunidades grandes impulsionam projetos massivos.
 
 **RQ06 — Sistemas populares possuem um alto percentual de issues fechadas?**
-Hipótese: `[preencher — responsável pela RQ06]`
+Hipótese: Sim. Sistemas muito populares costumam ter ferramentas de CI/CD bem estabelecidas, automações de triagem e muitos colaboradores (mantenedores e comunidade), o que acelera a resolução de bugs e fechamento de issues.
 
 **RQ07 — Sistemas em linguagens mais populares recebem mais contribuição, lançam mais releases e são atualizados com mais frequência?**
-Hipótese: `[preencher — responsável pela RQ07]`
+Hipótese: Sim. Ecossistemas consolidados (como JS/TS e Python) possuem um fluxo de desenvolvimento muito dinâmico. Repositórios nessas linguagens tendem a ter mais PRs (contribuições externas) e serem atualizados com maior constância do que sistemas escritos em linguagens menos populares ou legadas.
 
 ---
 
@@ -89,7 +86,13 @@ coleta (`Miner/src/index.ts`):
 Detalhes de execução e validação técnica estão em
 [`Miner/docs/rq01-rq04.md`](Miner/docs/rq01-rq04.md).
 
-**RQ02 / RQ03 / RQ05 / RQ06 / RQ07** — `[preencher: spec usada, campos extraídos e como a métrica é calculada]`
+**RQ05 / RQ06 / RQ07** — spec [`Miner/specs/github-search-v1.yaml`](Miner/specs/github-search-v1.yaml).
+Extrai a linguagem primária (`primaryLanguage.name`) e a contagem de issues (`closed` e `total`).
+- A métrica da **RQ05** é extraída e será cruzada com os dados do GitHub Octoverse;
+- A métrica da **RQ06** e **RQ07** (`ratio_closed_issues`) é calculada dividindo `closed_issues` por `total_issues`.
+Detalhes de execução e validação técnica individual da amostra (Sprint 1) estão em [`Miner/docs/rq05-rq07.md`](Miner/docs/rq05-rq07.md).
+
+**RQ02 / RQ03** — `[preencher: spec usada, campos extraídos e como a métrica é calculada pelo Alvim]`
 
 ---
 
