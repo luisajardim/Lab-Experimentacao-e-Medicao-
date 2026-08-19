@@ -5,9 +5,9 @@
 > abaixo para RQ01 e RQ04. Não crie um relatório separado por pessoa — edite
 > este arquivo mesmo, substituindo os trechos marcados como `[preencher]`.
 >
-> Status atual: Sprint 2 (Lab01S02). O dataset final de 1.000 repositórios foi
-> coletado (`Miner/data/1000_popular_repos.csv`, Issue #8). RQ01 e RQ04 já têm
-> resultado final sobre esse dataset completo, com validação de consistência e
+> Status atual: estamos na Sprint 2 (Lab01S02). Já temos o dataset final de
+> 1.000 repositórios (`Miner/data/1000_popular_repos.csv`, Issue #8), e RQ01 e
+> RQ04 já foram checadas em cima dele, com validação de consistência e
 > outliers (Issue #9).
 
 ## Sumário
@@ -23,19 +23,26 @@ Link do repositório/GitHub Projects do grupo: `[preencher]`
 
 ## 1. Introdução e hipóteses informais
 
-Estas hipóteses foram escritas antes de qualquer análise dos dados coletados,
-como ponto de partida para depois compararmos com o que os números realmente
-mostram.
+As hipóteses abaixo foram escritas antes de olharmos qualquer dado coletado —
+a ideia é justamente poder comparar depois o que a gente imaginava com o que
+os números de fato mostraram.
 
 **RQ01 — Sistemas populares são maduros/antigos?**
-Nossa expectativa é que sim. Um repositório dificilmente acumula milhares de
-estrelas da noite para o dia: normalmente essa popularidade se constrói ao
-longo de anos, conforme o projeto ganha visibilidade, uso recorrente e
-recomendações dentro da comunidade. Por isso esperamos encontrar poucos
-repositórios com menos de um ou dois anos de vida entre os mais estrelados, e
-uma concentração maior na faixa de 5 a 15 anos. Os casos recentes que ainda
-assim aparecem no topo provavelmente são exceções — algo que viralizou muito
-rápido ou recebeu forte divulgação externa.
+A gente acha que sim. É difícil um repositório juntar milhares de estrelas de
+um dia pro outro; isso normalmente vem de anos ganhando visibilidade e sendo
+recomendado dentro da comunidade. Por isso esperamos ver poucos repositórios
+com menos de um ou dois anos entre os mais estrelados, e bastante coisa
+concentrada na faixa de 5 a 15 anos. Quando aparecer algum caso recente no
+topo, imaginamos que seja algo que viralizou rápido ou pegou muita divulgação
+de uma vez.
+
+*Depois do dataset completo (Issues #8 e #9):* a hipótese se sustentou quase
+sem ajuste. A única coisa que mudaria na redação é chamar os repositórios
+jovens de "exceção" — os 13,9% com menos de 2 anos não aparecem como outlier
+em nenhum teste estatístico (critério IQR), então não são um caso anômalo
+isolado, são só a ponta mais nova de uma distribuição contínua, puxada
+provavelmente pela onda de ferramentas de IA/agentes de código que surgiu em
+2025-2026.
 
 **RQ02 — Sistemas populares recebem muita contribuição externa?**
 Hipótese: `[preencher — responsável pela RQ02]`
@@ -44,13 +51,23 @@ Hipótese: `[preencher — responsável pela RQ02]`
 Hipótese: `[preencher — responsável pela RQ03]`
 
 **RQ04 — Sistemas populares são atualizados com frequência?**
-Acreditamos que a maioria está sim sendo atualizada com frequência, já que
-mais visibilidade tende a atrair mais colaboradores e, consequentemente, mais
-atividade de manutenção. Ao mesmo tempo, esperamos um grupo menor — mas não
-desprezível — de repositórios que continuam populares sem receber atualizações
-recentes: normalmente listas de recursos (`awesome-*`), materiais educacionais
-ou ferramentas que já atingiram um estado de maturidade e não precisam de
-mudanças constantes.
+Achamos que sim, na maioria dos casos — mais visibilidade costuma trazer mais
+gente contribuindo e, com isso, mais manutenção acontecendo. Mas também
+esperamos um grupo menor de repositórios que continuam populares mesmo sem
+receber atualização recente: coisas como listas `awesome-*`, materiais
+educacionais ou ferramentas que já chegaram num ponto de maturidade e não
+precisam mudar com frequência.
+
+*Depois do dataset completo (Issues #8 e #9):* a parte da frequência se
+confirmou até mais forte do que a gente esperava — a mediana real é de 2 dias,
+bem mais rápido que o "dias/semanas" que tínhamos chutado. Já o segundo grupo
+precisou de correção: não é principalmente lista `awesome-*` ou material
+educacional como imaginamos. Olhando os 196 outliers (critério IQR, 19,6% do
+dataset), os casos mais extremos são sobretudo ferramentas de software
+descontinuadas oficialmente — `atom/atom`, que o GitHub parou de manter em
+2022, e `adobe/brackets`, encerrado pela Adobe, são bons exemplos. Ou seja: o
+grupo "estagnado" tem mais a ver com produto abandonado pelos mantenedores do
+que com conteúdo que naturalmente não muda.
 
 **RQ05 — Sistemas populares são escritos nas linguagens mais populares?**
 Hipótese: Sim. Baseando-se no **GitHub Octoverse**, linguagens como JavaScript, Python e TypeScript dominam o ecossistema. Esperamos que a maior parte dos repositórios populares utilize essas tecnologias, visto que comunidades grandes impulsionam projetos massivos.
@@ -76,15 +93,15 @@ campos da sua parte, para implementar e validar a extração antes de integrar
 ao script único do grupo (essa integração final, com paginação para os 1.000
 repositórios, é entregável da Sprint 2).
 
-**RQ01 e RQ04** — spec [`Miner/specs/github-rq1-rq4-v1.yaml`](Miner/specs/github-rq1-rq4-v1.yaml).
-Extrai `createdAt` e `pushedAt` de cada repositório e calcula, no momento da
-coleta (`Miner/src/index.ts`):
-- `idade_anos` (RQ01) = tempo entre `createdAt` e a data da coleta, em anos;
-- `dias_desde_ultima_atualizacao` (RQ04) = tempo entre `pushedAt` e a data da
+**RQ01 e RQ04** — usa a spec [`Miner/specs/github-rq1-rq4-v1.yaml`](Miner/specs/github-rq1-rq4-v1.yaml),
+que extrai `createdAt` e `pushedAt` de cada repositório. Em cima disso,
+`Miner/src/index.ts` calcula, no momento da coleta:
+- `idade_anos` (RQ01): tempo entre `createdAt` e a data da coleta, em anos;
+- `dias_desde_ultima_atualizacao` (RQ04): tempo entre `pushedAt` e a data da
   coleta, em dias.
 
-Detalhes de execução e validação técnica estão em
-[`Miner/docs/rq01-rq04.md`](Miner/docs/rq01-rq04.md).
+Como rodar, como validamos manualmente e os detalhes da checagem de outliers
+estão em [`Miner/docs/rq01-rq04.md`](Miner/docs/rq01-rq04.md).
 
 **RQ05 / RQ06 / RQ07** — spec [`Miner/specs/github-search-v1.yaml`](Miner/specs/github-search-v1.yaml).
 Extrai a linguagem primária (`primaryLanguage.name`) e a contagem de issues (`closed` e `total`).
@@ -100,8 +117,8 @@ Detalhes de execução e validação técnica individual da amostra (Sprint 1) e
 
 ### RQ01 — Idade do repositório
 
-**Resultado final** (dataset completo, 1.000 repositórios —
-`Miner/data/1000_popular_repos.csv`):
+Números calculados em cima do dataset completo, os 1.000 repositórios de
+`Miner/data/1000_popular_repos.csv`:
 
 | Métrica | Valor |
 |---|---|
@@ -113,7 +130,7 @@ Detalhes de execução e validação técnica individual da amostra (Sprint 1) e
 | Máximo | 18,36 anos |
 | Média | 7,66 anos |
 
-Distribuição por faixa etária:
+Por faixa etária:
 
 | Faixa | Repositórios |
 |---|---|
@@ -124,21 +141,19 @@ Distribuição por faixa etária:
 | 10-15 anos | 296 (29,6%) |
 | 15+ anos | 49 (4,9%) |
 
-**Outliers (método IQR/Tukey):** limites calculados como `Q1 - 1,5×IQR` e
-`Q3 + 1,5×IQR` (IQR = Q3 − Q1 = 7,85 anos), resultando em uma faixa aceitável
-de aproximadamente −8,3 a 23,1 anos. Como nenhum repositório do GitHub pode
-ter mais de ~18 anos (a plataforma foi lançada em 2008) e o mínimo teórico é
-0, **nenhum repositório caiu fora desses limites — zero outliers**. A
-distribuição de idade é bem comportada, sem valores extremos anômalos.
+Pra checar outliers usamos o critério de Tukey: `Q1 - 1,5×IQR` e
+`Q3 + 1,5×IQR`, com IQR = 7,85 anos, dá uma faixa de aceitação de mais ou
+menos −8,3 a 23,1 anos. Como a idade não passa de ~18 anos em nenhum caso (o
+GitHub existe desde 2008) e não tem como ser negativa, nenhum repositório
+ficou fora dessa faixa — zero outliers.
 
-**Discussão:** o dataset completo confirma a hipótese. A mediana de 7,74 anos
-e média muito próxima (7,66) mostram uma distribuição sem grande assimetria —
-a maioria dos repositórios populares está concentrada nas faixas de 5 a 15
-anos (62,7% do total). Apenas 13,9% têm menos de 2 anos, o que sustenta a
-ideia de que popularidade no GitHub se constrói ao longo de vários anos, não
-da noite para o dia. A ausência de outliers estatísticos reforça que essa
-maturidade é a norma entre os repositórios mais populares, não uma tendência
-distorcida por alguns poucos projetos muito antigos.
+**Discussão:** a hipótese se confirma. Mediana em 7,74 anos e média bem
+próxima (7,66) indicam uma distribuição sem grande distorção, com a maior
+parte dos repositórios concentrada entre 5 e 15 anos (62,7% do total). Só
+13,9% têm menos de 2 anos, o que reforça que popularidade no GitHub costuma
+levar tempo pra se construir. E como não apareceu nenhum outlier, essa
+maturidade parece ser mesmo a regra entre os repositórios mais populares, não
+um efeito puxado por um punhado de projetos muito antigos.
 
 ### RQ02 — Contribuição externa
 
@@ -154,7 +169,7 @@ distorcida por alguns poucos projetos muito antigos.
 
 ### RQ04 — Tempo desde a última atualização
 
-**Resultado final** (dataset completo, 1.000 repositórios):
+Mesma base, os 1.000 repositórios:
 
 | Métrica | Valor |
 |---|---|
@@ -166,7 +181,7 @@ distorcida por alguns poucos projetos muito antigos.
 | Máximo | 2.452 dias (~6,7 anos) |
 | Média | 113,8 dias |
 
-Distribuição por faixa:
+Por faixa:
 
 | Faixa | Repositórios |
 |---|---|
@@ -177,11 +192,10 @@ Distribuição por faixa:
 | 91-365 dias | 94 (9,4%) |
 | mais de 365 dias | 115 (11,5%) |
 
-**Outliers (método IQR/Tukey):** IQR = Q3 − Q1 = 48,25 dias, limite superior
-= `Q3 + 1,5×IQR` ≈ **120,6 dias**. **196 repositórios (19,6%) são outliers**
-por esse critério — todos no lado superior (não há outliers baixos, já que o
-valor mínimo possível é 0). Os casos mais extremos são projetos populares e
-conhecidamente abandonados ou descontinuados:
+Aqui o IQR é 48,25 dias, o que dá um limite superior de aproximadamente 120,6
+dias (`Q3 + 1,5×IQR`). Passando disso, 196 repositórios (19,6% do dataset)
+entram como outliers — todos pra cima, já que não tem como um repositório
+ficar "menos que zero" dias sem push. Os casos mais extremos:
 
 | Repositório | Dias sem push |
 |---|---|
@@ -191,21 +205,19 @@ conhecidamente abandonados ou descontinuados:
 | adobe/brackets | 1.529 |
 | atom/atom | 1.324 |
 
-`atom/atom` e `adobe/brackets` são particularmente ilustrativos: são editores
-de código que o GitHub e a Adobe descontinuaram oficialmente, mas que
-continuam populares (muitas estrelas herdadas) mesmo sem receber commits há
-anos.
+Vale destacar `atom/atom` e `adobe/brackets`: são editores de código que o
+GitHub e a Adobe descontinuaram oficialmente, mas que seguem com muitas
+estrelas acumuladas mesmo sem receber commit há anos.
 
-**Discussão:** o dataset completo confirma a hipótese, incluindo o segundo
-grupo previsto. A mediana de apenas 2 dias mostra que quase metade dos
-repositórios (47,7%) foi atualizada no último dia — atividade quase contínua.
-Mas a média (113,8 dias) muito acima da mediana revela uma distribuição
-fortemente assimétrica à direita: existe uma cauda longa de repositórios
-populares e abandonados, confirmada pelos 19,6% classificados como outliers
-estatísticos. Isso é coerente com a hipótese original — popularidade não
-implica manutenção contínua; um repositório pode acumular estrelas ao longo
-dos anos e continuar relevante/referenciado mesmo depois de abandonado pelos
-mantenedores.
+**Discussão:** a hipótese se confirma, e o segundo grupo previsto também
+apareceu. A mediana de 2 dias mostra que quase metade dos repositórios
+(47,7%) recebeu push no último dia — atividade praticamente diária. Mas a
+média (113,8 dias) fica bem acima da mediana, o que denuncia uma distribuição
+puxada por uma cauda longa de repositórios populares que pararam de ser
+mantidos — os mesmos 19,6% que aparecem como outliers. Faz sentido: acumular
+estrelas é algo que fica registrado, então um projeto pode continuar
+"relevante" no GitHub muito tempo depois de os mantenedores terem abandonado
+ele.
 
 ### RQ05 — Linguagem primária
 
