@@ -30,7 +30,9 @@ async function run(): Promise<void> {
   }
 
   const rows = buildCsvRows(records, spec.csv!.columns, collectedAt);
-  const fileName = `${spec.csv!.fileNamePrefix ?? spec.id}_${Date.now()}.csv`;
+  // Terceiro argumento opcional: nome de arquivo fixo (ex.: dataset final "1000_popular_repos.csv").
+  // Sem ele, mantém o comportamento padrão de nome com timestamp.
+  const fileName = process.argv[3] || `${spec.csv!.fileNamePrefix ?? spec.id}_${Date.now()}.csv`;
   const outputPath = saveToCsv(rows, spec.csv!.columns, spec.csv!.outputDirectory ?? './data', fileName);
   console.log(outputPath ? `💾 CSV salvo em: ${path.resolve(outputPath)}` : '⚠️ Nenhum dado para exportar.');
 }
