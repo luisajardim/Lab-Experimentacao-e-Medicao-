@@ -5,10 +5,10 @@
 > abaixo para RQ01 e RQ04. Não crie um relatório separado por pessoa — edite
 > este arquivo mesmo, substituindo os trechos marcados como `[preencher]`.
 >
-> Status atual: rascunho da Sprint 1 (Lab01S01). RQ01 e RQ04 têm hipótese e um
-> resultado preliminar, calculado sobre uma amostra individual de 100
-> repositórios usada só para testar e validar a extração — não é ainda o
-> dataset final de 1.000 repositórios (isso é entregável da Sprint 2).
+> Status atual: Sprint 2 (Lab01S02). O dataset final de 1.000 repositórios foi
+> coletado (`Miner/data/1000_popular_repos.csv`, Issue #8). RQ01 e RQ04 já têm
+> resultado final sobre esse dataset completo, com validação de consistência e
+> outliers (Issue #9).
 
 ## Sumário
 
@@ -100,24 +100,45 @@ Detalhes de execução e validação técnica individual da amostra (Sprint 1) e
 
 ### RQ01 — Idade do repositório
 
-**Resultado preliminar** (amostra individual de 100 repositórios, Sprint 1 —
-não é o dataset final):
+**Resultado final** (dataset completo, 1.000 repositórios —
+`Miner/data/1000_popular_repos.csv`):
 
 | Métrica | Valor |
 |---|---|
-| Repositórios na amostra | 100 |
-| Idade mínima | 0,37 anos (~4 meses) |
-| Idade mediana | 8,27 anos |
-| Idade máxima | 16,96 anos |
-| Repositórios com menos de 2 anos | 18 (18%) |
+| Repositórios | 1.000 (0 valores ausentes em `idade_anos`) |
+| Mínimo | 0,02 anos |
+| 1º quartil (Q1) | 3,50 anos |
+| Mediana | 7,74 anos |
+| 3º quartil (Q3) | 11,35 anos |
+| Máximo | 18,36 anos |
+| Média | 7,66 anos |
 
-**Discussão:** os dados preliminares favorecem a hipótese. Uma mediana de
-cerca de 8 anos e 3 meses mostra que a maior parte dos repositórios populares
-já é razoavelmente madura, e apenas 18% da amostra tem menos de dois anos —
-em geral, casos ligados a ferramentas de IA/agentes de código, que ganharam
-popularidade muito rapidamente em 2025-2026. Ainda assim, a amplitude é grande
-(de ~4 meses a quase 17 anos), então a conclusão definitiva depende da
-distribuição completa com os 1.000 repositórios da Sprint 2.
+Distribuição por faixa etária:
+
+| Faixa | Repositórios |
+|---|---|
+| até 1 ano | 82 (8,2%) |
+| 1-2 anos | 57 (5,7%) |
+| 2-5 anos | 185 (18,5%) |
+| 5-10 anos | 331 (33,1%) |
+| 10-15 anos | 296 (29,6%) |
+| 15+ anos | 49 (4,9%) |
+
+**Outliers (método IQR/Tukey):** limites calculados como `Q1 - 1,5×IQR` e
+`Q3 + 1,5×IQR` (IQR = Q3 − Q1 = 7,85 anos), resultando em uma faixa aceitável
+de aproximadamente −8,3 a 23,1 anos. Como nenhum repositório do GitHub pode
+ter mais de ~18 anos (a plataforma foi lançada em 2008) e o mínimo teórico é
+0, **nenhum repositório caiu fora desses limites — zero outliers**. A
+distribuição de idade é bem comportada, sem valores extremos anômalos.
+
+**Discussão:** o dataset completo confirma a hipótese. A mediana de 7,74 anos
+e média muito próxima (7,66) mostram uma distribuição sem grande assimetria —
+a maioria dos repositórios populares está concentrada nas faixas de 5 a 15
+anos (62,7% do total). Apenas 13,9% têm menos de 2 anos, o que sustenta a
+ideia de que popularidade no GitHub se constrói ao longo de vários anos, não
+da noite para o dia. A ausência de outliers estatísticos reforça que essa
+maturidade é a norma entre os repositórios mais populares, não uma tendência
+distorcida por alguns poucos projetos muito antigos.
 
 ### RQ02 — Contribuição externa
 
@@ -133,22 +154,58 @@ distribuição completa com os 1.000 repositórios da Sprint 2.
 
 ### RQ04 — Tempo desde a última atualização
 
-**Resultado preliminar** (mesma amostra de 100 repositórios):
+**Resultado final** (dataset completo, 1.000 repositórios):
 
 | Métrica | Valor |
 |---|---|
-| Repositórios na amostra | 100 |
-| Dias desde o último push — mínimo | 0 |
-| Dias desde o último push — mediana | 1 |
-| Dias desde o último push — máximo | 778 (~2 anos e 2 meses) |
-| Repositórios sem push há mais de 90 dias | 13 (13%) |
+| Repositórios | 1.000 (0 valores ausentes em `dias_desde_ultima_atualizacao`) |
+| Mínimo | 0 dias |
+| 1º quartil (Q1) | 0 dias |
+| Mediana | 2 dias |
+| 3º quartil (Q3) | 48,25 dias |
+| Máximo | 2.452 dias (~6,7 anos) |
+| Média | 113,8 dias |
 
-**Discussão:** os dados também favorecem a hipótese. Uma mediana de apenas 1
-dia sem push indica que a esmagadora maioria dos repositórios populares recebe
-atividade quase diária. Ainda assim, 13% da amostra passa de 90 dias sem
-atualização, o que sustenta a existência do segundo grupo previsto na
-hipótese — repositórios populares porém estáveis, como material educacional e
-listas `awesome-*`.
+Distribuição por faixa:
+
+| Faixa | Repositórios |
+|---|---|
+| até 1 dia | 477 (47,7%) |
+| 2-7 dias | 132 (13,2%) |
+| 8-30 dias | 118 (11,8%) |
+| 31-90 dias | 64 (6,4%) |
+| 91-365 dias | 94 (9,4%) |
+| mais de 365 dias | 115 (11,5%) |
+
+**Outliers (método IQR/Tukey):** IQR = Q3 − Q1 = 48,25 dias, limite superior
+= `Q3 + 1,5×IQR` ≈ **120,6 dias**. **196 repositórios (19,6%) são outliers**
+por esse critério — todos no lado superior (não há outliers baixos, já que o
+valor mínimo possível é 0). Os casos mais extremos são projetos populares e
+conhecidamente abandonados ou descontinuados:
+
+| Repositório | Dias sem push |
+|---|---|
+| exacity/deeplearningbook-chinese | 2.452 |
+| GitSquared/edex-ui | 1.765 |
+| lib-pku/libpku | 1.688 |
+| adobe/brackets | 1.529 |
+| atom/atom | 1.324 |
+
+`atom/atom` e `adobe/brackets` são particularmente ilustrativos: são editores
+de código que o GitHub e a Adobe descontinuaram oficialmente, mas que
+continuam populares (muitas estrelas herdadas) mesmo sem receber commits há
+anos.
+
+**Discussão:** o dataset completo confirma a hipótese, incluindo o segundo
+grupo previsto. A mediana de apenas 2 dias mostra que quase metade dos
+repositórios (47,7%) foi atualizada no último dia — atividade quase contínua.
+Mas a média (113,8 dias) muito acima da mediana revela uma distribuição
+fortemente assimétrica à direita: existe uma cauda longa de repositórios
+populares e abandonados, confirmada pelos 19,6% classificados como outliers
+estatísticos. Isso é coerente com a hipótese original — popularidade não
+implica manutenção contínua; um repositório pode acumular estrelas ao longo
+dos anos e continuar relevante/referenciado mesmo depois de abandonado pelos
+mantenedores.
 
 ### RQ05 — Linguagem primária
 
