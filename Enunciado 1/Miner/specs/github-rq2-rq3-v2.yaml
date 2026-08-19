@@ -1,0 +1,75 @@
+id: "github-rq2-rq3-v2"
+version: "2.0.0"
+provider: "github-graphql"
+description: >
+  Minera uma amostra paginada de repositórios públicos populares no GitHub e
+  exporta um CSV analítico com métricas padronizadas de pull requests aceitas,
+  releases e issues. Valores ausentes são normalizados pelo schema de saída,
+  garantindo dados numéricos consistentes para as análises das RQ02 e RQ03.
+
+graphqlQuery: |
+  query GetPopularReposForRQ2RQ3($cursor: String, $searchQuery: String!, $pageSize: Int!) {
+    search(query: $searchQuery, type: REPOSITORY, first: $pageSize, after: $cursor) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        ... on Repository {
+          nameWithOwner
+          primaryLanguage {
+            name
+          }
+          pullRequests(states: MERGED) {
+            totalCount
+          }
+          releases {
+            totalCount
+          }
+        }
+      }
+    }
+    rateLimit {
+      remaining
+      resetAt
+    }
+  }
+
+extractionRules:
+  - metricName: "repositories"
+    jsonPath: "$.search.nodes[*]"
+
+# Configuração declarativa da execução; não há limite fixo no index.ts.
+variables:
+  searchQuery: "stars:>1 sort:stars-desc"
+  pageSize: 10
+
+collection:
+  recordsPath: "$.search.nodes[*]"
+  pageInfoPath: "$.search.pageInfo"
+  maxRecords: 1000
+
+csv:
+  outputDirectory: "./data"
+  fileNamePrefix: "github-rq2-rq3-v2"
+  columns:
+    - name: "nome"
+      jsonPath: "$.nameWithOwner"
+      type: "string"
+      default: ""
+    - name: "linguagem"
+      jsonPath: "$.primaryLanguage.name"
+      type: "string"
+      default: "N/A"
+    - name: "total_pr_aceitas"
+      jsonPath: "$.pullRequests.totalCount"
+      type: "integer"
+      default: 0
+    - name: "total_releases"
+      jsonPath: "$.releases.totalCount"
+      type: "integer"
+      default: 0
+    - name: "data_coleta"
+      transform: "collectedAt"
+      type: "date"
+      default: ""

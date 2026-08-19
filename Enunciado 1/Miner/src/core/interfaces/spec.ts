@@ -1,14 +1,40 @@
 export type ProviderType = 'github-graphql' | 'gitlab-rest' | 'bitbucket-rest';
 
 export interface MiningTarget {
-  owner: string;
-  repo: string;
+  owner?: string;
+  repo?: string;
   [key: string]: any; // Parâmetros extras caso a plataforma exija (ex: projectId)
 }
 
 export interface ExtractionRule {
   metricName: string;
   jsonPath: string; // Ex: "repository.pullRequests.nodes" ou "$.[*].title"
+}
+
+export type CsvColumnType = 'string' | 'integer' | 'number' | 'date';
+
+export interface CsvColumn {
+  name: string;
+  jsonPath?: string;
+  type: CsvColumnType;
+  default?: string | number;
+  transform?: string;
+  sourcePath?: string;
+}
+
+export interface CollectionConfig {
+  /** JSONPath que aponta para os registros de uma página da resposta. */
+  recordsPath: string;
+  /** Quantidade máxima de registros a consolidar durante a execução. */
+  maxRecords: number;
+  /** JSONPath opcional para pageInfo quando a raiz da query não for óbvia. */
+  pageInfoPath?: string;
+}
+
+export interface CsvConfig {
+  outputDirectory?: string;
+  fileNamePrefix?: string;
+  columns: CsvColumn[];
 }
 
 export interface RestConfig {
@@ -32,4 +58,9 @@ export interface JobSpecification {
   
   // Regras de extração e normalização de dados
   extractionRules: ExtractionRule[];
+
+  /** Variáveis estáticas mescladas às variáveis de paginação do provider. */
+  variables?: Record<string, unknown>;
+  collection?: CollectionConfig;
+  csv?: CsvConfig;
 }

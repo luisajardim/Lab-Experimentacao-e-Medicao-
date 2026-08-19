@@ -1,5 +1,6 @@
 import { IMiningProvider, MiningChunk, RateLimitStatus } from '@/core/interfaces/provider';
 import { JobSpecification, MiningTarget } from '@/core/interfaces/spec';
+import jp from 'jsonpath';
 
 const GITHUB_API_URL = 'https://api.github.com/graphql';
 
@@ -38,7 +39,7 @@ export class GitHubGraphQLProvider implements IMiningProvider {
           },
           body: JSON.stringify({
             query: spec.graphqlQuery,
-            variables: { cursor: endCursor, ...target } // Passa o cursor e possíveis alvos
+            variables: { ...spec.variables, ...target, cursor: endCursor } // Variáveis declaradas na spec + cursor
           })
         });
 
@@ -80,8 +81,10 @@ export class GitHubGraphQLProvider implements IMiningProvider {
 
         // Descobre dinamicamente a paginação independentemente do nome do rootNode ("search", "repository", etc)
         const rootKeys = Object.keys(data.data).filter(k => k !== 'rateLimit');
-        const rootKey = rootKeys[0]; 
-        const pageInfo = rootKey && data.data[rootKey]?.pageInfo ? data.data[rootKey].pageInfo : null;
+        const rootKey = rootKeys[0];
+        const pageInfo = spec.collection?.pageInfoPath
+          ? jp.query(data.data, spec.collection.pageInfoPath)[0]
+          : rootKey && data.data[rootKey]?.pageInfo ? data.data[rootKey].pageInfo : null;
 
         // Emite a página atual
         yield {

@@ -1,0 +1,113 @@
+id: "github-search-v2"
+version: "2.0.0"
+provider: "github-graphql"
+description: >
+  Spec de fallback para mineração paginada dos repositórios públicos mais
+  populares do GitHub. Exporta um CSV padronizado com as métricas necessárias
+  às RQs 01 a 06 e com linguagem primária para a análise comparativa da RQ07.
+
+graphqlQuery: |
+  query GetPopularRepos($cursor: String, $searchQuery: String!, $pageSize: Int!) {
+    search(query: $searchQuery, type: REPOSITORY, first: $pageSize, after: $cursor) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        ... on Repository {
+          nameWithOwner
+          createdAt
+          pushedAt
+          primaryLanguage {
+            name
+          }
+          pullRequests(states: MERGED) {
+            totalCount
+          }
+          releases {
+            totalCount
+          }
+          closedIssues: issues(states: CLOSED) {
+            totalCount
+          }
+          totalIssues: issues {
+            totalCount
+          }
+        }
+      }
+    }
+    rateLimit {
+      remaining
+      resetAt
+    }
+  }
+
+# Regras de extração via JSONPath que o index.ts lerá dinamicamente
+extractionRules:
+  - metricName: "repositories"
+    jsonPath: "$.search.nodes[*]"
+
+variables:
+  searchQuery: "stars:>1 sort:stars-desc"
+  # Mantido pequeno para reduzir timeouts em uma query com múltiplos agregados.
+  pageSize: 10
+
+collection:
+  recordsPath: "$.search.nodes[*]"
+  pageInfoPath: "$.search.pageInfo"
+  maxRecords: 1000
+
+csv:
+  outputDirectory: "./data"
+  fileNamePrefix: "github-search-v2"
+  columns:
+    - name: "nome"
+      jsonPath: "$.nameWithOwner"
+      type: "string"
+      default: ""
+    - name: "data_criacao"
+      jsonPath: "$.createdAt"
+      type: "date"
+      default: ""
+    - name: "idade_anos"
+      sourcePath: "$.createdAt"
+      transform: "repositoryAgeYears"
+      type: "number"
+      default: 0
+    - name: "ultimo_push"
+      jsonPath: "$.pushedAt"
+      type: "date"
+      default: ""
+    - name: "dias_desde_ultima_atualizacao"
+      sourcePath: "$.pushedAt"
+      transform: "daysSinceLastPush"
+      type: "integer"
+      default: 0
+    - name: "linguagem"
+      jsonPath: "$.primaryLanguage.name"
+      type: "string"
+      default: "N/A"
+    - name: "total_pr_aceitas"
+      jsonPath: "$.pullRequests.totalCount"
+      type: "integer"
+      default: 0
+    - name: "total_releases"
+      jsonPath: "$.releases.totalCount"
+      type: "integer"
+      default: 0
+    - name: "total_issues"
+      jsonPath: "$.totalIssues.totalCount"
+      type: "integer"
+      default: 0
+    - name: "total_issues_fechadas"
+      jsonPath: "$.closedIssues.totalCount"
+      type: "integer"
+      default: 0
+    - name: "razao_issues_fechadas"
+      transform: "closedIssuesRatio"
+      type: "number"
+      default: 0
+    - name: "data_coleta"
+      transform: "collectedAt"
+      type: "date"
+      default: ""

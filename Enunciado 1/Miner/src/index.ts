@@ -1,178 +1,41 @@
-import * as fs from 'fs';
-import * as path from 'path';
 import 'dotenv/config';
-import YAML from 'yaml';
-import jp from 'jsonpath';
-import { Parser } from 'json2csv';
-
+import * as path from 'path';
 import { ProviderFactory } from './providers/factory';
 import { GitHubGraphQLProvider } from './providers/github-graphql';
-import { JobSpecification } from './core/interfaces/spec';
+import { loadSpec, validateSpec } from './core/spec-loader';
+import { extractRecords } from './core/record-extractor';
+import { buildCsvRows, saveToCsv } from './exporters/csv-exporter';
 
-// 1. Registro de Providers Disponíveis na Factory
-const GITHUB_PERSONAL_ACCESS_TOKEN = process.env.GITHUB_PERSONAL_ACCESS_TOKEN;
+const token = process.env.GITHUB_PERSONAL_ACCESS_TOKEN;
 
-if (!GITHUB_PERSONAL_ACCESS_TOKEN) {
-  console.error('❌ ERRO: O token do GitHub não foi configurado nas variáveis de ambiente.');
-  process.exit(1);
-}
+async function run(): Promise<void> {
+  if (!token) throw new Error('O token do GitHub não foi configurado nas variáveis de ambiente.');
 
-// Registra os adaptadores conhecidos
-ProviderFactory.register('github-graphql', new GitHubGraphQLProvider(GITHUB_PERSONAL_ACCESS_TOKEN));
-// Futuramente quando criarem o GitLab/REST:
-// ProviderFactory.register('gitlab-rest', new GitLabRestProvider(process.env.GITLAB_TOKEN));
+  const specPath = process.argv[2] || './specs/github-search-v2.yaml';
+  const spec = loadSpec(specPath);
+  validateSpec(spec);
+  ProviderFactory.register('github-graphql', new GitHubGraphQLProvider(token));
+  const provider = ProviderFactory.getProvider(spec.provider);
+  const collectedAt = new Date();
+  const records: unknown[] = [];
 
-/**
- * Função utilitária para carregar e parsear uma Spec YAML
- */
-function loadSpec(filePath: string): JobSpecification {
-  const absolutePath = path.resolve(filePath);
-  const fileContent = fs.readFileSync(absolutePath, 'utf8');
-  return YAML.parse(fileContent) as JobSpecification;
-}
-
-/**
- * Normalizador/Extrator Genérico usando as regras de JSONPath da Spec
- */
-function extractMetrics(rawData: any, rules: JobSpecification['extractionRules']) {
-  const extracted: Record<string, any> = {};
-
-  for (const rule of rules) {
-    // jp.query extrai o valor baseado na expressão JSONPath (ex: "$.search.nodes")
-    const result = jp.query(rawData, rule.jsonPath);
-    
-    // Se o resultado for uma lista com 1 elemento, descompacta para o objeto final
-    extracted[rule.metricName] = result.length === 1 ? result[0] : result;
-  }
-
-  return extracted;
-}
-
-/**
- * Utilitário para achatar o JSON retornado do GitHub e salvar em CSV dentro de /data
- */
-function saveToCsv(dataList: any[], outputFileName: string) {
-  if (!dataList || dataList.length === 0) {
-    console.log('⚠️ Nenhum dado para exportar para CSV.');
-    return;
-  }
-
-  // 1. Garante que o diretório /data existe
-  const dataDir = path.resolve('./data');
-  if (!fs.existsSync(dataDir)) {
-    fs.mkdirSync(dataDir, { recursive: true });
-  }
-
-  // 2. Converte JSON -> CSV
-  const json2csvParser = new Parser();
-  const csvContent = json2csvParser.parse(dataList);
-
-  // 3. Grava o arquivo na pasta ./data/
-  const outputPath = path.join(dataDir, outputFileName);
-  fs.writeFileSync(outputPath, csvContent, 'utf8');
-
-  console.log(`\n💾 CSV salvo com sucesso em: ${outputPath}`);
-}
-
-/**
- * RQ01: idade do repositório (em anos), da criação até a data da coleta.
- */
-function calcularIdadeAnos(createdAt: string, dataColeta: Date): number {
-  const criadoEm = new Date(createdAt);
-  const diffMs = dataColeta.getTime() - criadoEm.getTime();
-  const anos = diffMs / (1000 * 60 * 60 * 24 * 365.25);
-  return parseFloat(anos.toFixed(2));
-}
-
-/**
- * RQ04: tempo desde a última atualização (em dias), do último push até a data da coleta.
- */
-function calcularDiasDesdeUltimoPush(pushedAt: string, dataColeta: Date): number {
-  const ultimoPush = new Date(pushedAt);
-  const diffMs = dataColeta.getTime() - ultimoPush.getTime();
-  const dias = diffMs / (1000 * 60 * 60 * 24);
-  return Math.round(dias);
-}
-
-function flattenRepositories(repositories: any[], dataColeta: Date) {
-  return repositories.map((repo: any) => {
-    const totalIssues = repo.totalIssues?.totalCount || 0;
-    const closedIssues = repo.closedIssues?.totalCount || 0;
-    const closedIssuesRatio = totalIssues > 0 ? parseFloat((closedIssues / totalIssues).toFixed(4)) : 0;
-
-    return {
-      nome: repo.nameWithOwner,
-      data_criacao: repo.createdAt,
-      idade_anos: calcularIdadeAnos(repo.createdAt, dataColeta),
-      ultimo_push: repo.pushedAt,
-      dias_desde_ultima_atualizacao: calcularDiasDesdeUltimoPush(repo.pushedAt, dataColeta),
-      linguagem: repo.primaryLanguage?.name || 'N/A',
-      merged_prs: repo.pullRequests?.totalCount || 0,
-      releases: repo.releases?.totalCount || 0,
-      total_issues: totalIssues,
-      closed_issues: closedIssues,
-      ratio_closed_issues: closedIssuesRatio,
-      data_coleta: dataColeta.toISOString(),
-    };
-  });
-}
-
-async function run() {
-  // Momento da coleta, usado como referência para RQ01 (idade) e RQ04 (dias desde o último push)
-  const dataColeta = new Date();
-
-  try {
-    // 2. Carrega a especificação YAML desejada
-    const specPath = process.argv[2] || './specs/github-search-v1.yaml';
-    console.log(`📄 Carregando especificação de: ${specPath}`);
-    
-    const spec = loadSpec(specPath);
-    console.log(`📌 Executando Spec [${spec.id}] v${spec.version} via Provider: ${spec.provider}`);
-
-    // 3. Obtém o Provider correto através da Factory
-    const provider = ProviderFactory.getProvider(spec.provider);
-
-    // 4. Inicia a mineração (Passando o Target genérico e a Spec lida)
-    const miningTarget = { owner: '', repo: '' }; // Pode ser estendido se necessário
-    const iterator = provider.fetchRepositoryData(miningTarget, spec);
-    const maxRepositories = 100;
-    const repositories: any[] = [];
-
-    for await (const chunk of iterator) {
-      console.log(`\n✅ Chunk recebido! Rate Limit Restante: ${chunk.rateLimit.remaining}`);
-
-      // 5. Camada 1: Salvar RAW DATA no banco (Simulado aqui por console.log)
-      console.log('💾 [RAW LAYER] Resposta bruta pronta para gravação em banco/JSONB');
-
-      // 6. Camada 2: Extração Analítica Genérica via JSONPath
-      const metrics = extractMetrics(chunk.rawData, spec.extractionRules);
-
-      console.log('\n📊 [ANALYTICS LAYER] Métricas Extraídas dinamicamente via Spec:');
-      console.log(JSON.stringify(metrics, null, 2));
-
-      const repos = metrics.repositories || [];
-
-      for (const repo of repos) {
-        repositories.push(repo);
-        if (repositories.length >= maxRepositories) {
-          break;
-        }
-      }
-
-      if (repositories.length >= maxRepositories) {
-        console.log(`\n🧮 Limite de ${maxRepositories} repositórios atingido.`);
-        break;
-      }
+  console.log(`📌 Executando Spec [${spec.id}] v${spec.version} via ${spec.provider}`);
+  for await (const chunk of provider.fetchRepositoryData({}, spec)) {
+    console.log(`✅ Página recebida. Rate limit restante: ${chunk.rateLimit.remaining}`);
+    for (const record of extractRecords(chunk.rawData, spec.collection!.recordsPath)) {
+      records.push(record);
+      if (records.length >= spec.collection!.maxRecords) break;
     }
-
-    // 7. Camada 3: Exportação para CSV consolidado
-    const fileName = `${spec.id}_${Date.now()}.csv`;
-    saveToCsv(flattenRepositories(repositories, dataColeta), fileName);
-
-    console.log('\n🚀 Execução concluída com sucesso!');
-  } catch (err: any) {
-    console.error('\n❌ Erro durante o pipeline de mineração:', err.message);
+    if (records.length >= spec.collection!.maxRecords) break;
   }
+
+  const rows = buildCsvRows(records, spec.csv!.columns, collectedAt);
+  const fileName = `${spec.csv!.fileNamePrefix ?? spec.id}_${Date.now()}.csv`;
+  const outputPath = saveToCsv(rows, spec.csv!.columns, spec.csv!.outputDirectory ?? './data', fileName);
+  console.log(outputPath ? `💾 CSV salvo em: ${path.resolve(outputPath)}` : '⚠️ Nenhum dado para exportar.');
 }
 
-run();
+run().catch((error: unknown) => {
+  console.error('❌ Erro durante o pipeline de mineração:', error instanceof Error ? error.message : error);
+  process.exitCode = 1;
+});
