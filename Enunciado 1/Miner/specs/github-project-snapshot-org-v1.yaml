@@ -1,0 +1,96 @@
+id: "github-project-snapshot-org-v1"
+version: "1.0.0"
+provider: "github-graphql"
+description: >
+  Mesmo snapshot de Projects v2, para boards ligados a uma Organization.
+  Use GITHUB_PROJECT_OWNER_TYPE=organization.
+
+pageInfoJsonPath: "$.organization.projectV2.items.pageInfo"
+
+graphqlQuery: |
+  query GetOrgProjectSnapshot($owner: String!, $projectNumber: Int!, $cursor: String) {
+    organization(login: $owner) {
+      projectV2(number: $projectNumber) {
+        title
+        number
+        url
+        items(first: 100, after: $cursor) {
+          pageInfo {
+            hasNextPage
+            endCursor
+          }
+          nodes {
+            id
+            type
+            updatedAt
+            fieldValueByName(name: "Status") {
+              ... on ProjectV2ItemFieldSingleSelectValue {
+                name
+              }
+            }
+            fieldValues(first: 20) {
+              nodes {
+                ... on ProjectV2ItemFieldSingleSelectValue {
+                  name
+                  field {
+                    ... on ProjectV2SingleSelectField {
+                      name
+                    }
+                  }
+                }
+                ... on ProjectV2ItemFieldUserValue {
+                  users(first: 10) {
+                    nodes {
+                      login
+                    }
+                  }
+                }
+              }
+            }
+            content {
+              __typename
+              ... on Issue {
+                number
+                title
+                url
+                state
+                assignees(first: 10) {
+                  nodes {
+                    login
+                  }
+                }
+              }
+              ... on PullRequest {
+                number
+                title
+                url
+                state
+                assignees(first: 10) {
+                  nodes {
+                    login
+                  }
+                }
+              }
+              ... on DraftIssue {
+                title
+                assignees(first: 10) {
+                  nodes {
+                    login
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    rateLimit {
+      remaining
+      resetAt
+      cost
+    }
+  }
+
+extractionRules:
+  - metricName: "items"
+    jsonPath: "$.organization.projectV2.items.nodes[*]"

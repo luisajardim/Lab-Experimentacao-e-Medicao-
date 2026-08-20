@@ -52,6 +52,9 @@ export interface JobSpecification {
   
   // Usado se provider for GraphQL
   graphqlQuery?: string;
+
+  // Caminho JSONPath até pageInfo quando a conexão paginada não está na raiz (ex.: Projects v2)
+  pageInfoJsonPath?: string;
   
   // Usado se provider for REST
   restConfig?: RestConfig;

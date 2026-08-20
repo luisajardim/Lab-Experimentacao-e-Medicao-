@@ -8,7 +8,8 @@
 > Status atual: estamos na Sprint 2 (Lab01S02). Já temos o dataset final de
 > 1.000 repositórios (`Miner/data/1000_popular_repos.csv`, Issue #8), e RQ01 e
 > RQ04 já foram checadas em cima dele, com validação de consistência e
-> outliers (Issue #9).
+> outliers (Issue #9). O snapshot do GitHub Projects é o script
+> `npm run snapshot` no Miner (Issue #14).
 
 ## Sumário
 
@@ -70,13 +71,22 @@ grupo "estagnado" tem mais a ver com produto abandonado pelos mantenedores do
 que com conteúdo que naturalmente não muda.
 
 **RQ05 — Sistemas populares são escritos nas linguagens mais populares?**
-Hipótese: Sim. Baseando-se no **GitHub Octoverse**, linguagens como JavaScript, Python e TypeScript dominam o ecossistema. Esperamos que a maior parte dos repositórios populares utilize essas tecnologias, visto que comunidades grandes impulsionam projetos massivos.
+Hipótese: Sim. Usando o **GitHub Octoverse 2025** como referência única de
+popularidade de linguagens (TypeScript, Python e JavaScript no topo),
+esperamos que a maior parte dos repositórios mais estrelados tenha uma
+dessas linguagens como `primaryLanguage`.
 
 **RQ06 — Sistemas populares possuem um alto percentual de issues fechadas?**
-Hipótese: Sim. Sistemas muito populares costumam ter ferramentas de CI/CD bem estabelecidas, automações de triagem e muitos colaboradores (mantenedores e comunidade), o que acelera a resolução de bugs e fechamento de issues.
+Hipótese: Sim. Projetos com muitas estrelas tendem a ter comunidade e
+automação suficientes para triagem contínua. Esperamos mediana da razão
+`issues fechadas / total de issues` acima de 0,7 (70%). Repositórios sem
+aba de Issues (ex.: alguns kernels) entram com razão 0 e não são excluídos.
 
-**RQ07 — Sistemas em linguagens mais populares recebem mais contribuição, lançam mais releases e são atualizados com mais frequência?**
-Hipótese: Sim. Ecossistemas consolidados (como JS/TS e Python) possuem um fluxo de desenvolvimento muito dinâmico. Repositórios nessas linguagens tendem a ter mais PRs (contribuições externas) e serem atualizados com maior constância do que sistemas escritos em linguagens menos populares ou legadas.
+**RQ07 — Sistemas em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência?**
+Hipótese: Sim. Esperamos medianas maiores de PRs aceitas (RQ02) e de
+releases (RQ03), e mediana menor de dias desde o último push (RQ04), nos
+repositórios cuja linguagem está no top do Octoverse 2025, em comparação
+com as demais linguagens da amostra.
 
 ---
 
@@ -88,10 +98,9 @@ GitHub a partir de especificações declarativas (arquivos `.yaml` em
 a query é escrita e consumida por um script próprio do grupo, conforme exigido
 no enunciado.
 
-Nesta sprint (S01), cada integrante criou uma spec pequena, focada apenas nos
-campos da sua parte, para implementar e validar a extração antes de integrar
-ao script único do grupo (essa integração final, com paginação para os 1.000
-repositórios, é entregável da Sprint 2).
+Na S01 cada integrante validou a extração da sua parte em amostra reduzida.
+Na S02 o script único (`github-search-v1.yaml`) pagina até 1.000 repositórios
+e exporta um CSV com todas as métricas das 7 RQs.
 
 **RQ01 e RQ04** — usa a spec [`Miner/specs/github-rq1-rq4-v1.yaml`](Miner/specs/github-rq1-rq4-v1.yaml),
 que extrai `createdAt` e `pushedAt` de cada repositório. Em cima disso,
@@ -104,10 +113,17 @@ Como rodar, como validamos manualmente e os detalhes da checagem de outliers
 estão em [`Miner/docs/rq01-rq04.md`](Miner/docs/rq01-rq04.md).
 
 **RQ05 / RQ06 / RQ07** — spec [`Miner/specs/github-search-v1.yaml`](Miner/specs/github-search-v1.yaml).
-Extrai a linguagem primária (`primaryLanguage.name`) e a contagem de issues (`closed` e `total`).
-- A métrica da **RQ05** é extraída e será cruzada com os dados do GitHub Octoverse;
-- A métrica da **RQ06** e **RQ07** (`ratio_closed_issues`) é calculada dividindo `closed_issues` por `total_issues`.
-Detalhes de execução e validação técnica individual da amostra (Sprint 1) estão em [`Miner/docs/rq05-rq07.md`](Miner/docs/rq05-rq07.md).
+Extrai `primaryLanguage.name`, issues fechadas, total de issues, PRs merged,
+releases e `pushedAt`.
+- **Fonte de linguagens populares (RQ05/RQ07):** GitHub Octoverse 2025
+  (https://octoverse.github.com/), ranking por contribuidores em agosto/2025:
+  TypeScript, Python, JavaScript, Java, C#. Essa fonte é a única usada no lab.
+- **RQ06:** `ratio_closed_issues = closed_issues / total_issues` (0 se não
+  houver issues).
+- **RQ07:** o CSV já concentra linguagem + métricas de RQ02, RQ03 e RQ04;
+  o cruzamento estatístico fica para a S03.
+Validação da amostra S01 e da fonte: [`Miner/docs/rq05-rq06-rq07.md`](Miner/docs/rq05-rq06-rq07.md).
+Validação do CSV da S02: `npm run validate:rq05` → [`Miner/docs/rq05-rq06-validation-s02.md`](Miner/docs/rq05-rq06-validation-s02.md).
 
 **RQ02 / RQ03** — `[preencher: spec usada, campos extraídos e como a métrica é calculada pelo Alvim]`
 
@@ -221,36 +237,80 @@ ele.
 
 ### RQ05 — Linguagem primária
 
-**Resultado preliminar** (amostra de 80 repositórios processados com sucesso antes do timeout do GitHub):
+**Resultado** (CSV de 1.000 repositórios, Sprint 2 —
+`Miner/data/github-search-v1_1787150327459.csv`):
 
-| Linguagem | Contagem |
-|---|---|
-| Python | 22 |
-| TypeScript | 14 |
-| Não definida (N/A) | 11 |
-| JavaScript | 7 |
-| Shell | 4 |
+| Linguagem | Contagem | % |
+|---|---:|---:|
+| Python | 228 | 22,8% |
+| TypeScript | 174 | 17,4% |
+| JavaScript | 111 | 11,1% |
+| Sem linguagem (N/A) | 87 | 8,7% |
+| Go | 76 | 7,6% |
+| Rust | 57 | 5,7% |
+| C++ | 41 | 4,1% |
+| Java | 41 | 4,1% |
 
-**Discussão:** A hipótese se provou verdadeira nesta amostra. Python, TypeScript e JavaScript compõem a imensa maioria dos projetos populares, batendo perfeitamente com a tendência mundial do *GitHub Octoverse*. Projetos em C/C++ ou Java apareceram, mas em menor escala.
+Nas 5 linguagens do Octoverse 2025 (TypeScript, Python, JavaScript, Java, C#):
+562 repositórios (56,2%).
+
+**Discussão:** a hipótese se sustenta em parte. Python, TypeScript e JavaScript
+são de fato as três linguagens primárias mais frequentes entre os mais
+estrelados, alinhadas ao topo do Octoverse 2025. A ordem local, porém, não
+copia o ranking de contribuidores: Python lidera a amostra (22,8%) enquanto
+o Octoverse coloca TypeScript em 1º. Há ainda 8,7% sem linguagem definida
+(listas `awesome-*`, materiais etc.), o que puxa o cruzamento para baixo se
+não for tratado à parte.
 
 ### RQ06 — Percentual de issues fechadas
 
-**Resultado preliminar** (amostra de 80 repositórios):
-- Razão Mínima: 0.0 (repositórios sem aba de issues ativa, ex: torvalds/linux)
-- Razão Mediana: **0.887 (88,7%)**
-- Razão Máxima: 1.0 (100% de issues fechadas)
+**Resultado** (mesmos 1.000 repositórios):
 
-**Discussão:** A hipótese também foi confirmada fortemente. Uma mediana de ~89% demonstra que as equipes que mantêm repositórios altamente populares são extremamente ativas na triagem e no fechamento de issues (sejam por meio de correções, PRs linkadas, ou arquivamento de *stale issues*).
+| Métrica | Valor |
+|---|---|
+| Razão mínima | 0,00 |
+| Razão mediana | **0,8649 (86,5%)** |
+| Razão máxima | 1,00 |
+| Repositórios sem issues (total = 0) | 43 |
+| Razão fora de [0, 1] | 0 |
+
+**Discussão:** a mediana de ~86,5% supera o limiar de 70% da hipótese. Os
+43 repositórios com razão 0 por não usarem a aba Issues (ex.: `torvalds/linux`
+e várias listas) puxam o mínimo para 0, mas não derrubam a mediana. Não houve
+inconsistência `closed_issues > total_issues` no CSV.
 
 ### RQ07 — Cruzamento por linguagem (RQ02, RQ03 e RQ04 por linguagem)
 
-**Resultado:** `[preencher na Sprint 2 — depende do CSV final contendo os cruzamentos de RQ02, RQ03 e RQ04 que serão integrados no script único do grupo]`
+**Resultado:** a extração já está no CSV unificado (`linguagem`, `merged_prs`,
+`releases`, `dias_desde_ultima_atualizacao`). Tabelas por linguagem entram na
+S03 (análise e visualização), para não misturar hipótese informal com o
+cruzamento final.
 
-**Discussão:** Esta métrica complexa será discutida na próxima Sprint, quando o volume de 1.000 repositórios estiver disponível para cruzamento de dados sem sofrer com timeouts da API.
+**Discussão:** hipótese registrada na seção 1; a confrontação com os números
+fica para a S03, depois da validação do dataset de 1.000 repositórios.
 
 ---
 
 ## 4. Configuração do processo (GitHub Projects)
 
-`[preencher: colunas do board (Status), política e justificativa do limite de
-WIP, e ao final do laboratório um print do board mostrando o fluxo completo.]`
+O board do grupo é um GitHub Projects (v2) vinculado ao repositório
+`luisajardim/Lab-Experimentacao-e-Medicao-`. Cartões devem ser Issues com
+Assignee (não draft solto). Colunas mínimas de Status: Backlog → To Do →
+Doing → Review → Done.
+
+**Snapshot de fechamento de sprint (requisito 6 / Issue #14):** ao final de
+cada sprint rode, em `Enunciado 1/Miner`:
+
+```bash
+npm run snapshot
+```
+
+O script consulta o Project v2 via GraphQL (sem biblioteca cliente da API do
+GitHub), pagina de 100 em 100 e grava CSV em `Miner/data/snapshots/`, além de
+acumular as linhas em `Miner/data/snapshots/history.csv`. Variáveis:
+`GITHUB_PROJECT_OWNER`, `GITHUB_PROJECT_NUMBER`, `GITHUB_PROJECT_OWNER_TYPE`,
+`SPRINT_ID`. O PAT precisa do escopo `read:project` além da leitura de
+repositórios públicos.
+
+`[preencher: política e justificativa do limite de WIP, link do Projects e
+print do board ao final do laboratório.]`

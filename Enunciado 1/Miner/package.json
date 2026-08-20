@@ -11,6 +11,8 @@
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
     "audit:rq02-rq03": "tsx src/scripts/auditar-rq02-rq03.ts",
+    "snapshot": "tsx src/scripts/snapshot.ts",
+    "validate:rq05": "tsx src/scripts/validate-rq05-rq06.ts",
     "test": "npm run build && node --test test/*.test.js"
   },
   "devDependencies": {

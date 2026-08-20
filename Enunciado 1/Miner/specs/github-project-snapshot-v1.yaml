@@ -1,0 +1,97 @@
+id: "github-project-snapshot-v1"
+version: "1.0.0"
+provider: "github-graphql"
+description: >
+  Snapshot de fechamento de sprint do GitHub Projects (v2). Exporta os
+  cartões do board (Status, assignees, título e issue vinculada) para CSV
+  acumulativo. Requer PAT com escopo read:project.
+
+pageInfoJsonPath: "$.user.projectV2.items.pageInfo"
+
+graphqlQuery: |
+  query GetProjectSnapshot($owner: String!, $projectNumber: Int!, $cursor: String) {
+    user(login: $owner) {
+      projectV2(number: $projectNumber) {
+        title
+        number
+        url
+        items(first: 100, after: $cursor) {
+          pageInfo {
+            hasNextPage
+            endCursor
+          }
+          nodes {
+            id
+            type
+            updatedAt
+            fieldValueByName(name: "Status") {
+              ... on ProjectV2ItemFieldSingleSelectValue {
+                name
+              }
+            }
+            fieldValues(first: 20) {
+              nodes {
+                ... on ProjectV2ItemFieldSingleSelectValue {
+                  name
+                  field {
+                    ... on ProjectV2SingleSelectField {
+                      name
+                    }
+                  }
+                }
+                ... on ProjectV2ItemFieldUserValue {
+                  users(first: 10) {
+                    nodes {
+                      login
+                    }
+                  }
+                }
+              }
+            }
+            content {
+              __typename
+              ... on Issue {
+                number
+                title
+                url
+                state
+                assignees(first: 10) {
+                  nodes {
+                    login
+                  }
+                }
+              }
+              ... on PullRequest {
+                number
+                title
+                url
+                state
+                assignees(first: 10) {
+                  nodes {
+                    login
+                  }
+                }
+              }
+              ... on DraftIssue {
+                title
+                assignees(first: 10) {
+                  nodes {
+                    login
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    rateLimit {
+      remaining
+      resetAt
+      cost
+    }
+  }
+
+extractionRules:
+  - metricName: "items"
+    jsonPath: "$.user.projectV2.items.nodes[*]"

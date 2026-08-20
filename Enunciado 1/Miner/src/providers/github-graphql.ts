@@ -6,6 +6,30 @@ const GITHUB_API_URL = 'https://api.github.com/graphql';
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
+function readJsonPath(source: Record<string, unknown>, jsonPath: string): any {
+  const parts = jsonPath.replace(/^\$\.?/, '').split('.');
+  let current: any = source;
+
+  for (const part of parts) {
+    if (current == null) {
+      return undefined;
+    }
+    current = current[part];
+  }
+
+  return current;
+}
+
+function resolvePageInfo(payload: Record<string, unknown>, pageInfoJsonPath?: string): { hasNextPage: boolean; endCursor: string | null } | null {
+  if (pageInfoJsonPath) {
+    return readJsonPath(payload, pageInfoJsonPath) ?? null;
+  }
+
+  const rootKeys = Object.keys(payload).filter((key) => key !== 'rateLimit');
+  const rootKey = rootKeys[0];
+  return rootKey && (payload as any)[rootKey]?.pageInfo ? (payload as any)[rootKey].pageInfo : null;
+}
+
 export class GitHubGraphQLProvider implements IMiningProvider {
   readonly name = 'github-graphql';
 
@@ -56,7 +80,17 @@ export class GitHubGraphQLProvider implements IMiningProvider {
 
         if (data.errors) {
           console.error('[GraphQL Error]', data.errors);
-          throw new Error('Erro na execução da query GraphQL.');
+          const messages = data.errors
+            .map((error: { message?: string; type?: string }) => {
+              const typeLabel = error.type ? `${error.type}: ` : '';
+              return `${typeLabel}${error.message ?? 'erro desconhecido'}`;
+            })
+            .join(' | ');
+          throw new Error(`Erro GraphQL: ${messages}`);
+        }
+
+        if (!data.data) {
+          throw new Error('Resposta GraphQL sem campo data.');
         }
 
         const rateLimitRaw = data.data?.rateLimit;
@@ -105,6 +139,17 @@ export class GitHubGraphQLProvider implements IMiningProvider {
 
       } catch (error: any) {
         console.error(`[Erro na tentativa ${attempt}]`, error.message);
+
+        const isSemanticError = typeof error.message === 'string' && (
+          error.message.includes('Erro GraphQL') ||
+          error.message.includes('INSUFFICIENT_SCOPES') ||
+          error.message.includes('Personal Access Token')
+        );
+
+        if (isSemanticError) {
+          throw error;
+        }
+
         if (attempt <= 3) {
           const backoffTime = Math.pow(2, attempt) * 1000;
           console.log(`[Backoff] Tentando novamente em ${backoffTime / 1000}s...`);
