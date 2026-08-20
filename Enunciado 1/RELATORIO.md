@@ -18,7 +18,7 @@
 - [3. Resultados e discussão por RQ](#3-resultados-e-discussão-por-rq)
 - [4. Configuração do processo (GitHub Projects)](#4-configuração-do-processo-github-projects)
 
-Link do repositório/GitHub Projects do grupo: `[preencher]`
+Link do repositório/GitHub Projects do grupo: `https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-`
 
 ---
 
@@ -46,10 +46,18 @@ provavelmente pela onda de ferramentas de IA/agentes de código que surgiu em
 2025-2026.
 
 **RQ02 — Sistemas populares recebem muita contribuição externa?**
-Hipótese: `[preencher — responsável pela RQ02]`
+Hipótese: Sim. Repositórios com muitas estrelas tendem a ter uma comunidade
+maior e mais visibilidade, o que deve atrair contribuições na forma de pull
+requests. Assim, esperamos que a maior parte dos repositórios populares possua
+uma quantidade relevante de PRs aceitas, embora alguns projetos muito grandes
+possam concentrar valores excepcionalmente altos.
 
 **RQ03 — Sistemas populares lançam releases com frequência?**
-Hipótese: `[preencher — responsável pela RQ03]`
+Hipótese: Sim, para uma parcela expressiva. Projetos populares normalmente
+precisam comunicar versões, correções e novas funcionalidades aos usuários, então
+esperamos encontrar um histórico relevante de releases. Porém, espera-se também que
+alguns repositórios não usem a funcionalidade Releases do GitHub, por exemplo,
+projetos que distribuem versões apenas por tags, pacotes ou imagens de containers.
 
 **RQ04 — Sistemas populares são atualizados com frequência?**
 Achamos que sim, na maioria dos casos — mais visibilidade costuma trazer mais
@@ -125,7 +133,25 @@ releases e `pushedAt`.
 Validação da amostra S01 e da fonte: [`Miner/docs/rq05-rq06-rq07.md`](Miner/docs/rq05-rq06-rq07.md).
 Validação do CSV da S02: `npm run validate:rq05` → [`Miner/docs/rq05-rq06-validation-s02.md`](Miner/docs/rq05-rq06-validation-s02.md).
 
-**RQ02 / RQ03** — `[preencher: spec usada, campos extraídos e como a métrica é calculada pelo Alvim]`
+**RQ02 / RQ03** — usa a spec [`Miner/specs/github-rq2-rq3-v2.yaml`](Miner/specs/github-rq2-rq3-v2.yaml).
+Ela busca `nameWithOwner`, `primaryLanguage.name`, o total de pull requests com
+estado `MERGED` e o total de releases dos 1.000 repositórios ordenados por
+estrelas.
+
+O exportador padroniza os campos no CSV gerado:
+- **RQ02 — `total_pr_aceitas`**: `pullRequests(states: MERGED).totalCount`;
+- **RQ03 — `total_releases`**: `releases.totalCount`;
+- valores nulos, ausentes ou inválidos em métricas numéricas são exportados como
+  `0`, e as contagens são garantidas como inteiros não negativos;
+- `data_coleta` registra o instante da coleta para rastreabilidade.
+
+Para rodar:
+
+```bash
+npm run dev -- ./specs/github-rq2-rq3-v2.yaml
+```
+
+O CSV é salvo em `data/github-rq2-rq3-v2_<timestamp>.csv`.
 
 ---
 
@@ -173,19 +199,44 @@ um efeito puxado por um punhado de projetos muito antigos.
 
 ### RQ02 — Contribuição externa
 
-**Resultado:** `[preencher — responsável pela RQ02]`
+**Resultado:** o dataset auditado tem 1.000 registros válidos. A métrica
+`total_pr_aceitas` teve mínimo de 0, Q1 de 175, mediana de 768, Q3 de 3.415,75,
+média de 4.236,77 e máximo de 103.349. O critério de Tukey apontou 124
+outliers, com IQR = 3.240,75 e limite superior ≈ 8.276,88; não houve nenhum
+valor inválido em `total_pr_aceitas`.
 
-**Discussão:** `[preencher]`
+**Discussão:** a hipótese se confirma, mas com uma diferença importante: a
+maioria dos repositórios populares recebe uma quantidade bastante relevante de
+PRs aceitos, embora a distribuição seja extremamente desigual. A mediana de 768
+PRs aceitos mostra que boa parte dos projetos tem um fluxo constante de
+contribuição, e os valores extremos — como `llvm/llvm-project`,
+`kubernetes/kubernetes` e `python/cpython` — puxam a média para 4.236,77. Isso
+faz sentido para projetos muito grandes, com comunidades ativas e unidades de
+manutenção que processam centenas ou milhares de contribuições ao longo do
+tempo. Em resumo, contribuição externa parece ser a regra entre os projetos
+populares, mas a intensidade varia muito de um repositório para outro.
 
 ### RQ03 — Frequência de releases
 
-**Resultado:** `[preencher — responsável pela RQ03]`
+**Resultado:** o mesmo CSV auditado de Q2 tem 1.000 registros válidos. A métrica
+`total_releases` teve mínimo de 0, Q1 de 0, mediana de 39, Q3 de 147, média de
+126,61 e máximo de 1.000. Houve 286 repositórios com zero releases (28,6%) e 93
+outliers pelo critério de Tukey, com IQR = 147 e limite superior ≈ 367,50.
 
-**Discussão:** `[preencher]`
+**Discussão:** a hipótese se sustenta parcialmente. Há uma parcela importante
+da amostra com histórico de versões — a mediana de 39 releases e o Q3 em 147
+indicam que muitos repositórios populares lançam artefatos de forma regular.
+Porém, 28,6% dos projetos não usam a funcionalidade de Releases do GitHub,
+mesmo sendo populares, o que sugere que muitas versões são distribuídas por
+meios alternativos, como tags, pacotes, imagens de contêiner ou canais de
+entrega próprios. Também vale destacar que o número total de releases não mede
+frequência diretamente, porque repositórios mais antigos tiveram mais tempo
+para acumular lançamentos. Por isso, a melhor leitura é a mediana e a
+distribuição da amostra, e não apenas os máximos absolutos.
 
 ### RQ04 — Tempo desde a última atualização
 
-Mesma base, os 1.000 repositórios:
+Mesma base de RQ1, os 1.000 repositórios:
 
 | Métrica | Valor |
 |---|---|
@@ -295,8 +346,8 @@ fica para a S03, depois da validação do dataset de 1.000 repositórios.
 
 O board do grupo é um GitHub Projects (v2) vinculado ao repositório
 `luisajardim/Lab-Experimentacao-e-Medicao-`. Cartões devem ser Issues com
-Assignee (não draft solto). Colunas mínimas de Status: Backlog → To Do →
-Doing → Review → Done.
+Assignee (não draft solto). Colunas mínimas de Status: Backlog do Enunciado → Backlog da Sprint →
+Em Andamento → Concluído.
 
 **Snapshot de fechamento de sprint (requisito 6 / Issue #14):** ao final de
 cada sprint rode, em `Enunciado 1/Miner`:
