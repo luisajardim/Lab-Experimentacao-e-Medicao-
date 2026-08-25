@@ -1,5 +1,3 @@
-import Papa from 'papaparse';
-
 export interface RepoRow {
   name: string;
   linguagem: string;
@@ -13,33 +11,23 @@ export interface RepoRow {
   [key: string]: any;
 }
 
-import csvUrl from '../../../Miner/data/1000_popular_repos.csv?url';
+const repositoriesUrl = '/data/repos.json';
 
 export async function loadAllData(): Promise<RepoRow[]> {
-  const response = await fetch(csvUrl);
-  const text = await response.text();
-
-  return new Promise((resolve) => {
-    Papa.parse(text, {
-      header: true,
-      dynamicTyping: true,
-      skipEmptyLines: true,
-      complete: (results) => {
-        const data = results.data.map((row: any) => ({
-          name: row.nome || '',
-          linguagem: row.linguagem || 'Unknown',
-          merged_prs: Number(row.total_pr_aceitas || 0),
-          releases: Number(row.total_releases || 0),
-          idade_anos: Number(row.idade_anos || 0),
-          dias_desde_ultima_atualizacao: Number(row.dias_desde_ultima_atualizacao || 0),
-          total_issues: Number(row.total_issues || 0),
-          closed_issues: Number(row.total_issues_fechadas || 0),
-          ratio_closed_issues: Number(row.razao_issues_fechadas || 0)
-        })) as RepoRow[];
-        resolve(data);
-      }
-    });
-  });
+  const response = await fetch(repositoriesUrl);
+  if (!response.ok) throw new Error(`Não foi possível carregar os repositórios (${response.status}).`);
+  const rows: Record<string, unknown>[] = await response.json();
+  return rows.map((row) => ({
+    name: String(row.nome || ''),
+    linguagem: String(row.linguagem || 'Unknown'),
+    merged_prs: Number(row.total_pr_aceitas || 0),
+    releases: Number(row.total_releases || 0),
+    idade_anos: Number(row.idade_anos || 0),
+    dias_desde_ultima_atualizacao: Number(row.dias_desde_ultima_atualizacao || 0),
+    total_issues: Number(row.total_issues || 0),
+    closed_issues: Number(row.total_issues_fechadas || 0),
+    ratio_closed_issues: Number(row.razao_issues_fechadas || 0)
+  })) as RepoRow[];
 }
 
 export function calcMedian(values: number[]): number {
