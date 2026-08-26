@@ -55,3 +55,47 @@ export function round(value: number, decimals = 2): number {
   const factor = 10 ** decimals;
   return Math.round(value * factor) / factor;
 }
+
+/** Arredonda todos os campos numéricos de um MetricSummary, para exibição em relatórios/JSON. */
+export function roundSummary(summary: MetricSummary, decimals = 2): MetricSummary {
+  return {
+    ...summary,
+    minimum: round(summary.minimum, decimals),
+    q1: round(summary.q1, decimals),
+    median: round(summary.median, decimals),
+    mean: round(summary.mean, decimals),
+    q3: round(summary.q3, decimals),
+    maximum: round(summary.maximum, decimals),
+    iqr: round(summary.iqr, decimals),
+    lowerFence: round(summary.lowerFence, decimals),
+    upperFence: round(summary.upperFence, decimals),
+  };
+}
+
+export interface Bucket {
+  faixa: string;
+  contagem: number;
+  percentual: number;
+}
+
+/**
+ * Distribui valores em faixas cumulativas: cada `edge[i]` é o limite superior
+ * (inclusive) da faixa `labels[i]`; use `Infinity` na última faixa para
+ * capturar o restante. Ex.: edges=[1,2,Infinity], labels=['<=1','1-2','2+'].
+ */
+export function distribution(values: number[], edges: number[], labels: string[]): Bucket[] {
+  if (edges.length !== labels.length) {
+    throw new Error('distribution: edges e labels devem ter o mesmo tamanho.');
+  }
+  const clean = values.filter((value) => Number.isFinite(value));
+  const counts = new Array(labels.length).fill(0);
+  for (const value of clean) {
+    const bucketIndex = edges.findIndex((edge) => value <= edge);
+    counts[bucketIndex === -1 ? counts.length - 1 : bucketIndex]++;
+  }
+  return labels.map((faixa, index) => ({
+    faixa,
+    contagem: counts[index],
+    percentual: clean.length === 0 ? 0 : round((counts[index] / clean.length) * 100, 1),
+  }));
+}

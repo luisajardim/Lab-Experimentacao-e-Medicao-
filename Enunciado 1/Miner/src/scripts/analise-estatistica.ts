@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { parseCsvToJson, type JsonRow } from './csv-to-json';
-import { summarize, round, type MetricSummary } from '../core/stats';
+import { summarize, round, roundSummary, type MetricSummary } from '../core/stats';
 
 const NUMERIC_METRICS = [
   { column: 'idade_anos', rq: 'RQ01', label: 'Idade do repositório (anos)' },
@@ -18,21 +18,6 @@ const DEFAULT_INPUT = './data/1000_popular_repos.csv';
 const DEFAULT_OUTPUT = './data/metrics_summary.json';
 
 type MetricEntry = MetricSummary & { rq: string; label: string };
-
-function roundSummary(summary: MetricSummary): MetricSummary {
-  return {
-    ...summary,
-    minimum: round(summary.minimum),
-    q1: round(summary.q1),
-    median: round(summary.median),
-    mean: round(summary.mean),
-    q3: round(summary.q3),
-    maximum: round(summary.maximum),
-    iqr: round(summary.iqr),
-    lowerFence: round(summary.lowerFence),
-    upperFence: round(summary.upperFence),
-  };
-}
 
 function languageOf(row: JsonRow): string {
   const value = row.linguagem;
