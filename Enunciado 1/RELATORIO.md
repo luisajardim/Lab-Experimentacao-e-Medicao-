@@ -1,16 +1,5 @@
 # Relatório — Lab01: Características de Repositórios Populares
 
-> Documento único do grupo (trio). Cada integrante escreve a hipótese, os
-> resultados e a discussão da própria parte, seguindo a mesma estrutura usada
-> abaixo para RQ01 e RQ04. Não crie um relatório separado por pessoa — edite
-> este arquivo mesmo, substituindo os trechos marcados como `[preencher]`.
->
-> Status atual: estamos na Sprint 2 (Lab01S02). Já temos o dataset final de
-> 1.000 repositórios (`Miner/data/1000_popular_repos.csv`, Issue #8), e RQ01 e
-> RQ04 já foram checadas em cima dele, com validação de consistência e
-> outliers (Issue #9). O snapshot do GitHub Projects é o script
-> `npm run snapshot` no Miner (Issue #14).
-
 ## Sumário
 
 - [1. Introdução e hipóteses informais](#1-introdução-e-hipóteses-informais)
@@ -363,5 +352,206 @@ acumular as linhas em `Miner/data/snapshots/history.csv`. Variáveis:
 `SPRINT_ID`. O PAT precisa do escopo `read:project` além da leitura de
 repositórios públicos.
 
-`[preencher: política e justificativa do limite de WIP, link do Projects e
-print do board ao final do laboratório.]`
+Política de WIP do kanban: o limite na coluna *Em Andamento* é de 3 cartões.
+Esse teto reduz multitarefa, evita concentração excessiva de trabalho em
+execução e força o grupo a terminar tarefas antes de puxar novas atividades.
+Na prática, isso ajuda a manter o fluxo estável, expõe bloqueios mais cedo e
+deixa o board mais previsível durante as sprints.
+
+[preencher: print do kanban ao final da sprint 3]
+
+---
+
+## Apêndice A — GQM Tree do Projeto
+
+```mermaid
+graph TD
+    G1["Goal 1:<br/>Caracterizar repositórios<br/>populares no GitHub"] --> Q1["Q1:<br/>São maduros/antigos?"]
+    G1 --> Q2["Q2:<br/>Recebem contribuição externa?"]
+    G1 --> Q3["Q3:<br/>Lançam releases?"]
+    G1 --> Q4["Q4:<br/>São atualizados?"]
+    G1 --> Q5["Q5:<br/>Linguagens mais populares?"]
+    G1 --> Q6["Q6:<br/>Alto % issues fechadas?"]
+    G1 --> Q7["Q7:<br/>Cruzamento linguagem x<br/>PRs, releases e atualização"]
+
+    Q1 --> M11["M1.1<br/>idade_anos"]
+    Q1 --> M12["M1.2<br/>faixa_etaria"]
+    Q1 --> M13["M1.3<br/>outliers_idade"]
+
+    Q2 --> M21["M2.1<br/>total_pr_aceitas"]
+    Q2 --> M22["M2.2<br/>outliers_pr"]
+
+    Q3 --> M31["M3.1<br/>total_releases"]
+    Q3 --> M32["M3.2<br/>pct_zero_releases"]
+    Q3 --> M33["M3.3<br/>outliers_releases"]
+
+    Q4 --> M41["M4.1<br/>dias_desde_ultima_atualizacao"]
+    Q4 --> M42["M4.2<br/>faixa_atividade"]
+    Q4 --> M43["M4.3<br/>outliers_atividade"]
+
+    Q5 --> M51["M5.1<br/>primaryLanguage"]
+    Q5 --> M52["M5.2<br/>fonte_popularidade"]
+    Q5 --> M53["M5.3<br/>contagem_por_linguagem"]
+    Q5 --> M54["M5.4<br/>pct_no_top5_octoverse"]
+
+    Q6 --> M61["M6.1<br/>ratio_closed_issues"]
+    Q6 --> M62["M6.2<br/>mediana_ratio"]
+    Q6 --> M63["M6.3<br/>repos_sem_issues"]
+
+    Q7 --> M71["M7.1<br/>prs_por_linguagem"]
+    Q7 --> M72["M7.2<br/>releases_por_linguagem"]
+    Q7 --> M73["M7.3<br/>dias_por_linguagem"]
+```
+
+---
+
+## Apêndice B — GQM Table do Projeto
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Goal</th>
+      <th>Question (RQ/QG)</th>
+      <th>Métrica (Código)</th>
+      <th>Nome da métrica</th>
+      <th>Descrição / Fórmula</th>
+      <th>Artefato fonte</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="21"><strong>G1</strong> — Caracterizar repositórios populares no GitHub</td>
+      <td rowspan="3"><strong>Q1</strong> — Sistemas populares são maduros/antigos?</td>
+      <td>M1.1</td>
+      <td><code>idade_anos</code></td>
+      <td>Diferença em anos entre <code>createdAt</code> e a data da coleta</td>
+      <td><code>Miner/specs/github-rq1-rq4-v1.yaml</code></td>
+    </tr>
+    <tr>
+      <td>M1.2</td>
+      <td><code>faixa_etaria</code></td>
+      <td>Classificação: até 1 ano, 1-2, 2-5, 5-10, 10-15, 15+</td>
+      <td><code>Miner/src/index.ts</code></td>
+    </tr>
+    <tr>
+      <td>M1.3</td>
+      <td><code>outliers_idade</code></td>
+      <td>Repositórios fora de <code>[Q1 - 1,5×IQR, Q3 + 1,5×IQR]</code></td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Q2</strong> — Sistemas populares recebem muita contribuição externa?</td>
+      <td>M2.1</td>
+      <td><code>total_pr_aceitas</code></td>
+      <td><code>pullRequests(states: MERGED).totalCount</code></td>
+      <td><code>Miner/specs/github-rq2-rq3-v2.yaml</code></td>
+    </tr>
+    <tr>
+      <td>M2.2</td>
+      <td><code>outliers_pr</code></td>
+      <td>Repositórios acima de <code>Q3 + 1,5×IQR</code> em PRs aceitas</td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Q3</strong> — Sistemas populares lançam releases com frequência?</td>
+      <td>M3.1</td>
+      <td><code>total_releases</code></td>
+      <td><code>releases.totalCount</code></td>
+      <td><code>Miner/specs/github-rq2-rq3-v2.yaml</code></td>
+    </tr>
+    <tr>
+      <td>M3.2</td>
+      <td><code>pct_zero_releases</code></td>
+      <td>% de repositórios com <code>total_releases = 0</code></td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td>M3.3</td>
+      <td><code>outliers_releases</code></td>
+      <td>Repositórios acima de <code>Q3 + 1,5×IQR</code> em releases</td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Q4</strong> — Sistemas populares são atualizados com frequência?</td>
+      <td>M4.1</td>
+      <td><code>dias_desde_ultima_atualizacao</code></td>
+      <td>Diferença em dias entre <code>pushedAt</code> e a data da coleta</td>
+      <td><code>Miner/specs/github-rq1-rq4-v1.yaml</code></td>
+    </tr>
+    <tr>
+      <td>M4.2</td>
+      <td><code>faixa_atividade</code></td>
+      <td>Classificação: até 1d, 2-7d, 8-30d, 31-90d, 91-365d, 365+d</td>
+      <td><code>Miner/src/index.ts</code></td>
+    </tr>
+    <tr>
+      <td>M4.3</td>
+      <td><code>outliers_atividade</code></td>
+      <td>Repositórios acima de <code>Q3 + 1,5×IQR</code> em dias sem push</td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td rowspan="4"><strong>Q5</strong> — Sistemas populares são escritos nas linguagens mais populares?</td>
+      <td>M5.1</td>
+      <td><code>primaryLanguage</code></td>
+      <td>Linguagem primária declarada no repositório</td>
+      <td><code>Miner/specs/github-search-v2.yaml</code></td>
+    </tr>
+    <tr>
+      <td>M5.2</td>
+      <td><code>fonte_popularidade</code></td>
+      <td>GitHub Octoverse 2025 (top 5: TS, Python, JS, Java, C#)</td>
+      <td>Referência externa</td>
+    </tr>
+    <tr>
+      <td>M5.3</td>
+      <td><code>contagem_por_linguagem</code></td>
+      <td>Frequência absoluta e relativa por <code>primaryLanguage</code></td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td>M5.4</td>
+      <td><code>pct_no_top5_octoverse</code></td>
+      <td>% de repositórios cuja linguagem está no top 5 do Octoverse</td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Q6</strong> — Sistemas populares possuem alto percentual de issues fechadas?</td>
+      <td>M6.1</td>
+      <td><code>ratio_closed_issues</code></td>
+      <td><code>closed_issues / total_issues</code> (0 se <code>total_issues = 0</code>)</td>
+      <td><code>Miner/specs/github-search-v2.yaml</code></td>
+    </tr>
+    <tr>
+      <td>M6.2</td>
+      <td><code>mediana_ratio</code></td>
+      <td>Mediana de <code>ratio_closed_issues</code> na amostra</td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td>M6.3</td>
+      <td><code>repos_sem_issues</code></td>
+      <td>Quantidade de repositórios com <code>total_issues = 0</code></td>
+      <td>Cálculo pós-coleta</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Q7</strong> — Sistemas em linguagens mais populares recebem mais contribuição, releases e atualização?</td>
+      <td>M7.1</td>
+      <td><code>prs_por_linguagem</code></td>
+      <td>Mediana de <code>total_pr_aceitas</code> agrupada por linguagem</td>
+      <td>Cruzamento pós-coleta</td>
+    </tr>
+    <tr>
+      <td>M7.2</td>
+      <td><code>releases_por_linguagem</code></td>
+      <td>Mediana de <code>total_releases</code> agrupada por linguagem</td>
+      <td>Cruzamento pós-coleta</td>
+    </tr>
+    <tr>
+      <td>M7.3</td>
+      <td><code>dias_por_linguagem</code></td>
+      <td>Mediana de <code>dias_desde_ultima_atualizacao</code> agrupada por linguagem</td>
+      <td>Cruzamento pós-coleta</td>
+    </tr>
+  </tbody>
+</table>
