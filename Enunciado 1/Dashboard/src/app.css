@@ -1,39 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-zinc-950: #0a0a0a;
-  --color-zinc-900: #141414;
-  --color-zinc-800: #2a2a2a;
+  --color-zinc-950: #ffffff;
+  --color-zinc-900: #f8fafc;
+  --color-zinc-800: #e2e8f0;
 }
 
 @layer base {
   :root {
-    color-scheme: dark;
+    color-scheme: light;
   }
-
+  
   body {
-    background-color: var(--color-zinc-950);
-    @apply text-zinc-300 font-sans antialiased min-h-screen selection:bg-emerald-500/30;
+    background-color: var(--color-zinc-900);
+    @apply text-zinc-800 font-sans antialiased min-h-screen selection:bg-emerald-500/30;
   }
 
   .chart-wrap {
     @apply w-full h-[280px] relative;
   }
-
+  
   ::-webkit-scrollbar {
     width: 8px;
   }
-
   ::-webkit-scrollbar-track {
     background: transparent;
   }
-
   ::-webkit-scrollbar-thumb {
-    @apply bg-zinc-800 rounded-full;
+    @apply bg-zinc-300 rounded-full;
   }
-
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-zinc-700;
+    @apply bg-zinc-400;
   }
 }
 
