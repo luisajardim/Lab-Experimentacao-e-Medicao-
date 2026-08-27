@@ -2,90 +2,31 @@
 
 ## Sumário
 
-- [1. Introdução e hipóteses informais](#1-introdução-e-hipóteses-informais)
+- [1. Introdução](#1-introdução)
 - [2. Metodologia de coleta](#2-metodologia-de-coleta)
-- [3. Resultados e discussão por RQ](#3-resultados-e-discussão-por-rq)
+- [3. Resultados por RQ — Hipótese vs. Resultado](#3-resultados-por-rq--hipótese-vs-resultado)
 - [4. Configuração do processo (GitHub Projects)](#4-configuração-do-processo-github-projects)
+- [Apêndice A — GQM Tree do Projeto](#apêndice-a--gqm-tree-do-projeto)
+- [Apêndice B — GQM Table do Projeto](#apêndice-b--gqm-table-do-projeto)
 
 Link do repositório/GitHub Projects do grupo: `https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-`
 
 ---
 
-## 1. Introdução e hipóteses informais
+## 1. Introdução
 
-As hipóteses abaixo foram escritas antes de olharmos qualquer dado coletado —
-a ideia é justamente poder comparar depois o que a gente imaginava com o que
-os números de fato mostraram.
+Este laboratório investiga se repositórios populares do GitHub (os 1.000 com
+mais estrelas) compartilham certas características: idade, contribuição
+externa, frequência de releases, frequência de atualização, linguagem de
+programação e percentual de issues fechadas. O Apêndice A/B detalha a árvore
+GQM (Goal-Question-Metric) usada para derivar as métricas de cada RQ a partir
+desses objetivos.
 
-**RQ01 — Sistemas populares são maduros/antigos?**
-A gente acha que sim. É difícil um repositório juntar milhares de estrelas de
-um dia pro outro; isso normalmente vem de anos ganhando visibilidade e sendo
-recomendado dentro da comunidade. Por isso esperamos ver poucos repositórios
-com menos de um ou dois anos entre os mais estrelados, e bastante coisa
-concentrada na faixa de 5 a 15 anos. Quando aparecer algum caso recente no
-topo, imaginamos que seja algo que viralizou rápido ou pegou muita divulgação
-de uma vez.
-
-*Depois do dataset completo (Issues #8 e #9):* a hipótese se sustentou quase
-sem ajuste. A única coisa que mudaria na redação é chamar os repositórios
-jovens de "exceção" — os 13,9% com menos de 2 anos não aparecem como outlier
-em nenhum teste estatístico (critério IQR), então não são um caso anômalo
-isolado, são só a ponta mais nova de uma distribuição contínua, puxada
-provavelmente pela onda de ferramentas de IA/agentes de código que surgiu em
-2025-2026.
-
-**RQ02 — Sistemas populares recebem muita contribuição externa?**
-Hipótese: Sim. Repositórios com muitas estrelas tendem a ter uma comunidade
-maior e mais visibilidade, o que deve atrair contribuições na forma de pull
-requests. Assim, esperamos que a maior parte dos repositórios populares possua
-uma quantidade relevante de PRs aceitas, embora alguns projetos muito grandes
-possam concentrar valores excepcionalmente altos.
-
-**RQ03 — Sistemas populares lançam releases com frequência?**
-Hipótese: Sim, para uma parcela expressiva. Projetos populares normalmente
-precisam comunicar versões, correções e novas funcionalidades aos usuários, então
-esperamos encontrar um histórico relevante de releases. Porém, espera-se também que
-alguns repositórios não usem a funcionalidade Releases do GitHub, por exemplo,
-projetos que distribuem versões apenas por tags, pacotes ou imagens de containers.
-
-**RQ04 — Sistemas populares são atualizados com frequência?**
-Achamos que sim, na maioria dos casos — mais visibilidade costuma trazer mais
-gente contribuindo e, com isso, mais manutenção acontecendo. Mas também
-esperamos um grupo menor de repositórios que continuam populares mesmo sem
-receber atualização recente: coisas como listas `awesome-*`, materiais
-educacionais ou ferramentas que já chegaram num ponto de maturidade e não
-precisam mudar com frequência.
-
-*Depois do dataset completo (Issues #8 e #9):* a parte da frequência se
-confirmou até mais forte do que a gente esperava — a mediana real é de 2 dias,
-bem mais rápido que o "dias/semanas" que tínhamos chutado. Já o segundo grupo
-precisou de correção: não é principalmente lista `awesome-*` ou material
-educacional como imaginamos. Olhando os 196 outliers (critério IQR, 19,6% do
-dataset), os casos mais extremos são sobretudo ferramentas de software
-descontinuadas oficialmente — `atom/atom`, que o GitHub parou de manter em
-2022, e `adobe/brackets`, encerrado pela Adobe, são bons exemplos. Ou seja: o
-grupo "estagnado" tem mais a ver com produto abandonado pelos mantenedores do
-que com conteúdo que naturalmente não muda.
-
-**RQ05 — Sistemas populares são escritos nas linguagens mais populares?**
-Hipótese: Sim. Usando o **GitHub Octoverse 2025** como referência única de
-popularidade de linguagens (TypeScript, Python e JavaScript no topo),
-esperamos que a maior parte dos repositórios mais estrelados tenha uma
-dessas linguagens como `primaryLanguage`.
-
-**RQ06 — Sistemas populares possuem um alto percentual de issues fechadas?**
-Hipótese: Sim. Projetos com muitas estrelas tendem a ter comunidade e
-automação suficientes para triagem contínua. Esperamos mediana da razão
-`issues fechadas / total de issues` acima de 0,7 (70%). Repositórios sem
-aba de Issues (ex.: alguns kernels) entram com razão 0 e não são excluídos.
-
-**RQ07 — Sistemas em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência?**
-Hipótese: Sim. Esperamos medianas maiores de PRs aceitas (RQ02) e de
-releases (RQ03), e mediana menor de dias desde o último push (RQ04), nos
-repositórios cuja linguagem está no top do Octoverse 2025, em comparação
-com as demais linguagens da amostra.
-
----
+Para cada uma das 7 RQs, o grupo registrou uma hipótese informal **antes** de
+olhar qualquer dado coletado. Essas hipóteses, junto com o resultado obtido no
+dataset final e a discussão comparando as duas coisas, estão reunidas por RQ
+na seção 3 — assim dá pra ver lado a lado o que a gente esperava e o que os
+números mostraram, sem ficar pulando entre seções.
 
 ## 2. Metodologia de coleta
 
@@ -107,7 +48,9 @@ que extrai `createdAt` e `pushedAt` de cada repositório. Em cima disso,
   coleta, em dias.
 
 Como rodar, como validamos manualmente e os detalhes da checagem de outliers
-estão em [`Miner/docs/rq01-rq04.md`](Miner/docs/rq01-rq04.md).
+estão em [`Miner/docs/rq01-rq04.md`](Miner/docs/rq01-rq04.md). O relatório
+estatístico completo (distribuição, quartis, outliers nomeados) é gerado por
+`npm run report:rq01-rq04` → [`Miner/docs/relatorio-estatistico-rq01-rq04.md`](Miner/docs/relatorio-estatistico-rq01-rq04.md).
 
 **RQ05 / RQ06 / RQ07** — spec [`Miner/specs/github-search-v1.yaml`](Miner/specs/github-search-v1.yaml).
 Extrai `primaryLanguage.name`, issues fechadas, total de issues, PRs merged,
@@ -142,14 +85,30 @@ npm run dev -- ./specs/github-rq2-rq3-v2.yaml
 
 O CSV é salvo em `data/github-rq2-rq3-v2_<timestamp>.csv`.
 
+Estatísticas consolidadas de todas as RQs numéricas (mediana, quartis,
+outliers) também saem de uma vez com `npm run analyze` →
+[`Miner/data/metrics_summary.json`](Miner/data/metrics_summary.json).
+
 ---
 
-## 3. Resultados e discussão por RQ
+## 3. Resultados por RQ — Hipótese vs. Resultado
 
-### RQ01 — Idade do repositório
+Cada RQ abaixo segue a mesma estrutura: a hipótese informal (registrada antes
+da coleta), o resultado obtido no dataset final de 1.000 repositórios, e a
+discussão comparando as duas coisas.
 
-Números calculados em cima do dataset completo, os 1.000 repositórios de
-`Miner/data/1000_popular_repos.csv`:
+### RQ01 — Sistemas populares são maduros/antigos?
+
+**Hipótese (antes da coleta):** a gente acha que sim. É difícil um
+repositório juntar milhares de estrelas de um dia pro outro; isso normalmente
+vem de anos ganhando visibilidade e sendo recomendado dentro da comunidade.
+Por isso esperamos ver poucos repositórios com menos de um ou dois anos entre
+os mais estrelados, e bastante coisa concentrada na faixa de 5 a 15 anos.
+Quando aparecer algum caso recente no topo, imaginamos que seja algo que
+viralizou rápido ou pegou muita divulgação de uma vez.
+
+**Resultado** (dataset completo, 1.000 repositórios —
+`Miner/data/1000_popular_repos.csv`):
 
 | Métrica | Valor |
 |---|---|
@@ -178,15 +137,28 @@ menos −8,3 a 23,1 anos. Como a idade não passa de ~18 anos em nenhum caso (o
 GitHub existe desde 2008) e não tem como ser negativa, nenhum repositório
 ficou fora dessa faixa — zero outliers.
 
-**Discussão:** a hipótese se confirma. Mediana em 7,74 anos e média bem
-próxima (7,66) indicam uma distribuição sem grande distorção, com a maior
-parte dos repositórios concentrada entre 5 e 15 anos (62,7% do total). Só
-13,9% têm menos de 2 anos, o que reforça que popularidade no GitHub costuma
-levar tempo pra se construir. E como não apareceu nenhum outlier, essa
-maturidade parece ser mesmo a regra entre os repositórios mais populares, não
-um efeito puxado por um punhado de projetos muito antigos.
+**Discussão (hipótese vs. resultado):** a hipótese se confirma. Mediana em
+7,74 anos e média bem próxima (7,66) indicam uma distribuição sem grande
+distorção, com a maior parte dos repositórios concentrada entre 5 e 15 anos
+(62,7% do total). Só 13,9% têm menos de 2 anos, o que reforça que popularidade
+no GitHub costuma levar tempo pra se construir. E como não apareceu nenhum
+outlier, essa maturidade parece ser mesmo a regra entre os repositórios mais
+populares, não um efeito puxado por um punhado de projetos muito antigos.
 
-### RQ02 — Contribuição externa
+A única coisa que revisamos na redação original: os repositórios jovens
+(13,9% com menos de 2 anos) não são estatisticamente "exceção" — o critério
+IQR não aponta nenhum outlier em `idade_anos`, então são a ponta mais nova de
+uma distribuição contínua, puxada provavelmente pela onda de ferramentas de
+IA/agentes de código que surgiu em 2025-2026, e não um caso anômalo isolado.
+
+### RQ02 — Sistemas populares recebem muita contribuição externa?
+
+**Hipótese (antes da coleta):** sim. Repositórios com muitas estrelas tendem
+a ter uma comunidade maior e mais visibilidade, o que deve atrair
+contribuições na forma de pull requests. Assim, esperamos que a maior parte
+dos repositórios populares possua uma quantidade relevante de PRs aceitas,
+embora alguns projetos muito grandes possam concentrar valores
+excepcionalmente altos.
 
 **Resultado:** o dataset auditado tem 1.000 registros válidos. A métrica
 `total_pr_aceitas` teve mínimo de 0, Q1 de 175, mediana de 768, Q3 de 3.415,75,
@@ -198,41 +170,58 @@ Os maiores valores da amostra estão em projetos com comunidades muito grandes,
 como `firstcontributions/first-contributions`, `llvm/llvm-project`,
 `elastic/elasticsearch`, `getsentry/sentry` e `home-assistant/core`.
 
-**Discussão:** a hipótese se confirma, mas com uma diferença importante: a
-maioria dos repositórios populares recebe uma quantidade bastante relevante de
-PRs aceitas, embora a distribuição seja extremamente desigual. A mediana de 768
-PRs aceitos mostra que boa parte dos projetos tem um fluxo constante de
-contribuição, e os valores extremos puxam a média para 4.236,77. Isso faz
-sentido para projetos muito grandes, com comunidades ativas e unidades de
-manutenção que processam centenas ou milhares de contribuições ao longo do
-tempo. Em resumo, contribuição externa parece ser a regra entre os projetos
-populares, mas a intensidade varia muito de um repositório para outro.
+**Discussão (hipótese vs. resultado):** a hipótese se confirma, mas com uma
+diferença importante: a maioria dos repositórios populares recebe uma
+quantidade bastante relevante de PRs aceitas, embora a distribuição seja
+extremamente desigual. A mediana de 768 PRs aceitos mostra que boa parte dos
+projetos tem um fluxo constante de contribuição, e os valores extremos puxam
+a média para 4.236,77. Isso faz sentido para projetos muito grandes, com
+comunidades ativas e unidades de manutenção que processam centenas ou
+milhares de contribuições ao longo do tempo. Em resumo, contribuição externa
+parece ser a regra entre os projetos populares, mas a intensidade varia muito
+de um repositório para outro.
 
-### RQ03 — Frequência de releases
+### RQ03 — Sistemas populares lançam releases com frequência?
 
-**Resultado:** o mesmo CSV auditado de Q2 tem 1.000 registros válidos. A métrica
-`total_releases` teve mínimo de 0, Q1 de 0, mediana de 39, Q3 de 147, média de
-126,61 e máximo de 1.000. Houve 286 repositórios com zero releases (28,6%) e 93
-outliers pelo critério de Tukey, com IQR = 147 e limite superior ≈ 367,50.
+**Hipótese (antes da coleta):** sim, para uma parcela expressiva. Projetos
+populares normalmente precisam comunicar versões, correções e novas
+funcionalidades aos usuários, então esperamos encontrar um histórico
+relevante de releases. Porém, espera-se também que alguns repositórios não
+usem a funcionalidade Releases do GitHub, por exemplo, projetos que
+distribuem versões apenas por tags, pacotes ou imagens de containers.
+
+**Resultado:** o mesmo CSV auditado de Q2 tem 1.000 registros válidos. A
+métrica `total_releases` teve mínimo de 0, Q1 de 0, mediana de 39, Q3 de 147,
+média de 126,61 e máximo de 1.000. Houve 286 repositórios com zero releases
+(28,6%) e 93 outliers pelo critério de Tukey, com IQR = 147 e limite superior
+≈ 367,50.
 
 Entre os maiores históricos de releases figuram `langchain-ai/langchain`,
 `vercel/next.js`, `ggml-org/llama.cpp`, `electron/electron` e
 `storybookjs/storybook`.
 
-**Discussão:** a hipótese se sustenta parcialmente. Há uma parcela importante
-da amostra com histórico de versões — a mediana de 39 releases e o Q3 em 147
-indicam que muitos repositórios populares lançam artefatos de forma regular.
-Porém, 28,6% dos projetos não usam a funcionalidade de Releases do GitHub,
-mesmo sendo populares, o que sugere que muitas versões são distribuídas por
-meios alternativos, como tags, pacotes, imagens de contêiner ou canais de
-entrega próprios. Também vale destacar que o número total de releases não mede
-frequência diretamente, porque repositórios mais antigos tiveram mais tempo
-para acumular lançamentos. Por isso, a melhor leitura é a mediana e a
-distribuição da amostra, e não apenas os máximos absolutos.
+**Discussão (hipótese vs. resultado):** a hipótese se sustenta parcialmente.
+Há uma parcela importante da amostra com histórico de versões — a mediana de
+39 releases e o Q3 em 147 indicam que muitos repositórios populares lançam
+artefatos de forma regular. Porém, 28,6% dos projetos não usam a
+funcionalidade de Releases do GitHub, mesmo sendo populares, o que sugere que
+muitas versões são distribuídas por meios alternativos, como tags, pacotes,
+imagens de contêiner ou canais de entrega próprios. Também vale destacar que o
+número total de releases não mede frequência diretamente, porque repositórios
+mais antigos tiveram mais tempo para acumular lançamentos. Por isso, a melhor
+leitura é a mediana e a distribuição da amostra, e não apenas os máximos
+absolutos.
 
-### RQ04 — Tempo desde a última atualização
+### RQ04 — Sistemas populares são atualizados com frequência?
 
-Mesma base de RQ1, os 1.000 repositórios:
+**Hipótese (antes da coleta):** achamos que sim, na maioria dos casos — mais
+visibilidade costuma trazer mais gente contribuindo e, com isso, mais
+manutenção acontecendo. Mas também esperamos um grupo menor de repositórios
+que continuam populares mesmo sem receber atualização recente: coisas como
+listas `awesome-*`, materiais educacionais ou ferramentas que já chegaram num
+ponto de maturidade e não precisam mudar com frequência.
+
+**Resultado** (mesma base de RQ01, os 1.000 repositórios):
 
 | Métrica | Valor |
 |---|---|
@@ -272,17 +261,27 @@ Vale destacar `atom/atom` e `adobe/brackets`: são editores de código que o
 GitHub e a Adobe descontinuaram oficialmente, mas que seguem com muitas
 estrelas acumuladas mesmo sem receber commit há anos.
 
-**Discussão:** a hipótese se confirma, e o segundo grupo previsto também
-apareceu. A mediana de 2 dias mostra que quase metade dos repositórios
-(47,7%) recebeu push no último dia — atividade praticamente diária. Mas a
-média (113,8 dias) fica bem acima da mediana, o que denuncia uma distribuição
-puxada por uma cauda longa de repositórios populares que pararam de ser
-mantidos — os mesmos 19,6% que aparecem como outliers. Faz sentido: acumular
+**Discussão (hipótese vs. resultado):** a hipótese se confirma, e o segundo
+grupo previsto também apareceu — mas com um perfil diferente do imaginado. A
+mediana de 2 dias mostra que quase metade dos repositórios (47,7%) recebeu
+push no último dia — atividade praticamente diária, mais frequente até do que
+o "dias/semanas" estimado originalmente. Já a média (113,8 dias), bem acima
+da mediana, denuncia uma distribuição puxada por uma cauda longa de
+repositórios populares que pararam de ser mantidos — os mesmos 19,6% que
+aparecem como outliers. A hipótese original apontava principalmente listas
+`awesome-*` e material educacional como esse grupo estagnado; olhando os
+casos mais extremos, o perfil real é outro — majoritariamente ferramentas de
+software descontinuadas oficialmente pelos mantenedores (`atom/atom`,
+`adobe/brackets`), não conteúdo estático por natureza. Faz sentido: acumular
 estrelas é algo que fica registrado, então um projeto pode continuar
-"relevante" no GitHub muito tempo depois de os mantenedores terem abandonado
-ele.
+"relevante" no GitHub muito tempo depois de abandonado.
 
-### RQ05 — Linguagem primária
+### RQ05 — Sistemas populares são escritos nas linguagens mais populares?
+
+**Hipótese (antes da coleta):** sim. Usando o **GitHub Octoverse 2025** como
+referência única de popularidade de linguagens (TypeScript, Python e
+JavaScript no topo), esperamos que a maior parte dos repositórios mais
+estrelados tenha uma dessas linguagens como `primaryLanguage`.
 
 **Resultado** (CSV de 1.000 repositórios, Sprint 2 —
 `Miner/data/github-search-v1_1787150327459.csv`):
@@ -301,15 +300,21 @@ ele.
 Nas 5 linguagens do Octoverse 2025 (TypeScript, Python, JavaScript, Java, C#):
 562 repositórios (56,2%).
 
-**Discussão:** a hipótese se sustenta em parte. Python, TypeScript e JavaScript
-são de fato as três linguagens primárias mais frequentes entre os mais
-estrelados, alinhadas ao topo do Octoverse 2025. A ordem local, porém, não
-copia o ranking de contribuidores: Python lidera a amostra (22,8%) enquanto
-o Octoverse coloca TypeScript em 1º. Há ainda 8,7% sem linguagem definida
-(listas `awesome-*`, materiais etc.), o que puxa o cruzamento para baixo se
-não for tratado à parte.
+**Discussão (hipótese vs. resultado):** a hipótese se sustenta em parte.
+Python, TypeScript e JavaScript são de fato as três linguagens primárias mais
+frequentes entre os mais estrelados, alinhadas ao topo do Octoverse 2025. A
+ordem local, porém, não copia o ranking de contribuidores: Python lidera a
+amostra (22,8%) enquanto o Octoverse coloca TypeScript em 1º. Há ainda 8,7%
+sem linguagem definida (listas `awesome-*`, materiais etc.), o que puxa o
+cruzamento para baixo se não for tratado à parte.
 
-### RQ06 — Percentual de issues fechadas
+### RQ06 — Sistemas populares possuem um alto percentual de issues fechadas?
+
+**Hipótese (antes da coleta):** sim. Projetos com muitas estrelas tendem a
+ter comunidade e automação suficientes para triagem contínua. Esperamos
+mediana da razão `issues fechadas / total de issues` acima de 0,7 (70%).
+Repositórios sem aba de Issues (ex.: alguns kernels) entram com razão 0 e não
+são excluídos.
 
 **Resultado** (mesmos 1.000 repositórios):
 
@@ -321,20 +326,26 @@ não for tratado à parte.
 | Repositórios sem issues (total = 0) | 43 |
 | Razão fora de [0, 1] | 0 |
 
-**Discussão:** a mediana de ~86,5% supera o limiar de 70% da hipótese. Os
-43 repositórios com razão 0 por não usarem a aba Issues (ex.: `torvalds/linux`
-e várias listas) puxam o mínimo para 0, mas não derrubam a mediana. Não houve
-inconsistência `closed_issues > total_issues` no CSV.
+**Discussão (hipótese vs. resultado):** a mediana de ~86,5% supera o limiar
+de 70% da hipótese. Os 43 repositórios com razão 0 por não usarem a aba
+Issues (ex.: `torvalds/linux` e várias listas) puxam o mínimo para 0, mas não
+derrubam a mediana. Não houve inconsistência `closed_issues > total_issues`
+no CSV.
 
-### RQ07 — Cruzamento por linguagem (RQ02, RQ03 e RQ04 por linguagem)
+### RQ07 — Sistemas em linguagens mais populares recebem mais contribuição, lançam mais releases e são atualizados com mais frequência?
 
-**Resultado:** a extração já está no CSV unificado (`linguagem`, `merged_prs`,
-`releases`, `dias_desde_ultima_atualizacao`). Tabelas por linguagem entram na
-S03 (análise e visualização), para não misturar hipótese informal com o
-cruzamento final.
+**Hipótese (antes da coleta):** sim. Esperamos medianas maiores de PRs
+aceitas (RQ02) e de releases (RQ03), e mediana menor de dias desde o último
+push (RQ04), nos repositórios cuja linguagem está no top do Octoverse 2025,
+em comparação com as demais linguagens da amostra.
 
-**Discussão:** hipótese registrada na seção 1; a confrontação com os números
-fica para a S03, depois da validação do dataset de 1.000 repositórios.
+**Resultado:** a extração já está no CSV unificado (`linguagem`,
+`merged_prs`, `releases`, `dias_desde_ultima_atualizacao`). Tabelas por
+linguagem entram na S03 (análise e visualização), para não misturar hipótese
+informal com o cruzamento final.
+
+**Discussão (hipótese vs. resultado):** a confrontação com os números fica
+para a S03, depois da validação do dataset de 1.000 repositórios.
 
 ---
 
@@ -365,7 +376,11 @@ execução e força o grupo a terminar tarefas antes de puxar novas atividades.
 Na prática, isso ajuda a manter o fluxo estável, expõe bloqueios mais cedo e
 deixa o board mais previsível durante as sprints.
 
-[preencher: print do kanban ao final da sprint 3]
+### Anexo — Print do board
+
+![Board do GitHub Projects do grupo](img/kanban.png)
+
+![Detalhe de uma Issue do board](img/image.png)
 
 ---
 
