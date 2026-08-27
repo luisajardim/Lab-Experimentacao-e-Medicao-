@@ -12,6 +12,7 @@ export interface RepoRow {
 }
 
 const repositoriesUrl = '/data/repos.json';
+const rq02rq03Url = '/data/rq02-rq03.json';
 
 export async function loadAllData(): Promise<RepoRow[]> {
   const response = await fetch(repositoriesUrl);
@@ -28,6 +29,15 @@ export async function loadAllData(): Promise<RepoRow[]> {
     closed_issues: Number(row.total_issues_fechadas || 0),
     ratio_closed_issues: Number(row.razao_issues_fechadas || 0)
   })) as RepoRow[];
+}
+
+export async function loadRQ02RQ03Data(): Promise<{ prs: number[]; releases: number[] }> {
+  const response = await fetch(rq02rq03Url);
+  if (!response.ok) throw new Error(`Não foi possível carregar rq02-rq03 (${response.status}).`);
+  const rows: Record<string, unknown>[] = await response.json();
+  const prs = rows.map(r => Number(r.total_pr_aceitas || 0)).filter(v => isFinite(v));
+  const releases = rows.map(r => Number(r.total_releases || 0)).filter(v => isFinite(v));
+  return { prs, releases };
 }
 
 export function calcMedian(values: number[]): number {

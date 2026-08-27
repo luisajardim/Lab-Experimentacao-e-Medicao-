@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte';
   import { Chart, registerables } from 'chart.js';
-  import { loadAllData, calcQuartiles, langCounts, crossTabRQ07, type RepoRow } from '$lib/data';
+  import { loadAllData, loadRQ02RQ03Data, calcQuartiles, langCounts, crossTabRQ07, type RepoRow } from '$lib/data';
   import { Loader2, FileText, CheckCircle, Clock, GitPullRequest, GitMerge, AlertCircle } from 'lucide-svelte';
 
   Chart.register(...registerables);
@@ -19,6 +19,11 @@
 
   let canvasRQ05 = $state<HTMLCanvasElement | null>(null);
   let canvasRQ06 = $state<HTMLCanvasElement | null>(null);
+  let canvasRQ02 = $state<HTMLCanvasElement | null>(null);
+  let canvasRQ03 = $state<HTMLCanvasElement | null>(null);
+  let rq02Data = $state<{ prs: number[]; releases: number[] }>({ prs: [], releases: [] });
+  let prsStatsRQ02 = $state({ q1: 0, median: 0, q3: 0 });
+  let relStatsRQ02 = $state({ q1: 0, median: 0, q3: 0 });
 
   function makeBarChart(canvas: HTMLCanvasElement, labels: string[], values: number[]) {
     const bgColors = labels.map((_, i) => {
@@ -104,6 +109,49 @@
     });
   }
 
+  function makeBucketHistogram(canvas: HTMLCanvasElement, labels: string[], values: number[], color = '#10b981') {
+    new Chart(canvas, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          data: values,
+          backgroundColor: color,
+          borderRadius: 4,
+          borderSkipped: false
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            ticks: { color: '#64748b', maxRotation: 45, minRotation: 45 },
+            grid: { color: 'transparent' },
+            border: { display: false }
+          },
+          y: {
+            ticks: { color: '#64748b' },
+            grid: { color: '#f1f5f9' },
+            border: { display: false }
+          }
+        }
+      }
+    });
+  }
+
+  function buildHistogramByBuckets(values: number[], ranges: { label: string; min: number; max: number | null }[]) {
+    return ranges.map(({ label, min, max }, index) => {
+      const count = values.filter((value) => {
+        const lowerBound = index === 0 ? Number.NEGATIVE_INFINITY : ranges[index - 1].max ?? Number.NEGATIVE_INFINITY;
+        const upperBound = max === null ? Number.POSITIVE_INFINITY : max;
+        return value > lowerBound && value <= upperBound && value >= min;
+      }).length;
+      return { label, count };
+    });
+  }
+
   onMount(async () => {
     data = await loadAllData();
     langs = langCounts(data);
@@ -121,11 +169,39 @@
     const topLangs = langs.slice(0, 5).map(l => l.label);
     crossData = crossTabRQ07(data, topLangs);
 
+    rq02Data = await loadRQ02RQ03Data();
+    prsStatsRQ02 = calcQuartiles(rq02Data.prs);
+    relStatsRQ02 = calcQuartiles(rq02Data.releases);
+
     loading = false;
     await tick();
     const top10Langs = langs.slice(0, 10);
     if (canvasRQ05) makeBarChart(canvasRQ05, top10Langs.map(l => l.label), top10Langs.map(l => l.count));
     if (canvasRQ06) makeHistogramRQ06(canvasRQ06);
+
+    const prRanges = [
+      { label: '0-100', min: 0, max: 100 },
+      { label: '101-500', min: 101, max: 500 },
+      { label: '501-1k', min: 501, max: 1000 },
+      { label: '1k-5k', min: 1001, max: 5000 },
+      { label: '5k-10k', min: 5001, max: 10000 },
+      { label: '10k+', min: 10001, max: null }
+    ];
+    const releaseRanges = [
+      { label: '0', min: 0, max: 0 },
+      { label: '1', min: 1, max: 1 },
+      { label: '2-10', min: 2, max: 10 },
+      { label: '11-50', min: 11, max: 50 },
+      { label: '51-100', min: 51, max: 100 },
+      { label: '101-500', min: 101, max: 500 },
+      { label: '501+', min: 501, max: null }
+    ];
+
+    const prBucketCounts = buildHistogramByBuckets(rq02Data.prs, prRanges);
+    const releaseBucketCounts = buildHistogramByBuckets(rq02Data.releases, releaseRanges);
+
+    if (canvasRQ02) makeBucketHistogram(canvasRQ02, prBucketCounts.map(item => item.label), prBucketCounts.map(item => item.count));
+    if (canvasRQ03) makeBucketHistogram(canvasRQ03, releaseBucketCounts.map(item => item.label), releaseBucketCounts.map(item => item.count));
   });
 </script>
 
@@ -146,16 +222,6 @@
     </header>
 
     <section class="grid grid-cols-1 md:grid-cols-4 gap-4" id="rq01-04">
-      <div class="bg-white border border-slate-200 shadow-sm p-5 rounded-xl relative overflow-hidden">
-        <div class="flex items-center justify-between mb-4">
-          <span class="text-sm font-semibold text-slate-500">Total de Repositórios</span>
-          <FileText size={16} class="text-slate-400" />
-        </div>
-        <div class="text-3xl font-black text-slate-800 tabular-nums mb-1">{data.length}</div>
-        <div class="text-xs text-emerald-600 flex items-center gap-1 font-semibold">
-        </div>
-      </div>
-
       <div class="bg-white border border-slate-200 shadow-sm p-5 rounded-xl">
         <div class="flex items-center justify-between mb-4">
           <span class="text-sm font-semibold text-slate-500">Idade Mediana (RQ01)</span>
@@ -174,6 +240,15 @@
         <div class="text-xs text-slate-500 font-semibold">Pull Requests Aceitos</div>
       </div>
 
+      <div class="bg-white border border-slate-200 shadow-sm p-5 rounded-xl">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-sm font-semibold text-slate-500">Mediana de releases (RQ03)</span>
+          <GitPullRequest size={16} class="text-slate-400" />
+        </div>
+        <div class="text-3xl font-black text-slate-800 tabular-nums mb-1">{relStats.median}</div>
+        <div class="text-xs text-slate-500 font-semibold">Pull Frequência de releases</div>
+      </div>
+
       <div class="bg-white border border-red-100 shadow-sm p-5 rounded-xl">
         <div class="flex items-center justify-between mb-4">
           <span class="text-sm font-semibold text-slate-500">Dias sem Update (RQ04)</span>
@@ -183,7 +258,45 @@
         <div class="text-xs text-red-600 font-semibold flex items-center gap-1">
         </div>
       </div>
+
+      <div class="bg-white border border-slate-200 shadow-sm p-5 rounded-xl relative overflow-hidden">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-sm font-semibold text-slate-500">Total de Repositórios</span>
+          <FileText size={16} class="text-slate-400" />
+        </div>
+        <div class="text-3xl font-black text-slate-800 tabular-nums mb-1">{data.length}</div>
+        <div class="text-xs text-emerald-600 flex items-center gap-1 font-semibold">
+        </div>
+      </div>
     </section>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" id="rq02-03">
+      <section class="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <h3 class="text-base font-bold text-slate-900">Distribuição de PRs Aceitas</h3>
+            <p class="text-sm text-slate-500">RQ02: Contribuição externa</p>
+          </div>
+          <span class="text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md text-xs font-bold border border-emerald-100">1.000 repositórios</span>
+        </div>
+        <div class="chart-wrap" style="height: 320px;">
+          <canvas bind:this={canvasRQ02}></canvas>
+        </div>
+      </section>
+
+      <section class="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <h3 class="text-base font-bold text-slate-900">Distribuição de Releases</h3>
+            <p class="text-sm text-slate-500">RQ03: Frequência de releases</p>
+          </div>
+          <span class="text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md text-xs font-bold border border-blue-100">1.000 repositórios</span>
+        </div>
+        <div class="chart-wrap" style="height: 320px;">
+          <canvas bind:this={canvasRQ03}></canvas>
+        </div>
+      </section>
+    </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       

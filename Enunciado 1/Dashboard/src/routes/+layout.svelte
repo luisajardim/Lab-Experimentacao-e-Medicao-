@@ -26,6 +26,10 @@
         <Target size={16} />
         Métricas de Maturidade
       </a>
+      <a href="#rq02-03" class="flex items-center gap-3 px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors">
+        <GitPullRequest size={16} />
+        PRs & Releases
+      </a>
       <a href="#rq05-06" class="flex items-center gap-3 px-3 py-2 text-sm text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors">
         <GitPullRequest size={16} />
         Linguagens & Issues
