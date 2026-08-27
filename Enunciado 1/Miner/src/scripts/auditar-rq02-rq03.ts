@@ -14,7 +14,7 @@ type MetricSummary = {
 };
 
 const REQUIRED_COLUMNS = ['nome', 'total_pr_aceitas', 'total_releases'];
-const DEFAULT_OUTPUT = './src/scripts/audits/auditoria_rq02_rq03.md';
+const DEFAULT_OUTPUT = './data/auditoria_rq02_rq03.md';
 
 function findLatestCollection(): string {
   const directory = path.resolve('./data');

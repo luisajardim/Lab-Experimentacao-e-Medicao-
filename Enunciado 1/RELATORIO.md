@@ -194,13 +194,16 @@ média de 4.236,77 e máximo de 103.349. O critério de Tukey apontou 124
 outliers, com IQR = 3.240,75 e limite superior ≈ 8.276,88; não houve nenhum
 valor inválido em `total_pr_aceitas`.
 
+Os maiores valores da amostra estão em projetos com comunidades muito grandes,
+como `firstcontributions/first-contributions`, `llvm/llvm-project`,
+`elastic/elasticsearch`, `getsentry/sentry` e `home-assistant/core`.
+
 **Discussão:** a hipótese se confirma, mas com uma diferença importante: a
 maioria dos repositórios populares recebe uma quantidade bastante relevante de
-PRs aceitos, embora a distribuição seja extremamente desigual. A mediana de 768
+PRs aceitas, embora a distribuição seja extremamente desigual. A mediana de 768
 PRs aceitos mostra que boa parte dos projetos tem um fluxo constante de
-contribuição, e os valores extremos — como `llvm/llvm-project`,
-`kubernetes/kubernetes` e `python/cpython` — puxam a média para 4.236,77. Isso
-faz sentido para projetos muito grandes, com comunidades ativas e unidades de
+contribuição, e os valores extremos puxam a média para 4.236,77. Isso faz
+sentido para projetos muito grandes, com comunidades ativas e unidades de
 manutenção que processam centenas ou milhares de contribuições ao longo do
 tempo. Em resumo, contribuição externa parece ser a regra entre os projetos
 populares, mas a intensidade varia muito de um repositório para outro.
@@ -211,6 +214,10 @@ populares, mas a intensidade varia muito de um repositório para outro.
 `total_releases` teve mínimo de 0, Q1 de 0, mediana de 39, Q3 de 147, média de
 126,61 e máximo de 1.000. Houve 286 repositórios com zero releases (28,6%) e 93
 outliers pelo critério de Tukey, com IQR = 147 e limite superior ≈ 367,50.
+
+Entre os maiores históricos de releases figuram `langchain-ai/langchain`,
+`vercel/next.js`, `ggml-org/llama.cpp`, `electron/electron` e
+`storybookjs/storybook`.
 
 **Discussão:** a hipótese se sustenta parcialmente. Há uma parcela importante
 da amostra com histórico de versões — a mediana de 39 releases e o Q3 em 147
