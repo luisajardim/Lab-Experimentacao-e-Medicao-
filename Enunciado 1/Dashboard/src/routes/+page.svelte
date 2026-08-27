@@ -1,13 +1,14 @@
 <script lang="ts">
   import { onMount, tick } from 'svelte';
   import { Chart, registerables } from 'chart.js';
-  import { loadAllData, loadRQ02RQ03Data, calcQuartiles, langCounts, crossTabRQ07, type RepoRow } from '$lib/data';
+  import { loadAllData, loadRQ02RQ03Data, calcQuartiles, langCounts, crossTabRQ07, loadSnapshotData, type RepoRow, type SnapshotRow } from '$lib/data';
   import { Loader2, FileText, CheckCircle, Clock, GitPullRequest, GitMerge, AlertCircle } from 'lucide-svelte';
 
   Chart.register(...registerables);
 
   let data = $state<RepoRow[]>([]);
   let langs = $state<ReturnType<typeof langCounts>>([]);
+  let snapshotData = $state<SnapshotRow[]>([]);
   let loading = $state(true);
 
   let ageStats = $state({ q1: 0, median: 0, q3: 0 });
@@ -172,6 +173,12 @@
     rq02Data = await loadRQ02RQ03Data();
     prsStatsRQ02 = calcQuartiles(rq02Data.prs);
     relStatsRQ02 = calcQuartiles(rq02Data.releases);
+    
+    try {
+      snapshotData = await loadSnapshotData();
+    } catch (e) {
+      console.error('Falha ao carregar o snapshot.csv', e);
+    }
 
     loading = false;
     await tick();
@@ -360,6 +367,81 @@
         </table>
       </div>
     </section>
+
+    {#if snapshotData.length > 0}
+      <section class="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden" id="kanban-snapshot">
+        <div class="p-6 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
+          <div>
+            <h3 class="text-base font-bold text-slate-900">Integração GitHub Projects</h3>
+            <p class="text-sm text-slate-500">Snapshot final do board (Sprint S02)</p>
+          </div>
+          <span class="text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-md text-xs font-bold border border-indigo-100">{snapshotData.length} Issues</span>
+        </div>
+        
+        <div class="p-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-slate-50 rounded-lg p-4 border border-slate-100">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="font-bold text-slate-700 text-sm">Backlog</h4>
+                <span class="bg-slate-200 text-slate-600 px-2 py-0.5 rounded text-xs font-bold">{snapshotData.filter(s => s.status.includes('Backlog') || s.status.includes('Todo')).length}</span>
+              </div>
+              <div class="space-y-3">
+                {#each snapshotData.filter(s => s.status.includes('Backlog') || s.status.includes('Todo')) as item}
+                  <div class="bg-white p-3 rounded border border-slate-200 shadow-sm">
+                    <div class="text-xs text-slate-500 mb-1">#{item.issue_number}</div>
+                    <div class="text-sm font-semibold text-slate-800 leading-tight mb-2">{item.title}</div>
+                    <div class="flex justify-between items-center text-xs">
+                      <span class="bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded">{item.assignees || 'Unassigned'}</span>
+                      <span class="text-slate-400">{new Date(item.item_updated_at).toLocaleDateString()}</span>
+                    </div>
+                  </div>
+                {/each}
+              </div>
+            </div>
+
+            <div class="bg-blue-50/50 rounded-lg p-4 border border-blue-100/50">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="font-bold text-blue-800 text-sm">Em Andamento</h4>
+                <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-bold">{snapshotData.filter(s => s.status === 'Em Andamento' || s.status === 'In Progress').length}</span>
+              </div>
+              <div class="space-y-3">
+                {#each snapshotData.filter(s => s.status === 'Em Andamento' || s.status === 'In Progress') as item}
+                  <div class="bg-white p-3 rounded border border-slate-200 shadow-sm border-l-2 border-l-blue-400">
+                    <div class="text-xs text-slate-500 mb-1">#{item.issue_number}</div>
+                    <div class="text-sm font-semibold text-slate-800 leading-tight mb-2">{item.title}</div>
+                    <div class="flex justify-between items-center text-xs">
+                      <span class="bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded">{item.assignees || 'Unassigned'}</span>
+                      <span class="text-slate-400">{new Date(item.item_updated_at).toLocaleDateString()}</span>
+                    </div>
+                  </div>
+                {/each}
+              </div>
+            </div>
+
+            <div class="bg-emerald-50/50 rounded-lg p-4 border border-emerald-100/50">
+              <div class="flex items-center justify-between mb-4">
+                <h4 class="font-bold text-emerald-800 text-sm">Concluído</h4>
+                <span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded text-xs font-bold">{snapshotData.filter(s => s.status === 'Concluído' || s.status === 'Done').length}</span>
+              </div>
+              <div class="space-y-3">
+                {#each snapshotData.filter(s => s.status === 'Concluído' || s.status === 'Done') as item}
+                  <div class="bg-white p-3 rounded border border-slate-200 shadow-sm border-l-2 border-l-emerald-400">
+                    <div class="text-xs text-slate-500 mb-1">#{item.issue_number}</div>
+                    <div class="text-sm font-semibold text-slate-800 leading-tight mb-2">{item.title}</div>
+                    <div class="flex justify-between items-center text-xs">
+                      <span class="bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded">{item.assignees || 'Unassigned'}</span>
+                      <span class="text-slate-400">{new Date(item.item_updated_at).toLocaleDateString()}</span>
+                    </div>
+                  </div>
+                {/each}
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    {/if}
     
   </div>
 {/if}

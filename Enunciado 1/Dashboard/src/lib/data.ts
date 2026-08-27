@@ -1,3 +1,5 @@
+import Papa from 'papaparse';
+
 export interface RepoRow {
   name: string;
   linguagem: string;
@@ -87,5 +89,39 @@ export function crossTabRQ07(data: RepoRow[], topLangs: string[]) {
       idade: calcMedian(subset.map(r => r.idade_anos)),
       atualizacao: calcMedian(subset.map(r => r.dias_desde_ultima_atualizacao))
     };
+  });
+}
+
+export interface SnapshotRow {
+  sprint: string;
+  snapshot_at: string;
+  project_title: string;
+  project_number: string;
+  project_url: string;
+  item_id: string;
+  content_type: string;
+  issue_number: string;
+  title: string;
+  issue_state: string;
+  status: string;
+  assignees: string;
+  url: string;
+  item_updated_at: string;
+}
+
+export async function loadSnapshotData(): Promise<SnapshotRow[]> {
+  const response = await fetch('/data/snapshot.csv');
+  if (!response.ok) throw new Error('Falha ao carregar snapshot.csv');
+  const text = await response.text();
+  
+  return new Promise((resolve, reject) => {
+    Papa.parse<SnapshotRow>(text, {
+      header: true,
+      skipEmptyLines: true,
+      complete: (results) => {
+        resolve(results.data as SnapshotRow[]);
+      },
+      error: (error: any) => reject(error)
+    });
   });
 }
