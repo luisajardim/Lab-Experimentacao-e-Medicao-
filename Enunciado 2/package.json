@@ -1,0 +1,24 @@
+{
+  "name": "experimento-ia-katas",
+  "version": "1.0.0",
+  "homepage": "https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-#readme",
+  "bugs": {
+    "url": "https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-.git"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "timer": "node tools/timer-cli.js",
+    "metrics": "node tools/metrics-runner.js"
+  },
+  "devDependencies": {
+    "escomplex": "^2.0.0",
+    "jest": "^29.0.0",
+    "jscpd": "^3.5.0"
+  }
+}
