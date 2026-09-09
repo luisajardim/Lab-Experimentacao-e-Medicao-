@@ -10,20 +10,37 @@ Este repositório contém a infraestrutura, execução e análise estatística d
 * **Tratamentos:**
   1. **SEM_IA:** Resolução manual pelo desenvolvedor em ambiente controlado.
   2. **COM_IA:** Resolução com suporte de LLM (fornecendo apenas o enunciado da questão como prompt).
-* **Time-box:** 35 minutos por *trial*.
+* **Time-box:** **25 minutos** por *trial* (otimizado para manter o foco e evitar fadiga).
 * **Suíte de Aceite:** Testes unitários automatizados (Jest) mantidos fixos e isolados como critério de aceite (*time-to-green*).
 * **Katas Selecionados:**
   * `kata-01-fizzbuzz`
   * `kata-02-roman-numerals`
   * `kata-03-string-calculator`
   * `kata-04-bowling-game`
+  * `kata-05-isbn-validator`
+  * `kata-06-pagination`
+
+---
+
+## 🎯 Racional de Seleção dos Katas (Metodologia Mista)
+
+Para garantir validade interna e externa ao estudo, os 6 Katas foram divididos em duas categorias intencionais:
+
+### 1. Desafios Clássicos e Acadêmicos (Katas 01 a 04)
+* **Exemplos:** *FizzBuzz*, *Roman Numerals*, *String Calculator*, *Bowling Game*.
+* **Motivação:** Trata-se de problemas amplamente difundidos na literatura técnica de TDD e maratona de programação. Eles servem como **linha de base (baseline)** para medir o comportamento e o teto de desempenho da IA em tarefas cujos padrões algorítmicos estão fortemente presentes em seus dados de treinamento.
+
+### 2. Desafios Práticos e Não Indexados (Katas 05 e 06)
+* **Exemplos:** *ISBN-10 Validator* e *Array Chunking & Pagination*.
+* **Motivação:** Formulado sem dependência de plataformas competitivas públicas (como LeetCode, HackerRank ou Beecrowd). Esses katas simulam cenários rotineiros de desenvolvimento web/backend (parsing de payloads, regras formais de validação, manipulação de ponteiros/índices e paginação de dados).
+* **Objetivo Experimental:** Avaliar a capacidade de generalização da LLM em problemas práticos do dia a dia, testando se ela introduz erros sutis de lógica (como problemas de *off-by-one* ou falta de tratamento de caracteres especiais) quando não há um gabarito algorítmico exato decorado.
 
 ---
 
 ## 🔬 Questões de Pesquisa (RQs) & Hipóteses
 
 * **RQ1 (Tempo de Desenvolvimento):** O uso de IA reduz o tempo necessário para atingir o estado *Green* (*Time-to-Green*)?
-* **RQ2 (Taxa de Sucesso):** O uso de IA aumenta a probabilidade de concluir o Kata dentro do limite de 35 minutos?
+* **RQ2 (Taxa de Sucesso):** O uso de IA aumenta a probabilidade de concluir o Kata dentro do limite de 25 minutos?
 * **RQ3 (Qualidade do Código):** O código gerado/auxiliado por IA apresenta métricas de complexidade e duplicação equivalentes ou superiores ao código manual?
 
 ---
@@ -40,15 +57,19 @@ Este repositório contém a infraestrutura, execução e análise estatística d
 
 ---
 
-## 🔀 Matriz Experimental (Crossover Design)
+## 🔀 Matriz Experimental (Crossover Design Completo)
 
-Serão executados **12 trials no total** (3 Desenvolvedores × 4 Katas):
+Serão executados **12 trials no total** (3 Desenvolvedores × 4 Katas cada), garantindo que **todos os 6 Katas sejam avaliados sob ambos os tratamentos (`COM_IA` e `SEM_IA`)**:
 
-| Desenvolvedor | Kata 01 | Kata 02 | Kata 03 | Kata 04 | Total Issues |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Dev 1** | **SEM_IA** | **COM_IA** | **SEM_IA** | **COM_IA** | 4 Issues |
-| **Dev 2** | **COM_IA** | **SEM_IA** | **COM_IA** | **SEM_IA** | 4 Issues |
-| **Dev 3** | **SEM_IA** | **COM_IA** | **COM_IA** | **SEM_IA** | 4 Issues |
+| Kata / Exercício | Categoria | Dev 1 | Dev 2 | Dev 3 |
+| :--- | :--- | :---: | :---: | :---: |
+| **Kata 01: FizzBuzz** | Clássico / Baseline | — | **COM_IA** | **SEM_IA** |
+| **Kata 02: Roman Numerals** | Clássico / Algorítmico | — | **SEM_IA** | **COM_IA** |
+| **Kata 03: String Calculator** | Clássico / Parsing | **COM_IA** | — | **SEM_IA** |
+| **Kata 04: Bowling Game** | Clássico / Regra de Negócio | **SEM_IA** | **COM_IA** | — |
+| **Kata 05: ISBN-10 Validator** | Prático / Validação | **SEM_IA** | — | **COM_IA** |
+| **Kata 06: Pagination** | Prático / Estrutura Web | **COM_IA** | **SEM_IA** | — |
+| **Total de Issues por Dev** | | **4 Issues** | **4 Issues** | **4 Issues** |
 
 ---
 
@@ -71,14 +92,16 @@ Enunciado 2/
 │   │   └── index.test.js       # Suíte fixa de testes de aceite
 │   ├── kata-02-roman-numerals/
 │   ├── kata-03-string-calculator/
-│   └── kata-04-bowling-game/
+│   ├── kata-04-bowling-game/
+│   ├── kata-05-isbn-validator/ # Kata focado em parsing/validação de regras
+│   └── kata-06-pagination/     # Kata focado em estrutura de dados/fórmulas de índice
 │
 ├── trials/                     # Execuções individuais dos trials (Sprint 2)
 │   ├── dev1/
 │   │   ├── kata-01-sem-ia/
 │   │   │   ├── index.js        # Código final implementado
 │   │   │   └── metrics.json    # Métricas estáticas do trial
-│   │   └── kata-02-com-ia/
+│   │   └── kata-03-com-ia/
 │   │       ├── index.js        # Código final gerado
 │   │       ├── prompts.md      # Histórico de conversas com a LLM
 │   │       └── metrics.json
@@ -104,12 +127,12 @@ Enunciado 2/
 
 * **Dev 1:** Desenvolvimento do `tools/timer-cli.js` (cronometragem CLI, captura de `Shift + T`, execução do Jest via subprocesso e geração de `data/trials-log.json`).
 * **Dev 2:** Desenvolvimento do `tools/metrics-runner.js` (integração de analisadores JS para extração de LOC, complexidade ciclomática e duplicação).
-* **Dev 3:** Criação e validação dos 4 Katas em `katas/` com boilerplates em JS e suítes de teste Jest completas.
+* **Dev 3:** Criação e validação dos Katas em `katas/` com boilerplates em JS e suítes de teste Jest completas.
 
 ### **Sprint 2: Execução dos Trials**
 
-* Execução individual das 4 Issues por dev conforme a matriz de Crossover.
-* Uso obrigatorio do `timer-cli.js` durante cada *trial*.
+* Execução individual das 4 Issues por dev conforme a matriz Crossover.
+* Uso obrigatório do `timer-cli.js` durante cada *trial*.
 * Armazenamento das transcrições de prompts e soluções em `trials/devX/`.
 
 ### **Sprint 3: Análise Estatística & Visualização**
@@ -123,24 +146,25 @@ Enunciado 2/
 ## 🚀 Como Executar o Timer-CLI de um Trial
 
 1. Instale as dependências:
+
 ```bash
 npm install
 
 ```
 
-
 2. Inicie o trial indicando o dev, kata, tratamento e comando do teste:
+
 ```bash
 npm run timer -- \
   --dev dev1 \
-  --kata kata-01-fizzbuzz \
+  --kata kata-05-isbn-validator \
   --treatment COM_IA \
-  --cmd "npx jest katas/kata-01-fizzbuzz" \
-  --timebox 35
+  --cmd "npx jest katas/kata-05-isbn-validator" \
+  --timebox 25
 
 ```
 
-
 3. Durante o trial:
+
 * Pressione **`Shift + T`** para rodar a suíte de testes de aceite.
-* O relógio irá parar automaticamente no primeiro evento de sucesso (*Green*) ou ao esgotar os 35 minutos (*Timeout*).
+* O relógio irá parar automaticamente no primeiro evento de sucesso (*Green*) ou ao esgotar o limite configurado (*Timeout*).
