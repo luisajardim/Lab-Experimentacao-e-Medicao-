@@ -12,6 +12,11 @@ Este repositório contém a infraestrutura, execução e análise estatística d
   2. **COM_IA:** Resolução com suporte de LLM (fornecendo apenas o enunciado da questão como prompt).
 * **Time-box:** 35 minutos por *trial*.
 * **Suíte de Aceite:** Testes unitários automatizados (Jest) mantidos fixos e isolados como critério de aceite (*time-to-green*).
+* **Katas Selecionados:**
+  * `kata-01-fizzbuzz`
+  * `kata-02-roman-numerals`
+  * `kata-03-string-calculator`
+  * `kata-04-bowling-game`
 
 ---
 
@@ -60,13 +65,13 @@ Enunciado 2/
 │   └── metrics-runner.js       # [Dev 2] Runner de métricas estáticas (LOC, Complexidade, Duplicação)
 │
 ├── katas/                      # Boilerplates dos Katas (Sprint 1 - Dev 3)
-│   ├── kata-01-foo/
-│   │   ├── README.md           # Enunciado limpo do Kata (prompt para LLM)
+│   ├── kata-01-fizzbuzz/
+│   │   ├── readme.md           # Enunciado limpo do Kata (prompt para LLM)
 │   │   ├── index.js            # Assinatura base da função/classe
 │   │   └── index.test.js       # Suíte fixa de testes de aceite
-│   ├── kata-02-bar/
-│   ├── kata-03-baz/
-│   └── kata-04-qux/
+│   ├── kata-02-roman-numerals/
+│   ├── kata-03-string-calculator/
+│   └── kata-04-bowling-game/
 │
 ├── trials/                     # Execuções individuais dos trials (Sprint 2)
 │   ├── dev1/
@@ -128,9 +133,9 @@ npm install
 ```bash
 npm run timer -- \
   --dev dev1 \
-  --kata kata-01-foo \
+  --kata kata-01-fizzbuzz \
   --treatment COM_IA \
-  --cmd "npx jest katas/kata-01-foo" \
+  --cmd "npx jest katas/kata-01-fizzbuzz" \
   --timebox 35
 
 ```
