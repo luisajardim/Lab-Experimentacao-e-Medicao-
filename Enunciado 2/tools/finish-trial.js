@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-const { parseArgs } = require('./analyzers/utils');
+const { parseArgs } = require('./utils');
 
 const cli = parseArgs();
 
