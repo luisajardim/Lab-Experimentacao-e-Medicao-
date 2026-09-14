@@ -18,7 +18,7 @@ const dev = String(cli.dev).trim();
 const kata = String(cli.kata).trim();
 const treatment = String(cli.treatment).trim();
 const cmd = String(cli.cmd).trim();
-const timeboxMinutes = Number(cli.timebox ?? 35);
+const timeboxMinutes = Number(cli.timebox ?? 25);
 const outputPath = String(cli.output ?? 'data/trials-log.json').trim();
 
 if (!['COM_IA', 'SEM_IA'].includes(treatment)) {

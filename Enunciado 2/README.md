@@ -63,12 +63,12 @@ Serão executados **12 trials no total** (3 Desenvolvedores × 4 Katas cada), ga
 
 | Kata / Exercício | Categoria | Dev 1 | Dev 2 | Dev 3 |
 | :--- | :--- | :---: | :---: | :---: |
-| **Kata 01: FizzBuzz** | Clássico / Baseline | — | **COM_IA** | **SEM_IA** |
+| **Kata 01: FizzBuzz** | Clássico / Baseline | — | **SEM_IA** | **COM_IA** |
 | **Kata 02: Roman Numerals** | Clássico / Algorítmico | — | **SEM_IA** | **COM_IA** |
-| **Kata 03: String Calculator** | Clássico / Parsing | **COM_IA** | — | **SEM_IA** |
+| **Kata 03: String Calculator** | Clássico / Parsing | **SEM_IA** | — | **COM_IA** |
 | **Kata 04: Bowling Game** | Clássico / Regra de Negócio | **SEM_IA** | **COM_IA** | — |
 | **Kata 05: ISBN-10 Validator** | Prático / Validação | **SEM_IA** | — | **COM_IA** |
-| **Kata 06: Pagination** | Prático / Estrutura Web | **COM_IA** | **SEM_IA** | — |
+| **Kata 06: Pagination** | Prático / Estrutura Web | **SEM_IA** | **COM_IA** | — |
 | **Total de Issues por Dev** | | **4 Issues** | **4 Issues** | **4 Issues** |
 
 ---
