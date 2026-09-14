@@ -11,7 +11,7 @@ describe("isValidISBN10", () => {
     });
 
     test("aceita X como último caractere", () => {
-      expect(isValidISBN10("030640615X")).toBe(true);
+      expect(isValidISBN10("097522980X")).toBe(true);
     });
   });
 

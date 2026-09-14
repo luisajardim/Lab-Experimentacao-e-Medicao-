@@ -25,7 +25,7 @@ Para validar o ISBN-10, siga a regra abaixo:
 isValidISBN10("0471958697"); // true
 isValidISBN10("047195869X"); // false
 isValidISBN10("0306406152"); // true
-isValidISBN10("030640615X"); // true
+isValidISBN10("097522980X"); // true
 ```
 
 ### Regras adicionais
