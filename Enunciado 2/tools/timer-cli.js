@@ -42,7 +42,9 @@ function gracefulExit() {
   running = false;
   if (intervalId) clearInterval(intervalId);
   try {
-    process.stdin.setRawMode(false);
+    if (process.stdin.setRawMode) {
+      process.stdin.setRawMode(false);
+    }
   } catch {}
   process.stdin.pause();
 }
@@ -85,13 +87,15 @@ function runTests() {
 }
 
 // Input listeners
-process.stdin.setRawMode(true);
+if (process.stdin.setRawMode) {
+  process.stdin.setRawMode(true);
+}
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
 process.stdin.on('data', (key) => {
   if (!running) return;
-  if (key === '\x03') { /* Ctrl+C */
+  if (key.trim() === '\x03') { /* Ctrl+C */
     const record = finishTrial(Date.now());
     clearScreen();
     console.log('🛑 Trial abortado pelo usuário.');
@@ -100,7 +104,7 @@ process.stdin.on('data', (key) => {
     gracefulExit();
     process.exit(0);
   }
-  if (key === 'T') {
+  if (key.trim() === 'T') {
     runTests();
   }
 });
