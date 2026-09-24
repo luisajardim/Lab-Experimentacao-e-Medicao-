@@ -1,0 +1,1317 @@
+{
+  "metadata": {
+    "analysis_date": "2026-09-24T19:17:05.277536Z",
+    "data_directory": "trials",
+    "alpha": 0.05,
+    "filter_policy": "include every valid metrics.json; exclude only unreadable or invalid-schema artifacts",
+    "n_discovered": 12,
+    "n_included": 12,
+    "n_excluded": 0,
+    "n_com_ia": 6,
+    "n_sem_ia": 6,
+    "n_paired_katas": 6,
+    "metrics": [
+      "loc",
+      "cyclomatic_complexity",
+      "halstead_volume",
+      "halstead_difficulty",
+      "halstead_effort",
+      "duplication_percentage"
+    ],
+    "aliases": {
+      "kata-05-isbn-10-calculator": "kata-05-isbn-10-validator",
+      "kata-06-pagination": "kata-06-array-chunking-pagination"
+    },
+    "limitations": [
+      "Pairing is by kata, not by developer.",
+      "The sample is small; p-values should be interpreted alongside effect sizes.",
+      "Maintainability Index is not available in the metrics runner."
+    ]
+  },
+  "descriptive_by_treatment": {
+    "COM_IA": {
+      "loc": {
+        "n": 6,
+        "mean": 21.666666666666668,
+        "median": 21.0,
+        "sd": 7.201851613763412,
+        "q1": 15.5,
+        "q3": 28.0,
+        "iqr": 12.5,
+        "min": 14.0,
+        "max": 30.0
+      },
+      "cyclomatic_complexity": {
+        "n": 6,
+        "mean": 4.833333333333333,
+        "median": 5.5,
+        "sd": 2.7141603981096383,
+        "q1": 4.25,
+        "q3": 6.0,
+        "iqr": 1.75,
+        "min": 0.0,
+        "max": 8.0
+      },
+      "halstead_volume": {
+        "n": 6,
+        "mean": 469.06500000000005,
+        "median": 547.9,
+        "sd": 222.59614414899463,
+        "q1": 489.5025,
+        "q3": 596.8325,
+        "iqr": 107.32999999999998,
+        "min": 27.0,
+        "max": 608.41
+      },
+      "halstead_difficulty": {
+        "n": 6,
+        "mean": 17.64,
+        "median": 18.615,
+        "sd": 9.46444293130874,
+        "q1": 13.375,
+        "q3": 24.4175,
+        "iqr": 11.0425,
+        "min": 2.5,
+        "max": 28.13
+      },
+      "halstead_effort": {
+        "n": 6,
+        "mean": 9388.066666666668,
+        "median": 10886.33,
+        "sd": 5157.057091437583,
+        "q1": 8055.34,
+        "q3": 13059.75,
+        "iqr": 5004.41,
+        "min": 67.5,
+        "max": 13592.34
+      },
+      "duplication_percentage": {
+        "n": 6,
+        "mean": 0.0,
+        "median": 0.0,
+        "sd": 0.0,
+        "q1": 0.0,
+        "q3": 0.0,
+        "iqr": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "SEM_IA": {
+      "loc": {
+        "n": 6,
+        "mean": 35.333333333333336,
+        "median": 23.5,
+        "sd": 35.61273180572738,
+        "q1": 18.25,
+        "q3": 28.0,
+        "iqr": 9.75,
+        "min": 12.0,
+        "max": 107.0
+      },
+      "cyclomatic_complexity": {
+        "n": 6,
+        "mean": 6.721666666666667,
+        "median": 7.0,
+        "sd": 1.4821662075039583,
+        "q1": 6.4975000000000005,
+        "q3": 7.75,
+        "iqr": 1.2524999999999995,
+        "min": 4.0,
+        "max": 8.0
+      },
+      "halstead_volume": {
+        "n": 6,
+        "mean": 555.5233333333333,
+        "median": 601.425,
+        "sd": 286.9133056981963,
+        "q1": 523.9549999999999,
+        "q3": 712.7725,
+        "iqr": 188.8175000000001,
+        "min": 27.0,
+        "max": 855.27
+      },
+      "halstead_difficulty": {
+        "n": 6,
+        "mean": 21.12,
+        "median": 21.84,
+        "sd": 11.219771833687172,
+        "q1": 17.605,
+        "q3": 27.665,
+        "iqr": 10.059999999999999,
+        "min": 2.5,
+        "max": 34.74
+      },
+      "halstead_effort": {
+        "n": 6,
+        "mean": 13189.495,
+        "median": 14175.77,
+        "sd": 6976.179259688644,
+        "q1": 13020.5525,
+        "q3": 17120.72,
+        "iqr": 4100.167500000001,
+        "min": 67.5,
+        "max": 19980.08
+      },
+      "duplication_percentage": {
+        "n": 6,
+        "mean": 0.9433333333333334,
+        "median": 0.0,
+        "sd": 2.3106853240254646,
+        "q1": 0.0,
+        "q3": 0.0,
+        "iqr": 0.0,
+        "min": 0.0,
+        "max": 5.66
+      }
+    }
+  },
+  "descriptive_by_kata": {
+    "kata-01-fizzbuzz": {
+      "COM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 14.0,
+          "median": 14.0,
+          "sd": 0.0,
+          "q1": 14.0,
+          "q3": 14.0,
+          "iqr": 0.0,
+          "min": 14.0,
+          "max": 14.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 8.0,
+          "median": 8.0,
+          "sd": 0.0,
+          "q1": 8.0,
+          "q3": 8.0,
+          "iqr": 0.0,
+          "min": 8.0,
+          "max": 8.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 508.17,
+          "median": 508.17,
+          "sd": 0.0,
+          "q1": 508.17,
+          "q3": 508.17,
+          "iqr": 0.0,
+          "min": 508.17,
+          "max": 508.17
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 25.09,
+          "median": 25.09,
+          "sd": 0.0,
+          "q1": 25.09,
+          "q3": 25.09,
+          "iqr": 0.0,
+          "min": 25.09,
+          "max": 25.09
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 12750.39,
+          "median": 12750.39,
+          "sd": 0.0,
+          "q1": 12750.39,
+          "q3": 12750.39,
+          "iqr": 0.0,
+          "min": 12750.39,
+          "max": 12750.39
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "SEM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 22.0,
+          "median": 22.0,
+          "sd": 0.0,
+          "q1": 22.0,
+          "q3": 22.0,
+          "iqr": 0.0,
+          "min": 22.0,
+          "max": 22.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 7.0,
+          "median": 7.0,
+          "sd": 0.0,
+          "q1": 7.0,
+          "q3": 7.0,
+          "iqr": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 506.88,
+          "median": 506.88,
+          "sd": 0.0,
+          "q1": 506.88,
+          "q3": 506.88,
+          "iqr": 0.0,
+          "min": 506.88,
+          "max": 506.88
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 25.85,
+          "median": 25.85,
+          "sd": 0.0,
+          "q1": 25.85,
+          "q3": 25.85,
+          "iqr": 0.0,
+          "min": 25.85,
+          "max": 25.85
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 13102.79,
+          "median": 13102.79,
+          "sd": 0.0,
+          "q1": 13102.79,
+          "q3": 13102.79,
+          "iqr": 0.0,
+          "min": 13102.79,
+          "max": 13102.79
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "kata-02-roman-numerals": {
+      "COM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 30.0,
+          "median": 30.0,
+          "sd": 0.0,
+          "q1": 30.0,
+          "q3": 30.0,
+          "iqr": 0.0,
+          "min": 30.0,
+          "max": 30.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 5.0,
+          "median": 5.0,
+          "sd": 0.0,
+          "q1": 5.0,
+          "q3": 5.0,
+          "iqr": 0.0,
+          "min": 5.0,
+          "max": 5.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 608.41,
+          "median": 608.41,
+          "sd": 0.0,
+          "q1": 608.41,
+          "q3": 608.41,
+          "iqr": 0.0,
+          "min": 608.41,
+          "max": 608.41
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 14.83,
+          "median": 14.83,
+          "sd": 0.0,
+          "q1": 14.83,
+          "q3": 14.83,
+          "iqr": 0.0,
+          "min": 14.83,
+          "max": 14.83
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 9022.27,
+          "median": 9022.27,
+          "sd": 0.0,
+          "q1": 9022.27,
+          "q3": 9022.27,
+          "iqr": 0.0,
+          "min": 9022.27,
+          "max": 9022.27
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "SEM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 29.0,
+          "median": 29.0,
+          "sd": 0.0,
+          "q1": 29.0,
+          "q3": 29.0,
+          "iqr": 0.0,
+          "min": 29.0,
+          "max": 29.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 4.0,
+          "median": 4.0,
+          "sd": 0.0,
+          "q1": 4.0,
+          "q3": 4.0,
+          "iqr": 0.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 855.27,
+          "median": 855.27,
+          "sd": 0.0,
+          "q1": 855.27,
+          "q3": 855.27,
+          "iqr": 0.0,
+          "min": 855.27,
+          "max": 855.27
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 17.83,
+          "median": 17.83,
+          "sd": 0.0,
+          "q1": 17.83,
+          "q3": 17.83,
+          "iqr": 0.0,
+          "min": 17.83,
+          "max": 17.83
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 15248.75,
+          "median": 15248.75,
+          "sd": 0.0,
+          "q1": 15248.75,
+          "q3": 15248.75,
+          "iqr": 0.0,
+          "min": 15248.75,
+          "max": 15248.75
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "kata-03-string-calculator": {
+      "COM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 22.0,
+          "median": 22.0,
+          "sd": 0.0,
+          "q1": 22.0,
+          "q3": 22.0,
+          "iqr": 0.0,
+          "min": 22.0,
+          "max": 22.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 4.0,
+          "median": 4.0,
+          "sd": 0.0,
+          "q1": 4.0,
+          "q3": 4.0,
+          "iqr": 0.0,
+          "min": 4.0,
+          "max": 4.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 599.9,
+          "median": 599.9,
+          "sd": 0.0,
+          "q1": 599.9,
+          "q3": 599.9,
+          "iqr": 0.0,
+          "min": 599.9,
+          "max": 599.9
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 12.89,
+          "median": 12.89,
+          "sd": 0.0,
+          "q1": 12.89,
+          "q3": 12.89,
+          "iqr": 0.0,
+          "min": 12.89,
+          "max": 12.89
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 7733.03,
+          "median": 7733.03,
+          "sd": 0.0,
+          "q1": 7733.03,
+          "q3": 7733.03,
+          "iqr": 0.0,
+          "min": 7733.03,
+          "max": 7733.03
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "SEM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 25.0,
+          "median": 25.0,
+          "sd": 0.0,
+          "q1": 25.0,
+          "q3": 25.0,
+          "iqr": 0.0,
+          "min": 25.0,
+          "max": 25.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 7.0,
+          "median": 7.0,
+          "sd": 0.0,
+          "q1": 7.0,
+          "q3": 7.0,
+          "iqr": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 741.14,
+          "median": 741.14,
+          "sd": 0.0,
+          "q1": 741.14,
+          "q3": 741.14,
+          "iqr": 0.0,
+          "min": 741.14,
+          "max": 741.14
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 17.53,
+          "median": 17.53,
+          "sd": 0.0,
+          "q1": 17.53,
+          "q3": 17.53,
+          "iqr": 0.0,
+          "min": 17.53,
+          "max": 17.53
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 12993.14,
+          "median": 12993.14,
+          "sd": 0.0,
+          "q1": 12993.14,
+          "q3": 12993.14,
+          "iqr": 0.0,
+          "min": 12993.14,
+          "max": 12993.14
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "kata-04-bowling-game": {
+      "COM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 30.0,
+          "median": 30.0,
+          "sd": 0.0,
+          "q1": 30.0,
+          "q3": 30.0,
+          "iqr": 0.0,
+          "min": 30.0,
+          "max": 30.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 27.0,
+          "median": 27.0,
+          "sd": 0.0,
+          "q1": 27.0,
+          "q3": 27.0,
+          "iqr": 0.0,
+          "min": 27.0,
+          "max": 27.0
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 2.5,
+          "median": 2.5,
+          "sd": 0.0,
+          "q1": 2.5,
+          "q3": 2.5,
+          "iqr": 0.0,
+          "min": 2.5,
+          "max": 2.5
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 67.5,
+          "median": 67.5,
+          "sd": 0.0,
+          "q1": 67.5,
+          "q3": 67.5,
+          "iqr": 0.0,
+          "min": 67.5,
+          "max": 67.5
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "SEM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 107.0,
+          "median": 107.0,
+          "sd": 0.0,
+          "q1": 107.0,
+          "q3": 107.0,
+          "iqr": 0.0,
+          "min": 107.0,
+          "max": 107.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 6.33,
+          "median": 6.33,
+          "sd": 0.0,
+          "q1": 6.33,
+          "q3": 6.33,
+          "iqr": 0.0,
+          "min": 6.33,
+          "max": 6.33
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 27.0,
+          "median": 27.0,
+          "sd": 0.0,
+          "q1": 27.0,
+          "q3": 27.0,
+          "iqr": 0.0,
+          "min": 27.0,
+          "max": 27.0
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 2.5,
+          "median": 2.5,
+          "sd": 0.0,
+          "q1": 2.5,
+          "q3": 2.5,
+          "iqr": 0.0,
+          "min": 2.5,
+          "max": 2.5
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 67.5,
+          "median": 67.5,
+          "sd": 0.0,
+          "q1": 67.5,
+          "q3": 67.5,
+          "iqr": 0.0,
+          "min": 67.5,
+          "max": 67.5
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 5.66,
+          "median": 5.66,
+          "sd": 0.0,
+          "q1": 5.66,
+          "q3": 5.66,
+          "iqr": 0.0,
+          "min": 5.66,
+          "max": 5.66
+        }
+      }
+    },
+    "kata-05-isbn-10-validator": {
+      "COM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 20.0,
+          "median": 20.0,
+          "sd": 0.0,
+          "q1": 20.0,
+          "q3": 20.0,
+          "iqr": 0.0,
+          "min": 20.0,
+          "max": 20.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 6.0,
+          "median": 6.0,
+          "sd": 0.0,
+          "q1": 6.0,
+          "q3": 6.0,
+          "iqr": 0.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 483.28,
+          "median": 483.28,
+          "sd": 0.0,
+          "q1": 483.28,
+          "q3": 483.28,
+          "iqr": 0.0,
+          "min": 483.28,
+          "max": 483.28
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 28.13,
+          "median": 28.13,
+          "sd": 0.0,
+          "q1": 28.13,
+          "q3": 28.13,
+          "iqr": 0.0,
+          "min": 28.13,
+          "max": 28.13
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 13592.34,
+          "median": 13592.34,
+          "sd": 0.0,
+          "q1": 13592.34,
+          "q3": 13592.34,
+          "iqr": 0.0,
+          "min": 13592.34,
+          "max": 13592.34
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "SEM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 12.0,
+          "median": 12.0,
+          "sd": 0.0,
+          "q1": 12.0,
+          "q3": 12.0,
+          "iqr": 0.0,
+          "min": 12.0,
+          "max": 12.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 8.0,
+          "median": 8.0,
+          "sd": 0.0,
+          "q1": 8.0,
+          "q3": 8.0,
+          "iqr": 0.0,
+          "min": 8.0,
+          "max": 8.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 575.18,
+          "median": 575.18,
+          "sd": 0.0,
+          "q1": 575.18,
+          "q3": 575.18,
+          "iqr": 0.0,
+          "min": 575.18,
+          "max": 575.18
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 34.74,
+          "median": 34.74,
+          "sd": 0.0,
+          "q1": 34.74,
+          "q3": 34.74,
+          "iqr": 0.0,
+          "min": 34.74,
+          "max": 34.74
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 19980.08,
+          "median": 19980.08,
+          "sd": 0.0,
+          "q1": 19980.08,
+          "q3": 19980.08,
+          "iqr": 0.0,
+          "min": 19980.08,
+          "max": 19980.08
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "kata-06-array-chunking-pagination": {
+      "COM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 14.0,
+          "median": 14.0,
+          "sd": 0.0,
+          "q1": 14.0,
+          "q3": 14.0,
+          "iqr": 0.0,
+          "min": 14.0,
+          "max": 14.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 6.0,
+          "median": 6.0,
+          "sd": 0.0,
+          "q1": 6.0,
+          "q3": 6.0,
+          "iqr": 0.0,
+          "min": 6.0,
+          "max": 6.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 587.63,
+          "median": 587.63,
+          "sd": 0.0,
+          "q1": 587.63,
+          "q3": 587.63,
+          "iqr": 0.0,
+          "min": 587.63,
+          "max": 587.63
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 22.4,
+          "median": 22.4,
+          "sd": 0.0,
+          "q1": 22.4,
+          "q3": 22.4,
+          "iqr": 0.0,
+          "min": 22.4,
+          "max": 22.4
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 13162.87,
+          "median": 13162.87,
+          "sd": 0.0,
+          "q1": 13162.87,
+          "q3": 13162.87,
+          "iqr": 0.0,
+          "min": 13162.87,
+          "max": 13162.87
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "SEM_IA": {
+        "loc": {
+          "n": 1,
+          "mean": 17.0,
+          "median": 17.0,
+          "sd": 0.0,
+          "q1": 17.0,
+          "q3": 17.0,
+          "iqr": 0.0,
+          "min": 17.0,
+          "max": 17.0
+        },
+        "cyclomatic_complexity": {
+          "n": 1,
+          "mean": 8.0,
+          "median": 8.0,
+          "sd": 0.0,
+          "q1": 8.0,
+          "q3": 8.0,
+          "iqr": 0.0,
+          "min": 8.0,
+          "max": 8.0
+        },
+        "halstead_volume": {
+          "n": 1,
+          "mean": 627.67,
+          "median": 627.67,
+          "sd": 0.0,
+          "q1": 627.67,
+          "q3": 627.67,
+          "iqr": 0.0,
+          "min": 627.67,
+          "max": 627.67
+        },
+        "halstead_difficulty": {
+          "n": 1,
+          "mean": 28.27,
+          "median": 28.27,
+          "sd": 0.0,
+          "q1": 28.27,
+          "q3": 28.27,
+          "iqr": 0.0,
+          "min": 28.27,
+          "max": 28.27
+        },
+        "halstead_effort": {
+          "n": 1,
+          "mean": 17744.71,
+          "median": 17744.71,
+          "sd": 0.0,
+          "q1": 17744.71,
+          "q3": 17744.71,
+          "iqr": 0.0,
+          "min": 17744.71,
+          "max": 17744.71
+        },
+        "duplication_percentage": {
+          "n": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "sd": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "iqr": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    }
+  },
+  "paired_katas": [
+    {
+      "kata": "kata-01-fizzbuzz",
+      "COM_IA": "trials\\luisajardim\\kata-01-fizzbuzz-com-ia\\metrics.json",
+      "SEM_IA": "trials\\pedroseabra27\\kata-01-fizzbuzz-sem-ia\\metrics.json",
+      "metrics": {
+        "loc": {
+          "COM_IA": 14.0,
+          "SEM_IA": 22.0,
+          "difference_com_minus_sem": -8.0
+        },
+        "cyclomatic_complexity": {
+          "COM_IA": 8.0,
+          "SEM_IA": 7.0,
+          "difference_com_minus_sem": 1.0
+        },
+        "halstead_volume": {
+          "COM_IA": 508.17,
+          "SEM_IA": 506.88,
+          "difference_com_minus_sem": 1.2900000000000205
+        },
+        "halstead_difficulty": {
+          "COM_IA": 25.09,
+          "SEM_IA": 25.85,
+          "difference_com_minus_sem": -0.7600000000000016
+        },
+        "halstead_effort": {
+          "COM_IA": 12750.39,
+          "SEM_IA": 13102.79,
+          "difference_com_minus_sem": -352.40000000000146
+        },
+        "duplication_percentage": {
+          "COM_IA": 0.0,
+          "SEM_IA": 0.0,
+          "difference_com_minus_sem": 0.0
+        }
+      }
+    },
+    {
+      "kata": "kata-02-roman-numerals",
+      "COM_IA": "trials\\luisajardim\\kata-02-roman-numerals-com-ia\\metrics.json",
+      "SEM_IA": "trials\\pedroseabra27\\kata-02-roman-numerals-sem-ia\\metrics.json",
+      "metrics": {
+        "loc": {
+          "COM_IA": 30.0,
+          "SEM_IA": 29.0,
+          "difference_com_minus_sem": 1.0
+        },
+        "cyclomatic_complexity": {
+          "COM_IA": 5.0,
+          "SEM_IA": 4.0,
+          "difference_com_minus_sem": 1.0
+        },
+        "halstead_volume": {
+          "COM_IA": 608.41,
+          "SEM_IA": 855.27,
+          "difference_com_minus_sem": -246.86
+        },
+        "halstead_difficulty": {
+          "COM_IA": 14.83,
+          "SEM_IA": 17.83,
+          "difference_com_minus_sem": -2.9999999999999982
+        },
+        "halstead_effort": {
+          "COM_IA": 9022.27,
+          "SEM_IA": 15248.75,
+          "difference_com_minus_sem": -6226.48
+        },
+        "duplication_percentage": {
+          "COM_IA": 0.0,
+          "SEM_IA": 0.0,
+          "difference_com_minus_sem": 0.0
+        }
+      }
+    },
+    {
+      "kata": "kata-03-string-calculator",
+      "COM_IA": "trials\\luisajardim\\kata-03-string-calculator-com-ia\\metrics.json",
+      "SEM_IA": "trials\\alvimdev\\kata-03-string-calculator-sem-ia\\metrics.json",
+      "metrics": {
+        "loc": {
+          "COM_IA": 22.0,
+          "SEM_IA": 25.0,
+          "difference_com_minus_sem": -3.0
+        },
+        "cyclomatic_complexity": {
+          "COM_IA": 4.0,
+          "SEM_IA": 7.0,
+          "difference_com_minus_sem": -3.0
+        },
+        "halstead_volume": {
+          "COM_IA": 599.9,
+          "SEM_IA": 741.14,
+          "difference_com_minus_sem": -141.24
+        },
+        "halstead_difficulty": {
+          "COM_IA": 12.89,
+          "SEM_IA": 17.53,
+          "difference_com_minus_sem": -4.640000000000001
+        },
+        "halstead_effort": {
+          "COM_IA": 7733.03,
+          "SEM_IA": 12993.14,
+          "difference_com_minus_sem": -5260.11
+        },
+        "duplication_percentage": {
+          "COM_IA": 0.0,
+          "SEM_IA": 0.0,
+          "difference_com_minus_sem": 0.0
+        }
+      }
+    },
+    {
+      "kata": "kata-04-bowling-game",
+      "COM_IA": "trials\\pedroseabra27\\kata-04-bowling-game-com-ia\\metrics.json",
+      "SEM_IA": "trials\\alvimdev\\kata-04-bowling-game-sem-ia\\metrics.json",
+      "metrics": {
+        "loc": {
+          "COM_IA": 30.0,
+          "SEM_IA": 107.0,
+          "difference_com_minus_sem": -77.0
+        },
+        "cyclomatic_complexity": {
+          "COM_IA": 0.0,
+          "SEM_IA": 6.33,
+          "difference_com_minus_sem": -6.33
+        },
+        "halstead_volume": {
+          "COM_IA": 27.0,
+          "SEM_IA": 27.0,
+          "difference_com_minus_sem": 0.0
+        },
+        "halstead_difficulty": {
+          "COM_IA": 2.5,
+          "SEM_IA": 2.5,
+          "difference_com_minus_sem": 0.0
+        },
+        "halstead_effort": {
+          "COM_IA": 67.5,
+          "SEM_IA": 67.5,
+          "difference_com_minus_sem": 0.0
+        },
+        "duplication_percentage": {
+          "COM_IA": 0.0,
+          "SEM_IA": 5.66,
+          "difference_com_minus_sem": -5.66
+        }
+      }
+    },
+    {
+      "kata": "kata-05-isbn-10-validator",
+      "COM_IA": "trials\\luisajardim\\kata-05-isbn-10-validator-com-ia\\metrics.json",
+      "SEM_IA": "trials\\alvimdev\\kata-05-isbn-10-validator-sem-ia\\metrics.json",
+      "metrics": {
+        "loc": {
+          "COM_IA": 20.0,
+          "SEM_IA": 12.0,
+          "difference_com_minus_sem": 8.0
+        },
+        "cyclomatic_complexity": {
+          "COM_IA": 6.0,
+          "SEM_IA": 8.0,
+          "difference_com_minus_sem": -2.0
+        },
+        "halstead_volume": {
+          "COM_IA": 483.28,
+          "SEM_IA": 575.18,
+          "difference_com_minus_sem": -91.89999999999998
+        },
+        "halstead_difficulty": {
+          "COM_IA": 28.13,
+          "SEM_IA": 34.74,
+          "difference_com_minus_sem": -6.610000000000003
+        },
+        "halstead_effort": {
+          "COM_IA": 13592.34,
+          "SEM_IA": 19980.08,
+          "difference_com_minus_sem": -6387.740000000002
+        },
+        "duplication_percentage": {
+          "COM_IA": 0.0,
+          "SEM_IA": 0.0,
+          "difference_com_minus_sem": 0.0
+        }
+      }
+    },
+    {
+      "kata": "kata-06-array-chunking-pagination",
+      "COM_IA": "trials\\pedroseabra27\\kata-06-array-chunking-pagination-com-ia\\metrics.json",
+      "SEM_IA": "trials\\alvimdev\\kata-06-array-chunking-pagination-sem-ia\\metrics.json",
+      "metrics": {
+        "loc": {
+          "COM_IA": 14.0,
+          "SEM_IA": 17.0,
+          "difference_com_minus_sem": -3.0
+        },
+        "cyclomatic_complexity": {
+          "COM_IA": 6.0,
+          "SEM_IA": 8.0,
+          "difference_com_minus_sem": -2.0
+        },
+        "halstead_volume": {
+          "COM_IA": 587.63,
+          "SEM_IA": 627.67,
+          "difference_com_minus_sem": -40.039999999999964
+        },
+        "halstead_difficulty": {
+          "COM_IA": 22.4,
+          "SEM_IA": 28.27,
+          "difference_com_minus_sem": -5.870000000000001
+        },
+        "halstead_effort": {
+          "COM_IA": 13162.87,
+          "SEM_IA": 17744.71,
+          "difference_com_minus_sem": -4581.839999999998
+        },
+        "duplication_percentage": {
+          "COM_IA": 0.0,
+          "SEM_IA": 0.0,
+          "difference_com_minus_sem": 0.0
+        }
+      }
+    }
+  ],
+  "skipped_katas": [],
+  "inferential": {
+    "loc": {
+      "wilcoxon_paired_by_kata": {
+        "n_pairs": 6,
+        "W": 5.5,
+        "p_value": 0.34375,
+        "effect_size_r": -0.3865220334522757
+      },
+      "mannwhitney_unpaired": {
+        "n_com_ia": 6,
+        "n_sem_ia": 6,
+        "U": 16.5,
+        "p_value": 0.8721133649121213,
+        "cliffs_delta": -0.08333333333333333
+      }
+    },
+    "cyclomatic_complexity": {
+      "wilcoxon_paired_by_kata": {
+        "n_pairs": 6,
+        "W": 3.0,
+        "p_value": 0.125,
+        "effect_size_r": -0.6263020895974181
+      },
+      "mannwhitney_unpaired": {
+        "n_com_ia": 6,
+        "n_sem_ia": 6,
+        "U": 8.5,
+        "p_value": 0.1445319802545371,
+        "cliffs_delta": -0.5277777777777778
+      }
+    },
+    "halstead_volume": {
+      "wilcoxon_paired_by_kata": {
+        "n_pairs": 6,
+        "W": 1.0,
+        "p_value": 0.125,
+        "effect_size_r": -0.6263020895974181
+      },
+      "mannwhitney_unpaired": {
+        "n_com_ia": 6,
+        "n_sem_ia": 6,
+        "U": 12.5,
+        "p_value": 0.422527407168231,
+        "cliffs_delta": -0.3055555555555556
+      }
+    },
+    "halstead_difficulty": {
+      "wilcoxon_paired_by_kata": {
+        "n_pairs": 6,
+        "W": 0.0,
+        "p_value": 0.0625,
+        "effect_size_r": -0.7604571004674484
+      },
+      "mannwhitney_unpaired": {
+        "n_com_ia": 6,
+        "n_sem_ia": 6,
+        "U": 12.5,
+        "p_value": 0.422527407168231,
+        "cliffs_delta": -0.3055555555555556
+      }
+    },
+    "halstead_effort": {
+      "wilcoxon_paired_by_kata": {
+        "n_pairs": 6,
+        "W": 0.0,
+        "p_value": 0.0625,
+        "effect_size_r": -0.7604571004674484
+      },
+      "mannwhitney_unpaired": {
+        "n_com_ia": 6,
+        "n_sem_ia": 6,
+        "U": 9.5,
+        "p_value": 0.1993972627538182,
+        "cliffs_delta": -0.4722222222222222
+      }
+    },
+    "duplication_percentage": {
+      "wilcoxon_paired_by_kata": {
+        "n_pairs": 6,
+        "W": 0.0,
+        "p_value": 1.0,
+        "effect_size_r": 0.0
+      },
+      "mannwhitney_unpaired": {
+        "n_com_ia": 6,
+        "n_sem_ia": 6,
+        "U": 15.0,
+        "p_value": 0.40465676192728617,
+        "cliffs_delta": -0.16666666666666666
+      }
+    }
+  },
+  "excluded_artifacts": []
+}
