@@ -1,0 +1,117 @@
+{
+  "descriptive": {
+    "duration_seconds": {
+      "COM_IA": {
+        "median": 22.4955,
+        "q1": 12.971,
+        "q3": 156.48475,
+        "iqr": 143.51375,
+        "mean": 93.91449999999999,
+        "sd": 125.13433933457274,
+        "n": 6,
+        "min": 7.552,
+        "max": 300.0
+      },
+      "SEM_IA": {
+        "median": 846.526,
+        "q1": 683.376,
+        "q3": 1040.204,
+        "iqr": 356.828,
+        "mean": 913.0734,
+        "sd": 365.15301481132536,
+        "n": 5,
+        "min": 525.563,
+        "max": 1469.698
+      }
+    },
+    "test_attempts": {
+      "COM_IA": {
+        "median": 1.0,
+        "q1": 1.0,
+        "q3": 1.0,
+        "iqr": 0.0,
+        "mean": 1.0,
+        "sd": 0.0,
+        "n": 6,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "SEM_IA": {
+        "median": 3.0,
+        "q1": 2.0,
+        "q3": 3.0,
+        "iqr": 1.0,
+        "mean": 3.4,
+        "sd": 2.073644135332772,
+        "n": 5,
+        "min": 2.0,
+        "max": 7.0
+      }
+    }
+  },
+  "wilcoxon_paired_by_kata": {
+    "duration_seconds": {
+      "W": 0.0,
+      "p_value": 0.25,
+      "effect_size_r": -0.6641545244222073,
+      "n_pairs": 3
+    },
+    "test_attempts": {
+      "W": 0.0,
+      "p_value": 0.25,
+      "effect_size_r": -0.6641545244222073,
+      "n_pairs": 3
+    }
+  },
+  "mannwhitney_unpaired": {
+    "duration_seconds": {
+      "U": 0.0,
+      "p_value": 0.004329004329004329,
+      "cliffs_delta": -1.0,
+      "n_com_ia": 6,
+      "n_sem_ia": 5
+    },
+    "test_attempts": {
+      "U": 0.0,
+      "p_value": 0.0037003176948115146,
+      "cliffs_delta": -1.0,
+      "n_com_ia": 6,
+      "n_sem_ia": 5
+    }
+  },
+  "monte_carlo": {
+    "n_iterations": 10000,
+    "backlog_size": 40,
+    "time_saved_pct": {
+      "median": 89.72995672293945,
+      "q1": 88.27103941809281,
+      "q3": 91.11404563510675,
+      "ci_95": [
+        85.47130021958328,
+        93.5471635140845
+      ],
+      "prob_positive": 1.0
+    },
+    "attempts_reduction": {
+      "median": 2.4,
+      "q1": 2.2,
+      "q3": 2.6,
+      "ci_95": [
+        1.875,
+        3.0
+      ],
+      "prob_positive": 1.0
+    },
+    "total_time_com_ia_median": 3750.331,
+    "total_time_sem_ia_median": 36517.131
+  },
+  "metadata": {
+    "data_file": "data/trials-log.json",
+    "analysis_date": "2026-09-24T01:17:23.279158Z",
+    "successful_trials_only": true,
+    "n_total_trials": 11,
+    "n_com_ia": 6,
+    "n_sem_ia": 5,
+    "n_paired_katas": 3
+  }
+}
