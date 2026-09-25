@@ -1,170 +1,200 @@
 # Experimento Empírico: Impacto de LLMs na Produtividade e Qualidade de Código (Katas JS)
 
-Este repositório contém a infraestrutura, execução e análise estatística de um experimento empírico comparativo do tipo **Crossover Within-Subject**, cujo objetivo é avaliar o impacto do uso de Grandes Modelos de Linguagem (LLMs) no desenvolvimento de software.
+Este sub-repositório reúne a infraestrutura, a execução e a análise final do experimento comparativo entre resolução manual e resolução com suporte de IA em katas de programação JavaScript.
+
+O projeto foi concluído e os artefatos finais — relatório, dados coletados, métricas estáticas e gráficos de análise — ficaram disponíveis no próprio repositório.
 
 ---
 
-## 📌 Visão Geral do Experimento
+## ✅ Status do Projeto
 
-* **Objeto de Estudo:** Resolução de Katas de programação em **JavaScript (Node.js)**.
-* **Tratamentos:**
-  1. **SEM_IA:** Resolução manual pelo desenvolvedor em ambiente controlado.
-  2. **COM_IA:** Resolução com suporte de LLM (fornecendo apenas o enunciado da questão como prompt).
-* **Time-box:** **25 minutos** por *trial* (otimizado para manter o foco e evitar fadiga).
-* **Suíte de Aceite:** Testes unitários automatizados (Jest) mantidos fixos e isolados como critério de aceite (*time-to-green*).
-* **Katas Selecionados:**
-  * `kata-01-fizzbuzz`
-  * `kata-02-roman-numerals`
-  * `kata-03-string-calculator`
-  * `kata-04-bowling-game`
-  * `kata-05-isbn-validator`
-  * `kata-06-pagination`
+O estudo foi finalizado com:
+
+- 12 trials executados no total;
+- 6 trials com IA (`COM_IA`);
+- 6 trials sem IA (`SEM_IA`);
+- 11 sucessos e 1 timeout;
+- análise estatística e geração de gráficos automatizados;
+- relatório consolidado em [RELATORIO.md](RELATORIO.md).
 
 ---
 
-## 🎯 Racional de Seleção dos Katas (Metodologia Mista)
+## 🎯 Objetivo
 
-Para garantir validade interna e externa ao estudo, os 6 Katas foram divididos em duas categorias intencionais:
+Avaliar, em condições controladas, o impacto do uso de LLMs na resolução de katas de programação em JavaScript, comparando:
 
-### 1. Desafios Clássicos e Acadêmicos (Katas 01 a 04)
-* **Exemplos:** *FizzBuzz*, *Roman Numerals*, *String Calculator*, *Bowling Game*.
-* **Motivação:** Trata-se de problemas amplamente difundidos na literatura técnica de TDD e maratona de programação. Eles servem como **linha de base (baseline)** para medir o comportamento e o teto de desempenho da IA em tarefas cujos padrões algorítmicos estão fortemente presentes em seus dados de treinamento.
+1. `SEM_IA`: desenvolvimento manual;
+2. `COM_IA`: desenvolvimento com auxílio de IA, usando apenas o enunciado do kata como entrada.
 
-### 2. Desafios Práticos e Não Indexados (Katas 05 e 06)
-* **Exemplos:** *ISBN-10 Validator* e *Array Chunking & Pagination*.
-* **Motivação:** Formulado sem dependência de plataformas competitivas públicas (como LeetCode, HackerRank ou Beecrowd). Esses katas simulam cenários rotineiros de desenvolvimento web/backend (parsing de payloads, regras formais de validação, manipulação de ponteiros/índices e paginação de dados).
-* **Objetivo Experimental:** Avaliar a capacidade de generalização da LLM em problemas práticos do dia a dia, testando se ela introduz erros sutis de lógica (como problemas de *off-by-one* ou falta de tratamento de caracteres especiais) quando não há um gabarito algorítmico exato decorado.
+As questões centrais do experimento foram:
 
----
-
-## 🔬 Questões de Pesquisa (RQs) & Hipóteses
-
-* **RQ1 (Tempo de Desenvolvimento):** O uso de IA reduz o tempo necessário para atingir o estado *Green* (*Time-to-Green*)?
-* **RQ2 (Taxa de Sucesso):** O uso de IA aumenta a probabilidade de concluir o Kata dentro do limite de 25 minutos?
-* **RQ3 (Qualidade do Código):** O código gerado/auxiliado por IA apresenta métricas de complexidade e duplicação equivalentes ou superiores ao código manual?
+- RQ1: O uso de IA reduz o tempo para atingir o estado Green?
+- RQ2: O uso de IA aumenta a taxa de sucesso dentro do timebox?
+- RQ3: O código gerado com IA apresenta qualidade estrutural equivalente ou superior ao código manual?
 
 ---
 
-## ⚙️ Regras do Ambiente Controlado & Acordos do Time
+## 🔬 Metodologia
 
-1. **Escopo da IA:** A LLM terá acesso **exclusivamente ao enunciado textual** do Kata.
-   * ❌ Proibido: Dar acesso à suíte de testes (`*.test.js`), usar agentes autônomos que leiam o repositório inteiro ou colar erros de compilação sem intervenção manual.
-2. **Transcrição Obrigatória:** Em todos os *trials* do tratamento `COM_IA`, o desenvolvedor deve registrar o histórico/recorte do chat com a LLM em um arquivo `prompts.md` na pasta do seu trial.
-3. **Uso de Ferramentas Únicas:** Uma única LLM será padronizada para todo o experimento no tratamento `COM_IA`.
-4. **Crossover sem Aprendizado:** Nenhum desenvolvedor resolverá o mesmo Kata duas vezes. Cada membro resolverá Katas distintos com e sem IA para evitar contaminação por efeito de aprendizado.
-5. **Automação Estrita:** Todo o tempo e execução de testes são gerenciados via CLI (`tools/timer-cli.js`).
-6. **Rastreabilidade GitHub:** Cada *trial* executado por cada desenvolvedor corresponde a uma **Issue individual** no GitHub Projects e deve ser encerrado via commit.
+### Katas utilizados
+
+- FizzBuzz
+- Roman Numerals
+- String Calculator
+- Bowling Game
+- ISBN-10 Validator
+- Array Chunking & Pagination
+
+### Condições do experimento
+
+- Timebox de 25 minutos por trial;
+- suíte fixa de testes automatizados como critério de aceite;
+- acesso da IA restrito ao enunciado do kata;
+- registro de tempo, tentativas e sucesso por trial;
+- coleta de métricas estáticas de código por solução final.
+
+### Resultado principal observado
+
+Os dados finais mostram que:
+
+- a mediana de tempo com IA foi de aproximadamente 22,5 segundos;
+- a mediana de tempo sem IA foi de aproximadamente 846,5 segundos;
+- a taxa de sucesso com IA foi de 100% (`6/6`);
+- a taxa de sucesso sem IA foi de 83,3% (`5/6`);
+- todas as soluções com IA alcançaram Green em 1 tentativa;
+- o único timeout ocorreu no tratamento manual (`Bowling Game`).
+
+Esses resultados indicam uma vantagem clara do tratamento com IA no contexto do experimento, ainda que com ressalvas sobre o tamanho amostral e a natureza exploratória da análise.
 
 ---
 
-## 🔀 Matriz Experimental (Crossover Design Completo)
-
-Serão executados **12 trials no total** (3 Desenvolvedores × 4 Katas cada), garantindo que **todos os 6 Katas sejam avaliados sob ambos os tratamentos (`COM_IA` e `SEM_IA`)**:
-
-| Kata / Exercício | Categoria | Dev 1 | Dev 2 | Dev 3 |
-| :--- | :--- | :---: | :---: | :---: |
-| **Kata 01: FizzBuzz** | Clássico / Baseline | — | **SEM_IA** | **COM_IA** |
-| **Kata 02: Roman Numerals** | Clássico / Algorítmico | — | **SEM_IA** | **COM_IA** |
-| **Kata 03: String Calculator** | Clássico / Parsing | **SEM_IA** | — | **COM_IA** |
-| **Kata 04: Bowling Game** | Clássico / Regra de Negócio | **SEM_IA** | **COM_IA** | — |
-| **Kata 05: ISBN-10 Validator** | Prático / Validação | **SEM_IA** | — | **COM_IA** |
-| **Kata 06: Pagination** | Prático / Estrutura Web | **SEM_IA** | **COM_IA** | — |
-| **Total de Issues por Dev** | | **4 Issues** | **4 Issues** | **4 Issues** |
-
----
-
-## 📂 Estrutura de Pastas do Repositório
+## 📂 Estrutura do Repositório
 
 ```text
 Enunciado 2/
-├── index.html                  # Apresentação web / Enunciado visual
-├── README.md                   # Documentação principal do experimento
-├── package.json                # Dependências gerais do projeto (Jest, jscpd, escomplex)
-│
-├── tools/                      # Ferramentas de medição (Sprint 1)
-│   ├── timer-cli.js            # [Dev 1] CLI de cronometragem e runner interativo
-│   └── metrics-runner.js       # [Dev 2] Runner de métricas estáticas (LOC, Complexidade, Duplicação)
-│
-├── katas/                      # Boilerplates dos Katas (Sprint 1 - Dev 3)
+├── README.md
+├── RELATORIO.md
+├── APRESENTACAO.md
+├── package.json
+├── index.html
+├── tools/
+│   ├── timer-cli.js
+│   ├── metrics-runner.js
+│   ├── finish-trial.js
+│   └── ...
+├── katas/
+│   ├── kata-00-teste-string-transformer/
 │   ├── kata-01-fizzbuzz/
-│   │   ├── readme.md           # Enunciado limpo do Kata (prompt para LLM)
-│   │   ├── index.js            # Assinatura base da função/classe
-│   │   └── index.test.js       # Suíte fixa de testes de aceite
 │   ├── kata-02-roman-numerals/
 │   ├── kata-03-string-calculator/
 │   ├── kata-04-bowling-game/
-│   ├── kata-05-isbn-validator/ # Kata focado em parsing/validação de regras
-│   └── kata-06-pagination/     # Kata focado em estrutura de dados/fórmulas de índice
-│
-├── trials/                     # Execuções individuais dos trials (Sprint 2)
-│   ├── dev1/
-│   │   ├── kata-01-sem-ia/
-│   │   │   ├── index.js        # Código final implementado
-│   │   │   └── metrics.json    # Métricas estáticas do trial
-│   │   └── kata-03-com-ia/
-│   │       ├── index.js        # Código final gerado
-│   │       ├── prompts.md      # Histórico de conversas com a LLM
-│   │       └── metrics.json
-│   ├── dev2/
-│   └── dev3/
-│
-├── data/                       # Logs consolidados
-│   └── trials-log.json         # Registro bruto do timer-cli (tempos, tentativas, sucessos)
-│
-└── analysis/                   # Pipelines de Análise Estatística (Sprint 3)
-    ├── stats_wilcoxon.py       # [Dev 1] Teste de Wilcoxon e estatística descritiva (RQ1, RQ2)
-    ├── code_quality.py         # [Dev 2] Análise de qualidade de código (RQ3)
-    ├── charts_generator.py     # [Dev 3] Geração automatizada de gráficos e Boxplots
-    └── outputs/                # Imagens e gráficos gerados para o relatório final
-
+│   ├── kata-05-isbn-10-validator/
+│   └── kata-06-array-chunking-pagination/
+├── trials/
+│   ├── alvimdev/
+│   ├── luisajardim/
+│   └── pedroseabra27/
+├── data/
+│   └── trials-log.json
+├── analysis/
+│   ├── charts_generator.py
+│   ├── code_quality.py
+│   ├── inferential_stats.py
+│   ├── pyproject.toml
+│   ├── charts/
+│   └── output/
+│       ├── charts/
+│       ├── code_quality_comparison.csv
+│       ├── code_quality_summary.json
+│       ├── monte_carlo_simulations.csv
+│       └── stats_summary.json
+└── node_modules/
 ```
 
 ---
 
-## 📅 Divisão de Tarefas por Sprint & Atribuições dos Devs
+## 🧪 Como executar e reproduzir
 
-### **Sprint 1: Preparação e Ferramental**
-
-* **Dev 1:** Desenvolvimento do `tools/timer-cli.js` (cronometragem CLI, captura de `Shift + T`, execução do Jest via subprocesso e geração de `data/trials-log.json`).
-* **Dev 2:** Desenvolvimento do `tools/metrics-runner.js` (integração de analisadores JS para extração de LOC, complexidade ciclomática e duplicação).
-* **Dev 3:** Criação e validação dos Katas em `katas/` com boilerplates em JS e suítes de teste Jest completas.
-
-### **Sprint 2: Execução dos Trials**
-
-* Execução individual das 4 Issues por dev conforme a matriz Crossover.
-* Uso obrigatório do `timer-cli.js` durante cada *trial*.
-* Armazenamento das transcrições de prompts e soluções em `trials/devX/`.
-
-### **Sprint 3: Análise Estatística & Visualização**
-
-* **Dev 1:** Script em Python (`stats_wilcoxon.py`) para aplicação do **Teste de Wilcoxon Signed-Rank** nos dados brutos de tempo.
-* **Dev 2:** Script em Python (`code_quality.py`) para sumarização e comparação das métricas estáticas do código.
-* **Dev 3:** Script em Python (`charts_generator.py`) para renderização dos gráficos finais (Boxplots e Histogramas).
-
----
-
-## 🚀 Como Executar o Timer-CLI de um Trial
-
-1. Instale as dependências:
+### 1. Instalar dependências do projeto
 
 ```bash
 npm install
-
 ```
 
-2. Inicie o trial indicando o dev, kata, tratamento e comando do teste:
+### 2. Rodar um trial manualmente
 
 ```bash
 npm run timer -- \
-  --dev dev1 \
-  --kata kata-05-isbn-validator \
+  --dev luisajardim \
+  --kata kata-05-isbn-10-validator \
   --treatment COM_IA \
-  --cmd "npx jest katas/kata-05-isbn-validator" \
+  --cmd "npx jest katas/kata-05-isbn-10-validator" \
   --timebox 25
-
 ```
 
-3. Durante o trial:
+Durante o trial, a tecla `Shift + T` executa a suíte de testes e o relógio encerra automaticamente no primeiro Green ou no timeout.
 
-* Pressione **`Shift + T`** para rodar a suíte de testes de aceite.
-* O relógio irá parar automaticamente no primeiro evento de sucesso (*Green*) ou ao esgotar o limite configurado (*Timeout*).
+### 3. Extrair métricas estáticas
+
+```bash
+npm run metrics
+```
+
+### 4. Executar a análise estatística e gráficos
+
+```bash
+cd analysis
+python -m venv .venv
+. .venv/bin/activate
+pip install .
+python charts_generator.py
+python inferential_stats.py
+```
+
+---
+
+## 📊 Artefatos finais de análise
+
+Os resultados finais estão disponíveis em:
+
+- [RELATORIO.md](RELATORIO.md)
+- [APRESENTACAO.md](APRESENTACAO.md)
+- [data/trials-log.json](data/trials-log.json)
+- [analysis/output/stats_summary.json](analysis/output/stats_summary.json)
+- [analysis/output/code_quality_summary.json](analysis/output/code_quality_summary.json)
+- [analysis/output/charts](analysis/output/charts)
+
+A pasta [analysis/output/charts](analysis/output/charts) contém os gráficos gerados para as RQs, incluindo:
+
+- `rq1_tempo_por_kata.png`
+- `rq1_diferenca_tempo.png`
+- `rq2_taxa_sucesso.png`
+- `rq2_tentativas_stripplot.png`
+- `rq3_metricas_distribuicao.png`
+- `rq3_perfil_radar.png`
+- `rq3_efeitos_metricas.png`
+- `monte_carlo_distribuicoes.png`
+
+---
+
+## 🧩 Observações finais
+
+Este projeto foi entregue como um experimento empírico completo, com infraestrutura de coleta, rastreabilidade de trials, análise estatística e produção de resultados. Ele serve como base reprodutível para estudos posteriores sobre produtividade, qualidade estrutural e uso de IA em software.
+
+A principal conclusão do laboratório é que, nas condições avaliadas, o uso de IA foi associado a:
+
+- menor tempo para atingir Green;
+- maior taxa de sucesso;
+- menor número de tentativas até a solução final;
+- qualidade estrutural equivalente ou melhor, conforme as métricas observadas.
+
+---
+
+## 📌 Referências e tecnologias
+
+- Node.js
+- Jest
+- escomplex
+- jscpd
+- Python 3.10+
+- pandas, NumPy, SciPy, Matplotlib, Seaborn
