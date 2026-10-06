@@ -67,7 +67,7 @@ Enunciado 3/
 
 | Pacote | Responsabilidade | Depende de |
 |---|---|---|
-| `github` | HTTP, rate limit, backoff, paginação, modelos de dados | httpx, cache |
+| `github` | Clientes REST (paginação `Link`) e GraphQL (lote por aliases); `BaseGitHubClient` com retry/backoff/rate limit; modelos de dados | httpx |
 | `cache` | Persistência content-addressed, staleness, retomada por estágio | — |
 | `collector` | Orquestra endpoints por recurso (search/releases/tags/commits/runs) | github, cache |
 | `metrics` | Cálculo puro das métricas e classificação DORA | — (sem I/O) |
@@ -96,6 +96,7 @@ em cache; `metrics` e `report` regeneram saídas a partir dos dados brutos.
 | D1 | `src/` layout com 5 pacotes | Testabilidade e clara separação I/O vs. lógica; flat layout misturaria responsabilidades |
 | D2 | `httpx` cru para REST + GraphQL | Obrigatório pelo ENUNCIADO; PyGithub proibido |
 | D3 | GraphQL em lote (aliases) para metadados; REST paginado para runs/compare | GraphQL reduz round-trips; REST é necessário onde GraphQL é limitado (1.000 runs) |
+| D3a | `BaseGitHubClient` compartilhada por REST e GraphQL | Retry/backoff/rate-limit em um só lugar; sessão, `sleeper` e `wall_clock` injetáveis para testes sem rede |
 | D4 | SQLite content-addressed como cache | Retomada por estágio + staleness; alternativa (JSON por arquivo) não indexa nem expira |
 | D5 | `config.toml` + `tomllib` (stdlib) | Sem dependência extra; TOML legível; token só via `GITHUB_TOKEN` |
 | D6 | `argparse` (stdlib) em vez de `typer` | Uma dependência a menos; CLI tem 4 subcomandos simples |
