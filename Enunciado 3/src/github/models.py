@@ -155,6 +155,15 @@ class Tag:
 
 
 @dataclass(frozen=True)
+class ResolvedTag:
+    """Tag com a data do commit que ela aponta (``commit.author.date``)."""
+
+    name: str
+    sha: str
+    date: str
+
+
+@dataclass(frozen=True)
 class RateLimitStatus:
     """Cota de um recurso (ex.: ``core``, ``search``)."""
 

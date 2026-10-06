@@ -188,6 +188,32 @@ def test_paginate_passes_custom_params():
     assert session.requests[0]["params"] == {"event": "push", "per_page": 50}
 
 
+def test_paginate_field_follows_next_links():
+    link = '<https://api.github.com/repos/o/r/compare/a...b?page=2>; rel="next"'
+    client, session = _client(
+        [
+            FakeResponse(json_data={"commits": [{"sha": "1"}]}, headers={"Link": link}),
+            FakeResponse(json_data={"commits": [{"sha": "2"}]}),
+        ]
+    )
+    items = list(client.paginate_field("/repos/o/r/compare/a...b", "commits", per_page=250))
+    assert items == [{"sha": "1"}, {"sha": "2"}]
+    assert session.requests[0]["params"]["per_page"] == 250
+    assert session.requests[1]["params"] is None
+
+
+def test_paginate_field_raises_on_error_status():
+    client, _ = _client([FakeResponse(status_code=404, text="Not Found")])
+    with pytest.raises(GitHubHTTPError) as ctx:
+        list(client.paginate_field("/repos/o/r/compare/a...b", "commits"))
+    assert ctx.value.status == 404
+
+
+def test_paginate_field_missing_key_yields_nothing():
+    client, _ = _client([FakeResponse(json_data={"other": []})])
+    assert list(client.paginate_field("/repos/o/r/compare/a...b", "commits")) == []
+
+
 def test_parse_link_header():
     links = parse_link_header('<https://a>; rel="next", <https://b>; rel="last"')
     assert links == {"next": "https://a", "last": "https://b"}

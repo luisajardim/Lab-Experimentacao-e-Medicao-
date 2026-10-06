@@ -189,6 +189,31 @@ class GitHubRESTClient(BaseGitHubClient):
             url = parse_link_header(response.headers.get("Link") or "").get("next")
             request_params = None
 
+    def paginate_field(
+        self,
+        path: str,
+        field: str,
+        params: dict[str, Any] | None = None,
+        per_page: int = 100,
+    ) -> Iterator[dict[str, Any]]:
+        """Itera por ``body[field]`` em respostas que são objeto, não lista.
+
+        Necessário para endpoints como ``compare/{base}...{head}``, cujo
+        corpo é ``{"commits": [...], ...}`` em vez de um array no topo.
+        Segue ``Link: rel="next"`` como ``paginate``.
+        """
+        request_params: dict[str, Any] | None = dict(params or {})
+        request_params.setdefault("per_page", per_page)
+        url: str | None = path
+        while url is not None:
+            response = self._request_with_retry("GET", url, params=request_params)
+            if response.status_code >= 400:
+                raise GitHubHTTPError(response.status_code, response.text[:500])
+            body = response.json()
+            yield from body.get(field, [])
+            url = parse_link_header(response.headers.get("Link") or "").get("next")
+            request_params = None
+
     def rate_limit(self) -> RateLimitStatus:
         """Consulta ``GET /rate_limit`` (não consome cota)."""
         body = self.get_json("/rate_limit")
