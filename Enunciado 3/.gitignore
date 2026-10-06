@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# uv
+.uv/
+
+# Segredos: o token NUNCA é commitado (ENUNCIADO §7)
+.env
+.env.*
+!.env.example
+
+# Cache local e respostas brutas da API: regeneráveis, nunca entram no repo (ENUNCIADO §7).
+# data/cache/ é criado em runtime; data/raw/ preserva apenas o .gitkeep.
+data/cache/
+data/raw/*
+!data/raw/.gitkeep
+
+# Artefatos de teste/lint
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+
+# Figuras de análise (regeneráveis a partir dos CSVs)
+analysis/output/*.png

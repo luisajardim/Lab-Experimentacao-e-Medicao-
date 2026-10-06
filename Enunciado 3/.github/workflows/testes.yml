@@ -1,0 +1,29 @@
+name: testes
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - name: Instalar dependências
+        run: uv sync   # uv.lock será commitado após a primeira geração local
+      - name: Lint (ruff)
+        run: uv run ruff check src/ tests/
+      - name: Testes com cobertura (mín. 80% do módulo de métricas)
+        run: uv run pytest --cov=metrics --cov-fail-under=80 --cov-report=term-missing
+      - name: Smoke test de coleta (2 repositórios)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uv run python -m pipeline --config config.toml --stage collect --limit 2

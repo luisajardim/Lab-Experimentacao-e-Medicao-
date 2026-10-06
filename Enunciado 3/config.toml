@@ -1,0 +1,37 @@
+# Lab03 — configuração do pipeline.
+# Janela de observação fixada pelo professor (ENUNCIADO §3): datas de início e fim da janela.
+
+[window]
+start = "2025-10-01"   # inclusivo
+end = "2026-09-30"     # inclusivo
+weeks = 52.1           # divisor da deployment frequency (RQ 01)
+
+[search]
+# Cada query de busca retorna no máximo 1.000 resultados (ENUNCIADO §4):
+# fatiamos por faixa de estrelas (e opcionalmente por linguagem) para obter mais candidatos.
+star_slices = ["1000..2000", "2000..5000", "5000..10000", "10000.."]
+languages = []           # ex.: ["python", "javascript"] — fatia extra por linguagem
+max_candidates = 4000
+per_page = 100
+
+[filters]
+# Critério mínimo de inclusão (ENUNCIADO §3): repositórios abaixo disso saem no funil.
+min_releases = 5
+min_workflow_runs = 50
+
+[api]
+base_url = "https://api.github.com"
+graphql_url = "https://api.github.com/graphql"
+request_timeout_seconds = 30
+max_retries = 5          # backoff exponencial: 1s, 2s, 4s, 8s, 16s
+backoff_base_seconds = 1.0
+graphql_batch_size = 20  # nº de aliases (queries em lote) por requisição GraphQL
+
+[paths]
+cache_db = "data/cache/api_responses.db"
+raw_dir = "data/raw"
+meta_dir = "meta"
+candidates_csv = "data/raw/candidates.csv"
+gold_dir = "data/gold"
+datasets_dir = "data/datasets"
+reports_dir = "reports"
