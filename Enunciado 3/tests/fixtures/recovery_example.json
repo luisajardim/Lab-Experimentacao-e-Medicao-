@@ -1,0 +1,12 @@
+{
+  "description": "ENUNCIADO.md RQ 04: episódio de falha do workflow CI no branch main.",
+  "runs": [
+    {"workflow_id": 1, "conclusion": "success", "run_started_at": "2026-01-01T09:00:00Z", "updated_at": "2026-01-01T09:05:00Z"},
+    {"workflow_id": 1, "conclusion": "failure", "run_started_at": "2026-01-01T10:00:00Z", "updated_at": "2026-01-01T10:05:00Z"},
+    {"workflow_id": 1, "conclusion": "failure", "run_started_at": "2026-01-01T10:30:00Z", "updated_at": "2026-01-01T10:35:00Z"},
+    {"workflow_id": 1, "conclusion": "success", "run_started_at": "2026-01-01T11:15:00Z", "updated_at": "2026-01-01T11:20:00Z"}
+  ],
+  "expected_episode_failure_started_at": "2026-01-01T10:00:00Z",
+  "expected_episode_recovered_at": "2026-01-01T11:20:00Z",
+  "expected_episode_duration_hours": 1.3333333333333333
+}
