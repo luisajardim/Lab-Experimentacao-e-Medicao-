@@ -16,6 +16,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from cache.sqlite_store import SQLiteStore
 from github.models import Commit, Release
 from github.rest import GitHubHTTPError, GitHubRESTClient
 
@@ -65,6 +66,8 @@ def collect_commits_between(
     releases: list[Release],
     *,
     per_page: int = 250,
+    store: SQLiteStore | None = None,
+    stage: str = "collect:commits",
 ) -> list[CommitsBetween]:
     """Commits entre cada par de releases consecutivas (ordem ascendente).
 
@@ -88,6 +91,19 @@ def collect_commits_between(
             previous = release
             continue
 
+        cache_key = f"compare:{owner}/{repo}:{previous.tag_name}...{release.tag_name}"
+        if store and store.is_stage_complete(f"{stage}:{cache_key}"):
+            results.append(
+                CommitsBetween(
+                    release=release.tag_name,
+                    previous_release=previous.tag_name,
+                    commits=None,
+                    ignored_reason=COMPARE_NOT_FOUND,
+                )
+            )
+            previous = release
+            continue
+
         commits = _compare_commits(
             client,
             owner,
@@ -104,6 +120,10 @@ def collect_commits_between(
                 ignored_reason=None if commits is not None else COMPARE_NOT_FOUND,
             )
         )
+
+        if store:
+            store.mark_stage_complete(f"{stage}:{cache_key}")
+
         previous = release
 
     return results

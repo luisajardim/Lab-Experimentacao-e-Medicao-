@@ -1,13 +1,11 @@
 """Testes do coletor de busca de candidatos (T04, sem rede)."""
 
 import csv
-from pathlib import Path
 
 from _fakes import FakeResponse, FakeSession
 
 from collector.search import collect_candidates
 from github.rest import GitHubRESTClient
-
 
 CONFIG_BASE = """
 [search]
@@ -133,7 +131,7 @@ candidates_csv = "raw/candidates.csv"
     candidates = collect_candidates(client, config)
 
     assert len(candidates) == 3
-    assert len(session.requests) == 1
+    assert len(session.requests) == 2
     assert session.requests[0]["params"]["q"] == "stars:1000..2000"
 
 

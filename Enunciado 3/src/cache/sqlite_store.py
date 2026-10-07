@@ -68,7 +68,7 @@ class SQLiteStore:
         self._path = Path(db_path)
         self._path.parent.mkdir(parents=True, exist_ok=True)
         self._clock = clock or _default_clock
-        self._conn = sqlite3.connect(self._path)
+        self._conn = sqlite3.connect(self._path, check_same_thread=False)
         self._conn.row_factory = sqlite3.Row
         self._init_schema()
 
@@ -163,6 +163,32 @@ class SQLiteStore:
             stage=stage,
             fetched_at=fetched_at,
         )
+
+    def put_many(
+        self,
+        rows: list[tuple[str, str, str, str | None, int, str, str]],
+    ) -> None:
+        """Persiste várias respostas em lote (``(url_hash, url, method, body, status, response_body, stage)``)."""
+        if not rows:
+            return
+        fetched_at = self._clock()
+        self._conn.executemany(
+            """
+            INSERT INTO responses
+                (url_hash, url, method, body, status, response_body, stage, fetched_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(url_hash) DO UPDATE SET
+                status = excluded.status,
+                response_body = excluded.response_body,
+                stage = excluded.stage,
+                fetched_at = excluded.fetched_at
+            """,
+            [
+                (url_hash, url, method, body, status, response_body, stage, fetched_at)
+                for url_hash, url, method, body, status, response_body, stage in rows
+            ],
+        )
+        self._conn.commit()
 
     # --- retomada por estágio --------------------------------------------
 

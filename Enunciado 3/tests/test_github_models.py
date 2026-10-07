@@ -126,6 +126,8 @@ def test_workflow_from_api():
 
 
 def test_models_are_immutable():
+    from dataclasses import FrozenInstanceError
+
     repo = Repository.from_api(_repo_payload())
-    with pytest.raises(Exception):
+    with pytest.raises(FrozenInstanceError):
         repo.stars = 9999

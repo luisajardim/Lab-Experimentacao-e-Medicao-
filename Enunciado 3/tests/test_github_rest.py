@@ -2,8 +2,8 @@
 
 import httpx
 import pytest
-
 from _fakes import FakeResponse, FakeSession
+
 from github.rest import (
     GitHubHTTPError,
     GitHubRESTClient,

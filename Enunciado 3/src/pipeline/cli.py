@@ -9,8 +9,6 @@ de coleta em T02-T06. Opções:
 
 import argparse
 
-STAGES = ("collect", "metrics", "report")
-
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -24,7 +22,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--stage",
-        choices=STAGES,
+        choices=("collect", "metrics", "report"),
         help="executar apenas um estágio (collect | metrics | report)",
     )
     parser.add_argument(
@@ -44,18 +42,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.command is None and args.stage is None:
         parser.print_help()
         return 0
-    token_missing = not _has_token()
-    if token_missing and (args.stage == "collect" or args.command is None):
-        print("erro: defina a variável de ambiente GITHUB_TOKEN", flush=True)
-        return 2
     print(f"[pipeline] estágio '{args.stage or args.command}' não implementado ainda (T02-T09).")
     return 0
-
-
-def _has_token() -> bool:
-    import os
-
-    return bool(os.environ.get("GITHUB_TOKEN"))
 
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
 """Testes do cliente GraphQL (batching por aliases) com sessão falsa."""
 
 import pytest
-
 from _fakes import FakeResponse, FakeSession
+
 from github.gql import GitHubGraphQLClient, GraphQLResponseError
 from github.rest import GitHubHTTPError
 
