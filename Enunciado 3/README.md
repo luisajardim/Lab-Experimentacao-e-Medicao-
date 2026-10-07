@@ -1,5 +1,7 @@
 # Lab03 — Mineração de Métricas DORA
 
+[![Testes](https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-/actions/workflows/testes.yml/badge.svg)](https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-/actions/workflows/testes.yml)
+
 Pipeline de coleta e cálculo automático das métricas DORA (deployment frequency,
 lead time for changes, change failure rate, tempo de recuperação) a partir de
 repositórios open-source reais que usam GitHub Actions.
