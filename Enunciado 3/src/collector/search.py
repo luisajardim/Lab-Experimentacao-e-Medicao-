@@ -84,6 +84,24 @@ def _write_csv(candidates: list[Candidate], csv_path: Path) -> None:
             )
 
 
+def _read_csv(csv_path: Path) -> list[Candidate]:
+    """Lê candidatos do CSV salvo."""
+    if not csv_path.exists():
+        return []
+    candidates: list[Candidate] = []
+    with open(csv_path, newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            candidates.append(Candidate(
+                full_name=row["full_name"],
+                stars=int(row["stars"]),
+                language=row["language"] or None,
+                default_branch=row["default_branch"],
+                created_at=row["created_at"],
+            ))
+    return candidates
+
+
 def _record_query(queries_dir: Path, idx: int, query: str, count: int) -> None:
     queries_dir.mkdir(parents=True, exist_ok=True)
     path = queries_dir / f"query_{idx:03d}.txt"
@@ -160,9 +178,10 @@ def collect_candidates(
     _ensure_dirs({"raw_dir": raw_dir, "meta_dir": meta_dir})
 
     if store and store.is_stage_complete(stage):
-        log.info("%s já concluído; pulando coleta", stage)
-        _write_csv([], candidates_csv)
-        return []
+        log.info("%s já concluído; carregando candidatos do cache CSV", stage)
+        candidates = _read_csv(candidates_csv)
+        log.info("Carregados %d candidatos do cache", len(candidates))
+        return candidates
 
     queries = _build_queries(star_slices, languages)
     seen: set[str] = set()

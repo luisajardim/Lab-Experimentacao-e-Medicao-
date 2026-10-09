@@ -22,6 +22,7 @@ from github.rest import GitHubHTTPError, GitHubRESTClient
 
 NO_PREVIOUS_RELEASE = "no_previous_release"
 COMPARE_NOT_FOUND = "compare_404"
+COMPARE_TOO_LARGE = "compare_422_diff_too_large"
 
 
 @dataclass(frozen=True)
@@ -46,14 +47,14 @@ class CommitsBetween:
 def _compare_commits(
     client: GitHubRESTClient, owner: str, repo: str, base: str, head: str, *, per_page: int
 ) -> list[Commit] | None:
-    """Commits de ``base...head``, ou ``None`` se o ``compare`` devolver 404."""
+    """Commits de ``base...head``, ou ``None`` se o ``compare`` devolver 404 ou 422."""
     path = f"/repos/{owner}/{repo}/compare/{base}...{head}"
     try:
         raw_commits = list(
             client.paginate_field(path, "commits", per_page=per_page)
         )
     except GitHubHTTPError as error:
-        if error.status == 404:
+        if error.status in (404, 422):
             return None
         raise
     return [Commit.from_api(item) for item in raw_commits]
@@ -112,12 +113,16 @@ def collect_commits_between(
             release.tag_name,
             per_page=per_page,
         )
+        ignored_reason = None
+        if commits is None:
+            # Could be 404 or 422 - we don't know which, so use generic
+            ignored_reason = COMPARE_NOT_FOUND
         results.append(
             CommitsBetween(
                 release=release.tag_name,
                 previous_release=previous.tag_name,
                 commits=commits,
-                ignored_reason=None if commits is not None else COMPARE_NOT_FOUND,
+                ignored_reason=ignored_reason,
             )
         )
 
