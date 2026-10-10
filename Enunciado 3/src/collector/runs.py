@@ -88,7 +88,7 @@ def collect_runs(
         }
         
         log.info("Coletando runs para %s/%s no periodo %s", owner, repo, query)
-        raw = client.paginate(path, params=params)
+        raw = client.paginate_field(path, "workflow_runs", params=params)
         
         valid_runs: list[WorkflowRun] = []
         for item in raw:

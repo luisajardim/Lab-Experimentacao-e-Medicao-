@@ -261,19 +261,11 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                 owner,
                 repo,
                 max_workers=4,
-            )
-
-            # 4. Coletar commits entre releases consecutivas
-            commits_between = collect_commits_between(
-                repo_client,
-                owner,
-                repo,
-                releases,
                 store=local_store,
-                stage="collect:commits",
+                stage="collect:tags",
             )
 
-            # 5. Coletar workflow runs
+            # 4. Coletar workflow runs (ANTES dos commits - filtro barato)
             runs_by_month = collect_runs(
                 repo_client,
                 owner,
@@ -294,6 +286,16 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                     owner, repo, total_runs, min_workflow_runs
                 )
                 return owner, repo, 0, 1
+
+            # 5. Coletar commits entre releases consecutivas (só se passou no filtro)
+            commits_between = collect_commits_between(
+                repo_client,
+                owner,
+                repo,
+                releases,
+                store=local_store,
+                stage="collect:commits",
+            )
 
             # 6. Salvar dados em gold
             repo_data = {

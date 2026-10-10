@@ -1,0 +1,2914 @@
+{
+  "repository": {
+    "full_name": "codenotary/immudb",
+    "stars": 9042,
+    "language": "Go",
+    "default_branch": "master",
+    "created_at": "2019-11-07T08:22:16Z"
+  },
+  "releases": [
+    {
+      "id": 27004629,
+      "tag_name": "v0.6.0",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-28T19:00:21Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.6.0"
+    },
+    {
+      "id": 27005887,
+      "tag_name": "v0.6.0-RC2",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-28T19:36:47Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.6.0-RC2"
+    },
+    {
+      "id": 27005907,
+      "tag_name": "v0.6.0-RC1",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-28T19:37:25Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.6.0-RC1"
+    },
+    {
+      "id": 27377589,
+      "tag_name": "v0.6.1",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-06-09T16:51:07Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.6.1"
+    },
+    {
+      "id": 27584857,
+      "tag_name": "v0.6.2",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-06-16T08:33:39Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.6.2"
+    },
+    {
+      "id": 29522672,
+      "tag_name": "v0.7.0",
+      "name": "Multidatabase",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-08-10T16:26:06Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.7.0"
+    },
+    {
+      "id": 29783516,
+      "tag_name": "v0.7.1",
+      "name": "Bug Fixes & Enhancements",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-08-17T19:02:45Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.7.1"
+    },
+    {
+      "id": 31328570,
+      "tag_name": "v0.8.0",
+      "name": "Multi-key insertion, crypto signature",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-09-15T13:28:11Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.8.0"
+    },
+    {
+      "id": 35624398,
+      "tag_name": "v0.9.0-RC1",
+      "name": "immustore",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-12-22T17:19:46Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.9.0-RC1"
+    },
+    {
+      "id": 35815811,
+      "tag_name": "v0.9.0-RC2",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-12-29T17:07:59Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.9.0-RC2"
+    },
+    {
+      "id": 36104242,
+      "tag_name": "v0.9.0",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-07T17:00:14Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.9.0"
+    },
+    {
+      "id": 37763313,
+      "tag_name": "v0.9.1",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-02-08T21:03:45Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.9.1"
+    },
+    {
+      "id": 41125188,
+      "tag_name": "v0.9.2",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-04-08T13:56:48Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v0.9.2"
+    },
+    {
+      "id": 43345393,
+      "tag_name": "v1.0.0",
+      "name": "1.0.0 (SQL)",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-05-21T11:05:05Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.0.0"
+    },
+    {
+      "id": 44194962,
+      "tag_name": "v1.0.1",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-06-07T10:08:36Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.0.1"
+    },
+    {
+      "id": 47159764,
+      "tag_name": "v1.0.5",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-08-02T13:38:37Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.0.5"
+    },
+    {
+      "id": 50049534,
+      "tag_name": "v1.1.0",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-09-22T11:22:30Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.1.0"
+    },
+    {
+      "id": 54806362,
+      "tag_name": "v1.2.0-RC1",
+      "name": "v1.2.0-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-12-07T15:55:11Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.2.0-RC1"
+    },
+    {
+      "id": 55267774,
+      "tag_name": "v1.2.1",
+      "name": "v1.2.1 (ACID support, GDPR, Golang stdlib support and improved SQL compatibility)",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-12-14T12:20:14Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.2.1"
+    },
+    {
+      "id": 56924603,
+      "tag_name": "v1.2.2",
+      "name": "1.2.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-19T16:24:03Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.2.2"
+    },
+    {
+      "id": 64365811,
+      "tag_name": "v1.2.3-RC1",
+      "name": "",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-04-13T14:37:24Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.2.3-RC1"
+    },
+    {
+      "id": 64467966,
+      "tag_name": "v1.2.3",
+      "name": "v1.2.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-14T17:59:06Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.2.3"
+    },
+    {
+      "id": 65460582,
+      "tag_name": "v1.2.4-RC1",
+      "name": "v1.2.4-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-04-27T13:33:32Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.2.4-RC1"
+    },
+    {
+      "id": 65544687,
+      "tag_name": "v1.2.4",
+      "name": "v1.2.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-28T10:10:09Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.2.4"
+    },
+    {
+      "id": 67371236,
+      "tag_name": "v1.3.0-RC1",
+      "name": "v1.3.0-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-05-20T12:00:28Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.3.0-RC1"
+    },
+    {
+      "id": 67534838,
+      "tag_name": "v1.3.0",
+      "name": "v1.3.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-23T13:53:46Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.3.0"
+    },
+    {
+      "id": 70950975,
+      "tag_name": "v1.3.1-RC1",
+      "name": "v1.3.1-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-06-30T09:11:05Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.3.1-RC1"
+    },
+    {
+      "id": 70983358,
+      "tag_name": "v1.3.1",
+      "name": "v1.3.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-30T15:24:11Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.3.1"
+    },
+    {
+      "id": 75275855,
+      "tag_name": "v1.3.2-RC1",
+      "name": "v1.3.2-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-24T23:39:51Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.3.2-RC1"
+    },
+    {
+      "id": 75342188,
+      "tag_name": "v1.3.2",
+      "name": "v1.3.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-25T18:09:42Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.3.2"
+    },
+    {
+      "id": 78946534,
+      "tag_name": "v1.4.0-RC1",
+      "name": "v1.4.0-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-04T14:14:10Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.4.0-RC1"
+    },
+    {
+      "id": 79427244,
+      "tag_name": "v1.4.0-RC2",
+      "name": "v1.4.0-RC2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-10T13:34:30Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.4.0-RC2"
+    },
+    {
+      "id": 79648454,
+      "tag_name": "v1.4.0",
+      "name": "v1.4.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-12T15:01:29Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.4.0"
+    },
+    {
+      "id": 83232581,
+      "tag_name": "v1.4.1-RC1",
+      "name": "v1.4.1-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-16T12:38:59Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.4.1-RC1"
+    },
+    {
+      "id": 83372709,
+      "tag_name": "v1.4.1",
+      "name": "v1.4.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-21T15:51:04Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.4.1"
+    },
+    {
+      "id": 108875209,
+      "tag_name": "v1.5.0-RC1",
+      "name": "v1.5.0-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-06-16T16:30:11Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.5.0-RC1"
+    },
+    {
+      "id": 109136964,
+      "tag_name": "v1.5.0",
+      "name": "v1.5.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-21T16:19:32Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.5.0"
+    },
+    {
+      "id": 124598832,
+      "tag_name": "v1.9.0-RC1",
+      "name": "v1.9.0-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-10-11T14:17:00Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9.0-RC1"
+    },
+    {
+      "id": 125197461,
+      "tag_name": "v1.9.0-RC2",
+      "name": "v1.9.0-RC2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-10-16T10:51:04Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9.0-RC2"
+    },
+    {
+      "id": 125743983,
+      "tag_name": "v1.9DOM.0",
+      "name": "v1.9DOM",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-19T10:10:41Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9DOM.0"
+    },
+    {
+      "id": 129327181,
+      "tag_name": "v1.9DOM.1-RC1",
+      "name": "v1.9DOM.1-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-11-14T12:48:27Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9DOM.1-RC1"
+    },
+    {
+      "id": 129707708,
+      "tag_name": "v1.9DOM.1",
+      "name": "v1.9DOM.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-16T13:45:46Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9DOM.1"
+    },
+    {
+      "id": 134641885,
+      "tag_name": "v1.9DOM.2-RC1",
+      "name": "v1.9DOM.2-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-12-21T16:00:58Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9DOM.2-RC1"
+    },
+    {
+      "id": 135371582,
+      "tag_name": "v1.9DOM.2",
+      "name": "v1.9DOM.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-29T16:48:20Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9DOM.2"
+    },
+    {
+      "id": 157080472,
+      "tag_name": "v1.9.3",
+      "name": "v1.9.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-05-23T10:29:12Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9.3"
+    },
+    {
+      "id": 167206115,
+      "tag_name": "v1.9.4",
+      "name": "",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-07-25T20:48:33Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9.4"
+    },
+    {
+      "id": 175217214,
+      "tag_name": "v1.9.5",
+      "name": "v1.9.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-09-16T12:46:08Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9.5"
+    },
+    {
+      "id": 209276016,
+      "tag_name": "v1.9.6",
+      "name": "v1.9.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-03-31T09:08:33Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9.6"
+    },
+    {
+      "id": 219723644,
+      "tag_name": "v2.0.0-RC1",
+      "name": "v2.0.0-RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-05-20T10:25:38Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v2.0.0-RC1"
+    },
+    {
+      "id": 222044008,
+      "tag_name": "v1.9.7",
+      "name": "v1.9.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-05-30T12:12:46Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.9.7"
+    },
+    {
+      "id": 256125024,
+      "tag_name": "v1.10.0",
+      "name": "v1.10.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-21T20:24:13Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.10.0"
+    },
+    {
+      "id": 313141664,
+      "tag_name": "v1.11.0-RC2",
+      "name": "v1.11.0-RC2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-04-24T09:53:44Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.11.0-RC2"
+    },
+    {
+      "id": 314425869,
+      "tag_name": "v1.11.0",
+      "name": "Immudb version 1.11.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-28T07:06:37Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.11.0"
+    },
+    {
+      "id": 345208145,
+      "tag_name": "v1.11.1",
+      "name": "immudb version 1.11.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-26T08:37:17Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.11.1"
+    },
+    {
+      "id": 381836019,
+      "tag_name": "v1.11.2",
+      "name": "immudb version 1.11.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-09-03T07:54:36Z",
+      "html_url": "https://github.com/codenotary/immudb/releases/tag/v1.11.2"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v1.11.2",
+      "sha": "bfdce03649f52d575be46f74425fd18eaf4fa69c",
+      "date": "2026-09-02T16:15:15Z"
+    },
+    {
+      "name": "v1.11.1",
+      "sha": "37ebcefe4ebb38248bdb90a7d7e5babf7cf7d97f",
+      "date": "2026-06-25T09:10:16Z"
+    },
+    {
+      "name": "v1.11.0",
+      "sha": "f07d3ac01c068e3d6e760afaaf1f1db20b36d0bc",
+      "date": "2026-04-24T07:46:30Z"
+    },
+    {
+      "name": "v2.0.0-RC1",
+      "sha": "3f65125896dcabb6dccbe6b224ce93e056f5e3ef",
+      "date": "2025-05-20T08:16:22Z"
+    },
+    {
+      "name": "v1.11.0-RC2",
+      "sha": "f07d3ac01c068e3d6e760afaaf1f1db20b36d0bc",
+      "date": "2026-04-24T07:46:30Z"
+    },
+    {
+      "name": "v1.10.0",
+      "sha": "ec39ec860baf0ea9a34273a36c4c06d53a6a9abb",
+      "date": "2025-10-20T08:17:30Z"
+    },
+    {
+      "name": "v1.11.0-RC1",
+      "sha": "af1740f135bf55d99c7b0c92f0ce6d3b6cdd1f65",
+      "date": "2026-04-14T13:26:16Z"
+    },
+    {
+      "name": "v1.9.7",
+      "sha": "6ac516b2236607f3afdfbd1cff7d0cb86f1cf1a9",
+      "date": "2025-05-30T10:09:08Z"
+    },
+    {
+      "name": "v1.9.6",
+      "sha": "cf9a5d8b9b4d3784c6b9fa8c874902bf1318a6e8",
+      "date": "2025-03-31T07:31:51Z"
+    },
+    {
+      "name": "v1.9.5",
+      "sha": "86e956fc33214c0f69154587908446d15cc22a88",
+      "date": "2024-09-16T11:14:12Z"
+    },
+    {
+      "name": "v1.9.4",
+      "sha": "76cd08a0ec757a3dc498d584799d15df1aa5a9ef",
+      "date": "2024-07-25T20:09:48Z"
+    },
+    {
+      "name": "v1.9.3",
+      "sha": "5487dd300655083ff68c4a72c2edb38ca84dd1bb",
+      "date": "2024-05-23T09:21:46Z"
+    },
+    {
+      "name": "v1.9.0-RC2",
+      "sha": "aaa9efd7100869f25038df4bd4388d15e931dd3a",
+      "date": "2023-10-16T09:00:30Z"
+    },
+    {
+      "name": "v1.9DOM.2",
+      "sha": "d422d9f828c6ccfce6ce4af6c565946f764a15ca",
+      "date": "2023-12-29T08:06:30Z"
+    },
+    {
+      "name": "v1.9.0-RC1",
+      "sha": "0a2992d0bfcde383379081a10cd1d12af68c486b",
+      "date": "2023-10-11T12:58:10Z"
+    },
+    {
+      "name": "v1.9DOM.2-RC1",
+      "sha": "e090cc081645fb43a1511b75139603a3e80cb803",
+      "date": "2023-12-21T14:15:14Z"
+    },
+    {
+      "name": "v1.9DOM.1",
+      "sha": "d5f425e46b4bfd0771274cb4c2ea77634421600c",
+      "date": "2023-11-16T10:33:01Z"
+    },
+    {
+      "name": "v1.9DOM.1-RC1",
+      "sha": "11088eb01bc3a210575a5985469739d7e7c6c077",
+      "date": "2023-11-14T10:04:14Z"
+    },
+    {
+      "name": "v1.9DOM",
+      "sha": "d0b3c4b84a94f19c581716b41a766cbd817b4ebb",
+      "date": "2023-10-19T06:44:17Z"
+    },
+    {
+      "name": "v1.9DOM.0",
+      "sha": "df9f5c493fa1e2655304c1957375a3a1e9b20d15",
+      "date": "2023-10-19T14:19:20Z"
+    },
+    {
+      "name": "v1.5.0",
+      "sha": "6103e9a00dd062f466b5a275cbaea18a647c69a1",
+      "date": "2023-06-20T13:13:16Z"
+    },
+    {
+      "name": "v1.4.1",
+      "sha": "99e4f1ea5970177be5287da2529849cd5ee64696",
+      "date": "2022-11-21T13:48:25Z"
+    },
+    {
+      "name": "v1.5.0-RC1",
+      "sha": "24cce795f31d862c16c4c71409e50f1e337332af",
+      "date": "2023-06-16T12:56:03Z"
+    },
+    {
+      "name": "v1.4.1-RC1",
+      "sha": "e512022c8157e77ef85ebb7f5b51d3f3c87ae6a2",
+      "date": "2022-11-16T10:09:02Z"
+    },
+    {
+      "name": "v1.4.0",
+      "sha": "15d0309e159f36e0b3e2775e91a695a509c47542",
+      "date": "2022-10-12T13:24:08Z"
+    },
+    {
+      "name": "v1.4.0-RC2",
+      "sha": "438b7f0c8a08ed676bcda81300c06e13bfd4a038",
+      "date": "2022-10-10T12:38:32Z"
+    },
+    {
+      "name": "v1.4.0-RC1",
+      "sha": "b40738573e89fc4dcd33f8db3416a7388907db0e",
+      "date": "2022-10-04T13:14:41Z"
+    },
+    {
+      "name": "v1.3.2",
+      "sha": "80fa08f4ddcd92467fa7a53d17e2b83d458f49e2",
+      "date": "2022-08-25T12:06:35Z"
+    },
+    {
+      "name": "v1.3.2-RC1",
+      "sha": "b996eae252e2bed0f90d84385a23810a7064d677",
+      "date": "2022-08-24T19:05:02Z"
+    },
+    {
+      "name": "v1.3.1",
+      "sha": "7a95e32e58c3f183919079b786f89b11d289f0c3",
+      "date": "2022-06-30T13:43:07Z"
+    },
+    {
+      "name": "v1.3.0-RC1",
+      "sha": "b195671ff2a5f6b7afb5c55cf3121f3bce767a70",
+      "date": "2022-05-20T11:26:39Z"
+    },
+    {
+      "name": "v1.3.0",
+      "sha": "ce57d20a946c5a1ac5ec4b0be8c262f41527026d",
+      "date": "2022-05-23T12:59:29Z"
+    },
+    {
+      "name": "v1.3.1-RC1",
+      "sha": "fcf7e3a781dd741184e00294530d338e0e96364a",
+      "date": "2022-06-30T08:43:23Z"
+    },
+    {
+      "name": "v1.2.4",
+      "sha": "2dcaf09c7d2b76b099a977b8654ca921dad2524e",
+      "date": "2022-04-28T06:08:47Z"
+    },
+    {
+      "name": "v1.2.4-RC1",
+      "sha": "5e053f891d5942976c0303ac990b17c485ce27af",
+      "date": "2022-04-27T08:02:45Z"
+    },
+    {
+      "name": "v1.2.3-RC1",
+      "sha": "38584712624051fd2da3929eb130f836afd3b8df",
+      "date": "2022-04-13T14:02:41Z"
+    },
+    {
+      "name": "v1.2.3",
+      "sha": "3d945f7d3c1330249e722f6c80864ead8ca18610",
+      "date": "2022-04-14T14:01:44Z"
+    },
+    {
+      "name": "v1.2.2",
+      "sha": "89c3e3e8a4293909421d23025d7a26bb04b35a5e",
+      "date": "2022-01-18T14:27:38Z"
+    },
+    {
+      "name": "v1.2.1",
+      "sha": "1585f5ec5165b3e601cbf7533ce5f6143633b7c2",
+      "date": "2021-12-14T12:11:35Z"
+    },
+    {
+      "name": "v1.2.0",
+      "sha": "f7c048506abdf34a0de0c948474c4e58abe06291",
+      "date": "2021-12-10T10:20:41Z"
+    },
+    {
+      "name": "v1.2.0-RC1",
+      "sha": "b4925846211d45bebbb7b8b508ade46a5510bc48",
+      "date": "2021-12-07T15:53:30Z"
+    },
+    {
+      "name": "v1.0.5",
+      "sha": "73043acda487aabead663a2930e58bb5e4070285",
+      "date": "2021-08-02T12:55:54Z"
+    },
+    {
+      "name": "v1.0.0",
+      "sha": "fb5398fe7b7d69dd352685d477fbd01a86b64568",
+      "date": "2021-05-21T09:57:08Z"
+    },
+    {
+      "name": "v1.0.1",
+      "sha": "10c6068d30aa6d0523fc4b09b8c9a478ae2df33d",
+      "date": "2021-06-07T08:51:08Z"
+    },
+    {
+      "name": "v1.1.0",
+      "sha": "fd7721c0f218d8b745f99d24afd77d57dd70971a",
+      "date": "2021-09-22T09:47:15Z"
+    },
+    {
+      "name": "v0.9.0",
+      "sha": "1cfd625cb6b4b72e4dacb98df513e20b004b56ba",
+      "date": "2021-01-07T16:37:04Z"
+    },
+    {
+      "name": "v0.9.1",
+      "sha": "12ddb789df7e8fbf6d3c9544c69befc4928ee1de",
+      "date": "2021-02-08T20:41:54Z"
+    },
+    {
+      "name": "v0.9.2",
+      "sha": "6397366c9bf08ae7d631abe8373c4dd64e9e07f7",
+      "date": "2021-04-08T13:33:55Z"
+    },
+    {
+      "name": "v0.9.0-RC2",
+      "sha": "033f1321e489c7960bc4bfbba16f92a6d44e364d",
+      "date": "2020-12-29T16:21:32Z"
+    },
+    {
+      "name": "v0.9.0-RC1",
+      "sha": "f298a82daab895e74d77d071d0788b85da3613a4",
+      "date": "2020-12-22T16:46:16Z"
+    },
+    {
+      "name": "v0.7.1",
+      "sha": "2a5ca4c484b3b422424270d083ce92f842c59855",
+      "date": "2020-08-17T17:49:16Z"
+    },
+    {
+      "name": "v0.8.1",
+      "sha": "3e27a540b602ada5867f1ec413115eff509fbc5c",
+      "date": "2020-12-08T17:11:20Z"
+    },
+    {
+      "name": "v0.6.0",
+      "sha": "3dc5a592c5cd3cb73475defb5a9f4be7313d7700",
+      "date": "2020-05-28T18:53:37Z"
+    },
+    {
+      "name": "v0.6.1",
+      "sha": "ffe762e9dfa44a4743874b1bf5bd8a58b68ddf7b",
+      "date": "2020-06-09T16:13:00Z"
+    },
+    {
+      "name": "v0.6.2",
+      "sha": "75f0cc4a9200894e9fc618ffcea611a207c176cf",
+      "date": "2020-06-15T16:27:58Z"
+    },
+    {
+      "name": "v0.7.0",
+      "sha": "701b0f7f6c1adea0e190eff38fdd4a83d5d456e1",
+      "date": "2020-08-10T15:55:52Z"
+    },
+    {
+      "name": "v0.0.0-20200206",
+      "sha": "0ac64f6210cb1369f51e79983bed09bd0a05b8a9",
+      "date": "2020-02-06T12:12:50Z"
+    },
+    {
+      "name": "v0.6.0-RC2",
+      "sha": "f53e181622aa44629614ecf8ee25e95f03cb7e8e",
+      "date": "2020-05-19T07:59:17Z"
+    },
+    {
+      "name": "cnlc-2.2",
+      "sha": "69280e58bd02102de25a210d46f8bdfa7fe531f5",
+      "date": "2021-04-28T13:53:27Z"
+    },
+    {
+      "name": "v0.6.0-RC1",
+      "sha": "9af617b7a415ed13b126cab8f269cf3ba577d56c",
+      "date": "2020-05-11T17:53:13Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v0.6.0",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v0.6.0-RC2",
+      "previous_release": "v0.6.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.6.0-RC1",
+      "previous_release": "v0.6.0-RC2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.6.1",
+      "previous_release": "v0.6.0-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.6.2",
+      "previous_release": "v0.6.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.7.0",
+      "previous_release": "v0.6.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.7.1",
+      "previous_release": "v0.7.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.8.0",
+      "previous_release": "v0.7.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.9.0-RC1",
+      "previous_release": "v0.8.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.9.0-RC2",
+      "previous_release": "v0.9.0-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.9.0",
+      "previous_release": "v0.9.0-RC2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.9.1",
+      "previous_release": "v0.9.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.9.2",
+      "previous_release": "v0.9.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.0.0",
+      "previous_release": "v0.9.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.0.1",
+      "previous_release": "v1.0.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.0.5",
+      "previous_release": "v1.0.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.1.0",
+      "previous_release": "v1.0.5",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.2.0-RC1",
+      "previous_release": "v1.1.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.2.1",
+      "previous_release": "v1.2.0-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.2.2",
+      "previous_release": "v1.2.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.2.3-RC1",
+      "previous_release": "v1.2.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.2.3",
+      "previous_release": "v1.2.3-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.2.4-RC1",
+      "previous_release": "v1.2.3",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.2.4",
+      "previous_release": "v1.2.4-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.3.0-RC1",
+      "previous_release": "v1.2.4",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.3.0",
+      "previous_release": "v1.3.0-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.3.1-RC1",
+      "previous_release": "v1.3.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.3.1",
+      "previous_release": "v1.3.1-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.3.2-RC1",
+      "previous_release": "v1.3.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.3.2",
+      "previous_release": "v1.3.2-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.4.0-RC1",
+      "previous_release": "v1.3.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.4.0-RC2",
+      "previous_release": "v1.4.0-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.4.0",
+      "previous_release": "v1.4.0-RC2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.4.1-RC1",
+      "previous_release": "v1.4.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.4.1",
+      "previous_release": "v1.4.1-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.5.0-RC1",
+      "previous_release": "v1.4.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.5.0",
+      "previous_release": "v1.5.0-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9.0-RC1",
+      "previous_release": "v1.5.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9.0-RC2",
+      "previous_release": "v1.9.0-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9DOM.0",
+      "previous_release": "v1.9.0-RC2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9DOM.1-RC1",
+      "previous_release": "v1.9DOM.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9DOM.1",
+      "previous_release": "v1.9DOM.1-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9DOM.2-RC1",
+      "previous_release": "v1.9DOM.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9DOM.2",
+      "previous_release": "v1.9DOM.2-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9.3",
+      "previous_release": "v1.9DOM.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9.4",
+      "previous_release": "v1.9.3",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9.5",
+      "previous_release": "v1.9.4",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9.6",
+      "previous_release": "v1.9.5",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v2.0.0-RC1",
+      "previous_release": "v1.9.6",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9.7",
+      "previous_release": "v2.0.0-RC1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.10.0",
+      "previous_release": "v1.9.7",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.11.0-RC2",
+      "previous_release": "v1.10.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.11.0",
+      "previous_release": "v1.11.0-RC2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.11.1",
+      "previous_release": "v1.11.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.11.2",
+      "previous_release": "v1.11.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [
+      {
+        "id": 18978883836,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-31T16:30:54Z",
+        "updated_at": "2025-10-31T16:35:04Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18978883836"
+      },
+      {
+        "id": 18978883871,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-10-31T16:30:54Z",
+        "updated_at": "2025-10-31T16:48:37Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18978883871"
+      },
+      {
+        "id": 18695736259,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-21T19:46:12Z",
+        "updated_at": "2025-10-21T19:50:19Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18695736259"
+      },
+      {
+        "id": 18695736283,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-10-21T19:46:12Z",
+        "updated_at": "2025-10-21T20:03:49Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18695736283"
+      },
+      {
+        "id": 18643955599,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-20T06:19:09Z",
+        "updated_at": "2025-10-20T06:23:02Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18643955599"
+      },
+      {
+        "id": 18643955603,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-10-20T06:19:09Z",
+        "updated_at": "2025-10-20T06:36:23Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18643955603"
+      },
+      {
+        "id": 18612223179,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-18T06:47:55Z",
+        "updated_at": "2025-10-18T06:51:28Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18612223179"
+      },
+      {
+        "id": 18612223019,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-10-18T06:47:54Z",
+        "updated_at": "2025-10-18T07:04:40Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18612223019"
+      },
+      {
+        "id": 18283251209,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-10-06T13:54:26Z",
+        "updated_at": "2025-10-06T14:11:41Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18283251209"
+      },
+      {
+        "id": 18283251214,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-06T13:54:26Z",
+        "updated_at": "2025-10-06T13:57:57Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18283251214"
+      },
+      {
+        "id": 18241446787,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-04T07:32:30Z",
+        "updated_at": "2025-10-04T07:35:53Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18241446787"
+      },
+      {
+        "id": 18241446793,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-10-04T07:32:30Z",
+        "updated_at": "2025-10-04T07:49:27Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18241446793"
+      },
+      {
+        "id": 18167823700,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-10-01T15:49:02Z",
+        "updated_at": "2025-10-01T16:05:31Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18167823700"
+      },
+      {
+        "id": 18167823703,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-01T15:49:02Z",
+        "updated_at": "2025-10-01T15:52:28Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/18167823703"
+      }
+    ],
+    "2025-11": [],
+    "2025-12": [],
+    "2026-01": [],
+    "2026-02": [
+      {
+        "id": 21956263286,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "startup_failure",
+        "run_started_at": "2026-02-12T17:00:55Z",
+        "updated_at": "2026-02-12T17:00:56Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/21956263286"
+      },
+      {
+        "id": 21956263226,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-12T17:00:55Z",
+        "updated_at": "2026-02-12T17:04:25Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/21956263226"
+      },
+      {
+        "id": 21911432071,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-11T15:32:07Z",
+        "updated_at": "2026-02-11T15:41:56Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/21911432071"
+      },
+      {
+        "id": 21911432093,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-11T15:32:07Z",
+        "updated_at": "2026-02-11T15:35:48Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/21911432093"
+      },
+      {
+        "id": 21910143347,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-11T14:58:07Z",
+        "updated_at": "2026-02-11T14:58:35Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/21910143347"
+      },
+      {
+        "id": 21910143182,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-11T14:58:07Z",
+        "updated_at": "2026-02-11T15:01:28Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/21910143182"
+      },
+      {
+        "id": 21906758772,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-11T13:21:56Z",
+        "updated_at": "2026-02-11T13:22:23Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/21906758772"
+      },
+      {
+        "id": 21906758786,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-11T13:21:56Z",
+        "updated_at": "2026-02-11T13:25:22Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/21906758786"
+      }
+    ],
+    "2026-03": [],
+    "2026-04": [
+      {
+        "id": 25122424304,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-29T16:57:53Z",
+        "updated_at": "2026-04-29T17:19:03Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25122424304"
+      },
+      {
+        "id": 25122424294,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-29T16:57:53Z",
+        "updated_at": "2026-04-29T17:01:41Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25122424294"
+      },
+      {
+        "id": 25120451743,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-29T16:16:34Z",
+        "updated_at": "2026-04-29T16:37:17Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25120451743"
+      },
+      {
+        "id": 25120451745,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-29T16:16:34Z",
+        "updated_at": "2026-04-29T16:20:23Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25120451745"
+      },
+      {
+        "id": 25055790949,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T13:30:37Z",
+        "updated_at": "2026-04-28T13:34:20Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25055790949"
+      },
+      {
+        "id": 25055790955,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T13:30:37Z",
+        "updated_at": "2026-04-28T13:51:00Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25055790955"
+      },
+      {
+        "id": 25054545277,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T13:05:43Z",
+        "updated_at": "2026-04-28T13:09:19Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25054545277"
+      },
+      {
+        "id": 25054545323,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T13:05:43Z",
+        "updated_at": "2026-04-28T13:26:14Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25054545323"
+      },
+      {
+        "id": 25051172084,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T11:51:49Z",
+        "updated_at": "2026-04-28T11:55:31Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25051172084"
+      },
+      {
+        "id": 25051172095,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T11:51:49Z",
+        "updated_at": "2026-04-28T12:12:39Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25051172095"
+      },
+      {
+        "id": 24878404175,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-24T07:46:39Z",
+        "updated_at": "2026-04-24T07:50:14Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24878404175"
+      },
+      {
+        "id": 24878404218,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-24T07:46:39Z",
+        "updated_at": "2026-04-24T08:07:06Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24878404218"
+      },
+      {
+        "id": 24841571173,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-23T14:46:29Z",
+        "updated_at": "2026-04-23T14:50:08Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24841571173"
+      },
+      {
+        "id": 24841571249,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-23T14:46:29Z",
+        "updated_at": "2026-04-23T15:01:24Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24841571249"
+      },
+      {
+        "id": 24401624429,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T13:27:21Z",
+        "updated_at": "2026-04-14T13:46:37Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24401624429"
+      },
+      {
+        "id": 24401624226,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T13:27:21Z",
+        "updated_at": "2026-04-14T13:30:34Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24401624226"
+      },
+      {
+        "id": 24401571106,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T13:26:19Z",
+        "updated_at": "2026-04-14T13:40:31Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24401571106"
+      },
+      {
+        "id": 24401571123,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T13:26:19Z",
+        "updated_at": "2026-04-14T13:29:59Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24401571123"
+      },
+      {
+        "id": 24302049037,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T08:03:47Z",
+        "updated_at": "2026-04-12T08:07:27Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24302049037"
+      },
+      {
+        "id": 24302049047,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T08:03:47Z",
+        "updated_at": "2026-04-12T08:18:44Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24302049047"
+      },
+      {
+        "id": 24301306893,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T07:18:22Z",
+        "updated_at": "2026-04-12T07:21:39Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24301306893"
+      },
+      {
+        "id": 24301306891,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T07:18:22Z",
+        "updated_at": "2026-04-12T07:33:12Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24301306891"
+      },
+      {
+        "id": 24300896600,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-12T06:53:38Z",
+        "updated_at": "2026-04-12T07:07:55Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24300896600"
+      },
+      {
+        "id": 24300896599,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T06:53:38Z",
+        "updated_at": "2026-04-12T06:57:06Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24300896599"
+      },
+      {
+        "id": 24300790166,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T06:46:57Z",
+        "updated_at": "2026-04-12T06:50:08Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24300790166"
+      },
+      {
+        "id": 24300790168,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T06:46:57Z",
+        "updated_at": "2026-04-12T07:01:22Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24300790168"
+      },
+      {
+        "id": 24300436003,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T06:25:23Z",
+        "updated_at": "2026-04-12T06:40:42Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24300436003"
+      },
+      {
+        "id": 24300435999,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T06:25:23Z",
+        "updated_at": "2026-04-12T06:29:02Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24300435999"
+      },
+      {
+        "id": 24243954073,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T12:55:05Z",
+        "updated_at": "2026-04-10T13:09:46Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24243954073"
+      },
+      {
+        "id": 24243954066,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T12:55:05Z",
+        "updated_at": "2026-04-10T12:58:36Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24243954066"
+      },
+      {
+        "id": 24242718650,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T12:23:29Z",
+        "updated_at": "2026-04-10T12:26:57Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24242718650"
+      },
+      {
+        "id": 24242718673,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T12:23:29Z",
+        "updated_at": "2026-04-10T12:37:58Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24242718673"
+      },
+      {
+        "id": 24239734095,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T11:00:34Z",
+        "updated_at": "2026-04-10T11:04:10Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24239734095"
+      },
+      {
+        "id": 24239734065,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-10T11:00:34Z",
+        "updated_at": "2026-04-10T11:12:56Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24239734065"
+      },
+      {
+        "id": 24239185182,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-10T10:45:29Z",
+        "updated_at": "2026-04-10T10:53:54Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24239185182"
+      },
+      {
+        "id": 24239185171,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T10:45:29Z",
+        "updated_at": "2026-04-10T10:48:44Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24239185171"
+      },
+      {
+        "id": 24237429526,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-10T09:58:09Z",
+        "updated_at": "2026-04-10T10:06:34Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24237429526"
+      },
+      {
+        "id": 24237429499,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T09:58:09Z",
+        "updated_at": "2026-04-10T10:01:23Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24237429499"
+      },
+      {
+        "id": 24236186842,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T09:26:03Z",
+        "updated_at": "2026-04-10T09:29:17Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24236186842"
+      },
+      {
+        "id": 24236186926,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-10T09:26:03Z",
+        "updated_at": "2026-04-10T09:34:33Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24236186926"
+      },
+      {
+        "id": 24233566524,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T08:17:06Z",
+        "updated_at": "2026-04-10T08:20:31Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24233566524"
+      },
+      {
+        "id": 24233566558,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "startup_failure",
+        "run_started_at": "2026-04-10T08:17:06Z",
+        "updated_at": "2026-04-10T08:17:07Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/24233566558"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 25782539655,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-13T06:30:57Z",
+        "updated_at": "2026-05-13T06:33:56Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25782539655"
+      },
+      {
+        "id": 25782539759,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-13T06:30:57Z",
+        "updated_at": "2026-05-13T06:58:06Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25782539759"
+      },
+      {
+        "id": 25690707094,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-11T18:55:20Z",
+        "updated_at": "2026-05-11T18:59:05Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25690707094"
+      },
+      {
+        "id": 25690707155,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-11T18:55:20Z",
+        "updated_at": "2026-05-11T19:22:18Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25690707155"
+      },
+      {
+        "id": 25497188640,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-07T12:57:34Z",
+        "updated_at": "2026-05-07T13:01:28Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25497188640"
+      },
+      {
+        "id": 25497188798,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-07T12:57:34Z",
+        "updated_at": "2026-05-07T13:25:06Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25497188798"
+      },
+      {
+        "id": 25383378059,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T14:44:29Z",
+        "updated_at": "2026-05-05T14:48:13Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25383378059"
+      },
+      {
+        "id": 25383378086,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T14:44:29Z",
+        "updated_at": "2026-05-05T15:13:06Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25383378086"
+      },
+      {
+        "id": 25372730250,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T11:06:46Z",
+        "updated_at": "2026-05-05T11:10:34Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25372730250"
+      },
+      {
+        "id": 25372730249,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T11:06:46Z",
+        "updated_at": "2026-05-05T11:33:47Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25372730249"
+      },
+      {
+        "id": 25371930019,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T10:48:24Z",
+        "updated_at": "2026-05-05T11:16:02Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25371930019"
+      },
+      {
+        "id": 25371930012,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T10:48:24Z",
+        "updated_at": "2026-05-05T10:52:07Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25371930012"
+      },
+      {
+        "id": 25366442695,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T08:41:28Z",
+        "updated_at": "2026-05-05T09:01:45Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25366442695"
+      },
+      {
+        "id": 25366442734,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T08:41:28Z",
+        "updated_at": "2026-05-05T08:45:27Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25366442734"
+      },
+      {
+        "id": 25364743158,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T08:00:11Z",
+        "updated_at": "2026-05-05T08:04:22Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25364743158"
+      },
+      {
+        "id": 25364743170,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T08:00:11Z",
+        "updated_at": "2026-05-05T08:20:29Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/25364743170"
+      }
+    ],
+    "2026-06": [
+      {
+        "id": 28229644746,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-26T09:30:50Z",
+        "updated_at": "2026-06-26T09:53:30Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28229644746"
+      },
+      {
+        "id": 28229644599,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-26T09:30:50Z",
+        "updated_at": "2026-06-26T09:34:52Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28229644599"
+      },
+      {
+        "id": 28191445813,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-25T18:22:37Z",
+        "updated_at": "2026-06-25T18:50:21Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28191445813"
+      },
+      {
+        "id": 28191445480,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-25T18:22:37Z",
+        "updated_at": "2026-06-25T18:26:53Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28191445480"
+      },
+      {
+        "id": 28175662551,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-25T14:00:47Z",
+        "updated_at": "2026-06-25T14:28:45Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28175662551"
+      },
+      {
+        "id": 28175662278,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-25T14:00:47Z",
+        "updated_at": "2026-06-25T14:04:24Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28175662278"
+      },
+      {
+        "id": 28175631567,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-06-25T14:00:21Z",
+        "updated_at": "2026-06-25T14:27:07Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28175631567"
+      },
+      {
+        "id": 28175629688,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-25T14:00:20Z",
+        "updated_at": "2026-06-25T14:04:24Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28175629688"
+      },
+      {
+        "id": 26766859756,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T16:09:44Z",
+        "updated_at": "2026-06-01T16:37:51Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/26766859756"
+      },
+      {
+        "id": 26766859250,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T16:09:43Z",
+        "updated_at": "2026-06-01T16:13:48Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/26766859250"
+      }
+    ],
+    "2026-07": [
+      {
+        "id": 30539600746,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T11:42:27Z",
+        "updated_at": "2026-07-30T12:19:05Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30539600746"
+      },
+      {
+        "id": 30539600511,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T11:42:27Z",
+        "updated_at": "2026-07-30T11:46:29Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30539600511"
+      },
+      {
+        "id": 30534944905,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T10:30:41Z",
+        "updated_at": "2026-07-30T10:34:57Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30534944905"
+      },
+      {
+        "id": 30534945034,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T10:30:41Z",
+        "updated_at": "2026-07-30T10:59:46Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30534945034"
+      },
+      {
+        "id": 30529632717,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:10:31Z",
+        "updated_at": "2026-07-30T09:22:21Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529632717"
+      },
+      {
+        "id": 30529632669,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:10:31Z",
+        "updated_at": "2026-07-30T10:15:09Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529632669"
+      },
+      {
+        "id": 30529551194,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:09:19Z",
+        "updated_at": "2026-07-30T10:05:50Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529551194"
+      },
+      {
+        "id": 30529552082,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:09:19Z",
+        "updated_at": "2026-07-30T09:22:06Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529552082"
+      },
+      {
+        "id": 30529472632,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:08:06Z",
+        "updated_at": "2026-07-30T09:56:42Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529472632"
+      },
+      {
+        "id": 30529472420,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:08:06Z",
+        "updated_at": "2026-07-30T09:20:15Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529472420"
+      },
+      {
+        "id": 30529293933,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:05:29Z",
+        "updated_at": "2026-07-30T09:48:35Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529293933"
+      },
+      {
+        "id": 30529293716,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:05:29Z",
+        "updated_at": "2026-07-30T09:18:23Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529293716"
+      },
+      {
+        "id": 30529143050,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:03:17Z",
+        "updated_at": "2026-07-30T09:49:18Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529143050"
+      },
+      {
+        "id": 30529142691,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T09:03:16Z",
+        "updated_at": "2026-07-30T09:08:58Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30529142691"
+      },
+      {
+        "id": 30528493536,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:53:54Z",
+        "updated_at": "2026-07-30T09:39:39Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30528493536"
+      },
+      {
+        "id": 30528493371,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:53:54Z",
+        "updated_at": "2026-07-30T09:04:01Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30528493371"
+      },
+      {
+        "id": 30528488169,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:53:50Z",
+        "updated_at": "2026-07-30T09:01:30Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30528488169"
+      },
+      {
+        "id": 30528488586,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:53:50Z",
+        "updated_at": "2026-07-30T09:38:21Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30528488586"
+      },
+      {
+        "id": 30528397980,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:52:29Z",
+        "updated_at": "2026-07-30T08:57:08Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30528397980"
+      },
+      {
+        "id": 30528398105,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:52:29Z",
+        "updated_at": "2026-07-30T09:37:59Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30528398105"
+      },
+      {
+        "id": 30528365528,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:52:00Z",
+        "updated_at": "2026-07-30T08:56:15Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30528365528"
+      },
+      {
+        "id": 30528365894,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:52:00Z",
+        "updated_at": "2026-07-30T09:36:19Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30528365894"
+      },
+      {
+        "id": 30525334027,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:05:57Z",
+        "updated_at": "2026-07-30T08:36:44Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30525334027"
+      },
+      {
+        "id": 30525333694,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:05:56Z",
+        "updated_at": "2026-07-30T08:10:22Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30525333694"
+      },
+      {
+        "id": 30525301972,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:05:29Z",
+        "updated_at": "2026-07-30T08:34:02Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30525301972"
+      },
+      {
+        "id": 30525301695,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:05:28Z",
+        "updated_at": "2026-07-30T08:08:55Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30525301695"
+      },
+      {
+        "id": 30525169618,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:03:52Z",
+        "updated_at": "2026-07-30T08:35:29Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30525169618"
+      },
+      {
+        "id": 30525169466,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T08:03:52Z",
+        "updated_at": "2026-07-30T08:08:07Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30525169466"
+      },
+      {
+        "id": 30524793846,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T07:58:31Z",
+        "updated_at": "2026-07-30T08:32:45Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30524793846"
+      },
+      {
+        "id": 30524793690,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T07:58:31Z",
+        "updated_at": "2026-07-30T08:02:50Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30524793690"
+      },
+      {
+        "id": 30523860198,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T07:43:10Z",
+        "updated_at": "2026-07-30T08:09:51Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30523860198"
+      },
+      {
+        "id": 30523859968,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-30T07:43:09Z",
+        "updated_at": "2026-07-30T07:47:17Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30523859968"
+      },
+      {
+        "id": 30469545717,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-29T16:11:23Z",
+        "updated_at": "2026-07-29T16:15:33Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30469545717"
+      },
+      {
+        "id": 30469546308,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-29T16:11:23Z",
+        "updated_at": "2026-07-29T16:40:07Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30469546308"
+      },
+      {
+        "id": 30467610695,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-29T15:47:41Z",
+        "updated_at": "2026-07-29T16:15:12Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30467610695"
+      },
+      {
+        "id": 30467607976,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-29T15:47:39Z",
+        "updated_at": "2026-07-29T15:52:09Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30467607976"
+      },
+      {
+        "id": 28933776347,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T09:53:35Z",
+        "updated_at": "2026-07-08T10:22:15Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28933776347"
+      },
+      {
+        "id": 28933776084,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T09:53:34Z",
+        "updated_at": "2026-07-08T09:57:45Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/28933776084"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 30790518645,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-03T06:32:07Z",
+        "updated_at": "2026-08-03T06:58:09Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30790518645"
+      },
+      {
+        "id": 30790518407,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-03T06:32:06Z",
+        "updated_at": "2026-08-03T06:36:15Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/30790518407"
+      }
+    ],
+    "2026-09": [
+      {
+        "id": 33678598521,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T20:19:36Z",
+        "updated_at": "2026-09-02T20:22:45Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33678598521"
+      },
+      {
+        "id": 33678598961,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T20:19:36Z",
+        "updated_at": "2026-09-02T20:46:54Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33678598961"
+      },
+      {
+        "id": 33678591377,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T20:19:32Z",
+        "updated_at": "2026-09-02T20:23:43Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33678591377"
+      },
+      {
+        "id": 33678591804,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T20:19:32Z",
+        "updated_at": "2026-09-02T20:47:22Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33678591804"
+      },
+      {
+        "id": 33654233785,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T16:19:48Z",
+        "updated_at": "2026-09-02T16:25:48Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654233785"
+      },
+      {
+        "id": 33654234093,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T16:19:48Z",
+        "updated_at": "2026-09-02T17:16:41Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654234093"
+      },
+      {
+        "id": 33654217468,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T16:19:38Z",
+        "updated_at": "2026-09-02T17:07:52Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654217468"
+      },
+      {
+        "id": 33654217367,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T16:19:38Z",
+        "updated_at": "2026-09-02T16:25:22Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654217367"
+      },
+      {
+        "id": 33654209382,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T16:19:33Z",
+        "updated_at": "2026-09-02T16:24:22Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654209382"
+      },
+      {
+        "id": 33654209525,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T16:19:33Z",
+        "updated_at": "2026-09-02T16:59:10Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654209525"
+      },
+      {
+        "id": 33654202755,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T16:19:29Z",
+        "updated_at": "2026-09-02T16:50:59Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654202755"
+      },
+      {
+        "id": 33654201830,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T16:19:28Z",
+        "updated_at": "2026-09-02T16:23:38Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654201830"
+      },
+      {
+        "id": 33654192624,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T16:19:23Z",
+        "updated_at": "2026-09-02T16:49:12Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654192624"
+      },
+      {
+        "id": 33654192443,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T16:19:23Z",
+        "updated_at": "2026-09-02T16:22:18Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654192443"
+      },
+      {
+        "id": 33654186830,
+        "name": "pushCI",
+        "workflow_id": 41047,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T16:19:19Z",
+        "updated_at": "2026-09-02T16:49:13Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654186830"
+      },
+      {
+        "id": 33654185808,
+        "name": "CodeQL",
+        "workflow_id": 93516121,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T16:19:19Z",
+        "updated_at": "2026-09-02T16:23:09Z",
+        "html_url": "https://github.com/codenotary/immudb/actions/runs/33654185808"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1703 @@
+{
+  "repository": {
+    "full_name": "arogozhnikov/einops",
+    "stars": 9615,
+    "language": "Python",
+    "default_branch": "main",
+    "created_at": "2018-09-22T00:45:08Z"
+  },
+  "releases": [
+    {
+      "id": 13768175,
+      "tag_name": "v0.1",
+      "name": "Initial release (v0.1)",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-11-01T00:58:32Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.1"
+    },
+    {
+      "id": 23701619,
+      "tag_name": "v0.2",
+      "name": "Jax support + updated testing code",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-02-15T11:09:54Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.2"
+    },
+    {
+      "id": 30894874,
+      "tag_name": "v0.3",
+      "name": "Einops v0.3: repeat + more friendly requirements + ...",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-09-08T08:33:29Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.3"
+    },
+    {
+      "id": 48779238,
+      "tag_name": "v0.3.2",
+      "name": "Einops v0.3.2: updated documentation and tutorials, keras -> tf.keras",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-08-31T22:49:08Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.3.2"
+    },
+    {
+      "id": 57344108,
+      "tag_name": "v0.4.0",
+      "name": "Einops v0.4.0: EinMix and torch.jit.script ",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-18T07:30:54Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.4.0"
+    },
+    {
+      "id": 60971502,
+      "tag_name": "v0.4.1",
+      "name": "Einops v0.4.1: Avoid importing numpy if it is not required",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-03-04T09:31:30Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.4.1"
+    },
+    {
+      "id": 78813547,
+      "tag_name": "v0.5.0",
+      "name": "Einops v0.5.0: einsum + support of flax and oneflow.",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-03T06:38:37Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.5.0"
+    },
+    {
+      "id": 82601811,
+      "tag_name": "v0.6.0",
+      "name": "V0.6.0: pack and unpack",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-09T20:32:56Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.6.0"
+    },
+    {
+      "id": 99997228,
+      "tag_name": "v0.6.1",
+      "name": "V0.6.1: support paddle, support pytorch.compile ",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-19T04:13:12Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.6.1"
+    },
+    {
+      "id": 111072022,
+      "tag_name": "v0.6.2rc0",
+      "name": "V0.6.2rc0: drop python 3.7 + preserve axis identity",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-07-05T08:17:56Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.6.2rc0"
+    },
+    {
+      "id": 111480819,
+      "tag_name": "v0.7.0rc1",
+      "name": "V0.7.0rc1: torch.compile, preserve axis identity, array api",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-07-08T02:54:04Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.7.0rc1"
+    },
+    {
+      "id": 117103112,
+      "tag_name": "v0.7.0rc2",
+      "name": "V0.7.0rc2: allow dynamic shapes in torch.compile",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-08-14T05:41:41Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.7.0rc2"
+    },
+    {
+      "id": 123228660,
+      "tag_name": "v0.7.0",
+      "name": "V0.7.0: torch.compile, preserve axis identity, array api",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-01T01:13:00Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.7.0"
+    },
+    {
+      "id": 153118496,
+      "tag_name": "v0.8.0",
+      "name": "v0.8.0: tinygrad, small fixes and updates",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-28T04:07:18Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.8.0"
+    },
+    {
+      "id": 199224143,
+      "tag_name": "v0.8.1",
+      "name": "v0.8.1 Multiple improvements",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-02-09T03:16:30Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.8.1"
+    },
+    {
+      "id": 279812279,
+      "tag_name": "v0.8.2",
+      "name": "v0.8.2: full MLX backend, rely on torch.compile, set python 3.9 as minimum",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-26T04:12:47Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.8.2"
+    },
+    {
+      "id": 349092548,
+      "tag_name": "v0.9.0dev",
+      "name": "v0.9.0dev: dev. release for public testing (mostly typing changes)",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-07-05T04:47:13Z",
+      "html_url": "https://github.com/arogozhnikov/einops/releases/tag/v0.9.0dev"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.8.0",
+      "sha": "fe9d81d577dec5a224d572a5bc7d44ab8bd914eb",
+      "date": "2024-04-28T03:56:14Z"
+    },
+    {
+      "name": "v0.8.2",
+      "sha": "8e911db71f2e693a0c434b041180388c685ed06f",
+      "date": "2026-01-22T17:31:08Z"
+    },
+    {
+      "name": "v0.8.1",
+      "sha": "ad2c8d67d08cbebb45e1aff2be21dc88635fc695",
+      "date": "2025-02-09T03:15:50Z"
+    },
+    {
+      "name": "v0.9.0dev",
+      "sha": "e0d5eb4fd535945ff65d309206d0f1754a926821",
+      "date": "2026-07-05T04:45:48Z"
+    },
+    {
+      "name": "v0.7.0rc2",
+      "sha": "bc895398cd6ac866a913357c4db24a562214e5ae",
+      "date": "2023-08-14T05:02:13Z"
+    },
+    {
+      "name": "v0.7.0",
+      "sha": "5b960621df194a1373f1f8419db83338b3620327",
+      "date": "2023-10-01T01:03:48Z"
+    },
+    {
+      "name": "v0.7.0rc1",
+      "sha": "f656128c189d47f63228715f947186d02307b863",
+      "date": "2023-07-08T02:43:39Z"
+    },
+    {
+      "name": "v0.6.2rc0",
+      "sha": "bcab6adf0172664a7862d000d388de698de97131",
+      "date": "2023-07-05T08:12:40Z"
+    },
+    {
+      "name": "v0.4.0",
+      "sha": "3bbf32a3c50a050c8fbdc4fb27516ca5b465f4e8",
+      "date": "2022-01-18T07:23:33Z"
+    },
+    {
+      "name": "v0.5.0",
+      "sha": "4cd9e16208dcb01571a5d2a7e87c89de34b603f9",
+      "date": "2022-10-03T06:37:11Z"
+    },
+    {
+      "name": "v0.4.1",
+      "sha": "821861ad4013486fd77ee3cd217fdd2b80378922",
+      "date": "2022-03-04T09:16:23Z"
+    },
+    {
+      "name": "v0.6.1",
+      "sha": "18758e8a710f05133cbe3e58260d86e3fd4f0b5f",
+      "date": "2023-04-19T04:09:37Z"
+    },
+    {
+      "name": "v0.2",
+      "sha": "00759ee327c4dec0cde3a0b93e50fe641c4dc48c",
+      "date": "2020-02-15T10:47:09Z"
+    },
+    {
+      "name": "v0.3",
+      "sha": "34c88bfa016c2d8c8c9c7b65b5ffe67c23690678",
+      "date": "2020-09-11T04:59:07Z"
+    },
+    {
+      "name": "v0.3.2",
+      "sha": "1284270fd91351f1db0e2667fbca57028149efa0",
+      "date": "2021-08-31T21:28:43Z"
+    },
+    {
+      "name": "v0.1",
+      "sha": "731a76b5e9717e5327dea5eed6ab8f517b19e466",
+      "date": "2018-11-01T00:32:35Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v0.1",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v0.2",
+      "previous_release": "v0.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.3",
+      "previous_release": "v0.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.3.2",
+      "previous_release": "v0.3",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.4.0",
+      "previous_release": "v0.3.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.4.1",
+      "previous_release": "v0.4.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.5.0",
+      "previous_release": "v0.4.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.6.0",
+      "previous_release": "v0.5.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.6.1",
+      "previous_release": "v0.6.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.6.2rc0",
+      "previous_release": "v0.6.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.7.0rc1",
+      "previous_release": "v0.6.2rc0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.7.0rc2",
+      "previous_release": "v0.7.0rc1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.7.0",
+      "previous_release": "v0.7.0rc2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.8.0",
+      "previous_release": "v0.7.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.8.1",
+      "previous_release": "v0.8.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.8.2",
+      "previous_release": "v0.8.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v0.9.0dev",
+      "previous_release": "v0.8.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [],
+    "2025-11": [
+      {
+        "id": 19628333398,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T08:46:35Z",
+        "updated_at": "2025-11-24T08:47:30Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/19628333398"
+      },
+      {
+        "id": 19628333340,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T08:46:35Z",
+        "updated_at": "2025-11-24T08:48:58Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/19628333340"
+      },
+      {
+        "id": 19628333332,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T08:46:35Z",
+        "updated_at": "2025-11-24T08:49:42Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/19628333332"
+      },
+      {
+        "id": 19627755724,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T08:22:02Z",
+        "updated_at": "2025-11-24T08:22:58Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/19627755724"
+      },
+      {
+        "id": 19627755717,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T08:22:02Z",
+        "updated_at": "2025-11-24T08:24:28Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/19627755717"
+      },
+      {
+        "id": 19627755710,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T08:22:02Z",
+        "updated_at": "2025-11-24T08:25:10Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/19627755710"
+      }
+    ],
+    "2025-12": [],
+    "2026-01": [
+      {
+        "id": 21347619107,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T05:45:43Z",
+        "updated_at": "2026-01-26T05:46:40Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21347619107"
+      },
+      {
+        "id": 21347619116,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T05:45:43Z",
+        "updated_at": "2026-01-26T05:46:43Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21347619116"
+      },
+      {
+        "id": 21347619106,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T05:45:43Z",
+        "updated_at": "2026-01-26T05:48:18Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21347619106"
+      },
+      {
+        "id": 21346457526,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T04:36:50Z",
+        "updated_at": "2026-01-26T04:38:05Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21346457526"
+      },
+      {
+        "id": 21346457524,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T04:36:50Z",
+        "updated_at": "2026-01-26T04:39:12Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21346457524"
+      },
+      {
+        "id": 21346457525,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T04:36:50Z",
+        "updated_at": "2026-01-26T04:37:49Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21346457525"
+      },
+      {
+        "id": 21346339516,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T04:29:55Z",
+        "updated_at": "2026-01-26T04:30:48Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21346339516"
+      },
+      {
+        "id": 21346339526,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T04:29:55Z",
+        "updated_at": "2026-01-26T04:30:55Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21346339526"
+      },
+      {
+        "id": 21346339524,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T04:29:55Z",
+        "updated_at": "2026-01-26T04:32:26Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21346339524"
+      },
+      {
+        "id": 21258332334,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T17:31:12Z",
+        "updated_at": "2026-01-22T17:32:10Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21258332334"
+      },
+      {
+        "id": 21258332354,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T17:31:12Z",
+        "updated_at": "2026-01-22T17:32:06Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21258332354"
+      },
+      {
+        "id": 21258332323,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T17:31:12Z",
+        "updated_at": "2026-01-22T17:33:45Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21258332323"
+      },
+      {
+        "id": 21241208984,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T08:21:41Z",
+        "updated_at": "2026-01-22T08:22:34Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21241208984"
+      },
+      {
+        "id": 21241208967,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T08:21:41Z",
+        "updated_at": "2026-01-22T08:22:41Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21241208967"
+      },
+      {
+        "id": 21241208990,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T08:21:41Z",
+        "updated_at": "2026-01-22T08:24:11Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21241208990"
+      },
+      {
+        "id": 21240753507,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T08:05:04Z",
+        "updated_at": "2026-01-22T08:05:57Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21240753507"
+      },
+      {
+        "id": 21240753484,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T08:05:04Z",
+        "updated_at": "2026-01-22T08:06:07Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21240753484"
+      },
+      {
+        "id": 21240753482,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T08:05:04Z",
+        "updated_at": "2026-01-22T08:07:36Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/21240753482"
+      },
+      {
+        "id": 20757733115,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T18:18:06Z",
+        "updated_at": "2026-01-06T18:19:07Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/20757733115"
+      },
+      {
+        "id": 20757733116,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T18:18:06Z",
+        "updated_at": "2026-01-06T18:19:00Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/20757733116"
+      },
+      {
+        "id": 20757733104,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T18:18:06Z",
+        "updated_at": "2026-01-06T18:20:19Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/20757733104"
+      },
+      {
+        "id": 20736850865,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T03:20:36Z",
+        "updated_at": "2026-01-06T03:21:30Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/20736850865"
+      },
+      {
+        "id": 20736850852,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T03:20:36Z",
+        "updated_at": "2026-01-06T03:21:38Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/20736850852"
+      },
+      {
+        "id": 20736850861,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T03:20:36Z",
+        "updated_at": "2026-01-06T03:23:08Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/20736850861"
+      }
+    ],
+    "2026-02": [
+      {
+        "id": 22207806766,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T01:40:56Z",
+        "updated_at": "2026-02-20T01:41:57Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22207806766"
+      },
+      {
+        "id": 22207806770,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T01:40:56Z",
+        "updated_at": "2026-02-20T01:41:52Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22207806770"
+      },
+      {
+        "id": 22207806768,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-20T01:40:56Z",
+        "updated_at": "2026-02-20T01:43:29Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22207806768"
+      },
+      {
+        "id": 22206918199,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T01:02:33Z",
+        "updated_at": "2026-02-20T01:03:26Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22206918199"
+      },
+      {
+        "id": 22206918193,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T01:02:33Z",
+        "updated_at": "2026-02-20T01:03:31Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22206918193"
+      },
+      {
+        "id": 22206918190,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-20T01:02:33Z",
+        "updated_at": "2026-02-20T01:03:59Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22206918190"
+      },
+      {
+        "id": 22032253172,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-15T08:07:51Z",
+        "updated_at": "2026-02-15T08:08:40Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22032253172"
+      },
+      {
+        "id": 22032253177,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-15T08:07:51Z",
+        "updated_at": "2026-02-15T08:08:50Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22032253177"
+      },
+      {
+        "id": 22032253180,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-15T08:07:51Z",
+        "updated_at": "2026-02-15T08:10:17Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/22032253180"
+      }
+    ],
+    "2026-03": [],
+    "2026-04": [
+      {
+        "id": 24636887139,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T19:09:59Z",
+        "updated_at": "2026-04-19T19:10:50Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24636887139"
+      },
+      {
+        "id": 24636887129,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T19:09:59Z",
+        "updated_at": "2026-04-19T19:10:54Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24636887129"
+      },
+      {
+        "id": 24636887142,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T19:09:59Z",
+        "updated_at": "2026-04-19T19:12:28Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24636887142"
+      },
+      {
+        "id": 24617899562,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T01:11:10Z",
+        "updated_at": "2026-04-19T01:12:02Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24617899562"
+      },
+      {
+        "id": 24617899558,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T01:11:10Z",
+        "updated_at": "2026-04-19T01:12:13Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24617899558"
+      },
+      {
+        "id": 24617899553,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T01:11:10Z",
+        "updated_at": "2026-04-19T01:13:33Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24617899553"
+      },
+      {
+        "id": 24611741551,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T19:04:28Z",
+        "updated_at": "2026-04-18T19:05:19Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24611741551"
+      },
+      {
+        "id": 24611741557,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T19:04:28Z",
+        "updated_at": "2026-04-18T19:05:27Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24611741557"
+      },
+      {
+        "id": 24611741552,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T19:04:28Z",
+        "updated_at": "2026-04-18T19:06:53Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24611741552"
+      },
+      {
+        "id": 24611323443,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T18:41:03Z",
+        "updated_at": "2026-04-18T18:41:49Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24611323443"
+      },
+      {
+        "id": 24611323444,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T18:41:03Z",
+        "updated_at": "2026-04-18T18:42:08Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24611323444"
+      },
+      {
+        "id": 24611323445,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T18:41:03Z",
+        "updated_at": "2026-04-18T18:43:26Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24611323445"
+      },
+      {
+        "id": 24610800239,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T18:12:28Z",
+        "updated_at": "2026-04-18T18:13:19Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24610800239"
+      },
+      {
+        "id": 24610800242,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T18:12:28Z",
+        "updated_at": "2026-04-18T18:13:29Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24610800242"
+      },
+      {
+        "id": 24610800244,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-18T18:12:28Z",
+        "updated_at": "2026-04-18T18:14:55Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24610800244"
+      },
+      {
+        "id": 24165424614,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T00:13:10Z",
+        "updated_at": "2026-04-09T00:13:58Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24165424614"
+      },
+      {
+        "id": 24165424621,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T00:13:10Z",
+        "updated_at": "2026-04-09T00:14:09Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24165424621"
+      },
+      {
+        "id": 24165424622,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T00:13:10Z",
+        "updated_at": "2026-04-09T00:15:37Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/24165424622"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 26708631428,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:14:22Z",
+        "updated_at": "2026-05-31T09:15:06Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26708631428"
+      },
+      {
+        "id": 26708631425,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:14:22Z",
+        "updated_at": "2026-05-31T09:15:18Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26708631425"
+      },
+      {
+        "id": 26708631477,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:14:22Z",
+        "updated_at": "2026-05-31T09:20:05Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26708631477"
+      },
+      {
+        "id": 26354832271,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T07:11:49Z",
+        "updated_at": "2026-05-24T07:12:41Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26354832271"
+      },
+      {
+        "id": 26354832272,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T07:11:49Z",
+        "updated_at": "2026-05-24T07:12:32Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26354832272"
+      },
+      {
+        "id": 26354832257,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T07:11:49Z",
+        "updated_at": "2026-05-24T07:17:42Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26354832257"
+      },
+      {
+        "id": 26353759933,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T06:14:30Z",
+        "updated_at": "2026-05-24T06:15:17Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26353759933"
+      },
+      {
+        "id": 26353759934,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T06:14:30Z",
+        "updated_at": "2026-05-24T06:15:15Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26353759934"
+      },
+      {
+        "id": 26353759935,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T06:14:30Z",
+        "updated_at": "2026-05-24T06:20:13Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26353759935"
+      },
+      {
+        "id": 26353576582,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T06:04:23Z",
+        "updated_at": "2026-05-24T06:05:10Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26353576582"
+      },
+      {
+        "id": 26353576581,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T06:04:23Z",
+        "updated_at": "2026-05-24T06:05:11Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26353576581"
+      },
+      {
+        "id": 26353576588,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T06:04:23Z",
+        "updated_at": "2026-05-24T06:10:10Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26353576588"
+      },
+      {
+        "id": 26350106363,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T02:51:17Z",
+        "updated_at": "2026-05-24T02:52:01Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26350106363"
+      },
+      {
+        "id": 26350106351,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T02:51:17Z",
+        "updated_at": "2026-05-24T02:52:01Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26350106351"
+      },
+      {
+        "id": 26350106362,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T02:51:17Z",
+        "updated_at": "2026-05-24T02:56:08Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26350106362"
+      },
+      {
+        "id": 26350018385,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T02:46:25Z",
+        "updated_at": "2026-05-24T02:47:18Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26350018385"
+      },
+      {
+        "id": 26350018356,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T02:46:25Z",
+        "updated_at": "2026-05-24T02:47:12Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26350018356"
+      },
+      {
+        "id": 26350018371,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T02:46:25Z",
+        "updated_at": "2026-05-24T02:51:22Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26350018371"
+      },
+      {
+        "id": 26348595182,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T01:30:24Z",
+        "updated_at": "2026-05-24T01:31:15Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26348595182"
+      },
+      {
+        "id": 26348595188,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T01:30:24Z",
+        "updated_at": "2026-05-24T01:31:20Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26348595188"
+      },
+      {
+        "id": 26348595190,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T01:30:24Z",
+        "updated_at": "2026-05-24T01:35:47Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26348595190"
+      },
+      {
+        "id": 26328311595,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:38:34Z",
+        "updated_at": "2026-05-23T08:39:30Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26328311595"
+      },
+      {
+        "id": 26328311602,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:38:34Z",
+        "updated_at": "2026-05-23T08:39:24Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26328311602"
+      },
+      {
+        "id": 26328311601,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:38:34Z",
+        "updated_at": "2026-05-23T08:44:21Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26328311601"
+      },
+      {
+        "id": 26328286864,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:37:13Z",
+        "updated_at": "2026-05-23T08:42:56Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26328286864"
+      },
+      {
+        "id": 26328286858,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:37:13Z",
+        "updated_at": "2026-05-23T08:38:01Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26328286858"
+      },
+      {
+        "id": 26328286849,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:37:13Z",
+        "updated_at": "2026-05-23T08:38:12Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26328286849"
+      },
+      {
+        "id": 26327983328,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:21:42Z",
+        "updated_at": "2026-05-23T08:22:42Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327983328"
+      },
+      {
+        "id": 26327983337,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:21:42Z",
+        "updated_at": "2026-05-23T08:22:31Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327983337"
+      },
+      {
+        "id": 26327983321,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:21:42Z",
+        "updated_at": "2026-05-23T08:27:25Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327983321"
+      },
+      {
+        "id": 26327846718,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:14:46Z",
+        "updated_at": "2026-05-23T08:15:42Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327846718"
+      },
+      {
+        "id": 26327846712,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:14:46Z",
+        "updated_at": "2026-05-23T08:15:34Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327846712"
+      },
+      {
+        "id": 26327846711,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:14:46Z",
+        "updated_at": "2026-05-23T08:20:12Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327846711"
+      },
+      {
+        "id": 26327832194,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:13:59Z",
+        "updated_at": "2026-05-23T08:14:56Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327832194"
+      },
+      {
+        "id": 26327832196,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:13:59Z",
+        "updated_at": "2026-05-23T08:14:48Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327832196"
+      },
+      {
+        "id": 26327832193,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:13:59Z",
+        "updated_at": "2026-05-23T08:19:21Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327832193"
+      },
+      {
+        "id": 26327786015,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:11:38Z",
+        "updated_at": "2026-05-23T08:12:36Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327786015"
+      },
+      {
+        "id": 26327785997,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:11:37Z",
+        "updated_at": "2026-05-23T08:12:26Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327785997"
+      },
+      {
+        "id": 26327786009,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T08:11:37Z",
+        "updated_at": "2026-05-23T08:16:59Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/26327786009"
+      }
+    ],
+    "2026-06": [],
+    "2026-07": [
+      {
+        "id": 28729833337,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T04:45:51Z",
+        "updated_at": "2026-07-05T04:46:34Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/28729833337"
+      },
+      {
+        "id": 28729833343,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T04:45:51Z",
+        "updated_at": "2026-07-05T04:46:41Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/28729833343"
+      },
+      {
+        "id": 28729833349,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T04:45:51Z",
+        "updated_at": "2026-07-05T04:51:11Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/28729833349"
+      },
+      {
+        "id": 28729378080,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T04:23:42Z",
+        "updated_at": "2026-07-05T04:24:29Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/28729378080"
+      },
+      {
+        "id": 28729378094,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T04:23:42Z",
+        "updated_at": "2026-07-05T04:24:26Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/28729378094"
+      },
+      {
+        "id": 28729378084,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T04:23:42Z",
+        "updated_at": "2026-07-05T04:28:26Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/28729378084"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 32947447794,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T08:22:48Z",
+        "updated_at": "2026-08-26T08:23:25Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32947447794"
+      },
+      {
+        "id": 32947447731,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T08:22:48Z",
+        "updated_at": "2026-08-26T08:23:40Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32947447731"
+      },
+      {
+        "id": 32947447695,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T08:22:48Z",
+        "updated_at": "2026-08-26T08:27:12Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32947447695"
+      },
+      {
+        "id": 32940909177,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T07:03:26Z",
+        "updated_at": "2026-08-26T07:04:06Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32940909177"
+      },
+      {
+        "id": 32940909273,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T07:03:26Z",
+        "updated_at": "2026-08-26T07:04:27Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32940909273"
+      },
+      {
+        "id": 32940909147,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T07:03:26Z",
+        "updated_at": "2026-08-26T07:06:52Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32940909147"
+      },
+      {
+        "id": 32937987252,
+        "name": "Test notebooks",
+        "workflow_id": 117649291,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T06:24:02Z",
+        "updated_at": "2026-08-26T06:24:52Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32937987252"
+      },
+      {
+        "id": 32937987221,
+        "name": "deploy-docs",
+        "workflow_id": 117844772,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T06:24:02Z",
+        "updated_at": "2026-08-26T06:24:33Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32937987221"
+      },
+      {
+        "id": 32937987197,
+        "name": "Run tests",
+        "workflow_id": 9917516,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T06:24:02Z",
+        "updated_at": "2026-08-26T06:28:07Z",
+        "html_url": "https://github.com/arogozhnikov/einops/actions/runs/32937987197"
+      }
+    ],
+    "2026-09": []
+  }
+}

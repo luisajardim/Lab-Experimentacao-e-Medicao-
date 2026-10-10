@@ -73,6 +73,8 @@ class SQLiteStore:
         self._init_schema()
 
     def _init_schema(self) -> None:
+        self._conn.execute("PRAGMA journal_mode=WAL;")
+        self._conn.execute("PRAGMA busy_timeout=30000;")
         self._conn.executescript(
             """
             CREATE TABLE IF NOT EXISTS responses (

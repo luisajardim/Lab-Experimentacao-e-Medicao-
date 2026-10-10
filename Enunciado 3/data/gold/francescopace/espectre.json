@@ -1,0 +1,1862 @@
+{
+  "repository": {
+    "full_name": "francescopace/espectre",
+    "stars": 9491,
+    "language": "Python",
+    "default_branch": "main",
+    "created_at": "2025-10-26T10:41:51Z"
+  },
+  "releases": [
+    {
+      "id": 262729944,
+      "tag_name": "1.2.0",
+      "name": "v1.2.0 - Simplified Architecture & MVS Segmentation",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-16T04:32:50Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/1.2.0"
+    },
+    {
+      "id": 264480900,
+      "tag_name": "1.3.0",
+      "name": "v1.3.0 - ESP32-C6 Platform Support",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-22T00:06:46Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/1.3.0"
+    },
+    {
+      "id": 265866417,
+      "tag_name": "1.4.0",
+      "name": "v1.4.0 - Major Refactoring - Technical Debt Reduction",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-28T00:13:29Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/1.4.0"
+    },
+    {
+      "id": 267229487,
+      "tag_name": "1.5.0",
+      "name": "v1.5.0 - Automatic Subcarrier Selection",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-03T20:59:49Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/1.5.0"
+    },
+    {
+      "id": 268043316,
+      "tag_name": "2.0.0",
+      "name": "v2.0.0 - ESPHome Native Integration",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-06T23:09:31Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.0.0"
+    },
+    {
+      "id": 269310485,
+      "tag_name": "2.1.0",
+      "name": "v2.1.0 - \"Made for ESPHome\" Compliance",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-10T22:42:16Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.1.0"
+    },
+    {
+      "id": 271818446,
+      "tag_name": "2.2.0",
+      "name": "v2.2.0 - Gain Lock, Low-Pass Filter & ML Data Collection",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-19T17:17:02Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.2.0"
+    },
+    {
+      "id": 273617132,
+      "tag_name": "2.3.0",
+      "name": "v2.3.0 - End of Year Edition 🎉",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-31T16:36:56Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.3.0"
+    },
+    {
+      "id": 279635095,
+      "tag_name": "2.4.0",
+      "name": "v2.4.0 - Live Recalibration, Adaptive Threshold & PCA",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-24T15:02:23Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.4.0"
+    },
+    {
+      "id": 286542398,
+      "tag_name": "2.5.0",
+      "name": "v2.5.0 - ML Detector, Training Pipeline & Pre-built Firmware",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-15T14:52:32Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.5.0"
+    },
+    {
+      "id": 289626603,
+      "tag_name": "2.5.1",
+      "name": "v2.5.1 - HT STBC Multi-Antenna Router Fix",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-23T22:43:53Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.5.1"
+    },
+    {
+      "id": 294429491,
+      "tag_name": "2.6.0",
+      "name": "v2.6.0 - ESP32-C5 Support, Context-Aware Calibration, and Stricter Validation Targets",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-08T17:03:25Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.6.0"
+    },
+    {
+      "id": 298141029,
+      "tag_name": "2.7.0",
+      "name": "v2.7.0 - ESPectre configuration over BLE and subcarrier normalization",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-17T20:12:32Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.7.0"
+    },
+    {
+      "id": 326907327,
+      "tag_name": "snapshot",
+      "name": "Preview Build",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-05-21T13:00:22Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/snapshot"
+    },
+    {
+      "id": 326912073,
+      "tag_name": "2.8.0",
+      "name": "v2.8.0 - Detection hardening, ML cross-chip reliability, and runtime motion policy",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-21T13:03:25Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/2.8.0"
+    },
+    {
+      "id": 374989359,
+      "tag_name": "snapshot-dev",
+      "name": "Development Build",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-08-22T17:14:28Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/snapshot-dev"
+    },
+    {
+      "id": 383279575,
+      "tag_name": "3.0.0-rc1",
+      "name": "v3.0.0-rc1 - Wi-Fi sensing SDK, multi-frontend support, ready for new runtimes",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-09-05T15:03:18Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/3.0.0-rc1"
+    },
+    {
+      "id": 390281854,
+      "tag_name": "3.0.0-rc2",
+      "name": "v3.0.0-rc2 - Signed firmware, CSI capture controls, and standalone SDK builds",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-09-16T21:20:33Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/3.0.0-rc2"
+    },
+    {
+      "id": 397240462,
+      "tag_name": "3.0.0-rc3",
+      "name": "v3.0.0-rc3 - SDK on the ESP Component Registry and ESP-IDF 6 support",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-09-26T13:10:44Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/3.0.0-rc3"
+    },
+    {
+      "id": 405236615,
+      "tag_name": "3.0.0",
+      "name": "v3.0.0 - Wi-Fi sensing SDK, standalone firmware, and browser tools",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-10-07T00:12:12Z",
+      "html_url": "https://github.com/francescopace/espectre/releases/tag/3.0.0"
+    }
+  ],
+  "tags": [
+    {
+      "name": "snapshot-dev",
+      "sha": "12fce9354d3506290e70a853a4f22866f0e987ef",
+      "date": "2026-10-06T23:12:33Z"
+    },
+    {
+      "name": "3.0.0",
+      "sha": "12fce9354d3506290e70a853a4f22866f0e987ef",
+      "date": "2026-10-06T23:12:33Z"
+    },
+    {
+      "name": "snapshot",
+      "sha": "12fce9354d3506290e70a853a4f22866f0e987ef",
+      "date": "2026-10-06T23:12:33Z"
+    },
+    {
+      "name": "3.0.0-rc3",
+      "sha": "d79b4be232a1e2e464e85efbc7091aa562aed84d",
+      "date": "2026-09-25T20:58:04Z"
+    },
+    {
+      "name": "2.8.0",
+      "sha": "29e457a0cf4251d681905f0df60832988f2f7559",
+      "date": "2026-05-21T10:49:57Z"
+    },
+    {
+      "name": "3.0.0-rc1",
+      "sha": "48bd7cad7aea46d272e1c233cc86fbc275d76719",
+      "date": "2026-09-05T14:43:11Z"
+    },
+    {
+      "name": "2.7.0",
+      "sha": "995a9d59e26d31e9d4e4f4d6b72cf067d5b0edc9",
+      "date": "2026-03-17T18:45:33Z"
+    },
+    {
+      "name": "3.0.0-rc2",
+      "sha": "6727413a49192d0c5f6fe399a53736b3ed35f33f",
+      "date": "2026-09-16T20:51:54Z"
+    },
+    {
+      "name": "2.6.0",
+      "sha": "67a79925facd367a5c479001cdc16d3cd2b5dd6f",
+      "date": "2026-03-08T14:50:24Z"
+    },
+    {
+      "name": "2.5.1",
+      "sha": "e1f03305535bb1b1ae2fbfe5e0b86a233bc7d0ff",
+      "date": "2026-02-23T22:22:51Z"
+    },
+    {
+      "name": "2.5.0",
+      "sha": "96ac9cce1c8e6e1601d417162d5021c520a27724",
+      "date": "2026-02-15T13:35:39Z"
+    },
+    {
+      "name": "2.4.0",
+      "sha": "e6725500f690df5ce6170373e708f3cc15870a31",
+      "date": "2026-01-24T14:28:01Z"
+    },
+    {
+      "name": "2.3.0",
+      "sha": "bb1842345d424abcb1c7b4eb45bca1af59db393e",
+      "date": "2025-12-31T15:25:51Z"
+    },
+    {
+      "name": "2.2.0",
+      "sha": "4b5a05cfce72fd6b2d62c860190acc6303e533b6",
+      "date": "2025-12-19T01:54:52Z"
+    },
+    {
+      "name": "2.1.0",
+      "sha": "0924949659e2651e67acd01c98457f6e567a1746",
+      "date": "2025-12-10T21:42:23Z"
+    },
+    {
+      "name": "1.5.0",
+      "sha": "f12d32f8a8e4bbc8531680575aeebbdd7fdf855c",
+      "date": "2025-12-03T20:52:43Z"
+    },
+    {
+      "name": "1.4.0",
+      "sha": "8971cb15ace139e3fe8cb8cfa6c6a7051d5722ec",
+      "date": "2025-11-27T23:05:28Z"
+    },
+    {
+      "name": "2.0.0",
+      "sha": "6bfc035dc8886546fdd0c8c7ac5072caba3d65e5",
+      "date": "2025-11-29T00:02:23Z"
+    },
+    {
+      "name": "1.3.0",
+      "sha": "0c1e2c0396bc55bbde4d237a4d2266911b362f4d",
+      "date": "2025-11-21T00:54:03Z"
+    },
+    {
+      "name": "1.0.0",
+      "sha": "1e8f237a915b3e4c387f3db584ac27287836ccc4",
+      "date": "2025-11-03T19:17:03Z"
+    },
+    {
+      "name": "1.1.0",
+      "sha": "0069de408d027e9b2bcdeec2018f018183643ef3",
+      "date": "2025-11-05T06:15:00Z"
+    },
+    {
+      "name": "1.2.0",
+      "sha": "e6d2f53fe2380190fdac0fbaa032b9604abf9619",
+      "date": "2025-11-15T23:49:31Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "1.2.0",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "1.3.0",
+      "previous_release": "1.2.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "1.4.0",
+      "previous_release": "1.3.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "1.5.0",
+      "previous_release": "1.4.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.0.0",
+      "previous_release": "1.5.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.1.0",
+      "previous_release": "2.0.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.2.0",
+      "previous_release": "2.1.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.3.0",
+      "previous_release": "2.2.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.4.0",
+      "previous_release": "2.3.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.5.0",
+      "previous_release": "2.4.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.5.1",
+      "previous_release": "2.5.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.6.0",
+      "previous_release": "2.5.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.7.0",
+      "previous_release": "2.6.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "snapshot",
+      "previous_release": "2.7.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "2.8.0",
+      "previous_release": "snapshot",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "snapshot-dev",
+      "previous_release": "2.8.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "3.0.0-rc1",
+      "previous_release": "snapshot-dev",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "3.0.0-rc2",
+      "previous_release": "3.0.0-rc1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "3.0.0-rc3",
+      "previous_release": "3.0.0-rc2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "3.0.0",
+      "previous_release": "3.0.0-rc3",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [],
+    "2025-11": [],
+    "2025-12": [
+      {
+        "id": 20622572506,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-31T16:13:02Z",
+        "updated_at": "2025-12-31T16:17:03Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20622572506"
+      },
+      {
+        "id": 20621995629,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-31T15:59:16Z",
+        "updated_at": "2025-12-31T16:03:03Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20621995629"
+      },
+      {
+        "id": 20610398503,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-31T02:17:44Z",
+        "updated_at": "2025-12-31T02:22:00Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20610398503"
+      },
+      {
+        "id": 20610384240,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-31T02:16:36Z",
+        "updated_at": "2025-12-31T02:20:46Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20610384240"
+      },
+      {
+        "id": 20610189105,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-31T02:01:34Z",
+        "updated_at": "2025-12-31T02:05:43Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20610189105"
+      },
+      {
+        "id": 20610066859,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-31T01:51:52Z",
+        "updated_at": "2025-12-31T01:56:05Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20610066859"
+      },
+      {
+        "id": 20603538733,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T18:46:54Z",
+        "updated_at": "2025-12-30T18:50:54Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20603538733"
+      },
+      {
+        "id": 20542450230,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-27T18:00:21Z",
+        "updated_at": "2025-12-27T18:04:31Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20542450230"
+      },
+      {
+        "id": 20541165757,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-27T15:55:23Z",
+        "updated_at": "2025-12-27T15:59:24Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20541165757"
+      },
+      {
+        "id": 20540087914,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-27T14:11:07Z",
+        "updated_at": "2025-12-27T14:15:14Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20540087914"
+      },
+      {
+        "id": 20489119842,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-24T15:23:41Z",
+        "updated_at": "2025-12-24T15:27:38Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20489119842"
+      },
+      {
+        "id": 20464781956,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-23T15:29:08Z",
+        "updated_at": "2025-12-23T15:33:22Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20464781956"
+      },
+      {
+        "id": 20411684794,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-21T15:07:14Z",
+        "updated_at": "2025-12-21T15:11:29Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20411684794"
+      },
+      {
+        "id": 20377104861,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-19T17:11:05Z",
+        "updated_at": "2025-12-19T17:15:26Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20377104861"
+      },
+      {
+        "id": 20311473970,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-17T17:23:40Z",
+        "updated_at": "2025-12-17T17:27:49Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20311473970"
+      },
+      {
+        "id": 20290301855,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-17T03:11:14Z",
+        "updated_at": "2025-12-17T03:15:33Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20290301855"
+      },
+      {
+        "id": 20286896799,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-17T00:07:18Z",
+        "updated_at": "2025-12-17T00:11:29Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20286896799"
+      },
+      {
+        "id": 20265393017,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-16T10:52:45Z",
+        "updated_at": "2025-12-16T10:56:49Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20265393017"
+      },
+      {
+        "id": 20211809866,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-14T17:47:53Z",
+        "updated_at": "2025-12-14T17:52:03Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20211809866"
+      },
+      {
+        "id": 20175569604,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-12T18:03:48Z",
+        "updated_at": "2025-12-12T18:07:58Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20175569604"
+      },
+      {
+        "id": 20115017683,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-10T22:16:32Z",
+        "updated_at": "2025-12-10T22:20:46Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20115017683"
+      },
+      {
+        "id": 20033581398,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-08T15:35:17Z",
+        "updated_at": "2025-12-08T15:39:03Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20033581398"
+      },
+      {
+        "id": 20014885009,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-08T02:37:04Z",
+        "updated_at": "2025-12-08T02:40:41Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20014885009"
+      },
+      {
+        "id": 20013447459,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-08T01:22:04Z",
+        "updated_at": "2025-12-08T01:22:40Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20013447459"
+      },
+      {
+        "id": 20007910424,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-07T17:37:35Z",
+        "updated_at": "2025-12-07T17:41:18Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20007910424"
+      },
+      {
+        "id": 20006089023,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-07T15:05:41Z",
+        "updated_at": "2025-12-07T15:08:53Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20006089023"
+      },
+      {
+        "id": 19995423411,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-06T22:55:22Z",
+        "updated_at": "2025-12-06T22:58:48Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/19995423411"
+      }
+    ],
+    "2026-01": [
+      {
+        "id": 21316753490,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T14:42:02Z",
+        "updated_at": "2026-01-24T14:52:37Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/21316753490"
+      },
+      {
+        "id": 21187179142,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-20T21:04:20Z",
+        "updated_at": "2026-01-20T21:11:42Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/21187179142"
+      },
+      {
+        "id": 20975143782,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T22:42:08Z",
+        "updated_at": "2026-01-13T22:57:27Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20975143782"
+      },
+      {
+        "id": 20974786394,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T22:24:07Z",
+        "updated_at": "2026-01-13T22:31:50Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20974786394"
+      },
+      {
+        "id": 20974326549,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T22:08:17Z",
+        "updated_at": "2026-01-13T22:16:48Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20974326549"
+      },
+      {
+        "id": 20973877722,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T21:52:22Z",
+        "updated_at": "2026-01-13T22:00:20Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20973877722"
+      },
+      {
+        "id": 20833685960,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-08T22:18:37Z",
+        "updated_at": "2026-01-08T22:27:30Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20833685960"
+      },
+      {
+        "id": 20749942476,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T13:36:01Z",
+        "updated_at": "2026-01-06T13:46:33Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20749942476"
+      },
+      {
+        "id": 20730260779,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-05T21:51:17Z",
+        "updated_at": "2026-01-05T21:58:50Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20730260779"
+      },
+      {
+        "id": 20687280912,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-04T03:58:19Z",
+        "updated_at": "2026-01-04T04:08:20Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20687280912"
+      },
+      {
+        "id": 20664701268,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T19:03:52Z",
+        "updated_at": "2026-01-02T19:11:15Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20664701268"
+      },
+      {
+        "id": 20661527963,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T16:01:45Z",
+        "updated_at": "2026-01-02T16:08:57Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20661527963"
+      },
+      {
+        "id": 20650331136,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T03:42:45Z",
+        "updated_at": "2026-01-02T03:49:44Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20650331136"
+      },
+      {
+        "id": 20642344904,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-01T17:07:22Z",
+        "updated_at": "2026-01-01T17:11:42Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/20642344904"
+      }
+    ],
+    "2026-02": [
+      {
+        "id": 22329450656,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-23T23:31:30Z",
+        "updated_at": "2026-02-23T23:43:17Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22329450656"
+      },
+      {
+        "id": 22329115736,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-23T23:20:05Z",
+        "updated_at": "2026-02-23T23:35:34Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22329115736"
+      },
+      {
+        "id": 22328757961,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-23T23:08:15Z",
+        "updated_at": "2026-02-23T23:15:53Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22328757961"
+      },
+      {
+        "id": 22327370390,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-23T22:23:17Z",
+        "updated_at": "2026-02-23T22:30:44Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22327370390"
+      },
+      {
+        "id": 22326542982,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-23T21:58:06Z",
+        "updated_at": "2026-02-23T22:05:49Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22326542982"
+      },
+      {
+        "id": 22266941202,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-22T00:06:49Z",
+        "updated_at": "2026-02-22T00:14:06Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22266941202"
+      },
+      {
+        "id": 22266823916,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-21T23:58:28Z",
+        "updated_at": "2026-02-22T00:06:55Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22266823916"
+      },
+      {
+        "id": 22266568858,
+        "name": "Snapshot",
+        "workflow_id": 237110915,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-21T23:39:32Z",
+        "updated_at": "2026-02-21T23:43:47Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22266568858"
+      },
+      {
+        "id": 22266568859,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-21T23:39:32Z",
+        "updated_at": "2026-02-21T23:47:33Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22266568859"
+      },
+      {
+        "id": 22262055206,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-21T18:31:38Z",
+        "updated_at": "2026-02-21T18:39:08Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22262055206"
+      },
+      {
+        "id": 22259723955,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-21T15:54:15Z",
+        "updated_at": "2026-02-21T16:10:34Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22259723955"
+      },
+      {
+        "id": 22083682597,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T02:18:37Z",
+        "updated_at": "2026-02-17T02:28:41Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22083682597"
+      },
+      {
+        "id": 22083591623,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T02:13:34Z",
+        "updated_at": "2026-02-17T02:20:53Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22083591623"
+      },
+      {
+        "id": 22082400497,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T01:07:53Z",
+        "updated_at": "2026-02-17T01:15:12Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22082400497"
+      },
+      {
+        "id": 22037403322,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-15T14:32:25Z",
+        "updated_at": "2026-02-15T14:48:10Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22037403322"
+      },
+      {
+        "id": 22026953155,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-15T00:40:29Z",
+        "updated_at": "2026-02-15T00:53:08Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22026953155"
+      },
+      {
+        "id": 22026798986,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-15T00:28:19Z",
+        "updated_at": "2026-02-15T00:38:35Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22026798986"
+      },
+      {
+        "id": 21694040432,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-05T00:37:29Z",
+        "updated_at": "2026-02-05T00:48:35Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/21694040432"
+      }
+    ],
+    "2026-03": [
+      {
+        "id": 23715636280,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-29T18:09:52Z",
+        "updated_at": "2026-03-29T18:16:17Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23715636280"
+      },
+      {
+        "id": 23685146538,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-28T12:23:58Z",
+        "updated_at": "2026-03-28T12:38:24Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23685146538"
+      },
+      {
+        "id": 23307404889,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-19T17:14:54Z",
+        "updated_at": "2026-03-19T17:21:53Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23307404889"
+      },
+      {
+        "id": 23298182535,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-19T13:51:11Z",
+        "updated_at": "2026-03-19T14:04:22Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23298182535"
+      },
+      {
+        "id": 23297826135,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-19T13:42:50Z",
+        "updated_at": "2026-03-19T13:49:21Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23297826135"
+      },
+      {
+        "id": 23264729844,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-18T20:09:09Z",
+        "updated_at": "2026-03-18T20:16:33Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23264729844"
+      },
+      {
+        "id": 23264067203,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-18T19:52:35Z",
+        "updated_at": "2026-03-18T20:00:55Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23264067203"
+      },
+      {
+        "id": 23261358329,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-18T18:45:25Z",
+        "updated_at": "2026-03-18T19:00:21Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23261358329"
+      },
+      {
+        "id": 23260255858,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-18T18:19:22Z",
+        "updated_at": "2026-03-18T18:27:17Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23260255858"
+      },
+      {
+        "id": 23255195072,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-18T16:38:15Z",
+        "updated_at": "2026-03-18T16:44:10Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23255195072"
+      },
+      {
+        "id": 23213690546,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-17T19:56:25Z",
+        "updated_at": "2026-03-17T20:04:21Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23213690546"
+      },
+      {
+        "id": 23206393013,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-17T17:01:25Z",
+        "updated_at": "2026-03-17T17:09:53Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/23206393013"
+      },
+      {
+        "id": 22933189621,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-11T02:05:05Z",
+        "updated_at": "2026-03-11T02:12:55Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22933189621"
+      },
+      {
+        "id": 22906237222,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-10T14:05:46Z",
+        "updated_at": "2026-03-10T14:19:30Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22906237222"
+      },
+      {
+        "id": 22825422784,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-08T16:48:21Z",
+        "updated_at": "2026-03-08T16:56:06Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22825422784"
+      },
+      {
+        "id": 22697463941,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-05T01:11:59Z",
+        "updated_at": "2026-03-05T01:19:58Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/22697463941"
+      }
+    ],
+    "2026-04": [
+      {
+        "id": 24959460237,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-26T14:51:11Z",
+        "updated_at": "2026-04-26T15:04:26Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/24959460237"
+      },
+      {
+        "id": 24913847081,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-24T22:01:35Z",
+        "updated_at": "2026-04-24T22:09:20Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/24913847081"
+      },
+      {
+        "id": 24636769144,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T19:03:42Z",
+        "updated_at": "2026-04-19T19:10:42Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/24636769144"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 26226859830,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-21T12:47:41Z",
+        "updated_at": "2026-05-21T12:55:20Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/26226859830"
+      }
+    ],
+    "2026-06": [],
+    "2026-07": [],
+    "2026-08": [],
+    "2026-09": [
+      {
+        "id": 36645445339,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-29T23:29:04Z",
+        "updated_at": "2026-09-29T23:34:14Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/36645445339"
+      },
+      {
+        "id": 36645445425,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-29T23:29:04Z",
+        "updated_at": "2026-09-29T23:38:43Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/36645445425"
+      },
+      {
+        "id": 36635008010,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-29T21:42:07Z",
+        "updated_at": "2026-09-29T21:54:07Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/36635008010"
+      },
+      {
+        "id": 36635007516,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-29T21:42:06Z",
+        "updated_at": "2026-09-29T21:46:16Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/36635007516"
+      },
+      {
+        "id": 36238581777,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-26T11:21:47Z",
+        "updated_at": "2026-09-26T11:36:34Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/36238581777"
+      },
+      {
+        "id": 36238581576,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-26T11:21:46Z",
+        "updated_at": "2026-09-26T11:25:56Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/36238581576"
+      },
+      {
+        "id": 35475820347,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-19T23:19:52Z",
+        "updated_at": "2026-09-19T23:31:10Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35475820347"
+      },
+      {
+        "id": 35475820232,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-19T23:19:52Z",
+        "updated_at": "2026-09-19T23:24:06Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35475820232"
+      },
+      {
+        "id": 35381875457,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-18T18:43:52Z",
+        "updated_at": "2026-09-18T18:54:22Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35381875457"
+      },
+      {
+        "id": 35381875280,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-18T18:43:52Z",
+        "updated_at": "2026-09-18T18:48:43Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35381875280"
+      },
+      {
+        "id": 35376587952,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-18T17:49:23Z",
+        "updated_at": "2026-09-18T17:53:43Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35376587952"
+      },
+      {
+        "id": 35376588229,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-18T18:10:10Z",
+        "updated_at": "2026-09-18T18:15:23Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35376588229"
+      },
+      {
+        "id": 35291505550,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-18T00:30:45Z",
+        "updated_at": "2026-09-18T00:35:06Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35291505550"
+      },
+      {
+        "id": 35291505759,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-18T00:30:45Z",
+        "updated_at": "2026-09-18T00:41:32Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35291505759"
+      },
+      {
+        "id": 35271339498,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-17T20:31:43Z",
+        "updated_at": "2026-09-17T20:35:52Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35271339498"
+      },
+      {
+        "id": 35271339730,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-17T20:31:43Z",
+        "updated_at": "2026-09-17T20:41:59Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35271339730"
+      },
+      {
+        "id": 35153364387,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T21:37:01Z",
+        "updated_at": "2026-09-16T21:40:22Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35153364387"
+      },
+      {
+        "id": 35153364406,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T21:37:01Z",
+        "updated_at": "2026-09-16T21:44:30Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35153364406"
+      },
+      {
+        "id": 35149918699,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T21:00:33Z",
+        "updated_at": "2026-09-16T21:04:42Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35149918699"
+      },
+      {
+        "id": 35149918704,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T21:00:33Z",
+        "updated_at": "2026-09-16T21:10:43Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35149918704"
+      },
+      {
+        "id": 35129748446,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T17:41:28Z",
+        "updated_at": "2026-09-16T17:46:57Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35129748446"
+      },
+      {
+        "id": 35129748710,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T17:41:28Z",
+        "updated_at": "2026-09-16T17:52:40Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35129748710"
+      },
+      {
+        "id": 35128267713,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-16T17:27:14Z",
+        "updated_at": "2026-09-16T17:38:22Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35128267713"
+      },
+      {
+        "id": 35128267668,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T17:27:13Z",
+        "updated_at": "2026-09-16T17:32:15Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35128267668"
+      },
+      {
+        "id": 35034803032,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-15T23:15:02Z",
+        "updated_at": "2026-09-15T23:19:03Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35034803032"
+      },
+      {
+        "id": 35034802997,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-15T23:15:02Z",
+        "updated_at": "2026-09-15T23:23:21Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/35034802997"
+      },
+      {
+        "id": 34725759871,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-12T23:34:14Z",
+        "updated_at": "2026-09-12T23:39:16Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34725759871"
+      },
+      {
+        "id": 34725759951,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-12T23:34:14Z",
+        "updated_at": "2026-09-12T23:42:06Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34725759951"
+      },
+      {
+        "id": 34603280656,
+        "name": "Code Analysis",
+        "workflow_id": 248481401,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-11T13:15:29Z",
+        "updated_at": "2026-09-11T13:19:32Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34603280656"
+      },
+      {
+        "id": 34603280700,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-11T13:15:29Z",
+        "updated_at": "2026-09-11T13:23:53Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34603280700"
+      },
+      {
+        "id": 34399591564,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-09T20:12:02Z",
+        "updated_at": "2026-09-09T20:21:03Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34399591564"
+      },
+      {
+        "id": 34382301595,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-09T17:20:27Z",
+        "updated_at": "2026-09-09T17:28:08Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34382301595"
+      },
+      {
+        "id": 34382301521,
+        "name": "Code Quality Reports",
+        "workflow_id": 351203695,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-09T17:20:27Z",
+        "updated_at": "2026-09-09T17:20:58Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34382301521"
+      },
+      {
+        "id": 34008881261,
+        "name": "Code Quality Reports",
+        "workflow_id": 351203695,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-06T03:23:40Z",
+        "updated_at": "2026-09-06T03:24:02Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34008881261"
+      },
+      {
+        "id": 34008881264,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-06T03:23:40Z",
+        "updated_at": "2026-09-06T03:30:45Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34008881264"
+      },
+      {
+        "id": 34002894003,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-06T01:03:25Z",
+        "updated_at": "2026-09-06T01:20:04Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34002894003"
+      },
+      {
+        "id": 34002894042,
+        "name": "Code Quality Reports",
+        "workflow_id": 351203695,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-06T01:03:25Z",
+        "updated_at": "2026-09-06T01:03:47Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/34002894042"
+      },
+      {
+        "id": 33972955931,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-05T15:17:34Z",
+        "updated_at": "2026-09-05T15:22:30Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/33972955931"
+      },
+      {
+        "id": 33970666904,
+        "name": "CI",
+        "workflow_id": 212728930,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-05T14:03:22Z",
+        "updated_at": "2026-09-05T14:18:18Z",
+        "html_url": "https://github.com/francescopace/espectre/actions/runs/33970666904"
+      }
+    ]
+  }
+}

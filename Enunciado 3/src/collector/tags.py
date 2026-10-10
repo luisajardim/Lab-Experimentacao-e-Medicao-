@@ -12,6 +12,8 @@ from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from cache.cached_session import CachedSession
+from cache.sqlite_store import SQLiteStore
 from github.models import Commit, ResolvedTag, Tag
 from github.rest import GitHubRESTClient
 
@@ -32,22 +34,38 @@ def collect_tags(
     repo: str,
     *,
     max_workers: int = 4,
+    store: SQLiteStore | None = None,
+    stage: str = "collect:tags",
 ) -> list[ResolvedTag]:
     """Tags de ``owner/repo`` com a data do commit apontado resolvida."""
-    raw = client.paginate(f"/repos/{owner}/{repo}/tags")
-    tags = [Tag.from_api(item) for item in raw]
+    if store and store.is_stage_complete(f"{stage}:{owner}/{repo}"):
+        return []
 
-    resolved: list[ResolvedTag] = []
-    with ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="tags") as pool:
-        futures = {
-            pool.submit(_resolve_tag_date, client, owner, repo, tag): tag for tag in tags
-        }
-        for future in as_completed(futures):
-            try:
-                result = future.result()
-                if result is not None:
-                    resolved.append(result)
-            except Exception:
-                pass
+    # Wrap session with cache if store provided
+    original_session = client._session
+    if store:
+        client._session = CachedSession(original_session, store, stage)
+
+    try:
+        raw = client.paginate(f"/repos/{owner}/{repo}/tags")
+        tags = [Tag.from_api(item) for item in raw]
+
+        resolved: list[ResolvedTag] = []
+        with ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="tags") as pool:
+            futures = {
+                pool.submit(_resolve_tag_date, client, owner, repo, tag): tag for tag in tags
+            }
+            for future in as_completed(futures):
+                try:
+                    result = future.result()
+                    if result is not None:
+                        resolved.append(result)
+                except Exception:
+                    pass
+    finally:
+        client._session = original_session
+
+    if store:
+        store.mark_stage_complete(f"{stage}:{owner}/{repo}")
 
     return resolved

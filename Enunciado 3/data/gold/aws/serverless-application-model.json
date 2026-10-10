@@ -1,0 +1,4661 @@
+{
+  "repository": {
+    "full_name": "aws/serverless-application-model",
+    "stars": 9574,
+    "language": "Python",
+    "default_branch": "develop",
+    "created_at": "2016-10-10T21:36:18Z"
+  },
+  "releases": [
+    {
+      "id": 5495929,
+      "tag_name": "v1.1.0",
+      "name": "AWS Serverless Application Model Supports Inline Swagger and AWS CloudFormation Intrinsic Functions",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-02-17T22:30:30Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.1.0"
+    },
+    {
+      "id": 6576357,
+      "tag_name": "v1.2.0",
+      "name": "AWS Serverless Application Model (AWS SAM) Now Supports AWS X-Ray",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-06-01T18:13:54Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.2.0"
+    },
+    {
+      "id": 8693791,
+      "tag_name": "1.3.0",
+      "name": "Globals, Safe Lambda Deployments, Lambda Versions & Aliases, Local Lambda execution 🐿",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-11-29T01:38:24Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/1.3.0"
+    },
+    {
+      "id": 8723071,
+      "tag_name": "1.3.1",
+      "name": "Make your apps more secure - SAM Policy Templates",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-11-30T18:56:43Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/1.3.1"
+    },
+    {
+      "id": 10054602,
+      "tag_name": "1.4.0",
+      "name": "Loads of API features, bug fixes and improvements",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-03-12T23:02:46Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/1.4.0"
+    },
+    {
+      "id": 10395732,
+      "tag_name": "1.5",
+      "name": "🥁 SAM Implementation is now open source!",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-04-04T17:57:50Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/1.5"
+    },
+    {
+      "id": 13091447,
+      "tag_name": "v1.7.0",
+      "name": "Releasing SAM v1.7.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-09-25T21:50:41Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.7.0"
+    },
+    {
+      "id": 13355456,
+      "tag_name": "v1.6.1",
+      "name": "Releasing SAM v1.6.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-10-10T16:11:10Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.6.1"
+    },
+    {
+      "id": 13638552,
+      "tag_name": "v1.8.0",
+      "name": "Releasing SAM v1.8.0 - API Gateway Authorizers!",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-10-25T23:48:26Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.8.0"
+    },
+    {
+      "id": 14262950,
+      "tag_name": "v1.9.0",
+      "name": "SAM v1.9.0: Lambda Layers and Nested Applications",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-11-29T17:47:12Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.9.0"
+    },
+    {
+      "id": 15957432,
+      "tag_name": "v1.10.0",
+      "name": "SAM v1.10.0: Conditions support!",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-03-06T22:18:26Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.10.0"
+    },
+    {
+      "id": 16988651,
+      "tag_name": "v1.11.0",
+      "name": "v1.11.0 Release: Support API IAM Permissions Auth and API Gateway Responses",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-04-26T16:56:09Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.11.0"
+    },
+    {
+      "id": 18247113,
+      "tag_name": "v1.12.0",
+      "name": "SAM v1.12.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-06-26T19:11:31Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.12.0"
+    },
+    {
+      "id": 18278893,
+      "tag_name": "v1.13.0",
+      "name": "SAM v1.13.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-07-26T19:47:52Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.13.0"
+    },
+    {
+      "id": 19121136,
+      "tag_name": "v1.13.1",
+      "name": "SAM v1.13.1 Patch Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-08-06T23:03:29Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.13.1"
+    },
+    {
+      "id": 19297646,
+      "tag_name": "v1.13.2",
+      "name": "SAM v1.13.2 Patch Release: Redeploy API GW when OpenApiVersion flag is added (bug fix)",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-08-14T22:38:40Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.13.2"
+    },
+    {
+      "id": 19633459,
+      "tag_name": "v1.14.0",
+      "name": "SAM v1.14.0 Release: API Key Authorization and API Resource Policies Support",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-08-29T21:01:31Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.14.0"
+    },
+    {
+      "id": 20460670,
+      "tag_name": "v1.15.0",
+      "name": "SAM v1.15.0 Release: Simplified API Gateway Resource Policies and Multiple Event Source Updates",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-10-03T22:49:53Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.15.0"
+    },
+    {
+      "id": 20691192,
+      "tag_name": "v1.15.1",
+      "name": "SAM v1.15.1 Patch Release: ResourcePolicy fix",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-10-14T19:14:33Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.15.1"
+    },
+    {
+      "id": 21749044,
+      "tag_name": "v1.16.0",
+      "name": "SAM v1.16.0 Release: Virtual Sharding and Stream failure processing support for streaming events",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-11-26T16:34:42Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.16.0"
+    },
+    {
+      "id": 21905438,
+      "tag_name": "v1.17.0",
+      "name": "SAM v1.17.0 Release: Add event bus name for CloudWatchEvent",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-12-02T18:29:08Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.17.0"
+    },
+    {
+      "id": 21943406,
+      "tag_name": "v1.18.0",
+      "name": "SAM v1.18.0 Release: Lambda Provisioned Concurrency Support",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-12-03T22:41:37Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.18.0"
+    },
+    {
+      "id": 21970359,
+      "tag_name": "v1.19.0",
+      "name": "SAM v1.19.0 Release: HTTP APIs (Beta)",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-12-04T19:02:15Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.19.0"
+    },
+    {
+      "id": 22451335,
+      "tag_name": "v1.19.1",
+      "name": "HTTP API Auth Patch: v1.19.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-12-24T22:21:37Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.19.1"
+    },
+    {
+      "id": 22805063,
+      "tag_name": "v1.20.0",
+      "name": "SAM v1.20.0 Release: Custom Domains support and Authorization scopes for Amazon Api Gateway, TriggerConfigurations in DeploymentPreference and Tags in IAM Role",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-01-13T23:12:37Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.20.0"
+    },
+    {
+      "id": 22874902,
+      "tag_name": "v1.20.1",
+      "name": "Patch V1.20.1: patch fix to correct PyPi upload",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-01-15T22:00:46Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.20.1"
+    },
+    {
+      "id": 23891394,
+      "tag_name": "v1.21.0",
+      "name": "SAM v1.21.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-02-21T21:35:06Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.21.0"
+    },
+    {
+      "id": 24573820,
+      "tag_name": "v1.22.0",
+      "name": "SAM v1.22.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-03-16T21:51:08Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.22.0"
+    },
+    {
+      "id": 26162294,
+      "tag_name": "v1.23.0",
+      "name": "SAM v1.23 Release: Bug fixes",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-06T18:55:08Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.23.0"
+    },
+    {
+      "id": 26953245,
+      "tag_name": "v1.24.0",
+      "name": "Step Functions Resource",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-27T16:07:03Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.24.0"
+    },
+    {
+      "id": 27610243,
+      "tag_name": "v1.25.0",
+      "name": "Amazon Elastic File System Integration",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-06-16T18:36:42Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.25.0"
+    },
+    {
+      "id": 29429428,
+      "tag_name": "v1.26.0",
+      "name": "SAM v1.26.0 Release - MSK as an Event Source",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-08-11T21:32:13Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.26.0"
+    },
+    {
+      "id": 30760089,
+      "tag_name": "v1.27.0",
+      "name": "SAM v1.27.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-09-18T20:58:45Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.27.0"
+    },
+    {
+      "id": 33084743,
+      "tag_name": "v1.28.1",
+      "name": "SAM v1.28.1 Release - Support API Gateway HTTP APIs using Lambda authorizers",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-10-28T22:22:08Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.28.1"
+    },
+    {
+      "id": 33530768,
+      "tag_name": "v1.29.0",
+      "name": "SAM v1.29.0 Release - AmazonMQ as Event Source and MTLS auth properties in REST and HTTP API domain names",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-11-05T22:46:25Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.29.0"
+    },
+    {
+      "id": 33681890,
+      "tag_name": "v1.30.0",
+      "name": "SAM v1.30.0 Release - Newer X-ray Policy in GOV and CN",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-11-18T18:28:17Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.30.0"
+    },
+    {
+      "id": 34150726,
+      "tag_name": "v1.30.1",
+      "name": "SAM v1.30.1 Release - Fix boto version restriction",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-11-19T02:55:40Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.30.1"
+    },
+    {
+      "id": 34327556,
+      "tag_name": "v1.31.0",
+      "name": "SAM v1.31.0 Release - Support Lambda Code Signer",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-11-24T01:13:19Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.31.0"
+    },
+    {
+      "id": 34646044,
+      "tag_name": "v1.32.0",
+      "name": "SAM v1.32.0 Release - Support for Lambda Container Images",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-12-01T17:00:55Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.32.0"
+    },
+    {
+      "id": 35444714,
+      "tag_name": "v1.33.0",
+      "name": "Release 1.33.0 - Support for Stream Analytics",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-12-17T22:21:42Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.33.0"
+    },
+    {
+      "id": 37111245,
+      "tag_name": "v1.34.0",
+      "name": "SAM v1.34.0 Release - DLQ and Custom Retry Policy for EventBridge Rule Event Source, Custom Checkpointing",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-30T00:34:04Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.34.0"
+    },
+    {
+      "id": 39735381,
+      "tag_name": "v1.35.0",
+      "name": "SAM v1.35.0 Release - Missing policies, python integration tests, support Fn::If in DeploymentPreference Alarms",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-03-12T19:46:41Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.35.0"
+    },
+    {
+      "id": 43873668,
+      "tag_name": "v1.36.0",
+      "name": "SAM v1.36.0 Release - Support for Resource Attributes in Templates",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-05-31T20:48:45Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.36.0"
+    },
+    {
+      "id": 45782378,
+      "tag_name": "v1.37.0",
+      "name": "SAM v1.37.0 Release - Increase PageSize of ListPolicies Paginator, support VIRTUAL_HOST",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-07-06T15:57:55Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.37.0"
+    },
+    {
+      "id": 46421255,
+      "tag_name": "v1.38.0",
+      "name": "SAM v1.38.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-07-19T15:40:27Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.38.0"
+    },
+    {
+      "id": 50504119,
+      "tag_name": "v1.39.0",
+      "name": "SAM v1.39.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-09-29T20:30:48Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.39.0"
+    },
+    {
+      "id": 52554889,
+      "tag_name": "v1.40.0",
+      "name": "SAM v1.40.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-11-02T21:43:30Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.40.0"
+    },
+    {
+      "id": 53947648,
+      "tag_name": "v1.42.0",
+      "name": "SAM v1.42.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-11-23T20:27:57Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.42.0"
+    },
+    {
+      "id": 62505244,
+      "tag_name": "v1.43.0",
+      "name": "SAM v1.43.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-03-22T21:46:03Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.43.0"
+    },
+    {
+      "id": 62950572,
+      "tag_name": "v1.44.0",
+      "name": "SAM v1.44.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-03-28T18:12:25Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.44.0"
+    },
+    {
+      "id": 63781345,
+      "tag_name": "v1.45.0",
+      "name": "SAM v1.45.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-06T18:09:39Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.45.0"
+    },
+    {
+      "id": 68863696,
+      "tag_name": "v1.46.0",
+      "name": "SAM v1.46.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-07T17:17:30Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.46.0"
+    },
+    {
+      "id": 71837774,
+      "tag_name": "v1.47.0",
+      "name": "SAM v1.47.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-12T20:02:21Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.47.0"
+    },
+    {
+      "id": 72797031,
+      "tag_name": "v1.48.0",
+      "name": "SAM v1.48.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-25T20:30:20Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.48.0"
+    },
+    {
+      "id": 73917284,
+      "tag_name": "v1.49.0",
+      "name": "SAM v1.49.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-08T18:22:01Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.49.0"
+    },
+    {
+      "id": 74648314,
+      "tag_name": "v1.50.0",
+      "name": "SAM v1.50.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-17T17:31:04Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.50.0"
+    },
+    {
+      "id": 77037200,
+      "tag_name": "v1.51.0",
+      "name": "SAM v1.51.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-13T18:29:44Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.51.0"
+    },
+    {
+      "id": 79201736,
+      "tag_name": "v1.52.0",
+      "name": "SAM v1.52.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-06T19:10:20Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.52.0"
+    },
+    {
+      "id": 79560240,
+      "tag_name": "v1.53.0",
+      "name": "SAM v1.53.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-11T17:23:04Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.53.0"
+    },
+    {
+      "id": 82727717,
+      "tag_name": "v1.54.0",
+      "name": "SAM v1.54.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-10T19:52:20Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.54.0"
+    },
+    {
+      "id": 84402930,
+      "tag_name": "v1.55.0",
+      "name": "SAM v1.55.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-29T03:30:41Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.55.0"
+    },
+    {
+      "id": 88068190,
+      "tag_name": "v1.56.0",
+      "name": "SAM v1.56.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-05T21:54:10Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.56.0"
+    },
+    {
+      "id": 88762193,
+      "tag_name": "v1.57.0",
+      "name": "SAM v1.57.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-12T17:38:20Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.57.0"
+    },
+    {
+      "id": 89981174,
+      "tag_name": "v1.58.0",
+      "name": "SAM v1.58.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-23T23:35:06Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.58.0"
+    },
+    {
+      "id": 90093348,
+      "tag_name": "v1.58.1",
+      "name": "SAM v1.58.1 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-24T20:08:36Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.58.1"
+    },
+    {
+      "id": 91808272,
+      "tag_name": "v1.59.0",
+      "name": "SAM v1.59.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-08T21:36:34Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.59.0"
+    },
+    {
+      "id": 93843197,
+      "tag_name": "v1.60.0",
+      "name": "SAM v1.60.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-27T19:17:32Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.60.0"
+    },
+    {
+      "id": 94005145,
+      "tag_name": "v1.60.1",
+      "name": "SAM v1.60.1 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-28T21:48:18Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.60.1"
+    },
+    {
+      "id": 95250982,
+      "tag_name": "v1.61.0",
+      "name": "SAM v1.61.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-10T20:13:47Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.61.0"
+    },
+    {
+      "id": 95628877,
+      "tag_name": "v1.62.0",
+      "name": "SAM v1.62.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-14T22:35:59Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.62.0"
+    },
+    {
+      "id": 97090990,
+      "tag_name": "v1.63.0",
+      "name": "SAM v1.63.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-27T22:25:05Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.63.0"
+    },
+    {
+      "id": 98439989,
+      "tag_name": "v1.64.0",
+      "name": "SAM v1.64.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-06T15:54:41Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.64.0"
+    },
+    {
+      "id": 100129395,
+      "tag_name": "v1.65.0",
+      "name": "SAM v1.65.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-19T23:10:08Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.65.0"
+    },
+    {
+      "id": 101177035,
+      "tag_name": "v1.66.0",
+      "name": "SAM v1.66.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-27T19:59:45Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.66.0"
+    },
+    {
+      "id": 103217417,
+      "tag_name": "v1.67.0",
+      "name": "SAM v1.67.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-05-16T19:47:44Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.67.0"
+    },
+    {
+      "id": 104307751,
+      "tag_name": "v1.68.0",
+      "name": "SAM v1.68.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-05-25T18:59:18Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.68.0"
+    },
+    {
+      "id": 108775520,
+      "tag_name": "v1.69.0",
+      "name": "SAM v1.69.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-15T18:31:37Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.69.0"
+    },
+    {
+      "id": 109596082,
+      "tag_name": "v1.70.0",
+      "name": "SAM v1.70.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-22T18:37:23Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.70.0"
+    },
+    {
+      "id": 111176951,
+      "tag_name": "v1.71.0",
+      "name": "SAM v1.71.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-07-05T21:28:34Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.71.0"
+    },
+    {
+      "id": 114068922,
+      "tag_name": "v1.72.0",
+      "name": "SAM v1.72.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-07-29T00:59:44Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.72.0"
+    },
+    {
+      "id": 115843021,
+      "tag_name": "v1.73.0",
+      "name": "SAM v1.73.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-10T00:02:13Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.73.0"
+    },
+    {
+      "id": 119528382,
+      "tag_name": "v1.74.0",
+      "name": "SAM v1.74.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-31T22:46:32Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.74.0"
+    },
+    {
+      "id": 121767258,
+      "tag_name": "v1.75.0",
+      "name": "SAM v1.75.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-19T20:53:47Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.75.0"
+    },
+    {
+      "id": 123039025,
+      "tag_name": "v1.76.0",
+      "name": "SAM v1.76.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-28T21:08:45Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.76.0"
+    },
+    {
+      "id": 124110083,
+      "tag_name": "v1.77.0",
+      "name": "SAM v1.77.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-06T20:50:58Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.77.0"
+    },
+    {
+      "id": 125053439,
+      "tag_name": "v1.78.0",
+      "name": "SAM v1.78.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-13T20:56:25Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.78.0"
+    },
+    {
+      "id": 126337764,
+      "tag_name": "v1.79.0",
+      "name": "SAM v1.79.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-23T23:02:08Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.79.0"
+    },
+    {
+      "id": 129799218,
+      "tag_name": "v1.80.0",
+      "name": "SAM v1.80.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-16T17:32:12Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.80.0"
+    },
+    {
+      "id": 131156945,
+      "tag_name": "v1.81.0",
+      "name": "SAM v1.81.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-23T00:51:36Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.81.0"
+    },
+    {
+      "id": 132757025,
+      "tag_name": "v1.82.0",
+      "name": "SAM v1.82.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-05T23:00:15Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.82.0"
+    },
+    {
+      "id": 135909146,
+      "tag_name": "v1.83.0",
+      "name": "SAM v1.83.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-05T00:48:58Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.83.0"
+    },
+    {
+      "id": 139745377,
+      "tag_name": "v1.84.0",
+      "name": "SAM v1.84.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-02-03T00:34:08Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.84.0"
+    },
+    {
+      "id": 142213587,
+      "tag_name": "v1.85.0",
+      "name": "SAM v1.85.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-02-15T18:57:31Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.85.0"
+    },
+    {
+      "id": 145349592,
+      "tag_name": "v1.86.0",
+      "name": "SAM v1.86.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-07T20:52:52Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.86.0"
+    },
+    {
+      "id": 149829917,
+      "tag_name": "v1.87.0",
+      "name": "SAM v1.87.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-04T18:48:42Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.87.0"
+    },
+    {
+      "id": 154489870,
+      "tag_name": "v1.88.0",
+      "name": "SAM v1.88.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-05-06T23:37:32Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.88.0"
+    },
+    {
+      "id": 156177836,
+      "tag_name": "v1.89.0",
+      "name": "SAM v1.89.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-05-16T23:17:51Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.89.0"
+    },
+    {
+      "id": 170271726,
+      "tag_name": "v1.90.0",
+      "name": "SAM v1.90.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-08-15T00:15:58Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.90.0"
+    },
+    {
+      "id": 170921308,
+      "tag_name": "v1.91.0",
+      "name": "SAM v1.91.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-08-19T18:07:06Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.91.0"
+    },
+    {
+      "id": 184465974,
+      "tag_name": "v1.92.0",
+      "name": "SAM v1.92.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-11-09T01:03:29Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.92.0"
+    },
+    {
+      "id": 186714399,
+      "tag_name": "v1.93.0",
+      "name": "SAM v1.93.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-11-21T18:36:06Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.93.0"
+    },
+    {
+      "id": 186754543,
+      "tag_name": "v1.94.0",
+      "name": "SAM v1.94.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-11-21T22:23:52Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.94.0"
+    },
+    {
+      "id": 201776970,
+      "tag_name": "v1.95.0",
+      "name": "SAM v1.95.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-02-21T20:33:42Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.95.0"
+    },
+    {
+      "id": 210242547,
+      "tag_name": "v1.96.0",
+      "name": "SAM v1.96.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-04-03T23:39:20Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.96.0"
+    },
+    {
+      "id": 211743871,
+      "tag_name": "v1.97.0",
+      "name": "SAM v1.97.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-04-11T05:58:28Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.97.0"
+    },
+    {
+      "id": 223157195,
+      "tag_name": "v1.98.0",
+      "name": "SAM v1.98.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-04T18:09:57Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.98.0"
+    },
+    {
+      "id": 226523461,
+      "tag_name": "v1.99.0",
+      "name": "SAM v1.99.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-19T19:35:12Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.99.0"
+    },
+    {
+      "id": 243334114,
+      "tag_name": "v1.100.0",
+      "name": "SAM v1.100.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-08-28T23:17:38Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.100.0"
+    },
+    {
+      "id": 253716391,
+      "tag_name": "v1.101.0",
+      "name": "SAM v1.101.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-10T18:16:49Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.101.0"
+    },
+    {
+      "id": 263797321,
+      "tag_name": "v1.102.0",
+      "name": "SAM v1.102.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-19T21:50:05Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.102.0"
+    },
+    {
+      "id": 264436196,
+      "tag_name": "v1.103.0",
+      "name": "SAM v1.103.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-21T19:51:51Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.103.0"
+    },
+    {
+      "id": 266249091,
+      "tag_name": "v1.104.0",
+      "name": "SAM v1.104.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-01T01:08:59Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.104.0"
+    },
+    {
+      "id": 266821017,
+      "tag_name": "v1.105.0",
+      "name": "SAM v1.105.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-02T17:25:38Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.105.0"
+    },
+    {
+      "id": 271202714,
+      "tag_name": "v1.106.0",
+      "name": "SAM v1.106.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-17T19:08:10Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.106.0"
+    },
+    {
+      "id": 281310128,
+      "tag_name": "v1.107.0",
+      "name": "SAM v1.107.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-29T22:50:16Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.107.0"
+    },
+    {
+      "id": 298207843,
+      "tag_name": "v1.108.0",
+      "name": "SAM v1.108.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-17T23:59:42Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.108.0"
+    },
+    {
+      "id": 306834808,
+      "tag_name": "v1.109.0",
+      "name": "SAM v1.109.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-08T23:36:02Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.109.0"
+    },
+    {
+      "id": 325379413,
+      "tag_name": "v1.110.0",
+      "name": "SAM v1.110.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-19T21:22:19Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.110.0"
+    },
+    {
+      "id": 347775722,
+      "tag_name": "v1.111.0",
+      "name": "SAM v1.111.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-07-02T00:32:46Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.111.0"
+    },
+    {
+      "id": 370262086,
+      "tag_name": "v1.112.0",
+      "name": "SAM v1.112.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-08-13T23:16:55Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.112.0"
+    },
+    {
+      "id": 376043813,
+      "tag_name": "v1.113.0",
+      "name": "SAM v1.113.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-08-24T23:13:14Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.113.0"
+    },
+    {
+      "id": 407367257,
+      "tag_name": "v1.114.0",
+      "name": "SAM v1.114.0 Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-10-09T00:15:15Z",
+      "html_url": "https://github.com/aws/serverless-application-model/releases/tag/v1.114.0"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v1.112.0",
+      "sha": "b8cceaadfd362b9f26b303243c9325f88778dbee",
+      "date": "2026-08-13T22:31:04Z"
+    },
+    {
+      "name": "v1.111.0",
+      "sha": "d9d2dceef3532fc1831c7d721225c1a30c58b1ed",
+      "date": "2026-07-02T00:14:52Z"
+    },
+    {
+      "name": "v1.113.0",
+      "sha": "5012b64dbcf3bdfe1f8ffa5d005d6e47d3988329",
+      "date": "2026-08-24T22:49:01Z"
+    },
+    {
+      "name": "v1.109.0",
+      "sha": "d4144086cedaa250320cbac766cea0062923c808",
+      "date": "2026-04-08T23:09:15Z"
+    },
+    {
+      "name": "v1.110.0",
+      "sha": "48ad58436cf80f698129e0655731be3bc4261b9a",
+      "date": "2026-05-19T20:57:59Z"
+    },
+    {
+      "name": "v1.106.0",
+      "sha": "85d142dd23a91c9b0dcacaa4efb9ca9fdf415e75",
+      "date": "2025-12-17T18:56:05Z"
+    },
+    {
+      "name": "v1.108.0",
+      "sha": "f3189f89ff5f279231cfb2fe310a149df030d4d8",
+      "date": "2026-03-17T21:22:29Z"
+    },
+    {
+      "name": "v1.105.0",
+      "sha": "46d9d0caff831272a5b19117cf0f4720a9d8b82b",
+      "date": "2025-12-02T17:14:46Z"
+    },
+    {
+      "name": "v1.104.0",
+      "sha": "414132d5dfd58fd2c5f1d1067a6b42a7102fae9a",
+      "date": "2025-12-01T00:54:52Z"
+    },
+    {
+      "name": "v1.103.0",
+      "sha": "9a32a6d2955417b9e9319ad3c73a964ae12e99af",
+      "date": "2025-11-21T19:40:29Z"
+    },
+    {
+      "name": "v1.102.0",
+      "sha": "3cfec2f3944ae15c0fe37adc708464fb7e5ddebe",
+      "date": "2025-11-19T21:39:44Z"
+    },
+    {
+      "name": "v1.114.0",
+      "sha": "24e11e81cc4439e55fc96993d2e322db85e52411",
+      "date": "2026-10-08T23:52:10Z"
+    },
+    {
+      "name": "v1.99.0",
+      "sha": "e0f7eba2cfeb53242daa1f3f626a85d1db20c7a4",
+      "date": "2025-06-19T19:24:09Z"
+    },
+    {
+      "name": "v1.98.0",
+      "sha": "559d6b789050ff66d5cc2b46932ffbf3c17e5207",
+      "date": "2025-06-04T17:58:22Z"
+    },
+    {
+      "name": "v1.97.0",
+      "sha": "ae6b87924be62d6b3babebddc8586e72b1a3a5ff",
+      "date": "2025-04-11T05:20:24Z"
+    },
+    {
+      "name": "v1.107.0",
+      "sha": "75abccf1344fce3bcfcd903e5213b68ef596e806",
+      "date": "2026-01-29T22:29:45Z"
+    },
+    {
+      "name": "v1.96.0",
+      "sha": "cf92b7b09fe992f522c11fdab0ab88703f681783",
+      "date": "2025-04-03T23:28:29Z"
+    },
+    {
+      "name": "v1.95.0",
+      "sha": "a7da20c09ef049edd9b6d190611866fca16ddc36",
+      "date": "2025-02-20T22:30:52Z"
+    },
+    {
+      "name": "v1.94.0",
+      "sha": "b545b94e835deda498c11f20a10d0390442d0e36",
+      "date": "2024-11-21T22:13:31Z"
+    },
+    {
+      "name": "v1.101.0",
+      "sha": "2e03c25404942c36a6c620df94d2f5f1e09ecebe",
+      "date": "2025-10-10T18:05:15Z"
+    },
+    {
+      "name": "v1.93.0",
+      "sha": "564d7ad63008ed897ff0565bc8601f49c4e6b911",
+      "date": "2024-11-21T18:25:54Z"
+    },
+    {
+      "name": "v1.92.0",
+      "sha": "4960606c84bc63abc791902b06e39f828d0d1761",
+      "date": "2024-11-09T00:53:13Z"
+    },
+    {
+      "name": "v1.100.0",
+      "sha": "66da36da8037471cfd4ab3b43688cdce38fe979c",
+      "date": "2025-08-28T23:05:27Z"
+    },
+    {
+      "name": "v1.91.0",
+      "sha": "0388e20e21c2697e24adb72fa79230c59b5776e4",
+      "date": "2024-08-19T17:56:11Z"
+    },
+    {
+      "name": "v1.90.0",
+      "sha": "690bfff50bad3bd027e8c63731e7eb71e6237e7c",
+      "date": "2024-08-14T23:49:50Z"
+    },
+    {
+      "name": "v1.89.0",
+      "sha": "44562dc000b991b99c80798e4a35ff9fbe8397d9",
+      "date": "2024-05-16T23:02:22Z"
+    },
+    {
+      "name": "v1.88.0",
+      "sha": "e7ab7421e8699b782a8671e6393360797ef87641",
+      "date": "2024-05-06T18:11:47Z"
+    },
+    {
+      "name": "v1.87.0",
+      "sha": "8fb8f6cab6569e38f2b7f944a20d5f879b5f3325",
+      "date": "2024-04-04T18:38:19Z"
+    },
+    {
+      "name": "v1.86.0",
+      "sha": "5a5ab3cef9bcef8e24884dc2b5d3c5fdf4247437",
+      "date": "2024-03-07T19:17:43Z"
+    },
+    {
+      "name": "v1.85.0",
+      "sha": "cf743223cf7d320bcd05cf8b7a8885c48a04dbc0",
+      "date": "2024-02-15T18:47:35Z"
+    },
+    {
+      "name": "v1.84.0",
+      "sha": "e8d1da7d6e6c3a4b1c197dbec3e5caca7b220ad0",
+      "date": "2024-02-03T00:14:32Z"
+    },
+    {
+      "name": "v1.82.0",
+      "sha": "770a7ea614fed3ceefede993739cdab912975d7b",
+      "date": "2023-12-05T22:49:18Z"
+    },
+    {
+      "name": "v1.81.0",
+      "sha": "b16466700a58a90be99c7bbbfe2595c6152b37ea",
+      "date": "2023-11-23T00:40:58Z"
+    },
+    {
+      "name": "v1.83.0",
+      "sha": "7473bd7e29fdc385dfe81ac09fd603c42ae9e8c7",
+      "date": "2024-01-05T00:35:37Z"
+    },
+    {
+      "name": "v1.80.0",
+      "sha": "cb11c8e6b79f9fe620bba8149b12792f4c8e0b0f",
+      "date": "2023-11-16T17:10:42Z"
+    },
+    {
+      "name": "v1.79.0",
+      "sha": "d3b1823e728d73e9712b1462664ec37f70dca476",
+      "date": "2023-10-23T22:51:49Z"
+    },
+    {
+      "name": "v1.78.0",
+      "sha": "3966719c04801d86ddf618ab2229b7acf78464aa",
+      "date": "2023-10-13T20:14:28Z"
+    },
+    {
+      "name": "v1.77.0",
+      "sha": "fff021350727234a30eb57ff6ac5cbf800226b9e",
+      "date": "2023-10-05T21:28:07Z"
+    },
+    {
+      "name": "v1.76.0",
+      "sha": "3d2ec3df74e98e43e37989c9a92538cd8c20628f",
+      "date": "2023-09-28T20:57:52Z"
+    },
+    {
+      "name": "v1.74.0",
+      "sha": "43f5744b1712c2bd4b63c3c19aa0e205d10009b1",
+      "date": "2023-08-31T22:35:51Z"
+    },
+    {
+      "name": "v1.75.0",
+      "sha": "c928dc459aa057afe8f25c3a695ad6ac61d22c60",
+      "date": "2023-09-19T20:43:17Z"
+    },
+    {
+      "name": "v1.73.0",
+      "sha": "35ecafcd42007bfe360d3ed7aca1e505e5ca29a7",
+      "date": "2023-08-09T23:51:58Z"
+    },
+    {
+      "name": "v1.70.0",
+      "sha": "75b78580f4514925164ef126757f7ead88cdce4c",
+      "date": "2023-06-22T18:23:40Z"
+    },
+    {
+      "name": "v1.72.0",
+      "sha": "0addbea6711353dc88718e39ee6d21921790352e",
+      "date": "2023-07-29T00:48:40Z"
+    },
+    {
+      "name": "v1.69.0",
+      "sha": "063ac274bd362c6312f754a1aff270bd5de93dc0",
+      "date": "2023-06-15T18:20:23Z"
+    },
+    {
+      "name": "v1.68.0",
+      "sha": "12a7b027aa4e2366292a01bcdeee59c01efd257a",
+      "date": "2023-05-25T18:47:48Z"
+    },
+    {
+      "name": "v1.67.0",
+      "sha": "d1009836222780928b6656a55225ea376a4a1b97",
+      "date": "2023-05-16T19:06:22Z"
+    },
+    {
+      "name": "v1.66.0",
+      "sha": "8bfcb92158a8633e340539019e29cada9f6af148",
+      "date": "2023-04-27T19:47:36Z"
+    },
+    {
+      "name": "v1.65.0",
+      "sha": "5252262f516ea1c7cffa83fecf9414ac212ced99",
+      "date": "2023-04-19T22:58:00Z"
+    },
+    {
+      "name": "v1.64.0",
+      "sha": "c916e6664633ceb34e2ff40417616dcff0642fef",
+      "date": "2023-04-06T15:42:23Z"
+    },
+    {
+      "name": "v1.61.0",
+      "sha": "3879ea724886933330092db21d9aef222e2f18f6",
+      "date": "2023-03-10T20:01:22Z"
+    },
+    {
+      "name": "v1.62.0",
+      "sha": "1e5b158d82d12b8f15e4968d5032b4c8475d9438",
+      "date": "2023-03-14T22:23:30Z"
+    },
+    {
+      "name": "v1.63.0",
+      "sha": "1e29fc81aa1c0eeb2a752b2b54e267d98933ca0b",
+      "date": "2023-03-27T22:12:53Z"
+    },
+    {
+      "name": "v1.60.1",
+      "sha": "1b96427201097b89ce1d4ddbff54e342f3933e77",
+      "date": "2023-02-28T21:37:19Z"
+    },
+    {
+      "name": "v1.58.1",
+      "sha": "3a2da9eb89e5be89b0b46183d0950b7265987aea",
+      "date": "2023-01-24T19:22:00Z"
+    },
+    {
+      "name": "v1.59.0",
+      "sha": "48eb41da18d12c007cdc12a3d08193728de33d23",
+      "date": "2023-02-08T21:18:46Z"
+    },
+    {
+      "name": "v1.57.0",
+      "sha": "f7ec351c6765dd4469eb81c97b26229101a1afad",
+      "date": "2023-01-12T17:25:24Z"
+    },
+    {
+      "name": "v1.58.0",
+      "sha": "19f475ede992e134a84fe7fbab7dfea9fe4fd866",
+      "date": "2023-01-23T23:17:52Z"
+    },
+    {
+      "name": "v1.60.0",
+      "sha": "480be09b609e7fad5d27d77d420af97489b32096",
+      "date": "2023-02-27T19:00:14Z"
+    },
+    {
+      "name": "v1.55.0",
+      "sha": "7009eecb931f02465dbf3c590251d9383db9cfb5",
+      "date": "2022-11-29T03:17:24Z"
+    },
+    {
+      "name": "v1.53.0",
+      "sha": "b534773db6114e0d64ad574b733b395d4f57a0c1",
+      "date": "2022-10-11T17:10:58Z"
+    },
+    {
+      "name": "v1.56.0",
+      "sha": "89e6214a6033c7d4c43eb711a4cd2d83c42f34d0",
+      "date": "2023-01-05T21:41:34Z"
+    },
+    {
+      "name": "v1.52.0",
+      "sha": "d39650ff0250d893fa26b45a73527edde4bf7f44",
+      "date": "2022-10-06T18:57:42Z"
+    },
+    {
+      "name": "v1.51.0",
+      "sha": "c56bded5d8e88175d9acd86291dec796b65ae2ef",
+      "date": "2022-09-13T18:17:17Z"
+    },
+    {
+      "name": "v1.50.0",
+      "sha": "c8d94aae9265f1025b04b4dccc5cfff7b409be4b",
+      "date": "2022-08-17T16:08:24Z"
+    },
+    {
+      "name": "v1.54.0",
+      "sha": "9c90df7654f179ec201f72fe594c6cac0ec01ac6",
+      "date": "2022-11-10T19:37:54Z"
+    },
+    {
+      "name": "v1.49.0",
+      "sha": "85054512b46db77417183881b74090a1daa4fdf7",
+      "date": "2022-08-08T18:08:45Z"
+    },
+    {
+      "name": "v1.47.0",
+      "sha": "6b0afc507e0795061e8a094bf03f35e895baf50e",
+      "date": "2022-07-12T19:49:10Z"
+    },
+    {
+      "name": "v1.48.0",
+      "sha": "4c3f5f8ebc05d5870d792ad2d6e7c1590c2350f6",
+      "date": "2022-07-25T20:14:36Z"
+    },
+    {
+      "name": "v1.45.0",
+      "sha": "e38e0dc546299b889a7fab2fc3dd7d60ac133748",
+      "date": "2022-04-06T17:54:53Z"
+    },
+    {
+      "name": "v1.44.0",
+      "sha": "ce9a905c8546b74a3b3bd9d87df96b6da58bba2c",
+      "date": "2022-03-28T17:54:00Z"
+    },
+    {
+      "name": "v1.46.0",
+      "sha": "496d3abad7988358b14c86d4c971dd33a8f60cad",
+      "date": "2022-06-07T16:19:35Z"
+    },
+    {
+      "name": "v1.43.0",
+      "sha": "0eebbec8b498ab1f06220460560e5fa6d19461a1",
+      "date": "2022-03-22T21:30:42Z"
+    },
+    {
+      "name": "v1.42.0",
+      "sha": "db25683f9d2784efe44c3460f38600f15d0251e4",
+      "date": "2021-11-23T19:48:17Z"
+    },
+    {
+      "name": "v1.40.0",
+      "sha": "153ad4393435b64d84803d805b40366f3172e459",
+      "date": "2021-10-08T20:09:04Z"
+    },
+    {
+      "name": "v1.37.0",
+      "sha": "25fa8a8dad8db28fd058fcd0173c73945cacc77c",
+      "date": "2021-07-06T15:39:24Z"
+    },
+    {
+      "name": "v1.39.0",
+      "sha": "5d602048edd51a30d55c65e710fb9b39d853618e",
+      "date": "2021-09-29T19:53:07Z"
+    },
+    {
+      "name": "v1.38.0",
+      "sha": "4ef6093f6f0c9e3dbe3545dff47fc1f7b8154f0f",
+      "date": "2021-07-19T15:04:58Z"
+    },
+    {
+      "name": "v1.36.0",
+      "sha": "a3a99d3b8d4c6b0d86a703ab41cf06b58a43d30e",
+      "date": "2021-05-31T20:03:32Z"
+    },
+    {
+      "name": "v1.33.0",
+      "sha": "d2f18e76873541484410adc49a8816ece50c2e58",
+      "date": "2020-12-17T20:33:29Z"
+    },
+    {
+      "name": "v1.32.0",
+      "sha": "101fa439abe418994e89a343228ffa0a4c3d5c13",
+      "date": "2020-12-01T16:47:12Z"
+    },
+    {
+      "name": "v1.34.0",
+      "sha": "6da6a5b96fb1598d36ee89b397204389a7f65263",
+      "date": "2021-01-30T00:08:16Z"
+    },
+    {
+      "name": "v1.35.0",
+      "sha": "c5d0ed265499c28ba6cab1fe4b403346945e06e3",
+      "date": "2021-03-12T18:04:03Z"
+    },
+    {
+      "name": "v1.30.1",
+      "sha": "5a780d4378f43e4a1306964f01daa0c4644c97e4",
+      "date": "2020-11-19T02:49:15Z"
+    },
+    {
+      "name": "v1.31.0",
+      "sha": "2707bb8db5679de8c4c7c3dd2e098f72cc6ed1cd",
+      "date": "2020-11-23T19:39:20Z"
+    },
+    {
+      "name": "v1.30.0",
+      "sha": "e0464cb2aa908be34c5bdf5c0761d246de6e4f26",
+      "date": "2020-11-18T18:25:39Z"
+    },
+    {
+      "name": "v1.29.0",
+      "sha": "815b6aa55ccf4e58540f307925f3486c4f758dcf",
+      "date": "2020-11-05T22:09:50Z"
+    },
+    {
+      "name": "v1.28.1",
+      "sha": "df07ee4de5c2fc9f65c656214fe4526077f6e09b",
+      "date": "2020-10-28T21:39:08Z"
+    },
+    {
+      "name": "v1.27.0",
+      "sha": "2ef7591734356a7bfea0dea2d9e73a0235675cee",
+      "date": "2020-09-18T19:58:35Z"
+    },
+    {
+      "name": "v1.25.0",
+      "sha": "85501accf69580688d4e493e566016134f331eca",
+      "date": "2020-06-16T18:27:11Z"
+    },
+    {
+      "name": "v1.23.0",
+      "sha": "bb39b178a824a4fadffc06b7d6524332bb55cb3f",
+      "date": "2020-05-06T18:24:52Z"
+    },
+    {
+      "name": "v1.26.0",
+      "sha": "c96cda1b540fd01a8c22ee486351d734604d8fd4",
+      "date": "2020-08-11T21:20:07Z"
+    },
+    {
+      "name": "v1.20.1",
+      "sha": "9de1f6a99d9b62277ad6debe3a391a040d02564a",
+      "date": "2020-01-15T21:49:50Z"
+    },
+    {
+      "name": "v1.22.0",
+      "sha": "a12feb649d5012fe224350b9ffb234d523e4bd9c",
+      "date": "2020-03-16T20:39:40Z"
+    },
+    {
+      "name": "v1.24.0",
+      "sha": "d17bc0987e297dd54e6d48305add19c2a3d6945a",
+      "date": "2020-05-27T15:52:18Z"
+    },
+    {
+      "name": "v1.21.0",
+      "sha": "6a278ff772aaa78fd2b1c761a25ee58924e6b2b0",
+      "date": "2020-02-21T21:34:08Z"
+    },
+    {
+      "name": "v1.19.1",
+      "sha": "1dc386e2e5cbc06e7ebd8390b21f5cd92de974fe",
+      "date": "2019-12-23T19:57:32Z"
+    },
+    {
+      "name": "v1.18.0",
+      "sha": "818b4eff617a4bdefe5cd1df84c71e20cd21f6de",
+      "date": "2019-12-03T22:37:52Z"
+    },
+    {
+      "name": "v1.19.0",
+      "sha": "a9388b64147e12426ba585482ee96f81db2dd25a",
+      "date": "2019-12-04T18:57:17Z"
+    },
+    {
+      "name": "v1.20.0",
+      "sha": "7f3816e137a268f1a48984c62ba0da4043bfed57",
+      "date": "2020-01-13T23:03:00Z"
+    },
+    {
+      "name": "v1.17.0",
+      "sha": "69822c1e0e01b928ccc65069db660ed81720f8e3",
+      "date": "2019-12-02T17:54:01Z"
+    },
+    {
+      "name": "v1.16.0",
+      "sha": "27b5934de46c42d47ba1484d5432310cac694b25",
+      "date": "2019-11-26T16:33:15Z"
+    },
+    {
+      "name": "v1.15.1",
+      "sha": "2de2304916aadad3f5d6da5b29dce9f9eae081c3",
+      "date": "2019-10-14T18:48:39Z"
+    },
+    {
+      "name": "v1.14.0",
+      "sha": "0ff9a5e4f39fde668adada5646938647e9bf8905",
+      "date": "2019-08-29T20:01:47Z"
+    },
+    {
+      "name": "v1.15.0",
+      "sha": "4fa5d6a4ec60e82681daae6f0ff9d7669642c266",
+      "date": "2019-10-03T22:36:49Z"
+    },
+    {
+      "name": "v1.13.2",
+      "sha": "e7c411787f060cf1eb00c84787effadd27b77972",
+      "date": "2019-08-14T22:31:20Z"
+    },
+    {
+      "name": "v1.13.1",
+      "sha": "9812d1d6b379b9671bd8a5d56ab901df6f58f624",
+      "date": "2019-08-06T22:59:50Z"
+    },
+    {
+      "name": "v1.13.0",
+      "sha": "0773ce54d299f0abeedc255ca35261d10bbc01c0",
+      "date": "2019-07-26T19:09:09Z"
+    },
+    {
+      "name": "v1.12.0",
+      "sha": "0f1a0823546acc7369a9059de302bcac4267d2eb",
+      "date": "2019-06-26T19:07:20Z"
+    },
+    {
+      "name": "v1.11.0",
+      "sha": "cccb0c96b5c91e53355ebc07e542467303a5eedd",
+      "date": "2019-04-25T22:03:58Z"
+    },
+    {
+      "name": "v1.8.0",
+      "sha": "ee7e6cd84cea349d7698b2a8d6695f554b5aa302",
+      "date": "2018-10-25T23:42:44Z"
+    },
+    {
+      "name": "v1.10.0",
+      "sha": "805cc85bc26cfda16e9611c047e38f78560ad6e6",
+      "date": "2019-03-06T22:14:03Z"
+    },
+    {
+      "name": "v1.9.0",
+      "sha": "7b4c7b03b662e2bcfebe14441a142ec19d63bd36",
+      "date": "2018-11-29T17:42:44Z"
+    },
+    {
+      "name": "v1.7.0",
+      "sha": "5adc4efa58097b9a2a7d81bf76e81363586952a7",
+      "date": "2018-09-25T20:31:21Z"
+    },
+    {
+      "name": "v1.2.0",
+      "sha": "192ccc3ac5b487cec242b5d75dde4b8ab28a02c8",
+      "date": "2017-06-01T17:50:21Z"
+    },
+    {
+      "name": "v1.6.1",
+      "sha": "e8f74f56d19af0b5d0e3e534137a7a875f7d1f7a",
+      "date": "2018-06-28T22:29:41Z"
+    },
+    {
+      "name": "v1.1.0",
+      "sha": "8cca3d5c0da588b54dd5c1a924a8ad0b82987000",
+      "date": "2017-02-17T18:56:29Z"
+    },
+    {
+      "name": "1.5",
+      "sha": "7fe99e90b11453b29cb58695dc456e213ec2daf0",
+      "date": "2018-04-04T17:42:25Z"
+    },
+    {
+      "name": "1.4.0",
+      "sha": "ed2cdd53d5320a2a8b2d1c6079c7b1e60d6a0ee8",
+      "date": "2018-03-12T22:43:24Z"
+    },
+    {
+      "name": "1.3.1",
+      "sha": "a9b00e1767cf6233dbe60b1f435d7a11d36b4973",
+      "date": "2017-11-30T18:47:12Z"
+    },
+    {
+      "name": "1.3.0",
+      "sha": "c686949a314972c08b887d243be6f02837b3a81c",
+      "date": "2017-11-29T00:56:45Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v1.1.0",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v1.2.0",
+      "previous_release": "v1.1.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "1.3.0",
+      "previous_release": "v1.2.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "1.3.1",
+      "previous_release": "1.3.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "1.4.0",
+      "previous_release": "1.3.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "1.5",
+      "previous_release": "1.4.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.7.0",
+      "previous_release": "1.5",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.6.1",
+      "previous_release": "v1.7.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.8.0",
+      "previous_release": "v1.6.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.9.0",
+      "previous_release": "v1.8.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.10.0",
+      "previous_release": "v1.9.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.11.0",
+      "previous_release": "v1.10.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.12.0",
+      "previous_release": "v1.11.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.13.0",
+      "previous_release": "v1.12.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.13.1",
+      "previous_release": "v1.13.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.13.2",
+      "previous_release": "v1.13.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.14.0",
+      "previous_release": "v1.13.2",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.15.0",
+      "previous_release": "v1.14.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.15.1",
+      "previous_release": "v1.15.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.16.0",
+      "previous_release": "v1.15.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.17.0",
+      "previous_release": "v1.16.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.18.0",
+      "previous_release": "v1.17.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.19.0",
+      "previous_release": "v1.18.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.19.1",
+      "previous_release": "v1.19.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.20.0",
+      "previous_release": "v1.19.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.20.1",
+      "previous_release": "v1.20.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.21.0",
+      "previous_release": "v1.20.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.22.0",
+      "previous_release": "v1.21.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.23.0",
+      "previous_release": "v1.22.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.24.0",
+      "previous_release": "v1.23.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.25.0",
+      "previous_release": "v1.24.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.26.0",
+      "previous_release": "v1.25.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.27.0",
+      "previous_release": "v1.26.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.28.1",
+      "previous_release": "v1.27.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.29.0",
+      "previous_release": "v1.28.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.30.0",
+      "previous_release": "v1.29.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.30.1",
+      "previous_release": "v1.30.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.31.0",
+      "previous_release": "v1.30.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.32.0",
+      "previous_release": "v1.31.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.33.0",
+      "previous_release": "v1.32.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.34.0",
+      "previous_release": "v1.33.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.35.0",
+      "previous_release": "v1.34.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.36.0",
+      "previous_release": "v1.35.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.37.0",
+      "previous_release": "v1.36.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.38.0",
+      "previous_release": "v1.37.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.39.0",
+      "previous_release": "v1.38.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.40.0",
+      "previous_release": "v1.39.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.42.0",
+      "previous_release": "v1.40.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.43.0",
+      "previous_release": "v1.42.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.44.0",
+      "previous_release": "v1.43.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.45.0",
+      "previous_release": "v1.44.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.46.0",
+      "previous_release": "v1.45.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.47.0",
+      "previous_release": "v1.46.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.48.0",
+      "previous_release": "v1.47.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.49.0",
+      "previous_release": "v1.48.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.50.0",
+      "previous_release": "v1.49.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.51.0",
+      "previous_release": "v1.50.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.52.0",
+      "previous_release": "v1.51.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.53.0",
+      "previous_release": "v1.52.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.54.0",
+      "previous_release": "v1.53.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.55.0",
+      "previous_release": "v1.54.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.56.0",
+      "previous_release": "v1.55.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.57.0",
+      "previous_release": "v1.56.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.58.0",
+      "previous_release": "v1.57.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.58.1",
+      "previous_release": "v1.58.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.59.0",
+      "previous_release": "v1.58.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.60.0",
+      "previous_release": "v1.59.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.60.1",
+      "previous_release": "v1.60.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.61.0",
+      "previous_release": "v1.60.1",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.62.0",
+      "previous_release": "v1.61.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.63.0",
+      "previous_release": "v1.62.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.64.0",
+      "previous_release": "v1.63.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.65.0",
+      "previous_release": "v1.64.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.66.0",
+      "previous_release": "v1.65.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.67.0",
+      "previous_release": "v1.66.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.68.0",
+      "previous_release": "v1.67.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.69.0",
+      "previous_release": "v1.68.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.70.0",
+      "previous_release": "v1.69.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.71.0",
+      "previous_release": "v1.70.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.72.0",
+      "previous_release": "v1.71.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.73.0",
+      "previous_release": "v1.72.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.74.0",
+      "previous_release": "v1.73.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.75.0",
+      "previous_release": "v1.74.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.76.0",
+      "previous_release": "v1.75.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.77.0",
+      "previous_release": "v1.76.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.78.0",
+      "previous_release": "v1.77.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.79.0",
+      "previous_release": "v1.78.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.80.0",
+      "previous_release": "v1.79.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.81.0",
+      "previous_release": "v1.80.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.82.0",
+      "previous_release": "v1.81.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.83.0",
+      "previous_release": "v1.82.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.84.0",
+      "previous_release": "v1.83.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.85.0",
+      "previous_release": "v1.84.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.86.0",
+      "previous_release": "v1.85.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.87.0",
+      "previous_release": "v1.86.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.88.0",
+      "previous_release": "v1.87.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.89.0",
+      "previous_release": "v1.88.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.90.0",
+      "previous_release": "v1.89.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.91.0",
+      "previous_release": "v1.90.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.92.0",
+      "previous_release": "v1.91.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.93.0",
+      "previous_release": "v1.92.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.94.0",
+      "previous_release": "v1.93.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.95.0",
+      "previous_release": "v1.94.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.96.0",
+      "previous_release": "v1.95.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.97.0",
+      "previous_release": "v1.96.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.98.0",
+      "previous_release": "v1.97.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.99.0",
+      "previous_release": "v1.98.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.100.0",
+      "previous_release": "v1.99.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.101.0",
+      "previous_release": "v1.100.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.102.0",
+      "previous_release": "v1.101.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.103.0",
+      "previous_release": "v1.102.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.104.0",
+      "previous_release": "v1.103.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.105.0",
+      "previous_release": "v1.104.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.106.0",
+      "previous_release": "v1.105.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.107.0",
+      "previous_release": "v1.106.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.108.0",
+      "previous_release": "v1.107.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.109.0",
+      "previous_release": "v1.108.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.110.0",
+      "previous_release": "v1.109.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.111.0",
+      "previous_release": "v1.110.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.112.0",
+      "previous_release": "v1.111.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.113.0",
+      "previous_release": "v1.112.0",
+      "commits": null,
+      "ignored_reason": "compare_404"
+    },
+    {
+      "release": "v1.114.0",
+      "previous_release": "v1.113.0",
+      "commits": [
+        {
+          "sha": "bbc6a9ab3e339e5a2cdaa14662ef4515280245da",
+          "author_date": "2026-08-13T23:05:20Z",
+          "message": "Merge pull request #3976 from aws/tmp/1786660321/main\n\nMerge main to develop",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/bbc6a9ab3e339e5a2cdaa14662ef4515280245da"
+        },
+        {
+          "sha": "b794d0addee40893da11e2ee1ba8542bbd9e25bd",
+          "author_date": "2026-08-24T22:37:35Z",
+          "message": "test(capacity-provider): add integration test for ManagedResourceTags (#3983)",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/b794d0addee40893da11e2ee1ba8542bbd9e25bd"
+        },
+        {
+          "sha": "d0465d00c866fd4e3aa7c50f144f62766225235f",
+          "author_date": "2026-09-02T18:41:15Z",
+          "message": "Merge main to develop (#3986)\n\nCo-authored-by: aws-sam-cli-bot <46753707+aws-sam-cli-bot@users.noreply.github.com>\nCo-authored-by: Renato Valenzuela <37676028+valerena@users.noreply.github.com>",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/d0465d00c866fd4e3aa7c50f144f62766225235f"
+        },
+        {
+          "sha": "1201464404b22e6af4e72b3327f63250f9ee6f3c",
+          "author_date": "2026-09-02T18:48:18Z",
+          "message": "test: pin cfn-lint to 1.55 to prevent random failures (#3989)",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/1201464404b22e6af4e72b3327f63250f9ee6f3c"
+        },
+        {
+          "sha": "dfa5c8ff6394de42076d21450026a08f449a1d53",
+          "author_date": "2026-09-02T19:15:42Z",
+          "message": "chore(schema): update (#3988)\n\nCo-authored-by: github-actions <github-actions@github.com>",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/dfa5c8ff6394de42076d21450026a08f449a1d53"
+        },
+        {
+          "sha": "d24401dc2b62f62fd2251b86449b444f8ae4fde4",
+          "author_date": "2026-09-02T19:59:57Z",
+          "message": "feat: improve AuthType validation for WebSocketApi (#3990)",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/d24401dc2b62f62fd2251b86449b444f8ae4fde4"
+        },
+        {
+          "sha": "21937fd00a4900457eba308380a6217e55094f56",
+          "author_date": "2026-09-11T21:28:20Z",
+          "message": "fix(integration-tests): retry SAR ListApplications on throttling in setup fixture (#3993)",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/21937fd00a4900457eba308380a6217e55094f56"
+        },
+        {
+          "sha": "ebcce20004bff9d43149eaeda3ca8204a5a2ae14",
+          "author_date": "2026-09-25T16:53:09Z",
+          "message": "fix(integration-tests): make MyFirstApiKey value stack-scoped (#3997)",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/ebcce20004bff9d43149eaeda3ca8204a5a2ae14"
+        },
+        {
+          "sha": "ad89eb8352b398ae1a301ac20a98dec664048864",
+          "author_date": "2026-10-08T22:01:58Z",
+          "message": "feat: add OAuth and IAM auth support for self-managed Kafka",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/ad89eb8352b398ae1a301ac20a98dec664048864"
+        },
+        {
+          "sha": "136d6443d2ecda56c126a57b9cd0e10270827c04",
+          "author_date": "2026-10-08T22:01:58Z",
+          "message": "chore: bump version to 1.114.0",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/136d6443d2ecda56c126a57b9cd0e10270827c04"
+        },
+        {
+          "sha": "a546a246230519e07e2bb6743584d64614c45619",
+          "author_date": "2026-10-08T22:10:59Z",
+          "message": "Merge branch 'main' into release-v1.114.0",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/a546a246230519e07e2bb6743584d64614c45619"
+        },
+        {
+          "sha": "24e11e81cc4439e55fc96993d2e322db85e52411",
+          "author_date": "2026-10-08T23:52:10Z",
+          "message": "Merge pull request #4009 from aws/release-v1.114.0\n\nRelease 1.114.0 (to main)",
+          "html_url": "https://github.com/aws/serverless-application-model/commit/24e11e81cc4439e55fc96993d2e322db85e52411"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [
+      {
+        "id": 18955359758,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-30T21:19:59Z",
+        "updated_at": "2025-10-30T21:27:09Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18955359758"
+      },
+      {
+        "id": 18955359763,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-30T21:19:59Z",
+        "updated_at": "2025-10-30T21:21:20Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18955359763"
+      },
+      {
+        "id": 18791876832,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-24T20:53:50Z",
+        "updated_at": "2025-10-24T21:01:11Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18791876832"
+      },
+      {
+        "id": 18791876845,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-24T20:53:50Z",
+        "updated_at": "2025-10-24T20:55:19Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18791876845"
+      },
+      {
+        "id": 18415299749,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-10T18:35:52Z",
+        "updated_at": "2025-10-10T18:43:12Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18415299749"
+      },
+      {
+        "id": 18415299750,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-10T18:35:52Z",
+        "updated_at": "2025-10-10T18:37:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18415299750"
+      },
+      {
+        "id": 18387749819,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-09T20:05:35Z",
+        "updated_at": "2025-10-09T20:12:52Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18387749819"
+      },
+      {
+        "id": 18387749846,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-09T20:05:35Z",
+        "updated_at": "2025-10-09T20:07:01Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18387749846"
+      },
+      {
+        "id": 18327807718,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-07T22:22:13Z",
+        "updated_at": "2025-10-07T22:29:26Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18327807718"
+      },
+      {
+        "id": 18327807719,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-07T22:22:13Z",
+        "updated_at": "2025-10-07T22:23:31Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18327807719"
+      },
+      {
+        "id": 18326118467,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-07T21:02:45Z",
+        "updated_at": "2025-10-07T21:10:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18326118467"
+      },
+      {
+        "id": 18326118531,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-07T21:02:45Z",
+        "updated_at": "2025-10-07T21:04:05Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18326118531"
+      },
+      {
+        "id": 18293976260,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-06T20:45:46Z",
+        "updated_at": "2025-10-06T20:47:08Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18293976260"
+      },
+      {
+        "id": 18293976366,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-06T20:45:46Z",
+        "updated_at": "2025-10-06T20:52:55Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/18293976366"
+      }
+    ],
+    "2025-11": [
+      {
+        "id": 19582518813,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-21T20:22:23Z",
+        "updated_at": "2025-11-21T20:29:40Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19582518813"
+      },
+      {
+        "id": 19582518775,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-21T20:22:23Z",
+        "updated_at": "2025-11-21T20:24:07Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19582518775"
+      },
+      {
+        "id": 19518620207,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-19T22:34:14Z",
+        "updated_at": "2025-11-19T22:37:01Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19518620207"
+      },
+      {
+        "id": 19518620209,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-19T22:34:14Z",
+        "updated_at": "2025-11-19T22:35:36Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19518620209"
+      },
+      {
+        "id": 19347005852,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-13T21:53:48Z",
+        "updated_at": "2025-11-13T22:01:05Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19347005852"
+      },
+      {
+        "id": 19347005818,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-13T21:53:47Z",
+        "updated_at": "2025-11-13T21:55:06Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19347005818"
+      },
+      {
+        "id": 19086986877,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T00:18:14Z",
+        "updated_at": "2025-11-05T00:19:37Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19086986877"
+      },
+      {
+        "id": 19086986880,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T00:18:14Z",
+        "updated_at": "2025-11-05T00:25:28Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19086986880"
+      },
+      {
+        "id": 19080527975,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T19:30:42Z",
+        "updated_at": "2025-11-04T19:38:03Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19080527975"
+      },
+      {
+        "id": 19080527978,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T19:30:42Z",
+        "updated_at": "2025-11-04T19:32:02Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19080527978"
+      }
+    ],
+    "2025-12": [
+      {
+        "id": 20601403918,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T16:46:36Z",
+        "updated_at": "2025-12-30T16:54:26Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20601403918"
+      },
+      {
+        "id": 20601403920,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T16:46:36Z",
+        "updated_at": "2025-12-30T16:47:58Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20601403920"
+      },
+      {
+        "id": 20249276729,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-15T22:15:57Z",
+        "updated_at": "2025-12-15T22:17:17Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20249276729"
+      },
+      {
+        "id": 20249276771,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-15T22:15:57Z",
+        "updated_at": "2025-12-15T22:23:29Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20249276771"
+      },
+      {
+        "id": 20182878428,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-12T23:32:59Z",
+        "updated_at": "2025-12-12T23:34:25Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20182878428"
+      },
+      {
+        "id": 20182878430,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-12T23:32:59Z",
+        "updated_at": "2025-12-12T23:40:28Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20182878430"
+      },
+      {
+        "id": 20115424226,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-10T22:33:44Z",
+        "updated_at": "2025-12-10T22:35:05Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20115424226"
+      },
+      {
+        "id": 20115424230,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-10T22:33:44Z",
+        "updated_at": "2025-12-10T22:41:22Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20115424230"
+      },
+      {
+        "id": 19979259412,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-05T23:49:17Z",
+        "updated_at": "2025-12-05T23:56:50Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19979259412"
+      },
+      {
+        "id": 19979259398,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-05T23:49:17Z",
+        "updated_at": "2025-12-05T23:50:34Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19979259398"
+      },
+      {
+        "id": 19947664870,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-04T23:46:30Z",
+        "updated_at": "2025-12-04T23:47:52Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19947664870"
+      },
+      {
+        "id": 19947664843,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-04T23:46:30Z",
+        "updated_at": "2025-12-04T23:54:05Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19947664843"
+      },
+      {
+        "id": 19912438592,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-03T23:37:40Z",
+        "updated_at": "2025-12-03T23:45:10Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19912438592"
+      },
+      {
+        "id": 19912438583,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-03T23:37:40Z",
+        "updated_at": "2025-12-03T23:39:00Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19912438583"
+      },
+      {
+        "id": 19867544209,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-02T17:24:28Z",
+        "updated_at": "2025-12-02T17:31:52Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19867544209"
+      },
+      {
+        "id": 19867544234,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-02T17:24:28Z",
+        "updated_at": "2025-12-02T17:25:54Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19867544234"
+      },
+      {
+        "id": 19808148852,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-01T01:23:32Z",
+        "updated_at": "2025-12-01T01:24:53Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19808148852"
+      },
+      {
+        "id": 19808148845,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-12-01T01:23:32Z",
+        "updated_at": "2025-12-01T01:26:42Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/19808148845"
+      }
+    ],
+    "2026-01": [
+      {
+        "id": 21506820686,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-30T06:33:14Z",
+        "updated_at": "2026-01-30T06:34:49Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21506820686"
+      },
+      {
+        "id": 21506820682,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-30T06:33:14Z",
+        "updated_at": "2026-01-30T06:42:10Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21506820682"
+      },
+      {
+        "id": 21379351468,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T00:21:18Z",
+        "updated_at": "2026-01-27T00:25:35Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21379351468"
+      },
+      {
+        "id": 21379351473,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T00:21:18Z",
+        "updated_at": "2026-01-27T00:33:02Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21379351473"
+      },
+      {
+        "id": 21266289392,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T21:55:33Z",
+        "updated_at": "2026-01-22T21:57:08Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21266289392"
+      },
+      {
+        "id": 21266289390,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T21:55:33Z",
+        "updated_at": "2026-01-22T22:04:23Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21266289390"
+      },
+      {
+        "id": 21187258249,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-20T21:06:59Z",
+        "updated_at": "2026-01-20T21:15:48Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21187258249"
+      },
+      {
+        "id": 21187258194,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-20T21:06:59Z",
+        "updated_at": "2026-01-20T21:08:27Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21187258194"
+      },
+      {
+        "id": 20975387791,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T22:47:40Z",
+        "updated_at": "2026-01-13T22:49:04Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20975387791"
+      },
+      {
+        "id": 20975387776,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T22:47:40Z",
+        "updated_at": "2026-01-13T22:56:52Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20975387776"
+      },
+      {
+        "id": 20975147445,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T22:37:56Z",
+        "updated_at": "2026-01-13T22:39:16Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20975147445"
+      },
+      {
+        "id": 20975147462,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T22:37:56Z",
+        "updated_at": "2026-01-13T22:46:05Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20975147462"
+      },
+      {
+        "id": 20837175734,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-09T00:45:36Z",
+        "updated_at": "2026-01-09T00:46:52Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20837175734"
+      },
+      {
+        "id": 20837175719,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-09T00:45:36Z",
+        "updated_at": "2026-01-09T00:53:51Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20837175719"
+      },
+      {
+        "id": 20836352401,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-09T00:09:47Z",
+        "updated_at": "2026-01-09T00:17:48Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20836352401"
+      },
+      {
+        "id": 20836352377,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-09T00:09:47Z",
+        "updated_at": "2026-01-09T00:11:07Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20836352377"
+      },
+      {
+        "id": 20833414098,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-08T22:07:59Z",
+        "updated_at": "2026-01-08T22:09:25Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20833414098"
+      },
+      {
+        "id": 20833414150,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-08T22:07:59Z",
+        "updated_at": "2026-01-08T22:15:48Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20833414150"
+      },
+      {
+        "id": 20799711256,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-07T23:18:39Z",
+        "updated_at": "2026-01-07T23:20:03Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20799711256"
+      },
+      {
+        "id": 20799711242,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-07T23:18:39Z",
+        "updated_at": "2026-01-07T23:26:28Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20799711242"
+      },
+      {
+        "id": 20665862245,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T20:13:48Z",
+        "updated_at": "2026-01-02T20:15:11Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20665862245"
+      },
+      {
+        "id": 20665862224,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T20:13:48Z",
+        "updated_at": "2026-01-02T20:21:24Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/20665862224"
+      }
+    ],
+    "2026-02": [
+      {
+        "id": 22499185094,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T18:42:54Z",
+        "updated_at": "2026-02-27T18:51:45Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22499185094"
+      },
+      {
+        "id": 22499185107,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T18:42:54Z",
+        "updated_at": "2026-02-27T18:44:27Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22499185107"
+      },
+      {
+        "id": 22331694672,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-24T00:51:36Z",
+        "updated_at": "2026-02-24T01:00:49Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22331694672"
+      },
+      {
+        "id": 22331694665,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-24T00:51:36Z",
+        "updated_at": "2026-02-24T00:53:06Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22331694665"
+      },
+      {
+        "id": 22330531028,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-24T00:09:29Z",
+        "updated_at": "2026-02-24T00:10:59Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22330531028"
+      },
+      {
+        "id": 22330531069,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-24T00:09:29Z",
+        "updated_at": "2026-02-24T00:18:30Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22330531069"
+      },
+      {
+        "id": 22151674358,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-18T18:06:20Z",
+        "updated_at": "2026-02-18T18:07:49Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22151674358"
+      },
+      {
+        "id": 22151674223,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-18T18:06:20Z",
+        "updated_at": "2026-02-18T18:15:25Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22151674223"
+      },
+      {
+        "id": 22118791633,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T22:47:44Z",
+        "updated_at": "2026-02-17T22:49:16Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22118791633"
+      },
+      {
+        "id": 22118791613,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T22:47:44Z",
+        "updated_at": "2026-02-17T22:56:43Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22118791613"
+      },
+      {
+        "id": 21648009943,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-03T21:11:29Z",
+        "updated_at": "2026-02-03T21:20:30Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21648009943"
+      },
+      {
+        "id": 21648009929,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-03T21:11:29Z",
+        "updated_at": "2026-02-03T21:12:57Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21648009929"
+      },
+      {
+        "id": 21611284409,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-03T00:15:19Z",
+        "updated_at": "2026-02-03T00:17:06Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21611284409"
+      },
+      {
+        "id": 21611284400,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-03T00:15:19Z",
+        "updated_at": "2026-02-03T00:24:15Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/21611284400"
+      }
+    ],
+    "2026-03": [
+      {
+        "id": 23773514980,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-30T23:54:40Z",
+        "updated_at": "2026-03-30T23:56:17Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23773514980"
+      },
+      {
+        "id": 23773515004,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-30T23:54:40Z",
+        "updated_at": "2026-03-31T00:04:00Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23773515004"
+      },
+      {
+        "id": 23758664056,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-30T17:35:49Z",
+        "updated_at": "2026-03-30T17:44:57Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23758664056"
+      },
+      {
+        "id": 23758664004,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-30T17:35:48Z",
+        "updated_at": "2026-03-30T17:37:22Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23758664004"
+      },
+      {
+        "id": 23312032727,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-19T19:03:05Z",
+        "updated_at": "2026-03-19T19:12:25Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23312032727"
+      },
+      {
+        "id": 23312032562,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-19T19:03:05Z",
+        "updated_at": "2026-03-19T19:04:36Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23312032562"
+      },
+      {
+        "id": 23217621802,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-17T21:38:53Z",
+        "updated_at": "2026-03-17T21:42:00Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23217621802"
+      },
+      {
+        "id": 23217621799,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-17T21:38:53Z",
+        "updated_at": "2026-03-17T21:48:43Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23217621799"
+      },
+      {
+        "id": 22637691791,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-03T18:40:08Z",
+        "updated_at": "2026-03-03T18:49:09Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22637691791"
+      },
+      {
+        "id": 22637691768,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-03T18:40:08Z",
+        "updated_at": "2026-03-03T18:41:53Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/22637691768"
+      }
+    ],
+    "2026-04": [
+      {
+        "id": 25134704203,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-29T21:25:14Z",
+        "updated_at": "2026-04-29T21:26:58Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25134704203"
+      },
+      {
+        "id": 25134704217,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-29T21:25:14Z",
+        "updated_at": "2026-04-29T21:34:19Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25134704217"
+      },
+      {
+        "id": 25084182372,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-29T00:08:06Z",
+        "updated_at": "2026-04-29T00:09:34Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25084182372"
+      },
+      {
+        "id": 25084182362,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-29T00:08:06Z",
+        "updated_at": "2026-04-29T00:16:27Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25084182362"
+      },
+      {
+        "id": 25082512344,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T23:13:59Z",
+        "updated_at": "2026-04-28T23:15:34Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25082512344"
+      },
+      {
+        "id": 25082512342,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T23:13:59Z",
+        "updated_at": "2026-04-28T23:22:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25082512342"
+      },
+      {
+        "id": 24864371752,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-23T23:39:55Z",
+        "updated_at": "2026-04-23T23:41:20Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24864371752"
+      },
+      {
+        "id": 24864371750,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-23T23:39:55Z",
+        "updated_at": "2026-04-23T23:48:22Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24864371750"
+      },
+      {
+        "id": 24807808399,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-22T23:23:14Z",
+        "updated_at": "2026-04-22T23:24:45Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24807808399"
+      },
+      {
+        "id": 24807808396,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-22T23:23:14Z",
+        "updated_at": "2026-04-22T23:31:47Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24807808396"
+      },
+      {
+        "id": 24753368566,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-22T00:19:09Z",
+        "updated_at": "2026-04-22T00:20:41Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24753368566"
+      },
+      {
+        "id": 24753368574,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-22T00:19:09Z",
+        "updated_at": "2026-04-22T00:28:07Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24753368574"
+      },
+      {
+        "id": 24751357475,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-21T23:14:47Z",
+        "updated_at": "2026-04-21T23:16:23Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24751357475"
+      },
+      {
+        "id": 24751357462,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-21T23:14:47Z",
+        "updated_at": "2026-04-21T23:23:47Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24751357462"
+      },
+      {
+        "id": 24482401966,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-15T22:49:46Z",
+        "updated_at": "2026-04-15T23:05:40Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24482401966"
+      },
+      {
+        "id": 24482401960,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-15T22:49:46Z",
+        "updated_at": "2026-04-15T23:13:08Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24482401960"
+      },
+      {
+        "id": 24412999762,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T17:19:06Z",
+        "updated_at": "2026-04-14T17:20:48Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24412999762"
+      },
+      {
+        "id": 24412999765,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T17:19:06Z",
+        "updated_at": "2026-04-14T17:27:35Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24412999765"
+      },
+      {
+        "id": 24353832330,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-13T16:11:25Z",
+        "updated_at": "2026-04-13T16:20:28Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24353832330"
+      },
+      {
+        "id": 24353832332,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-13T16:11:25Z",
+        "updated_at": "2026-04-13T16:12:53Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24353832332"
+      },
+      {
+        "id": 24211246163,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T20:16:33Z",
+        "updated_at": "2026-04-09T20:18:07Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24211246163"
+      },
+      {
+        "id": 24211246154,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T20:16:33Z",
+        "updated_at": "2026-04-09T20:25:04Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24211246154"
+      },
+      {
+        "id": 24202466918,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T16:52:38Z",
+        "updated_at": "2026-04-09T17:02:24Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24202466918"
+      },
+      {
+        "id": 24202466902,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T16:52:38Z",
+        "updated_at": "2026-04-09T16:54:35Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24202466902"
+      },
+      {
+        "id": 24152576777,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-08T18:48:06Z",
+        "updated_at": "2026-04-08T18:49:32Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24152576777"
+      },
+      {
+        "id": 24152570680,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-08T18:47:57Z",
+        "updated_at": "2026-04-08T18:56:40Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/24152570680"
+      },
+      {
+        "id": 23919948053,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-02T20:14:35Z",
+        "updated_at": "2026-04-02T20:16:02Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23919948053"
+      },
+      {
+        "id": 23919948085,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-02T20:14:35Z",
+        "updated_at": "2026-04-02T20:23:02Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/23919948085"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 26664078483,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-29T21:51:51Z",
+        "updated_at": "2026-05-29T22:25:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26664078483"
+      },
+      {
+        "id": 26664078480,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-29T21:51:51Z",
+        "updated_at": "2026-05-29T22:17:36Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26664078480"
+      },
+      {
+        "id": 26660534216,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-29T20:28:47Z",
+        "updated_at": "2026-05-29T20:42:03Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26660534216"
+      },
+      {
+        "id": 26660534218,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-29T20:28:47Z",
+        "updated_at": "2026-05-29T20:34:41Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26660534218"
+      },
+      {
+        "id": 26608976075,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T23:45:12Z",
+        "updated_at": "2026-05-28T23:54:20Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26608976075"
+      },
+      {
+        "id": 26608976041,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T23:45:12Z",
+        "updated_at": "2026-05-28T23:46:44Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26608976041"
+      },
+      {
+        "id": 26531788645,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-27T18:50:03Z",
+        "updated_at": "2026-05-27T18:56:03Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26531788645"
+      },
+      {
+        "id": 26531788790,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-27T18:50:03Z",
+        "updated_at": "2026-05-27T19:03:51Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26531788790"
+      },
+      {
+        "id": 26459088953,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-26T15:48:51Z",
+        "updated_at": "2026-05-26T15:50:29Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26459088953"
+      },
+      {
+        "id": 26459088732,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-26T15:48:50Z",
+        "updated_at": "2026-05-26T15:57:27Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26459088732"
+      },
+      {
+        "id": 26126098544,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-19T21:21:46Z",
+        "updated_at": "2026-05-19T21:23:21Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26126098544"
+      },
+      {
+        "id": 26126098546,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-19T21:21:46Z",
+        "updated_at": "2026-05-19T21:30:45Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26126098546"
+      },
+      {
+        "id": 25706288533,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-12T00:49:12Z",
+        "updated_at": "2026-05-12T00:57:38Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25706288533"
+      },
+      {
+        "id": 25706288535,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-12T00:49:12Z",
+        "updated_at": "2026-05-12T00:50:44Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25706288535"
+      },
+      {
+        "id": 25449949103,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-06T17:11:51Z",
+        "updated_at": "2026-05-06T17:20:56Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25449949103"
+      },
+      {
+        "id": 25449946514,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-06T17:11:48Z",
+        "updated_at": "2026-05-06T17:13:20Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/25449946514"
+      }
+    ],
+    "2026-06": [
+      {
+        "id": 28061382493,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T22:28:20Z",
+        "updated_at": "2026-06-23T22:29:58Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/28061382493"
+      },
+      {
+        "id": 28061382502,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T22:28:20Z",
+        "updated_at": "2026-06-23T22:36:51Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/28061382502"
+      },
+      {
+        "id": 28011048847,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T07:53:35Z",
+        "updated_at": "2026-06-23T07:55:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/28011048847"
+      },
+      {
+        "id": 28011048997,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T07:53:35Z",
+        "updated_at": "2026-06-23T08:02:56Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/28011048997"
+      },
+      {
+        "id": 26849100654,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T21:28:22Z",
+        "updated_at": "2026-06-02T21:36:55Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26849100654"
+      },
+      {
+        "id": 26849100245,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T21:28:21Z",
+        "updated_at": "2026-06-02T21:30:07Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26849100245"
+      },
+      {
+        "id": 26787579561,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T23:09:13Z",
+        "updated_at": "2026-06-01T23:10:46Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26787579561"
+      },
+      {
+        "id": 26787579565,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T23:09:13Z",
+        "updated_at": "2026-06-01T23:17:40Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/26787579565"
+      }
+    ],
+    "2026-07": [
+      {
+        "id": 30659863978,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-31T19:38:22Z",
+        "updated_at": "2026-07-31T19:57:49Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/30659863978"
+      },
+      {
+        "id": 30659863830,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-31T19:38:22Z",
+        "updated_at": "2026-07-31T19:49:53Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/30659863830"
+      },
+      {
+        "id": 30305873376,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-27T21:12:34Z",
+        "updated_at": "2026-07-27T21:21:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/30305873376"
+      },
+      {
+        "id": 30305873378,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-27T21:12:34Z",
+        "updated_at": "2026-07-27T21:14:18Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/30305873378"
+      },
+      {
+        "id": 29952043523,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T19:41:50Z",
+        "updated_at": "2026-07-22T19:50:25Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/29952043523"
+      },
+      {
+        "id": 29952043364,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T19:41:50Z",
+        "updated_at": "2026-07-22T19:43:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/29952043364"
+      },
+      {
+        "id": 29938321821,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T16:30:47Z",
+        "updated_at": "2026-07-22T16:39:29Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/29938321821"
+      },
+      {
+        "id": 29938321816,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T16:30:47Z",
+        "updated_at": "2026-07-22T16:32:31Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/29938321816"
+      },
+      {
+        "id": 29764483949,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-20T17:39:03Z",
+        "updated_at": "2026-07-20T17:40:41Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/29764483949"
+      },
+      {
+        "id": 29764484020,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-20T17:39:03Z",
+        "updated_at": "2026-07-20T17:47:03Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/29764484020"
+      },
+      {
+        "id": 29540229119,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-16T22:40:37Z",
+        "updated_at": "2026-07-16T22:42:51Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/29540229119"
+      },
+      {
+        "id": 29540229100,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-16T22:40:37Z",
+        "updated_at": "2026-07-16T22:49:16Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/29540229100"
+      },
+      {
+        "id": 28899594162,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-07T21:21:49Z",
+        "updated_at": "2026-07-07T21:29:22Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/28899594162"
+      },
+      {
+        "id": 28899594207,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-07T21:21:49Z",
+        "updated_at": "2026-07-07T21:23:17Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/28899594207"
+      },
+      {
+        "id": 28557696591,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-02T00:50:42Z",
+        "updated_at": "2026-07-02T00:52:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/28557696591"
+      },
+      {
+        "id": 28557696578,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-02T00:50:42Z",
+        "updated_at": "2026-07-02T00:58:48Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/28557696578"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 32785555986,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T22:37:38Z",
+        "updated_at": "2026-08-24T22:46:28Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/32785555986"
+      },
+      {
+        "id": 32785555861,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T22:37:38Z",
+        "updated_at": "2026-08-24T22:39:07Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/32785555861"
+      },
+      {
+        "id": 31752528095,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-13T23:05:23Z",
+        "updated_at": "2026-08-13T23:07:06Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/31752528095"
+      },
+      {
+        "id": 31752528189,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-13T23:05:23Z",
+        "updated_at": "2026-08-13T23:14:18Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/31752528189"
+      },
+      {
+        "id": 31651070376,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-12T23:29:21Z",
+        "updated_at": "2026-08-12T23:37:18Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/31651070376"
+      },
+      {
+        "id": 31651070385,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-12T23:29:21Z",
+        "updated_at": "2026-08-12T23:30:58Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/31651070385"
+      },
+      {
+        "id": 30861402818,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-03T23:11:30Z",
+        "updated_at": "2026-08-03T23:20:41Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/30861402818"
+      },
+      {
+        "id": 30861402817,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-03T23:11:30Z",
+        "updated_at": "2026-08-03T23:13:22Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/30861402817"
+      }
+    ],
+    "2026-09": [
+      {
+        "id": 36163610742,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-25T16:53:12Z",
+        "updated_at": "2026-09-25T17:02:00Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/36163610742"
+      },
+      {
+        "id": 36163610805,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-25T16:53:12Z",
+        "updated_at": "2026-09-25T16:54:50Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/36163610805"
+      },
+      {
+        "id": 34649542403,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-11T21:28:24Z",
+        "updated_at": "2026-09-11T21:40:31Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/34649542403"
+      },
+      {
+        "id": 34649542483,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-11T21:28:24Z",
+        "updated_at": "2026-09-11T21:47:57Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/34649542483"
+      },
+      {
+        "id": 33676640883,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T20:00:00Z",
+        "updated_at": "2026-09-02T20:22:42Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/33676640883"
+      },
+      {
+        "id": 33676640887,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T20:00:00Z",
+        "updated_at": "2026-09-02T20:29:58Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/33676640887"
+      },
+      {
+        "id": 33672238773,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T19:15:48Z",
+        "updated_at": "2026-09-02T19:45:17Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/33672238773"
+      },
+      {
+        "id": 33672238972,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T19:15:48Z",
+        "updated_at": "2026-09-02T19:38:29Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/33672238972"
+      },
+      {
+        "id": 33669472237,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T18:48:23Z",
+        "updated_at": "2026-09-02T19:04:06Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/33669472237"
+      },
+      {
+        "id": 33669472155,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T18:48:22Z",
+        "updated_at": "2026-09-02T19:11:29Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/33669472155"
+      },
+      {
+        "id": 33668746105,
+        "name": "CodeQL",
+        "workflow_id": 37289763,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T18:41:20Z",
+        "updated_at": "2026-09-02T19:00:48Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/33668746105"
+      },
+      {
+        "id": 33668745983,
+        "name": "Tests",
+        "workflow_id": 37186373,
+        "branch": "develop",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-09-02T18:41:20Z",
+        "updated_at": "2026-09-02T19:02:13Z",
+        "html_url": "https://github.com/aws/serverless-application-model/actions/runs/33668745983"
+      }
+    ]
+  }
+}
