@@ -15,6 +15,9 @@ dependencies = [
   "lifelines>=0.27,<1",
 ]
 
+[project.scripts]
+gold = "scripts.generate_gold:main"
+
 [dependency-groups]
 dev = [
   "pytest>=8.3,<9",
@@ -33,6 +36,7 @@ packages = [
   "src/cache",
   "src/collector",
   "src/metrics",
+  "scripts",
 ]
 
 [tool.ruff]

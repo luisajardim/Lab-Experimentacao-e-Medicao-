@@ -35,6 +35,7 @@ uv run python -m pipeline --config config.toml --stage collect --limit 2   # smo
 | `uv run python -m pipeline --config config.toml --stage metrics` | Calcula métricas → `data/datasets/` |
 | `uv run python -m pipeline --config config.toml --stage report` | Gera relatórios (`reports/`) |
 | `uv run python -m pipeline doctor` | Verifica token, config, cache e dependências |
+| `uv run gold --input-dir data/gold --output-dir data/gold` | Gera o template CSV para a rotulagem manual |
 | `uv run pytest --cov=metrics --cov-fail-under=80` | Testes + cobertura (mín. 80%) |
 
 A flag `--limit N` restringe a coleta a N repositórios (smoke tests).
