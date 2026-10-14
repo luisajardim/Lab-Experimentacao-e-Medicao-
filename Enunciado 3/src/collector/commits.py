@@ -15,7 +15,9 @@ interromper a coleta dos demais:
 from __future__ import annotations
 
 from dataclasses import dataclass
+from urllib.parse import quote
 
+from cache.cached_session import CachedSession
 from cache.sqlite_store import SQLiteStore
 from github.models import Commit, Release
 from github.rest import GitHubHTTPError, GitHubRESTClient
@@ -46,18 +48,26 @@ class CommitsBetween:
 
 def _compare_commits(
     client: GitHubRESTClient, owner: str, repo: str, base: str, head: str, *, per_page: int
-) -> list[Commit] | None:
-    """Commits de ``base...head``, ou ``None`` se o ``compare`` devolver 404 ou 422."""
-    path = f"/repos/{owner}/{repo}/compare/{base}...{head}"
+) -> tuple[list[Commit] | None, str | None]:
+    """Commits de ``base...head`` e, se ignorado, o motivo correspondente.
+
+    Tags podem conter ``/``; cada lado do compare é um segmento de URL e por
+    isso precisa ser codificado separadamente.
+    """
+    encoded_base = quote(base, safe="")
+    encoded_head = quote(head, safe="")
+    path = f"/repos/{owner}/{repo}/compare/{encoded_base}...{encoded_head}"
     try:
         raw_commits = list(
             client.paginate_field(path, "commits", per_page=per_page)
         )
     except GitHubHTTPError as error:
-        if error.status in (404, 422):
-            return None
+        if error.status == 404:
+            return None, COMPARE_NOT_FOUND
+        if error.status == 422:
+            return None, COMPARE_TOO_LARGE
         raise
-    return [Commit.from_api(item) for item in raw_commits]
+    return [Commit.from_api(item) for item in raw_commits], None
 
 
 def collect_commits_between(
@@ -92,31 +102,21 @@ def collect_commits_between(
             previous = release
             continue
 
-        cache_key = f"compare:{owner}/{repo}:{previous.tag_name}...{release.tag_name}"
-        if store and store.is_stage_complete(f"{stage}:{cache_key}"):
-            results.append(
-                CommitsBetween(
-                    release=release.tag_name,
-                    previous_release=previous.tag_name,
-                    commits=None,
-                    ignored_reason=COMPARE_NOT_FOUND,
-                )
+        original_session = client._session
+        if store:
+            client._session = CachedSession(original_session, store, stage)
+        try:
+            commits, ignored_reason = _compare_commits(
+                client,
+                owner,
+                repo,
+                previous.tag_name,
+                release.tag_name,
+                per_page=per_page,
             )
-            previous = release
-            continue
-
-        commits = _compare_commits(
-            client,
-            owner,
-            repo,
-            previous.tag_name,
-            release.tag_name,
-            per_page=per_page,
-        )
-        ignored_reason = None
-        if commits is None:
-            # Could be 404 or 422 - we don't know which, so use generic
-            ignored_reason = COMPARE_NOT_FOUND
+        finally:
+            if store:
+                client._session = original_session
         results.append(
             CommitsBetween(
                 release=release.tag_name,
@@ -125,9 +125,6 @@ def collect_commits_between(
                 ignored_reason=ignored_reason,
             )
         )
-
-        if store:
-            store.mark_stage_complete(f"{stage}:{cache_key}")
 
         previous = release
 

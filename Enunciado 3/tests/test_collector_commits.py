@@ -1,10 +1,14 @@
 """Testes do coletor de commits entre releases (sem rede)."""
 
+import json
+
 import pytest
 from _fakes import FakeResponse, FakeSession
 
+from cache.sqlite_store import SQLiteStore
 from collector.commits import (
     COMPARE_NOT_FOUND,
+    COMPARE_TOO_LARGE,
     NO_PREVIOUS_RELEASE,
     collect_commits_between,
 )
@@ -98,6 +102,19 @@ def test_compare_404_is_registered_and_ignored():
     assert second.ignored is True
 
 
+def test_compare_422_is_registered_as_too_large():
+    client, _ = _client([FakeResponse(status_code=422, text="diff too large")])
+    releases = [
+        _release("v1.0.0", "2026-01-01T00:00:00Z"),
+        _release("v1.1.0", "2026-02-01T00:00:00Z"),
+    ]
+
+    results = collect_commits_between(client, "o", "r", releases)
+
+    assert results[1].commits is None
+    assert results[1].ignored_reason == COMPARE_TOO_LARGE
+
+
 def test_compare_non_404_error_propagates():
     client, _ = _client([FakeResponse(status_code=500, text="boom")], max_retries=0)
     releases = [
@@ -128,6 +145,38 @@ def test_three_releases_use_previous_as_base_each_time():
     assert session.requests[0]["url"] == "/repos/o/r/compare/v1.0.0...v1.1.0"
     assert session.requests[1]["url"] == "/repos/o/r/compare/v1.1.0...v1.2.0"
     assert [c.sha for c in results[2].commits] == ["b", "c"]
+
+
+def test_compare_url_encodes_slashes_in_tags():
+    client, session = _client([FakeResponse(json_data=_compare_response(["a"]))])
+    releases = [
+        _release("rel/v5.5", "2026-01-01T00:00:00Z"),
+        _release("rel/v5.6", "2026-02-01T00:00:00Z"),
+    ]
+
+    collect_commits_between(client, "o", "r", releases)
+
+    assert session.requests[0]["url"] == "/repos/o/r/compare/rel%2Fv5.5...rel%2Fv5.6"
+
+
+def test_second_collection_with_same_store_returns_cached_commits(tmp_path):
+    response_body = _compare_response(["a", "b"])
+    client, session = _client(
+        [FakeResponse(json_data=response_body, text=json.dumps(response_body))]
+    )
+    releases = [
+        _release("v1.0.0", "2026-01-01T00:00:00Z"),
+        _release("v1.1.0", "2026-02-01T00:00:00Z"),
+    ]
+
+    with SQLiteStore(tmp_path / "cache.db") as store:
+        first = collect_commits_between(client, "o", "r", releases, store=store)
+        second = collect_commits_between(client, "o", "r", releases, store=store)
+
+    assert [commit.sha for commit in first[1].commits] == ["a", "b"]
+    assert [commit.sha for commit in second[1].commits] == ["a", "b"]
+    assert second[1].ignored_reason is None
+    assert len(session.requests) == 1
 
 
 def test_empty_releases_returns_empty_list():
