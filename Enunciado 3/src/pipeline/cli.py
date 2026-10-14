@@ -44,6 +44,9 @@ from metrics import (
     recovery_episodes,
     spearman_correlation,
 )
+from metrics.deployment_frequency import ReleaseInfo
+from metrics.lead_time import ReleaseCommits
+from metrics.recovery import WorkflowRunSample
 
 log = logging.getLogger(__name__)
 
@@ -451,6 +454,21 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
     return 0
 
 
+DORA_VARIANT_COLUMNS = [
+    "full_name", "stars", "language",
+    "lead_time_hours", "cfr", "recovery_hours",
+    "deployment_frequency_per_week", "dora_category",
+]
+
+
+def _dora_to_dict(classification: DORAClassification) -> dict:
+    """Serializa a classificação DORA incluindo a categoria (método, não campo)."""
+    data = asdict(classification)
+    data["variant"] = classification.variant.value
+    data["category"] = classification.category()
+    return data
+
+
 def _run_metrics(config_path: str) -> int:
     """Executa o estágio de cálculo de métricas."""
     config_path = Path(config_path)
@@ -495,28 +513,26 @@ def _run_metrics(config_path: str) -> int:
         runs_by_month = repo_data["runs_by_month"]
 
         # Preparar dados para lead_time
-        release_commits_a: list[dict] = []
-        release_commits_b: list[dict] = []
+        release_commits_a: list[ReleaseCommits] = []
+        release_commits_b: list[ReleaseCommits] = []
 
         for cb in commits_between:
             if cb["ignored_reason"] is not None:
                 continue  # Ignora primeira release ou compare 404
             if not cb["commits"]:
                 continue  # Release sem commits novos
-            release_commits_a.append({
-                "release_published_at": next(
-                    (r["published_at"] for r in releases if r["tag_name"] == cb["release"]),
-                    None
-                ),
-                "commit_dates": [c["author_date"] for c in cb["commits"]],
-            })
-            release_commits_b.append({
-                "release_published_at": next(
-                    (r["published_at"] for r in releases if r["tag_name"] == cb["release"]),
-                    None
-                ),
-                "commit_dates": [c["author_date"] for c in cb["commits"]],
-            })
+            published_at = next(
+                (r["published_at"] for r in releases if r["tag_name"] == cb["release"]),
+                None,
+            )
+            if published_at is None:
+                continue
+            release_commit = ReleaseCommits(
+                release_published_at=published_at,
+                commit_dates=[c["author_date"] for c in cb["commits"]],
+            )
+            release_commits_a.append(release_commit)
+            release_commits_b.append(release_commit)
 
         # Lead time variante (a) e (b)
         lt_a = lead_time_by_release(release_commits_a)
@@ -530,23 +546,33 @@ def _run_metrics(config_path: str) -> int:
         cfr = cfr_a(all_conclusions)
 
         # Recovery episodes
-        runs_flat: list[dict] = []
+        runs_flat: list[WorkflowRunSample] = []
         for runs in runs_by_month.values():
-            runs_flat.extend(runs)
+            for run in runs:
+                if not run.get("run_started_at") or not run.get("updated_at"):
+                    continue
+                runs_flat.append(WorkflowRunSample(
+                    workflow_id=run["workflow_id"],
+                    conclusion=run.get("conclusion"),
+                    run_started_at=run["run_started_at"],
+                    updated_at=run["updated_at"],
+                ))
         episodes = recovery_episodes(runs_flat)
         recovery_hours = median_recovery_hours(episodes)
         censored_prop = censored_proportion(episodes)
 
         # Deployment frequency (releases only)
-        deploy_freq = deployment_frequency(
-            [{"published_at": r["published_at"], "draft": r["draft"]} for r in releases],
-            window_weeks=window_weeks,
-        )
+        release_infos = [
+            ReleaseInfo(published_at=r["published_at"], draft=r["draft"]) for r in releases
+        ]
+        deploy_freq = deployment_frequency(release_infos, window_weeks=window_weeks)
 
         # Deployment frequency (releases + tags with dates)
-        tags_with_dates = [{"published_at": t["date"], "draft": False} for t in tags if t.get("date")]
+        tags_with_dates = [
+            ReleaseInfo(published_at=t["date"], draft=False) for t in tags if t.get("date")
+        ]
         deploy_freq_tags = deployment_frequency(
-            [{"published_at": r["published_at"], "draft": r["draft"]} for r in releases] + tags_with_dates,
+            release_infos + tags_with_dates,
             window_weeks=window_weeks,
         )
 
@@ -578,9 +604,9 @@ def _run_metrics(config_path: str) -> int:
                 "deployment_frequency_with_tags_per_week": deploy_freq_tags,
             },
             "dora_classification": {
-                "C1": asdict(dora_c1),
-                "C2": asdict(dora_c2),
-                "C3": asdict(dora_c3),
+                "C1": _dora_to_dict(dora_c1),
+                "C2": _dora_to_dict(dora_c2),
+                "C3": _dora_to_dict(dora_c3),
             },
             "survival": {
                 "median_survival_hours": survival.median_survival,
@@ -677,6 +703,27 @@ def _run_metrics(config_path: str) -> int:
                 "survival_n_censored": sv["n_censored"],
             })
     log.info("Dataset salvo em %s", metrics_csv)
+
+    # dora_c1.csv, dora_c2.csv, dora_c3.csv (um CSV por variante de classificação)
+    for variant in ("C1", "C2", "C3"):
+        variant_csv = datasets_dir / f"dora_{variant.lower()}.csv"
+        with open(variant_csv, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=DORA_VARIANT_COLUMNS)
+            writer.writeheader()
+            for m in repo_metrics:
+                r = m["repository"]
+                dc = m["dora_classification"][variant]
+                writer.writerow({
+                    "full_name": r["full_name"],
+                    "stars": r["stars"],
+                    "language": r["language"] or "",
+                    "lead_time_hours": dc["lead_time_hours"],
+                    "cfr": dc["cfr"],
+                    "recovery_hours": dc["recovery_hours"],
+                    "deployment_frequency_per_week": dc["deployment_frequency_per_week"],
+                    "dora_category": dc["category"],
+                })
+        log.info("Dataset %s salvo em %s", variant, variant_csv)
 
     # correlations.json
     corr_json = datasets_dir / "correlations.json"

@@ -42,5 +42,5 @@ def spearman_correlation(
     return SpearmanResult(
         rho=float(rho),
         p_value=float(p_value),
-        significant=p_value < alpha,
+        significant=bool(p_value < alpha),
     )
