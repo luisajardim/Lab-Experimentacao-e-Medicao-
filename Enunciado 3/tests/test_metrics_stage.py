@@ -3,7 +3,16 @@
 import csv
 import json
 
-from pipeline.cli import DORA_VARIANT_COLUMNS, _dora_to_dict, _run_metrics
+from types import SimpleNamespace
+
+from pipeline.cli import (
+    DORA_VARIANT_COLUMNS,
+    _commit_scope,
+    _dora_to_dict,
+    _in_window,
+    _paired,
+    _run_metrics,
+)
 from metrics import DORAVariant, classify_dora
 
 
@@ -11,6 +20,7 @@ def _write_config(tmp_path):
     config = tmp_path / "config.toml"
     config.write_text(
         '[window]\nstart = "2025-10-01"\nend = "2026-09-30"\nweeks = 52.1\n'
+        '[filters]\nmin_releases = 2\nmin_workflow_runs = 3\n'
         '[paths]\ngold_dir = "gold"\ndatasets_dir = "datasets"\n',
         encoding="utf-8",
     )
@@ -68,3 +78,43 @@ def test_dora_to_dict_includes_category_and_variant():
     data = _dora_to_dict(result)
     assert data["category"] == "Elite"
     assert data["variant"] == "C1"
+
+
+def test_in_window_is_inclusive_and_handles_none():
+    assert _in_window("2025-10-01T00:00:00Z", "2025-10-01", "2026-09-30")
+    assert _in_window("2026-09-30T23:59:59Z", "2025-10-01", "2026-09-30")
+    assert not _in_window("2025-09-30T23:59:59Z", "2025-10-01", "2026-09-30")
+    assert not _in_window("2026-10-01T00:00:00Z", "2025-10-01", "2026-09-30")
+    assert not _in_window(None, "2025-10-01", "2026-09-30")
+
+
+def test_commit_scope_keeps_previous_release_outside_window():
+    dates = ["2025-08-01", "2025-09-15", "2025-10-10", "2025-12-01", "2026-10-05"]
+    releases = [SimpleNamespace(published_at=f"{d}T00:00:00Z") for d in dates]
+    scope = _commit_scope(releases, "2025-10-01", "2026-09-30")
+    assert [r.published_at[:10] for r in scope] == ["2025-09-15", "2025-10-10", "2025-12-01"]
+    assert _commit_scope([], "2025-10-01", "2026-09-30") == []
+
+
+def test_paired_keeps_same_repo_and_drops_missing():
+    rows = [
+        {"x": 1.0, "y": 10.0},
+        {"x": None, "y": 20.0},
+        {"x": 3.0, "y": None},
+        {"x": 4.0, "y": 40.0},
+    ]
+    assert _paired(rows, "x", "y") == ([1.0, 4.0], [10.0, 40.0])
+
+
+def test_metrics_stage_discards_repo_with_releases_outside_window(tmp_path):
+    config = _write_config(tmp_path)
+    _write_repo(tmp_path)
+    path = tmp_path / "gold" / "owner" / "repo.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data["releases"][1]["published_at"] = "2024-01-01T00:00:00Z"  # fora da janela
+    path.write_text(json.dumps(data), encoding="utf-8")
+
+    assert _run_metrics(str(config)) == 0
+
+    with open(tmp_path / "datasets" / "dora_c1.csv", newline="", encoding="utf-8") as handle:
+        assert list(csv.DictReader(handle)) == []

@@ -346,10 +346,13 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                 stage="collect:releases",
             )
 
-            if len(releases) < min_releases:
+            releases_in_window = [
+                r for r in releases if _in_window(r.published_at, start_date, end_date)
+            ]
+            if len(releases_in_window) < min_releases:
                 log.info(
-                    "Repositório %s/%s ignorado: apenas %d releases (mínimo %d)",
-                    owner, repo, len(releases), min_releases
+                    "Repositório %s/%s ignorado: apenas %d releases na janela (mínimo %d)",
+                    owner, repo, len(releases_in_window), min_releases
                 )
                 return owner, repo, 0, 1
 
@@ -390,7 +393,7 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                 repo_client,
                 owner,
                 repo,
-                releases,
+                _commit_scope(releases, start_date, end_date),
                 store=local_store,
                 stage="collect:commits",
             )
@@ -454,6 +457,35 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
     return 0
 
 
+def _in_window(timestamp: str | None, start: str, end: str) -> bool:
+    """True se a data (ISO-8601) está dentro da janela [start, end], inclusiva."""
+    if not timestamp:
+        return False
+    return start <= timestamp[:10] <= end
+
+
+def _commit_scope(releases: list, start: str, end: str) -> list:
+    """Releases na janela mais a release anterior (necessária para o compare).
+
+    A release anterior pode estar fora da janela (ENUNCIADO §5); se a primeira
+    release da janela for a primeira da história, ela continua sendo ignorada.
+    """
+    in_window = [i for i, r in enumerate(releases) if _in_window(r.published_at, start, end)]
+    if not in_window:
+        return []
+    return releases[max(in_window[0] - 1, 0): in_window[-1] + 1]
+
+
+def _paired(rows: list[dict], x_key: str, y_key: str) -> tuple[list[float], list[float]]:
+    """Pares (x, y) do MESMO repositório, descartando os que têm valor ausente."""
+    pairs = [
+        (row[x_key], row[y_key])
+        for row in rows
+        if row[x_key] is not None and row[y_key] is not None
+    ]
+    return [p[0] for p in pairs], [p[1] for p in pairs]
+
+
 DORA_VARIANT_COLUMNS = [
     "full_name", "stars", "language",
     "lead_time_hours", "cfr", "recovery_hours",
@@ -483,6 +515,10 @@ def _run_metrics(config_path: str) -> int:
 
     window_cfg = cfg["window"]
     window_weeks = window_cfg["weeks"]
+    window_start = window_cfg["start"]
+    window_end = window_cfg["end"]
+    min_releases = cfg["filters"]["min_releases"]
+    min_workflow_runs = cfg["filters"]["min_workflow_runs"]
 
     repos = _load_gold_repos(gold_dir)
     log.info("Carregados %d repositórios de %s", len(repos), gold_dir)
@@ -491,13 +527,7 @@ def _run_metrics(config_path: str) -> int:
         log.warning("Nenhum repositório encontrado em gold. Rode 'collect' primeiro.")
         return 0
 
-    # Datasets para correlação
-    all_lead_time_a: list[float] = []
-    all_lead_time_b: list[float] = []
-    all_cfr: list[float] = []
-    all_recovery: list[float] = []
-    all_deploy_freq: list[float] = []
-    all_deploy_freq_tags: list[float] = []
+    discarded = 0
 
     # Resultados por repositório
     repo_metrics: list[dict] = []
@@ -507,10 +537,29 @@ def _run_metrics(config_path: str) -> int:
         full_name = repo_info["full_name"]
         log.info("Calculando métricas para %s...", full_name)
 
-        releases = repo_data["releases"]
-        tags = repo_data["tags"]
-        commits_between = repo_data["commits_between"]
+        # Só entram releases, tags e runs publicados dentro da janela (ENUNCIADO §3)
+        releases = [
+            r for r in repo_data["releases"]
+            if _in_window(r["published_at"], window_start, window_end)
+        ]
+        tags = [
+            t for t in repo_data["tags"]
+            if _in_window(t.get("date"), window_start, window_end)
+        ]
+        window_tags = {r["tag_name"] for r in releases}
+        commits_between = [
+            cb for cb in repo_data["commits_between"] if cb["release"] in window_tags
+        ]
         runs_by_month = repo_data["runs_by_month"]
+
+        total_runs = sum(len(runs) for runs in runs_by_month.values())
+        if len(releases) < min_releases or total_runs < min_workflow_runs:
+            log.info(
+                "Repositório %s descartado: %d releases e %d runs na janela (mínimos %d/%d)",
+                full_name, len(releases), total_runs, min_releases, min_workflow_runs,
+            )
+            discarded += 1
+            continue
 
         # Preparar dados para lead_time
         release_commits_a: list[ReleaseCommits] = []
@@ -619,50 +668,23 @@ def _run_metrics(config_path: str) -> int:
 
         repo_metrics.append(repo_result)
 
-        # Coletar para correlação
-        if lt_a is not None:
-            all_lead_time_a.append(lt_a)
-        if lt_b is not None:
-            all_lead_time_b.append(lt_b)
-        if cfr is not None:
-            all_cfr.append(cfr)
-        if recovery_hours is not None:
-            all_recovery.append(recovery_hours)
-        if deploy_freq is not None:
-            all_deploy_freq.append(deploy_freq)
-        if deploy_freq_tags is not None:
-            all_deploy_freq_tags.append(deploy_freq_tags)
+    log.info(
+        "Funil (metrics): %d repositórios lidos, %d descartados, %d na amostra final",
+        len(repos), discarded, len(repo_metrics),
+    )
 
-    # Correlações (RQ 05 e RQ 06)
+    # Correlações (RQ 05 e RQ 06): pares do mesmo repositório, sem valores ausentes
     correlations = {}
-
-    # RQ 05: Lead Time (a) vs CFR(a)
-    if len(all_lead_time_a) >= 2 and len(all_cfr) >= 2:
-        min_len = min(len(all_lead_time_a), len(all_cfr))
-        correlations["lead_time_a_vs_cfr_a"] = asdict(
-            spearman_correlation(all_lead_time_a[:min_len], all_cfr[:min_len])
-        )
-
-    # RQ 05: Lead Time (b) vs CFR(a)
-    if len(all_lead_time_b) >= 2 and len(all_cfr) >= 2:
-        min_len = min(len(all_lead_time_b), len(all_cfr))
-        correlations["lead_time_b_vs_cfr_a"] = asdict(
-            spearman_correlation(all_lead_time_b[:min_len], all_cfr[:min_len])
-        )
-
-    # RQ 06: Deployment Frequency vs Recovery Time
-    if len(all_deploy_freq) >= 2 and len(all_recovery) >= 2:
-        min_len = min(len(all_deploy_freq), len(all_recovery))
-        correlations["deploy_freq_vs_recovery"] = asdict(
-            spearman_correlation(all_deploy_freq[:min_len], all_recovery[:min_len])
-        )
-
-    # RQ 06: Deployment Frequency (with tags) vs Recovery Time
-    if len(all_deploy_freq_tags) >= 2 and len(all_recovery) >= 2:
-        min_len = min(len(all_deploy_freq_tags), len(all_recovery))
-        correlations["deploy_freq_tags_vs_recovery"] = asdict(
-            spearman_correlation(all_deploy_freq_tags[:min_len], all_recovery[:min_len])
-        )
+    metric_rows = [m["metrics"] for m in repo_metrics]
+    for name, x_key, y_key in (
+        ("lead_time_a_vs_cfr_a", "lead_time_a_hours", "cfr_a"),
+        ("lead_time_b_vs_cfr_a", "lead_time_b_hours", "cfr_a"),
+        ("deploy_freq_vs_recovery", "deployment_frequency_per_week", "recovery_hours"),
+        ("deploy_freq_tags_vs_recovery", "deployment_frequency_with_tags_per_week", "recovery_hours"),
+    ):
+        xs, ys = _paired(metric_rows, x_key, y_key)
+        if len(xs) >= 2:
+            correlations[name] = asdict(spearman_correlation(xs, ys))
 
     # Salvar datasets
     datasets_dir.mkdir(parents=True, exist_ok=True)
