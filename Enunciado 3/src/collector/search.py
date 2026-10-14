@@ -183,10 +183,10 @@ def collect_candidates(
 
     if store and store.is_stage_complete(stage):
         candidates = _read_csv(candidates_csv)
-        if candidates:
+        if len(candidates) >= max_candidates or (limit is None and len(candidates) >= 100):
             log.info("%s já concluído; carregados %d candidatos do cache CSV", stage, len(candidates))
             return candidates
-        log.warning("%s marcado como concluído, mas CSV está vazio. Refazendo busca...", stage)
+        log.warning("%s em cache insuficiente (%d encontrados). Refazendo busca...", stage, len(candidates))
 
     queries = _build_queries(star_slices, languages)
     seen: set[str] = set()
@@ -238,7 +238,7 @@ def collect_candidates(
         if len(candidates) >= max_candidates:
             break
 
-    if store:
+    if store and (limit is None or limit >= max_candidates):
         for candidate in candidates:
             store.record_signature(stage, candidate.full_name, str(candidate.stars))
         store.mark_stage_complete(stage)
