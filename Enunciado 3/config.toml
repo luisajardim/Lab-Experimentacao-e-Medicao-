@@ -7,11 +7,12 @@ end = "2026-09-30"     # inclusivo
 weeks = 52.1           # divisor da deployment frequency (RQ 01)
 
 [search]
-# Cada query de busca retorna no máximo 1.000 resultados (ENUNCIADO §4):
-# fatiamos por faixa de estrelas (e opcionalmente por linguagem) para obter mais candidatos.
-star_slices = ["1000..2000", "2000..5000", "5000..10000", "10000..*"]
+# Cada query de busca retorna no máximo 1.000 resultados (ENUNCIADO §4).
+# Doze faixas menores fornecem até 12.000 candidatos para que, após os
+# critérios obrigatórios, a amostra final tenha pelo menos 300 repositórios.
+star_slices = ["100..249", "250..499", "500..749", "750..999", "1000..1499", "1500..1999", "2000..2999", "3000..4999", "5000..7499", "7500..9999", "10000..19999", "20000..*"]
 languages = []           # ex.: ["python", "javascript"] — fatia extra por linguagem
-max_candidates = 4000
+max_candidates = 12000
 per_page = 100
 
 [filters]
@@ -28,7 +29,7 @@ backoff_base_seconds = 1.0
 graphql_batch_size = 20  # nº de aliases (queries em lote) por requisição GraphQL
 # Múltiplos tokens para aumentar quota (separados por vírgula ou array TOML)
 # tokens = ["token1", "token2", "token3"]  # opcional: sobrescreve GITHUB_TOKEN/GITHUB_TOKENS
-max_workers = 4          # paralelismo no processamento de repositórios
+max_workers = 3          # uma coleta concorrente por token configurado
 
 [paths]
 cache_db = "data/cache/api_responses.db"
