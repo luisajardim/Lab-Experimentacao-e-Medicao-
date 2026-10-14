@@ -142,18 +142,20 @@ def collect_candidates(
     client: GitHubRESTClient,
     config_path: str | Path = "config.toml",
     *,
+    limit: int | None = None,
     store: SQLiteStore | None = None,
     stage: str = "collect:search",
-    max_workers: int = 4,
+    max_workers: int = 1,
 ) -> list[Candidate]:
     """Busca repositórios candidatos seguindo ``config.toml``.
 
     Args:
         client: cliente REST autenticado.
         config_path: caminho do ``config.toml`` (default: atual).
+        limit: limite opcional de candidatos a coletar.
         store: cache SQLite opcional.
         stage: nome do estágio para cache/resumo.
-        max_workers: threads paralelas para queries.
+        max_workers: threads paralelas para queries (default: 1 para respeitar 30 req/min).
 
     Returns:
         Lista de ``Candidate`` única (deduplicada por ``full_name``),
@@ -168,6 +170,8 @@ def collect_candidates(
     star_slices: list[str] = search_cfg["star_slices"]
     languages: list[str] = search_cfg.get("languages", [])
     max_candidates: int = int(search_cfg.get("max_candidates", 4000))
+    if limit is not None and limit > 0:
+        max_candidates = min(max_candidates, limit)
     per_page: int = int(search_cfg.get("per_page", 100))
 
     paths_cfg = cfg["paths"]
@@ -178,10 +182,11 @@ def collect_candidates(
     _ensure_dirs({"raw_dir": raw_dir, "meta_dir": meta_dir})
 
     if store and store.is_stage_complete(stage):
-        log.info("%s já concluído; carregando candidatos do cache CSV", stage)
         candidates = _read_csv(candidates_csv)
-        log.info("Carregados %d candidatos do cache", len(candidates))
-        return candidates
+        if candidates:
+            log.info("%s já concluído; carregados %d candidatos do cache CSV", stage, len(candidates))
+            return candidates
+        log.warning("%s marcado como concluído, mas CSV está vazio. Refazendo busca...", stage)
 
     queries = _build_queries(star_slices, languages)
     seen: set[str] = set()

@@ -112,7 +112,15 @@ class BaseGitHubClient:
     def _is_retryable(response: Any) -> bool:
         if response.status_code in _RETRYABLE_STATUSES or response.status_code >= 500:
             return True
-        return response.status_code == 403 and response.headers.get("Retry-After") is not None
+        if response.status_code == 403:
+            if response.headers.get("Retry-After") is not None:
+                return True
+            if response.headers.get("X-RateLimit-Remaining") == "0":
+                return True
+            text = getattr(response, "text", "") or ""
+            if "rate limit" in text.lower():
+                return True
+        return False
 
     def _request_with_retry(
         self,

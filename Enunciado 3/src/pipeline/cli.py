@@ -310,6 +310,7 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
     candidates = collect_candidates(
         search_client,
         config_path,
+        limit=limit,
         store=store,
         stage="collect:search",
     )
@@ -889,6 +890,21 @@ def _run_report(config_path: str) -> int:
     return 0
 
 
+def _load_env_file(env_path: Path) -> None:
+    """Carrega variáveis do arquivo .env para os.environ se existir."""
+    if not env_path.exists():
+        return
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip("'\"")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
 
@@ -905,6 +921,9 @@ def main(argv: list[str] | None = None) -> int:
     if not args.stage and not args.command:
         parser.print_help()
         return 0
+
+    _load_env_file(Path(".env"))
+    _load_env_file(Path(args.config).parent / ".env")
 
     # Token pode vir de GITHUB_TOKEN, GITHUB_TOKENS ou config.toml
     env_token = os.getenv("GITHUB_TOKEN")
