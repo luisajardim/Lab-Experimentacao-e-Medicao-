@@ -38,7 +38,20 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 12
+
+-  support Postgres
+-  init mysql table engine innodb
+-  redis password support (#218)
+-  fixed division by zero (#221)
+-  support ClickHouse as data storage
+-  fix(#214): never distribute invalid model
+-  disable popular/latest items under labels temporarily
+-  find neighbors by similarity
+-  trace stack of errors
+-  support user import/export
+-  implement task monitor
+-  new task scheduler
 
 ### Release 3
 
@@ -54,7 +67,22 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 14
+
+-  remove redundant metrics
+-  fix incompatibility of MariaDB (#294)
+-  support modify users and items
+-  fix invalid date in dashboard
+-  chore: fix grammar (#296)
+-  fix wrong documentation
+-  support explore in recommendation
+-  validate config values
+-  skip empty list when inserting feedback (#300)
+-  fix auto_insert_item = false (#301)
+-  upgrade dashboard version (#302)
+-  fix err logging in offline recommendation (#303)
+-  pass exclude in explore (#304)
+-  fix bug from bug fix (#305)
 
 ### Release 4
 
@@ -70,7 +98,18 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 10
+
+-  Fix concurrency write map panic (#338)
+-  optimize deep copy (#337)
+-  support total cold-start (#340)
+-  optimize hidden items implementation (#341)
+-  update latest in real time (#342)
+-  update popular on server (#343)
+-  cache item categories (#346)
+-  fix race condition of map access (#347)
+-  add bloom_filter index in ClickHouse (#349)
+-  optimize fallback item-based recommender (#350)
 
 ### Release 5
 
@@ -86,4 +125,22 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 17
+
+-  fix cors error with api key (#598)
+-  polish Swagger docs (#601)
+-  fix typo (#602)
+-  support YAML/JSON configuration file format (#604)
+-  worker: fix nil pointer in `refreshCache` (#611)
+-  encode cursor by base64 (#612)
+-  implement SVE2 vector multiplication (#614)
+-  hide database config under managed mode (#616)
+-  support Docker Windows images (#618)
+-  change release archive file names (#619)
+-  fix batch import feedback (#620)
+-  support Windows log file sink (#621)
+-  upgrade to Go 1.20 (#622)
+-  support login by access token (#623)
+-  allow empty feedback types in config (#624)
+-  update DockerHub description (#625)
+-  create temporary directory for scratch image (#627)

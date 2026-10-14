@@ -22,7 +22,49 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 85
+
+-  Revert "Release 0.1.0" (#105)
+-  Update README.md (#106)
+-  New theme. (#107)
+-  Fix/predict single value (#108)
+-  Remove `.darts` directory after tests. (#103)
+-  Feature/residual analysis example (#109)
+-  feature/multivariate (#97)
+-  feature(TimeSeries): allowing to pass single string for value column in TimeSeries.from_dataframe (#114)
+-  fix/README.md (#113)
+-  add .vscode to .gitignore (#110)
+-  Cleanup after tests (#116)
+-  add .darts to ignored folders (#117)
+-  Feat/gradle (#112)
+-  fix(TimeSeries): fixed documentation (#119)
+-  Fix/reproducibility RNN (#118)
+-  add .DS_Store to .gitignore (#124)
+-  feature/multivariate - step 4 (#111)
+-  remove mutable default arg
+-  Fix/cleaner code for TorchForecastingModel (#130)
+-  Fix/gradle (#127)
+-  Feature/tcn improvements (#134)
+-  Fix/r2_score documentation (#140)
+-  feature/coverage (#141)
+-  Fix/requirements (#148)
+-  Fix/deprecation warnings (#147)
+-  Fix/metrics (#129)
+-  clean check_seasonality function (#152)
+-  Feature/four theta (#123)
+-  Fix readme typo (#153)
+-  #patch fixing badge in README
+-  Release 0.2.3
+-  Update CODEOWNERS
+-  Implement map method for TimeSeries (#163)
+-  Fix/develop after feature map (#166)
+-  Fix Develop (#156)
+-  Generation/pass frequency (#157)
+-  fix(workflow): all tests trigger on PR (#165)
+-  Add publishing docker image by gradle in release workflow (#159)
+-  Fix multiplying dateoffset by float (#172)
+-  hotfix/manual-frequency-override (#patch) (#139)
+- ... e mais 45 commits
 
 ### Release 2
 

@@ -22,7 +22,42 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 34
+
+-  fix some typos
+-  Merge pull request #202 from ijones16/patch-1
+-  Add missing prop-types peerDependency
+-  Fix keyForQuery being non-deterministic for vars
+-  Fix outdated useQuery API in README and 1 typo
+-  Link to egghead screencast
+-  move text up and highlight
+-  Merge pull request #207 from ijones16/patch-2
+-  Escape pipe characters (|) in Markdown tables.
+-  Merge pull request #214 from FormidableLabs/fix/escape-pipe-in-md-tables
+-  Fix typo in useQuery docs
+-  Merge pull request #217 from akramsaouri/patch-1
+-  Fix incorrect use of Exclude and added key prop
+-  Merge pull request #220 from FormidableLabs/fix-rp-component-props-type
+-  Parse document at all times
+-  Remove GraphQLRequest type from components' props
+-  Fix Omit type on components
+-  Merge pull request #221 from FormidableLabs/fix/always-parse-doc
+-  Cache exchange not forwarding teardown correctly #215
+-  Merge pull request #222 from inkOfPixel/master
+-  Guard resultCache access in cacheExchange (#223)
+-  Update README.md
+-  Update README.md
+-  Update README.md
+-  Merge pull request #226 from FormidableLabs/maintenance-status
+-  Fix typo on getting-started
+-  Merge pull request #230 from lnmunhoz/patch-1
+-  Export hook response types
+-  Export hook response types (#233)
+-  Export useXArgs
+-  Export useXArgs (#235)
+-  Export component props
+-  Export component props (#236)
+-  v1.0.5
 
 ### Release 2
 
@@ -38,7 +73,10 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 2
+
+-  (fix) - Fix data persistence for embedded fields (#727)
+-  Version Packages
 
 ### Release 3
 
@@ -54,7 +92,7 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+_(nenhum commit novo)_
 
 ### Release 4
 
@@ -70,7 +108,12 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 4
+
+-  use context of the operation we are reexecuting (#2104)
+-  (retry) - Fix delay misqueue in React Native (#2124)
+-  (persisted-fetch) - Fix Crypto API support for Web Workers and Node ESM mode (#2123)
+-  Version Packages (#2117)
 
 ### Release 5
 
@@ -86,4 +129,4 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+_(nenhum commit novo)_

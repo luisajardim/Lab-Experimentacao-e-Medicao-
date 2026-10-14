@@ -22,7 +22,10 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 2
+
+-  fix(messenger): fix handling deep links opened from outside the app
+-  Merge pull request #2173 from n0izn0iz/fix-external-deep-link
 
 ### Release 2
 
@@ -38,7 +41,11 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 3
+
+-  fix: properly handle denied perms
+-  fix: gen go
+-  Merge pull request #3808 from clegirar/fix/properly-handle-denied-pems
 
 ### Release 3
 
@@ -54,7 +61,12 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 4
+
+-  fix(i18n): new French translations
+-  chore: configure goreleaser to publish various OS and archs
+-  Merge pull request #3994 from berty/dev/moul/build-daemon-artifacts
+-  Merge pull request #3991 from berty/l10n_master
 
 ### Release 4
 
@@ -70,7 +82,10 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 2
+
+-  fix: break dependency cycle in messenger reducer
+-  Merge pull request #4103 from n0izn0iz/fix-web-undefined-messenger
 
 ### Release 5
 
@@ -86,4 +101,9 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 4
+
+-  feat: bump kubo
+-  fix: skip unstable test
+-  fix: service close data race
+-  Merge pull request #4492 from gfanton/feat/bump-kubo-16

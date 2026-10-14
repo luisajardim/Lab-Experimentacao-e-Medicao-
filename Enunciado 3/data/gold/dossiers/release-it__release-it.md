@@ -22,7 +22,14 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 6
+
+-  Add link to release notes in readme
+-  Always resolve run() with a string
+-  Run template commands verbosely
+-  Add latestVersion and version to config, exposing them in template commands
+-  Clarify some specs
+-  Release 3.0.1
 
 ### Release 2
 
@@ -38,7 +45,10 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 2
+
+-  Only ask init question in interactive mode (fixes #123)
+-  Release 3.1.1
 
 ### Release 3
 
@@ -54,7 +64,12 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 4
+
+-  Travis: run tests in Node v10 (remove v9)
+-  Reject with stderr/out string, not custom error for shell commands
+-  Warn for "nothing to commit", throw for anything else after `git commit` error (relates to #301)
+-  Release 7.4.5
 
 ### Release 4
 
@@ -70,7 +85,11 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 3
+
+-  Add `proxy` option to github client
+-  Update dependencies
+-  Release 7.6.1
 
 ### Release 5
 
@@ -86,4 +105,9 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 4
+
+-  Memoize `Changelog::create`
+-  Move changelog/set previews to helper
+-  Preview release notes before related prompt
+-  Release 9.5.1

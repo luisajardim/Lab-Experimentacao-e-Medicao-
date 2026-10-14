@@ -22,7 +22,13 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 5
+
+-  deps: from 05.2023 (#487)
+-  feat: add skip execution_info option (#484)
+-  feat: allow dumping with json (#485)
+-  fix: add win32 binary
+-  1.4.1: add execution_info skip option
 
 ### Release 2
 
@@ -38,7 +44,12 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 4
+
+-  chore: remove go patch version in go.mod (#726)
+-  deps: May 22 dependencies update (#706)
+-  feat: expand Swift integration with Mint support (#724)
+-  1.6.13: support Mint package manager
 
 ### Release 3
 
@@ -54,7 +65,11 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 3
+
+-  chore: setting proper error message for missing lefthook file (#748)
+-  fix: apply local extends only if they are present (#754)
+-  1.6.17: apply local extends only if they differ from global
 
 ### Release 4
 
@@ -70,7 +85,11 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 3
+
+-  packaging(npm): try direct reference for lefthook executable (#794)
+-  deps: July 2024 (#795)
+-  1.7.10: use direct reference to lefthook binary in NPM package
 
 ### Release 5
 
@@ -86,4 +105,10 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 5
+
+-  docs: update pnpm install command in the installation guide (#974)
+-  deps: March 2025 (#977)
+-  fix: use dedicated build path for swift plugin (#978)
+-  feat: support lefthook as go tool (#976)
+-  1.11.4: a fix for Swift and dependencies update

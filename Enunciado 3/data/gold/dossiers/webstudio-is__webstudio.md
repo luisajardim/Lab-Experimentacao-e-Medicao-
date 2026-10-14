@@ -22,7 +22,9 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 1
+
+-  Fix build create (#923)
 
 ### Release 2
 
@@ -38,7 +40,9 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 1
+
+-  Update ver 0.26.0 (#984)
 
 ### Release 3
 
@@ -54,7 +58,23 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 15
+
+-  fix: Dashboard thumbnail disappears on asset deletion (#3747)
+-  build: bump storybook (#3731)
+-  fix: support backdrop-filter in safari (#3748)
+-  refactor: isolate remix specifics in cli (#3753)
+-  build: bump remix (#3749)
+-  fix: Do not load full Build data at builder loader (#3759)
+-  fix: Prevent accidental clicks on label with boolean control (#3756)
+-  fix: Skip empty combo class when pasting from webflow (#3755)
+-  fix: Set correct tag when pasting a Block from webflow (#3762)
+-  feat: Display navigator item show state (#3761)
+-  refactor: move social asset into page meta (#3764)
+-  refactor: merge exclude from search flags (#3765)
+-  experimental: Enhance Performance by Using Postgrest to Fetch Data from Build Table (#3758)
+-  feat: Show/hide toggle in navigator (#3766)
+-  release-20-07-2024.staging
 
 ### Release 4
 
@@ -70,7 +90,13 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 5
+
+-  build: publish 0.185.0 (#4286)
+-  feat: Publish settings section in project settings (#4295)
+-  fix: Movement jumps on windows (#4296)
+-  fix: Input arrow up and down pulls up autocomplete now instead of incrementing (#4291)
+-  build: release 14-10-2024
 
 ### Release 5
 
@@ -86,4 +112,8 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 3
+
+-  fix: Allow publishing to staging with CMS on free plan (#5721)
+-  fix: Preserve whitespace between sibling elements (#5718)
+-  feat: Remove starter templates, add welcome screen with guide and social links (#5722)

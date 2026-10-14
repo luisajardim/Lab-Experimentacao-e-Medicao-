@@ -18,7 +18,13 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 5
+
+-  chore(adopters): Add grouchojeff to ADOPTERS.md
+-  chore(adopters): Add Sharecare, Inc. to ADOPTERS.md
+-  chore(adopters): move grouchojeff's ADOPTERS.md entry to Zeta Associates
+-  feat(governance): add HarshThakur as new reviewer
+-  chore(upgrade): update upgrade README with 2.8.0 steps
 
 ### Release 2
 
@@ -34,7 +40,12 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 4
+
+-  fix some typo
+-  Updated dead url
+-  Add Realworks BV's entry into ADOPTERS.md
+-  Add NationTech to the OpenEBS Adopters' list (#3507)
 
 ### Release 3
 
@@ -50,7 +61,9 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 1
+
+-  chore(MAINTAINERS): add vishnu and tiago as maintainers (#3637)
 
 ### Release 4
 
@@ -66,7 +79,7 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+_(nenhum commit novo)_
 
 ### Release 5
 
@@ -82,4 +95,10 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 5
+
+-  ci: build binaries correctly (#3964)
+-  fix(upgrade): decide is mayastor is enabled based on config and values (#3967) (#3970)
+-  Cherry pick PR 3966 to release/4.3 branch (#3974)
+-  chore(ci): update helm chart versions and/or git submodules
+-  docs: update the README

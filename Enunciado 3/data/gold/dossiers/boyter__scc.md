@@ -22,7 +22,26 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 18
+
+-  Remove redundant space
+-  validate languages.json during constants generation
+-  Add thrift as a language
+-  Merge pull request #10 from nemith/thriftlang
+-  Normalize all the line endings
+-  Merge pull request #8 from nemith/jsonvalidate
+-  Add support for checking full filenames https://github.com/boyter/scc/issues/11
+-  Merge pull request #12 from boyter/Cmake
+-  Add MQL
+-  Add in MQL support
+-  Merge pull request #13 from boyter/MQL
+-  WIP of JSON output
+-  Add JSON ouput and file write output
+-  Merge pull request #14 from boyter/JSON
+-  Add another link
+-  Add in CSV output support
+-  Merge pull request #15 from boyter/CSV
+-  For new release 1.2.0
 
 ### Release 2
 

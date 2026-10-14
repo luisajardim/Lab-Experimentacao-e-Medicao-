@@ -22,7 +22,10 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 2
+
+-  chore: Merge branch `dev` to `main` (#268)
+-  chore: Release v1.10.1 [skip ci]
 
 ### Release 2
 
@@ -38,7 +41,11 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 3
+
+-  chore: Update translations from Crowdin
+-  chore: Merge branch `dev` to `main` (#273)
+-  chore: Release v1.11.0 [skip ci]
 
 ### Release 3
 
@@ -54,7 +61,14 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 6
+
+-  chore: Update legacy release files
+-  feat: Show bottom bar labels in main screen
+-  fix: Serialize `StringList` options based on patcher type
+-  chore: Update translations from Crowdin
+-  chore: Merge branch `dev` to `main` (#407)
+-  chore: Release v1.15.0 [skip ci]
 
 ### Release 4
 
@@ -70,7 +84,13 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 5
+
+-  fix: Mirror app card gradients in RTL layouts
+-  chore: Bump dependencies
+-  chore: Update translations from Crowdin
+-  chore: Merge branch `dev` to `main` (#670)
+-  chore: Release v1.23.0 [skip ci]
 
 ### Release 5
 
@@ -86,4 +106,8 @@ _(vazio)_
 
 **Commits desde a release anterior**
 
-_(não disponíveis nos JSONs — use o link da release/compare no GitHub)_
+Total: 3
+
+-  fix: Allow root mount when only versionCode differs from patched APK (#760)
+-  chore: Merge branch `dev` to `main` (#762)
+-  chore: Release v1.24.3 [skip ci]

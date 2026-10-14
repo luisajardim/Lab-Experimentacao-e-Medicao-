@@ -109,11 +109,43 @@ def ask(prompt: str, options: dict[str, str], allow_undo: bool) -> str:
         print("  valor inválido; tente de novo.")
 
 
-def label_row(row: dict[str, str], dossier_dir: Path) -> None:
+def suggestion_fields(suggestion: dict | None) -> dict[str, str] | None:
+    """Convert an llm_prelabel.py suggestion into label columns, or None if invalid."""
+    if not isinstance(suggestion, dict):
+        return None
+    corrective = suggestion.get("corrective")
+    if not isinstance(corrective, list) or len(corrective) != 5:
+        return None
+    fields = {
+        "project_type": str(suggestion.get("project_type", "")),
+        "delivers_to_user": str(suggestion.get("delivers_to_user", "")),
+        **{f"corrective_{i}": str(value) for i, value in enumerate(corrective, start=1)},
+    }
+    return fields if all(fields[c] in VALID_VALUES[c] for c in fields) else None
+
+
+def label_row(row: dict[str, str], dossier_dir: Path, suggestion: dict | None = None) -> None:
     dossier = dossier_dir / dossier_filename(row["full_name"])
     print("\n" + "=" * 78)
     print(dossier.read_text(encoding="utf-8") if dossier.exists() else f"(sem dossiê) {row['full_name']}")
     print("=" * 78)
+
+    suggested = suggestion_fields(suggestion)
+    if suggested:
+        flags = " ".join("C" if suggested[f"corrective_{i}"] == "sim" else "-" for i in range(1, 6))
+        print(
+            f"Sugestão LLM: tipo={suggested['project_type']} | entrega={suggested['delivers_to_user']} "
+            f"| corretivas (R1..R5)={flags}"
+        )
+        if suggestion and suggestion.get("reason"):
+            print(f"  motivo: {suggestion['reason']}")
+        choice = input("[Enter] aceitar · [e] editar · [q] sair: ").strip().lower()
+        if choice == "q":
+            raise Quit
+        if choice != "e":
+            row.update(suggested)
+            row["notes"] = "[LLM]"
+            return
 
     steps = [
         ("project_type", "Tipo [1]biblioteca/framework [2]aplicação/serviço [3]CLI [4]outro: ", PROJECT_TYPES),
@@ -134,6 +166,9 @@ def label_row(row: dict[str, str], dossier_dir: Path) -> None:
     note = input("Notas (opcional, Enter para pular): ").strip()
     if note.lower() == "q":
         raise Quit
+    if suggested:
+        edited = any(row[column] != value for column, value in suggested.items())
+        note = f"{'[LLM+editado]' if edited else '[LLM]'} {note}".strip()
     row["notes"] = note
 
 
@@ -154,12 +189,17 @@ def run(args: argparse.Namespace) -> int:
     audit = json.loads(audit_path.read_text()) if audit_path.exists() else {}
     audit.setdefault("started_at", datetime.now(timezone.utc).isoformat())
 
+    suggestions: dict = {}
+    if args.suggestions:
+        suggestions = json.loads(args.suggestions.read_text(encoding="utf-8"))
+        print(f"Sugestões da LLM carregadas: {len(suggestions)} repositórios.")
+
     pending = [r for r in rows if not is_complete(r)]
     print(f"Membro {args.member.upper()}: {len(rows) - len(pending)}/{len(rows)} completos. 'q' salva e sai.")
     try:
         for row in pending:
             print(f"\n[{rows.index(row) + 1}/{len(rows)}]")
-            label_row(row, args.dossier_dir)
+            label_row(row, args.dossier_dir, suggestions.get(row["full_name"]))
             write_csv(output, columns, rows)  # salva a cada repositório
     except (Quit, EOFError, KeyboardInterrupt):
         print("\nSaindo; progresso salvo.")
@@ -178,6 +218,12 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--template", type=Path, default=GOLD_DIR / "labels_template.csv")
     parser.add_argument("--dossier-dir", type=Path, default=GOLD_DIR / "dossiers")
     parser.add_argument("--output", type=Path)
+    parser.add_argument(
+        "--suggestions",
+        type=Path,
+        metavar="JSON",
+        help="llm_suggestions.json gerado por llm_prelabel.py; Enter aceita a sugestão.",
+    )
     parser.add_argument("--validate", type=Path, metavar="CSV")
     args = parser.parse_args(argv)
     if not args.validate and not args.member:
