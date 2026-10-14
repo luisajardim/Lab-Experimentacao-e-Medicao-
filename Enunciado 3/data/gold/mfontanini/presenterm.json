@@ -348,8 +348,69 @@
     {
       "release": "v0.2.1",
       "previous_release": "0.2.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "b59bc52c8a0e9fce2b51beae01c582b04e4cbc45",
+          "author_date": "2023-10-17T01:39:42Z",
+          "message": "Add link to layouts docs in features section",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b59bc52c8a0e9fce2b51beae01c582b04e4cbc45"
+        },
+        {
+          "sha": "f6a20b74a5f96c3f40d8832c03ff5fe64df43243",
+          "author_date": "2023-10-17T13:46:13Z",
+          "message": "Add notes on enabling sixel support",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f6a20b74a5f96c3f40d8832c03ff5fe64df43243"
+        },
+        {
+          "sha": "da0dd9eb3a748b42b27258919a38ac420911e893",
+          "author_date": "2023-10-17T23:49:36Z",
+          "message": "Change wording in README",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/da0dd9eb3a748b42b27258919a38ac420911e893"
+        },
+        {
+          "sha": "ba2f9585e80de6155c3d6634e4512693005ecb48",
+          "author_date": "2023-10-18T05:09:17Z",
+          "message": "feat(ci,profiles): use github actions to release automated binaries // cargo profiles to test,bench,release binaries",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ba2f9585e80de6155c3d6634e4512693005ecb48"
+        },
+        {
+          "sha": "6a47b3e4b361d20c8ab461a4c7bc70b94b4bda9c",
+          "author_date": "2023-10-18T05:10:55Z",
+          "message": "feat(releaser): script to ease releasing process",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6a47b3e4b361d20c8ab461a4c7bc70b94b4bda9c"
+        },
+        {
+          "sha": "f636302c543e9bacf01adb41df03c9e1ab4a80fe",
+          "author_date": "2023-10-18T08:35:24Z",
+          "message": "feat(splash): show splashes if no args were provided",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f636302c543e9bacf01adb41df03c9e1ab4a80fe"
+        },
+        {
+          "sha": "7dcfcc7924cb4619751a857cd2db3227d02b033e",
+          "author_date": "2023-10-18T08:47:52Z",
+          "message": "chore(clap-deps):use string feature to display splashes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7dcfcc7924cb4619751a857cd2db3227d02b033e"
+        },
+        {
+          "sha": "a93f7aefc2dffcfa88c0ffef1da75f080de8818f",
+          "author_date": "2023-10-18T23:30:57Z",
+          "message": "Merge pull request #5 from pwnwriter/master\n\nfeat(release): Use github actions to release binaries",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a93f7aefc2dffcfa88c0ffef1da75f080de8818f"
+        },
+        {
+          "sha": "533f949a6ad5087ee571e7778ed3fdf5348ad81f",
+          "author_date": "2023-10-18T23:46:01Z",
+          "message": "Add changelog",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/533f949a6ad5087ee571e7778ed3fdf5348ad81f"
+        },
+        {
+          "sha": "6b3caf156c7c72c573f37f39a412b5039eec8580",
+          "author_date": "2023-10-18T23:47:51Z",
+          "message": "Bump version to 0.2.1",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6b3caf156c7c72c573f37f39a412b5039eec8580"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.3.0",
@@ -360,8 +421,351 @@
     {
       "release": "v0.4.0",
       "previous_release": "v0.3.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "8835d7ad3a21de187ab7a7434dece6888f926f75",
+          "author_date": "2023-11-24T20:05:15Z",
+          "message": "Update information on using the Nix package",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8835d7ad3a21de187ab7a7434dece6888f926f75"
+        },
+        {
+          "sha": "45b2043a43e34ef3054ef0e9236540b9d28e44a9",
+          "author_date": "2023-11-24T21:32:56Z",
+          "message": "Merge pull request #63 from MikaelFangel/patch-1\n\nUpdate information on using the Nix package",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/45b2043a43e34ef3054ef0e9236540b9d28e44a9"
+        },
+        {
+          "sha": "9d17aba0dfbdf29e70a6d2a9a04540a5ea1f638c",
+          "author_date": "2023-11-21T14:43:16Z",
+          "message": "Pull in all of bat's syntect themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9d17aba0dfbdf29e70a6d2a9a04540a5ea1f638c"
+        },
+        {
+          "sha": "5ba06ede1fc1c931cc56970e485121af688e5aac",
+          "author_date": "2023-11-26T01:07:37Z",
+          "message": "Merge pull request #67 from mfontanini/more-themes\n\nPull in all of bat's syntect themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5ba06ede1fc1c931cc56970e485121af688e5aac"
+        },
+        {
+          "sha": "003b58cca4cf9f52a80fd11d9737f28800efef29",
+          "author_date": "2023-11-26T21:47:35Z",
+          "message": "Reset colors before setting colors to respect terminal",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/003b58cca4cf9f52a80fd11d9737f28800efef29"
+        },
+        {
+          "sha": "f58e53b9c6d8b0cd8ad23e6dcebad133f0f35efa",
+          "author_date": "2023-11-26T22:05:24Z",
+          "message": "Add support for named terminal colors",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f58e53b9c6d8b0cd8ad23e6dcebad133f0f35efa"
+        },
+        {
+          "sha": "2018f23840dca16c6fc2024df9471207a2bf479b",
+          "author_date": "2023-11-26T22:05:44Z",
+          "message": "Add terminal dark/light themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2018f23840dca16c6fc2024df9471207a2bf479b"
+        },
+        {
+          "sha": "8fe63021714b6e785476c75965b3c8b8c8b3c474",
+          "author_date": "2023-11-26T22:09:06Z",
+          "message": "Merge pull request #68 from mfontanini/terminal-themes\n\nAdd terminal colored themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8fe63021714b6e785476c75965b3c8b8c8b3c474"
+        },
+        {
+          "sha": "25751670ea6966e12c642f81ec308833167de338",
+          "author_date": "2023-11-27T14:23:55Z",
+          "message": "Don't allow no background/foreground colors on PDF export",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/25751670ea6966e12c642f81ec308833167de338"
+        },
+        {
+          "sha": "4808bd8759e650b12d12a0220609ea6a5d8ea316",
+          "author_date": "2023-11-28T01:58:10Z",
+          "message": "Merge pull request #69 from mfontanini/no-background-pdf\n\nDon't allow no background/foreground colors on PDF export",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/4808bd8759e650b12d12a0220609ea6a5d8ea316"
+        },
+        {
+          "sha": "2da1e6d9697a72625b6adbff55efbd7f631ce232",
+          "author_date": "2023-11-28T02:38:56Z",
+          "message": "Allow providing custom syntect themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2da1e6d9697a72625b6adbff55efbd7f631ce232"
+        },
+        {
+          "sha": "a9017363252e9025cb2df03ecbcf7c9fc010079e",
+          "author_date": "2023-11-28T02:43:36Z",
+          "message": "Merge pull request #71 from mfontanini/custom-syntect-themes\n\nAllow providing custom syntect themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a9017363252e9025cb2df03ecbcf7c9fc010079e"
+        },
+        {
+          "sha": "52e7440231194772d108baf9353ce3c7f562bf15",
+          "author_date": "2023-11-28T14:51:12Z",
+          "message": "Load themes under ~/.config/presenterm/themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/52e7440231194772d108baf9353ce3c7f562bf15"
+        },
+        {
+          "sha": "ce859db566d6d431d2230dedcef720358945a04a",
+          "author_date": "2023-11-28T14:56:33Z",
+          "message": "Merge pull request #73 from mfontanini/custom-themes\n\nLoad themes under ~/.config/presenterm/themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ce859db566d6d431d2230dedcef720358945a04a"
+        },
+        {
+          "sha": "3daa86173f83e2b6d16e7e8fd3e6a4403289df48",
+          "author_date": "2023-11-30T14:34:33Z",
+          "message": "Create container for all themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3daa86173f83e2b6d16e7e8fd3e6a4403289df48"
+        },
+        {
+          "sha": "9a2f6670284def2af7c43190c34ee641123dd938",
+          "author_date": "2023-12-01T14:05:54Z",
+          "message": "Create container for highlighting themes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9a2f6670284def2af7c43190c34ee641123dd938"
+        },
+        {
+          "sha": "ffe6917fcef459cd88437016843d3b60a4f6ffb1",
+          "author_date": "2023-12-01T14:12:45Z",
+          "message": "Load default theme from dotfile",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ffe6917fcef459cd88437016843d3b60a4f6ffb1"
+        },
+        {
+          "sha": "d1bf9e5d4f80cd64e2370c24955d8507d0173cde",
+          "author_date": "2023-12-01T14:19:16Z",
+          "message": "Merge pull request #74 from mfontanini/custom-configs\n\nAllow configuring theme in dotfile",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d1bf9e5d4f80cd64e2370c24955d8507d0173cde"
+        },
+        {
+          "sha": "78347667149b8f5987dd12a31ad157d88a455648",
+          "author_date": "2023-12-04T00:23:15Z",
+          "message": "Allow rendering typst/latex formulas",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/78347667149b8f5987dd12a31ad157d88a455648"
+        },
+        {
+          "sha": "ad45a2e97b51ecf1dcf3b425c44d0fcdcea8923c",
+          "author_date": "2023-12-04T00:36:25Z",
+          "message": "Merge pull request #75 from mfontanini/render-formulas\n\nAllow rendering typst/latex formulas",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ad45a2e97b51ecf1dcf3b425c44d0fcdcea8923c"
+        },
+        {
+          "sha": "8f9cb9ebb58df2bad5c45657bcbcee4f6feeeceb",
+          "author_date": "2023-12-04T02:25:53Z",
+          "message": "Adjust themes' colors for typst rendering",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8f9cb9ebb58df2bad5c45657bcbcee4f6feeeceb"
+        },
+        {
+          "sha": "fd8120c85873cdbbe4dc2ad4fcfb7e028fc2f4f0",
+          "author_date": "2023-12-04T02:30:03Z",
+          "message": "Merge pull request #76 from mfontanini/formula-colors\n\nAdjust themes' colors for typst rendering",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fd8120c85873cdbbe4dc2ad4fcfb7e028fc2f4f0"
+        },
+        {
+          "sha": "3ec6c0f9d5b26f394227cfad8f394764e664a135",
+          "author_date": "2023-12-05T08:39:56Z",
+          "message": "Add syntax highlighting for nix",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3ec6c0f9d5b26f394227cfad8f394764e664a135"
+        },
+        {
+          "sha": "9ba2e92c37863e97a9d8c4a949112baf9f973963",
+          "author_date": "2023-12-05T15:04:18Z",
+          "message": "Generate PDF replacement images in presenterm directly",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9ba2e92c37863e97a9d8c4a949112baf9f973963"
+        },
+        {
+          "sha": "2e67f30e196090f488152abc037fa438f5586aaf",
+          "author_date": "2023-12-05T15:43:27Z",
+          "message": "Merge pull request #79 from mfontanini/pdf-image-revamp\n\nGenerate PDF replacement images in presenterm directly",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2e67f30e196090f488152abc037fa438f5586aaf"
+        },
+        {
+          "sha": "33e48fc0086b226bab9c5a8a076022c51303f626",
+          "author_date": "2023-12-05T16:09:47Z",
+          "message": "Merge pull request #78 from GaetanLepage/nix\n\nAdd syntax highlighting for nix",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/33e48fc0086b226bab9c5a8a076022c51303f626"
+        },
+        {
+          "sha": "74cea7405b6b351e68ead5c4edcf92671180fac4",
+          "author_date": "2023-12-06T14:53:00Z",
+          "message": "Add script to verify bat assets",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/74cea7405b6b351e68ead5c4edcf92671180fac4"
+        },
+        {
+          "sha": "1df2de0ee90459115f108c0f10a8cca40752dbb3",
+          "author_date": "2023-12-06T14:53:13Z",
+          "message": "Fill shellcheck warnings for bat/update.sh",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1df2de0ee90459115f108c0f10a8cca40752dbb3"
+        },
+        {
+          "sha": "d2325d64846246be639bd950dc33bdc58e7a933e",
+          "author_date": "2023-12-06T14:54:54Z",
+          "message": "Add workflow to verify bat assets hash",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d2325d64846246be639bd950dc33bdc58e7a933e"
+        },
+        {
+          "sha": "b4fc9c5df2d2b24e03819cc483328e224ab16248",
+          "author_date": "2023-12-06T14:59:38Z",
+          "message": "Merge pull request #80 from mfontanini/verify-bat\n\nVerify bat assets match the stored git hash",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b4fc9c5df2d2b24e03819cc483328e224ab16248"
+        },
+        {
+          "sha": "6bc01f42d0e4107764cd73798d8027878ba2c0a6",
+          "author_date": "2023-12-08T01:58:55Z",
+          "message": "Unify third party tool invocation",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6bc01f42d0e4107764cd73798d8027878ba2c0a6"
+        },
+        {
+          "sha": "b230d863f164df52e794dab3df9f0ad788db134b",
+          "author_date": "2023-12-08T15:43:42Z",
+          "message": "Validate the minimum presenterm-exporter version is installed",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b230d863f164df52e794dab3df9f0ad788db134b"
+        },
+        {
+          "sha": "8fc6e1ae42b8321ab66683cb268711deca199f9e",
+          "author_date": "2023-12-08T15:49:43Z",
+          "message": "Merge pull request #81 from mfontanini/verify-exporter-version\n\nVerify exporter version",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8fc6e1ae42b8321ab66683cb268711deca199f9e"
+        },
+        {
+          "sha": "c2ad4f3e5b03ba4cc079387a897442703536d113",
+          "author_date": "2023-12-08T19:30:48Z",
+          "message": "Add syntax highlighting for diff",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c2ad4f3e5b03ba4cc079387a897442703536d113"
+        },
+        {
+          "sha": "57184b0e73d468491c62dd7ff899e8c465c8d3ad",
+          "author_date": "2023-12-08T20:04:06Z",
+          "message": "Fix typo in update.sh shebang",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/57184b0e73d468491c62dd7ff899e8c465c8d3ad"
+        },
+        {
+          "sha": "9b7274a9ae8c92e1e697e0f41c61e6b76e98e9b8",
+          "author_date": "2023-12-08T23:30:41Z",
+          "message": "Merge pull request #82 from rmartine-ias/add-diff-syntax\n\nAdd syntax highlighting for diff",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9b7274a9ae8c92e1e697e0f41c61e6b76e98e9b8"
+        },
+        {
+          "sha": "d7dc027769246f391bf14cae63878830a7738329",
+          "author_date": "2023-12-08T23:31:03Z",
+          "message": "Merge pull request #83 from rmartine-ias/patch-1\n\nFix typo in update.sh shebang",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d7dc027769246f391bf14cae63878830a7738329"
+        },
+        {
+          "sha": "d3292436378f4f8b374578aaa7a999b80ac384e3",
+          "author_date": "2023-12-09T00:13:57Z",
+          "message": "Edd .editorconfig for *.sh and format shell scripts",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d3292436378f4f8b374578aaa7a999b80ac384e3"
+        },
+        {
+          "sha": "4f91288fe43d9e7251a69998fac062b527277071",
+          "author_date": "2023-12-09T00:17:09Z",
+          "message": "Merge pull request #85 from mfontanini/shfmt\n\nEdd .editorconfig for *.sh and format shell scripts",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/4f91288fe43d9e7251a69998fac062b527277071"
+        },
+        {
+          "sha": "f617bc960a2145d17b8ca0dd695fb838b37a169e",
+          "author_date": "2023-12-09T03:10:50Z",
+          "message": "Add comment command to jump to vertical middle",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f617bc960a2145d17b8ca0dd695fb838b37a169e"
+        },
+        {
+          "sha": "99a25c3e980d5c8f1487031edb0c56ca802fda0b",
+          "author_date": "2023-12-09T19:45:43Z",
+          "message": "Merge pull request #86 from mfontanini/jump-to-middle\n\nAdd comment command to jump to vertical middle",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/99a25c3e980d5c8f1487031edb0c56ca802fda0b"
+        },
+        {
+          "sha": "b8ab90a5938008bcaaf029f934b43c7582b06897",
+          "author_date": "2023-12-09T19:54:23Z",
+          "message": "Allow having implicit slide ends",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b8ab90a5938008bcaaf029f934b43c7582b06897"
+        },
+        {
+          "sha": "7dac66e1aac4ee8bf80ae6e39136f1082476f8d9",
+          "author_date": "2023-12-09T19:57:20Z",
+          "message": "Merge pull request #87 from mfontanini/implicit-slide-ends\n\nAllow having implicit slide ends",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7dac66e1aac4ee8bf80ae6e39136f1082476f8d9"
+        },
+        {
+          "sha": "5917a67bd7e761ead9fd88e7d942cbedd98da400",
+          "author_date": "2023-12-10T02:45:00Z",
+          "message": "Don't add new slide when front matter is present",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5917a67bd7e761ead9fd88e7d942cbedd98da400"
+        },
+        {
+          "sha": "6fd0ee9bcac6e820726544b6fe8a0939c536d7d4",
+          "author_date": "2023-12-10T03:00:23Z",
+          "message": "Merge pull request #89 from mfontanini/implicit-slide-ends-2\n\nDon't add new slide when front matter is present",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6fd0ee9bcac6e820726544b6fe8a0939c536d7d4"
+        },
+        {
+          "sha": "1f886e699e032389e26279899f538dbca7c0e8e2",
+          "author_date": "2023-12-10T21:16:05Z",
+          "message": "Update docs to reflect new changes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1f886e699e032389e26279899f538dbca7c0e8e2"
+        },
+        {
+          "sha": "253f1ebf6145708a27dbb2916cc3f6aae0f898f4",
+          "author_date": "2023-12-13T03:33:22Z",
+          "message": "Allow selecting a prefix for comment commands",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/253f1ebf6145708a27dbb2916cc3f6aae0f898f4"
+        },
+        {
+          "sha": "7cab990913b67fea0245568867c471f73c32066e",
+          "author_date": "2023-12-14T01:50:44Z",
+          "message": "Allow setting options within the presentation",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7cab990913b67fea0245568867c471f73c32066e"
+        },
+        {
+          "sha": "419cee17c47ac3720631f816e37e573be6672255",
+          "author_date": "2023-12-14T02:24:23Z",
+          "message": "Merge pull request #91 from mfontanini/configurable-command-prefix\n\nAllow selecting a prefix for comment commands",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/419cee17c47ac3720631f816e37e573be6672255"
+        },
+        {
+          "sha": "9947b13eba79c9eeaeecad6dbc61e80a2f05a492",
+          "author_date": "2023-12-15T02:06:29Z",
+          "message": "Add intro page in docs",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9947b13eba79c9eeaeecad6dbc61e80a2f05a492"
+        },
+        {
+          "sha": "19a309d5d1f880788c4b17e4a4acfdbcdf1004c9",
+          "author_date": "2023-12-15T02:06:51Z",
+          "message": "Add preliminary 0.4.0 changes in changelog",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/19a309d5d1f880788c4b17e4a4acfdbcdf1004c9"
+        },
+        {
+          "sha": "f8925903aff63db839aa103d8b0d0a5c2fe02061",
+          "author_date": "2023-12-15T02:20:53Z",
+          "message": "Forward our own parameters to presenterm-export",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f8925903aff63db839aa103d8b0d0a5c2fe02061"
+        },
+        {
+          "sha": "a372bdbade1c2f094342c1f57af783855da5b7b9",
+          "author_date": "2023-12-15T02:23:44Z",
+          "message": "Merge pull request #92 from mfontanini/forward-exporter-args\n\nForward our own parameters to presenterm-export",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a372bdbade1c2f094342c1f57af783855da5b7b9"
+        },
+        {
+          "sha": "b85ec0c3202bdf7636125fd5213d224473fcf4ec",
+          "author_date": "2023-12-16T14:43:33Z",
+          "message": "Trim down root README file",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b85ec0c3202bdf7636125fd5213d224473fcf4ec"
+        },
+        {
+          "sha": "ebdae74f117c2daf9d3869e01bfa2d3eb8443042",
+          "author_date": "2023-12-16T14:51:09Z",
+          "message": "Merge pull request #93 from mfontanini/prepare-0.4.0\n\n0.4.0 release changes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ebdae74f117c2daf9d3869e01bfa2d3eb8443042"
+        },
+        {
+          "sha": "030e0210633ee9406b7c9e2b0c8af1979bd8ca51",
+          "author_date": "2023-12-16T14:51:53Z",
+          "message": "Set 0.4.0 date in changelog",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/030e0210633ee9406b7c9e2b0c8af1979bd8ca51"
+        },
+        {
+          "sha": "284db812aa876d43f3a7d7e8b96f75c72a9945fa",
+          "author_date": "2023-12-16T14:59:49Z",
+          "message": "Bump version to 0.4.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/284db812aa876d43f3a7d7e8b96f75c72a9945fa"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.4.1",
@@ -396,8 +800,897 @@
     {
       "release": "v0.8.0",
       "previous_release": "v0.7.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c0d81ceb4de58b6ce1aa5da33734bc2898dd60f0",
+          "author_date": "2024-03-10T21:06:40Z",
+          "message": "Update deps",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c0d81ceb4de58b6ce1aa5da33734bc2898dd60f0"
+        },
+        {
+          "sha": "f894c854bf7bb0b95ea6515d322b813b040a6bbd",
+          "author_date": "2024-03-10T21:53:29Z",
+          "message": "Revert \"Update deps\"\n\nThis reverts commit c0d81ceb4de58b6ce1aa5da33734bc2898dd60f0.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f894c854bf7bb0b95ea6515d322b813b040a6bbd"
+        },
+        {
+          "sha": "d880322e6fe35c6dc0a211c41dd5d5762ba97ab7",
+          "author_date": "2024-03-15T04:41:42Z",
+          "message": "feat(ruby-code-highlighting): added support for ruby code highlighting",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d880322e6fe35c6dc0a211c41dd5d5762ba97ab7"
+        },
+        {
+          "sha": "15ae4d7008434a73ffd90ecb68a67af0bf33d9e4",
+          "author_date": "2024-03-15T12:22:59Z",
+          "message": "Merge pull request #226 from pranavrao145/feat/ruby-code-highlighting\n\nAdd Support for Ruby Code Highlighting",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/15ae4d7008434a73ffd90ecb68a67af0bf33d9e4"
+        },
+        {
+          "sha": "c782bcc5d0e401f43d25e850d7f5213365a7e097",
+          "author_date": "2024-03-17T15:31:41Z",
+          "message": "Allow having multiple authors",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c782bcc5d0e401f43d25e850d7f5213365a7e097"
+        },
+        {
+          "sha": "df685c5e921264528f4f5e2f8180f775e0c8014e",
+          "author_date": "2024-03-17T15:39:54Z",
+          "message": "Merge pull request #227 from mfontanini/multiple-authors\n\nAllow having multiple authors",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/df685c5e921264528f4f5e2f8180f775e0c8014e"
+        },
+        {
+          "sha": "97b75865a77546efad7067d34bd05182a599f359",
+          "author_date": "2024-03-23T11:44:55Z",
+          "message": "chore(config): include strict_front_matter_parsing in default config",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/97b75865a77546efad7067d34bd05182a599f359"
+        },
+        {
+          "sha": "629869178f722bcb78ac5100af445dca4a783343",
+          "author_date": "2024-03-23T12:09:49Z",
+          "message": "docs: CHANGELOG.md contains clickable links to issues\n\nPreviously in contained the number of the issue but it was not a link.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/629869178f722bcb78ac5100af445dca4a783343"
+        },
+        {
+          "sha": "94820681d5b08e5b75d624b15dcf3e51fd4eb0dc",
+          "author_date": "2024-03-23T14:40:31Z",
+          "message": "Merge pull request #230 from mikavilpas/changelog-includes-links-to-issues\n\ndocs: CHANGELOG.md contains clickable links to issues",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/94820681d5b08e5b75d624b15dcf3e51fd4eb0dc"
+        },
+        {
+          "sha": "5739d6eb97f944b9680920621dc24e6f4aa1647b",
+          "author_date": "2024-03-23T14:40:40Z",
+          "message": "Merge pull request #229 from mikavilpas/include-strict-front-matter-parsing-in-config\n\nchore(config): include strict_front_matter_parsing in default config",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5739d6eb97f944b9680920621dc24e6f4aa1647b"
+        },
+        {
+          "sha": "5d87605fa83b6778d0e2b4e565709641f52c3825",
+          "author_date": "2024-03-24T07:16:38Z",
+          "message": "refactor: fix all clippy warnings\n\nThe warnings became visible in rust-analyzer. I could also see the\nwarnings on the command line by executing\ncargo clippy --all-targets",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5d87605fa83b6778d0e2b4e565709641f52c3825"
+        },
+        {
+          "sha": "cea460bd6424fcadcf035de1c07348ec84fc390a",
+          "author_date": "2024-03-30T15:44:16Z",
+          "message": "Merge pull request #231 from mikavilpas/fix-warnings\n\nrefactor: fix all clippy warnings",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/cea460bd6424fcadcf035de1c07348ec84fc390a"
+        },
+        {
+          "sha": "da8cdbfec74a233dc3dc187e12d44953ae07385c",
+          "author_date": "2024-03-23T07:44:49Z",
+          "message": "feat(config): generate JSON schema for the configuration file\n\nThis adds a new command line flag that makes presenterm print out a JSON\nschema for the configuration.\n\nUsage:\n\n    presenterm --generate-config-file-schema > schema.json\n\nThe schema can be used for validation, completion and documentation of\nthe configuration file.\n\nTo use it, you have to have yaml-language-server set up for your editor.\nAdd a magic comment to the top of the configuration file with the path\nto the schema:\n\n    # yaml-language-server: $schema=schema.json",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/da8cdbfec74a233dc3dc187e12d44953ae07385c"
+        },
+        {
+          "sha": "aa9f35f1c6b0da8feebd9da016fae71869d885c2",
+          "author_date": "2024-03-31T14:44:12Z",
+          "message": "Merge pull request #228 from mikavilpas/configuration-json-schema\n\nfeat(config): add JSON schema for validation,completion,documentation",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/aa9f35f1c6b0da8feebd9da016fae71869d885c2"
+        },
+        {
+          "sha": "b2387548dafa50f2b5957329da75507db90d49e3",
+          "author_date": "2024-03-31T15:02:19Z",
+          "message": "Allow using image paths in typst",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b2387548dafa50f2b5957329da75507db90d49e3"
+        },
+        {
+          "sha": "48e9fb7b79aa99328f2a931d6502f5875a108f5f",
+          "author_date": "2024-03-31T15:31:44Z",
+          "message": "Rename schema.json to config-file-schema.json",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/48e9fb7b79aa99328f2a931d6502f5875a108f5f"
+        },
+        {
+          "sha": "6f0933ec1581a6006316c54e266181dfc57536e8",
+          "author_date": "2024-04-01T02:26:25Z",
+          "message": "Merge pull request #235 from mfontanini/typst-image-paths\n\nAllow using image paths in typst",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6f0933ec1581a6006316c54e266181dfc57536e8"
+        },
+        {
+          "sha": "501b133fd7b18934fe43c4625bdca16249dfc5b6",
+          "author_date": "2024-03-31T15:32:36Z",
+          "message": "Add script to validate config file schema",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/501b133fd7b18934fe43c4625bdca16249dfc5b6"
+        },
+        {
+          "sha": "d7a4cb5f6f3c4cdd43b555d2813e316f3e326c07",
+          "author_date": "2024-03-31T15:33:55Z",
+          "message": "Run config file schema validation in CI",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d7a4cb5f6f3c4cdd43b555d2813e316f3e326c07"
+        },
+        {
+          "sha": "3833ef2f73254130eb0e14cbc97d3dafcda7033e",
+          "author_date": "2024-04-01T02:28:39Z",
+          "message": "Point sample config file's YAML LSP schema to github",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3833ef2f73254130eb0e14cbc97d3dafcda7033e"
+        },
+        {
+          "sha": "16f0d182032c725a3bcfff97f5bd38610c9a39d9",
+          "author_date": "2024-04-01T02:33:17Z",
+          "message": "Merge pull request #236 from mfontanini/validate-config-file-schema\n\nValidate config file schema",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/16f0d182032c725a3bcfff97f5bd38610c9a39d9"
+        },
+        {
+          "sha": "c0a72658db97a358ada204500ef5ccb64eada33e",
+          "author_date": "2024-04-21T19:16:45Z",
+          "message": "Allow explicitly disabling footer in certain slides",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c0a72658db97a358ada204500ef5ccb64eada33e"
+        },
+        {
+          "sha": "093673f6d874ae0cbead70ade280479f1f0d00d3",
+          "author_date": "2024-04-23T13:57:07Z",
+          "message": "Merge pull request #239 from mfontanini/disable-footer\n\nAllow explicitly disabling footer in certain slides",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/093673f6d874ae0cbead70ade280479f1f0d00d3"
+        },
+        {
+          "sha": "39ed30878e4eb77e49e38ee0b915171869c1b2f0",
+          "author_date": "2024-05-19T13:51:41Z",
+          "message": "feat: allow jumping fast between slides",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/39ed30878e4eb77e49e38ee0b915171869c1b2f0"
+        },
+        {
+          "sha": "c21ab99cd78dca5c2d20d1cc375166c49e3d0df3",
+          "author_date": "2024-05-19T14:02:32Z",
+          "message": "Merge pull request #244 from mfontanini/feat/jump-fast\n\nfeat: allow jumping fast between slides",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c21ab99cd78dca5c2d20d1cc375166c49e3d0df3"
+        },
+        {
+          "sha": "50db4bb3750dbe08c30b1ede34f161707ab593c3",
+          "author_date": "2024-05-19T14:19:35Z",
+          "message": "fix: display background color behind '\\t' in code exec output",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/50db4bb3750dbe08c30b1ede34f161707ab593c3"
+        },
+        {
+          "sha": "38dd1d4e96ae9d1013b1370932f3c7a67852fbc3",
+          "author_date": "2024-05-19T14:21:47Z",
+          "message": "Merge pull request #245 from mfontanini/fix/execution-style-tabs\n\nfix: display background color behind '\\t' in code exec output",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/38dd1d4e96ae9d1013b1370932f3c7a67852fbc3"
+        },
+        {
+          "sha": "a16d87436bdbd9ade9b6c6a1cbceb33d247d7b4e",
+          "author_date": "2024-05-19T14:55:30Z",
+          "message": "chore: remove nix cache in CI",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a16d87436bdbd9ade9b6c6a1cbceb33d247d7b4e"
+        },
+        {
+          "sha": "4516434f3a7ecd896945a92f6627585a0742b49c",
+          "author_date": "2024-05-19T14:59:10Z",
+          "message": "Merge pull request #246 from mfontanini/chore/remove-nix-cache\n\nchore: remove nix cache in CI",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/4516434f3a7ecd896945a92f6627585a0742b49c"
+        },
+        {
+          "sha": "e88a9f98518f1dc4db8ccd73bba3b9f3361ab44c",
+          "author_date": "2024-05-23T11:51:57Z",
+          "message": "docs: Update install instructions for Arch Linux",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e88a9f98518f1dc4db8ccd73bba3b9f3361ab44c"
+        },
+        {
+          "sha": "5163a841420f9778d76b00036b4a5d388d27ac49",
+          "author_date": "2024-05-25T15:30:58Z",
+          "message": "Merge pull request #248 from orhun/docs/update_arch_instructions\n\ndocs: Update install instructions for Arch Linux",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5163a841420f9778d76b00036b4a5d388d27ac49"
+        },
+        {
+          "sha": "e4b28326eece3c4d8cd84173def6920d74e1e772",
+          "author_date": "2024-05-25T16:06:25Z",
+          "message": "chore: update dependencies",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e4b28326eece3c4d8cd84173def6920d74e1e772"
+        },
+        {
+          "sha": "f5feca826295dc91f836818b3be14800508d1a39",
+          "author_date": "2024-05-25T17:14:12Z",
+          "message": "Merge pull request #249 from mfontanini/chore/update-dependencies\n\nchore: update dependencies",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f5feca826295dc91f836818b3be14800508d1a39"
+        },
+        {
+          "sha": "46cc0e01cf76b0ff680712ab557b8c98de1163d6",
+          "author_date": "2024-05-26T09:50:44Z",
+          "message": "fix(code-exec): wait for code execution process to exit completely",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/46cc0e01cf76b0ff680712ab557b8c98de1163d6"
+        },
+        {
+          "sha": "ecf5e65849ecfb7247f904e1ee72ca012163330f",
+          "author_date": "2024-05-26T13:32:44Z",
+          "message": "Merge pull request #250 from dmackdev/fix/wait-for-code-exec-process-to-exit\n\nfix(code-exec): wait for code execution process to exit completely",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ecf5e65849ecfb7247f904e1ee72ca012163330f"
+        },
+        {
+          "sha": "3ce1133c3513b329fa8a7854d0247847be97f175",
+          "author_date": "2024-05-22T16:46:33Z",
+          "message": "include stderr output with os_pipe crate",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3ce1133c3513b329fa8a7854d0247847be97f175"
+        },
+        {
+          "sha": "e950a12c84055d12fce8d4dbe93f930a5fd6672f",
+          "author_date": "2024-05-22T18:21:32Z",
+          "message": "add code execution examples to code.md presentation",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e950a12c84055d12fce8d4dbe93f930a5fd6672f"
+        },
+        {
+          "sha": "932f0dfdfbab1f3308be2a835daf1acf3862cbd5",
+          "author_date": "2024-05-24T18:44:32Z",
+          "message": "add sleeps to stderr code example",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/932f0dfdfbab1f3308be2a835daf1acf3862cbd5"
+        },
+        {
+          "sha": "3b2d41e96bc3486d3607d29d5c166f6434adb7ff",
+          "author_date": "2024-05-26T11:55:52Z",
+          "message": "read output line by line",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3b2d41e96bc3486d3607d29d5c166f6434adb7ff"
+        },
+        {
+          "sha": "ca261ca10daaed9cb9bf608655febf7cea01af04",
+          "author_date": "2024-05-26T13:54:20Z",
+          "message": "remove man command from test since output is OS dependent",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ca261ca10daaed9cb9bf608655febf7cea01af04"
+        },
+        {
+          "sha": "a515212abe2cb3a00b85655d81c886672778d146",
+          "author_date": "2024-05-26T14:58:19Z",
+          "message": "Merge pull request #252 from dmackdev/show-stderr-with-os-pipe\n\nfeat: show `stderr` output from code execution",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a515212abe2cb3a00b85655d81c886672778d146"
+        },
+        {
+          "sha": "95ee33f1f29b42fe9153cdd9e66fbcd753b70f7a",
+          "author_date": "2024-05-26T15:05:52Z",
+          "message": "chore: move code execution support check to executor",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/95ee33f1f29b42fe9153cdd9e66fbcd753b70f7a"
+        },
+        {
+          "sha": "e1e88c780a38fef86afcd633fc3608499f1110c0",
+          "author_date": "2024-05-26T17:37:53Z",
+          "message": "feat: allow executing arbitrary programming langs",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e1e88c780a38fef86afcd633fc3608499f1110c0"
+        },
+        {
+          "sha": "800d258e5d1d87e7b378060691f51291decf07ba",
+          "author_date": "2024-05-26T18:06:58Z",
+          "message": "feat: allow customizing code executors",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/800d258e5d1d87e7b378060691f51291decf07ba"
+        },
+        {
+          "sha": "e34564e4d2bf4a0aee1a9bc289701bf5f9a71be4",
+          "author_date": "2024-05-26T18:10:03Z",
+          "message": "feat: validate that built in executors have .sh extension",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e34564e4d2bf4a0aee1a9bc289701bf5f9a71be4"
+        },
+        {
+          "sha": "57540dcbc6d9f10f34606f0e0f5d3835af12ddd5",
+          "author_date": "2024-05-27T15:06:14Z",
+          "message": "feat: disable buffering when running python snippets\n\nCo-authored-by: dmackdev <79006698+dmackdev@users.noreply.github.com>",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/57540dcbc6d9f10f34606f0e0f5d3835af12ddd5"
+        },
+        {
+          "sha": "978292e9982ce0d7a87c96ec38018c8cf09bbdea",
+          "author_date": "2024-05-27T15:08:56Z",
+          "message": "chore: add `executors` as build path in flake.nix",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/978292e9982ce0d7a87c96ec38018c8cf09bbdea"
+        },
+        {
+          "sha": "6ef75f8a471e9897462705bc3ee2a2e0bf226f56",
+          "author_date": "2024-05-27T15:12:57Z",
+          "message": "Merge pull request #253 from mfontanini/feat/lang-execution\n\nfeat: allow code execution beyond shell scripts",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6ef75f8a471e9897462705bc3ee2a2e0bf226f56"
+        },
+        {
+          "sha": "aea239c0dc4cb810cda0a69fb119626e394a94e7",
+          "author_date": "2024-05-29T00:22:44Z",
+          "message": "feat: allow executing code in various languages",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/aea239c0dc4cb810cda0a69fb119626e394a94e7"
+        },
+        {
+          "sha": "9dba9b5a3322af730bd4988e32b20f3750a5479b",
+          "author_date": "2024-05-29T00:35:49Z",
+          "message": "Merge pull request #255 from mfontanini/feat/add-more-executable-langs\n\nfeat: allow executing code in various languages",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9dba9b5a3322af730bd4988e32b20f3750a5479b"
+        },
+        {
+          "sha": "316771e95295db08eb43b8447ef7e2043782d584",
+          "author_date": "2024-05-29T03:12:05Z",
+          "message": "feat: use a cleaner execution error UI",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/316771e95295db08eb43b8447ef7e2043782d584"
+        },
+        {
+          "sha": "71ac6e5cc7e03b0e4522f90c8f2970538cf0f3bb",
+          "author_date": "2024-05-29T13:04:11Z",
+          "message": "feat: add color styling to execution block status",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/71ac6e5cc7e03b0e4522f90c8f2970538cf0f3bb"
+        },
+        {
+          "sha": "48b40af6e15c7b5d06e085caf77665cbd60a93c6",
+          "author_date": "2024-05-29T18:35:29Z",
+          "message": "feat: add kotlin script executor",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/48b40af6e15c7b5d06e085caf77665cbd60a93c6"
+        },
+        {
+          "sha": "d62eb4359f85b68fb930aaedf90beba3eeb37b40",
+          "author_date": "2024-05-30T02:40:24Z",
+          "message": "Merge pull request #257 from dmackdev/feat/add-kotlin-executor\n\nfeat: add kotlin script executor",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d62eb4359f85b68fb930aaedf90beba3eeb37b40"
+        },
+        {
+          "sha": "1726e69a0267c20502a66c5987015ac5d1e866c2",
+          "author_date": "2024-05-29T13:04:26Z",
+          "message": "feat: set execution output colors for each theme",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1726e69a0267c20502a66c5987015ac5d1e866c2"
+        },
+        {
+          "sha": "0ed9d0da0647aed083730f64f22956666d258358",
+          "author_date": "2024-06-01T20:55:51Z",
+          "message": "fix: fill in entire space in execution output separator",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0ed9d0da0647aed083730f64f22956666d258358"
+        },
+        {
+          "sha": "c4f97c8c8204a7b0dfd09ec68ec1c458c5c19b82",
+          "author_date": "2024-06-01T21:05:57Z",
+          "message": "Merge pull request #256 from mfontanini/feat/better-error-finish\n\nfeat: use a cleaner execution error UI",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c4f97c8c8204a7b0dfd09ec68ec1c458c5c19b82"
+        },
+        {
+          "sha": "8aa2da6e8c12eed276d2f12b10d11ee8fd8ebd02",
+          "author_date": "2024-06-02T15:14:40Z",
+          "message": "chore: implement `FromStr` for `CodeLanguage`",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8aa2da6e8c12eed276d2f12b10d11ee8fd8ebd02"
+        },
+        {
+          "sha": "ef267d32ab18880b9fd5eebfcb9631eb6f3c4288",
+          "author_date": "2024-06-02T15:25:20Z",
+          "message": "feat: use snippet language strings for executor script name",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ef267d32ab18880b9fd5eebfcb9631eb6f3c4288"
+        },
+        {
+          "sha": "f2ece1847531b4f154b64f0befd759a1269ebffe",
+          "author_date": "2024-06-02T15:33:07Z",
+          "message": "Merge pull request #258 from mfontanini/feat/executor-names\n\nfeat: use snippet language strings for executor script name",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f2ece1847531b4f154b64f0befd759a1269ebffe"
+        },
+        {
+          "sha": "4e97bfd7c5402376abda4a4b4d306aba8566ec4b",
+          "author_date": "2024-06-07T01:19:23Z",
+          "message": "fix: use unicode width to calculate execution output's line len",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/4e97bfd7c5402376abda4a4b4d306aba8566ec4b"
+        },
+        {
+          "sha": "cc8ed5398868fa0d5ec20f38b86de600414fca0d",
+          "author_date": "2024-06-07T01:22:30Z",
+          "message": "Merge pull request #261 from mfontanini/fix/exec-output-unicode-width\n\nfix: use unicode width to calculate execution output's line len",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/cc8ed5398868fa0d5ec20f38b86de600414fca0d"
+        },
+        {
+          "sha": "b525c5bab97a9ca38176176f342a0417a4d6280d",
+          "author_date": "2024-06-08T16:23:39Z",
+          "message": "docs: document multiple authors in intro slide",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b525c5bab97a9ca38176176f342a0417a4d6280d"
+        },
+        {
+          "sha": "523c723a59ea2047a2245114cd99ce07b2e85c20",
+          "author_date": "2024-06-08T16:24:04Z",
+          "message": "Merge pull request #264 from mfontanini/docs/document-authors\n\ndocs: document multiple authors in intro slide",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/523c723a59ea2047a2245114cd99ce07b2e85c20"
+        },
+        {
+          "sha": "731dbdae97a0144bb7eea6bd423b65a31bbb3e73",
+          "author_date": "2024-06-09T01:04:21Z",
+          "message": "feat: allow custom themes to extend others",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/731dbdae97a0144bb7eea6bd423b65a31bbb3e73"
+        },
+        {
+          "sha": "252a892560ddf2896a47910af7ccd6d8a83b9a57",
+          "author_date": "2024-06-09T19:52:30Z",
+          "message": "Merge pull request #265 from mfontanini/feat/extend-theme\n\nfeat: allow custom themes to extend others",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/252a892560ddf2896a47910af7ccd6d8a83b9a57"
+        },
+        {
+          "sha": "5dc93f28a6e732e2fee75c8899ca9c9d3ac8cbba",
+          "author_date": "2024-06-13T23:39:39Z",
+          "message": "feat: add support for rendering mermaid diagrams",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5dc93f28a6e732e2fee75c8899ca9c9d3ac8cbba"
+        },
+        {
+          "sha": "98f4402fb1e0a8e28b98194f27990dc2060b2688",
+          "author_date": "2024-06-18T03:02:54Z",
+          "message": "feat: add rust-script as a new code executor (#269)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/98f4402fb1e0a8e28b98194f27990dc2060b2688"
+        },
+        {
+          "sha": "37d8f61cedad00c3f0e789e46ad65f9cddd76687",
+          "author_date": "2024-06-14T13:26:43Z",
+          "message": "chore: add better error message if unknown language is found",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/37d8f61cedad00c3f0e789e46ad65f9cddd76687"
+        },
+        {
+          "sha": "33c90339472d9bcb1bdbb84927e5acd7029472f9",
+          "author_date": "2024-06-20T01:38:10Z",
+          "message": "Merge pull request #268 from mfontanini/feat/mermaid-graphs\n\nfeat: add support for rendering mermaid diagrams",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/33c90339472d9bcb1bdbb84927e5acd7029472f9"
+        },
+        {
+          "sha": "45e531436da9e86325cf6f2dabf99697ab413bc0",
+          "author_date": "2024-06-20T02:30:14Z",
+          "message": "feat: cache third party rendered images",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/45e531436da9e86325cf6f2dabf99697ab413bc0"
+        },
+        {
+          "sha": "61f3ce5658a1914836bdf6aa88b13cdbe877ab23",
+          "author_date": "2024-06-20T02:43:43Z",
+          "message": "Merge pull request #270 from mfontanini/feat/cache-third-party-renders\n\nfeat: cache third party rendered images",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/61f3ce5658a1914836bdf6aa88b13cdbe877ab23"
+        },
+        {
+          "sha": "bafa7106b7fb1c6698bee18d13f0bb10ce22a9da",
+          "author_date": "2024-06-30T22:42:57Z",
+          "message": "feat: add nushell code execution",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/bafa7106b7fb1c6698bee18d13f0bb10ce22a9da"
+        },
+        {
+          "sha": "0bd7463e93c95674796e543d4b41e3f134fdc44b",
+          "author_date": "2024-06-30T22:46:31Z",
+          "message": "Merge pull request #274 from mfontanini/feat/nushell-code-execution\n\nfeat: add nushell code execution",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0bd7463e93c95674796e543d4b41e3f134fdc44b"
+        },
+        {
+          "sha": "dba3621333416a0f04fede117a3c1cd9492d2430",
+          "author_date": "2024-06-30T22:17:57Z",
+          "message": "feat: render typst/latex/mermaid asynchronously",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/dba3621333416a0f04fede117a3c1cd9492d2430"
+        },
+        {
+          "sha": "e9c542d3494f504a1ea8e8c264a164a4b720f8df",
+          "author_date": "2024-07-01T13:57:55Z",
+          "message": "feat: render typst/latex/mermaid asynchronously (#273)\n\nThis changes rendering of typst/latex/mermaid (now called \"third party\r\nrenders\") to execute asynchronously. This wasn't needed for typst/latex\r\nas they're so fast you can't even tell it's rendering, but the mermaid\r\nCLI requires spinning up a browser (!!!) so it can take a couple of\r\nseconds to render. This causes the presentation experience, especially\r\nduring development, to become very clunky as changing the presentation\r\nfile just stalls presenterm for 2 seconds per chart until they're all\r\nrendered.\r\n\r\nThis changes that so that charts are rendered asynchronously by a pool\r\nof 2 threads (which I will make configurable in another PR). This now\r\nmeans you can:\r\n* Open a presentation and scroll through slides while\r\ntypst/latex/mermaid blocks are rendered and you'll see a \"Loading...\"\r\ntext as a placeholder until they're loaded.\r\n* Once loading finishes, the slide will automatically be updated to\r\ndisplay the output image.\r\n* Making a change on one of these blocks will make it render\r\nasynchronously so you'd see the same \"Loading\" text until it does.\r\n* Because of the cache change on a previous PR, only the modified\r\nsnippets are re-rendered.\r\n* Snippets from slides closer to the beginning of the presentation are\r\nrendered first (e.g. they're all FIFO'd from first to last slide).\r\n* Because renders can fail (e.g. mermaid syntax error) the \"Loading..\"\r\ncan lead to an error. The error is shown the same way as before, except\r\na bit better because it tells you which slide the error is in.\r\n\r\n\r\nhttps://github.com/mfontanini/presenterm/assets/969090/9580bec8-9b6e-44b3-8920-09d7956176b1",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e9c542d3494f504a1ea8e8c264a164a4b720f8df"
+        },
+        {
+          "sha": "86b9d5478627e38416f95024a76d1e06c3daba69",
+          "author_date": "2024-07-01T20:46:17Z",
+          "message": "support nushell",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/86b9d5478627e38416f95024a76d1e06c3daba69"
+        },
+        {
+          "sha": "759a6ca865d3bc2cabc47c41d2a7df5fe8c17a46",
+          "author_date": "2024-07-02T13:45:08Z",
+          "message": "Fix support nushell (#275)\n\nFix the support for nushell on linux\n\n_However nushell still doesn't work on windows because of the way the\nexecutor works_",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/759a6ca865d3bc2cabc47c41d2a7df5fe8c17a46"
+        },
+        {
+          "sha": "7240878bcd413cbb4bee905cd4a7d25ff2b8588e",
+          "author_date": "2024-07-03T13:33:00Z",
+          "message": "feat!: force users to explicitly enable code execution",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7240878bcd413cbb4bee905cd4a7d25ff2b8588e"
+        },
+        {
+          "sha": "b1ae2432551aa5d9b07e9cea2d932a60291b41d1",
+          "author_date": "2024-07-03T13:36:13Z",
+          "message": "chore: update config file schema to include snippet properties",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b1ae2432551aa5d9b07e9cea2d932a60291b41d1"
+        },
+        {
+          "sha": "041a83f2e99362f9bac4932d16937708eb6bf917",
+          "author_date": "2024-07-03T13:40:20Z",
+          "message": "feat!: force users to explicitly enable code execution (#276)\n\nThis changes the code snippet execution so that it is disabled by\r\ndefault and users need to opt in by either:\r\n* Running presenterm with the `-x` flag.\r\n* Set the `snippet.exec.enable` property to true in their config files.\r\n\r\nThis aims to make running untrusted presentations more secure. You can\r\nalways set the property in your config file if you only ever run your\r\nown presentations, but by default this prevents opening a presentation\r\nsomeone else wrote and accidentally executing code in one of the slides\r\nthat does something malicious.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/041a83f2e99362f9bac4932d16937708eb6bf917"
+        },
+        {
+          "sha": "fd487b9d4cc143b1bf21b95e0cf19b36b1bcf5f1",
+          "author_date": "2024-07-07T17:35:52Z",
+          "message": "feat: allow configuring snippet rendering threads",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fd487b9d4cc143b1bf21b95e0cf19b36b1bcf5f1"
+        },
+        {
+          "sha": "7168afec662d9822521e6b700967e5c5c74f7fb5",
+          "author_date": "2024-07-07T17:57:53Z",
+          "message": "feat: allow configuring snippet rendering threads (#279)\n\nThe `snippet.render.threads` config key now allows configuring how many\r\nthreads you want to have. The default is 2.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7168afec662d9822521e6b700967e5c5c74f7fb5"
+        },
+        {
+          "sha": "9d91a83c68e3ae562616bec57dc52c8a98eebc7e",
+          "author_date": "2024-07-07T18:36:46Z",
+          "message": "feat: avoid re-rendering code output and auto rendered blocks",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9d91a83c68e3ae562616bec57dc52c8a98eebc7e"
+        },
+        {
+          "sha": "139885b531ea2c67f6f086f595a4e270a76140f7",
+          "author_date": "2024-07-07T18:42:59Z",
+          "message": "feat: avoid re-rendering code output and auto rendered blocks (#280)\n\nThis changes the logic that processes the async rendered blocks (code\r\nexecution output and typst/mermaid/latex `+render` snippets) to avoid\r\nre-rendering. Before this was okay as it only affected code execution\r\nbut now that conversion to images also happens asynchronously this can\r\ncause some unnecessary flickering.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/139885b531ea2c67f6f086f595a4e270a76140f7"
+        },
+        {
+          "sha": "6c6f9d512360609b63afdf66e4a769ecda0c21ff",
+          "author_date": "2024-07-07T19:19:47Z",
+          "message": "feat: show a message if code is executed but execution is disabled",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6c6f9d512360609b63afdf66e4a769ecda0c21ff"
+        },
+        {
+          "sha": "99bafe8aea2f3720c2cd46a864fd31608f96af71",
+          "author_date": "2024-07-07T23:28:27Z",
+          "message": "feat: show a message if code is executed but execution is disabled (#281)\n\nThis adds a little banner when a `+exec` code snippet is executed but\r\ncode execution is disabled, as it otherwise just silently does nothing.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/99bafe8aea2f3720c2cd46a864fd31608f96af71"
+        },
+        {
+          "sha": "480f9475cca8e5bbc24d9f24179d8d2f8c8a7d42",
+          "author_date": "2024-07-08T14:29:34Z",
+          "message": "feat: support hidden code lines (#254)\n\nThis PR adds support for hidden code lines for the languages Rust, Python, Shell and Bash using prefixes at the start of the line, particular to each language. Support for more languages can be added in future.\r\n\r\nThe hidden code lines will not be visible in snippets in the presentation, but still be evaluated as normal if executed.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/480f9475cca8e5bbc24d9f24179d8d2f8c8a7d42"
+        },
+        {
+          "sha": "a2df29ddbe4abb628e555b7eb4778b7e7fb56863",
+          "author_date": "2024-07-12T23:53:31Z",
+          "message": "feat: make snippet executors multiplatform",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a2df29ddbe4abb628e555b7eb4778b7e7fb56863"
+        },
+        {
+          "sha": "4ec76797a550c5217117934708b3acbfe329daeb",
+          "author_date": "2024-07-13T00:54:13Z",
+          "message": "feat: make snippet executors multiplatform (#282)\n\nRecently it was brought up in\r\nhttps://github.com/mfontanini/presenterm/issues/271#issuecomment-2201031920\r\nthat snippet code execution doesn't work in Windows because it used a\r\nbash script to run. This change addresses that and changes the way\r\nexecutors are defined entirely so that rather than being a bash script\r\nper language, they're defined in a `executors.yaml` file baked into the\r\n`presenterm` binary and can similarly be extended within the config file\r\nplaced in `~/.config/presenter/config.yaml`.\r\n\r\nThis makes defining executors much simpler as you have a single file\r\nwith all of them and you don't have to deal with tempdirs and whatnot.\r\nEvery time a snippet is executed the following now happens:\r\n* A new tempdir is created.\r\n* The snippet contents are written into `${tempdir}/${filename}` where\r\n`filename` is defined by the snippet execution config.\r\n* A set of commands defined in the execution config are run one by one\r\nusing the tempdir as the `cwd`. This means they don't need to deal with\r\nabsolute paths or any other annoying detail.\r\n* Optionally a set of environment variables can be set before invoking\r\nall commands.\r\n* The output of all of these commands will be visible in the\r\npresentation.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/4ec76797a550c5217117934708b3acbfe329daeb"
+        },
+        {
+          "sha": "7b008d9e86546dc61997a42ff906b16869163024",
+          "author_date": "2024-07-13T16:37:57Z",
+          "message": "chore: split up shell snippet language",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7b008d9e86546dc61997a42ff906b16869163024"
+        },
+        {
+          "sha": "bdea52b4b1e05b66fee78818976a26a4be649068",
+          "author_date": "2024-07-13T17:19:36Z",
+          "message": "feat: add hidden line prefix for more languages",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/bdea52b4b1e05b66fee78818976a26a4be649068"
+        },
+        {
+          "sha": "03f8e3bece4bbdfee307f1fb83b177df1886dcb5",
+          "author_date": "2024-07-13T17:25:34Z",
+          "message": "feat: add hidden line prefix for more languages (#283)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/03f8e3bece4bbdfee307f1fb83b177df1886dcb5"
+        },
+        {
+          "sha": "b783b49a09dbf1e6a08a434482b31c01e3215abb",
+          "author_date": "2024-07-13T17:54:04Z",
+          "message": "fix: continue polling async renders if one is still rendering",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b783b49a09dbf1e6a08a434482b31c01e3215abb"
+        },
+        {
+          "sha": "eafd70d438c20cb1ed789856b31cdb9da35bff98",
+          "author_date": "2024-07-13T17:58:27Z",
+          "message": "fix: continue polling async renders if one is still rendering (#284)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/eafd70d438c20cb1ed789856b31cdb9da35bff98"
+        },
+        {
+          "sha": "e9a15cd8d5045c0f5d73e52dccb676cc6d6fdd1e",
+          "author_date": "2024-07-14T00:10:06Z",
+          "message": "feat: shrink snippet execution output to match code block width",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e9a15cd8d5045c0f5d73e52dccb676cc6d6fdd1e"
+        },
+        {
+          "sha": "7e26e8ba004dd0eec6ea6e1dacc442ac740b017a",
+          "author_date": "2024-07-14T00:19:49Z",
+          "message": "feat: shrink snippet execution output to match code block width (#286)\n\nThis shrinks the snippet execution output so it tries to fit the code\r\nsnippet size. Without this change the execution output would always fit\r\nthe width of the entire screen/layout which looked a bit weird if output\r\nlines were too short.\r\n\r\n\r\n![image](https://github.com/user-attachments/assets/e6262660-7182-4b83-9dbc-73085f64bf49)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7e26e8ba004dd0eec6ea6e1dacc442ac740b017a"
+        },
+        {
+          "sha": "be28e93447519d2e9c39e776d90f8c109b6e5673",
+          "author_date": "2024-07-14T17:32:35Z",
+          "message": "feat: dim non-highlighted code snippet lines",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/be28e93447519d2e9c39e776d90f8c109b6e5673"
+        },
+        {
+          "sha": "97d0b9947e9d194027ed77a18de75dcd972ab4c5",
+          "author_date": "2024-07-14T17:37:42Z",
+          "message": "feat: dim non-highlighted code snippet lines (#287)\n\nThis applies the same style as code snippet line numbers to non\r\nhighlighted code lines as they otherwise still stand out quite a bit.\r\n\r\nFixes #285 \r\n\r\n\r\n![image](https://github.com/user-attachments/assets/86a86ddd-8163-4d2a-9874-e8f1d80fd630)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/97d0b9947e9d194027ed77a18de75dcd972ab4c5"
+        },
+        {
+          "sha": "fe2c6f0e89fda9f3f376da16061e54bab3ec47ee",
+          "author_date": "2024-07-14T18:50:33Z",
+          "message": "feat: allow scaling images",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fe2c6f0e89fda9f3f376da16061e54bab3ec47ee"
+        },
+        {
+          "sha": "0d364e9296450dc1f4162b4c012d46bfe0ee0b13",
+          "author_date": "2024-07-15T23:20:52Z",
+          "message": "feat: allow scaling images (#288)\n\nThis adds support for scaling images. Images can, for now, only be\r\nscaled to a percentage of the screen width wise. To do this, use the\r\nnotation `![image:width:50%](image-path)` (shorthands are also\r\n`image:width:50` or `image:w:50`). The reason for having a prefix is\r\nI've seen some people wanting to be able to pull presentations made with\r\nother tools so I don't want to make any assumptions about what those\r\npresentations have inside image tags.\r\n\r\n@mikavilpas could you give this a shot and lmk your thoughts? I still\r\nneed to add some stuff and polish this but it's functional already.\r\n\r\nFixes #260",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0d364e9296450dc1f4162b4c012d46bfe0ee0b13"
+        },
+        {
+          "sha": "3c015af10813a15ca762d2ec7bf6a94ff1adfc31",
+          "author_date": "2024-07-16T12:51:15Z",
+          "message": "feat: allow scaling +render code blocks",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3c015af10813a15ca762d2ec7bf6a94ff1adfc31"
+        },
+        {
+          "sha": "d2e30b268e4e4dece276de0625591f00372a7375",
+          "author_date": "2024-07-16T13:03:58Z",
+          "message": "feat: allow scaling +render code blocks (#290)\n\nThis builds on top of the effort in #288 and adds a new `width`\r\nattribute to `+render` code blocks that allows specifying the width in %\r\nof the generated image, allowing you to scale mermaid/typst/latex images\r\nto fit the presentation as you please.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d2e30b268e4e4dece276de0625591f00372a7375"
+        },
+        {
+          "sha": "dd5531310b44c97a6cc20b53152e9c1a8ccba272",
+          "author_date": "2024-07-17T13:34:48Z",
+          "message": "feat: make percent required in width attribute",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/dd5531310b44c97a6cc20b53152e9c1a8ccba272"
+        },
+        {
+          "sha": "be99fc84d7d638f1a1402f2b6d0ab193c2060abe",
+          "author_date": "2024-07-17T13:40:02Z",
+          "message": "feat: make percent required in width attribute (#291)\n\nThe '%' wasn't initially made required but I think in the long run this\r\nis a bad idea. This makes it required.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/be99fc84d7d638f1a1402f2b6d0ab193c2060abe"
+        },
+        {
+          "sha": "0d1dc6ea2b24e9e7933ccdcbe005f47ed1034879",
+          "author_date": "2024-07-17T23:12:34Z",
+          "message": "fix: poll + inspect async renders when generating PDF",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0d1dc6ea2b24e9e7933ccdcbe005f47ed1034879"
+        },
+        {
+          "sha": "c1b172ba48dfe8fbfd3ecb144fa0ef3287eb9fec",
+          "author_date": "2024-07-17T23:17:31Z",
+          "message": "fix: poll + inspect async renders when generating PDF (#293)\n\nAfter the changes to render `+render` blocks asynchronously, PDF\r\ngeneration was broken as it wasn't a) polling the renders and b)\r\ninspecting the renders to see if there were any images in it.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c1b172ba48dfe8fbfd3ecb144fa0ef3287eb9fec"
+        },
+        {
+          "sha": "c4654a1c6b5d19dcbeda9be40c08474d2c36970c",
+          "author_date": "2024-07-18T13:07:01Z",
+          "message": "feat: include code snippet execution output in generated PDF",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c4654a1c6b5d19dcbeda9be40c08474d2c36970c"
+        },
+        {
+          "sha": "690168922b38cae8eeab258b316561650889b017",
+          "author_date": "2024-07-18T13:13:10Z",
+          "message": "feat: include code snippet execution output in generated PDF (#295)\n\nCode snippet output was not being included in the output PDF.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/690168922b38cae8eeab258b316561650889b017"
+        },
+        {
+          "sha": "d7523a8459c98adf41c5a159bc96ced491da9a1b",
+          "author_date": "2024-07-23T01:17:18Z",
+          "message": "fix: close child process stdin by default",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d7523a8459c98adf41c5a159bc96ced491da9a1b"
+        },
+        {
+          "sha": "9d5a6beced82c216f97d5f9e52beccb8169537dc",
+          "author_date": "2024-07-23T00:22:28Z",
+          "message": "fix: close child process stdin by default (#297)\n\nThe mermaid CLI seems to somehow sometimes consume something from (the\r\ninherited) stdin which causes raw mode to break in presenterm. This\r\ncloses stdin by default, which fixes this issue and also seems like a\r\nsane default.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9d5a6beced82c216f97d5f9e52beccb8169537dc"
+        },
+        {
+          "sha": "8d6a74582320b7c37cc475ae5282047b394a47aa",
+          "author_date": "2024-07-23T01:22:47Z",
+          "message": "fix: add more descriptive error message when loading image fails",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8d6a74582320b7c37cc475ae5282047b394a47aa"
+        },
+        {
+          "sha": "2f23e92d396651da71ffce24b098cc4ea4c9a4d7",
+          "author_date": "2024-07-23T00:26:52Z",
+          "message": "fix: add more descriptive error message when loading image fails (#298)\n\nThis error message was far from descriptive.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2f23e92d396651da71ffce24b098cc4ea4c9a4d7"
+        },
+        {
+          "sha": "e1f45f81c8f21f5b84ccf5ec9100310c6088ddad",
+          "author_date": "2024-07-23T01:26:37Z",
+          "message": "fix: don't use transparency in kitty modal background",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e1f45f81c8f21f5b84ccf5ec9100310c6088ddad"
+        },
+        {
+          "sha": "18fea741f6e4c613abad989e53a387297765e7d0",
+          "author_date": "2024-07-23T00:33:56Z",
+          "message": "fix: don't use transparency in kitty modal background (#299)\n\nThe transparency in the modal background sounds nice but it looks bad\r\ndepending on whether there's an image behind it and the color it uses.\r\nThis disables the transparency so it always looks good regardless of\r\nwhat's behind it.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/18fea741f6e4c613abad989e53a387297765e7d0"
+        },
+        {
+          "sha": "1f9c98e58092abd8cc0b83a1a1313a4192474f8e",
+          "author_date": "2024-07-23T01:44:12Z",
+          "message": "fix: don't crash on resize when displaying an error",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1f9c98e58092abd8cc0b83a1a1313a4192474f8e"
+        },
+        {
+          "sha": "874b0f011e84ebe8086238664b13d097b059449c",
+          "author_date": "2024-07-23T00:48:25Z",
+          "message": "fix: don't crash on resize when displaying an error (#300)\n\nWhen on an error screen (e.g. an invalid image path is specified) this\r\ncurrently explodes when you resize the terminal.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/874b0f011e84ebe8086238664b13d097b059449c"
+        },
+        {
+          "sha": "9d8570b4cec0c7d95b6b0df3adee7482ce3d70fb",
+          "author_date": "2024-07-23T01:51:36Z",
+          "message": "fix: align all error messages to left",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9d8570b4cec0c7d95b6b0df3adee7482ce3d70fb"
+        },
+        {
+          "sha": "9f3425c0d0017cb77fdc996196b84750eacd192e",
+          "author_date": "2024-07-23T00:59:37Z",
+          "message": "fix: align all error messages to left (#301)\n\nAll error messages are no aligned to left, with enough padding to center\r\nthem a bit. This otherwise looks off.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9f3425c0d0017cb77fdc996196b84750eacd192e"
+        },
+        {
+          "sha": "9de8c6e14f697b91b22769bb68c23ba4cb04c26d",
+          "author_date": "2024-07-23T02:05:39Z",
+          "message": "fix: don't crash when slides shrink after modification",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9de8c6e14f697b91b22769bb68c23ba4cb04c26d"
+        },
+        {
+          "sha": "29e6cf1b03a4f4b6a6647a16aabb9babcd85e394",
+          "author_date": "2024-07-23T01:10:49Z",
+          "message": "fix: don't crash when slides shrink after modification (#302)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/29e6cf1b03a4f4b6a6647a16aabb9babcd85e394"
+        },
+        {
+          "sha": "3c3da331b79e1387dcc34a6b22c861aeea35541d",
+          "author_date": "2024-07-23T02:13:13Z",
+          "message": "fix: poll all async operations in a slide, not just visible",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3c3da331b79e1387dcc34a6b22c861aeea35541d"
+        },
+        {
+          "sha": "f99f47e51190eb4b5c106b8122bf33e2b9aa2ea3",
+          "author_date": "2024-07-23T04:58:10Z",
+          "message": "fix: allow executing compiled snippets in windows",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f99f47e51190eb4b5c106b8122bf33e2b9aa2ea3"
+        },
+        {
+          "sha": "962bf47079970f9c82870838137655247063674f",
+          "author_date": "2024-07-23T04:02:51Z",
+          "message": "fix: allow executing compiled snippets in windows (#303)\n\nRunning compiled language snippets wasn't working on windows because the\n\"current dir\" parameter to `Command` behaves differently in each\nplatform.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/962bf47079970f9c82870838137655247063674f"
+        },
+        {
+          "sha": "0a3e6514ddb369ca5fdea49b1e0dbea9d8188a85",
+          "author_date": "2024-07-24T00:38:31Z",
+          "message": "fix: exit with error on async render error in export mode",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0a3e6514ddb369ca5fdea49b1e0dbea9d8188a85"
+        },
+        {
+          "sha": "b46a9011dfd6f656a4969be7724232d28480848a",
+          "author_date": "2024-07-23T23:48:39Z",
+          "message": "fix: exit with error on async render error in export mode (#304)\n\nIf mermaid wasn't installed and you ran a pdf export, it would generate\r\na pdf with just the failure error over and over again. This PR causes\r\npresenterm to fail instead.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b46a9011dfd6f656a4969be7724232d28480848a"
+        },
+        {
+          "sha": "4e7e13aa35613c5d4a3214f16c1cf51ea3036592",
+          "author_date": "2024-07-26T13:35:49Z",
+          "message": "fix: wait for all async renders during export at beginning",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/4e7e13aa35613c5d4a3214f16c1cf51ea3036592"
+        },
+        {
+          "sha": "37963e4d505a2deb239934e70a919b3b7f68fa4e",
+          "author_date": "2024-07-26T13:40:21Z",
+          "message": "fix: wait for all async renders during export at beginning (#305)\n\nAsync renders are waited on when export mode starts so without this\r\npresenterm-export could miss the first few slides when using mermaid.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/37963e4d505a2deb239934e70a919b3b7f68fa4e"
+        },
+        {
+          "sha": "f5e85fa28909433805a353d6a9be11614532c1b3",
+          "author_date": "2024-07-26T13:45:28Z",
+          "message": "chore: use \".presenterm\" as prefix for tmp files",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f5e85fa28909433805a353d6a9be11614532c1b3"
+        },
+        {
+          "sha": "e2000e6a9cf1c2aa22f0983446afea173f66f897",
+          "author_date": "2024-07-27T12:50:08Z",
+          "message": "chore: use \".presenterm\" as prefix for tmp files (#306)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e2000e6a9cf1c2aa22f0983446afea173f66f897"
+        },
+        {
+          "sha": "ce35ea0832fd02bbe7862a031ab5c4c31818d921",
+          "author_date": "2024-07-27T13:39:31Z",
+          "message": "fix: reset colors properly after async blocks in export mode",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ce35ea0832fd02bbe7862a031ab5c4c31818d921"
+        },
+        {
+          "sha": "487714a534635fb22d104cdeabad44b812b083fb",
+          "author_date": "2024-07-27T13:48:53Z",
+          "message": "fix: reset colors properly after async blocks in export mode (#308)\n\nA recent change caused async render blocks (mermaid, typst) to change\r\nthe following lines' background color.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/487714a534635fb22d104cdeabad44b812b083fb"
+        },
+        {
+          "sha": "d8ae2762fc94bfced11a5f7422ba080e1e4ef170",
+          "author_date": "2024-07-27T14:06:42Z",
+          "message": "fix: don't use transparent modal background",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d8ae2762fc94bfced11a5f7422ba080e1e4ef170"
+        },
+        {
+          "sha": "50b7220b30b1140a3a2f5fd9f3afa43e170b6970",
+          "author_date": "2024-07-27T14:24:03Z",
+          "message": "fix: re-check for overflows after resize",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/50b7220b30b1140a3a2f5fd9f3afa43e170b6970"
+        },
+        {
+          "sha": "53c1e1baadab46acecc77b42be5c7516498e0a9d",
+          "author_date": "2024-07-27T21:11:37Z",
+          "message": "fix: re-check for overflows after resize (#309)\n\nAfter a recent change, resizing the window after an overflow was found\nwould never re-check whether the overflow was fixed.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/53c1e1baadab46acecc77b42be5c7516498e0a9d"
+        },
+        {
+          "sha": "7079b3fda8c9dd114abb98acf764f2b61016d107",
+          "author_date": "2024-07-29T12:31:45Z",
+          "message": "fix: actually render async renders",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7079b3fda8c9dd114abb98acf764f2b61016d107"
+        },
+        {
+          "sha": "0c9ae114c73ad270626beeb5f25e3fa64fae87eb",
+          "author_date": "2024-07-29T12:29:52Z",
+          "message": "chore: bump dependencies",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0c9ae114c73ad270626beeb5f25e3fa64fae87eb"
+        },
+        {
+          "sha": "2b645f47a88aba7308664d177d8fe4506f01b188",
+          "author_date": "2024-07-29T12:34:26Z",
+          "message": "chore: bump flake.nix to latest nixos",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2b645f47a88aba7308664d177d8fe4506f01b188"
+        },
+        {
+          "sha": "aa68469b4e791658f2f6ddb8e892d9e2dd3a6095",
+          "author_date": "2024-07-29T12:39:12Z",
+          "message": "chore: bump nix-installer-action",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/aa68469b4e791658f2f6ddb8e892d9e2dd3a6095"
+        },
+        {
+          "sha": "2df7ccfd75072cc5c6a5e7ff9bdb9423d7c5355d",
+          "author_date": "2024-07-29T13:12:00Z",
+          "message": "chore: bump dependencies (#310)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2df7ccfd75072cc5c6a5e7ff9bdb9423d7c5355d"
+        },
+        {
+          "sha": "68c9de1185c880fb95bcad0b968dadba590800e0",
+          "author_date": "2024-07-19T00:54:10Z",
+          "message": "chore: add changelog entries for 0.8.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/68c9de1185c880fb95bcad0b968dadba590800e0"
+        },
+        {
+          "sha": "982115cc1b8f05ead3b2bc7d58c4b55f6b6cc4c7",
+          "author_date": "2024-07-19T00:54:23Z",
+          "message": "chore: add missing attributes in sample config",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/982115cc1b8f05ead3b2bc7d58c4b55f6b6cc4c7"
+        },
+        {
+          "sha": "b09b3f634f35bcddcaae0c8815da88f46e80a2bb",
+          "author_date": "2024-07-19T00:54:40Z",
+          "message": "chore: change demo presentation to use executable rust code snippet",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b09b3f634f35bcddcaae0c8815da88f46e80a2bb"
+        },
+        {
+          "sha": "a8bb9b69e0b77096cb23fffb1af9e705dc5c594f",
+          "author_date": "2024-07-19T00:54:57Z",
+          "message": "chore: add docs for new features",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a8bb9b69e0b77096cb23fffb1af9e705dc5c594f"
+        },
+        {
+          "sha": "01cb49f60633edb23740f2082fc14bdead188ebf",
+          "author_date": "2024-07-22T14:27:23Z",
+          "message": "chore: change wording around code example",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/01cb49f60633edb23740f2082fc14bdead188ebf"
+        },
+        {
+          "sha": "04ab64c86407c47c4e0b3c6cd8b8ec089d196653",
+          "author_date": "2024-07-22T14:30:20Z",
+          "message": "chore: update README entries",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/04ab64c86407c47c4e0b3c6cd8b8ec089d196653"
+        },
+        {
+          "sha": "53fb4383abf2e34e38928c160748013910bafdad",
+          "author_date": "2024-07-29T13:20:32Z",
+          "message": "chore: bump version to 0.8.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/53fb4383abf2e34e38928c160748013910bafdad"
+        },
+        {
+          "sha": "db2778ddbdcc331bb70e1cccc6fcb4de973347f6",
+          "author_date": "2024-07-29T13:25:08Z",
+          "message": "chore: prepare changes for 0.8.0 update (#311)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/db2778ddbdcc331bb70e1cccc6fcb4de973347f6"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.9.0",
@@ -420,8 +1713,537 @@
     {
       "release": "v0.11.0",
       "previous_release": "v0.10.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f8e9ec67280e212eb862442ad7b71b77067f18c6",
+          "author_date": "2025-02-02T21:11:34Z",
+          "message": "docs: fix code to image conversion example",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f8e9ec67280e212eb862442ad7b71b77067f18c6"
+        },
+        {
+          "sha": "3379d7a9cbd4f9880833bad42dc92ef2d15b1da7",
+          "author_date": "2025-02-02T22:33:39Z",
+          "message": "docs: restructure docs mdbook",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3379d7a9cbd4f9880833bad42dc92ef2d15b1da7"
+        },
+        {
+          "sha": "5a909259c8c3aa09b0b3830405206b7d4b45ee9a",
+          "author_date": "2025-02-02T22:39:02Z",
+          "message": "docs: restructure docs mdbook (#436)\n\nThis splits the docs a bit so pages are not yuge.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5a909259c8c3aa09b0b3830405206b7d4b45ee9a"
+        },
+        {
+          "sha": "dacb291de2136f694389dfcd29e32220102a43cf",
+          "author_date": "2025-02-02T22:49:52Z",
+          "message": "docs: link speaker notes example",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/dacb291de2136f694389dfcd29e32220102a43cf"
+        },
+        {
+          "sha": "33c7c9705c4560be00bafaaaa21d027b19ef3403",
+          "author_date": "2025-02-03T00:57:32Z",
+          "message": "docs; fix latex image link",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/33c7c9705c4560be00bafaaaa21d027b19ef3403"
+        },
+        {
+          "sha": "1235a26f75311862aed03e364ee794fca83685cb",
+          "author_date": "2025-02-05T00:44:56Z",
+          "message": "feat: add support for kitty's font size spec",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1235a26f75311862aed03e364ee794fca83685cb"
+        },
+        {
+          "sha": "2935eb617fac1a1015f1b97b2185f22abcaf2909",
+          "author_date": "2025-02-05T23:56:18Z",
+          "message": "docs: add redirects from old routes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2935eb617fac1a1015f1b97b2185f22abcaf2909"
+        },
+        {
+          "sha": "8093875aea97e251af9846cd34c4f1358b3abd31",
+          "author_date": "2025-02-05T23:58:05Z",
+          "message": "docs: move notes around external code highlighting via bat",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8093875aea97e251af9846cd34c4f1358b3abd31"
+        },
+        {
+          "sha": "fb0223bb836ac89bd9b578ff1222ae969da0cd8d",
+          "author_date": "2025-02-06T00:20:13Z",
+          "message": "feat: add support for kitty's font size protocol (#438)\n\nThis adds support for kitty's font size protocol\n(https://github.com/kovidgoyal/kitty/issues/8226) which allows printing\ncharacters that take up more than one cell. This feature will be\navailable in kitty >= 0.40.0 and is currently only available in nightly\nbuilds.\n\nThis for now is only supported in a subset of the theme components,\nnamely:\n\n* The introduction slide's presentation title\n(`intro_slide.title.font_size`).\n* The slide titles (`slide_title.font_size`).\n* The headings (`headings.h*.font_size`).\n\nFont sizes are only used if the terminal emulator supports it so this\ndoesn't change anything for emulators other than kitty (or other\nimplementors of the protocol). If you find this somehow breaks\nsomething, please create an issue.\n\nFor now all built in themes set `intro_slide.title.font_size=2` and\n`slide_title.font_size=2`. I think this looks a lot better this way but\nplease do comment here if you don't think built in themes should come\nwith these values set.\n\nThese are now the first 2 slides in the `demo.md` example:\n\n\nhttps://github.com/user-attachments/assets/8d761d86-8855-498a-9766-5294cdae3b57",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fb0223bb836ac89bd9b578ff1222ae969da0cd8d"
+        },
+        {
+          "sha": "7abfb5a7bcb02b4919f8a2ffac74999050a84e39",
+          "author_date": "2025-02-06T14:13:03Z",
+          "message": "perf: avoid cloning strings when styling them",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7abfb5a7bcb02b4919f8a2ffac74999050a84e39"
+        },
+        {
+          "sha": "1e3b3ff26d7d824bbed15bbc7394069ae6555ef6",
+          "author_date": "2025-02-06T14:16:32Z",
+          "message": "perf: avoid cloning strings when styling them (#440)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1e3b3ff26d7d824bbed15bbc7394069ae6555ef6"
+        },
+        {
+          "sha": "dbd4f9c1ea8b6bed28b9d892906dc2aa3daeeaca",
+          "author_date": "2025-02-06T14:22:31Z",
+          "message": "chore: use fastrand instead of rand",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/dbd4f9c1ea8b6bed28b9d892906dc2aa3daeeaca"
+        },
+        {
+          "sha": "99b5212af91903cc66fee7bb5bd431c2701f7013",
+          "author_date": "2025-02-06T14:30:55Z",
+          "message": "chore: don't pull in getrandom via tempfile",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/99b5212af91903cc66fee7bb5bd431c2701f7013"
+        },
+        {
+          "sha": "d2c03794653dbc0716214f7861d5af199bf93916",
+          "author_date": "2025-02-06T14:32:02Z",
+          "message": "chore: remove `rayon` feature in `image`",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d2c03794653dbc0716214f7861d5af199bf93916"
+        },
+        {
+          "sha": "56923ab97a5ebb809464bf0592f602f72960680b",
+          "author_date": "2025-02-06T14:50:30Z",
+          "message": "chore: use fastrand instead of rand (#441)\n\nThis switches to from `rand` to `fastrand`. `rand` was also being pulled\nin via `image/rayon` so I disabled it. There's no use case here that\ndemands parsing images at crazy fast speeds so whatever rayon is doing\nis likely not needed; we can revisit if someone finds perf issues.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/56923ab97a5ebb809464bf0592f602f72960680b"
+        },
+        {
+          "sha": "80c6df34aa680ff1c4ca7d27156efa5bf6352d24",
+          "author_date": "2025-02-07T14:05:19Z",
+          "message": "feat!: sanitize theme footer",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/80c6df34aa680ff1c4ca7d27156efa5bf6352d24"
+        },
+        {
+          "sha": "fc5062eb7a4b89e16df1c983279ed5158097c5a9",
+          "author_date": "2025-02-07T14:23:31Z",
+          "message": "feat!: sanitize theme footer's templates (#442)\n\nThis sanitizes the theme footer's template so that we have sure that\nit's not malformed and doesn't reference any variables that can't be\nused (e.g. `{bar}`). This now also avoids allocation a bunch of strings\nwhen rendering the footer, since every variable was being replaced via\n`str::replace`.\n\nThis is a breaking change for anyone who already has a malformed string\nin their string templates. If someone does use a string like `{lord}\nGeorge` in their footer please bring it up and we can see what to do.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fc5062eb7a4b89e16df1c983279ed5158097c5a9"
+        },
+        {
+          "sha": "6771c2f8a28f7bf14499a08546aa84ab0128cce6",
+          "author_date": "2025-02-09T21:16:38Z",
+          "message": "chore: create trait out of `Terminal`",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6771c2f8a28f7bf14499a08546aa84ab0128cce6"
+        },
+        {
+          "sha": "af8c7d6f0d45fca2f87e1e2e6502b22b9fc57f61",
+          "author_date": "2025-02-09T22:29:12Z",
+          "message": "chore: add tests for margins/columns handling in engine",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/af8c7d6f0d45fca2f87e1e2e6502b22b9fc57f61"
+        },
+        {
+          "sha": "fc01bc57df80765f5663cff29058828739460a3e",
+          "author_date": "2025-02-09T22:33:57Z",
+          "message": "chore: restructure `Terminal` code and add test for margins/layouts (#443)\n\nThis refactors the `Terminal` code a bit to be able to test it, and add\ntests to layout handling since the implementation for #437 will require\ncreating new rect to print the images in.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fc01bc57df80765f5663cff29058828739460a3e"
+        },
+        {
+          "sha": "828ef016ec17eb1888dfbd1b170d9e978d82a404",
+          "author_date": "2025-02-12T00:09:03Z",
+          "message": "fix: don't squash image if font is not 2:1",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/828ef016ec17eb1888dfbd1b170d9e978d82a404"
+        },
+        {
+          "sha": "f58cc80820fa05a789148becf50021145e5acf69",
+          "author_date": "2025-02-12T00:16:33Z",
+          "message": "fix: don't squash image if font is not 2:1 (#446)\n\nImages looked a little squashed vertically if the font being used in the\nterminal didn't have a 2:1 ratio between between columns and rows. This\nalso adds some much needed tests around this code, and fixes some\nrounding issues when the image is small enough to only need a handful of\ncolumns/rows to be displayed.\n\nFixes #445",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f58cc80820fa05a789148becf50021145e5acf69"
+        },
+        {
+          "sha": "17476f2c0cacafcc158ad52f9bc8052109ca446a",
+          "author_date": "2025-02-12T12:41:38Z",
+          "message": "feat: add support for wikilinks",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/17476f2c0cacafcc158ad52f9bc8052109ca446a"
+        },
+        {
+          "sha": "75116ba29cf44042e7bcd05a871c978a2bb99378",
+          "author_date": "2025-02-12T13:12:48Z",
+          "message": "feat: add support for wikilinks (#448)\n\nThis adds wikilinks support via the `[[url]]` syntax.\n\nRelates to #447",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/75116ba29cf44042e7bcd05a871c978a2bb99378"
+        },
+        {
+          "sha": "bf6a15dce5db3b67c98e754856745eca1631bdee",
+          "author_date": "2025-02-12T12:33:25Z",
+          "message": "feat: support images in footer",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/bf6a15dce5db3b67c98e754856745eca1631bdee"
+        },
+        {
+          "sha": "793073a3733cfdf900a72fc616d0653c7574fef3",
+          "author_date": "2025-02-13T13:52:29Z",
+          "message": "feat: support images in footer (#450)\n\nThis allows using images in a footer template. For now they can only be\nused in the left and center templates by using this syntax:\n\n```yaml\nfooter:\n  style: template\n  left:\n    image: path-to-image\n  # the height of the footer. defaults to 3\n  height: 3\n```\n\nImages will preserve aspect ratios and will expand to take up as much of\nthe `height` attribute as possible. Therefore, to scale images, simply\nbump that number up/down.\n\nImages are looked up:\n* Relative to the presentation's file, just like any other image.\n* Inside the themes directory (~/.config/presenterm/themes).\n\nExample using random logo:\n\n\n![image](https://github.com/user-attachments/assets/f04dc955-8103-4c13-b617-307267a617ed)\n\nFixes #437",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/793073a3733cfdf900a72fc616d0653c7574fef3"
+        },
+        {
+          "sha": "8935e1d1106d2b1a17098226932aef4a4fcd75fe",
+          "author_date": "2025-02-13T19:24:30Z",
+          "message": "Update introduction.md\n\nFix broken link to installation guide  in introduction.md",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8935e1d1106d2b1a17098226932aef4a4fcd75fe"
+        },
+        {
+          "sha": "46d283743f3566355c86670ee56d85dd084d301d",
+          "author_date": "2025-02-14T01:02:51Z",
+          "message": "Update introduction.md (#451)\n\nFix broken link to installation guide  in introduction.md",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/46d283743f3566355c86670ee56d85dd084d301d"
+        },
+        {
+          "sha": "54d4c0db7425b8417866e2998b99f11807c10544",
+          "author_date": "2025-02-14T01:10:07Z",
+          "message": "chore: bump sixel-rs version\n\nIncludes https://github.com/orhun/sixel-rs/pull/6 to fix build on aarch64 and riscv64.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/54d4c0db7425b8417866e2998b99f11807c10544"
+        },
+        {
+          "sha": "5507ea4dfd6c496893321035cf9140c711b797b5",
+          "author_date": "2025-02-14T01:43:03Z",
+          "message": "chore: bump sixel-rs version (#452)\n\nIncludes https://github.com/orhun/sixel-rs/pull/6 to fix build on\naarch64 and riscv64.\n\nIf possible, please make a new release so downstream maintainers like\nArch Linux RISC-V won't need to maintain this patch for an extended\nperiod. :P",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5507ea4dfd6c496893321035cf9140c711b797b5"
+        },
+        {
+          "sha": "b6e393cde1da4da2fe7deacbe6056bdb0dfec190",
+          "author_date": "2025-02-15T00:15:50Z",
+          "message": "fix: don't err if auto_render_languages isn't set",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b6e393cde1da4da2fe7deacbe6056bdb0dfec190"
+        },
+        {
+          "sha": "8e0bc1879162a8a66d0b759374ea0e8805e6d61c",
+          "author_date": "2025-02-15T00:20:41Z",
+          "message": "fix: don't err if auto_render_languages isn't set (#454)\n\nFixes #453",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8e0bc1879162a8a66d0b759374ea0e8805e6d61c"
+        },
+        {
+          "sha": "0c00558cd0cb57aa109452fb111257ee5132fdb4",
+          "author_date": "2025-02-15T00:25:14Z",
+          "message": "chore: add release notes for 0.10.1",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0c00558cd0cb57aa109452fb111257ee5132fdb4"
+        },
+        {
+          "sha": "73429b98bd366940dfbbc4790906ab05265ff028",
+          "author_date": "2025-02-15T21:57:17Z",
+          "message": "fix: don't get stuck if tmux doesn't passthrough",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/73429b98bd366940dfbbc4790906ab05265ff028"
+        },
+        {
+          "sha": "1aea867700ee8f797a1b1acb74cf36a72c74cff8",
+          "author_date": "2025-02-15T22:03:20Z",
+          "message": "fix: don't get stuck if tmux doesn't passthrough (#456)\n\nThis fixes an issue where we're inside tmux but `allow-passthrough` is\ndisabled, which manifests in presenterm getting stuck on startup because\ntmux never forwards the escape codes sent to query for terminal\ncapabilities to the terminal, hence we never get an answer. The fix here\nis to spawn a thread that will wait a second and if after that time we\nstill haven't received an answer it will make a device status report\nquery without the passthrough prefix, meaning tmux (if under tmux) will\nanswer it, and will wake the main thread up.\n\nFixes #455",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1aea867700ee8f797a1b1acb74cf36a72c74cff8"
+        },
+        {
+          "sha": "0f80362558d7ffa2177ae58fcb054fee64f216f1",
+          "author_date": "2025-02-15T22:08:00Z",
+          "message": "docs: mention tmux passthrough in docs",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0f80362558d7ffa2177ae58fcb054fee64f216f1"
+        },
+        {
+          "sha": "d5c56d2523b4a71ae9b3725fcdde7aed6ccef594",
+          "author_date": "2025-02-16T22:18:08Z",
+          "message": "feat: allow specifying font size in comment command",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d5c56d2523b4a71ae9b3725fcdde7aed6ccef594"
+        },
+        {
+          "sha": "7437422a0b6b918648577c4eedc9d842916f42be",
+          "author_date": "2025-02-16T22:24:37Z",
+          "message": "feat: allow specifying font size in comment command (#458)\n\nThis extends the font size capabilities introduced in #438 by allowing\nthe user to specify the font size in the form of a comment command\nanywhere in the presentation. This command changes the size of the font\nfor the remainder of the slide.\n\nCurrently this doesn't work in cases like executable snippets, but I'll\nfix that when I have more time.\n\nExample presentation:\n\n~~~markdown\ntest\n\n> this is\n> small\n\n<!-- font_size: 2 -->\n\ntest\n\n> this is\n> large\n\n```rust\nfn greet() -> &'static str {\n    \"hi mom\"\n}\n```\n~~~\n\n\n![image](https://github.com/user-attachments/assets/91b88b57-edd7-47b6-8b47-b5fa6ea3575e)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7437422a0b6b918648577c4eedc9d842916f42be"
+        },
+        {
+          "sha": "49ab5690dd8a8256691478432c35fe0d823e50f2",
+          "author_date": "2025-02-16T22:35:01Z",
+          "message": "fix: respect lists that start at non 1 indexes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/49ab5690dd8a8256691478432c35fe0d823e50f2"
+        },
+        {
+          "sha": "61cc8125ea5dfc79a38aec9c787dbf9fef7aba02",
+          "author_date": "2025-02-16T22:39:14Z",
+          "message": "fix: respect lists that start at non 1 indexes (#459)\n\nThis makes ordered lists that don't start at 1 to respect the number\nthey're prefixed with. e.g.\n\n```markdown\n5. hi\n6. mom\n```\n\nWill be now rendered as expected, whereas before it would show indexes\n1. and 2. for each item.\n\nFixes #457",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/61cc8125ea5dfc79a38aec9c787dbf9fef7aba02"
+        },
+        {
+          "sha": "fda4eeb1084ee61cd05b1cf86de0e75099d011b4",
+          "author_date": "2025-02-19T00:36:19Z",
+          "message": "feat: set font size on code execution components",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fda4eeb1084ee61cd05b1cf86de0e75099d011b4"
+        },
+        {
+          "sha": "430872846b020893001009e80247022a792a09a9",
+          "author_date": "2025-02-19T00:42:56Z",
+          "message": "feat: set font size on code execution components (#460)\n\nAfter #458 most components were allowed to have a font size except a\ncouple. This expands that list to include code execution components (the\nseparator bar and the output).\n\nThis code has turned quite gore after all these changes and will be\nrefactored soon. Markdown tables still don't respect the font size but\nthat should hopefully be easier after the refactor.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/430872846b020893001009e80247022a792a09a9"
+        },
+        {
+          "sha": "dc75f43ab33e37948aadcb5b545675443aa78788",
+          "author_date": "2025-02-19T00:54:56Z",
+          "message": "chore: split up themes module",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/dc75f43ab33e37948aadcb5b545675443aa78788"
+        },
+        {
+          "sha": "5a9c2d7a457c5397c9a9c2bf4a3e47464c5177e0",
+          "author_date": "2025-02-19T13:09:20Z",
+          "message": "fix: use right script name for kotlin files when executing",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5a9c2d7a457c5397c9a9c2bf4a3e47464c5177e0"
+        },
+        {
+          "sha": "0f6a8ec73f9487569c7abf6c802858feee755eb0",
+          "author_date": "2025-02-19T13:13:31Z",
+          "message": "fix: use right script name for kotlin files when executing (#462)\n\nFixes #461",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0f6a8ec73f9487569c7abf6c802858feee755eb0"
+        },
+        {
+          "sha": "60eee62e84a68c9b813f7585a934b34ea733c243",
+          "author_date": "2025-02-20T14:43:30Z",
+          "message": "chore: use a separate theme model for config / runtime",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/60eee62e84a68c9b813f7585a934b34ea733c243"
+        },
+        {
+          "sha": "8a806d76a1dfcb6d9f9fd0618ec2fa392eaedb07",
+          "author_date": "2025-02-21T00:13:29Z",
+          "message": "chore: restrict raw theme visibility as much as possible",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8a806d76a1dfcb6d9f9fd0618ec2fa392eaedb07"
+        },
+        {
+          "sha": "fa4d862834bd9577c251ec9fbbf6fd12ee9eb1cc",
+          "author_date": "2025-02-21T00:15:12Z",
+          "message": "chore: use re-exports for clean theme types",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fa4d862834bd9577c251ec9fbbf6fd12ee9eb1cc"
+        },
+        {
+          "sha": "fb4ca37746d6564f5dbe4af51d06de17dbe73b6d",
+          "author_date": "2025-02-21T14:35:00Z",
+          "message": "chore: create `RawColor` to deal with unresolved palette colors",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/fb4ca37746d6564f5dbe4af51d06de17dbe73b6d"
+        },
+        {
+          "sha": "7f1e2cbdb48b9cbdf9dd0ac20c6fbc9035943062",
+          "author_date": "2025-02-22T21:38:00Z",
+          "message": "chore: remove `serde::*` derives from `Color`",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7f1e2cbdb48b9cbdf9dd0ac20c6fbc9035943062"
+        },
+        {
+          "sha": "e7dd8f7e862d881632aa1a96e6730e3ca5d452ea",
+          "author_date": "2025-02-22T22:00:01Z",
+          "message": "chore: add `PaddingRect` clean theme type",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/e7dd8f7e862d881632aa1a96e6730e3ca5d452ea"
+        },
+        {
+          "sha": "3e11cbe6fd695e89d404bbee2e2fbf22c05766b1",
+          "author_date": "2025-02-22T22:13:12Z",
+          "message": "chore: make `Margin` and `Alignment` `Copy`",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3e11cbe6fd695e89d404bbee2e2fbf22c05766b1"
+        },
+        {
+          "sha": "83e33d7709d6a98dfc70cce994aa0e8f91a460f4",
+          "author_date": "2025-02-22T22:16:12Z",
+          "message": "chore: refactor theme code (#463)\n\nThis cleans up the way themes are handled and splits them into 2 sets of\ntypes: types that are meant to define the .yaml themes and another one\nthat's used during rendering. This:\n\n* Prevents us from dealing with `Option` and using `unwrap_or/_default`\nall over the place since we run defaults once during the .yaml >\n\"runtime\" theme types conversion.\n* Allows fallible code where there shouldn't be: there's cases like\nfooter images that forced error checking in weird spots, like when\ncreating the footer render just to ensure images use a valid path.\n* Allows us to not deal with color palette lookup errors since we can\nresolve those once.\n* Allows us to not have to be extra careful to resolve all palette\ncolors or face runtime errors and instead enforce this in compile time.\ne.g. now a new `RawColor` type has a `Palette` variant, but the real\n`Color` one doesn't. Markdown parsing deals with `RawColor` but we are\nforced to resolve them into `Color` because we can't print `RawColor`s.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/83e33d7709d6a98dfc70cce994aa0e8f91a460f4"
+        },
+        {
+          "sha": "b6459701f3dcfe3f2e9772c4ec133a325239e042",
+          "author_date": "2025-02-23T20:50:15Z",
+          "message": "feat: allow markdown syntax in presentation title",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b6459701f3dcfe3f2e9772c4ec133a325239e042"
+        },
+        {
+          "sha": "2e198d2dbc5e3f4ef061eb12cb3b8c352b635a0a",
+          "author_date": "2025-02-23T20:55:32Z",
+          "message": "feat: allow markdown syntax in presentation title (#464)\n\nThis allows using markdown syntax in the presentation's title, meaning\nyou can use bold, italics, color, etc. This currently looks wrong if you\nuse the `{title}` formatted in the footer but this will be fixed in a\nfollow up PR that will allow footers to be styled the same way as well.\n\nExample presentation:\n\n~~~markdown\n---\ntitle: \"**Hi** _mom_ <span style=\\\"color: red\\\">how are you</span>?\"\n---\n~~~\n\n\n![image](https://github.com/user-attachments/assets/c26cd48d-1fa8-4f25-b4ee-fea5324a08d7)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2e198d2dbc5e3f4ef061eb12cb3b8c352b635a0a"
+        },
+        {
+          "sha": "33619c3255c231863c2ba1fb3bcaab39ee156ce5",
+          "author_date": "2025-02-23T21:04:10Z",
+          "message": "chore: remove `Result` return type from builder fns that don't need it",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/33619c3255c231863c2ba1fb3bcaab39ee156ce5"
+        },
+        {
+          "sha": "2ef27f431343d2465c30be41609f50f5650bbd6f",
+          "author_date": "2025-02-23T21:09:46Z",
+          "message": "chore: remove `Result` return type from builder fns that don't need it (#465)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2ef27f431343d2465c30be41609f50f5650bbd6f"
+        },
+        {
+          "sha": "350f692ed98ee331e6877d37c16deb29bb5f2702",
+          "author_date": "2025-02-23T22:45:53Z",
+          "message": "feat: allow footer to be styled via markdown",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/350f692ed98ee331e6877d37c16deb29bb5f2702"
+        },
+        {
+          "sha": "3a3c7e031ebe9db4409067040285b46f81a2927e",
+          "author_date": "2025-02-23T22:53:36Z",
+          "message": "feat: allow footer to be styled via markdown (#466)\n\nThis allows styling the template footer using markdown, including colors\nfrom the theme palette. If the front matter contains the `title` entry\nand that contains markdown, it is also rendered as expected.\n\nExample:\n\n~~~markdown\n---\ntheme:\n    override:\n        footer:\n            style: template\nleft: \"_how_ to <span style=\\\"color: red\\\">chop</span> **onions**\"\n---\n~~~\n\n\n![image](https://github.com/user-attachments/assets/0e8807c5-6488-4ba0-956d-1837ec32ae63)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3a3c7e031ebe9db4409067040285b46f81a2927e"
+        },
+        {
+          "sha": "161110e7634de730705e9de1a88ecd21b4e1269c",
+          "author_date": "2025-02-28T14:05:25Z",
+          "message": "feat: allow escaped braces in footer",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/161110e7634de730705e9de1a88ecd21b4e1269c"
+        },
+        {
+          "sha": "4ceb07c6de0aaf188011d41c4f8a62ccb01e8cd2",
+          "author_date": "2025-02-28T14:15:22Z",
+          "message": "feat: allow escaped braces in footer (#467)\n\nAfter #442 you could no longer use braces unless it was to refer to a\nvariable. This PR softens that restriction by letting you use double\nbraces as an \"escaped brace\" to let you use them anywhere.\n\ne.g. this footer \"{title} {{potato}}\" will render as \"<title>\n{{potato}}\"",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/4ceb07c6de0aaf188011d41c4f8a62ccb01e8cd2"
+        },
+        {
+          "sha": "dfe0e8160ede11c522e2c7d7e25dd40a3a50a2ab",
+          "author_date": "2025-03-01T21:16:08Z",
+          "message": "feat: introduce `palette.classes` and use span.class to reference it",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/dfe0e8160ede11c522e2c7d7e25dd40a3a50a2ab"
+        },
+        {
+          "sha": "a3ef63208f8ce1bbff558d9dcd20e7ee000d548f",
+          "author_date": "2025-03-01T21:21:16Z",
+          "message": "feat: introduce `palette.classes` and use span.class to reference it (#468)\n\nThis introduces a `palette.classes` entry in the theme that allows\ndefining a class (a background and foreground color pair). This can then\nbe referenced when using spans by using the `class` html attribute.\n\nAs an example. the following presentation:\n\n~~~markdown\n---\ntheme:\n    override:\n        palette:\n            classes:\n                bokita:\n                    foreground: yellow\n                    background: dark_blue\n        footer:\n            style: template\n            left: \"<span class=\\\"bokita\\\">hello</span>\"\n                \n---\n\nhi <span class=\"bokita\">hello</span>\n~~~\n\nRenders liks:\n\n\n![image](https://github.com/user-attachments/assets/40cdd57a-295d-4889-ab97-4618613eaf0f)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a3ef63208f8ce1bbff558d9dcd20e7ee000d548f"
+        },
+        {
+          "sha": "ace1dfc18daaac67c5eab03e757f02c5d51efd51",
+          "author_date": "2025-03-01T22:04:56Z",
+          "message": "fix: show meaningful error if footer is broken",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ace1dfc18daaac67c5eab03e757f02c5d51efd51"
+        },
+        {
+          "sha": "6587cc955d8d1df2ef31d564debe23d7b3585155",
+          "author_date": "2025-03-01T23:30:58Z",
+          "message": "fix: show meaningful error if footer is broken (#469)\n\nAfter the change to allow images in footers, the error message when the\nfooter is malformed was useless. This implements a custom deserializer\nto have proper error messages since the derive macro was getting\nconfused.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6587cc955d8d1df2ef31d564debe23d7b3585155"
+        },
+        {
+          "sha": "967db854a23b631db99004357fd5b947eee45f25",
+          "author_date": "2025-03-01T21:31:28Z",
+          "message": "chore: allow overriding slide title font size",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/967db854a23b631db99004357fd5b947eee45f25"
+        },
+        {
+          "sha": "5c03cc995037b6a4015d73c8bf6c5613904fdcda",
+          "author_date": "2025-03-01T23:35:34Z",
+          "message": "chore: allow overriding slide title font size (#470)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/5c03cc995037b6a4015d73c8bf6c5613904fdcda"
+        },
+        {
+          "sha": "f190910646ddac5556d9d78d9a77d006cc6e1279",
+          "author_date": "2025-03-02T19:32:30Z",
+          "message": "chore: display nice error if footer variable not set",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f190910646ddac5556d9d78d9a77d006cc6e1279"
+        },
+        {
+          "sha": "7af0e4a18bdbde0be5e2cb5d14378c5385cc8eb7",
+          "author_date": "2025-03-02T20:15:45Z",
+          "message": "chore: display nice error if footer variable not set (#471)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/7af0e4a18bdbde0be5e2cb5d14378c5385cc8eb7"
+        },
+        {
+          "sha": "1f2bea4a678a2286ef67e208111b767a0f9fcbfa",
+          "author_date": "2025-03-02T20:29:23Z",
+          "message": "chore: bump dependencies",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1f2bea4a678a2286ef67e208111b767a0f9fcbfa"
+        },
+        {
+          "sha": "a7973cccb3a1c729482ce16d8a9c46aeaeb0f2d1",
+          "author_date": "2025-03-02T20:50:57Z",
+          "message": "chore: bump dependencies (#472)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/a7973cccb3a1c729482ce16d8a9c46aeaeb0f2d1"
+        },
+        {
+          "sha": "6f12f893d0001fcd0c866ff3a1932b9a32faa890",
+          "author_date": "2025-03-03T13:11:27Z",
+          "message": "fix: fail if `--config-file` points to non existent file",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6f12f893d0001fcd0c866ff3a1932b9a32faa890"
+        },
+        {
+          "sha": "ec1be93a064e354c989c782b17999727c7c72f66",
+          "author_date": "2025-03-03T13:14:35Z",
+          "message": "fix: fail if `--config-file` points to non existent file (#474)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ec1be93a064e354c989c782b17999727c7c72f66"
+        },
+        {
+          "sha": "24e6ea838608907c0bb41dc0b7c44cf7e06aa0e9",
+          "author_date": "2025-03-03T13:26:40Z",
+          "message": "feat: allow configuring alignment when max columns is hit",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/24e6ea838608907c0bb41dc0b7c44cf7e06aa0e9"
+        },
+        {
+          "sha": "0419cf3e2e2fad23b67881f2dc1745ad15afc57a",
+          "author_date": "2025-03-03T13:35:48Z",
+          "message": "feat: allow configuring alignment when max columns is hit (#475)\n\nThis introduces a new `defaults.max_columns_alignment` that can have\nvalues `left`, `center`, and `right`. This works along with\n`max_columns` and allows specifying how to align the presentation if the\nterminal size is greater than it. Before this change, this would behave\nlike `max_columns_alignment: center` does now so that's the default if\nnot set.\n\ne.g. setting this to `left` will cause look like this on a wide\nterminal:\n\n\n![image](https://github.com/user-attachments/assets/026b5943-6e22-4450-ae22-3e1e6af84058)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0419cf3e2e2fad23b67881f2dc1745ad15afc57a"
+        },
+        {
+          "sha": "6f26928be311514cd53439a45387c20c706c87d1",
+          "author_date": "2025-03-05T14:09:55Z",
+          "message": "chore: move footer up depending on footer height",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/6f26928be311514cd53439a45387c20c706c87d1"
+        },
+        {
+          "sha": "4bf584e2111bf78a091e3e339eeb04775ef9ebef",
+          "author_date": "2025-03-05T14:13:58Z",
+          "message": "chore: move footer up depending on footer height (#476)\n\nThis otherwise causes footers with tall images that need `footer.height`\nadjusted to have the text too far down.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/4bf584e2111bf78a091e3e339eeb04775ef9ebef"
+        },
+        {
+          "sha": "92313b4fd95cb014465da36de00cb94fc73d7ea7",
+          "author_date": "2025-03-08T00:21:09Z",
+          "message": "fix: jump to right slide on code attribute change",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/92313b4fd95cb014465da36de00cb94fc73d7ea7"
+        },
+        {
+          "sha": "f17724bf9168b8c779b9d9b82fa9440ba34afd2a",
+          "author_date": "2025-03-08T00:24:38Z",
+          "message": "fix: jump to right slide on code attribute change (#478)\n\nChanging attributes like `+line_numbers` wasn't causing the code's slide\nto be jumped-to.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f17724bf9168b8c779b9d9b82fa9440ba34afd2a"
+        },
+        {
+          "sha": "644a57f9f95c4e37f8053acac720508d7d2a5060",
+          "author_date": "2025-03-08T20:43:41Z",
+          "message": "chore: cleanup `Builder::push_code`",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/644a57f9f95c4e37f8053acac720508d7d2a5060"
+        },
+        {
+          "sha": "77979984bfa4c43401a545018c06359c74e3178d",
+          "author_date": "2025-03-08T20:47:12Z",
+          "message": "chore: cleanup `Builder::push_code` (#480)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/77979984bfa4c43401a545018c06359c74e3178d"
+        },
+        {
+          "sha": "d5b172048a984c28ba3daa751f2e3b0dfb37f303",
+          "author_date": "2025-03-08T00:43:33Z",
+          "message": "docs: add release notes for 0.11.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d5b172048a984c28ba3daa751f2e3b0dfb37f303"
+        },
+        {
+          "sha": "3b40c8fd3d61acecab87268f3f9795f81050142e",
+          "author_date": "2025-03-08T00:43:49Z",
+          "message": "chore: add docs for 0.11.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3b40c8fd3d61acecab87268f3f9795f81050142e"
+        },
+        {
+          "sha": "60dd8eecc002b42bb71c3eb76ff293374db14de2",
+          "author_date": "2025-03-08T00:44:02Z",
+          "message": "chore: update example presentations before 0.11.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/60dd8eecc002b42bb71c3eb76ff293374db14de2"
+        },
+        {
+          "sha": "c6223a2ab6a1338efe5e8ec08221e5147498e338",
+          "author_date": "2025-03-08T00:44:37Z",
+          "message": "chore: bump version to 0.11.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/c6223a2ab6a1338efe5e8ec08221e5147498e338"
+        },
+        {
+          "sha": "50040bfcc1bb9c7bcc249e10e1d1dbc328a714b8",
+          "author_date": "2025-03-08T00:47:14Z",
+          "message": "chore: update README",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/50040bfcc1bb9c7bcc249e10e1d1dbc328a714b8"
+        },
+        {
+          "sha": "cafc6bb8507881f721c3609f5be004bccb662591",
+          "author_date": "2025-03-08T20:53:54Z",
+          "message": "chore: include screenshot of footer example",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/cafc6bb8507881f721c3609f5be004bccb662591"
+        },
+        {
+          "sha": "0057b8ba5edec43bd060db2120fdc8c345d1d034",
+          "author_date": "2025-03-08T21:19:04Z",
+          "message": "chore: prepare for 0.11.0 release (#479)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/0057b8ba5edec43bd060db2120fdc8c345d1d034"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "nightly",
@@ -432,8 +2254,159 @@
     {
       "release": "v0.12.0",
       "previous_release": "nightly",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f933032958ebc8da64dc6def8bd6db5274cbb43e",
+          "author_date": "2025-03-20T12:50:42Z",
+          "message": "feat: allow specifying export dimensions in config file",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f933032958ebc8da64dc6def8bd6db5274cbb43e"
+        },
+        {
+          "sha": "66091f3b6a88ce4b9099bbfc8aefe7c6848aac13",
+          "author_date": "2025-03-20T12:56:40Z",
+          "message": "ci: export PDF during merge checks",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/66091f3b6a88ce4b9099bbfc8aefe7c6848aac13"
+        },
+        {
+          "sha": "aa38a7120bef81617d3197d6753694ef124b0854",
+          "author_date": "2025-03-20T13:06:28Z",
+          "message": "feat: allow specifying export dimensions in config file (#511)\n\nThis allows specifying the dimensions to use when exporting a\npresentation to PDF. This allows exporting to PDF in contexts without a\ntty which should help people write scripts that automatically export\npresentations. This now also adds a step in the CI that tries to export\nthe default presentation as PDF, which couldn't be tested before because\nof the tty restriction.\n\n```yaml\nexport:\n  dimensions:\n    rows: 35\n    columns: 135\n```",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/aa38a7120bef81617d3197d6753694ef124b0854"
+        },
+        {
+          "sha": "ec6926358a8fc25599d15082971585cc83042996",
+          "author_date": "2025-03-20T23:39:15Z",
+          "message": "fix: center lists correctly",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ec6926358a8fc25599d15082971585cc83042996"
+        },
+        {
+          "sha": "9dd4b2105c5abef78ea52e43ab3ba330f7b652ff",
+          "author_date": "2025-03-20T23:41:37Z",
+          "message": "ci: build with sixel enabled",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9dd4b2105c5abef78ea52e43ab3ba330f7b652ff"
+        },
+        {
+          "sha": "59b96d718bf0ac3a38805db456171d3bae36dc49",
+          "author_date": "2025-03-20T23:52:40Z",
+          "message": "fix: center lists correctly (#512)\n\nAfter #493 lists could be center/right aligned but they looked terrible.\nThis fixes that.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/59b96d718bf0ac3a38805db456171d3bae36dc49"
+        },
+        {
+          "sha": "1d4e5b1c592525dbd1c935fe233763bb6394f950",
+          "author_date": "2025-03-20T23:52:52Z",
+          "message": "ci: build with sixel enabled (#513)\n\nThis changes the nightly and release builds to enable sixel support.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/1d4e5b1c592525dbd1c935fe233763bb6394f950"
+        },
+        {
+          "sha": "146862f12b096d7af3c5104207afa04937c3559c",
+          "author_date": "2025-03-21T02:00:02Z",
+          "message": "Revert \"ci: build with sixel enabled\"\n\nThis reverts commit 9dd4b2105c5abef78ea52e43ab3ba330f7b652ff.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/146862f12b096d7af3c5104207afa04937c3559c"
+        },
+        {
+          "sha": "3a7a967a1e8d420fa3d4ebd792938f0641248c7d",
+          "author_date": "2025-03-21T02:04:15Z",
+          "message": "ci: revert build with sixel enabled (#514)\n\nThis causes builds to fail. This should maybe be moved to use some sixel\ncrate that's pure rust and not based on libsixel.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3a7a967a1e8d420fa3d4ebd792938f0641248c7d"
+        },
+        {
+          "sha": "d7216d2af53f188c00d4a371062e020451ce2403",
+          "author_date": "2025-03-21T23:01:22Z",
+          "message": "fix: respect line height when jumping lines when rendering PDF",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d7216d2af53f188c00d4a371062e020451ce2403"
+        },
+        {
+          "sha": "3ef9d75277b1e7343dbcd8bd7cd57bd491e14105",
+          "author_date": "2025-03-21T23:06:44Z",
+          "message": "fix: respect line height when jumping lines when rendering PDF (#517)\n\nFixes #515",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3ef9d75277b1e7343dbcd8bd7cd57bd491e14105"
+        },
+        {
+          "sha": "3f3b66b52d9b6578e51aecd8e2251e6624a462a6",
+          "author_date": "2025-03-22T16:01:27Z",
+          "message": "chore: allow specifying path for temporary export files",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3f3b66b52d9b6578e51aecd8e2251e6624a462a6"
+        },
+        {
+          "sha": "b52fd4ce8fbfbab9415302444e28bba1bd63a818",
+          "author_date": "2025-03-22T16:11:12Z",
+          "message": "chore: allow specifying path for temporary export files (#518)\n\nThis adds a `--export-temporary-path` that allows using some specific\npath to store intermediate files used when exporting to pdf (currently\nan html and a css file) rather than using a temporary path. This helps\ndebugging #516 but is also generally useful.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/b52fd4ce8fbfbab9415302444e28bba1bd63a818"
+        },
+        {
+          "sha": "9f316abcf935202779825cc5979217e19cac241e",
+          "author_date": "2025-03-22T15:49:16Z",
+          "message": "chore: cleanup text attributes",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/9f316abcf935202779825cc5979217e19cac241e"
+        },
+        {
+          "sha": "d7c7dba34f8998c08848db2688dea4919e8a3520",
+          "author_date": "2025-03-22T20:19:56Z",
+          "message": "chore: cleanup text attributes (#519)\n\nThis cleans up the code around text attributes and adds more tests when\nconverting text to html.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/d7c7dba34f8998c08848db2688dea4919e8a3520"
+        },
+        {
+          "sha": "24221f4538079886255a4878913b68d9a203f38d",
+          "author_date": "2025-03-22T20:22:27Z",
+          "message": "fix: display inline code colors when in list",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/24221f4538079886255a4878913b68d9a203f38d"
+        },
+        {
+          "sha": "74bbe9f8d594661da49906972bdb466adb9dab2f",
+          "author_date": "2025-03-22T20:27:25Z",
+          "message": "fix: display inline code colors when in list (#520)\n\nThis is fragile and broke after #512, eventually it should be cleaned up\nso this can't break as easily.",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/74bbe9f8d594661da49906972bdb466adb9dab2f"
+        },
+        {
+          "sha": "78d2695f7adb4e9cdb34da09d9356e3af10622b6",
+          "author_date": "2025-03-23T02:23:48Z",
+          "message": "fix: respect font size in lists",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/78d2695f7adb4e9cdb34da09d9356e3af10622b6"
+        },
+        {
+          "sha": "2d40544e58136bef6d6a48ce852ee7bd8b41ede3",
+          "author_date": "2025-03-24T13:03:18Z",
+          "message": "fix: respect font size in lists (#522)\n\nRegression introduced in #512. This + inline code needs something more\nrobust.\n\nFixes #521",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/2d40544e58136bef6d6a48ce852ee7bd8b41ede3"
+        },
+        {
+          "sha": "ed7f50ef8927d14c07a298eadcd82650f4ac2e15",
+          "author_date": "2025-03-24T13:17:38Z",
+          "message": "fix: show error if sixel mode is selected but disabled",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ed7f50ef8927d14c07a298eadcd82650f4ac2e15"
+        },
+        {
+          "sha": "8ec745a4f063b4423691de7c97293eb664cd5f1c",
+          "author_date": "2025-03-24T13:20:57Z",
+          "message": "fix: show error if sixel mode is selected but disabled (#525)\n\nFixes #524",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/8ec745a4f063b4423691de7c97293eb664cd5f1c"
+        },
+        {
+          "sha": "ca0a8b34533f32a2f0dabfe1fd63c2255aa08d6a",
+          "author_date": "2025-03-23T20:34:54Z",
+          "message": "chore: add changelog notes for 0.12.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/ca0a8b34533f32a2f0dabfe1fd63c2255aa08d6a"
+        },
+        {
+          "sha": "3715bfa4dae7eced476c5da84e1a66fa67c5fe77",
+          "author_date": "2025-03-23T20:35:16Z",
+          "message": "chore: add docs for 0.12.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/3715bfa4dae7eced476c5da84e1a66fa67c5fe77"
+        },
+        {
+          "sha": "f8e94a001628d3a8d209b74c232b1a18081dd6e1",
+          "author_date": "2025-03-23T20:35:27Z",
+          "message": "chore: bump version to 0.12.0",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/f8e94a001628d3a8d209b74c232b1a18081dd6e1"
+        },
+        {
+          "sha": "238c85f8499195078604745f309ff284d526fd6e",
+          "author_date": "2025-03-25T01:27:16Z",
+          "message": "chore: prepare for 0.12.0 changes (#523)",
+          "html_url": "https://github.com/mfontanini/presenterm/commit/238c85f8499195078604745f309ff284d526fd6e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.13.0",

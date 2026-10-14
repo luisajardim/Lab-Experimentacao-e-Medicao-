@@ -17521,8 +17521,21 @@
     {
       "release": "v2.113.2",
       "previous_release": "v2.113.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "5ee41b0fd8d7a22bf28c4c06502542ae72112a94",
+          "author_date": "2020-07-20T15:22:20Z",
+          "message": "fix(messenger): fix handling deep links opened from outside the app\n\nSigned-off-by: Norman Meier <norman@berty.tech>",
+          "html_url": "https://github.com/berty/berty/commit/5ee41b0fd8d7a22bf28c4c06502542ae72112a94"
+        },
+        {
+          "sha": "d521ab8b910ca6492d6b37c26f989523ef8677f0",
+          "author_date": "2020-07-20T17:03:54Z",
+          "message": "Merge pull request #2173 from n0izn0iz/fix-external-deep-link\n\nfix(messenger): fix handling deep links opened from outside the app",
+          "html_url": "https://github.com/berty/berty/commit/d521ab8b910ca6492d6b37c26f989523ef8677f0"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.114.0",
@@ -21325,8 +21338,27 @@
     {
       "release": "v2.337.4",
       "previous_release": "v2.337.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "2656ee2b63b7d11fe6f3c1b9747fb39f3a98e231",
+          "author_date": "2021-12-17T15:29:24Z",
+          "message": "fix: properly handle denied perms\n\nSigned-off-by: clegirar <clemntgirard@gmail.com>",
+          "html_url": "https://github.com/berty/berty/commit/2656ee2b63b7d11fe6f3c1b9747fb39f3a98e231"
+        },
+        {
+          "sha": "c05a295d148703a27276d2a893c87d0b6aaaa5cb",
+          "author_date": "2021-12-20T11:48:33Z",
+          "message": "fix: gen go\n\nSigned-off-by: clegirar <clemntgirard@gmail.com>",
+          "html_url": "https://github.com/berty/berty/commit/c05a295d148703a27276d2a893c87d0b6aaaa5cb"
+        },
+        {
+          "sha": "5af15a99e576320c13d7219a8a1788b64f994a2c",
+          "author_date": "2021-12-23T12:05:34Z",
+          "message": "Merge pull request #3808 from clegirar/fix/properly-handle-denied-pems\n\nfix: properly handle denied perms",
+          "html_url": "https://github.com/berty/berty/commit/5af15a99e576320c13d7219a8a1788b64f994a2c"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.338.0",
@@ -21697,8 +21729,33 @@
     {
       "release": "v2.362.1",
       "previous_release": "v2.362.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "0a3e9768f9e3d9e76a514d65a4879a743ba593ef",
+          "author_date": "2022-03-22T14:46:02Z",
+          "message": "fix(i18n): new French translations\n\nSigned-off-by: Berty Assistant <22729528+berty-assistant@users.noreply.github.com>",
+          "html_url": "https://github.com/berty/berty/commit/0a3e9768f9e3d9e76a514d65a4879a743ba593ef"
+        },
+        {
+          "sha": "eefeea80d3e936150d03ce93fc64b1d15ff533b5",
+          "author_date": "2022-03-23T13:24:34Z",
+          "message": "chore: configure goreleaser to publish various OS and archs\n\nSigned-off-by: Manfred Touron <94029+moul@users.noreply.github.com>",
+          "html_url": "https://github.com/berty/berty/commit/eefeea80d3e936150d03ce93fc64b1d15ff533b5"
+        },
+        {
+          "sha": "d471815d8c0a14703a1351192c097e5adc397d92",
+          "author_date": "2022-03-23T22:27:26Z",
+          "message": "Merge pull request #3994 from berty/dev/moul/build-daemon-artifacts\n\nchore: configure goreleaser to publish various OS and archs",
+          "html_url": "https://github.com/berty/berty/commit/d471815d8c0a14703a1351192c097e5adc397d92"
+        },
+        {
+          "sha": "b18cf203858a0e2210af8c77367aa1663b0f9b56",
+          "author_date": "2022-03-23T22:27:58Z",
+          "message": "Merge pull request #3991 from berty/l10n_master\n\nNew Crowdin updates",
+          "html_url": "https://github.com/berty/berty/commit/b18cf203858a0e2210af8c77367aa1663b0f9b56"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.363.0",
@@ -21955,8 +22012,21 @@
     {
       "release": "v2.379.2",
       "previous_release": "v2.379.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a7f333597521d12ad986122991f2ec184cc84e73",
+          "author_date": "2022-04-25T15:20:30Z",
+          "message": "fix: break dependency cycle in messenger reducer\n\nSigned-off-by: Norman Meier <norman@berty.tech>",
+          "html_url": "https://github.com/berty/berty/commit/a7f333597521d12ad986122991f2ec184cc84e73"
+        },
+        {
+          "sha": "648d0fe8053f398227eabbf8d4d303ebe59cd810",
+          "author_date": "2022-04-26T09:34:05Z",
+          "message": "Merge pull request #4103 from n0izn0iz/fix-web-undefined-messenger",
+          "html_url": "https://github.com/berty/berty/commit/648d0fe8053f398227eabbf8d4d303ebe59cd810"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.380.0",
@@ -22633,8 +22703,33 @@
     {
       "release": "v2.439.0",
       "previous_release": "v2.438.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d428ba4bfb7c92f04735e4fe8206de16619319f1",
+          "author_date": "2022-11-09T10:19:15Z",
+          "message": "feat: bump kubo\n\n- add mobile folder from gomobile ipfs\n- update import for kubo/libp2p\n- fix kubo/libp2p breaking api change\n- update and fix linter for go1.18\n- bump go-orbit-db\n- cleanup goleak checkup on unuse library\n- gomobile missing `libproc.h` with \"nowatchdogs\" tag\n\nSigned-off-by: gfanton <8671905+gfanton@users.noreply.github.com>",
+          "html_url": "https://github.com/berty/berty/commit/d428ba4bfb7c92f04735e4fe8206de16619319f1"
+        },
+        {
+          "sha": "5e51a0d12ac8b74114c05e1afc377a6056ae607f",
+          "author_date": "2022-11-17T08:34:14Z",
+          "message": "fix: skip unstable test\n\n- skip replication test\n- skip unstable contact request test\n\nSigned-off-by: gfanton <8671905+gfanton@users.noreply.github.com>",
+          "html_url": "https://github.com/berty/berty/commit/5e51a0d12ac8b74114c05e1afc377a6056ae607f"
+        },
+        {
+          "sha": "4c2749e984b346c89150fb6f9da93cfd489950cc",
+          "author_date": "2022-11-18T10:02:43Z",
+          "message": "fix: service close data race\n\nSigned-off-by: gfanton <8671905+gfanton@users.noreply.github.com>",
+          "html_url": "https://github.com/berty/berty/commit/4c2749e984b346c89150fb6f9da93cfd489950cc"
+        },
+        {
+          "sha": "65973c3926af20b2fa989aa99c747e945e957d8d",
+          "author_date": "2022-11-18T10:50:40Z",
+          "message": "Merge pull request #4492 from gfanton/feat/bump-kubo-16",
+          "html_url": "https://github.com/berty/berty/commit/65973c3926af20b2fa989aa99c747e945e957d8d"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.439.1",

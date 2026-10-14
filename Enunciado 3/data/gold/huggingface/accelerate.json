@@ -1176,8 +1176,249 @@
     {
       "release": "v0.11.0",
       "previous_release": "v0.10.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "eeaba598f455fbd2c48661d7e816d3ff25ab050b",
+          "author_date": "2022-06-18T00:04:39Z",
+          "message": "Offload and modules with unused submodules (#442)\n\n* Offload and modules with unused submodules\r\n\r\n* Renaming\r\n\r\n* Update src/accelerate/hooks.py\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>\r\n\r\n* Address review comment\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/eeaba598f455fbd2c48661d7e816d3ff25ab050b"
+        },
+        {
+          "sha": "73a596593ea57befcd286a1f7d5366130d627608",
+          "author_date": "2022-06-21T16:12:00Z",
+          "message": "Better checks for if a TPU device exists (#456)\n\n* Check if a TPU device actually exists",
+          "html_url": "https://github.com/huggingface/accelerate/commit/73a596593ea57befcd286a1f7d5366130d627608"
+        },
+        {
+          "sha": "97f4c9de6105fdd03423ece89348e2d2468563c0",
+          "author_date": "2022-06-21T19:11:03Z",
+          "message": "Right step point (#459)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/97f4c9de6105fdd03423ece89348e2d2468563c0"
+        },
+        {
+          "sha": "dc243c0db142e208256419453bb3686b3e51ccd7",
+          "author_date": "2022-06-21T20:42:35Z",
+          "message": "Raise a clear warning if a user tries to modify the AcceleratorState (#458)\n\n* Reinitialize warning",
+          "html_url": "https://github.com/huggingface/accelerate/commit/dc243c0db142e208256419453bb3686b3e51ccd7"
+        },
+        {
+          "sha": "e2a968c66d4ec0424f1b06f6d7fff7dc940f3963",
+          "author_date": "2022-06-21T22:06:57Z",
+          "message": "Handle bfloat16 weights in disk offload (#460)\n\n* Handle bfloat16 weights in disk offload\r\n\r\n* Address review comments",
+          "html_url": "https://github.com/huggingface/accelerate/commit/e2a968c66d4ec0424f1b06f6d7fff7dc940f3963"
+        },
+        {
+          "sha": "d39c57c11f66b001aeab920a6888ed57ba3b624e",
+          "author_date": "2022-06-22T13:13:23Z",
+          "message": "Handle bfloat16 weights in disk offload without adding memory overhead (#460) (#461)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d39c57c11f66b001aeab920a6888ed57ba3b624e"
+        },
+        {
+          "sha": "f13c59f91e20beed3e8017de6e6818666e4e46b7",
+          "author_date": "2022-06-22T21:53:42Z",
+          "message": "Include bf16 support for TPUs and CPUs, and a better check for if a CUDA device supports BF16 (#462)\n\n* Support bf16 on TPU, CPU, and GPU in Accelerator directly",
+          "html_url": "https://github.com/huggingface/accelerate/commit/f13c59f91e20beed3e8017de6e6818666e4e46b7"
+        },
+        {
+          "sha": "3ccbd9f7a0fd006411ded1981da2846d0060aec5",
+          "author_date": "2022-06-23T12:55:13Z",
+          "message": "Fix subtle bug in BF16 (#463)\n\n* mixed precision bugfix\r\n\r\n* Use is_tpu_available",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3ccbd9f7a0fd006411ded1981da2846d0060aec5"
+        },
+        {
+          "sha": "799fa935e973079122ed05742b0a7b23e45c1ae3",
+          "author_date": "2022-06-23T12:56:01Z",
+          "message": "Link CI slow runners to the commit (#464)\n\n* Tweak trigger logic to link actions together",
+          "html_url": "https://github.com/huggingface/accelerate/commit/799fa935e973079122ed05742b0a7b23e45c1ae3"
+        },
+        {
+          "sha": "775bc790e77de513e0000f9548c4b9816251497d",
+          "author_date": "2022-06-23T14:06:19Z",
+          "message": "Cleanup CI Warnings (#465)\n\n* Fix named tuple warning\r\n\r\n* Use torch AdamW instead of transformers\r\n\r\n* Make regex string instead of literal",
+          "html_url": "https://github.com/huggingface/accelerate/commit/775bc790e77de513e0000f9548c4b9816251497d"
+        },
+        {
+          "sha": "24be733d8472c986e06aeec8ae8972ffbe61015d",
+          "author_date": "2022-06-23T14:34:45Z",
+          "message": "Expose some is_*_available utils in docs (#466)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/24be733d8472c986e06aeec8ae8972ffbe61015d"
+        },
+        {
+          "sha": "3a5490b06667e15e39a3a2ad7ba1848742f1951e",
+          "author_date": "2022-06-23T18:36:16Z",
+          "message": "Add docbuilder to quality (#468)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3a5490b06667e15e39a3a2ad7ba1848742f1951e"
+        },
+        {
+          "sha": "196856f3574365718b5cc5368090fcb7bfca76d4",
+          "author_date": "2022-06-23T20:34:01Z",
+          "message": "Refactor Utility Documentation (#467)\n\n* Add a utilities doc",
+          "html_url": "https://github.com/huggingface/accelerate/commit/196856f3574365718b5cc5368090fcb7bfca76d4"
+        },
+        {
+          "sha": "9d8ed50f7b378310711e59d10493f9d103be68d8",
+          "author_date": "2022-06-24T16:07:38Z",
+          "message": "Fix when TPU device check is ran (#469)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9d8ed50f7b378310711e59d10493f9d103be68d8"
+        },
+        {
+          "sha": "619ef04f09015b7ed75a4251e609fb70b959d47b",
+          "author_date": "2022-06-24T20:41:09Z",
+          "message": "Dev version",
+          "html_url": "https://github.com/huggingface/accelerate/commit/619ef04f09015b7ed75a4251e609fb70b959d47b"
+        },
+        {
+          "sha": "329209871f3a7d5a89c7d81e4068bc9a91dd2638",
+          "author_date": "2022-06-27T12:40:07Z",
+          "message": "Some typos and cosmetic fixes (#472)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/329209871f3a7d5a89c7d81e4068bc9a91dd2638"
+        },
+        {
+          "sha": "a8eca60d57e8294e666b765b5331770aa0c58893",
+          "author_date": "2022-06-28T13:47:39Z",
+          "message": "Pin datasets for now (#477)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a8eca60d57e8294e666b765b5331770aa0c58893"
+        },
+        {
+          "sha": "bbca2700c78eea9bab3b8e8618f1a4d3ae58bc9b",
+          "author_date": "2022-06-28T14:09:11Z",
+          "message": "Revert \"Pin datasets for now (#477)\" (#478)\n\nThis reverts commit a8eca60d57e8294e666b765b5331770aa0c58893.",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bbca2700c78eea9bab3b8e8618f1a4d3ae58bc9b"
+        },
+        {
+          "sha": "1f96f3cf85be6ebfacc03f991089c7ad7d840dab",
+          "author_date": "2022-06-28T16:29:58Z",
+          "message": "Rm gradient accumulation on TPU (#479)\n\n* Rm gradient accumulation on TPU for now",
+          "html_url": "https://github.com/huggingface/accelerate/commit/1f96f3cf85be6ebfacc03f991089c7ad7d840dab"
+        },
+        {
+          "sha": "4a7bc3bcb7622f402b4e98bb393861de2da565e5",
+          "author_date": "2022-06-28T16:31:41Z",
+          "message": "Use datasets 2.2.0 for now (#481)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4a7bc3bcb7622f402b4e98bb393861de2da565e5"
+        },
+        {
+          "sha": "6ebddcd5e0cb29d1453657896f2e3b1cbf9952d4",
+          "author_date": "2022-07-01T04:30:47Z",
+          "message": "fixing fsdp autowrap functionality (#475)\n\n* fixing fsdp autowrap functionality\n\n* updating version requirements\n\n* update version to latest torch stable version\n\n* quality",
+          "html_url": "https://github.com/huggingface/accelerate/commit/6ebddcd5e0cb29d1453657896f2e3b1cbf9952d4"
+        },
+        {
+          "sha": "deffaba8d6636d17efb1d4b8866ca5eea934659c",
+          "author_date": "2022-07-05T13:19:44Z",
+          "message": "add use_distributed property (#487)\n\n* add distributed property in accelerate_state\r\n\r\n* ensure num_process > 1",
+          "html_url": "https://github.com/huggingface/accelerate/commit/deffaba8d6636d17efb1d4b8866ca5eea934659c"
+        },
+        {
+          "sha": "86ce737d7fc94f8000dbd5e13021d0411bb4204a",
+          "author_date": "2022-07-05T19:49:36Z",
+          "message": "Introduce automatic gradient accumulation wrapper + fix a few test issues (#484)\n\n* Have accelerator handle gradient accumulation\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/86ce737d7fc94f8000dbd5e13021d0411bb4204a"
+        },
+        {
+          "sha": "cfb2a3e23920b4e4f9dfa8b2db0fedbacf23fdd3",
+          "author_date": "2022-07-08T15:46:31Z",
+          "message": "update dataloader wrappers to have `total_batch_size` attribute (#493)\n\n* update dataloader wrappers to have `total_batch_size` attribute\r\n\r\n* fix\r\n\r\n* resolving comments\r\n\r\n* Update src/accelerate/data_loader.py\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n* quality\r\n\r\n* add docstrings\r\n\r\n* Update src/accelerate/data_loader.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n* docstrings iter 2 + quality + minor change in doc\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/cfb2a3e23920b4e4f9dfa8b2db0fedbacf23fdd3"
+        },
+        {
+          "sha": "b20f90ab1702f66cf1572c3e89224510520c0542",
+          "author_date": "2022-07-08T17:41:43Z",
+          "message": "Fix scheduler in gradient accumulation example (#500)\n\n* Fix scheduler in gradient accumulation example\r\n\r\n* Phrase better how the scheduler is stepped during grad accum\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b20f90ab1702f66cf1572c3e89224510520c0542"
+        },
+        {
+          "sha": "a0514dd80978b5783e4fbf4094315363578f7d2a",
+          "author_date": "2022-07-08T18:44:57Z",
+          "message": "SageMaker DP Support (#494)\n\n* SageMaker DP and MP Support\r\n\r\n* fix 😅\r\n\r\n* removing SageMaker MP option",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a0514dd80978b5783e4fbf4094315363578f7d2a"
+        },
+        {
+          "sha": "3c1f97c3865beb9a72c09841a22b67786ae27779",
+          "author_date": "2022-07-12T07:55:52Z",
+          "message": "SageMaker enhancements to allow custom docker image, input channels referring to s3/remote data locations and metrics logging (#504)\n\n* SageMaker DP and MP Support\n\n* fix 😅\n\n* removing SageMaker MP option\n\n* adding support for custom image_uri, data location and metrics",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3c1f97c3865beb9a72c09841a22b67786ae27779"
+        },
+        {
+          "sha": "f5ef120e779d08befe31c969cb72809f347f864d",
+          "author_date": "2022-07-12T14:35:35Z",
+          "message": "Fix DispatchDataLoader length when `split_batches=True` (#509)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/f5ef120e779d08befe31c969cb72809f347f864d"
+        },
+        {
+          "sha": "c7526e9483d8a9a1a665edb5e5c836039a9fbc3f",
+          "author_date": "2022-07-12T15:12:39Z",
+          "message": "Make gradient accumulation work with dispatched dataloaders (#510)\n\n* Make grad accum work with dispatch dl\r\n\r\n* Split print over multiple lines",
+          "html_url": "https://github.com/huggingface/accelerate/commit/c7526e9483d8a9a1a665edb5e5c836039a9fbc3f"
+        },
+        {
+          "sha": "78357f44b3c9d7e5e94e3ecdc32e7a6aca71cf2d",
+          "author_date": "2022-07-12T15:36:45Z",
+          "message": "Add gradient accumulation doc (#511)\n\n* Gradient accumulation doc\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/78357f44b3c9d7e5e94e3ecdc32e7a6aca71cf2d"
+        },
+        {
+          "sha": "ea0d5368bd9115b067df4f7b6547561d210e81af",
+          "author_date": "2022-07-12T19:16:45Z",
+          "message": "Add benchmarks (#506)\n\n* Add benchmarks\r\n\r\n* Oops! Forgot one file\r\n\r\n* Update benchmarks/README.md\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/ea0d5368bd9115b067df4f7b6547561d210e81af"
+        },
+        {
+          "sha": "70ca65a9a1c336fe02800a0bb319ccbf4b9c6d26",
+          "author_date": "2022-07-13T13:19:01Z",
+          "message": "Fix a bug when reduce a tensor. (#513)\n\n* return reduced result\r\n\r\n* update doc for Accelerator.reduce\r\n\r\n* update doc in Accelerator.reduce\r\n\r\n* fix reduce behavior for gpu devices",
+          "html_url": "https://github.com/huggingface/accelerate/commit/70ca65a9a1c336fe02800a0bb319ccbf4b9c6d26"
+        },
+        {
+          "sha": "960fd9d86ab07f86d97b512ccd0d4d67cad23163",
+          "author_date": "2022-07-13T16:46:21Z",
+          "message": "Don't unwrap in save_state() (#489)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/960fd9d86ab07f86d97b512ccd0d4d67cad23163"
+        },
+        {
+          "sha": "7e6593756f3cc769870d76d8c241fee399f6d918",
+          "author_date": "2022-07-13T16:46:36Z",
+          "message": "Add special Parameters modules support (#519)\n\n* Meta init/tensor_to_device logic for Int8 Parameters.\r\n\r\n* add 8 bit support\r\n\r\n* add special modules support\r\n\r\nCo-authored-by: timdettmers <timdettmers@users.noreply.github.com>\r\n\r\n* bad formatting\r\n\r\n* bad formatting\r\n\r\n* restoring the poor lines that were alone!\r\n\r\nCo-authored-by: Tim Dettmers <tim.dettmers@gmail.com>\r\nCo-authored-by: timdettmers <timdettmers@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/7e6593756f3cc769870d76d8c241fee399f6d918"
+        },
+        {
+          "sha": "bb78b04ccec5e8198ded9eef1ae74c529dd2f632",
+          "author_date": "2022-07-14T13:10:48Z",
+          "message": "fixing deepspeed multi-node launcher (#514)\n\n* fixing deepspeed multi-node launcher\r\n\r\n* minor fixes\r\n\r\n* handling env variables for accelerate to correctly work\r\n\r\n* resolving comments",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bb78b04ccec5e8198ded9eef1ae74c529dd2f632"
+        },
+        {
+          "sha": "7abc708be266af30a271ac0c2a3a3b862d999c36",
+          "author_date": "2022-07-15T16:15:45Z",
+          "message": "Fixup all example CI tests and properly fail (#517)\n\n* Clean and make all tests pass",
+          "html_url": "https://github.com/huggingface/accelerate/commit/7abc708be266af30a271ac0c2a3a3b862d999c36"
+        },
+        {
+          "sha": "3eea8ceee0be0b1668301d60b184497ae57db5de",
+          "author_date": "2022-07-15T16:16:00Z",
+          "message": "Warn user if no trackers are installed (#524)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3eea8ceee0be0b1668301d60b184497ae57db5de"
+        },
+        {
+          "sha": "c93b3eb5d714ab9a2743f6f567e2f5599f1f8316",
+          "author_date": "2022-07-18T12:15:58Z",
+          "message": "FSDP integration enhancements and fixes (#522)\n\n* FSDP integration enhancements and fixes\r\n\r\n* bug fixes\r\n\r\n1. fix circular dependency\r\n2. Add model print statement in FSDP example\r\n3. minor fixes\r\n\r\n* removing `always_wrap` as it is rarely useful\r\n\r\n* removing comment\r\n\r\n* resolving comments\r\n\r\n* fsdp fp16 mp uses ShardedGradScaler\r\n\r\n* fix import\r\n\r\n* fix check\r\n\r\n* add exception when class to wrap not found in model\r\n\r\n* adding `FSDP_BACKWARD_PREFETCH`\r\n\r\n* fix",
+          "html_url": "https://github.com/huggingface/accelerate/commit/c93b3eb5d714ab9a2743f6f567e2f5599f1f8316"
+        },
+        {
+          "sha": "be4b74f42fb2e8623e9593fe16602ae894391969",
+          "author_date": "2022-07-18T12:27:58Z",
+          "message": "Relese: v0.11.0",
+          "html_url": "https://github.com/huggingface/accelerate/commit/be4b74f42fb2e8623e9593fe16602ae894391969"
+        },
+        {
+          "sha": "eebeb59a3675624649fe89f1377bf8df76c663df",
+          "author_date": "2022-07-18T12:47:34Z",
+          "message": "Fix accelerate tests command (#528)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/eebeb59a3675624649fe89f1377bf8df76c663df"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.12.0",
@@ -1188,8 +1429,429 @@
     {
       "release": "v0.13.0",
       "previous_release": "v0.12.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "080f4bd7c1507e6c57a234f104b8af228cae5497",
+          "author_date": "2022-08-04T13:04:05Z",
+          "message": "v.0.13.0.dev0",
+          "html_url": "https://github.com/huggingface/accelerate/commit/080f4bd7c1507e6c57a234f104b8af228cae5497"
+        },
+        {
+          "sha": "efc7aeb0644b5e6be5ae0f9d8c3e51372c187199",
+          "author_date": "2022-08-08T16:34:08Z",
+          "message": "Fix typo in docs/index.mdx (#610)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/efc7aeb0644b5e6be5ae0f9d8c3e51372c187199"
+        },
+        {
+          "sha": "a08779f6033b465ea2830e807549caaf5ddc47ca",
+          "author_date": "2022-08-08T18:54:56Z",
+          "message": "Fix DeepSpeed CI (#612)\n\n* Try with integration on makefile",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a08779f6033b465ea2830e807549caaf5ddc47ca"
+        },
+        {
+          "sha": "35e1cd3978e118006f4451393c459d6a02425f88",
+          "author_date": "2022-08-09T12:38:05Z",
+          "message": "Trigger doc build",
+          "html_url": "https://github.com/huggingface/accelerate/commit/35e1cd3978e118006f4451393c459d6a02425f88"
+        },
+        {
+          "sha": "94b8c17b4a2ae1b512b99ff692e4354152b751b4",
+          "author_date": "2022-08-09T15:59:19Z",
+          "message": "Added GANs example to examples (#619)\n\n* Added link to example of Accelerator with GANs\r\n\r\n* Update README.md\r\n\r\n* Update examples/README.md\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/94b8c17b4a2ae1b512b99ff692e4354152b751b4"
+        },
+        {
+          "sha": "4df9010b70479ef59314fa7f10c96c03f556a2b4",
+          "author_date": "2022-08-09T16:32:50Z",
+          "message": "Fix example (#620)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4df9010b70479ef59314fa7f10c96c03f556a2b4"
+        },
+        {
+          "sha": "2656ca619fd074236c4fdf8302eace797106e7fa",
+          "author_date": "2022-08-09T19:00:14Z",
+          "message": "Update README.md (#622)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/2656ca619fd074236c4fdf8302eace797106e7fa"
+        },
+        {
+          "sha": "9fd08d79f9a72973073d2cdef6bf23f367b75d6f",
+          "author_date": "2022-08-10T15:00:46Z",
+          "message": "Fully remove `subprocess` from the multi-gpu launcher (#623)\n\n* Remove one of the subprocesses!",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9fd08d79f9a72973073d2cdef6bf23f367b75d6f"
+        },
+        {
+          "sha": "92341b62334f70a72fe3fc9dae69e75c73ed177d",
+          "author_date": "2022-08-11T15:33:57Z",
+          "message": "M1 mps fixes (#625)\n\n* M1 mps fixes\n\n* Update src/accelerate/state.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/92341b62334f70a72fe3fc9dae69e75c73ed177d"
+        },
+        {
+          "sha": "010aa93cbc4bd9ffc29d50e60778f09eb1c02c02",
+          "author_date": "2022-08-11T16:56:33Z",
+          "message": "Fix multi-node issues and simplify param logic (#627)\n\n* Less hacky version for args, fix multinode param",
+          "html_url": "https://github.com/huggingface/accelerate/commit/010aa93cbc4bd9ffc29d50e60778f09eb1c02c02"
+        },
+        {
+          "sha": "5020788db8a2552d6d49077c009ef5339b9a70b3",
+          "author_date": "2022-08-11T16:59:55Z",
+          "message": "Integrate Rich into Accelerate (#613)\n\nPretty error logs are here 🤗",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5020788db8a2552d6d49077c009ef5339b9a70b3"
+        },
+        {
+          "sha": "cd46dc2f4f772dcad7a047954f19ef8d49116fe8",
+          "author_date": "2022-08-12T12:49:18Z",
+          "message": "update MPS support docs (#629)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/cd46dc2f4f772dcad7a047954f19ef8d49116fe8"
+        },
+        {
+          "sha": "e31d8ecaf14be537784458849bfa353f99cfb8ee",
+          "author_date": "2022-08-12T16:02:22Z",
+          "message": "minor tracker fixes for complete* examples (#630)\n\n* minor tracker fixes for complete* examples\r\n\r\n* state repr minor fix",
+          "html_url": "https://github.com/huggingface/accelerate/commit/e31d8ecaf14be537784458849bfa353f99cfb8ee"
+        },
+        {
+          "sha": "55907ef1fbb065d2402c572682f458e41748bc14",
+          "author_date": "2022-08-12T17:06:22Z",
+          "message": "Use torchrun for multinode (#631)\n\n* Distrib launch with config\r\n\r\n* Add param for rdvz",
+          "html_url": "https://github.com/huggingface/accelerate/commit/55907ef1fbb065d2402c572682f458e41748bc14"
+        },
+        {
+          "sha": "b0f8189d34fa42821ca041e2cba161db864c76b5",
+          "author_date": "2022-08-12T19:21:55Z",
+          "message": "Put back in place the guard (#634)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b0f8189d34fa42821ca041e2cba161db864c76b5"
+        },
+        {
+          "sha": "a3d94916a87d07471865261d015128870f513c38",
+          "author_date": "2022-08-19T13:20:33Z",
+          "message": "make init_trackers to launch on main process (#642)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a3d94916a87d07471865261d015128870f513c38"
+        },
+        {
+          "sha": "36420f53f394ee2c818619f13f700551cb9a96c3",
+          "author_date": "2022-08-20T11:08:22Z",
+          "message": "remove check for main process for trackers initialization (#643)\n\n* remove check for main process for trackers initialization\r\n\r\n* removed is_main_process check for trackers initialization",
+          "html_url": "https://github.com/huggingface/accelerate/commit/36420f53f394ee2c818619f13f700551cb9a96c3"
+        },
+        {
+          "sha": "4484438626a2ad97735ac4d712a310d19b143434",
+          "author_date": "2022-08-20T12:15:56Z",
+          "message": "fix link (#645)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4484438626a2ad97735ac4d712a310d19b143434"
+        },
+        {
+          "sha": "469b61e0bfdb2dc3baa4df52e4e82fb6a8e48cfd",
+          "author_date": "2022-08-20T19:30:59Z",
+          "message": "Add static_graph arg to DistributedDataParallelKwargs. (#637)\n\n* Add static_graph arg to DistributedDataParallelKwargs.\r\n\r\nsupported by https://pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html\r\n\r\nThis is particularly useful when using gradient checkpointing\r\n\r\nSee https://discuss.pytorch.org/t/ddp-and-gradient-checkpointing/132244/3 for more details\r\n\r\n* Add 1.11 warning for static graph argument.",
+          "html_url": "https://github.com/huggingface/accelerate/commit/469b61e0bfdb2dc3baa4df52e4e82fb6a8e48cfd"
+        },
+        {
+          "sha": "d0f5f4a630bda69dcf89cc6d55f93c71f2af7a0d",
+          "author_date": "2022-08-26T10:22:07Z",
+          "message": "Small nits to grad accum docs (#656)\n\n* Small nits to docs\r\n\r\n* Be explicit on one vs other\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d0f5f4a630bda69dcf89cc6d55f93c71f2af7a0d"
+        },
+        {
+          "sha": "cb54e1023e17763fa7f11d1de1307f85ba8b6c31",
+          "author_date": "2022-08-29T15:14:44Z",
+          "message": "Saving hyperparams in yaml file for Tensorboard for #521 (#657)\n\n* Saving hyperparams in yaml file for Tensorboard\r\n\r\n* Saving yaml file in logging dir\r\n\r\n* Changing hardcoded path\r\n\r\n* Adding try/catch, cleaning path name\r\n\r\n* Raise error\r\n\r\n* Updating path name\r\n\r\n* Path create",
+          "html_url": "https://github.com/huggingface/accelerate/commit/cb54e1023e17763fa7f11d1de1307f85ba8b6c31"
+        },
+        {
+          "sha": "00f47d035e412206d3fa6f40909ed311f2da3898",
+          "author_date": "2022-08-31T15:29:35Z",
+          "message": "Use debug for loggers (#655)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/00f47d035e412206d3fa6f40909ed311f2da3898"
+        },
+        {
+          "sha": "5e5148852bdcd689af55785366ffd2743fb75285",
+          "author_date": "2022-09-01T01:54:18Z",
+          "message": "Improve docstrings more (#666)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5e5148852bdcd689af55785366ffd2743fb75285"
+        },
+        {
+          "sha": "efa8e7f89bf6345353661a713b8752e06e6b3d77",
+          "author_date": "2022-09-01T02:49:57Z",
+          "message": "accelerate bibtex (#660)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/efa8e7f89bf6345353661a713b8752e06e6b3d77"
+        },
+        {
+          "sha": "52c2b1c24455cc55afc43a7270888687669f7055",
+          "author_date": "2022-09-01T14:38:38Z",
+          "message": "Cache torch_tpu check (#670)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/52c2b1c24455cc55afc43a7270888687669f7055"
+        },
+        {
+          "sha": "cf1e8dce750635543cd64d0562af76aac1c7d2a0",
+          "author_date": "2022-09-02T14:34:46Z",
+          "message": "Manim animation of big model inference (#671)\n\n* Manim animation of big model inference\r\n\r\n* Make into big section, not small\r\n\r\n* Revert back to old style of headers",
+          "html_url": "https://github.com/huggingface/accelerate/commit/cf1e8dce750635543cd64d0562af76aac1c7d2a0"
+        },
+        {
+          "sha": "44be28fbeff684a62d02bffa69a65a337d70d424",
+          "author_date": "2022-09-02T19:04:49Z",
+          "message": "Fix multi-node issues from launch (#672)\n\n* Use different bits based on cloud vs non\r\n\r\n* rdvz_backend fix",
+          "html_url": "https://github.com/huggingface/accelerate/commit/44be28fbeff684a62d02bffa69a65a337d70d424"
+        },
+        {
+          "sha": "a2a369e0263441699e5aa99f11e445db61e06cb2",
+          "author_date": "2022-09-02T19:43:18Z",
+          "message": "Make rich an optional dep (#673)\n\n* Make rich an optional dep\r\n\r\n* lagging import fix",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a2a369e0263441699e5aa99f11e445db61e06cb2"
+        },
+        {
+          "sha": "c9a88a8e064657761ada8677fba9c41279c46c21",
+          "author_date": "2022-09-02T20:39:38Z",
+          "message": "Add aim tracker for accelerate (#649)\n\n* Add aim tracker for accelerate\r\n\r\n* Use close and name arg specifically\r\n\r\n\r\n* Fix nits",
+          "html_url": "https://github.com/huggingface/accelerate/commit/c9a88a8e064657761ada8677fba9c41279c46c21"
+        },
+        {
+          "sha": "3ab46514c993d7545d57c9d545b559ab12a92290",
+          "author_date": "2022-09-02T20:48:23Z",
+          "message": "Specify local network on multinode (#674)\n\n* Specify local\r\n\r\n* Update src/accelerate/commands/config/cluster.py\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3ab46514c993d7545d57c9d545b559ab12a92290"
+        },
+        {
+          "sha": "60d6807c36e968282221c500927079d752da8662",
+          "author_date": "2022-09-02T20:56:35Z",
+          "message": "Test for min torch version + fix all issues (#638)\n\n* Test for min torch\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/60d6807c36e968282221c500927079d752da8662"
+        },
+        {
+          "sha": "200546c5d3d4b221ce271dc4a0fab6959be32fbd",
+          "author_date": "2022-09-06T12:00:35Z",
+          "message": "deepspeed enhancements and fixes (#676)\n\n* deepspeed enhancement and fixes\r\n\r\n* refactor code\r\n\r\n* :bug: fix\r\n\r\n* 😅",
+          "html_url": "https://github.com/huggingface/accelerate/commit/200546c5d3d4b221ce271dc4a0fab6959be32fbd"
+        },
+        {
+          "sha": "4400eb90b29638deec117f95fecdcb79bd7684cb",
+          "author_date": "2022-09-06T12:06:19Z",
+          "message": "DeepSpeed launcher related changes (#626)\n\n* launcher related changes + minor fixes\r\n\r\n* removing minor fixes\r\n\r\n* remove minor change\r\n\r\n* deepspeed multinode standard launcher\r\n\r\n* undo\r\n\r\n* fixing the multi-node standard launcher",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4400eb90b29638deec117f95fecdcb79bd7684cb"
+        },
+        {
+          "sha": "4274a419efd76e586b532dfa32ad50dc8296bb58",
+          "author_date": "2022-09-06T14:54:16Z",
+          "message": "adding torchrun elastic params (#680)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4274a419efd76e586b532dfa32ad50dc8296bb58"
+        },
+        {
+          "sha": "c69659ce39fe8c88e16f4394706195202b72b2e7",
+          "author_date": "2022-09-06T16:06:00Z",
+          "message": ":bug: fix (#683)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/c69659ce39fe8c88e16f4394706195202b72b2e7"
+        },
+        {
+          "sha": "2b08b27bede9285e966823fc63e7814bf396c9ce",
+          "author_date": "2022-09-07T11:44:36Z",
+          "message": "Fix skip in dispatch dataloaders (#682)\n\n* Fix skip in dispatch dataloaders\r\n\r\n* Remove skip altogether\r\n\r\n* Fix last occurence",
+          "html_url": "https://github.com/huggingface/accelerate/commit/2b08b27bede9285e966823fc63e7814bf396c9ce"
+        },
+        {
+          "sha": "98823de572246d68cb31db94b60f7328ae9d551e",
+          "author_date": "2022-09-07T17:13:15Z",
+          "message": "Clean up DispatchDataloader a bit more (#686)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/98823de572246d68cb31db94b60f7328ae9d551e"
+        },
+        {
+          "sha": "293757d2aed6bcc58f95685ee8c038cc8b730417",
+          "author_date": "2022-09-09T12:04:52Z",
+          "message": "rng state sync for FSDP (#688)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/293757d2aed6bcc58f95685ee8c038cc8b730417"
+        },
+        {
+          "sha": "bc7007435062496a59c2e6d9048262b83cc9fef1",
+          "author_date": "2022-09-09T15:49:19Z",
+          "message": "Fix DataLoader with samplers that are batch samplers (#687)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bc7007435062496a59c2e6d9048262b83cc9fef1"
+        },
+        {
+          "sha": "84444658a62c917861dc9b1586332f9e855ef649",
+          "author_date": "2022-09-12T11:48:49Z",
+          "message": "fixing support for Apple Silicon GPU in `notebook_launcher` (#695)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/84444658a62c917861dc9b1586332f9e855ef649"
+        },
+        {
+          "sha": "8d275977c3034e0aeca862c9279889b0d12b6bfe",
+          "author_date": "2022-09-12T14:46:06Z",
+          "message": "fixing rng sync when using custom sampler and batch_sampler (#696)\n\n* fixing rng sync when using custom sampler and batch_sampler\r\n\r\n* addressing comments\r\n\r\n* :sparkles:\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/8d275977c3034e0aeca862c9279889b0d12b6bfe"
+        },
+        {
+          "sha": "4f0a1102d1ce747272ec312a5ac0cbddbe9507a8",
+          "author_date": "2022-09-14T16:14:51Z",
+          "message": "Improve `init_empty_weights` to override tensor constructor (#699)\n\n* Prevent module constructor from building tensor in cpu and then move it to meta\r\n\r\n* Patch torch.load\r\n\r\n* Maybe the hack to override torch.load is too dangerous?\r\n\r\n* Make style\r\n\r\n* No need to override torch.load as one can just load from config intead\r\n\r\n* No sure why there's a include_buffers argument, but we need to override tensor constructor only when include_buffers argument is True",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4f0a1102d1ce747272ec312a5ac0cbddbe9507a8"
+        },
+        {
+          "sha": "1044c30cb1b8a7802b2381f3e7b1f894ba2a9106",
+          "author_date": "2022-09-14T19:07:03Z",
+          "message": "override DeepSpeed `grad_acc_steps` from `accelerator` obj (#698)\n\n* override DeepSpeed `grad_acc_steps` from `accelerator` obj\r\n\r\n* resolving comment",
+          "html_url": "https://github.com/huggingface/accelerate/commit/1044c30cb1b8a7802b2381f3e7b1f894ba2a9106"
+        },
+        {
+          "sha": "9dfc6da9ad99b20164dff66d0e3e04cbe0b79711",
+          "author_date": "2022-09-16T11:34:17Z",
+          "message": "[doc] Fix 404'd link in memory usage guides (#702)\n\n* Fix 404'd link in memory usage guides\r\n\r\n* Add a dot to the final sentence",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9dfc6da9ad99b20164dff66d0e3e04cbe0b79711"
+        },
+        {
+          "sha": "6dc429f6f748600c4319e438f6bdaa22261c4f6a",
+          "author_date": "2022-09-19T21:24:46Z",
+          "message": "Add in report generation for test failures and make fail-fast false (#703)\n\n* Add logging",
+          "html_url": "https://github.com/huggingface/accelerate/commit/6dc429f6f748600c4319e438f6bdaa22261c4f6a"
+        },
+        {
+          "sha": "efb33d67eae6d468abca544219e611dd6ead768a",
+          "author_date": "2022-09-20T14:10:58Z",
+          "message": "Update runners with report structure, adjust env variable (#704)\n\n* Fixup rest of the runners\r\n\r\n* Install pytest-reportlog\r\n\r\n* Use more explicit env var\r\n\r\n* Fixup",
+          "html_url": "https://github.com/huggingface/accelerate/commit/efb33d67eae6d468abca544219e611dd6ead768a"
+        },
+        {
+          "sha": "293a17b4f771149cd2659d6fb4217e03e51c0fd3",
+          "author_date": "2022-09-21T19:57:36Z",
+          "message": "docs: examples readability improvements (#709)\n\nSigned-off-by: Ryan Russell <git@ryanrussell.org>\r\n\r\nSigned-off-by: Ryan Russell <git@ryanrussell.org>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/293a17b4f771149cd2659d6fb4217e03e51c0fd3"
+        },
+        {
+          "sha": "9ba82f9ca4e6fd7edd185341233742bbb3490c75",
+          "author_date": "2022-09-21T20:26:05Z",
+          "message": "docs: `utils` readability fixups (#711)\n\nSigned-off-by: Ryan Russell <git@ryanrussell.org>\r\n\r\nSigned-off-by: Ryan Russell <git@ryanrussell.org>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9ba82f9ca4e6fd7edd185341233742bbb3490c75"
+        },
+        {
+          "sha": "a5d027805586549789cf39b9ae4969cb95d086b2",
+          "author_date": "2022-09-21T20:26:35Z",
+          "message": "refactor(test_tracking): `key_occurrence` readability fixup (#710)\n\nSigned-off-by: Ryan Russell <git@ryanrussell.org>\r\n\r\nSigned-off-by: Ryan Russell <git@ryanrussell.org>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a5d027805586549789cf39b9ae4969cb95d086b2"
+        },
+        {
+          "sha": "82a7afdde2fabcd0fb3a10e07af4bf7f3082794c",
+          "author_date": "2022-09-21T20:49:41Z",
+          "message": "docs: `hooks` readability improvements (#712)\n\nSigned-off-by: Ryan Russell <git@ryanrussell.org>\r\n\r\nSigned-off-by: Ryan Russell <git@ryanrussell.org>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/82a7afdde2fabcd0fb3a10e07af4bf7f3082794c"
+        },
+        {
+          "sha": "6a39d010d76fe8863cc8ab7ceceef0be4d2ab9f2",
+          "author_date": "2022-09-22T05:26:46Z",
+          "message": "sagemaker fixes and improvements (#708)\n\n* adding aws sagemaker examples to examples readme\r\n\r\n* refactoring and correcting documentation",
+          "html_url": "https://github.com/huggingface/accelerate/commit/6a39d010d76fe8863cc8ab7ceceef0be4d2ab9f2"
+        },
+        {
+          "sha": "8b16276a41857e25f8e0d0cfe45eb69c60134add",
+          "author_date": "2022-09-22T13:36:05Z",
+          "message": "refactor(accelerate): readability improvements (#713)\n\n* refactor(accelerate): readability improvements\r\n\r\nSigned-off-by: Ryan Russell <git@ryanrussell.org>\r\n\r\n* docs: `all` fixup\r\n\r\nSigned-off-by: Ryan Russell <git@ryanrussell.org>\r\n\r\n* Style\r\n\r\nSigned-off-by: Ryan Russell <git@ryanrussell.org>\r\nCo-authored-by: Sylvain Gugger <Sylvain.gugger@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/8b16276a41857e25f8e0d0cfe45eb69c60134add"
+        },
+        {
+          "sha": "56ce94dc2998d2a3347e3ca1e93e59f51e85854d",
+          "author_date": "2022-09-23T14:20:59Z",
+          "message": "More docstring nits (#715)\n\n* More docstring examples + nits\r\n\r\n* Just use module since everything is wrapped\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/56ce94dc2998d2a3347e3ca1e93e59f51e85854d"
+        },
+        {
+          "sha": "b67b760f66559d8bd17d358e06a238f4f5109b0e",
+          "author_date": "2022-09-23T15:31:15Z",
+          "message": "Allow custom device placements for different objects (#716)\n\n* Allow custom device placements for different objects\r\n\r\n* Update src/accelerate/accelerator.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n* Style\r\n\r\n* Make doc-builder happy\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b67b760f66559d8bd17d358e06a238f4f5109b0e"
+        },
+        {
+          "sha": "6d038e19a168f5a270bb4c535023255a0160fc10",
+          "author_date": "2022-09-26T18:19:29Z",
+          "message": "Specify gradients in model preparation (#722)\n\n* Specify when a model doesn't need to be prepared more",
+          "html_url": "https://github.com/huggingface/accelerate/commit/6d038e19a168f5a270bb4c535023255a0160fc10"
+        },
+        {
+          "sha": "40bd4aa5ce894eda092d2e2a9660a224a94cbb94",
+          "author_date": "2022-09-27T16:47:48Z",
+          "message": "Fix regression issue (#724)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/40bd4aa5ce894eda092d2e2a9660a224a94cbb94"
+        },
+        {
+          "sha": "d21c21331859c47466472e9a50d5cb0cb381c3a0",
+          "author_date": "2022-09-27T21:09:51Z",
+          "message": "Fix default for num processes (#726)\n\n* Fix default for num processes\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d21c21331859c47466472e9a50d5cb0cb381c3a0"
+        },
+        {
+          "sha": "68fad169e69e05ca1b965aa2c8ec240f0134b99b",
+          "author_date": "2022-09-28T10:58:00Z",
+          "message": "Build and Release docker images on a release (#725)\n\n* Docker on release\r\n\r\n* Releases\r\n\r\n* FOR TESTING, REVERT ONCE DONE\r\n\r\n* With checkout\r\n\r\n* Revert, works!\r\n\r\n* published\r\n\r\n* Accidental regression",
+          "html_url": "https://github.com/huggingface/accelerate/commit/68fad169e69e05ca1b965aa2c8ec240f0134b99b"
+        },
+        {
+          "sha": "2088172c9f30a81fb04aecaa2a53452444e48150",
+          "author_date": "2022-09-28T15:53:14Z",
+          "message": "Make running tests more efficient (#611)\n\n* Restructure actions and make running tests more efficient\r\n\r\n* Try with source code adjustment\r\n\r\n* First make sure they work\r\n\r\n* Don't move\r\n\r\n* Local workflows reference\r\n\r\n* Keep it as a step\r\n\r\n* Try changing a line\r\n\r\n* Try not using tertiary\r\n\r\n* Fix test\r\n\r\n* Make tests wait\r\n\r\n* Remove linechange\r\n\r\n* Include and run based on new setup\r\n\r\n* Try with removing workflow\r\n\r\n* Re-add in, it works!\r\n\r\n* Rename for clarity",
+          "html_url": "https://github.com/huggingface/accelerate/commit/2088172c9f30a81fb04aecaa2a53452444e48150"
+        },
+        {
+          "sha": "f3c39b4c9c82b5ad936af0ea58ede56523ae02eb",
+          "author_date": "2022-09-28T16:00:22Z",
+          "message": "Fix old naming (#727)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/f3c39b4c9c82b5ad936af0ea58ede56523ae02eb"
+        },
+        {
+          "sha": "9e4fe78b95cafc0e4f79dda004aabc7e4953568c",
+          "author_date": "2022-09-28T20:35:36Z",
+          "message": "Fix issue with one-cycle logic (#728)\n\n* Fixed!\r\n\r\n* Fix and write tests",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9e4fe78b95cafc0e4f79dda004aabc7e4953568c"
+        },
+        {
+          "sha": "870a7badc496159808929be77a8ab4a3525fa956",
+          "author_date": "2022-09-30T19:35:54Z",
+          "message": "Allow for GPU-ID specification on CLI (#732)\n\n* Specifiy GPU ids on CLI\r\n\r\n* Configurable gpu-ids\r\n\r\n* Expand to deepspeed\r\n\r\n* all\r\n\r\n* Fix nit\r\n\r\n* Fix typo in docs\r\n\r\n* futher tweaks\r\n\r\n* Further tweaks\r\n\r\n* Change for mps specifically",
+          "html_url": "https://github.com/huggingface/accelerate/commit/870a7badc496159808929be77a8ab4a3525fa956"
+        },
+        {
+          "sha": "6ab88253cc8992a336b0e8dd39c8502e84d8f2dc",
+          "author_date": "2022-10-03T16:53:27Z",
+          "message": "Remove auto-bug label in issue template (#735)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/6ab88253cc8992a336b0e8dd39c8502e84d8f2dc"
+        },
+        {
+          "sha": "9eb9aeefaf694ddeaa2e6db3e0c74a2a14c5ad5b",
+          "author_date": "2022-10-03T17:55:13Z",
+          "message": "Add a tutorial on proper benchmarking (#734)\n\n* Performance tut\r\n\r\n* toc\r\n\r\n* Apply suggestions from code review - Tips will be the death of me\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9eb9aeefaf694ddeaa2e6db3e0c74a2a14c5ad5b"
+        },
+        {
+          "sha": "e5c9b4f2ce15e0bb8db4cb37adabb59bf65328f4",
+          "author_date": "2022-10-03T18:44:55Z",
+          "message": "Add an example zoo to the documentation (#737)\n\n* Training zoo\r\n\r\n* Reword",
+          "html_url": "https://github.com/huggingface/accelerate/commit/e5c9b4f2ce15e0bb8db4cb37adabb59bf65328f4"
+        },
+        {
+          "sha": "ffca93b4a92b01509e63d9b324ff7dea6ddd15f9",
+          "author_date": "2022-10-04T14:23:01Z",
+          "message": "trlx (#738)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/ffca93b4a92b01509e63d9b324ff7dea6ddd15f9"
+        },
+        {
+          "sha": "b437b8b8935a1c9ee21bfc4dc3ebac1a5690fc8e",
+          "author_date": "2022-10-04T19:55:40Z",
+          "message": "Fix memory leak (#739)\n\n* Fix memory example\r\n\r\n* Include update to docs\r\n\r\n* batch size",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b437b8b8935a1c9ee21bfc4dc3ebac1a5690fc8e"
+        },
+        {
+          "sha": "a75a56f1c2c0b1f84cdbe92fd4d7fdb8f4d672ed",
+          "author_date": "2022-10-04T19:55:46Z",
+          "message": "Include examples for CI (#740)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a75a56f1c2c0b1f84cdbe92fd4d7fdb8f4d672ed"
+        },
+        {
+          "sha": "5fff81bac81f7e3447bda7db0645f9e55703e764",
+          "author_date": "2022-10-05T15:42:08Z",
+          "message": "Auto grad accum example (#742)\n\n* Auto grad accum example\r\n\r\n* Include auto grad accum to exlcusion list\r\n\r\n* Typo fix calculate -> calculate\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5fff81bac81f7e3447bda7db0645f9e55703e764"
+        },
+        {
+          "sha": "a54cd0abd8f1f1f5e0f64ac030427c30760309d8",
+          "author_date": "2022-10-05T18:24:25Z",
+          "message": "Release: v0.13.0",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a54cd0abd8f1f1f5e0f64ac030427c30760309d8"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.13.1",
@@ -1224,8 +1886,441 @@
     {
       "release": "v0.17.0",
       "previous_release": "v0.16.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c0caa068bab67890882d9222011dbdcc0d5e78cd",
+          "author_date": "2023-01-31T17:15:08Z",
+          "message": "v0.17.0.dev0",
+          "html_url": "https://github.com/huggingface/accelerate/commit/c0caa068bab67890882d9222011dbdcc0d5e78cd"
+        },
+        {
+          "sha": "57cbcab45ba06e6213556fc8dfddb7fb4c218d72",
+          "author_date": "2023-02-01T16:19:01Z",
+          "message": "Deepspeed param check (#1015)\n\n* Deepspeed param check\r\n\r\nOn line 146, in set_module_tensor_to_device(), adding a check for deepspeed parameters in the kwargs object, and not passing them solved the error I was receiving regarding the ds parameters not being recognized by torch.nn.Parameter.__new__(). With my admittedly limited knowledge, it seemed to me that the kwargs are not necessary to pass in the case of using Deepspeed+ Accelerate, and this bears out since the model loaded fine with zero-3 cpu parameter and buffer offload on a single-GPU machine, and performed perfectly comprehensible inference outputs (slowly) using the GPU.\r\n\r\nThe error, in my case, was occurring here as called from accelerator's dispatch_model().\r\n\r\nPlease let me know if my thinking on this is in anyway wrong! This fix worked for me. \r\n\r\n `transformers` version: 4.26.0\r\n- Platform: Linux-5.15.83.1-microsoft-standard-WSL2-x86_64-with-glibc2.35\r\n- Python version: 3.10.6\r\n- Huggingface_hub version: 0.11.1\r\n- PyTorch version (GPU?): 1.13.1+cu117 (True)\r\n- Tensorflow version (GPU?): not installed (NA)\r\n- Flax version (CPU?/GPU?/TPU?): not installed (NA)\r\n- Jax version: not installed\r\n- JaxLib version: not installed\r\n- Using GPU in script?: Yes\r\n- Using distributed or parallel set-up in script?: Yes and no (zero-3 on single machine)\r\n\r\n* 146-150 check for Int8 arguments\r\n\r\n146-150 check for Int8 arguments. If found, send the args as well as the value.\r\n\r\n* Used make style on branch\r\n\r\n* Used make style with correct versions of black and flake8 on branch",
+          "html_url": "https://github.com/huggingface/accelerate/commit/57cbcab45ba06e6213556fc8dfddb7fb4c218d72"
+        },
+        {
+          "sha": "587eea9bb510cc4af044e7f095c0ce0ce9bd1e77",
+          "author_date": "2023-02-01T17:57:15Z",
+          "message": "enabling `mps` device by default and removing related config (#1030)\n\n* enabling `mps` device by default and removing related config\r\n\r\n* address comments\r\n\r\n* fix tests",
+          "html_url": "https://github.com/huggingface/accelerate/commit/587eea9bb510cc4af044e7f095c0ce0ce9bd1e77"
+        },
+        {
+          "sha": "4e5cc0c6b9c28fc569bfc70dd0508225d187fbf9",
+          "author_date": "2023-02-02T16:12:30Z",
+          "message": "fix: links to gradient synchronization (#1035)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4e5cc0c6b9c28fc569bfc70dd0508225d187fbf9"
+        },
+        {
+          "sha": "e89131c92d23fe7ffab597f8e7fc3a10ba169cba",
+          "author_date": "2023-02-02T19:01:57Z",
+          "message": "do not scale gradient in bf16 mode (#1036)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/e89131c92d23fe7ffab597f8e7fc3a10ba169cba"
+        },
+        {
+          "sha": "4be70838e7858c7dc02d37f163c79a72d49fa5c5",
+          "author_date": "2023-02-03T15:39:19Z",
+          "message": "Pass keywords arguments of backward function deeper to DeepSpeed (#1037)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4be70838e7858c7dc02d37f163c79a72d49fa5c5"
+        },
+        {
+          "sha": "a60640d4fade41dd2830ebb19e2d718ad2b58a80",
+          "author_date": "2023-02-06T15:44:33Z",
+          "message": "Refactor process executors to be in AcceleratorState (#1039)\n\n* Start of refactor\r\n\r\n* Fix yield\r\n\r\n* Print\r\n\r\n* Add test",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a60640d4fade41dd2830ebb19e2d718ad2b58a80"
+        },
+        {
+          "sha": "2b981c094248c6932d528da4acc95e6d794a82ef",
+          "author_date": "2023-02-06T15:44:58Z",
+          "message": "Add daily slack notifier for nightlies (#1042)\n\n* Update log_reports to send to slack",
+          "html_url": "https://github.com/huggingface/accelerate/commit/2b981c094248c6932d528da4acc95e6d794a82ef"
+        },
+        {
+          "sha": "76c41f0df74a313fbede52fedfaece38144dcce9",
+          "author_date": "2023-02-06T18:36:18Z",
+          "message": "Make sure direct parameters are properly set on device (#1043)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/76c41f0df74a313fbede52fedfaece38144dcce9"
+        },
+        {
+          "sha": "71e81bab00d2684d8588d38fb55e9637c234584d",
+          "author_date": "2023-02-07T18:09:27Z",
+          "message": "Add `cpu_offload_with_hook` (#1045)\n\n* Add cpu offload with hook\r\n\r\n* Style\r\n\r\n* add to init\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>\r\n\r\n* Add documentation\r\n\r\n* Add tests\r\n\r\n---------\r\n\r\nCo-authored-by: Patrick von Platen <patrick.v.platen@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/71e81bab00d2684d8588d38fb55e9637c234584d"
+        },
+        {
+          "sha": "5002e5670498a814548690b4168e0984cde54904",
+          "author_date": "2023-02-07T18:34:05Z",
+          "message": "Update quality tools to 2023 (#1046)\n\n* Setup 2023 tooling for quality\r\n\r\n* Result of styling\r\n\r\n* Simplify inits and remove isort and flake8 from doc\r\n\r\n* Puts back isort skip flag",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5002e5670498a814548690b4168e0984cde54904"
+        },
+        {
+          "sha": "978dfc38ea91aae645d780d393d5bc0e33ac8306",
+          "author_date": "2023-02-07T18:48:28Z",
+          "message": "Load tensors directly on device (#1028)\n\n* Load tensors directly on device\r\n\r\n* Update src/accelerate/utils/modeling.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/978dfc38ea91aae645d780d393d5bc0e33ac8306"
+        },
+        {
+          "sha": "60460ae1af32d82552a43d4201a1f9ef6454c1a7",
+          "author_date": "2023-02-08T14:23:13Z",
+          "message": "Fix cpu_offload_with_hook code snippet (#1047)\n\n* Fix cpu_offload_with_hook code snippet\r\n\r\n* Make model explicit for clarity.",
+          "html_url": "https://github.com/huggingface/accelerate/commit/60460ae1af32d82552a43d4201a1f9ef6454c1a7"
+        },
+        {
+          "sha": "8951195a151797c7a3a4f18fe8ddafaf683e6b08",
+          "author_date": "2023-02-09T18:02:14Z",
+          "message": "Introduce TPU Pod launching to `accelerate launch` (#1049)\n\n* Working version -- run one more test\r\n\r\n* commands\r\n\r\n* Undo commands\r\n\r\n* cli\r\n\r\n* Undo config args\r\n\r\n* cluster\r\n\r\n* Command\r\n\r\n* use_alpha\r\n\r\n* Fully working now!\r\n\r\n* Fix log\r\n\r\n* Wrong alpha storing",
+          "html_url": "https://github.com/huggingface/accelerate/commit/8951195a151797c7a3a4f18fe8ddafaf683e6b08"
+        },
+        {
+          "sha": "028b5816c8a3fca5aaa343d07798627a063a4976",
+          "author_date": "2023-02-09T19:44:09Z",
+          "message": "Use create_task (#1052)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/028b5816c8a3fca5aaa343d07798627a063a4976"
+        },
+        {
+          "sha": "cb993d7d8ce1c9ddc6ae77bc06e9695d96c5f20a",
+          "author_date": "2023-02-09T20:00:57Z",
+          "message": "Fix args by adding in the defaults (#1053)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/cb993d7d8ce1c9ddc6ae77bc06e9695d96c5f20a"
+        },
+        {
+          "sha": "bd091a605b778f75320783b32b58e12facadf3df",
+          "author_date": "2023-02-13T14:53:40Z",
+          "message": "deepspeed `hidden_size` auto value default fixes (#1060)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bd091a605b778f75320783b32b58e12facadf3df"
+        },
+        {
+          "sha": "68d809256c4461b35cd40ff9ab4008483c35a427",
+          "author_date": "2023-02-13T15:23:39Z",
+          "message": "Introduce PartialState (#1055)\n\n* Try again\r\n\r\n* Try off multi-gpu\r\n\r\n* This is a test\r\n\r\n* Finished now\r\n\r\n* PartialState\r\n\r\n* Update logger to use new API\r\n\r\n* backend\r\n\r\n* Working tests\r\n\r\n* Working again!\r\n\r\n* Raise err instead\r\n\r\n* Better error\r\n\r\n* Update src/accelerate/state.py\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/68d809256c4461b35cd40ff9ab4008483c35a427"
+        },
+        {
+          "sha": "69e4c3c54da3201eda288b500d138761e7a5221c",
+          "author_date": "2023-02-13T15:38:33Z",
+          "message": "Flag for deprecation (#1061)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/69e4c3c54da3201eda288b500d138761e7a5221c"
+        },
+        {
+          "sha": "b4388b45dc17e675ffa35769478d3830991d68f4",
+          "author_date": "2023-02-13T15:58:24Z",
+          "message": "Try with this (#1062)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b4388b45dc17e675ffa35769478d3830991d68f4"
+        },
+        {
+          "sha": "2694a6c63ad37fc02531dd2f7ca6ea5ede0c44a2",
+          "author_date": "2023-02-13T18:28:55Z",
+          "message": "Update integrations (#1063)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/2694a6c63ad37fc02531dd2f7ca6ea5ede0c44a2"
+        },
+        {
+          "sha": "ca615f879ff7bdaaf947647af33b7c28a99f1fc2",
+          "author_date": "2023-02-13T21:08:56Z",
+          "message": "Swap utils over to use PartialState (#1065)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/ca615f879ff7bdaaf947647af33b7c28a99f1fc2"
+        },
+        {
+          "sha": "04103090cc1727b9916e2a83170fb873ee321524",
+          "author_date": "2023-02-14T11:09:47Z",
+          "message": "update fsdp docs and removing deepspeed version pinning (#1059)\n\n* update fsdp docs and removing deepspeed version pinning\r\n\r\n* address comments",
+          "html_url": "https://github.com/huggingface/accelerate/commit/04103090cc1727b9916e2a83170fb873ee321524"
+        },
+        {
+          "sha": "5a2cb3b5e3ca3c668e199eddb2ac6ad69666682b",
+          "author_date": "2023-02-14T18:36:33Z",
+          "message": "Fix/implement process-execution decorators on the Accelerator (#1070)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5a2cb3b5e3ca3c668e199eddb2ac6ad69666682b"
+        },
+        {
+          "sha": "4e1816d7ecacafd3c936153cca8deb95ccf1935d",
+          "author_date": "2023-02-14T19:50:06Z",
+          "message": "Refactor state and make `PartialState` first class citizen  (#1071)\n\n* Refactor into State and expose\r\n\r\n* Make PartialState mainstream!",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4e1816d7ecacafd3c936153cca8deb95ccf1935d"
+        },
+        {
+          "sha": "9c2e704791b1a30b784629f620a75debf9c38040",
+          "author_date": "2023-02-15T14:10:20Z",
+          "message": "Add error if passed --config_file does not exist (#1074)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9c2e704791b1a30b784629f620a75debf9c38040"
+        },
+        {
+          "sha": "279475307a7e1ca7267a210f31405a59a502b4b0",
+          "author_date": "2023-02-15T14:31:47Z",
+          "message": "SageMaker image_uri is now optional (#1077)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/279475307a7e1ca7267a210f31405a59a502b4b0"
+        },
+        {
+          "sha": "17bc8a1103c56a5a465b5fbbcc857e8b1c5c1fae",
+          "author_date": "2023-02-15T15:39:08Z",
+          "message": "Allow custom SageMaker Estimator arguments (#1080)\n\n* Added additional_args to SageMaker Config\r\n\r\n* temporary fix #1078\r\n\r\n* temporary fix #1078 properly\r\n\r\n* Extended SageMaker config\r\n\r\n* Revert \" temporary fix #1078 properly\"\r\n\r\nThis reverts commit 81c683711d5a94ba9327686563bb55d3e8801555.\r\n\r\n* Revert \"temporary fix #1078\"\r\n\r\nThis reverts commit c8a4b0973aee6ffd4612a69bb1ccd079b3dbb9ce.\r\n\r\n* Extended documentation to reflect manual configuration changes.\r\n\r\n* Fixed a small typo",
+          "html_url": "https://github.com/huggingface/accelerate/commit/17bc8a1103c56a5a465b5fbbcc857e8b1c5c1fae"
+        },
+        {
+          "sha": "4b47f190a9106c2bdaaaa6b26ce6e63782dffa9d",
+          "author_date": "2023-02-15T15:43:04Z",
+          "message": "Fix tpu_cluster arg (#1081)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4b47f190a9106c2bdaaaa6b26ce6e63782dffa9d"
+        },
+        {
+          "sha": "98757146108904af8473c7419afe0dd592b43c9e",
+          "author_date": "2023-02-15T18:36:18Z",
+          "message": "Update complete_cv_example.py (#1082)\n\nminimal typo :)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/98757146108904af8473c7419afe0dd592b43c9e"
+        },
+        {
+          "sha": "b34db0b98743692993288979822f9eabe6098008",
+          "author_date": "2023-02-15T19:18:43Z",
+          "message": "Added SageMaker local mode config section (#1084)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b34db0b98743692993288979822f9eabe6098008"
+        },
+        {
+          "sha": "89b7e36bf632b2bf50b9156418ebaf5f72a7f3ed",
+          "author_date": "2023-02-17T15:42:24Z",
+          "message": "Fix config (#1090)\n\n* Fix config\r\n\r\n* Proper fix",
+          "html_url": "https://github.com/huggingface/accelerate/commit/89b7e36bf632b2bf50b9156418ebaf5f72a7f3ed"
+        },
+        {
+          "sha": "bc9153e4658ef1780d164e5cd007189bd39e3897",
+          "author_date": "2023-02-17T16:40:20Z",
+          "message": "adds missing \"lfs\" in pull (#1091)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bc9153e4658ef1780d164e5cd007189bd39e3897"
+        },
+        {
+          "sha": "ea36b7dcebd5292afba328291a2ec6361dbcfb9a",
+          "author_date": "2023-02-20T08:25:55Z",
+          "message": "add multi_cpu support to reduce (#1094)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/ea36b7dcebd5292afba328291a2ec6361dbcfb9a"
+        },
+        {
+          "sha": "03754c1e026b6e36cad05728aac75b82fac63b20",
+          "author_date": "2023-02-22T02:21:18Z",
+          "message": "Update README.md (#1100)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/03754c1e026b6e36cad05728aac75b82fac63b20"
+        },
+        {
+          "sha": "38fd30e764ea87ef86e7d69fcba559c3605925b1",
+          "author_date": "2023-02-22T12:48:55Z",
+          "message": "Tracker rewrite and lazy process checker (#1079)\n\n* Refactor implementation to use PartialState and adjust deprecation tests\r\n\r\n* Utilize multi-process in Accelerator\r\n\r\n* Use state\r\n\r\n* Lazy PartialState\r\n\r\n* Name, plus keep on_main_process for accelerator\r\n\r\n* Handle if the tracker was made on main-process-only properly\r\n\r\n* Missing variable names, oops\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>\r\n\r\n* Clean\r\n\r\n* Logs\r\n\r\n* Main process\r\n\r\n* Clean\r\n\r\n---------\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/38fd30e764ea87ef86e7d69fcba559c3605925b1"
+        },
+        {
+          "sha": "d4f5fd694e3acf9178b8075ea2379fd1839954f2",
+          "author_date": "2023-02-23T14:05:21Z",
+          "message": "Update performance.mdx (#1107)\n\nCorrect import location",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d4f5fd694e3acf9178b8075ea2379fd1839954f2"
+        },
+        {
+          "sha": "f054799e7fb74554591a6085ca3b920e0b10f923",
+          "author_date": "2023-02-24T14:47:54Z",
+          "message": "Attempt to unwrap tracker. (#1109)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/f054799e7fb74554591a6085ca3b920e0b10f923"
+        },
+        {
+          "sha": "907a86d145cc62521ea0281eb24465f537480e2d",
+          "author_date": "2023-02-25T08:57:49Z",
+          "message": "TensorBoardTracker: wrong arg def (#1111)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/907a86d145cc62521ea0281eb24465f537480e2d"
+        },
+        {
+          "sha": "ade4f1db9237944025a5f7de0ac67e066705fa47",
+          "author_date": "2023-02-28T12:54:32Z",
+          "message": "Actually raise if exception (#1124)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/ade4f1db9237944025a5f7de0ac67e066705fa47"
+        },
+        {
+          "sha": "0b3f219881670e2b87088bc669a23988d7bc42d5",
+          "author_date": "2023-02-28T14:18:09Z",
+          "message": "Add test for ops and fix reduce (#1122)\n\n* Add test for ops and fix reduce\r\n\r\n* Adjust testers\r\n\r\n* Try w/o shape checK\r\n\r\n* Passthrough?\r\n\r\n* Make into float\r\n\r\n* Clean\r\n\r\n* Undo all_gather for now",
+          "html_url": "https://github.com/huggingface/accelerate/commit/0b3f219881670e2b87088bc669a23988d7bc42d5"
+        },
+        {
+          "sha": "fdb1402c7dfa141bd6ca8e180597ca6f1089ac1a",
+          "author_date": "2023-02-28T14:55:03Z",
+          "message": "Deep merge SageMaker `additional_args`, allowing more flexible configuration and `env` variable support (#1113)\n\n* deep merge additional args\r\n\r\n* added trailing line\r\n\r\n* `make style`",
+          "html_url": "https://github.com/huggingface/accelerate/commit/fdb1402c7dfa141bd6ca8e180597ca6f1089ac1a"
+        },
+        {
+          "sha": "639c1da8df8cdc0dfa4dd057c7f3e7e01b40f3f5",
+          "author_date": "2023-02-28T19:11:38Z",
+          "message": "Move dynamo.optimize to the end of model preparation (#1128)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/639c1da8df8cdc0dfa4dd057c7f3e7e01b40f3f5"
+        },
+        {
+          "sha": "bdd93cd9338f14068167827f5de4cecda225910f",
+          "author_date": "2023-03-01T10:43:32Z",
+          "message": "Refactor `launch` for greater extensibility (#1123)\n\n* Refactor `launch` for greater extensibility\r\n\r\nSigned-off-by: Antoni Baum <antoni.baum@protonmail.com>\r\n\r\n* Fix\r\n\r\nSigned-off-by: Antoni Baum <antoni.baum@protonmail.com>\r\n\r\n* Fix import\r\n\r\nSigned-off-by: Antoni Baum <antoni.baum@protonmail.com>\r\n\r\n---------\r\n\r\nSigned-off-by: Antoni Baum <antoni.baum@protonmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bdd93cd9338f14068167827f5de4cecda225910f"
+        },
+        {
+          "sha": "b2ea1c7b4fbd4597484b8e1a13294228d5101120",
+          "author_date": "2023-03-01T15:22:06Z",
+          "message": "[Big model loading] Correct GPU only loading (#1121)\n\n* [Big model loading] Correct GPU only loading\r\n\r\n* Update src/accelerate/utils/modeling.py\r\n\r\n* make style\r\n\r\n* Update src/accelerate/utils/modeling.py\r\n\r\n* make style 2\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b2ea1c7b4fbd4597484b8e1a13294228d5101120"
+        },
+        {
+          "sha": "e1b84bf50371467471a5e046b002798011a03deb",
+          "author_date": "2023-03-01T17:37:16Z",
+          "message": "Add tee and role to launch (#1132)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/e1b84bf50371467471a5e046b002798011a03deb"
+        },
+        {
+          "sha": "586941d107f1bcade500e6f056f7f3f83b676ac9",
+          "author_date": "2023-03-01T18:50:27Z",
+          "message": "Expand warning and grab all GPUs available by default (#1134)\n\n* Use all GPUs by default\r\n\r\n* Warn and include multi_gpu pull by default",
+          "html_url": "https://github.com/huggingface/accelerate/commit/586941d107f1bcade500e6f056f7f3f83b676ac9"
+        },
+        {
+          "sha": "9b5877d1b66a4da83b96710d73019876c0372154",
+          "author_date": "2023-03-01T19:02:17Z",
+          "message": "Fix multinode with GPU ids when each node has 1 (#1127)\n\n* Fix multinode\r\n\r\n* Assert\r\n\r\n* Reverse logic\r\n\r\n* Use <= and not \"not\"\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n* All on a single statement\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9b5877d1b66a4da83b96710d73019876c0372154"
+        },
+        {
+          "sha": "075b5d615db1fdc01e548d2e08e4695b9cd6511b",
+          "author_date": "2023-03-02T13:04:35Z",
+          "message": "deepspeed dataloader prepare fix (#1126)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/075b5d615db1fdc01e548d2e08e4695b9cd6511b"
+        },
+        {
+          "sha": "d88bbbd0e24b3e1de0cc9ff94924285dcd8e3144",
+          "author_date": "2023-03-02T13:05:16Z",
+          "message": "fix ds dist init kwargs issue (#1138)\n\n* fix ds dist init kwargs issue\r\n\r\n* fix",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d88bbbd0e24b3e1de0cc9ff94924285dcd8e3144"
+        },
+        {
+          "sha": "96ffd349f31f09ce15fb1fb3e8740233d2205139",
+          "author_date": "2023-03-02T13:11:46Z",
+          "message": "fix lr scheduler issue (#1140)\n\n* fix lr scheduler issue\r\n\r\n* Update src/accelerate/accelerator.py\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/96ffd349f31f09ce15fb1fb3e8740233d2205139"
+        },
+        {
+          "sha": "5f9cea4ce9ce99699126b2dfb01592634d59fc04",
+          "author_date": "2023-03-02T13:29:19Z",
+          "message": "fsdp bf16 enable autocast (#1125)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5f9cea4ce9ce99699126b2dfb01592634d59fc04"
+        },
+        {
+          "sha": "ad9cf788b1aa6e80ef3e51acbef34b258ddcaed3",
+          "author_date": "2023-03-02T17:08:32Z",
+          "message": "Fix notebook_launcher (#1141)\n\n* Fix initialization on decorator for the Accelerator",
+          "html_url": "https://github.com/huggingface/accelerate/commit/ad9cf788b1aa6e80ef3e51acbef34b258ddcaed3"
+        },
+        {
+          "sha": "77ae51a0509c993b811239417601d7264651b9c3",
+          "author_date": "2023-03-03T13:33:24Z",
+          "message": "fix partial state (#1144)\n\n* fix partial state\r\n\r\n* fix failing tests",
+          "html_url": "https://github.com/huggingface/accelerate/commit/77ae51a0509c993b811239417601d7264651b9c3"
+        },
+        {
+          "sha": "853823d0ae8e67f5a8b8083df4672e73dfa3f800",
+          "author_date": "2023-03-03T13:49:48Z",
+          "message": "FSDP enhancements and fixes (#1145)\n\n* fsdp version update\r\n\r\n* fsdp fixes\r\n\r\n* update accelerate config",
+          "html_url": "https://github.com/huggingface/accelerate/commit/853823d0ae8e67f5a8b8083df4672e73dfa3f800"
+        },
+        {
+          "sha": "78151f87a4e35fe1a1ae6de2d6bbaff8038b71a4",
+          "author_date": "2023-03-03T19:30:53Z",
+          "message": "Fixed typos in notebook (#1146)\n\n* Bad cut for the eval_split\r\n\r\n* Fixed typo.",
+          "html_url": "https://github.com/huggingface/accelerate/commit/78151f87a4e35fe1a1ae6de2d6bbaff8038b71a4"
+        },
+        {
+          "sha": "0aae1e93f453f9efebcbcad1e523e52bbf9070b2",
+          "author_date": "2023-03-06T15:00:43Z",
+          "message": "Include a note in the gradient synchronization docs on \"what can go wrong\" and show the timings (#1153)\n\n* Include timing results\r\n\r\n* Don't include tilda for accelerator\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/0aae1e93f453f9efebcbcad1e523e52bbf9070b2"
+        },
+        {
+          "sha": "9dc5b349ea1e139eb468afb072bd7b5ef53b52d6",
+          "author_date": "2023-03-06T15:01:35Z",
+          "message": "[Safetensors] Relax missing metadata constraint (#1151)\n\n* [Safetensors] Relax missing metadata constraint\r\n\r\n* correcct\r\n\r\n* char limit",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9dc5b349ea1e139eb468afb072bd7b5ef53b52d6"
+        },
+        {
+          "sha": "cac1ed41eb4d92489fe4a4c3feca21b944faf896",
+          "author_date": "2023-03-06T15:09:24Z",
+          "message": "Solve arrow keys being environment dependant for accelerate config",
+          "html_url": "https://github.com/huggingface/accelerate/commit/cac1ed41eb4d92489fe4a4c3feca21b944faf896"
+        },
+        {
+          "sha": "947b2a88a947284e9f93a37f5515f4bbbdeb6163",
+          "author_date": "2023-03-06T18:15:21Z",
+          "message": "Load custom state to cpu (#1156)\n\nThe current implementation loads custom states to GPUs, leading to OOM. I add `map_location=\"cpu\"` to the `torch.load` function, which is similar to the strategy in `load_accelerator_state`.",
+          "html_url": "https://github.com/huggingface/accelerate/commit/947b2a88a947284e9f93a37f5515f4bbbdeb6163"
+        },
+        {
+          "sha": "3482495bb529eca43c54c328665d12f4df0e01d5",
+          "author_date": "2023-03-07T00:06:56Z",
+          "message": ":memo: add a couple more trackers to the docs (#1158)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3482495bb529eca43c54c328665d12f4df0e01d5"
+        },
+        {
+          "sha": "1bfde6b963f449a2a5c52762fe429308e6d4a9f0",
+          "author_date": "2023-03-07T14:10:10Z",
+          "message": "Fp8 integration (#1086)\n\n* Draft of FP8 support\r\n\r\n* Missing import\r\n\r\n* Fix names\r\n\r\n* Conversion is inplace\r\n\r\n* Enable fp8 in examples\r\n\r\n* Customization point for Recipe\r\n\r\n* Auto-enable FP8 depending on compute capability\r\n\r\n* Fix typo\r\n\r\n* Put back mixed precision arg\r\n\r\n* Add debug script\r\n\r\n* Add more tests in debug\r\n\r\n* Add more stuff to debug\r\n\r\n* Don't forget train\r\n\r\n* Put the train in the right place\r\n\r\n* Add options for selective conversion\r\n\r\n* Fix typo\r\n\r\n* Properly recurse\r\n\r\n* Add more debug utils\r\n\r\n* Typo and init\r\n\r\n* Last choice\r\n\r\n* More fixes\r\n\r\n* More options in example\r\n\r\n* Remove debug scripts\r\n\r\n* Clean up debug and new names\r\n\r\n* Add torch.no_grad for conversion\r\n\r\n* Optimizer is deconnected from model?\r\n\r\n* Re-attach model parameters to optimizer\r\n\r\n* Fix extract\r\n\r\n* Style\r\n\r\n* Cleanup post-rebase\r\n\r\n* Deal with apdding\r\n\r\n* fix examples\r\n\r\n* Update src/accelerate/accelerator.py\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>\r\n\r\n* Address comments\r\n\r\n---------\r\n\r\nCo-authored-by: Sourab Mangrulkar <13534540+pacman100@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/1bfde6b963f449a2a5c52762fe429308e6d4a9f0"
+        },
+        {
+          "sha": "840bb1aedad19c2e18b04ce751ee59d201bc77df",
+          "author_date": "2023-03-07T16:35:14Z",
+          "message": "update support for torch dynamo compile (#1150)\n\n* update support for torch dynamo compile\n\n* fix tests and backward compatibility\n\n* fix tests\n\n* Update config_args.py\n\n* Update config_args.py\n\n* fix 🐛\n\n* fix 🐛\n\n* fix bug\n\n* fix 🐛\n\n* bug fix\n\n* 😅\n\n* Update config_utils.py\n\n* 😅\n\n* Apply suggestions from code review\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* Update src/accelerate/accelerator.py\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\n\n* resolving comments\n\n---------\n\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/840bb1aedad19c2e18b04ce751ee59d201bc77df"
+        },
+        {
+          "sha": "03b617b674c7fa19a1ed9e27297b622c3d9ed719",
+          "author_date": "2023-03-07T19:46:05Z",
+          "message": "Let GradientState know active dataloaders and reset the remainder (#1162)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/03b617b674c7fa19a1ed9e27297b622c3d9ed719"
+        },
+        {
+          "sha": "3e0ceac79fc260cb1e86eba26610edbd7647ce58",
+          "author_date": "2023-03-08T13:49:45Z",
+          "message": "Attempt to fix import error when PyTorch is build without `torch.distributed` module (#1108)\n\n* Attempt to fix importing invalid `torch.distributed.ReduceOp` when torch is built without distributed support.\r\n\r\n* Style.\r\n\r\n* Move `torch.distributed` logic detection to `imports.py` according to @muellerzr comments\r\n\r\n* Style.\r\n\r\n* Update wording\r\n\r\n* Remove raising exceptions in the case of a non-distributed setup, simply dont import the ReduceOp in this case.",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3e0ceac79fc260cb1e86eba26610edbd7647ce58"
+        },
+        {
+          "sha": "3533e2b0b167238fcdd3c636dcf6c3c6de983efa",
+          "author_date": "2023-03-08T13:51:25Z",
+          "message": "[`Accelerator`] Fix issue with 8bit models (#1155)\n\n* fix 8bit models on `accelerate`\r\n\r\n* add bnb as dependency\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n* fix\r\n\r\n* skip a test\r\n\r\n* make style\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3533e2b0b167238fcdd3c636dcf6c3c6de983efa"
+        },
+        {
+          "sha": "4a3eaee6bebf90355b6b87f035fc7eda959c65cc",
+          "author_date": "2023-03-08T17:17:30Z",
+          "message": "Document skip_first_batches in the checkpoint usage guides (#1164)\n\n* Include skip_first_batches\r\n\r\n* Repeated statements\r\n\r\n* Middle of an epoch",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4a3eaee6bebf90355b6b87f035fc7eda959c65cc"
+        },
+        {
+          "sha": "8749b4ece4a1a10ff6a748724bb47dc2aad15c48",
+          "author_date": "2023-03-08T17:34:22Z",
+          "message": "Fix what files get deleted through `total_limit` (#1165)\n\n* Use lambda func to sort the keys\r\n\r\n* Use inner instead\r\n\r\n* With more explicit regex\r\n\r\n* Regression check\r\n\r\n* Better check that uses multiple numbers",
+          "html_url": "https://github.com/huggingface/accelerate/commit/8749b4ece4a1a10ff6a748724bb47dc2aad15c48"
+        },
+        {
+          "sha": "abc2beb42390afb6ea7185a59cc6fae4610f39cd",
+          "author_date": "2023-03-08T19:37:46Z",
+          "message": "Remove outdated command directions and use in tests (#1166)\n\n* Get rid of launch in docs\r\n\r\n* Run instead of Launch\r\n\r\n* Proper ddp prefix\r\n\r\n* Include note about older torch versions",
+          "html_url": "https://github.com/huggingface/accelerate/commit/abc2beb42390afb6ea7185a59cc6fae4610f39cd"
+        },
+        {
+          "sha": "02dca638ac022d88d2fa30976375a66a613cfc3b",
+          "author_date": "2023-03-09T16:17:05Z",
+          "message": "Release: v0.17.0",
+          "html_url": "https://github.com/huggingface/accelerate/commit/02dca638ac022d88d2fa30976375a66a613cfc3b"
+        },
+        {
+          "sha": "4352d3d35964d9c4b34ded12baec24f7030b573b",
+          "author_date": "2023-03-09T16:39:22Z",
+          "message": "Fix backward compatibility in configs wrt dynamo backend (#1168)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4352d3d35964d9c4b34ded12baec24f7030b573b"
+        },
+        {
+          "sha": "1a63f7dff2d336cbc4816ca232aa5078486437f5",
+          "author_date": "2023-03-09T16:56:42Z",
+          "message": "Fix accelerate test with new config_file errors (#1169)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/1a63f7dff2d336cbc4816ca232aa5078486437f5"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.17.1",
@@ -1248,8 +2343,447 @@
     {
       "release": "v0.20.0",
       "previous_release": "v0.19.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9fe690706de927f162168483f1ec14de4c3cd545",
+          "author_date": "2023-05-08T12:37:42Z",
+          "message": "v0.20.0.dev0",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9fe690706de927f162168483f1ec14de4c3cd545"
+        },
+        {
+          "sha": "145fca5a098ef597c6186c54e4d97c2d4d5e9599",
+          "author_date": "2023-05-08T17:53:43Z",
+          "message": "Support TPU v4 with new PyTorch/XLA TPU runtime (#1393)\n\n* Fix `XLA_USE_BF16` when not using mixed precision\r\n\r\n* Fix RNG sync during data loading\r\n\r\n* Fix hanging during checkpointing\r\n\r\n* Remove extra _mp_fn\r\n\r\n* Use all_gather to implement _tpu_gather\r\n\r\n* Use collective_broadcast for torch RNG state\r\n\r\n* Formatting and comments.\r\n\r\n* Fix formatting with `make style`",
+          "html_url": "https://github.com/huggingface/accelerate/commit/145fca5a098ef597c6186c54e4d97c2d4d5e9599"
+        },
+        {
+          "sha": "fafadc532351f3434f4d4abd4b61d356932607d8",
+          "author_date": "2023-05-09T13:00:50Z",
+          "message": "Add in a section on papers using Accelerate (#1399)\n\n* Start of papers\r\n\r\n* Add back in PickScore\r\n\r\n* Rm non-urld\r\n\r\n* Test\r\n\r\n* Remove space",
+          "html_url": "https://github.com/huggingface/accelerate/commit/fafadc532351f3434f4d4abd4b61d356932607d8"
+        },
+        {
+          "sha": "d95d68ec4645f4be116fb5034372caa49ef733ad",
+          "author_date": "2023-05-09T13:12:43Z",
+          "message": "Support TPU v2 and v3 on new PyTorch/XLA TPU runtime (#1385)\n\n* Use numpy Generator instead of global seed\r\n\r\n* Implement SharedDict descriptor\r\n\r\n* Formatting and comments\r\n\r\n* Remove `GlobalSharedDict`\r\n\r\n* Formatting\r\n\r\n* Formatting with `doc-builder` installed correctly",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d95d68ec4645f4be116fb5034372caa49ef733ad"
+        },
+        {
+          "sha": "da3966505568f1d5f71df30a5aceef4e0e56cf15",
+          "author_date": "2023-05-09T14:52:03Z",
+          "message": "Adding support for local SGD. (#1378)\n\n* Adding support for local SGD.\r\n\r\n* Update src/accelerate/local_sgd.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n* Update src/accelerate/local_sgd.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n* Update src/accelerate/local_sgd.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n* fixing reduction + adding a test.\r\n\r\n* style fix.\r\n\r\n* Update docs/source/usage_guides/local_sgd.mdx\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n* Update src/accelerate/local_sgd.py\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n* Update examples/by_feature/local_sgd.py\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/da3966505568f1d5f71df30a5aceef4e0e56cf15"
+        },
+        {
+          "sha": "873b39b85bc5b4eb87da9ba6af1adc0e418be907",
+          "author_date": "2023-05-10T09:51:21Z",
+          "message": "use existing mlflow experiment if exists (#1403)\n\nCo-authored-by: Rustem Galiullin <rustem.galiullin@bayanat.ai>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/873b39b85bc5b4eb87da9ba6af1adc0e418be907"
+        },
+        {
+          "sha": "d07fd959cc15afe5ab7d890e52f0a9fa85f3acd0",
+          "author_date": "2023-05-10T19:17:32Z",
+          "message": "changes required for DS integration (#1406)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d07fd959cc15afe5ab7d890e52f0a9fa85f3acd0"
+        },
+        {
+          "sha": "f95067bfbf388e9f45a90c5ed6763b9734826e3a",
+          "author_date": "2023-05-11T05:05:46Z",
+          "message": "fix deepspeed failing tests (#1411)\n\n* changes required for DS integration\n\n* changing the default value of `zero_force_ds_cpu_optimizer` to True to fix the failing tests",
+          "html_url": "https://github.com/huggingface/accelerate/commit/f95067bfbf388e9f45a90c5ed6763b9734826e3a"
+        },
+        {
+          "sha": "b50e75f85d4108fa57d252ca9ac3fd245fe492d1",
+          "author_date": "2023-05-11T10:03:13Z",
+          "message": "Make mlflow logging dir optional (#1413)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b50e75f85d4108fa57d252ca9ac3fd245fe492d1"
+        },
+        {
+          "sha": "ab379793d44be16d8fcac5c098a3ab9b6f5a7ec3",
+          "author_date": "2023-05-11T13:03:24Z",
+          "message": "Intel GPU support initialization (#1118)\n\n* Intel GPU support initialization\r\n\r\n* rng state for xpu ,accel backend\r\n\r\n* add xpu variable and clean code\r\n\r\n* checkpointing, hooks, colls & megatronlm porting\r\n\r\n* fix runtime errors\r\n\r\n* test utils and xpu runtime checks\r\n\r\n* fix unknown import in constant\r\n\r\n* Resolve amp and cuda/xpu tensor placement\r\n\r\n* add ipex for state and hooks\r\n\r\n* add mingxiao's ipex changes and source code rebase changes\r\n\r\n* add ipex binding in cluster\r\n\r\n* resolve megatron lm issues and modelling memory\r\n\r\n* indent fix and syntax\r\n\r\n* versioning and sanity checks\r\n\r\n* use kwargs and add upstream\r\n\r\n* revert megatron lm xpu changes\r\n\r\n* cleanups and test npr\r\n\r\n* fix merge conflict\r\n\r\n* fix merge conflict\r\n\r\n* Fix merge conflict\r\n\r\n* review commits\r\n\r\n* make style, ruff code styling\r\n\r\n* hf doc builder code style\r\n\r\n* Review commits and code style\r\n\r\n* remove xpu plugin and use only ipex by default if cpu/xpu present\r\n\r\n* review commits and fix tests on state\r\n\r\n* fix test in state\r\n\r\n* add xpu condition in optimizer and code style/testing\r\n\r\n* fix test add warn for ipex\r\n\r\n* fix test\r\n\r\n* fix test\r\n\r\n* fix test and condition\r\n\r\n* fix  amp test prod,cli ,core\r\n\r\n* fix minimum torch tests\r\n\r\n* refine accelerator and modelling for tests\r\n\r\n* refine modeling and merge\r\n\r\n* Fix slow cuda tests\r\n\r\n* doc and retrigger test",
+          "html_url": "https://github.com/huggingface/accelerate/commit/ab379793d44be16d8fcac5c098a3ab9b6f5a7ec3"
+        },
+        {
+          "sha": "dcde1e93d09abea02a8e7f4a07a2c5734b87b60e",
+          "author_date": "2023-05-12T21:32:01Z",
+          "message": "Fix bug on ipex for diffusers (#1426)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/dcde1e93d09abea02a8e7f4a07a2c5734b87b60e"
+        },
+        {
+          "sha": "435079aafb15bb764465e2507ec0f6c54a1b4cb6",
+          "author_date": "2023-05-16T13:08:10Z",
+          "message": "Improve Slack Updater (#1433)\n\n* Update log_reports to send to slack\r\n\r\n* REVERT this change, just for testing!\r\n\r\n* Add slack_sdk dep\r\n\r\n* Second one\r\n\r\n* Try now?\r\n\r\n* Remove len\r\n\r\n* Need secret\r\n\r\n* Try with new version\r\n\r\n* Right boldface\r\n\r\n* Fix import\r\n\r\n* New format, use tabulate\r\n\r\n* Add tabulate to yml\r\n\r\n* Quality\r\n\r\n* Purposefully fail\r\n\r\n* Working updater, now to test\r\n\r\n* Int\r\n\r\n* Print payload\r\n\r\n* Append\r\n\r\n* Change maxcolwidth\r\n\r\n* Offset\r\n\r\n* More offset\r\n\r\n* Context\r\n\r\n* No max width\r\n\r\n* gh format\r\n\r\n* max-col-width'\r\n\r\n* Reduce max\r\n\r\n* Non-working tables\r\n\r\n* Rm md report\r\n\r\n* Try now\r\n\r\n* Try with just count\r\n\r\n* Use table\r\n\r\n* New version\r\n\r\n* Use table\r\n\r\n* Try with thread\r\n\r\n* Should be working now\r\n\r\n* Clean\r\n\r\n* Fixup test reports fully\r\n\r\n* Revert workflow\r\n\r\n* Keep tabulate in workflow ci\r\n\r\n* Update other workflows\r\n\r\n* Use blocks for better formatting\r\n\r\n* ONe more test\r\n\r\n* Works as expected",
+          "html_url": "https://github.com/huggingface/accelerate/commit/435079aafb15bb764465e2507ec0f6c54a1b4cb6"
+        },
+        {
+          "sha": "a28491bc244b493add7e17a59527739f19be6f97",
+          "author_date": "2023-05-16T13:30:08Z",
+          "message": "Let quality yell at the user if it's a version difference (#1438)\n\n* Let quality yell at the user if it's a version difference\r\n\r\n* Also include in style",
+          "html_url": "https://github.com/huggingface/accelerate/commit/a28491bc244b493add7e17a59527739f19be6f97"
+        },
+        {
+          "sha": "40c6e0ca4193e8f6aeea30e4bee95d0ce94684ba",
+          "author_date": "2023-05-16T13:50:53Z",
+          "message": "Ensure that it gets installed (#1439)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/40c6e0ca4193e8f6aeea30e4bee95d0ce94684ba"
+        },
+        {
+          "sha": "9493d7276b85c3c898465f3b418cfdae58dc9046",
+          "author_date": "2023-05-16T14:24:17Z",
+          "message": "[`core`] Introducing `CustomDtype` enum for custom dtypes (#1434)\n\n* working v1 - draft\r\n\r\n* format\r\n\r\n* more comments",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9493d7276b85c3c898465f3b418cfdae58dc9046"
+        },
+        {
+          "sha": "612ecef7b8f8e7a405cfba61261f599c47f59ca1",
+          "author_date": "2023-05-16T17:03:22Z",
+          "message": "Fix XPU (#1440)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/612ecef7b8f8e7a405cfba61261f599c47f59ca1"
+        },
+        {
+          "sha": "330d60b817c7acb9f66e9fdcafec7efb391c0366",
+          "author_date": "2023-05-16T18:03:36Z",
+          "message": "Make sure torch compiled model can also be unwrapped (#1437)\n\n* Make sure torch compiled model can also be unwrapped\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n* add tests\r\n\r\n* fix double import\r\n\r\n---------\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/330d60b817c7acb9f66e9fdcafec7efb391c0366"
+        },
+        {
+          "sha": "bc82d1882100f7af48c8ea666d09e2739e800746",
+          "author_date": "2023-05-17T12:59:12Z",
+          "message": "fixed: ZeroDivisionError: division by zero (#1436)\n\n* Update modeling.py\r\n\r\nfixed: ZeroDivisionError: division by zero\r\n\r\n* fixed style\r\n\r\n* code optimize\r\n\r\n---------\r\n\r\nCo-authored-by: xingwei <xingwei@i-click.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bc82d1882100f7af48c8ea666d09e2739e800746"
+        },
+        {
+          "sha": "3a381bfa48dfb082c1f8e892a9a07ca5717bf0df",
+          "author_date": "2023-05-17T14:53:17Z",
+          "message": "fix potential OOM when resuming with multi-GPU training (#1444)\n\n* load `optimizers`, `schedulers`, `scalers` and `states` in different devices\r\n\r\n* only apply to the optimizer state",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3a381bfa48dfb082c1f8e892a9a07ca5717bf0df"
+        },
+        {
+          "sha": "39e20d3e55d347c4934afa2f5bfd80bb4fda59f2",
+          "author_date": "2023-05-17T14:54:42Z",
+          "message": "Fixes in infer_auto_device_map (#1441)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/39e20d3e55d347c4934afa2f5bfd80bb4fda59f2"
+        },
+        {
+          "sha": "6413f25ba9a544cc7930d2a152d2b805539a3bda",
+          "author_date": "2023-05-17T15:16:35Z",
+          "message": "Raise error when logging improperly (#1446)\n\n* Raise error when logging\r\n\r\n* Update src/accelerate/logging.py\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/6413f25ba9a544cc7930d2a152d2b805539a3bda"
+        },
+        {
+          "sha": "981c6fb8d659d7b652501a84090a9884df123b8e",
+          "author_date": "2023-05-17T17:49:56Z",
+          "message": "Fix ci (#1447)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/981c6fb8d659d7b652501a84090a9884df123b8e"
+        },
+        {
+          "sha": "b93bfac16d2e92ca45c4626c8b2774c8bfe7f537",
+          "author_date": "2023-05-17T18:41:25Z",
+          "message": "Distributed prompting/inference utility (#1410)\n\n* Splitter\r\n\r\n* Rename and fix\r\n\r\n* Change value\r\n\r\n* Add plus 1?\r\n\r\n* mvp\r\n\r\n* Nested processes\r\n\r\n* Start of implementation\r\n\r\n* Fin\r\n\r\n* Introduce util\r\n\r\n* Return non-nested for now\r\n\r\n* Future annotation\r\n\r\n* Fix\r\n\r\n* Fix failing tests, make it fully nested\r\n\r\n* Fin\r\n\r\n* Start doc\r\n\r\n* Fixup tests\r\n\r\n* Add is_torch_version\r\n\r\n* Should work now with padding\r\n\r\n* Include padding\r\n\r\n* Docstrings\r\n\r\n* toctree\r\n\r\n* Dash\r\n\r\n* Note on when padding is needed\r\n\r\n* Apply typo fixes from code review\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n* Try quicklink\r\n\r\n* Use dash\r\n\r\n* URL\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b93bfac16d2e92ca45c4626c8b2774c8bfe7f537"
+        },
+        {
+          "sha": "1760d2dc8cf4a259c4a3335e031bf568acbdd114",
+          "author_date": "2023-05-17T18:52:25Z",
+          "message": "Add to (#1448)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/1760d2dc8cf4a259c4a3335e031bf568acbdd114"
+        },
+        {
+          "sha": "99d790dc343731b69ae7c35250dc03c24e6b558a",
+          "author_date": "2023-05-17T19:35:36Z",
+          "message": "split_between_processes (#1449)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/99d790dc343731b69ae7c35250dc03c24e6b558a"
+        },
+        {
+          "sha": "5904f56c45914a8719139abe48da4e0c03113f0f",
+          "author_date": "2023-05-18T11:13:39Z",
+          "message": "[docs] Replace `state.rank` -> `process_index` (#1450)\n\nI couldn't find a rank property in `PartialState`.",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5904f56c45914a8719139abe48da4e0c03113f0f"
+        },
+        {
+          "sha": "5d1cee3d814def091be8901e4ea2bfa6f87c9d2f",
+          "author_date": "2023-05-18T15:12:58Z",
+          "message": "Auto multigpu logic (#1452)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5d1cee3d814def091be8901e4ea2bfa6f87c9d2f"
+        },
+        {
+          "sha": "1deab71e3c4119e64518fd78b1c88881f8f87df9",
+          "author_date": "2023-05-18T15:32:26Z",
+          "message": "Update with cli instructions (#1453)\n\n* Update with cli instructions\r\n\r\n* Also update basic tut",
+          "html_url": "https://github.com/huggingface/accelerate/commit/1deab71e3c4119e64518fd78b1c88881f8f87df9"
+        },
+        {
+          "sha": "86720fdb11165348ed6b575a56d0cb597b8554f4",
+          "author_date": "2023-05-18T19:01:26Z",
+          "message": "Adds `in_order` argument that defaults to False, to log in order. (#1262)\n\n* Adds `in_order` argument that defaults to False, to log in order.\r\n\r\nAds `in_order` argument that defaults to `False`, to log in order. \r\nIt really helps with readability.  Defaults to false to not break backwards comp.\r\n\r\n* fixed formatting\r\n\r\n* Update src/accelerate/logging.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n* Fixed quality & suggestions\r\n\r\n---------\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/86720fdb11165348ed6b575a56d0cb597b8554f4"
+        },
+        {
+          "sha": "0871e93a747fe3e95a71ad41cc77ae210ecde1d6",
+          "author_date": "2023-05-19T10:32:11Z",
+          "message": "fix error for CPU DDP using trainer api. (#1455)\n\ninit_process_group() got multiple values for argument 'backend'\r\n\r\nSigned-off-by: Wang, Yi A <yi.a.wang@intel.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/0871e93a747fe3e95a71ad41cc77ae210ecde1d6"
+        },
+        {
+          "sha": "e6699e6aba9a0900dc2dc42f5832837af4a1be9b",
+          "author_date": "2023-05-19T14:43:24Z",
+          "message": "Refactor and simplify xpu device in state (#1456)\n\n* Refactor and simplify xpu device in state\r\n\r\n* review commit",
+          "html_url": "https://github.com/huggingface/accelerate/commit/e6699e6aba9a0900dc2dc42f5832837af4a1be9b"
+        },
+        {
+          "sha": "bfa74e51d2af08221f5787d281d681ca9bceddd2",
+          "author_date": "2023-05-19T16:32:54Z",
+          "message": "Document how to use commands with python module instead of argparse (#1457)\n\n* Include other commands\r\n\r\n* Add another paragraph\r\n\r\n* Reverse order\r\n\r\nCo-authored-by: Stas Bekman <stas00@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Stas Bekman <stas00@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bfa74e51d2af08221f5787d281d681ca9bceddd2"
+        },
+        {
+          "sha": "bf3cd30a66d8753dd385b17f19dfa53352dc05e2",
+          "author_date": "2023-05-22T15:35:14Z",
+          "message": "4-bit QLoRA via bitsandbytes (4-bit base model + LoRA) (#1458)\n\n* Added change for FP4.\r\n\r\n* fix suggestion\r\n\r\n* better check\r\n\r\n---------\r\n\r\nCo-authored-by: younesbelkada <younesbelkada@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bf3cd30a66d8753dd385b17f19dfa53352dc05e2"
+        },
+        {
+          "sha": "70920895e80f78d96d8f91e0beeb3ebdb8e5e5d6",
+          "author_date": "2023-05-22T18:18:16Z",
+          "message": "Fix skip first batch being perminant (#1466)\n\n* Better version of fix\r\n\r\n* Failing diff test\r\n\r\n* Special str",
+          "html_url": "https://github.com/huggingface/accelerate/commit/70920895e80f78d96d8f91e0beeb3ebdb8e5e5d6"
+        },
+        {
+          "sha": "9a86a49f72f5c9c0ca521b903fb1a44fa8ee8f53",
+          "author_date": "2023-05-23T09:19:57Z",
+          "message": "update conversion of layers to retain original data type. (#1467)\n\n* add dtype to retain original dtype of layers in convert_model\r\n\r\n* updated params_dtype\r\n\r\n* ran make style,quality:",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9a86a49f72f5c9c0ca521b903fb1a44fa8ee8f53"
+        },
+        {
+          "sha": "e0ffea5bc3929dc9fae9da582f3b0f94fb7c4900",
+          "author_date": "2023-05-23T16:42:12Z",
+          "message": "Check for xpu specifically (#1472)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/e0ffea5bc3929dc9fae9da582f3b0f94fb7c4900"
+        },
+        {
+          "sha": "2249fbde0d9bc2630ef81e2821ff3902e5e86f75",
+          "author_date": "2023-05-24T12:32:38Z",
+          "message": "update `register_empty_buffer` to match torch args (#1465)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/2249fbde0d9bc2630ef81e2821ff3902e5e86f75"
+        },
+        {
+          "sha": "419c9ce22a0f52f363a9a341ece1b8f3f813fed5",
+          "author_date": "2023-05-24T14:43:42Z",
+          "message": "Update gradient accumulation docs, and remove redundant example (#1461)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/419c9ce22a0f52f363a9a341ece1b8f3f813fed5"
+        },
+        {
+          "sha": "0226f750257b3bf2cadc4f189f9eef0c764a0467",
+          "author_date": "2023-05-24T19:50:31Z",
+          "message": "Imrpove sagemaker (#1470)\n\n* Should fix everything now:\r\n\r\n* Simplify logic",
+          "html_url": "https://github.com/huggingface/accelerate/commit/0226f750257b3bf2cadc4f189f9eef0c764a0467"
+        },
+        {
+          "sha": "bb296348e19f481cbf4ed8afc99b60b73ac0816b",
+          "author_date": "2023-05-26T18:23:07Z",
+          "message": "Split tensors as part of `split_between_processes` (#1477)\n\n* Try with this\r\n\r\n* Remove import to be late\r\n\r\n* Apply padding properly for tensors\r\n\r\n* Pad across tensors\r\n\r\n* Check to see if this works\r\n\r\n* Use -1\r\n\r\n* Properly send the first item as what's to be padded\r\n\r\n* Update docstring\r\n\r\n* Add tests\r\n\r\n* Fix test\r\n\r\n* Update typehints and docstrings",
+          "html_url": "https://github.com/huggingface/accelerate/commit/bb296348e19f481cbf4ed8afc99b60b73ac0816b"
+        },
+        {
+          "sha": "7d24bdefb5b3252505151d8c1ac0efbed3574857",
+          "author_date": "2023-05-26T19:01:02Z",
+          "message": "Move to device (#1478)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/7d24bdefb5b3252505151d8c1ac0efbed3574857"
+        },
+        {
+          "sha": "68376babd822e9a5f8633e66d8258dea909a7df8",
+          "author_date": "2023-05-30T14:56:42Z",
+          "message": "Fix gradient state bugs in multiple dataloader (#1483)\n\n* Fix gradient state bugs in multiple dataloader\r\n\r\n* Fix style issue\r\n\r\n* Update src/accelerate/data_loader.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n* Add docstring\r\n\r\n* Fix style\r\n\r\n---------\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/68376babd822e9a5f8633e66d8258dea909a7df8"
+        },
+        {
+          "sha": "af12e7b0231c752acae58c052abc9aecc4df3387",
+          "author_date": "2023-05-31T12:06:55Z",
+          "message": "Add rdzv-backend (#1490)\n\n* Add rdzv\r\n\r\n* rm print\r\n\r\n* Doc\r\n\r\n* Better help",
+          "html_url": "https://github.com/huggingface/accelerate/commit/af12e7b0231c752acae58c052abc9aecc4df3387"
+        },
+        {
+          "sha": "d3f8c52f4c3c20b7404ccfc98f6563344b5295b0",
+          "author_date": "2023-05-31T12:18:13Z",
+          "message": "Only use IPEX if available (#1495)\n\n* Only use IPEX if available\r\n\r\n* Check first, then make plugin",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d3f8c52f4c3c20b7404ccfc98f6563344b5295b0"
+        },
+        {
+          "sha": "f9b2e6769b1279b11335d2b87801fa1ca81bb056",
+          "author_date": "2023-05-31T13:25:29Z",
+          "message": "Update README.md (#1493)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/f9b2e6769b1279b11335d2b87801fa1ca81bb056"
+        },
+        {
+          "sha": "3913fa4dd0167b33a676676f01da615a32bc5112",
+          "author_date": "2023-05-31T14:59:31Z",
+          "message": "Let gather_for_metrics always run (#1496)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3913fa4dd0167b33a676676f01da615a32bc5112"
+        },
+        {
+          "sha": "70d999ee4a04e129985e70c4705770f45c4ca1d2",
+          "author_date": "2023-05-31T15:53:17Z",
+          "message": "Use empty like when we only need to create buffers (#1497)\n\n* Use empty like\r\n\r\n* Make",
+          "html_url": "https://github.com/huggingface/accelerate/commit/70d999ee4a04e129985e70c4705770f45c4ca1d2"
+        },
+        {
+          "sha": "4d583ad6a1f13d1d7617e6a37f791ec01a68413a",
+          "author_date": "2023-05-31T19:04:52Z",
+          "message": "Allow key skipping in big model inference (#1491)\n\n* Allow key skipping in big model inference\r\n\r\n* Add a repr",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4d583ad6a1f13d1d7617e6a37f791ec01a68413a"
+        },
+        {
+          "sha": "c9fbb71e37e7f64f5df54b39270bdabe82f1b893",
+          "author_date": "2023-06-01T15:48:55Z",
+          "message": "fix crash when ipex is installed and torch has no xpu (#1502)\n\nalso when cpu flag is set. should use cpu instead of XPU",
+          "html_url": "https://github.com/huggingface/accelerate/commit/c9fbb71e37e7f64f5df54b39270bdabe82f1b893"
+        },
+        {
+          "sha": "8ae56dc51da32e854b52411a7d2eaa04e1011e09",
+          "author_date": "2023-06-01T18:41:03Z",
+          "message": "[`bnb`] Add fp4 support for dispatch (#1505)\n\n* add fp4 support for dispatch\r\n\r\n* add tests\r\n\r\n* refactor",
+          "html_url": "https://github.com/huggingface/accelerate/commit/8ae56dc51da32e854b52411a7d2eaa04e1011e09"
+        },
+        {
+          "sha": "d4262021d527392aec09bb59bca835326c107597",
+          "author_date": "2023-06-01T19:10:51Z",
+          "message": "Fix 4bit model on multiple devices (#1506)\n\n* Add 4bit case and fix device index\r\n\r\n* Fix style",
+          "html_url": "https://github.com/huggingface/accelerate/commit/d4262021d527392aec09bb59bca835326c107597"
+        },
+        {
+          "sha": "b7d5d9072accf882b83be665b82953a1aea91f32",
+          "author_date": "2023-06-02T11:52:56Z",
+          "message": "adjust overriding of model's forward function (#1492)\n\n* adjust overriding of model's forward function\r\n\r\n* bug fix\r\n\r\n* extend solution to all model.forward overrides\r\n\r\n* leave fp8 section alone\r\n\r\n* make style\r\n\r\n---------\r\n\r\nCo-authored-by: root <root@orttrainingdev8.d32nl1ml4oruzj4qz3bqlggovf.px.internal.cloudapp.net>\r\nCo-authored-by: Prathik Rao <prathikrao@microsoft.com@orttrainingdev8.d32nl1ml4oruzj4qz3bqlggovf.px.internal.cloudapp.net>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b7d5d9072accf882b83be665b82953a1aea91f32"
+        },
+        {
+          "sha": "090c65cd9d98ee8f1abe2b71f7e183620c12909d",
+          "author_date": "2023-06-02T13:55:04Z",
+          "message": "Add assertion when call prepare with deepspeed config. (#1468)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/090c65cd9d98ee8f1abe2b71f7e183620c12909d"
+        },
+        {
+          "sha": "5e74d932b9beaa40b03dbf574bc2a6ea16a16430",
+          "author_date": "2023-06-02T13:55:17Z",
+          "message": "NVME path support for deepspeed (#1484)\n\n* NVME path support for deepspeed\r\n\r\n* modify stage 3 ds test\r\n\r\n* review commit and fixes\r\n\r\n* review commits",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5e74d932b9beaa40b03dbf574bc2a6ea16a16430"
+        },
+        {
+          "sha": "85901cdcf99e9fd258811789ca674bced6198bde",
+          "author_date": "2023-06-02T14:45:17Z",
+          "message": "should set correct dtype to ipex optimize and use amp logic in native… (#1511)\n\n* should set correct dtype to ipex optimize and use amp logic in native_amp logic in prepare_model\r\n\r\nSigned-off-by: Wang, Yi A <yi.a.wang@intel.com>\r\n\r\n* remove mix precision set in ipex, directly use it from accelerate state\r\n\r\nSigned-off-by: Wang, Yi A <yi.a.wang@intel.com>\r\n\r\n* raise import error if ipex is not valid in prepare ipex\r\n\r\n* Update src/accelerate/accelerator.py\r\n\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>\r\n\r\n---------\r\n\r\nSigned-off-by: Wang, Yi A <yi.a.wang@intel.com>\r\nCo-authored-by: Zachary Mueller <muellerzr@gmail.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/85901cdcf99e9fd258811789ca674bced6198bde"
+        },
+        {
+          "sha": "109f3272f542cbd0e34022f5455078a4ab99d7eb",
+          "author_date": "2023-06-02T17:30:16Z",
+          "message": "Swap env vars for XPU and IPEX + CLI (#1513)\n\n* Swap env vars\r\n\r\n* Clean up CLI\r\n\r\n* use_xpu\r\n\r\n* Add CLI docs\r\n\r\n* Ipex only\r\n\r\n* Nit\r\n\r\n* Check\r\n\r\n* Capitolize\r\n\r\n* Make changes from review",
+          "html_url": "https://github.com/huggingface/accelerate/commit/109f3272f542cbd0e34022f5455078a4ab99d7eb"
+        },
+        {
+          "sha": "eba6eb79dc2ab652cd8b44b37165a4852768a8ac",
+          "author_date": "2023-06-02T21:07:39Z",
+          "message": "Fix a bug when parameters tied belong to the same module (#1514)\n\n* Fix a bug when parameters tied belong to the same module\r\n\r\n* Address review comments\r\n\r\n* Add tests",
+          "html_url": "https://github.com/huggingface/accelerate/commit/eba6eb79dc2ab652cd8b44b37165a4852768a8ac"
+        },
+        {
+          "sha": "4cbbde89452c799d5157db9bed38ab997da12fc6",
+          "author_date": "2023-06-05T15:35:21Z",
+          "message": "Fixup deepspeed/cli tests (#1526)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/4cbbde89452c799d5157db9bed38ab997da12fc6"
+        },
+        {
+          "sha": "16ca01feeaf59ff3d67fb6328c04628e31f1fe72",
+          "author_date": "2023-06-05T16:00:51Z",
+          "message": "Refactor mp into its own wrapper (#1527)\n\n* Better, clean version\r\n\r\n* Diff\r\n\r\n* oops need return\r\n\r\n* Make adjustments\r\n\r\n* Docstring",
+          "html_url": "https://github.com/huggingface/accelerate/commit/16ca01feeaf59ff3d67fb6328c04628e31f1fe72"
+        },
+        {
+          "sha": "b9628f13c26944eee29ccf5d718352279963cc17",
+          "author_date": "2023-06-05T19:17:49Z",
+          "message": "Check tied parameters (#1529)\n\n* Check that parameters are tied correctly\r\n\r\n* Fix style\r\n\r\n* Fix condition\r\n\r\n* Fix failing test\r\n\r\n* Fix check_tied_parameters function\r\n\r\n* Fix condition\r\n\r\n* Fix arg\r\n\r\n* Apply suggestions from code review\r\n\r\nFix log\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n* Fix tests and comments\r\n\r\nFix comments and tests\r\n\r\nFix description\r\n\r\n* Remove dep\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/b9628f13c26944eee29ccf5d718352279963cc17"
+        },
+        {
+          "sha": "de855b324704d9eaef5bec50191e6498e5e4ade9",
+          "author_date": "2023-06-06T11:51:22Z",
+          "message": "Raise ValueError on iterable dataset if we've hit the end and attempting to go beyond it (#1531)\n\n* Raise ValueError on iterable\r\n\r\n* Clean",
+          "html_url": "https://github.com/huggingface/accelerate/commit/de855b324704d9eaef5bec50191e6498e5e4ade9"
+        },
+        {
+          "sha": "ef0c4bf27707fbbfe554508f847a21ff97c429f7",
+          "author_date": "2023-06-06T12:41:59Z",
+          "message": "Officially support naive PP for quantized models + PEFT (#1523)\n\n* officially support naive PP\r\n\r\n- relax check\r\n- add test\r\n\r\n* Apply suggestions from code review\r\n\r\n* more tests\r\n\r\n* Update src/accelerate/accelerator.py",
+          "html_url": "https://github.com/huggingface/accelerate/commit/ef0c4bf27707fbbfe554508f847a21ff97c429f7"
+        },
+        {
+          "sha": "961fe728d9b5e16031ff83556d1f2168a96bbccc",
+          "author_date": "2023-06-06T13:27:31Z",
+          "message": "remove ipexplugin, let ACCELERATE_USE_IPEX/ACCELERATE_USE_XPU control the ipex and xpu (#1503)\n\nSigned-off-by: Wang, Yi A <yi.a.wang@intel.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/961fe728d9b5e16031ff83556d1f2168a96bbccc"
+        },
+        {
+          "sha": "7a39d928f5ff9ed4ef70cb33025f2953dbe8f1c6",
+          "author_date": "2023-06-06T13:31:41Z",
+          "message": "Prevent using extra VRAM for static device_map (#1536)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/7a39d928f5ff9ed4ef70cb33025f2953dbe8f1c6"
+        },
+        {
+          "sha": "3f1cb09e7bd216fa65617e6469d77ca537e09bee",
+          "author_date": "2023-06-06T13:54:03Z",
+          "message": "Update deepspeed.mdx (#1541)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3f1cb09e7bd216fa65617e6469d77ca537e09bee"
+        },
+        {
+          "sha": "3f2b5da094f03994b35b91516f18917bc77b3b52",
+          "author_date": "2023-06-06T13:54:25Z",
+          "message": "Update performance.mdx (#1543)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/3f2b5da094f03994b35b91516f18917bc77b3b52"
+        },
+        {
+          "sha": "be1b76e97a59d22fd6b669962b7868d0e970c305",
+          "author_date": "2023-06-06T15:59:30Z",
+          "message": "Update deferring_execution.mdx (#1544)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/be1b76e97a59d22fd6b669962b7868d0e970c305"
+        },
+        {
+          "sha": "62357f218f72cce88b8e086cc372b15c119b590b",
+          "author_date": "2023-06-06T17:04:45Z",
+          "message": "Apply deprecations (#1537)\n\n* MPS\r\n\r\n* Update examples\r\n\r\n* Fix env var\r\n\r\n* device type\r\n\r\n* Fix test",
+          "html_url": "https://github.com/huggingface/accelerate/commit/62357f218f72cce88b8e086cc372b15c119b590b"
+        },
+        {
+          "sha": "76ccfae6825344242e1dabad278628f7ce74b319",
+          "author_date": "2023-06-06T20:31:02Z",
+          "message": "Add mps support to big inference modeling (#1545)\n\n* Add mps support\r\n\r\n* make style\r\n\r\n* Fix syntax\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n* Fix condition\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Sylvain Gugger <35901082+sgugger@users.noreply.github.com>",
+          "html_url": "https://github.com/huggingface/accelerate/commit/76ccfae6825344242e1dabad278628f7ce74b319"
+        },
+        {
+          "sha": "5f21cde3c74fa511c4bec55cac5fe410effbe182",
+          "author_date": "2023-06-06T21:06:03Z",
+          "message": "[documentation] grammar fixes in gradient_synchronization.mdx (#1547)\n\n* Update deferring_execution.mdx\r\n\r\n* [documentation] grammar fixes in gradient_synchronization.mdx\r\n\r\nThese changes are grammatical and do not affect the ideas communicated in the file.",
+          "html_url": "https://github.com/huggingface/accelerate/commit/5f21cde3c74fa511c4bec55cac5fe410effbe182"
+        },
+        {
+          "sha": "90e9703d99cd271504c4ae4d807666c97ce4ae4f",
+          "author_date": "2023-06-07T13:27:05Z",
+          "message": "Eval mode (#1540)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/90e9703d99cd271504c4ae4d807666c97ce4ae4f"
+        },
+        {
+          "sha": "6f14e619b2256bcf41f174d6618b496c888286e1",
+          "author_date": "2023-06-07T13:50:09Z",
+          "message": "Update migration.mdx (#1549)",
+          "html_url": "https://github.com/huggingface/accelerate/commit/6f14e619b2256bcf41f174d6618b496c888286e1"
+        },
+        {
+          "sha": "9765b84f9c6e8cf6d81f9dc1d927bc99c69b5543",
+          "author_date": "2023-06-07T14:05:15Z",
+          "message": "Release: v0.20.0",
+          "html_url": "https://github.com/huggingface/accelerate/commit/9765b84f9c6e8cf6d81f9dc1d927bc99c69b5543"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.20.1",
@@ -1338,8 +2872,21 @@
     {
       "release": "v0.29.1",
       "previous_release": "v0.29.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "12eed81eb838126001b1f484153c2caa4b420685",
+          "author_date": "2024-04-05T17:01:54Z",
+          "message": "Fixup",
+          "html_url": "https://github.com/huggingface/accelerate/commit/12eed81eb838126001b1f484153c2caa4b420685"
+        },
+        {
+          "sha": "210778370e269362afaff1806f5c9801a688a5fc",
+          "author_date": "2024-04-05T17:07:09Z",
+          "message": "Release: v0.29.1",
+          "html_url": "https://github.com/huggingface/accelerate/commit/210778370e269362afaff1806f5c9801a688a5fc"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.29.2",

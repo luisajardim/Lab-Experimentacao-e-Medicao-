@@ -869,8 +869,171 @@
     {
       "release": "v0.8.0",
       "previous_release": "v0.7.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "051d7d6eb45b05f43abf45cc6a18be713e51cb1b",
+          "author_date": "2016-01-05T19:36:45Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/051d7d6eb45b05f43abf45cc6a18be713e51cb1b"
+        },
+        {
+          "sha": "581a2f164bfb6b0d90db08c338101878773499f0",
+          "author_date": "2016-01-05T20:11:45Z",
+          "message": "Update dockerfile to use golang 1.5 image",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/581a2f164bfb6b0d90db08c338101878773499f0"
+        },
+        {
+          "sha": "fbb8ffbfc67a1567ac67313222cf860eb241603c",
+          "author_date": "2016-01-07T17:27:16Z",
+          "message": "Encode bigints as strings",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/fbb8ffbfc67a1567ac67313222cf860eb241603c"
+        },
+        {
+          "sha": "3acc6febaeeab717c4dd60c2b8c8a3ccff1a9e81",
+          "author_date": "2016-01-07T17:33:08Z",
+          "message": "Automatically call PrepareBigints for all queries",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/3acc6febaeeab717c4dd60c2b8c8a3ccff1a9e81"
+        },
+        {
+          "sha": "28178e46de730fc717677e3373011c8ae6e70c37",
+          "author_date": "2016-01-08T02:10:53Z",
+          "message": "Format big floats as well",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/28178e46de730fc717677e3373011c8ae6e70c37"
+        },
+        {
+          "sha": "e662e907befaf557cbd600a6cd8f442f856aad66",
+          "author_date": "2016-01-08T02:20:01Z",
+          "message": "Merge pull request #109 from sosedoff/bigint-to-string\n\nConvert bigints that exceed js number limits to strings",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/e662e907befaf557cbd600a6cd8f442f856aad66"
+        },
+        {
+          "sha": "1bc824e39b7fcf1246d4aa64a3f21f6089ee445d",
+          "author_date": "2016-01-08T02:44:03Z",
+          "message": "Move query export buttons to the right, add xml export button",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/1bc824e39b7fcf1246d4aa64a3f21f6089ee445d"
+        },
+        {
+          "sha": "9b5764d4fb977b3cd2fe4d4bd09c31e4a3c94dc3",
+          "author_date": "2016-01-08T02:55:23Z",
+          "message": "Do not record duplicate queries into history",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/9b5764d4fb977b3cd2fe4d4bd09c31e4a3c94dc3"
+        },
+        {
+          "sha": "61523e33df5016b4559ebdcd2bfb8b5c3e6045b7",
+          "author_date": "2016-01-08T03:18:22Z",
+          "message": "Add support for offset in table rows endpoint, dry up code",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/61523e33df5016b4559ebdcd2bfb8b5c3e6045b7"
+        },
+        {
+          "sha": "38c971ab49b492292a190ae2ac32c7c3480a2d47",
+          "author_date": "2016-01-08T20:16:53Z",
+          "message": "Implement pagination and simple filtering",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/38c971ab49b492292a190ae2ac32c7c3480a2d47"
+        },
+        {
+          "sha": "1d05cfa0afeae98a06eb81c95db53bd1d188b91b",
+          "author_date": "2016-01-08T21:06:33Z",
+          "message": "Reset filters before loading table data",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/1d05cfa0afeae98a06eb81c95db53bd1d188b91b"
+        },
+        {
+          "sha": "be3b9547168a070eef6ab21395214eb8dcb40b0b",
+          "author_date": "2016-01-08T21:31:06Z",
+          "message": "Filtering bugfixes",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/be3b9547168a070eef6ab21395214eb8dcb40b0b"
+        },
+        {
+          "sha": "b5d6368ccabe70db9b04d92d7c870dc82578e343",
+          "author_date": "2016-01-08T21:34:02Z",
+          "message": "Do not show bindata.go in the git diff log",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/b5d6368ccabe70db9b04d92d7c870dc82578e343"
+        },
+        {
+          "sha": "73cb979721ca09ab8c99266e31deb431ee4570e4",
+          "author_date": "2016-01-08T21:44:41Z",
+          "message": "Merge pull request #110 from sosedoff/filter-and-pagination\n\nFilter and pagination",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/73cb979721ca09ab8c99266e31deb431ee4570e4"
+        },
+        {
+          "sha": "ed94244741753299ca8d7cbc90291b19d077b86c",
+          "author_date": "2016-01-09T01:10:11Z",
+          "message": "Make pgweb to use multiple sessions at once [wip]",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/ed94244741753299ca8d7cbc90291b19d077b86c"
+        },
+        {
+          "sha": "d772ae0b31028dd3af005aae7260c08003eb5641",
+          "author_date": "2016-01-09T01:44:31Z",
+          "message": "Make sessions optional via --sessions CLI flag",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/d772ae0b31028dd3af005aae7260c08003eb5641"
+        },
+        {
+          "sha": "ad1994574de3176d32578b06d6a519cdd4b2b9c0",
+          "author_date": "2016-01-10T21:03:33Z",
+          "message": "Move api middleware into its own file",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/ad1994574de3176d32578b06d6a519cdd4b2b9c0"
+        },
+        {
+          "sha": "f3920afe8c4c6b15f415be18a898d66ea7bfee43",
+          "author_date": "2016-01-10T21:16:31Z",
+          "message": "Only expose sessions data in debug mode, otherwise return just a count of sessions",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/f3920afe8c4c6b15f415be18a898d66ea7bfee43"
+        },
+        {
+          "sha": "73185940b6dc66c3bfbc3bcefa20b3bb057ab242",
+          "author_date": "2016-01-10T21:22:30Z",
+          "message": "Allow enabling sessions via SESSIONS env var",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/73185940b6dc66c3bfbc3bcefa20b3bb057ab242"
+        },
+        {
+          "sha": "d12b686e527962bfd9ecd6615571ade33d7712a0",
+          "author_date": "2016-01-10T21:36:02Z",
+          "message": "Merge pull request #111 from sosedoff/sessions\n\nDatabase sessions",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/d12b686e527962bfd9ecd6615571ade33d7712a0"
+        },
+        {
+          "sha": "0c0d0ea3a33d06d8776d40e16c4ddbbcd7da801a",
+          "author_date": "2016-01-10T21:41:07Z",
+          "message": "Update readme",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/0c0d0ea3a33d06d8776d40e16c4ddbbcd7da801a"
+        },
+        {
+          "sha": "b14b1cd60df80fcb53e518cc82dcd5fca2a03a16",
+          "author_date": "2016-01-10T21:50:16Z",
+          "message": "Change icon on sequences items on the sitebar",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/b14b1cd60df80fcb53e518cc82dcd5fca2a03a16"
+        },
+        {
+          "sha": "b5203b5c0dd44c3fbe818da81a040ba8ca1c2038",
+          "author_date": "2016-01-10T22:08:13Z",
+          "message": "Update screenshots",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/b5203b5c0dd44c3fbe818da81a040ba8ca1c2038"
+        },
+        {
+          "sha": "0ce796e1a46588ae3549a60b8ce87103bb95fb1a",
+          "author_date": "2016-01-10T23:40:10Z",
+          "message": "Godeps go 1.5.1",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/0ce796e1a46588ae3549a60b8ce87103bb95fb1a"
+        },
+        {
+          "sha": "9c7eaf63d5351a85f2533a126073de3ef000b63d",
+          "author_date": "2016-01-10T23:41:14Z",
+          "message": "Bump go to 1.5.2",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/9c7eaf63d5351a85f2533a126073de3ef000b63d"
+        },
+        {
+          "sha": "79b2d46849646a7fefd2c616e2c6bf2aee83047c",
+          "author_date": "2016-01-11T14:31:45Z",
+          "message": "Update bindata",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/79b2d46849646a7fefd2c616e2c6bf2aee83047c"
+        },
+        {
+          "sha": "5690518f25b43a62f13b839602d98e8073a1dda4",
+          "author_date": "2016-01-11T14:32:05Z",
+          "message": "Version bump: 0.8.0",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/5690518f25b43a62f13b839602d98e8073a1dda4"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.9.0",
@@ -935,8 +1098,213 @@
     {
       "release": "v0.9.10",
       "previous_release": "v0.9.9",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "ee9878ac25b6b7935c109e237cf07db7a17d2eb3",
+          "author_date": "2017-09-29T01:56:24Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/ee9878ac25b6b7935c109e237cf07db7a17d2eb3"
+        },
+        {
+          "sha": "502c13c3ce6bc23a2a135e14580b7b202bcbc545",
+          "author_date": "2017-09-29T01:58:47Z",
+          "message": "Fix formatting",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/502c13c3ce6bc23a2a135e14580b7b202bcbc545"
+        },
+        {
+          "sha": "d1eba4a0894b8a1fe27e8558250ddfb2e957649e",
+          "author_date": "2017-09-29T02:03:55Z",
+          "message": "Update docker image version",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/d1eba4a0894b8a1fe27e8558250ddfb2e957649e"
+        },
+        {
+          "sha": "f73f812cf19861d149454078fce24a91f5d99d53",
+          "author_date": "2017-09-29T05:06:48Z",
+          "message": "Correction on idle timeout",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/f73f812cf19861d149454078fce24a91f5d99d53"
+        },
+        {
+          "sha": "58ae69de0b68fc66bff5419d5359db53e1388249",
+          "author_date": "2017-10-04T04:00:18Z",
+          "message": "Fix panics when sshinfo is not set on bookmarks",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/58ae69de0b68fc66bff5419d5359db53e1388249"
+        },
+        {
+          "sha": "277e2d6cd8bf11e2ad4b0c84e29fa5f706d89e11",
+          "author_date": "2017-10-04T04:03:02Z",
+          "message": "Add an extra test to verify SSHinfoIsEmpty does not panic",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/277e2d6cd8bf11e2ad4b0c84e29fa5f706d89e11"
+        },
+        {
+          "sha": "7381ff85894bb5438d727a6f53c748a8353b805d",
+          "author_date": "2017-10-04T05:31:35Z",
+          "message": "Merge pull request #296 from sosedoff/ssh-hotfix\n\nFix panics when sshinfo is not set on bookmarks",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/7381ff85894bb5438d727a6f53c748a8353b805d"
+        },
+        {
+          "sha": "d8ce8231ccbc905bf2fd68af0888b12ea9ab6abc",
+          "author_date": "2017-10-07T14:25:00Z",
+          "message": "Dot now allow using startup bookmark in multi-session mode",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/d8ce8231ccbc905bf2fd68af0888b12ea9ab6abc"
+        },
+        {
+          "sha": "4ad70d539256421f470821f4bf1b4b8147a1d27b",
+          "author_date": "2017-10-07T16:30:12Z",
+          "message": "Tweak wording",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/4ad70d539256421f470821f4bf1b4b8147a1d27b"
+        },
+        {
+          "sha": "72b9eb443ca658bc718b81b2b3c11790cb1849e6",
+          "author_date": "2017-10-07T17:33:10Z",
+          "message": "Merge pull request #300 from sosedoff/disable-bookmark-on-startup\n\nDot now allow using startup bookmark in multi-session mode",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/72b9eb443ca658bc718b81b2b3c11790cb1849e6"
+        },
+        {
+          "sha": "0e2926cc8598d90233be095ccbb42a6b64f36073",
+          "author_date": "2017-10-13T22:23:53Z",
+          "message": "added simple copy to clipboard from data-id prop",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/0e2926cc8598d90233be095ccbb42a6b64f36073"
+        },
+        {
+          "sha": "3067b06bf6e8b7f0efd6849983bd4205ddb48915",
+          "author_date": "2017-10-14T00:08:04Z",
+          "message": "#282: added timeout flags & tuned client.IsIdle()",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/3067b06bf6e8b7f0efd6849983bd4205ddb48915"
+        },
+        {
+          "sha": "d4dde3fe4f1becdc6a0e10ad8ceef488807652d3",
+          "author_date": "2017-10-14T00:15:31Z",
+          "message": "#282 fix disabled state per idle timeout",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/d4dde3fe4f1becdc6a0e10ad8ceef488807652d3"
+        },
+        {
+          "sha": "ab443f58d08bd7661c864091d6d0257a5970ae06",
+          "author_date": "2017-10-14T00:20:42Z",
+          "message": "#301: change rexexp to String.split()",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/ab443f58d08bd7661c864091d6d0257a5970ae06"
+        },
+        {
+          "sha": "5d110da392cbc73c5b9b8c5ee4e3993ce2588216",
+          "author_date": "2017-10-14T03:33:58Z",
+          "message": "Merge pull request #302 from ldinc/issue#301\n\nadded simple copy to clipboard from data-id prop",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/5d110da392cbc73c5b9b8c5ee4e3993ce2588216"
+        },
+        {
+          "sha": "ed7557c5dabdc5f39070b343001508b04c75e383",
+          "author_date": "2017-10-14T03:34:16Z",
+          "message": "Regenerated bindata",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/ed7557c5dabdc5f39070b343001508b04c75e383"
+        },
+        {
+          "sha": "fc01b1db8145c35cd4acf3e0e3d16105cf47fa6f",
+          "author_date": "2017-10-06T14:15:44Z",
+          "message": "Search for database with autocomplete",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/fc01b1db8145c35cd4acf3e0e3d16105cf47fa6f"
+        },
+        {
+          "sha": "046022221efbe720408e71d3d90a5625978aaa38",
+          "author_date": "2017-10-14T04:04:19Z",
+          "message": "UI and design tweaks",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/046022221efbe720408e71d3d90a5625978aaa38"
+        },
+        {
+          "sha": "93211cf07304182144fbb349cdb84074efaf3275",
+          "author_date": "2017-10-14T04:04:52Z",
+          "message": "Merge branch 'EyesBear-master'",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/93211cf07304182144fbb349cdb84074efaf3275"
+        },
+        {
+          "sha": "33be6b036de01eb5504544b18d6216eddcb99cf2",
+          "author_date": "2017-10-14T11:34:32Z",
+          "message": "Merge branch 'master' into issue#282",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/33be6b036de01eb5504544b18d6216eddcb99cf2"
+        },
+        {
+          "sha": "a120b58dc2c290ff270d8e6e8dc44ee394c78c1d",
+          "author_date": "2017-10-14T11:37:20Z",
+          "message": "#282: updated bindata",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/a120b58dc2c290ff270d8e6e8dc44ee394c78c1d"
+        },
+        {
+          "sha": "38a3f01868bc4a64bf21d87fc667edbee3589e7a",
+          "author_date": "2017-10-14T22:39:07Z",
+          "message": "#282: set flag idle logic to cli-run phase",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/38a3f01868bc4a64bf21d87fc667edbee3589e7a"
+        },
+        {
+          "sha": "02df9b519f24b2da853d7ecfdea1efaf60f20b55",
+          "author_date": "2017-10-15T21:12:41Z",
+          "message": "#282: cleared bindata",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/02df9b519f24b2da853d7ecfdea1efaf60f20b55"
+        },
+        {
+          "sha": "7b6c5f74d4eecb23ea67015939f2806c98087bb1",
+          "author_date": "2017-10-21T03:14:26Z",
+          "message": "Merge pull request #303 from ldinc/issue#282\n\nIssue#282",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/7b6c5f74d4eecb23ea67015939f2806c98087bb1"
+        },
+        {
+          "sha": "ec5a12b0f778af92b068db1208bda5718b4f6d4e",
+          "author_date": "2017-10-21T03:18:07Z",
+          "message": "Rename disable connection timeout cli option",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/ec5a12b0f778af92b068db1208bda5718b4f6d4e"
+        },
+        {
+          "sha": "b8fccab33a89af0fc18c7f4aa37db44fa7ef917b",
+          "author_date": "2017-10-25T03:31:29Z",
+          "message": "Fix broken bindata",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/b8fccab33a89af0fc18c7f4aa37db44fa7ef917b"
+        },
+        {
+          "sha": "06afa786efc6530773b70b3a169c1bbf611b1c9d",
+          "author_date": "2017-10-25T03:38:51Z",
+          "message": "Trigger CI failure if bindata contains any dev links",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/06afa786efc6530773b70b3a169c1bbf611b1c9d"
+        },
+        {
+          "sha": "c4cdacc2d80a7270aa16f932dea37104553c377c",
+          "author_date": "2017-10-25T04:11:02Z",
+          "message": "Add asset check script",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/c4cdacc2d80a7270aa16f932dea37104553c377c"
+        },
+        {
+          "sha": "2dcaf4a3a1267212b64696b5b8c2bf403dbc4674",
+          "author_date": "2017-10-25T04:13:22Z",
+          "message": "Remove bindata check from test-all script",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/2dcaf4a3a1267212b64696b5b8c2bf403dbc4674"
+        },
+        {
+          "sha": "d123f8fc07d228ac9955c6ef7458ddc0b499dd3a",
+          "author_date": "2017-10-25T14:39:30Z",
+          "message": "Merge pull request #305 from sosedoff/assets-ci-guard\n\nTrigger CI failure if bindata contains any dev links",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/d123f8fc07d228ac9955c6ef7458ddc0b499dd3a"
+        },
+        {
+          "sha": "80717e6c69fbd5ce950a17bf53b0702c7387ac9e",
+          "author_date": "2017-10-29T18:07:28Z",
+          "message": "Update README\n\nadd more badges\r\nfix link to license",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/80717e6c69fbd5ce950a17bf53b0702c7387ac9e"
+        },
+        {
+          "sha": "32eb35f7b2fd23e438cf8a2599d5a295a4b8123f",
+          "author_date": "2017-10-31T01:52:10Z",
+          "message": "Merge pull request #311 from krlevkirill/patch-1\n\nUpdate README - add more badges",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/32eb35f7b2fd23e438cf8a2599d5a295a4b8123f"
+        },
+        {
+          "sha": "d51294ce5441ba524f4386a567332f6718c3146f",
+          "author_date": "2017-11-04T02:49:32Z",
+          "message": "Rebuild bindata",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/d51294ce5441ba524f4386a567332f6718c3146f"
+        },
+        {
+          "sha": "cb4ecb49eb38c2cbb8e6112a530ea4253eb8a496",
+          "author_date": "2017-11-04T02:50:25Z",
+          "message": "Release 0.9.10",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/cb4ecb49eb38c2cbb8e6112a530ea4253eb8a496"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.9.11",
@@ -965,8 +1333,105 @@
     {
       "release": "v0.11.1",
       "previous_release": "v0.11.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "4bdcfbd5b1d8170b1ee88c422c39011984b18a4f",
+          "author_date": "2018-12-24T19:08:20Z",
+          "message": "Update changelog/dockerfile",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/4bdcfbd5b1d8170b1ee88c422c39011984b18a4f"
+        },
+        {
+          "sha": "ae60604ef1c875117b2121562632439767eebe56",
+          "author_date": "2019-01-17T04:54:23Z",
+          "message": "Fix typo",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/ae60604ef1c875117b2121562632439767eebe56"
+        },
+        {
+          "sha": "bc0602c523df8f93a9f5adfcece715791c664fca",
+          "author_date": "2019-01-24T07:35:16Z",
+          "message": "Add custome base64 encode to handle special character",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/bc0602c523df8f93a9f5adfcece715791c664fca"
+        },
+        {
+          "sha": "25304f822915d5eb3df107fcf53bf9da2fc479e4",
+          "author_date": "2019-01-25T04:04:21Z",
+          "message": "Fix: missing base64.js in index.html and remove blank space",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/25304f822915d5eb3df107fcf53bf9da2fc479e4"
+        },
+        {
+          "sha": "a7959ad0fab9aa9be567c7d89a130e8fa383f6de",
+          "author_date": "2019-01-25T16:29:24Z",
+          "message": "Fix startup error when DATABASE_URL is set",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/a7959ad0fab9aa9be567c7d89a130e8fa383f6de"
+        },
+        {
+          "sha": "8dab66567dd00adf9e950b0e3a2802017e34bf69",
+          "author_date": "2019-01-25T17:08:02Z",
+          "message": "Merge pull request #406 from sosedoff/fix-startup-error-with-db-url\n\nFix startup error when DATABASE_URL is set",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/8dab66567dd00adf9e950b0e3a2802017e34bf69"
+        },
+        {
+          "sha": "baa587166c84c3c43e8ce1e9144c4d4564538ddf",
+          "author_date": "2019-01-28T17:47:36Z",
+          "message": "Merge pull request #405 from Nhat002/fix_encode_query_to_base64_in_export\n\nAdd custome base64 encode to handle special characters on query to export result",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/baa587166c84c3c43e8ce1e9144c4d4564538ddf"
+        },
+        {
+          "sha": "7995a588bd93d738514aa679b9e70f2fc15b98b1",
+          "author_date": "2019-01-28T18:02:30Z",
+          "message": "Remove apt cache when building docker container",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/7995a588bd93d738514aa679b9e70f2fc15b98b1"
+        },
+        {
+          "sha": "e6f6dbbdddd2705e05b78f0f4276b697f4be5b6f",
+          "author_date": "2019-01-28T18:08:25Z",
+          "message": "Update license years",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/e6f6dbbdddd2705e05b78f0f4276b697f4be5b6f"
+        },
+        {
+          "sha": "d48172986e40799e356e46cb69aa17f3eb89b5c3",
+          "author_date": "2019-01-28T20:03:45Z",
+          "message": "Fix error when automatic user detection fails",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/d48172986e40799e356e46cb69aa17f3eb89b5c3"
+        },
+        {
+          "sha": "c32d68809bf921048487f01f5115c721943bcbb9",
+          "author_date": "2019-01-28T20:22:05Z",
+          "message": "Add extra note",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/c32d68809bf921048487f01f5115c721943bcbb9"
+        },
+        {
+          "sha": "01516e030b0a089c94deb44ab8c0ce1d6a42f2af",
+          "author_date": "2019-01-28T20:30:57Z",
+          "message": "Merge pull request #408 from sosedoff/fix-auto-user-detection\n\nFix error when automatic user detection fails",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/01516e030b0a089c94deb44ab8c0ce1d6a42f2af"
+        },
+        {
+          "sha": "0556d8b69d5c689bd6feb194da596ad121c89af0",
+          "author_date": "2019-01-28T22:32:43Z",
+          "message": "Switch to github.com/go-bindata/go-bindata fork",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/0556d8b69d5c689bd6feb194da596ad121c89af0"
+        },
+        {
+          "sha": "44b6932202f73b6fea74530303e5e578c64e006a",
+          "author_date": "2019-01-28T22:45:41Z",
+          "message": "Regenerate bindata",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/44b6932202f73b6fea74530303e5e578c64e006a"
+        },
+        {
+          "sha": "52bda5f8234c2e402562d54ed8c8bd9341e36c74",
+          "author_date": "2019-01-28T22:51:43Z",
+          "message": "Merge pull request #409 from sosedoff/switch-bindata-dep\n\nSwitch to github.com/go-bindata/go-bindata fork",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/52bda5f8234c2e402562d54ed8c8bd9341e36c74"
+        },
+        {
+          "sha": "dc1009cdd8ca512b46344f7a1b77cdbf44051747",
+          "author_date": "2019-01-28T23:11:04Z",
+          "message": "Release 0.11.1",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/dc1009cdd8ca512b46344f7a1b77cdbf44051747"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.11.2",
@@ -1097,14 +1562,178 @@
     {
       "release": "v0.16.2",
       "previous_release": "v0.16.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f8bfe2de56eb138df8d496247baca5f23edc70b4",
+          "author_date": "2024-09-07T16:49:04Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/f8bfe2de56eb138df8d496247baca5f23edc70b4"
+        },
+        {
+          "sha": "a7160932361eaeee08c43b884a1d2bb11e489fac",
+          "author_date": "2024-09-08T15:17:18Z",
+          "message": "Update references from master branch to main branch (#750)",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/a7160932361eaeee08c43b884a1d2bb11e489fac"
+        },
+        {
+          "sha": "487e2820f4356e89e480b21f9f19f5a300cdca48",
+          "author_date": "2024-10-17T03:28:27Z",
+          "message": "Try running checks against pg 17 (#758)\n\n* Try running checks against pg 17\r\n\r\n* Install postgresql-client-17",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/487e2820f4356e89e480b21f9f19f5a300cdca48"
+        },
+        {
+          "sha": "e63945ee7182435a729f22a4203e2f15d00f6350",
+          "author_date": "2024-11-02T16:19:33Z",
+          "message": "Version bump: 0.16.2",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/e63945ee7182435a729f22a4203e2f15d00f6350"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.17.0",
       "previous_release": "v0.16.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "bcd170ab74c6271950b56688d807d9179c0ec9bb",
+          "author_date": "2024-11-02T16:26:17Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/bcd170ab74c6271950b56688d807d9179c0ec9bb"
+        },
+        {
+          "sha": "7fe302ed7c58d8f4d72bcffdd923a01aefb70085",
+          "author_date": "2024-11-02T16:28:51Z",
+          "message": "Update changelog formatting",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/7fe302ed7c58d8f4d72bcffdd923a01aefb70085"
+        },
+        {
+          "sha": "08b1ea71e78191d4c9cd0ffa7ec1aa65cff48e32",
+          "author_date": "2024-11-18T06:08:29Z",
+          "message": "Fix typos (#764)\n\nFound via `codespell -S static,data -L selct`",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/08b1ea71e78191d4c9cd0ffa7ec1aa65cff48e32"
+        },
+        {
+          "sha": "e6df3d19fafd12cde9fdcac99f5e86e3db1caea2",
+          "author_date": "2024-11-20T05:55:44Z",
+          "message": "add exec time of empty queries (#763)\n\n* add exec time of empty queries\r\n* add { }\r\n* fix space\r\n* use proposed format",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/e6df3d19fafd12cde9fdcac99f5e86e3db1caea2"
+        },
+        {
+          "sha": "f5f78eb32eaaa5713de244a32fc99f5e22410291",
+          "author_date": "2024-12-15T22:46:01Z",
+          "message": "Add server settings view (#768)",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/f5f78eb32eaaa5713de244a32fc99f5e22410291"
+        },
+        {
+          "sha": "302aa1d85b5dcf80d71fef61ab2c613651fec262",
+          "author_date": "2024-12-21T05:30:37Z",
+          "message": "Shorten git revision printed in the --version output (#770)",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/302aa1d85b5dcf80d71fef61ab2c613651fec262"
+        },
+        {
+          "sha": "ed8a581ff2aea48c3f1f1de7c1878d8106bf3e5d",
+          "author_date": "2025-02-16T18:04:46Z",
+          "message": "Bump rack in /config/examples/connect_backend_ruby (#777)\n\nBumps [rack](https://github.com/rack/rack) from 2.2.6.2 to 2.2.11.\n- [Release notes](https://github.com/rack/rack/releases)\n- [Changelog](https://github.com/rack/rack/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/rack/rack/compare/v2.2.6.2...v2.2.11)\n\n---\nupdated-dependencies:\n- dependency-name: rack\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/ed8a581ff2aea48c3f1f1de7c1878d8106bf3e5d"
+        },
+        {
+          "sha": "8413681db02784096087d093697e0a12ea2e3114",
+          "author_date": "2025-03-30T15:28:18Z",
+          "message": "Fix typo in the list of env vars (#786)",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/8413681db02784096087d093697e0a12ea2e3114"
+        },
+        {
+          "sha": "2e8800150e9e198c8c6402f514566e29c2719fa9",
+          "author_date": "2025-06-15T19:26:44Z",
+          "message": "Bump rack from 2.2.11 to 2.2.14 in /config/examples/connect_backend_ruby (#792)\n\nBumps [rack](https://github.com/rack/rack) from 2.2.11 to 2.2.14.\n- [Release notes](https://github.com/rack/rack/releases)\n- [Changelog](https://github.com/rack/rack/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/rack/rack/compare/v2.2.11...v2.2.14)\n\n---\nupdated-dependencies:\n- dependency-name: rack\n  dependency-version: 2.2.14\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/2e8800150e9e198c8c6402f514566e29c2719fa9"
+        },
+        {
+          "sha": "266a5160769e4cb25b93c924d4aee5f42c29fb62",
+          "author_date": "2025-06-15T19:32:30Z",
+          "message": "Update connect backend code to work on latest ruby version",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/266a5160769e4cb25b93c924d4aee5f42c29fb62"
+        },
+        {
+          "sha": "70f62feec849d29cf48299876eb56c1c29cb65d3",
+          "author_date": "2025-11-11T18:19:05Z",
+          "message": "Connect backend refactor (#801)\n\n* Move connect backend code to its own package\n* Move errors into the connect package\n* Add NewBackend func",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/70f62feec849d29cf48299876eb56c1c29cb65d3"
+        },
+        {
+          "sha": "4ce11c039ecad7ade4d6b286492143bd75a3f771",
+          "author_date": "2025-11-11T19:26:49Z",
+          "message": "Bump golangci-linter to 1.62.2 (#772)\n\n* Bump golangci-linter to 1.62.2\n* Address linting warning via change or ignore",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/4ce11c039ecad7ade4d6b286492143bd75a3f771"
+        },
+        {
+          "sha": "e3085a44baafb3461b052758a570b8df6b63192c",
+          "author_date": "2025-11-11T19:30:42Z",
+          "message": "Add PostgreSQL 18 support to Github Actions (#816)\n\n* Run against PostgreSQL 18\n* Handle constraints for pg18\n* Bump golangci-linter to 1.62.2 (#772)\n* Bump golangci-linter to 1.62.2\n* Address linting warning via change or ignore",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/e3085a44baafb3461b052758a570b8df6b63192c"
+        },
+        {
+          "sha": "6a52fea44a64c42e4c89bae6c6ddf7eb05a714a7",
+          "author_date": "2025-11-11T19:55:42Z",
+          "message": "Add extra test for verifiying ssh connection options (#817)\n\n* Add extra test for verifiying ssh connection options\n* Fix failing manager test\n* Fix another test",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/6a52fea44a64c42e4c89bae6c6ddf7eb05a714a7"
+        },
+        {
+          "sha": "3fb87562edcbb6164f88365068bda0fe5a439191",
+          "author_date": "2025-11-11T20:32:39Z",
+          "message": "Bump golangci-lint version in CI to v1.64.8 (#819)",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/3fb87562edcbb6164f88365068bda0fe5a439191"
+        },
+        {
+          "sha": "9a5df8487ad95b12c452d3f53cac68881d4050c7",
+          "author_date": "2025-11-12T06:18:57Z",
+          "message": "Use go1.24 in CI and scripts (#818)",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/9a5df8487ad95b12c452d3f53cac68881d4050c7"
+        },
+        {
+          "sha": "79d8afc715d0e660625107decfee5713700b91ea",
+          "author_date": "2025-11-12T06:30:18Z",
+          "message": "Update dockerfile to use golang 1.24 image (#821)",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/79d8afc715d0e660625107decfee5713700b91ea"
+        },
+        {
+          "sha": "74e8482f960aa9ebfd1c408a4955d375269451ba",
+          "author_date": "2025-11-15T18:05:15Z",
+          "message": "Bump go crypto package to 0.44.0 (#820)",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/74e8482f960aa9ebfd1c408a4955d375269451ba"
+        },
+        {
+          "sha": "06d73805a8c74170fcabe60fb02feed6aefa0d34",
+          "author_date": "2025-11-16T21:12:28Z",
+          "message": "Minor session manager code cleanup and refactor (#822)\n\n* Return a copy of all sessions for session manager Sessions method()\n* Use standard mutex Lock method when iterating over stale sessions\n* Use defer for consistency",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/06d73805a8c74170fcabe60fb02feed6aefa0d34"
+        },
+        {
+          "sha": "1c3c82de1826cf9344a8d3837a2a83efd46385c7",
+          "author_date": "2025-11-22T15:07:41Z",
+          "message": "Bump golang.org/x/crypto from 0.44.0 to 0.45.0 (#823)\n\nBumps [golang.org/x/crypto](https://github.com/golang/crypto) from 0.44.0 to 0.45.0.\n- [Commits](https://github.com/golang/crypto/compare/v0.44.0...v0.45.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/crypto\n  dependency-version: 0.45.0\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/1c3c82de1826cf9344a8d3837a2a83efd46385c7"
+        },
+        {
+          "sha": "4919407228ab1901c9384be35e5636930e2c35e4",
+          "author_date": "2025-11-22T15:18:35Z",
+          "message": "Fix ENV reference in Dockerfile",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/4919407228ab1901c9384be35e5636930e2c35e4"
+        },
+        {
+          "sha": "c6ece21133feb07cacbc56271fa7af7f28ec6bac",
+          "author_date": "2025-11-22T15:19:34Z",
+          "message": "Remove obsolete  reference from docker compose file",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/c6ece21133feb07cacbc56271fa7af7f28ec6bac"
+        },
+        {
+          "sha": "6b0b0244d1aefd6971999b03481eeeaa4ec7cf55",
+          "author_date": "2025-11-22T15:21:34Z",
+          "message": "Version bump: 0.17.0",
+          "html_url": "https://github.com/sosedoff/pgweb/commit/6b0b0244d1aefd6971999b03481eeeaa4ec7cf55"
+        }
+      ],
+      "ignored_reason": null
     }
   ],
   "runs_by_month": {

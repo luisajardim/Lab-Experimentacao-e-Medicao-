@@ -661,8 +661,117 @@
     {
       "release": "v1.2.0",
       "previous_release": "v1.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "909e069e9d650defccecba86aa222f862507007a",
+          "author_date": "2018-05-16T22:27:14Z",
+          "message": "Remove redundant space",
+          "html_url": "https://github.com/boyter/scc/commit/909e069e9d650defccecba86aa222f862507007a"
+        },
+        {
+          "sha": "1c5bd7d7aaaad046fd3912302d2038ce51b905ab",
+          "author_date": "2018-06-05T17:18:05Z",
+          "message": "validate languages.json during constants generation\n\nI was trying to add a new language definition to languages.json but, as\nis with json, the pesky commas and other syntax was getting in the way.\nWhen running `go generate` invalid JSON is encoded into constants.go and\nthen scc would just silently igore the error.  As a result no language\ndefinitions would load.\n\nThis add some basic JSON validation to the go generate process as well\nas exposes some other possible errors.  It also will generate the\nconstants to a temporary file before copying over making the process\nmore atomic and not clobbering a file on a failure.\n\nSince there is now json validation a panic as added to scc itself to\nbarf if it can't read the json data.",
+          "html_url": "https://github.com/boyter/scc/commit/1c5bd7d7aaaad046fd3912302d2038ce51b905ab"
+        },
+        {
+          "sha": "7d2982f5521e3c0fd0c3942f5d0abaff114437c1",
+          "author_date": "2018-06-05T17:58:11Z",
+          "message": "Add thrift as a language\n\n.thrift files are IDL definitions for thrift (similar to protobufs).\nThe spec can be found here https://thrift.apache.org/docs/idl",
+          "html_url": "https://github.com/boyter/scc/commit/7d2982f5521e3c0fd0c3942f5d0abaff114437c1"
+        },
+        {
+          "sha": "8a806ba2fe8d6673762bbc48494f5bb721d2160f",
+          "author_date": "2018-06-05T22:03:24Z",
+          "message": "Merge pull request #10 from nemith/thriftlang\n\nAdd thrift as a language",
+          "html_url": "https://github.com/boyter/scc/commit/8a806ba2fe8d6673762bbc48494f5bb721d2160f"
+        },
+        {
+          "sha": "4a1f669c2b4c028cb805199593ac12dee5f03630",
+          "author_date": "2018-06-05T22:28:21Z",
+          "message": "Normalize all the line endings",
+          "html_url": "https://github.com/boyter/scc/commit/4a1f669c2b4c028cb805199593ac12dee5f03630"
+        },
+        {
+          "sha": "2c1201e850db543668985ba2f558a883cf528f9c",
+          "author_date": "2018-06-05T22:31:34Z",
+          "message": "Merge pull request #8 from nemith/jsonvalidate\n\nvalidate languages.json during constants generation",
+          "html_url": "https://github.com/boyter/scc/commit/2c1201e850db543668985ba2f558a883cf528f9c"
+        },
+        {
+          "sha": "d3ffcc072394b9c808cc63a00cb8d12300121c1b",
+          "author_date": "2018-06-07T07:52:45Z",
+          "message": "Add support for checking full filenames https://github.com/boyter/scc/issues/11",
+          "html_url": "https://github.com/boyter/scc/commit/d3ffcc072394b9c808cc63a00cb8d12300121c1b"
+        },
+        {
+          "sha": "948742a321bcdd282fc6534b55d36c8e220a6737",
+          "author_date": "2018-06-07T08:11:47Z",
+          "message": "Merge pull request #12 from boyter/Cmake\n\nAdd support for checking full filenames https://github.com/boyter/scc…",
+          "html_url": "https://github.com/boyter/scc/commit/948742a321bcdd282fc6534b55d36c8e220a6737"
+        },
+        {
+          "sha": "d6793b07fa1cce2ddf2384c8ff3b0a7822df9fbf",
+          "author_date": "2018-06-08T00:59:58Z",
+          "message": "Add MQL",
+          "html_url": "https://github.com/boyter/scc/commit/d6793b07fa1cce2ddf2384c8ff3b0a7822df9fbf"
+        },
+        {
+          "sha": "32f2b059c63d906d322b8a1c964d01b282cd9e28",
+          "author_date": "2018-06-08T01:01:20Z",
+          "message": "Add in MQL support",
+          "html_url": "https://github.com/boyter/scc/commit/32f2b059c63d906d322b8a1c964d01b282cd9e28"
+        },
+        {
+          "sha": "4c0b12b5a3b1f695d9bf2e8ffa59ede6d6fad48c",
+          "author_date": "2018-06-08T01:10:12Z",
+          "message": "Merge pull request #13 from boyter/MQL\n\nMQL support",
+          "html_url": "https://github.com/boyter/scc/commit/4c0b12b5a3b1f695d9bf2e8ffa59ede6d6fad48c"
+        },
+        {
+          "sha": "78bf2c26cde699e1f83d7f1cf551c21f5f18c894",
+          "author_date": "2018-06-12T08:07:55Z",
+          "message": "WIP of JSON output",
+          "html_url": "https://github.com/boyter/scc/commit/78bf2c26cde699e1f83d7f1cf551c21f5f18c894"
+        },
+        {
+          "sha": "fabc25cb0b9b4e8b6e35f651847bdb11743c00a3",
+          "author_date": "2018-06-12T22:16:37Z",
+          "message": "Add JSON ouput and file write output",
+          "html_url": "https://github.com/boyter/scc/commit/fabc25cb0b9b4e8b6e35f651847bdb11743c00a3"
+        },
+        {
+          "sha": "62622d5c1d4c741d30520a4eaabebb70aef69535",
+          "author_date": "2018-06-12T22:24:28Z",
+          "message": "Merge pull request #14 from boyter/JSON\n\nJSON ouput",
+          "html_url": "https://github.com/boyter/scc/commit/62622d5c1d4c741d30520a4eaabebb70aef69535"
+        },
+        {
+          "sha": "fd167cd4f2f1c970ddbbfb7376e84536a611f65f",
+          "author_date": "2018-06-12T22:26:53Z",
+          "message": "Add another link",
+          "html_url": "https://github.com/boyter/scc/commit/fd167cd4f2f1c970ddbbfb7376e84536a611f65f"
+        },
+        {
+          "sha": "3bd5e7deaf6103b6ccbfe68051b74337efe2ed0d",
+          "author_date": "2018-06-13T08:19:40Z",
+          "message": "Add in CSV output support",
+          "html_url": "https://github.com/boyter/scc/commit/3bd5e7deaf6103b6ccbfe68051b74337efe2ed0d"
+        },
+        {
+          "sha": "dccfcc227ff56fb6b45427050a8acdd8ac221af7",
+          "author_date": "2018-06-13T21:56:40Z",
+          "message": "Merge pull request #15 from boyter/CSV\n\nAdd in CSV output support",
+          "html_url": "https://github.com/boyter/scc/commit/dccfcc227ff56fb6b45427050a8acdd8ac221af7"
+        },
+        {
+          "sha": "afd69561b810320218b8250cf78e533f7a1bbd25",
+          "author_date": "2018-06-13T22:02:46Z",
+          "message": "For new release 1.2.0",
+          "html_url": "https://github.com/boyter/scc/commit/afd69561b810320218b8250cf78e533f7a1bbd25"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "untagged-928286b8064e2cf6dd35",

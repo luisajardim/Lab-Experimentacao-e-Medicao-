@@ -316,8 +316,165 @@
     {
       "release": "1.4.0",
       "previous_release": "1.3.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "b9ac21d8a79004cba4d9964556aae10824c4e9e7",
+          "author_date": "2025-11-22T13:13:23Z",
+          "message": "fix(wavelet): harden wavelet_denoise with overflow protection and calloc\n\n- Add overflow check for allocation size\n- Switch to calloc for zero-initialization\n- Add unit test for allocation failure protection\n- Reorder tests to show performance suite last\n- Add .cache to gitignore\n\nResolves #15",
+          "html_url": "https://github.com/francescopace/espectre/commit/b9ac21d8a79004cba4d9964556aae10824c4e9e7"
+        },
+        {
+          "sha": "c57a4f28d71f484228e6ddfd25d6f4798c3038c9",
+          "author_date": "2025-11-22T13:19:28Z",
+          "message": "Merge pull request #20 from francescopace/fix/issue-15-wavelet-hardening\n\nfix(wavelet): harden wavelet_denoise with overflow protection and calloc",
+          "html_url": "https://github.com/francescopace/espectre/commit/c57a4f28d71f484228e6ddfd25d6f4798c3038c9"
+        },
+        {
+          "sha": "9614149c3c54018fb40dc687020320990e7af568",
+          "author_date": "2025-11-22T02:08:26Z",
+          "message": "feat: add ESP32 base configuration (WIP)\n\nAdded sdkconfig.defaults.esp32 for basic ESP32 support.\nNote: This configuration has not been tested yet, so it is considered a work in progress.\n\nReferences #1",
+          "html_url": "https://github.com/francescopace/espectre/commit/9614149c3c54018fb40dc687020320990e7af568"
+        },
+        {
+          "sha": "a380bb476aec6651aa62171419a2b1dbb6df7b66",
+          "author_date": "2025-11-22T14:52:52Z",
+          "message": "Fix #16 – Migrate ESPectre CLI from Bash to Python\n\n- Replaced the original `espectre-cli.sh` Bash script with a cross‑platform\n  Python implementation using `prompt_toolkit`, `paho‑mqtt`, `colorama`,\n  and `python‑dotenv`.\n- Removed platform‑specific dependencies (mosquitto‑clients, afplay, etc.).\n- Added a styled prompt, nested autocompletion, and Pygments‑based YAML\n  highlighting.\n\nCloses #16.",
+          "html_url": "https://github.com/francescopace/espectre/commit/a380bb476aec6651aa62171419a2b1dbb6df7b66"
+        },
+        {
+          "sha": "57ffdd8a58c2c9b3f7d1c92ed2af7222500d6528",
+          "author_date": "2025-11-22T17:08:17Z",
+          "message": "feat: Add Wi-Fi Theremin sonification and enable continuous feature extraction\n\n- Add espectre-theremin.html: Interactive audio sonification of CSI data\n  * Real-time audio synthesis with Web Audio API\n  * Three modes: Continuous, Quantized, Hybrid\n  * Feature-based modulation: All 10 CSI features modulate audio parameters\n  * Musical scales: Pentatonic, Major, Minor, Chromatic\n  * 60Hz interpolation for smooth audio transitions\n\n- Enable continuous feature extraction when features_enabled=true\n  * Features now extracted in both IDLE and MOTION states\n  * Provides continuous data stream for ML applications\n  * Optimized feature array initialization (static constant)\n\n- Update documentation (README.md, SETUP.md, CHANGELOG.md)\n  * Reflect new feature extraction behavior\n  * Add Wi-Fi Theremin documentation",
+          "html_url": "https://github.com/francescopace/espectre/commit/57ffdd8a58c2c9b3f7d1c92ed2af7222500d6528"
+        },
+        {
+          "sha": "dc6f2a74dfbf43d938900a9ca1525278e610ba4a",
+          "author_date": "2025-11-22T17:36:15Z",
+          "message": "Merge pull request #21 from francescopace/feature/theremin\n\nfeat: Add Wi-Fi Theremin sonification and enable continuous feature extraction",
+          "html_url": "https://github.com/francescopace/espectre/commit/dc6f2a74dfbf43d938900a9ca1525278e610ba4a"
+        },
+        {
+          "sha": "51ca720b1166b22311012479de7e25be0d0e57d7",
+          "author_date": "2025-11-23T07:20:53Z",
+          "message": "Remove references to the C6 having support for 5GHz WiFi",
+          "html_url": "https://github.com/francescopace/espectre/commit/51ca720b1166b22311012479de7e25be0d0e57d7"
+        },
+        {
+          "sha": "3897f60f827bf3d0760c9573b786910402d8508f",
+          "author_date": "2025-11-23T19:28:15Z",
+          "message": "requested changes",
+          "html_url": "https://github.com/francescopace/espectre/commit/3897f60f827bf3d0760c9573b786910402d8508f"
+        },
+        {
+          "sha": "40cf2487275c84834100ed148d6e775af3641c8e",
+          "author_date": "2025-11-23T19:43:22Z",
+          "message": "Merge pull request #23 from kylefmohr/remove-5ghz-references\n\nRemove references to the C6 having support for 5GHz WiFi",
+          "html_url": "https://github.com/francescopace/espectre/commit/40cf2487275c84834100ed148d6e775af3641c8e"
+        },
+        {
+          "sha": "951d7bddcdf6fe5052866d4146bb726cfd1365c8",
+          "author_date": "2025-11-24T07:56:38Z",
+          "message": "add pygments>=2.19.2",
+          "html_url": "https://github.com/francescopace/espectre/commit/951d7bddcdf6fe5052866d4146bb726cfd1365c8"
+        },
+        {
+          "sha": "68387eb54e458e3b830968d45a1d76345a0a1f14",
+          "author_date": "2025-11-24T16:13:43Z",
+          "message": "Merge pull request #26 from mcfd/patch-1\n\nadd pygments>=2.19.2 in python requirements.txt",
+          "html_url": "https://github.com/francescopace/espectre/commit/68387eb54e458e3b830968d45a1d76345a0a1f14"
+        },
+        {
+          "sha": "39362fef19ebaf651a9b84ee6db08edffe5e0b48",
+          "author_date": "2025-11-24T17:22:12Z",
+          "message": "docs: add binary sensor and numeric sensor configurations for Home Assistant\n\n- Add Option 1: Binary Sensor (motion/idle) for automations\n- Add Option 2: Numeric Sensor (movement intensity) for analysis\n- Include comparison table to help users choose the right configuration\n- Add automation examples for both sensor types\n- Provide combined configuration example for using both simultaneously\n\nRelated to #25",
+          "html_url": "https://github.com/francescopace/espectre/commit/39362fef19ebaf651a9b84ee6db08edffe5e0b48"
+        },
+        {
+          "sha": "c971f87462569e540bb802a1566bf6cfca46bb76",
+          "author_date": "2025-11-23T12:33:18Z",
+          "message": "feat: Micro-ESPectre - Pure Python motion detection for MicroPython\n\nLightweight Python port of ESPectre for MicroPython with esp32-microcsi module.\n\nImplementation:\n\n- Pure Python with src/ package structure\n- MVS segmentation algorithm aligned with C version\n- Spatial turbulence with configurable subcarrier selection\n- JSON-based config persistence (auto-save/load)\n- MQTT Commands (backward compatibility with ESPectre)",
+          "html_url": "https://github.com/francescopace/espectre/commit/c971f87462569e540bb802a1566bf6cfca46bb76"
+        },
+        {
+          "sha": "8ca2a1b46b853d6ad6a84fd858cb16216f973962",
+          "author_date": "2025-11-24T22:39:31Z",
+          "message": "refactor: remove unused K_FACTOR parameter\n\nThe k_factor parameter was originally intended as a threshold sensitivity\nmultiplier (effective_threshold = threshold * k_factor) to allow adjusting\ndetection sensitivity without changing the base threshold value.\n\nSince adjusting the threshold value directly achieves the same result with simpler\nconfiguration, k_factor is redundant and has been removed.\n\nThis simplifies the configuration interface: users can now directly adjust\nthe threshold value instead of managing two separate parameters.",
+          "html_url": "https://github.com/francescopace/espectre/commit/8ca2a1b46b853d6ad6a84fd858cb16216f973962"
+        },
+        {
+          "sha": "f6a977ed36931914c3c58a995570e06653aa1eb8",
+          "author_date": "2025-11-25T01:02:17Z",
+          "message": "feat: Increase traffic generator max rate to 1000 pps (Nyquist-Shannon theorem)\n\nIncrease maximum traffic generator rate from 50 to 1000 packets per second\nto support high-frequency motion detection scenarios.\n\nRationale (Nyquist-Shannon Sampling Theorem):\n- For fast motion detection/precision localization (Fmax ≈ 300-400 Hz)\n- Required sampling rate: Fs ≥ 2 × Fmax ≈ 600-1000 Hz\n- Previous limit (50 pps) only supported vital signs monitoring\n- New limit (1000 pps) enables full spectrum of Wi-Fi sensing applications\n\nChanges:\n- ESP32 (C): Centralized constants in traffic_generator.h\n  * TRAFFIC_RATE_MIN = 0, TRAFFIC_RATE_MAX = 1000\n  * Updated validation in traffic_generator.c and mqtt_commands.c\n  * Fixed unsigned comparison warnings (removed < 0 checks)\n\n- MicroPython: Centralized constants in config.py\n  * TRAFFIC_RATE_MIN = 0, TRAFFIC_RATE_MAX = 1000\n  * Updated traffic_generator.py and mqtt/commands.py\n  * Default rate increased to 100 pps (was 20 pps)\n\nApplication Scenarios:\n- Vital signs (breathing, heartbeat): 10-30 Hz (Low)\n- Activity recognition (walking, sitting): 60-100 Hz (Medium)\n- Fast motion/precision localization: 600-1000 Hz (High)\n\nAll validation logic and error messages updated to reflect new limits.",
+          "html_url": "https://github.com/francescopace/espectre/commit/f6a977ed36931914c3c58a995570e06653aa1eb8"
+        },
+        {
+          "sha": "c23b061202e0d84783b336d68e2d0a711666d151",
+          "author_date": "2025-11-25T13:14:36Z",
+          "message": "refactor: Centralize configuration and validation logic\n\nMajor refactoring to improve code organization and eliminate duplication:\n\nConfiguration Centralization:\n- Created espectre.h (formerly espectre_config.h) with all system constants\n- Organized by category: System, CSI Processing, Filters, Segmentation, Traffic, NVS\n- Single source of truth for all configuration values\n- Similar approach to Python's config.py\n\nSimplified segmentation. Removed redundant:\n- min_length\n- max_length\n- k_factor parameter\n\nValidation Module:\n- Created validation.h/c with centralized validation functions\n- Implements 'validate at boundary' pattern (MQTT) + defensive validation (NVS)\n- nvs_storage.c: Uses centralized validation with auto-fix\n- segmentation.c: Removed validation from setters (trust caller)\n- mqtt_commands.c: Uses centralized validate_float()\n\nNVS Persistence Fixes:\n- Fixed hardcoded values throughout codebase\n- Proper NVS save/load for all configuration parameters\n- Consistent parameter handling across modules",
+          "html_url": "https://github.com/francescopace/espectre/commit/c23b061202e0d84783b336d68e2d0a711666d151"
+        },
+        {
+          "sha": "14e3ceb0ca6a85530dd85e3090fef1fc4452b0c9",
+          "author_date": "2025-11-27T03:12:19Z",
+          "message": "refactor: Add micro-espectre analysis tools and refactor data processing\n\n- Add data collector and filters modules\n- Implement 6 analysis tools for CSI data processing:\n  * Raw data analysis\n  * System tuning analysis\n  * SNR normalization analysis\n  * Filter location analysis\n  * Filter turbulence analysis\n  * Hampel parameter optimization\n- Add baseline and movement test data\n- Remove obsolete test_segmentation_local.py",
+          "html_url": "https://github.com/francescopace/espectre/commit/14e3ceb0ca6a85530dd85e3090fef1fc4452b0c9"
+        },
+        {
+          "sha": "eb6c43c71d5ec7983e6b88f2cc52d9cd572c9ae3",
+          "author_date": "2025-11-27T12:32:10Z",
+          "message": "feat: add two-pass variance algorithm and centralize configuration defaults\n\n- Add calculate_variance_two_pass() for numerically stable variance calculation\n- Centralize all filter defaults in espectre.h (Hampel, Savgol, Butterworth, Wavelet, CUSUM)\n- Add default subcarrier selection (top 12 most informative)\n- Update segmentation threshold from 3.0 to 1.0 for better sensitivity\n- Add variance algorithm analysis tool (7_analyze_variance_algo.py)\n- Sync Python implementation with C defaults",
+          "html_url": "https://github.com/francescopace/espectre/commit/eb6c43c71d5ec7983e6b88f2cc52d9cd572c9ae3"
+        },
+        {
+          "sha": "00e5245800d9e71dd9d776d0dad5663dded3feaf",
+          "author_date": "2025-11-27T13:45:00Z",
+          "message": "test: improve segmentation tests with stricter thresholds and memory checks\n\n- Change test counting logic from segment transitions to MOTION packets\n- Increase thresholds: >94% recall (was >1 segment), >95% in performance suite\n- Add edge case test for invalid inputs (NaN, infinity, negative values)\n- Add stress test processing 10,000 packets with memory leak detection\n- Fix include: esp_heap_caps.h → esp_system.h for esp_get_free_heap_size()\n- Add PERFORMANCE.md to document performances and results\n\nAll 16 tests pass:\n- Segmentation: 94.7% recall, 0% FP rate\n- Memory: 0 bytes leaked after 10,000 packets\n- Performance suite: 100% recall, 0% FP rate",
+          "html_url": "https://github.com/francescopace/espectre/commit/00e5245800d9e71dd9d776d0dad5663dded3feaf"
+        },
+        {
+          "sha": "0dca8f0eaddacbf2a5e522c963b6d2854d7ac638",
+          "author_date": "2025-11-27T16:16:00Z",
+          "message": "refactor: remove CSI raw data extractor from firmware and web UI\n\nThe CSI raw data extraction functionality has been replaced by the Python\ndata_collector.py script in micro-espectre, which provides a more flexible\nand efficient approach.\n\nRemoved:\n- Web UI: CSI Raw Data Download section, related JS functions and variables\n- mqtt_commands.c: csi_raw_capture command, capture functions and structures\n- mqtt_commands.h: mqtt_commands_capture_csi_packet() declaration\n- espectre.c: mqtt_commands_capture_csi_packet() call in csi_callback",
+          "html_url": "https://github.com/francescopace/espectre/commit/0dca8f0eaddacbf2a5e522c963b6d2854d7ac638"
+        },
+        {
+          "sha": "cb137a731ab4dde23d0e9b9bba3f8660cb3b1f0d",
+          "author_date": "2025-11-27T18:49:48Z",
+          "message": "refactor: consolidate segmentation logic into csi_processor module\n\n- Move segmentation functionality from separate files into csi_processor\n- Remove standalone segmentation.c/h files\n- Simplify test suite by removing tuning and threshold optimization tests\n- Update MQTT commands and handlers to use consolidated API",
+          "html_url": "https://github.com/francescopace/espectre/commit/cb137a731ab4dde23d0e9b9bba3f8660cb3b1f0d"
+        },
+        {
+          "sha": "90c20e1706025f24a7887fd7302db585fff882d6",
+          "author_date": "2025-11-27T19:14:14Z",
+          "message": "refactor: move mqtt_publish_task to mqtt_handler module\n\n- Rename mqtt_publish_task to mqtt_publisher for clarity\n- Move publisher task from espectre.c to mqtt_handler.c\n- Move format_progress_bar helper function to mqtt_handler.c\n- Add mqtt_publisher_context_t structure for task parameters\n- Add mqtt_start_publisher() API to start publisher task\n- Update espectre.c to use new mqtt_start_publisher() API\n- Improves separation of concerns and module encapsulation",
+          "html_url": "https://github.com/francescopace/espectre/commit/90c20e1706025f24a7887fd7302db585fff882d6"
+        },
+        {
+          "sha": "15e7320600ee0dc4877b5af8ca046177fd6c51ec",
+          "author_date": "2025-11-27T20:29:51Z",
+          "message": "refactor: extract feature calculation into separate module\n\n- Created new csi_features.h/c module for feature calculation functions\n- Moved 12 feature calculation functions from csi_processor to csi_features\n- Removed dead code: csi_get_subcarrier_selection(), csi_processor_get_turbulence_buffer()\n- Reduced csi_processor.c from ~800 to ~400 lines (-50%)\n- Improved separation of concerns: motion detection vs feature extraction\n- Added csi_extract_features() orchestrator in csi_processor.c\n- Updated CMakeLists.txt to include new csi_features.c\n\nBenefits:\n- Better code organization and maintainability\n- Clearer separation between MVS algorithm and feature extraction\n- Easier to test features independently\n- No circular dependencies",
+          "html_url": "https://github.com/francescopace/espectre/commit/15e7320600ee0dc4877b5af8ca046177fd6c51ec"
+        },
+        {
+          "sha": "9ed5a73ed757cfe893fbe7600b200c41696f5e52",
+          "author_date": "2025-11-27T21:26:55Z",
+          "message": "feat: Add WiFi and device info to MQTT info command\n\n- Extended 'info' command with network details (MAC, channel, bandwidth, protocol, promiscuous mode)\n- Added device type detection (ESP32-C6, ESP32-S3, ESP32, esp32)\n- Updated web monitor to display new device & network information\n- Implemented for both ESPectre (C) and Micro-ESPectre (MicroPython)\n- All info retrieved dynamically via ESP-IDF/MicroPython APIs",
+          "html_url": "https://github.com/francescopace/espectre/commit/9ed5a73ed757cfe893fbe7600b200c41696f5e52"
+        },
+        {
+          "sha": "3683bc64871a17734163354c3e783045758ff756",
+          "author_date": "2025-11-27T21:39:37Z",
+          "message": "feat: Add Hampel filter for turbulence in MVS\n\nApply Hampel outlier filter to turbulence before MVS calculation to reduce\nfalse positives, matching micro-espectre behavior. Configurable via\nENABLE_HAMPEL_TURBULENCE_FILTER in espectre.h (window=7, threshold=4.0).",
+          "html_url": "https://github.com/francescopace/espectre/commit/3683bc64871a17734163354c3e783045758ff756"
+        },
+        {
+          "sha": "8971cb15ace139e3fe8cb8cfa6c6a7051d5722ec",
+          "author_date": "2025-11-27T23:05:28Z",
+          "message": "docs: prepare v1.4.0 release documentation\n\n- Update CHANGELOG.md with v1.3.1 refactoring details\n- Update README.md: System Architecture diagram, dynamic release badge\n- Update SETUP.md: clarify continuous feature extraction\n- Update micro-espectre/README.md: add development role, analysis tools section",
+          "html_url": "https://github.com/francescopace/espectre/commit/8971cb15ace139e3fe8cb8cfa6c6a7051d5722ec"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.5.0",
@@ -340,14 +497,286 @@
     {
       "release": "2.2.0",
       "previous_release": "2.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "be382ba86e7a1ef9c68b9b1e957bae0356eaf6c7",
+          "author_date": "2025-12-11T18:06:45Z",
+          "message": "feat: filter null subcarriers based on chip type during NBVI calibration\n\nWiFi 6 chips (C5/C6) and legacy chips (S3, etc.) have different null\nsubcarrier patterns. This change excludes invalid subcarriers during\ncalibration to improve subcarrier selection quality:\n- Legacy chips: exclude DC (0) and HT20 guard bands (27-37)\n- C5/C6: exclude only DC, Noise Gate handles the rest dynamically",
+          "html_url": "https://github.com/francescopace/espectre/commit/be382ba86e7a1ef9c68b9b1e957bae0356eaf6c7"
+        },
+        {
+          "sha": "dfc4b7778a3dfdb0923a33a27547b282953c9913",
+          "author_date": "2025-12-11T14:47:30Z",
+          "message": "feat: (micro-espectre) add ML data collection infrastructure\n\n- Add csi_utils.py with CSICollector for labeled dataset creation\n- Add 'me collect' CLI for recording CSI samples with labels\n- Convert to .npz format for ML-ready datasets\n- Centralize MVS/HampelFilter code (single source of truth)\n- Update analysis scripts to use shared utilities",
+          "html_url": "https://github.com/francescopace/espectre/commit/dfc4b7778a3dfdb0923a33a27547b282953c9913"
+        },
+        {
+          "sha": "f25c1682aa6f480414e6b90b7ed930036637269c",
+          "author_date": "2025-12-12T21:05:14Z",
+          "message": "feat: CSI auto-normalization and dynamic null subcarrier detection\n\nCSI Amplitude Auto-Normalization:\n- Calculate normalization_scale during NBVI calibration (TARGET_MEAN / avg_magnitude)\n- Apply scale to turbulence values for consistent motion detection across ESP32 variants\n- Persist normalization_scale in NVS alongside calibration results\n- Config version bump: espectre_cfg_v2 → espectre_cfg_v3\n\nDynamic Null Subcarrier Detection:\n- Remove hardcoded HT20_NULL_SUBCARRIERS and WIFI6_NULL_SUBCARRIERS lists\n- Auto-detect null subcarriers: mean < 1.0 = null (environment-aware)\n- Works with any chip type and adapts to local RF conditions\n\nC++ Implementation Fixes:\n- Add esp_wifi_set_protocol() with platform-specific config (WiFi 6 for C5/C6)\n- CSIManager::disable() now unregisters callback properly\n- IRAM_ATTR on CSI callback for low-latency ISR execution\n- Reorder csi_processor_context_t fields to minimize padding\n\nChanges span both C++ (ESPHome) and Python (Micro-ESPectre) implementations.\n\nfeat: CSI auto-normalization and dynamic null subcarrier detection\n\nCSI Amplitude Auto-Normalization:\n- Calculate normalization_scale during NBVI calibration (TARGET_MEAN / avg_magnitude)\n- Apply scale to turbulence values for consistent motion detection across ESP32 variants\n- Persist normalization_scale in NVS alongside calibration results\n- Reset CSI processor buffer after calibration to prevent initial spikes\n- Config version bump: espectre_cfg_v2 → espectre_cfg_v3\n\nDynamic Null Subcarrier Detection:\n- Remove hardcoded HT20_NULL_SUBCARRIERS and WIFI6_NULL_SUBCARRIERS lists\n- Auto-detect null subcarriers: mean < 1.0 = null (environment-aware)\n- Works with any chip type and adapts to local RF conditions\n- Noise Gate percentile calculated only on valid subcarriers\n\nChanges span both C++ (ESPHome component) and Python (Micro-ESPectre) implementations.",
+          "html_url": "https://github.com/francescopace/espectre/commit/f25c1682aa6f480414e6b90b7ed930036637269c"
+        },
+        {
+          "sha": "3178d181cf1e3e7db8b7c1e474384fadb572a67f",
+          "author_date": "2025-12-12T23:05:00Z",
+          "message": "feat(micro-espectre): add pytest test suite and simplify tools\n\nPytest Test Suite (163+ tests):\n- test_filters.py: HampelFilter and LowPassFilter unit tests\n- test_segmentation.py: SegmentationContext/MVS tests\n- test_features.py: Feature extraction tests\n- test_nbvi_calibrator.py: NBVI algorithm tests\n- test_running_variance.py: Variance algorithm validation\n- test_optimization_equivalence.py: Optimization correctness\n- test_validation_real_data.py: Real CSI data validation\n\nSimplified Analysis Tools:\n- Removed redundant validation scripts (converted to pytest)\n- Consolidated from 16 to 9 scripts\n- Reduced code by 30-50% per script\n- Moved CSI data files to micro-espectre/data/",
+          "html_url": "https://github.com/francescopace/espectre/commit/3178d181cf1e3e7db8b7c1e474384fadb572a67f"
+        },
+        {
+          "sha": "af3d9502f2ef4c9bfccbda39814c055456c2bf2f",
+          "author_date": "2025-12-13T23:40:37Z",
+          "message": "docs: consolidate documentation and disable Hampel filter by default\n\n- Merge ALGORITHMS.md content into main documentation files\n- Update TUNING.md with troubleshooting section\n- Update PERFORMANCE.md with filter notes\n- Disable Hampel filter by default in examples\n- Add lowpass_enabled and lowpass_cutoff to SETUP.md config table",
+          "html_url": "https://github.com/francescopace/espectre/commit/af3d9502f2ef4c9bfccbda39814c055456c2bf2f"
+        },
+        {
+          "sha": "28375db1871a7a0acfc4efb1f7d1ddd413767295",
+          "author_date": "2025-12-14T00:02:15Z",
+          "message": "fix(nbvi): signed/unsigned CSI handling and normalization optimization\n\nNBVI Signed/Unsigned Fix:\n- Handle both signed (MicroPython) and unsigned (Python bytes) CSI I/Q values\n- Simple check: if value > 127, subtract 256 to get signed\n- Before fix: 86.8% recall, 13.5% FP\n- After fix: 95.3% recall, 0% FP\n\nNormalization Optimization:\n- Optimize NORMALIZATION_TARGET_MEAN from 50 to 28 for better recall\n\nTest Coverage:\n- test_csi_processor: 6 new tests for normalization scale\n- test_calibration: 1 new test for calibration callback\n- test_motion_detection: 1 end-to-end test with NBVI + normalization\n- test_validation_real_data: 2 new tests for Python pipeline\n- nbvi_calibrator.py: lazy import for PC test compatibility",
+          "html_url": "https://github.com/francescopace/espectre/commit/28375db1871a7a0acfc4efb1f7d1ddd413767295"
+        },
+        {
+          "sha": "c29957c6082961ddae3bc4e10ec8e55ef884d6c8",
+          "author_date": "2025-12-14T02:26:39Z",
+          "message": "feat: Butterworth low-pass filter, lazy variance, filters disabled by default\n\nButterworth Low-Pass Filter:\n- Add 1st order Butterworth IIR filter for noise reduction\n- Cutoff frequency: 11 Hz (configurable 5-20 Hz)\n- Reduces false positives in noisy environments (51% → 2%)\n- Implemented in both C++ and Python\n\nLazy Variance Evaluation:\n- Calculate moving variance only at publish time (not every packet)\n- Saves ~99% CPU for variance calculation\n- New API: csi_processor_update_state()\n\nAll Filters Disabled by Default:\n- Lowpass, Hampel, and normalization filters now off by default\n- Users can enable as needed for noisy environments\n\nPerformance (60s noisy baseline):\n- Low-pass 11Hz: Recall 92.4%, FP 2.34%\n- Low-pass + Hampel: Recall 92.1%, FP 0.84%, F1 93.2%\n\nOther:\n- Merge Hampel optimization into unified 6_optimize_filter_params.py\n- Add 19 new tests for LowPassFilter\n\nfeat: add Butterworth low-pass filter for C++ implementation\n\nAdd 1st order Butterworth IIR low-pass filter to match Python implementation:\n\ncsi_processor:\n- Add lowpass_filter_state_t struct with coefficients b0, a1\n- Implement lowpass_filter_init(), lowpass_filter_apply(), lowpass_filter_reset()\n- Add filter to processing pipeline: normalization → Hampel → Low-pass → buffer\n- Add setters/getters: set_lowpass_enabled(), set_lowpass_cutoff(), get_*\n- Default: enabled, 11.0 Hz cutoff (matching Python config)\n\nESPHome integration:\n- Add YAML config: lowpass_enabled (default: true), lowpass_cutoff (default: 11.0)\n- Update __init__.py schema and to_code()\n- Update espectre.h/cpp with member variables and dump_config()\n\nCSI Manager:\n- Update init() signature to include lowpass_enabled, lowpass_cutoff\n- Initialize low-pass filter in CSI manager\n\nTests:\n- Add 8 new tests for low-pass filter in test_csi_processor.cpp\n- Update all csi_manager.init() calls in tests with new parameters\n- Disable low-pass in E2E tests for backward compatibility with test data\n\nTotal tests: 173 C++ + 184 Python = 357 (all passing)\n\ndocs: update documentation for low-pass filter\n\n- SETUP.md: add lowpass_enabled and lowpass_cutoff to config table\n- CHANGELOG.md: add Low-Pass Filter feature and config section\n- CHANGELOG.md: update Python test count from 163 to 184\n- test/README.md: add low-pass filter to test_csi_processor description\n\nfeat: lazy variance evaluation and filters disabled by default\n\nPerformance:\n- Lazy variance evaluation: calculate only at publish time (~99% CPU savings)\n- New API: csi_processor_update_state() (C++), seg.update_state() (Python)\n\nConfiguration:\n- All filters disabled by default (lowpass, hampel, normalization)\n- Simplified default configuration for easier onboarding\n\nCode:\n- Separated add_turbulence (buffer only) from update_state (variance + state machine)\n- Updated csi_manager to call update_state at publish time\n- Updated tests to reflect new lazy evaluation behavior\n\nDocumentation:\n- Updated TUNING.md with improved troubleshooting section\n- Updated all .md files with new default values\n- Updated example YAML files",
+          "html_url": "https://github.com/francescopace/espectre/commit/c29957c6082961ddae3bc4e10ec8e55ef884d6c8"
+        },
+        {
+          "sha": "b2fd0a36b86118c483ae73f5ba01d5dbad02f06b",
+          "author_date": "2025-12-14T17:12:20Z",
+          "message": "feat(nbvi): optimize min_spacing and add guard band exclusion\n\nNBVI Improvements:\n- Change min_spacing default from 3 to 2 (improves Recall from 95.3% to 96.5%)\n- Add hard limit for OFDM guard bands (0-5, 32, 59-63 always excluded)\n- Fix references in ALGORITHMS.md to match References section\n\nPerformance (NBVI Auto-Calibration):\n- Recall: 96.5% (was 95.3%)\n- F1-Score: 98.2% (was 97.6%)\n- Precision: 100%, FP Rate: 0%\n\nTests:\n- Remove hardcoded NBVI parameters, use real defaults\n- Both Python and C++ now produce identical results\n\nNew tool:\n- 10_optimize_nbvi_params.py: Grid search for optimal NBVI parameters",
+          "html_url": "https://github.com/francescopace/espectre/commit/b2fd0a36b86118c483ae73f5ba01d5dbad02f06b"
+        },
+        {
+          "sha": "5bf72c9953f94ddabea0db45b5c3651d0ee89555",
+          "author_date": "2025-12-14T17:40:57Z",
+          "message": "docs: improve dashboard compatibility and document name_add_mac_suffix\n\nComment out name_add_mac_suffix in all production YAML files to ensure\nentity names match dashboard examples out-of-the-box. Added explanatory\ncomments for users with multiple devices who need unique names.\n\nUpdated dashboard YAML files and SETUP.md with notes about MAC suffix\nbehavior when using multiple ESPectre devices.\n\nThanks to Stefan B. for the feedback! 🙏",
+          "html_url": "https://github.com/francescopace/espectre/commit/5bf72c9953f94ddabea0db45b5c3651d0ee89555"
+        },
+        {
+          "sha": "14ef407f2587f82032d8eea323844c02b0f57975",
+          "author_date": "2025-12-16T09:45:55Z",
+          "message": "fix: re-publish threshold to HA after API connection is established\n\nFixes issue where threshold shows as 'unknown' in Home Assistant after\nESP device power loss/reboot.\n\nThe threshold was being published before HA connected, so HA missed the\ninitial state. Now the threshold is re-published on the first CSI callback,\nwhich occurs after HA has connected.",
+          "html_url": "https://github.com/francescopace/espectre/commit/14ef407f2587f82032d8eea323844c02b0f57975"
+        },
+        {
+          "sha": "be8e840ae7691eb1c5089f54419f9b60bb76ea49",
+          "author_date": "2025-12-16T10:52:09Z",
+          "message": "docs: improve documentation structure and add project email\n\n- Add GitHub issue and PR templates\n- Add CODE_OF_CONDUCT, CONTRIBUTING, ROADMAP, SECURITY\n- Update emails to @espectre.dev domain\n- Fix broken internal anchor links\n- Standardize documentation format across all .md files",
+          "html_url": "https://github.com/francescopace/espectre/commit/be8e840ae7691eb1c5089f54419f9b60bb76ea49"
+        },
+        {
+          "sha": "e18e78ff631e1dc8f77a672f6c85a55755378c32",
+          "author_date": "2025-12-16T11:55:40Z",
+          "message": "docs: add landing page",
+          "html_url": "https://github.com/francescopace/espectre/commit/e18e78ff631e1dc8f77a672f6c85a55755378c32"
+        },
+        {
+          "sha": "98bf339c997f6fbeed1c2c04d6ed7d7ee162444d",
+          "author_date": "2025-12-17T00:04:13Z",
+          "message": "feat: Add dynamic gauge option for Home Assistant dashboard\n\nUses Config Template Card to adapt gauge segments based on the threshold value.\n\nContributed by @jolas - https://community.home-assistant.io/t/espectre-wi-fi-motion-detection-for-home-assistant/961251/28",
+          "html_url": "https://github.com/francescopace/espectre/commit/98bf339c997f6fbeed1c2c04d6ed7d7ee162444d"
+        },
+        {
+          "sha": "5172bbd30c8c8986ab22b822106f749ef209af3d",
+          "author_date": "2025-12-17T02:33:42Z",
+          "message": "docs: improve landing page",
+          "html_url": "https://github.com/francescopace/espectre/commit/5172bbd30c8c8986ab22b822106f749ef209af3d"
+        },
+        {
+          "sha": "f8bb3719cb4e0bef5939015eaa5b9b2a81cf89bf",
+          "author_date": "2025-12-17T03:10:42Z",
+          "message": "test: increase test coverage for micro-espectre\n\nAdd comprehensive test suite for previously untested modules:\n- test_mqtt.py: 43 tests for MQTTHandler and MQTTCommands\n- test_nvs_storage.py: 15 tests for NVS configuration persistence\n- test_config.py: 15 tests for configuration constants validation\n- test_traffic_generator.py: 27 tests for WiFi traffic generator\n- test_segmentation_additional.py: 22 additional edge case tests\n- test_nbvi_calibrator_additional.py: 18 additional calibration tests\n\nConfiguration:\n- Add .coveragerc to exclude MicroPython-only modules (main.py, csi_streamer.py)\n- Update .gitignore to exclude .coverage, htmlcov/, .pytest_cache/\n\nDocumentation:\n- Update micro-espectre/README.md with current coverage metrics\n\nTotal: 324 tests passed, 94% line coverage",
+          "html_url": "https://github.com/francescopace/espectre/commit/f8bb3719cb4e0bef5939015eaa5b9b2a81cf89bf"
+        },
+        {
+          "sha": "85410f79cbeed8aca4067a7faa89a70f9f3116ae",
+          "author_date": "2025-12-17T16:36:56Z",
+          "message": "fix: Pause traffic generator during NBVI calibration processing\n\nFixes socket errors (errno: 12 ENOMEM) that occurred when the traffic\ngenerator continued sending packets while the CPU was busy with NBVI\ncomputation.\n\nChanges:\n- Add pause()/resume() methods to TrafficGeneratorManager\n- Add collection_complete_callback to CalibrationManager\n- Pause TG when packet collection completes, resume after calibration\n\nAddresses #39",
+          "html_url": "https://github.com/francescopace/espectre/commit/85410f79cbeed8aca4067a7faa89a70f9f3116ae"
+        },
+        {
+          "sha": "07c951452f2fc704ef0f3ab822dc51ea85309738",
+          "author_date": "2025-12-17T17:18:39Z",
+          "message": "fix: remove non-runtime settings from NVS storage\n\nFixes #40 - Hampel filter config was incorrectly loaded from NVS,\noverwriting YAML settings and causing dump_config to show wrong values.\n\nChanges:\n- Remove hampel_enabled, hampel_window, hampel_threshold from NVS\n- Remove segmentation_window_size, traffic_generator_rate from NVS\n- Remove normalization_scale from NVS (recalculated at boot)\n- ESpectreConfig now only contains segmentation_threshold\n- Update config hash to v6 to invalidate stale NVS data\n\nOnly the threshold (adjustable via HA slider) is now persisted.\nAll other settings come from YAML or are recalculated during calibration.",
+          "html_url": "https://github.com/francescopace/espectre/commit/07c951452f2fc704ef0f3ab822dc51ea85309738"
+        },
+        {
+          "sha": "4b5a05cfce72fd6b2d62c860190acc6303e533b6",
+          "author_date": "2025-12-19T01:54:52Z",
+          "message": "feat: Gain Lock, Baseline Normalization\n\nMajor features:\n- Gain Lock (AGC/FFT stabilization) for stable CSI measurements\n- Baseline Variance Normalization (threshold 1.0 = 4× baseline on all devices)\n- NBVI improvements: alpha=0.5, min_spacing=1, guard bands 11-52\n- Automatic sdkconfig configuration\n\nDocumentation:\n- Reorganized CHANGELOG for v2.2.0\n- Added BSSID lock for mesh networks in SETUP.md\n- Updated tools/README.md with correct NBVI params",
+          "html_url": "https://github.com/francescopace/espectre/commit/4b5a05cfce72fd6b2d62c860190acc6303e533b6"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "2.3.0",
       "previous_release": "2.2.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "3643c145fac7e19cc3fc89cb83e1af0753b29e1b",
+          "author_date": "2025-12-19T17:39:39Z",
+          "message": "chore: trigger GitHub Pages deploy",
+          "html_url": "https://github.com/francescopace/espectre/commit/3643c145fac7e19cc3fc89cb83e1af0753b29e1b"
+        },
+        {
+          "sha": "f229b52f8a652be30ca3fe738e81ea2accf02a17",
+          "author_date": "2025-12-21T15:06:17Z",
+          "message": "feat: optimize partition table for better memory allocation\n\n- Increase SPIFFS from 64KB to 192KB for calibration buffer stability\n- Reduce app partitions from ~1.94MB to ~1.87MB each (still plenty of room)\n- Add Flash Size and Partitions section to SETUP.md\n- Document ESPectre's minimal footprint (~70KB Flash, 88 bytes RAM)\n- Add custom partition examples for 4MB and 8MB flash devices\n- Fix partition alignment to 0x10000 boundary",
+          "html_url": "https://github.com/francescopace/espectre/commit/f229b52f8a652be30ca3fe738e81ea2accf02a17"
+        },
+        {
+          "sha": "a302abc8cac593a4e70841bb5ffcea886d1e5b95",
+          "author_date": "2025-12-23T15:28:48Z",
+          "message": "docs: add ESP32-C3 Super Mini support and update dashboards\n\nESP32-C3 Super Mini:\n- Set traffic_generator_rate limit to 94 (higher values cause calibration issues)\n- Add DIO flash mode option for cheap clones that don't support QIO\n- Update SETUP.md with troubleshooting section for C3 Super Mini\n- Mark C3 as tested (remove experimental warning)\n\nAlso includes:\n- Updated Home Assistant dashboard examples\n- Minor fixes to issue templates",
+          "html_url": "https://github.com/francescopace/espectre/commit/a302abc8cac593a4e70841bb5ffcea886d1e5b95"
+        },
+        {
+          "sha": "cc3d4aa0a67a42ff067afe4a26a9798947524c08",
+          "author_date": "2025-12-24T14:59:14Z",
+          "message": "feat: add support for ESP32 original (WROOM-32D)\n\n- Fix NBVI calibration not starting on platforms without gain lock support\n- GainController now calls callback immediately when gain lock is skipped\n- Update SETUP.md: ESP32 moved from experimental to tested\n- Update example YAML files with tested board info\n- Tested on ESP32-WROOM-32D Mini (CH340)",
+          "html_url": "https://github.com/francescopace/espectre/commit/cc3d4aa0a67a42ff067afe4a26a9798947524c08"
+        },
+        {
+          "sha": "a5c2e458c0abc70546435c82bdb0388ef4b58daa",
+          "author_date": "2025-12-27T12:33:42Z",
+          "message": "feat: multi-window validation for optimal subcarrier selection\n\n- Evaluate all candidate windows and select by minimum FP rate\n- Skip first 300 packets (gain lock phase) when feeding NBVI calibration\n- Update noise_gate_percentile from 10% to 25%\n- Align C++ and Python implementations with production parameters\n- Fix percentile calculation to properly sort values before threshold\n- Update documentation (ALGORITHMS.md, PERFORMANCE.md, tools/README.md)",
+          "html_url": "https://github.com/francescopace/espectre/commit/a5c2e458c0abc70546435c82bdb0388ef4b58daa"
+        },
+        {
+          "sha": "39d1aeed0992df7668e56c4cbf53dd7945363157",
+          "author_date": "2025-12-23T20:50:58Z",
+          "message": "feat: ESPectre the game\n\nA browser-based reaction game that demonstrates the motion detection capabilities of ESPectre.\n\nYou are a Spectrum Guardian, an entity that protects WiFi frequencies from malicious Spectres trying to corrupt them. When an enemy Spectre appears, you must physically move faster than it to dissolve it.",
+          "html_url": "https://github.com/francescopace/espectre/commit/39d1aeed0992df7668e56c4cbf53dd7945363157"
+        },
+        {
+          "sha": "01ee33b57a9c58d0cef88d4783a3ff70cc027d27",
+          "author_date": "2025-12-27T15:21:36Z",
+          "message": "fix: Improve traffic generator resilience during SPIFFS operations\n\nAdd adaptive backoff and rate-limited logging for ENOMEM errors that\ncan occur during NBVI calibration when SPIFFS writes compete with\nthe WiFi/LwIP stack for memory resources.\n\nChanges:\n- Traffic generator: 5ms backoff on ENOMEM errors to let system recover\n- Traffic generator: Rate-limit error logging to max 1 message/second\n- Calibration manager: Periodic yield during SPIFFS writes\n- SETUP.md: Add flash erase instructions for partition issues\n\nThe errno:12 errors during calibration were already addressed in\n85410f7, but these additional optimizations improve stability on\nESP32-S3 where PSRAM, SPIFFS, and WiFi compete for bus access.\n\nRefs #48",
+          "html_url": "https://github.com/francescopace/espectre/commit/01ee33b57a9c58d0cef88d4783a3ff70cc027d27"
+        },
+        {
+          "sha": "67e56f241aa6b77fcf02e140eb7cc673dfec3237",
+          "author_date": "2025-12-27T16:19:55Z",
+          "message": "feat: calibration fallback with normalization when NBVI fails\n\nWhen NBVI subcarrier selection fails (all candidate windows fail validation),\nthe system now falls back to default subcarriers [11-22] while still\ncalculating and applying baseline variance normalization.\n\nThis prevents the issue where calibration failure caused 2000%+ motion\nvalues due to missing normalization (scale remained at 1.0).\n\nChanges:\n- calibration_manager.cpp: Calculate normalization using first candidate\n  window when all windows fail validation\n- espectre.cpp: Apply normalization if band != nullptr (partial success)\n- nbvi_calibrator.py: Aligned Python implementation with C++ fallback\n- Updated tests for new fallback behavior (C++ and Python)\n- Updated documentation (CHANGELOG, TUNING, SETUP, ALGORITHMS, READMEs)",
+          "html_url": "https://github.com/francescopace/espectre/commit/67e56f241aa6b77fcf02e140eb7cc673dfec3237"
+        },
+        {
+          "sha": "d017b89cb34a6919b71b37ba8b23d194ddd30fcc",
+          "author_date": "2025-12-27T17:00:06Z",
+          "message": "feat: detect WiFi channel changes and reset detection buffer\n\nAutomatically detect when the AP switches WiFi channel and reset the\nmotion detection buffer to prevent false positives caused by CSI spikes.\n\nChanges:\n- C++: Track channel from wifi_csi_info_t.channel in CSIManager\n- Python: Track channel from frame[1] (CSI packet metadata)\n- Check only at publish time (~100 packets) to minimize overhead\n- Reset buffer with csi_processor_clear_buffer() / seg.reset(full=True)\n- Log warning when channel change is detected\n\nTests:\n- test_csi_manager_channel_change_resets_buffer: verify buffer reset\n- test_csi_manager_same_channel_no_reset: verify no false resets\n- Initialize wifi_csi_info_t with {} in all tests for safety\n\nDocumentation:\n- CHANGELOG.md: Added feature description\n- TUNING.md: Added troubleshooting section for channel changes\n\nFixes #46",
+          "html_url": "https://github.com/francescopace/espectre/commit/d017b89cb34a6919b71b37ba8b23d194ddd30fcc"
+        },
+        {
+          "sha": "00989b6cfdc5d322f49371279f0aa893e212a01b",
+          "author_date": "2025-12-27T18:36:57Z",
+          "message": "docs: improve game page SEO and navigation\n\n- Add nav links to game page matching homepage (Medium, Issues, Discussions, Roadmap)\n- Add game page to sitemap.xml\n- Add canonical URLs to both homepage and game page\n- Fix og:url and twitter:url to use consistent trailing slashes",
+          "html_url": "https://github.com/francescopace/espectre/commit/00989b6cfdc5d322f49371279f0aa893e212a01b"
+        },
+        {
+          "sha": "b3fb3d538772f7c4d90ee5d6b827d1046ebb454f",
+          "author_date": "2025-12-29T09:12:41Z",
+          "message": "feat: add external traffic mode support (traffic_generator_rate: 0)\n\n- Add publish_interval parameter to decouple sensor publish rate from traffic generator\n- Support traffic_generator_rate: 0 for external WiFi traffic sources\n- Add UDPListener component that opens port 5555 for external traffic\n- Calculate actual CSI packet rate from received packets (not configured value)\n- Single UDP broadcast source can feed all ESPectre devices (95% less network overhead)\n- Update documentation with UDP broadcast examples and network impact analysis\n\nSee #50",
+          "html_url": "https://github.com/francescopace/espectre/commit/b3fb3d538772f7c4d90ee5d6b827d1046ebb454f"
+        },
+        {
+          "sha": "1e5a4fb3eb255c48af0a116dba344098ccea8ddd",
+          "author_date": "2025-12-29T10:27:13Z",
+          "message": "fix: update test callback signature to match new csi_processed_callback_t\n\nThe callback now receives (state, packets_received) instead of just (state)",
+          "html_url": "https://github.com/francescopace/espectre/commit/1e5a4fb3eb255c48af0a116dba344098ccea8ddd"
+        },
+        {
+          "sha": "55fb2114ef9d2f363ee45ce6555bb5c1c9931f5f",
+          "author_date": "2025-12-29T10:49:22Z",
+          "message": "docs: document sensor entity customization options\n\n- Add documentation for internal, icon, disabled_by_default options\n- Document ESPHome sensor filters (multiply, round, clamp, offset)\n- Add link to official ESPHome sensor filters documentation\n- Update CHANGELOG with new feature in v2.3.0\n\nCloses #51",
+          "html_url": "https://github.com/francescopace/espectre/commit/55fb2114ef9d2f363ee45ce6555bb5c1c9931f5f"
+        },
+        {
+          "sha": "c3b1efe280bc5120ded1f6631caf9a44049ff7fe",
+          "author_date": "2025-12-29T11:59:06Z",
+          "message": "fix: disable SerialStreamer when logger uses hardware UART\n\nWhen ESPHome is configured with hardware_uart: UART0 (common on boards\nwith external USB-UART chips like CH343), the USB Serial JTAG driver\nis not initialized. Calling usb_serial_jtag_read_bytes() in this case\ncauses a crash (Guru Meditation Error: Load access fault).\n\nThis fix checks for USE_LOGGER_USB_SERIAL_JTAG before enabling the\nSerialStreamer. If the logger is not using USB Serial JTAG, the\nstreamer is disabled with an appropriate log message.\n\nSee: https://github.com/francescopace/espectre/issues/48#issuecomment-3694559082",
+          "html_url": "https://github.com/francescopace/espectre/commit/c3b1efe280bc5120ded1f6631caf9a44049ff7fe"
+        },
+        {
+          "sha": "3477ec1e98c3878f81441aca21e3613c448440c4",
+          "author_date": "2025-12-29T13:40:22Z",
+          "message": "fix: align NBVI parameters between C++ and Python\n\n- Set NBVI_ALPHA = 0.5 in C++ tests (was 0.3)\n- Set NBVI_NOISE_GATE_PERCENTILE = 25 in Python config (was 10)\n- Import defaults from config.py in optimize script instead of hardcoding",
+          "html_url": "https://github.com/francescopace/espectre/commit/3477ec1e98c3878f81441aca21e3613c448440c4"
+        },
+        {
+          "sha": "95f7f4f64b1e359705f08f5ccd335acb4c9c39d9",
+          "author_date": "2025-12-29T17:49:57Z",
+          "message": "feat: add ping mode for traffic generator\n\nAdd traffic_generator_mode option (dns/ping) to provide an alternative\nwhen DNS queries don't work with certain routers.\n\n- dns (default): UDP DNS queries to gateway:53\n- ping: ICMP echo requests using ESP-IDF esp_ping API\n\nPing mode uses minimal 8-byte ICMP packets (header only, no payload).\nSome routers don't respond to root domain DNS queries, causing low CSI\npacket rates. Ping mode provides a fallback for these cases.\n\nUpdated documentation with packet size comparison table and airtime\ncalculations for both modes.\n\nSee #48",
+          "html_url": "https://github.com/francescopace/espectre/commit/95f7f4f64b1e359705f08f5ccd335acb4c9c39d9"
+        },
+        {
+          "sha": "91232bcc9f6d3f8a09950beaba8bccdbbbd74003",
+          "author_date": "2025-12-30T10:03:06Z",
+          "message": "feat: add standalone CSI traffic generator script with HA integration\n\n- Add examples/csi_traffic_generator.py with daemon mode (start/stop/status)\n- Support broadcast (default) and unicast to multiple devices\n- Add Home Assistant command_line switch integration docs\n- Update SETUP.md with simplified external traffic section\n- Update CHANGELOG.md to reference new script\n\nSee #50",
+          "html_url": "https://github.com/francescopace/espectre/commit/91232bcc9f6d3f8a09950beaba8bccdbbbd74003"
+        },
+        {
+          "sha": "b9d8fcbb19e253dd94d34079c59c3dcfcc5acf8a",
+          "author_date": "2025-12-30T11:40:38Z",
+          "message": "feat: add configurable gain lock mode with auto-skip for strong signals\n\nAdd gain_lock YAML option with three modes:\n- auto (default): lock gain but skip if AGC < 30 (signal too strong)\n- enabled: always force gain lock\n- disabled: never lock gain\n\nWhen ESP32 is too close to the AP (RSSI > -40 dB), forcing gain lock with\nvery low AGC values can freeze CSI reception. In auto mode, gain lock is\nskipped with a warning instead of freezing the system.\n\nChanges:\n- Add GainLockMode enum and MIN_SAFE_AGC constant\n- Update GainController to handle mode and auto-skip logic\n- Add gain_lock config option in __init__.py schema\n- Pass gain_lock_mode through component hierarchy\n- Add GAIN LOCK section in dump_config\n- Align Python implementation in micro-espectre\n- Document sensor placement and troubleshooting in TUNING.md\n- Add parameter reference in SETUP.md\n\nSee #48",
+          "html_url": "https://github.com/francescopace/espectre/commit/b9d8fcbb19e253dd94d34079c59c3dcfcc5acf8a"
+        },
+        {
+          "sha": "92a4056aa7e0f9a199e5417962d32de464c269d2",
+          "author_date": "2025-12-30T21:01:05Z",
+          "message": "fix: correct Home Assistant command_line switch configuration\n\n- Rename csi_traffic_generator.py to espectre_traffic_generator.py\n- Fix YAML syntax: use command_line integration format (not legacy switch platform)\n- Update PID file path to /tmp/espectre_traffic.pid\n- Add link to official Home Assistant command_line docs\n- Update all references in SETUP.md and CHANGELOG.md\n\nThanks to @phoenixtechnam for reporting the configuration issue",
+          "html_url": "https://github.com/francescopace/espectre/commit/92a4056aa7e0f9a199e5417962d32de464c269d2"
+        },
+        {
+          "sha": "5d70b1bb549c22ccd3de31b1961b4043b300b2a1",
+          "author_date": "2025-12-31T00:34:23Z",
+          "message": "ci: add Dependabot config and website analytics",
+          "html_url": "https://github.com/francescopace/espectre/commit/5d70b1bb549c22ccd3de31b1961b4043b300b2a1"
+        },
+        {
+          "sha": "d0e361f17a6419cb143dbf6bf6c4c33866b90152",
+          "author_date": "2025-12-31T01:51:31Z",
+          "message": "ci: add workflow and requirements.txt to path triggers",
+          "html_url": "https://github.com/francescopace/espectre/commit/d0e361f17a6419cb143dbf6bf6c4c33866b90152"
+        },
+        {
+          "sha": "5485b233b1a1a21a4e5218d506381bc6c7b23a5f",
+          "author_date": "2025-12-31T02:01:31Z",
+          "message": "deps(ci): bump codecov/codecov-action from 4 to 5 (#54)\n\nBumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 4 to 5.\n- [Release notes](https://github.com/codecov/codecov-action/releases)\n- [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/codecov/codecov-action/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: codecov/codecov-action\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/francescopace/espectre/commit/5485b233b1a1a21a4e5218d506381bc6c7b23a5f"
+        },
+        {
+          "sha": "7ce052039d851087cc23661583f8c38b25320273",
+          "author_date": "2025-12-31T02:16:33Z",
+          "message": "deps(ci): bump actions/checkout from 4 to 6 (#55)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 4 to 6.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v4...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/francescopace/espectre/commit/7ce052039d851087cc23661583f8c38b25320273"
+        },
+        {
+          "sha": "42f1a69800eddcf5c830858f50fa2c47d8b3bf91",
+          "author_date": "2025-12-31T02:17:26Z",
+          "message": "deps(ci): bump actions/setup-python from 5 to 6\n\nBumps [actions/setup-python](https://github.com/actions/setup-python) from 5 to 6.\n- [Release notes](https://github.com/actions/setup-python/releases)\n- [Commits](https://github.com/actions/setup-python/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-python\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/francescopace/espectre/commit/42f1a69800eddcf5c830858f50fa2c47d8b3bf91"
+        },
+        {
+          "sha": "33d02e54f0222920447829a7cb78a5f9262fc217",
+          "author_date": "2025-12-31T13:56:27Z",
+          "message": "docs: add community test results\n\n- Add traffic generator mode test table (DNS/PING) for S3, C6, C3 boards\n- Add ESP32-C3 logger troubleshooting tip (hardware_uart: UART0 for USB-UART bridges)\n- Update espectre-c3.yaml with logger configuration note\n\nThanks to @gasment (see #48)",
+          "html_url": "https://github.com/francescopace/espectre/commit/33d02e54f0222920447829a7cb78a5f9262fc217"
+        },
+        {
+          "sha": "f8ca96082857c01163f34ecab624cc0bb685205c",
+          "author_date": "2025-12-31T14:14:47Z",
+          "message": "fix: correct stream command hint to use ./me collect (micro-espectre)\n\nThe hint suggested running a non-existent csi_receiver.py script.\nUpdated to correctly point to ./me collect command.\n\nFixes #58",
+          "html_url": "https://github.com/francescopace/espectre/commit/f8ca96082857c01163f34ecab624cc0bb685205c"
+        },
+        {
+          "sha": "bb1842345d424abcb1c7b4eb45bca1af59db393e",
+          "author_date": "2025-12-31T15:25:51Z",
+          "message": "docs: reorganize v2.3.0 changelog",
+          "html_url": "https://github.com/francescopace/espectre/commit/bb1842345d424abcb1c7b4eb45bca1af59db393e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "2.4.0",
@@ -376,8 +805,39 @@
     {
       "release": "2.7.0",
       "previous_release": "2.6.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "7327beedc55ff993ba2e54303702daaa9415380a",
+          "author_date": "2026-03-08T18:10:35Z",
+          "message": "fix(micro-espectre): update firmware release to rc7 and refresh hashes",
+          "html_url": "https://github.com/francescopace/espectre/commit/7327beedc55ff993ba2e54303702daaa9415380a"
+        },
+        {
+          "sha": "e963d8b11dccbd7bd93eac95e49ee628cbc6333a",
+          "author_date": "2026-03-10T12:50:54Z",
+          "message": "fix: normalize short and double HT CSI payloads across stacks\n\nHandle 228-byte and 114-byte CSI payload variants before HT20 processing,\nand align C++ and Micro-ESPectre normalization/runtime logs.\nAdd dedicated unit tests for 114/228/256 paths and document troubleshooting.\n\nRefs #93",
+          "html_url": "https://github.com/francescopace/espectre/commit/e963d8b11dccbd7bd93eac95e49ee628cbc6333a"
+        },
+        {
+          "sha": "9608b521f96e695c04836220679acea581e4fc6e",
+          "author_date": "2026-03-11T00:30:23Z",
+          "message": "chore: refresh paired datasets and retrain ml artifacts with seed search\n\nReplace stale 64SC baseline/movement pairs with validated acquisitions and sync metadata-driven selection in analysis and test fixtures.\nAdd a seed-search-until-improvement training flow, then regenerate ML weights/artifacts to keep Python and C++ inference aligned on updated real data.",
+          "html_url": "https://github.com/francescopace/espectre/commit/9608b521f96e695c04836220679acea581e4fc6e"
+        },
+        {
+          "sha": "cd9bec137003e879b544889be7dffd7ebbb2f14e",
+          "author_date": "2026-03-17T16:19:59Z",
+          "message": "feat: replace serial game channel with reusable BLE API\n\nMove telemetry/control from Web Serial to a generic BLE channel.\nWire BLE IDs in ESPHome config defaults, and remove legacy serial streamer code/tests.",
+          "html_url": "https://github.com/francescopace/espectre/commit/cd9bec137003e879b544889be7dffd7ebbb2f14e"
+        },
+        {
+          "sha": "995a9d59e26d31e9d4e4f4d6b72cf067d5b0edc9",
+          "author_date": "2026-03-17T18:45:33Z",
+          "message": "fix: align nbvi validation with runtime filters and test datasets\n\nKeep NBVI calibration validation in sync with runtime Hampel/low-pass filtering across C++ and Micro-ESPectre, and update analysis/training tooling to support dedicated test datasets without polluting ML training labels.",
+          "html_url": "https://github.com/francescopace/espectre/commit/995a9d59e26d31e9d4e4f4d6b72cf067d5b0edc9"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "snapshot",

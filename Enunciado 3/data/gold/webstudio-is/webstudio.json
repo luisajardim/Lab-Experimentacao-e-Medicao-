@@ -4131,8 +4131,15 @@
     {
       "release": "0.27.0",
       "previous_release": "0.26.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f063d7e2d510f018d4fc8c8a817dfb2f32aeae32",
+          "author_date": "2023-02-02T11:34:44Z",
+          "message": "Fix build create (#923)\n\n## Description\r\n\r\n1. What is this PR about (link the issue and add a short description)\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio-designer/blob/main/apps/designer/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env.example`\r\nand the `designer/env-check.js` if mandatory",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/f063d7e2d510f018d4fc8c8a817dfb2f32aeae32"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.28.0",
@@ -4143,8 +4150,15 @@
     {
       "release": "0.29.0",
       "previous_release": "0.28.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "2012428327c96390c4239bdf8f98689c6bfa0b4a",
+          "author_date": "2023-02-10T10:12:21Z",
+          "message": "Update ver 0.26.0 (#984)\n\n## Description\r\n\r\n1. What is this PR about (link the issue and add a short description)\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio-designer/blob/main/apps/designer/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env.example`\r\nand the `designer/env-check.js` if mandatory",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/2012428327c96390c4239bdf8f98689c6bfa0b4a"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.30.0",
@@ -4917,8 +4931,99 @@
     {
       "release": "0.172.0",
       "previous_release": "0.171.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d7e07d6ba171ce4723d5b8172fedcb872e0cca9d",
+          "author_date": "2024-07-17T10:42:14Z",
+          "message": "fix: Dashboard thumbnail disappears on asset deletion (#3747)\n\n## Description\r\n\r\nDashboard thumbnail disappears on asset deletion\r\n\r\n## Steps for reproduction\r\n\r\nDelete any asset see dashboard thumb is still exist\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/d7e07d6ba171ce4723d5b8172fedcb872e0cca9d"
+        },
+        {
+          "sha": "b0726f1be1b49303b60abc8597305640cf416e52",
+          "author_date": "2024-07-17T11:32:18Z",
+          "message": "build: bump storybook (#3731)\n\nStorybook cut a lot of transitive packages. Now upgrades should be\r\neasier. Future 8.3 promise to cut even more.",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/b0726f1be1b49303b60abc8597305640cf416e52"
+        },
+        {
+          "sha": "10b9533e31eaf37e0b3fe198aaf08e272b50951d",
+          "author_date": "2024-07-17T11:48:08Z",
+          "message": "fix: support backdrop-filter in safari (#3748)\n\nSafari was the first to build this feature but still supports only\r\nprefixed version. Might land unprefixed in safari 18.",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/10b9533e31eaf37e0b3fe198aaf08e272b50951d"
+        },
+        {
+          "sha": "aede354cbdc9c7eea71ca122524200a64138e74c",
+          "author_date": "2024-07-18T11:09:08Z",
+          "message": "refactor: isolate remix specifics in cli (#3753)\n\nWe wanna support other frameworks than remix.\r\nAt least to support SSG we need to additionally deploy vike.dev.\r\n\r\nHere split all remix specifics into separate module. It provides the\r\nlist of components (including overrides) and templates getter.\r\n\r\nTemplates allow to provide multiple module per route which is essential\r\nfor many frameworks like svelte and vike which do not rely on\r\ntreeshaking for client/server splitting.",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/aede354cbdc9c7eea71ca122524200a64138e74c"
+        },
+        {
+          "sha": "a533debc3bdc8b8b548936e87c76463ab3116bc5",
+          "author_date": "2024-07-18T11:28:54Z",
+          "message": "build: bump remix (#3749)\n\n- netlify got rid of opentelemetry\r\n- postcss is deduped",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/a533debc3bdc8b8b548936e87c76463ab3116bc5"
+        },
+        {
+          "sha": "5d5843ba22d0240774e85ab02ffe8948b707e419",
+          "author_date": "2024-07-19T10:18:00Z",
+          "message": "fix: Do not load full Build data at builder loader (#3759)\n\n## Description\r\n\r\nLoading of html (first request)\r\n\r\n\r\nhttps://project-load-perf.development.webstudio.is/builder/be939bf2-9095-4e17-b175-69de2bbf9597\r\n700ms\r\n\r\nSame on main 8sec\r\n\r\nhttps://main.development.webstudio.is/builder/be939bf2-9095-4e17-b175-69de2bbf9597\r\n\r\n10x difference\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/5d5843ba22d0240774e85ab02ffe8948b707e419"
+        },
+        {
+          "sha": "0cd5080d765841178f14de1d5c6c46c1259eb52d",
+          "author_date": "2024-07-19T11:57:17Z",
+          "message": "fix: Prevent accidental clicks on label with boolean control (#3756)\n\nFixes https://github.com/webstudio-is/webstudio/issues/3751\r\n\r\n## Description\r\n\r\nClicking on a label that toggles the switch is not necessary and leads\r\nto accidental changes.\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/0cd5080d765841178f14de1d5c6c46c1259eb52d"
+        },
+        {
+          "sha": "30c76001432158f119236e2519a6b394536c60d0",
+          "author_date": "2024-07-19T11:57:28Z",
+          "message": "fix: Skip empty combo class when pasting from webflow (#3755)\n\n## Description\r\n\r\nSkipping unnecessary combo class\r\n\r\n## Steps for reproduction\r\n\r\n1. in webflow, add element with class .a, define color\r\n2. add element with class .b, define font size\r\n3. add element with class .a.b  don't define anything\r\n4. paste .a.b into webstudio - see .a .b tokens are added, but no .a.b\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/30c76001432158f119236e2519a6b394536c60d0"
+        },
+        {
+          "sha": "c994c689b9745c18fa18781c484abbf2f5b3aafe",
+          "author_date": "2024-07-19T15:25:23Z",
+          "message": "fix: Set correct tag when pasting a Block from webflow (#3762)\n\n## Description\r\n\r\nWe were currently not setting the tag that comes from webflow properties\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/c994c689b9745c18fa18781c484abbf2f5b3aafe"
+        },
+        {
+          "sha": "4c41ca05c7266356e775c091e30db1aa5b88c991",
+          "author_date": "2024-07-19T19:15:42Z",
+          "message": "feat: Display navigator item show state (#3761)\n\nFixes https://github.com/webstudio-is/webstudio/issues/3750\r\n\r\n## Description\r\n\r\nIndicate show=false in the navigator\r\n\r\n## Steps for reproduction\r\n\r\n1. toggle show switch\r\n2. see item in the navigator opacity changed including it's children\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/4c41ca05c7266356e775c091e30db1aa5b88c991"
+        },
+        {
+          "sha": "4977e82031c888493dee91d97512a105ba60221c",
+          "author_date": "2024-07-19T19:32:22Z",
+          "message": "refactor: move social asset into page meta (#3764)\n\nRemoved social asset form top level and moved into generated page meta.\r\nWill be less generated data and simple page head.",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/4977e82031c888493dee91d97512a105ba60221c"
+        },
+        {
+          "sha": "1c3e878ca0249da916de2c62da164f35a6611d84",
+          "author_date": "2024-07-20T09:22:12Z",
+          "message": "refactor: merge exclude from search flags (#3765)\n\nWrite environment flag to page meta in load instead of exposing to\r\nclient.",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/1c3e878ca0249da916de2c62da164f35a6611d84"
+        },
+        {
+          "sha": "231c792ebfbec8c29f62c26603c195404cbc3ecc",
+          "author_date": "2024-07-20T15:34:36Z",
+          "message": "experimental: Enhance Performance by Using Postgrest to Fetch Data from Build Table (#3758)\n\n## Description\r\n\r\n[Big Project\r\nExample](https://postgrest.development.webstudio.is/builder/be939bf2-9095-4e17-b175-69de2bbf9597)\r\n\r\nReduces time of big projects loading:\r\n\r\n✓ { scenario:new_o }...........: avg=2.58s min=1.99s med=2.54s max=3.53s\r\np(90)=2.95s p(95)=3.15s p(99)=3.44s count=31\r\n✓ { scenario:old_o }...........: avg=5.5s min=4.55s med=5.12s max=15.58s\r\np(90)=5.44s p(95)=6.02s p(99)=12.87s count=31\r\n\r\n2 times faster. (but highly depends on test times, project size etc\r\nsometimes it's 6x difference)\r\n\r\nReduces patch time too.\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/231c792ebfbec8c29f62c26603c195404cbc3ecc"
+        },
+        {
+          "sha": "aa364048aa14db7ac244a318765f96cf5a29cc22",
+          "author_date": "2024-07-20T16:16:11Z",
+          "message": "feat: Show/hide toggle in navigator (#3766)\n\nCloses https://github.com/webstudio-is/webstudio/issues/237\r\n\r\n## Description\r\n\r\nNow you can show/hide directly from navigator\r\n\r\n## Steps for reproduction\r\n\r\n1. focus/hover any navigator item\r\n2. show/hide item works as expected\r\n3. in sync with show/hide in settings\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/aa364048aa14db7ac244a318765f96cf5a29cc22"
+        },
+        {
+          "sha": "7e8ea76dc352346cf720eec7489463eb8fa5764c",
+          "author_date": "2024-07-20T16:41:01Z",
+          "message": "release-20-07-2024.staging",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/7e8ea76dc352346cf720eec7489463eb8fa5764c"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.173.0",
@@ -5001,8 +5106,39 @@
     {
       "release": "0.185.1",
       "previous_release": "0.185.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d29065b7fe6e63b695d2e5b31decbcf6313341b3",
+          "author_date": "2024-10-14T19:13:18Z",
+          "message": "build: publish 0.185.0 (#4286)",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/d29065b7fe6e63b695d2e5b31decbcf6313341b3"
+        },
+        {
+          "sha": "89bca4d7d0da4d0826a412e372f5c31a863e0edf",
+          "author_date": "2024-10-16T08:33:32Z",
+          "message": "feat: Publish settings section in project settings (#4295)\n\nCloses https://github.com/webstudio-is/webstudio/issues/4272\r\n\r\n## Description\r\n\r\n- I moved the only publish setting we have to a separate section, so we\r\ncan add more in the future.\r\n- Added a settings button in publish dialog\r\n\r\n<img width=\"625\" alt=\"image\"\r\nsrc=\"https://github.com/user-attachments/assets/8c72028c-69e6-4fb6-849f-bdb9ee0594cc\">\r\n<img width=\"327\" alt=\"image\"\r\nsrc=\"https://github.com/user-attachments/assets/70c892de-65ef-4962-a790-fb8c6e6b49e7\">\r\n\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/89bca4d7d0da4d0826a412e372f5c31a863e0edf"
+        },
+        {
+          "sha": "87e2a1ceb8a2026f63f08bffdbc073274976600a",
+          "author_date": "2024-10-16T08:38:41Z",
+          "message": "fix: Movement jumps on windows (#4296)\n\n## Description\r\n\r\nSeems like \r\ncloses #4236\r\n\r\nFor me bug on windows looks a little bit different like a huge scrubbing\r\njumps. But anyway seems like fixed everything described in corresponding\r\nissue.\r\n\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/87e2a1ceb8a2026f63f08bffdbc073274976600a"
+        },
+        {
+          "sha": "17b3159c4949c4d18b8544a8fe767b3eaed863a2",
+          "author_date": "2024-10-16T10:43:40Z",
+          "message": "fix: Input arrow up and down pulls up autocomplete now instead of incrementing (#4291)\n\n## Description\r\n\r\ncloses #4287\r\n\r\n- [x] Up/Down now uses `onChange` instead of `onChangeComplete` (this\r\nshould be faster)\r\n- [x] Up/Down in the Space control now works with modifiers (it seems\r\nthis never worked before)\r\n- [x] Up/Down no longer opens the combobox if the input is\r\nnumeric-like​⬤\r\n\r\n## Steps for reproduction\r\n\r\n1. click button\r\n2. expect xyz\r\n\r\n## Code Review\r\n\r\n- [ ] hi @kof, I need you to do\r\n  - conceptual review (architecture, feature-correctness)\r\n  - detailed review (read every line)\r\n  - test it on preview\r\n\r\n## Before requesting a review\r\n\r\n- [ ] made a self-review\r\n- [ ] added inline comments where things may be not obvious (the \"why\",\r\nnot \"what\")\r\n\r\n## Before merging\r\n\r\n- [ ] tested locally and on preview environment (preview dev login:\r\n5de6)\r\n- [ ] updated [test\r\ncases](https://github.com/webstudio-is/webstudio/blob/main/apps/builder/docs/test-cases.md)\r\ndocument\r\n- [ ] added tests\r\n- [ ] if any new env variables are added, added them to `.env` file",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/17b3159c4949c4d18b8544a8fe767b3eaed863a2"
+        },
+        {
+          "sha": "4cbad53282e20682b8d6c58bbab3be15c134aeac",
+          "author_date": "2024-10-14T18:37:27Z",
+          "message": "build: release 14-10-2024",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/4cbad53282e20682b8d6c58bbab3be15c134aeac"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.185.2",
@@ -5517,8 +5653,27 @@
     {
       "release": "0.263.0",
       "previous_release": "0.262.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "13a7c665ea96b2c79250cd57dd3c8c704ee8ec8e",
+          "author_date": "2026-04-25T15:25:15Z",
+          "message": "fix: Allow publishing to staging with CMS on free plan (#5721)\n\nAlso Clarify staging vs custom-domain upgrade messaging",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/13a7c665ea96b2c79250cd57dd3c8c704ee8ec8e"
+        },
+        {
+          "sha": "fc70898513ebd96cfef6e8b677e9d04320ec3aa9",
+          "author_date": "2026-04-25T17:42:42Z",
+          "message": "fix: Preserve whitespace between sibling elements (#5718)\n\nTreat whitespace-only text nodes between element siblings as part of the\nprevious element instead of creating a separate text node.\ngenerateFragmentFromHtml now detects when a text node consisting only of\nspace appears between two elements and appends that space to the\nprevious instance's last text child (if present), avoiding creation of a\nstandalone text child. Added a regression test in plugin-html.test.tsx\nto verify pasted HTML like `<span>✓</span> <span>text</span>` preserves\nthe space and results in two span instances (no separate text node),\nensuring text-content control remains correct in the settings panel.",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/fc70898513ebd96cfef6e8b677e9d04320ec3aa9"
+        },
+        {
+          "sha": "c0d2ebf8e0b0d4cf53dcee3650bd7fc9193efdb3",
+          "author_date": "2026-04-25T17:42:57Z",
+          "message": "feat: Remove starter templates, add welcome screen with guide and social links (#5722)",
+          "html_url": "https://github.com/webstudio-is/webstudio/commit/c0d2ebf8e0b0d4cf53dcee3650bd7fc9193efdb3"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.264.0",

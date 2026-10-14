@@ -1108,8 +1108,153 @@
     {
       "release": "v3.1.0",
       "previous_release": "v3.0.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "2f9d2ab80ffd42c27b72cea663fdfef0dc7d8a67",
+          "author_date": "2018-10-25T13:21:49Z",
+          "message": "fix(css): contact widget style wasn't applied if widget was renamed",
+          "html_url": "https://github.com/HugoBlox/kit/commit/2f9d2ab80ffd42c27b72cea663fdfef0dc7d8a67"
+        },
+        {
+          "sha": "5440c0eb11bec7f1fe2b6b79b2d737506bd88a36",
+          "author_date": "2018-10-25T14:05:54Z",
+          "message": "fix(js): linking to a homepage section from another page\n\nLinks to a homepage section from another page could scroll to the wrong\nlocation if the linked section occurred below a project widget.\n\nCause: did not take into account dynamically loaded project images.\n\nSee #754",
+          "html_url": "https://github.com/HugoBlox/kit/commit/5440c0eb11bec7f1fe2b6b79b2d737506bd88a36"
+        },
+        {
+          "sha": "bbfd7e94391a89551e6eeb7f623a9215b4e820af",
+          "author_date": "2018-10-25T18:18:41Z",
+          "message": "feat(i18n): support multi-lingual multi-host (one baseURL per language)\n\nEnables having a different sub-domain per language.\n\nSee https://gohugo.io/content-management/multilingual/#configure-multilingual-multihost\n\nClose #751",
+          "html_url": "https://github.com/HugoBlox/kit/commit/bbfd7e94391a89551e6eeb7f623a9215b4e820af"
+        },
+        {
+          "sha": "fa5de9234dd47b1f30e334191f5df43bca322be5",
+          "author_date": "2018-10-25T19:22:03Z",
+          "message": "feat(profile): support [[params.social]] links to homepage sections\n\nEnables using email icon to link to contact form.\n\nClose #754",
+          "html_url": "https://github.com/HugoBlox/kit/commit/fa5de9234dd47b1f30e334191f5df43bca322be5"
+        },
+        {
+          "sha": "ab20e8f9f26f24c631649cb04b3ea9f1dbad18d3",
+          "author_date": "2018-10-27T11:34:45Z",
+          "message": "refactor(js): use relative URL for Mathjax config JS\n\nWorks around potential multi-host asset Permalink bug in Hugo.\n\nSee #751\nClose #757",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ab20e8f9f26f24c631649cb04b3ea9f1dbad18d3"
+        },
+        {
+          "sha": "9e49f64903c72d92a1c4b737da9969036a6a4a68",
+          "author_date": "2018-10-27T17:22:28Z",
+          "message": "fix(css): fix project widget's simple mode when widget is renamed",
+          "html_url": "https://github.com/HugoBlox/kit/commit/9e49f64903c72d92a1c4b737da9969036a6a4a68"
+        },
+        {
+          "sha": "e877046fa7899c124c55ac9d6cc0056158cf219d",
+          "author_date": "2018-10-27T17:23:47Z",
+          "message": "docs: update screenshot",
+          "html_url": "https://github.com/HugoBlox/kit/commit/e877046fa7899c124c55ac9d6cc0056158cf219d"
+        },
+        {
+          "sha": "12907639450fb9e4078eefcc5fd87ec4913221e2",
+          "author_date": "2018-10-27T23:23:30Z",
+          "message": "feat(page): re-apply markdownify on author names\n\nClose #761",
+          "html_url": "https://github.com/HugoBlox/kit/commit/12907639450fb9e4078eefcc5fd87ec4913221e2"
+        },
+        {
+          "sha": "75abb65a94c42941de6f81413dc789f8bd473189",
+          "author_date": "2018-10-28T00:17:05Z",
+          "message": "feat(talk): support YAML front matter for talks\n\nClose #555",
+          "html_url": "https://github.com/HugoBlox/kit/commit/75abb65a94c42941de6f81413dc789f8bd473189"
+        },
+        {
+          "sha": "8a4a302d47afaead1d0d415b9584426eb4f8c939",
+          "author_date": "2018-10-28T14:16:37Z",
+          "message": "fix(profile): fix `social` link when mailto scheme is used\n\nFix #763",
+          "html_url": "https://github.com/HugoBlox/kit/commit/8a4a302d47afaead1d0d415b9584426eb4f8c939"
+        },
+        {
+          "sha": "e7ed2608c3a3945e16b46464180015427396be98",
+          "author_date": "2018-10-28T16:06:36Z",
+          "message": "fix(profile): fix `social` link when mailto scheme is used\n\nFix #763",
+          "html_url": "https://github.com/HugoBlox/kit/commit/e7ed2608c3a3945e16b46464180015427396be98"
+        },
+        {
+          "sha": "74212542b2d7b56042c0143b0f79d7fe3407903c",
+          "author_date": "2018-10-28T16:19:00Z",
+          "message": "fix(profile): fix `social` link when mailto scheme is used\n\nFix #763",
+          "html_url": "https://github.com/HugoBlox/kit/commit/74212542b2d7b56042c0143b0f79d7fe3407903c"
+        },
+        {
+          "sha": "35b552f2134c44139f337876e3b39e3938a628e8",
+          "author_date": "2018-11-02T18:30:19Z",
+          "message": "i18n: fix Catalan translation (#779)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/35b552f2134c44139f337876e3b39e3938a628e8"
+        },
+        {
+          "sha": "89247fa53439f05844700281e96baf1140b59feb",
+          "author_date": "2018-11-02T22:29:10Z",
+          "message": "docs: add Patreon link",
+          "html_url": "https://github.com/HugoBlox/kit/commit/89247fa53439f05844700281e96baf1140b59feb"
+        },
+        {
+          "sha": "31eb8702962b4b6b4ac5327174cf8908d8885f25",
+          "author_date": "2018-11-03T13:13:23Z",
+          "message": "chore: require Hugo v0.50+\n\nHugo v0.50 fixes bug with using `hugo new` to create new pages\n\nSee #732",
+          "html_url": "https://github.com/HugoBlox/kit/commit/31eb8702962b4b6b4ac5327174cf8908d8885f25"
+        },
+        {
+          "sha": "ca4fd7159d659db67fa1ea4940e04357ceb98a35",
+          "author_date": "2018-11-03T17:26:27Z",
+          "message": "feat(widgets): do not require email if using Netlify contact form\n\nNetlify routes messages from contact form to its admin panel, so no\nemail address is required.\n\nBy not requiring email in this case, it is not revealed to any spam bots\nwhich might try to scrape a website's public Git repository.\n\nClose #775",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ca4fd7159d659db67fa1ea4940e04357ceb98a35"
+        },
+        {
+          "sha": "4b5c97262cf560b6b22891120b230f019a0a511e",
+          "author_date": "2018-11-03T18:09:39Z",
+          "message": "fix(widgets): respect the `date_format` option for experience widget (#783)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/4b5c97262cf560b6b22891120b230f019a0a511e"
+        },
+        {
+          "sha": "c7f2d55c65432b07aa6b2764bbdb864749a22bb3",
+          "author_date": "2018-11-03T18:19:29Z",
+          "message": "Set min_version to string rather than float\n\nSee https://github.com/gohugoio/hugo/issues/5399",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c7f2d55c65432b07aa6b2764bbdb864749a22bb3"
+        },
+        {
+          "sha": "de269ebdb8695201ebd411d138fce14ade14375d",
+          "author_date": "2018-11-03T20:13:43Z",
+          "message": "feat(project): add showcase mode and revert card view to resized images\n\n* add project showcase layout, set `view = 2` in `projects.md` to use\n* revert card view to use resized images rather than cropped images\n* fix project filters for tags with non-ASCII (i18n) characters\n* add single column wide layout for project widget, to use set\n  `widget_layout` in `projects.md`\n* add `flip_alt_rows` widget option to flip alternate rows in showcase\n  mode\n* `url_` link buttons can now be added for projects\n* all link buttons now appear in page header rather than under a 'links'\n  section within the page\n* Markdown slides can now be linked from any page by using new `slides`\n  option\n* Isotope JS is now only activated when required (i.e. when using card\n  view or when filters are defined)\n* `links` translation removed from i18n\n* consolidate talk, pub., and new project links files into new single\n  `page_links.html` for all pages\n* move project widget layouts to their own files\n\nClose #764\nClose #785\nClose #776\nClose #645\nClose #326\n\nBREAKING CHANGE:\n\nCSS class names of project tags are now prefixed with `js-id-` to\nnamespace them and prevent clashes with existing CSS classes.\n\nMigrate any filter `tag`s in `projects.md` that are prefixed `.` to the\nnew `.js-id-` prefix.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/de269ebdb8695201ebd411d138fce14ade14375d"
+        },
+        {
+          "sha": "dd5422981bf1c7d0c51f8a3a51d33996d5edad6a",
+          "author_date": "2018-11-03T22:17:00Z",
+          "message": "feat: Add support for icons in `url_custom`\n\nClose #787\nClose #326",
+          "html_url": "https://github.com/HugoBlox/kit/commit/dd5422981bf1c7d0c51f8a3a51d33996d5edad6a"
+        },
+        {
+          "sha": "3d9a1277a82ded759843395024e531c64437b91c",
+          "author_date": "2018-11-03T22:37:36Z",
+          "message": "feat(project): list associated posts\n\nClose #767",
+          "html_url": "https://github.com/HugoBlox/kit/commit/3d9a1277a82ded759843395024e531c64437b91c"
+        },
+        {
+          "sha": "0ff174bbf4ff6def66761ccf7c71293d2a24adb9",
+          "author_date": "2018-11-03T23:27:03Z",
+          "message": "feat(shortcodes): add support for image gallery in page bundle\n\nTo use:\n\n1. Create a gallery album folder in page bundle\n2. Add images to album folder\n3. Paste `{{< gallery album=\"<ALBUM FOLDER>\" >}}` in your page content\n\nClose #786",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0ff174bbf4ff6def66761ccf7c71293d2a24adb9"
+        },
+        {
+          "sha": "d930502a550dd838a1a93368c91fc566a9ef1d4e",
+          "author_date": "2018-11-03T23:42:15Z",
+          "message": "feat: add `preview_only` option for featured image\n\nAdd `preview_only = true` under `[image]` in a page's front matter to\nonly show featured image in page previews and not on the page itself.\n\nExample: https://raw.githubusercontent.com/gcushen/hugo-academic/master/exampleSite/content/post/getting-started/index.md\n\nClose #789\nSee #728",
+          "html_url": "https://github.com/HugoBlox/kit/commit/d930502a550dd838a1a93368c91fc566a9ef1d4e"
+        },
+        {
+          "sha": "2eb58c08b74acc077795bf282eca1333ce47bbff",
+          "author_date": "2018-11-04T00:41:33Z",
+          "message": "Bump version",
+          "html_url": "https://github.com/HugoBlox/kit/commit/2eb58c08b74acc077795bf282eca1333ce47bbff"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v3.1.1",
@@ -1258,8 +1403,141 @@
     {
       "release": "v5.2.0",
       "previous_release": "v5.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f3ea40cc5f1c53ca29c241c24332675aac7b8a12",
+          "author_date": "2021-04-13T18:16:09Z",
+          "message": "i18n: update zh-Hant.yaml (#2257)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f3ea40cc5f1c53ca29c241c24332675aac7b8a12"
+        },
+        {
+          "sha": "97ff003d9fb36dee807160b313d42102bffaaf32",
+          "author_date": "2021-04-13T18:56:22Z",
+          "message": "fix: Language name doesn't appear for zh-Hant\n\nLanguage name doesn't appear when LanguageCode has a sub-code\n\nThe issue appears to be an inconsistency/bug with Hugo's `.Translations` lowercasing zh-Hant to zh-hant without offering a way to get the language code as it was defined.\n\nWe can workaround it for now by converting to lowercase to align with Hugo's current implementation.\n\nFix #2256",
+          "html_url": "https://github.com/HugoBlox/kit/commit/97ff003d9fb36dee807160b313d42102bffaaf32"
+        },
+        {
+          "sha": "153cf5b78046f1f94160c4543162886d1b8999c7",
+          "author_date": "2021-04-13T19:07:59Z",
+          "message": "feat(widget): show brand logo in Experience + Accomplishments\n\nTo use, add SVG brand logo in lowercase to your `assets/media/icons/brands/` folder\n\nBREAKING CHANGE:\n\nRename `assets/media/icon-pack/` to `assets/media/icons/`\n\nClose #2259\nClose #1781",
+          "html_url": "https://github.com/HugoBlox/kit/commit/153cf5b78046f1f94160c4543162886d1b8999c7"
+        },
+        {
+          "sha": "ab8d28988e0e454807b2883eab26ee82873b5e6f",
+          "author_date": "2021-04-13T19:22:02Z",
+          "message": "feat(widget): Experience - add brand logo error msg\n\nClose #1781",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ab8d28988e0e454807b2883eab26ee82873b5e6f"
+        },
+        {
+          "sha": "1e2347192afe002ba2fe144187586812b7eb6ed1",
+          "author_date": "2021-04-16T18:38:34Z",
+          "message": "fix(widget): error msg",
+          "html_url": "https://github.com/HugoBlox/kit/commit/1e2347192afe002ba2fe144187586812b7eb6ed1"
+        },
+        {
+          "sha": "171648c80874346fc82d593daa14eb5283cfdf28",
+          "author_date": "2021-04-16T20:57:38Z",
+          "message": "fix: style mb",
+          "html_url": "https://github.com/HugoBlox/kit/commit/171648c80874346fc82d593daa14eb5283cfdf28"
+        },
+        {
+          "sha": "0994df7177b2f397f3977df51475755f66b4d78b",
+          "author_date": "2021-04-18T19:41:34Z",
+          "message": "feat: allow SVG as Hero image",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0994df7177b2f397f3977df51475755f66b4d78b"
+        },
+        {
+          "sha": "aa4ca206c834ce60a7a211daa3ad908c8830b36b",
+          "author_date": "2021-04-18T19:42:27Z",
+          "message": "feat: only show User Group headings in People widget when multiple\n\nHide User Group headings in People widget if admin chooses to only show one user group.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/aa4ca206c834ce60a7a211daa3ad908c8830b36b"
+        },
+        {
+          "sha": "e9cec2d3e9935aee543dff90c19beb364de37511",
+          "author_date": "2021-04-18T19:43:15Z",
+          "message": "feat: add new `gradient_angle` option to page builder",
+          "html_url": "https://github.com/HugoBlox/kit/commit/e9cec2d3e9935aee543dff90c19beb364de37511"
+        },
+        {
+          "sha": "bfa3808cb6ecc3722c570edbcf12960b833364ce",
+          "author_date": "2021-04-22T19:27:24Z",
+          "message": "style: prevent empty p tag when there is no copyright (#2271)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/bfa3808cb6ecc3722c570edbcf12960b833364ce"
+        },
+        {
+          "sha": "0afcc81296debb841d33af33ebe89353df0f14d6",
+          "author_date": "2021-04-25T19:12:38Z",
+          "message": "feat: remove deprecated netlify-cms-academic module\n\nWas replaced by wowchemy-cms module in v5.0 (specifically v5.0.0-beta.3): https://wowchemy.com/blog/v5.0.0-beta.3/\n\nSee https://wowchemy.com/docs/getting-started/cms/",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0afcc81296debb841d33af33ebe89353df0f14d6"
+        },
+        {
+          "sha": "2d9c18ecf0ef268ccc9f3688a06cc83217344d30",
+          "author_date": "2021-05-01T19:13:34Z",
+          "message": "fix: nonexistent navbar button aria-controls ID (#2268)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/2d9c18ecf0ef268ccc9f3688a06cc83217344d30"
+        },
+        {
+          "sha": "84e462a5a14963d87ff9e1d82247a6ed3fd596bf",
+          "author_date": "2021-05-16T10:12:31Z",
+          "message": "feat: support Bing site verification (#2287)\n\nVia params.yaml > marketing > bing_site_verification",
+          "html_url": "https://github.com/HugoBlox/kit/commit/84e462a5a14963d87ff9e1d82247a6ed3fd596bf"
+        },
+        {
+          "sha": "1c4f02fe34f21791f2d17173c5cf8f5be4a551a4",
+          "author_date": "2021-05-22T18:42:22Z",
+          "message": "chore: replace defunct Stale bot with GH action",
+          "html_url": "https://github.com/HugoBlox/kit/commit/1c4f02fe34f21791f2d17173c5cf8f5be4a551a4"
+        },
+        {
+          "sha": "f54794f046c5c440e93f895069ea0f87f0cad452",
+          "author_date": "2021-05-22T18:59:22Z",
+          "message": "chore: replace defunct Stale bot with GH action",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f54794f046c5c440e93f895069ea0f87f0cad452"
+        },
+        {
+          "sha": "14aea8f8a34a8561c97ce76b37efe5a56f2420c6",
+          "author_date": "2021-05-25T18:16:08Z",
+          "message": "i18n: improve Finnish translations (#2306)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/14aea8f8a34a8561c97ce76b37efe5a56f2420c6"
+        },
+        {
+          "sha": "b860e6c775fda9374544cdb2b3cf01a2bd2aaf58",
+          "author_date": "2021-05-25T18:32:39Z",
+          "message": "fix: unminified JavaScript (#2305)\n\nAppears that behavior of recent Hugo versions changed w.r.t. JS formatting",
+          "html_url": "https://github.com/HugoBlox/kit/commit/b860e6c775fda9374544cdb2b3cf01a2bd2aaf58"
+        },
+        {
+          "sha": "83e9ee754245f6a01a5df91acb50812b964d9de7",
+          "author_date": "2021-05-23T11:39:21Z",
+          "message": "chore: edit stale config",
+          "html_url": "https://github.com/HugoBlox/kit/commit/83e9ee754245f6a01a5df91acb50812b964d9de7"
+        },
+        {
+          "sha": "8bba30b81ab6e70e50dd8b7011b9ed831bd3e59f",
+          "author_date": "2021-05-25T18:51:11Z",
+          "message": "fix: unminified JavaScript (#2305)\n\nRepeat prev commit action on the init script",
+          "html_url": "https://github.com/HugoBlox/kit/commit/8bba30b81ab6e70e50dd8b7011b9ed831bd3e59f"
+        },
+        {
+          "sha": "8711be90e7a15bd4bd5654c98d8b92416467650f",
+          "author_date": "2021-05-25T20:55:30Z",
+          "message": "feat: support custom order for experience\n\nClose #1761",
+          "html_url": "https://github.com/HugoBlox/kit/commit/8711be90e7a15bd4bd5654c98d8b92416467650f"
+        },
+        {
+          "sha": "f6e3fa444249ed6f1acfc1fa873c33d82af6bb52",
+          "author_date": "2021-05-25T20:55:51Z",
+          "message": "chore: bump version",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f6e3fa444249ed6f1acfc1fa873c33d82af6bb52"
+        },
+        {
+          "sha": "89d079bcf05589a7b762fb9eb3aaf49861afd9d6",
+          "author_date": "2021-05-25T21:07:30Z",
+          "message": "fix: comment",
+          "html_url": "https://github.com/HugoBlox/kit/commit/89d079bcf05589a7b762fb9eb3aaf49861afd9d6"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v5.3.0",
@@ -1270,8 +1548,279 @@
     {
       "release": "v5.4.0",
       "previous_release": "v5.3.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "028d5cbef51b71ad06004bb4b4430c1f08a64bdd",
+          "author_date": "2021-06-29T20:02:26Z",
+          "message": "fix: test for new module versions",
+          "html_url": "https://github.com/HugoBlox/kit/commit/028d5cbef51b71ad06004bb4b4430c1f08a64bdd"
+        },
+        {
+          "sha": "94ce6a21f26853296ffd5cb3f4dfe293f2625ebd",
+          "author_date": "2021-07-01T19:37:29Z",
+          "message": "docs: edit",
+          "html_url": "https://github.com/HugoBlox/kit/commit/94ce6a21f26853296ffd5cb3f4dfe293f2625ebd"
+        },
+        {
+          "sha": "20705590cc86c65027199963b6e9a93057fd67b2",
+          "author_date": "2021-07-09T17:53:42Z",
+          "message": "i18n: update Hebrew translation (#2375)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/20705590cc86c65027199963b6e9a93057fd67b2"
+        },
+        {
+          "sha": "42d1cf0063b9c4e750fc8e705523a7797580bbc4",
+          "author_date": "2021-07-09T23:20:15Z",
+          "message": "feat: add support for video backgrounds\n\nVia design > background > video > path\n\nAlso add flip option and move `advanced` params under `design` instead, whilst maintaining legacy compat.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/42d1cf0063b9c4e750fc8e705523a7797580bbc4"
+        },
+        {
+          "sha": "a9189fd7c7c6502c83276332bc53d8492a897494",
+          "author_date": "2021-07-17T09:39:39Z",
+          "message": "perf: optimise size and format of section backgrounds",
+          "html_url": "https://github.com/HugoBlox/kit/commit/a9189fd7c7c6502c83276332bc53d8492a897494"
+        },
+        {
+          "sha": "c750304197272f7bcfb401e1107dc1b3246da0f0",
+          "author_date": "2021-07-17T13:03:31Z",
+          "message": "perf: install core libs directly rather than via external CDN\n\nIncrease performance in countries such as China.\n\nAddresses the case where countries block or restrict CDNs, or when external CDNs go offline.\n\nSee https://github.com/wowchemy/wowchemy-hugo-modules/pull/2351",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c750304197272f7bcfb401e1107dc1b3246da0f0"
+        },
+        {
+          "sha": "1db799ea74319862444a513010b3182c87310178",
+          "author_date": "2021-07-17T14:05:02Z",
+          "message": "fix: Lighthouse btn accessibility and image size",
+          "html_url": "https://github.com/HugoBlox/kit/commit/1db799ea74319862444a513010b3182c87310178"
+        },
+        {
+          "sha": "9a5cd58eaf6815044b6d89c4a2b2e224eb509e15",
+          "author_date": "2021-07-21T20:22:33Z",
+          "message": "i18n: add Dutch address format (#2387)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/9a5cd58eaf6815044b6d89c4a2b2e224eb509e15"
+        },
+        {
+          "sha": "f2a43d13cd0fe65a9c9d4fe36e3ff1435ff3e957",
+          "author_date": "2021-07-21T20:24:08Z",
+          "message": "i18n: add en-ca and fr-ca address formats (#2389)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f2a43d13cd0fe65a9c9d4fe36e3ff1435ff3e957"
+        },
+        {
+          "sha": "8e019feb3c1399d6671451d66946a5f7a7ca7762",
+          "author_date": "2021-07-21T20:25:30Z",
+          "message": "docs: fix broken link in Readme (#2385)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/8e019feb3c1399d6671451d66946a5f7a7ca7762"
+        },
+        {
+          "sha": "58dc5154c327ed0373957a191b9fe23715d89ebb",
+          "author_date": "2021-07-21T20:31:20Z",
+          "message": "fix(cms): cannot save project without entering an external link\n\nFix #2388",
+          "html_url": "https://github.com/HugoBlox/kit/commit/58dc5154c327ed0373957a191b9fe23715d89ebb"
+        },
+        {
+          "sha": "265894f90488e4515961931e4cbb0b40697ca09b",
+          "author_date": "2021-07-21T20:51:00Z",
+          "message": "feat: add support for rCAPTCHA in Formspree forms (#2377)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/265894f90488e4515961931e4cbb0b40697ca09b"
+        },
+        {
+          "sha": "ce834f7b9c340c17b7339c9802faa5fab55b3734",
+          "author_date": "2021-07-24T13:04:48Z",
+          "message": "fix: typo in audio shortcode\n\nAlthough typo didn't actually cause any issues as there's a URL-based fallback in place.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ce834f7b9c340c17b7339c9802faa5fab55b3734"
+        },
+        {
+          "sha": "cda364b1903742bd2c8ed65bffbb36394c9ea0b0",
+          "author_date": "2021-07-24T16:32:02Z",
+          "message": "feat: add attachments and success_url options to contact form (#2394)\n\nScope: Netlify forms",
+          "html_url": "https://github.com/HugoBlox/kit/commit/cda364b1903742bd2c8ed65bffbb36394c9ea0b0"
+        },
+        {
+          "sha": "3670e8959fbeccc0e377a6fc6b2e25b0fcd695d1",
+          "author_date": "2021-07-25T10:32:41Z",
+          "message": "chore: add theme.toml and images/",
+          "html_url": "https://github.com/HugoBlox/kit/commit/3670e8959fbeccc0e377a6fc6b2e25b0fcd695d1"
+        },
+        {
+          "sha": "bbe35065fb89134776d45ed163f47ac7c0bf5dce",
+          "author_date": "2021-07-25T10:42:39Z",
+          "message": "chore: move theme.toml and images/",
+          "html_url": "https://github.com/HugoBlox/kit/commit/bbe35065fb89134776d45ed163f47ac7c0bf5dce"
+        },
+        {
+          "sha": "4bf054e44fa2b8e6c40206fc860291289ed1bcbc",
+          "author_date": "2021-07-25T20:00:41Z",
+          "message": "chore: move theme.toml and images/",
+          "html_url": "https://github.com/HugoBlox/kit/commit/4bf054e44fa2b8e6c40206fc860291289ed1bcbc"
+        },
+        {
+          "sha": "0a8115627804821d16b59d8b1ff0aab759e2528e",
+          "author_date": "2021-07-25T20:21:42Z",
+          "message": "chore: move theme.toml and images/ - workaround for Hugo",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0a8115627804821d16b59d8b1ff0aab759e2528e"
+        },
+        {
+          "sha": "18817339c3d847ebc5e5e9968f2e2436063a76d1",
+          "author_date": "2021-08-07T12:13:20Z",
+          "message": "i18n: improve zh-Hant translation (#2404)\n\n- \"more\" means \"更多\" instead of \"全部\"\r\n- fix a simplified character \"费\" to \"費\"\r\n- some more recent language strings translated",
+          "html_url": "https://github.com/HugoBlox/kit/commit/18817339c3d847ebc5e5e9968f2e2436063a76d1"
+        },
+        {
+          "sha": "44819d4299eed8b74af856f06f043f0bc701bac0",
+          "author_date": "2021-08-07T12:22:32Z",
+          "message": "feat: add Table shortcode to render a CSV (#2393)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/44819d4299eed8b74af856f06f043f0bc701bac0"
+        },
+        {
+          "sha": "437c4f0fdebceb93d1fcb4ce175f6b3fd3a8d4eb",
+          "author_date": "2021-08-07T12:29:04Z",
+          "message": "feat: Table: rename src -> path",
+          "html_url": "https://github.com/HugoBlox/kit/commit/437c4f0fdebceb93d1fcb4ce175f6b3fd3a8d4eb"
+        },
+        {
+          "sha": "88ec9270d03e76b0a562321d20b021686a6da9d0",
+          "author_date": "2021-08-07T12:52:57Z",
+          "message": "chore: move HugoThemeSite files\n\nAs per Bep comment",
+          "html_url": "https://github.com/HugoBlox/kit/commit/88ec9270d03e76b0a562321d20b021686a6da9d0"
+        },
+        {
+          "sha": "81345fad46b54be813c9e5225e5ffc95bcf0b84c",
+          "author_date": "2021-08-11T09:10:31Z",
+          "message": "style: remove extra spaces in link buttons (#2412)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/81345fad46b54be813c9e5225e5ffc95bcf0b84c"
+        },
+        {
+          "sha": "8b6612e7631cdcb3faf70ee18f6c47d2070f2c6a",
+          "author_date": "2021-08-30T15:08:07Z",
+          "message": "feat: add simple Avatar variation of About widget",
+          "html_url": "https://github.com/HugoBlox/kit/commit/8b6612e7631cdcb3faf70ee18f6c47d2070f2c6a"
+        },
+        {
+          "sha": "f6356f5cebe9c0d872563becb8881fc900cedf53",
+          "author_date": "2021-09-12T22:20:49Z",
+          "message": "fix: SVG header logo missing size (Lighthouse fix)\n\nSee unresolved Hugo issue: https://github.com/gohugoio/hugo/issues/3700\n\nWorkaround is to manually define SVG size:\nsite.Params.header.image.width\nsite.Params.header.image.height",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f6356f5cebe9c0d872563becb8881fc900cedf53"
+        },
+        {
+          "sha": "509c8873707281cddd9b2ca352b9a28c8fab80ec",
+          "author_date": "2021-09-12T22:56:01Z",
+          "message": "fix: ToC tap target size (Lighthouse)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/509c8873707281cddd9b2ca352b9a28c8fab80ec"
+        },
+        {
+          "sha": "0c287152ef7b06893d9dc2f4feba15fc9b5032d4",
+          "author_date": "2021-09-12T22:58:40Z",
+          "message": "fix: add width and height to header/featured image (#2463)\n\nPrevent layout shift (Lighthouse)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0c287152ef7b06893d9dc2f4feba15fc9b5032d4"
+        },
+        {
+          "sha": "d054640701c48b55b1fe6109f09296753efa9131",
+          "author_date": "2021-09-12T23:16:49Z",
+          "message": "fix: SVG header logo missing size (Lighthouse fix)\n\nPart 2/2.\n\nSee unresolved Hugo issue: gohugoio/hugo#3700\n\nWorkaround is to manually define SVG size:\nsite.Params.header.image.width\nsite.Params.header.image.height",
+          "html_url": "https://github.com/HugoBlox/kit/commit/d054640701c48b55b1fe6109f09296753efa9131"
+        },
+        {
+          "sha": "9ccb06531f61b0524e03aa3f4b8d0a70363b2a2d",
+          "author_date": "2021-09-12T23:32:05Z",
+          "message": "fix: ToC tap target size (Lighthouse)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/9ccb06531f61b0524e03aa3f4b8d0a70363b2a2d"
+        },
+        {
+          "sha": "c9831b5c1e21e0b621d78290de095d7e479a26d0",
+          "author_date": "2021-09-12T23:48:19Z",
+          "message": "fix: sharer being aria hidden but having focusable dependents",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c9831b5c1e21e0b621d78290de095d7e479a26d0"
+        },
+        {
+          "sha": "c7616ab56818f76b3aeef318f8a46a011df5ec3a",
+          "author_date": "2021-09-20T18:20:57Z",
+          "message": "feat: don't index private pages (#2464)\n\nSetting the private attribute on pages currently prevents them from showing up in Wowchemy search.\r\n\r\nThis change instructs search engines to also ignore pages set to private.\r\n\r\nFixes #2444",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c7616ab56818f76b3aeef318f8a46a011df5ec3a"
+        },
+        {
+          "sha": "64c3c7e8a2e8e015ccb76b6f3e93372f83de29de",
+          "author_date": "2021-10-04T11:18:12Z",
+          "message": "feat: rename repo to wowchemy-hugo-themes\n\nExcept repo name in module names as that would be a breaking change",
+          "html_url": "https://github.com/HugoBlox/kit/commit/64c3c7e8a2e8e015ccb76b6f3e93372f83de29de"
+        },
+        {
+          "sha": "922e22cca55631437349fb186f62ff5ff2e41c24",
+          "author_date": "2021-10-04T11:59:57Z",
+          "message": "feat: add support for page seo.title",
+          "html_url": "https://github.com/HugoBlox/kit/commit/922e22cca55631437349fb186f62ff5ff2e41c24"
+        },
+        {
+          "sha": "6d382a393a21bfb30ff7a6d619b2b9a8a303dd1a",
+          "author_date": "2021-10-04T19:17:50Z",
+          "message": "feat: CLS - preconnect to Google Fonts earlier\n\nAlso, allow disabling Isotope on a specifc page, such as home",
+          "html_url": "https://github.com/HugoBlox/kit/commit/6d382a393a21bfb30ff7a6d619b2b9a8a303dd1a"
+        },
+        {
+          "sha": "b02a90a434c63ff6255a1a3f7dfbeee715b50ed1",
+          "author_date": "2021-10-04T19:19:17Z",
+          "message": "feat: CLS - preconnect to Google Fonts earlier\n\nAlso, allow disabling Isotope on a specifc page, such as home",
+          "html_url": "https://github.com/HugoBlox/kit/commit/b02a90a434c63ff6255a1a3f7dfbeee715b50ed1"
+        },
+        {
+          "sha": "a6a82317f8a60df898231fbe468f1d7a5f017755",
+          "author_date": "2021-10-17T22:05:45Z",
+          "message": "chore: req Hugo 0.86.1 for cascading front matter params from config",
+          "html_url": "https://github.com/HugoBlox/kit/commit/a6a82317f8a60df898231fbe468f1d7a5f017755"
+        },
+        {
+          "sha": "690968b3aaeec013f4f2954ed0e4b887594e6d06",
+          "author_date": "2021-10-17T22:09:36Z",
+          "message": "feat: add support for status icon in about.avatar widget\n\nTo use add the new field to an author file:\n```\nstatus:\n  icon: an emoji here\n```",
+          "html_url": "https://github.com/HugoBlox/kit/commit/690968b3aaeec013f4f2954ed0e4b887594e6d06"
+        },
+        {
+          "sha": "7201a4fa8c4417fec8f87a4a13ba898b0a49ddcb",
+          "author_date": "2021-10-17T22:26:40Z",
+          "message": "style: increase emoji alpha",
+          "html_url": "https://github.com/HugoBlox/kit/commit/7201a4fa8c4417fec8f87a4a13ba898b0a49ddcb"
+        },
+        {
+          "sha": "c43d078def743a61180287751d0e3f425d6494d9",
+          "author_date": "2021-10-25T22:06:23Z",
+          "message": "feat: update Academicons to v1.9.1 (#2505)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c43d078def743a61180287751d0e3f425d6494d9"
+        },
+        {
+          "sha": "0d97991430036417584e1c951bc58c434ccbf1a3",
+          "author_date": "2021-11-01T18:42:41Z",
+          "message": "feat: upgrade Classic font pack to GFonts API v2 (#2516)\n\nSmall update to fix error re: Google fonts on Classic font set. Without this change Hugo raises the following ERROR:\r\n\r\n\"There is a new version of Google Fonts. Learn how to upgrade your font pack at https://wowchemy.com/docs/customization/#custom-font\r\nError: Error building site: logged 1 error(s)\"",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0d97991430036417584e1c951bc58c434ccbf1a3"
+        },
+        {
+          "sha": "a4209365330cd2ca7f57d4c5bbce82003b5f9a46",
+          "author_date": "2021-11-14T22:08:42Z",
+          "message": "refactor: migrate from CDNJS to JSDelivr (#2512)\n\nHelps complete #2351\r\nBetter support sites in China",
+          "html_url": "https://github.com/HugoBlox/kit/commit/a4209365330cd2ca7f57d4c5bbce82003b5f9a46"
+        },
+        {
+          "sha": "6d19ea178ef44fef05984bce33cac864cfb7e466",
+          "author_date": "2021-11-21T19:06:52Z",
+          "message": "docs: edit",
+          "html_url": "https://github.com/HugoBlox/kit/commit/6d19ea178ef44fef05984bce33cac864cfb7e466"
+        },
+        {
+          "sha": "d26f01d5d6c3f13b1daa629ba60bfc6a3e71b924",
+          "author_date": "2021-11-22T23:10:30Z",
+          "message": "feat: improve style of publication search box (#2533)\n\nAdded `form-control form-control-sm` to the search box so that it has the same appearance as the selectors",
+          "html_url": "https://github.com/HugoBlox/kit/commit/d26f01d5d6c3f13b1daa629ba60bfc6a3e71b924"
+        },
+        {
+          "sha": "50eeef1f2b8ef0391c00c3ab9ccd6997668ba3a6",
+          "author_date": "2021-11-28T20:39:21Z",
+          "message": "feat: workaround Hugo bug with localized dates\n\nHugo 0.87 added support for localized dates yet Hugo localizes dates on non-English sites to a different language, English.\n\nClose #2539",
+          "html_url": "https://github.com/HugoBlox/kit/commit/50eeef1f2b8ef0391c00c3ab9ccd6997668ba3a6"
+        },
+        {
+          "sha": "2eecb5875a30c4197e7fcef43622d1ebdfe95170",
+          "author_date": "2021-11-28T21:00:23Z",
+          "message": "chore: prep 5.4.0 release",
+          "html_url": "https://github.com/HugoBlox/kit/commit/2eecb5875a30c4197e7fcef43622d1ebdfe95170"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v5.5.0",
@@ -1336,8 +1885,615 @@
     {
       "release": "modules/blox-tailwind/v0.3.0",
       "previous_release": "modules/blox-tailwind/v0.2.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "508cbef99d0afea2f0d1654f50fe433d8d7225eb",
+          "author_date": "2024-01-19T18:45:33Z",
+          "message": "chore: migrate workflow",
+          "html_url": "https://github.com/HugoBlox/kit/commit/508cbef99d0afea2f0d1654f50fe433d8d7225eb"
+        },
+        {
+          "sha": "70fd49a584e3fbb617b9333750ab0a98ec3f00ac",
+          "author_date": "2024-01-28T18:14:31Z",
+          "message": "feat: Hugo deprecated `site.GoogleAnalytics`",
+          "html_url": "https://github.com/HugoBlox/kit/commit/70fd49a584e3fbb617b9333750ab0a98ec3f00ac"
+        },
+        {
+          "sha": "0d7b68fcb5447f1f2f8dc3333612f022781d7503",
+          "author_date": "2024-01-28T18:23:53Z",
+          "message": "feat: Hugo deprecated `site.GoogleAnalytics`",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0d7b68fcb5447f1f2f8dc3333612f022781d7503"
+        },
+        {
+          "sha": "3fb9b2e11ab015a484b45b13373b2e342c10e304",
+          "author_date": "2024-01-28T18:37:58Z",
+          "message": "feat: enable Hugo v0.122 native math passthrough by default\n\nRequires Hugo v0.122.0+",
+          "html_url": "https://github.com/HugoBlox/kit/commit/3fb9b2e11ab015a484b45b13373b2e342c10e304"
+        },
+        {
+          "sha": "728baf9dc09893a9d292915e20825b80ca975694",
+          "author_date": "2024-01-28T18:40:00Z",
+          "message": "starters(blog): enable Hugo v0.122 native math passthrough by default\n\nRequires Hugo v0.122.0+",
+          "html_url": "https://github.com/HugoBlox/kit/commit/728baf9dc09893a9d292915e20825b80ca975694"
+        },
+        {
+          "sha": "a6d0923a1e297b45081789bdadf2fadff210a1d3",
+          "author_date": "2024-01-28T18:42:41Z",
+          "message": "starters(blog): enable Hugo v0.122 native math passthrough by default\n\nRequires Hugo v0.122.0+",
+          "html_url": "https://github.com/HugoBlox/kit/commit/a6d0923a1e297b45081789bdadf2fadff210a1d3"
+        },
+        {
+          "sha": "5ab1d19b012fcf7029de263a6d17ef0fb20bd1b7",
+          "author_date": "2024-02-04T19:18:12Z",
+          "message": "feat(plugins): update Reveal from v4 to v5 to enable Scroll View (#3051)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/5ab1d19b012fcf7029de263a6d17ef0fb20bd1b7"
+        },
+        {
+          "sha": "ae7f0c59797886a2a76eee929dd9fd871b79d38c",
+          "author_date": "2024-02-17T21:29:09Z",
+          "message": "feat: port docs layout\n\nSee #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ae7f0c59797886a2a76eee929dd9fd871b79d38c"
+        },
+        {
+          "sha": "0929442284e6177fbbb0ee96c6ab5d1c54bbd1e8",
+          "author_date": "2024-02-17T21:53:12Z",
+          "message": "starters: port docs template\n\nClose #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0929442284e6177fbbb0ee96c6ab5d1c54bbd1e8"
+        },
+        {
+          "sha": "90c9225b9a272722c91c05981ee762f508957892",
+          "author_date": "2024-02-17T21:55:51Z",
+          "message": "starters: port docs template\n\nClose #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/90c9225b9a272722c91c05981ee762f508957892"
+        },
+        {
+          "sha": "0d0905a7651b2cfb36998d094d24470f6e91afd3",
+          "author_date": "2024-02-17T22:09:59Z",
+          "message": "starters: port docs template\n\nClose #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0d0905a7651b2cfb36998d094d24470f6e91afd3"
+        },
+        {
+          "sha": "a7041920bc5ceedb200115d7eb93c77ca6a850b4",
+          "author_date": "2024-02-17T22:10:53Z",
+          "message": "starters: port docs template\n\nClose #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/a7041920bc5ceedb200115d7eb93c77ca6a850b4"
+        },
+        {
+          "sha": "69d49c0b4a92abf1bf9453129ceaea579bedcbaa",
+          "author_date": "2024-02-18T00:35:15Z",
+          "message": "feat: port docs template\n\nSee #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/69d49c0b4a92abf1bf9453129ceaea579bedcbaa"
+        },
+        {
+          "sha": "747d78e86b82350db5763d5ae0612184eb411f52",
+          "author_date": "2024-02-18T00:39:43Z",
+          "message": "starters: port docs template\n\nSee #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/747d78e86b82350db5763d5ae0612184eb411f52"
+        },
+        {
+          "sha": "06e9c42adcfe8761aea121a5d69fbdd02a91cfdd",
+          "author_date": "2024-02-18T00:47:52Z",
+          "message": "starters: port docs template\n\nSee #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/06e9c42adcfe8761aea121a5d69fbdd02a91cfdd"
+        },
+        {
+          "sha": "552df4b957f2984303f734a65e1592f14fc5d896",
+          "author_date": "2024-02-18T00:48:43Z",
+          "message": "starters: port docs template\n\nSee #3010",
+          "html_url": "https://github.com/HugoBlox/kit/commit/552df4b957f2984303f734a65e1592f14fc5d896"
+        },
+        {
+          "sha": "848582253cc9de1eafbaf5224427f6afffcae329",
+          "author_date": "2024-02-24T16:25:16Z",
+          "message": "fix(docs): mobile menu background\n\nReported by Rodri on Discord",
+          "html_url": "https://github.com/HugoBlox/kit/commit/848582253cc9de1eafbaf5224427f6afffcae329"
+        },
+        {
+          "sha": "5fc2af797a3510204f122b430c31d3e1f24d7bf1",
+          "author_date": "2024-02-24T16:47:09Z",
+          "message": "fix(docs): responsive docs menu hidden between md-lg widths",
+          "html_url": "https://github.com/HugoBlox/kit/commit/5fc2af797a3510204f122b430c31d3e1f24d7bf1"
+        },
+        {
+          "sha": "ff085a9fdeb1ddc89ae665eb5549d74777fb6ca3",
+          "author_date": "2024-02-24T16:52:53Z",
+          "message": "starters(docs): fix responsive docs menu hidden between md-lg widths",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ff085a9fdeb1ddc89ae665eb5549d74777fb6ca3"
+        },
+        {
+          "sha": "623ca31a5fa3ec05a4fea2f766c145fd557aa1ab",
+          "author_date": "2024-02-24T17:00:54Z",
+          "message": "feat(bootstrap): add compatibility for Hugo v0.123",
+          "html_url": "https://github.com/HugoBlox/kit/commit/623ca31a5fa3ec05a4fea2f766c145fd557aa1ab"
+        },
+        {
+          "sha": "da6ffe72ba53ef17cd2af6fce389024b7594a6a2",
+          "author_date": "2024-02-24T17:08:36Z",
+          "message": "starters: update modules",
+          "html_url": "https://github.com/HugoBlox/kit/commit/da6ffe72ba53ef17cd2af6fce389024b7594a6a2"
+        },
+        {
+          "sha": "8fa680080031b558ae83d8979d7e8241cb115ecf",
+          "author_date": "2024-02-26T20:43:18Z",
+          "message": "fix: custom icons",
+          "html_url": "https://github.com/HugoBlox/kit/commit/8fa680080031b558ae83d8979d7e8241cb115ecf"
+        },
+        {
+          "sha": "b7ae01c12355ad9526797d596486d3bbe3ba7bb1",
+          "author_date": "2024-02-26T20:44:35Z",
+          "message": "fix: custom icons",
+          "html_url": "https://github.com/HugoBlox/kit/commit/b7ae01c12355ad9526797d596486d3bbe3ba7bb1"
+        },
+        {
+          "sha": "5fab7f3a485ac1d469b1354c79ec95819382e690",
+          "author_date": "2024-02-26T23:23:41Z",
+          "message": "starters: update modules",
+          "html_url": "https://github.com/HugoBlox/kit/commit/5fab7f3a485ac1d469b1354c79ec95819382e690"
+        },
+        {
+          "sha": "ae83c68788d61ff1acb84ef770a181edd00ef1b9",
+          "author_date": "2024-02-28T19:53:00Z",
+          "message": "feat: add technical icon pack\n\nAdds https://devicon.dev/\n\nReference like `icon: devicon/rstudio`\n\nCloses #3063",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ae83c68788d61ff1acb84ef770a181edd00ef1b9"
+        },
+        {
+          "sha": "5e0fb4a205a43917e4fb9e1363414b43eb5955d2",
+          "author_date": "2024-02-28T19:55:30Z",
+          "message": "starters: update mod",
+          "html_url": "https://github.com/HugoBlox/kit/commit/5e0fb4a205a43917e4fb9e1363414b43eb5955d2"
+        },
+        {
+          "sha": "6419ee641301179cc90e7a634382a1aae6db0212",
+          "author_date": "2024-02-28T21:49:47Z",
+          "message": "starters: update metadata",
+          "html_url": "https://github.com/HugoBlox/kit/commit/6419ee641301179cc90e7a634382a1aae6db0212"
+        },
+        {
+          "sha": "b13d437838b7a2fd3cf881568a2f585e033c67a2",
+          "author_date": "2024-02-28T22:14:08Z",
+          "message": "starters: update metadata",
+          "html_url": "https://github.com/HugoBlox/kit/commit/b13d437838b7a2fd3cf881568a2f585e033c67a2"
+        },
+        {
+          "sha": "cee6e1e3e144632b218854837c63689edcbaf936",
+          "author_date": "2024-03-02T18:04:22Z",
+          "message": "feat(blox): optionally hide skill percent\n\nwhen `percent` field is empty\n\nAs requested in https://discord.com/channels/722225264733716590/1213513275069960263/1213513275069960263",
+          "html_url": "https://github.com/HugoBlox/kit/commit/cee6e1e3e144632b218854837c63689edcbaf936"
+        },
+        {
+          "sha": "07fe0da177765caea9f83b0412ca7e801893501e",
+          "author_date": "2024-03-03T16:56:40Z",
+          "message": "feat(shortcode): support Hugo v0.123 deprecation of GetCSV\n\nResolves following Hugo issue:\n\nINFO  deprecated: data.GetCSV was deprecated in Hugo v0.123.0 and will be removed in a future release. use resources.Get or resources.GetRemote with transform.Unmarshal.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/07fe0da177765caea9f83b0412ca7e801893501e"
+        },
+        {
+          "sha": "469a458ab94f34cf2845b1cde7f67f8e4c34793a",
+          "author_date": "2024-03-03T16:58:09Z",
+          "message": "feat(layout): migrate from `post` to `blog` as default blog post folder\n\nInformed by user feedback.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/469a458ab94f34cf2845b1cde7f67f8e4c34793a"
+        },
+        {
+          "sha": "4e81f629de8ee18324deaff4d47feee40f2699ab",
+          "author_date": "2024-03-03T17:02:10Z",
+          "message": "starters(tailwind): migrate from `post` to `blog` as default blog post folder\n\nInformed by user feedback.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/4e81f629de8ee18324deaff4d47feee40f2699ab"
+        },
+        {
+          "sha": "76c545771e953aa02c80dd09071ded61aa339069",
+          "author_date": "2024-03-03T17:05:35Z",
+          "message": "starters(tailwind): migrate from `post` to `blog` as default blog post folder\n\nInformed by user feedback.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/76c545771e953aa02c80dd09071ded61aa339069"
+        },
+        {
+          "sha": "c03355fea5404b5632dc01d8d36a9c801bf75430",
+          "author_date": "2024-03-10T16:23:19Z",
+          "message": "docs: edit",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c03355fea5404b5632dc01d8d36a9c801bf75430"
+        },
+        {
+          "sha": "59a57b051879f45a27b291d952fe832034c40985",
+          "author_date": "2024-04-15T19:06:45Z",
+          "message": "starters: upgrade GitHub actions\n\nGitHub broke some actions by removing Node 16.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/59a57b051879f45a27b291d952fe832034c40985"
+        },
+        {
+          "sha": "77b6043ea7f4d97ed3945dfca1e6c1c0f33e58de",
+          "author_date": "2024-04-17T20:10:52Z",
+          "message": "feat: add Naver (Korea) search engine verification (#3082)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/77b6043ea7f4d97ed3945dfca1e6c1c0f33e58de"
+        },
+        {
+          "sha": "9547f9a844cfdf07f4a0675d44d97dc68f48a168",
+          "author_date": "2024-04-20T12:37:44Z",
+          "message": "fix: only replace explicit mobile menu links with automated links for Docs pages\n\nSee https://discord.com/channels/722225264733716590/738924320339918858/1231150865977708605",
+          "html_url": "https://github.com/HugoBlox/kit/commit/9547f9a844cfdf07f4a0675d44d97dc68f48a168"
+        },
+        {
+          "sha": "ab18989a4160ececa60d9ee60d647a8fa942f87b",
+          "author_date": "2024-04-20T12:38:56Z",
+          "message": "starters: update\n\nSee https://discord.com/channels/722225264733716590/738924320339918858/1231150865977708605",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ab18989a4160ececa60d9ee60d647a8fa942f87b"
+        },
+        {
+          "sha": "11a51f8e9f017cb8d3a82a53cd8e7821f70d89c7",
+          "author_date": "2024-04-20T21:45:32Z",
+          "message": "feat(Tailwind): add support for community blox",
+          "html_url": "https://github.com/HugoBlox/kit/commit/11a51f8e9f017cb8d3a82a53cd8e7821f70d89c7"
+        },
+        {
+          "sha": "137ebf6fdc28a98ae9de519c5673df509344238c",
+          "author_date": "2024-04-20T21:52:24Z",
+          "message": "starters: update - plugin framework",
+          "html_url": "https://github.com/HugoBlox/kit/commit/137ebf6fdc28a98ae9de519c5673df509344238c"
+        },
+        {
+          "sha": "c767554c5b85c51e47a00c58a46c99b968c3b842",
+          "author_date": "2024-04-25T19:24:33Z",
+          "message": "i18n: add Croatian (hr) Language Pack (#3090)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c767554c5b85c51e47a00c58a46c99b968c3b842"
+        },
+        {
+          "sha": "f2ddf643ffb0cea7461349525fbd631031c09cf1",
+          "author_date": "2024-04-25T19:26:43Z",
+          "message": "i18n: improve ms-Arab language pack (#3088)\n\nSomehow overlooked the underscore.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f2ddf643ffb0cea7461349525fbd631031c09cf1"
+        },
+        {
+          "sha": "7b3f949177e2c8154a3428358a33e74301368fb9",
+          "author_date": "2024-04-27T15:15:21Z",
+          "message": "starters: fix Hugo not loading assets\n\nSee https://discord.com/channels/722225264733716590/1233597456541941851/1233597456541941851",
+          "html_url": "https://github.com/HugoBlox/kit/commit/7b3f949177e2c8154a3428358a33e74301368fb9"
+        },
+        {
+          "sha": "0e99f0b10f84fa6c702e5ff3e0c0fab653fca236",
+          "author_date": "2024-04-27T15:20:15Z",
+          "message": "starters: move Bootstrap templates to dedicated folder",
+          "html_url": "https://github.com/HugoBlox/kit/commit/0e99f0b10f84fa6c702e5ff3e0c0fab653fca236"
+        },
+        {
+          "sha": "5c88aec0945cd5f69a7e000c34b9d36254020340",
+          "author_date": "2024-04-27T15:36:22Z",
+          "message": "feat(blox): add clearer error message",
+          "html_url": "https://github.com/HugoBlox/kit/commit/5c88aec0945cd5f69a7e000c34b9d36254020340"
+        },
+        {
+          "sha": "e7beed231a8c0f0c60689f27706f99319bfcb3d7",
+          "author_date": "2024-04-29T19:42:09Z",
+          "message": "feat(decap): add first and last name fields to decap_cms_config.yaml (#3092)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/e7beed231a8c0f0c60689f27706f99319bfcb3d7"
+        },
+        {
+          "sha": "92354b9cd91ab57036e13bd0dda5fedaf538ce41",
+          "author_date": "2024-05-05T21:42:41Z",
+          "message": "feat: rename footer.block to footer.blox",
+          "html_url": "https://github.com/HugoBlox/kit/commit/92354b9cd91ab57036e13bd0dda5fedaf538ce41"
+        },
+        {
+          "sha": "3c4070ab4536b939ecef052637ef67017fb32a89",
+          "author_date": "2024-05-05T21:43:20Z",
+          "message": "feat: improve table shortcode style",
+          "html_url": "https://github.com/HugoBlox/kit/commit/3c4070ab4536b939ecef052637ef67017fb32a89"
+        },
+        {
+          "sha": "dcdb3d3506292f728999d30d4af457c3d7990b1d",
+          "author_date": "2024-05-05T21:44:12Z",
+          "message": "feat: add support for Alpine JS",
+          "html_url": "https://github.com/HugoBlox/kit/commit/dcdb3d3506292f728999d30d4af457c3d7990b1d"
+        },
+        {
+          "sha": "eba36169bb680aa952cc47b4aa17e76b65b02371",
+          "author_date": "2024-05-06T22:11:47Z",
+          "message": "feat: add Emerald theme",
+          "html_url": "https://github.com/HugoBlox/kit/commit/eba36169bb680aa952cc47b4aa17e76b65b02371"
+        },
+        {
+          "sha": "d147e71f52ca03b086a1d6485e544ba2ddce0a78",
+          "author_date": "2024-05-06T22:12:37Z",
+          "message": "feat: add show_skill_percentage option",
+          "html_url": "https://github.com/HugoBlox/kit/commit/d147e71f52ca03b086a1d6485e544ba2ddce0a78"
+        },
+        {
+          "sha": "347501f9ea90e4b9d80f076e27bebe61359ab3a5",
+          "author_date": "2024-05-06T22:12:53Z",
+          "message": "fix: show Collection title",
+          "html_url": "https://github.com/HugoBlox/kit/commit/347501f9ea90e4b9d80f076e27bebe61359ab3a5"
+        },
+        {
+          "sha": "4a22c57dc30cd877c8d01ddcea8589c2b19bdfbc",
+          "author_date": "2024-05-06T22:13:48Z",
+          "message": "fix: Callout accessibility and margin bottom",
+          "html_url": "https://github.com/HugoBlox/kit/commit/4a22c57dc30cd877c8d01ddcea8589c2b19bdfbc"
+        },
+        {
+          "sha": "2261d9b5f8324bb23ac30a67fef7eb441224149e",
+          "author_date": "2024-05-06T22:14:37Z",
+          "message": "feat: add support for serif font",
+          "html_url": "https://github.com/HugoBlox/kit/commit/2261d9b5f8324bb23ac30a67fef7eb441224149e"
+        },
+        {
+          "sha": "75a42222e9a51798f7ab5bfaf0b13cf3db26ccdd",
+          "author_date": "2024-05-06T22:16:55Z",
+          "message": "feat(tailwind): port support for Publications and Events",
+          "html_url": "https://github.com/HugoBlox/kit/commit/75a42222e9a51798f7ab5bfaf0b13cf3db26ccdd"
+        },
+        {
+          "sha": "7d5cbf3ce7a1488170b17f412c5689aed46e742f",
+          "author_date": "2024-05-07T19:44:15Z",
+          "message": "i18n: fix translation id for conference paper (#3095)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/7d5cbf3ce7a1488170b17f412c5689aed46e742f"
+        },
+        {
+          "sha": "be5537b68488e063591432fb0bd3c0b64cc21913",
+          "author_date": "2024-05-09T23:16:39Z",
+          "message": "i18n(bootstrap): Add Croatian support to bootstrap (#3099)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/be5537b68488e063591432fb0bd3c0b64cc21913"
+        },
+        {
+          "sha": "c3d23d929bc6eaa2d888baf81a535af9fb2cf039",
+          "author_date": "2024-05-09T23:17:41Z",
+          "message": "i18n: update hr.yaml (#3096)\n\nAdded fields and translation for # Countdown widget",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c3d23d929bc6eaa2d888baf81a535af9fb2cf039"
+        },
+        {
+          "sha": "41bd113535e815487ba69ad3c10aa8c03df91508",
+          "author_date": "2024-05-13T18:58:26Z",
+          "message": "feat(collection): add `exclude_publication_type` filter",
+          "html_url": "https://github.com/HugoBlox/kit/commit/41bd113535e815487ba69ad3c10aa8c03df91508"
+        },
+        {
+          "sha": "3fa4435e55a513837d7617bdb2fb5126285c7af9",
+          "author_date": "2024-05-13T19:33:55Z",
+          "message": "starters: add `publication_type` filter example",
+          "html_url": "https://github.com/HugoBlox/kit/commit/3fa4435e55a513837d7617bdb2fb5126285c7af9"
+        },
+        {
+          "sha": "c2e9a799f797504066fcc9d89291e813fa0156fe",
+          "author_date": "2024-05-13T19:45:41Z",
+          "message": "starters: add `publication_type` filter example",
+          "html_url": "https://github.com/HugoBlox/kit/commit/c2e9a799f797504066fcc9d89291e813fa0156fe"
+        },
+        {
+          "sha": "971f297e4612c025bb657038308e46a2c1732887",
+          "author_date": "2024-05-18T20:14:14Z",
+          "message": "feat: add support for backlinks\n\nEnabled by default in right sidebar. Can be disabled with `backlinks: false` in front matter.\n\nSee https://github.com/gohugoio/hugo/issues",
+          "html_url": "https://github.com/HugoBlox/kit/commit/971f297e4612c025bb657038308e46a2c1732887"
+        },
+        {
+          "sha": "934246c45b49122f52e648966a65d0077eb88e8f",
+          "author_date": "2024-05-18T20:17:09Z",
+          "message": "starters: update",
+          "html_url": "https://github.com/HugoBlox/kit/commit/934246c45b49122f52e648966a65d0077eb88e8f"
+        },
+        {
+          "sha": "370dc623ab8f8c065f6372892af27bc0c031e516",
+          "author_date": "2024-05-19T12:06:15Z",
+          "message": "fix: debug msg",
+          "html_url": "https://github.com/HugoBlox/kit/commit/370dc623ab8f8c065f6372892af27bc0c031e516"
+        },
+        {
+          "sha": "55b856df3a9305e84138831397a0d8fb102322a8",
+          "author_date": "2024-05-19T12:07:35Z",
+          "message": "feat(blox): support HTML & multiple paragraphs in Markdown blox",
+          "html_url": "https://github.com/HugoBlox/kit/commit/55b856df3a9305e84138831397a0d8fb102322a8"
+        },
+        {
+          "sha": "564bf13e6dea5dfd7862dc7b2783eacae6cba30c",
+          "author_date": "2024-05-19T12:08:20Z",
+          "message": "feat(blox): support HTML & fix accessibility in case of Emerald bg",
+          "html_url": "https://github.com/HugoBlox/kit/commit/564bf13e6dea5dfd7862dc7b2783eacae6cba30c"
+        },
+        {
+          "sha": "01488c38219190a521099d174f1246219c13b5e2",
+          "author_date": "2024-05-19T12:09:52Z",
+          "message": "feat(blox): allow to specify grid cols in article-grid view",
+          "html_url": "https://github.com/HugoBlox/kit/commit/01488c38219190a521099d174f1246219c13b5e2"
+        },
+        {
+          "sha": "307f5b9798623a27d9b9e8a452d3d57100c610eb",
+          "author_date": "2024-05-19T12:10:31Z",
+          "message": "feat(view): fix case of no authors specified in article-grid view",
+          "html_url": "https://github.com/HugoBlox/kit/commit/307f5b9798623a27d9b9e8a452d3d57100c610eb"
+        },
+        {
+          "sha": "d8ba8a1565fb454dafc4b99a12d2666b6f2b7420",
+          "author_date": "2024-05-19T12:11:58Z",
+          "message": "feat(view): fix left alignment for multiple var length citation views",
+          "html_url": "https://github.com/HugoBlox/kit/commit/d8ba8a1565fb454dafc4b99a12d2666b6f2b7420"
+        },
+        {
+          "sha": "78e9a5787d5b4f4fa4be12b32319d8cd783d88fd",
+          "author_date": "2024-05-19T12:12:23Z",
+          "message": "feat(view): reduce data size in Card",
+          "html_url": "https://github.com/HugoBlox/kit/commit/78e9a5787d5b4f4fa4be12b32319d8cd783d88fd"
+        },
+        {
+          "sha": "3463e63b4c02d5464be3bff4d662f2057e3cd809",
+          "author_date": "2024-05-19T12:13:48Z",
+          "message": "feat(blox): port Academic CV two column avatar/bio blox\n\nAdds `resume-biography-2` blox",
+          "html_url": "https://github.com/HugoBlox/kit/commit/3463e63b4c02d5464be3bff4d662f2057e3cd809"
+        },
+        {
+          "sha": "928399f2cde9a06a45562e3dcbbc48c0ee7bd8e8",
+          "author_date": "2024-05-19T15:32:46Z",
+          "message": "feat(blox): add `fill_image` option to article-grid view\n\nAlso\n- Fixes Tailwind safelist/whitelistPatterns given change in Tailwind v3 config structure\n- Renames new `resume-biography-2` to `resume-biography-3` due to clash",
+          "html_url": "https://github.com/HugoBlox/kit/commit/928399f2cde9a06a45562e3dcbbc48c0ee7bd8e8"
+        },
+        {
+          "sha": "5ee9dc5857467d05bedff70314f9fc3cb9594142",
+          "author_date": "2024-05-19T15:39:09Z",
+          "message": "starters: port Academic theme to Tailwind",
+          "html_url": "https://github.com/HugoBlox/kit/commit/5ee9dc5857467d05bedff70314f9fc3cb9594142"
+        },
+        {
+          "sha": "50c6efcd67ffe465be99531ab85afe6eb4e524f3",
+          "author_date": "2024-05-19T16:12:23Z",
+          "message": "starters: port Academic theme to Tailwind",
+          "html_url": "https://github.com/HugoBlox/kit/commit/50c6efcd67ffe465be99531ab85afe6eb4e524f3"
+        },
+        {
+          "sha": "81df9f3e9cf65793ba1cd7942acc2f5352f58a3c",
+          "author_date": "2024-05-19T16:20:22Z",
+          "message": "starters: update",
+          "html_url": "https://github.com/HugoBlox/kit/commit/81df9f3e9cf65793ba1cd7942acc2f5352f58a3c"
+        },
+        {
+          "sha": "322b500bd2379625288648d26687a2256f120c8e",
+          "author_date": "2024-05-19T16:46:11Z",
+          "message": "starters: update",
+          "html_url": "https://github.com/HugoBlox/kit/commit/322b500bd2379625288648d26687a2256f120c8e"
+        },
+        {
+          "sha": "f8dfd561a646d30341b9c2de307915e65c8b9568",
+          "author_date": "2024-05-23T23:51:06Z",
+          "message": "starters: fix: GitHub Pages doesn't support Go v1.22 yet",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f8dfd561a646d30341b9c2de307915e65c8b9568"
+        },
+        {
+          "sha": "8d25fbed122c2c57d994ebd78d232e1b51683c7d",
+          "author_date": "2024-05-27T18:55:48Z",
+          "message": "i18n: add missing translations for DE (#3105)\n\nAdd missing German translations",
+          "html_url": "https://github.com/HugoBlox/kit/commit/8d25fbed122c2c57d994ebd78d232e1b51683c7d"
+        },
+        {
+          "sha": "a5aba5093869be4ace9f40450fbccc4d33080510",
+          "author_date": "2024-06-01T13:25:52Z",
+          "message": "feat: reimplement backlinks",
+          "html_url": "https://github.com/HugoBlox/kit/commit/a5aba5093869be4ace9f40450fbccc4d33080510"
+        },
+        {
+          "sha": "9b3512593ab4bb9e2248886dfb318f98e5265c2d",
+          "author_date": "2024-06-01T13:26:19Z",
+          "message": "i18n: fix ID",
+          "html_url": "https://github.com/HugoBlox/kit/commit/9b3512593ab4bb9e2248886dfb318f98e5265c2d"
+        },
+        {
+          "sha": "776e5c09c0ac1e53ed58e30618842484fb027b60",
+          "author_date": "2024-06-01T15:31:32Z",
+          "message": "feat(tailwind): port TOC shortcode",
+          "html_url": "https://github.com/HugoBlox/kit/commit/776e5c09c0ac1e53ed58e30618842484fb027b60"
+        },
+        {
+          "sha": "6b70757505451c47084295596488002e00fcce5b",
+          "author_date": "2024-06-01T18:21:51Z",
+          "message": "feat(tailwind): add include shortcode for re-usable Markdown blocks",
+          "html_url": "https://github.com/HugoBlox/kit/commit/6b70757505451c47084295596488002e00fcce5b"
+        },
+        {
+          "sha": "2b11b7e9fbf56a9f2070e7d9e8a7a0320f76f014",
+          "author_date": "2024-06-01T18:27:12Z",
+          "message": "feat(tailwind): prevent error when using `hugo new site`\n\nAs unfortunately Hugo always triggers error even when using `with` statement with a non-safelisted `os.Getenv` var",
+          "html_url": "https://github.com/HugoBlox/kit/commit/2b11b7e9fbf56a9f2070e7d9e8a7a0320f76f014"
+        },
+        {
+          "sha": "f78044d2b464f127009dff2cc847bbbef831fb4c",
+          "author_date": "2024-06-02T13:10:52Z",
+          "message": "fix(pagefind): case where baseUrl/bundleUrl not auto detected\n\nSee https://discord.com/channels/722225264733716590/1246693780191449159/1246693780191449159",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f78044d2b464f127009dff2cc847bbbef831fb4c"
+        },
+        {
+          "sha": "f72639052700ea39cae3351c1379b63117a2bfca",
+          "author_date": "2024-06-02T13:33:45Z",
+          "message": "fix(style): fix bio center alignment",
+          "html_url": "https://github.com/HugoBlox/kit/commit/f72639052700ea39cae3351c1379b63117a2bfca"
+        },
+        {
+          "sha": "492e343c2a3315d03c429e9138ffd025e7a297ca",
+          "author_date": "2024-06-02T13:39:01Z",
+          "message": "fix(style): lint",
+          "html_url": "https://github.com/HugoBlox/kit/commit/492e343c2a3315d03c429e9138ffd025e7a297ca"
+        },
+        {
+          "sha": "676a1b20ee9f5c93939ffac62581b0f8b29cb36f",
+          "author_date": "2024-06-02T15:26:24Z",
+          "message": "starters: update",
+          "html_url": "https://github.com/HugoBlox/kit/commit/676a1b20ee9f5c93939ffac62581b0f8b29cb36f"
+        },
+        {
+          "sha": "5660081624a866e67b97845eb402ae31e9773f77",
+          "author_date": "2024-07-13T20:45:32Z",
+          "message": "feat: add Bluesky icon to Brands icon pack (#3111)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/5660081624a866e67b97845eb402ae31e9773f77"
+        },
+        {
+          "sha": "8778c4b5ed89f035da341d518b8c61819df20049",
+          "author_date": "2024-08-13T18:24:32Z",
+          "message": "i18n: add missing German translations (#3136)\n\nAdd missing translations, that exist in english language file but not in the German",
+          "html_url": "https://github.com/HugoBlox/kit/commit/8778c4b5ed89f035da341d518b8c61819df20049"
+        },
+        {
+          "sha": "ec9127eaf80ba7a0f1c39b4b18c7148b919a3631",
+          "author_date": "2024-09-01T23:00:03Z",
+          "message": "feat: support Hugo v0.133+ by removing deprecated Hugo variable (#3137)\n\n`site.GoogleAnalytics` variable is deprecated since Hugo ~v0.133 (a warning was shown since v0.120.0+) and Hugo now introduced a breaking change without any backwards compatibility causing all existing sites to break. Theis Hugo variable would need to be changed to `site.Config.Services.GoogleAnalytics.ID`, however that then breaks compatibility with all the sites on earlier Hugo versions. Thus, omit fetching this configuration variable since it should be set via the dedicated Analytics sections in `params.yaml` anyway.",
+          "html_url": "https://github.com/HugoBlox/kit/commit/ec9127eaf80ba7a0f1c39b4b18c7148b919a3631"
+        },
+        {
+          "sha": "edacf1f01f5e9ad0a1f3e8006f67cae6b49f868a",
+          "author_date": "2024-09-07T22:35:07Z",
+          "message": "fix: citation view not wrapping in case of many links\n\nFix #3133",
+          "html_url": "https://github.com/HugoBlox/kit/commit/edacf1f01f5e9ad0a1f3e8006f67cae6b49f868a"
+        },
+        {
+          "sha": "927fddeb50557c709821f971fc76e9e252d8f482",
+          "author_date": "2024-09-07T22:43:26Z",
+          "message": "i18n: fix typo in french translation (#3140)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/927fddeb50557c709821f971fc76e9e252d8f482"
+        },
+        {
+          "sha": "9b7e44a06ecc64bc8e0eac0b7e0a681b592f4fd8",
+          "author_date": "2024-09-07T22:44:59Z",
+          "message": "feat: support latest Hugo version - remove remains of deprecated Site.GoogleAnalytics (#3139)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/9b7e44a06ecc64bc8e0eac0b7e0a681b592f4fd8"
+        },
+        {
+          "sha": "4f621dfa3a5ab798bea17ad2760bd61815c76f25",
+          "author_date": "2024-09-08T17:05:30Z",
+          "message": "fix: CSS padding and math overflow on small screens\n\nFix #3133",
+          "html_url": "https://github.com/HugoBlox/kit/commit/4f621dfa3a5ab798bea17ad2760bd61815c76f25"
+        },
+        {
+          "sha": "33edab58829a94d77e79e125f9aed1603dc33870",
+          "author_date": "2024-10-06T00:57:25Z",
+          "message": "i18n: FR: add Experience translation (#3149)\n\nThis commit adds the translation of Experience from English to the French equivalent (plural)",
+          "html_url": "https://github.com/HugoBlox/kit/commit/33edab58829a94d77e79e125f9aed1603dc33870"
+        },
+        {
+          "sha": "661cadc17327f5c67687a4e7319931677d7a63e6",
+          "author_date": "2024-10-12T17:41:04Z",
+          "message": "feat: pull in latest analytics/seo modules\n\nCloses #3143",
+          "html_url": "https://github.com/HugoBlox/kit/commit/661cadc17327f5c67687a4e7319931677d7a63e6"
+        },
+        {
+          "sha": "39f530db44b8a6f749526255c7d2fe83979f14af",
+          "author_date": "2024-10-12T17:52:41Z",
+          "message": "starters(bootstrap): upgrade to support Hugo 0.135.0 `paginate` deprecation\n\nAddresses Hugo 0.135 breaking change:\n\nWARN  deprecated: site config key paginate was deprecated in Hugo v0.128.0 and will be removed in a future release. Use pagination.pagerSize instead",
+          "html_url": "https://github.com/HugoBlox/kit/commit/39f530db44b8a6f749526255c7d2fe83979f14af"
+        },
+        {
+          "sha": "2f0f3249cb2241c8cc195f37ead2eb531e0e571a",
+          "author_date": "2024-10-12T17:55:17Z",
+          "message": "starters: upgrade to support Hugo breaking changes\n\nTested with Hugo v0.135.0\n\nAddresses recent breaking changes in Hugo:\n\nERROR deprecated: .Site.GoogleAnalytics was deprecated.\n\nWARN  deprecated: site config key paginate was deprecated in Hugo v0.128.0 and will be removed in a future release. Use pagination.pagerSize instead",
+          "html_url": "https://github.com/HugoBlox/kit/commit/2f0f3249cb2241c8cc195f37ead2eb531e0e571a"
+        },
+        {
+          "sha": "fdf45baf57d159c45586ebb7d0c11db546de3083",
+          "author_date": "2024-10-13T14:55:26Z",
+          "message": "fix(bootstrap): default_button_index possibly not taking effect (#3156)\n\nFixes argument ordering",
+          "html_url": "https://github.com/HugoBlox/kit/commit/fdf45baf57d159c45586ebb7d0c11db546de3083"
+        },
+        {
+          "sha": "2eaf5f6849fccb7777c8a7ca9c445a75fda1a419",
+          "author_date": "2024-10-16T21:43:18Z",
+          "message": "feat: add support for Hugo v0.134+ breaking changes\n\nTested with Hugo v0.135.0\n\nAddresses `.Summary` breaking changes in Hugo v0.134: https://github.com/gohugoio/hugo/releases/tag/v0.134.0",
+          "html_url": "https://github.com/HugoBlox/kit/commit/2eaf5f6849fccb7777c8a7ca9c445a75fda1a419"
+        },
+        {
+          "sha": "adc14f11d2fcb45b04da4368d52b800bd71859f5",
+          "author_date": "2024-10-27T20:58:50Z",
+          "message": "chore(tailwind): bump version to v0.3.0",
+          "html_url": "https://github.com/HugoBlox/kit/commit/adc14f11d2fcb45b04da4368d52b800bd71859f5"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "modules/blox-tailwind/v0.3.1",

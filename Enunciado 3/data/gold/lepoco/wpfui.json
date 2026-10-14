@@ -390,8 +390,201 @@
     {
       "release": "3.0.2",
       "previous_release": "3.0.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f055c4c74226ec06a4a3ed75f76232ebb357051c",
+          "author_date": "2024-02-27T23:38:50Z",
+          "message": "Fix ListView to be compatible when ListView.View is a GridView",
+          "html_url": "https://github.com/lepoco/wpfui/commit/f055c4c74226ec06a4a3ed75f76232ebb357051c"
+        },
+        {
+          "sha": "a4c8e9c465b63e89aef6416df3bbd026dc08c35a",
+          "author_date": "2024-03-13T23:40:36Z",
+          "message": "Bump github/codeql-action from 1 to 3\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 1 to 3.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/v1...v3)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/a4c8e9c465b63e89aef6416df3bbd026dc08c35a"
+        },
+        {
+          "sha": "32a88781722683196dfbd8be0d1ac771bc7c4d65",
+          "author_date": "2024-03-13T23:40:41Z",
+          "message": "Bump actions/checkout from 2 to 4\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 2 to 4.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v2...v4)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/32a88781722683196dfbd8be0d1ac771bc7c4d65"
+        },
+        {
+          "sha": "12fc801aea5c6be221d50cf6f02aa61591b1e865",
+          "author_date": "2024-03-14T07:18:22Z",
+          "message": "Merge remote-tracking branch 'upstream/development' into fix/gridview-compatibility",
+          "html_url": "https://github.com/lepoco/wpfui/commit/12fc801aea5c6be221d50cf6f02aa61591b1e865"
+        },
+        {
+          "sha": "0271f7a00c1c673b0ad70b0614864fac3572be1e",
+          "author_date": "2024-03-14T09:13:20Z",
+          "message": "Change ViewState's type from a string to an enum of two states: Default and GridView",
+          "html_url": "https://github.com/lepoco/wpfui/commit/0271f7a00c1c673b0ad70b0614864fac3572be1e"
+        },
+        {
+          "sha": "96d10c09cc79d56cddd711f232a97ca4d910f172",
+          "author_date": "2024-03-14T11:45:44Z",
+          "message": "Implement the GridView feature by binding directly to the View property.\n\nRemoved the custom class ui:ListView as its purpose was to expose the ViewState, which can be simplified by directly binding to ListView.View with a ValueConverter.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/96d10c09cc79d56cddd711f232a97ca4d910f172"
+        },
+        {
+          "sha": "9435ce163b4f2ff8dad7079204a3aaf850dfb0ee",
+          "author_date": "2024-03-15T14:30:08Z",
+          "message": "Extract DefaultTextBoxScrollViewerStyle to it's own ResourceDictionary",
+          "html_url": "https://github.com/lepoco/wpfui/commit/9435ce163b4f2ff8dad7079204a3aaf850dfb0ee"
+        },
+        {
+          "sha": "93dc778a7eacd776fd7613913cc092bb5fe5bb98",
+          "author_date": "2024-03-15T14:43:17Z",
+          "message": "Avoid overflow in text input components\n\nCloses #973, closes #497\n\nUse PassiveScrollViewer as PART_ContentHost instead of Decorator, just like TextBox",
+          "html_url": "https://github.com/lepoco/wpfui/commit/93dc778a7eacd776fd7613913cc092bb5fe5bb98"
+        },
+        {
+          "sha": "d5ee505af768a0523c65772a28e1ec75d0d5ee43",
+          "author_date": "2024-03-15T14:55:05Z",
+          "message": "Simplify PassiveScrollViewer usage by adding properties to style",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d5ee505af768a0523c65772a28e1ec75d0d5ee43"
+        },
+        {
+          "sha": "d1fa429868d24b3894d4c72d2f93e740520128cc",
+          "author_date": "2024-03-18T07:58:18Z",
+          "message": "Fix TitleBarButton Foreground error when change theme",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d1fa429868d24b3894d4c72d2f93e740520128cc"
+        },
+        {
+          "sha": "c7dc7823af9fffc2123396e3727674ff9c78b8df",
+          "author_date": "2024-03-18T10:33:44Z",
+          "message": "Merge pull request #1005 from seasonyuu/development\n\nFix TitleBarButton Foreground error when change theme",
+          "html_url": "https://github.com/lepoco/wpfui/commit/c7dc7823af9fffc2123396e3727674ff9c78b8df"
+        },
+        {
+          "sha": "fcb11765243fd2207f1a5a06e49d650b9ffe18a8",
+          "author_date": "2024-03-18T10:35:03Z",
+          "message": "Merge branch 'development' into TextInputOverflow",
+          "html_url": "https://github.com/lepoco/wpfui/commit/fcb11765243fd2207f1a5a06e49d650b9ffe18a8"
+        },
+        {
+          "sha": "7e25475e8f39d2c956c3f9aaa44264928406b43e",
+          "author_date": "2024-03-18T10:36:35Z",
+          "message": "Merge pull request #998 from lepoco/dependabot/github_actions/development/actions/checkout-4\n\nBump actions/checkout from 2 to 4",
+          "html_url": "https://github.com/lepoco/wpfui/commit/7e25475e8f39d2c956c3f9aaa44264928406b43e"
+        },
+        {
+          "sha": "96b45603f3b90d123e2d2f31d1d72607ed531b04",
+          "author_date": "2024-03-18T10:36:51Z",
+          "message": "Merge branch 'development' into dependabot/github_actions/development/github/codeql-action-3",
+          "html_url": "https://github.com/lepoco/wpfui/commit/96b45603f3b90d123e2d2f31d1d72607ed531b04"
+        },
+        {
+          "sha": "77318603226b959ad57472033df9349b15401c5a",
+          "author_date": "2024-03-18T10:37:01Z",
+          "message": "Merge pull request #997 from lepoco/dependabot/github_actions/development/github/codeql-action-3\n\nBump github/codeql-action from 1 to 3",
+          "html_url": "https://github.com/lepoco/wpfui/commit/77318603226b959ad57472033df9349b15401c5a"
+        },
+        {
+          "sha": "be95ca2b22210571900d5eff6f23b0c0e72f4287",
+          "author_date": "2024-03-18T10:37:18Z",
+          "message": "Merge branch 'development' into TextInputOverflow",
+          "html_url": "https://github.com/lepoco/wpfui/commit/be95ca2b22210571900d5eff6f23b0c0e72f4287"
+        },
+        {
+          "sha": "612a785d79468bf97858a67d2bfca2c0091fab75",
+          "author_date": "2024-03-18T20:21:21Z",
+          "message": "Improve lineargradient border for TextBox in Light/Dark theme (also effects PasswordBox and NumberBox)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/612a785d79468bf97858a67d2bfca2c0091fab75"
+        },
+        {
+          "sha": "7cbdc7a149ac1b338357cb010444136d25fad70d",
+          "author_date": "2024-03-19T13:30:34Z",
+          "message": "Merge branch 'development' into fix/gridview-compatibility",
+          "html_url": "https://github.com/lepoco/wpfui/commit/7cbdc7a149ac1b338357cb010444136d25fad70d"
+        },
+        {
+          "sha": "4b34485228a717f5384762536025d669c0fcbfd6",
+          "author_date": "2024-03-19T13:31:39Z",
+          "message": "Merge pull request #1006 from koal44/enhancement/textbox-border\n\nImprove lineargradient border for TextBox in Light/Dark themes",
+          "html_url": "https://github.com/lepoco/wpfui/commit/4b34485228a717f5384762536025d669c0fcbfd6"
+        },
+        {
+          "sha": "bd0777a1965764da7282d59a07b30acc4be0d9bd",
+          "author_date": "2024-03-19T13:32:24Z",
+          "message": "Merge pull request #999 from tmijail/TextInputOverflow\n\nFix content overflowing from PasswordBox, ComboBox and NumberBox (#497, #973)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/bd0777a1965764da7282d59a07b30acc4be0d9bd"
+        },
+        {
+          "sha": "c621d7125c6b55eb1f3cba82d4a5b75a5112f68b",
+          "author_date": "2024-03-19T14:15:46Z",
+          "message": "Merge branch 'development' into fix/gridview-compatibility",
+          "html_url": "https://github.com/lepoco/wpfui/commit/c621d7125c6b55eb1f3cba82d4a5b75a5112f68b"
+        },
+        {
+          "sha": "91576f18e6e138dd7da6de1e1f22dede9a0d94c8",
+          "author_date": "2024-03-19T14:17:48Z",
+          "message": "Merge branch 'fix/gridview-compatibility' of https://github.com/koal44/wpfui into fix/gridview-compatibility",
+          "html_url": "https://github.com/lepoco/wpfui/commit/91576f18e6e138dd7da6de1e1f22dede9a0d94c8"
+        },
+        {
+          "sha": "9c2391a8d21abbbeb1a1922f2b1d7a1c8afc0bff",
+          "author_date": "2024-03-19T14:55:51Z",
+          "message": "Re-implement custom ui:ListView class and remove the ListViewViewStateConverter",
+          "html_url": "https://github.com/lepoco/wpfui/commit/9c2391a8d21abbbeb1a1922f2b1d7a1c8afc0bff"
+        },
+        {
+          "sha": "16c9d1058731c431db63fa4bc6e0de6af86e755a",
+          "author_date": "2024-03-19T15:25:22Z",
+          "message": "Addd documentation and tool to the VS tools manifest",
+          "html_url": "https://github.com/lepoco/wpfui/commit/16c9d1058731c431db63fa4bc6e0de6af86e755a"
+        },
+        {
+          "sha": "804bf790d67804981ba76d2626516fd9b24610f7",
+          "author_date": "2024-03-19T21:03:45Z",
+          "message": "Merge pull request #979 from koal44/fix/gridview-compatibility\n\nFix ListView to be compatible when ListView.View is a GridView",
+          "html_url": "https://github.com/lepoco/wpfui/commit/804bf790d67804981ba76d2626516fd9b24610f7"
+        },
+        {
+          "sha": "585ec2dc738455206284ded9d1569fa1bceef0df",
+          "author_date": "2024-03-19T21:04:58Z",
+          "message": "Update release",
+          "html_url": "https://github.com/lepoco/wpfui/commit/585ec2dc738455206284ded9d1569fa1bceef0df"
+        },
+        {
+          "sha": "ab96a3d848c9ed096be15bef611feba7904cf9a6",
+          "author_date": "2024-03-19T21:06:46Z",
+          "message": "Bump version",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ab96a3d848c9ed096be15bef611feba7904cf9a6"
+        },
+        {
+          "sha": "7efb14a5f44355efff882b88eba2e2fd07c9b395",
+          "author_date": "2024-03-19T21:12:06Z",
+          "message": "Merge branch 'main' into development",
+          "html_url": "https://github.com/lepoco/wpfui/commit/7efb14a5f44355efff882b88eba2e2fd07c9b395"
+        },
+        {
+          "sha": "4b50f5c30d08fb4eaefc0b50283d67204b92c311",
+          "author_date": "2024-03-19T21:15:29Z",
+          "message": "Update labeler.yml",
+          "html_url": "https://github.com/lepoco/wpfui/commit/4b50f5c30d08fb4eaefc0b50283d67204b92c311"
+        },
+        {
+          "sha": "c51dadb491fd1221a1041157d1cc61d9af42f393",
+          "author_date": "2024-03-19T21:15:33Z",
+          "message": "Merge branch 'development' of https://github.com/lepoco/wpfui into development",
+          "html_url": "https://github.com/lepoco/wpfui/commit/c51dadb491fd1221a1041157d1cc61d9af42f393"
+        },
+        {
+          "sha": "95e8e2076f5de1ebdd836fb9a3c9f9f877a341c7",
+          "author_date": "2024-03-19T21:17:12Z",
+          "message": "Update labeler.yml",
+          "html_url": "https://github.com/lepoco/wpfui/commit/95e8e2076f5de1ebdd836fb9a3c9f9f877a341c7"
+        },
+        {
+          "sha": "f59daa02e4c4818989d7f95dbb4bcb95b279b747",
+          "author_date": "2024-03-19T21:27:09Z",
+          "message": "Merge pull request #1008 from lepoco/development\n\nSync development and bump version",
+          "html_url": "https://github.com/lepoco/wpfui/commit/f59daa02e4c4818989d7f95dbb4bcb95b279b747"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "3.0.3",
@@ -408,8 +601,273 @@
     {
       "release": "3.0.5",
       "previous_release": "3.0.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a253702bcf8bb30af1be5d819df3e834357bc4a5",
+          "author_date": "2024-04-16T09:37:46Z",
+          "message": "Prevent icons in MenuItems from being tabstops\n\nFix for #1054",
+          "html_url": "https://github.com/lepoco/wpfui/commit/a253702bcf8bb30af1be5d819df3e834357bc4a5"
+        },
+        {
+          "sha": "5f061c478d285ad6de669d7261412b68d312398e",
+          "author_date": "2024-04-17T19:45:27Z",
+          "message": "Merge pull request #1055 from Difegue/patch-1\n\nPrevent icons in MenuItems from being tabstops",
+          "html_url": "https://github.com/lepoco/wpfui/commit/5f061c478d285ad6de669d7261412b68d312398e"
+        },
+        {
+          "sha": "d73377660c0df092396e77e680b383f4af8b9b83",
+          "author_date": "2024-04-19T13:35:52Z",
+          "message": "Fix incorrectly refactored High Contrast theme dictionary selection\n\nThis was broken in c0ace5b18648a2f7ccc77eff388cae1fa6ef8555",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d73377660c0df092396e77e680b383f4af8b9b83"
+        },
+        {
+          "sha": "dfcf3adfeef089ec504d01b6015719153b87d4f5",
+          "author_date": "2024-04-19T17:37:46Z",
+          "message": "Merge branch 'development' into patch-2",
+          "html_url": "https://github.com/lepoco/wpfui/commit/dfcf3adfeef089ec504d01b6015719153b87d4f5"
+        },
+        {
+          "sha": "d88b8150fd375843edf31230c3414536ba371e5c",
+          "author_date": "2024-04-20T14:45:19Z",
+          "message": "Merge pull request #1063 from Difegue/patch-2\n\nFix incorrectly refactored High Contrast theme dictionary selection",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d88b8150fd375843edf31230c3414536ba371e5c"
+        },
+        {
+          "sha": "d33ecf33cfb52661962555138020b766266437c7",
+          "author_date": "2024-04-22T12:32:09Z",
+          "message": "Fixed the markup extension for the SymbolIcon and FontIcon class not working at all.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d33ecf33cfb52661962555138020b766266437c7"
+        },
+        {
+          "sha": "5525c2b1b831d21a5c68a4fc5e5b8d55182a80bd",
+          "author_date": "2024-04-30T15:03:37Z",
+          "message": "Rewrite of the arc class. Added SweepDirection as property, viewbox to easier scale the arc aswell as a new startpoint at 12am and refactoring of the code.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/5525c2b1b831d21a5c68a4fc5e5b8d55182a80bd"
+        },
+        {
+          "sha": "a35eb010f6c7fdae279b5b85609e76253de58559",
+          "author_date": "2024-05-01T23:32:16Z",
+          "message": "Fixed the PenLineCap property.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/a35eb010f6c7fdae279b5b85609e76253de58559"
+        },
+        {
+          "sha": "4471cb90d3d66ee655ab6eb96cc77dc477c3265d",
+          "author_date": "2024-05-04T20:15:19Z",
+          "message": "Added back doc and removed regions.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/4471cb90d3d66ee655ab6eb96cc77dc477c3265d"
+        },
+        {
+          "sha": "bdc218223889a319ebc7c754d361264b720d28a1",
+          "author_date": "2024-05-05T08:53:33Z",
+          "message": "Merge pull request #1067 from m0lDaViA/development\n\nFixed the markup extension for the SymbolIcon and FontIcon class not working at all.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/bdc218223889a319ebc7c754d361264b720d28a1"
+        },
+        {
+          "sha": "8ebf43ec565a0bd28e1dbb66a89c68038d353787",
+          "author_date": "2024-05-05T09:00:14Z",
+          "message": "Well, it can be null",
+          "html_url": "https://github.com/lepoco/wpfui/commit/8ebf43ec565a0bd28e1dbb66a89c68038d353787"
+        },
+        {
+          "sha": "ef742b512bd25696aca589a07ce4b15dd8fd11ea",
+          "author_date": "2024-05-05T09:01:47Z",
+          "message": "Format code",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ef742b512bd25696aca589a07ce4b15dd8fd11ea"
+        },
+        {
+          "sha": "a0aae10cb09160477f71bf8b9297d7826cfa5ee9",
+          "author_date": "2024-05-09T15:26:43Z",
+          "message": "Update themes.md",
+          "html_url": "https://github.com/lepoco/wpfui/commit/a0aae10cb09160477f71bf8b9297d7826cfa5ee9"
+        },
+        {
+          "sha": "5b92450f875b73e577bbd293e4bbf8aef47c7f30",
+          "author_date": "2024-05-09T21:12:57Z",
+          "message": "Merge branch 'development' into patch-1",
+          "html_url": "https://github.com/lepoco/wpfui/commit/5b92450f875b73e577bbd293e4bbf8aef47c7f30"
+        },
+        {
+          "sha": "77b0c26c4b17d50855097ddba98e03e7107f9893",
+          "author_date": "2024-05-09T22:47:30Z",
+          "message": "Update UiApplication.cs\n\nIgnore `Application` without LibraryResources",
+          "html_url": "https://github.com/lepoco/wpfui/commit/77b0c26c4b17d50855097ddba98e03e7107f9893"
+        },
+        {
+          "sha": "2f51370db222fa1e1bbcee843049e70d6d8bca6b",
+          "author_date": "2024-05-12T08:39:45Z",
+          "message": "Update UiApplication.cs",
+          "html_url": "https://github.com/lepoco/wpfui/commit/2f51370db222fa1e1bbcee843049e70d6d8bca6b"
+        },
+        {
+          "sha": "22c4dc1032b34e781e243503168c2e05d791b150",
+          "author_date": "2024-05-12T08:41:31Z",
+          "message": "Merge pull request #1080 from jonmotos/patch-1\n\nUpdate themes.md documentation for 3.x namespace and type name changes",
+          "html_url": "https://github.com/lepoco/wpfui/commit/22c4dc1032b34e781e243503168c2e05d791b150"
+        },
+        {
+          "sha": "7a958785c101f702b6637fd74c9ea2dfeaacdc67",
+          "author_date": "2024-05-12T08:42:19Z",
+          "message": "Update UiApplication.cs",
+          "html_url": "https://github.com/lepoco/wpfui/commit/7a958785c101f702b6637fd74c9ea2dfeaacdc67"
+        },
+        {
+          "sha": "493d1e0f767b84e42aeb6dc65e18b49b5d7abcd0",
+          "author_date": "2024-05-12T08:54:25Z",
+          "message": "Merge pull request #1082 from ricaun/patch-2\n\nUpdate UiApplication.cs",
+          "html_url": "https://github.com/lepoco/wpfui/commit/493d1e0f767b84e42aeb6dc65e18b49b5d7abcd0"
+        },
+        {
+          "sha": "303c7bb201e9f1b978fa6c5d9685c77e06b721d1",
+          "author_date": "2024-06-02T11:05:54Z",
+          "message": "[TYPO] link to 404 (#1102)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/303c7bb201e9f1b978fa6c5d9685c77e06b721d1"
+        },
+        {
+          "sha": "334ded5a5fa282c1b341024fb4c3640972c65674",
+          "author_date": "2024-06-02T11:11:16Z",
+          "message": "Fix warnings (#1104)\n\n* Fix IDE0073 and inherent SA1512 static analyzer issues.\r\n\r\nIDE0073 is caused by setting file_header_template and having more lines in the header comment than specified in the template.\r\nSA1512 is caused by having an empty line between a single-line comment and following code.\r\n\r\n* Fix more formatting-related build warnings",
+          "html_url": "https://github.com/lepoco/wpfui/commit/334ded5a5fa282c1b341024fb4c3640972c65674"
+        },
+        {
+          "sha": "232b9c6c5a102d4052f428b327a8eb920a7682b8",
+          "author_date": "2024-06-02T11:12:14Z",
+          "message": "fix non-legacy backdrop when switching themes (#1094)\n\nCo-authored-by: Антонов Семен Викторович <SVAntonov@IBS.RU>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/232b9c6c5a102d4052f428b327a8eb920a7682b8"
+        },
+        {
+          "sha": "259faf2baea61a2eb71d7e207833d0c754049089",
+          "author_date": "2024-06-02T11:12:37Z",
+          "message": "fix: possible null reference exceptions in PasswordBox (#1091)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/259faf2baea61a2eb71d7e207833d0c754049089"
+        },
+        {
+          "sha": "00a4c0c5ec95f41f5864567108cb4baa7b6eacbe",
+          "author_date": "2024-06-04T20:16:55Z",
+          "message": "fix: TextBox, NumberBox, PasswordBox  Placeholder Not Working Properly. (#1109)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/00a4c0c5ec95f41f5864567108cb4baa7b6eacbe"
+        },
+        {
+          "sha": "150e05d2610c17d62d87c7ae54a39220fc1441bd",
+          "author_date": "2024-06-08T21:44:24Z",
+          "message": "fix:  PlaceholderText may not display promptly under certain circumstances (#1115)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/150e05d2610c17d62d87c7ae54a39220fc1441bd"
+        },
+        {
+          "sha": "ba8a24146844c127373526236e3c647240c177b9",
+          "author_date": "2024-06-08T21:45:05Z",
+          "message": "Update themes.md (#1114)\n\nChange the Watcher class to SystemThemeWatcher in the docs",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ba8a24146844c127373526236e3c647240c177b9"
+        },
+        {
+          "sha": "cc35ab2da15ed329feb74ec3703f59d68e5c95df",
+          "author_date": "2024-06-10T23:49:20Z",
+          "message": "Update window titlebar color (#1122)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/cc35ab2da15ed329feb74ec3703f59d68e5c95df"
+        },
+        {
+          "sha": "9c55f379bb1ea3bcb59d3b2faabcf577131699ed",
+          "author_date": "2024-06-10T23:57:58Z",
+          "message": "fix: possible multiple invocations of the INavigationAware interface methods. (#1116)\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/9c55f379bb1ea3bcb59d3b2faabcf577131699ed"
+        },
+        {
+          "sha": "7db4af29d7464236eab90940b159112e0a2e2ef4",
+          "author_date": "2024-06-11T00:00:39Z",
+          "message": "Update `INotifyCollectionChanged` events in `MenuItems` and `FooterMenuItems` of the `NavigationView` (#1098)\n\n* - added source source binding list change event handling for navigationview menu/footer items.\r\n- Fixed menu/footer items not updating with databinding source if items modified post init.\r\n\r\n* Fixed stackoverflow due to recursive call from collection change event when updating from binding source\r\n\r\n* Update NavigationView.Properties.cs\r\n\r\n* Update NavigationView.Properties.cs\r\n\r\n---------\r\n\r\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/7db4af29d7464236eab90940b159112e0a2e2ef4"
+        },
+        {
+          "sha": "f340d47a48dff798fb7bf8b86111b53e853a3708",
+          "author_date": "2024-06-11T00:01:15Z",
+          "message": "Format code",
+          "html_url": "https://github.com/lepoco/wpfui/commit/f340d47a48dff798fb7bf8b86111b53e853a3708"
+        },
+        {
+          "sha": "09eeabd684f2e8f242ceff6deb60e1546d2a7bbf",
+          "author_date": "2024-06-11T07:33:22Z",
+          "message": "Update themes.md (#1124)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/09eeabd684f2e8f242ceff6deb60e1546d2a7bbf"
+        },
+        {
+          "sha": "305ee5794009667dbdfb3f75deb66ac28cdceef4",
+          "author_date": "2024-07-24T19:13:11Z",
+          "message": "Revert changes that make it impossible to use {ui:SymbolIcon} as the Value of a Setter (#1159)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/305ee5794009667dbdfb3f75deb66ac28cdceef4"
+        },
+        {
+          "sha": "19790710bc961547efa165fbce7cdfb007449de3",
+          "author_date": "2024-07-24T19:14:34Z",
+          "message": "Fix DynamicScrollViewer not responding to touch events (#1154)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/19790710bc961547efa165fbce7cdfb007449de3"
+        },
+        {
+          "sha": "454c73b5db7e6cd6ed6f1baec1c4a70ff347b079",
+          "author_date": "2024-07-24T19:15:53Z",
+          "message": "fix:SnackbarPresenter might throw ObjectDisposedException. (#1138)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/454c73b5db7e6cd6ed6f1baec1c4a70ff347b079"
+        },
+        {
+          "sha": "eabd654df62f13451926eeb52be60a7317a48f1d",
+          "author_date": "2024-07-24T19:16:10Z",
+          "message": "Fix MessageBox Button Icons (#1164)\n\n* fix: correct MessageBox button icon setting\r\n\r\n* fix: nenamed files to align with class name ContentDialogPage",
+          "html_url": "https://github.com/lepoco/wpfui/commit/eabd654df62f13451926eeb52be60a7317a48f1d"
+        },
+        {
+          "sha": "24bc09d4c12d663486ff551d025f662c71b3e797",
+          "author_date": "2024-07-24T19:17:11Z",
+          "message": "chore: update RadioButton.xaml (#1135)\n\nseperate -> separate",
+          "html_url": "https://github.com/lepoco/wpfui/commit/24bc09d4c12d663486ff551d025f662c71b3e797"
+        },
+        {
+          "sha": "030f584e1fce4074c266c04367c80247838553e9",
+          "author_date": "2024-07-24T19:17:20Z",
+          "message": "Workaround for touch input triggering alongside the hwnd hook on titlebar (#1153)\n\n* Workaround for touch input triggering alongside the hwndhook on titlebar\r\n\r\nFixes #1126\r\n\r\nSetting hittest to false disables touch input on the button, which was firing alongside WM_NCLBUTTONUP in the hwndhook, resulting in the command being fired twice.\r\n\r\n* Update TitleBar.xaml\r\n\r\n---------\r\n\r\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/030f584e1fce4074c266c04367c80247838553e9"
+        },
+        {
+          "sha": "432cc70fc44c87bf6eb825dd229c5fbaf8e64e5f",
+          "author_date": "2024-07-24T19:17:43Z",
+          "message": "fix: setting NotifyIcon.TooltipText at runtime doesn't work (#1132)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/432cc70fc44c87bf6eb825dd229c5fbaf8e64e5f"
+        },
+        {
+          "sha": "c2afe6c467e123612e571f436245846e25e1ac0b",
+          "author_date": "2024-07-24T19:18:22Z",
+          "message": "Doc: supplement the document content. (#1119)\n\n* doc: add navigation set initial page doc\r\n\r\n* doc: add NavigationView with MVVM Pattern Explanation",
+          "html_url": "https://github.com/lepoco/wpfui/commit/c2afe6c467e123612e571f436245846e25e1ac0b"
+        },
+        {
+          "sha": "ecd36c1bb3b6f5019300807cedb916767afef5e8",
+          "author_date": "2024-07-24T19:18:59Z",
+          "message": "Fix: MessageBox does not support WindowStartupLocation (#1130)\n\n* fix: MessageBox does not support WindowStartupLocation\r\n\r\n* fix: MessageBox defaults to being displayed in the center of the screen.\r\n\r\n* MessageBox add comment",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ecd36c1bb3b6f5019300807cedb916767afef5e8"
+        },
+        {
+          "sha": "a4078704f6d7379f0cd2c05231f0de79b967eb01",
+          "author_date": "2024-07-24T19:27:00Z",
+          "message": "Replace Assembly.Location to AppContext.BaseDirectory (#1149)\n\nhttps://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/warnings/il3000\r\nhttps://learn.microsoft.com/en-us/dotnet/core/deploying/single-file/overview?tabs=cli#api-incompatibility\r\nhttps://github.com/dotnet/corert/issues/5467",
+          "html_url": "https://github.com/lepoco/wpfui/commit/a4078704f6d7379f0cd2c05231f0de79b967eb01"
+        },
+        {
+          "sha": "4aeb0bf9d3c3aa630f18e215e9998ee63a4e7566",
+          "author_date": "2024-07-24T19:33:42Z",
+          "message": "Fix: PasswordBox does not accept PasswordChar as input (#1141)\n\n* fix: PasswordBox does not accept PasswordChar as input\r\n\r\n* refactor PasswordBox\r\n\r\n* fix: PasswordBox bug\r\n\r\nWhen the character to be replaced is a PasswordChar, it fails to substitute correctly\r\n\r\n* Format code\r\n\r\n* add PasswordHelper\r\n\r\n---------\r\n\r\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/4aeb0bf9d3c3aa630f18e215e9998ee63a4e7566"
+        },
+        {
+          "sha": "63f0f0ce75e2b45a4c7489b5675c5009da37b30a",
+          "author_date": "2024-07-24T19:34:50Z",
+          "message": "Bump version",
+          "html_url": "https://github.com/lepoco/wpfui/commit/63f0f0ce75e2b45a4c7489b5675c5009da37b30a"
+        },
+        {
+          "sha": "9f73807d15c02024c55a0cc05f9d96ccc860f660",
+          "author_date": "2024-07-24T21:00:55Z",
+          "message": "Merge pull request #1165 from lepoco/development\n\nRelease 3.0.5",
+          "html_url": "https://github.com/lepoco/wpfui/commit/9f73807d15c02024c55a0cc05f9d96ccc860f660"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "4.0.0-rc.1",
@@ -432,8 +890,393 @@
     {
       "release": "4.0.0",
       "previous_release": "3.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d5ee557a44164941d2f1d259427e66b3b42ac865",
+          "author_date": "2024-06-02T21:49:08Z",
+          "message": "Move code and add abstractions",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d5ee557a44164941d2f1d259427e66b3b42ac865"
+        },
+        {
+          "sha": "caf1d3ebb903aceb14d7d6c6c0d2c30280c8daa0",
+          "author_date": "2024-06-02T21:54:34Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/lepoco/wpfui/commit/caf1d3ebb903aceb14d7d6c6c0d2c30280c8daa0"
+        },
+        {
+          "sha": "499cc241005251adb3d24e0815de5c761d89de21",
+          "author_date": "2024-06-02T22:03:31Z",
+          "message": "Update notices",
+          "html_url": "https://github.com/lepoco/wpfui/commit/499cc241005251adb3d24e0815de5c761d89de21"
+        },
+        {
+          "sha": "340fb04822ec27a4856f09897022e6b70cb97bb2",
+          "author_date": "2024-06-02T22:12:43Z",
+          "message": "Update analyzers",
+          "html_url": "https://github.com/lepoco/wpfui/commit/340fb04822ec27a4856f09897022e6b70cb97bb2"
+        },
+        {
+          "sha": "c91c6e74a5baadb04bd2bf4813bc1a052eadb68a",
+          "author_date": "2024-06-02T22:20:00Z",
+          "message": "Update sample",
+          "html_url": "https://github.com/lepoco/wpfui/commit/c91c6e74a5baadb04bd2bf4813bc1a052eadb68a"
+        },
+        {
+          "sha": "169966568bfb43281b649969d33c46c58de3bb62",
+          "author_date": "2024-06-02T22:37:57Z",
+          "message": "Add sample for dialog",
+          "html_url": "https://github.com/lepoco/wpfui/commit/169966568bfb43281b649969d33c46c58de3bb62"
+        },
+        {
+          "sha": "b13221e6a920df43b28b9e05571a265a37a34d72",
+          "author_date": "2024-06-02T22:43:23Z",
+          "message": "Simplify demo",
+          "html_url": "https://github.com/lepoco/wpfui/commit/b13221e6a920df43b28b9e05571a265a37a34d72"
+        },
+        {
+          "sha": "e4d3c8ed048f679e50802cc981623dd5c2b6731a",
+          "author_date": "2024-06-04T20:17:50Z",
+          "message": "Merge branch 'development' into feature/4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/e4d3c8ed048f679e50802cc981623dd5c2b6731a"
+        },
+        {
+          "sha": "897385c9fb5e7e889acce8452a5f80c98a8b515b",
+          "author_date": "2024-06-09T11:47:30Z",
+          "message": "Test translations",
+          "html_url": "https://github.com/lepoco/wpfui/commit/897385c9fb5e7e889acce8452a5f80c98a8b515b"
+        },
+        {
+          "sha": "736bc9b4e1e5dafba61c329a94849d236bb94de9",
+          "author_date": "2024-06-09T11:48:07Z",
+          "message": "Merge branch 'development' into feature/4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/736bc9b4e1e5dafba61c329a94849d236bb94de9"
+        },
+        {
+          "sha": "b564bf4573b430c3609d7a13b240e14ac504c618",
+          "author_date": "2024-06-10T23:52:33Z",
+          "message": "Merge branch 'development' into feature/4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/b564bf4573b430c3609d7a13b240e14ac504c618"
+        },
+        {
+          "sha": "b3f310ec41851592a90597292d3b114651aed21f",
+          "author_date": "2024-06-11T00:01:39Z",
+          "message": "Merge branch 'development' into feature/4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/b3f310ec41851592a90597292d3b114651aed21f"
+        },
+        {
+          "sha": "e8a9185ffcc87eb636903b3cb87465a09fb7c534",
+          "author_date": "2024-06-11T00:05:14Z",
+          "message": "Update interfaces",
+          "html_url": "https://github.com/lepoco/wpfui/commit/e8a9185ffcc87eb636903b3cb87465a09fb7c534"
+        },
+        {
+          "sha": "ab9d02409e5a8ed644eb9222af31af86707a9ee0",
+          "author_date": "2024-06-15T19:46:11Z",
+          "message": "Provide default navigation page provider #1134",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ab9d02409e5a8ed644eb9222af31af86707a9ee0"
+        },
+        {
+          "sha": "4092e4c58691e3fc1d115e09406f07ed61c9437f",
+          "author_date": "2024-06-15T19:47:57Z",
+          "message": "Update MainWindow.xaml.cs",
+          "html_url": "https://github.com/lepoco/wpfui/commit/4092e4c58691e3fc1d115e09406f07ed61c9437f"
+        },
+        {
+          "sha": "ebaabb66081b8c32dae25d920423b7084f03828a",
+          "author_date": "2024-07-24T19:30:23Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ebaabb66081b8c32dae25d920423b7084f03828a"
+        },
+        {
+          "sha": "1f5f2ee50a6cf297dd5c639ce531e2668b6689a5",
+          "author_date": "2024-07-24T19:30:35Z",
+          "message": "Merge branch 'development' into feature/4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/1f5f2ee50a6cf297dd5c639ce531e2668b6689a5"
+        },
+        {
+          "sha": "25153e47a2110fb500a3856c5f071aa1122f5b46",
+          "author_date": "2024-07-24T19:34:15Z",
+          "message": "Merge branch 'development' into feature/4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/25153e47a2110fb500a3856c5f071aa1122f5b46"
+        },
+        {
+          "sha": "6656707c4dae50a810d035c79ea45216ed443475",
+          "author_date": "2024-07-24T21:03:23Z",
+          "message": "Merge branch 'development' into feature/4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/6656707c4dae50a810d035c79ea45216ed443475"
+        },
+        {
+          "sha": "3002988a6067e4cbde4ef4d57e893e66e7e8162a",
+          "author_date": "2024-07-24T21:07:37Z",
+          "message": "Merge pull request #1107 from lepoco/feature/4.0\n\nRelease candidate for 4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/3002988a6067e4cbde4ef4d57e893e66e7e8162a"
+        },
+        {
+          "sha": "66b42ee021383d9c56756a915bd4c1d7d928a1da",
+          "author_date": "2024-07-24T21:08:04Z",
+          "message": "Merge branch 'development' of https://github.com/lepoco/wpfui into development",
+          "html_url": "https://github.com/lepoco/wpfui/commit/66b42ee021383d9c56756a915bd4c1d7d928a1da"
+        },
+        {
+          "sha": "45969c071aa9d98cc42226caf9714f110050f940",
+          "author_date": "2024-07-24T21:08:56Z",
+          "message": "Format code",
+          "html_url": "https://github.com/lepoco/wpfui/commit/45969c071aa9d98cc42226caf9714f110050f940"
+        },
+        {
+          "sha": "9bf4b05ab4fc0b69e2e10a4eedf85e9f93413200",
+          "author_date": "2024-07-24T21:20:34Z",
+          "message": "Merge pull request #1166 from lepoco/development\n\nRelease candidate for 4.0",
+          "html_url": "https://github.com/lepoco/wpfui/commit/9bf4b05ab4fc0b69e2e10a4eedf85e9f93413200"
+        },
+        {
+          "sha": "739a6966c3321d04be20f3724b32ef9f8ab030d7",
+          "author_date": "2024-07-24T21:24:29Z",
+          "message": "Update packages",
+          "html_url": "https://github.com/lepoco/wpfui/commit/739a6966c3321d04be20f3724b32ef9f8ab030d7"
+        },
+        {
+          "sha": "98b8f2e0ca6a4acb27a2c2aa80f02f72016e6a07",
+          "author_date": "2024-07-24T21:36:12Z",
+          "message": "Update docfx.json",
+          "html_url": "https://github.com/lepoco/wpfui/commit/98b8f2e0ca6a4acb27a2c2aa80f02f72016e6a07"
+        },
+        {
+          "sha": "c8250b01a2f1dc9f87ef428a970d823eb82cee0b",
+          "author_date": "2024-07-26T12:02:32Z",
+          "message": "Update docfx.json",
+          "html_url": "https://github.com/lepoco/wpfui/commit/c8250b01a2f1dc9f87ef428a970d823eb82cee0b"
+        },
+        {
+          "sha": "b450a17bdfbc7e6e10dd0566640172aebc529fbe",
+          "author_date": "2024-07-26T12:02:51Z",
+          "message": "Merge pull request #1171 from lepoco/development\n\nSync development",
+          "html_url": "https://github.com/lepoco/wpfui/commit/b450a17bdfbc7e6e10dd0566640172aebc529fbe"
+        },
+        {
+          "sha": "2549bbb97bd99c22eef9904d207a1c8d3403142b",
+          "author_date": "2024-07-26T12:04:41Z",
+          "message": "Use flow from main to release, instead of development",
+          "html_url": "https://github.com/lepoco/wpfui/commit/2549bbb97bd99c22eef9904d207a1c8d3403142b"
+        },
+        {
+          "sha": "a2613e93b37efae47677bc0fe03e941bb5e91e25",
+          "author_date": "2024-07-26T12:05:01Z",
+          "message": "Merge pull request #1172 from lepoco/bugfix/update-docs\n\nUse flow from main to release, instead of development",
+          "html_url": "https://github.com/lepoco/wpfui/commit/a2613e93b37efae47677bc0fe03e941bb5e91e25"
+        },
+        {
+          "sha": "48dba0be50622b478e8964874a594211de3e7921",
+          "author_date": "2024-07-26T12:14:59Z",
+          "message": "Update pipelines for main development (#1173)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/48dba0be50622b478e8964874a594211de3e7921"
+        },
+        {
+          "sha": "2bd5fea3253245be64cfb0802c43929ecec86070",
+          "author_date": "2024-08-11T10:43:29Z",
+          "message": "Set Expander content height to * instead of Auto (#1186)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/2bd5fea3253245be64cfb0802c43929ecec86070"
+        },
+        {
+          "sha": "d27947ea33106ab5e38fa902db3181bbd14a493b",
+          "author_date": "2024-08-11T10:43:48Z",
+          "message": "Fix: failing to correctly trigger the methods of the INavigationAware interface. (#1177)\n\n* fix: failing to correctly trigger the methods of the INavigationAware interface.\r\n\r\nwhen both the View and ViewModel inherit from the INavigationAware interface, only the OnNavigatedToAsync/OnNavigatedFromAsync methods of the View are triggered\r\n\r\n* refactor: reduce code duplication.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d27947ea33106ab5e38fa902db3181bbd14a493b"
+        },
+        {
+          "sha": "c3a50f74ee76f53cabea9f0d19e1287e56fb15dd",
+          "author_date": "2024-08-11T10:51:51Z",
+          "message": "Add support for ARM64, update extensions and docs, allow non-Windows builds (#1196)\n\n* Append dev containers\r\n\r\n* Add support for ARM64 for WPF UI VS22 extension\r\n\r\n* Update .gitignore\r\n\r\n* Update pipelines\r\n\r\n* Bump version\r\n\r\n* Update docs\r\n\r\n* Update wpf-ui-lock.yml",
+          "html_url": "https://github.com/lepoco/wpfui/commit/c3a50f74ee76f53cabea9f0d19e1287e56fb15dd"
+        },
+        {
+          "sha": "4ac96867797267d566b82fbbfcab0c867353afaa",
+          "author_date": "2024-08-15T11:35:18Z",
+          "message": " SystemThemeWatcher Documentation content changes (#1200)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/4ac96867797267d566b82fbbfcab0c867353afaa"
+        },
+        {
+          "sha": "caf86ab8f160ba4ec36247f159af57dd38dd55f3",
+          "author_date": "2024-10-24T08:28:02Z",
+          "message": "[getting-started.md] fixed for English grammar and flow (#1210)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/caf86ab8f160ba4ec36247f159af57dd38dd55f3"
+        },
+        {
+          "sha": "950ade69bd123f605b507dc472796cb6ef9bfd59",
+          "author_date": "2024-10-24T08:37:06Z",
+          "message": "perf: Exclude the definition of the CanCenterOverWPFOwnerPropertyInfo field in .NET 8 or higher (#1202)\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/950ade69bd123f605b507dc472796cb6ef9bfd59"
+        },
+        {
+          "sha": "e98881c51dc50bb61003d55b02f189efb4145771",
+          "author_date": "2024-11-24T14:40:22Z",
+          "message": "Remove accidentally added characters (#1282)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/e98881c51dc50bb61003d55b02f189efb4145771"
+        },
+        {
+          "sha": "f492028e937023abb285354cc998de718ef6e694",
+          "author_date": "2024-12-06T10:15:07Z",
+          "message": "Create top-issues-dashboard.yml (#1286)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/f492028e937023abb285354cc998de718ef6e694"
+        },
+        {
+          "sha": "882b2315fe8b50dfb90ebf4ec490bea7918c784f",
+          "author_date": "2024-12-06T10:16:45Z",
+          "message": "Move issues",
+          "html_url": "https://github.com/lepoco/wpfui/commit/882b2315fe8b50dfb90ebf4ec490bea7918c784f"
+        },
+        {
+          "sha": "baa55d4aec69df26c8bca325a249110712500389",
+          "author_date": "2024-12-06T10:31:22Z",
+          "message": "Add support for .NET 9 (#1287)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/baa55d4aec69df26c8bca325a249110712500389"
+        },
+        {
+          "sha": "397739b85cfa616315740a360279f301847fa59d",
+          "author_date": "2024-12-25T03:59:33Z",
+          "message": "Disable page refreshing (#1298)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/397739b85cfa616315740a360279f301847fa59d"
+        },
+        {
+          "sha": "c8969338894f91105dfa56bdb31f0e9013bf4c59",
+          "author_date": "2025-02-01T21:30:19Z",
+          "message": "- Add Margin to BulletDecorator to apply the CheckBox Padding property (#1324)\n\n- fixes #1323",
+          "html_url": "https://github.com/lepoco/wpfui/commit/c8969338894f91105dfa56bdb31f0e9013bf4c59"
+        },
+        {
+          "sha": "1cf0e0c6d6afb86833eb47d571fb7c0d9b172b58",
+          "author_date": "2025-02-01T21:34:01Z",
+          "message": "AutoSuggestBox when using in a list will override the value of binded property (#1312)\n\nFixes #1283",
+          "html_url": "https://github.com/lepoco/wpfui/commit/1cf0e0c6d6afb86833eb47d571fb7c0d9b172b58"
+        },
+        {
+          "sha": "5db3c71895fd4b2e18b3f612788e48962c6b0c0a",
+          "author_date": "2025-02-01T21:47:59Z",
+          "message": "fix: Clean-up NumberBox: focus repeat event-args debug-output cursor (#1328)\n\n* fix the NumberBox focus, keyboard, repeat isses, ValueChanged event, and debuggingcode\n\n* fix: build warning for not documenting a constructor param\n\n* Update NumberBoxValueChangedEventArgs.cs\n\n---------\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/5db3c71895fd4b2e18b3f612788e48962c6b0c0a"
+        },
+        {
+          "sha": "58f3e3622c334ce95849c52c7a0c69c146b8c69f",
+          "author_date": "2025-02-01T21:59:00Z",
+          "message": "Update wpf-ui-cd-nuget.yaml for release branches (#1329)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/58f3e3622c334ce95849c52c7a0c69c146b8c69f"
+        },
+        {
+          "sha": "1e4fe2ab07f230b58eaab49337b43200d69dc32f",
+          "author_date": "2025-02-01T22:05:10Z",
+          "message": "Invoke INavigationAware callbacks on UI thread (#1307)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/1e4fe2ab07f230b58eaab49337b43200d69dc32f"
+        },
+        {
+          "sha": "9856b09b7decc65f7ea62d2e49bd22cca4ff23a9",
+          "author_date": "2025-02-01T22:05:25Z",
+          "message": "Docs: section links (#1305)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/9856b09b7decc65f7ea62d2e49bd22cca4ff23a9"
+        },
+        {
+          "sha": "0e8d4dcb31ab2ef21feff3a2c33a7b1a2848d8b9",
+          "author_date": "2025-02-01T22:10:59Z",
+          "message": "Add String.Contains extension. Optimise string comparison (#1299)\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/0e8d4dcb31ab2ef21feff3a2c33a7b1a2848d8b9"
+        },
+        {
+          "sha": "dcca844c93b93c744d0119c2af8b2119ccacf9c6",
+          "author_date": "2025-02-01T22:17:10Z",
+          "message": "Fix: ToggleButton interaction problem in SplitButton (#1179) (#1297)\n\n* fix: ToggleButton interaction problem in SplitButton\n\nThe flyout is displayed only when the button's image is clicked precisely, and this is inconvenient for the user.\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/dcca844c93b93c744d0119c2af8b2119ccacf9c6"
+        },
+        {
+          "sha": "af864c096df2a84552383087a86663bed55ddac2",
+          "author_date": "2025-02-01T22:17:54Z",
+          "message": "Fix button template (#1296)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/af864c096df2a84552383087a86663bed55ddac2"
+        },
+        {
+          "sha": "817f3cd301ad475ec753c1b35c61977558538ab9",
+          "author_date": "2025-02-01T22:18:48Z",
+          "message": "Fix typo in Gallery's radio button page (#1262)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/817f3cd301ad475ec753c1b35c61977558538ab9"
+        },
+        {
+          "sha": "a7d345c472637468f5009fa9aaf91eac8fab374f",
+          "author_date": "2025-02-01T22:19:13Z",
+          "message": "Fix memory leak in ListView (#1243)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/a7d345c472637468f5009fa9aaf91eac8fab374f"
+        },
+        {
+          "sha": "fae42f64b0f61f4f4394e03a86e7d132491e8ae4",
+          "author_date": "2025-02-01T22:20:16Z",
+          "message": "Defining a FontSize in a FontIcon should not be overridden by its VisualParent's (#1244)\n\n* Defining a FontSize in a FontIcon should not be overridden by its VisualParent's\n\n* Only apply the VisualParent override if its size isn't the default we just replaced",
+          "html_url": "https://github.com/lepoco/wpfui/commit/fae42f64b0f61f4f4394e03a86e7d132491e8ae4"
+        },
+        {
+          "sha": "1ef6c6f114060aa02dd9fc80b9945dd99d7eab30",
+          "author_date": "2025-02-01T22:21:04Z",
+          "message": "Add hover brush to ListBoxItem (#1237)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/1ef6c6f114060aa02dd9fc80b9945dd99d7eab30"
+        },
+        {
+          "sha": "2afbe946b51ec3e88cc23ab8ab5c87f0dce00448",
+          "author_date": "2025-02-01T22:21:45Z",
+          "message": "Theming fixes (#1236)\n\n* Fix TextControl placeholders not using the proper color\n\n* Fix InfoBar padding so it's centered for single-line messages",
+          "html_url": "https://github.com/lepoco/wpfui/commit/2afbe946b51ec3e88cc23ab8ab5c87f0dce00448"
+        },
+        {
+          "sha": "89fda9ccec380d0d73a0566496935a477c0f7125",
+          "author_date": "2025-02-01T22:26:53Z",
+          "message": "Enhance DataGrid UI and Fix Style Issues (#1192)\n\n* fix: Add styles for DataGrid textbox columns\n\n* Update DataGrid styles\n\n* Remove deprecated color definitions and update styles\n\n* Update TextColumnElementStyle to use TextBlock instead of TextBox\n\n---------\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/89fda9ccec380d0d73a0566496935a477c0f7125"
+        },
+        {
+          "sha": "e55d7d7badfbab0c055f05f61908954ef3bbad05",
+          "author_date": "2025-02-01T22:29:57Z",
+          "message": "Fix screen reader issues with CardAction/Button/MenuItem/NavigationViewItem (#1235)\n\n* Add narration support to CardAction\n\n* Fix screen readers trying to read IconElement in some cases\n\n* Add narration support to NavigationViewItem\n\n* Button workaround appears to be unnecessary now",
+          "html_url": "https://github.com/lepoco/wpfui/commit/e55d7d7badfbab0c055f05f61908954ef3bbad05"
+        },
+        {
+          "sha": "b0a38e9d3c869f60b01adf28db4f1fdba2534f3f",
+          "author_date": "2025-02-01T22:30:44Z",
+          "message": "Fix elevationBrushes to match WinUI (#1234)\n\n* Fix elevationBrushes to match WinUI\n\nMaking the brush not-shared is necessary for it to work properly with content of any height\n\n* Fix elevation brush on ToggleButton as well",
+          "html_url": "https://github.com/lepoco/wpfui/commit/b0a38e9d3c869f60b01adf28db4f1fdba2534f3f"
+        },
+        {
+          "sha": "0fc9208dcff39706fa36e9f8c8afb18928a05639",
+          "author_date": "2025-02-01T22:31:44Z",
+          "message": "Non-actionable cards shouldn't have hover behavior, as per WinUI (#1233)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/0fc9208dcff39706fa36e9f8c8afb18928a05639"
+        },
+        {
+          "sha": "18ce2b8d0f543c14e19a619cf166f903f9af9365",
+          "author_date": "2025-02-01T22:42:50Z",
+          "message": "Add support for setting content in place of the title in a TitleBar (#1030)\n\n* Add support for setting content in place of the title in a TitleBar\n\n* Use Header instead of HeaderLeft and TrailingContent instead of HeaderRight\n\nRefactor TitleBar properties for clarity and usability\n\nRenamed properties in the `TitleBar` class from `HeaderLeft` and `HeaderRight` to `Header` and `TrailingContent`. Updated XAML and C# files to reflect these changes, streamlining the structure of the `TitleBar`. Modified the constructor to set the `_titleBlock` to the new `Header` property. Adjusted hit testing logic in `WM.NCHITTEST` to accommodate the new property names, ensuring proper mouse interaction handling. These changes improve the overall clarity and usability of the `TitleBar` component.\n\n---------\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/18ce2b8d0f543c14e19a619cf166f903f9af9365"
+        },
+        {
+          "sha": "4a320979e4060a2881f39c2c09db8555d757ed0e",
+          "author_date": "2025-02-01T22:43:43Z",
+          "message": "TitleBarPaneCompactMarginDefault set to 35 to prevent icon moving. (#1209)\n\nToggling the NavigationBar no longer makes the TitleBar title and icon jump around.\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/4a320979e4060a2881f39c2c09db8555d757ed0e"
+        },
+        {
+          "sha": "1b892e300b6d3c07bfee24e65b4591f29c5ca919",
+          "author_date": "2025-02-01T22:48:53Z",
+          "message": "💄🐛 Add Snowflake Effect to the WPF UI Gallery (#1266)\n\n- Introduced a new SnowflakeEffect class and associated Snowflake.cs model to create an interactive snow effect on the UI canvas, responding to mouse movements.\n- Updated the GalleryNavigationPresenter.xaml and associated pages in the BasicInput, Collections, DateAndTime, DialogsAndFlyouts, Layout, Media, Navigation, OpSystem, StatusAndInfo, and Text directories to integrate and demonstrate the new snow effect.\n- Added new files for the snow effect implementation in the Effects directory: Snowflake.cs and SnowflakeEffect.cs.\n- Adjusted page designs in BasicInputPage.xaml, DateAndTimePage.xaml, and other modified pages to accommodate the snow effect visuals and ensure seamless integration.\n- Fixed text wrapping issue in navigation cards to improve UI readability and layout consistency.\n- Updated themes Dark.xaml and Light.xaml to support the visual requirements of the snow effect.\n\nThis update brings a visually engaging element to the WPF UI Gallery, enhancing user interaction with dynamic, responsive snowflakes across multiple demo pages.\n\nCo-authored-by: keeleycenc <844123814qq.com>\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/1b892e300b6d3c07bfee24e65b4591f29c5ca919"
+        },
+        {
+          "sha": "fc346b5485686192a4d8850fda165ea774590ec0",
+          "author_date": "2025-02-01T23:09:51Z",
+          "message": "Format code with csharpier (#1330)\n\n* Format code with csharpier\n\n* Format code",
+          "html_url": "https://github.com/lepoco/wpfui/commit/fc346b5485686192a4d8850fda165ea774590ec0"
+        },
+        {
+          "sha": "bb560af0e09bd54d5a622750c96e9fcd5d3a6205",
+          "author_date": "2025-02-01T23:21:16Z",
+          "message": "Bump version (#1331)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/bb560af0e09bd54d5a622750c96e9fcd5d3a6205"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "4.0.2",
@@ -462,14 +1305,172 @@
     {
       "release": "4.2.1",
       "previous_release": "4.2.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "7a89930844b085496cb874183703da73e6a631cc",
+          "author_date": "2026-01-13T13:02:25Z",
+          "message": "fix(controls): Add ItemsPanel to ComboBox to enable GroupStyle support (#1645)\n\nComboBox was not rendering grouped items when using GroupStyle: only\nheaders would display while items were missing. Added ItemsPanel with\nStackPanel to the ComboBox style to fix this behavior.\n\nAlso added a grouped items example to the Gallery app for demonstration.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/7a89930844b085496cb874183703da73e6a631cc"
+        },
+        {
+          "sha": "fc1aafc299e7d0219fc57a1ac16c2987acd3a5ee",
+          "author_date": "2026-01-13T13:03:24Z",
+          "message": "fix(controls): Fix NullReferenceException in Arc(#1644)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/fc1aafc299e7d0219fc57a1ac16c2987acd3a5ee"
+        },
+        {
+          "sha": "64d2b638eeebe6dac5646a9b98bc4df3b05352d5",
+          "author_date": "2026-01-13T13:06:59Z",
+          "message": "feat(app): Add ability to disable automatic apply of system accent color in `UiApplication` (#1643)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/64d2b638eeebe6dac5646a9b98bc4df3b05352d5"
+        },
+        {
+          "sha": "9a8975ef54113bfdad15bf8d019cd68d094c6375",
+          "author_date": "2026-01-13T13:07:39Z",
+          "message": "fix(controls): Update ContentDialog For TitleBar CenterContent (#1642)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/9a8975ef54113bfdad15bf8d019cd68d094c6375"
+        },
+        {
+          "sha": "5773da9fa017a4758eb4ef622ba13f261cc5e31c",
+          "author_date": "2026-01-14T11:04:41Z",
+          "message": "fix(controls): NavigationViewItemAutomationPeer followup (#1646)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/5773da9fa017a4758eb4ef622ba13f261cc5e31c"
+        },
+        {
+          "sha": "0c1ef6deba26a3638e07e30e0c33f3c3cd93e53f",
+          "author_date": "2026-01-16T21:22:48Z",
+          "message": "fix(controls): Remove AnimationFactorToValueConverter from CheckBox.xaml (#1649)\n\nhttps://github.com/lepoco/wpfui/pull/1512#issuecomment-3751579154",
+          "html_url": "https://github.com/lepoco/wpfui/commit/0c1ef6deba26a3638e07e30e0c33f3c3cd93e53f"
+        },
+        {
+          "sha": "e6e22e3389872f2aba90c079ee64a007116e01d3",
+          "author_date": "2026-01-16T21:23:26Z",
+          "message": "fix(controls): Fix TextBlock issues (#1640)\n\n* Remove style setters from TextBlock.xaml\n\n* Remove LineHeight from Typography styles\n\nRemoved LineHeight property from multiple TextBlock styles.\n\n* Add TextBlockMetadata class for TextBlock properties\n\n* Add TextBlockMetadata initialization in ControlsDictionary\n\n* Add FontTypographyStyle and AppearanceForeground properties\n\n* Formatting\n\n* Formatting\n\n---------\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/e6e22e3389872f2aba90c079ee64a007116e01d3"
+        },
+        {
+          "sha": "ace9117f923d62baef2cbba89e118054a6c07099",
+          "author_date": "2026-04-17T16:42:57Z",
+          "message": "fix: Add null check for Application.Current (#1684)\n\nAdd null check for Application.Current before changing resources.",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ace9117f923d62baef2cbba89e118054a6c07099"
+        },
+        {
+          "sha": "e9dbe8d01ea05c0075d7b0a88a90c24d853ef768",
+          "author_date": "2026-04-17T16:43:46Z",
+          "message": "fix(controls): unhook event on closed fluentwindow (#1682)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/e9dbe8d01ea05c0075d7b0a88a90c24d853ef768"
+        },
+        {
+          "sha": "422ce19def3e2525530d54327292638f5af042ad",
+          "author_date": "2026-04-17T16:45:09Z",
+          "message": "fix: Optimize LINQ call (#1683)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/422ce19def3e2525530d54327292638f5af042ad"
+        },
+        {
+          "sha": "3b4e8f52468114edb19d465859ba966ed233973d",
+          "author_date": "2026-04-17T17:46:05Z",
+          "message": "fix: Refactor SystemThemeWatcher WndProc to listen to Windows theme changes (#1677)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/3b4e8f52468114edb19d465859ba966ed233973d"
+        },
+        {
+          "sha": "77bb6d05b7dc35780c9d7784b71aac458d5832e4",
+          "author_date": "2026-04-17T17:46:31Z",
+          "message": "fix(controls): Fix ProgressRing not restarting properly when visibily changes (#1678)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/77bb6d05b7dc35780c9d7784b71aac458d5832e4"
+        },
+        {
+          "sha": "d7144cbd90c8e251cc050e94c2f24cbb8b8e2a45",
+          "author_date": "2026-04-17T17:47:01Z",
+          "message": "fix: Center align DynamicScrollBar Grid elements (#1676)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d7144cbd90c8e251cc050e94c2f24cbb8b8e2a45"
+        },
+        {
+          "sha": "bb667107d9e5313f381c54fe6a1e69abe01affad",
+          "author_date": "2026-04-17T17:47:43Z",
+          "message": "fix(controls): Fix card automation peers (#1675)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/bb667107d9e5313f381c54fe6a1e69abe01affad"
+        },
+        {
+          "sha": "95c5b68f8e931a1d42201afed0b4c6a87ec1f11b",
+          "author_date": "2026-04-17T17:48:19Z",
+          "message": "fix(controls): fixes #1670 - TitleBar throws NRE when Collapsed (#1671)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/95c5b68f8e931a1d42201afed0b4c6a87ec1f11b"
+        },
+        {
+          "sha": "ec9febc6f5589e19341058287274ece76c6ab51b",
+          "author_date": "2026-04-19T08:45:26Z",
+          "message": "fix(controls): scroll buttons on horizontal ScrollBar for RTL FlowDirection (#1690)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ec9febc6f5589e19341058287274ece76c6ab51b"
+        },
+        {
+          "sha": "995af10202318b4c755c2907812b7e6d4abc3de4",
+          "author_date": "2026-04-23T09:46:33Z",
+          "message": "fix(controls): DataGrid editing behavior for ComboBox and CheckBox columns",
+          "html_url": "https://github.com/lepoco/wpfui/commit/995af10202318b4c755c2907812b7e6d4abc3de4"
+        },
+        {
+          "sha": "40f1e3721c89cc733fdcfd9a1ab6a3ad061feacf",
+          "author_date": "2026-04-23T09:48:25Z",
+          "message": "fix(controls): Add ViewportSize bindings to ListView ScrollBars",
+          "html_url": "https://github.com/lepoco/wpfui/commit/40f1e3721c89cc733fdcfd9a1ab6a3ad061feacf"
+        },
+        {
+          "sha": "d36d452eb80ca706a0c0d2e2ddf8fcb2ba022075",
+          "author_date": "2026-04-23T09:49:18Z",
+          "message": "fix(controls): NumberBox need validating new value after applying step change value\n\nCo-authored-by: <kezg@bciflex.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/d36d452eb80ca706a0c0d2e2ddf8fcb2ba022075"
+        },
+        {
+          "sha": "4c711b6a2d53fe50435ae483a64676cadf49b683",
+          "author_date": "2026-04-23T09:51:14Z",
+          "message": "fix(controls): Proper foreground on Button content\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/4c711b6a2d53fe50435ae483a64676cadf49b683"
+        },
+        {
+          "sha": "ae95b228f6bfcaddd7afb53f9a2cd7fc74b01bb7",
+          "author_date": "2026-04-23T12:20:59Z",
+          "message": "fix: Bump dependencies, update docs, format code (#1692)\n\n* feat: Update docs\n\n* update readme\n\n* feat: Format code, bump packages, update docs\n\n* fix: Update navigation\n\n* fix: Rollback minimum version",
+          "html_url": "https://github.com/lepoco/wpfui/commit/ae95b228f6bfcaddd7afb53f9a2cd7fc74b01bb7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "4.3.0",
       "previous_release": "4.2.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "829b019db8a3a6f94b32a9f31b5a12a747ce333a",
+          "author_date": "2026-04-28T06:26:01Z",
+          "message": "fix(controls): Add UpdateAutoSuggestBoxSuggestions call on MenuItemCollection change (#1696)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/829b019db8a3a6f94b32a9f31b5a12a747ce333a"
+        },
+        {
+          "sha": "50de276b8e34225eb7b7940f4eb880b53535d193",
+          "author_date": "2026-05-03T18:11:55Z",
+          "message": "fix(tray): support Unicode for NotifyIcon.TooltipText (#1706)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/50de276b8e34225eb7b7940f4eb880b53535d193"
+        },
+        {
+          "sha": "59224591a113722ccb2bb0bfcbe4912b9274a57b",
+          "author_date": "2026-05-04T07:48:21Z",
+          "message": "feat(controls): Implement `SpinButtonPlacementMode.Compact` for `NumberBox` (#1709)\n\n* Gallery: add NumberBox sample with all spin button placement modes\n\n* NumberBox: add PART_CompactIncrementDecrementButton button\n\n* NumberBox: add a flyout for compact mode\n\n* Gallery: change the wording back to \"a spin button\", which is how WinUI seems to phrase it\n\n* fix: Adjust height according to label\n\n---------\n\nCo-authored-by: Pomianowski <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/59224591a113722ccb2bb0bfcbe4912b9274a57b"
+        },
+        {
+          "sha": "69b28a250094976fc68e2116679e57db24b522ea",
+          "author_date": "2026-05-04T07:52:27Z",
+          "message": "fix(controls): Change order of triggers for Button (#1702)\n\nCo-authored-by: pomian <13592821+pomianowski@users.noreply.github.com>",
+          "html_url": "https://github.com/lepoco/wpfui/commit/69b28a250094976fc68e2116679e57db24b522ea"
+        },
+        {
+          "sha": "153baadeaf475875a81a4605881ca5c2dbe53972",
+          "author_date": "2026-05-04T12:22:16Z",
+          "message": "feat: Bump version (#1710)",
+          "html_url": "https://github.com/lepoco/wpfui/commit/153baadeaf475875a81a4605881ca5c2dbe53972"
+        }
+      ],
+      "ignored_reason": null
     }
   ],
   "runs_by_month": {

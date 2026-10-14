@@ -924,8 +924,519 @@
     {
       "release": "0.3.0",
       "previous_release": "0.2.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "8b3b9e1008875d5d9bdf01943c4e9e6dd79c2ece",
+          "author_date": "2020-06-22T07:01:24Z",
+          "message": "Revert \"Release 0.1.0\" (#105)\n\nThis reverts commit b82b5109e19917342349b98d975ae2518de84a28.",
+          "html_url": "https://github.com/unit8co/darts/commit/8b3b9e1008875d5d9bdf01943c4e9e6dd79c2ece"
+        },
+        {
+          "sha": "b997eda717d6ab8790bed42d112a6a39cb797769",
+          "author_date": "2020-06-22T07:13:49Z",
+          "message": "Update README.md (#106)",
+          "html_url": "https://github.com/unit8co/darts/commit/b997eda717d6ab8790bed42d112a6a39cb797769"
+        },
+        {
+          "sha": "9cbc2a4df85341828763ee17c8d50451f6a763e9",
+          "author_date": "2020-06-22T08:42:50Z",
+          "message": "New theme. (#107)\n\n* New theme.\r\n\r\n* remove old theme",
+          "html_url": "https://github.com/unit8co/darts/commit/9cbc2a4df85341828763ee17c8d50451f6a763e9"
+        },
+        {
+          "sha": "172f3ed6699a119eb4cf6d62377746196bafcba3",
+          "author_date": "2020-06-22T09:58:22Z",
+          "message": "Fix/predict single value (#108)\n\n* fix(TorchForecastingModel): solved bug at TorchForecastingModel.predict(n) with n = 1\r\n\r\n* feature(testing): added tests for length 1 predictions for RNN and TCN, set torch random seed for TCN test\r\n\r\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>\r\nCo-authored-by: TheMP <marek.pasieka@gmail.com>",
+          "html_url": "https://github.com/unit8co/darts/commit/172f3ed6699a119eb4cf6d62377746196bafcba3"
+        },
+        {
+          "sha": "981ae0ec48f4a4dde0c77be45aa590023ea7b671",
+          "author_date": "2020-06-22T12:12:56Z",
+          "message": "Remove `.darts` directory after tests. (#103)\n\nCo-authored-by: TheMP <marek.pasieka@gmail.com>",
+          "html_url": "https://github.com/unit8co/darts/commit/981ae0ec48f4a4dde0c77be45aa590023ea7b671"
+        },
+        {
+          "sha": "a267c6f1ab2ca0346371ecc10f8740d3d193ad7c",
+          "author_date": "2020-06-22T14:29:51Z",
+          "message": "Feature/residual analysis example (#109)\n\n* feature(examples): added 2 residual analyses to the darts-intro notebook, added a fill_nan option to plot_residual_analysis\r\n\r\n* feature(examples): added changes to intro notebook\r\n\r\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/a267c6f1ab2ca0346371ecc10f8740d3d193ad7c"
+        },
+        {
+          "sha": "a300457dbebdedaf3f01dddc4bb5a83759889984",
+          "author_date": "2020-06-24T13:20:30Z",
+          "message": "feature/multivariate (#97)\n\nStep 1\r\n------\r\n- Changed TimeSeries underlying representation from pandas.Series to pandas.DataFrame\r\n- Adapted TimeSeries methods to work with DataFrame\r\n- Added new TimeSeries getter function to interface with models that do not support the multivariate case\r\n- Changed models/utilities to call the above mentioned univariate getter functions so that they are guaranteed to use the same univariate data as before\r\n- Removed confidence interval functionality from TimeSeries class\r\n- Removed unit tests which involved testing of confidence intervals\r\n- Adapted other unit tests where necessary\r\n\r\nStep 2\r\n------\r\nAdded functions to create and manipulate multivariate time series:\r\n- TimeSeries.stack: takes two TimeSeries and returns a stacked multivariate one\r\n- TimeSeries.width: property that shows how many components (aka univariate series) a TimeSeries instance contains.\r\n- TimeSeries.univariate_component: returns a univariate TimeSeries obtained from the current one indexed by a positive integer\r\n- TimeSeries.add_datetime_attribute: returns a new TimeSeries composed of the current one plus an additional column obtained by extracting information from the time index (such as weekday, month, etc.\r\n- TimeSeries.add_holidays: returns a new TimeSeries composed of the current one plus an additional column that indicates whether a given entry's timestamp corresponds to a holiday period or not\r\n\r\nOther additions:\r\n\r\n- Added multivariate-specific tests for existing functions and all new ones\r\n- Added calls to old tests with new multivariate TimeSeries instances\r\n- Added multivariate support to metrics functions\r\n- Added multivariate support to ScalerWrapper\r\n- Introduced UnivariateForecastingModel and MultivariateForecastingModel as subclasses of ForecastingModel\r\n\r\nStep 3\r\n------\r\n- Added multivariate support to TorchForecastingModel and both subclasses (TCNModel and RNNModel). Both input and predicted TimeSeries instances can now be multidimensional.\r\n- Added use_full_output_length boolean argument to TorchForecastingModel.predict, which allows all outputs of the network to be used for the prediction. This argument must be set to True if multivariate TimeSeries are being predicted.\r\n- Added multivariate support to _TimeSeriesDataset1DSequential and _TimeSeriesDataset1DShifted\r\n- Added multivariate tests for TCNModel and RNNModel",
+          "html_url": "https://github.com/unit8co/darts/commit/a300457dbebdedaf3f01dddc4bb5a83759889984"
+        },
+        {
+          "sha": "c436f5567848d2039237a1fbd3190a714c72a00c",
+          "author_date": "2020-06-25T09:00:55Z",
+          "message": "feature(TimeSeries): allowing to pass single string for value column in TimeSeries.from_dataframe (#114)\n\nCo-authored-by: pennfranc <flaessig#student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/c436f5567848d2039237a1fbd3190a714c72a00c"
+        },
+        {
+          "sha": "951598546ae3767e79ca681ae680867292e1b993",
+          "author_date": "2020-06-25T14:08:08Z",
+          "message": "fix/README.md (#113)\n\n* fix \"Import Error\" in example\r\n\r\n* update title line\r\n\r\n* fix example usage section\r\n\r\n* refactor install guide\r\n\r\n* fix duplicate link issue caused by m2r\r\n\r\n* add table of content\r\n\r\n* add support python 3.6+ in the text\r\n\r\n* add contact us section\r\n\r\n* fix example code for multivariate\r\n\r\n* feature(README): mentioned multivariate time series support in 'Features' section\r\n\r\n* remove width 100% on example img / center it\r\n\r\n* feature(README): minor rewording in first paragraph\r\n\r\n* add new title\r\n\r\n* correct contact us section\r\n\r\n* revert back to previous from_dataframe API\r\n\r\n* move install guide in a separate md file\r\n\r\n* add relative INSTALL.md url\r\n\r\n* add contributing steps\r\n\r\n* remove ToC\r\n\r\n* add installation guide at the end of README\r\n\r\n* remove \"Darts:\" from title\r\n\r\n* recommend people to discuss issue before contributing\r\n\r\nCo-authored-by: Guillaume Raille <guillaume.raille@unit8.co>\r\nCo-authored-by: pennfranc <flaessig#student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/951598546ae3767e79ca681ae680867292e1b993"
+        },
+        {
+          "sha": "858ee1e95b7f7f493b9fc741dc57eabbd1f03f2c",
+          "author_date": "2020-06-25T14:09:42Z",
+          "message": "add .vscode to .gitignore (#110)\n\nCo-authored-by: Guillaume Raille <guillaume@Guillaumes-MacBook-Pro.local>\r\nCo-authored-by: TheMP <marek.pasieka@gmail.com>",
+          "html_url": "https://github.com/unit8co/darts/commit/858ee1e95b7f7f493b9fc741dc57eabbd1f03f2c"
+        },
+        {
+          "sha": "9dd4c8984e429f454a509f80a14f78455a2796ae",
+          "author_date": "2020-06-29T15:52:44Z",
+          "message": "Cleanup after tests (#116)",
+          "html_url": "https://github.com/unit8co/darts/commit/9dd4c8984e429f454a509f80a14f78455a2796ae"
+        },
+        {
+          "sha": "c3e70c3d85c18f20bb132850311b402371cfb94c",
+          "author_date": "2020-06-29T16:09:55Z",
+          "message": "add .darts to ignored folders (#117)",
+          "html_url": "https://github.com/unit8co/darts/commit/c3e70c3d85c18f20bb132850311b402371cfb94c"
+        },
+        {
+          "sha": "3b35a133696da8ab799fb0eaf93860147a82c8d5",
+          "author_date": "2020-06-30T14:45:43Z",
+          "message": "Feat/gradle (#112)\n\n* Add clean to Makefile cleaning up all generated/copied files.\r\n\r\n* Introduce gradle build tool to project.\r\n\r\n* Remove scripts\r\n\r\n* Restore pip cache.\r\n\r\n* Update Readme\r\n\r\n* Split pipSteps",
+          "html_url": "https://github.com/unit8co/darts/commit/3b35a133696da8ab799fb0eaf93860147a82c8d5"
+        },
+        {
+          "sha": "ab0d02eb63e90bef2352459f395e5bdf3e6228d0",
+          "author_date": "2020-07-01T08:49:29Z",
+          "message": "fix(TimeSeries): fixed documentation (#119)\n\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/ab0d02eb63e90bef2352459f395e5bdf3e6228d0"
+        },
+        {
+          "sha": "7af942f9ee216250ba4ea1b9f25745a6e8afc666",
+          "author_date": "2020-07-03T09:19:30Z",
+          "message": "Fix/reproducibility RNN (#118)\n\n* add possibility to fix seed on RNN model\r\n\r\n* adapt RNN notebook to be reproducible\r\n\r\n* Revert \"add .darts to ignored folders (#117)\"\r\n\r\nThis reverts commit c3e70c3d85c18f20bb132850311b402371cfb94c.\r\n\r\n* add random_method decorator skeleton\r\n\r\n* add initial tests\r\n\r\n* add logging and raise error if not a method\r\n\r\n* fix class call instead of self\r\n\r\n* implement the decorator\r\n\r\n* add a proper method to check if a function is a method\r\n\r\n* add a test for when None is specified as random_state\r\n\r\n* fix RNN models with random_method decorator\r\n\r\n* update and rune the notebook\r\n\r\n* add .darts to ignored folders (#117)\r\n\r\n* add title to file for doc",
+          "html_url": "https://github.com/unit8co/darts/commit/7af942f9ee216250ba4ea1b9f25745a6e8afc666"
+        },
+        {
+          "sha": "22702ab6671daec642ab100aed2961693ee1368d",
+          "author_date": "2020-07-06T14:03:37Z",
+          "message": "add .DS_Store to .gitignore (#124)",
+          "html_url": "https://github.com/unit8co/darts/commit/22702ab6671daec642ab100aed2961693ee1368d"
+        },
+        {
+          "sha": "c6885ca5ce17b52218eddb9cf4dcab80d39b9396",
+          "author_date": "2020-07-07T09:08:50Z",
+          "message": "feature/multivariate - step 4 (#111)\n\n- Adds multivariate functionality to backtesting functions.\r\n- Further improves backtest_regression by introducing new parameters.\r\n- Improved RNN notebook by using new backtesting functionality.\r\n\r\nCo-authored-by: pennfranc <flaessig#student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/c6885ca5ce17b52218eddb9cf4dcab80d39b9396"
+        },
+        {
+          "sha": "e72fea92af1de169e2e444fca1e3a4c124193c62",
+          "author_date": "2020-07-09T07:24:29Z",
+          "message": "remove mutable default arg",
+          "html_url": "https://github.com/unit8co/darts/commit/e72fea92af1de169e2e444fca1e3a4c124193c62"
+        },
+        {
+          "sha": "18110ba90bc209957312042e7f0f70cd0d5c973d",
+          "author_date": "2020-07-09T15:25:54Z",
+          "message": "Fix/cleaner code for TorchForecastingModel (#130)\n\n- Created some subroutines for the biggest methods of TorchForecastingModel to make the code more structured.\r\n- Added an additional test case to `test_RNN.py?\r\n- Added missing check to backtesting\r\n- Made `TorchForecastingModel.create_dataset()` method private\r\n\r\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/18110ba90bc209957312042e7f0f70cd0d5c973d"
+        },
+        {
+          "sha": "f1e14c9b0f21062b5f764b62049bc153bf62fc60",
+          "author_date": "2020-07-10T10:03:05Z",
+          "message": "Fix/gradle (#127)\n\n* omit tests for coverage report\r\n\r\n* omit __init__.py from test coverage\r\n\r\n* fix notebooks path in CI\r\n\r\n* Revert \"fix notebooks path in CI\"\r\n\r\nThis reverts commit f094f47383e84ef50abf3a8a7d45afde1882895e.\r\n\r\n* add CI notebook path (low diffs)\r\n\r\n* Revert \"add CI notebook path (low diffs)\"\r\n\r\nThis reverts commit 5038874948f771a0df10676f09cc13b220cd49c4.\r\n\r\n* add a cell to fix python path locally on notebooks\r\n\r\n* refactor into util function",
+          "html_url": "https://github.com/unit8co/darts/commit/f1e14c9b0f21062b5f764b62049bc153bf62fc60"
+        },
+        {
+          "sha": "927751e39c72dbe8ccae8c2ae1e99d606943808b",
+          "author_date": "2020-07-13T10:19:35Z",
+          "message": "Feature/tcn improvements (#134)\n\n- Added random_state parameter to TCNModel.\r\n- Added new example to TCN notebook.\r\n- Added random_state parameter to notebook TCNModel instances.\r\n- Improved TCN notebook structure.\r\n\r\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/927751e39c72dbe8ccae8c2ae1e99d606943808b"
+        },
+        {
+          "sha": "b7bb17c9529bafa614826717408832ddbc42a602",
+          "author_date": "2020-07-13T16:25:29Z",
+          "message": "Fix/r2_score documentation (#140)\n\n* fix(examples): fixed usage of r2_score in TCN examples\r\n\r\n* feature(metrics): improved docstring of r2_score\r\n\r\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/b7bb17c9529bafa614826717408832ddbc42a602"
+        },
+        {
+          "sha": "567f570b27f42376e660fc6eebb305fff822d7d2",
+          "author_date": "2020-07-14T07:47:46Z",
+          "message": "feature/coverage (#141)\n\n* add coverage.sh\r\n\r\n* fix permission on coverage.sh\r\n\r\n* improve coverage sh script\r\n\r\n* add coverage.xml to .igtignore\r\n\r\n* improve doc on coverage.sh\r\n\r\n* add doc for ./coverage.sh in contributing guide",
+          "html_url": "https://github.com/unit8co/darts/commit/567f570b27f42376e660fc6eebb305fff822d7d2"
+        },
+        {
+          "sha": "ecb376bb6d90781610f27dd451f607a5fd133450",
+          "author_date": "2020-07-15T12:37:37Z",
+          "message": "Fix/requirements (#148)\n\n* Fix/add dependecies\r\n\r\n* remove requirements-docker",
+          "html_url": "https://github.com/unit8co/darts/commit/ecb376bb6d90781610f27dd451f607a5fd133450"
+        },
+        {
+          "sha": "88bbdaf5f6788c9fcfd2657f613e07281b317498",
+          "author_date": "2020-07-15T13:02:21Z",
+          "message": "Fix/deprecation warnings (#147)\n\n* Fix tqdm notebook deprecation warning\r\n\r\n* Fix Storage deprecation warning (torch.save/load)",
+          "html_url": "https://github.com/unit8co/darts/commit/88bbdaf5f6788c9fcfd2657f613e07281b317498"
+        },
+        {
+          "sha": "1d1265fd66a6b504093f4b7c6da3322d142d64e5",
+          "author_date": "2020-07-16T12:02:38Z",
+          "message": "Fix/metrics (#129)\n\n* fix(metrics/mase): fix MASE. The scale use insample data instead of outsample one\r\n\r\n* docs(metrics/mase): Add definition of insample in docs. Add check for insample\r\n\r\n* test(metrics/mase): Modify mase test and test insample date\r\n\r\n* fix(metrics/mase): Change seasonality test on correct series\r\n\r\n* style(metrics/smape): Fix lint issues\r\n\r\n* docs(metrics/smape): correct docs for smape and add raise for mase\r\n\r\n* test(metrics/smape): Add tests for the new smape metrics\r\n\r\n* docs(MASE): better explanation of insample\r\n\r\n* docs(sMAPE): correct the raises explanation\r\n\r\n* docs(mase): more precise description for insample series",
+          "html_url": "https://github.com/unit8co/darts/commit/1d1265fd66a6b504093f4b7c6da3322d142d64e5"
+        },
+        {
+          "sha": "0c7298dfeb052ef5993c4a9bd97cce047e4b2625",
+          "author_date": "2020-07-20T07:00:26Z",
+          "message": "clean check_seasonality function (#152)\n\n* clean check_seasonality function\r\n\r\n* Fix comment",
+          "html_url": "https://github.com/unit8co/darts/commit/0c7298dfeb052ef5993c4a9bd97cce047e4b2625"
+        },
+        {
+          "sha": "55e4e42f1e3b1f1894350a72e3b9bdcb830cb4a6",
+          "author_date": "2020-07-20T07:24:41Z",
+          "message": "Feature/four theta (#123)\n\n* feat(4Theta): naive implementation of 4Theta model\r\n\r\n* fix(theta): avoid NaN values in theta, and unnecessary season test\r\n\r\n* feat(gridsearch): add possibility to compare with model.fitted_values\r\n\r\n* feat(4theta): add a method to auto select best model\r\n\r\n* refactor(4Theta): Specify univariate model\r\n\r\n* style(4Theta): Fix linter\r\n\r\n* style(4Theta): fix docstring\r\n\r\n* style(4Theta): Fix docstring\r\n\r\n* style(4Theta): Change link\r\n\r\n* style(4Theta): Correct docstring\r\n\r\n* style(4theta): correct ticks in docstring\r\n\r\n* refactor(4Theta): change different modes verification and add Enum\r\n\r\n* refactor(theta): replace all string modes by Enum\r\n\r\n* test(backtesting): Add a test to verify if fitted_values exist\r\n\r\n* Fix(Theta): Correct all Enums\r\n\r\n* fix(Theta): compare with enum members value instead. Correct some minor bugs\r\n\r\n* fix(4theta): move the creation of enums in init file\r\n\r\n* test(4theta): Add 4Theta to autoregressive test. Move Enums to top init file\r\n\r\n* test(4theta): Add 4Theta specific test\r\n\r\n* style(backtesting): fix lint\r\n\r\n* test(4theta): Add another exception to test\r\n\r\n* ref(4Theta): mode.fitted_values is now a TimeSeries to be consistent\r\n\r\n* style(Theta): rename mode to season_mode to be consistent w/ FourTheta\r\n\r\n* docs(thetas): correct errors in the different docs\r\n\r\n* refactor(4Theta): Correct\r\n\r\n  * Add normalization choice\r\n  * Add comment to be clearer\r\n  * Correct the docs\r\n  * clean the code and add a check on mean=0\r\n\r\n* refactor(backtesting): add a 'use_fitted_values' parameter\r\n\r\n* fix(4theta): correct select_best_model\r\n\r\n* test(4Theta): add a test for zero mean and correct others\r\n\r\n* style(backtesting): linter formatting\r\n\r\n* refactor(4Theta): change Enums names, correct theta and backtesting docs\r\n\r\n* refactor(4theta): move creation of fitted_values timeseries to backtesting\r\n\r\n* refactor(statistics): include Enums in extract and remove functions\r\n\r\n* refactor(4Theta): check earlier if univariate\r\n\r\n* test(4Theta): correct backtesting and test best_model\r\n\r\n* test(4Theta): add new modes in test models\r\n\r\n* docs(4theta): Add a disclaimer for 4theta performance\r\n\r\n* refactor(Theta): change theta to have the same behavior as FourTheta\r\n\r\n* examples(darts-intro): modify notebook to give the same results\r\n\r\n* style(4Theta): correct deprecation warning for logger.warn\r\n\r\n* style(4theta): move comment to backtesting\r\n\r\nCo-authored-by: Julien Herzen <julien.herzen@unit8.co>",
+          "html_url": "https://github.com/unit8co/darts/commit/55e4e42f1e3b1f1894350a72e3b9bdcb830cb4a6"
+        },
+        {
+          "sha": "b608faf521b249694377df202cc38b263e6e60d6",
+          "author_date": "2020-07-20T11:01:51Z",
+          "message": "Fix readme typo (#153)",
+          "html_url": "https://github.com/unit8co/darts/commit/b608faf521b249694377df202cc38b263e6e60d6"
+        },
+        {
+          "sha": "b8245e338be35a540b9fa027797acbe39f9991a5",
+          "author_date": "2020-07-20T12:29:49Z",
+          "message": "#patch fixing badge in README",
+          "html_url": "https://github.com/unit8co/darts/commit/b8245e338be35a540b9fa027797acbe39f9991a5"
+        },
+        {
+          "sha": "de2ec651f38e74d79044a606c5adcdac7bf627a6",
+          "author_date": "2020-07-20T12:40:56Z",
+          "message": "Release 0.2.3",
+          "html_url": "https://github.com/unit8co/darts/commit/de2ec651f38e74d79044a606c5adcdac7bf627a6"
+        },
+        {
+          "sha": "644789d5db7630fd1fff587247e5dc17924a192b",
+          "author_date": "2020-07-22T11:50:41Z",
+          "message": "Update CODEOWNERS",
+          "html_url": "https://github.com/unit8co/darts/commit/644789d5db7630fd1fff587247e5dc17924a192b"
+        },
+        {
+          "sha": "117713fb435552333f27c2366fbb746f1d1589bc",
+          "author_date": "2020-07-23T20:02:59Z",
+          "message": "Implement map method for TimeSeries (#163)\n\n* Implement map method for TimeSeries\r\n\r\nAn implementation for map is added. It uses pandas' applymap method.\r\nA jupyter notebook to show the tests conducted.\r\n\r\nResolves: #121\r\n\r\n* Remove test_map jupyter notebook\r\n\r\n* Add unit tests for and check within map method\r\n\r\nUnit tests test_map.py added.\r\nIncluded a small check, that the indices are in a valid range, in map method in TimeSeries class.\r\n\r\n* Make minor adjustments to map method\r\n\r\nFollowing hrzn's advice, various minor adjustments were made:\r\n* Correct various spacing/wording inconsistencies\r\n* Move contents of test_map.py into test_timeseries.py\r\n* Added sanity test case to tests for map\r\n* Changed type hints to np.number\r\n* Removed an unncessary call to self.pd_dataframe()\r\n\r\n* Replace self.pd_dataframe with self._pd in map method\r\n\r\n* Add ticks to map method docstring",
+          "html_url": "https://github.com/unit8co/darts/commit/117713fb435552333f27c2366fbb746f1d1589bc"
+        },
+        {
+          "sha": "d636ac0aa7a498d46360226db7db3d533be35bb0",
+          "author_date": "2020-07-27T06:17:58Z",
+          "message": "Fix/develop after feature map (#166)\n\n* fix(test_map): fix typo in test\r\n\r\n* style(timeseries): fix lint issues",
+          "html_url": "https://github.com/unit8co/darts/commit/d636ac0aa7a498d46360226db7db3d533be35bb0"
+        },
+        {
+          "sha": "db07c32eb56631199b8b27cf182bd670f6a4d1c1",
+          "author_date": "2020-07-27T06:36:16Z",
+          "message": "Fix Develop (#156)\n\nreducing the precision required in tests",
+          "html_url": "https://github.com/unit8co/darts/commit/db07c32eb56631199b8b27cf182bd670f6a4d1c1"
+        },
+        {
+          "sha": "64f34c289bfd468a6b813c40953a8745a1dc8b0b",
+          "author_date": "2020-07-27T08:07:21Z",
+          "message": "Generation/pass frequency (#157)\n\n* Pass freq parameter where applicable\r\n\r\n* Update test for different lenghts.\r\n\r\n* Review followup\r\n\r\nCo-authored-by: TheMP <marek.pasieka@gmail.com>",
+          "html_url": "https://github.com/unit8co/darts/commit/64f34c289bfd468a6b813c40953a8745a1dc8b0b"
+        },
+        {
+          "sha": "5e18ac0af51a7d498fcf658d4f47685097cbe457",
+          "author_date": "2020-07-27T14:03:26Z",
+          "message": "fix(workflow): all tests trigger on PR (#165)\n\nCo-authored-by: TheMP <marek.pasieka@gmail.com>",
+          "html_url": "https://github.com/unit8co/darts/commit/5e18ac0af51a7d498fcf658d4f47685097cbe457"
+        },
+        {
+          "sha": "217e5958b665f0983d05f550f81bdd254f8b670c",
+          "author_date": "2020-07-28T11:14:17Z",
+          "message": "Add publishing docker image by gradle in release workflow (#159)\n\n* Add publishing docker image by gradle\r\n\r\n* pass docker credentials as env variables\r\n\r\n* Clean and improve image publishing steps",
+          "html_url": "https://github.com/unit8co/darts/commit/217e5958b665f0983d05f550f81bdd254f8b670c"
+        },
+        {
+          "sha": "6bbc2afe379736ac81450f86b585fb07ddd9362a",
+          "author_date": "2020-07-31T10:40:20Z",
+          "message": "Fix multiplying dateoffset by float (#172)\n\n* Fix multiplying dateoffset by float\r\n\r\n* Miss cache",
+          "html_url": "https://github.com/unit8co/darts/commit/6bbc2afe379736ac81450f86b585fb07ddd9362a"
+        },
+        {
+          "sha": "e7c8044ab3c24c29bbeab835316e65c7333f8ca8",
+          "author_date": "2020-07-13T13:17:51Z",
+          "message": "hotfix/manual-frequency-override (#patch) (#139)\n\n* feature(TimeSeries): 'freq' parameter of constructor now leads to overriding the automatic frequency detection in case of missing dates when passed\r\n\r\n\r\n#patch\r\n\r\nCo-authored-by: pennfranc <flaessig#student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/e7c8044ab3c24c29bbeab835316e65c7333f8ca8"
+        },
+        {
+          "sha": "263b2a15e89c2cc58de14a6f2985fe9a6d1d84de",
+          "author_date": "2020-07-14T10:20:13Z",
+          "message": "Hotfix/preprocessing short timeseries (#patch) (#143)\n\n* fix(preprocessing, utils): now passing along frequency of series in ScalerWrapper and missing value functions\r\n\r\n* feature(tests): added ScalerWrapper test for short (n=1) TimeSeries instance\r\n\r\n#patch #hotfix\r\n\r\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/263b2a15e89c2cc58de14a6f2985fe9a6d1d84de"
+        },
+        {
+          "sha": "edf123b42a15bf5571a51b5ca7331d65baa86fb9",
+          "author_date": "2020-07-20T12:29:49Z",
+          "message": "merged from master",
+          "html_url": "https://github.com/unit8co/darts/commit/edf123b42a15bf5571a51b5ca7331d65baa86fb9"
+        },
+        {
+          "sha": "149def114c5179901ab2342351ec99c832186a73",
+          "author_date": "2020-07-31T13:39:12Z",
+          "message": "Merge remote-tracking branch 'origin/master' into feature/merge_master",
+          "html_url": "https://github.com/unit8co/darts/commit/149def114c5179901ab2342351ec99c832186a73"
+        },
+        {
+          "sha": "f6a31e9a4b8af07027e5efe987501f726a5a1041",
+          "author_date": "2020-07-31T14:55:13Z",
+          "message": "Set version to be fixed. (#173)\n\n* Set version to be fixed.\r\n\r\nRevert prefix 'clear' in worfklows\r\n\r\n* Delete restore-key\r\n\r\n* Update versions in requirements.\r\n\r\n* add python version to cache key\r\n\r\n* Rename key for doc",
+          "html_url": "https://github.com/unit8co/darts/commit/f6a31e9a4b8af07027e5efe987501f726a5a1041"
+        },
+        {
+          "sha": "bea1e8752e9e9f4c3e7fc1d62aa39812d2a9d0b9",
+          "author_date": "2020-07-31T15:01:05Z",
+          "message": "Merge branch 'develop' of github.com:unit8co/darts into feature/merge_master",
+          "html_url": "https://github.com/unit8co/darts/commit/bea1e8752e9e9f4c3e7fc1d62aa39812d2a9d0b9"
+        },
+        {
+          "sha": "0d9b394b3b1632832ee531f6213955869f2c62c9",
+          "author_date": "2020-08-03T07:46:00Z",
+          "message": "Features/indexing (#150)\n\n* add support for columns to the TimeSeries object\r\n\r\n* add colum support indexing to timeseries\r\n\r\n* fix wrong docstring\r\n\r\n* refactor indexing, fix docstring, columns as last arg\r\n\r\n* clean indexing method\r\n\r\n* refactor indexing only based on loc and iloc\r\n\r\n* Update darts/timeseries.py\r\n\r\nCo-authored-by: Julien Herzen <julien.herzen@unit8.co>\r\n\r\n* use underlying columns by default\r\n\r\n* fix column added on intern _df and use self.freq_str\r\n\r\n* fix parameter position in from_times_and_values\r\n\r\n* fix the tests to use str columns\r\n\r\n* fix docstring timeseries\r\n\r\n* remove None check on df that should exists\r\n\r\n* add comment for clarifying that _df is a copy\r\n\r\n* add separate function to process columns\r\n\r\n* adapt map with str col indexing\r\n\r\nCo-authored-by: Julien Herzen <julien.herzen@unit8.co>\r\nCo-authored-by: TheMP <marek.pasieka@gmail.com>",
+          "html_url": "https://github.com/unit8co/darts/commit/0d9b394b3b1632832ee531f6213955869f2c62c9"
+        },
+        {
+          "sha": "3471a3b4d68626859fa1c8e752c7f2266bc0be4b",
+          "author_date": "2020-08-03T13:53:58Z",
+          "message": "Merge branch 'develop' of github.com:unit8co/darts into feature/merge_master",
+          "html_url": "https://github.com/unit8co/darts/commit/3471a3b4d68626859fa1c8e752c7f2266bc0be4b"
+        },
+        {
+          "sha": "877d96f2ca10a122deeda2275d54c6f5d688bc38",
+          "author_date": "2020-08-04T14:10:06Z",
+          "message": "Examples/m4 competition (#138)\n\n* examples(M4): add scripts to run all experiments\r\n\r\n* examples(M4): add ensembling script\r\n\r\n* examples(M4): add example notebook\r\n\r\n* fix(theta): avoid NaN values appearing when alpha=0\r\n\r\n* fix(M4/preprocess): correct bug in download and creating time series.\r\n\r\n* refactor(M4): adapt code to multivariate\r\n\r\n* example(M4): better examples in notebook\r\n\r\n* fix(M4): add notebook in doc\r\n\r\n* style(M4): rename jupyter notebook\r\n\r\n* refactor(M4competition): apply FourTheta changes\r\n\r\n* refactor(M4examples): update notebook and faster gridsearch function\r\n\r\n* clean(m4competition): remove unnecessary comments\r\n\r\n* example(m4competition): add script reproducing rersults from 6th winning competitor\r\n\r\n* remove redundant FourTheta model\r\n\r\n* perf(ts_creation): create index only one time per freq and slice it",
+          "html_url": "https://github.com/unit8co/darts/commit/877d96f2ca10a122deeda2275d54c6f5d688bc38"
+        },
+        {
+          "sha": "4f2200cb5ad8a4f73b7c9f9a5d244a3f57c9061d",
+          "author_date": "2020-08-05T11:52:52Z",
+          "message": "Merge branch 'develop' into feature/merge_master",
+          "html_url": "https://github.com/unit8co/darts/commit/4f2200cb5ad8a4f73b7c9f9a5d244a3f57c9061d"
+        },
+        {
+          "sha": "31b9053bf05ab44799ed3bd2f9c679d4442e50bd",
+          "author_date": "2020-08-05T13:43:52Z",
+          "message": "Merge pull request #174 from unit8co/feature/merge_master\n\ncherry-picking hotfixes from master",
+          "html_url": "https://github.com/unit8co/darts/commit/31b9053bf05ab44799ed3bd2f9c679d4442e50bd"
+        },
+        {
+          "sha": "f0898d4106836c14e41e0d493e945ae0ea490497",
+          "author_date": "2020-07-22T22:11:03Z",
+          "message": "Fix: package type information\n\nFollow the steps outlined in PEP-0561 to package type information,\nallowing other type-checked Python code that imports `darts` to benefit\nfrom better static analysis. See the PEP:\nhttps://www.python.org/dev/peps/pep-0561/#packaging-type-information\n\n- Include a `py.typed` marker file in package root\n- Include `py.typed` in package_data",
+          "html_url": "https://github.com/unit8co/darts/commit/f0898d4106836c14e41e0d493e945ae0ea490497"
+        },
+        {
+          "sha": "2977f4f666e255b617ad980eab81d6ff6aad9db3",
+          "author_date": "2020-09-17T10:33:51Z",
+          "message": "Refactor/fit args (#161)\n\n* add support for columns to the TimeSeries object\r\n\r\n* add colum support indexing to timeseries\r\n\r\n* fix wrong docstring\r\n\r\n* refactor indexing, fix docstring, columns as last arg\r\n\r\n* clean indexing method\r\n\r\n* refactor indexing only based on loc and iloc\r\n\r\n* Update darts/timeseries.py\r\n\r\nCo-authored-by: Julien Herzen <julien.herzen@unit8.co>\r\n\r\n* use underlying columns by default\r\n\r\n* fix column added on intern _df and use self.freq_str\r\n\r\n* fix parameter position in from_times_and_values\r\n\r\n* fix the tests to use str columns\r\n\r\n* fix docstring timeseries\r\n\r\n* remove None check on df that should exists\r\n\r\n* add comment for clarifying that _df is a copy\r\n\r\n* add separate function to process columns\r\n\r\n* adapt map with str col indexing\r\n\r\n* univariate fcast model only support univariate ts\r\n\r\n* MultivariateFcasModel fits on the whole training ts\r\n\r\n* refactor torch forcasting model to use covariate_series\r\n\r\n* fix unused imports\r\n\r\n* allow to specify only covaraite_series\r\n\r\n* enforce covariate_series and target_series inputs for multivariate model\r\n\r\n* adapt torch datasets to use covariate / target series\r\n\r\n* adapt validation series provided as a Tuple\r\n\r\n* fix typo\r\n\r\n* adapt create_dataset on tcn model\r\n\r\n* remove component index from fit function\r\n\r\n* adapt tests to new syntax\r\n\r\n* refacotr metaclasses\r\n\r\n* abstract a new method make fitable series\r\n\r\n* adapt torchforcastingmodel to parent class changes\r\n\r\n* keep covariate/target seires for Multivariate models only\r\n\r\n* fix typos with new implementation\r\n\r\n* move series length check in forcasting model\r\n\r\n* rename covariate into training series\r\n\r\n* adapt old backtesting to support the new fit args syntax\r\n\r\n* Refactor/backtesting (#125)\r\n\r\n* add .DS_Store to .gitignore\r\n\r\n* add proposal.md\r\n\r\n* add draft version of backtest forcasting\r\n\r\n* add backtest to model (simple refactoring)\r\n\r\n* extract backtest sanity checks in a method\r\n\r\n* extract building fit_kwargs and predict_kwargs in a method\r\n\r\n* minor fix import comment and assertion\r\n\r\n* refactor all backtest factoring tests\r\n\r\n* update progress on proposal.md\r\n\r\n* add coverage.sh\r\n\r\n* fix permission on coverage.sh\r\n\r\n* improve coverage sh script\r\n\r\n* add coverage.xml to .igtignore\r\n\r\n* improve doc on coverage.sh\r\n\r\n* fix doc\r\n\r\n* fix doc for real\r\n\r\n* univariate fcast model only support univariate ts\r\n\r\n* MultivariateFcasModel fits on the whole training ts\r\n\r\n* refactor torch forcasting model to use covariate_series\r\n\r\n* fix unused imports\r\n\r\n* allow to specify only covaraite_series\r\n\r\n* enforce covariate_series and target_series inputs for multivariate model\r\n\r\n* adapt torch datasets to use covariate / target series\r\n\r\n* adapt validation series provided as a Tuple\r\n\r\n* fix typo\r\n\r\n* adapt create_dataset on tcn model\r\n\r\n* remove component index from fit function\r\n\r\n* adapt tests to new syntax\r\n\r\n* add proposal.md\r\n\r\n* add draft version of backtest forcasting\r\n\r\n* add backtest to model (simple refactoring)\r\n\r\n* extract backtest sanity checks in a method\r\n\r\n* extract building fit_kwargs and predict_kwargs in a method\r\n\r\n* minor fix import comment and assertion\r\n\r\n* refactor all backtest factoring tests\r\n\r\n* update progress on proposal.md\r\n\r\n* fix doc\r\n\r\n* fix doc for real\r\n\r\n* fix typos and remove diagram in backtest doc\r\n\r\n* WIP add residuals\r\n\r\n* add decorator for sanity checks\r\n\r\n* clean forecasting_model\r\n\r\n* add start multitype parameter support\r\n\r\n* fix check on undefined param in sanity checks\r\n\r\n* add comments\r\n\r\n* fix(backtesting, tests): fixed bugs so that all forecasting backtest tests pass, corrected some typos\r\n\r\n* feature(backtesting): changed handling of residuals (re-introduced own function instead of being by-product of backtest)\r\n\r\n* fix(test_forecasting_model): deleted old file that was renamed due to type\r\n\r\n* feat(backtesting): moved gridsearch to ForecastingModel, removed functions from backtesting module that have been moved to ForecastingModel class, adapted tests\r\n\r\n* feat(backtesting): adapted docstring of gridsearch function\r\n\r\n* fix(Theta): adapted FourTheta model to use new gridsearch function\r\n\r\n* fix(forecasting_model, torch_forecasting_model): fixed docstrings\r\n\r\n* feat(backtesting): moved backtest_regression to regression model class\r\n\r\n* fix(forecasting_model): renamed covariate_series to training_series\r\n\r\n* fix(forecasting_model): fixed residuals function\r\n\r\n* fix(style): linter\r\n\r\n* feat(backtesting): renamed backtest_gridsearch to gridsearch\r\n\r\n* fix(tests): fixed residuals test case\r\n\r\n* feat(backtesting): moved residuals plotting function to statistics module\r\n\r\n* feat(backtesting): removed backtesting module\r\n\r\n* fix(style): linter\r\n\r\n* fix(style): linter\r\n\r\n* fix(torch_forecasting_model): fixed check in predict function\r\n\r\n* fix(forecasting_model): fixed backtest sanity check\r\n\r\n* fix(torch_forecasting_model): removed unnecessary  (and bug-causing) sanity check method\r\n\r\n* feat(examples): refactored notebooks to support new function signatures\r\n\r\n* fix(style): linter\r\n\r\n* updated PROPOSAL.md\r\n\r\n* feat(forecasting_model): improved documentation\r\n\r\n* fix(torch_forecasting_model): removed redundant function\r\n\r\n* style(torch_forecasting_model): linter\r\n\r\n* fix(torch_forecasting_model): fixed docstring typo\r\n\r\n* fix(torch_forecasting_model, tests): clean up old comments\r\n\r\n* fix(statistics): improved docstrings\r\n\r\n* fix(forecasting_model, regression_model): improved variable names, fixed documentation\r\n\r\n* fix(tests): fixed old variable name in backtesting tests\r\n\r\n* removed PROPOSAL.md\r\n\r\n* feat(regression_model): added stride functionality to backtest method\r\n\r\n* fix(forecasting_model, regression_model): improved documentation\r\n\r\n* fix(forecasting_model): improved documentation\r\n\r\n* fix(forecasting_model): improved start parameter documentation\r\n\r\n* fix(forecasting_model, regression_model): cleaned up code, improved docstrings, added missing checks\r\n\r\n* feat(forecasting_model): improved backtest docstring\r\n\r\n* fix(forecasting_model, tests): improved backtest sanity checks, added corresponding test cases\r\n\r\n* feat(backtesting): replaced 'num_predictions' parameter by 'start' parameter in 'ForecastingModel.gridsearch'\r\n\r\n* fix(examples): updated notebooks\r\n\r\nCo-authored-by: Guillaume Raille <guillaume.raille@unit8.co>\r\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>\r\n\r\nCo-authored-by: Julien Herzen <julien.herzen@unit8.co>\r\nCo-authored-by: TheMP <marek.pasieka@gmail.com>\r\nCo-authored-by: Francesco Lässig <42946363+pennfranc@users.noreply.github.com>\r\nCo-authored-by: Guillaume <66320848+guillaumeraille@users.noreply.github.com>\r\nCo-authored-by: pennfranc <flaessig@student.ethz.ch>",
+          "html_url": "https://github.com/unit8co/darts/commit/2977f4f666e255b617ad980eab81d6ff6aad9db3"
+        },
+        {
+          "sha": "32d5f830c044ab9632765275f4d51edb64d62002",
+          "author_date": "2020-09-23T13:00:09Z",
+          "message": "build.gradle (#190)\n\nprevent linter from failing CI build",
+          "html_url": "https://github.com/unit8co/darts/commit/32d5f830c044ab9632765275f4d51edb64d62002"
+        },
+        {
+          "sha": "59bc50d62da9b92e2f46ca176112c3ed4056718b",
+          "author_date": "2020-09-28T08:39:42Z",
+          "message": "Refactor/backtest checks (#189)\n\n* fix(backtest): Fixed issue with sanity checks when using forecast_horizon default value\r\n\r\n* fix(style): linter\r\n\r\n* refactor(backtest): Improved RegressionModel.backtest() start parameter type and factored out checks shared by forecasting and regression models\r\n\r\n* fix(backtest): Fixed error with 0 or small (float) value of backtest() start param\r\n\r\nAlso fixed style (linter), added a couple unit tests, and set a smarter default value for start in StandardRegressionModel\r\n\r\n* fix(backtest): Fixed error with 0 or small (float) value of backtest() start param\r\n\r\nAlso fixed style (linter), added a couple unit tests, and set a smarter default value for start in StandardRegressionModel\r\n\r\n* fix(style): lint\r\n\r\n* fix(style): lint\r\n\r\n* fix(backtest): Fixed issue with kwargs being passed as positional arguments\r\n\r\n* fix(style): better comments\r\n\r\n* fix(style): better doc and variable names\r\n\r\n* fix: implemented suggestions from review\r\n\r\nCo-authored-by: Léo Tafti Unit8 <leotaftiu8@Leos-MacBook-Pro.local>",
+          "html_url": "https://github.com/unit8co/darts/commit/59bc50d62da9b92e2f46ca176112c3ed4056718b"
+        },
+        {
+          "sha": "3053eac981c5a8e764e7bf036106d7d7d2c1b8d2",
+          "author_date": "2020-09-28T09:10:42Z",
+          "message": "Refactor/backtesting (#184)\n\n* fix(examples): Updated outdated calls to backtest functions\r\n\r\n* fix(examples): Removed import\r\n\r\nCo-authored-by: Léo Tafti Unit8 <leotaftiu8@Leos-MacBook-Pro.local>",
+          "html_url": "https://github.com/unit8co/darts/commit/3053eac981c5a8e764e7bf036106d7d7d2c1b8d2"
+        },
+        {
+          "sha": "2fc2e28ebbbd0b61c9cdffd6c52cee0a9be357a4",
+          "author_date": "2020-09-28T14:50:58Z",
+          "message": "Feature/pretty plots (#191)\n\n* feat(plots): Example of a nicer plot in one the darts-intro notebook\r\n\r\n* feat(plots): Added u8plots.mplstyle stylesheet. Need to fix relative URL problem\r\n\r\n* feat(plots, examples): Updated darts-intro notebook\r\n\r\n* fix(style): lint\r\n\r\n* fix(examples): Switched back kernel (hopefully fixes issue)\r\n\r\n* fix(mplstyle error): Removed .mplstyle file and replaced with dynamic styling. Works from everywhere. Re-ran notebooks\r\n\r\nCo-authored-by: Léo Tafti Unit8 <leotaftiu8@Leos-MacBook-Pro.local>",
+          "html_url": "https://github.com/unit8co/darts/commit/2fc2e28ebbbd0b61c9cdffd6c52cee0a9be357a4"
+        },
+        {
+          "sha": "d9395b5014bf59b98d91fc05cd88271cdcd07278",
+          "author_date": "2020-09-25T16:53:04Z",
+          "message": "Split dependencies",
+          "html_url": "https://github.com/unit8co/darts/commit/d9395b5014bf59b98d91fc05cd88271cdcd07278"
+        },
+        {
+          "sha": "5be7d1962a35990f365c5823c8e66b9c6931c74a",
+          "author_date": "2020-09-30T15:12:18Z",
+          "message": "split arima and auto arima",
+          "html_url": "https://github.com/unit8co/darts/commit/5be7d1962a35990f365c5823c8e66b9c6931c74a"
+        },
+        {
+          "sha": "6132874672bf1fd4d77e4c7fda98e7b5911db054",
+          "author_date": "2020-09-30T15:18:36Z",
+          "message": "Warnings upon import errors",
+          "html_url": "https://github.com/unit8co/darts/commit/6132874672bf1fd4d77e4c7fda98e7b5911db054"
+        },
+        {
+          "sha": "b91003c748ed8e1dd34ce41e88024e4f2ade8018",
+          "author_date": "2020-09-30T15:22:18Z",
+          "message": "rename main.txt into core.txt",
+          "html_url": "https://github.com/unit8co/darts/commit/b91003c748ed8e1dd34ce41e88024e4f2ade8018"
+        },
+        {
+          "sha": "5f87225a1466f90ac10afadbc0040898a171c50d",
+          "author_date": "2020-09-30T15:27:47Z",
+          "message": "update reference to core.txt",
+          "html_url": "https://github.com/unit8co/darts/commit/5f87225a1466f90ac10afadbc0040898a171c50d"
+        },
+        {
+          "sha": "ed1f944f43b97ebceb03bb40e6180d72131aa783",
+          "author_date": "2020-09-30T15:31:47Z",
+          "message": "add sklearn to core deps",
+          "html_url": "https://github.com/unit8co/darts/commit/ed1f944f43b97ebceb03bb40e6180d72131aa783"
+        },
+        {
+          "sha": "74d48b519afd6c8dfc3e38fe0c961c152cd1f8e4",
+          "author_date": "2020-10-01T07:19:51Z",
+          "message": "Correct typo in comment",
+          "html_url": "https://github.com/unit8co/darts/commit/74d48b519afd6c8dfc3e38fe0c961c152cd1f8e4"
+        },
+        {
+          "sha": "26024fd05fab05c31b6b6a85a2a68fffd82506a8",
+          "author_date": "2020-10-01T10:52:34Z",
+          "message": "Re-organized the warnings",
+          "html_url": "https://github.com/unit8co/darts/commit/26024fd05fab05c31b6b6a85a2a68fffd82506a8"
+        },
+        {
+          "sha": "bbfb23f61b08d00444fc088df810f8c05c373d38",
+          "author_date": "2020-10-01T15:22:03Z",
+          "message": "correct a typo",
+          "html_url": "https://github.com/unit8co/darts/commit/bbfb23f61b08d00444fc088df810f8c05c373d38"
+        },
+        {
+          "sha": "f6bf17808e6bed88fdbc124a7711c39c8d2e927d",
+          "author_date": "2020-10-01T15:53:24Z",
+          "message": "renamed and adapted forecasting models tests",
+          "html_url": "https://github.com/unit8co/darts/commit/f6bf17808e6bed88fdbc124a7711c39c8d2e927d"
+        },
+        {
+          "sha": "9f85bdef25b5c3c26ef5d1ceff0f225c0f6fbb5c",
+          "author_date": "2020-10-01T15:54:03Z",
+          "message": "adapted unit tests based on optional dependencies",
+          "html_url": "https://github.com/unit8co/darts/commit/9f85bdef25b5c3c26ef5d1ceff0f225c0f6fbb5c"
+        },
+        {
+          "sha": "c0400a793e033d25a000dc9d01f3bb2723e5bee3",
+          "author_date": "2020-10-01T19:31:51Z",
+          "message": "correct imports checks",
+          "html_url": "https://github.com/unit8co/darts/commit/c0400a793e033d25a000dc9d01f3bb2723e5bee3"
+        },
+        {
+          "sha": "97ba6ee4b5ed5d06af192107b855df1d6284450e",
+          "author_date": "2020-10-01T19:40:15Z",
+          "message": "update README",
+          "html_url": "https://github.com/unit8co/darts/commit/97ba6ee4b5ed5d06af192107b855df1d6284450e"
+        },
+        {
+          "sha": "29e02022ca6b4c0a02d80e978582b800c764bc81",
+          "author_date": "2020-10-01T19:42:33Z",
+          "message": "update README",
+          "html_url": "https://github.com/unit8co/darts/commit/29e02022ca6b4c0a02d80e978582b800c764bc81"
+        },
+        {
+          "sha": "aedefc6db14fef14b4f687dfd2d7d65c68f9b29e",
+          "author_date": "2020-10-01T20:01:53Z",
+          "message": "do not remove .darts when torch is not avail",
+          "html_url": "https://github.com/unit8co/darts/commit/aedefc6db14fef14b4f687dfd2d7d65c68f9b29e"
+        },
+        {
+          "sha": "6d9ceeca0a0259eeb6b5902eb0bf3465adc001ef",
+          "author_date": "2020-10-01T20:05:45Z",
+          "message": "add optional deps pip commands",
+          "html_url": "https://github.com/unit8co/darts/commit/6d9ceeca0a0259eeb6b5902eb0bf3465adc001ef"
+        },
+        {
+          "sha": "ef7d164c0981b66b1b9c31ad7f3fac40731d625e",
+          "author_date": "2020-10-02T13:19:45Z",
+          "message": "Use matrix.",
+          "html_url": "https://github.com/unit8co/darts/commit/ef7d164c0981b66b1b9c31ad7f3fac40731d625e"
+        },
+        {
+          "sha": "64a8ce3a03f76630a13f5f2232381aed6e197f88",
+          "author_date": "2020-10-02T13:35:12Z",
+          "message": "Fix.",
+          "html_url": "https://github.com/unit8co/darts/commit/64a8ce3a03f76630a13f5f2232381aed6e197f88"
+        },
+        {
+          "sha": "54aa8a697a1ff9c0270ef28c134fb35c5bf53dd5",
+          "author_date": "2020-10-02T13:40:54Z",
+          "message": "Examples need all.",
+          "html_url": "https://github.com/unit8co/darts/commit/54aa8a697a1ff9c0270ef28c134fb35c5bf53dd5"
+        },
+        {
+          "sha": "19fb03699ebed60ffd9fa136a636028a781a1ce0",
+          "author_date": "2020-10-01T15:27:44Z",
+          "message": "fix(readme): Added a line to the Contribute section to formalize branch naming conventions",
+          "html_url": "https://github.com/unit8co/darts/commit/19fb03699ebed60ffd9fa136a636028a781a1ce0"
+        },
+        {
+          "sha": "663b457b3be0833539c1d5b620e2e2c3da685b39",
+          "author_date": "2020-10-01T15:30:33Z",
+          "message": "fix(readme): Made sentence clearer",
+          "html_url": "https://github.com/unit8co/darts/commit/663b457b3be0833539c1d5b620e2e2c3da685b39"
+        },
+        {
+          "sha": "ead9e4e1aade6b79c1137e5c71fd6a97d65c1f75",
+          "author_date": "2020-10-02T08:10:12Z",
+          "message": "fix(readme): Updated example plot in README with new style",
+          "html_url": "https://github.com/unit8co/darts/commit/ead9e4e1aade6b79c1137e5c71fd6a97d65c1f75"
+        },
+        {
+          "sha": "58f60ee2b7affd4cfb6f31598ffb45861439bedc",
+          "author_date": "2020-10-02T08:21:24Z",
+          "message": "fix(readme): Small tweak in readme example plot",
+          "html_url": "https://github.com/unit8co/darts/commit/58f60ee2b7affd4cfb6f31598ffb45861439bedc"
+        },
+        {
+          "sha": "ea8c73e3875bfc2231b0ffa362776f95fc22d3d5",
+          "author_date": "2020-10-05T07:19:13Z",
+          "message": "Test all for merge and release workflows",
+          "html_url": "https://github.com/unit8co/darts/commit/ea8c73e3875bfc2231b0ffa362776f95fc22d3d5"
+        },
+        {
+          "sha": "d0410eea9e216418b673401582b20bb7b31dc398",
+          "author_date": "2020-10-05T08:42:39Z",
+          "message": "fix(workflows): Proposition to make workflows faster (#203)\n\nCo-authored-by: Julien Herzen <julien.herzen@unit8.co>",
+          "html_url": "https://github.com/unit8co/darts/commit/d0410eea9e216418b673401582b20bb7b31dc398"
+        },
+        {
+          "sha": "6c6348951e4f9c2989140c4e836207d38e9b0eef",
+          "author_date": "2020-10-05T08:54:45Z",
+          "message": "Feature/changelog (#193)\n\n* feat(changelog): Generated a CHANGELOG.md using github_changelog_generator and edited for upcoming version to be more insightful\r\n\r\n* fix(changelog): GitHub doesn't display style in .md files. Replaced with red unicode symbol\r\n\r\n* fix(readme): Added a line to the Contribute section to encourage keeping the changelog up-to-date\r\n\r\n* fix(changelog, readme): Implemented code review suggestions\r\n\r\n* fix(changelog): Added 'Full Changelog' link under the 0.3.0 version section\r\n\r\n* fix(changelog): Cleaned up older versions, ready for release\r\n\r\n* fix(changelog, readme): Review suggestions\r\n\r\n* fix(changelog): Removed comment\r\n\r\n* fix(changelog): Small addition\r\n\r\n* fix(changelog): Date update\r\n\r\n* fix(changelog): Date update",
+          "html_url": "https://github.com/unit8co/darts/commit/6c6348951e4f9c2989140c4e836207d38e9b0eef"
+        },
+        {
+          "sha": "91b9bd988d73cac93ae1e3d51cfbe684c2050d9e",
+          "author_date": "2020-10-05T09:44:06Z",
+          "message": "Merge pull request #204 from unit8co/develop\n\n#minor",
+          "html_url": "https://github.com/unit8co/darts/commit/91b9bd988d73cac93ae1e3d51cfbe684c2050d9e"
+        },
+        {
+          "sha": "81c1f9971e74da5f844359bf30ba52eab391fb6b",
+          "author_date": "2020-10-06T10:35:22Z",
+          "message": "updating readme for pip",
+          "html_url": "https://github.com/unit8co/darts/commit/81c1f9971e74da5f844359bf30ba52eab391fb6b"
+        },
+        {
+          "sha": "234d710f8f4f5457b3893c4eae64d08a278b47e6",
+          "author_date": "2020-10-06T11:30:57Z",
+          "message": "Release 0.3.0",
+          "html_url": "https://github.com/unit8co/darts/commit/234d710f8f4f5457b3893c4eae64d08a278b47e6"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.4.0",

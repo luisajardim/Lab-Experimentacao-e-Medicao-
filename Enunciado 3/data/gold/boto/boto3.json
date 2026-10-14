@@ -10007,8 +10007,51 @@
     {
       "release": "0.0.3",
       "previous_release": "0.0.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "65c797349e404a1a5f398463eca084caf29ce525",
+          "author_date": "2014-11-21T22:52:44Z",
+          "message": "Upgrade to newer Travis-CI build hosts.\n\nThis is a port of https://github.com/aws/aws-cli/pull/1016 to Boto 3.",
+          "html_url": "https://github.com/boto/boto3/commit/65c797349e404a1a5f398463eca084caf29ce525"
+        },
+        {
+          "sha": "45218bdbf9361148a244cb94ddfb66afa9a8a7e7",
+          "author_date": "2014-11-24T23:23:45Z",
+          "message": "Update requirements to head of develop branches",
+          "html_url": "https://github.com/boto/boto3/commit/45218bdbf9361148a244cb94ddfb66afa9a8a7e7"
+        },
+        {
+          "sha": "579137b4799e34c99df81338af1bc2f647c16eef",
+          "author_date": "2014-11-24T23:36:20Z",
+          "message": "Merge pull request #29 from kyleknap/update-req\n\nUpdate requirements to head of develop branches",
+          "html_url": "https://github.com/boto/boto3/commit/579137b4799e34c99df81338af1bc2f647c16eef"
+        },
+        {
+          "sha": "5bf1a1993fe61dafbf3444d00eeb6544c2eae80c",
+          "author_date": "2014-11-25T00:37:22Z",
+          "message": "Blacklist IAM integration test.\n\nThis change fixes an issue where IAM roles could not be used to run all of\nthe integration tests because of assumptions about the type of account\nrunning the tests.",
+          "html_url": "https://github.com/boto/boto3/commit/5bf1a1993fe61dafbf3444d00eeb6544c2eae80c"
+        },
+        {
+          "sha": "a593fd788ff93ac2ce54073adc3e572ee11d2547",
+          "author_date": "2014-11-26T20:06:04Z",
+          "message": "Update Botocore dependency",
+          "html_url": "https://github.com/boto/boto3/commit/a593fd788ff93ac2ce54073adc3e572ee11d2547"
+        },
+        {
+          "sha": "22f0420f7fcc44495117df4a0fca74d55f1ff96d",
+          "author_date": "2014-11-26T20:07:29Z",
+          "message": "Bump version to 0.0.3",
+          "html_url": "https://github.com/boto/boto3/commit/22f0420f7fcc44495117df4a0fca74d55f1ff96d"
+        },
+        {
+          "sha": "2096b654e776ee4fbf8e8eac547aa0c9666c0814",
+          "author_date": "2014-11-26T20:07:45Z",
+          "message": "Merge branch 'release-0.0.3'",
+          "html_url": "https://github.com/boto/boto3/commit/2096b654e776ee4fbf8e8eac547aa0c9666c0814"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.0.4",
@@ -10019,14 +10062,154 @@
     {
       "release": "0.0.5",
       "previous_release": "0.0.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "02ec815b58d1fe10bdb2bdae19f1f3398422a7d2",
+          "author_date": "2014-12-03T21:30:23Z",
+          "message": "Add S3 and SQS integration tests.\n\nThis adds integration tests that exercise previously untested functionality,\nspecifically this adds the following to the existing describe calls:\n\n* Create and delete remote resources\n* Call actions to put and get data from remote resources\n* Handle low-level responses from a service\n* Exercise low-level waiters (to be replaced with high-level waiters)\n* Access data attributes of pre-loaded resources with no `load` method\n\nThe last item would have prevented #33. This PR is related to #34,\nwhich fixed the underlying issue that this test would have caught.\n\nThe full integration test suite now takes around 20-30 seconds on\nmy machine.",
+          "html_url": "https://github.com/boto/boto3/commit/02ec815b58d1fe10bdb2bdae19f1f3398422a7d2"
+        },
+        {
+          "sha": "7a215153f345f0317e0e0a13b84d563ee4735899",
+          "author_date": "2014-12-04T01:06:22Z",
+          "message": "Update param documentation to be more explicit.\n\nThis pull request modifies the guide and generated reference documentation\nto make it more obvious that operation parameters need to be passed as\nkeyword arguments rather than positional arguments. It does the following:\n\n* Update the guide to explicitly call out that keyword arguments\n  must be used instead of positional arguments.\n* Update reference documentation for operations to:\n\n  * List all arguments as keyword arguments (i.e. `MyArg=None`)\n  * Show an example with all required arguments\n  * Specify whether a parameter is optional or required after its type",
+          "html_url": "https://github.com/boto/boto3/commit/7a215153f345f0317e0e0a13b84d563ee4735899"
+        },
+        {
+          "sha": "c83be3d76f9c57eb65478e6ce48fbe33d02fa566",
+          "author_date": "2014-12-05T19:13:23Z",
+          "message": "Merge pull request #37 from boto/docs-kwargs\n\nUpdate param documentation to be more explicit.",
+          "html_url": "https://github.com/boto/boto3/commit/c83be3d76f9c57eb65478e6ce48fbe33d02fa566"
+        },
+        {
+          "sha": "17e81d942d64d4ab4ca5a536b100dd1aef04de99",
+          "author_date": "2014-12-05T19:31:14Z",
+          "message": "Default to using us-west-2 for integ tests",
+          "html_url": "https://github.com/boto/boto3/commit/17e81d942d64d4ab4ca5a536b100dd1aef04de99"
+        },
+        {
+          "sha": "83e8135b9550f64959492abbdad4a66f60677dc6",
+          "author_date": "2014-12-05T23:06:45Z",
+          "message": "Merge pull request #36 from boto/integ\n\nAdd S3 and SQS integration tests.",
+          "html_url": "https://github.com/boto/boto3/commit/83e8135b9550f64959492abbdad4a66f60677dc6"
+        },
+        {
+          "sha": "8ea77b9993ff21db5bb7a37f05094356f6fff970",
+          "author_date": "2014-12-05T23:24:06Z",
+          "message": "Fix failing integration test.\n\nThis fixes a problem where running the integration tests in parallel\nwould result in errors because the resource names were based on a\ntimestamp. Now, a new utility method is used which gives back a\nunique ID based on a name, a timestamp, and a random integer.",
+          "html_url": "https://github.com/boto/boto3/commit/8ea77b9993ff21db5bb7a37f05094356f6fff970"
+        },
+        {
+          "sha": "30463ab5ab93b2c906721b9b0b217d9a6e944d12",
+          "author_date": "2014-11-26T23:22:12Z",
+          "message": "Implement batch actions.\n\nThis change implements batch actions on collections:\n\n```python\ns3.Bucket('boto3').objects.delete()\n```\n\nIt does the following:\n\n* Create a `CollectionFactory` class to generate subclasses of\n  `CollectionManager` and `ResourceCollection`.\n* Update the `ResourceFactory` to use the new `CollectionFactory`.\n* Add a public `pages()` method to collections. This returns entire\n  pages of resource instances and it used by `__iter__` as well.\n* Add batch actions as methods via the new `CollectionFactory`.\n* Add a `BatchAction` subclass of `Action` which does the following:\n\n    1. Get a page of results from the collection's operation\n    2. Build parameters for the batch action operation\n    3. Call the batch action operation\n    4. Repeat until no more pages\n\n* Makes some previously public members private on `Action` as these\n  should never have been public.\n* Update documentation to include collection classes.\n* Add tests to cover the new functionality.",
+          "html_url": "https://github.com/boto/boto3/commit/30463ab5ab93b2c906721b9b0b217d9a6e944d12"
+        },
+        {
+          "sha": "75864e6d2eb1dca275dc6c042c02eca67d3c31a4",
+          "author_date": "2014-12-09T00:28:22Z",
+          "message": "Merge pull request #32 from boto/batch-actions\n\nImplement batch actions.",
+          "html_url": "https://github.com/boto/boto3/commit/75864e6d2eb1dca275dc6c042c02eca67d3c31a4"
+        },
+        {
+          "sha": "188c34160a84556957e59715b115ac8a16d70fbc",
+          "author_date": "2014-12-09T18:42:26Z",
+          "message": "Update Botocore, update changelog",
+          "html_url": "https://github.com/boto/boto3/commit/188c34160a84556957e59715b115ac8a16d70fbc"
+        },
+        {
+          "sha": "2190b6bf61b227c22163f8e65cc41c5161065f42",
+          "author_date": "2014-12-09T18:44:29Z",
+          "message": "Bump version",
+          "html_url": "https://github.com/boto/boto3/commit/2190b6bf61b227c22163f8e65cc41c5161065f42"
+        },
+        {
+          "sha": "0b139887fc501bd220702e27b0d1b04e8091cdb8",
+          "author_date": "2014-12-09T18:44:46Z",
+          "message": "Merge branch 'release-0.0.5'",
+          "html_url": "https://github.com/boto/boto3/commit/0b139887fc501bd220702e27b0d1b04e8091cdb8"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.0.6",
       "previous_release": "0.0.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9995761cdcdee53599578972dd8233ec97df6acb",
+          "author_date": "2014-12-11T21:43:35Z",
+          "message": "Remove the dependency on six module.\n\nSince Botocore is now used to load data for Boto 3 there is no more need\nin the existing codebase for the `six` module. This commit removes it and\nremoves the `boto3.compat` module. We can re-add it in the future if it\nis needed.",
+          "html_url": "https://github.com/boto/boto3/commit/9995761cdcdee53599578972dd8233ec97df6acb"
+        },
+        {
+          "sha": "8b10f29803703efc8227fcd4cc031c95f1076d55",
+          "author_date": "2014-12-12T18:50:14Z",
+          "message": "Merge pull request #42 from boto/remove-six\n\nRemove the dependency on six module.",
+          "html_url": "https://github.com/boto/boto3/commit/8b10f29803703efc8227fcd4cc031c95f1076d55"
+        },
+        {
+          "sha": "06e4107986bf687ff2d533d6728904e5601b1333",
+          "author_date": "2014-12-09T08:14:32Z",
+          "message": "Added waiter actions to resources\n\nFor each resource that has a resource waiter definition a ``wait_until_...``\nmethod was added to the resource. Documentation was updated as well to\ndocument both the resource waiter and client waiters.",
+          "html_url": "https://github.com/boto/boto3/commit/06e4107986bf687ff2d533d6728904e5601b1333"
+        },
+        {
+          "sha": "9ca815894bde15503f0009cb3e0fca3766a3448a",
+          "author_date": "2014-12-16T22:11:42Z",
+          "message": "Add a section for client waiters",
+          "html_url": "https://github.com/boto/boto3/commit/9ca815894bde15503f0009cb3e0fca3766a3448a"
+        },
+        {
+          "sha": "8124dde6e0d2285890a101d5e34c983807fdbefd",
+          "author_date": "2014-12-16T22:34:44Z",
+          "message": "Touched up the waiter code",
+          "html_url": "https://github.com/boto/boto3/commit/8124dde6e0d2285890a101d5e34c983807fdbefd"
+        },
+        {
+          "sha": "279d058513670fdacd26935e1f07753a47af0445",
+          "author_date": "2014-12-17T19:32:48Z",
+          "message": "Merge pull request #43 from kyleknap/waiters\n\nImplement Resource Waiter Actions",
+          "html_url": "https://github.com/boto/boto3/commit/279d058513670fdacd26935e1f07753a47af0445"
+        },
+        {
+          "sha": "8f8aa3792316b3bb0f6d9b8dcca7739c4e2a8358",
+          "author_date": "2014-12-17T23:08:02Z",
+          "message": "Added more docs about waiters\n\nAdded docs to both overview of clients and resources.",
+          "html_url": "https://github.com/boto/boto3/commit/8f8aa3792316b3bb0f6d9b8dcca7739c4e2a8358"
+        },
+        {
+          "sha": "3e7f05def14e1785708c69989dffdab87dd152e9",
+          "author_date": "2014-12-17T23:30:01Z",
+          "message": "Merge pull request #44 from kyleknap/waiter-top-level-docs\n\nAdded more docs about waiters",
+          "html_url": "https://github.com/boto/boto3/commit/3e7f05def14e1785708c69989dffdab87dd152e9"
+        },
+        {
+          "sha": "ef7f0b6260bba07decb305c2a86824f71bd6de4c",
+          "author_date": "2014-12-18T18:35:32Z",
+          "message": "Update SQS resource model",
+          "html_url": "https://github.com/boto/boto3/commit/ef7f0b6260bba07decb305c2a86824f71bd6de4c"
+        },
+        {
+          "sha": "70ae7af94047d2a110d917f207b657779e53dd0b",
+          "author_date": "2014-12-18T18:46:49Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/boto/boto3/commit/70ae7af94047d2a110d917f207b657779e53dd0b"
+        },
+        {
+          "sha": "bc866bbdd6bcc527744bd37e1e8e6fa4993f56ba",
+          "author_date": "2014-12-18T19:03:05Z",
+          "message": "Bump version to 0.0.6",
+          "html_url": "https://github.com/boto/boto3/commit/bc866bbdd6bcc527744bd37e1e8e6fa4993f56ba"
+        },
+        {
+          "sha": "ff7f7829263864b6be1d0388272bf15daae9965a",
+          "author_date": "2014-12-18T19:03:54Z",
+          "message": "Merge branch 'release-0.0.6'",
+          "html_url": "https://github.com/boto/boto3/commit/ff7f7829263864b6be1d0388272bf15daae9965a"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.0.7",
@@ -10055,8 +10238,8 @@
     {
       "release": "0.0.10",
       "previous_release": "0.0.11",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [],
+      "ignored_reason": null
     },
     {
       "release": "0.0.12",
@@ -10073,8 +10256,291 @@
     {
       "release": "0.0.14",
       "previous_release": "0.0.13",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "98e4c5b263c6d9f295a10fcc90c0c37bee027623",
+          "author_date": "2015-03-27T00:51:14Z",
+          "message": "Merge branch 'release-0.0.12'\n\n* release-0.0.12:\n  Bump version to 0.0.12\n  Update changelog [ci skip]\n  Remove unneeded backslash [ci skip]\n  Add nested structure descriptions to params & return value.\n  Elaborate more on the developer preview note in README\n  Modify test to use public property\n  Minor review feedback\n  Load reference data if a resource path is defined",
+          "html_url": "https://github.com/boto/boto3/commit/98e4c5b263c6d9f295a10fcc90c0c37bee027623"
+        },
+        {
+          "sha": "ea775f2904821d0628a7a300abe08c2483f8281f",
+          "author_date": "2015-03-19T19:23:49Z",
+          "message": "Initial commit of S3 transfers module\n\nmultipart uploads/downloads, also in parallel.",
+          "html_url": "https://github.com/boto/boto3/commit/ea775f2904821d0628a7a300abe08c2483f8281f"
+        },
+        {
+          "sha": "f7f2be40e602216b3f0de8faaa4844bad4fec957",
+          "author_date": "2015-03-31T21:55:02Z",
+          "message": "Fix multithreaded writes",
+          "html_url": "https://github.com/boto/boto3/commit/f7f2be40e602216b3f0de8faaa4844bad4fec957"
+        },
+        {
+          "sha": "e3e2350944c2f1cf362aa2e6132ae76845715081",
+          "author_date": "2015-03-31T23:26:45Z",
+          "message": "Update docs to reflect latest changes",
+          "html_url": "https://github.com/boto/boto3/commit/e3e2350944c2f1cf362aa2e6132ae76845715081"
+        },
+        {
+          "sha": "84b7c86575bc3c98ba296875c7157a66160bd53a",
+          "author_date": "2015-03-31T23:32:07Z",
+          "message": "Install futures backport on python2",
+          "html_url": "https://github.com/boto/boto3/commit/84b7c86575bc3c98ba296875c7157a66160bd53a"
+        },
+        {
+          "sha": "8a5b252d052b4e4c1dfd31c4b8529b045dc80470",
+          "author_date": "2015-04-01T00:31:45Z",
+          "message": "Fix py3 unit test failure",
+          "html_url": "https://github.com/boto/boto3/commit/8a5b252d052b4e4c1dfd31c4b8529b045dc80470"
+        },
+        {
+          "sha": "3d1da301bc4a06236b61b7513bd81b9da19eebda",
+          "author_date": "2015-04-01T22:15:44Z",
+          "message": "Remove pypy for now from travis",
+          "html_url": "https://github.com/boto/boto3/commit/3d1da301bc4a06236b61b7513bd81b9da19eebda"
+        },
+        {
+          "sha": "d1d55c704f5e6ab85b3b7379e8c09c50f7314974",
+          "author_date": "2015-04-01T00:51:06Z",
+          "message": "Implement async IO writing\n\nIO writes are now handled by submitting tasks\nto the executor.  In order to do this, there are now\ntwo tiers of executors.  The first one controls the\nio writes and the downloaded range process.  The second one\nmanages the futures for the individual download range tasks.\n\nMuch better performance for ranged gets.",
+          "html_url": "https://github.com/boto/boto3/commit/d1d55c704f5e6ab85b3b7379e8c09c50f7314974"
+        },
+        {
+          "sha": "9b0771f5d9b93b8b9ec2bf41f403ae15b86cbd7a",
+          "author_date": "2015-04-01T23:10:15Z",
+          "message": "Incorporate review feedback for s3 transfers",
+          "html_url": "https://github.com/boto/boto3/commit/9b0771f5d9b93b8b9ec2bf41f403ae15b86cbd7a"
+        },
+        {
+          "sha": "a68b525bea854a8434427f106cb7b7680685693a",
+          "author_date": "2015-04-01T23:29:36Z",
+          "message": "Incorporate test feedback",
+          "html_url": "https://github.com/boto/boto3/commit/a68b525bea854a8434427f106cb7b7680685693a"
+        },
+        {
+          "sha": "1087d178a3d9b8c70e2738694a91902570952ae8",
+          "author_date": "2015-04-01T23:30:17Z",
+          "message": "Fix linting issues",
+          "html_url": "https://github.com/boto/boto3/commit/1087d178a3d9b8c70e2738694a91902570952ae8"
+        },
+        {
+          "sha": "a34aaf6446d48ed99121e5a3a3baeb7aa9a9d4db",
+          "author_date": "2015-04-01T23:42:31Z",
+          "message": "Update review feedback from danielgtaylor",
+          "html_url": "https://github.com/boto/boto3/commit/a34aaf6446d48ed99121e5a3a3baeb7aa9a9d4db"
+        },
+        {
+          "sha": "ae55b43b4d94a35cdd889fb59e8e2127f82c6e1e",
+          "author_date": "2015-04-01T23:48:50Z",
+          "message": "Remove therad safe writer, not needed anymore",
+          "html_url": "https://github.com/boto/boto3/commit/ae55b43b4d94a35cdd889fb59e8e2127f82c6e1e"
+        },
+        {
+          "sha": "0718f5be2c9089234dadd10313802d442b290cb2",
+          "author_date": "2015-04-02T05:29:20Z",
+          "message": "Add support for extra_args in download_file",
+          "html_url": "https://github.com/boto/boto3/commit/0718f5be2c9089234dadd10313802d442b290cb2"
+        },
+        {
+          "sha": "d9ac61d8fb408db36140d7f328f3d502d8af9989",
+          "author_date": "2015-04-02T05:36:54Z",
+          "message": "Cleanup test pep8 issues",
+          "html_url": "https://github.com/boto/boto3/commit/d9ac61d8fb408db36140d7f328f3d502d8af9989"
+        },
+        {
+          "sha": "a03aeddd3287210106413b4a4907fe53b3016072",
+          "author_date": "2015-04-02T05:58:43Z",
+          "message": "Add integ test for public-read acl",
+          "html_url": "https://github.com/boto/boto3/commit/a03aeddd3287210106413b4a4907fe53b3016072"
+        },
+        {
+          "sha": "f90f784a9e417642e255560822e81f1ffa14fb34",
+          "author_date": "2015-04-02T16:48:01Z",
+          "message": "Add code to verify allowed upload args",
+          "html_url": "https://github.com/boto/boto3/commit/f90f784a9e417642e255560822e81f1ffa14fb34"
+        },
+        {
+          "sha": "36dfe4e592ca6b1d73712ecd02e5755436fbc247",
+          "author_date": "2015-04-02T17:07:42Z",
+          "message": "Retry stream downloads wtih get_object",
+          "html_url": "https://github.com/boto/boto3/commit/36dfe4e592ca6b1d73712ecd02e5755436fbc247"
+        },
+        {
+          "sha": "362323d7c0c0d38e71f64dcfcf5c8300ea425b8f",
+          "author_date": "2015-03-24T20:39:08Z",
+          "message": "Add migration guide for S3 and EC2",
+          "html_url": "https://github.com/boto/boto3/commit/362323d7c0c0d38e71f64dcfcf5c8300ea425b8f"
+        },
+        {
+          "sha": "0a92547d173ec29231ec2faac0732ef73a4bf18c",
+          "author_date": "2015-03-26T20:20:48Z",
+          "message": "Review feedback",
+          "html_url": "https://github.com/boto/boto3/commit/0a92547d173ec29231ec2faac0732ef73a4bf18c"
+        },
+        {
+          "sha": "7c86c224217b72b4b46a2258a585d97123a8222f",
+          "author_date": "2015-03-26T21:35:01Z",
+          "message": "Remove accidental line [ci skip]",
+          "html_url": "https://github.com/boto/boto3/commit/7c86c224217b72b4b46a2258a585d97123a8222f"
+        },
+        {
+          "sha": "32877ce2e131c1fc155952952cddad415de8451a",
+          "author_date": "2015-03-27T18:21:43Z",
+          "message": "Update changelog [ci skip]",
+          "html_url": "https://github.com/boto/boto3/commit/32877ce2e131c1fc155952952cddad415de8451a"
+        },
+        {
+          "sha": "a155f53dd58fa4eceb35fad1300c9911e2cd0dbf",
+          "author_date": "2015-04-02T21:24:07Z",
+          "message": "Update version, dependencies & changelog",
+          "html_url": "https://github.com/boto/boto3/commit/a155f53dd58fa4eceb35fad1300c9911e2cd0dbf"
+        },
+        {
+          "sha": "91f884b99a98a7daf93e83075ea650ea231eb878",
+          "author_date": "2015-04-03T19:49:46Z",
+          "message": "Fix pep8 line spacing",
+          "html_url": "https://github.com/boto/boto3/commit/91f884b99a98a7daf93e83075ea650ea231eb878"
+        },
+        {
+          "sha": "9cfe404fe16ba8f2857d08021b8884370fd12b45",
+          "author_date": "2015-03-27T18:18:04Z",
+          "message": "Use string templates for readability\n\nAlso does some general cleanup and enhances the test to check for the full\noutput including newlinse, commas and all.",
+          "html_url": "https://github.com/boto/boto3/commit/9cfe404fe16ba8f2857d08021b8884370fd12b45"
+        },
+        {
+          "sha": "9cea13bbb7389a50c7197714680ab76eb6f73a91",
+          "author_date": "2015-04-03T19:08:07Z",
+          "message": "Update to final OrderedDict interface",
+          "html_url": "https://github.com/boto/boto3/commit/9cea13bbb7389a50c7197714680ab76eb6f73a91"
+        },
+        {
+          "sha": "bb65a25ac469b2246fecdc696789f15cf93e0d28",
+          "author_date": "2015-04-03T20:26:12Z",
+          "message": "Forward subset of args to upload_part calls",
+          "html_url": "https://github.com/boto/boto3/commit/bb65a25ac469b2246fecdc696789f15cf93e0d28"
+        },
+        {
+          "sha": "e5160c5a3a74ce7311084c04bbce4b4ffcd2ed8d",
+          "author_date": "2015-04-03T20:56:16Z",
+          "message": "Abort multipart uploads when upload part calls fail",
+          "html_url": "https://github.com/boto/boto3/commit/e5160c5a3a74ce7311084c04bbce4b4ffcd2ed8d"
+        },
+        {
+          "sha": "92fdca95ab80f39fffcb8112da9960ff37c9c509",
+          "author_date": "2015-04-06T20:46:19Z",
+          "message": "Handle fast failure shutdown cases in downloader\n\nThis handles the case when either the IO thread writer fails\nor the download part future fails.  Either failure will trigger\na fail fast in the other futures which will result in the\noriginating exception being propogated back up to the user.",
+          "html_url": "https://github.com/boto/boto3/commit/92fdca95ab80f39fffcb8112da9960ff37c9c509"
+        },
+        {
+          "sha": "b1be8bc0b4dbdc1cdc819f3773d3a480a78d25b1",
+          "author_date": "2015-04-06T22:52:48Z",
+          "message": "Cleanup properly on failed downloads\n\n* Leave the original file unmodified (if it existed)\n  if an error occurs during download.\n* Delete the temporary file we're downloading to if the\n  download fails.\n\nIn order to handle this I also added a compat.py file.  This is\nneeded because renames() on windows work differently that posix.\nIf the file exists on windows, then os.rename() will fail.  So\nfor now, we're using a non-atomic rename().",
+          "html_url": "https://github.com/boto/boto3/commit/b1be8bc0b4dbdc1cdc819f3773d3a480a78d25b1"
+        },
+        {
+          "sha": "68ef4ea4759afe6340aeac433c317b24100c286e",
+          "author_date": "2015-04-06T22:54:27Z",
+          "message": "Clean up lint issues",
+          "html_url": "https://github.com/boto/boto3/commit/68ef4ea4759afe6340aeac433c317b24100c286e"
+        },
+        {
+          "sha": "66b15523616c4c4b203a75c4ad99d945c704a39b",
+          "author_date": "2015-04-06T17:50:41Z",
+          "message": "Add docs to coverage, review updates.\n\nThis adds a slew of new tests and modifies the code to use helper methods.",
+          "html_url": "https://github.com/boto/boto3/commit/66b15523616c4c4b203a75c4ad99d945c704a39b"
+        },
+        {
+          "sha": "a8deeba07964e8e5497e8b862c6ce8de4b56812c",
+          "author_date": "2015-04-07T16:55:11Z",
+          "message": "Update resource models",
+          "html_url": "https://github.com/boto/boto3/commit/a8deeba07964e8e5497e8b862c6ce8de4b56812c"
+        },
+        {
+          "sha": "87d4f2f24d46988ed458306279cc3acb1a27d0e3",
+          "author_date": "2015-04-07T17:39:22Z",
+          "message": "Revert S3 resource update to fix bug",
+          "html_url": "https://github.com/boto/boto3/commit/87d4f2f24d46988ed458306279cc3acb1a27d0e3"
+        },
+        {
+          "sha": "3906feb1db339f64afb4b45c9bebc281d5db7a57",
+          "author_date": "2015-04-07T16:40:27Z",
+          "message": "Minor doc fixes [ci skip]",
+          "html_url": "https://github.com/boto/boto3/commit/3906feb1db339f64afb4b45c9bebc281d5db7a57"
+        },
+        {
+          "sha": "e461fd874858e44dea09fda70d7815771b30f830",
+          "author_date": "2015-04-07T20:37:19Z",
+          "message": "Update developer preview notice [ci skip]",
+          "html_url": "https://github.com/boto/boto3/commit/e461fd874858e44dea09fda70d7815771b30f830"
+        },
+        {
+          "sha": "174eb11bf4bdd65e269f0792ddcb1e589bca8b0d",
+          "author_date": "2015-04-07T21:14:49Z",
+          "message": "Handle the case where OSError is not because file does not exist",
+          "html_url": "https://github.com/boto/boto3/commit/174eb11bf4bdd65e269f0792ddcb1e589bca8b0d"
+        },
+        {
+          "sha": "482f94af53975e961dded273080b017c903d9aef",
+          "author_date": "2015-04-07T21:15:23Z",
+          "message": "Merge branch 's3-high-level' into develop\n\n* s3-high-level: (24 commits)\n  Handle the case where OSError is not because file does not exist\n  Clean up lint issues\n  Cleanup properly on failed downloads\n  Handle fast failure shutdown cases in downloader\n  Abort multipart uploads when upload part calls fail\n  Forward subset of args to upload_part calls\n  Fix pep8 line spacing\n  Retry stream downloads wtih get_object\n  Add code to verify allowed upload args\n  Add integ test for public-read acl\n  Cleanup test pep8 issues\n  Add support for extra_args in download_file\n  Remove therad safe writer, not needed anymore\n  Update review feedback from danielgtaylor\n  Fix linting issues\n  Incorporate test feedback\n  Incorporate review feedback for s3 transfers\n  Implement async IO writing\n  Remove pypy for now from travis\n  Fix py3 unit test failure\n  ...",
+          "html_url": "https://github.com/boto/boto3/commit/482f94af53975e961dded273080b017c903d9aef"
+        },
+        {
+          "sha": "c71ab04c6600bd0b751c0d24c46e9f29f61d931d",
+          "author_date": "2015-04-07T21:16:59Z",
+          "message": "Add S3 issues to changelog",
+          "html_url": "https://github.com/boto/boto3/commit/c71ab04c6600bd0b751c0d24c46e9f29f61d931d"
+        },
+        {
+          "sha": "5be2169a959fe17143d8ffaa75b0205bdcc507fc",
+          "author_date": "2015-04-07T21:02:53Z",
+          "message": "Inject upload/download file to s3 clients",
+          "html_url": "https://github.com/boto/boto3/commit/5be2169a959fe17143d8ffaa75b0205bdcc507fc"
+        },
+        {
+          "sha": "a548b657e91c7c2e483dba0d843a81ab4711bde1",
+          "author_date": "2015-04-07T21:56:55Z",
+          "message": "Raise exception if handlers shadow client attributes\n\nAdded an inject_attribute utility function so that future\nhandlers can just use this function.",
+          "html_url": "https://github.com/boto/boto3/commit/a548b657e91c7c2e483dba0d843a81ab4711bde1"
+        },
+        {
+          "sha": "c6c0501bc704c1730090a94459f3426bcd2afefe",
+          "author_date": "2015-04-08T17:23:01Z",
+          "message": "Merge branch 'inject-s3-methods' into develop\n\n* inject-s3-methods:\n  Raise exception if handlers shadow client attributes\n  Inject upload/download file to s3 clients",
+          "html_url": "https://github.com/boto/boto3/commit/c6c0501bc704c1730090a94459f3426bcd2afefe"
+        },
+        {
+          "sha": "1be38c535ec1e6034e555964146a89d3e7b6e76a",
+          "author_date": "2015-04-08T18:54:18Z",
+          "message": "Bump version deps for botocore",
+          "html_url": "https://github.com/boto/boto3/commit/1be38c535ec1e6034e555964146a89d3e7b6e76a"
+        },
+        {
+          "sha": "dfa0ebdf5539a1ccd1fc1c1a33a4202d963c6ef3",
+          "author_date": "2015-04-09T17:14:28Z",
+          "message": "Merge pull request #77 from boto/doc-structure\n\nAdd nested structure descriptions to params & return value.",
+          "html_url": "https://github.com/boto/boto3/commit/dfa0ebdf5539a1ccd1fc1c1a33a4202d963c6ef3"
+        },
+        {
+          "sha": "9e3e70761a6fb6f393cc666bab2d724a6ea19fda",
+          "author_date": "2015-04-09T19:23:20Z",
+          "message": "Bump Botocore version to 0.102.0",
+          "html_url": "https://github.com/boto/boto3/commit/9e3e70761a6fb6f393cc666bab2d724a6ea19fda"
+        },
+        {
+          "sha": "338e769ca27b80d557b786edf5038aabcc33f9e1",
+          "author_date": "2015-04-09T19:23:54Z",
+          "message": "Bump Boto 3 version",
+          "html_url": "https://github.com/boto/boto3/commit/338e769ca27b80d557b786edf5038aabcc33f9e1"
+        },
+        {
+          "sha": "37edd5c7407a309974278f9ec3a513dc7e1c35a6",
+          "author_date": "2015-04-09T19:25:18Z",
+          "message": "Merge branch 'release-0.0.14'\n\nConflicts:\n\tCHANGELOG.rst\n\tboto3/__init__.py\n\tsetup.py",
+          "html_url": "https://github.com/boto/boto3/commit/37edd5c7407a309974278f9ec3a513dc7e1c35a6"
+        }
+      ],
+      "ignored_reason": null
     }
   ],
   "runs_by_month": {

@@ -2641,8 +2641,21 @@
     {
       "release": "v3.0.0.dev3",
       "previous_release": "v3.0.0.dev2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "899f145455af15f9509665d79799923fbbdd8b8c",
+          "author_date": "2023-06-13T23:54:59Z",
+          "message": "Update README.md\n\nAdded StreamingStdOutCallbackHandler imports to README",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/899f145455af15f9509665d79799923fbbdd8b8c"
+        },
+        {
+          "sha": "5926831ffe5dcaf7f9e70090dfd65437263c1c68",
+          "author_date": "2023-06-14T05:51:49Z",
+          "message": "Added memory to query (#140)\n\n* Completed memory implementation\r\n\r\n* Fixed some missing types",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/5926831ffe5dcaf7f9e70090dfd65437263c1c68"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v3.0.0",
@@ -2809,8 +2822,15 @@
     {
       "release": "v3.13.4",
       "previous_release": "v3.13.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "97a99b7f55e88a6c14c1461bf5b7d12f951abf91",
+          "author_date": "2023-12-05T00:17:38Z",
+          "message": "More score parsing improvements (#218)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/97a99b7f55e88a6c14c1461bf5b7d12f951abf91"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "4.0.0-pre.1",
@@ -3013,8 +3033,75 @@
     {
       "release": "v5.0.4",
       "previous_release": "v5.0.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "7aa7fda64ca5640418427defa47aeb43c7ce7d6f",
+          "author_date": "2024-09-16T01:54:54Z",
+          "message": "`DocMetadataClient` can now take instantiated providers and processors (#414)\n\n- [x]  updated clients to work with instantiated providers and processors\r\n- [x] retraction test now looks at a stub csv file instead of downloading\r\n- [x] update RetrationDataPostProcessor -> Retra**c**tionDataPostProcessor",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/7aa7fda64ca5640418427defa47aeb43c7ce7d6f"
+        },
+        {
+          "sha": "846f136088b00cfee276f4d439a9fbda14c6cbc0",
+          "author_date": "2024-09-16T04:37:26Z",
+          "message": "Promoting agent factories to `Settings` (#407)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/846f136088b00cfee276f4d439a9fbda14c6cbc0"
+        },
+        {
+          "sha": "9d49b840cfc05abd9f23d6aad3a9a19426e874bf",
+          "author_date": "2024-09-16T18:23:42Z",
+          "message": "Add section for `pytest-recording` plugin in `CONTRIBUTING.md`\n\n* **Plugin usage**: Add a section explaining the use of `pytest-recording` plugin for creating VCR cassettes.\n* **Recording instructions**: Provide instructions on how to record a new VCR cassette using `uv run pytest --record-mode=once tests/desired_test_module.py`.\n* **Configuration links**: Link to the configuration in `tests/conftest.py` and the cassettes in `tests/cassettes`.\n* **Header removals**: Document header removals from responses to exclude sensitive information.\n* **Size comment**: Add a comment about keeping the cassettes less than 1 MB in size.",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/9d49b840cfc05abd9f23d6aad3a9a19426e874bf"
+        },
+        {
+          "sha": "67b16c5d43a5b83a1d7073a38913acc03fb1533f",
+          "author_date": "2024-09-16T18:31:51Z",
+          "message": "Add stub_data_dir fixture to retraction test (#420)\n\nCo-authored-by: James Braza <jamesbraza@gmail.com>",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/67b16c5d43a5b83a1d7073a38913acc03fb1533f"
+        },
+        {
+          "sha": "39b210844af7ee812e1b32da292f9bcf1f7aea44",
+          "author_date": "2024-09-16T18:55:57Z",
+          "message": "`pytest-recording` docs in `CONTRIBUTING.md` (#410)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/39b210844af7ee812e1b32da292f9bcf1f7aea44"
+        },
+        {
+          "sha": "4e499db20409c7f0010b9c3cc7b65822c93066a4",
+          "author_date": "2024-09-16T19:12:47Z",
+          "message": "Fixing `test_crossref_journalquality_fields_filtering` incorrect cassette set up (#423)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/4e499db20409c7f0010b9c3cc7b65822c93066a4"
+        },
+        {
+          "sha": "2f7e462220cdb700598ec31de554ca7851e4b316",
+          "author_date": "2024-09-16T20:19:40Z",
+          "message": "Broken title search ut (#411)\n\nCo-authored-by: James Braza <jamesbraza@gmail.com>",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/2f7e462220cdb700598ec31de554ca7851e4b316"
+        },
+        {
+          "sha": "ca259635e6728afe414345157bc3b6469ae66cbe",
+          "author_date": "2024-09-16T21:28:35Z",
+          "message": "Update pre-commit-ci/lite-action action to v1.0.3 (#422)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\r\nCo-authored-by: Andrew White <white.d.andrew@gmail.com>",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/ca259635e6728afe414345157bc3b6469ae66cbe"
+        },
+        {
+          "sha": "fd1f8e9480a9e725b1e21f0f15665def6ae59b96",
+          "author_date": "2024-09-17T04:08:13Z",
+          "message": "Pinning min `pymupdf` version (#424)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/fd1f8e9480a9e725b1e21f0f15665def6ae59b96"
+        },
+        {
+          "sha": "3327821e2b8639aa4cc8086d67886967116fa229",
+          "author_date": "2024-09-17T07:10:50Z",
+          "message": "Preventing `Environment`s from sharing one `Docs` (#425)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/3327821e2b8639aa4cc8086d67886967116fa229"
+        },
+        {
+          "sha": "bc3dbcc9754b61a617613ce94a21f83e6517ffca",
+          "author_date": "2024-09-17T17:47:38Z",
+          "message": "Dropped `PyCryptodome` and `build` dependencies (#426)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/bc3dbcc9754b61a617613ce94a21f83e6517ffca"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v5.0.5",
@@ -3115,8 +3202,249 @@
     {
       "release": "v5.5.0",
       "previous_release": "v5.3.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "dcb4fd471f110a58120e1e8ebbbe8006fbe40904",
+          "author_date": "2024-10-30T22:27:56Z",
+          "message": "Renamed to PQASession type (#653)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/dcb4fd471f110a58120e1e8ebbbe8006fbe40904"
+        },
+        {
+          "sha": "77be14f7d1046076b4e19fa711901845e3501756",
+          "author_date": "2024-11-01T19:57:59Z",
+          "message": "Lock file maintenance",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/77be14f7d1046076b4e19fa711901845e3501756"
+        },
+        {
+          "sha": "bcaf43d91b43735a6c5ac45eb29dba3a15e8e291",
+          "author_date": "2024-11-02T22:29:36Z",
+          "message": "Ability to zero-shot `gen_answer` (#658)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/bcaf43d91b43735a6c5ac45eb29dba3a15e8e291"
+        },
+        {
+          "sha": "0f8e66ef93b0493c76e675c807471cd4c844dff0",
+          "author_date": "2024-11-03T00:06:16Z",
+          "message": "Lock file maintenance",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/0f8e66ef93b0493c76e675c807471cd4c844dff0"
+        },
+        {
+          "sha": "87101f625dfc95a2f44bdc6ca9ae1e7e602d6cf7",
+          "author_date": "2024-11-03T07:15:39Z",
+          "message": "Moving to `uv` dependency groups (#660)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/87101f625dfc95a2f44bdc6ca9ae1e7e602d6cf7"
+        },
+        {
+          "sha": "ce3f58f513e621480a7cf86315e44cef9e38268a",
+          "author_date": "2024-11-04T11:36:53Z",
+          "message": "Lock file maintenance",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/ce3f58f513e621480a7cf86315e44cef9e38268a"
+        },
+        {
+          "sha": "0baab16ece4caae3e3ffbc57fbc885870a6bc5d7",
+          "author_date": "2024-11-05T21:28:15Z",
+          "message": "Convert citation to formatted_citation usage where necessary (#666)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/0baab16ece4caae3e3ffbc57fbc885870a6bc5d7"
+        },
+        {
+          "sha": "06ebe58b96f02ffe9d2ab0ca01e720d49e6aa8be",
+          "author_date": "2024-11-06T20:55:45Z",
+          "message": "Catch edge case where externalIds field is None (#668)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/06ebe58b96f02ffe9d2ab0ca01e720d49e6aa8be"
+        },
+        {
+          "sha": "02686ef0314610c77c14573c6a6fd4cb83bf1dab",
+          "author_date": "2024-11-07T17:12:05Z",
+          "message": "Made o1 temperature issue a warning, instead of valueerror (#669)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/02686ef0314610c77c14573c6a6fd4cb83bf1dab"
+        },
+        {
+          "sha": "7b00c5e83eccba964ec8273f6b5f36bb419d585b",
+          "author_date": "2024-11-07T19:22:10Z",
+          "message": "Added train and eval splits' questions and DOIs (#662)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/7b00c5e83eccba964ec8273f6b5f36bb419d585b"
+        },
+        {
+          "sha": "79ee9517b71db9fb0ba1efc15830887f47575aec",
+          "author_date": "2024-11-08T17:55:16Z",
+          "message": "`fake` agent allowing timeouts or exceptions, (#672)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/79ee9517b71db9fb0ba1efc15830887f47575aec"
+        },
+        {
+          "sha": "405f885bf8ea7436b18c7cf8baec9a12b1de27f4",
+          "author_date": "2024-11-08T20:49:20Z",
+          "message": "Optional `AnswerSetting.max_answer_attempts` to allow a new unsure branch (#673)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/405f885bf8ea7436b18c7cf8baec9a12b1de27f4"
+        },
+        {
+          "sha": "e729fe05336a0cf204257dca1fe0b0ac0b31a8c7",
+          "author_date": "2024-11-08T22:56:02Z",
+          "message": "Made it so you do not die on invalid tool (#670)\n\nBumped aviary to get this",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/e729fe05336a0cf204257dca1fe0b0ac0b31a8c7"
+        },
+        {
+          "sha": "1af325ce35229a4d2ce23ad034c645104ffab9ed",
+          "author_date": "2024-11-08T23:57:02Z",
+          "message": "Allowing latest `pydantic-settings` and regenerated cassettes (#674)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/1af325ce35229a4d2ce23ad034c645104ffab9ed"
+        },
+        {
+          "sha": "db1cc76b604f53e53df4ad8f3443387c4fa7482f",
+          "author_date": "2024-11-09T00:40:54Z",
+          "message": "Empty tool calls leading to `done` condition (#671)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/db1cc76b604f53e53df4ad8f3443387c4fa7482f"
+        },
+        {
+          "sha": "b21d9c2d8aebd9478b3b18fa76ad7922543c4a72",
+          "author_date": "2024-11-09T00:57:36Z",
+          "message": "Changed it to be debug for source quality (#675)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/b21d9c2d8aebd9478b3b18fa76ad7922543c4a72"
+        },
+        {
+          "sha": "b90c62546d6ffbeacd56b54210c09e1c314cc7c8",
+          "author_date": "2024-11-13T18:22:09Z",
+          "message": "Deprecation cycle for `AgentSettings.should_pre_search` (#679)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/b90c62546d6ffbeacd56b54210c09e1c314cc7c8"
+        },
+        {
+          "sha": "4069d38d92aa2c0b546bf12d5d6eaebe7a83b803",
+          "author_date": "2024-11-13T20:54:57Z",
+          "message": "Moved agent prompts to `prompts.py` (#681)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/4069d38d92aa2c0b546bf12d5d6eaebe7a83b803"
+        },
+        {
+          "sha": "9b53817561b4e5c561d7c89b927671bf73ee255f",
+          "author_date": "2024-11-13T22:04:00Z",
+          "message": "Refactor to remove `skip_system` from `LLMModel.run_prompt` (#680)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/9b53817561b4e5c561d7c89b927671bf73ee255f"
+        },
+        {
+          "sha": "3c634338e1c55a8e98d4c6648b2b0d1714bcd620",
+          "author_date": "2024-11-13T22:23:52Z",
+          "message": "Resolving `evidence_detailed_citations` and `Answer` deprecations (#682)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/3c634338e1c55a8e98d4c6648b2b0d1714bcd620"
+        },
+        {
+          "sha": "59dd4a7cf528de0c5087b20de635062b5070db22",
+          "author_date": "2024-11-13T23:12:30Z",
+          "message": "Fixed agent prompt names and contents after #681 mess up (#683)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/59dd4a7cf528de0c5087b20de635062b5070db22"
+        },
+        {
+          "sha": "05cd33ccf9b6ae1b3e98e7f989a8433e158069db",
+          "author_date": "2024-11-14T00:44:02Z",
+          "message": "Removed `tool_names` validation for `gen_answer` being present (#685)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/05cd33ccf9b6ae1b3e98e7f989a8433e158069db"
+        },
+        {
+          "sha": "417e6662df613d84d7056e919fbf0dd43af872a4",
+          "author_date": "2024-11-14T18:59:31Z",
+          "message": "Fixing `test_evaluation` logic bugs (#686)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/417e6662df613d84d7056e919fbf0dd43af872a4"
+        },
+        {
+          "sha": "ca367859124239293d12c219936285c62f945919",
+          "author_date": "2024-11-15T18:06:36Z",
+          "message": "Removed `GenerateAnswer.FAILED_TO_ANSWER` as its unnecessary (#691)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/ca367859124239293d12c219936285c62f945919"
+        },
+        {
+          "sha": "2cc0a6a8dc1a0ddda8a784dfcf4c62c6680c0cee",
+          "author_date": "2024-11-15T18:41:33Z",
+          "message": "Allowing serialized `Settings` in `get_settings` (#688)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/2cc0a6a8dc1a0ddda8a784dfcf4c62c6680c0cee"
+        },
+        {
+          "sha": "4dfd0335b3cf7a38aecee8ecd44bcf1e78c1de6f",
+          "author_date": "2024-11-15T18:56:05Z",
+          "message": "Fixed LDP runner's `TRUNCATED` not calling `gen_answer`, and documented `AgentStatus` (#690)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/4dfd0335b3cf7a38aecee8ecd44bcf1e78c1de6f"
+        },
+        {
+          "sha": "4e1937dc5d23a6292356f6630b5f210f710a34a3",
+          "author_date": "2024-11-15T19:26:03Z",
+          "message": "Removed `gen_answer`'s dead argument `question` (#689)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/4e1937dc5d23a6292356f6630b5f210f710a34a3"
+        },
+        {
+          "sha": "d7043844d7b6431aee1bad6dff202b6781bc3903",
+          "author_date": "2024-11-15T20:10:33Z",
+          "message": "Making sure we copy distractors (#694)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/d7043844d7b6431aee1bad6dff202b6781bc3903"
+        },
+        {
+          "sha": "9e8ed75125015dcf5ecedf53f7b1a5654d4650aa",
+          "author_date": "2024-11-15T21:41:37Z",
+          "message": "Created `complete` tool to allow unsure answers (#684)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/9e8ed75125015dcf5ecedf53f7b1a5654d4650aa"
+        },
+        {
+          "sha": "b45d437c390e3d39a1f61d0bc9bf7da4a0ae86fa",
+          "author_date": "2024-11-16T18:23:31Z",
+          "message": "Added missing `test_from_question` cassette (#696)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/b45d437c390e3d39a1f61d0bc9bf7da4a0ae86fa"
+        },
+        {
+          "sha": "6fda922f345a5d9cd38e5a6bce6de7a055e6f44d",
+          "author_date": "2024-11-16T18:25:18Z",
+          "message": "Moved `fake` agent to LLM propose `complete` tool (#695)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/6fda922f345a5d9cd38e5a6bce6de7a055e6f44d"
+        },
+        {
+          "sha": "a004d223001b244bf3e2b4d81309a46f51865f51",
+          "author_date": "2024-11-17T23:14:57Z",
+          "message": "Default to ordered tool calls (#697)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/a004d223001b244bf3e2b4d81309a46f51865f51"
+        },
+        {
+          "sha": "d261abed715e65311083803648269bd5319ab6a2",
+          "author_date": "2024-11-18T09:59:20Z",
+          "message": "Lock file maintenance (#699)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/d261abed715e65311083803648269bd5319ab6a2"
+        },
+        {
+          "sha": "25a62d11c954499de62c7b2eeb7eddf97be65ae5",
+          "author_date": "2024-11-19T05:30:18Z",
+          "message": "Refactored `TestGradablePaperQAEnvironment` for DRY code (#702)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/25a62d11c954499de62c7b2eeb7eddf97be65ae5"
+        },
+        {
+          "sha": "9bdd024e7f227dad0e3115b6afeff9d2af92dbae",
+          "author_date": "2024-11-19T05:30:42Z",
+          "message": "Fixing `PaperQAEnvironment.reset` respecting `mmr_lambda` and `text_hashes` (#703)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/9bdd024e7f227dad0e3115b6afeff9d2af92dbae"
+        },
+        {
+          "sha": "201d364a8b4108630e8eadc5922ae1d435a3ca92",
+          "author_date": "2024-11-19T18:38:50Z",
+          "message": "Removed `\"cannot answer\"` literals and added `reset` tool (#698)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/201d364a8b4108630e8eadc5922ae1d435a3ca92"
+        },
+        {
+          "sha": "6828cde70bcff97fc240c98fb6782aff7cc82601",
+          "author_date": "2024-11-19T19:01:33Z",
+          "message": "Update all non-major dependencies (#705)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: James Braza <jamesbraza@gmail.com>",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/6828cde70bcff97fc240c98fb6782aff7cc82601"
+        },
+        {
+          "sha": "11f2727266b17678209eda5d662b40cae9fd6d08",
+          "author_date": "2024-11-19T23:37:19Z",
+          "message": "Fixing `LitQAEvaluation` bugs: incorrect reward indices, not using LLM's native knowledge (#708)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/11f2727266b17678209eda5d662b40cae9fd6d08"
+        },
+        {
+          "sha": "d5c468828b83737bdf4a7c6b5116958cd2e8f3be",
+          "author_date": "2024-11-19T23:37:50Z",
+          "message": "Adding filters to paper-qa Docs (#707)\n\nThis adds a new filter mechanism to exclude papers from the `Docs` object via settings. \r\n\r\nFor example, to exclude a specific DOI\r\n\r\n```py\r\nsettings = Settings()\r\nsettings.parsing.doc_filters = [{\"!doi\": \"xxxx/xxxxxx\"}]\r\n```\r\n\r\nOr to only consider years 2020 and 2018:\r\n```py\r\nsettings.parsing.doc_filters = [\r\n    {\"year\": \"2020\"},\r\n    {\"year\": \"2018\"}]\r\n```\r\n\r\nDescription:\r\n\r\nOptional filters to only allow documents that match this filter. This is a dictionary where the keys are the fields from DocDetails or Docs to filter on, and the values are the values to filter for. to invert filter, prefix the key with a '!'. If the key is not found, by default the Doc is rejected. To change this behavior, prefix the key with a '?' to allow the Doc to pass if the key is not found. For example, {'!title': 'bad title', '?year': '2022'} would only allow Docs with a title that is not 'bad title' and a year of 2022 or no year at all.",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/d5c468828b83737bdf4a7c6b5116958cd2e8f3be"
+        },
+        {
+          "sha": "0b3ef894392e137598e06fe4214ac456ebc19727",
+          "author_date": "2024-11-20T00:19:36Z",
+          "message": "Fixed mutably defaulted `NumpyVectorStore.texts` (#711)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/0b3ef894392e137598e06fe4214ac456ebc19727"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v5.6.0",
@@ -3211,8 +3539,15 @@
     {
       "release": "v5.14.0",
       "previous_release": "v5.13.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "40e2a09a8ad01edacd486588d0fa1819cad8efa7",
+          "author_date": "2025-02-21T22:06:56Z",
+          "message": "Propagates llmclient changes to pqa (#839)",
+          "html_url": "https://github.com/Future-House/paper-qa/commit/40e2a09a8ad01edacd486588d0fa1819cad8efa7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v5.15.0",

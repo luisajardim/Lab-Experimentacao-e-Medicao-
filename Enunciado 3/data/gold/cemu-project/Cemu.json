@@ -1402,8 +1402,27 @@
     {
       "release": "v2.1",
       "previous_release": "v2.0-95",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "dc9d99b03b38f3cf427714ad1ebb4d6d29f645fa",
+          "author_date": "2024-08-24T19:03:03Z",
+          "message": "nn_fp: Implement GetMyComment and UpdateCommentAsync (#1173)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/dc9d99b03b38f3cf427714ad1ebb4d6d29f645fa"
+        },
+        {
+          "sha": "d7f39aab054a715e7b0481407298cbd654212fb9",
+          "author_date": "2024-08-26T09:16:11Z",
+          "message": "Update translation files",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/d7f39aab054a715e7b0481407298cbd654212fb9"
+        },
+        {
+          "sha": "1234e2c11808a97c76381f147e564d74f6ffbbd1",
+          "author_date": "2024-08-26T09:43:38Z",
+          "message": "Preparations for 2.1 (#1306)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/1234e2c11808a97c76381f147e564d74f6ffbbd1"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.2",
@@ -1414,14 +1433,136 @@
     {
       "release": "v2.3",
       "previous_release": "v2.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a05bdb172d198904a76b4b166b43fb31a94a0dd3",
+          "author_date": "2024-09-15T18:23:11Z",
+          "message": "Vulkan: Add explicit synchronization on frame boundaries (#1290)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/a05bdb172d198904a76b4b166b43fb31a94a0dd3"
+        },
+        {
+          "sha": "adffd53dbdc86f54803e79dcf06004e688e3b19d",
+          "author_date": "2024-09-16T10:40:38Z",
+          "message": "boss: Fix BOSS not honoring the proxy_server setting (#1344)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/adffd53dbdc86f54803e79dcf06004e688e3b19d"
+        },
+        {
+          "sha": "8508c625407e80a5a7fcb9cf02c5355d018ff64b",
+          "author_date": "2024-09-17T00:00:26Z",
+          "message": "Various smaller code improvements (#1343)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/8508c625407e80a5a7fcb9cf02c5355d018ff64b"
+        },
+        {
+          "sha": "6dc73f5d797082c25a68ad162377077547948d26",
+          "author_date": "2024-10-03T06:48:25Z",
+          "message": "Add support for fmt 11 (#1366)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/6dc73f5d797082c25a68ad162377077547948d26"
+        },
+        {
+          "sha": "3acd0c4f2ca328abe80f2d35fb20136e738c84ae",
+          "author_date": "2024-10-14T12:03:36Z",
+          "message": "Vulkan: Protect against uniform var ringbuffer overflow (#1378)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/3acd0c4f2ca328abe80f2d35fb20136e738c84ae"
+        },
+        {
+          "sha": "d6575455eedf8fc4dbe4bd1b8101361f4257d0c4",
+          "author_date": "2024-10-17T20:24:01Z",
+          "message": "Linux: Fix crash on invalid command-line arguments\n\nuse std::cout instead of wxMessageBox which does not work when wxWidgets has not been initialised yet",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/d6575455eedf8fc4dbe4bd1b8101361f4257d0c4"
+        },
+        {
+          "sha": "f9a4b2dbb1ae8de07223a3d988b1605b941f35a8",
+          "author_date": "2024-10-18T23:56:56Z",
+          "message": "input: Add option to make `show screen` button a toggle (#1383)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/f9a4b2dbb1ae8de07223a3d988b1605b941f35a8"
+        },
+        {
+          "sha": "63e1289bb518562ae62033389610a1e772e63c8b",
+          "author_date": "2024-10-25T16:48:21Z",
+          "message": "Windows: Save icons to Cemu user data directory (#1390)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/63e1289bb518562ae62033389610a1e772e63c8b"
+        },
+        {
+          "sha": "459fd5d9bb4897381c4d7d326302ca707c7b818c",
+          "author_date": "2024-10-28T08:37:30Z",
+          "message": "input: Fix crash when closing add controller dialog before search completes (#1386)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/459fd5d9bb4897381c4d7d326302ca707c7b818c"
+        },
+        {
+          "sha": "47001ad23349fae130d6faae9409117899eb11cc",
+          "author_date": "2024-10-30T22:10:32Z",
+          "message": "Make `MEMPTR<T>` a little more `T*`-like (#1385)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/47001ad23349fae130d6faae9409117899eb11cc"
+        },
+        {
+          "sha": "1c49a8a1ba8fea6e656c1d535f35e316bc29da76",
+          "author_date": "2024-11-01T21:47:19Z",
+          "message": "nn_nfp: Implement GetNfpReadOnlyInfo and fix deactivate event\n\nFixes Amiibos not being detected in MK8",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/1c49a8a1ba8fea6e656c1d535f35e316bc29da76"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.4",
       "previous_release": "v2.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9941e00b545a9c99a8e62c8c33ebe790d38de26e",
+          "author_date": "2024-11-05T21:22:00Z",
+          "message": "macOS: Fix libusb path for bundle (#1403)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/9941e00b545a9c99a8e62c8c33ebe790d38de26e"
+        },
+        {
+          "sha": "813f9148b1afe75053102877e3db5733f701660e",
+          "author_date": "2024-11-07T06:09:35Z",
+          "message": "macOS: Fix absolute path to libusb dylib (#1405)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/813f9148b1afe75053102877e3db5733f701660e"
+        },
+        {
+          "sha": "4ac1ab162a2a2734a4b1839e57ff367233e16853",
+          "author_date": "2024-11-09T05:21:06Z",
+          "message": "procui: swap `tickDelay` and `priority` args in callbacks (#1408)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/4ac1ab162a2a2734a4b1839e57ff367233e16853"
+        },
+        {
+          "sha": "2e829479d9f63dcfbd8ef67d456793a70f684b18",
+          "author_date": "2024-11-09T05:22:13Z",
+          "message": "nsyshid/libusb: correct error message formatting and print error string on open fail (#1407)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/2e829479d9f63dcfbd8ef67d456793a70f684b18"
+        },
+        {
+          "sha": "ca2e0a7c31dcaeac110dc4aa703a992b55c8155f",
+          "author_date": "2024-11-11T07:58:01Z",
+          "message": "nsyshid: Add support for emulated Dimensions Toypad (#1371)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/ca2e0a7c31dcaeac110dc4aa703a992b55c8155f"
+        },
+        {
+          "sha": "a5717e1b11fe2a6c2c1be0afbd4908d765a777af",
+          "author_date": "2024-11-08T00:07:53Z",
+          "message": "FST: Refactoring to fix a read bug + verify all reads\n\n- Fixes a bug where corrupted data would be returned when reading files from unhashed sections with non-block aligned offset or size\n- Added hash checks for all reads where possible. This means that FST now can automatically catch corruptions when they are encountered while reading from the volume",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/a5717e1b11fe2a6c2c1be0afbd4908d765a777af"
+        },
+        {
+          "sha": "66658351c1e274265ddc18643b761f7df1e21e11",
+          "author_date": "2024-11-10T09:10:46Z",
+          "message": "erreula: Rework implementation and fix bugs\n\n- ErrEula doesn't disappear on its own anymore. The expected behavior is for the game to call Disappear once a button has been selected. This fixes issues where the dialog would softlock in some games\n- Modernized code a bit\n- Added a subtle fade in/out effect",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/66658351c1e274265ddc18643b761f7df1e21e11"
+        },
+        {
+          "sha": "719c631f13c451e045903e79768e98e264a0e9b2",
+          "author_date": "2024-11-13T05:28:13Z",
+          "message": "config: Fix receive_untested_updates using the wrong default",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/719c631f13c451e045903e79768e98e264a0e9b2"
+        },
+        {
+          "sha": "6f9f3d52ea12d3951b2d9d71806f18fea46140e3",
+          "author_date": "2024-11-13T05:38:13Z",
+          "message": "CI: Remove outdated workflow",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/6f9f3d52ea12d3951b2d9d71806f18fea46140e3"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.5",
@@ -1432,8 +1573,141 @@
     {
       "release": "v2.6",
       "previous_release": "v2.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "adab729f43ca27bc81280be764b32f11a350308e",
+          "author_date": "2024-12-08T12:33:34Z",
+          "message": "UI: Correctly handle unicode paths during save export",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/adab729f43ca27bc81280be764b32f11a350308e"
+        },
+        {
+          "sha": "6aaad1eb83819bcfb9109da2e5e09b1f8d776722",
+          "author_date": "2024-12-15T20:47:05Z",
+          "message": "Debugger: Added right click context menu to disasm view + small fixes",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/6aaad1eb83819bcfb9109da2e5e09b1f8d776722"
+        },
+        {
+          "sha": "b53b223ba9b45974cd80674d8de9c6e736e34ae9",
+          "author_date": "2024-12-16T01:38:43Z",
+          "message": "Vulkan: Use cache for sampler objects",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/b53b223ba9b45974cd80674d8de9c6e736e34ae9"
+        },
+        {
+          "sha": "3738ccd2e676aa2c2cf2cdd5f08d5ac8dd221f57",
+          "author_date": "2024-12-18T14:55:23Z",
+          "message": "Play bootSound.btsnd while shaders/pipelines are compiling (#1047)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/3738ccd2e676aa2c2cf2cdd5f08d5ac8dd221f57"
+        },
+        {
+          "sha": "2b0cbf7f6b6c34c748585d255ee7756ff592a502",
+          "author_date": "2024-12-18T21:15:42Z",
+          "message": "Fix building against Boost 1.87.0 (#1455)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/2b0cbf7f6b6c34c748585d255ee7756ff592a502"
+        },
+        {
+          "sha": "1e30d72658151a5304f5625a8acdf6aae31b6c58",
+          "author_date": "2024-12-30T17:49:51Z",
+          "message": "build: Add ALLOW_PORTABLE flag (#1464)\n\n* Add ALLOW_PORTABLE cmake flag\n* Also check that `portable` is a directory",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/1e30d72658151a5304f5625a8acdf6aae31b6c58"
+        },
+        {
+          "sha": "4b792aa4d2599c2e04865309e34cd3af9de728e4",
+          "author_date": "2025-01-04T19:38:42Z",
+          "message": "debug: Fix shader dumping (#1466)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/4b792aa4d2599c2e04865309e34cd3af9de728e4"
+        },
+        {
+          "sha": "92021db2307161a2df0cc2cfa4d3498444ab6888",
+          "author_date": "2025-01-05T03:08:13Z",
+          "message": "Use one CPU emulation thread for --force-interpreter (#1467)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/92021db2307161a2df0cc2cfa4d3498444ab6888"
+        },
+        {
+          "sha": "f61539a2624a8034aadc9eb5ab2555e628234804",
+          "author_date": "2025-01-08T03:22:55Z",
+          "message": "Update build instructions for fedora and add troubleshooting step for alternative architectures (#1468)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/f61539a2624a8034aadc9eb5ab2555e628234804"
+        },
+        {
+          "sha": "1923b7a7c4bef1555430a4474591d75960a1959b",
+          "author_date": "2025-01-12T11:37:56Z",
+          "message": "Vulkan: Added R5_G6_B5_UNORM to supported readback formats (#1430)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/1923b7a7c4bef1555430a4474591d75960a1959b"
+        },
+        {
+          "sha": "8dd809d725ece390f9103f689d7665ce2865034f",
+          "author_date": "2025-01-12T11:39:02Z",
+          "message": "Latte: Implement better index caching (#1443)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/8dd809d725ece390f9103f689d7665ce2865034f"
+        },
+        {
+          "sha": "0a5908502147c9d35189bdbfe38ba6d5bebd0f76",
+          "author_date": "2025-01-12T13:33:24Z",
+          "message": "nsyshid: Make Libusb the Windows backend (#1471)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/0a5908502147c9d35189bdbfe38ba6d5bebd0f76"
+        },
+        {
+          "sha": "07cd402531852537fb109f8dcd63d6627b856087",
+          "author_date": "2025-01-12T17:33:15Z",
+          "message": "Update precompiled.h",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/07cd402531852537fb109f8dcd63d6627b856087"
+        },
+        {
+          "sha": "eab1b24320454ef60d6172dd41dfa8379b3015ac",
+          "author_date": "2025-01-12T19:20:48Z",
+          "message": "nsyshid: Initialise interface index as 0 (#1473)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/eab1b24320454ef60d6172dd41dfa8379b3015ac"
+        },
+        {
+          "sha": "4ac65159efd14bec4cb0c74dde5b11100ad7f7d6",
+          "author_date": "2025-01-16T11:54:29Z",
+          "message": "Fix building against fmt 11.1.0 (#1474)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/4ac65159efd14bec4cb0c74dde5b11100ad7f7d6"
+        },
+        {
+          "sha": "5bd253a1f84b5c410023744edf46896547f770d8",
+          "author_date": "2025-01-23T16:29:12Z",
+          "message": "Revert \"Fix building against fmt 11.1.0 (#1474)\"\n\nReverting commit 4ac65159efd14bec4cb0c74dde5b11100ad7f7d6 because game profile enums use the stringifying formatters from config.h and are not supposed to store raw integers",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/5bd253a1f84b5c410023744edf46896547f770d8"
+        },
+        {
+          "sha": "372c314f0630a6d0ae1cb303f696071efbc72717",
+          "author_date": "2025-01-23T20:02:09Z",
+          "message": "fix building with fmt11 and GCC",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/372c314f0630a6d0ae1cb303f696071efbc72717"
+        },
+        {
+          "sha": "4f9eea07e045e0d8b0e14dfced29795641cd128e",
+          "author_date": "2025-01-23T19:35:43Z",
+          "message": "CI: Update action version",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/4f9eea07e045e0d8b0e14dfced29795641cd128e"
+        },
+        {
+          "sha": "e834515f430c8d8eaee6be6e1a5a4f16fcbca8d9",
+          "author_date": "2025-01-23T20:20:03Z",
+          "message": "Vulkan: Improve post-shutdown cleanup and minor improvements (#1401)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/e834515f430c8d8eaee6be6e1a5a4f16fcbca8d9"
+        },
+        {
+          "sha": "c714e8cb6bbf86b3430cb94159374cf83ed52df4",
+          "author_date": "2025-01-30T02:32:24Z",
+          "message": "coreinit: Time to tick conversion is unsigned\n\nThe result is treated as signed in most cases, but the calculation uses unsigned arithmetic.\n\nAs a concrete example where this matters, DS VC passes -1 (2^64-1) to OSWaitEventWithTimeout which internally causes an overflow. But only with unsigned arithmetic this will result in a large positive number that behaves like the intended infinite timeout. With signed arithmetic the result is negative and the events will timeout immediately.",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/c714e8cb6bbf86b3430cb94159374cf83ed52df4"
+        },
+        {
+          "sha": "ec2d7c086a3b2cc4f40897ae9978d4699e273b02",
+          "author_date": "2025-01-30T02:49:17Z",
+          "message": "coreinit: Clean up time functions",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/ec2d7c086a3b2cc4f40897ae9978d4699e273b02"
+        },
+        {
+          "sha": "a6fb0a48eb437a8a41c13b782ac8ae0433bf8f98",
+          "author_date": "2025-02-04T09:56:33Z",
+          "message": "BUILD.md: Provide more info about build configuration flags (#1486)",
+          "html_url": "https://github.com/cemu-project/Cemu/commit/a6fb0a48eb437a8a41c13b782ac8ae0433bf8f98"
+        }
+      ],
+      "ignored_reason": null
     }
   ],
   "runs_by_month": {

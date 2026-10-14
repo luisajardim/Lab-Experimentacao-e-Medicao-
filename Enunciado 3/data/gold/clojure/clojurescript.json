@@ -2008,20 +2008,425 @@
     {
       "release": "r1.8.34",
       "previous_release": "r1.7.228",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "628d957f3ecabf8d26d57665abdef3dea765151e",
+          "author_date": "2016-01-16T18:30:13Z",
+          "message": "CLJS-1546: cljs.core/run! does not always return nil\n\nThe cljs.core/run! function only returns nil if the proc function\npassed to it returns nil, but the docstring for run! indicates that it\nreturns nil.\n\nFixes this issue by explicitly returning nil. This also makes the\nClojureScript implementation of run! match that in Clojure 1.8.\n\nAdds unit tests for run!, copying tests from Clojure that exhibit the\nbug, while also adding a test for the primary functionality.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/628d957f3ecabf8d26d57665abdef3dea765151e"
+        },
+        {
+          "sha": "404d6444cb6419658a7dacb343a5fed5b9451e0c",
+          "author_date": "2016-01-17T19:06:22Z",
+          "message": "CLJS-1547: Wrong output encoding when compile with goog.LOCALE\n\nClosure Compiler uses ASCII by default because of legacy reasons.\nNon-ASCII characters are escaped.\nIt may lead to larger builds when using i18n facilities.\n\nAlso, when using goog.i18n with custom goog.LOCALE option,\nREPL users can see formatted dates in legacy encodings\nof their languages (for example, CP1252 for goog.LOCALE=\"ru\").\n\nThis patch provides UTF-8 encoding by default.\nPossible options are:\n * US-ASCII (current default)\n * ISO-8859-1\n * UTF-8 (proposed default)\n * UTF-16BE\n * UTF-16LE\n * UTF-16\n(https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html)",
+          "html_url": "https://github.com/clojure/clojurescript/commit/404d6444cb6419658a7dacb343a5fed5b9451e0c"
+        },
+        {
+          "sha": "db695a93c93c23dbdbcd846bd342fa76d4117a58",
+          "author_date": "2016-01-24T14:27:22Z",
+          "message": "Update Maven dependency information",
+          "html_url": "https://github.com/clojure/clojurescript/commit/db695a93c93c23dbdbcd846bd342fa76d4117a58"
+        },
+        {
+          "sha": "58cd6be66877ba43d1642138360b916de0983917",
+          "author_date": "2016-02-02T00:27:54Z",
+          "message": "CLJS-620: Warnings are generated when using a macro in argument position\n\nIf the analyzer is about to emit a \"use of undeclared Var\" warning,\nfirst check to see if there is a macro present with the same name, and,\nin that case, change the emitted diagnostic to instead display\na \"can't take value of macro\" warning.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/58cd6be66877ba43d1642138360b916de0983917"
+        },
+        {
+          "sha": "170cece9953d1aba70bb489dba03f1a65b15ec43",
+          "author_date": "2016-02-01T06:36:55Z",
+          "message": "CLJS-1318: Fix typo in documentation of `specify`\n\nIn the docstring of specify, replace `specify` by `specify!`",
+          "html_url": "https://github.com/clojure/clojurescript/commit/170cece9953d1aba70bb489dba03f1a65b15ec43"
+        },
+        {
+          "sha": "4b44c3e4d48c14d47eaa46c203fcc28df16d3941",
+          "author_date": "2016-02-01T03:30:51Z",
+          "message": "CLJS-1542: Self-host: cljs/compile-str not handling errors properly\n\nIf you use cljs.js/compile-str on a form that cannot be analyzed, then\nthe analysis error is wrapped, but inadvertently passed on to\ncompilation as an AST structure. This results in the compiler derailing\nbecause it tries to process a nil :op.\n\nThe fix is to employ the same pattern used in cljs.js/eval-str, namely:\nWrap successful analysis in a {:value ast} map, and then additionally\ncheck for an :error key in the result and cb early, otherwise extract\nthe :value and continue on to compilation.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/4b44c3e4d48c14d47eaa46c203fcc28df16d3941"
+        },
+        {
+          "sha": "609400910e983849e5b7932a4b7d0b0dda465df6",
+          "author_date": "2016-01-31T23:27:10Z",
+          "message": "CLJS-1557: Make special-symbol? return true for catch and finally",
+          "html_url": "https://github.com/clojure/clojurescript/commit/609400910e983849e5b7932a4b7d0b0dda465df6"
+        },
+        {
+          "sha": "d63ad27bbf431274428b9ff391779bac04fef2d0",
+          "author_date": "2016-01-30T02:44:51Z",
+          "message": "CLJS-1488: cljs.repl/source Cannot read source of cljs functions that use #js reader",
+          "html_url": "https://github.com/clojure/clojurescript/commit/d63ad27bbf431274428b9ff391779bac04fef2d0"
+        },
+        {
+          "sha": "89ec69f06919afaa102a078606dc0ab8b1015fb5",
+          "author_date": "2016-01-27T14:57:31Z",
+          "message": "CLJS-1552: doc for & should match fn\n\nCurrently `(doc &)` produces `(empty)` doc as if fn is a special form.\nThis revision simply delegates to doc so that `(doc &)` is converted\nto `(doc fn)`. This results in the intended doc for the fn macro to\nbe displayed.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/89ec69f06919afaa102a078606dc0ab8b1015fb5"
+        },
+        {
+          "sha": "8f7b1d02d113e49965ebcfe418454b93ba45a6e5",
+          "author_date": "2016-01-23T04:06:32Z",
+          "message": "CLJS-1551: Self-host: assert-args dormant in macros\n\nSince self-host must call macros defined in a different compilation\nstage, the assert-args macro used in if-let and other macros must be\ndefined in a different namespace entirely (they can't be in cljs.core\nbecause this namespace is already being compiled as a macros namespace\nat this point). Introduce a cljs.support namespace for this purpose,\nand to keep things simple, also arrange to have non-bootstrap use this\nnamespace for the purpose of assert-args.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/8f7b1d02d113e49965ebcfe418454b93ba45a6e5"
+        },
+        {
+          "sha": "c0a4e07426b67659ae575cc731e83f7007c36c43",
+          "author_date": "2016-01-22T23:33:26Z",
+          "message": "CLJS-1550: Enhance docstring for extend-type wrt type-sym",
+          "html_url": "https://github.com/clojure/clojurescript/commit/c0a4e07426b67659ae575cc731e83f7007c36c43"
+        },
+        {
+          "sha": "cca12a51257b71a66156a090aba06dcd13949c0a",
+          "author_date": "2016-02-06T14:06:33Z",
+          "message": "CLJS-1541: Self-host: Cannot require 'cljs.js using cljs.jar\n\nThis change updates things to mimic the handling of the defn macro\ndefined previously in the file. A result is that defmacro is\navailable in the standalone shipping cljs.jar and this then makes\nit possible to (require 'cljs.js).",
+          "html_url": "https://github.com/clojure/clojurescript/commit/cca12a51257b71a66156a090aba06dcd13949c0a"
+        },
+        {
+          "sha": "22c10ba8304a8e3f6da9a903042ce1a09f03e370",
+          "author_date": "2016-02-10T03:48:51Z",
+          "message": "CLJS-1565: Self-host: whitespace optimization is broken\n\nIf generating single-file (in particular :whitespace) output for a\nproject that makes use of cljs.js, it is possible for the concatenated\nfile to have cljs.js appear prior to cljs.core$macros, and thus cause\na dependency issue when loading the file. This is a consequence of the\nfact that the cljs.closure.JavaScriptFile compiled output for cljs.js\ndoesn't specify cljs.core$macros macros as a dependency.\n\nThere are already a few places where the cljs.core$macros dependency is\npatched in. This revision factors out a bit of that logic and adds it\nto another needed place.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/22c10ba8304a8e3f6da9a903042ce1a09f03e370"
+        },
+        {
+          "sha": "fcdca3d3d2196e18b851ccf8c5328dbd50acfb97",
+          "author_date": "2016-02-06T12:34:49Z",
+          "message": "CLJS-970: generate assert message when compiling",
+          "html_url": "https://github.com/clojure/clojurescript/commit/fcdca3d3d2196e18b851ccf8c5328dbd50acfb97"
+        },
+        {
+          "sha": "baaa73ace52f5a23de026971d1910b8905ad8ca8",
+          "author_date": "2016-01-31T15:44:46Z",
+          "message": "CLJS-1555: make-array macro missing 2 arg arity",
+          "html_url": "https://github.com/clojure/clojurescript/commit/baaa73ace52f5a23de026971d1910b8905ad8ca8"
+        },
+        {
+          "sha": "74164b47e0254fbae319596ab4b517e0ce44ea68",
+          "author_date": "2015-10-19T17:27:59Z",
+          "message": "CLJS-1411: make-array signature differs from clojure\n\n- added new function signature to match that of Clojure's\n- added warning about the computational cost of creating\nmulti-dimensional arrays in JavaScript to the docstring",
+          "html_url": "https://github.com/clojure/clojurescript/commit/74164b47e0254fbae319596ab4b517e0ce44ea68"
+        },
+        {
+          "sha": "1538599b2e28b605c7837b45e23e9d3129c681a9",
+          "author_date": "2016-02-12T22:05:01Z",
+          "message": "bump to Clojure 1.8",
+          "html_url": "https://github.com/clojure/clojurescript/commit/1538599b2e28b605c7837b45e23e9d3129c681a9"
+        },
+        {
+          "sha": "d4055ec82af3184fb1321016e7c85e492cf65362",
+          "author_date": "2016-02-12T22:11:08Z",
+          "message": "1.8 revision",
+          "html_url": "https://github.com/clojure/clojurescript/commit/d4055ec82af3184fb1321016e7c85e492cf65362"
+        },
+        {
+          "sha": "70a43138844e19f771ef20bc6e847829ce0a5711",
+          "author_date": "2016-02-15T00:05:23Z",
+          "message": "CLJS-744: ISequential types should implement JS indexOf, lastIndexOf\n\n- implements `indexOf` and `lastIndexOf` for ISequential types\n- the implementation for both functions conforms to the TC39\nspecification so that the behavior is the same across native host types\nand ClojureScript persistent data structures",
+          "html_url": "https://github.com/clojure/clojurescript/commit/70a43138844e19f771ef20bc6e847829ce0a5711"
+        },
+        {
+          "sha": "db83b5262a39a419d7cb6af6429edefedde18899",
+          "author_date": "2016-02-15T21:53:23Z",
+          "message": "less cryptic error if :main doesn't correspond to any file",
+          "html_url": "https://github.com/clojure/clojurescript/commit/db83b5262a39a419d7cb6af6429edefedde18899"
+        },
+        {
+          "sha": "d6e39e9da9db04fd220e36a0341ebb6d172a6dba",
+          "author_date": "2016-02-15T21:53:34Z",
+          "message": "move apply declare",
+          "html_url": "https://github.com/clojure/clojurescript/commit/d6e39e9da9db04fd220e36a0341ebb6d172a6dba"
+        },
+        {
+          "sha": "431b6e86d5d0515baed3b8dc4a82c8fecc41f529",
+          "author_date": "2016-02-15T05:08:26Z",
+          "message": "CLJS-1571: Make special-symbol? true for 'var",
+          "html_url": "https://github.com/clojure/clojurescript/commit/431b6e86d5d0515baed3b8dc4a82c8fecc41f529"
+        },
+        {
+          "sha": "6f14ccbe47b92c461f0571f563a46b2a2354aa59",
+          "author_date": "2016-02-13T06:44:57Z",
+          "message": "CLJS-1567: make-array macro missing > 2 arg arity\n\nAdds the additional arity to the macro,\nalong with tests for the macro and fn.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/6f14ccbe47b92c461f0571f563a46b2a2354aa59"
+        },
+        {
+          "sha": "ce25dce6c332f395e550d6b572f76e3482b1acec",
+          "author_date": "2016-02-14T01:46:35Z",
+          "message": "CLJS-1492: Warn when using :optimisations instead of :optimizations\n\nDetect when an unknown compiler or REPL option is passed by comparing\nagainst explicitly-maintained set of all known options. When an unknown\noption is passed, find a known one with minimum Levenshtein distance\nfrom the unknown option (within a threshold), and warn and suggest\ncorrect option name.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/ce25dce6c332f395e550d6b572f76e3482b1acec"
+        },
+        {
+          "sha": "b98351ee286ede5261bd8e08762b25294dc27408",
+          "author_date": "2016-02-15T22:34:55Z",
+          "message": "CLJS-1569: IndexedSeq doesn't implement IWithMeta / IMeta",
+          "html_url": "https://github.com/clojure/clojurescript/commit/b98351ee286ede5261bd8e08762b25294dc27408"
+        },
+        {
+          "sha": "2b948b0f36f897dab9575e6a5f35c70e61ea8a7f",
+          "author_date": "2016-02-17T13:54:07Z",
+          "message": "bump tools reader and Google Closure Compiler dependencies\n\ncharset API changed in GCC, fix cljs.closure/set-options",
+          "html_url": "https://github.com/clojure/clojurescript/commit/2b948b0f36f897dab9575e6a5f35c70e61ea8a7f"
+        },
+        {
+          "sha": "48cf99cc6520204dff085692803f90732ac80ba9",
+          "author_date": "2016-02-17T14:44:14Z",
+          "message": "cleanup charset handling, improve error message",
+          "html_url": "https://github.com/clojure/clojurescript/commit/48cf99cc6520204dff085692803f90732ac80ba9"
+        },
+        {
+          "sha": "7d3198d0eeb455cf8ee949df94b7095eecbc3b54",
+          "author_date": "2016-02-17T22:55:37Z",
+          "message": "revert to previous Closure Compiler for now",
+          "html_url": "https://github.com/clojure/clojurescript/commit/7d3198d0eeb455cf8ee949df94b7095eecbc3b54"
+        },
+        {
+          "sha": "cfa725745947a54c766af96f8b9790275aa6e6ef",
+          "author_date": "2016-02-18T15:28:55Z",
+          "message": "fix typo in project.clj",
+          "html_url": "https://github.com/clojure/clojurescript/commit/cfa725745947a54c766af96f8b9790275aa6e6ef"
+        },
+        {
+          "sha": "dbb7dc9f8a3bbc227c892d55d617aa336f08589e",
+          "author_date": "2016-02-19T15:22:21Z",
+          "message": "enable direct linking when building",
+          "html_url": "https://github.com/clojure/clojurescript/commit/dbb7dc9f8a3bbc227c892d55d617aa336f08589e"
+        },
+        {
+          "sha": "0ec3e833fdb280cf3aa78f7c129cc5e36c7d20b2",
+          "author_date": "2016-02-19T15:25:07Z",
+          "message": "add direct linking to project.clj",
+          "html_url": "https://github.com/clojure/clojurescript/commit/0ec3e833fdb280cf3aa78f7c129cc5e36c7d20b2"
+        },
+        {
+          "sha": "ace9da353d21b4a7430347e6d3f1d99bca6ec857",
+          "author_date": "2016-02-19T01:36:27Z",
+          "message": "CLJS-1580: Self-host: goog.provide offsets source-maps\n\nWhen goog.provide is emitted as a result of processing :ns :op, this\nmodification to the JavaScript offsets the lines in that file by one,\nthus messing up source mapping lines, if enabled. Instead of simply\nusing str to generate the line, use comp/emitln, which internally does\nthe proper accounting with respect to source maps.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/ace9da353d21b4a7430347e6d3f1d99bca6ec857"
+        },
+        {
+          "sha": "1e486d2599d60d6d0bdcecbe65a425531701a6c4",
+          "author_date": "2016-02-18T21:10:21Z",
+          "message": "CLJS-1579: cljs.source-map/invert-reverse-map discards gcol\n\nThe innermost update-in should refer\nto [gcol] in order to invert that bit\nof the mapping.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/1e486d2599d60d6d0bdcecbe65a425531701a6c4"
+        },
+        {
+          "sha": "68524a89eea8a8ae6cb69d1329acb3e3025c0fb6",
+          "author_date": "2016-02-19T19:10:26Z",
+          "message": "CLJS-1578: Corrupted Analysis Files Break Compilation\n\nDon't assume reading the analysis cache is going to work. For example it may have only been\npartially written out. If a error is thrown during reading the cache, retry and skip the analysis\ncache stuff.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/68524a89eea8a8ae6cb69d1329acb3e3025c0fb6"
+        },
+        {
+          "sha": "d3a9444ba4ff6b8509f31e50c182b140a3aeaf1d",
+          "author_date": "2016-02-14T12:32:22Z",
+          "message": "CLJS-1568: LazyTransformer doesn't implement IMeta",
+          "html_url": "https://github.com/clojure/clojurescript/commit/d3a9444ba4ff6b8509f31e50c182b140a3aeaf1d"
+        },
+        {
+          "sha": "c59e957f6230c07e7a228070dd8eb393d5b8ce40",
+          "author_date": "2016-02-19T20:02:40Z",
+          "message": "CLJS-1570: :parallel-build causes invalid truth check in cljs.reader/read-number\n\nmake cljs.analyzer/*unchecked-if* a dynamic var with a default value of `false`.\nbind it around file scopes so that we can set! it thread locally, sufficient for parallel\nbuilds which works a file at a time. ClojureScript & bootstrapped can now share logic.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/c59e957f6230c07e7a228070dd8eb393d5b8ce40"
+        },
+        {
+          "sha": "16666f37cc13ead5a66330046db82a2976b6f1f0",
+          "author_date": "2016-02-20T21:29:11Z",
+          "message": "CLJS-1573: Self-host: Invalid UTF escaping in cljs-in-cljs\n\nZero-pad \\u escapes",
+          "html_url": "https://github.com/clojure/clojurescript/commit/16666f37cc13ead5a66330046db82a2976b6f1f0"
+        },
+        {
+          "sha": "ca5dda18cad9dc1f04fc07a330e8932337d53f15",
+          "author_date": "2015-12-24T14:18:18Z",
+          "message": "CLJS-1521: Self-host: Macro namespaces cannot be aliased\n\nUse find-macro-ns when looking for macro expander\nso that aliased macro namespaces can properly\nresolve in bootstrap.\n\nAdds unit tests excercising the various ways you can\nrequire and make use of macros.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/ca5dda18cad9dc1f04fc07a330e8932337d53f15"
+        },
+        {
+          "sha": "2023353d635578a0666a50c3305bf92347185646",
+          "author_date": "2016-02-23T14:04:27Z",
+          "message": "CLJS-1584: Self-host: core/str error with condp\n\nThe condp macro uses core/str in\na syntax-quote context, while\nevery other place it appears that\ncljs.core/str is used in that context.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/2023353d635578a0666a50c3305bf92347185646"
+        },
+        {
+          "sha": "ea40068d34746fc27e61b6b612a66e65cd78b810",
+          "author_date": "2016-02-23T14:36:46Z",
+          "message": "CLJS-1564: Self-host: cached macro *loaded* update\n\nWhen requiring namespaces, the namespace name symbol is conjed into the\n*loaded* set, with the ana/macro-ns-name being conjed in the case of a\nmacros namespace. (So for example, 'foo.core for a regular namespace\nand 'foo.core$macros for a macros namespace.)\n\nBut, if the namespace being loaded is a macros namespace for which\nthe client returns cached JavaScript, then the code instead conjes the\nbase namespace name.\n\nThis is actually the result of a simple oversight with the changes\nmade for CLJS-1504: One place where *loaded* is manipulated, name is\nused instead of aname.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/ea40068d34746fc27e61b6b612a66e65cd78b810"
+        },
+        {
+          "sha": "22a2692c9fcbae7a002ddedc088e50c7c2cbccfe",
+          "author_date": "2016-02-23T14:52:13Z",
+          "message": "CLJS-1577: Self-host: syntax-quote resolves on dot forms\n\nIf you try to evaluate a syntax-quoted dot form, as in `.x, by default\nsymbol resolution will be applied to the dot form .x, yielding /x.\nInstead, we need this to yield just .x. To do this, revise cljs.js\nto check for this case before delegating to cljs.analyzer/resolve-symbol.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/22a2692c9fcbae7a002ddedc088e50c7c2cbccfe"
+        },
+        {
+          "sha": "7f7b647be0bc32de56772a9f5eb9d86998197287",
+          "author_date": "2016-02-23T21:04:18Z",
+          "message": "CLJS-1585: Self-host: Alias-scoped keywords\n\nSince cljs.tools.reader makes use of *alias-map* to resolve aliases,\nbind it to the :requires map for the current namespace in the compiler\nstate. This allows alias-scoped keywords (such as ::alias-name/foo\nto be properly expanded.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/7f7b647be0bc32de56772a9f5eb9d86998197287"
+        },
+        {
+          "sha": "e531c34e04adc815a6c25c8d2499465296ca290d",
+          "author_date": "2015-08-12T20:15:09Z",
+          "message": "CLJS-1420 - get-in behavior differs from Clojure by always deferring to the 3 arity fn\n\nReverts back to original reduce for 2 arity get-in",
+          "html_url": "https://github.com/clojure/clojurescript/commit/e531c34e04adc815a6c25c8d2499465296ca290d"
+        },
+        {
+          "sha": "f58dcdf4dc37ef52d4eb1e2b7c994282bf6351f5",
+          "author_date": "2016-02-22T22:52:02Z",
+          "message": "CLJS-1583: (hash (symbol \"/\")) does not match (hash '/)\n\nModify symbol function to correctly handle \"/\" corner-case,\nand add tests comparing properties of '/ vs (symbol \"/\").",
+          "html_url": "https://github.com/clojure/clojurescript/commit/f58dcdf4dc37ef52d4eb1e2b7c994282bf6351f5"
+        },
+        {
+          "sha": "032077b52fd7c4359f18004f14faadab0d1a0782",
+          "author_date": "2016-03-03T16:06:22Z",
+          "message": "CLJS-1597: Redundant IPrintWithWriter test in pr-writer-impl\n\nRemove effectively dead code.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/032077b52fd7c4359f18004f14faadab0d1a0782"
+        },
+        {
+          "sha": "d56309ec0b9603a34fe096df4fd2ae8247687213",
+          "author_date": "2016-03-02T17:52:37Z",
+          "message": "CLJS-1594: NaN and both infinities cannot be elements of a set\n\nCheck if a number is Infinity, -Infinity, or NaN with isFinite then use matching hash values from Clojure for the values",
+          "html_url": "https://github.com/clojure/clojurescript/commit/d56309ec0b9603a34fe096df4fd2ae8247687213"
+        },
+        {
+          "sha": "aa0345197b2fa33ea1b3a58915400c9e7f37cdd2",
+          "author_date": "2016-03-04T20:56:35Z",
+          "message": "CLJS-1596: Self-host: :load-macros and :analyze-deps don't work in cljs.js\n\nOnly default to true if not set.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/aa0345197b2fa33ea1b3a58915400c9e7f37cdd2"
+        },
+        {
+          "sha": "c31e91f89dab42d519e9051e630ac8011cafa8d7",
+          "author_date": "2016-02-27T22:18:56Z",
+          "message": "CLJS-1589: Self-host: case fail with nil\n\nIn bootstrapped ClojureScript, case will fail with a nil test because\nchar? will throw. This revision nil-patches the char? test conditionallyfor bootstrapped mode.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/c31e91f89dab42d519e9051e630ac8011cafa8d7"
+        },
+        {
+          "sha": "c3899acf797eb6779c53b313f5606c5018360b83",
+          "author_date": "2016-03-03T23:13:41Z",
+          "message": "LJS-1590: split, split-lines differs from Clojure on empty string\n\nOnly discard training if split generates more than one element",
+          "html_url": "https://github.com/clojure/clojurescript/commit/c3899acf797eb6779c53b313f5606c5018360b83"
+        },
+        {
+          "sha": "f057e3cdd7490faeba824920d8b48b80aac69a87",
+          "author_date": "2016-02-20T17:18:37Z",
+          "message": "CLJS-1582: Type-hint extend-type first arg for primitives\n\nIf extending boolean or number to a protocol, propagate type hint to\nfirst arg of fns.\n\nThis is done by walking the code in the impl-map, and associng the\npassed type-sym as the :tag meta for the first argument of all fns.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/f057e3cdd7490faeba824920d8b48b80aac69a87"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r1.8.40",
       "previous_release": "r1.8.34",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "43565685860e53c007938228ee0ebf43a14b6396",
+          "author_date": "2016-03-18T18:00:24Z",
+          "message": "Updates for 1.8.34",
+          "html_url": "https://github.com/clojure/clojurescript/commit/43565685860e53c007938228ee0ebf43a14b6396"
+        },
+        {
+          "sha": "757b7591cf246ce90fb04e5d84ebcbc9f78d9923",
+          "author_date": "2016-03-18T18:32:06Z",
+          "message": "add missing known compiler options",
+          "html_url": "https://github.com/clojure/clojurescript/commit/757b7591cf246ce90fb04e5d84ebcbc9f78d9923"
+        },
+        {
+          "sha": "ba18d9f72e946114199471f6a3e50498ad9792ee",
+          "author_date": "2016-02-25T17:15:20Z",
+          "message": "CLJS-1592: Self-host: Robustness for core tests\n\nA couple minor things that can be improved in the core tests which\nfacilitates running them in bootstrapped environments:\n\n1. Restore *print-newline*\n2. Add a little more order robustness for hash-based collections",
+          "html_url": "https://github.com/clojure/clojurescript/commit/ba18d9f72e946114199471f6a3e50498ad9792ee"
+        },
+        {
+          "sha": "4681e47418ead29156ca01d58eee700e11c1e096",
+          "author_date": "2016-03-18T19:30:44Z",
+          "message": ":warning-handlers missing from known compiler options",
+          "html_url": "https://github.com/clojure/clojurescript/commit/4681e47418ead29156ca01d58eee700e11c1e096"
+        },
+        {
+          "sha": "177b05fc5935c659e4829b7b1798e216b6797bec",
+          "author_date": "2016-03-19T04:37:12Z",
+          "message": "CLJS-1603: Only warn for misspelled comp/REPL opts\n\nREPLs may have REPL-specific options which are added to the compiler/\nREPL option map and this triggers \"unknown compiler option\" warnings.\n\nInstead, only issue warnings when there are known suggestions within\nthe Levenshtein distance threshold. This effectively limits the feature\nto its original use case of detecting minor misspellings.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/177b05fc5935c659e4829b7b1798e216b6797bec"
+        },
+        {
+          "sha": "f0ac4c92006ac618516c11e9ca3527904d35d4af",
+          "author_date": "2016-03-21T20:42:19Z",
+          "message": "CLJS-1605: Add all repl* options to known-repl-options",
+          "html_url": "https://github.com/clojure/clojurescript/commit/f0ac4c92006ac618516c11e9ca3527904d35d4af"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r1.8.51",
       "previous_release": "r1.8.40",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "4d44548ae6155208e4ed8b1ef280a6645c830f68",
+          "author_date": "2016-03-28T12:05:57Z",
+          "message": "1.8.40",
+          "html_url": "https://github.com/clojure/clojurescript/commit/4d44548ae6155208e4ed8b1ef280a6645c830f68"
+        },
+        {
+          "sha": "4e64079741e5d586c16c5ef2746aad3886d6d7d6",
+          "author_date": "2016-04-03T23:04:01Z",
+          "message": "Avoid corrupted compiler env in ana/parse-ns\n\nparse-ns allows for running the parse in two ways: updating the global\ncompiler env or not updating it. This is controlled via the :restore\noption. To implement this, it isolates the parsing process by binding the\ncompiler env to a snapshot of the compiler env when it starts. When the\nparsing is done, it checks the :restore option and if it's false it\nmerges back parts of the resulting compiler env (the ::namespaces and\n::constants keys) into the global compiler env.\n\nThe problem is that during the parsing, other compiler processes could\nhave legitimately updated those same keys in the global compiler env, so\nthis merge can occasionally result in compiler data loss.\n\nThe race condition can avoided by using a different approach: only when\n:restore is true the compiler runs isolated from the global compiler\nenv, by taking a snapshot of the env at the beginning. When :restore is\nfalse, no snapshot is taken: env/*compiler* binding is not modified, so\nthe global compiler env is mutated in-place",
+          "html_url": "https://github.com/clojure/clojurescript/commit/4e64079741e5d586c16c5ef2746aad3886d6d7d6"
+        },
+        {
+          "sha": "9a2be8bc665385be1ef866e2fd76b476c417d2bf",
+          "author_date": "2016-04-08T19:07:20Z",
+          "message": "bump tools.reader to 1.0.0-beta1",
+          "html_url": "https://github.com/clojure/clojurescript/commit/9a2be8bc665385be1ef866e2fd76b476c417d2bf"
+        },
+        {
+          "sha": "29eb8e014f60d57c974fef46f8609ca0be0fd247",
+          "author_date": "2016-04-08T19:40:26Z",
+          "message": "CLJS-1617: Evaluation order of arguments to 'list' is right-to-left\n\ndon't optimize list construction unless we have constants",
+          "html_url": "https://github.com/clojure/clojurescript/commit/29eb8e014f60d57c974fef46f8609ca0be0fd247"
+        },
+        {
+          "sha": "c1f45ff6e580d5a87d3c2fcae648478099275611",
+          "author_date": "2016-04-15T12:43:35Z",
+          "message": "CLJS-1624: Avoid the use of JSC_HOME for tests\n\nDon't make use of JSC_HOME because it triggers a warning in command-line\napps that make use of JavaScriptCore owing to\n\n   http://trac.webkit.org/changeset/194606\n\nInstead, we can simply check to see if jsc is on the path.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/c1f45ff6e580d5a87d3c2fcae648478099275611"
+        },
+        {
+          "sha": "56611b5f653e5b8cbeaff9d975cf9f73b755f9c3",
+          "author_date": "2016-04-10T17:38:47Z",
+          "message": "CLJS-1621: Foreign libs modules of different type doesn't compile together\n\nThese changes allows to include JavaScript modules with dependencies of different module type (AMD, CommonJS and ES6) into Closure Compiler compilation step.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/56611b5f653e5b8cbeaff9d975cf9f73b755f9c3"
+        },
+        {
+          "sha": "28e040d41f3a83901b6391898f51c4bfc2622452",
+          "author_date": "2016-04-20T14:02:38Z",
+          "message": "CLJS-1626: cljs.test for bootstrap",
+          "html_url": "https://github.com/clojure/clojurescript/commit/28e040d41f3a83901b6391898f51c4bfc2622452"
+        },
+        {
+          "sha": "1e794f0a9d6c03b12644f00cd8aa4f8a3e86ab83",
+          "author_date": "2016-04-17T15:16:13Z",
+          "message": "CLJS-1612: Resolve ns aliases in syntax quote",
+          "html_url": "https://github.com/clojure/clojurescript/commit/1e794f0a9d6c03b12644f00cd8aa4f8a3e86ab83"
+        },
+        {
+          "sha": "6ba817065113313a15b0f027c6491e0bc732f3e9",
+          "author_date": "2016-04-23T20:51:20Z",
+          "message": "CLJS-1595: Update Closure Compiler",
+          "html_url": "https://github.com/clojure/clojurescript/commit/6ba817065113313a15b0f027c6491e0bc732f3e9"
+        },
+        {
+          "sha": "8d33dd4e55cc87c205bb5c37d0234af6e2132388",
+          "author_date": "2016-04-24T18:18:39Z",
+          "message": "CLJS-1632: Typos, c/e, and consistency of docs/params",
+          "html_url": "https://github.com/clojure/clojurescript/commit/8d33dd4e55cc87c205bb5c37d0234af6e2132388"
+        },
+        {
+          "sha": "f110ed3b0adcaad90912a3c89228cc882ffe2214",
+          "author_date": "2016-04-24T15:30:25Z",
+          "message": "CLJS-1588: Self-host: satisfies? on defrecord instance\n\nA bit-shift operation for protocol\nmasks overflows to signed negagive\nin JavaScript, causing bootstrap failure.\n\nFix is to simply multiply by 2 instead of\nbit-shift left.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/f110ed3b0adcaad90912a3c89228cc882ffe2214"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r1.9.14",
@@ -2152,8 +2557,75 @@
     {
       "release": "r1.9.671",
       "previous_release": "r1.9.660",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "004107aceb3f477fcda8d332e6ea881f4eda67ff",
+          "author_date": "2017-06-27T20:14:38Z",
+          "message": "fix :fn-invoke-direct edgecase around keywords",
+          "html_url": "https://github.com/clojure/clojurescript/commit/004107aceb3f477fcda8d332e6ea881f4eda67ff"
+        },
+        {
+          "sha": "df4959ff3ad573d6c178e071efd594b002fee4eb",
+          "author_date": "2017-06-27T20:21:56Z",
+          "message": "just emit call if for some reason we haven't already optimized",
+          "html_url": "https://github.com/clojure/clojurescript/commit/df4959ff3ad573d6c178e071efd594b002fee4eb"
+        },
+        {
+          "sha": "aa69dea1f5fa89982cf85a56510d8af04b6d3444",
+          "author_date": "2017-06-28T12:33:29Z",
+          "message": "resolve returns improperly constructed Var",
+          "html_url": "https://github.com/clojure/clojurescript/commit/aa69dea1f5fa89982cf85a56510d8af04b6d3444"
+        },
+        {
+          "sha": "1f95b5e804fb584624fbfb3c4cf77afbc34b7122",
+          "author_date": "2017-06-28T13:12:16Z",
+          "message": "need to elide :c.a/analyzed in c.a/analyze-wrap-meta",
+          "html_url": "https://github.com/clojure/clojurescript/commit/1f95b5e804fb584624fbfb3c4cf77afbc34b7122"
+        },
+        {
+          "sha": "42c2e85601a81438c7b08e22b12aa0b9828feeca",
+          "author_date": "2017-06-28T14:38:00Z",
+          "message": "CLJS-2136: Clarify IFind contract to avoid double-lookups\n\n* Adds a docstring to the -find method clarifying that implementors\n  may need to return nil.\n* Changes find to test for and use IFind first rather than testing for\n  key containment first.\n* Changes all IFind implementations in core to perform key checks and\n  value retrieval in a single lookup.\n* Adds some more tests for find on a vector using degenerate keys.\n* Alters a test using find because of contact ambiguity to use -find\n  instead.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/42c2e85601a81438c7b08e22b12aa0b9828feeca"
+        },
+        {
+          "sha": "4814435535e3bed6e48b3b725d902aa3a92e7083",
+          "author_date": "2017-06-28T16:58:25Z",
+          "message": "remove integer validation in PV -find",
+          "html_url": "https://github.com/clojure/clojurescript/commit/4814435535e3bed6e48b3b725d902aa3a92e7083"
+        },
+        {
+          "sha": "ef95e1e35713d3db9122657f3d1ff595932b682d",
+          "author_date": "2017-06-28T17:33:31Z",
+          "message": "fix Subvec IFind, add tests\n\nremove PV find floating point test",
+          "html_url": "https://github.com/clojure/clojurescript/commit/ef95e1e35713d3db9122657f3d1ff595932b682d"
+        },
+        {
+          "sha": "d598fd9ca9b7a104741d6a68a6222093059d7389",
+          "author_date": "2017-06-28T18:30:53Z",
+          "message": "Subvec should not delegate -find, additional tests",
+          "html_url": "https://github.com/clojure/clojurescript/commit/d598fd9ca9b7a104741d6a68a6222093059d7389"
+        },
+        {
+          "sha": "b1b09bb4eefb1516b59dcb3dc760b0242917397c",
+          "author_date": "2017-06-29T12:20:00Z",
+          "message": "CLJS-2137: Missing INext on some sequences\n\nAdded INext to ArrayNodeSeq, NodeSeq, PersistentQueueSeq and\nPersistentTreeMapSeq",
+          "html_url": "https://github.com/clojure/clojurescript/commit/b1b09bb4eefb1516b59dcb3dc760b0242917397c"
+        },
+        {
+          "sha": "3fa42835a4b300ad2cfba17bc4cab9cde536066a",
+          "author_date": "2017-06-30T02:49:59Z",
+          "message": "CLJS-2139: Undeclared var regression in fn bodies\n\nWith CLJS-2066, a change was made to skip analyzing named fn method\nbodies on the first analysis pass, deferring this analyis to the\nsecond, richer pass dedicated to optmizing self calls. Since the second\npass has all warnings suppressed, this introduces a subtle regression\nin that no warnings would be emitted for issues found in named function\nbodies.\n\nThis fixes the issue by turning off the blanket no-warn for the second\npass. Since warnings can only be emitted when analyzing method bodies\n(the analysis of parameters doesn't lead to warnings), this is\nsufficient to solve the problem.",
+          "html_url": "https://github.com/clojure/clojurescript/commit/3fa42835a4b300ad2cfba17bc4cab9cde536066a"
+        },
+        {
+          "sha": "e86c36bb5408a0778bde6b56a292819d6d2af4c6",
+          "author_date": "2017-06-30T13:34:37Z",
+          "message": "1.9.671",
+          "html_url": "https://github.com/clojure/clojurescript/commit/e86c36bb5408a0778bde6b56a292819d6d2af4c6"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r1.9.854",

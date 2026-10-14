@@ -3390,8 +3390,267 @@
     {
       "release": "v1.17.0",
       "previous_release": "v1.16.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "1e5f186b580cbed0699a1a4df41c67e57000456d",
+          "author_date": "2018-04-26T03:07:57Z",
+          "message": "Search Login URI as well",
+          "html_url": "https://github.com/bitwarden/android/commit/1e5f186b580cbed0699a1a4df41c67e57000456d"
+        },
+        {
+          "sha": "f7570122c6eac357233e51626701cb23d4528fd6",
+          "author_date": "2018-04-26T03:44:32Z",
+          "message": "ignore \"edit\" fields on autofill",
+          "html_url": "https://github.com/bitwarden/android/commit/f7570122c6eac357233e51626701cb23d4528fd6"
+        },
+        {
+          "sha": "c308d7a61023d9437aebf1ca8aa020a6c8727a7d",
+          "author_date": "2018-04-26T04:03:47Z",
+          "message": "look for password fields from HtmlInfo attributes",
+          "html_url": "https://github.com/bitwarden/android/commit/c308d7a61023d9437aebf1ca8aa020a6c8727a7d"
+        },
+        {
+          "sha": "c595c381a99a9f8c8713542e3dd9a7423cce4d4c",
+          "author_date": "2018-04-26T04:06:43Z",
+          "message": "bump android version",
+          "html_url": "https://github.com/bitwarden/android/commit/c595c381a99a9f8c8713542e3dd9a7423cce4d4c"
+        },
+        {
+          "sha": "8b9a178c878a43e16ee952f6d4e881a0b700eb4f",
+          "author_date": "2018-04-28T04:23:31Z",
+          "message": "faceid description in info.plist",
+          "html_url": "https://github.com/bitwarden/android/commit/8b9a178c878a43e16ee952f6d4e881a0b700eb4f"
+        },
+        {
+          "sha": "4637b7d93f04330468ace06070a592bb72d2b8c9",
+          "author_date": "2018-04-28T04:25:58Z",
+          "message": "update fingerprint lib",
+          "html_url": "https://github.com/bitwarden/android/commit/4637b7d93f04330468ace06070a592bb72d2b8c9"
+        },
+        {
+          "sha": "85c67ac67670528967728ad94cfea5f17e5075b6",
+          "author_date": "2018-05-19T01:42:51Z",
+          "message": "version bump",
+          "html_url": "https://github.com/bitwarden/android/commit/85c67ac67670528967728ad94cfea5f17e5075b6"
+        },
+        {
+          "sha": "41b4ee33feb46aae44bf9fde42345424e72fc7d1",
+          "author_date": "2018-05-20T14:14:54Z",
+          "message": "adjust max_aspect ratio for samsung full screen",
+          "html_url": "https://github.com/bitwarden/android/commit/41b4ee33feb46aae44bf9fde42345424e72fc7d1"
+        },
+        {
+          "sha": "62002b8bb37f5d9dfdb15763177881e5b3b4abd1",
+          "author_date": "2018-05-22T02:53:32Z",
+          "message": "disable test nodes",
+          "html_url": "https://github.com/bitwarden/android/commit/62002b8bb37f5d9dfdb15763177881e5b3b4abd1"
+        },
+        {
+          "sha": "add5189bb106906b84839ad9fcad108418f7cbf5",
+          "author_date": "2018-05-22T03:26:54Z",
+          "message": "add via to oreo trusted browsers",
+          "html_url": "https://github.com/bitwarden/android/commit/add5189bb106906b84839ad9fcad108418f7cbf5"
+        },
+        {
+          "sha": "740a18dbc04aa3d611fafc85917f63909a3f6477",
+          "author_date": "2018-05-24T15:41:57Z",
+          "message": "stub out yubico nfc support for ios",
+          "html_url": "https://github.com/bitwarden/android/commit/740a18dbc04aa3d611fafc85917f63909a3f6477"
+        },
+        {
+          "sha": "e7bc9ed5ba07be122137ede3cf02b3885026ff73",
+          "author_date": "2018-05-24T16:49:22Z",
+          "message": "nfc updates",
+          "html_url": "https://github.com/bitwarden/android/commit/e7bc9ed5ba07be122137ede3cf02b3885026ff73"
+        },
+        {
+          "sha": "235ca947be090f0f95477b2bf08a614cb55c0f06",
+          "author_date": "2018-05-24T17:50:11Z",
+          "message": "turn on nfc in plist",
+          "html_url": "https://github.com/bitwarden/android/commit/235ca947be090f0f95477b2bf08a614cb55c0f06"
+        },
+        {
+          "sha": "d3003efe72d8477d3c60cd735c132343cf88bc51",
+          "author_date": "2018-05-24T18:01:00Z",
+          "message": "remove nfc from extension",
+          "html_url": "https://github.com/bitwarden/android/commit/d3003efe72d8477d3c60cd735c132343cf88bc51"
+        },
+        {
+          "sha": "d3646e10a593c4fc493fb965d934da79fa851408",
+          "author_date": "2018-05-24T19:34:09Z",
+          "message": "clearup yubikey reading on ios",
+          "html_url": "https://github.com/bitwarden/android/commit/d3646e10a593c4fc493fb965d934da79fa851408"
+        },
+        {
+          "sha": "f90c407fb68bf46561009a34e41a61fd2cb9bae3",
+          "author_date": "2018-05-25T02:33:29Z",
+          "message": "move nfc delegate to member of appdelegate class",
+          "html_url": "https://github.com/bitwarden/android/commit/f90c407fb68bf46561009a34e41a61fd2cb9bae3"
+        },
+        {
+          "sha": "3315704c142ae56f5786bb09823a2bd195fffca7",
+          "author_date": "2018-05-25T02:34:17Z",
+          "message": "cleanup",
+          "html_url": "https://github.com/bitwarden/android/commit/3315704c142ae56f5786bb09823a2bd195fffca7"
+        },
+        {
+          "sha": "2e5ba0335d4a6888504c50f08b21820c50801964",
+          "author_date": "2018-05-25T02:40:02Z",
+          "message": "hide yubikey token cell for ios",
+          "html_url": "https://github.com/bitwarden/android/commit/2e5ba0335d4a6888504c50f08b21820c50801964"
+        },
+        {
+          "sha": "22a004579696dfbde65df62edc65fccfe58d5b25",
+          "author_date": "2018-05-25T02:43:59Z",
+          "message": "try again button for ios yubikey",
+          "html_url": "https://github.com/bitwarden/android/commit/22a004579696dfbde65df62edc65fccfe58d5b25"
+        },
+        {
+          "sha": "14d1d132a3b7622573af21793916ac2df9b537d7",
+          "author_date": "2018-05-29T19:21:43Z",
+          "message": "dont set key validity dates",
+          "html_url": "https://github.com/bitwarden/android/commit/14d1d132a3b7622573af21793916ac2df9b537d7"
+        },
+        {
+          "sha": "541416f64baf4070a262e80375159e89467337e2",
+          "author_date": "2018-05-29T19:47:39Z",
+          "message": "previous 2017",
+          "html_url": "https://github.com/bitwarden/android/commit/541416f64baf4070a262e80375159e89467337e2"
+        },
+        {
+          "sha": "51eb46241b0614f7325100f9a4ac0335aec734bb",
+          "author_date": "2018-05-29T19:54:57Z",
+          "message": "Revert \"previous 2017\"\n\nThis reverts commit 541416f64baf4070a262e80375159e89467337e2.",
+          "html_url": "https://github.com/bitwarden/android/commit/51eb46241b0614f7325100f9a4ac0335aec734bb"
+        },
+        {
+          "sha": "ffc4e32119fdf4d4ba9ec41f4b0a4c3b623d117f",
+          "author_date": "2018-06-01T18:45:56Z",
+          "message": "run cloc on install",
+          "html_url": "https://github.com/bitwarden/android/commit/ffc4e32119fdf4d4ba9ec41f4b0a4c3b623d117f"
+        },
+        {
+          "sha": "c906f037b5547aca4571ad9e6db3a68b95ba6042",
+          "author_date": "2018-06-04T13:20:38Z",
+          "message": "checked for locked state on activity resume.\n\nresolves #319",
+          "html_url": "https://github.com/bitwarden/android/commit/c906f037b5547aca4571ad9e6db3a68b95ba6042"
+        },
+        {
+          "sha": "3f47ca645bd10d9b547e0dfece3e468945622dcc",
+          "author_date": "2018-06-05T01:02:20Z",
+          "message": "iphone yubikey images",
+          "html_url": "https://github.com/bitwarden/android/commit/3f47ca645bd10d9b547e0dfece3e468945622dcc"
+        },
+        {
+          "sha": "eefd9bf31c04c5179f1d90ff31d35e17c9e38178",
+          "author_date": "2018-06-05T01:06:17Z",
+          "message": "update yubikey options for ios",
+          "html_url": "https://github.com/bitwarden/android/commit/eefd9bf31c04c5179f1d90ff31d35e17c9e38178"
+        },
+        {
+          "sha": "145dac500c4002f64d191b7ce8e7ffc053ada627",
+          "author_date": "2018-06-05T01:08:55Z",
+          "message": "appresources for ios yubikey",
+          "html_url": "https://github.com/bitwarden/android/commit/145dac500c4002f64d191b7ce8e7ffc053ada627"
+        },
+        {
+          "sha": "99713f8ed7dde1bc0b90b28c3153479768fc0745",
+          "author_date": "2018-06-05T15:13:15Z",
+          "message": "remove password generate event on disappear",
+          "html_url": "https://github.com/bitwarden/android/commit/99713f8ed7dde1bc0b90b28c3153479768fc0745"
+        },
+        {
+          "sha": "b5277e89d56f17e0e5759cb6870feda5abae15a7",
+          "author_date": "2018-06-08T12:59:54Z",
+          "message": "add bromite autofill support",
+          "html_url": "https://github.com/bitwarden/android/commit/b5277e89d56f17e0e5759cb6870feda5abae15a7"
+        },
+        {
+          "sha": "a607a7f3ef4d0e10a2d8bcefb0cd27bf8a3d5957",
+          "author_date": "2018-06-08T13:13:42Z",
+          "message": "clear cache flag on disk",
+          "html_url": "https://github.com/bitwarden/android/commit/a607a7f3ef4d0e10a2d8bcefb0cd27bf8a3d5957"
+        },
+        {
+          "sha": "7cac07c1850845c33075edc04bbeb2ee54bdf1ca",
+          "author_date": "2018-06-14T02:41:18Z",
+          "message": "add pbkdf2 key stretching",
+          "html_url": "https://github.com/bitwarden/android/commit/7cac07c1850845c33075edc04bbeb2ee54bdf1ca"
+        },
+        {
+          "sha": "9523c7ab332190f636120cc3b41120d1ca37ebb2",
+          "author_date": "2018-06-18T13:00:45Z",
+          "message": "Card Security Code masked (bitwarden/desktop issue 78) (#328)\n\n* Card Security Code masked in the same way as Passwords. (bitwarden/desktop issue 78)\r\n\r\nBy default shows Card Security Code masked in the same way as Passwords. (bitwarden/desktop issue 78)\r\n\r\n* Creating property to store value of Masked Card Code Shown",
+          "html_url": "https://github.com/bitwarden/android/commit/9523c7ab332190f636120cc3b41120d1ca37ebb2"
+        },
+        {
+          "sha": "d359547dab8b445967b7975bbe5c6790ee0813b9",
+          "author_date": "2018-06-18T13:12:03Z",
+          "message": "monospace fonts for card code",
+          "html_url": "https://github.com/bitwarden/android/commit/d359547dab8b445967b7975bbe5c6790ee0813b9"
+        },
+        {
+          "sha": "72d1421f1d99c6006dfb437ad03243644b0ad336",
+          "author_date": "2018-06-18T17:59:56Z",
+          "message": "shows both accessibility and autofill from tools",
+          "html_url": "https://github.com/bitwarden/android/commit/72d1421f1d99c6006dfb437ad03243644b0ad336"
+        },
+        {
+          "sha": "377029226efda4cfa17fcffc78ffd5bed4269f8b",
+          "author_date": "2018-06-18T18:10:43Z",
+          "message": "allow non-nfc keys on android",
+          "html_url": "https://github.com/bitwarden/android/commit/377029226efda4cfa17fcffc78ffd5bed4269f8b"
+        },
+        {
+          "sha": "e8b67ead1ed20ae6b08b3044e7c413f27b0eb187",
+          "author_date": "2018-06-18T19:23:11Z",
+          "message": "version bump",
+          "html_url": "https://github.com/bitwarden/android/commit/e8b67ead1ed20ae6b08b3044e7c413f27b0eb187"
+        },
+        {
+          "sha": "572d32c1deff3feb2b0f27473fbf7c1d7e05a9ba",
+          "author_date": "2018-06-18T19:30:24Z",
+          "message": "New Crowdin translations (#329)\n\n* New translations AppResources.resx (Bulgarian)\r\n\r\n* New translations copy.resx (Romanian)\r\n\r\n* New translations AppResources.resx (Romanian)\r\n\r\n* New translations AppResources.resx (Portuguese, Brazilian)\r\n\r\n* New translations AppResources.resx (Portuguese)\r\n\r\n* New translations AppResources.resx (Russian)\r\n\r\n* New translations AppResources.resx (Polish)\r\n\r\n* New translations copy.resx (Persian)\r\n\r\n* New translations copy.resx (Persian)\r\n\r\n* New translations AppResources.resx (Persian)\r\n\r\n* New translations AppResources.resx (Norwegian Bokmal)\r\n\r\n* New translations copy.resx (Korean)\r\n\r\n* New translations copy.resx (Korean)\r\n\r\n* New translations copy.resx (Romanian)\r\n\r\n* New translations copy.resx (Vietnamese)\r\n\r\n* New translations AppResources.resx (Vietnamese)\r\n\r\n* New translations AppResources.resx (Ukrainian)\r\n\r\n* New translations AppResources.resx (Turkish)\r\n\r\n* New translations AppResources.resx (Thai)\r\n\r\n* New translations AppResources.resx (Swedish)\r\n\r\n* New translations AppResources.resx (Spanish)\r\n\r\n* New translations AppResources.resx (Slovak)\r\n\r\n* New translations AppResources.resx (Korean)\r\n\r\n* New translations AppResources.resx (Czech)\r\n\r\n* New translations copy.resx (Dutch)\r\n\r\n* New translations copy.resx (Dutch)\r\n\r\n* New translations AppResources.resx (Dutch)\r\n\r\n* New translations AppResources.resx (Danish)\r\n\r\n* New translations copy.resx (Czech)\r\n\r\n* New translations copy.resx (Czech)\r\n\r\n* New translations AppResources.resx (Croatian)\r\n\r\n* New translations AppResources.resx (Chinese Traditional)\r\n\r\n* New translations AppResources.resx (Chinese Simplified)\r\n\r\n* New translations AppResources.resx (Estonian)\r\n\r\n* New translations AppResources.resx (Japanese)\r\n\r\n* New translations AppResources.resx (Italian)\r\n\r\n* New translations AppResources.resx (Indonesian)\r\n\r\n* New translations AppResources.resx (Hungarian)\r\n\r\n* New translations AppResources.resx (Finnish)\r\n\r\n* New translations AppResources.resx (Hindi)\r\n\r\n* New translations AppResources.resx (German)\r\n\r\n* New translations AppResources.resx (French)\r\n\r\n* New translations copy.resx (Vietnamese)",
+          "html_url": "https://github.com/bitwarden/android/commit/572d32c1deff3feb2b0f27473fbf7c1d7e05a9ba"
+        },
+        {
+          "sha": "a6dcd512ea85d84847c60650312e788f5cdc8886",
+          "author_date": "2018-06-18T19:35:04Z",
+          "message": "update designer",
+          "html_url": "https://github.com/bitwarden/android/commit/a6dcd512ea85d84847c60650312e788f5cdc8886"
+        },
+        {
+          "sha": "da3aa56d86c758e078baaeae73ef05ec11ac2f19",
+          "author_date": "2018-06-19T01:24:29Z",
+          "message": "add ko and fa languages",
+          "html_url": "https://github.com/bitwarden/android/commit/da3aa56d86c758e078baaeae73ef05ec11ac2f19"
+        },
+        {
+          "sha": "84a10139c1b94c2a7eae46131fc6a7c30c51c603",
+          "author_date": "2018-06-19T18:28:31Z",
+          "message": "designer update",
+          "html_url": "https://github.com/bitwarden/android/commit/84a10139c1b94c2a7eae46131fc6a7c30c51c603"
+        },
+        {
+          "sha": "899816673c54bb7d2adc39fc1337db7a4c4085e3",
+          "author_date": "2018-06-19T22:02:49Z",
+          "message": "change icons server to bitwarden.net",
+          "html_url": "https://github.com/bitwarden/android/commit/899816673c54bb7d2adc39fc1337db7a4c4085e3"
+        },
+        {
+          "sha": "5a461d68a73f5ea5f2f581c43e2b70e892510cf4",
+          "author_date": "2018-06-20T00:07:48Z",
+          "message": "New Crowdin translations (#330)\n\n* New translations AppResources.resx (Chinese Simplified)\r\n\r\n* New translations AppResources.resx (Chinese Traditional)\r\n\r\n* New translations AppResources.resx (Danish)\r\n\r\n* New translations AppResources.resx (Dutch)\r\n\r\n* New translations AppResources.resx (Estonian)\r\n\r\n* New translations AppResources.resx (German)\r\n\r\n* New translations AppResources.resx (Polish)\r\n\r\n* New translations AppResources.resx (Portuguese)\r\n\r\n* New translations AppResources.resx (Russian)\r\n\r\n* New translations AppResources.resx (Spanish)\r\n\r\n* New translations AppResources.resx (Ukrainian)",
+          "html_url": "https://github.com/bitwarden/android/commit/5a461d68a73f5ea5f2f581c43e2b70e892510cf4"
+        },
+        {
+          "sha": "a39e78a9895cc25aa6130bf19156fce0e31cb3c9",
+          "author_date": "2018-06-20T00:18:07Z",
+          "message": "increment ios build num",
+          "html_url": "https://github.com/bitwarden/android/commit/a39e78a9895cc25aa6130bf19156fce0e31cb3c9"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.18.0",
@@ -3414,8 +3673,183 @@
     {
       "release": "v1.20.0",
       "previous_release": "v1.19.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a98fb7d41e96dd48759e23f1146f8c9d8c229fb2",
+          "author_date": "2018-09-26T16:36:31Z",
+          "message": "back button should be white",
+          "html_url": "https://github.com/bitwarden/android/commit/a98fb7d41e96dd48759e23f1146f8c9d8c229fb2"
+        },
+        {
+          "sha": "f8d5ee9d5dceab9f048ec1d950d45ce59afd1b20",
+          "author_date": "2018-09-26T16:38:26Z",
+          "message": "bump version",
+          "html_url": "https://github.com/bitwarden/android/commit/f8d5ee9d5dceab9f048ec1d950d45ce59afd1b20"
+        },
+        {
+          "sha": "f19a8a3cc5158a7a1768a86ad69e3185efc4b357",
+          "author_date": "2018-09-29T16:14:44Z",
+          "message": "os version checks on auth service apis",
+          "html_url": "https://github.com/bitwarden/android/commit/f19a8a3cc5158a7a1768a86ad69e3185efc4b357"
+        },
+        {
+          "sha": "d32dd95e12174db43a53908f86ce0778ef669789",
+          "author_date": "2018-10-01T18:18:47Z",
+          "message": "add minimum os version",
+          "html_url": "https://github.com/bitwarden/android/commit/d32dd95e12174db43a53908f86ce0778ef669789"
+        },
+        {
+          "sha": "28a93cdcb4119195cfd1d2a96fdceb6909c842d3",
+          "author_date": "2018-10-01T18:19:15Z",
+          "message": "bump version",
+          "html_url": "https://github.com/bitwarden/android/commit/28a93cdcb4119195cfd1d2a96fdceb6909c842d3"
+        },
+        {
+          "sha": "8d9a5bc08f5ef37ea3efe35571e39244f4d92d1c",
+          "author_date": "2018-10-01T18:37:16Z",
+          "message": "formatting",
+          "html_url": "https://github.com/bitwarden/android/commit/8d9a5bc08f5ef37ea3efe35571e39244f4d92d1c"
+        },
+        {
+          "sha": "a4f93eea45d24b6d4e3f90eed45fbd09bc1abfbb",
+          "author_date": "2018-10-03T04:29:29Z",
+          "message": "ios < 12 fixes",
+          "html_url": "https://github.com/bitwarden/android/commit/a4f93eea45d24b6d4e3f90eed45fbd09bc1abfbb"
+        },
+        {
+          "sha": "b7c6b65a3d53ec94488cfb02935e285a12a37b75",
+          "author_date": "2018-10-03T04:35:06Z",
+          "message": "bump version",
+          "html_url": "https://github.com/bitwarden/android/commit/b7c6b65a3d53ec94488cfb02935e285a12a37b75"
+        },
+        {
+          "sha": "525b5fa19ae8898bd1bd73a2b7ff76aefd8da0df",
+          "author_date": "2018-10-06T21:28:40Z",
+          "message": "null checks",
+          "html_url": "https://github.com/bitwarden/android/commit/525b5fa19ae8898bd1bd73a2b7ff76aefd8da0df"
+        },
+        {
+          "sha": "8632f7cadc7d00c3bca2debfeb0e4fbfbcb2e573",
+          "author_date": "2018-10-06T23:26:54Z",
+          "message": "version bump",
+          "html_url": "https://github.com/bitwarden/android/commit/8632f7cadc7d00c3bca2debfeb0e4fbfbcb2e573"
+        },
+        {
+          "sha": "726db336a83ff4b2de32ee13f94e8f24d52e2247",
+          "author_date": "2018-10-07T11:40:44Z",
+          "message": "dont try to fill unless has username and password",
+          "html_url": "https://github.com/bitwarden/android/commit/726db336a83ff4b2de32ee13f94e8f24d52e2247"
+        },
+        {
+          "sha": "144d9325910d8be70f70f3fb96949636b2ed2659",
+          "author_date": "2018-10-08T19:04:18Z",
+          "message": "null ref check",
+          "html_url": "https://github.com/bitwarden/android/commit/144d9325910d8be70f70f3fb96949636b2ed2659"
+        },
+        {
+          "sha": "9593f330dbdfb211c95bd22699bef8546fab9f3e",
+          "author_date": "2018-10-09T03:21:29Z",
+          "message": "target android sdk 26 with fixes to HybridWebView",
+          "html_url": "https://github.com/bitwarden/android/commit/9593f330dbdfb211c95bd22699bef8546fab9f3e"
+        },
+        {
+          "sha": "a2a6d5a57fbd24073eb5af2ea8f9f29431d7d697",
+          "author_date": "2018-10-09T13:29:07Z",
+          "message": "New Crowdin translations (#389)\n\n* New translations AppResources.resx (Chinese Traditional)\r\n\r\n* New translations AppResources.resx (Czech)\r\n\r\n* New translations AppResources.resx (Danish)\r\n\r\n* New translations AppResources.resx (Estonian)\r\n\r\n* New translations AppResources.resx (Korean)\r\n\r\n* New translations AppResources.resx (Portuguese, Brazilian)\r\n\r\n* New translations AppResources.resx (Slovak)\r\n\r\n* New translations AppResources.resx (Ukrainian)",
+          "html_url": "https://github.com/bitwarden/android/commit/a2a6d5a57fbd24073eb5af2ea8f9f29431d7d697"
+        },
+        {
+          "sha": "8d0ee1cabacf0f36d8777cc8c3f19e4b56e61502",
+          "author_date": "2018-10-09T13:39:44Z",
+          "message": "bump version",
+          "html_url": "https://github.com/bitwarden/android/commit/8d0ee1cabacf0f36d8777cc8c3f19e4b56e61502"
+        },
+        {
+          "sha": "8c8cec08e57dad7309c85de3089a1ecebdd4f31a",
+          "author_date": "2018-10-16T12:58:57Z",
+          "message": "New Crowdin translations (#395)\n\n* New translations AppResources.resx (Hungarian)\r\n\r\n* New translations AppResources.resx (Norwegian Bokmal)\r\n\r\n* New translations AppResources.resx (Turkish)",
+          "html_url": "https://github.com/bitwarden/android/commit/8c8cec08e57dad7309c85de3089a1ecebdd4f31a"
+        },
+        {
+          "sha": "aec0415cad812ef62ca9895fb48bf8140b87fc0d",
+          "author_date": "2018-10-24T17:03:55Z",
+          "message": "New Crowdin translations (#398)\n\n* New translations AppResources.resx (German)\r\n\r\n* New translations AppResources.resx (Spanish)",
+          "html_url": "https://github.com/bitwarden/android/commit/aec0415cad812ef62ca9895fb48bf8140b87fc0d"
+        },
+        {
+          "sha": "49af74729f11cfa51aa88f84f64dc8f6b36744a5",
+          "author_date": "2018-10-26T01:55:34Z",
+          "message": "update packages",
+          "html_url": "https://github.com/bitwarden/android/commit/49af74729f11cfa51aa88f84f64dc8f6b36744a5"
+        },
+        {
+          "sha": "36e263b9ffc8da8f877de40d270f21219fa19458",
+          "author_date": "2018-11-15T13:23:45Z",
+          "message": "zh-HK gets traditional chinse",
+          "html_url": "https://github.com/bitwarden/android/commit/36e263b9ffc8da8f877de40d270f21219fa19458"
+        },
+        {
+          "sha": "a9d204d3fab856421a650c0b88581f852c5c9f22",
+          "author_date": "2018-11-20T03:24:10Z",
+          "message": "support attachment key, 100k iterations on regist.",
+          "html_url": "https://github.com/bitwarden/android/commit/a9d204d3fab856421a650c0b88581f852c5c9f22"
+        },
+        {
+          "sha": "0b06c87cb7a7e0eee87b7b48961c0d01c625b966",
+          "author_date": "2018-11-21T03:48:03Z",
+          "message": "New Crowdin translations (#411)\n\n* New translations AppResources.resx (German)\r\n\r\n* New translations AppResources.resx (Spanish)\r\n\r\n* New translations AppResources.resx (Chinese Simplified)\r\n\r\n* New translations AppResources.resx (Czech)\r\n\r\n* New translations AppResources.resx (German)\r\n\r\n* New translations AppResources.resx (Indonesian)\r\n\r\n* New translations AppResources.resx (Italian)\r\n\r\n* New translations AppResources.resx (Portuguese)\r\n\r\n* New translations AppResources.resx (Romanian)\r\n\r\n* New translations AppResources.resx (Russian)\r\n\r\n* New translations AppResources.resx (Spanish)",
+          "html_url": "https://github.com/bitwarden/android/commit/0b06c87cb7a7e0eee87b7b48961c0d01c625b966"
+        },
+        {
+          "sha": "ed087b81b4852b0123e88ccb58180d5d7d2d7a70",
+          "author_date": "2018-11-21T12:58:08Z",
+          "message": "comment out keyboard dismissal",
+          "html_url": "https://github.com/bitwarden/android/commit/ed087b81b4852b0123e88ccb58180d5d7d2d7a70"
+        },
+        {
+          "sha": "bbea5fe53c7788b24301e6324a362ff3eca0e801",
+          "author_date": "2018-11-22T02:46:26Z",
+          "message": "dont focus on cell tapped",
+          "html_url": "https://github.com/bitwarden/android/commit/bbea5fe53c7788b24301e6324a362ff3eca0e801"
+        },
+        {
+          "sha": "9e1abb13a3ec5c5ddd6108cb700a2db9ac382acb",
+          "author_date": "2018-11-23T02:16:02Z",
+          "message": "Revert \"dont focus on cell tapped\"\n\nThis reverts commit bbea5fe53c7788b24301e6324a362ff3eca0e801.",
+          "html_url": "https://github.com/bitwarden/android/commit/9e1abb13a3ec5c5ddd6108cb700a2db9ac382acb"
+        },
+        {
+          "sha": "5af7c7d58a75ccc37429bfa6668f1c06e23b966d",
+          "author_date": "2018-11-23T02:16:11Z",
+          "message": "Revert \"comment out keyboard dismissal\"\n\nThis reverts commit ed087b81b4852b0123e88ccb58180d5d7d2d7a70.",
+          "html_url": "https://github.com/bitwarden/android/commit/5af7c7d58a75ccc37429bfa6668f1c06e23b966d"
+        },
+        {
+          "sha": "2f0935dbbe4dcd988af71a5f154ec916473fa3f2",
+          "author_date": "2018-11-23T14:20:34Z",
+          "message": "update libs",
+          "html_url": "https://github.com/bitwarden/android/commit/2f0935dbbe4dcd988af71a5f154ec916473fa3f2"
+        },
+        {
+          "sha": "9a169251d7f4a83bc192041ced259c1d4d08a038",
+          "author_date": "2018-11-26T13:41:46Z",
+          "message": "New Crowdin translations (#417)\n\n* New translations AppResources.resx (Norwegian Bokmal)\r\n\r\n* New translations AppResources.resx (Portuguese)\r\n\r\n* New translations copy.resx (Russian)\r\n\r\n* New translations copy.resx (Russian)",
+          "html_url": "https://github.com/bitwarden/android/commit/9a169251d7f4a83bc192041ced259c1d4d08a038"
+        },
+        {
+          "sha": "5792372a473835f3adf6c17fa31448fb36b2d35d",
+          "author_date": "2018-11-26T14:13:54Z",
+          "message": "bump version",
+          "html_url": "https://github.com/bitwarden/android/commit/5792372a473835f3adf6c17fa31448fb36b2d35d"
+        },
+        {
+          "sha": "7ff628ea518caab62d7892d836a14b40ab8ccbb7",
+          "author_date": "2018-11-26T21:05:30Z",
+          "message": "deprecate mac checks on RSA decrypt",
+          "html_url": "https://github.com/bitwarden/android/commit/7ff628ea518caab62d7892d836a14b40ab8ccbb7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.21.0",
@@ -3486,8 +3920,201 @@
     {
       "release": "v2.1.2",
       "previous_release": "v2.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "df2af5459e28031a4486eb5f05c3402caaeab456",
+          "author_date": "2019-07-12T19:51:47Z",
+          "message": "register event service with container",
+          "html_url": "https://github.com/bitwarden/android/commit/df2af5459e28031a4486eb5f05c3402caaeab456"
+        },
+        {
+          "sha": "38d702b6fe17eb848aa572201150614b4d4e1f81",
+          "author_date": "2019-07-12T21:29:40Z",
+          "message": "log some events",
+          "html_url": "https://github.com/bitwarden/android/commit/38d702b6fe17eb848aa572201150614b4d4e1f81"
+        },
+        {
+          "sha": "7da13e22ada791d0dd890899e2cfb17dc734292d",
+          "author_date": "2019-07-13T00:56:54Z",
+          "message": "process event uploads on ios",
+          "html_url": "https://github.com/bitwarden/android/commit/7da13e22ada791d0dd890899e2cfb17dc734292d"
+        },
+        {
+          "sha": "40a3541e8ef05d90f938acc12060144f32678bd7",
+          "author_date": "2019-07-14T00:25:31Z",
+          "message": "handle sleep event on ios manually",
+          "html_url": "https://github.com/bitwarden/android/commit/40a3541e8ef05d90f938acc12060144f32678bd7"
+        },
+        {
+          "sha": "11cdf52ec887386e9ce8cd885eef93975841ff0f",
+          "author_date": "2019-07-14T00:27:15Z",
+          "message": "disable events funcionality for now",
+          "html_url": "https://github.com/bitwarden/android/commit/11cdf52ec887386e9ce8cd885eef93975841ff0f"
+        },
+        {
+          "sha": "e407acd2a7731b113519bdffaeaa7f5ea5934bc5",
+          "author_date": "2019-07-14T00:28:20Z",
+          "message": "bump version",
+          "html_url": "https://github.com/bitwarden/android/commit/e407acd2a7731b113519bdffaeaa7f5ea5934bc5"
+        },
+        {
+          "sha": "13ddd10c40f03d8bdfcd8fddfd6ea082c3e92325",
+          "author_date": "2019-07-22T11:09:51Z",
+          "message": "update autofill identities if needed",
+          "html_url": "https://github.com/bitwarden/android/commit/13ddd10c40f03d8bdfcd8fddfd6ea082c3e92325"
+        },
+        {
+          "sha": "9164c9b946180de3447d2d76b4019556a4fcae2c",
+          "author_date": "2019-07-22T12:22:02Z",
+          "message": "InitAppIfNeeded",
+          "html_url": "https://github.com/bitwarden/android/commit/9164c9b946180de3447d2d76b4019556a4fcae2c"
+        },
+        {
+          "sha": "2062a284e34e820817ae19f65235287fbaaf4016",
+          "author_date": "2019-07-22T12:37:06Z",
+          "message": "fix lock checks on sleep of app",
+          "html_url": "https://github.com/bitwarden/android/commit/2062a284e34e820817ae19f65235287fbaaf4016"
+        },
+        {
+          "sha": "c2108fdda03fe081296ecb48c7231238e57e2192",
+          "author_date": "2019-07-22T12:44:55Z",
+          "message": "null checking",
+          "html_url": "https://github.com/bitwarden/android/commit/c2108fdda03fe081296ecb48c7231238e57e2192"
+        },
+        {
+          "sha": "d73bf6d225f6f3e607c72966a48368795a0f3b42",
+          "author_date": "2019-07-22T13:21:00Z",
+          "message": "assign new messageCallback when subbing",
+          "html_url": "https://github.com/bitwarden/android/commit/d73bf6d225f6f3e607c72966a48368795a0f3b42"
+        },
+        {
+          "sha": "762b574d491bc1a965dd80231b8f4e730d287368",
+          "author_date": "2019-07-22T14:12:14Z",
+          "message": "rebuild same fingerprintName string",
+          "html_url": "https://github.com/bitwarden/android/commit/762b574d491bc1a965dd80231b8f4e730d287368"
+        },
+        {
+          "sha": "e7ce050324dd6d358f2370df925529b773b7b218",
+          "author_date": "2019-07-22T14:24:18Z",
+          "message": "use fingerprintButtonText on extension unlock",
+          "html_url": "https://github.com/bitwarden/android/commit/e7ce050324dd6d358f2370df925529b773b7b218"
+        },
+        {
+          "sha": "50623b9b2940951c7bc951bd9e25c4c0c1f5c50b",
+          "author_date": "2019-07-22T14:52:04Z",
+          "message": "fix no folder reference",
+          "html_url": "https://github.com/bitwarden/android/commit/50623b9b2940951c7bc951bd9e25c4c0c1f5c50b"
+        },
+        {
+          "sha": "392e429dfd880915ebc4fae37292f8fb5462432b",
+          "author_date": "2019-07-22T14:52:19Z",
+          "message": "more options button for ios on folder add/edit",
+          "html_url": "https://github.com/bitwarden/android/commit/392e429dfd880915ebc4fae37292f8fb5462432b"
+        },
+        {
+          "sha": "a2bac9d36851c3a8c9e47fb72674ed741dd5ed60",
+          "author_date": "2019-07-22T16:04:17Z",
+          "message": "a11y labeling",
+          "html_url": "https://github.com/bitwarden/android/commit/a2bac9d36851c3a8c9e47fb72674ed741dd5ed60"
+        },
+        {
+          "sha": "0b249d4dd493e2e2b85c83a1d0b7b341c86e5a60",
+          "author_date": "2019-07-22T17:59:12Z",
+          "message": "check yubico token length == 44",
+          "html_url": "https://github.com/bitwarden/android/commit/0b249d4dd493e2e2b85c83a1d0b7b341c86e5a60"
+        },
+        {
+          "sha": "0c75374c0f9afd39efa9a08f80a971d529f78606",
+          "author_date": "2019-07-22T18:53:12Z",
+          "message": "New Crowdin translations (#565)\n\n* New translations AppResources.resx (Afrikaans)\r\n\r\n* New translations AppResources.resx (Persian)\r\n\r\n* New translations AppResources.resx (Portuguese, Brazilian)\r\n\r\n* New translations AppResources.resx (Portuguese)\r\n\r\n* New translations AppResources.resx (Polish)\r\n\r\n* New translations AppResources.resx (Romanian)\r\n\r\n* New translations AppResources.resx (Norwegian Bokmal)\r\n\r\n* New translations AppResources.resx (Korean)\r\n\r\n* New translations AppResources.resx (Japanese)\r\n\r\n* New translations AppResources.resx (Thai)\r\n\r\n* New translations AppResources.resx (Vietnamese)\r\n\r\n* New translations AppResources.resx (Ukrainian)\r\n\r\n* New translations AppResources.resx (Turkish)\r\n\r\n* New translations AppResources.resx (Swedish)\r\n\r\n* New translations AppResources.resx (Spanish)\r\n\r\n* New translations AppResources.resx (Slovak)\r\n\r\n* New translations AppResources.resx (Russian)\r\n\r\n* New translations AppResources.resx (Italian)\r\n\r\n* New translations AppResources.resx (Danish)\r\n\r\n* New translations AppResources.resx (Czech)\r\n\r\n* New translations AppResources.resx (Croatian)\r\n\r\n* New translations AppResources.resx (Chinese Traditional)\r\n\r\n* New translations AppResources.resx (Chinese Simplified)\r\n\r\n* New translations AppResources.resx (Catalan)\r\n\r\n* New translations AppResources.resx (Bulgarian)\r\n\r\n* New translations AppResources.resx (Dutch)\r\n\r\n* New translations AppResources.resx (Indonesian)\r\n\r\n* New translations AppResources.resx (Hungarian)\r\n\r\n* New translations AppResources.resx (Hindi)\r\n\r\n* New translations AppResources.resx (Hebrew)\r\n\r\n* New translations AppResources.resx (German)\r\n\r\n* New translations AppResources.resx (English, United Kingdom)\r\n\r\n* New translations AppResources.resx (French)\r\n\r\n* New translations AppResources.resx (Finnish)\r\n\r\n* New translations AppResources.resx (Estonian)",
+          "html_url": "https://github.com/bitwarden/android/commit/0c75374c0f9afd39efa9a08f80a971d529f78606"
+        },
+        {
+          "sha": "f9547f158ea05e9c0eaf3b55e296ad0cb1cf74e7",
+          "author_date": "2019-07-22T19:50:59Z",
+          "message": "log autofill events",
+          "html_url": "https://github.com/bitwarden/android/commit/f9547f158ea05e9c0eaf3b55e296ad0cb1cf74e7"
+        },
+        {
+          "sha": "fe5cdb0004dc0e72c136f8d2a7bba5e3a15aacb3",
+          "author_date": "2019-07-23T01:35:05Z",
+          "message": "* CredentialProviderViewController.cs:\n\n* LoadingViewController.cs: reset after using event service",
+          "html_url": "https://github.com/bitwarden/android/commit/fe5cdb0004dc0e72c136f8d2a7bba5e3a15aacb3"
+        },
+        {
+          "sha": "236496e69f045fea158be057e9f0c38525cd5249",
+          "author_date": "2019-07-23T01:37:56Z",
+          "message": "formatting",
+          "html_url": "https://github.com/bitwarden/android/commit/236496e69f045fea158be057e9f0c38525cd5249"
+        },
+        {
+          "sha": "ae5292269808845f139ba42804d2ca8086e90d04",
+          "author_date": "2019-07-23T03:07:00Z",
+          "message": "version bump",
+          "html_url": "https://github.com/bitwarden/android/commit/ae5292269808845f139ba42804d2ca8086e90d04"
+        },
+        {
+          "sha": "0d6cc91b67722338a0985dfce7ac3ddf9c99c1b4",
+          "author_date": "2019-07-23T03:34:39Z",
+          "message": "don't allow device PIN fallback",
+          "html_url": "https://github.com/bitwarden/android/commit/0d6cc91b67722338a0985dfce7ac3ddf9c99c1b4"
+        },
+        {
+          "sha": "6d2dcb73ae8046355a334f36cf01784199cfa1d4",
+          "author_date": "2019-07-23T04:06:34Z",
+          "message": "event service func",
+          "html_url": "https://github.com/bitwarden/android/commit/6d2dcb73ae8046355a334f36cf01784199cfa1d4"
+        },
+        {
+          "sha": "0eddee5816cc4b2ba7255acd3b5f8ebe5bbb3bf1",
+          "author_date": "2019-07-23T04:10:25Z",
+          "message": "check $LastExitCode",
+          "html_url": "https://github.com/bitwarden/android/commit/0eddee5816cc4b2ba7255acd3b5f8ebe5bbb3bf1"
+        },
+        {
+          "sha": "a0a5e30f48f56365e8301367a6bb90dbf8d45530",
+          "author_date": "2019-07-23T13:08:16Z",
+          "message": "re-work hockeyapp init",
+          "html_url": "https://github.com/bitwarden/android/commit/a0a5e30f48f56365e8301367a6bb90dbf8d45530"
+        },
+        {
+          "sha": "e5ce3dbd326f941ef9c72319616a96247d2d21c5",
+          "author_date": "2019-07-23T13:11:01Z",
+          "message": "visibility typo",
+          "html_url": "https://github.com/bitwarden/android/commit/e5ce3dbd326f941ef9c72319616a96247d2d21c5"
+        },
+        {
+          "sha": "73ecd67b2051510926080b48611a05465bd79174",
+          "author_date": "2019-07-23T13:16:10Z",
+          "message": "New Crowdin translations (#567)\n\n* New translations AppResources.resx (Persian)\r\n\r\n* New translations AppResources.resx (Portuguese, Brazilian)\r\n\r\n* New translations AppResources.resx (Portuguese)\r\n\r\n* New translations AppResources.resx (Polish)\r\n\r\n* New translations AppResources.resx (Japanese)\r\n\r\n* New translations AppResources.resx (Ukrainian)\r\n\r\n* New translations AppResources.resx (Spanish)\r\n\r\n* New translations AppResources.resx (Russian)\r\n\r\n* New translations AppResources.resx (Italian)\r\n\r\n* New translations AppResources.resx (Danish)\r\n\r\n* New translations AppResources.resx (Czech)\r\n\r\n* New translations AppResources.resx (Chinese Traditional)\r\n\r\n* New translations AppResources.resx (Chinese Simplified)\r\n\r\n* New translations AppResources.resx (Dutch)\r\n\r\n* New translations AppResources.resx (Hebrew)\r\n\r\n* New translations AppResources.resx (German)\r\n\r\n* New translations AppResources.resx (French)\r\n\r\n* New translations AppResources.resx (Estonian)",
+          "html_url": "https://github.com/bitwarden/android/commit/73ecd67b2051510926080b48611a05465bd79174"
+        },
+        {
+          "sha": "9d6fc73fcc8f916c253a239cf1edd0d000053b2a",
+          "author_date": "2019-07-23T13:30:01Z",
+          "message": "New Crowdin translations (#568)\n\n* New translations AppResources.resx (Chinese Simplified)\r\n\r\n* New translations AppResources.resx (Japanese)\r\n\r\n* New translations AppResources.resx (Spanish)\r\n\r\n* New translations AppResources.resx (Russian)\r\n\r\n* New translations AppResources.resx (Portuguese, Brazilian)\r\n\r\n* New translations AppResources.resx (Portuguese)\r\n\r\n* New translations AppResources.resx (Polish)\r\n\r\n* New translations AppResources.resx (Persian)\r\n\r\n* New translations AppResources.resx (Italian)\r\n\r\n* New translations AppResources.resx (Hebrew)\r\n\r\n* New translations AppResources.resx (German)\r\n\r\n* New translations AppResources.resx (French)\r\n\r\n* New translations AppResources.resx (English, United Kingdom)\r\n\r\n* New translations AppResources.resx (Danish)\r\n\r\n* New translations AppResources.resx (Czech)\r\n\r\n* New translations AppResources.resx (Ukrainian)",
+          "html_url": "https://github.com/bitwarden/android/commit/9d6fc73fcc8f916c253a239cf1edd0d000053b2a"
+        },
+        {
+          "sha": "2272b10820bf0d6ec430f9be4f5b5564969034c8",
+          "author_date": "2019-07-24T14:40:12Z",
+          "message": "null check on cipher when autofilling",
+          "html_url": "https://github.com/bitwarden/android/commit/2272b10820bf0d6ec430f9be4f5b5564969034c8"
+        },
+        {
+          "sha": "9fe9210cb7f5ed326a71b3e37ce74d17756e93be",
+          "author_date": "2019-07-24T14:42:13Z",
+          "message": "null check on id",
+          "html_url": "https://github.com/bitwarden/android/commit/9fe9210cb7f5ed326a71b3e37ce74d17756e93be"
+        },
+        {
+          "sha": "41263f3419a1d441c8644d84e683d9e28fc1ac0e",
+          "author_date": "2019-07-24T14:48:49Z",
+          "message": "New Crowdin translations (#569)\n\n* New translations AppResources.resx (Catalan)\r\n\r\n* New translations AppResources.resx (French)\r\n\r\n* New translations AppResources.resx (Polish)",
+          "html_url": "https://github.com/bitwarden/android/commit/41263f3419a1d441c8644d84e683d9e28fc1ac0e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.2.0",
@@ -3828,8 +4455,225 @@
     {
       "release": "v2023.7.0",
       "previous_release": "v2023.5.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "79241731e7b14f3e76d5a15060caffb39c8d2e0e",
+          "author_date": "2023-05-24T14:04:39Z",
+          "message": "Add github actions to renovate (#2536)\n\n* Add github actions to renovate\r\n\r\n* Add gh actions manager\r\n\r\n* Apply whole renovate config\r\n\r\n* Add newline",
+          "html_url": "https://github.com/bitwarden/android/commit/79241731e7b14f3e76d5a15060caffb39c8d2e0e"
+        },
+        {
+          "sha": "c7fd113f2605cc1d4ca0ff6671c8fa549aabe4d1",
+          "author_date": "2023-05-25T13:37:53Z",
+          "message": "[PM-2347] Refresh feature flags when environment urls change (#2538)",
+          "html_url": "https://github.com/bitwarden/android/commit/c7fd113f2605cc1d4ca0ff6671c8fa549aabe4d1"
+        },
+        {
+          "sha": "0288a6659c9841379e2727cd44d6033fbb467497",
+          "author_date": "2023-05-25T15:43:45Z",
+          "message": "reset lock delay when returning from activity result (#2539)",
+          "html_url": "https://github.com/bitwarden/android/commit/0288a6659c9841379e2727cd44d6033fbb467497"
+        },
+        {
+          "sha": "b7ff636862e147f20f600f7b61555db542af4840",
+          "author_date": "2023-05-26T06:12:16Z",
+          "message": "Autosync the updated translations (#2540)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/b7ff636862e147f20f600f7b61555db542af4840"
+        },
+        {
+          "sha": "e78833cbcbba54ffa92daf5bab0724104c4a71a9",
+          "author_date": "2023-05-31T13:33:47Z",
+          "message": "Bumped version to 2023.5.0 (#2553)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/e78833cbcbba54ffa92daf5bab0724104c4a71a9"
+        },
+        {
+          "sha": "bebf23785d2b4d8cab49eaf20fba0e2d91840561",
+          "author_date": "2023-06-01T07:35:35Z",
+          "message": "PM-2232 Fix api response not being read as string because the content was not being considered json when it was indeed. Now Netacea messages are shown on the UI. (#2541)",
+          "html_url": "https://github.com/bitwarden/android/commit/bebf23785d2b4d8cab49eaf20fba0e2d91840561"
+        },
+        {
+          "sha": "7cd40d4d89e6eb7574583a449f0fe37761598dd4",
+          "author_date": "2023-06-01T16:18:12Z",
+          "message": "Bumped version to 2023.5.1 (#2554)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/7cd40d4d89e6eb7574583a449f0fe37761598dd4"
+        },
+        {
+          "sha": "8bc2df6c8afb723d39c72163f08ef0f4bf191433",
+          "author_date": "2023-06-04T14:23:34Z",
+          "message": "Autosync the updated translations (#2555)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/8bc2df6c8afb723d39c72163f08ef0f4bf191433"
+        },
+        {
+          "sha": "eeb634e69886be2ff48f1776965268bb86db8483",
+          "author_date": "2023-06-05T16:58:38Z",
+          "message": "PM-1798 Added accessibility names on entries on cipher add (#2550)",
+          "html_url": "https://github.com/bitwarden/android/commit/eeb634e69886be2ff48f1776965268bb86db8483"
+        },
+        {
+          "sha": "1c13ed9895c3d141cfeef376416709e41dc25812",
+          "author_date": "2023-06-07T00:00:01Z",
+          "message": "[PS-2558] Mobile Automation - Starting automationIDs additions to our codebase (#2558)\n\n* Adding locators for Environment, Hope, Login and Register pages\r\n\r\n* Adding Locators on LockPage\r\n\r\n* Adding Álison's suggestions",
+          "html_url": "https://github.com/bitwarden/android/commit/1c13ed9895c3d141cfeef376416709e41dc25812"
+        },
+        {
+          "sha": "3b087c50ae14d8b8a7b2f560fe2b46f060b1de71",
+          "author_date": "2023-06-07T14:21:51Z",
+          "message": "PM-1076 added warning on unlocking iOS extensions when the kdf type is argon2id and the memory is higher than 48MB, to let the user know that unlocking might crash the extension (#2560)",
+          "html_url": "https://github.com/bitwarden/android/commit/3b087c50ae14d8b8a7b2f560fe2b46f060b1de71"
+        },
+        {
+          "sha": "dcf9acb51c601e7e336cdd0c14cce2ea606ff7bf",
+          "author_date": "2023-06-09T07:19:34Z",
+          "message": "Autosync the updated translations (#2562)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/dcf9acb51c601e7e336cdd0c14cce2ea606ff7bf"
+        },
+        {
+          "sha": "f604da13a1cedb801a2758237f8998094615d53e",
+          "author_date": "2023-06-13T14:57:02Z",
+          "message": "add more comment to missing actions (#2567)",
+          "html_url": "https://github.com/bitwarden/android/commit/f604da13a1cedb801a2758237f8998094615d53e"
+        },
+        {
+          "sha": "04e30c21462fb379cf57244dff700fd65a632cdb",
+          "author_date": "2023-06-13T16:46:41Z",
+          "message": "Update F-Droid listing author name (#2501)\n\nUpdate F-Droid listing author name to `Bitwarden Inc`",
+          "html_url": "https://github.com/bitwarden/android/commit/04e30c21462fb379cf57244dff700fd65a632cdb"
+        },
+        {
+          "sha": "1332ef7b433e8645eecfdeefdc9fe483adec5a7d",
+          "author_date": "2023-06-13T17:54:28Z",
+          "message": "Enhancement to login field detection for Android autofill (#2561)",
+          "html_url": "https://github.com/bitwarden/android/commit/1332ef7b433e8645eecfdeefdc9fe483adec5a7d"
+        },
+        {
+          "sha": "98705e443f321411dd3b7c8d54581fe4462cc3c5",
+          "author_date": "2023-06-13T20:38:08Z",
+          "message": "PM-2575 Fixed extension freeze when using the return button on the keyboard when unlocking the extension. Also added way to prevent multiple executions of checking the password and logging exceptions. (#2568)",
+          "html_url": "https://github.com/bitwarden/android/commit/98705e443f321411dd3b7c8d54581fe4462cc3c5"
+        },
+        {
+          "sha": "52843b4181e05ac4bbfb60a7431fa72537f92228",
+          "author_date": "2023-06-14T12:34:38Z",
+          "message": "[PM-2544] Adding AutomationIDs for CipherAddEditViewPage elements (#2564)\n\n* Adding AutomationIDs for Add/Edit Items page\r\n\r\n* Adding IDs to CustomFields\r\n\r\n* Adding Matt's suggestions\r\n\r\n* Adding newest suggestions",
+          "html_url": "https://github.com/bitwarden/android/commit/52843b4181e05ac4bbfb60a7431fa72537f92228"
+        },
+        {
+          "sha": "bc5c11b47f66923d822e796d4d37670a1cffd385",
+          "author_date": "2023-06-15T19:11:55Z",
+          "message": "Adding AutomationIDs on Generator page elements (#2569)\n\n* Adding AutomationIDs on Generator pages\r\n\r\n* Adding missing spaces",
+          "html_url": "https://github.com/bitwarden/android/commit/bc5c11b47f66923d822e796d4d37670a1cffd385"
+        },
+        {
+          "sha": "43d2d386b13cd63727e7b03021f4a073fe2bc2fd",
+          "author_date": "2023-06-16T19:20:09Z",
+          "message": "[PM-2645] Adding IDs for Account Switching elements (#2572)\n\n* Adding IDs for Account Switching elements\r\n\r\n* Fixing Active/Inactive vault icon IDs",
+          "html_url": "https://github.com/bitwarden/android/commit/43d2d386b13cd63727e7b03021f4a073fe2bc2fd"
+        },
+        {
+          "sha": "3af37f01d3cb82f41d29c504dca2ed27801d05ea",
+          "author_date": "2023-06-19T09:05:12Z",
+          "message": "Autosync the updated translations (#2570)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/3af37f01d3cb82f41d29c504dca2ed27801d05ea"
+        },
+        {
+          "sha": "3e9711f8f290f96c7c0040aa5f3972b03a3ffbe8",
+          "author_date": "2023-06-20T14:28:54Z",
+          "message": "[PM-2611] Adding IDs for Cipher/Send search results (#2575)\n\n* Adding IDs for Cipher/Send search results\r\n\r\n* Adding missing spaces",
+          "html_url": "https://github.com/bitwarden/android/commit/3e9711f8f290f96c7c0040aa5f3972b03a3ffbe8"
+        },
+        {
+          "sha": "8d98d1d5bd53a5de8215b0823c6ceb04940aec51",
+          "author_date": "2023-06-20T18:12:15Z",
+          "message": "[PM-2612] Adding AutomationIDs for LoginPasswordlessPage elements (#2574)\n\n* Adding AutomationIDs for LoginPasswordlessPag elements\r\n\r\n* Adding AutomationIDs for LoginPasswordlessRequest page elements\r\n\r\n* Fixing missing space",
+          "html_url": "https://github.com/bitwarden/android/commit/8d98d1d5bd53a5de8215b0823c6ceb04940aec51"
+        },
+        {
+          "sha": "6644e3b449f4f012fd4816eba60d016dfee1df30",
+          "author_date": "2023-06-20T19:26:43Z",
+          "message": "[PM-2545] Adding Automation IDs for CipherDetailsPage elements (#2576)\n\n* Adding IDs to CipherDetailsPage\r\n\r\n* Fixing extra spaces\r\n\r\n* Fixing extra space",
+          "html_url": "https://github.com/bitwarden/android/commit/6644e3b449f4f012fd4816eba60d016dfee1df30"
+        },
+        {
+          "sha": "d876b54f45780a6224abed9a78c20a9c508e5c0d",
+          "author_date": "2023-06-20T20:49:26Z",
+          "message": "Adding IDs for AttachmentPage elements (#2577)",
+          "html_url": "https://github.com/bitwarden/android/commit/d876b54f45780a6224abed9a78c20a9c508e5c0d"
+        },
+        {
+          "sha": "16f59e2698a03fb5a8305e0d83da59a7857f4973",
+          "author_date": "2023-06-23T05:40:37Z",
+          "message": "Autosync the updated translations (#2582)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/16f59e2698a03fb5a8305e0d83da59a7857f4973"
+        },
+        {
+          "sha": "1407aa565581a5008968eafb808f2527b8792982",
+          "author_date": "2023-06-23T16:31:24Z",
+          "message": "[PM-2678] Adding IDs for Settings Page elements (#2584)\n\n* Adding IDS for Settings elements\r\n\r\n* Adding IDS for Settings elements",
+          "html_url": "https://github.com/bitwarden/android/commit/1407aa565581a5008968eafb808f2527b8792982"
+        },
+        {
+          "sha": "31487a31bb8dc15a74adfea68128098f58477297",
+          "author_date": "2023-06-26T13:30:13Z",
+          "message": "[PM-2748] Refactoring locator strategy for Cipher Details page (#2586)\n\n* Refactoring locator strategy for Cipher Details page\r\n\r\n* Fixing extra spaces",
+          "html_url": "https://github.com/bitwarden/android/commit/31487a31bb8dc15a74adfea68128098f58477297"
+        },
+        {
+          "sha": "350626981128b0a453711d0ebed44c918fe95937",
+          "author_date": "2023-06-26T13:31:57Z",
+          "message": "[PM-2688] Adding IDs for Options and Folders pages (#2585)\n\n* Adding IDs for Options and Folders pages\r\n\r\n* Fixing extra spaces",
+          "html_url": "https://github.com/bitwarden/android/commit/350626981128b0a453711d0ebed44c918fe95937"
+        },
+        {
+          "sha": "1014563c754ba7a906e323ae5864019827427b5e",
+          "author_date": "2023-06-27T21:49:38Z",
+          "message": "[PM-192] Refactor forwarded email providers (#2579)\n\n* PM-192 Refactor Forwarded email providers to use better patterns and code reuse.\r\n\r\n* PM-192 fix format",
+          "html_url": "https://github.com/bitwarden/android/commit/1014563c754ba7a906e323ae5864019827427b5e"
+        },
+        {
+          "sha": "216c6abcf62e90d60a5a7efa2080652058d52306",
+          "author_date": "2023-06-28T18:07:03Z",
+          "message": "[PM-2737] Adding AutomationIDs for Send page elements (#2583)\n\n* Adding AutomationIDs for Send page elements\r\n\r\n* Fixing some spaces\r\n\r\n* Adding Matt's suggestion\r\n\r\n* Adding Fede's suggestion\r\n\r\n* Removing unnecesarry breaks",
+          "html_url": "https://github.com/bitwarden/android/commit/216c6abcf62e90d60a5a7efa2080652058d52306"
+        },
+        {
+          "sha": "72e67bd6f207466d5d64ebd4d21a9512272bb47e",
+          "author_date": "2023-06-29T18:37:08Z",
+          "message": "[PM-2691] Adding AutomationIDs for Vault Page sections (#2580)\n\n* Adding IDs for Vault Page sections\r\n\r\n* Removing extra spaces\r\n\r\n* Adding Matt's comments\r\n\r\n* Fixing Filters Id bug\r\n\r\n* Adding Fede's suggestions\r\n\r\n* Fixing Settings Ids issues\r\n\r\n* Fixing AutomationIds issues with RecyclerViews + implementing AutomationId helper class\r\n\r\n* Adding Fede's suggestion\r\n\r\n* Adding latest Fede's suggestions",
+          "html_url": "https://github.com/bitwarden/android/commit/72e67bd6f207466d5d64ebd4d21a9512272bb47e"
+        },
+        {
+          "sha": "175b9936b6d23f50c02b6dcfab2b71922b1adb2f",
+          "author_date": "2023-06-29T18:50:01Z",
+          "message": "[PM-2798] Fixing Toolbar locators in FolderAddEditPage (#2592)\n\n* Fixing Toolbar locators\r\n\r\n* Adding Matt's suggestions",
+          "html_url": "https://github.com/bitwarden/android/commit/175b9936b6d23f50c02b6dcfab2b71922b1adb2f"
+        },
+        {
+          "sha": "1d541e5b8e455cf6c452eee52f2d860e4f0e71be",
+          "author_date": "2023-06-30T07:06:12Z",
+          "message": "Autosync the updated translations (#2595)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/1d541e5b8e455cf6c452eee52f2d860e4f0e71be"
+        },
+        {
+          "sha": "4abb472998908372e53adf0199e880aa95944f87",
+          "author_date": "2023-07-03T13:56:10Z",
+          "message": "Revert \"reset lock delay when returning from activity result (#2539)\" (#2597)\n\nThis reverts commit 0288a6659c9841379e2727cd44d6033fbb467497.",
+          "html_url": "https://github.com/bitwarden/android/commit/4abb472998908372e53adf0199e880aa95944f87"
+        },
+        {
+          "sha": "c5741f55b21b2d07b63498b6467063d6aa1b6d0b",
+          "author_date": "2023-07-12T17:34:23Z",
+          "message": "Bumped version to 2023.7.0 (#2612)\n\nCo-authored-by: bitwarden-devops-bot <106330231+bitwarden-devops-bot@users.noreply.github.com>\n(cherry picked from commit f31c87b52e6b6a46f5d077793b84297a7363d864)",
+          "html_url": "https://github.com/bitwarden/android/commit/c5741f55b21b2d07b63498b6467063d6aa1b6d0b"
+        },
+        {
+          "sha": "9809b2724bf48211395f122020272601368f68ef",
+          "author_date": "2023-07-13T14:05:57Z",
+          "message": "Fix Build Workflow (#2613)\n\n(cherry picked from commit fdc0313d1092a5fbdefddd905b5e3193a1fa3183)",
+          "html_url": "https://github.com/bitwarden/android/commit/9809b2724bf48211395f122020272601368f68ef"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2023.8.0",
@@ -4128,8 +4972,21 @@
     {
       "release": "v2025.7.1-bwpm",
       "previous_release": "v2025.7.0-bwa",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "e1d921e013b92a287c75e6f659cc2119e5fa4113",
+          "author_date": "2025-07-25T21:22:58Z",
+          "message": "🍒 [BRE-831] migrate secrets akv (#5347) (#5595)\n\nCo-authored-by: Andy Pixley <3723676+pixman20@users.noreply.github.com>",
+          "html_url": "https://github.com/bitwarden/android/commit/e1d921e013b92a287c75e6f659cc2119e5fa4113"
+        },
+        {
+          "sha": "1d624606f1471dbc920409926bb5ba0bdcae5a84",
+          "author_date": "2025-07-25T21:53:35Z",
+          "message": " PM-24182: Fix crash in Android 13 (#5594)",
+          "html_url": "https://github.com/bitwarden/android/commit/1d624606f1471dbc920409926bb5ba0bdcae5a84"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2025.7.1-bwa",

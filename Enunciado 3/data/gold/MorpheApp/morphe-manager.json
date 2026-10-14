@@ -5566,8 +5566,21 @@
     {
       "release": "v1.10.1",
       "previous_release": "v1.10.1-dev.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "8e213c1c40577ae31a5e650b2fca5d2793430fb6",
+          "author_date": "2026-03-02T16:04:39Z",
+          "message": "chore: Merge branch `dev` to `main` (#268)",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/8e213c1c40577ae31a5e650b2fca5d2793430fb6"
+        },
+        {
+          "sha": "96b712009e728b35249b0eb1b7c64557670ff858",
+          "author_date": "2026-03-02T16:11:21Z",
+          "message": "chore: Release v1.10.1 [skip ci]\n\n## app [1.10.1](https://github.com/MorpheApp/morphe-manager/compare/v1.10.0...v1.10.1) (2026-03-02)\n\n### Bug Fixes\n\n* Custom header does not apply to Youtube Music in simple mode ([5a6b77f](https://github.com/MorpheApp/morphe-manager/commit/5a6b77f60f709eabcb47f677be0cb99f52c50f6a))",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/96b712009e728b35249b0eb1b7c64557670ff858"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.10.2-dev.1",
@@ -5620,8 +5633,27 @@
     {
       "release": "v1.11.0",
       "previous_release": "v1.11.0-dev.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "230cf84f85e00c4d92cc47fb48d34e964ef566a2",
+          "author_date": "2026-03-07T18:56:02Z",
+          "message": "chore: Update translations from Crowdin",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/230cf84f85e00c4d92cc47fb48d34e964ef566a2"
+        },
+        {
+          "sha": "a00162a01d8e47417d28f259c9d6942aba9a2612",
+          "author_date": "2026-03-07T18:56:35Z",
+          "message": "chore: Merge branch `dev` to `main` (#273)",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/a00162a01d8e47417d28f259c9d6942aba9a2612"
+        },
+        {
+          "sha": "46376d984ca88a21bade9fd76931f53eeaed07db",
+          "author_date": "2026-03-07T19:05:24Z",
+          "message": "chore: Release v1.11.0 [skip ci]\n\n# app [1.11.0](https://github.com/MorpheApp/morphe-manager/compare/v1.10.2...v1.11.0) (2026-03-07)\n\n### Bug Fixes\n\n* Root installation fails if module path does not exist ([#282](https://github.com/MorpheApp/morphe-manager/issues/282)) ([fcaa873](https://github.com/MorpheApp/morphe-manager/commit/fcaa8736444344b1318231d1a60fcd62485815e4))\n* The language selection list is empty ([c9ca669](https://github.com/MorpheApp/morphe-manager/commit/c9ca669bdb9271c7ae07bd89b598e668553250db))\n\n### Features\n\n* Add deep link support ([#290](https://github.com/MorpheApp/morphe-manager/issues/290)) ([88d1532](https://github.com/MorpheApp/morphe-manager/commit/88d1532293a2e70cd7b3710416d304871c12542e))\n* add Kurmanji (kmr-TR) language support ([757b6e7](https://github.com/MorpheApp/morphe-manager/commit/757b6e78f465a13f2fb70cbf41824bf36aa29456))\n* Improve information in exported manager logs ([#279](https://github.com/MorpheApp/morphe-manager/issues/279)) ([17e84e6](https://github.com/MorpheApp/morphe-manager/commit/17e84e69c8f334d28dd5bf6900cfb71928b11bed))\n* Use Morphe patcher 1.2.0 ([#231](https://github.com/MorpheApp/morphe-manager/issues/231)) ([2017c2c](https://github.com/MorpheApp/morphe-manager/commit/2017c2c83d388effbc1a73bb13eb628931173cc8))",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/46376d984ca88a21bade9fd76931f53eeaed07db"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.12.0-dev.1",
@@ -5818,8 +5850,45 @@
     {
       "release": "v1.15.0",
       "previous_release": "v1.15.0-dev.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "0e36a035407d0789c3390081c1f4e3ef8ec11470",
+          "author_date": "2026-04-16T07:21:46Z",
+          "message": "chore: Update legacy release files",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/0e36a035407d0789c3390081c1f4e3ef8ec11470"
+        },
+        {
+          "sha": "6c723a60ce2d7a6f3b38f217bb554ffa1cf4b352",
+          "author_date": "2026-04-16T10:15:04Z",
+          "message": "feat: Show bottom bar labels in main screen",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/6c723a60ce2d7a6f3b38f217bb554ffa1cf4b352"
+        },
+        {
+          "sha": "89ee49865c8112a375bf12d7e7e6779aa0a075d0",
+          "author_date": "2026-04-16T20:13:31Z",
+          "message": "fix: Serialize `StringList` options based on patcher type",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/89ee49865c8112a375bf12d7e7e6779aa0a075d0"
+        },
+        {
+          "sha": "7831dd615a74afe0531a79020b0c6c2997aebeb8",
+          "author_date": "2026-04-17T05:32:14Z",
+          "message": "chore: Update translations from Crowdin",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/7831dd615a74afe0531a79020b0c6c2997aebeb8"
+        },
+        {
+          "sha": "d318f1058bae0c533922cb2991873d31af117b78",
+          "author_date": "2026-04-17T06:31:36Z",
+          "message": "chore: Merge branch `dev` to `main` (#407)",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/d318f1058bae0c533922cb2991873d31af117b78"
+        },
+        {
+          "sha": "2bd3ac5bff96306a6c7c8650baac8081d3b437da",
+          "author_date": "2026-04-17T06:37:28Z",
+          "message": "chore: Release v1.15.0 [skip ci]\n\n# [1.15.0](https://github.com/MorpheApp/morphe-manager/compare/v1.14.0...v1.15.0) (2026-04-17)\n\n### Bug Fixes\n\n* Adjust wording ([1fadd37](https://github.com/MorpheApp/morphe-manager/commit/1fadd370fc201163c94c18850760fd0b2fa9bae7))\n* Cancel patcher worker immediately on user cancellation ([e97b5a4](https://github.com/MorpheApp/morphe-manager/commit/e97b5a4d12802ba654e1fb7f3bc45aef3b7bdf22))\n* Don't count empty patch selections in package badge ([803695b](https://github.com/MorpheApp/morphe-manager/commit/803695bc3792a4f7cddd6987f65b76ac6ace8bb9))\n* Improve APK load error messages with distinct failure reasons ([ba931f6](https://github.com/MorpheApp/morphe-manager/commit/ba931f64f915890eb0d25062d7ae5a4f3867ab10))\n* Interrupt split APK merger immediately on cancellation ([5bdf5f6](https://github.com/MorpheApp/morphe-manager/commit/5bdf5f6f770feedc33e58ad90b9b43809572883e))\n* Re-download bundle if version matches but createdAt differs ([5ee51fe](https://github.com/MorpheApp/morphe-manager/commit/5ee51fec03f2151e14de03e117a3c663533f57a4))\n* Refresh patch options only once on bundle load ([79cd166](https://github.com/MorpheApp/morphe-manager/commit/79cd16661c2a77b6cc04c578567841d1f0b3bb47))\n* Serialize `StringList` options based on patcher type ([89ee498](https://github.com/MorpheApp/morphe-manager/commit/89ee49865c8112a375bf12d7e7e6779aa0a075d0))\n* Show failing bundle name in error toast and auto-disable bundles on fetch failure ([97be285](https://github.com/MorpheApp/morphe-manager/commit/97be285ba03480fdf937ec35b3dfaa410c32882f))\n* Show full patching log in error dialog when no specific error is captured ([4cf471a](https://github.com/MorpheApp/morphe-manager/commit/4cf471a6cdb47dcb32960efc91d59075f0ffe2f8))\n* Show success toast after bundle import completes ([4c54388](https://github.com/MorpheApp/morphe-manager/commit/4c54388a8944ec10648301c68e56cead32d7968b))\n* Skip disabled installed apps in AppDataResolver ([b75132e](https://github.com/MorpheApp/morphe-manager/commit/b75132ebb7c02e5e164ec24f81931c409ae417ad))\n* Use `GetContent` instead of `OpenDocument` for APK/bundle pickers ([3bff1a8](https://github.com/MorpheApp/morphe-manager/commit/3bff1a8eabda6cee8340512704305adec767c1af))\n\n### Features\n\n* Add Android TV launcher support ([208c2d0](https://github.com/MorpheApp/morphe-manager/commit/208c2d07c33d197fbc48953f214700e46790aded))\n* Add Expert badge to patch bundle viewer ([30f34db](https://github.com/MorpheApp/morphe-manager/commit/30f34dbb333dc35d49343c451a790e6645179481))\n* Add import/export selection buttons in patch selection dialog ([21b53fe](https://github.com/MorpheApp/morphe-manager/commit/21b53fe71313df5e2089474609e6d216c79fa8e9))\n* Add saved selection button in expert mode dialog ([a92a47d](https://github.com/MorpheApp/morphe-manager/commit/a92a47d59a9db1015ffbcd98a5e949331b07f294))\n* Export/import third-party bundles with manager settings ([24f0c72](https://github.com/MorpheApp/morphe-manager/commit/24f0c72d0c493e557b963720381fdff333b69d60))\n* Group compatible versions by bundle in APK availability dialog ([#432](https://github.com/MorpheApp/morphe-manager/issues/432)) ([afb1a6c](https://github.com/MorpheApp/morphe-manager/commit/afb1a6c7a8b23f9c99dcc1039addcf60193341e2))\n* Show bottom bar labels in main screen ([6c723a6](https://github.com/MorpheApp/morphe-manager/commit/6c723a60ce2d7a6f3b38f217bb554ffa1cf4b352))\n* Show update date for single default bundle in management sheet ([0946714](https://github.com/MorpheApp/morphe-manager/commit/094671429b7faa9decdab79a527870cd6c6510c6))",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/2bd3ac5bff96306a6c7c8650baac8081d3b437da"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.16.0-dev.1",
@@ -6358,8 +6427,39 @@
     {
       "release": "v1.23.0",
       "previous_release": "v1.23.0-dev.10",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "2d7534b46c85a3b544a26eb13746cbda6984de18",
+          "author_date": "2026-07-11T07:29:07Z",
+          "message": "fix: Mirror app card gradients in RTL layouts",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/2d7534b46c85a3b544a26eb13746cbda6984de18"
+        },
+        {
+          "sha": "6ec258dec36495f529f11bcb5460ded10eedb5dd",
+          "author_date": "2026-07-11T08:05:35Z",
+          "message": "chore: Bump dependencies",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/6ec258dec36495f529f11bcb5460ded10eedb5dd"
+        },
+        {
+          "sha": "cf902697a28fbc25c94fc8b68abd40665ee8e820",
+          "author_date": "2026-07-11T08:17:28Z",
+          "message": "chore: Update translations from Crowdin",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/cf902697a28fbc25c94fc8b68abd40665ee8e820"
+        },
+        {
+          "sha": "6db48374f4f01c0558cbdf2d6cce9f769f7ba304",
+          "author_date": "2026-07-11T08:20:14Z",
+          "message": "chore: Merge branch `dev` to `main` (#670)",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/6db48374f4f01c0558cbdf2d6cce9f769f7ba304"
+        },
+        {
+          "sha": "a2c3d31bd7ab42e6bc4b9dd528ed856fc72fb948",
+          "author_date": "2026-07-11T08:26:58Z",
+          "message": "chore: Release v1.23.0 [skip ci]\n\n# [1.23.0](https://github.com/MorpheApp/morphe-manager/compare/v1.22.0...v1.23.0) (2026-07-11)\n\n### Bug Fixes\n\n* Always show Reinstall when a saved patched APK exists ([d7cb9de](https://github.com/MorpheApp/morphe-manager/commit/d7cb9de6bc4048bed35962acd8b90f03d6f94fe5))\n* Apply imported manager language immediately ([5722523](https://github.com/MorpheApp/morphe-manager/commit/5722523d01d66db37eb38c563d87da97641b6407))\n* Exit remote patcher process on cancellation to release wakelock ([46ed1be](https://github.com/MorpheApp/morphe-manager/commit/46ed1be52a327cedfb4fa4982e31ac0a4f378dc4))\n* Group Compose parameters to reduce prop drilling ([cccc661](https://github.com/MorpheApp/morphe-manager/commit/cccc661761e16eab6139bf3e0d229cc382dcd297))\n* Keep selection in view when entering reorder from search ([a75720e](https://github.com/MorpheApp/morphe-manager/commit/a75720e9ac1fa2bd626640978a1f0a5afcecfb53))\n* Match changelog scopes via bundle Compatibility name ([086f15e](https://github.com/MorpheApp/morphe-manager/commit/086f15e50093edd5395859ca5ac579988745d505))\n* Mirror app card gradients in RTL layouts ([2d7534b](https://github.com/MorpheApp/morphe-manager/commit/2d7534b46c85a3b544a26eb13746cbda6984de18))\n* Preserve localized step name when preparing split APKs ([290ea99](https://github.com/MorpheApp/morphe-manager/commit/290ea99b471f4277cc81c5504232001765fc052b))\n* Preserve saved original APK after root mount installation ([#673](https://github.com/MorpheApp/morphe-manager/issues/673)) ([2a36543](https://github.com/MorpheApp/morphe-manager/commit/2a36543580b9dca8e8eeea100b0085867cb2e73e))\n* Remember patch selection across multiple sources ([#667](https://github.com/MorpheApp/morphe-manager/issues/667)) ([262b4ea](https://github.com/MorpheApp/morphe-manager/commit/262b4eab8991a03428dc2eaf0ab5c487b2137426))\n* Resolve TalkBack accessibility issues ([#676](https://github.com/MorpheApp/morphe-manager/issues/676)) ([1b9c246](https://github.com/MorpheApp/morphe-manager/commit/1b9c2467670b02861e9a8c42a182f02fca4df099))\n* Shizuku auto-install hang ([#686](https://github.com/MorpheApp/morphe-manager/issues/686)) ([f2ed496](https://github.com/MorpheApp/morphe-manager/commit/f2ed496178f223753867bc18dac921c7b9642120))\n* use latest patcher ([ac68411](https://github.com/MorpheApp/morphe-manager/commit/ac68411e4f19f245454a8173c88f7d47da71e418))\n* Use perceptual luminance midpoint for content color on brand backgrounds ([164fc6e](https://github.com/MorpheApp/morphe-manager/commit/164fc6e032c49f460f4b879b1cf4e7a0f861de7d))\n\n### Features\n\n* Adaptive `ActionPillRow` with compress-to-fit ([9554fb3](https://github.com/MorpheApp/morphe-manager/commit/9554fb3f8adb67dcfa09814c37a40d6120da0b82))\n* Add `Show older releases` expander to changelog dialogs ([#668](https://github.com/MorpheApp/morphe-manager/issues/668)) ([2ad8756](https://github.com/MorpheApp/morphe-manager/commit/2ad87560038f04b90fcc8dabb46132e9f626d381))\n* Add app and source sort options ([#703](https://github.com/MorpheApp/morphe-manager/issues/703)) ([60771c3](https://github.com/MorpheApp/morphe-manager/commit/60771c35dd09925836cbbec47843ec507094c168))\n* Add home cards for universal-patched apps ([d6cd985](https://github.com/MorpheApp/morphe-manager/commit/d6cd985dd84ae581f67a776aeff57538b0348220))\n* add Play Store installer modes ([#681](https://github.com/MorpheApp/morphe-manager/issues/681)) ([7e24461](https://github.com/MorpheApp/morphe-manager/commit/7e24461c1454b712da4df21440db6f417c94ce58))\n* Add Replace/Merge choice dialog on settings and selections import ([#683](https://github.com/MorpheApp/morphe-manager/issues/683)) ([fc9c892](https://github.com/MorpheApp/morphe-manager/commit/fc9c892ddbc28c89136d09c1caabe4fdae50804b))\n* Add sort toggle for patch sources ([658ceee](https://github.com/MorpheApp/morphe-manager/commit/658ceeec49c956ccff7b2109d7970ab937fbc8ba))\n* Add toggle for hidden files in custom file picker ([205956f](https://github.com/MorpheApp/morphe-manager/commit/205956fa9c9bdf6b4ab13cc2d1880077936bc436))\n* Floating scroll-to-top button for app and patch lists ([599dc0e](https://github.com/MorpheApp/morphe-manager/commit/599dc0ec6c66b63b6cb7a21a70e2f0a529bf89e5))\n* Include file picker preferences in settings export/import ([46e37e2](https://github.com/MorpheApp/morphe-manager/commit/46e37e2915dc92b6a655127155935e63c0b04efc))\n* Multi-select bulk actions for saved APKs and patch selections ([#689](https://github.com/MorpheApp/morphe-manager/issues/689)) ([4a16278](https://github.com/MorpheApp/morphe-manager/commit/4a16278206d128b09197245f75963d0db5b5e4ff))",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/a2c3d31bd7ab42e6bc4b9dd528ed856fc72fb948"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.23.1-dev.1",
@@ -6478,8 +6578,27 @@
     {
       "release": "v1.24.3",
       "previous_release": "v1.24.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "05717c81874c8a27e0b33d2b00d600a62c0166bf",
+          "author_date": "2026-07-23T16:50:06Z",
+          "message": "fix: Allow root mount when only versionCode differs from patched APK (#760)",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/05717c81874c8a27e0b33d2b00d600a62c0166bf"
+        },
+        {
+          "sha": "cc2613650a967af4869e2d9f53e89e46ad1b6464",
+          "author_date": "2026-07-23T16:50:58Z",
+          "message": "chore: Merge branch `dev` to `main` (#762)",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/cc2613650a967af4869e2d9f53e89e46ad1b6464"
+        },
+        {
+          "sha": "417a86b14a94cac55e679fc86aef108ced7429d4",
+          "author_date": "2026-07-23T16:57:35Z",
+          "message": "chore: Release v1.24.3 [skip ci]\n\n## [1.24.3](https://github.com/MorpheApp/morphe-manager/compare/v1.24.2...v1.24.3) (2026-07-23)\n\n### Bug Fixes\n\n* Allow root mount when only versionCode differs from patched APK ([#760](https://github.com/MorpheApp/morphe-manager/issues/760)) ([05717c8](https://github.com/MorpheApp/morphe-manager/commit/05717c81874c8a27e0b33d2b00d600a62c0166bf))",
+          "html_url": "https://github.com/MorpheApp/morphe-manager/commit/417a86b14a94cac55e679fc86aef108ced7429d4"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.25.0-dev.1",

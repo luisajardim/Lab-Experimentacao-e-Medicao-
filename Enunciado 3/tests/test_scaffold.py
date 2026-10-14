@@ -7,7 +7,7 @@ definições operacionais fixas do ENUNCIADO §3 (janela e filtros).
 import tomllib
 from pathlib import Path
 
-from pipeline.cli import build_parser
+from pipeline.cli import _load_sampled_release_tags, build_parser
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -25,6 +25,25 @@ def test_parser_limit_flag():
     parser = build_parser()
     args = parser.parse_args(["--limit", "2", "--stage", "collect"])
     assert args.limit == 2
+
+
+def test_parser_accepts_collect_commits_stage():
+    parser = build_parser()
+    args = parser.parse_args(["--stage", "collect-commits"])
+    assert args.stage == "collect-commits"
+
+
+def test_sampled_release_tags_decode_url_encoded_tag_names(tmp_path):
+    template = tmp_path / "labels_template.csv"
+    template.write_text(
+        "full_name,release_url_1\n"
+        "owner/repo,https://github.com/owner/repo/releases/tag/%40scope%2Fpackage%401.0.0\n",
+        encoding="utf-8",
+    )
+
+    assert _load_sampled_release_tags(template) == {
+        "owner/repo": {"@scope/package@1.0.0"}
+    }
 
 
 def test_parser_doctor_subcommand():

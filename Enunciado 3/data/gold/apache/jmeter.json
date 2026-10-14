@@ -511,14 +511,58 @@
     {
       "release": "rel/v5.4.2",
       "previous_release": "rel/v5.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "fca416257af9dc42c2ad6be0767337d7444eb9c4",
+          "author_date": "2021-12-15T12:00:12Z",
+          "message": "Update log4j2 to 2.16.0 to fix CVE-2021-44228: Apache Log4j2 JNDI features do not protect against attacker controlled LDAP and other JNDI related endpoints",
+          "html_url": "https://github.com/apache/jmeter/commit/fca416257af9dc42c2ad6be0767337d7444eb9c4"
+        },
+        {
+          "sha": "267db7bac28d751b1d4d375352940af3b55ff8c1",
+          "author_date": "2021-12-15T12:07:31Z",
+          "message": "prepare new version 5.4.2",
+          "html_url": "https://github.com/apache/jmeter/commit/267db7bac28d751b1d4d375352940af3b55ff8c1"
+        },
+        {
+          "sha": "08710bf67185931033708a630a6accd9cddb9746",
+          "author_date": "2021-12-15T12:24:53Z",
+          "message": "prepare new version 5.4.2: change version number",
+          "html_url": "https://github.com/apache/jmeter/commit/08710bf67185931033708a630a6accd9cddb9746"
+        },
+        {
+          "sha": "f393453287e6644aeb81c97fcda4b3e853c9e881",
+          "author_date": "2021-12-15T17:39:10Z",
+          "message": "prepare new version 5.4.2: Add Matt Sicker's b4c70893b62babe8 key for org.apache.logging.log4j",
+          "html_url": "https://github.com/apache/jmeter/commit/f393453287e6644aeb81c97fcda4b3e853c9e881"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "rel/v5.4.3",
       "previous_release": "rel/v5.4.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a55c6efb79e1605a5cded67b6f0366676e0fc264",
+          "author_date": "2021-12-23T16:42:16Z",
+          "message": "Update log4j to 2.17.0 (fix CVE-2021-45105)",
+          "html_url": "https://github.com/apache/jmeter/commit/a55c6efb79e1605a5cded67b6f0366676e0fc264"
+        },
+        {
+          "sha": "9ddd26bbcab8da2213ac9d804cef6b557c86b344",
+          "author_date": "2021-12-23T16:46:02Z",
+          "message": "prepare new version 5.4.3",
+          "html_url": "https://github.com/apache/jmeter/commit/9ddd26bbcab8da2213ac9d804cef6b557c86b344"
+        },
+        {
+          "sha": "b01f761463d7a3b7ee62230c5403e2da4970985e",
+          "author_date": "2021-12-23T16:51:02Z",
+          "message": "prepare new version 5.4.3, update changes pages",
+          "html_url": "https://github.com/apache/jmeter/commit/b01f761463d7a3b7ee62230c5403e2da4970985e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "rel/v5.4.1",
@@ -541,8 +585,1509 @@
     {
       "release": "rel/v5.6.1",
       "previous_release": "rel/v5.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "eae06c65b0a6f8df4c91e391bf2af84c9697e2d0",
+          "author_date": "2020-05-16T13:02:23Z",
+          "message": "Update JMeter screen preview (#575)",
+          "html_url": "https://github.com/apache/jmeter/commit/eae06c65b0a6f8df4c91e391bf2af84c9697e2d0"
+        },
+        {
+          "sha": "c164446867e0cd13999ed33a6851c2896b536d7d",
+          "author_date": "2020-05-16T13:06:47Z",
+          "message": "5.3 is not a minor bugfix",
+          "html_url": "https://github.com/apache/jmeter/commit/c164446867e0cd13999ed33a6851c2896b536d7d"
+        },
+        {
+          "sha": "a30e806b80f5e57336df11a742fd00da04c13d82",
+          "author_date": "2020-05-16T16:24:03Z",
+          "message": "Update screenshot",
+          "html_url": "https://github.com/apache/jmeter/commit/a30e806b80f5e57336df11a742fd00da04c13d82"
+        },
+        {
+          "sha": "0dde72017f6d2019364351b7f395288232a4550d",
+          "author_date": "2020-05-16T16:45:51Z",
+          "message": "Add the 5.3 release",
+          "html_url": "https://github.com/apache/jmeter/commit/0dde72017f6d2019364351b7f395288232a4550d"
+        },
+        {
+          "sha": "3fb8bf1546cb286441e541e85b002c04f5a8c5c4",
+          "author_date": "2020-05-26T12:46:41Z",
+          "message": "docs: clarify how to configure InfluxDB v1 and InfluxDB v2 (#592)",
+          "html_url": "https://github.com/apache/jmeter/commit/3fb8bf1546cb286441e541e85b002c04f5a8c5c4"
+        },
+        {
+          "sha": "cc499d7aa16e07ca4eb8976d14985cdbb7193110",
+          "author_date": "2020-05-26T12:47:58Z",
+          "message": "Update neo4j-java-driver from 1.7.5 to 4.0.1 (#594)",
+          "html_url": "https://github.com/apache/jmeter/commit/cc499d7aa16e07ca4eb8976d14985cdbb7193110"
+        },
+        {
+          "sha": "cd9475996c4eb98440f211e47dc2e8b8eeccffce",
+          "author_date": "2020-05-28T13:58:53Z",
+          "message": "Prepare next development round\n\nBump version to 5.3.1 and copy changes to old_changes\nKeep the changelog entry from pr #594 as it was added after the last release.",
+          "html_url": "https://github.com/apache/jmeter/commit/cd9475996c4eb98440f211e47dc2e8b8eeccffce"
+        },
+        {
+          "sha": "fe4d4d6074f844ff28acaf42f36765104fcf8471",
+          "author_date": "2020-05-28T14:06:26Z",
+          "message": "More precise error message, when no datasource value can be found in JDBC sampler\n\nBugzilla Id: 64454",
+          "html_url": "https://github.com/apache/jmeter/commit/fe4d4d6074f844ff28acaf42f36765104fcf8471"
+        },
+        {
+          "sha": "6e13c4d2c7e352362621ee9f6f9b47e0a84d19c1",
+          "author_date": "2020-05-28T14:14:32Z",
+          "message": "Log exeptions reported via JMeterUtils#reportToUser even when in GUI mode\n\nBugzilla Id: 64440",
+          "html_url": "https://github.com/apache/jmeter/commit/6e13c4d2c7e352362621ee9f6f9b47e0a84d19c1"
+        },
+        {
+          "sha": "a3128d243cfac7883194f24d6de599598fc675cf",
+          "author_date": "2020-05-28T14:36:41Z",
+          "message": "Fix tests to check for changed error messages\n\nFollow-up to fe4d4d6074f844ff28acaf42f36765104fcf8471\nBugzilla Id: 64454",
+          "html_url": "https://github.com/apache/jmeter/commit/a3128d243cfac7883194f24d6de599598fc675cf"
+        },
+        {
+          "sha": "e4e784b55f62bfbecd3f39f650bcc7550e254bd8",
+          "author_date": "2020-05-28T18:35:26Z",
+          "message": "Correct javadoc and a bit of spacepolice",
+          "html_url": "https://github.com/apache/jmeter/commit/e4e784b55f62bfbecd3f39f650bcc7550e254bd8"
+        },
+        {
+          "sha": "f26ca2581597c8a3ee9ffd4faa5a9dbfb6cd6851",
+          "author_date": "2020-05-28T19:05:27Z",
+          "message": "Get rid of warnings in unit test\n\nThere were warnings about missing generic information in variable declarations.\nNewer Java versions can use varargs for the methods involved. That seems nicer to\nlook at and gets rid of the warnings on the go",
+          "html_url": "https://github.com/apache/jmeter/commit/f26ca2581597c8a3ee9ffd4faa5a9dbfb6cd6851"
+        },
+        {
+          "sha": "dca1b9ab6bd98a1c70fb85bcb02d7d0fd6178f41",
+          "author_date": "2020-05-28T19:11:48Z",
+          "message": "Re-use methods in unit tests\n\nThere is no need to re-fetch methods from the same class in one method,\nso re-use them.",
+          "html_url": "https://github.com/apache/jmeter/commit/dca1b9ab6bd98a1c70fb85bcb02d7d0fd6178f41"
+        },
+        {
+          "sha": "0434e54f32f28bfefbedcf4b155cb18861c168c7",
+          "author_date": "2020-05-28T19:22:15Z",
+          "message": "Extract functionality to get methods into private method",
+          "html_url": "https://github.com/apache/jmeter/commit/0434e54f32f28bfefbedcf4b155cb18861c168c7"
+        },
+        {
+          "sha": "380ed39785f3834d8cfdc6c57da01d487df7877b",
+          "author_date": "2020-05-12T14:06:05Z",
+          "message": "Remove deprecated sudo setting.\n\nCloses #591 on github",
+          "html_url": "https://github.com/apache/jmeter/commit/380ed39785f3834d8cfdc6c57da01d487df7877b"
+        },
+        {
+          "sha": "3f2a588213d8bf61af2fbd948d3b4e2e3362ef43",
+          "author_date": "2020-05-30T14:42:59Z",
+          "message": "Spacepolice",
+          "html_url": "https://github.com/apache/jmeter/commit/3f2a588213d8bf61af2fbd948d3b4e2e3362ef43"
+        },
+        {
+          "sha": "779f4984af4a72a84e6b89797ebb151f1ac31bfb",
+          "author_date": "2020-05-30T14:49:47Z",
+          "message": "Correct xml markup\n\nFollow-up to 380ed39785f3834d8cfdc6c57da01d487df7877b\nRelates to #591",
+          "html_url": "https://github.com/apache/jmeter/commit/779f4984af4a72a84e6b89797ebb151f1ac31bfb"
+        },
+        {
+          "sha": "a0e132e59c820858225e58a5e6f1f091c60f100d",
+          "author_date": "2020-06-06T09:27:35Z",
+          "message": "Bug 64448 - User Defined Variable Duplication in Right Click Context\nMenu",
+          "html_url": "https://github.com/apache/jmeter/commit/a0e132e59c820858225e58a5e6f1f091c60f100d"
+        },
+        {
+          "sha": "0318c50a8a55d5be533a9150885e2facf04358a7",
+          "author_date": "2020-06-06T19:57:52Z",
+          "message": "Bug 64499 - Exiting JMeter when \"jmeterengine.stopfail.system.exit=true\"\ntakes too much time if threads are not stopped",
+          "html_url": "https://github.com/apache/jmeter/commit/0318c50a8a55d5be533a9150885e2facf04358a7"
+        },
+        {
+          "sha": "c06f73088924b45cf7fc54b5e27c8483a2f9c58a",
+          "author_date": "2020-06-06T20:00:20Z",
+          "message": "Show how to setup rotating logs",
+          "html_url": "https://github.com/apache/jmeter/commit/c06f73088924b45cf7fc54b5e27c8483a2f9c58a"
+        },
+        {
+          "sha": "9f3cc5f15c495f3867f2c1f68ce85ebd87b40b57",
+          "author_date": "2020-06-06T20:06:55Z",
+          "message": "Fix documentation: sampleresult.timestamp.start is false by default",
+          "html_url": "https://github.com/apache/jmeter/commit/9f3cc5f15c495f3867f2c1f68ce85ebd87b40b57"
+        },
+        {
+          "sha": "44a634ddbb217a167d5570ad2d535987c20ff965",
+          "author_date": "2020-06-07T09:01:41Z",
+          "message": "Updated Darklaf to 2.2.1 (from 2.1.1)",
+          "html_url": "https://github.com/apache/jmeter/commit/44a634ddbb217a167d5570ad2d535987c20ff965"
+        },
+        {
+          "sha": "353ad79c5497c4d624f8b276580b6b50d45b27b9",
+          "author_date": "2020-06-09T10:49:00Z",
+          "message": "Better parse curl commands with backslash at line endings and support PUT method with data arguments\n\nBugzilla Id: 64446",
+          "html_url": "https://github.com/apache/jmeter/commit/353ad79c5497c4d624f8b276580b6b50d45b27b9"
+        },
+        {
+          "sha": "1a1984ae3f7ad0abc3745d85d61c811092f429aa",
+          "author_date": "2020-06-09T14:21:41Z",
+          "message": "Try to use neutral words\n\nName the remote systems that do the work \"worker nodes\" and the one\nthe controlls all the stuff \"controller node\".",
+          "html_url": "https://github.com/apache/jmeter/commit/1a1984ae3f7ad0abc3745d85d61c811092f429aa"
+        },
+        {
+          "sha": "bf7de5ba881e5c8374c597b185028ca0ac9ec232",
+          "author_date": "2020-06-09T14:25:10Z",
+          "message": "Use neutral wording\n\nCloses #596 on github",
+          "html_url": "https://github.com/apache/jmeter/commit/bf7de5ba881e5c8374c597b185028ca0ac9ec232"
+        },
+        {
+          "sha": "23776e4e87302681e4ac79b4e71b0844cdd54ca1",
+          "author_date": "2020-06-13T16:50:30Z",
+          "message": "Revert to darklaf 2.1.1 as 2.2.x break Guis that use GroupLayout",
+          "html_url": "https://github.com/apache/jmeter/commit/23776e4e87302681e4ac79b4e71b0844cdd54ca1"
+        },
+        {
+          "sha": "28fce6057c72d32aa71f7437d18abb7c28ffc62f",
+          "author_date": "2020-02-16T14:30:39Z",
+          "message": "Updated commons-collections to 4.4 (from 3.2.2)\n\nKeep old commons-collections 3.x for compatibility\n\nBugzilla Id: 63809\nCloses #557 on github",
+          "html_url": "https://github.com/apache/jmeter/commit/28fce6057c72d32aa71f7437d18abb7c28ffc62f"
+        },
+        {
+          "sha": "4e90a0d9d610dba3050da712677be2d18cb80d46",
+          "author_date": "2020-06-14T15:08:09Z",
+          "message": "Allow build failurs on s390x on travis.",
+          "html_url": "https://github.com/apache/jmeter/commit/4e90a0d9d610dba3050da712677be2d18cb80d46"
+        },
+        {
+          "sha": "72aac86581285767d7d309a2a96a43d3fc794469",
+          "author_date": "2020-06-16T16:51:28Z",
+          "message": "Use same wording as the docs for mongodb",
+          "html_url": "https://github.com/apache/jmeter/commit/72aac86581285767d7d309a2a96a43d3fc794469"
+        },
+        {
+          "sha": "3484eb762814e88ca2a265991b7b5d0516ea204a",
+          "author_date": "2020-06-15T05:22:33Z",
+          "message": "Add option to create a diff\n\nCloses #598",
+          "html_url": "https://github.com/apache/jmeter/commit/3484eb762814e88ca2a265991b7b5d0516ea204a"
+        },
+        {
+          "sha": "1aaeb70fb811fb6b404d6d3c9d297d36feb23f11",
+          "author_date": "2020-06-16T17:05:37Z",
+          "message": "darklaf update was reverted (plus one typo correction)",
+          "html_url": "https://github.com/apache/jmeter/commit/1aaeb70fb811fb6b404d6d3c9d297d36feb23f11"
+        },
+        {
+          "sha": "ad47a03b77f2e6bffc4e821d74a7503cc25a9cfa",
+          "author_date": "2020-06-16T17:07:36Z",
+          "message": "No space in front of a colon",
+          "html_url": "https://github.com/apache/jmeter/commit/ad47a03b77f2e6bffc4e821d74a7503cc25a9cfa"
+        },
+        {
+          "sha": "56abc9ed7a9925ed945b894627265a82e8436f2f",
+          "author_date": "2020-06-16T17:11:33Z",
+          "message": "Markup changes",
+          "html_url": "https://github.com/apache/jmeter/commit/56abc9ed7a9925ed945b894627265a82e8436f2f"
+        },
+        {
+          "sha": "913735db54bf5a2e0a1461aee0e110df19512424",
+          "author_date": "2020-06-17T10:20:21Z",
+          "message": "Fix ProxyControl timer that prevents correct shutdown\n\nRegression introduced with Bug 64400\n\nBugzilla Id: 64479",
+          "html_url": "https://github.com/apache/jmeter/commit/913735db54bf5a2e0a1461aee0e110df19512424"
+        },
+        {
+          "sha": "1cba22842196d30df5d554d5a6bb846404f327ce",
+          "author_date": "2020-06-22T06:51:04Z",
+          "message": "Upgrade darklaf to fix bug 64510, 64543",
+          "html_url": "https://github.com/apache/jmeter/commit/1cba22842196d30df5d554d5a6bb846404f327ce"
+        },
+        {
+          "sha": "bae1b43443e0c709a6b3b63fc73b82e3d5fe5f6f",
+          "author_date": "2020-06-22T10:30:31Z",
+          "message": "Duplicate entry in changelog",
+          "html_url": "https://github.com/apache/jmeter/commit/bae1b43443e0c709a6b3b63fc73b82e3d5fe5f6f"
+        },
+        {
+          "sha": "69ecfde59a12fcf1e333419af9958e935107b329",
+          "author_date": "2020-06-23T10:09:31Z",
+          "message": "Bug 64547 - Report/Dashboard: Ensure graphs Response codes per second is\nnot broken by empty response code in SampleResult\n\nContributed by UbikLoadPack",
+          "html_url": "https://github.com/apache/jmeter/commit/69ecfde59a12fcf1e333419af9958e935107b329"
+        },
+        {
+          "sha": "1d7cc1b07344d93ece3e39c0935d5f8af4ab064d",
+          "author_date": "2020-06-23T17:16:59Z",
+          "message": "Use StringUtils#defaultIfBlank instead of simulating it",
+          "html_url": "https://github.com/apache/jmeter/commit/1d7cc1b07344d93ece3e39c0935d5f8af4ab064d"
+        },
+        {
+          "sha": "0c9606ad52fcfb259bfa4345c8f4e8cf6792f596",
+          "author_date": "2020-06-24T06:38:08Z",
+          "message": "Ensure all buttons added to the toolbar behave/look consistently. (#599)",
+          "html_url": "https://github.com/apache/jmeter/commit/0c9606ad52fcfb259bfa4345c8f4e8cf6792f596"
+        },
+        {
+          "sha": "507ae37b88424c89b8abdbb04c68e7d17372f441",
+          "author_date": "2020-06-24T06:41:35Z",
+          "message": "Updates with latest bug fixes and mention Weisj",
+          "html_url": "https://github.com/apache/jmeter/commit/507ae37b88424c89b8abdbb04c68e7d17372f441"
+        },
+        {
+          "sha": "8b43d6a7f6f675a3c629d372052c66ab0005cd17",
+          "author_date": "2020-06-24T06:45:43Z",
+          "message": "Set JMSType header field through JMSProperties. (#600)\n\n* Set JMSType header field through JMSProperties.\r\n\r\n* Fixed indenting\r\n\r\nThis fixes https://bz.apache.org/bugzilla/show_bug.cgi?id=64555",
+          "html_url": "https://github.com/apache/jmeter/commit/8b43d6a7f6f675a3c629d372052c66ab0005cd17"
+        },
+        {
+          "sha": "020b10930fc76b0bedb07f1b27d08914a5e66143",
+          "author_date": "2020-06-24T06:46:09Z",
+          "message": "Mention contributor",
+          "html_url": "https://github.com/apache/jmeter/commit/020b10930fc76b0bedb07f1b27d08914a5e66143"
+        },
+        {
+          "sha": "fadf375b0049d17d8eae25dd9b22ac52c1df27a5",
+          "author_date": "2020-06-24T06:51:16Z",
+          "message": "Mention real name",
+          "html_url": "https://github.com/apache/jmeter/commit/fadf375b0049d17d8eae25dd9b22ac52c1df27a5"
+        },
+        {
+          "sha": "77e80e8a0c3d3ef6f408f6fefecc622a286b5ce5",
+          "author_date": "2020-07-08T06:59:50Z",
+          "message": "Bug 64581 - Allow SampleResult#setIgnore to influence behaviour on (#604)\n\nSampler Error\r\n\r\nFix also misnamed lastSampleInError to lastSampleOk\r\nWhen SampleResult#isIgnore() is true, use is for impacting algorithmic\r\nexecution, it will be taken into account to:\r\n\r\n- Decide what to do on Error (\"Action to be taken after a Sampler error\"\r\nin Thread Group)\r\n- set JMeterThread.last_sample_ok",
+          "html_url": "https://github.com/apache/jmeter/commit/77e80e8a0c3d3ef6f408f6fefecc622a286b5ce5"
+        },
+        {
+          "sha": "def282ef34d4631a9c857ad32b748e30c7d8a90b",
+          "author_date": "2020-07-09T07:16:53Z",
+          "message": "Upgrade Darklaf to 2.4.0 from 2.3.0",
+          "html_url": "https://github.com/apache/jmeter/commit/def282ef34d4631a9c857ad32b748e30c7d8a90b"
+        },
+        {
+          "sha": "fb66ca90547856d39b59e98b978cb551e53f5a04",
+          "author_date": "2020-07-09T11:12:37Z",
+          "message": "Trigger new build following fix of https://github.com/weisJ/darklaf/issues/192",
+          "html_url": "https://github.com/apache/jmeter/commit/fb66ca90547856d39b59e98b978cb551e53f5a04"
+        },
+        {
+          "sha": "3dc38149479ba0de9853a6e0f97e3f81e3353faf",
+          "author_date": "2020-07-14T20:39:05Z",
+          "message": "Delete unused class",
+          "html_url": "https://github.com/apache/jmeter/commit/3dc38149479ba0de9853a6e0f97e3f81e3353faf"
+        },
+        {
+          "sha": "105a1eba63d0b0fc680d1f21a95dda2c7f5dc7fe",
+          "author_date": "2020-07-17T16:23:58Z",
+          "message": "Upgrade darklaf to 2.4.1 to fix Bug 64594Unable to enter variable values instead of numeric values in components using PowerTableModel (Impacts 3rd party plugins like Throughput Shaping Timer)",
+          "html_url": "https://github.com/apache/jmeter/commit/105a1eba63d0b0fc680d1f21a95dda2c7f5dc7fe"
+        },
+        {
+          "sha": "99d8946e884f10c2954b435f1d4c90f70f7e3529",
+          "author_date": "2020-07-17T16:28:53Z",
+          "message": "Improved README. (#605)\n\nChanged structure, formatting and wording.\r\nFixed broken link.\r\nHTTP->HTTPs",
+          "html_url": "https://github.com/apache/jmeter/commit/99d8946e884f10c2954b435f1d4c90f70f7e3529"
+        },
+        {
+          "sha": "fb404396cc96139c2b94207478a73da23ad04144",
+          "author_date": "2020-07-25T13:25:55Z",
+          "message": "Bug 64475 - Menu Generate HTML Report: When report generation fails due\nto timeout, error message is not explicit",
+          "html_url": "https://github.com/apache/jmeter/commit/fb404396cc96139c2b94207478a73da23ad04144"
+        },
+        {
+          "sha": "12bb68cb6f83f378fee37af61499c64a4e2a266d",
+          "author_date": "2020-07-25T14:06:01Z",
+          "message": "Bug 64547 - Report/Dashboard: Ensure graphs Response codes per second is\nnot broken by empty response code in SampleResult\n\n\nFix regression in Response Time Percentiles Over Time (successful\nresponses)",
+          "html_url": "https://github.com/apache/jmeter/commit/12bb68cb6f83f378fee37af61499c64a4e2a266d"
+        },
+        {
+          "sha": "5d470437c87f2807af317284a2d9372d03db987a",
+          "author_date": "2020-07-25T20:14:55Z",
+          "message": "Bug 64617 - HTML report: In graph Response Time Percentiles Over Time\n90,95,99th percentile correspond in reality to 0.90, 0.95 and 0.99\npercentiles",
+          "html_url": "https://github.com/apache/jmeter/commit/5d470437c87f2807af317284a2d9372d03db987a"
+        },
+        {
+          "sha": "c0289a2a76082036341e3f8f8602627b4a7fad60",
+          "author_date": "2020-07-25T20:24:18Z",
+          "message": "Fix for bug fix 62238 (#606)",
+          "html_url": "https://github.com/apache/jmeter/commit/c0289a2a76082036341e3f8f8602627b4a7fad60"
+        },
+        {
+          "sha": "8a856d69ac89c5510b7256c18ae82c0401625cf8",
+          "author_date": "2020-07-25T20:28:55Z",
+          "message": "Add Thanks to Till Neunast",
+          "html_url": "https://github.com/apache/jmeter/commit/8a856d69ac89c5510b7256c18ae82c0401625cf8"
+        },
+        {
+          "sha": "c037ee577a03a895de1b5e0163b34db01e6eb4ac",
+          "author_date": "2020-08-02T17:09:41Z",
+          "message": "Bug 64638 - JSON JMESPath Assertion / JSON Assertion: Opening GUI shows\na horizontal scrollbar that keeps sliding\n\n\nFix issue and rework UI",
+          "html_url": "https://github.com/apache/jmeter/commit/c037ee577a03a895de1b5e0163b34db01e6eb4ac"
+        },
+        {
+          "sha": "a1710570b660b50ef889fbb97080304e730797bd",
+          "author_date": "2020-08-02T17:10:49Z",
+          "message": "style",
+          "html_url": "https://github.com/apache/jmeter/commit/a1710570b660b50ef889fbb97080304e730797bd"
+        },
+        {
+          "sha": "91e1c7ff6df91aee09190c19309838dfeefd1fd8",
+          "author_date": "2020-08-05T19:52:45Z",
+          "message": "[Bug 64647] New: groovy-dateutil is missing in distribution",
+          "html_url": "https://github.com/apache/jmeter/commit/91e1c7ff6df91aee09190c19309838dfeefd1fd8"
+        },
+        {
+          "sha": "58bf600130feb646291fbc3e228a8f97c8220773",
+          "author_date": "2020-08-05T19:56:15Z",
+          "message": "Updated Groovy to 3.0.5 (from 3.0.3)",
+          "html_url": "https://github.com/apache/jmeter/commit/58bf600130feb646291fbc3e228a8f97c8220773"
+        },
+        {
+          "sha": "637701eea585cc55c9f3cc383d5fcda267f5adf4",
+          "author_date": "2020-08-05T20:20:33Z",
+          "message": "Add allowed pgp key for org.apache.ant",
+          "html_url": "https://github.com/apache/jmeter/commit/637701eea585cc55c9f3cc383d5fcda267f5adf4"
+        },
+        {
+          "sha": "08d22fbf175ecbc8c3ecb0fc839bd92a9dd5cdc2",
+          "author_date": "2020-08-06T20:19:12Z",
+          "message": "Update Darklaf from 2.4.1 to 2.4.2 to fix bugs 64640, 64641, 64453, 64625",
+          "html_url": "https://github.com/apache/jmeter/commit/08d22fbf175ecbc8c3ecb0fc839bd92a9dd5cdc2"
+        },
+        {
+          "sha": "0592978cb16ff8e7aea3ca96215e01141a78c2cd",
+          "author_date": "2020-08-02T13:25:18Z",
+          "message": "Implement a new setting to allow the exclusion of embedded URLs\n\nAt the moment we allow only one regular expression to control which URLs will\nbe downloaded by the HTTP sampler, when embedded download is enabled.\n\nThis can be used to exclude specific URLs, but it is not possible to exclude and allow\nURLs at the same time.\n\nThis patch gives the user a second field which can be used to exclude URLs.\n\nBugzilla Id: 63527\nCloses #607",
+          "html_url": "https://github.com/apache/jmeter/commit/0592978cb16ff8e7aea3ca96215e01141a78c2cd"
+        },
+        {
+          "sha": "3a8c6e9c991b696892f8f68c97c0085ffada4d4d",
+          "author_date": "2020-08-08T12:35:24Z",
+          "message": "Typo. Meant bug of course.",
+          "html_url": "https://github.com/apache/jmeter/commit/3a8c6e9c991b696892f8f68c97c0085ffada4d4d"
+        },
+        {
+          "sha": "6ef792eeb14be3573e47e304cf51f9c79217c092",
+          "author_date": "2020-08-08T14:22:01Z",
+          "message": "Partly revert unwanted nightly build comment in 58bf600130feb646291fbc3e228a8f97c8220773\n\nWith that commit came a leftover probably from developing with\na nightly build of darklaf.\nThe commit though was about updating Groovy, so it was probably\nunwanted.",
+          "html_url": "https://github.com/apache/jmeter/commit/6ef792eeb14be3573e47e304cf51f9c79217c092"
+        },
+        {
+          "sha": "81a6d678d725e98d5325b8d9429345f40d35f845",
+          "author_date": "2020-08-08T17:31:22Z",
+          "message": "Exclude Javascript and JSON from parsing for charsets from forms by proxy\n\nJSoup currently has problems parsing some non HTML code - for which\nit was probably never intended. So skip known not HTML resources\nin the proxy recording logic, when character encodings for forms\nare extracted.\n\nBugzilla Id: 64653",
+          "html_url": "https://github.com/apache/jmeter/commit/81a6d678d725e98d5325b8d9429345f40d35f845"
+        },
+        {
+          "sha": "6fa1735f86f734edfe1093e0edf6c9a336811430",
+          "author_date": "2020-08-09T09:26:50Z",
+          "message": "Add ThreadGroup in the mix instead of duplicate condition\n\nThe other conditions are always using the dual components, so keep that pattern\nfor the ThreadGroup <-> AbstractThreadGroupGui, too.",
+          "html_url": "https://github.com/apache/jmeter/commit/6fa1735f86f734edfe1093e0edf6c9a336811430"
+        },
+        {
+          "sha": "b64a68c2a9e331b2334b4dd3768829bb196ef947",
+          "author_date": "2020-08-09T09:33:43Z",
+          "message": "Don't use toString here, as it is not needed and target could be null",
+          "html_url": "https://github.com/apache/jmeter/commit/b64a68c2a9e331b2334b4dd3768829bb196ef947"
+        },
+        {
+          "sha": "cf32f8eaf83363d2a46c798f17b4d44b7c985da5",
+          "author_date": "2020-08-09T10:07:38Z",
+          "message": "Don't use toString on format parameters and correct number of placeholders",
+          "html_url": "https://github.com/apache/jmeter/commit/cf32f8eaf83363d2a46c798f17b4d44b7c985da5"
+        },
+        {
+          "sha": "af3958b3cd5172bc60ca2d3f440febf173f45f8e",
+          "author_date": "2020-08-09T10:20:02Z",
+          "message": "Use format message placeholder instead of string concatenation, to make code clearer",
+          "html_url": "https://github.com/apache/jmeter/commit/af3958b3cd5172bc60ca2d3f440febf173f45f8e"
+        },
+        {
+          "sha": "216a6498c02494ba0f5b6e440c398dff3b34c845",
+          "author_date": "2020-08-09T11:05:38Z",
+          "message": "Use ThreadLocal.remove instead of set(null). It is safer",
+          "html_url": "https://github.com/apache/jmeter/commit/216a6498c02494ba0f5b6e440c398dff3b34c845"
+        },
+        {
+          "sha": "9df1bfee31bb4b783635d0fa3dd5af881271b4d7",
+          "author_date": "2020-08-09T11:46:25Z",
+          "message": "Make sonarqube a bit happier and trigger a new build",
+          "html_url": "https://github.com/apache/jmeter/commit/9df1bfee31bb4b783635d0fa3dd5af881271b4d7"
+        },
+        {
+          "sha": "d3a09cecc977e902154657d0a5281bab90d8fbac",
+          "author_date": "2020-08-09T12:12:03Z",
+          "message": "Use Map#computeIfAbsent to simplify code",
+          "html_url": "https://github.com/apache/jmeter/commit/d3a09cecc977e902154657d0a5281bab90d8fbac"
+        },
+        {
+          "sha": "5671589eb24cfb4f93e6cc8e897ff71ab4b3901b",
+          "author_date": "2020-08-09T12:19:06Z",
+          "message": "Change to new jenkins nodes and correct filename-structure of nightlies",
+          "html_url": "https://github.com/apache/jmeter/commit/5671589eb24cfb4f93e6cc8e897ff71ab4b3901b"
+        },
+        {
+          "sha": "2238e7c2c766ad9498403108ea7c00dd048fdcf8",
+          "author_date": "2020-08-09T14:57:42Z",
+          "message": "No need to call toString on argument to message format",
+          "html_url": "https://github.com/apache/jmeter/commit/2238e7c2c766ad9498403108ea7c00dd048fdcf8"
+        },
+        {
+          "sha": "8f1391366801fd575fe9fc8954baab5d24539d4d",
+          "author_date": "2020-08-09T15:21:44Z",
+          "message": "Try to make jars available for sonar scanner",
+          "html_url": "https://github.com/apache/jmeter/commit/8f1391366801fd575fe9fc8954baab5d24539d4d"
+        },
+        {
+          "sha": "eeb52588b6d4d0930e321b32718c2349ef053871",
+          "author_date": "2020-08-09T15:22:56Z",
+          "message": "Use correct path for jars",
+          "html_url": "https://github.com/apache/jmeter/commit/eeb52588b6d4d0930e321b32718c2349ef053871"
+        },
+        {
+          "sha": "4159674b211d59949e16b50dac05d2f1aad5a708",
+          "author_date": "2020-08-09T16:02:51Z",
+          "message": "Seems to be the wrong path for libs, so remove it again",
+          "html_url": "https://github.com/apache/jmeter/commit/4159674b211d59949e16b50dac05d2f1aad5a708"
+        },
+        {
+          "sha": "f381cda57564270d7d81298d5d0e1944dc2622f9",
+          "author_date": "2020-08-09T16:03:26Z",
+          "message": "Use badge for new jenkins instance",
+          "html_url": "https://github.com/apache/jmeter/commit/f381cda57564270d7d81298d5d0e1944dc2622f9"
+        },
+        {
+          "sha": "9d21839314254a54e673c0d1d861b5bd8bfa18f1",
+          "author_date": "2020-08-09T16:41:05Z",
+          "message": "Update utility jars spotbugs and checksum",
+          "html_url": "https://github.com/apache/jmeter/commit/9d21839314254a54e673c0d1d861b5bd8bfa18f1"
+        },
+        {
+          "sha": "80718ad6b90c062807989551e05ffef546755a09",
+          "author_date": "2020-08-09T16:56:30Z",
+          "message": "Add missing key id for spotbugs",
+          "html_url": "https://github.com/apache/jmeter/commit/80718ad6b90c062807989551e05ffef546755a09"
+        },
+        {
+          "sha": "906918b8c946ff22d0c8dd1ac1090869ce31266d",
+          "author_date": "2020-08-09T17:06:30Z",
+          "message": "Add missing key id for org.json:json",
+          "html_url": "https://github.com/apache/jmeter/commit/906918b8c946ff22d0c8dd1ac1090869ce31266d"
+        },
+        {
+          "sha": "a1bc13f1d626fc9d58bb9d5124a72bd07237374d",
+          "author_date": "2020-08-09T17:48:16Z",
+          "message": "Correct typo: ley -> key",
+          "html_url": "https://github.com/apache/jmeter/commit/a1bc13f1d626fc9d58bb9d5124a72bd07237374d"
+        },
+        {
+          "sha": "44c0c7ee1a18b86528adf07607839614166d60f6",
+          "author_date": "2020-08-10T15:59:56Z",
+          "message": "Log status on start up, when splash screen is displayed\n\nBe more verbose on the init phase, when the startup splash screen\nis being displayed. This can hopefully be used to pinpoint problems\non startup more easily.\n\nBugzilla Id: 64658",
+          "html_url": "https://github.com/apache/jmeter/commit/44c0c7ee1a18b86528adf07607839614166d60f6"
+        },
+        {
+          "sha": "53873bc91c6ef18c6aa56aa3e55dfa15f701e06e",
+          "author_date": "2020-08-10T17:47:08Z",
+          "message": "Correct possible thread wake-up problem and typo\n\nThis was noted by sonar. Usage of notify is problematic, as it could\nfail to wake-up the correct thread.",
+          "html_url": "https://github.com/apache/jmeter/commit/53873bc91c6ef18c6aa56aa3e55dfa15f701e06e"
+        },
+        {
+          "sha": "0070acbf1635ca05ef384c8e47ec4863ae7e3bd1",
+          "author_date": "2020-08-11T18:58:03Z",
+          "message": "Make use of newer Darklaf API to create laf menu items.",
+          "html_url": "https://github.com/apache/jmeter/commit/0070acbf1635ca05ef384c8e47ec4863ae7e3bd1"
+        },
+        {
+          "sha": "f2e17500c4b297e3fb70f19d95ba4bbc4de3fd1c",
+          "author_date": "2020-08-11T19:18:34Z",
+          "message": "Update to Darklaf version 2.4.4\n\nCloses #609",
+          "html_url": "https://github.com/apache/jmeter/commit/f2e17500c4b297e3fb70f19d95ba4bbc4de3fd1c"
+        },
+        {
+          "sha": "445df9f387d23cf5b8defa7c3d257608bff7904b",
+          "author_date": "2020-08-13T10:49:06Z",
+          "message": "Fix to: Implement a new setting to allow the exclusion of embedded URLs\n\nA logic mistake would make the exclude filter be only applied, when\na include filter was defined.\n\nBugzilla Id: 63527\nRelates to #607",
+          "html_url": "https://github.com/apache/jmeter/commit/445df9f387d23cf5b8defa7c3d257608bff7904b"
+        },
+        {
+          "sha": "0b13f13a9be4ba909ff21a83263336414ac206ba",
+          "author_date": "2020-08-19T11:40:39Z",
+          "message": "Update Gradle to 6.6",
+          "html_url": "https://github.com/apache/jmeter/commit/0b13f13a9be4ba909ff21a83263336414ac206ba"
+        },
+        {
+          "sha": "ceddfe7adb288aa221089727b457ec7243d9d326",
+          "author_date": "2020-08-19T10:26:41Z",
+          "message": "Configure Gradle local build cache, add build scans, and use gradle-cache-action for GitHub CI\n\nThis commit configures local build cache, and it delegates\nGradle execution to burrunan/gradle-cache-action.\n\nIt unlocks fine-grained remote build cache with GitHub Actions backend\n(=faster builds), and it adds error markers\n(e.g. compilation errors right in the commit diffs)\n\nSee https://github.com/burrunan/gradle-cache-action#gradle-cache-action",
+          "html_url": "https://github.com/apache/jmeter/commit/ceddfe7adb288aa221089727b457ec7243d9d326"
+        },
+        {
+          "sha": "7fd938f9bca1572c85458861eb3a42e8fa84225d",
+          "author_date": "2020-08-20T15:58:08Z",
+          "message": "Correct typos in README.me\n\nBased on patches by Pooja Chandak (poojachandak002 at gmail.com)\n\nCloses #612",
+          "html_url": "https://github.com/apache/jmeter/commit/7fd938f9bca1572c85458861eb3a42e8fa84225d"
+        },
+        {
+          "sha": "19a207d030ad2cb9c1b687df690b0423565ff7dc",
+          "author_date": "2020-08-19T18:24:29Z",
+          "message": "Update to darklaf 2.4.5",
+          "html_url": "https://github.com/apache/jmeter/commit/19a207d030ad2cb9c1b687df690b0423565ff7dc"
+        },
+        {
+          "sha": "28e11b860a7c4ef646a339bf9f949206f282560f",
+          "author_date": "2020-08-19T18:25:43Z",
+          "message": "Mention available darklaf properties.\nEnsure that 'darklaf.allowNativeCode' is set to 'true' if 'darklaf.decorations' is 'true'.",
+          "html_url": "https://github.com/apache/jmeter/commit/28e11b860a7c4ef646a339bf9f949206f282560f"
+        },
+        {
+          "sha": "a146f6b2aebe015754e657493be2dd07433c4b53",
+          "author_date": "2020-08-20T16:24:55Z",
+          "message": "Add changelog entry and use Boolean#getBoolean\n\nCloses #613",
+          "html_url": "https://github.com/apache/jmeter/commit/a146f6b2aebe015754e657493be2dd07433c4b53"
+        },
+        {
+          "sha": "75fdc09422a1142fc923110d708773e439c1550d",
+          "author_date": "2020-08-19T21:01:03Z",
+          "message": "Make the splash screen application-modal rather than system-modal",
+          "html_url": "https://github.com/apache/jmeter/commit/75fdc09422a1142fc923110d708773e439c1550d"
+        },
+        {
+          "sha": "5eff144d115428251547b8974324a24489625de9",
+          "author_date": "2020-08-20T17:58:41Z",
+          "message": "Update SpotBugs to 4.1.2 (from 4.1.1), upgrade spotbugs-gradle-plugin to 4.5.0 (from 2.0.0)\n\nThis should make SpotBugs compatible with the current Gradle version",
+          "html_url": "https://github.com/apache/jmeter/commit/5eff144d115428251547b8974324a24489625de9"
+        },
+        {
+          "sha": "98c355242668aab8231d2d8b0bf29d5efdf87e10",
+          "author_date": "2020-08-20T18:01:08Z",
+          "message": "Remove dependency between checkstyle and compilation tasks\n\nSee https://github.com/gradle/gradle/issues/14227",
+          "html_url": "https://github.com/apache/jmeter/commit/98c355242668aab8231d2d8b0bf29d5efdf87e10"
+        },
+        {
+          "sha": "90ddca3b76e940dbb91e4bd281fffe476c8e4a7d",
+          "author_date": "2020-08-20T18:05:31Z",
+          "message": "Do not execute SpotBugs by default",
+          "html_url": "https://github.com/apache/jmeter/commit/90ddca3b76e940dbb91e4bd281fffe476c8e4a7d"
+        },
+        {
+          "sha": "9acded5a7a06c7839d021edb9012e6dce5ea7371",
+          "author_date": "2020-08-20T18:39:36Z",
+          "message": "Fix Gradle warnings: duplicate entries in processResources, compile configuration",
+          "html_url": "https://github.com/apache/jmeter/commit/9acded5a7a06c7839d021edb9012e6dce5ea7371"
+        },
+        {
+          "sha": "769a2a1b68d4f963bd38c0f706997b2f5bb875b0",
+          "author_date": "2020-08-20T19:30:18Z",
+          "message": "Fix Gradle deprecations: replace testCompile with testImplementation\n\nThe difference is testImplementation is not \"transitive\" which is a good\nthing anyway as it avoids having too much classes in the classpath.",
+          "html_url": "https://github.com/apache/jmeter/commit/769a2a1b68d4f963bd38c0f706997b2f5bb875b0"
+        },
+        {
+          "sha": "a0ed3e0e0c205257f25d359e2c7df91847f815c7",
+          "author_date": "2020-08-20T21:25:38Z",
+          "message": "Update org.sonarqube Gradle plugin to 3.0 (from 2.7.1)",
+          "html_url": "https://github.com/apache/jmeter/commit/a0ed3e0e0c205257f25d359e2c7df91847f815c7"
+        },
+        {
+          "sha": "3109b8b28d599963df7ae32a130f5b9e3f453866",
+          "author_date": "2020-08-20T21:32:29Z",
+          "message": "Add a checksum for sonarqube-gradle-plugin",
+          "html_url": "https://github.com/apache/jmeter/commit/3109b8b28d599963df7ae32a130f5b9e3f453866"
+        },
+        {
+          "sha": "20ba58d0c0273d1857a3c1b614d32617faf7f7ce",
+          "author_date": "2020-08-21T15:41:58Z",
+          "message": "Fall back to JMETER_HOME on startup to detect JMeter's installation directory\n\nBugzilla Id: 64680",
+          "html_url": "https://github.com/apache/jmeter/commit/20ba58d0c0273d1857a3c1b614d32617faf7f7ce"
+        },
+        {
+          "sha": "ba27712991f6df5cce54e9cf5a69ab999ea77e63",
+          "author_date": "2020-08-21T15:58:01Z",
+          "message": "Remove useless braces for one-liner lambda expression\n\nMainly to trigger a ci build and soothen sonar.",
+          "html_url": "https://github.com/apache/jmeter/commit/ba27712991f6df5cce54e9cf5a69ab999ea77e63"
+        },
+        {
+          "sha": "b2d487c6fb3d9ba31b651e1e0c8a1eac05478f5d",
+          "author_date": "2020-08-25T13:12:27Z",
+          "message": "Correct documented name of generated CA when using proxy script recorder\n\nPart of a bigger PR.\nContributed by Vincent Daburon (vdaburon at gmail.com)\n\nRelates to #571",
+          "html_url": "https://github.com/apache/jmeter/commit/b2d487c6fb3d9ba31b651e1e0c8a1eac05478f5d"
+        },
+        {
+          "sha": "fd8b99411eb442df44cd0d779e0c7505c5a6adc1",
+          "author_date": "2020-08-28T07:46:53Z",
+          "message": "Fall back to JMETER_HOME on startup (even more fall-back)\n\nUse JMETER_HOME as a fall back even before trying user.dir.\n\nRelates to 20ba58d0c0273d1857a3c1b614d32617faf7f7ce\nBugzilla Id: 64680",
+          "html_url": "https://github.com/apache/jmeter/commit/fd8b99411eb442df44cd0d779e0c7505c5a6adc1"
+        },
+        {
+          "sha": "21128b56ac4fa1f4d9a260b1f0e4ec3cfa7f033b",
+          "author_date": "2020-08-21T10:53:01Z",
+          "message": "Use less aggressive escaping for JSON Strings in reports error messages\n\nBug 64624",
+          "html_url": "https://github.com/apache/jmeter/commit/21128b56ac4fa1f4d9a260b1f0e4ec3cfa7f033b"
+        },
+        {
+          "sha": "b69ca04a1be2d20d21d83278dc951ab52c9751d3",
+          "author_date": "2020-05-31T14:03:41Z",
+          "message": "Freestyle format for names in (Default)SamplerCreater\n\nNames of newly created Samplers by the DefaultSamplerCreator can now be\nstyled with a freestyle format, that understands the controls for\nMessageFormat. Apart from the placeholders {0}, {1} and {2}, that are\nhard to guess, for which part they are used, more memorizable placeholders\n #{name}, #{path} and #{counter} can be used.\n\nThe counter for the generated samplers can be set to a user specified number.\n\nBased on a patch by Vincent Daburon\n\nBugzilla Id: 64696\nCloses #571\nCloses #595",
+          "html_url": "https://github.com/apache/jmeter/commit/b69ca04a1be2d20d21d83278dc951ab52c9751d3"
+        },
+        {
+          "sha": "f6d4f521f321932612da290d75cca13c813ee7d0",
+          "author_date": "2020-08-16T09:23:14Z",
+          "message": "Remove unsused private field",
+          "html_url": "https://github.com/apache/jmeter/commit/f6d4f521f321932612da290d75cca13c813ee7d0"
+        },
+        {
+          "sha": "414f0e2b381f77a8ea9c97480732faa80e453fb8",
+          "author_date": "2020-08-16T09:28:38Z",
+          "message": "Remove empty javadoc",
+          "html_url": "https://github.com/apache/jmeter/commit/414f0e2b381f77a8ea9c97480732faa80e453fb8"
+        },
+        {
+          "sha": "c81d287631bee92a39208186dcc4330c4262b78b",
+          "author_date": "2020-08-16T09:22:31Z",
+          "message": "Add type argument",
+          "html_url": "https://github.com/apache/jmeter/commit/c81d287631bee92a39208186dcc4330c4262b78b"
+        },
+        {
+          "sha": "ead6b9c1aab3aca202e719336dc9cf4d4635777a",
+          "author_date": "2020-08-26T10:06:11Z",
+          "message": "Add generic type info",
+          "html_url": "https://github.com/apache/jmeter/commit/ead6b9c1aab3aca202e719336dc9cf4d4635777a"
+        },
+        {
+          "sha": "ebb0492e1ad20f33cfdac2b7f70d59500bb741b1",
+          "author_date": "2020-08-26T10:36:31Z",
+          "message": "Spacepolice\n\nAdd a space between if and the parenthesis",
+          "html_url": "https://github.com/apache/jmeter/commit/ebb0492e1ad20f33cfdac2b7f70d59500bb741b1"
+        },
+        {
+          "sha": "9a900cb55604c45f7a85dbcd78ba210a17dd9f72",
+          "author_date": "2020-08-30T08:44:47Z",
+          "message": "Correct test cases for new behaviour of report generation\n\nUse less aggressive escaping for JSON Strings in reports error messages\n\nRelates to 21128b56ac4fa1f4d9a260b1f0e4ec3cfa7f033b\nBugzilla Id: 64624",
+          "html_url": "https://github.com/apache/jmeter/commit/9a900cb55604c45f7a85dbcd78ba210a17dd9f72"
+        },
+        {
+          "sha": "ba2c8bac5e5fedc151f6843a32ca31646fccfb28",
+          "author_date": "2020-08-30T09:01:20Z",
+          "message": "Update Apache ActiveMQ dependencies to 5.16.0",
+          "html_url": "https://github.com/apache/jmeter/commit/ba2c8bac5e5fedc151f6843a32ca31646fccfb28"
+        },
+        {
+          "sha": "8a7da195225c847d51cb5228dafc2d4edefab535",
+          "author_date": "2020-08-30T09:06:56Z",
+          "message": "Update Bouncycastle to 1.66",
+          "html_url": "https://github.com/apache/jmeter/commit/8a7da195225c847d51cb5228dafc2d4edefab535"
+        },
+        {
+          "sha": "f9445e83042ded0aacdc26248aad0fbf141274da",
+          "author_date": "2020-08-30T09:12:16Z",
+          "message": "Update Apache commons-io to 2.7 (from 2.6)",
+          "html_url": "https://github.com/apache/jmeter/commit/f9445e83042ded0aacdc26248aad0fbf141274da"
+        },
+        {
+          "sha": "19ff94a0a791b63145db422d41c5da02fe8d42fc",
+          "author_date": "2020-08-30T09:20:08Z",
+          "message": "Update Apache commons-lang3 to 3.11",
+          "html_url": "https://github.com/apache/jmeter/commit/19ff94a0a791b63145db422d41c5da02fe8d42fc"
+        },
+        {
+          "sha": "1f62fa76ef115bda7ad193dbd80fc52bf060974c",
+          "author_date": "2020-08-30T09:24:37Z",
+          "message": "Update Apache commons-net to 3.7",
+          "html_url": "https://github.com/apache/jmeter/commit/1f62fa76ef115bda7ad193dbd80fc52bf060974c"
+        },
+        {
+          "sha": "11d5bbd8fdf75db71288a93ceaed3b2c8c81e796",
+          "author_date": "2020-08-30T09:26:05Z",
+          "message": "Update Apache commons-pool2 to 2.8.1",
+          "html_url": "https://github.com/apache/jmeter/commit/11d5bbd8fdf75db71288a93ceaed3b2c8c81e796"
+        },
+        {
+          "sha": "acaacb3c32ed8d28620e07f829582456bac90b09",
+          "author_date": "2020-08-30T09:27:14Z",
+          "message": "Update Apache commons-text to 1.9",
+          "html_url": "https://github.com/apache/jmeter/commit/acaacb3c32ed8d28620e07f829582456bac90b09"
+        },
+        {
+          "sha": "1ab3021dc0f3416273881a3003c6846fe0c5521e",
+          "author_date": "2020-08-30T09:34:10Z",
+          "message": "Update equalsverifier to 3.4.2",
+          "html_url": "https://github.com/apache/jmeter/commit/1ab3021dc0f3416273881a3003c6846fe0c5521e"
+        },
+        {
+          "sha": "736d4c2fee01feddc464e9314cdd228ceac6f7a9",
+          "author_date": "2020-08-30T09:49:05Z",
+          "message": "Update junit5 to 5.6.2",
+          "html_url": "https://github.com/apache/jmeter/commit/736d4c2fee01feddc464e9314cdd228ceac6f7a9"
+        },
+        {
+          "sha": "79d99fcea988a61228386631ed029751ced274b0",
+          "author_date": "2020-08-30T09:50:15Z",
+          "message": "Update Apache log4j2 to 2.13.3",
+          "html_url": "https://github.com/apache/jmeter/commit/79d99fcea988a61228386631ed029751ced274b0"
+        },
+        {
+          "sha": "dc5360a7d978890d16d1cb520e5d48eb29cb2f65",
+          "author_date": "2020-08-30T10:02:29Z",
+          "message": "Update rsyntaxtextarea to 3.1.1",
+          "html_url": "https://github.com/apache/jmeter/commit/dc5360a7d978890d16d1cb520e5d48eb29cb2f65"
+        },
+        {
+          "sha": "06949d116cb08382cc125ca14d9ad2fac0b9a1cc",
+          "author_date": "2020-08-30T10:31:24Z",
+          "message": "Try to get more info on flaky test",
+          "html_url": "https://github.com/apache/jmeter/commit/06949d116cb08382cc125ca14d9ad2fac0b9a1cc"
+        },
+        {
+          "sha": "3617f49087201c7d060be10cc3b4c95919c78956",
+          "author_date": "2020-08-30T12:58:59Z",
+          "message": "Bug 64553 When using Transaction Controller, send Bytes and Received Bytes are displayed as 0 in the influxdb(BackendListener) (#608)\n\n* 64553 When using Transaction Controller, send Bytes and Received Bytes\r\nare displayed as 0 in the influxdb(BackendListener)\r\n\r\n* Fix typo of parameter name\r\n\r\n* Give the cumulated add its own method\r\n\r\n* Add test cases for new method addCumulated\r\n\r\n* Method getSubResults constructs new arrays, so call only once inside method\r\n\r\n* Fix conflict\r\n\r\nCo-authored-by: Felix Schumacher <felix.schumacher@internetallee.de>",
+          "html_url": "https://github.com/apache/jmeter/commit/3617f49087201c7d060be10cc3b4c95919c78956"
+        },
+        {
+          "sha": "9d0383b77edf1bb58bcc271b3acb676fb06afb3b",
+          "author_date": "2020-08-30T13:42:26Z",
+          "message": "Even more debug information to find root cause for flaky test",
+          "html_url": "https://github.com/apache/jmeter/commit/9d0383b77edf1bb58bcc271b3acb676fb06afb3b"
+        },
+        {
+          "sha": "5eec17b76c7102032be10ccd40e59f8ab69a814d",
+          "author_date": "2020-08-30T13:47:23Z",
+          "message": "Use Integer#parseInt instead of valueOf, as we need the int and not the Integer",
+          "html_url": "https://github.com/apache/jmeter/commit/5eec17b76c7102032be10ccd40e59f8ab69a814d"
+        },
+        {
+          "sha": "da61e491c2a3631404fb48b28d8ea82ded03b5e4",
+          "author_date": "2020-08-30T13:51:03Z",
+          "message": "Remove unused parameter on private method",
+          "html_url": "https://github.com/apache/jmeter/commit/da61e491c2a3631404fb48b28d8ea82ded03b5e4"
+        },
+        {
+          "sha": "21f24d34b063eb47dd8424258d0b23549cbeadb6",
+          "author_date": "2020-08-30T13:53:29Z",
+          "message": "No need for a semicolon here",
+          "html_url": "https://github.com/apache/jmeter/commit/21f24d34b063eb47dd8424258d0b23549cbeadb6"
+        },
+        {
+          "sha": "93206549fe33e74938284b6fc181735baafd2416",
+          "author_date": "2020-08-30T14:07:02Z",
+          "message": "Add more info to second flaky test",
+          "html_url": "https://github.com/apache/jmeter/commit/93206549fe33e74938284b6fc181735baafd2416"
+        },
+        {
+          "sha": "af8c10529cd086f013e2a2081aae2ca85888c739",
+          "author_date": "2020-08-31T16:31:42Z",
+          "message": "Freestyle format for names in (Default)SamplerCreator\n\nUse a default value for the format string, that can be controlled by\na JMeter property.\n\nBugzilla Id: 64696\nRelates to #595",
+          "html_url": "https://github.com/apache/jmeter/commit/af8c10529cd086f013e2a2081aae2ca85888c739"
+        },
+        {
+          "sha": "d59da3805edd0b2fc901e404bddf9de6d6051bc2",
+          "author_date": "2020-08-31T19:11:50Z",
+          "message": "Freestyle format for names in (Default)SamplerCreator\n\nDon't save the default value for the format string property\n\nBugzilla Id: 64696\nRelates to #595",
+          "html_url": "https://github.com/apache/jmeter/commit/d59da3805edd0b2fc901e404bddf9de6d6051bc2"
+        },
+        {
+          "sha": "71bf1bdf8a753e229f07be9814ddd81ccf77ee9c",
+          "author_date": "2020-08-31T19:28:16Z",
+          "message": "Be a bit more forgiving about slight delay in unit test",
+          "html_url": "https://github.com/apache/jmeter/commit/71bf1bdf8a753e229f07be9814ddd81ccf77ee9c"
+        },
+        {
+          "sha": "c280cf351938899cbe996ef6563dbeca0940f90f",
+          "author_date": "2020-09-01T12:56:47Z",
+          "message": "Freestyle format for names in (Default)SamplerCreator\n\nInitialize format string correctly when script recorder is\ncreated by hand instead of with a template.\n\nBugzilla Id: 64696\nRelates to #595",
+          "html_url": "https://github.com/apache/jmeter/commit/c280cf351938899cbe996ef6563dbeca0940f90f"
+        },
+        {
+          "sha": "c212593fdeafae59c7921fb82811c6e95a493ea7",
+          "author_date": "2020-09-01T13:33:52Z",
+          "message": "Be even more friendly to longer hiccups in tests",
+          "html_url": "https://github.com/apache/jmeter/commit/c212593fdeafae59c7921fb82811c6e95a493ea7"
+        },
+        {
+          "sha": "da7a3e4f42dd4ac4c8680fc79539aa759c4ad156",
+          "author_date": "2020-09-01T15:48:59Z",
+          "message": "Wait a bit longer at least to the next second to get rid of this flaky test",
+          "html_url": "https://github.com/apache/jmeter/commit/da7a3e4f42dd4ac4c8680fc79539aa759c4ad156"
+        },
+        {
+          "sha": "9a7f4e2d0394e6ecbee2bb7dac9442613c67ba00",
+          "author_date": "2020-09-01T16:02:58Z",
+          "message": "Give a bit mor time for flaky test and add debug info",
+          "html_url": "https://github.com/apache/jmeter/commit/9a7f4e2d0394e6ecbee2bb7dac9442613c67ba00"
+        },
+        {
+          "sha": "0c6a72d3472fffb2c9eccb000cd53e56e25157f8",
+          "author_date": "2020-09-01T16:08:02Z",
+          "message": "Correct typo",
+          "html_url": "https://github.com/apache/jmeter/commit/0c6a72d3472fffb2c9eccb000cd53e56e25157f8"
+        },
+        {
+          "sha": "07c3983352cdb7af6205313ef260c2bd394b9897",
+          "author_date": "2020-09-01T17:23:31Z",
+          "message": "Allow even more delta and extract it into a constant",
+          "html_url": "https://github.com/apache/jmeter/commit/07c3983352cdb7af6205313ef260c2bd394b9897"
+        },
+        {
+          "sha": "17812bdae607c277c425d0a4a1d1fef7963f7962",
+          "author_date": "2020-09-01T17:42:15Z",
+          "message": "Add generics info, mainly to trigger CI build",
+          "html_url": "https://github.com/apache/jmeter/commit/17812bdae607c277c425d0a4a1d1fef7963f7962"
+        },
+        {
+          "sha": "5cdcdbd691660ac6b2aef601ff115db336272f56",
+          "author_date": "2020-09-01T17:54:45Z",
+          "message": "Lower complexity by extracting logic into private methods",
+          "html_url": "https://github.com/apache/jmeter/commit/5cdcdbd691660ac6b2aef601ff115db336272f56"
+        },
+        {
+          "sha": "b34ba267bc2262c529ee6b1fa04c50e85fbc065f",
+          "author_date": "2020-09-01T18:15:30Z",
+          "message": "Use try-with-resource to silence sonar and make code simpler",
+          "html_url": "https://github.com/apache/jmeter/commit/b34ba267bc2262c529ee6b1fa04c50e85fbc065f"
+        },
+        {
+          "sha": "1ba80694cf688ce1a2d2edd0877acc1a7f7f7f4e",
+          "author_date": "2020-09-01T18:29:20Z",
+          "message": "Extract common logic and add debug info for flaky tests",
+          "html_url": "https://github.com/apache/jmeter/commit/1ba80694cf688ce1a2d2edd0877acc1a7f7f7f4e"
+        },
+        {
+          "sha": "b4024a0bfd03ce933dc1a116c9aac62219abaf46",
+          "author_date": "2020-09-01T18:45:32Z",
+          "message": "Comply to JLS and reorder modifiers",
+          "html_url": "https://github.com/apache/jmeter/commit/b4024a0bfd03ce933dc1a116c9aac62219abaf46"
+        },
+        {
+          "sha": "d84c9e2258caacb46f7c3796ae4377ccde1be36f",
+          "author_date": "2020-09-01T18:54:30Z",
+          "message": "Add the debug info in the right assert method",
+          "html_url": "https://github.com/apache/jmeter/commit/d84c9e2258caacb46f7c3796ae4377ccde1be36f"
+        },
+        {
+          "sha": "c659da2290afdfd8ecfe586af0e23d5b2f53294a",
+          "author_date": "2020-09-01T19:07:45Z",
+          "message": "Round deadline to upper second in our race against the flaky test",
+          "html_url": "https://github.com/apache/jmeter/commit/c659da2290afdfd8ecfe586af0e23d5b2f53294a"
+        },
+        {
+          "sha": "9ce54c985876130e585e9e00b6b176fba58439a4",
+          "author_date": "2020-09-05T08:38:17Z",
+          "message": "Add a note on the usage of the special query types for JDBC Sampler",
+          "html_url": "https://github.com/apache/jmeter/commit/9ce54c985876130e585e9e00b6b176fba58439a4"
+        },
+        {
+          "sha": "b7d5605e97a3e589e514131bc8a3d3ab64e9e69a",
+          "author_date": "2020-09-06T08:01:25Z",
+          "message": "Add reference to prior ticket from sebb",
+          "html_url": "https://github.com/apache/jmeter/commit/b7d5605e97a3e589e514131bc8a3d3ab64e9e69a"
+        },
+        {
+          "sha": "be0681c69220b11d844e057572bf2cb5e864a7cb",
+          "author_date": "2020-09-06T08:52:24Z",
+          "message": "Add references to the bugzilla entries",
+          "html_url": "https://github.com/apache/jmeter/commit/be0681c69220b11d844e057572bf2cb5e864a7cb"
+        },
+        {
+          "sha": "1bc58f4c65b812751439d94ce4f31bbb4923d132",
+          "author_date": "2020-09-09T16:01:27Z",
+          "message": "Use theme from darklaf extensions for RSyntaxTextArea. (#617)",
+          "html_url": "https://github.com/apache/jmeter/commit/1bc58f4c65b812751439d94ce4f31bbb4923d132"
+        },
+        {
+          "sha": "1c6fd7e91e89a4cb01ea9dbd75a422015ce6be3e",
+          "author_date": "2020-09-10T15:24:33Z",
+          "message": "Add more leeway for test duration",
+          "html_url": "https://github.com/apache/jmeter/commit/1c6fd7e91e89a4cb01ea9dbd75a422015ce6be3e"
+        },
+        {
+          "sha": "d0845beace5a49a7791caed679bbccec15415be5",
+          "author_date": "2020-09-11T16:16:49Z",
+          "message": "Change documentation of the special header functionality of the mirror server to reflect the implementation",
+          "html_url": "https://github.com/apache/jmeter/commit/d0845beace5a49a7791caed679bbccec15415be5"
+        },
+        {
+          "sha": "e604181337062d537cd8609d55292ad1ecd49571",
+          "author_date": "2020-09-11T16:20:10Z",
+          "message": "No fullstop before e.g.",
+          "html_url": "https://github.com/apache/jmeter/commit/e604181337062d537cd8609d55292ad1ecd49571"
+        },
+        {
+          "sha": "ab62d0f6ae0ea466b42badb86620187250f0625e",
+          "author_date": "2020-09-13T19:37:38Z",
+          "message": "CertificateException is a superclass of CertificateEncodingException",
+          "html_url": "https://github.com/apache/jmeter/commit/ab62d0f6ae0ea466b42badb86620187250f0625e"
+        },
+        {
+          "sha": "967092ea14268df895338f7e8c31cfb8f18f2f04",
+          "author_date": "2020-09-13T19:41:22Z",
+          "message": "Remove unused import",
+          "html_url": "https://github.com/apache/jmeter/commit/967092ea14268df895338f7e8c31cfb8f18f2f04"
+        },
+        {
+          "sha": "6bc4f0962ab1cf39e9e25a0eab449793ed8a9eab",
+          "author_date": "2020-09-14T08:45:45Z",
+          "message": "Update JUnit5 to 5.7.0 (from 5.6.2)\n\nOne of the relevant new features is @Isolated annotation to make sure\nthe test runs in isolation from all the others.\n\nSee https://junit.org/junit5/docs/5.7.0/release-notes/",
+          "html_url": "https://github.com/apache/jmeter/commit/6bc4f0962ab1cf39e9e25a0eab449793ed8a9eab"
+        },
+        {
+          "sha": "0eff2c5a6c0bcfd17ac62a5ef3d99aeb78101eeb",
+          "author_date": "2020-09-15T08:05:07Z",
+          "message": "Bump org.nosphere.apache.rat to 0.7.0 (from 0.5.3)\n\nThe new version prints license violations to the console, so it simplifies CI failure analysis",
+          "html_url": "https://github.com/apache/jmeter/commit/0eff2c5a6c0bcfd17ac62a5ef3d99aeb78101eeb"
+        },
+        {
+          "sha": "e33cd1898626b831d8f25304bb80341111ffe892",
+          "author_date": "2020-09-16T19:45:30Z",
+          "message": "Return empty string instead of null in #getToolTipText(MouseEvent) for main frame tree.",
+          "html_url": "https://github.com/apache/jmeter/commit/e33cd1898626b831d8f25304bb80341111ffe892"
+        },
+        {
+          "sha": "3dbd8c6a57bce794a88f398f739997bcc1ba53f3",
+          "author_date": "2020-09-15T07:42:08Z",
+          "message": "Add validation of the third-party jars that are included to the release\n\nThe validation skips JMeter jars, and it helps to spot accidental third-party\ndependency addition or removal",
+          "html_url": "https://github.com/apache/jmeter/commit/3dbd8c6a57bce794a88f398f739997bcc1ba53f3"
+        },
+        {
+          "sha": "5df9fb2b044b58424a1557ab915d09234d7051fe",
+          "author_date": "2020-09-22T21:14:33Z",
+          "message": "Update darklaf from 2.4.7 to 2.4.8",
+          "html_url": "https://github.com/apache/jmeter/commit/5df9fb2b044b58424a1557ab915d09234d7051fe"
+        },
+        {
+          "sha": "455e5da105c9562410ca968034f74566b4f757b3",
+          "author_date": "2020-09-22T21:25:20Z",
+          "message": "fix failure due to jars check",
+          "html_url": "https://github.com/apache/jmeter/commit/455e5da105c9562410ca968034f74566b4f757b3"
+        },
+        {
+          "sha": "e50226b83392f79b7ab3506abc75214a03ba3c68",
+          "author_date": "2020-09-23T19:02:31Z",
+          "message": "Update Darklaf to 2.4.9 from 2.4.8",
+          "html_url": "https://github.com/apache/jmeter/commit/e50226b83392f79b7ab3506abc75214a03ba3c68"
+        },
+        {
+          "sha": "30b8f847cf72c46004b42ef322797f00f4524bac",
+          "author_date": "2020-09-23T19:22:46Z",
+          "message": "Revert 2.4.9 as it breaks jmeter",
+          "html_url": "https://github.com/apache/jmeter/commit/30b8f847cf72c46004b42ef322797f00f4524bac"
+        },
+        {
+          "sha": "dd0d5db7167078c0864a19c4c69c4e8fa8893c54",
+          "author_date": "2020-09-26T07:52:21Z",
+          "message": "Guard against empty or wrong threadGroup names\n\nJMeter should always set the names correctly, but that may\nnot be the case for third-party plugins.",
+          "html_url": "https://github.com/apache/jmeter/commit/dd0d5db7167078c0864a19c4c69c4e8fa8893c54"
+        },
+        {
+          "sha": "6f839121fbc6fcb6c74f38057b23cb62d84780d0",
+          "author_date": "2020-09-26T08:06:16Z",
+          "message": "Use string formatting for log messages",
+          "html_url": "https://github.com/apache/jmeter/commit/6f839121fbc6fcb6c74f38057b23cb62d84780d0"
+        },
+        {
+          "sha": "39000d361484ae65af4b6bca6e9662dbb8e8c2ba",
+          "author_date": "2020-09-26T08:51:05Z",
+          "message": "Correct string formatting for log message\n\nRegression introduced with 0a51044626c5d9f5c228e26f5badb29d8aa2ea54 (but seems\nto be not that bad, as nobody reported it in the last three years :) )",
+          "html_url": "https://github.com/apache/jmeter/commit/39000d361484ae65af4b6bca6e9662dbb8e8c2ba"
+        },
+        {
+          "sha": "34ace7b007e341ec5953652cdeb481eeded508fb",
+          "author_date": "2020-09-26T09:23:27Z",
+          "message": "Make method less complex by extracting private methods",
+          "html_url": "https://github.com/apache/jmeter/commit/34ace7b007e341ec5953652cdeb481eeded508fb"
+        },
+        {
+          "sha": "13685551442e3a7806514d2fa81b7c3b0e1fbe32",
+          "author_date": "2020-09-26T12:16:54Z",
+          "message": "Move guard clause for log message generation\n\nThe guard clause is not visible for sonaqube and we\ncan silence a warning by this move. Another reason\nfor the move is, that we save a few lines of code.",
+          "html_url": "https://github.com/apache/jmeter/commit/13685551442e3a7806514d2fa81b7c3b0e1fbe32"
+        },
+        {
+          "sha": "222546caef3effb28e40906bc3a5e6d6104c16e8",
+          "author_date": "2020-09-30T19:37:01Z",
+          "message": "Update darklaf to 2.4.10 from 2.4.8",
+          "html_url": "https://github.com/apache/jmeter/commit/222546caef3effb28e40906bc3a5e6d6104c16e8"
+        },
+        {
+          "sha": "51e1853e900bda5794717f33b3030c09c6eaca47",
+          "author_date": "2020-09-30T19:56:15Z",
+          "message": "Update darklaf to 2.4.10 from 2.4.8",
+          "html_url": "https://github.com/apache/jmeter/commit/51e1853e900bda5794717f33b3030c09c6eaca47"
+        },
+        {
+          "sha": "b17ac36a8235b251b2d0e9d4367b35777386c72e",
+          "author_date": "2020-10-01T06:57:04Z",
+          "message": "Removed the property from docs (#578)",
+          "html_url": "https://github.com/apache/jmeter/commit/b17ac36a8235b251b2d0e9d4367b35777386c72e"
+        },
+        {
+          "sha": "82e56beb04505af96d1e9ce327f67aa8eba99e06",
+          "author_date": "2020-10-04T09:06:56Z",
+          "message": "BZ 64752 - Add GraphQL/HTTP Request Sampler  (#627)\n\n* BZ-64752: adding GraphQL HTTP Sampler GUI components\r\n\r\n* BZ-64752: javadocs\r\n\r\n* BZ-64752: fixing tab selection problem; disable tab validation in graphql ui\r\n\r\n* BZ-64752: (de)serializing test element with graphql query and vars\r\n\r\n* BZ-64752: (de)serializing using gson\r\n\r\n* BZ-64752: removing unnecessary GraphQLHTTPSampler\r\n\r\n* BZ-64752: adding operationName input field\r\n\r\n* BZ-64752: support GET method\r\n\r\n* BZ-64752: init operationName from test elem\r\n\r\n* BZ-64752: adding a simple graphql test plan demo\r\n\r\n* BZ-64752: show advanced pane\r\n\r\n* BZ-64752: add gson info to lib/aareadme.txt\r\n\r\n* BZ-64752: screenshot and default constructor\r\n\r\n* BZ-64752: documentation on GraphQLHTTPRequest\r\n\r\n* BZ-64752: record in changes.xml\r\n\r\n* BZ-64752: add gson.jar to expected_release_jars.csv\r\n\r\n* BZ-64752: removing unnecessary, untranslated messages\r\n\r\n* BZ-64752: utility for graphql param serialization and unit test\r\n\r\n* BZ-64752: replace gson with jackson for graphql (de)serialization\r\n\r\n* BZ-64752: remove gson jar from expected release jars\r\n\r\n* BZ-64752: correcting French translation, thanks to pmouawad\r\n\r\n* BZ-64752: graphql http recording support\r\n\r\n* BZ-64752: checkbox option to switch on/off auto graphql req detection, true by default\r\n\r\n* BZ-64752: precise json content type checking; encode in GET\r\n\r\n* BZ-64752: French translation for graphql recording option, thanks to @ubikloadpack\r\n\r\nCo-authored-by: Woonsan Ko <woonsan.ko@bloomreach.com>",
+          "html_url": "https://github.com/apache/jmeter/commit/82e56beb04505af96d1e9ce327f67aa8eba99e06"
+        },
+        {
+          "sha": "fc334b0426b48a1ee86015a1fba52d274c479f54",
+          "author_date": "2020-10-07T11:51:06Z",
+          "message": "Ensure all used fonts support fallback fonts by using methods that preserve the underlying Font2D handle. (#618)\n\nEnsure fallback enabled fonts are used",
+          "html_url": "https://github.com/apache/jmeter/commit/fc334b0426b48a1ee86015a1fba52d274c479f54"
+        },
+        {
+          "sha": "0cfa2bc57c2a8d2f4ee74deb15b5a1ec85685548",
+          "author_date": "2020-10-08T13:32:07Z",
+          "message": "Fix to Bug64776",
+          "html_url": "https://github.com/apache/jmeter/commit/0cfa2bc57c2a8d2f4ee74deb15b5a1ec85685548"
+        },
+        {
+          "sha": "b86a33267a8ca29434e676d755fcbdce011905e6",
+          "author_date": "2020-09-27T22:36:39Z",
+          "message": "Korean translation begins",
+          "html_url": "https://github.com/apache/jmeter/commit/b86a33267a8ca29434e676d755fcbdce011905e6"
+        },
+        {
+          "sha": "49bd3e6c6006033902f403a6f56e552572409c9b",
+          "author_date": "2020-09-27T22:37:34Z",
+          "message": "Korean translation begins",
+          "html_url": "https://github.com/apache/jmeter/commit/49bd3e6c6006033902f403a6f56e552572409c9b"
+        },
+        {
+          "sha": "b23b1bcd8f668d7df8702e95d6793491977dc5a6",
+          "author_date": "2020-09-28T02:32:47Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/b23b1bcd8f668d7df8702e95d6793491977dc5a6"
+        },
+        {
+          "sha": "84e2ddc4a034d35dbeb3728ae977878db8f619ac",
+          "author_date": "2020-09-29T02:54:12Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/84e2ddc4a034d35dbeb3728ae977878db8f619ac"
+        },
+        {
+          "sha": "e7145319f86a8b0bb1a5c2f29a0a5d94abe14590",
+          "author_date": "2020-09-29T03:14:54Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/e7145319f86a8b0bb1a5c2f29a0a5d94abe14590"
+        },
+        {
+          "sha": "95f9e6c5e70127655552ba922b34e13eb88084d9",
+          "author_date": "2020-09-29T04:59:02Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/95f9e6c5e70127655552ba922b34e13eb88084d9"
+        },
+        {
+          "sha": "f2b669f89f2d7b68aab3f8d439315a02f2cfc826",
+          "author_date": "2020-09-29T23:04:40Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/f2b669f89f2d7b68aab3f8d439315a02f2cfc826"
+        },
+        {
+          "sha": "48d538b8b4ff7d1322d3aef2f45478a77c73e5e0",
+          "author_date": "2020-09-30T00:20:59Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/48d538b8b4ff7d1322d3aef2f45478a77c73e5e0"
+        },
+        {
+          "sha": "442ed8462421082b427ccb1fcc777c1d83ac8adb",
+          "author_date": "2020-09-30T01:50:58Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/442ed8462421082b427ccb1fcc777c1d83ac8adb"
+        },
+        {
+          "sha": "d9d52745794ca36c3b3d9a976b9c627cfee5e09b",
+          "author_date": "2020-09-30T03:02:50Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/d9d52745794ca36c3b3d9a976b9c627cfee5e09b"
+        },
+        {
+          "sha": "e494bbd6fa505eb0463a28c71323d972356a5dea",
+          "author_date": "2020-09-30T03:09:02Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/e494bbd6fa505eb0463a28c71323d972356a5dea"
+        },
+        {
+          "sha": "7a46147b00d9abf360eda33d62d6ac91e34de96f",
+          "author_date": "2020-10-01T00:59:53Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/7a46147b00d9abf360eda33d62d6ac91e34de96f"
+        },
+        {
+          "sha": "b0f6caea0291fee0fc104b1b332144fcc7384731",
+          "author_date": "2020-10-01T01:46:30Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/b0f6caea0291fee0fc104b1b332144fcc7384731"
+        },
+        {
+          "sha": "caeb400c29745dde12db5078559a6eb6190be85b",
+          "author_date": "2020-10-01T04:21:47Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/caeb400c29745dde12db5078559a6eb6190be85b"
+        },
+        {
+          "sha": "e62d29e673a0ee4cc62b80189ab5b42755746143",
+          "author_date": "2020-10-01T04:22:43Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/e62d29e673a0ee4cc62b80189ab5b42755746143"
+        },
+        {
+          "sha": "bf8f98b7e03586cdc86522bfe6b0f37e23260d22",
+          "author_date": "2020-10-04T03:07:46Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/bf8f98b7e03586cdc86522bfe6b0f37e23260d22"
+        },
+        {
+          "sha": "8219dc91a098ee3d0976f536b467899cb5c9384c",
+          "author_date": "2020-10-04T03:08:45Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/8219dc91a098ee3d0976f536b467899cb5c9384c"
+        },
+        {
+          "sha": "9570ad178e899ad5869f01a0af848b347604c184",
+          "author_date": "2020-10-04T07:08:38Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/9570ad178e899ad5869f01a0af848b347604c184"
+        },
+        {
+          "sha": "92c201d5ba573f7c1f2cbdfa3872944c51cf64e1",
+          "author_date": "2020-10-04T18:07:44Z",
+          "message": "WIP - Korean translation - GraphQL resources",
+          "html_url": "https://github.com/apache/jmeter/commit/92c201d5ba573f7c1f2cbdfa3872944c51cf64e1"
+        },
+        {
+          "sha": "48bc8eb01941beb01b6ed5fe534266a27568a657",
+          "author_date": "2020-10-04T20:37:03Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/48bc8eb01941beb01b6ed5fe534266a27568a657"
+        },
+        {
+          "sha": "38a2f26e26af6bd4e67b8c463353486b88d96ac0",
+          "author_date": "2020-10-04T21:42:31Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/38a2f26e26af6bd4e67b8c463353486b88d96ac0"
+        },
+        {
+          "sha": "79ffd8c9aee3bc0aba78d58952d4985f62249deb",
+          "author_date": "2020-10-04T21:42:52Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/79ffd8c9aee3bc0aba78d58952d4985f62249deb"
+        },
+        {
+          "sha": "dcd42d12efa9bfe6641874ba0d856e8df50f6f45",
+          "author_date": "2020-10-05T00:05:02Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/dcd42d12efa9bfe6641874ba0d856e8df50f6f45"
+        },
+        {
+          "sha": "778aa0310e29ecbfdec6cdc72f7fdec118614df9",
+          "author_date": "2020-10-05T03:47:13Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/778aa0310e29ecbfdec6cdc72f7fdec118614df9"
+        },
+        {
+          "sha": "424aff3e2285050f027f501052f3bc7df8d47679",
+          "author_date": "2020-10-05T04:15:54Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/424aff3e2285050f027f501052f3bc7df8d47679"
+        },
+        {
+          "sha": "b9eb991a4f85b76d4b6b8f19a042b7ac033afbaf",
+          "author_date": "2020-10-06T03:00:51Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/b9eb991a4f85b76d4b6b8f19a042b7ac033afbaf"
+        },
+        {
+          "sha": "74dfebacd70cd6ef5b55255eedb621fb9f9e1189",
+          "author_date": "2020-10-06T03:19:47Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/74dfebacd70cd6ef5b55255eedb621fb9f9e1189"
+        },
+        {
+          "sha": "7972dd48e71eda0d90ad1c50b2a50660bc7d24d8",
+          "author_date": "2020-10-06T04:09:18Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/7972dd48e71eda0d90ad1c50b2a50660bc7d24d8"
+        },
+        {
+          "sha": "be109528e461633e84750aa9ee723f82ef8678a2",
+          "author_date": "2020-10-06T04:27:01Z",
+          "message": "WIP - Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/be109528e461633e84750aa9ee723f82ef8678a2"
+        },
+        {
+          "sha": "1783d2767e2f696bfb17cf9a2ad0fc4a1bed8489",
+          "author_date": "2020-10-06T04:36:31Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/1783d2767e2f696bfb17cf9a2ad0fc4a1bed8489"
+        },
+        {
+          "sha": "d3e0102446644ea03808c9fbbf5b7084009da051",
+          "author_date": "2020-10-07T01:48:16Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/d3e0102446644ea03808c9fbbf5b7084009da051"
+        },
+        {
+          "sha": "b3c9c73747b8b6e6ef028f91bec7ef67649b5cbb",
+          "author_date": "2020-10-07T03:08:46Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/b3c9c73747b8b6e6ef028f91bec7ef67649b5cbb"
+        },
+        {
+          "sha": "ce6b35fadb5a5354fe09d6cb1aac0b451377106c",
+          "author_date": "2020-10-07T04:02:04Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/ce6b35fadb5a5354fe09d6cb1aac0b451377106c"
+        },
+        {
+          "sha": "142ae54588861307a822f2dba317fecef8e1116b",
+          "author_date": "2020-10-07T04:10:09Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/142ae54588861307a822f2dba317fecef8e1116b"
+        },
+        {
+          "sha": "80362c74fa4f5e056a24884271ccbf4db9a264a9",
+          "author_date": "2020-10-07T04:19:51Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/80362c74fa4f5e056a24884271ccbf4db9a264a9"
+        },
+        {
+          "sha": "53ca324beee013a4d68c92f7a83a8844fd34aa3f",
+          "author_date": "2020-10-07T04:42:11Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/53ca324beee013a4d68c92f7a83a8844fd34aa3f"
+        },
+        {
+          "sha": "941fefc7e892f45bade259ac2db9084f1651f7ff",
+          "author_date": "2020-10-08T03:49:15Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/941fefc7e892f45bade259ac2db9084f1651f7ff"
+        },
+        {
+          "sha": "89ccdb25b5f9f7fd1473da3bf7f26b7c5ca61b28",
+          "author_date": "2020-10-08T04:48:43Z",
+          "message": "WIP - BZ-64787 : Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/89ccdb25b5f9f7fd1473da3bf7f26b7c5ca61b28"
+        },
+        {
+          "sha": "378da43b8a62bc42dcece647588401877129e17a",
+          "author_date": "2020-10-08T05:04:14Z",
+          "message": "BZ-64787 : Korean translation - proofreading",
+          "html_url": "https://github.com/apache/jmeter/commit/378da43b8a62bc42dcece647588401877129e17a"
+        },
+        {
+          "sha": "c39a3d2a1e62c2a74f565196f1882f10f2b5d1e8",
+          "author_date": "2020-10-09T02:41:38Z",
+          "message": "BZ-64787 : Korean translation - proofreading",
+          "html_url": "https://github.com/apache/jmeter/commit/c39a3d2a1e62c2a74f565196f1882f10f2b5d1e8"
+        },
+        {
+          "sha": "3e85062b7fc04faca349e7422f053bb077a50630",
+          "author_date": "2020-10-09T15:58:08Z",
+          "message": "Add changelog entry for Korean translation",
+          "html_url": "https://github.com/apache/jmeter/commit/3e85062b7fc04faca349e7422f053bb077a50630"
+        },
+        {
+          "sha": "a60222e919010b2f3b9b586d3bbde54a73e616cc",
+          "author_date": "2020-10-08T16:07:09Z",
+          "message": "reorder modifier to conform to JLS",
+          "html_url": "https://github.com/apache/jmeter/commit/a60222e919010b2f3b9b586d3bbde54a73e616cc"
+        },
+        {
+          "sha": "4f23430cb417ef26be93214c07017021502b1ef6",
+          "author_date": "2020-10-08T16:07:35Z",
+          "message": "Add missing parameter to log message",
+          "html_url": "https://github.com/apache/jmeter/commit/4f23430cb417ef26be93214c07017021502b1ef6"
+        },
+        {
+          "sha": "7f2fe5e5993f90c7a3f2e39dae940d59848354ab",
+          "author_date": "2020-10-08T16:13:12Z",
+          "message": "Remove unused private field",
+          "html_url": "https://github.com/apache/jmeter/commit/7f2fe5e5993f90c7a3f2e39dae940d59848354ab"
+        },
+        {
+          "sha": "d5bf8ea508e058d127cd07ac1b4bffc32f19dec9",
+          "author_date": "2020-10-08T16:18:23Z",
+          "message": "Use final as it is a constant (named all upper case)",
+          "html_url": "https://github.com/apache/jmeter/commit/d5bf8ea508e058d127cd07ac1b4bffc32f19dec9"
+        },
+        {
+          "sha": "69fcb56ccd169f75ead92a738113c72a086eb663",
+          "author_date": "2020-10-08T16:18:51Z",
+          "message": "Use #set instead of deprecated #put",
+          "html_url": "https://github.com/apache/jmeter/commit/69fcb56ccd169f75ead92a738113c72a086eb663"
+        },
+        {
+          "sha": "da74ba3a9ec2c3437d36c7a9ff5f66e1af435b1e",
+          "author_date": "2020-10-08T16:23:04Z",
+          "message": "Use constants for JSON field names",
+          "html_url": "https://github.com/apache/jmeter/commit/da74ba3a9ec2c3437d36c7a9ff5f66e1af435b1e"
+        },
+        {
+          "sha": "a026f218e449d433670afe8b628021829bbb3a68",
+          "author_date": "2020-10-08T16:45:18Z",
+          "message": "Don't declare to throw IllegalArgumentException explicitly",
+          "html_url": "https://github.com/apache/jmeter/commit/a026f218e449d433670afe8b628021829bbb3a68"
+        },
+        {
+          "sha": "87e3f7b6040a287953e9b1551ae6558bce6956db",
+          "author_date": "2020-10-09T16:19:44Z",
+          "message": "Fix javadoc comments",
+          "html_url": "https://github.com/apache/jmeter/commit/87e3f7b6040a287953e9b1551ae6558bce6956db"
+        },
+        {
+          "sha": "decb7a100dd0d30415c373fb76ff6a1341cb5235",
+          "author_date": "2020-10-09T16:26:24Z",
+          "message": "JUnit doesn't need to have public test methods and sonar doesn't like them",
+          "html_url": "https://github.com/apache/jmeter/commit/decb7a100dd0d30415c373fb76ff6a1341cb5235"
+        },
+        {
+          "sha": "47eb7df908f537b0845a2059f67bd951afd0d5e9",
+          "author_date": "2020-10-10T11:02:16Z",
+          "message": "Use assertThrows to make intent clearer and use smaller test methods",
+          "html_url": "https://github.com/apache/jmeter/commit/47eb7df908f537b0845a2059f67bd951afd0d5e9"
+        },
+        {
+          "sha": "1d6cbd9a941bed0fac32d3b0a81a805133244b64",
+          "author_date": "2020-10-10T11:05:35Z",
+          "message": "Use StringUtils from commons-lang3 instead of some internal package from handlebars",
+          "html_url": "https://github.com/apache/jmeter/commit/1d6cbd9a941bed0fac32d3b0a81a805133244b64"
+        },
+        {
+          "sha": "ba7a8c7eb6e95b20370767748a54cb2c5d00c3cc",
+          "author_date": "2020-10-10T11:18:09Z",
+          "message": "Use parameterized tests to lessen repetitive assertions",
+          "html_url": "https://github.com/apache/jmeter/commit/ba7a8c7eb6e95b20370767748a54cb2c5d00c3cc"
+        },
+        {
+          "sha": "5c389479c8e7a505d8a7b09eb2221b1a36e8dd8a",
+          "author_date": "2020-10-10T11:36:44Z",
+          "message": "Fix missing method for MethodSource",
+          "html_url": "https://github.com/apache/jmeter/commit/5c389479c8e7a505d8a7b09eb2221b1a36e8dd8a"
+        },
+        {
+          "sha": "537aa3457627c987b31782ddfdca29dcc5bf9c9c",
+          "author_date": "2020-10-10T12:05:43Z",
+          "message": "No need for public on test classes with JUnit5",
+          "html_url": "https://github.com/apache/jmeter/commit/537aa3457627c987b31782ddfdca29dcc5bf9c9c"
+        },
+        {
+          "sha": "235c4c39b0519ee0fcaa764228fc5ba9e7b3c034",
+          "author_date": "2020-10-10T12:10:06Z",
+          "message": "Extract conversion to bytes out of lambda\n\nWe don't want to test the conversion of String to bytes[] for utf-8.",
+          "html_url": "https://github.com/apache/jmeter/commit/235c4c39b0519ee0fcaa764228fc5ba9e7b3c034"
+        },
+        {
+          "sha": "5c41e8ecff0342a16f1138c2b5fbb46f6b711586",
+          "author_date": "2020-10-11T08:56:56Z",
+          "message": "Use parameterized test",
+          "html_url": "https://github.com/apache/jmeter/commit/5c41e8ecff0342a16f1138c2b5fbb46f6b711586"
+        },
+        {
+          "sha": "42abaa3a4f728828174dd1e539fa0268fc273a60",
+          "author_date": "2020-10-11T09:20:17Z",
+          "message": "Try to make method less complex\n\nUse StringUtils#defaultIfBlank instead of condition.\nExtract complex boolean expression to named helper methods.\nExtract conditional encoding of values in helper method.",
+          "html_url": "https://github.com/apache/jmeter/commit/42abaa3a4f728828174dd1e539fa0268fc273a60"
+        },
+        {
+          "sha": "1760e99e2a87bfaa69f9a267b9c9774a909a53ad",
+          "author_date": "2020-10-18T09:33:18Z",
+          "message": "Update Gradle to 6.7 (from 6.6)",
+          "html_url": "https://github.com/apache/jmeter/commit/1760e99e2a87bfaa69f9a267b9c9774a909a53ad"
+        },
+        {
+          "sha": "c066c4ba58465e40331540620a39e2aff3bd0fdd",
+          "author_date": "2020-10-18T09:48:43Z",
+          "message": "Bump MaxMetaspaceSize for Gradle daemon to 512m\n\nThis change should prevent OutOfMemory: Metaspace during the build",
+          "html_url": "https://github.com/apache/jmeter/commit/c066c4ba58465e40331540620a39e2aff3bd0fdd"
+        },
+        {
+          "sha": "5d34a52104b2451c77a0bda1301bf5541d835136",
+          "author_date": "2020-10-18T09:50:30Z",
+          "message": "Remove files that change often from Travis cache, remove broken files automatically\n\nThe cache itself is useful, however, there might be two problems:\n* Corrupted files might get cached, so the subsequent builds would fail\n* Too large cache might slowdown the build\n\ncleanup-gradle-cache solves both issues.\n\nThe cache itself is still re-uploaded on every build (see \"store build cache\"),\nso it might need more investigations.",
+          "html_url": "https://github.com/apache/jmeter/commit/5d34a52104b2451c77a0bda1301bf5541d835136"
+        },
+        {
+          "sha": "041eb898311bf9f06eb4177fbf12fb61575d2b2b",
+          "author_date": "2020-10-18T13:19:07Z",
+          "message": "BZ-64800: correcting plugin action components' resource key usages (#631)",
+          "html_url": "https://github.com/apache/jmeter/commit/041eb898311bf9f06eb4177fbf12fb61575d2b2b"
+        },
+        {
+          "sha": "2289ac9e4fd9812debb2111960cb3e9277e63ef5",
+          "author_date": "2020-10-18T13:38:57Z",
+          "message": "Bug 64824: Dashboard/HTML Report: Rename KO to FAIL",
+          "html_url": "https://github.com/apache/jmeter/commit/2289ac9e4fd9812debb2111960cb3e9277e63ef5"
+        },
+        {
+          "sha": "4de138c40f8102bbfdf89e614a8b52581f56431e",
+          "author_date": "2020-10-23T12:42:58Z",
+          "message": "Bug 64843 - Tree: Don't propagate the state (enable/disabled) of current element to children",
+          "html_url": "https://github.com/apache/jmeter/commit/4de138c40f8102bbfdf89e614a8b52581f56431e"
+        },
+        {
+          "sha": "22f038d09831f86bab8217140ecbdffa002059e7",
+          "author_date": "2020-10-24T14:55:48Z",
+          "message": "Bug 64795: Clarify documentation on Generate Summary Results",
+          "html_url": "https://github.com/apache/jmeter/commit/22f038d09831f86bab8217140ecbdffa002059e7"
+        },
+        {
+          "sha": "bbc3a9182a1af38f3868e382cf61a051dbc3cebb",
+          "author_date": "2020-10-24T15:04:57Z",
+          "message": "Fix style",
+          "html_url": "https://github.com/apache/jmeter/commit/bbc3a9182a1af38f3868e382cf61a051dbc3cebb"
+        },
+        {
+          "sha": "da950294fe627535524107d7cb18ab26eeb7a07e",
+          "author_date": "2020-10-24T15:14:29Z",
+          "message": "Mention 64711 fix",
+          "html_url": "https://github.com/apache/jmeter/commit/da950294fe627535524107d7cb18ab26eeb7a07e"
+        },
+        {
+          "sha": "dcf584a042b799668e33e4f416562659a9f12f54",
+          "author_date": "2020-10-25T08:27:17Z",
+          "message": "Merge branch 'Bug64776' of https://github.com/FackelAB/jmeter into FackelAB-Bug64776",
+          "html_url": "https://github.com/apache/jmeter/commit/dcf584a042b799668e33e4f416562659a9f12f54"
+        },
+        {
+          "sha": "eb03d31a49ccae7781cea32df5da440894fec97e",
+          "author_date": "2020-10-25T08:35:01Z",
+          "message": "Minor cleanup + mention contributor",
+          "html_url": "https://github.com/apache/jmeter/commit/eb03d31a49ccae7781cea32df5da440894fec97e"
+        },
+        {
+          "sha": "9dcf9d0d76a541d895153e5567b8a871a981dfcb",
+          "author_date": "2020-10-25T08:35:41Z",
+          "message": "Merge branch 'FackelAB-Bug64776'",
+          "html_url": "https://github.com/apache/jmeter/commit/9dcf9d0d76a541d895153e5567b8a871a981dfcb"
+        },
+        {
+          "sha": "45ba5df1428b296c8f8ad2ee323849fdf04c9c4a",
+          "author_date": "2020-10-29T17:42:36Z",
+          "message": "Minor refactorings to make sonar happy\n\n* Use a private constructor to make it clear, that the loader is a utility class\n* Use generics when possible (an exception might be thrown, but will be catched as before)\n* Extract inner try block to a private method to reduce complexity\n* Use Class#getDeclaredConstructor() to get the default constructor, instead of using\n  the deprecated (as of Java 9) Class#newInstance() directly\n* Add two tests (an empty \"classname\" and a valid classname, that is not a Provider)\n* Add serialVersionUIDs to the dummy classes",
+          "html_url": "https://github.com/apache/jmeter/commit/45ba5df1428b296c8f8ad2ee323849fdf04c9c4a"
+        },
+        {
+          "sha": "89dc22052ac9b20062a1531a8688a5b2aa5d29b8",
+          "author_date": "2020-10-29T17:58:52Z",
+          "message": "Use Java naming conventions for method variables",
+          "html_url": "https://github.com/apache/jmeter/commit/89dc22052ac9b20062a1531a8688a5b2aa5d29b8"
+        },
+        {
+          "sha": "ef264788dee00e328f9d698caf76a3cdfb5c4f87",
+          "author_date": "2020-10-29T18:38:38Z",
+          "message": "Extract common logic into private method to make code more clear",
+          "html_url": "https://github.com/apache/jmeter/commit/ef264788dee00e328f9d698caf76a3cdfb5c4f87"
+        },
+        {
+          "sha": "4984d47f8f66a84876b1ec54a4775466122275c3",
+          "author_date": "2020-10-29T19:24:29Z",
+          "message": "Add test for disabled constructor",
+          "html_url": "https://github.com/apache/jmeter/commit/4984d47f8f66a84876b1ec54a4775466122275c3"
+        },
+        {
+          "sha": "5ae71f6bf17892ae487d0368b819b0b68d123de4",
+          "author_date": "2020-10-18T10:27:02Z",
+          "message": "Add Error Prone code style verification\n\nSee https://errorprone.info/\n\nIt allows to capture errors like mising switch case branches,\nmissing override, non-static inner class, etc\n\nThe verification can be run locally via ./gradlew -PenableErrorprone classes\nNote: Java 11+ is required",
+          "html_url": "https://github.com/apache/jmeter/commit/5ae71f6bf17892ae487d0368b819b0b68d123de4"
+        },
+        {
+          "sha": "43217ec8086c8f2dc485936cd020c9c8107b698e",
+          "author_date": "2020-10-18T11:45:19Z",
+          "message": "Remove LoggingManager class (it has been deprecated since JMeter 3.2)",
+          "html_url": "https://github.com/apache/jmeter/commit/43217ec8086c8f2dc485936cd020c9c8107b698e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "rel/v5.6.2",
@@ -553,8 +2098,951 @@
     {
       "release": "rel/v5.6.3",
       "previous_release": "rel/v5.6.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "8e612ec7cc30464eccc12fe63b61f2339e7d4648",
+          "author_date": "2023-07-11T16:07:22Z",
+          "message": "Add the 5.6.2 release",
+          "html_url": "https://github.com/apache/jmeter/commit/8e612ec7cc30464eccc12fe63b61f2339e7d4648"
+        },
+        {
+          "sha": "ce1f32af87009886fc4c3eea18aae7f4772407c5",
+          "author_date": "2023-07-12T10:18:41Z",
+          "message": "Fix computation of min in Summary report\n\nFixes https://github.com/apache/jmeter/issues/6043",
+          "html_url": "https://github.com/apache/jmeter/commit/ce1f32af87009886fc4c3eea18aae7f4772407c5"
+        },
+        {
+          "sha": "52c0bf25478219d797820088252403e69a1c241d",
+          "author_date": "2023-07-12T12:24:41Z",
+          "message": "Add space before stopping_test_host\n\nEdited MainFrame.java in order to add a space before stopping_test_host message string in showStoppingMessage(String host) to separate this message string from the stopping_test one",
+          "html_url": "https://github.com/apache/jmeter/commit/52c0bf25478219d797820088252403e69a1c241d"
+        },
+        {
+          "sha": "94a85af30333c19224bd708aa78aa2ceffa9312d",
+          "author_date": "2023-07-12T14:15:30Z",
+          "message": "Add references to boms in the generated pom.xml files",
+          "html_url": "https://github.com/apache/jmeter/commit/94a85af30333c19224bd708aa78aa2ceffa9312d"
+        },
+        {
+          "sha": "c94db9741f0547235f9a67b1ece40389add6b742",
+          "author_date": "2023-07-19T00:04:30Z",
+          "message": "Fix link to bug database",
+          "html_url": "https://github.com/apache/jmeter/commit/c94db9741f0547235f9a67b1ece40389add6b742"
+        },
+        {
+          "sha": "91d8aea7c42b10c68767e2f0a2a955389477f03f",
+          "author_date": "2023-09-05T14:38:23Z",
+          "message": "Resolve checkstyle cache miss\n\nInstead of the absolute path to checkstyle cacheFile which was causing a cache miss, use the relative path from configDir for cacheFile path",
+          "html_url": "https://github.com/apache/jmeter/commit/91d8aea7c42b10c68767e2f0a2a955389477f03f"
+        },
+        {
+          "sha": "9ee70beb6fe34452a7a53b3bbd5e96612552e6b5",
+          "author_date": "2023-09-06T13:20:59Z",
+          "message": "Fixed Chinese translation errors in multiple languages",
+          "html_url": "https://github.com/apache/jmeter/commit/9ee70beb6fe34452a7a53b3bbd5e96612552e6b5"
+        },
+        {
+          "sha": "2a4fc061d41f0a63b39ce2364aaba8de7795e467",
+          "author_date": "2023-07-10T04:54:30Z",
+          "message": "fix(deps): update dependency org.neo4j.driver:neo4j-java-driver to v4.4.12",
+          "html_url": "https://github.com/apache/jmeter/commit/2a4fc061d41f0a63b39ce2364aaba8de7795e467"
+        },
+        {
+          "sha": "6c3a1fd14aa829dde1eeeb32dc99e414b073e46f",
+          "author_date": "2023-07-25T19:50:18Z",
+          "message": "fix(deps): update dependency org.jetbrains.kotlinx:kotlinx-coroutines-bom to v1.7.3",
+          "html_url": "https://github.com/apache/jmeter/commit/6c3a1fd14aa829dde1eeeb32dc99e414b073e46f"
+        },
+        {
+          "sha": "aa52a5ab14c6bab40007348451cfd10ffba83348",
+          "author_date": "2023-07-10T00:50:48Z",
+          "message": "fix(deps): update dependency org.eclipse.jgit:org.eclipse.jgit to v5.13.2.202306221912-r",
+          "html_url": "https://github.com/apache/jmeter/commit/aa52a5ab14c6bab40007348451cfd10ffba83348"
+        },
+        {
+          "sha": "241f50d3321ae4ad3e398178784baa88cb15f9d5",
+          "author_date": "2023-11-24T05:12:38Z",
+          "message": "fix(deps): update dependency org.codehaus.groovy:groovy-bom to v3.0.19",
+          "html_url": "https://github.com/apache/jmeter/commit/241f50d3321ae4ad3e398178784baa88cb15f9d5"
+        },
+        {
+          "sha": "1c58dad1a660ec3193aa7b992676b2890aa45498",
+          "author_date": "2023-11-24T06:47:25Z",
+          "message": "chore: add checksum for jgit-5.13.2.202306221912",
+          "html_url": "https://github.com/apache/jmeter/commit/1c58dad1a660ec3193aa7b992676b2890aa45498"
+        },
+        {
+          "sha": "caa75cecb12a3ab96f4e08a909c696dc997917a9",
+          "author_date": "2023-10-08T10:49:24Z",
+          "message": "fix(deps): update com.miglayout to v11\n\nFixes https://github.com/apache/jmeter/pull/5894",
+          "html_url": "https://github.com/apache/jmeter/commit/caa75cecb12a3ab96f4e08a909c696dc997917a9"
+        },
+        {
+          "sha": "597ea90ec95f6eae4d8d436478044efc27289341",
+          "author_date": "2023-11-24T06:56:33Z",
+          "message": "chore: group JMH updates in Renovate",
+          "html_url": "https://github.com/apache/jmeter/commit/597ea90ec95f6eae4d8d436478044efc27289341"
+        },
+        {
+          "sha": "eadc5561bd22d9516944988a5132a482900753fb",
+          "author_date": "2023-11-24T06:56:44Z",
+          "message": "chore: group jmespath updates in Renovate",
+          "html_url": "https://github.com/apache/jmeter/commit/eadc5561bd22d9516944988a5132a482900753fb"
+        },
+        {
+          "sha": "ad083e60fd05e00c20148fcd0e5301c40c16bbf9",
+          "author_date": "2023-11-24T07:32:37Z",
+          "message": "Revert \"fix(deps): update com.miglayout to v11\"\n\nThis reverts commit caa75cecb12a3ab96f4e08a909c696dc997917a9.",
+          "html_url": "https://github.com/apache/jmeter/commit/ad083e60fd05e00c20148fcd0e5301c40c16bbf9"
+        },
+        {
+          "sha": "15f5ca036b49dc38e1873046aa725f1177051e17",
+          "author_date": "2023-11-24T07:34:07Z",
+          "message": "chore: miglayout 11.0+ requires Java 11, so we can't upgrade yet",
+          "html_url": "https://github.com/apache/jmeter/commit/15f5ca036b49dc38e1873046aa725f1177051e17"
+        },
+        {
+          "sha": "d077087997dbf36c5f6a055a01286d173d4cb1b1",
+          "author_date": "2023-11-24T08:48:58Z",
+          "message": "chore: set Java LTS release for build script compilation\n\nPreviously the build failed if the default Java was newer than 20.\n\nNow we explicitly specify jvmTarget for the build script compilation.\n\nNote: it does not impact the target JVM for the resulting JMeter binaries.",
+          "html_url": "https://github.com/apache/jmeter/commit/d077087997dbf36c5f6a055a01286d173d4cb1b1"
+        },
+        {
+          "sha": "b2c483c59628a7c8fe39bdb02aba1db47d2105b0",
+          "author_date": "2023-11-24T09:45:30Z",
+          "message": "chore: add explicit dependency from kaptGenerateStubsKotlin on versionClass",
+          "html_url": "https://github.com/apache/jmeter/commit/b2c483c59628a7c8fe39bdb02aba1db47d2105b0"
+        },
+        {
+          "sha": "b080ca648fe8d99aa3d13f881bff3290c7b03ec2",
+          "author_date": "2023-11-24T09:49:05Z",
+          "message": "chore: bump oracle-actions/setup-java to v1.3.2",
+          "html_url": "https://github.com/apache/jmeter/commit/b080ca648fe8d99aa3d13f881bff3290c7b03ec2"
+        },
+        {
+          "sha": "9b4221a23ef1aec2b6415115049ce768385aa69b",
+          "author_date": "2023-11-24T10:17:19Z",
+          "message": "chore: use Java 17 for building the build scripts",
+          "html_url": "https://github.com/apache/jmeter/commit/9b4221a23ef1aec2b6415115049ce768385aa69b"
+        },
+        {
+          "sha": "05a71a08919ec03b05232950faa35832d685372b",
+          "author_date": "2023-11-24T10:18:55Z",
+          "message": "chore: remove dependency on jetbrains.kotlin.jvm.gradle.plugin in build-logic-commons",
+          "html_url": "https://github.com/apache/jmeter/commit/05a71a08919ec03b05232950faa35832d685372b"
+        },
+        {
+          "sha": "39888d9867d829867bc6f530c5bff17463cc82aa",
+          "author_date": "2023-11-24T09:46:13Z",
+          "message": "fix(deps): update kotlin monorepo to v1.9.21",
+          "html_url": "https://github.com/apache/jmeter/commit/39888d9867d829867bc6f530c5bff17463cc82aa"
+        },
+        {
+          "sha": "3c38098347f5d69e452a0538e916a262e080e9c0",
+          "author_date": "2023-11-24T10:34:45Z",
+          "message": "chore: use toolchains for kotlin-dsl for Gradle 9 compatibility",
+          "html_url": "https://github.com/apache/jmeter/commit/3c38098347f5d69e452a0538e916a262e080e9c0"
+        },
+        {
+          "sha": "5bf0e2dd8cc0cacae69d29fc0ed0ec7adc8c2b9f",
+          "author_date": "2023-11-24T11:09:28Z",
+          "message": "chore: increase test coverage for Java 21 by testing more distributions",
+          "html_url": "https://github.com/apache/jmeter/commit/5bf0e2dd8cc0cacae69d29fc0ed0ec7adc8c2b9f"
+        },
+        {
+          "sha": "b788603409a77d71cb5fe0549744cda7490280d4",
+          "author_date": "2023-05-22T14:49:26Z",
+          "message": "fix(deps): update dependency org.mongodb:mongo-java-driver to v2.14.3\n\nFixes https://github.com/apache/jmeter/pull/5865",
+          "html_url": "https://github.com/apache/jmeter/commit/b788603409a77d71cb5fe0549744cda7490280d4"
+        },
+        {
+          "sha": "e47e59cd2a5db942a5dc1cf3c27208c0bde33251",
+          "author_date": "2023-11-24T11:33:15Z",
+          "message": "chore(deps): update release-drafter/release-drafter digest to 09c613e",
+          "html_url": "https://github.com/apache/jmeter/commit/e47e59cd2a5db942a5dc1cf3c27208c0bde33251"
+        },
+        {
+          "sha": "71bb952320f2bee3034686206c1bbaf80d78ea8b",
+          "author_date": "2023-11-24T11:27:41Z",
+          "message": "chore: add Java 22 (ignored) version to the build matrix",
+          "html_url": "https://github.com/apache/jmeter/commit/71bb952320f2bee3034686206c1bbaf80d78ea8b"
+        },
+        {
+          "sha": "ff0c320a26969d504fbc73aab639a285387f766a",
+          "author_date": "2023-11-24T11:33:26Z",
+          "message": "fix(deps): update dependency jacoco to v0.8.11",
+          "html_url": "https://github.com/apache/jmeter/commit/ff0c320a26969d504fbc73aab639a285387f766a"
+        },
+        {
+          "sha": "047fa0168499da6b0a089cc144e708e85a9b8266",
+          "author_date": "2023-11-24T11:33:22Z",
+          "message": "fix(deps): update dependency com.github.tomakehurst:wiremock-jre8 to v2.35.1",
+          "html_url": "https://github.com/apache/jmeter/commit/047fa0168499da6b0a089cc144e708e85a9b8266"
+        },
+        {
+          "sha": "367c065b9785a10cd33092873ed2f9131eb97254",
+          "author_date": "2023-11-24T11:33:34Z",
+          "message": "fix(deps): update dependency net.bytebuddy:byte-buddy to v1.14.10",
+          "html_url": "https://github.com/apache/jmeter/commit/367c065b9785a10cd33092873ed2f9131eb97254"
+        },
+        {
+          "sha": "ee9b70a483f4cee8d051f21ef7ad3756ded79bd4",
+          "author_date": "2023-11-24T11:33:30Z",
+          "message": "fix(deps): update dependency me.champeau.jmh:me.champeau.jmh.gradle.plugin to v0.7.2\n\nFixes https://github.com/apache/jmeter/pull/6119",
+          "html_url": "https://github.com/apache/jmeter/commit/ee9b70a483f4cee8d051f21ef7ad3756ded79bd4"
+        },
+        {
+          "sha": "fa227e48baf1965434d61d908d1e9125d2d3e41f",
+          "author_date": "2023-11-24T11:33:18Z",
+          "message": "fix(deps): update dependency checkstyle to v10.12.5\n\nFixes https://github.com/apache/jmeter/pull/6116",
+          "html_url": "https://github.com/apache/jmeter/commit/fa227e48baf1965434d61d908d1e9125d2d3e41f"
+        },
+        {
+          "sha": "e8fa76aabd5cbb45bd98307ac4cad073a1f353a7",
+          "author_date": "2023-11-24T12:13:38Z",
+          "message": "chore(deps): update Gradle to v8.4\n\nFixes https://github.com/apache/jmeter/pull/6121",
+          "html_url": "https://github.com/apache/jmeter/commit/e8fa76aabd5cbb45bd98307ac4cad073a1f353a7"
+        },
+        {
+          "sha": "a8ef142b8f6e1b6c8bae94aba87b99372c4fa9d3",
+          "author_date": "2023-11-24T12:50:41Z",
+          "message": "chore: use proper Gradle release checksum\n\nThe previous one was a checksum for the wrapper.jar\n\nSee https://gradle.org/release-checksums/",
+          "html_url": "https://github.com/apache/jmeter/commit/a8ef142b8f6e1b6c8bae94aba87b99372c4fa9d3"
+        },
+        {
+          "sha": "d4a2cde3e1e5c55fef364da490e56a793fd57b2b",
+          "author_date": "2023-11-24T13:00:39Z",
+          "message": "style: fix extra whitespace in src/core/build.gradle.kts",
+          "html_url": "https://github.com/apache/jmeter/commit/d4a2cde3e1e5c55fef364da490e56a793fd57b2b"
+        },
+        {
+          "sha": "a793855b14c4953ce90d486afdfd873f6d147edb",
+          "author_date": "2023-11-24T13:01:57Z",
+          "message": "chore(deps): update plugin org.gradle.toolchains.foojay-resolver-convention to v0.7.0\n\nFixes https://github.com/apache/jmeter/pull/6123",
+          "html_url": "https://github.com/apache/jmeter/commit/a793855b14c4953ce90d486afdfd873f6d147edb"
+        },
+        {
+          "sha": "3c6cacb507cddfe4c337213f364f2b5730d6b5d1",
+          "author_date": "2023-11-24T13:01:54Z",
+          "message": "fix(deps): update org.apache.activemq to v5.16.7",
+          "html_url": "https://github.com/apache/jmeter/commit/3c6cacb507cddfe4c337213f364f2b5730d6b5d1"
+        },
+        {
+          "sha": "295c57b42f43cabf88ad7f58673b35e30021531d",
+          "author_date": "2023-11-24T13:30:56Z",
+          "message": "fix(deps): update dependency org.ow2.asm:asm to v9.6",
+          "html_url": "https://github.com/apache/jmeter/commit/295c57b42f43cabf88ad7f58673b35e30021531d"
+        },
+        {
+          "sha": "d07a87905dbf8e9b4698a4a7d019ed9cab150cbc",
+          "author_date": "2023-11-24T13:29:22Z",
+          "message": "fix(deps): update dependency org.jsoup:jsoup to v1.16.2",
+          "html_url": "https://github.com/apache/jmeter/commit/d07a87905dbf8e9b4698a4a7d019ed9cab150cbc"
+        },
+        {
+          "sha": "35968fc4c4d4686d3144111990298fc65f3d92dc",
+          "author_date": "2023-11-24T13:29:19Z",
+          "message": "fix(deps): update dependency org.apache.mina:mina-core to v2.2.3",
+          "html_url": "https://github.com/apache/jmeter/commit/35968fc4c4d4686d3144111990298fc65f3d92dc"
+        },
+        {
+          "sha": "5ba571b2171706eb1c9e639c62a51f7846d64a6a",
+          "author_date": "2023-11-24T13:29:15Z",
+          "message": "fix(deps): update dependency org.apache.httpcomponents.client5:httpclient5 to v5.2.2",
+          "html_url": "https://github.com/apache/jmeter/commit/5ba571b2171706eb1c9e639c62a51f7846d64a6a"
+        },
+        {
+          "sha": "5b2753eb18461a434488cc4e2eedbf4c80f58a05",
+          "author_date": "2023-11-24T13:31:29Z",
+          "message": "fix(deps): update dependency commons-codec:commons-codec to v1.16.0",
+          "html_url": "https://github.com/apache/jmeter/commit/5b2753eb18461a434488cc4e2eedbf4c80f58a05"
+        },
+        {
+          "sha": "e734757fd802b78c171e0461e354b926a1ea0a62",
+          "author_date": "2023-11-24T13:30:48Z",
+          "message": "fix(deps): update dependency org.jetbrains:annotations to v24.1.0",
+          "html_url": "https://github.com/apache/jmeter/commit/e734757fd802b78c171e0461e354b926a1ea0a62"
+        },
+        {
+          "sha": "5e6b7d486bff15c3bf438503f7e34e250c7b3fc1",
+          "author_date": "2023-11-24T13:31:33Z",
+          "message": "fix(deps): update dependency commons-io:commons-io to v2.15.0",
+          "html_url": "https://github.com/apache/jmeter/commit/5e6b7d486bff15c3bf438503f7e34e250c7b3fc1"
+        },
+        {
+          "sha": "045d0525c4d480f16fbdd1719aa3ca340bbac930",
+          "author_date": "2023-11-24T14:18:12Z",
+          "message": "chore(deps): update actions/checkout action to v4",
+          "html_url": "https://github.com/apache/jmeter/commit/045d0525c4d480f16fbdd1719aa3ca340bbac930"
+        },
+        {
+          "sha": "6b8155107be62be8814703c54ec34174642daae6",
+          "author_date": "2023-11-24T14:18:15Z",
+          "message": "chore(deps): update actions/github-script action to v7",
+          "html_url": "https://github.com/apache/jmeter/commit/6b8155107be62be8814703c54ec34174642daae6"
+        },
+        {
+          "sha": "46c5e6923c64a1f9f5c24c803d9b924aea3c9a75",
+          "author_date": "2023-11-24T14:18:09Z",
+          "message": "fix(deps): update org.openjdk.jmh to v1.37",
+          "html_url": "https://github.com/apache/jmeter/commit/46c5e6923c64a1f9f5c24c803d9b924aea3c9a75"
+        },
+        {
+          "sha": "56902b80e185c82c56f6c4d746e04ffc675d51c4",
+          "author_date": "2023-11-24T14:17:51Z",
+          "message": "fix(deps): update dependency org.jetbrains.dokka:org.jetbrains.dokka.gradle.plugin to v1.9.10",
+          "html_url": "https://github.com/apache/jmeter/commit/56902b80e185c82c56f6c4d746e04ffc675d51c4"
+        },
+        {
+          "sha": "44e9e5fc6b032fc8a0d9f93d267034851352f0b7",
+          "author_date": "2023-11-24T14:17:06Z",
+          "message": "fix(deps): update dependency nl.jqno.equalsverifier:equalsverifier to v3.15.3",
+          "html_url": "https://github.com/apache/jmeter/commit/44e9e5fc6b032fc8a0d9f93d267034851352f0b7"
+        },
+        {
+          "sha": "f0e70f8c1921fe7ad75b0501aa3f48ed36b10539",
+          "author_date": "2023-11-24T14:17:55Z",
+          "message": "fix(deps): update dependency org.jetbrains.lets-plot:lets-plot-kotlin-jvm to v4.5.0",
+          "html_url": "https://github.com/apache/jmeter/commit/f0e70f8c1921fe7ad75b0501aa3f48ed36b10539"
+        },
+        {
+          "sha": "ccadefe53e07b3ef6993cbe310763ca6a1ec6768",
+          "author_date": "2023-11-24T14:18:00Z",
+          "message": "fix(deps): update dependency spotbugs to v4.8.1",
+          "html_url": "https://github.com/apache/jmeter/commit/ccadefe53e07b3ef6993cbe310763ca6a1ec6768"
+        },
+        {
+          "sha": "d61dadd7ef3f782bfd6459392983f006dfd30896",
+          "author_date": "2023-11-24T15:26:08Z",
+          "message": "chore: add PGP keys for the updated Spotbugs",
+          "html_url": "https://github.com/apache/jmeter/commit/d61dadd7ef3f782bfd6459392983f006dfd30896"
+        },
+        {
+          "sha": "d9c32eb8501bb200fb818a69d590a70327e0f1e7",
+          "author_date": "2023-11-24T15:51:01Z",
+          "message": "fix(deps): update com.google.errorprone to v2.23.0\n\nFixes https://github.com/apache/jmeter/pull/6148",
+          "html_url": "https://github.com/apache/jmeter/commit/d9c32eb8501bb200fb818a69d590a70327e0f1e7"
+        },
+        {
+          "sha": "d5b50e354fa30780122a248b4fd3ece1acc8c097",
+          "author_date": "2023-11-24T16:03:38Z",
+          "message": "style: fix letsPlot deprecations",
+          "html_url": "https://github.com/apache/jmeter/commit/d5b50e354fa30780122a248b4fd3ece1acc8c097"
+        },
+        {
+          "sha": "5d8f11650f631b571a838233758b7c4033046010",
+          "author_date": "2023-11-24T13:31:40Z",
+          "message": "fix(deps): update dependency de.thetaphi.forbiddenapis:de.thetaphi.forbiddenapis.gradle.plugin to v3.6\n\nFixes https://github.com/apache/jmeter/pull/6136",
+          "html_url": "https://github.com/apache/jmeter/commit/5d8f11650f631b571a838233758b7c4033046010"
+        },
+        {
+          "sha": "a1db7e9a986a1292ac2e14667d91e41f109ad7b5",
+          "author_date": "2023-11-24T16:19:24Z",
+          "message": "style: correct import order in TargetRateChart",
+          "html_url": "https://github.com/apache/jmeter/commit/a1db7e9a986a1292ac2e14667d91e41f109ad7b5"
+        },
+        {
+          "sha": "59afeed54e963ee93b6570d1af40ece013a05d73",
+          "author_date": "2023-11-24T14:18:04Z",
+          "message": "fix(deps): update org.checkerframework\n\nFixes https://github.com/apache/jmeter/pull/6144",
+          "html_url": "https://github.com/apache/jmeter/commit/59afeed54e963ee93b6570d1af40ece013a05d73"
+        },
+        {
+          "sha": "dc1c7671656f47236aadc0376176ece2ee980d6b",
+          "author_date": "2023-11-24T14:17:01Z",
+          "message": "fix(deps): update dependency com.github.spotbugs:com.github.spotbugs.gradle.plugin to v5.2.3\n\nFixes https://github.com/apache/jmeter/pull/6137",
+          "html_url": "https://github.com/apache/jmeter/commit/dc1c7671656f47236aadc0376176ece2ee980d6b"
+        },
+        {
+          "sha": "5fb39e2d6017d1d4b4477ed16cf95aa6ad3c4623",
+          "author_date": "2023-11-24T13:29:26Z",
+          "message": "fix(deps): update dependency org.nosphere.apache.rat:org.nosphere.apache.rat.gradle.plugin to v0.8.1\n\nFixes https://github.com/apache/jmeter/pull/6129",
+          "html_url": "https://github.com/apache/jmeter/commit/5fb39e2d6017d1d4b4477ed16cf95aa6ad3c4623"
+        },
+        {
+          "sha": "a186172503582bd7b4f22a908a322e53704289ff",
+          "author_date": "2023-11-24T16:30:28Z",
+          "message": "chore(deps): update plugin com.gradle.common-custom-user-data-gradle-plugin to v1.12\n\nFixes https://github.com/apache/jmeter/pull/6149",
+          "html_url": "https://github.com/apache/jmeter/commit/a186172503582bd7b4f22a908a322e53704289ff"
+        },
+        {
+          "sha": "7a5ef78db8ec5fd714b7598e533942f24e1c0181",
+          "author_date": "2023-11-24T16:30:37Z",
+          "message": "fix(deps): update dependency org.sonarqube:org.sonarqube.gradle.plugin to v4.4.1.3373\n\nFixes https://github.com/apache/jmeter/pull/6151",
+          "html_url": "https://github.com/apache/jmeter/commit/7a5ef78db8ec5fd714b7598e533942f24e1c0181"
+        },
+        {
+          "sha": "f9201d7ea33e63d129429f5b109f5467843b0ecf",
+          "author_date": "2023-11-24T16:35:54Z",
+          "message": "chore(deps): update plugin com.gradle.enterprise to v3.15.1\n\nFixes https://github.com/apache/jmeter/pull/6151",
+          "html_url": "https://github.com/apache/jmeter/commit/f9201d7ea33e63d129429f5b109f5467843b0ecf"
+        },
+        {
+          "sha": "8ba840a73fbe30567a1ab6b5c8171de91c575d3f",
+          "author_date": "2023-11-24T16:31:27Z",
+          "message": "fix(deps): update org.apache.logging.log4j to v2.22.0",
+          "html_url": "https://github.com/apache/jmeter/commit/8ba840a73fbe30567a1ab6b5c8171de91c575d3f"
+        },
+        {
+          "sha": "3e6c3f7a6aeb8ad12b34cf9ef46f492c3243b95d",
+          "author_date": "2023-11-24T16:31:23Z",
+          "message": "fix(deps): update net.minidev json-smart to v2.5.0",
+          "html_url": "https://github.com/apache/jmeter/commit/3e6c3f7a6aeb8ad12b34cf9ef46f492c3243b95d"
+        },
+        {
+          "sha": "63f839d664ddc7499cfd620769ccf62f16ae08ef",
+          "author_date": "2023-11-24T16:30:32Z",
+          "message": "fix(deps): update dependency org.apache.xmlgraphics:xmlgraphics-commons to v2.9",
+          "html_url": "https://github.com/apache/jmeter/commit/63f839d664ddc7499cfd620769ccf62f16ae08ef"
+        },
+        {
+          "sha": "047a6fbe69a366c0ed814fb6ca1f8c69619caa2b",
+          "author_date": "2023-11-24T16:27:45Z",
+          "message": "fix(deps): update dependency commons-net:commons-net to v3.10.0",
+          "html_url": "https://github.com/apache/jmeter/commit/047a6fbe69a366c0ed814fb6ca1f8c69619caa2b"
+        },
+        {
+          "sha": "45c4b0466da452f963e3efffae3bbe8c88b877e0",
+          "author_date": "2023-11-24T16:27:47Z",
+          "message": "fix(deps): update dependency org.junit:junit-bom to v5.10.1",
+          "html_url": "https://github.com/apache/jmeter/commit/45c4b0466da452f963e3efffae3bbe8c88b877e0"
+        },
+        {
+          "sha": "f201bd63767b09af37afd2bf81120059969aa9ae",
+          "author_date": "2023-11-24T16:31:19Z",
+          "message": "fix(deps): update dependency org.apache.commons:commons-text to v1.11.0\n\nFixes https://github.com/apache/jmeter/pull/6155",
+          "html_url": "https://github.com/apache/jmeter/commit/f201bd63767b09af37afd2bf81120059969aa9ae"
+        },
+        {
+          "sha": "a875fa48bdd892d5d2682212b08c5d7a600fae73",
+          "author_date": "2023-11-24T17:15:26Z",
+          "message": "fix(deps): update dependency org.apache.commons:commons-pool2 to v2.12.0\n\nFixes https://github.com/apache/jmeter/pull/6154",
+          "html_url": "https://github.com/apache/jmeter/commit/a875fa48bdd892d5d2682212b08c5d7a600fae73"
+        },
+        {
+          "sha": "2fc90f976b28e4dfe70d76c8d5362c75ddd454ce",
+          "author_date": "2023-11-24T17:15:58Z",
+          "message": "fix(deps): update dependency org.apache.commons:commons-lang3 to v3.14.0",
+          "html_url": "https://github.com/apache/jmeter/commit/2fc90f976b28e4dfe70d76c8d5362c75ddd454ce"
+        },
+        {
+          "sha": "b0c06a60e277b10f8e0e7b0af5828dd0f744068f",
+          "author_date": "2023-11-24T17:20:44Z",
+          "message": "fix(deps): update io.burt to v0.6.0",
+          "html_url": "https://github.com/apache/jmeter/commit/b0c06a60e277b10f8e0e7b0af5828dd0f744068f"
+        },
+        {
+          "sha": "c92b9cf244ea1e43130891d0ee70d403b669c945",
+          "author_date": "2023-12-01T20:54:46Z",
+          "message": "chore: bump Gradle to 8.5",
+          "html_url": "https://github.com/apache/jmeter/commit/c92b9cf244ea1e43130891d0ee70d403b669c945"
+        },
+        {
+          "sha": "54a906918c3787864dc444141e194a5a9b8ba63f",
+          "author_date": "2023-12-02T18:58:39Z",
+          "message": "chore: exclude Semeru + tr_TR combination from tests\n\nSee https://github.com/gradle/gradle/issues/27261",
+          "html_url": "https://github.com/apache/jmeter/commit/54a906918c3787864dc444141e194a5a9b8ba63f"
+        },
+        {
+          "sha": "646a4060d319f2cf9067dd22471050c03c4ce17c",
+          "author_date": "2023-12-04T05:03:03Z",
+          "message": "fix(deps): update dependency com.github.spotbugs:com.github.spotbugs.gradle.plugin to v5.2.5 (#6167)",
+          "html_url": "https://github.com/apache/jmeter/commit/646a4060d319f2cf9067dd22471050c03c4ce17c"
+        },
+        {
+          "sha": "2948281a3c885286db4122ca7d12925ab25d5164",
+          "author_date": "2023-12-04T11:51:50Z",
+          "message": "test: exclude Semeru JDK from the builds as there are issues running with Gradle 8.5\n\nSee https://github.com/gradle/gradle/issues/27273",
+          "html_url": "https://github.com/apache/jmeter/commit/2948281a3c885286db4122ca7d12925ab25d5164"
+        },
+        {
+          "sha": "9d0961f093d6e10255466224ba74042990aca085",
+          "author_date": "2023-12-07T10:54:22Z",
+          "message": "fix: restore backward compatibility with JMeter < 5.6.2\n\nWe should not have changed public methods to static, and we should\nprobably restore the API.\n\nUnfortuantely, it would break those who already recompiled with 5.6.2,\nhowever, I hope it it would be less harm to restore the API to the original state.\n\nThis reverts some of the changes made in 12aefb0c70526a61f955ba1dad7fe3e99200b0b2",
+          "html_url": "https://github.com/apache/jmeter/commit/9d0961f093d6e10255466224ba74042990aca085"
+        },
+        {
+          "sha": "43dac8805d9fa9aa18dfda5c8cb07c721c0952df",
+          "author_date": "2023-12-04T05:03:46Z",
+          "message": "fix(deps): update dependency commons-io:commons-io to v2.15.1",
+          "html_url": "https://github.com/apache/jmeter/commit/43dac8805d9fa9aa18dfda5c8cb07c721c0952df"
+        },
+        {
+          "sha": "91fa7041f498c26a5dbc8edbf2352600995fefd5",
+          "author_date": "2023-11-24T17:20:39Z",
+          "message": "fix(deps): update dependency com.fifesoft:rsyntaxtextarea to v3.3.4",
+          "html_url": "https://github.com/apache/jmeter/commit/91fa7041f498c26a5dbc8edbf2352600995fefd5"
+        },
+        {
+          "sha": "76bf21fb9ea9c92718b5af6c3e5f14f57bcd09c3",
+          "author_date": "2023-12-13T17:02:51Z",
+          "message": "chore: make sure the build fails with a reasonable message if the build Java version is less than 17",
+          "html_url": "https://github.com/apache/jmeter/commit/76bf21fb9ea9c92718b5af6c3e5f14f57bcd09c3"
+        },
+        {
+          "sha": "8ce5097d27c29c170b0711656e8b6f824ae49620",
+          "author_date": "2023-12-14T15:51:30Z",
+          "message": "chore: use Java 17 for Errorprone analysis",
+          "html_url": "https://github.com/apache/jmeter/commit/8ce5097d27c29c170b0711656e8b6f824ae49620"
+        },
+        {
+          "sha": "2c8495368ef153fda918b6b1c9f880cd7302227f",
+          "author_date": "2023-12-14T15:53:26Z",
+          "message": "chore(deps): update plugin com.gradle.common-custom-user-data-gradle-plugin to v1.12.1\n\nFixes https://github.com/apache/jmeter/pull/6176",
+          "html_url": "https://github.com/apache/jmeter/commit/2c8495368ef153fda918b6b1c9f880cd7302227f"
+        },
+        {
+          "sha": "a6bc6574f247c8d212ecb3e2bde1172e415c870e",
+          "author_date": "2023-12-14T15:53:29Z",
+          "message": "fix(deps): update dependency checkstyle to v10.12.6\n\nFixes https://github.com/apache/jmeter/pull/6177",
+          "html_url": "https://github.com/apache/jmeter/commit/a6bc6574f247c8d212ecb3e2bde1172e415c870e"
+        },
+        {
+          "sha": "31c29af392c907f8ead8ce8cd359c80160f2d0e6",
+          "author_date": "2023-12-14T15:53:33Z",
+          "message": "fix(deps): update dependency nl.jqno.equalsverifier:equalsverifier to v3.15.4",
+          "html_url": "https://github.com/apache/jmeter/commit/31c29af392c907f8ead8ce8cd359c80160f2d0e6"
+        },
+        {
+          "sha": "311342a7bc24f537d65bd0c82dd509c0340b4a7e",
+          "author_date": "2023-12-08T04:49:02Z",
+          "message": "fix(deps): update com.fasterxml.jackson.core to v2.16.0\n\nFixes https://github.com/apache/jmeter/pull/6124",
+          "html_url": "https://github.com/apache/jmeter/commit/311342a7bc24f537d65bd0c82dd509c0340b4a7e"
+        },
+        {
+          "sha": "eeb45b805268b567a2c6b50f08ec7c6c55b5ac39",
+          "author_date": "2023-12-14T16:36:17Z",
+          "message": "fix(deps): update org.checkerframework\n\nFixes https://github.com/apache/jmeter/pull/6183",
+          "html_url": "https://github.com/apache/jmeter/commit/eeb45b805268b567a2c6b50f08ec7c6c55b5ac39"
+        },
+        {
+          "sha": "928c4fa043b112faeb69be550c37fbb5c73723d0",
+          "author_date": "2023-12-14T16:36:22Z",
+          "message": "chore(deps): update actions/setup-java action to v4",
+          "html_url": "https://github.com/apache/jmeter/commit/928c4fa043b112faeb69be550c37fbb5c73723d0"
+        },
+        {
+          "sha": "9e4485ac8f46ef5edea97c68f70ed8380c2c06f5",
+          "author_date": "2023-12-14T16:45:43Z",
+          "message": "chore: prevent Renovate from upgrading Guava \"0\"",
+          "html_url": "https://github.com/apache/jmeter/commit/9e4485ac8f46ef5edea97c68f70ed8380c2c06f5"
+        },
+        {
+          "sha": "58a9b2b33372a998e69258e45656cfd5c6a95d71",
+          "author_date": "2023-12-14T16:36:01Z",
+          "message": "fix(deps): update dependency commons-logging:commons-logging to v1.3.0\n\nFixes https://github.com/apache/jmeter/pull/6179",
+          "html_url": "https://github.com/apache/jmeter/commit/58a9b2b33372a998e69258e45656cfd5c6a95d71"
+        },
+        {
+          "sha": "7942db818733d4d5a6beaded074cc04ac3ebd21e",
+          "author_date": "2023-12-14T16:36:25Z",
+          "message": "fix(deps): update dependency com.github.spotbugs:com.github.spotbugs.gradle.plugin to v6",
+          "html_url": "https://github.com/apache/jmeter/commit/7942db818733d4d5a6beaded074cc04ac3ebd21e"
+        },
+        {
+          "sha": "95da3fd5de4c6f10f22a53f15d98dcb09ae4c2f7",
+          "author_date": "2023-12-14T16:36:09Z",
+          "message": "fix(deps): update dependency org.apache.httpcomponents.client5:httpclient5 to v5.3",
+          "html_url": "https://github.com/apache/jmeter/commit/95da3fd5de4c6f10f22a53f15d98dcb09ae4c2f7"
+        },
+        {
+          "sha": "3e20b6fdcada53e15f4034ed1788a816eed39408",
+          "author_date": "2023-12-14T16:36:12Z",
+          "message": "fix(deps): update dependency org.jsoup:jsoup to v1.17.1",
+          "html_url": "https://github.com/apache/jmeter/commit/3e20b6fdcada53e15f4034ed1788a816eed39408"
+        },
+        {
+          "sha": "b3209293e3888a56d0ce3e3db85d835f3ce6f5df",
+          "author_date": "2023-12-14T16:37:18Z",
+          "message": "fix(deps): update dependency spotbugs to v4.8.3",
+          "html_url": "https://github.com/apache/jmeter/commit/b3209293e3888a56d0ce3e3db85d835f3ce6f5df"
+        },
+        {
+          "sha": "a45bcc9172e5d3fd5cb12c3792dce5b0559187c6",
+          "author_date": "2023-12-14T16:36:05Z",
+          "message": "fix(deps): update dependency net.sf.saxon:saxon-he to v11.6",
+          "html_url": "https://github.com/apache/jmeter/commit/a45bcc9172e5d3fd5cb12c3792dce5b0559187c6"
+        },
+        {
+          "sha": "9b250b64c00513cbcce81fe3f12746dcde8d9ddc",
+          "author_date": "2023-12-18T13:26:05Z",
+          "message": "fix: allow usage of variables in ConstantThroughputTimer.throughput and PreciseThroughputTimer\n\nPreviously, the timers might fail initialization in case variable was not present\nwhen test started.\n\nThe current workaround is to avoid implementing TestStateListener in the timers\nso JMeter does not attempt evaluating all the properties before test starts.\n\nfixes https://github.com/apache/jmeter/issues/6165",
+          "html_url": "https://github.com/apache/jmeter/commit/9b250b64c00513cbcce81fe3f12746dcde8d9ddc"
+        },
+        {
+          "sha": "1329c481fc9def6ad81f3534e86a44f584e221a9",
+          "author_date": "2023-12-18T15:05:38Z",
+          "message": "fix: avoid NPE when ConstantTimer.delay accesses a variable\n\nThe variable might not yet be initialized at the first iteration\n\nFixes https://github.com/apache/jmeter/issues/6162",
+          "html_url": "https://github.com/apache/jmeter/commit/1329c481fc9def6ad81f3534e86a44f584e221a9"
+        },
+        {
+          "sha": "e9c2ef9cc0056aeaaff171991536a6158e200f82",
+          "author_date": "2023-12-19T08:50:55Z",
+          "message": "fix: log errors happening while JMeter starts the test\n\nPreviously, the exceptions from TestStateListener.testStarted might\nbe unnoticed since the UI did not display them.\n\nThis change is a workaround to surface errors in common cases.\n\nSee https://github.com/apache/jmeter/issues/6174",
+          "html_url": "https://github.com/apache/jmeter/commit/e9c2ef9cc0056aeaaff171991536a6158e200f82"
+        },
+        {
+          "sha": "9c3c4bd5a0871ca1120275cf425b1be2bc214f2c",
+          "author_date": "2023-12-19T08:52:40Z",
+          "message": "fix: remove empty implementation of TestStateListener from AbstractJDBCTestElement\n\nTestStateListener + TestBean cause issues like in https://github.com/apache/jmeter/issues/6174,\nso we should remove empty implementations",
+          "html_url": "https://github.com/apache/jmeter/commit/9c3c4bd5a0871ca1120275cf425b1be2bc214f2c"
+        },
+        {
+          "sha": "2395d49d986e0029ab0240a96fee2626de4cebe4",
+          "author_date": "2023-12-19T09:40:21Z",
+          "message": "test: remove timer.iterationStart calls from ConstantThroughputTimerTest",
+          "html_url": "https://github.com/apache/jmeter/commit/2395d49d986e0029ab0240a96fee2626de4cebe4"
+        },
+        {
+          "sha": "167038054f2a5fd525565f4c117195cb09158864",
+          "author_date": "2023-12-14T18:38:54Z",
+          "message": "fix(deps): update dependency org.jetbrains.lets-plot:lets-plot-batik to v4",
+          "html_url": "https://github.com/apache/jmeter/commit/167038054f2a5fd525565f4c117195cb09158864"
+        },
+        {
+          "sha": "f781395514da8bd376eabde52e5ce35faf2473d8",
+          "author_date": "2023-12-25T01:49:22Z",
+          "message": "fix(deps): update com.fasterxml.jackson.core to v2.16.1",
+          "html_url": "https://github.com/apache/jmeter/commit/f781395514da8bd376eabde52e5ce35faf2473d8"
+        },
+        {
+          "sha": "2ae93c8dfc5add923d5482c75693e25db377c930",
+          "author_date": "2023-12-25T01:49:26Z",
+          "message": "fix(deps): update dependency com.github.spotbugs:com.github.spotbugs.gradle.plugin to v6.0.4",
+          "html_url": "https://github.com/apache/jmeter/commit/2ae93c8dfc5add923d5482c75693e25db377c930"
+        },
+        {
+          "sha": "851879f2cf9c674204253c398f2f27956f014d5f",
+          "author_date": "2023-12-25T02:42:32Z",
+          "message": "fix(deps): update dependency org.neo4j.driver:neo4j-java-driver to v4.4.13",
+          "html_url": "https://github.com/apache/jmeter/commit/851879f2cf9c674204253c398f2f27956f014d5f"
+        },
+        {
+          "sha": "bd411da1a880646c217a024987c8ab8b1733be46",
+          "author_date": "2023-12-25T02:36:40Z",
+          "message": "fix(deps): update dependency net.bytebuddy:byte-buddy to v1.14.11",
+          "html_url": "https://github.com/apache/jmeter/commit/bd411da1a880646c217a024987c8ab8b1733be46"
+        },
+        {
+          "sha": "56a02b3b1753c797bea9d42785993f311d4df905",
+          "author_date": "2023-12-25T02:42:38Z",
+          "message": "fix(deps): update kotlin monorepo to v1.9.22",
+          "html_url": "https://github.com/apache/jmeter/commit/56a02b3b1753c797bea9d42785993f311d4df905"
+        },
+        {
+          "sha": "9532a8aa18d89e68d3b35c5495c944e838f3780f",
+          "author_date": "2023-12-25T03:09:00Z",
+          "message": "fix(deps): update dependency nl.jqno.equalsverifier:equalsverifier to v3.15.5",
+          "html_url": "https://github.com/apache/jmeter/commit/9532a8aa18d89e68d3b35c5495c944e838f3780f"
+        },
+        {
+          "sha": "99460c992f8d8f09b8e34f63b2292a6818f2cb2f",
+          "author_date": "2023-12-25T02:42:42Z",
+          "message": "fix(deps): update com.google.errorprone to v2.24.0\n\nFixes https://github.com/apache/jmeter/pull/6208",
+          "html_url": "https://github.com/apache/jmeter/commit/99460c992f8d8f09b8e34f63b2292a6818f2cb2f"
+        },
+        {
+          "sha": "55f15377a918eedf0d71f0f9f6a8fdb1b05b2d48",
+          "author_date": "2023-12-25T02:43:45Z",
+          "message": "fix(deps): update org.checkerframework\n\nFixes https://github.com/apache/jmeter/pull/6209",
+          "html_url": "https://github.com/apache/jmeter/commit/55f15377a918eedf0d71f0f9f6a8fdb1b05b2d48"
+        },
+        {
+          "sha": "d863aa7ef84d9c2cbc4e39af86ee5c53192e5511",
+          "author_date": "2023-12-25T02:42:29Z",
+          "message": "fix(deps): update dependency org.codehaus.groovy:groovy-bom to v3.0.20\n\nFixes https://github.com/apache/jmeter/pull/6205",
+          "html_url": "https://github.com/apache/jmeter/commit/d863aa7ef84d9c2cbc4e39af86ee5c53192e5511"
+        },
+        {
+          "sha": "5c95bcc43d95caff744acf3434a9d0fffc4be671",
+          "author_date": "2023-12-25T16:42:17Z",
+          "message": "refactor: replace use of deprecated DefaultPlotPanelBatik",
+          "html_url": "https://github.com/apache/jmeter/commit/5c95bcc43d95caff744acf3434a9d0fffc4be671"
+        },
+        {
+          "sha": "221c14d6fc20450ddc2e9c6cecdf366d02f45880",
+          "author_date": "2023-12-26T11:17:12Z",
+          "message": "test: remove stale AllTests.java test launcher",
+          "html_url": "https://github.com/apache/jmeter/commit/221c14d6fc20450ddc2e9c6cecdf366d02f45880"
+        },
+        {
+          "sha": "7ec460defe2eb362ce1f1e23702fcdcef8cd6557",
+          "author_date": "2023-12-27T05:27:28Z",
+          "message": "test: add DisabledIfHeadless annotation to selectively disabling tests in headless mode",
+          "html_url": "https://github.com/apache/jmeter/commit/7ec460defe2eb362ce1f1e23702fcdcef8cd6557"
+        },
+        {
+          "sha": "13b824a5a99bf14789a434ddf1e13b11bfd04573",
+          "author_date": "2023-12-27T05:28:06Z",
+          "message": "test: ensure all Gui elements initialize non-empty TestElement names",
+          "html_url": "https://github.com/apache/jmeter/commit/13b824a5a99bf14789a434ddf1e13b11bfd04573"
+        },
+        {
+          "sha": "73b255962e44725688438ef056822f973b10678b",
+          "author_date": "2023-12-27T05:51:11Z",
+          "message": "test: remove AssertionGuiSpec as it duplicates existing org.apache.jmeter.junit.JMeterTest\n\njunit.JMeterTest instantiates all detected Gui classes, create components,\nand verify basic properties, so AssertionGuiSpec was not adding much",
+          "html_url": "https://github.com/apache/jmeter/commit/73b255962e44725688438ef056822f973b10678b"
+        },
+        {
+          "sha": "ef82a00cad726e654aa00418e13a29c97b537d6d",
+          "author_date": "2023-12-19T17:33:13Z",
+          "message": "fix: allow setting empty strings with TestElement.set(...) API, and remove properties only in case the value is null",
+          "html_url": "https://github.com/apache/jmeter/commit/ef82a00cad726e654aa00418e13a29c97b537d6d"
+        },
+        {
+          "sha": "9b258623b07962195230fa9cd416120967ea7d4f",
+          "author_date": "2023-12-24T11:49:01Z",
+          "message": "fix: add property bindings to reduce code duplication in UI classes and make \"configure and modifyTestElement\" simple in most cases",
+          "html_url": "https://github.com/apache/jmeter/commit/9b258623b07962195230fa9cd416120967ea7d4f"
+        },
+        {
+          "sha": "1651026f19454e531316c550e0779f0a96e757cd",
+          "author_date": "2023-12-24T12:16:20Z",
+          "message": "refactor: use property bindings in BeanShellSamplerGui",
+          "html_url": "https://github.com/apache/jmeter/commit/1651026f19454e531316c550e0779f0a96e757cd"
+        },
+        {
+          "sha": "278247608b66adf92e06e1444e0229a663e54618",
+          "author_date": "2023-12-24T14:18:09Z",
+          "message": "refactor: use property bindings in ThreadGroupGui, OpenModelThreadGroupGui",
+          "html_url": "https://github.com/apache/jmeter/commit/278247608b66adf92e06e1444e0229a663e54618"
+        },
+        {
+          "sha": "0d9c3517ef2b8ed78296b89f1fd2da30491c5a10",
+          "author_date": "2023-12-24T14:22:23Z",
+          "message": "refactor: use property bindings in TestPlanGui",
+          "html_url": "https://github.com/apache/jmeter/commit/0d9c3517ef2b8ed78296b89f1fd2da30491c5a10"
+        },
+        {
+          "sha": "c3457ffc3c87a4d2c959670c3b4345944577cb86",
+          "author_date": "2023-12-25T08:51:05Z",
+          "message": "test: verify that GuiComponent.configure+modifyTestElement does not modify element after creation\n\nIt helps to verify both createTestElement, configure, and modifyTestElement implementations,\nso JMeter does not accidentally show treat test plan as dirty when the user\nmerely switches across elements\n\nAt the same time, it ensures test elements do not accidentally lose properties\nwhen processing modifyTestElement",
+          "html_url": "https://github.com/apache/jmeter/commit/c3457ffc3c87a4d2c959670c3b4345944577cb86"
+        },
+        {
+          "sha": "73719bdf80e292b1796ce52ab1724dc53f7718c3",
+          "author_date": "2023-12-27T14:22:34Z",
+          "message": "Next major release will be for Java 17+",
+          "html_url": "https://github.com/apache/jmeter/commit/73719bdf80e292b1796ce52ab1724dc53f7718c3"
+        },
+        {
+          "sha": "c7a41e09b1dbe54100587aa812843780eaabda4c",
+          "author_date": "2023-12-27T14:11:17Z",
+          "message": "fix(deps): update org.apache.logging.log4j to v2.22.1",
+          "html_url": "https://github.com/apache/jmeter/commit/c7a41e09b1dbe54100587aa812843780eaabda4c"
+        },
+        {
+          "sha": "a671815c9542a704661547288fe9c46cfa832766",
+          "author_date": "2023-12-26T07:20:38Z",
+          "message": "refactor: rename .groovy -> .kt in :src:jorphan so Git tracks history better",
+          "html_url": "https://github.com/apache/jmeter/commit/a671815c9542a704661547288fe9c46cfa832766"
+        },
+        {
+          "sha": "23f922817fefd24e10328fc9cdd23ddb41827c93",
+          "author_date": "2023-12-26T12:08:23Z",
+          "message": "refactor: replace Groovy tests in :src:jorphan with Kotlin",
+          "html_url": "https://github.com/apache/jmeter/commit/23f922817fefd24e10328fc9cdd23ddb41827c93"
+        },
+        {
+          "sha": "6239f00bd47299a6f4ec9c34a801fe3e45692f0b",
+          "author_date": "2023-12-26T14:33:32Z",
+          "message": "refactor: rename .groovy to .kt in :src:core to allow Git track history better",
+          "html_url": "https://github.com/apache/jmeter/commit/6239f00bd47299a6f4ec9c34a801fe3e45692f0b"
+        },
+        {
+          "sha": "e46aa4ce17504463905266d9653089bf85fe6467",
+          "author_date": "2023-12-26T11:02:32Z",
+          "message": "refactor: replace Groovy tests in :src:core with Kotlin",
+          "html_url": "https://github.com/apache/jmeter/commit/e46aa4ce17504463905266d9653089bf85fe6467"
+        },
+        {
+          "sha": "993ed37076664b7bd9905d6de59aa0637541389c",
+          "author_date": "2023-12-26T11:17:48Z",
+          "message": "refactor: move JMeterSpec to :src:components as :src:core no longer has Groovy",
+          "html_url": "https://github.com/apache/jmeter/commit/993ed37076664b7bd9905d6de59aa0637541389c"
+        },
+        {
+          "sha": "5c0d59256279c629259a03882c4a517397abe4ce",
+          "author_date": "2023-12-26T15:10:13Z",
+          "message": "refactor: rename .groovy to .kt in :src:components to allow Git track history better",
+          "html_url": "https://github.com/apache/jmeter/commit/5c0d59256279c629259a03882c4a517397abe4ce"
+        },
+        {
+          "sha": "572698fac7afad315b81936fe21e3a328d45dc65",
+          "author_date": "2023-12-26T15:17:32Z",
+          "message": "refactor: migrate :src:components Groovy tests to Kotlin",
+          "html_url": "https://github.com/apache/jmeter/commit/572698fac7afad315b81936fe21e3a328d45dc65"
+        },
+        {
+          "sha": "a7706f03dd4e88b696e6cf199d6893a8e7ff3341",
+          "author_date": "2023-12-27T05:54:40Z",
+          "message": "refactor: rename .groovy to .kt in :src:dist-check to allow Git track history better",
+          "html_url": "https://github.com/apache/jmeter/commit/a7706f03dd4e88b696e6cf199d6893a8e7ff3341"
+        },
+        {
+          "sha": "5c7d63e889de28838d59af7b5389704f1f984021",
+          "author_date": "2023-12-27T08:48:23Z",
+          "message": "refactor: migrate :src:dist-check Groovy tests to Kotlin",
+          "html_url": "https://github.com/apache/jmeter/commit/5c7d63e889de28838d59af7b5389704f1f984021"
+        },
+        {
+          "sha": "53f9066f9130ca03fc2fb8de8140b1115d9fed2c",
+          "author_date": "2023-12-27T08:50:34Z",
+          "message": "refactor: remove unused JMeterSpec.groovy",
+          "html_url": "https://github.com/apache/jmeter/commit/53f9066f9130ca03fc2fb8de8140b1115d9fed2c"
+        },
+        {
+          "sha": "d5bc84c44a052f5d5a02d66571085faa76c27076",
+          "author_date": "2023-12-27T08:53:12Z",
+          "message": "refactor: rename .groovy to .kt in :src:functions to allow Git track history better",
+          "html_url": "https://github.com/apache/jmeter/commit/d5bc84c44a052f5d5a02d66571085faa76c27076"
+        },
+        {
+          "sha": "b9dc01feb48ad071c0c7affe94caa77bf5ff2218",
+          "author_date": "2023-12-27T09:18:59Z",
+          "message": "refactor: migrate Groovy tests in :src:functions to Kotlin",
+          "html_url": "https://github.com/apache/jmeter/commit/b9dc01feb48ad071c0c7affe94caa77bf5ff2218"
+        },
+        {
+          "sha": "7df1f93e898a600246ae2b30e5f200b38ed0a94d",
+          "author_date": "2023-12-27T09:24:13Z",
+          "message": "refactor: rename .groovy to .kt in :src:protocol:http to allow Git track history better",
+          "html_url": "https://github.com/apache/jmeter/commit/7df1f93e898a600246ae2b30e5f200b38ed0a94d"
+        },
+        {
+          "sha": "a0ab4eee4ebc88640aab60f03caeac3668b0fada",
+          "author_date": "2023-12-27T10:05:16Z",
+          "message": "refactor: migrate :src:protocol:http Groovy tests to Kotlin",
+          "html_url": "https://github.com/apache/jmeter/commit/a0ab4eee4ebc88640aab60f03caeac3668b0fada"
+        },
+        {
+          "sha": "2f2cbbd955091d3d9dea6257067c70b0ba0a236d",
+          "author_date": "2023-12-27T10:08:02Z",
+          "message": "refactor: rename .groovy to .kt in :src:protocol:jdbc to allow Git track history better",
+          "html_url": "https://github.com/apache/jmeter/commit/2f2cbbd955091d3d9dea6257067c70b0ba0a236d"
+        },
+        {
+          "sha": "d80c0226f8179dae9b6018b11db8b6002eb82fba",
+          "author_date": "2023-12-27T10:41:45Z",
+          "message": "refactor: migrate :src:protocol:jdbc Groovy tests to Kotlin",
+          "html_url": "https://github.com/apache/jmeter/commit/d80c0226f8179dae9b6018b11db8b6002eb82fba"
+        },
+        {
+          "sha": "bf18733adb82062bacd6be6c789b314588372dc3",
+          "author_date": "2023-12-27T10:50:15Z",
+          "message": "refactor: rename .groovy to .kt in :src:protocol:bolt to allow Git track history better",
+          "html_url": "https://github.com/apache/jmeter/commit/bf18733adb82062bacd6be6c789b314588372dc3"
+        },
+        {
+          "sha": "dfe4649a301cbc603d5f2cd0a635e5ed48d2d99f",
+          "author_date": "2023-12-27T11:17:58Z",
+          "message": "refactor: migrate :src:protocol:bolt Groovy tests to Kotlin",
+          "html_url": "https://github.com/apache/jmeter/commit/dfe4649a301cbc603d5f2cd0a635e5ed48d2d99f"
+        },
+        {
+          "sha": "e5355de31932ac94ce67034af07b97fddc0ff719",
+          "author_date": "2023-12-27T11:27:15Z",
+          "message": "chore: remove Groovy compilation from the build pipeline",
+          "html_url": "https://github.com/apache/jmeter/commit/e5355de31932ac94ce67034af07b97fddc0ff719"
+        },
+        {
+          "sha": "ae75354d3c498e8c03d9d46daaf8504ea17a6b1c",
+          "author_date": "2023-12-27T20:09:31Z",
+          "message": "refactor: replace org.junit.Assert with org.junit.jupiter.api.Assertions\n\nIt is a step towards removing junit:junit:4.x dependency",
+          "html_url": "https://github.com/apache/jmeter/commit/ae75354d3c498e8c03d9d46daaf8504ea17a6b1c"
+        },
+        {
+          "sha": "c962ec690a395d1db20712306eca98b51e259fc5",
+          "author_date": "2023-12-28T08:37:32Z",
+          "message": "refactor: migrate JUnit 3 tests to JUnit 5, remove JUnit 4 test dependency\n\nNow we have only JUnit 5 on the test compilation classpath, and IDE\nno longer suggests multiple different @Test and assertEquals implementations.",
+          "html_url": "https://github.com/apache/jmeter/commit/c962ec690a395d1db20712306eca98b51e259fc5"
+        },
+        {
+          "sha": "be645a23c53a77002f0d009a9bf7789402051c6f",
+          "author_date": "2023-12-13T17:07:44Z",
+          "message": "docs: update changelog for 5.6.3",
+          "html_url": "https://github.com/apache/jmeter/commit/be645a23c53a77002f0d009a9bf7789402051c6f"
+        },
+        {
+          "sha": "8d629f196dde05992b1ab96516711fc5ee8f44dc",
+          "author_date": "2023-12-30T07:11:23Z",
+          "message": "test: use bin/temp/ftp_test instead of bin/ftp_test so the generated files are not accidentally committed",
+          "html_url": "https://github.com/apache/jmeter/commit/8d629f196dde05992b1ab96516711fc5ee8f44dc"
+        },
+        {
+          "sha": "4199228f127b6e050679a08a4b5e37c8758a71d1",
+          "author_date": "2023-12-30T07:17:33Z",
+          "message": "refactor: @JMeterSerialTest.java -> JMeterSerialTest.kt",
+          "html_url": "https://github.com/apache/jmeter/commit/4199228f127b6e050679a08a4b5e37c8758a71d1"
+        },
+        {
+          "sha": "1c64012830204fea112215b49aa737a1543c27c9",
+          "author_date": "2023-12-30T07:19:05Z",
+          "message": "refactor: JMeterSerialTest to Kotlin so we have one less compileJava task",
+          "html_url": "https://github.com/apache/jmeter/commit/1c64012830204fea112215b49aa737a1543c27c9"
+        },
+        {
+          "sha": "8a5f5d8e98ecb99f3ee182dc4a2827146d1fdc67",
+          "author_date": "2023-12-30T08:58:48Z",
+          "message": "Revert \"refactor: JMeterSerialTest to Kotlin so we have one less compileJava task\"\n\nThis reverts commit 1c64012830204fea112215b49aa737a1543c27c9.",
+          "html_url": "https://github.com/apache/jmeter/commit/8a5f5d8e98ecb99f3ee182dc4a2827146d1fdc67"
+        },
+        {
+          "sha": "241078e51874a7cf8347437fc029a649cd223705",
+          "author_date": "2023-12-30T08:58:55Z",
+          "message": "Revert \"refactor: @JMeterSerialTest.java -> JMeterSerialTest.kt\"\n\nThis reverts commit 4199228f127b6e050679a08a4b5e37c8758a71d1.",
+          "html_url": "https://github.com/apache/jmeter/commit/241078e51874a7cf8347437fc029a649cd223705"
+        },
+        {
+          "sha": "c204d5c72d4995bf00c24b0d87aad06c9f7c7d3b",
+          "author_date": "2023-12-30T09:19:50Z",
+          "message": "Reapply \"refactor: @JMeterSerialTest.java -> JMeterSerialTest.kt\"\n\nThis reverts commit 241078e51874a7cf8347437fc029a649cd223705.",
+          "html_url": "https://github.com/apache/jmeter/commit/c204d5c72d4995bf00c24b0d87aad06c9f7c7d3b"
+        },
+        {
+          "sha": "b36a9c41dcdecdb93ae6622114f70ccb78d7ab83",
+          "author_date": "2023-12-30T09:19:55Z",
+          "message": "Reapply \"refactor: JMeterSerialTest to Kotlin so we have one less compileJava task\"\n\nThis reverts commit 8a5f5d8e98ecb99f3ee182dc4a2827146d1fdc67.",
+          "html_url": "https://github.com/apache/jmeter/commit/b36a9c41dcdecdb93ae6622114f70ccb78d7ab83"
+        },
+        {
+          "sha": "05c8659f3bb41455783435f1e0120acd540e802f",
+          "author_date": "2023-12-30T09:26:31Z",
+          "message": "chore: add workaround for kapt failure \"Number of loaded files in snapshots differs\"\n\nSee https://youtrack.jetbrains.com/issue/KT-45329/IDE-KAPT-Number-of-loaded-files-in-snapshots-differs-when-using-Run-with-Coverage-and-project-has-Java-and-Kotlin-targets-with",
+          "html_url": "https://github.com/apache/jmeter/commit/05c8659f3bb41455783435f1e0120acd540e802f"
+        },
+        {
+          "sha": "aa22e935265dd14038d6c870c0166961854865ed",
+          "author_date": "2023-12-30T10:02:01Z",
+          "message": "chore: apply kapt incremental execution failure workaround for all kapt tasks",
+          "html_url": "https://github.com/apache/jmeter/commit/aa22e935265dd14038d6c870c0166961854865ed"
+        },
+        {
+          "sha": "945281cfaa6cca782f0e11f151eb22497d545713",
+          "author_date": "2023-12-30T08:47:00Z",
+          "message": "feat: pass JDBCSampler.maxRows to Statement.setMaxRows so the driver does not fetch extra rows from the database",
+          "html_url": "https://github.com/apache/jmeter/commit/945281cfaa6cca782f0e11f151eb22497d545713"
+        },
+        {
+          "sha": "6c2a009159ad2a1858d885b35971a64f79a5d700",
+          "author_date": "2023-12-31T09:34:31Z",
+          "message": "prepare new version 5.6.3",
+          "html_url": "https://github.com/apache/jmeter/commit/6c2a009159ad2a1858d885b35971a64f79a5d700"
+        },
+        {
+          "sha": "ff63439527ece9b1d8347e19bc289e97ae1923d5",
+          "author_date": "2024-01-01T14:18:17Z",
+          "message": "fix: store ThreadGroup.scheduler fields\n\nThis fixes a regression in 278247608b66adf92e06e1444e0229a663e54618",
+          "html_url": "https://github.com/apache/jmeter/commit/ff63439527ece9b1d8347e19bc289e97ae1923d5"
+        },
+        {
+          "sha": "34a2785748e9e0b14702595e8682c387869deda3",
+          "author_date": "2024-01-01T14:40:58Z",
+          "message": "test: reduce JMeterTest > runSerialTest test noise\n\nPropertyDescriptor requires arguments for instantiation, so it can't easily\nbe tested for serializability.",
+          "html_url": "https://github.com/apache/jmeter/commit/34a2785748e9e0b14702595e8682c387869deda3"
+        }
+      ],
+      "ignored_reason": null
     }
   ],
   "runs_by_month": {

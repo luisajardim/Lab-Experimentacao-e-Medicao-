@@ -601,8 +601,111 @@
     {
       "release": "r5",
       "previous_release": "r4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "448f2a3cb25ea0a310314ca545f330a50e35dab3",
+          "author_date": "2018-06-05T19:11:20Z",
+          "message": "restart server when crashed\n\nRelated #65",
+          "html_url": "https://github.com/gokcehan/lf/commit/448f2a3cb25ea0a310314ca545f330a50e35dab3"
+        },
+        {
+          "sha": "20720c832d2ab01f7e71e41aad8bec0916acd203",
+          "author_date": "2018-06-06T17:55:13Z",
+          "message": "cleanup",
+          "html_url": "https://github.com/gokcehan/lf/commit/20720c832d2ab01f7e71e41aad8bec0916acd203"
+        },
+        {
+          "sha": "9d21a4f359490c808abae44a05f0f33f22cf102a",
+          "author_date": "2018-06-06T18:39:44Z",
+          "message": "add key mappings to the doc",
+          "html_url": "https://github.com/gokcehan/lf/commit/9d21a4f359490c808abae44a05f0f33f22cf102a"
+        },
+        {
+          "sha": "9177ddd4066fcc64e9863e5051470335ab103cf5",
+          "author_date": "2018-06-06T18:50:15Z",
+          "message": "cleanup",
+          "html_url": "https://github.com/gokcehan/lf/commit/9177ddd4066fcc64e9863e5051470335ab103cf5"
+        },
+        {
+          "sha": "4846a74320ccc44b00df997d6a80f15aaf99f5f8",
+          "author_date": "2018-06-07T19:19:55Z",
+          "message": "reload modified directories when loading cache\n\nRelated #92",
+          "html_url": "https://github.com/gokcehan/lf/commit/4846a74320ccc44b00df997d6a80f15aaf99f5f8"
+        },
+        {
+          "sha": "7acc85f81c4eca92f05894ac2052154a6627bccb",
+          "author_date": "2018-06-07T19:49:53Z",
+          "message": "reload modified files when loading cache\n\nRelated #92",
+          "html_url": "https://github.com/gokcehan/lf/commit/7acc85f81c4eca92f05894ac2052154a6627bccb"
+        },
+        {
+          "sha": "e025c68130389cb9db62eb813cfdca2a7a92b1a5",
+          "author_date": "2018-06-08T18:47:28Z",
+          "message": "keep cache when navigation is renewed",
+          "html_url": "https://github.com/gokcehan/lf/commit/e025c68130389cb9db62eb813cfdca2a7a92b1a5"
+        },
+        {
+          "sha": "723357fe3d02edc6a7605b27aa43efdba3cd7c06",
+          "author_date": "2018-06-09T19:02:09Z",
+          "message": "add 'period' option for periodic refresh\n\nRelated #73",
+          "html_url": "https://github.com/gokcehan/lf/commit/723357fe3d02edc6a7605b27aa43efdba3cd7c06"
+        },
+        {
+          "sha": "ba01f85340fa0eb1aede260a84d25af739309676",
+          "author_date": "2018-06-15T13:33:54Z",
+          "message": "add 'load' command to load modified dirs and files",
+          "html_url": "https://github.com/gokcehan/lf/commit/ba01f85340fa0eb1aede260a84d25af739309676"
+        },
+        {
+          "sha": "51101f702088a84e88797265488be742e51296dd",
+          "author_date": "2018-06-15T13:34:44Z",
+          "message": "load all clients after running 'put' command",
+          "html_url": "https://github.com/gokcehan/lf/commit/51101f702088a84e88797265488be742e51296dd"
+        },
+        {
+          "sha": "2e014b3c0a08c2b0f9fa0eff018cba56f231d57e",
+          "author_date": "2018-06-15T18:05:55Z",
+          "message": "add tutorial link to readme\n\nRelated #94",
+          "html_url": "https://github.com/gokcehan/lf/commit/2e014b3c0a08c2b0f9fa0eff018cba56f231d57e"
+        },
+        {
+          "sha": "76a725eaf25a0c1fcc2abd7ef43081f4bc8fe3fd",
+          "author_date": "2018-06-15T19:52:17Z",
+          "message": "replace 'reload' with 'load' in documentaiton",
+          "html_url": "https://github.com/gokcehan/lf/commit/76a725eaf25a0c1fcc2abd7ef43081f4bc8fe3fd"
+        },
+        {
+          "sha": "52974615f2ac7161a9e9d29ef62a191b0e8a7225",
+          "author_date": "2018-06-15T21:13:33Z",
+          "message": "handle command properly with 'cmd-word'back'",
+          "html_url": "https://github.com/gokcehan/lf/commit/52974615f2ac7161a9e9d29ef62a191b0e8a7225"
+        },
+        {
+          "sha": "8070cd82b7a9a6c74cca28017c32fa7dfaac6f78",
+          "author_date": "2018-06-15T21:57:50Z",
+          "message": "cleanup",
+          "html_url": "https://github.com/gokcehan/lf/commit/8070cd82b7a9a6c74cca28017c32fa7dfaac6f78"
+        },
+        {
+          "sha": "078dc47e34dddb542ccbe5ef8a747d1c4048aa9c",
+          "author_date": "2018-06-16T13:27:39Z",
+          "message": "find hidden parents when 'hidden' is changed",
+          "html_url": "https://github.com/gokcehan/lf/commit/078dc47e34dddb542ccbe5ef8a747d1c4048aa9c"
+        },
+        {
+          "sha": "6d20887b1672dabef20064c7747465df8b132a63",
+          "author_date": "2018-06-16T13:34:14Z",
+          "message": "update preview when 'hidden' is changed",
+          "html_url": "https://github.com/gokcehan/lf/commit/6d20887b1672dabef20064c7747465df8b132a63"
+        },
+        {
+          "sha": "da126a3959d3c1695b67d93a517a72617cc740c4",
+          "author_date": "2018-06-16T13:59:41Z",
+          "message": "update readme",
+          "html_url": "https://github.com/gokcehan/lf/commit/da126a3959d3c1695b67d93a517a72617cc740c4"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r6",
@@ -619,8 +722,105 @@
     {
       "release": "r8",
       "previous_release": "r7",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "40002a7752af63d529dca5971b2afa20f1aeecf9",
+          "author_date": "2018-07-22T17:44:56Z",
+          "message": "add 'quit' command to server protocol\n\nRelated #106",
+          "html_url": "https://github.com/gokcehan/lf/commit/40002a7752af63d529dca5971b2afa20f1aeecf9"
+        },
+        {
+          "sha": "7dbb61f295f4debaf6225eb9d4df549b08b73d81",
+          "author_date": "2018-07-26T18:58:09Z",
+          "message": "try to reconnect when server is not yet started\n\nRelated #106",
+          "html_url": "https://github.com/gokcehan/lf/commit/7dbb61f295f4debaf6225eb9d4df549b08b73d81"
+        },
+        {
+          "sha": "9234bcd5b815304c33042637636cffbe426603b5",
+          "author_date": "2018-07-26T19:11:05Z",
+          "message": "try to reconnect after sleep",
+          "html_url": "https://github.com/gokcehan/lf/commit/9234bcd5b815304c33042637636cffbe426603b5"
+        },
+        {
+          "sha": "e82cbb820f5c50e551ca8ac54f3ec87683859dfd",
+          "author_date": "2018-07-28T13:52:54Z",
+          "message": "export 'LF_LEVEL' variable for nested instances\n\nRelated #107",
+          "html_url": "https://github.com/gokcehan/lf/commit/e82cbb820f5c50e551ca8ac54f3ec87683859dfd"
+        },
+        {
+          "sha": "a0935fabcb78276017acd5da9c6e163a294c1491",
+          "author_date": "2018-07-30T15:41:14Z",
+          "message": "handle removed directories during load",
+          "html_url": "https://github.com/gokcehan/lf/commit/a0935fabcb78276017acd5da9c6e163a294c1491"
+        },
+        {
+          "sha": "d3f9a3588f245b413428b163d367a86881c483ed",
+          "author_date": "2018-07-30T17:56:57Z",
+          "message": "handle non-existent directories during reload",
+          "html_url": "https://github.com/gokcehan/lf/commit/d3f9a3588f245b413428b163d367a86881c483ed"
+        },
+        {
+          "sha": "0b8de7c77e7cedf93399473ea39b0d23229cf6c1",
+          "author_date": "2018-07-31T21:21:55Z",
+          "message": "detach server on windows\n\nRelated #106",
+          "html_url": "https://github.com/gokcehan/lf/commit/0b8de7c77e7cedf93399473ea39b0d23229cf6c1"
+        },
+        {
+          "sha": "011cca76d16456eebbf36a36b687afaea04b606e",
+          "author_date": "2018-08-22T17:05:22Z",
+          "message": "add find commands to find as you type\n\nRelated #68",
+          "html_url": "https://github.com/gokcehan/lf/commit/011cca76d16456eebbf36a36b687afaea04b606e"
+        },
+        {
+          "sha": "170e39b95ef98ad3cfaa8cf79ca1f1d5724bf273",
+          "author_date": "2018-08-22T17:57:47Z",
+          "message": "add 'findlen' option to control number of chars\n\nRelated #68",
+          "html_url": "https://github.com/gokcehan/lf/commit/170e39b95ef98ad3cfaa8cf79ca1f1d5724bf273"
+        },
+        {
+          "sha": "a59a5aa712f736ab092dd5896b424999b695268a",
+          "author_date": "2018-08-22T22:29:59Z",
+          "message": "use zero value in findlen for arbitrary length\n\nRelated #68",
+          "html_url": "https://github.com/gokcehan/lf/commit/a59a5aa712f736ab092dd5896b424999b695268a"
+        },
+        {
+          "sha": "4420e41c760b220d465041753bc426b9c2650c68",
+          "author_date": "2018-08-22T22:37:07Z",
+          "message": "add 'anchorfind' option to control find start\n\nRelated #68",
+          "html_url": "https://github.com/gokcehan/lf/commit/4420e41c760b220d465041753bc426b9c2650c68"
+        },
+        {
+          "sha": "4ba3c3cda9aaedf9dee31f9c3544029817bdec22",
+          "author_date": "2018-08-22T22:55:50Z",
+          "message": "keep reverse direction in find and search",
+          "html_url": "https://github.com/gokcehan/lf/commit/4ba3c3cda9aaedf9dee31f9c3544029817bdec22"
+        },
+        {
+          "sha": "b22384d63448f2aeda0c7d80fd692fbe4d8efb9f",
+          "author_date": "2018-08-27T15:57:55Z",
+          "message": "keep index when selection is deleted\n\nRelated #109",
+          "html_url": "https://github.com/gokcehan/lf/commit/b22384d63448f2aeda0c7d80fd692fbe4d8efb9f"
+        },
+        {
+          "sha": "266a583adbc2f577fd6d93bb476f82485d1f91ba",
+          "author_date": "2018-08-27T16:01:21Z",
+          "message": "use load instead of reload after shell-pipe\n\nRelated #109",
+          "html_url": "https://github.com/gokcehan/lf/commit/266a583adbc2f577fd6d93bb476f82485d1f91ba"
+        },
+        {
+          "sha": "5e6714720497b45e5df9e52692040ab3f45182fa",
+          "author_date": "2018-08-27T16:36:40Z",
+          "message": "check HOME and USER variables on startup\n\nRelated #108",
+          "html_url": "https://github.com/gokcehan/lf/commit/5e6714720497b45e5df9e52692040ab3f45182fa"
+        },
+        {
+          "sha": "629a7f32974f6248d3fd8ed66a491aa01c0b0658",
+          "author_date": "2018-08-29T16:28:22Z",
+          "message": "update documentation",
+          "html_url": "https://github.com/gokcehan/lf/commit/629a7f32974f6248d3fd8ed66a491aa01c0b0658"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r9",
@@ -721,8 +921,81 @@
     {
       "release": "r25",
       "previous_release": "r24",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "8adbd2b9ef5de08f105b283b747301d98bac8b46",
+          "author_date": "2021-07-09T13:34:45Z",
+          "message": "Don't use the absolute path when saving bookmarks (#659)\n\nThe absolute path of symlinks were getting saved, so bookmarking a symlink\r\ndirectory would cause the absolute path to be saved and loaded instead.\r\nWhat's saved now is the current path string as understood by lf instead, so\r\npath to symlinks can be saved too and they won't get dereferenced when\r\nloading.",
+          "html_url": "https://github.com/gokcehan/lf/commit/8adbd2b9ef5de08f105b283b747301d98bac8b46"
+        },
+        {
+          "sha": "75eba115d2c143a80b1cf939e657d4457c4b5bcd",
+          "author_date": "2021-07-31T13:10:25Z",
+          "message": "implement dironly option (#669)\n\nCo-authored-by: mtoohey31 <mtoohey31@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/75eba115d2c143a80b1cf939e657d4457c4b5bcd"
+        },
+        {
+          "sha": "ee5b3f4813f91831222728b7e666615eea9a8d12",
+          "author_date": "2021-08-01T14:00:10Z",
+          "message": "add an option to disable directory cache (#673)\n\n* add an option to disable directory cache\r\n\r\n* change option name to `dircache`\r\n\r\n* change 4 whitespaces to tab",
+          "html_url": "https://github.com/gokcehan/lf/commit/ee5b3f4813f91831222728b7e666615eea9a8d12"
+        },
+        {
+          "sha": "bdd1747e436ded06faea4f1b5dc271b9479a35c5",
+          "author_date": "2021-08-01T14:04:37Z",
+          "message": "update doc",
+          "html_url": "https://github.com/gokcehan/lf/commit/bdd1747e436ded06faea4f1b5dc271b9479a35c5"
+        },
+        {
+          "sha": "6c46b217afd621fdacea7af012d0b23519c9e0e9",
+          "author_date": "2021-08-01T14:06:04Z",
+          "message": "add completion for dircache option",
+          "html_url": "https://github.com/gokcehan/lf/commit/6c46b217afd621fdacea7af012d0b23519c9e0e9"
+        },
+        {
+          "sha": "ff0933ca03143d9528520c0e6f6b695bb947ac1e",
+          "author_date": "2021-08-21T13:40:24Z",
+          "message": "Added filter command (#667)\n\n* added first version of interactive filter\r\n\r\n* small fix when loading new file\r\n\r\n* don't reset filter when directory is reloaded automatically\r\n\r\n* reapply filter when options for searching change\r\n\r\n* current filter or arguments now prefilled in the prompt\r\n\r\n* empty filter can now be supplied\r\n\r\n* added new setfilter command for use in scripts\r\n\r\n* added incfilter option\r\n\r\n* added very basic documentation\r\n\r\n* added filter indication in statusbar\r\n\r\n* added option to display filter to prompt",
+          "html_url": "https://github.com/gokcehan/lf/commit/ff0933ca03143d9528520c0e6f6b695bb947ac1e"
+        },
+        {
+          "sha": "05a48ea315fc4a1aafca22361da401219a21579f",
+          "author_date": "2021-08-23T14:11:56Z",
+          "message": "added pre-cd command (#685)\n\n* added special pre-cd command\r\n\r\n* added documentation",
+          "html_url": "https://github.com/gokcehan/lf/commit/05a48ea315fc4a1aafca22361da401219a21579f"
+        },
+        {
+          "sha": "0edf0823b74e81afdd004a4bd7de4b3b85b0f7f6",
+          "author_date": "2021-08-25T15:28:47Z",
+          "message": "cmap now accepts all expressions (#686)",
+          "html_url": "https://github.com/gokcehan/lf/commit/0edf0823b74e81afdd004a4bd7de4b3b85b0f7f6"
+        },
+        {
+          "sha": "5566f82596a35be06a120f2af96ff510d6cbf315",
+          "author_date": "2021-08-25T15:57:17Z",
+          "message": "fixed bug, where ~ is not a absolute directory (#690)",
+          "html_url": "https://github.com/gokcehan/lf/commit/5566f82596a35be06a120f2af96ff510d6cbf315"
+        },
+        {
+          "sha": "85aa3b9dc6b72670a6cea9aa4a1838cd5ba4f759",
+          "author_date": "2021-08-29T15:28:29Z",
+          "message": "Cmap fixes (#691)\n\n* fixed bug when switching commands\r\n\r\n* filter and searches are now reset, whenever prompt is reset\r\n\r\n* don't interrupt %-shell commands\r\n\r\n* filter and search are now correctly started and stoped on cd\r\n\r\n* movement commands now don't stop prompts\r\n\r\n* forgot shell-pipe check in delete command",
+          "html_url": "https://github.com/gokcehan/lf/commit/85aa3b9dc6b72670a6cea9aa4a1838cd5ba4f759"
+        },
+        {
+          "sha": "f01fab6257864aeb3a305f681580edda90a79ce4",
+          "author_date": "2021-10-09T19:49:12Z",
+          "message": "fix crash when hidden is changed\n\ncc #615 #657",
+          "html_url": "https://github.com/gokcehan/lf/commit/f01fab6257864aeb3a305f681580edda90a79ce4"
+        },
+        {
+          "sha": "1b71c33afd1a6158b9d6d1da606149c171a08d9f",
+          "author_date": "2021-10-09T21:01:01Z",
+          "message": "update doc",
+          "html_url": "https://github.com/gokcehan/lf/commit/1b71c33afd1a6158b9d6d1da606149c171a08d9f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r26",
@@ -745,14 +1018,406 @@
     {
       "release": "r29",
       "previous_release": "r28",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a4fa5d36c9fd23e0a64423832a945cf9ccf81151",
+          "author_date": "2023-02-11T16:55:49Z",
+          "message": "Make `lfcd` examples safer for people who alias `lf` to `lfcd` (#1049)\n\nPeople keep running into an infinite loop and being confused.\r\nSee https://github.com/gokcehan/lf/issues/140#issuecomment-1256368250\r\nand https://github.com/gokcehan/lf/discussions/1043.\r\n\r\nThis fixes the issues in `lfcd.sh` and `lfcd.fish`. For the other\r\nscripts, I'm not sure whether this issue exists or is fixable.\r\n\r\nOne of the discussions above also suggested the need to document\r\nthe key binding better.",
+          "html_url": "https://github.com/gokcehan/lf/commit/a4fa5d36c9fd23e0a64423832a945cf9ccf81151"
+        },
+        {
+          "sha": "2fe5e4d54e4cb015dc4201cf612b053cda72e2a3",
+          "author_date": "2023-02-11T16:58:44Z",
+          "message": "Bind Ctrl+MouseWheel to scroll up/down (#1051)\n\nOn my system, Shift+Mouse is captured by the terminal and\r\nAlt+Mouse only works for one of the alt keys. Hence I picked\r\nCtrl.\r\n\r\nThis also allows binding of Ctrl+MouseButtons (but doesn't set\r\nany such bindings). \r\n\r\nAs a minor bonus, that should allow using Ctrl+Click to select\r\n`lf`'s terminal without moving the cursor no matter where you\r\nclick.  On tmux, this doesn't work out of the box and requires\r\na change to `tmux.conf` along the following lines:\r\n\r\n     bind-key -T root  C-MouseDown1Pane  select-pane -t = \\; send-keys -M\r\n\r\nYou can omit the `send-keys -M` if you never want to pass\r\n`Ctrl+Click` to any of your terminal apps. (Then it will work\r\nwithout this PR).",
+          "html_url": "https://github.com/gokcehan/lf/commit/2fe5e4d54e4cb015dc4201cf612b053cda72e2a3"
+        },
+        {
+          "sha": "6440281e82674a0714edb67a002798bc1ec0f410",
+          "author_date": "2023-02-11T17:00:08Z",
+          "message": "Disallow exiting from `rename:` mode with backspace (#1060)\n\nAfter looking at the list of possibilities for `app.ui.cmdPrefix` by searching\r\nthrough the code, renaming looks to be the only remaining mode where exiting\r\nvia backspace doesn't make sense.\r\n\r\nIn particular, I don't think any commands other than `rename` commonly start\r\nout with some editable text in the prompt. The other dangerous mode is the `>`\r\nmode, but there exit-on-backspace was already disabled.\r\n\r\nFixes #1052, #1059",
+          "html_url": "https://github.com/gokcehan/lf/commit/6440281e82674a0714edb67a002798bc1ec0f410"
+        },
+        {
+          "sha": "0b99aaed4ebdb7ed0967402a5cd542638e3ca2d5",
+          "author_date": "2023-02-11T17:01:20Z",
+          "message": "Add example to hiddenfiles documentation (#1073)\n\n* Improve documentation\r\n\r\n* fix missing quote\r\n\r\n* update manpage",
+          "html_url": "https://github.com/gokcehan/lf/commit/0b99aaed4ebdb7ed0967402a5cd542638e3ca2d5"
+        },
+        {
+          "sha": "4a443cae58ffe417c4aebedd88aeae6380bf190c",
+          "author_date": "2023-02-11T17:01:46Z",
+          "message": "Refresh preview even if selection doesn't change (#1074)",
+          "html_url": "https://github.com/gokcehan/lf/commit/4a443cae58ffe417c4aebedd88aeae6380bf190c"
+        },
+        {
+          "sha": "530ab2c40a9fdc41afa6efb6b78d2fb61c57565e",
+          "author_date": "2023-02-11T17:11:07Z",
+          "message": "Allow separate styles for cursor in normal and preview panes, simplify `tagfmt` and `errorfmt` (#1086)\n\n* Allow separate styles for cursor in normal and preview panes\r\n\r\nThis defines new `cursorfmt` and `crusorpreviewfmt` options to style cursor in normal/preview panes. This allows using a different style for the normal and preview cursor. The documentation includes several possible values these options can be set to.\r\n\r\nThe default behavior is an underline, same as in\r\nhttps://github.com/gokcehan/lf/pull/1072, since it should not cause severe\r\nproblems and be visible on all terminals. It can now be easily changed, as explained in the docs. I also added an example to `etc/lfrc.example`.\r\n\r\nSee linked issues and PRs for the more context.\r\n\r\nFixes https://github.com/gokcehan/lf/issues/1038\r\n\r\nFollows up on:\r\n\r\nhttps://github.com/gokcehan/lf/pull/1072\r\nhttps://github.com/gokcehan/lf/pull/924\r\nhttps://github.com/gokcehan/lf/commit/b47cf6d5a5\r\n\r\n* Simplify configuration of several formatting options\r\n\r\nThis simplifies the configuration of `cursorfmt`, `cursorpreviewfmt`, `tagfmt`,\r\nand `errorfmt` options.\r\n\r\nIn almost all usecases, the value of these options had to end with `%s\\033[0m`\r\nto print the contents of filename/tag/error and reset the terminal style. Now,\r\nif `%s` is not part of the option's value, `%s\\033[0m` is appended\r\nautomatically. This simplifies configuration.\r\n\r\nI retained the same behavior as before when `%s` is part of the string for\r\nbackwards compatibility. I think it should be considered deprecated, but it\r\nalso causes no harm.",
+          "html_url": "https://github.com/gokcehan/lf/commit/530ab2c40a9fdc41afa6efb6b78d2fb61c57565e"
+        },
+        {
+          "sha": "c0c85f206fbd5011c10cc839ced94acb444a1b9a",
+          "author_date": "2023-02-12T11:38:58Z",
+          "message": "Fix documentation for dironly/dirpreviews options (#1105)",
+          "html_url": "https://github.com/gokcehan/lf/commit/c0c85f206fbd5011c10cc839ced94acb444a1b9a"
+        },
+        {
+          "sha": "6afefa5d095e5c7ca0e871c401563edb5dedcdd2",
+          "author_date": "2023-02-25T17:38:41Z",
+          "message": "Option to change look of cursors in parent dirs, rename an option. (#1106)\n\n* Add `cursorparentfmt` option for cursors in parent dirs\r\n\r\nThe option defaults to the same value as `cursorfmt`, so the default look of `lf` is unchanged. However, I find it useful to make it different, since I seem to have so much trouble figuring out which of my cursors is the active one. :)\r\n\r\nFor example, here's what it looks like if one has `set cursorparentfmt \"\\033[7;90m\"` in their `lfrc`:\r\n\r\nhttps://user-images.githubusercontent.com/4123047/218299130-09ac411f-307a-489e-a4f0-4691710f8549.png\r\n\r\n* Remove `cursorfmt` option to `cursoractivefmt`\r\n\r\nThis seems appropriate after introducing `cursorparentfmt`",
+          "html_url": "https://github.com/gokcehan/lf/commit/6afefa5d095e5c7ca0e871c401563edb5dedcdd2"
+        },
+        {
+          "sha": "cae576bb1d6396c2c8a6c6419f14099da2fc5d62",
+          "author_date": "2023-02-25T17:41:32Z",
+          "message": "Navigate cmd history with up/down (#1112)",
+          "html_url": "https://github.com/gokcehan/lf/commit/cae576bb1d6396c2c8a6c6419f14099da2fc5d62"
+        },
+        {
+          "sha": "95a6f9584f9e4a49da72a7243b3d0fe4c384d2b0",
+          "author_date": "2023-02-25T20:01:00Z",
+          "message": "Add Winget Releaser workflow (#1107)\n\n* Add Winget Releaser workflow\r\n\r\n* Add dependabot\r\n\r\n* Update release.yml",
+          "html_url": "https://github.com/gokcehan/lf/commit/95a6f9584f9e4a49da72a7243b3d0fe4c384d2b0"
+        },
+        {
+          "sha": "960f23c2880d23c004e9996adde2a54c6872b891",
+          "author_date": "2023-02-25T20:10:47Z",
+          "message": "Bump actions/setup-go from 2 to 3 (#1126)\n\nBumps [actions/setup-go](https://github.com/actions/setup-go) from 2 to 3.\r\n- [Release notes](https://github.com/actions/setup-go/releases)\r\n- [Commits](https://github.com/actions/setup-go/compare/v2...v3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/setup-go\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/960f23c2880d23c004e9996adde2a54c6872b891"
+        },
+        {
+          "sha": "28936c7506ec10e385d8579aa85fb5b7cb809de7",
+          "author_date": "2023-02-25T20:12:18Z",
+          "message": "Bump dominikh/staticcheck-action from 1.2.0 to 1.3.0 (#1127)\n\nBumps [dominikh/staticcheck-action](https://github.com/dominikh/staticcheck-action) from 1.2.0 to 1.3.0.\r\n- [Release notes](https://github.com/dominikh/staticcheck-action/releases)\r\n- [Changelog](https://github.com/dominikh/staticcheck-action/blob/master/CHANGES.md)\r\n- [Commits](https://github.com/dominikh/staticcheck-action/compare/v1.2.0...v1.3.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: dominikh/staticcheck-action\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/28936c7506ec10e385d8579aa85fb5b7cb809de7"
+        },
+        {
+          "sha": "6c3366eec45bc3f87d1234e1408c3a5e27a69492",
+          "author_date": "2023-02-25T20:12:56Z",
+          "message": "Bump actions/checkout from 2 to 3 (#1129)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 2 to 3.\r\n- [Release notes](https://github.com/actions/checkout/releases)\r\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/actions/checkout/compare/v2...v3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/checkout\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/6c3366eec45bc3f87d1234e1408c3a5e27a69492"
+        },
+        {
+          "sha": "326930f46f296074c9390e8d088a438b6b87b8f5",
+          "author_date": "2023-02-25T20:19:07Z",
+          "message": "change go version from 1.17 to 1.18",
+          "html_url": "https://github.com/gokcehan/lf/commit/326930f46f296074c9390e8d088a438b6b87b8f5"
+        },
+        {
+          "sha": "752f0590687a09dcc2f1b5e8000c9a5a6819a062",
+          "author_date": "2023-02-25T20:25:52Z",
+          "message": "remove older than go1.17 instructions from readme",
+          "html_url": "https://github.com/gokcehan/lf/commit/752f0590687a09dcc2f1b5e8000c9a5a6819a062"
+        },
+        {
+          "sha": "b02fd42df4fd075d0ce8ea5abdd157827468920c",
+          "author_date": "2023-02-25T22:00:54Z",
+          "message": "`invert-below` command to substitute for visual mode (#1101)\n\nThis command inverts the selection for the current file and all the files below\r\nit. Using this command twice substitutes for having a \"visual\" mode. This is\r\ndescribed in more detail in the docs and in\r\nhttps://github.com/gokcehan/lf/issues/477#issuecomment-1414563834.\r\n\r\nFixes #477. While that's not exactly what was asked for, I hope it's a suitable\r\nreplacement and seems more in the spirit of `lf`, at least until a better\r\nreplacement is implemented.",
+          "html_url": "https://github.com/gokcehan/lf/commit/b02fd42df4fd075d0ce8ea5abdd157827468920c"
+        },
+        {
+          "sha": "7a7e81e88cded9bfa4e4241a8a803f648765f7f4",
+          "author_date": "2023-02-25T22:01:04Z",
+          "message": "Update the Go version in `go.mod` to 1.18 (#1132)\n\n* Replace functions from `ioutil` with same functions from `io`\r\n\r\nThis is demanded by staticcheck if we upgrade the go version in go.mod.\r\n\r\n* Replace ioutil.ReadDir with os.ReadDir\r\n\r\n* Update Go version to 1.18 in go.mod\r\n\r\nThis requires abandoning use of the `ioutil` module (see parent commits)\r\nto pass `staticcheck`.",
+          "html_url": "https://github.com/gokcehan/lf/commit/7a7e81e88cded9bfa4e4241a8a803f648765f7f4"
+        },
+        {
+          "sha": "3fc1db5d1426d417869857d4b6cf090f05d73d26",
+          "author_date": "2023-02-25T22:04:32Z",
+          "message": "Bump github.com/gdamore/tcell/v2 (#1128)\n\nBumps [github.com/gdamore/tcell/v2](https://github.com/gdamore/tcell) from 2.5.4-0.20221019011350-d3cbfcfb7aa3 to 2.6.0.\r\n- [Release notes](https://github.com/gdamore/tcell/releases)\r\n- [Commits](https://github.com/gdamore/tcell/commits/v2.6.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/gdamore/tcell/v2\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/3fc1db5d1426d417869857d4b6cf090f05d73d26"
+        },
+        {
+          "sha": "a8e95ae40a9204d6daea8f486523e90c56f00188",
+          "author_date": "2023-03-12T12:04:07Z",
+          "message": "Replace the obsolete Vue icon in the example file (#1123)",
+          "html_url": "https://github.com/gokcehan/lf/commit/a8e95ae40a9204d6daea8f486523e90c56f00188"
+        },
+        {
+          "sha": "c2cbc39ce50caebed0da95d184599b7fd243b7cd",
+          "author_date": "2023-03-12T12:04:23Z",
+          "message": "Bump golang.org/x/sys from 0.5.0 to 0.6.0 (#1136)\n\nBumps [golang.org/x/sys](https://github.com/golang/sys) from 0.5.0 to 0.6.0.\r\n- [Release notes](https://github.com/golang/sys/releases)\r\n- [Commits](https://github.com/golang/sys/compare/v0.5.0...v0.6.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/sys\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/c2cbc39ce50caebed0da95d184599b7fd243b7cd"
+        },
+        {
+          "sha": "382534c4ba9bce3e4484a930a6112e61a0444a86",
+          "author_date": "2023-03-12T12:07:28Z",
+          "message": "Bump golang.org/x/term from 0.5.0 to 0.6.0 (#1137)\n\nBumps [golang.org/x/term](https://github.com/golang/term) from 0.5.0 to 0.6.0.\r\n- [Release notes](https://github.com/golang/term/releases)\r\n- [Commits](https://github.com/golang/term/compare/v0.5.0...v0.6.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/term\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/382534c4ba9bce3e4484a930a6112e61a0444a86"
+        },
+        {
+          "sha": "bcd058ace25873d1ac015f0e28fb1ddf9d4865a3",
+          "author_date": "2023-03-12T12:11:09Z",
+          "message": "Delete stale dircache entry during rename (#1138)\n\n* Delete stale dircache entry during rename\r\n\r\n* Clear `regCache` as well\r\n\r\n* Add comment",
+          "html_url": "https://github.com/gokcehan/lf/commit/bcd058ace25873d1ac015f0e28fb1ddf9d4865a3"
+        },
+        {
+          "sha": "9f1428582fbcb0f570e4cd3a16ed40a84c62d665",
+          "author_date": "2023-03-12T12:11:25Z",
+          "message": "Remove commented code (#1141)",
+          "html_url": "https://github.com/gokcehan/lf/commit/9f1428582fbcb0f570e4cd3a16ed40a84c62d665"
+        },
+        {
+          "sha": "a85ce898a1cd685ee19a282be5b283f536c0d67f",
+          "author_date": "2023-03-12T12:24:44Z",
+          "message": "try to fix #916 (#1146)",
+          "html_url": "https://github.com/gokcehan/lf/commit/a85ce898a1cd685ee19a282be5b283f536c0d67f"
+        },
+        {
+          "sha": "9440b1b319d9f0a320918724a2f72199657c1613",
+          "author_date": "2023-03-12T12:30:16Z",
+          "message": "Update file info after reload command (#1149)\n\n* Update status bar after reload\r\n\r\n* Add comment",
+          "html_url": "https://github.com/gokcehan/lf/commit/9440b1b319d9f0a320918724a2f72199657c1613"
+        },
+        {
+          "sha": "db9de4d4ded834e4164da35b60327a5900a09def",
+          "author_date": "2023-03-12T12:34:44Z",
+          "message": "Refactor code for printing directories (#1150)",
+          "html_url": "https://github.com/gokcehan/lf/commit/db9de4d4ded834e4164da35b60327a5900a09def"
+        },
+        {
+          "sha": "0bf17dd3f0934b655fd7a0b4016e90057fea7f7c",
+          "author_date": "2023-03-12T12:35:23Z",
+          "message": "Fix width used for line numbers (#1151)",
+          "html_url": "https://github.com/gokcehan/lf/commit/0bf17dd3f0934b655fd7a0b4016e90057fea7f7c"
+        },
+        {
+          "sha": "85512625f87621ca484859f88d72ba0df0739d63",
+          "author_date": "2023-03-16T14:24:41Z",
+          "message": "add 'true/false' syntax for boolean options\n\ncc #758",
+          "html_url": "https://github.com/gokcehan/lf/commit/85512625f87621ca484859f88d72ba0df0739d63"
+        },
+        {
+          "sha": "acb5693b119ee98ff08d6549f6bd7bab2c12343c",
+          "author_date": "2023-03-16T14:35:56Z",
+          "message": "cleanup",
+          "html_url": "https://github.com/gokcehan/lf/commit/acb5693b119ee98ff08d6549f6bd7bab2c12343c"
+        },
+        {
+          "sha": "207de6a5060514206cd74ec44ed3d7926724c6d0",
+          "author_date": "2023-03-16T14:51:59Z",
+          "message": "add errors for unexpected boolean option values\n\ncc #758",
+          "html_url": "https://github.com/gokcehan/lf/commit/207de6a5060514206cd74ec44ed3d7926724c6d0"
+        },
+        {
+          "sha": "41cdd02572a0ef349482e630bfa71202e8065f05",
+          "author_date": "2023-03-16T15:11:18Z",
+          "message": "update doc\n\ncc #758",
+          "html_url": "https://github.com/gokcehan/lf/commit/41cdd02572a0ef349482e630bfa71202e8065f05"
+        },
+        {
+          "sha": "86527072993544126c8a9572b33d1bc3e4da9e1e",
+          "author_date": "2023-03-20T16:59:39Z",
+          "message": "Avoid refreshing previews for async shell commands (#1164)",
+          "html_url": "https://github.com/gokcehan/lf/commit/86527072993544126c8a9572b33d1bc3e4da9e1e"
+        },
+        {
+          "sha": "122dee1f458dd56edb3c17e01f8c1850b042e0ea",
+          "author_date": "2023-03-20T17:11:23Z",
+          "message": "Enhance rename prompt (#1162)\n\n* enhance rename ui\r\n\r\n* gofmt\r\n\r\n* default rename: cursor on dot\r\n\r\n* fix basename length\r\n\r\n* fix basename length... again\r\n\r\n---------\r\n\r\nCo-authored-by: rr <rr@arveex.eu>",
+          "html_url": "https://github.com/gokcehan/lf/commit/122dee1f458dd56edb3c17e01f8c1850b042e0ea"
+        },
+        {
+          "sha": "25288fd90bc23a5d6c8d1bffccdd0d1b6f821f85",
+          "author_date": "2023-03-20T17:11:45Z",
+          "message": "Bump actions/setup-go from 3 to 4 (#1160)\n\nBumps [actions/setup-go](https://github.com/actions/setup-go) from 3 to 4.\r\n- [Release notes](https://github.com/actions/setup-go/releases)\r\n- [Commits](https://github.com/actions/setup-go/compare/v3...v4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/setup-go\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/25288fd90bc23a5d6c8d1bffccdd0d1b6f821f85"
+        },
+        {
+          "sha": "68e2433d48ab72e85a963be22f7342cde7fcb1ff",
+          "author_date": "2023-03-21T16:49:37Z",
+          "message": "Improve preview loading message flickering (#1154)\n\n* Improve preview loading\r\n\r\n* Change timeout to 100 milliseconds\r\n\r\n* Add previewtimeout option\r\n\r\n* Start preview outside other goroutines\r\n\r\n* Revert previewtimeout option",
+          "html_url": "https://github.com/gokcehan/lf/commit/68e2433d48ab72e85a963be22f7342cde7fcb1ff"
+        },
+        {
+          "sha": "43fced28e3e25eaf3757dd02d5705f47c7c41e29",
+          "author_date": "2023-03-21T17:30:03Z",
+          "message": "Use tcell constants for drawbox (#1170)",
+          "html_url": "https://github.com/gokcehan/lf/commit/43fced28e3e25eaf3757dd02d5705f47c7c41e29"
+        },
+        {
+          "sha": "0eddc1e724a11f3abc87f8c2d4542238ef1455b8",
+          "author_date": "2023-03-25T15:25:09Z",
+          "message": "cleanup\n\ncc #845 #1169",
+          "html_url": "https://github.com/gokcehan/lf/commit/0eddc1e724a11f3abc87f8c2d4542238ef1455b8"
+        },
+        {
+          "sha": "6ffc4a4c8aef3cf84b04b44515240612865a4e4e",
+          "author_date": "2023-03-25T15:35:08Z",
+          "message": "Display zero when relativenumber is enabled (#1171)",
+          "html_url": "https://github.com/gokcehan/lf/commit/6ffc4a4c8aef3cf84b04b44515240612865a4e4e"
+        },
+        {
+          "sha": "11caeddb355be398e28f0bd1bff237669c641775",
+          "author_date": "2023-04-01T13:05:44Z",
+          "message": "Support custom line number colors (#1177)\n\n* Support custom line number colors\r\n\r\n* Move eval case",
+          "html_url": "https://github.com/gokcehan/lf/commit/11caeddb355be398e28f0bd1bff237669c641775"
+        },
+        {
+          "sha": "70171adf400dfba6c2736ec41ffa525aea7f57d9",
+          "author_date": "2023-04-01T16:24:55Z",
+          "message": "Fix infinite loop in listMatches (#1183)\n\nThis fixes an issue where listMatches could get stuck in an infinite\r\nloop if one of the matches was longer than the window width.\r\n\r\nFixes #1090",
+          "html_url": "https://github.com/gokcehan/lf/commit/70171adf400dfba6c2736ec41ffa525aea7f57d9"
+        },
+        {
+          "sha": "f563263addd7d62bf410291c9f16095a0e34345c",
+          "author_date": "2023-04-01T16:25:55Z",
+          "message": "Completion: always insert longest match (#1184)\n\nPreviously, longest common match completion would only apply if there\r\nwas a word before the cursor.\r\n\r\nSuggested in #1090",
+          "html_url": "https://github.com/gokcehan/lf/commit/f563263addd7d62bf410291c9f16095a0e34345c"
+        },
+        {
+          "sha": "3ae67fc3612e629121746844f86f42ed15b3fff3",
+          "author_date": "2023-04-01T16:40:28Z",
+          "message": "Export count as a variable when running commands (#1187)",
+          "html_url": "https://github.com/gokcehan/lf/commit/3ae67fc3612e629121746844f86f42ed15b3fff3"
+        },
+        {
+          "sha": "27ab67aab7ab2d91599c7f4c060d0379dc959b85",
+          "author_date": "2023-04-01T16:49:47Z",
+          "message": "Make the `:doc` command work even if `lf` is not in the PATH, add `lf` environment variable (#1176)\n\n* Export a `$lf` environment variable with path to lf binary\r\n\r\nIf Go fails to find a path to the lf binary, `$lf` is set to the string `lf` so\r\nthat running `$lf` in scripts gives a reasonable error message.\r\n\r\n* Make the `:doc` command work even if lf is not in the PATH\r\n\r\nPreviously, `:doc` executed `lf -doc`. Now, it executed `$lf -doc` or `%lf%\r\n-doc`.\r\n\r\nBefore this change, `:doc` did not work if `lf` is not in the PATH. This is\r\nlikely to happen to new users who are trying out `lf` and need docs the most.\r\n\r\nMoreover, if you made some changes to the docs and ran `lf` with `go run .`,\r\n`:doc` would return the docs for the version of `lf` in the PATH instead of\r\nwhat is expected.",
+          "html_url": "https://github.com/gokcehan/lf/commit/27ab67aab7ab2d91599c7f4c060d0379dc959b85"
+        },
+        {
+          "sha": "83af3e1cb053475911d1a9ae244e6f02767f1420",
+          "author_date": "2023-04-02T16:08:51Z",
+          "message": "add file operations to non-features in readme\n\nclose #887\n\ncc #1179",
+          "html_url": "https://github.com/gokcehan/lf/commit/83af3e1cb053475911d1a9ae244e6f02767f1420"
+        },
+        {
+          "sha": "27d316c006f66e493a02417d383e0d00c2d4dad6",
+          "author_date": "2023-04-08T19:35:39Z",
+          "message": "lfrc.example: Add mkdir, add \"show execution result\" (#1188)\n\nShow how to map `a` to mkdir. `` ` `` maps to \"show execution\r\nresult\". Norton Commander & its successors map it to `<c-o>`,\r\nbut I think that's better for something opening-relatred.\r\n\r\nWhenever a `$` command gives an unexpected error, I want to see\r\nwhat happened. There are many ways to do so, but the one I added\r\nhere seems the simplest and it took me a while to think of it.\r\nWe could also have an option to have `$` commands pause like `!`\r\ncommands when there's an error.",
+          "html_url": "https://github.com/gokcehan/lf/commit/27d316c006f66e493a02417d383e0d00c2d4dad6"
+        },
+        {
+          "sha": "b5c83dbf7a61b9d052a596110aece14f68507b65",
+          "author_date": "2023-04-08T20:40:16Z",
+          "message": "Add support for moving to a specific line (#1196)\n\n* Add support for moving to a specific line\r\n\r\n* Update documentation",
+          "html_url": "https://github.com/gokcehan/lf/commit/b5c83dbf7a61b9d052a596110aece14f68507b65"
+        },
+        {
+          "sha": "bb45d15b83b60b4d04c8ca6b982d16191108228b",
+          "author_date": "2023-04-08T20:40:31Z",
+          "message": "Bump golang.org/x/term from 0.6.0 to 0.7.0 (#1198)\n\nBumps [golang.org/x/term](https://github.com/golang/term) from 0.6.0 to 0.7.0.\r\n- [Release notes](https://github.com/golang/term/releases)\r\n- [Commits](https://github.com/golang/term/compare/v0.6.0...v0.7.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/term\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/bb45d15b83b60b4d04c8ca6b982d16191108228b"
+        },
+        {
+          "sha": "1e1486fc024e04bd8adbcf3c9627d344f83f2030",
+          "author_date": "2023-04-08T21:51:52Z",
+          "message": "Make `:maps` work on Windows and add `:cmaps`. (#1201)\n\n* Make `:maps` work on Windows\r\n\r\nThis makes the `:maps` command from #1146 work on Windows.\r\n\r\nThis (as well as `:maps` itself) is based on @jackielli's work in #1146 and\r\n#1152.\r\n\r\nI intend to refactor the code in this or a separate PR, but I thought I'd\r\nsubmit the critical and simple bit first.\r\n\r\n* Add `:cmaps` command\r\n\r\nAfter the naming scheme from #1146, it would seem weird to not have a :cmaps\r\ncommand. This could help with issues like #876.",
+          "html_url": "https://github.com/gokcehan/lf/commit/1e1486fc024e04bd8adbcf3c9627d344f83f2030"
+        },
+        {
+          "sha": "28b550a7ec963b8daccbbcb1cd851ede6af67e83",
+          "author_date": "2023-04-08T22:44:09Z",
+          "message": "Use $VISUAL for the `e` command instead of $EDITOR (#1197)\n\n* Use $VISUAL for the `e` command instead of $EDITOR\r\n\r\n* update `os_windows.go` and `doc.go`",
+          "html_url": "https://github.com/gokcehan/lf/commit/28b550a7ec963b8daccbbcb1cd851ede6af67e83"
+        },
+        {
+          "sha": "734f11d61b14a60e088cb6707637ca3413f36903",
+          "author_date": "2023-04-09T11:23:43Z",
+          "message": "Simplify edge calculation when scrolling down (#1194)\n\n* Simplify edge calculation when scrolling down\r\n\r\n* Alternate implementation\r\n\r\n* Alternate implementation #2",
+          "html_url": "https://github.com/gokcehan/lf/commit/734f11d61b14a60e088cb6707637ca3413f36903"
+        },
+        {
+          "sha": "821b2fcd5193004fe467480dce43c1bc257ef24a",
+          "author_date": "2023-04-09T11:32:40Z",
+          "message": "Fix crash when sorting files in a directory (#1204)",
+          "html_url": "https://github.com/gokcehan/lf/commit/821b2fcd5193004fe467480dce43c1bc257ef24a"
+        },
+        {
+          "sha": "eb84772032c16e1e4142f11940125ccdafa12809",
+          "author_date": "2023-04-09T11:50:34Z",
+          "message": "Customizable statusline, df (#1168)\n\n* opts statusline, df\r\n\r\n* renamed infostat -> ruler; removed os_lin, os_bsd\r\n\r\n* removed vscode\r\n\r\n---------\r\n\r\nCo-authored-by: rr <rr@arveex.eu>",
+          "html_url": "https://github.com/gokcehan/lf/commit/eb84772032c16e1e4142f11940125ccdafa12809"
+        },
+        {
+          "sha": "c1583032aad8c757b401a89f6234e2d55cf5dafc",
+          "author_date": "2023-04-09T11:54:41Z",
+          "message": "update doc\n\ncc #1168",
+          "html_url": "https://github.com/gokcehan/lf/commit/c1583032aad8c757b401a89f6234e2d55cf5dafc"
+        },
+        {
+          "sha": "55ad40ac0ad11c979ed65e1a7406687fe9738d5c",
+          "author_date": "2023-04-09T11:58:11Z",
+          "message": "add 'ruler' to completion\n\ncc #1168",
+          "html_url": "https://github.com/gokcehan/lf/commit/55ad40ac0ad11c979ed65e1a7406687fe9738d5c"
+        },
+        {
+          "sha": "c0dfb3c4f58a7261c46b4999de82e7bac9566152",
+          "author_date": "2023-04-15T16:51:51Z",
+          "message": "Fix statusbar spacing (#1205)\n\n* Fix statusbar spacing\r\n\r\n* Fix ruler option check",
+          "html_url": "https://github.com/gokcehan/lf/commit/c0dfb3c4f58a7261c46b4999de82e7bac9566152"
+        },
+        {
+          "sha": "4dbc15e4b00f2981351e7574e54fdff61d7e7edb",
+          "author_date": "2023-04-15T16:52:37Z",
+          "message": "Validate `selmode` setting (#1206)",
+          "html_url": "https://github.com/gokcehan/lf/commit/4dbc15e4b00f2981351e7574e54fdff61d7e7edb"
+        },
+        {
+          "sha": "2c86577b953d91ba8190843b665e5ce18d95db04",
+          "author_date": "2023-04-30T13:40:52Z",
+          "message": "update doc\n\ncc #1176",
+          "html_url": "https://github.com/gokcehan/lf/commit/2c86577b953d91ba8190843b665e5ce18d95db04"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r30",
       "previous_release": "r29",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f04401ba4d43f21a084e603a52cf20f80b0c437d",
+          "author_date": "2023-04-30T19:10:15Z",
+          "message": "build diskfree on all platforms\n\ncc #1168",
+          "html_url": "https://github.com/gokcehan/lf/commit/f04401ba4d43f21a084e603a52cf20f80b0c437d"
+        },
+        {
+          "sha": "35990bed12797644288512577c70daecc7a2e6c9",
+          "author_date": "2023-05-13T10:58:03Z",
+          "message": "Prevent scrolling to bottom when selecting files (#1222)\n\n* Prevent scrolling to bottom when selecting files\r\n\r\n* Use nav.currDir()",
+          "html_url": "https://github.com/gokcehan/lf/commit/35990bed12797644288512577c70daecc7a2e6c9"
+        },
+        {
+          "sha": "8f630e0cab3fbfc3ba316eb9a63fb7f678857e7c",
+          "author_date": "2023-05-13T11:19:50Z",
+          "message": "Separate filter from selections in the ui ruler (#1223)",
+          "html_url": "https://github.com/gokcehan/lf/commit/8f630e0cab3fbfc3ba316eb9a63fb7f678857e7c"
+        },
+        {
+          "sha": "f036e07a5c54979cb1e52aae44f0c5c9fa11fe3c",
+          "author_date": "2023-05-13T13:18:31Z",
+          "message": "Bump golang.org/x/sys from 0.7.0 to 0.8.0 (#1224)\n\nBumps [golang.org/x/sys](https://github.com/golang/sys) from 0.7.0 to 0.8.0.\r\n- [Commits](https://github.com/golang/sys/compare/v0.7.0...v0.8.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/sys\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/f036e07a5c54979cb1e52aae44f0c5c9fa11fe3c"
+        },
+        {
+          "sha": "db46fb2b37cc625ca269c9354b7a69609130898b",
+          "author_date": "2023-05-13T13:28:33Z",
+          "message": "Bump golang.org/x/term from 0.7.0 to 0.8.0 (#1225)\n\nBumps [golang.org/x/term](https://github.com/golang/term) from 0.7.0 to 0.8.0.\r\n- [Commits](https://github.com/golang/term/compare/v0.7.0...v0.8.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/term\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/gokcehan/lf/commit/db46fb2b37cc625ca269c9354b7a69609130898b"
+        },
+        {
+          "sha": "2a5c54c81ab2292861e98a8d47cb46212804211c",
+          "author_date": "2023-05-13T13:30:19Z",
+          "message": "Minor cleanup of reflect code (#1229)",
+          "html_url": "https://github.com/gokcehan/lf/commit/2a5c54c81ab2292861e98a8d47cb46212804211c"
+        },
+        {
+          "sha": "24e224ca65c0e2f7b80cb0b33606f1de14bf9264",
+          "author_date": "2023-05-13T13:43:08Z",
+          "message": "Add `jumps` command for displaying the jump list (#1233)\n\n* Add `jumps` command for displaying the jump list\r\n\r\n* Mention jump count in documentation\r\n\r\n* Reverse order",
+          "html_url": "https://github.com/gokcehan/lf/commit/24e224ca65c0e2f7b80cb0b33606f1de14bf9264"
+        },
+        {
+          "sha": "88b3c999afb7cab8e8ca61da3c9063f0cc348c10",
+          "author_date": "2023-05-13T13:58:21Z",
+          "message": "Fix count when parsing `bottom` command (#1240)\n\n* Fix count when parsing `bottom` command\r\n\r\n* Revert \"Fix count when parsing `bottom` command\"\r\n\r\nThis reverts commit a0b6bb5a13648760c3a69d94030e5b1b63b9db14.\r\n\r\n* Alternate implementation\r\n\r\n* Add comment",
+          "html_url": "https://github.com/gokcehan/lf/commit/88b3c999afb7cab8e8ca61da3c9063f0cc348c10"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "r31",

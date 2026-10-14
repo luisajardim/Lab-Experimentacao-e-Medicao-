@@ -1253,8 +1253,459 @@
     {
       "release": "backend/v0.10.0",
       "previous_release": "backend/v0.9.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f116cb465ade841993be0e3817effc22d2635db1",
+          "author_date": "2023-11-27T15:36:19Z",
+          "message": "feat: add support for zh-CN locale in passcode mails",
+          "html_url": "https://github.com/teamhanko/hanko/commit/f116cb465ade841993be0e3817effc22d2635db1"
+        },
+        {
+          "sha": "d9ba31ad2b6a369a64c0d70f99a2f6f016f830a9",
+          "author_date": "2023-11-28T11:23:48Z",
+          "message": "chore(deps): bump golang.org/x/crypto from 0.15.0 to 0.16.0 in /backend\n\nBumps [golang.org/x/crypto](https://github.com/golang/crypto) from 0.15.0 to 0.16.0.\r\n- [Commits](https://github.com/golang/crypto/compare/v0.15.0...v0.16.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/crypto\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/d9ba31ad2b6a369a64c0d70f99a2f6f016f830a9"
+        },
+        {
+          "sha": "376f7e7ecd701db7127ac98aea93e41a9bbef187",
+          "author_date": "2023-11-28T11:32:02Z",
+          "message": "chore(deps): bump golang.org/x/oauth2 from 0.14.0 to 0.15.0 in /backend\n\nBumps [golang.org/x/oauth2](https://github.com/golang/oauth2) from 0.14.0 to 0.15.0.\r\n- [Commits](https://github.com/golang/oauth2/compare/v0.14.0...v0.15.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/oauth2\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/376f7e7ecd701db7127ac98aea93e41a9bbef187"
+        },
+        {
+          "sha": "ab9c64ba786b6b02ab57bee95634825a468cd909",
+          "author_date": "2023-11-28T11:32:45Z",
+          "message": "chore(deps): bump github.com/brianvoe/gofakeit/v6 in /backend\n\nBumps [github.com/brianvoe/gofakeit/v6](https://github.com/brianvoe/gofakeit) from 6.24.0 to 6.25.0.\r\n- [Release notes](https://github.com/brianvoe/gofakeit/releases)\r\n- [Commits](https://github.com/brianvoe/gofakeit/compare/v6.24.0...v6.25.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/brianvoe/gofakeit/v6\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/ab9c64ba786b6b02ab57bee95634825a468cd909"
+        },
+        {
+          "sha": "872026d75dd681821af087f0934951dc63cd986c",
+          "author_date": "2023-11-29T11:52:08Z",
+          "message": "feat(i18n): add italian translations",
+          "html_url": "https://github.com/teamhanko/hanko/commit/872026d75dd681821af087f0934951dc63cd986c"
+        },
+        {
+          "sha": "3df6dfc5d627c39d423e1ca6c3c87677f8574e79",
+          "author_date": "2023-12-04T10:41:11Z",
+          "message": "Fixed typo (#1238)\n\n* Fixed typo\r\n\r\n* Update .github/ISSUE_TEMPLATE/config.yml\r\n\r\nCo-authored-by: bjoern-m <56024829+bjoern-m@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: bjoern-m <56024829+bjoern-m@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/3df6dfc5d627c39d423e1ca6c3c87677f8574e79"
+        },
+        {
+          "sha": "fbae8f6c87be285b2322090038321393acaf77aa",
+          "author_date": "2023-12-04T11:08:32Z",
+          "message": "chore(deps): bump github.com/go-webauthn/webauthn in /backend\n\nBumps [github.com/go-webauthn/webauthn](https://github.com/go-webauthn/webauthn) from 0.9.1 to 0.9.2.\r\n- [Release notes](https://github.com/go-webauthn/webauthn/releases)\r\n- [Commits](https://github.com/go-webauthn/webauthn/compare/v0.9.1...v0.9.2)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/go-webauthn/webauthn\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/fbae8f6c87be285b2322090038321393acaf77aa"
+        },
+        {
+          "sha": "c1aae2392f6f62c77a8c040ab0736260b15bd5ee",
+          "author_date": "2023-12-07T17:00:57Z",
+          "message": "chore(deps): bump github.com/brianvoe/gofakeit/v6 in /backend \n\nBumps [github.com/brianvoe/gofakeit/v6](https://github.com/brianvoe/gofakeit) from 6.25.0 to 6.26.0.\r\n- [Release notes](https://github.com/brianvoe/gofakeit/releases)\r\n- [Commits](https://github.com/brianvoe/gofakeit/compare/v6.25.0...v6.26.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/brianvoe/gofakeit/v6\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/c1aae2392f6f62c77a8c040ab0736260b15bd5ee"
+        },
+        {
+          "sha": "80df90ba8b886250ddb29d0ce4f7827ffa246fff",
+          "author_date": "2023-12-07T17:03:01Z",
+          "message": "chore(deps): bump github.com/nicksnyder/go-i18n/v2 in /backend\n\nBumps [github.com/nicksnyder/go-i18n/v2](https://github.com/nicksnyder/go-i18n) from 2.2.2 to 2.3.0.\r\n- [Release notes](https://github.com/nicksnyder/go-i18n/releases)\r\n- [Changelog](https://github.com/nicksnyder/go-i18n/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/nicksnyder/go-i18n/compare/v2.2.2...v2.3.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/nicksnyder/go-i18n/v2\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/80df90ba8b886250ddb29d0ce4f7827ffa246fff"
+        },
+        {
+          "sha": "720565b05020438c3ca5434d1590862cd2af9730",
+          "author_date": "2023-12-07T17:16:32Z",
+          "message": "chore(deps): bump github.com/lestrrat-go/jwx/v2 in /backend\n\nBumps [github.com/lestrrat-go/jwx/v2](https://github.com/lestrrat-go/jwx) from 2.0.17 to 2.0.18.\r\n- [Release notes](https://github.com/lestrrat-go/jwx/releases)\r\n- [Changelog](https://github.com/lestrrat-go/jwx/blob/develop/v2/Changes)\r\n- [Commits](https://github.com/lestrrat-go/jwx/compare/v2.0.17...v2.0.18)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/lestrrat-go/jwx/v2\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/720565b05020438c3ca5434d1590862cd2af9730"
+        },
+        {
+          "sha": "6da6f0eee5bf560f5ca6707f7cebf923851c251f",
+          "author_date": "2023-12-07T17:18:54Z",
+          "message": "chore(deps-dev): bump vite from 4.4.9 to 4.4.12 in /frontend\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 4.4.9 to 4.4.12.\r\n- [Release notes](https://github.com/vitejs/vite/releases)\r\n- [Changelog](https://github.com/vitejs/vite/blob/v4.4.12/packages/vite/CHANGELOG.md)\r\n- [Commits](https://github.com/vitejs/vite/commits/v4.4.12/packages/vite)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: vite\r\n  dependency-type: direct:development\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/6da6f0eee5bf560f5ca6707f7cebf923851c251f"
+        },
+        {
+          "sha": "1af3958afb108fbaab205d9cabf5e3da47b9dec3",
+          "author_date": "2023-12-07T17:19:32Z",
+          "message": "chore(deps): bump github.com/go-webauthn/webauthn in /backend\n\nBumps [github.com/go-webauthn/webauthn](https://github.com/go-webauthn/webauthn) from 0.9.2 to 0.9.4.\r\n- [Release notes](https://github.com/go-webauthn/webauthn/releases)\r\n- [Commits](https://github.com/go-webauthn/webauthn/compare/v0.9.2...v0.9.4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/go-webauthn/webauthn\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/1af3958afb108fbaab205d9cabf5e3da47b9dec3"
+        },
+        {
+          "sha": "0ea2b322ca2511b6cad976803045eb6abce4f929",
+          "author_date": "2023-12-11T10:02:09Z",
+          "message": "fix: set cookie secure flag\n\nSafari does not allow setting secure cookies on localhost.\r\nThe secure flag is currently set based on the protocol of the\r\nAPI only. With these changes, the protocol of the current\r\nbrowser location is also checked, i.e. only if both API and\r\ncurrent location use HTTPS the cookie has the secure flag set\r\nto true.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/0ea2b322ca2511b6cad976803045eb6abce4f929"
+        },
+        {
+          "sha": "0b614bd25ade4c403de84abc38f2a34b5e476fd6",
+          "author_date": "2023-12-12T21:26:44Z",
+          "message": "chore(deps): bump github.com/google/uuid from 1.4.0 to 1.5.0 in /backend\n\nBumps [github.com/google/uuid](https://github.com/google/uuid) from 1.4.0 to 1.5.0.\r\n- [Release notes](https://github.com/google/uuid/releases)\r\n- [Changelog](https://github.com/google/uuid/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/google/uuid/compare/v1.4.0...v1.5.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/google/uuid\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/0b614bd25ade4c403de84abc38f2a34b5e476fd6"
+        },
+        {
+          "sha": "f00ba2d105962984284e699edd967acd921ed450",
+          "author_date": "2023-12-13T20:01:33Z",
+          "message": "chore(deps): bump github.com/brianvoe/gofakeit/v6 in /backend\n\nBumps [github.com/brianvoe/gofakeit/v6](https://github.com/brianvoe/gofakeit) from 6.26.0 to 6.26.2.\r\n- [Release notes](https://github.com/brianvoe/gofakeit/releases)\r\n- [Commits](https://github.com/brianvoe/gofakeit/compare/v6.26.0...v6.26.2)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/brianvoe/gofakeit/v6\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/f00ba2d105962984284e699edd967acd921ed450"
+        },
+        {
+          "sha": "5481a7b81bab9ecee345ee24b40972b12272f54a",
+          "author_date": "2023-12-14T19:50:14Z",
+          "message": "chore(deps): bump github.com/brianvoe/gofakeit/v6 in /backend \n\nBumps [github.com/brianvoe/gofakeit/v6](https://github.com/brianvoe/gofakeit) from 6.26.2 to 6.26.3.\r\n- [Release notes](https://github.com/brianvoe/gofakeit/releases)\r\n- [Commits](https://github.com/brianvoe/gofakeit/compare/v6.26.2...v6.26.3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/brianvoe/gofakeit/v6\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/5481a7b81bab9ecee345ee24b40972b12272f54a"
+        },
+        {
+          "sha": "8adbfb9a630033c1f2b497856821605c98c0a1f6",
+          "author_date": "2024-01-10T15:56:21Z",
+          "message": "chore(deps): bump follow-redirects from 1.15.2 to 1.15.4 in /frontend\n\nBumps [follow-redirects](https://github.com/follow-redirects/follow-redirects) from 1.15.2 to 1.15.4.\r\n- [Release notes](https://github.com/follow-redirects/follow-redirects/releases)\r\n- [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.15.2...v1.15.4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: follow-redirects\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/8adbfb9a630033c1f2b497856821605c98c0a1f6"
+        },
+        {
+          "sha": "ec98d99ebdfa7fb7c2dafdfe003cde3a76de020f",
+          "author_date": "2024-01-10T15:57:36Z",
+          "message": "chore(deps): bump follow-redirects from 1.15.1 to 1.15.4 in /docs\n\nBumps [follow-redirects](https://github.com/follow-redirects/follow-redirects) from 1.15.1 to 1.15.4.\r\n- [Release notes](https://github.com/follow-redirects/follow-redirects/releases)\r\n- [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.15.1...v1.15.4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: follow-redirects\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/ec98d99ebdfa7fb7c2dafdfe003cde3a76de020f"
+        },
+        {
+          "sha": "4601ef8b1c57d32a491e0b4727a088f6bffc2dbb",
+          "author_date": "2024-01-10T15:58:55Z",
+          "message": "chore(deps): bump github.com/lestrrat-go/jwx/v2 in /backend\n\nBumps [github.com/lestrrat-go/jwx/v2](https://github.com/lestrrat-go/jwx) from 2.0.18 to 2.0.19.\r\n- [Release notes](https://github.com/lestrrat-go/jwx/releases)\r\n- [Changelog](https://github.com/lestrrat-go/jwx/blob/develop/v2/Changes)\r\n- [Commits](https://github.com/lestrrat-go/jwx/compare/v2.0.18...v2.0.19)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/lestrrat-go/jwx/v2\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/4601ef8b1c57d32a491e0b4727a088f6bffc2dbb"
+        },
+        {
+          "sha": "1bf0265c39384662ed49d436a168c5b785234069",
+          "author_date": "2024-01-10T16:17:16Z",
+          "message": "chore(deps): bump golang.org/x/oauth2 from 0.15.0 to 0.16.0 in /backend\n\nBumps [golang.org/x/oauth2](https://github.com/golang/oauth2) from 0.15.0 to 0.16.0.\r\n- [Commits](https://github.com/golang/oauth2/compare/v0.15.0...v0.16.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/oauth2\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/1bf0265c39384662ed49d436a168c5b785234069"
+        },
+        {
+          "sha": "368006951cb45ee732a3cadeb2afc86c80f33f83",
+          "author_date": "2024-01-10T16:21:42Z",
+          "message": "chore(deps): bump golang.org/x/crypto in /quickstart\n\nBumps [golang.org/x/crypto](https://github.com/golang/crypto) from 0.14.0 to 0.17.0.\r\n- [Commits](https://github.com/golang/crypto/compare/v0.14.0...v0.17.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/crypto\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/368006951cb45ee732a3cadeb2afc86c80f33f83"
+        },
+        {
+          "sha": "bf3966541bb530cec457ccaaf7db9618b63357bf",
+          "author_date": "2024-01-10T16:25:14Z",
+          "message": "chore(deps): bump github.com/labstack/echo/v4 in /backend\n\nBumps [github.com/labstack/echo/v4](https://github.com/labstack/echo) from 4.11.3 to 4.11.4.\r\n- [Release notes](https://github.com/labstack/echo/releases)\r\n- [Changelog](https://github.com/labstack/echo/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/labstack/echo/compare/v4.11.3...v4.11.4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/labstack/echo/v4\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/bf3966541bb530cec457ccaaf7db9618b63357bf"
+        },
+        {
+          "sha": "61d6d5c30dbd1d81877871d14a99e130534dd61e",
+          "author_date": "2024-01-10T16:26:01Z",
+          "message": "chore(deps): bump github.com/go-webauthn/webauthn in /backend\n\nBumps [github.com/go-webauthn/webauthn](https://github.com/go-webauthn/webauthn) from 0.9.4 to 0.10.0.\r\n- [Release notes](https://github.com/go-webauthn/webauthn/releases)\r\n- [Commits](https://github.com/go-webauthn/webauthn/compare/v0.9.4...v0.10.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/go-webauthn/webauthn\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/61d6d5c30dbd1d81877871d14a99e130534dd61e"
+        },
+        {
+          "sha": "8ddaf05715c4b270f7460c6a90a52be342f18a83",
+          "author_date": "2024-01-10T20:02:17Z",
+          "message": "chore(deps): bump github.com/brianvoe/gofakeit/v6 in /backend\n\nBumps [github.com/brianvoe/gofakeit/v6](https://github.com/brianvoe/gofakeit) from 6.26.3 to 6.26.4.\r\n- [Release notes](https://github.com/brianvoe/gofakeit/releases)\r\n- [Commits](https://github.com/brianvoe/gofakeit/compare/v6.26.3...v6.26.4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/brianvoe/gofakeit/v6\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/8ddaf05715c4b270f7460c6a90a52be342f18a83"
+        },
+        {
+          "sha": "45cbd743145cfa1382bc4eaf1378189f4652ce2b",
+          "author_date": "2024-01-12T13:44:08Z",
+          "message": "feat(webhooks): add webhooks\n\n* add webhooks settings to config\n* add webhooks entity for database\n* add endpoints for webhooks\n* add worker for asynchronously executing webhooks\n* add trigger for events to user change/create/delete users/emails\n\nCloses #692",
+          "html_url": "https://github.com/teamhanko/hanko/commit/45cbd743145cfa1382bc4eaf1378189f4652ce2b"
+        },
+        {
+          "sha": "3cafb66754736fe5eea400b4dd56a303ac6c36ca",
+          "author_date": "2024-01-17T10:53:35Z",
+          "message": "feat(webhooks): add tests and fix review issues\n\n* add tests for webhooks\n* improve error handling when context does not contain webhook manager\n* add logging to worker and fix nesting error overwrite\n* remove enable and disable methods in favor for update method\n* move data in jwt from subject claim to custom `data` claim\n* add event in jwt to custom `evt` claim\n* change webhook trigger to only fire once per hook (was once per subscribed event in hook before)\n\nCloses #692",
+          "html_url": "https://github.com/teamhanko/hanko/commit/3cafb66754736fe5eea400b4dd56a303ac6c36ca"
+        },
+        {
+          "sha": "fab3bb4864e9d92dd94078ad5e2ad203a2d8f5ec",
+          "author_date": "2024-01-17T14:32:13Z",
+          "message": "fix(webhooks): add event param to testManager\n\nCloses #692",
+          "html_url": "https://github.com/teamhanko/hanko/commit/fab3bb4864e9d92dd94078ad5e2ad203a2d8f5ec"
+        },
+        {
+          "sha": "917e66660cb4d42c40c82891202bd7b1f7fd9952",
+          "author_date": "2024-01-17T14:53:56Z",
+          "message": "fix(webhooks): add removed ID to CreateUserResponse\n\nCloses #692",
+          "html_url": "https://github.com/teamhanko/hanko/commit/917e66660cb4d42c40c82891202bd7b1f7fd9952"
+        },
+        {
+          "sha": "292585d633a2f646575290a3bbe3b4cb4d1923b9",
+          "author_date": "2024-01-18T17:15:37Z",
+          "message": "chore(deps): bump github.com/brianvoe/gofakeit/v6 in /backend\n\nBumps [github.com/brianvoe/gofakeit/v6](https://github.com/brianvoe/gofakeit) from 6.26.4 to 6.27.0.\r\n- [Release notes](https://github.com/brianvoe/gofakeit/releases)\r\n- [Commits](https://github.com/brianvoe/gofakeit/compare/v6.26.4...v6.27.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/brianvoe/gofakeit/v6\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/292585d633a2f646575290a3bbe3b4cb4d1923b9"
+        },
+        {
+          "sha": "39cb070481ed8e468690ee96684f6eb3ff4bfa4c",
+          "author_date": "2024-01-18T17:25:48Z",
+          "message": "chore(deps): bump github.com/go-playground/validator/v10 in /backend\n\nBumps [github.com/go-playground/validator/v10](https://github.com/go-playground/validator) from 10.16.0 to 10.17.0.\r\n- [Release notes](https://github.com/go-playground/validator/releases)\r\n- [Commits](https://github.com/go-playground/validator/compare/v10.16.0...v10.17.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/go-playground/validator/v10\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/39cb070481ed8e468690ee96684f6eb3ff4bfa4c"
+        },
+        {
+          "sha": "85a5383f67122fbec9c4ff73a8ef50c41d2b5a8d",
+          "author_date": "2024-01-19T13:35:08Z",
+          "message": "feat(admin api): add user update endpoints\n\n* implement endpoint for adding an email\n* implement endpoint for changing an email to primary\n* implement endpoint for removing an email\n* fix some bugs and oversights in webhooks\n* update config json schema\n* update OpenAPI file for admin API\n\nCloses #1051\nFixes #692",
+          "html_url": "https://github.com/teamhanko/hanko/commit/85a5383f67122fbec9c4ff73a8ef50c41d2b5a8d"
+        },
+        {
+          "sha": "8139cc22b752519369af435f377f86502f87ac82",
+          "author_date": "2024-01-22T10:00:55Z",
+          "message": "fix(admin api): sync with docs spec",
+          "html_url": "https://github.com/teamhanko/hanko/commit/8139cc22b752519369af435f377f86502f87ac82"
+        },
+        {
+          "sha": "0917a240f35d96153ff4c6ef6cdc4fd9afe51feb",
+          "author_date": "2024-01-23T13:55:58Z",
+          "message": "chore(deps): bump github.com/brianvoe/gofakeit/v6 in /backend\n\nBumps [github.com/brianvoe/gofakeit/v6](https://github.com/brianvoe/gofakeit) from 6.27.0 to 6.28.0.\r\n- [Release notes](https://github.com/brianvoe/gofakeit/releases)\r\n- [Commits](https://github.com/brianvoe/gofakeit/compare/v6.27.0...v6.28.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/brianvoe/gofakeit/v6\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/0917a240f35d96153ff4c6ef6cdc4fd9afe51feb"
+        },
+        {
+          "sha": "bdd6eb3ff982d1554ffd653b2e80777417860470",
+          "author_date": "2024-01-24T14:23:55Z",
+          "message": "chore(deps): bump github.com/google/uuid from 1.5.0 to 1.6.0 in /backend\n\nBumps [github.com/google/uuid](https://github.com/google/uuid) from 1.5.0 to 1.6.0.\r\n- [Release notes](https://github.com/google/uuid/releases)\r\n- [Changelog](https://github.com/google/uuid/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/google/uuid/compare/v1.5.0...v1.6.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/google/uuid\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/bdd6eb3ff982d1554ffd653b2e80777417860470"
+        },
+        {
+          "sha": "28cd7ba2439c84d32c259f7592a300f118bca024",
+          "author_date": "2024-01-24T14:30:12Z",
+          "message": "chore(deps): bump github.com/lestrrat-go/jwx/v2 in /quickstart\n\nBumps [github.com/lestrrat-go/jwx/v2](https://github.com/lestrrat-go/jwx) from 2.0.11 to 2.0.19.\r\n- [Release notes](https://github.com/lestrrat-go/jwx/releases)\r\n- [Changelog](https://github.com/lestrrat-go/jwx/blob/develop/v2/Changes)\r\n- [Commits](https://github.com/lestrrat-go/jwx/compare/v2.0.11...v2.0.19)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/lestrrat-go/jwx/v2\r\n  dependency-type: direct:production\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/28cd7ba2439c84d32c259f7592a300f118bca024"
+        },
+        {
+          "sha": "c9994bdc3a161b9446b0dd0adf70208012ab8795",
+          "author_date": "2024-01-25T11:01:00Z",
+          "message": "fix(review): fix review findings\n\n* admin api: make email primary when user has no emails\n* utils: move get updated user and webhook trigger to utils to reduce duplicated code\n* events: remove unused user and email event - Check is replaced with string variant\n* remove unused dtos\n* fix tests after changes\n* webhook tests: switch to test.Suite instead of TestPersister -> added deprecation annotation to test.NewPersister\n* Email Verification: Fix trigger of webhook when email verification is enabled and a email is created but not validated\n\nCloses: #692, #1051",
+          "html_url": "https://github.com/teamhanko/hanko/commit/c9994bdc3a161b9446b0dd0adf70208012ab8795"
+        },
+        {
+          "sha": "73bf2a4b1e8614e836606e5cd43dd944f8ddbeca",
+          "author_date": "2024-01-25T12:32:34Z",
+          "message": "fix(tests): fix timing issues\n\n* move now BEFORE updating\n* add Expiration Duration to webhook\n\nRelated to: #692",
+          "html_url": "https://github.com/teamhanko/hanko/commit/73bf2a4b1e8614e836606e5cd43dd944f8ddbeca"
+        },
+        {
+          "sha": "1d27a39a492cfa2314a4e0abb091296d44def374",
+          "author_date": "2024-01-25T15:18:52Z",
+          "message": "feat(webhooks): add disable option for time expiration\n\n* readd User and Email event\n* add config option for disabling expiration => default value expiration is disabled\n\nRelated to: #692",
+          "html_url": "https://github.com/teamhanko/hanko/commit/1d27a39a492cfa2314a4e0abb091296d44def374"
+        },
+        {
+          "sha": "e62becbd3ce1de3df56abc6a5f42c42058f05748",
+          "author_date": "2024-01-25T15:31:53Z",
+          "message": "Merge branch 'main' into feat/692-webhooks",
+          "html_url": "https://github.com/teamhanko/hanko/commit/e62becbd3ce1de3df56abc6a5f42c42058f05748"
+        },
+        {
+          "sha": "ce7a6f1971d11a87aa02b922ee8ffeeeafd9f1b3",
+          "author_date": "2024-01-23T11:14:48Z",
+          "message": "improve(passkeys): improve passkey naming\n\n* add cmd flag for loading aaguid-map file\n* add aaguid mapper for better passkey naming\n* bundle aaguid file in docker container\n* refactor file loading to reuse in multiple occasions\n\nCloses: #1027",
+          "html_url": "https://github.com/teamhanko/hanko/commit/ce7a6f1971d11a87aa02b922ee8ffeeeafd9f1b3"
+        },
+        {
+          "sha": "fc55df9a8b47b8acb33212eaf56b85dc218da43d",
+          "author_date": "2024-01-24T11:51:57Z",
+          "message": "fix(tests): fix missing constructor extension for aaguid map\n\nCloses: #1027",
+          "html_url": "https://github.com/teamhanko/hanko/commit/fc55df9a8b47b8acb33212eaf56b85dc218da43d"
+        },
+        {
+          "sha": "097569ad8b2b30a25ba6f9053316d66d3617db0f",
+          "author_date": "2024-01-24T14:25:26Z",
+          "message": "chore(passkeys): change naming of aaguid map to authenticator metadata\n\nCloses: #1027",
+          "html_url": "https://github.com/teamhanko/hanko/commit/097569ad8b2b30a25ba6f9053316d66d3617db0f"
+        },
+        {
+          "sha": "5345d4cd33b7ed3e4f3c7e1a2283e10d70919908",
+          "author_date": "2024-01-29T10:16:06Z",
+          "message": "chore(aaguid): switch to embedded file instead of docker file wget for agguid json",
+          "html_url": "https://github.com/teamhanko/hanko/commit/5345d4cd33b7ed3e4f3c7e1a2283e10d70919908"
+        },
+        {
+          "sha": "97ba5cff995ad9775798318485b2701d84fe6031",
+          "author_date": "2024-01-30T08:34:10Z",
+          "message": "1030 - Refactor SMTP settings to be outside of passcode config (#1121)\n\n* 1030 - Refactor SMTP settings to be outside of passcode config\r\n\r\n* Backwards compatibility of SMTP settings\r\n\r\n* Do not error if root smtp and passcode smtp are defined. Log warning instead\r\n\r\n* Update warning message",
+          "html_url": "https://github.com/teamhanko/hanko/commit/97ba5cff995ad9775798318485b2701d84fe6031"
+        },
+        {
+          "sha": "03bfef9d190fdecade3051ed8d40ce3e2a8f13f7",
+          "author_date": "2024-01-30T10:18:59Z",
+          "message": "fix(email webhook): check if user already has an email\n\nif user already has an email -> send EmailCreate Event\nif user has no email -> send UserCreate Event",
+          "html_url": "https://github.com/teamhanko/hanko/commit/03bfef9d190fdecade3051ed8d40ce3e2a8f13f7"
+        },
+        {
+          "sha": "38209aa1bdf4c40edf634455594bb899e821e86c",
+          "author_date": "2024-01-30T10:36:44Z",
+          "message": "Merge branch 'main' into feat/692-webhooks",
+          "html_url": "https://github.com/teamhanko/hanko/commit/38209aa1bdf4c40edf634455594bb899e821e86c"
+        },
+        {
+          "sha": "e028af8e5bfa8321fcb2a63632ce131594834e2b",
+          "author_date": "2024-01-30T13:56:45Z",
+          "message": "fix(webhook): check for user email count BEFORE adding a new email to user",
+          "html_url": "https://github.com/teamhanko/hanko/commit/e028af8e5bfa8321fcb2a63632ce131594834e2b"
+        },
+        {
+          "sha": "0e5b5f7e356fbd9caf44bec3056e4924a0c9fbbe",
+          "author_date": "2024-01-30T13:58:25Z",
+          "message": "Merge remote-tracking branch 'hanko/feat/692-webhooks' into feat/692-webhooks",
+          "html_url": "https://github.com/teamhanko/hanko/commit/0e5b5f7e356fbd9caf44bec3056e4924a0c9fbbe"
+        },
+        {
+          "sha": "a35725c69c684002b4bd1efa6612a173c20dc2d0",
+          "author_date": "2024-01-31T13:00:58Z",
+          "message": "Merge branch 'main' into fix/1027-improve-passkey-naming",
+          "html_url": "https://github.com/teamhanko/hanko/commit/a35725c69c684002b4bd1efa6612a173c20dc2d0"
+        },
+        {
+          "sha": "409d09c9ab0055a3dc7554085d695d8e8819d4fd",
+          "author_date": "2024-01-31T13:04:40Z",
+          "message": "Merge pull request #1303 from teamhanko/fix/1027-improve-passkey-naming\n\nimprove(passkeys): improve passkey naming",
+          "html_url": "https://github.com/teamhanko/hanko/commit/409d09c9ab0055a3dc7554085d695d8e8819d4fd"
+        },
+        {
+          "sha": "239748d72d61449ef1b26e10f1b2f82898887e32",
+          "author_date": "2024-02-02T14:45:07Z",
+          "message": "chore(deps): bump github.com/nicksnyder/go-i18n/v2 in /backend\n\nBumps [github.com/nicksnyder/go-i18n/v2](https://github.com/nicksnyder/go-i18n) from 2.3.0 to 2.4.0.\r\n- [Release notes](https://github.com/nicksnyder/go-i18n/releases)\r\n- [Changelog](https://github.com/nicksnyder/go-i18n/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/nicksnyder/go-i18n/compare/v2.3.0...v2.4.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/nicksnyder/go-i18n/v2\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/239748d72d61449ef1b26e10f1b2f82898887e32"
+        },
+        {
+          "sha": "21195939086501ebaf271694a9d0a944c11c5d13",
+          "author_date": "2024-02-02T14:47:21Z",
+          "message": "chore(deps): bump github.com/opencontainers/runc in /backend\n\nBumps [github.com/opencontainers/runc](https://github.com/opencontainers/runc) from 1.1.5 to 1.1.12.\r\n- [Release notes](https://github.com/opencontainers/runc/releases)\r\n- [Changelog](https://github.com/opencontainers/runc/blob/v1.1.12/CHANGELOG.md)\r\n- [Commits](https://github.com/opencontainers/runc/compare/v1.1.5...v1.1.12)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/opencontainers/runc\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/21195939086501ebaf271694a9d0a944c11c5d13"
+        },
+        {
+          "sha": "d7f10614a5b52e87eea81a09528b33c0fb475a75",
+          "author_date": "2024-02-05T09:32:24Z",
+          "message": "chore: update config json schema",
+          "html_url": "https://github.com/teamhanko/hanko/commit/d7f10614a5b52e87eea81a09528b33c0fb475a75"
+        },
+        {
+          "sha": "2715899bd7eac2b54ee10d03003d079657fa16f8",
+          "author_date": "2024-02-05T16:49:13Z",
+          "message": "ci: enable dependabot version updates for actions",
+          "html_url": "https://github.com/teamhanko/hanko/commit/2715899bd7eac2b54ee10d03003d079657fa16f8"
+        },
+        {
+          "sha": "d871ec2fb1b86b896e779cf1e75bd4b38253fa18",
+          "author_date": "2024-02-05T17:01:38Z",
+          "message": "fix: make samesite and domain attributes configurable for frontend sdk cookie",
+          "html_url": "https://github.com/teamhanko/hanko/commit/d871ec2fb1b86b896e779cf1e75bd4b38253fa18"
+        },
+        {
+          "sha": "92b7d05ad8113fb8b415531aa686a09ecf4ed44e",
+          "author_date": "2024-02-05T17:02:05Z",
+          "message": "chore(deps): bump actions/checkout from 3 to 4 \n\nBumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.\r\n- [Release notes](https://github.com/actions/checkout/releases)\r\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/actions/checkout/compare/v3...v4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/checkout\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/92b7d05ad8113fb8b415531aa686a09ecf4ed44e"
+        },
+        {
+          "sha": "a2f637349e7500786a818ab5872780c517bc1ecf",
+          "author_date": "2024-02-05T17:02:28Z",
+          "message": "chore(deps): bump docker/build-push-action from 4 to 5\n\nBumps [docker/build-push-action](https://github.com/docker/build-push-action) from 4 to 5.\r\n- [Release notes](https://github.com/docker/build-push-action/releases)\r\n- [Commits](https://github.com/docker/build-push-action/compare/v4...v5)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: docker/build-push-action\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/a2f637349e7500786a818ab5872780c517bc1ecf"
+        },
+        {
+          "sha": "eadcfefb64c39806868123a129eb0653817878c3",
+          "author_date": "2024-02-05T17:02:49Z",
+          "message": "chore(deps): bump actions/setup-go from 3 to 5\n\nBumps [actions/setup-go](https://github.com/actions/setup-go) from 3 to 5.\r\n- [Release notes](https://github.com/actions/setup-go/releases)\r\n- [Commits](https://github.com/actions/setup-go/compare/v3...v5)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/setup-go\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/eadcfefb64c39806868123a129eb0653817878c3"
+        },
+        {
+          "sha": "1764094de0fbdabff86ca479186e545dc067d2ea",
+          "author_date": "2024-02-05T17:03:35Z",
+          "message": "chore(deps): bump github.com/rs/zerolog in /backend\n\nBumps [github.com/rs/zerolog](https://github.com/rs/zerolog) from 1.31.0 to 1.32.0.\r\n- [Release notes](https://github.com/rs/zerolog/releases)\r\n- [Commits](https://github.com/rs/zerolog/compare/v1.31.0...v1.32.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/rs/zerolog\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/1764094de0fbdabff86ca479186e545dc067d2ea"
+        },
+        {
+          "sha": "9fb0abc88418ec494de3b8918b33239975f7b8b5",
+          "author_date": "2024-02-05T17:05:21Z",
+          "message": "chore(deps): bump github/codeql-action from 2 to 3\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 2 to 3.\r\n- [Release notes](https://github.com/github/codeql-action/releases)\r\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/github/codeql-action/compare/v2...v3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github/codeql-action\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/9fb0abc88418ec494de3b8918b33239975f7b8b5"
+        },
+        {
+          "sha": "84f97ab3cebca7ecf9baa86b2d140cbc23d89251",
+          "author_date": "2024-02-05T17:23:34Z",
+          "message": "chore(deps): bump actions/setup-node from 3 to 4\n\nBumps [actions/setup-node](https://github.com/actions/setup-node) from 3 to 4.\r\n- [Release notes](https://github.com/actions/setup-node/releases)\r\n- [Commits](https://github.com/actions/setup-node/compare/v3...v4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/setup-node\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/84f97ab3cebca7ecf9baa86b2d140cbc23d89251"
+        },
+        {
+          "sha": "159fa6047e187e9d89a666f0cc2ed55c5d771177",
+          "author_date": "2024-02-06T10:07:24Z",
+          "message": "chore(deps): bump docker/metadata-action from 4 to 5\n\nBumps [docker/metadata-action](https://github.com/docker/metadata-action) from 4 to 5.\r\n- [Release notes](https://github.com/docker/metadata-action/releases)\r\n- [Upgrade guide](https://github.com/docker/metadata-action/blob/master/UPGRADE.md)\r\n- [Commits](https://github.com/docker/metadata-action/compare/v4...v5)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: docker/metadata-action\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/159fa6047e187e9d89a666f0cc2ed55c5d771177"
+        },
+        {
+          "sha": "652da474d15c2414fdb9003e6b710fe6b3f020bd",
+          "author_date": "2024-02-06T10:08:22Z",
+          "message": "chore(deps): bump docker/setup-qemu-action from 2 to 3\n\nBumps [docker/setup-qemu-action](https://github.com/docker/setup-qemu-action) from 2 to 3.\r\n- [Release notes](https://github.com/docker/setup-qemu-action/releases)\r\n- [Commits](https://github.com/docker/setup-qemu-action/compare/v2...v3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: docker/setup-qemu-action\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/652da474d15c2414fdb9003e6b710fe6b3f020bd"
+        },
+        {
+          "sha": "c253bb8fb039f132935606f175bcfed4645e116a",
+          "author_date": "2024-02-06T11:37:04Z",
+          "message": "chore(deps): bump docker/setup-buildx-action from 2 to 3\n\nBumps [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action) from 2 to 3.\r\n- [Release notes](https://github.com/docker/setup-buildx-action/releases)\r\n- [Commits](https://github.com/docker/setup-buildx-action/compare/v2...v3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: docker/setup-buildx-action\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/c253bb8fb039f132935606f175bcfed4645e116a"
+        },
+        {
+          "sha": "9020f69ca4d351b87f84ce33d3fb42d476a766d4",
+          "author_date": "2024-02-06T11:49:24Z",
+          "message": "chore(deps): bump docker/login-action from 2 to 3\n\nBumps [docker/login-action](https://github.com/docker/login-action) from 2 to 3.\r\n- [Release notes](https://github.com/docker/login-action/releases)\r\n- [Commits](https://github.com/docker/login-action/compare/v2...v3)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: docker/login-action\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/9020f69ca4d351b87f84ce33d3fb42d476a766d4"
+        },
+        {
+          "sha": "1da5f32df413b20d967fbf2918f35545d6bfea91",
+          "author_date": "2024-02-06T11:50:09Z",
+          "message": "chore(deps): bump actions/github-script from 6 to 7\n\nBumps [actions/github-script](https://github.com/actions/github-script) from 6 to 7.\r\n- [Release notes](https://github.com/actions/github-script/releases)\r\n- [Commits](https://github.com/actions/github-script/compare/v6...v7)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/github-script\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/1da5f32df413b20d967fbf2918f35545d6bfea91"
+        },
+        {
+          "sha": "7d19279241e607789ec441c2e8e85cc252657bd0",
+          "author_date": "2024-02-07T19:35:26Z",
+          "message": "chore(deps): bump golang.org/x/crypto from 0.18.0 to 0.19.0 in /backend\n\nBumps [golang.org/x/crypto](https://github.com/golang/crypto) from 0.18.0 to 0.19.0.\r\n- [Commits](https://github.com/golang/crypto/compare/v0.18.0...v0.19.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/crypto\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/7d19279241e607789ec441c2e8e85cc252657bd0"
+        },
+        {
+          "sha": "5238d1877f438e3f4368a8d0b5095283b6f13b80",
+          "author_date": "2024-02-09T10:07:32Z",
+          "message": "feat: extend third-party account linking\n\nIntroduce a per provider configuration option that allows users to\r\ndefine whether automatic linking of accounts on sign-up/sign-in is enabled\r\nor disabled.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/5238d1877f438e3f4368a8d0b5095283b6f13b80"
+        },
+        {
+          "sha": "b02fce6046043b8854e3e7a1e07b0ba37bd53922",
+          "author_date": "2024-02-09T17:22:34Z",
+          "message": "chore(deps): bump github.com/go-webauthn/webauthn in /backend \n\nBumps [github.com/go-webauthn/webauthn](https://github.com/go-webauthn/webauthn) from 0.10.0 to 0.10.1.\r\n- [Release notes](https://github.com/go-webauthn/webauthn/releases)\r\n- [Commits](https://github.com/go-webauthn/webauthn/compare/v0.10.0...v0.10.1)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/go-webauthn/webauthn\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/b02fce6046043b8854e3e7a1e07b0ba37bd53922"
+        },
+        {
+          "sha": "7a8ed1a2711c55474b323f98c38d7d02e513a33b",
+          "author_date": "2024-02-09T17:23:07Z",
+          "message": "chore(deps): bump golang.org/x/oauth2 from 0.16.0 to 0.17.0 in /backend\n\nBumps [golang.org/x/oauth2](https://github.com/golang/oauth2) from 0.16.0 to 0.17.0.\r\n- [Commits](https://github.com/golang/oauth2/compare/v0.16.0...v0.17.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/oauth2\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/7a8ed1a2711c55474b323f98c38d7d02e513a33b"
+        },
+        {
+          "sha": "0b6c5bef7623ec3fe86d232814755c0c322c083b",
+          "author_date": "2024-02-12T09:04:28Z",
+          "message": "Merge branch 'main' into feat/692-webhooks",
+          "html_url": "https://github.com/teamhanko/hanko/commit/0b6c5bef7623ec3fe86d232814755c0c322c083b"
+        },
+        {
+          "sha": "e60467981d9b9e2e7b8493869ea6b6a4db5c0b6d",
+          "author_date": "2024-02-12T10:01:40Z",
+          "message": "Merge pull request #1291 from teamhanko/feat/692-webhooks\n\nfeat(webhooks): add webhooks",
+          "html_url": "https://github.com/teamhanko/hanko/commit/e60467981d9b9e2e7b8493869ea6b6a4db5c0b6d"
+        },
+        {
+          "sha": "8500b199e22fa4f6c88f3306fd8205612aad8812",
+          "author_date": "2024-02-16T09:48:27Z",
+          "message": "chore(docs): add webhook docs (#1346)\n\n* extend config doc with webhook configuration\r\n* add chapter for webhooks to backend docs\r\n\r\nCo-authored-by: Stefan Jacobi <stefan.jacobi@adesso.de>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/8500b199e22fa4f6c88f3306fd8205612aad8812"
+        },
+        {
+          "sha": "ff415299e23b76d1b9be1e91587259f66f7e6360",
+          "author_date": "2024-02-16T13:53:37Z",
+          "message": "chore: bump frontend versions to v0.10.0",
+          "html_url": "https://github.com/teamhanko/hanko/commit/ff415299e23b76d1b9be1e91587259f66f7e6360"
+        },
+        {
+          "sha": "94ae4359cc4d0ab653a546891d7f6f1d0f66016a",
+          "author_date": "2024-02-16T14:45:14Z",
+          "message": "ci: fix tag extraction pattern in docker publish workflow",
+          "html_url": "https://github.com/teamhanko/hanko/commit/94ae4359cc4d0ab653a546891d7f6f1d0f66016a"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "backend/v0.10.1",
@@ -1271,8 +1722,75 @@
     {
       "release": "backend/v0.11.0",
       "previous_release": "backend/v0.10.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9ecd188fbc1a89ab8fdc1f1359cf1f232b162db4",
+          "author_date": "2024-04-10T15:36:27Z",
+          "message": "docs: add link to discord guide in backend readme",
+          "html_url": "https://github.com/teamhanko/hanko/commit/9ecd188fbc1a89ab8fdc1f1359cf1f232b162db4"
+        },
+        {
+          "sha": "92c5d21e21dd5563f9b00177ae44d638060fe3d6",
+          "author_date": "2024-04-17T09:12:13Z",
+          "message": "feat(thirdparty): add microsoft provider",
+          "html_url": "https://github.com/teamhanko/hanko/commit/92c5d21e21dd5563f9b00177ae44d638060fe3d6"
+        },
+        {
+          "sha": "bb424176b2b2021acadd622d12154aad87ec29d9",
+          "author_date": "2024-04-17T09:41:01Z",
+          "message": "Update LICENSE (#1432)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/bb424176b2b2021acadd622d12154aad87ec29d9"
+        },
+        {
+          "sha": "d7c8526de7ffc6fc8aecb5715084e9edbd1e5bb6",
+          "author_date": "2024-04-17T09:41:24Z",
+          "message": "Update README.md (#1433)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/d7c8526de7ffc6fc8aecb5715084e9edbd1e5bb6"
+        },
+        {
+          "sha": "7901dd21b32d9bb4599610c983ab4d0d2d714e48",
+          "author_date": "2024-04-17T11:46:26Z",
+          "message": "chore(deps): bump github.com/labstack/echo/v4 in /backend\n\nBumps [github.com/labstack/echo/v4](https://github.com/labstack/echo) from 4.11.4 to 4.12.0.\r\n- [Release notes](https://github.com/labstack/echo/releases)\r\n- [Changelog](https://github.com/labstack/echo/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/labstack/echo/compare/v4.11.4...v4.12.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/labstack/echo/v4\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/7901dd21b32d9bb4599610c983ab4d0d2d714e48"
+        },
+        {
+          "sha": "7276db13bb60b808c4ab8d9c6048660a2f1a78e7",
+          "author_date": "2024-04-17T11:55:18Z",
+          "message": "fix: fix saml login for existing users (#1434)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/7276db13bb60b808c4ab8d9c6048660a2f1a78e7"
+        },
+        {
+          "sha": "def7ad37a0705c0ffbb739d1664432f6e988937a",
+          "author_date": "2024-04-18T13:15:02Z",
+          "message": "[FEAT] disable email delivery (#1419)\n\n* feat: add config to disable email delivery\r\n\r\n* chore: update config schema\r\n\r\n* docs: add new config parameter\r\n\r\n* test: fix test\r\n\r\n* fix: rename email webhook event\r\n\r\n* docs: Update backend/docs/Config.md\r\n\r\nCo-authored-by: Lennart Fleischmann <67686424+lfleischmann@users.noreply.github.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Lennart Fleischmann <67686424+lfleischmann@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/def7ad37a0705c0ffbb739d1664432f6e988937a"
+        },
+        {
+          "sha": "7934767655f88d2ce72cc5aac75e54d8bb4aada9",
+          "author_date": "2024-04-19T13:54:56Z",
+          "message": "chore(deps): bump golang.org/x/net from 0.21.0 to 0.23.0 in /quickstart\n\nBumps [golang.org/x/net](https://github.com/golang/net) from 0.21.0 to 0.23.0.\r\n- [Commits](https://github.com/golang/net/compare/v0.21.0...v0.23.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: golang.org/x/net\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/7934767655f88d2ce72cc5aac75e54d8bb4aada9"
+        },
+        {
+          "sha": "9c799d27edbf089d473e560d12f9f8553280ec58",
+          "author_date": "2024-04-22T17:51:30Z",
+          "message": "chore(deps): bump github.com/labstack/echo-contrib in /backend\n\nBumps [github.com/labstack/echo-contrib](https://github.com/labstack/echo-contrib) from 0.15.0 to 0.17.1.\r\n- [Release notes](https://github.com/labstack/echo-contrib/releases)\r\n- [Commits](https://github.com/labstack/echo-contrib/compare/v0.15.0...v0.17.1)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/labstack/echo-contrib\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/9c799d27edbf089d473e560d12f9f8553280ec58"
+        },
+        {
+          "sha": "4bea1e3361fab29222f3ae3d2cbeca5c57f62714",
+          "author_date": "2024-04-29T09:44:46Z",
+          "message": "fix: don't override error before return (#1447)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/4bea1e3361fab29222f3ae3d2cbeca5c57f62714"
+        },
+        {
+          "sha": "2f3d4f016c2cba60529aadb94a05ccd671fd5b5b",
+          "author_date": "2024-04-29T15:46:07Z",
+          "message": "chore: update versions to v0.11.0",
+          "html_url": "https://github.com/teamhanko/hanko/commit/2f3d4f016c2cba60529aadb94a05ccd671fd5b5b"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "backend/v0.12.0",
@@ -1331,8 +1849,69 @@
     {
       "release": "backend/v1.5.1",
       "previous_release": "backend/v1.5.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "b32920ee50cc3deca886136219831828d6fb2c61",
+          "author_date": "2025-03-14T11:06:40Z",
+          "message": "chore(deps): bump github.com/sethvargo/go-limiter in /backend\n\nBumps [github.com/sethvargo/go-limiter](https://github.com/sethvargo/go-limiter) from 0.7.2 to 1.0.0.\n- [Release notes](https://github.com/sethvargo/go-limiter/releases)\n- [Commits](https://github.com/sethvargo/go-limiter/compare/v0.7.2...v1.0.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sethvargo/go-limiter\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/b32920ee50cc3deca886136219831828d6fb2c61"
+        },
+        {
+          "sha": "397d8d505a780508743ba2143fdc6fe7967d3581",
+          "author_date": "2025-03-13T18:36:31Z",
+          "message": "chore(deps): bump github.com/ory/dockertest/v3 in /backend\n\nBumps [github.com/ory/dockertest/v3](https://github.com/ory/dockertest) from 3.10.0 to 3.11.0.\n- [Release notes](https://github.com/ory/dockertest/releases)\n- [Commits](https://github.com/ory/dockertest/compare/v3.10.0...v3.11.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/ory/dockertest/v3\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/397d8d505a780508743ba2143fdc6fe7967d3581"
+        },
+        {
+          "sha": "a0ede2a988d9fcc321b9c80ebc5a68e671bc0205",
+          "author_date": "2025-03-04T00:24:33Z",
+          "message": "chore(deps): bump github.com/go-jose/go-jose/v3 in /backend\n\nBumps [github.com/go-jose/go-jose/v3](https://github.com/go-jose/go-jose) from 3.0.3 to 3.0.4.\n- [Release notes](https://github.com/go-jose/go-jose/releases)\n- [Changelog](https://github.com/go-jose/go-jose/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/go-jose/go-jose/compare/v3.0.3...v3.0.4)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/go-jose/go-jose/v3\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/a0ede2a988d9fcc321b9c80ebc5a68e671bc0205"
+        },
+        {
+          "sha": "66bb188fa2a2a3b1b22457694a8ce34fcd93beb6",
+          "author_date": "2025-03-14T18:31:09Z",
+          "message": "chore(deps): bump github.com/coreos/go-oidc/v3 in /backend\n\nBumps [github.com/coreos/go-oidc/v3](https://github.com/coreos/go-oidc) from 3.9.0 to 3.13.0.\n- [Release notes](https://github.com/coreos/go-oidc/releases)\n- [Commits](https://github.com/coreos/go-oidc/compare/v3.9.0...v3.13.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/coreos/go-oidc/v3\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/66bb188fa2a2a3b1b22457694a8ce34fcd93beb6"
+        },
+        {
+          "sha": "82023ac4dc0183d7b813cfd79972da55166d478d",
+          "author_date": "2025-03-14T20:01:24Z",
+          "message": "chore(deps): bump github.com/nicksnyder/go-i18n/v2 in /backend\n\nBumps [github.com/nicksnyder/go-i18n/v2](https://github.com/nicksnyder/go-i18n) from 2.4.0 to 2.5.1.\n- [Release notes](https://github.com/nicksnyder/go-i18n/releases)\n- [Changelog](https://github.com/nicksnyder/go-i18n/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/nicksnyder/go-i18n/compare/v2.4.0...v2.5.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/nicksnyder/go-i18n/v2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/82023ac4dc0183d7b813cfd79972da55166d478d"
+        },
+        {
+          "sha": "72e9eebcca9ce7c964a220c952238fa388093e40",
+          "author_date": "2025-03-19T21:04:23Z",
+          "message": "chore(deps): bump github.com/go-playground/validator/v10 in /backend\n\nBumps [github.com/go-playground/validator/v10](https://github.com/go-playground/validator) from 10.22.0 to 10.25.0.\n- [Release notes](https://github.com/go-playground/validator/releases)\n- [Commits](https://github.com/go-playground/validator/compare/v10.22.0...v10.25.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/go-playground/validator/v10\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/72e9eebcca9ce7c964a220c952238fa388093e40"
+        },
+        {
+          "sha": "c2758e11c70d348c95b183cdfccc786eef43a9ea",
+          "author_date": "2025-03-19T21:10:42Z",
+          "message": "chore(deps): bump github.com/tidwall/gjson in /backend\n\nBumps [github.com/tidwall/gjson](https://github.com/tidwall/gjson) from 1.16.0 to 1.18.0.\n- [Commits](https://github.com/tidwall/gjson/compare/v1.16.0...v1.18.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/tidwall/gjson\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/c2758e11c70d348c95b183cdfccc786eef43a9ea"
+        },
+        {
+          "sha": "324cf14cdb8917d530c9aace5ac6f101c2eac0aa",
+          "author_date": "2025-03-27T15:41:02Z",
+          "message": "fix: migration issues\n\n* fix: flows migration\n\nSet the `flows.data` column type to text instead of a string\nwith specific size because doing the latter fails on MySQL/MariaDB.\n\n* fix: fix down migrations",
+          "html_url": "https://github.com/teamhanko/hanko/commit/324cf14cdb8917d530c9aace5ac6f101c2eac0aa"
+        },
+        {
+          "sha": "829a2849a6e1144b1c9cd46536b2e6cdb602af15",
+          "author_date": "2025-03-28T09:46:01Z",
+          "message": "feat: add passkey option to login method chooser (#2100)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/829a2849a6e1144b1c9cd46536b2e6cdb602af15"
+        },
+        {
+          "sha": "caa46a03f4adfcf2014a6c88932ff5e28c8d574e",
+          "author_date": "2025-03-31T11:10:23Z",
+          "message": "chore: update versions to 1.5.1 (#2104)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/caa46a03f4adfcf2014a6c88932ff5e28c8d574e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "backend/v2.0.0",
@@ -1355,14 +1934,190 @@
     {
       "release": "backend/v2.2.0",
       "previous_release": "backend/v2.1.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "6faf6e707b246306e5db4a26f94609268b99de97",
+          "author_date": "2025-09-02T14:18:13Z",
+          "message": "fix: user verification on passkey creation\n\nThe UV value was hardcoded, but is now read from the configuration.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/6faf6e707b246306e5db4a26f94609268b99de97"
+        },
+        {
+          "sha": "7a78b8e1726d28d515281417ff49c9d3798a60ac",
+          "author_date": "2025-09-25T17:15:20Z",
+          "message": "fix: change module name corresponding to version",
+          "html_url": "https://github.com/teamhanko/hanko/commit/7a78b8e1726d28d515281417ff49c9d3798a60ac"
+        },
+        {
+          "sha": "d7ffae5b5ceacd1ffd99a9e40e8de54ba1ca3de1",
+          "author_date": "2025-09-26T07:57:49Z",
+          "message": "fix: add missing module name change",
+          "html_url": "https://github.com/teamhanko/hanko/commit/d7ffae5b5ceacd1ffd99a9e40e8de54ba1ca3de1"
+        },
+        {
+          "sha": "dabafb69445e23c74e8c8e198d3ac65bc459c24a",
+          "author_date": "2025-09-26T08:03:53Z",
+          "message": "fix: remove wrong import",
+          "html_url": "https://github.com/teamhanko/hanko/commit/dabafb69445e23c74e8c8e198d3ac65bc459c24a"
+        },
+        {
+          "sha": "0ca5231bc9fac304ddad86659b27c05d575ddd64",
+          "author_date": "2025-10-09T12:23:23Z",
+          "message": "fix: use correct module path when generating json schema",
+          "html_url": "https://github.com/teamhanko/hanko/commit/0ca5231bc9fac304ddad86659b27c05d575ddd64"
+        },
+        {
+          "sha": "2edffc4d93c8c01c793a8914e8663ad165444144",
+          "author_date": "2025-10-13T11:39:07Z",
+          "message": "Merge pull request #2257 from teamhanko/fix-module-name\n\nfix: change module name corresponding to version",
+          "html_url": "https://github.com/teamhanko/hanko/commit/2edffc4d93c8c01c793a8914e8663ad165444144"
+        },
+        {
+          "sha": "9c89cd91dccae024a22bac4418193f319f0f7874",
+          "author_date": "2025-10-13T12:16:00Z",
+          "message": "fix: export the Claims type (#2268)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/9c89cd91dccae024a22bac4418193f319f0f7874"
+        },
+        {
+          "sha": "a7d434fdc19634c1a2aa708ee0f531ee8087299c",
+          "author_date": "2025-10-13T12:16:22Z",
+          "message": "fix: check for SAML before email existence (#2270)\n\nCheck if the domain is registered for a SAML provider before checking if the email already exists.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/a7d434fdc19634c1a2aa708ee0f531ee8087299c"
+        },
+        {
+          "sha": "ade86cc318d8fb3d7c66e90ffc633b7b86636c7f",
+          "author_date": "2025-10-13T12:22:22Z",
+          "message": "feat: add auth prompt config option (#2260)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/ade86cc318d8fb3d7c66e90ffc633b7b86636c7f"
+        },
+        {
+          "sha": "7fe08623695f19fafaca8c0db41c6e7cc4faa224",
+          "author_date": "2025-10-13T12:28:42Z",
+          "message": "PKCE OAuth flow (#2266)\n\n* feat: add auth prompt config option\n\n* feat: add pkce oauth flow\n\nWhen the oauth flow is initialized with a `code_verifier` the state cookie is optional and on hanko_token exchange the client must also send the `code_verifier` in addition to the `hanko_token`.\n\n* fix: fix runtime errors & tests",
+          "html_url": "https://github.com/teamhanko/hanko/commit/7fe08623695f19fafaca8c0db41c6e7cc4faa224"
+        },
+        {
+          "sha": "a6da9af9c21b0fbd7321452c136dc000db3d48f5",
+          "author_date": "2025-10-14T08:33:48Z",
+          "message": "chore: autogenerate config JSON schema (#2271)\n\nCo-authored-by: GitHub Action <action@github.com>",
+          "html_url": "https://github.com/teamhanko/hanko/commit/a6da9af9c21b0fbd7321452c136dc000db3d48f5"
+        },
+        {
+          "sha": "64abc8f4aa02c42cdb2d2fd573d7cddcd0287114",
+          "author_date": "2025-10-14T09:46:00Z",
+          "message": "chore: increase version numbers (#2274)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/64abc8f4aa02c42cdb2d2fd573d7cddcd0287114"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "backend/v2.2.1",
       "previous_release": "backend/v2.2.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d9f9050b5ebb7ae12d45b1ace284af4d946da775",
+          "author_date": "2025-10-16T11:01:40Z",
+          "message": "fix: consistently use persisters with connection (#2276)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/d9f9050b5ebb7ae12d45b1ace284af4d946da775"
+        },
+        {
+          "sha": "a2b8e36b945e981dbbc5c83a14fdded97f4c2606",
+          "author_date": "2025-10-20T07:52:34Z",
+          "message": "fix: don't show the divider on login (#2277)\n\nDon't show the divider on login and registration page when email and username are disabled.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/a2b8e36b945e981dbbc5c83a14fdded97f4c2606"
+        },
+        {
+          "sha": "e118ed76de318866089c1c7175815dbee0ba2149",
+          "author_date": "2025-10-24T10:30:03Z",
+          "message": "fix: unwarranted passcode data in webhooks (#2279)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/e118ed76de318866089c1c7175815dbee0ba2149"
+        },
+        {
+          "sha": "b20a8c119d167e50d10de483b3060771bf7c3ec8",
+          "author_date": "2025-10-27T08:21:04Z",
+          "message": "feat: add last used badge (#2283)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/b20a8c119d167e50d10de483b3060771bf7c3ec8"
+        },
+        {
+          "sha": "1be20890730c1ae1800ce45dcab152577aeb234d",
+          "author_date": "2025-10-28T07:59:11Z",
+          "message": "fix: ensure WebAuthn session data expires time is in UTC (#2287)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/1be20890730c1ae1800ce45dcab152577aeb234d"
+        },
+        {
+          "sha": "695f833a4026b1b8e0aec8331b88bd6804c7e18b",
+          "author_date": "2025-10-30T10:56:22Z",
+          "message": "feat: add flow locking mechanism (#2285)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/695f833a4026b1b8e0aec8331b88bd6804c7e18b"
+        },
+        {
+          "sha": "2fc4c45ace844c24db103e96bf9b4a7e3054ae81",
+          "author_date": "2025-11-05T17:06:25Z",
+          "message": "fix: prefilled email and username attribute handling\n\nElement's component attributes may not be available or set during\nrender setting them in the UI state. As a result they are not\ndisplayed in the input.\n\nThis commit adds an effect to ensure the UI state is set correctly.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/2fc4c45ace844c24db103e96bf9b4a7e3054ae81"
+        },
+        {
+          "sha": "609d083e95bf4bf834048fd168f6dab70afcdf45",
+          "author_date": "2025-11-05T17:12:29Z",
+          "message": "refactor: make setting identifier and its type on login more explicit",
+          "html_url": "https://github.com/teamhanko/hanko/commit/609d083e95bf4bf834048fd168f6dab70afcdf45"
+        },
+        {
+          "sha": "1ea3ede4ecc76844e9bab3717cf701dad348c264",
+          "author_date": "2025-11-05T17:14:03Z",
+          "message": "fix: backend handling of prefilled username and email\n\nPrefilling both username and email even though only one of them\nis enabled in the backend can lead to unwanted effects on registration.\n\nFor example, if emails are enabled (and acquired) but usernames are\nnot, and a user prefills both email and username in elements, then\nthe backend action does not properly check the enabled status for\nthe identifier type which can lead to creation of a username or an\nemail even though the respective identifier type is not enabled.\nIt can also lead to misleading errors, e.g. returning an error because\nthe check for an existing username still runs and fails even though\nusernames are disabled.\n\nThis commit adds apropriate checks on identifier types (enabled and\nacquisition on registration) where necessary.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/1ea3ede4ecc76844e9bab3717cf701dad348c264"
+        },
+        {
+          "sha": "feada9e864527452c55fff86d1bb1285c48144a5",
+          "author_date": "2025-11-05T17:49:24Z",
+          "message": "fix: mode attribute handling\n\nThe given order of attributes in the usage of the auth element\nhas an effect on whether the attribute value is correctly processed\nin the component, i.e. placing `mode` as the first attribute works,\nplacing it as the last attribute does not. This indicates that the\nattribute value may not be available (yet) as a prop on renders\nthat read the prop/depend on the prop causing initialization of the\ndefault flow (login) even though the given attribute value is\nfor `registration`.\n\nThis commit adds a two-step deferred initialization using\nuseEffects:\n\n1. Use `setTimeout(0)` to defer reading `props.mode` until the next\ntick, giving some leeway to set all attributes/props. Update\n`authComponentFlow` state and signal readiness via `isReadyToInit`.\n\n2. A second `useEffect` with `authComponentFlow` as a dependency\nwaits for Step 1's state updates to complete. Once `isReadyToInit` is\ntrue and `authComponentFlow` has the correct value, initialize the\nflow. The `hasInitializedRef` ensures initialization only happens once,\npreventing re-initialization on subsequent renders when dependencies change.\n\nThis ensures the component flow is initialized with the correct mode value\nregardless of attribute order in the template.\n\nNOTES:\n1. The problem has only been observed when using Vue.\n2. The solution feels dirty. We should find out if we can get this done in\na cleaner way.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/feada9e864527452c55fff86d1bb1285c48144a5"
+        },
+        {
+          "sha": "52d353eb15414a84052cf9c7b2288986266047bf",
+          "author_date": "2025-11-05T18:43:48Z",
+          "message": "docs: fix redis config password schema (#2293)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/52d353eb15414a84052cf9c7b2288986266047bf"
+        },
+        {
+          "sha": "63e2c61aa920a2edbc82e7ec412321ebcfb8a562",
+          "author_date": "2025-11-05T18:44:37Z",
+          "message": "feat: change default thirdparty prompt parameter (#2292)\n\nRemoves the default \"consent\" value. If prompt is not given\nit is not added to the auth code URL (i.e. we rely on provider\ndefault behaviour).",
+          "html_url": "https://github.com/teamhanko/hanko/commit/63e2c61aa920a2edbc82e7ec412321ebcfb8a562"
+        },
+        {
+          "sha": "71c478e88c7c229631b5816fa794fb02243007d8",
+          "author_date": "2025-11-05T20:59:05Z",
+          "message": "Merge branch 'main' into fix-elements-attribute-handling",
+          "html_url": "https://github.com/teamhanko/hanko/commit/71c478e88c7c229631b5816fa794fb02243007d8"
+        },
+        {
+          "sha": "05518dbbda86c34d4daf28c9b2c2a7ffa41fa38a",
+          "author_date": "2025-11-12T10:53:28Z",
+          "message": "fix: commit references in comments",
+          "html_url": "https://github.com/teamhanko/hanko/commit/05518dbbda86c34d4daf28c9b2c2a7ffa41fa38a"
+        },
+        {
+          "sha": "2d9e98e1a61a00e2737b5dfdc2e46505f989f24e",
+          "author_date": "2025-11-12T15:08:19Z",
+          "message": "Merge pull request #2295 from teamhanko/fix-elements-attribute-handling\n\nfix: elements attribute handling",
+          "html_url": "https://github.com/teamhanko/hanko/commit/2d9e98e1a61a00e2737b5dfdc2e46505f989f24e"
+        },
+        {
+          "sha": "3a2acd702d9f37e3ba013f1c8959fc394d8b4a72",
+          "author_date": "2025-11-13T08:33:05Z",
+          "message": "Update README to include 2FA in API features (#2297)\n\nUpdated features sections in README.",
+          "html_url": "https://github.com/teamhanko/hanko/commit/3a2acd702d9f37e3ba013f1c8959fc394d8b4a72"
+        },
+        {
+          "sha": "3a04cefb58a7048e703d4d6ad854e516f59a550a",
+          "author_date": "2025-11-13T14:17:21Z",
+          "message": "chore: increase version numbers (#2298)",
+          "html_url": "https://github.com/teamhanko/hanko/commit/3a04cefb58a7048e703d4d6ad854e516f59a550a"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "backend/v2.3.0",

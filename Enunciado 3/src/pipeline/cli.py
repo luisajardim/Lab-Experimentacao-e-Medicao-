@@ -15,6 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 from pathlib import Path
 from typing import Any
+from urllib.parse import unquote
 
 try:
     import tomllib
@@ -27,6 +28,7 @@ from collector.releases import collect_releases
 from collector.runs import collect_runs
 from collector.search import collect_candidates
 from collector.tags import collect_tags
+from github.models import Release
 from github.rest import GitHubRESTClient
 from metrics import (
     DORAClassification,
@@ -103,8 +105,8 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--stage",
-        choices=["collect", "metrics", "report"],
-        help="Estágio do pipeline (collect | metrics | report)",
+        choices=["collect", "collect-commits", "metrics", "report"],
+        help="Estágio do pipeline (collect | collect-commits | metrics | report)",
     )
     parser.add_argument(
         "--limit",
@@ -176,6 +178,99 @@ def _load_gold_repos(gold_dir: Path) -> list[dict]:
             data = json.loads(repo_file.read_text(encoding="utf-8"))
             repos.append(data)
     return repos
+
+
+def _load_sampled_release_tags(template_path: Path) -> dict[str, set[str]]:
+    """Lê as cinco releases sorteadas por repositório do template ouro."""
+    sampled: dict[str, set[str]] = {}
+    with template_path.open(encoding="utf-8-sig", newline="") as handle:
+        for row in csv.DictReader(handle):
+            full_name = row["full_name"]
+            sampled[full_name] = {
+                unquote(row[f"release_url_{number}"].rsplit("/tag/", 1)[1])
+                for number in range(1, 6)
+                if row.get(f"release_url_{number}")
+            }
+    return sampled
+
+
+def _run_collect_commits(config_path: str, limit: int | None, token: str) -> int:
+    """Atualiza somente os compares das releases sorteadas da amostra-ouro."""
+    config_path = Path(config_path)
+    with config_path.open("rb") as handle:
+        cfg = tomllib.load(handle)
+
+    base = config_path.parent.resolve()
+    paths_cfg = cfg["paths"]
+    gold_dir = base / Path(paths_cfg["gold_dir"])
+    template_path = gold_dir / "labels_template.csv"
+    if not template_path.exists():
+        log.error("Template da amostra-ouro não encontrado: %s", template_path)
+        return 1
+
+    sampled = _load_sampled_release_tags(template_path)
+    if limit is not None:
+        sampled = dict(list(sorted(sampled.items()))[:limit])
+    cache_db = base / Path(paths_cfg["cache_db"])
+    token_pool = _create_token_pool(cfg, token)
+    max_workers = min(int(cfg["api"].get("max_workers", 4)), len(token_pool))
+
+    def process_repo(full_name: str, selected_tags: set[str]) -> tuple[str, int]:
+        owner, repo = full_name.split("/", 1)
+        path = gold_dir / owner / f"{repo}.json"
+        if not path.exists():
+            log.error("JSON ouro ausente para %s", full_name)
+            return full_name, 0
+        data = json.loads(path.read_text(encoding="utf-8"))
+        releases = [Release(**item) for item in data.get("releases", [])]
+        by_tag = {release.tag_name: index for index, release in enumerate(releases)}
+        client = _create_client_from_pool(cfg, token_pool)
+        store = SQLiteStore(cache_db)
+        try:
+            updated: dict[str, dict[str, Any]] = {
+                item["release"]: item for item in data.get("commits_between", [])
+            }
+            for tag in selected_tags:
+                index = by_tag.get(tag)
+                if index is None:
+                    log.warning("Release %s não encontrada em %s", tag, full_name)
+                    continue
+                pair = releases[max(index - 1, 0) : index + 1]
+                comparison = collect_commits_between(
+                    client, owner, repo, pair, store=store, stage="collect:commits"
+                )[-1]
+                updated[tag] = {
+                    "release": comparison.release,
+                    "previous_release": comparison.previous_release,
+                    "commits": [asdict(commit) for commit in comparison.commits]
+                    if comparison.commits is not None
+                    else None,
+                    "ignored_reason": comparison.ignored_reason,
+                }
+            data["commits_between"] = [
+                updated.get(release.tag_name, item)
+                for release, item in zip(releases, data.get("commits_between", []), strict=False)
+            ]
+            _save_repo_data(gold_dir, owner, repo, data)
+            return full_name, len(selected_tags)
+        except Exception as exc:
+            log.error("Erro ao recoletar commits de %s: %s", full_name, exc)
+            return full_name, 0
+        finally:
+            client.close()
+            store.close()
+
+    updated = 0
+    with ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="commits") as pool:
+        futures = {
+            pool.submit(process_repo, full_name, tags): full_name
+            for full_name, tags in sampled.items()
+        }
+        for future in as_completed(futures):
+            _, count = future.result()
+            updated += count
+    log.info("Recoleta de commits concluída: %d releases da amostra atualizadas", updated)
+    return 0
 
 
 def _run_collect(config_path: str, limit: int | None, token: str, force: bool = False) -> int:
@@ -312,7 +407,7 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                     {
                         "release": cb.release,
                         "previous_release": cb.previous_release,
-                        "commits": [asdict(c) for c in cb.commits] if cb.commits else None,
+                        "commits": [asdict(c) for c in cb.commits] if cb.commits is not None else None,
                         "ignored_reason": cb.ignored_reason,
                     }
                     for cb in commits_between
@@ -727,6 +822,10 @@ def main(argv: list[str] | None = None) -> int:
         if args.force:
             log.info("Modo --force ativado: ignorando cache.")
         return _run_collect(args.config, args.limit, env_token or "", args.force)
+
+    if args.stage == "collect-commits":
+        log.info("Iniciando pipeline, estágio: collect-commits")
+        return _run_collect_commits(args.config, args.limit, env_token or "")
 
     if args.stage == "metrics":
         log.info("Iniciando pipeline, estágio: metrics")

@@ -1489,8 +1489,627 @@
     {
       "release": "v0.52.0",
       "previous_release": "v0.51.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f936f250d93af10c63b7a96de5ea30a27a048da8",
+          "author_date": "2021-09-24T22:36:55Z",
+          "message": "ThanosRulerSpec.labels: always set default replica label",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f936f250d93af10c63b7a96de5ea30a27a048da8"
+        },
+        {
+          "sha": "822706545b398267c4ee14c1677208a08c50338a",
+          "author_date": "2021-07-23T07:28:54Z",
+          "message": "test/framework: Remove context from framework struct\n\nPass context as argument to methods\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/822706545b398267c4ee14c1677208a08c50338a"
+        },
+        {
+          "sha": "d67f5e444342ca9deaa2b6c27eabe86af84296d1",
+          "author_date": "2021-07-23T07:29:48Z",
+          "message": "test/e2e: Update method calls to pass context\n\nNeed to update method signatures since removing context from struct\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d67f5e444342ca9deaa2b6c27eabe86af84296d1"
+        },
+        {
+          "sha": "06cbb291a6fb2708c33fc088ffcc8705cc521d46",
+          "author_date": "2021-09-28T22:14:53Z",
+          "message": "Add removed test case, move lines around",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/06cbb291a6fb2708c33fc088ffcc8705cc521d46"
+        },
+        {
+          "sha": "4c279b7bf35f5ac6eb6bc65e613a08c1d18fe1a0",
+          "author_date": "2021-09-28T22:15:31Z",
+          "message": "Update pkg/apis/monitoring/v1/thanos_types.go\n\nCo-authored-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/4c279b7bf35f5ac6eb6bc65e613a08c1d18fe1a0"
+        },
+        {
+          "sha": "deb14f39f17ba79991a1e32e9a4ef8d8614ddb69",
+          "author_date": "2021-09-28T22:15:36Z",
+          "message": "Update pkg/apis/monitoring/v1/thanos_types.go\n\nCo-authored-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/deb14f39f17ba79991a1e32e9a4ef8d8614ddb69"
+        },
+        {
+          "sha": "42fc15967e35e0cca68cf935f844086edbc82d0e",
+          "author_date": "2021-09-29T07:43:47Z",
+          "message": "Merge pull request #4291 from simonpasquier/merge-release-0.51\n\nMerge release-0.51",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/42fc15967e35e0cca68cf935f844086edbc82d0e"
+        },
+        {
+          "sha": "50b8aa48cdc5fb759b176039392253b8497f6ae0",
+          "author_date": "2021-09-29T17:46:55Z",
+          "message": "regenerate",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/50b8aa48cdc5fb759b176039392253b8497f6ae0"
+        },
+        {
+          "sha": "d4128beb17e689def90ab8fdb777b12d61302c3f",
+          "author_date": "2021-10-02T21:35:22Z",
+          "message": "docs: Improve docs and error message for \"smarthost\" field\n\nSigned-off-by: Mac Chaffee <me@macchaffee.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d4128beb17e689def90ab8fdb777b12d61302c3f"
+        },
+        {
+          "sha": "334330e1ebf8d7e6d992b695607e6aa2a79c7cbe",
+          "author_date": "2021-10-04T10:07:50Z",
+          "message": "Update Pawel Krupa (paulfantom) Company",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/334330e1ebf8d7e6d992b695607e6aa2a79c7cbe"
+        },
+        {
+          "sha": "2a802a189b1230ef04e82c3e5ecad9de80668db3",
+          "author_date": "2021-10-04T11:12:59Z",
+          "message": "Merge pull request #4300 from prometheus-operator/paulfantom-patch-2\n\n[docs] Update Pawel Krupa (paulfantom) Company",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/2a802a189b1230ef04e82c3e5ecad9de80668db3"
+        },
+        {
+          "sha": "9656abcad6393963fedcd076bb2f10e499fac03c",
+          "author_date": "2021-09-28T08:52:50Z",
+          "message": "RELEASE.md: update instructions for kube-prometheus\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9656abcad6393963fedcd076bb2f10e499fac03c"
+        },
+        {
+          "sha": "96d4e8a7a3201cd3147403dd1d227b1906c63675",
+          "author_date": "2021-09-03T10:14:16Z",
+          "message": "tests/e2e: Update context parameter\npkg: Update context parameter",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/96d4e8a7a3201cd3147403dd1d227b1906c63675"
+        },
+        {
+          "sha": "8f1ae9417d5b108f463cc9c7b0d03c1b5cf6db28",
+          "author_date": "2021-09-03T10:19:38Z",
+          "message": "test/e2e: Fix go-fmt",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/8f1ae9417d5b108f463cc9c7b0d03c1b5cf6db28"
+        },
+        {
+          "sha": "b024b24c7c8597bde4aac4d684331ed97e757c95",
+          "author_date": "2021-09-09T06:45:44Z",
+          "message": "test/e2e: Fix tests and method calls\n\ntest/framework/prometheus.go: Fix method call",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b024b24c7c8597bde4aac4d684331ed97e757c95"
+        },
+        {
+          "sha": "d3043017b9f5a0143a8cbc0f1fb63df61fd9ac11",
+          "author_date": "2021-07-31T15:18:30Z",
+          "message": "Setup mdox\n\nSigned-off-by: Saswata Mukherjee <saswataminsta@yahoo.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d3043017b9f5a0143a8cbc0f1fb63df61fd9ac11"
+        },
+        {
+          "sha": "4b28f04aae86c63532c9f05bf13446e20a27df1b",
+          "author_date": "2021-08-17T12:07:45Z",
+          "message": "Add mdox link checking and formatting\n\nSigned-off-by: Saswata Mukherjee <saswataminsta@yahoo.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/4b28f04aae86c63532c9f05bf13446e20a27df1b"
+        },
+        {
+          "sha": "eebe34d1d3cdb3d0ca55f855e84c1367c84f733a",
+          "author_date": "2021-10-01T11:17:26Z",
+          "message": "Update mdox to latest\n\nSigned-off-by: Saswata Mukherjee <saswataminsta@yahoo.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/eebe34d1d3cdb3d0ca55f855e84c1367c84f733a"
+        },
+        {
+          "sha": "06e2ab9e462d6ec8653aa6ecbe72437477bcde6b",
+          "author_date": "2021-10-04T15:50:30Z",
+          "message": "docs: Regenerate docs/crd",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/06e2ab9e462d6ec8653aa6ecbe72437477bcde6b"
+        },
+        {
+          "sha": "f9df8e02f593467c533177518b9aa596072b2ce3",
+          "author_date": "2021-10-04T23:02:27Z",
+          "message": "format generate",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f9df8e02f593467c533177518b9aa596072b2ce3"
+        },
+        {
+          "sha": "44086aa3ab37715b058ea67fad1fd3a963380f54",
+          "author_date": "2021-10-05T07:57:28Z",
+          "message": "Merge pull request #4196 from saswatamcode/add-mdox\n\nPropose `mdox` for docs formatting and link checking",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/44086aa3ab37715b058ea67fad1fd3a963380f54"
+        },
+        {
+          "sha": "8d9f4c8d146714b9d687027f026ae712893dc61f",
+          "author_date": "2021-10-05T09:15:49Z",
+          "message": "CHANGELOG.md: fix typo\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/8d9f4c8d146714b9d687027f026ae712893dc61f"
+        },
+        {
+          "sha": "5000335f77d1d76a78d251584fb9a9a5ae903ea6",
+          "author_date": "2021-10-05T09:16:49Z",
+          "message": "Merge pull request #4183 from slashpai/remove_ctx_struct\n\nRemove context field from framework struct in tests",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5000335f77d1d76a78d251584fb9a9a5ae903ea6"
+        },
+        {
+          "sha": "7b9133dba40ba1d75f0a755df61e80031250f50c",
+          "author_date": "2021-10-05T09:53:40Z",
+          "message": "Merge pull request #4283 from r0bj/thanos_ruler_default_replica_label\n\nThanosRulerSpec.labels: always set default replica label",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/7b9133dba40ba1d75f0a755df61e80031250f50c"
+        },
+        {
+          "sha": "099c167d15047e3bbb64353a15a73d8174d6d5a9",
+          "author_date": "2021-10-05T11:44:54Z",
+          "message": "Merge pull request #4305 from simonpasquier/fix-changelog\n\nCHANGELOG.md: fix typo",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/099c167d15047e3bbb64353a15a73d8174d6d5a9"
+        },
+        {
+          "sha": "1b13e573c7ad533010407544f88dc4a78320b134",
+          "author_date": "2021-10-05T13:43:53Z",
+          "message": "Merge pull request #4306 from prometheus-operator/release-0.51\n\nMerge release-0.51",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/1b13e573c7ad533010407544f88dc4a78320b134"
+        },
+        {
+          "sha": "9d106f2e865e16f7a0353eab1876ae00ebc9bca6",
+          "author_date": "2021-10-05T14:54:36Z",
+          "message": "Merge pull request #4293 from simonpasquier/update-kube-prometheus-instructions",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9d106f2e865e16f7a0353eab1876ae00ebc9bca6"
+        },
+        {
+          "sha": "80a3ac44235bf02447c9e31910fae5f91a85f5fb",
+          "author_date": "2021-10-06T01:49:11Z",
+          "message": "docs: Regenerate Documentation/api.md",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/80a3ac44235bf02447c9e31910fae5f91a85f5fb"
+        },
+        {
+          "sha": "598e6c0465b3aa6a777ec72c30337e275805e552",
+          "author_date": "2021-10-06T11:51:25Z",
+          "message": ".github: automatically update dependencies",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/598e6c0465b3aa6a777ec72c30337e275805e552"
+        },
+        {
+          "sha": "e230fc900d03e0b1cef678e913a9cca55afb1779",
+          "author_date": "2021-10-05T11:29:54Z",
+          "message": "thanos: allow for injecting alert relabeling config to thanos ruler\n\nthis extends the configuration of thanos ruler to include the advanced\nrelabelling configuration for alerts, being identical to the\nalert_relabel_configs field of Prometheus",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/e230fc900d03e0b1cef678e913a9cca55afb1779"
+        },
+        {
+          "sha": "e5868492f5e7375f78cec60919b01ea6654418d6",
+          "author_date": "2021-10-06T14:47:02Z",
+          "message": "Merge pull request #4303 from sjentzsch/thanos-rule-alert-relabeling\n\nthanos: allow injecting alert relabelling configuration for thanos ruler",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/e5868492f5e7375f78cec60919b01ea6654418d6"
+        },
+        {
+          "sha": "a8ae37fa9ec3753a46fd3e56d650579e24f7a813",
+          "author_date": "2021-10-06T17:56:32Z",
+          "message": "Merge pull request #4310 from paulfantom/dependabot-intro",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/a8ae37fa9ec3753a46fd3e56d650579e24f7a813"
+        },
+        {
+          "sha": "2f36ef93a79e79fcdf220992eb240c7ca7a05dad",
+          "author_date": "2021-10-07T06:34:09Z",
+          "message": "*: pin to golang 1.17\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/2f36ef93a79e79fcdf220992eb240c7ca7a05dad"
+        },
+        {
+          "sha": "bdf703d5a26c9ecc8a5e9c7e851a1d5112e77b7f",
+          "author_date": "2021-10-07T07:00:52Z",
+          "message": "*: Run make go-fmt with 1.17",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/bdf703d5a26c9ecc8a5e9c7e851a1d5112e77b7f"
+        },
+        {
+          "sha": "f4c46f40f3306334ee12daa1922751cf186de91b",
+          "author_date": "2021-10-07T07:06:42Z",
+          "message": "*: Run make tidy",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f4c46f40f3306334ee12daa1922751cf186de91b"
+        },
+        {
+          "sha": "5d1a75f2acb9dd6db710fb44a052c016e094a1cc",
+          "author_date": "2021-10-07T07:29:12Z",
+          "message": "Merge pull request #4299 from mac-chaffee/master\n\ndocs: Improve docs and error message for \"smarthost\" field",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5d1a75f2acb9dd6db710fb44a052c016e094a1cc"
+        },
+        {
+          "sha": "9087e4296c983638a86a84d87bc0c1a2f649b380",
+          "author_date": "2021-10-07T08:24:07Z",
+          "message": ".github/workflows: Update workflows to use go 1.17",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9087e4296c983638a86a84d87bc0c1a2f649b380"
+        },
+        {
+          "sha": "5739687a8f11a26af08c682751921f1af175c9e9",
+          "author_date": "2021-10-07T08:48:30Z",
+          "message": "Add .gitattributes\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5739687a8f11a26af08c682751921f1af175c9e9"
+        },
+        {
+          "sha": "116f0317652f46e7f55bf9a28831f0c6add1beff",
+          "author_date": "2021-10-05T13:35:18Z",
+          "message": "alertmanager: Support updated matching syntax in raw config for inhibit rules\n\nSee https://prometheus.io/docs/alerting/latest/configuration/#matcher\n\nThis change allows the raw config to parse the updated matching syntax\nand will allow us to pave the way to move away from the deprecated\ntarget_match, target_match_re, source_match, source_match_re fields.",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/116f0317652f46e7f55bf9a28831f0c6add1beff"
+        },
+        {
+          "sha": "b704957465caf32c59c4ce27d60970cfee7f568d",
+          "author_date": "2021-10-07T14:50:24Z",
+          "message": "Merge pull request #4313 from slashpai/go-1.17\n\nUpdate to go 1.17 and format",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b704957465caf32c59c4ce27d60970cfee7f568d"
+        },
+        {
+          "sha": "60addb4109b2e6e158920f6fefdd60ea782c7da2",
+          "author_date": "2021-10-05T13:38:51Z",
+          "message": "test:e2e: Ensure we parse v2 matcher syntax for user provided inhibit_rule",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/60addb4109b2e6e158920f6fefdd60ea782c7da2"
+        },
+        {
+          "sha": "742b99398f8037483cc0017ed8502d5d40a58a32",
+          "author_date": "2021-09-28T15:50:24Z",
+          "message": "mod: Bump Thanos to v0.23.0\n\nThis bump is intended to pull in required changes in config-reloader\nas per https://github.com/thanos-io/thanos/pull/4594",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/742b99398f8037483cc0017ed8502d5d40a58a32"
+        },
+        {
+          "sha": "aa079bf8f9c0f2fc0a0e6e71841a0a17dcfab37b",
+          "author_date": "2021-09-28T15:51:52Z",
+          "message": "jsonnet: Create alerts for config-reloader sidecar failures",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/aa079bf8f9c0f2fc0a0e6e71841a0a17dcfab37b"
+        },
+        {
+          "sha": "61fa2086fa110a889edce7ebae168b72fabfcb03",
+          "author_date": "2021-10-08T08:31:08Z",
+          "message": "Merge pull request #4307 from PhilipGough/mon-1926-1\n\nalertmanager: Support updated matching syntax in raw config for inhib…",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/61fa2086fa110a889edce7ebae168b72fabfcb03"
+        },
+        {
+          "sha": "b985e8c2463c936d146ff363fc5a098b902bedb1",
+          "author_date": "2021-10-08T08:31:32Z",
+          "message": "Merge pull request #4314 from slashpai/add_gitattr\n\nAdd .gitattributes",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b985e8c2463c936d146ff363fc5a098b902bedb1"
+        },
+        {
+          "sha": "05fce1eb80f57a27b485d1f7b7249fbf0c4cb18a",
+          "author_date": "2021-10-08T08:33:32Z",
+          "message": "Merge pull request #4294 from PhilipGough/mon-1085\n\nAdd alerts for config reloader sidecars",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/05fce1eb80f57a27b485d1f7b7249fbf0c4cb18a"
+        },
+        {
+          "sha": "041b23859a0c25bd6ff093d96dcae08e32b558bf",
+          "author_date": "2021-10-08T15:39:54Z",
+          "message": ".github: rename dependabot configuration file",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/041b23859a0c25bd6ff093d96dcae08e32b558bf"
+        },
+        {
+          "sha": "868bdecc46e95488dc0e994c9a61f2a0180eee28",
+          "author_date": "2021-10-09T22:46:28Z",
+          "message": "Extend sharding capabilities to additionalScrapeConfigs\n\nSigned-off-by: Dustin Hooten <dustinhooten@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/868bdecc46e95488dc0e994c9a61f2a0180eee28"
+        },
+        {
+          "sha": "77ba2fa39d723aba910b05a0c922b970aab95ae0",
+          "author_date": "2021-10-11T07:41:59Z",
+          "message": "Merge pull request #4321 from paulfantom/dependabot-file-name",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/77ba2fa39d723aba910b05a0c922b970aab95ae0"
+        },
+        {
+          "sha": "f95159f8646012f3cb63f2b5ff0d693b7c2d6cdf",
+          "author_date": "2021-10-11T11:10:33Z",
+          "message": "Remote write sigv4 (#3994)\n\n* Support Sigv4 configuration within RemoteWrite\r\n\r\nthis allows the sigv4 configuraiton within remote_write - which is available in\r\nPrometheus 2.26.0\r\n\r\nFixes #3987\r\n\r\nCo-authored-by: Paweł Krupa <pawel@krupa.net.pl>\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>\r\n\r\n* extend asset package with SigV4 credentials\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>\r\n\r\n* generate remote_write config using SigV4 assets\r\n\r\nSigned-off-by: inge4pres <fgualazzi@gmail.com>\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>\r\n\r\n* add tests for sigv4 configuration in spec\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>\r\n\r\n* pkg: address latest review comments\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>\r\n\r\n* pkg/{prometheus,store}: fix nil pointer exception\r\n\r\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>\r\n\r\nCo-authored-by: inge4pres <fgualazzi@gmail.com>\r\nCo-authored-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f95159f8646012f3cb63f2b5ff0d693b7c2d6cdf"
+        },
+        {
+          "sha": "720c59357838b349c1d35239f9bc088e987731e6",
+          "author_date": "2021-10-12T07:37:31Z",
+          "message": "Add myself as a maintainer\n\nSigned-off-by: fpetkovski <filip.petkovsky@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/720c59357838b349c1d35239f9bc088e987731e6"
+        },
+        {
+          "sha": "996c99744631260e62205d7f390a85e132042c06",
+          "author_date": "2021-10-12T08:53:11Z",
+          "message": "Merge pull request #4328 from fpetkovski/add-maintainer",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/996c99744631260e62205d7f390a85e132042c06"
+        },
+        {
+          "sha": "13de2f5206dd8ebc45c3e7a776d7b118e9d64ff9",
+          "author_date": "2021-10-13T13:19:46Z",
+          "message": ".github/stale.yml: exclude issues with 'help wanted'\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/13de2f5206dd8ebc45c3e7a776d7b118e9d64ff9"
+        },
+        {
+          "sha": "d8584e51dc23929ab1863ac866b53ab9de8e60c1",
+          "author_date": "2021-10-13T16:19:42Z",
+          "message": "Merge pull request #4331 from simonpasquier/exclude-help-wanted-issues-from-stale",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d8584e51dc23929ab1863ac866b53ab9de8e60c1"
+        },
+        {
+          "sha": "0a38647379a5e93f639bf8e634deabcc32e01fb6",
+          "author_date": "2021-10-15T10:23:32Z",
+          "message": "alertmanager: Support updated matching syntax in raw config for route (#4309)\n\n* alertmanager: Support updated matching syntax in raw config for route\r\n\r\n* test:e2e: Extend raw config to include route matchers output",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/0a38647379a5e93f639bf8e634deabcc32e01fb6"
+        },
+        {
+          "sha": "d91138ffc036fedb85d6ed09756ce1a8dbcd52c7",
+          "author_date": "2021-10-15T12:24:52Z",
+          "message": ".github: introduce a central place for storing CI env variables\n\nSigned-off-by: paulfantom <pawel@krupa.net.pl>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d91138ffc036fedb85d6ed09756ce1a8dbcd52c7"
+        },
+        {
+          "sha": "294d4fa1408eda2520321732f6fd1844e776d651",
+          "author_date": "2021-10-18T08:43:26Z",
+          "message": "Merge pull request #4334 from paulfantom/github-env",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/294d4fa1408eda2520321732f6fd1844e776d651"
+        },
+        {
+          "sha": "ebab9793e2faec316249165dc6caddf51ad94492",
+          "author_date": "2021-10-19T06:23:33Z",
+          "message": "Sign myself up for 0.52 release",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ebab9793e2faec316249165dc6caddf51ad94492"
+        },
+        {
+          "sha": "2a1da2db69974d7fbf6626ed30ba44b7786a2f17",
+          "author_date": "2021-10-19T12:50:32Z",
+          "message": "Merge pull request #4342 from fpetkovski/release-signup\n\nSign myself up for 0.52 release",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/2a1da2db69974d7fbf6626ed30ba44b7786a2f17"
+        },
+        {
+          "sha": "0cc553b1fedf448ea484c8e5243a475fe4a60312",
+          "author_date": "2021-10-19T15:08:55Z",
+          "message": "PR feedback - improve readability\n\nSigned-off-by: Dustin Hooten <dustinhooten@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/0cc553b1fedf448ea484c8e5243a475fe4a60312"
+        },
+        {
+          "sha": "53308c1944f0100d320a8b7db7932206c098698b",
+          "author_date": "2021-10-20T10:06:41Z",
+          "message": "alertmanager: Split validation and checking that requires network/external ops (#4316)\n\n* alertmanager: Add validations to AlertManagerConfig\r\n\r\nThis change ensures we validate as much of the alertmanager config\r\nas possible before we proceed with any validation/checking or mutation\r\nof the object itself or any external resource that requires reading/writing\r\nfrom/to an external entity (Secret, ConfigMap, ...).\r\n\r\n* alertmanager: Remove duplicate validation in conversion phase\r\n\r\n* alertmanager: Remove duplicate validation from checking functions\r\n\r\nWith this change, as we select configs, we can validate the minimum requirements\r\nof the objects are met before checking the the dependenices exist and are valid.\r\n\r\nThis will avoid any expensive network calls or mutation before minimum\r\nvalidation has occured.",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/53308c1944f0100d320a8b7db7932206c098698b"
+        },
+        {
+          "sha": "f710e9d66a09efdb8edc144af555718b7d7ed2e3",
+          "author_date": "2021-10-20T11:49:07Z",
+          "message": "Merge pull request #4324 from hooten/3802\n\nExtend sharding capabilities to additionalScrapeConfigs",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f710e9d66a09efdb8edc144af555718b7d7ed2e3"
+        },
+        {
+          "sha": "c285173d698e23960c36f4a052177b1249b38787",
+          "author_date": "2021-10-25T11:56:49Z",
+          "message": "pkg/prometheus/promcfg*.go: Allow matchLabels selector to have empty label values (#4327)\n\n* pkg/prometheus/promcfg*.go: Allow matchLabels to have empty label values\r\n\r\nThis was needed to allow empty label values in matchLabels selector without which it will select all endpoints in a namespace\r\n\r\nFixes #4325\r\n\r\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>\r\n\r\n* pkg/prometheus/promcfg*.go: Allow matchLabels to have empty label values in matchExpressions",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/c285173d698e23960c36f4a052177b1249b38787"
+        },
+        {
+          "sha": "436aaf1ca337f825154eab422c20d16a4a9c231d",
+          "author_date": "2021-10-25T14:15:45Z",
+          "message": "*: Remove CRD generation wrapper\n\nSigned-off-by: paulfantom <pawel@krupa.net.pl>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/436aaf1ca337f825154eab422c20d16a4a9c231d"
+        },
+        {
+          "sha": "97d7df9ebbe1c93085c4f78c67697e70176b4f80",
+          "author_date": "2021-10-26T08:31:46Z",
+          "message": "pkg/prometheus: prevent rule files collision",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/97d7df9ebbe1c93085c4f78c67697e70176b4f80"
+        },
+        {
+          "sha": "70c84b3db81e429db1e4427b4f795a3fcaad7123",
+          "author_date": "2021-10-26T10:04:34Z",
+          "message": "Merge pull request #4346 from paulfantom/crd-generation\n\nRemove CRD generation wrapper",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/70c84b3db81e429db1e4427b4f795a3fcaad7123"
+        },
+        {
+          "sha": "9e2560d66c7678e106882e252be775312a2f4d93",
+          "author_date": "2021-10-27T08:44:09Z",
+          "message": "Merge pull request #4347 from paulfantom/unique-rule-file-name\n\nPrevent collisions in rule file names",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9e2560d66c7678e106882e252be775312a2f4d93"
+        },
+        {
+          "sha": "65d7fe8ac6d710583884565c37066c2ab971fecf",
+          "author_date": "2021-10-27T09:42:12Z",
+          "message": "pkg/prometheus/promcfg.go: Add validation for duration and size fields (#4308)\n\n* pkg/prometheus/promcfg.go: Add validation for duration and size fields\r\n\r\nRelated to #4282\r\n\r\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>\r\n\r\n* pkg/prometheus/promcfg.go: Fix go-linting\r\n\r\n* pkg/prometheus/promcfg.go: Update validation func for duration\r\n\r\n* pkg/prometheus/promcfg.go: Fix nits\r\n\r\n* pkg/prometheus/promcfg_test.go: Add validation tests\r\n\r\n* pkg/prometheus/promcfg_test.go: Improve readability",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/65d7fe8ac6d710583884565c37066c2ab971fecf"
+        },
+        {
+          "sha": "e23ff77fceba6a5d9f190f5d1a123c87701dc964",
+          "author_date": "2021-10-27T15:06:06Z",
+          "message": "Add support for generic ephemeral storage (#4326)\n\n* Bump monitoring apis k8s library dependencies to 0.22.2 and run go mod tidy\r\n\r\n* Run make generate\r\n\r\n* Add support for generic ephemeral volumes as main data storage to AM and Prom\r\n\r\n* Run make generate\r\n\r\n* Add support for ephemeral storage to Thanos Ruler and add unit tests for storage\r\n\r\n* Fix storage unit test: a nil volume should fail the test\r\n\r\n* Clarify that generic ephemeral storage is a beta feature\r\n\r\n* Add a comment to clarify StorageSpec's priority\r\n\r\n* Run make generate",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/e23ff77fceba6a5d9f190f5d1a123c87701dc964"
+        },
+        {
+          "sha": "04e4b7d99c25755eef82a2c0beb488f2db13c24e",
+          "author_date": "2021-10-27T16:26:12Z",
+          "message": "readme: Change the kubectl command to create resources from bundle",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/04e4b7d99c25755eef82a2c0beb488f2db13c24e"
+        },
+        {
+          "sha": "27abc70fbd35a27d2270273c06b14d1a86d1afd8",
+          "author_date": "2021-10-28T04:25:08Z",
+          "message": "pkg: Remove app label from statefulsets\n\nThis change removes app label for prometheus,alertmanager and thanosruler pods\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/27abc70fbd35a27d2270273c06b14d1a86d1afd8"
+        },
+        {
+          "sha": "753b03a9f3aa34e81383164a483a503bb6e2a4af",
+          "author_date": "2021-10-28T07:39:08Z",
+          "message": "Merge pull request #4350 from slashpai/remove_app_label\n\npkg: Remove app label from statefulsets/pods",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/753b03a9f3aa34e81383164a483a503bb6e2a4af"
+        },
+        {
+          "sha": "da97db812ace75af3f6882f24ab9e3c57fb8dd2a",
+          "author_date": "2021-10-28T14:32:22Z",
+          "message": "Adds validating webhook for AlertManagerConfig (#4338)\n\n* alertmanager: Expose validation function for AmConfig CR\r\n\r\n* admission: Extend admission controller for AmConf validation\r\n\r\n* cmd:operator: Register metrics for am validating webhook\r\n\r\n* test:e2e: Setup and test validating webhook for AmConf CR",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/da97db812ace75af3f6882f24ab9e3c57fb8dd2a"
+        },
+        {
+          "sha": "9c404fcdfb6809a88545e9dde83c49661b66708c",
+          "author_date": "2021-10-28T15:32:35Z",
+          "message": "Merge pull request #4349 from RafalKorepta/fix-GH-4348\n\nreadme: Change the kubectl command to create resources from bundle",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9c404fcdfb6809a88545e9dde83c49661b66708c"
+        },
+        {
+          "sha": "1e8cfe33d303bcf29606f7512ea5af4aed232b04",
+          "author_date": "2021-10-26T20:31:31Z",
+          "message": "scripts: Add s390x support to docker images\n\nthis adds s390x support to the CI workflow for docker images\n\nSigned-off-by: Kun-Lu <kun.lu@ibm.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/1e8cfe33d303bcf29606f7512ea5af4aed232b04"
+        },
+        {
+          "sha": "f73fd9ca7487d1a391363068fc7769fc76c389b5",
+          "author_date": "2021-10-29T08:55:15Z",
+          "message": "pkg/common: Create common package to share methods\n\nThis is to create a common package to share methods across other packages",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f73fd9ca7487d1a391363068fc7769fc76c389b5"
+        },
+        {
+          "sha": "6747411a183c079dc3f248ffcdcb310e03d83862",
+          "author_date": "2021-10-29T08:56:11Z",
+          "message": "pkg/prometheus/promcfg.go: Update to use common package",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/6747411a183c079dc3f248ffcdcb310e03d83862"
+        },
+        {
+          "sha": "d43ea4a9e59359c77a37134b7edd7b91652a5736",
+          "author_date": "2021-10-29T08:56:48Z",
+          "message": "pkg/alertmanager: Add validation for duration fields in AM\n\nFixes #4282",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d43ea4a9e59359c77a37134b7edd7b91652a5736"
+        },
+        {
+          "sha": "b8261ae8c10594134ff68f02c429eca769443dcb",
+          "author_date": "2021-10-29T10:20:20Z",
+          "message": "pkg/thanos: Add validation for duration fields in thanos\n\nFixes #4282\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b8261ae8c10594134ff68f02c429eca769443dcb"
+        },
+        {
+          "sha": "9221f58e65f3ba17838a0e54883763791633d94c",
+          "author_date": "2021-10-29T13:45:53Z",
+          "message": "Merge pull request #4351 from linux-on-ibm-z/add_s390x_support_to_docker_images\n\nscripts: Add s390x support to docker images",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9221f58e65f3ba17838a0e54883763791633d94c"
+        },
+        {
+          "sha": "41b6c696cd5e23cacf50e9d37f054af1e3dde712",
+          "author_date": "2021-10-29T14:01:11Z",
+          "message": "pkg: Move validations to operator package",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/41b6c696cd5e23cacf50e9d37f054af1e3dde712"
+        },
+        {
+          "sha": "4aa1fee4da3771b3b8730f10c673d9f98d08cb71",
+          "author_date": "2021-10-29T15:06:37Z",
+          "message": "pkg/alertmanager/amcfg.go: Add validation for Retention",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/4aa1fee4da3771b3b8730f10c673d9f98d08cb71"
+        },
+        {
+          "sha": "4817e21be872c3526252624648d0b3a935ef6472",
+          "author_date": "2021-10-28T18:52:13Z",
+          "message": "alertmanager: only load cfg when writing cfg\n\nBackground\n---\nThe operator can merge configuration when the\n[`AlertmanagerConfigSelector`](https://github.com/prometheus-operator/prometheus-operator/blob/83fe36566f4e0894eb5ffcd2638a0f039a17bdeb/pkg/apis/monitoring/v1/types.go#L1547)\nis defined. We are validating (using upstream alertmanager) and\nparsing (using internal config) even if we don't need to load config in\nmemory since the user opted to manage the configuration via the secret.\n\nThis can cause problems where there is a missmatch between alertmanager\nconfiguration and the operator internal amcfg struct, for example\nprometheus-operator#4174.\n\nSolution\n---\nOnly validate the configuration from upstream `alertmanager` function,\nand then only load the configuration in memory with the operators struct\nwhen we need to write back to the secret.\n\nAs a cluster admin, I want to be able to pass arbitrary alertmanager\nconfig via the secret, which goes unvalidated by the operator, so that I\ncan make use of latest alertmanager features without being concerned\nabout feature drift between the operator and alertmanager.",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/4817e21be872c3526252624648d0b3a935ef6472"
+        },
+        {
+          "sha": "d4d566730963edc378af6b45ad7ad92ed75c5e92",
+          "author_date": "2021-11-01T08:40:46Z",
+          "message": "example/alertmanger-webhook: remove binary file",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d4d566730963edc378af6b45ad7ad92ed75c5e92"
+        },
+        {
+          "sha": "edc8fa69b9c4b2ac24526eb6e4914916c5371edb",
+          "author_date": "2021-11-01T13:33:49Z",
+          "message": "scripts: bump controller-gen to 0.6.2",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/edc8fa69b9c4b2ac24526eb6e4914916c5371edb"
+        },
+        {
+          "sha": "b291ca68210f82049c7fca9688d49bf97f01853f",
+          "author_date": "2021-11-01T13:35:04Z",
+          "message": "*: do not preserve unknown fields in CRDs\n\nSigned-off-by: paulfantom <pawel@krupa.net.pl>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b291ca68210f82049c7fca9688d49bf97f01853f"
+        },
+        {
+          "sha": "39af4964d1c5fd9eb428ed6ee85a55ec3a4b615b",
+          "author_date": "2021-11-01T13:43:41Z",
+          "message": "*: pass CRD json through jq to have human-readable files",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/39af4964d1c5fd9eb428ed6ee85a55ec3a4b615b"
+        },
+        {
+          "sha": "b0581190ee839bfc9176c6277ea863a13cef15b5",
+          "author_date": "2021-11-01T13:43:51Z",
+          "message": "*: regenerate",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b0581190ee839bfc9176c6277ea863a13cef15b5"
+        },
+        {
+          "sha": "073464c979de54dc1fb78bc372e0d8d9a7d66efd",
+          "author_date": "2021-11-01T16:49:36Z",
+          "message": "Merge pull request #4356 from paulfantom/remove-bin",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/073464c979de54dc1fb78bc372e0d8d9a7d66efd"
+        },
+        {
+          "sha": "1247c8ad5fca9c778737291180f313a86946023b",
+          "author_date": "2021-11-02T09:24:34Z",
+          "message": "Merge pull request #4221 from paulfantom/simpler-crd-generation",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/1247c8ad5fca9c778737291180f313a86946023b"
+        },
+        {
+          "sha": "9f9d3b6c56b2e4a3aec58c3306a4aaf0aabc1b9f",
+          "author_date": "2021-11-02T09:25:14Z",
+          "message": "Merge pull request #4352 from slashpai/validations",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9f9d3b6c56b2e4a3aec58c3306a4aaf0aabc1b9f"
+        },
+        {
+          "sha": "b584ddb941b77afbc8feb6c1e7168aae39aac291",
+          "author_date": "2021-11-02T09:26:15Z",
+          "message": "Shards and Replicas document (#4358)\n\nCo-authored-by: Philip Gough <pgough@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b584ddb941b77afbc8feb6c1e7168aae39aac291"
+        },
+        {
+          "sha": "0d548d1b456c3b290760e14786b3ecc4adb8e50c",
+          "author_date": "2021-11-02T09:27:23Z",
+          "message": "Merge pull request #4333 from steveazz/skip-load-config",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/0d548d1b456c3b290760e14786b3ecc4adb8e50c"
+        },
+        {
+          "sha": "31bc4aee9f9153d642adc6542e9a035aad5718ac",
+          "author_date": "2021-11-02T09:48:02Z",
+          "message": "*: bump thanos and prometheus dependencies\n\nSigned-off-by: paulfantom <pawel@krupa.net.pl>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/31bc4aee9f9153d642adc6542e9a035aad5718ac"
+        },
+        {
+          "sha": "e8a694557586adc17e7e65aef36b6139278f2565",
+          "author_date": "2021-11-02T10:56:46Z",
+          "message": "Merge pull request #4361 from paulfantom/dep-bump",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/e8a694557586adc17e7e65aef36b6139278f2565"
+        },
+        {
+          "sha": "8ef5283b31f627725e190a0885ff590d31b15def",
+          "author_date": "2021-11-03T09:11:05Z",
+          "message": "*: update dependencies\n\nThis commit updates go dependencies and defaults versions for\nPrometheus, Alertmanager and Thanos.",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/8ef5283b31f627725e190a0885ff590d31b15def"
+        },
+        {
+          "sha": "68bef5ba190fc2addeb7aaa4cf7546a7c9b22370",
+          "author_date": "2021-11-03T10:18:23Z",
+          "message": ".github: convert deprecated stale app to GH action\n\nSigned-off-by: paulfantom <pawel@krupa.net.pl>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/68bef5ba190fc2addeb7aaa4cf7546a7c9b22370"
+        },
+        {
+          "sha": "3e705dca32138a281211678bc200fd2170552820",
+          "author_date": "2021-11-03T10:38:05Z",
+          "message": "Merge pull request #4362 from fpetkovski/update-deps\n\n*: update dependencies",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/3e705dca32138a281211678bc200fd2170552820"
+        },
+        {
+          "sha": "98b5fc480b7876db2b181eda14f2094341526aaa",
+          "author_date": "2021-11-03T11:46:32Z",
+          "message": "Merge pull request #4363 from paulfantom/stale",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/98b5fc480b7876db2b181eda14f2094341526aaa"
+        },
+        {
+          "sha": "1ac4fcdbff5c782faa20481611f671ed70439f25",
+          "author_date": "2021-11-03T11:13:56Z",
+          "message": "*: Prepare release 0.52.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/1ac4fcdbff5c782faa20481611f671ed70439f25"
+        },
+        {
+          "sha": "ced341013163af8421906f82ba65d72083b3012b",
+          "author_date": "2021-11-03T12:45:50Z",
+          "message": "Update CHANGELOG.md\n\nCo-authored-by: Paweł Krupa <pawel@krupa.net.pl>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ced341013163af8421906f82ba65d72083b3012b"
+        },
+        {
+          "sha": "eb3ebe35f0e8ed151734319baa0cba3738ce9568",
+          "author_date": "2021-11-03T14:34:33Z",
+          "message": "*: run make update-do-deps && make tidy",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/eb3ebe35f0e8ed151734319baa0cba3738ce9568"
+        },
+        {
+          "sha": "62bfc820e410e06443b01f7f48812790cb67c9ce",
+          "author_date": "2021-11-04T10:17:37Z",
+          "message": "Merge pull request #4365 from fpetkovski/prepare-0.52\n\n*: Prepare release 0.52.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/62bfc820e410e06443b01f7f48812790cb67c9ce"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.52.1",
@@ -1555,8 +2174,57 @@
     {
       "release": "v0.56.3",
       "previous_release": "v0.56.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "71ffd0f4c23fbea1097dc9bb7e6ac8653ffb773b",
+          "author_date": "2022-05-18T11:39:48Z",
+          "message": "*: fix support for new OpsGenie fields in Alertmanager config\n\nDue to a `replace` directive, the project imported v0.23.0 of\nAlertmanager instead of the expected v0.24.0. As a result, the\noperator would fail to load the user-provided configuration if it was\nusing one of the `entity`, `actions` or `opsgenie_api_key_file`.\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/71ffd0f4c23fbea1097dc9bb7e6ac8653ffb773b"
+        },
+        {
+          "sha": "040882172076d3cd7d88e5e1225c107c50182b7a",
+          "author_date": "2022-05-18T13:09:34Z",
+          "message": "Merge pull request #4797 from simonpasquier/fix-4755\n\n*: fix support for new OpsGenie fields in Alertmanager config",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/040882172076d3cd7d88e5e1225c107c50182b7a"
+        },
+        {
+          "sha": "bd658c582c697e256b0c17b329b9d46fdc452eb9",
+          "author_date": "2022-05-12T15:19:25Z",
+          "message": "pkg/prometheus: reduce the number of reconciliations\n\nSince the operator modifies the Prometheus status subresource, the\nupdate event handler is called much more often than before which may\nlead to higher CPU usage. To reduce the number of times the operator\nruns the sync() method, it now compares the generation + labels +\nannotations between the old and new objects (instead of using the\n`resourceVersion` field) to decide whether a reconciliation is needed or\nnot. The same change is made for StatefulSet update handler with the\nexception that the operator updates the Prometheus status subresource if\nthe `resourceVersion` value is different.\n\nThis is inspired by `GenerationChangedPredicate`,\n`LabelChangedPredicate` and `AnnotationChangedPredicate` from\ncontroller-runtime.\n\nCloses #4784\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/bd658c582c697e256b0c17b329b9d46fdc452eb9"
+        },
+        {
+          "sha": "bf84fa5d17c09b68b874bd7d5810d02aabf80139",
+          "author_date": "2022-05-23T09:21:40Z",
+          "message": "Merge pull request #4798 from simonpasquier/reduce-prometheus-syncs\n\npkg/prometheus: reduce the number of reconciliations",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/bf84fa5d17c09b68b874bd7d5810d02aabf80139"
+        },
+        {
+          "sha": "931a87e2280a33e386622e57abe860e296afac55",
+          "author_date": "2022-05-23T13:34:24Z",
+          "message": "pkg/prometheus: add generation to computed hash\n\nThe `spec.resources` field of the Prometheus CRD embeds the\n`resource.Quantity` struct which doesn't work with the hashstructure\nlibrary because some of its fields aren't public. The consequence is\nthat 2 Prometheus objects that differ only by their resources fields\ncould produce the same hash value and the operator wouldn't reconcile\nthe statefulset definition. To circumvent the issue, the object's\ngeneration is added to the hash computation.\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/931a87e2280a33e386622e57abe860e296afac55"
+        },
+        {
+          "sha": "dad34137cddf35aacf850094ec1490b3ed46b541",
+          "author_date": "2022-05-23T15:01:35Z",
+          "message": "Merge pull request #4806 from simonpasquier/fix-hash-computation\n\npkg/prometheus: add generation to computed hash",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/dad34137cddf35aacf850094ec1490b3ed46b541"
+        },
+        {
+          "sha": "81664fb58911751e4fafd81a788ba2e7e44a6126",
+          "author_date": "2022-05-23T09:29:05Z",
+          "message": "*: cut v0.56.3\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/81664fb58911751e4fafd81a788ba2e7e44a6126"
+        },
+        {
+          "sha": "b3c140216b020547d368518b48fbf16448dcdd1b",
+          "author_date": "2022-05-24T09:14:59Z",
+          "message": "Merge pull request #4805 from simonpasquier/release-0.56\n\n*: cut v0.56.3",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b3c140216b020547d368518b48fbf16448dcdd1b"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.57.0",
@@ -1633,8 +2301,33 @@
     {
       "release": "v0.64.1",
       "previous_release": "v0.64.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "906ecb97b972fa77b0ec477e63b24f3ae243ed5c",
+          "author_date": "2023-04-18T12:49:22Z",
+          "message": "Fix panic when collecting metrics from Prometheus Agent controller\n\nSigned-off-by: Arthur Silva Sens <arthursens2005@gmail.com>\n(cherry picked from commit 88a04358fa5c8d44a35c96d45321d4277b54c69d)",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/906ecb97b972fa77b0ec477e63b24f3ae243ed5c"
+        },
+        {
+          "sha": "af550717fb6abf521d69f6ab6feff2dc1320da31",
+          "author_date": "2023-04-24T10:21:44Z",
+          "message": "Merge pull request #5511 from ArthurSens/panic-collector\n\nFix panic when collecting metrics from Prometheus Agent controller",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/af550717fb6abf521d69f6ab6feff2dc1320da31"
+        },
+        {
+          "sha": "ee81ee2c4b0247164c9dff002f12918166ae0a24",
+          "author_date": "2023-04-24T10:25:16Z",
+          "message": "chore: cut v0.64.1\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ee81ee2c4b0247164c9dff002f12918166ae0a24"
+        },
+        {
+          "sha": "3eaa4a084ad853d9a574fee7ce623fbb05b1f15c",
+          "author_date": "2023-04-25T09:43:38Z",
+          "message": "Merge pull request #5524 from simonpasquier/cut-0.64.1\n\nchore: cut v0.64.1",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/3eaa4a084ad853d9a574fee7ce623fbb05b1f15c"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.65.0",
@@ -1885,8 +2578,57 @@
     {
       "release": "v0.84.1",
       "previous_release": "v0.84.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c7717aca8a8d2f5f2593a11b8fdcd6b0c390f207",
+          "author_date": "2025-07-18T17:07:45Z",
+          "message": "Fix no-storage.tsdb.allow-overlapping-compaction argument\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/c7717aca8a8d2f5f2593a11b8fdcd6b0c390f207"
+        },
+        {
+          "sha": "00cb35f414679af4c3cdbfe071db5ad4da875ef2",
+          "author_date": "2025-07-28T15:11:47Z",
+          "message": "Fix test\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/00cb35f414679af4c3cdbfe071db5ad4da875ef2"
+        },
+        {
+          "sha": "01cad74a87dbcb406f3905466060912c0e14f557",
+          "author_date": "2025-07-28T15:16:44Z",
+          "message": "Update CHANGELOG.md\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/01cad74a87dbcb406f3905466060912c0e14f557"
+        },
+        {
+          "sha": "5f650398a029baf025b53c53f895f3e1fd170b22",
+          "author_date": "2025-07-29T07:56:44Z",
+          "message": "Merge pull request #7747 from simonpasquier/fix-overlapping-compaction\n\nFix overlapping compaction argument",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5f650398a029baf025b53c53f895f3e1fd170b22"
+        },
+        {
+          "sha": "7201f4a51c8e54b5b820c33666577c0a8454c1e3",
+          "author_date": "2025-07-29T11:47:59Z",
+          "message": "fix: log only valid resources\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/7201f4a51c8e54b5b820c33666577c0a8454c1e3"
+        },
+        {
+          "sha": "b3d009b926039af308739996fc591162f1de6aa7",
+          "author_date": "2025-07-30T15:44:29Z",
+          "message": "fix: log only valid resources (#7749)\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b3d009b926039af308739996fc591162f1de6aa7"
+        },
+        {
+          "sha": "3786f498d225b90913ee4340820b0f856c5e0977",
+          "author_date": "2025-08-06T03:01:01Z",
+          "message": "chore: cut v0.84.1\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/3786f498d225b90913ee4340820b0f856c5e0977"
+        },
+        {
+          "sha": "024ca8447b74f562055424899f1c3d5a51ff4492",
+          "author_date": "2025-08-06T07:22:00Z",
+          "message": "Merge pull request #7777 from slashpai/cut-0.84\n\nchore: cut v0.84.1",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/024ca8447b74f562055424899f1c3d5a51ff4492"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.85.0",
@@ -1987,8 +2729,609 @@
     {
       "release": "v0.94.0",
       "previous_release": "v0.93.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "cd9603de9fc1c2926c8d5a369e6dd8434e08cb19",
+          "author_date": "2026-07-29T10:04:07Z",
+          "message": "fix json tag error\n\nSigned-off-by: dongjiang <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/cd9603de9fc1c2926c8d5a369e6dd8434e08cb19"
+        },
+        {
+          "sha": "5c2e2ca26e82c497c5059f88f57e7618dc8eb565",
+          "author_date": "2026-07-29T11:49:10Z",
+          "message": "Merge pull request #8730 from kubeservice-stack/fix-tracingconfig-bug\n\nfix: correct invalid JSON struct tags in TracingConfig",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5c2e2ca26e82c497c5059f88f57e7618dc8eb565"
+        },
+        {
+          "sha": "ff03216a28ff3dc70b9b5eef8b3994194fd475dd",
+          "author_date": "2026-07-29T12:42:38Z",
+          "message": "build(deps): bump github.com/thanos-io/thanos from 0.42.2 to 0.42.3\n\nBumps [github.com/thanos-io/thanos](https://github.com/thanos-io/thanos) from 0.42.2 to 0.42.3.\n- [Release notes](https://github.com/thanos-io/thanos/releases)\n- [Changelog](https://github.com/thanos-io/thanos/blob/v0.42.3/CHANGELOG.md)\n- [Commits](https://github.com/thanos-io/thanos/compare/v0.42.2...v0.42.3)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/thanos-io/thanos\n  dependency-version: 0.42.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ff03216a28ff3dc70b9b5eef8b3994194fd475dd"
+        },
+        {
+          "sha": "45e379102ae7332bb6fe71997aeb37baab88813f",
+          "author_date": "2026-07-29T12:42:49Z",
+          "message": "build(deps): bump docker/login-action in the github-actions-deps group\n\nBumps the github-actions-deps group with 1 update: [docker/login-action](https://github.com/docker/login-action).\n\n\nUpdates `docker/login-action` from 4.5.2 to 4.6.0\n- [Release notes](https://github.com/docker/login-action/releases)\n- [Commits](https://github.com/docker/login-action/compare/371161bbe7024a29a25c5e19bfcbc0804fe9ad2c...dbcb813823bdd20940b903addbd779551569679f)\n\n---\nupdated-dependencies:\n- dependency-name: docker/login-action\n  dependency-version: 4.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: github-actions-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/45e379102ae7332bb6fe71997aeb37baab88813f"
+        },
+        {
+          "sha": "5cbd2131d7828556c4e281c07af29b897b462e89",
+          "author_date": "2026-07-29T13:15:32Z",
+          "message": "Merge pull request #8731 from prometheus-operator/dependabot/go_modules/github.com/thanos-io/thanos-0.42.3\n\nbuild(deps): bump github.com/thanos-io/thanos from 0.42.2 to 0.42.3",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5cbd2131d7828556c4e281c07af29b897b462e89"
+        },
+        {
+          "sha": "5cf3ed4d7951c055f4448d670bd5bbb6ebb707c4",
+          "author_date": "2026-07-29T13:22:07Z",
+          "message": "Merge pull request #8732 from prometheus-operator/dependabot/github_actions/github-actions-deps-6382876e44\n\nbuild(deps): bump docker/login-action from 4.5.2 to 4.6.0 in the github-actions-deps group",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5cf3ed4d7951c055f4448d670bd5bbb6ebb707c4"
+        },
+        {
+          "sha": "d18b62863faf0e673f88d2014ece9e24ba292f3f",
+          "author_date": "2026-07-30T12:42:51Z",
+          "message": "build(deps): bump github.com/prometheus-community/prom-label-proxy\n\nBumps [github.com/prometheus-community/prom-label-proxy](https://github.com/prometheus-community/prom-label-proxy) from 0.14.0 to 0.15.0.\n- [Release notes](https://github.com/prometheus-community/prom-label-proxy/releases)\n- [Changelog](https://github.com/prometheus-community/prom-label-proxy/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prometheus-community/prom-label-proxy/compare/v0.14.0...v0.15.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/prometheus-community/prom-label-proxy\n  dependency-version: 0.15.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d18b62863faf0e673f88d2014ece9e24ba292f3f"
+        },
+        {
+          "sha": "e927a3c7c9db29522455a28dd0aa70a8ac13b22c",
+          "author_date": "2026-07-30T13:15:56Z",
+          "message": "Merge pull request #8735 from prometheus-operator/dependabot/go_modules/github.com/prometheus-community/prom-label-proxy-0.15.0\n\nbuild(deps): bump github.com/prometheus-community/prom-label-proxy from 0.14.0 to 0.15.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/e927a3c7c9db29522455a28dd0aa70a8ac13b22c"
+        },
+        {
+          "sha": "b0faf0bcc2225fbb5490f26f05670272d04f42a2",
+          "author_date": "2026-07-30T14:02:12Z",
+          "message": "chore: update prometheus to latest 3.13.2\n\nSigned-off-by: Hélia Barroso <helia_barroso@hotmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b0faf0bcc2225fbb5490f26f05670272d04f42a2"
+        },
+        {
+          "sha": "dbe04d4b9712573dd2279b8d365793e8ad0e1513",
+          "author_date": "2026-07-30T15:05:11Z",
+          "message": "Merge pull request #8736 from heliapb/chore/bump_prom_latest\n\nchore: update prometheus to latest 3.13.2",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/dbe04d4b9712573dd2279b8d365793e8ad0e1513"
+        },
+        {
+          "sha": "ab9b5c5e21f041ff4164a7d0eae499fdf70e2c23",
+          "author_date": "2026-07-31T03:38:23Z",
+          "message": "chore: Update thanos version to v0.42.4 (#8734)\n\n* Update thanos version to v0.42.4\n\nSigned-off-by: dongjiang <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ab9b5c5e21f041ff4164a7d0eae499fdf70e2c23"
+        },
+        {
+          "sha": "bfe8936dde97ff8bd1d94fcb38f2df27b75da708",
+          "author_date": "2026-08-03T09:05:05Z",
+          "message": "Merge pull request #8722 from nutmos/feat/add-operator-test-opsgenie\n\nfeat: add OpsGenie test cases in operator_test.go",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/bfe8936dde97ff8bd1d94fcb38f2df27b75da708"
+        },
+        {
+          "sha": "32ea10d864851576178ef94025b5d9de4e8e776d",
+          "author_date": "2026-08-03T12:42:45Z",
+          "message": "build(deps): bump github.com/prometheus/prometheus\n\nBumps [github.com/prometheus/prometheus](https://github.com/prometheus/prometheus) from 0.313.1 to 0.313.2.\n- [Release notes](https://github.com/prometheus/prometheus/releases)\n- [Changelog](https://github.com/prometheus/prometheus/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prometheus/prometheus/compare/v0.313.1...v0.313.2)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/prometheus/prometheus\n  dependency-version: 0.313.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/32ea10d864851576178ef94025b5d9de4e8e776d"
+        },
+        {
+          "sha": "4d9b207845334963c6ba2395df727bcba71e342e",
+          "author_date": "2026-08-03T13:13:52Z",
+          "message": "Merge pull request #8738 from prometheus-operator/dependabot/go_modules/github.com/prometheus/prometheus-0.313.2\n\nbuild(deps): bump github.com/prometheus/prometheus from 0.313.1 to 0.313.2",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/4d9b207845334963c6ba2395df727bcba71e342e"
+        },
+        {
+          "sha": "64a45cc48098e8bf1875646264ea2d4699a9d8ac",
+          "author_date": "2026-08-04T11:58:15Z",
+          "message": "lint go header (#8737)\n\nSigned-off-by: dongjiang <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/64a45cc48098e8bf1875646264ea2d4699a9d8ac"
+        },
+        {
+          "sha": "34785aa516f012fdedc2a3e0c44c2b66961ce91a",
+          "author_date": "2026-08-04T11:59:02Z",
+          "message": "Feat: add test cases for Alertmanager Config validation for SNS Receiver (#8721)\n\n* alertmanager: add test cases\n\nfor testing sns validations\n\n* alertmanager: update test file\n\nchange method name",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/34785aa516f012fdedc2a3e0c44c2b66961ce91a"
+        },
+        {
+          "sha": "16d7d1ee15bb7f25887dd1d543ec5dea2ff7b67e",
+          "author_date": "2026-08-04T13:57:24Z",
+          "message": "alertmanager: add test case\n\nadd more test cases to discord in operator_test.go",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/16d7d1ee15bb7f25887dd1d543ec5dea2ff7b67e"
+        },
+        {
+          "sha": "4b1294bf757093cab42c614182019089e32f5069",
+          "author_date": "2026-08-05T10:36:52Z",
+          "message": "fix: avoid panic when the kubelet service sync fails\n\nSigned-off-by: Artem Muterko <artem@sopho.tech>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/4b1294bf757093cab42c614182019089e32f5069"
+        },
+        {
+          "sha": "8f2cc0f7d961856b969b9ae085c5a8b376ceb801",
+          "author_date": "2026-08-05T11:46:04Z",
+          "message": "fix: avoid panic when the kubelet service sync fails (#8743)\n\nSigned-off-by: Artem Muterko <artem@sopho.tech>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/8f2cc0f7d961856b969b9ae085c5a8b376ceb801"
+        },
+        {
+          "sha": "f7f57093bacf7d6027cd3d0c0290c17f8be4bc2a",
+          "author_date": "2026-08-07T12:23:17Z",
+          "message": "chore: embed timezone information\n\nThis commit imports `time/tzdata` which embeds the timezone information\nin the binary (the Alertmanager controller depends on Alertmanager which\nmay look up time locations when used in mute/active intervals).\n\nWhile not strictly required, it helps downstream consumers which may use\nscratch/distroless images not including zone information like\ntraditional OSes do.\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f7f57093bacf7d6027cd3d0c0290c17f8be4bc2a"
+        },
+        {
+          "sha": "07d9c1101915ff646d3f220a4be6bd98e52a473a",
+          "author_date": "2026-08-07T12:30:16Z",
+          "message": "chore: update RELEASE.md\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/07d9c1101915ff646d3f220a4be6bd98e52a473a"
+        },
+        {
+          "sha": "6316f518f8b732b0183a91a54c36c8fe8c8779af",
+          "author_date": "2026-08-07T13:02:58Z",
+          "message": "Merge pull request #8746 from simonpasquier/update-release\n\nchore: update RELEASE.md",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/6316f518f8b732b0183a91a54c36c8fe8c8779af"
+        },
+        {
+          "sha": "7dba4254753e9dfd70db06038cb7c998c63f5b34",
+          "author_date": "2026-08-07T13:39:05Z",
+          "message": "Merge pull request #8745 from simonpasquier/embed-tzdata\n\nchore: embed timezone information",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/7dba4254753e9dfd70db06038cb7c998c63f5b34"
+        },
+        {
+          "sha": "7813963e8882545e2b129bb5f865ceb4394bc87d",
+          "author_date": "2026-08-08T10:34:55Z",
+          "message": "pkg/alertmanager: add URL validation for Mattermost receiver (#8225)\n\nCo-authored-by: Varun Deep Saini <varun.23bcs10048@ms.sst.scaler.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/7813963e8882545e2b129bb5f865ceb4394bc87d"
+        },
+        {
+          "sha": "6adcebc5076c34f4f55f8f5f7b1e528929373ac7",
+          "author_date": "2026-08-08T10:35:45Z",
+          "message": "alertmanager: add test cases (#8744)\n\nto cover webhook config",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/6adcebc5076c34f4f55f8f5f7b1e528929373ac7"
+        },
+        {
+          "sha": "58b9c7517e93c9e14d3631d849ad0136736bf5af",
+          "author_date": "2026-08-08T11:48:07Z",
+          "message": "alertmanager: update test cases\n\nmove slack to new func",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/58b9c7517e93c9e14d3631d849ad0136736bf5af"
+        },
+        {
+          "sha": "795ad66d5f69b356c404d798161a8efa3a5ad618",
+          "author_date": "2026-08-08T11:54:10Z",
+          "message": "alertmanager: update slack test cases\n\nto extend coverage",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/795ad66d5f69b356c404d798161a8efa3a5ad618"
+        },
+        {
+          "sha": "b963b7ff3a7469a48c17b50b352e4b23f8e7430e",
+          "author_date": "2026-08-08T11:56:07Z",
+          "message": "alertmanager: update test cases\n\nadd valid field config and add the success test case",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/b963b7ff3a7469a48c17b50b352e4b23f8e7430e"
+        },
+        {
+          "sha": "7067424c0b3c53b05bb49f4b9ef34a6ad89f3c54",
+          "author_date": "2026-08-08T11:57:27Z",
+          "message": "alertmanager: update test cases\n\nrename cases",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/7067424c0b3c53b05bb49f4b9ef34a6ad89f3c54"
+        },
+        {
+          "sha": "65062ef8cd3504e976a0c28f2f04c38291ced049",
+          "author_date": "2026-08-10T09:21:21Z",
+          "message": "Merge pull request #8747 from nutmos/feat/validate-slack\n\nFeat: add test case for Alertmanager Config validation Slack receiver",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/65062ef8cd3504e976a0c28f2f04c38291ced049"
+        },
+        {
+          "sha": "ac4597771e5f417b2c981c782b18cf7fd825f202",
+          "author_date": "2026-08-10T10:55:46Z",
+          "message": "Merge pull request #8741 from nutmos/feat/add-discord-operator-test\n\nFeat: add more test coverage for Discord config in operator test",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ac4597771e5f417b2c981c782b18cf7fd825f202"
+        },
+        {
+          "sha": "c9aca570cba6011c99f98d0054c7f13ff55bcb51",
+          "author_date": "2026-08-10T14:34:11Z",
+          "message": "Merge remote-tracking branch 'origin/release-0.93' into merge-release-0.93",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/c9aca570cba6011c99f98d0054c7f13ff55bcb51"
+        },
+        {
+          "sha": "a5c2a4708b09c5bc16cbaee82e66ba42c00c989b",
+          "author_date": "2026-08-10T16:18:31Z",
+          "message": "Merge pull request #8751 from simonpasquier/merge-release-0.93\n\nMerge release 0.93",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/a5c2a4708b09c5bc16cbaee82e66ba42c00c989b"
+        },
+        {
+          "sha": "74fdda814aa39babf70f3525244f710d3dbfb648",
+          "author_date": "2026-08-11T08:26:54Z",
+          "message": "Merge pull request #8727 from pujitha24/auto/issue-7579\n\noperator: reconcile object on deletion even without state change",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/74fdda814aa39babf70f3525244f710d3dbfb648"
+        },
+        {
+          "sha": "db3462fd7a97956a390a7e162a14b571b16aca1d",
+          "author_date": "2026-08-12T11:09:56Z",
+          "message": "ci: pin GitHub Actions to commit SHAs\n\nReplace mutable action tags with pinned commit SHAs across workflows\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/db3462fd7a97956a390a7e162a14b571b16aca1d"
+        },
+        {
+          "sha": "ecb1dc909ddc231225bc7f4c530f396c01d92e75",
+          "author_date": "2026-08-12T11:42:49Z",
+          "message": "ci: pin GitHub Actions to commit SHAs (#8753)\n\nReplace mutable action tags with pinned commit SHAs across workflows\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ecb1dc909ddc231225bc7f4c530f396c01d92e75"
+        },
+        {
+          "sha": "00a3778aa4fb3202f3e2fea7294180f234e18b73",
+          "author_date": "2026-08-12T08:42:50Z",
+          "message": "chore: remove use of wildcard verbs in ClusterRole\n\nThis commit updates the ClusterRole definition to grant specific\nverbs per resources instead of using the wildcard `*`.\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/00a3778aa4fb3202f3e2fea7294180f234e18b73"
+        },
+        {
+          "sha": "a561838c0bd331807a9ca67d2092b74d7ace8b3d",
+          "author_date": "2026-08-13T07:13:40Z",
+          "message": "Merge pull request #8752 from simonpasquier/remove-wildcard-verbs\n\nchore: remove use of wildcard verbs in ClusterRole",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/a561838c0bd331807a9ca67d2092b74d7ace8b3d"
+        },
+        {
+          "sha": "6664f42dfc48330098ba4be89ab8786776caee9e",
+          "author_date": "2026-08-14T12:43:01Z",
+          "message": "build(deps): bump google.golang.org/protobuf\n\nBumps google.golang.org/protobuf from 1.36.12-0.20260120151049-f2248ac996af to 1.36.12.\n\n---\nupdated-dependencies:\n- dependency-name: google.golang.org/protobuf\n  dependency-version: 1.36.12\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/6664f42dfc48330098ba4be89ab8786776caee9e"
+        },
+        {
+          "sha": "46bed7ead786bb42c8f772de1a67776fc715f7f3",
+          "author_date": "2026-08-14T13:17:48Z",
+          "message": "Merge pull request #8755 from prometheus-operator/dependabot/go_modules/google.golang.org/protobuf-1.36.12\n\nbuild(deps): bump google.golang.org/protobuf from 1.36.12-0.20260120151049-f2248ac996af to 1.36.12",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/46bed7ead786bb42c8f772de1a67776fc715f7f3"
+        },
+        {
+          "sha": "c6640ff225a9b2918192fde00a155af3003c4739",
+          "author_date": "2026-08-17T12:43:00Z",
+          "message": "build(deps): bump golang.org/x/net from 0.57.0 to 0.58.0\n\nBumps [golang.org/x/net](https://github.com/golang/net) from 0.57.0 to 0.58.0.\n- [Commits](https://github.com/golang/net/compare/v0.57.0...v0.58.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/net\n  dependency-version: 0.58.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/c6640ff225a9b2918192fde00a155af3003c4739"
+        },
+        {
+          "sha": "d5f87ce572c15bc2d2e1d8c7c622a68f61a19583",
+          "author_date": "2026-08-17T13:18:12Z",
+          "message": "Merge pull request #8756 from prometheus-operator/dependabot/go_modules/golang.org/x/net-0.58.0\n\nbuild(deps): bump golang.org/x/net from 0.57.0 to 0.58.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/d5f87ce572c15bc2d2e1d8c7c622a68f61a19583"
+        },
+        {
+          "sha": "79b26794b385886de5cfbf859a300eec8ca8c7bf",
+          "author_date": "2026-08-17T13:20:22Z",
+          "message": "build(deps): bump github.com/stretchr/testify from 1.11.1 to 1.12.0\n\nBumps [github.com/stretchr/testify](https://github.com/stretchr/testify) from 1.11.1 to 1.12.0.\n- [Release notes](https://github.com/stretchr/testify/releases)\n- [Commits](https://github.com/stretchr/testify/compare/v1.11.1...v1.12.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/stretchr/testify\n  dependency-version: 1.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/79b26794b385886de5cfbf859a300eec8ca8c7bf"
+        },
+        {
+          "sha": "9a9b52f5fc86fa584980fb29a038dc6902b9a508",
+          "author_date": "2026-08-17T13:54:09Z",
+          "message": "Merge pull request #8757 from prometheus-operator/dependabot/go_modules/github.com/stretchr/testify-1.12.0\n\nbuild(deps): bump github.com/stretchr/testify from 1.11.1 to 1.12.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9a9b52f5fc86fa584980fb29a038dc6902b9a508"
+        },
+        {
+          "sha": "8eb09fa07573905f143342e4bbeeb196a3a1ac51",
+          "author_date": "2026-08-19T03:28:56Z",
+          "message": "update prometheus version\n\nSigned-off-by: dongjiang <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/8eb09fa07573905f143342e4bbeeb196a3a1ac51"
+        },
+        {
+          "sha": "18d19e7cfa03658b6d80f29463fe4200194e5fe1",
+          "author_date": "2026-08-19T08:28:30Z",
+          "message": "Merge pull request #8762 from kubeservice-stack/up-pm-version\n\nchore: update prometheus version to v3.14.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/18d19e7cfa03658b6d80f29463fe4200194e5fe1"
+        },
+        {
+          "sha": "84f1ff3a46e5f03637e9077e4e2bf40d96f98206",
+          "author_date": "2026-08-19T14:21:56Z",
+          "message": "prometheus: require Thanos >= v0.42.0 for delayed compaction\n\nThanos v0.41.0 introduced the sidecar flags for coordinating uploads\nwith Prometheus through the shipper meta file, but its validation\ncompared --storage.tsdb.delay-compact-file.path (an absolute path set\non Prometheus) verbatim against --shipper.meta-file-name (a bare\nfilename set on the sidecar). Those values can never be equal, so any\ndeployment pinning spec.thanos.version to exactly \"0.41.0\" -- the\nminimum version the operator's own docs advertised as supported --\ngets a Thanos sidecar that crash-loops as soon as object storage\nupload and delayed compaction are both enabled (the default since\ndelayed compaction was introduced, unless spec.disableCompaction is\nset). Thanos v0.42.0 fixed the comparison to join --tsdb.path with the\nmeta file name before comparing (see the \"sidecar: fix compaction\ndelay file handling\" pull request in the thanos-io/thanos repository).\nThe operator's default Thanos version (v0.42.4) was never affected by\nthis, only explicit pins to v0.41.0.\n\nRaise minVersionThanosDelayedCompaction from 0.41.0 to 0.42.0 so the\noperator falls back to its existing, known-safe compactionModeDisabled\nbehavior for Thanos v0.41.0 sidecars instead of generating flags that\nmake them crash. Updated the accompanying doc comments (Go source, CRD\nfield description, and Documentation/platform/thanos.md) and\nregenerated all derived files with `make generate`.\n\nValidation: go build ./... and go test ./pkg/prometheus/server/...\nboth pass. Added a regression case to TestThanosDelayedCompaction that\nfails against the old 0.41.0 threshold and passes with the fix --\nconfirmed by reverting only the statefulset.go constant change and\nre-running the test, which fails as expected. golangci-lint and the\nkube-api-linter both report 0 issues on the changed packages. A live\nThanos/Prometheus reproduction was not run (no cluster available\nhere); correctness was verified by reading Thanos's validatePrometheus\nsource at tags v0.41.0 and v0.42.0 directly from upstream.\n\nReport: https://github.com/prometheus-operator/prometheus-operator/issues/8763\nSigned-off-by: Pujitha Paladugu <10557236+pujitha24@users.noreply.github.com>\nAssisted-by: claude-sonnet-5 (via Claude Code)",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/84f1ff3a46e5f03637e9077e4e2bf40d96f98206"
+        },
+        {
+          "sha": "0fd52e805d75f165a1ee7a34afd3b299ff756745",
+          "author_date": "2026-08-20T12:42:44Z",
+          "message": "build(deps): bump github.com/stretchr/testify from 1.12.0 to 1.12.1\n\nBumps [github.com/stretchr/testify](https://github.com/stretchr/testify) from 1.12.0 to 1.12.1.\n- [Release notes](https://github.com/stretchr/testify/releases)\n- [Commits](https://github.com/stretchr/testify/compare/v1.12.0...v1.12.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/stretchr/testify\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/0fd52e805d75f165a1ee7a34afd3b299ff756745"
+        },
+        {
+          "sha": "14cc015898d9d65c70c0f7fe6c11f7af563a65ce",
+          "author_date": "2026-08-20T13:15:43Z",
+          "message": "Merge pull request #8765 from prometheus-operator/dependabot/go_modules/github.com/stretchr/testify-1.12.1\n\nbuild(deps): bump github.com/stretchr/testify from 1.12.0 to 1.12.1",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/14cc015898d9d65c70c0f7fe6c11f7af563a65ce"
+        },
+        {
+          "sha": "adfaddf073ba84ecd31b78247ade8ef150b3a9a3",
+          "author_date": "2026-08-20T13:18:07Z",
+          "message": "build(deps): bump github.com/prometheus/alertmanager\n\nBumps [github.com/prometheus/alertmanager](https://github.com/prometheus/alertmanager) from 0.33.1 to 0.34.0.\n- [Release notes](https://github.com/prometheus/alertmanager/releases)\n- [Changelog](https://github.com/prometheus/alertmanager/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prometheus/alertmanager/compare/v0.33.1...v0.34.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/prometheus/alertmanager\n  dependency-version: 0.34.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/adfaddf073ba84ecd31b78247ade8ef150b3a9a3"
+        },
+        {
+          "sha": "7b78e81e94a902131112bf40c596cbc6a5949e45",
+          "author_date": "2026-08-20T13:51:30Z",
+          "message": "Merge pull request #8766 from prometheus-operator/dependabot/go_modules/github.com/prometheus/alertmanager-0.34.0\n\nbuild(deps): bump github.com/prometheus/alertmanager from 0.33.1 to 0.34.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/7b78e81e94a902131112bf40c596cbc6a5949e45"
+        },
+        {
+          "sha": "9f9c8279feafe07ead808a1f308737458bd559b6",
+          "author_date": "2026-08-24T05:56:31Z",
+          "message": "update golangci-linter version to v2.13.1\n\nSigned-off-by: dongjiang <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/9f9c8279feafe07ead808a1f308737458bd559b6"
+        },
+        {
+          "sha": "1e00daf4e101cbbac959c36f343cc690f6a1aab0",
+          "author_date": "2026-08-24T07:00:41Z",
+          "message": "Merge pull request #8770 from kubeservice-stack/update-golangci-linter\n\nchore: Update golangci-linter version to v2.13.1",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/1e00daf4e101cbbac959c36f343cc690f6a1aab0"
+        },
+        {
+          "sha": "854f35c4ebe9345a43f5130bd66dddb832478b69",
+          "author_date": "2026-08-27T12:42:38Z",
+          "message": "build(deps): bump github.com/prometheus/exporter-toolkit\n\nBumps [github.com/prometheus/exporter-toolkit](https://github.com/prometheus/exporter-toolkit) from 0.17.1 to 0.18.0.\n- [Release notes](https://github.com/prometheus/exporter-toolkit/releases)\n- [Commits](https://github.com/prometheus/exporter-toolkit/compare/v0.17.1...v0.18.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/prometheus/exporter-toolkit\n  dependency-version: 0.18.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/854f35c4ebe9345a43f5130bd66dddb832478b69"
+        },
+        {
+          "sha": "146a99723a91c4b96abc41aeb46a147b04cf092b",
+          "author_date": "2026-08-27T13:16:11Z",
+          "message": "Merge pull request #8774 from prometheus-operator/dependabot/go_modules/github.com/prometheus/exporter-toolkit-0.18.0\n\nbuild(deps): bump github.com/prometheus/exporter-toolkit from 0.17.1 to 0.18.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/146a99723a91c4b96abc41aeb46a147b04cf092b"
+        },
+        {
+          "sha": "c87ab3a8e663948af152c0e8d59a850352aca385",
+          "author_date": "2026-08-29T16:01:44Z",
+          "message": "prometheus: trim verbose Thanos delayed-compaction comments\n\nKeep the essential why (v0.41.0 sidecar validation bug, refs) and\ndrop the redundant flag-by-flag explanation, per review feedback.\n\nSigned-off-by: Pujitha Paladugu <10557236+pujitha24@users.noreply.github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/c87ab3a8e663948af152c0e8d59a850352aca385"
+        },
+        {
+          "sha": "e15038b7e598908482cbf6c4ad94d799b09fe5a4",
+          "author_date": "2026-08-31T12:42:50Z",
+          "message": "build(deps): bump github.com/prometheus/exporter-toolkit\n\nBumps [github.com/prometheus/exporter-toolkit](https://github.com/prometheus/exporter-toolkit) from 0.18.0 to 0.19.0.\n- [Release notes](https://github.com/prometheus/exporter-toolkit/releases)\n- [Commits](https://github.com/prometheus/exporter-toolkit/compare/v0.18.0...v0.19.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/prometheus/exporter-toolkit\n  dependency-version: 0.19.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/e15038b7e598908482cbf6c4ad94d799b09fe5a4"
+        },
+        {
+          "sha": "5e7d09f3e8a3a7398aa3bcea79f1713680be0f51",
+          "author_date": "2026-08-31T13:27:17Z",
+          "message": "Merge pull request #8782 from prometheus-operator/dependabot/go_modules/github.com/prometheus/exporter-toolkit-0.19.0\n\nbuild(deps): bump github.com/prometheus/exporter-toolkit from 0.18.0 to 0.19.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5e7d09f3e8a3a7398aa3bcea79f1713680be0f51"
+        },
+        {
+          "sha": "6ac37f433119ce20547ee3b7332fa00aea56926b",
+          "author_date": "2026-08-29T15:44:23Z",
+          "message": "test: add e2e test for Thanos sidecar delayed compaction\n\nAdd a table-driven e2e test that deploys Prometheus with Thanos sidecar\nand object storage config to verify the sidecar behaviour when delayed\ncompaction is enabled. The test covers v0.42.0 and v0.41.0, asserting\nthat neither version logs a path mismatch error between\n--storage.tsdb.delay-compact-file.path and --shipper.meta-file-name.\n\nRelated-to: #8763\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/6ac37f433119ce20547ee3b7332fa00aea56926b"
+        },
+        {
+          "sha": "ef7a64d949d096cadbb19db8ae15787c9e98ba82",
+          "author_date": "2026-08-31T18:07:37Z",
+          "message": "chore(scrapeconfig): normalize kubebuilder marker syntax\n\nStandardize marker assignment syntax across all SD types:\n\n- Replace `:=` with `=` for Minimum, mapType, listType, and listMapKey\n  markers to match kubebuilder documentation conventions and the\n  majority of existing markers in the file.\n- Standardize Pattern marker quoting from backticks to double-quoted\n  strings for consistency with other SD fields.\n\nThese are pure syntax changes with no behavioral impact on the\ngenerated CRD schema.\n\nRelated-to: #8420\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ef7a64d949d096cadbb19db8ae15787c9e98ba82"
+        },
+        {
+          "sha": "2ee535164d1b70eec78f37945e361eaed63a4299",
+          "author_date": "2026-09-02T08:00:08Z",
+          "message": "build(deps): bump google.golang.org/grpc from 1.82.1 to 1.83.1\n\nBumps [google.golang.org/grpc](https://github.com/grpc/grpc-go) from 1.82.1 to 1.83.1.\n- [Release notes](https://github.com/grpc/grpc-go/releases)\n- [Commits](https://github.com/grpc/grpc-go/compare/v1.82.1...v1.83.1)\n\n---\nupdated-dependencies:\n- dependency-name: google.golang.org/grpc\n  dependency-version: 1.83.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/2ee535164d1b70eec78f37945e361eaed63a4299"
+        },
+        {
+          "sha": "738a569a7648b1934c08abca9883f02bd4a86c9b",
+          "author_date": "2026-09-02T08:00:22Z",
+          "message": "build(deps): bump google.golang.org/grpc in /scripts\n\nBumps [google.golang.org/grpc](https://github.com/grpc/grpc-go) from 1.82.1 to 1.83.1.\n- [Release notes](https://github.com/grpc/grpc-go/releases)\n- [Commits](https://github.com/grpc/grpc-go/compare/v1.82.1...v1.83.1)\n\n---\nupdated-dependencies:\n- dependency-name: google.golang.org/grpc\n  dependency-version: 1.83.1\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/738a569a7648b1934c08abca9883f02bd4a86c9b"
+        },
+        {
+          "sha": "161f165303c60e67ab3e022adfec2db19e79d6b3",
+          "author_date": "2026-09-02T08:32:52Z",
+          "message": "Merge pull request #8787 from prometheus-operator/dependabot/go_modules/google.golang.org/grpc-1.83.1\n\nbuild(deps): bump google.golang.org/grpc from 1.82.1 to 1.83.1",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/161f165303c60e67ab3e022adfec2db19e79d6b3"
+        },
+        {
+          "sha": "bcdf3837b600c788c70972a998b4389d20fe164e",
+          "author_date": "2026-09-02T08:35:27Z",
+          "message": "Merge pull request #8788 from prometheus-operator/dependabot/go_modules/scripts/google.golang.org/grpc-1.83.1\n\nbuild(deps): bump google.golang.org/grpc from 1.82.1 to 1.83.1 in /scripts",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/bcdf3837b600c788c70972a998b4389d20fe164e"
+        },
+        {
+          "sha": "bdef0e13040a0e0864b56031da06371d92c5e553",
+          "author_date": "2026-09-02T09:01:32Z",
+          "message": "chore: bump the k8s-libs version to 0.37.0 (#8784)\n\n* update k8s lib\n\nSigned-off-by: dongjiang1989 <dongjiang1989@126.com>\n\n* fix cspell ci fail\n\nSigned-off-by: dongjiang1989 <dongjiang1989@126.com>\n\n---------\n\nSigned-off-by: dongjiang1989 <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/bdef0e13040a0e0864b56031da06371d92c5e553"
+        },
+        {
+          "sha": "05684d3b072fcc2171093136db31cdc9ab44f421",
+          "author_date": "2026-09-02T13:50:30Z",
+          "message": "feat: clusterpeername spec (#8767)\n\n* feat: clusterpeername\n\n* lint + make --always-make format generate\n\n* nit kubebuilder annotation",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/05684d3b072fcc2171093136db31cdc9ab44f421"
+        },
+        {
+          "sha": "94125c9b2e3825ecca10cf8bb7350b0cc55fdde3",
+          "author_date": "2026-09-02T14:02:05Z",
+          "message": "Merge pull request #8764 from pujitha24/auto/issue-8763\n\nprometheus: require Thanos >= v0.42.0 for delayed compaction",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/94125c9b2e3825ecca10cf8bb7350b0cc55fdde3"
+        },
+        {
+          "sha": "6e9ced22cd9c46626266426cc05150ecf6e62f45",
+          "author_date": "2026-09-02T14:04:16Z",
+          "message": "alertmanager: separate wechat validation test case (#8768)\n\nadd new function to accommodate",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/6e9ced22cd9c46626266426cc05150ecf6e62f45"
+        },
+        {
+          "sha": "15a866b845585ae28bc8f072b54847f9d6ca2b72",
+          "author_date": "2026-09-02T14:23:15Z",
+          "message": "Merge pull request #8785 from slashpai/normalize-marker-syntax\n\nchore(scrapeconfig): normalize kubebuilder marker syntax",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/15a866b845585ae28bc8f072b54847f9d6ca2b72"
+        },
+        {
+          "sha": "5383e5ee0d9cab23033eb4cf5a4f97b8c1faa297",
+          "author_date": "2026-09-02T14:51:56Z",
+          "message": "fix(am): Update Alertmanager support external ID version handling (#8759)\n\nSigned-off-by: dongjiang <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5383e5ee0d9cab23033eb4cf5a4f97b8c1faa297"
+        },
+        {
+          "sha": "15f9985017bbc5fad2f93f571b42cc6f70a99960",
+          "author_date": "2026-09-02T14:52:07Z",
+          "message": "alertmanager: support webhook_url_file option in discord_server recei… (#8035)\n\n* alertmanager: support webhook_url_file option in discord_server receiver config\n\nIn v0.28.0, alertmanager added support for webhook_url_file option in\ndiscord_config. This PR adds the option to the alertmanagerconfigs-crd,\nalong with the appropriate validation and documentation.\n\nFixes #7159\n\n* Update pkg/apis/monitoring/v1alpha1/alertmanager_config_types.go\n\nCo-authored-by: dongjiang <dongjiang2010@gmail.com>\n\n* Rename webhookURLFile -> apiURLFile in DiscordConfig\n\n* Remove APIURLFile from Discord AlertManagerConfig\n\n---------\n\nCo-authored-by: dongjiang <dongjiang2010@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/15f9985017bbc5fad2f93f571b42cc6f70a99960"
+        },
+        {
+          "sha": "f115cf64fef7577b2cf2e4b3184ba4b41e117884",
+          "author_date": "2026-09-02T14:55:19Z",
+          "message": "alertmanager: add e2e test case (#8779)\n\nadd mattermost webhook url",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f115cf64fef7577b2cf2e4b3184ba4b41e117884"
+        },
+        {
+          "sha": "5d6eeee9664ad151d67f34074d40da1818fb7068",
+          "author_date": "2026-09-02T14:56:11Z",
+          "message": "chore: bump go dependencies\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/5d6eeee9664ad151d67f34074d40da1818fb7068"
+        },
+        {
+          "sha": "bb674b9b03c8ff32d0fffe011384570eaf29ec67",
+          "author_date": "2026-09-02T14:56:39Z",
+          "message": "chore: bump kind and k8s version for e2e tests\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/bb674b9b03c8ff32d0fffe011384570eaf29ec67"
+        },
+        {
+          "sha": "63043c9f635c9f35dee9ea353bc929f96434fa95",
+          "author_date": "2026-09-03T08:34:39Z",
+          "message": "update controller tools version to v0.22.0 (#8792)\n\nSigned-off-by: dongjiang1989 <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/63043c9f635c9f35dee9ea353bc929f96434fa95"
+        },
+        {
+          "sha": "40abfc4fe4ca4fa5906b6e01747249ffb9e17a25",
+          "author_date": "2026-09-03T09:03:01Z",
+          "message": "chore: fix lint issue\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/40abfc4fe4ca4fa5906b6e01747249ffb9e17a25"
+        },
+        {
+          "sha": "c1aac4ba0dd6851aca24f8aa0db87661c65c37a0",
+          "author_date": "2026-09-03T09:09:28Z",
+          "message": "fix: avoid panic for pushover receivers using userKeyFile or tokenFile (#8775)\n\n* fix: avoid panic for pushover receivers using userKeyFile or tokenFile\n\nAn AlertmanagerConfig may set userKeyFile and tokenFile instead of the\nuserKey and token secret selectors: validation accepts either form. The\nconverter, however, dereferenced in.UserKey and in.Token unconditionally,\nso such a receiver crashed the operator with a nil pointer dereference\nwhile generating the configuration.\n\nRead the secrets only when the selectors are set, and carry the two file\nfields into the generated config. The sanitiser already handles them,\nincluding the mutual exclusivity and the Alertmanager version gating, so\nit only ever saw empty values before.\n\nSigned-off-by: SaiPisey2 <piseysai0202@gmail.com>\n\n* fix: reword the pushover credential comment\n\nThe validation webhook is optional; the controller always validates the\nresource before reconciling it.\n\nSigned-off-by: SaiPisey2 <piseysai0202@gmail.com>\n\n---------\n\nSigned-off-by: SaiPisey2 <piseysai0202@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/c1aac4ba0dd6851aca24f8aa0db87661c65c37a0"
+        },
+        {
+          "sha": "43f6b05b5044d6b9d0e5fc2d93c6d7c4b1df9032",
+          "author_date": "2026-09-03T11:48:31Z",
+          "message": "Merge pull request #8791 from slashpai/cut-v0.94\n\nchore: bump go dependencies and kind version",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/43f6b05b5044d6b9d0e5fc2d93c6d7c4b1df9032"
+        },
+        {
+          "sha": "19f6d695d6194d3777a336ec5bf1b5d94bfb75af",
+          "author_date": "2026-09-03T12:03:20Z",
+          "message": "feat: add support for percentage-based retention (#8728)\n\n* prometheus: add support for percentage-based retention\n\nPrometheus v3.11.0 exposes storage.tsdb.retention.percentage in the\nconfiguration file only, so there is no command-line flag the operator\ncould pass through additionalArgs. Add spec.retentionPercentage and\nemit it alongside the existing time and size retention settings.\n\nSetting only the percentage no longer falls back to the default 24h\ntime-based retention, which would otherwise silently override the\nuser's intent. Older Prometheus versions ignore the field and keep\ntheir current behaviour.\n\nCloses #8516\n\nAssisted-by: Claude Code (Opus 5)\nSigned-off-by: somaz <genius5711@gmail.com>\n\n* prometheus: add CEL validation for the retentionPercentage range\n\nSigned-off-by: somaz <genius5711@gmail.com>\n\n* prometheus: address review comments on retentionPercentage\n\nDrop the configuration-file implementation detail from the field\ndocumentation, clarify the gracePeriodForPrometheusStorage comment and\nreword the validation error message, as suggested during review.\n\nGenerated artifacts are regenerated in the same commit.\n\nSigned-off-by: somaz <genius5711@gmail.com>\n\n* prometheus: drop the retentionPercentage CEL rule and restructure the retention slice\n\nThe quantity() CEL library landed in Kubernetes 1.28, so the XValidation\nrule rejected the CRD outright on 1.25-1.27 rather than being ignored.\nRemove it instead of raising the minimum supported Kubernetes version;\nvalidateRetentionPercentage() already rejects values outside 0..100.\n\nHoist the 3.11.0 ConfigGenerator into cgRetention and move the\npercentage append out of the compatibility branch so AppendMapItem\nemits the unsupported-version warning itself, instead of duplicating\nthat warning in an else branch.\n\nGenerated artifacts are regenerated in the same commit.\n\nSigned-off-by: somaz <genius5711@gmail.com>\n\n---------\n\nSigned-off-by: somaz <genius5711@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/19f6d695d6194d3777a336ec5bf1b5d94bfb75af"
+        },
+        {
+          "sha": "2e8d648b4ee27c19d2c446e074763c8fbc3046cb",
+          "author_date": "2026-07-02T13:53:40Z",
+          "message": "feat: add status condition metrics for workload resources\n\nThis commit adds new Prometheus metrics exposing the status conditions\nfor all workload resources (Prometheus, PrometheusAgent, Alertmanager\nand ThanosRuler).\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/2e8d648b4ee27c19d2c446e074763c8fbc3046cb"
+        },
+        {
+          "sha": "0ae89b3ac2ca0681ad685e7d0b86bf361bd31630",
+          "author_date": "2026-09-03T14:24:26Z",
+          "message": "build(deps): bump streetsidesoftware/cspell-action (#8760)\n\nBumps the github-actions-deps group with 1 update in the / directory: [streetsidesoftware/cspell-action](https://github.com/streetsidesoftware/cspell-action).\n\n\nUpdates `streetsidesoftware/cspell-action` from 8.4.0 to 9.0.1\n- [Release notes](https://github.com/streetsidesoftware/cspell-action/releases)\n- [Changelog](https://github.com/streetsidesoftware/cspell-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/streetsidesoftware/cspell-action/compare/de2a73e963e7443969755b648a1008f77033c5b2...e0668cf020899e887ee8ad4d173c31738a79eae8)\n\n---\nupdated-dependencies:\n- dependency-name: streetsidesoftware/cspell-action\n  dependency-version: 9.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: github-actions-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/0ae89b3ac2ca0681ad685e7d0b86bf361bd31630"
+        },
+        {
+          "sha": "e6ab605f8b551482840e0b211b58d4be26b65001",
+          "author_date": "2026-09-04T02:58:00Z",
+          "message": "Bump controller-runtime to v0.25.0\n\nSigned-off-by: dongjiang1989 <dongjiang1989@126.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/e6ab605f8b551482840e0b211b58d4be26b65001"
+        },
+        {
+          "sha": "1bec5309fc4ad957b79cbf4a83d829829c21c36d",
+          "author_date": "2026-09-04T06:06:36Z",
+          "message": "Merge pull request #8793 from kubeservice-stack/update-controller-runtime-v\n\nchore: Bump controller-runtime to v0.25.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/1bec5309fc4ad957b79cbf4a83d829829c21c36d"
+        },
+        {
+          "sha": "0e572fd12924a9f9258cbd475b311712625d8d3f",
+          "author_date": "2026-09-04T06:16:42Z",
+          "message": "feat: add status condition metrics for workload resources (#8719)\n\nThis commit adds new Prometheus metrics exposing the status conditions\nfor all workload resources (Prometheus, PrometheusAgent, Alertmanager\nand ThanosRuler).\n\nSigned-off-by: Simon Pasquier <spasquie@redhat.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/0e572fd12924a9f9258cbd475b311712625d8d3f"
+        },
+        {
+          "sha": "8b2f04d4a1d84cbe240dec96a814edce4c1e02e3",
+          "author_date": "2026-08-31T18:08:27Z",
+          "message": "change(scrapeconfig): add missing list item validations\n\nAdd `+kubebuilder:validation:items:MinLength=1` to string slice fields\nthat currently allow empty strings to pass CRD admission:\n\n- NamespaceDiscovery.Names\n- ConsulSDConfig.Services\n- ConsulSDConfig.Tags\n\nRemove redundant `+kubebuilder:validation:MinLength=1` from\nDockerSDConfig.Host. The existing Pattern marker already rejects empty\nvalues.\n\nRelated-to #8420\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/8b2f04d4a1d84cbe240dec96a814edce4c1e02e3"
+        },
+        {
+          "sha": "108e8328272cfbf20f5d951197e58b1b18dae589",
+          "author_date": "2026-09-04T10:45:25Z",
+          "message": "Merge pull request #8786 from slashpai/add-missing-list-item-validations\n\nchange(scrapeconfig): add missing list item and host validations",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/108e8328272cfbf20f5d951197e58b1b18dae589"
+        },
+        {
+          "sha": "347f813d971388ca61dd2b35fcbd622a09c712e5",
+          "author_date": "2026-08-31T18:10:13Z",
+          "message": "change(scrapeconfig): promote inline enum fields to named types\n\nIntroduce named enum types for Hetzner, Docker Swarm, and OpenStack\navailability fields to align with other SD enums (e.g. OpenStackRole,\nScalewayRole). The CRD accepts a single canonical PascalCase value per\nenum entry; the operator lowercases values when generating the Prometheus\nconfiguration.\n\n- HetznerSDConfig.Role: string -> HetznerRole (Hcloud, Robot)\n- DockerSwarmSDConfig.Role: string -> DockerSwarmRole (Services, Tasks, Nodes)\n- OpenStackSDConfig.Availability: *string -> *OpenStackAvailability (Public, Admin, Internal)\n\nRelated-to #8420\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/347f813d971388ca61dd2b35fcbd622a09c712e5"
+        },
+        {
+          "sha": "3bb820908d26d582c0c579959fe9b6f29433e156",
+          "author_date": "2026-09-04T12:43:13Z",
+          "message": "build(deps): bump helm/kind-action in the github-actions-deps group\n\nBumps the github-actions-deps group with 1 update: [helm/kind-action](https://github.com/helm/kind-action).\n\n\nUpdates `helm/kind-action` from 1.14.0 to 1.15.0\n- [Release notes](https://github.com/helm/kind-action/releases)\n- [Commits](https://github.com/helm/kind-action/compare/ef37e7f390d99f746eb8b610417061a60e82a6cc...06c1ae10762d3b9c1644e7fe69596ae519e015a2)\n\n---\nupdated-dependencies:\n- dependency-name: helm/kind-action\n  dependency-version: 1.15.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: github-actions-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/3bb820908d26d582c0c579959fe9b6f29433e156"
+        },
+        {
+          "sha": "ff5cad994c539b3568b314f3c5086275e93800f4",
+          "author_date": "2026-09-04T13:18:25Z",
+          "message": "Merge pull request #8794 from prometheus-operator/dependabot/github_actions/github-actions-deps-9ad6aaa7c1\n\nbuild(deps): bump helm/kind-action from 1.14.0 to 1.15.0 in the github-actions-deps group",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ff5cad994c539b3568b314f3c5086275e93800f4"
+        },
+        {
+          "sha": "089d20a15b37f4b9fc0cb4606f18da980340c6f0",
+          "author_date": "2026-09-07T08:49:23Z",
+          "message": "change(scrapeconfig): promote inline enum fields to named types (#8789)\n\nIntroduce named enum types for Hetzner, Docker Swarm, and OpenStack\navailability fields to align with other SD enums (e.g. OpenStackRole,\nScalewayRole). The CRD accepts a single canonical PascalCase value per\nenum entry; the operator lowercases values when generating the Prometheus\nconfiguration.\n\n- HetznerSDConfig.Role: string -> HetznerRole (Hcloud, Robot)\n- DockerSwarmSDConfig.Role: string -> DockerSwarmRole (Services, Tasks, Nodes)\n- OpenStackSDConfig.Availability: *string -> *OpenStackAvailability (Public, Admin, Internal)\n\nRelated-to #8420\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/089d20a15b37f4b9fc0cb4606f18da980340c6f0"
+        },
+        {
+          "sha": "f0b48b41e1366bf2754ec544a467bd53f5dbef1e",
+          "author_date": "2026-09-07T10:10:42Z",
+          "message": "change: update default Alertmanager version to v0.34.0\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f0b48b41e1366bf2754ec544a467bd53f5dbef1e"
+        },
+        {
+          "sha": "f8df9a45e0bbdf27dfbc552d031ba4915686332a",
+          "author_date": "2026-09-07T11:13:31Z",
+          "message": "change: discard zero duration fields and report IgnoredFields status\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/f8df9a45e0bbdf27dfbc552d031ba4915686332a"
+        },
+        {
+          "sha": "86b003258d787472bd654062244fabaa89c906ac",
+          "author_date": "2026-09-07T11:13:31Z",
+          "message": "test: add e2e test for IgnoredFields on zero durations\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/86b003258d787472bd654062244fabaa89c906ac"
+        },
+        {
+          "sha": "2538741a87c2903c4dc624d5faf9e605502767b1",
+          "author_date": "2026-09-08T12:42:38Z",
+          "message": "build(deps): bump golang.org/x/sync from 0.22.0 to 0.23.0\n\nBumps [golang.org/x/sync](https://github.com/golang/sync) from 0.22.0 to 0.23.0.\n- [Commits](https://github.com/golang/sync/compare/v0.22.0...v0.23.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/sync\n  dependency-version: 0.23.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/2538741a87c2903c4dc624d5faf9e605502767b1"
+        },
+        {
+          "sha": "6497455804b2b35209cd3e14ab5323069897648e",
+          "author_date": "2026-09-08T13:19:19Z",
+          "message": "Merge pull request #8803 from prometheus-operator/dependabot/go_modules/golang.org/x/sync-0.23.0\n\nbuild(deps): bump golang.org/x/sync from 0.22.0 to 0.23.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/6497455804b2b35209cd3e14ab5323069897648e"
+        },
+        {
+          "sha": "326e6c5affd7f6df60b7623a60b671d093cd1d20",
+          "author_date": "2026-09-08T15:16:06Z",
+          "message": "Merge pull request #8800 from slashpai/am-v0.34",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/326e6c5affd7f6df60b7623a60b671d093cd1d20"
+        },
+        {
+          "sha": "a739ad732dc940981ce48c734b912237e43672c9",
+          "author_date": "2026-09-09T00:33:57Z",
+          "message": "build(deps): bump google.golang.org/grpc in /scripts\n\nBumps [google.golang.org/grpc](https://github.com/grpc/grpc-go) from 1.83.1 to 1.83.2.\n- [Release notes](https://github.com/grpc/grpc-go/releases)\n- [Commits](https://github.com/grpc/grpc-go/compare/v1.83.1...v1.83.2)\n\n---\nupdated-dependencies:\n- dependency-name: google.golang.org/grpc\n  dependency-version: 1.83.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/a739ad732dc940981ce48c734b912237e43672c9"
+        },
+        {
+          "sha": "14007db1f8781d2c245de0f83480670df641b735",
+          "author_date": "2026-09-09T01:01:58Z",
+          "message": "Merge pull request #8804 from prometheus-operator/dependabot/go_modules/scripts/google.golang.org/grpc-1.83.2\n\nbuild(deps): bump google.golang.org/grpc from 1.83.1 to 1.83.2 in /scripts",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/14007db1f8781d2c245de0f83480670df641b735"
+        },
+        {
+          "sha": "ac6c5f59402c9f8d33af621c5be46886a3e6d977",
+          "author_date": "2026-09-09T04:57:40Z",
+          "message": "chore: cut v0.94.0\n\nSigned-off-by: Jayapriya Pai <slashpai9@gmail.com>",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/ac6c5f59402c9f8d33af621c5be46886a3e6d977"
+        },
+        {
+          "sha": "2e4af1d7d8f0ae634fcf0ac967a76fb381a65542",
+          "author_date": "2026-09-09T11:12:36Z",
+          "message": "Merge pull request #8805 from slashpai/cut-v0.94\n\nchore: cut v0.94.0",
+          "html_url": "https://github.com/prometheus-operator/prometheus-operator/commit/2e4af1d7d8f0ae634fcf0ac967a76fb381a65542"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.94.1",

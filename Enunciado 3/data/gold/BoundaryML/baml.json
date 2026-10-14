@@ -10238,8 +10238,117 @@
     {
       "release": "0.54.0",
       "previous_release": "0.53.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "fa6dc03fcdd3255dd83e25d0bfb3b0e740991408",
+          "author_date": "2024-08-13T21:37:54Z",
+          "message": "feat: implement file ref test args for image and audio (#871)\n\nWe now support:\r\n\r\n* file refs specified as `image { file \"../path/to/image.png\" }` in test\r\nargs\r\n* file refs are interpreted relative to the containing file, much like\r\nstandard import semantics\r\n* we do not support a notion of \"absolute\" file ref at the moment (we\r\nhave a candidate `baml_src://` syntax)\r\n* we do not do compile-time validation of file refs ([slack thread with\r\nnotes](https://gloo-global.slack.com/archives/C03KV1PJ6EM/p1723499688696029)),\r\nbut instead do it at prompt preview / curl preview / runtime\r\n<img width=\"499\" alt=\"image\"\r\nsrc=\"https://github.com/user-attachments/assets/18e8d80d-fe1b-4487-8e9c-532f3de1824b\">\r\n<img width=\"494\" alt=\"image\"\r\nsrc=\"https://github.com/user-attachments/assets/10189563-d005-484b-bbf3-37a09c737194\">\r\n* internally, `BamlValue::Image` and `BamlValue::Audio` have been\r\ncollapsed into `BamlValue::Media(BamlMedia)` where `BamlMedia` has a\r\n`media_type: image | audio` enum field - this simplifies what would've\r\nbeen a 3x2x2x2 state matrix into 3x2 (file/url/b64 * image/audio)\r\n* `image { base64 \"...\" }` now accepts a `\"data:image/png;base64,...\"`\r\ndata URL in a base64 image literal - the distinction is not obvious to a\r\nuser who's copy-paste-ed a base64 data URL into a base64 field\r\n* implement an RPC mechanism between the webview and extension, to\r\nenable the webview to read src files\r\n* add `swr` as our pattern for loading async resources in React (atoms\r\nare unwieldy for one-off loads)\r\n\r\nWarning: I've seen some instability with vscode while developing this\r\nextension; specifically, on some rebuilds, I would see vscode\r\n_immediately_ crash on extension load. There was no clear cause for this\r\nthat I could determine; it has always gone away after rebuilding\r\nweb-panel.",
+          "html_url": "https://github.com/BoundaryML/baml/commit/fa6dc03fcdd3255dd83e25d0bfb3b0e740991408"
+        },
+        {
+          "sha": "582e71817d6f959d6f7bf0ed7ce2c810b012aef3",
+          "author_date": "2024-08-13T21:58:24Z",
+          "message": "Fix crash in promptfiddle (#877)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/582e71817d6f959d6f7bf0ed7ce2c810b012aef3"
+        },
+        {
+          "sha": "8969074b3d2c87007eca887df2d96cbdb1be06d4",
+          "author_date": "2024-08-13T22:08:44Z",
+          "message": "fix vercel build (#874)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/8969074b3d2c87007eca887df2d96cbdb1be06d4"
+        },
+        {
+          "sha": "a8d347947895cfb5ffd60449076cd08ab88c26f8",
+          "author_date": "2024-08-13T23:29:41Z",
+          "message": "Fix Orch Graph to now support missing env variables (#880)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/a8d347947895cfb5ffd60449076cd08ab88c26f8"
+        },
+        {
+          "sha": "fcd189ed7eb81712bf3b641eb3dde158fc6a62af",
+          "author_date": "2024-08-15T00:18:57Z",
+          "message": "Add support for absolute file paths in the file specifier (#881)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/fcd189ed7eb81712bf3b641eb3dde158fc6a62af"
+        },
+        {
+          "sha": "aebbb2ff4622d3be762826c0b3924b602f2bcb92",
+          "author_date": "2024-08-16T18:40:16Z",
+          "message": "fix: prompt fiddle wasm was broken by absolute file refs (#884)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/aebbb2ff4622d3be762826c0b3924b602f2bcb92"
+        },
+        {
+          "sha": "5f02b2ac688ceeb5a34e848a8ff87fd43a6b093a",
+          "author_date": "2024-08-17T03:04:02Z",
+          "message": "feat: allow promptfiddle to talk to localhost ollama (#886)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/5f02b2ac688ceeb5a34e848a8ff87fd43a6b093a"
+        },
+        {
+          "sha": "75b51cbf80a0c8ba19ae05b021ef3c94dacb4e30",
+          "author_date": "2024-08-19T12:45:14Z",
+          "message": "AST Restructuring (#857)\n\n- Significant rework of the BAML AST, mainly aimed at reducing the\r\ncomplexity of the grammar, parser, and IR validation scheme to yield\r\nauto-formatting in the future\r\n- Maintains full feature parity with legacy BAML AST\r\n- Supports multiple key value pairs per line now, with \",\" delimiter --\r\ntradeoff includes slightly worse errors in map blocks temporarily.\r\n- Addresses minor bugs in BAML LSP",
+          "html_url": "https://github.com/BoundaryML/baml/commit/75b51cbf80a0c8ba19ae05b021ef3c94dacb4e30"
+        },
+        {
+          "sha": "49146c0e50c88615e4cc97adb595849c23bad8ae",
+          "author_date": "2024-08-19T20:49:54Z",
+          "message": "docs: add ollama to default prompt fiddle example (#888)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/49146c0e50c88615e4cc97adb595849c23bad8ae"
+        },
+        {
+          "sha": "0d63a70332477761a97783e203c98fd0bf67f151",
+          "author_date": "2024-08-23T16:28:09Z",
+          "message": "Add support for arbritrary metadata (e.g. cache_policy for anthropic)  (#893)\n\nAdd ability for people to support caching or any future content metadata\r\nthat someone may wish to add.\r\n\r\nMost LLM apis have converged on:\r\n```\r\n{\r\n  role: string\r\n  content: {\r\n   ... // multiple variants\r\n  }[]\r\n}\r\n```\r\n\r\nWe now allow for people to inject arbitrary metadata into the properties\r\nof content (or appropriately named field for any llm api all.\r\n\r\nWhat is not yet supported:\r\n* indexing and adding metadata to subinterfaces of content (i.e. setting\r\ncontent.image_type.detail)\r\n* adding metadata as a sibling to role, content\r\n\r\nThe playground and raw_curl correctly display this so if a provider\r\ndoesn't support a speicfic metadat, we do support it.\r\n\r\nComplete e2e example:\r\n```rust\r\nclient<llm> Foo {\r\n  provider openai\r\n  options {\r\n    allowed_role_metadata: [\"foo\", \"bar\"]\r\n  }\r\n}\r\n\r\nclient<llm> FooWithout {\r\n  provider openai\r\n  options {\r\n  }\r\n}\r\ntemplate_string Foo() #\"\r\n  {{ _.role('user', foo={\"type\": \"ephemeral\"}, bar=\"1\", cat=True) }}\r\n  This will be have foo and bar, but not cat metadata. But only for Foo, not FooWithout.\r\n  {{ _.role('user') }}\r\n  This will have none of the role metadata for Foo or FooWithout.\r\n\"#\r\n```\r\n\r\nMetadata included:\r\n<img width=\"446\" alt=\"Screenshot 2024-08-23 at 7 41 40 AM\"\r\nsrc=\"https://github.com/user-attachments/assets/e26b1e2d-0377-42af-8629-8fcdff0db3cf\">\r\n\r\nMetadata excluded:\r\n<img width=\"459\" alt=\"Screenshot 2024-08-23 at 7 42 15 AM\"\r\nsrc=\"https://github.com/user-attachments/assets/1dc8fcf3-9a17-4e8d-8a00-29d9bfee31e0\">\r\n\r\n\r\nPotentially breaking changes:\r\n* We now merge sequentially matching roles together into the same chunk.\r\n```\r\n[{\r\n  \"role\": \"user\",\r\n  \"chunk\": [A, B]\r\n},\r\n{\r\n  \"role\": \"user\",\r\n  \"chunk\": [C, D]\r\n}]\r\n```\r\n\r\nis now converted to\r\n```\r\n[{\r\n  \"role\": \"user\",\r\n  \"chunk\": [A, B, C, D]\r\n}]\r\n```",
+          "html_url": "https://github.com/BoundaryML/baml/commit/0d63a70332477761a97783e203c98fd0bf67f151"
+        },
+        {
+          "sha": "ff7be4478b706da049085d432b2ec98627b5da1f",
+          "author_date": "2024-08-23T18:53:51Z",
+          "message": "Adding improved docs + unit tests for caching (#895)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/ff7be4478b706da049085d432b2ec98627b5da1f"
+        },
+        {
+          "sha": "d57a7018521d647e9ff0c7ff7eadc36be23c424e",
+          "author_date": "2024-08-23T20:06:06Z",
+          "message": "Fix issue with openai provider for media type (#896)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/d57a7018521d647e9ff0c7ff7eadc36be23c424e"
+        },
+        {
+          "sha": "a5d8c588e0fd0b7e186d7c71f1f6171334250629",
+          "author_date": "2024-08-24T01:19:46Z",
+          "message": "feat: Update Default Gemini Base URL to v1beta (#891)\n\nIn this PR, I updated the default base URL in the googleai_client.rs\r\nfile to point to the beta version endpoint by changing\r\n\"https://generativelanguage.googleapis.com/v1\" to\r\n\"https://generativelanguage.googleapis.com/v1beta\".\r\n\r\nThis mirrors the default implementation used in the [Google AI Python\r\nSDK](https://github.com/google-gemini/generative-ai-python/blob/8a29017e9120f0552ee3ad6092e8545d1aa6f803/google/generativeai/client.py#L60).\r\n\r\nFunctionally this opens up a larger variety of models including gemini\r\n1.5 pro experimental from this month.\r\n\r\nv1:\r\nmodels/embedding-001\r\nmodels/gemini-1.0-pro\r\nmodels/gemini-1.0-pro-001\r\nmodels/gemini-1.0-pro-latest\r\nmodels/gemini-1.0-pro-vision-latest\r\nmodels/gemini-1.5-flash\r\nmodels/gemini-1.5-flash-001\r\nmodels/gemini-1.5-flash-001-tuning\r\nmodels/gemini-1.5-pro\r\nmodels/gemini-1.5-pro-001\r\nmodels/gemini-pro\r\nmodels/gemini-pro-vision\r\nmodels/text-embedding-004\r\n\r\nv1beta:\r\nmodels/aqa\r\nmodels/chat-bison-001\r\nmodels/embedding-001\r\nmodels/embedding-gecko-001\r\nmodels/gemini-1.0-pro\r\nmodels/gemini-1.0-pro-001\r\nmodels/gemini-1.0-pro-latest\r\nmodels/gemini-1.0-pro-vision-latest\r\nmodels/gemini-1.5-flash\r\nmodels/gemini-1.5-flash-001\r\nmodels/gemini-1.5-flash-001-tuning\r\nmodels/gemini-1.5-flash-latest\r\nmodels/gemini-1.5-pro\r\nmodels/gemini-1.5-pro-001\r\nmodels/gemini-1.5-pro-exp-0801\r\nmodels/gemini-1.5-pro-latest\r\nmodels/gemini-pro\r\nmodels/gemini-pro-vision\r\nmodels/text-bison-001\r\nmodels/text-embedding-004",
+          "html_url": "https://github.com/BoundaryML/baml/commit/a5d8c588e0fd0b7e186d7c71f1f6171334250629"
+        },
+        {
+          "sha": "ddd15c92c3e8d81c24cb7305c9fcbb36b819900f",
+          "author_date": "2024-08-26T02:51:03Z",
+          "message": "feat: implement shorthand clients (#879)\n\nImplement support for shorthand clients in functions:\r\n\r\n```\r\nfunction TestOpenAIShorthand(input: string) -> string {\r\n  client \"openai/gpt-4o-mini\"\r\n  prompt #\"\r\n    Write a nice short story about {{ input }}\r\n  \"#\r\n}\r\n```\r\n\r\nVerified working in fallback, not tested for round robin yet.\r\n\r\nAlso updates the textmate grammar as necessary (lezer grammar needs no\r\nupdate).",
+          "html_url": "https://github.com/BoundaryML/baml/commit/ddd15c92c3e8d81c24cb7305c9fcbb36b819900f"
+        },
+        {
+          "sha": "9b26799983561e305b24fa1288005ff5cc043838",
+          "author_date": "2024-08-26T19:31:49Z",
+          "message": "improve error message of allowed_role_metadata (#899)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/9b26799983561e305b24fa1288005ff5cc043838"
+        },
+        {
+          "sha": "c5b9a75ea6da7c45da1999032e2b256bec97d922",
+          "author_date": "2024-08-26T22:28:32Z",
+          "message": "Update Parser for unions + Fix grammar changes introduced by AST changes (#900)\n\nWe added a new parser in #857 that added a new construct - namely\r\nreferential properties and also attributes that be attached to types.\r\n\r\nThere were some minor regressions in the canary build that identified\r\nthis issue.\r\n\r\nWe've added some more tests and have ensured that prompts are not\r\nmodified at all.\r\n\r\nOther changes:\r\n* updated parser to improve union parsing\r\n\r\n---------\r\n\r\nCo-authored-by: Aaron Villalpando <aaron@boundaryml.com>",
+          "html_url": "https://github.com/BoundaryML/baml/commit/c5b9a75ea6da7c45da1999032e2b256bec97d922"
+        },
+        {
+          "sha": "7da14c480506e9791b3f4ce52ac73836a042d38a",
+          "author_date": "2024-08-27T07:38:39Z",
+          "message": "Expose Exceptions to user code: BamlError, BamlInvalidArgumentError, BamlClientError, BamlClientHttpError, BamlValidationError (#770)",
+          "html_url": "https://github.com/BoundaryML/baml/commit/7da14c480506e9791b3f4ce52ac73836a042d38a"
+        },
+        {
+          "sha": "2c2ef92864de48089ecd25eb66f2bc2438280a3c",
+          "author_date": "2024-08-27T08:01:06Z",
+          "message": "chore: Bump version to 0.54.0 (#902)\n\nBump version to 0.54.0\r\n❌ Typescript integ tests\r\n❌ Python integ tests\r\n\r\nGenerated by bump-version script.\r\n\r\nALLOW_FAILING_TESTS=hellovai\r\nALLOW_FAILING_TESTS_REASON=Manually inspected test failures and failures are expected",
+          "html_url": "https://github.com/BoundaryML/baml/commit/2c2ef92864de48089ecd25eb66f2bc2438280a3c"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.54.1",
@@ -12152,8 +12261,21 @@
     {
       "release": "baml-language-0.14.2-nightly.20260714.b",
       "previous_release": "baml-language-0.14.2-nightly.20260714.a",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "204cd7601fe285d448fa79000d605cb2512b481b",
+          "author_date": "2026-07-14T00:28:14Z",
+          "message": "feat(cffi): export bytecode runtime initializer (#4009)\n\n## Summary\n\n- expose initialize_runtime_from_bytecode through the stable C ABI for\nnon-Rust language bridges\n- delegate runtime construction to the existing canonical Rust\ninitializer used by Python and Node\n- return an empty owned Buffer on success and a UTF-8 error Buffer on\nfailure\n- catch panics at the ABI boundary and reject null pointers paired with\nnonzero lengths\n\n## Why\n\nPython and Node can call the canonical Rust API directly through their\nRust native extensions. Bridges implemented outside Rust, beginning with\nGo, need an unmanaged pointer-and-length entry point. This provides that\nshared entry point without duplicating runtime initialization logic.\n\n## Verification\n\n- cargo test -p bridge_cffi --lib: 11 passed\n- cargo clippy -p bridge_cffi --lib -- -D warnings\n- confirmed the initialize_runtime_from_bytecode symbol is exported by\nlibbridge_cffi.dylib\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for initializing the runtime directly from bytecode.\n* Initialization errors are returned as readable messages instead of\ncausing application crashes.\n  * Invalid bytecode input is detected and reported clearly.\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/BoundaryML/baml/commit/204cd7601fe285d448fa79000d605cb2512b481b"
+        },
+        {
+          "sha": "8607471b0449f1e159b25495d42a990b6c6fd9f2",
+          "author_date": "2026-07-14T00:42:58Z",
+          "message": "feat(lsp): re-land resolution-first semantic tokens rework (#3867) on #4000 (#4011)\n\nRe-lands #3867 (reverted in #4002 to let #4000 land first) as a\nrevert-of-revert on top of #4000, following the re-land guidance agreed\nin #4002.\n\n## Byte-for-byte re-land\nThe classification engine is unchanged from what #3867 shipped: the\nspan-keyed resolution index, the CST classification walk,\ninterface-member resolution, the contextual-keyword re-lexing\n(`as`/`type`/`true`/`false`/`null`), all 78 semantic-token fixtures, and\nthe `tools_semantic_tokens` viewer.\n\n## Adapted to #4000 (LSP boundary only)\n- **Negotiated encoding**: `encode_semantic_tokens` now encodes through\nthe connection's `PositionCodec` — `delta_start`/`length` are negotiated\ncode units (UTF-16 default, surrogate pairs handled), and multiline\ntokens split into per-line segments. This also fixes the byte-length\nmiscount for non-ASCII identifiers that #3867 originally shipped (called\nout in #4002).\n- **Request idiom**: `semanticTokens/full`, `full/delta`, and `range`\nuse `encoding_for_request` + `read_for_request` — bounded gate with\nambient cancellation observed at entry / post-gate / completion —\ninstead of `try_lock_db`.\n- **Connection-scoped delta cache**: `semantic_tokens_cache` is now\nper-connection (fresh in `connection_scoped_lsp_session`, next to the\nencoding negotiation), so concurrent clients can't cross-serve\nwrongly-encoded tokens or trample each other's `previous_result_id`. The\n`result_id` sequence stays process-global.\n- **`returns(ref)`**: the tracked `semantic_tokens` query keeps #4000's\n`returns(ref)` + `salsa::Update`, avoiding an O(tokens) clone per\nrequest.\n\n**Not re-landed**: #4002's incidental `pnpm-lock.yaml` refresh\n(fiddle-proxy entries for an untracked package) — unrelated to #3867 on\nboth sides; the diff is strictly `baml_language/`-scoped.\n\n## New tests\n- Negotiated-encoding token encoding: UTF-16 vs UTF-8 lengths,\nastral-plane surrogate pairs, multiline segment splitting\n(`request.rs`).\n- Connection-scoped token-cache freshness asserted in the\nsession-scoping test (`mod.rs`).\n\n## Validation\n- Full suite: 7486/7486 (nextest) + `baml_src baml_test` 2057/2057\nstandalone.\n- `bex_project` 52/52 incl. the new encoding + session tests.\n- clippy clean (workspace, all targets), `cargo check --target\nwasm32-unknown-unknown -p bex_project` clean.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n\n## Summary by CodeRabbit\n\n- **New Features**\n- Added richer, type-aware semantic highlighting, including booleans,\nescape sequences, declarations, properties, methods, enum members, and\nlibrary symbols.\n- Added range-based and delta semantic-token updates for faster editor\nrefreshes.\n- Added a local semantic-token viewer with fixture comparison,\nscratchpad editing, token inspection, and snapshot acceptance.\n- Improved navigation to interface fields and methods, including aliased\nmembers.\n\n- **Bug Fixes**\n- Improved type information and completion support for destructuring and\ncatch bindings.\n- Corrected contextual keyword and literal parsing, formatting, and\nhighlighting.\n  - Improved hover results for caught values.\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/BoundaryML/baml/commit/8607471b0449f1e159b25495d42a990b6c6fd9f2"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "baml-language-0.14.2-nightly.20260714.c",
@@ -12164,8 +12286,15 @@
     {
       "release": "baml-language-0.14.2-nightly.20260714.d",
       "previous_release": "baml-language-0.14.2-nightly.20260714.c",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "568d4bf8dc019319a1db456692a5475d70ff4ecf",
+          "author_date": "2026-07-14T03:06:45Z",
+          "message": "feat: support GOOGLE_CLOUD_PROJECT, GOOGLE_CLOUD_LOCATION, GOOGLE_GENAI_USE_ENTERPRISE (#3964)\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n## Summary by CodeRabbit\n\n* **New Features**\n* Added dedicated Google AI provider options, including Enterprise\nrouting controls and support for project/location and additional\ncredential input types.\n* Added an end-to-end demo showing calling Gemini via `google-ai`\n(Vertex-backed) and native `vertex-ai`.\n* **Bug Fixes**\n* Enforced a clear credentials precedence for Vertex auth (credential\nfile path vs inline JSON vs ADC) and tightened failure behavior.\n* Fail-fast when Google API keys are missing, and improved Vertex\nproject/quotas handling for request headers and placeholder resolution.\n* Improved Google auth token caching and project/quota resolution\nconsistency.\n* **Documentation**\n* Expanded keyword/provider documentation for Google AI and Vertex AI\nconfiguration details.\n* **Tests**\n* Expanded integration and system coverage for routing, credential\nprecedence, and project/quota resolution.\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/BoundaryML/baml/commit/568d4bf8dc019319a1db456692a5475d70ff4ecf"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "baml-language-0.14.2-nightly.20260714.e",
@@ -12284,8 +12413,8 @@
     {
       "release": "baml-language-0.15.1-nightly.20260722.b",
       "previous_release": "baml-language-0.15.1-nightly.20260722.a",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [],
+      "ignored_reason": null
     },
     {
       "release": "baml-language-0.15.1-nightly.20260722.c",
@@ -12512,8 +12641,21 @@
     {
       "release": "baml-language-0.15.1-nightly.20260729.f",
       "previous_release": "baml-language-0.15.1-nightly.20260729.e",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9ec3d20b346b7ba1c5b6f7dbc958de44f6e2dd1e",
+          "author_date": "2026-07-29T08:48:44Z",
+          "message": "fix(playground): render node errors nicely (#4271)\n\n## Summary\n\n- render graph inputs and typed errors as expanded structured values\nwith each key on its own row\n- preserve every logical traceback line, left-align the traceback block,\nand wrap long source lines inside the error card\n- keep pretty-printed graph values left-aligned so React Flow group\nnodes cannot center their closing braces\n- size graph nodes for expanded values, tracebacks, and\ntruncated-preview footers so downstream nodes and edges stay\nunobstructed\n- keep the detailed execution panel’s existing presentation unchanged\n\n## Root cause\n\n`CapturedValueCard` rendered structured graph values inline and rendered\n`value.diagnostic` at unlimited natural height, while graph layout\nreserved a fixed text block and only 18px for diagnostics. Multiline\ntracebacks therefore escaped the error node and covered downstream graph\ncontent. React Flow group wrappers also inherit `text-align: center`;\nflex-based opening-brace rows were unaffected, but plain closing-brace\nrows inherited the centering and became misaligned.\n\n## Playground UI\n\n### Before\n\n<img width=\"1069\" height=\"743\" alt=\"Before: multiline traceback\noverflows the error node and overlaps the downstream graph\"\nsrc=\"https://github.com/user-attachments/assets/e0ae058c-96eb-4d9c-9ad8-74d7fe608b0b\"\n/>\n\n### After\n\n<img width=\"1069\" height=\"743\" alt=\"After: structured values and braces\nare left-aligned, traceback lines remain separate, and the error node no\nlonger overlaps downstream graph content\"\nsrc=\"https://github.com/user-attachments/assets/bbfb578b-ee02-4623-abdb-1a80b5f8abbf\"\n/>\n\n## Validation\n\n- reproduced in the real playground with\n`tools/sdk-parity-lint/baml_src`, `main`, and omitted `repo_root`\n- verified input and `InvalidArgument` keys render on separate rows,\nopening and closing braces remain left-aligned in React Flow group\nnodes, traceback newlines are preserved and left-aligned, and long\nsource lines wrap within the graph card\n- `pnpm format:ci --since=origin/canary --reporter=github`\n- `pnpm --filter @b/pkg-playground typecheck`\n- `pnpm --filter @b/pkg-playground test` (21 files, 150 tests passed)\n- `pnpm --filter app-vscode-webview build`\n\nLinear:\n[B-1055](https://linear.app/boundaryml2/issue/B-1055/error-nodes-in-graph-are-formatted-incorrectly)\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n\n## Summary by CodeRabbit\n\n* **Bug Fixes**\n* Improved graph error-node formatting to prevent multiline diagnostics\nfrom overlapping nodes and edges.\n* Tracebacks now preserve line breaks and allocate sufficient vertical\nspace.\n  * Inputs and typed errors display as expanded, readable JSON.\n* Improved graph value previews, image tiles, and truncated-value\nindicators.\n* **Tests**\n* Added coverage for diagnostic sizing, expanded values, graph\nalignment, and preview truncation behavior.\n\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/BoundaryML/baml/commit/9ec3d20b346b7ba1c5b6f7dbc958de44f6e2dd1e"
+        },
+        {
+          "sha": "fc9cf16fa5a374f6287d13c421f28b29f9b52597",
+          "author_date": "2026-07-29T09:08:34Z",
+          "message": "fix(playground): hide default placeholders for explicit args (#4275)\n\n## Summary\n\n- hide a declared default expression once a default-capable argument is\nchecked for an explicit value\n- keep the declared default visible while the argument is unchecked and\nusing its default\n- preserve schema-specific placeholders for required arguments\n\n## Root cause\n\n`ArgsForm` always forwarded `param.defaultExpression` as the native\ninput placeholder, regardless of whether the argument was using its\ndefault or had been checked for an explicit value. An empty explicit\nstring therefore looked like the declared default would be sent.\n\n## Playground UI\n\n### Before\n\n![Before: checked explicit argument still shows the declared default\nplaceholder](https://raw.githubusercontent.com/BoundaryML/baml/59c86d070912985495bca4c9b04598b4feea1a55/typescript2/pkg-playground/docs/B-1061-before.jpg)\n\n### After\n\n![After: checked explicit argument has an empty input without the\ndeclared default\nplaceholder](https://raw.githubusercontent.com/BoundaryML/baml/59c86d070912985495bca4c9b04598b4feea1a55/typescript2/pkg-playground/docs/B-1061-after.jpg)\n\n## Validation\n\n- `pnpm exec biome check pkg-playground/src/ArgsForm.tsx`\n- `pnpm --filter @b/pkg-playground typecheck`\n- `pnpm --filter @b/pkg-playground test` (145 tests)\n- `pnpm --filter app-vscode-webview typecheck`\n- `pnpm --filter app-promptfiddle typecheck`\n- `pnpm --filter app-vscode-webview test:unit:run --\nExecutionPanel.strict-mode.test.tsx` (22 tests)\n- `git diff --check`\n\nLinear:\nhttps://linear.app/boundaryml2/issue/B-1061/default-arg-ui-when-default-args-are-checked-the-placeholder-in-the\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n\n## Summary by CodeRabbit\n\n* **Bug Fixes**\n* Fixed parameter fields showing default-value placeholders even after\nan explicit value was entered.\n* Placeholders now correctly reflect whether a parameter is using its\ndefault or an explicitly provided value.\n* **Documentation**\n* Updated the issue status record with reproduction details, validation\nresults, and review progress.\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/BoundaryML/baml/commit/fc9cf16fa5a374f6287d13c421f28b29f9b52597"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "baml-language-0.15.1-nightly.20260729.g",

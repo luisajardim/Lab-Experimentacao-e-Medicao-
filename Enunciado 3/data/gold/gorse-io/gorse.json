@@ -775,8 +775,81 @@
     {
       "release": "v0.2.4",
       "previous_release": "v0.2.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "38258e83590d3a2c88da217f5b46f6599032886b",
+          "author_date": "2021-07-23T16:42:54Z",
+          "message": "support Postgres",
+          "html_url": "https://github.com/gorse-io/gorse/commit/38258e83590d3a2c88da217f5b46f6599032886b"
+        },
+        {
+          "sha": "aa0632d8715b36c9afdd353e1703400667b5b74e",
+          "author_date": "2021-07-28T10:14:06Z",
+          "message": "init mysql table engine innodb",
+          "html_url": "https://github.com/gorse-io/gorse/commit/aa0632d8715b36c9afdd353e1703400667b5b74e"
+        },
+        {
+          "sha": "d9b3f1620adb29835a747786e6ffd8ab3028b2c9",
+          "author_date": "2021-07-29T11:32:45Z",
+          "message": "redis password support (#218)\n\nCo-authored-by: lbw <lbw@puoke.com>",
+          "html_url": "https://github.com/gorse-io/gorse/commit/d9b3f1620adb29835a747786e6ffd8ab3028b2c9"
+        },
+        {
+          "sha": "fa81aeaf41ccf26e5e1fbcab9b4e3810e3637d91",
+          "author_date": "2021-07-30T04:33:21Z",
+          "message": "fixed division by zero (#221)\n\nCo-authored-by: lbw <lbw@puoke.com>",
+          "html_url": "https://github.com/gorse-io/gorse/commit/fa81aeaf41ccf26e5e1fbcab9b4e3810e3637d91"
+        },
+        {
+          "sha": "3f8ff47f91e87435291d5493627d1107b473f273",
+          "author_date": "2021-08-02T12:08:11Z",
+          "message": "support ClickHouse as data storage",
+          "html_url": "https://github.com/gorse-io/gorse/commit/3f8ff47f91e87435291d5493627d1107b473f273"
+        },
+        {
+          "sha": "687ac034082f3b4fbac9b71ce98a23aa201d0d1c",
+          "author_date": "2021-08-05T14:22:13Z",
+          "message": "fix(#214): never distribute invalid model",
+          "html_url": "https://github.com/gorse-io/gorse/commit/687ac034082f3b4fbac9b71ce98a23aa201d0d1c"
+        },
+        {
+          "sha": "7fd6ac5842dfa0cf83ed5b48af24d488f8767448",
+          "author_date": "2021-08-06T15:14:17Z",
+          "message": "disable popular/latest items under labels temporarily",
+          "html_url": "https://github.com/gorse-io/gorse/commit/7fd6ac5842dfa0cf83ed5b48af24d488f8767448"
+        },
+        {
+          "sha": "7c213ee23ade9f54d21f34eea191dc9e191efa74",
+          "author_date": "2021-08-07T03:59:00Z",
+          "message": "find neighbors by similarity",
+          "html_url": "https://github.com/gorse-io/gorse/commit/7c213ee23ade9f54d21f34eea191dc9e191efa74"
+        },
+        {
+          "sha": "c51ab7fb60f28b7af5b98d95341b7c805eb1d409",
+          "author_date": "2021-07-26T10:56:59Z",
+          "message": "trace stack of errors",
+          "html_url": "https://github.com/gorse-io/gorse/commit/c51ab7fb60f28b7af5b98d95341b7c805eb1d409"
+        },
+        {
+          "sha": "da863ad813ab2517f7f6328be49349594e394da1",
+          "author_date": "2021-07-27T14:46:39Z",
+          "message": "support user import/export",
+          "html_url": "https://github.com/gorse-io/gorse/commit/da863ad813ab2517f7f6328be49349594e394da1"
+        },
+        {
+          "sha": "f9f9a389a2a5871dd694334d14c309fb9b2dc64d",
+          "author_date": "2021-08-07T13:45:13Z",
+          "message": "implement task monitor",
+          "html_url": "https://github.com/gorse-io/gorse/commit/f9f9a389a2a5871dd694334d14c309fb9b2dc64d"
+        },
+        {
+          "sha": "a073e2ef2b5dff41a7b122df8830c9d82b7bba7f",
+          "author_date": "2021-08-14T04:44:47Z",
+          "message": "new task scheduler",
+          "html_url": "https://github.com/gorse-io/gorse/commit/a073e2ef2b5dff41a7b122df8830c9d82b7bba7f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.2.5",
@@ -799,8 +872,93 @@
     {
       "release": "v0.2.8",
       "previous_release": "v0.2.7",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c150461d65d6787d6a3491fd7ce0a0849450f2c4",
+          "author_date": "2021-10-17T07:45:41Z",
+          "message": "remove redundant metrics",
+          "html_url": "https://github.com/gorse-io/gorse/commit/c150461d65d6787d6a3491fd7ce0a0849450f2c4"
+        },
+        {
+          "sha": "97aa31dfef43985189362309e9aea62906d4061b",
+          "author_date": "2021-10-20T14:06:45Z",
+          "message": "fix incompatibility of MariaDB (#294)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/97aa31dfef43985189362309e9aea62906d4061b"
+        },
+        {
+          "sha": "dd56f309094b97e22945dd1695b66232413da22e",
+          "author_date": "2021-10-23T05:28:49Z",
+          "message": "support modify users and items",
+          "html_url": "https://github.com/gorse-io/gorse/commit/dd56f309094b97e22945dd1695b66232413da22e"
+        },
+        {
+          "sha": "945ee0ff785ea829cee00e382e379fb4fb6de258",
+          "author_date": "2021-10-23T07:57:37Z",
+          "message": "fix invalid date in dashboard",
+          "html_url": "https://github.com/gorse-io/gorse/commit/945ee0ff785ea829cee00e382e379fb4fb6de258"
+        },
+        {
+          "sha": "bc9f7d83622427371a8847455df9f4557445f3eb",
+          "author_date": "2021-10-29T14:55:16Z",
+          "message": "chore: fix grammar (#296)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/bc9f7d83622427371a8847455df9f4557445f3eb"
+        },
+        {
+          "sha": "ee9584b4171261d3938446e91de3fce4dfdc1822",
+          "author_date": "2021-10-23T09:13:18Z",
+          "message": "fix wrong documentation",
+          "html_url": "https://github.com/gorse-io/gorse/commit/ee9584b4171261d3938446e91de3fce4dfdc1822"
+        },
+        {
+          "sha": "2e4260cfc73d5e37bfb01c3577e699a9d798c4bd",
+          "author_date": "2021-10-30T12:18:55Z",
+          "message": "support explore in recommendation",
+          "html_url": "https://github.com/gorse-io/gorse/commit/2e4260cfc73d5e37bfb01c3577e699a9d798c4bd"
+        },
+        {
+          "sha": "99f0c9f606353407989c0507a6d1ee464b89d888",
+          "author_date": "2021-11-03T14:56:43Z",
+          "message": "validate config values",
+          "html_url": "https://github.com/gorse-io/gorse/commit/99f0c9f606353407989c0507a6d1ee464b89d888"
+        },
+        {
+          "sha": "a9837df3c72f1591f4c3a11b854a943f6b6b09a4",
+          "author_date": "2021-11-05T12:17:14Z",
+          "message": "skip empty list when inserting feedback (#300)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/a9837df3c72f1591f4c3a11b854a943f6b6b09a4"
+        },
+        {
+          "sha": "46c74a3f78f58af6c6cc2a8f248acfd902e31258",
+          "author_date": "2021-11-05T13:35:47Z",
+          "message": "fix auto_insert_item = false (#301)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/46c74a3f78f58af6c6cc2a8f248acfd902e31258"
+        },
+        {
+          "sha": "2670d7859dfa01ab6d5f23d02c90d3c41241fc69",
+          "author_date": "2021-11-05T14:24:16Z",
+          "message": "upgrade dashboard version (#302)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/2670d7859dfa01ab6d5f23d02c90d3c41241fc69"
+        },
+        {
+          "sha": "84ec522ae9a58acf3797f5f2bf9c8b92ff40fe87",
+          "author_date": "2021-11-06T05:21:32Z",
+          "message": "fix err logging in offline recommendation (#303)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/84ec522ae9a58acf3797f5f2bf9c8b92ff40fe87"
+        },
+        {
+          "sha": "6c351c724b772791be418852f4ffd23a4a397d0e",
+          "author_date": "2021-11-06T08:48:28Z",
+          "message": "pass exclude in explore (#304)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/6c351c724b772791be418852f4ffd23a4a397d0e"
+        },
+        {
+          "sha": "91ce2a1d871a9d00d68a67e32947fd871eebbcd7",
+          "author_date": "2021-11-06T10:09:11Z",
+          "message": "fix bug from bug fix (#305)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/91ce2a1d871a9d00d68a67e32947fd871eebbcd7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.3.0",
@@ -811,8 +969,69 @@
     {
       "release": "v0.3.1",
       "previous_release": "v0.3.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "1412438481eaf527a1b6bb2519096bfc6ba91af0",
+          "author_date": "2021-12-17T07:56:33Z",
+          "message": "Fix concurrency write map panic (#338)\n\nCo-authored-by: 戚辅光 <9330@9ji.com>",
+          "html_url": "https://github.com/gorse-io/gorse/commit/1412438481eaf527a1b6bb2519096bfc6ba91af0"
+        },
+        {
+          "sha": "ef1926020b17ac0ebf40bd2cb01abb8d5782fdf8",
+          "author_date": "2021-12-17T12:28:22Z",
+          "message": "optimize deep copy (#337)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/ef1926020b17ac0ebf40bd2cb01abb8d5782fdf8"
+        },
+        {
+          "sha": "caba1bae9a803ef3a123606de1ada6dacbdb5f5e",
+          "author_date": "2021-12-18T07:48:58Z",
+          "message": "support total cold-start (#340)\n\n1. skip untrained users and items\r\n2. support total cold-start\r\n3. display final recommendation in dashboard",
+          "html_url": "https://github.com/gorse-io/gorse/commit/caba1bae9a803ef3a123606de1ada6dacbdb5f5e"
+        },
+        {
+          "sha": "71a77e6f92e843814be6c3c5d1b3e3af61e27c95",
+          "author_date": "2021-12-20T09:03:33Z",
+          "message": "optimize hidden items implementation (#341)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/71a77e6f92e843814be6c3c5d1b3e3af61e27c95"
+        },
+        {
+          "sha": "09735401e6d87c4a0960e1ba2070475e47a9e67d",
+          "author_date": "2021-12-23T13:32:35Z",
+          "message": "update latest in real time (#342)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/09735401e6d87c4a0960e1ba2070475e47a9e67d"
+        },
+        {
+          "sha": "6bf0cf83600a71dfc2ac29867d2f7d9501358d3b",
+          "author_date": "2021-12-24T13:56:35Z",
+          "message": "update popular on server (#343)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/6bf0cf83600a71dfc2ac29867d2f7d9501358d3b"
+        },
+        {
+          "sha": "03d64dbd28784cb5eb88652dfde5c5cf16b3ccc4",
+          "author_date": "2021-12-25T03:44:15Z",
+          "message": "cache item categories (#346)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/03d64dbd28784cb5eb88652dfde5c5cf16b3ccc4"
+        },
+        {
+          "sha": "55a0714f913dbccd6a557a40ae2c371d477cdbf6",
+          "author_date": "2021-12-25T04:21:51Z",
+          "message": "fix race condition of map access (#347)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/55a0714f913dbccd6a557a40ae2c371d477cdbf6"
+        },
+        {
+          "sha": "f8245654f69b0c80bc9e5e99c7f0369f90d63bab",
+          "author_date": "2021-12-26T12:19:31Z",
+          "message": "add bloom_filter index in ClickHouse (#349)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/f8245654f69b0c80bc9e5e99c7f0369f90d63bab"
+        },
+        {
+          "sha": "220a0340ed9b0f7fa4d3004d62ce44daee236224",
+          "author_date": "2021-12-28T13:06:43Z",
+          "message": "optimize fallback item-based recommender (#350)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/220a0340ed9b0f7fa4d3004d62ce44daee236224"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.3.2",
@@ -901,8 +1120,111 @@
     {
       "release": "v0.4.11",
       "previous_release": "v0.4.10",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "fd982ccc7f45094ddb4032b7072a4fa90d33f029",
+          "author_date": "2022-11-24T11:08:34Z",
+          "message": "fix cors error with api key (#598)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/fd982ccc7f45094ddb4032b7072a4fa90d33f029"
+        },
+        {
+          "sha": "407f296c018d6ca9561996a586c4d4e3e258aa53",
+          "author_date": "2022-11-29T14:05:54Z",
+          "message": "polish Swagger docs (#601)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/407f296c018d6ca9561996a586c4d4e3e258aa53"
+        },
+        {
+          "sha": "492ffbb575293c5e23071e3811e4a552e90bd88f",
+          "author_date": "2022-11-30T15:20:06Z",
+          "message": "fix typo (#602)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/492ffbb575293c5e23071e3811e4a552e90bd88f"
+        },
+        {
+          "sha": "762f21f3154f35877fe376ba435c11e7eaaf5edc",
+          "author_date": "2022-12-16T15:17:57Z",
+          "message": "support YAML/JSON configuration file format (#604)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/762f21f3154f35877fe376ba435c11e7eaaf5edc"
+        },
+        {
+          "sha": "d99acd257b0ef88c1d69277f574da563c88c301b",
+          "author_date": "2023-01-09T15:49:06Z",
+          "message": "worker: fix nil pointer in `refreshCache` (#611)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/d99acd257b0ef88c1d69277f574da563c88c301b"
+        },
+        {
+          "sha": "860277563c85692ba4d8a7253cf4dfc181e93db4",
+          "author_date": "2023-01-10T12:39:17Z",
+          "message": "encode cursor by base64 (#612)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/860277563c85692ba4d8a7253cf4dfc181e93db4"
+        },
+        {
+          "sha": "fac66f4243f5b86698626d0b1aee8d548df7ece5",
+          "author_date": "2023-01-13T14:17:29Z",
+          "message": "implement SVE2 vector multiplication (#614)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/fac66f4243f5b86698626d0b1aee8d548df7ece5"
+        },
+        {
+          "sha": "728e754cbeff8c1cb33f7313c86f476dedbc8239",
+          "author_date": "2023-01-20T03:26:24Z",
+          "message": "hide database config under managed mode (#616)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/728e754cbeff8c1cb33f7313c86f476dedbc8239"
+        },
+        {
+          "sha": "d24ad77a113af15a94a9a265cf5f773f4ce05a57",
+          "author_date": "2023-02-02T13:44:01Z",
+          "message": "support Docker Windows images (#618)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/d24ad77a113af15a94a9a265cf5f773f4ce05a57"
+        },
+        {
+          "sha": "b5ff2cfded7958f48625bff4d18c7445e002b64d",
+          "author_date": "2023-02-03T13:03:54Z",
+          "message": "change release archive file names (#619)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/b5ff2cfded7958f48625bff4d18c7445e002b64d"
+        },
+        {
+          "sha": "d4aedad7fa7fdc96fe4f996c58d56e7bf8eb258e",
+          "author_date": "2023-02-04T10:16:13Z",
+          "message": "fix batch import feedback (#620)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/d4aedad7fa7fdc96fe4f996c58d56e7bf8eb258e"
+        },
+        {
+          "sha": "89fc6bc94c6a5099187f395fdd251584c1e91c67",
+          "author_date": "2023-02-05T03:44:27Z",
+          "message": "support Windows log file sink (#621)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/89fc6bc94c6a5099187f395fdd251584c1e91c67"
+        },
+        {
+          "sha": "7ab4d7206d212763dc01cbcfdb2b57de0f53dcca",
+          "author_date": "2023-02-05T04:14:29Z",
+          "message": "upgrade to Go 1.20 (#622)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/7ab4d7206d212763dc01cbcfdb2b57de0f53dcca"
+        },
+        {
+          "sha": "4a4ff90ea22c289c6bc2b0899ff230399cee7496",
+          "author_date": "2023-02-06T04:43:36Z",
+          "message": "support login by access token (#623)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/4a4ff90ea22c289c6bc2b0899ff230399cee7496"
+        },
+        {
+          "sha": "a2b9e602365ae22a0df673fb852bb58b2ad00ec8",
+          "author_date": "2023-02-16T13:12:28Z",
+          "message": "allow empty feedback types in config (#624)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/a2b9e602365ae22a0df673fb852bb58b2ad00ec8"
+        },
+        {
+          "sha": "554c2b2bae9587afb591af5ec03251408d089030",
+          "author_date": "2023-02-17T12:31:05Z",
+          "message": "update DockerHub description (#625)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/554c2b2bae9587afb591af5ec03251408d089030"
+        },
+        {
+          "sha": "5e9f6772dd541a15b8e73d1021e5900e5db1c1af",
+          "author_date": "2023-02-19T07:31:16Z",
+          "message": "create temporary directory for scratch image (#627)",
+          "html_url": "https://github.com/gorse-io/gorse/commit/5e9f6772dd541a15b8e73d1021e5900e5db1c1af"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.4.12",

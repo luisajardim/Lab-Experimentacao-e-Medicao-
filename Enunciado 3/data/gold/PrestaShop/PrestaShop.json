@@ -2301,8 +2301,27 @@
     {
       "release": "1.6.0.14",
       "previous_release": "1.6.0.13",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "e501e7fecb8d7f1fe621458665faf544d9fe9108",
+          "author_date": "2015-03-06T10:34:49Z",
+          "message": "[-] CORE : revert @cb11f9c8e8b666cfc801288fba7c87c9ef249937 Modules names should be lowercase",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e501e7fecb8d7f1fe621458665faf544d9fe9108"
+        },
+        {
+          "sha": "59b219594dfdd8aaec82eb034c7960e356dcdbf4",
+          "author_date": "2015-03-06T15:03:07Z",
+          "message": "// Changelog 1.6.0.14",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/59b219594dfdd8aaec82eb034c7960e356dcdbf4"
+        },
+        {
+          "sha": "cc5f69cf8fdcfc8f0191a2a7e4ea5f2f20296b9b",
+          "author_date": "2015-03-06T15:06:50Z",
+          "message": "// Contributors.md",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/cc5f69cf8fdcfc8f0191a2a7e4ea5f2f20296b9b"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.6.1.0",
@@ -2439,8 +2458,357 @@
     {
       "release": "1.7.1.1",
       "previous_release": "1.7.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "70d946b86a4620255a2bd66009fdc80f20d8cd9f",
+          "author_date": "2017-03-22T18:00:14Z",
+          "message": "FO: Password controller must be in SSL when available",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/70d946b86a4620255a2bd66009fdc80f20d8cd9f"
+        },
+        {
+          "sha": "1cfd0b0570926b6e2dd70c458e04bd7205cc53c8",
+          "author_date": "2017-03-22T14:26:24Z",
+          "message": "FO: Save zero to id_state if country has no states",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1cfd0b0570926b6e2dd70c458e04bd7205cc53c8"
+        },
+        {
+          "sha": "db9f6d823fb7d5ca43519dc037f6c90b7430b10d",
+          "author_date": "2017-02-22T14:49:28Z",
+          "message": "FO: Fix country change in checkout form",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/db9f6d823fb7d5ca43519dc037f6c90b7430b10d"
+        },
+        {
+          "sha": "11efd8cb4a13a7a2b53dd41f41a8a619871256fa",
+          "author_date": "2017-03-28T10:16:55Z",
+          "message": "FO: Use template inheritance instead of creating ajax functionnality",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/11efd8cb4a13a7a2b53dd41f41a8a619871256fa"
+        },
+        {
+          "sha": "2512221f21526797d0aa1a06583c0a51d35d2259",
+          "author_date": "2017-03-28T11:19:23Z",
+          "message": "CO: Reuse Checkout addresses step parameters",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/2512221f21526797d0aa1a06583c0a51d35d2259"
+        },
+        {
+          "sha": "414cc7d37a778677a7846db8a910c255158b292d",
+          "author_date": "2017-03-28T11:25:23Z",
+          "message": "FO: Fix address cancel button when url rewrite disabled",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/414cc7d37a778677a7846db8a910c255158b292d"
+        },
+        {
+          "sha": "9867062465a9f712f86367bb9cc4ea7c361efafb",
+          "author_date": "2017-03-29T14:33:27Z",
+          "message": "CO: Module code cleanup and fix module action in details modal",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9867062465a9f712f86367bb9cc4ea7c361efafb"
+        },
+        {
+          "sha": "1882b389c1ef05f69768adb9a6032a54bcb41577",
+          "author_date": "2017-03-29T14:50:22Z",
+          "message": "BO: Handle youtu.be links in embed link generation",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1882b389c1ef05f69768adb9a6032a54bcb41577"
+        },
+        {
+          "sha": "5105dac243de87b61c17608493ec75d27c20fcdc",
+          "author_date": "2017-03-30T15:56:20Z",
+          "message": "BO: Fix catalog ASC sorting",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/5105dac243de87b61c17608493ec75d27c20fcdc"
+        },
+        {
+          "sha": "b290e95de2736a4992460667116aacdec3d26256",
+          "author_date": "2017-03-30T15:56:42Z",
+          "message": "BO: New theme compiled assets",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b290e95de2736a4992460667116aacdec3d26256"
+        },
+        {
+          "sha": "b56a92d58a5975f7f266f830ce96d4d9c8ebf759",
+          "author_date": "2017-03-31T08:51:23Z",
+          "message": "BO: Fix translations theme export on Windows",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b56a92d58a5975f7f266f830ce96d4d9c8ebf759"
+        },
+        {
+          "sha": "2359f06deb9eee41b0999f2d257e07d5b3ac28be",
+          "author_date": "2017-03-30T12:27:55Z",
+          "message": "FO: Display product reference when product has no combination",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/2359f06deb9eee41b0999f2d257e07d5b3ac28be"
+        },
+        {
+          "sha": "e46857b4eb33562a2b2990b1f18b21c28bc999cf",
+          "author_date": "2017-04-03T08:06:32Z",
+          "message": "FO: add button to close popup payment",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e46857b4eb33562a2b2990b1f18b21c28bc999cf"
+        },
+        {
+          "sha": "0c0283d678ebf90670082ce6d118423b49b5648f",
+          "author_date": "2017-04-03T08:07:34Z",
+          "message": "FO: compile assets",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0c0283d678ebf90670082ce6d118423b49b5648f"
+        },
+        {
+          "sha": "22f3ceef8e3f23532057acde1c5639f04bb3f9a3",
+          "author_date": "2017-04-03T09:24:05Z",
+          "message": "BO: Alphabetically sort features",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/22f3ceef8e3f23532057acde1c5639f04bb3f9a3"
+        },
+        {
+          "sha": "f9476c8cfc51fc8b305abdf34b3d33845ec6e928",
+          "author_date": "2017-04-03T09:41:57Z",
+          "message": "FO: display amount with good taxes",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f9476c8cfc51fc8b305abdf34b3d33845ec6e928"
+        },
+        {
+          "sha": "3a140306e1ce617757e920960cc8eaf50af1a830",
+          "author_date": "2017-04-03T11:42:01Z",
+          "message": "BO: Add search to some select2 fields",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3a140306e1ce617757e920960cc8eaf50af1a830"
+        },
+        {
+          "sha": "85fecc91f0f0ea57b564e030fef85aca3877f774",
+          "author_date": "2017-04-03T16:20:17Z",
+          "message": "CO: Adapt tests..",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/85fecc91f0f0ea57b564e030fef85aca3877f774"
+        },
+        {
+          "sha": "f189412b152469c2a20325ae37ae2ea062b7c4cd",
+          "author_date": "2017-04-04T15:29:13Z",
+          "message": "FO: Catch the exception when a template is missing in prod mode",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f189412b152469c2a20325ae37ae2ea062b7c4cd"
+        },
+        {
+          "sha": "8bb82dbc3efffc35e9d619d81877f2b5bb176d1f",
+          "author_date": "2017-04-05T07:21:43Z",
+          "message": "BO: Fix access to domainized modules translations",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8bb82dbc3efffc35e9d619d81877f2b5bb176d1f"
+        },
+        {
+          "sha": "7f8fb27550bf99f9fc7a8603d78b041d5d22aafc",
+          "author_date": "2017-04-05T08:24:41Z",
+          "message": "CO: Allow modules compliancy on 3 digits",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7f8fb27550bf99f9fc7a8603d78b041d5d22aafc"
+        },
+        {
+          "sha": "19981820039bdad4ee25b37bac2297d9aab907a3",
+          "author_date": "2017-04-05T09:08:55Z",
+          "message": "Merge pull request #7693 from Quetzacoalt91/BOOM-2673\n\nPassword controller must be in SSL when available",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/19981820039bdad4ee25b37bac2297d9aab907a3"
+        },
+        {
+          "sha": "2bd7e20309949d329e098d069feeed1ac9b2aa44",
+          "author_date": "2017-04-05T09:23:25Z",
+          "message": "Merge pull request #7726 from aleeks/close_checkbox\n\nFixed Terms and conditions popup on mobile not possible to close",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/2bd7e20309949d329e098d069feeed1ac9b2aa44"
+        },
+        {
+          "sha": "a1af04a2f264b2e431db97ee1cbbe5e62565fcd4",
+          "author_date": "2017-04-05T09:29:18Z",
+          "message": "Js responsive value is not changed on resize (#7704)\n\n* FO: Js responsive value is not changed on resize\r\n\r\nTo corectly calculate prestashop.responsive.mobile value it is needed to base on actual window width. Previosly it was base on _cw value which stored window with value calculated before window resize.\r\n\r\n*  FO: Js responsive value is not changed on resize\r\n\r\nTo corectly calculate prestashop.responsive.mobile value it is needed to base on actual window width. Previosly it was base on _cw value which stored window with value calculated before window resize.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a1af04a2f264b2e431db97ee1cbbe5e62565fcd4"
+        },
+        {
+          "sha": "7f8d1ed6b8740434256459879df993de38a3d6cd",
+          "author_date": "2017-03-27T21:29:28Z",
+          "message": "FO: Fix for image change in zoom modal window",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7f8d1ed6b8740434256459879df993de38a3d6cd"
+        },
+        {
+          "sha": "7ad51a07af861565277b45df7227ec37abb2d016",
+          "author_date": "2017-04-05T09:34:54Z",
+          "message": "FO: Classic compiled assets",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7ad51a07af861565277b45df7227ec37abb2d016"
+        },
+        {
+          "sha": "0b4adc3880b5a28ad05dc7dd8edb7be89bddb9e1",
+          "author_date": "2017-04-05T09:41:04Z",
+          "message": "Merge pull request #7729 from aleeks/history_amount\n\nFixed display amount with good taxes",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0b4adc3880b5a28ad05dc7dd8edb7be89bddb9e1"
+        },
+        {
+          "sha": "783488aa12794f67117f2f646f4a1631810afaaa",
+          "author_date": "2017-04-05T09:41:52Z",
+          "message": "Merge pull request #7689 from martinfojtik/patch-41\n\nSave zero to id_state if country has no states",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/783488aa12794f67117f2f646f4a1631810afaaa"
+        },
+        {
+          "sha": "2ae6acac564afe79def23c3b655ceaeebda55c88",
+          "author_date": "2017-04-05T09:54:38Z",
+          "message": "Merge pull request #7730 from maximebiloe/BOOM-2747\n\nAlphabetically sort features on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/2ae6acac564afe79def23c3b655ceaeebda55c88"
+        },
+        {
+          "sha": "01b393d722a0a53fbd2acb9e195b1cb226eb494c",
+          "author_date": "2017-04-05T09:54:59Z",
+          "message": "Merge pull request #7720 from maximebiloe/boom-2657\n\nDisplay product reference when product has no combination",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/01b393d722a0a53fbd2acb9e195b1cb226eb494c"
+        },
+        {
+          "sha": "ce508611563c9322c9c27b338f56f323581e5d4d",
+          "author_date": "2017-04-05T09:57:01Z",
+          "message": "Merge pull request #7734 from maximebiloe/boom-2769\n\nCatch the exception when a template is missing in prod mode",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ce508611563c9322c9c27b338f56f323581e5d4d"
+        },
+        {
+          "sha": "0c7abb7e36b7383e48677594eecedf67a6ce6ab6",
+          "author_date": "2017-03-22T16:27:40Z",
+          "message": "BO: Incorrect traduction on symfony page (problems with TinyMCE)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0c7abb7e36b7383e48677594eecedf67a6ce6ab6"
+        },
+        {
+          "sha": "266ca9fed2e153af03b491d9ea2b7166b2ea6c3c",
+          "author_date": "2017-04-05T13:08:13Z",
+          "message": "Merge pull request #7690 from kompilorb/1.7.1.x_lang\n\nIncorrect translation on Symfony page (problems with TinyMCE)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/266ca9fed2e153af03b491d9ea2b7166b2ea6c3c"
+        },
+        {
+          "sha": "172bb83397a8558a013841efe06610dd92bb9961",
+          "author_date": "2017-04-05T13:14:59Z",
+          "message": "Merge pull request #7742 from maximebiloe/iqit-commerce-1.7.1.x\n\nFix for image change in zoom modal window",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/172bb83397a8558a013841efe06610dd92bb9961"
+        },
+        {
+          "sha": "669d04531becca074c96f1ce6843cf6c6bcd6f3f",
+          "author_date": "2017-04-05T13:15:21Z",
+          "message": "Merge pull request #7739 from maximebiloe/allow-3-digit-version\n\nAllow modules compliancy on 3 digits",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/669d04531becca074c96f1ce6843cf6c6bcd6f3f"
+        },
+        {
+          "sha": "a8b0e8cfdb95d3522b4bd136d266f403cdf7d418",
+          "author_date": "2017-04-05T13:16:07Z",
+          "message": "Merge pull request #7724 from maximebiloe/fix-export-translations-windows\n\nFix translations theme export on Windows",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a8b0e8cfdb95d3522b4bd136d266f403cdf7d418"
+        },
+        {
+          "sha": "9ea130a36de3ab065fc6d9ead2e5dfdbe140c340",
+          "author_date": "2017-04-05T13:16:37Z",
+          "message": "Merge pull request #7723 from maximebiloe/BOOM-2659\n\nFix catalog ASC sorting",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9ea130a36de3ab065fc6d9ead2e5dfdbe140c340"
+        },
+        {
+          "sha": "59daab1ceacfab3bd89e9252cb56e3e55bfe0b03",
+          "author_date": "2017-04-05T13:16:59Z",
+          "message": "Merge pull request #7738 from maximebiloe/fix-domainized-module-translations\n\nFix access to domainized modules translations",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/59daab1ceacfab3bd89e9252cb56e3e55bfe0b03"
+        },
+        {
+          "sha": "733ef119699edc5554e48c72016046d519954202",
+          "author_date": "2017-03-22T16:57:59Z",
+          "message": "CO: Allow 255 char to company field in Adress\n\n(cherry picked from commit 6e742175b31eba530014c3f7077e8bcce413d678)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/733ef119699edc5554e48c72016046d519954202"
+        },
+        {
+          "sha": "c60959ec5dae552f0af402fe1005c6416430b781",
+          "author_date": "2017-03-22T17:41:08Z",
+          "message": "IN: Add modification of DB structure when upgrading\n\n(cherry picked from commit 16b6285a30ec16dc0183be1424932031cdddc309)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c60959ec5dae552f0af402fe1005c6416430b781"
+        },
+        {
+          "sha": "e3dfdcfacee0a046ee62e9bc324cd724d7e8e92e",
+          "author_date": "2017-04-05T15:10:57Z",
+          "message": "Merge pull request #7743 from maximebiloe/PSCSX-8949\n\nAllow 255 char to company field in Adress",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e3dfdcfacee0a046ee62e9bc324cd724d7e8e92e"
+        },
+        {
+          "sha": "f8f3a11694c688e1adaeed691777714d8c9ee3ed",
+          "author_date": "2017-04-05T15:31:34Z",
+          "message": "Merge pull request #7710 from Quetzacoalt91/martinfojtik-patch-38\n\nFix country change in checkout form",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f8f3a11694c688e1adaeed691777714d8c9ee3ed"
+        },
+        {
+          "sha": "142654aabe6ba93e130906c2bf26831e09aec4a0",
+          "author_date": "2017-04-05T15:37:00Z",
+          "message": "Merge pull request #7714 from Quetzacoalt91/BOOM-2430\n\nModule code cleanup and fix module action in details modal",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/142654aabe6ba93e130906c2bf26831e09aec4a0"
+        },
+        {
+          "sha": "adab26ec50bbd566f6342094bc1dbcf2782a9fb9",
+          "author_date": "2017-04-05T15:38:23Z",
+          "message": "CO: Update composer.lock",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/adab26ec50bbd566f6342094bc1dbcf2782a9fb9"
+        },
+        {
+          "sha": "bd0e16bf7d2b88397bcdaf87352e68bb7308ccab",
+          "author_date": "2017-04-07T08:47:08Z",
+          "message": "FO: Some refacto for address controller",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/bd0e16bf7d2b88397bcdaf87352e68bb7308ccab"
+        },
+        {
+          "sha": "b22288727a62a2a30f414a505682882121b0bbbd",
+          "author_date": "2017-04-07T09:55:36Z",
+          "message": "Merge pull request #7750 from maximebiloe/refacto-addresses\n\nSome refacto for address controller",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b22288727a62a2a30f414a505682882121b0bbbd"
+        },
+        {
+          "sha": "cb28adaeeafb6bdd14153606eea7534d326399be",
+          "author_date": "2017-04-07T08:24:23Z",
+          "message": "CO: use doctrine without foreign key",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/cb28adaeeafb6bdd14153606eea7534d326399be"
+        },
+        {
+          "sha": "a68542bff462bd593c5d13771012392761e35b90",
+          "author_date": "2017-04-07T12:02:19Z",
+          "message": "Merge pull request #7746 from aleeks/doctrine_without_foreign\n\nDoctrine without foreign for autoupgrade backup",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a68542bff462bd593c5d13771012392761e35b90"
+        },
+        {
+          "sha": "15ac2c7722c9d8894e2bba9ea3dcce970bae1c57",
+          "author_date": "2017-04-07T14:02:16Z",
+          "message": "CO: add nullable for Tab entity",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/15ac2c7722c9d8894e2bba9ea3dcce970bae1c57"
+        },
+        {
+          "sha": "4e7993c1b80f3bb6a8f2795dfe645d6c034b8dd8",
+          "author_date": "2017-04-07T14:19:14Z",
+          "message": "Merge pull request #7753 from aleeks/trans\n\nAdded nullable for Tab entity",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4e7993c1b80f3bb6a8f2795dfe645d6c034b8dd8"
+        },
+        {
+          "sha": "3d45f8dbba26a0bb299c96fb1757f430d03296ba",
+          "author_date": "2017-04-11T10:11:24Z",
+          "message": "Revert \"BO: Incorrect traduction on symfony page (problems with TinyMCE)\"\n\nThis reverts commit 0c7abb7e36b7383e48677594eecedf67a6ce6ab6.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3d45f8dbba26a0bb299c96fb1757f430d03296ba"
+        },
+        {
+          "sha": "deed29c0f94ad26f42eee00ab607504c02d224d6",
+          "author_date": "2017-04-11T12:01:55Z",
+          "message": "BO: Add brazilian for tiny mce",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/deed29c0f94ad26f42eee00ab607504c02d224d6"
+        },
+        {
+          "sha": "574ce91efac51c88edd258bdce19002638352e60",
+          "author_date": "2017-04-11T12:02:24Z",
+          "message": "BO: Use the locale instead of iso code for datepicker",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/574ce91efac51c88edd258bdce19002638352e60"
+        },
+        {
+          "sha": "c7f1f0fbd3971725af50f3d81f4e88c4bfd048b8",
+          "author_date": "2017-04-11T12:45:28Z",
+          "message": "Merge pull request #7769 from maximebiloe/fix-tiny-mce\n\nFix the datepicker to use locale instead of iso code",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c7f1f0fbd3971725af50f3d81f4e88c4bfd048b8"
+        },
+        {
+          "sha": "524e921647303a82fe2a32fceb40457d0a8717b8",
+          "author_date": "2017-04-12T15:25:26Z",
+          "message": "CO: fix cache on install",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/524e921647303a82fe2a32fceb40457d0a8717b8"
+        },
+        {
+          "sha": "f73b99c0984430b420eeb3d4016367c0d6b1c3ac",
+          "author_date": "2017-04-12T15:44:11Z",
+          "message": "Merge pull request #7776 from aleeks/fix_cache_install\n\nFix cache on install",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f73b99c0984430b420eeb3d4016367c0d6b1c3ac"
+        },
+        {
+          "sha": "c28bfbb096697df84d4a3eb759f1d7aefa9f21fa",
+          "author_date": "2017-04-18T12:32:47Z",
+          "message": "FO: Fix address form Ajax refresh",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c28bfbb096697df84d4a3eb759f1d7aefa9f21fa"
+        },
+        {
+          "sha": "9eeddc40809275965e14e73a7482a9ce35f197dd",
+          "author_date": "2017-04-19T16:19:28Z",
+          "message": "// Changelog 1.7.1.1",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9eeddc40809275965e14e73a7482a9ce35f197dd"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.6.1.13",
@@ -2547,8 +2915,69 @@
     {
       "release": "1.7.3.3",
       "previous_release": "1.7.3.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "b15874ec0183ba6a698cee86a13b667825e63b49",
+          "author_date": "2018-04-11T08:41:36Z",
+          "message": "[BO] fix display error on module selection list\n\nFix error display on module selection list.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b15874ec0183ba6a698cee86a13b667825e63b49"
+        },
+        {
+          "sha": "5f95a60fc3e21d04660c3c611239e32f668540bc",
+          "author_date": "2018-05-15T08:04:49Z",
+          "message": "Merge pull request #9026 from Quetzacoalt91/cherry-pick-8932\n\nFixed display error on back office module selection list",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/5f95a60fc3e21d04660c3c611239e32f668540bc"
+        },
+        {
+          "sha": "cd9679b2bb447776a8ee0060fe810be95fed5c68",
+          "author_date": "2018-05-18T12:00:43Z",
+          "message": "Follow-up to update in contactform: display GDPR consent checkbox in contactform.\n\nThis is a follow-up to adjust the classic theme to the change suggested in https://github.com/PrestaShop/contactform/pull/21",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/cd9679b2bb447776a8ee0060fe810be95fed5c68"
+        },
+        {
+          "sha": "c6c63ae95823a84cfa3fabd777681d860f7e4ef9",
+          "author_date": "2018-05-22T10:00:43Z",
+          "message": "Display consent checkbox (psgdpr module) in ps_emailsubscription",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c6c63ae95823a84cfa3fabd777681d860f7e4ef9"
+        },
+        {
+          "sha": "37d02ee55dc2a3eea3bdaebfca0c88ae10db0f2e",
+          "author_date": "2018-05-22T15:45:56Z",
+          "message": "add condition on id_module to avoid error if the module is not update to the last version",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/37d02ee55dc2a3eea3bdaebfca0c88ae10db0f2e"
+        },
+        {
+          "sha": "7f84d2c601c5168e52a4851f0d6fb28215e0aeb2",
+          "author_date": "2018-05-22T16:08:44Z",
+          "message": "fix indentation",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7f84d2c601c5168e52a4851f0d6fb28215e0aeb2"
+        },
+        {
+          "sha": "f387146b8e6ed50ac1a88738e33c7d6cee2ca420",
+          "author_date": "2018-05-23T16:24:20Z",
+          "message": "Merge pull request #9099 from florian-nolte/gdpr\n\nFollow-up to: display GDPR consent checkbox in contactform",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f387146b8e6ed50ac1a88738e33c7d6cee2ca420"
+        },
+        {
+          "sha": "5ea7a2739803c4b7b7d43f0c5096a5bb31219548",
+          "author_date": "2018-05-24T09:19:27Z",
+          "message": "Merge pull request #9104 from Joukz/gdpr_compliance_1.7\n\nAdd compliance to GDPR law for ps_emailsubscription module",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/5ea7a2739803c4b7b7d43f0c5096a5bb31219548"
+        },
+        {
+          "sha": "1ae45f19b5008922f2e2b36d1ddf0e8c32680993",
+          "author_date": "2018-05-24T13:44:30Z",
+          "message": "Update native modules",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1ae45f19b5008922f2e2b36d1ddf0e8c32680993"
+        },
+        {
+          "sha": "3c1b63e06cee1f3c767cb3f46f09cb19bfa62161",
+          "author_date": "2018-05-24T16:51:14Z",
+          "message": "// Changelog 1.7.3.3",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3c1b63e06cee1f3c767cb3f46f09cb19bfa62161"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.6.1.19",
@@ -2607,8 +3036,1509 @@
     {
       "release": "1.7.4.4",
       "previous_release": "1.6.1.22",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "ee2e99ea8389f5ad21af536356ca3d21a7a7b2e8",
+          "author_date": "2016-02-16T10:46:42Z",
+          "message": "[+] FO: Change structure for module assets override",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ee2e99ea8389f5ad21af536356ca3d21a7a7b2e8"
+        },
+        {
+          "sha": "aabb2d4dc057f29818f57e30e9c7c55dd98efb70",
+          "author_date": "2016-02-26T11:10:11Z",
+          "message": "// PR template: Added linefeed.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/aabb2d4dc057f29818f57e30e9c7c55dd98efb70"
+        },
+        {
+          "sha": "2b26c0fc1e98b862c4e4a4cc7b41b335bd2ab8fc",
+          "author_date": "2016-02-26T11:18:09Z",
+          "message": "[+] CORE : Ovverride controllers of a modules",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/2b26c0fc1e98b862c4e4a4cc7b41b335bd2ab8fc"
+        },
+        {
+          "sha": "27b9a875813c83e80f624d050af82119651d045f",
+          "author_date": "2016-02-26T11:21:58Z",
+          "message": "[+] CORE : Ovverride controllers of a modules",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/27b9a875813c83e80f624d050af82119651d045f"
+        },
+        {
+          "sha": "0727eff7b999d99f610dda8d35d7de5acd401e36",
+          "author_date": "2016-02-26T12:56:21Z",
+          "message": "Merge pull request #5081 from tchauviere/wip/module-page\n\n// Improvements for new Module Page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0727eff7b999d99f610dda8d35d7de5acd401e36"
+        },
+        {
+          "sha": "f9c4916667418c2549258948f14580a1f6870681",
+          "author_date": "2016-02-26T13:41:23Z",
+          "message": "//Fix blockcart link",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f9c4916667418c2549258948f14580a1f6870681"
+        },
+        {
+          "sha": "9123b7437572e6dc947990d8d6e5c7ac874b935f",
+          "author_date": "2016-02-26T13:49:22Z",
+          "message": "[*] FO : Improved discount amounts display",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9123b7437572e6dc947990d8d6e5c7ac874b935f"
+        },
+        {
+          "sha": "739706bd9d32160526ef1254c140493b0b441770",
+          "author_date": "2016-02-26T14:06:52Z",
+          "message": "Merge pull request #5083 from maximebiloe/dev/fix/blockcart-click\n\n//Fix blockcart link",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/739706bd9d32160526ef1254c140493b0b441770"
+        },
+        {
+          "sha": "feae865e24c5fb4c5ebf14f7bf14e730b10458ff",
+          "author_date": "2016-02-26T14:40:31Z",
+          "message": "Merge pull request #5084 from mickaelandrieu/improved-discount-amounts-display\n\n[*] FO : Improved discount amounts display",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/feae865e24c5fb4c5ebf14f7bf14e730b10458ff"
+        },
+        {
+          "sha": "070db11d3276e7d5e09a24785b55d1ce3eed02fe",
+          "author_date": "2016-02-26T15:38:25Z",
+          "message": "// PR template: Adding naming tips, rephrasing bits and parts.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/070db11d3276e7d5e09a24785b55d1ce3eed02fe"
+        },
+        {
+          "sha": "b558dd81ee7722ecb63dcea0d60b2d05e8c3ec6f",
+          "author_date": "2016-02-26T15:58:24Z",
+          "message": "//Delete address from checkout",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b558dd81ee7722ecb63dcea0d60b2d05e8c3ec6f"
+        },
+        {
+          "sha": "1fb83b5e6e943d1d9beb5bc15fc78c58ecefa02d",
+          "author_date": "2016-02-26T17:42:01Z",
+          "message": "// PR template: Typos and details.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1fb83b5e6e943d1d9beb5bc15fc78c58ecefa02d"
+        },
+        {
+          "sha": "0d4bcddd7128b83b063db66b65e3124d6a8537b5",
+          "author_date": "2016-02-26T17:43:37Z",
+          "message": "// PR template: Forgot \"Related to\".",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0d4bcddd7128b83b063db66b65e3124d6a8537b5"
+        },
+        {
+          "sha": "b3a8e69faf9915ee45dcb1eb2267eda46e8d52e1",
+          "author_date": "2016-02-27T07:00:48Z",
+          "message": "fix PHP Warning in Tools class\n\nfix PHP Warning:  Illegal offset type in isset or empty in Tools.php",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b3a8e69faf9915ee45dcb1eb2267eda46e8d52e1"
+        },
+        {
+          "sha": "5c111b24ba288193fab615b082f1e9842f9ff6cf",
+          "author_date": "2016-02-29T09:14:10Z",
+          "message": "[-] Installer : fix upgrade",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/5c111b24ba288193fab615b082f1e9842f9ff6cf"
+        },
+        {
+          "sha": "971a6e4fbed6cc5ee9b9ba903603c6cdfb2cd4c6",
+          "author_date": "2016-02-29T09:25:06Z",
+          "message": "Merge pull request #5085 from maximebiloe/dev/feat/address-delete-button\n\n//Delete address from checkout",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/971a6e4fbed6cc5ee9b9ba903603c6cdfb2cd4c6"
+        },
+        {
+          "sha": "686b3b71fdd5bbf5c4a86d1f9981f5ad9833b831",
+          "author_date": "2015-11-04T11:04:19Z",
+          "message": "[+] BO : Display warning about active Debug Mode\n\n(cherry picked from commit 016d9ee3e578f8d61aa4dedc3bbd897ff9a73d46)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/686b3b71fdd5bbf5c4a86d1f9981f5ad9833b831"
+        },
+        {
+          "sha": "0a1fff758bdf6bfac32f59e4c3d5e98096be50f5",
+          "author_date": "2016-02-24T15:38:21Z",
+          "message": "// product details redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0a1fff758bdf6bfac32f59e4c3d5e98096be50f5"
+        },
+        {
+          "sha": "ac98cefad48e5223f169eebeaf093bd12ed7077c",
+          "author_date": "2016-02-24T16:50:59Z",
+          "message": "// volume discounts redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ac98cefad48e5223f169eebeaf093bd12ed7077c"
+        },
+        {
+          "sha": "dc5d6ef9a95cff224c20e5b2ea77d6746d77e0be",
+          "author_date": "2016-02-25T11:01:38Z",
+          "message": "// product customization redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/dc5d6ef9a95cff224c20e5b2ea77d6746d77e0be"
+        },
+        {
+          "sha": "a5963dd37236b1ecceb97e4690e36571e222a255",
+          "author_date": "2016-02-25T13:27:18Z",
+          "message": "// product customization redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a5963dd37236b1ecceb97e4690e36571e222a255"
+        },
+        {
+          "sha": "4d742b1cc48514a8ce0eeec9ae366327b0d677e2",
+          "author_date": "2016-02-25T16:47:47Z",
+          "message": "// Product pack redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4d742b1cc48514a8ce0eeec9ae366327b0d677e2"
+        },
+        {
+          "sha": "56ca3390a926e4bb119a1acee09ebc50cca618f3",
+          "author_date": "2016-02-29T11:14:13Z",
+          "message": "[*] Project: added tests for theme validator",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/56ca3390a926e4bb119a1acee09ebc50cca618f3"
+        },
+        {
+          "sha": "ba13124466cb552cfd87e9d39faaef6e8acd005b",
+          "author_date": "2016-02-29T13:12:55Z",
+          "message": "// Fix add to card test",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ba13124466cb552cfd87e9d39faaef6e8acd005b"
+        },
+        {
+          "sha": "3b9ce50f13b27f9f42580f9693d84279dcf1ed5a",
+          "author_date": "2016-02-29T13:49:42Z",
+          "message": "// Add Parent on controller name for needed menus",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3b9ce50f13b27f9f42580f9693d84279dcf1ed5a"
+        },
+        {
+          "sha": "f1790e2cac8ef65c4ee4b4261c7bbe677bbdebb6",
+          "author_date": "2016-02-29T14:01:08Z",
+          "message": "Merge pull request #5071 from nihco2/feat/product-page\n\n// product page improvements",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f1790e2cac8ef65c4ee4b4261c7bbe677bbdebb6"
+        },
+        {
+          "sha": "59d20d4e3b27baacdc9436db09fe496855fb6b29",
+          "author_date": "2016-02-29T13:56:05Z",
+          "message": "// Admin marketing renamed",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/59d20d4e3b27baacdc9436db09fe496855fb6b29"
+        },
+        {
+          "sha": "70502c229be1eb2b3663c825d36a689d665ebe27",
+          "author_date": "2016-02-29T14:02:57Z",
+          "message": "// Tab module list now get the 1.7 specific",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/70502c229be1eb2b3663c825d36a689d665ebe27"
+        },
+        {
+          "sha": "0ece5660c1fdadd842e56b09c04c56b967ab1a77",
+          "author_date": "2016-02-29T14:04:57Z",
+          "message": "// Employees tab moved",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0ece5660c1fdadd842e56b09c04c56b967ab1a77"
+        },
+        {
+          "sha": "bc4caa14314aec01e3d7660018fa934a99f4466d",
+          "author_date": "2016-02-29T14:06:27Z",
+          "message": "// Shipping tab moved to Improve section",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/bc4caa14314aec01e3d7660018fa934a99f4466d"
+        },
+        {
+          "sha": "160fb02d263d4913f469731bdca99b79a41636e1",
+          "author_date": "2016-02-29T14:09:05Z",
+          "message": "// Payment tab moved to Improve section",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/160fb02d263d4913f469731bdca99b79a41636e1"
+        },
+        {
+          "sha": "007beaeebebc7a2f1d2950419bed7edc583ae6b4",
+          "author_date": "2016-02-29T14:11:01Z",
+          "message": "// Tab wording updated",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/007beaeebebc7a2f1d2950419bed7edc583ae6b4"
+        },
+        {
+          "sha": "606197ef6ae086af124fc308d1196a6278daefdf",
+          "author_date": "2016-02-29T14:22:06Z",
+          "message": "// AdminOutstanding reactivated",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/606197ef6ae086af124fc308d1196a6278daefdf"
+        },
+        {
+          "sha": "d55ffd9c7f2e23b7ae5136b2fe76f40e003ac8fe",
+          "author_date": "2016-02-29T14:21:15Z",
+          "message": "// Rename duplicated AdminModules to AdminTheme",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d55ffd9c7f2e23b7ae5136b2fe76f40e003ac8fe"
+        },
+        {
+          "sha": "93870a1c46957fff1cfa452d436cbe58b0686db8",
+          "author_date": "2016-02-29T15:37:11Z",
+          "message": "Merge pull request #5097 from Shudrum/navigation-updates\n\n// Navigation updates",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/93870a1c46957fff1cfa452d436cbe58b0686db8"
+        },
+        {
+          "sha": "0b9ba8c09305cd89665eb7cec37bfd2196bef2fb",
+          "author_date": "2016-02-25T19:04:41Z",
+          "message": "[-] CORE : Missing variable in CartPresenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0b9ba8c09305cd89665eb7cec37bfd2196bef2fb"
+        },
+        {
+          "sha": "f736da5df9d1f28257806641e0aa88fb5bb3cb85",
+          "author_date": "2016-02-29T17:06:07Z",
+          "message": "Merge pull request #5077 from fojtCz/patch-1\n\n[-] CORE : Missing variable in CartPresenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f736da5df9d1f28257806641e0aa88fb5bb3cb85"
+        },
+        {
+          "sha": "9b7615c1c842f324fff26766cac8125ca23f36d5",
+          "author_date": "2016-02-29T19:17:06Z",
+          "message": "[*] CORE : Improve configuration load & get performances",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9b7615c1c842f324fff26766cac8125ca23f36d5"
+        },
+        {
+          "sha": "b654f2d75d0a53ea5cf450357db53c12f99cca9d",
+          "author_date": "2016-03-01T08:04:05Z",
+          "message": "[*] CORE : Configuration & test fixes",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b654f2d75d0a53ea5cf450357db53c12f99cca9d"
+        },
+        {
+          "sha": "4bbda1be8558a5a71ab685d33ec67b4561d3c385",
+          "author_date": "2016-03-01T10:01:29Z",
+          "message": "// Fix bundle.js path on default theme",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4bbda1be8558a5a71ab685d33ec67b4561d3c385"
+        },
+        {
+          "sha": "665fc02b8db8cc62dad9a89cec7d295f96d5e491",
+          "author_date": "2016-03-01T10:07:03Z",
+          "message": "// Update default mail templates",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/665fc02b8db8cc62dad9a89cec7d295f96d5e491"
+        },
+        {
+          "sha": "c5f44dcccc5421d7773022ff0bda5231b89b8d8d",
+          "author_date": "2016-03-01T10:56:03Z",
+          "message": "// Remove module placeholders",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c5f44dcccc5421d7773022ff0bda5231b89b8d8d"
+        },
+        {
+          "sha": "44098ca9f646a8a50906652e9ac6cbf09ebcb1f4",
+          "author_date": "2016-03-01T12:32:34Z",
+          "message": "Merge pull request #5101 from julienbourdeau/fix/remove-placeholders\n\n// Remove module placeholders",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/44098ca9f646a8a50906652e9ac6cbf09ebcb1f4"
+        },
+        {
+          "sha": "871b0241febbc7d51af97fd8025cd601b060a440",
+          "author_date": "2016-03-01T13:12:28Z",
+          "message": "[*] BO Select not ordered cart directly in SQL instead of excluding ordered cart in PHP\n\nWhen adding an order manually, carts and order are loaded for the selected customer.\r\n\r\nInstead of loading all carts, and then excluding in PHP those who was ordered, it is much more efficient to not load them in the first place in SQL.\r\n\r\nWhen a customer have hundreds of orders this change reduce the loading time from 40~ secondes to 2 secondes on a litle server.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/871b0241febbc7d51af97fd8025cd601b060a440"
+        },
+        {
+          "sha": "aba59ee63533a9c1a604d3484165c6878593b191",
+          "author_date": "2016-03-01T13:30:52Z",
+          "message": "Merge pull request #5098 from julienbourdeau/feat/update-mail-templates\n\n[*] CORE: Update default mail templates",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/aba59ee63533a9c1a604d3484165c6878593b191"
+        },
+        {
+          "sha": "c9078d52444bb33eb899f2a4ab75dd42c1e6e24a",
+          "author_date": "2016-03-01T14:46:36Z",
+          "message": "[*] CORE : Configuration & test fixes",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c9078d52444bb33eb899f2a4ab75dd42c1e6e24a"
+        },
+        {
+          "sha": "87be1aebea6358336938e4b4442c3b7f4062c6cc",
+          "author_date": "2016-02-29T13:23:46Z",
+          "message": "[*] BO : Adapt style to new navbar",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/87be1aebea6358336938e4b4442c3b7f4062c6cc"
+        },
+        {
+          "sha": "1e7ea7d9b151431d678cdd482fe22f14becdd5fa",
+          "author_date": "2016-03-01T16:56:35Z",
+          "message": "[*] CORE : Configuration & test fixes",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1e7ea7d9b151431d678cdd482fe22f14becdd5fa"
+        },
+        {
+          "sha": "fba0984cffed7ecc354f4d20287ca5e732d3d1e6",
+          "author_date": "2016-03-01T17:09:42Z",
+          "message": "Merge pull request #5080 from xBorderie/PR-template\n\n// Added Pull Request template",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/fba0984cffed7ecc354f4d20287ca5e732d3d1e6"
+        },
+        {
+          "sha": "9457c8c499fb6e2601f935dc11b929a00f05adac",
+          "author_date": "2016-03-01T19:15:13Z",
+          "message": "[-] FO : Missing variables in core js",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9457c8c499fb6e2601f935dc11b929a00f05adac"
+        },
+        {
+          "sha": "d341eb45442dfd64a03721122d17f5adc6f745b0",
+          "author_date": "2016-03-02T09:28:19Z",
+          "message": "// Fix swiftMailer class conflict for legacy version",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d341eb45442dfd64a03721122d17f5adc6f745b0"
+        },
+        {
+          "sha": "fa05ceb656e3c7aa93294d69c2d020f0f29329a6",
+          "author_date": "2016-03-02T13:12:52Z",
+          "message": "// Fix timezone check after mod_rewrite check",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/fa05ceb656e3c7aa93294d69c2d020f0f29329a6"
+        },
+        {
+          "sha": "ab3ba74a2eb8ae7d6454e0f22bf4ac5dc2051289",
+          "author_date": "2016-02-29T17:39:57Z",
+          "message": "// Confirmation page redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ab3ba74a2eb8ae7d6454e0f22bf4ac5dc2051289"
+        },
+        {
+          "sha": "723c7769ac968cd4f0df760765b2d46f712545df",
+          "author_date": "2016-03-02T15:07:10Z",
+          "message": "// CORE: remove PS_DISPLAY_JQZOOM option",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/723c7769ac968cd4f0df760765b2d46f712545df"
+        },
+        {
+          "sha": "4c2fe23c1d47aa24d3dc806e734781db6d796ae7",
+          "author_date": "2016-03-02T13:53:51Z",
+          "message": "// Shared backoffice webpack added",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4c2fe23c1d47aa24d3dc806e734781db6d796ae7"
+        },
+        {
+          "sha": "9f477753e47242a5f69bc8e20508597e370782ae",
+          "author_date": "2016-03-02T17:17:48Z",
+          "message": "// Add shared JS",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9f477753e47242a5f69bc8e20508597e370782ae"
+        },
+        {
+          "sha": "93129fb996dbc333efa73bad04d5753fae410756",
+          "author_date": "2016-03-03T07:27:46Z",
+          "message": "// Cldr / Globalize removed from default theme",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/93129fb996dbc333efa73bad04d5753fae410756"
+        },
+        {
+          "sha": "1b8f7ca5fc44215285768c5e0031a119842a50e3",
+          "author_date": "2016-03-03T07:32:46Z",
+          "message": "// Cldr / Globalize removed from new theme",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1b8f7ca5fc44215285768c5e0031a119842a50e3"
+        },
+        {
+          "sha": "6992fa3b9edef41c7fae6ca0822f0ac2175941e3",
+          "author_date": "2016-03-03T08:27:17Z",
+          "message": "// Fix CLDR download / init on install",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6992fa3b9edef41c7fae6ca0822f0ac2175941e3"
+        },
+        {
+          "sha": "934be954572620adc92ac85acbe4513d55b0a15b",
+          "author_date": "2016-03-03T08:59:56Z",
+          "message": "Merge pull request #5117 from Shudrum/fix-javascripts\n\n[-] BO: Fix CLDR & Globalize javascripts",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/934be954572620adc92ac85acbe4513d55b0a15b"
+        },
+        {
+          "sha": "597884aa1700793175b7a0116281435b479e322a",
+          "author_date": "2016-03-03T08:39:41Z",
+          "message": "// show HTML on this bloody test failure\n\n(cherry picked from commit 6dd3d4a867758605d76fb42b56f80a24172d5cf1)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/597884aa1700793175b7a0116281435b479e322a"
+        },
+        {
+          "sha": "9ae95fcfe614ed97957c0806afd7288856dfe415",
+          "author_date": "2016-03-03T10:00:05Z",
+          "message": "// Try to wait before click fot the test",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9ae95fcfe614ed97957c0806afd7288856dfe415"
+        },
+        {
+          "sha": "1a52b804d55b3d2c5109451f18ee8db29e274a7f",
+          "author_date": "2016-03-03T11:11:58Z",
+          "message": "Merge pull request #5096 from maximebiloe/dev/feat/warning-debug\n\nDisplay \"Debug Mode\" in the navbar",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1a52b804d55b3d2c5109451f18ee8db29e274a7f"
+        },
+        {
+          "sha": "7978d82085a9e8f4b2faffe23ce6dfc22eda5642",
+          "author_date": "2016-03-03T11:12:35Z",
+          "message": "Merge pull request #5112 from xGouley/install_mod_rewrite\n\n// Fix timezone check after mod_rewrite check",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7978d82085a9e8f4b2faffe23ce6dfc22eda5642"
+        },
+        {
+          "sha": "ca09bdef4d26347487c30fb883ce782aa56fd61a",
+          "author_date": "2016-03-03T11:13:17Z",
+          "message": "Merge pull request #5110 from xGouley/swift_ps_legacy\n\n// Fix swiftMailer class conflict for legacy version",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ca09bdef4d26347487c30fb883ce782aa56fd61a"
+        },
+        {
+          "sha": "49f3dfb63a01bb781adbad051249c5b5673ef1e9",
+          "author_date": "2016-03-01T13:14:20Z",
+          "message": "[-] FO : OrderPresenter now use products from order to preserve prices consistency",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/49f3dfb63a01bb781adbad051249c5b5673ef1e9"
+        },
+        {
+          "sha": "e9dc908b56b87e6c2e1348ff8311a63451f6ec95",
+          "author_date": "2016-03-03T11:14:32Z",
+          "message": "// fixed tests",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e9dc908b56b87e6c2e1348ff8311a63451f6ec95"
+        },
+        {
+          "sha": "6c63371bcc4d2c962595c9325de2d9fd68adfca0",
+          "author_date": "2016-03-03T13:30:17Z",
+          "message": "// avoid deprecated on  populating",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6c63371bcc4d2c962595c9325de2d9fd68adfca0"
+        },
+        {
+          "sha": "e3541a1ae46a4b2d3a1e960ae908c9c1e4df26dc",
+          "author_date": "2016-03-03T13:28:30Z",
+          "message": "// Remove unused variable",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e3541a1ae46a4b2d3a1e960ae908c9c1e4df26dc"
+        },
+        {
+          "sha": "cc904f033e3590982a75697a0e300c7aa8f7aa1c",
+          "author_date": "2016-03-03T13:29:06Z",
+          "message": "// Use product minimal quantity",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/cc904f033e3590982a75697a0e300c7aa8f7aa1c"
+        },
+        {
+          "sha": "6b33a5b5392428af7ae0052585229260a5471822",
+          "author_date": "2016-03-03T13:56:04Z",
+          "message": "Merge pull request #5094 from mickaelandrieu/added-theme-manager-tests\n\n[*] Project: added tests for theme validator",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6b33a5b5392428af7ae0052585229260a5471822"
+        },
+        {
+          "sha": "bb212231c91f7053034eb50dd29b6e318411cfdd",
+          "author_date": "2016-03-03T14:01:46Z",
+          "message": "// re-order total/total paid",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/bb212231c91f7053034eb50dd29b6e318411cfdd"
+        },
+        {
+          "sha": "529bbbf8f885b5797e6586743bebb181efcfd765",
+          "author_date": "2016-03-03T14:17:12Z",
+          "message": "Merge pull request #5107 from fojtCz/patch-2\n\n[-] FO : Missing variables in core js",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/529bbbf8f885b5797e6586743bebb181efcfd765"
+        },
+        {
+          "sha": "3647ddf7c33336573e311a49fba432c40e4e2118",
+          "author_date": "2016-03-02T14:21:47Z",
+          "message": "// Improve order confirmation and bugfixes",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3647ddf7c33336573e311a49fba432c40e4e2118"
+        },
+        {
+          "sha": "3ba77fd6eb95fa6b9e30dab6fed4eb6da2034b73",
+          "author_date": "2016-03-03T16:31:24Z",
+          "message": "// Add texture URL for combination",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3ba77fd6eb95fa6b9e30dab6fed4eb6da2034b73"
+        },
+        {
+          "sha": "bb6b0e9804434a7b4bb9752659800323fbe4d71b",
+          "author_date": "2016-03-03T16:43:06Z",
+          "message": "Merge pull request #5119 from maximebiloe/dev/fix/cleanup\n\n[*] CORE : Remove unused variable and use product minimal quantity",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/bb6b0e9804434a7b4bb9752659800323fbe4d71b"
+        },
+        {
+          "sha": "d7793e344c093a840e527576d853133165118c37",
+          "author_date": "2016-03-03T15:52:07Z",
+          "message": "[+] FO: Added customizations product info on cart/order",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d7793e344c093a840e527576d853133165118c37"
+        },
+        {
+          "sha": "13a4486306717336f2e56556d57f8e031a33db6e",
+          "author_date": "2016-03-04T10:31:52Z",
+          "message": "Merge pull request #5115 from julienbourdeau/fix/remove-jqzoom-option\n\n[-] CORE: remove PS_DISPLAY_JQZOOM option",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/13a4486306717336f2e56556d57f8e031a33db6e"
+        },
+        {
+          "sha": "759e53596d49e397246b67148ae2e5856f1f72b7",
+          "author_date": "2016-03-04T11:12:15Z",
+          "message": "Merge pull request #5113 from nihco2/feat/checkout\n\n// classic: order confirmation redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/759e53596d49e397246b67148ae2e5856f1f72b7"
+        },
+        {
+          "sha": "839e8d4b8a570c6130af346bcdf5d668c922ca90",
+          "author_date": "2016-03-04T11:14:17Z",
+          "message": "Merge pull request #5121 from mickaelandrieu/added-customizations\n\n[+] FO: Added customizations product info on order confirmation page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/839e8d4b8a570c6130af346bcdf5d668c922ca90"
+        },
+        {
+          "sha": "f66c093fa9d02955b93b35595d7a5464ad2361b7",
+          "author_date": "2016-03-03T14:26:12Z",
+          "message": "// Fix input number on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f66c093fa9d02955b93b35595d7a5464ad2361b7"
+        },
+        {
+          "sha": "74cfd08fc9222336bed11355b5388b4f423a0200",
+          "author_date": "2016-03-03T16:03:03Z",
+          "message": "// Fix color checkbox",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/74cfd08fc9222336bed11355b5388b4f423a0200"
+        },
+        {
+          "sha": "04f6be152f73c99ef6c3371ede2b55d01bbcb0b0",
+          "author_date": "2016-03-04T13:06:45Z",
+          "message": "Merge pull request #5122 from maximebiloe/dev/fix/product-page\n\n[*] FO : Add texture URL for combination",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/04f6be152f73c99ef6c3371ede2b55d01bbcb0b0"
+        },
+        {
+          "sha": "39d781f454eb97bf6eec57c8e769a40fe08fd5b9",
+          "author_date": "2016-03-01T13:21:16Z",
+          "message": "// Move smarty classes under classes/",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/39d781f454eb97bf6eec57c8e769a40fe08fd5b9"
+        },
+        {
+          "sha": "c711e9b316cf684b34af4d7400cf3db0a9a4fb74",
+          "author_date": "2016-03-04T13:54:09Z",
+          "message": "Merge pull request #5120 from nihco2/feat/category-page\n\n// Fix input number on product page - BOOM-323",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c711e9b316cf684b34af4d7400cf3db0a9a4fb74"
+        },
+        {
+          "sha": "8671732dfb902de7ef6d0b51b8e53f229ea850e5",
+          "author_date": "2016-03-01T15:48:29Z",
+          "message": "// CORE: Intro Smarty for dev",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8671732dfb902de7ef6d0b51b8e53f229ea850e5"
+        },
+        {
+          "sha": "d04e519a4186b1dc20642ad36cc1c4b431d9d736",
+          "author_date": "2016-03-04T14:48:09Z",
+          "message": "// Add textures preview",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d04e519a4186b1dc20642ad36cc1c4b431d9d736"
+        },
+        {
+          "sha": "80e6fea573edb5a48b31d81bb7812832a609591d",
+          "author_date": "2016-03-04T14:56:21Z",
+          "message": "[-] Project: delete cache files on reinstallation",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/80e6fea573edb5a48b31d81bb7812832a609591d"
+        },
+        {
+          "sha": "e5085017a71247e5693914ebc79d048783c1321f",
+          "author_date": "2016-03-04T15:07:45Z",
+          "message": "[-] Project : Also cleaned cache file on console installation",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e5085017a71247e5693914ebc79d048783c1321f"
+        },
+        {
+          "sha": "a2f824786d8cc5552534c85a396f42015c7fc2d7",
+          "author_date": "2016-03-04T15:20:23Z",
+          "message": "Merge pull request #5126 from nihco2/feat/category-page\n\n// classic: Add textures preview",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a2f824786d8cc5552534c85a396f42015c7fc2d7"
+        },
+        {
+          "sha": "a5da4677073dfdbe84ef3f50c209525af2c4e7c4",
+          "author_date": "2016-03-04T15:26:09Z",
+          "message": "Merge pull request #5105 from julienbourdeau/feat/template-location\n\n[+] Introducing Smarty for dev",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a5da4677073dfdbe84ef3f50c209525af2c4e7c4"
+        },
+        {
+          "sha": "f40092e2e2017a29f0f4eb15d8b351451338a4b7",
+          "author_date": "2016-03-04T15:47:31Z",
+          "message": "Merge pull request #5103 from mickaelandrieu/improved-order-presenter\n\n[-] FO : OrderPresenter now use products from order to preserve price…",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f40092e2e2017a29f0f4eb15d8b351451338a4b7"
+        },
+        {
+          "sha": "c0e18f5234c59d99e06e4705ed09a26b427575ad",
+          "author_date": "2016-03-02T08:32:12Z",
+          "message": "// Add l12n body classes",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c0e18f5234c59d99e06e4705ed09a26b427575ad"
+        },
+        {
+          "sha": "c1c9360b635267e9c20de8746872ebcfc03978d3",
+          "author_date": "2016-03-02T09:50:55Z",
+          "message": "// FO: Remove data assigned to Smarty\n\nNote that $link is still very much used in smarty",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c1c9360b635267e9c20de8746872ebcfc03978d3"
+        },
+        {
+          "sha": "b791f4b97f5434502bf810adac64281bc404ff36",
+          "author_date": "2016-03-02T13:24:41Z",
+          "message": "// FO: pass more template vars to JS\ncustomer, cart, urls, shop,..",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b791f4b97f5434502bf810adac64281bc404ff36"
+        },
+        {
+          "sha": "713cda4ef3e5751629810d1b906d45723b24c2ed",
+          "author_date": "2016-03-04T16:27:57Z",
+          "message": "Merge pull request #5127 from mickaelandrieu/reinstall-improvements\n\n[-] Project: delete cache files on reinstallation",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/713cda4ef3e5751629810d1b906d45723b24c2ed"
+        },
+        {
+          "sha": "b755c3a133cf95311175a33546c16f3b21af1689",
+          "author_date": "2016-03-02T14:24:06Z",
+          "message": "// objectSerialized becomes a Presenter\nrenamed to objectPresenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b755c3a133cf95311175a33546c16f3b21af1689"
+        },
+        {
+          "sha": "8c44cdc24258e9ff0574c23e3ca4327dbf902fc3",
+          "author_date": "2016-03-04T08:37:30Z",
+          "message": "// change site wide $feature var structure",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8c44cdc24258e9ff0574c23e3ca4327dbf902fc3"
+        },
+        {
+          "sha": "f2b467faa7eb5ffd468a39063273c9ee7a9af30a",
+          "author_date": "2016-03-03T16:51:04Z",
+          "message": "// FO: Add current_url to $urls",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f2b467faa7eb5ffd468a39063273c9ee7a9af30a"
+        },
+        {
+          "sha": "b7bf87edb7066a4a7a31f26ee96b3a5c5683b960",
+          "author_date": "2016-03-04T14:41:17Z",
+          "message": "// Remove hook_top and hook_footer from controller",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b7bf87edb7066a4a7a31f26ee96b3a5c5683b960"
+        },
+        {
+          "sha": "689452033bba8ebe24af447c079c44aae13c32e3",
+          "author_date": "2016-03-06T13:25:26Z",
+          "message": "[~] BO : Delete unused old images",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/689452033bba8ebe24af447c079c44aae13c32e3"
+        },
+        {
+          "sha": "4ac7c8434f8f35980782e9aaba9412f8f20ea8d7",
+          "author_date": "2016-03-07T09:05:01Z",
+          "message": "// Improve category page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4ac7c8434f8f35980782e9aaba9412f8f20ea8d7"
+        },
+        {
+          "sha": "dae0e05a20639fd317e4df6ecaab68bc13fbf4bc",
+          "author_date": "2016-03-07T09:05:55Z",
+          "message": "Merge pull request #5116 from julienbourdeau/fix/clean-frontcontroller\n\n[+] CORE: Remove many smarty variables",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/dae0e05a20639fd317e4df6ecaab68bc13fbf4bc"
+        },
+        {
+          "sha": "f4c655de71cd8589445b7be37bac176c406b5f43",
+          "author_date": "2016-03-07T09:22:26Z",
+          "message": "[-] BO : Fixed parsing of files *.twig for translations",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f4c655de71cd8589445b7be37bac176c406b5f43"
+        },
+        {
+          "sha": "24bcf75f37faffb61db10691e96373dca6036c99",
+          "author_date": "2016-03-07T10:34:39Z",
+          "message": "[-] Project : use scandir instead of glob",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/24bcf75f37faffb61db10691e96373dca6036c99"
+        },
+        {
+          "sha": "971ee5764c4be1ea7bcf9206a2291f406741dd17",
+          "author_date": "2016-03-07T10:34:39Z",
+          "message": "[-] Project : use scandir instead of glob",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/971ee5764c4be1ea7bcf9206a2291f406741dd17"
+        },
+        {
+          "sha": "dedd36a120b93924d2bfafe1062ee5ad8f14d3aa",
+          "author_date": "2016-03-07T10:37:23Z",
+          "message": "Merge branch 'develop' of https://github.com/PrestaShop/PrestaShop into develop",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/dedd36a120b93924d2bfafe1062ee5ad8f14d3aa"
+        },
+        {
+          "sha": "0f9f641d49804d592ff155fe99d53b39fd5b5647",
+          "author_date": "2016-03-07T10:38:24Z",
+          "message": "// removed unused die()",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0f9f641d49804d592ff155fe99d53b39fd5b5647"
+        },
+        {
+          "sha": "d6fdd9d282936612a4720b3901261d1e3724ac8b",
+          "author_date": "2016-03-07T11:11:54Z",
+          "message": "[-] Project : fixed bad files deletion on installation",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d6fdd9d282936612a4720b3901261d1e3724ac8b"
+        },
+        {
+          "sha": "22b4dcc4e4d20a18603749310d7826c7662567b0",
+          "author_date": "2016-03-07T11:13:36Z",
+          "message": "Merge pull request #5138 from mickaelandrieu/fix-config-deletion-files\n\n[-] Project : fixed bad files deletion on installation",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/22b4dcc4e4d20a18603749310d7826c7662567b0"
+        },
+        {
+          "sha": "8151482e7b29d06516c2022ed8fbae96b126158a",
+          "author_date": "2016-03-07T11:08:53Z",
+          "message": "// Optimize css",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8151482e7b29d06516c2022ed8fbae96b126158a"
+        },
+        {
+          "sha": "9bc768dbe9ef3f36640554a1a01f694fd24b2add",
+          "author_date": "2016-03-07T11:48:24Z",
+          "message": "[-] BO : Fixed warning - no such file or directory",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9bc768dbe9ef3f36640554a1a01f694fd24b2add"
+        },
+        {
+          "sha": "0d74e0cd0689ed9aba4af9ee8ad0f77734d67ea5",
+          "author_date": "2016-03-07T17:23:14Z",
+          "message": "Merge pull request #5137 from nihco2/feat/category-page\n\n// classic : CSS optimization",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0d74e0cd0689ed9aba4af9ee8ad0f77734d67ea5"
+        },
+        {
+          "sha": "488c59465a58f29afb4a10f3911fe4c0dc14f0b2",
+          "author_date": "2016-03-07T19:58:38Z",
+          "message": "[-] BO: fix $module_name not defined when you reach the catch in importModuleAction",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/488c59465a58f29afb4a10f3911fe4c0dc14f0b2"
+        },
+        {
+          "sha": "8ae7bdf88a549a90ebd8c384a3c5c70fa30fa777",
+          "author_date": "2016-03-08T01:40:36Z",
+          "message": "[-] CORE : Fix webservice api/products/{id} for PHP7: Function name must be a string",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8ae7bdf88a549a90ebd8c384a3c5c70fa30fa777"
+        },
+        {
+          "sha": "7ec91faf04e393683590b463b0ff21a5c565f5fa",
+          "author_date": "2016-03-08T02:33:16Z",
+          "message": "[-] CORE : Fix webservice api/products/{id} for PHP7: Function name must be a string",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7ec91faf04e393683590b463b0ff21a5c565f5fa"
+        },
+        {
+          "sha": "dc54666df6fa1a15edb638442e12c9e2832747a6",
+          "author_date": "2016-03-08T08:26:00Z",
+          "message": "Merge pull request #5144 from prestamodule/patch-45\n\n[-] BO: fix $module_name not defined in import module",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/dc54666df6fa1a15edb638442e12c9e2832747a6"
+        },
+        {
+          "sha": "32c0b72591ca06a276e182e3c7f72b41c923afb2",
+          "author_date": "2016-03-08T08:37:26Z",
+          "message": "// do not use smarty->tpl_vars in controllers",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/32c0b72591ca06a276e182e3c7f72b41c923afb2"
+        },
+        {
+          "sha": "220db9a885166d5373ba71d473d137527f61205d",
+          "author_date": "2016-03-08T08:58:58Z",
+          "message": "Merge pull request #5146 from julienbourdeau/fix/temp-product-controller\n\n// do not use smarty->tpl_vars in controllers",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/220db9a885166d5373ba71d473d137527f61205d"
+        },
+        {
+          "sha": "b1c01b1b60778e9badb8511d2498b70d51ce069d",
+          "author_date": "2016-02-29T17:29:48Z",
+          "message": "// Ajax product refresh",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b1c01b1b60778e9badb8511d2498b70d51ce069d"
+        },
+        {
+          "sha": "e2f06ff1b044c2b8f2a4e5a6fbffd3e2f3aafbfb",
+          "author_date": "2016-03-01T08:29:54Z",
+          "message": "// Do not display discount if the amount is 0",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e2f06ff1b044c2b8f2a4e5a6fbffd3e2f3aafbfb"
+        },
+        {
+          "sha": "9260f79bcce4b50414c7267fc0617e5ff736d67c",
+          "author_date": "2016-03-03T14:19:17Z",
+          "message": "// Use image settings for product image on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9260f79bcce4b50414c7267fc0617e5ff736d67c"
+        },
+        {
+          "sha": "3b2e42860209b0ae199832f92594dd232d63d34e",
+          "author_date": "2016-03-03T14:33:54Z",
+          "message": "// Remove unnecessary spaces",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3b2e42860209b0ae199832f92594dd232d63d34e"
+        },
+        {
+          "sha": "4eb8b67a7ce48aeefeb3107a1886938eef1aa1ab",
+          "author_date": "2016-03-03T14:42:02Z",
+          "message": "// Remove commented form",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4eb8b67a7ce48aeefeb3107a1886938eef1aa1ab"
+        },
+        {
+          "sha": "a783a6bce5092212437f380fe5a8e9e84880a325",
+          "author_date": "2016-03-04T16:21:42Z",
+          "message": "// Harmonize ajax calls",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a783a6bce5092212437f380fe5a8e9e84880a325"
+        },
+        {
+          "sha": "10027d273be97a54f64409295dc904c33b94aefc",
+          "author_date": "2016-03-08T09:12:03Z",
+          "message": "[*] Mails : Update import emails according to generator",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/10027d273be97a54f64409295dc904c33b94aefc"
+        },
+        {
+          "sha": "b52ce6527994a1bf9f283bcbb17b654f7d6fc25c",
+          "author_date": "2016-03-08T10:47:28Z",
+          "message": "Merge pull request #5145 from tomcyr/develop\n\n[-] CORE : Fix webservice api/products/{id} for PHP7: Function name must be a st…",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b52ce6527994a1bf9f283bcbb17b654f7d6fc25c"
+        },
+        {
+          "sha": "a4856becc47f0d9fec54cc069ab1f09c67bf1ec8",
+          "author_date": "2016-03-08T14:32:58Z",
+          "message": "[-] FO: returned correct amount after currency conversion",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a4856becc47f0d9fec54cc069ab1f09c67bf1ec8"
+        },
+        {
+          "sha": "1eb5c7b3ea0d2128567e3150e9d5a9858a434574",
+          "author_date": "2016-03-08T12:56:38Z",
+          "message": "// Fix some rebase problems",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1eb5c7b3ea0d2128567e3150e9d5a9858a434574"
+        },
+        {
+          "sha": "831039dfb381b13f483ab4d372771141faf78b0f",
+          "author_date": "2016-03-08T15:15:57Z",
+          "message": "// added parserOptions for eslint 2+",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/831039dfb381b13f483ab4d372771141faf78b0f"
+        },
+        {
+          "sha": "c6d9ca7d1b00d669b8facfa61fc709ed1ac535fd",
+          "author_date": "2016-03-08T15:18:13Z",
+          "message": "Merge pull request #5153 from mickaelandrieu/fix-currencies-conversion\n\n[-] FO: returned correct amount after currency conversion",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c6d9ca7d1b00d669b8facfa61fc709ed1ac535fd"
+        },
+        {
+          "sha": "afb567917bf4074224798dde83bf54949f4505e3",
+          "author_date": "2016-03-08T15:26:44Z",
+          "message": "// Remove notice in OrderController",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/afb567917bf4074224798dde83bf54949f4505e3"
+        },
+        {
+          "sha": "7a64b132e98723e67600c268466672624fe3539d",
+          "author_date": "2016-03-08T15:27:24Z",
+          "message": "// Remove url_order_address from $customer",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7a64b132e98723e67600c268466672624fe3539d"
+        },
+        {
+          "sha": "7364476d8e58c0ab40e92c739e7b030b70a86a6a",
+          "author_date": "2016-03-08T15:54:00Z",
+          "message": "// FO: checkout redirect after address deletion",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7364476d8e58c0ab40e92c739e7b030b70a86a6a"
+        },
+        {
+          "sha": "d1d687e814830932c23009562b2e0be2ceaf74bd",
+          "author_date": "2016-03-08T16:01:21Z",
+          "message": "[-] Updated Presenters to remove the conversion (already done)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d1d687e814830932c23009562b2e0be2ceaf74bd"
+        },
+        {
+          "sha": "cdc8106fe27aa760adfcdd6528a5245380d4af1f",
+          "author_date": "2016-03-08T16:19:09Z",
+          "message": "Merge pull request #5157 from mickaelandrieu/updated-cart-and-order-presenter\n\n[-] Updated Presenters to remove the conversion (already done)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/cdc8106fe27aa760adfcdd6528a5245380d4af1f"
+        },
+        {
+          "sha": "81c91e169417ade22e21bcbf0ee196a336aa9d04",
+          "author_date": "2016-03-07T11:56:15Z",
+          "message": "[-] BO : pack/virtual product shouldn't be selected if variations exists",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/81c91e169417ade22e21bcbf0ee196a336aa9d04"
+        },
+        {
+          "sha": "84998203fc989ccad06743786b7a2d5b9a6f5880",
+          "author_date": "2016-03-08T17:15:36Z",
+          "message": "// Fix camelcase function name",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/84998203fc989ccad06743786b7a2d5b9a6f5880"
+        },
+        {
+          "sha": "1f81379016d06069a7d6e4cc6f5649356109a19e",
+          "author_date": "2016-03-08T17:22:32Z",
+          "message": "Merge pull request #5111 from maximebiloe/dev/feat/ajax\n\n[*] FO : Add some ajax on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1f81379016d06069a7d6e4cc6f5649356109a19e"
+        },
+        {
+          "sha": "cbc4162178986fa525b3bc4a6ab9c9435d615dab",
+          "author_date": "2016-03-08T17:24:58Z",
+          "message": "// Fix carrier logo size - BOOM-333",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/cbc4162178986fa525b3bc4a6ab9c9435d615dab"
+        },
+        {
+          "sha": "a6d538699a83fb63542ec3a21114416713f0284f",
+          "author_date": "2016-03-08T17:41:18Z",
+          "message": "// Remove datepicker lib",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a6d538699a83fb63542ec3a21114416713f0284f"
+        },
+        {
+          "sha": "b54a6687162f2ef88bae5b544de43756523d97a2",
+          "author_date": "2016-03-09T00:44:07Z",
+          "message": "[-] CORE : Fix webservice POST api/products for PHP7: Function name must be a string",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b54a6687162f2ef88bae5b544de43756523d97a2"
+        },
+        {
+          "sha": "e89c498e97fd3de88f4c246edcfc55960f6c19ee",
+          "author_date": "2016-03-08T16:44:05Z",
+          "message": "[*] FO : Prevent checkout access if cart is empty",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e89c498e97fd3de88f4c246edcfc55960f6c19ee"
+        },
+        {
+          "sha": "b19c6efbb377a3587ff39379ff73cc8fdac479a8",
+          "author_date": "2016-03-09T08:17:51Z",
+          "message": "Merge pull request #5148 from maximebiloe/dev/feat/import-email\n\n[*] Mails : Update import emails according to generator",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b19c6efbb377a3587ff39379ff73cc8fdac479a8"
+        },
+        {
+          "sha": "33f1a1c76d95e41db938f9b1ef7fe61b0fbdbb9e",
+          "author_date": "2016-02-26T14:05:31Z",
+          "message": "// Added tag search on modules technames",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/33f1a1c76d95e41db938f9b1ef7fe61b0fbdbb9e"
+        },
+        {
+          "sha": "e40166863f9e370a21d20291a78dc478c43d84e5",
+          "author_date": "2016-03-03T11:07:46Z",
+          "message": "// Reworked module upload modal with new UI kit",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e40166863f9e370a21d20291a78dc478c43d84e5"
+        },
+        {
+          "sha": "7e83eeecdd3f5d4e0e791340f311e5d62338cf14",
+          "author_date": "2016-03-03T14:00:25Z",
+          "message": "// Fix issue on module upload \"configure\" button link",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7e83eeecdd3f5d4e0e791340f311e5d62338cf14"
+        },
+        {
+          "sha": "7f47ce81cf4c0b04f5cbaa1a6991a3837e58f3a7",
+          "author_date": "2016-03-07T13:19:16Z",
+          "message": "// Added KPI on module notification BO page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7f47ce81cf4c0b04f5cbaa1a6991a3837e58f3a7"
+        },
+        {
+          "sha": "aa371942d8fefd9d2a72d1de915fd2d04c7b9494",
+          "author_date": "2016-03-09T08:55:56Z",
+          "message": "// Catalog module page \"Ajaxified\"",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/aa371942d8fefd9d2a72d1de915fd2d04c7b9494"
+        },
+        {
+          "sha": "925ae4eea617b48b5b3850be1d4f74419d49e300",
+          "author_date": "2016-03-08T17:48:43Z",
+          "message": "// FO: Fix address selection in checkout",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/925ae4eea617b48b5b3850be1d4f74419d49e300"
+        },
+        {
+          "sha": "43092aa0c1ea00889fc8008996a02b727e3e0dbf",
+          "author_date": "2016-03-09T09:42:51Z",
+          "message": "Merge pull request #5158 from nihco2/feat/checkout\n\n// Fix carrier logo size - BOOM-333",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/43092aa0c1ea00889fc8008996a02b727e3e0dbf"
+        },
+        {
+          "sha": "ef66b3b81681bf09d0d14b0f5969d24e5237b4de",
+          "author_date": "2016-03-07T16:51:11Z",
+          "message": "// stores page redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ef66b3b81681bf09d0d14b0f5969d24e5237b4de"
+        },
+        {
+          "sha": "5551a11053892fa5628124b7c113f13c935876dd",
+          "author_date": "2016-03-09T10:01:26Z",
+          "message": "Merge pull request #5160 from julienbourdeau/fix/checkout-errors\n\n// Fix some checkout errors",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/5551a11053892fa5628124b7c113f13c935876dd"
+        },
+        {
+          "sha": "8f5668a6b2f45a49d85c76a7108856b999fcfb99",
+          "author_date": "2016-03-09T10:57:20Z",
+          "message": "Merge pull request #5141 from tchauviere/wip/module-page\n\n[*] BO : Batch of improvements for new module page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8f5668a6b2f45a49d85c76a7108856b999fcfb99"
+        },
+        {
+          "sha": "5ba43966914a5e969671120dbf5ee1f016480f3c",
+          "author_date": "2016-03-08T10:07:41Z",
+          "message": "[+] BO : Added tax block on Basic settings tab\"",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/5ba43966914a5e969671120dbf5ee1f016480f3c"
+        },
+        {
+          "sha": "ec647369ff5d916b227488763a50c288521e5d68",
+          "author_date": "2016-03-09T13:30:52Z",
+          "message": "Merge pull request #5142 from nihco2/stores-page\n\n// classic: Stores page redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ec647369ff5d916b227488763a50c288521e5d68"
+        },
+        {
+          "sha": "a343a7e3125b768a3fd1f6831951c0e0bcea84f7",
+          "author_date": "2016-03-09T10:07:43Z",
+          "message": "[*] FO : Move some logical JS into _core",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a343a7e3125b768a3fd1f6831951c0e0bcea84f7"
+        },
+        {
+          "sha": "d52c4f38357e9ff26f7823078201787b1d807f31",
+          "author_date": "2016-03-09T11:02:36Z",
+          "message": "[-] FO : Fix double quantity wanted added to cart",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d52c4f38357e9ff26f7823078201787b1d807f31"
+        },
+        {
+          "sha": "6662396f4c1fe60c160b1e2d1927c0824cd0ecc8",
+          "author_date": "2016-03-02T17:01:50Z",
+          "message": "// Remove customization for action url variable",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6662396f4c1fe60c160b1e2d1927c0824cd0ecc8"
+        },
+        {
+          "sha": "4da8ac14b2e30bceb312f7f7a35550bde4e614e8",
+          "author_date": "2016-03-03T17:46:27Z",
+          "message": "// PricePresenter - cast result to avoid string on 0 values",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4da8ac14b2e30bceb312f7f7a35550bde4e614e8"
+        },
+        {
+          "sha": "32174891793d6b195f84e76e647a773a90b7bf06",
+          "author_date": "2016-03-07T17:13:43Z",
+          "message": "// ObjectPresenter implements PresenterInterface",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/32174891793d6b195f84e76e647a773a90b7bf06"
+        },
+        {
+          "sha": "c1894aecaa3a1a04161169a3b5e1dbce1e006ca4",
+          "author_date": "2016-03-07T17:27:09Z",
+          "message": "// PricePresenter becomes PriceFormatter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c1894aecaa3a1a04161169a3b5e1dbce1e006ca4"
+        },
+        {
+          "sha": "b0b0d0fec514ab8228cfaf6140328f8f64aac358",
+          "author_date": "2016-03-07T17:41:28Z",
+          "message": "// CartPresenter implements PresenterInterface",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b0b0d0fec514ab8228cfaf6140328f8f64aac358"
+        },
+        {
+          "sha": "b3394f17008c3a224ee6741143dd96c622a48670",
+          "author_date": "2016-03-07T17:52:12Z",
+          "message": "// OrderModel implements PresenterInterface",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b3394f17008c3a224ee6741143dd96c622a48670"
+        },
+        {
+          "sha": "90a4a834e716ffdbdc808a08051ff6351f88e0db",
+          "author_date": "2016-03-07T17:56:11Z",
+          "message": "// more private method for Presenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/90a4a834e716ffdbdc808a08051ff6351f88e0db"
+        },
+        {
+          "sha": "769f22b9d6b475f198effabe68d5810839cc7939",
+          "author_date": "2016-03-07T18:00:22Z",
+          "message": "// Check instance for present() method",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/769f22b9d6b475f198effabe68d5810839cc7939"
+        },
+        {
+          "sha": "6ee0798282b96dad9da8dbfa4372a3cd502d2bff",
+          "author_date": "2016-03-08T09:32:50Z",
+          "message": "// FO: ProductController - remove unused tpl vars",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6ee0798282b96dad9da8dbfa4372a3cd502d2bff"
+        },
+        {
+          "sha": "3e381a78ab11ae8f4560b3958bd391e9e277fa5f",
+          "author_date": "2016-03-08T10:24:02Z",
+          "message": "// Add condition labels to ProductPresenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3e381a78ab11ae8f4560b3958bd391e9e277fa5f"
+        },
+        {
+          "sha": "482eb0eb0ff2dff6dc2b921b0803c9da1950b102",
+          "author_date": "2016-03-08T13:50:04Z",
+          "message": "// Introduce ProductListingPresenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/482eb0eb0ff2dff6dc2b921b0803c9da1950b102"
+        },
+        {
+          "sha": "6ab35b36b632cfa611d8d528ab2f5d36cae41566",
+          "author_date": "2016-03-09T10:26:27Z",
+          "message": "// Remove type hinting for Presenters",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6ab35b36b632cfa611d8d528ab2f5d36cae41566"
+        },
+        {
+          "sha": "54a503c28051616a8df753c38a01193a378936ab",
+          "author_date": "2016-03-09T11:07:35Z",
+          "message": "// FO: ProductPresenter wrong price convertion",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/54a503c28051616a8df753c38a01193a378936ab"
+        },
+        {
+          "sha": "5ffc0c22ba0077828f8ff01403cba2717edb3511",
+          "author_date": "2016-03-09T13:54:29Z",
+          "message": "// CORE: fix slashes in $urls.current_url",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/5ffc0c22ba0077828f8ff01403cba2717edb3511"
+        },
+        {
+          "sha": "9f659e2616872a95499026cf72f2547384032c0a",
+          "author_date": "2016-03-09T14:31:17Z",
+          "message": "// FO: extract product customization to partials",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9f659e2616872a95499026cf72f2547384032c0a"
+        },
+        {
+          "sha": "a21d99a34f92c9c026d09ee949b81f03e07a8959",
+          "author_date": "2016-03-08T17:08:09Z",
+          "message": "[+] FO : Add a new tpl for empty cart",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a21d99a34f92c9c026d09ee949b81f03e07a8959"
+        },
+        {
+          "sha": "2bb005e81ced82318b61caadd83f9b9ab2f1a685",
+          "author_date": "2016-03-09T15:08:40Z",
+          "message": "[-] FO: Fix url for cart update\n\nwrong link if URL rewriting is not enabled",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/2bb005e81ced82318b61caadd83f9b9ab2f1a685"
+        },
+        {
+          "sha": "b5ae01d00336c852cd2ec2460372ee4be7ca3219",
+          "author_date": "2016-03-09T15:27:56Z",
+          "message": "Merge pull request #5159 from maximebiloe/dev/feat/empty-cart\n\n[*] FO : Checkout & Shopping-Cart when empty cart",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b5ae01d00336c852cd2ec2460372ee4be7ca3219"
+        },
+        {
+          "sha": "45cf9fbf487ebe1b7e21ffac359a2d4e532f5ca2",
+          "author_date": "2016-03-09T15:57:17Z",
+          "message": "Merge pull request #5163 from maximebiloe/dev/feat/core_js\n\n[*] FO : Move some logical JS into _core",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/45cf9fbf487ebe1b7e21ffac359a2d4e532f5ca2"
+        },
+        {
+          "sha": "794a4c82f7a62f29e1da3fed8142612c7cf40c3c",
+          "author_date": "2016-03-09T17:09:04Z",
+          "message": "// fix test for ProductPresenter\nSome weird error with namespaces",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/794a4c82f7a62f29e1da3fed8142612c7cf40c3c"
+        },
+        {
+          "sha": "700b4d6b0590388682b843c6de3711beec926018",
+          "author_date": "2016-03-09T17:25:47Z",
+          "message": "// Re-add 'new' label in ProductPresenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/700b4d6b0590388682b843c6de3711beec926018"
+        },
+        {
+          "sha": "75a16fb104a59b9563d4229cb5e958ced847400c",
+          "author_date": "2016-03-09T18:20:31Z",
+          "message": "// FO: Follow 'show_condition' in ProductPresenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/75a16fb104a59b9563d4229cb5e958ced847400c"
+        },
+        {
+          "sha": "0ada050f4e7c35e0dabd4b227ad7130686e83074",
+          "author_date": "2016-03-09T18:20:56Z",
+          "message": "// FO: Add condition info to classic",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0ada050f4e7c35e0dabd4b227ad7130686e83074"
+        },
+        {
+          "sha": "058bb789dfdeccd389d6d4106558b7accc574f9f",
+          "author_date": "2016-03-09T19:47:31Z",
+          "message": "[-] CORE: Update wording configuration.xml",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/058bb789dfdeccd389d6d4106558b7accc574f9f"
+        },
+        {
+          "sha": "d71dcea86c7987f5e7dfdf1529cddacc921c2d60",
+          "author_date": "2016-03-09T19:54:05Z",
+          "message": "[-] CORE: Update wording order_return_state.xml",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d71dcea86c7987f5e7dfdf1529cddacc921c2d60"
+        },
+        {
+          "sha": "258535f2cdc7c612f976686bdf7d683f3c10c677",
+          "author_date": "2016-03-09T19:58:11Z",
+          "message": "[-] CORE: Update order_state.xml\n\nChecks for payment (so called Eurocheques) were abolished in *2002(!)* for DACH countries. No merchants in Germn speaking countries excepts payment by check. ;)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/258535f2cdc7c612f976686bdf7d683f3c10c677"
+        },
+        {
+          "sha": "6748f3fe2a1a547ff93acb38370a3d0340418957",
+          "author_date": "2016-03-09T20:00:12Z",
+          "message": "[-] CORE: Update wording quick_access.xml",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6748f3fe2a1a547ff93acb38370a3d0340418957"
+        },
+        {
+          "sha": "4e59d2be54758ac30fae246b555b4c40df63a0c8",
+          "author_date": "2016-03-09T20:03:44Z",
+          "message": "[-] CORE: Translated supply_order_state.xml\n\nWasn't translated yet.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4e59d2be54758ac30fae246b555b4c40df63a0c8"
+        },
+        {
+          "sha": "6aec6f0b7f92ad030eb722017f0c6267f3be4bd5",
+          "author_date": "2016-03-10T09:28:06Z",
+          "message": "// typo",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6aec6f0b7f92ad030eb722017f0c6267f3be4bd5"
+        },
+        {
+          "sha": "ca06f07bc21657ca971945e4b0aad62eb751ac1d",
+          "author_date": "2016-03-10T09:28:37Z",
+          "message": "Merge pull request #5152 from julienbourdeau/feat/product-presenter\n\n[*] Work on Presenter",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ca06f07bc21657ca971945e4b0aad62eb751ac1d"
+        },
+        {
+          "sha": "7e533dfa285aa6db782a802020134df9ab843aa7",
+          "author_date": "2016-03-10T10:48:01Z",
+          "message": "Merge pull request #5149 from mickaelandrieu/boom-236-block-tax\n\n[+] BO : Added tax block on Basic settings tab\"",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7e533dfa285aa6db782a802020134df9ab843aa7"
+        },
+        {
+          "sha": "fc9a9f099414b263d1d79f7c689cedc33586627e",
+          "author_date": "2016-03-09T13:14:12Z",
+          "message": "// Fix price display - BOOM-343",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/fc9a9f099414b263d1d79f7c689cedc33586627e"
+        },
+        {
+          "sha": "31e9a113b1d62d320736d53c19917c4f922914c9",
+          "author_date": "2016-03-09T17:14:53Z",
+          "message": "// checkout - Improve responsive",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/31e9a113b1d62d320736d53c19917c4f922914c9"
+        },
+        {
+          "sha": "ea528025180d5d051d83488f2dabbf86cefcbc12",
+          "author_date": "2016-03-10T17:33:28Z",
+          "message": "Merge pull request #5162 from nihco2/feat/checkout\n\n// classic: Fix price display - BOOM-343",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ea528025180d5d051d83488f2dabbf86cefcbc12"
+        },
+        {
+          "sha": "e2425f1dcadd45bfc15b973c1ac5b368c8b98a09",
+          "author_date": "2016-03-10T09:14:46Z",
+          "message": "// Fix images url on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e2425f1dcadd45bfc15b973c1ac5b368c8b98a09"
+        },
+        {
+          "sha": "a010a3482797ad641add43cf75bec5ba8eb92c2c",
+          "author_date": "2016-03-11T09:03:54Z",
+          "message": "Merge pull request #5169 from maximebiloe/dev/fix/product-page\n\n// Fix images url on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a010a3482797ad641add43cf75bec5ba8eb92c2c"
+        },
+        {
+          "sha": "064bbd9479769bd63d14317434d8d549ae22dd2d",
+          "author_date": "2016-03-10T14:39:48Z",
+          "message": "// Move hook registration to Hook",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/064bbd9479769bd63d14317434d8d549ae22dd2d"
+        },
+        {
+          "sha": "83fb2f6f24255e5f788c3a9d2b016ca3dcec9ab4",
+          "author_date": "2016-03-10T16:08:14Z",
+          "message": "// Add Hook::isModuleRegisteredOnHook() method",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/83fb2f6f24255e5f788c3a9d2b016ca3dcec9ab4"
+        },
+        {
+          "sha": "7597eab2df85d4634b87b42bddaa5b1f63781cc7",
+          "author_date": "2016-03-11T09:55:11Z",
+          "message": "// Fix modal display for tablets",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7597eab2df85d4634b87b42bddaa5b1f63781cc7"
+        },
+        {
+          "sha": "4342c4c80b07f2ef5f6910a3db8da4d795b90a39",
+          "author_date": "2016-03-11T10:24:02Z",
+          "message": "Merge pull request #5170 from julienbourdeau/feat/hooks-and-modules\n\n// Move hook related method from Module to Hook",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4342c4c80b07f2ef5f6910a3db8da4d795b90a39"
+        },
+        {
+          "sha": "63b7d6a0b4ab01f9e3d0c712f92bfc8e795c434e",
+          "author_date": "2016-03-11T10:17:05Z",
+          "message": "// Change PHP requirement indicated",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/63b7d6a0b4ab01f9e3d0c712f92bfc8e795c434e"
+        },
+        {
+          "sha": "8069119650fbb0640b2b55a8bba250f058e6aa98",
+          "author_date": "2016-03-11T10:20:26Z",
+          "message": "// Let cheque module enabled now",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8069119650fbb0640b2b55a8bba250f058e6aa98"
+        },
+        {
+          "sha": "7870a75d3e0bcc31f02a9877fa3a7e0344bb1efc",
+          "author_date": "2016-03-11T10:22:00Z",
+          "message": "// Let PHP 5.4 users installing PrestaShop",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7870a75d3e0bcc31f02a9877fa3a7e0344bb1efc"
+        },
+        {
+          "sha": "e4e407f5c72179df861f4898989d7d1871c134f5",
+          "author_date": "2016-03-11T10:24:16Z",
+          "message": "// Fix some empty calls for PHP 5.4",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e4e407f5c72179df861f4898989d7d1871c134f5"
+        },
+        {
+          "sha": "fc63d7110d4fd50aa1a8ea91102ca62b85d7a63a",
+          "author_date": "2016-03-11T10:58:16Z",
+          "message": "// Fix Class name resolution for PHP 5.4",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/fc63d7110d4fd50aa1a8ea91102ca62b85d7a63a"
+        },
+        {
+          "sha": "cf23a14dd007d8da47df4a17eb639fa2cbb7f24f",
+          "author_date": "2016-03-11T11:00:38Z",
+          "message": "// Enable PHP 5.4 for Travis",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/cf23a14dd007d8da47df4a17eb639fa2cbb7f24f"
+        },
+        {
+          "sha": "67c895635db48be8d163c312473241940f03bca7",
+          "author_date": "2016-03-11T13:01:27Z",
+          "message": "// Lock doctrine on 2.5.3 for PHP 5.4",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/67c895635db48be8d163c312473241940f03bca7"
+        },
+        {
+          "sha": "3b74bdcfec081aeb3a1c15d25c0cc8d93c887ecd",
+          "author_date": "2016-03-11T13:40:34Z",
+          "message": "// PR template: People use the same ticket number way too often. Moving that around.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3b74bdcfec081aeb3a1c15d25c0cc8d93c887ecd"
+        },
+        {
+          "sha": "8998b7458ea96a532c47b8612a419d483d4151a6",
+          "author_date": "2016-03-11T13:41:10Z",
+          "message": "Merge pull request #5174 from maximebiloe/dev/fix/php54\n\n[-] CORE : PHP 5.4 compatible",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8998b7458ea96a532c47b8612a419d483d4151a6"
+        },
+        {
+          "sha": "648c25b2fed095b86c04b4dbed3c0893554d0e2a",
+          "author_date": "2016-03-11T14:11:03Z",
+          "message": "// logo update",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/648c25b2fed095b86c04b4dbed3c0893554d0e2a"
+        },
+        {
+          "sha": "7e54cc3085f1eb43ed944ada9c1e364a12988bcb",
+          "author_date": "2016-03-11T14:11:31Z",
+          "message": "// Add new theme preview",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/7e54cc3085f1eb43ed944ada9c1e364a12988bcb"
+        },
+        {
+          "sha": "32940effb6e8623e61df3688eb3b4280c15c7454",
+          "author_date": "2016-03-11T14:40:30Z",
+          "message": "Merge pull request #5173 from nihco2/feat/product-page\n\n// classic : Fix modal display for tablets",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/32940effb6e8623e61df3688eb3b4280c15c7454"
+        },
+        {
+          "sha": "4badd7b7d9771e911a640d17a8c5a45eb39bfb1a",
+          "author_date": "2016-03-11T14:46:51Z",
+          "message": "Merge pull request #5176 from maximebiloe/dev/fix/classic\n\n[*] FO : Update logo and theme preview",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4badd7b7d9771e911a640d17a8c5a45eb39bfb1a"
+        },
+        {
+          "sha": "a437d1c78eb2ee54f040b843d80dd8269c9c6cd4",
+          "author_date": "2016-03-11T15:00:43Z",
+          "message": "// delete block cms and linklist redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a437d1c78eb2ee54f040b843d80dd8269c9c6cd4"
+        },
+        {
+          "sha": "92509f99832c7d424aa9fed88ff601cd1cd8de43",
+          "author_date": "2016-03-11T16:26:12Z",
+          "message": "Merge pull request #5178 from nihco2/feat/linklist\n\n// classic : delete block cms and linklist redesign",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/92509f99832c7d424aa9fed88ff601cd1cd8de43"
+        },
+        {
+          "sha": "95ca2f0a8a18699128c2e9c38c24d544fa0e4a07",
+          "author_date": "2016-03-11T21:58:21Z",
+          "message": "[-] Installer : Fix install DB query",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/95ca2f0a8a18699128c2e9c38c24d544fa0e4a07"
+        },
+        {
+          "sha": "4de5087f197a2a18a8ea4fd6b18a19fbbb3cf719",
+          "author_date": "2016-03-13T18:48:56Z",
+          "message": "Merge pull request #5140 from mickaelandrieu/boom-297-unvalid-variations\n\n[-] BO : pack/virtual product shouldn't be selected if variations exists",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4de5087f197a2a18a8ea4fd6b18a19fbbb3cf719"
+        },
+        {
+          "sha": "13264d96f2cbaca4b135bd891c800cf06b0964ed",
+          "author_date": "2016-03-11T14:12:38Z",
+          "message": "// Forms and SCSS updates",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/13264d96f2cbaca4b135bd891c800cf06b0964ed"
+        },
+        {
+          "sha": "bd47e57cefc1c5ea50185674e9e060276b1c52ae",
+          "author_date": "2016-03-13T17:32:04Z",
+          "message": "// Product page main integration pass",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/bd47e57cefc1c5ea50185674e9e060276b1c52ae"
+        },
+        {
+          "sha": "ccc5b0872c337f29b63f6d1d9e338fd24dd2b376",
+          "author_date": "2016-03-13T18:06:58Z",
+          "message": "// Product pack list integrated",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ccc5b0872c337f29b63f6d1d9e338fd24dd2b376"
+        },
+        {
+          "sha": "62503efd578cb6ff32210c97de98e7f3467b1e31",
+          "author_date": "2016-03-13T18:15:03Z",
+          "message": "// Virtual product associated file",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/62503efd578cb6ff32210c97de98e7f3467b1e31"
+        },
+        {
+          "sha": "22b9602dddaee561ba016cf3fbb353fe9bd7dfb8",
+          "author_date": "2016-03-13T18:32:13Z",
+          "message": "// Fix footer integration",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/22b9602dddaee561ba016cf3fbb353fe9bd7dfb8"
+        },
+        {
+          "sha": "0e2a388a70ffdcfb5ea89623c1e1eec065a1b22a",
+          "author_date": "2016-03-13T18:36:42Z",
+          "message": "// Fix header select2 position",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0e2a388a70ffdcfb5ea89623c1e1eec065a1b22a"
+        },
+        {
+          "sha": "c9d00ac5b93beb7765c581a054df629f5ed78f94",
+          "author_date": "2016-03-13T18:46:18Z",
+          "message": "// Fix combination form",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c9d00ac5b93beb7765c581a054df629f5ed78f94"
+        },
+        {
+          "sha": "901dd619747e2e4f03ecc45e15305885013d546b",
+          "author_date": "2016-03-13T18:51:47Z",
+          "message": "// Compiled theme and modules updated",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/901dd619747e2e4f03ecc45e15305885013d546b"
+        },
+        {
+          "sha": "d421c70dc2c9bf301c620f5cb5406c0bdb43f2c0",
+          "author_date": "2016-03-13T20:52:36Z",
+          "message": "// Catalog page integrated",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d421c70dc2c9bf301c620f5cb5406c0bdb43f2c0"
+        },
+        {
+          "sha": "57064a277367237e383aec6d8201ac94e9beb085",
+          "author_date": "2016-03-13T21:00:31Z",
+          "message": "// Add external links",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/57064a277367237e383aec6d8201ac94e9beb085"
+        },
+        {
+          "sha": "27cec12cabda6fbd9ac97bf283e21ef0479ac593",
+          "author_date": "2016-03-13T21:17:21Z",
+          "message": "// Fix customization form",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/27cec12cabda6fbd9ac97bf283e21ef0479ac593"
+        },
+        {
+          "sha": "3381fbb3a9f2d0b6e33f995b6db2f26fc1c1d56d",
+          "author_date": "2016-03-13T23:48:40Z",
+          "message": "// Catalog page integrated",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3381fbb3a9f2d0b6e33f995b6db2f26fc1c1d56d"
+        },
+        {
+          "sha": "eb8be4f1c19018ae452bf3bcc2c9fea01148031a",
+          "author_date": "2016-03-14T07:50:28Z",
+          "message": "Merge pull request #5020 from julienbourdeau/feat/module-media-path-override\n\n[+] FO: Change structure for module assets override",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/eb8be4f1c19018ae452bf3bcc2c9fea01148031a"
+        },
+        {
+          "sha": "c9c8dba11600f7f16daeafbdb2889243b85acfb4",
+          "author_date": "2016-03-14T08:31:31Z",
+          "message": "Merge pull request #5181 from Shudrum/product-page-integration\n\n[*]BO: Product pages integration",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c9c8dba11600f7f16daeafbdb2889243b85acfb4"
+        },
+        {
+          "sha": "2c364b42967b57ee718241ba68e4feda13520c3d",
+          "author_date": "2016-03-14T08:37:14Z",
+          "message": "// Fix Add customization button on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/2c364b42967b57ee718241ba68e4feda13520c3d"
+        },
+        {
+          "sha": "e281c511357891156edf59e58f4f97b8a2a59469",
+          "author_date": "2016-03-14T06:41:02Z",
+          "message": "// ProductPresenter - move quantities to product",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e281c511357891156edf59e58f4f97b8a2a59469"
+        },
+        {
+          "sha": "d991514c0afefbd008bdd7638e45e68ef2787515",
+          "author_date": "2016-03-11T15:45:39Z",
+          "message": "// OrderPresenter - Rework amounts",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d991514c0afefbd008bdd7638e45e68ef2787515"
+        },
+        {
+          "sha": "137a30e6e2dece443bc6daebd6ec3e68288bab1a",
+          "author_date": "2016-03-14T09:40:39Z",
+          "message": "Merge pull request #5182 from Shudrum/fix-add-customization\n\n[-]BO: Fix Add customization button on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/137a30e6e2dece443bc6daebd6ec3e68288bab1a"
+        },
+        {
+          "sha": "26e7254de7aac8e678dc60c5acce6f14f1e77d0c",
+          "author_date": "2016-03-14T07:13:02Z",
+          "message": "// ProductPresenter - move ecotax",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/26e7254de7aac8e678dc60c5acce6f14f1e77d0c"
+        },
+        {
+          "sha": "81d6fde3f94b7daad4ffd992311fe55bb38b7786",
+          "author_date": "2016-03-14T09:11:11Z",
+          "message": "// ProductController - move quantity discounts",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/81d6fde3f94b7daad4ffd992311fe55bb38b7786"
+        },
+        {
+          "sha": "d53d5d49739ae9f5f6082a8858af3d05383fffea",
+          "author_date": "2016-03-14T09:15:09Z",
+          "message": "// ProductPresenter - move group_reduction",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d53d5d49739ae9f5f6082a8858af3d05383fffea"
+        },
+        {
+          "sha": "f0d04c37d6a530fe9328784cdc667cb148ee47ec",
+          "author_date": "2016-03-14T12:20:17Z",
+          "message": "// Add welcome module to composer.json",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f0d04c37d6a530fe9328784cdc667cb148ee47ec"
+        },
+        {
+          "sha": "55a5c46049ad8373751547e3195bab45faff75ab",
+          "author_date": "2016-03-14T12:37:44Z",
+          "message": "Merge pull request #5179 from firstred/patch-20\n\n[-] Installer : Fix install DB query",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/55a5c46049ad8373751547e3195bab45faff75ab"
+        },
+        {
+          "sha": "6fbe47dcb383e90cb1895b628f50d61f77ef53e9",
+          "author_date": "2016-03-14T12:39:48Z",
+          "message": "// Install the new module welcome automatically",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6fbe47dcb383e90cb1895b628f50d61f77ef53e9"
+        },
+        {
+          "sha": "b134e80f3994622d1ff01f3b4315974da1aabbd2",
+          "author_date": "2016-03-14T12:49:46Z",
+          "message": "Merge pull request #5186 from maximebiloe/dev/feat/welcome-module\n\n// Introduce the new welcome module",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b134e80f3994622d1ff01f3b4315974da1aabbd2"
+        },
+        {
+          "sha": "352997f53a5b36c0c9ee8309895f43a8b2ed2daf",
+          "author_date": "2016-03-14T13:19:11Z",
+          "message": "Merge pull request #5185 from julienbourdeau/fix/order-presenter\n\n// OrderPresenter - Rework amounts",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/352997f53a5b36c0c9ee8309895f43a8b2ed2daf"
+        },
+        {
+          "sha": "48bdeb0993bb9d7f0515013e122269a03fb3e41b",
+          "author_date": "2016-03-14T13:29:54Z",
+          "message": "// Fix branch in composer.json",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/48bdeb0993bb9d7f0515013e122269a03fb3e41b"
+        },
+        {
+          "sha": "8fd4e0505f07cf85d0e88549d4b4d3152af170ee",
+          "author_date": "2016-03-08T08:33:12Z",
+          "message": "[+] Introduce Module Manager",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8fd4e0505f07cf85d0e88549d4b4d3152af170ee"
+        },
+        {
+          "sha": "987f1b28230f257dfe660058c90747eeb835a3e4",
+          "author_date": "2016-03-08T15:32:28Z",
+          "message": "// Module Catalog now works with Module Manager",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/987f1b28230f257dfe660058c90747eeb835a3e4"
+        },
+        {
+          "sha": "2da344c0b21eb9c8e85215f4461dffda02e4413c",
+          "author_date": "2016-03-08T15:37:41Z",
+          "message": "// Add isInstalled and isEnabled in module manager",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/2da344c0b21eb9c8e85215f4461dffda02e4413c"
+        },
+        {
+          "sha": "3c76257abb92d6f3bb8cdee56e6b8bb72de57db5",
+          "author_date": "2016-03-08T15:51:55Z",
+          "message": "// Handle modules which do not answer a boolean value on action",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3c76257abb92d6f3bb8cdee56e6b8bb72de57db5"
+        },
+        {
+          "sha": "bad5cf09c4fb5809262b26313b8db6e60004356b",
+          "author_date": "2016-03-08T17:41:22Z",
+          "message": "// ModuleManager: Check employee permission on action request",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/bad5cf09c4fb5809262b26313b8db6e60004356b"
+        },
+        {
+          "sha": "e02bbd680c2000be6c8b043b4c9bd53a560f7546",
+          "author_date": "2016-03-09T10:21:19Z",
+          "message": "// Fix modules loading on product page",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e02bbd680c2000be6c8b043b4c9bd53a560f7546"
+        },
+        {
+          "sha": "91eef2e32b837c602321f99595166c34bd5f1a7a",
+          "author_date": "2016-03-09T10:31:50Z",
+          "message": "// Module Manager cleanup",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/91eef2e32b837c602321f99595166c34bd5f1a7a"
+        },
+        {
+          "sha": "efa7735e92a766ea32e9d932f2f9bcfbcbfc6f6f",
+          "author_date": "2016-03-09T13:47:05Z",
+          "message": "// Module page ajaxified work with module repository",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/efa7735e92a766ea32e9d932f2f9bcfbcbfc6f6f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.6.1.23",
@@ -2691,8 +4621,453 @@
     {
       "release": "1.7.6.3",
       "previous_release": "1.7.6.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d69a5dbf6f64ff4ed3d051da025f170d2e81729e",
+          "author_date": "2019-11-25T10:15:08Z",
+          "message": "Prevent getter from changing class state",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d69a5dbf6f64ff4ed3d051da025f170d2e81729e"
+        },
+        {
+          "sha": "c818816ece2280d95c6030e6c5b82ec9fb950739",
+          "author_date": "2019-11-28T15:48:50Z",
+          "message": "Merge pull request #16591 from atomiix/release-1.7.6.2\n\nRelease 1.7.6.2",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c818816ece2280d95c6030e6c5b82ec9fb950739"
+        },
+        {
+          "sha": "9ac9abe22328787f73c33eee25eb851eab4a6342",
+          "author_date": "2019-11-29T08:48:17Z",
+          "message": "Merge pull request #16522 from eternoendless/prevent-state-change\n\nPrevent getter from changing class state",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9ac9abe22328787f73c33eee25eb851eab4a6342"
+        },
+        {
+          "sha": "18238ec04e24ee56c0a1d6a2a125ebfca2a66246",
+          "author_date": "2019-12-02T10:44:34Z",
+          "message": "make it possible to check boolean values",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/18238ec04e24ee56c0a1d6a2a125ebfca2a66246"
+        },
+        {
+          "sha": "ba8e9a37a7401b7cfd9e5e0a5c264528c3600d97",
+          "author_date": "2019-12-02T10:47:07Z",
+          "message": "add newsletter to required fields for the case of newsletter toggle",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ba8e9a37a7401b7cfd9e5e0a5c264528c3600d97"
+        },
+        {
+          "sha": "fb35b9a368ee6e1841bd5ced10f1d22975f8e2ee",
+          "author_date": "2019-12-02T10:47:47Z",
+          "message": "get mandatory field values",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/fb35b9a368ee6e1841bd5ced10f1d22975f8e2ee"
+        },
+        {
+          "sha": "f126ba7d4b35edb5e18a1a60da52a1c714690383",
+          "author_date": "2019-12-02T11:02:07Z",
+          "message": "prettyCI",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f126ba7d4b35edb5e18a1a60da52a1c714690383"
+        },
+        {
+          "sha": "0d98bb3efd973278692eb919aae463e79b89cab1",
+          "author_date": "2019-12-03T10:08:06Z",
+          "message": "Add a translator language loader",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0d98bb3efd973278692eb919aae463e79b89cab1"
+        },
+        {
+          "sha": "c43b59f6b6adb7233fa4c75b35f3cb8e0f2aa13f",
+          "author_date": "2019-12-03T11:08:10Z",
+          "message": "start kernel before install default data",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c43b59f6b6adb7233fa4c75b35f3cb8e0f2aa13f"
+        },
+        {
+          "sha": "57bb1b148dc534c5372e59024b764b8d95e64915",
+          "author_date": "2019-12-04T12:59:53Z",
+          "message": "Add comment to explain why not load DB translations",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/57bb1b148dc534c5372e59024b764b8d95e64915"
+        },
+        {
+          "sha": "37fdf544c9e9d2562152c5d0f0575c50787b87e4",
+          "author_date": "2019-12-04T14:58:52Z",
+          "message": "Try to execute phpunit-admin first for travis (5.6 context on failure)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/37fdf544c9e9d2562152c5d0f0575c50787b87e4"
+        },
+        {
+          "sha": "e084cbae52be4a8c1c2437e52246fa73bb9ee3da",
+          "author_date": "2019-12-05T08:50:07Z",
+          "message": "Merge pull request #16648 from matthieu-rolland/fix-customer-status-toggle\n\nFix customer statuses not being able to toggle when optin field is required",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e084cbae52be4a8c1c2437e52246fa73bb9ee3da"
+        },
+        {
+          "sha": "751502a6d072048dcc2d35bc8d22619f2f9d0704",
+          "author_date": "2019-12-06T09:40:19Z",
+          "message": "Merge pull request #16294 from atomiix/fix-email-generation-translation\n\nFix email not translated when installing a new language",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/751502a6d072048dcc2d35bc8d22619f2f9d0704"
+        },
+        {
+          "sha": "9bb6d3c53169fbcc6b493073e9e5b64c40f57453",
+          "author_date": "2019-12-06T12:40:34Z",
+          "message": "Do not save wholesale_price with suppliers, separate both",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9bb6d3c53169fbcc6b493073e9e5b64c40f57453"
+        },
+        {
+          "sha": "29bda43a552316fb4a29c60f44ff287230bce62f",
+          "author_date": "2019-12-06T13:43:07Z",
+          "message": "Do not save product here because it erases some data already saved",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/29bda43a552316fb4a29c60f44ff287230bce62f"
+        },
+        {
+          "sha": "cc4010eead4d6da46422cd7d22be531d984e97a8",
+          "author_date": "2019-12-09T10:43:55Z",
+          "message": "Remove limit when exporting data",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/cc4010eead4d6da46422cd7d22be531d984e97a8"
+        },
+        {
+          "sha": "baccf1bf52047744c205b63336d8eaa72afaebb8",
+          "author_date": "2019-12-09T15:00:04Z",
+          "message": "Empty bo_css and bo_theme in employee Object",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/baccf1bf52047744c205b63336d8eaa72afaebb8"
+        },
+        {
+          "sha": "e18ed1d9efc6c75dd694a8e3d386ec593ba6b731",
+          "author_date": "2019-12-18T15:35:33Z",
+          "message": "More precise selector on ajax change on product",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e18ed1d9efc6c75dd694a8e3d386ec593ba6b731"
+        },
+        {
+          "sha": "1f38d27d33916dbcc24ecc76d76894c5c42c9f10",
+          "author_date": "2019-12-05T09:13:33Z",
+          "message": "add missing AdminMailTheme access",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1f38d27d33916dbcc24ecc76d76894c5c42c9f10"
+        },
+        {
+          "sha": "dfbed75f784d40f91a0e2bc900c9d50e7a8a4050",
+          "author_date": "2019-12-05T09:15:17Z",
+          "message": "Add missing rights on AdminMailTheme when upgrading",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/dfbed75f784d40f91a0e2bc900c9d50e7a8a4050"
+        },
+        {
+          "sha": "1f483953eff66d1c4388bc35d844baa67df31fb4",
+          "author_date": "2019-12-05T10:20:18Z",
+          "message": "apply cs fixer",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1f483953eff66d1c4388bc35d844baa67df31fb4"
+        },
+        {
+          "sha": "ae00b9313df03505361e254f3a10f901976720f0",
+          "author_date": "2019-12-09T17:32:54Z",
+          "message": "check parameters aren't empty before continuing",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ae00b9313df03505361e254f3a10f901976720f0"
+        },
+        {
+          "sha": "8c91883341ac3b3f1b13411b52f611ed3246a35b",
+          "author_date": "2019-12-18T15:55:30Z",
+          "message": "Prevent insert access if already existing",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8c91883341ac3b3f1b13411b52f611ed3246a35b"
+        },
+        {
+          "sha": "a9f874eac9eb0b8a18627ee287ba8fdc69ad70ca",
+          "author_date": "2019-12-19T10:47:47Z",
+          "message": "Id must be unique, removing useless precise selector\n\nCo-Authored-By: GoT <PierreRambaud@users.noreply.github.com>",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a9f874eac9eb0b8a18627ee287ba8fdc69ad70ca"
+        },
+        {
+          "sha": "9fd6945d448274ddc2507eae449864731883a033",
+          "author_date": "2019-12-20T08:56:45Z",
+          "message": "Deeper selector to avoid conflict",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9fd6945d448274ddc2507eae449864731883a033"
+        },
+        {
+          "sha": "1d75ecba0ac48cd26da6e72971548434080d96a9",
+          "author_date": "2019-12-20T09:02:00Z",
+          "message": "Deeper selector to avoid conflict",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1d75ecba0ac48cd26da6e72971548434080d96a9"
+        },
+        {
+          "sha": "fa6b1189a4da75457cc9e614505169da2c51dc06",
+          "author_date": "2019-12-20T09:03:52Z",
+          "message": "Fix conflict",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/fa6b1189a4da75457cc9e614505169da2c51dc06"
+        },
+        {
+          "sha": "e6468c2ea4a9d99b140e6d4c661964d367c6983e",
+          "author_date": "2019-12-20T09:05:11Z",
+          "message": "remove unwanted console log",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e6468c2ea4a9d99b140e6d4c661964d367c6983e"
+        },
+        {
+          "sha": "aa1f26f400966c405f68a7aff5bc19dbcac65fae",
+          "author_date": "2019-12-20T17:21:14Z",
+          "message": "Fix typo in order_customer_comment template",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/aa1f26f400966c405f68a7aff5bc19dbcac65fae"
+        },
+        {
+          "sha": "ea6ea2a6fccc59dd683d890480c0e5ea69f0602d",
+          "author_date": "2019-12-21T23:15:36Z",
+          "message": "Fix yml config parse typo",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ea6ea2a6fccc59dd683d890480c0e5ea69f0602d"
+        },
+        {
+          "sha": "3f994c8660ab62cafb5b3d97289c7b9b4ddd2b2f",
+          "author_date": "2019-12-26T10:12:08Z",
+          "message": "Merge pull request #16888 from jolelievre/fix-customer-comment\n\nFix customer comment template",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3f994c8660ab62cafb5b3d97289c7b9b4ddd2b2f"
+        },
+        {
+          "sha": "30089be45f1634d46822876289b20e8dfc94d101",
+          "author_date": "2019-12-26T10:23:13Z",
+          "message": "Merge pull request #16893 from mvorisek/gh_fix_bootstrap_typo\n\nFix yml config parse typo",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/30089be45f1634d46822876289b20e8dfc94d101"
+        },
+        {
+          "sha": "f728d18fe5b599df67f939dd45ec83c1fccd015a",
+          "author_date": "2019-12-26T13:11:53Z",
+          "message": "Merge pull request #16729 from PierreRambaud/fix/16353\n\nCost price & unit price are erased when saving with a supplier",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f728d18fe5b599df67f939dd45ec83c1fccd015a"
+        },
+        {
+          "sha": "3d71c9c55e7783501790adb142d12f87e20396b7",
+          "author_date": "2019-12-26T13:14:54Z",
+          "message": "Merge pull request #16746 from PierreRambaud/fix/16730\n\nAttributes bo_css & bo_theme can be empty",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3d71c9c55e7783501790adb142d12f87e20396b7"
+        },
+        {
+          "sha": "eded2428f91d47707de78c18bfd955cfd5a2bd91",
+          "author_date": "2020-01-03T14:06:54Z",
+          "message": "Displaying error on the right place instead of product page and quickview",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/eded2428f91d47707de78c18bfd955cfd5a2bd91"
+        },
+        {
+          "sha": "14be23d3104dd8041e8aa5cd8349e45c3e96bb25",
+          "author_date": "2020-01-06T13:16:45Z",
+          "message": "Ignore rtl assets and remove _rtl.css files",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/14be23d3104dd8041e8aa5cd8349e45c3e96bb25"
+        },
+        {
+          "sha": "d59b9d81c2797f5d83e2183ca4554eba985816f9",
+          "author_date": "2020-01-06T16:26:35Z",
+          "message": "Create HtaccessFolderProtector to protect folder, it is bound to module install and upgrade",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d59b9d81c2797f5d83e2183ca4554eba985816f9"
+        },
+        {
+          "sha": "e6b4b6b38c9b08b73d447ab1e5def34748d8afea",
+          "author_date": "2020-01-06T19:12:57Z",
+          "message": "Add dedicated resource file for htaccess template",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/e6b4b6b38c9b08b73d447ab1e5def34748d8afea"
+        },
+        {
+          "sha": "f2adafa93cbe0b4db4ab1aeccafbff81f190a3f3",
+          "author_date": "2020-01-07T11:00:34Z",
+          "message": "Rename Protector into Guard",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f2adafa93cbe0b4db4ab1aeccafbff81f190a3f3"
+        },
+        {
+          "sha": "3017e5b68645684b0e7f2c5d163194b0f103ae20",
+          "author_date": "2019-12-23T15:07:35Z",
+          "message": "Handle profile name above 32 chars exception",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/3017e5b68645684b0e7f2c5d163194b0f103ae20"
+        },
+        {
+          "sha": "f726f97b1d8e038f6fcd428c0da68234bcefd400",
+          "author_date": "2020-01-07T15:54:08Z",
+          "message": "Handle feedbacks from code review",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/f726f97b1d8e038f6fcd428c0da68234bcefd400"
+        },
+        {
+          "sha": "feb2c01390d5885ae6a71b6e30bc908249d5d81c",
+          "author_date": "2020-01-07T15:55:20Z",
+          "message": "Convert tab to spaces",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/feb2c01390d5885ae6a71b6e30bc908249d5d81c"
+        },
+        {
+          "sha": "bf51783e6b103167527df06272a99b39d4d57ec9",
+          "author_date": "2020-01-07T15:59:14Z",
+          "message": "Fix XSS in quick access when adding / removing a quick access link",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/bf51783e6b103167527df06272a99b39d4d57ec9"
+        },
+        {
+          "sha": "c8dc0239f5a703e02dccf4d67f0c7588295f6240",
+          "author_date": "2020-01-07T16:59:26Z",
+          "message": "Merge pull request #16696 from atomiix/fix-email-theme-permission\n\nFix email theme permission",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c8dc0239f5a703e02dccf4d67f0c7588295f6240"
+        },
+        {
+          "sha": "73d3e8648699adbe03a19e1095a9033648823906",
+          "author_date": "2020-01-08T09:25:49Z",
+          "message": "Make sure token is not added via javascript",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/73d3e8648699adbe03a19e1095a9033648823906"
+        },
+        {
+          "sha": "c768777d0df825c21766fcd7532e22cabd6a93fe",
+          "author_date": "2020-01-08T14:19:20Z",
+          "message": "Forgot to remove a console log",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c768777d0df825c21766fcd7532e22cabd6a93fe"
+        },
+        {
+          "sha": "c7b30772d0b7ca8a623a529519c305ea0c526dd3",
+          "author_date": "2020-01-08T14:42:12Z",
+          "message": "Merge pull request #17030 from NeOMakinG/rtl-ignore\n\nIgnore rtl assets and remove _rtl.css files",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c7b30772d0b7ca8a623a529519c305ea0c526dd3"
+        },
+        {
+          "sha": "8fcd5b2a5d6a17552fd9b9fb37f0d3ba86e82693",
+          "author_date": "2020-01-08T15:03:37Z",
+          "message": "Fixed encoding on product name in viewed product",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/8fcd5b2a5d6a17552fd9b9fb37f0d3ba86e82693"
+        },
+        {
+          "sha": "72a74d88bdd896b3e9f5248c7b050fce6f2cee21",
+          "author_date": "2020-01-08T15:42:29Z",
+          "message": "Fix i18n fields not being displayed in ws and getting empty after a PUT request",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/72a74d88bdd896b3e9f5248c7b050fce6f2cee21"
+        },
+        {
+          "sha": "ef148c63a28b3906758125fda152beefdac414ba",
+          "author_date": "2020-01-08T16:18:53Z",
+          "message": "Merge pull request #16742 from PierreRambaud/fix/16328\n\nCan't export data more than filters limits",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ef148c63a28b3906758125fda152beefdac414ba"
+        },
+        {
+          "sha": "68b359356ccd333570c668a66a8560581578f3e3",
+          "author_date": "2019-12-11T10:35:46Z",
+          "message": "Fix recursive check of updated files\n\nThe return value of the recursive call is not used, so even if it\nreports changed files in subfolders, they won't be returned at the end.\n\nThe URL to the xml file was incorrect, so it never got to the recursive\ncall in the first place.",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/68b359356ccd333570c668a66a8560581578f3e3"
+        },
+        {
+          "sha": "16e2a80aa94a64b9fb80b26f21f631e277f4a677",
+          "author_date": "2020-01-08T17:36:54Z",
+          "message": "Add comment why setting i18n to false",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/16e2a80aa94a64b9fb80b26f21f631e277f4a677"
+        },
+        {
+          "sha": "ddc5e2732482bc6f43e6fe0068c3088a59930d94",
+          "author_date": "2020-01-09T14:04:27Z",
+          "message": "Move common code in an abstract class",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/ddc5e2732482bc6f43e6fe0068c3088a59930d94"
+        },
+        {
+          "sha": "09acf32a0f5de8957499d52419cb210698b5bfb4",
+          "author_date": "2020-01-09T14:40:19Z",
+          "message": "Define alert message when error are found in Category Form",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/09acf32a0f5de8957499d52419cb210698b5bfb4"
+        },
+        {
+          "sha": "1e0e81d915952eedd5fdf5adfa9cb014b4b6e17a",
+          "author_date": "2020-01-10T09:32:25Z",
+          "message": "Define alert message when error are found in Category Form (at creation)",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1e0e81d915952eedd5fdf5adfa9cb014b4b6e17a"
+        },
+        {
+          "sha": "90ee5fbd08fbf344caf003b5d4f0deb17f3a5e0f",
+          "author_date": "2020-01-10T10:50:05Z",
+          "message": "Merge pull request #17069 from atomiix/webservice-i18n\n\nFix Currency i18n fields issue in webservice",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/90ee5fbd08fbf344caf003b5d4f0deb17f3a5e0f"
+        },
+        {
+          "sha": "a60c143ae4da10f70af6bef564f619541ea7243a",
+          "author_date": "2020-01-10T13:25:24Z",
+          "message": "Merge pull request #17036 from jolelievre/htaccess-protection\n\nProtect modules vendor folder on install/upgrade/enable",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/a60c143ae4da10f70af6bef564f619541ea7243a"
+        },
+        {
+          "sha": "4a2ee23613214bc36ce268a6df1cd97892c5451a",
+          "author_date": "2020-01-10T13:27:28Z",
+          "message": "Merge pull request #17071 from matks/backport-16765\n\nFix recursive check of updated files - backport of #16765",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/4a2ee23613214bc36ce268a6df1cd97892c5451a"
+        },
+        {
+          "sha": "c869d04d431378b62b5a2949ec3c81dc39e2d2e7",
+          "author_date": "2020-01-10T13:30:02Z",
+          "message": "Fixed encoding on product name in viewed product (#17065)\n\nFixed encoding on product name in viewed product",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/c869d04d431378b62b5a2949ec3c81dc39e2d2e7"
+        },
+        {
+          "sha": "011d8831a9a7b619aecb49208db5d0a36b9677d1",
+          "author_date": "2020-01-08T09:25:54Z",
+          "message": "Build assets",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/011d8831a9a7b619aecb49208db5d0a36b9677d1"
+        },
+        {
+          "sha": "0f0a6a17cad516d777091409c98f3630dd11bc37",
+          "author_date": "2020-01-10T14:42:44Z",
+          "message": "Remove add / remove button after and addition / deletion",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0f0a6a17cad516d777091409c98f3630dd11bc37"
+        },
+        {
+          "sha": "0e8c6090475dc3f1299682dc059668dae31d12cb",
+          "author_date": "2020-01-10T15:33:33Z",
+          "message": "Merge pull request #17050 from PierreRambaud/fix/xss-quick-access\n\nQuick access error when having a wrong url",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0e8c6090475dc3f1299682dc059668dae31d12cb"
+        },
+        {
+          "sha": "0d09b919691486870e718e266c9084dc9f04e58c",
+          "author_date": "2020-01-10T15:52:18Z",
+          "message": "Merge pull request #17087 from Progi1984/issue16514\n\nDefine alert message when error are found in Category Form",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/0d09b919691486870e718e266c9084dc9f04e58c"
+        },
+        {
+          "sha": "39e5e9e2afaa8bc3b999a99c97b3b67d2fdda95d",
+          "author_date": "2020-01-10T16:18:15Z",
+          "message": "Merge pull request #16852 from NeOMakinG/issue-16633\n\nFix a bug where changing quantity on product quickview adds products tags on ever products",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/39e5e9e2afaa8bc3b999a99c97b3b67d2fdda95d"
+        },
+        {
+          "sha": "9fbc88dbe0daadb0f46abd0da9532d503faed92c",
+          "author_date": "2020-01-13T10:17:01Z",
+          "message": "Merge pull request #16906 from atomiix/fix-profile-exception\n\nHandle profile name above 32 chars exception",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9fbc88dbe0daadb0f46abd0da9532d503faed92c"
+        },
+        {
+          "sha": "9065826f37b31bb45e0501074d80568c4b587ac0",
+          "author_date": "2020-01-13T10:28:25Z",
+          "message": "Make  variable to be compatible with develop",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/9065826f37b31bb45e0501074d80568c4b587ac0"
+        },
+        {
+          "sha": "833705529efe5ac5bcd11c78cc7ca0863e6268e9",
+          "author_date": "2020-01-13T14:57:09Z",
+          "message": "Build assets",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/833705529efe5ac5bcd11c78cc7ca0863e6268e9"
+        },
+        {
+          "sha": "d7f4a5b1967f2caac9c991fc417d859e6c286cce",
+          "author_date": "2020-01-13T14:59:31Z",
+          "message": "Update version to 1.7.6.3",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/d7f4a5b1967f2caac9c991fc417d859e6c286cce"
+        },
+        {
+          "sha": "fc9f89ebbc8e8b38f5f17b194d3a23391fa9c271",
+          "author_date": "2020-01-13T16:01:03Z",
+          "message": "Merge pull request #17130 from atomiix/currency-1.7.6-develop\n\nMake $localizedSymbols variable to be compatible with develop",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/fc9f89ebbc8e8b38f5f17b194d3a23391fa9c271"
+        },
+        {
+          "sha": "22358cd7de428bd43a7fb57f34e0f941fa14bfc3",
+          "author_date": "2020-01-16T17:34:07Z",
+          "message": "Update contributors list for 1.7.6.3",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/22358cd7de428bd43a7fb57f34e0f941fa14bfc3"
+        },
+        {
+          "sha": "6fe38316569e624305d3e8dbad277bef35189c88",
+          "author_date": "2020-01-20T13:46:09Z",
+          "message": "Added RTL Style for Classic Theme",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/6fe38316569e624305d3e8dbad277bef35189c88"
+        },
+        {
+          "sha": "31a252c6aa3d88842e10a4f1d646878d1d901d1c",
+          "author_date": "2020-01-20T14:34:08Z",
+          "message": "Added RTL Style for Classic Theme (#17248)\n\nAdded RTL Style for Classic Theme",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/31a252c6aa3d88842e10a4f1d646878d1d901d1c"
+        },
+        {
+          "sha": "b1b22917b7d4b4bdc20591e679fa6598a597ac64",
+          "author_date": "2020-01-20T14:46:55Z",
+          "message": "Changelog 1.7.6.3",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/b1b22917b7d4b4bdc20591e679fa6598a597ac64"
+        },
+        {
+          "sha": "1111e568177f6ac768d40dfafb384c8c762f751e",
+          "author_date": "2020-01-20T15:03:36Z",
+          "message": "Changelog 1.7.6.3 (#17251)\n\nChangelog 1.7.6.3",
+          "html_url": "https://github.com/PrestaShop/PrestaShop/commit/1111e568177f6ac768d40dfafb384c8c762f751e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.7.6.4",

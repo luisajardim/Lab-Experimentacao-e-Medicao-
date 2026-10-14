@@ -2333,8 +2333,8 @@
     {
       "release": "v0.2.0",
       "previous_release": "v0.2.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [],
+      "ignored_reason": null
     },
     {
       "release": "v0.1.3",
@@ -2393,8 +2393,33 @@
     {
       "release": "v0.3.5",
       "previous_release": "v0.3.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "102d3f60c2f23c63cd7b2bba50700fc32969de62",
+          "author_date": "2018-03-23T18:06:51Z",
+          "message": "Log if err updating commit status.",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/102d3f60c2f23c63cd7b2bba50700fc32969de62"
+        },
+        {
+          "sha": "9615702287ad75b5c57985872030f2709f1afcdf",
+          "author_date": "2018-03-23T19:38:08Z",
+          "message": "Merge pull request #84 from runatlantis/log-status\n\nLog if err updating commit status.",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/9615702287ad75b5c57985872030f2709f1afcdf"
+        },
+        {
+          "sha": "823cc7c5cf1877ba4325619595d46e755d0bda9f",
+          "author_date": "2018-03-23T20:09:28Z",
+          "message": "Release 0.3.5.",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/823cc7c5cf1877ba4325619595d46e755d0bda9f"
+        },
+        {
+          "sha": "2058acf5d24d8b55939544205789825808f1b6c8",
+          "author_date": "2018-03-23T20:13:05Z",
+          "message": "Merge pull request #85 from runatlantis/release-0.3.5\n\nRelease 0.3.5.",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/2058acf5d24d8b55939544205789825808f1b6c8"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.3.6",
@@ -2687,8 +2712,375 @@
     {
       "release": "v0.17.1",
       "previous_release": "v0.17.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a735de46133867685ba1ec19b8a9de11549bdaa3",
+          "author_date": "2021-04-27T16:53:36Z",
+          "message": "Update CONTRIBUTING.md (#1538)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/a735de46133867685ba1ec19b8a9de11549bdaa3"
+        },
+        {
+          "sha": "0136330b89ffe034c846ce812413a145a0bfc8d3",
+          "author_date": "2021-04-28T18:40:21Z",
+          "message": "build(deps): bump github.com/microcosm-cc/bluemonday from 1.0.7 to 1.0.9 (#1534)\n\nBumps [github.com/microcosm-cc/bluemonday](https://github.com/microcosm-cc/bluemonday) from 1.0.7 to 1.0.9.\r\n- [Release notes](https://github.com/microcosm-cc/bluemonday/releases)\r\n- [Commits](https://github.com/microcosm-cc/bluemonday/compare/v1.0.7...v1.0.9)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/0136330b89ffe034c846ce812413a145a0bfc8d3"
+        },
+        {
+          "sha": "c2f1d664c4a73398f71804fabf76890f94413793",
+          "author_date": "2021-04-29T17:27:25Z",
+          "message": "Update security docs (#1511)\n\n* Update security docs",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/c2f1d664c4a73398f71804fabf76890f94413793"
+        },
+        {
+          "sha": "9b28e8e9406847c514061edf24a70048e4ff0cf7",
+          "author_date": "2021-04-30T21:37:54Z",
+          "message": "Add extra args support to policy check step runner. (#1543)\n\n* Add extra args support to policy check step runner.\r\n\r\n* Fix tests/mocks.\r\n\r\n* Update docs.",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/9b28e8e9406847c514061edf24a70048e4ff0cf7"
+        },
+        {
+          "sha": "79309ed39c21c06bd8a8dea7e7c8802e4b15313c",
+          "author_date": "2021-05-03T19:47:23Z",
+          "message": "[ORCA-559] Fix hide previous command logic (#37) (#1549)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/79309ed39c21c06bd8a8dea7e7c8802e4b15313c"
+        },
+        {
+          "sha": "1777be406ef9309c0aa003ae90805dcb94e9165c",
+          "author_date": "2021-05-05T21:35:20Z",
+          "message": "Get modified Azure DevOps PR files from commit and changes API endpoint (#1521)\n\n* get modified ado pr files from commit and changes endpoint, fixes #1397\r\n\r\n* Add missing error handling",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/1777be406ef9309c0aa003ae90805dcb94e9165c"
+        },
+        {
+          "sha": "ffe1da1b826746a14b30862a350b3d945b0ef5cd",
+          "author_date": "2021-05-05T22:27:41Z",
+          "message": "deps: tf 0.15.2 (#1559)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/ffe1da1b826746a14b30862a350b3d945b0ef5cd"
+        },
+        {
+          "sha": "4e60fea4b8e4bc4f684caa28ed9516214e53f8fd",
+          "author_date": "2021-05-05T22:28:18Z",
+          "message": "build(deps): bump github.com/xanzy/go-gitlab from 0.48.0 to 0.49.0 (#1546)\n\nBumps [github.com/xanzy/go-gitlab](https://github.com/xanzy/go-gitlab) from 0.48.0 to 0.49.0.\r\n- [Release notes](https://github.com/xanzy/go-gitlab/releases)\r\n- [Changelog](https://github.com/xanzy/go-gitlab/blob/master/releases_test.go)\r\n- [Commits](https://github.com/xanzy/go-gitlab/compare/v0.48.0...v0.49.0)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/4e60fea4b8e4bc4f684caa28ed9516214e53f8fd"
+        },
+        {
+          "sha": "df7b1c9ce3591f7a87574c721d3bce2cd894f1ec",
+          "author_date": "2021-05-07T23:07:23Z",
+          "message": "deps: tf 0.15.3 (#1561)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/df7b1c9ce3591f7a87574c721d3bce2cd894f1ec"
+        },
+        {
+          "sha": "e2a0cd2cf683b35c18ae199c84e3584cb99b8520",
+          "author_date": "2021-05-10T15:49:04Z",
+          "message": "Fix GitLab website links for CI (#1573)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/e2a0cd2cf683b35c18ae199c84e3584cb99b8520"
+        },
+        {
+          "sha": "bc2b3904319ecbcfadf09f8152fd26495a42c12f",
+          "author_date": "2021-05-10T17:58:36Z",
+          "message": "Update Terraform 0.11.14 version to latest 0.11.15 (#1564)\n\n* Update Docker file to 0.11.15 for PGP issue\r\n\r\n* Update other references to TF 0.11 to latest 0.11.15",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/bc2b3904319ecbcfadf09f8152fd26495a42c12f"
+        },
+        {
+          "sha": "9d23d0e527cebf1f16e6dbfb61e1a21594a364bb",
+          "author_date": "2021-05-10T18:32:05Z",
+          "message": "build(deps): bump hosted-git-info from 2.6.0 to 2.8.9 (#1570)\n\nBumps [hosted-git-info](https://github.com/npm/hosted-git-info) from 2.6.0 to 2.8.9.\r\n- [Release notes](https://github.com/npm/hosted-git-info/releases)\r\n- [Changelog](https://github.com/npm/hosted-git-info/blob/v2.8.9/CHANGELOG.md)\r\n- [Commits](https://github.com/npm/hosted-git-info/compare/v2.6.0...v2.8.9)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/9d23d0e527cebf1f16e6dbfb61e1a21594a364bb"
+        },
+        {
+          "sha": "fc162f57dc1e8f1be81ebadd70a24f7bb6c80a50",
+          "author_date": "2021-05-10T18:32:10Z",
+          "message": "build(deps): bump lodash from 4.17.19 to 4.17.21 (#1567)\n\nBumps [lodash](https://github.com/lodash/lodash) from 4.17.19 to 4.17.21.\r\n- [Release notes](https://github.com/lodash/lodash/releases)\r\n- [Commits](https://github.com/lodash/lodash/compare/4.17.19...4.17.21)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/fc162f57dc1e8f1be81ebadd70a24f7bb6c80a50"
+        },
+        {
+          "sha": "429235d40a7be1f685998e42ce4211895f04c427",
+          "author_date": "2021-05-10T18:42:12Z",
+          "message": "DeleteSourceBranchOnMerge issue fixed (#1560)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/429235d40a7be1f685998e42ce4211895f04c427"
+        },
+        {
+          "sha": "d98474a4aa523f391acb37dfe2c48ad2b86be28b",
+          "author_date": "2021-05-10T23:33:21Z",
+          "message": "Fix ParallelPlan and ParallelApply out of order in buildProjectCommandCtx (#1574)\n\n* Fix regression - paralle plan / apply out-of-order\r\n\r\n* Add test to check we're correctly setting ParallelPlan/Apply\r\n\r\n* Add project command builder tests to check args\r\n\r\n* rm vendor",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/d98474a4aa523f391acb37dfe2c48ad2b86be28b"
+        },
+        {
+          "sha": "ce57344b0e351ee1e26b2164aff5ead9441d13d9",
+          "author_date": "2021-05-10T23:53:35Z",
+          "message": "Nil pointer dereference when userConfig.DisableRepoLocking is true (#1557)\n\n* init applyLockingClient when repo locking is disabled\r\n\r\n* move applyingLockingClient init out",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/ce57344b0e351ee1e26b2164aff5ead9441d13d9"
+        },
+        {
+          "sha": "40ffdd144f1f6203c75a9ae1d115325c0611b937",
+          "author_date": "2021-05-11T23:37:07Z",
+          "message": "fix: use git diff for modified files, fixes #1397 (#1568)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/40ffdd144f1f6203c75a9ae1d115325c0611b937"
+        },
+        {
+          "sha": "cdb4ebd29830662965114afbfad43368824b88fe",
+          "author_date": "2021-05-13T06:56:57Z",
+          "message": "docs: fix missing bracket (#1577)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/cdb4ebd29830662965114afbfad43368824b88fe"
+        },
+        {
+          "sha": "01216b26cd75183360909a50217a39d55a9265e7",
+          "author_date": "2021-05-13T21:00:36Z",
+          "message": "Create post_push (#1580)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/01216b26cd75183360909a50217a39d55a9265e7"
+        },
+        {
+          "sha": "805e94e7f648eddb0484e539a7b51410d39529bc",
+          "author_date": "2021-05-13T21:05:06Z",
+          "message": "Update conftest version to 0.25.0. (#1579)\n\nVersion 0.25.0 solves OOM issue described in [556](https://github.com/open-policy-agent/conftest/pull/556).",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/805e94e7f648eddb0484e539a7b51410d39529bc"
+        },
+        {
+          "sha": "dbce1d71e7b9d8eb2e6aa8d81d8a678dfce0fa42",
+          "author_date": "2021-05-14T17:00:48Z",
+          "message": "bump testing-env image (#1582)\n\n* bump testing-env image\r\n\r\n* use correct image\r\n\r\n* fix e2e tests\r\n\r\n* fix more e2e tests\r\n\r\n* one more try\r\n\r\n* 0.14.10 works\r\n\r\n* one more try\r\n\r\n* flippign exp\r\n\r\n* flipping tihngs around\r\n\r\n* fixing parallel e2e tests",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/dbce1d71e7b9d8eb2e6aa8d81d8a678dfce0fa42"
+        },
+        {
+          "sha": "846215246a18fdc9c9bd56e21a081cadf4c16261",
+          "author_date": "2021-05-16T16:18:41Z",
+          "message": "Add docs for how to update testing-env image (#1581)\n\n- Makefile is no longer needed",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/846215246a18fdc9c9bd56e21a081cadf4c16261"
+        },
+        {
+          "sha": "7cb439f4cd567c7cc434cfc8b8ad6e526196bae6",
+          "author_date": "2021-05-19T19:49:32Z",
+          "message": "deps: terraform 0.15.4 (#1588)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/7cb439f4cd567c7cc434cfc8b8ad6e526196bae6"
+        },
+        {
+          "sha": "46c90611be06cf93fa729e3d82aeb80871d60ab7",
+          "author_date": "2021-05-19T19:49:49Z",
+          "message": "build(deps): bump github.com/xanzy/go-gitlab from 0.49.0 to 0.50.0 (#1584)\n\nBumps [github.com/xanzy/go-gitlab](https://github.com/xanzy/go-gitlab) from 0.49.0 to 0.50.0.\r\n- [Release notes](https://github.com/xanzy/go-gitlab/releases)\r\n- [Changelog](https://github.com/xanzy/go-gitlab/blob/master/releases_test.go)\r\n- [Commits](https://github.com/xanzy/go-gitlab/compare/v0.49.0...v0.50.0)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/46c90611be06cf93fa729e3d82aeb80871d60ab7"
+        },
+        {
+          "sha": "6468f1941bbc9e3613a93b97bba602ef2a1ca8b2",
+          "author_date": "2021-05-21T15:00:49Z",
+          "message": "fix broken tests (#1590)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/6468f1941bbc9e3613a93b97bba602ef2a1ca8b2"
+        },
+        {
+          "sha": "2a6f21e85d205c91e10761a5530ba300a7c0892c",
+          "author_date": "2021-05-22T04:39:36Z",
+          "message": "Attempting to fix e2e test (#1595)\n\n* Attemting to fix e2e test\r\n\r\n* remove comma\r\n\r\n* no-op change\r\n\r\n* scope down the fixtures\r\n\r\n* remove unnecessary comment",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/2a6f21e85d205c91e10761a5530ba300a7c0892c"
+        },
+        {
+          "sha": "a4f0e3a467410190fb6e015c0ae0200871a535c0",
+          "author_date": "2021-05-27T01:00:20Z",
+          "message": "Bump golangci to 1.39.0 (#1541)\n\nSigned-off-by: Gábor Lipták <gliptak@gmail.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/a4f0e3a467410190fb6e015c0ae0200871a535c0"
+        },
+        {
+          "sha": "712498da5895ef61a58210f38b64ed783951e39c",
+          "author_date": "2021-06-01T18:58:01Z",
+          "message": "Refactor controllers into package. (#1597)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/712498da5895ef61a58210f38b64ed783951e39c"
+        },
+        {
+          "sha": "d6b6f12e36e6eac00baf4e8a4af115a49e56902e",
+          "author_date": "2021-06-02T19:18:40Z",
+          "message": "deps: terraform 0.15.5 (#1615)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/d6b6f12e36e6eac00baf4e8a4af115a49e56902e"
+        },
+        {
+          "sha": "ab743b540f991e1ca4d83d0c8504d148bd4ff325",
+          "author_date": "2021-06-02T19:27:06Z",
+          "message": "build(deps): bump go.uber.org/zap from 1.16.0 to 1.17.0 (#1608)\n\nBumps [go.uber.org/zap](https://github.com/uber-go/zap) from 1.16.0 to 1.17.0.\r\n- [Release notes](https://github.com/uber-go/zap/releases)\r\n- [Changelog](https://github.com/uber-go/zap/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/uber-go/zap/compare/v1.16.0...v1.17.0)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/ab743b540f991e1ca4d83d0c8504d148bd4ff325"
+        },
+        {
+          "sha": "475e51c25c0fbde91703e2d9c749c4b9431b8a11",
+          "author_date": "2021-06-03T18:24:14Z",
+          "message": "doc: remove microbadger ref (#1616)\n\nThe site would be shutdown July 1st",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/475e51c25c0fbde91703e2d9c749c4b9431b8a11"
+        },
+        {
+          "sha": "6b50e84ab9ba0dacc1f3e95e253ec2077bf3df39",
+          "author_date": "2021-06-03T21:35:30Z",
+          "message": "Add undiverged apply requirement (#1587)\n\n* ORCA-731 Force PR authors to rebase if master has diverged (#70)\r\n\r\n* initial commit for undiverge apply req\r\n\r\n* Update documentation\r\n\r\n* Fix existing unit tests\r\n\r\n* HasDiverged unit test\r\n\r\n* project command runner unit test\r\n\r\n* Global config tests cases\r\n\r\n* update parser unit tests\r\n\r\n* Update project_test unit tests\r\n\r\n* Fix linting\r\n\r\n* fix test case with logging output\r\n\r\n* add space on readme markdown\r\n\r\n* Remove unused variable\r\n\r\n* remove deprecated flag option\r\n\r\n* Use global args struct instead of passing in args\r\n\r\n* Fix merge issue",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/6b50e84ab9ba0dacc1f3e95e253ec2077bf3df39"
+        },
+        {
+          "sha": "8bbd35c4d030cc619bc3a62faeaf1eaf18d070f2",
+          "author_date": "2021-06-08T16:42:14Z",
+          "message": "Clarifying policy checking docs (#1621)\n\n* Clarifying policy checking docs\r\n\r\n* adding info about attributes\r\n\r\n* add more clarifying text",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/8bbd35c4d030cc619bc3a62faeaf1eaf18d070f2"
+        },
+        {
+          "sha": "10e619b16b2d11425906e01c379b604f5fcf2399",
+          "author_date": "2021-06-16T14:26:11Z",
+          "message": "deps: terraform 1.0.0 (#1622)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/10e619b16b2d11425906e01c379b604f5fcf2399"
+        },
+        {
+          "sha": "d9afad4dd4e518fadca783d0b1c35ce495ee2285",
+          "author_date": "2021-06-16T14:28:25Z",
+          "message": "build(deps): bump go.etcd.io/bbolt from 1.3.5 to 1.3.6 (#1619)\n\nBumps [go.etcd.io/bbolt](https://github.com/etcd-io/bbolt) from 1.3.5 to 1.3.6.\r\n- [Release notes](https://github.com/etcd-io/bbolt/releases)\r\n- [Commits](https://github.com/etcd-io/bbolt/compare/v1.3.5...v1.3.6)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: go.etcd.io/bbolt\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/d9afad4dd4e518fadca783d0b1c35ce495ee2285"
+        },
+        {
+          "sha": "6c33cf20617365fb37bf40b7351d9fe9fd2893eb",
+          "author_date": "2021-06-17T05:20:41Z",
+          "message": "Increase buffer size for website link check (#1638)\n\n* Increase buffer size for website link check\r\n\r\nShould fix\r\n> error when reading response headers: small read buffer. Increase ReadBufferSize.\r\nerrors\r\n\r\n* Bump link checker image\r\n\r\n* Fix https://app.terraform.io/ url",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/6c33cf20617365fb37bf40b7351d9fe9fd2893eb"
+        },
+        {
+          "sha": "1f0cb3f6f01ee41eda22ceb7b866bc1ec7d0bfc2",
+          "author_date": "2021-06-18T19:52:25Z",
+          "message": "standardised logging timestamp to ISO8601 (#1625)\n\nCo-authored-by: T <kishore.t@lowes.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/1f0cb3f6f01ee41eda22ceb7b866bc1ec7d0bfc2"
+        },
+        {
+          "sha": "db7969bb0b90222d81ffe4b57d712f684281c339",
+          "author_date": "2021-06-18T19:54:02Z",
+          "message": "workflows: add lint action (#1406)\n\n* workflows: add lint action\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* add golint and errorcheck\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* update job name for golangci-lint\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/db7969bb0b90222d81ffe4b57d712f684281c339"
+        },
+        {
+          "sha": "3ab2437387d954e5bde13d6ada05e932c2b8ae21",
+          "author_date": "2021-06-18T20:08:06Z",
+          "message": "build(deps): bump github.com/microcosm-cc/bluemonday (#1642)\n\nBumps [github.com/microcosm-cc/bluemonday](https://github.com/microcosm-cc/bluemonday) from 1.0.9 to 1.0.14.\r\n- [Release notes](https://github.com/microcosm-cc/bluemonday/releases)\r\n- [Commits](https://github.com/microcosm-cc/bluemonday/compare/v1.0.9...v1.0.14)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/microcosm-cc/bluemonday\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/3ab2437387d954e5bde13d6ada05e932c2b8ae21"
+        },
+        {
+          "sha": "ef2a37c35f6a884e5725de305d4edbc29cc8d539",
+          "author_date": "2021-06-21T16:59:21Z",
+          "message": "build(deps): bump github.com/hashicorp/go-getter from 1.5.3 to 1.5.4 (#1646)\n\nBumps [github.com/hashicorp/go-getter](https://github.com/hashicorp/go-getter) from 1.5.3 to 1.5.4.\r\n- [Release notes](https://github.com/hashicorp/go-getter/releases)\r\n- [Changelog](https://github.com/hashicorp/go-getter/blob/main/.goreleaser.yml)\r\n- [Commits](https://github.com/hashicorp/go-getter/compare/v1.5.3...v1.5.4)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/hashicorp/go-getter\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/ef2a37c35f6a884e5725de305d4edbc29cc8d539"
+        },
+        {
+          "sha": "dbc9ef4b6d73ace65df5a2d9cf03ec5ed6335345",
+          "author_date": "2021-06-21T17:48:42Z",
+          "message": "build(deps): bump github.com/spf13/viper from 1.7.1 to 1.8.0 (#1647)\n\nBumps [github.com/spf13/viper](https://github.com/spf13/viper) from 1.7.1 to 1.8.0.\r\n- [Release notes](https://github.com/spf13/viper/releases)\r\n- [Commits](https://github.com/spf13/viper/compare/v1.7.1...v1.8.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/spf13/viper\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/dbc9ef4b6d73ace65df5a2d9cf03ec5ed6335345"
+        },
+        {
+          "sha": "aef146fba0cead95fe26a5b3dea5add8c5b2db25",
+          "author_date": "2021-06-22T16:32:21Z",
+          "message": "add run step environment variable SHOWFILE (#1611)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/aef146fba0cead95fe26a5b3dea5add8c5b2db25"
+        },
+        {
+          "sha": "e48f80359bd1ad9079cd7a66f5714b9976fe03de",
+          "author_date": "2021-06-22T16:33:07Z",
+          "message": "Add an extra flag to disable automerge with comment apply (#1533)\n\n```\r\natlantis apply --auto-merge-disabled\r\n```\r\n\r\nIssue: #1245",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/e48f80359bd1ad9079cd7a66f5714b9976fe03de"
+        },
+        {
+          "sha": "a1b3aac9cff793a2f0c17ed79772b656abb8af11",
+          "author_date": "2021-06-22T22:50:21Z",
+          "message": "workflow: automate atlantis image build (#1650)\n\n* workflow: automate atlantis image build\r\n\r\n* build atlantis artifact\r\n\r\n* remove docker_master job from circleci\r\n\r\n* build and publish latest image on master push\r\n\r\n* use v2 instead of v2.1.3\r\n\r\n* restore docker_master job for now",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/a1b3aac9cff793a2f0c17ed79772b656abb8af11"
+        },
+        {
+          "sha": "9fc4f13407c8865757012200d8a2e16709bb1831",
+          "author_date": "2021-06-22T22:50:48Z",
+          "message": "workflow: automate atlantis-base image build (#1648)\n\n* workflow: add atlantis-base image automation\r\n\r\n* comment out path trigger\r\n\r\n* push to ghcr.io registry\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* rm ` rm -rf /root/.gnupg`\r\n\r\n```\r\nrm: can't remove '/root/.gnupg/S.gpg-agent.extra': No such file or directory\r\n\r\n```\r\n\r\n* try a different cleanup fix\r\n\r\n* use GITHUB_TOKEN for accessing ghcr.io registry\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* also tag latest image\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* only runs on master\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* also can be manually triggered\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* update date fmt `yyyy.mm.dd` for docker tag",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/9fc4f13407c8865757012200d8a2e16709bb1831"
+        },
+        {
+          "sha": "3b1ff447d22881099e09c2a670ba4bb3b5337767",
+          "author_date": "2021-06-22T22:50:57Z",
+          "message": "workflow: automate ci-link-checker image build (#1649)\n\n* workflow: automate ci-link-checker image build\r\n\r\n* build once to test out the flow\r\n\r\n* only build on master when dockerfile got changed\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* update date fmt `yyyy.mm.dd` for docker tag",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/3b1ff447d22881099e09c2a670ba4bb3b5337767"
+        },
+        {
+          "sha": "7b2ddce5ac9fd5ee524e938e0f9a3276d300516f",
+          "author_date": "2021-06-22T23:01:52Z",
+          "message": "docker: update atlantis-base per ghcr.io migration (#1653)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/7b2ddce5ac9fd5ee524e938e0f9a3276d300516f"
+        },
+        {
+          "sha": "b6b60aab2c9f18dbffff38df90aae5badbb3e0cc",
+          "author_date": "2021-06-22T23:19:54Z",
+          "message": "fix the build\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/b6b60aab2c9f18dbffff38df90aae5badbb3e0cc"
+        },
+        {
+          "sha": "b9802f71a49feba6dfd9c0f10b88401349d08c7b",
+          "author_date": "2021-06-22T23:31:01Z",
+          "message": "set azure devops max comment characters to api limit (#1585)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/b9802f71a49feba6dfd9c0f10b88401349d08c7b"
+        },
+        {
+          "sha": "322c970c64ae6ce1b2c4562e378bfef2750d39dd",
+          "author_date": "2021-06-22T23:41:34Z",
+          "message": "dependabot: track github-action deps (#1655)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/322c970c64ae6ce1b2c4562e378bfef2750d39dd"
+        },
+        {
+          "sha": "f64c36d99b3552bbd64a11d0fa66786f75a80724",
+          "author_date": "2021-06-22T23:42:07Z",
+          "message": "build(deps): bump actions/stale from 3.0.15 to 3.0.19 (#1656)\n\nBumps [actions/stale](https://github.com/actions/stale) from 3.0.15 to 3.0.19.\r\n- [Release notes](https://github.com/actions/stale/releases)\r\n- [Commits](https://github.com/actions/stale/compare/v3.0.15...v3.0.19)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: actions/stale\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/f64c36d99b3552bbd64a11d0fa66786f75a80724"
+        },
+        {
+          "sha": "78a33a6d1ee168ba4873c7f1f227bccde1f75dcc",
+          "author_date": "2021-06-23T17:22:03Z",
+          "message": "ci: remove docker_master job in circleci (#1652)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/78a33a6d1ee168ba4873c7f1f227bccde1f75dcc"
+        },
+        {
+          "sha": "8b8012764f093eeb451ddeb1e64dd52d2733d038",
+          "author_date": "2021-06-23T17:22:11Z",
+          "message": "ci: update to use ghcr.io images (#1654)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/8b8012764f093eeb451ddeb1e64dd52d2733d038"
+        },
+        {
+          "sha": "3b08952168f16df6d1d68656291fd9e9d1f288b6",
+          "author_date": "2021-06-23T18:24:55Z",
+          "message": "Load terraform version from the required_version block",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/3b08952168f16df6d1d68656291fd9e9d1f288b6"
+        },
+        {
+          "sha": "7607c154cbfea40b9e0167392a92040ba6af57e6",
+          "author_date": "2021-06-23T18:30:07Z",
+          "message": "revert previous commit",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/7607c154cbfea40b9e0167392a92040ba6af57e6"
+        },
+        {
+          "sha": "0ed7a43e5994f71fe466a5a2244e848e3cca4385",
+          "author_date": "2021-06-23T18:48:55Z",
+          "message": "Fix policy check loading the tf version (#1658)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/0ed7a43e5994f71fe466a5a2244e848e3cca4385"
+        },
+        {
+          "sha": "cd9d5b2fce4ba8efc3c49b625b3ae7350076079a",
+          "author_date": "2021-06-23T18:51:10Z",
+          "message": "Dont add -upgrade of the lock file exists & dedupe extra args (#1651)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/cd9d5b2fce4ba8efc3c49b625b3ae7350076079a"
+        },
+        {
+          "sha": "97a3f75c13c14e8786bb7a4fa74defa221445ea0",
+          "author_date": "2021-06-24T15:26:35Z",
+          "message": "workflow: add steps for releasing tagged images (#1661)\n\n* Add release workflow.\r\n\r\n* Update .github/workflows/atlantis-image.yml\r\n\r\nCo-authored-by: rui <rui@chenrui.dev>\r\n\r\n* Update .github/workflows/atlantis-image.yml\r\n\r\nCo-authored-by: rui <rui@chenrui.dev>\r\n\r\n* parse out GITHUB_REF for RELEASE_VERSION\r\n\r\nCo-authored-by: rui <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/97a3f75c13c14e8786bb7a4fa74defa221445ea0"
+        },
+        {
+          "sha": "e0f5b83aa7c1f6dec41f2e9098bfac0c43b8940a",
+          "author_date": "2021-06-24T15:30:31Z",
+          "message": "Fix plan summary when changes outside of terraform is detected (#1593) (#1594)\n\nCo-authored-by: chroju <chroju@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/e0f5b83aa7c1f6dec41f2e9098bfac0c43b8940a"
+        },
+        {
+          "sha": "0927464b7e811ea0361aaa12bdeb16b11a5db78c",
+          "author_date": "2021-06-24T15:33:38Z",
+          "message": "Move argument deduplication logic to a utility package (#1660)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/0927464b7e811ea0361aaa12bdeb16b11a5db78c"
+        },
+        {
+          "sha": "99cfad45166beae6342d52a2cf26de5295e9a55b",
+          "author_date": "2021-06-24T15:39:23Z",
+          "message": "Bump to 0.17.1 (#1657)\n\n* Update main.go\r\n* Update bundle.yaml\r\n* Update CHANGELOG.md",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/99cfad45166beae6342d52a2cf26de5295e9a55b"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.17.2",
@@ -2717,8 +3109,165 @@
     {
       "release": "v0.17.6",
       "previous_release": "v0.17.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "6d86119d7578b0f1ae2ae309cc3c4c1b4a51ea52",
+          "author_date": "2021-11-10T23:44:50Z",
+          "message": "deps: tf 1.0.11 (#1892)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/6d86119d7578b0f1ae2ae309cc3c4c1b4a51ea52"
+        },
+        {
+          "sha": "d310e2f17015a0a41483ab9584c5291bc67a93f5",
+          "author_date": "2021-11-12T19:36:24Z",
+          "message": "docs: clarify maximum version limit (#1894)\n\n* Clarify maximum version limit\r\n\r\nWhen latest Docker image still had terraform 1.0.0, for example, any method of specifying a higher version failed to build.  This note clarifies the dependency.\r\n\r\n* update the docker image reference\r\n\r\nCo-authored-by: rui <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/d310e2f17015a0a41483ab9584c5291bc67a93f5"
+        },
+        {
+          "sha": "24001aa8303619042bf9939777ff5e9be7246de8",
+          "author_date": "2021-11-12T20:18:05Z",
+          "message": "docs: revert to use docker hub page as 404 on github pkg registry (#1897)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/24001aa8303619042bf9939777ff5e9be7246de8"
+        },
+        {
+          "sha": "f5b6ab09ecf38aec4833517f328291a8acbda8c1",
+          "author_date": "2021-11-15T01:02:44Z",
+          "message": "fix: allow requests to /healthz without authentication (#1896)\n\n* fix: allow requests to /healthz without authentication\r\n\r\n* allow unauthed requests to /status",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/f5b6ab09ecf38aec4833517f328291a8acbda8c1"
+        },
+        {
+          "sha": "09b8e7a93aad77630559a3ddf8bface08123dcc7",
+          "author_date": "2021-11-17T14:39:08Z",
+          "message": "Revert \"docs: revert to use docker hub page as 404 on github pkg registry (#1897)\" (#1900)\n\nThis reverts commit 24001aa8303619042bf9939777ff5e9be7246de8.",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/09b8e7a93aad77630559a3ddf8bface08123dcc7"
+        },
+        {
+          "sha": "dc4cc2f6146121e5d3c3a496bb5582e8ac298616",
+          "author_date": "2021-11-17T22:25:29Z",
+          "message": "docs: document approve_policies command in comment_parser (#1886)\n\n* docs: document approve_policies command in help\r\n\r\nThe `approve_policies` command was added with policy checking but was\r\nnever included in the command parser help.\r\n\r\nAlso update the comments in the file to reflect all of the commands.\r\n\r\n* feat: Better message on policy failure\r\n\r\nInclude the specific command `approve_policies` in the message.",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/dc4cc2f6146121e5d3c3a496bb5582e8ac298616"
+        },
+        {
+          "sha": "79af92458ac953c4d65e77062b5ff375331f42db",
+          "author_date": "2021-11-17T22:25:48Z",
+          "message": "feat: adds `allowed_regexp_prefixes` parameter to use with the `--enable-regexp-cmd` flag (#1884)\n\n* adds AllowedRegexpPrefixes config and use it on the FindProjectsByName method\r\n\r\n* adds tests for the new AllowedRegexpPrefixes config\r\n\r\n* update documentation with the new AllowedRegexpPrefixes config",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/79af92458ac953c4d65e77062b5ff375331f42db"
+        },
+        {
+          "sha": "33b4d6325a7d9b6b15b211501e02e127f85a4876",
+          "author_date": "2021-11-18T19:42:36Z",
+          "message": "refactor: Add PullStatusFetcher interface (#1904)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/33b4d6325a7d9b6b15b211501e02e127f85a4876"
+        },
+        {
+          "sha": "c875b6b86130f80eed526dfc60d91004a9c67d45",
+          "author_date": "2021-12-04T03:16:39Z",
+          "message": "build(deps): bump github.com/urfave/negroni from 0.3.0 to 1.0.0 (#1922)\n\n* build(deps): bump github.com/urfave/negroni from 0.3.0 to 1.0.0\r\n\r\nBumps [github.com/urfave/negroni](https://github.com/urfave/negroni) from 0.3.0 to 1.0.0.\r\n- [Release notes](https://github.com/urfave/negroni/releases)\r\n- [Changelog](https://github.com/urfave/negroni/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/urfave/negroni/compare/v0.3.0...v1.0.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/urfave/negroni\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\n* fix broken link\r\n\r\n```\r\n$ curl -I https://tf-registry.herokuapp.com/modules/terraform-aws-modules/atlantis/aws/latest\r\nHTTP/1.1 503 Service Unavailable\r\n```\r\n\r\nref, https://app.circleci.com/pipelines/github/runatlantis/atlantis/1694/workflows/35fa6a93-77e2-4b48-8d0c-e4e9425908cc/jobs/8747\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/c875b6b86130f80eed526dfc60d91004a9c67d45"
+        },
+        {
+          "sha": "a0dc15ca707392b57e7a51d25ccd6d1a6a0905c4",
+          "author_date": "2021-12-04T03:24:21Z",
+          "message": "build(deps): bump github.com/xanzy/go-gitlab from 0.51.1 to 0.52.2 (#1921)\n\nBumps [github.com/xanzy/go-gitlab](https://github.com/xanzy/go-gitlab) from 0.51.1 to 0.52.2.\r\n- [Release notes](https://github.com/xanzy/go-gitlab/releases)\r\n- [Changelog](https://github.com/xanzy/go-gitlab/blob/master/releases_test.go)\r\n- [Commits](https://github.com/xanzy/go-gitlab/compare/v0.51.1...v0.52.2)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/xanzy/go-gitlab\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/a0dc15ca707392b57e7a51d25ccd6d1a6a0905c4"
+        },
+        {
+          "sha": "9f3d9e0f27697572de8d2fde1a8b44c734470714",
+          "author_date": "2021-12-06T15:47:58Z",
+          "message": "build(deps): bump github.com/golang-jwt/jwt/v4 from 4.1.0 to 4.2.0 (#1928)\n\nBumps [github.com/golang-jwt/jwt/v4](https://github.com/golang-jwt/jwt) from 4.1.0 to 4.2.0.\r\n- [Release notes](https://github.com/golang-jwt/jwt/releases)\r\n- [Changelog](https://github.com/golang-jwt/jwt/blob/main/VERSION_HISTORY.md)\r\n- [Commits](https://github.com/golang-jwt/jwt/compare/v4.1.0...v4.2.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/golang-jwt/jwt/v4\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/9f3d9e0f27697572de8d2fde1a8b44c734470714"
+        },
+        {
+          "sha": "4370dc67db32fc44de3b80eb27caec45b47b7d9e",
+          "author_date": "2021-12-08T20:28:27Z",
+          "message": "docs: add clarity and further policy_check examples (#1925)\n\n* Add clarity + further policy_check examples to docs\r\n\r\n* Fix broken link to Atlantis on AWS Fargate Terraform module\r\n\r\nCo-authored-by: Dave Heward <74298782+davidh-unmind@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/4370dc67db32fc44de3b80eb27caec45b47b7d9e"
+        },
+        {
+          "sha": "8aa1ea4d0458a4e612274b4cc173df9f4a93d97a",
+          "author_date": "2021-12-08T22:07:08Z",
+          "message": "deps: terraform 1.1.0 (#1930)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/8aa1ea4d0458a4e612274b4cc173df9f4a93d97a"
+        },
+        {
+          "sha": "52c90bc41992c113261d3247f4b4b921c0cd4af4",
+          "author_date": "2021-12-13T15:27:16Z",
+          "message": "build(deps): bump github.com/spf13/viper from 1.9.0 to 1.10.0 (#1934)\n\nBumps [github.com/spf13/viper](https://github.com/spf13/viper) from 1.9.0 to 1.10.0.\r\n- [Release notes](https://github.com/spf13/viper/releases)\r\n- [Commits](https://github.com/spf13/viper/compare/v1.9.0...v1.10.0)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: github.com/spf13/viper\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-minor\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/52c90bc41992c113261d3247f4b4b921c0cd4af4"
+        },
+        {
+          "sha": "a74e740c114acb71cfd3178e610edcd111a67948",
+          "author_date": "2021-12-15T22:03:41Z",
+          "message": "deps: terraform 1.1.1 (#1939)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/a74e740c114acb71cfd3178e610edcd111a67948"
+        },
+        {
+          "sha": "649dde8404fa866d41db1fcc2ca9d39c0314fe17",
+          "author_date": "2021-12-15T22:07:44Z",
+          "message": "deps: alpine 3.15 (#1941)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/649dde8404fa866d41db1fcc2ca9d39c0314fe17"
+        },
+        {
+          "sha": "a55a75b469cc440a7aad17fe6cd66690bf85b294",
+          "author_date": "2021-12-12T01:53:29Z",
+          "message": "docker: setup multi-platform build for atlantis-base\n\nUse master branch for testing instead :facepalm:\n\ncloses #1932\ncloses #1940\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/a55a75b469cc440a7aad17fe6cd66690bf85b294"
+        },
+        {
+          "sha": "726ec5aa10372f8aee1a741ce5d9fc8b46709b56",
+          "author_date": "2021-12-15T22:14:42Z",
+          "message": "atlantis-base: update platforms\n\nhttps://hub.docker.com/layers/alpine/library/alpine/3.15.0/images/sha256-c74f1b1166784193ea6c8f9440263b9be6cae07dfe35e32a5df7a31358ac2060\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/726ec5aa10372f8aee1a741ce5d9fc8b46709b56"
+        },
+        {
+          "sha": "245a9015e47c87396b7b8aa50a568d07c5d8132d",
+          "author_date": "2021-12-15T22:20:59Z",
+          "message": "atalntis-base: update platforms and path trigger\n\n> Supported architectures: (more info) `amd64`, `arm32v6`, `arm32v7`, `arm64v8`, `i386`, `ppc64le`, `riscv64`, `s390x`\n\nhttps://hub.docker.com/_/alpine\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/245a9015e47c87396b7b8aa50a568d07c5d8132d"
+        },
+        {
+          "sha": "4a57b30285e48303f859e45b214a736cc2595fb5",
+          "author_date": "2021-12-15T22:27:01Z",
+          "message": "atlantis-base: fix context",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/4a57b30285e48303f859e45b214a736cc2595fb5"
+        },
+        {
+          "sha": "7b76df7478d6c93ca5e3b7f70969b429e4079944",
+          "author_date": "2021-12-16T05:40:30Z",
+          "message": "build: make multi-platform image for testing-env\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/7b76df7478d6c93ca5e3b7f70969b429e4079944"
+        },
+        {
+          "sha": "9e849f7e66a5021e3195bedf466fb0cc5813e7c3",
+          "author_date": "2021-12-16T14:43:12Z",
+          "message": "docs: fix policy check documentation examples (#1945)",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/9e849f7e66a5021e3195bedf466fb0cc5813e7c3"
+        },
+        {
+          "sha": "ec4d77fbfbbb78c2ede32ea82b87b9434d567e13",
+          "author_date": "2021-12-17T17:07:54Z",
+          "message": "docker(testing): updating image build process\n\nrelates to #1943\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/ec4d77fbfbbb78c2ede32ea82b87b9434d567e13"
+        },
+        {
+          "sha": "fad1c758cb925533bc8b0e7e321ad71c9ca16478",
+          "author_date": "2021-12-17T18:25:50Z",
+          "message": "docker(testing): fix arch ref for `linux/arm/v7`\n\nrelates to https://github.com/chenrui333/github-action-test/commit/eb1c78dd0baad60fb4db7be701129904bb4b2869\n\n- `docker buildx build --progress=plain --no-cache --platform linux/arm/v7 .`\n- `docker buildx build --progress=plain --no-cache --platform linux/arm/v8  .`\n\n```\n```\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/fad1c758cb925533bc8b0e7e321ad71c9ca16478"
+        },
+        {
+          "sha": "45e8513f23266adbe7e4275b11928ad0ab30d982",
+          "author_date": "2021-12-17T19:41:05Z",
+          "message": "docker: make multi-platform atlantis image (#1943)\n\n* docker: multi-platform image for atlantis\r\n\r\n* workflow: update for multi platform image builds\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* update branch trigger for testing dev image\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* revert to use testing-env:2021.08.31\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* Revert \"update branch trigger for testing dev image\"\r\n\r\nThis reverts commit 266e04da0877b8f5391d9fb8eb20e5f4c3acf53d.",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/45e8513f23266adbe7e4275b11928ad0ab30d982"
+        },
+        {
+          "sha": "bd8aedabde0965ea492fd285bbdc42f5546baa51",
+          "author_date": "2021-12-17T19:44:39Z",
+          "message": "release: 0.17.6 (#1947)\n\n* release: 0.17.6\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>\r\n\r\n* update changelog\r\n\r\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/bd8aedabde0965ea492fd285bbdc42f5546baa51"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.18.0",
@@ -3263,8 +3812,225 @@
     {
       "release": "v0.45.0",
       "previous_release": "v0.44.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "76e3030a8fa0fa0a98ae2f98cb4d2744e1ddd9eb",
+          "author_date": "2026-06-26T05:40:54Z",
+          "message": "docs: improve release process checklist (#6584)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/76e3030a8fa0fa0a98ae2f98cb4d2744e1ddd9eb"
+        },
+        {
+          "sha": "2b574ef74e23096e58258a2b85f4a42211b6c8f7",
+          "author_date": "2026-06-26T05:50:47Z",
+          "message": "chore: Unify determination of a terraform project directory (#6455)\n\nSigned-off-by: Luke Massa <lukefrederickmassa@gmail.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/2b574ef74e23096e58258a2b85f4a42211b6c8f7"
+        },
+        {
+          "sha": "c499467def556243c7b8294f30ce910835545da2",
+          "author_date": "2026-06-26T13:05:42Z",
+          "message": "chore(deps): Bump picomatch (#6337)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/c499467def556243c7b8294f30ce910835545da2"
+        },
+        {
+          "sha": "c8664bd6027f4936e0a3169c6ae986248033eba2",
+          "author_date": "2026-06-26T13:08:26Z",
+          "message": "chore(deps): Bump rollup from 4.50.1 to 4.59.0 (#6270)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: RB <7775707+nitrocode@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/c8664bd6027f4936e0a3169c6ae986248033eba2"
+        },
+        {
+          "sha": "80484af624791a1bd97f4e98466a3183968acdf0",
+          "author_date": "2026-06-26T13:08:52Z",
+          "message": "chore(deps-dev): Bump minimatch from 10.2.2 to 10.2.4 (#6287)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/80484af624791a1bd97f4e98466a3183968acdf0"
+        },
+        {
+          "sha": "10fd1e67bab47f3b9484fc2ffc67e2af74345de5",
+          "author_date": "2026-06-26T13:10:57Z",
+          "message": "chore(deps): update gcr.io/oss-fuzz-base/base-builder-go docker digest to 65b72e0 in .clusterfuzzlite/dockerfile (main) (#6306)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/10fd1e67bab47f3b9484fc2ffc67e2af74345de5"
+        },
+        {
+          "sha": "915609da55e1221a3b847009ade6df579dd9385b",
+          "author_date": "2026-06-26T13:25:38Z",
+          "message": "docs: split out development guide (#6586)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/915609da55e1221a3b847009ade6df579dd9385b"
+        },
+        {
+          "sha": "32095f27d2ff43b7765dfeb6d69bcabe59a28e0b",
+          "author_date": "2026-06-26T13:29:41Z",
+          "message": "chore: rm unmaintained js-yaml dependency (#6133)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: nitrocode <7775707+nitrocode@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/32095f27d2ff43b7765dfeb6d69bcabe59a28e0b"
+        },
+        {
+          "sha": "a926f836f036cd65ecd80c60ce80cadcb29db89a",
+          "author_date": "2026-06-26T14:27:05Z",
+          "message": "feat(github): support team hierarchy in GH_TEAM_ALLOWLIST (#6365)\n\nSigned-off-by: hussein-mimi <hussein.mimi@harri.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Claude Sonnet 4.6 <noreply@anthropic.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/a926f836f036cd65ecd80c60ce80cadcb29db89a"
+        },
+        {
+          "sha": "f29a7d3a913d9836e23c66785c27dcd64da9f88e",
+          "author_date": "2026-06-26T15:51:43Z",
+          "message": "fix(deps): upgrade gitlab.com/gitlab-org/api/client-go to v0.161.1 (#6250)\n\nSigned-off-by: nitrocode <7775707+nitrocode@users.noreply.github.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/f29a7d3a913d9836e23c66785c27dcd64da9f88e"
+        },
+        {
+          "sha": "06b90ef7850c2075f2d1009c593f90c7ebcd8b9c",
+          "author_date": "2026-06-26T16:43:24Z",
+          "message": "fix(deps): update module github.com/cactus/go-statsd-client/v5 to v6 in go.mod (main) (#6144)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/06b90ef7850c2075f2d1009c593f90c7ebcd8b9c"
+        },
+        {
+          "sha": "ea4e4ceebf8b387d015fff7ed8a7fcca33279afe",
+          "author_date": "2026-06-26T17:43:22Z",
+          "message": "fix: resolve CWE-22 uncontrolled data used in path expression vulnerabilities (#6254)\n\nSigned-off-by: nitrocode <7775707+nitrocode@users.noreply.github.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/ea4e4ceebf8b387d015fff7ed8a7fcca33279afe"
+        },
+        {
+          "sha": "ba0c983e80de02aad383a63753086e9ba54c89c1",
+          "author_date": "2026-06-26T17:44:32Z",
+          "message": "chore(deps): update hadolint/hadolint-action action to v3.3.0 in .github/workflows/atlantis-image.yml (main) (#5825)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/ba0c983e80de02aad383a63753086e9ba54c89c1"
+        },
+        {
+          "sha": "12c5651740a8d1cf238b392721991e8364b312a9",
+          "author_date": "2026-06-26T19:10:15Z",
+          "message": "chore(deps): migrate off of archived gopkg.in/yaml.v3 (#6072)\n\nSigned-off-by: JFryy <fotherby1@gmail.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/12c5651740a8d1cf238b392721991e8364b312a9"
+        },
+        {
+          "sha": "0a49a6459fffeb37549cab04ca07b5f54f99bb20",
+          "author_date": "2026-06-26T19:12:17Z",
+          "message": "fix(deps): update module github.com/gofri/go-github-ratelimit to v2 in go.mod (main) (#5491)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/0a49a6459fffeb37549cab04ca07b5f54f99bb20"
+        },
+        {
+          "sha": "703aeb0de38c04e934fd846ef5bace88a6208015",
+          "author_date": "2026-06-26T19:16:32Z",
+          "message": "fix(docker): preserve healthcheck port fallback (#6588)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/703aeb0de38c04e934fd846ef5bace88a6208015"
+        },
+        {
+          "sha": "10ad74792610f743a537ecd205ea817ac6ace177",
+          "author_date": "2026-06-26T19:50:55Z",
+          "message": "fix: make git credential tests portable across platforms (#6587)\n\nSigned-off-by: Atul-Koundal <24bcs031@nith.ac.in>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/10ad74792610f743a537ecd205ea817ac6ace177"
+        },
+        {
+          "sha": "75ee4dcd4d5cbd58f48171f8703f92e4c4e8e209",
+          "author_date": "2026-06-26T20:17:59Z",
+          "message": "feat: Add a possibility to define a default merge method (#6573)\n\nSigned-off-by: ronaldmiranda <r@ronaldmiranda.com.br>\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/75ee4dcd4d5cbd58f48171f8703f92e4c4e8e209"
+        },
+        {
+          "sha": "59889c9611c3c1038c578faa5af01e9d6a0bdbcc",
+          "author_date": "2026-06-26T23:02:43Z",
+          "message": "feat: extend autodiscover.ignore_paths to targeted -d commands (#6466)\n\nSigned-off-by: emanuelbesliu <32497562+emanuelbesliu@users.noreply.github.com>\nSigned-off-by: Emanuel Besliu <32497562+emanuelbesliu@users.noreply.github.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/59889c9611c3c1038c578faa5af01e9d6a0bdbcc"
+        },
+        {
+          "sha": "fa056039cf7606a6958bd5024e5e25de64ebbbed",
+          "author_date": "2026-06-26T23:33:38Z",
+          "message": "feat: Refactor localization to YAML catalogs with runtime language overrides (#6506)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: nitrocode <7775707+nitrocode@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/fa056039cf7606a6958bd5024e5e25de64ebbbed"
+        },
+        {
+          "sha": "fb1d5c62da54fedc5592a1a1c57b08ce711ad669",
+          "author_date": "2026-06-26T23:45:29Z",
+          "message": "ci: Skip ClusterFuzzLite fuzzing on non-Go PRs (#6591)\n\nSigned-off-by: PePe Amengual <2208324+jamengual@users.noreply.github.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/fb1d5c62da54fedc5592a1a1c57b08ce711ad669"
+        },
+        {
+          "sha": "f54fc1ef18e22e15745d24be50f591229bde6f81",
+          "author_date": "2026-06-27T01:00:22Z",
+          "message": "feat: include pull request description in slack notifications (#6540)\n\nSigned-off-by: Rym Rabehi <rym.rabehi@datadome.co>\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/f54fc1ef18e22e15745d24be50f591229bde6f81"
+        },
+        {
+          "sha": "dcb4932ad966a7cc06f099564b764e65ee19cd20",
+          "author_date": "2026-06-27T01:03:30Z",
+          "message": "chore(deps): update ghcr.io/runatlantis/atlantis:latest docker digest to 1b4cd45 in dockerfile.dev (#6592)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/dcb4932ad966a7cc06f099564b764e65ee19cd20"
+        },
+        {
+          "sha": "5cbe126403f77a2ae4157605e03358deb1c6df47",
+          "author_date": "2026-06-27T01:10:42Z",
+          "message": "docs: Add ADR 0002 for API enhancement and drift detection (#6590)\n\nSigned-off-by: PePe Amengual <2208324+jamengual@users.noreply.github.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/5cbe126403f77a2ae4157605e03358deb1c6df47"
+        },
+        {
+          "sha": "d3fef69876642a836b3f4a6ff4ada70c34d8dc68",
+          "author_date": "2026-06-27T02:03:46Z",
+          "message": "feat: add --disable-automerge-label flag (#6593)\n\nSigned-off-by: Vincent Chenal <vincent.chenal@protonmail.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Vincent Chenal <vincent.chenal@protonmail.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/d3fef69876642a836b3f4a6ff4ada70c34d8dc68"
+        },
+        {
+          "sha": "c3a9791fca3f6675002637433f3fcd7695690fb7",
+          "author_date": "2026-06-27T02:06:21Z",
+          "message": "chore(deps): update ngrok/ngrok:latest docker digest to 14d80d0 in docker-compose.yml (main) (#6594)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/c3a9791fca3f6675002637433f3fcd7695690fb7"
+        },
+        {
+          "sha": "31cd481f3ba4fa3a19a718e5709df4948807e3da",
+          "author_date": "2026-06-27T03:56:02Z",
+          "message": "feat: stream project failure text to job page (#6414)\n\nSigned-off-by: Éamon Ryan <eamon.ryan@grafana.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/31cd481f3ba4fa3a19a718e5709df4948807e3da"
+        },
+        {
+          "sha": "0896b77af72a5af0cbba4a733d6824e44dbff561",
+          "author_date": "2026-06-27T06:00:52Z",
+          "message": "feat: Re-download terraform binary if it appears to be invalid. (#6454)\n\nSigned-off-by: Luke Massa <lukefrederickmassa@gmail.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/0896b77af72a5af0cbba4a733d6824e44dbff561"
+        },
+        {
+          "sha": "9a277a56dc76e5c5e8a48a662785bdaf7612fae6",
+          "author_date": "2026-06-27T15:55:23Z",
+          "message": "fix: show PR head branch instead of base branch in Slack notifications (#6316)\n\nSigned-off-by: Vadim Chausov <13024377+kiwibel@users.noreply.github.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/9a277a56dc76e5c5e8a48a662785bdaf7612fae6"
+        },
+        {
+          "sha": "dbd9680bc025602a00f061db6f80574aaf297166",
+          "author_date": "2026-06-27T15:56:37Z",
+          "message": "fix: check for githubApp should only affect GitHub repos (#6119)\n\nSigned-off-by: Zon <zon@aignostics.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/dbd9680bc025602a00f061db6f80574aaf297166"
+        },
+        {
+          "sha": "3de882745d0712bda7b2a01c5fc7348f0609478b",
+          "author_date": "2026-06-27T16:18:00Z",
+          "message": "fix: clarify update status log when URL is empty (#6595)\n\nSigned-off-by: Maxim Masiutin <maxim@masiutin.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Maxim Masiutin <maxim@masiutin.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/3de882745d0712bda7b2a01c5fc7348f0609478b"
+        },
+        {
+          "sha": "c34b45e087a00200422bf6e374d3f8e99c432c30",
+          "author_date": "2026-06-27T16:25:38Z",
+          "message": "fix(bitbucket): validate pagination next URLs (#6260)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: nitrocode <7775707+nitrocode@users.noreply.github.com>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/c34b45e087a00200422bf6e374d3f8e99c432c30"
+        },
+        {
+          "sha": "a959625cbc6b576eb5b7a5bc9188f16b56439515",
+          "author_date": "2026-06-27T16:38:21Z",
+          "message": "docs: clarify recent merged feature follow-ups (#6596)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/a959625cbc6b576eb5b7a5bc9188f16b56439515"
+        },
+        {
+          "sha": "d933478106cc1dd82680240d218ff13d1f7e5b1d",
+          "author_date": "2026-06-27T17:13:48Z",
+          "message": "fix: detect OpenTofu versions with project distribution (#6597)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/d933478106cc1dd82680240d218ff13d1f7e5b1d"
+        },
+        {
+          "sha": "52745e1fdf663cd7dafa81bc8d8addf34247fc02",
+          "author_date": "2026-06-27T17:30:04Z",
+          "message": "fix: scope regex project plans with restrict file list (#6598)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/52745e1fdf663cd7dafa81bc8d8addf34247fc02"
+        },
+        {
+          "sha": "ba0a2b786623820dcc00c20e05d691741e7bba7a",
+          "author_date": "2026-06-28T16:21:05Z",
+          "message": "feat(api): add alpha drift detection and remediation APIs (#6360)\n\nSigned-off-by: PePe Amengual <2208324+jamengual@users.noreply.github.com>\nSigned-off-by: Rui Chen <rui@chenrui.dev>\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>\nCo-authored-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/runatlantis/atlantis/commit/ba0a2b786623820dcc00c20e05d691741e7bba7a"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.46.0",

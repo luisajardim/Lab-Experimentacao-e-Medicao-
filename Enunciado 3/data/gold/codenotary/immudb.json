@@ -839,8 +839,1377 @@
     {
       "release": "v0.7.0",
       "previous_release": "v0.6.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f1412f5bbf7bcdc8b420ec61201d2beddde9ed2f",
+          "author_date": "2020-06-30T07:54:48Z",
+          "message": "feat: add multiple databases support\n\n1. Multiple databases in one immudb instance, database list, database create command\r\n2. User permissions per database, read, readwrite, admin, user create, user permision and user list command\r\n3. Sysadmin user for user management and database creation\r\n4. Update immuadmin and immuclient to use multiple database and user management features\r\n5. Maintenence flag to override auth and allow full access to immudb\r\n6. Change directory structure to keep all databases under /data directory\r\n7. One Corruption Checker for all databases\r\n8. Updated Auditor on immugw and immuclient to check on multiple databases\r\n\r\nCo-authored-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f1412f5bbf7bcdc8b420ec61201d2beddde9ed2f"
+        },
+        {
+          "sha": "a103dbc36fe8c1a1fd589f7674677291f9d995ce",
+          "author_date": "2020-06-30T13:49:17Z",
+          "message": "test: add corruption_checker test",
+          "html_url": "https://github.com/codenotary/immudb/commit/a103dbc36fe8c1a1fd589f7674677291f9d995ce"
+        },
+        {
+          "sha": "f97ec0202344af662be73a9e0ac4e0f70c717749",
+          "author_date": "2020-06-30T15:48:45Z",
+          "message": "chore: add options to tuning corruption checking frequency, iteration and single iteration",
+          "html_url": "https://github.com/codenotary/immudb/commit/f97ec0202344af662be73a9e0ac4e0f70c717749"
+        },
+        {
+          "sha": "5c7c48306321383cd53ee8c610923a24bc641c34",
+          "author_date": "2020-06-30T12:13:06Z",
+          "message": "chore: enhance immudb server messages during start",
+          "html_url": "https://github.com/codenotary/immudb/commit/5c7c48306321383cd53ee8c610923a24bc641c34"
+        },
+        {
+          "sha": "fb39bfe953c445bd5ef9c5fc719ab4e21623fe03",
+          "author_date": "2020-06-30T12:45:00Z",
+          "message": "chore: capitalize immudb stop log message for consistency reasons",
+          "html_url": "https://github.com/codenotary/immudb/commit/fb39bfe953c445bd5ef9c5fc719ab4e21623fe03"
+        },
+        {
+          "sha": "155cf485e3814b54fd0fb7c256e0a1e5f4afb667",
+          "author_date": "2020-06-30T13:40:59Z",
+          "message": "chore: log immudb user messages during start to file if a logfile is specified",
+          "html_url": "https://github.com/codenotary/immudb/commit/155cf485e3814b54fd0fb7c256e0a1e5f4afb667"
+        },
+        {
+          "sha": "0ac7ddadbd3e94499e4a821e5a7da7d7717ea38e",
+          "author_date": "2020-07-01T08:40:49Z",
+          "message": "fix: use the correct server logger and use a dedicated logger with warning level for the db store",
+          "html_url": "https://github.com/codenotary/immudb/commit/0ac7ddadbd3e94499e4a821e5a7da7d7717ea38e"
+        },
+        {
+          "sha": "278faa72f4532f1263cedacd42e42f10230f2800",
+          "author_date": "2020-07-01T11:57:26Z",
+          "message": "fix: use dedicated logger for store",
+          "html_url": "https://github.com/codenotary/immudb/commit/278faa72f4532f1263cedacd42e42f10230f2800"
+        },
+        {
+          "sha": "069ccc9f5f5f46e39dce7e3156200e64e2d298dd",
+          "author_date": "2020-07-01T12:12:38Z",
+          "message": "chore: use debug instead of info for some log messages that are not relevant to the user",
+          "html_url": "https://github.com/codenotary/immudb/commit/069ccc9f5f5f46e39dce7e3156200e64e2d298dd"
+        },
+        {
+          "sha": "61084d0d50b6eefd7e42dc76c014bbc7faa18b21",
+          "author_date": "2020-07-02T08:02:03Z",
+          "message": "fix: fix compilation error in corruption checker test",
+          "html_url": "https://github.com/codenotary/immudb/commit/61084d0d50b6eefd7e42dc76c014bbc7faa18b21"
+        },
+        {
+          "sha": "c92ce374769d840e3f46cd8c7436b6b179a357f6",
+          "author_date": "2020-07-01T13:10:08Z",
+          "message": "fix: race condition in token eviction",
+          "html_url": "https://github.com/codenotary/immudb/commit/c92ce374769d840e3f46cd8c7436b6b179a357f6"
+        },
+        {
+          "sha": "092a9a927a040012fb8f031e0b379f37a2144284",
+          "author_date": "2020-07-03T10:09:14Z",
+          "message": "fix: skip loading databases from disk when in memory is requested",
+          "html_url": "https://github.com/codenotary/immudb/commit/092a9a927a040012fb8f031e0b379f37a2144284"
+        },
+        {
+          "sha": "bab1dd35755b6b50266ef348e727afce7b1000d6",
+          "author_date": "2020-07-01T13:04:13Z",
+          "message": "test: add homedir tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/bab1dd35755b6b50266ef348e727afce7b1000d6"
+        },
+        {
+          "sha": "fe3bbf2b0ce6bc45a0daaa3d4bd483611a1bba4e",
+          "author_date": "2020-07-01T14:30:37Z",
+          "message": "test: add timestamp tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/fe3bbf2b0ce6bc45a0daaa3d4bd483611a1bba4e"
+        },
+        {
+          "sha": "a74aaac64c9bd9435e3c93ef69cbef3d8dc8f9ff",
+          "author_date": "2020-07-01T15:35:18Z",
+          "message": "test: add batch_request tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/a74aaac64c9bd9435e3c93ef69cbef3d8dc8f9ff"
+        },
+        {
+          "sha": "10cb1f32f1af45d8a2a693184364e68096e53386",
+          "author_date": "2020-07-01T15:47:49Z",
+          "message": "test: add timestamp service test",
+          "html_url": "https://github.com/codenotary/immudb/commit/10cb1f32f1af45d8a2a693184364e68096e53386"
+        },
+        {
+          "sha": "cc0202d0d4c41e870a7bd80dd354faf180386baf",
+          "author_date": "2020-07-02T09:29:55Z",
+          "message": "test(pkg/client): add root_service test",
+          "html_url": "https://github.com/codenotary/immudb/commit/cc0202d0d4c41e870a7bd80dd354faf180386baf"
+        },
+        {
+          "sha": "009e5876ca759f441654f6483407f4b4633ab67e",
+          "author_date": "2020-07-02T10:34:16Z",
+          "message": "test(pkg/client/cache): add file and history_file cache tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/009e5876ca759f441654f6483407f4b4633ab67e"
+        },
+        {
+          "sha": "77768f19182f2c7f80038a54dd2fc736ecf5cf17",
+          "author_date": "2020-07-02T17:19:57Z",
+          "message": "chore: add auditor single run mode",
+          "html_url": "https://github.com/codenotary/immudb/commit/77768f19182f2c7f80038a54dd2fc736ecf5cf17"
+        },
+        {
+          "sha": "f75f32a4301ed6d68512914ac99aeb9c84d1d11e",
+          "author_date": "2020-07-02T17:20:08Z",
+          "message": "test: add auditor tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/f75f32a4301ed6d68512914ac99aeb9c84d1d11e"
+        },
+        {
+          "sha": "982c2ce1d8fcfb87d46a3bf469112df651e52711",
+          "author_date": "2020-07-03T11:08:52Z",
+          "message": "fix(pkg/store): fix count method using a proper NewKeyIterator",
+          "html_url": "https://github.com/codenotary/immudb/commit/982c2ce1d8fcfb87d46a3bf469112df651e52711"
+        },
+        {
+          "sha": "598d1565918cae9b699506e0f28df27dbc968ca8",
+          "author_date": "2020-07-03T11:09:53Z",
+          "message": "test: add client sdk tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/598d1565918cae9b699506e0f28df27dbc968ca8"
+        },
+        {
+          "sha": "d711e5b1b92ac181b8b688e1a2ebc3cf3813274c",
+          "author_date": "2020-07-02T07:50:12Z",
+          "message": "chore: add unit tests for zip and tar",
+          "html_url": "https://github.com/codenotary/immudb/commit/d711e5b1b92ac181b8b688e1a2ebc3cf3813274c"
+        },
+        {
+          "sha": "ab01705d0745f25a772931e3ff5445580a1820ee",
+          "author_date": "2020-07-02T13:32:27Z",
+          "message": "test(pkg/fs): add copy_test and extract duplicated test code into functions",
+          "html_url": "https://github.com/codenotary/immudb/commit/ab01705d0745f25a772931e3ff5445580a1820ee"
+        },
+        {
+          "sha": "afe9cd72d67fdb913473dd5c086680dc459cd217",
+          "author_date": "2020-07-03T13:18:54Z",
+          "message": "doc: update README",
+          "html_url": "https://github.com/codenotary/immudb/commit/afe9cd72d67fdb913473dd5c086680dc459cd217"
+        },
+        {
+          "sha": "21dbd84eb17d2f57a49a5f948ff2667a89774d81",
+          "author_date": "2020-07-01T15:51:56Z",
+          "message": "tests(pkg/server): consinstency checker\noptions\nserver",
+          "html_url": "https://github.com/codenotary/immudb/commit/21dbd84eb17d2f57a49a5f948ff2667a89774d81"
+        },
+        {
+          "sha": "a2394cc528918ba889b2264c721af7dcda424e56",
+          "author_date": "2020-07-01T15:58:21Z",
+          "message": "fix(pkg/server/server): change user pass , old password check",
+          "html_url": "https://github.com/codenotary/immudb/commit/a2394cc528918ba889b2264c721af7dcda424e56"
+        },
+        {
+          "sha": "194770c25a645c536938c0b1cfa03864f3347f7e",
+          "author_date": "2020-07-01T16:19:36Z",
+          "message": "tests(pkg/server): mtlsoptions",
+          "html_url": "https://github.com/codenotary/immudb/commit/194770c25a645c536938c0b1cfa03864f3347f7e"
+        },
+        {
+          "sha": "7d2bc241b48fcad894caff3ba147ea2fa3067a49",
+          "author_date": "2020-07-02T12:35:01Z",
+          "message": "tests(pkg/server): uuid, pid",
+          "html_url": "https://github.com/codenotary/immudb/commit/7d2bc241b48fcad894caff3ba147ea2fa3067a49"
+        },
+        {
+          "sha": "ee4de2f58de68acda124e79e0d50653bc4c1316b",
+          "author_date": "2020-07-02T14:30:21Z",
+          "message": "tests(pkg/server):  add server tests. refactor database close",
+          "html_url": "https://github.com/codenotary/immudb/commit/ee4de2f58de68acda124e79e0d50653bc4c1316b"
+        },
+        {
+          "sha": "1d704df32ca6f8389bf7272c590df7c1994c931c",
+          "author_date": "2020-07-02T14:39:31Z",
+          "message": "chore: fix test",
+          "html_url": "https://github.com/codenotary/immudb/commit/1d704df32ca6f8389bf7272c590df7c1994c931c"
+        },
+        {
+          "sha": "6f71bc10d6b81bb568cc3bce695e44c20283db72",
+          "author_date": "2020-07-02T15:08:03Z",
+          "message": "test(pkg/server/corruption_checker): corruption checker tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/6f71bc10d6b81bb568cc3bce695e44c20283db72"
+        },
+        {
+          "sha": "75a2db1233684eb3e1621edc288c7446bbf12d91",
+          "author_date": "2020-07-02T17:29:59Z",
+          "message": "tests(pkg/auth): user , tokens test",
+          "html_url": "https://github.com/codenotary/immudb/commit/75a2db1233684eb3e1621edc288c7446bbf12d91"
+        },
+        {
+          "sha": "fcdf005215aeb8885fef538fba1b2fbccb966e62",
+          "author_date": "2020-07-03T11:28:20Z",
+          "message": "tests(pkg/auth): clientinterceptor, passwords, permissions, tokenkeys",
+          "html_url": "https://github.com/codenotary/immudb/commit/fcdf005215aeb8885fef538fba1b2fbccb966e62"
+        },
+        {
+          "sha": "c4314f8fc2ac03993a1dd02ca78baf64752cedc9",
+          "author_date": "2020-07-03T12:16:01Z",
+          "message": "chore: change insert user to use safeset instead of set",
+          "html_url": "https://github.com/codenotary/immudb/commit/c4314f8fc2ac03993a1dd02ca78baf64752cedc9"
+        },
+        {
+          "sha": "f2b3337c55fbe155f7cded50b096ebac4db20c73",
+          "author_date": "2020-07-03T12:27:02Z",
+          "message": "chore: remove sleep from tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/f2b3337c55fbe155f7cded50b096ebac4db20c73"
+        },
+        {
+          "sha": "2f9856715240e208427c5279554723c449cd49d1",
+          "author_date": "2020-07-05T13:48:15Z",
+          "message": "chore(pkg/server): make DevMode default false and cleanup call to action message shwon right after immudb start",
+          "html_url": "https://github.com/codenotary/immudb/commit/2f9856715240e208427c5279554723c449cd49d1"
+        },
+        {
+          "sha": "cbc8301db057d5af35f4bb9522e7b3a5d341eb68",
+          "author_date": "2020-07-05T14:13:01Z",
+          "message": "fix: if custom port is <= 0 use default port for both immudb and immugw",
+          "html_url": "https://github.com/codenotary/immudb/commit/cbc8301db057d5af35f4bb9522e7b3a5d341eb68"
+        },
+        {
+          "sha": "485e33a938dd2ef1b7044beed397e9b50baa5758",
+          "author_date": "2020-07-05T15:07:04Z",
+          "message": "chore: use 0.0.0.0 instead of 127.0.0.1 as default address for both immudb and immugw",
+          "html_url": "https://github.com/codenotary/immudb/commit/485e33a938dd2ef1b7044beed397e9b50baa5758"
+        },
+        {
+          "sha": "d28f8c51915fd7f4b214a66a8cf9b7aee6bc5b8b",
+          "author_date": "2020-07-04T11:27:49Z",
+          "message": "test(pkg/gw): add and replace unit tests for all immu gateway handlers",
+          "html_url": "https://github.com/codenotary/immudb/commit/d28f8c51915fd7f4b214a66a8cf9b7aee6bc5b8b"
+        },
+        {
+          "sha": "db468fd1b9d7a80da5bfad134d9bb4239735de97",
+          "author_date": "2020-07-04T13:07:25Z",
+          "message": "test(pkg/gw): add metrics test",
+          "html_url": "https://github.com/codenotary/immudb/commit/db468fd1b9d7a80da5bfad134d9bb4239735de97"
+        },
+        {
+          "sha": "126fae1089fd70bb7a6ea81eccaceb15365f706f",
+          "author_date": "2020-07-05T10:19:15Z",
+          "message": "test(pkg/gw): add options test",
+          "html_url": "https://github.com/codenotary/immudb/commit/126fae1089fd70bb7a6ea81eccaceb15365f706f"
+        },
+        {
+          "sha": "1235a82c3fc47378c58977516c98933e03d2e117",
+          "author_date": "2020-07-05T10:34:08Z",
+          "message": "test(pkg/gw): add types test",
+          "html_url": "https://github.com/codenotary/immudb/commit/1235a82c3fc47378c58977516c98933e03d2e117"
+        },
+        {
+          "sha": "5945472d14eef5e9542eda4cab53d7b672d55c90",
+          "author_date": "2020-07-05T19:14:41Z",
+          "message": "test(pkg/gw): add service test",
+          "html_url": "https://github.com/codenotary/immudb/commit/5945472d14eef5e9542eda4cab53d7b672d55c90"
+        },
+        {
+          "sha": "843b64324b23614076034d5d667dc5a15c2d4a92",
+          "author_date": "2020-07-06T10:09:26Z",
+          "message": "test(pkg/gw): fix options tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/843b64324b23614076034d5d667dc5a15c2d4a92"
+        },
+        {
+          "sha": "5034c4a268430baca3608605c8b415df0a211010",
+          "author_date": "2020-07-06T17:25:44Z",
+          "message": "feat(cmd/immutest): allow immutest to run on remote server",
+          "html_url": "https://github.com/codenotary/immudb/commit/5034c4a268430baca3608605c8b415df0a211010"
+        },
+        {
+          "sha": "f55cdf176701cf97b692335a8a2c1d915cc94d4f",
+          "author_date": "2020-07-07T14:52:04Z",
+          "message": "test(pkg/server/servertest): add server test utils",
+          "html_url": "https://github.com/codenotary/immudb/commit/f55cdf176701cf97b692335a8a2c1d915cc94d4f"
+        },
+        {
+          "sha": "a4477e2e403ab35fc9392e0a3a2d8436a5806901",
+          "author_date": "2020-07-03T21:29:58Z",
+          "message": "fix(pkg/client): inherit dial options that came from constructor",
+          "html_url": "https://github.com/codenotary/immudb/commit/a4477e2e403ab35fc9392e0a3a2d8436a5806901"
+        },
+        {
+          "sha": "f65837859256b91de8ed2e9e87d5650b16355996",
+          "author_date": "2020-07-03T21:34:09Z",
+          "message": "chore(cmd/immuadmin/command): move options as dependency of commandline struct",
+          "html_url": "https://github.com/codenotary/immudb/commit/f65837859256b91de8ed2e9e87d5650b16355996"
+        },
+        {
+          "sha": "a4dcd40c23ec6c054198c0d6e46760b847bb8d4b",
+          "author_date": "2020-07-06T11:51:35Z",
+          "message": "refactor(cmd/immuadmin/command): remove useless argument in Init and improve naming conventions",
+          "html_url": "https://github.com/codenotary/immudb/commit/a4dcd40c23ec6c054198c0d6e46760b847bb8d4b"
+        },
+        {
+          "sha": "7e97e47ee16bbf23ce25541f4d86cc6e6b578281",
+          "author_date": "2020-07-06T11:53:10Z",
+          "message": "feat(cmd/helper): add PrintfColorW to decouple writer capabilities",
+          "html_url": "https://github.com/codenotary/immudb/commit/7e97e47ee16bbf23ce25541f4d86cc6e6b578281"
+        },
+        {
+          "sha": "5f0663d2faba9a47527849bc87b97cbd8c219425",
+          "author_date": "2020-07-06T11:56:30Z",
+          "message": "refactor(cmd/immuadmin/command): move checkLoggedInAndConnect, connect, disconnect from server to login file",
+          "html_url": "https://github.com/codenotary/immudb/commit/5f0663d2faba9a47527849bc87b97cbd8c219425"
+        },
+        {
+          "sha": "288579bf5af6158f8bec7dd989d42a09bc109008",
+          "author_date": "2020-07-06T11:57:55Z",
+          "message": "refactor(cmd/immuadmin/command): using c.PrintfColorW instead c.PrintfColor to increase cobra.cmd integration for tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/288579bf5af6158f8bec7dd989d42a09bc109008"
+        },
+        {
+          "sha": "db6352f83cf54a96456ebe987a087ee92a572cbb",
+          "author_date": "2020-07-06T13:32:04Z",
+          "message": "test(cmd/immuadmin/command): add cmd test",
+          "html_url": "https://github.com/codenotary/immudb/commit/db6352f83cf54a96456ebe987a087ee92a572cbb"
+        },
+        {
+          "sha": "5674e5cf33f2a599a24fc8bdf8a1942ace835baf",
+          "author_date": "2020-07-06T13:32:26Z",
+          "message": "test(cmd/immuadmin/command): add init test",
+          "html_url": "https://github.com/codenotary/immudb/commit/5674e5cf33f2a599a24fc8bdf8a1942ace835baf"
+        },
+        {
+          "sha": "8c8c37d97b34fcd7eb1bf3630dada3c979042d5c",
+          "author_date": "2020-07-06T13:32:38Z",
+          "message": "test(cmd/immuadmin/command): add login test",
+          "html_url": "https://github.com/codenotary/immudb/commit/8c8c37d97b34fcd7eb1bf3630dada3c979042d5c"
+        },
+        {
+          "sha": "dfcc5143ad45aebc686fb7950cfd2d7f32f56063",
+          "author_date": "2020-07-07T09:47:50Z",
+          "message": "chore: using cobra command std out",
+          "html_url": "https://github.com/codenotary/immudb/commit/dfcc5143ad45aebc686fb7950cfd2d7f32f56063"
+        },
+        {
+          "sha": "3a87287b465914a058cde9b7bd6bab8dbac90fc9",
+          "author_date": "2020-07-07T09:48:44Z",
+          "message": "test(cmd/immuadmin/command): add login test",
+          "html_url": "https://github.com/codenotary/immudb/commit/3a87287b465914a058cde9b7bd6bab8dbac90fc9"
+        },
+        {
+          "sha": "2f08146ec1faccaadd4a90b8847c6e0cb2a7cdbe",
+          "author_date": "2020-07-07T09:50:06Z",
+          "message": "test: remove useless helpers",
+          "html_url": "https://github.com/codenotary/immudb/commit/2f08146ec1faccaadd4a90b8847c6e0cb2a7cdbe"
+        },
+        {
+          "sha": "585cdc0e7531651f150a84317e9dd729902bf977",
+          "author_date": "2020-07-07T09:50:57Z",
+          "message": "chore(cmd/immuadmin/command): remove useless auth check in print tree command",
+          "html_url": "https://github.com/codenotary/immudb/commit/585cdc0e7531651f150a84317e9dd729902bf977"
+        },
+        {
+          "sha": "a318e4b5e5a7bd5dbeccd9cfb8a26a611d845972",
+          "author_date": "2020-07-07T09:51:46Z",
+          "message": "test(cmd/immuadmin/command): add print_tree test",
+          "html_url": "https://github.com/codenotary/immudb/commit/a318e4b5e5a7bd5dbeccd9cfb8a26a611d845972"
+        },
+        {
+          "sha": "cb3ebf31ee12fecee5fe30c34646330448a36c50",
+          "author_date": "2020-07-08T07:01:18Z",
+          "message": "chore: add homedir service",
+          "html_url": "https://github.com/codenotary/immudb/commit/cb3ebf31ee12fecee5fe30c34646330448a36c50"
+        },
+        {
+          "sha": "0de078abc60ca31ec03cab5022927e944e3b4591",
+          "author_date": "2020-07-08T07:04:09Z",
+          "message": "chore: rewrite tests in order to use pkg/server/servertest",
+          "html_url": "https://github.com/codenotary/immudb/commit/0de078abc60ca31ec03cab5022927e944e3b4591"
+        },
+        {
+          "sha": "e09be1393f06052edf5fc975123f821cc5291b4b",
+          "author_date": "2020-07-08T07:23:07Z",
+          "message": "chore(cmd/immuclient/immuc): inject homedir service as dependency",
+          "html_url": "https://github.com/codenotary/immudb/commit/e09be1393f06052edf5fc975123f821cc5291b4b"
+        },
+        {
+          "sha": "68d2fcf4bf13cb9a426af7b886dc914dea6dcc35",
+          "author_date": "2020-07-08T07:23:54Z",
+          "message": "chore(cmd/immutest/command): inject homedir service as dependency",
+          "html_url": "https://github.com/codenotary/immudb/commit/68d2fcf4bf13cb9a426af7b886dc914dea6dcc35"
+        },
+        {
+          "sha": "a00ee4db41f21541f7eacee3791661ca56724090",
+          "author_date": "2020-07-08T07:31:32Z",
+          "message": "test(pkg/client): rewrite homedir service tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/a00ee4db41f21541f7eacee3791661ca56724090"
+        },
+        {
+          "sha": "1e37e8f377e34a6088648c317680ab47505d8e6c",
+          "author_date": "2020-07-08T07:46:39Z",
+          "message": "test(pkg/client): add homedir service dependency",
+          "html_url": "https://github.com/codenotary/immudb/commit/1e37e8f377e34a6088648c317680ab47505d8e6c"
+        },
+        {
+          "sha": "4d469b0ae46f61750c3a8dfed17ea573a4f323e1",
+          "author_date": "2020-07-06T23:38:44Z",
+          "message": "test(pkg/gw): increase coverage in handlers test by abstracting away and mocking gRPC runtime, json and ImmuClient",
+          "html_url": "https://github.com/codenotary/immudb/commit/4d469b0ae46f61750c3a8dfed17ea573a4f323e1"
+        },
+        {
+          "sha": "6e92abb213b6bad737cd34fdf76169d7ba239bfc",
+          "author_date": "2020-07-07T22:59:41Z",
+          "message": "test: move immuclient mock to new clienttest package, move json abstraction to new json package",
+          "html_url": "https://github.com/codenotary/immudb/commit/6e92abb213b6bad737cd34fdf76169d7ba239bfc"
+        },
+        {
+          "sha": "73489ae6b5feb63e7960f8cbe81df95de10128bd",
+          "author_date": "2020-07-07T23:08:04Z",
+          "message": "test: move clienttest package and folder inside the client folder",
+          "html_url": "https://github.com/codenotary/immudb/commit/73489ae6b5feb63e7960f8cbe81df95de10128bd"
+        },
+        {
+          "sha": "edc7780a3dc40e2dcd52cd9e3d02c63475152a58",
+          "author_date": "2020-07-08T11:27:55Z",
+          "message": "test: add in memory cache for client roots",
+          "html_url": "https://github.com/codenotary/immudb/commit/edc7780a3dc40e2dcd52cd9e3d02c63475152a58"
+        },
+        {
+          "sha": "a624a913d2f199d9e8ba39e9b10fe069695fbd9d",
+          "author_date": "2020-07-08T11:29:02Z",
+          "message": "test(pkg/gw): enhance immugw handlers tests to reuse buffconn server and use in memory file cache",
+          "html_url": "https://github.com/codenotary/immudb/commit/a624a913d2f199d9e8ba39e9b10fe069695fbd9d"
+        },
+        {
+          "sha": "8fcd25676af883edb8f9bffa9e598ce44509bf40",
+          "author_date": "2020-07-08T12:16:56Z",
+          "message": "test(pkg/gw): enhance immugw metrics code coverage by using JSON abstraction",
+          "html_url": "https://github.com/codenotary/immudb/commit/8fcd25676af883edb8f9bffa9e598ce44509bf40"
+        },
+        {
+          "sha": "db0c31b449d65f06a108261c25972178c5b2b013",
+          "author_date": "2020-07-09T14:24:59Z",
+          "message": "refactor: add immuadmin services interfaces and terminal helper",
+          "html_url": "https://github.com/codenotary/immudb/commit/db0c31b449d65f06a108261c25972178c5b2b013"
+        },
+        {
+          "sha": "60e3ac89c7f84b32394e813d81587ed867698c11",
+          "author_date": "2020-07-09T14:38:01Z",
+          "message": "chore: add codecov windows and freebsd ignore paths",
+          "html_url": "https://github.com/codenotary/immudb/commit/60e3ac89c7f84b32394e813d81587ed867698c11"
+        },
+        {
+          "sha": "a5a48dc487c9c422b0dbcce38ef97704360eb481",
+          "author_date": "2020-07-08T23:17:33Z",
+          "message": "test: enhance code coverage for immugw command",
+          "html_url": "https://github.com/codenotary/immudb/commit/a5a48dc487c9c422b0dbcce38ef97704360eb481"
+        },
+        {
+          "sha": "2a8889c89375c59c1fc8d9581b655593bc6f5f4e",
+          "author_date": "2020-07-08T23:21:58Z",
+          "message": "chore: fix typo in UninstallManPages function name",
+          "html_url": "https://github.com/codenotary/immudb/commit/2a8889c89375c59c1fc8d9581b655593bc6f5f4e"
+        },
+        {
+          "sha": "76ebf2bc08cff23e1565e8b45044eddcc35a9e00",
+          "author_date": "2020-07-09T10:24:12Z",
+          "message": "fix: fix immugw failing to start with nil pointer dereference since gRPC dial options are inherited (bug was introduced in commit a4477e2e403ab35fc9392e0a3a2d8436a5806901)",
+          "html_url": "https://github.com/codenotary/immudb/commit/76ebf2bc08cff23e1565e8b45044eddcc35a9e00"
+        },
+        {
+          "sha": "9f965bc75526e30457c150eac9ede38d210cab1b",
+          "author_date": "2020-07-09T15:02:13Z",
+          "message": "test(cmd/immugw): set logfile and mtls options during immugw cmd test",
+          "html_url": "https://github.com/codenotary/immudb/commit/9f965bc75526e30457c150eac9ede38d210cab1b"
+        },
+        {
+          "sha": "72efc3c2585dd2622a9900df260699c1e764801c",
+          "author_date": "2020-07-09T15:31:14Z",
+          "message": "test: add unit tests for immudb command - intall and uninstall man pages",
+          "html_url": "https://github.com/codenotary/immudb/commit/72efc3c2585dd2622a9900df260699c1e764801c"
+        },
+        {
+          "sha": "f632aa78eb63d535d010874271156ca79a216e74",
+          "author_date": "2020-07-07T15:07:08Z",
+          "message": "fix: userlist returns wrong message when logged in as immudb with single database",
+          "html_url": "https://github.com/codenotary/immudb/commit/f632aa78eb63d535d010874271156ca79a216e74"
+        },
+        {
+          "sha": "4a200511aa776385a0664b2ca339bf3c60b6481b",
+          "author_date": "2020-07-07T15:12:12Z",
+          "message": "test(cmd/immuclient): immuclient tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/4a200511aa776385a0664b2ca339bf3c60b6481b"
+        },
+        {
+          "sha": "34897e727a33dcbfc674ba89b9a0c7aeb370f789",
+          "author_date": "2020-07-08T06:28:50Z",
+          "message": "test(cmd/client): user create, user permission",
+          "html_url": "https://github.com/codenotary/immudb/commit/34897e727a33dcbfc674ba89b9a0c7aeb370f789"
+        },
+        {
+          "sha": "b5b392983750238d5b457f3a7e801df0faf12848",
+          "author_date": "2020-07-08T22:16:57Z",
+          "message": "test(pkg/client/immuc): immuc tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/b5b392983750238d5b457f3a7e801df0faf12848"
+        },
+        {
+          "sha": "7663aab3ad03e945e6377ab8d6b6fc05dd982975",
+          "author_date": "2020-07-09T14:46:58Z",
+          "message": "test(pkg/client/immuc): immuc tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/7663aab3ad03e945e6377ab8d6b6fc05dd982975"
+        },
+        {
+          "sha": "038bfa005009d0a535eefdba4749044f84bc6aa6",
+          "author_date": "2020-07-10T08:06:59Z",
+          "message": "chore: add coveralls.io stage",
+          "html_url": "https://github.com/codenotary/immudb/commit/038bfa005009d0a535eefdba4749044f84bc6aa6"
+        },
+        {
+          "sha": "039ef1c275e415bdc427796d8563221e4d9e19b4",
+          "author_date": "2020-07-09T16:13:08Z",
+          "message": "chore: fix codecov ignore paths",
+          "html_url": "https://github.com/codenotary/immudb/commit/039ef1c275e415bdc427796d8563221e4d9e19b4"
+        },
+        {
+          "sha": "fde63206838cdcd8e6a75d3848cfdb6aa9ffd703",
+          "author_date": "2020-07-09T17:56:53Z",
+          "message": "refactor: decouple manpage methods in a dedicated service",
+          "html_url": "https://github.com/codenotary/immudb/commit/fde63206838cdcd8e6a75d3848cfdb6aa9ffd703"
+        },
+        {
+          "sha": "a69c5d54b43524c9559a77c4f878d23e5fa3fb37",
+          "author_date": "2020-07-09T18:58:25Z",
+          "message": "test(cmd/immuadmin/command/service): add sservice_unix unit tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/a69c5d54b43524c9559a77c4f878d23e5fa3fb37"
+        },
+        {
+          "sha": "91ff2c6d142bc41450dab26305a14a328ca36e90",
+          "author_date": "2020-07-09T19:08:51Z",
+          "message": "chore: remove os wrapper from codecov.yml",
+          "html_url": "https://github.com/codenotary/immudb/commit/91ff2c6d142bc41450dab26305a14a328ca36e90"
+        },
+        {
+          "sha": "78b5a23f7689570c9d55f275217c3e3d71b8471d",
+          "author_date": "2020-07-10T12:56:12Z",
+          "message": "chore(cmd/immuadmin/command): move command line and his command helper method in a single file",
+          "html_url": "https://github.com/codenotary/immudb/commit/78b5a23f7689570c9d55f275217c3e3d71b8471d"
+        },
+        {
+          "sha": "00017a552dd6df96624bfddeb7766db36f834a70",
+          "author_date": "2020-07-10T12:57:25Z",
+          "message": "test: add commandline test helper",
+          "html_url": "https://github.com/codenotary/immudb/commit/00017a552dd6df96624bfddeb7766db36f834a70"
+        },
+        {
+          "sha": "4ac31fbbfc3450c3beed79c181a9fa3cf2dedaec",
+          "author_date": "2020-07-10T13:00:28Z",
+          "message": "test: improve immuadmin tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/4ac31fbbfc3450c3beed79c181a9fa3cf2dedaec"
+        },
+        {
+          "sha": "4ae7733ac80aaca64ff120fb559aa00ea8489a5b",
+          "author_date": "2020-07-10T13:04:17Z",
+          "message": "test: add serverconfig test",
+          "html_url": "https://github.com/codenotary/immudb/commit/4ae7733ac80aaca64ff120fb559aa00ea8489a5b"
+        },
+        {
+          "sha": "472299ca5082d5f6b5e1afe81d2ed200e7a22a89",
+          "author_date": "2020-07-10T14:15:02Z",
+          "message": "test: fix command line connect and disconnect tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/472299ca5082d5f6b5e1afe81d2ed200e7a22a89"
+        },
+        {
+          "sha": "9079b996b870eeb2407dc391a9f67559526768be",
+          "author_date": "2020-07-10T15:59:18Z",
+          "message": "test: fix immuadmin tests multi os support",
+          "html_url": "https://github.com/codenotary/immudb/commit/9079b996b870eeb2407dc391a9f67559526768be"
+        },
+        {
+          "sha": "3776f3d9b7668ecc6f5a3962a4449b156f099867",
+          "author_date": "2020-07-10T16:04:28Z",
+          "message": "test: skip test package from coverage report",
+          "html_url": "https://github.com/codenotary/immudb/commit/3776f3d9b7668ecc6f5a3962a4449b156f099867"
+        },
+        {
+          "sha": "57525938862ac0c8a6ac835292cd39f2d649d26f",
+          "author_date": "2020-07-10T17:35:19Z",
+          "message": "chore: fix go test cover coverall",
+          "html_url": "https://github.com/codenotary/immudb/commit/57525938862ac0c8a6ac835292cd39f2d649d26f"
+        },
+        {
+          "sha": "3aa691233a08f26a0e1f7a7329e992dca125e968",
+          "author_date": "2020-07-10T15:52:39Z",
+          "message": "test: add unit tests for immutest CLI",
+          "html_url": "https://github.com/codenotary/immudb/commit/3aa691233a08f26a0e1f7a7329e992dca125e968"
+        },
+        {
+          "sha": "3d500ca6f3bc01a2417e21cde394be5edd3c85b3",
+          "author_date": "2020-07-13T10:41:31Z",
+          "message": "test: add homedir mock in clienttest and reuse it in all tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/3d500ca6f3bc01a2417e21cde394be5edd3c85b3"
+        },
+        {
+          "sha": "e811acde001c64cc5b15eca2441cd459d534fe55",
+          "author_date": "2020-07-13T12:05:24Z",
+          "message": "test: extract terminalReaderMock to clienttest package and reuse it in all tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/e811acde001c64cc5b15eca2441cd459d534fe55"
+        },
+        {
+          "sha": "1fb2351b3ea4aa32ed6373256d689e5db968055e",
+          "author_date": "2020-07-13T12:22:27Z",
+          "message": "test: extract passwordReaderMock to clienttest package and reuse it in all tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/1fb2351b3ea4aa32ed6373256d689e5db968055e"
+        },
+        {
+          "sha": "bb3e683355db024dd23a6441150d75b9b047a335",
+          "author_date": "2020-07-13T14:45:55Z",
+          "message": "test(cmd/immuclient/immuc): split TestHealthCheck in 2 tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/bb3e683355db024dd23a6441150d75b9b047a335"
+        },
+        {
+          "sha": "928bd4b48b1d8f71d912c1bfe262da420074bbed",
+          "author_date": "2020-07-13T15:03:00Z",
+          "message": "test(cmd/immuadmin/command): add stats status test",
+          "html_url": "https://github.com/codenotary/immudb/commit/928bd4b48b1d8f71d912c1bfe262da420074bbed"
+        },
+        {
+          "sha": "1c502d56671d18c3be3a881b415f920ebd4e1076",
+          "author_date": "2020-07-13T20:47:44Z",
+          "message": "test: add unit tests for version and man generate commands",
+          "html_url": "https://github.com/codenotary/immudb/commit/1c502d56671d18c3be3a881b415f920ebd4e1076"
+        },
+        {
+          "sha": "1e39ea0f63650a8cde71a11472a85819f3ba523a",
+          "author_date": "2020-07-14T08:53:11Z",
+          "message": "test(cmd/immuadmin/command/stats): add stats raw and text tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/1e39ea0f63650a8cde71a11472a85819f3ba523a"
+        },
+        {
+          "sha": "447f0cd8d36b182252cdcbe68c6f661b682bc2f7",
+          "author_date": "2020-07-14T10:08:15Z",
+          "message": "test(cmd/immuadmin/command/stats): add stats unit tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/447f0cd8d36b182252cdcbe68c6f661b682bc2f7"
+        },
+        {
+          "sha": "7643328e0d0603c530ba530cf703dde70f2896a0",
+          "author_date": "2020-07-14T16:41:54Z",
+          "message": "chore: remove tests from windows CI",
+          "html_url": "https://github.com/codenotary/immudb/commit/7643328e0d0603c530ba530cf703dde70f2896a0"
+        },
+        {
+          "sha": "e55881b8eea34c009dd40d73ef5cc9f5c42fc447",
+          "author_date": "2020-07-14T16:42:29Z",
+          "message": "chore: add go-acc to calculate code coverage and fix go version to 1.13",
+          "html_url": "https://github.com/codenotary/immudb/commit/e55881b8eea34c009dd40d73ef5cc9f5c42fc447"
+        },
+        {
+          "sha": "8de7b73af061f03b516091717dff6b1355f136bc",
+          "author_date": "2020-07-14T16:42:52Z",
+          "message": "chore: add failfast option in test command",
+          "html_url": "https://github.com/codenotary/immudb/commit/8de7b73af061f03b516091717dff6b1355f136bc"
+        },
+        {
+          "sha": "79f56419538d73fc2687cdc3694627eeaae402d4",
+          "author_date": "2020-07-10T14:45:41Z",
+          "message": "test(cmd/immuclient/cli): cli tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/79f56419538d73fc2687cdc3694627eeaae402d4"
+        },
+        {
+          "sha": "1dd0f633a2328408114da573c9d95e41e117e612",
+          "author_date": "2020-07-10T16:25:32Z",
+          "message": "test(cmd/immuclient/cli): improve cli tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/1dd0f633a2328408114da573c9d95e41e117e612"
+        },
+        {
+          "sha": "113819df6de3f9f49f107ab8d88ad6c0d473266d",
+          "author_date": "2020-07-12T23:04:58Z",
+          "message": "test(cmd/immuclient/command): immclient command tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/113819df6de3f9f49f107ab8d88ad6c0d473266d"
+        },
+        {
+          "sha": "6dbd7c92463d95e2b9acff18e82e411f34e4dcd4",
+          "author_date": "2020-07-13T09:32:38Z",
+          "message": "test(cmd/immuclient/command): add more immuclient command tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/6dbd7c92463d95e2b9acff18e82e411f34e4dcd4"
+        },
+        {
+          "sha": "b7c8edeb4993fff45d595f1eb4644502fb78d54a",
+          "author_date": "2020-07-13T13:14:02Z",
+          "message": "test(cmd/immuclient/command): immuclient command test",
+          "html_url": "https://github.com/codenotary/immudb/commit/b7c8edeb4993fff45d595f1eb4644502fb78d54a"
+        },
+        {
+          "sha": "512e74838c05821f997bcc1f008bbfb43e0fe297",
+          "author_date": "2020-07-13T16:22:30Z",
+          "message": "chore: refactor immuclient test, place duplicated code in one place",
+          "html_url": "https://github.com/codenotary/immudb/commit/512e74838c05821f997bcc1f008bbfb43e0fe297"
+        },
+        {
+          "sha": "8edeb08e8a7fb76b6ca014e0f370d545665e947f",
+          "author_date": "2020-07-14T15:24:47Z",
+          "message": "chore: refactor immuclient test",
+          "html_url": "https://github.com/codenotary/immudb/commit/8edeb08e8a7fb76b6ca014e0f370d545665e947f"
+        },
+        {
+          "sha": "10b1333ed612908fb03ae1747f830f02542a9e45",
+          "author_date": "2020-07-14T16:25:23Z",
+          "message": "chore: TestHealthCheckFails if grpc is no fully closed",
+          "html_url": "https://github.com/codenotary/immudb/commit/10b1333ed612908fb03ae1747f830f02542a9e45"
+        },
+        {
+          "sha": "437c7af6e99cf85c652622938a2f1ed67e39520b",
+          "author_date": "2020-07-15T10:01:44Z",
+          "message": "test: add unit tests for logger and ring buffer",
+          "html_url": "https://github.com/codenotary/immudb/commit/437c7af6e99cf85c652622938a2f1ed67e39520b"
+        },
+        {
+          "sha": "8cfec7a1fe7b00ee720f80c9bdf2c7922ead6324",
+          "author_date": "2020-07-15T12:19:24Z",
+          "message": "test: add unit tests for immuadmin commandline",
+          "html_url": "https://github.com/codenotary/immudb/commit/8cfec7a1fe7b00ee720f80c9bdf2c7922ead6324"
+        },
+        {
+          "sha": "d110304980799d4f8894a5fb26d624a55026f8dc",
+          "author_date": "2020-07-15T13:47:42Z",
+          "message": "test(cmd/helper): add color, config and terminal tests",
+          "html_url": "https://github.com/codenotary/immudb/commit/d110304980799d4f8894a5fb26d624a55026f8dc"
+        },
+        {
+          "sha": "9e9e1f2613dfa2be8cd72d6d79e8935c8603a8d7",
+          "author_date": "2020-07-15T13:47:56Z",
+          "message": "chore: add an explicit data source on terminal reader",
+          "html_url": "https://github.com/codenotary/immudb/commit/9e9e1f2613dfa2be8cd72d6d79e8935c8603a8d7"
+        },
+        {
+          "sha": "fb0e7a7ab30df0a23301850bb8edcb227a72e58d",
+          "author_date": "2020-07-15T14:37:58Z",
+          "message": "doc: improve contributing guide\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/fb0e7a7ab30df0a23301850bb8edcb227a72e58d"
+        },
+        {
+          "sha": "23de5159df40769f5d63a9b4a4eeb0b34e66cb33",
+          "author_date": "2020-07-15T15:28:16Z",
+          "message": "doc: fix contribution guide style\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/23de5159df40769f5d63a9b4a4eeb0b34e66cb33"
+        },
+        {
+          "sha": "c7a8a4bb003c951f191cd96fd817b089b106eb02",
+          "author_date": "2020-07-14T12:37:47Z",
+          "message": "chore(pkg/fs): create file copy with flags from the start, in write-only mode",
+          "html_url": "https://github.com/codenotary/immudb/commit/c7a8a4bb003c951f191cd96fd817b089b106eb02"
+        },
+        {
+          "sha": "fe5df8e79cc303fd282e6d49662038c57ee277da",
+          "author_date": "2020-07-14T12:44:21Z",
+          "message": "fix(pkg/fs): don't overwrite copy error on Close malfunction. Sync seals the operation–not Close.",
+          "html_url": "https://github.com/codenotary/immudb/commit/fe5df8e79cc303fd282e6d49662038c57ee277da"
+        },
+        {
+          "sha": "e0166ab4880da85b4e35b867fc32ca1a8c0d4548",
+          "author_date": "2020-07-14T13:10:17Z",
+          "message": "chore(pkg/fs): traceable copy errors",
+          "html_url": "https://github.com/codenotary/immudb/commit/e0166ab4880da85b4e35b867fc32ca1a8c0d4548"
+        },
+        {
+          "sha": "3ee050e5ee3f2ea5b627c55fae429ee773e461f6",
+          "author_date": "2020-07-14T13:19:57Z",
+          "message": "chore(pkg/fs): utilise filepath directory walk for copy",
+          "html_url": "https://github.com/codenotary/immudb/commit/3ee050e5ee3f2ea5b627c55fae429ee773e461f6"
+        },
+        {
+          "sha": "6e9a2905bcbd058cec9181b30d9bd69788002e97",
+          "author_date": "2020-07-16T07:46:56Z",
+          "message": "fix: fix travis build sleep time\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6e9a2905bcbd058cec9181b30d9bd69788002e97"
+        },
+        {
+          "sha": "0d5f299fab80f1618e0a2a6d44d4e79a65e39280",
+          "author_date": "2020-07-15T16:03:54Z",
+          "message": "chore: fix contributing.md styling\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0d5f299fab80f1618e0a2a6d44d4e79a65e39280"
+        },
+        {
+          "sha": "4450d8128f2e94e84f4256fc4aad118c20d1b5fa",
+          "author_date": "2020-07-14T08:55:32Z",
+          "message": "test(pkg/server): add tests to server package",
+          "html_url": "https://github.com/codenotary/immudb/commit/4450d8128f2e94e84f4256fc4aad118c20d1b5fa"
+        },
+        {
+          "sha": "c2745b9ba7094c00fb68eb4feee5827c47fa8845",
+          "author_date": "2020-07-16T12:20:13Z",
+          "message": "chore(cmd/immuadmin): immuadmin user sub-commands use cobra, tests\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c2745b9ba7094c00fb68eb4feee5827c47fa8845"
+        },
+        {
+          "sha": "b70ba5f2a2ee4323fc211333e4d6727f71a65c7f",
+          "author_date": "2020-07-16T22:26:33Z",
+          "message": "test: enhance immuadmin backup command coverage\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b70ba5f2a2ee4323fc211333e4d6727f71a65c7f"
+        },
+        {
+          "sha": "b62a18df9632eac792e4ec111d0470607518fc6b",
+          "author_date": "2020-07-16T09:55:00Z",
+          "message": "chore: add unexpectedNotStructuredValue error. fixes #402\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b62a18df9632eac792e4ec111d0470607518fc6b"
+        },
+        {
+          "sha": "0bba0288b07ad374c5b6c89bd75dd05729acb845",
+          "author_date": "2020-07-16T10:03:19Z",
+          "message": "fix: fix DefaultPasswordReader initialization. fixes #404\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0bba0288b07ad374c5b6c89bd75dd05729acb845"
+        },
+        {
+          "sha": "f38e251a76e1a8db44a164db84bbfb5bdb86c4cc",
+          "author_date": "2020-07-16T18:40:37Z",
+          "message": "chore: user list client return a printable string\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f38e251a76e1a8db44a164db84bbfb5bdb86c4cc"
+        },
+        {
+          "sha": "efa31825e32012359a760626df3e3a796a8199bc",
+          "author_date": "2020-07-16T18:44:08Z",
+          "message": "chore: add empty clientTest constructor\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/efa31825e32012359a760626df3e3a796a8199bc"
+        },
+        {
+          "sha": "319482ca24e3e282c5989fd8dc7e65a695b05eca",
+          "author_date": "2020-07-16T18:45:42Z",
+          "message": "fix: remove os.Exit(0) from disconnect method\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/319482ca24e3e282c5989fd8dc7e65a695b05eca"
+        },
+        {
+          "sha": "a4696836d01995598fb1358fd0d2f6ad7ad8c685",
+          "author_date": "2020-07-16T18:46:52Z",
+          "message": "test(cmd/immuclient/command): fix tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a4696836d01995598fb1358fd0d2f6ad7ad8c685"
+        },
+        {
+          "sha": "2a7b4f2c7ac5f3ee27a77b56afb3788eac772dd0",
+          "author_date": "2020-07-16T20:24:14Z",
+          "message": "chore: fix immuclient tests\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/2a7b4f2c7ac5f3ee27a77b56afb3788eac772dd0"
+        },
+        {
+          "sha": "0819ef68642050a9e76c1fe52b6d504ece09c3b8",
+          "author_date": "2020-07-17T08:13:53Z",
+          "message": "chore(cmd/immuclient/command): remove useless comment\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0819ef68642050a9e76c1fe52b6d504ece09c3b8"
+        },
+        {
+          "sha": "be2caf8a47b064f904baf04e5adb4ee1d4cf3c49",
+          "author_date": "2020-07-17T09:11:32Z",
+          "message": "chore(pkg/client/timestamp): removed unused ntp timestamp\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/be2caf8a47b064f904baf04e5adb4ee1d4cf3c49"
+        },
+        {
+          "sha": "e28b4ef9ac7938593e37b744581ca893afccd241",
+          "author_date": "2020-07-17T13:15:35Z",
+          "message": "fix(pkg/gw): fix client option construction with missing homedirservice\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e28b4ef9ac7938593e37b744581ca893afccd241"
+        },
+        {
+          "sha": "53104bfcdcf05320c780c6a70fec2f14e181f961",
+          "author_date": "2020-07-17T13:42:06Z",
+          "message": "refactor: refactor detach() method in a process launcher service\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/53104bfcdcf05320c780c6a70fec2f14e181f961"
+        },
+        {
+          "sha": "abafb2c8a480a6c59a5cd8c93ffb301211ee4c98",
+          "author_date": "2020-07-17T13:43:09Z",
+          "message": "chore(cmd): immugw and immudb use process launcher for detach mode\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/abafb2c8a480a6c59a5cd8c93ffb301211ee4c98"
+        },
+        {
+          "sha": "8eed0c4f13461dff77de61d77674f70008bb35a4",
+          "author_date": "2020-07-17T11:44:33Z",
+          "message": "chore: add os and filepath abstraction and use it in immuadmin backup command\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8eed0c4f13461dff77de61d77674f70008bb35a4"
+        },
+        {
+          "sha": "f12b14a30c9ae0cbfdf2abfb6bf57bd733d7824a",
+          "author_date": "2020-07-17T16:00:41Z",
+          "message": "chore: add filepath abstration, use it in immuadmin backup and enhance coverage for backup test\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f12b14a30c9ae0cbfdf2abfb6bf57bd733d7824a"
+        },
+        {
+          "sha": "70b0b771231d1b681c7b5f2bd14091a5509b3ce1",
+          "author_date": "2020-07-18T10:31:51Z",
+          "message": "chore: add coverall badge\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/70b0b771231d1b681c7b5f2bd14091a5509b3ce1"
+        },
+        {
+          "sha": "d528b0d34ab829516eaeb7ca486cccd37c5cdff2",
+          "author_date": "2020-07-20T13:00:36Z",
+          "message": "chore: refactor immuadmin service to use immuos abstraction\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d528b0d34ab829516eaeb7ca486cccd37c5cdff2"
+        },
+        {
+          "sha": "6bdb67d9b58567d053c3208db0d31dc11d8eb61c",
+          "author_date": "2020-07-17T21:56:04Z",
+          "message": "chore(pkg/server): improve tests\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6bdb67d9b58567d053c3208db0d31dc11d8eb61c"
+        },
+        {
+          "sha": "c67d07867d31122ee70876e97a81ec05f942c16b",
+          "author_date": "2020-07-18T22:22:55Z",
+          "message": "test(pkg/server): test error condition on db operations\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c67d07867d31122ee70876e97a81ec05f942c16b"
+        },
+        {
+          "sha": "c8ae5dee2e973df6210c3504aab34cbd0b8b010d",
+          "author_date": "2020-07-19T20:09:25Z",
+          "message": "chore(pkg/server): mtls test certificates\nsystem db as immuserver property\nimprove tests\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c8ae5dee2e973df6210c3504aab34cbd0b8b010d"
+        },
+        {
+          "sha": "c43e28c487d9ee2c0b293f407307e04d656c62f8",
+          "author_date": "2020-07-22T15:47:06Z",
+          "message": "improvement(merkletree dep): update dependency which includes performance optimizations (#418)",
+          "html_url": "https://github.com/codenotary/immudb/commit/c43e28c487d9ee2c0b293f407307e04d656c62f8"
+        },
+        {
+          "sha": "3a8e6c8f42dcf0f57e2f2622fdb5df59f353d9c8",
+          "author_date": "2020-07-22T18:02:22Z",
+          "message": "test: increase coverage above 90% for fs package\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/3a8e6c8f42dcf0f57e2f2622fdb5df59f353d9c8"
+        },
+        {
+          "sha": "84b46a7ad93016bb8019dac6a657974d0edf7177",
+          "author_date": "2020-07-20T15:05:36Z",
+          "message": "doc: add command in makefile to autogenerate documentation from schema.proto\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/84b46a7ad93016bb8019dac6a657974d0edf7177"
+        },
+        {
+          "sha": "1036aaeb0dbc84a2d93c7f39818eba010720bd41",
+          "author_date": "2020-07-24T08:13:35Z",
+          "message": "test(pkg/api/schema): add pattern tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/1036aaeb0dbc84a2d93c7f39818eba010720bd41"
+        },
+        {
+          "sha": "675c6667ac591053edc61a2a09f90ff7bc5ea971",
+          "author_date": "2020-07-24T09:32:06Z",
+          "message": "test(pkg/api/schema): add item tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/675c6667ac591053edc61a2a09f90ff7bc5ea971"
+        },
+        {
+          "sha": "6c1f70d82d44e6402b17258786ff719c58bf47fc",
+          "author_date": "2020-07-24T11:10:05Z",
+          "message": "chore(pkg/store/sysstore): remove useless method\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6c1f70d82d44e6402b17258786ff719c58bf47fc"
+        },
+        {
+          "sha": "d383c9c4bbd3361f94ce56cdcfeb6fdab43b6774",
+          "author_date": "2020-07-24T11:10:44Z",
+          "message": "test(pkg/server): add metrics tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d383c9c4bbd3361f94ce56cdcfeb6fdab43b6774"
+        },
+        {
+          "sha": "c9ab77c1c75e6ddb3e5817faae208399f151897b",
+          "author_date": "2020-07-23T22:22:59Z",
+          "message": "test: increase coverage above 80% for server.go\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c9ab77c1c75e6ddb3e5817faae208399f151897b"
+        },
+        {
+          "sha": "dd6e7cea3839af3816b141262a92884ac2ee6156",
+          "author_date": "2020-07-24T13:36:13Z",
+          "message": "test(pkg/server): add more unit tests for server.go\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/dd6e7cea3839af3816b141262a92884ac2ee6156"
+        },
+        {
+          "sha": "9522df326287b84467839a50477352a39756fb62",
+          "author_date": "2020-07-24T16:02:32Z",
+          "message": "chore(pkg/server): add corruption checker random indexes generator dependency\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9522df326287b84467839a50477352a39756fb62"
+        },
+        {
+          "sha": "1ce30655594e238051d4fd61b91d5410e6eac6f9",
+          "author_date": "2020-07-24T16:03:42Z",
+          "message": "chore(pkg/server): add corruption checker random indexes generator  missing dependency\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/1ce30655594e238051d4fd61b91d5410e6eac6f9"
+        },
+        {
+          "sha": "80fde8d4958ddc7fbf1276cc04faec97e4286dd1",
+          "author_date": "2020-07-24T16:04:39Z",
+          "message": "test(pkg/server): increase corruption checker code coverage\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/80fde8d4958ddc7fbf1276cc04faec97e4286dd1"
+        },
+        {
+          "sha": "199571cce5eb6e1446ef8898629bbd75cd056914",
+          "author_date": "2020-07-27T14:00:41Z",
+          "message": "fix(pkg/server): avoid recursion on never ending functionality. Further improvements can be done (#427)\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/199571cce5eb6e1446ef8898629bbd75cd056914"
+        },
+        {
+          "sha": "996bc200f8398c5b497a5f73bef472a067f968b0",
+          "author_date": "2020-07-27T13:27:27Z",
+          "message": "refactor: decoupled client options from server gateway constructor\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/996bc200f8398c5b497a5f73bef472a067f968b0"
+        },
+        {
+          "sha": "52b7df22f24ce59c40247b4cf692465e61b91194",
+          "author_date": "2020-07-27T13:33:27Z",
+          "message": "test: fix metrics tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/52b7df22f24ce59c40247b4cf692465e61b91194"
+        },
+        {
+          "sha": "c56737f7a422339ad680e566d80be662b96ab021",
+          "author_date": "2020-07-27T13:34:13Z",
+          "message": "test(pkg/gw): add gw server tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c56737f7a422339ad680e566d80be662b96ab021"
+        },
+        {
+          "sha": "74ac3bfcf4254ba5ee76845aefb66dbd14f06632",
+          "author_date": "2020-07-24T17:39:52Z",
+          "message": "chore: move immuadmin and immuclient service managing to pkg\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/74ac3bfcf4254ba5ee76845aefb66dbd14f06632"
+        },
+        {
+          "sha": "f065497ecf60b6232f89158187a54513a5f6219a",
+          "author_date": "2020-07-25T16:35:44Z",
+          "message": "test(cmd/immuclient/audit): add auditor tests\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f065497ecf60b6232f89158187a54513a5f6219a"
+        },
+        {
+          "sha": "d96b1bae461d861cd9c2a52492d34211ca4a14b8",
+          "author_date": "2020-07-25T23:02:25Z",
+          "message": "chore(pkg/client/options): add options fields and test\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d96b1bae461d861cd9c2a52492d34211ca4a14b8"
+        },
+        {
+          "sha": "707f104a2b64751060cf5c6c6326e6b65055ac85",
+          "author_date": "2020-07-25T23:03:46Z",
+          "message": "test(cmd/immuclient/audit): client auditor add more tests\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/707f104a2b64751060cf5c6c6326e6b65055ac85"
+        },
+        {
+          "sha": "03c6aa4c21f6baaff12c76f47c639ac66bb366b4",
+          "author_date": "2020-07-28T10:05:41Z",
+          "message": "add more unit tests for server.go (#428)\n\n* test: increase test coverage for server package\r\n\r\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/03c6aa4c21f6baaff12c76f47c639ac66bb366b4"
+        },
+        {
+          "sha": "a1e4b1c3d4eed846cac2768e3dbb6e0196b4862b",
+          "author_date": "2020-07-28T09:13:50Z",
+          "message": "test(cmd/immuclient/audit): add audit init tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a1e4b1c3d4eed846cac2768e3dbb6e0196b4862b"
+        },
+        {
+          "sha": "08536cfa734e1ec1c30608cac3d264d486b753b6",
+          "author_date": "2020-07-29T08:55:49Z",
+          "message": "chore(pkg/server): immudb struct implements immudbIf interface, fixes previous tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/08536cfa734e1ec1c30608cac3d264d486b753b6"
+        },
+        {
+          "sha": "fcaeda79111978d080d1ae7f03b9a602ae3e9982",
+          "author_date": "2020-07-29T09:26:12Z",
+          "message": "test(cmd/immudb): add more immudb cmd tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/fcaeda79111978d080d1ae7f03b9a602ae3e9982"
+        },
+        {
+          "sha": "89e90ee014216b5a6b12d3d6d91c7eec9e740f0a",
+          "author_date": "2020-07-29T09:28:10Z",
+          "message": "chore(cmd/immugw/command): use general viper.BindPFlags binding instead of a verbose bindFlags solution\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/89e90ee014216b5a6b12d3d6d91c7eec9e740f0a"
+        },
+        {
+          "sha": "1c5c87bb0d878183b8ae9147daa0b621aa17f380",
+          "author_date": "2020-07-29T10:00:46Z",
+          "message": "test(pkg/server): fix data race in service_test\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/1c5c87bb0d878183b8ae9147daa0b621aa17f380"
+        },
+        {
+          "sha": "a93a56679dab741744b4f81be445625761b726f1",
+          "author_date": "2020-07-29T12:40:02Z",
+          "message": "test(pkg/server): increase coverage in services and corruption checker\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a93a56679dab741744b4f81be445625761b726f1"
+        },
+        {
+          "sha": "9a94c04ac33e9e908c885bb3db88bc5685acc9db",
+          "author_date": "2020-07-29T14:27:47Z",
+          "message": "test: add immudb cmd detached, logfile and mtls tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9a94c04ac33e9e908c885bb3db88bc5685acc9db"
+        },
+        {
+          "sha": "6876b5fd696e8913670b1392e5dff4221a027c27",
+          "author_date": "2020-07-29T15:26:10Z",
+          "message": "chore: remove useless quitToStdError and os.exit calls\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6876b5fd696e8913670b1392e5dff4221a027c27"
+        },
+        {
+          "sha": "e8589d15e6b7b419a664ceeb733e710d180a02c7",
+          "author_date": "2020-07-28T21:08:09Z",
+          "message": "test(cmd/immuclient): increase coverage for immuclient cli\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e8589d15e6b7b419a664ceeb733e710d180a02c7"
+        },
+        {
+          "sha": "db1c1d5373ab93488c26547d6b9b7777483d8721",
+          "author_date": "2020-07-28T21:45:30Z",
+          "message": "test(cmd/immuclient): increase coverage more for immuclient cli\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/db1c1d5373ab93488c26547d6b9b7777483d8721"
+        },
+        {
+          "sha": "d8309c8d029b2bcd1e9c0129ef1a0e7f7340ceb8",
+          "author_date": "2020-07-28T22:19:32Z",
+          "message": "test(cmd/immuclient): increase coverage for immuclient auditor\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d8309c8d029b2bcd1e9c0129ef1a0e7f7340ceb8"
+        },
+        {
+          "sha": "5b9219e277cd9f7852efe27d37209cfe6771e141",
+          "author_date": "2020-07-29T09:28:37Z",
+          "message": "test(cmd/immuclient): increase coverage for immuclient currentstatus and getcommands error branches\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5b9219e277cd9f7852efe27d37209cfe6771e141"
+        },
+        {
+          "sha": "af171828c8e33539157ed9ab94f93639b903263a",
+          "author_date": "2020-07-29T09:56:33Z",
+          "message": "test(cmd/immuclient): fix auditor test\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/af171828c8e33539157ed9ab94f93639b903263a"
+        },
+        {
+          "sha": "8cf631e2b97f06fc460a9b223cc0d6abf5d88e03",
+          "author_date": "2020-07-29T13:04:20Z",
+          "message": "test(cmd/immuclient): increase coverage for immuclient interractive init and login error branches\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8cf631e2b97f06fc460a9b223cc0d6abf5d88e03"
+        },
+        {
+          "sha": "69ab3d3530d4b9f7324bcf5b9cc60f3506f2a30d",
+          "author_date": "2020-07-29T17:09:52Z",
+          "message": "test(cmd/immuclient): increase coverage for immuclient interractive references, scanners, set and misc commands\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/69ab3d3530d4b9f7324bcf5b9cc60f3506f2a30d"
+        },
+        {
+          "sha": "a0534a8af59a374f4a21dfb876b489e533068958",
+          "author_date": "2020-07-29T17:12:15Z",
+          "message": "test(cmd/immudb/command): remove log file created during cmd_test\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a0534a8af59a374f4a21dfb876b489e533068958"
+        },
+        {
+          "sha": "f61ee0d8481726a509c7a9d81af2091329096b4d",
+          "author_date": "2020-07-29T15:58:29Z",
+          "message": "doc: uniform and align career badge\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f61ee0d8481726a509c7a9d81af2091329096b4d"
+        },
+        {
+          "sha": "3be10d10b40eedd54b8e6225347848fff752a21a",
+          "author_date": "2020-07-30T08:38:04Z",
+          "message": "docs: update \"We are hiring\" badge in README: use \"careers\" instead of \"Career\" and the color blue instead of brightgreen\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/3be10d10b40eedd54b8e6225347848fff752a21a"
+        },
+        {
+          "sha": "f4241bddb513f7cfc75653f68ce4a56b256d94e7",
+          "author_date": "2020-07-30T10:14:59Z",
+          "message": "doc: fix covaralls badge link\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f4241bddb513f7cfc75653f68ce4a56b256d94e7"
+        },
+        {
+          "sha": "8a01e46f33c0c937cce2d5eb030024ed0c18d840",
+          "author_date": "2020-07-31T13:09:13Z",
+          "message": "refactor: handle in idiomatic way errors in changePermission grpc service. Fixes #368\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8a01e46f33c0c937cce2d5eb030024ed0c18d840"
+        },
+        {
+          "sha": "00424440e43ba33b89da4f274ee30cd150329b47",
+          "author_date": "2020-07-31T13:21:09Z",
+          "message": "chore(cmd/immuadmin/command): remove silent errors in immuadmin\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/00424440e43ba33b89da4f274ee30cd150329b47"
+        },
+        {
+          "sha": "0f6b04213a6ff443bd441ddc165c8e8b6f6a609c",
+          "author_date": "2020-07-31T15:04:33Z",
+          "message": "refactor: remove custom errors inside useDatabase and createDatabase services. Fixes #367\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0f6b04213a6ff443bd441ddc165c8e8b6f6a609c"
+        },
+        {
+          "sha": "134de3b234c1ac4b8ede6ba9d99dc4411593d27f",
+          "author_date": "2020-07-31T16:15:10Z",
+          "message": "chore: improve command ux and fix changepassword test. Closes #370\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/134de3b234c1ac4b8ede6ba9d99dc4411593d27f"
+        },
+        {
+          "sha": "b6fbe54554752e6d65f23f9bc80aa3712ceff3fc",
+          "author_date": "2020-08-02T20:28:08Z",
+          "message": "chore(cmd): fix typo in command messages\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b6fbe54554752e6d65f23f9bc80aa3712ceff3fc"
+        },
+        {
+          "sha": "20a0a2d22a0f87e897b351e1242b3447e086796b",
+          "author_date": "2020-08-02T21:19:00Z",
+          "message": "chore(cmd): restore error handling in main method\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/20a0a2d22a0f87e897b351e1242b3447e086796b"
+        },
+        {
+          "sha": "991434d5674c2c6b0327438e38132c9ff14620a0",
+          "author_date": "2020-08-02T23:00:18Z",
+          "message": "Fix/service stop (#442)\n\n* fix(pkg/gw): make stop service a blocking action\r\n\r\n* fix(pkg/server): make stop service a blocking action\r\n\r\n* test(pkg/server): fix TestServiceStop\r\n\r\n* fix(pkg/server): gprc serving in separete thread\r\n\r\n* test(pkg/server): refactored service test cases. Removed duplicated inner grpc server creation\r\n\r\n* fix(pkg/server): use mutex to prevent data race\r\n\r\n* test(pkg/server): run stop immediately after start\r\n\r\n* chore(pkg/server): restore API comments",
+          "html_url": "https://github.com/codenotary/immudb/commit/991434d5674c2c6b0327438e38132c9ff14620a0"
+        },
+        {
+          "sha": "f6ef8121f2528e67f5c738f4958cb22e93041196",
+          "author_date": "2020-08-02T22:22:34Z",
+          "message": "fix(pkg/service): restore correct config path\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f6ef8121f2528e67f5c738f4958cb22e93041196"
+        },
+        {
+          "sha": "9679383cf14265e412a126a05c0f23849d84def7",
+          "author_date": "2020-08-02T22:40:51Z",
+          "message": "fix: fix multiple services config uninstall\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9679383cf14265e412a126a05c0f23849d84def7"
+        },
+        {
+          "sha": "9a6b8cef7fd25643100e8723155257bba4391b77",
+          "author_date": "2020-08-03T08:22:11Z",
+          "message": "fix: user list showing only the superadmin user even when other user exist\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9a6b8cef7fd25643100e8723155257bba4391b77"
+        },
+        {
+          "sha": "41fde569caec86b5c1233c293a8bc8c3d2598131",
+          "author_date": "2020-08-03T10:13:56Z",
+          "message": "chore: remove user commands from immuclient\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/41fde569caec86b5c1233c293a8bc8c3d2598131"
+        },
+        {
+          "sha": "bb6b28e3a31ea118ca647a3757862743d482ef60",
+          "author_date": "2020-08-03T13:53:35Z",
+          "message": "fix: chose defaultdb on user create if not in multiple db mode\n\nSigned-off-by: gjergji <gjergjiramku@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/bb6b28e3a31ea118ca647a3757862743d482ef60"
+        },
+        {
+          "sha": "0d7db3d37c427df356f5e274d5a4fea614b0a048",
+          "author_date": "2020-08-03T21:25:44Z",
+          "message": "chore: fix conflicts while rebasing from master\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0d7db3d37c427df356f5e274d5a4fea614b0a048"
+        },
+        {
+          "sha": "d48e6e562362ce57d2ec9bd21d2be9a1c9989733",
+          "author_date": "2020-08-04T10:31:11Z",
+          "message": "test(pkg/server): fix z-related test cases (#449)\n\n* test(pkg/server): fix z-related test cases\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* test(pkg/server): fix z-related test cases\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d48e6e562362ce57d2ec9bd21d2be9a1c9989733"
+        },
+        {
+          "sha": "cdecd94de8e787e1965a1eb221abf0bf83af04b8",
+          "author_date": "2020-08-03T16:30:23Z",
+          "message": "refactor(cmd): move database management commands from immuclient to immuadmin. Fixes #440\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/cdecd94de8e787e1965a1eb221abf0bf83af04b8"
+        },
+        {
+          "sha": "6c0d00de151fcb5738517f1ae549e9b87cd393bf",
+          "author_date": "2020-08-04T10:11:59Z",
+          "message": "chore(cmd/immuadmin/command): fix text alignment and case\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6c0d00de151fcb5738517f1ae549e9b87cd393bf"
+        },
+        {
+          "sha": "4d4be5a70826791e87ce07762934fdd623a51db0",
+          "author_date": "2020-08-04T10:12:31Z",
+          "message": "doc: update chat badge\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/4d4be5a70826791e87ce07762934fdd623a51db0"
+        },
+        {
+          "sha": "d632708e10f4f708b52bef9c95323f5d7461b471",
+          "author_date": "2020-08-04T12:02:32Z",
+          "message": "feat(cmd/helper): add table printer\n\nCo-authored-by: Valentin Padurean <padurean@users.noreply.github.com>\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d632708e10f4f708b52bef9c95323f5d7461b471"
+        },
+        {
+          "sha": "a19abebeea82ce08bc5180de2c6f0140ebe0ffcf",
+          "author_date": "2020-08-04T12:07:27Z",
+          "message": "chore(cmd/immuadmin/command): user and database list use table printer\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a19abebeea82ce08bc5180de2c6f0140ebe0ffcf"
+        },
+        {
+          "sha": "b65c1c99a49de1354936ad4ffa7fcfd7ad562358",
+          "author_date": "2020-08-04T15:18:11Z",
+          "message": "chore(cmd/helper): add doc comment for the PrintTable function\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b65c1c99a49de1354936ad4ffa7fcfd7ad562358"
+        },
+        {
+          "sha": "b72196cb76a5658ac5c73bfce01d25c49f6a55a4",
+          "author_date": "2020-08-04T15:20:07Z",
+          "message": "fix(cmd/immuadmin/command): fix user list output to support multiple databases (with permissions) for the same user\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b72196cb76a5658ac5c73bfce01d25c49f6a55a4"
+        },
+        {
+          "sha": "09e3baecd67734feeb103d163414efdb60eb9ca8",
+          "author_date": "2020-08-04T15:48:38Z",
+          "message": "chore(cmd): enhance PrintTable function to support custom table captions and use such captions in immuadmin user and database list commands\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/09e3baecd67734feeb103d163414efdb60eb9ca8"
+        },
+        {
+          "sha": "32d370623daa14c51729b461cc3420c8e91f72f2",
+          "author_date": "2020-08-04T16:10:58Z",
+          "message": "chore: remove permission leftovers and useless messages in client server protocol\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/32d370623daa14c51729b461cc3420c8e91f72f2"
+        },
+        {
+          "sha": "5c4aae4cccec1b388108516ffaf8c8934f256d5e",
+          "author_date": "2020-08-04T23:30:08Z",
+          "message": "chore(cmd/immuadmin/command): automatically login the immuadmin user after forced password change is completed\n\nSigned-off-by: Valentin Padurean <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5c4aae4cccec1b388108516ffaf8c8934f256d5e"
+        },
+        {
+          "sha": "b59c8a21df9ab91cb07c82f92c77a3292c6e9252",
+          "author_date": "2020-08-05T11:55:37Z",
+          "message": "Improvement/data consistency (#450)\n\n* chore(pkg/server): commit within the same tx kv and associated leaf entries\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* chore(pkg/server): add lastFlushed meta key to keep track of latest fully flushed entry\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* chore(pkg/server): refactored treestore creation to return error if any\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* chore(pkg/server): replay missing tree entries. Reserved meta entry IMMUDB.METADATA.LAST_FLUSHED_LEAF to rapidly known last flushed leaf number\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b59c8a21df9ab91cb07c82f92c77a3292c6e9252"
+        },
+        {
+          "sha": "8df699e42b6dc047e2e19fbfe0c6312e532ac116",
+          "author_date": "2020-08-06T08:51:27Z",
+          "message": "chore(cmd): token is managed as a string. fixes #453\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8df699e42b6dc047e2e19fbfe0c6312e532ac116"
+        },
+        {
+          "sha": "2a74877c8b32aaa3ec59cfcb9e8a99217fb0e823",
+          "author_date": "2020-08-10T07:14:00Z",
+          "message": "feat(pkg/client): add token service\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/2a74877c8b32aaa3ec59cfcb9e8a99217fb0e823"
+        },
+        {
+          "sha": "45bb9e26b1ce9e0d861f8062340bd6da7db11266",
+          "author_date": "2020-08-10T07:21:59Z",
+          "message": "chore: spread token service usage\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/45bb9e26b1ce9e0d861f8062340bd6da7db11266"
+        },
+        {
+          "sha": "7a2f01c5696330e871ff847be7237f8f2a55e3d2",
+          "author_date": "2020-08-10T07:54:02Z",
+          "message": "chore: add use database gw handler\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7a2f01c5696330e871ff847be7237f8f2a55e3d2"
+        },
+        {
+          "sha": "0c4ebae79db262df4e98ad30eb8a216f942e6a07",
+          "author_date": "2020-08-10T07:55:41Z",
+          "message": "fix(pkg/auth): if new auth token is found in outgoing context it replaced the old one\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0c4ebae79db262df4e98ad30eb8a216f942e6a07"
+        },
+        {
+          "sha": "a62f030c46216a2307398194833acc8342a3cd94",
+          "author_date": "2020-08-10T07:56:59Z",
+          "message": "fix(pkg/client): use database set internally database name\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a62f030c46216a2307398194833acc8342a3cd94"
+        },
+        {
+          "sha": "e8bad14a65f64472ea1639b69e2aa69471dffcd3",
+          "author_date": "2020-08-10T07:57:35Z",
+          "message": "test(pkg/client): add db switch tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e8bad14a65f64472ea1639b69e2aa69471dffcd3"
+        },
+        {
+          "sha": "84fbb95e5479150ec108def0ec6fd749e6634ade",
+          "author_date": "2020-08-10T10:32:04Z",
+          "message": "chore: fix tokenService typos\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/84fbb95e5479150ec108def0ec6fd749e6634ade"
+        },
+        {
+          "sha": "c04c6b47832a17334af12280de6efc0d2dc01e7c",
+          "author_date": "2020-08-10T12:53:35Z",
+          "message": "fix(pkg/server): added os file separator and db root path",
+          "html_url": "https://github.com/codenotary/immudb/commit/c04c6b47832a17334af12280de6efc0d2dc01e7c"
+        },
+        {
+          "sha": "624a93cbccf6c8a35b4c643f0c9e2659df2c68e7",
+          "author_date": "2020-08-10T13:37:40Z",
+          "message": "chore: versioning token filename\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/624a93cbccf6c8a35b4c643f0c9e2659df2c68e7"
+        },
+        {
+          "sha": "701b0f7f6c1adea0e190eff38fdd4a83d5d456e1",
+          "author_date": "2020-08-10T15:55:52Z",
+          "message": "release: v0.7.0\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/701b0f7f6c1adea0e190eff38fdd4a83d5d456e1"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.7.1",
@@ -857,8 +2226,1509 @@
     {
       "release": "v0.9.0-RC1",
       "previous_release": "v0.8.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "bc48ec3f7bc9ed577d3f194a46dbfa46169600e2",
+          "author_date": "2020-09-15T14:45:59Z",
+          "message": "doc: 0.8.0 release documentation integrations (#500)\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/bc48ec3f7bc9ed577d3f194a46dbfa46169600e2"
+        },
+        {
+          "sha": "8a6d76c04de9fef32950efb8970069d57536868d",
+          "author_date": "2020-09-17T12:25:15Z",
+          "message": "Fix admin password (#501)\n\n* fix(pkg/server): create admin user with provided initialization password\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* test(pkg/server): test login with initial non-default admin password\r\n\r\n* test: use default admin password\r\n\r\n* test(pkg/server): server with metrics\r\n\r\n* test: start server with non default admin password\r\n\r\n* chore(pkg/server): log declared error message\r\n\r\nCo-authored-by: michele meloni <cleaversdev@gmail.com>\r\n\r\n* test(pkg/server): validate invalid encoded admin password\r\n\r\nCo-authored-by: michele meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8a6d76c04de9fef32950efb8970069d57536868d"
+        },
+        {
+          "sha": "ac3238f742d69f103baace71951874731a3a86d5",
+          "author_date": "2020-09-17T15:27:45Z",
+          "message": "test: Added automatic after-build tests (#504)",
+          "html_url": "https://github.com/codenotary/immudb/commit/ac3238f742d69f103baace71951874731a3a86d5"
+        },
+        {
+          "sha": "9175b519d0c45a7bf36ca3b9a4fee3f75f0e06aa",
+          "author_date": "2020-09-21T15:09:15Z",
+          "message": "chore: update readme with SDKs urls (#506)",
+          "html_url": "https://github.com/codenotary/immudb/commit/9175b519d0c45a7bf36ca3b9a4fee3f75f0e06aa"
+        },
+        {
+          "sha": "5f8978cdc0500ef20d5c49d8c0e134f09e96c873",
+          "author_date": "2020-09-29T10:57:39Z",
+          "message": "chore: include github stars over time chart (#509)",
+          "html_url": "https://github.com/codenotary/immudb/commit/5f8978cdc0500ef20d5c49d8c0e134f09e96c873"
+        },
+        {
+          "sha": "15a635611d0b0795bd84a96f1a18dbc2c43822b5",
+          "author_date": "2020-09-25T12:30:40Z",
+          "message": "refactor(pkg/client): decoupled immuclient from rootService\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/15a635611d0b0795bd84a96f1a18dbc2c43822b5"
+        },
+        {
+          "sha": "8b0acfc72416c7710f015e16748c06cfa32353a5",
+          "author_date": "2020-09-25T13:47:36Z",
+          "message": "test(pkg/client/rootservice): add uuid provider unit test\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8b0acfc72416c7710f015e16748c06cfa32353a5"
+        },
+        {
+          "sha": "e5e73e55db389bd585246a1789d20430f317309f",
+          "author_date": "2020-09-25T16:15:57Z",
+          "message": "chore: fix naming conventions\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e5e73e55db389bd585246a1789d20430f317309f"
+        },
+        {
+          "sha": "6d122354d9e56bd1b3f8b27c1423b530e25da711",
+          "author_date": "2020-09-27T08:23:47Z",
+          "message": "fix(pkg/client): handle rootservice error inside constructor\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6d122354d9e56bd1b3f8b27c1423b530e25da711"
+        },
+        {
+          "sha": "46c7b6ded2668f169d82b07ea8840ba01a23bd08",
+          "author_date": "2020-09-30T12:51:54Z",
+          "message": "Fix/#510 (#511)\n\n* fix: parse token as 64 bits number\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* chore: increase dbname len up to 128 chars\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* test(pkg/server): add unit test with multiple db creation\r\n\r\n* test(pkg/server): adjust TestServerIsAllowedDbName to new dbname len limit",
+          "html_url": "https://github.com/codenotary/immudb/commit/46c7b6ded2668f169d82b07ea8840ba01a23bd08"
+        },
+        {
+          "sha": "562c5655c7fabf2f0bfac5b27527dac6cb072391",
+          "author_date": "2020-09-30T13:48:27Z",
+          "message": "doc: update consistency diagram (#512)",
+          "html_url": "https://github.com/codenotary/immudb/commit/562c5655c7fabf2f0bfac5b27527dac6cb072391"
+        },
+        {
+          "sha": "ae1de62e2a74890a872496e4a6c5ced901967f96",
+          "author_date": "2020-09-30T14:53:42Z",
+          "message": "feat: expose CountAll through gRPC\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ae1de62e2a74890a872496e4a6c5ced901967f96"
+        },
+        {
+          "sha": "a6f97bb731295c84b711d1af79af8e9236651e50",
+          "author_date": "2020-09-30T23:58:42Z",
+          "message": "fix: add permissions for the new CountAll gRPC method\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a6f97bb731295c84b711d1af79af8e9236651e50"
+        },
+        {
+          "sha": "b626d7f562c445c319865a12e69a4767e16270db",
+          "author_date": "2020-10-01T08:30:10Z",
+          "message": "test(pkg/auth): add test for CountAll permissions\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b626d7f562c445c319865a12e69a4767e16270db"
+        },
+        {
+          "sha": "da99345c3e63d8583254a0438f3c89e55d0cc675",
+          "author_date": "2020-10-01T15:44:29Z",
+          "message": "Added a not on the file limit in the FAQ (#515)\n\n* Added instructions for operating with many databases in README.md file.",
+          "html_url": "https://github.com/codenotary/immudb/commit/da99345c3e63d8583254a0438f3c89e55d0cc675"
+        },
+        {
+          "sha": "08158bfce2bf4e8910b5bf39954410f5f5bcc8ef",
+          "author_date": "2020-10-09T08:27:52Z",
+          "message": "test(pkg/server): add a vanilla grpc server used inside tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/08158bfce2bf4e8910b5bf39954410f5f5bcc8ef"
+        },
+        {
+          "sha": "b74d8ac6b86834ada390319b946d901d1ebcfe5e",
+          "author_date": "2020-10-09T09:30:44Z",
+          "message": "chore(pkg/client/timestamp): fix naming convention\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b74d8ac6b86834ada390319b946d901d1ebcfe5e"
+        },
+        {
+          "sha": "33c64bf22adda0444c191691cf421675bcf505f7",
+          "author_date": "2020-10-09T09:31:50Z",
+          "message": "chore: export uwrap and wrap value method to be used in nimmu\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/33c64bf22adda0444c191691cf421675bcf505f7"
+        },
+        {
+          "sha": "4ecdf1bf01bd8f65a6f9a87df345093016355fda",
+          "author_date": "2020-10-09T09:50:14Z",
+          "message": "chore(pkg/client/clienttest): add mock service client constructor\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/4ecdf1bf01bd8f65a6f9a87df345093016355fda"
+        },
+        {
+          "sha": "4043e2651dc6fcbc47929eaa71ca3f3ccf30ecdb",
+          "author_date": "2020-10-13T12:42:36Z",
+          "message": "fix(pkg): handle expired token error\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/4043e2651dc6fcbc47929eaa71ca3f3ccf30ecdb"
+        },
+        {
+          "sha": "38b8bcc7b5ac2b4cd960564ae4d221267bfa6f18",
+          "author_date": "2020-10-13T14:04:21Z",
+          "message": "chore(pkg/client/clienttest): add missing method inside service client mock\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/38b8bcc7b5ac2b4cd960564ae4d221267bfa6f18"
+        },
+        {
+          "sha": "05de64cbe024b341f99d03477e5f6be1e3853410",
+          "author_date": "2020-10-13T15:20:19Z",
+          "message": "test(pkg/auth): increase  client interceptors test coverage\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/05de64cbe024b341f99d03477e5f6be1e3853410"
+        },
+        {
+          "sha": "db3148c5259f8e2a0374b5dfcb9fe09820dbcff3",
+          "author_date": "2020-10-14T15:15:48Z",
+          "message": "chore(pkg/auth): fix get batch permissions\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/db3148c5259f8e2a0374b5dfcb9fe09820dbcff3"
+        },
+        {
+          "sha": "9de545c4e88ea8162e8cfe56a92daf4fb5e5b07a",
+          "author_date": "2020-10-19T16:44:27Z",
+          "message": "feat: configurable max incomming msg size (#526)\n\n* feat: configurable max incomming msg size\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* feat: configurable max recv msg size\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* chore: proper property description\r\n\r\n* test(immuclient): add a few unit testing for cli cmds\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9de545c4e88ea8162e8cfe56a92daf4fb5e5b07a"
+        },
+        {
+          "sha": "100fa5b3ff28473f5974dd444a6c753ea2701f6d",
+          "author_date": "2020-10-20T10:18:38Z",
+          "message": "Fix various typos (#524)\n\nJust a bunch of nitpicky typo fixes.",
+          "html_url": "https://github.com/codenotary/immudb/commit/100fa5b3ff28473f5974dd444a6c753ea2701f6d"
+        },
+        {
+          "sha": "3a271f19ac608333bdcb52cf9e045b0531725f5f",
+          "author_date": "2020-10-20T14:26:34Z",
+          "message": "Fix ineffectual assignments (#525)\n\nThis is a tougher PR to review, I'm sorry. I fully understand if you reject it\r\nand approach this from a different angle. However I've stumbled upon a whole\r\nrange of ineffectual assignments in your code.\r\n\r\nMost of them were assignments to an error variable, but missing the actual error\r\ncheck. In the various test cases, I've tried to stick to whatever was the convention\r\nin the particular test: require.NoError, require.Nil, direct err check.\r\n\r\nI suggest you want to annotate a bunch of them. There were too many here for me\r\nto do this in a reasonable fashion in this PR.\r\n\r\nShould you intentionally skip these checks, I would recommend omitting the assignment\r\nas well, as this clearly states an intention to future readers/reviewers.",
+          "html_url": "https://github.com/codenotary/immudb/commit/3a271f19ac608333bdcb52cf9e045b0531725f5f"
+        },
+        {
+          "sha": "7cfe010be3b9535d144467580d1251e50e2c6187",
+          "author_date": "2020-10-20T14:29:16Z",
+          "message": "test: add unit-test for db dump (#527)",
+          "html_url": "https://github.com/codenotary/immudb/commit/7cfe010be3b9535d144467580d1251e50e2c6187"
+        },
+        {
+          "sha": "44e00eb5f492fad272a89980735a8457c9c0ee12",
+          "author_date": "2020-10-21T16:35:51Z",
+          "message": "chore: link to immuchallenge repo (#528)",
+          "html_url": "https://github.com/codenotary/immudb/commit/44e00eb5f492fad272a89980735a8457c9c0ee12"
+        },
+        {
+          "sha": "8bcbbfcc5872f873625d20cbc57eae7dbabffe24",
+          "author_date": "2020-10-15T22:46:44Z",
+          "message": "feat: extend sorted set to support multiple equals key\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8bcbbfcc5872f873625d20cbc57eae7dbabffe24"
+        },
+        {
+          "sha": "bb51ff91e78977865ea17c937c8b5d794083ddd8",
+          "author_date": "2020-10-27T10:38:18Z",
+          "message": "chore(pkg/store): add consistency check on zadd and safezadd index reference method and tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/bb51ff91e78977865ea17c937c8b5d794083ddd8"
+        },
+        {
+          "sha": "c593ba580c9d76e5ff21f997a77c118cfcc2c6f9",
+          "author_date": "2020-10-28T15:17:22Z",
+          "message": "change immudb introductory paragraph (#530)",
+          "html_url": "https://github.com/codenotary/immudb/commit/c593ba580c9d76e5ff21f997a77c118cfcc2c6f9"
+        },
+        {
+          "sha": "4eaf0cb5ea66a2133317153c8a28b999d6328859",
+          "author_date": "2020-10-28T10:57:32Z",
+          "message": "feat: enhance auditor to publish tampering details at a specified URL (optional)\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/4eaf0cb5ea66a2133317153c8a28b999d6328859"
+        },
+        {
+          "sha": "c9c649554efb5a2dd175a4d2de57169e58f858d2",
+          "author_date": "2020-10-29T17:38:31Z",
+          "message": "fix(pkg/store): scan item now contains immudb index, not badger timestamp\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c9c649554efb5a2dd175a4d2de57169e58f858d2"
+        },
+        {
+          "sha": "6815286d490ca793881b8f1038a2e07ec751b551",
+          "author_date": "2020-11-05T15:31:52Z",
+          "message": "Some minor refactoring to increase testing and readability for packages server and client (#534)\n\n* test(pkg/server): minor compatible refactoring for increasing test coverage\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* test(pkg/server): increse test coverage\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* test(pkg/server): minor refactoring to increase test coverage\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* test(pkg/server): minor refactoring to increase test coverage\r\n\r\n* test(pkg/client): include missing properties into unit test\r\n\r\n* test(pkg/client): minor changes to favor redability\r\n\r\n* test(pkg/client): include MTLS options validation\r\n\r\n* test(pkg/client): improve testing for rootservice\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* test(pkg/client): include more cases in existent test cases\r\n\r\n* test(pkg/store): minor formatting changes\r\n\r\n* test(pkg/client); consider config updates within test case\r\n\r\n* test(pkg/client): some improvements in test cases\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6815286d490ca793881b8f1038a2e07ec751b551"
+        },
+        {
+          "sha": "19e66f2d8bbfd102d65123dc091cad0f99533ee9",
+          "author_date": "2020-11-05T23:56:56Z",
+          "message": "feat(pkg/client/auditor): enhance auditor to always send audit notification (even when no tampering was detected) if a notification URL is specified\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/19e66f2d8bbfd102d65123dc091cad0f99533ee9"
+        },
+        {
+          "sha": "d4eddfe37372d5ef0f9d8f36866a20505fa2c511",
+          "author_date": "2020-11-06T15:11:12Z",
+          "message": "Testing store (#537)\n\n* test(pkg/store): test case improvements for package store\r\n\r\n* test(pkg/client): batch unit testing\r\n\r\n* test(pkg/client): test repeated auditor\r\n\r\n* test(pkg/client): increase coverage in audit functionality\r\n\r\n* test(pkg/client): minor changes",
+          "html_url": "https://github.com/codenotary/immudb/commit/d4eddfe37372d5ef0f9d8f36866a20505fa2c511"
+        },
+        {
+          "sha": "2885ae1fd90d90d85df512800419403719cc13e1",
+          "author_date": "2020-11-07T12:45:12Z",
+          "message": "test(pkg/client): validate connection status (#539)",
+          "html_url": "https://github.com/codenotary/immudb/commit/2885ae1fd90d90d85df512800419403719cc13e1"
+        },
+        {
+          "sha": "fbcd742dcd2f1c61a1e43fb98f6682a78cd834f6",
+          "author_date": "2020-11-07T12:47:17Z",
+          "message": "test(pkg/sservice): use delayed task for sequential actions (#538)\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/fbcd742dcd2f1c61a1e43fb98f6682a78cd834f6"
+        },
+        {
+          "sha": "28b1165173d2b7654e99b7adf2a32f55e6c59f05",
+          "author_date": "2020-11-09T13:02:52Z",
+          "message": "test(pkg/auth): test cases for client and server interceptors (#540)",
+          "html_url": "https://github.com/codenotary/immudb/commit/28b1165173d2b7654e99b7adf2a32f55e6c59f05"
+        },
+        {
+          "sha": "94669f8265cb9fd08773a05701e797c92e660749",
+          "author_date": "2020-11-09T18:58:52Z",
+          "message": "chore: fix typo in cmd help (#541)\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/94669f8265cb9fd08773a05701e797c92e660749"
+        },
+        {
+          "sha": "c42302cec7e3d39aa2a3cb82a106495973051cb6",
+          "author_date": "2020-11-05T09:15:08Z",
+          "message": "fix(pkg/store): fix scan and add tests for pagination\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c42302cec7e3d39aa2a3cb82a106495973051cb6"
+        },
+        {
+          "sha": "82f579641c8f6f2e65b5f5e2e4d99117d7600f94",
+          "author_date": "2020-11-05T11:38:25Z",
+          "message": "chore(pkg/server): remove ScanSV test\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/82f579641c8f6f2e65b5f5e2e4d99117d7600f94"
+        },
+        {
+          "sha": "44487c5086b47f9cf07bb6703d5735b97c762a84",
+          "author_date": "2020-11-06T11:38:00Z",
+          "message": "refactor(pkg/store): add set separator. Fixes #51\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/44487c5086b47f9cf07bb6703d5735b97c762a84"
+        },
+        {
+          "sha": "253debb362d672cbe689cd44d9ee758650a4d586",
+          "author_date": "2020-11-06T11:40:17Z",
+          "message": "feat: add ZScan pagination\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/253debb362d672cbe689cd44d9ee758650a4d586"
+        },
+        {
+          "sha": "03daa483210d17df55d280cb495dfb6c486d5ff2",
+          "author_date": "2020-11-06T15:00:09Z",
+          "message": "feat: add history pagination\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/03daa483210d17df55d280cb495dfb6c486d5ff2"
+        },
+        {
+          "sha": "61b6dc041be2c87cc539a534e97789962ae93805",
+          "author_date": "2020-11-09T08:27:15Z",
+          "message": "feat: add reverse zscan and reverse history pagination\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/61b6dc041be2c87cc539a534e97789962ae93805"
+        },
+        {
+          "sha": "c758f1939247c3cd0669695fe18145ab3fd63d44",
+          "author_date": "2020-11-09T08:32:10Z",
+          "message": "fix(pkg/store): move separator at the beginning of a keyset\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c758f1939247c3cd0669695fe18145ab3fd63d44"
+        },
+        {
+          "sha": "034529263c823c07664563f50c5dd5c9b96034fe",
+          "author_date": "2020-11-09T08:33:36Z",
+          "message": "chore: renaming set key generation method\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/034529263c823c07664563f50c5dd5c9b96034fe"
+        },
+        {
+          "sha": "e00dd1d363f2098968956f306f15f5bbb2ddffb3",
+          "author_date": "2020-11-09T08:45:12Z",
+          "message": "fix(pkg/store): fix reverse history pagination\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e00dd1d363f2098968956f306f15f5bbb2ddffb3"
+        },
+        {
+          "sha": "7c78d26cac1d33e923e5595d841235d37b8214e6",
+          "author_date": "2020-11-11T09:42:45Z",
+          "message": "chore: remove *sv methods\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7c78d26cac1d33e923e5595d841235d37b8214e6"
+        },
+        {
+          "sha": "bfd3307f6a9ccbbd93bcc3b517cee79b203ac918",
+          "author_date": "2020-11-12T10:35:28Z",
+          "message": "chore(server): enhance namings related audit report notification\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/bfd3307f6a9ccbbd93bcc3b517cee79b203ac918"
+        },
+        {
+          "sha": "9da05f6389da01ab4acd2c70702dcb80a992fe6d",
+          "author_date": "2020-11-15T16:52:59Z",
+          "message": "stress tool utility (#545)\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9da05f6389da01ab4acd2c70702dcb80a992fe6d"
+        },
+        {
+          "sha": "8a1967d7aa454165d372b9915ebd55a02232eb39",
+          "author_date": "2020-11-16T01:00:22Z",
+          "message": "Fix scan (#544)\n\n* fix(pkg/store): with offset handling\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* fix(pkg/store): fix offset handling for ZScan\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8a1967d7aa454165d372b9915ebd55a02232eb39"
+        },
+        {
+          "sha": "6d2455bdd198ec9e8ec39f62e8f53458c40f72d6",
+          "author_date": "2020-11-17T14:09:23Z",
+          "message": "fix typo in README (#547)",
+          "html_url": "https://github.com/codenotary/immudb/commit/6d2455bdd198ec9e8ec39f62e8f53458c40f72d6"
+        },
+        {
+          "sha": "9d383c42cc26ef84f4ac5805607cb4fe62200b7c",
+          "author_date": "2020-11-15T18:53:57Z",
+          "message": "chore: move set and get batch in a separate file\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9d383c42cc26ef84f4ac5805607cb4fe62200b7c"
+        },
+        {
+          "sha": "7805e3a43201e710011c62416c4fd7aebda63252",
+          "author_date": "2020-11-15T22:19:48Z",
+          "message": "feat: add atomic operations method\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7805e3a43201e710011c62416c4fd7aebda63252"
+        },
+        {
+          "sha": "2ed4db8346fe4035c4224ed0d96bafc5879621b6",
+          "author_date": "2020-11-17T15:08:55Z",
+          "message": "refactor: batch ops produces monotonic ts sequences, index is mandatory if reference key is already persisted\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/2ed4db8346fe4035c4224ed0d96bafc5879621b6"
+        },
+        {
+          "sha": "650405363116d5a916e12724d0a14ab25effa180",
+          "author_date": "2020-11-17T17:39:21Z",
+          "message": "fix(pkg/store): fix bug on lexicographical read of multiple sets\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/650405363116d5a916e12724d0a14ab25effa180"
+        },
+        {
+          "sha": "94f9d52dde2eaf11f235e43554fb2911090a75dc",
+          "author_date": "2020-11-17T17:40:18Z",
+          "message": "test(pkg/store): add concurrent batchOps test\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/94f9d52dde2eaf11f235e43554fb2911090a75dc"
+        },
+        {
+          "sha": "a3fbcf5fd16ff19cce46d29ee9942e8bd6b87ff8",
+          "author_date": "2020-11-18T09:06:42Z",
+          "message": "feat(pkg/store): sorted sets support multiple equal keys with same score\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a3fbcf5fd16ff19cce46d29ee9942e8bd6b87ff8"
+        },
+        {
+          "sha": "73da04ac381a21bd89a9ba763976d919b671d052",
+          "author_date": "2020-11-18T09:58:36Z",
+          "message": "fix: fix batchOps tests and minors fix for zAdd sorted set key generation\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/73da04ac381a21bd89a9ba763976d919b671d052"
+        },
+        {
+          "sha": "dba5a20d367d7ca51f02474ef39ff72d7e2cf366",
+          "author_date": "2020-11-18T11:07:40Z",
+          "message": "chore: fix naming conventions and typos\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/dba5a20d367d7ca51f02474ef39ff72d7e2cf366"
+        },
+        {
+          "sha": "2e2d45bc86fc46feb7d9c96afb632732b6130a5b",
+          "author_date": "2020-11-18T11:08:42Z",
+          "message": "chore: add setBatch, getBatch, setBatchOps method in mock client\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/2e2d45bc86fc46feb7d9c96afb632732b6130a5b"
+        },
+        {
+          "sha": "3bbaafe06705f679f26879ea22f74c6c3cab04ae",
+          "author_date": "2020-11-18T11:15:22Z",
+          "message": "fix: avoid duplicate index insertion in zAdd batch operation transaction\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/3bbaafe06705f679f26879ea22f74c6c3cab04ae"
+        },
+        {
+          "sha": "e213d5627ced82eed41d9fefc9009e16b5c49165",
+          "author_date": "2020-11-19T13:28:31Z",
+          "message": "fix(pkg/store): fixes issue #532 (#549)\n\n* fix(pkg/store): fixes issue 532\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>\r\n\r\n* fix(pkg/store): contemplate empty db case when dumping\r\n\r\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e213d5627ced82eed41d9fefc9009e16b5c49165"
+        },
+        {
+          "sha": "586bb106f137be805f5d20c3082ff499d51f229a",
+          "author_date": "2020-11-19T08:41:22Z",
+          "message": "fix: fix batchOps permission and clean sv ones\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/586bb106f137be805f5d20c3082ff499d51f229a"
+        },
+        {
+          "sha": "498b35df36c5ea1cc6d01229a99276956e90fdf4",
+          "author_date": "2020-11-19T08:43:05Z",
+          "message": "chore: improved comprehensibility of the immudb configuration file\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/498b35df36c5ea1cc6d01229a99276956e90fdf4"
+        },
+        {
+          "sha": "00a78f50998c82edb581166f52680ba4d212860e",
+          "author_date": "2020-11-19T19:25:16Z",
+          "message": "chore: add more batchOps tests, fixing naming typo\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/00a78f50998c82edb581166f52680ba4d212860e"
+        },
+        {
+          "sha": "ff76d5554857fb75936c3f22ab2e6ac74c5ac7f8",
+          "author_date": "2020-11-19T19:26:00Z",
+          "message": "chore(pkg/client/clienttest): add inclusion, consistency, byIndex mock methods\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ff76d5554857fb75936c3f22ab2e6ac74c5ac7f8"
+        },
+        {
+          "sha": "17dee7e312461d77e852512a91da68f2cfcd0f61",
+          "author_date": "2020-11-19T19:56:41Z",
+          "message": "test(pkg/api/schema): increase batchOps validate code coverage\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/17dee7e312461d77e852512a91da68f2cfcd0f61"
+        },
+        {
+          "sha": "4277fffce14d0f41b1611dab32f3af930cb4a04b",
+          "author_date": "2020-11-20T08:37:07Z",
+          "message": "test(pkg/api/schema): increase code coverage\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/4277fffce14d0f41b1611dab32f3af930cb4a04b"
+        },
+        {
+          "sha": "d2f256d4eb00c83ce3237bfd23bc1af04b82bb5c",
+          "author_date": "2020-11-20T11:16:29Z",
+          "message": "chore(pkg/api/schema): increase code readability\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d2f256d4eb00c83ce3237bfd23bc1af04b82bb5c"
+        },
+        {
+          "sha": "58da0d3bb883927801fc590e0dc23a4793fe3d7d",
+          "author_date": "2020-11-20T14:55:44Z",
+          "message": "feat(server): add --audit-databases optional auditor flag\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/58da0d3bb883927801fc590e0dc23a4793fe3d7d"
+        },
+        {
+          "sha": "2d788d00ade13f9237dfb8a7d24d0aedc6a3f0fe",
+          "author_date": "2020-11-20T17:17:22Z",
+          "message": "test(server/cmd/immuclient/command): fix overlapping .root- files in unit tests (caused by missing cleanup in some tests)\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/2d788d00ade13f9237dfb8a7d24d0aedc6a3f0fe"
+        },
+        {
+          "sha": "0bd9f63214f53306d71bd1c8f922cdb00dbede03",
+          "author_date": "2020-11-20T20:08:37Z",
+          "message": "test(server/cmd/immuclient/immuc): enhance local root cleanup\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0bd9f63214f53306d71bd1c8f922cdb00dbede03"
+        },
+        {
+          "sha": "6be620895e9c17279464adcf569c06338e163593",
+          "author_date": "2020-11-20T20:08:53Z",
+          "message": "test(pkg/client/auditor): slightly improve test coverage\n\nSigned-off-by: Valentin Padurean (Ogg) <912518+padurean@users.noreply.github.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6be620895e9c17279464adcf569c06338e163593"
+        },
+        {
+          "sha": "8431221efaa1a23fcdded1c19aea58ef5962e95a",
+          "author_date": "2020-11-23T22:58:14Z",
+          "message": "feat: Add awesome-go badge (#554)",
+          "html_url": "https://github.com/codenotary/immudb/commit/8431221efaa1a23fcdded1c19aea58ef5962e95a"
+        },
+        {
+          "sha": "f482da706c6d648fdd4257f4af66c7dd50690b30",
+          "author_date": "2020-11-24T13:42:15Z",
+          "message": "feat: rearrange badges on README (#555)",
+          "html_url": "https://github.com/codenotary/immudb/commit/f482da706c6d648fdd4257f4af66c7dd50690b30"
+        },
+        {
+          "sha": "669bb82eeee42fd9802db15afb9e9acdb7882221",
+          "author_date": "2020-11-25T01:55:39Z",
+          "message": "test(pkg/client): little improvement on unit testing of history file cache (#557)",
+          "html_url": "https://github.com/codenotary/immudb/commit/669bb82eeee42fd9802db15afb9e9acdb7882221"
+        },
+        {
+          "sha": "8a611e23878bc4aa38416a7a689d809ef9d306a0",
+          "author_date": "2020-11-25T01:58:12Z",
+          "message": "feat(pkg/client): add SetAll operation for simple  multi-kv atomic insertion (#556)\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8a611e23878bc4aa38416a7a689d809ef9d306a0"
+        },
+        {
+          "sha": "7411348a2a95cf3a7f527f2a4500f6606c9ca591",
+          "author_date": "2020-11-24T13:56:30Z",
+          "message": "chore: fix immudb consistency diagram\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7411348a2a95cf3a7f527f2a4500f6606c9ca591"
+        },
+        {
+          "sha": "5d59cb35d9a9a3d43086176ba8e33e3d693f27c1",
+          "author_date": "2020-11-24T13:58:07Z",
+          "message": "fix(pkg/store): fix key set generation. index reference flag (0,1 bit) is put at the end of the key to mantain lexicographical properties\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5d59cb35d9a9a3d43086176ba8e33e3d693f27c1"
+        },
+        {
+          "sha": "f349d6f650f0e2283e2b46f87fb62de37bcce1a6",
+          "author_date": "2020-11-24T13:58:55Z",
+          "message": "chore(pkg/store): move reference code to a dedicated file\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f349d6f650f0e2283e2b46f87fb62de37bcce1a6"
+        },
+        {
+          "sha": "ab821829d3e7f164272ee8e7dfae7b65db2d43f7",
+          "author_date": "2020-11-24T15:07:18Z",
+          "message": "feat(pkg/store): reference support index resolution\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ab821829d3e7f164272ee8e7dfae7b65db2d43f7"
+        },
+        {
+          "sha": "19447b5d3062f70398031e75730e7fec4deb8214",
+          "author_date": "2020-11-24T15:09:09Z",
+          "message": "feat: add batchOps reference operation\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/19447b5d3062f70398031e75730e7fec4deb8214"
+        },
+        {
+          "sha": "de558386b4c4c65ee84893dfaf1bbca53a7a4f6b",
+          "author_date": "2020-11-24T15:16:09Z",
+          "message": "test: add more zscan tests\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/de558386b4c4c65ee84893dfaf1bbca53a7a4f6b"
+        },
+        {
+          "sha": "5ec3dd7aed5d63c02ba3a13d1690c7cd87190145",
+          "author_date": "2020-11-24T15:28:38Z",
+          "message": "chore: add more tests and remove code duplications\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5ec3dd7aed5d63c02ba3a13d1690c7cd87190145"
+        },
+        {
+          "sha": "c9766c06d4d4472b2a4c9a773be83c1dc3a0c5d1",
+          "author_date": "2020-11-24T16:58:17Z",
+          "message": "test(pkg/store): increase code coverage\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c9766c06d4d4472b2a4c9a773be83c1dc3a0c5d1"
+        },
+        {
+          "sha": "ba5aaf47e3c37aa43cc1afa27af8eafcdc6300d0",
+          "author_date": "2020-11-25T09:44:41Z",
+          "message": "chore(pkg/client): fix comment\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ba5aaf47e3c37aa43cc1afa27af8eafcdc6300d0"
+        },
+        {
+          "sha": "2b2380ba0128b14a2996fce080873d0e3765577e",
+          "author_date": "2020-11-25T09:59:28Z",
+          "message": "chore: renaming batchOps in ops and SetBatchOps in ExecAllOps\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/2b2380ba0128b14a2996fce080873d0e3765577e"
+        },
+        {
+          "sha": "04757eab861a6b32d4774485f702200fdf7335cd",
+          "author_date": "2020-11-25T12:15:32Z",
+          "message": "fix(pkg/store): in reference based command key is optional if index is provided. Increase code coverage\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/04757eab861a6b32d4774485f702200fdf7335cd"
+        },
+        {
+          "sha": "f9806197d7c73aeee2bf01557b3e909e89f377f9",
+          "author_date": "2020-11-25T17:45:14Z",
+          "message": "Update readme (#559)\n\n* restructured some sections in README\r\n\r\n* keep #how-immudb-works section",
+          "html_url": "https://github.com/codenotary/immudb/commit/f9806197d7c73aeee2bf01557b3e909e89f377f9"
+        },
+        {
+          "sha": "10ab91016a0f3c60bf555fbd25295b8b09f7351f",
+          "author_date": "2020-11-25T17:49:58Z",
+          "message": "fix typo in README (#560)",
+          "html_url": "https://github.com/codenotary/immudb/commit/10ab91016a0f3c60bf555fbd25295b8b09f7351f"
+        },
+        {
+          "sha": "c493edd1b547266a56b93e3b6e7edf1f22897d18",
+          "author_date": "2020-11-26T16:49:28Z",
+          "message": "refactor(pkg/store): get resolve reference only by key\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c493edd1b547266a56b93e3b6e7edf1f22897d18"
+        },
+        {
+          "sha": "c7b93aaed7b954e0c00425324764db947e02b562",
+          "author_date": "2020-11-26T17:28:26Z",
+          "message": "chore(pkg/store): fix comments in test\n\nSigned-off-by: Michele Meloni <cleaversdev@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c7b93aaed7b954e0c00425324764db947e02b562"
+        },
+        {
+          "sha": "3a2a69ba285afda8eed5d7ceb9a45774a4e6b9d4",
+          "author_date": "2020-11-30T12:20:31Z",
+          "message": "Migrate from Travis CI to GitHub Actions",
+          "html_url": "https://github.com/codenotary/immudb/commit/3a2a69ba285afda8eed5d7ceb9a45774a4e6b9d4"
+        },
+        {
+          "sha": "2fc286c5d91ec3dc2c196c5d908d668f3f945af7",
+          "author_date": "2020-11-30T13:19:24Z",
+          "message": "Merge pull request #565 from codenotary/ci_GH_actions\n\nMigrate from Travis CI to Github Actions",
+          "html_url": "https://github.com/codenotary/immudb/commit/2fc286c5d91ec3dc2c196c5d908d668f3f945af7"
+        },
+        {
+          "sha": "094157f3fc1a788fee3232f42fa14acb1eff6b5e",
+          "author_date": "2020-11-30T16:07:43Z",
+          "message": "Update pull.yml",
+          "html_url": "https://github.com/codenotary/immudb/commit/094157f3fc1a788fee3232f42fa14acb1eff6b5e"
+        },
+        {
+          "sha": "641c31fc106c8689e5b869f207458919adddf5de",
+          "author_date": "2020-11-30T17:46:21Z",
+          "message": "Set atomic covermode in ci workflows (#568)\n\n* Update pull.yml\r\n\r\n* Update push.yml",
+          "html_url": "https://github.com/codenotary/immudb/commit/641c31fc106c8689e5b869f207458919adddf5de"
+        },
+        {
+          "sha": "df62ef632f803955af6ca8deff5d3eb2300a27a6",
+          "author_date": "2020-09-24T14:48:14Z",
+          "message": "chore: initial commit with functional implementation\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/df62ef632f803955af6ca8deff5d3eb2300a27a6"
+        },
+        {
+          "sha": "707ad38014f14cd03137038d05c8fed4ebdd81df",
+          "author_date": "2020-09-24T15:03:36Z",
+          "message": "chore: make key-value struct public\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/707ad38014f14cd03137038d05c8fed4ebdd81df"
+        },
+        {
+          "sha": "b58386d418adf4b77d136e175dcec7bbe0947bcb",
+          "author_date": "2020-09-24T15:05:45Z",
+          "message": "test: fix key length in benchmark",
+          "html_url": "https://github.com/codenotary/immudb/commit/b58386d418adf4b77d136e175dcec7bbe0947bcb"
+        },
+        {
+          "sha": "5e5db6da17c2805f07797892bac39c910d003f45",
+          "author_date": "2020-09-24T15:26:22Z",
+          "message": "test: test utility to commit transactions\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5e5db6da17c2805f07797892bac39c910d003f45"
+        },
+        {
+          "sha": "265d155dbf8baeef28251bb11f55e0298421f22b",
+          "author_date": "2020-09-24T16:06:10Z",
+          "message": "strict sync mode exported and strees tool supporting as an option\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/265d155dbf8baeef28251bb11f55e0298421f22b"
+        },
+        {
+          "sha": "c53b7b14e288acc724ed03395d586d7c6a1a77f7",
+          "author_date": "2020-09-24T16:30:44Z",
+          "message": "feat: export sync mode config\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c53b7b14e288acc724ed03395d586d7c6a1a77f7"
+        },
+        {
+          "sha": "024b8ee4d38dfb362d65675c95190e04f3b6ab65",
+          "author_date": "2020-09-24T18:19:08Z",
+          "message": "chore: return EOF when available content is less than buffer size\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/024b8ee4d38dfb362d65675c95190e04f3b6ab65"
+        },
+        {
+          "sha": "43f8967d6f93deba045e3f18cc1d98f3673378b4",
+          "author_date": "2020-09-24T18:22:31Z",
+          "message": "chore: close commit log file\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/43f8967d6f93deba045e3f18cc1d98f3673378b4"
+        },
+        {
+          "sha": "b4890c063c1b89f48dde9e839fe70e419ee737c9",
+          "author_date": "2020-09-24T18:43:00Z",
+          "message": "feat: add method to retrieve number of committed txs\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b4890c063c1b89f48dde9e839fe70e419ee737c9"
+        },
+        {
+          "sha": "ab18adafa49fd5ffb3019dae72f9f2b34e605c29",
+          "author_date": "2020-09-24T18:52:16Z",
+          "message": "feat: add cryptographic linking verification of transactions\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ab18adafa49fd5ffb3019dae72f9f2b34e605c29"
+        },
+        {
+          "sha": "261f55cea26a5716e20d77a828bde9af7b42fe3d",
+          "author_date": "2020-09-24T19:05:32Z",
+          "message": "chore: minor changes in stress tool\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/261f55cea26a5716e20d77a828bde9af7b42fe3d"
+        },
+        {
+          "sha": "b9f4485fbb9544bff71921b807006a9fdb51696b",
+          "author_date": "2020-09-25T11:17:00Z",
+          "message": "feat: added concurrent committers to stress tool\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b9f4485fbb9544bff71921b807006a9fdb51696b"
+        },
+        {
+          "sha": "5926b8aaef932213f0469af47eab09d50929f8a4",
+          "author_date": "2020-09-25T12:03:53Z",
+          "message": "chore: preparing for concurrency optimization\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5926b8aaef932213f0469af47eab09d50929f8a4"
+        },
+        {
+          "sha": "d3c61408574d9045a8606ed87c340fd5e25e8aa3",
+          "author_date": "2020-09-25T15:51:59Z",
+          "message": "feat: optimized for concurrent committers\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d3c61408574d9045a8606ed87c340fd5e25e8aa3"
+        },
+        {
+          "sha": "176fa1a498f23062749a4e367b235d93e62b7902",
+          "author_date": "2020-09-25T15:54:27Z",
+          "message": "chore: minor typo in error message\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/176fa1a498f23062749a4e367b235d93e62b7902"
+        },
+        {
+          "sha": "b3f22f4db8f1502e22bd353f104a3b57254708a4",
+          "author_date": "2020-09-25T16:09:56Z",
+          "message": "chore: don't print dots if printAfter is 0\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b3f22f4db8f1502e22bd353f104a3b57254708a4"
+        },
+        {
+          "sha": "c6bfe129939bdfc294145c6364311648fb46258f",
+          "author_date": "2020-09-25T16:11:53Z",
+          "message": "chore: don't print dots if printAfter is 0\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c6bfe129939bdfc294145c6364311648fb46258f"
+        },
+        {
+          "sha": "ab59ca1e555b2abfc6e78483eb61a0922d80b7a7",
+          "author_date": "2020-09-26T11:15:23Z",
+          "message": "chore: time only considering commit time",
+          "html_url": "https://github.com/codenotary/immudb/commit/ab59ca1e555b2abfc6e78483eb61a0922d80b7a7"
+        },
+        {
+          "sha": "c65d1a5c5149791fc392ecf9f87916d9bab7824d",
+          "author_date": "2020-09-26T12:08:46Z",
+          "message": "stress_tool: fix committers sync",
+          "html_url": "https://github.com/codenotary/immudb/commit/c65d1a5c5149791fc392ecf9f87916d9bab7824d"
+        },
+        {
+          "sha": "02cde672ddd0777cba2e1ac51352b4a69718f3a2",
+          "author_date": "2020-09-26T12:48:24Z",
+          "message": "test: validate read against input data\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/02cde672ddd0777cba2e1ac51352b4a69718f3a2"
+        },
+        {
+          "sha": "a6e08b0d465c8685c7e138bdc3483dcfe87bda34",
+          "author_date": "2020-09-26T18:28:57Z",
+          "message": "chore: minor internal change on commit tx method\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a6e08b0d465c8685c7e138bdc3483dcfe87bda34"
+        },
+        {
+          "sha": "378ca3a9ec9752deb7adc4ba21de18b2e61da1fb",
+          "author_date": "2020-09-26T12:51:28Z",
+          "message": "Create bitflip.py",
+          "html_url": "https://github.com/codenotary/immudb/commit/378ca3a9ec9752deb7adc4ba21de18b2e61da1fb"
+        },
+        {
+          "sha": "210b8c548f5d43d6c27458660fab34df582318b0",
+          "author_date": "2020-09-26T22:57:08Z",
+          "message": "chore: optimized hashtree generation\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/210b8c548f5d43d6c27458660fab34df582318b0"
+        },
+        {
+          "sha": "7e8a47c7ae06845053fbfd2802de1b9ed3ac1814",
+          "author_date": "2020-09-27T19:48:48Z",
+          "message": "chore: preparing for parallel IO\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7e8a47c7ae06845053fbfd2802de1b9ed3ac1814"
+        },
+        {
+          "sha": "4ef5aaa2cd6644482627a36eee3dca546248636c",
+          "author_date": "2020-09-27T22:44:09Z",
+          "message": "chore: appendale with path",
+          "html_url": "https://github.com/codenotary/immudb/commit/4ef5aaa2cd6644482627a36eee3dca546248636c"
+        },
+        {
+          "sha": "99dedc41b6e6c23dc7dc7b7b36ec3d3565a77f98",
+          "author_date": "2020-09-27T22:45:14Z",
+          "message": "chore: spec parallel IO in stress tool",
+          "html_url": "https://github.com/codenotary/immudb/commit/99dedc41b6e6c23dc7dc7b7b36ec3d3565a77f98"
+        },
+        {
+          "sha": "6ad7c121c5ee4a28f60e15ef2b64bb89aa9b7c53",
+          "author_date": "2020-09-27T22:47:10Z",
+          "message": "feat: parallel IO support\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6ad7c121c5ee4a28f60e15ef2b64bb89aa9b7c53"
+        },
+        {
+          "sha": "caf398e10cc2fe1df8788e8363303f15093729f1",
+          "author_date": "2020-09-27T23:00:50Z",
+          "message": "chore: open with appendables to facilitate parallel IO\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/caf398e10cc2fe1df8788e8363303f15093729f1"
+        },
+        {
+          "sha": "fd2ca44692a39093d5a851168660c9dc7c9b99ba",
+          "author_date": "2020-09-28T11:01:03Z",
+          "message": "chore: parallel IO non-exclusive yet synchorinized with store closing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/fd2ca44692a39093d5a851168660c9dc7c9b99ba"
+        },
+        {
+          "sha": "73fc34651957b15e059e3290d003e7444ea92c60",
+          "author_date": "2020-09-28T12:27:23Z",
+          "message": "feat: add key and value length params in stress tool\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/73fc34651957b15e059e3290d003e7444ea92c60"
+        },
+        {
+          "sha": "9f296f45318eabe5181b2b444441795d1251d9ac",
+          "author_date": "2020-09-28T12:37:46Z",
+          "message": "chore: kv alloc inside tx prep",
+          "html_url": "https://github.com/codenotary/immudb/commit/9f296f45318eabe5181b2b444441795d1251d9ac"
+        },
+        {
+          "sha": "769702526bd3faca4d0d14ebb9fba116d9533aa8",
+          "author_date": "2020-09-28T13:10:13Z",
+          "message": "chore: random key-value generation in stress tool\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/769702526bd3faca4d0d14ebb9fba116d9533aa8"
+        },
+        {
+          "sha": "a3af35e7d0f24fe7faf7aaee5c0f3895a4ca310d",
+          "author_date": "2020-09-28T13:21:53Z",
+          "message": "chore: close txlog after completion",
+          "html_url": "https://github.com/codenotary/immudb/commit/a3af35e7d0f24fe7faf7aaee5c0f3895a4ca310d"
+        },
+        {
+          "sha": "3af6a6945f2e4f22f49821ff05ad4b992eec5b11",
+          "author_date": "2020-09-28T14:50:02Z",
+          "message": "feat: full committed tx verification against input kv data\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/3af6a6945f2e4f22f49821ff05ad4b992eec5b11"
+        },
+        {
+          "sha": "c121cdd632264e76ba452c7b26befe6343f21c0a",
+          "author_date": "2020-09-28T16:06:52Z",
+          "message": "feat: include full tx validation and fixed sync issue\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c121cdd632264e76ba452c7b26befe6343f21c0a"
+        },
+        {
+          "sha": "af9a52fe1e1d2c9a41976f635e4ee951e5f8b5f4",
+          "author_date": "2020-09-28T17:33:40Z",
+          "message": "chore: use channels for communicating data offsets\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/af9a52fe1e1d2c9a41976f635e4ee951e5f8b5f4"
+        },
+        {
+          "sha": "75fa01d690b1e1f6a263aeda0c5ff708bfdc1dbf",
+          "author_date": "2020-09-30T00:19:23Z",
+          "message": "feat: add metadata to appendables\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/75fa01d690b1e1f6a263aeda0c5ff708bfdc1dbf"
+        },
+        {
+          "sha": "1916f9c551b646ea6229289e76d37dfb5632a2c2",
+          "author_date": "2020-10-01T15:11:53Z",
+          "message": "feat: multi-file appendables\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/1916f9c551b646ea6229289e76d37dfb5632a2c2"
+        },
+        {
+          "sha": "c604adabca1a04ae7d257b536c64b9f780d13f51",
+          "author_date": "2020-10-01T16:06:04Z",
+          "message": "feat: enable file mgmt settings\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c604adabca1a04ae7d257b536c64b9f780d13f51"
+        },
+        {
+          "sha": "64eb39e06a5e8889e23555771f1514814e26830f",
+          "author_date": "2020-10-01T16:15:32Z",
+          "message": "fix: appID parsing from filename",
+          "html_url": "https://github.com/codenotary/immudb/commit/64eb39e06a5e8889e23555771f1514814e26830f"
+        },
+        {
+          "sha": "578d7876d5882d753c1a2abeeafad852591897d6",
+          "author_date": "2020-10-01T16:20:45Z",
+          "message": "fix: appendable extensions without dot",
+          "html_url": "https://github.com/codenotary/immudb/commit/578d7876d5882d753c1a2abeeafad852591897d6"
+        },
+        {
+          "sha": "297135424e530a65ed9928a79fa26d4dea8adacb",
+          "author_date": "2020-10-01T16:24:28Z",
+          "message": "fix: file ext removal",
+          "html_url": "https://github.com/codenotary/immudb/commit/297135424e530a65ed9928a79fa26d4dea8adacb"
+        },
+        {
+          "sha": "fa726c8568005abab88c595cb19d80ce10a6f015",
+          "author_date": "2020-10-01T16:37:49Z",
+          "message": "feat: add log file sizes and number of openned files per log type flags",
+          "html_url": "https://github.com/codenotary/immudb/commit/fa726c8568005abab88c595cb19d80ce10a6f015"
+        },
+        {
+          "sha": "5d270d33f175bb5ff990058a1f1f5ea521f3b777",
+          "author_date": "2020-10-01T16:43:53Z",
+          "message": "fix: typos",
+          "html_url": "https://github.com/codenotary/immudb/commit/5d270d33f175bb5ff990058a1f1f5ea521f3b777"
+        },
+        {
+          "sha": "5fcad0371098482978913d0fb4e53dfd9598b414",
+          "author_date": "2020-10-01T20:45:31Z",
+          "message": "fix: set new appendable id when changing current appendable\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5fcad0371098482978913d0fb4e53dfd9598b414"
+        },
+        {
+          "sha": "5a4805b00a661580f1aa22fec24ea94bf158d637",
+          "author_date": "2020-10-02T13:13:48Z",
+          "message": "feat: store immutable settings into metadata section\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5a4805b00a661580f1aa22fec24ea94bf158d637"
+        },
+        {
+          "sha": "cfd4a33d86f5f274874cedfd6a57c6390e66c8fa",
+          "author_date": "2020-10-02T13:19:29Z",
+          "message": "chore: renamed filesize flag",
+          "html_url": "https://github.com/codenotary/immudb/commit/cfd4a33d86f5f274874cedfd6a57c6390e66c8fa"
+        },
+        {
+          "sha": "49c9552ea5c3b75b6456e32c870cd1b9826df3b1",
+          "author_date": "2020-10-02T13:23:35Z",
+          "message": "chore: moved stress_tool under tools folder",
+          "html_url": "https://github.com/codenotary/immudb/commit/49c9552ea5c3b75b6456e32c870cd1b9826df3b1"
+        },
+        {
+          "sha": "a930ef1bb500f56ee9c627c319d1bbbe22772323",
+          "author_date": "2020-10-02T13:29:29Z",
+          "message": "chore: reorg appendable packages\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a930ef1bb500f56ee9c627c319d1bbbe22772323"
+        },
+        {
+          "sha": "bdabd750d94238eae536b8e955216f69c032a7b6",
+          "author_date": "2020-10-02T13:53:34Z",
+          "message": "fix: return EOF when data cannot be fully read from appendables\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/bdabd750d94238eae536b8e955216f69c032a7b6"
+        },
+        {
+          "sha": "fc1972458b1a19abea5ff3cfa92db74a6387c90a",
+          "author_date": "2020-10-02T14:02:18Z",
+          "message": "chore: return partially written number of bytes when write is not completed\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/fc1972458b1a19abea5ff3cfa92db74a6387c90a"
+        },
+        {
+          "sha": "42ee78011e4e520e43b4f5bc274f910b8ebad881",
+          "author_date": "2020-10-02T17:45:01Z",
+          "message": "feat: towards data compression capabilities\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/42ee78011e4e520e43b4f5bc274f910b8ebad881"
+        },
+        {
+          "sha": "71671c1df2a7f48ee3e7eb8f71c9103242c4dcb1",
+          "author_date": "2020-10-02T19:43:44Z",
+          "message": "feat: set compression setting into value logs\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/71671c1df2a7f48ee3e7eb8f71c9103242c4dcb1"
+        },
+        {
+          "sha": "a33527c33d1d94af92da94b4a354a165513bd10c",
+          "author_date": "2020-10-03T12:50:04Z",
+          "message": "feat: towards data compression capabilities\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a33527c33d1d94af92da94b4a354a165513bd10c"
+        },
+        {
+          "sha": "b9718ce828e7dcae13566c910781d01b89a59103",
+          "author_date": "2020-10-03T18:58:36Z",
+          "message": "feat: data compression\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b9718ce828e7dcae13566c910781d01b89a59103"
+        },
+        {
+          "sha": "d5a06aaa9ba7c54eb48fe4a0f97fea6e4fbb3adf",
+          "author_date": "2020-10-03T19:31:12Z",
+          "message": "feat: data compression support by stress tool\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d5a06aaa9ba7c54eb48fe4a0f97fea6e4fbb3adf"
+        },
+        {
+          "sha": "c65bd53845151c5258cee328e128303bfad24335",
+          "author_date": "2020-10-04T11:40:13Z",
+          "message": "feat: add lzw compression format\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c65bd53845151c5258cee328e128303bfad24335"
+        },
+        {
+          "sha": "24a0da73954c92749bf0e45e543143dc99f1eb70",
+          "author_date": "2020-10-04T18:24:54Z",
+          "message": "fix: compression with multiple-files\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/24a0da73954c92749bf0e45e543143dc99f1eb70"
+        },
+        {
+          "sha": "6105aaa2704068ba57eaf25da378d5760f0ce500",
+          "author_date": "2020-10-04T22:40:19Z",
+          "message": "fix: compression with bigger values\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6105aaa2704068ba57eaf25da378d5760f0ce500"
+        },
+        {
+          "sha": "6b2d55363c86577283e6029df7e2ad26207fed9c",
+          "author_date": "2020-10-05T10:23:49Z",
+          "message": "chore: change max value length to 64Mb\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6b2d55363c86577283e6029df7e2ad26207fed9c"
+        },
+        {
+          "sha": "382a3f49b5b8e138cb22c4a69fe5cf0775aa5699",
+          "author_date": "2020-10-05T10:45:58Z",
+          "message": "feat: add flag to stress_tool to specify if values are random or fixed",
+          "html_url": "https://github.com/codenotary/immudb/commit/382a3f49b5b8e138cb22c4a69fe5cf0775aa5699"
+        },
+        {
+          "sha": "dec22f632cfe97cd160ee9508ce58d86494ea6d6",
+          "author_date": "2020-10-05T11:19:24Z",
+          "message": "chore: set fileSize based on initial value set at creation time\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/dec22f632cfe97cd160ee9508ce58d86494ea6d6"
+        },
+        {
+          "sha": "16dbc27d5ae4e6e13d734e05cc2cbafcb272c862",
+          "author_date": "2020-10-05T12:50:59Z",
+          "message": "chore: when compression is enabled, each append takes place into a single file\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/16dbc27d5ae4e6e13d734e05cc2cbafcb272c862"
+        },
+        {
+          "sha": "9ad44e0c12c117f3be91ee80e43e455db6fa82d7",
+          "author_date": "2020-10-05T13:17:07Z",
+          "message": "fix: pass compression settings into newly created single-file appendable\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9ad44e0c12c117f3be91ee80e43e455db6fa82d7"
+        },
+        {
+          "sha": "4e0ac79e673de6dd89e1b57993f5fd56aff3578b",
+          "author_date": "2020-10-05T14:52:40Z",
+          "message": "fix: read metadata before reading\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/4e0ac79e673de6dd89e1b57993f5fd56aff3578b"
+        },
+        {
+          "sha": "6836e6a48b62c19da49ab7331e446f771c389a0c",
+          "author_date": "2020-10-05T15:00:19Z",
+          "message": "fix: set fileSize after reading values from metadata\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6836e6a48b62c19da49ab7331e446f771c389a0c"
+        },
+        {
+          "sha": "cf4e022439002331729b5de03080f7b4aa84ece0",
+          "author_date": "2020-10-06T11:26:25Z",
+          "message": "test: lru cache unit testing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/cf4e022439002331729b5de03080f7b4aa84ece0"
+        },
+        {
+          "sha": "03071e4b7808f83f33ebc6b1534f70e2d32bf5f3",
+          "author_date": "2020-10-06T11:27:47Z",
+          "message": "tbtree implementation\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/03071e4b7808f83f33ebc6b1534f70e2d32bf5f3"
+        },
+        {
+          "sha": "d6e657a7655577f926181df0bfe5785f0b5772de",
+          "author_date": "2020-10-07T11:24:00Z",
+          "message": "chore: copy on insert and fresh snapshots\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d6e657a7655577f926181df0bfe5785f0b5772de"
+        },
+        {
+          "sha": "0eb47b8a58545a56a262e2ee7b4e2d4b9f74d65c",
+          "author_date": "2020-10-07T11:25:45Z",
+          "message": "feat: towards k-indexing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0eb47b8a58545a56a262e2ee7b4e2d4b9f74d65c"
+        },
+        {
+          "sha": "b9e8bcd89b96af02a8d1bd6ff2b0296a552f6446",
+          "author_date": "2020-10-08T16:08:26Z",
+          "message": "feat: initial indexing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b9e8bcd89b96af02a8d1bd6ff2b0296a552f6446"
+        },
+        {
+          "sha": "bed1f796b18b3fb29395c5cb5e23a8498628b488",
+          "author_date": "2020-10-08T19:47:18Z",
+          "message": "chore: changes to solve and improve concurrency\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/bed1f796b18b3fb29395c5cb5e23a8498628b488"
+        },
+        {
+          "sha": "59ef5d64b3cce30416bbdea1d969d5c3d9a84ab5",
+          "author_date": "2020-10-08T22:27:53Z",
+          "message": "chore: solved concurrency issues\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/59ef5d64b3cce30416bbdea1d969d5c3d9a84ab5"
+        },
+        {
+          "sha": "27b304e44bef67ae28ed3f646bd862d148018832",
+          "author_date": "2020-10-09T05:41:55Z",
+          "message": "chore: do not store hvalue in index\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/27b304e44bef67ae28ed3f646bd862d148018832"
+        },
+        {
+          "sha": "026908819df6c5df41458475c37392298f47545d",
+          "author_date": "2020-10-09T06:59:17Z",
+          "message": "chore: time-based flushing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/026908819df6c5df41458475c37392298f47545d"
+        },
+        {
+          "sha": "362916d0e0834cbac1501493bfe89c6cd3b04357",
+          "author_date": "2020-10-09T07:23:23Z",
+          "message": "chore: add VERSION to metadata section\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/362916d0e0834cbac1501493bfe89c6cd3b04357"
+        },
+        {
+          "sha": "0f2ff4ebdc870e1dcccbc2c1687d362f51d21489",
+          "author_date": "2020-10-09T07:47:24Z",
+          "message": "chore: close index when closing store\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0f2ff4ebdc870e1dcccbc2c1687d362f51d21489"
+        },
+        {
+          "sha": "0e562f69bf96ffe5540923d40d4f141e5ca46e90",
+          "author_date": "2020-10-09T08:19:54Z",
+          "message": "chore: options validation\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0e562f69bf96ffe5540923d40d4f141e5ca46e90"
+        },
+        {
+          "sha": "6c1009629a703741b8f2d202626a33f642bed079",
+          "author_date": "2020-10-09T12:00:53Z",
+          "message": "feat: add read numeric values\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6c1009629a703741b8f2d202626a33f642bed079"
+        },
+        {
+          "sha": "f528a298b0f1024122a2c66c2b1ffd48dacbb62f",
+          "author_date": "2020-10-09T12:01:32Z",
+          "message": "feat: back btree with multi-appendables\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f528a298b0f1024122a2c66c2b1ffd48dacbb62f"
+        },
+        {
+          "sha": "171f865d07a1a73de8dafc2078399c3f0212d102",
+          "author_date": "2020-10-10T13:31:49Z",
+          "message": "chore: when txInclusion is true then txLinking is made as well",
+          "html_url": "https://github.com/codenotary/immudb/commit/171f865d07a1a73de8dafc2078399c3f0212d102"
+        },
+        {
+          "sha": "e2c1efa77a7858d6df94a15eb065c35fac1e81f5",
+          "author_date": "2020-10-12T13:42:15Z",
+          "message": "feat: key updates tracing to support historical reading\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e2c1efa77a7858d6df94a15eb065c35fac1e81f5"
+        },
+        {
+          "sha": "84312d2fd859f45d4968ac372ec1de330debc635",
+          "author_date": "2020-10-12T14:33:22Z",
+          "message": "feat: retrieve the list of ts at which a key was updated\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/84312d2fd859f45d4968ac372ec1de330debc635"
+        },
+        {
+          "sha": "e4fb924dd913b9507418c8a3c3188c4ac80f9683",
+          "author_date": "2020-10-12T14:50:34Z",
+          "message": "chore: check for non-duplication within same tx\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e4fb924dd913b9507418c8a3c3188c4ac80f9683"
+        },
+        {
+          "sha": "6ce265c3535697e51cf118a6fa6bed54fde029f2",
+          "author_date": "2020-10-12T18:38:30Z",
+          "message": "chore: newTx method using store values\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6ce265c3535697e51cf118a6fa6bed54fde029f2"
+        },
+        {
+          "sha": "eaf3848c521489e755c6df68a015649ba0b7cb0c",
+          "author_date": "2020-10-13T11:54:09Z",
+          "message": "feat: add method for reading value of a key within a tx\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/eaf3848c521489e755c6df68a015649ba0b7cb0c"
+        },
+        {
+          "sha": "37253c13613490e2c5dca13c5b558c53c36ff43a",
+          "author_date": "2020-10-13T13:02:36Z",
+          "message": "chore: validate hvalue when reading value from vlog\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/37253c13613490e2c5dca13c5b558c53c36ff43a"
+        },
+        {
+          "sha": "ba7899bafd6b8d4f61fa1dcc347da0510b2e0279",
+          "author_date": "2020-10-13T21:20:38Z",
+          "message": "chore: changes on historical value tracing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ba7899bafd6b8d4f61fa1dcc347da0510b2e0279"
+        },
+        {
+          "sha": "d61f7323a305a416c64096d0717a6d49c3b94dd6",
+          "author_date": "2020-10-13T21:24:38Z",
+          "message": "chore: support for historical value tracing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d61f7323a305a416c64096d0717a6d49c3b94dd6"
+        },
+        {
+          "sha": "af661f9f5e66d42f89b2893a0b09978aa93bbeed",
+          "author_date": "2020-10-14T11:23:54Z",
+          "message": "fix: consider the case when key was not yet inserted\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/af661f9f5e66d42f89b2893a0b09978aa93bbeed"
+        },
+        {
+          "sha": "7a7a0269d1b20d19e88460da4ddf361897d41570",
+          "author_date": "2020-10-14T11:34:20Z",
+          "message": "chore: split code into files, index options exposed for external config\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7a7a0269d1b20d19e88460da4ddf361897d41570"
+        },
+        {
+          "sha": "6785c2d67390a010e659d5846f40ba7c369960ac",
+          "author_date": "2020-10-14T11:49:42Z",
+          "message": "chore: random and monotonic keys\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/6785c2d67390a010e659d5846f40ba7c369960ac"
+        },
+        {
+          "sha": "837508c3e9ed288604290a80b67d8a2b9fb7badb",
+          "author_date": "2020-10-14T12:58:28Z",
+          "message": "feat: add interactive mode for get/set key values\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/837508c3e9ed288604290a80b67d8a2b9fb7badb"
+        },
+        {
+          "sha": "778d1ee2b54055063dc0751c920d266b9ef1a102",
+          "author_date": "2020-10-14T14:04:46Z",
+          "message": "feat: IndexInfo to return up to which tx was indexed and error status of indexing task\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/778d1ee2b54055063dc0751c920d266b9ef1a102"
+        },
+        {
+          "sha": "01b6b2000fc98c14aafd77fb13b8ef0290f595ca",
+          "author_date": "2020-10-14T14:06:28Z",
+          "message": "chore: renamed to IndexInfo\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/01b6b2000fc98c14aafd77fb13b8ef0290f595ca"
+        },
+        {
+          "sha": "7fc13f78a4852c374190add70ba0cc40b2c5aabd",
+          "author_date": "2020-10-14T14:18:37Z",
+          "message": "feat: TxReader starts from a txID\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7fc13f78a4852c374190add70ba0cc40b2c5aabd"
+        },
+        {
+          "sha": "7176e7d83d22d2c276faa46d42bf6896dfdb1bac",
+          "author_date": "2020-10-14T16:16:27Z",
+          "message": "chore: mode as required flag\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7176e7d83d22d2c276faa46d42bf6896dfdb1bac"
+        },
+        {
+          "sha": "cc593fade4cc7b53bf3ee017c5170dc8243647c8",
+          "author_date": "2020-10-14T17:12:38Z",
+          "message": "chore: return after auto mode",
+          "html_url": "https://github.com/codenotary/immudb/commit/cc593fade4cc7b53bf3ee017c5170dc8243647c8"
+        },
+        {
+          "sha": "0d1d013f1525fc80854aadcc8835917829539afc",
+          "author_date": "2020-10-15T11:32:14Z",
+          "message": "chore: index file extensions",
+          "html_url": "https://github.com/codenotary/immudb/commit/0d1d013f1525fc80854aadcc8835917829539afc"
+        },
+        {
+          "sha": "ff44b690d234d4e284c8d9d7696e737c4d28ca15",
+          "author_date": "2020-10-15T11:57:26Z",
+          "message": "chore: validate clog size after setting fileSize from metadata\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ff44b690d234d4e284c8d9d7696e737c4d28ca15"
+        },
+        {
+          "sha": "e2864bff06134b7eb229a593bb816e9ca054e38d",
+          "author_date": "2020-10-15T13:29:58Z",
+          "message": "chore: panic when close returns an error",
+          "html_url": "https://github.com/codenotary/immudb/commit/e2864bff06134b7eb229a593bb816e9ca054e38d"
+        },
+        {
+          "sha": "96124bd5e12b1df393cc7ddc685962d60ab79d7b",
+          "author_date": "2020-10-15T13:31:08Z",
+          "message": "chore: panic if set key fails",
+          "html_url": "https://github.com/codenotary/immudb/commit/96124bd5e12b1df393cc7ddc685962d60ab79d7b"
+        },
+        {
+          "sha": "f0dba7ee0e54c06562d0aabf82d32ab647bd18d1",
+          "author_date": "2020-10-15T14:45:57Z",
+          "message": "feat: add sync method\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f0dba7ee0e54c06562d0aabf82d32ab647bd18d1"
+        },
+        {
+          "sha": "ca11dabc129bb7ec43683ef69367cacd48eec59f",
+          "author_date": "2020-10-15T16:17:11Z",
+          "message": "fix: encode metadata numeric fields with 64bits",
+          "html_url": "https://github.com/codenotary/immudb/commit/ca11dabc129bb7ec43683ef69367cacd48eec59f"
+        },
+        {
+          "sha": "310d51f791e97640c5bd8c9ff50e29851bfaf2ba",
+          "author_date": "2020-10-16T01:21:32Z",
+          "message": "chore: sync also applies to index\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/310d51f791e97640c5bd8c9ff50e29851bfaf2ba"
+        },
+        {
+          "sha": "2b8dc784565c24e818a42bdc9c51823eb71a912d",
+          "author_date": "2020-10-16T11:48:55Z",
+          "message": "chore: aof as default file ext",
+          "html_url": "https://github.com/codenotary/immudb/commit/2b8dc784565c24e818a42bdc9c51823eb71a912d"
+        },
+        {
+          "sha": "eca672b18c9beeec668325ba70d88d593ff54349",
+          "author_date": "2020-10-16T11:52:20Z",
+          "message": "chore: txi commit file ext",
+          "html_url": "https://github.com/codenotary/immudb/commit/eca672b18c9beeec668325ba70d88d593ff54349"
+        },
+        {
+          "sha": "bd30a037f8d07f2244edda7e07b21c70668713a2",
+          "author_date": "2020-10-17T02:47:40Z",
+          "message": "chore: implement commit log for btree and improved reduced dump\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/bd30a037f8d07f2244edda7e07b21c70668713a2"
+        },
+        {
+          "sha": "5f9b2dd1f1dc3795b613ee5e8bf6c32d0e8c9776",
+          "author_date": "2020-10-22T13:47:10Z",
+          "message": "chore: make spec read fields public\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5f9b2dd1f1dc3795b613ee5e8bf6c32d0e8c9776"
+        },
+        {
+          "sha": "e7c86afe8b10727ec7743932c3297cb01681c72a",
+          "author_date": "2020-10-22T19:23:34Z",
+          "message": "feat: ongoing implementation of appendable hash tree\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/e7c86afe8b10727ec7743932c3297cb01681c72a"
+        },
+        {
+          "sha": "47f9eb60d7861477254154c71f5cf4529c5c2976",
+          "author_date": "2020-10-23T13:51:01Z",
+          "message": "chore: advances in hash tree and proof construction\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/47f9eb60d7861477254154c71f5cf4529c5c2976"
+        },
+        {
+          "sha": "dc62c542b32dd9e0cc3aaeee4ae3bb57c82ffd29",
+          "author_date": "2020-10-23T15:49:48Z",
+          "message": "chore: hash tree construction\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/dc62c542b32dd9e0cc3aaeee4ae3bb57c82ffd29"
+        },
+        {
+          "sha": "49bd7e7f37732105fb90f9b21fd0485a4b0f0357",
+          "author_date": "2020-10-23T19:23:07Z",
+          "message": "some changes on tree construction and unit testing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/49bd7e7f37732105fb90f9b21fd0485a4b0f0357"
+        },
+        {
+          "sha": "f6bae7803d3b3d1a6f54acbaf102fbeaf49499a9",
+          "author_date": "2020-10-23T20:04:55Z",
+          "message": "test: add root validation\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/f6bae7803d3b3d1a6f54acbaf102fbeaf49499a9"
+        },
+        {
+          "sha": "49af24ef5a362141da7afa90a598a299075686e5",
+          "author_date": "2020-10-23T21:42:55Z",
+          "message": "towards inclusion proof\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/49af24ef5a362141da7afa90a598a299075686e5"
+        },
+        {
+          "sha": "1f6a88f976aa8d07aadd630a8e7b040aff3913f8",
+          "author_date": "2020-10-24T20:03:28Z",
+          "message": "inclusion proof: getting closer\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/1f6a88f976aa8d07aadd630a8e7b040aff3913f8"
+        },
+        {
+          "sha": "9930fb0b8f39cbc1a6dae056d2355b3e6c57fb18",
+          "author_date": "2020-10-25T02:16:00Z",
+          "message": "closer fails 5-7",
+          "html_url": "https://github.com/codenotary/immudb/commit/9930fb0b8f39cbc1a6dae056d2355b3e6c57fb18"
+        },
+        {
+          "sha": "36ff09dbe4bdcdbb254cc365e1b6a04a542ef793",
+          "author_date": "2020-10-25T19:16:02Z",
+          "message": "inclusion proof\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/36ff09dbe4bdcdbb254cc365e1b6a04a542ef793"
+        },
+        {
+          "sha": "78b1243d0eed3ec7dfcfd68eced8014186e9bf0a",
+          "author_date": "2020-10-25T19:20:14Z",
+          "message": "completed inclusion proof\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/78b1243d0eed3ec7dfcfd68eced8014186e9bf0a"
+        },
+        {
+          "sha": "23a2ac7c5caa572adb4dad862b60ee7ef7026baf",
+          "author_date": "2020-10-26T11:30:01Z",
+          "message": "+94 test coverage for hash tree implementation\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/23a2ac7c5caa572adb4dad862b60ee7ef7026baf"
+        },
+        {
+          "sha": "d12c7f7142a6f7c1708951e36203c510037ed4ab",
+          "author_date": "2020-10-26T11:45:12Z",
+          "message": "chore: minor changes in append operation",
+          "html_url": "https://github.com/codenotary/immudb/commit/d12c7f7142a6f7c1708951e36203c510037ed4ab"
+        },
+        {
+          "sha": "c67366a42bc909461b488bfbc619670a786cee03",
+          "author_date": "2020-10-27T15:05:46Z",
+          "message": "fix: restore current offset after reading compressed data\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c67366a42bc909461b488bfbc619670a786cee03"
+        },
+        {
+          "sha": "74a88355ded23d693390fc31577d5eae9e489bbb",
+          "author_date": "2020-10-27T15:16:18Z",
+          "message": "chore: move options validations to options file\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/74a88355ded23d693390fc31577d5eae9e489bbb"
+        },
+        {
+          "sha": "684e0c5a1bb4bfe9cfae8168e38354bed7a9e36f",
+          "author_date": "2020-10-27T15:18:20Z",
+          "message": "chore: unify naming\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/684e0c5a1bb4bfe9cfae8168e38354bed7a9e36f"
+        },
+        {
+          "sha": "d310d75be62d07da88e52c3577d2ac58c4ffd0b5",
+          "author_date": "2020-10-27T15:25:24Z",
+          "message": "chore: unify options for appendables\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/d310d75be62d07da88e52c3577d2ac58c4ffd0b5"
+        },
+        {
+          "sha": "c452fcb5b5dc318508e31f739722f4c97d06dfd5",
+          "author_date": "2020-10-27T16:24:16Z",
+          "message": "chore: error naming",
+          "html_url": "https://github.com/codenotary/immudb/commit/c452fcb5b5dc318508e31f739722f4c97d06dfd5"
+        },
+        {
+          "sha": "b00266c5231cd23781c5e96ed8db3e348721df05",
+          "author_date": "2020-10-27T16:25:04Z",
+          "message": "chore: error naming",
+          "html_url": "https://github.com/codenotary/immudb/commit/b00266c5231cd23781c5e96ed8db3e348721df05"
+        },
+        {
+          "sha": "a012850079e6d838805bf0a438512d87155a1481",
+          "author_date": "2020-10-27T20:14:28Z",
+          "message": "feat: towards persistent storage of mutable hash tree\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a012850079e6d838805bf0a438512d87155a1481"
+        },
+        {
+          "sha": "b85470098562f0dcf06a831fcc8e3593e5a6743a",
+          "author_date": "2020-10-28T13:45:13Z",
+          "message": "feat: several improvements, data by index\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b85470098562f0dcf06a831fcc8e3593e5a6743a"
+        },
+        {
+          "sha": "5f713bf21217eb6cc8ede43ffe562cf7ded933ab",
+          "author_date": "2020-10-28T14:04:09Z",
+          "message": "feat: multierr custom error wrapping multiple errors when closing the store\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/5f713bf21217eb6cc8ede43ffe562cf7ded933ab"
+        },
+        {
+          "sha": "54e9859be9246ecfd2202407f55d8174e61c6a20",
+          "author_date": "2020-10-28T15:05:08Z",
+          "message": "test: bunch of test cases\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/54e9859be9246ecfd2202407f55d8174e61c6a20"
+        },
+        {
+          "sha": "ab1daf275a8cb3e25e8a33df21977b00f1bb3943",
+          "author_date": "2020-10-28T15:25:43Z",
+          "message": "chore: multierror handling on close func\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ab1daf275a8cb3e25e8a33df21977b00f1bb3943"
+        },
+        {
+          "sha": "1563f3569817098ea4d52409e77e608b291899c0",
+          "author_date": "2020-10-28T15:28:25Z",
+          "message": "chore: multierror handling on close func\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/1563f3569817098ea4d52409e77e608b291899c0"
+        },
+        {
+          "sha": "c8984928bc1fbc63ba4b4af9402ae63c14f04486",
+          "author_date": "2020-10-28T18:08:36Z",
+          "message": "chore: minor code change",
+          "html_url": "https://github.com/codenotary/immudb/commit/c8984928bc1fbc63ba4b4af9402ae63c14f04486"
+        },
+        {
+          "sha": "710cb04d2c074be21e4214b6db2324e99aeea446",
+          "author_date": "2020-10-29T12:02:12Z",
+          "message": "feat: consistency proof\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/710cb04d2c074be21e4214b6db2324e99aeea446"
+        },
+        {
+          "sha": "2798fad9310452d8a93012e5deab9e8afbaff4a9",
+          "author_date": "2020-10-29T15:38:52Z",
+          "message": "feat: inclusion and consistency verification algorithms\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/2798fad9310452d8a93012e5deab9e8afbaff4a9"
+        },
+        {
+          "sha": "abd5797e6b5151c970618d5ac156235b39c62ec4",
+          "author_date": "2020-10-29T17:38:09Z",
+          "message": "chore: LinearProof verification\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/abd5797e6b5151c970618d5ac156235b39c62ec4"
+        },
+        {
+          "sha": "8a35050d989c39838a6291b377e1e637975b0e98",
+          "author_date": "2020-10-29T21:18:45Z",
+          "message": "feat: towards dual cryprographic linking\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/8a35050d989c39838a6291b377e1e637975b0e98"
+        },
+        {
+          "sha": "c50713c913cdfc47338ab69e8b45cc294fc0e936",
+          "author_date": "2020-10-29T21:19:30Z",
+          "message": "support empty payloads in hash tree\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c50713c913cdfc47338ab69e8b45cc294fc0e936"
+        },
+        {
+          "sha": "f7609fd1df3562b9b47ff96548d2aeb2c2ae0b18",
+          "author_date": "2020-10-30T11:11:04Z",
+          "message": "chore: unify kv hash calculation",
+          "html_url": "https://github.com/codenotary/immudb/commit/f7609fd1df3562b9b47ff96548d2aeb2c2ae0b18"
+        },
+        {
+          "sha": "2f405d9698a5ce9083e632d956b2f43097d42d7b",
+          "author_date": "2020-10-30T11:30:30Z",
+          "message": "chore: remove verification during indexing\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/2f405d9698a5ce9083e632d956b2f43097d42d7b"
+        },
+        {
+          "sha": "0a98c5f3457ca4b77382adf4629563a0e8d84f7b",
+          "author_date": "2020-10-30T12:40:41Z",
+          "message": "fix and improve linear cryptographic proof\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/0a98c5f3457ca4b77382adf4629563a0e8d84f7b"
+        },
+        {
+          "sha": "17c9c82ebd4d851a157a4fe6b5a5d7fdb9bba13e",
+          "author_date": "2020-10-30T12:43:53Z",
+          "message": "chore: simplify linear proof\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/17c9c82ebd4d851a157a4fe6b5a5d7fdb9bba13e"
+        },
+        {
+          "sha": "f79c941ea086ab5cd745928aa9eb50965c180fb3",
+          "author_date": "2020-10-30T13:03:47Z",
+          "message": "feat: store accumulative linear hash into mutable hash tree",
+          "html_url": "https://github.com/codenotary/immudb/commit/f79c941ea086ab5cd745928aa9eb50965c180fb3"
+        },
+        {
+          "sha": "ebf7b3b36943015c95cf74e7d0cb6fb2c5e2e2fe",
+          "author_date": "2020-10-30T14:07:56Z",
+          "message": "feat: dual cryptographic linking\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/ebf7b3b36943015c95cf74e7d0cb6fb2c5e2e2fe"
+        },
+        {
+          "sha": "b293d83eea39c6f6bfd20d9e7eed4585ead31131",
+          "author_date": "2020-10-30T17:39:24Z",
+          "message": "feat: dual proof and liearProof against target accumulative linear hash\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b293d83eea39c6f6bfd20d9e7eed4585ead31131"
+        },
+        {
+          "sha": "dbe184945931a8643c152f7a1a748856f0272405",
+          "author_date": "2020-10-30T18:08:32Z",
+          "message": "feat: towards linear and dual proofs\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/dbe184945931a8643c152f7a1a748856f0272405"
+        },
+        {
+          "sha": "7c8c0b3ce8f2c95f43ccd00564978ae2e022d17b",
+          "author_date": "2020-10-31T12:08:01Z",
+          "message": "feat: dual proof construction and verification\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7c8c0b3ce8f2c95f43ccd00564978ae2e022d17b"
+        },
+        {
+          "sha": "b421bfdc163ce2b5ce55cc3f071d157634ea3d3a",
+          "author_date": "2020-11-02T21:29:09Z",
+          "message": "thread-safe circular hash buffer\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/b421bfdc163ce2b5ce55cc3f071d157634ea3d3a"
+        },
+        {
+          "sha": "1c835d45bd9d946800c88a64cd578b1145d0fa0d",
+          "author_date": "2020-11-03T10:43:07Z",
+          "message": "chore: use constants for field len",
+          "html_url": "https://github.com/codenotary/immudb/commit/1c835d45bd9d946800c88a64cd578b1145d0fa0d"
+        },
+        {
+          "sha": "51cabb775eca236f98773b8f3c1e89b1396b544d",
+          "author_date": "2020-11-03T10:50:22Z",
+          "message": "chore: cbuffer pkg",
+          "html_url": "https://github.com/codenotary/immudb/commit/51cabb775eca236f98773b8f3c1e89b1396b544d"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.9.0-RC2",
@@ -947,8 +3817,15 @@
     {
       "release": "v1.2.4",
       "previous_release": "v1.2.4-RC1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "2dcaf09c7d2b76b099a977b8654ca921dad2524e",
+          "author_date": "2022-04-28T06:08:47Z",
+          "message": "release: v1.2.4",
+          "html_url": "https://github.com/codenotary/immudb/commit/2dcaf09c7d2b76b099a977b8654ca921dad2524e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.3.0-RC1",
@@ -959,8 +3836,27 @@
     {
       "release": "v1.3.0",
       "previous_release": "v1.3.0-RC1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "740ba5c468ab0a70ab3230d52f4058b5368a0507",
+          "author_date": "2022-05-20T16:43:04Z",
+          "message": "fix(pkg/client): enhance client-side validations in verified methods\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/740ba5c468ab0a70ab3230d52f4058b5368a0507"
+        },
+        {
+          "sha": "217b1a7e06ecc231bbe573b358b898f20b270829",
+          "author_date": "2022-05-23T12:45:03Z",
+          "message": "fix(embedded/sql): return invalid value when using aggregated col selector in temporal queries\n\nSigned-off-by: Jeronimo Irazabal <jeronimo.irazabal@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/217b1a7e06ecc231bbe573b358b898f20b270829"
+        },
+        {
+          "sha": "ce57d20a946c5a1ac5ec4b0be8c262f41527026d",
+          "author_date": "2022-05-23T12:59:29Z",
+          "message": "release: v1.3.0",
+          "html_url": "https://github.com/codenotary/immudb/commit/ce57d20a946c5a1ac5ec4b0be8c262f41527026d"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.3.1-RC1",
@@ -1079,8 +3975,105 @@
     {
       "release": "v1.9.4",
       "previous_release": "v1.9.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "302e84883569ffb49a2aa7045b99d993456e1e34",
+          "author_date": "2024-05-24T10:55:19Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/codenotary/immudb/commit/302e84883569ffb49a2aa7045b99d993456e1e34"
+        },
+        {
+          "sha": "5f3ddfe8c8eb6575ae4292ded3ac1f48d86371a6",
+          "author_date": "2024-05-24T11:13:33Z",
+          "message": "Remove license badge",
+          "html_url": "https://github.com/codenotary/immudb/commit/5f3ddfe8c8eb6575ae4292ded3ac1f48d86371a6"
+        },
+        {
+          "sha": "8de95c52068ac6d7cbf16b00c186d5a460791d33",
+          "author_date": "2024-05-24T06:31:35Z",
+          "message": "fix: set mattermost payload",
+          "html_url": "https://github.com/codenotary/immudb/commit/8de95c52068ac6d7cbf16b00c186d5a460791d33"
+        },
+        {
+          "sha": "a741ec957dfe78caaa9a64eeb8be5860935d9e9c",
+          "author_date": "2024-05-30T08:04:51Z",
+          "message": "Log request information as transaction metadata\n\nSigned-off-by: Stefano Scafiti <stefano.scafiti96@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a741ec957dfe78caaa9a64eeb8be5860935d9e9c"
+        },
+        {
+          "sha": "bbb16089f5c59fbc9a07e1443686a305c53ab895",
+          "author_date": "2024-06-04T12:08:29Z",
+          "message": "Add support for JSON type\n\nSigned-off-by: Stefano Scafiti <stefano.scafiti96@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/bbb16089f5c59fbc9a07e1443686a305c53ab895"
+        },
+        {
+          "sha": "a1472942c603418a17fd27fe9d77cf8156b55d80",
+          "author_date": "2024-06-07T13:57:28Z",
+          "message": "Add table of contents and projects section to README\n\nSigned-off-by: Stefano Scafiti <stefano.scafiti96@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/a1472942c603418a17fd27fe9d77cf8156b55d80"
+        },
+        {
+          "sha": "a36e4bc7718dd3837720201b3cd47662c9289880",
+          "author_date": "2024-05-24T08:58:14Z",
+          "message": "Add CreatedAt and CreatedBy to DatabaseInfo",
+          "html_url": "https://github.com/codenotary/immudb/commit/a36e4bc7718dd3837720201b3cd47662c9289880"
+        },
+        {
+          "sha": "7784338e79500db45ff78c6b093905e283359e4a",
+          "author_date": "2024-07-03T12:54:20Z",
+          "message": "Implement CHECK constraints\n\nSigned-off-by: Stefano Scafiti <stefano.scafiti96@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/7784338e79500db45ff78c6b093905e283359e4a"
+        },
+        {
+          "sha": "9cb67cd768609d9b3bd80e51867c5620c6195e8f",
+          "author_date": "2024-07-04T09:12:19Z",
+          "message": "Update go.sum",
+          "html_url": "https://github.com/codenotary/immudb/commit/9cb67cd768609d9b3bd80e51867c5620c6195e8f"
+        },
+        {
+          "sha": "68c7d59cdc9dd9cf345e516b7e9adccb1a294fbd",
+          "author_date": "2024-07-15T09:00:58Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/codenotary/immudb/commit/68c7d59cdc9dd9cf345e516b7e9adccb1a294fbd"
+        },
+        {
+          "sha": "10ad00566d1d192bcb55f4ade968f7d76b372247",
+          "author_date": "2024-07-22T13:03:53Z",
+          "message": "Prohibite changing transiency of keys",
+          "html_url": "https://github.com/codenotary/immudb/commit/10ad00566d1d192bcb55f4ade968f7d76b372247"
+        },
+        {
+          "sha": "3eec9d408a476074b5e5584097417f4b0da46978",
+          "author_date": "2024-07-24T11:31:35Z",
+          "message": "Fix startup failure when remote identifier is not present\n\nSigned-off-by: Stefano Scafiti <stefano.scafiti96@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/3eec9d408a476074b5e5584097417f4b0da46978"
+        },
+        {
+          "sha": "c189283793ad5dc3c9b6e12210f90f48b6ae5911",
+          "author_date": "2024-07-23T09:45:15Z",
+          "message": "Implement SQL permissions\n\nSigned-off-by: Stefano Scafiti <stefano.scafiti96@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/c189283793ad5dc3c9b6e12210f90f48b6ae5911"
+        },
+        {
+          "sha": "08344093d210bb84d01799c1355cad30bfece543",
+          "author_date": "2024-07-25T11:36:56Z",
+          "message": "Refactor SQL privileges\n\n- Ensure backward compatibility;\n- Include database name in schema type;\n\nSigned-off-by: Stefano Scafiti <stefano.scafiti96@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/08344093d210bb84d01799c1355cad30bfece543"
+        },
+        {
+          "sha": "9237a8300c22a226a23b5548f95f210a2e23ddf3",
+          "author_date": "2024-07-24T13:09:26Z",
+          "message": "Implement CSV import/export of tables\n\nSigned-off-by: Stefano Scafiti <stefano.scafiti96@gmail.com>",
+          "html_url": "https://github.com/codenotary/immudb/commit/9237a8300c22a226a23b5548f95f210a2e23ddf3"
+        },
+        {
+          "sha": "76cd08a0ec757a3dc498d584799d15df1aa5a9ef",
+          "author_date": "2024-07-25T20:09:48Z",
+          "message": "release v1.9.4",
+          "html_url": "https://github.com/codenotary/immudb/commit/76cd08a0ec757a3dc498d584799d15df1aa5a9ef"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.9.5",

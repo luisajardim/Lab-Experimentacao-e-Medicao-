@@ -2203,8 +2203,27 @@
     {
       "release": "v0.5.2",
       "previous_release": "v0.5.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "772131ea43febc080c2d72a4bc276b68a5883be8",
+          "author_date": "2023-09-27T04:26:20Z",
+          "message": "ENH: validate model URI on register (#476)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/772131ea43febc080c2d72a4bc276b68a5883be8"
+        },
+        {
+          "sha": "614552b80e89a0af801bc254c8de58df1e3f7701",
+          "author_date": "2023-09-27T11:13:09Z",
+          "message": "ENH: Skip download for embedding models (#499)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/614552b80e89a0af801bc254c8de58df1e3f7701"
+        },
+        {
+          "sha": "3a5082f28a1cb6ef0c294e8062fbfb49d158b57f",
+          "author_date": "2023-09-27T11:28:07Z",
+          "message": "ENH: set `trust_remote_code` to true (#500)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/3a5082f28a1cb6ef0c294e8062fbfb49d158b57f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.5.3",
@@ -2413,8 +2432,63 @@
     {
       "release": "v0.10.3",
       "previous_release": "v0.10.2.post1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "2dc74da45ba135b1151d1b592bdce03d2e3e9590",
+          "author_date": "2024-04-22T05:43:30Z",
+          "message": "BUG: Fix Launching embedding or reranking models from commandline fails due to PEFT  (#1343)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/2dc74da45ba135b1151d1b592bdce03d2e3e9590"
+        },
+        {
+          "sha": "9602061e03249df5155f94fdfda17b0a89e538c5",
+          "author_date": "2024-04-22T06:25:11Z",
+          "message": "FEAT: support llama-3 family (#1332)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/9602061e03249df5155f94fdfda17b0a89e538c5"
+        },
+        {
+          "sha": "6e8413f46115c5fc06c8de9e239bcd76bdf4b275",
+          "author_date": "2024-04-22T10:11:47Z",
+          "message": "DOC: Add new models to README (#1346)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/6e8413f46115c5fc06c8de9e239bcd76bdf4b275"
+        },
+        {
+          "sha": "30420f5ec0141917c92ecbdc100acb224c964b7f",
+          "author_date": "2024-04-22T10:37:56Z",
+          "message": "FEAT: Add Belle-whisper-large-v3-zh (#1351)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/30420f5ec0141917c92ecbdc100acb224c964b7f"
+        },
+        {
+          "sha": "78897c51ca7c0a4751a870dd0b8b6813a7eafd58",
+          "author_date": "2024-04-23T01:52:18Z",
+          "message": "BUG: Fix extra parameters issue when auto-recovering models (#1348)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/78897c51ca7c0a4751a870dd0b8b6813a7eafd58"
+        },
+        {
+          "sha": "6fb9dc59cb96d87daf80028fe4183e135ab3df75",
+          "author_date": "2024-04-23T03:08:26Z",
+          "message": "DOC: Update README, add FastGPT to integrations (#1355)\n\nSigned-off-by: Carson Yang <yangchuansheng33@gmail.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/6fb9dc59cb96d87daf80028fe4183e135ab3df75"
+        },
+        {
+          "sha": "c6e4e918b1609edcb84a82ed567d8c2c18c64246",
+          "author_date": "2024-04-23T03:30:20Z",
+          "message": "ENH: fix the max length of codeqwen-7B-chat (#1354)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/c6e4e918b1609edcb84a82ed567d8c2c18c64246"
+        },
+        {
+          "sha": "9ddff329b277be6941bca22481d05197d6cae450",
+          "author_date": "2024-04-23T10:10:05Z",
+          "message": "BUG: Fix old rerank models use flag rerank issue (#1350)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/9ddff329b277be6941bca22481d05197d6cae450"
+        },
+        {
+          "sha": "2ba72b0ed55c2dbff12491485ffacee7996d3490",
+          "author_date": "2024-04-24T02:45:37Z",
+          "message": "ENH: Clear cache for embedding and rerank (#1360)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/2ba72b0ed55c2dbff12491485ffacee7996d3490"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.11.0",
@@ -2593,8 +2667,39 @@
     {
       "release": "v0.16.2",
       "previous_release": "v0.16.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9a5aeb0999ba9c2ea52852d72c6e3accbfa0b6a4",
+          "author_date": "2024-10-30T04:26:41Z",
+          "message": "DOC: modify NPU doc (#2485)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/9a5aeb0999ba9c2ea52852d72c6e3accbfa0b6a4"
+        },
+        {
+          "sha": "bd599b2a940b93c0dda213db18afc2074ea27655",
+          "author_date": "2024-10-30T09:41:40Z",
+          "message": "DOC: Add doc for ocr (#2492)\n\nCo-authored-by: qinxuye <qinxuye@gmail.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/bd599b2a940b93c0dda213db18afc2074ea27655"
+        },
+        {
+          "sha": "bbd39eba87c0ec899950f3dfb96fbf23de05a949",
+          "author_date": "2024-11-01T07:46:18Z",
+          "message": "BLD: Remove Python 3.8 & Support Python 3.12 (#2503)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/bbd39eba87c0ec899950f3dfb96fbf23de05a949"
+        },
+        {
+          "sha": "07f932533d4b09af9878529dcb48270b44dfc039",
+          "author_date": "2024-11-01T09:00:10Z",
+          "message": "BUG: fix bge-reranker-v2-minicpm-layerwise rerank issue (#2495)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/07f932533d4b09af9878529dcb48270b44dfc039"
+        },
+        {
+          "sha": "67e97ab485b539dc7a208825bee0504acc37044e",
+          "author_date": "2024-11-01T09:56:47Z",
+          "message": "FEAT: add download from openmind_hub (#2504)\n\nCo-authored-by: cookieyyds <@985663835@qq.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/67e97ab485b539dc7a208825bee0504acc37044e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.16.3",
@@ -2725,8 +2830,153 @@
     {
       "release": "v1.7.0",
       "previous_release": "v1.6.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "91f743a8d21a7c335ec12d4d4cb3bbf2c98536ad",
+          "author_date": "2025-06-03T01:19:53Z",
+          "message": "FEAT: support CogView4 image model (#3557)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/91f743a8d21a7c335ec12d4d4cb3bbf2c98536ad"
+        },
+        {
+          "sha": "245b917e624eab66b1e20b06bbd8d1319ebd013e",
+          "author_date": "2025-06-03T09:50:05Z",
+          "message": "FEAT: [UI] support model_ability filter for image and video models. (#3563)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/245b917e624eab66b1e20b06bbd8d1319ebd013e"
+        },
+        {
+          "sha": "0a4e9978f4b92526e7965630d585fd5077b73a66",
+          "author_date": "2025-06-03T12:44:08Z",
+          "message": "BUG: Fix dependency (#3566)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/0a4e9978f4b92526e7965630d585fd5077b73a66"
+        },
+        {
+          "sha": "04037236ec74ac9395786aba697069b5981c76dd",
+          "author_date": "2025-06-04T03:58:28Z",
+          "message": "DOC: update links (#3565)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/04037236ec74ac9395786aba697069b5981c76dd"
+        },
+        {
+          "sha": "c4120a1a92b3a8a3c89cc426a63b8cb1a9d9d7a4",
+          "author_date": "2025-06-04T07:19:58Z",
+          "message": "FEAT: [UI] auto-switch to active tab when Running Models page loads. (#3568)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/c4120a1a92b3a8a3c89cc426a63b8cb1a9d9d7a4"
+        },
+        {
+          "sha": "d76059bb1644beba269fb0f64372eaf927c065ff",
+          "author_date": "2025-06-05T03:09:08Z",
+          "message": "FEAT: support first-last-frame to video (#3555)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/d76059bb1644beba269fb0f64372eaf927c065ff"
+        },
+        {
+          "sha": "1d2b6948947fb6870f0a61d82d5f4d9e312e3f3b",
+          "author_date": "2025-06-05T05:30:01Z",
+          "message": "FEAT: [UI] add Japanese and Korean language support. (#3574)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/1d2b6948947fb6870f0a61d82d5f4d9e312e3f3b"
+        },
+        {
+          "sha": "4586d1c4966020976e159da776bc4703f246fd29",
+          "author_date": "2025-06-08T07:04:05Z",
+          "message": "FEAT: SeACoParaformer model (#3587)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/4586d1c4966020976e159da776bc4703f246fd29"
+        },
+        {
+          "sha": "56e4de650adfaf6d80949f004ca964aed300713e",
+          "author_date": "2025-06-08T12:25:11Z",
+          "message": "BUG: Fix cmdline (#3589)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/56e4de650adfaf6d80949f004ca964aed300713e"
+        },
+        {
+          "sha": "0427c99fb73317d46ab4e093702c1764fe72da60",
+          "author_date": "2025-06-09T17:25:32Z",
+          "message": "BUG: fix potential hang for sglang (#3597)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/0427c99fb73317d46ab4e093702c1764fe72da60"
+        },
+        {
+          "sha": "62a429aba4e1fefd462137084f76c03d4a0498ec",
+          "author_date": "2025-06-10T09:42:37Z",
+          "message": "FEAT: support verbose_json for funasr family audio2text models (#3591)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/62a429aba4e1fefd462137084f76c03d4a0498ec"
+        },
+        {
+          "sha": "85b5da8f71c254c9b6f91158f98d531ae1380885",
+          "author_date": "2025-06-10T11:42:40Z",
+          "message": "FEAT: support deepseek-r1-0528 Mixed quantization (#3601)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/85b5da8f71c254c9b6f91158f98d531ae1380885"
+        },
+        {
+          "sha": "95db4420cae8b1a32d6be399b4a90e466145bff7",
+          "author_date": "2025-06-11T02:44:56Z",
+          "message": "ENH: Support pcm response_format (#3606)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/95db4420cae8b1a32d6be399b4a90e466145bff7"
+        },
+        {
+          "sha": "2510a3455b3eab77925576e2f17acd87c6f5e8ab",
+          "author_date": "2025-06-11T10:31:58Z",
+          "message": "DOC: Update CosyVoice doc (#3605)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/2510a3455b3eab77925576e2f17acd87c6f5e8ab"
+        },
+        {
+          "sha": "b1397004d8969e800c8f8c56ca84893158af9767",
+          "author_date": "2025-06-11T12:09:55Z",
+          "message": "FEAT: support engines for embedding models (#2791)\n\nCo-authored-by: qinxuye <qinxuye@gmail.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/b1397004d8969e800c8f8c56ca84893158af9767"
+        },
+        {
+          "sha": "c328ae1091112b808d1df96fd6d91c618267ea24",
+          "author_date": "2025-06-11T16:18:07Z",
+          "message": "FEAT:support MiniCPM4 Series (#3609)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/c328ae1091112b808d1df96fd6d91c618267ea24"
+        },
+        {
+          "sha": "d8bd9a4ad5f5dc04497a4a4611097011d1c21776",
+          "author_date": "2025-06-12T03:29:32Z",
+          "message": "BUG: [UI] fixed the mobile language switching bug. (#3608)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/d8bd9a4ad5f5dc04497a4a4611097011d1c21776"
+        },
+        {
+          "sha": "c210729eedfaab67ec1474fe320e29f5a22ccca4",
+          "author_date": "2025-06-12T07:04:26Z",
+          "message": "BUG:  Fix the error when using Qwen function call with Spring AI. (#3614)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/c210729eedfaab67ec1474fe320e29f5a22ccca4"
+        },
+        {
+          "sha": "66807a1cd53b01b3970e2619b1d232a83b3a0ebc",
+          "author_date": "2025-06-12T10:20:45Z",
+          "message": "FEAT: [UI] add model_engine parameter to embedding model. (#3617)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/66807a1cd53b01b3970e2619b1d232a83b3a0ebc"
+        },
+        {
+          "sha": "c3ffc512f8073c32d4fa4d44ebe1cfeef3fb209a",
+          "author_date": "2025-06-13T05:29:33Z",
+          "message": "FEAT: add kwargs for transripts client API (#3622)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/c3ffc512f8073c32d4fa4d44ebe1cfeef3fb209a"
+        },
+        {
+          "sha": "e75b375e47c6ba8a8d5ece927b94dd2471c9aad7",
+          "author_date": "2025-06-13T05:33:17Z",
+          "message": "BUG: [UI] fix model_engine parameter bug. (#3620)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/e75b375e47c6ba8a8d5ece927b94dd2471c9aad7"
+        },
+        {
+          "sha": "4c27c67e032fdbffe5b9bf8df551c705566d319c",
+          "author_date": "2025-06-13T08:04:02Z",
+          "message": "FEAT: support qwen3 embedding (#3615)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/4c27c67e032fdbffe5b9bf8df551c705566d319c"
+        },
+        {
+          "sha": "cd96829c643820fd942087d9d09c95e4e5d94ecf",
+          "author_date": "2025-06-13T10:23:20Z",
+          "message": "FEAT: support qwen3-reranker (#3627)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/cd96829c643820fd942087d9d09c95e4e5d94ecf"
+        },
+        {
+          "sha": "a362dba7334ef08c758bbc4a3d4904fe53cefe78",
+          "author_date": "2025-06-13T10:51:07Z",
+          "message": "DOC: update models (#3628)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/a362dba7334ef08c758bbc4a3d4904fe53cefe78"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.7.0.post1",
@@ -2809,8 +3059,105 @@
     {
       "release": "v1.13.0",
       "previous_release": "v1.12.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "303fcbd831feb51f0c2feb038b61fc2084ca2eba",
+          "author_date": "2025-11-03T14:14:03Z",
+          "message": "DOC: added new models (#4206)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/303fcbd831feb51f0c2feb038b61fc2084ca2eba"
+        },
+        {
+          "sha": "726ea2d2cdb0729d22d50ad01c0144b30b8bdd9d",
+          "author_date": "2025-11-04T11:02:42Z",
+          "message": "BUG: Deepseek-OCR error in docker (#4208)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/726ea2d2cdb0729d22d50ad01c0144b30b8bdd9d"
+        },
+        {
+          "sha": "f2db5e0b4fa26aafd80f2de259df664a229dba1d",
+          "author_date": "2025-11-06T15:53:08Z",
+          "message": "ENH: IndexTTS2 stream output (#4213)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/f2db5e0b4fa26aafd80f2de259df664a229dba1d"
+        },
+        {
+          "sha": "712d8b8608ea05c2eaa3cde5fff9784cbdfc3bba",
+          "author_date": "2025-11-07T09:27:28Z",
+          "message": "chore: sync models JSON [audio, embedding, image, llm, rerank, video] (#4214)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/712d8b8608ea05c2eaa3cde5fff9784cbdfc3bba"
+        },
+        {
+          "sha": "e19a95548357934bf2aa9f9d86e2548b7cdb0c9a",
+          "author_date": "2025-11-07T10:21:37Z",
+          "message": "chore: sync models JSON [audio, embedding, image, llm, rerank, video] (#4226)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/e19a95548357934bf2aa9f9d86e2548b7cdb0c9a"
+        },
+        {
+          "sha": "b1d7c218b9704933b923afb0ed4c7849738e2f3e",
+          "author_date": "2025-11-10T03:39:13Z",
+          "message": "FEAT: [model] Qwen3-VL-MLX support (#4203)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/b1d7c218b9704933b923afb0ed4c7849738e2f3e"
+        },
+        {
+          "sha": "d54927c833322aec76de4e82ae40b702ffdf1d54",
+          "author_date": "2025-11-11T02:56:35Z",
+          "message": "DOC: Xinference 1.12.0 installation issues with uv (#4228)\n\nCo-authored-by: qinxuye <qinxuye@gmail.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/d54927c833322aec76de4e82ae40b702ffdf1d54"
+        },
+        {
+          "sha": "43b77606fcdfd05c9e904edd0dc5b1d0d4cdf216",
+          "author_date": "2025-11-12T09:55:07Z",
+          "message": "BUG: ensure unique tool call IDs using UUID (#4242)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/43b77606fcdfd05c9e904edd0dc5b1d0d4cdf216"
+        },
+        {
+          "sha": "9bff3b0196e48dee90c98fa8934b81c1e7d28c88",
+          "author_date": "2025-11-12T11:03:20Z",
+          "message": "BUG: IndexTTS2-offline-deploy (#4202)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/9bff3b0196e48dee90c98fa8934b81c1e7d28c88"
+        },
+        {
+          "sha": "c550277cf5c0c5a4de516c26989e7609c7aebfd6",
+          "author_date": "2025-11-12T11:09:15Z",
+          "message": "FEAT: auto batch embedding (#4197)\n\nCo-authored-by: llyycchhee <mozer2019@163.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/c550277cf5c0c5a4de516c26989e7609c7aebfd6"
+        },
+        {
+          "sha": "da9b4f5c8802c8011b667e3ada53948df3e33df4",
+          "author_date": "2025-11-13T03:25:50Z",
+          "message": "chore: sync models JSON [audio] (#4243)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/da9b4f5c8802c8011b667e3ada53948df3e33df4"
+        },
+        {
+          "sha": "7829fbe7f441d8b6fb9e3f55b2e94a309837f6d9",
+          "author_date": "2025-11-13T04:12:00Z",
+          "message": "ENH: add embedding benchmark (#4244)\n\nCo-authored-by: Xuye Qin <qinxuye@gmail.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/7829fbe7f441d8b6fb9e3f55b2e94a309837f6d9"
+        },
+        {
+          "sha": "18c7a8eead0bea4d7409973487cbf4aec417e479",
+          "author_date": "2025-11-13T12:12:28Z",
+          "message": "BUG: Fix cache model not shown on audio、video and image (#4247)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/18c7a8eead0bea4d7409973487cbf4aec417e479"
+        },
+        {
+          "sha": "9fa627ffca6b8f43c1fcab0166b7f8fa7efb53f3",
+          "author_date": "2025-11-13T12:15:27Z",
+          "message": "FEAT: update models via Xinference model hub (#4241)\n\nCo-authored-by: yiboyasss <3359595624@qq.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/9fa627ffca6b8f43c1fcab0166b7f8fa7efb53f3"
+        },
+        {
+          "sha": "33903643ca231e8f47537e9ec64f1f13b1e05f20",
+          "author_date": "2025-11-14T08:04:36Z",
+          "message": "DOC: add model update documentation. (#4246)",
+          "html_url": "https://github.com/xorbitsai/inference/commit/33903643ca231e8f47537e9ec64f1f13b1e05f20"
+        },
+        {
+          "sha": "5451ed137ba96e08a14ead789dc3183ec19b569a",
+          "author_date": "2025-11-14T17:36:04Z",
+          "message": "BLD: Fix CI error caused by peft version (#4249)\n\nCo-authored-by: qinxuye <qinxuye@gmail.com>",
+          "html_url": "https://github.com/xorbitsai/inference/commit/5451ed137ba96e08a14ead789dc3183ec19b569a"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.14.0",

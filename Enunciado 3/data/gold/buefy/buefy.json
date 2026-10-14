@@ -1676,8 +1676,471 @@
     {
       "release": "v0.8.0",
       "previous_release": "v0.7.10",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "0899e0bdc217f77844da3ecfb5bee76df787760c",
+          "author_date": "2019-07-09T21:58:04Z",
+          "message": "Add Tooltip delay to constructor default (#1537)",
+          "html_url": "https://github.com/buefy/buefy/commit/0899e0bdc217f77844da3ecfb5bee76df787760c"
+        },
+        {
+          "sha": "8e47f7d1b0b83da328eff67669f1e4ca265cef57",
+          "author_date": "2019-07-10T18:32:08Z",
+          "message": "Fix for #1541 (#1543)\n\nChanging v-model value when using included navigation",
+          "html_url": "https://github.com/buefy/buefy/commit/8e47f7d1b0b83da328eff67669f1e4ca265cef57"
+        },
+        {
+          "sha": "697265c7736c1bafe50ba37b3a411da3d5d3d3e0",
+          "author_date": "2019-07-10T20:00:42Z",
+          "message": "Use new version of issue templates (#1545)\n\nThis PR also add template for Feature Request and for PR\r\n\r\nhttps://help.github.com/articles/about-issue-and-pull-request-templates",
+          "html_url": "https://github.com/buefy/buefy/commit/697265c7736c1bafe50ba37b3a411da3d5d3d3e0"
+        },
+        {
+          "sha": "2d46d1e206b058336121b9092b952181ebbe1434",
+          "author_date": "2019-07-10T20:03:21Z",
+          "message": "Update bug report",
+          "html_url": "https://github.com/buefy/buefy/commit/2d46d1e206b058336121b9092b952181ebbe1434"
+        },
+        {
+          "sha": "1cc2e84eb5c8d72e051150a920d7ff3f3bd09cb5",
+          "author_date": "2019-07-10T22:13:30Z",
+          "message": "Add rollup",
+          "html_url": "https://github.com/buefy/buefy/commit/1cc2e84eb5c8d72e051150a920d7ff3f3bd09cb5"
+        },
+        {
+          "sha": "8201f1e9641f8417f2f0d0a4d12312f12f89f39e",
+          "author_date": "2019-07-10T22:21:40Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/buefy/buefy/commit/8201f1e9641f8417f2f0d0a4d12312f12f89f39e"
+        },
+        {
+          "sha": "fa350582082bc03df4e720d9360fd77693ecd79e",
+          "author_date": "2019-07-10T22:23:33Z",
+          "message": "Fix changelog",
+          "html_url": "https://github.com/buefy/buefy/commit/fa350582082bc03df4e720d9360fd77693ecd79e"
+        },
+        {
+          "sha": "82532ee58f5ae52f700b81fd2de4f070cf2ec63d",
+          "author_date": "2019-07-11T20:11:47Z",
+          "message": "Add sortIcon and sortIconSize props to table component (#1548)",
+          "html_url": "https://github.com/buefy/buefy/commit/82532ee58f5ae52f700b81fd2de4f070cf2ec63d"
+        },
+        {
+          "sha": "31481a9c743e7090b34e49f23e55eb742a86bb7f",
+          "author_date": "2019-07-14T13:38:47Z",
+          "message": "Fix scripts in package.json",
+          "html_url": "https://github.com/buefy/buefy/commit/31481a9c743e7090b34e49f23e55eb742a86bb7f"
+        },
+        {
+          "sha": "7fbb62f6859a02464982fbb0d7d6da5439d93271",
+          "author_date": "2019-07-14T13:39:01Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/buefy/buefy/commit/7fbb62f6859a02464982fbb0d7d6da5439d93271"
+        },
+        {
+          "sha": "b89c34c00bc301aebeffdc7ff60cc67ec2c4e970",
+          "author_date": "2019-07-14T13:39:48Z",
+          "message": "Remove yarn.lock",
+          "html_url": "https://github.com/buefy/buefy/commit/b89c34c00bc301aebeffdc7ff60cc67ec2c4e970"
+        },
+        {
+          "sha": "e71bf1eca921fed56e60fc600599a28f3a4f4bd0",
+          "author_date": "2019-07-14T13:49:37Z",
+          "message": "Bump axios from 0.16.2 to 0.18.1 (#1557)",
+          "html_url": "https://github.com/buefy/buefy/commit/e71bf1eca921fed56e60fc600599a28f3a4f4bd0"
+        },
+        {
+          "sha": "78f15ba7bd660d88868c995e7d345e0ae6f622aa",
+          "author_date": "2019-07-14T14:08:49Z",
+          "message": "Fix z-index in input file",
+          "html_url": "https://github.com/buefy/buefy/commit/78f15ba7bd660d88868c995e7d345e0ae6f622aa"
+        },
+        {
+          "sha": "fee16c2142dad280a2453e220d1215c8558bf826",
+          "author_date": "2019-07-14T14:31:11Z",
+          "message": "Add header slot to table-column",
+          "html_url": "https://github.com/buefy/buefy/commit/fee16c2142dad280a2453e220d1215c8558bf826"
+        },
+        {
+          "sha": "6423ce2b5bb14da4314d6f2cd106c8b1b620b938",
+          "author_date": "2019-07-14T20:19:00Z",
+          "message": "Fix #1472 warning status icon",
+          "html_url": "https://github.com/buefy/buefy/commit/6423ce2b5bb14da4314d6f2cd106c8b1b620b938"
+        },
+        {
+          "sha": "c2d7a6441b5978861a5f8606f11669b92b09ab47",
+          "author_date": "2019-07-14T21:25:41Z",
+          "message": "Improve internal slot component",
+          "html_url": "https://github.com/buefy/buefy/commit/c2d7a6441b5978861a5f8606f11669b92b09ab47"
+        },
+        {
+          "sha": "5fb474b85ac55b86a62dd33ff46f1a7f00a757d4",
+          "author_date": "2019-07-14T21:27:53Z",
+          "message": "Add current index in header scoped slots",
+          "html_url": "https://github.com/buefy/buefy/commit/5fb474b85ac55b86a62dd33ff46f1a7f00a757d4"
+        },
+        {
+          "sha": "ddd1d8355daeb6b85b1ecae5e13117bdf0cd5b6b",
+          "author_date": "2019-07-14T21:46:38Z",
+          "message": "Fix #1544 years select datepicker",
+          "html_url": "https://github.com/buefy/buefy/commit/ddd1d8355daeb6b85b1ecae5e13117bdf0cd5b6b"
+        },
+        {
+          "sha": "a6eca43b1feae47c0aa37f0d2acf068cd9460cc4",
+          "author_date": "2019-07-14T22:13:56Z",
+          "message": "Close #1551 add default-minutes and seconds prop to timepicker",
+          "html_url": "https://github.com/buefy/buefy/commit/a6eca43b1feae47c0aa37f0d2acf068cd9460cc4"
+        },
+        {
+          "sha": "47a121901982ebd725cd59d99f87cfc280cd1043",
+          "author_date": "2019-07-14T22:23:09Z",
+          "message": "Remove components index.js build",
+          "html_url": "https://github.com/buefy/buefy/commit/47a121901982ebd725cd59d99f87cfc280cd1043"
+        },
+        {
+          "sha": "bebfda1d7ebda4858480c030f409a41df37b8e24",
+          "author_date": "2019-07-17T19:03:15Z",
+          "message": "Add a  focusable prop to dropdown-item (#1572)",
+          "html_url": "https://github.com/buefy/buefy/commit/bebfda1d7ebda4858480c030f409a41df37b8e24"
+        },
+        {
+          "sha": "fc53c63aee5b6f154920babd87e1948ce1546d0e",
+          "author_date": "2019-07-17T19:20:41Z",
+          "message": "Fix slanted x when attached props is used (#1567)",
+          "html_url": "https://github.com/buefy/buefy/commit/fc53c63aee5b6f154920babd87e1948ce1546d0e"
+        },
+        {
+          "sha": "2f2eff687d45af067a3d002116c6c820313648d6",
+          "author_date": "2019-07-17T19:22:30Z",
+          "message": "Reset current selected files only when native",
+          "html_url": "https://github.com/buefy/buefy/commit/2f2eff687d45af067a3d002116c6c820313648d6"
+        },
+        {
+          "sha": "a919f6005ab2228c3424a4a83caf4b6e4f2a2531",
+          "author_date": "2019-07-17T19:24:29Z",
+          "message": "Fix last deleted file when multiple (#1555)",
+          "html_url": "https://github.com/buefy/buefy/commit/a919f6005ab2228c3424a4a83caf4b6e4f2a2531"
+        },
+        {
+          "sha": "155fe77aa8b0d0a262078dfba8611fb81dc01136",
+          "author_date": "2019-07-17T19:32:04Z",
+          "message": "Add component Progress Bar (#1552)",
+          "html_url": "https://github.com/buefy/buefy/commit/155fe77aa8b0d0a262078dfba8611fb81dc01136"
+        },
+        {
+          "sha": "c13a7bc0c2a028de93476834491822b168168297",
+          "author_date": "2019-07-17T19:37:58Z",
+          "message": "Close #1549 rounded prop in pagination api",
+          "html_url": "https://github.com/buefy/buefy/commit/c13a7bc0c2a028de93476834491822b168168297"
+        },
+        {
+          "sha": "89729658f0c4c1b093034293bdf6cf33a558289a",
+          "author_date": "2019-07-17T19:39:17Z",
+          "message": "Fix #1542  for Steps (#1550)",
+          "html_url": "https://github.com/buefy/buefy/commit/89729658f0c4c1b093034293bdf6cf33a558289a"
+        },
+        {
+          "sha": "dfa6e7624d1356142ed0570e6914afbc2f7c9c75",
+          "author_date": "2019-07-17T19:42:30Z",
+          "message": "Pagination ellipsis behavior (#1529)",
+          "html_url": "https://github.com/buefy/buefy/commit/dfa6e7624d1356142ed0570e6914afbc2f7c9c75"
+        },
+        {
+          "sha": "03aec9a53395abd39d142afe2a59b41979f03845",
+          "author_date": "2019-07-17T19:56:29Z",
+          "message": "Add mouse hover events to b-table (#1569)",
+          "html_url": "https://github.com/buefy/buefy/commit/03aec9a53395abd39d142afe2a59b41979f03845"
+        },
+        {
+          "sha": "9ed2a7a329fa80efde28e2936efae82a7cbd3b2d",
+          "author_date": "2019-07-17T20:00:53Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/buefy/buefy/commit/9ed2a7a329fa80efde28e2936efae82a7cbd3b2d"
+        },
+        {
+          "sha": "578387414172be29fd5e8b404a5756dda69f309c",
+          "author_date": "2019-07-17T20:01:07Z",
+          "message": "Merge branch 'dev' of https://github.com/rafaelpimpa/buefy into dev",
+          "html_url": "https://github.com/buefy/buefy/commit/578387414172be29fd5e8b404a5756dda69f309c"
+        },
+        {
+          "sha": "bfc138deca8d789387fb12e91a874948c440b29c",
+          "author_date": "2019-07-17T20:01:35Z",
+          "message": "Add export all components in src",
+          "html_url": "https://github.com/buefy/buefy/commit/bfc138deca8d789387fb12e91a874948c440b29c"
+        },
+        {
+          "sha": "f2b803f5f13a0db82dd84661351a8fb06dcbd056",
+          "author_date": "2019-07-17T20:35:58Z",
+          "message": "Add new style options for switch (#1568)",
+          "html_url": "https://github.com/buefy/buefy/commit/f2b803f5f13a0db82dd84661351a8fb06dcbd056"
+        },
+        {
+          "sha": "e33d206c98181b8359f314b6cc1be6c50eccc96e",
+          "author_date": "2019-07-17T20:39:28Z",
+          "message": "Add anchor tag to documentation inner title (#1574)",
+          "html_url": "https://github.com/buefy/buefy/commit/e33d206c98181b8359f314b6cc1be6c50eccc96e"
+        },
+        {
+          "sha": "93da738dece9ec14bad0415dd322e3b3914a9a07",
+          "author_date": "2019-07-17T20:40:09Z",
+          "message": "Fix default rounded prop value",
+          "html_url": "https://github.com/buefy/buefy/commit/93da738dece9ec14bad0415dd322e3b3914a9a07"
+        },
+        {
+          "sha": "989690bfa99302184813214d26b9bfda83481e25",
+          "author_date": "2019-07-17T21:04:59Z",
+          "message": "Update export components",
+          "html_url": "https://github.com/buefy/buefy/commit/989690bfa99302184813214d26b9bfda83481e25"
+        },
+        {
+          "sha": "ccf9e33ff3772b4e93d5bcba8764f656f63431cc",
+          "author_date": "2019-07-17T21:20:54Z",
+          "message": "fix exports named in rollup config",
+          "html_url": "https://github.com/buefy/buefy/commit/ccf9e33ff3772b4e93d5bcba8764f656f63431cc"
+        },
+        {
+          "sha": "d2ef2b93a648f78ec3a747cd643ba0a958968526",
+          "author_date": "2019-07-17T21:21:05Z",
+          "message": "Update start docs",
+          "html_url": "https://github.com/buefy/buefy/commit/d2ef2b93a648f78ec3a747cd643ba0a958968526"
+        },
+        {
+          "sha": "aafb6f731d014b76840d9c9f7cd56da67762f112",
+          "author_date": "2019-07-17T21:35:06Z",
+          "message": "Fix #1565 datepicker programmatically on mobile",
+          "html_url": "https://github.com/buefy/buefy/commit/aafb6f731d014b76840d9c9f7cd56da67762f112"
+        },
+        {
+          "sha": "e376edd81e4bcf06955e0a2a9bd7edcd11124d70",
+          "author_date": "2019-07-22T20:16:36Z",
+          "message": "Rename esm build",
+          "html_url": "https://github.com/buefy/buefy/commit/e376edd81e4bcf06955e0a2a9bd7edcd11124d70"
+        },
+        {
+          "sha": "9a24a36c026ce567e82c612cd0538c74dec039cf",
+          "author_date": "2019-07-23T06:00:42Z",
+          "message": "Doc fixes (#1582)",
+          "html_url": "https://github.com/buefy/buefy/commit/9a24a36c026ce567e82c612cd0538c74dec039cf"
+        },
+        {
+          "sha": "67bb0b56a0a9f1434efda7e49891a53f1bb85aca",
+          "author_date": "2019-07-23T20:35:40Z",
+          "message": "Update rollup config",
+          "html_url": "https://github.com/buefy/buefy/commit/67bb0b56a0a9f1434efda7e49891a53f1bb85aca"
+        },
+        {
+          "sha": "3945e7a7bbf9455ce4f366c4be8097d7190f3f37",
+          "author_date": "2019-07-23T20:35:45Z",
+          "message": "Merge branch 'dev' of https://github.com/rafaelpimpa/buefy into dev",
+          "html_url": "https://github.com/buefy/buefy/commit/3945e7a7bbf9455ce4f366c4be8097d7190f3f37"
+        },
+        {
+          "sha": "3be36ead14e5545e53d3c5dd4c975adf39cd818c",
+          "author_date": "2019-07-23T20:37:14Z",
+          "message": "Feature/nav bar (#1578)",
+          "html_url": "https://github.com/buefy/buefy/commit/3be36ead14e5545e53d3c5dd4c975adf39cd818c"
+        },
+        {
+          "sha": "cac30ec45b2a972efdc2d89eaa6a051476226435",
+          "author_date": "2019-07-23T20:44:31Z",
+          "message": "[Component] Slider (#1581)",
+          "html_url": "https://github.com/buefy/buefy/commit/cac30ec45b2a972efdc2d89eaa6a051476226435"
+        },
+        {
+          "sha": "e0af1be22aa88e0bba97431501ba76d4d3ac738e",
+          "author_date": "2019-07-23T21:09:39Z",
+          "message": "Updte navbar docs",
+          "html_url": "https://github.com/buefy/buefy/commit/e0af1be22aa88e0bba97431501ba76d4d3ac738e"
+        },
+        {
+          "sha": "076a7a4cd250acc1dd9093529918cc3edf7d6133",
+          "author_date": "2019-07-23T21:10:30Z",
+          "message": "Close #1291 listen events on native select",
+          "html_url": "https://github.com/buefy/buefy/commit/076a7a4cd250acc1dd9093529918cc3edf7d6133"
+        },
+        {
+          "sha": "6a41b28626383dd177441bd8bdfbe9ade587c34f",
+          "author_date": "2019-07-23T21:21:29Z",
+          "message": "Focus for Radio, Checkbox and Switch (#1586)",
+          "html_url": "https://github.com/buefy/buefy/commit/6a41b28626383dd177441bd8bdfbe9ade587c34f"
+        },
+        {
+          "sha": "b6f686b5cfefc85a1e435f16d7d96ff64b08a230",
+          "author_date": "2019-07-23T22:13:17Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/buefy/buefy/commit/b6f686b5cfefc85a1e435f16d7d96ff64b08a230"
+        },
+        {
+          "sha": "41478cb8f68bdf158e16d6cfda8112552e14ee72",
+          "author_date": "2019-07-24T18:56:11Z",
+          "message": "[Pagination] Added props for adding buttons before and after current page (#1575)\n\n* Added props for adding buttons before and after current page\r\n\r\n* forgot to set the min left to 1 instead of 2\r\n\r\n* Renamed the before and after attributes to range-*",
+          "html_url": "https://github.com/buefy/buefy/commit/41478cb8f68bdf158e16d6cfda8112552e14ee72"
+        },
+        {
+          "sha": "f698293352806b6535bc865ad1dc21db4db50a6d",
+          "author_date": "2019-07-25T06:09:54Z",
+          "message": "Add aria label for close button (#1590)",
+          "html_url": "https://github.com/buefy/buefy/commit/f698293352806b6535bc865ad1dc21db4db50a6d"
+        },
+        {
+          "sha": "3a16af0dcb02f6ab119bce5e3d34f3fad6f2cd8b",
+          "author_date": "2019-07-25T16:06:30Z",
+          "message": " Add ariaCloseLabel prop for Tag (#1595)\n\n* Add aria label for close button\r\n\r\n* Add ariaCloseLabel prop for Tag",
+          "html_url": "https://github.com/buefy/buefy/commit/3a16af0dcb02f6ab119bce5e3d34f3fad6f2cd8b"
+        },
+        {
+          "sha": "01bed5d1297528db735bd920cb9a7653be183e7c",
+          "author_date": "2019-07-25T20:51:08Z",
+          "message": "Add cloning value in taginput (#1598)",
+          "html_url": "https://github.com/buefy/buefy/commit/01bed5d1297528db735bd920cb9a7653be183e7c"
+        },
+        {
+          "sha": "3b6248ad7b22f52a11a0734045d42f8f2b1843a2",
+          "author_date": "2019-07-26T18:34:18Z",
+          "message": "add hasCounter to Taginput (#1603)",
+          "html_url": "https://github.com/buefy/buefy/commit/3b6248ad7b22f52a11a0734045d42f8f2b1843a2"
+        },
+        {
+          "sha": "32151dee4e216d474b42d9c9c62850e007e92dbf",
+          "author_date": "2019-07-29T20:05:33Z",
+          "message": "Update backers",
+          "html_url": "https://github.com/buefy/buefy/commit/32151dee4e216d474b42d9c9c62850e007e92dbf"
+        },
+        {
+          "sha": "fb7944d61c7cd51df3fea8744c8896dd36a25a76",
+          "author_date": "2019-07-29T20:32:32Z",
+          "message": "Add unit tests for progress component (#1607)",
+          "html_url": "https://github.com/buefy/buefy/commit/fb7944d61c7cd51df3fea8744c8896dd36a25a76"
+        },
+        {
+          "sha": "08c18f846c8bde1a366ef4ed4ead383e104ed118",
+          "author_date": "2019-07-29T20:42:34Z",
+          "message": "Fixes #1601 (#1606)",
+          "html_url": "https://github.com/buefy/buefy/commit/08c18f846c8bde1a366ef4ed4ead383e104ed118"
+        },
+        {
+          "sha": "1e180a53a8c8b687d4689a509ccf3d95e1f67574",
+          "author_date": "2019-07-29T20:47:54Z",
+          "message": "Update table docs",
+          "html_url": "https://github.com/buefy/buefy/commit/1e180a53a8c8b687d4689a509ccf3d95e1f67574"
+        },
+        {
+          "sha": "33946bde22bb29cb9e58ccd1a99d8e832af5aa43",
+          "author_date": "2019-07-29T20:51:21Z",
+          "message": "Fix a Vue Warn in the console (#1608)",
+          "html_url": "https://github.com/buefy/buefy/commit/33946bde22bb29cb9e58ccd1a99d8e832af5aa43"
+        },
+        {
+          "sha": "9d4a4a49f9e8f0895027b305d597950c1bc305ab",
+          "author_date": "2019-07-29T20:58:54Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/buefy/buefy/commit/9d4a4a49f9e8f0895027b305d597950c1bc305ab"
+        },
+        {
+          "sha": "6e3b59a4c70908be0fbe5ea0dca3828b1d972644",
+          "author_date": "2019-07-29T21:04:18Z",
+          "message": "Merge branch 'dev' of https://github.com/rafaelpimpa/buefy into dev",
+          "html_url": "https://github.com/buefy/buefy/commit/6e3b59a4c70908be0fbe5ea0dca3828b1d972644"
+        },
+        {
+          "sha": "3f7bb8fe401e6a6722ef0ec7d28c1d418b6d80ad",
+          "author_date": "2019-07-29T21:04:47Z",
+          "message": "Fix #1591 datepicker parser on mobile",
+          "html_url": "https://github.com/buefy/buefy/commit/3f7bb8fe401e6a6722ef0ec7d28c1d418b6d80ad"
+        },
+        {
+          "sha": "88933cfcaf6f0ee0a74c74aa6df3cd6310879f51",
+          "author_date": "2019-07-30T14:52:48Z",
+          "message": "Improve unit tests (#1611)\n\n* Improve helpers unit tests\r\n\r\n* Improve Field component unit tests\r\n\r\n* Improve DatepickerTable component unit tests\r\n\r\n* Improve Swich component unit tests\r\n\r\n* Improve Select component unit tests\r\n\r\n* Improve Radio component unit tests\r\n\r\n* Improve Progress component unit tests",
+          "html_url": "https://github.com/buefy/buefy/commit/88933cfcaf6f0ee0a74c74aa6df3cd6310879f51"
+        },
+        {
+          "sha": "27092b38be2536402b381b5706645d73e3b0eb98",
+          "author_date": "2019-07-30T20:08:13Z",
+          "message": "Enable code splitting and tree shaking with multiple entry points (#1605)",
+          "html_url": "https://github.com/buefy/buefy/commit/27092b38be2536402b381b5706645d73e3b0eb98"
+        },
+        {
+          "sha": "30b5a8fbd4d370c090275b447899134a4ebf5cd8",
+          "author_date": "2019-07-30T20:43:40Z",
+          "message": "Fix esm/cjs build",
+          "html_url": "https://github.com/buefy/buefy/commit/30b5a8fbd4d370c090275b447899134a4ebf5cd8"
+        },
+        {
+          "sha": "5ba5094ed846608ae32bbadba5e79c01c4650f70",
+          "author_date": "2019-07-30T21:11:38Z",
+          "message": "Fix #1268 add $buefy namespace",
+          "html_url": "https://github.com/buefy/buefy/commit/5ba5094ed846608ae32bbadba5e79c01c4650f70"
+        },
+        {
+          "sha": "9e34d12b9531bb544353d91e802cdabcfaea17d0",
+          "author_date": "2019-07-30T21:15:19Z",
+          "message": "Fix auto scroll on docs",
+          "html_url": "https://github.com/buefy/buefy/commit/9e34d12b9531bb544353d91e802cdabcfaea17d0"
+        },
+        {
+          "sha": "c673637f56d6c3ceb10a22eeeb80204c8a2d5c09",
+          "author_date": "2019-07-31T19:55:54Z",
+          "message": "Remove Symbol as type",
+          "html_url": "https://github.com/buefy/buefy/commit/c673637f56d6c3ceb10a22eeeb80204c8a2d5c09"
+        },
+        {
+          "sha": "b633d67885be246dd583a27e78b6bbd080693a0a",
+          "author_date": "2019-07-31T20:07:29Z",
+          "message": "Remove other Symbol",
+          "html_url": "https://github.com/buefy/buefy/commit/b633d67885be246dd583a27e78b6bbd080693a0a"
+        },
+        {
+          "sha": "615fd85e3558f42a9934266de3b9dad9fd48c323",
+          "author_date": "2019-07-31T20:10:05Z",
+          "message": "Update rollup config",
+          "html_url": "https://github.com/buefy/buefy/commit/615fd85e3558f42a9934266de3b9dad9fd48c323"
+        },
+        {
+          "sha": "85f1eeb8a767f20ef883fb70d9ad2fc95e10cafd",
+          "author_date": "2019-07-31T20:15:07Z",
+          "message": "Fix #1137 hide hoverable dropdown menu after click",
+          "html_url": "https://github.com/buefy/buefy/commit/85f1eeb8a767f20ef883fb70d9ad2fc95e10cafd"
+        },
+        {
+          "sha": "5d6100b59640556bac6f7fda0b332e9f058f27e0",
+          "author_date": "2019-07-31T20:20:08Z",
+          "message": "Fix navbar docs",
+          "html_url": "https://github.com/buefy/buefy/commit/5d6100b59640556bac6f7fda0b332e9f058f27e0"
+        },
+        {
+          "sha": "0f9df278f188d5663a474b138bcc83d40cbdec2e",
+          "author_date": "2019-07-31T20:30:41Z",
+          "message": "fix cleancss",
+          "html_url": "https://github.com/buefy/buefy/commit/0f9df278f188d5663a474b138bcc83d40cbdec2e"
+        },
+        {
+          "sha": "f7b3b43febfe0552a47d7892c34a4c9502baa523",
+          "author_date": "2019-07-31T20:48:15Z",
+          "message": "Fixes #1576 (#1604)",
+          "html_url": "https://github.com/buefy/buefy/commit/f7b3b43febfe0552a47d7892c34a4c9502baa523"
+        },
+        {
+          "sha": "8698fcafe334b282a3b487cce99f4c7a09538b20",
+          "author_date": "2019-07-31T20:58:42Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/buefy/buefy/commit/8698fcafe334b282a3b487cce99f4c7a09538b20"
+        },
+        {
+          "sha": "ef44594cf9f7fce07d5713bc74c9b30a6dd80e06",
+          "author_date": "2019-07-31T21:16:39Z",
+          "message": "Update expo philips screenshot",
+          "html_url": "https://github.com/buefy/buefy/commit/ef44594cf9f7fce07d5713bc74c9b30a6dd80e06"
+        },
+        {
+          "sha": "e1234a311b8e9c0ffc5794fdd4d7e8ccacfb1c8f",
+          "author_date": "2019-07-31T21:16:59Z",
+          "message": "0.8.0",
+          "html_url": "https://github.com/buefy/buefy/commit/e1234a311b8e9c0ffc5794fdd4d7e8ccacfb1c8f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.8.1",
@@ -1742,8 +2205,333 @@
     {
       "release": "v0.8.11",
       "previous_release": "v0.8.10",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "965c9fd73e6219e95480e9a8d2aeae013d53f91f",
+          "author_date": "2020-01-20T21:36:35Z",
+          "message": "Fix carbon ads loading",
+          "html_url": "https://github.com/buefy/buefy/commit/965c9fd73e6219e95480e9a8d2aeae013d53f91f"
+        },
+        {
+          "sha": "ba357b801d73b54a75a6c861a2fe2d3320e6c148",
+          "author_date": "2020-01-20T22:07:44Z",
+          "message": "Fix responsive home",
+          "html_url": "https://github.com/buefy/buefy/commit/ba357b801d73b54a75a6c861a2fe2d3320e6c148"
+        },
+        {
+          "sha": "2ce0e5eba18ec031119fbe1c80aa7ae74a2d159d",
+          "author_date": "2020-01-20T23:17:36Z",
+          "message": "Fix carbon ads prerendering",
+          "html_url": "https://github.com/buefy/buefy/commit/2ce0e5eba18ec031119fbe1c80aa7ae74a2d159d"
+        },
+        {
+          "sha": "cb2863f896193f75f96978c81d1fda9b48b7722c",
+          "author_date": "2020-01-21T21:31:17Z",
+          "message": "fix progress bar text (#2158)",
+          "html_url": "https://github.com/buefy/buefy/commit/cb2863f896193f75f96978c81d1fda9b48b7722c"
+        },
+        {
+          "sha": "dcd91191e5623173c453c7b7646aab88ddbffba0",
+          "author_date": "2020-01-23T12:57:56Z",
+          "message": "Add epeat prop for Carousel component. (#2165)",
+          "html_url": "https://github.com/buefy/buefy/commit/dcd91191e5623173c453c7b7646aab88ddbffba0"
+        },
+        {
+          "sha": "32281712e0a98abd7496701cfd54ca55ed83ee4a",
+          "author_date": "2020-01-26T10:03:24Z",
+          "message": "Fix #2163 typo in table api docs",
+          "html_url": "https://github.com/buefy/buefy/commit/32281712e0a98abd7496701cfd54ca55ed83ee4a"
+        },
+        {
+          "sha": "3752f7efe1a9b53f8c80aa57b070897aed9f8848",
+          "author_date": "2020-01-26T10:03:37Z",
+          "message": "Merge branch 'dev' of https://github.com/rafaelpimpa/buefy into dev",
+          "html_url": "https://github.com/buefy/buefy/commit/3752f7efe1a9b53f8c80aa57b070897aed9f8848"
+        },
+        {
+          "sha": "39e918aa1fe574bcc8096436080d99a7029f8279",
+          "author_date": "2020-01-26T10:12:39Z",
+          "message": "Fix #2160 navbar remove class on destroy",
+          "html_url": "https://github.com/buefy/buefy/commit/39e918aa1fe574bcc8096436080d99a7029f8279"
+        },
+        {
+          "sha": "9da3978a9d3ecdfcc8e59068d93115d5d6b95bb3",
+          "author_date": "2020-01-27T21:51:27Z",
+          "message": "Fix tab header (#2171)",
+          "html_url": "https://github.com/buefy/buefy/commit/9da3978a9d3ecdfcc8e59068d93115d5d6b95bb3"
+        },
+        {
+          "sha": "ff4daee5e282e74bfc112d0a5e6d70ca15755f0b",
+          "author_date": "2020-01-28T19:27:28Z",
+          "message": "add keyboard navigation and aria attributes to NavbarDropdown (#2173)",
+          "html_url": "https://github.com/buefy/buefy/commit/ff4daee5e282e74bfc112d0a5e6d70ca15755f0b"
+        },
+        {
+          "sha": "a0ff6ba3b81c389ba6081522f531f709890037b6",
+          "author_date": "2020-01-29T17:16:11Z",
+          "message": "Datetimepicker with timezone (#2177)",
+          "html_url": "https://github.com/buefy/buefy/commit/a0ff6ba3b81c389ba6081522f531f709890037b6"
+        },
+        {
+          "sha": "19bc02cb5c0c5497352e6e00a66ec3f4ac6975cb",
+          "author_date": "2020-01-30T20:38:03Z",
+          "message": "Add the possibility to customize Messages icon (#2175)",
+          "html_url": "https://github.com/buefy/buefy/commit/19bc02cb5c0c5497352e6e00a66ec3f4ac6975cb"
+        },
+        {
+          "sha": "7a26cc5d275537843c269ef579c07949dbec0708",
+          "author_date": "2020-01-31T17:01:34Z",
+          "message": "Fix 'size' property default value (#2186)",
+          "html_url": "https://github.com/buefy/buefy/commit/7a26cc5d275537843c269ef579c07949dbec0708"
+        },
+        {
+          "sha": "d2d4f181d0d078fb88b4fff91299a1f21d9daba9",
+          "author_date": "2020-02-02T15:36:35Z",
+          "message": "Fix #2187 alignment when attached tags",
+          "html_url": "https://github.com/buefy/buefy/commit/d2d4f181d0d078fb88b4fff91299a1f21d9daba9"
+        },
+        {
+          "sha": "28e2e2393999f5734f95684e73e0cafc7434fe24",
+          "author_date": "2020-02-02T15:52:08Z",
+          "message": "Fix #2190 check empty slot",
+          "html_url": "https://github.com/buefy/buefy/commit/28e2e2393999f5734f95684e73e0cafc7434fe24"
+        },
+        {
+          "sha": "ad196b17ee95d5d8c06b2d771a9e13f9533d3c29",
+          "author_date": "2020-02-02T15:54:46Z",
+          "message": "Fix #2172 progress docs",
+          "html_url": "https://github.com/buefy/buefy/commit/ad196b17ee95d5d8c06b2d771a9e13f9533d3c29"
+        },
+        {
+          "sha": "c518ddb38e3d4247eb771a0493f353e5167b0b27",
+          "author_date": "2020-02-02T16:02:11Z",
+          "message": "Upgrade MDI to Latest Version (#2192)",
+          "html_url": "https://github.com/buefy/buefy/commit/c518ddb38e3d4247eb771a0493f353e5167b0b27"
+        },
+        {
+          "sha": "26d016e301f40b97d9bca0da889f73f328b17468",
+          "author_date": "2020-02-02T16:50:50Z",
+          "message": "Clean taginput scss",
+          "html_url": "https://github.com/buefy/buefy/commit/26d016e301f40b97d9bca0da889f73f328b17468"
+        },
+        {
+          "sha": "9d4e0ee572a6abcaf1863a5f3cfd3d9966538a88",
+          "author_date": "2020-02-02T17:12:20Z",
+          "message": "Fix #2157 carousel with autoplay and no pause",
+          "html_url": "https://github.com/buefy/buefy/commit/9d4e0ee572a6abcaf1863a5f3cfd3d9966538a88"
+        },
+        {
+          "sha": "67f06f432de42ab17e0576070b69318d74f4b10b",
+          "author_date": "2020-02-02T17:18:38Z",
+          "message": "Update carousel docs",
+          "html_url": "https://github.com/buefy/buefy/commit/67f06f432de42ab17e0576070b69318d74f4b10b"
+        },
+        {
+          "sha": "6e1e0fdd7c980c5cb5c51bec3764705b19f2ec2b",
+          "author_date": "2020-02-02T17:29:29Z",
+          "message": "Add clearable prop to autocomplete (#2169)",
+          "html_url": "https://github.com/buefy/buefy/commit/6e1e0fdd7c980c5cb5c51bec3764705b19f2ec2b"
+        },
+        {
+          "sha": "9bb2e5a8f8b8fc376ecba7445b7478a8e9b81086",
+          "author_date": "2020-02-03T16:05:22Z",
+          "message": "fix \"Avoid mutating a prop directly\" on loading component (#2193)",
+          "html_url": "https://github.com/buefy/buefy/commit/9bb2e5a8f8b8fc376ecba7445b7478a8e9b81086"
+        },
+        {
+          "sha": "d2464e3677986521a01b4ed6d104a49aabb0aa98",
+          "author_date": "2020-02-03T18:17:26Z",
+          "message": "Improve some unit tests (#2194)",
+          "html_url": "https://github.com/buefy/buefy/commit/d2464e3677986521a01b4ed6d104a49aabb0aa98"
+        },
+        {
+          "sha": "a866fa54f849e99b9940ae1b26c1a9723c2da80b",
+          "author_date": "2020-02-05T07:30:43Z",
+          "message": "Update backers",
+          "html_url": "https://github.com/buefy/buefy/commit/a866fa54f849e99b9940ae1b26c1a9723c2da80b"
+        },
+        {
+          "sha": "f3ce00f57ce45ee322006678b094208e366b6932",
+          "author_date": "2020-02-05T07:49:37Z",
+          "message": "Pass event on icon-right-click event",
+          "html_url": "https://github.com/buefy/buefy/commit/f3ce00f57ce45ee322006678b094208e366b6932"
+        },
+        {
+          "sha": "9026b74829c62e46a81c186112cc78772d0359c0",
+          "author_date": "2020-02-05T15:00:56Z",
+          "message": "Update @vue/test-utils to 1.0.0-beta.29 (#2201)\n\n- Fixed a bug (https://github.com/vuejs/vue-test-utils/issues/1137)\r\n- Remove unnecessary warning when running unit tests",
+          "html_url": "https://github.com/buefy/buefy/commit/9026b74829c62e46a81c186112cc78772d0359c0"
+        },
+        {
+          "sha": "758701900ff59c05cc8d6d3035a66777b2aa4fa3",
+          "author_date": "2020-02-05T15:05:33Z",
+          "message": "Fix undefined on carousel (#2202)\n\n- Add a condition before deactivating an item",
+          "html_url": "https://github.com/buefy/buefy/commit/758701900ff59c05cc8d6d3035a66777b2aa4fa3"
+        },
+        {
+          "sha": "6a5c4b6611ba229200606b0cf6d5aa643f5609cc",
+          "author_date": "2020-02-05T18:18:30Z",
+          "message": "Fix vee validate example (#2203)\n\n- Update VeeValidate Extension Doc\r\n- Remove deprecated example\r\n- Add link to a working example in CodeSandbox",
+          "html_url": "https://github.com/buefy/buefy/commit/6a5c4b6611ba229200606b0cf6d5aa643f5609cc"
+        },
+        {
+          "sha": "10ec09264dd524e8162ad5341ce3b2dc44970515",
+          "author_date": "2020-02-05T18:20:13Z",
+          "message": "Refactor a little bit the Input Component (#2200)\n\n- Simplify the Input template code\r\n- Bring more logic to the code\r\n- Improve separation of concerns\r\n- Add an example using the input right icon\r\n- Add `icon-right-click` to the doc",
+          "html_url": "https://github.com/buefy/buefy/commit/10ec09264dd524e8162ad5341ce3b2dc44970515"
+        },
+        {
+          "sha": "c23eb67a5452c7b29cc7a09a224525ae9c47c49b",
+          "author_date": "2020-02-09T10:52:27Z",
+          "message": "Update expo",
+          "html_url": "https://github.com/buefy/buefy/commit/c23eb67a5452c7b29cc7a09a224525ae9c47c49b"
+        },
+        {
+          "sha": "18afe613912daf3eab4919bba7d35b24b325e705",
+          "author_date": "2020-02-09T17:38:31Z",
+          "message": "Fix #2191 navbar dropdown close on click when hoverable",
+          "html_url": "https://github.com/buefy/buefy/commit/18afe613912daf3eab4919bba7d35b24b325e705"
+        },
+        {
+          "sha": "f8664bcf1ac3bce01acfbf045d14c6cbba85eace",
+          "author_date": "2020-02-09T18:07:07Z",
+          "message": "Fix #2185 taginput when over maxtags",
+          "html_url": "https://github.com/buefy/buefy/commit/f8664bcf1ac3bce01acfbf045d14c6cbba85eace"
+        },
+        {
+          "sha": "9574a476117dd92d33fe8b33f1e6b2c470031e3e",
+          "author_date": "2020-02-09T18:09:38Z",
+          "message": "Update sample json",
+          "html_url": "https://github.com/buefy/buefy/commit/9574a476117dd92d33fe8b33f1e6b2c470031e3e"
+        },
+        {
+          "sha": "4fdbf495354a98197c3c06c834e78d62e31e6c59",
+          "author_date": "2020-02-09T22:07:31Z",
+          "message": "Add tag slot to taginput (#2209)",
+          "html_url": "https://github.com/buefy/buefy/commit/4fdbf495354a98197c3c06c834e78d62e31e6c59"
+        },
+        {
+          "sha": "48b49e317148b9a026cb9c869e10370e6bdd83ae",
+          "author_date": "2020-02-10T16:11:24Z",
+          "message": "Fixes percent calculation (#2218)\n\n- Fix wrong percent calculation (affects only when value > max)",
+          "html_url": "https://github.com/buefy/buefy/commit/48b49e317148b9a026cb9c869e10370e6bdd83ae"
+        },
+        {
+          "sha": "8bb52c28d647798d48a52467dc5747fdb4d0025e",
+          "author_date": "2020-02-11T06:45:06Z",
+          "message": "Add missing `footer` slot documentation (#2215)",
+          "html_url": "https://github.com/buefy/buefy/commit/8bb52c28d647798d48a52467dc5747fdb4d0025e"
+        },
+        {
+          "sha": "832c99450237db35a0020d091167888ac3e82601",
+          "author_date": "2020-02-11T18:13:40Z",
+          "message": "Add a new constructor options for accepted link tags (#2224)\n\n- Add a new constructor options for accepted link tags\r\n- Use this in components validator (vutton, menuitem, paginationbutton)",
+          "html_url": "https://github.com/buefy/buefy/commit/832c99450237db35a0020d091167888ac3e82601"
+        },
+        {
+          "sha": "c7ac3defd9c503c100e4189d3e80f95b010d2753",
+          "author_date": "2020-02-11T21:45:35Z",
+          "message": "Prevent table thead jumping when sorting is changed (#2223)",
+          "html_url": "https://github.com/buefy/buefy/commit/c7ac3defd9c503c100e4189d3e80f95b010d2753"
+        },
+        {
+          "sha": "ed37cf1fb6fb7e80bc8246d02b5c39bc5fefa528",
+          "author_date": "2020-02-12T21:59:22Z",
+          "message": "Fix #2228 check if the row is checkable before unchecking it\n\n- Check if the row is checkable before unchecking it\r\n- Improve the example",
+          "html_url": "https://github.com/buefy/buefy/commit/ed37cf1fb6fb7e80bc8246d02b5c39bc5fefa528"
+        },
+        {
+          "sha": "7081b9f6a10b42cc3ed244d19fd8429dcf78afb6",
+          "author_date": "2020-02-15T18:23:35Z",
+          "message": "Update backers",
+          "html_url": "https://github.com/buefy/buefy/commit/7081b9f6a10b42cc3ed244d19fd8429dcf78afb6"
+        },
+        {
+          "sha": "3b506709826b5cc198dd1f384c36ed6b75571e74",
+          "author_date": "2020-02-15T18:26:34Z",
+          "message": "Fix missing export component",
+          "html_url": "https://github.com/buefy/buefy/commit/3b506709826b5cc198dd1f384c36ed6b75571e74"
+        },
+        {
+          "sha": "b36b725841dba154a04ca14486200eeadae25f80",
+          "author_date": "2020-02-15T18:27:30Z",
+          "message": "Fix sortable.js example (#2237)",
+          "html_url": "https://github.com/buefy/buefy/commit/b36b725841dba154a04ca14486200eeadae25f80"
+        },
+        {
+          "sha": "22f175d0e1dc9ef121a12e7e404335034aa4ec1f",
+          "author_date": "2020-02-15T18:40:07Z",
+          "message": "Fixes label position inside (#2222)",
+          "html_url": "https://github.com/buefy/buefy/commit/22f175d0e1dc9ef121a12e7e404335034aa4ec1f"
+        },
+        {
+          "sha": "cdc69d31237bd17744d7e806056e0d3f8eb9fd95",
+          "author_date": "2020-02-16T15:29:17Z",
+          "message": "Add multi column sorting (#2155)",
+          "html_url": "https://github.com/buefy/buefy/commit/cdc69d31237bd17744d7e806056e0d3f8eb9fd95"
+        },
+        {
+          "sha": "afa7fcd73dba210802428fdc2f324a22566693eb",
+          "author_date": "2020-02-16T15:47:58Z",
+          "message": "Fix #2227 emit blur from datepicker",
+          "html_url": "https://github.com/buefy/buefy/commit/afa7fcd73dba210802428fdc2f324a22566693eb"
+        },
+        {
+          "sha": "18d8c6031cba7e046b8b19158c429ab950daede0",
+          "author_date": "2020-02-16T16:02:52Z",
+          "message": "Remove console.log",
+          "html_url": "https://github.com/buefy/buefy/commit/18d8c6031cba7e046b8b19158c429ab950daede0"
+        },
+        {
+          "sha": "b25677cf1b03a21007ac0b3ee47afd8773c298de",
+          "author_date": "2020-02-16T17:11:15Z",
+          "message": "Fix menu example",
+          "html_url": "https://github.com/buefy/buefy/commit/b25677cf1b03a21007ac0b3ee47afd8773c298de"
+        },
+        {
+          "sha": "4a65d76a4d543f51b02acbd3457ed4a90d580ac1",
+          "author_date": "2020-02-16T17:23:11Z",
+          "message": "#2216 fix menu item warning",
+          "html_url": "https://github.com/buefy/buefy/commit/4a65d76a4d543f51b02acbd3457ed4a90d580ac1"
+        },
+        {
+          "sha": "ab9ee70021cc1cdc07b53f36a26d213b9d21cbd2",
+          "author_date": "2020-02-16T17:33:27Z",
+          "message": "Update menu docs",
+          "html_url": "https://github.com/buefy/buefy/commit/ab9ee70021cc1cdc07b53f36a26d213b9d21cbd2"
+        },
+        {
+          "sha": "641bf4cdaa5a9864910a29b3fda29616a45a022d",
+          "author_date": "2020-02-16T17:57:00Z",
+          "message": "Close #2229 add multiline prop to tabs",
+          "html_url": "https://github.com/buefy/buefy/commit/641bf4cdaa5a9864910a29b3fda29616a45a022d"
+        },
+        {
+          "sha": "0c44a4ceb4fd7e8baec9ba2ff15941ebe40abe4e",
+          "author_date": "2020-02-16T18:01:48Z",
+          "message": "Fix invisible sort icon",
+          "html_url": "https://github.com/buefy/buefy/commit/0c44a4ceb4fd7e8baec9ba2ff15941ebe40abe4e"
+        },
+        {
+          "sha": "d35b29977fff05dac713c74af604fc3de1c59e5e",
+          "author_date": "2020-02-18T07:38:50Z",
+          "message": "Fix #2240 check ref datetimepicker on mount",
+          "html_url": "https://github.com/buefy/buefy/commit/d35b29977fff05dac713c74af604fc3de1c59e5e"
+        },
+        {
+          "sha": "8828b041d778c557e6623467b1a1cf5ab8faf032",
+          "author_date": "2020-02-19T21:36:00Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/buefy/buefy/commit/8828b041d778c557e6623467b1a1cf5ab8faf032"
+        },
+        {
+          "sha": "43e3c6db2804e62166d47defaa93ca7e115c5bb1",
+          "author_date": "2020-02-19T21:41:28Z",
+          "message": "0.8.11",
+          "html_url": "https://github.com/buefy/buefy/commit/43e3c6db2804e62166d47defaa93ca7e115c5bb1"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.8.12",
@@ -1784,8 +2572,273 @@
     {
       "release": "v0.8.18",
       "previous_release": "v0.8.17",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "608604d358e085ad8498222100682ebeeb57ba30",
+          "author_date": "2020-05-01T09:51:56Z",
+          "message": "Add a new display mode for step in mobile (#2465)",
+          "html_url": "https://github.com/buefy/buefy/commit/608604d358e085ad8498222100682ebeeb57ba30"
+        },
+        {
+          "sha": "b677498709e70b1df38b5393a18d5996f9699c1c",
+          "author_date": "2020-05-01T09:53:04Z",
+          "message": "fix \"focus of undefined\" for taginput (#2463)",
+          "html_url": "https://github.com/buefy/buefy/commit/b677498709e70b1df38b5393a18d5996f9699c1c"
+        },
+        {
+          "sha": "f420105fffcfceb829fc6fc77bfe9d46773a3bd2",
+          "author_date": "2020-05-01T09:54:09Z",
+          "message": "Remove unnecessary step details background (#2464)",
+          "html_url": "https://github.com/buefy/buefy/commit/f420105fffcfceb829fc6fc77bfe9d46773a3bd2"
+        },
+        {
+          "sha": "8afe878b8236a53d1df47329f650bffd73959fca",
+          "author_date": "2020-05-01T10:12:06Z",
+          "message": "Revert \"Add a new display mode for step in mobile (#2465)\"\n\nThis reverts commit 608604d358e085ad8498222100682ebeeb57ba30.",
+          "html_url": "https://github.com/buefy/buefy/commit/8afe878b8236a53d1df47329f650bffd73959fca"
+        },
+        {
+          "sha": "dcb0a4b250147fae0585063f749d07b79914adbc",
+          "author_date": "2020-05-01T10:12:37Z",
+          "message": "Add a new SCSS var for mobile mode (#2455)\n\n- Mobile mode will be displayed for resolution under\r\n- $steps-mobile-max-width",
+          "html_url": "https://github.com/buefy/buefy/commit/dcb0a4b250147fae0585063f749d07b79914adbc"
+        },
+        {
+          "sha": "66e853f0afd55f95cb1d9256a54b81e10cd7e01a",
+          "author_date": "2020-05-01T10:22:54Z",
+          "message": "Revert \"Add a new SCSS var for mobile mode (#2455)\"\n\nThis reverts commit dcb0a4b250147fae0585063f749d07b79914adbc.",
+          "html_url": "https://github.com/buefy/buefy/commit/66e853f0afd55f95cb1d9256a54b81e10cd7e01a"
+        },
+        {
+          "sha": "67ab6d0299a5f2b9b90a18ac5bb48de9f8089bbd",
+          "author_date": "2020-05-01T11:38:55Z",
+          "message": "Fix typo tooltip docs (#2468)",
+          "html_url": "https://github.com/buefy/buefy/commit/67ab6d0299a5f2b9b90a18ac5bb48de9f8089bbd"
+        },
+        {
+          "sha": "52150388d77adca596c2ce0fe72a9595fa042809",
+          "author_date": "2020-05-01T11:57:31Z",
+          "message": "#2455 and #2464",
+          "html_url": "https://github.com/buefy/buefy/commit/52150388d77adca596c2ce0fe72a9595fa042809"
+        },
+        {
+          "sha": "8121a9381c1b3ebf0ab5f9a57546d3c26f35888a",
+          "author_date": "2020-05-01T12:03:53Z",
+          "message": "Fix step snapshot",
+          "html_url": "https://github.com/buefy/buefy/commit/8121a9381c1b3ebf0ab5f9a57546d3c26f35888a"
+        },
+        {
+          "sha": "230bc267e255d6dcbfb2e740e7969ca605d3dabd",
+          "author_date": "2020-05-01T12:13:19Z",
+          "message": "Add scrollable and max-height to b-dropdown (#2467)\n\n* Add scrollable and max-height to b-dropdown\r\n\r\n* fix: updated methods to mirror changes on dev\r\n\r\n* chore: Update the snapshots using bdropdown",
+          "html_url": "https://github.com/buefy/buefy/commit/230bc267e255d6dcbfb2e740e7969ca605d3dabd"
+        },
+        {
+          "sha": "cd2f4ed3536f94658fe7b6386f35fa0fb7232c0a",
+          "author_date": "2020-05-01T12:14:35Z",
+          "message": "Update taginput snapshot",
+          "html_url": "https://github.com/buefy/buefy/commit/cd2f4ed3536f94658fe7b6386f35fa0fb7232c0a"
+        },
+        {
+          "sha": "7560c69c25fa5c08e208d6301252e6b9e767ddd7",
+          "author_date": "2020-05-01T12:17:43Z",
+          "message": "Revert #2467",
+          "html_url": "https://github.com/buefy/buefy/commit/7560c69c25fa5c08e208d6301252e6b9e767ddd7"
+        },
+        {
+          "sha": "4b268576b9564c5e0a6b76c11789a8bc4af5bb2b",
+          "author_date": "2020-05-01T12:29:37Z",
+          "message": "#2467",
+          "html_url": "https://github.com/buefy/buefy/commit/4b268576b9564c5e0a6b76c11789a8bc4af5bb2b"
+        },
+        {
+          "sha": "e563003644ade1b76b2cb00ec71cd74b5492ed57",
+          "author_date": "2020-05-01T12:49:42Z",
+          "message": "Fix #2456 double message when field horizontal and multiple fields",
+          "html_url": "https://github.com/buefy/buefy/commit/e563003644ade1b76b2cb00ec71cd74b5492ed57"
+        },
+        {
+          "sha": "a708a191483d005bc663afadf2f9d069ee1e96ab",
+          "author_date": "2020-05-01T13:10:45Z",
+          "message": "Fix #2459 checkbox, radio, switch group on mobile",
+          "html_url": "https://github.com/buefy/buefy/commit/a708a191483d005bc663afadf2f9d069ee1e96ab"
+        },
+        {
+          "sha": "e9ab5150a8c351be829259d7e688ed1da3998764",
+          "author_date": "2020-05-02T09:36:44Z",
+          "message": "feature: b-upload expanded prop added (#2473)",
+          "html_url": "https://github.com/buefy/buefy/commit/e9ab5150a8c351be829259d7e688ed1da3998764"
+        },
+        {
+          "sha": "8b6697913d957d5162004645c4b3b4a5466f3142",
+          "author_date": "2020-05-02T14:40:31Z",
+          "message": "Fix sekeleton background color override",
+          "html_url": "https://github.com/buefy/buefy/commit/8b6697913d957d5162004645c4b3b4a5466f3142"
+        },
+        {
+          "sha": "68c92c14655cf0a8c5290e54779d68db07c7914e",
+          "author_date": "2020-05-02T14:43:00Z",
+          "message": "Add rounded prop to skeleton",
+          "html_url": "https://github.com/buefy/buefy/commit/68c92c14655cf0a8c5290e54779d68db07c7914e"
+        },
+        {
+          "sha": "2f47464dc85167492c2ba66a8dde2894609c04ab",
+          "author_date": "2020-05-02T15:31:10Z",
+          "message": "Fix skeleton display content",
+          "html_url": "https://github.com/buefy/buefy/commit/2f47464dc85167492c2ba66a8dde2894609c04ab"
+        },
+        {
+          "sha": "f0ff2ae65fee34e247e74e6ab4881c929928c066",
+          "author_date": "2020-05-02T16:15:09Z",
+          "message": "Fix xss message field + slot message",
+          "html_url": "https://github.com/buefy/buefy/commit/f0ff2ae65fee34e247e74e6ab4881c929928c066"
+        },
+        {
+          "sha": "7d139dba9dcfe450fd2ba60d6ec6b043d724bcf4",
+          "author_date": "2020-05-02T16:32:41Z",
+          "message": "Fix unit tests",
+          "html_url": "https://github.com/buefy/buefy/commit/7d139dba9dcfe450fd2ba60d6ec6b043d724bcf4"
+        },
+        {
+          "sha": "066b9f8661d67ff3be8b4005227c9611e9ce3455",
+          "author_date": "2020-05-02T16:39:40Z",
+          "message": "Close #2474 add icon-click event to autcomplete",
+          "html_url": "https://github.com/buefy/buefy/commit/066b9f8661d67ff3be8b4005227c9611e9ce3455"
+        },
+        {
+          "sha": "0263cebc4727c4ccefce732ac426f43df40bc387",
+          "author_date": "2020-05-03T09:32:41Z",
+          "message": "Fix #2469 mantain sort during search",
+          "html_url": "https://github.com/buefy/buefy/commit/0263cebc4727c4ccefce732ac426f43df40bc387"
+        },
+        {
+          "sha": "c5c6614950710bac24f9326b4740b7916361931c",
+          "author_date": "2020-05-03T10:03:05Z",
+          "message": "Close #2462 init sort when mulitple",
+          "html_url": "https://github.com/buefy/buefy/commit/c5c6614950710bac24f9326b4740b7916361931c"
+        },
+        {
+          "sha": "044c478b08db46ab733111e326858651a11d1ff1",
+          "author_date": "2020-05-03T10:07:34Z",
+          "message": "Remove data attribute",
+          "html_url": "https://github.com/buefy/buefy/commit/044c478b08db46ab733111e326858651a11d1ff1"
+        },
+        {
+          "sha": "56812ac56f9ae73f2b53f40beb34941616807e7e",
+          "author_date": "2020-05-05T05:04:31Z",
+          "message": "Remove 'recommended' from Full Bundle (#2480)",
+          "html_url": "https://github.com/buefy/buefy/commit/56812ac56f9ae73f2b53f40beb34941616807e7e"
+        },
+        {
+          "sha": "63d0a7bcab64a590361c19e09a69df6c1e73b032",
+          "author_date": "2020-05-05T05:06:06Z",
+          "message": "shallow copy in watcher (#2481)",
+          "html_url": "https://github.com/buefy/buefy/commit/63d0a7bcab64a590361c19e09a69df6c1e73b032"
+        },
+        {
+          "sha": "edbf594fef107cfa651fb12193dfb10706a74b1f",
+          "author_date": "2020-05-05T14:49:09Z",
+          "message": "Autocomplete typo (#2482)\n\nCo-authored-by: Eugene Soloviov <eugenes@scholarshipowl.com>",
+          "html_url": "https://github.com/buefy/buefy/commit/edbf594fef107cfa651fb12193dfb10706a74b1f"
+        },
+        {
+          "sha": "eeccd2d081c76e3263af4722d06411706ba1c724",
+          "author_date": "2020-05-07T16:27:03Z",
+          "message": "Add expand-on-hover-fixed prop to sidebar",
+          "html_url": "https://github.com/buefy/buefy/commit/eeccd2d081c76e3263af4722d06411706ba1c724"
+        },
+        {
+          "sha": "4419cbfdfd1472cc35f3ff2feb3302a2e724418a",
+          "author_date": "2020-05-09T10:30:28Z",
+          "message": "Fix #2489 dropdown item padding on mobile when has-link",
+          "html_url": "https://github.com/buefy/buefy/commit/4419cbfdfd1472cc35f3ff2feb3302a2e724418a"
+        },
+        {
+          "sha": "5b494ba249ad4f9cbd9743945a0e6fdb6a092983",
+          "author_date": "2020-05-09T10:30:32Z",
+          "message": "Merge branch 'dev' of https://github.com/rafaelpimpa/buefy into dev",
+          "html_url": "https://github.com/buefy/buefy/commit/5b494ba249ad4f9cbd9743945a0e6fdb6a092983"
+        },
+        {
+          "sha": "941eb203c3db095d9bc20a487f3ec8805622aabf",
+          "author_date": "2020-05-09T10:38:33Z",
+          "message": "Close #2487 add native event as parameter to select event",
+          "html_url": "https://github.com/buefy/buefy/commit/941eb203c3db095d9bc20a487f3ec8805622aabf"
+        },
+        {
+          "sha": "a9eeb878b0c9e28a376a79a1e3ee8e49426fc1b3",
+          "author_date": "2020-05-09T10:57:25Z",
+          "message": "Fix #2485 datepicker and timepicker shadow when not editable",
+          "html_url": "https://github.com/buefy/buefy/commit/a9eeb878b0c9e28a376a79a1e3ee8e49426fc1b3"
+        },
+        {
+          "sha": "08a151058bb5eb910b6c3e738e83c3e23933c350",
+          "author_date": "2020-05-09T12:20:02Z",
+          "message": "Add bulma variables external link",
+          "html_url": "https://github.com/buefy/buefy/commit/08a151058bb5eb910b6c3e738e83c3e23933c350"
+        },
+        {
+          "sha": "35ad2d574684ae203e5c9721d5c0285758e86bb7",
+          "author_date": "2020-05-09T12:40:55Z",
+          "message": "Update changelog and docs",
+          "html_url": "https://github.com/buefy/buefy/commit/35ad2d574684ae203e5c9721d5c0285758e86bb7"
+        },
+        {
+          "sha": "4dfc611f00c4703a87fc9b1cb9a1c5ca017eddba",
+          "author_date": "2020-05-10T08:01:52Z",
+          "message": "Fix listen props change on carousel list",
+          "html_url": "https://github.com/buefy/buefy/commit/4dfc611f00c4703a87fc9b1cb9a1c5ca017eddba"
+        },
+        {
+          "sha": "7b18d1480469f0d958853a704fa169ae1c4af258",
+          "author_date": "2020-05-10T08:21:08Z",
+          "message": "Fix #2493 clean hovered on select",
+          "html_url": "https://github.com/buefy/buefy/commit/7b18d1480469f0d958853a704fa169ae1c4af258"
+        },
+        {
+          "sha": "9f0e2dae8269259ffe2245b77a66588ad8191281",
+          "author_date": "2020-05-10T17:32:43Z",
+          "message": "Feature: add close-type prop to tag component (#2492)\n\n* Feature: close-type prop added into b-tag component\r\n\r\n* custom css for close type prop in b-tag element",
+          "html_url": "https://github.com/buefy/buefy/commit/9f0e2dae8269259ffe2245b77a66588ad8191281"
+        },
+        {
+          "sha": "b301ddb666e678a95c39eca0a5e3096d0ad1575d",
+          "author_date": "2020-05-10T20:29:49Z",
+          "message": "Close #2495 add defaultTabsAnimatedd constructor options",
+          "html_url": "https://github.com/buefy/buefy/commit/b301ddb666e678a95c39eca0a5e3096d0ad1575d"
+        },
+        {
+          "sha": "8294b679993ed334317f401081622da4e15ad8c5",
+          "author_date": "2020-05-10T20:29:59Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/buefy/buefy/commit/8294b679993ed334317f401081622da4e15ad8c5"
+        },
+        {
+          "sha": "1cfaf329f56797f381469f0e7e039c2d8fb2f399",
+          "author_date": "2020-05-10T20:42:40Z",
+          "message": "Update vetur",
+          "html_url": "https://github.com/buefy/buefy/commit/1cfaf329f56797f381469f0e7e039c2d8fb2f399"
+        },
+        {
+          "sha": "bcc31114f7d0a88497d1f69934525d86ebd16e0a",
+          "author_date": "2020-05-10T20:58:36Z",
+          "message": "#1872 add static class when append-to-body",
+          "html_url": "https://github.com/buefy/buefy/commit/bcc31114f7d0a88497d1f69934525d86ebd16e0a"
+        },
+        {
+          "sha": "68acce205ac0fa0bfb1c0e457f0c6d7e0ce99faf",
+          "author_date": "2020-05-10T21:01:33Z",
+          "message": "Update package.json",
+          "html_url": "https://github.com/buefy/buefy/commit/68acce205ac0fa0bfb1c0e457f0c6d7e0ce99faf"
+        },
+        {
+          "sha": "451b38203200f4c119c215b9520b7d3d0786b8f9",
+          "author_date": "2020-05-10T21:01:47Z",
+          "message": "0.8.18",
+          "html_url": "https://github.com/buefy/buefy/commit/451b38203200f4c119c215b9520b7d3d0786b8f9"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.8.19",
@@ -1928,8 +2981,45 @@
     {
       "release": "v0.9.21",
       "previous_release": "v0.9.20",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "7e2ff609acc6e1ecc3f17800cee359ec5ec1b50f",
+          "author_date": "2022-04-19T20:29:24Z",
+          "message": "update doc: remove duplicate (#3729)",
+          "html_url": "https://github.com/buefy/buefy/commit/7e2ff609acc6e1ecc3f17800cee359ec5ec1b50f"
+        },
+        {
+          "sha": "cf7851d53facfd39b30f94f84066c91741d0087d",
+          "author_date": "2022-04-19T20:30:26Z",
+          "message": "Fix: Reindexing sorted results (#3728)\n\n* set index after sorting\r\n\r\n* add text limition\r\n\r\n* improve a11y\r\n\r\n* improve navigation experience\r\n\r\n* fix navigation by index\r\n\r\n* adapt for-loops into lambda expression",
+          "html_url": "https://github.com/buefy/buefy/commit/cf7851d53facfd39b30f94f84066c91741d0087d"
+        },
+        {
+          "sha": "b73f8ec130f3a3071ea135a2b341b9003fa21fae",
+          "author_date": "2022-04-21T21:14:27Z",
+          "message": "Avoid setting the type html attribute on non-button tags. (#3733)\n\nFor instance for the <a> tag it's something completely different: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-type\r\n\r\nThe `nativeType` prop also validates only against standard values for <button>\r\n\r\nSigned-off-by: Thomas Citharel <tcit@tcit.fr>",
+          "html_url": "https://github.com/buefy/buefy/commit/b73f8ec130f3a3071ea135a2b341b9003fa21fae"
+        },
+        {
+          "sha": "273335128360ca998a89d7548a9be37983e4c684",
+          "author_date": "2022-04-28T21:13:14Z",
+          "message": "fix #3734 refresh columns on destroy",
+          "html_url": "https://github.com/buefy/buefy/commit/273335128360ca998a89d7548a9be37983e4c684"
+        },
+        {
+          "sha": "acc4ac7c9cd5de4799ef718cf9d2c565a93426c3",
+          "author_date": "2022-05-11T10:35:01Z",
+          "message": " Tooltip close delay (#3738)\n\n* closeDelay property implemented\r\n\r\n* openDelay reverted",
+          "html_url": "https://github.com/buefy/buefy/commit/acc4ac7c9cd5de4799ef718cf9d2c565a93426c3"
+        },
+        {
+          "sha": "ac7d4e864efccecfbd05c099c1b63e84a3a6b356",
+          "author_date": "2022-05-21T10:11:08Z",
+          "message": "0.9.21",
+          "html_url": "https://github.com/buefy/buefy/commit/ac7d4e864efccecfbd05c099c1b63e84a3a6b356"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.9.22",
@@ -1940,8 +3030,159 @@
     {
       "release": "v0.9.23",
       "previous_release": "v0.9.22",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "5ddf28427c4fb18c7a435ae96131269a1e855bc1",
+          "author_date": "2022-09-13T21:13:28Z",
+          "message": "Fixed the calculation of the checkIfReachedTheEndOfScroll when footer is present and using arrow keys to navigate down the list. (#3787)\n\nCo-authored-by: Jacob Durman <Jacob.Durman@jbmt.net>",
+          "html_url": "https://github.com/buefy/buefy/commit/5ddf28427c4fb18c7a435ae96131269a1e855bc1"
+        },
+        {
+          "sha": "ff8371bdd97dcdb77476ff8af9bbcacae65e7777",
+          "author_date": "2022-09-13T21:15:17Z",
+          "message": "FIX scope message/notification auto-close progress style (#3754)",
+          "html_url": "https://github.com/buefy/buefy/commit/ff8371bdd97dcdb77476ff8af9bbcacae65e7777"
+        },
+        {
+          "sha": "5d9a49eb6d5daa245c23e23dd449b15b06fca75c",
+          "author_date": "2022-09-13T21:17:49Z",
+          "message": "add trigger-tabindex to dropdown component to stop datepicker from having extra tabbed selector (#3749)",
+          "html_url": "https://github.com/buefy/buefy/commit/5d9a49eb6d5daa245c23e23dd449b15b06fca75c"
+        },
+        {
+          "sha": "e95251b2d83ab68ac1dd3fd436cc4d0fc562e148",
+          "author_date": "2022-09-22T20:15:19Z",
+          "message": " Use the color-parser props for colorPicker value\n\n* Use the color-parser props for colorPicker value\r\n\r\n* Fix snapshot name\r\n\r\n* Fix example\r\n\r\n* Fix tests\r\n\r\n* Align with naming\r\n\r\n* Export color in index file",
+          "html_url": "https://github.com/buefy/buefy/commit/e95251b2d83ab68ac1dd3fd436cc4d0fc562e148"
+        },
+        {
+          "sha": "b77466e226ca4782ac868eb93767c132ea7ed7fb",
+          "author_date": "2022-09-22T20:17:37Z",
+          "message": "Fix sidebar closing on dynamic content click (#3709)",
+          "html_url": "https://github.com/buefy/buefy/commit/b77466e226ca4782ac868eb93767c132ea7ed7fb"
+        },
+        {
+          "sha": "91fad225ec35d583aca5e48641aef05e5ceed4d5",
+          "author_date": "2022-09-30T11:51:05Z",
+          "message": "Wrap b-table select all button with slot (#3793)",
+          "html_url": "https://github.com/buefy/buefy/commit/91fad225ec35d583aca5e48641aef05e5ceed4d5"
+        },
+        {
+          "sha": "271e25500bdfa2fa94a1dbddc01b7f9316b0d183",
+          "author_date": "2022-10-01T06:01:38Z",
+          "message": "Added testcases for tooltip component (#3795)",
+          "html_url": "https://github.com/buefy/buefy/commit/271e25500bdfa2fa94a1dbddc01b7f9316b0d183"
+        },
+        {
+          "sha": "31453117fb7c743c831d371740ade8403f387a89",
+          "author_date": "2022-10-04T06:05:14Z",
+          "message": "add increment-hours in props (#3797)",
+          "html_url": "https://github.com/buefy/buefy/commit/31453117fb7c743c831d371740ade8403f387a89"
+        },
+        {
+          "sha": "32c81947b80e569ec0ffe4804b1e1b762796128d",
+          "author_date": "2022-10-07T12:23:25Z",
+          "message": "show dropdown content based on breakpoints (#3800)",
+          "html_url": "https://github.com/buefy/buefy/commit/32c81947b80e569ec0ffe4804b1e1b762796128d"
+        },
+        {
+          "sha": "8912e20a58eeed3a1acca7011559b855486a02ad",
+          "author_date": "2022-10-25T09:57:21Z",
+          "message": "Pass Dropdown active state to DatePicker trigger slot (#3803)",
+          "html_url": "https://github.com/buefy/buefy/commit/8912e20a58eeed3a1acca7011559b855486a02ad"
+        },
+        {
+          "sha": "358e4cc705f5b211c3eb02ec358fa35ce84a9ee1",
+          "author_date": "2022-11-24T20:41:46Z",
+          "message": "Add section for config when loading from CDN (#3809)",
+          "html_url": "https://github.com/buefy/buefy/commit/358e4cc705f5b211c3eb02ec358fa35ce84a9ee1"
+        },
+        {
+          "sha": "58f49fb8052d93e7a759522e7e0fc2def6a26cd0",
+          "author_date": "2022-11-26T17:14:44Z",
+          "message": "fix #3272 set class on tabitem",
+          "html_url": "https://github.com/buefy/buefy/commit/58f49fb8052d93e7a759522e7e0fc2def6a26cd0"
+        },
+        {
+          "sha": "c17629291ba6dbf64b5d4d7d324a54545662f5f9",
+          "author_date": "2022-11-26T17:29:29Z",
+          "message": "fix color picker unit tests",
+          "html_url": "https://github.com/buefy/buefy/commit/c17629291ba6dbf64b5d4d7d324a54545662f5f9"
+        },
+        {
+          "sha": "a49964c9db55471ec4b76abd80a51ee0d173e569",
+          "author_date": "2022-12-04T07:20:59Z",
+          "message": "Active/disable infinite scroll \n\n* Disable infinite scroll output\r\n\r\nThe autocomplete component has a property that checks if it should emit\r\ninfinite scroll events. This property only gets checked during mounted\r\nand destroyed. If you update the property to false the component should\r\nnot emit the infinite-scroll event anymore.\r\n\r\n* Add/remove scroll event for Infinitescroll\r\n\r\nWhen checkInfiniteScroll property changes the scroll event should be\r\nadded or removed. Just checking the property in the event can cause\r\nan active scroll listener to not get removed on destroy.\r\n\r\n* Clean up code\r\n\r\n* Add check to see if list exists\r\n\r\nAdd check to .dropdown-content before attaching event listener\r\n\r\n* Remove anonymous event listener\r\n\r\nScroll event was bound using an anonymous function. This way it could\r\nnever remove the eventlistener. Removed the parameter from the function\r\nand added it as a variable.\r\n\r\n* Clean up code\r\n\r\nCo-authored-by: Sjoerd de Wit <sjoerd@superlatief.nl>",
+          "html_url": "https://github.com/buefy/buefy/commit/a49964c9db55471ec4b76abd80a51ee0d173e569"
+        },
+        {
+          "sha": "d4d715315194f8cf2bc5f4d2885cb9ea40c09d5d",
+          "author_date": "2022-12-12T10:45:36Z",
+          "message": "add Cloud IDE preview link (#3812)",
+          "html_url": "https://github.com/buefy/buefy/commit/d4d715315194f8cf2bc5f4d2885cb9ea40c09d5d"
+        },
+        {
+          "sha": "178f7ec55a59021856e0efc85b594d2a323e5961",
+          "author_date": "2022-12-12T10:46:59Z",
+          "message": "Revert \"add Cloud IDE preview link (#3812)\" (#3813)\n\nThis reverts commit d4d715315194f8cf2bc5f4d2885cb9ea40c09d5d.",
+          "html_url": "https://github.com/buefy/buefy/commit/178f7ec55a59021856e0efc85b594d2a323e5961"
+        },
+        {
+          "sha": "25cb3f9e47947922ca98c3a9da5436d1b5a09865",
+          "author_date": "2022-12-12T12:09:55Z",
+          "message": "add Cloud IDE preview link (#3814)",
+          "html_url": "https://github.com/buefy/buefy/commit/25cb3f9e47947922ca98c3a9da5436d1b5a09865"
+        },
+        {
+          "sha": "a92edafb1b5eaf3e01f73b18aebdd995535e68be",
+          "author_date": "2022-12-18T14:38:39Z",
+          "message": "Add Vue breakpoint extension (#3815)\n\n* feat: 🎸 Adding new routes for breakpoint page\r\n\r\n* feat: 🎸 Adding new page for VueBreakpointMixin\r\n\r\n* feat: 🎸 Adding vue breakpoint mixin package\r\n\r\n* feat: 🎸 Adding an example using VueBreakpointMixin package",
+          "html_url": "https://github.com/buefy/buefy/commit/a92edafb1b5eaf3e01f73b18aebdd995535e68be"
+        },
+        {
+          "sha": "06e651912921b758040b996ab8b513c4447b8aa4",
+          "author_date": "2023-02-18T23:31:17Z",
+          "message": "Update VeeValidate.vue (#3835)\n\nFixing links throwing 404 error",
+          "html_url": "https://github.com/buefy/buefy/commit/06e651912921b758040b996ab8b513c4447b8aa4"
+        },
+        {
+          "sha": "52b18bb0776cff5eb06ea5f1851e9abdabef5b61",
+          "author_date": "2023-03-02T06:36:39Z",
+          "message": "Fix: Disabled radio button has cursor 'pointer' (#3826) (#3836)",
+          "html_url": "https://github.com/buefy/buefy/commit/52b18bb0776cff5eb06ea5f1851e9abdabef5b61"
+        },
+        {
+          "sha": "958b410c53420e2e0358cb13471bc6f42fda9079",
+          "author_date": "2023-03-05T16:33:17Z",
+          "message": "Fire event when RGB inputs are changed (#3831)\n\nCo-authored-by: Ruslan Getmansky <ruslan.getmansky@flexmade.com>",
+          "html_url": "https://github.com/buefy/buefy/commit/958b410c53420e2e0358cb13471bc6f42fda9079"
+        },
+        {
+          "sha": "9f9ebc7d5e359b1f88b9932597b01c840e6cef44",
+          "author_date": "2023-03-05T16:37:11Z",
+          "message": "feat: 🎸 Adding new prop on modal to set class for content (#3828)\n\nAdding new prop on modal component to set class for content",
+          "html_url": "https://github.com/buefy/buefy/commit/9f9ebc7d5e359b1f88b9932597b01c840e6cef44"
+        },
+        {
+          "sha": "a13462721f6fcb2efb10a195efa770399d4debc4",
+          "author_date": "2023-03-05T16:38:25Z",
+          "message": "fix: add .vue extension to component imports (#3822)\n\n* fix: add .vue extension to component imports\r\n\r\n* test: can avoid adding extension in the tests\r\n\r\n* fix: wrong path\r\n\r\n* fix: replace in index.js",
+          "html_url": "https://github.com/buefy/buefy/commit/a13462721f6fcb2efb10a195efa770399d4debc4"
+        },
+        {
+          "sha": "8fec6be38a5a60e461fd5a4366fb6ccf504b3a93",
+          "author_date": "2023-03-05T17:05:19Z",
+          "message": "Dedicated prop for keep-open on taginput (#3830)",
+          "html_url": "https://github.com/buefy/buefy/commit/8fec6be38a5a60e461fd5a4366fb6ccf504b3a93"
+        },
+        {
+          "sha": "1d8ede598eaf1c3c731571297fb8f1ac0eb4fd9f",
+          "author_date": "2023-03-05T17:15:12Z",
+          "message": "0.9.23",
+          "html_url": "https://github.com/buefy/buefy/commit/1d8ede598eaf1c3c731571297fb8f1ac0eb4fd9f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.9.25",

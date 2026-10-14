@@ -15291,8 +15291,45 @@
     {
       "release": "spinnaker-release-2025.0.5",
       "previous_release": "spinnaker-release-2025.0.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "745c1e81e679a369bbf68b52a34fa3379e67a9f9",
+          "author_date": "2025-06-25T16:03:55Z",
+          "message": "chore(build): Migrate from OSSRH to Central Portal (#7114) (#7123)\n\n(cherry picked from commit 9b22488a7437cf9395f4ef109f99eef36989baea)\n\nCo-authored-by: Christos Arvanitis <christos.arvanitis@armory.io>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/745c1e81e679a369bbf68b52a34fa3379e67a9f9"
+        },
+        {
+          "sha": "c1b4d73d669564a6a36f5259c473a1e82e125f83",
+          "author_date": "2025-06-25T23:00:55Z",
+          "message": "fix(publishing): Write all versions to Maven metadata (#7126) (#7127)\n\nDefines publication dependency versions explicitly from Gradle's classpath resolutions.\n\n(cherry picked from commit f12a946afbfbab9a83a889d1e37e374a6e771182)\n\nCo-authored-by: jcavanagh <jcavanagh@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c1b4d73d669564a6a36f5259c473a1e82e125f83"
+        },
+        {
+          "sha": "5e58dc70b2066de5535b24afac6a80af72d85b49",
+          "author_date": "2025-06-25T23:04:09Z",
+          "message": "fix(build): Enable publishing for Gradle plugins (#7122) (#7128)\n\n- Publishing tasks are now exposed via the `spinnaker-gradle-project` composite, so they can be properly addressed from the root build\n- Gradle plugins now have a required `description` field, so that is now set in the metadata\n- Automatically publishes on `main` pushes to its subtree, which will produce a version like `main-1`\n\n\n(cherry picked from commit ec096c9be6b5af2e90783f371b643edc2c7f4ef8)\n\nCo-authored-by: jcavanagh <jcavanagh@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/5e58dc70b2066de5535b24afac6a80af72d85b49"
+        },
+        {
+          "sha": "7252a084ae5580045b23b650a9eec18507b5338c",
+          "author_date": "2025-07-02T17:19:09Z",
+          "message": "fix(retrofit2): fix query param encoding logic to accommodate repeating query params (#7133) (#7134)\n\n* test(retrofit2): add a test to demonstrate the missing query param values if the query param repeats\n\n* fix(retrofit2): fix the missing query param values if the query param repeats\n\n* test(retrofit2): add a test to include the case for repeating query params within the url.\n\n(cherry picked from commit c1139c9d97d99d09765304e4732fbe5e975e592e)\n\nCo-authored-by: Kiran Godishala <53332225+kirangodishala@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/7252a084ae5580045b23b650a9eec18507b5338c"
+        },
+        {
+          "sha": "8c463a59899bcfecbc597129911bc2705e82fcce",
+          "author_date": "2025-07-08T03:03:48Z",
+          "message": "chore(clouddriver/kubernetes): upgrade kind to 0.29.0 (#7138) (#7142)\n\nto stay up to date.\n[0.29.0](https://github.com/kubernetes-sigs/kind/releases/tag/v0.29.0) is the most recent\nas of 6-jul-25.\n\n(cherry picked from commit 3d468c62fd94275a69aeab4b454c7fdf75564570)\n\nCo-authored-by: David Byron <82477955+dbyron-sf@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/8c463a59899bcfecbc597129911bc2705e82fcce"
+        },
+        {
+          "sha": "abe2528fab62b7637d85caa185c8f9d0033ba95a",
+          "author_date": "2025-07-08T03:29:28Z",
+          "message": "test(clouddriver/kubernetes): test against a 1.30.13 k8s cluster (#7139) (#7141)\n\n* test(clouddriver/kubernetes): test against a 1.30.13 k8s cluster\n\nusing both kubectl 1.30.13 and 1.22.17 (the default).\n\n* test(clouddriver/kubernetes): log successful integration test info\n\nto confirm that tests are running as expected\n\n* test(clouddriver/kubernetes): add k8s cluster, kubectl version, etc. as input properties\n\nso gradle doesn't return a cached result for integrationTest executions with different\nversions.\n\n(cherry picked from commit a88b213b5553994ad64500918876d45e1853cf47)\n\nCo-authored-by: David Byron <82477955+dbyron-sf@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/abe2528fab62b7637d85caa185c8f9d0033ba95a"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "spinnaker-release-2025.0.6",
@@ -15381,8 +15418,483 @@
     {
       "release": "spinnaker-release-2025.3.0",
       "previous_release": "spinnaker-release-2025.1.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "18758e3a71aa2e47ffb6b96c44fcf848d9330c6a",
+          "author_date": "2025-08-19T18:37:29Z",
+          "message": "chore(build): dynamic version indexing in tag name based on type (#7202)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/18758e3a71aa2e47ffb6b96c44fcf848d9330c6a"
+        },
+        {
+          "sha": "f45b7fd885c6ed56b1c4548be2e6a24caa0feb31",
+          "author_date": "2025-08-19T19:05:36Z",
+          "message": "fix(orca/clouddriver): correct parameter order for requestOperations to avoid invalid cloudProvider errors (#7201)\n\n* test(orca/clouddriver): demonstrate broken parameter order in DelegatingKatoRestService.requestOperations\n\n* fix(orca/clouddriver): correct parameter order for requestOperations to avoid invalid cloudProvider errors\n\n- Fixed requestOperations method signature in DelegatingKatoRestService\n  to ensure `cloudProvider` comes before `clientRequestId`.\n- Updated test KatoRestServiceSpec accordingly.\n- Prevents 400 errors where UUID was misinterpreted as cloudProvider.\n\nError:\n```\n ERROR 1 --- [     handlers-7] c.n.s.orca.q.handler.RunTaskHandler      : [rahulgandhi.chekuri@opsmx.io] Error running DeployManifestTask for pipeline[01K1J9JBP1BDNAHX38R2JYRED1]\ncom.netflix.spinnaker.kork.retrofit.exceptions.SpinnakerHttpException: Status: 400, Method: POST, URL: http://spin-clouddriver.onlyspinnaker:7002/021b86e19da715828bcc1d917db06cbb25aa7096ad5b11b263d86f866161eedd/ops?clientRequestId=kubernetes, Message: No cloud provider named '021b86e19da715828bcc1d917db06cbb25aa7096ad5b11b263d86f866161eedd' found\n\tat com.netflix.spinnaker.kork.retrofit.ErrorHandlingExecutorCallAdapterFactory$ExecutorCallbackCall.execute(ErrorHandlingExecutorCallAdapterFactory.java:162)\n\tat com.netflix.spinnaker.kork.retrofit.Retrofit2SyncCall.executeCall(Retrofit2SyncCall.java:47)\n\tat com.netflix.spinnaker.kork.retrofit.Retrofit2SyncCall.execute(Retrofit2SyncCall.java:34)\n\tat com.netflix.spinnaker.orca.clouddriver.KatoService.lambda$requestOperations$1(KatoService.java:58)\n\tat com.netflix.spinnaker.kork.core.RetrySupport.retry(RetrySupport.java:34)\n\tat com.netflix.spinnaker.orca.clouddriver.KatoService.requestOperations(KatoService.java:56)\n\tat com.netflix.spinnaker.orca.clouddriver.tasks.manifest.DeployManifestTask.executeOperation(DeployManifestTask.java:80)\n\tat com.netflix.spinnaker.orca.clouddriver.tasks.manifest.DeployManifestTask.execute(DeployManifestTask.java:53)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler$handle$1$1$1$1.invoke(RunTaskHandler.kt:166)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler$handle$1$1$1$1.invoke(RunTaskHandler.kt:122)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.withLoggingContext(RunTaskHandler.kt:479)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.access$withLoggingContext(RunTaskHandler.kt:89)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler$handle$1$1$1.invoke(RunTaskHandler.kt:122)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler$handle$1$1$1.invoke(RunTaskHandler.kt:121)\n\tat com.netflix.spinnaker.orca.q.handler.AuthenticationAware$DefaultImpls.withAuth$lambda-0(AuthenticationAware.kt:51)\n\tat com.netflix.spinnaker.security.AuthenticatedRequest.lambda$wrapCallableForPrincipal$0(AuthenticatedRequest.java:272)\n\tat com.netflix.spinnaker.orca.q.handler.AuthenticationAware$DefaultImpls.withAuth(AuthenticationAware.kt:51)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.withAuth(RunTaskHandler.kt:89)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler$handle$1$1.invoke(RunTaskHandler.kt:121)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler$handle$1$1.invoke(RunTaskHandler.kt:119)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler$withTask$1.invoke(RunTaskHandler.kt:292)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler$withTask$1.invoke(RunTaskHandler.kt:281)\n\tat com.netflix.spinnaker.orca.q.handler.OrcaMessageHandler$withTask$1.invoke(OrcaMessageHandler.kt:69)\n\tat com.netflix.spinnaker.orca.q.handler.OrcaMessageHandler$withTask$1.invoke(OrcaMessageHandler.kt:61)\n\tat com.netflix.spinnaker.orca.q.handler.OrcaMessageHandler$withStage$1.invoke(OrcaMessageHandler.kt:86)\n\tat com.netflix.spinnaker.orca.q.handler.OrcaMessageHandler$withStage$1.invoke(OrcaMessageHandler.kt:75)\n\tat com.netflix.spinnaker.orca.q.handler.OrcaMessageHandler$DefaultImpls.withExecution(OrcaMessageHandler.kt:96)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.withExecution(RunTaskHandler.kt:89)\n\tat com.netflix.spinnaker.orca.q.handler.OrcaMessageHandler$DefaultImpls.withStage(OrcaMessageHandler.kt:75)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.withStage(RunTaskHandler.kt:89)\n\tat com.netflix.spinnaker.orca.q.handler.OrcaMessageHandler$DefaultImpls.withTask(OrcaMessageHandler.kt:61)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.withTask(RunTaskHandler.kt:89)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.withTask(RunTaskHandler.kt:281)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.handle$lambda-0(RunTaskHandler.kt:119)\n\tat com.netflix.spinnaker.orca.lock.NoOpRunOnLockAcquired.execute(ExternalLock.kt:191)\n\tat com.netflix.spinnaker.orca.lock.RetriableLock$LockAndRun.get(RetriableLock.java:128)\n\tat com.netflix.spinnaker.orca.lock.RetriableLock$LockAndRun.get(RetriableLock.java:103)\n\tat com.netflix.spinnaker.kork.core.RetrySupport.retry(RetrySupport.java:34)\n\tat com.netflix.spinnaker.orca.lock.RetriableLock.lock(RetriableLock.java:57)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.withLocking(RunTaskHandler.kt:298)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.handle(RunTaskHandler.kt:118)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.handle(RunTaskHandler.kt:89)\n\tat com.netflix.spinnaker.q.MessageHandler$DefaultImpls.invoke(MessageHandler.kt:36)\n\tat com.netflix.spinnaker.orca.q.handler.OrcaMessageHandler$DefaultImpls.invoke(OrcaMessageHandler.kt:46)\n\tat com.netflix.spinnaker.orca.q.handler.RunTaskHandler.invoke(RunTaskHandler.kt:89)\n\tat com.netflix.spinnaker.orca.q.audit.ExecutionTrackingMessageHandlerPostProcessor$ExecutionTrackingMessageHandlerProxy.invoke(ExecutionTrackingMessageHandlerPostProcessor.kt:72)\n\tat com.netflix.spinnaker.q.QueueProcessor$callback$1.invoke$lambda-0(QueueProcessor.kt:90)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:840)\n```\n\n---------\n\nCo-authored-by: David Byron <dbyron@salesforce.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/f45b7fd885c6ed56b1c4548be2e6a24caa0feb31"
+        },
+        {
+          "sha": "57b5928f5b52e10f20ad29cdfdeb57b96dd22614",
+          "author_date": "2025-08-20T20:56:15Z",
+          "message": "fix(clouddriver/aws): align CredentialsParser types in AmazonCredentialsInitializer (#7207)\n\n* test(clouddriver/aws): demonstrate behavior of AmazonCredentialsInitializer\n\nspecifically, that it fails to produce the kind of CredentialsParser bean that amazonCredentialsLoader requires.\n\n* fix(clouddriver/aws): align CredentialsParser types in AmazonCredentialsInitializer\n\nWith this change, the amazonCredentialsParser method provides the type of CredentialsParser that amazonCredentialsLoader expects.\n\nFor the curious, without the cast, there's a compiler error:\n\n/Users/dbyron/src/spinnaker/spinnaker/clouddriver/clouddriver-aws/src/main/java/com/netflix/spinnaker/clouddriver/aws/security/AmazonCredentialsInitializer.java:84: error: incompatible types: cannot infer type arguments for AmazonCredentialsParser<>\n    return new AmazonCredentialsParser<>(\n                                      ^\n    reason: inference variable V has incompatible equality constraints NetflixAmazonCredentials,CAP#1\n  where V is a type-variable:\n    V extends NetflixAmazonCredentials declared in class AmazonCredentialsParser\n  where CAP#1 is a fresh type-variable:\n    CAP#1 extends NetflixAmazonCredentials from capture of ? extends NetflixAmazonCredentials",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/57b5928f5b52e10f20ad29cdfdeb57b96dd22614"
+        },
+        {
+          "sha": "4d99192979b269af29a2b5047cc4a0f03f0761ed",
+          "author_date": "2025-08-20T21:42:17Z",
+          "message": "fix(halyard/retrofit2): fix daemon service getTask API definition (#7206)\n\n* fix(halyard/retrofit2): add a test to demonstrate the issue caused due to generics used in retrofit2 API definition\n\n* fix(halyard/retrofit2): fix the issue caused due to generics used in retrofit2 API definition\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/4d99192979b269af29a2b5047cc4a0f03f0761ed"
+        },
+        {
+          "sha": "0e8c45b45a7374f4ddacf579aa12dd1d67915b79",
+          "author_date": "2025-08-21T16:34:13Z",
+          "message": "fix(echo/rest): make it possible to send events to URLs with no trailing slash (#7212)\n\n* test(echo/rest): demonstrate attempt to sending events to a URL with no trailing slash\n\nThe move to retrofit2 made it impossible to send events to URLs with no trailing slash.\nhttps://github.com/spinnaker/echo/pull/1476 changed POST(\"/\") to POST(\".\") and ensured the\nbase URL ends with a trailing slash with RetrofitUtils.getBaseUrl.  retrofit2 rejects\nbaseUrls that don't end with a trailing slash though, so we need a different solution.\n\n* fix(echo/rest): make it possible to send events to URLs with no trailing slash\n\n* refactor(echo/rest): remove unused url argument from RestEventService.sendEvent",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/0e8c45b45a7374f4ddacf579aa12dd1d67915b79"
+        },
+        {
+          "sha": "5385827fa3d4ffc9fe152e2cb6d03db89b7ba68a",
+          "author_date": "2025-08-21T18:10:49Z",
+          "message": "fix(google): Add retry and status polling logic (#7191)\n\n* fix(google): Align polling logic to wait on all async operations\n\n* fix(google): Regressions for lbPolicy and updateBackendServices()\n\n* test(google): Improve test coverage\n\n* refactor(google): Update status messages to mirror previous Groovy implementation\n\n* feat(google): Added enableAsyncOperationWait=true flag for legacy behaviour\n\n---------\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/5385827fa3d4ffc9fe152e2cb6d03db89b7ba68a"
+        },
+        {
+          "sha": "c051f9651681055acb028ca01df02987a1e1eaf2",
+          "author_date": "2025-08-21T21:15:46Z",
+          "message": "chore(dependency): update bc version from 1.77 to 1.81 (#7211)\n\n* chore(dependency): update bc version from 1.77 to 1.78\n\nFixes for CVE-2024-34447\n\n* Update spinnaker-dependencies.gradle for bc version 1.81\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c051f9651681055acb028ca01df02987a1e1eaf2"
+        },
+        {
+          "sha": "66b9ab017406ef1565b20c5c04acf18bbcb4cdcd",
+          "author_date": "2025-08-22T16:36:12Z",
+          "message": "fix(gate/web): add Retrofit2SyncCall.execute to SubnetController.allByCloudProvider (#7219)\n\n* test(gate/web): demonstrate behavior of SubnetController.allByCloudProvider\n\nSpecifically, that it throws a GroovyCastException.\n\n* fix(gate/web): add Retrofit2SyncCall.execute to SubnetController.allByCloudProvider\n\nsince it's meant to be a synchronous call.  This also removes the type mismatch.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/66b9ab017406ef1565b20c5c04acf18bbcb4cdcd"
+        },
+        {
+          "sha": "6c47bbfac318fd48e4e3a17c0ef5495a1d03f28d",
+          "author_date": "2025-08-26T16:55:09Z",
+          "message": "fix(orca/retrofit2): fix orca bakeservice api (#7224)\n\n* test(orca/retrofit2): add a test to demonstrate the issue caused due to passing a subclass object to @Body parameter which is a base class.\n\n* test(orca/retrofit2): fix the issue caused due to passing a subclass object to @Body parameter which is a base class.\n\n* feat(kork/retrofit2): update Retrofit2ServiceFactory to accept a custom Converter.Factory object\n\n* fix(orca/retrofit2): fix the issue caused due to passing a subclass object to @Body parameter whose type is a base class.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/6c47bbfac318fd48e4e3a17c0ef5495a1d03f28d"
+        },
+        {
+          "sha": "ffeaa35aa16f7e32fb1d62fd8d21edb13918e13a",
+          "author_date": "2025-08-27T13:52:49Z",
+          "message": "fix(gcp): Fix a number of potential NPEs around deploy handling for google builds.  Tied to groovy to java migration (#7227)\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/ffeaa35aa16f7e32fb1d62fd8d21edb13918e13a"
+        },
+        {
+          "sha": "0c97ecd18c40ffa1d315e3dcf8f5870ecfa519e5",
+          "author_date": "2025-08-27T16:27:50Z",
+          "message": "chore(deps): bump sha.js from 2.4.11 to 2.4.12 in /deck (#7213)\n\nBumps [sha.js](https://github.com/crypto-browserify/sha.js) from 2.4.11 to 2.4.12.\n- [Changelog](https://github.com/browserify/sha.js/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/crypto-browserify/sha.js/compare/v2.4.11...v2.4.12)\n\n---\nupdated-dependencies:\n- dependency-name: sha.js\n  dependency-version: 2.4.12\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/0c97ecd18c40ffa1d315e3dcf8f5870ecfa519e5"
+        },
+        {
+          "sha": "e08010207d3c2085fb79cdb6791898bde8bad5c6",
+          "author_date": "2025-08-27T21:22:24Z",
+          "message": "refactor(kubernetes): convert manifest actions modal components to react (#7223)\n\n* refactor(kubernetes): convert delete modal component to react\n\n* refactor(kubernetes): convert scale modal component to react\n\n* refactor(kubernetes): convert rollout modal components to react\n\n* refactor(kubernetes): fix kubernetes.module.ts\n\n* refactor(kubernetes): fix kubernetes.module.ts, run  yarn lint --fix\n\n* fix: fix tests\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/e08010207d3c2085fb79cdb6791898bde8bad5c6"
+        },
+        {
+          "sha": "e5a54adad738c618f7caf6d5a375659ad4261041",
+          "author_date": "2025-08-27T21:45:24Z",
+          "message": "refactor(kubernetes): de-angularize services, and components (#7228)\n\n* test(kubernetes): add raw resources functional tests\n\n* refactor(kubernetes): de-angularize services, and components\n\n* refactor(kubernetes): yarn prettier\n\n* fix: fix tests\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/e5a54adad738c618f7caf6d5a375659ad4261041"
+        },
+        {
+          "sha": "c42106e719daa30b06dd5efa520e8b7e7e32d508",
+          "author_date": "2025-08-29T19:19:07Z",
+          "message": "refactor(kubernetes): convert load balancer details component to react (#7222)\n\n* refactor(kubernetes): convert load balancer details component to react\n\n* test(kubernetes): fix functional test\n\n* refactor(kubernetes): yarn prettier\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c42106e719daa30b06dd5efa520e8b7e7e32d508"
+        },
+        {
+          "sha": "da68ba66321eb034356ffc2b20a3c0a4c7c2f709",
+          "author_date": "2025-08-29T19:19:23Z",
+          "message": "chore(deps): bump tmp in /.github/actions/spinnaker-release (#7229)\n\nBumps [tmp](https://github.com/raszi/node-tmp) from 0.2.3 to 0.2.5.\n- [Changelog](https://github.com/raszi/node-tmp/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/raszi/node-tmp/compare/v0.2.3...v0.2.5)\n\n---\nupdated-dependencies:\n- dependency-name: tmp\n  dependency-version: 0.2.5\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/da68ba66321eb034356ffc2b20a3c0a4c7c2f709"
+        },
+        {
+          "sha": "1a83ac383fba5b15febd75291be674b55395f4f0",
+          "author_date": "2025-09-01T19:17:11Z",
+          "message": "fix(halyard/retrofit2): fix DaemonService's convertor factory (#7230)\n\n* test(halyard/retrofit2): demonstrate the issue caused due to passing a concrete class object to @Body parameter whose type is an abstract class.\n\n* fix(halyard/retrofit2): fix the issue caused due to passing a concrete class object to @Body parameter whose type is an abstract class.\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/1a83ac383fba5b15febd75291be674b55395f4f0"
+        },
+        {
+          "sha": "de171bc4477bc00d11f416965281da669a3367b8",
+          "author_date": "2025-09-02T16:19:54Z",
+          "message": "chore(deps): bump tmp from 0.2.3 to 0.2.5 in /deck/test/functional (#7231)\n\nBumps [tmp](https://github.com/raszi/node-tmp) from 0.2.3 to 0.2.5.\n- [Changelog](https://github.com/raszi/node-tmp/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/raszi/node-tmp/compare/v0.2.3...v0.2.5)\n\n---\nupdated-dependencies:\n- dependency-name: tmp\n  dependency-version: 0.2.5\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/de171bc4477bc00d11f416965281da669a3367b8"
+        },
+        {
+          "sha": "7177e163ad5294518fba2aa5d9d8d38d842c4b59",
+          "author_date": "2025-09-03T18:17:04Z",
+          "message": "fix(gcp): More NPE handling on some input (#7236)\n\n* fix(gcp): More NPE handling on some input\n\n* fix(test): Fix one slight issue on a test and the NPE that the other test showed",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/7177e163ad5294518fba2aa5d9d8d38d842c4b59"
+        },
+        {
+          "sha": "9d86a95abc517ea909735f0ee0884bd5f502131d",
+          "author_date": "2025-09-03T19:02:38Z",
+          "message": "fix(deck): Fix RunJob external logs when component is not mounted and interpolation is needed (#7163)\n\n* fix(deck): Fix RunJob external logs when component is not mounted and interpolation is needed\n\n* fix(deck): Runjob external logs rendering - adding tests\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/9d86a95abc517ea909735f0ee0884bd5f502131d"
+        },
+        {
+          "sha": "d41da1e2d50e05822aba3ff3af174e70e3f7ee7b",
+          "author_date": "2025-09-04T19:24:53Z",
+          "message": "feat(clouddriver/aws): Implement the account API for aws accounts (#7238)\n\n* test(clouddriver/aws): Demonstrate behavior of account API for AWS accounts\n\nSpecifically, that the account API doesn't work for AWS accounts (yet).\n\n* feat(clouddriver/aws): Implement the account API for aws accounts\n\nThis change allows clouddriver AWS accounts to use the account management\nAPI. Specifically, it allows clouddriver to load AWS accounts from the\nAccountDefinitionRepository used by the account API.\n\nThe new config flag account.storage.aws.enabled, in addition to the existing config flag\naccount.storage.enabled, control when this feature is enabled.\n\n* fix(account): Provide defaults to avoid NPEs\n\nAn account without requiredGroupMembership or permissions is a\nvalid account. However, certain areas of the code assume that these\nvalues are not null and therefore encounter NullPointerExceptions.\nTo avoid this, initialize these fields to a reasonable default value.\n\n---------\n\nCo-authored-by: Daniel Zheng <d.zheng@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/d41da1e2d50e05822aba3ff3af174e70e3f7ee7b"
+        },
+        {
+          "sha": "d19e19440695b268ba4ec7644003fdcb5f7b7295",
+          "author_date": "2025-09-04T19:55:51Z",
+          "message": "feat(clouddriver/aws): log aws sdk endpoints (#7239)\n\n* feat(artifacts/s3): log each aws sdk endpoint used retrieve s3 artifacts once\n\nif the new config property artifacts.s3.logEndpoints is true.  It defaults to false.\n\nExample log message:\n\nS3ArtifactRequestHandler::beforeRequest: name: <s3-artifact-account-name>, endpoint: 'https://<bucket>.us-east-2.amazonaws.com'\n\n* fix(artifacts/s3): make logging the s3 endpoint thread-safe\n\nto avoid ConcurrentModificationException when multiple threads make s3 requests to aws\n\n* feat(aws): log the aws endpoint used by all aws clients from AmazonClientBuilder\n\nonce per aws service, if the new configuration flag aws.client.logEndpoints is true.  It\ndefaults to false.\n\nExample log messages:\n\nLogEndpointRequestHandler::beforeRequest: service name: 'AmazonEC2', endpoint: 'https://ec2.us-west-2.amazonaws.com'\n\n* fix(aws): make the logging in LogEndpointRequestHandler thread-safe\n\nso the logging of endpoints in all aws clients from AmazonClientBuilder happens no more\nthan once, and without ConcurrentModificationException.\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/d19e19440695b268ba4ec7644003fdcb5f7b7295"
+        },
+        {
+          "sha": "c390e6fbd68d146d95d50079c55c011a168f067f",
+          "author_date": "2025-09-04T22:45:35Z",
+          "message": "feat(clouddriver/aws): log the endpoint that aws sdk sts clients use (#7240)\n\n* chore(clouddriver/aws): remove unused fromAWSCredentials methods from AmazonCredentials\n\n* feat(clouddriver/aws): log the endpoint that aws sdk sts clients use\n\nwhen the existing config flag aws.client.logEndpoints is true.  It defaults to false.\nhttps://github.com/spinnaker/spinnaker/pull/7239 added that config flag.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c390e6fbd68d146d95d50079c55c011a168f067f"
+        },
+        {
+          "sha": "ba06d1580d7ee7a1cbc63f01626fd0055ef842a3",
+          "author_date": "2025-09-05T16:50:12Z",
+          "message": "fix(sql): Update account type column during upserts (#7242)\n\n* test(account): Define behavior when replacing an account\n\nReplacing an account (\"accountOne\")  with a new account (\"accountTwo\")\nof the same name but different type should replace all of accountOne's\ndata with accountTwo's data.\n\n* fix(sql): Update account type column during upserts\n\nIf a user creates an account with an initial type, say \"aws\", and\nthen creates another account with the same name but a different\ntype, say \"kubernetes\", the operation will succeed but the type\ngiven by the \"type\" column will not match the actual type of the\naccount. This causes clouddriver to fail to start as it cannot\nmarshal the account definition jsons into the correct Java objects.\nFix this by also updating the \"type\" column during an update\noperation.\n\n---------\n\nCo-authored-by: Daniel Zheng <d.zheng@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/ba06d1580d7ee7a1cbc63f01626fd0055ef842a3"
+        },
+        {
+          "sha": "fe879f8b867b64de7c916e9ea8806c6e15bb8382",
+          "author_date": "2025-09-10T22:54:02Z",
+          "message": "chore(graphql): Remove unused and legacy graphql libraries and sample endpoints (#7244)\n\nNever had tests and was removed from a lot of downstream services 5+ years ago - this was just never cleaned up.  Keel is the only system that still utilizes graphql for stuff and it works completely differently.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/fe879f8b867b64de7c916e9ea8806c6e15bb8382"
+        },
+        {
+          "sha": "c6a79fd0e5375b6b12f8bba1c47a4e81cb2819fb",
+          "author_date": "2025-09-11T15:52:10Z",
+          "message": "feat(OAuth2): Current OAuth2 annotations are deprecated so using Java DSL way of configuring OAuth2 (#7052)\n\n* feature(OAuth2): Remove deprecated OAuth2 annotation. Instead Use Java DSL way of OAuth2\n\nOauth configuration properties are changed for new java way of dsl.\n\nOld Config Properties:\nsecurity:\n  authn:\n    oauth2:\n      enabled: true\n      client:\n        clientId: <client-id>\n        clientSecret: <client-secret>\n        accessTokenUri: https://www.googleapis.com/oauth2/v4/token\n        userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth\n        scope: profile email\n      userInfoRequirements:\n        hd: <domain>\n      resource:\n        userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo\n      userInfoMapping:\n        email: email\n        firstName: given_name\n        lastName: family_name\n      provider: GOOGLE\n\nNew Config Properties:\n\nGoogle:\n\nspring:\n  security:\n    oauth2:\n      client:\n        registration:\n          google:\n            client-id: <client-id>\n            client-secret: <client-secret>\n            authorization-grant-type: authorization_code\n            redirect-uri: \"https://<your-domain>/login/oauth2/code/google\"\n            scope: profile,email,openid\n            client-name: google\n        provider:\n          google:\n            authorization-uri: https://accounts.google.com/o/oauth2/auth\n            token-uri: https://oauth2.googleapis.com/token\n            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo\n            user-name-attribute: sub\n\nGithub:\n\nspring:\n  security:\n    oauth2:\n      client:\n        registration:\n          userInfoMapping:\n            email: email\n            firstName: ''\n            lastName: name\n            username: login\n          github:\n            client-id: <client-id>\n            client-secret: <client-secret>\n            authorization-grant-type: authorization_code\n            redirect-uri: \"https://<your-domain>/login/oauth2/code/github\"\n            scope: user,email\n            client-name: github\n        provider:\n          github:\n            authorization-uri: https://github.com/login/oauth/authorize\n            token-uri: https://github.com/login/oauth/access_token\n            user-info-uri: https://api.github.com/user\n            user-name-attribute: login\n\n* Add javadoc\n\n* Use Objects.toString instead of custom toStringOrNull method\n\n* Remove unused class member\n\n* Add construtor injection\n\n* Call get property than the direct access\n\n* Add javadoc, made class level properties final, Add GithubProviderTokenServices, Made authorities and attributes immutable\n\n* Enhance null attributes and authorities logic. Correct Copyright. Add javadoc to getClaims method. Add test coverage to GithubProviderTokenServices\n\n* Use constructor injection for  SpinnakerProviderTokenServices\n\n* Tests: Refactor test initialization by replacing MockitoAnnotations.openMocks(this) with @ExtendWith(MockitoExtension.class)\n\n* feat(OAuth2): Migrated OAuth2 configuration to align with Spring Security 5 Java DSL standards\n\n- Replaced the legacy `security.authn.oauth2` structure with the new `spring.security.oauth2.client` configuration.\n- Updated property mappings to conform to Spring Security 5's expectations.\n- Ensured compatibility with existing `hal config security authn oauth2 edit` commands.\n\n**Old Configuration that used get populated gate.yml:**\n\n```\nsecurity:\n  authn:\n    oauth2:\n      enabled: true\n      client:\n        clientId: <client-id>\n        clientSecret: <client-secret>\n        accessTokenUri: https://www.googleapis.com/oauth2/v4/token\n        userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth\n        scope: profile email\n      userInfoRequirements:\n        hd: <domain>\n      resource:\n        userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo\n      userInfoMapping:\n        email: email\n        firstName: given_name\n        lastName: family_name\n      provider: GOOGLE\n```\n\n**New Configuration that gets populated in gate.yml (Aligned with Spring Security 5):**\n```\nspring:\n  security:\n    oauth2:\n      client:\n        registration:\n          google:\n            client-id: <client-id>\n            client-secret: <client-secret>\n            scope: profile,email\n        provider:\n          google:\n            authorization-uri: https://accounts.google.com/o/oauth2/auth\n            token-uri: https://oauth2.googleapis.com/token\n            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo\n```\n\nCommands remain unchanged:\n\n```\nhal config security authn oauth2 edit --provider google --client-id some_id --client-secret some_secret --user-info-requirements hd=company.io\n```\n\n* feat(OAuth2): Add new GateBoot667ProfileFactory that emits the new gate config.\n\n* Tests: Add GateServiceTest and GateBoot667ProfileFactoryTest. Also add redirect-uri to the new config.\n\n* feat(OAuth2): Add javadocs and comments.\n\n* feat(OAuth2): Migrated OAuth2 configuration to align with Spring Security 5 Java DSL standards\n\n- Replaced the legacy `security.authn.oauth2` structure with the new `spring.security.oauth2.client` configuration.\n- Updated property mappings to conform to Spring Security 5's expectations.\n- Ensured compatibility with existing `hal config security authn oauth2 edit` commands.\n\n**Old Configuration that used get populated gate.yml:**\n\n```\nsecurity:\n  authn:\n    oauth2:\n      enabled: true\n      client:\n        clientId: <client-id>\n        clientSecret: <client-secret>\n        accessTokenUri: https://www.googleapis.com/oauth2/v4/token\n        userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth\n        scope: profile email\n      userInfoRequirements:\n        hd: <domain>\n      resource:\n        userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo\n      userInfoMapping:\n        email: email\n        firstName: given_name\n        lastName: family_name\n      provider: GOOGLE\n```\n\n**New Configuration that gets populated in gate.yml (Aligned with Spring Security 5):**\n```\nspring:\n  security:\n    oauth2:\n      client:\n        registration:\n          google:\n            client-id: <client-id>\n            client-secret: <client-secret>\n            scope: profile,email\n        provider:\n          google:\n            authorization-uri: https://accounts.google.com/o/oauth2/auth\n            token-uri: https://oauth2.googleapis.com/token\n            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo\n```\n\nCommands remain unchanged:\n\n```\nhal config security authn oauth2 edit --provider google --client-id some_id --client-secret some_secret --user-info-requirements hd=company.io\n```\n\n* feat(OAuth2): Add new GateBoot667ProfileFactory that emits the new gate config.\n\n* tests(OAuth2): Add license and some more tests around different providers.\n\n* feat(OAuth2): Update gate version.\n\n* feat(OAuth2): Rename classes, properties. Add comments.\n\n* feat(OAuth2): Update tests/comments with gate version 6.68.0\n\n* feat(oauth2): Update to monorepo version 2025.1.0 for selecting appropriate GateProfileFactory\n\n* tests(OAuth2): Add a new test to ensure redirect-uri is properly set\n\n* fix(version): Update version to choose appropriate profile factory based on conditions\n\n* fix: file format issues\n\n* fix: Move files to appropriate modules\n\nWhile rebasing somehow these files are removed from the actual location\n\n* refactor: Remove groupExtractor as there is no matching bean configured in the project\n\n* tests: Add assertion for redirect-url for null case\n\n* refactor: Remove instanceof and casting. Improvise as per review suggestions.\n\n* fix(tests): Update the expected values as per new oauth values.\n\n* doc: added javadoc\n\n* refactor(User): Add constructor to handle superclass properties.\n\n* refactor(gate/oauth2): simplify SpinnakerOIDCUser constructor\n\nby using copyOf.\n\n---------\n\nCo-authored-by: David Byron <dbyron@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c6a79fd0e5375b6b12f8bba1c47a4e81cb2819fb"
+        },
+        {
+          "sha": "d7d654043f344a2235a2657355320ecbddca2e73",
+          "author_date": "2025-09-15T14:30:38Z",
+          "message": "feat(echo/aws): upgrade echo from aws sdk v1 to v2 (#7243)\n\n* feat(echo/aws): upgrade echo from aws sdk v1 to v2\n\n* refactor(echo/aws): update log message in the catch block\n\n* feat(kork/aws): Add AwsCredentialsProvider bean in kork for use in various modules\n\n* test(echo/aws): add a test to verify that SQSSubscriberProvider is getting created which takes aws v2 class AwsCredentialsProvider as one of its constructor parameters.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/d7d654043f344a2235a2657355320ecbddca2e73"
+        },
+        {
+          "sha": "eea4599f9e372c9329a4d886936aa8182d98b8e2",
+          "author_date": "2025-09-16T14:32:05Z",
+          "message": "feat(clouddriver/ecs): Implement the account API for ecs accounts (#7247)\n\n* feat(clouddriver/ecs): Implement the account API for ecs accounts\n\n* chore(clouddriver/ecs): Adding license",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/eea4599f9e372c9329a4d886936aa8182d98b8e2"
+        },
+        {
+          "sha": "2ceb0bb1d2e251d36cd4c08834969c6d82a1a843",
+          "author_date": "2025-09-17T15:42:31Z",
+          "message": "test(orca): add a test to verify clouddriver GET api to get CloudFormationStack (#7248)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/2ceb0bb1d2e251d36cd4c08834969c6d82a1a843"
+        },
+        {
+          "sha": "d5160c51c6eacdd08427066a7d914cc334a0bd1a",
+          "author_date": "2025-09-17T21:17:47Z",
+          "message": "fix(oracle): A few oracle operations call themselves google which can mess with class loading on class scans.  Fix them to be Oracle (#7249)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/d5160c51c6eacdd08427066a7d914cc334a0bd1a"
+        },
+        {
+          "sha": "77e5da979902c4c9ab4ac21804ab3e36bf0ca87d",
+          "author_date": "2025-09-19T01:51:44Z",
+          "message": "Various kork updates (secrets, utilities, prereqs for credentials updates) (#7245)\n\n* update(kotlin): Upgrade to Kotlin 1.8\n\n* chore(editorconfig): Combine editorconfig files\n\n* feature(kork-security): Support spring security principals\n\n* chore(kork-secrets): Remove unused file\n\n* refactor(kork-core): Extract ClassScanner utility\n\n* feature(kork-core): Add NamedTypeProvider SPI\n\n* refactor(kork-core): Extract BootstrapComponents\n\n* feature(kork-secrets-api): add `boot-secret://` properties\n\nThis extracts `kork-security-api` from `kork-security` with some porting to Kotlin to help reduce some code duplication. This allows for replacing secrets at startup in configuration data.\n\n* fix(clouddriver-core): Fix use of secrets API\n\n* fix(keiko-core): Handle all QueueEvent types\n\nNewer versions of Kotlin require that all types of a sealed type be handled in `when` expressions, and the compiler found a couple missing event types in `QueueMetricsPublisher`.\n\n* fix(test): Fix secrets-related tests from clouddriver\n\nAPI updates to secrets require some updates to clouddriver tests that will be moved to kork in a later update.\n\n* fix(keel-scm): Fix use of kotlin-reflect\n\n* fix(kork-plugins): Fix compiler errors for Kotlin 1.8\n\n* fix(orca-kayenta): Stop using experimental APIs\n\n* fix(keel): Update mockk to support Kotlin 1.8\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/77e5da979902c4c9ab4ac21804ab3e36bf0ca87d"
+        },
+        {
+          "sha": "6f76e1f0f8bb8345d546662d42afe6f568d6342e",
+          "author_date": "2025-09-22T15:28:11Z",
+          "message": "feat(front50/aws): upgrade front50 to aws sdk v2 (#7250)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/6f76e1f0f8bb8345d546662d42afe6f568d6342e"
+        },
+        {
+          "sha": "10aa59bc260761a52a631e21a8e8661f79e08d19",
+          "author_date": "2025-09-22T17:05:22Z",
+          "message": "fix(OAuth2, NPE): Map.copyOf is strict about nulls so use Collections.unmodifiableMap instead (#7246)\n\n* feat(oauth2): Add Unit and integration tests to demonstrate NPE.\n\n- Added Unit Test to demonstrate NPE when user attributes has null values.\n- Added integration test for OAuth2 flow using WireMock..\n- Annotated test-only fields with @VisibleForTesting.\n- Decoupled WireMock redirect transformer from hardcoded Spring Boot port.\n\n* refactor(web/test): mock some beans to reduce log noise\n\n* fix(OAuth2, NPE): Map.copyOf is stricter about nulls so switch to Collections.unmodifiableMap.\n\nWith GitHub OAuth2 provider user is seeing the below error while logging in. This due to null values in the user attributes that we receive from the auth provider.\n\n```\n{\"error\":\"Internal Server Error\",\"exception\":\"java.lang.NullPointerException\",\"message\":\"No message available\",\"status\":500,\"timestamp\":\"2025-09-13T05:15:45.359+00:00\"}\n```\n\nStacktrace from gate logs:\n\n```\njava.lang.NullPointerException: null\n\tat java.base/java.util.Objects.requireNonNull(Objects.java:209) ~[na:na]\n\tat java.base/java.util.ImmutableCollections$MapN.<init>(ImmutableCollections.java:1186) ~[na:na]\n\tat java.base/java.util.Map.ofEntries(Map.java:1668) ~[na:na]\n\tat java.base/java.util.Map.copyOf(Map.java:1734) ~[na:na]\n\tat com.netflix.spinnaker.gate.security.oauth2.SpinnakerOAuth2User.<init>(SpinnakerOAuth2User.java:60) ~[gate-oauth2-2025.2.0.jar:2025.2.0]\n\tat com.netflix.spinnaker.gate.security.oauth2.OAuthUserInfoServiceHelper.getSpinnakerOAuth2User(OAuthUserInfoServiceHelper.java:128) ~[gate-oauth2-2025.2.0.jar:2025.2.0]\n\tat com.netflix.spinnaker.gate.security.oauth2.SpinnakerOAuth2UserInfoService.loadUser(SpinnakerOAuth2UserInfoService.java:53) ~[gate-oauth2-2025.2.0.jar:2025.2.0]\n\tat org.springframework.security.oauth2.client.authentication.OAuth2LoginAuthenticationProvider.authenticate(OAuth2LoginAuthenticationProvider.java:117) ~[spring-security-oauth2-client-5.7.11.jar:5.7.11]\n```\n\n* tests: Use WireMockExtension. Add path assertions.\n\n* tests: Use BeforeEach to set the port. Also clean up log properties.\n\n---------\n\nCo-authored-by: David Byron <dbyron@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/10aa59bc260761a52a631e21a8e8661f79e08d19"
+        },
+        {
+          "sha": "54d246cbc2120dba3781e850183571469bc0d09c",
+          "author_date": "2025-09-24T18:01:52Z",
+          "message": "fix(oauth2): move tokenResponseClient bean to static inner config to avoid circular dependency (#7254)\n\n* test(oauth2): demonstrate circular reference bug in OAuth2SsoConfig\n\nSpecifically:\n\nException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OAuth2SsoConfig': Unsatisfied dependency expressed through field 'tokenResponseClient'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'OAuth2SsoConfig': Requested bean is currently in creation: Is there an unresolvable circular reference?\n\nwhich corresponds to this error when gate attempts to start:\n\nAPPLICATION FAILED TO START\nDescription:\n\nThe dependencies of some of the beans in the application context form a cycle:\n\n┌──->──┐\n|  OAuth2SsoConfig (field private OAuth2AccessTokenResponseClient tokenResponseClient)\n└──<-──┘\n\nAction:\nRelying upon circular references is discouraged and they are prohibited by\ndefault. Update your application to remove the dependency cycle.\n\n* fix(oauth2): move tokenResponseClient bean to OAuth2BeanConfiguration to avoid circular reference issue.\n\nError observed:\n```\nAPPLICATION FAILED TO START\nDescription:\n\nThe dependencies of some of the beans in the application context form a cycle:\n\n┌──->──┐\n|  OAuth2SsoConfig (field private OAuth2AccessTokenResponseClient tokenResponseClient)\n└──<-──┘\n\nAction:\nRelying upon circular references is discouraged and they are prohibited by\ndefault. Update your application to remove the dependency cycle.\n```\n\nResolution:\n\n- Moved tokenResponseClient bean definition into a separate @configuration class (OAuth2BeanConfiguration).\n- This separates bean creation from injection and breaks the cycle.\n- Keeps DefaultAuthorizationCodeTokenResponseClient for prod.\n- Still allows overriding with TestAuthorizationCodeTokenResponseClient in tests.\n\n* refactor(oauth2/test): remove OAuth2TestConfiguration.class from OAuth2Test\n\nsince it's not necessary.\n\n* chore(web): add license header\n\n---------\n\nCo-authored-by: David Byron <dbyron@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/54d246cbc2120dba3781e850183571469bc0d09c"
+        },
+        {
+          "sha": "df0e13001cab861be2286b15a17626111629fccb",
+          "author_date": "2025-10-01T14:43:11Z",
+          "message": "chore(deps): bump actions/setup-go from 5 to 6 (#7257)\n\n* chore(deps): bump actions/setup-go from 5 to 6\n\nBumps [actions/setup-go](https://github.com/actions/setup-go) from 5 to 6.\n- [Release notes](https://github.com/actions/setup-go/releases)\n- [Commits](https://github.com/actions/setup-go/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-go\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore(gha): build spin when the spin workflow changes\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: David Byron <dbyron@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/df0e13001cab861be2286b15a17626111629fccb"
+        },
+        {
+          "sha": "9a3d91fa13588388f1dd09e2e552d3811be84850",
+          "author_date": "2025-10-01T15:13:10Z",
+          "message": "chore(deps): bump actions/setup-java from 4 to 5 (#7258)\n\n* chore(deps): bump actions/setup-java from 4 to 5\n\nBumps [actions/setup-java](https://github.com/actions/setup-java) from 4 to 5.\n- [Release notes](https://github.com/actions/setup-java/releases)\n- [Commits](https://github.com/actions/setup-java/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-java\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore(gha): run github actions when the underlying action changes\n\nthough don't do this for spinnaker-gradle-project nor spinnaker-libraries since that could\npotentially mean publishing too often.  Ideally we'd have a way to run the builds without\npublishing to e.g. validate changes in the actions themselves.  Until then, leave them be,\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: David Byron <dbyron@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/9a3d91fa13588388f1dd09e2e552d3811be84850"
+        },
+        {
+          "sha": "c6ae6afbe80bac6a5bf007c9a2a992fcfc5f6c40",
+          "author_date": "2025-10-01T15:49:46Z",
+          "message": "chore(deps): bump actions/checkout from 4 to 5 (#7259)\n\n* chore(deps): bump actions/checkout from 4 to 5\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 4 to 5.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore(gha): run the workflow when the workflow itself changes\n\nso we get more confidence that the change is correct\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: David Byron <dbyron@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c6ae6afbe80bac6a5bf007c9a2a992fcfc5f6c40"
+        },
+        {
+          "sha": "12779ea61acecd3d654c477d38fcab1296a61de6",
+          "author_date": "2025-10-01T15:59:27Z",
+          "message": "chore(deps): bump google-github-actions/auth from 2 to 3 (#7260)\n\nBumps [google-github-actions/auth](https://github.com/google-github-actions/auth) from 2 to 3.\n- [Release notes](https://github.com/google-github-actions/auth/releases)\n- [Changelog](https://github.com/google-github-actions/auth/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/google-github-actions/auth/compare/v2...v3)\n\n---\nupdated-dependencies:\n- dependency-name: google-github-actions/auth\n  dependency-version: '3'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/12779ea61acecd3d654c477d38fcab1296a61de6"
+        },
+        {
+          "sha": "d28836142ba99c0902a9934116bdbec1819d67ff",
+          "author_date": "2025-10-01T16:09:40Z",
+          "message": "chore(deps): bump google-github-actions/upload-cloud-storage from 2 to 3 (#7261)\n\nBumps [google-github-actions/upload-cloud-storage](https://github.com/google-github-actions/upload-cloud-storage) from 2 to 3.\n- [Release notes](https://github.com/google-github-actions/upload-cloud-storage/releases)\n- [Changelog](https://github.com/google-github-actions/upload-cloud-storage/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/google-github-actions/upload-cloud-storage/compare/v2...v3)\n\n---\nupdated-dependencies:\n- dependency-name: google-github-actions/upload-cloud-storage\n  dependency-version: '3'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/d28836142ba99c0902a9934116bdbec1819d67ff"
+        },
+        {
+          "sha": "b1893f0e759cf1fc88d3f7829062c2ff1ab2575d",
+          "author_date": "2025-10-03T01:19:26Z",
+          "message": "feat(healthcheck): Add GRPC and HTTP/2 support for GCP load balancers (#7253)\n\n* feat(gcp): Supprot GRPC and HTTP2 load balancing health check configurations\n\n* feat(healthcheck): Add GRPC and HTTP/2 support for GCP load balancers\n\nThis change adds complete support for GRPC and HTTP/2 health checks in Google Cloud load balancers. The implementation includes both backend and frontend changes to fully support these protocols.\n\n- Added grpcServiceName field to GoogleHealthCheck class\n- Fixed GRPC and HTTP/2 target format in getTarget()\n- Updated health check caching and Google API integration\n- Added HTTP/2 and GRPC options to UI components\n- Added proper GRPC service name handling in UI and backend\n- Fixed class references and imports\n- Added support in DeleteGoogleInternalLoadBalancerAtomicOperation\n\n* fix(LB): fixing the LB type\n\n* feat(healthcheck): Add GRPC and HTTP/2 support for GCP load balancers\n\n* chore: Update copyright headers from Armory to Harness\n\n---------\n\nCo-authored-by: Jason McIntosh <jason.mcintosh@harness.io>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/b1893f0e759cf1fc88d3f7829062c2ff1ab2575d"
+        },
+        {
+          "sha": "d0f0620ac1d415e4c23f6fd8e31a4f661331a2a4",
+          "author_date": "2025-10-07T17:30:18Z",
+          "message": "fix(orca/clouddriver/retrofit): fix wildcard in the retrofit method parameter (#7264)\n\n* test(clouddriver/retrofit): add a test to demonstrate the failure occurring due to wildcard in the retrofit method parameter\n\n* fix(clouddriver/retrofit): fix the failure occurring due to wildcard in the retrofit method parameter",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/d0f0620ac1d415e4c23f6fd8e31a4f661331a2a4"
+        },
+        {
+          "sha": "c79666126ee96f04eb7a1ad79d9898d12d96a9fe",
+          "author_date": "2025-10-08T12:03:52Z",
+          "message": "fix(front50/s3): always configure region in s3 client, when specified (#7268)\n\n* test(front50/s3): demonstrate that region is missing when endpoint is set\n\n* fix(front50/s3): always configure region in s3 client, when specified\n\nWhile upgrading front50 to aws sdk v2 in https://github.com/spinnaker/spinnaker/pull/7250, it was mistakenly assumed that the regionOverride was meant for the s3 compatible storage but in reality it was meant only for signerOverride in sdk v1. So region isn't set when an endpoint is specified, causing the following error:\n\nsoftware.amazon.awssdk.regions.providers.SystemSettingsRegionProvider@629bee3b:\nUnable to load region from system settings. Region must be specified either via environment variable (AWS_REGION) or  system property (aws.region)\n\nThis PR always sets region (when specified), whether an endpoint is specified or not.\n\n* fix(front50/s3): remove regionOverride and signerOverride fields which are no longer relevant with aws sdk v2.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c79666126ee96f04eb7a1ad79d9898d12d96a9fe"
+        },
+        {
+          "sha": "5334e0a2d37f6b57a0f79f7926acf94ab8689b75",
+          "author_date": "2025-10-10T14:55:28Z",
+          "message": "perf(front50): fetch pipeline by id in StartPipelineTask (#7273)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/5334e0a2d37f6b57a0f79f7926acf94ab8689b75"
+        },
+        {
+          "sha": "a74c9959c3a039d013b84ffaadf2c29639f129c4",
+          "author_date": "2025-10-11T00:48:11Z",
+          "message": "fix(clouddriver/cloudformation): fix an API failure caused by encoded colon char post retrofit2 upgrade (#7262)\n\n* test(orca/retrofit): add a test to demonstrate an issue when a path parameter contains colon character and API expects it to be not encoded\n\n* fix(clouddriver/retrofit): fix the issue caused due to encoded colon character in a cloudformation stack arn sent as path variable in the api call.\n\n* refactor(clouddriver/retrofit): change return type of the getCloudFormationStack method from Call<Map> to Call<Map<String, Object>>.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a74c9959c3a039d013b84ffaadf2c29639f129c4"
+        },
+        {
+          "sha": "7aa9fabcbbbb091f7c9936ca50969a9aa5c369e0",
+          "author_date": "2025-10-13T19:14:33Z",
+          "message": "Merge commit from fork\n\n* fix(artifacts): Sets up the ability to restrict some access on artifact accounts\n\n* fix(restrrictions): Refactor the restrictions tests and location of the shared restrictions object\n\n* fix(restrrictions): Refactor the restrictions tests and location of the shared restrictions object\n\n* fix(domains): ALlowed domains as a whitelist can replace all other checks if set\n\n* fix(ips): Remove blocking the internal IP ranges by default.  Will add docs\n\n* fix(license): License date and attribution fix\n\n* fix(tests): Fix tests that now break because of URL default restrictions",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/7aa9fabcbbbb091f7c9936ca50969a9aa5c369e0"
+        },
+        {
+          "sha": "0a1b7a32716999817b3ee3dee4dfce13860a9df1",
+          "author_date": "2025-10-14T16:08:17Z",
+          "message": "feat(google): Add @JsonTypeName annotation and account definition source for dynamic loading (#7270)\n\nThis commit enables Google dynamic account loading by adding minimal required changes:\n\nChanges:\n1. GoogleConfigurationProperties.groovy - Added @JsonTypeName(\"google\") annotation to ManagedAccount class\n2. GoogleAccountDefinitionSourceConfiguration.java - Added account definition source configuration bean\n\nTests:\n- Created GoogleAccountDefinitionSourceTest.java with 3 comprehensive tests\n- Created GoogleDynamicAccountLoadingTest.java with 9 comprehensive tests matching AWS patterns\n- All 12 tests pass successfully\n- Full build completes without errors\n\nThese changes enable Google dynamic account loading to work with the existing\nGoogleCredentialsConfiguration infrastructure, matching AWS and Azure patterns.\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/0a1b7a32716999817b3ee3dee4dfce13860a9df1"
+        },
+        {
+          "sha": "1c35ff8d273d17ab48f03e9d0046c6ca573c0c67",
+          "author_date": "2025-10-15T15:01:03Z",
+          "message": "fix(orca-applications): Retrofit calls on Front50 projects tasks (#7272)\n\n* fix(orca-applications): Retrofit calls on Front50 projects tasks\n\n* fix(orca): Front50 retrofit execute fixes\n\n* fix(orca): Add test to explictly show the failure\n\n* fix(orca): Add test to explictly show the failure\n\n* test(projectController): Add test for project controller to verify the behaviour\n\n* test(v2pipelineTemplateTasks): Add missing tests for v2PipelineTemplate tasks\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/1c35ff8d273d17ab48f03e9d0046c6ca573c0c67"
+        },
+        {
+          "sha": "0e76bc0b0d2fe5f3427ffaa3fb21c0097ecd03c8",
+          "author_date": "2025-10-15T15:58:05Z",
+          "message": "fix(orca-clouddriver): Fix findImages oortService call query map (#7278)\n\n* fix(orca-clouddriver): Fix findImages oortService call query map\n\n* fix(orca-clouddriver): Fix on ImageTagger.findImages queryMap\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/0e76bc0b0d2fe5f3427ffaa3fb21c0097ecd03c8"
+        },
+        {
+          "sha": "5ba06cd78794a4ba7f40d54f0d62c5b62e94c21b",
+          "author_date": "2025-10-17T14:20:41Z",
+          "message": "feat(igor/aws): upgrade igor to aws sdk v2 (#7283)\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/5ba06cd78794a4ba7f40d54f0d62c5b62e94c21b"
+        },
+        {
+          "sha": "ce3e4c5abf31afc969c2ff4e182b69456841e9e2",
+          "author_date": "2025-10-17T16:29:58Z",
+          "message": "fix(config): Defaults are not being set when only a few fields are set (#7285)\n\n* fix(config): Enable not having to set ALL fields on a configuration property for URL restrictions\n\n* fix(config): Tests pass on config defaults\n\n* fix(output): Remove System.out from test",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/ce3e4c5abf31afc969c2ff4e182b69456841e9e2"
+        },
+        {
+          "sha": "c306a00dee29309b9b0080a9358ba3f3c7ba4855",
+          "author_date": "2025-10-20T14:43:08Z",
+          "message": "fix(gate-web): EcsServerGroupEventsController & EcsSecretController retrofit calls to clouddriver (#7291)\n\n* fix(gate-web): ECS Controller retrofit calls to clouddriver\n\n* fix(gate-web): Add EcsServerGroupEventsController & EcsSecretController tests",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c306a00dee29309b9b0080a9358ba3f3c7ba4855"
+        },
+        {
+          "sha": "653ba1ed7d58933d77db438ae3a0b0354903b0a2",
+          "author_date": "2025-10-20T16:25:35Z",
+          "message": "fix(orca-queue): ignore unacked messages that fail retry to not block processing of other messages (#7290)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/653ba1ed7d58933d77db438ae3a0b0354903b0a2"
+        },
+        {
+          "sha": "8456bba6da7f01a46f0c7a711888f1d098f37aaa",
+          "author_date": "2025-10-20T19:10:51Z",
+          "message": "fix(orca/redis): actually run the tests (#7292)\n\nI'm not sure why the\n\nsubprojects {\n  if (name != \"orca-bom\" && name != \"orca-api\") {\n    test {\n      minHeapSize = \"512m\"\n      maxHeapSize = \"2g\"\n      maxParallelForks = 4\n\n      testLogging {\n        exceptionFormat = \"full\"\n      }\n      useJUnitPlatform()\n    }\n  }\n}\n\ncode from orca/build.gradle isn't sufficient to run (groovy) tests in orca-redis, but apparently it's not.\n\nAdding\n\ntest {\n  useJUnitPlatform()\n}\n\nto orca-redis does the trick.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/8456bba6da7f01a46f0c7a711888f1d098f37aaa"
+        },
+        {
+          "sha": "b281edf3182fed427228b05db035b9d009add22b",
+          "author_date": "2025-10-20T20:01:30Z",
+          "message": "fix(orca): set the status correctly when cancelling a pipeline execution (#7296)\n\n* test(orca/core): demonstrate how status is set when canceling a pipeline\n\nand specifically, that canceling a running pipeline with one completed stage and one\nnot-started stage doesn't actually set the status of the overall execution to canceled.\n\n* test(orca/core): add a stage to pipelines used for cancel testing\n\nto pave the way for updates to the logic for setting pipeline status during cancel operations.\n\n* fix(orca): set the status correctly when cancelling a pipeline execution\n\nThe exact details to reproduce this race are unfortunately lost to time.  We've been\nrunning this code at Salesforce since April 2021 though, so it's got some good miles on\nit.  It also still seems like a reasonable fix.\n\n---------\n\nCo-authored-by: Arifullah Pattan <apattan@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/b281edf3182fed427228b05db035b9d009add22b"
+        },
+        {
+          "sha": "de3de11de2b2b671194ffdee851f651668a1aed5",
+          "author_date": "2025-10-20T21:33:13Z",
+          "message": "fix(orca/clouddriver): fix log line in AbstractCheckIfApplicationExistsTask (#7298)\n\nto be more specific.\n\nCo-authored-by: Apoorv Mahajan <apoorv.mahajan@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/de3de11de2b2b671194ffdee851f651668a1aed5"
+        },
+        {
+          "sha": "a091d8444fe6770e0abb3665a5c2cb4156d24621",
+          "author_date": "2025-10-21T16:28:05Z",
+          "message": "feat(orca/echo): instrument code that sends events to echo before/after pipeline executions (#7297)\n\nwith the following new metrics:\n\necho.events.count\necho.events.duration\necho.events.error\n\nwith tag \"execution:before\" or \"execution:after\" as appropriate.\n\nCo-authored-by: Shaun Phillips <sphillips@salesforce.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a091d8444fe6770e0abb3665a5c2cb4156d24621"
+        },
+        {
+          "sha": "d219882d5420354e34ac7c7de768a8f1b169d792",
+          "author_date": "2025-10-22T01:11:44Z",
+          "message": "feat(gate/web): add GET /executions/failedStages endpoint (#7300)\n\n* chore(orca/web): expand star imports in TaskController\n\n* perf(orca/api): use EnumSet instead of List in ExecutionStatus for faster contains checks\n\n* perf(orca/core): enable returning intermediate generated List object in StageExecutionImpl\n\nby adding StageExecutionImpl.topologicalSortAsImmutableList\n\n- Current implementation (StageExecutionImpl.topologicalSort) builds an immutable list and then returns a stream object based on that.\n- Several callers then take this stream and immediately generate a net new list.\n- Since the backing list is immutable there is no need for this extra work unless really desired by the caller.\n\n* refactor(orca/web/test): rename TaskControllerTest to TaskControllerSqlExecutionRepositoryTest\n\nto pave the way for additional TaskController tests that use a mock execution repository\n\n* feat(orca/web): add GET /pipelines/failedStages endpoint\n\nwhich returns failed stages for a pipeline execution, including in any child pipeline executions.\n\nThis commit also adds a new configuration property: tasks.controller.failedStages.onlyIncludeStagesThatFailPipelines that defaults to false.\n\nWhen false, the GET /pipelines/failedStages endpoint returns failed stages.  When true, the endpoint only returns stages that fail pipelines.  For example, stages in a FAILED_CONTINUE state are considered failed, but they don't cause pipeline failure.\n\n* refactor(gate/web): Expand star imports in ExecutionsController\n\n* feat(gate/web): add GET /executions/failedStages endpoint to gate\n\nwhich calls the corresponding GET /pipelines/failedStages endpoint in orca\n\n---------\n\nCo-authored-by: Shaun Phillips <sphillips@salesforce.com>\nCo-authored-by: shrreyasingh <shrreyasingh@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/d219882d5420354e34ac7c7de768a8f1b169d792"
+        },
+        {
+          "sha": "9de5a1dc69ba10b90380aaaab8e3887eb606b2fd",
+          "author_date": "2025-10-24T13:57:06Z",
+          "message": "fix(gate-web): Controller fix for RoleController & EcsCloudMetricController after retrofit updates (#7303)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/9de5a1dc69ba10b90380aaaab8e3887eb606b2fd"
+        },
+        {
+          "sha": "97bb0434645ede986d89065e70fe06c944c77239",
+          "author_date": "2025-10-24T15:57:37Z",
+          "message": "feat(clouddriver-artifacts/aws): upgrade clouddriver-artifacts module to aws sdk v2 (#7301)\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/97bb0434645ede986d89065e70fe06c944c77239"
+        },
+        {
+          "sha": "8ba587d275f212564565b12b00f5c06477811d48",
+          "author_date": "2025-10-24T17:10:00Z",
+          "message": "perf(orca): query for individual pipelines from front50 (#7302)\n\n* test(orca/clouddriver): add assertions about front50 interactions to GetPipelinesFromArtifactTaskSpec\n\nto clarify behavior before changing to queries for individual pipelines\n\n* perf(clouddriver): query front50 for individual pipelines in GetPipelinesFromArtifactTask\n\ninstead of querying for all pipelines in an application, which can be a ton of data in an application with many pipelines\n\n* test(orca/front50): demonstrate behavior of PipelineExpressionFunctionProvider\n\nbefore changing to query front50 by application and name\n\n* perf(orca/front50): change PipelineExpressionFunctionProvider to query for individual pipelines from front50\n\ninstead of all pipelines in an application.\n\n* refactor(orca/front50/test): remove PipelineExpressionFunctionProviderTest.pipelineIdWithNotFoundError test\n\nNow that PipelineExpressionFunctionProvider queries front50 for individual pipelines, and\nthat end point responds with 404 for not found, this test is a duplicate.\n\n* fix(orca/pipelinetemplate): actually run the tests\n\nsimilar to https://github.com/spinnaker/spinnaker/pull/7292\n\n* test(pipelinetemplate): demonstrate failure cases for the pipelineId tag\n\n- pipeline not found\n- no id in pipeline\n\n* test(orca/pipelinetemplate): add assertions about front50Service method calls\n\n* fix(orca/pipelinetemplate): throw an exception with a helpful message from the pipelineId tag if a pipeline has no id\n\n* perf(orca/pipelinetemplate): change PipelineIdTag to query for individual pipelines from front50\n\ninstead of all pipelines in an application\n\n* test(orca/web): add assertions about front50Service method calls in TaskControllerSpec\n\n* test(orca/web): add assertions about executionRepository method calls in TaskControllerSpec\n\n* test(orca/web): demonstrate behavior of TaskController.searchForPipelinesByTrigger when front50 responds with 500\n\n* test(orca/web): demonstrate current behavior when front50 returns no pipelines (with and without pipelineName)\n\n* perf(web): short-circuit call to the executions repository in TaskController.searchForPipelinesByTrigger\n\nwhen there are no matching pipeline config ids\n\n* perf(orca/web): change TaskController.searchForPipelinesByTrigger to query front50 for individual pipelines\n\nwhen pipelineName is specified\n\n* fix(orca/web): double check that the pipeline that front50 returns actually has the name we expect in TaskController.searchForPipelinesByTrigger\n\n* test(orca/front50): add assertions on method calls to front50Service in EnabledPipelineValidatorSpec\n\n* test(orca/front50): demonstrate behavior of EnabledPipelineValidator when front50 responds with 500\n\n* perf(orca/front50): remove a call to query front50 for all pipelines in an application in EnabledPipelineValidator\n\nwhen the response from front50 to the query by id shows that the pipeline is not found\n\n* perf(orca/front50): trust the front50 query for pipeline config by id in EnabledPipelineValidator\n\nand remove the fallback to query for all pipelines in an application to improve performance\n\n* feat(orca/front50): add retries when querying front50 for single pipelines in EnabledPipelineValidator\n\nsince there's no longer a fallback to query for all pipelines in an application\n\n* refactor(orca/web): prefer equals to ==\n\nsince we're comparing object contents\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/8ba587d275f212564565b12b00f5c06477811d48"
+        },
+        {
+          "sha": "a1195444385df89fec0171cfa23e252711f0bd8c",
+          "author_date": "2025-10-27T16:18:26Z",
+          "message": "perf(roles): make fiat full role sync synchronized across fiat instances (#7115)\n\n* refactor(redis): make redis pool client name configurable\n\n* test(roles): replace generic container with embedded redis\n\n* refactor(roles): move lock options config properties to a new class named SyncConfig\n\n* perf(roles): add syncAllUserRoles method to sync all user roles in synchronized way across all fiat instances.\n\n* docs(roles): add javadoc\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a1195444385df89fec0171cfa23e252711f0bd8c"
+        },
+        {
+          "sha": "6dfb0fef32c6c8bf59d8c30d9f759e3a35e098c2",
+          "author_date": "2025-10-30T20:26:38Z",
+          "message": "perf(sql): Simplify sql query in retrievePipelineExecutionDetailsForApplication (#7309)\n\nSince the query already specifies ids, the additional where condition for application is\nredundant and can be removed.\n\nBefore the change, the query uses pipeline_application_idx.  After it uses the primary key (id).\n\nWhile we're at it, switch to use the read pool since replication lag is acceptable here.\nIt's only used by gate / the UI to retrieve pipelines to display.\n\nCo-authored-by: Daniel Zheng <d.zheng@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/6dfb0fef32c6c8bf59d8c30d9f759e3a35e098c2"
+        },
+        {
+          "sha": "15c525e9d09092096e783857f9810dd6b9aaa796",
+          "author_date": "2025-11-01T17:31:33Z",
+          "message": "chore(deps): bump github/codeql-action from 3 to 4 (#7311)\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 3 to 4.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/v3...v4)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: '4'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/15c525e9d09092096e783857f9810dd6b9aaa796"
+        },
+        {
+          "sha": "9f1313dcd3e6434ea742b407b303c19fd586f54a",
+          "author_date": "2025-11-03T06:17:24Z",
+          "message": "feat(clouddriver-lambda): Add configuration for tcpKeepAlive on the AWS Lambda client (#7308)\n\n* Add configuration for tcpKeepAlive on the AWS Lambda client\n\n* Add tests into AbstractLambdaAtomicOperationTest\n\n* Add tests into AbstractLambdaAtomicOperationTest\n\n* Remove unused testImplementation\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/9f1313dcd3e6434ea742b407b303c19fd586f54a"
+        },
+        {
+          "sha": "003b1c2ee5aed17a07d03f508aa0c2429e2aa845",
+          "author_date": "2025-11-03T17:18:30Z",
+          "message": "perf(execution): Add a retrieve method with requireLatestVersion (#7310)\n\n* perf(execution): Add a retrieve method with requireLatestVersion\n\nAdds a retrieve method with the requireLatestVersion option. This option\nis useful in use cases where the execution repository has a read\nreplica and retrieve()'s caller does not need the latest version of the\nPipelineExecution. In these cases, the caller can retrieve the\nPipelineExecution currently stored in the read replica. This is a\nmuch cheaper operation than querying the main writer instance.\n\n* perf(repository): Use a more efficient db query\n\nfor polled endpoints. Deck periodically polls the /pipelines and\n/pipelines/{id} endpoints, so orca doesn't need to provide\nthe latest pipeline execution info. Specifically for databases\nwith read replicas, this means that orca will return the pipeline\nexecution(s) stored in the read replica without needing to deal\nwith replication lag.\n\n---------\n\nCo-authored-by: Daniel Zheng <d.zheng@salesforce.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/003b1c2ee5aed17a07d03f508aa0c2429e2aa845"
+        },
+        {
+          "sha": "a5210afe1202aeb81629618e6b7ee96c2b5bf52c",
+          "author_date": "2025-11-03T22:10:39Z",
+          "message": "perf(gate/web): increase performance of the GET /{application}/pipelineConfigs/{pipelineName:.+} endpoint (#7314)\n\n* refactor(gate/web/test): include exception handling in ApplicationControllerSpec\n\nto pave the way for changing some of the underlying front50 endpoints\n\n* test(gate/web): demonstrate behavior of GET /{application}/pipelineConfigs/{pipelineName:.+}\n\nwhen front50 responds with 500\n\n* refactor(gate/web/test): remove mock web server since it's not used\n\n* refactor(gate/web/test): refer to individual pipelines by name in ApplicationControllerSpec\n\nto reduce differences when changing the front50 endpoint\n\n* refactor(gate/core): add type arguments to raw Map in Front50Service\n\nSpecifically, getPipelineConfigsForApplication and getStrategyConfigs to facilitate\ntype-safe mocking in tests, and to generally improve code quality.\n\n* refactor(gate/web/test): convert ApplicationControllerSpec from groovy to java\n\nfor general goodness, but also to pave the way to convert from standaloneSetup to\nwebAppContextSetup where mixing spock mocks and spring mock beans doesn't end well.\n\n* refactor(orca/web/test): convert ApplicationControllerTest from standaloneSetup to webAppContextSetup\n\nto pave the way for additional exception handling.  standaloneSetup only accepts one\nobject to use for ControllerAdvice, but with exception handling in both\nGenericExceptionHandlers and SpinnakerRetrofitExceptionHandlers, that isn't sufficient.\n\n* feat(gate/web): include the application name in the exception message from ApplicationService.getPipelineConfigForApplication\n\nso the message is more helpful for callers who don't augment it.\n\n* perf(gate/web): increase performance of the GET /{application}/pipelineConfigs/{pipelineName:.+} endpoint\n\nby changing it to query front50 for a specific pipeline instead of all pipelines in an\napplication, and then filtering.\n\n* fix(gate/core): remove leading slashes in retrofit URL\n\nto minimize diffs, and to match what https://github.com/spinnaker/spinnaker/pull/7159 did.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a5210afe1202aeb81629618e6b7ee96c2b5bf52c"
+        },
+        {
+          "sha": "908bc11df85b5c3dfeef2f5fba9fef9157866c8e",
+          "author_date": "2025-11-04T05:19:07Z",
+          "message": "feat(gate/executions): add a pipelineNameFilter query parameter when getting pipeline executions (#7315)\n\n* refactor(web/test): reduce duplication in TaskControllerSqlExecutionRepositoryTest\n\nRefactoring the TaskControllerSqlExecutionRepositoryTest class to avoid some copy pasta.\n\nThis change also modifies the endpoints being tested to use\n/v2/applications/{application}/pipelines instead of the normal\n/applications/{application}/pipelines. The v2 version of the endpoint simply passes\nthrough the parameters to unversioned endpoint, and the v2 version is the one that\nactually gets used, so it's better to call into the v2 version for better test coverage.\n\n* perf(orca/executions): add pipelineNameFilter to /applications/{application}/pipelines endpoint\n\nand /v2/applications/{application}/pipelines endpoint as well.\n\nThis adds the pipelineNameFilter to the endpoints which get pipelines by application\nname. Right now this filter is present in gate, but gate does the filtering with the\nparameter, instead of passing it through to orca. This is inefficient as there is no need\nfor orca to send over all of the pipeline execution information for an application, and\nthen have gate do the filtering. With this functionality here, we can change gate to\nsimply pass the parameter through.\n\n* feat(gate/executions): add a pipelineNameFilter when getting pipeline executions\n\nThis adds a pipelineNameFilter to the /applications/{application}/pipelines endpoint. This\nprovides functionality to filter pipeline executions by pipeline name. This paves the way for a UI optimization.\n\n* perf(gate/executions): pass pipelineNameFilter to orca\n\nThis change passes the pipelineNameFilter to orca.\n\nWith this change the /application/{applications}/pipelines endpoint should get a lot of\noptimization, because we will avoid passing all of the pipeline execution data from orca\nto gate when it is not needed.\n\n---------\n\nCo-authored-by: Richard Timpson <richard.timpson@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/908bc11df85b5c3dfeef2f5fba9fef9157866c8e"
+        },
+        {
+          "sha": "9788e7f8ee39bcd455816884e904f6a57f4bbafb",
+          "author_date": "2025-11-04T20:41:14Z",
+          "message": "feat(azure): Implement Azure dynamic account loading matching AWS/Goo… (#7269)\n\n* feat(azure): Implement Azure dynamic account loading matching AWS/Google patterns\n\nThis commit implements Azure dynamic account loading to match the patterns\nused by AWS and Google cloud providers.\n\nKey Changes:\n\n1. Azure ManagedAccount Updates:\n   - Made ManagedAccount implement AccessControlledAccountDefinition (like AWS)\n   - Added namingStrategy property\n   - Fixed getPermissions() to use .unpack() instead of .toMap()\n   - Added @JsonTypeName(\"azure\") annotation for REST API support\n\n2. Azure Credentials Configuration:\n   - Created AzureCredentialsConfiguration.java (matches Google pattern)\n   - Uses MapBackedCredentialsRepository (same as AWS/Google)\n   - Added @Primary and @Lazy annotations (matches AWS)\n   - Uses Poller for error handling (matches AWS/Google)\n\n3. Azure Credentials Lifecycle:\n   - Created AzureCredentialsLifecycleHandler.java\n   - Implements credentialsAdded/Updated/Deleted for dynamic account management\n   - Uses BaseProvider's addAgents() and removeAgentsForAccounts()\n   - Properly manages dynamic agent addition/removal\n\n4. Azure Infrastructure Provider:\n   - Updated to use BaseProvider's methods correctly\n   - Removed @DependsOn annotation to support both static and dynamic loading\n\n5. Azure Caching Agents:\n   - Fixed pendingOnDemandRequests() return type to Collection<Map<String, Object>>\n\n6. Critical Bug Fixes:\n   - Fixed Permissions.toMap() → Permissions.unpack() in AzureConfigurationProperties\n   - Fixed permissions handling in AzureCredentialsParser using Builder pattern\n   - Removed @DependsOn annotation from AzureInfrastructureProviderConfig\n   - Made locationToInstanceTypesMap lazy to avoid blocking startup\n   - Made AzureCredentials authentication non-blocking (catches exceptions)\n\n7. Cleanup:\n   - Removed redundant AzureCredentialsInitializer.groovy (old pattern)\n   - Removed import from AzureConfiguration.groovy\n   - Added kork-credentials dependency to gradle\n\nFiles Modified (11 files):\n- clouddriver/clouddriver-azure/clouddriver-azure.gradle\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/common/cache/AzureCachingAgent.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/config/AzureConfigurationProperties.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/config/view/AzureInfrastructureProviderConfig.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/resources/common/cache/provider/AzureInfrastructureProvider.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/resources/loadbalancer/cache/AzureLoadBalancerCachingAgent.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/resources/securitygroup/cache/AzureSecurityGroupCachingAgent.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/resources/servergroup/cache/AzureServerGroupCachingAgent.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/security/AzureCredentials.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/clouddriver/azure/security/AzureNamedAccountCredentials.groovy\n- clouddriver/clouddriver-azure/src/main/groovy/com/netflix/spinnaker/config/AzureConfiguration.groovy\n\nFiles Added (3 files):\n- clouddriver/clouddriver-azure/src/main/java/com/netflix/spinnaker/clouddriver/azure/security/AzureCredentialsConfiguration.java\n- clouddriver/clouddriver-azure/src/main/java/com/netflix/spinnaker/clouddriver/azure/security/AzureCredentialsLifecycleHandler.java\n- clouddriver/clouddriver-azure/src/main/java/com/netflix/spinnaker/clouddriver/azure/security/AzureCredentialsParser.java\n\nVerified:\n- Clouddriver starts successfully: Started Main in 8.722 seconds\n- Azure credentials type discovered by system\n- Pre-existing .toMap() bug fixed\n- Ready for Azure dynamic account loading with SQL database\n- Add/Edit/Delete operations implemented in lifecycle handler\n\nAll changes ensure Azure dynamic account loading works consistently with\nAWS and Google implementations.\n\n* feat(azure): Add comprehensive unit tests and remove @Primary annotation\n\n- Added AzureAccountDefinitionSourceTest.java (3 tests)\n- Added AzureDynamicAccountLoadingTest.java (9 tests)\n- Removed @Primary annotation to match Google pattern\n- All 12 tests pass successfully\n\nTests cover:\n- Account definition source returns accounts\n- Empty account list handling\n- Credentials repository creation with lifecycle handler\n- Account definition source integration\n- @JsonTypeName annotation verification\n- Dynamic loading with empty accounts\n- Multiple account sources\n- Credentials loader creation\n- Credentials initializer synchronizable\n- Account with all properties set\n\n---------\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: Christos Arvanitis <christos.arvanitis@armory.io>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/9788e7f8ee39bcd455816884e904f6a57f4bbafb"
+        },
+        {
+          "sha": "44dc2da488fe848ffc80ed80a3e73f188bf262f2",
+          "author_date": "2025-11-04T20:41:46Z",
+          "message": "perf(executions): add pipelineLimit query parameter to gate's GET /applications/{application}/pipelines and GET /applications/{application}/pipelineConfigs endpoints (#7319)\n\n* fix(front50/pipelines): fix bug rewriting pipeline index in cache\n\nFixes a bug that rewrites the pipeline index value of the pipelines in the front50 cache. The previous code that set p.setIndex(i) was actually rewriting the index values of the pipelines in the cache, because the p is actually a reference to the underlying memory of the cache. To fix, we do a shallow clone of the pipeline objects that we are going to return, and set the index on the cloned objects.\n\nThis bug became apparent with the pipelineLimit query parameter, as subsequent calls to the same endpoint with the same limit value were returning different results. This also adds a specific test case for that very scenario, to ensure that front50 always uses the index values that exist in the db.\n\n* perf(front50/pipelines): pipelineLimit query param on /pipelineConfigs\n\nAdds a pipelineLimit query param on the /{application}/pipelineConfigs endpoint. This parameter ensures that the number of pipelines returned from the endpoint never exceeds the number specified by pipelineLimit.\n\nCombined with similar changes to gate and orca, this paves the way for a UI change to limit the number of pipeline configs and executions on the executions page.\n\n* perf(orca/pipelines): pipelineLimit query param on /pipelines\n\nAdds a pipelineLimit to the /v2/applications/{application}/pipelines endpoint. The endpoint passes through this query parameter to front50 when fetching pipeline configs. Because the endpoint only uses the pipeline configs ids that it gets from front50, this gives us a mechanism to limit the number of executions returned.\n\n* refactor(orca/pipelines): remove unnecessary conditional logic when fetching pipeline executions\n\nSmall change that removes an unnecessary ternary expression when calling front50 to get pipeline configs while fetching executions by application.\n\nIt's more straightforward to always pass through pipelineLimit and pipelineNameFilter. If they are null, the params will simply be left out of the request to front50.\n\n* perf(gate/pipelines): new pipelineLimit param when fetching configs\n\nPass through the pipelineLimit query param to front50 when fetching pipelineConfigs. This allows the UI to control how many configs are returned in an attempt to optimize the executions page for larger applications.\n\n* perf(gate/executions): new pipelineLimit param when fetching executions\n\nPass through the pipelineLimit query param to orca when fetching pipeline executions.  This allows the UI to control how many executions are returned when displaying a list of executions per application.\n\n---------\n\nCo-authored-by: Richard Timpson <richard.timpson@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/44dc2da488fe848ffc80ed80a3e73f188bf262f2"
+        },
+        {
+          "sha": "2b12d30997bcdb650efcf87484beeff739d72bba",
+          "author_date": "2025-11-04T21:12:57Z",
+          "message": "fix(orca/sql): Retrieve the newest pipeline executions (#7320)\n\n* refactor(orca/web/test): use newer assertions library\n\n* fix(orca/sql): Retrieve the newest pipeline executions\n\nfor a particular pipeline config_id\n\nApologies for not having a test here.  We noticed this after migrating live instances of\nSpinnaker to mysql 8.  We didn't see the issue with mysql 5.7, and our automated tests\nwere running with mysql 5.7 at the time.\n\nWithout this fix, we would see newer executions disappear from the UI, replaced by older\nones.\n\n---------\n\nCo-authored-by: Daniel Zheng <d.zheng@salesforce.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/2b12d30997bcdb650efcf87484beeff739d72bba"
+        },
+        {
+          "sha": "a8d0914a154c2ff8ddc08342cc5d97fd5af00b7c",
+          "author_date": "2025-11-05T01:00:40Z",
+          "message": "feat(docker): Start publishing to GHCR as well as GAR for future removal of GAR for docker (#7312)\n\n* feat(docker): Start publishing to GHCR as well as GAR for future removal from GAR\n\n* fix(cleanup): Sorted and cleaned up repos for untagged image cleanup",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a8d0914a154c2ff8ddc08342cc5d97fd5af00b7c"
+        },
+        {
+          "sha": "99e7217422e6ca5f3e3eba7645290c2b5096450e",
+          "author_date": "2025-11-05T01:19:01Z",
+          "message": "fix(gha): Fix cleaner step (#7322)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/99e7217422e6ca5f3e3eba7645290c2b5096450e"
+        },
+        {
+          "sha": "a41df9f1a10f88ce2e2ee7e1a5a578e55794a286",
+          "author_date": "2025-11-05T01:25:19Z",
+          "message": "fix(gha): Another gha typo (#7323)\n\n* fix(gha): Fix cleaner step\n\n* fix(gha): Fix cleaner step",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a41df9f1a10f88ce2e2ee7e1a5a578e55794a286"
+        },
+        {
+          "sha": "3a81d8349c7cbecfe8a1f8da85d0c283bf95bce1",
+          "author_date": "2025-11-05T15:07:35Z",
+          "message": "fix(images): Fix a few more places querying for images that had null parameters causing failures due to retrofit changes (#7321)\n\n* fix(images): Fix a few more places querying for images that had null parameters causing failures due to retrofit changes\n\n* chore(docs): Update docs on the fix.\n\n* fix(formatting): Spotless apply\n\n* chore(docs): remove a comment",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/3a81d8349c7cbecfe8a1f8da85d0c283bf95bce1"
+        },
+        {
+          "sha": "ce27f216df3196ce243bce1a5e79372d1b9c256a",
+          "author_date": "2025-11-05T15:24:54Z",
+          "message": "fix(gha): Not a workflow so secret refs slightly different (#7325)",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/ce27f216df3196ce243bce1a5e79372d1b9c256a"
+        },
+        {
+          "sha": "7a3b1053b6a535b712d12ee685137b8a749e0388",
+          "author_date": "2025-11-05T17:27:53Z",
+          "message": "fix(orca/web/test): make the description of the test match reality (#7326)\n\nfor \"execution retrieval with optimization\" in TaskControllerSqlExecutionRepositoryTest.\nThe test already runs with optimization due to Fixture(true).  This makes the description\nmatch.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/7a3b1053b6a535b712d12ee685137b8a749e0388"
+        },
+        {
+          "sha": "bf5738c1d8b43812171cd140c743b3a83b19123b",
+          "author_date": "2025-11-05T20:40:36Z",
+          "message": "fix(sql): only reference the compressed executions table (#7327)\n\n* test(orca/sql): demonstrate behavior of SqlExecutionRepository.retrievePipelineExecutionDetailsForApplication\n\nwhen compression is disabled.  Specifically, that this function still references a compressed table.  The underlying sql query is:\n\n10:56:54.480 [Test worker] DEBUG org.jooq.tools.LoggerListener - Executing query          : select id, body, `partition` from pipelines left outer join pipelines_compressed_executions using (id) where id in (?)\n10:56:54.480 [Test worker] DEBUG org.jooq.tools.LoggerListener - -> with bind values      : select id, body, `partition` from pipelines left outer join pipelines_compressed_executions using (id) where id in ('01K9AP1T028ESRMV2VHD4GHBSM')\n10:56:54.484 [Test worker] DEBUG org.jooq.tools.LoggerListener - Fetched result           : +--------------------------+----+---------+\n10:56:54.484 [Test worker] DEBUG org.jooq.tools.LoggerListener -                          : |id                        |body|partition|\n10:56:54.484 [Test worker] DEBUG org.jooq.tools.LoggerListener -                          : +--------------------------+----+---------+\n10:56:54.484 [Test worker] DEBUG org.jooq.tools.LoggerListener -                          : |01K9AP1T028ESRMV2VHD4GHBSM|    |test     |\n10:56:54.484 [Test worker] DEBUG org.jooq.tools.LoggerListener -                          : +--------------------------+----+---------+\n10:56:54.484 [Test worker] DEBUG org.jooq.tools.LoggerListener - Fetched row(s)           : 1\n\n* fix(sql): only reference the compressed executions table\n\nwhen compression is enabled in SqlExecutionRepository.retrievePipelineExecutionDetailsForApplication.  No change to the test, but the underlying query is now:\n\n11:30:14.568 [Test worker] DEBUG org.jooq.tools.LoggerListener - Executing query          : select id, body, `partition` from pipelines where id in (?)\n11:30:14.568 [Test worker] DEBUG org.jooq.tools.LoggerListener - -> with bind values      : select id, body, `partition` from pipelines where id in ('01K9AQYF7F158TNFB5PMP0ZY1T')\n11:30:14.569 [Test worker] DEBUG org.jooq.tools.LoggerListener - Fetched result           : +--------------------------+--------------------------------------------------+---------+\n11:30:14.569 [Test worker] DEBUG org.jooq.tools.LoggerListener -                          : |id                        |body                                              |partition|\n11:30:14.569 [Test worker] DEBUG org.jooq.tools.LoggerListener -                          : +--------------------------+--------------------------------------------------+---------+\n11:30:14.569 [Test worker] DEBUG org.jooq.tools.LoggerListener -                          : |01K9AQYF7F158TNFB5PMP0ZY1T|{\"type\":\"PIPELINE\",\"id\":\"01K9AQYF7F158TNFB5PMP0...|test     |\n11:30:14.569 [Test worker] DEBUG org.jooq.tools.LoggerListener -                          : +--------------------------+--------------------------------------------------+---------+\n11:30:14.569 [Test worker] DEBUG org.jooq.tools.LoggerListener - Fetched row(s)           : 1\n\nThis change should likely have been part of https://github.com/spinnaker/orca/pull/4620/commits/f90da3051d02e5b2f8176b23d9a76e02aaa3a4b, first released in Spinnaker version 1.34.0.  Other than causing trouble when adding support for replication lag awareness, it's not clear what the consequences of this bug are beyond reduced performance.  retrievePipelineExecutionDetailsForApplication is only called when tasks.controller.optimizeExecutionRetrieval is true.  It defaults to false.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/bf5738c1d8b43812171cd140c743b3a83b19123b"
+        },
+        {
+          "sha": "74262cacb577a8d4f68918f5c428fdcd467b0001",
+          "author_date": "2025-11-06T02:49:17Z",
+          "message": "fix(echo): Fix rest event config to work with splunk style URLs or those without a trailing slash on the URL (#7330)\n\n* fix(echo): Fix rest event config to work with splunk style URLs or those without a trailing slash on the URL\n\n* chore(test): add an extra test line",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/74262cacb577a8d4f68918f5c428fdcd467b0001"
+        },
+        {
+          "sha": "9721c0cbf7b2760052824b5766856ffc7bd5dc67",
+          "author_date": "2025-11-06T13:43:04Z",
+          "message": "fix(orca/queue): run kotlin tests in orca/orca-queue (#7333)\n\nSimilar to https://github.com/spinnaker/spinnaker/pull/7292.",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/9721c0cbf7b2760052824b5766856ffc7bd5dc67"
+        },
+        {
+          "sha": "ed0023ebff55956d438e0a2424c1c1c66e220f41",
+          "author_date": "2025-11-07T23:17:47Z",
+          "message": "fix(spin): Fix spin cli docker publishing to GHCR (#7335) (#7336)\n\n(cherry picked from commit 03e94e4ebe70904c244067b57b0fcd84a9332a1c)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/ed0023ebff55956d438e0a2424c1c1c66e220f41"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "spinnaker-release-2025.4.0",
@@ -15393,8 +15905,75 @@
     {
       "release": "spinnaker-release-2025.4.1",
       "previous_release": "spinnaker-release-2025.4.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "6bb032904bbece2cbf4aa8f78a9e92a988033716",
+          "author_date": "2025-12-14T18:18:44Z",
+          "message": "fix(orca/web): properly deserialize webhook status code (#7367) (#7368)\n\n* tests(serialisation): Add tests to demonstrate http status code deserialisation issue.\n\n* fix(orca/web): properly deserialize webhook status code\n\nSpring 6 HttpStatusCode expects numeric values during deserialization.\nPreviously persisted webhook execution data may contain string status\nvalues (e.g. \"OK\"), causing stage context rehydration to fail during\ncancellation or failure handling.\n\nIntroduce a custom Jackson deserializer to support both numeric and\nsymbolic HTTP status representations while preserving the existing\nHttpStatusCode model.\n\nStacktrace:\n```\nCaused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String \"OK\": not a valid `int` value\n at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.netflix.spinnaker.orca.webhook.pipeline.WebhookStage$StageData[\"webhook\"]->com.netflix.spinnaker.orca.webhook.pipeline.WebhookStage$WebhookResponseStageData[\"monitor\"]->com.netflix.spinnaker.orca.webhook.pipeline.WebhookStage$WebhookMonitorResponseStageData[\"statusCode\"])\n\tat com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)\n\tat com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1996)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1224)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseIntPrimitive(StdDeserializer.java:772)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromString(StdDeserializer.java:288)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromString(BeanDeserializerBase.java:1500)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:197)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)\n\tat com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)\n```\n\n(cherry picked from commit f85f74de32edc28df3ca84039b68dfabf094eb1a)\n\nCo-authored-by: Rahul Chekuri <89373036+rahul-chekuri@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/6bb032904bbece2cbf4aa8f78a9e92a988033716"
+        },
+        {
+          "sha": "57f98fe36d702c35d06789f4e45a4f93abebfeed",
+          "author_date": "2025-12-19T16:15:58Z",
+          "message": "test(orca/web): reproduce anonymous pipeline trigger user (#7369) (#7374)\n\n* test(orca/web): reproduce anonymous pipeline trigger user\n\nThe test demonstrates an issue where the pipeline trigger user is persisted as anonymousUser instead of the authenticated user when calling POST /orchestrate, causing the UI to display the trigger user as username(anonymousUser).\n\n* fix(fiat): ensure authenticated user is set in SecurityContext always\n\nUpdates FiatAuthenticationFilter to always populate the SecurityContext\nwith the authenticated user returned by the AuthenticationConverter.\nThis prevents pipeline executions from being persisted with\nauthentication.user = anonymousUser and fixes incorrect usernames\nshown in the UI.\n\n(cherry picked from commit 52d0968b4663b5a59f5d37e7c2f2b7fec4e1e449)\n\nCo-authored-by: Rahul Chekuri <89373036+rahul-chekuri@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/57f98fe36d702c35d06789f4e45a4f93abebfeed"
+        },
+        {
+          "sha": "826e6adfce2ac4f5ff36330a0c5e4c9e4a0af8c4",
+          "author_date": "2026-01-01T17:22:19Z",
+          "message": "fix(OAuth2): Remove quotes as it is causing URI issues while redirecting. (#7380) (#7383)\n\nBackground:\nhttps://github.com/spinnaker/spinnaker/issues/7377\n(cherry picked from commit 232089d89225e89ce9be74f2182b56b2dee5000f)\n\nCo-authored-by: Rahul Chekuri <89373036+rahul-chekuri@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/826e6adfce2ac4f5ff36330a0c5e4c9e4a0af8c4"
+        },
+        {
+          "sha": "efa2f298e0ad2357ce47d38e80d4dc6fbebfc3df",
+          "author_date": "2026-01-24T16:20:25Z",
+          "message": "fix(npm): Fix npm publishing (#7398) (#7408)\n\n(cherry picked from commit 212cedb70667f98cfc2a167cb568bb54b36ab969)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/efa2f298e0ad2357ce47d38e80d4dc6fbebfc3df"
+        },
+        {
+          "sha": "43c990698b55a45c920e09d490127aa3e7cbc434",
+          "author_date": "2026-01-24T16:31:10Z",
+          "message": "fix(build): actually publish compiled deck-kayenta code (#7389) (#7417)\n\n(cherry picked from commit 3f325c90fc72f66ce152335e7f91c3d890128f56)\n\nCo-authored-by: Matt Gogerly <6519811+mattgogerly@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/43c990698b55a45c920e09d490127aa3e7cbc434"
+        },
+        {
+          "sha": "27f0bf355dd3edc6c6344f6abd3d604e79ff0841",
+          "author_date": "2026-01-24T16:52:27Z",
+          "message": "fix(deck): Attempt two of fixing deck publishing (backport #7406) (#7410)\n\n* fix(deck): Attempt two of fixing deck publishing (#7406)\n\n(cherry picked from commit 4a1dafc45494c093dac7c704ed3661df4276b8d0)\n\n# Conflicts:\n#\t.github/workflows/deck-kayenta.yml\n#\t.github/workflows/deck.yml\n\n* fix(backport): Fix conflicting backport change\n\n* fix(backport): Fix conflicting backport\n\n---------\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/27f0bf355dd3edc6c6344f6abd3d604e79ff0841"
+        },
+        {
+          "sha": "6ea43243131787e9f5bea5b602b888064cbd03d0",
+          "author_date": "2026-01-26T14:59:47Z",
+          "message": "chore(build): migrate to trusted npm publishing (#7379) (#7414)\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\n(cherry picked from commit c0a18c31c3b57cad067eab1693b3eb493a2632e1)\n\n# Conflicts:\n#\tdeck/yarn.lock\n\nCo-authored-by: Matt Gogerly <6519811+mattgogerly@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/6ea43243131787e9f5bea5b602b888064cbd03d0"
+        },
+        {
+          "sha": "f3b93fbc9f85313e505a99bc743be0802f86b3c4",
+          "author_date": "2026-01-27T15:57:59Z",
+          "message": "fix(publishing): Fix image publishing for deck due to NPM trusted publishing change (#7422) (#7423)\n\n(cherry picked from commit f8505b75e9651e1037ba7484fc5b54a7d87d30bd)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/f3b93fbc9f85313e505a99bc743be0802f86b3c4"
+        },
+        {
+          "sha": "fc30c3dce043fbd445030bc51910f411f9604d37",
+          "author_date": "2026-01-29T15:02:05Z",
+          "message": "fix(gcp): Fix missing pagination token on accelerator lookups (#7420) (#7434)\n\n(cherry picked from commit 343c39055bf386f7b4ce3711103ca64f55cb073b)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/fc30c3dce043fbd445030bc51910f411f9604d37"
+        },
+        {
+          "sha": "31d409762500c9c33f8defcb3b61a7fde50783d5",
+          "author_date": "2026-01-30T22:51:36Z",
+          "message": "fix(validation): Fixes some url validation handling on underscores (backport #7428) (#7440)\n\n* fix(validation): Fixes some url validation handling on underscores (#7428)\n\n* fix(restrictions): Add some validations around hosts with underscore\n\n* fix(test): Fix a resulting text change that adds the slash on URLs as part of validation output.\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\n(cherry picked from commit 7c4737906239a958a468e843239c6785b03d0eda)\n\n# Conflicts:\n#\tclouddriver/clouddriver-artifacts/src/main/java/com/netflix/spinnaker/clouddriver/artifacts/config/HttpUrlRestrictions.java\n\n* fix(backport): Fix conflicting backport change\n\n---------\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/31d409762500c9c33f8defcb3b61a7fde50783d5"
+        },
+        {
+          "sha": "aa57ea001b59ca769dd0920aed64e51e8428ff1f",
+          "author_date": "2026-02-02T23:47:57Z",
+          "message": "fix(publishing): Fix deck kayenta had duplicate package block (#7444) (#7445)\n\n(cherry picked from commit 7c7ba0a53439fd22e933c007cd7551caceeb3b52)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/aa57ea001b59ca769dd0920aed64e51e8428ff1f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "spinnaker-release-2025.3.1",
@@ -15447,8 +16026,33 @@
     {
       "release": "spinnaker-release-2026.1.1",
       "previous_release": "spinnaker-release-2026.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "6f0250a49e6ec039bf462b7a509810d51ecb5cc5",
+          "author_date": "2026-06-11T17:28:55Z",
+          "message": "fix(echo): GitHub status conversion exception (#7701) (#7706)\n\n* fix(echo/notifications): correct GithubService.updateCheck return type\n\nThe Retrofit 1 -> Retrofit 2 migration in spinnaker/echo#1466 mechanically\ntranslated retrofit.client.Response (a Retrofit 1 DTO) into the generic\nparameter of retrofit2.Response, producing Call<Response<ResponseBody>>.\nIn Retrofit 2, Call<T> already yields a retrofit2.Response<T> when\nexecuted, so the body type T must be the JSON DTO (or ResponseBody/Void),\nnot retrofit2.Response<...>.\n\nAt runtime, kork's ErrorHandlingExecutorCallAdapterFactory feeds the\nGitHub status response body through Jackson, which then tries to\nconstruct a retrofit2.Response<ResponseBody> and fails with:\n\n  Failed to process response body: Cannot construct instance of\n  retrofit2.Response (no Creators, like default constructor, exist):\n  cannot deserialize from Object value\n   at [Source: (okhttp3.ResponseBody$BomAwareReader); line: 1, column: 2]\n\nThis is wrapped into SpinnakerConversionException, surfaces as the\n\"Failed to send github status for application:'...' pipeline:'...'\"\nerror in GithubNotificationAgent, and (because RetrySupport ignores\nretryable=false) can produce up to 5 duplicate GitHub status entries\nper pipeline event before the failure is logged.\n\nThe HTTP request itself succeeds (GitHub creates the status check);\nonly response deserialization fails. Fix by changing the return type to\nCall<ResponseBody>, matching the pattern already used by\nSlackClient.sendUsingIncomingWebHook, BearychatService.sendMessage, etc.\nThe body is unused by GithubNotificationAgent.\n\n* fix(echo/notifications): correct CDEventsSenderClient.sendCDEvent return type\n\nSame Retrofit 1 -> Retrofit 2 migration mistake as in\nGithubService.updateCheck: the return type Call<Response<ResponseBody>>\nasks Jackson to deserialize the broker response body into\nretrofit2.Response<ResponseBody>, which has no default constructor or\nJackson creators and therefore throws SpinnakerConversionException\n(\"Failed to process response body: Cannot construct instance of\nretrofit2.Response...\") for any non-empty broker response.\n\nChange the client signature to Call<ResponseBody>. The companion\nCDEventsSenderService change uses Retrofit2SyncCall.executeCall(...) so\nit still returns Response<ResponseBody> to CDEventsNotificationAgent\n(no caller change needed).\n\n* fix(echo/notifications): use Retrofit2SyncCall.executeCall in CDEventsSenderService\n\nCompanion change to the CDEventsSenderClient.sendCDEvent return-type fix\n(Call<Response<ResponseBody>> -> Call<ResponseBody>). The Retrofit2SyncCall\nhelper has two methods:\n  - execute(Call<T>)      returns the response body T\n  - executeCall(Call<T>)  returns the full Response<T>\n\nCDEventsSenderService advertises Response<ResponseBody> to its caller\n(CDEventsNotificationAgent reads .code(), .message() and .body() off it),\nso switch to executeCall(...) to preserve that contract while the client\nreturns the correct body type.\n\n---------\n\n\n(cherry picked from commit a1ae9e5b394be9a993880ffdb6b0ada47f32af40)\n\nCo-authored-by: Johannes Grumböck <johannes@grumboeck.net>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/6f0250a49e6ec039bf462b7a509810d51ecb5cc5"
+        },
+        {
+          "sha": "de5a7a05af35aee19eb71d289cd0b77f67509009",
+          "author_date": "2026-06-12T14:25:11Z",
+          "message": "Merge commit from fork (#7711)\n\nCo-authored-by: Christos Arvanitis <c_christos.arvanitis@harness.io>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/de5a7a05af35aee19eb71d289cd0b77f67509009"
+        },
+        {
+          "sha": "8d011e838404d1fc0952f2c706c34dee8ef0552c",
+          "author_date": "2026-06-12T17:20:42Z",
+          "message": "fix(tests): Add tests around retrofit incorrect call handling from previous PR (#7710) (#7722)\n\n(cherry picked from commit 0a0b6e1adc28fe1cb6877ef139cfb08f66e3d398)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/8d011e838404d1fc0952f2c706c34dee8ef0552c"
+        },
+        {
+          "sha": "a3e1f5e22cb7c78892beed4f795846eb6e12f2e6",
+          "author_date": "2026-06-12T17:33:47Z",
+          "message": "fix(echo): Fix Microsoft Teams webhook URL doubling in Retrofit2 migration (#7718) (#7719)\n\n* fix(echo): Fix Microsoft Teams webhook URL doubling in Retrofit2 migration\n\nWhen sending notifications to Microsoft Teams webhooks, the path was being\nduplicated in the final URL (e.g., /webhooks/id.../webhooks/id...) resulting in\n404 errors.\n\nRoot cause: During Retrofit 1 to Retrofit 2 migration, the code started using\nRetrofitUtils.getBaseUrl() which preserves the full URL including path. Then\n@Path annotation would append the path again, causing duplication.\n\nSolution: Use Retrofit2's @Url annotation to pass the full webhook URL directly,\nwhich overrides the base URL path completely. This eliminates the need for\npath extraction logic.\n\nChanges:\n- MicrosoftTeamsClient: Replace @POST('{webhookUrl}') + @Path with @POST + @Url\n- MicrosoftTeamsService: Simplify to pass full webhookUrl, remove path extraction helpers\n- Removed unused imports and ~60 lines of complex URL parsing code\n\n* test(echo): add mock server regression test for Teams webhook URL handling\n\nAdd a Groovy/Spock test using MockWebServer to verify that the Microsoft Teams\nwebhook URL is correctly handled without path duplication after the Retrofit 1 -> 2\nmigration fix. This test exercises the real MicrosoftTeamsService.sendMessage() path\nand ensures that when @Url is used with a full webhook URL, the path is not\nduplicated in the outgoing request.\n\nPatterns follow from PR #7710's retrofit regression test approach.\n\n* test(echo): fix Teams retrofit spec setup\n\nFix failing MicrosoftTeamsServiceRetrofitSpec by constructing\nOkHttp3ClientConfiguration with the required dependencies instead of calling a\nnon-existent no-arg constructor. Also use the real MicrosoftTeamsMessage\nconstructor so the spec matches the production type.\n\nThis addresses the failing test job in PR #7718.\n\n* fix(echo): derive Teams base URL from host only, not full webhook\n\nRetrofitUtils.getBaseUrl() blindly appends a trailing slash, which lands\nafter the query string for webhook URLs containing query params (e.g.\nTeams Workflow URLs with ?api-version=...&sig=...), producing\n\".../webhook?tenant=demo/\" and triggering Retrofit's \"baseUrl must end\nin /\" error.\n\nSince the full, absolute webhook URL is supplied via @Url (which\noverrides the base URL entirely), the base URL only needs to be a valid\nscheme://host[:port]/ placeholder. Use HttpUrl.get(webhookUrl).resolve(\"/\")\nwhich strips path and query and always ends in /.\n\nRemoves the now-unused RetrofitUtils import.\n\n---------\n\n\n\n(cherry picked from commit 294e8d71093c2c8e7f09ac05c672379e77938be2)\n\nCo-authored-by: Johannes Grumböck <johannes@grumboeck.net>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a3e1f5e22cb7c78892beed4f795846eb6e12f2e6"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "spinnaker-release-2026.0.3",
@@ -15513,8 +16117,153 @@
     {
       "release": "spinnaker-release-2026.1.3",
       "previous_release": "spinnaker-release-2026.2.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "6f0250a49e6ec039bf462b7a509810d51ecb5cc5",
+          "author_date": "2026-06-11T17:28:55Z",
+          "message": "fix(echo): GitHub status conversion exception (#7701) (#7706)\n\n* fix(echo/notifications): correct GithubService.updateCheck return type\n\nThe Retrofit 1 -> Retrofit 2 migration in spinnaker/echo#1466 mechanically\ntranslated retrofit.client.Response (a Retrofit 1 DTO) into the generic\nparameter of retrofit2.Response, producing Call<Response<ResponseBody>>.\nIn Retrofit 2, Call<T> already yields a retrofit2.Response<T> when\nexecuted, so the body type T must be the JSON DTO (or ResponseBody/Void),\nnot retrofit2.Response<...>.\n\nAt runtime, kork's ErrorHandlingExecutorCallAdapterFactory feeds the\nGitHub status response body through Jackson, which then tries to\nconstruct a retrofit2.Response<ResponseBody> and fails with:\n\n  Failed to process response body: Cannot construct instance of\n  retrofit2.Response (no Creators, like default constructor, exist):\n  cannot deserialize from Object value\n   at [Source: (okhttp3.ResponseBody$BomAwareReader); line: 1, column: 2]\n\nThis is wrapped into SpinnakerConversionException, surfaces as the\n\"Failed to send github status for application:'...' pipeline:'...'\"\nerror in GithubNotificationAgent, and (because RetrySupport ignores\nretryable=false) can produce up to 5 duplicate GitHub status entries\nper pipeline event before the failure is logged.\n\nThe HTTP request itself succeeds (GitHub creates the status check);\nonly response deserialization fails. Fix by changing the return type to\nCall<ResponseBody>, matching the pattern already used by\nSlackClient.sendUsingIncomingWebHook, BearychatService.sendMessage, etc.\nThe body is unused by GithubNotificationAgent.\n\n* fix(echo/notifications): correct CDEventsSenderClient.sendCDEvent return type\n\nSame Retrofit 1 -> Retrofit 2 migration mistake as in\nGithubService.updateCheck: the return type Call<Response<ResponseBody>>\nasks Jackson to deserialize the broker response body into\nretrofit2.Response<ResponseBody>, which has no default constructor or\nJackson creators and therefore throws SpinnakerConversionException\n(\"Failed to process response body: Cannot construct instance of\nretrofit2.Response...\") for any non-empty broker response.\n\nChange the client signature to Call<ResponseBody>. The companion\nCDEventsSenderService change uses Retrofit2SyncCall.executeCall(...) so\nit still returns Response<ResponseBody> to CDEventsNotificationAgent\n(no caller change needed).\n\n* fix(echo/notifications): use Retrofit2SyncCall.executeCall in CDEventsSenderService\n\nCompanion change to the CDEventsSenderClient.sendCDEvent return-type fix\n(Call<Response<ResponseBody>> -> Call<ResponseBody>). The Retrofit2SyncCall\nhelper has two methods:\n  - execute(Call<T>)      returns the response body T\n  - executeCall(Call<T>)  returns the full Response<T>\n\nCDEventsSenderService advertises Response<ResponseBody> to its caller\n(CDEventsNotificationAgent reads .code(), .message() and .body() off it),\nso switch to executeCall(...) to preserve that contract while the client\nreturns the correct body type.\n\n---------\n\n\n(cherry picked from commit a1ae9e5b394be9a993880ffdb6b0ada47f32af40)\n\nCo-authored-by: Johannes Grumböck <johannes@grumboeck.net>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/6f0250a49e6ec039bf462b7a509810d51ecb5cc5"
+        },
+        {
+          "sha": "de5a7a05af35aee19eb71d289cd0b77f67509009",
+          "author_date": "2026-06-12T14:25:11Z",
+          "message": "Merge commit from fork (#7711)\n\nCo-authored-by: Christos Arvanitis <c_christos.arvanitis@harness.io>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/de5a7a05af35aee19eb71d289cd0b77f67509009"
+        },
+        {
+          "sha": "8d011e838404d1fc0952f2c706c34dee8ef0552c",
+          "author_date": "2026-06-12T17:20:42Z",
+          "message": "fix(tests): Add tests around retrofit incorrect call handling from previous PR (#7710) (#7722)\n\n(cherry picked from commit 0a0b6e1adc28fe1cb6877ef139cfb08f66e3d398)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/8d011e838404d1fc0952f2c706c34dee8ef0552c"
+        },
+        {
+          "sha": "a3e1f5e22cb7c78892beed4f795846eb6e12f2e6",
+          "author_date": "2026-06-12T17:33:47Z",
+          "message": "fix(echo): Fix Microsoft Teams webhook URL doubling in Retrofit2 migration (#7718) (#7719)\n\n* fix(echo): Fix Microsoft Teams webhook URL doubling in Retrofit2 migration\n\nWhen sending notifications to Microsoft Teams webhooks, the path was being\nduplicated in the final URL (e.g., /webhooks/id.../webhooks/id...) resulting in\n404 errors.\n\nRoot cause: During Retrofit 1 to Retrofit 2 migration, the code started using\nRetrofitUtils.getBaseUrl() which preserves the full URL including path. Then\n@Path annotation would append the path again, causing duplication.\n\nSolution: Use Retrofit2's @Url annotation to pass the full webhook URL directly,\nwhich overrides the base URL path completely. This eliminates the need for\npath extraction logic.\n\nChanges:\n- MicrosoftTeamsClient: Replace @POST('{webhookUrl}') + @Path with @POST + @Url\n- MicrosoftTeamsService: Simplify to pass full webhookUrl, remove path extraction helpers\n- Removed unused imports and ~60 lines of complex URL parsing code\n\n* test(echo): add mock server regression test for Teams webhook URL handling\n\nAdd a Groovy/Spock test using MockWebServer to verify that the Microsoft Teams\nwebhook URL is correctly handled without path duplication after the Retrofit 1 -> 2\nmigration fix. This test exercises the real MicrosoftTeamsService.sendMessage() path\nand ensures that when @Url is used with a full webhook URL, the path is not\nduplicated in the outgoing request.\n\nPatterns follow from PR #7710's retrofit regression test approach.\n\n* test(echo): fix Teams retrofit spec setup\n\nFix failing MicrosoftTeamsServiceRetrofitSpec by constructing\nOkHttp3ClientConfiguration with the required dependencies instead of calling a\nnon-existent no-arg constructor. Also use the real MicrosoftTeamsMessage\nconstructor so the spec matches the production type.\n\nThis addresses the failing test job in PR #7718.\n\n* fix(echo): derive Teams base URL from host only, not full webhook\n\nRetrofitUtils.getBaseUrl() blindly appends a trailing slash, which lands\nafter the query string for webhook URLs containing query params (e.g.\nTeams Workflow URLs with ?api-version=...&sig=...), producing\n\".../webhook?tenant=demo/\" and triggering Retrofit's \"baseUrl must end\nin /\" error.\n\nSince the full, absolute webhook URL is supplied via @Url (which\noverrides the base URL entirely), the base URL only needs to be a valid\nscheme://host[:port]/ placeholder. Use HttpUrl.get(webhookUrl).resolve(\"/\")\nwhich strips path and query and always ends in /.\n\nRemoves the now-unused RetrofitUtils import.\n\n---------\n\n\n\n(cherry picked from commit 294e8d71093c2c8e7f09ac05c672379e77938be2)\n\nCo-authored-by: Johannes Grumböck <johannes@grumboeck.net>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a3e1f5e22cb7c78892beed4f795846eb6e12f2e6"
+        },
+        {
+          "sha": "185398d460d5b3ded71dde1cd660c51a1c01b169",
+          "author_date": "2026-06-16T19:30:54Z",
+          "message": "fix(build): Defer publishing configuration until -bom subproject evaluation (#7727) (#7728)\n\n(cherry picked from commit 68159cd1e7b29dfc6a73a2430d2aac3e21916bb7)\n\nCo-authored-by: jcavanagh <jcavanagh@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/185398d460d5b3ded71dde1cd660c51a1c01b169"
+        },
+        {
+          "sha": "e7c74225d4f0036b0664a9df0c63e8928d3e2c9b",
+          "author_date": "2026-06-16T20:43:44Z",
+          "message": "fix(build): Use default resolution for javaPlatform (#7732) (#7733)\n\n(cherry picked from commit d409ba18dfeac8411ff0b51a08e1f4cae023c367)\n\nCo-authored-by: jcavanagh <jcavanagh@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/e7c74225d4f0036b0664a9df0c63e8928d3e2c9b"
+        },
+        {
+          "sha": "04d9836b8ac0551921c6670412c68d0120f917ed",
+          "author_date": "2026-07-16T17:30:34Z",
+          "message": "fix(packer): pass through Boolean false and numeric 0 -var values (#7806) (#7813)\n\n* fix(packer): pass through Boolean false and numeric 0 -var values\n\nLocalJobFriendlyPackerCommandFactory.buildPackerCommand gated -var\nemission on Groovy truthiness (`if (key && value)`), which is false for\nBoolean false, numeric 0 and \"\". A provider handler that deliberately\nsets e.g. aws_associate_public_ip_address = false (guarded by != null)\nto override the Packer template default of \"true\" had its -var silently\ndropped, so Packer fell back to the default and the instance got a public\nIP — the opposite of the configured intent.\n\nOnly drop null and \"\" now, so false / 0 flow through. Add a spec covering\nBoolean false and numeric 0 values.\n\n\n\n* fix(packer): only strip empty String values, not falsy Boolean/Integer\n\nMake the guard explicit about what it drops: keep dropping null and empty strings, but use an instanceof-guarded isEmpty() so Boolean false and numeric 0 are preserved. Equivalent to the previous `value != \"\"` check but self-documenting and without relying on Groovy truthiness.\n\n\n\n---------\n\n\n\n(cherry picked from commit da8c266c205d49afac96514adbb599d830fd9050)\n\nSigned-off-by: semx <7532921+semx@users.noreply.github.com>\nCo-authored-by: Sergey Sannikov <semx@nxt.ru>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/04d9836b8ac0551921c6670412c68d0120f917ed"
+        },
+        {
+          "sha": "228d83872006d7030d6dbd4bbbd2550dc25c298b",
+          "author_date": "2026-07-16T17:57:54Z",
+          "message": "fix(libdiffs): order versions of differing component counts correctly (#7805) (#7816)\n\nDefaultComparableLooseVersion pads parsed versions to a fixed Integer[4],\nso a shorter version like \"1.2\" becomes [1, 2, null, null]. compareTo\nthen compared components with > / <, and unboxing a null pad threw an NPE\nswallowed by `catch (Exception e) { return -1; }`. As a result\ncompare(\"1.2.3\", \"1.2\") returned -1 and compare(\"1.2\", \"1.2.3\") also\nreturned -1: a genuine upgrade was reported as a downgrade, and the\ncomparator violated antisymmetry.\n\nThe class documents itself as a port of Python LooseVersion, where\n\"1.2.3\" > \"1.2\". Treat a missing component as 0 so a shorter version\norders below its longer prefix. Add tests for differing component counts\nand antisymmetry.\n\n\n\n(cherry picked from commit b3403787fd3509b55d7439ee4592d7996ab0cf7b)\n\nSigned-off-by: semx <7532921+semx@users.noreply.github.com>\nCo-authored-by: Sergey Sannikov <semx@nxt.ru>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/228d83872006d7030d6dbd4bbbd2550dc25c298b"
+        },
+        {
+          "sha": "2304cbd5b5857d1a6338fb5cec8d5f71bb3db7b4",
+          "author_date": "2026-07-27T22:17:45Z",
+          "message": "fix(build): Set group name on all root projects (backport #7834) (#7858)\n\n* fix(build): Set group name on all root projects (#7834)\n\nThe Nexus plugin generates a staging repo description of the form:\n`$group:$name:$version`, in the context of the current `rootProject`\n\nWhen running `findNexusStagingRepository`, it looks for repos by description.\nIn the case of most of the root projects, there was no group name set - it was set only on subprojects.\n\nThis caused a problem with the Nexus plugin - its regex to find the description is the following:\n`descriptionRegex = \"\\\\b\" + Regex.escape(repositoryDescription) + \"(\\\\s|$)\"`\n\nThe `\\b` boundary selector will not match the start of a string unless the first character is a word - in the case of the missing group, the first character was a colon.\nThis caused the generated repository to be unfindable by the Nexus plugin.\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\n(cherry picked from commit 5213400d44f57c949cbceb6b99a168982fa59dfe)\n\n# Conflicts:\n#\techo/build.gradle\n\n* fix(backport): Fix backport merge issue\n\n---------\n\nCo-authored-by: jcavanagh <jcavanagh@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/2304cbd5b5857d1a6338fb5cec8d5f71bb3db7b4"
+        },
+        {
+          "sha": "3ebb471d2e91e07543662b148853d85a4f3133e3",
+          "author_date": "2026-07-28T01:25:45Z",
+          "message": "fix(parsing):  Fixes the issue reported in https://github.com/spinnaker/spinnaker/pull/7686 and adds some null checks and blank handling (#7856) (#7861)\n\n(cherry picked from commit b07a16ce1cee28e6dfb5b06b4bf7f248fd6618d8)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/3ebb471d2e91e07543662b148853d85a4f3133e3"
+        },
+        {
+          "sha": "7682b3a86f2dbe977cbd3b81b960563c8df814ee",
+          "author_date": "2026-07-30T15:33:05Z",
+          "message": "feat(lambdaInvoke): Opt-In in resolving in Orca the Invoke payload artifact (#7867) (#7869)\n\n(cherry picked from commit 0bde42b293a35aa1840f8cc93ce6a967789452aa)\n\nCo-authored-by: Christos Arvanitis <c_christos.arvanitis@harness.io>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/7682b3a86f2dbe977cbd3b81b960563c8df814ee"
+        },
+        {
+          "sha": "5c86d64b6b566bf5b3632396a357582398936a26",
+          "author_date": "2026-08-19T19:24:14Z",
+          "message": "fix(trigger): Fixes docker UI trigger on expected artifacts to use docker UI not the helm UI (#7824) (#7907)\n\n(cherry picked from commit 4a0f15b26a93db945cfc6ba85fb650e43bcde278)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/5c86d64b6b566bf5b3632396a357582398936a26"
+        },
+        {
+          "sha": "afd8ddc75de4fab3374fd31c228e3bbb105f1585",
+          "author_date": "2026-08-20T00:21:18Z",
+          "message": "fix(artifacts): prevent SSRF via HTTP redirect in Helm and Jenkins artifact accounts (#7756) (#7909)\n\nProvides SSRF protections in clouddriver-artifacts where HTTP redirect Location headers were not validated against HttpUrlRestrictions.  NOTE:  These SHOULD already be \"trusted\" URLs in a whitelist.  This provides additional protections in case one of the trusted URLs issues redirects to an untrusted location.\n\n- F1: BaseHttpArtifactCredentials manual redirect loop with validateURI() at each hop\n- F2a: HelmArtifactAccount urlRestrictions defaults to non-null via orElse\n- F2b: JenkinsArtifactAccount same fix; JenkinsArtifactConfiguration updated for new constructor\n- Tests: BaseHttpArtifactCredentialsTest, JenkinsArtifactCredentialsTest added;\n  HelmArtifactCredentialsTest and HttpArtifactCredentialsTest updated with SSRF tests\n\n\n\n(cherry picked from commit b9c9300dbd188ceabca47fa4157523518a68559f)\n\nCo-authored-by: Shlomo Daari <104773977+shlomodaari@users.noreply.github.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/afd8ddc75de4fab3374fd31c228e3bbb105f1585"
+        },
+        {
+          "sha": "893782a9b9f9acba6250b19856c6ace2a0e3c736",
+          "author_date": "2026-08-20T14:19:45Z",
+          "message": "fix(sql): qualify GROUP BY columns so getAllByApplication works on PostgreSQL (#7902) (#7905)\n\n(cherry picked from commit d125b54cadb0954341422ecc60535ed9e9677c6f)\n\nCo-authored-by: Christos Arvanitis <c_christos.arvanitis@harness.io>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/893782a9b9f9acba6250b19856c6ace2a0e3c736"
+        },
+        {
+          "sha": "1380d8b66cf1924305060c2e9fce6ff7dd19e583",
+          "author_date": "2026-08-21T17:33:00Z",
+          "message": "fix(entity-store): Fix a UI bug with entity store references and a few stages which didn't work with it (#7913) (#7915)\n\n* fix(entity-store): Fix a UI bug with entity store references and an edge case on a few things - run jobs did not trigger the entity store and now they will\n\n* fix(pretty): Prettier\n\n---------\n\n\n(cherry picked from commit 88dc34b51db8232576f467db835a27e7bcc8057a)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/1380d8b66cf1924305060c2e9fce6ff7dd19e583"
+        },
+        {
+          "sha": "e3bbe1e8902a2ed150496a8e43f74cb4dcde64cd",
+          "author_date": "2026-09-01T15:32:50Z",
+          "message": "fix(front50): filter pipelines by application, not pipeline name, in PostFilter (backport #7945) (#7949)\n\n* fix(front50): filter pipelines by application, not pipeline name, in PostFilter (#7945)\n\n* front50: filter pipelines by application, not pipeline name, in PostFilter\n\nPipelineController.list() and getTriggeredPipelines() use\n@PostFilter(\"#restricted ? hasPermission(filterObject.name, 'APPLICATION', 'READ') : true\").\nPermission in Spinnaker is granted per-application (via Fiat), and\nPipeline.name is the pipeline's own name, not the application that\nowns it. Checking permission against the wrong field means a\nrestricted list can expose pipelines the caller has no READ access\nto, or hide ones they do, depending on how pipeline names happen to\ncollide with application names the caller can/cannot see.\n\nOther controllers in this module already filter correctly, e.g.\nStrategyController:\n  @PostFilter(\"hasPermission(filterObject.application, 'APPLICATION', 'READ')\")\n\nChanged both PipelineController expressions to use\nfilterObject.application instead of filterObject.name, matching\nthat existing, correct pattern.\n\nAdded a test asserting the @PostFilter SpEL on both methods\nreferences filterObject.application and not filterObject.name, so a\nregression is caught even without a full Fiat-authenticated request\nin the test context (the existing PipelineControllerSpec exercises\nthese methods with addFilters=false and without method security\nenabled, so the annotation itself was previously untested).\n\nVerified ./gradlew :front50:front50-web:test passes.\n\n* front50: add a real @PostFilter security test for PipelineController\n\nPer review feedback from @js4683 and @christosarvanitis: the\nexisting reflection-based test only asserted the @PostFilter\nannotation's SpEL string, not that it actually filters anything at\nruntime, so a security-wiring or SpEL evaluation problem could pass\nundetected.\n\nAdded PipelineControllerSecuritySpec, a separate Spring context that\nenables real Spring method security (@EnableMethodSecurity plus a\nMethodSecurityExpressionHandler wired to a mocked\nFiatPermissionEvaluator) and drives list() through the actual\ncontainer-managed, AOP-proxied controller via MockMvc. Two\npipelines are given swapped name/application values, so filtering\non the wrong field would let the wrong one through; the test asserts\nonly the pipeline from the permitted application appears in the\nresponse.\n\nKept as a separate spec/context rather than folding into\nPipelineControllerSpec: that spec's autowired MockMvc already\nexercises save(), whose @PreAuthorize would newly be enforced once\nmethod security is enabled there, and those tests don't set up an\nAuthentication or stub fiatPermissionEvaluator for that purpose.\n\nVerified ./gradlew :front50:front50-web:test passes, including all\nexisting PipelineControllerSpec tests (unaffected by the new spec's\nseparate context).\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\n(cherry picked from commit 6719810cef96c049af5e9373ca6ed9edb5b62373)\n\n# Conflicts:\n#\tfront50/front50-web/src/main/java/com/netflix/spinnaker/front50/controllers/PipelineController.java\n\n* fix(backport): Fix backport merge\n\n---------\n\nCo-authored-by: Kaio Antônio <75454785+KaioAntonio@users.noreply.github.com>\nCo-authored-by: Jason <mcintoshj@gmail.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/e3bbe1e8902a2ed150496a8e43f74cb4dcde64cd"
+        },
+        {
+          "sha": "c9c6dbc5a7192afdc2652275ca97746ed3da2a84",
+          "author_date": "2026-09-07T16:05:42Z",
+          "message": "fix(echo): populate telemetry spinnakerVersion from resolved service version (#7966) (#7978)\n\nstats.spinnaker-version was never set by any deployment config, so the\nusage-stats payload always reported version \"unknown\". Fall back to\nkork's ServiceVersion (already populated from the Gradle-stamped jar\nImplementation-Version, no Halyard involved) whenever the config\nproperty isn't explicitly overridden.\n\nClaude-Session: https://claude.ai/code/session_01DtXShry16A5KJ4cGWDkyNj\n\n\n\n(cherry picked from commit 76d13b745c6e4c7a8c39360bfdf9d940bbb60c76)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c9c6dbc5a7192afdc2652275ca97746ed3da2a84"
+        },
+        {
+          "sha": "c2d773ffabefbf625425f0f896a53f116a4b782e",
+          "author_date": "2026-09-14T23:27:55Z",
+          "message": "fix(rosco): reject helmfile hooks/postRenderers by default (backport #8015) (#8018)\n\n* fix(rosco): reject helmfile hooks/postRenderers by default to prevent RCE via bake (#8015)\n\nhelmfile's `hooks:` (prepare/cleanup events fire even for `helmfile\ntemplate`) and `postRenderers:` (equivalently `helmDefaults.args`/\nper-release `args` containing `--post-renderer[-args]`) both make\nhelmfile run an arbitrary local command as part of an otherwise\nread-only bake. Since the helmfile.yaml baked here is a user-supplied\ninput artifact that may be less trusted than the pipeline referencing\nit, validate it before invoking helmfile and refuse to bake if either\nfeature is present (including inside locally-resolvable `bases:`\nfragments), unless the new `helmfile.allow-hooks-and-post-renderers`\nconfig flag opts back in.\n\nClaude-Session: https://claude.ai/code/session_01H3eFvynipRCD5Xk4SkfGS7\n\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>\n(cherry picked from commit 1dce54db0c394906ed1bb249d68635da87365787)\n\n# Conflicts:\n#\trosco/rosco-manifests/src/main/java/com/netflix/spinnaker/rosco/manifests/helmfile/HelmfileTemplateUtils.java\n#\trosco/rosco-manifests/src/test/java/com/netflix/spinnaker/rosco/manifests/helmfile/HelmfileTemplateUtilsTest.java\n\n* fix(rosco): resolve backport merge conflicts in HelmfileTemplateUtils\n\nThe Mergify backport of #8015 to release-2026.1.x left unresolved merge\nconflict markers in HelmfileTemplateUtils(Test).java, breaking the build.\nrelease-2026.1.x lacks the (unrelated) state-values-artifacts and\nargument-validation features present on main, so this keeps only the\nhooks/postRenderers rejection logic from #8015 on top of the branch's\nexisting file, dropping the unrelated hunks instead of carrying them over.\n\nThis branch's kork also predates YamlHelper's instance-based\nnewSafeConstructorYaml() API, so the hook-detection YAML parsing uses\nYamlHelper's static newYamlSafeConstructor() equivalent instead, without\notherwise changing HelmfileTemplateUtils's constructor shape.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/c2d773ffabefbf625425f0f896a53f116a4b782e"
+        },
+        {
+          "sha": "85b68d2faafeaa607ed43bf47a99e33aad547b9c",
+          "author_date": "2026-09-16T02:45:53Z",
+          "message": "chore(tests): Remove deprecated tests from legacy versions (#7984) (#8021)\n\n(cherry picked from commit 31722c11124aca17d431612f83260225251ab9a3)\n\nCo-authored-by: Christos Arvanitis <c_christos.arvanitis@harness.io>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/85b68d2faafeaa607ed43bf47a99e33aad547b9c"
+        },
+        {
+          "sha": "0616e26833c557fcb2c6267e7f46b4d5aa18b5a8",
+          "author_date": "2026-09-16T03:25:12Z",
+          "message": "test(aws): replace MinIO and LocalStack with MiniStack in AWS integration tests (backport #8010) (#8013)\n\n* test(aws): replace MinIO and LocalStack with MiniStack in AWS integration tests (#8010)\n\n* test(aws): replace MinIO and LocalStack with MiniStack in AWS integration tests\n\nEvery AWS-emulating integration test in the repo depended on an image that is\nno longer distributed or no longer upgradable:\n\n- MinIO's community edition stopped publishing binaries and Docker images in\n  October 2025 and the repository was archived in April 2026. `minio/minio` no\n  longer resolves for an anonymous pull (\"pull access denied for minio/minio,\n  repository does not exist\"), so the pinned RELEASE.2023-09-04T19-57-37Z tag in\n  kayenta-s3 and clouddriver-aws, and whatever tag Playtika's embedded-minio\n  module selects for kayenta-integration-tests, are all a CI break waiting for a\n  cache miss.\n- The two LocalStack tests are pinned to localstack/localstack 0.11.3 (2020) and\n  0.12.18 (\"latest as of 1-oct-21\") because newer LocalStack moved the services\n  these tests need behind a paid plan, so neither pin can be moved forward.\n\nMiniStack (https://github.com/ministackorg/ministack, MIT) covers both roles:\nS3 for the object-store tests and Secrets Manager for kork-secrets-aws, from one\n~74 MB image that needs no account, token, or telemetry. That collapses three\nemulators into one and removes the 2020/2021 pins.\n\nChanges:\n\n- spinnaker-dependencies: drop `org.testcontainers:testcontainers-minio:2.0.5`,\n  manage `org.ministack:testcontainers-ministack:0.1.5` instead. The minio module\n  was the only thing pulling Testcontainers 2.x into this build; with it gone,\n  clouddriver-aws and kayenta-s3 resolve the 1.21.4 that spring-boot-dependencies\n  manages for every other module (verified with dependencyInsight).\n- kork-secrets-aws, clouddriver-artifacts-s3: LocalStack -> MiniStack.\n- kayenta-s3, clouddriver-aws: MinIO -> MiniStack. The clouddriver test is renamed\n  AmazonS3DataProviderMinioTest -> AmazonS3DataProviderMiniStackTest.\n- kayenta-integration-tests: Playtika's embedded-minio bootstrap module is replaced\n  by EmbeddedMiniStackBootstrapConfiguration, following the shape of the existing\n  EmbeddedPrometheusBootstrapConfiguration in the same package. It publishes\n  `embedded.ministack.{endpoint,region,accessKey,secretKey}` during the bootstrap\n  phase, which application-base.yml binds into the kayenta AWS account.\n\nIntentional behavior changes:\n\n- The kayenta integration-test account is renamed `minio-store-account` ->\n  `s3-store-account`, since it no longer names the emulator behind it.\n- That account now sets `region` explicitly (from the container) rather than\n  relying on the SDK's region provider chain.\n- The image tag is pinned in each test rather than shared: MiniStackContainer's\n  no-arg constructor resolves `latest` and the emulator releases weekly, so the tag\n  is the only thing fixing the version under test. The five copies live in three\n  separate composite builds (kork, clouddriver, kayenta); centralizing them would\n  mean giving every kork-test consumer a Testcontainers/MiniStack dependency for\n  one string.\n\nMiniStack's S3 is account-scoped but not yet region-scoped (`AccountScopedDict`\nrather than `AccountRegionScopedDict` in its services/s3.py), so a bucket created\nin one region stays visible to a client configured for another. No test here\nasserts cross-region rejection, and bucket names are globally unique on real S3\nanyway, so this does not affect the migrated assertions.\n\n* test(aws): drop leftover MinIO naming from fixtures and the kayenta example\n\nFollow-up to the MiniStack migration: the emulator dependencies were all\nreplaced, but MinIO survived in strings that had nothing to do with the\nemulator. None of these exercise MinIO; they just named it.\n\n- kork-secrets-gcp GoogleSecretsManagerSecretEngineTest: the fixture secret\n  `minioAccessKeyId`/`minioadmin` becomes `objectStoreAccessKeyId`/\n  `object-store-admin`. The test covers the Google secrets engine; the payload\n  is arbitrary.\n- front50-s3 S3ClientFactoryTest: the custom endpoint under test becomes\n  `https://s3-compatible-host:9000`, which is what the assertion is actually\n  about (a non-AWS endpoint plus an explicit region).\n- examples/solutions/kayenta: the example storage account `kayenta-minio`\n  becomes `kayenta-s3` in both pipeline definitions and the automated-canary\n  script, so the example names the storage type rather than one implementation.\n  Readers following the guide name this account themselves; the repo's only\n  constraint is that the three files agree.\n\nThe one remaining mention is the javadoc on EmbeddedMiniStackBootstrapConfiguration\nexplaining which module it replaced, which is the rationale for the class existing.\n\n* test(aws): keep the kayenta example's storage account name; fix a comment\n\nReview follow-ups:\n\n- Revert `kayenta-s3` back to `kayenta-minio` in the kayenta example pipelines\n  and automated-canary.sh. That account is provisioned by the external GCP\n  tutorial the example targets, not by anything in this repo (setup.sh installs\n  Spinnaker from quick-install.yml and defines no canary storage account), so\n  renaming it here only made the example disagree with the tutorial.\n- The spinnaker-dependencies comment pointed at `MINISTACK_IMAGE`; the constant\n  in the tests is `MINISTACK_IMAGE_TAG`.\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>\n(cherry picked from commit ad69f46edcb2d022cc1666ede703b328d8ec97aa)\n\n# Conflicts:\n#\tclouddriver/clouddriver-aws/clouddriver-aws.gradle\n#\tclouddriver/clouddriver-aws/src/test/java/com/netflix/spinnaker/clouddriver/aws/provider/view/AmazonS3DataProviderMiniStackTest.java\n#\tkayenta/kayenta-integration-tests/kayenta-integration-tests.gradle\n#\tkayenta/kayenta-s3/kayenta-s3.gradle\n#\tkayenta/kayenta-s3/src/test/java/com/netflix/kayenta/s3/storage/S3StorageServiceIntegrationTest.java\n#\tkork/kork-secrets-aws/src/test/java/com/netflix/spinnaker/kork/secrets/engines/SecretsManagerSecretEngineIntegrationTest.java\n#\tkork/spinnaker-dependencies/spinnaker-dependencies.gradle\n\n* fix(tests): resolve merge conflicts in MiniStack backport\n\nThe cherry-pick of #8010 onto release-2026.1.x left unresolved conflict\nmarkers in seven files. The release branch predates the AWS SDK v1->v2\nmigration (#7938 etc.), so the new MiniStack-based tests needed to be\nadapted to use com.amazonaws (SDK v1) clients instead of the\nsoftware.amazon.awssdk (SDK v2) clients used on main, mirroring the fix\nalready applied to the release-2026.2.x backport in #8012.\n\nrelease-2026.1.x also predates the org.testcontainers:embedded-minio ->\nembedded-redis-only dependency change, and this branch's\nEmbeddedGraphiteBootstrapConfiguration/EmbeddedPrometheusBootstrapConfiguration\nstill imported ContainerUtils from the old com.playtika.test.common.utils\npackage. That package moved to com.playtika.testcontainer.common.utils\nin the embedded-redis 3.1.24 that this PR bumps to, and was previously\nreachable transitively through embedded-minio; dropping embedded-minio\nwithout repointing the import broke compilation, so both files are\nupdated to the new package.\n\nVerified locally against MiniStack 1.5.10 (JDK 17, Docker):\n- :kork:kork-secrets-aws:test --tests '*SecretsManagerSecretEngineIntegrationTest*'\n- :kayenta:kayenta-s3:test --tests '*S3StorageServiceIntegrationTest*'\n- :clouddriver:clouddriver-aws:test --tests '*AmazonS3DataProviderMiniStackTest*'\n- :kayenta:kayenta-integration-tests:test\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Johannes Grumböck <johannes.grumboeck@redbull.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: = <mcintoshj@gmail.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/0616e26833c557fcb2c6267e7f46b4d5aa18b5a8"
+        },
+        {
+          "sha": "56f5cf584fd98463fe184f8503169d38b27d987a",
+          "author_date": "2026-09-21T15:44:12Z",
+          "message": "fix(rosco): close remaining helmfile gaps on some operations (backport #8034) (#8037)\n\n* fix(rosco): close remaining helmfile RCE gaps and disable insecure helmfile features by default (#8034)\n\nThe prior hooks/postRenderers guard silently skipped validation on unparseable YAML\n(e.g. Go template control-flow blocks, or content nested past SnakeYAML's 50-level\nlimit), never recursed into helmfile's `helmfiles:` key, and only warned (rather than\nrejected) on remote/templated `bases:`/`helmfiles:` references it couldn't fetch and\ninspect. Any of these let a hostile helmfile.yaml smuggle `hooks:`/`postRenderers:`\npast the guard undetected.\n\nFail closed instead: refuse to bake content the guard cannot fully parse, recurse\ninto `helmfiles:` alongside `bases:`, and reject unresolvable remote/templated\nreferences by default.\n\nStatic YAML inspection can't see everything, though: helmfile's own\nexec/envExec/readFile/readDir/readDirEntries template functions, and its fetching of\nremote bases/helmfiles/values/chart repos, aren't expressible as a YAML key at all.\nSet HELMFILE_DISABLE_HOOKS=true and HELMFILE_DISABLE_INSECURE_FEATURES=true on the\nhelmfile subprocess by default (unless allowHooksAndPostRenderers opts a trusted\nsource out), threading an env map through BakeRecipe -> JobRequest -> JobExecutorLocal\nfor the first time.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\nAI-Session-Id: 4338dd8d-967c-4836-8916-c8377c9bc83f\nAI-Tool: claude-code\nAI-Model: unknown\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\n(cherry picked from commit 3039b0fef61389f5f60240d081ed2591761a8179)\n\n* fix(rosco): fix test compile error from backport constructor mismatch\n\nThe Mergify backport to release-2026.1.x correctly adapted\nHelmfileTemplateUtils's main source to use kork's static\nYamlHelper.newYamlSafeConstructor() (the API available on this\nrelease's older kork) instead of an injected YamlHelper instance,\ndropping the constructor's YamlHelper parameter. The test helper\nwasn't updated to match, so it still passed a YamlHelper/\nYamlParserProperties instance as a 5th constructor argument -\nneither class is imported or otherwise referenced in this test file,\ncausing a \"cannot find symbol\" compile failure.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\nAI-Session-Id: 4338dd8d-967c-4836-8916-c8377c9bc83f\nAI-Tool: claude-code\nAI-Model: unknown\n\n---------\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Jason McIntosh <jason.mcintosh@harness.io>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/56f5cf584fd98463fe184f8503169d38b27d987a"
+        },
+        {
+          "sha": "8194493ddc2bd6e459c14a2c68df58f32c7aaa45",
+          "author_date": "2026-09-23T15:52:56Z",
+          "message": "fix(kubernetes): retain empty cache entries for kinds with zero live resources (#8054) (#8057)\n\nWhen the last live resource of an authoritative kind (e.g. the last\nDeployment in a namespace) is deleted, KubernetesCachingAgent's\ngroupingBy-based resource collection silently drops that kind's key\nfrom the CacheResult instead of reporting it with zero entries.\nSqlProviderCache/SqlCache only run their existingIds-minus-currentIds\neviction diff for types present in the CacheResult, so the deleted\nresource's cached row was never cleaned up -- it persisted until a\nresource of that same kind reappeared in the namespace on a later\ncycle, which is what finally triggered the missed eviction as a side\neffect.\n\nBackfill a placeholder entry for every kind the agent is authoritative\nfor so cleanup runs every cycle regardless of live resource count.\n\n\n\n(cherry picked from commit dbf9c0c1524ca135a8bc186afecdb54d046b79c9)\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/8194493ddc2bd6e459c14a2c68df58f32c7aaa45"
+        },
+        {
+          "sha": "22c4429f391660f1f9e85ee1520e018fbae10e9b",
+          "author_date": "2026-09-24T15:25:53Z",
+          "message": "fix(k8s):  K8s caching is kind of broken with SQL  (backport #8059) (#8082)\n\n* fix(k8s):  K8s caching is kind of broken with SQL  (#8059)\n\n* fix(k8s):  K8s caching is kind of broken with SQL backed systems due to cache handling on missing data OR missing kind situations.  There was an interface never implemented that this fixes.\n\n* fix(code): Make the code a bit simpler vs. internal static classes, and start towards a real integration test\n\n* chore(test): Adds a real integration test for the situation that actually tests the behaviors\n\n* fix(header): License headers on new files\n\n---------\n\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\n(cherry picked from commit ef468788f9a098bb6effb93cf7fe44a033b6f58b)\n\n* fix(clouddriver): use org.testcontainers:mysql artifact for release-2026.1.x\n\nThe 2026.1.x branch pins an older Testcontainers version whose MySQL\nmodule is still published as org.testcontainers:mysql; the\ntestcontainers-mysql artifact name used by the backported PR #8059 only\nexists in newer Testcontainers releases used on main.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/22c4429f391660f1f9e85ee1520e018fbae10e9b"
+        },
+        {
+          "sha": "a59b1887bb66ae3e5d92b98782abbde7e2eef70e",
+          "author_date": "2026-09-24T20:45:29Z",
+          "message": "fix(front50): repair dormant pipeline staleCheck optimistic-concurrency check (backport #8022) (#8087)\n\n* fix(front50): repair dormant pipeline staleCheck optimistic-concurrency check (#8022)\n\nSince a 2022 refactor (front50#1142/#1159), the updateTs fingerprint clients\nreceive on a pipeline could never be echoed back on save: it had no setter,\nso Jackson silently dropped it, leaving Pipeline.lastModified always null.\nThat made the ?staleCheck=true optimistic-concurrency check a no-op for\nevery caller, including Deck, which has sent staleCheck=true on every save\nfor years with no effect. SqlStorageService.loadObject (the single-row path\nthe check reads the stored value from) had a second, independent gap: it\nnever selected last_modified_at, unlike loadObjects/listObjectVersions.\n\nAdd Pipeline.setUpdateTs so the fingerprint round-trips, and populate\nlastModified in loadObject. Gate the actual check behind a new\ncontroller.pipeline.save.stale-check-enabled flag, default false, so\nexisting behavior (check never fires) is unchanged until it's explicitly\nturned on for a future release.\n\nCloses #2966\n\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>\n(cherry picked from commit 972964623ea54fc1383cfaeaf9cabdcea210c911)\n\n* fix(front50): wire objectMapper/Front50CoreConfiguration into PipelineControllerSpec for backport\n\nrelease-2026.1.x never got PR #7682's (Spring Boot 3.5.14 upgrade) unrelated\naddition of the spec-level `objectMapper` field and `Front50CoreConfiguration`\ncontext class, since that upgrade is out of scope for this release branch.\nThe new regression test added by this backport (originally #8022) assumes\nthat wiring already exists, as it does on main, causing a\nMissingPropertyException in CI. Add just the minimal pieces this test needs.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Jason <mcintoshj@gmail.com>\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>\nCo-authored-by: mergify[bot] <37929162+mergify[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/spinnaker/spinnaker/commit/a59b1887bb66ae3e5d92b98782abbde7e2eef70e"
+        }
+      ],
+      "ignored_reason": null
     }
   ],
   "runs_by_month": {

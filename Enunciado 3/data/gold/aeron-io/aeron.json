@@ -2443,8 +2443,387 @@
     {
       "release": "1.8.1",
       "previous_release": "1.8.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "b77f661407195c2bfbc9f6b41ae2f151d133d9cb",
+          "author_date": "2018-02-23T20:37:03Z",
+          "message": "post release bump",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b77f661407195c2bfbc9f6b41ae2f151d133d9cb"
+        },
+        {
+          "sha": "dc0d7e2883b1cf532ba0b085a10ff40213d0d75f",
+          "author_date": "2018-02-25T14:54:38Z",
+          "message": "[Java] Update archive samples so that they are move robust to misuse.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/dc0d7e2883b1cf532ba0b085a10ff40213d0d75f"
+        },
+        {
+          "sha": "a4070ed6546952a0c2b89878acbd9d0b725ab153",
+          "author_date": "2018-02-25T15:51:43Z",
+          "message": "[Java] Rework list recording by URI to do a contains match on the stripped channel stored in the archive rather than an equals so the session id based recordings can match.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a4070ed6546952a0c2b89878acbd9d0b725ab153"
+        },
+        {
+          "sha": "7b795eca380c1e24d71b2fd4942840211af3243b",
+          "author_date": "2018-02-25T17:16:30Z",
+          "message": "[Java] Script tidy up.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7b795eca380c1e24d71b2fd4942840211af3243b"
+        },
+        {
+          "sha": "08c83a392f436eedb74aefff33dba385fe5edaab",
+          "author_date": "2018-02-25T17:46:32Z",
+          "message": "[Java] Formatting.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/08c83a392f436eedb74aefff33dba385fe5edaab"
+        },
+        {
+          "sha": "078b0c8a7e69e41361ecbfecf6dcb355f65256ee",
+          "author_date": "2018-02-25T18:38:40Z",
+          "message": "[Java] Replay sample to use session specific subscription.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/078b0c8a7e69e41361ecbfecf6dcb355f65256ee"
+        },
+        {
+          "sha": "5f11b7500cb110a508283c75c2e2da4833c14b12",
+          "author_date": "2018-02-25T19:11:56Z",
+          "message": "[Java] Tidy up archive samples.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5f11b7500cb110a508283c75c2e2da4833c14b12"
+        },
+        {
+          "sha": "61242be58f5c4b95b467991f139078816dc1ec71",
+          "author_date": "2018-02-25T19:28:47Z",
+          "message": "[Java] Invoke client conductor on slow tick in archive duty cycle.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/61242be58f5c4b95b467991f139078816dc1ec71"
+        },
+        {
+          "sha": "697950eede8c38c8c3c86d1204078cc3564dff62",
+          "author_date": "2018-02-25T20:22:16Z",
+          "message": "[Java] Only try to send error response when response publication is connected.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/697950eede8c38c8c3c86d1204078cc3564dff62"
+        },
+        {
+          "sha": "428358ba2b51f863f670b6f187c1934402eb328c",
+          "author_date": "2018-02-25T21:06:35Z",
+          "message": "[Java] Only allow one active listing of recording descriptors per control session at a time.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/428358ba2b51f863f670b6f187c1934402eb328c"
+        },
+        {
+          "sha": "7f7c49bdca3486b5e4e9bf5821fcc1c345036549",
+          "author_date": "2018-02-25T21:16:29Z",
+          "message": "[Java] Break out different control response failure cases.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7f7c49bdca3486b5e4e9bf5821fcc1c345036549"
+        },
+        {
+          "sha": "414f1c421acca301fe4a7c4b62c2bed48b353fdc",
+          "author_date": "2018-02-25T21:32:57Z",
+          "message": "[Java] Don't try to queue errors to a control session that is not accepting responses.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/414f1c421acca301fe4a7c4b62c2bed48b353fdc"
+        },
+        {
+          "sha": "db0e17cf927650ad81047e25887db28568b0ba4d",
+          "author_date": "2018-02-25T21:47:59Z",
+          "message": "[Java] Simplify queued responses as they can only come from the archive conductor thread and not he replay thread anymore.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/db0e17cf927650ad81047e25887db28568b0ba4d"
+        },
+        {
+          "sha": "c6befa0568af7e4c1e7c75dd198fb55357c85dac",
+          "author_date": "2018-02-25T22:21:40Z",
+          "message": "[Java] Reduce call stack with non-concurrent queue usage in session.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c6befa0568af7e4c1e7c75dd198fb55357c85dac"
+        },
+        {
+          "sha": "85f524ce9f49288cb8ab65ba9d5bc84ddfc760f0",
+          "author_date": "2018-02-25T23:49:56Z",
+          "message": "[Java]: add guard around sessionInterest when removing subscription to handle the case of no traffic having been seen.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/85f524ce9f49288cb8ab65ba9d5bc84ddfc760f0"
+        },
+        {
+          "sha": "dce34a5c17fa929a5b9f3c15fcc45e4fc33c32a5",
+          "author_date": "2018-02-26T00:36:33Z",
+          "message": "[Java] Use a reentrant lock on Aeron client when running in dedicated mode.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/dce34a5c17fa929a5b9f3c15fcc45e4fc33c32a5"
+        },
+        {
+          "sha": "a4fc040cc6a91ea321739b8cb99be3805f2983f1",
+          "author_date": "2018-02-26T02:25:26Z",
+          "message": "[Java] Only use the aeron client from the conductor thread in the archive.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a4fc040cc6a91ea321739b8cb99be3805f2983f1"
+        },
+        {
+          "sha": "1dba8b2a8902afc073dcb4bf8845f29939b831bc",
+          "author_date": "2018-02-26T10:31:11Z",
+          "message": "[Java] Clean up error logic in archive replay session.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1dba8b2a8902afc073dcb4bf8845f29939b831bc"
+        },
+        {
+          "sha": "bd8bff82b899e903fea1c72e734ff50d99a56c45",
+          "author_date": "2018-02-26T10:38:56Z",
+          "message": "[Java] Remove unused states from recording and replay.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/bd8bff82b899e903fea1c72e734ff50d99a56c45"
+        },
+        {
+          "sha": "01b0f576072e41425c58b0f1ba4428c9e5dc72c6",
+          "author_date": "2018-02-26T11:08:42Z",
+          "message": "[Java] Improve cleanup code for recording sessions.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/01b0f576072e41425c58b0f1ba4428c9e5dc72c6"
+        },
+        {
+          "sha": "dfa15308364ec43e957336182c436577700a1ca8",
+          "author_date": "2018-02-26T11:15:06Z",
+          "message": "[Java] Set stopped state before sending stopped event in case an error occurs.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/dfa15308364ec43e957336182c436577700a1ca8"
+        },
+        {
+          "sha": "79eeacb846f629a802e5a115154a713c164bac5c",
+          "author_date": "2018-02-26T12:39:58Z",
+          "message": "[Java] Handle case of close failing to send session back from replayer or recorder.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/79eeacb846f629a802e5a115154a713c164bac5c"
+        },
+        {
+          "sha": "0ec92a48de7527e6292a60bc39ff973fbef402bf",
+          "author_date": "2018-02-26T12:43:57Z",
+          "message": "[Java] Remove unused method.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0ec92a48de7527e6292a60bc39ff973fbef402bf"
+        },
+        {
+          "sha": "dbed9990708d5a030fdfc093c9696cc98881dfd1",
+          "author_date": "2018-02-26T12:49:06Z",
+          "message": "[Java] Change order of logic to make it easier to read.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/dbed9990708d5a030fdfc093c9696cc98881dfd1"
+        },
+        {
+          "sha": "89cdafe62ad0b4a596edfc5aed2348a2da6ecf11",
+          "author_date": "2018-02-26T12:57:44Z",
+          "message": "[Java] Poll for error response from archive in RecordedBasicPublisher.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/89cdafe62ad0b4a596edfc5aed2348a2da6ecf11"
+        },
+        {
+          "sha": "2b1ddebe7a3f9824c0301c73c812ceae7c796855",
+          "author_date": "2018-02-26T13:42:12Z",
+          "message": "[Java] Reduce allocation in ArchiveTest that was causing large GC pauses.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2b1ddebe7a3f9824c0301c73c812ceae7c796855"
+        },
+        {
+          "sha": "c75f42f0d8a143861c73e0da45d1828d55af246b",
+          "author_date": "2018-02-26T13:53:07Z",
+          "message": "[Java] Replace a number of quietClose operations with close operations so error do not get silently swallowed.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c75f42f0d8a143861c73e0da45d1828d55af246b"
+        },
+        {
+          "sha": "0c7a29a3255ce0bb7c823ca08421eadb74151c03",
+          "author_date": "2018-02-26T14:10:55Z",
+          "message": "[Java] Interrupt background threads on test timeout.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0c7a29a3255ce0bb7c823ca08421eadb74151c03"
+        },
+        {
+          "sha": "8574f21d4f37a5bd07c98ffd7c14855b413384c3",
+          "author_date": "2018-02-26T14:18:20Z",
+          "message": "[Java] Fix checkstyle rule violation.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8574f21d4f37a5bd07c98ffd7c14855b413384c3"
+        },
+        {
+          "sha": "18d3018f8466c2de2da5305971e4815dccf86978",
+          "author_date": "2018-02-26T15:03:54Z",
+          "message": "[Java] Use standard directory for archive tests so they are easier to monitor and debug.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/18d3018f8466c2de2da5305971e4815dccf86978"
+        },
+        {
+          "sha": "209ad6dfb95ea0275bb0135e02c525064dae49f6",
+          "author_date": "2018-02-26T16:18:13Z",
+          "message": "[Java] Simpler poll of consuming messages in the archive test.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/209ad6dfb95ea0275bb0135e02c525064dae49f6"
+        },
+        {
+          "sha": "d5a3aba7183b54215a3250314834ab99a561201c",
+          "author_date": "2018-02-26T16:56:30Z",
+          "message": "[Java] Close fragment reader with finally block in case of failure.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d5a3aba7183b54215a3250314834ab99a561201c"
+        },
+        {
+          "sha": "9b29f3564925e11fa404b48ba968e19c78528c74",
+          "author_date": "2018-02-26T17:11:22Z",
+          "message": "[Java] Have RecordingFragmentReader implement AutoClosable to make test cleanup easy.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9b29f3564925e11fa404b48ba968e19c78528c74"
+        },
+        {
+          "sha": "e617925af660fbd835f3b0a249743372c6bb36b7",
+          "author_date": "2018-02-26T17:44:09Z",
+          "message": "[C++]: move away from move semantics on Image due to #472.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e617925af660fbd835f3b0a249743372c6bb36b7"
+        },
+        {
+          "sha": "ae96c718e5ddfad32651fb517b36989ac0c42508",
+          "author_date": "2018-02-26T17:45:41Z",
+          "message": "[Java] Be more precise in waiting for recording to have stopped.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ae96c718e5ddfad32651fb517b36989ac0c42508"
+        },
+        {
+          "sha": "a7a720ba15d7c063ae1aa8b0871a7d17f15aea2c",
+          "author_date": "2018-02-26T17:45:50Z",
+          "message": "Merge remote-tracking branch 'origin/master'",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a7a720ba15d7c063ae1aa8b0871a7d17f15aea2c"
+        },
+        {
+          "sha": "1b38f7a66eaff60e4dbc2362ab0874815d9f9c22",
+          "author_date": "2018-02-26T17:58:18Z",
+          "message": "[C++]: add guard around filling out ADD_COIUNTER command with no key.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1b38f7a66eaff60e4dbc2362ab0874815d9f9c22"
+        },
+        {
+          "sha": "2b42e7d6ace56e777fb74a7f370ab5a60d614386",
+          "author_date": "2018-02-26T17:58:26Z",
+          "message": "Merge branch 'master' of https://github.com/real-logic/Aeron",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2b42e7d6ace56e777fb74a7f370ab5a60d614386"
+        },
+        {
+          "sha": "e9746e3621439159e975cc24b700a8af1dd68567",
+          "author_date": "2018-02-26T19:25:05Z",
+          "message": "[Java] Null check during cleanup of ClusterTest.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e9746e3621439159e975cc24b700a8af1dd68567"
+        },
+        {
+          "sha": "99033d2a9d69f60065af7624034a50c485c0df23",
+          "author_date": "2018-02-26T19:25:15Z",
+          "message": "Merge remote-tracking branch 'origin/master'",
+          "html_url": "https://github.com/aeron-io/aeron/commit/99033d2a9d69f60065af7624034a50c485c0df23"
+        },
+        {
+          "sha": "6242217ac13994a782108f05061f12ed3e6dbbb1",
+          "author_date": "2018-02-26T19:31:06Z",
+          "message": "[Java] Reduce the max block length for a recording block to 2MB so that latency is bounded.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6242217ac13994a782108f05061f12ed3e6dbbb1"
+        },
+        {
+          "sha": "de10000928b06e55cd51a9968c5d6afa67ff8862",
+          "author_date": "2018-02-26T19:59:29Z",
+          "message": "[Java] Change recording events proxy to use an array buffer rather than direct and to be more precise when the offer fails in the exception.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/de10000928b06e55cd51a9968c5d6afa67ff8862"
+        },
+        {
+          "sha": "7f0ab1e3e6457b19ae2f075058d2758ef2d3a6e5",
+          "author_date": "2018-02-26T20:06:03Z",
+          "message": "[Java]: add controlledRawPoll.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7f0ab1e3e6457b19ae2f075058d2758ef2d3a6e5"
+        },
+        {
+          "sha": "36070773c1efc4634be94093a0c426178bf923dc",
+          "author_date": "2018-02-27T15:57:02Z",
+          "message": "[Java] Remove requirement that session id stays the same so it can be used for extension or a CRC check.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/36070773c1efc4634be94093a0c426178bf923dc"
+        },
+        {
+          "sha": "8a44782a08961f4d3f98cb049b74cc2c5afc2fd6",
+          "author_date": "2018-02-27T16:48:58Z",
+          "message": "[Java] Verify the term id when replaying from a position.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8a44782a08961f4d3f98cb049b74cc2c5afc2fd6"
+        },
+        {
+          "sha": "07edf428b6a579eedf0892ccdf8ed8bf146b4c26",
+          "author_date": "2018-02-27T20:54:23Z",
+          "message": "[Java]: switch recording to use FileChannel.write instead of transferTo. More efficient, simpler, etc.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/07edf428b6a579eedf0892ccdf8ed8bf146b4c26"
+        },
+        {
+          "sha": "35b2c63c9b345a1fe76b1917ef7d3d3f86beae39",
+          "author_date": "2018-02-27T21:18:12Z",
+          "message": "[Java] Reduce allocation on recording replay.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/35b2c63c9b345a1fe76b1917ef7d3d3f86beae39"
+        },
+        {
+          "sha": "0f2799a49b0f7a1231ee6c4e62f826212ab9d3d8",
+          "author_date": "2018-02-28T08:05:52Z",
+          "message": "[Java] Remove unneeded extra header at the end of the segment file.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0f2799a49b0f7a1231ee6c4e62f826212ab9d3d8"
+        },
+        {
+          "sha": "97649535ae8ede319bff932ddfe11c1980e8b1cd",
+          "author_date": "2018-02-28T08:11:51Z",
+          "message": "[Java] Reduce allocation in client when allocating log buffers.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/97649535ae8ede319bff932ddfe11c1980e8b1cd"
+        },
+        {
+          "sha": "72715056120342f5e15bb446fe35f7f3d0dbd5f5",
+          "author_date": "2018-02-28T08:16:48Z",
+          "message": "[Java] Remove debugging code from ArchiveTest that is not needed.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/72715056120342f5e15bb446fe35f7f3d0dbd5f5"
+        },
+        {
+          "sha": "2d12f7795252466e9d9eab98b9b440116b056adc",
+          "author_date": "2018-02-28T08:26:38Z",
+          "message": "[Java] Replace HashSet with EnumSet for sparse file options.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2d12f7795252466e9d9eab98b9b440116b056adc"
+        },
+        {
+          "sha": "73cb1e9ee1d9a0a0244cae98756864529b2742f0",
+          "author_date": "2018-02-28T08:41:46Z",
+          "message": "[Java] Removed Image.controlledRawPoll as the return value is error prone if not fragment aligned.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/73cb1e9ee1d9a0a0244cae98756864529b2742f0"
+        },
+        {
+          "sha": "4eab5e52e41e30a565def25a3b598275d54e3cd1",
+          "author_date": "2018-02-28T11:35:18Z",
+          "message": "[Java] Convert Catalog field to local to avoid retention.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/4eab5e52e41e30a565def25a3b598275d54e3cd1"
+        },
+        {
+          "sha": "76c1b84769e9b12af5f50fd291aea99d1e288692",
+          "author_date": "2018-02-28T11:50:28Z",
+          "message": "[Java] Use ByteOrder from appropriate decoder.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/76c1b84769e9b12af5f50fd291aea99d1e288692"
+        },
+        {
+          "sha": "d399e976b08b6a9a8cf2e319e7507d49703e09af",
+          "author_date": "2018-02-28T12:12:34Z",
+          "message": "[Java] Simplify buffer logic.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d399e976b08b6a9a8cf2e319e7507d49703e09af"
+        },
+        {
+          "sha": "519f526f221a5b964641bd9f5de22638cc20b251",
+          "author_date": "2018-02-28T13:00:53Z",
+          "message": "[Java] Sync catalog changes when required.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/519f526f221a5b964641bd9f5de22638cc20b251"
+        },
+        {
+          "sha": "e8535bbd47fe785e11f11d1cab5327d64a1b7438",
+          "author_date": "2018-02-28T13:34:56Z",
+          "message": "[Java] Support concurrent reading of catalog stop positions as they are updated.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e8535bbd47fe785e11f11d1cab5327d64a1b7438"
+        },
+        {
+          "sha": "613d09c567412573df05cdd2f7f5e63eeadbaf00",
+          "author_date": "2018-02-28T13:48:56Z",
+          "message": "[Java] Close resource as soon as possible.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/613d09c567412573df05cdd2f7f5e63eeadbaf00"
+        },
+        {
+          "sha": "ad94f220a1e44bd74867369a5900fb4a7feae9f5",
+          "author_date": "2018-02-28T14:04:16Z",
+          "message": "[Java] Tidy up session close logic in the archive.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ad94f220a1e44bd74867369a5900fb4a7feae9f5"
+        },
+        {
+          "sha": "aec934f467c3d77f506f2e7acfca58dad9160d85",
+          "author_date": "2018-02-28T14:17:09Z",
+          "message": "[Java] Update recording stopped position in the recording thread as soon as complete.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/aec934f467c3d77f506f2e7acfca58dad9160d85"
+        },
+        {
+          "sha": "f2e5f270d1192135ff4ca077ccb779baf5a7f400",
+          "author_date": "2018-02-28T14:17:58Z",
+          "message": "[Java] Naming.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f2e5f270d1192135ff4ca077ccb779baf5a7f400"
+        },
+        {
+          "sha": "5f50e15807908c21db3d0d4806f9b4b9eedb631f",
+          "author_date": "2018-02-28T14:47:00Z",
+          "message": "[Java] Change port ranges to reduce the possibility of conflict.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5f50e15807908c21db3d0d4806f9b4b9eedb631f"
+        },
+        {
+          "sha": "f257a70ac81a99e0f169170677c882b167ca0121",
+          "author_date": "2018-02-28T18:44:48Z",
+          "message": "1.8.1 released.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f257a70ac81a99e0f169170677c882b167ca0121"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.8.2",
@@ -2749,8 +3128,291 @@
     {
       "release": "1.33.1",
       "previous_release": "1.33.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "70c0ce1d3bbe5c30e40a4bf5d59d1368f03e3dad",
+          "author_date": "2021-05-10T20:35:29Z",
+          "message": "post release bump",
+          "html_url": "https://github.com/aeron-io/aeron/commit/70c0ce1d3bbe5c30e40a4bf5d59d1368f03e3dad"
+        },
+        {
+          "sha": "79c5d8e8c13b34ea28b8ba2ba26b533a8f6a199b",
+          "author_date": "2021-05-11T08:38:26Z",
+          "message": "[Build] Upgrade to Gradle 7.0.1.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/79c5d8e8c13b34ea28b8ba2ba26b533a8f6a199b"
+        },
+        {
+          "sha": "f7d13e42855813e7bcd974366566a65874b0a6b7",
+          "author_date": "2021-05-11T08:39:11Z",
+          "message": "[Build] Upgrade to Shadow 7.0.0.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f7d13e42855813e7bcd974366566a65874b0a6b7"
+        },
+        {
+          "sha": "5e3ed8396cfee0378824c59118a9e747d7dddea6",
+          "author_date": "2021-05-11T10:58:39Z",
+          "message": "[Java] Fix setting of socket buffer and receive window lengths from ChannelUri in ChannelUriStringBuilder and use them for ClusterBackup catchup channel default.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5e3ed8396cfee0378824c59118a9e747d7dddea6"
+        },
+        {
+          "sha": "91c36a8f9aa3096b0f94b08229f168109332dee7",
+          "author_date": "2021-05-11T11:01:27Z",
+          "message": "Revert \"[Build] Upgrade to Shadow 7.0.0.\"\n\nThis reverts commit f7d13e42",
+          "html_url": "https://github.com/aeron-io/aeron/commit/91c36a8f9aa3096b0f94b08229f168109332dee7"
+        },
+        {
+          "sha": "e7ef607834d4b9188c800ea7b36d125def06903a",
+          "author_date": "2021-05-11T11:01:33Z",
+          "message": "Revert \"[Build] Upgrade to Gradle 7.0.1.\"\n\nThis reverts commit 79c5d8e8",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e7ef607834d4b9188c800ea7b36d125def06903a"
+        },
+        {
+          "sha": "27f2ccd59eb6bdf3aeca551cda39309ba60cd64d",
+          "author_date": "2021-05-11T13:43:58Z",
+          "message": "[Java] Only suffix message with exception category when there is a message.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/27f2ccd59eb6bdf3aeca551cda39309ba60cd64d"
+        },
+        {
+          "sha": "df0926219ea61a4abf1f7deb0ba722598e646bd9",
+          "author_date": "2021-05-11T14:16:16Z",
+          "message": "[Java] Strip repeated addition of category name suffix for RegistrationException and be consistent with use of InvalidChannelException in Java driver.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/df0926219ea61a4abf1f7deb0ba722598e646bd9"
+        },
+        {
+          "sha": "cf7d9eba705029c618623546574fe5e44e8f4b03",
+          "author_date": "2021-05-11T14:29:59Z",
+          "message": "[C] Remove unused macro.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/cf7d9eba705029c618623546574fe5e44e8f4b03"
+        },
+        {
+          "sha": "af87de56ea98ba42d3fcdb90bb33689b1028a0ef",
+          "author_date": "2021-05-11T14:42:29Z",
+          "message": "[Java] Error messages.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/af87de56ea98ba42d3fcdb90bb33689b1028a0ef"
+        },
+        {
+          "sha": "ab415e03f3e52cc9ebc77242710da5817292dd30",
+          "author_date": "2021-05-11T14:52:53Z",
+          "message": "[C] Error messages.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ab415e03f3e52cc9ebc77242710da5817292dd30"
+        },
+        {
+          "sha": "e1d39d01471432cd1b3a5a13724647c23ae18748",
+          "author_date": "2021-05-11T14:55:56Z",
+          "message": "[Java] Error messages.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e1d39d01471432cd1b3a5a13724647c23ae18748"
+        },
+        {
+          "sha": "6772e173ec417599e4df92aeb05019fb55bd02eb",
+          "author_date": "2021-05-11T15:53:43Z",
+          "message": "[C++] Fix memory leak in shouldNotIgnoreDataAndSetupAfterImageRemovedAndCoolDownRemoved if the test fails.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6772e173ec417599e4df92aeb05019fb55bd02eb"
+        },
+        {
+          "sha": "2259a583a639474732510a82f1053a076357208c",
+          "author_date": "2021-05-11T16:24:48Z",
+          "message": "[CI] Retry apt download up to 5 times.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2259a583a639474732510a82f1053a076357208c"
+        },
+        {
+          "sha": "745a8e67a923a215a93e77618435fcaa7bbd703c",
+          "author_date": "2021-05-11T16:34:37Z",
+          "message": "[CI] Retry if CMake download fails.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/745a8e67a923a215a93e77618435fcaa7bbd703c"
+        },
+        {
+          "sha": "8c6d6b783c660970a1b5fe4f61c2f88e09c7e98e",
+          "author_date": "2021-05-12T12:17:48Z",
+          "message": "[Java] Clarify checking of buffer lengths on channels.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8c6d6b783c660970a1b5fe4f61c2f88e09c7e98e"
+        },
+        {
+          "sha": "46f3ce58e90e6838479f1fde1bf78d61b77cc92a",
+          "author_date": "2021-05-12T12:25:20Z",
+          "message": "[Java] Improve error category stripping from RegistrationException.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/46f3ce58e90e6838479f1fde1bf78d61b77cc92a"
+        },
+        {
+          "sha": "8e822d20faf2ff0ca7801adf254ae5aa3cd13384",
+          "author_date": "2021-05-12T12:44:22Z",
+          "message": "[C] Clarify validation of buffer lengths on channels and fix warnings.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8e822d20faf2ff0ca7801adf254ae5aa3cd13384"
+        },
+        {
+          "sha": "f443c32ac14eb394c4df3480dc3e591957917df6",
+          "author_date": "2021-05-12T12:45:48Z",
+          "message": "[C] Clarify validation of buffer lengths on channels and fix warnings.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f443c32ac14eb394c4df3480dc3e591957917df6"
+        },
+        {
+          "sha": "927cf59bb01c82d561210c2cd8ba3bf50a8db2a7",
+          "author_date": "2021-05-12T13:22:53Z",
+          "message": "[C] Remove unnecessary space.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/927cf59bb01c82d561210c2cd8ba3bf50a8db2a7"
+        },
+        {
+          "sha": "2a5eacf7c3518af63ffb4e4f7c05eafcb4841383",
+          "author_date": "2021-05-12T13:38:20Z",
+          "message": "[Java] Avoid send or receive channel leak on invalid configuration.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2a5eacf7c3518af63ffb4e4f7c05eafcb4841383"
+        },
+        {
+          "sha": "3112043c74a45d764de6990c983cd1056b2c79b6",
+          "author_date": "2021-05-12T14:00:46Z",
+          "message": "[C] Initialise buffers in terminate test and fix warnings.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3112043c74a45d764de6990c983cd1056b2c79b6"
+        },
+        {
+          "sha": "a7a47e806d38bed8c54b2bcaf2e295bcc5ddf4b8",
+          "author_date": "2021-05-12T15:05:15Z",
+          "message": "[C++] Always check for thread being joinable before join to avoid segfault.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a7a47e806d38bed8c54b2bcaf2e295bcc5ddf4b8"
+        },
+        {
+          "sha": "6dacda7479b974f8c785f4eecc3dd66f1be9124f",
+          "author_date": "2021-05-12T15:37:37Z",
+          "message": "[CI] Remove Clang 9 while failing.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6dacda7479b974f8c785f4eecc3dd66f1be9124f"
+        },
+        {
+          "sha": "6c8f28bcc2aade928a64ef20cce3f9a293f8514d",
+          "author_date": "2021-05-13T06:56:12Z",
+          "message": "[Java] Add client API for invoking archive with tagged replication and provide the replication channel.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6c8f28bcc2aade928a64ef20cce3f9a293f8514d"
+        },
+        {
+          "sha": "640755d99ad8215c3df3c9479e072779cf6dd764",
+          "author_date": "2021-05-13T08:11:40Z",
+          "message": "[Java] Add missing stop position to replicate calls.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/640755d99ad8215c3df3c9479e072779cf6dd764"
+        },
+        {
+          "sha": "98ca8487f56c668337b0460c2f9bfdc1aedea3bd",
+          "author_date": "2021-05-13T08:23:26Z",
+          "message": "[C++] Align Archive replication API with Java.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/98ca8487f56c668337b0460c2f9bfdc1aedea3bd"
+        },
+        {
+          "sha": "90cc6a43f9dd48ad71e39ab161669422a21eeea6",
+          "author_date": "2021-05-13T08:36:54Z",
+          "message": "[Java] Try put back Clang 9 and upgrade to Ubuntu 20.04 for Clang to be consistent.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/90cc6a43f9dd48ad71e39ab161669422a21eeea6"
+        },
+        {
+          "sha": "8474bc3d334c56f92d552dc7663d3fd8f8bc2669",
+          "author_date": "2021-05-13T08:37:01Z",
+          "message": "Merge remote-tracking branch 'origin/master'",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8474bc3d334c56f92d552dc7663d3fd8f8bc2669"
+        },
+        {
+          "sha": "06647b5c752986dbb95dd5d0efa61e08b490dd3f",
+          "author_date": "2021-05-13T08:37:53Z",
+          "message": "[Java] Try put back Clang 9 and upgrade to Ubuntu 20.04 for Clang to be consistent.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/06647b5c752986dbb95dd5d0efa61e08b490dd3f"
+        },
+        {
+          "sha": "ab508e465125676a361782af154438b9d4a2e5ce",
+          "author_date": "2021-05-13T08:57:42Z",
+          "message": "[CI] Drop older versions of Clang.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ab508e465125676a361782af154438b9d4a2e5ce"
+        },
+        {
+          "sha": "9775f974d9e88d30e29e77f9fff95f811ca880c9",
+          "author_date": "2021-05-13T09:07:37Z",
+          "message": "[CI] Switch to http://apt.llvm.org/focal/ for installing LLVM.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9775f974d9e88d30e29e77f9fff95f811ca880c9"
+        },
+        {
+          "sha": "c820049e54939b34c05fbe9d7322cfecd456d8a6",
+          "author_date": "2021-05-13T09:08:03Z",
+          "message": "[CI] Revert Ubuntu upgrade to Clang and use Clang 10 for debug build.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c820049e54939b34c05fbe9d7322cfecd456d8a6"
+        },
+        {
+          "sha": "b97170f941559bfaabc5ddfbb52e5b2c224fef1e",
+          "author_date": "2021-05-13T09:08:09Z",
+          "message": "Merge remote-tracking branch 'origin/master'",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b97170f941559bfaabc5ddfbb52e5b2c224fef1e"
+        },
+        {
+          "sha": "9495b3ed0fd511ae56d08e5b1c917a815af6d8b0",
+          "author_date": "2021-05-13T09:18:23Z",
+          "message": "[CI] Try upgrade again to Ubuntu 20.04.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9495b3ed0fd511ae56d08e5b1c917a815af6d8b0"
+        },
+        {
+          "sha": "6bddb60ecd87af17ee495c07afd894887c16b7fe",
+          "author_date": "2021-05-13T09:21:57Z",
+          "message": "[CI] Remove old Clang compilers.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6bddb60ecd87af17ee495c07afd894887c16b7fe"
+        },
+        {
+          "sha": "c6e2e61612723017c8fc399e06dc90625d4b7ebc",
+          "author_date": "2021-05-13T09:33:17Z",
+          "message": "[CI] Separate Clang builds.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c6e2e61612723017c8fc399e06dc90625d4b7ebc"
+        },
+        {
+          "sha": "b37e45e354d7fde73d6934701533dde00e614a4d",
+          "author_date": "2021-05-13T09:35:09Z",
+          "message": "[CI] Naming.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b37e45e354d7fde73d6934701533dde00e614a4d"
+        },
+        {
+          "sha": "4a5c7e8e7a188e6a01fc2a35b00859c862feccf6",
+          "author_date": "2021-05-13T09:40:23Z",
+          "message": "[CI] Drop Clang 9 from Matrix.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/4a5c7e8e7a188e6a01fc2a35b00859c862feccf6"
+        },
+        {
+          "sha": "a395e8e5daedc17c743fd9450aad75d4bb7ae1f1",
+          "author_date": "2021-05-13T11:39:53Z",
+          "message": "[C++] Add `-fno-omit-frame-pointer -g -O2` to the sanitise build, i.e. improve stacktrace quality and ensure enough optimizations are done to offset the overhead of sanitizers.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a395e8e5daedc17c743fd9450aad75d4bb7ae1f1"
+        },
+        {
+          "sha": "ee54eb4ce6b32e3258c1e6f55579a9e75368b65b",
+          "author_date": "2021-05-13T17:14:50Z",
+          "message": "[C] Include URI in error message for channel buffer length validation.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ee54eb4ce6b32e3258c1e6f55579a9e75368b65b"
+        },
+        {
+          "sha": "7ab3c6346389ab8bcd99947db9d79dd5d6c654bf",
+          "author_date": "2021-05-13T22:01:22Z",
+          "message": "[C] Ensure flags field is initialised to 0 in test data setup.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7ab3c6346389ab8bcd99947db9d79dd5d6c654bf"
+        },
+        {
+          "sha": "9839df5d8cbdfaec55ef7002cfaaf139a6b0870d",
+          "author_date": "2021-05-13T23:27:45Z",
+          "message": "[C] Tidy up the allocation and clean up for the csv table name resolver.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9839df5d8cbdfaec55ef7002cfaaf139a6b0870d"
+        },
+        {
+          "sha": "071f3bace64eb4ae56ceac4c097adcce632b9b95",
+          "author_date": "2021-05-14T13:05:39Z",
+          "message": "[Java] Add URI to channel validation errors to help debugging.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/071f3bace64eb4ae56ceac4c097adcce632b9b95"
+        },
+        {
+          "sha": "c4ade94bff134246befd0a1f1cef96e6a67adba3",
+          "author_date": "2021-05-14T16:26:42Z",
+          "message": "[CI] Add Clang sanitise build to the slow tests build.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c4ade94bff134246befd0a1f1cef96e6a67adba3"
+        },
+        {
+          "sha": "59a2e1748d9996f2f9eaf8e14d058daa56cfeec1",
+          "author_date": "2021-05-14T17:52:31Z",
+          "message": "[CI] Remove CMake install from Clang sanitise build.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/59a2e1748d9996f2f9eaf8e14d058daa56cfeec1"
+        },
+        {
+          "sha": "8c290ed17b543a66a8709e9bc9bd64302450ab10",
+          "author_date": "2021-05-14T20:34:34Z",
+          "message": "1.33.1 released.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8c290ed17b543a66a8709e9bc9bd64302450ab10"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.34.0",
@@ -2947,8 +3609,33 @@
     {
       "release": "1.45.1",
       "previous_release": "1.46.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "38ade3ab59f66a15f70c15d7a9c96ea7454381dc",
+          "author_date": "2024-10-09T03:04:11Z",
+          "message": "[C] Check subscribed sessions before removing a stream interest before removing by stream_id.\n\n(cherry picked from commit d88069a73e74cc98306e7b63a0d763e9b997997c)",
+          "html_url": "https://github.com/aeron-io/aeron/commit/38ade3ab59f66a15f70c15d7a9c96ea7454381dc"
+        },
+        {
+          "sha": "481088220b4bfd6a1476f922880b403bf346a159",
+          "author_date": "2024-10-09T01:41:42Z",
+          "message": "[Java] Add end-to-end test for session interest fix.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/481088220b4bfd6a1476f922880b403bf346a159"
+        },
+        {
+          "sha": "357335e09bc498f04e55f92c120fa4ae4cbac1d0",
+          "author_date": "2024-10-23T19:34:21Z",
+          "message": "Tethering join position (#1672)\n\n* [Java] Fix java tethering join position\n\n* [C] Align c with java publication image tethering join position\n\n* [Java] Fix join position of tethered subscriptions\n\n* [C] Align C tethering with java\n\n* [Java] Add position check to untethered system test\n\n* [Java] checkstyle\n\n(cherry picked from commit 297f69c8fdd0be6c51781f781c12ef709c9ab27e)",
+          "html_url": "https://github.com/aeron-io/aeron/commit/357335e09bc498f04e55f92c120fa4ae4cbac1d0"
+        },
+        {
+          "sha": "2a9c5d1a57247e19c78b465c0b86882c910492d8",
+          "author_date": "2024-10-09T01:41:42Z",
+          "message": "1.45.1 released",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2a9c5d1a57247e19c78b465c0b86882c910492d8"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.44.5",
@@ -3049,8 +3736,1509 @@
     {
       "release": "1.48.5",
       "previous_release": "1.44.7",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "6536ba3d419dfaf55abf82c3f371bb113a287d29",
+          "author_date": "2024-04-10T16:59:59Z",
+          "message": "[Java] IngressAdapterTest onFragment before making any changes",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6536ba3d419dfaf55abf82c3f371bb113a287d29"
+        },
+        {
+          "sha": "d4415a2920d419b8876f1d6d48c048ce91b7f580",
+          "author_date": "2024-04-11T15:48:10Z",
+          "message": "[Java] IngressAdapter to delegate to ConsensusModuleAgent when schema id is unknown",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d4415a2920d419b8876f1d6d48c048ce91b7f580"
+        },
+        {
+          "sha": "305b4ce6f6f8b7e8e5807c6a0ffdbe3f89cf9549",
+          "author_date": "2024-04-11T22:25:58Z",
+          "message": "post release bump",
+          "html_url": "https://github.com/aeron-io/aeron/commit/305b4ce6f6f8b7e8e5807c6a0ffdbe3f89cf9549"
+        },
+        {
+          "sha": "b6e3dedf14d29600604991499547ff75d3d82bf5",
+          "author_date": "2024-04-15T04:07:57Z",
+          "message": "[C++ Wrapper] Correctly implement tracking of context on the header.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b6e3dedf14d29600604991499547ff75d3d82bf5"
+        },
+        {
+          "sha": "ea9bb6489d755191862e3c5af3d034032b63f251",
+          "author_date": "2024-04-15T08:46:20Z",
+          "message": "[C/C++] Do not compile with `-Ofast` compilation level.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ea9bb6489d755191862e3c5af3d034032b63f251"
+        },
+        {
+          "sha": "240242b9fa63edd3008cc7a126e5908d6141de9f",
+          "author_date": "2024-04-15T09:12:51Z",
+          "message": "[C/C++] Pass custom optimization level to the MSVC compiler.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/240242b9fa63edd3008cc7a126e5908d6141de9f"
+        },
+        {
+          "sha": "a80394e2cc30bcea65e767710a9f5290c4098f81",
+          "author_date": "2024-04-15T13:26:37Z",
+          "message": "[CI] Fix GCC installation.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a80394e2cc30bcea65e767710a9f5290c4098f81"
+        },
+        {
+          "sha": "774cba3c1fc50008ee4df7b512c08366d1ac10aa",
+          "author_date": "2024-04-15T20:34:50Z",
+          "message": "[Docker] Add missing dependencies + fix user permissions.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/774cba3c1fc50008ee4df7b512c08366d1ac10aa"
+        },
+        {
+          "sha": "127a3c27fd3a4d6cfc99559a5b351bb3fe8e3b5b",
+          "author_date": "2024-04-16T20:33:16Z",
+          "message": "[Build] Download and install CMake.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/127a3c27fd3a4d6cfc99559a5b351bb3fe8e3b5b"
+        },
+        {
+          "sha": "b319fef1d6a190666257ab9dc3e39dfb12ff51ed",
+          "author_date": "2024-04-16T22:19:54Z",
+          "message": "[C] Build CMake in multiple threads.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b319fef1d6a190666257ab9dc3e39dfb12ff51ed"
+        },
+        {
+          "sha": "6706498be9007be84535e1f696dfdc9a9653041f",
+          "author_date": "2024-04-16T22:32:21Z",
+          "message": "[C] Fix CMake compilation in CentOS and Rocky.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6706498be9007be84535e1f696dfdc9a9653041f"
+        },
+        {
+          "sha": "3241a3bd4f020ad8603b27f9f0526ec0a0d40fac",
+          "author_date": "2024-04-16T22:45:08Z",
+          "message": "[CI] Cache CMake installation.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3241a3bd4f020ad8603b27f9f0526ec0a0d40fac"
+        },
+        {
+          "sha": "25890f73ba33e10f8db8cddb839f2b86e97f6fc0",
+          "author_date": "2024-04-16T23:17:39Z",
+          "message": "[CI] Fix MacOS grep peculiarities.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/25890f73ba33e10f8db8cddb839f2b86e97f6fc0"
+        },
+        {
+          "sha": "f7add79cb0f902025c7276ca8b0a74aa17cbaf0e",
+          "author_date": "2024-04-17T08:37:23Z",
+          "message": "[Build] Fix CentOS OpenSSL install.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f7add79cb0f902025c7276ca8b0a74aa17cbaf0e"
+        },
+        {
+          "sha": "b6c93475b4a6fb48d0d0f09ce482c653093b1368",
+          "author_date": "2024-04-17T09:01:04Z",
+          "message": "[Build] Update packages before install.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b6c93475b4a6fb48d0d0f09ce482c653093b1368"
+        },
+        {
+          "sha": "8a786afa24a1a94b76fb4ab66d98381a8f3238fa",
+          "author_date": "2024-04-17T09:09:28Z",
+          "message": "[CI] Fix MacOS grep flags.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8a786afa24a1a94b76fb4ab66d98381a8f3238fa"
+        },
+        {
+          "sha": "bdfa40b3901a3521308a3eec3a8b229567a55d78",
+          "author_date": "2024-04-17T09:11:56Z",
+          "message": "[CI] Use the same grep/cut flags.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/bdfa40b3901a3521308a3eec3a8b229567a55d78"
+        },
+        {
+          "sha": "c35c1a837df5e4aedc671d9af68d0c68369135e6",
+          "author_date": "2024-04-17T09:15:44Z",
+          "message": "[Build] Debug libc version.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c35c1a837df5e4aedc671d9af68d0c68369135e6"
+        },
+        {
+          "sha": "eac3214f9b74aba26429e10a085e8d3e4bdfa81d",
+          "author_date": "2024-04-17T09:22:16Z",
+          "message": "[Build] More debug.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/eac3214f9b74aba26429e10a085e8d3e4bdfa81d"
+        },
+        {
+          "sha": "8423368f60c5ef97e2b4ec0c3a25b61751d10cdc",
+          "author_date": "2024-04-17T09:26:45Z",
+          "message": "[Build] Try CMake 3.26.6 on CentOS.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8423368f60c5ef97e2b4ec0c3a25b61751d10cdc"
+        },
+        {
+          "sha": "eb71d6a0fa79201e9a4100c141adb31981e26b07",
+          "author_date": "2024-04-17T09:41:31Z",
+          "message": "[Build] Use GCC 10 to build on CentOS.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/eb71d6a0fa79201e9a4100c141adb31981e26b07"
+        },
+        {
+          "sha": "f55724f6a78374b26f46f16bb9bd8a098463152e",
+          "author_date": "2024-04-17T11:12:56Z",
+          "message": "[Build] Use openssl-devel.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f55724f6a78374b26f46f16bb9bd8a098463152e"
+        },
+        {
+          "sha": "0380d7b5424b4b3a560a914f2292b803ddaab0a0",
+          "author_date": "2024-04-17T11:31:00Z",
+          "message": "[C/C++] Drop CentOS build.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0380d7b5424b4b3a560a914f2292b803ddaab0a0"
+        },
+        {
+          "sha": "fafc0cb17e6e6cd1ba2fca9a59758d1848a278b2",
+          "author_date": "2024-04-17T15:14:40Z",
+          "message": "[Java] Fix race when reusing an `Aeron` instance that was created in `ClusterBackup.Context.conclude` and assigned to `AeronArchive.Context`. This instance has no lock and is running in the invoker mode. The net result is sharing non-thread-safe object across the threads.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/fafc0cb17e6e6cd1ba2fca9a59758d1848a278b2"
+        },
+        {
+          "sha": "d80451f22ca4a4c49a6b125e81441955e2788c6d",
+          "author_date": "2024-04-18T21:24:48Z",
+          "message": "[C] Tidy up aeron_reallocf to work correctly on allocation failure.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d80451f22ca4a4c49a6b125e81441955e2788c6d"
+        },
+        {
+          "sha": "75109002bc7055aea3764861c15a8d4b6dc75c9e",
+          "author_date": "2024-04-19T01:36:18Z",
+          "message": "[C] Expose try_connect_stream method for use from within ATS.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/75109002bc7055aea3764861c15a8d4b6dc75c9e"
+        },
+        {
+          "sha": "59121c1c880c9ebfd34201f7c40451aebd4e8889",
+          "author_date": "2024-04-19T03:05:55Z",
+          "message": "[C] Remove unconnected stream message.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/59121c1c880c9ebfd34201f7c40451aebd4e8889"
+        },
+        {
+          "sha": "fc382f8ade937b7dc4d0d6b5a269ae5bb444d42f",
+          "author_date": "2024-04-19T14:26:46Z",
+          "message": "[C] Fix string format for AERON_SET_ERROR arguments.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/fc382f8ade937b7dc4d0d6b5a269ae5bb444d42f"
+        },
+        {
+          "sha": "1ef9d67cf8a18fe8cd7f34b7ce1b103bc2f0caff",
+          "author_date": "2024-04-19T15:02:12Z",
+          "message": "[Java] Remove unused variable.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1ef9d67cf8a18fe8cd7f34b7ce1b103bc2f0caff"
+        },
+        {
+          "sha": "2669190a391af2d18ffdd25442a09a81b87033de",
+          "author_date": "2024-04-21T21:09:56Z",
+          "message": "[Java] When trying to stop consensus modules and services in ConsensusModuleSnapshotPendingServiceMessagesPatchTest stop the leader last to avoid re-election.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2669190a391af2d18ffdd25442a09a81b87033de"
+        },
+        {
+          "sha": "b4959a8d99105f9130f5a338cda2ddbc68c83123",
+          "author_date": "2024-04-21T21:51:42Z",
+          "message": "Add per channel untethered window limit and resting timeouts (#1588)\n\n* [Java] Add untethered timeouts to URIs and resolve them for Publications and Images.\r\n\r\n* [C] Support untethered timeouts on channel uris.\r\n\r\n* [Java] Add untethered timeouts ChannelUriStringBuilder.\r\n\r\n* [C] Fix default for untethered resting timeout.\r\n\r\n* [Java] Extract common method in PublicationParams.\r\n\r\n* [C] Support untethered timeouts on cpp/ChannelUriStringBuilder.\r\n\r\n* [C++] More refactoring on ChannelUriStringBuilder.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b4959a8d99105f9130f5a338cda2ddbc68c83123"
+        },
+        {
+          "sha": "bf57d4563e81a2d55791b98834538db1400e0ef9",
+          "author_date": "2024-04-24T04:41:07Z",
+          "message": "[C++] Add findByTypeIdAndRegistrationId to C++ Wrapper.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/bf57d4563e81a2d55791b98834538db1400e0ef9"
+        },
+        {
+          "sha": "ba2c5f60327c89a46a13c4a8ae1e6257961b5417",
+          "author_date": "2024-04-25T15:33:55Z",
+          "message": "[Java] Upgrade to ByteBuddy 1.14.14.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ba2c5f60327c89a46a13c4a8ae1e6257961b5417"
+        },
+        {
+          "sha": "c2eaf7b11d110cbdf4791d3262577e19114a2e37",
+          "author_date": "2024-04-26T09:36:27Z",
+          "message": "[Java] Pre-start async task executor threads.\n\nWe want to avoid those threads lazily starting from the conductor thread\nand inheriting its affinity when it's pinned.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c2eaf7b11d110cbdf4791d3262577e19114a2e37"
+        },
+        {
+          "sha": "5dfa4bd661e6ecc860699af5004f7e25dfe7188e",
+          "author_date": "2024-04-26T15:34:55Z",
+          "message": "[Build] Install CMake binaries instead of building from source.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5dfa4bd661e6ecc860699af5004f7e25dfe7188e"
+        },
+        {
+          "sha": "e414f32bb2aec4b5e85949f024e1188f81d4e671",
+          "author_date": "2024-04-26T16:37:54Z",
+          "message": "[Build] Fix macOS Cmake installation path.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e414f32bb2aec4b5e85949f024e1188f81d4e671"
+        },
+        {
+          "sha": "c13d379f9d845abe46363be41f8e427c4b9d5179",
+          "author_date": "2024-04-26T16:39:20Z",
+          "message": "[Build] Fix path on Linux.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c13d379f9d845abe46363be41f8e427c4b9d5179"
+        },
+        {
+          "sha": "2717a418a859f094d53c15cdf82542b7208b9d1b",
+          "author_date": "2024-04-28T14:24:06Z",
+          "message": "[Java] Print `serviceId` when throwing \"ack out of sequence\" exception.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2717a418a859f094d53c15cdf82542b7208b9d1b"
+        },
+        {
+          "sha": "885c6a05bad997ac48905e7737c2f53a75e7ac68",
+          "author_date": "2024-04-29T18:50:22Z",
+          "message": "Fixed set thread name. (#1594)",
+          "html_url": "https://github.com/aeron-io/aeron/commit/885c6a05bad997ac48905e7737c2f53a75e7ac68"
+        },
+        {
+          "sha": "e706a7ec3d57e32f713b646d3583d6aa06f40436",
+          "author_date": "2024-04-29T20:16:10Z",
+          "message": "[C++] Tidy up after merging #1594.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e706a7ec3d57e32f713b646d3583d6aa06f40436"
+        },
+        {
+          "sha": "c438d68ef5fe19a0bb9c2de0a5c8f5eea5a815d8",
+          "author_date": "2024-04-29T23:39:02Z",
+          "message": "Use response channels in the Archive Client (#1560)\n\n* [Java] First pass at using response channels as part of the Archive Client.\r\n\r\n* [Java] Add support for doing replays via a token.  Support cleaning up tokens when a session closes or it is timed out.\r\n\r\n* [Java] Implement Archive replication using response channels.\r\n\r\n* [Java] Add validation for using response channels with MDS features.\r\n\r\n* [Java] Wait for non-zero publisher limit before using the publication when using response channels for replay to prevent errors.\r\n\r\n* [Java] Rename to avoid security warning.\r\n\r\n* [Java] Enable experimental features for tests using Archive & response channels.\r\n\r\n* [Java] Don't use strong secure random for every token only to seed the RNG.\r\n\r\n* [Java] Add support for response channels to bounded replay.\r\n\r\n* [Java] Fix tests after bounded replay changes.\r\n\r\n* [C++] Partially working C++ implementation of using Archive with response channels.\r\n\r\n* [C++] Add support for using response channels with bounded replay.\r\n\r\n* [C++] Add support for using response channels with start replay.\r\n\r\n* [C++] Fix compile error.\r\n\r\n* [C++] Fix compile error.\r\n\r\n* [C++] Fix test errors.\r\n\r\n* [C++] Add comments.\r\n\r\n* [C++] Fix Archive issues compilation issues on Windows.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c438d68ef5fe19a0bb9c2de0a5c8f5eea5a815d8"
+        },
+        {
+          "sha": "8c0ad4699011cc1494c244ba22d8ca715ba704b6",
+          "author_date": "2024-04-30T04:06:37Z",
+          "message": "[PS] Add Powershell script for Windows build.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8c0ad4699011cc1494c244ba22d8ca715ba704b6"
+        },
+        {
+          "sha": "597255a1335211f00ed0764231d468cb90140271",
+          "author_date": "2024-04-30T04:11:12Z",
+          "message": "[PS] Add cmake to .gitignore.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/597255a1335211f00ed0764231d468cb90140271"
+        },
+        {
+          "sha": "1f4721c2183dae4f9364de0aa42010bd550b2c0b",
+          "author_date": "2024-04-30T22:01:08Z",
+          "message": "[Java] Attempt to delete files on test failure, don't fail test if delete fails.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1f4721c2183dae4f9364de0aa42010bd550b2c0b"
+        },
+        {
+          "sha": "f944df83862dade03d817d48029b7b03861ed9ae",
+          "author_date": "2024-05-01T15:21:57Z",
+          "message": "[Build] Use Powershell script for Windows builds.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f944df83862dade03d817d48029b7b03861ed9ae"
+        },
+        {
+          "sha": "3432a2a4fab3a20bedda3ab72b28ff058ee5d9ef",
+          "author_date": "2024-05-01T15:58:42Z",
+          "message": "[Java] Do not resolve self hostname when starting MediaDriver to avoid a DNS-induced stall. Make `resolverName` required when driver name resolution is used.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3432a2a4fab3a20bedda3ab72b28ff058ee5d9ef"
+        },
+        {
+          "sha": "059abf4fd1039f44718652c1e038c1ce251c98fc",
+          "author_date": "2024-05-01T16:47:29Z",
+          "message": "[C] Do not resolve host name on startup + validate that `resolverName` is set if driver name resolution is used.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/059abf4fd1039f44718652c1e038c1ce251c98fc"
+        },
+        {
+          "sha": "cf8233e579f7a9f1c01cce409e0f5ff74d8aa96e",
+          "author_date": "2024-05-01T18:34:10Z",
+          "message": "[Java] Add another test with a missing PublicationImage.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/cf8233e579f7a9f1c01cce409e0f5ff74d8aa96e"
+        },
+        {
+          "sha": "7970213f6198cd2617c80f337c5af76f0e0c911d",
+          "author_date": "2024-05-03T18:16:17Z",
+          "message": "[Java] Propagate context though assembled header.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7970213f6198cd2617c80f337c5af76f0e0c911d"
+        },
+        {
+          "sha": "4a064e4309e0554b097c5c4c550f734f5022fd42",
+          "author_date": "2024-05-06T10:11:20Z",
+          "message": "[C/C++] Propagate header context when assembling packets.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/4a064e4309e0554b097c5c4c550f734f5022fd42"
+        },
+        {
+          "sha": "63deb0b3d0b6cab894f8811dbbf105e811474fa3",
+          "author_date": "2024-05-06T11:18:49Z",
+          "message": "[Java] Upgrade to HdrHistogram 2.2.1.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/63deb0b3d0b6cab894f8811dbbf105e811474fa3"
+        },
+        {
+          "sha": "6477ec9ed48b229ac4fa70713f0f5930de24ce22",
+          "author_date": "2024-05-03T10:42:37Z",
+          "message": "[Java] Fix FixedLossGenerator to not drop frames before the specified \"drop region\".\n\nPreviously, the FixedLossGenerator would drop frames before the offset\nof the region of loss. Now, it does not.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6477ec9ed48b229ac4fa70713f0f5930de24ce22"
+        },
+        {
+          "sha": "1d24ec34dc0cf742ad52f7d850be841337173b64",
+          "author_date": "2024-05-03T11:06:19Z",
+          "message": "[Java] Expose counter for number of bytes retransmitted.\n\nThis commit adds a counter that tracks the number of bytes retransmitted\ndue to loss. The existing tests issue a variable number of NAKs\ndepending on timings. Locally with breakpoints set, I've seen > 30 NAKs.\nTherefore, I have added assertions with only a lower bound based on the\nnumber of dropped bytes.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1d24ec34dc0cf742ad52f7d850be841337173b64"
+        },
+        {
+          "sha": "8dfad1cd2d95e3f73f342aa84cc4cc5507e60b89",
+          "author_date": "2024-05-07T11:08:16Z",
+          "message": "[Java] Add disabled tests to show problems with retranmitted bytes counter.\n\n1. The counter does not count each send to MDC destinations.\n2. The total bytes sent counter is not updated for resends.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8dfad1cd2d95e3f73f342aa84cc4cc5507e60b89"
+        },
+        {
+          "sha": "116b30ff9346a3badcb4de26fdd6d253253920cd",
+          "author_date": "2024-05-07T12:16:42Z",
+          "message": "[Java] Improve retransmitted bytes counter description.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/116b30ff9346a3badcb4de26fdd6d253253920cd"
+        },
+        {
+          "sha": "78ad7073f129d2dba1871a7a3a071fd978aa38b8",
+          "author_date": "2024-05-07T15:16:47Z",
+          "message": "[C] Expose counter for number of bytes retransmitted.\n\nThis commit adds a counter that tracks the number of bytes retransmitted\ndue to loss. The same counter has already been added to Java and the\ntests have been extended.\n\nIt is worth noting that the counter value is only a lower bound as MDC\nretransmits are only counted once regardless of the number of\ndestinations. Also, the retransmitted bytes are not included in the\ntotal bytes sent counter.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/78ad7073f129d2dba1871a7a3a071fd978aa38b8"
+        },
+        {
+          "sha": "d7dd1520a010b716a42ab2e5771d2dfe4fcd0429",
+          "author_date": "2024-05-08T14:57:42Z",
+          "message": "[C] Use C alloc and casts rather than C++ new when allocating socket structures in uri tests to avoid warnings.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d7dd1520a010b716a42ab2e5771d2dfe4fcd0429"
+        },
+        {
+          "sha": "63801accb8e4aa01483de2cccd3447197db5136d",
+          "author_date": "2024-05-09T14:55:52Z",
+          "message": "[Java] Tidy up.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/63801accb8e4aa01483de2cccd3447197db5136d"
+        },
+        {
+          "sha": "b47b26b02022c4e6b92c88bbe5b9d3a2b9be23b6",
+          "author_date": "2024-05-10T14:45:18Z",
+          "message": "[Java] Remove redundant param.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b47b26b02022c4e6b92c88bbe5b9d3a2b9be23b6"
+        },
+        {
+          "sha": "6bdd8838286b8d2e42eedfd07b958725c8c732d4",
+          "author_date": "2024-05-13T03:23:31Z",
+          "message": "[C] Move validation earlier in the flow to see if that prevents leaks in ATS on validation failure.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6bdd8838286b8d2e42eedfd07b958725c8c732d4"
+        },
+        {
+          "sha": "bef4aeed1f83c8a24cd1a63abfdcf335f1b8d67b",
+          "author_date": "2024-05-14T01:48:31Z",
+          "message": "[Java] Use context instead of image by session id to resolve Image on request message.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/bef4aeed1f83c8a24cd1a63abfdcf335f1b8d67b"
+        },
+        {
+          "sha": "c0783d9a7a78581d799f5f4bfe86fa2785f94dbf",
+          "author_date": "2024-05-15T08:29:27Z",
+          "message": "[Java] Upgrade to ByteBuddy 1.14.15.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c0783d9a7a78581d799f5f4bfe86fa2785f94dbf"
+        },
+        {
+          "sha": "86e36dd57f3604178c8f96d234dab1ba50824e77",
+          "author_date": "2024-05-15T09:37:54Z",
+          "message": "[Java] Enable experimental ByteBuddy option for JDK 21+ support in tests.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/86e36dd57f3604178c8f96d234dab1ba50824e77"
+        },
+        {
+          "sha": "8956a8a096c0471d37edc5122d48fd2e9c08d59d",
+          "author_date": "2024-05-15T10:33:11Z",
+          "message": "[Java] Workaround https://github.com/johnrengelman/shadow/issues/917.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8956a8a096c0471d37edc5122d48fd2e9c08d59d"
+        },
+        {
+          "sha": "02b3b115114f66bdc8790f2c60c0915250fdcc2b",
+          "author_date": "2024-05-15T21:11:18Z",
+          "message": "Per Stream Session Limits (#1598)\n\n* [Java] Flatten out StreamInterest structure and separate out active images into its own map.\r\n\r\n* [Java] Implement per-stream session limits.\r\n\r\n* [Java] Add system test for session limits.\r\n\r\n* [C] Separate state from image in data packet dispatcher.\r\n\r\n* [Java] Add null check when adding publication image in data packet dispatcher.\r\n\r\n* [C] Start applying session limits.\r\n\r\n* [C] Add test to validate rejection of too many sessions on a given stream.\r\n\r\n* [C] Add experimental features and stream session limits to print configuration.\r\n\r\n* [Java] Enable tests on C media driver by enabling stream session limit configuration option.\r\n\r\n* [Java] Catch NumberFormatException and report more useful error.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/02b3b115114f66bdc8790f2c60c0915250fdcc2b"
+        },
+        {
+          "sha": "0428c40ce4dbe442c70eb83fc1c607253220af9c",
+          "author_date": "2024-05-20T04:08:30Z",
+          "message": "[C] Remove unused function.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0428c40ce4dbe442c70eb83fc1c607253220af9c"
+        },
+        {
+          "sha": "8bb22df29d2a63ec3165d5a5788ba9ad186fb3e1",
+          "author_date": "2024-05-20T08:11:35Z",
+          "message": "[Java] PR comments fixes",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8bb22df29d2a63ec3165d5a5788ba9ad186fb3e1"
+        },
+        {
+          "sha": "d2de85ad1bcf6f1fb2d9d922c21823b3d63112fa",
+          "author_date": "2024-05-20T20:09:27Z",
+          "message": "[Java] schema adapter",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d2de85ad1bcf6f1fb2d9d922c21823b3d63112fa"
+        },
+        {
+          "sha": "b4d7ef0e6af8aeacf53242c9efba0285d30f0c73",
+          "author_date": "2024-05-20T23:49:18Z",
+          "message": "[Java] Fix StreamSessionLimitsTest by properly closing failed publication.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b4d7ef0e6af8aeacf53242c9efba0285d30f0c73"
+        },
+        {
+          "sha": "cb12da97681ffc86d6edab22107f16fe46136e51",
+          "author_date": "2024-05-21T22:55:07Z",
+          "message": "[Java] Remove unnecessary driver configuration from test.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/cb12da97681ffc86d6edab22107f16fe46136e51"
+        },
+        {
+          "sha": "0c454b5653e9af19c71a6cb9f0b50c8e5cd13cb8",
+          "author_date": "2024-05-22T01:19:20Z",
+          "message": "[Java] Change response channels sample to use controlled poll to prevent response channel test failures.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0c454b5653e9af19c71a6cb9f0b50c8e5cd13cb8"
+        },
+        {
+          "sha": "659c90f36021037e5f2c469f6e8ddf9d0b20a108",
+          "author_date": "2024-05-22T02:04:11Z",
+          "message": "[Java] Checkstyle.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/659c90f36021037e5f2c469f6e8ddf9d0b20a108"
+        },
+        {
+          "sha": "76b8b2589371c067251bbe9567848ac7538822ef",
+          "author_date": "2024-05-22T23:29:27Z",
+          "message": "[Java] Add some additional error test to ReplayMerge and test for concurrent ReplayMerges.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/76b8b2589371c067251bbe9567848ac7538822ef"
+        },
+        {
+          "sha": "4095257578af3388738a5d92298d0e725d1d9aaa",
+          "author_date": "2024-05-23T02:27:07Z",
+          "message": "[Java] Allow for more time for test to complete.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/4095257578af3388738a5d92298d0e725d1d9aaa"
+        },
+        {
+          "sha": "e8d1b59fc983ca75bc20752eb31b28561f0f0d72",
+          "author_date": "2024-05-23T02:15:49Z",
+          "message": "[C++] Rethrow original exception in ReplayMerge so information is not lost.  #1587",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e8d1b59fc983ca75bc20752eb31b28561f0f0d72"
+        },
+        {
+          "sha": "48e45143ab6264d2b12e197e9e1fe2c1edbc93c6",
+          "author_date": "2024-05-23T02:46:59Z",
+          "message": "[Java] Checkstyle.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/48e45143ab6264d2b12e197e9e1fe2c1edbc93c6"
+        },
+        {
+          "sha": "9494c731a1e64e26b8d022dfcf0b7efe5af75567",
+          "author_date": "2024-05-23T04:05:21Z",
+          "message": "[Java] Disable native test for Windows as it fails in CI (passes locally).",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9494c731a1e64e26b8d022dfcf0b7efe5af75567"
+        },
+        {
+          "sha": "a3bfb6d1b2896058e3fa9872942f64969730a48a",
+          "author_date": "2024-05-24T12:04:27Z",
+          "message": "[Java] Upgrade to ByteBuddy 1.14.16.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a3bfb6d1b2896058e3fa9872942f64969730a48a"
+        },
+        {
+          "sha": "98b9cf31673aa8b4f97c55a0faae5ca71426c8c1",
+          "author_date": "2024-05-26T20:23:24Z",
+          "message": "[C] add and use aeron_mkdir_recursive (#1602)\n\n* [C] add and use aeron_mkdir_recursive\r\n\r\n* [C] switch mode_t to int for windows\r\n\r\n* [C] error handling\r\n\r\n* [C] fix windows build",
+          "html_url": "https://github.com/aeron-io/aeron/commit/98b9cf31673aa8b4f97c55a0faae5ca71426c8c1"
+        },
+        {
+          "sha": "70574c0fdaaa6a8bd2c393daa3333fac34a21950",
+          "author_date": "2024-05-27T10:05:31Z",
+          "message": "[Java] Version interface to allow testing usage of it (#1605)",
+          "html_url": "https://github.com/aeron-io/aeron/commit/70574c0fdaaa6a8bd2c393daa3333fac34a21950"
+        },
+        {
+          "sha": "9548564d05a9fee5cb32b35afc777c8903490ee0",
+          "author_date": "2024-05-27T02:51:22Z",
+          "message": "[Java] Include file name when mark file version validation fails.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9548564d05a9fee5cb32b35afc777c8903490ee0"
+        },
+        {
+          "sha": "0d176cd9cb062242736490baeaaad6bedecc1bd5",
+          "author_date": "2024-05-28T00:00:15Z",
+          "message": "[Java] Correct offsets for response setup flyweight in ReceiveChannelEndpointThreadLocals.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0d176cd9cb062242736490baeaaad6bedecc1bd5"
+        },
+        {
+          "sha": "595a82baf6be15fe0dc96ee51218df11efd62694",
+          "author_date": "2024-05-28T10:11:35Z",
+          "message": "[Java] PRE comments fix",
+          "html_url": "https://github.com/aeron-io/aeron/commit/595a82baf6be15fe0dc96ee51218df11efd62694"
+        },
+        {
+          "sha": "46d0fca96ce54425f4ff6fdc6eb150073846a663",
+          "author_date": "2024-05-29T11:53:24Z",
+          "message": "[Java] Default cluster log flow control to driver default which will commonly be max now that overruns can go up to half a term.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/46d0fca96ce54425f4ff6fdc6eb150073846a663"
+        },
+        {
+          "sha": "9e789ca91922d6a01bf69da1b4e10b22ea9bd111",
+          "author_date": "2024-05-29T12:49:16Z",
+          "message": "[Java] SchemaAdapter -> ConsensusModuleExtension and only a single extension",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9e789ca91922d6a01bf69da1b4e10b22ea9bd111"
+        },
+        {
+          "sha": "bb5878ae1b5b61a08ed1325b53932f27969ffc97",
+          "author_date": "2024-05-30T08:14:01Z",
+          "message": "Update name.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/bb5878ae1b5b61a08ed1325b53932f27969ffc97"
+        },
+        {
+          "sha": "93b66d7165bb44676f6c801521986e8dfb536759",
+          "author_date": "2024-05-30T09:11:33Z",
+          "message": "[Java] Assign client name to Archive's Aeron client.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/93b66d7165bb44676f6c801521986e8dfb536759"
+        },
+        {
+          "sha": "b0b40d69d070213d8afaecf78bf1c43a3c5425a9",
+          "author_date": "2024-05-30T09:12:14Z",
+          "message": "[Java] Assign client name to Cluster Aeron clients.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b0b40d69d070213d8afaecf78bf1c43a3c5425a9"
+        },
+        {
+          "sha": "2980981bf1dbe79124e877e846dd506d57732e38",
+          "author_date": "2024-05-30T09:16:56Z",
+          "message": "[Java] Upgrade to HdrHistogram 2.2.2.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2980981bf1dbe79124e877e846dd506d57732e38"
+        },
+        {
+          "sha": "8e8894c801a6b7e5eee3e37b9869235785c7eded",
+          "author_date": "2024-05-30T09:17:12Z",
+          "message": "[Java] Upgrade to ByteBuddy 1.14.17.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8e8894c801a6b7e5eee3e37b9869235785c7eded"
+        },
+        {
+          "sha": "883ba4c3164d559dc7b09fc16d8c652000101cec",
+          "author_date": "2024-05-30T09:57:35Z",
+          "message": "[Java] Close Archive.Context in tests.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/883ba4c3164d559dc7b09fc16d8c652000101cec"
+        },
+        {
+          "sha": "b1cbfdbfe1ed8bc1d5d98c74377c93c4639545e3",
+          "author_date": "2024-05-30T10:56:12Z",
+          "message": "[Java] Make `shouldCatchupAndJoinAsFollowerWhileSendingBigMessages` more robust.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b1cbfdbfe1ed8bc1d5d98c74377c93c4639545e3"
+        },
+        {
+          "sha": "f1ed3a083fa70c0dbf55996718abf4ee03803bf5",
+          "author_date": "2024-05-30T12:48:41Z",
+          "message": "[Java] Add more info to the failed assert.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f1ed3a083fa70c0dbf55996718abf4ee03803bf5"
+        },
+        {
+          "sha": "5c29a3a548a5cf225aa451a09d4b473a4a04f582",
+          "author_date": "2024-05-30T14:24:54Z",
+          "message": "[Java] Fix `shouldCatchupAndJoinAsFollowerWhileSendingBigMessages()` election count assert for the follower node that remains running.\nThe follower node that remains running might be slow and thus fall out of flow control due to `fc=max` being default. Therefore, it could enter an additional election to catchup with the leader when the other follower is stopped. So an election count for such node can be either 1 (no catch up) or 2 if catch up occurs.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5c29a3a548a5cf225aa451a09d4b473a4a04f582"
+        },
+        {
+          "sha": "5e2706fdeb9e89ce62386f8d40c31722640131c8",
+          "author_date": "2024-05-30T15:20:34Z",
+          "message": "[Java] Pre-touch mapped log buffers on the client if `Aeron.Context.preTouchMappedMemory()` returns `true`, i.e. client configuration takes precedence over channel  parameters and media driver configuration.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5e2706fdeb9e89ce62386f8d40c31722640131c8"
+        },
+        {
+          "sha": "ca6f83728906e9b3775d309625007e01e5106703",
+          "author_date": "2024-05-30T15:37:59Z",
+          "message": "[Java] Choose the slowest follower to stop to ensure that there is quorum in the Cluster and the ingress is processed.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ca6f83728906e9b3775d309625007e01e5106703"
+        },
+        {
+          "sha": "672aa3f3f9f89cb3f57257d5cfaf1cf5cb791a02",
+          "author_date": "2024-05-31T14:07:36Z",
+          "message": "[C++] Pre-touch mapped log buffers on the client if `Context.preTouchMappedMemory()` returns `true`, i.e. client configuration takes precedence over channel parameters and media driver configuration.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/672aa3f3f9f89cb3f57257d5cfaf1cf5cb791a02"
+        },
+        {
+          "sha": "0aa4035f3c0f3b30970afd36f2d3dcdf20ab0e33",
+          "author_date": "2024-05-31T15:13:54Z",
+          "message": "[Java] Set max heap size when running tests + crash and capture heap dump on OOME.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0aa4035f3c0f3b30970afd36f2d3dcdf20ab0e33"
+        },
+        {
+          "sha": "f7167d04994ee2b1d238e93e4be1e52be193c016",
+          "author_date": "2024-06-03T08:58:15Z",
+          "message": "[Java] PR comments fixes",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f7167d04994ee2b1d238e93e4be1e52be193c016"
+        },
+        {
+          "sha": "3c1089db2196cc4c786a12555820c93c314c8f9f",
+          "author_date": "2024-06-03T09:32:18Z",
+          "message": "[Java] supplier called during conclude",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3c1089db2196cc4c786a12555820c93c314c8f9f"
+        },
+        {
+          "sha": "4282ed1d73c90c63ada23e80ad532fee8f5bbf7b",
+          "author_date": "2024-06-03T09:41:31Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/4282ed1d73c90c63ada23e80ad532fee8f5bbf7b"
+        },
+        {
+          "sha": "8f2d52dfdc42859cd41611771c43c3b5d8e41d35",
+          "author_date": "2024-06-03T09:41:41Z",
+          "message": "Merge remote-tracking branch 'origin/master'",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8f2d52dfdc42859cd41611771c43c3b5d8e41d35"
+        },
+        {
+          "sha": "9c5f6eaeca0967b781bb10faa724f4595f0a2a8d",
+          "author_date": "2024-06-03T10:25:11Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9c5f6eaeca0967b781bb10faa724f4595f0a2a8d"
+        },
+        {
+          "sha": "8ea8f16f0a57a8f66cd952f5c5c07778e56b1d47",
+          "author_date": "2024-06-03T10:27:33Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8ea8f16f0a57a8f66cd952f5c5c07778e56b1d47"
+        },
+        {
+          "sha": "3b173d235c4f1b476bdfe921d422124893866d55",
+          "author_date": "2024-06-03T11:08:50Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3b173d235c4f1b476bdfe921d422124893866d55"
+        },
+        {
+          "sha": "a857bc4556e1c9c9b8014532a6f2d26a3d51a2ed",
+          "author_date": "2024-06-03T11:55:08Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a857bc4556e1c9c9b8014532a6f2d26a3d51a2ed"
+        },
+        {
+          "sha": "ce6c7d50c19d10f8e0840040ec4d494f71676b31",
+          "author_date": "2024-06-03T12:25:05Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ce6c7d50c19d10f8e0840040ec4d494f71676b31"
+        },
+        {
+          "sha": "65013ee235967c82af1c0fe6cbfa5afc41d44436",
+          "author_date": "2024-06-03T12:52:07Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/65013ee235967c82af1c0fe6cbfa5afc41d44436"
+        },
+        {
+          "sha": "1e956320f1624dea462b717df2e32b1c18193b50",
+          "author_date": "2024-06-03T13:08:49Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1e956320f1624dea462b717df2e32b1c18193b50"
+        },
+        {
+          "sha": "f233e50ca2b789dd1a416e322e4255e420ee3a3d",
+          "author_date": "2024-06-03T13:20:14Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f233e50ca2b789dd1a416e322e4255e420ee3a3d"
+        },
+        {
+          "sha": "a2aba559124c7388f1a5b73277f2b519f0fee4d1",
+          "author_date": "2024-06-03T13:37:16Z",
+          "message": "[C++] Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a2aba559124c7388f1a5b73277f2b519f0fee4d1"
+        },
+        {
+          "sha": "7a52d88c9fa697bb2d9a7294290b826316eb79f9",
+          "author_date": "2024-06-03T13:51:59Z",
+          "message": "[C++] Remove dismiss alerts action in CodeQL.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7a52d88c9fa697bb2d9a7294290b826316eb79f9"
+        },
+        {
+          "sha": "57376c80b5f33946922383984adc062dcef1335a",
+          "author_date": "2024-06-03T16:34:40Z",
+          "message": "Merge pull request #1584 from real-logic/ingress_unknown_schema_id\n\n[Java ]  Delegate decision on unknown schema to consensus agent",
+          "html_url": "https://github.com/aeron-io/aeron/commit/57376c80b5f33946922383984adc062dcef1335a"
+        },
+        {
+          "sha": "5b32e7b4cf189033958e79cae2fc001107bac604",
+          "author_date": "2024-06-04T10:44:32Z",
+          "message": "[C++/Java] Another attempt at - Test suppressing codeql warning inline in code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5b32e7b4cf189033958e79cae2fc001107bac604"
+        },
+        {
+          "sha": "da6c86dda7ebadc538da1a91a544fa443fece664",
+          "author_date": "2024-06-04T11:09:35Z",
+          "message": "[Java] Tidy up after merge of PR #1584.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/da6c86dda7ebadc538da1a91a544fa443fece664"
+        },
+        {
+          "sha": "28aca5699223911d5e5590d5c259d63b05b7b83c",
+          "author_date": "2024-06-04T11:10:10Z",
+          "message": "[Java] Tidy up after merge of PR #1584.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/28aca5699223911d5e5590d5c259d63b05b7b83c"
+        },
+        {
+          "sha": "29e00a372df3a550eec8c4b39fd1098b4b747552",
+          "author_date": "2024-06-04T11:20:40Z",
+          "message": "[Java] Upgrade to Agrona 1.21.2.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/29e00a372df3a550eec8c4b39fd1098b4b747552"
+        },
+        {
+          "sha": "67db5f72ad6ea875d13da54703f71390cba7a8b3",
+          "author_date": "2024-06-04T14:13:57Z",
+          "message": "[Java] Ensure service count is zero when consensus module extension is installed.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/67db5f72ad6ea875d13da54703f71390cba7a8b3"
+        },
+        {
+          "sha": "c2113f6c685d4c82d2db80d0737eb1ff7ad7854a",
+          "author_date": "2024-06-04T14:29:11Z",
+          "message": "Annotations to support config/counters documentation/validation (#1593)\n\n* [Java] initial work\r\n\r\n* [Java] add basic aeron counter annotation/validation\r\n\r\n* [Java] appease checkstyle\r\n\r\n* [Java] add aeron-client tasks, annotate more elements\r\n\r\n* [Java] more driver annotations\r\n\r\n* [JAVA] switch flow control group tag to long instead of string\r\n\r\n* [Java] refactor to use xml instead of json as intermediate data format\r\n\r\n* [Java] use native java object serialization instead of xml\r\n\r\n* [Java] store Objects as Serializable\r\n\r\n* [Java] store defaults as Strings\r\n\r\n* [Java] remove unused import\r\n\r\n* [Java] allow c default validation to be skipped\r\n\r\n* [Java] driver c validation complete\r\n\r\n* [Java] refactor Grep object to avoid leaving a stream open\r\n\r\n* [Java] add config to refactored processor, update AeronCounters\r\n\r\n* [Java] add config annotation to cluster\r\n\r\n* [Java] add config annotation to archive\r\n\r\n* [Java] fix duplicate config ids\r\n\r\n* [Java] allow processors to be disabled via system property\r\n\r\n* [Java] address CodeQL issues",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c2113f6c685d4c82d2db80d0737eb1ff7ad7854a"
+        },
+        {
+          "sha": "c0a7fa2ea163b88a174c2d41e64e03545f2b9fc5",
+          "author_date": "2024-06-04T14:30:32Z",
+          "message": "Add unicast semantics to RetransmitHandler (#1603)\n\n* [Java] add a UnicastRetransmitHandler with slightly different/simpler semantics\r\n\r\n* [Java] properly ignore duplicate/overlapping NAKs in UnicastRetransmitHandler\r\n\r\n* [Java] refactor RetransmitHandler\r\n\r\n* [Java] refactoring\r\n\r\n* [C] c implementation of updated retransmit handler semantics and associated test fixtures\r\n\r\n* [C] appease strict aliasing with GCC 6\r\n\r\n* [Java] add c media driver support for multi gap loss tests\r\n\r\n* [Java] check for MDC as well as multicast",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c0a7fa2ea163b88a174c2d41e64e03545f2b9fc5"
+        },
+        {
+          "sha": "e16d3ab7e4c8e7966680cc35c3a10ddc2414173b",
+          "author_date": "2024-04-10T22:39:25Z",
+          "message": "[Java] Start adding archive and egress response endpoints.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e16d3ab7e4c8e7966680cc35c3a10ddc2414173b"
+        },
+        {
+          "sha": "bc162d18aeca8be3d421e896d610a0439d21c48f",
+          "author_date": "2024-04-10T23:41:15Z",
+          "message": "[Java] Add optional parsing of additional member endpoint values.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/bc162d18aeca8be3d421e896d610a0439d21c48f"
+        },
+        {
+          "sha": "0c98f594c677695d286a21e61bd9d0c5b3e98af8",
+          "author_date": "2024-06-05T04:30:53Z",
+          "message": "[Java] Remove default for cluster services directory configuration and leave resolution of that value until conclude.  Fixes slow tests.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0c98f594c677695d286a21e61bd9d0c5b3e98af8"
+        },
+        {
+          "sha": "f3a7a39f199ab16732f186ebc91e10a7b15d1648",
+          "author_date": "2024-06-05T11:27:48Z",
+          "message": "[Javadoc] fix javadoc comment",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f3a7a39f199ab16732f186ebc91e10a7b15d1648"
+        },
+        {
+          "sha": "e054a63f9989ecd696f6352ffdbdaab1598f241c",
+          "author_date": "2024-06-06T01:18:26Z",
+          "message": "[Java] Add some buffering in for the nak/retransmit count in MultiGapLossAndRecoverySystemTest.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e054a63f9989ecd696f6352ffdbdaab1598f241c"
+        },
+        {
+          "sha": "b3a85c3312c5cbaf3b5e533a1db500f1d3c16bff",
+          "author_date": "2024-06-06T01:50:40Z",
+          "message": "[Java] Use publication.availableWindow instead of looking up the pubLmt counter.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b3a85c3312c5cbaf3b5e533a1db500f1d3c16bff"
+        },
+        {
+          "sha": "7ac7eb3fd7a082de668945c42fd597f392cc8e09",
+          "author_date": "2024-06-06T13:41:23Z",
+          "message": "[Java] Tidy up.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7ac7eb3fd7a082de668945c42fd597f392cc8e09"
+        },
+        {
+          "sha": "552d961dd60f3fde334fd3ad67487db55a6b1a15",
+          "author_date": "2024-06-06T15:13:39Z",
+          "message": "[Java] Tidy up.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/552d961dd60f3fde334fd3ad67487db55a6b1a15"
+        },
+        {
+          "sha": "33385a018b6b80c83b34720eec9e366a6dec3afb",
+          "author_date": "2024-06-07T08:26:53Z",
+          "message": "[Java] Tidy up.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/33385a018b6b80c83b34720eec9e366a6dec3afb"
+        },
+        {
+          "sha": "e863c4b1a7ab5affa6e301cd9477cc8c412197dc",
+          "author_date": "2024-06-07T10:54:05Z",
+          "message": "[Java] First cut at consensus module extension integration.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e863c4b1a7ab5affa6e301cd9477cc8c412197dc"
+        },
+        {
+          "sha": "36cefc6d94d40bc385ddb3a65abb6b7b939f67d8",
+          "author_date": "2024-06-08T00:22:33Z",
+          "message": "[C] set multi_gap_loss interceptor state to be the offset map so it can be cleaned up",
+          "html_url": "https://github.com/aeron-io/aeron/commit/36cefc6d94d40bc385ddb3a65abb6b7b939f67d8"
+        },
+        {
+          "sha": "15d794fd60e31b3ec1452926f453b5b3061e6352",
+          "author_date": "2024-06-08T02:07:06Z",
+          "message": "[C] counter_map_delete",
+          "html_url": "https://github.com/aeron-io/aeron/commit/15d794fd60e31b3ec1452926f453b5b3061e6352"
+        },
+        {
+          "sha": "799b6dab3ad2e5a0e02a7d4a3dbd368053012d63",
+          "author_date": "2024-06-08T09:10:47Z",
+          "message": "[Java] Add new test with slow services.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/799b6dab3ad2e5a0e02a7d4a3dbd368053012d63"
+        },
+        {
+          "sha": "911abcef6b4f5aec2e121c82b15bf8d9a71f2591",
+          "author_date": "2024-06-08T13:46:26Z",
+          "message": "[C] move multi_gap_loss params to static struct instead of static struct pointer",
+          "html_url": "https://github.com/aeron-io/aeron/commit/911abcef6b4f5aec2e121c82b15bf8d9a71f2591"
+        },
+        {
+          "sha": "0b05b6645fcdda6d830577bcce141f2f10a15d2f",
+          "author_date": "2024-06-08T13:46:34Z",
+          "message": "Merge branch 'master' of https://github.com/real-logic/aeron",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0b05b6645fcdda6d830577bcce141f2f10a15d2f"
+        },
+        {
+          "sha": "24b6c4d07572fec6c394ffb58df85773acfb4eb8",
+          "author_date": "2024-06-08T14:07:39Z",
+          "message": "[C] increase size of char buffer to account for possible trailing null",
+          "html_url": "https://github.com/aeron-io/aeron/commit/24b6c4d07572fec6c394ffb58df85773acfb4eb8"
+        },
+        {
+          "sha": "5e1eacda1473a2289a0be29da8c02f4cf04618b0",
+          "author_date": "2024-06-09T12:47:20Z",
+          "message": "[Java] Update the slow services test with variable delay resulting in the same waiting time but given different number of messages.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5e1eacda1473a2289a0be29da8c02f4cf04618b0"
+        },
+        {
+          "sha": "3791a2c2a557d3f865af75bb64369571e583e4dd",
+          "author_date": "2024-06-09T21:42:37Z",
+          "message": "[C++] Try disabling first failing test to understand CI failures.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3791a2c2a557d3f865af75bb64369571e583e4dd"
+        },
+        {
+          "sha": "6996f66c91a69569b99d3bcbf921fc0c663de55f",
+          "author_date": "2024-06-09T21:53:20Z",
+          "message": "[C++] Revert: Try disabling first failing test to understand CI failures.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6996f66c91a69569b99d3bcbf921fc0c663de55f"
+        },
+        {
+          "sha": "2e25122187549af49a1d8d5ac034bb636989098a",
+          "author_date": "2024-06-10T00:47:40Z",
+          "message": "[CMake] Try to use a different version of GTest.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2e25122187549af49a1d8d5ac034bb636989098a"
+        },
+        {
+          "sha": "b6233317fc3e303aa5a21bc95412327f0a9679b3",
+          "author_date": "2024-06-10T00:58:04Z",
+          "message": "Revert \"[CMake] Try to use a different version of GTest.\"\n\nThis reverts commit 2e25122187549af49a1d8d5ac034bb636989098a.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b6233317fc3e303aa5a21bc95412327f0a9679b3"
+        },
+        {
+          "sha": "b93b193ae015fb3f2015291a4d18ed9b3eba0bf1",
+          "author_date": "2024-06-10T01:00:05Z",
+          "message": "[CI] Try to run MSVC tests under a different name.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b93b193ae015fb3f2015291a4d18ed9b3eba0bf1"
+        },
+        {
+          "sha": "205f163a8f20e8f0200c271000dc06d139bb8c59",
+          "author_date": "2024-06-10T01:35:07Z",
+          "message": "[CMake] Attempt workaround for https://github.com/actions/runner-images/issues/10004.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/205f163a8f20e8f0200c271000dc06d139bb8c59"
+        },
+        {
+          "sha": "dc3c0c17b63599f0654c899823cc272fcb7d56d5",
+          "author_date": "2024-06-10T02:40:31Z",
+          "message": "[Java] Make tests a little more mailable to support MacOS better.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/dc3c0c17b63599f0654c899823cc272fcb7d56d5"
+        },
+        {
+          "sha": "ecfb6de218661d43f106f822b4d99010109fe052",
+          "author_date": "2024-06-10T04:22:33Z",
+          "message": "[C++] Disable test again, need to check on how to handle memory leak from shouldReclaimSubscriptionWhenOutOfScopeAndNotFound.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ecfb6de218661d43f106f822b4d99010109fe052"
+        },
+        {
+          "sha": "a4f42591baff63a039990ceb584e527a2c37cb29",
+          "author_date": "2024-06-10T13:15:52Z",
+          "message": "[Java] Remove unused params.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a4f42591baff63a039990ceb584e527a2c37cb29"
+        },
+        {
+          "sha": "de69983fc9b4ba6eae69e5cb858fcf872e484cfd",
+          "author_date": "2024-06-10T13:32:42Z",
+          "message": "[Java] Separate lines for debugging.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/de69983fc9b4ba6eae69e5cb858fcf872e484cfd"
+        },
+        {
+          "sha": "7a8cbc8518220954d6088b18b2e73c3d24a55372",
+          "author_date": "2024-06-10T22:07:59Z",
+          "message": "[Java] Add system tests show that separate multicast addresses sharing the same port can be used for subscriptions and MDS destinations.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7a8cbc8518220954d6088b18b2e73c3d24a55372"
+        },
+        {
+          "sha": "1fc34d152e4facebb8572211beefe6568e13c872",
+          "author_date": "2024-06-10T22:29:58Z",
+          "message": "[Java] Checkstyle.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1fc34d152e4facebb8572211beefe6568e13c872"
+        },
+        {
+          "sha": "a046882890d7a1919ed617f38ce21c207086de2a",
+          "author_date": "2024-06-10T22:34:51Z",
+          "message": "[Java] Revert change to DualReplayMergeTest.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a046882890d7a1919ed617f38ce21c207086de2a"
+        },
+        {
+          "sha": "bd81456f74cd8806e0b1bcfb43c7b07b8e0c1f98",
+          "author_date": "2024-06-11T04:16:30Z",
+          "message": "[CI] Revert CI name change.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/bd81456f74cd8806e0b1bcfb43c7b07b8e0c1f98"
+        },
+        {
+          "sha": "ea93192f3938686f9f0014bab1c459b5b89081b1",
+          "author_date": "2024-06-11T05:04:02Z",
+          "message": "[Java] Add interrupts for Multiple Multicast test.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ea93192f3938686f9f0014bab1c459b5b89081b1"
+        },
+        {
+          "sha": "45cfc6bbd1f76e79a29038a73b4a1ae3bd653b9e",
+          "author_date": "2024-06-11T05:22:35Z",
+          "message": "[Java] Checkstyle.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/45cfc6bbd1f76e79a29038a73b4a1ae3bd653b9e"
+        },
+        {
+          "sha": "9ed90e233e9957fa84d21445d92485d1eafccb2d",
+          "author_date": "2024-06-11T06:30:53Z",
+          "message": "[Java] Disable test on Windows and C driver.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9ed90e233e9957fa84d21445d92485d1eafccb2d"
+        },
+        {
+          "sha": "1bf819a63b17579b2a365b2592d7130556c07444",
+          "author_date": "2024-06-11T08:43:30Z",
+          "message": "[Java] Fix checkstyle issue.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1bf819a63b17579b2a365b2592d7130556c07444"
+        },
+        {
+          "sha": "344ebdbcc9124fd59ee48ddcbdcadd051a8168bb",
+          "author_date": "2024-06-11T08:44:01Z",
+          "message": "[Java] Provide access to archive and aeron for consensus module extension.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/344ebdbcc9124fd59ee48ddcbdcadd051a8168bb"
+        },
+        {
+          "sha": "5cfc1d5645ddbc08ab639577b1082834f6849e06",
+          "author_date": "2024-06-11T13:55:50Z",
+          "message": "[Java] delegate cluster session creation to extension if available",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5cfc1d5645ddbc08ab639577b1082834f6849e06"
+        },
+        {
+          "sha": "8041f22dc6e2f0a1455329b878371c8a7851bbc3",
+          "author_date": "2024-06-11T14:55:31Z",
+          "message": "[Java] delegate callbacks to extension on state changes",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8041f22dc6e2f0a1455329b878371c8a7851bbc3"
+        },
+        {
+          "sha": "c05b147ff266c3f476d9fcab38f89a903ba251da",
+          "author_date": "2024-06-11T16:37:34Z",
+          "message": "[Javadoc] fix warnings when building in higher JDKs",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c05b147ff266c3f476d9fcab38f89a903ba251da"
+        },
+        {
+          "sha": "b267574b3a536bbd7192225e21d4c92e60aebdbe",
+          "author_date": "2024-06-11T19:38:09Z",
+          "message": "[Java] Increase test timeout for MacOS build to pass.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b267574b3a536bbd7192225e21d4c92e60aebdbe"
+        },
+        {
+          "sha": "f2da6d894c72c950527a52ab242c292837dcf4d4",
+          "author_date": "2024-06-11T22:52:42Z",
+          "message": "Track EOS for each connected receiver to the NetworkPublication (#1606)\n\n* [Java] Track EOS for each connected receiver to the NetworkPublication and disconnect if all have responded with an EOS.\r\n\r\n* [Java] Touch up tests with appropriate extensions and tracking of logs.\r\n\r\n* [Java] Add SubscriberEndOfStreamTest for MDC.\r\n\r\n* [C] Add support for liveness tracking to the C driver.\r\n\r\n* [Java] Move update of has receivers into idle for network publication.\r\n\r\n* [Java] Add test for eos applying to flow control receivers immediately.\r\n\r\n* [Java] Checkstyle.\r\n\r\n* [C] Free entries from receiver liveness tracker.\r\n\r\n* [Java] Restore EOS marker for unicast channels to shortcut linger and add test.\r\n\r\n* [C] Restore EOS marker for unicast channels to shortcut linger.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f2da6d894c72c950527a52ab242c292837dcf4d4"
+        },
+        {
+          "sha": "76b466399e924c0836d56259aa0deaeee075122e",
+          "author_date": "2024-06-11T22:56:49Z",
+          "message": "[Java] Extend timeout again for Mac CI tests.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/76b466399e924c0836d56259aa0deaeee075122e"
+        },
+        {
+          "sha": "88c8594ce31a8145912ea4f114e56207a866f978",
+          "author_date": "2024-06-11T23:14:17Z",
+          "message": "[C] Declare a volatile pointer to `aeron_image_list_stct` instead of a pointer to a volatile struct. (#1607)\n\n* [C] Declare a volatile pointer to `aeron_image_list_stct` instead of a pointer to a volatile struct.\r\n\r\n* [C] Use volatile struct pattern consistently.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/88c8594ce31a8145912ea4f114e56207a866f978"
+        },
+        {
+          "sha": "9316fc91a81f16dc1a3b74257c77100dbbb9a0b9",
+          "author_date": "2024-06-11T23:15:49Z",
+          "message": "[C] Tidy up after PR #1607.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9316fc91a81f16dc1a3b74257c77100dbbb9a0b9"
+        },
+        {
+          "sha": "08a928cb351dbef19e441b39f42bf2a387c5c985",
+          "author_date": "2024-06-11T23:18:07Z",
+          "message": "[Java] Tidy up after PR #1606.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/08a928cb351dbef19e441b39f42bf2a387c5c985"
+        },
+        {
+          "sha": "7869d922ed8ebd8f80ecde95d768fee1999cb2e5",
+          "author_date": "2024-06-12T09:15:58Z",
+          "message": "[Java] Disable catchup test on MacOS.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7869d922ed8ebd8f80ecde95d768fee1999cb2e5"
+        },
+        {
+          "sha": "92122cfaf2167d7f59e2641fcf770ac9b0847383",
+          "author_date": "2024-06-12T12:48:51Z",
+          "message": "[Java] a more decoupled approach to ConsensusModuleExtension",
+          "html_url": "https://github.com/aeron-io/aeron/commit/92122cfaf2167d7f59e2641fcf770ac9b0847383"
+        },
+        {
+          "sha": "7c814f5d27ad13f9238008ddb9b96699480070ac",
+          "author_date": "2024-06-13T14:51:08Z",
+          "message": "[Java] Provide access to log publication after an election for consensus module extension.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7c814f5d27ad13f9238008ddb9b96699480070ac"
+        },
+        {
+          "sha": "47c6ea7177f5995f20c20b7eebdca85a1c88f857",
+          "author_date": "2024-06-13T16:53:30Z",
+          "message": "[Java] Improve error messages when publication errors occur.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/47c6ea7177f5995f20c20b7eebdca85a1c88f857"
+        },
+        {
+          "sha": "3c7b7e0fb0a7b45ba2abd383212e403e8e4de7a5",
+          "author_date": "2024-06-14T10:28:12Z",
+          "message": "[Java] Consensus module extension API refinements.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3c7b7e0fb0a7b45ba2abd383212e403e8e4de7a5"
+        },
+        {
+          "sha": "1dcd9f81026809615432430a1e4d3aacaa21ceed",
+          "author_date": "2024-06-14T10:28:37Z",
+          "message": "[Java] Consensus module extension API refinements.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1dcd9f81026809615432430a1e4d3aacaa21ceed"
+        },
+        {
+          "sha": "e60c97cb2ac6a29a1c9a79e290d1d73f9029c807",
+          "author_date": "2024-06-14T14:39:33Z",
+          "message": "[Java] Javadoc.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e60c97cb2ac6a29a1c9a79e290d1d73f9029c807"
+        },
+        {
+          "sha": "427f8bd9a0648ce1d87f829f14586b5ea7528198",
+          "author_date": "2024-06-16T19:21:41Z",
+          "message": "[C] Add additional cases for multicast interface matching.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/427f8bd9a0648ce1d87f829f14586b5ea7528198"
+        },
+        {
+          "sha": "fdc659cf24f6c2c1c81c3121c31da47c9d5c22be",
+          "author_date": "2024-06-16T22:33:27Z",
+          "message": "[C] Fix test.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/fdc659cf24f6c2c1c81c3121c31da47c9d5c22be"
+        },
+        {
+          "sha": "58f685ecce6b78d80fefd61072eeb976e765d843",
+          "author_date": "2024-06-17T10:25:07Z",
+          "message": "[Java] Add replay of session open and close delegation to consensus module extension.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/58f685ecce6b78d80fefd61072eeb976e765d843"
+        },
+        {
+          "sha": "ba6e4da8c982e5243d9df5390c1bcad624dfe6f5",
+          "author_date": "2024-06-17T10:44:52Z",
+          "message": "[Java] Add replay of extension message delegation to consensus module extension.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ba6e4da8c982e5243d9df5390c1bcad624dfe6f5"
+        },
+        {
+          "sha": "22021f79a22a710d7bb27328e274d09c8a0536a7",
+          "author_date": "2024-06-17T15:13:02Z",
+          "message": "[Java] ConsensusControlState to be passed from Agent to Extension and allows control",
+          "html_url": "https://github.com/aeron-io/aeron/commit/22021f79a22a710d7bb27328e274d09c8a0536a7"
+        },
+        {
+          "sha": "b0f709e9c0e0ed6cf4f1d6fa9ecbafa0a17d87e7",
+          "author_date": "2024-06-17T23:23:58Z",
+          "message": "[PS1] On compile error exit build and don't run tests on Windows.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b0f709e9c0e0ed6cf4f1d6fa9ecbafa0a17d87e7"
+        },
+        {
+          "sha": "1fdea944a05a4b961da3b8484a4629d3b4a34f65",
+          "author_date": "2024-06-18T02:09:02Z",
+          "message": "[Java] Mac be slow in CI.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1fdea944a05a4b961da3b8484a4629d3b4a34f65"
+        },
+        {
+          "sha": "60ac3b231d2e7cd57c65f773d4da138ea6c7c2c9",
+          "author_date": "2024-06-18T10:41:42Z",
+          "message": "[C/C++] Use `aeron-client-conductor` as a client conductor agent name across all implementations.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/60ac3b231d2e7cd57c65f773d4da138ea6c7c2c9"
+        },
+        {
+          "sha": "8920f9a1918b4c636c1ee06990383ecf61824641",
+          "author_date": "2024-06-18T11:04:50Z",
+          "message": "[Java] pass actingVersion to onMessage of ConsensusModuleExtension",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8920f9a1918b4c636c1ee06990383ecf61824641"
+        },
+        {
+          "sha": "02850abac80fa43cbfa38235312453705c671063",
+          "author_date": "2024-06-18T16:04:49Z",
+          "message": "[Java] tidy up in ConsensusModuleAgent",
+          "html_url": "https://github.com/aeron-io/aeron/commit/02850abac80fa43cbfa38235312453705c671063"
+        },
+        {
+          "sha": "b628e0987d6f75c43e1117d6b499628a8762b174",
+          "author_date": "2024-06-18T16:05:35Z",
+          "message": "[Java] Version generated class to have toString",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b628e0987d6f75c43e1117d6b499628a8762b174"
+        },
+        {
+          "sha": "4bcac2648d1171148ee2aba71e2be41ce2450694",
+          "author_date": "2024-06-19T02:09:05Z",
+          "message": "[Bash] Add option to disable C++ Archive API.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/4bcac2648d1171148ee2aba71e2be41ce2450694"
+        },
+        {
+          "sha": "b465c31d0fc2d6d4599531204cd5cf8a11b5c352",
+          "author_date": "2024-06-19T09:13:04Z",
+          "message": "[Java] Add ability to access response publication for a session and only update keepalive status when open.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b465c31d0fc2d6d4599531204cd5cf8a11b5c352"
+        },
+        {
+          "sha": "4755f5e8e3d6713c4ca4b3ba9b6ffeff61ccfb28",
+          "author_date": "2024-06-19T10:24:09Z",
+          "message": "[Java] Naming.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/4755f5e8e3d6713c4ca4b3ba9b6ffeff61ccfb28"
+        },
+        {
+          "sha": "905afa7da7df6f7bbc4e3c6f204e749839a83fb0",
+          "author_date": "2024-06-19T12:58:20Z",
+          "message": "[Java] handle extension message on egress listener side",
+          "html_url": "https://github.com/aeron-io/aeron/commit/905afa7da7df6f7bbc4e3c6f204e749839a83fb0"
+        },
+        {
+          "sha": "a6473dddb836076271b8887ec36fae9594ef5cb0",
+          "author_date": "2024-06-19T14:50:07Z",
+          "message": "[Java] Add extension message support to AeronCluster client.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a6473dddb836076271b8887ec36fae9594ef5cb0"
+        },
+        {
+          "sha": "6ef7ea88f7f0cea4037196343ca5c80d65c40322",
+          "author_date": "2024-06-19T16:23:15Z",
+          "message": "[Java] Naming.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/6ef7ea88f7f0cea4037196343ca5c80d65c40322"
+        },
+        {
+          "sha": "2f7b843d60facdac3401c8a65a99f6450ed57c30",
+          "author_date": "2024-06-19T22:46:52Z",
+          "message": "[C++ Wrapper] Allow pass through of `const uint8_t *` buffers.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2f7b843d60facdac3401c8a65a99f6450ed57c30"
+        },
+        {
+          "sha": "ced39230d33bf44e21352bf0baec81f4bab7a214",
+          "author_date": "2024-06-19T23:01:46Z",
+          "message": "[C++ Wrapper] Method docs.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ced39230d33bf44e21352bf0baec81f4bab7a214"
+        },
+        {
+          "sha": "b08b2e5b4abe1f9f24c0bc5c748897a75f7f7734",
+          "author_date": "2024-06-19T23:36:37Z",
+          "message": "[C++] Replace array with pointer to address code-ql issue on Publication in C++ API and Wrapper.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b08b2e5b4abe1f9f24c0bc5c748897a75f7f7734"
+        },
+        {
+          "sha": "45542501458c512fa96fb33f03eb36f3c186d831",
+          "author_date": "2024-06-20T12:00:14Z",
+          "message": "[Java] handle extension message on egress listener and adapter",
+          "html_url": "https://github.com/aeron-io/aeron/commit/45542501458c512fa96fb33f03eb36f3c186d831"
+        },
+        {
+          "sha": "9a173ac9c6d010b905e6e2e3fc146517d1253542",
+          "author_date": "2024-06-20T14:45:25Z",
+          "message": "[Java] handle extension messages - pass actingBlockLength",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9a173ac9c6d010b905e6e2e3fc146517d1253542"
+        },
+        {
+          "sha": "f9ae10ec323ec5f39c66696b44b84febe1b9f465",
+          "author_date": "2024-06-21T07:58:38Z",
+          "message": "[Build] Fix aeronmd rpath in the generated package.\n\nLooks like CMake behaviour changed:\nhttps://cmake.org/cmake/help/latest/policy/CMP0095.html#policy:CMP0095\n\nPreviously:\n\n$ ./aeron-1.45.0-Linux/bin/aeronmd\n./aeron-1.45.0-Linux/bin/aeronmd: error while loading shared libraries: libaeron_driver.so: cannot open shared object file: No such file or directory\n$ readelf -d ./aeron-1.45.0-Linux/bin/aeronmd | grep 'R.*PATH'\n 0x000000000000001d (RUNPATH)            Library runpath: [\\$ORIGIN/../lib]\n\nNow:\n\n$ readelf -d ./aeron-1.45.0-Linux/bin/aeronmd | grep 'R.*PATH'\n 0x000000000000001d (RUNPATH)            Library runpath: [$ORIGIN/../lib]\n$ ./aeron-1.45.0-Linux/bin/aeronmd\n^CShutting down driver...",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f9ae10ec323ec5f39c66696b44b84febe1b9f465"
+        },
+        {
+          "sha": "b868fd13e7197345d1713f879ea780e9b91f9426",
+          "author_date": "2024-06-21T13:11:09Z",
+          "message": "[Java] Fix test scope and running tests on a VPN.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b868fd13e7197345d1713f879ea780e9b91f9426"
+        },
+        {
+          "sha": "96a39c112591fc21a87b0791852a571d97428418",
+          "author_date": "2024-06-21T13:28:49Z",
+          "message": "[Java] Use separate archive control session for consensus module extension.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/96a39c112591fc21a87b0791852a571d97428418"
+        },
+        {
+          "sha": "29b7c2d68450e22147f55fc960226b977b7e5e71",
+          "author_date": "2024-06-21T14:44:24Z",
+          "message": "[Java] Add local interface for multicast subscriptions test.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/29b7c2d68450e22147f55fc960226b977b7e5e71"
+        },
+        {
+          "sha": "32db836955ff8ceaae3225f6ac7bf2f9b2effca1",
+          "author_date": "2024-06-21T15:34:21Z",
+          "message": "[Java] Add local interface for DualReplayMergeTest.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/32db836955ff8ceaae3225f6ac7bf2f9b2effca1"
+        },
+        {
+          "sha": "ded01cb3049927f0b068cd0ccbab41502f39379c",
+          "author_date": "2024-06-24T13:50:14Z",
+          "message": "[Java] Add work cycle callback for ConsensusModuleExtension.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ded01cb3049927f0b068cd0ccbab41502f39379c"
+        },
+        {
+          "sha": "383299f1ea44f16dd6949eff176f7788821b4480",
+          "author_date": "2024-06-26T04:40:56Z",
+          "message": "[Java] Replace exception with increment of counter for overflowing the retransmit pool.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/383299f1ea44f16dd6949eff176f7788821b4480"
+        },
+        {
+          "sha": "e040dc9b9242fa48b5977a06faa924bd3ec92a1d",
+          "author_date": "2024-06-26T05:00:39Z",
+          "message": "[Java] Typo.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e040dc9b9242fa48b5977a06faa924bd3ec92a1d"
+        },
+        {
+          "sha": "0d504e1e0d97539d47aee1c3141e0bd7fa4cc2c8",
+          "author_date": "2024-06-26T06:20:24Z",
+          "message": "[C] Add additional system counter.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0d504e1e0d97539d47aee1c3141e0bd7fa4cc2c8"
+        },
+        {
+          "sha": "d953a3064f6e64ba660435913b7452a396d5d4fd",
+          "author_date": "2024-06-26T13:37:56Z",
+          "message": "[Java] Add a test with multiple Clusters sharing a MediaDriver and Archive.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d953a3064f6e64ba660435913b7452a396d5d4fd"
+        },
+        {
+          "sha": "a1f01cbc4c7b4dfa1dda0c0f150cc43b3be773c0",
+          "author_date": "2024-06-26T13:47:53Z",
+          "message": "[Java] Assert number of leadership events.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a1f01cbc4c7b4dfa1dda0c0f150cc43b3be773c0"
+        },
+        {
+          "sha": "1743efcf5d3a8b0d259150f72c33c4f9cfc14415",
+          "author_date": "2024-06-26T17:15:43Z",
+          "message": "[Test] more await options",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1743efcf5d3a8b0d259150f72c33c4f9cfc14415"
+        },
+        {
+          "sha": "93c4cbae26d5f6a7cbe6dcf03a7ed67b3d1e0faa",
+          "author_date": "2024-06-26T23:28:42Z",
+          "message": "[C] Replace exception with increment of counter for overflowing the retransmit pool.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/93c4cbae26d5f6a7cbe6dcf03a7ed67b3d1e0faa"
+        },
+        {
+          "sha": "08e4d7b062b8cf76e443b8e53b278b0db6a42087",
+          "author_date": "2024-06-27T00:27:36Z",
+          "message": "[C] add -w to C AeronStat app (#1614)",
+          "html_url": "https://github.com/aeron-io/aeron/commit/08e4d7b062b8cf76e443b8e53b278b0db6a42087"
+        },
+        {
+          "sha": "5adbe6edb6ac2ae9fe4dd3af74ad6c4e3b9991e9",
+          "author_date": "2024-06-27T02:07:52Z",
+          "message": "[Java] Disable intermittent test.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5adbe6edb6ac2ae9fe4dd3af74ad6c4e3b9991e9"
+        },
+        {
+          "sha": "470fa3174c37b5b1c3966d3e9d6c3a98025a856a",
+          "author_date": "2024-06-27T09:12:07Z",
+          "message": "[Java] Fix race awaiting leadership event in the service.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/470fa3174c37b5b1c3966d3e9d6c3a98025a856a"
+        },
+        {
+          "sha": "18fe9283638765f594c415fc7d961922b862bb66",
+          "author_date": "2024-06-27T10:01:03Z",
+          "message": "[Java] Provide access to encoded principle for authorising consensus module extension session.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/18fe9283638765f594c415fc7d961922b862bb66"
+        },
+        {
+          "sha": "a7f8878971a7e7a416445198c9ab1c05a5367d95",
+          "author_date": "2024-04-24T03:06:02Z",
+          "message": "[Java] Add support for response channels startReplay and startBoundedReplay.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a7f8878971a7e7a416445198c9ab1c05a5367d95"
+        },
+        {
+          "sha": "ec6437a98631516207f92b358d37bd2396e8dd3f",
+          "author_date": "2024-06-28T15:09:41Z",
+          "message": "[Java] Fix StreamStat mapping of `sub-pos` which had a join position included in the channel uri and prevented it to be merged with the rest of stream positions. Also ensure that longest channel uri is printed.\n\nHere is an example output before and after the change:\n```\nbefore\n------\nsessionId=-273187763 streamId=1 channel=aeron:udp?session-id=-273187763|alias= @test @not @split @channel @uri @by @at @even @if @no @subscription @exists|endpoint=localhost:6666|interface=127.0.0.1|term-length=512K|mtu=1376 : pub-pos (sampled):6:0 pub-lmt:6:0 snd-pos:6:0 snd-lmt:6:0\nsessionId=-273187763 streamId=909 channel=aeron:udp?session-id=-273187763|endpoint=localhost:5555|mtu=2k|term-length=128K : pub-pos (sampled):3:1120 pub-lmt:3:66656 snd-pos:3:1120 snd-lmt:3:65536 rcv-hwm:10:1120 rcv-pos:10:1120\nsessionId=-273187763 streamId=909 channel=aeron:udp?session-id=-273187763|endpoint=localhost:5555|mtu=2k|term-length=128K @0 : sub-pos:8:448\nsessionId=-273187430 streamId=2000 channel=aeron:ipc?alias=test-should-collect-stats|term-length=65536|tether=true|reliable=true|ssc=true|sparse=false|linger=60s|mtu=4096 : pub-pos (sampled):2:800 pub-lmt:2:32768\nsessionId=-273187430 streamId=2000 channel=aeron:ipc?alias=test-should-collect-stats|term-length=65536|tether=true|reliable=true|ssc=true|sparse=false|linger=60s|mtu=4096 @0 : sub-pos:7:320\nsessionId=-273187429 streamId=500 channel=aeron:udp?endpoint=localhost:7777|interface=127.0.0.1|init-term-id=-6548658|term-id=42|term-offset=1024|mtu=8192|ttl=5|group=true|term-length=256K|so-rcvbuf=128K|so-sndbuf=128K|rcv-wnd=128K|sparse=true|linger=0|nak-delay=100ms|tether=false|reliable=false|ssc=false|alias=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx : pub-pos (sampled):5:1716702414144\nsessionId=-273187429 streamId=500 channel=aeron:udp?endpoint=localhost:7777|interface=127.0.0.1|init-term-id=-6548658|term-id=42|term-offset=1024|mtu=8192|ttl=5|group=true|term-length=256K|so-rcvbuf=128K|so-sndbuf=128K|rcv-wnd=128K|sparse=true|linger=0|nak-delay=100ms|tether=false|reliable=false|ssc=false|alias=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx : rcv-hwm:11:1716702414144 rcv-pos:11:1716702414144 sub-pos:12:1716702413824\nsessionId=-273187429 streamId=500 channel=aeron:udp?endpoint=localhost:7777|interface=127.0.0.1|init-term-id=-6548658|term-id=42|term-offset=1024|mtu=8192|ttl=5|group=true|term-length=256K|so-rcvbuf=128K|so-sndbuf=128K|rcv-wnd=128K|sparse=true|linger=0|nak-delay=100ms|tether=false|reliable=false|ssc=false|alias=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx : pub-lmt:5:1716702545216 snd-pos:5:1716702414144 snd-lmt:5:1716702544896 sub-pos:9:1716702414016\n\nafter\n-----\nsessionId=-273187763 streamId=1 channel=aeron:udp?session-id=-273187763|alias= @test @not @split @channel @uri @by @at @even @if @no @subscription @exists|endpoint=localhost:6666|interface=127.0.0.1|term-length=512K|mtu=1376 : pub-pos (sampled):6:0 pub-lmt:6:0 snd-pos:6:0 snd-lmt:6:0\nsessionId=-273187763 streamId=909 channel=aeron:udp?session-id=-273187763|endpoint=localhost:5555|mtu=2k|term-length=128K : pub-pos (sampled):3:1120 pub-lmt:3:66656 snd-pos:3:1120 snd-lmt:3:65536 sub-pos:8:448 rcv-hwm:10:1120 rcv-pos:10:1120\nsessionId=-273187430 streamId=2000 channel=aeron:ipc?alias=test-should-collect-stats|term-length=65536|tether=true|reliable=true|ssc=true|sparse=false|linger=60s|mtu=4096 : pub-pos (sampled):2:800 pub-lmt:2:32768 sub-pos:7:320\nsessionId=-273187429 streamId=500 channel=aeron:udp?endpoint=localhost:7777|interface=127.0.0.1|init-term-id=-6548658|term-id=42|term-offset=1024|mtu=8192|ttl=5|group=true|term-length=256K|so-rcvbuf=128K|so-sndbuf=128K|rcv-wnd=128K|sparse=true|linger=0|nak-delay=100ms|tether=false|reliable=false|ssc=false|alias=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx : pub-pos (sampled):5:1716702414144 pub-lmt:5:1716702545216 snd-pos:5:1716702414144 snd-lmt:5:1716702544896 sub-pos:9:1716702414016 rcv-hwm:11:1716702414144 rcv-pos:11:1716702414144 sub-pos:12:1716702413824\n```",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ec6437a98631516207f92b358d37bd2396e8dd3f"
+        },
+        {
+          "sha": "5d0fb96dd79bf767c8c4b865303280556b9eb4f4",
+          "author_date": "2024-06-28T15:25:36Z",
+          "message": "[Java] Do not check consensus module state when performing `is-leader` check.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5d0fb96dd79bf767c8c4b865303280556b9eb4f4"
+        },
+        {
+          "sha": "360e1afd1fc8322ba6c0035dc131c42e87a89c46",
+          "author_date": "2024-06-28T15:35:58Z",
+          "message": "[Java] Do not assert on exact registrationIds.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/360e1afd1fc8322ba6c0035dc131c42e87a89c46"
+        },
+        {
+          "sha": "87b94eef63e579ab04297db2d843c29cab219603",
+          "author_date": "2024-06-30T09:11:51Z",
+          "message": "[Java] Assert that retransmit count is less or equal to NAK count.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/87b94eef63e579ab04297db2d843c29cab219603"
+        },
+        {
+          "sha": "46a7745756bebef3216ff31d3846d1ee74f5b42d",
+          "author_date": "2024-07-01T01:30:50Z",
+          "message": "[Java] Extract ReplicationParams for RecordingReplication to allow for more flexible configuration.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/46a7745756bebef3216ff31d3846d1ee74f5b42d"
+        },
+        {
+          "sha": "f04734684cc82a5d20234ec31122a3df7805bb08",
+          "author_date": "2024-07-01T04:05:31Z",
+          "message": "[Java] Use response channels for log replication during the election.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f04734684cc82a5d20234ec31122a3df7805bb08"
+        },
+        {
+          "sha": "61ae606337864e45726248ee894b5a2703bd638b",
+          "author_date": "2024-07-01T10:19:41Z",
+          "message": "[C] Handle a case when `getifaddrs` call fails.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/61ae606337864e45726248ee894b5a2703bd638b"
+        },
+        {
+          "sha": "0ee5009378adffa009a065339f7179b4e4ef192a",
+          "author_date": "2024-07-01T19:04:13Z",
+          "message": "[Java] Provide access to cluster client session from extension via an interface to restrict usage.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/0ee5009378adffa009a065339f7179b4e4ef192a"
+        },
+        {
+          "sha": "14f8ed5b4f210f206dd19e9c893acaca96c3714c",
+          "author_date": "2024-07-01T22:04:16Z",
+          "message": "[Java] Add source response channel to MultipleRecordingReplication.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/14f8ed5b4f210f206dd19e9c893acaca96c3714c"
+        },
+        {
+          "sha": "1e0c60c54de4f2fc688ca7b4ba97e5e9b66cbd26",
+          "author_date": "2024-07-01T22:15:13Z",
+          "message": "[Java] Simplify hash code.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1e0c60c54de4f2fc688ca7b4ba97e5e9b66cbd26"
+        },
+        {
+          "sha": "d4f24cd5fced13fe9db1f2126e82ed8809cc1e0a",
+          "author_date": "2024-07-01T22:59:22Z",
+          "message": "[Java] Fix intermittency in StreamStatTest.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d4f24cd5fced13fe9db1f2126e82ed8809cc1e0a"
+        },
+        {
+          "sha": "332f64f091585e7824baf420840e74a20eef1a01",
+          "author_date": "2024-07-02T04:23:44Z",
+          "message": "[Java] Use response channel in ClusterBackup when connecting to the cluster archive.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/332f64f091585e7824baf420840e74a20eef1a01"
+        },
+        {
+          "sha": "9f63c48e81355479f213779f5ac47b7608a42823",
+          "author_date": "2024-07-02T18:20:05Z",
+          "message": "[Java] add helper method to determine if context is concluded (#1617)",
+          "html_url": "https://github.com/aeron-io/aeron/commit/9f63c48e81355479f213779f5ac47b7608a42823"
+        },
+        {
+          "sha": "1e92653085ad696894dc988b184d24aec7298d7f",
+          "author_date": "2024-07-02T19:36:25Z",
+          "message": "validate standby snapshot (#1616)",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1e92653085ad696894dc988b184d24aec7298d7f"
+        },
+        {
+          "sha": "8cbac385eb82b8be0319612688be6f60ca8ae4b4",
+          "author_date": "2024-07-03T14:21:22Z",
+          "message": "[Java] Upgrade to JUnit 5.10.3.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8cbac385eb82b8be0319612688be6f60ca8ae4b4"
+        },
+        {
+          "sha": "858b699422c4c3a6a6f48b38313decabe74eb4a6",
+          "author_date": "2024-07-03T15:43:31Z",
+          "message": "[Java] Fix CodeQL warning.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/858b699422c4c3a6a6f48b38313decabe74eb4a6"
+        },
+        {
+          "sha": "18056c7844cd1b26af35ed8cf21128e996b53406",
+          "author_date": "2024-07-03T16:05:04Z",
+          "message": "[C] Dismiss CodeQL warnings and some style touchups.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/18056c7844cd1b26af35ed8cf21128e996b53406"
+        },
+        {
+          "sha": "bda99dbc26f72d8a7138c3676414f54c9db8e69e",
+          "author_date": "2024-07-03T16:46:59Z",
+          "message": "[C] Dismiss CodeQL warnings attempt 2.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/bda99dbc26f72d8a7138c3676414f54c9db8e69e"
+        },
+        {
+          "sha": "eb87fb7bd39bf9c85bb0d91c04d50138ab6d6f27",
+          "author_date": "2024-07-03T17:17:39Z",
+          "message": "[C] Dismiss CodeQL warnings attempt 2.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/eb87fb7bd39bf9c85bb0d91c04d50138ab6d6f27"
+        },
+        {
+          "sha": "c6b580dc57283a251b0870f02202616ed350bb77",
+          "author_date": "2024-07-04T15:17:16Z",
+          "message": "[Java] Add tests for HeaderWrite class + always combine values in the same order (from MSB to LSB).",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c6b580dc57283a251b0870f02202616ed350bb77"
+        },
+        {
+          "sha": "d52fb862672233a4cd01055c2e0ce23c062879c7",
+          "author_date": "2024-07-05T09:36:59Z",
+          "message": "[Java] Warnings cleanup.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d52fb862672233a4cd01055c2e0ce23c062879c7"
+        },
+        {
+          "sha": "e7b8468f41a44393216a3c7896005d283ffc9aa5",
+          "author_date": "2024-07-06T08:45:54Z",
+          "message": "Intercept replay and recording session state changes (#1615)\n\n* [Java] add code to agent to intercept replay and recording session state changes\r\n\r\n* [Java] update unit tests\r\n\r\n* [Java] add reason field to state change events\r\n\r\n* [Java] add session started messages\r\n\r\n* [Java] add unit tests for encoders and dissectors\r\n\r\n* [Java] swap state change and reason, update reasons in session code\r\n\r\n* [Java] remove SESSION_STARTED events, split out replaySessionId into replayId and sessionId\r\n\r\n* [Java] get sessionId by casting replaySessionId to int",
+          "html_url": "https://github.com/aeron-io/aeron/commit/e7b8468f41a44393216a3c7896005d283ffc9aa5"
+        },
+        {
+          "sha": "c190ae3a073d2ffbd6f8340c371425d856f89c8d",
+          "author_date": "2024-07-06T09:02:47Z",
+          "message": "[Java] Tidy up after PR #1615.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/c190ae3a073d2ffbd6f8340c371425d856f89c8d"
+        },
+        {
+          "sha": "f38f67a132c8330f8e92e38f80e2c6b14229efca",
+          "author_date": "2024-07-06T09:30:30Z",
+          "message": "[Java] Print election state when await times out.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/f38f67a132c8330f8e92e38f80e2c6b14229efca"
+        },
+        {
+          "sha": "47d57f3d05483fa915de57abf605b8f6bd479851",
+          "author_date": "2024-07-06T09:42:03Z",
+          "message": "[Java] Use `getMaxRecordedPosition` instead of `getRecordingPosition` to avoid two different calls while resolving position. Also call `getMaxRecordedPosition` only once in the `attemptLiveJoin`.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/47d57f3d05483fa915de57abf605b8f6bd479851"
+        },
+        {
+          "sha": "a13810797ca05587e6e57e8f06d42855d7fc9d0d",
+          "author_date": "2024-07-06T09:50:40Z",
+          "message": "[Java] Enable Archive and Driver logging for slow tests.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/a13810797ca05587e6e57e8f06d42855d7fc9d0d"
+        },
+        {
+          "sha": "414ec172838fb31266b3989ef56aece1856b6d1b",
+          "author_date": "2024-07-09T09:35:53Z",
+          "message": "[Java] Upgrade to ByteBuddy 1.14.18.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/414ec172838fb31266b3989ef56aece1856b6d1b"
+        },
+        {
+          "sha": "3c5912feec3f51578b8b1c457bd08235f29dcb25",
+          "author_date": "2024-07-09T14:06:08Z",
+          "message": "[Java] Add ability to close a cluster session from the consensus module extension.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3c5912feec3f51578b8b1c457bd08235f29dcb25"
+        },
+        {
+          "sha": "50cf6714bbf1a3d6062e1005c06cd306e91475ea",
+          "author_date": "2024-07-10T13:29:37Z",
+          "message": "[C/Java] add backoff to calls to getMaxRecordedPosition in ReplayMerge (#1618)\n\n* [Java] add attemptLiveJoinBackoff to ReplayMerge\r\n\r\n* [Java] add Ms suffix to fields\r\n\r\n* [Java] wrap getRecordingPosition in backoff logic\r\n\r\n* [Java] refactor to use getMaxRecordedPosition\r\n\r\n* [C] port ReplayMerge updates to C driver",
+          "html_url": "https://github.com/aeron-io/aeron/commit/50cf6714bbf1a3d6062e1005c06cd306e91475ea"
+        },
+        {
+          "sha": "d548968156d6aada215c1f867fbdf8b07e1a6b23",
+          "author_date": "2024-07-10T15:41:47Z",
+          "message": "[Java] Prevent replay token clashes.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d548968156d6aada215c1f867fbdf8b07e1a6b23"
+        },
+        {
+          "sha": "29d077458573048cebed252e9a7a4ccefa8675f3",
+          "author_date": "2024-07-10T15:43:17Z",
+          "message": "[Build] Do not fail the build if there is no .git directory (#1624)\n\nThis will be the case for people who download the repo as a Zip file.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/29d077458573048cebed252e9a7a4ccefa8675f3"
+        },
+        {
+          "sha": "7e64ceaad6e5e3e6230810829aa6642a74decbd5",
+          "author_date": "2024-07-10T15:45:15Z",
+          "message": "[Java] Use \"unknown\" as Git SHA when no repo found.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/7e64ceaad6e5e3e6230810829aa6642a74decbd5"
+        },
+        {
+          "sha": "2bc0ae6bc0c41bbf5e6f59e0b8a20bb9ba55e70d",
+          "author_date": "2024-07-11T11:28:20Z",
+          "message": "[Bash] Fix echo message when disabling Archive API.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2bc0ae6bc0c41bbf5e6f59e0b8a20bb9ba55e70d"
+        },
+        {
+          "sha": "1632ff457015af2c984e905fc4a9d2b2ba5fb11f",
+          "author_date": "2024-07-11T11:33:35Z",
+          "message": "Revert \"[Bash] Fix echo message when disabling Archive API.\"\n\nThis reverts commit 2bc0ae6bc0c41bbf5e6f59e0b8a20bb9ba55e70d.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1632ff457015af2c984e905fc4a9d2b2ba5fb11f"
+        },
+        {
+          "sha": "5656a67f5e9a800991c4dffeaab72a1c9b988a73",
+          "author_date": "2024-07-11T11:34:05Z",
+          "message": "[Bash] Fix echo message when disabling Archive API (just the build).",
+          "html_url": "https://github.com/aeron-io/aeron/commit/5656a67f5e9a800991c4dffeaab72a1c9b988a73"
+        },
+        {
+          "sha": "da023089cdb24f0866524005dd4bc42fdec113f7",
+          "author_date": "2024-07-11T16:02:51Z",
+          "message": "[C] Fix CnC version printed in AeronStat header.\n\nPreviously:\n\n2024-07-11 16:50:51.075+0100 - Aeron Stat (CnC vaeron version=1.45.0-SNAPSHOT commit=5656a67f5e), pid 154122, client liveness 10,000,000,000 ns\n\nNow:\n\n2024-07-11 16:53:42.516+0100 - Aeron Stat (CnC v0.2.0), pid 154122, client liveness 10,000,000,000 ns\n\nThis also makes it more consistent with Java AeronStat.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/da023089cdb24f0866524005dd4bc42fdec113f7"
+        },
+        {
+          "sha": "ee619f1a4ac4c0d2691b4c9e0d0d0ccb9437b28d",
+          "author_date": "2024-07-12T18:15:32Z",
+          "message": "[C] Add Cmake Config, Targets, Versions",
+          "html_url": "https://github.com/aeron-io/aeron/commit/ee619f1a4ac4c0d2691b4c9e0d0d0ccb9437b28d"
+        },
+        {
+          "sha": "1290dbe4fba4da48b741264e4567ed6a57498949",
+          "author_date": "2024-07-12T19:54:57Z",
+          "message": "[C] Add Cmake Config, Targets, Versions",
+          "html_url": "https://github.com/aeron-io/aeron/commit/1290dbe4fba4da48b741264e4567ed6a57498949"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.48.6",
@@ -3121,8 +5309,63 @@
     {
       "release": "1.50.1",
       "previous_release": "1.50.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "2b27807835a21b354d4618b2d54ce6087d2bab39",
+          "author_date": "2026-01-20T09:04:06Z",
+          "message": "Fixed aeron_strerror_r (#1930)\n\nif there is no problem, the strerror_r will return 0 and anything\nelse indicates failure.\n\nThe XI compliant strerror_r is used and documentation can be found here:\n\nhttps://linux.die.net/man/3/strerror_r\n\nWith the old code, if there is a failure and a positive error code\nis returned, it isn't detected and buffer isn't updated and\ncan be filled with random data.\n\nThis can lead to problems down the line where a \\0 terminated string\nis expected.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/2b27807835a21b354d4618b2d54ce6087d2bab39"
+        },
+        {
+          "sha": "737b2ea2d71b6cf402ad19b698228b5ce7cdda0b",
+          "author_date": "2026-01-20T09:07:03Z",
+          "message": "aeron_driver_agent_log_dissector ipv6 wrong address family (#1926)\n\nIn case of ipv6, the AF_INET6 address family should be passed\ninstead of AF_INET.\n\nWhen happens is that a 16 byte ipv6 address is passed, but the\nfirst 4 bytes will interpreted as an ipv4 address.\n\nSo you get a to string of the first 4 bytes of the ivp6 address\nwhich will look like an ipv4 addres but it is incorrect.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/737b2ea2d71b6cf402ad19b698228b5ce7cdda0b"
+        },
+        {
+          "sha": "8a8a94b1a4945f77a85d04fcb9fdd0994fb9c369",
+          "author_date": "2026-01-20T10:23:20Z",
+          "message": "aeron_alloc_aligned posix_memalign bug (#1927)\n\nthe return code handling of the posix_memalign call was incorrect. It only\nfailed if the rc < 0, but any non 0 return code should be treated as an\nerror.\n\nThe consequence of this bug is ub.\n\nhttps://man7.org/linux/man-pages/man3/posix_memalign.3.html",
+          "html_url": "https://github.com/aeron-io/aeron/commit/8a8a94b1a4945f77a85d04fcb9fdd0994fb9c369"
+        },
+        {
+          "sha": "cf60f7b3ef81e32a75c7958736989d3d7e6f7e07",
+          "author_date": "2026-01-21T13:39:00Z",
+          "message": "[Java] Fix Archive CATALOG_RESIZE debug logging.\n\nPreviously:\n\n[19422.375740810] ARCHIVE: CATALOG_RESIZE [16/16]: 64 entries (1391569403904 bytes) => 0 entries (751619276835 bytes)\n\nNow:\n\n[19939.344291504] ARCHIVE: CATALOG_RESIZE [16/16]: 64 bytes => 324 bytes",
+          "html_url": "https://github.com/aeron-io/aeron/commit/cf60f7b3ef81e32a75c7958736989d3d7e6f7e07"
+        },
+        {
+          "sha": "b2dc19a80a8f3eb3647f1586fdedf8de320ca1d5",
+          "author_date": "2026-01-21T15:51:19Z",
+          "message": "[Cluster] Add alias to follower catchup stream.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/b2dc19a80a8f3eb3647f1586fdedf8de320ca1d5"
+        },
+        {
+          "sha": "906437c0de1e9e3a64f7702c12cc45909be62a72",
+          "author_date": "2026-01-22T14:51:14Z",
+          "message": "[Java] Fix single-node cluster leader re-election. (#1932)\n\nSingle-node cluster leader can enter an election after the startup one only in strange error conditions.\n\nIf shouldEnterElectionWhenRecordingStopsUnexpectedlyOnLeader() tests unexpected stop of a log recording\nworks in a 3-node cluster, I think it should work in a single-node cluster too, so I added\nshouldEnterElectionWhenRecordingStopsUnexpectedlyOnLeaderOfSingleNodeCluster().\n\nb999d5d91d147f4722412650a67f61573e6246aa made it possible for a single-node cluster leader to lose quorum,\ni.e. timeout itself, this is what the newly added shouldEnterElectionWhenLosesQuorumUnexpectedlyOnLeaderOfSingleNodeCluster()\ntries to test. Additionally, closes a session in the same duty cycle to make things more interesting.\n\nPreviously, Election for a single-node cluster would skip the INIT state, now it doesn't.\nOn startup, the behavior is equivalent.\nOn subsequent elections, it allows the node to clean up and prepare for the new term.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/906437c0de1e9e3a64f7702c12cc45909be62a72"
+        },
+        {
+          "sha": "81f456bec7dced627f0efae7aa2831fd43238eca",
+          "author_date": "2026-01-30T11:53:05Z",
+          "message": "[Archive] Reject extend recording request if truncation is in progress. Register delete session so that overlapping delete attempts will be rejected.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/81f456bec7dced627f0efae7aa2831fd43238eca"
+        },
+        {
+          "sha": "3a7db6f2457b6d2fd7c82ea36e87fa9cfe6fb665",
+          "author_date": "2026-02-05T13:16:49Z",
+          "message": "[Java/C] Increase default cycle thresholds to 100ms.\n\nThe new 1ms default is a bit too short - with idle components using backoff idle strategy it keeps ticking up, and it's not uncommon for some operations, mostly on files, to take tens of millis.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/3a7db6f2457b6d2fd7c82ea36e87fa9cfe6fb665"
+        },
+        {
+          "sha": "d0fe6b353e9ac79a0fe6cc1b1d922c0d2d7ad107",
+          "author_date": "2026-02-05T16:34:39Z",
+          "message": "1.50.1 released.",
+          "html_url": "https://github.com/aeron-io/aeron/commit/d0fe6b353e9ac79a0fe6cc1b1d922c0d2d7ad107"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.50.2",

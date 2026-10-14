@@ -3143,8 +3143,15 @@
     {
       "release": "v0.0.1a26",
       "previous_release": "v0.0.1a25",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "fd796f0be8b4ec9764690715374f974ba05daee2",
+          "author_date": "2025-01-21T11:07:59Z",
+          "message": "chore(pyproject): bump version to 0.0.1a26\n\n- update version number to 0.0.1a25 for new release",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/fd796f0be8b4ec9764690715374f974ba05daee2"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.0.1a27",
@@ -3221,8 +3228,111 @@
     {
       "release": "v0.1.8",
       "previous_release": "v0.1.7",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "26427c33700c5f150eb98114c95be4464a962c80",
+          "author_date": "2025-02-14T03:16:05Z",
+          "message": "chore(ci): update PyPI publish workflow for BabelDOC\n\n- Rename project references from 'yadt' to 'BabelDOC' in publish workflows\n- Update PyPI and TestPyPI environment URLs",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/26427c33700c5f150eb98114c95be4464a962c80"
+        },
+        {
+          "sha": "740ea766c5d1e12027c1778a4c7b3401151b5b14",
+          "author_date": "2025-02-14T03:16:29Z",
+          "message": "Merge pull request #93 from funstory-ai/develop\n\nchore(ci): update PyPI publish workflow for BabelDOC",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/740ea766c5d1e12027c1778a4c7b3401151b5b14"
+        },
+        {
+          "sha": "a6311bad593742f3993584adb156ed7dacb14716",
+          "author_date": "2025-02-14T06:32:38Z",
+          "message": "update",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/a6311bad593742f3993584adb156ed7dacb14716"
+        },
+        {
+          "sha": "7ec350c2ffdb19c392b5c82b9d0b10306babfb29",
+          "author_date": "2025-02-14T06:37:43Z",
+          "message": "Merge pull request #94 from funstory-ai/develop\n\nupdate dependency",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/7ec350c2ffdb19c392b5c82b9d0b10306babfb29"
+        },
+        {
+          "sha": "c82af479dd86f23ecf36a30ee7af7ceab96a915e",
+          "author_date": "2025-02-14T09:47:44Z",
+          "message": "fix(rpc_doclayout): increase HTTP request timeout and enable redirect following\n\n- Extend timeout from 30 to 300 seconds\n- Add `follow_redirects=True` to handle potential redirects",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/c82af479dd86f23ecf36a30ee7af7ceab96a915e"
+        },
+        {
+          "sha": "8ee5ef39d7339223e12c28836ea6f58e08650928",
+          "author_date": "2025-02-14T09:48:17Z",
+          "message": "Merge pull request #95 from funstory-ai/develop\n\nfix(rpc_doclayout): increase HTTP request timeout and enable redirect following",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/8ee5ef39d7339223e12c28836ea6f58e08650928"
+        },
+        {
+          "sha": "9608849c8a948d44cd8c59b80453339cdb2fb355",
+          "author_date": "2025-02-14T09:52:20Z",
+          "message": "docs: Add contributor reward guidelines for BabelDOC project\n\n- Create CONTRIBUTOR_REWARD.md with detailed monthly contributor reward rules\n- Update README.md to reference new contributor reward documentation\n- Add example image for contributor reward application process",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/9608849c8a948d44cd8c59b80453339cdb2fb355"
+        },
+        {
+          "sha": "5438084abd5b809f998c493c187a52fa26405e9f",
+          "author_date": "2025-02-14T09:53:27Z",
+          "message": "docs: Update README.md with Immersive Translation sponsor link\n\n- Add hyperlink to Immersive Translation website\n- Update contributor reward section with correct link reference",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/5438084abd5b809f998c493c187a52fa26405e9f"
+        },
+        {
+          "sha": "595e36ba817bd118a54cdff1e8764b940c504460",
+          "author_date": "2025-02-14T09:58:42Z",
+          "message": "Merge pull request #96 from funstory-ai/develop\n\ndocs: Add contributor reward guidelines for BabelDOC project",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/595e36ba817bd118a54cdff1e8764b940c504460"
+        },
+        {
+          "sha": "62e96677c0a6a5ca35c154f29707412361d146ab",
+          "author_date": "2025-02-14T11:10:16Z",
+          "message": "docs(contributor_reward): Clarify monthly contribution guidelines\n\n- Add specific rule about monthly contribution code redemption\n- Specify email contact for special cases in contributor reward process",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/62e96677c0a6a5ca35c154f29707412361d146ab"
+        },
+        {
+          "sha": "06cf51b6688bcb23f71124f96da6f847655884a1",
+          "author_date": "2025-02-14T11:12:31Z",
+          "message": "docs(contributor_reward): Add verification rule for PR contributor rewards\n\n- Include rule about verifying PR contributor identity\n- Add note about potential random number verification process",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/06cf51b6688bcb23f71124f96da6f847655884a1"
+        },
+        {
+          "sha": "b0d51532628b32ae539343e5018b432dabcd9b29",
+          "author_date": "2025-02-15T16:17:33Z",
+          "message": "Merge pull request #97 from funstory-ai/update_contributor_reward\n\ndocs(contributor_reward): Clarify monthly contribution requirement",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/b0d51532628b32ae539343e5018b432dabcd9b29"
+        },
+        {
+          "sha": "dec9faf8f3aaa956d32b51d0e230f4ab967f496c",
+          "author_date": "2025-02-16T20:09:57Z",
+          "message": "Update cache folder setting",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/dec9faf8f3aaa956d32b51d0e230f4ab967f496c"
+        },
+        {
+          "sha": "50d3035beb41b1bc7a6b260d379e1b1f097e5985",
+          "author_date": "2025-02-16T20:22:02Z",
+          "message": "fix: python lint",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/50d3035beb41b1bc7a6b260d379e1b1f097e5985"
+        },
+        {
+          "sha": "cbf4d571932dcb9b413fb78c91a01ec0090ccd78",
+          "author_date": "2025-02-17T02:21:53Z",
+          "message": "Merge pull request #98 from xxnuo/main\n\nfeat(cache folder): Change cache path to ~/.cache/babeldoc",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/cbf4d571932dcb9b413fb78c91a01ec0090ccd78"
+        },
+        {
+          "sha": "8f15746a48fcf4e137f7be507eaa69a5aebca749",
+          "author_date": "2025-02-18T07:05:57Z",
+          "message": "chore: Bump version to 0.1.8\n\n- Update version in pyproject.toml\n- Update version in uv.lock\n- Update version in babeldoc/__init__.py\n- Update version in babeldoc/main.py",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/8f15746a48fcf4e137f7be507eaa69a5aebca749"
+        },
+        {
+          "sha": "dcacbdb351a92d098b7e3549c858a160de4f4823",
+          "author_date": "2025-02-18T07:10:03Z",
+          "message": "Merge pull request #101 from funstory-ai/develop\n\nchore: Bump version to 0.1.8",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/dcacbdb351a92d098b7e3549c858a160de4f4823"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.1.9",
@@ -3701,8 +3811,141 @@
     {
       "release": "v0.3.21",
       "previous_release": "v0.3.20",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "e8d8f67d096be14a6e6c8475d770664ca1713473",
+          "author_date": "2025-04-23T02:22:03Z",
+          "message": "fix(pyproject.toml): update memray dependency version to 1.17.1",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/e8d8f67d096be14a6e6c8475d770664ca1713473"
+        },
+        {
+          "sha": "ac70df4c5c71baca577031cd5d85fb8954a888be",
+          "author_date": "2025-04-23T02:22:24Z",
+          "message": "Merge pull request #276 from funstory-ai/dev\n\nfix(pyproject.toml): update memray dependency version to 1.17.1",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/ac70df4c5c71baca577031cd5d85fb8954a888be"
+        },
+        {
+          "sha": "3a44c353e975a097b11abc5568afe2714c34e8f2",
+          "author_date": "2025-04-23T02:30:40Z",
+          "message": "fix(italic_recognize_tool): fix table output for non-formula fonts",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/3a44c353e975a097b11abc5568afe2714c34e8f2"
+        },
+        {
+          "sha": "0bc99382fac56c117140fcac4f780452e6ff3caf",
+          "author_date": "2025-04-23T03:23:57Z",
+          "message": "fix(italic_assistance): Add check for non-null pdf_style",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/0bc99382fac56c117140fcac4f780452e6ff3caf"
+        },
+        {
+          "sha": "dfdd960e69a13632e879bbbffe8fa8deaf2da003",
+          "author_date": "2025-04-23T03:42:14Z",
+          "message": "fix(il_creater.py): add exception handling for MediaBox resolution",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/dfdd960e69a13632e879bbbffe8fa8deaf2da003"
+        },
+        {
+          "sha": "bc77f8b9deb8979e1e5db812fa24ec9480d7fd66",
+          "author_date": "2025-04-23T03:43:02Z",
+          "message": "Merge pull request #277 from funstory-ai/dev\n\nfix(il_creater.py): add exception handling for MediaBox resolution",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/bc77f8b9deb8979e1e5db812fa24ec9480d7fd66"
+        },
+        {
+          "sha": "14cf485b6af27c3f8af6b7f4e37941cdffc49f0d",
+          "author_date": "2025-04-23T03:43:59Z",
+          "message": "Merge branch 'recognize_italic' of https://github.com/pppppop65/BabelDOC into recognize_italic",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/14cf485b6af27c3f8af6b7f4e37941cdffc49f0d"
+        },
+        {
+          "sha": "6b032fa984ddc593c82964f283d6fc30f9774e3d",
+          "author_date": "2025-04-23T09:24:37Z",
+          "message": "fix(styles_and_formulas.py): Update font matching mode, add support for new fonts",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/6b032fa984ddc593c82964f283d6fc30f9774e3d"
+        },
+        {
+          "sha": "9ec02fcc280e6e62b0bc3df96e824cc9908d62ec",
+          "author_date": "2025-04-23T09:42:46Z",
+          "message": "fix(styles_and_formulas.py): Update font matching mode, add support for new fonts",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/9ec02fcc280e6e62b0bc3df96e824cc9908d62ec"
+        },
+        {
+          "sha": "6269dfc11602908ce0be6786b7621f7c9f369425",
+          "author_date": "2025-04-23T09:44:37Z",
+          "message": "fix(styles_and_formulas.py): Update font matching mode, add support for new fonts",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/6269dfc11602908ce0be6786b7621f7c9f369425"
+        },
+        {
+          "sha": "76b3c4f3e9f12d14ca587bf86ce51cb934a4293a",
+          "author_date": "2025-04-23T10:04:54Z",
+          "message": "Merge pull request #279 from pppppop65/main\n\nfix(styles_and_formulas.py): Update font matching mode, add support for new fonts",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/76b3c4f3e9f12d14ca587bf86ce51cb934a4293a"
+        },
+        {
+          "sha": "9e2815a1b1be3183318e2e9bf8964bcd2a9c6135",
+          "author_date": "2025-04-24T06:00:34Z",
+          "message": "fix(styles_and_formulas.py): correct encoding of broad_formula_font_pattern",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/9e2815a1b1be3183318e2e9bf8964bcd2a9c6135"
+        },
+        {
+          "sha": "bb9e3ccc04e3afd2d72e5cd922deaa7159922206",
+          "author_date": "2025-04-24T07:21:56Z",
+          "message": "feat: enhance font handling and bullet point recognition",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/bb9e3ccc04e3afd2d72e5cd922deaa7159922206"
+        },
+        {
+          "sha": "2722c8945893dbe342ec73af48a73b376f2518e3",
+          "author_date": "2025-04-24T07:23:25Z",
+          "message": "Merge pull request #281 from funstory-ai/dev\n\nfeat: enhance font handling and bullet point recognition",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/2722c8945893dbe342ec73af48a73b376f2518e3"
+        },
+        {
+          "sha": "b5546ede76753389d4644abdccb30573709339a0",
+          "author_date": "2025-04-24T08:07:03Z",
+          "message": "feat: implement font reproduction and cmap fixing in PDF processing but disabled dut to macOS Preview Broken",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/b5546ede76753389d4644abdccb30573709339a0"
+        },
+        {
+          "sha": "11af97de4878051966ee81e99b1fdbbd9ab4c098",
+          "author_date": "2025-04-24T08:08:42Z",
+          "message": "Merge pull request #282 from funstory-ai/dev\n\nfeat: implement font reproduction and cmap fixing in PDF processing but disabled dut to macOS Preview Broken",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/11af97de4878051966ee81e99b1fdbbd9ab4c098"
+        },
+        {
+          "sha": "77714edb7cde9080c341c218deba7b3e1e62c8b3",
+          "author_date": "2025-04-24T08:09:11Z",
+          "message": "fix(high_level.py): handle missing MediaBox in PDF pages",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/77714edb7cde9080c341c218deba7b3e1e62c8b3"
+        },
+        {
+          "sha": "630de86b453ee0089d353d878a75cbb44d5cd459",
+          "author_date": "2025-04-24T08:09:49Z",
+          "message": "Merge pull request #283 from funstory-ai/dev\n\nfix(high_level.py): handle missing MediaBox in PDF pages",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/630de86b453ee0089d353d878a75cbb44d5cd459"
+        },
+        {
+          "sha": "e443f49d2aa4d6f75af890f759cb083cbc2a3cd5",
+          "author_date": "2025-04-24T09:35:27Z",
+          "message": "fix(high_level.py): handle missing MediaBox in PDF pages",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/e443f49d2aa4d6f75af890f759cb083cbc2a3cd5"
+        },
+        {
+          "sha": "1470cc67be52c6416eada742bb1f130a8859ea85",
+          "author_date": "2025-04-24T09:35:27Z",
+          "message": "chore: bump version to 0.3.21",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/1470cc67be52c6416eada742bb1f130a8859ea85"
+        },
+        {
+          "sha": "04f32a468b1ccf55d124528d76a41cc739e0a978",
+          "author_date": "2025-04-24T09:36:00Z",
+          "message": "Merge remote-tracking branch 'upstream/dev' into dev",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/04f32a468b1ccf55d124528d76a41cc739e0a978"
+        },
+        {
+          "sha": "58c7fedde5fc3e9e492805a96e4349ae21cc7e1c",
+          "author_date": "2025-04-24T09:36:38Z",
+          "message": "Merge pull request #285 from funstory-ai/dev\n\nchore: bump version to 0.3.21",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/58c7fedde5fc3e9e492805a96e4349ae21cc7e1c"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.3.22",
@@ -3953,8 +4196,69 @@
     {
       "release": "v0.3.64",
       "previous_release": "v0.3.63",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "aa772f386764144595a84d6c0c29211d1b404dfe",
+          "author_date": "2025-06-04T11:52:16Z",
+          "message": "docs(CONTRIBUTOR_REWARD): update application process and attachment requirements",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/aa772f386764144595a84d6c0c29211d1b404dfe"
+        },
+        {
+          "sha": "1c6cdcbc11407f5baf40cfa814d8efbbeb19111e",
+          "author_date": "2025-06-04T16:25:05Z",
+          "message": "docs(README): update links to PDFMathTranslate 2.0 and related resources",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/1c6cdcbc11407f5baf40cfa814d8efbbeb19111e"
+        },
+        {
+          "sha": "0b3b7a5a4c4146802ea50806f9860cf8c2d0cedd",
+          "author_date": "2025-06-05T10:14:14Z",
+          "message": "Merge pull request #393 from funstory-ai/update_contributor_reward\n\ndocs(CONTRIBUTOR_REWARD): update application process and attachment requirements",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/0b3b7a5a4c4146802ea50806f9860cf8c2d0cedd"
+        },
+        {
+          "sha": "c342c1a529ae832d9e0476ba427a10dd4a5681d8",
+          "author_date": "2025-06-08T12:05:58Z",
+          "message": "fix: replace deprecated np.fromstring with np.frombuffer for image processing",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/c342c1a529ae832d9e0476ba427a10dd4a5681d8"
+        },
+        {
+          "sha": "fe00d12e8d42a045839804794e1549fdaddf5f72",
+          "author_date": "2025-06-08T12:07:22Z",
+          "message": "Merge pull request #404 from funstory-ai/dev\n\nfix: replace deprecated np.fromstring with np.frombuffer for image processing",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/fe00d12e8d42a045839804794e1549fdaddf5f72"
+        },
+        {
+          "sha": "508c9f599b534ad62a68dcda610c22b18effc54b",
+          "author_date": "2025-06-08T12:19:04Z",
+          "message": "fix: improve ToUnicode mapping for better compatibility",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/508c9f599b534ad62a68dcda610c22b18effc54b"
+        },
+        {
+          "sha": "5180f952ee8021c142dfe8a1b223952ecfb47029",
+          "author_date": "2025-06-08T12:19:32Z",
+          "message": "Merge pull request #405 from funstory-ai/dev\n\nfix: improve ToUnicode mapping for better compatibility",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/5180f952ee8021c142dfe8a1b223952ecfb47029"
+        },
+        {
+          "sha": "75399a9373ee528e14b242e552a3e840c3e2d1f6",
+          "author_date": "2025-06-08T12:19:37Z",
+          "message": "fix: update translation output language references in prompts",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/75399a9373ee528e14b242e552a3e840c3e2d1f6"
+        },
+        {
+          "sha": "589667ce7bf4911a2bef71186a4d51cf7235c7b0",
+          "author_date": "2025-06-08T12:22:16Z",
+          "message": "chore: bump version to 0.3.64",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/589667ce7bf4911a2bef71186a4d51cf7235c7b0"
+        },
+        {
+          "sha": "170a57ac7c9c5e337d6c76c53d8f955fe6d835b1",
+          "author_date": "2025-06-08T12:22:22Z",
+          "message": "Merge pull request #406 from funstory-ai/dev\n\nfix: update translation output language references in prompts",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/170a57ac7c9c5e337d6c76c53d8f955fe6d835b1"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.3.65",
@@ -4235,8 +4539,39 @@
     {
       "release": "v0.5.16",
       "previous_release": "v0.5.15",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "01d73dc19bdc7b42bf8d5f6df8aed4ba26312783",
+          "author_date": "2025-10-16T04:36:16Z",
+          "message": "update",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/01d73dc19bdc7b42bf8d5f6df8aed4ba26312783"
+        },
+        {
+          "sha": "ca55c28a3831eda6c75554fe3488840c1f37a86d",
+          "author_date": "2025-10-16T09:07:41Z",
+          "message": "chore: enhance memory monitoring functionality\n\n- Bumped version of babeldoc to 0.5.15 in the project files.\n- Improved memory monitoring by implementing throttling for PSS checks and ensuring compatibility with psutil.\n- Adjusted memory usage calculations to enhance performance and accuracy.",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/ca55c28a3831eda6c75554fe3488840c1f37a86d"
+        },
+        {
+          "sha": "940d87b1da34d866e8d7b0d5349cc205c55f2556",
+          "author_date": "2025-10-16T09:14:50Z",
+          "message": "Merge pull request #514 from funstory-ai/dev\n\nupdate",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/940d87b1da34d866e8d7b0d5349cc205c55f2556"
+        },
+        {
+          "sha": "34e5ddb353e3225df04d7adae226bcd6d6c36247",
+          "author_date": "2025-10-16T09:21:13Z",
+          "message": "chore: bump version to 0.5.16 across project files\n\n- Updated version number in pyproject.toml, __init__.py, const.py, and main.py to reflect the new release.",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/34e5ddb353e3225df04d7adae226bcd6d6c36247"
+        },
+        {
+          "sha": "d6bf3ced82bf04933ed5a73b9089a28f1b42f850",
+          "author_date": "2025-10-16T09:21:25Z",
+          "message": "Merge branch 'dev'",
+          "html_url": "https://github.com/funstory-ai/BabelDOC/commit/d6bf3ced82bf04933ed5a73b9089a28f1b42f850"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.5.17",

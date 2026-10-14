@@ -5880,8 +5880,45 @@
     {
       "release": "3.0.1",
       "previous_release": "3.0.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "922eee0eeb541b5c56c8071b0ae15454d6f6069b",
+          "author_date": "2017-09-26T21:14:01Z",
+          "message": "Add link to release notes in readme",
+          "html_url": "https://github.com/release-it/release-it/commit/922eee0eeb541b5c56c8071b0ae15454d6f6069b"
+        },
+        {
+          "sha": "310782b28eeec1c8eedad5992d122860d9e6cd66",
+          "author_date": "2017-09-28T20:31:14Z",
+          "message": "Always resolve run() with a string",
+          "html_url": "https://github.com/release-it/release-it/commit/310782b28eeec1c8eedad5992d122860d9e6cd66"
+        },
+        {
+          "sha": "266c3735175b59c13402c6a71cef8e9371b0e42e",
+          "author_date": "2017-09-28T20:32:48Z",
+          "message": "Run template commands verbosely",
+          "html_url": "https://github.com/release-it/release-it/commit/266c3735175b59c13402c6a71cef8e9371b0e42e"
+        },
+        {
+          "sha": "fa592d273479995bdefefd478aa81873a8fb7c54",
+          "author_date": "2017-09-28T20:34:20Z",
+          "message": "Add latestVersion and version to config, exposing them in template commands",
+          "html_url": "https://github.com/release-it/release-it/commit/fa592d273479995bdefefd478aa81873a8fb7c54"
+        },
+        {
+          "sha": "63baa47dd9771f854842453ca53962c6e0d5a8e6",
+          "author_date": "2017-09-28T20:35:05Z",
+          "message": "Clarify some specs",
+          "html_url": "https://github.com/release-it/release-it/commit/63baa47dd9771f854842453ca53962c6e0d5a8e6"
+        },
+        {
+          "sha": "fcf1fdca657fbd1431e8824b5e8bbb9c8e1a4764",
+          "author_date": "2017-09-28T21:00:09Z",
+          "message": "Release 3.0.1",
+          "html_url": "https://github.com/release-it/release-it/commit/fcf1fdca657fbd1431e8824b5e8bbb9c8e1a4764"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "3.0.2",
@@ -5910,8 +5947,21 @@
     {
       "release": "3.1.1",
       "previous_release": "3.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "faa88bcffafc7f30e964cf3dbfd11f0c40ad0aff",
+          "author_date": "2017-10-13T09:10:30Z",
+          "message": "Only ask init question in interactive mode (fixes #123)",
+          "html_url": "https://github.com/release-it/release-it/commit/faa88bcffafc7f30e964cf3dbfd11f0c40ad0aff"
+        },
+        {
+          "sha": "1677835c442a73069f1d9419b4a825845937fdd5",
+          "author_date": "2017-10-13T09:11:07Z",
+          "message": "Release 3.1.1",
+          "html_url": "https://github.com/release-it/release-it/commit/1677835c442a73069f1d9419b4a825845937fdd5"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "3.1.2",
@@ -6162,8 +6212,33 @@
     {
       "release": "7.4.5",
       "previous_release": "7.4.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "67457ce5d58017bbbca2c65f73f8244b0b228157",
+          "author_date": "2018-05-14T20:50:14Z",
+          "message": "Travis: run tests in Node v10 (remove v9)",
+          "html_url": "https://github.com/release-it/release-it/commit/67457ce5d58017bbbca2c65f73f8244b0b228157"
+        },
+        {
+          "sha": "949a8ae1bc3391ebcdc26fc353aa69256bd1e46f",
+          "author_date": "2018-05-16T19:04:29Z",
+          "message": "Reject with stderr/out string, not custom error for shell commands",
+          "html_url": "https://github.com/release-it/release-it/commit/949a8ae1bc3391ebcdc26fc353aa69256bd1e46f"
+        },
+        {
+          "sha": "487615e1c45b70c660509ab14d6c67d7ea20a201",
+          "author_date": "2018-05-16T19:05:53Z",
+          "message": "Warn for \"nothing to commit\", throw for anything else after `git commit` error (relates to #301)",
+          "html_url": "https://github.com/release-it/release-it/commit/487615e1c45b70c660509ab14d6c67d7ea20a201"
+        },
+        {
+          "sha": "f451b9999a753030664e8cffbc97d7b8e3df7d87",
+          "author_date": "2018-05-16T19:07:20Z",
+          "message": "Release 7.4.5",
+          "html_url": "https://github.com/release-it/release-it/commit/f451b9999a753030664e8cffbc97d7b8e3df7d87"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "7.4.6",
@@ -6210,8 +6285,27 @@
     {
       "release": "7.6.1",
       "previous_release": "7.6.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "8861359d8e7d2600375ff383f0681b394bb11faf",
+          "author_date": "2018-09-03T20:30:25Z",
+          "message": "Add `proxy` option to github client",
+          "html_url": "https://github.com/release-it/release-it/commit/8861359d8e7d2600375ff383f0681b394bb11faf"
+        },
+        {
+          "sha": "72bdf963b6a469b0d8421c2d54abcfd561ab3c41",
+          "author_date": "2018-09-03T20:32:06Z",
+          "message": "Update dependencies",
+          "html_url": "https://github.com/release-it/release-it/commit/72bdf963b6a469b0d8421c2d54abcfd561ab3c41"
+        },
+        {
+          "sha": "6f091f41b2455379065bc7a53250fcb4eb8a10c6",
+          "author_date": "2018-09-03T20:34:20Z",
+          "message": "Release 7.6.1",
+          "html_url": "https://github.com/release-it/release-it/commit/6f091f41b2455379065bc7a53250fcb4eb8a10c6"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "7.6.2",
@@ -6390,8 +6484,33 @@
     {
       "release": "9.5.1",
       "previous_release": "9.5.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d78d843ac41a4dd8c04d9af0017683ceb35d5bfe",
+          "author_date": "2019-01-05T12:19:14Z",
+          "message": "Memoize `Changelog::create`",
+          "html_url": "https://github.com/release-it/release-it/commit/d78d843ac41a4dd8c04d9af0017683ceb35d5bfe"
+        },
+        {
+          "sha": "93bc898ce9aca86fa91fe337658f33315e7aadda",
+          "author_date": "2019-01-05T12:20:07Z",
+          "message": "Move changelog/set previews to helper",
+          "html_url": "https://github.com/release-it/release-it/commit/93bc898ce9aca86fa91fe337658f33315e7aadda"
+        },
+        {
+          "sha": "0b69bd3d154d5f445a82c7a60c8da0207365c8b2",
+          "author_date": "2019-01-05T12:21:38Z",
+          "message": "Preview release notes before related prompt",
+          "html_url": "https://github.com/release-it/release-it/commit/0b69bd3d154d5f445a82c7a60c8da0207365c8b2"
+        },
+        {
+          "sha": "de0b2e8f82b4f6d2e859bc9746edbc8c5ddc9f35",
+          "author_date": "2019-01-05T12:29:32Z",
+          "message": "Release 9.5.1",
+          "html_url": "https://github.com/release-it/release-it/commit/de0b2e8f82b4f6d2e859bc9746edbc8c5ddc9f35"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "9.6.0",
