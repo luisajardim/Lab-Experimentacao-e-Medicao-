@@ -322,13 +322,24 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
     log.info("Total de candidatos: %d", len(candidates))
     log.info("Iniciando processamento paralelo com %d workers e %d token(s)", max_workers, len(token_pool))
 
+    reports_dir = base / Path(paths_cfg.get("reports_dir", "reports"))
+    reports_dir.mkdir(parents=True, exist_ok=True)
+
     # Contadores thread-safe
     processed = 0
     skipped = 0
+    funnel_stats = {
+        "candidates": len(candidates),
+        "few_releases": 0,
+        "no_actions": 0,
+        "few_runs": 0,
+        "error": 0,
+        "ok": 0,
+    }
     counters_lock = threading.Lock()
 
-    def process_repo(candidate) -> tuple[str, str, int, int]:
-        """Processa um único repositório. Retorna (owner, repo, processed_delta, skipped_delta)."""
+    def process_repo(candidate) -> tuple[str, str, int, int, str]:
+        """Processa um único repositório. Retorna (owner, repo, processed_delta, skipped_delta, reason)."""
         owner, repo = candidate.full_name.split("/", 1)
         log.info("Processando %s/%s...", owner, repo)
 
@@ -354,7 +365,7 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                     "Repositório %s/%s ignorado: apenas %d releases na janela (mínimo %d)",
                     owner, repo, len(releases_in_window), min_releases
                 )
-                return owner, repo, 0, 1
+                return owner, repo, 0, 1, "few_releases"
 
             # 3. Coletar tags
             tags = collect_tags(
@@ -381,12 +392,16 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
             # Contar total de runs válidos
             total_runs = sum(len(runs) for runs in runs_by_month.values())
 
+            if total_runs == 0:
+                log.info("Repositório %s/%s ignorado: sem runs válidos na janela", owner, repo)
+                return owner, repo, 0, 1, "no_actions"
+
             if total_runs < min_workflow_runs:
                 log.info(
                     "Repositório %s/%s ignorado: apenas %d runs válidos (mínimo %d)",
                     owner, repo, total_runs, min_workflow_runs
                 )
-                return owner, repo, 0, 1
+                return owner, repo, 0, 1, "few_runs"
 
             # 5. Coletar commits entre releases consecutivas (só se passou no filtro)
             commits_between = collect_commits_between(
@@ -425,11 +440,11 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
             }
 
             _save_repo_data(gold_dir, owner, repo, repo_data)
-            return owner, repo, 1, 0
+            return owner, repo, 1, 0, "ok"
 
         except Exception as exc:
             log.error("Erro ao processar %s/%s: %s", owner, repo, exc)
-            return owner, repo, 0, 1
+            return owner, repo, 0, 1, "error"
         finally:
             repo_client.close()
             if local_store:
@@ -440,10 +455,11 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
         future_to_candidate = {pool.submit(process_repo, c): c for c in candidates}
 
         for future in as_completed(future_to_candidate):
-            owner, repo, p_delta, s_delta = future.result()
+            owner, repo, p_delta, s_delta, reason = future.result()
             with counters_lock:
                 processed += p_delta
                 skipped += s_delta
+                funnel_stats[reason] += 1
 
             # Log de progresso periódico
             with counters_lock:
@@ -453,8 +469,46 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                              total_done, len(candidates), processed, skipped)
 
     log.info("Coleta concluída: %d repositórios processados, %d ignorados", processed, skipped)
+    funnel_md = reports_dir / "funnel.md"
+    write_funnel_report(
+        funnel_md,
+        total_candidates=funnel_stats["candidates"],
+        few_releases=funnel_stats["few_releases"],
+        no_actions=funnel_stats["no_actions"],
+        few_runs=funnel_stats["few_runs"],
+        final_sample=funnel_stats["ok"],
+    )
+    log.info("Funil de seleção salvo em %s", funnel_md)
     store.close()
     return 0
+
+
+def write_funnel_report(
+    funnel_path: Path,
+    total_candidates: int,
+    few_releases: int,
+    no_actions: int,
+    few_runs: int,
+    final_sample: int,
+) -> None:
+    """Gera tabela do funil de seleção de repositórios em Markdown com contagens reais."""
+    funnel_path.parent.mkdir(parents=True, exist_ok=True)
+    after_releases = max(0, total_candidates - few_releases)
+    after_actions = max(0, after_releases - no_actions)
+    after_runs = max(0, after_actions - few_runs)
+
+    content = (
+        "# Funil de Seleção de Repositórios\n\n"
+        "Este documento registra as etapas do processo de seleção da amostra de repositórios para o cálculo das métricas DORA.\n\n"
+        "| Etapa | Filtro Aplicado | Motivo de Descarte | Sobras (Contagem Real) |\n"
+        "|---|---|---|---|\n"
+        f"| **1. Candidatos Iniciais** | Repositórios open-source extraídos via Search API (agrupados por estrelas) | - | {total_candidates} |\n"
+        f"| **2. ≥ 5 Releases** | Histórico mínimo de entregas (`config.toml: min_releases`) | Repositório possui menos de 5 releases publicadas na janela de observação ({few_releases} descartados). | {after_releases} |\n"
+        f"| **3. Com Actions** | Filtragem de repositórios que utilizam o GitHub Actions (`/actions/runs`) | Repositório não possui workflow runs válidos na janela de observação ({no_actions} descartados). | {after_actions} |\n"
+        f"| **4. ≥ 50 Runs** | Histórico mínimo de execuções de CI/CD (`config.toml: min_workflow_runs`) | Repositório possui menos de 50 execuções válidas de workflow disparadas por push no default branch ({few_runs} descartados). | {after_runs} |\n"
+        f"| **5. Amostra Final** | Conjunto final validado para o cálculo das métricas DORA | (Nenhum, compõem o dataset final) | {final_sample} |\n"
+    )
+    funnel_path.write_text(content, encoding="utf-8")
 
 
 def _in_window(timestamp: str | None, start: str, end: str) -> bool:

@@ -12,6 +12,7 @@ from pipeline.cli import (
     _in_window,
     _paired,
     _run_metrics,
+    write_funnel_report,
 )
 from metrics import DORAVariant, classify_dora
 
@@ -118,3 +119,24 @@ def test_metrics_stage_discards_repo_with_releases_outside_window(tmp_path):
 
     with open(tmp_path / "datasets" / "dora_c1.csv", newline="", encoding="utf-8") as handle:
         assert list(csv.DictReader(handle)) == []
+
+
+def test_write_funnel_report_generates_markdown_table(tmp_path):
+    report_file = tmp_path / "reports" / "funnel.md"
+    write_funnel_report(
+        report_file,
+        total_candidates=1000,
+        few_releases=200,
+        no_actions=300,
+        few_runs=100,
+        final_sample=400,
+    )
+
+    assert report_file.exists()
+    content = report_file.read_text(encoding="utf-8")
+    assert "1000" in content
+    assert "800" in content
+    assert "500" in content
+    assert "400" in content
+    assert "| **1. Candidatos Iniciais**" in content
+    assert "| **5. Amostra Final**" in content
