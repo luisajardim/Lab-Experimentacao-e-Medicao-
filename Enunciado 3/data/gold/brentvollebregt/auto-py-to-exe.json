@@ -1,0 +1,2281 @@
+{
+  "repository": {
+    "full_name": "brentvollebregt/auto-py-to-exe",
+    "stars": 4993,
+    "language": "JavaScript",
+    "default_branch": "master",
+    "created_at": "2018-02-09T23:32:35Z"
+  },
+  "releases": [
+    {
+      "id": 10143746,
+      "tag_name": "v1.0",
+      "name": "First Stable Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-03-19T00:40:08Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v1.0"
+    },
+    {
+      "id": 10526572,
+      "tag_name": "v1.1",
+      "name": "New Method to Add Additional Files",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-04-12T23:41:43Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v1.1"
+    },
+    {
+      "id": 11194151,
+      "tag_name": "v1.2",
+      "name": " Use Ephemeral Ports and Call From Outside Project",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-05-27T12:06:43Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v1.2"
+    },
+    {
+      "id": 11847818,
+      "tag_name": "v1.3",
+      "name": "Support for Python 2 and Tested on Linux",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-07-10T00:34:32Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v1.3"
+    },
+    {
+      "id": 11978966,
+      "tag_name": "v2.0",
+      "name": "Call PyInstaller Internally",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-07-18T04:29:17Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.0"
+    },
+    {
+      "id": 12152643,
+      "tag_name": "v2.1",
+      "name": "Support for Systems Without Chrome",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-07-29T10:31:10Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.1"
+    },
+    {
+      "id": 12285432,
+      "tag_name": "v2.2",
+      "name": "Don't Check Arguments When Imported",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-08-07T09:36:38Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.2"
+    },
+    {
+      "id": 12490225,
+      "tag_name": "v2.3",
+      "name": "Handle errors more gracefully",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-08-20T21:51:44Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.3"
+    },
+    {
+      "id": 12899600,
+      "tag_name": "v2.4.1",
+      "name": "Added Support for Python 3.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-09-14T10:21:01Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.4.1"
+    },
+    {
+      "id": 13316041,
+      "tag_name": "v2.4.2",
+      "name": "General UI Improvements",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-10-09T00:13:59Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.4.2"
+    },
+    {
+      "id": 14933843,
+      "tag_name": "v2.5.0",
+      "name": "Build in a Temporary Directory",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-01-11T19:19:45Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.5.0"
+    },
+    {
+      "id": 14933848,
+      "tag_name": "v2.5.1",
+      "name": "Provide Help at the End of a Build",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-01-11T19:20:00Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.5.1"
+    },
+    {
+      "id": 17407432,
+      "tag_name": "v2.5.2",
+      "name": "Fixed Eel's Breaking Changes",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-05-16T20:34:25Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.5.2"
+    },
+    {
+      "id": 17413188,
+      "tag_name": "v2.5.3",
+      "name": "Add search buttons for argument files/directories",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-05-17T04:26:48Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.5.3"
+    },
+    {
+      "id": 17671297,
+      "tag_name": "v2.6.0",
+      "name": "UI Configurations",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-05-30T02:32:00Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.6.0"
+    },
+    {
+      "id": 17721338,
+      "tag_name": "v2.6.1",
+      "name": "File selection no longer freezes on MacOS",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-06-01T10:55:41Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.6.1"
+    },
+    {
+      "id": 18133423,
+      "tag_name": "v2.6.2",
+      "name": "Fixed open output folder button not working in Python 2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-06-21T01:42:38Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.6.2"
+    },
+    {
+      "id": 18133471,
+      "tag_name": "v2.6.3",
+      "name": "Allow PyInstaller dev branches to be used",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-06-21T01:47:39Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.6.3"
+    },
+    {
+      "id": 18494443,
+      "tag_name": "v2.6.4",
+      "name": "Fixed Extra Command Input",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-07-09T11:43:16Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.6.4"
+    },
+    {
+      "id": 18850930,
+      "tag_name": "v2.6.5",
+      "name": "Don't Use Chrome if Eel Detects a Path That Does Not Exist",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-07-25T03:49:41Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.6.5"
+    },
+    {
+      "id": 26260243,
+      "tag_name": "v2.6.6",
+      "name": "v2.6.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-07T08:02:22Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.6.6"
+    },
+    {
+      "id": 26261241,
+      "tag_name": "v2.7.0",
+      "name": "v2.7.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-07T08:32:13Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.0"
+    },
+    {
+      "id": 26262118,
+      "tag_name": "v2.7.1",
+      "name": "v2.7.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-07T08:55:29Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.1"
+    },
+    {
+      "id": 26414831,
+      "tag_name": "v2.7.2",
+      "name": "v2.7.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-12T09:12:29Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.2"
+    },
+    {
+      "id": 26499121,
+      "tag_name": "v2.7.3",
+      "name": "v2.7.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-14T07:54:20Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.3"
+    },
+    {
+      "id": 27195195,
+      "tag_name": "v2.7.4",
+      "name": "v2.7.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-06-03T20:15:50Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.4"
+    },
+    {
+      "id": 27490668,
+      "tag_name": "v2.7.5",
+      "name": "v2.7.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-06-12T11:17:13Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.5"
+    },
+    {
+      "id": 29245955,
+      "tag_name": "v2.7.6",
+      "name": "v2.7.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-08-03T20:39:18Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.6"
+    },
+    {
+      "id": 29767745,
+      "tag_name": "v2.7.8",
+      "name": "v2.7.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-08-17T12:01:16Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.8"
+    },
+    {
+      "id": 34488824,
+      "tag_name": "v2.7.9",
+      "name": "v2.7.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-11-27T04:27:22Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.9"
+    },
+    {
+      "id": 34490017,
+      "tag_name": "v2.7.10",
+      "name": "v2.7.10",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-11-27T05:51:36Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.10"
+    },
+    {
+      "id": 34805648,
+      "tag_name": "v2.7.11",
+      "name": "v2.7.11",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-12-04T04:51:43Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.7.11"
+    },
+    {
+      "id": 37730770,
+      "tag_name": "v2.8.0",
+      "name": "v2.8.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-02-08T10:05:39Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.8.0"
+    },
+    {
+      "id": 42468431,
+      "tag_name": "v2.9.0",
+      "name": "v2.9.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-05-05T11:09:18Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.9.0"
+    },
+    {
+      "id": 47083258,
+      "tag_name": "v2.10.0",
+      "name": "v2.10.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-07-31T05:12:27Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.10.0"
+    },
+    {
+      "id": 50789979,
+      "tag_name": "v2.10.1",
+      "name": "v2.10.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-10-05T06:18:21Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.10.1"
+    },
+    {
+      "id": 52661932,
+      "tag_name": "v2.11.0",
+      "name": "v2.11.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-11-04T07:49:49Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.11.0"
+    },
+    {
+      "id": 54652376,
+      "tag_name": "v2.12.0",
+      "name": "v2.12.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-12-05T09:45:49Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.12.0"
+    },
+    {
+      "id": 54702080,
+      "tag_name": "v2.13.0",
+      "name": "v2.13.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-12-06T11:51:54Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.13.0"
+    },
+    {
+      "id": 56658526,
+      "tag_name": "v2.14.0",
+      "name": "v2.14.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-08T10:20:31Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.14.0"
+    },
+    {
+      "id": 56768043,
+      "tag_name": "v2.14.1",
+      "name": "v2.14.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-10T19:37:04Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.14.1"
+    },
+    {
+      "id": 56976958,
+      "tag_name": "v2.15.0",
+      "name": "v2.15.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-13T04:01:37Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.15.0"
+    },
+    {
+      "id": 58867295,
+      "tag_name": "v2.16.0",
+      "name": "v2.16.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-02-07T08:45:46Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.16.0"
+    },
+    {
+      "id": 59312529,
+      "tag_name": "v2.17.0",
+      "name": "v2.17.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-02-11T08:35:07Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.17.0"
+    },
+    {
+      "id": 60520262,
+      "tag_name": "v2.18.0",
+      "name": "v2.18.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-02-25T22:59:14Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.18.0"
+    },
+    {
+      "id": 63666807,
+      "tag_name": "v2.18.1",
+      "name": "v2.18.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-05T19:04:41Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.18.1"
+    },
+    {
+      "id": 63836620,
+      "tag_name": "v2.18.2",
+      "name": "v2.18.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-07T08:56:19Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.18.2"
+    },
+    {
+      "id": 65158680,
+      "tag_name": "v2.19.0",
+      "name": "v2.19.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-24T02:58:11Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.19.0"
+    },
+    {
+      "id": 67523300,
+      "tag_name": "v2.20.0",
+      "name": "v2.20.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-23T09:34:32Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.20.0"
+    },
+    {
+      "id": 67890833,
+      "tag_name": "v2.20.1",
+      "name": "v2.20.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-26T06:07:54Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.20.1"
+    },
+    {
+      "id": 71991558,
+      "tag_name": "v2.21.0",
+      "name": "v2.21.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-14T11:52:51Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.21.0"
+    },
+    {
+      "id": 73528483,
+      "tag_name": "v2.21.1",
+      "name": "v2.21.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-03T11:28:05Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.21.1"
+    },
+    {
+      "id": 73961210,
+      "tag_name": "v2.22.0",
+      "name": "v2.22.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-09T07:52:51Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.22.0"
+    },
+    {
+      "id": 76462082,
+      "tag_name": "v2.23.0",
+      "name": "v2.23.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-07T08:42:54Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.23.0"
+    },
+    {
+      "id": 78044750,
+      "tag_name": "v2.23.1",
+      "name": "v2.23.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-24T11:10:30Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.23.1"
+    },
+    {
+      "id": 82905682,
+      "tag_name": "v2.24.0",
+      "name": "v2.24.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-13T11:19:18Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.24.0"
+    },
+    {
+      "id": 83350157,
+      "tag_name": "v2.24.1",
+      "name": "v2.24.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-17T06:22:41Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.24.1"
+    },
+    {
+      "id": 84217454,
+      "tag_name": "v2.25.0",
+      "name": "v2.25.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-25T21:28:01Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.25.0"
+    },
+    {
+      "id": 84427445,
+      "tag_name": "v2.26.0",
+      "name": "v2.26.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-29T09:55:31Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.26.0"
+    },
+    {
+      "id": 86897029,
+      "tag_name": "v2.26.1",
+      "name": "v2.26.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-12-22T07:30:20Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.26.1"
+    },
+    {
+      "id": 89534294,
+      "tag_name": "v2.27.0",
+      "name": "v2.27.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-19T11:57:44Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.27.0"
+    },
+    {
+      "id": 90618028,
+      "tag_name": "v2.28.0",
+      "name": "v2.28.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-29T23:15:34Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.28.0"
+    },
+    {
+      "id": 91382052,
+      "tag_name": "v2.29.0",
+      "name": "v2.29.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-05T12:48:28Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.29.0"
+    },
+    {
+      "id": 92133888,
+      "tag_name": "v2.29.1",
+      "name": "v2.29.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-12T06:25:45Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.29.1"
+    },
+    {
+      "id": 92134316,
+      "tag_name": "v2.29.2",
+      "name": "v2.29.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-12T06:54:27Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.29.2"
+    },
+    {
+      "id": 92502924,
+      "tag_name": "v2.30.0",
+      "name": "v2.30.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-15T04:39:47Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.30.0"
+    },
+    {
+      "id": 93701069,
+      "tag_name": "v2.31.0",
+      "name": "v2.31.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-26T05:03:45Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.31.0"
+    },
+    {
+      "id": 93774030,
+      "tag_name": "v2.31.1",
+      "name": "v2.31.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-27T11:35:06Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.31.1"
+    },
+    {
+      "id": 94525396,
+      "tag_name": "v2.32.0",
+      "name": "v2.32.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-04T20:54:03Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.32.0"
+    },
+    {
+      "id": 95794734,
+      "tag_name": "v2.33.0",
+      "name": "v2.33.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-16T05:03:41Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.33.0"
+    },
+    {
+      "id": 99890941,
+      "tag_name": "v2.34.0",
+      "name": "v2.34.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-18T10:49:12Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.34.0"
+    },
+    {
+      "id": 104464573,
+      "tag_name": "v2.35.0",
+      "name": "v2.35.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-05-26T23:16:48Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.35.0"
+    },
+    {
+      "id": 108934392,
+      "tag_name": "v2.36.0",
+      "name": "v2.36.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-16T21:02:40Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.36.0"
+    },
+    {
+      "id": 117280156,
+      "tag_name": "v2.37.0",
+      "name": "v2.37.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-15T09:17:06Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.37.0"
+    },
+    {
+      "id": 119725872,
+      "tag_name": "v2.38.0",
+      "name": "v2.38.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-03T05:50:34Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.38.0"
+    },
+    {
+      "id": 120780796,
+      "tag_name": "v2.39.0",
+      "name": "v2.39.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-12T11:46:03Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.39.0"
+    },
+    {
+      "id": 122384144,
+      "tag_name": "v2.40.0",
+      "name": "v2.40.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-25T06:32:16Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.40.0"
+    },
+    {
+      "id": 124246024,
+      "tag_name": "v2.41.0",
+      "name": "v2.41.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-09T11:04:26Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.41.0"
+    },
+    {
+      "id": 128108800,
+      "tag_name": "v2.42.0",
+      "name": "v2.42.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-06T11:12:17Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.42.0"
+    },
+    {
+      "id": 147891534,
+      "tag_name": "v2.43.0",
+      "name": "v2.43.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-22T11:40:50Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.43.0"
+    },
+    {
+      "id": 147991566,
+      "tag_name": "v2.43.1",
+      "name": "v2.43.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-22T20:14:45Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.43.1"
+    },
+    {
+      "id": 148075986,
+      "tag_name": "v2.43.2",
+      "name": "v2.43.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-24T09:12:06Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.43.2"
+    },
+    {
+      "id": 148177629,
+      "tag_name": "v2.43.3",
+      "name": "v2.43.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-25T09:40:36Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.43.3"
+    },
+    {
+      "id": 158951518,
+      "tag_name": "v2.44.0",
+      "name": "v2.44.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-05T09:23:08Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.44.0"
+    },
+    {
+      "id": 162214835,
+      "tag_name": "v2.44.1",
+      "name": "v2.44.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-25T05:48:30Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.44.1"
+    },
+    {
+      "id": 178495699,
+      "tag_name": "v2.44.2",
+      "name": "v2.44.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-05T00:22:56Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.44.2"
+    },
+    {
+      "id": 186821826,
+      "tag_name": "v2.44.3",
+      "name": "v2.44.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-11-22T09:29:56Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.44.3"
+    },
+    {
+      "id": 187046277,
+      "tag_name": "v2.44.4",
+      "name": "v2.44.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-11-22T20:22:37Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.44.4"
+    },
+    {
+      "id": 188638715,
+      "tag_name": "v2.45.0",
+      "name": "v2.45.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-12-03T07:37:35Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.45.0"
+    },
+    {
+      "id": 192356913,
+      "tag_name": "v2.45.1",
+      "name": "v2.45.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-12-26T09:29:32Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.45.1"
+    },
+    {
+      "id": 201960151,
+      "tag_name": "v2.46.0",
+      "name": "v2.46.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-02-24T06:41:11Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.46.0"
+    },
+    {
+      "id": 243116416,
+      "tag_name": "v2.47.0",
+      "name": "v2.47.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-08-28T10:01:34Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.47.0"
+    },
+    {
+      "id": 254926358,
+      "tag_name": "v2.48.0",
+      "name": "v2.48.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-16T08:32:24Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.48.0"
+    },
+    {
+      "id": 255216034,
+      "tag_name": "v2.48.1",
+      "name": "v2.48.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-17T05:30:51Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.48.1"
+    },
+    {
+      "id": 292907844,
+      "tag_name": "v2.49.0",
+      "name": "v2.49.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-04T10:08:07Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.49.0"
+    },
+    {
+      "id": 293354538,
+      "tag_name": "v2.50.0",
+      "name": "v2.50.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-05T07:33:24Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.50.0"
+    },
+    {
+      "id": 310843488,
+      "tag_name": "v2.50.1",
+      "name": "v2.50.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-19T09:46:28Z",
+      "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/releases/tag/v2.50.1"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v2.50.0",
+      "sha": "6a8183590dc0b4f7cf29adaf2f0c281b1bd273f0",
+      "date": "2026-03-05T07:29:06Z"
+    },
+    {
+      "name": "v2.48.1",
+      "sha": "be7cefada8e625f016b29017169cd81700d05825",
+      "date": "2025-10-17T05:27:04Z"
+    },
+    {
+      "name": "v2.49.0",
+      "sha": "8083d49b0c8fe6b095173fc42517b0145a93602e",
+      "date": "2026-03-04T10:03:13Z"
+    },
+    {
+      "name": "v2.48.0",
+      "sha": "495f3100cf1404fc66e016bd626bc79d208b7231",
+      "date": "2025-10-16T08:27:08Z"
+    },
+    {
+      "name": "v2.47.0",
+      "sha": "4792d9a2cd46f79dfe52e3b631b4c9f4bfbf6b76",
+      "date": "2025-08-28T09:58:16Z"
+    },
+    {
+      "name": "v2.46.0",
+      "sha": "0aa785107a8a8647c284da66c9e0a8d6670ed465",
+      "date": "2025-02-24T06:36:13Z"
+    },
+    {
+      "name": "v2.45.1",
+      "sha": "3046fb3e7d30c31641a92f034bc831cd102489dc",
+      "date": "2024-12-26T09:25:53Z"
+    },
+    {
+      "name": "v2.45.0",
+      "sha": "98e04d13448ce15f6621b404ddd3b2c498d861da",
+      "date": "2024-12-03T07:25:15Z"
+    },
+    {
+      "name": "v2.44.4",
+      "sha": "4227b7e5d85d63cfcabbec188ba79dc966181ca6",
+      "date": "2024-11-22T20:16:39Z"
+    },
+    {
+      "name": "v2.44.3",
+      "sha": "7ec4e9c1aab8a79d08a84932b5744c3f7c8829d2",
+      "date": "2024-11-22T09:20:09Z"
+    },
+    {
+      "name": "v2.44.2",
+      "sha": "f46cbdd12f45966974b268309ca3433f83af3645",
+      "date": "2024-10-05T00:18:55Z"
+    },
+    {
+      "name": "v2.44.1",
+      "sha": "e800a37906c8ff631198c331d8d98f505123f9cb",
+      "date": "2024-06-24T12:07:01Z"
+    },
+    {
+      "name": "v2.44.0",
+      "sha": "ce9334130dffc68fb7c6e786d52266cab349a80d",
+      "date": "2024-06-05T09:19:22Z"
+    },
+    {
+      "name": "v2.43.3",
+      "sha": "b355323885c42660400085f0ba23027a135c508a",
+      "date": "2024-03-25T09:36:05Z"
+    },
+    {
+      "name": "v2.43.0",
+      "sha": "4866b6a8fec9f2f87d1313f9fbb1c1b91748084c",
+      "date": "2024-03-22T11:34:30Z"
+    },
+    {
+      "name": "v2.43.1",
+      "sha": "7ed694fc0dd0b4d1f21c58e0aec59a4ac8ce9e83",
+      "date": "2024-03-22T20:11:12Z"
+    },
+    {
+      "name": "v2.50.1",
+      "sha": "a888c07a559f270970ed98aa948d9ad5e5aeaf62",
+      "date": "2026-04-19T09:41:08Z"
+    },
+    {
+      "name": "v2.41.0",
+      "sha": "400b09daa16b2d097aa6cc92ebb641aa75f3fbd4",
+      "date": "2023-10-09T10:59:13Z"
+    },
+    {
+      "name": "v2.40.0",
+      "sha": "fe9d7cf2e515a7b830a2ef72709caebe7581f916",
+      "date": "2023-09-25T06:25:31Z"
+    },
+    {
+      "name": "v2.42.0",
+      "sha": "eccfa25d4d754bca0fbcb708f7faf964ee5ab719",
+      "date": "2023-11-06T11:03:51Z"
+    },
+    {
+      "name": "v2.43.2",
+      "sha": "0d54d3222ca47527815b9cc9cfafa96a747d25d5",
+      "date": "2024-03-24T09:08:58Z"
+    },
+    {
+      "name": "v2.38.0",
+      "sha": "6d968c153bbb4e2b8473c29b14567398aed815e0",
+      "date": "2023-09-03T05:45:57Z"
+    },
+    {
+      "name": "v2.39.0",
+      "sha": "5b60506f2ee8ce0600e69810bf6bdf809dd35cac",
+      "date": "2023-09-12T11:40:20Z"
+    },
+    {
+      "name": "v2.37.0",
+      "sha": "95cb5045bd13ed1e92cf651d4545e357b917e1be",
+      "date": "2023-08-15T09:02:13Z"
+    },
+    {
+      "name": "v2.36.0",
+      "sha": "3c3245f74bed32b8fd80336901df63d5e4a13753",
+      "date": "2023-06-16T20:22:44Z"
+    },
+    {
+      "name": "v2.35.0",
+      "sha": "426db0cce2c979f8bc33811f6c506c5f17cd4eb2",
+      "date": "2023-05-26T23:10:28Z"
+    },
+    {
+      "name": "v2.34.0",
+      "sha": "0c9cafd6a276809b180f268ca93f16bd75c2f0db",
+      "date": "2023-04-18T10:42:56Z"
+    },
+    {
+      "name": "v2.33.0",
+      "sha": "7b0f7a26f1ce111b9cb97c1a69d1d90a045b1aa6",
+      "date": "2023-03-16T04:27:39Z"
+    },
+    {
+      "name": "v2.32.0",
+      "sha": "93da2545940dd7968385ea315383e31919e915b9",
+      "date": "2023-03-04T20:48:50Z"
+    },
+    {
+      "name": "v2.30.0",
+      "sha": "84f3ae2887fc1b0eb7cea0ccb6bb365cfb3863e6",
+      "date": "2023-02-15T04:34:36Z"
+    },
+    {
+      "name": "v2.31.1",
+      "sha": "51db01eab6decee5cb310321d18a23e3797aab25",
+      "date": "2023-02-27T11:29:08Z"
+    },
+    {
+      "name": "v2.31.0",
+      "sha": "7db110af1bb76881769234ce1d088fd5025c8edf",
+      "date": "2023-02-26T04:58:27Z"
+    },
+    {
+      "name": "v2.29.2",
+      "sha": "51ab368faa4d3918e331b51c55188a233dc968be",
+      "date": "2023-02-12T06:49:54Z"
+    },
+    {
+      "name": "v2.29.0",
+      "sha": "9dbea3c145833139fc9300abb5d8a5341b0d81e7",
+      "date": "2023-02-05T12:44:07Z"
+    },
+    {
+      "name": "v2.28.0",
+      "sha": "0376c7cc4a908ed16830abb53cd22b9df86b8def",
+      "date": "2023-01-29T22:51:19Z"
+    },
+    {
+      "name": "v2.27.0",
+      "sha": "53b822e8c99d29c2e1894d8cec10393a7bdb46f5",
+      "date": "2023-01-19T11:49:51Z"
+    },
+    {
+      "name": "v2.29.1",
+      "sha": "0a2908792e05654075934e08c90d0c66e8d04184",
+      "date": "2023-02-12T06:22:29Z"
+    },
+    {
+      "name": "v2.26.0",
+      "sha": "324144ff81479678069db2f591064c4b797d40d1",
+      "date": "2022-11-29T09:51:56Z"
+    },
+    {
+      "name": "v2.26.1",
+      "sha": "7634bcc6ce9e86c0219a645a7348c65a922d527a",
+      "date": "2022-12-22T07:26:59Z"
+    },
+    {
+      "name": "v2.25.0",
+      "sha": "2e0cd397270fbd7a0b83253c43773e74ddf211ec",
+      "date": "2022-11-25T21:21:39Z"
+    },
+    {
+      "name": "v2.24.0",
+      "sha": "92b7023d7580fb0a33203a073d770083ac9ba919",
+      "date": "2022-11-13T11:15:41Z"
+    },
+    {
+      "name": "v2.23.1",
+      "sha": "42788fa03a99f14dcd235b33036d2c7b53ac45ef",
+      "date": "2022-09-24T10:27:13Z"
+    },
+    {
+      "name": "v2.24.1",
+      "sha": "52bd298a878e8c13b3339e41c3809b5f3f21acdb",
+      "date": "2022-11-17T06:15:13Z"
+    },
+    {
+      "name": "v2.22.0",
+      "sha": "1af560a35dc26db38f41a4aa07f7af62c1bddae0",
+      "date": "2022-08-09T07:46:12Z"
+    },
+    {
+      "name": "v2.23.0",
+      "sha": "f968ac6a36763538f768af1c8a4d82852f961879",
+      "date": "2022-09-07T08:35:25Z"
+    },
+    {
+      "name": "v2.21.1",
+      "sha": "3183c4aaa55dcb716f7ece6393fe45903e22e0df",
+      "date": "2022-08-03T11:19:54Z"
+    },
+    {
+      "name": "v2.21.0",
+      "sha": "7b708cb59b53e4705cadc08c55c0921f3b020b6b",
+      "date": "2022-07-14T11:48:21Z"
+    },
+    {
+      "name": "v2.20.1",
+      "sha": "9532c25f9e678b5bf99398bf21d7060c542d21c8",
+      "date": "2022-05-26T05:46:27Z"
+    },
+    {
+      "name": "v2.19.0",
+      "sha": "e953ff57d17f9c9bee6e02f283f083c2c149b790",
+      "date": "2022-04-24T02:47:17Z"
+    },
+    {
+      "name": "v2.18.2",
+      "sha": "85f744d96a2c450b79635371e165a2236b975143",
+      "date": "2022-04-07T08:51:27Z"
+    },
+    {
+      "name": "v2.18.1",
+      "sha": "d0372eeb0f1d170f8ad6892166053b3b5ad5ad70",
+      "date": "2022-04-05T18:59:09Z"
+    },
+    {
+      "name": "v2.17.0",
+      "sha": "7ff8808ab1dfa572abccd36f75054e4a889153f1",
+      "date": "2022-02-11T08:20:51Z"
+    },
+    {
+      "name": "v2.16.0",
+      "sha": "4b4151465275be082628684c36b3beabc9be48d7",
+      "date": "2022-02-07T08:39:42Z"
+    },
+    {
+      "name": "v2.18.0",
+      "sha": "b68fd0b4f9d8aae35874ae3a12d7045bf8c0d664",
+      "date": "2022-02-25T22:51:08Z"
+    },
+    {
+      "name": "v2.15.0",
+      "sha": "72b2ed825a731c48cbeb243d9eb17233d5e4ea40",
+      "date": "2022-01-13T03:56:00Z"
+    },
+    {
+      "name": "v2.14.1",
+      "sha": "b1227b042a46578ec096322f5e5980bdd27e9f40",
+      "date": "2022-01-10T19:32:15Z"
+    },
+    {
+      "name": "v2.13.0",
+      "sha": "accd504f8456b9a189696f594671ec1f33145a2e",
+      "date": "2021-12-06T11:24:54Z"
+    },
+    {
+      "name": "v2.14.0",
+      "sha": "c431c338ff9da3cf8dc2e6af433b34aa22b65001",
+      "date": "2022-01-08T10:15:04Z"
+    },
+    {
+      "name": "v2.12.0",
+      "sha": "8b87a3cfac6f3ee6c14ec29b3fe0a8c94bba80b9",
+      "date": "2021-12-03T11:19:53Z"
+    },
+    {
+      "name": "v2.10.0",
+      "sha": "36aa34892f9f52edc30dbf05dce0dad1ff05bbf8",
+      "date": "2021-07-29T06:48:49Z"
+    },
+    {
+      "name": "v2.11.0",
+      "sha": "a35291793fca08bfcf90f8d4d73ff70ca6981dbe",
+      "date": "2021-11-04T07:45:37Z"
+    },
+    {
+      "name": "v2.10.1",
+      "sha": "5748111d902ca8f23d1e5938944862fca3fa401b",
+      "date": "2021-10-05T06:11:37Z"
+    },
+    {
+      "name": "v2.9.0",
+      "sha": "5dd2d6f36cdbf451bd693478695f797b56ccabd7",
+      "date": "2021-05-05T10:58:31Z"
+    },
+    {
+      "name": "v2.7.9",
+      "sha": "82a04e5d0ef24bfe2d0219fc6e6042f44fba569a",
+      "date": "2020-11-27T04:21:13Z"
+    },
+    {
+      "name": "v2.7.10",
+      "sha": "402419f58455454039e3435d2b6616ae9faf9221",
+      "date": "2020-11-27T05:43:45Z"
+    },
+    {
+      "name": "v2.8.0",
+      "sha": "2bf9ded2ad9470b395d2fccb6aec6eac38db05d5",
+      "date": "2021-02-08T09:55:56Z"
+    },
+    {
+      "name": "v2.7.8",
+      "sha": "aa4767c5f2ebf1a8accdc784e51987654203756d",
+      "date": "2020-08-17T11:02:41Z"
+    },
+    {
+      "name": "v2.7.7",
+      "sha": "4f227a2321db03bc450a4ffcbf52e013e8cdf2b3",
+      "date": "2020-08-17T06:05:58Z"
+    },
+    {
+      "name": "v2.7.5",
+      "sha": "f7c2ff67b741ea69c388ba54301e9e818508303e",
+      "date": "2020-06-12T06:20:51Z"
+    },
+    {
+      "name": "v2.7.6",
+      "sha": "c0d4b2bc533868453129fa75d5797a742210971c",
+      "date": "2020-08-03T20:32:12Z"
+    },
+    {
+      "name": "v2.7.4",
+      "sha": "a1966fa536f6c85c8da8972e8212ea4f31250838",
+      "date": "2020-06-03T20:03:36Z"
+    },
+    {
+      "name": "v2.7.3",
+      "sha": "95f6c6411347e776ba8f5ca376e5524c31d1f7ed",
+      "date": "2020-05-14T07:47:46Z"
+    },
+    {
+      "name": "v2.7.2",
+      "sha": "a0b5dcaab1d0562c436988c85c10603802916fb1",
+      "date": "2020-05-12T08:52:15Z"
+    },
+    {
+      "name": "v2.7.1",
+      "sha": "6d17313c5935cd3c554b45c5ab9e2fa409232fa4",
+      "date": "2020-05-07T08:49:19Z"
+    },
+    {
+      "name": "v2.6.6",
+      "sha": "f0b568308e16e6bb83b2cbbffbed777a7e555433",
+      "date": "2019-11-09T21:13:52Z"
+    },
+    {
+      "name": "v2.7.0",
+      "sha": "36759f9b677671dbfdd2bfe699cbd530d6c7013a",
+      "date": "2020-05-07T08:23:29Z"
+    },
+    {
+      "name": "v2.6.5",
+      "sha": "79795e2c529d7f6519b9b2e17ce56c5166c75a0f",
+      "date": "2019-07-25T03:47:24Z"
+    },
+    {
+      "name": "v2.6.4",
+      "sha": "68a78be7c072c3d02184314d80fbd174564c5cf0",
+      "date": "2019-07-09T11:41:13Z"
+    },
+    {
+      "name": "v2.6.3",
+      "sha": "17d485547c871c1f60884ce0e4be8d2792ceb411",
+      "date": "2019-06-21T01:38:41Z"
+    },
+    {
+      "name": "v2.6.1",
+      "sha": "d4130394504df7e0e4db439e6a2b0864b7b29966",
+      "date": "2019-06-01T10:52:49Z"
+    },
+    {
+      "name": "v2.6.0",
+      "sha": "4e2d9a3f8532fd9fc483c379f8f20800a1eaf73f",
+      "date": "2019-05-30T02:27:44Z"
+    },
+    {
+      "name": "v2.6.2",
+      "sha": "eef6fba71d2e54d4be246a4834a23442cc14a1f7",
+      "date": "2019-06-12T12:08:37Z"
+    },
+    {
+      "name": "v2.5.3",
+      "sha": "af27ff29cdeffbf3f73ad27ae6410e39003e9bc4",
+      "date": "2019-05-16T20:37:17Z"
+    },
+    {
+      "name": "v2.5.2",
+      "sha": "5a163b65d7a98fe96e106b5253a8647c6f868dbd",
+      "date": "2019-02-15T04:44:22Z"
+    },
+    {
+      "name": "v2.5.0",
+      "sha": "b20c73e454e60d809610ce9e5d9c2776473ac694",
+      "date": "2018-12-23T18:59:13Z"
+    },
+    {
+      "name": "v2.5.1",
+      "sha": "ba1d0c6e93542de3b2e590a2d6b25e1ef476b2c3",
+      "date": "2019-01-11T08:56:43Z"
+    },
+    {
+      "name": "v2.4.2",
+      "sha": "913bf136b28129adbbea4acc713fc9bbd93f42d5",
+      "date": "2018-10-09T00:06:17Z"
+    },
+    {
+      "name": "v2.4.1",
+      "sha": "973dab08f4f172d175e75a369a1be21662dc3a9f",
+      "date": "2018-09-14T10:17:16Z"
+    },
+    {
+      "name": "v2.3",
+      "sha": "969bd701607cd279bb69eb61ddcd0b5da1bb520e",
+      "date": "2018-08-17T12:53:52Z"
+    },
+    {
+      "name": "v2.2",
+      "sha": "b667ac7637639a005db02df9e870e3b80a39e50a",
+      "date": "2018-08-07T09:31:53Z"
+    },
+    {
+      "name": "v2.1",
+      "sha": "5ee4cbdd190169efd26ca2594dbad93c0a78309b",
+      "date": "2018-07-26T08:12:24Z"
+    },
+    {
+      "name": "v2.0",
+      "sha": "64e5da17d7c281b1db1499a03b68a251bc7c7150",
+      "date": "2018-07-18T03:59:29Z"
+    },
+    {
+      "name": "v1.3",
+      "sha": "d2d9f6c69ec7c593476f33e8a0fef013c44114bc",
+      "date": "2018-07-10T00:28:24Z"
+    },
+    {
+      "name": "v1.2",
+      "sha": "3ce9a0e9c06627fdc0896a4c4c15e76f7f6ab134",
+      "date": "2018-05-27T12:01:27Z"
+    },
+    {
+      "name": "v1.1",
+      "sha": "09e5d8a5ae9ca890ac4fb9ccd758bb60095c37f5",
+      "date": "2018-04-09T06:28:46Z"
+    },
+    {
+      "name": "v1.0",
+      "sha": "29d9856a8550bbfea4edc92dee23f83cafb205e6",
+      "date": "2018-03-16T22:57:13Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v2.47.0",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v2.48.0",
+      "previous_release": "v2.47.0",
+      "commits": [
+        {
+          "sha": "31114723f3bf4842d58548a9d8b3d9451edc0414",
+          "author_date": "2025-10-16T07:56:23Z",
+          "message": "Adds export to script functionality (#541)",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/31114723f3bf4842d58548a9d8b3d9451edc0414"
+        },
+        {
+          "sha": "8beeb12d7b3b55c4d16a63357964042354c49091",
+          "author_date": "2025-10-16T08:20:53Z",
+          "message": "Add Slovenian translations (#542)\n\nCo-authored-by: Brent Vollebregt <brent.vollebregt@gmail.com>",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/8beeb12d7b3b55c4d16a63357964042354c49091"
+        },
+        {
+          "sha": "495f3100cf1404fc66e016bd626bc79d208b7231",
+          "author_date": "2025-10-16T08:27:08Z",
+          "message": "Bump to 2.48.0",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/495f3100cf1404fc66e016bd626bc79d208b7231"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v2.48.1",
+      "previous_release": "v2.48.0",
+      "commits": [
+        {
+          "sha": "6fd043518de0d02e0904b140cf9e1cb9aaf58254",
+          "author_date": "2025-10-17T05:19:53Z",
+          "message": "Fixes file type filter for Python files (#545)\n\nCo-authored-by: Mehmet Aksoy <mehmet.aksoy@audivo.com>",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/6fd043518de0d02e0904b140cf9e1cb9aaf58254"
+        },
+        {
+          "sha": "be7cefada8e625f016b29017169cd81700d05825",
+          "author_date": "2025-10-17T05:27:04Z",
+          "message": "Bump to 2.48.1",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/be7cefada8e625f016b29017169cd81700d05825"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v2.49.0",
+      "previous_release": "v2.48.1",
+      "commits": [
+        {
+          "sha": "3d39ae96a5c646d97e2ab16face544a7b1864b50",
+          "author_date": "2025-10-27T02:28:55Z",
+          "message": "Indicate support for Python 3.14",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/3d39ae96a5c646d97e2ab16face544a7b1864b50"
+        },
+        {
+          "sha": "0ba9be5415473dc8b639ecd694c7aad846858f21",
+          "author_date": "2026-03-04T10:01:33Z",
+          "message": "Add tooltips to add and remove buttons",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/0ba9be5415473dc8b639ecd694c7aad846858f21"
+        },
+        {
+          "sha": "8083d49b0c8fe6b095173fc42517b0145a93602e",
+          "author_date": "2026-03-04T10:03:13Z",
+          "message": "Bump to 2.49.0",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/8083d49b0c8fe6b095173fc42517b0145a93602e"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v2.50.0",
+      "previous_release": "v2.49.0",
+      "commits": [
+        {
+          "sha": "47d1c05fd5eb2f0d9a31cf406c3d5c7afa439e24",
+          "author_date": "2026-03-05T07:26:18Z",
+          "message": "Update Serbian translations (Cyrillic & Latin) (#551)",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/47d1c05fd5eb2f0d9a31cf406c3d5c7afa439e24"
+        },
+        {
+          "sha": "6a8183590dc0b4f7cf29adaf2f0c281b1bd273f0",
+          "author_date": "2026-03-05T07:29:06Z",
+          "message": "Bump to 2.50.0",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/6a8183590dc0b4f7cf29adaf2f0c281b1bd273f0"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v2.50.1",
+      "previous_release": "v2.50.0",
+      "commits": [
+        {
+          "sha": "89feae51aac1498398bf092ee23554edb0c18ecd",
+          "author_date": "2026-03-08T08:26:23Z",
+          "message": "Translate README.md file to Serbian (Cyrillic & Latin) (#552)",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/89feae51aac1498398bf092ee23554edb0c18ecd"
+        },
+        {
+          "sha": "736d404f9a614f93998d80d5889dac7437900078",
+          "author_date": "2026-03-12T09:25:04Z",
+          "message": "Translate CONTRIBUTING & example README files to Serbian (Cyrillic & Latin) (#553)",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/736d404f9a614f93998d80d5889dac7437900078"
+        },
+        {
+          "sha": "f5166001d12171aea1fba4b083e2a18a6843ba5b",
+          "author_date": "2026-03-13T20:01:43Z",
+          "message": "Restructure translation files (#555)",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/f5166001d12171aea1fba4b083e2a18a6843ba5b"
+        },
+        {
+          "sha": "27257ff42f9f096a1b7158b01ffab354d0b01a41",
+          "author_date": "2026-03-14T06:03:21Z",
+          "message": "Update Chinese README and translate CONTRIBUTING to Chinese (#554)",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/27257ff42f9f096a1b7158b01ffab354d0b01a41"
+        },
+        {
+          "sha": "16ad804d1871407df89f5b7ced2df61c59dcee62",
+          "author_date": "2026-03-16T11:01:15Z",
+          "message": "Update README translation table to show what's done more clearly",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/16ad804d1871407df89f5b7ced2df61c59dcee62"
+        },
+        {
+          "sha": "0a87177933d994186f4e9ae96adaf2d9f20f4332",
+          "author_date": "2026-03-16T11:14:48Z",
+          "message": "Update the translation checklist to separate UI and other docs",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/0a87177933d994186f4e9ae96adaf2d9f20f4332"
+        },
+        {
+          "sha": "916abacc32905b3a9c254bbdbe81846666562bc1",
+          "author_date": "2026-04-10T10:54:38Z",
+          "message": "#556 Fix ReferenceError on multiple input type setup",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/916abacc32905b3a9c254bbdbe81846666562bc1"
+        },
+        {
+          "sha": "a888c07a559f270970ed98aa948d9ad5e5aeaf62",
+          "author_date": "2026-04-19T09:41:08Z",
+          "message": "Bump to 2.50.1",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/a888c07a559f270970ed98aa948d9ad5e5aeaf62"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [
+      {
+        "id": 18827997797,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-27T02:33:53Z",
+        "updated_at": "2025-10-27T02:35:56Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18827997797"
+      },
+      {
+        "id": 18827997579,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-27T02:33:53Z",
+        "updated_at": "2025-10-27T02:34:20Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18827997579"
+      },
+      {
+        "id": 18583398439,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-17T05:27:15Z",
+        "updated_at": "2025-10-17T05:27:39Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18583398439"
+      },
+      {
+        "id": 18583398452,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-17T05:27:15Z",
+        "updated_at": "2025-10-17T05:29:28Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18583398452"
+      },
+      {
+        "id": 18583267711,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-17T05:19:55Z",
+        "updated_at": "2025-10-17T05:22:44Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18583267711"
+      },
+      {
+        "id": 18583267716,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-17T05:19:55Z",
+        "updated_at": "2025-10-17T05:20:16Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18583267716"
+      },
+      {
+        "id": 18555196321,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T08:29:12Z",
+        "updated_at": "2025-10-16T08:29:54Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18555196321"
+      },
+      {
+        "id": 18555196343,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T08:29:12Z",
+        "updated_at": "2025-10-16T08:31:09Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18555196343"
+      },
+      {
+        "id": 18554977509,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T08:20:56Z",
+        "updated_at": "2025-10-16T08:23:39Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18554977509"
+      },
+      {
+        "id": 18554977527,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T08:20:56Z",
+        "updated_at": "2025-10-16T08:21:18Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18554977527"
+      },
+      {
+        "id": 18554353041,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T07:56:25Z",
+        "updated_at": "2025-10-16T07:58:47Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18554353041"
+      },
+      {
+        "id": 18554353054,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T07:56:25Z",
+        "updated_at": "2025-10-16T07:56:52Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/18554353054"
+      }
+    ],
+    "2025-11": [],
+    "2025-12": [],
+    "2026-01": [],
+    "2026-02": [],
+    "2026-03": [
+      {
+        "id": 23140907137,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-16T11:14:55Z",
+        "updated_at": "2026-03-16T11:15:12Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/23140907137"
+      },
+      {
+        "id": 23140907113,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-16T11:14:55Z",
+        "updated_at": "2026-03-16T11:17:26Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/23140907113"
+      },
+      {
+        "id": 23140410835,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-16T11:01:22Z",
+        "updated_at": "2026-03-16T11:03:35Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/23140410835"
+      },
+      {
+        "id": 23140410830,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-16T11:01:22Z",
+        "updated_at": "2026-03-16T11:01:38Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/23140410830"
+      },
+      {
+        "id": 23081952467,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-14T06:03:24Z",
+        "updated_at": "2026-03-14T06:03:37Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/23081952467"
+      },
+      {
+        "id": 23081952466,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-14T06:03:24Z",
+        "updated_at": "2026-03-14T06:07:18Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/23081952466"
+      },
+      {
+        "id": 23068323792,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-13T20:01:46Z",
+        "updated_at": "2026-03-13T20:02:01Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/23068323792"
+      },
+      {
+        "id": 23068323787,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-13T20:01:46Z",
+        "updated_at": "2026-03-13T20:03:53Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/23068323787"
+      },
+      {
+        "id": 22995068850,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-12T09:25:12Z",
+        "updated_at": "2026-03-12T09:26:57Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22995068850"
+      },
+      {
+        "id": 22995068855,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-12T09:25:12Z",
+        "updated_at": "2026-03-12T09:25:26Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22995068855"
+      },
+      {
+        "id": 22817354835,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-08T08:26:26Z",
+        "updated_at": "2026-03-08T08:26:40Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22817354835"
+      },
+      {
+        "id": 22817354842,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-08T08:26:26Z",
+        "updated_at": "2026-03-08T08:28:24Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22817354842"
+      },
+      {
+        "id": 22707172598,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-05T07:29:20Z",
+        "updated_at": "2026-03-05T07:29:40Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22707172598"
+      },
+      {
+        "id": 22707172561,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-05T07:29:20Z",
+        "updated_at": "2026-03-05T07:31:27Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22707172561"
+      },
+      {
+        "id": 22707083274,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-05T07:26:20Z",
+        "updated_at": "2026-03-05T07:26:44Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22707083274"
+      },
+      {
+        "id": 22707083267,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-05T07:26:20Z",
+        "updated_at": "2026-03-05T07:28:24Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22707083267"
+      },
+      {
+        "id": 22664495939,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-04T10:04:16Z",
+        "updated_at": "2026-03-04T10:04:32Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22664495939"
+      },
+      {
+        "id": 22664495990,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-04T10:04:16Z",
+        "updated_at": "2026-03-04T10:06:32Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22664495990"
+      },
+      {
+        "id": 22664403913,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-04T10:01:41Z",
+        "updated_at": "2026-03-04T10:01:58Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22664403913"
+      },
+      {
+        "id": 22664403914,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-04T10:01:41Z",
+        "updated_at": "2026-03-04T10:03:51Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/22664403914"
+      }
+    ],
+    "2026-04": [
+      {
+        "id": 24627321391,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T10:49:29Z",
+        "updated_at": "2026-04-19T10:52:36Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24627321391"
+      },
+      {
+        "id": 24627321398,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T10:49:29Z",
+        "updated_at": "2026-04-19T10:49:42Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24627321398"
+      },
+      {
+        "id": 24627300291,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T10:48:15Z",
+        "updated_at": "2026-04-19T10:51:29Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24627300291"
+      },
+      {
+        "id": 24627300288,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T10:48:15Z",
+        "updated_at": "2026-04-19T10:48:26Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24627300288"
+      },
+      {
+        "id": 24627230283,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-19T10:44:13Z",
+        "updated_at": "2026-04-19T10:44:28Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24627230283"
+      },
+      {
+        "id": 24627230280,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T10:44:13Z",
+        "updated_at": "2026-04-19T10:47:19Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24627230280"
+      },
+      {
+        "id": 24627162921,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-19T10:40:22Z",
+        "updated_at": "2026-04-19T10:40:36Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24627162921"
+      },
+      {
+        "id": 24627162915,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T10:40:22Z",
+        "updated_at": "2026-04-19T10:43:36Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24627162915"
+      },
+      {
+        "id": 24626704627,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T10:14:19Z",
+        "updated_at": "2026-04-19T10:14:36Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24626704627"
+      },
+      {
+        "id": 24626704629,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T10:14:19Z",
+        "updated_at": "2026-04-19T10:17:50Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24626704629"
+      },
+      {
+        "id": 24626110428,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T09:41:15Z",
+        "updated_at": "2026-04-19T09:41:31Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24626110428"
+      },
+      {
+        "id": 24626110423,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T09:41:15Z",
+        "updated_at": "2026-04-19T09:45:07Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24626110423"
+      },
+      {
+        "id": 24239525175,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T10:54:45Z",
+        "updated_at": "2026-04-10T10:55:00Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24239525175"
+      },
+      {
+        "id": 24239525174,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T10:54:45Z",
+        "updated_at": "2026-04-10T10:57:47Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/24239525174"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 25538936528,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-08T05:37:08Z",
+        "updated_at": "2026-05-08T05:37:25Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/25538936528"
+      },
+      {
+        "id": 25538936508,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-08T05:37:08Z",
+        "updated_at": "2026-05-08T05:40:56Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/25538936508"
+      },
+      {
+        "id": 25490699780,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-07T10:36:12Z",
+        "updated_at": "2026-05-07T10:36:34Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/25490699780"
+      },
+      {
+        "id": 25490699754,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-07T10:36:12Z",
+        "updated_at": "2026-05-07T10:39:14Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/25490699754"
+      }
+    ],
+    "2026-06": [],
+    "2026-07": [
+      {
+        "id": 29149440317,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-11T10:30:11Z",
+        "updated_at": "2026-07-11T10:30:25Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/29149440317"
+      },
+      {
+        "id": 29149440334,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-11T10:30:11Z",
+        "updated_at": "2026-07-11T10:33:32Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/29149440334"
+      },
+      {
+        "id": 29129885655,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-10T23:15:19Z",
+        "updated_at": "2026-07-10T23:15:37Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/29129885655"
+      },
+      {
+        "id": 29129885701,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-10T23:15:19Z",
+        "updated_at": "2026-07-10T23:18:26Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/29129885701"
+      },
+      {
+        "id": 29129801010,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-07-10T23:13:25Z",
+        "updated_at": "2026-07-10T23:13:38Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/29129801010"
+      },
+      {
+        "id": 29129801035,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-10T23:13:25Z",
+        "updated_at": "2026-07-10T23:16:55Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/29129801035"
+      },
+      {
+        "id": 28776729384,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-06T08:00:04Z",
+        "updated_at": "2026-07-06T08:00:17Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/28776729384"
+      },
+      {
+        "id": 28776729418,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-06T08:00:04Z",
+        "updated_at": "2026-07-06T08:03:28Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/28776729418"
+      }
+    ],
+    "2026-08": [],
+    "2026-09": [
+      {
+        "id": 34581505332,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-11T08:54:35Z",
+        "updated_at": "2026-09-11T08:54:53Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/34581505332"
+      },
+      {
+        "id": 34581505311,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-11T08:54:35Z",
+        "updated_at": "2026-09-11T08:57:54Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/34581505311"
+      },
+      {
+        "id": 34581283489,
+        "name": "Check formatting",
+        "workflow_id": 83532327,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-11T08:51:54Z",
+        "updated_at": "2026-09-11T08:52:07Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/34581283489"
+      },
+      {
+        "id": 34581283474,
+        "name": "Run Tests",
+        "workflow_id": 71752760,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-11T08:51:54Z",
+        "updated_at": "2026-09-11T08:56:11Z",
+        "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/actions/runs/34581283474"
+      }
+    ]
+  }
+}

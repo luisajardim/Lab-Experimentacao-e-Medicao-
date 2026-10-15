@@ -181,27 +181,21 @@ def collect_candidates(
 
     _ensure_dirs({"raw_dir": raw_dir, "meta_dir": meta_dir})
 
+    target_needed = limit if limit is not None else max_candidates
     if store and store.is_stage_complete(stage):
         candidates = _read_csv(candidates_csv)
-        if len(candidates) >= max_candidates or (limit is None and len(candidates) >= 100):
+        if len(candidates) >= target_needed:
             log.info("%s já concluído; carregados %d candidatos do cache CSV", stage, len(candidates))
             return candidates
-        log.warning("%s em cache insuficiente (%d encontrados). Refazendo busca...", stage, len(candidates))
+        log.warning("%s em cache insuficiente (%d de %d necessários). Refazendo busca...", stage, len(candidates), target_needed)
 
     queries = _build_queries(star_slices, languages)
     seen: set[str] = set()
     candidates: list[Candidate] = []
     queries_dir = meta_dir / "search_queries"
 
-    if store:
-        client = GitHubRESTClient(
-            token=client._session.headers.get("Authorization", "").replace("Bearer ", ""),
-            session=CachedSession(client._session, store, stage),
-            max_retries=client._max_retries,
-            backoff_base=client._backoff_base,
-            sleeper=client._sleep,
-            wall_clock=client._wall_clock,
-        )
+    # A busca usa o cliente REST diretamente para permitir paginação completa
+    # via cabeçalho Link. O resultado é persistido e cacheado em candidates.csv.
 
     query_results: list[list[Candidate]] = [[] for _ in queries]
     future_to_idx: dict[Any, int] = {}

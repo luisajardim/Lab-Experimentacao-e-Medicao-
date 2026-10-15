@@ -342,6 +342,11 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
     def process_repo(candidate) -> tuple[str, str, int, int, str]:
         """Processa um único repositório. Retorna (owner, repo, processed_delta, skipped_delta, reason)."""
         owner, repo = candidate.full_name.split("/", 1)
+        repo_file = gold_dir / owner / f"{repo}.json"
+        if repo_file.exists() and not force:
+            log.info("Repositório %s/%s já coletado em %s (pulando re-coleta)", owner, repo, repo_file)
+            return owner, repo, 1, 0, "ok"
+
         log.info("Processando %s/%s...", owner, repo)
 
         # Cada thread cria seu próprio cliente com token do pool

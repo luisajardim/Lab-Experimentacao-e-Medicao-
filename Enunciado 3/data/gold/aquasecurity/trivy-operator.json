@@ -1,0 +1,4574 @@
+{
+  "repository": {
+    "full_name": "aquasecurity/trivy-operator",
+    "stars": 1965,
+    "language": "Go",
+    "default_branch": "main",
+    "created_at": "2022-05-08T06:31:32Z"
+  },
+  "releases": [
+    {
+      "id": 66589519,
+      "tag_name": "v0.0.1",
+      "name": "v0.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-11T14:33:42Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.0.1"
+    },
+    {
+      "id": 66876334,
+      "tag_name": "v0.0.2",
+      "name": "v0.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-14T12:17:20Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.0.2"
+    },
+    {
+      "id": 66877844,
+      "tag_name": "v0.0.3",
+      "name": "v0.0.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-14T13:34:17Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.0.3"
+    },
+    {
+      "id": 68649071,
+      "tag_name": "v0.0.5",
+      "name": "v0.0.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-04T20:20:46Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.0.5"
+    },
+    {
+      "id": 69394905,
+      "tag_name": "v0.0.7",
+      "name": "v0.0.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-14T12:17:45Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.0.7"
+    },
+    {
+      "id": 69911247,
+      "tag_name": "v0.0.8",
+      "name": "v0.0.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-21T09:19:23Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.0.8"
+    },
+    {
+      "id": 70899899,
+      "tag_name": "v0.1.0-rc",
+      "name": "v0.1.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-06-29T19:23:25Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.0-rc"
+    },
+    {
+      "id": 70913014,
+      "tag_name": "v0.1.0-rc-2",
+      "name": "v0.1.0-rc-2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-06-29T20:52:51Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.0-rc-2"
+    },
+    {
+      "id": 70965689,
+      "tag_name": "v0.1.0",
+      "name": "v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-30T11:38:59Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.0"
+    },
+    {
+      "id": 71781216,
+      "tag_name": "v0.1.3-rc",
+      "name": "v0.1.3-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-12T09:17:59Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.3-rc"
+    },
+    {
+      "id": 71787651,
+      "tag_name": "v0.1.3-rc.2",
+      "name": "v0.1.3-rc.2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-12T10:33:24Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.3-rc.2"
+    },
+    {
+      "id": 71792219,
+      "tag_name": "v0.1.3",
+      "name": "v0.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-12T11:33:31Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.3"
+    },
+    {
+      "id": 72356921,
+      "tag_name": "v0.1.4-rc",
+      "name": "v0.1.4-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-19T18:23:53Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.4-rc"
+    },
+    {
+      "id": 72366049,
+      "tag_name": "v0.1.4",
+      "name": "v0.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-19T20:02:46Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.4"
+    },
+    {
+      "id": 72416524,
+      "tag_name": "v0.1.5-rc",
+      "name": "v0.1.5-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-20T11:26:10Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.5-rc"
+    },
+    {
+      "id": 72422683,
+      "tag_name": "v0.1.5",
+      "name": "v0.1.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-20T12:39:45Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.5"
+    },
+    {
+      "id": 74715475,
+      "tag_name": "v0.1.6-rc",
+      "name": "v0.1.6-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-18T11:42:28Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.6-rc"
+    },
+    {
+      "id": 74723783,
+      "tag_name": "v0.1.6",
+      "name": "v0.1.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-18T12:56:22Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.6"
+    },
+    {
+      "id": 75219716,
+      "tag_name": "v0.1.7-rc",
+      "name": "v0.1.7-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-24T12:41:51Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.7-rc"
+    },
+    {
+      "id": 75230450,
+      "tag_name": "v0.1.7",
+      "name": "v0.1.7",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-24T14:10:46Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.7"
+    },
+    {
+      "id": 75257710,
+      "tag_name": "v0.1.8-rc",
+      "name": "v0.1.8-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-24T17:42:26Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.8-rc"
+    },
+    {
+      "id": 75268460,
+      "tag_name": "v0.1.8",
+      "name": "v0.1.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-24T19:23:02Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.8"
+    },
+    {
+      "id": 75362030,
+      "tag_name": "v0.1.9-rc",
+      "name": "v0.1.9-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-25T15:48:49Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.9-rc"
+    },
+    {
+      "id": 75384197,
+      "tag_name": "v0.1.9",
+      "name": "v0.1.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-25T19:11:10Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.1.9"
+    },
+    {
+      "id": 77143540,
+      "tag_name": "v0.2.0-rc",
+      "name": "v0.2.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-14T14:18:05Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.2.0-rc"
+    },
+    {
+      "id": 77253856,
+      "tag_name": "v0.2.0-rc2",
+      "name": "v0.2.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-15T06:36:53Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.2.0-rc2"
+    },
+    {
+      "id": 77270610,
+      "tag_name": "v0.2.0-rc3",
+      "name": "v0.2.0-rc3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-15T09:28:06Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.2.0-rc3"
+    },
+    {
+      "id": 77280985,
+      "tag_name": "v0.2.0",
+      "name": "v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-15T11:17:42Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.2.0"
+    },
+    {
+      "id": 77481601,
+      "tag_name": "v0.2.1",
+      "name": "v0.2.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-18T13:49:44Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.2.1"
+    },
+    {
+      "id": 77874165,
+      "tag_name": "v0.3.0-rc",
+      "name": "v0.3.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-22T12:07:30Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.3.0-rc"
+    },
+    {
+      "id": 77976535,
+      "tag_name": "v0.3.0",
+      "name": "v0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-23T11:59:13Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.3.0"
+    },
+    {
+      "id": 79291918,
+      "tag_name": "v0.4.0-rc",
+      "name": "v0.4.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-07T17:03:06Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.4.0-rc"
+    },
+    {
+      "id": 80027460,
+      "tag_name": "v0.4.0-rc2",
+      "name": "v0.4.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-16T21:17:16Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.4.0-rc2"
+    },
+    {
+      "id": 80293237,
+      "tag_name": "v0.4.0-rc3",
+      "name": "v0.4.0-rc3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-19T07:40:18Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.4.0-rc3"
+    },
+    {
+      "id": 80324225,
+      "tag_name": "v0.4.0",
+      "name": "v0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-19T12:27:27Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.4.0"
+    },
+    {
+      "id": 81337269,
+      "tag_name": "v0.5.0-rc",
+      "name": "v0.5.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-28T11:30:39Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.5.0-rc"
+    },
+    {
+      "id": 81487351,
+      "tag_name": "v0.5.0",
+      "name": "v0.5.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-30T12:37:17Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.5.0"
+    },
+    {
+      "id": 82298224,
+      "tag_name": "v0.6.0-rc2",
+      "name": "v0.6.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-07T17:29:57Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.6.0-rc2"
+    },
+    {
+      "id": 82420704,
+      "tag_name": "v0.6.0-rc3",
+      "name": "v0.6.0-rc3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-08T17:24:00Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.6.0-rc3"
+    },
+    {
+      "id": 82902990,
+      "tag_name": "v0.6.0",
+      "name": "v0.6.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-13T09:18:50Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.6.0"
+    },
+    {
+      "id": 83402386,
+      "tag_name": "v0.7.0-rc",
+      "name": "v0.7.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-17T14:27:39Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.7.0-rc"
+    },
+    {
+      "id": 83675897,
+      "tag_name": "v0.7.0-rc2",
+      "name": "v0.7.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-20T11:35:11Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.7.0-rc2"
+    },
+    {
+      "id": 83761793,
+      "tag_name": "v0.7.0",
+      "name": "v0.7.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-21T15:00:28Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.7.0"
+    },
+    {
+      "id": 83789210,
+      "tag_name": "v0.7.1",
+      "name": "v0.7.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-21T18:37:43Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.7.1"
+    },
+    {
+      "id": 84267103,
+      "tag_name": "v0.8.0-rc",
+      "name": "v0.8.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-27T17:04:33Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.8.0-rc"
+    },
+    {
+      "id": 84451298,
+      "tag_name": "v0.8.0-rc2",
+      "name": "v0.8.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-29T13:35:27Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.8.0-rc2"
+    },
+    {
+      "id": 84576832,
+      "tag_name": "v0.8.0-rc3",
+      "name": "v0.8.0-rc3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-30T13:33:46Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.8.0-rc3"
+    },
+    {
+      "id": 84955707,
+      "tag_name": "v0.8.0",
+      "name": "v0.8.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-12-05T07:43:26Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.8.0"
+    },
+    {
+      "id": 85303105,
+      "tag_name": "v0.9.0-rc",
+      "name": "v0.9.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-12-07T13:04:04Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.9.0-rc"
+    },
+    {
+      "id": 85658208,
+      "tag_name": "v0.9.0-rc2",
+      "name": "v0.9.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-12-11T14:46:10Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.9.0-rc2"
+    },
+    {
+      "id": 85659933,
+      "tag_name": "v0.9.0",
+      "name": "v0.9.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-12-11T15:51:45Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.9.0"
+    },
+    {
+      "id": 85860709,
+      "tag_name": "v0.9.1",
+      "name": "v0.9.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-12-13T12:41:30Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.9.1"
+    },
+    {
+      "id": 87003316,
+      "tag_name": "v0.10.0-rc",
+      "name": "v0.10.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-12-22T21:04:28Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.10.0-rc"
+    },
+    {
+      "id": 87018618,
+      "tag_name": "v0.10.0-rc2",
+      "name": "v0.10.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-12-22T23:49:32Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.10.0-rc2"
+    },
+    {
+      "id": 87662509,
+      "tag_name": "v0.10.0-rc3",
+      "name": "v0.10.0-rc3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-01-01T19:07:44Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.10.0-rc3"
+    },
+    {
+      "id": 87663729,
+      "tag_name": "v0.10.0-rc4",
+      "name": "v0.10.0-rc4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-01-01T20:16:39Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.10.0-rc4"
+    },
+    {
+      "id": 87664933,
+      "tag_name": "v0.10.0",
+      "name": "v0.10.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-01T21:17:38Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.10.0"
+    },
+    {
+      "id": 87684483,
+      "tag_name": "v0.10.1",
+      "name": "v0.10.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-02T09:46:16Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.10.1"
+    },
+    {
+      "id": 90564464,
+      "tag_name": "v0.10.2",
+      "name": "v0.10.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-29T08:10:50Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.10.2"
+    },
+    {
+      "id": 90707443,
+      "tag_name": "v0.11.0-rc",
+      "name": "v0.11.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-01-30T15:57:20Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.11.0-rc"
+    },
+    {
+      "id": 90823551,
+      "tag_name": "v0.11.0-rc2",
+      "name": "v0.11.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-01-31T12:56:15Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.11.0-rc2"
+    },
+    {
+      "id": 90954050,
+      "tag_name": "v0.11.0-rc3",
+      "name": "v0.11.0-rc3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-02-01T09:25:29Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.11.0-rc3"
+    },
+    {
+      "id": 91379356,
+      "tag_name": "v0.11.0",
+      "name": "v0.11.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-05T10:57:01Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.11.0"
+    },
+    {
+      "id": 92180064,
+      "tag_name": "v0.11.1-rc",
+      "name": "v0.11.1-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-02-13T07:48:56Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.11.1-rc"
+    },
+    {
+      "id": 92315965,
+      "tag_name": "v0.11.1",
+      "name": "v0.11.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-14T08:07:43Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.11.1"
+    },
+    {
+      "id": 94376813,
+      "tag_name": "v0.12.0-rc",
+      "name": "v0.12.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-03-03T07:18:48Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.12.0-rc"
+    },
+    {
+      "id": 94545158,
+      "tag_name": "v0.12.0",
+      "name": "v0.12.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-05T09:38:43Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.12.0"
+    },
+    {
+      "id": 95309823,
+      "tag_name": "v0.12.1-rc",
+      "name": "v0.12.1-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-03-12T09:26:15Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.12.1-rc"
+    },
+    {
+      "id": 95378708,
+      "tag_name": "v0.12.1",
+      "name": "v0.12.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-13T11:13:47Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.12.1"
+    },
+    {
+      "id": 97759536,
+      "tag_name": "v0.13.0-rc",
+      "name": "v0.13.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-04-02T09:44:50Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.0-rc"
+    },
+    {
+      "id": 97766966,
+      "tag_name": "v0.13.0-rc2",
+      "name": "v0.13.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-04-02T14:15:38Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.0-rc2"
+    },
+    {
+      "id": 97830525,
+      "tag_name": "v0.13.0-rc3",
+      "name": "v0.13.0-rc3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-04-03T10:48:15Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.0-rc3"
+    },
+    {
+      "id": 98001345,
+      "tag_name": "v0.13.0",
+      "name": "v0.13.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-04T08:19:12Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.0"
+    },
+    {
+      "id": 100024428,
+      "tag_name": "v0.13.1-rc",
+      "name": "v0.13.1-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-04-19T09:16:17Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.1-rc"
+    },
+    {
+      "id": 100552773,
+      "tag_name": "v0.13.1-rc2",
+      "name": "v0.13.1-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-04-23T07:09:35Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.1-rc2"
+    },
+    {
+      "id": 100563595,
+      "tag_name": "v0.13.1",
+      "name": "v0.13.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-23T13:43:20Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.1"
+    },
+    {
+      "id": 100786364,
+      "tag_name": "v0.13.2-rc",
+      "name": "v0.13.2-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-04-25T10:10:46Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.2-rc"
+    },
+    {
+      "id": 101049288,
+      "tag_name": "v0.13.2",
+      "name": "v0.13.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-27T05:59:06Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.13.2"
+    },
+    {
+      "id": 105348187,
+      "tag_name": "v0.14.0-rc",
+      "name": "v0.14.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-05-30T11:30:04Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.14.0-rc"
+    },
+    {
+      "id": 107622923,
+      "tag_name": "v0.14.0",
+      "name": "v0.14.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-07T07:36:11Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.14.0"
+    },
+    {
+      "id": 108178727,
+      "tag_name": "v0.14.1-rc",
+      "name": "v0.14.1-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-06-12T07:34:56Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.14.1-rc"
+    },
+    {
+      "id": 108209414,
+      "tag_name": "v0.14.1",
+      "name": "v0.14.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-12T11:45:08Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.14.1"
+    },
+    {
+      "id": 111738370,
+      "tag_name": "v0.15.0-rc",
+      "name": "v0.15.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-07-11T05:36:14Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.15.0-rc"
+    },
+    {
+      "id": 113219865,
+      "tag_name": "v0.15.0",
+      "name": "v0.15.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-07-23T11:46:08Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.15.0"
+    },
+    {
+      "id": 113687976,
+      "tag_name": "v0.15.1",
+      "name": "v0.15.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-07-26T15:02:23Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.15.1"
+    },
+    {
+      "id": 119732065,
+      "tag_name": "v0.16.0-rc",
+      "name": "v0.16.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-09-03T10:41:26Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.16.0-rc"
+    },
+    {
+      "id": 119929364,
+      "tag_name": "v0.16.0",
+      "name": "v0.16.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-05T11:32:38Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.16.0"
+    },
+    {
+      "id": 122560918,
+      "tag_name": "v0.16.1",
+      "name": "v0.16.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-26T07:45:10Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.16.1"
+    },
+    {
+      "id": 124877442,
+      "tag_name": "v0.16.2",
+      "name": "v0.16.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-12T18:44:03Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.16.2"
+    },
+    {
+      "id": 125613492,
+      "tag_name": "v0.16.3",
+      "name": "v0.16.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-18T13:28:27Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.16.3"
+    },
+    {
+      "id": 127076493,
+      "tag_name": "v0.16.4",
+      "name": "v0.16.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-29T08:43:17Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.16.4"
+    },
+    {
+      "id": 131216278,
+      "tag_name": "v0.17.0-rc",
+      "name": "v0.17.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-11-23T11:27:33Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.17.0-rc"
+    },
+    {
+      "id": 131687286,
+      "tag_name": "v0.17.0",
+      "name": "v0.17.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-28T08:05:19Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.17.0"
+    },
+    {
+      "id": 131865761,
+      "tag_name": "v0.17.1",
+      "name": "v0.17.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-29T08:01:55Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.17.1"
+    },
+    {
+      "id": 135156931,
+      "tag_name": "v0.18.0-rc",
+      "name": "v0.18.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-12-27T07:02:41Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.18.0-rc"
+    },
+    {
+      "id": 135651106,
+      "tag_name": "v0.18.0-rc2",
+      "name": "v0.18.0-rc2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-01-03T09:38:13Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.18.0-rc2"
+    },
+    {
+      "id": 135786940,
+      "tag_name": "v0.18.0",
+      "name": "v0.18.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-04T08:28:46Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.18.0"
+    },
+    {
+      "id": 136343811,
+      "tag_name": "v0.18.1",
+      "name": "v0.18.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-09T14:59:53Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.18.1"
+    },
+    {
+      "id": 137564354,
+      "tag_name": "v0.18.2",
+      "name": "v0.18.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-18T13:51:03Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.18.2"
+    },
+    {
+      "id": 138942020,
+      "tag_name": "v0.18.3",
+      "name": "v0.18.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-29T15:22:30Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.18.3"
+    },
+    {
+      "id": 139894233,
+      "tag_name": "v0.18.4",
+      "name": "v0.18.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-02-05T11:43:54Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.18.4"
+    },
+    {
+      "id": 140515981,
+      "tag_name": "v0.18.5",
+      "name": "v0.18.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-02-08T12:52:44Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.18.5"
+    },
+    {
+      "id": 146094602,
+      "tag_name": "v0.19.0-rc",
+      "name": "v0.19.0-rc",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-03-12T17:14:29Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.19.0-rc"
+    },
+    {
+      "id": 146884107,
+      "tag_name": "v0.19.0",
+      "name": "v0.19.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-16T10:03:25Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.19.0"
+    },
+    {
+      "id": 147488014,
+      "tag_name": "v0.19.1",
+      "name": "v0.19.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-20T14:54:39Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.19.1"
+    },
+    {
+      "id": 148814997,
+      "tag_name": "v0.19.2",
+      "name": "v0.19.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-28T08:39:26Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.19.2"
+    },
+    {
+      "id": 149583127,
+      "tag_name": "v0.19.3",
+      "name": "v0.19.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-03T13:12:21Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.19.3"
+    },
+    {
+      "id": 149771802,
+      "tag_name": "v0.19.4",
+      "name": "v0.19.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-04T13:21:44Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.19.4"
+    },
+    {
+      "id": 152085308,
+      "tag_name": "v0.20.0",
+      "name": "v0.20.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-21T11:32:24Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.20.0"
+    },
+    {
+      "id": 152561308,
+      "tag_name": "v0.20.1",
+      "name": "v0.20.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-24T08:53:37Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.20.1"
+    },
+    {
+      "id": 156502945,
+      "tag_name": "v0.21.0",
+      "name": "v0.21.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-05-20T12:20:55Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.21.0"
+    },
+    {
+      "id": 156582605,
+      "tag_name": "v0.21.1",
+      "name": "v0.21.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-05-20T20:50:22Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.21.1"
+    },
+    {
+      "id": 158762408,
+      "tag_name": "v0.21.2",
+      "name": "v0.21.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-04T09:34:52Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.21.2"
+    },
+    {
+      "id": 159552563,
+      "tag_name": "v0.21.3",
+      "name": "v0.21.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-09T10:26:01Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.21.3"
+    },
+    {
+      "id": 163966322,
+      "tag_name": "v0.22.0",
+      "name": "v0.22.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-07-04T09:00:12Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.22.0"
+    },
+    {
+      "id": 187486975,
+      "tag_name": "v0.23.0",
+      "name": "v0.23.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-11-26T09:15:59Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.23.0"
+    },
+    {
+      "id": 198712610,
+      "tag_name": "v0.24.0",
+      "name": "v0.24.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-02-06T00:47:03Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.24.0"
+    },
+    {
+      "id": 202201351,
+      "tag_name": "v0.24.1",
+      "name": "v0.24.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-02-25T05:44:17Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.24.1"
+    },
+    {
+      "id": 204890691,
+      "tag_name": "v0.25.0",
+      "name": "v0.25.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-03-11T03:32:04Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.25.0"
+    },
+    {
+      "id": 216670490,
+      "tag_name": "v0.26.0",
+      "name": "v0.26.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-05-06T07:02:23Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.26.0"
+    },
+    {
+      "id": 217218203,
+      "tag_name": "v0.26.1",
+      "name": "v0.26.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-05-08T03:49:21Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.26.1"
+    },
+    {
+      "id": 224112134,
+      "tag_name": "v0.27.0",
+      "name": "v0.27.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-09T18:25:09Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.27.0"
+    },
+    {
+      "id": 226062332,
+      "tag_name": "v0.27.1",
+      "name": "v0.27.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-18T06:07:47Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.27.1"
+    },
+    {
+      "id": 230694406,
+      "tag_name": "v0.27.2",
+      "name": "v0.27.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-07-08T06:32:42Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.27.2"
+    },
+    {
+      "id": 231617783,
+      "tag_name": "v0.27.3",
+      "name": "v0.27.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-07-10T22:07:10Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.27.3"
+    },
+    {
+      "id": 237847241,
+      "tag_name": "v0.28.0",
+      "name": "v0.28.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-08-06T04:49:42Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.28.0"
+    },
+    {
+      "id": 249235687,
+      "tag_name": "v0.29.0",
+      "name": "v0.29.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-09-23T05:59:33Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.29.0"
+    },
+    {
+      "id": 285441968,
+      "tag_name": "v0.30.0",
+      "name": "v0.30.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-11T21:31:48Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.30.0"
+    },
+    {
+      "id": 296459986,
+      "tag_name": "v0.30.1",
+      "name": "v0.30.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-13T00:10:44Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.30.1"
+    },
+    {
+      "id": 333129960,
+      "tag_name": "v0.31.1",
+      "name": "v0.31.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-02T13:29:06Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.31.1"
+    },
+    {
+      "id": 341362189,
+      "tag_name": "v0.31.2",
+      "name": "v0.31.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-18T11:40:23Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.31.2"
+    },
+    {
+      "id": 350849447,
+      "tag_name": "v0.32.0",
+      "name": "v0.32.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-07-08T10:20:29Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.32.0"
+    },
+    {
+      "id": 365493039,
+      "tag_name": "v0.33.0",
+      "name": "v0.33.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-08-05T11:57:35Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.33.0"
+    },
+    {
+      "id": 375657327,
+      "tag_name": "v0.34.0",
+      "name": "v0.34.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-08-24T11:51:32Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.34.0"
+    },
+    {
+      "id": 403754193,
+      "tag_name": "v0.35.0",
+      "name": "v0.35.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-10-05T13:40:41Z",
+      "html_url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.35.0"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.35.0",
+      "sha": "5171971e35c7b1d8a0e47a94a2326da4d97ff417",
+      "date": "2026-10-05T11:23:44Z"
+    },
+    {
+      "name": "v0.32.0",
+      "sha": "1006872c1463e81a40d48298145625aefef2a02f",
+      "date": "2026-07-08T08:36:29Z"
+    },
+    {
+      "name": "v0.34.0",
+      "sha": "7107830178ae50e96e9f09d98976e51e6152759f",
+      "date": "2026-08-24T10:33:31Z"
+    },
+    {
+      "name": "v0.33.0",
+      "sha": "5e34376b9f5aa6aa330fb360b6c26f828103fb5c",
+      "date": "2026-08-05T09:01:12Z"
+    },
+    {
+      "name": "v0.31.2",
+      "sha": "3d073500cfb4956371435fa4085f2f59b9ff6d57",
+      "date": "2026-06-18T10:32:21Z"
+    },
+    {
+      "name": "v0.31.0",
+      "sha": "1c6a158189a46ae39b26423273953aba9cf93bc0",
+      "date": "2026-06-02T04:12:17Z"
+    },
+    {
+      "name": "v0.31.1",
+      "sha": "5746743cb6c49c633c6334fb36060578b599a45d",
+      "date": "2026-06-02T12:30:58Z"
+    },
+    {
+      "name": "v0.30.1",
+      "sha": "fa099f9ade081a0432f33d47ef4032e6ff22aa82",
+      "date": "2026-03-10T17:53:04Z"
+    },
+    {
+      "name": "v0.30.0",
+      "sha": "c9dec382a8b525e6ebb8f00fd62eeef137996d12",
+      "date": "2026-02-11T21:30:06Z"
+    },
+    {
+      "name": "v0.29.0",
+      "sha": "c8b31d9428fe730da7f306e43abc45c3de904c94",
+      "date": "2025-09-23T05:05:25Z"
+    },
+    {
+      "name": "v0.28.0",
+      "sha": "c4d544125354c5a5c0d1403ae5fe44380b7d979d",
+      "date": "2025-08-06T04:48:52Z"
+    },
+    {
+      "name": "v0.27.3",
+      "sha": "a086c84b3f20ed1fe670c3c29621c4de32e57468",
+      "date": "2025-07-10T19:10:49Z"
+    },
+    {
+      "name": "v0.27.2",
+      "sha": "9d137c7f5edd66d26e1645b2f90677819c9b7423",
+      "date": "2025-07-08T06:17:48Z"
+    },
+    {
+      "name": "v0.27.1",
+      "sha": "22ab9791789df6fd16d5566d572811dc60349e80",
+      "date": "2025-06-17T22:23:16Z"
+    },
+    {
+      "name": "v0.26.1",
+      "sha": "64746658da408fa9204ef2dd216dd862798e71df",
+      "date": "2025-04-16T11:02:02Z"
+    },
+    {
+      "name": "v0.27.0",
+      "sha": "1f1592c67e18ca31ce004b6a4f62242e7583711e",
+      "date": "2025-06-09T19:26:51Z"
+    },
+    {
+      "name": "v0.24.1",
+      "sha": "a8133863cf25d65adae003b4c5ce026217056b77",
+      "date": "2025-02-25T04:27:30Z"
+    },
+    {
+      "name": "v0.24.0",
+      "sha": "39b46112b5aa4d93c347556371cef1de7623a864",
+      "date": "2025-02-06T00:44:57Z"
+    },
+    {
+      "name": "v0.26.0",
+      "sha": "4a7ad089891961be6c336057271f481e9a1d1d31",
+      "date": "2025-05-02T02:09:20Z"
+    },
+    {
+      "name": "v0.25.0",
+      "sha": "0816542808e81dc318a34a1ce8a5cd004c59dfdd",
+      "date": "2025-03-11T03:07:08Z"
+    },
+    {
+      "name": "v0.23.0",
+      "sha": "d4da6e5df49815f3a399c1b634a030fddebd59a8",
+      "date": "2024-11-22T03:32:18Z"
+    },
+    {
+      "name": "v0.23.1",
+      "sha": "65f54256f2b8d6fe0dfda77a66545552f90fc021",
+      "date": "2024-11-25T19:17:25Z"
+    },
+    {
+      "name": "v0.21.3",
+      "sha": "e33caa6a1b8c3e305a45aeead4a0d8ca58d6e310",
+      "date": "2024-06-09T09:53:39Z"
+    },
+    {
+      "name": "v0.22.0",
+      "sha": "0dead554cc5cc9fb1ca7bd671f86a65e00fce39c",
+      "date": "2024-07-04T07:47:10Z"
+    },
+    {
+      "name": "v0.21.2",
+      "sha": "b83c17837c80f043b86321cf056ee17ada4a08b7",
+      "date": "2024-06-04T07:11:35Z"
+    },
+    {
+      "name": "v0.21.1",
+      "sha": "a8b5e42aec1e699b89713a519dc3224a853507da",
+      "date": "2024-05-20T20:23:59Z"
+    },
+    {
+      "name": "v0.20.1",
+      "sha": "e47d3f7b3536dc46168efbcdca1fbdf0ba71a6a1",
+      "date": "2024-04-24T08:26:39Z"
+    },
+    {
+      "name": "v0.21.0",
+      "sha": "6ec201bd55e10eef79e357443b2436207bdd9069",
+      "date": "2024-05-20T10:40:45Z"
+    },
+    {
+      "name": "v0.19.3",
+      "sha": "ba5235c62044eebe04940add4a134b0a68972f85",
+      "date": "2024-04-03T12:47:39Z"
+    },
+    {
+      "name": "v0.20.0",
+      "sha": "2f8287869e25ee40a002b997c1a9b5f7ad8adf49",
+      "date": "2024-04-21T09:03:04Z"
+    },
+    {
+      "name": "v0.19.4",
+      "sha": "7782f3a916e93917928a1f61c142128cc3508839",
+      "date": "2024-04-04T12:57:36Z"
+    },
+    {
+      "name": "v0.19.2",
+      "sha": "cb493304519849fa0027fb97c97a24f844bd3283",
+      "date": "2024-03-28T07:08:43Z"
+    },
+    {
+      "name": "v0.19.0",
+      "sha": "92fa3a63997e6d0020752ad385a964398a084542",
+      "date": "2024-03-16T09:36:59Z"
+    },
+    {
+      "name": "v0.19.1",
+      "sha": "f652926cc222efe7377c44389c38432551f1f356",
+      "date": "2024-03-20T14:24:52Z"
+    },
+    {
+      "name": "v0.19.0-rc",
+      "sha": "cc1c4c3b96160b30858d4df36ecf517467564260",
+      "date": "2024-03-12T15:15:07Z"
+    },
+    {
+      "name": "v0.18.5",
+      "sha": "68dcb68aab9161dae3ec34cb0ced9f1608462f8a",
+      "date": "2024-02-08T11:51:21Z"
+    },
+    {
+      "name": "v0.18.3",
+      "sha": "9815acd81d1988935909d92d85fc5e58e800de3a",
+      "date": "2024-01-29T14:54:58Z"
+    },
+    {
+      "name": "v0.18.4",
+      "sha": "29b5c8347c79bc02ac189a9e1c84966dc20988df",
+      "date": "2024-02-05T09:42:11Z"
+    },
+    {
+      "name": "v0.18.2",
+      "sha": "2c2f55673de7db8528da65ab0761fd1219fb0c65",
+      "date": "2024-01-18T13:18:30Z"
+    },
+    {
+      "name": "v0.18.1",
+      "sha": "f79231b526bc647922ba501f2e547ffd4eebb8c5",
+      "date": "2024-01-09T14:02:41Z"
+    },
+    {
+      "name": "v0.18.0",
+      "sha": "c73d65dca31483e6c7b8edcd5e386b3f4bf6d0f2",
+      "date": "2024-01-04T08:01:55Z"
+    },
+    {
+      "name": "v0.18.0-rc2",
+      "sha": "67a005d83069dcc759f37b9f9b111ed92c10fb84",
+      "date": "2024-01-03T09:08:58Z"
+    },
+    {
+      "name": "v0.17.1",
+      "sha": "ac21e30300cd2f58c4906f09cb4b5d484900dfda",
+      "date": "2023-11-29T07:35:42Z"
+    },
+    {
+      "name": "v0.17.0",
+      "sha": "391286a9bf8156e71f0896bd789544de3228a4a4",
+      "date": "2023-11-28T07:40:47Z"
+    },
+    {
+      "name": "v0.16.4",
+      "sha": "c2f0e0f4f773f090f61c07489fd6dc062d465b2d",
+      "date": "2023-10-29T07:57:52Z"
+    },
+    {
+      "name": "v0.17.0-rc",
+      "sha": "386c963daa3a85ed5a4b0e28bcdf707f6d05c623",
+      "date": "2023-11-23T10:02:07Z"
+    },
+    {
+      "name": "v0.16.3",
+      "sha": "28e46f29422d815ad1db56f6db952ec0acf772ef",
+      "date": "2023-10-18T12:02:28Z"
+    },
+    {
+      "name": "v0.16.1",
+      "sha": "47a03a92347a908bcfae90944bf96a2815d6f31d",
+      "date": "2023-09-26T07:05:55Z"
+    },
+    {
+      "name": "v0.18.0-rc",
+      "sha": "e7178281da53d2b7b80c3a5fcf9e97362a46d436",
+      "date": "2023-12-26T15:01:35Z"
+    },
+    {
+      "name": "v0.16.2",
+      "sha": "421b24d04809ad465340680cc7c1220f89fc2f01",
+      "date": "2023-10-12T17:11:58Z"
+    },
+    {
+      "name": "v0.16.0",
+      "sha": "c94a8f2227d15152f2402c8d5eb2e5aefaa659d9",
+      "date": "2023-09-05T09:30:01Z"
+    },
+    {
+      "name": "v0.15.1",
+      "sha": "0496b2c75988ef93c47e849a973a2809dadc08bf",
+      "date": "2023-07-26T14:28:58Z"
+    },
+    {
+      "name": "v0.16.0-rc",
+      "sha": "b5af09b746781c7481cbda2e292d2438a3616820",
+      "date": "2023-09-03T08:53:14Z"
+    },
+    {
+      "name": "v0.15.0",
+      "sha": "caf32786e902dd9fc297afab5cbacdb6b3121bae",
+      "date": "2023-07-23T11:01:24Z"
+    },
+    {
+      "name": "v0.15.0-rc",
+      "sha": "4c83f8e7cbee2b57f01a470656af21f35d99d138",
+      "date": "2023-07-11T05:04:52Z"
+    },
+    {
+      "name": "v0.14.1-rc",
+      "sha": "f4fd066d2f837b362303ec31c6b32160c380b5be",
+      "date": "2023-06-12T07:01:03Z"
+    },
+    {
+      "name": "v0.14.1",
+      "sha": "10e7eef5ac2897648968b6eb0071710fdd3b0f17",
+      "date": "2023-06-12T11:12:47Z"
+    },
+    {
+      "name": "v0.14.0",
+      "sha": "25f184efeeedbf6cfea4fde5b75905111ede07f8",
+      "date": "2023-06-07T07:04:04Z"
+    },
+    {
+      "name": "v0.14.0-rc",
+      "sha": "c5d74116e98b2228748d94cf0b76fd9cd80854aa",
+      "date": "2023-05-30T10:59:34Z"
+    },
+    {
+      "name": "v0.13.2",
+      "sha": "6aad0cce58c40d2634dd1150b186ef123bb83202",
+      "date": "2023-04-27T05:22:14Z"
+    },
+    {
+      "name": "v0.13.2-rc",
+      "sha": "ec6a40fdc57bdaabf435a0b074c65dd2125ee2c7",
+      "date": "2023-04-25T09:37:07Z"
+    },
+    {
+      "name": "v0.13.1",
+      "sha": "0819e5a95aba0d4267a688e7696d2f0a610b9fae",
+      "date": "2023-04-23T13:09:41Z"
+    },
+    {
+      "name": "v0.13.1-rc",
+      "sha": "fa2678c9d82141a1717fad5741de80e484a9f233",
+      "date": "2023-04-19T08:15:08Z"
+    },
+    {
+      "name": "v0.13.1-rc2",
+      "sha": "26ba997409f19b83bc49fe6ecf23c9a8ddb378e4",
+      "date": "2023-04-23T06:36:51Z"
+    },
+    {
+      "name": "v0.13.0",
+      "sha": "53daf46ce9e30869629588e2f1e2107cbd9fe6b9",
+      "date": "2023-04-04T06:57:19Z"
+    },
+    {
+      "name": "v0.13.0-rc3",
+      "sha": "10448ddc8ecd9312fbad0e0600a2a84a2ed8ebe3",
+      "date": "2023-04-03T08:40:17Z"
+    },
+    {
+      "name": "v0.13.0-rc2",
+      "sha": "f88a6e9cd2522782485608bfd632b160f30ac416",
+      "date": "2023-04-02T12:54:44Z"
+    },
+    {
+      "name": "v0.12.1-rc",
+      "sha": "f6b4329230ffb72f675263e1fce328def7ad3c29",
+      "date": "2023-03-12T08:55:04Z"
+    },
+    {
+      "name": "v0.12.1",
+      "sha": "ac3d29ae99f1a423e9a454f21bef5e12ca5463a2",
+      "date": "2023-03-13T10:11:24Z"
+    },
+    {
+      "name": "v0.13.0-rc",
+      "sha": "7f5b1b868556a812512624809af74d7123e052f3",
+      "date": "2023-04-02T08:38:30Z"
+    },
+    {
+      "name": "v0.11.1",
+      "sha": "4b129ca41ec94f5e086e449af77d9bc4e5d3aadb",
+      "date": "2023-02-14T07:31:34Z"
+    },
+    {
+      "name": "v0.12.0",
+      "sha": "55d41886e47630757c0a97e824f8b0b79c0d7176",
+      "date": "2023-03-05T09:04:45Z"
+    },
+    {
+      "name": "v0.12.0-rc",
+      "sha": "821a17744be286bbc1ef38c5afd892b97c3d2765",
+      "date": "2023-03-03T06:43:24Z"
+    },
+    {
+      "name": "v0.11.1-rc",
+      "sha": "509b4109ac0f96c1671b8804c10b711ed748b114",
+      "date": "2023-02-13T07:17:43Z"
+    },
+    {
+      "name": "v0.11.0",
+      "sha": "23b2914f793936c32d16abbeb457802d53d375b3",
+      "date": "2023-02-05T10:27:37Z"
+    },
+    {
+      "name": "v0.11.0-rc3",
+      "sha": "98f40127326956e92fed5031b8444200ae088ed9",
+      "date": "2023-02-01T08:50:22Z"
+    },
+    {
+      "name": "v0.11.0-rc",
+      "sha": "eb495d1fd5cd5303e4b5fbc0b95a15e8d58603ef",
+      "date": "2023-01-30T15:23:19Z"
+    },
+    {
+      "name": "v0.11.0-rc2",
+      "sha": "05e612f013d59aa01dd52a75b5ffec6e8f2cbf66",
+      "date": "2023-01-31T12:19:06Z"
+    },
+    {
+      "name": "v0.10.2",
+      "sha": "bf9cbda1f425de7df41dc3463cc432a79e29afa6",
+      "date": "2023-01-29T07:45:27Z"
+    },
+    {
+      "name": "v0.10.1",
+      "sha": "1f83ed0748bf581236fb8c12fcbe924c685cfa62",
+      "date": "2023-01-02T09:12:52Z"
+    },
+    {
+      "name": "v0.10.0",
+      "sha": "63d302944e1d5cf05c7f543a37e7cbe6c6bc2b9c",
+      "date": "2023-01-01T20:44:02Z"
+    },
+    {
+      "name": "v0.10.0-rc4",
+      "sha": "1fc3335421687401c370385638e652b2c0b92d79",
+      "date": "2023-01-01T19:50:41Z"
+    },
+    {
+      "name": "v0.10.0-rc3",
+      "sha": "74935b383d2f1283bed85d39e307e0ccc6166db2",
+      "date": "2023-01-01T18:42:53Z"
+    },
+    {
+      "name": "v0.10.0-rc2",
+      "sha": "0b155ed88eca0a3603a23162faf8afafe80f69cf",
+      "date": "2022-12-22T23:16:51Z"
+    },
+    {
+      "name": "v0.10.0-rc",
+      "sha": "086c1be6984c2eab1226607c9db2a4755fcfe0ef",
+      "date": "2022-12-22T20:33:07Z"
+    },
+    {
+      "name": "v0.9.1",
+      "sha": "4549f221ecfbac9fd2d12b6c4064d91e06a2e39e",
+      "date": "2022-12-13T12:10:52Z"
+    },
+    {
+      "name": "v0.9.0-rc",
+      "sha": "234356f9d2179e54f24db9b5786ec6562f7fa7e1",
+      "date": "2022-12-07T12:36:38Z"
+    },
+    {
+      "name": "v0.9.0",
+      "sha": "58dad28974c02f84a9d010debcbfa09904ea83a8",
+      "date": "2022-12-11T15:22:38Z"
+    },
+    {
+      "name": "v0.8.0",
+      "sha": "a771a48675f4f1cd7445d8e758dd5e777fde59d0",
+      "date": "2022-12-04T08:43:35Z"
+    },
+    {
+      "name": "v0.9.0-rc2",
+      "sha": "fe00673d5915901a9a8de472905d84e846f1721b",
+      "date": "2022-12-11T14:20:28Z"
+    },
+    {
+      "name": "v0.8.0-rc3",
+      "sha": "9adda7a56eca3341d051d240c9cb3fa4a040aa84",
+      "date": "2022-11-30T13:07:43Z"
+    },
+    {
+      "name": "v0.8.0-rc2",
+      "sha": "fe4b310985a756e36e8dc4fbc75257d829c89688",
+      "date": "2022-11-29T13:07:20Z"
+    },
+    {
+      "name": "v0.8.0-rc",
+      "sha": "c241aa90d89f4224cb1b729e56075f62ac29c8fe",
+      "date": "2022-11-27T16:39:25Z"
+    },
+    {
+      "name": "v0.7.1",
+      "sha": "42c561f1915f0d97d8b8048008188599443fd3c7",
+      "date": "2022-11-21T18:07:48Z"
+    },
+    {
+      "name": "v0.7.0-rc2",
+      "sha": "a07a3fc6aaa6ab17057f2a2746b609f1c5e70b48",
+      "date": "2022-11-20T11:04:40Z"
+    },
+    {
+      "name": "v0.7.0-rc",
+      "sha": "a67146dc6e9ef00e57788a07370d06c033441f22",
+      "date": "2022-11-17T13:59:52Z"
+    },
+    {
+      "name": "v0.7.0",
+      "sha": "77aaa58572be9145f28c20fe83cda6161ee4220b",
+      "date": "2022-11-21T14:33:50Z"
+    },
+    {
+      "name": "v0.6.0",
+      "sha": "301c17b3d1f7c28abcbadbbee056230927599e76",
+      "date": "2022-11-13T08:51:33Z"
+    },
+    {
+      "name": "v0.6.0-rc3",
+      "sha": "33580853107d7b435e9b74af36bb9302a79e476b",
+      "date": "2022-11-08T16:51:46Z"
+    },
+    {
+      "name": "v0.6.0-rc2",
+      "sha": "6a558f770507d2bf02131afabf2d88a0a92f1fba",
+      "date": "2022-11-07T17:03:43Z"
+    },
+    {
+      "name": "v0.6.0-rc",
+      "sha": "a86fe25136c38aec7fa9e0e6cedbe07a27a9ed4c",
+      "date": "2022-11-07T14:19:02Z"
+    },
+    {
+      "name": "v0.4.0",
+      "sha": "434dad985752fbe6f40c358e4decdbf972ae06bf",
+      "date": "2022-10-19T12:02:41Z"
+    },
+    {
+      "name": "v0.4.0-rc3",
+      "sha": "acc8ca302499e8f2f595186c40c22663e414537a",
+      "date": "2022-10-19T07:15:21Z"
+    },
+    {
+      "name": "v0.5.0-rc",
+      "sha": "5c2754adb2a8c9d7853a2740d27fc870b0a347e3",
+      "date": "2022-10-28T11:04:39Z"
+    },
+    {
+      "name": "v0.4.0-rc2",
+      "sha": "1c06f854934c1a2cfc71b50769e6d23c3b32e3fd",
+      "date": "2022-10-16T20:48:43Z"
+    },
+    {
+      "name": "v0.4.0-rc",
+      "sha": "5b9498d9d9fe186fb4861e69b161c9af87d61b38",
+      "date": "2022-10-07T16:33:27Z"
+    },
+    {
+      "name": "v0.3.0",
+      "sha": "0fb68f3ddcbf86dd1b9479dff80db4b676463b55",
+      "date": "2022-09-23T11:33:04Z"
+    },
+    {
+      "name": "v0.5.0",
+      "sha": "e43a4c63a33aa35c0d1c2c3600be41b6d0ded7d0",
+      "date": "2022-10-28T11:47:37Z"
+    },
+    {
+      "name": "v0.2.1",
+      "sha": "02447b95b428b8b3b72d87a2a0d9807091bf6357",
+      "date": "2022-09-18T13:22:47Z"
+    },
+    {
+      "name": "v0.2.0",
+      "sha": "6c5b1ce7fb4eeceba6958eda3c61b39e95a29428",
+      "date": "2022-09-15T10:09:59Z"
+    },
+    {
+      "name": "v0.2.0-rc3",
+      "sha": "dd0feb8eb22d4599f2db2f5c6d821596a2ded612",
+      "date": "2022-09-15T09:02:18Z"
+    },
+    {
+      "name": "v0.2.0-rc2",
+      "sha": "eb031d0bdca461d879d55c9161ec0c8c01c91a84",
+      "date": "2022-09-15T06:11:04Z"
+    },
+    {
+      "name": "v0.1.9",
+      "sha": "86c20f64b03dc720baf53226005e66641a658721",
+      "date": "2022-08-25T18:27:02Z"
+    },
+    {
+      "name": "v0.2.0-rc",
+      "sha": "7bc6c36eaa2286a30622ed642c77ef77f80da61d",
+      "date": "2022-09-14T13:32:43Z"
+    },
+    {
+      "name": "v0.1.9-rc",
+      "sha": "94d983f1cdf18eddcb70c51ed553f464d8c3df96",
+      "date": "2022-08-25T15:18:17Z"
+    },
+    {
+      "name": "v0.1.8",
+      "sha": "985635a3caa35969962cd31364f44e34fa06690b",
+      "date": "2022-08-24T18:48:34Z"
+    },
+    {
+      "name": "v0.1.8-rc",
+      "sha": "a9fea7d9c0d0623051d6d95f55e1be3c2d29e448",
+      "date": "2022-08-24T17:09:39Z"
+    },
+    {
+      "name": "v0.1.7",
+      "sha": "c27df05f61741991ff83d9ca6ef77e7d07ce4842",
+      "date": "2022-08-24T13:42:08Z"
+    },
+    {
+      "name": "v0.1.7-rc",
+      "sha": "fb1168a032d0134fd03fc008127d664c519916f9",
+      "date": "2022-08-24T12:03:35Z"
+    },
+    {
+      "name": "v0.1.6",
+      "sha": "b27ecee6b00505d12f32127fea0b2c7f0c299139",
+      "date": "2022-08-18T12:27:17Z"
+    },
+    {
+      "name": "v0.1.6-rc",
+      "sha": "dc6631e94f5bcb45a0cf62842031ed65f212b20e",
+      "date": "2022-08-18T11:12:26Z"
+    },
+    {
+      "name": "v0.1.5",
+      "sha": "0f886e2485dc39168d9924530f3b2c37f6c49968",
+      "date": "2022-07-20T12:14:48Z"
+    },
+    {
+      "name": "v0.1.5-rc",
+      "sha": "ec4a0a7bcb65c1436baba4f401495b42a5e09841",
+      "date": "2022-07-20T10:59:03Z"
+    },
+    {
+      "name": "v0.1.4",
+      "sha": "2b8904b1a8618f5996dddf43adf05458900ee6df",
+      "date": "2022-07-19T19:33:29Z"
+    },
+    {
+      "name": "v0.1.4-rc",
+      "sha": "6276bb14942ec0d45b78c44cdf20b4fb43f5d86d",
+      "date": "2022-07-19T17:55:20Z"
+    },
+    {
+      "name": "v0.1.3",
+      "sha": "84998f6d24c9e786c2fbdd5b96b4d4506808f8e5",
+      "date": "2022-07-12T11:05:46Z"
+    },
+    {
+      "name": "v0.1.3-rc.2",
+      "sha": "7ddaac9fd1dbe6b0ca4bf47732c2e73118bb4bd9",
+      "date": "2022-07-12T10:11:09Z"
+    },
+    {
+      "name": "v0.1.3-rc",
+      "sha": "f40ced2a4686f3d44d318ec918e3450ab4102109",
+      "date": "2022-07-12T08:54:13Z"
+    },
+    {
+      "name": "v0.1.0",
+      "sha": "63a98e9d08e8dc5fc97c57e5c07fbafbe32cf42f",
+      "date": "2022-06-30T11:10:18Z"
+    },
+    {
+      "name": "v0.1.0-rc-2",
+      "sha": "3bc882cb4dcdd8bfb8ccd27863c8c92d495b8e9f",
+      "date": "2022-06-29T20:22:36Z"
+    },
+    {
+      "name": "v0.1.0-rc",
+      "sha": "65e32b5a9e25df8dfea47e1fc383d7bbe8ce3494",
+      "date": "2022-06-29T18:56:37Z"
+    },
+    {
+      "name": "v0.0.8",
+      "sha": "3dc286c31d377c66692615415a8018b79869281a",
+      "date": "2022-06-21T08:50:09Z"
+    },
+    {
+      "name": "v0.0.7",
+      "sha": "033561f0af2e9877217f77ff17f1d9ed603d89e1",
+      "date": "2022-06-14T11:52:52Z"
+    },
+    {
+      "name": "v0.0.5",
+      "sha": "e16df204be5bbe6e8c4872ff4d850c7d78b835ee",
+      "date": "2022-06-04T19:59:28Z"
+    },
+    {
+      "name": "v0.0.4",
+      "sha": "9b9db6b935c704dfa99e2740d599aab9ff248083",
+      "date": "2022-06-04T18:31:33Z"
+    },
+    {
+      "name": "v0.0.3",
+      "sha": "d36ab8526e303b3cdf3741c05038e4a090cf36ba",
+      "date": "2022-05-14T13:14:07Z"
+    },
+    {
+      "name": "v0.0.1",
+      "sha": "561755d386ef6f2aeaba93e8455b9cb30cd8b50e",
+      "date": "2022-05-11T11:58:02Z"
+    },
+    {
+      "name": "v0.0.2",
+      "sha": "f5c6fb90d9fdb59fee4f55978aeb54341a26db63",
+      "date": "2022-05-14T11:55:44Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v0.29.0",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v0.30.0",
+      "previous_release": "v0.29.0",
+      "commits": [
+        {
+          "sha": "20a5a7b44702a4d465907fa1dbd1feb462393563",
+          "author_date": "2025-10-07T04:10:11Z",
+          "message": "chore: bump up Trivy to version v0.67.0 (#2764)\n\n* chore: bump up Trivy to version v0.67.0\n\n* chore: add GOEXPERIMENT for json v2\n\n* chore: bump up golang linter verisob\n\n* ci: use GOEXPERIMENT env for golang linter\n\n* chore: bump up controller-gen to v0.18\n\n* chore: update static deployment\n\n* chore: add GOEXPERIMENT env for env tests\n\n* chore: add GOEXPERIMENT env for itest and e2e",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/20a5a7b44702a4d465907fa1dbd1feb462393563"
+        },
+        {
+          "sha": "f8e1b229508ce2d3d50a56f34939e377d250f58f",
+          "author_date": "2025-10-09T02:45:22Z",
+          "message": "fix(ci): clean up space for e2e tests (#2776)\n\n* fix(ci): no space in e2e tests\n\n* chore: maximaze space for e2e testing",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/f8e1b229508ce2d3d50a56f34939e377d250f58f"
+        },
+        {
+          "sha": "db6558d0c2d3c2eedcd3304c2062d63002ac5db3",
+          "author_date": "2025-10-16T05:14:44Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2784)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/db6558d0c2d3c2eedcd3304c2062d63002ac5db3"
+        },
+        {
+          "sha": "b907b90bed3a480bab2461483688d77d56fe3491",
+          "author_date": "2025-10-16T05:15:50Z",
+          "message": "build(deps): bump alpine from 3.22.1 to 3.22.2 in /build/trivy-operator (#2778)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/b907b90bed3a480bab2461483688d77d56fe3491"
+        },
+        {
+          "sha": "10390b5864399c3dbe2fa2f0b5f1a9bdf8cd1167",
+          "author_date": "2025-10-17T08:10:27Z",
+          "message": "test(helm): bump up Yamale dependency for Helm chart-testing-action (#2786)\n\n* test(helm): bump up Yamale dependency for Helm chart-testing-action\n\n* fix: remove spaces in yaml for linter",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/10390b5864399c3dbe2fa2f0b5f1a9bdf8cd1167"
+        },
+        {
+          "sha": "baa8f8eac80782428922a86d4c6c8d6762554604",
+          "author_date": "2025-11-07T06:05:13Z",
+          "message": "chore: bump up inderect deps to fix vulns (#2805)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/baa8f8eac80782428922a86d4c6c8d6762554604"
+        },
+        {
+          "sha": "22a0db8ffa1f2084d1af4d8bf7d7831e7f7ec88b",
+          "author_date": "2025-11-17T20:12:46Z",
+          "message": "chore: enable non-interactively mode for UBI9 image (#2814)\n\n* chore: enable non-interactively mode for UBI9 image\n\n* chore: maximize build space for the integration tests",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/22a0db8ffa1f2084d1af4d8bf7d7831e7f7ec88b"
+        },
+        {
+          "sha": "ac67105840d20f34deece48ef2c5ac1cee7994b3",
+          "author_date": "2025-11-18T12:21:57Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2816)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/ac67105840d20f34deece48ef2c5ac1cee7994b3"
+        },
+        {
+          "sha": "40d018120b449c9544e4e5a1c50ec1abaab825bd",
+          "author_date": "2025-11-24T16:42:46Z",
+          "message": "chore: bump up x/crypto to v0.45.0 (#2821)\n\n* chore: bump up x/crypto to v0.45.0\n\n* chore: use the standard library context package",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/40d018120b449c9544e4e5a1c50ec1abaab825bd"
+        },
+        {
+          "sha": "7647456e06bb4cf6e733621c76f026ceff97ce97",
+          "author_date": "2025-11-24T22:50:29Z",
+          "message": "fix: print logs if any error appears (#2725)\n\n* fix: print logs if any errors appear\n\n* fix: print logs if any error appears\n\n* chore: update warning message\n\n* test: update unit-tests\n\n* test: update envtest fixtures",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/7647456e06bb4cf6e733621c76f026ceff97ce97"
+        },
+        {
+          "sha": "1d6b3babc55c2b6ff2f0f5b5250c04b7fe60c83c",
+          "author_date": "2025-12-04T01:24:47Z",
+          "message": "fix: Add config file volume to client server mode (#2751)\n\n* Add config file volume\n\n* Autoformat",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/1d6b3babc55c2b6ff2f0f5b5250c04b7fe60c83c"
+        },
+        {
+          "sha": "3e530e1cfc92888958add92530e3940739992f78",
+          "author_date": "2025-12-04T01:28:27Z",
+          "message": "fix: prefer vendor score if both nvd and vendor cvss v3 scores exist (#2774)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/3e530e1cfc92888958add92530e3940739992f78"
+        },
+        {
+          "sha": "ccb35a1699af5062432e985d95d337062bf0e538",
+          "author_date": "2025-12-04T01:31:45Z",
+          "message": "feat: add support for custom Trivy ignore file (#2750)\n\n* fix(helm): improve `trivy.ignoreFile` rendering\n\n* feat: add support a custom trivyignore name\n\n* test: add test to fix the previous behavior for .trivyignore\n\n* chore: clean up unused variable\n\n* chore: use a correct path joining\n\n* chore: use a default vuln image\n\n* test: fix CVE ignoring\n\n* chore(test): remove redundant logic",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/ccb35a1699af5062432e985d95d337062bf0e538"
+        },
+        {
+          "sha": "f9ae0c232d5866979e33ec6bc4f4caa3c88871e5",
+          "author_date": "2025-12-04T01:35:42Z",
+          "message": "feat: automatically roll deployment in helm chart on configmap change (#2760)\n\n* feat: add pod annotation containing configmap checksum to automatically roll trivy-operator pods on configmap changes\n\n* generate static manifests with mage generate:all",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/f9ae0c232d5866979e33ec6bc4f4caa3c88871e5"
+        },
+        {
+          "sha": "ddeaa32b324551a42aa898995b6cd5eee75d13f9",
+          "author_date": "2025-12-05T06:32:03Z",
+          "message": "fix: error \"creating secret used by scan job failed: /sbom-k8s-cluste… (#2759)\n\n* fix: error \"creating secret used by scan job failed: /sbom-k8s-cluster: an empty namespace may not be set during creation\"\n\n* Revert \"fix: error \"creating secret used by scan job failed: /sbom-k8s-cluster: an empty namespace may not be set during creation\"\"\n\nThis reverts commit 542f89a23a2ca765f60464c716fe98cce41a81b6.\n\n* Correct fix\n\n* Add unit test\n\n* rm bogus file\n\n* Fix typo\n\n* Make test name more concise; add complementary test to verify that namespaced workloads place jobs and secrets in workload namespace",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/ddeaa32b324551a42aa898995b6cd5eee75d13f9"
+        },
+        {
+          "sha": "4e1c45ffff44a37b17225d6b6d33e513c86676eb",
+          "author_date": "2025-12-05T06:36:09Z",
+          "message": "fix: validation SBOM reports (#2792)\n\n* fix: validation SBOM reports\n\n* chore: update autogenerated code\n\n* fix: use a pointer for a supplier field\n\n* fix(test): remove empty supplier\n\n* test: add validation test\n\n* chore: update the test\n\n* chore: fix linter issues",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/4e1c45ffff44a37b17225d6b6d33e513c86676eb"
+        },
+        {
+          "sha": "9b200d047fed64f780d9b57f7564914d36a7047c",
+          "author_date": "2025-12-05T06:43:17Z",
+          "message": "test: add unit tests for compliance report generation (#2803)\n\n* test: add unit tests for compliance report generation\n\n* refactor: remove unused variable\n\n* chore: fix testifylint error\n\n* refactor: rename package\n\n* chore: reorder imports",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/9b200d047fed64f780d9b57f7564914d36a7047c"
+        },
+        {
+          "sha": "239316aa2eaec02873c7dfa73e748822b45fa4d6",
+          "author_date": "2025-12-09T00:07:15Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2832)\n\nBumps ubi9/ubi-minimal from `61d5ad4` to `6fc28bc`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: 6fc28bcb6776e387d7a35a2056d9d2b985dc4e26031e98a2bd35a7137cd6fd71\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/239316aa2eaec02873c7dfa73e748822b45fa4d6"
+        },
+        {
+          "sha": "1caa4d4f6807815eda6f5c2997362964129bf4bb",
+          "author_date": "2025-12-09T00:07:40Z",
+          "message": "build(deps): bump alpine from 3.22.2 to 3.23.0 in /build/trivy-operator (#2833)\n\nBumps alpine from 3.22.2 to 3.23.0.\n\n---\nupdated-dependencies:\n- dependency-name: alpine\n  dependency-version: 3.23.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/1caa4d4f6807815eda6f5c2997362964129bf4bb"
+        },
+        {
+          "sha": "477c130bbe241749c14461a1424491cd66e75e99",
+          "author_date": "2026-01-28T16:18:42Z",
+          "message": "chore: image apk upgrade optimization (#2826)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/477c130bbe241749c14461a1424491cd66e75e99"
+        },
+        {
+          "sha": "32e8adadbcb9c84d4d76f265318cdcbc682002c3",
+          "author_date": "2026-01-30T06:36:54Z",
+          "message": "ci: add @afdesk as a code owner (#2868)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/32e8adadbcb9c84d4d76f265318cdcbc682002c3"
+        },
+        {
+          "sha": "13634685eb6e9c604ab8f117eb96e942c39b4f80",
+          "author_date": "2026-01-30T07:30:01Z",
+          "message": "build(deps): bump alpine from 3.23.0 to 3.23.3 in /build/trivy-operator (#2866)\n\nBumps alpine from 3.23.0 to 3.23.3.\n\n---\nupdated-dependencies:\n- dependency-name: alpine\n  dependency-version: 3.23.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/13634685eb6e9c604ab8f117eb96e942c39b4f80"
+        },
+        {
+          "sha": "a010b184b2f3d0e778ab435c1ff9f270faf5cd0c",
+          "author_date": "2026-01-30T07:39:41Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2862)\n\nBumps ubi9/ubi-minimal from `6fc28bc` to `bb08f23`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: bb08f2300cb8d12a7eb91dddf28ea63692b3ec99e7f0fa71a1b300f2756ea829\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/a010b184b2f3d0e778ab435c1ff9f270faf5cd0c"
+        },
+        {
+          "sha": "a3e2c342287fc5d47268b2e5f25d5ad255f41bc6",
+          "author_date": "2026-02-02T05:47:53Z",
+          "message": "chore(ubi9): update metadata for UBI9 image (#2846)\n\n* chore(ubi9): update metadata for UBI9 image\n\n* fix: copy license for mage command\n\n* chore: add LICENSE into go-releaser\n\n* chore: remove unneeded file",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/a3e2c342287fc5d47268b2e5f25d5ad255f41bc6"
+        },
+        {
+          "sha": "d448c81fd6c4cb4055596a64fd6f573c24bb7777",
+          "author_date": "2026-02-02T22:42:18Z",
+          "message": "chore: bump up Trivy to version v0.69.0 (#2870)\n\n* chore: bump up Trivy to version v0.69.0\n\n* chore: update removed method\n\n* docs: update trivy version\n\n* chore: change deprecated AVDID to ID\n\n* chore: add ID for detected misconfigs\n\n* chore: use go 1.25.6",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/d448c81fd6c4cb4055596a64fd6f573c24bb7777"
+        },
+        {
+          "sha": "98746136cbc43ccd517bb1ac9deab7e865009027",
+          "author_date": "2026-02-02T22:43:36Z",
+          "message": "chore: keep manager call for clustercompliance report (#2804)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/98746136cbc43ccd517bb1ac9deab7e865009027"
+        },
+        {
+          "sha": "8e0ad2bdf1d6968716f6c501b222a178dba47e0a",
+          "author_date": "2026-02-03T02:26:04Z",
+          "message": "fix: delete completed scan jobs in any case (#2788)\n\n* fix: delete completed scan jobs in any case\n\n* fix: a mistake\n\n* test: add testcases for TTL",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/8e0ad2bdf1d6968716f6c501b222a178dba47e0a"
+        },
+        {
+          "sha": "60fd041ec8eeae1535fc2c55172323b5046533a3",
+          "author_date": "2026-02-03T02:27:22Z",
+          "message": "fix: avoid re-mounting GCR volume with credentials (#2801)\n\n* fix: avoid re-mounting GCR volume with credentials\n\n* test: add a test",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/60fd041ec8eeae1535fc2c55172323b5046533a3"
+        },
+        {
+          "sha": "aa870852cbac120857d9242fac110dd5b0f22af4",
+          "author_date": "2026-02-03T02:31:22Z",
+          "message": "fix: use login to private registry (#2595)\n\n* fix: add credentials for java-db downloading from private registry in clinent-server mode\n\n* refactor: combine GetPodSpecForStandaloneMode and GetPodSpecForClientServerMode\n\n* chore: fix cyclomatic complexity\n\n* test: fix init container test\n\n* refactor: rebase code to keep tests for Standalone mode\n\n* fix(test): re-ordering envs\n\n* fix: login to private registry\n\n* feat: login to private registry\n\n* chore: update message in the test\n\n* docs: add a part about username/password using\n\n* chore: use a common docker config path\n\n* refactor: improve if statement\n\n* fix: update unit-tests after merging\n\n* chore(test): split TestGetInitContainers\n\n* chore: add error handling for readability",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/aa870852cbac120857d9242fac110dd5b0f22af4"
+        },
+        {
+          "sha": "286402285c94a4621f145fbf484496ba5136c3b7",
+          "author_date": "2026-02-04T10:41:22Z",
+          "message": "build(deps): bump golang.org/x/text in the golang group (#2844)\n\nBumps the golang group with 1 update: [golang.org/x/text](https://github.com/golang/text).\n\n\nUpdates `golang.org/x/text` from 0.31.0 to 0.32.0\n- [Release notes](https://github.com/golang/text/releases)\n- [Commits](https://github.com/golang/text/compare/v0.31.0...v0.32.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/text\n  dependency-version: 0.32.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: golang\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/286402285c94a4621f145fbf484496ba5136c3b7"
+        },
+        {
+          "sha": "67e8a2f40a669c6db4cf4297bdcf0cc395d591f7",
+          "author_date": "2026-02-04T18:55:05Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2873)\n\nBumps ubi9/ubi-minimal from `bb08f23` to `ecd4751`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: ecd4751c45e076b4e1e8d37ac0b1b9c7271930c094d1bcc5e6a4d6954c6b2289\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/67e8a2f40a669c6db4cf4297bdcf0cc395d591f7"
+        },
+        {
+          "sha": "f42ec9fa4a7512db1b109881b430ad038e5be95e",
+          "author_date": "2026-02-06T19:37:05Z",
+          "message": "chore: bump up Trivy to version v0.69.1 (#2875)\n\n* chore: bump up Trivy to version v0.69.1\n\n* chore: bump up Go to 1.25.7",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/f42ec9fa4a7512db1b109881b430ad038e5be95e"
+        },
+        {
+          "sha": "5ce08ae27d00fd35497003dbabb18642ed971240",
+          "author_date": "2026-02-06T19:37:30Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2874)\n\nBumps ubi9/ubi-minimal from `ecd4751` to `759f5f4`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: 759f5f42d9d6ce2a705e290b7fc549e2d2cd39312c4fa345f93c02e4abb8da95\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/5ce08ae27d00fd35497003dbabb18642ed971240"
+        },
+        {
+          "sha": "401dc157155c35088032a612847ecf579b75d69f",
+          "author_date": "2026-02-09T07:03:38Z",
+          "message": "build(deps): bump the common group across 1 directory with 4 updates (#2872)\n\nBumps the common group with 3 updates in the / directory: [github.com/CycloneDX/cyclonedx-go](https://github.com/CycloneDX/cyclonedx-go), [github.com/aws/aws-sdk-go-v2](https://github.com/aws/aws-sdk-go-v2) and [github.com/onsi/ginkgo/v2](https://github.com/onsi/ginkgo).\n\n\nUpdates `github.com/CycloneDX/cyclonedx-go` from 0.9.3 to 0.10.0\n- [Release notes](https://github.com/CycloneDX/cyclonedx-go/releases)\n- [Commits](https://github.com/CycloneDX/cyclonedx-go/compare/v0.9.3...v0.10.0)\n\nUpdates `github.com/aws/aws-sdk-go-v2` from 1.41.0 to 1.41.1\n- [Release notes](https://github.com/aws/aws-sdk-go-v2/releases)\n- [Changelog](https://github.com/aws/aws-sdk-go-v2/blob/main/changelog-template.json)\n- [Commits](https://github.com/aws/aws-sdk-go-v2/compare/v1.41.0...v1.41.1)\n\nUpdates `github.com/onsi/ginkgo/v2` from 2.25.3 to 2.28.1\n- [Release notes](https://github.com/onsi/ginkgo/releases)\n- [Changelog](https://github.com/onsi/ginkgo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/ginkgo/compare/v2.25.3...v2.28.1)\n\nUpdates `github.com/onsi/gomega` from 1.38.2 to 1.39.0\n- [Release notes](https://github.com/onsi/gomega/releases)\n- [Changelog](https://github.com/onsi/gomega/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/gomega/compare/v1.38.2...v1.39.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/CycloneDX/cyclonedx-go\n  dependency-version: 0.10.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n- dependency-name: github.com/aws/aws-sdk-go-v2\n  dependency-version: 1.41.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: common\n- dependency-name: github.com/onsi/ginkgo/v2\n  dependency-version: 2.28.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n- dependency-name: github.com/onsi/gomega\n  dependency-version: 1.39.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/401dc157155c35088032a612847ecf579b75d69f"
+        },
+        {
+          "sha": "6cebcd31de878ddad2a0b4a315294ffa11225fd4",
+          "author_date": "2026-02-09T09:25:21Z",
+          "message": "fix: PVC for alternateReportStorage no longer ignores the configured operator namespace from the values.yaml (#2864)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/6cebcd31de878ddad2a0b4a315294ffa11225fd4"
+        },
+        {
+          "sha": "1388637317d1e89e6bca6d74d06aa0828563bf0a",
+          "author_date": "2026-02-10T08:42:15Z",
+          "message": "release: prepare v0.30.0 (#2840)\n\n* release: prepare v0.30.0\n\n* ci: Maximize build space for chart testing workflow\n\n* fix: use a valid command",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/1388637317d1e89e6bca6d74d06aa0828563bf0a"
+        },
+        {
+          "sha": "5e5c4836717b16ba44ff906614c75a51321cee26",
+          "author_date": "2026-02-10T22:29:18Z",
+          "message": "chore: added extra_file LICENSE for Dockerfile.ubi9 (#2879)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/5e5c4836717b16ba44ff906614c75a51321cee26"
+        },
+        {
+          "sha": "a32b1f3d4f2205d6cbebf42b010f3d2c4d8ce579",
+          "author_date": "2026-02-11T21:28:51Z",
+          "message": "chore: bump up go-git deps to fix CVE-2026-25934 (#2882)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/a32b1f3d4f2205d6cbebf42b010f3d2c4d8ce579"
+        },
+        {
+          "sha": "c9dec382a8b525e6ebb8f00fd62eeef137996d12",
+          "author_date": "2026-02-11T21:30:06Z",
+          "message": "ci: use hash instead of version for the remove-unwanted-software action (#2881)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/c9dec382a8b525e6ebb8f00fd62eeef137996d12"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.30.1",
+      "previous_release": "v0.30.0",
+      "commits": [
+        {
+          "sha": "63a29afb4fd594e8a726242cec3db5ef786b7261",
+          "author_date": "2026-02-17T17:12:13Z",
+          "message": "chore: bump up KinD and K8s versions (#2802)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/63a29afb4fd594e8a726242cec3db5ef786b7261"
+        },
+        {
+          "sha": "2cc28a5fba42d6e6da08411bd03594c60c6c23d9",
+          "author_date": "2026-02-20T09:08:41Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2892)\n\nBumps ubi9/ubi-minimal from `759f5f4` to `c7d4414`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: c7d44146f826037f6873d99da479299b889473492d3c1ab8af86f08af04ec8a0\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/2cc28a5fba42d6e6da08411bd03594c60c6c23d9"
+        },
+        {
+          "sha": "f46107da2a7b8de26dc2277712011640155848da",
+          "author_date": "2026-02-20T11:06:12Z",
+          "message": "build(deps): bump github.com/onsi/gomega in the common group (#2876)\n\nBumps the common group with 1 update: [github.com/onsi/gomega](https://github.com/onsi/gomega).\n\n\nUpdates `github.com/onsi/gomega` from 1.39.0 to 1.39.1\n- [Release notes](https://github.com/onsi/gomega/releases)\n- [Changelog](https://github.com/onsi/gomega/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/gomega/compare/v1.39.0...v1.39.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/onsi/gomega\n  dependency-version: 1.39.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: common\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/f46107da2a7b8de26dc2277712011640155848da"
+        },
+        {
+          "sha": "8e715cb140e8e865e71648a15c55f091298f320f",
+          "author_date": "2026-02-20T11:54:35Z",
+          "message": "build(deps): bump golang.org/x/text in the golang group (#2877)\n\nBumps the golang group with 1 update: [golang.org/x/text](https://github.com/golang/text).\n\n\nUpdates `golang.org/x/text` from 0.33.0 to 0.34.0\n- [Release notes](https://github.com/golang/text/releases)\n- [Commits](https://github.com/golang/text/compare/v0.33.0...v0.34.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/text\n  dependency-version: 0.34.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: golang\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/8e715cb140e8e865e71648a15c55f091298f320f"
+        },
+        {
+          "sha": "11463dd897bd39d77ec6109934e55eef1cad6a69",
+          "author_date": "2026-02-20T22:32:31Z",
+          "message": "Deduplicate Vulnerabilities based on actually exported Label Values (#2884)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/11463dd897bd39d77ec6109934e55eef1cad6a69"
+        },
+        {
+          "sha": "e60b98f6c856ba75897b6416d636194b84fcbf80",
+          "author_date": "2026-02-20T22:33:02Z",
+          "message": "ci: update setup-go action (#2842)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/e60b98f6c856ba75897b6416d636194b84fcbf80"
+        },
+        {
+          "sha": "50487e6ff7f12d48c5d01447880dea3381f60a36",
+          "author_date": "2026-02-27T07:36:38Z",
+          "message": "build(deps): bump github.com/google/go-containerregistry (#2894)\n\nBumps the common group with 1 update: [github.com/google/go-containerregistry](https://github.com/google/go-containerregistry).\n\n\nUpdates `github.com/google/go-containerregistry` from 0.20.7 to 0.21.0\n- [Release notes](https://github.com/google/go-containerregistry/releases)\n- [Commits](https://github.com/google/go-containerregistry/compare/v0.20.7...v0.21.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/google/go-containerregistry\n  dependency-version: 0.21.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/50487e6ff7f12d48c5d01447880dea3381f60a36"
+        },
+        {
+          "sha": "70a05cf058b1db84ec0b8e6b40c5224fbc2158fb",
+          "author_date": "2026-02-27T21:43:05Z",
+          "message": "chore(deps): bump up cloudflare/circl to version 1.6.3 (#2900)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/70a05cf058b1db84ec0b8e6b40c5224fbc2158fb"
+        },
+        {
+          "sha": "961be051130f35839e3b345d33f4fc7810e2495c",
+          "author_date": "2026-03-02T22:43:44Z",
+          "message": "build(deps): bump github.com/aquasecurity/trivy in the aqua group (#2909)\n\nBumps the aqua group with 1 update: [github.com/aquasecurity/trivy](https://github.com/aquasecurity/trivy).\n\n\nUpdates `github.com/aquasecurity/trivy` from 0.69.1 to 0.69.2\n- [Release notes](https://github.com/aquasecurity/trivy/releases)\n- [Changelog](https://github.com/aquasecurity/trivy/blob/v0.69.2/CHANGELOG.md)\n- [Commits](https://github.com/aquasecurity/trivy/compare/v0.69.1...v0.69.2)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/aquasecurity/trivy\n  dependency-version: 0.69.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: aqua\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/961be051130f35839e3b345d33f4fc7810e2495c"
+        },
+        {
+          "sha": "743cf2dfc415e476c32c8b3d71c85d4e0cdf7b65",
+          "author_date": "2026-03-03T21:54:22Z",
+          "message": "chore: bump up Trivy to version v0.69.2 (#2905)\n\n* chore: bump up Trivy to version v0.69.2\n\n* update version in helm readme",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/743cf2dfc415e476c32c8b3d71c85d4e0cdf7b65"
+        },
+        {
+          "sha": "a12d8297fd253c5598ebe25413e90f9a1c2ac887",
+          "author_date": "2026-03-03T22:17:33Z",
+          "message": "ci: pin all actions by SHA (#2906)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/a12d8297fd253c5598ebe25413e90f9a1c2ac887"
+        },
+        {
+          "sha": "f8026e058ec9d655345b409c694a7a3035c4dd1e",
+          "author_date": "2026-03-10T17:49:54Z",
+          "message": "ci: harden pipeline (#2910)\n\n* ci: harden pipeline\n\n* ci: Add suggestions from zimzor\n\n* feat: Add zimzor into the CI pipeline\n\n* fix lint issues\n\n* Rename workflow file from zimzor.yaml to zizmor.yaml",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/f8026e058ec9d655345b409c694a7a3035c4dd1e"
+        },
+        {
+          "sha": "91bd7a53f37e1e8c1b43c0ea6053d18cf1841d36",
+          "author_date": "2026-03-10T17:50:20Z",
+          "message": "chore: bump up Trivy to version v0.69.3 (#2918)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/91bd7a53f37e1e8c1b43c0ea6053d18cf1841d36"
+        },
+        {
+          "sha": "fa099f9ade081a0432f33d47ef4032e6ff22aa82",
+          "author_date": "2026-03-10T17:53:04Z",
+          "message": "release: prepare v0.30.1 (#2903)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/fa099f9ade081a0432f33d47ef4032e6ff22aa82"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.31.1",
+      "previous_release": "v0.30.1",
+      "commits": [
+        {
+          "sha": "b902a9fbe5aadaef9f4333a76ad8b4f510af3e3e",
+          "author_date": "2026-03-17T11:48:29Z",
+          "message": "ci: use `TRIVY_MSTEAMS_WEBHOOK` for teams uri (#2926)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/b902a9fbe5aadaef9f4333a76ad8b4f510af3e3e"
+        },
+        {
+          "sha": "47e34e096d1d58ed5c4c9ddfd1fe703c54aba618",
+          "author_date": "2026-03-19T22:26:24Z",
+          "message": "chore(test): remove private registry tests (#2929)\n\n* chore(test): remove private registry tests\n\n* remove unneded files",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/47e34e096d1d58ed5c4c9ddfd1fe703c54aba618"
+        },
+        {
+          "sha": "22806e799d085d20b9723602daf4fef7f6b3ba5e",
+          "author_date": "2026-05-11T16:09:57Z",
+          "message": "ci: update github workflows (#2956)\n\n* chore: update codeowners\n\n* ci: improve PR title validation\n\n* fix: resolve incorrect parsing\n\n* ci: update zizmor settings\n\n* chore: migrate docs dependencies\n\n* chore: disable helm chart publsihing for a while\n\n* chore: disablie publish helm charts\n\n* ci: disable caching for setup-go\n\n* chore: update runners for releasing\n\n* chore: migrate from AdityaGarg8/remove-unwanted-software to bash commands\n\n* chore: migrate from AdityaGarg8/remove-unwanted-software for all workflows\n\n* chore: limit creds for checkout code\n\n* chore: ignore accessed outside of a dedicated environment\n\n* chore: use a specific setup-envtest version - v0.23.3",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/22806e799d085d20b9723602daf4fef7f6b3ba5e"
+        },
+        {
+          "sha": "0dd15eef619af22ce1930d44a8d4e0f1ab51735f",
+          "author_date": "2026-05-12T06:18:20Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2959)\n\nBumps ubi9/ubi-minimal from `c7d4414` to `fe9e574`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: fe9e574f04371b333ed4e21d30d984f6b7fcd1046e579f5ddab4816c0c8e231d\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/0dd15eef619af22ce1930d44a8d4e0f1ab51735f"
+        },
+        {
+          "sha": "2a5c3b256021dc3f747cb1ebcee69d2151457c42",
+          "author_date": "2026-05-14T05:34:30Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2961)\n\nBumps ubi9/ubi-minimal from `fe9e574` to `12db987`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: 12db9874bd753eb98b1ab3d840e75de5d6842ac0604fbd68c012adefe97140be\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/2a5c3b256021dc3f747cb1ebcee69d2151457c42"
+        },
+        {
+          "sha": "028dec89e44c60eb98a63fec064b353441436a2e",
+          "author_date": "2026-05-20T07:12:13Z",
+          "message": "ci: support FIPS image (#2960)\n\n* ci: support FIPS image\n\n* chore: add fips builds\n\n* fix: use the both GOEXPERIMENTAL\n\n* chore: remove alpine based FIPS images\n\n* chore: add fipsonly.go\n\n* chore: change file name template\n\n* chore: remove unneeded call\n\n* chore: run go fmt on magefile\n\n* chore: aligne UBI with the main",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/028dec89e44c60eb98a63fec064b353441436a2e"
+        },
+        {
+          "sha": "6c4e93cdb386c000fd45e7b28427b6450dd429ef",
+          "author_date": "2026-05-26T08:11:13Z",
+          "message": "fix(ci): install ARM64 cross-compiler for FIPS (#2974)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/6c4e93cdb386c000fd45e7b28427b6450dd429ef"
+        },
+        {
+          "sha": "973716e8f7c181f4d8bfb428432c6669ac261da1",
+          "author_date": "2026-05-26T08:24:44Z",
+          "message": "ci: migrate to Github App tokens (#2964)\n\n* ci: migrate to Github App tokens\n\n* chore: update var\n\n* ci: skip MS Teams messaging for a while\n\n* ci: use a custom runner for Gihub app",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/973716e8f7c181f4d8bfb428432c6669ac261da1"
+        },
+        {
+          "sha": "22bbedecf2eecc974773be82a8333c37aafa3fb7",
+          "author_date": "2026-05-27T14:14:21Z",
+          "message": "ci: rename envs for the Github app (#2978)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/22bbedecf2eecc974773be82a8333c37aafa3fb7"
+        },
+        {
+          "sha": "a42d4070aadd0f832ca37eacf36141b7f83c7cce",
+          "author_date": "2026-06-01T05:17:46Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2977)\n\nBumps ubi9/ubi-minimal from `12db987` to `5b74fce`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: 5b74fce9d6e629942a0c6dc0f546c193e70d7f974d999a48c948c53dd3d36362\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/a42d4070aadd0f832ca37eacf36141b7f83c7cce"
+        },
+        {
+          "sha": "ab119bac67ca114639487b4d42c3f372ea267783",
+          "author_date": "2026-06-01T05:18:17Z",
+          "message": "build(deps): bump alpine from 3.23.3 to 3.23.4 in /build/trivy-operator (#2968)\n\nBumps alpine from 3.23.3 to 3.23.4.\n\n---\nupdated-dependencies:\n- dependency-name: alpine\n  dependency-version: 3.23.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/ab119bac67ca114639487b4d42c3f372ea267783"
+        },
+        {
+          "sha": "2ce7332d351363e5a43ea745de4019e9b160fe34",
+          "author_date": "2026-06-01T18:36:30Z",
+          "message": "chore: bump up Trivy version to v0.71.0 (#2953)\n\n* chore: bump up Trivy version to v0.70.0\n\n* chore: change Go version to 1.25.9\n\n* chore: migrate from deprecated NewSimpleClientset\n\n* chore: update hashed based on changes k8s.io/api from v0.34 to v0.35\n\n* chore: bump up Trivy version to v0.71.0\n\n* chore: migrate from gomodguard to gomodguard_v2\n\n* chore: bump golangci-lint to v2.12\n\n* chore: use stdlib slices.Contains instead k8s util\n\n* chore: disable goconst linter\n\n* chore: update hashes\n\n* chore: follow up bumping to Trivy 0.70.0\n\n* chore: bump up Trivy version to 0.71.0",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/2ce7332d351363e5a43ea745de4019e9b160fe34"
+        },
+        {
+          "sha": "1c6a158189a46ae39b26423273953aba9cf93bc0",
+          "author_date": "2026-06-02T04:12:17Z",
+          "message": "release: prepare v0.31.0 (#2981)\n\n* release: prepare v0.31.0\n\n* chore: update helm chart version",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/1c6a158189a46ae39b26423273953aba9cf93bc0"
+        },
+        {
+          "sha": "e6229cf29d3edcef707d4dd882c1f7e14d5ceb8c",
+          "author_date": "2026-06-02T11:53:22Z",
+          "message": "ci: increase goreleaser timeouts and fix snapshot workflow (#2983)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/e6229cf29d3edcef707d4dd882c1f7e14d5ceb8c"
+        },
+        {
+          "sha": "5746743cb6c49c633c6334fb36060578b599a45d",
+          "author_date": "2026-06-02T12:30:58Z",
+          "message": "release: prepare v0.31.1 (#2984)\n\n* prepare: release 0.31.1\n\n* chore: bump up helm chart version",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/5746743cb6c49c633c6334fb36060578b599a45d"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.31.2",
+      "previous_release": "v0.31.1",
+      "commits": [
+        {
+          "sha": "c8b610b3f6f2337afcd585bb1e8f1b4a3dfd466a",
+          "author_date": "2026-06-03T05:40:22Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2986)\n\nBumps ubi9/ubi-minimal from `5b74fce` to `ae09ecc`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: ae09ecc3d754bc1726cbda3e2599cc7839e09fe1cc547ce173cf669b645be3cc\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/c8b610b3f6f2337afcd585bb1e8f1b4a3dfd466a"
+        },
+        {
+          "sha": "1583506daf95747cec2edc90e34231eafe97773a",
+          "author_date": "2026-06-04T08:20:54Z",
+          "message": "build(deps): bump the common group across 1 directory with 2 updates (#2982)\n\nBumps the common group with 1 update in the / directory: [github.com/onsi/ginkgo/v2](https://github.com/onsi/ginkgo).\n\n\nUpdates `github.com/onsi/ginkgo/v2` from 2.28.1 to 2.29.0\n- [Release notes](https://github.com/onsi/ginkgo/releases)\n- [Changelog](https://github.com/onsi/ginkgo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/ginkgo/compare/v2.28.1...v2.29.0)\n\nUpdates `github.com/onsi/gomega` from 1.39.1 to 1.40.0\n- [Release notes](https://github.com/onsi/gomega/releases)\n- [Changelog](https://github.com/onsi/gomega/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/gomega/compare/v1.39.1...v1.40.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/onsi/ginkgo/v2\n  dependency-version: 2.29.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n- dependency-name: github.com/onsi/gomega\n  dependency-version: 1.40.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/1583506daf95747cec2edc90e34231eafe97773a"
+        },
+        {
+          "sha": "213bb926f2d1a9eef19c69c2b493f33f1451b005",
+          "author_date": "2026-06-08T06:30:56Z",
+          "message": "chore: bump up Go version to 1.26.4 (#2990)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/213bb926f2d1a9eef19c69c2b493f33f1451b005"
+        },
+        {
+          "sha": "0dc9aee1e2e652fbc7220d035e36d7b4bbd0d4b0",
+          "author_date": "2026-06-15T05:09:31Z",
+          "message": "build(deps): bump alpine from 3.23.4 to 3.24.0 in /build/trivy-operator (#2996)\n\nBumps alpine from 3.23.4 to 3.24.0.\n\n---\nupdated-dependencies:\n- dependency-name: alpine\n  dependency-version: 3.24.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/0dc9aee1e2e652fbc7220d035e36d7b4bbd0d4b0"
+        },
+        {
+          "sha": "4910168588688d4cbb861f2dc58ddca3ed335cb7",
+          "author_date": "2026-06-16T04:28:36Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2997)\n\nBumps ubi9/ubi-minimal from `ae09ecc` to `1bc3c5c`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: 1bc3c5c15720506a0cf48adfdf8b623dfe704377e007d7bbae8d14876392ca6a\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/4910168588688d4cbb861f2dc58ddca3ed335cb7"
+        },
+        {
+          "sha": "614dfaccdff08e009d6c740b43b51b477222bfbb",
+          "author_date": "2026-06-17T08:56:50Z",
+          "message": "test: use lighter containers for integration tests (#3002)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/614dfaccdff08e009d6c740b43b51b477222bfbb"
+        },
+        {
+          "sha": "347ad2ce3275c164f0db3bc22ec63cb6378e8cab",
+          "author_date": "2026-06-17T08:57:54Z",
+          "message": "build(deps): bump alpine from 3.24.0 to 3.24.1 in /build/trivy-operator (#3000)\n\nBumps alpine from 3.24.0 to 3.24.1.\n\n---\nupdated-dependencies:\n- dependency-name: alpine\n  dependency-version: 3.24.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/347ad2ce3275c164f0db3bc22ec63cb6378e8cab"
+        },
+        {
+          "sha": "559fdc200b62725ffef88f854c4966cc34a0088e",
+          "author_date": "2026-06-17T12:43:56Z",
+          "message": "feat: add Persistent Volume and Persistent Volume Claim resources (#2999)\n\n* feat: add Persistent Volume and Persistent Volume Claim resources\n\n* fix\n\n* fix the build error\n\n* fix the verify code error\n\n* Update generated Helm documentation",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/559fdc200b62725ffef88f854c4966cc34a0088e"
+        },
+        {
+          "sha": "5c5d0627dc694249dd942fe71f5cf0a69689dcde",
+          "author_date": "2026-06-17T13:42:18Z",
+          "message": "build(deps): bump the common group across 1 directory with 2 updates (#2994)\n\nBumps the common group with 2 updates in the / directory: [github.com/aws/aws-sdk-go-v2](https://github.com/aws/aws-sdk-go-v2) and [github.com/onsi/gomega](https://github.com/onsi/gomega).\n\n\nUpdates `github.com/aws/aws-sdk-go-v2` from 1.41.7 to 1.42.0\n- [Release notes](https://github.com/aws/aws-sdk-go-v2/releases)\n- [Commits](https://github.com/aws/aws-sdk-go-v2/compare/v1.41.7...v1.42.0)\n\nUpdates `github.com/onsi/gomega` from 1.40.0 to 1.41.0\n- [Release notes](https://github.com/onsi/gomega/releases)\n- [Changelog](https://github.com/onsi/gomega/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/gomega/compare/v1.40.0...v1.41.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/aws/aws-sdk-go-v2\n  dependency-version: 1.41.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: common\n- dependency-name: github.com/onsi/gomega\n  dependency-version: 1.41.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/5c5d0627dc694249dd942fe71f5cf0a69689dcde"
+        },
+        {
+          "sha": "a8fff0a6bf128e5e31fb863b90b14ffc1a051617",
+          "author_date": "2026-06-17T13:42:58Z",
+          "message": "build(deps): bump the k8s group across 1 directory with 4 updates (#2993)\n\nBumps the k8s group with 3 updates in the / directory: [k8s.io/apiextensions-apiserver](https://github.com/kubernetes/apiextensions-apiserver), [k8s.io/cli-runtime](https://github.com/kubernetes/cli-runtime) and [sigs.k8s.io/controller-runtime](https://github.com/kubernetes-sigs/controller-runtime).\n\n\nUpdates `k8s.io/apiextensions-apiserver` from 0.36.0 to 0.36.1\n- [Release notes](https://github.com/kubernetes/apiextensions-apiserver/releases)\n- [Commits](https://github.com/kubernetes/apiextensions-apiserver/compare/v0.36.0...v0.36.1)\n\nUpdates `k8s.io/cli-runtime` from 0.36.0 to 0.36.1\n- [Commits](https://github.com/kubernetes/cli-runtime/compare/v0.36.0...v0.36.1)\n\nUpdates `k8s.io/client-go` from 0.36.0 to 0.36.1\n- [Changelog](https://github.com/kubernetes/client-go/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/kubernetes/client-go/compare/v0.36.0...v0.36.1)\n\nUpdates `sigs.k8s.io/controller-runtime` from 0.24.0 to 0.24.1\n- [Release notes](https://github.com/kubernetes-sigs/controller-runtime/releases)\n- [Changelog](https://github.com/kubernetes-sigs/controller-runtime/blob/main/RELEASE.md)\n- [Commits](https://github.com/kubernetes-sigs/controller-runtime/compare/v0.24.0...v0.24.1)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/apiextensions-apiserver\n  dependency-version: 0.36.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/cli-runtime\n  dependency-version: 0.36.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/client-go\n  dependency-version: 0.36.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: sigs.k8s.io/controller-runtime\n  dependency-version: 0.24.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/a8fff0a6bf128e5e31fb863b90b14ffc1a051617"
+        },
+        {
+          "sha": "1717439d149b68615d9f85049ab3ea39c38c98b0",
+          "author_date": "2026-06-18T06:44:58Z",
+          "message": "chore: bump up Trivy version to 0.71.1 (#2998)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/1717439d149b68615d9f85049ab3ea39c38c98b0"
+        },
+        {
+          "sha": "3d073500cfb4956371435fa4085f2f59b9ff6d57",
+          "author_date": "2026-06-18T10:32:21Z",
+          "message": "release: prepare v0.31.2 (#2988)\n\n* release: prepare v0.31.2\n\n* chore: use a correct checksum",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/3d073500cfb4956371435fa4085f2f59b9ff6d57"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.32.0",
+      "previous_release": "v0.31.2",
+      "commits": [
+        {
+          "sha": "d74f1c388c5e976c0e5120582f72e300fb70ee9a",
+          "author_date": "2026-06-22T11:56:22Z",
+          "message": "build(deps): bump golang.org/x/text in the golang group (#3005)\n\nBumps the golang group with 1 update: [golang.org/x/text](https://github.com/golang/text).\n\n\nUpdates `golang.org/x/text` from 0.37.0 to 0.38.0\n- [Release notes](https://github.com/golang/text/releases)\n- [Commits](https://github.com/golang/text/compare/v0.37.0...v0.38.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/text\n  dependency-version: 0.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: golang\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/d74f1c388c5e976c0e5120582f72e300fb70ee9a"
+        },
+        {
+          "sha": "39b520355d3ace9a3a94f8f03d4478f7d3b52f0f",
+          "author_date": "2026-06-22T11:56:58Z",
+          "message": "build(deps): bump github.com/onsi/ginkgo/v2 in the common group (#3004)\n\nBumps the common group with 1 update: [github.com/onsi/ginkgo/v2](https://github.com/onsi/ginkgo).\n\n\nUpdates `github.com/onsi/ginkgo/v2` from 2.29.0 to 2.30.0\n- [Release notes](https://github.com/onsi/ginkgo/releases)\n- [Changelog](https://github.com/onsi/ginkgo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/ginkgo/compare/v2.29.0...v2.30.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/onsi/ginkgo/v2\n  dependency-version: 2.30.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/39b520355d3ace9a3a94f8f03d4478f7d3b52f0f"
+        },
+        {
+          "sha": "daf91cfd495dc81d68930e42e2151fde7ac4edf3",
+          "author_date": "2026-07-07T05:39:20Z",
+          "message": "build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#3015)\n\nBumps ubi9/ubi-minimal from `1bc3c5c` to `463cae3`.\n\n---\nupdated-dependencies:\n- dependency-name: ubi9/ubi-minimal\n  dependency-version: 463cae32c6f6f5594b11a5c22de275016bd8545ce58a6373388e8b24f13fc15c\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/daf91cfd495dc81d68930e42e2151fde7ac4edf3"
+        },
+        {
+          "sha": "9e6aa0b1799d7aa72e96e0f94834022f8f69a50d",
+          "author_date": "2026-07-08T05:18:29Z",
+          "message": "fix: handle missing report CRDs during old report cleanup (#3018)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/9e6aa0b1799d7aa72e96e0f94834022f8f69a50d"
+        },
+        {
+          "sha": "8501418795f31bfcd1dac3cee792c1c24bf337e5",
+          "author_date": "2026-07-08T05:38:31Z",
+          "message": "chore: bump up Trivy version to v0.72.0 (#3017)\n\n* chore: bump up Trivy version to v0.72.0\n\n* chore: add missing deps\n\n* chore: bump up vuln deps\n\n* fix: don't use deprecated field\n\n* fix: update test data\n\n* chore: bump up Go version to 1.26.5",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/8501418795f31bfcd1dac3cee792c1c24bf337e5"
+        },
+        {
+          "sha": "508e7a46cba15440b2b6c67c743df423fddce120",
+          "author_date": "2026-07-08T05:39:28Z",
+          "message": "build(deps): bump the k8s group across 1 directory with 5 updates (#3003)\n\nBumps the k8s group with 3 updates in the / directory: [k8s.io/api](https://github.com/kubernetes/api), [k8s.io/apiextensions-apiserver](https://github.com/kubernetes/apiextensions-apiserver) and [k8s.io/cli-runtime](https://github.com/kubernetes/cli-runtime).\n\n\nUpdates `k8s.io/api` from 0.36.1 to 0.36.2\n- [Commits](https://github.com/kubernetes/api/compare/v0.36.1...v0.36.2)\n\nUpdates `k8s.io/apiextensions-apiserver` from 0.36.1 to 0.36.2\n- [Release notes](https://github.com/kubernetes/apiextensions-apiserver/releases)\n- [Commits](https://github.com/kubernetes/apiextensions-apiserver/compare/v0.36.1...v0.36.2)\n\nUpdates `k8s.io/apimachinery` from 0.36.1 to 0.36.2\n- [Commits](https://github.com/kubernetes/apimachinery/compare/v0.36.1...v0.36.2)\n\nUpdates `k8s.io/cli-runtime` from 0.36.1 to 0.36.2\n- [Commits](https://github.com/kubernetes/cli-runtime/compare/v0.36.1...v0.36.2)\n\nUpdates `k8s.io/client-go` from 0.36.1 to 0.36.2\n- [Changelog](https://github.com/kubernetes/client-go/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/kubernetes/client-go/compare/v0.36.1...v0.36.2)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/api\n  dependency-version: 0.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/apiextensions-apiserver\n  dependency-version: 0.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/apimachinery\n  dependency-version: 0.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/cli-runtime\n  dependency-version: 0.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/client-go\n  dependency-version: 0.36.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/508e7a46cba15440b2b6c67c743df423fddce120"
+        },
+        {
+          "sha": "1006872c1463e81a40d48298145625aefef2a02f",
+          "author_date": "2026-07-08T08:36:29Z",
+          "message": "release: prepare v0.32.0 (#3019)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/1006872c1463e81a40d48298145625aefef2a02f"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.33.0",
+      "previous_release": "v0.32.0",
+      "commits": [
+        {
+          "sha": "df3877a33f196d52f5694d6f1ef125f1fdcef6cb",
+          "author_date": "2026-08-04T08:18:33Z",
+          "message": "build(deps): bump golang.org/x/text in the golang group (#3020)\n\nBumps the golang group with 1 update: [golang.org/x/text](https://github.com/golang/text).\n\n\nUpdates `golang.org/x/text` from 0.38.0 to 0.39.0\n- [Release notes](https://github.com/golang/text/releases)\n- [Commits](https://github.com/golang/text/compare/v0.38.0...v0.39.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/text\n  dependency-version: 0.39.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: golang\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/df3877a33f196d52f5694d6f1ef125f1fdcef6cb"
+        },
+        {
+          "sha": "698db6d8a6fe8e3e450730401a5ef2b57277d2fa",
+          "author_date": "2026-08-04T08:24:29Z",
+          "message": "build(deps): bump the k8s group with 5 updates (#3028)\n\nBumps the k8s group with 5 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [k8s.io/api](https://github.com/kubernetes/api) | `0.36.2` | `0.36.3` |\n| [k8s.io/apiextensions-apiserver](https://github.com/kubernetes/apiextensions-apiserver) | `0.36.2` | `0.36.3` |\n| [k8s.io/apimachinery](https://github.com/kubernetes/apimachinery) | `0.36.2` | `0.36.3` |\n| [k8s.io/cli-runtime](https://github.com/kubernetes/cli-runtime) | `0.36.2` | `0.36.3` |\n| [k8s.io/client-go](https://github.com/kubernetes/client-go) | `0.36.2` | `0.36.3` |\n\n\nUpdates `k8s.io/api` from 0.36.2 to 0.36.3\n- [Commits](https://github.com/kubernetes/api/compare/v0.36.2...v0.36.3)\n\nUpdates `k8s.io/apiextensions-apiserver` from 0.36.2 to 0.36.3\n- [Release notes](https://github.com/kubernetes/apiextensions-apiserver/releases)\n- [Commits](https://github.com/kubernetes/apiextensions-apiserver/compare/v0.36.2...v0.36.3)\n\nUpdates `k8s.io/apimachinery` from 0.36.2 to 0.36.3\n- [Commits](https://github.com/kubernetes/apimachinery/compare/v0.36.2...v0.36.3)\n\nUpdates `k8s.io/cli-runtime` from 0.36.2 to 0.36.3\n- [Commits](https://github.com/kubernetes/cli-runtime/compare/v0.36.2...v0.36.3)\n\nUpdates `k8s.io/client-go` from 0.36.2 to 0.36.3\n- [Changelog](https://github.com/kubernetes/client-go/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/kubernetes/client-go/compare/v0.36.2...v0.36.3)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/api\n  dependency-version: 0.36.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/apiextensions-apiserver\n  dependency-version: 0.36.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/apimachinery\n  dependency-version: 0.36.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/cli-runtime\n  dependency-version: 0.36.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n- dependency-name: k8s.io/client-go\n  dependency-version: 0.36.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: k8s\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/698db6d8a6fe8e3e450730401a5ef2b57277d2fa"
+        },
+        {
+          "sha": "7d7874fa6bbd183e267877e3865b00ad6925d13f",
+          "author_date": "2026-08-05T07:17:16Z",
+          "message": "chore: bump up Trivy version to v0.73.0 (#3031)\n\n* chore: bump up Trivy version to v0.73.0\n\n* chore: bump up oras-go/v2 to v2.6.2",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/7d7874fa6bbd183e267877e3865b00ad6925d13f"
+        },
+        {
+          "sha": "5e34376b9f5aa6aa330fb360b6c26f828103fb5c",
+          "author_date": "2026-08-05T09:01:12Z",
+          "message": "release: prepare v0.33.0 (#3033)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/5e34376b9f5aa6aa330fb360b6c26f828103fb5c"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.34.0",
+      "previous_release": "v0.33.0",
+      "commits": [
+        {
+          "sha": "5874a7d3fb70941fb4d609275ee265cb4b8ac39e",
+          "author_date": "2026-08-24T08:22:45Z",
+          "message": "build(deps): bump the common group across 1 directory with 7 updates (#3048)\n\nBumps the common group with 7 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/aws/aws-sdk-go-v2](https://github.com/aws/aws-sdk-go-v2) | `1.43.0` | `1.43.6` |\n| [github.com/go-logr/logr](https://github.com/go-logr/logr) | `1.4.3` | `1.4.4` |\n| [github.com/google/go-containerregistry](https://github.com/google/go-containerregistry) | `0.21.7` | `0.21.9` |\n| [github.com/onsi/ginkgo/v2](https://github.com/onsi/ginkgo) | `2.30.0` | `2.32.1` |\n| [github.com/onsi/gomega](https://github.com/onsi/gomega) | `1.41.0` | `1.42.1` |\n| [github.com/prometheus/client_golang](https://github.com/prometheus/client_golang) | `1.23.2` | `1.24.1` |\n| [github.com/stretchr/testify](https://github.com/stretchr/testify) | `1.11.1` | `1.12.0` |\n\n\n\nUpdates `github.com/aws/aws-sdk-go-v2` from 1.43.0 to 1.43.6\n- [Release notes](https://github.com/aws/aws-sdk-go-v2/releases)\n- [Commits](https://github.com/aws/aws-sdk-go-v2/compare/v1.43.0...v1.43.6)\n\nUpdates `github.com/go-logr/logr` from 1.4.3 to 1.4.4\n- [Release notes](https://github.com/go-logr/logr/releases)\n- [Changelog](https://github.com/go-logr/logr/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/go-logr/logr/compare/v1.4.3...v1.4.4)\n\nUpdates `github.com/google/go-containerregistry` from 0.21.7 to 0.21.9\n- [Release notes](https://github.com/google/go-containerregistry/releases)\n- [Commits](https://github.com/google/go-containerregistry/compare/v0.21.7...v0.21.9)\n\nUpdates `github.com/onsi/ginkgo/v2` from 2.30.0 to 2.32.1\n- [Release notes](https://github.com/onsi/ginkgo/releases)\n- [Changelog](https://github.com/onsi/ginkgo/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/ginkgo/compare/v2.30.0...v2.32.1)\n\nUpdates `github.com/onsi/gomega` from 1.41.0 to 1.42.1\n- [Release notes](https://github.com/onsi/gomega/releases)\n- [Changelog](https://github.com/onsi/gomega/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/onsi/gomega/compare/v1.41.0...v1.42.1)\n\nUpdates `github.com/prometheus/client_golang` from 1.23.2 to 1.24.1\n- [Release notes](https://github.com/prometheus/client_golang/releases)\n- [Changelog](https://github.com/prometheus/client_golang/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prometheus/client_golang/compare/v1.23.2...v1.24.1)\n\nUpdates `github.com/stretchr/testify` from 1.11.1 to 1.12.0\n- [Release notes](https://github.com/stretchr/testify/releases)\n- [Commits](https://github.com/stretchr/testify/compare/v1.11.1...v1.12.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/aws/aws-sdk-go-v2\n  dependency-version: 1.43.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: common\n- dependency-name: github.com/go-logr/logr\n  dependency-version: 1.4.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: common\n- dependency-name: github.com/google/go-containerregistry\n  dependency-version: 0.21.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: common\n- dependency-name: github.com/onsi/ginkgo/v2\n  dependency-version: 2.32.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n- dependency-name: github.com/onsi/gomega\n  dependency-version: 1.42.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n- dependency-name: github.com/prometheus/client_golang\n  dependency-version: 1.24.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n- dependency-name: github.com/stretchr/testify\n  dependency-version: 1.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: common\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/5874a7d3fb70941fb4d609275ee265cb4b8ac39e"
+        },
+        {
+          "sha": "1b1c61bc1688cc097030530d36e1e8d949363409",
+          "author_date": "2026-08-24T09:42:13Z",
+          "message": "build(deps): bump golang.org/x/text (#3046)\n\nBumps the golang group with 1 update in the / directory: [golang.org/x/text](https://github.com/golang/text).\n\n\nUpdates `golang.org/x/text` from 0.40.0 to 0.41.0\n- [Release notes](https://github.com/golang/text/releases)\n- [Commits](https://github.com/golang/text/compare/v0.40.0...v0.41.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/text\n  dependency-version: 0.41.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: golang\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/1b1c61bc1688cc097030530d36e1e8d949363409"
+        },
+        {
+          "sha": "2eb8709f9b88f3d314769fb728b5768fdedac818",
+          "author_date": "2026-08-24T10:07:32Z",
+          "message": "chore: bump up Trivy version to 0.74.0 (#3041)\n\n* chore: bump up Trivy version to 0.74.0\n\n* chore: bump up Go version to 1.26.7",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/2eb8709f9b88f3d314769fb728b5768fdedac818"
+        },
+        {
+          "sha": "7107830178ae50e96e9f09d98976e51e6152759f",
+          "author_date": "2026-08-24T10:33:31Z",
+          "message": "release: prepare v0.34.0 (#3042)",
+          "html_url": "https://github.com/aquasecurity/trivy-operator/commit/7107830178ae50e96e9f09d98976e51e6152759f"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [
+      {
+        "id": 18586652542,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-17T08:10:30Z",
+        "updated_at": "2025-10-17T08:56:20Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18586652542"
+      },
+      {
+        "id": 18586652566,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-17T08:10:30Z",
+        "updated_at": "2025-10-17T08:16:02Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18586652566"
+      },
+      {
+        "id": 18551058408,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T05:15:53Z",
+        "updated_at": "2025-10-16T05:20:36Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18551058408"
+      },
+      {
+        "id": 18551058414,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T05:15:53Z",
+        "updated_at": "2025-10-16T05:57:23Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18551058414"
+      },
+      {
+        "id": 18363918252,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-09T02:45:25Z",
+        "updated_at": "2025-10-09T03:27:57Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18363918252"
+      },
+      {
+        "id": 18363918273,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-09T02:45:25Z",
+        "updated_at": "2025-10-09T02:50:08Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18363918273"
+      },
+      {
+        "id": 18301764796,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-10-07T04:55:17Z",
+        "updated_at": "2025-10-07T05:12:57Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18301764796"
+      },
+      {
+        "id": 18301764800,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-07T04:10:13Z",
+        "updated_at": "2025-10-07T04:17:09Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18301764800"
+      },
+      {
+        "id": 18301764802,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-07T04:33:05Z",
+        "updated_at": "2025-10-07T04:37:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/18301764802"
+      }
+    ],
+    "2025-11": [
+      {
+        "id": 19651902269,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T22:50:32Z",
+        "updated_at": "2025-11-24T22:55:38Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19651902269"
+      },
+      {
+        "id": 19651902285,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T22:50:32Z",
+        "updated_at": "2025-11-24T23:23:33Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19651902285"
+      },
+      {
+        "id": 19641984361,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T16:42:49Z",
+        "updated_at": "2025-11-24T17:21:02Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19641984361"
+      },
+      {
+        "id": 19465984470,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T12:22:01Z",
+        "updated_at": "2025-11-18T13:00:57Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19465984470"
+      },
+      {
+        "id": 19465984475,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T12:22:01Z",
+        "updated_at": "2025-11-18T12:26:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19465984475"
+      },
+      {
+        "id": 19443151199,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T04:09:44Z",
+        "updated_at": "2025-11-18T04:14:29Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19443151199"
+      },
+      {
+        "id": 19443151244,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-17T20:12:50Z",
+        "updated_at": "2025-11-17T20:52:31Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19443151244"
+      },
+      {
+        "id": 19159794021,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-07T06:05:17Z",
+        "updated_at": "2025-11-07T06:57:24Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19159794021"
+      },
+      {
+        "id": 19159794024,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-07T06:20:57Z",
+        "updated_at": "2025-11-07T06:25:43Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19159794024"
+      }
+    ],
+    "2025-12": [
+      {
+        "id": 20047096954,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-09T00:07:43Z",
+        "updated_at": "2025-12-09T00:12:50Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/20047096954"
+      },
+      {
+        "id": 20047096930,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-09T00:07:43Z",
+        "updated_at": "2025-12-09T00:42:59Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/20047096930"
+      },
+      {
+        "id": 19955044350,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-05T06:43:20Z",
+        "updated_at": "2025-12-05T06:48:34Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19955044350"
+      },
+      {
+        "id": 19955044383,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-05T06:43:20Z",
+        "updated_at": "2025-12-05T07:19:11Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19955044383"
+      },
+      {
+        "id": 19954913367,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-05T06:36:13Z",
+        "updated_at": "2025-12-05T06:41:51Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19954913367"
+      },
+      {
+        "id": 19914693840,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-04T01:35:45Z",
+        "updated_at": "2025-12-04T01:39:08Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19914693840"
+      },
+      {
+        "id": 19914693851,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-04T01:35:45Z",
+        "updated_at": "2025-12-04T01:41:09Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19914693851"
+      },
+      {
+        "id": 19914693847,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-04T01:35:45Z",
+        "updated_at": "2025-12-04T02:15:50Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19914693847"
+      },
+      {
+        "id": 19914620151,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-12-04T01:31:48Z",
+        "updated_at": "2025-12-04T01:34:53Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/19914620151"
+      }
+    ],
+    "2026-01": [
+      {
+        "id": 21508252257,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-30T07:39:45Z",
+        "updated_at": "2026-01-30T07:45:31Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21508252257"
+      },
+      {
+        "id": 21508033525,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-30T07:30:05Z",
+        "updated_at": "2026-01-30T07:35:15Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21508033525"
+      },
+      {
+        "id": 21508033557,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-30T07:47:33Z",
+        "updated_at": "2026-01-30T08:13:53Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21508033557"
+      },
+      {
+        "id": 21506895983,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-30T06:36:58Z",
+        "updated_at": "2026-01-30T07:13:59Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21506895983"
+      },
+      {
+        "id": 21506895985,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-30T06:36:58Z",
+        "updated_at": "2026-01-30T06:41:48Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21506895985"
+      },
+      {
+        "id": 21446167426,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-28T16:18:46Z",
+        "updated_at": "2026-01-28T16:57:21Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21446167426"
+      }
+    ],
+    "2026-02": [
+      {
+        "id": 22504931554,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T21:43:08Z",
+        "updated_at": "2026-02-27T22:23:08Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22504931554"
+      },
+      {
+        "id": 22477264441,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T07:36:41Z",
+        "updated_at": "2026-02-27T08:18:02Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22477264441"
+      },
+      {
+        "id": 22243804874,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T22:33:05Z",
+        "updated_at": "2026-02-20T22:38:35Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22243804874"
+      },
+      {
+        "id": 22243804861,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T22:33:05Z",
+        "updated_at": "2026-02-20T23:14:24Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22243804861"
+      },
+      {
+        "id": 22223095706,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T11:54:38Z",
+        "updated_at": "2026-02-20T12:35:53Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22223095706"
+      },
+      {
+        "id": 22223095689,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T11:54:38Z",
+        "updated_at": "2026-02-20T12:03:08Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22223095689"
+      },
+      {
+        "id": 22221669619,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T11:06:16Z",
+        "updated_at": "2026-02-20T11:48:06Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22221669619"
+      },
+      {
+        "id": 22218074397,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T09:08:44Z",
+        "updated_at": "2026-02-20T09:13:38Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22218074397"
+      },
+      {
+        "id": 22218074396,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-20T09:08:44Z",
+        "updated_at": "2026-02-20T09:54:54Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22218074396"
+      },
+      {
+        "id": 22108183524,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T17:12:17Z",
+        "updated_at": "2026-02-17T17:17:07Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22108183524"
+      },
+      {
+        "id": 22108183548,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-17T17:12:17Z",
+        "updated_at": "2026-02-17T17:31:08Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22108183548"
+      },
+      {
+        "id": 21923793464,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-11T21:30:09Z",
+        "updated_at": "2026-02-11T21:38:39Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21923793464"
+      },
+      {
+        "id": 21923793449,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-11T21:30:09Z",
+        "updated_at": "2026-02-11T22:15:04Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21923793449"
+      },
+      {
+        "id": 21884892456,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-10T22:29:35Z",
+        "updated_at": "2026-02-10T23:08:30Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21884892456"
+      },
+      {
+        "id": 21884892438,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-10T22:29:35Z",
+        "updated_at": "2026-02-10T22:34:54Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21884892438"
+      },
+      {
+        "id": 21857760782,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-10T09:14:44Z",
+        "updated_at": "2026-02-10T09:46:16Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21857760782"
+      },
+      {
+        "id": 21857760798,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-10T08:42:18Z",
+        "updated_at": "2026-02-10T08:47:57Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21857760798"
+      },
+      {
+        "id": 21857760763,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-10T08:42:18Z",
+        "updated_at": "2026-02-10T08:50:09Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21857760763"
+      },
+      {
+        "id": 21819391504,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-09T09:25:25Z",
+        "updated_at": "2026-02-09T09:29:26Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21819391504"
+      },
+      {
+        "id": 21819391550,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-09T09:25:25Z",
+        "updated_at": "2026-02-09T09:30:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21819391550"
+      },
+      {
+        "id": 21819391499,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-09T09:25:25Z",
+        "updated_at": "2026-02-09T10:06:26Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21819391499"
+      },
+      {
+        "id": 21815549892,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-09T07:03:41Z",
+        "updated_at": "2026-02-09T07:45:14Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21815549892"
+      },
+      {
+        "id": 21815549900,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-09T07:03:41Z",
+        "updated_at": "2026-02-09T07:12:37Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21815549900"
+      },
+      {
+        "id": 21763429327,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-06T19:37:33Z",
+        "updated_at": "2026-02-06T20:19:33Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21763429327"
+      },
+      {
+        "id": 21763418158,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-06T19:37:08Z",
+        "updated_at": "2026-02-06T19:44:41Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21763418158"
+      },
+      {
+        "id": 21684299456,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T18:55:16Z",
+        "updated_at": "2026-02-04T19:00:06Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21684299456"
+      },
+      {
+        "id": 21684299439,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T18:55:16Z",
+        "updated_at": "2026-02-04T19:36:51Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21684299439"
+      },
+      {
+        "id": 21668291479,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T10:41:28Z",
+        "updated_at": "2026-02-04T11:23:05Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21668291479"
+      },
+      {
+        "id": 21614509505,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-03T02:31:24Z",
+        "updated_at": "2026-02-03T03:15:05Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21614509505"
+      },
+      {
+        "id": 21614509506,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-03T02:31:24Z",
+        "updated_at": "2026-02-03T02:39:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21614509506"
+      },
+      {
+        "id": 21609013635,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-02T22:43:39Z",
+        "updated_at": "2026-02-02T22:58:42Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21609013635"
+      },
+      {
+        "id": 21609013631,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-02T22:43:39Z",
+        "updated_at": "2026-02-02T22:58:43Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21609013631"
+      },
+      {
+        "id": 21608987538,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-02T22:42:22Z",
+        "updated_at": "2026-02-02T22:57:25Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21608987538"
+      },
+      {
+        "id": 21578894401,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-02T05:47:57Z",
+        "updated_at": "2026-02-02T05:53:14Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21578894401"
+      },
+      {
+        "id": 21578894382,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-02T05:47:57Z",
+        "updated_at": "2026-02-02T06:20:51Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/21578894382"
+      }
+    ],
+    "2026-03": [
+      {
+        "id": 23319865978,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-20T04:04:06Z",
+        "updated_at": "2026-03-20T04:38:31Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/23319865978"
+      },
+      {
+        "id": 23319865974,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-19T22:26:27Z",
+        "updated_at": "2026-03-19T22:26:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/23319865974"
+      },
+      {
+        "id": 23192703366,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-17T11:48:34Z",
+        "updated_at": "2026-03-17T11:57:00Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/23192703366"
+      },
+      {
+        "id": 23192703421,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-17T11:48:34Z",
+        "updated_at": "2026-03-17T11:48:51Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/23192703421"
+      },
+      {
+        "id": 23192703409,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-17T11:48:34Z",
+        "updated_at": "2026-03-17T12:38:19Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/23192703409"
+      },
+      {
+        "id": 22916595963,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-10T17:53:08Z",
+        "updated_at": "2026-03-10T18:04:41Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22916595963"
+      },
+      {
+        "id": 22916595959,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-10T17:53:08Z",
+        "updated_at": "2026-03-10T17:54:20Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22916595959"
+      },
+      {
+        "id": 22916595947,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-10T17:53:08Z",
+        "updated_at": "2026-03-10T18:01:31Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22916595947"
+      },
+      {
+        "id": 22916596032,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-10T17:53:08Z",
+        "updated_at": "2026-03-10T18:35:33Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22916596032"
+      },
+      {
+        "id": 22916486087,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-10T17:50:24Z",
+        "updated_at": "2026-03-10T17:50:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22916486087"
+      },
+      {
+        "id": 22916467325,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-10T17:49:58Z",
+        "updated_at": "2026-03-10T17:50:34Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22916467325"
+      },
+      {
+        "id": 22645307676,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-03T22:17:37Z",
+        "updated_at": "2026-03-03T22:51:34Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22645307676"
+      },
+      {
+        "id": 22645307688,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-04T04:44:41Z",
+        "updated_at": "2026-03-04T04:49:40Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22645307688"
+      },
+      {
+        "id": 22644482709,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-03T21:54:25Z",
+        "updated_at": "2026-03-03T22:05:12Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22644482709"
+      },
+      {
+        "id": 22599167400,
+        "name": "Private Registries E2E",
+        "workflow_id": 51735731,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-03T05:04:40Z",
+        "updated_at": "2026-03-03T05:14:15Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22599167400"
+      },
+      {
+        "id": 22599167425,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-02T22:43:48Z",
+        "updated_at": "2026-03-02T23:23:37Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/22599167425"
+      }
+    ],
+    "2026-04": [],
+    "2026-05": [
+      {
+        "id": 26516755738,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-27T14:14:29Z",
+        "updated_at": "2026-05-27T14:14:55Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26516755738"
+      },
+      {
+        "id": 26516755428,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-27T14:14:29Z",
+        "updated_at": "2026-05-27T14:59:09Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26516755428"
+      },
+      {
+        "id": 26441097558,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-26T08:24:49Z",
+        "updated_at": "2026-05-26T08:25:04Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26441097558"
+      },
+      {
+        "id": 26441097550,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-26T08:24:49Z",
+        "updated_at": "2026-05-26T08:53:05Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26441097550"
+      },
+      {
+        "id": 26440492766,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-26T08:11:18Z",
+        "updated_at": "2026-05-26T08:11:45Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26440492766"
+      },
+      {
+        "id": 26147328524,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-20T07:12:18Z",
+        "updated_at": "2026-05-20T07:55:38Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26147328524"
+      },
+      {
+        "id": 26147328598,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-20T07:12:18Z",
+        "updated_at": "2026-05-20T07:12:41Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26147328598"
+      },
+      {
+        "id": 25843758658,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-14T05:34:34Z",
+        "updated_at": "2026-05-14T05:34:45Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/25843758658"
+      },
+      {
+        "id": 25843758657,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-18T05:44:44Z",
+        "updated_at": "2026-05-18T06:12:16Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/25843758657"
+      },
+      {
+        "id": 25717158543,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-12T06:18:23Z",
+        "updated_at": "2026-05-12T06:18:39Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/25717158543"
+      },
+      {
+        "id": 25717158414,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-12T06:18:23Z",
+        "updated_at": "2026-05-12T06:47:35Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/25717158414"
+      },
+      {
+        "id": 25682078102,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-11T16:10:05Z",
+        "updated_at": "2026-05-11T16:10:36Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/25682078102"
+      },
+      {
+        "id": 25682078148,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-11T16:10:05Z",
+        "updated_at": "2026-05-11T16:50:43Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/25682078148"
+      }
+    ],
+    "2026-06": [
+      {
+        "id": 27950855005,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-22T11:57:02Z",
+        "updated_at": "2026-06-22T12:36:01Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27950855005"
+      },
+      {
+        "id": 27950854998,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-22T11:57:02Z",
+        "updated_at": "2026-06-22T11:57:20Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27950854998"
+      },
+      {
+        "id": 27950825175,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-22T11:56:27Z",
+        "updated_at": "2026-06-22T11:56:47Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27950825175"
+      },
+      {
+        "id": 27753474592,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-18T10:32:25Z",
+        "updated_at": "2026-06-18T10:32:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27753474592"
+      },
+      {
+        "id": 27753474640,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-06-18T10:32:25Z",
+        "updated_at": "2026-06-18T10:41:00Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27753474640"
+      },
+      {
+        "id": 27753474632,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-18T10:32:25Z",
+        "updated_at": "2026-06-18T10:44:06Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27753474632"
+      },
+      {
+        "id": 27741834608,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-18T06:45:01Z",
+        "updated_at": "2026-06-18T07:21:54Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27741834608"
+      },
+      {
+        "id": 27741834630,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-18T06:45:01Z",
+        "updated_at": "2026-06-18T06:45:20Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27741834630"
+      },
+      {
+        "id": 27741834618,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-18T06:45:01Z",
+        "updated_at": "2026-06-18T06:56:47Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27741834618"
+      },
+      {
+        "id": 27693411778,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T13:43:04Z",
+        "updated_at": "2026-06-17T14:22:15Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27693411778"
+      },
+      {
+        "id": 27693412276,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T13:43:04Z",
+        "updated_at": "2026-06-17T13:43:25Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27693412276"
+      },
+      {
+        "id": 27693369525,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T13:42:24Z",
+        "updated_at": "2026-06-17T13:42:39Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27693369525"
+      },
+      {
+        "id": 27689820253,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T12:44:01Z",
+        "updated_at": "2026-06-17T12:44:23Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27689820253"
+      },
+      {
+        "id": 27689820065,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T12:44:01Z",
+        "updated_at": "2026-06-17T12:55:20Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27689820065"
+      },
+      {
+        "id": 27689820108,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T12:44:01Z",
+        "updated_at": "2026-06-17T13:26:08Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27689820108"
+      },
+      {
+        "id": 27677641809,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T08:58:01Z",
+        "updated_at": "2026-06-17T08:58:22Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27677641809"
+      },
+      {
+        "id": 27677641785,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T08:58:01Z",
+        "updated_at": "2026-06-17T09:42:35Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27677641785"
+      },
+      {
+        "id": 27677579460,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-17T08:56:55Z",
+        "updated_at": "2026-06-17T08:57:17Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27677579460"
+      },
+      {
+        "id": 27594185699,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-16T04:28:39Z",
+        "updated_at": "2026-06-16T04:28:59Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27594185699"
+      },
+      {
+        "id": 27594185698,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-16T05:13:04Z",
+        "updated_at": "2026-06-16T05:47:45Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27594185698"
+      },
+      {
+        "id": 27525364234,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-15T05:09:34Z",
+        "updated_at": "2026-06-15T05:56:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27525364234"
+      },
+      {
+        "id": 27525364255,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-15T05:09:34Z",
+        "updated_at": "2026-06-15T05:09:51Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27525364255"
+      },
+      {
+        "id": 27120134579,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-08T06:37:27Z",
+        "updated_at": "2026-06-08T06:38:00Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27120134579"
+      },
+      {
+        "id": 27120134602,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-09T06:02:12Z",
+        "updated_at": "2026-06-09T06:41:12Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/27120134602"
+      },
+      {
+        "id": 26939912221,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-04T08:20:59Z",
+        "updated_at": "2026-06-04T09:00:51Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26939912221"
+      },
+      {
+        "id": 26939912177,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-04T08:20:59Z",
+        "updated_at": "2026-06-04T08:21:20Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26939912177"
+      },
+      {
+        "id": 26866020240,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-03T05:40:26Z",
+        "updated_at": "2026-06-03T06:15:53Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26866020240"
+      },
+      {
+        "id": 26866020207,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-03T05:40:26Z",
+        "updated_at": "2026-06-03T05:40:41Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26866020207"
+      },
+      {
+        "id": 26819825302,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T12:31:04Z",
+        "updated_at": "2026-06-02T13:06:59Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26819825302"
+      },
+      {
+        "id": 26819825419,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T12:31:04Z",
+        "updated_at": "2026-06-02T12:31:19Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26819825419"
+      },
+      {
+        "id": 26819825089,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T12:31:04Z",
+        "updated_at": "2026-06-02T12:42:02Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26819825089"
+      },
+      {
+        "id": 26817962345,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T11:53:27Z",
+        "updated_at": "2026-06-02T11:53:42Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26817962345"
+      },
+      {
+        "id": 26797916287,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T04:12:21Z",
+        "updated_at": "2026-06-02T04:23:06Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26797916287"
+      },
+      {
+        "id": 26797916276,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-06-02T04:12:21Z",
+        "updated_at": "2026-06-02T04:35:16Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26797916276"
+      },
+      {
+        "id": 26797916273,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T04:12:21Z",
+        "updated_at": "2026-06-02T04:12:35Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26797916273"
+      },
+      {
+        "id": 26774352954,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T18:36:40Z",
+        "updated_at": "2026-06-01T18:47:37Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26774352954"
+      },
+      {
+        "id": 26774352246,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T18:36:39Z",
+        "updated_at": "2026-06-01T18:36:53Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26774352246"
+      },
+      {
+        "id": 26774352236,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T18:36:39Z",
+        "updated_at": "2026-06-01T19:15:43Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26774352236"
+      },
+      {
+        "id": 26736642854,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T05:18:21Z",
+        "updated_at": "2026-06-01T05:18:39Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26736642854"
+      },
+      {
+        "id": 26736642849,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-06-01T05:18:21Z",
+        "updated_at": "2026-06-01T05:46:03Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26736642849"
+      },
+      {
+        "id": 26736627835,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T05:17:50Z",
+        "updated_at": "2026-06-01T05:18:02Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/26736627835"
+      }
+    ],
+    "2026-07": [
+      {
+        "id": 28929215305,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T08:36:33Z",
+        "updated_at": "2026-07-08T09:12:43Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28929215305"
+      },
+      {
+        "id": 28929214852,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T08:36:33Z",
+        "updated_at": "2026-07-08T08:36:52Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28929214852"
+      },
+      {
+        "id": 28929215073,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T08:36:33Z",
+        "updated_at": "2026-07-08T08:47:45Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28929215073"
+      },
+      {
+        "id": 28920280257,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T05:39:31Z",
+        "updated_at": "2026-07-08T06:20:28Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28920280257"
+      },
+      {
+        "id": 28920280266,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T05:39:31Z",
+        "updated_at": "2026-07-08T05:39:51Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28920280266"
+      },
+      {
+        "id": 28920243199,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T05:38:35Z",
+        "updated_at": "2026-07-08T05:38:52Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28920243199"
+      },
+      {
+        "id": 28920243177,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T05:38:35Z",
+        "updated_at": "2026-07-08T05:50:22Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28920243177"
+      },
+      {
+        "id": 28919433493,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-08T05:18:32Z",
+        "updated_at": "2026-07-08T05:18:45Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28919433493"
+      },
+      {
+        "id": 28844260005,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-07T05:39:23Z",
+        "updated_at": "2026-07-07T06:25:12Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28844260005"
+      },
+      {
+        "id": 28844260023,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-07T05:39:23Z",
+        "updated_at": "2026-07-07T05:39:35Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/28844260023"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 32717385672,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T10:33:34Z",
+        "updated_at": "2026-08-24T11:13:12Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/32717385672"
+      },
+      {
+        "id": 32717385624,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T10:33:34Z",
+        "updated_at": "2026-08-24T10:44:14Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/32717385624"
+      },
+      {
+        "id": 32717385712,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T10:33:34Z",
+        "updated_at": "2026-08-24T10:34:06Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/32717385712"
+      },
+      {
+        "id": 32715171985,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T10:07:36Z",
+        "updated_at": "2026-08-24T10:20:04Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/32715171985"
+      },
+      {
+        "id": 32715172016,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T10:07:36Z",
+        "updated_at": "2026-08-24T10:07:50Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/32715172016"
+      },
+      {
+        "id": 32712973199,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T09:42:21Z",
+        "updated_at": "2026-08-24T09:42:41Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/32712973199"
+      },
+      {
+        "id": 32706008149,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T08:22:49Z",
+        "updated_at": "2026-08-24T09:03:44Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/32706008149"
+      },
+      {
+        "id": 32706008076,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-24T08:22:49Z",
+        "updated_at": "2026-08-24T08:23:01Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/32706008076"
+      },
+      {
+        "id": 30991458464,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-05T09:01:16Z",
+        "updated_at": "2026-08-05T09:01:32Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30991458464"
+      },
+      {
+        "id": 30991458653,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-05T09:01:16Z",
+        "updated_at": "2026-08-05T09:37:25Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30991458653"
+      },
+      {
+        "id": 30991458461,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-05T09:01:16Z",
+        "updated_at": "2026-08-05T09:13:04Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30991458461"
+      },
+      {
+        "id": 30984441268,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-05T07:17:19Z",
+        "updated_at": "2026-08-05T07:17:34Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30984441268"
+      },
+      {
+        "id": 30984441185,
+        "name": "Helm",
+        "workflow_id": 48404884,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-05T07:17:19Z",
+        "updated_at": "2026-08-05T07:29:00Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30984441185"
+      },
+      {
+        "id": 30984441184,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-05T07:17:19Z",
+        "updated_at": "2026-08-05T07:57:45Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30984441184"
+      },
+      {
+        "id": 30891823850,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-04T08:24:32Z",
+        "updated_at": "2026-08-04T09:04:05Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30891823850"
+      },
+      {
+        "id": 30891823830,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-04T08:24:32Z",
+        "updated_at": "2026-08-04T08:24:46Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30891823830"
+      },
+      {
+        "id": 30891416558,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-04T08:18:36Z",
+        "updated_at": "2026-08-04T08:18:50Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/30891416558"
+      }
+    ],
+    "2026-09": [
+      {
+        "id": 35706150467,
+        "name": "Build",
+        "workflow_id": 25664162,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-22T08:41:09Z",
+        "updated_at": "2026-09-22T09:18:56Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/35706150467"
+      },
+      {
+        "id": 35706150497,
+        "name": "GitHub Actions Security Analysis with zizmor",
+        "workflow_id": 244262368,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-22T08:41:09Z",
+        "updated_at": "2026-09-22T08:41:39Z",
+        "html_url": "https://github.com/aquasecurity/trivy-operator/actions/runs/35706150497"
+      }
+    ]
+  }
+}

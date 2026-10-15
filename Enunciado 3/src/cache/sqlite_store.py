@@ -68,7 +68,7 @@ class SQLiteStore:
         self._path = Path(db_path)
         self._path.parent.mkdir(parents=True, exist_ok=True)
         self._clock = clock or _default_clock
-        self._conn = sqlite3.connect(self._path, check_same_thread=False)
+        self._conn = sqlite3.connect(self._path, timeout=60.0, check_same_thread=False)
         self._conn.row_factory = sqlite3.Row
         self._init_schema()
 
