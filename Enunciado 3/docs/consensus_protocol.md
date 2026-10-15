@@ -13,6 +13,20 @@ reunião. O script `scripts/agreement.py` lê a tabela de decisões abaixo.
   (PLAN T12); a conclusão está registrada em `labels_X.audit.json`.
 - A concordância é medida **antes** de qualquer discussão entre os avaliadores.
 
+### Avaliadores
+
+| Arquivo | Avaliador | Concluído em (UTC) |
+|---|---|---|
+| `labels_A.csv` | integrante do grupo (humano) | 2026-10-14 21:45 |
+| `labels_B.csv` | **Claude (modelo de linguagem, Anthropic)** | 2026-10-15 19:44 |
+| `labels_C.csv` | @pedroseabra27 (humano) | 2026-10-15 14:45 |
+
+O avaliador B não é humano: como a terceira rotulagem humana não foi feita,
+o modelo rotulou os mesmos dossiês (`data/gold/dossiers/`) sem acesso a
+`labels_A.csv`, `labels_C.csv` ou à saída da heurística (ver
+`labels_B.audit.json`). O κ deve, portanto, ser lido como concordância entre
+dois humanos e um modelo, o que deve constar como limitação no relatório.
+
 ## 2. Concordância
 
 O κ de Fleiss (`statsmodels`: `aggregate_raters` + `fleiss_kappa`) é calculado
@@ -51,6 +65,7 @@ maioria prevalece) e aparecem como aviso no relatório.
 
 | Data | Participantes | Itens decididos | Observações |
 |---|---|---:|---|
+| 2026-10-15 | @luisajardim | 5 | Decisões propostas pelo Claude a partir dos dossiês e aceitas por @luisajardim. |
 
 ## 5. Decisões de desempate
 
@@ -59,3 +74,8 @@ Uma linha por item empatado. `coluna` é `project_type` ou `delivers_to_user`;
 
 | full_name | coluna | decisão | justificativa |
 |---|---|---|---|
+| BoundaryML/baml | project_type | biblioteca/framework | Usado como framework de aplicação que gera código cliente para LLMs. |
+| goplus/xgo | project_type | ferramenta CLI | Linguagem distribuída e usada como toolchain de linha de comando. |
+| francescopace/espectre | delivers_to_user | sim | Firmware versionado que os usuários instalam nos dispositivos. |
+| openebs/openebs | delivers_to_user | incerto | Repositório guarda-chuva; os commits das releases são só docs/adopters. |
+| project-chip/connectedhomeip | delivers_to_user | incerto | SDK com tags que incluem eventos de teste, não só entregas. |

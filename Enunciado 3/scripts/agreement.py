@@ -291,7 +291,7 @@ def run(args: argparse.Namespace) -> int:
 
     for r in results:
         kappa = "—" if math.isnan(r.kappa) else f"{r.kappa:.3f}"
-        print(f"{r.dimension:<10} κ={kappa:>6}  ({r.interpretation}, n={r.items})")
+        print(f"{r.dimension:<10} kappa={kappa:>6}  ({r.interpretation}, n={r.items})")
     print(f"consenso: {args.output}  relatório: {args.report}")
     if consensus.pending:
         print(f"{len(consensus.pending)} empate(s) 1-1-1 sem decisão; veja o relatório.")
