@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import sys
 from collections.abc import Sequence
 from dataclasses import asdict, dataclass
@@ -67,6 +68,9 @@ KEYWORD_SETS: dict[str, tuple[str, ...]] = {
 }
 MATCH_MODES = {"substring": False, "palavra": True}
 CUTOFFS = tuple(round(0.25 * step, 2) for step in range(1, 13))  # 0,25 .. 3,00
+FEATURE_WEIGHTS = (0.0, 1.0, 2.0)  # penalidade da v4 para commits ``feat``
+CV_FOLDS = 5
+CV_REPEATS = 20
 
 START_MARKER = "<!-- tuning:start -->"
 END_MARKER = "<!-- tuning:end -->"
@@ -87,12 +91,15 @@ class Candidate:
     keywords: str | None = None
     match: str | None = None
     cutoff: float | None = None
+    feature_weight: float | None = None
 
     @property
     def name(self) -> str:
         parts = [self.version]
         if self.keywords:
             parts += [f"kw={self.keywords}", f"match={self.match}"]
+        if self.feature_weight is not None:
+            parts.append(f"feat=-{self.feature_weight:g}")
         if self.cutoff is not None:
             parts.append(f"corte={self.cutoff:.2f}")
         return " ".join(parts)
@@ -143,6 +150,10 @@ def candidates() -> list[Candidate]:
                     result.append(Candidate(version, keywords, match))
                 else:
                     result += [Candidate(version, keywords, match, c) for c in CUTOFFS]
+    for keywords in KEYWORD_SETS:
+        for match in MATCH_MODES:
+            for weight in FEATURE_WEIGHTS:
+                result += [Candidate("v4", keywords, match, c, weight) for c in CUTOFFS]
     return result
 
 
@@ -155,8 +166,19 @@ def predict(candidate: Candidate, items: Sequence[Item]) -> list[bool]:
     ratios = [cfr_release.keyword_ratio(i.messages, pattern) for i in items]
     if candidate.version == "v2":
         return [cfr_release.v2(i.tag, i.previous_tag, r) for i, r in zip(items, ratios, strict=True)]
+    if candidate.version == "v3":
+        return [
+            cfr_release.v3(i.tag, i.previous_tag, r, candidate.cutoff)
+            for i, r in zip(items, ratios, strict=True)
+        ]
     return [
-        cfr_release.v3(i.tag, i.previous_tag, r, candidate.cutoff)
+        cfr_release.v4(
+            i.tag,
+            r,
+            cfr_release.has_feature_commit(i.messages),
+            candidate.feature_weight,
+            candidate.cutoff,
+        )
         for i, r in zip(items, ratios, strict=True)
     ]
 
@@ -170,6 +192,42 @@ def best_of(results: Sequence[tuple[Candidate, cfr_release.Scores]]):
     return max(results, key=lambda pair: pair[1].f1)  # max devolve o primeiro empatado
 
 
+def cross_validate(items: Sequence[Item]) -> dict[str, float]:
+    """F1 fora da amostra: escolhe a combinação nos repositórios de treino e
+    avalia nos repositórios deixados de fora (k-fold por repositório, repetido).
+
+    Mede quanto do F1 da seleção na amostra inteira é otimismo do tuning.
+    """
+    expected = [i.expected for i in items]
+    predictions = [predict(c, items) for c in candidates()]
+    repos = sorted({i.full_name for i in items})
+    scores = []
+    for seed in range(CV_REPEATS):
+        shuffled = repos[:]
+        random.Random(seed).shuffle(shuffled)
+        out_of_fold: list[bool] = [False] * len(items)
+        for fold in range(CV_FOLDS):
+            held_out = set(shuffled[fold::CV_FOLDS])
+            train = [k for k, i in enumerate(items) if i.full_name not in held_out]
+            test = [k for k, i in enumerate(items) if i.full_name in held_out]
+            best = max(
+                predictions,
+                key=lambda p: cfr_release.evaluate(
+                    [p[k] for k in train], [expected[k] for k in train]
+                ).f1,
+            )
+            for k in test:
+                out_of_fold[k] = best[k]
+        scores.append(cfr_release.evaluate(out_of_fold, expected).f1)
+    return {
+        "folds": CV_FOLDS,
+        "repeats": CV_REPEATS,
+        "f1_mean": round(sum(scores) / len(scores), 4),
+        "f1_min": round(min(scores), 4),
+        "f1_max": round(max(scores), 4),
+    }
+
+
 def coverage(items: Sequence[Item]) -> dict[str, int]:
     return {
         "items": len(items),
@@ -179,7 +237,14 @@ def coverage(items: Sequence[Item]) -> dict[str, int]:
     }
 
 
-def metrics_payload(results, items: Sequence[Item]) -> dict[str, Any]:
+def best_per_version(results) -> dict[str, tuple[Candidate, cfr_release.Scores]]:
+    versions = dict.fromkeys(c.version for c, _ in results)
+    return {v: best_of([pair for pair in results if pair[0].version == v]) for v in versions}
+
+
+def metrics_payload(
+    results, items: Sequence[Item], cv: dict[str, float] | None = None
+) -> dict[str, Any]:
     candidate, scores = best_of(results)
     return {
         "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
@@ -194,6 +259,11 @@ def metrics_payload(results, items: Sequence[Item]) -> dict[str, Any]:
             "f1": round(scores.f1, 4),
             **asdict(scores),
         },
+        "best_per_version": {
+            version: {"name": c.name, "f1": round(s.f1, 4)}
+            for version, (c, s) in best_per_version(results).items()
+        },
+        "cross_validation": cv,
         "candidates_tested": len(results),
         **coverage(items),
     }
@@ -216,6 +286,26 @@ def render_history(results, items: Sequence[Item], payload: dict[str, Any]) -> s
         f"- **Melhor: {best['name']}** — precisão {best['precision']:.3f}, "
         f"recall {best['recall']:.3f}, F1 {best['f1']:.3f} "
         f"({'atinge' if payload['meets_target'] else 'NÃO atinge'} a meta de {TARGET_F1:.2f})",
+    ]
+    cv = payload.get("cross_validation")
+    if cv:
+        lines.append(
+            f"- F1 fora da amostra ({cv['folds']}-fold por repositório, {cv['repeats']} "
+            f"repetições): média {cv['f1_mean']:.3f} (mín. {cv['f1_min']:.3f}, "
+            f"máx. {cv['f1_max']:.3f})"
+        )
+    lines += [
+        "",
+        "### Melhor combinação de cada versão",
+        "",
+        "| Versão | Combinação | F1 |",
+        "|---|---|---:|",
+        *(
+            f"| {version} | {entry['name']} | {entry['f1']:.3f} |"
+            for version, entry in payload["best_per_version"].items()
+        ),
+        "",
+        "### Todas as combinações",
         "",
         "| Combinação | Precisão | Recall | F1 | TP | FP | FN | TN |",
         "|---|---:|---:|---:|---:|---:|---:|---:|",
@@ -246,7 +336,7 @@ def run(args: argparse.Namespace) -> int:
         raise ValueError(f"{args.consensus} não existe; rode scripts/agreement.py antes (T13)")
     items = load_items(args.consensus, args.input_dir)
     results = tune(items)
-    payload = metrics_payload(results, items)
+    payload = metrics_payload(results, items, cross_validate(items))
 
     args.metrics.parent.mkdir(parents=True, exist_ok=True)
     args.metrics.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -257,6 +347,7 @@ def run(args: argparse.Namespace) -> int:
           f"({payload['items_with_commits']} com commits)")
     print(f"melhor: {best['name']}  P={best['precision']:.3f} R={best['recall']:.3f} "
           f"F1={best['f1']:.3f}  meta {TARGET_F1:.2f}: {'ok' if payload['meets_target'] else 'NÃO'}")
+    print(f"F1 fora da amostra (media CV): {payload['cross_validation']['f1_mean']:.3f}")
     return 0 if payload["meets_target"] else 1
 
 

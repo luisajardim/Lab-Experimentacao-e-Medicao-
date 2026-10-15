@@ -85,7 +85,9 @@ def test_candidates_cover_all_versions() -> None:
     assert names[0] == "v1"
     assert "v2 kw=base match=substring" in names
     assert "v3 kw=ampliado match=palavra corte=3.00" in names
-    assert len(names) == 1 + 4 + 4 * len(tune_cfr.CUTOFFS)
+    assert "v4 kw=base match=palavra feat=-1 corte=1.50" in names
+    cutoffs, weights = len(tune_cfr.CUTOFFS), len(tune_cfr.FEATURE_WEIGHTS)
+    assert len(names) == 1 + 4 + 4 * cutoffs + 4 * weights * cutoffs
 
 
 def test_main_selects_best_and_writes_outputs(tmp_path: Path) -> None:
@@ -108,6 +110,8 @@ def test_main_selects_best_and_writes_outputs(tmp_path: Path) -> None:
     assert payload["meets_target"] is True
     assert payload["items"] == 4
     assert payload["items_with_commits"] == 4
+    assert payload["best_per_version"]["v1"]["f1"] == 0.5
+    assert set(payload["cross_validation"]) == {"folds", "repeats", "f1_mean", "f1_min", "f1_max"}
 
     text = history.read_text(encoding="utf-8")
     assert text.startswith("# Histórico\n\nTexto manual.")

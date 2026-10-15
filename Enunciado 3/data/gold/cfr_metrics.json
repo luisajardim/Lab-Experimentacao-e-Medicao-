@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-10-15T19:52:26+00:00",
+  "target_f1": 0.7,
+  "meets_target": true,
+  "best": {
+    "name": "v4 kw=base match=palavra feat=-1 corte=1.50",
+    "version": "v4",
+    "keywords": "base",
+    "match": "palavra",
+    "cutoff": 1.5,
+    "feature_weight": 1.0,
+    "keyword_list": [
+      "fix",
+      "revert",
+      "hotfix"
+    ],
+    "precision": 0.6437,
+    "recall": 0.7887,
+    "f1": 0.7089,
+    "tp": 56,
+    "fp": 31,
+    "fn": 15,
+    "tn": 198
+  },
+  "best_per_version": {
+    "v1": {
+      "name": "v1",
+      "f1": 0.5279
+    },
+    "v2": {
+      "name": "v2 kw=base match=palavra",
+      "f1": 0.4189
+    },
+    "v3": {
+      "name": "v3 kw=base match=palavra corte=1.50",
+      "f1": 0.6335
+    },
+    "v4": {
+      "name": "v4 kw=base match=palavra feat=-1 corte=1.50",
+      "f1": 0.7089
+    }
+  },
+  "cross_validation": {
+    "folds": 5,
+    "repeats": 20,
+    "f1_mean": 0.6934,
+    "f1_min": 0.6575,
+    "f1_max": 0.7089
+  },
+  "candidates_tested": 197,
+  "items": 300,
+  "positives": 71,
+  "items_with_commits": 289,
+  "items_with_previous_release": 289
+}

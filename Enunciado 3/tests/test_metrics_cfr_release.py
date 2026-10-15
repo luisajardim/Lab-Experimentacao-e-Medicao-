@@ -68,6 +68,31 @@ def test_v2_and_v3() -> None:
     assert cfr_release.v3("v1.2.4", "v1.2.3", 0.0, cutoff=1.0)
 
 
+@pytest.mark.parametrize(
+    ("tag", "expected"),
+    [("1.45.1", True), ("rel/v5.6.1", True), ("v0.33.14-beta", True),
+     ("v2.0.0", False), ("rel/v5.6", False), ("nightly", False), (None, False)],
+)
+def test_is_patch_version(tag: str | None, expected: bool) -> None:
+    assert cfr_release.is_patch_version(tag) is expected
+
+
+def test_has_feature_commit() -> None:
+    assert cfr_release.has_feature_commit(["fix: a", "feat(ui): new panel"])
+    assert cfr_release.has_feature_commit(["  FEAT: x"])
+    assert not cfr_release.has_feature_commit(["fix: a", "featured docs", "chore: feat flag"])
+    assert not cfr_release.has_feature_commit(None)
+
+
+def test_v4() -> None:
+    # backport: patch > 0 mesmo com a release anterior de outra linha
+    assert cfr_release.v4_score("1.45.1", 0.5, False, 1.0) == pytest.approx(2.0)
+    assert cfr_release.v4("1.45.1", 0.5, False, 1.0, cutoff=1.5)
+    assert not cfr_release.v4("1.45.1", 0.5, True, 1.0, cutoff=1.5)  # penalidade feat
+    assert not cfr_release.v4("2.0.0", 0.5, False, 1.0, cutoff=1.5)
+    assert cfr_release.v4("2.0.0", 1.0, True, 0.0, cutoff=1.5)
+
+
 def test_evaluate() -> None:
     scores = cfr_release.evaluate(
         [True, True, False, False, True], [True, False, True, False, True]

@@ -8,7 +8,9 @@ anterior quebrou. Três versões da heurística, todas funções puras (sem I/O)
 * **v2** — v1 **ou** algum commit da release com mensagem contendo uma das
   palavras-chave (``fix``, ``revert``, ``hotfix``; sem diferenciar maiúsculas);
 * **v3** — pontuação ``1 · patch_only + 2 · fração de commits com palavra-chave``,
-  corretiva se a pontuação for ≥ ``cutoff`` (tunável).
+  corretiva se a pontuação for ≥ ``cutoff`` (tunável);
+* **v4** — v3 trocando ``patch_only`` por ``PATCH > 0`` na própria tag (robusto a
+  backports) e subtraindo ``feature_weight`` se houver commit ``feat``.
 
 A escolha da melhor combinação contra o rótulo de consenso fica em
 ``scripts/tune_cfr.py``.
@@ -78,6 +80,41 @@ def v3_score(tag: str | None, previous_tag: str | None, ratio: float) -> float:
 
 def v3(tag: str | None, previous_tag: str | None, ratio: float, cutoff: float) -> bool:
     return v3_score(tag, previous_tag, ratio) >= cutoff
+
+
+# --- v4: refinamento após a v3 não atingir F1 >= 0,70 no consenso ----------
+
+_FEATURE_COMMIT = re.compile(r"^\s*feat\b", re.IGNORECASE)
+
+
+def is_patch_version(tag: str | None) -> bool:
+    """``PATCH > 0`` na própria tag, sem depender da release cronológica anterior.
+
+    A v1 compara com a release publicada imediatamente antes, que em backports
+    é de outra linha (ex.: ``1.45.1`` publicada depois de ``1.46.6``).
+    """
+    version = semver(tag)
+    return version is not None and version[2] > 0
+
+
+def has_feature_commit(messages: Iterable[str] | None) -> bool:
+    """Algum commit no padrão Conventional Commits ``feat`` / ``feat(...)``."""
+    return any(_FEATURE_COMMIT.match(m or "") for m in messages or ())
+
+
+def v4_score(tag: str | None, ratio: float, has_feature: bool, feature_weight: float) -> float:
+    return (
+        PATCH_WEIGHT * is_patch_version(tag)
+        + KEYWORD_WEIGHT * ratio
+        - feature_weight * has_feature
+    )
+
+
+def v4(
+    tag: str | None, ratio: float, has_feature: bool, feature_weight: float, cutoff: float
+) -> bool:
+    """v3 com ``PATCH > 0`` da própria tag e penalidade para commits ``feat``."""
+    return v4_score(tag, ratio, has_feature, feature_weight) >= cutoff
 
 
 @dataclass(frozen=True)
