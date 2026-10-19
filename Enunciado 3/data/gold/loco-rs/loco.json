@@ -239,8 +239,129 @@
     {
       "release": "v0.14.1",
       "previous_release": "v0.14.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "8d2632d98d80e8ef70c4541e740006e2460be765",
+          "author_date": "2025-01-10T15:08:57Z",
+          "message": "Address clippy warnings for Rust stable 1.84 (#1168)",
+          "html_url": "https://github.com/loco-rs/loco/commit/8d2632d98d80e8ef70c4541e740006e2460be765"
+        },
+        {
+          "sha": "426fa1b03b1f631a79e87582a5e270aeb6925b81",
+          "author_date": "2025-01-12T09:54:59Z",
+          "message": "fix: bump shuttle to 0.51.0 (#1169)\n\n* fix: bump shuttle to 0.51.0\r\n\r\n* fix: use latest axum version\r\n\r\n* fix compilation error + adding template test\r\n\r\n---------\r\n\r\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/426fa1b03b1f631a79e87582a5e270aeb6925b81"
+        },
+        {
+          "sha": "0c20eb3b7df91ca95790c107d1fbcae6d711a28e",
+          "author_date": "2025-01-12T09:55:21Z",
+          "message": "return 422 status code for JSON rejection errors (#1173)\n\n* return 422 status code for JSON rejection errors\r\n\r\n* return 422 status code for JSON rejection errors",
+          "html_url": "https://github.com/loco-rs/loco/commit/0c20eb3b7df91ca95790c107d1fbcae6d711a28e"
+        },
+        {
+          "sha": "a602367191dc1a1e3540a400e70d924acf2c8031",
+          "author_date": "2025-01-12T11:00:28Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/a602367191dc1a1e3540a400e70d924acf2c8031"
+        },
+        {
+          "sha": "b4ca273410658beef0823f1c594e718123ac4c9a",
+          "author_date": "2025-01-13T17:53:15Z",
+          "message": "return validation json response (#1174)\n\n* allow return validation json response\r\n\r\n* allow return validation json response\r\n\r\n* docs",
+          "html_url": "https://github.com/loco-rs/loco/commit/b4ca273410658beef0823f1c594e718123ac4c9a"
+        },
+        {
+          "sha": "3136ccf874eb3e3de7e82a72973ce7b1544b8059",
+          "author_date": "2025-01-14T06:25:06Z",
+          "message": "fix example command after generating schedule (#1176)",
+          "html_url": "https://github.com/loco-rs/loco/commit/3136ccf874eb3e3de7e82a72973ce7b1544b8059"
+        },
+        {
+          "sha": "ff701ac06a26d09b7ec80101323c64b2183a764a",
+          "author_date": "2025-01-14T06:56:24Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/ff701ac06a26d09b7ec80101323c64b2183a764a"
+        },
+        {
+          "sha": "774366a639557781d090303244ab02cd14e8c18c",
+          "author_date": "2025-01-14T12:45:19Z",
+          "message": "fixed independent features  (#1177)\n\n* run cargo-hack in ci\r\n\r\n* fix needs\r\n\r\n* now add sanity tests\r\n\r\n* fix path",
+          "html_url": "https://github.com/loco-rs/loco/commit/774366a639557781d090303244ab02cd14e8c18c"
+        },
+        {
+          "sha": "eb7ea646e0701150fe01495d4595238b1f27ac01",
+          "author_date": "2025-01-14T12:46:39Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/eb7ea646e0701150fe01495d4595238b1f27ac01"
+        },
+        {
+          "sha": "6114163daa2da24de30e395e319f4abb7691f0e5",
+          "author_date": "2025-01-15T06:30:43Z",
+          "message": "Displaying sponsor button",
+          "html_url": "https://github.com/loco-rs/loco/commit/6114163daa2da24de30e395e319f4abb7691f0e5"
+        },
+        {
+          "sha": "0d30d4bb37d41dbfe3b65369570d97434fa0a528",
+          "author_date": "2025-01-15T08:43:00Z",
+          "message": "[blocked on 0.14] ci: add gen deploy (#1067)\n\n\r\n* ci: add gen deploy\r\n\r\n\r\n---------\r\n\r\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/0d30d4bb37d41dbfe3b65369570d97434fa0a528"
+        },
+        {
+          "sha": "0433ab01d4d4d961d75f2e19d36426f8ea018545",
+          "author_date": "2025-01-16T06:58:59Z",
+          "message": "testing shuttle generator deployment (#1183)",
+          "html_url": "https://github.com/loco-rs/loco/commit/0433ab01d4d4d961d75f2e19d36426f8ea018545"
+        },
+        {
+          "sha": "b284e733e1dd8c7644aa2d508ccab33c8b6cc3f4",
+          "author_date": "2025-01-17T07:06:12Z",
+          "message": "custom response header for redirect",
+          "html_url": "https://github.com/loco-rs/loco/commit/b284e733e1dd8c7644aa2d508ccab33c8b6cc3f4"
+        },
+        {
+          "sha": "98b93e997e27efec83f632b4a2589ee8f6eb77b8",
+          "author_date": "2025-01-17T09:05:28Z",
+          "message": "Merge pull request #1186 from loco-rs/custom-redirect-header\n\ncustom response header for redirect",
+          "html_url": "https://github.com/loco-rs/loco/commit/98b93e997e27efec83f632b4a2589ee8f6eb77b8"
+        },
+        {
+          "sha": "be4e44f86e7422f6b4ec38cb36b54f862d5978d7",
+          "author_date": "2025-01-18T05:36:43Z",
+          "message": "Fix typo in axum-users.md (#1188)",
+          "html_url": "https://github.com/loco-rs/loco/commit/be4e44f86e7422f6b4ec38cb36b54f862d5978d7"
+        },
+        {
+          "sha": "fa2b47ffc5132ccd68e8df55805525f1e046a21e",
+          "author_date": "2025-01-19T06:51:33Z",
+          "message": "Added `run_on_start` feature to scheduler (#1184)\n\n* Added `run_on_start` feature to scheduler\r\n\r\n* Added docs and fixed function declaration\r\n\r\n* Addressed code review\r\n\r\n- used `new_one_shot` function\r\n- updated tests\r\n- removed `run_on_start` function\r\n\r\n* moved `run_on_start` attr to each job instead of one list\r\n\r\n* Added documentation\r\n\r\n---------\r\n\r\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/fa2b47ffc5132ccd68e8df55805525f1e046a21e"
+        },
+        {
+          "sha": "c8c34b23c53cb76c04043d62559413bd32d376d3",
+          "author_date": "2025-01-19T06:54:08Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/c8c34b23c53cb76c04043d62559413bd32d376d3"
+        },
+        {
+          "sha": "4d1a450d24c35be0d7c462fa95373665fc38ad21",
+          "author_date": "2025-01-20T08:18:46Z",
+          "message": "feat: public jwt extractor from non-mutable reference to parts (#1190)\n\n* feat: public jwt extractor from non-mutable reference to parts\r\n\r\n* fix: ci\r\n\r\n---------\r\n\r\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/4d1a450d24c35be0d7c462fa95373665fc38ad21"
+        },
+        {
+          "sha": "ae993b4d60cf273896a3dd21d63f92a95ae7fa8d",
+          "author_date": "2025-01-20T10:22:22Z",
+          "message": "Update CHANGELOG.md (#1196)",
+          "html_url": "https://github.com/loco-rs/loco/commit/ae993b4d60cf273896a3dd21d63f92a95ae7fa8d"
+        },
+        {
+          "sha": "9625da3ea9976712f36e2cc8df90681ab1f938d3",
+          "author_date": "2025-01-21T06:26:06Z",
+          "message": "Bump version 0.14.1 (#1195)",
+          "html_url": "https://github.com/loco-rs/loco/commit/9625da3ea9976712f36e2cc8df90681ab1f938d3"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.15.0",
@@ -251,14 +372,640 @@
     {
       "release": "v0.16.0",
       "previous_release": "v0.15.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9be8f40c9fe1dc466e7367aa7bb030464c7a963e",
+          "author_date": "2025-03-27T09:47:12Z",
+          "message": "chore: improve readability and performance by using  map_err in ModelResult usages (#1311)\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/9be8f40c9fe1dc466e7367aa7bb030464c7a963e"
+        },
+        {
+          "sha": "0871c728139f29a2c10de3afcfa1657702d14dfd",
+          "author_date": "2025-03-27T09:48:14Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/0871c728139f29a2c10de3afcfa1657702d14dfd"
+        },
+        {
+          "sha": "d59e8999ad43cd7c41ed39ad3c5afaa3c6e380d8",
+          "author_date": "2025-03-27T10:44:13Z",
+          "message": "Allow testing the endpoint by passing a cookie (#1326)",
+          "html_url": "https://github.com/loco-rs/loco/commit/d59e8999ad43cd7c41ed39ad3c5afaa3c6e380d8"
+        },
+        {
+          "sha": "7b3b9302419362b1928d4122a0af4f15750f6b3c",
+          "author_date": "2025-03-30T06:19:39Z",
+          "message": "Upgrade guide for #1268 (#1330)",
+          "html_url": "https://github.com/loco-rs/loco/commit/7b3b9302419362b1928d4122a0af4f15750f6b3c"
+        },
+        {
+          "sha": "db0f611954ca234bbfc2b5eb4e51528f245df7fd",
+          "author_date": "2025-03-31T10:46:30Z",
+          "message": "Array BigInt (#1304)",
+          "html_url": "https://github.com/loco-rs/loco/commit/db0f611954ca234bbfc2b5eb4e51528f245df7fd"
+        },
+        {
+          "sha": "8164d90534bf1a7e4945be70ebe249fcafacd1e7",
+          "author_date": "2025-03-31T10:47:48Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/8164d90534bf1a7e4945be70ebe249fcafacd1e7"
+        },
+        {
+          "sha": "1667607cd4d5b1099ca532dffc26ce728a7b5bef",
+          "author_date": "2025-03-31T11:15:31Z",
+          "message": "test: Use diffrent ports for tests (#1093)\n\n* use diffrent ports for middlewares.rs\n\n* remove some #[serial]\n\n* mark bgworker as serial in nextest\n\n* Revert \"mark bgworker as serial in nextest\"\n\nThis reverts commit a3de641a22102c05d6a0ba4817f3bf12f284e045.\n\n* more tests and remove more #[serial]\n\n* update comment\n\n* more tests\n\n* move to src/testing\n\n* clippy\n\n* fmt\n\n* panic comment\n\n* remove get_base_url\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/1667607cd4d5b1099ca532dffc26ce728a7b5bef"
+        },
+        {
+          "sha": "58aed6d2c7322a9e55d5966887812651dd86d76a",
+          "author_date": "2025-03-31T12:15:55Z",
+          "message": "add escape tera function (#1337)",
+          "html_url": "https://github.com/loco-rs/loco/commit/58aed6d2c7322a9e55d5966887812651dd86d76a"
+        },
+        {
+          "sha": "be8f28e8a1f103d76225f09b9923d6a14da2c838",
+          "author_date": "2025-03-31T12:16:44Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/be8f28e8a1f103d76225f09b9923d6a14da2c838"
+        },
+        {
+          "sha": "1e922807a91ce8cbc5df5cfa818752ac4090f037",
+          "author_date": "2025-03-31T13:34:32Z",
+          "message": "Bump mozilla-actions/sccache-action from 0.0.8 to 0.0.9 (#1328)\n\nBumps [mozilla-actions/sccache-action](https://github.com/mozilla-actions/sccache-action) from 0.0.8 to 0.0.9.\n- [Release notes](https://github.com/mozilla-actions/sccache-action/releases)\n- [Commits](https://github.com/mozilla-actions/sccache-action/compare/v0.0.8...v0.0.9)\n\n---\nupdated-dependencies:\n- dependency-name: mozilla-actions/sccache-action\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/1e922807a91ce8cbc5df5cfa818752ac4090f037"
+        },
+        {
+          "sha": "7ea8360d6c521d6cdc4d602eb52720b389b425bb",
+          "author_date": "2025-04-01T06:58:59Z",
+          "message": "return specific error when try to login with non-existent email (#1336)\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/7ea8360d6c521d6cdc4d602eb52720b389b425bb"
+        },
+        {
+          "sha": "eb19cdb34474bb06ee00f9e311da7055e029875c",
+          "author_date": "2025-04-01T08:23:04Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/eb19cdb34474bb06ee00f9e311da7055e029875c"
+        },
+        {
+          "sha": "bf6a6b5c43cd90fa1987e3e1f63f66f9e5360f23",
+          "author_date": "2025-04-02T06:58:35Z",
+          "message": "test: remove serial_test (#1342)",
+          "html_url": "https://github.com/loco-rs/loco/commit/bf6a6b5c43cd90fa1987e3e1f63f66f9e5360f23"
+        },
+        {
+          "sha": "b2b8b48d2260b5435faa82954a760d5b514bd7a7",
+          "author_date": "2025-04-02T08:34:24Z",
+          "message": "test: fix can_render_form_field (#1343)\n\n* test: fix can_render_form_field\n\n* test: update snapshots\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/b2b8b48d2260b5435faa82954a760d5b514bd7a7"
+        },
+        {
+          "sha": "cdaca766860b91107ba73e03d3b3b4db8b1c45c1",
+          "author_date": "2025-04-02T09:31:43Z",
+          "message": "Bump micromatch (#807)\n\nBumps the npm_and_yarn group with 1 update in the /docs-site directory: [micromatch](https://github.com/micromatch/micromatch).\n\n\nUpdates `micromatch` from 4.0.7 to 4.0.8\n- [Release notes](https://github.com/micromatch/micromatch/releases)\n- [Changelog](https://github.com/micromatch/micromatch/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.7...4.0.8)\n\n---\nupdated-dependencies:\n- dependency-name: micromatch\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/cdaca766860b91107ba73e03d3b3b4db8b1c45c1"
+        },
+        {
+          "sha": "c085ea4f81364e6471ccfbc81ddc682b04e9bd73",
+          "author_date": "2025-04-02T09:39:40Z",
+          "message": "chore(deps): bump the npm_and_yarn group across 1 directory with 2 updates (#994)\n\nBumps the npm_and_yarn group with 2 updates in the /docs-site directory: [cross-spawn](https://github.com/moxystudio/node-cross-spawn) and [micromatch](https://github.com/micromatch/micromatch).\n\n\nUpdates `cross-spawn` from 6.0.5 to 6.0.6\n- [Changelog](https://github.com/moxystudio/node-cross-spawn/blob/v6.0.6/CHANGELOG.md)\n- [Commits](https://github.com/moxystudio/node-cross-spawn/compare/v6.0.5...v6.0.6)\n\nUpdates `micromatch` from 4.0.7 to 4.0.8\n- [Release notes](https://github.com/micromatch/micromatch/releases)\n- [Changelog](https://github.com/micromatch/micromatch/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.7...4.0.8)\n\n---\nupdated-dependencies:\n- dependency-name: cross-spawn\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: micromatch\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/c085ea4f81364e6471ccfbc81ddc682b04e9bd73"
+        },
+        {
+          "sha": "bfb1029b1d6d4e811504a4a4c8ed951eda6099e3",
+          "author_date": "2025-04-02T09:48:06Z",
+          "message": "chore(deps): bump the npm_and_yarn group across 1 directory with 3 updates (#1077)\n\nBumps the npm_and_yarn group with 3 updates in the /docs-site directory: [cross-spawn](https://github.com/moxystudio/node-cross-spawn), [micromatch](https://github.com/micromatch/micromatch) and [nanoid](https://github.com/ai/nanoid).\n\n\nUpdates `cross-spawn` from 6.0.5 to 6.0.6\n- [Changelog](https://github.com/moxystudio/node-cross-spawn/blob/v6.0.6/CHANGELOG.md)\n- [Commits](https://github.com/moxystudio/node-cross-spawn/compare/v6.0.5...v6.0.6)\n\nUpdates `micromatch` from 4.0.7 to 4.0.8\n- [Release notes](https://github.com/micromatch/micromatch/releases)\n- [Changelog](https://github.com/micromatch/micromatch/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/micromatch/micromatch/compare/4.0.7...4.0.8)\n\nUpdates `nanoid` from 3.3.7 to 3.3.8\n- [Release notes](https://github.com/ai/nanoid/releases)\n- [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ai/nanoid/compare/3.3.7...3.3.8)\n\n---\nupdated-dependencies:\n- dependency-name: cross-spawn\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: micromatch\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n- dependency-name: nanoid\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/bfb1029b1d6d4e811504a4a4c8ed951eda6099e3"
+        },
+        {
+          "sha": "3c8b97c82915d2e8423f23167771758a66e529d7",
+          "author_date": "2025-04-02T10:05:39Z",
+          "message": "return 401 insdead of 500 when token is invalid + adding tests (#1340)",
+          "html_url": "https://github.com/loco-rs/loco/commit/3c8b97c82915d2e8423f23167771758a66e529d7"
+        },
+        {
+          "sha": "a6e3df1bcc7bb81f86023aca4f5cbe82f343aeb2",
+          "author_date": "2025-04-07T12:57:30Z",
+          "message": "clippy 1.86 (#1353)\n\n* clippy 1.86\n\n* clippy 1.86\n\n* clippy 1.86",
+          "html_url": "https://github.com/loco-rs/loco/commit/a6e3df1bcc7bb81f86023aca4f5cbe82f343aeb2"
+        },
+        {
+          "sha": "9ab235be79e8ce62df0b797c39c131bcb32ced91",
+          "author_date": "2025-04-07T13:09:55Z",
+          "message": "fix db creation (#1352)",
+          "html_url": "https://github.com/loco-rs/loco/commit/9ab235be79e8ce62df0b797c39c131bcb32ced91"
+        },
+        {
+          "sha": "cfb4d9ecd60465dd5cc41006b583a382e4a0546c",
+          "author_date": "2025-04-07T13:11:06Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/cfb4d9ecd60465dd5cc41006b583a382e4a0546c"
+        },
+        {
+          "sha": "0819370ab8b1f9c3c404803900592fc2c192c167",
+          "author_date": "2025-04-07T13:56:32Z",
+          "message": "add debug_assertions (#1355)",
+          "html_url": "https://github.com/loco-rs/loco/commit/0819370ab8b1f9c3c404803900592fc2c192c167"
+        },
+        {
+          "sha": "17baf2947b200045517fc992ba79092243793923",
+          "author_date": "2025-04-10T17:17:07Z",
+          "message": "docs: add missing `-` in `-api` (getting started tour) (#1361)",
+          "html_url": "https://github.com/loco-rs/loco/commit/17baf2947b200045517fc992ba79092243793923"
+        },
+        {
+          "sha": "8a3928bda385c8e26cc883eeaeb5c7c7e2c783d5",
+          "author_date": "2025-04-12T06:28:01Z",
+          "message": "feat: yaml responses (#1360)\n\n* yaml responses\n\n* remove ignore in doc\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/8a3928bda385c8e26cc883eeaeb5c7c7e2c783d5"
+        },
+        {
+          "sha": "2a105f0dc77ddd94c82cce1690100c78f372cc49",
+          "author_date": "2025-04-14T12:28:19Z",
+          "message": "refactor: swap to validators builtin email validation (#1359)\n\n* remove is_valid_email\n\n* update loco new\n\n* update docs\n\n* upgrade guide\n\n* snapshots\n\n* Revert \"remove is_valid_email\"\n\nThis reverts commit 7087788eba103eccb5256462b05c6a2657db634d.\n\n* mark is_valid_email as deprecated\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/2a105f0dc77ddd94c82cce1690100c78f372cc49"
+        },
+        {
+          "sha": "23bf71813fd9fa7347df4b5f2402365b8b377a3d",
+          "author_date": "2025-04-14T14:44:17Z",
+          "message": "Cancellation tokens for other 2 bg workers (#1365)\n\n* use cancellation token for pg bgworker\n\nThis way, exiting the process is quick as we don't have to wait for the\ntimeout when exiting a process with a worker.\n\n* also implement cancellation for sqlite\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/23bf71813fd9fa7347df4b5f2402365b8b377a3d"
+        },
+        {
+          "sha": "5886929ee11fee4bd55b9101faa72d65389f0507",
+          "author_date": "2025-04-20T06:41:57Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/5886929ee11fee4bd55b9101faa72d65389f0507"
+        },
+        {
+          "sha": "64d85cd26a8ab3d8b1c4fc4ab395e402f43b97a3",
+          "author_date": "2025-04-20T06:42:23Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/64d85cd26a8ab3d8b1c4fc4ab395e402f43b97a3"
+        },
+        {
+          "sha": "ed75c67158764a4c5956cc55245e4be50450a925",
+          "author_date": "2025-04-21T12:51:42Z",
+          "message": "docs: Small fixes for paddings and SVG (#1379)\n\n* docs: Small fixes for paddings and SVG\n\n* Fix indent",
+          "html_url": "https://github.com/loco-rs/loco/commit/ed75c67158764a4c5956cc55245e4be50450a925"
+        },
+        {
+          "sha": "c00117254a49f6ad413e08b4c920613f8b4ee4ca",
+          "author_date": "2025-04-22T07:04:06Z",
+          "message": "docs: testing auth routes (#1303)\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/c00117254a49f6ad413e08b4c920613f8b4ee4ca"
+        },
+        {
+          "sha": "351679499b197047373d97f56301e4900f3ec2e9",
+          "author_date": "2025-04-22T11:53:47Z",
+          "message": "test: Add comprehensive tests for task module (#1386)",
+          "html_url": "https://github.com/loco-rs/loco/commit/351679499b197047373d97f56301e4900f3ec2e9"
+        },
+        {
+          "sha": "142c1df787bb5c94d0210e4b78465c7777e6cbd8",
+          "author_date": "2025-04-22T12:06:42Z",
+          "message": "Add comprehensive test coverage for data module (#1387)",
+          "html_url": "https://github.com/loco-rs/loco/commit/142c1df787bb5c94d0210e4b78465c7777e6cbd8"
+        },
+        {
+          "sha": "861569bca80d8ffc9ac7d245206f62ca4dcba73d",
+          "author_date": "2025-04-22T12:19:37Z",
+          "message": "test: Add validator extractors test suite (#1388)",
+          "html_url": "https://github.com/loco-rs/loco/commit/861569bca80d8ffc9ac7d245206f62ca4dcba73d"
+        },
+        {
+          "sha": "089cbdafdd4a6aa13b7aa12c1247a6a01554459c",
+          "author_date": "2025-04-22T14:20:27Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/089cbdafdd4a6aa13b7aa12c1247a6a01554459c"
+        },
+        {
+          "sha": "330a050f825f772b925bff68ded223945d6333ba",
+          "author_date": "2025-04-23T05:52:42Z",
+          "message": "Replace sidekiq job management (#1384)\n\n* replace sidekiq job managment\n\n* logging\n\n* fix redis test url\n\n* Breaking change notes\n\n* add integration_test for redis tests\n\n* remove sidekiq referances",
+          "html_url": "https://github.com/loco-rs/loco/commit/330a050f825f772b925bff68ded223945d6333ba"
+        },
+        {
+          "sha": "63abb637485e686b8f049a8938f4cbbc668445dc",
+          "author_date": "2025-04-23T06:20:25Z",
+          "message": "feat(cache): add generic type support to Cache API (#1385)\n\n* feat(cache): add generic type support to Cache API\n\n* fix clippy\n\n* adding cache redis driver + configuration instead of enable from code (#1389)\n\n* adding cache redis driver + configuration insdead of enable from code\n\n* feature\n\n* fix tests\n\n* docs\n\n* add missing crate",
+          "html_url": "https://github.com/loco-rs/loco/commit/63abb637485e686b8f049a8938f4cbbc668445dc"
+        },
+        {
+          "sha": "719039abbebccb0628eb99bd488b17afd8ea7c15",
+          "author_date": "2025-04-23T06:25:08Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/719039abbebccb0628eb99bd488b17afd8ea7c15"
+        },
+        {
+          "sha": "aa79a540411deb3e84258ea53413ba8ddf776ca7",
+          "author_date": "2025-04-23T08:32:33Z",
+          "message": "isolated redis pg tests (#1390)",
+          "html_url": "https://github.com/loco-rs/loco/commit/aa79a540411deb3e84258ea53413ba8ddf776ca7"
+        },
+        {
+          "sha": "c0f526d544c682d394147765dff5de323c859ea8",
+          "author_date": "2025-04-24T05:49:20Z",
+          "message": "Update deployment.md (#1391)\n\nUpdate deployment.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/c0f526d544c682d394147765dff5de323c859ea8"
+        },
+        {
+          "sha": "ca32cd489418c0c6035b6e0dbbf119e503ea8eaf",
+          "author_date": "2025-04-28T06:53:17Z",
+          "message": "feat: add blog rss feed (#1395)",
+          "html_url": "https://github.com/loco-rs/loco/commit/ca32cd489418c0c6035b6e0dbbf119e503ea8eaf"
+        },
+        {
+          "sha": "2604720261bd317c4c234111d961bdf601badc81",
+          "author_date": "2025-04-28T12:00:02Z",
+          "message": "feat: ability to configure foreign_keys pragma for SQLite (#1346)\n\n* feat: ability to configure foreign_keys pragma for SQLite\n\n* fix: prevent breaking changes\n\n* fix: run_on_start command configuring SQLite pragmas\n\n* fix: docstring\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/2604720261bd317c4c234111d961bdf601badc81"
+        },
+        {
+          "sha": "63e3dcf4c67f1c06801587293d12c4b87d456010",
+          "author_date": "2025-04-29T10:51:56Z",
+          "message": "optimize worker tag filtering string handling (#1396)\n\n* optimize worker tag filtering string handling\n\n* update pr in upgrade.md\n\n* remove clippy quiet for debug the error\n\n* clippy\n\n* clippy",
+          "html_url": "https://github.com/loco-rs/loco/commit/63e3dcf4c67f1c06801587293d12c4b87d456010"
+        },
+        {
+          "sha": "9fb39f10a82efab7ec2cae25b3883f64dddeb5c2",
+          "author_date": "2025-04-29T10:54:06Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/9fb39f10a82efab7ec2cae25b3883f64dddeb5c2"
+        },
+        {
+          "sha": "77f4187b0c225d38184d6e91f31daf778e23bebb",
+          "author_date": "2025-04-29T11:14:21Z",
+          "message": "Add test coverage for db.rs (#1400)\n\n* Add test coverage for db.rs\n\n* clippy",
+          "html_url": "https://github.com/loco-rs/loco/commit/77f4187b0c225d38184d6e91f31daf778e23bebb"
+        },
+        {
+          "sha": "aae370308fe9f2a98925d2fef1bfc8c9ae0973f4",
+          "author_date": "2025-04-30T05:51:42Z",
+          "message": "Update CHANGELOG.md (#1401)",
+          "html_url": "https://github.com/loco-rs/loco/commit/aae370308fe9f2a98925d2fef1bfc8c9ae0973f4"
+        },
+        {
+          "sha": "656ae809e6e7f03776b562905a28bafa30d38b42",
+          "author_date": "2025-05-04T10:38:26Z",
+          "message": "Allow storage of arbitrary custom objects in AppContext (#1404)\n\n* Allow storage of arbitrary custom objects in AppContext\n\n* add get_ref, return T when remove\n\n* rename from extensions to SharedStore\n\n* adding extractor + docs\n\n* tests\n\n* fmt",
+          "html_url": "https://github.com/loco-rs/loco/commit/656ae809e6e7f03776b562905a28bafa30d38b42"
+        },
+        {
+          "sha": "23dbebd935635d3f2918fe115d9cb15d1c5674fe",
+          "author_date": "2025-05-04T11:08:57Z",
+          "message": "improve deployment generator cli (#1413)",
+          "html_url": "https://github.com/loco-rs/loco/commit/23dbebd935635d3f2918fe115d9cb15d1c5674fe"
+        },
+        {
+          "sha": "3a54adbbc4fdf9b35b9c959707bd863d05b79437",
+          "author_date": "2025-05-04T11:10:37Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/3a54adbbc4fdf9b35b9c959707bd863d05b79437"
+        },
+        {
+          "sha": "2e97c1f9f7b8abd50b243c9eca59c75919046569",
+          "author_date": "2025-05-04T15:16:25Z",
+          "message": "move auth and validate to extractor folder (#1414)",
+          "html_url": "https://github.com/loco-rs/loco/commit/2e97c1f9f7b8abd50b243c9eca59c75919046569"
+        },
+        {
+          "sha": "8c683dc8e0f19ad22cf0ab194aa6d9bf86f99ebb",
+          "author_date": "2025-05-05T08:05:47Z",
+          "message": "fix file reload under extends (#1416)",
+          "html_url": "https://github.com/loco-rs/loco/commit/8c683dc8e0f19ad22cf0ab194aa6d9bf86f99ebb"
+        },
+        {
+          "sha": "c79a85b6881e5708fc915170e7323eab0135c815",
+          "author_date": "2025-05-05T12:33:27Z",
+          "message": "don't return 401 for system errors in auth checks (#1349)\n\n* don't return 401 for system errors in auth checks\n\nIf you hammer the database with requests, you sometimes get a ConnectionPool\nerror. In that case, we should return 500 and not 401.\n\n* cargo clippy\n\n* incorporate review feedback",
+          "html_url": "https://github.com/loco-rs/loco/commit/c79a85b6881e5708fc915170e7323eab0135c815"
+        },
+        {
+          "sha": "0e2331c788e99c8a3d15e3926ec20f11eac604c6",
+          "author_date": "2025-05-12T08:33:18Z",
+          "message": "docs: fixing the inconsistencies in the usage of `references` type. (#1417)\n\nCo-authored-by: Adarsh <adarsh@hara.local>",
+          "html_url": "https://github.com/loco-rs/loco/commit/0e2331c788e99c8a3d15e3926ec20f11eac604c6"
+        },
+        {
+          "sha": "3c6ac92b0967dcf75f4740edbefa4241a0fcde14",
+          "author_date": "2025-05-12T09:00:36Z",
+          "message": "update middleware::auth::Auth to middleware::auth::JWT in documentation (#1424)\n\nCo-authored-by: Chris Zhu <chriszhu@mac.lan>",
+          "html_url": "https://github.com/loco-rs/loco/commit/3c6ac92b0967dcf75f4740edbefa4241a0fcde14"
+        },
+        {
+          "sha": "ea73bb5f78b323ec67825079d3c4a62c682787ab",
+          "author_date": "2025-05-12T10:20:13Z",
+          "message": "Update the init_logger to use app_context instead of config (#1418)\n\n* Update the init_logger to use app_context instead of config\n\n* Add entry to upgrades.md\n\n* Remove Environment parameter\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/ea73bb5f78b323ec67825079d3c4a62c682787ab"
+        },
+        {
+          "sha": "4f465d2dbc7e297c2fca12a4f3f87d35956fdfdc",
+          "author_date": "2025-05-13T05:06:59Z",
+          "message": "site: docs: models: add info about `!` & `^` (#1428)\n\nSigned-off-by: Frank Villaro-Dixon <frank@villaro-dixon.eu>\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/4f465d2dbc7e297c2fca12a4f3f87d35956fdfdc"
+        },
+        {
+          "sha": "6bbd32db1a4b4a72d4ba5fd25b7705385e319143",
+          "author_date": "2025-05-13T06:49:10Z",
+          "message": "embedded assets support (#1427)\n\n* embeded assets support\n\n* fix clippy\n\n* drop fs test tree when test done\n\n* tests\n\n* tests\n\n* fix deployment command",
+          "html_url": "https://github.com/loco-rs/loco/commit/6bbd32db1a4b4a72d4ba5fd25b7705385e319143"
+        },
+        {
+          "sha": "6b690821da9152c3d82cf5a542dd17e57ec59050",
+          "author_date": "2025-05-13T07:05:37Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/6b690821da9152c3d82cf5a542dd17e57ec59050"
+        },
+        {
+          "sha": "93b28713394f2a6e2b1988ccbe30055eedfa87d1",
+          "author_date": "2025-05-13T08:07:02Z",
+          "message": "fix bug (#1419)",
+          "html_url": "https://github.com/loco-rs/loco/commit/93b28713394f2a6e2b1988ccbe30055eedfa87d1"
+        },
+        {
+          "sha": "b7bdb5593e9a601f112f8d5577bb2bb48f5cf4b4",
+          "author_date": "2025-05-13T08:50:56Z",
+          "message": "remove unused hyper dependency (#1430)",
+          "html_url": "https://github.com/loco-rs/loco/commit/b7bdb5593e9a601f112f8d5577bb2bb48f5cf4b4"
+        },
+        {
+          "sha": "090ea390f230e58500c6c593c599602c98242785",
+          "author_date": "2025-05-13T10:09:06Z",
+          "message": "remove thousands dependency (#1431)",
+          "html_url": "https://github.com/loco-rs/loco/commit/090ea390f230e58500c6c593c599602c98242785"
+        },
+        {
+          "sha": "5d1648e876e7ea077d406e942971a3fa39512995",
+          "author_date": "2025-05-13T10:34:28Z",
+          "message": "remove cfg-if dependency (#1432)",
+          "html_url": "https://github.com/loco-rs/loco/commit/5d1648e876e7ea077d406e942971a3fa39512995"
+        },
+        {
+          "sha": "6f89b7f17c50c1b8d16baef029e2423068e2ce99",
+          "author_date": "2025-05-13T11:25:17Z",
+          "message": "remove reqwest dependency, by replace check crate version to use cargo instead of http (#1434)\n\n* remove reqwest dependency, by replace check crate version to use cargo instead of http\n\n* add json feature for tests",
+          "html_url": "https://github.com/loco-rs/loco/commit/6f89b7f17c50c1b8d16baef029e2423068e2ce99"
+        },
+        {
+          "sha": "277bbaae083b03dcf2dfb44e4827bcb14b787fe0",
+          "author_date": "2025-05-13T16:15:41Z",
+          "message": "bump tokio (#1435)",
+          "html_url": "https://github.com/loco-rs/loco/commit/277bbaae083b03dcf2dfb44e4827bcb14b787fe0"
+        },
+        {
+          "sha": "59451a3926b63d8d9989973c62c7813a61f79ddf",
+          "author_date": "2025-05-13T16:49:21Z",
+          "message": "bump colored crate (#1437)",
+          "html_url": "https://github.com/loco-rs/loco/commit/59451a3926b63d8d9989973c62c7813a61f79ddf"
+        },
+        {
+          "sha": "e5d0658630c78a8f0d012b4e9f7424e71bffe83f",
+          "author_date": "2025-05-13T17:41:59Z",
+          "message": "bump rand crate (#1439)",
+          "html_url": "https://github.com/loco-rs/loco/commit/e5d0658630c78a8f0d012b4e9f7424e71bffe83f"
+        },
+        {
+          "sha": "4f7bb2d842c3d20654085cec8df943ff41cc3676",
+          "author_date": "2025-05-14T04:40:48Z",
+          "message": "bump duct crate (#1438)",
+          "html_url": "https://github.com/loco-rs/loco/commit/4f7bb2d842c3d20654085cec8df943ff41cc3676"
+        },
+        {
+          "sha": "7e7bebe15f74c377c93d979aab41c52eb871d667",
+          "author_date": "2025-05-14T05:42:48Z",
+          "message": "bump redis crates",
+          "html_url": "https://github.com/loco-rs/loco/commit/7e7bebe15f74c377c93d979aab41c52eb871d667"
+        },
+        {
+          "sha": "ee4a07f8716f4f3e9cd70c6092b9ed884df98dcc",
+          "author_date": "2025-05-14T11:30:29Z",
+          "message": "bump loco template crates (#1440)",
+          "html_url": "https://github.com/loco-rs/loco/commit/ee4a07f8716f4f3e9cd70c6092b9ed884df98dcc"
+        },
+        {
+          "sha": "4085e0c555bdd24911bc69c458e05837c4e6e07b",
+          "author_date": "2025-05-14T11:41:47Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/4085e0c555bdd24911bc69c458e05837c4e6e07b"
+        },
+        {
+          "sha": "b945227da40b873a262825b3a18336d4c0956e50",
+          "author_date": "2025-05-14T15:28:33Z",
+          "message": "support custom flgs from sea-orm entity (#1442)\n\n* support custom flgs from sea-orm entity\n\n* clippy",
+          "html_url": "https://github.com/loco-rs/loco/commit/b945227da40b873a262825b3a18336d4c0956e50"
+        },
+        {
+          "sha": "226303c931ed72b30c34d61e88203be74482699a",
+          "author_date": "2025-05-15T10:50:24Z",
+          "message": "feat(cli): cargo loco routes nested routes (#1397)\n\n* feat(cli): cargo loco routes nested routes\n\n* build full_path\n\n* pad full_path\n\n* clippy\n\n* refactor: print_with_format\n\n* remove unwrap and use .get\n\n* clippy\n\n* remove space after branch\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/226303c931ed72b30c34d61e88203be74482699a"
+        },
+        {
+          "sha": "4146235203984e8c1c1c7a8d742ebd6cc9258487",
+          "author_date": "2025-05-21T06:54:18Z",
+          "message": "fix clippy for rust 1.87 (#1449)",
+          "html_url": "https://github.com/loco-rs/loco/commit/4146235203984e8c1c1c7a8d742ebd6cc9258487"
+        },
+        {
+          "sha": "1dcf6ea735460774baeeac67efcaffd70711a11f",
+          "author_date": "2025-05-21T09:45:25Z",
+          "message": "Fixed typo `jon` to `job` (#1448)\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/1dcf6ea735460774baeeac67efcaffd70711a11f"
+        },
+        {
+          "sha": "c6c6f4f356c2e1a110e384d54dc2c0dd10c31031",
+          "author_date": "2025-05-21T09:46:11Z",
+          "message": "[doc] Remove duplicated information and line in the website. (#1446)\n\n* [doc] Remove duplicate line.\n\n* [doc] Removes one of the intro paragraphs to seeding.\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/c6c6f4f356c2e1a110e384d54dc2c0dd10c31031"
+        },
+        {
+          "sha": "18d716657506bcc573f177d92f43462b9a5823eb",
+          "author_date": "2025-05-21T17:53:56Z",
+          "message": "Unnecessary Folder Created on Cancel (#1429)\n\n* delete folder when process is cancelled\n\n* fix clippy\n\n* fix clippy for 1.87\n\n* fix clippy for 1.87",
+          "html_url": "https://github.com/loco-rs/loco/commit/18d716657506bcc573f177d92f43462b9a5823eb"
+        },
+        {
+          "sha": "302eb48ef6bbdc5020fe6c329b1fa91da2d2063a",
+          "author_date": "2025-05-27T08:21:22Z",
+          "message": "fix multi db docs (#1459)",
+          "html_url": "https://github.com/loco-rs/loco/commit/302eb48ef6bbdc5020fe6c329b1fa91da2d2063a"
+        },
+        {
+          "sha": "0d3ca7ab5e2d5ed7b41ec6bcc6433af3b259c669",
+          "author_date": "2025-05-30T19:12:21Z",
+          "message": "Commit Cargo.lock (#1460)\n\n* Commit Cargo.lock\n\n* Revert \"Commit Cargo.lock\"\n\nThis reverts commit 0ef16473179e27767f3c21cef95522b84f11bf59.\n\n* Commit loco-new/Cargo.lock",
+          "html_url": "https://github.com/loco-rs/loco/commit/0d3ca7ab5e2d5ed7b41ec6bcc6433af3b259c669"
+        },
+        {
+          "sha": "a0168d250cc8f8e1e75f1fcf0eec6312b23b83cd",
+          "author_date": "2025-06-03T11:59:30Z",
+          "message": "docs: Clarify scheduler running modes and configuration loading (#1467)",
+          "html_url": "https://github.com/loco-rs/loco/commit/a0168d250cc8f8e1e75f1fcf0eec6312b23b83cd"
+        },
+        {
+          "sha": "7d089c564fbb4f749f17339afdc58b9a5726abda",
+          "author_date": "2025-06-09T08:59:15Z",
+          "message": "remove legacy mailer derive macro code (#1472)",
+          "html_url": "https://github.com/loco-rs/loco/commit/7d089c564fbb4f749f17339afdc58b9a5726abda"
+        },
+        {
+          "sha": "718b204b93e85bfd3552f95a30dbe0814c011726",
+          "author_date": "2025-06-09T08:59:52Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/718b204b93e85bfd3552f95a30dbe0814c011726"
+        },
+        {
+          "sha": "956b4cb2b3720bfebfc5392fad927d9ecb41284a",
+          "author_date": "2025-06-10T11:08:31Z",
+          "message": "Update loco-gen-ci.yml",
+          "html_url": "https://github.com/loco-rs/loco/commit/956b4cb2b3720bfebfc5392fad927d9ecb41284a"
+        },
+        {
+          "sha": "efb81aa6dbb8f338b087292ce241ccda6e989481",
+          "author_date": "2025-06-10T11:46:07Z",
+          "message": "ci: restrict scheduled workflow to main repository (#1469)\n\nThis workflow creates a new Loco application and builds a Docker image.\nWe only want this to run on the main repository (loco-rs/loco) and not on forks because:\n1. It consumes GitHub Actions minutes unnecessarily on forks\n2. The Docker build and deployment is specific to the main repository\n3. Forks typically don't need to run this automated deployment process\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/efb81aa6dbb8f338b087292ce241ccda6e989481"
+        },
+        {
+          "sha": "4c112ec42bdc236b27e7306ef30fa3528e81a2d8",
+          "author_date": "2025-06-25T03:24:48Z",
+          "message": "chore(cli): remove serde_variant (#1493)",
+          "html_url": "https://github.com/loco-rs/loco/commit/4c112ec42bdc236b27e7306ef30fa3528e81a2d8"
+        },
+        {
+          "sha": "a1fb11d1e840df94cccb10038b7599bf22c86b6f",
+          "author_date": "2025-06-25T04:10:28Z",
+          "message": "redis atomic job queue (#1464)",
+          "html_url": "https://github.com/loco-rs/loco/commit/a1fb11d1e840df94cccb10038b7599bf22c86b6f"
+        },
+        {
+          "sha": "6fdd335a58bce1e0621a25a91715e51aa78c4df4",
+          "author_date": "2025-06-25T06:03:13Z",
+          "message": "make extract_token and get_jwt_from_config fn public (#1495)\n\n* make extract_token fn public\n\n* fix clippy",
+          "html_url": "https://github.com/loco-rs/loco/commit/6fdd335a58bce1e0621a25a91715e51aa78c4df4"
+        },
+        {
+          "sha": "052e1178512c5cc987ff2c22f971d8fa3689941f",
+          "author_date": "2025-06-25T07:09:26Z",
+          "message": "Bump version 0.16 (#1468)\n\n* Prepare release for version 0.16\n\n* Prepare release for version 0.16\n\n* fix clippy\n\n* remove deprecated fn + edit changelog.md\n\n* update changelog.md\n\n* fix clippy",
+          "html_url": "https://github.com/loco-rs/loco/commit/052e1178512c5cc987ff2c22f971d8fa3689941f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.16.1",
       "previous_release": "v0.16.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "df543f85c078daf98db390be13cd669ba7ffab9f",
+          "author_date": "2025-06-25T08:00:45Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/df543f85c078daf98db390be13cd669ba7ffab9f"
+        },
+        {
+          "sha": "7343dea66c906f87ba434a8031a680ccfdeec404",
+          "author_date": "2025-06-25T14:28:50Z",
+          "message": "support multiple jwt location",
+          "html_url": "https://github.com/loco-rs/loco/commit/7343dea66c906f87ba434a8031a680ccfdeec404"
+        },
+        {
+          "sha": "66c2e7a3a3b355048cf9fa021222d20e5bf96b25",
+          "author_date": "2025-06-25T14:30:17Z",
+          "message": "Revert \"support multiple jwt location\"\n\nThis reverts commit 7343dea66c906f87ba434a8031a680ccfdeec404.",
+          "html_url": "https://github.com/loco-rs/loco/commit/66c2e7a3a3b355048cf9fa021222d20e5bf96b25"
+        },
+        {
+          "sha": "8c8c45daacf3020a7f3db8159a0d54d75f601401",
+          "author_date": "2025-06-25T14:47:24Z",
+          "message": "chore(deps): bump brace-expansion (#1480)\n\nBumps the npm_and_yarn group with 1 update in the /docs-site directory: [brace-expansion](https://github.com/juliangruber/brace-expansion).\n\n\nUpdates `brace-expansion` from 1.1.11 to 1.1.12\n- [Release notes](https://github.com/juliangruber/brace-expansion/releases)\n- [Commits](https://github.com/juliangruber/brace-expansion/compare/1.1.11...v1.1.12)\n\n---\nupdated-dependencies:\n- dependency-name: brace-expansion\n  dependency-version: 1.1.12\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/8c8c45daacf3020a7f3db8159a0d54d75f601401"
+        },
+        {
+          "sha": "1d0569c589124d5a7d2de01ab96558191527b285",
+          "author_date": "2025-07-13T08:39:50Z",
+          "message": "fix clippy result_large_err (#1496)\n\n* fix clippy result_large_err\n\n* fix ci",
+          "html_url": "https://github.com/loco-rs/loco/commit/1d0569c589124d5a7d2de01ab96558191527b285"
+        },
+        {
+          "sha": "952373f7bd68d5ce82192e88354c5cb5c02b1cc3",
+          "author_date": "2025-07-13T08:40:03Z",
+          "message": "chore: remove async-std (#1492)",
+          "html_url": "https://github.com/loco-rs/loco/commit/952373f7bd68d5ce82192e88354c5cb5c02b1cc3"
+        },
+        {
+          "sha": "64f777618e7a905a411bd83ccf9b278fd59f5f43",
+          "author_date": "2025-07-13T08:40:25Z",
+          "message": "fix: Bump shuttle version to 0.55.0   (#1488)\n\n* fix: Bump shuttle version to 0.55.0  Older versions does not play well with shuttle.dev\n\n* chores: tests updates foir shuttle deployment\n\n* fix fmt + adding version redaction + update snap\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/64f777618e7a905a411bd83ccf9b278fd59f5f43"
+        },
+        {
+          "sha": "a226df0a70a876c819b9cc16195ec02e99b4f53a",
+          "author_date": "2025-07-13T08:40:48Z",
+          "message": "Change a docker building image to 1.87 (#1475)\n\n* Change a docker building image to 1.87\n\n* Added redaction support for the Docker Snap version\n\n* update edition\n\n* update edition\n\n---------\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/a226df0a70a876c819b9cc16195ec02e99b4f53a"
+        },
+        {
+          "sha": "56e66554af75301024707e85c1bd0000080e46e4",
+          "author_date": "2025-07-13T08:43:11Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/56e66554af75301024707e85c1bd0000080e46e4"
+        },
+        {
+          "sha": "6914ac6679eddfdaada0c14e535e374f08421a77",
+          "author_date": "2025-07-16T06:40:09Z",
+          "message": "Fix Clippy warnings for Rust 1.88 stable (#1519)",
+          "html_url": "https://github.com/loco-rs/loco/commit/6914ac6679eddfdaada0c14e535e374f08421a77"
+        },
+        {
+          "sha": "89b083f9995f81fc96a4b8c36ea7b5c443505aeb",
+          "author_date": "2025-07-16T07:29:38Z",
+          "message": "Fix prometheus.rs link (#1513)\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/89b083f9995f81fc96a4b8c36ea7b5c443505aeb"
+        },
+        {
+          "sha": "d57eb583b1c77f95117b4e69ff476db3239270bd",
+          "author_date": "2025-07-16T08:29:35Z",
+          "message": "Remove Migrator from boot_test_* doc comments (#1512)\n\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/d57eb583b1c77f95117b4e69ff476db3239270bd"
+        },
+        {
+          "sha": "f1a5d185ba9e64af85a84fa405502986ec1e311d",
+          "author_date": "2025-07-17T06:53:07Z",
+          "message": "fix: use rust-lld linker on windows (#1508)\n\nfix: add rust-lld linker to template",
+          "html_url": "https://github.com/loco-rs/loco/commit/f1a5d185ba9e64af85a84fa405502986ec1e311d"
+        },
+        {
+          "sha": "3f48a3efecae4a23295bc0458ec3fc1269ccc1c9",
+          "author_date": "2025-07-17T09:34:49Z",
+          "message": "Fix precompressed in static assets (#1524)\n\n* Fix Clippy warnings for Rust 1.88 stable\n\n* support precompressed in static asset middleware",
+          "html_url": "https://github.com/loco-rs/loco/commit/3f48a3efecae4a23295bc0458ec3fc1269ccc1c9"
+        },
+        {
+          "sha": "7d6e0f352d40241bbb0a4795e8bf77a94f94fc83",
+          "author_date": "2025-07-17T17:36:56Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/7d6e0f352d40241bbb0a4795e8bf77a94f94fc83"
+        },
+        {
+          "sha": "39c61e3cb1722b55b10f9b493da02987b415f0e0",
+          "author_date": "2025-07-17T17:41:01Z",
+          "message": "support multiple jwt location (#1497)\n\n* support multiple jwt location\n\n* fix clippy",
+          "html_url": "https://github.com/loco-rs/loco/commit/39c61e3cb1722b55b10f9b493da02987b415f0e0"
+        },
+        {
+          "sha": "b358f08643f2d4b863b0f4459859ec3e0e86ef08",
+          "author_date": "2025-07-18T04:13:40Z",
+          "message": "Update cli.rs (#1529)",
+          "html_url": "https://github.com/loco-rs/loco/commit/b358f08643f2d4b863b0f4459859ec3e0e86ef08"
+        },
+        {
+          "sha": "9db1e5763d4898ed56a72a0a0bf243ff2bdb8d65",
+          "author_date": "2025-07-18T04:18:35Z",
+          "message": "bump version 0.16.1 (#1527)",
+          "html_url": "https://github.com/loco-rs/loco/commit/9db1e5763d4898ed56a72a0a0bf243ff2bdb8d65"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.16.2",
@@ -269,8 +1016,57 @@
     {
       "release": "v0.16.3",
       "previous_release": "v0.16.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "0c45bac152818cb3cf6f32d28f84e572bea6a276",
+          "author_date": "2025-07-22T11:26:10Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/0c45bac152818cb3cf6f32d28f84e572bea6a276"
+        },
+        {
+          "sha": "967cd0a50797f79400043d5e1725304a0993eb77",
+          "author_date": "2025-07-24T17:22:30Z",
+          "message": "feat: support nullable foreign keys with `references?` syntax (#1544)\n\n* feat: support nullable foreign keys with `references?` syntax\n\n* fix clippy\n\n* fix clippy + tests\n\n* tests\n\n* tests\n\n* tests\n\n* Increase the database timeout in tests to address intermittent PoolTimedOut errors",
+          "html_url": "https://github.com/loco-rs/loco/commit/967cd0a50797f79400043d5e1725304a0993eb77"
+        },
+        {
+          "sha": "f7ce347a7bd19db01a2302ee3e70ac9c59f8ee8a",
+          "author_date": "2025-07-24T17:23:45Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/loco-rs/loco/commit/f7ce347a7bd19db01a2302ee3e70ac9c59f8ee8a"
+        },
+        {
+          "sha": "b2c931f5195970de609b8234843034476ac50a41",
+          "author_date": "2025-07-27T06:00:13Z",
+          "message": "fix: add missing debug_assertions for tera_post_process (#1551)\n\n* fix: add missing debug_assertions for tera_post_process\n\n* fix: avoid very complex typ warn from Clippy\n\n* Revert \"fix: add missing debug_assertions for tera_post_process\"\n\nThis reverts commit b1f73bfe\n\n* fix: remove redundant debug_assertions for tera_post_process as it lead to build fails",
+          "html_url": "https://github.com/loco-rs/loco/commit/b2c931f5195970de609b8234843034476ac50a41"
+        },
+        {
+          "sha": "8e2b26731ebde31731d1a2173cd79b3a0c99874f",
+          "author_date": "2025-07-27T06:01:28Z",
+          "message": "Add an API to re-send verification mail  (#1456)\n\n* dd an API to re-send verification mail\n\n* fix test error can resend verification mail\n\n* Add snapshot for resend verification email test\n\n---------\n\nCo-authored-by: Kumar Ujjawal <kumar.ujjawal@greenpista.com>\nCo-authored-by: Elad Kaplan <kaplan.elad@gmail.com>",
+          "html_url": "https://github.com/loco-rs/loco/commit/8e2b26731ebde31731d1a2173cd79b3a0c99874f"
+        },
+        {
+          "sha": "38ef04993f665f2bcd3e4e791b087d7175485380",
+          "author_date": "2025-07-27T06:28:10Z",
+          "message": "adding to ci cargo build --release (#1553)\n\n* adding to ci cargo build --release\n\n* adding to ci cargo build --release\n\n* add to sanity",
+          "html_url": "https://github.com/loco-rs/loco/commit/38ef04993f665f2bcd3e4e791b087d7175485380"
+        },
+        {
+          "sha": "ce80b721ca20c3a6311f9aad42515a58851e0bfd",
+          "author_date": "2025-07-27T09:13:39Z",
+          "message": "bump version 0.16.3 (#1554)",
+          "html_url": "https://github.com/loco-rs/loco/commit/ce80b721ca20c3a6311f9aad42515a58851e0bfd"
+        },
+        {
+          "sha": "1357d249c8233529b20794a95900363cfa6ba0be",
+          "author_date": "2025-07-27T09:20:33Z",
+          "message": "Update Cargo.lock",
+          "html_url": "https://github.com/loco-rs/loco/commit/1357d249c8233529b20794a95900363cfa6ba0be"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.0.0",

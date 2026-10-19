@@ -1547,8 +1547,369 @@
     {
       "release": "1.4.0",
       "previous_release": "1.3.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a42258b0364e37f34717727e4bb58f7dfc0b8df1",
+          "author_date": "2022-09-27T15:02:24Z",
+          "message": "Update github badge and add docker badge (#3884)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/a42258b0364e37f34717727e4bb58f7dfc0b8df1"
+        },
+        {
+          "sha": "c94e47c9bc8da5fc427d5c7e4fc907c8905fab23",
+          "author_date": "2022-09-28T11:15:53Z",
+          "message": "Reflow centralisation 1: Scope + Respace (#3824)\n\n* Write up intent\r\n\r\n* Logging and Config in context\r\n\r\n* Reflow + tests\r\n\r\n* PR Feedback\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\n\r\n* split apart respace_point\r\n\r\n* Resolve merge conflicts on path_to\r\n\r\n* Tests for respace\r\n\r\n* Tests from #3762.\r\n\r\nCo-authored-by: @mtsadler <michaeltsadler1@gmail.com>\r\n\r\n* Handle alignment of aliases\r\n\r\n* typo and more stretching test\r\n\r\n* more test cases and fixes\r\n\r\n* split out alignment logic into method\r\n\r\n* Resolve single line line bug\r\n\r\n* Remove unused code\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\nCo-authored-by: @mtsadler <michaeltsadler1@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/c94e47c9bc8da5fc427d5c7e4fc907c8905fab23"
+        },
+        {
+          "sha": "bf9af209a4a7942a562ccb04aa55d64c5297f7fa",
+          "author_date": "2022-09-29T16:09:38Z",
+          "message": "MySQL: Implement (key_part, ...) in index definitions (#3887)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/bf9af209a4a7942a562ccb04aa55d64c5297f7fa"
+        },
+        {
+          "sha": "89941aefaea5c6dc0f4701fd73ae1b0973008a94",
+          "author_date": "2022-09-30T22:09:38Z",
+          "message": "Snowflake: Create network policy ip lists (#3888)\n\n* Snowflake: CREATE NETWORK POLICY\r\n\r\n* Use create_statement instead",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/89941aefaea5c6dc0f4701fd73ae1b0973008a94"
+        },
+        {
+          "sha": "67cbaecd104e8f835f4247ac5afa7aa51bc6fa42",
+          "author_date": "2022-10-02T14:28:45Z",
+          "message": "Bring L008 into reflow work (#3908)\n\n* Bring L008 into reflow work\r\n\r\n* test coverage",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/67cbaecd104e8f835f4247ac5afa7aa51bc6fa42"
+        },
+        {
+          "sha": "5385299508d89eb2eb89d81a4f563c88e4501340",
+          "author_date": "2022-10-02T19:15:13Z",
+          "message": "Reflow centralisation 2: Rebreak (operators & commas) (#3847)\n\n* Rebreak for L007 & L019\r\n\r\n* Validate configs, deprecate old ones and update tests\r\n\r\n* Edge cases, logging, streamlining and bugs\r\n\r\n- Correct test and typo in L052\r\n- Remove error case.\r\n- Resolve merge conflicts\r\n- Fix doctest\r\n- Remove reference to old config\r\n- Fix doctest again\r\n- Revert \"Remove unused code\"\r\n- This reverts commit 4198e559e77d86c089b7e2335dab0da53fa89b64.\r\n- Refine treatment of end-of-file\r\n- Test cases and nits\r\n- Two more stretching test cases\r\n\r\n* Reclassify end_of_file to be blocky\r\n\r\n* introduce strict and alone\r\n\r\n* deduce indents and migrate L065\r\n\r\n* Address better description in L019\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\n\r\n* anonymous tuple to frozen dataclass.\r\n\r\n* reflow element segments to tuple\r\n\r\n* Make end of loop more explicit\r\n\r\n* while loops to for loops\r\n\r\n* max to a for loop\r\n\r\n* Clearer newline logic\r\n\r\n* correction to while > for\r\n\r\n* linting\r\n\r\n* linting\r\n\r\n* Partition fixes and solve issues\r\n\r\n* More tests\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\n\r\n* mypy class typing\r\n\r\n* Simplify _RebreakLocation\r\n\r\n* validate no double whitespace\r\n\r\n* Revert double whitespace check\r\n\r\n* more explicit logging\r\n\r\n* template loop bug fix\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/5385299508d89eb2eb89d81a4f563c88e4501340"
+        },
+        {
+          "sha": "2ac8e125604aa1f19d9811f7dc5bd56eefa654ac",
+          "author_date": "2022-10-03T09:20:44Z",
+          "message": "fix(redshift): Allow keywords in qualified references (#3905)\n\n* fix(redshift): Allow keywords in qualified references\r\n\r\n* fix(redshift): Use ColumnReferenceSegment inherited from Postgres\r\n\r\nA previous commit overrode ColumnReferenceSegment to allow keywords to\r\nbe used as qualified column references. However, this was a double\r\noverride and by deleting the existing override we achieve the same result.",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/2ac8e125604aa1f19d9811f7dc5bd56eefa654ac"
+        },
+        {
+          "sha": "56ebcd4eb96a3d17224c6e816406307cdfdb8636",
+          "author_date": "2022-10-03T10:56:30Z",
+          "message": "provide custom DeprecatedOption (#3904)\n\n* [issue_3644] provide custom DeprecatedOption\r\n\r\nThis is used for --disable_progress_bar. It's not covered with any tests yet, because not sure if this approach will defend itself.\r\n\r\n* [issue_3644] provide some tests for DeprecatedOption\r\n\r\n* [issue_3644] fix mypy warnings\r\n\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/56ebcd4eb96a3d17224c6e816406307cdfdb8636"
+        },
+        {
+          "sha": "d0e661c6184f8ae6d9a34cb9749ae7f28b039591",
+          "author_date": "2022-10-03T13:16:52Z",
+          "message": "Fix typos (#3901)\n\nFound via `codespell -S ./test/fixtures,./.mypy_cache,./.tox -L\r\ninout,crate,fo,nd,falsy,get\\'s`\r\n\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/d0e661c6184f8ae6d9a34cb9749ae7f28b039591"
+        },
+        {
+          "sha": "4601a8965eb1cada2ef4331029168aef13d5b5fd",
+          "author_date": "2022-10-03T14:41:55Z",
+          "message": "fix(test): Return ParseExample namedtuple in get_parse_fixtures (#3911)\n\n* fix(test): Return ParseExample namedtuple in get_parse_fixtures\r\n\r\nThis allows the usage of dot notation in\r\ntest/generate_parse_fixture_yml.py::_is_matching_criteria.\r\n\r\n* fix(lint): Add docstring to ParseExample",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/4601a8965eb1cada2ef4331029168aef13d5b5fd"
+        },
+        {
+          "sha": "8ccd108c88220188b361a8d177cd87e68e385e18",
+          "author_date": "2022-10-03T15:46:36Z",
+          "message": "feat: Handle postgres ranges (#3903)\n\n- Handle either single int, both numbers, or either\r\n  numbers when accessing postgres array\r\n\r\n+ref: https://github.com/sqlfluff/sqlfluff/issues/3842\r\n\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/8ccd108c88220188b361a8d177cd87e68e385e18"
+        },
+        {
+          "sha": "63219a4c261cb808db7baaa8bae4595b2f3b381e",
+          "author_date": "2022-10-03T16:15:07Z",
+          "message": "[issue_3897] fix issue with empty enum for postgres (#3910)\n\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/63219a4c261cb808db7baaa8bae4595b2f3b381e"
+        },
+        {
+          "sha": "bc787c94af3bb469779e712ad20eaf76770dc87f",
+          "author_date": "2022-10-03T19:36:30Z",
+          "message": "feat: Output to stderr using click (#3902)\n\n- Output to stderr using click\r\n- Use unused color var\r\n- Pass color flag to click\r\nfixes #3892\r\n+ref: https://github.com/sqlfluff/sqlfluff/issues/3892\r\n\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/bc787c94af3bb469779e712ad20eaf76770dc87f"
+        },
+        {
+          "sha": "1da948963249fd5ce610a48d14eca5fc5da60b77",
+          "author_date": "2022-10-04T07:59:04Z",
+          "message": "Postgres Revoke fix (#3912)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/1da948963249fd5ce610a48d14eca5fc5da60b77"
+        },
+        {
+          "sha": "263d69cd9e702d1aaf1c522f45db7491c1412069",
+          "author_date": "2022-10-04T08:33:37Z",
+          "message": "`DATABRICKS`: Add Support for Delta Live Tables (DLT) Syntax (#3899)\n\n* updates to Spark SQL dialect for Delta Live Tables syntax\r\n\r\n* final changes and test cases to sparksql dialect for adding DLT support\r\n\r\n* update dialects rst doc file\r\n\r\nclarify that Delta Lake expressions are implemented in SparkSQL\r\n\r\nadd reasoning why Databricks dialect is an alias instead of implemented outside of spark sql\r\n\r\n* doclinting\r\n\r\n* adding notes based on PR feedback to increase clarity\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/263d69cd9e702d1aaf1c522f45db7491c1412069"
+        },
+        {
+          "sha": "e27dc0b24eec9120630334a1480304dd224fb0a0",
+          "author_date": "2022-10-04T20:55:41Z",
+          "message": "[issue_3794] allow to use 'usage' as identifier for postgres (#3914)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/e27dc0b24eec9120630334a1480304dd224fb0a0"
+        },
+        {
+          "sha": "7de21ac05fc52c840d4391d5ba8ad48561ec4d8a",
+          "author_date": "2022-10-05T09:05:51Z",
+          "message": "Map old configs to new configs (#3915)\n\n* Map old configs to new configs\r\n\r\n* more explicit logging\r\n\r\n* linting\r\n\r\n* more explicit test log config\r\n\r\n* scrap testing logging output - too hard\r\n\r\n* linting\r\n\r\n* Update src/sqlfluff/core/config.py\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/7de21ac05fc52c840d4391d5ba8ad48561ec4d8a"
+        },
+        {
+          "sha": "55b7dd0351fa93ab861c542561d4196a6d3685c4",
+          "author_date": "2022-10-06T10:13:44Z",
+          "message": "[issue_3687] sparksql: added * EXCEPT for SELECT clause (#3922)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/55b7dd0351fa93ab861c542561d4196a6d3685c4"
+        },
+        {
+          "sha": "07d117a75fb2615578f65a1b749d9431f6b50279",
+          "author_date": "2022-10-06T13:38:42Z",
+          "message": "SQLite: Add support for table-level CHECK constraint (#3923)\n\nAdd support for table-level `CHECK` constraint by following the approach\r\nput forth in the PostgreSQL dialect.\r\n\r\nSee: https://www.sqlite.org/syntax/table-constraint.html\r\n\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/07d117a75fb2615578f65a1b749d9431f6b50279"
+        },
+        {
+          "sha": "1863863285d6d1f66b603bd6fd850f12faec38ac",
+          "author_date": "2022-10-06T16:34:16Z",
+          "message": "T-SQL: Allow specifying join hints (#3921)\n\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/1863863285d6d1f66b603bd6fd850f12faec38ac"
+        },
+        {
+          "sha": "f4ecac63a7e93036ed28ad272b534d89aa62ead1",
+          "author_date": "2022-10-07T18:11:27Z",
+          "message": "SparkSQL: Fixed bug with `QUALIFY` usage without `WHERE` clause (applies also for Databricks dialect) (#3930)\n\n* added `QUALIFY` as terminator\n\n* added a test query without `WHERE` clause for",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f4ecac63a7e93036ed28ad272b534d89aa62ead1"
+        },
+        {
+          "sha": "1d29daaa2fe56080157024478cd0e72f765fe8d9",
+          "author_date": "2022-10-07T18:35:59Z",
+          "message": "MySQL: Fix create trigger (#3928)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/1d29daaa2fe56080157024478cd0e72f765fe8d9"
+        },
+        {
+          "sha": "cdcf58210b9ff4d0a631ab29ea50d890fb4b3e95",
+          "author_date": "2022-10-08T11:33:38Z",
+          "message": "T-SQL: Fix indendentation of OUTER APPLY (#3932)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/cdcf58210b9ff4d0a631ab29ea50d890fb4b3e95"
+        },
+        {
+          "sha": "ac2fc58eb3bf975d73923fb981c7e6f2dca034d9",
+          "author_date": "2022-10-08T11:55:55Z",
+          "message": "Break apart reflow classes and extract methods (#3919)\n\n* Break apart bigger classes and extract methods\r\n\r\n* Simplify structure.\r\n\r\n* no cover\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/ac2fc58eb3bf975d73923fb981c7e6f2dca034d9"
+        },
+        {
+          "sha": "636aea67137635c4a993724c03a3062f9c94af96",
+          "author_date": "2022-10-08T13:01:40Z",
+          "message": "Add INSERT INTO <> DEFAULT VALUES to ANSI SQL and T-SQL (#3934)\n\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/636aea67137635c4a993724c03a3062f9c94af96"
+        },
+        {
+          "sha": "712fd1055234b122beff08cefd708822f8bd7899",
+          "author_date": "2022-10-08T14:20:58Z",
+          "message": "Refactor Lexer: Split apart elements_to_segments and refine placement of meta segments. (#3925)\n\n* Add indents and dedents around template loop\r\n\r\n* mark indents as templated if inserted around templated sections\r\n\r\n* docstring and linting\r\n\r\n* Split apart elements_to_segments and rework placement of indents\r\n\r\n* mypy and linting\r\n\r\n* another test case and bug fix\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\n\r\n* condense position markers\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/712fd1055234b122beff08cefd708822f8bd7899"
+        },
+        {
+          "sha": "5a88ee2302abfe54a173e81c6e654642dbd6c17c",
+          "author_date": "2022-10-08T15:02:54Z",
+          "message": "Fix crash in L042 on \"UNION\" or other \"set\" queries (#3931)\n\n* Fix crash in L042 on \"UNION\" or other \"set\" queries\r\n\r\n* Working version (just needs tidying)\r\n\r\n* Undo some unnecessary changes\r\n\r\n* Remove more unnecessary changes\r\n\r\n* Check for and fix missing whitespace after the CORRECT \"FROM\"\r\n\r\n* Tidying\r\n\r\n* DRY things up\r\n\r\n* Tweak comments\r\n\r\n* Break up compose_select() function, which was doing 2 unrelated things\r\n\r\n* Revert \"Break up compose_select() function, which was doing 2 unrelated things\"\r\n\r\nThis reverts commit c9c81fc0ca23b0efc66557222015ae8983609d1f.\r\n\r\n* Break up compose_select() again, more carefully\r\n\r\n* Comments, docstrings\r\n\r\n* Interim commit of refactoring\r\n\r\n* Finish splitting up compose_select(), hopefully correctly this time\r\n\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/5a88ee2302abfe54a173e81c6e654642dbd6c17c"
+        },
+        {
+          "sha": "72fed8048248426a7b6e95880cec87641249db06",
+          "author_date": "2022-10-08T20:41:47Z",
+          "message": "Hive: Add support for LATERAL VIEW clause (#3935)\n\nAdd support for `LATERAL VIEW` clause by following the approach put\r\nforth in the SparkQL dialect.\r\n\r\nSee: https://cwiki.apache.org/confluence/display/hive/languagemanual+lateralview",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/72fed8048248426a7b6e95880cec87641249db06"
+        },
+        {
+          "sha": "52307754a042f472a745c325b2611adf4c7cbea2",
+          "author_date": "2022-10-09T00:02:05Z",
+          "message": "T-SQL: Allow to parse SYNONYM statements (#3941)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/52307754a042f472a745c325b2611adf4c7cbea2"
+        },
+        {
+          "sha": "ff08532b238e975b7dc6d6dde746fbd4c5afd01c",
+          "author_date": "2022-10-09T12:49:24Z",
+          "message": "MySQL: Support optional \"IF NOT EXISTS\" with CREATE TRIGGER (#3943)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/ff08532b238e975b7dc6d6dde746fbd4c5afd01c"
+        },
+        {
+          "sha": "f015e549123f6ad72dcbea10cffe9d737ccdc968",
+          "author_date": "2022-10-09T13:23:26Z",
+          "message": "Load the full dbt manifest (#3926)\n\n* load the full manifest\r\n\r\n* add access dbt graph test\r\n\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f015e549123f6ad72dcbea10cffe9d737ccdc968"
+        },
+        {
+          "sha": "1ef7d86e886ad59025705b7786c1b1ff2bc70075",
+          "author_date": "2022-10-09T17:04:22Z",
+          "message": "Add templated block uuids (#3936)\n\n* Add block uuids\r\n\r\n* Update src/sqlfluff/core/parser/lexer.py\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/1ef7d86e886ad59025705b7786c1b1ff2bc70075"
+        },
+        {
+          "sha": "6d827b2406ddadf27b93e59efd78789a37998dd0",
+          "author_date": "2022-10-09T17:25:08Z",
+          "message": "Adding missing KeywordSegments for different file types in Athena dialect (#3898)\n\n* fix/adding-missing-keyword-segments\r\n\r\nThese types are missing --> therefore the linter is failing with:\r\nRuntimeError: Grammar refers to 'OrcKeywordSegment' which was not found in the athena dialect. Perhaps specify the keyword? https://github.com/sqlfluff/sqlfluff/wiki/Contributing-Dialect-Changes#keywords\r\n\r\n* add test for athena orc file\r\n\r\n* create yaml file\r\n\r\n* test input format\r\n\r\nCo-authored-by: CommonCrisis <samuel@Brudi.localdomain>\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/6d827b2406ddadf27b93e59efd78789a37998dd0"
+        },
+        {
+          "sha": "f691f033ac90e760bb70f0f9d02c89a859565d6d",
+          "author_date": "2022-10-09T17:49:07Z",
+          "message": "Consolidate comma style configs (#3945)\n\n* Remove comma style config\r\n\r\n* Migrate L022 to new config\r\n\r\n* choose a different config field\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f691f033ac90e760bb70f0f9d02c89a859565d6d"
+        },
+        {
+          "sha": "0b21edbc80d8d77983e9b357af73a336ddf6ac93",
+          "author_date": "2022-10-09T18:35:33Z",
+          "message": "Enable dumping of performance information to csv. (#3937)\n\n* Persist timing information\r\n\r\n* beta messaging\r\n\r\n* fail nicely for files which don't parse\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/0b21edbc80d8d77983e9b357af73a336ddf6ac93"
+        },
+        {
+          "sha": "7e197a5d6e5eeb943d4dcf39ccafa2d429eb9d9f",
+          "author_date": "2022-10-09T23:14:19Z",
+          "message": "T-SQL: Allow arbitrary expressions in PARTITION BY clause (#3939)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/7e197a5d6e5eeb943d4dcf39ccafa2d429eb9d9f"
+        },
+        {
+          "sha": "c5038c6dd7376af1528260c772f93dca0b851718",
+          "author_date": "2022-10-11T16:33:41Z",
+          "message": "Postgres: ALTER PROCEDURE (#3949)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/c5038c6dd7376af1528260c772f93dca0b851718"
+        },
+        {
+          "sha": "3a130736796943e2b83197e1611542ad4bf5e4fa",
+          "author_date": "2022-10-12T04:54:14Z",
+          "message": "fixed typos in docstrings and comments (#3953)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/3a130736796943e2b83197e1611542ad4bf5e4fa"
+        },
+        {
+          "sha": "682807656af73e4ffc3262e0c7c18663d4666cac",
+          "author_date": "2022-10-12T05:10:30Z",
+          "message": "TSQL: Add support for UPDATE STATISTICS option FULLSCAN (#3950)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/682807656af73e4ffc3262e0c7c18663d4666cac"
+        },
+        {
+          "sha": "cc0052e5a8b1a3aea45abb00b9ca20ebc4ee76b6",
+          "author_date": "2022-10-14T22:05:45Z",
+          "message": "MySQL: Support REPLACE statement (#3964)\n\nAlso fixes usage of SelectPartitionClauseSegment in LoadDataSegment",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/cc0052e5a8b1a3aea45abb00b9ca20ebc4ee76b6"
+        },
+        {
+          "sha": "652ecb63fbd98e5b84be1e9aa703e696f6359172",
+          "author_date": "2022-10-14T23:09:30Z",
+          "message": "Snowflake: ALTER TABLE constraint actions (#3959)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/652ecb63fbd98e5b84be1e9aa703e696f6359172"
+        },
+        {
+          "sha": "159b47afd1b2634c2a52f9212370d8b2c721901c",
+          "author_date": "2022-10-15T16:46:38Z",
+          "message": "Athena: Add support for using underscore aliases (#3965)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/159b47afd1b2634c2a52f9212370d8b2c721901c"
+        },
+        {
+          "sha": "cd1aee84b58f6d3a577e552d7dd7e11e8334e766",
+          "author_date": "2022-10-17T22:12:49Z",
+          "message": "SparkSQL: added support for : (colon sign) operator (Databricks SQL) (#3956)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/cd1aee84b58f6d3a577e552d7dd7e11e8334e766"
+        },
+        {
+          "sha": "55e68b4ca9bf6e2f613d48c6bbcb50de4f101dbc",
+          "author_date": "2022-10-18T17:09:16Z",
+          "message": "Snowflake frame clause variables (#3969)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/55e68b4ca9bf6e2f613d48c6bbcb50de4f101dbc"
+        },
+        {
+          "sha": "121d6dd415f7436a375b9a3ec33ffd0a6283b530",
+          "author_date": "2022-10-18T17:33:41Z",
+          "message": "Unpin `markupsafe` (#3967)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/121d6dd415f7436a375b9a3ec33ffd0a6283b530"
+        },
+        {
+          "sha": "e233d8a317a4d8992c3ba0151a75dd387b700dad",
+          "author_date": "2022-10-20T21:18:59Z",
+          "message": "Fix type annotation of user_rules in `Linter` (#3977)\n\nFixes #3973",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/e233d8a317a4d8992c3ba0151a75dd387b700dad"
+        },
+        {
+          "sha": "172dafea124fbba1251ccbf36fbb545ff725d707",
+          "author_date": "2022-10-20T22:01:18Z",
+          "message": "[BUGFIX] Changing cwd temporarily on manifest load as dbt is not using project_dir to read/write target folder (#3979)\n\n* Changing cwd temporarily on dbt manifest load\r\n\r\nCo-authored-by: ssassi@sophilabs.com\r\n\r\n* Add a test\r\n\r\n* Try to fix broken test\r\n\r\n* Fix test interaction\r\n\r\n* Adjust dirs to try and pass on GitHub CI\r\n\r\n* Profile full path to project and profiles dir\r\n\r\n* Try again\r\n\r\n* Skip test on Windows",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/172dafea124fbba1251ccbf36fbb545ff725d707"
+        },
+        {
+          "sha": "19601ba546c011e30547305dc1ddd23a6bc2f3f9",
+          "author_date": "2022-10-22T09:20:29Z",
+          "message": "document inline configuration (#3981)\n\n* document inline configuration\r\n\r\n* doclinting",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/19601ba546c011e30547305dc1ddd23a6bc2f3f9"
+        },
+        {
+          "sha": "12b8f2ef288f648fb5b13b68f423832a05ff1129",
+          "author_date": "2022-10-22T16:28:06Z",
+          "message": "Allow lambda argument columns to be unqualified (#3971)\n\nFixes https://github.com/sqlfluff/sqlfluff/issues/3961\r\n\r\nThis adds code to identify column references that are part of a lambda\r\nexpression, and mark them as \"standalone aliases\" that are exempt from rule\r\nL027. (I.e. they are allowed to be unqualified, because there is no further\r\nway to qualify them.)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/12b8f2ef288f648fb5b13b68f423832a05ff1129"
+        },
+        {
+          "sha": "10e23f93c0d0039aeeb3657fbcf6e775b38e3674",
+          "author_date": "2022-10-22T18:31:07Z",
+          "message": "Reflow Documentation V1 (#3970)\n\n* Start docs reorg\r\n\r\n* Spacing docs\r\n\r\n* Line Break docs\r\n\r\n* rst fixes\r\n\r\n* Reflow docs V1\r\n\r\n* Autodoc the internals and flesh out docstrings.\r\n\r\n* doc linting\r\n\r\n* black\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\n\r\n* more docs changes\r\n\r\n* rename align scope and add example\r\n\r\n* add note on block comments\r\n\r\n* more PR feedback\r\n\r\n* doclinting\r\n\r\n* Update docs/source/configuration.rst\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\n\r\n* PR Feedback\r\n\r\n* Update docs/source/layout.rst\r\n\r\nCo-authored-by: Niall Woodward <niall@niallrees.com>\r\n\r\n* Clarify the point on hanging indents alone.\r\n\r\nCo-authored-by: Barry Hart <barrywhart@yahoo.com>\r\nCo-authored-by: Niall Woodward <niall@niallrees.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/10e23f93c0d0039aeeb3657fbcf6e775b38e3674"
+        },
+        {
+          "sha": "60bff11c7a815c18731b84a79eaef3aada198294",
+          "author_date": "2022-10-23T10:40:11Z",
+          "message": "Fix Jinja templater issue where undefined callable threw an exception (#3982)\n\n* Fix Jinja templater issue where undefined callable threw an exception\r\n\r\n* Fix (and test) similar issue when ignore=templating",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/60bff11c7a815c18731b84a79eaef3aada198294"
+        },
+        {
+          "sha": "17a9311fb5c9d4b1adad3bb9f3ddd3349cd01f6f",
+          "author_date": "2022-10-24T23:48:03Z",
+          "message": "Snowflake tag reference segment (#3985)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/17a9311fb5c9d4b1adad3bb9f3ddd3349cd01f6f"
+        },
+        {
+          "sha": "2ecf297dfa3f7248008910cee7066a0640040a4c",
+          "author_date": "2022-10-26T19:04:57Z",
+          "message": "Fix Windows CI check (#3992)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/2ecf297dfa3f7248008910cee7066a0640040a4c"
+        },
+        {
+          "sha": "6e8756dc16c1850a97a45920f2570544d6f4bf84",
+          "author_date": "2022-10-26T19:25:51Z",
+          "message": "Clickhouse: Support non-standard CREATE TABLE statement (#3986)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/6e8756dc16c1850a97a45920f2570544d6f4bf84"
+        },
+        {
+          "sha": "f15cc38ed03366525780c1027075fdcd9ebf79f3",
+          "author_date": "2022-10-26T19:49:58Z",
+          "message": "BigQuery: allow nesting of SetExpressionSegment (#3990)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f15cc38ed03366525780c1027075fdcd9ebf79f3"
+        },
+        {
+          "sha": "f80587880685e4727d85a48a22e37f21f64fce2b",
+          "author_date": "2022-10-26T22:04:51Z",
+          "message": "BigQuery: Enable parsing of CLONE keyword (#3984)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f80587880685e4727d85a48a22e37f21f64fce2b"
+        },
+        {
+          "sha": "cad4473bfe98d98d286c799a54a347a11f906053",
+          "author_date": "2022-10-26T22:29:14Z",
+          "message": "Resolve parse error on multiple bracketed statements (#3994)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/cad4473bfe98d98d286c799a54a347a11f906053"
+        },
+        {
+          "sha": "556359333c2e16d68c469f1c3af84054b3bc5714",
+          "author_date": "2022-10-27T16:23:43Z",
+          "message": "Hive: Add support for EXCHANGE PARTITION in ALTER TABLE (#3991)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/556359333c2e16d68c469f1c3af84054b3bc5714"
+        },
+        {
+          "sha": "0b432571c336ba58ef80ac6a87f66ee3f0f44c6b",
+          "author_date": "2022-10-28T00:22:25Z",
+          "message": "Snowflake: Partition nonreserved keyword (#3972)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/0b432571c336ba58ef80ac6a87f66ee3f0f44c6b"
+        },
+        {
+          "sha": "0e89f68dbe5d112e58d6cbd29e0a0cf8ba035411",
+          "author_date": "2022-10-31T09:36:05Z",
+          "message": "Prep version 1.4.0 (#3983)\n\n* Bump to version 1.4.0\r\n\r\n* Add summary to changelog\r\n\r\n* Update changelog\r\n\r\n* update changelog\r\n\r\n* Update changelog\r\n\r\n* Update changelog\r\n\r\nCo-authored-by: alanmcruickshank <alanmcruickshank@users.noreply.github.com>\r\nCo-authored-by: Alan Cruickshank <alan@designingoverload.com>\r\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/0e89f68dbe5d112e58d6cbd29e0a0cf8ba035411"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.4.1",
@@ -1655,14 +2016,178 @@
     {
       "release": "2.0.6",
       "previous_release": "2.0.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "ebdae040f192dedb4eabe743af988dc42b55062c",
+          "author_date": "2023-04-15T11:30:34Z",
+          "message": "end-of-file > end_of_file (#4753)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/ebdae040f192dedb4eabe743af988dc42b55062c"
+        },
+        {
+          "sha": "8ce7104a4151c0890cf057144f1ea4b270461fd7",
+          "author_date": "2023-04-15T11:34:30Z",
+          "message": "Fix issue with macros triggering LT01 (#4757)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/8ce7104a4151c0890cf057144f1ea4b270461fd7"
+        },
+        {
+          "sha": "7ec6794147c2f11139b367944ac990abdd60bb79",
+          "author_date": "2023-04-15T11:39:31Z",
+          "message": "Fix #4745: (max() error in reindent) (#4752)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/7ec6794147c2f11139b367944ac990abdd60bb79"
+        },
+        {
+          "sha": "3cdb0e8620e6d5093c8d224b28ea1e4e3cfd65eb",
+          "author_date": "2023-04-16T11:15:33Z",
+          "message": "Remove the majority of greedy matchers (#4761)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/3cdb0e8620e6d5093c8d224b28ea1e4e3cfd65eb"
+        },
+        {
+          "sha": "5c9a08daf5183d77dd760d5cc153944e3e564323",
+          "author_date": "2023-04-16T11:21:56Z",
+          "message": "Allow comment match with preceding line (#4758)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/5c9a08daf5183d77dd760d5cc153944e3e564323"
+        },
+        {
+          "sha": "3b68bd0aba77b4c0f80ebc6197982916d7e5c292",
+          "author_date": "2023-04-16T14:26:09Z",
+          "message": "Fix #4582: Comments after end of line (#4760)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/3b68bd0aba77b4c0f80ebc6197982916d7e5c292"
+        },
+        {
+          "sha": "c8751f5cb3cbe2d245dfc8fb896dda6656df99ad",
+          "author_date": "2023-04-16T14:35:57Z",
+          "message": "Support hive set syntax (#4763)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/c8751f5cb3cbe2d245dfc8fb896dda6656df99ad"
+        },
+        {
+          "sha": "86d5ba9ffb63a6bea6ba606964f0e20d57f34f25",
+          "author_date": "2023-04-16T19:55:51Z",
+          "message": "SQLite: Support STRICT (#4766)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/86d5ba9ffb63a6bea6ba606964f0e20d57f34f25"
+        },
+        {
+          "sha": "86e571f2af947a2e266c3fa21bd5802e33ef8030",
+          "author_date": "2023-04-16T19:57:39Z",
+          "message": "SQLite: Remove refs to RESPECT and QUALIFY (#4765)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/86e571f2af947a2e266c3fa21bd5802e33ef8030"
+        },
+        {
+          "sha": "84735e9705b147b58d9dda6ab9ef1540fdf8ee24",
+          "author_date": "2023-04-16T21:48:24Z",
+          "message": "SQLite: Fix multiple parse issues in Expression_A_Grammar (#4769)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/84735e9705b147b58d9dda6ab9ef1540fdf8ee24"
+        },
+        {
+          "sha": "a820c139ccbe6d1865d73c4a459945cd69899f8f",
+          "author_date": "2023-04-17T09:14:51Z",
+          "message": "Use the new CollationReferenceSegment everywhere (#4770)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/a820c139ccbe6d1865d73c4a459945cd69899f8f"
+        },
+        {
+          "sha": "affce6d2fccc1c443b874d4b9ef95f5bcb2f4498",
+          "author_date": "2023-04-17T16:32:28Z",
+          "message": "Fix #4540: Untaken indents evaluation order. (#4768)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/affce6d2fccc1c443b874d4b9ef95f5bcb2f4498"
+        },
+        {
+          "sha": "e3f77d58f56149f9c8db3b790ef263b9853a9cb5",
+          "author_date": "2023-04-17T17:13:10Z",
+          "message": "Fix #2865 (AL05 exception for Redshift Semi-structured) (#4775)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/e3f77d58f56149f9c8db3b790ef263b9853a9cb5"
+        },
+        {
+          "sha": "e70ee8df49c76b0fa78e3184cc8da19b1664db09",
+          "author_date": "2023-04-18T15:20:24Z",
+          "message": "SQLite: Support CreateTrigger (#4767)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/e70ee8df49c76b0fa78e3184cc8da19b1664db09"
+        },
+        {
+          "sha": "73c4674f4bb843fcddede0ac3e6d7b577425c76e",
+          "author_date": "2023-04-18T19:31:34Z",
+          "message": "Snowflake Execute Task with Schema (#4771)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/73c4674f4bb843fcddede0ac3e6d7b577425c76e"
+        },
+        {
+          "sha": "f60e2fc3fd9ca2e1ee52263697b3338d57b47029",
+          "author_date": "2023-04-18T20:25:34Z",
+          "message": "Fix #4603 indent after Jinja 'do' directive (#4778)\n\nCo-authored-by: Fredrik Vraalsen <22197+fredriv@users.noreply.github.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f60e2fc3fd9ca2e1ee52263697b3338d57b47029"
+        },
+        {
+          "sha": "93c2f793568dbfa15b85c81f6091cb6d04345796",
+          "author_date": "2023-04-19T08:29:29Z",
+          "message": "Add a --quiet option for fix (#4764)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/93c2f793568dbfa15b85c81f6091cb6d04345796"
+        },
+        {
+          "sha": "0243d4a1ba29e6cc3dc96bd9ea178d0f8a576a8f",
+          "author_date": "2023-04-19T14:25:15Z",
+          "message": "Fix #2855: (Tech debt: check consistency in TemplatedFile init) (#4776)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/0243d4a1ba29e6cc3dc96bd9ea178d0f8a576a8f"
+        },
+        {
+          "sha": "d125f579fb364916fac0dab5580289dd02d36c94",
+          "author_date": "2023-04-19T16:00:08Z",
+          "message": "Fix #3538: (Fix files as we go) (#4777)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/d125f579fb364916fac0dab5580289dd02d36c94"
+        },
+        {
+          "sha": "7aed68a5a89bbfae260b5989bb66e5ac62b0cd61",
+          "author_date": "2023-04-19T16:29:07Z",
+          "message": "Fix #4660: Better handling of empty files. (#4780)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/7aed68a5a89bbfae260b5989bb66e5ac62b0cd61"
+        },
+        {
+          "sha": "4e15ef474cdaf1b48d8906f5221d4b9633d53cfc",
+          "author_date": "2023-04-19T16:41:28Z",
+          "message": "Inroduce `SAFE` prefix segment (#4773)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/4e15ef474cdaf1b48d8906f5221d4b9633d53cfc"
+        },
+        {
+          "sha": "a73be312e62e3b699ddb9529749ae433664dd7a3",
+          "author_date": "2023-04-19T16:41:31Z",
+          "message": "Snowflake: Support Temporary View (#4789)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/a73be312e62e3b699ddb9529749ae433664dd7a3"
+        },
+        {
+          "sha": "23198ff9f258912833c178f49206f3700892f3f3",
+          "author_date": "2023-04-20T09:26:50Z",
+          "message": "Prep version 2.0.6 (#4784)\n\nCo-authored-by: alanmcruickshank <alanmcruickshank@users.noreply.github.com>\r\nCo-authored-by: Alan Cruickshank <alan@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/23198ff9f258912833c178f49206f3700892f3f3"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "2.0.7",
       "previous_release": "2.0.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "37eed955172278e632fd923a17d989ea8fe20721",
+          "author_date": "2023-04-20T18:25:56Z",
+          "message": "fix: correct macos/osx config file location (#4795)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/37eed955172278e632fd923a17d989ea8fe20721"
+        },
+        {
+          "sha": "d2301023c2aa62a3329f42b70afff06892bd458d",
+          "author_date": "2023-04-20T18:29:53Z",
+          "message": "Fix bug with brackets and implicit indents (#4797)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/d2301023c2aa62a3329f42b70afff06892bd458d"
+        },
+        {
+          "sha": "0a664387f63b0f2573c7e51cc10ac888aab3c396",
+          "author_date": "2023-04-20T19:31:00Z",
+          "message": "Fix regression in implicit indents (#4798)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/0a664387f63b0f2573c7e51cc10ac888aab3c396"
+        },
+        {
+          "sha": "d19de0ecd16d298f9e3bfb91da122734c40c01e5",
+          "author_date": "2023-04-20T21:04:16Z",
+          "message": "Bump to version 2.0.7 (#4799)\n\nCo-authored-by: alanmcruickshank <alanmcruickshank@users.noreply.github.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/d19de0ecd16d298f9e3bfb91da122734c40c01e5"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "2.1.0",
@@ -1835,8 +2360,303 @@
     {
       "release": "3.1.1",
       "previous_release": "3.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "1e75212f5eb385b51191eee3a27fdde9bd822661",
+          "author_date": "2024-07-05T13:11:06Z",
+          "message": "Fix TSQL Post Table Expr intrepreted as function (#6001)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/1e75212f5eb385b51191eee3a27fdde9bd822661"
+        },
+        {
+          "sha": "e52e7e12681e97fc3682d06060be723bb3efbd70",
+          "author_date": "2024-07-05T13:12:26Z",
+          "message": "Snowflake: fixes drop column if exists parsing rules (#5999)\n\nCo-authored-by: Gergely Havlicsek <ghavlicsek@apple.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/e52e7e12681e97fc3682d06060be723bb3efbd70"
+        },
+        {
+          "sha": "775681d4d559a6434105aa917c3006fac2787beb",
+          "author_date": "2024-07-15T17:16:34Z",
+          "message": "MariaDB: Add mariadb specific syntax for generated columns (#6007)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/775681d4d559a6434105aa917c3006fac2787beb"
+        },
+        {
+          "sha": "819c8b5161b1d9cd12d20f9189ad262cdc2c3aa4",
+          "author_date": "2024-07-15T17:17:52Z",
+          "message": "MariaDB: Add support for DELETE/INSERT/REPLACE ... RETURNING (#6008)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/819c8b5161b1d9cd12d20f9189ad262cdc2c3aa4"
+        },
+        {
+          "sha": "68f09b16294e1184b4185b7d26887e2dc54bb270",
+          "author_date": "2024-07-15T18:01:21Z",
+          "message": "AM07: Handle set expressions with bracketed selects (#6005)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/68f09b16294e1184b4185b7d26887e2dc54bb270"
+        },
+        {
+          "sha": "68f8f6548a5a27ae668442e7b0489f2cac52dbd9",
+          "author_date": "2024-07-15T19:29:57Z",
+          "message": "MariaDB: Add support for GROUP BY ... ASC/DESC and GROUP BY ... WITH ROLLUP (#6009)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/68f8f6548a5a27ae668442e7b0489f2cac52dbd9"
+        },
+        {
+          "sha": "583d89989a1ff4c1df549b304d860160ed1e28fe",
+          "author_date": "2024-07-22T20:26:32Z",
+          "message": "Add additional dateparts from DATEPART() (#6012)\n\nCo-authored-by: Yorick Bouma <boumay01@heiway.net>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/583d89989a1ff4c1df549b304d860160ed1e28fe"
+        },
+        {
+          "sha": "60e3a34dfbc47dd193fec429bfe053d23e1481a0",
+          "author_date": "2024-07-23T09:05:42Z",
+          "message": "Parse API example (#6021)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/60e3a34dfbc47dd193fec429bfe053d23e1481a0"
+        },
+        {
+          "sha": "565b073660591cdf62bac7237a2a1cef42b8090a",
+          "author_date": "2024-07-24T08:07:03Z",
+          "message": "Add support for Clickhouse ORDER BY WITH FILL (#6018)\n\nCo-authored-by: Greg Finley <gregory.finley@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/565b073660591cdf62bac7237a2a1cef42b8090a"
+        },
+        {
+          "sha": "9ec348ccd6f46a10c19bc444159535f11e2e5c0b",
+          "author_date": "2024-07-25T20:28:27Z",
+          "message": "Added GENERATED AS IDENTITY support to DataBricks dialect (#6004)\n\nCo-authored-by: Seyedsoroush Hashemi <hashemi.soroush@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/9ec348ccd6f46a10c19bc444159535f11e2e5c0b"
+        },
+        {
+          "sha": "1dd820059693e64c9a3b32e4e51d5df8e9ff3de1",
+          "author_date": "2024-07-28T17:29:41Z",
+          "message": "Remove old deps for dbt templater (#6028)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/1dd820059693e64c9a3b32e4e51d5df8e9ff3de1"
+        },
+        {
+          "sha": "a3043fec09fef597b5832ac726276e0536076ffb",
+          "author_date": "2024-08-06T15:20:15Z",
+          "message": "Replace types-pkg-resources with types-setuptools (#6039)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/a3043fec09fef597b5832ac726276e0536076ffb"
+        },
+        {
+          "sha": "4a9ad582b85b7a0f7c1fd09e4debe47085710c67",
+          "author_date": "2024-08-08T14:46:26Z",
+          "message": "Snowflake:adds optional IF NOT EXISTS to ADD COLUMN (#6050)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/4a9ad582b85b7a0f7c1fd09e4debe47085710c67"
+        },
+        {
+          "sha": "3836b3d92a525c9891615049e963fb1fdbf296a1",
+          "author_date": "2024-08-08T20:42:34Z",
+          "message": "Snowflake: fixes parsing for AGGREGATE in CREATE FUNCTION statement (#6049)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/3836b3d92a525c9891615049e963fb1fdbf296a1"
+        },
+        {
+          "sha": "b05161decd5874e3dd7c674a32f3fb4f9d43b0d0",
+          "author_date": "2024-08-08T20:43:17Z",
+          "message": "CV11: Remove rogue print statement (#6047)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/b05161decd5874e3dd7c674a32f3fb4f9d43b0d0"
+        },
+        {
+          "sha": "5ff8cbe27a0e7142daed1b3964cbb1a882320546",
+          "author_date": "2024-08-08T21:09:53Z",
+          "message": "RF03: Fixed some subquery reference scenarios (#6046)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/5ff8cbe27a0e7142daed1b3964cbb1a882320546"
+        },
+        {
+          "sha": "9d0a4990e30466823f64a5980f93e71e9fa6b610",
+          "author_date": "2024-08-08T23:40:05Z",
+          "message": "Update the docs on RF03 (#6051)\n\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/9d0a4990e30466823f64a5980f93e71e9fa6b610"
+        },
+        {
+          "sha": "585ecf129919a56720c29e505f049bdea54ce2dd",
+          "author_date": "2024-08-08T23:48:55Z",
+          "message": "Fix ignored inline rule overrides (#5697) (#6010)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/585ecf129919a56720c29e505f049bdea54ce2dd"
+        },
+        {
+          "sha": "f08a86e455be6cd7b818d3fe93c5afd7efde1c19",
+          "author_date": "2024-08-08T23:58:37Z",
+          "message": "fix: redshift dialect, EXTENSION added (#6025)\n\nCo-authored-by: Bogusz <rafal.bogusz@dxc.com>\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f08a86e455be6cd7b818d3fe93c5afd7efde1c19"
+        },
+        {
+          "sha": "7d6d6a25559debc0752cc2f61c51ea53b9877ab5",
+          "author_date": "2024-08-09T00:24:18Z",
+          "message": "Fix Athena Partitioned By format for iceberg tables (#5399)\n\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/7d6d6a25559debc0752cc2f61c51ea53b9877ab5"
+        },
+        {
+          "sha": "7336b7dc3a4046f3dcd842a4cad61562cdd280e6",
+          "author_date": "2024-08-09T00:31:50Z",
+          "message": "bq_table_function : Added functionality to parse table functionsin BigQuery (#5480)\n\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/7336b7dc3a4046f3dcd842a4cad61562cdd280e6"
+        },
+        {
+          "sha": "9252ea96fed648cc3ba9b62e7c49fa056bcefc4c",
+          "author_date": "2024-08-09T00:56:31Z",
+          "message": "Fix/snowflake double quotes (#5727)\n\nCo-authored-by: Starstruckk <asya.dimitrova@dxc.com>\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/9252ea96fed648cc3ba9b62e7c49fa056bcefc4c"
+        },
+        {
+          "sha": "079e8487f3c929c58899e451250d4ff16e357461",
+          "author_date": "2024-08-09T21:47:46Z",
+          "message": "TRINO: support FILTER after WITHIN GROUP agg expression (#6056)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/079e8487f3c929c58899e451250d4ff16e357461"
+        },
+        {
+          "sha": "5210291d2dd8e8b94068130b8555681385b64772",
+          "author_date": "2024-08-09T21:57:40Z",
+          "message": "ST03: Detect CTE usage in nested `WITH` clauses (#6017)\n\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/5210291d2dd8e8b94068130b8555681385b64772"
+        },
+        {
+          "sha": "498bc632dae4a6a80d21a4fa69fdc55e4f2d39ee",
+          "author_date": "2024-08-09T22:09:29Z",
+          "message": "Exclude Macros from a path provided (#6031)\n\nCo-authored-by: Grant Culp <grant.culp@kraftheinz.com>\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/498bc632dae4a6a80d21a4fa69fdc55e4f2d39ee"
+        },
+        {
+          "sha": "0d20542509b0f46d5321e8522593ca3e0d6e8b25",
+          "author_date": "2024-08-09T22:09:39Z",
+          "message": "Support declare or replace variable statement for Databricks dialect (#6054)\n\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/0d20542509b0f46d5321e8522593ca3e0d6e8b25"
+        },
+        {
+          "sha": "cc40b83919cbfcc9eec3d223578f826f62ff72fd",
+          "author_date": "2024-08-09T22:17:46Z",
+          "message": "MySQL: Added SET TRANSACTION parsing (#5781)\n\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/cc40b83919cbfcc9eec3d223578f826f62ff72fd"
+        },
+        {
+          "sha": "c7e791d5ff3bf681a1eb2d717a69c8e166029c42",
+          "author_date": "2024-08-10T02:04:53Z",
+          "message": "Extract path discovery routines from config and linter. (#6057)\n\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/c7e791d5ff3bf681a1eb2d717a69c8e166029c42"
+        },
+        {
+          "sha": "e8042b0ae974918081c4d95cd1a2118e46c93e8f",
+          "author_date": "2024-08-11T16:09:05Z",
+          "message": "Run dbt tests in py312 by default (#5861)\n\nCo-authored-by: Danny Jones <51742311+WittierDinosaur@users.noreply.github.com>\r\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/e8042b0ae974918081c4d95cd1a2118e46c93e8f"
+        },
+        {
+          "sha": "2516b5d6360502a21221e0b862edc581b710df7a",
+          "author_date": "2024-08-11T16:35:08Z",
+          "message": "Copy statement postgres v9 compatibility support (#5181)\n\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/2516b5d6360502a21221e0b862edc581b710df7a"
+        },
+        {
+          "sha": "898fe9458f7feda309b4b244e9ba580deb6a2301",
+          "author_date": "2024-08-11T21:49:24Z",
+          "message": "fix(clickhouse): add support for DateTime64(precision, tz) and Tuples() (#6060)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/898fe9458f7feda309b4b244e9ba580deb6a2301"
+        },
+        {
+          "sha": "d11f39a5d17b30d5158928fadd577394b8fe441c",
+          "author_date": "2024-08-12T10:21:55Z",
+          "message": "fix(clickhouse): add support for limit by and bracketed format (#6061)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/d11f39a5d17b30d5158928fadd577394b8fe441c"
+        },
+        {
+          "sha": "5eeb7cd4caa60642fc979de79892200a0c9d828d",
+          "author_date": "2024-08-12T10:35:05Z",
+          "message": "ST05: Handle set statement's subsequent queries (#6062)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/5eeb7cd4caa60642fc979de79892200a0c9d828d"
+        },
+        {
+          "sha": "d26cc1658f863be80e2ffcb4e08f0e207986cbb3",
+          "author_date": "2024-08-12T14:23:08Z",
+          "message": "Big docs refactor. (#6052)\n\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/d26cc1658f863be80e2ffcb4e08f0e207986cbb3"
+        },
+        {
+          "sha": "473b6f1a08aeb84d43e8ec33245ecd7f7e9149ee",
+          "author_date": "2024-08-13T08:31:00Z",
+          "message": "feat(clickhouse): add support for decimal(x,y), decimal32(x) and match (#6063)\n\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/473b6f1a08aeb84d43e8ec33245ecd7f7e9149ee"
+        },
+        {
+          "sha": "dfca94402461316f89d2b6bbcc801c16a0c30cb3",
+          "author_date": "2024-08-14T11:45:20Z",
+          "message": "pre-commit: Disable progress bar (#6069)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/dfca94402461316f89d2b6bbcc801c16a0c30cb3"
+        },
+        {
+          "sha": "dc18175db0a97fcd39603523a35e07189efda9f0",
+          "author_date": "2024-08-14T11:47:32Z",
+          "message": "LT04: Fix indentation conflict with LT02 (#6068)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/dc18175db0a97fcd39603523a35e07189efda9f0"
+        },
+        {
+          "sha": "1de8109abb5a9aa3e6c15996995442afc6fd0224",
+          "author_date": "2024-08-14T11:49:40Z",
+          "message": "fix(clickhouse): add support for INTO OUTFILE and supported FORMATs (#6065)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/1de8109abb5a9aa3e6c15996995442afc6fd0224"
+        },
+        {
+          "sha": "32e7704aa86020f6e05fe8696ba312a193b67983",
+          "author_date": "2024-08-15T15:35:47Z",
+          "message": "fix(clickhouse): add support for rename statement (#6073)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/32e7704aa86020f6e05fe8696ba312a193b67983"
+        },
+        {
+          "sha": "733636d53fb3096cf161962390136ca144a5e387",
+          "author_date": "2024-08-15T15:36:24Z",
+          "message": "Add perma-links for rules (#6066)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/733636d53fb3096cf161962390136ca144a5e387"
+        },
+        {
+          "sha": "e754d282d423e692d0bb959f46f413ea17db2508",
+          "author_date": "2024-08-15T22:58:34Z",
+          "message": "fix(clickhouse): add support for tuple() and ENGINE MergeTree (#6079)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/e754d282d423e692d0bb959f46f413ea17db2508"
+        },
+        {
+          "sha": "3dd233513fc464c9033492069e556585105564b2",
+          "author_date": "2024-08-18T12:40:50Z",
+          "message": "Databricks: Add support for GROUP BY ALL (#6082)\n\nCo-authored-by: Daniel Brum <daniel.horus@toptal.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/3dd233513fc464c9033492069e556585105564b2"
+        },
+        {
+          "sha": "6aa2cfbd2ebc4e314e74aafa4d6690d5c3dd6bb3",
+          "author_date": "2024-08-18T12:43:15Z",
+          "message": "fix(dialect-trino): Trino ROW datatype definition in queries (#6085)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/6aa2cfbd2ebc4e314e74aafa4d6690d5c3dd6bb3"
+        },
+        {
+          "sha": "16006dd0f02da7fa025aa46a5d5b447d91607241",
+          "author_date": "2024-08-18T12:44:48Z",
+          "message": "Rationalise config discovery routines. (#6080)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/16006dd0f02da7fa025aa46a5d5b447d91607241"
+        },
+        {
+          "sha": "1e4876bd4a52920da8f5f617548e65d8b66b87c0",
+          "author_date": "2024-08-19T02:22:24Z",
+          "message": "Adding CTE to mysql views (#6077)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/1e4876bd4a52920da8f5f617548e65d8b66b87c0"
+        },
+        {
+          "sha": "861b9824d51af664e4469ce6065f276334395b37",
+          "author_date": "2024-08-19T04:01:42Z",
+          "message": "fixes #4855 - Add DECLARE statement in snowflake dialect (#6059)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/861b9824d51af664e4469ce6065f276334395b37"
+        },
+        {
+          "sha": "8bbd42f355641bcf9df91c995f495e9f433aedfd",
+          "author_date": "2024-08-19T18:07:51Z",
+          "message": "SparkSQL + Databricks: Add support for raw string literals (#6089)\n\nCo-authored-by: Daniel Brum <daniel.brum@toptal.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/8bbd42f355641bcf9df91c995f495e9f433aedfd"
+        },
+        {
+          "sha": "f7557854dedcde389b10903601d55f77197fe3e9",
+          "author_date": "2024-08-19T18:08:13Z",
+          "message": "dbt Templater: Increase `dbt deps` test fixture timeout (#6088)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f7557854dedcde389b10903601d55f77197fe3e9"
+        },
+        {
+          "sha": "35ffbfb8f4068bfbc34ab0abb1e808fd020f271f",
+          "author_date": "2024-08-20T22:27:33Z",
+          "message": "Prep version 3.1.1 (#6072)\n\nCo-authored-by: alanmcruickshank <alanmcruickshank@users.noreply.github.com>\r\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/35ffbfb8f4068bfbc34ab0abb1e808fd020f271f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "3.2.0",
@@ -1859,8 +2679,123 @@
     {
       "release": "3.2.3",
       "previous_release": "3.2.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "73823d423753ba05bd581828d4662153dc32f6c3",
+          "author_date": "2024-10-07T14:12:40Z",
+          "message": "fix: tsql create function syntax corrections (#6289)\n\nCo-authored-by: Alan Cruickshank <alanmcruickshank@gmail.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/73823d423753ba05bd581828d4662153dc32f6c3"
+        },
+        {
+          "sha": "00f865f03718da24b45f042311dda15fa5f85327",
+          "author_date": "2024-10-07T23:59:07Z",
+          "message": "Snowflake: support temp UDFs (#6309)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/00f865f03718da24b45f042311dda15fa5f85327"
+        },
+        {
+          "sha": "642ee248c7f0cebff1b0950527a4a2a8d68d8908",
+          "author_date": "2024-10-08T04:01:31Z",
+          "message": "Allow expressions in ORDER BY for clickhouse (#6311)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/642ee248c7f0cebff1b0950527a4a2a8d68d8908"
+        },
+        {
+          "sha": "f5d98615e33f8a094cd49392f3fc62d8f799ee13",
+          "author_date": "2024-10-08T11:02:07Z",
+          "message": "Snowflake: Support CTEs and multiple orders of CopyOptions in COPY INTO (#6313)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/f5d98615e33f8a094cd49392f3fc62d8f799ee13"
+        },
+        {
+          "sha": "06e1fff328c7bffab2efd43aea63f80169c85662",
+          "author_date": "2024-10-08T16:47:20Z",
+          "message": "Add groups to the `github-annotation-native` format option. (#6312)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/06e1fff328c7bffab2efd43aea63f80169c85662"
+        },
+        {
+          "sha": "2088f4cd0cf96871512a6972b1e9a174b74c0784",
+          "author_date": "2024-10-08T16:49:18Z",
+          "message": "Create a \"Guides and Howtos\" section of the docs. (#6301)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/2088f4cd0cf96871512a6972b1e9a174b74c0784"
+        },
+        {
+          "sha": "b0f94121274abdfd90da70a338c5f165781a7118",
+          "author_date": "2024-10-08T16:51:40Z",
+          "message": "Resolve an oscillation bug with LT02 (#6306)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/b0f94121274abdfd90da70a338c5f165781a7118"
+        },
+        {
+          "sha": "7030b5b6aa916e1323b14306548012379adf93cb",
+          "author_date": "2024-10-08T16:53:22Z",
+          "message": "Allow double quotes to be escaped by writing twice (#6316)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/7030b5b6aa916e1323b14306548012379adf93cb"
+        },
+        {
+          "sha": "ca0c0fbe284ce25e2403af8eac5dadf7eb2782d5",
+          "author_date": "2024-10-08T17:55:52Z",
+          "message": "Databricks materialized view (#6319)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/ca0c0fbe284ce25e2403af8eac5dadf7eb2782d5"
+        },
+        {
+          "sha": "9cf325302c6db8c8a680a411d7b0818467a12b5e",
+          "author_date": "2024-10-08T17:56:32Z",
+          "message": "Snowflake allow double-quoted comments (#6318)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/9cf325302c6db8c8a680a411d7b0818467a12b5e"
+        },
+        {
+          "sha": "3c9648a661ff6cb1b206143d56f6bfb895feee8a",
+          "author_date": "2024-10-08T21:47:25Z",
+          "message": "Exclude templated casts from CV11 (#6320)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/3c9648a661ff6cb1b206143d56f6bfb895feee8a"
+        },
+        {
+          "sha": "8ca4e0a1dc6235381e3cc953556ffb92160dfca7",
+          "author_date": "2024-10-08T23:44:10Z",
+          "message": "Add support for `grant monitor on user ...` in Snowflake dialect (#6322)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/8ca4e0a1dc6235381e3cc953556ffb92160dfca7"
+        },
+        {
+          "sha": "0a32baa44f55b40e6384482bd316234146cd27d1",
+          "author_date": "2024-10-09T09:59:52Z",
+          "message": "Postgres: Fix lexing some JSON operators (#6323)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/0a32baa44f55b40e6384482bd316234146cd27d1"
+        },
+        {
+          "sha": "74a19bb555ea7d5c9d6241b731d112f6079f00e1",
+          "author_date": "2024-10-09T10:00:38Z",
+          "message": "Indentation: `UPDATE` and `RETURNING` clauses (#6314)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/74a19bb555ea7d5c9d6241b731d112f6079f00e1"
+        },
+        {
+          "sha": "5c90dfa7ef54c0c28a4b555d57db788620ae4df0",
+          "author_date": "2024-10-10T00:30:29Z",
+          "message": "RF05 - fine tuning for snowflake dialect (#6297)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/5c90dfa7ef54c0c28a4b555d57db788620ae4df0"
+        },
+        {
+          "sha": "8c83583a6bce421e1a379d53247b88905f55ac4a",
+          "author_date": "2024-10-10T01:45:15Z",
+          "message": "Resolve some more edge cases in LT02 (#6324)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/8c83583a6bce421e1a379d53247b88905f55ac4a"
+        },
+        {
+          "sha": "914d93024474b8de66e552c3ebec0825a410e9fc",
+          "author_date": "2024-10-10T09:37:19Z",
+          "message": "Trino: Fix rule interactions with lambda functions (#6327)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/914d93024474b8de66e552c3ebec0825a410e9fc"
+        },
+        {
+          "sha": "e3aa1995a0e318304e9e155f402baced7d3afab8",
+          "author_date": "2024-10-10T09:38:00Z",
+          "message": "BigQuery: Support Tuple syntax in other locations (#6328)",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/e3aa1995a0e318304e9e155f402baced7d3afab8"
+        },
+        {
+          "sha": "6f808ffdcb9a34e95301c51b947f348e1a3465dd",
+          "author_date": "2024-10-10T13:02:01Z",
+          "message": "Prep version 3.2.3 (#6329)\n\nCo-authored-by: alanmcruickshank <alanmcruickshank@users.noreply.github.com>\r\nCo-authored-by: Alan Cruickshank <alan+git@designingoverload.com>",
+          "html_url": "https://github.com/sqlfluff/sqlfluff/commit/6f808ffdcb9a34e95301c51b947f348e1a3465dd"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "3.2.4",

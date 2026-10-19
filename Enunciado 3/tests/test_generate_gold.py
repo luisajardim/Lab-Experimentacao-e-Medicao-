@@ -38,16 +38,20 @@ def test_main_generates_reproducible_template_from_multiple_input_directories(
     first_input.mkdir(parents=True)
     second_input.mkdir(parents=True)
 
-    (first_input / "one.json").write_text(
+    (first_input / "owner-one").mkdir()
+    (first_input / "owner-one" / "one.json").write_text(
         json.dumps(_repository_payload("org/one")), encoding="utf-8"
     )
     (second_input / "two.json").write_text(
         json.dumps(_repository_payload("org/two", release_count=6)), encoding="utf-8"
     )
     # A repo without five usable releases must not enter the sample.
-    (first_input / "excluded.json").write_text(
+    (first_input / "owner-excluded").mkdir()
+    (first_input / "owner-excluded" / "excluded.json").write_text(
         json.dumps(_repository_payload("org/excluded", release_count=4)), encoding="utf-8"
     )
+    # Files at the root are generated gold artifacts and must be ignored.
+    (first_input / "llm_suggestions.json").write_text("[]", encoding="utf-8")
 
     output = tmp_path / "gold" / "template.csv"
     arguments = [

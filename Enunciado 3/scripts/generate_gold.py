@@ -4,8 +4,10 @@
 Input contract
 --------------
 ``--input-dir`` may be supplied more than once.  Every ``*.json`` file below
-each supplied directory is interpreted as one repository record (directories
-are searched recursively).  Each record must contain:
+each *subdirectory* of a supplied directory is interpreted as one repository
+record (directories are searched recursively).  JSON files placed directly in
+an input directory are ignored: ``data/gold`` also holds generated artifacts
+such as labels, audits, and LLM suggestions.  Each record must contain:
 
 * ``repository.full_name``: the GitHub repository identifier (``owner/name``);
 * ``releases``: a list of release objects.  A release eligible for labeling
@@ -90,12 +92,16 @@ def _eligible_releases(releases: object) -> tuple[dict[str, Any], ...]:
 
 
 def load_repositories(input_dirs: Iterable[Path]) -> list[RepositoryForLabeling]:
-    """Load and validate repository records from the input directories."""
+    """Load repository records from JSON files inside input subdirectories.
+
+    Files directly in an input directory are derived gold artifacts, not raw
+    repository records, so they must not influence the sample.
+    """
     files: list[Path] = []
     for input_dir in input_dirs:
         if not input_dir.is_dir():
             raise ValueError(f"input directory does not exist or is not a directory: {input_dir}")
-        files.extend(input_dir.rglob("*.json"))
+        files.extend(path for path in input_dir.rglob("*.json") if path.parent != input_dir)
 
     repositories: list[RepositoryForLabeling] = []
     seen_full_names: dict[str, Path] = {}

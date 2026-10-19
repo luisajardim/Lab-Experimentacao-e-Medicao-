@@ -2846,8 +2846,891 @@
     {
       "release": "v10.0.0",
       "previous_release": "v9.5.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "8f7bc17c41f9d3d6189589744f833bc670178db0",
+          "author_date": "2020-02-18T21:24:45Z",
+          "message": "Update package names",
+          "html_url": "https://github.com/primer/octicons/commit/8f7bc17c41f9d3d6189589744f833bc670178db0"
+        },
+        {
+          "sha": "c52cf6fa69c1e3d263f47e386ca97a46fcbc6082",
+          "author_date": "2020-02-18T21:32:44Z",
+          "message": "Update FIGMA_FILE_URL",
+          "html_url": "https://github.com/primer/octicons/commit/c52cf6fa69c1e3d263f47e386ca97a46fcbc6082"
+        },
+        {
+          "sha": "79cafa1be85eacc853b2aab53d6319e33d85896f",
+          "author_date": "2020-02-18T21:51:02Z",
+          "message": "Update node tests",
+          "html_url": "https://github.com/primer/octicons/commit/79cafa1be85eacc853b2aab53d6319e33d85896f"
+        },
+        {
+          "sha": "3349bbdcc4066b6948373b33054a5e16e618cd87",
+          "author_date": "2020-02-18T21:55:58Z",
+          "message": "Wrap React icon components with React.Fragment\n\nThis allows us to support SVGs with multiple <path> elements",
+          "html_url": "https://github.com/primer/octicons/commit/3349bbdcc4066b6948373b33054a5e16e618cd87"
+        },
+        {
+          "sha": "bdfe1a7f213e48d90342e3dacd3a353a2399e5a4",
+          "author_date": "2020-02-18T22:05:37Z",
+          "message": "Update octicons_react tests",
+          "html_url": "https://github.com/primer/octicons/commit/bdfe1a7f213e48d90342e3dacd3a353a2399e5a4"
+        },
+        {
+          "sha": "3507ad63b28a007e1b5c27cadfb316e52a1f222c",
+          "author_date": "2020-02-18T22:17:18Z",
+          "message": "Update ts tests",
+          "html_url": "https://github.com/primer/octicons/commit/3507ad63b28a007e1b5c27cadfb316e52a1f222c"
+        },
+        {
+          "sha": "752a1e7bff9c944a6037639cd5c348e38cb7bf6d",
+          "author_date": "2020-02-18T22:28:46Z",
+          "message": "Update gem tests",
+          "html_url": "https://github.com/primer/octicons/commit/752a1e7bff9c944a6037639cd5c348e38cb7bf6d"
+        },
+        {
+          "sha": "95fd1c2315143b9721d16b27ec1ad848397c27e1",
+          "author_date": "2020-02-19T00:16:29Z",
+          "message": "Update jekyll tests",
+          "html_url": "https://github.com/primer/octicons/commit/95fd1c2315143b9721d16b27ec1ad848397c27e1"
+        },
+        {
+          "sha": "9fd5b7cf33943d59fe2ac3bc47ed3a6a5df2c44d",
+          "author_date": "2020-02-20T19:48:16Z",
+          "message": "namespace helper for new octicons as octicon_v2",
+          "html_url": "https://github.com/primer/octicons/commit/9fd5b7cf33943d59fe2ac3bc47ed3a6a5df2c44d"
+        },
+        {
+          "sha": "7ac1a723e964bea2a9cc6fd24958d1602ca733ee",
+          "author_date": "2020-02-20T22:14:31Z",
+          "message": "Merge pull request #371 from primer/ruby-namespace\n\nNamespace octicons v2 for use alongside v1",
+          "html_url": "https://github.com/primer/octicons/commit/7ac1a723e964bea2a9cc6fd24958d1602ca733ee"
+        },
+        {
+          "sha": "97bbdc1524b978c73bb2cf9ddcfaed2839a2c4f4",
+          "author_date": "2020-02-28T20:38:11Z",
+          "message": "Merge remote-tracking branch 'origin/master' into v2",
+          "html_url": "https://github.com/primer/octicons/commit/97bbdc1524b978c73bb2cf9ddcfaed2839a2c4f4"
+        },
+        {
+          "sha": "06b15aa7bf733110b932b507e2ac3659b4770ab2",
+          "author_date": "2020-02-28T20:46:43Z",
+          "message": "Use v2 icons",
+          "html_url": "https://github.com/primer/octicons/commit/06b15aa7bf733110b932b507e2ac3659b4770ab2"
+        },
+        {
+          "sha": "6e304ccf8016e8e861d85d15de4acc78a083dcf5",
+          "author_date": "2020-02-28T20:50:36Z",
+          "message": "Update ts-tests",
+          "html_url": "https://github.com/primer/octicons/commit/6e304ccf8016e8e861d85d15de4acc78a083dcf5"
+        },
+        {
+          "sha": "078e2f9a2e0fbcf49b1f5eb5af8981208f6aef9a",
+          "author_date": "2020-03-04T00:55:08Z",
+          "message": "Release 9.5.0 (#378)",
+          "html_url": "https://github.com/primer/octicons/commit/078e2f9a2e0fbcf49b1f5eb5af8981208f6aef9a"
+        },
+        {
+          "sha": "e4f54e4042e81c50dac09c215294c703409cb0fe",
+          "author_date": "2020-03-06T17:58:51Z",
+          "message": "Move Octicons website into primer/octicons repo (#377)\n\n* Scaffold docs site\r\n\r\n* Display icons on homepage\r\n\r\n* Import json file directly\r\n\r\n* Remove sidebar\r\n\r\n* Update doctocat\r\n\r\n* Remove example pages\r\n\r\n* Disable search on hompage\r\n\r\n* Create pages for each icon\r\n\r\n* Implement search\r\n\r\n* Add aria-label to search input\r\n\r\n* Fix icon viewer\r\n\r\n* Add start script\r\n\r\n* Remove README\r\n\r\n* Move index page to content directory",
+          "html_url": "https://github.com/primer/octicons/commit/e4f54e4042e81c50dac09c215294c703409cb0fe"
+        },
+        {
+          "sha": "36648fbaa30bb6779e0e9d68a0c501676732ef21",
+          "author_date": "2020-03-06T19:46:40Z",
+          "message": "Merge remote-tracking branch 'origin/master' into v2",
+          "html_url": "https://github.com/primer/octicons/commit/36648fbaa30bb6779e0e9d68a0c501676732ef21"
+        },
+        {
+          "sha": "40b9e1bceb9f729d1146946343e3448dce87b794",
+          "author_date": "2020-03-08T03:07:34Z",
+          "message": "Add download and copy buttons to Octicons website (#381)\n\n* Add download and copy buttons\r\n\r\n* Stack buttons on mobile",
+          "html_url": "https://github.com/primer/octicons/commit/40b9e1bceb9f729d1146946343e3448dce87b794"
+        },
+        {
+          "sha": "ec874371d54f3a8685a84b261d7a1e81152cbe13",
+          "author_date": "2020-03-10T20:14:40Z",
+          "message": "Update CHANGELOG",
+          "html_url": "https://github.com/primer/octicons/commit/ec874371d54f3a8685a84b261d7a1e81152cbe13"
+        },
+        {
+          "sha": "adcb2fb8b75ddb408fb257eecb6ab50e9f705c54",
+          "author_date": "2020-03-10T20:23:56Z",
+          "message": "add new north-star icon (#380)\n\n* add new north-star icon\r\n\r\n* Update keywords.json\r\n\r\nCo-Authored-By: Cole Bemis <colebemis@github.com>\r\n\r\n* Update icons/north-star.svg\r\n\r\nCo-authored-by: Cole Bemis <colebemis@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/adcb2fb8b75ddb408fb257eecb6ab50e9f705c54"
+        },
+        {
+          "sha": "f90dfa04e41deeaea0e6da78a8c70d68c49db8fd",
+          "author_date": "2020-03-10T20:35:10Z",
+          "message": "9.6.0",
+          "html_url": "https://github.com/primer/octicons/commit/f90dfa04e41deeaea0e6da78a8c70d68c49db8fd"
+        },
+        {
+          "sha": "f148a7e5972cfae0de2a9542f11feefd5356cf34",
+          "author_date": "2020-03-10T20:40:49Z",
+          "message": "Update version in ruby packages",
+          "html_url": "https://github.com/primer/octicons/commit/f148a7e5972cfae0de2a9542f11feefd5356cf34"
+        },
+        {
+          "sha": "3776160059ed362e8b4ad6fb2b1fdef4757e8866",
+          "author_date": "2020-03-12T21:12:08Z",
+          "message": "Use snapshot to test output of build script (#383)",
+          "html_url": "https://github.com/primer/octicons/commit/3776160059ed362e8b4ad6fb2b1fdef4757e8866"
+        },
+        {
+          "sha": "60ee16f9971ee665b7a26e7e65f485491d97f661",
+          "author_date": "2020-03-14T03:11:25Z",
+          "message": "Merge remote-tracking branch 'origin/master' into v2",
+          "html_url": "https://github.com/primer/octicons/commit/60ee16f9971ee665b7a26e7e65f485491d97f661"
+        },
+        {
+          "sha": "83c3b53cacbd5fed06de7aca92f522917e36fd3f",
+          "author_date": "2020-03-30T20:15:16Z",
+          "message": "Move package documentation to docs site (#389)\n\n* Move icons into separate component\r\n\r\n* Add sidebar to icon page\r\n\r\n* Add documentation for packages\r\n\r\n* Update old markdown files\r\n\r\n* Update headings in ruby docs\r\n\r\n* Update dependencies\r\n\r\n* Add package-lock to octicons_react",
+          "html_url": "https://github.com/primer/octicons/commit/83c3b53cacbd5fed06de7aca92f522917e36fd3f"
+        },
+        {
+          "sha": "389833ce4c6308cfd3d7b526c197fd13d26c1b26",
+          "author_date": "2020-03-14T03:04:26Z",
+          "message": "Update build script",
+          "html_url": "https://github.com/primer/octicons/commit/389833ce4c6308cfd3d7b526c197fd13d26c1b26"
+        },
+        {
+          "sha": "d0dcfd8a2f85f5a726f8ee77a4dacd3b6c3907b7",
+          "author_date": "2020-03-14T03:16:49Z",
+          "message": "Append height to all filenames",
+          "html_url": "https://github.com/primer/octicons/commit/d0dcfd8a2f85f5a726f8ee77a4dacd3b6c3907b7"
+        },
+        {
+          "sha": "87b25e3c4da9aa57f1711d0bc28e729d5f810f3c",
+          "author_date": "2020-03-14T07:24:10Z",
+          "message": "Clean up build script",
+          "html_url": "https://github.com/primer/octicons/commit/87b25e3c4da9aa57f1711d0bc28e729d5f810f3c"
+        },
+        {
+          "sha": "02e329f2e6df09f05a1b283c7384878d04cf9cb2",
+          "author_date": "2020-03-16T22:28:00Z",
+          "message": "Add 24px svgs",
+          "html_url": "https://github.com/primer/octicons/commit/02e329f2e6df09f05a1b283c7384878d04cf9cb2"
+        },
+        {
+          "sha": "de503da4b2c449b1867dfd6cd173b439579efcfb",
+          "author_date": "2020-03-16T22:40:37Z",
+          "message": "Update ruby gem",
+          "html_url": "https://github.com/primer/octicons/commit/de503da4b2c449b1867dfd6cd173b439579efcfb"
+        },
+        {
+          "sha": "8a9dc87c24e2e77c89f0ec8b16be4c8a2f6222f8",
+          "author_date": "2020-03-16T22:47:23Z",
+          "message": "Remove 24 directory",
+          "html_url": "https://github.com/primer/octicons/commit/8a9dc87c24e2e77c89f0ec8b16be4c8a2f6222f8"
+        },
+        {
+          "sha": "6d93160a62e4470163ab2a180e78d517bf1d2606",
+          "author_date": "2020-03-17T17:39:27Z",
+          "message": "Update lib/octicons_gem/lib/octicons_v2/octicon_v2.rb\n\nCo-Authored-By: Jon Rohan <yes@jonrohan.codes>",
+          "html_url": "https://github.com/primer/octicons/commit/6d93160a62e4470163ab2a180e78d517bf1d2606"
+        },
+        {
+          "sha": "ee985d065e9ecbd9ba92ef85f6f59d8cb93b0bd5",
+          "author_date": "2020-03-17T17:39:55Z",
+          "message": "Update lib/octicons_gem/lib/octicons_v2/octicon_v2.rb\n\nCo-Authored-By: Jon Rohan <yes@jonrohan.codes>",
+          "html_url": "https://github.com/primer/octicons/commit/ee985d065e9ecbd9ba92ef85f6f59d8cb93b0bd5"
+        },
+        {
+          "sha": "7a6dc7e496ac17e595e69ee560827760a7a831d6",
+          "author_date": "2020-03-17T20:10:28Z",
+          "message": "Update homepage to show all sizes",
+          "html_url": "https://github.com/primer/octicons/commit/7a6dc7e496ac17e595e69ee560827760a7a831d6"
+        },
+        {
+          "sha": "088d411fe7b48a7ac7192d6d58441ad50358c1a4",
+          "author_date": "2020-03-17T21:36:04Z",
+          "message": "Create pages for all sizes",
+          "html_url": "https://github.com/primer/octicons/commit/088d411fe7b48a7ac7192d6d58441ad50358c1a4"
+        },
+        {
+          "sha": "e3472db68af71fe43b2466007ebd9a77693b513a",
+          "author_date": "2020-03-17T21:52:06Z",
+          "message": "Update 24px icons",
+          "html_url": "https://github.com/primer/octicons/commit/e3472db68af71fe43b2466007ebd9a77693b513a"
+        },
+        {
+          "sha": "188b9540b15fcb537d6d19b0b72a15806d562dcb",
+          "author_date": "2020-03-17T22:58:00Z",
+          "message": "Update lib/octicons_gem/lib/octicons_v2/octicon_v2.rb",
+          "html_url": "https://github.com/primer/octicons/commit/188b9540b15fcb537d6d19b0b72a15806d562dcb"
+        },
+        {
+          "sha": "daa204c67d722bbb76e6f3546c055d91d2e56596",
+          "author_date": "2020-03-19T21:41:45Z",
+          "message": "Use tab nav instead of underline nav",
+          "html_url": "https://github.com/primer/octicons/commit/daa204c67d722bbb76e6f3546c055d91d2e56596"
+        },
+        {
+          "sha": "de5e3b9aba7b6016ae117d2ba0fae4a532974d0f",
+          "author_date": "2020-03-24T21:53:33Z",
+          "message": "Update variable names to distinguish between \"height\" and \"natural height\"",
+          "html_url": "https://github.com/primer/octicons/commit/de5e3b9aba7b6016ae117d2ba0fae4a532974d0f"
+        },
+        {
+          "sha": "56fc82cb207242339d62b2192e21bca109318fc0",
+          "author_date": "2020-03-24T21:55:48Z",
+          "message": "Use string keys",
+          "html_url": "https://github.com/primer/octicons/commit/56fc82cb207242339d62b2192e21bca109318fc0"
+        },
+        {
+          "sha": "36ed06b7ba0593fbeaee61d02e4c6ca81062c4bb",
+          "author_date": "2020-03-24T21:58:23Z",
+          "message": "Add deeper asserts to octicons test",
+          "html_url": "https://github.com/primer/octicons/commit/36ed06b7ba0593fbeaee61d02e4c6ca81062c4bb"
+        },
+        {
+          "sha": "2d990dc7152c7fc32d7f8ab977eedd1046cf7582",
+          "author_date": "2020-03-24T22:02:22Z",
+          "message": "Remove trailing whitespace",
+          "html_url": "https://github.com/primer/octicons/commit/2d990dc7152c7fc32d7f8ab977eedd1046cf7582"
+        },
+        {
+          "sha": "98c89412699018564539c9b50b35ee03bbb66ce8",
+          "author_date": "2020-03-31T18:02:50Z",
+          "message": "Make node package pass tests",
+          "html_url": "https://github.com/primer/octicons/commit/98c89412699018564539c9b50b35ee03bbb66ce8"
+        },
+        {
+          "sha": "257e18eddd1b09663de45746d5acff86dbfd0826",
+          "author_date": "2020-03-31T18:13:40Z",
+          "message": "Update react package to pass tests",
+          "html_url": "https://github.com/primer/octicons/commit/257e18eddd1b09663de45746d5acff86dbfd0826"
+        },
+        {
+          "sha": "fcf1e9b69c9edf7f0169be8dacf62e65cb72ea68",
+          "author_date": "2020-03-31T18:25:47Z",
+          "message": "Update lib/octicons_node/index.js",
+          "html_url": "https://github.com/primer/octicons/commit/fcf1e9b69c9edf7f0169be8dacf62e65cb72ea68"
+        },
+        {
+          "sha": "8cda2bd6d00d89e0e45050f25f1343b9c5e75e24",
+          "author_date": "2020-03-31T18:56:50Z",
+          "message": "Merge remote-tracking branch 'origin/master' into v2",
+          "html_url": "https://github.com/primer/octicons/commit/8cda2bd6d00d89e0e45050f25f1343b9c5e75e24"
+        },
+        {
+          "sha": "c2e7d8b9d36de0b2999acc2cf3ba8b4ca09aff3a",
+          "author_date": "2020-04-08T04:18:08Z",
+          "message": "Remove grabber-3",
+          "html_url": "https://github.com/primer/octicons/commit/c2e7d8b9d36de0b2999acc2cf3ba8b4ca09aff3a"
+        },
+        {
+          "sha": "16b498475eafdaad68b8d1a9cb87587088f05ff5",
+          "author_date": "2020-04-08T06:40:29Z",
+          "message": "Rename \"desktop-device-24\" to \"device-desktop-24\"",
+          "html_url": "https://github.com/primer/octicons/commit/16b498475eafdaad68b8d1a9cb87587088f05ff5"
+        },
+        {
+          "sha": "aad2f1f19c65761e470f4cc4f7c5236ed407d8d0",
+          "author_date": "2020-04-13T19:10:07Z",
+          "message": "Update React package to support 24px icons (#395)\n\n* Update React package to handle 24px icons\r\n\r\n* Update tests\r\n\r\n* Uninstall unused dependencies\r\n\r\n* Update ts-tests\r\n\r\n* Bump version 9.4.0 to 10.0.0\r\n\r\n* Get ts-test script working again (#396)\r\n\r\n* Update lib/octicons_react/script/build.js\r\n\r\n* Add more ts-test examples\r\n\r\n* Move getSvgProps function into it's own file\r\n\r\n* Append \"Icon\" to all icon component names\r\n\r\n* Updat ts-tests imports\r\n\r\n* Update changelog\r\n\r\nCo-authored-by: Derrick Marcey <dmarcey@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/aad2f1f19c65761e470f4cc4f7c5236ed407d8d0"
+        },
+        {
+          "sha": "cbd6e0742c8f4506c1ed9080b97f7165b847a8a5",
+          "author_date": "2020-04-13T19:29:11Z",
+          "message": "\"ariaLabel\" to \"aria-label\"",
+          "html_url": "https://github.com/primer/octicons/commit/cbd6e0742c8f4506c1ed9080b97f7165b847a8a5"
+        },
+        {
+          "sha": "b690a3c836ca84332ab1356d2a738ea040905936",
+          "author_date": "2020-04-13T19:33:48Z",
+          "message": "Update ts-test",
+          "html_url": "https://github.com/primer/octicons/commit/b690a3c836ca84332ab1356d2a738ea040905936"
+        },
+        {
+          "sha": "69f988fa0802a31c1286452c2c2910d9859e5d65",
+          "author_date": "2020-04-15T19:45:37Z",
+          "message": "Fix \"people\" and \"person\" naming in 24px icons",
+          "html_url": "https://github.com/primer/octicons/commit/69f988fa0802a31c1286452c2c2910d9859e5d65"
+        },
+        {
+          "sha": "27669492a46f2b4611ee343235b61c1e755dbd8d",
+          "author_date": "2020-04-15T19:46:38Z",
+          "message": "Rename request-changes to diff",
+          "html_url": "https://github.com/primer/octicons/commit/27669492a46f2b4611ee343235b61c1e755dbd8d"
+        },
+        {
+          "sha": "61b69590c81bf799b130e30e9f0e4f79928567b5",
+          "author_date": "2020-04-17T18:46:16Z",
+          "message": "Deprecate Octicon component (#399)\n\n* Deprecate Octicon component\r\n\r\n* Deprecation is not a breaking change\r\n\r\n* Add @deprecated tag\r\n\r\n* Update docs/content/packages/react.mdx",
+          "html_url": "https://github.com/primer/octicons/commit/61b69590c81bf799b130e30e9f0e4f79928567b5"
+        },
+        {
+          "sha": "e65f8b2876b23a1157d97a0df7598c649f214149",
+          "author_date": "2020-04-20T18:29:36Z",
+          "message": "Add flash banner with a link to octicons v2 website (#402)",
+          "html_url": "https://github.com/primer/octicons/commit/e65f8b2876b23a1157d97a0df7598c649f214149"
+        },
+        {
+          "sha": "4030236d49146933b4846f089c6cd7b441ae131e",
+          "author_date": "2020-04-21T21:35:27Z",
+          "message": "Update lightbulb (#400)\n\n* Save light-bulb-16.svg, light-bulb-24.svg\r\n\r\n* Update icons/light-bulb-24.svg\r\n\r\n* Delete lightbulb-24.svg",
+          "html_url": "https://github.com/primer/octicons/commit/4030236d49146933b4846f089c6cd7b441ae131e"
+        },
+        {
+          "sha": "e444926a4924301a381da13924f34a8250d776f1",
+          "author_date": "2020-04-21T22:26:43Z",
+          "message": "Add no-entry and report icons (#403)\n\n* Save no-entry-16.svg\r\n\r\n* Save report-16.svg, report-24.svg\r\n\r\n* Optimize icons\r\n\r\n* Save no-entry-24.svg\r\n\r\n* Optimize icon\r\n\r\n* Update report-24.svg",
+          "html_url": "https://github.com/primer/octicons/commit/e444926a4924301a381da13924f34a8250d776f1"
+        },
+        {
+          "sha": "ff677610615e3ab61c81dce49263eb79c1e88573",
+          "author_date": "2020-04-22T17:47:29Z",
+          "message": "Set sideEffects to false",
+          "html_url": "https://github.com/primer/octicons/commit/ff677610615e3ab61c81dce49263eb79c1e88573"
+        },
+        {
+          "sha": "b78ccebd35a71ebcf3f283e6f6f25860edaadf8b",
+          "author_date": "2020-04-22T18:12:24Z",
+          "message": "Remove iconsByName for now",
+          "html_url": "https://github.com/primer/octicons/commit/b78ccebd35a71ebcf3f283e6f6f25860edaadf8b"
+        },
+        {
+          "sha": "43b7ab3dfe44c7f0652a8ca1fcd13dffb46ab27d",
+          "author_date": "2020-04-22T18:20:14Z",
+          "message": "Update ts-tests",
+          "html_url": "https://github.com/primer/octicons/commit/43b7ab3dfe44c7f0652a8ca1fcd13dffb46ab27d"
+        },
+        {
+          "sha": "7ac3fa1543d5b513d3bdcedc3c1e5d2bc2f16598",
+          "author_date": "2020-04-22T19:48:30Z",
+          "message": "Update CHANGELOG",
+          "html_url": "https://github.com/primer/octicons/commit/7ac3fa1543d5b513d3bdcedc3c1e5d2bc2f16598"
+        },
+        {
+          "sha": "a758ab064b23e247e571343dbfd1894a2573837f",
+          "author_date": "2020-04-22T19:48:40Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/primer/octicons/commit/a758ab064b23e247e571343dbfd1894a2573837f"
+        },
+        {
+          "sha": "be2ea3be9a31cfe4bd419773b4c293fe4d7bb54d",
+          "author_date": "2020-04-22T19:50:29Z",
+          "message": "Remove iconsByName and getIconByName for real",
+          "html_url": "https://github.com/primer/octicons/commit/be2ea3be9a31cfe4bd419773b4c293fe4d7bb54d"
+        },
+        {
+          "sha": "0e0f672e4ca5b5af16ec8d21f2b0fcf02812bb0a",
+          "author_date": "2020-04-22T21:08:36Z",
+          "message": "Show version number in the hero (#406)\n\n* Show version number in the hero\r\n\r\n* Fix typo",
+          "html_url": "https://github.com/primer/octicons/commit/0e0f672e4ca5b5af16ec8d21f2b0fcf02812bb0a"
+        },
+        {
+          "sha": "8637b197211d0df48484e5b68172995a11701ea4",
+          "author_date": "2020-04-22T21:10:24Z",
+          "message": "Merge remote-tracking branch 'origin/master' into v2",
+          "html_url": "https://github.com/primer/octicons/commit/8637b197211d0df48484e5b68172995a11701ea4"
+        },
+        {
+          "sha": "6604d0750f945c7e4d4bfa74b5b7a8a5ecdfbb05",
+          "author_date": "2020-04-22T22:34:32Z",
+          "message": "Update version in package.json",
+          "html_url": "https://github.com/primer/octicons/commit/6604d0750f945c7e4d4bfa74b5b7a8a5ecdfbb05"
+        },
+        {
+          "sha": "4eeecfd4f09e562342528109bdf31b919dc416ab",
+          "author_date": "2020-04-22T22:36:37Z",
+          "message": "Update javascript docs",
+          "html_url": "https://github.com/primer/octicons/commit/4eeecfd4f09e562342528109bdf31b919dc416ab"
+        },
+        {
+          "sha": "f1ac3ad93cdf0aedef1171150363dc7a6998809f",
+          "author_date": "2020-04-22T22:38:02Z",
+          "message": "Update jekyll docs",
+          "html_url": "https://github.com/primer/octicons/commit/f1ac3ad93cdf0aedef1171150363dc7a6998809f"
+        },
+        {
+          "sha": "38db61fc4480e5aa92184c0ffbdac2b2e91e70a9",
+          "author_date": "2020-04-22T22:38:32Z",
+          "message": "Update rails docs",
+          "html_url": "https://github.com/primer/octicons/commit/38db61fc4480e5aa92184c0ffbdac2b2e91e70a9"
+        },
+        {
+          "sha": "5a532bdcc75faeed3b1a56486412709cdaba8a29",
+          "author_date": "2020-04-22T22:39:26Z",
+          "message": "Update react docs",
+          "html_url": "https://github.com/primer/octicons/commit/5a532bdcc75faeed3b1a56486412709cdaba8a29"
+        },
+        {
+          "sha": "46ee127fcd73e887da364815ab3b64b0b0805116",
+          "author_date": "2020-04-22T22:40:28Z",
+          "message": "Update ruby docs",
+          "html_url": "https://github.com/primer/octicons/commit/46ee127fcd73e887da364815ab3b64b0b0805116"
+        },
+        {
+          "sha": "74ef88effdb97c57585d876da99b9d36970ca376",
+          "author_date": "2020-04-22T22:42:18Z",
+          "message": "Update jekyll package to use octicons_v2",
+          "html_url": "https://github.com/primer/octicons/commit/74ef88effdb97c57585d876da99b9d36970ca376"
+        },
+        {
+          "sha": "8e64a12027640cce4bd6623ae507ab1fd45e8cf1",
+          "author_date": "2020-04-22T22:43:16Z",
+          "message": "Update doctocat",
+          "html_url": "https://github.com/primer/octicons/commit/8e64a12027640cce4bd6623ae507ab1fd45e8cf1"
+        },
+        {
+          "sha": "828a9ce038c44da9bde6665a51d5a162d3f0dd45",
+          "author_date": "2020-04-22T22:43:26Z",
+          "message": "Add warning on homepage",
+          "html_url": "https://github.com/primer/octicons/commit/828a9ce038c44da9bde6665a51d5a162d3f0dd45"
+        },
+        {
+          "sha": "4cf3be3829a67aedb327834f565b4e7a72958cbb",
+          "author_date": "2020-04-22T23:01:44Z",
+          "message": "Update homepage layout",
+          "html_url": "https://github.com/primer/octicons/commit/4cf3be3829a67aedb327834f565b4e7a72958cbb"
+        },
+        {
+          "sha": "e4686dbb57dbc7effb10d2d566e1f7b29f35551c",
+          "author_date": "2020-04-22T23:03:34Z",
+          "message": "Fix jekyll require",
+          "html_url": "https://github.com/primer/octicons/commit/e4686dbb57dbc7effb10d2d566e1f7b29f35551c"
+        },
+        {
+          "sha": "6b859f7bbfb2b71b0ad353e4974365b6548d8ef7",
+          "author_date": "2020-04-22T23:26:43Z",
+          "message": "Merge branch 'v2' into tree-shaking",
+          "html_url": "https://github.com/primer/octicons/commit/6b859f7bbfb2b71b0ad353e4974365b6548d8ef7"
+        },
+        {
+          "sha": "ac275393704ca0af03909235f49b9f2a737b8bab",
+          "author_date": "2020-04-22T23:43:59Z",
+          "message": "Merge pull request #405 from primer/tree-shaking\n\nEnable tree-shaking in React package",
+          "html_url": "https://github.com/primer/octicons/commit/ac275393704ca0af03909235f49b9f2a737b8bab"
+        },
+        {
+          "sha": "c54859bc45495afa200a7977d2dd2d69fc4cd81e",
+          "author_date": "2020-04-23T04:28:05Z",
+          "message": "Fix breadcrumb links",
+          "html_url": "https://github.com/primer/octicons/commit/c54859bc45495afa200a7977d2dd2d69fc4cd81e"
+        },
+        {
+          "sha": "b9eaacd919a1733c09c8eb98c3a940f3c2d82a68",
+          "author_date": "2020-04-24T23:22:43Z",
+          "message": "Start styled-octicons package",
+          "html_url": "https://github.com/primer/octicons/commit/b9eaacd919a1733c09c8eb98c3a940f3c2d82a68"
+        },
+        {
+          "sha": "1a0ce6876c03103cbe456dc2202180d2c9f2c52a",
+          "author_date": "2020-04-24T23:24:07Z",
+          "message": "Attempt to add styled octicons package to workflow",
+          "html_url": "https://github.com/primer/octicons/commit/1a0ce6876c03103cbe456dc2202180d2c9f2c52a"
+        },
+        {
+          "sha": "cedfc45104ddc25e5c7d9eafb86962f711db1650",
+          "author_date": "2020-04-24T23:28:12Z",
+          "message": "Remove next site from styled octicons package",
+          "html_url": "https://github.com/primer/octicons/commit/cedfc45104ddc25e5c7d9eafb86962f711db1650"
+        },
+        {
+          "sha": "44a8bc79ad6284b1d5c26b738885760bb937172c",
+          "author_date": "2020-04-24T23:32:33Z",
+          "message": "Add package-lock",
+          "html_url": "https://github.com/primer/octicons/commit/44a8bc79ad6284b1d5c26b738885760bb937172c"
+        },
+        {
+          "sha": "9f56fa62d9fc25539ba88688548baae07d285955",
+          "author_date": "2020-04-24T23:37:02Z",
+          "message": "Add files to package.json",
+          "html_url": "https://github.com/primer/octicons/commit/9f56fa62d9fc25539ba88688548baae07d285955"
+        },
+        {
+          "sha": "52b26a5a8e265b3c7275798c28eff30c85548a99",
+          "author_date": "2020-04-24T23:50:49Z",
+          "message": "Update dependencies",
+          "html_url": "https://github.com/primer/octicons/commit/52b26a5a8e265b3c7275798c28eff30c85548a99"
+        },
+        {
+          "sha": "a0de56e6d48a471409f871f1dc415668b8740f36",
+          "author_date": "2020-04-27T17:02:24Z",
+          "message": "Ad types",
+          "html_url": "https://github.com/primer/octicons/commit/a0de56e6d48a471409f871f1dc415668b8740f36"
+        },
+        {
+          "sha": "bd0d1dd57ebe5e54352f1d014ac8e7affd82fd2e",
+          "author_date": "2020-04-27T17:16:00Z",
+          "message": "Add types for system props",
+          "html_url": "https://github.com/primer/octicons/commit/bd0d1dd57ebe5e54352f1d014ac8e7affd82fd2e"
+        },
+        {
+          "sha": "7f5b09cc3c7706a71a090186e0636c8b11e2fa80",
+          "author_date": "2020-04-27T18:51:12Z",
+          "message": "Update tests",
+          "html_url": "https://github.com/primer/octicons/commit/7f5b09cc3c7706a71a090186e0636c8b11e2fa80"
+        },
+        {
+          "sha": "f670ef5305d25a0efcc78c5d1cec65c7b6637ced",
+          "author_date": "2020-04-27T19:09:26Z",
+          "message": "Remove display prop",
+          "html_url": "https://github.com/primer/octicons/commit/f670ef5305d25a0efcc78c5d1cec65c7b6637ced"
+        },
+        {
+          "sha": "aca723e22babaeeb50b10f86654ac43c34ee7145",
+          "author_date": "2020-04-27T19:09:46Z",
+          "message": "Add tests for system props",
+          "html_url": "https://github.com/primer/octicons/commit/aca723e22babaeeb50b10f86654ac43c34ee7145"
+        },
+        {
+          "sha": "3751a86a25f6bd34aee5a69c4525f64e8bdf445a",
+          "author_date": "2020-04-27T19:12:35Z",
+          "message": "Update ts-tests",
+          "html_url": "https://github.com/primer/octicons/commit/3751a86a25f6bd34aee5a69c4525f64e8bdf445a"
+        },
+        {
+          "sha": "07a0bc82c59ba0c0bd3122fcb70a9deda0a20a87",
+          "author_date": "2020-04-27T19:34:09Z",
+          "message": "Add @types/styled-system as a dependency",
+          "html_url": "https://github.com/primer/octicons/commit/07a0bc82c59ba0c0bd3122fcb70a9deda0a20a87"
+        },
+        {
+          "sha": "79962a1fcb56fb6cd88eb47d085217aa12edf8fd",
+          "author_date": "2020-04-27T19:40:23Z",
+          "message": "Add name to workflow steps",
+          "html_url": "https://github.com/primer/octicons/commit/79962a1fcb56fb6cd88eb47d085217aa12edf8fd"
+        },
+        {
+          "sha": "d8dffb82423709bdbeff3da658796dc6f8febef5",
+          "author_date": "2020-04-27T20:05:08Z",
+          "message": "Start docs for styled-octicons",
+          "html_url": "https://github.com/primer/octicons/commit/d8dffb82423709bdbeff3da658796dc6f8febef5"
+        },
+        {
+          "sha": "0c5fcfc0b4cb4dec4f692c522cfe3c1a64ba974a",
+          "author_date": "2020-04-27T20:22:17Z",
+          "message": "Remove prop types\n\nTo see if it was breaking tree shaking",
+          "html_url": "https://github.com/primer/octicons/commit/0c5fcfc0b4cb4dec4f692c522cfe3c1a64ba974a"
+        },
+        {
+          "sha": "dddece517269a2fec2adbd529a9bbd75ff98d8e6",
+          "author_date": "2020-04-29T20:19:11Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/primer/octicons/commit/dddece517269a2fec2adbd529a9bbd75ff98d8e6"
+        },
+        {
+          "sha": "4b7c839d4de91e56889ab4595f82385f25dfe199",
+          "author_date": "2020-04-29T22:27:57Z",
+          "message": "Add svgo script (#416)\n\n* Add svgo npm script\r\n\r\n* Optimize internal repo icon\r\n\r\n* Optimize north-start icon\r\n\r\n* Use existing svgo config",
+          "html_url": "https://github.com/primer/octicons/commit/4b7c839d4de91e56889ab4595f82385f25dfe199"
+        },
+        {
+          "sha": "fc9723863f57ca997d91f263d1c730bb310076b1",
+          "author_date": "2020-04-29T22:31:47Z",
+          "message": "Merge remote-tracking branch 'origin/master' into v2",
+          "html_url": "https://github.com/primer/octicons/commit/fc9723863f57ca997d91f263d1c730bb310076b1"
+        },
+        {
+          "sha": "2956111310a7565153c215b3125e9514cdf3cba0",
+          "author_date": "2020-04-29T22:56:25Z",
+          "message": "Optimize v2 icons (#419)\n\n* Optimize svgs\r\n\r\n* Update package lock\r\n\r\n* Update snapshots",
+          "html_url": "https://github.com/primer/octicons/commit/2956111310a7565153c215b3125e9514cdf3cba0"
+        },
+        {
+          "sha": "49387359038be895a3f30c17ebf724e51e06db93",
+          "author_date": "2020-04-30T03:16:38Z",
+          "message": "Add logo icons to v2 branch (#421)\n\n* Save logo-gist-16.svg, logo-github-16.svg, octoface-16.svg\r\n\r\n* Optimize logo icons",
+          "html_url": "https://github.com/primer/octicons/commit/49387359038be895a3f30c17ebf724e51e06db93"
+        },
+        {
+          "sha": "eaf310a41b6f3cd20292682670520380ef6070d6",
+          "author_date": "2020-04-30T03:22:14Z",
+          "message": "Remove kebab-vertical icon",
+          "html_url": "https://github.com/primer/octicons/commit/eaf310a41b6f3cd20292682670520380ef6070d6"
+        },
+        {
+          "sha": "ae29ea781e79737a08562cec82d203a88983e7ea",
+          "author_date": "2020-05-01T17:04:30Z",
+          "message": "Write icon components into their own file",
+          "html_url": "https://github.com/primer/octicons/commit/ae29ea781e79737a08562cec82d203a88983e7ea"
+        },
+        {
+          "sha": "92d68d5523f603182eb65c3709c28e2f471e7a20",
+          "author_date": "2020-05-01T17:12:09Z",
+          "message": "Fix generated pathname",
+          "html_url": "https://github.com/primer/octicons/commit/92d68d5523f603182eb65c3709c28e2f471e7a20"
+        },
+        {
+          "sha": "24cce428cba7815cb64c1b5f8765c8b24b67c897",
+          "author_date": "2020-05-01T17:16:31Z",
+          "message": "Fix lint error",
+          "html_url": "https://github.com/primer/octicons/commit/24cce428cba7815cb64c1b5f8765c8b24b67c897"
+        },
+        {
+          "sha": "a1fb469e054b6c00be939363d4aeb61fea5cf434",
+          "author_date": "2020-05-01T18:41:55Z",
+          "message": "Bundle individual icons",
+          "html_url": "https://github.com/primer/octicons/commit/a1fb469e054b6c00be939363d4aeb61fea5cf434"
+        },
+        {
+          "sha": "44c5a6dbe72a4842b369f66c6fbc89884456d31e",
+          "author_date": "2020-05-01T18:59:33Z",
+          "message": "Write copy script",
+          "html_url": "https://github.com/primer/octicons/commit/44c5a6dbe72a4842b369f66c6fbc89884456d31e"
+        },
+        {
+          "sha": "ba674af41c10b233ee7311ef6b05cdd3376e1cc7",
+          "author_date": "2020-05-01T18:59:39Z",
+          "message": "Update package lock",
+          "html_url": "https://github.com/primer/octicons/commit/ba674af41c10b233ee7311ef6b05cdd3376e1cc7"
+        },
+        {
+          "sha": "af9c04b84e8eb7afae2817feb9981be919c1594a",
+          "author_date": "2020-05-01T19:55:48Z",
+          "message": "Add sx prop",
+          "html_url": "https://github.com/primer/octicons/commit/af9c04b84e8eb7afae2817feb9981be919c1594a"
+        },
+        {
+          "sha": "ba70d358cdc40e2f02bdca44d02dff24195f3c0a",
+          "author_date": "2020-05-01T19:59:53Z",
+          "message": "Update lib/octicons_styled/script/copy.sh",
+          "html_url": "https://github.com/primer/octicons/commit/ba70d358cdc40e2f02bdca44d02dff24195f3c0a"
+        },
+        {
+          "sha": "394a15b004c5433d62806f47ef776c7f55edfe33",
+          "author_date": "2020-05-01T20:02:32Z",
+          "message": "Run copy script after rollup",
+          "html_url": "https://github.com/primer/octicons/commit/394a15b004c5433d62806f47ef776c7f55edfe33"
+        },
+        {
+          "sha": "c36f7e46b2486fb8a388c0fa708bd9cb608abcd5",
+          "author_date": "2020-05-01T20:02:34Z",
+          "message": "Merge branch 'styled-octicons' of github.com:primer/octicons into styled-octicons",
+          "html_url": "https://github.com/primer/octicons/commit/c36f7e46b2486fb8a388c0fa708bd9cb608abcd5"
+        },
+        {
+          "sha": "7c415e0057227e5cc483b8df3b035e40d7d3e998",
+          "author_date": "2020-05-04T17:30:05Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/primer/octicons/commit/7c415e0057227e5cc483b8df3b035e40d7d3e998"
+        },
+        {
+          "sha": "35511fe2753dc78d0919753caffcacdf34bf7740",
+          "author_date": "2020-05-04T17:37:26Z",
+          "message": "Export Icon and IconProps",
+          "html_url": "https://github.com/primer/octicons/commit/35511fe2753dc78d0919753caffcacdf34bf7740"
+        },
+        {
+          "sha": "df8e278ff391763df2682bece0f398dd3943e73a",
+          "author_date": "2020-05-04T18:55:25Z",
+          "message": "Merge remote-tracking branch 'origin/v2' into styled-octicons",
+          "html_url": "https://github.com/primer/octicons/commit/df8e278ff391763df2682bece0f398dd3943e73a"
+        },
+        {
+          "sha": "e6dc94964956f890acc6a75c7a5b7b3b63289074",
+          "author_date": "2020-05-06T23:12:47Z",
+          "message": "Pass height as a number instead of string",
+          "html_url": "https://github.com/primer/octicons/commit/e6dc94964956f890acc6a75c7a5b7b3b63289074"
+        },
+        {
+          "sha": "917627c450368835436c3c4ae2e449f887ab8e10",
+          "author_date": "2020-05-07T16:49:08Z",
+          "message": "Add more migration info to CHANGELOG (#422)\n\n* wip migration doc\r\n\r\n* Move migration info to changelog\r\n\r\n* Updates based on @ashygee's feedback",
+          "html_url": "https://github.com/primer/octicons/commit/917627c450368835436c3c4ae2e449f887ab8e10"
+        },
+        {
+          "sha": "0ccdd71a30a38eed2a2e2c027d1085f6edb33f6a",
+          "author_date": "2020-05-07T18:50:05Z",
+          "message": "Merge pull request #417 from primer/styled-octicons\n\nCreate @primer/styled-octicons package",
+          "html_url": "https://github.com/primer/octicons/commit/0ccdd71a30a38eed2a2e2c027d1085f6edb33f6a"
+        },
+        {
+          "sha": "b3d7936514be2dbe8d510a36d1d25f4684dc7723",
+          "author_date": "2020-05-11T22:26:45Z",
+          "message": "Add UI examples on icon pages (#423)",
+          "html_url": "https://github.com/primer/octicons/commit/b3d7936514be2dbe8d510a36d1d25f4684dc7723"
+        },
+        {
+          "sha": "1a642ac3a696c37a38e7846b581f7ce91daff684",
+          "author_date": "2020-05-13T17:20:16Z",
+          "message": "Add React usage example to icon page (#424)\n\n* Add UI examples on icon pages\r\n\r\n* Add react usage example to icon page\r\n\r\n* Clean up",
+          "html_url": "https://github.com/primer/octicons/commit/1a642ac3a696c37a38e7846b581f7ce91daff684"
+        },
+        {
+          "sha": "6a28f40cdd0fca5e6fd9e70e6a90748673f76e4d",
+          "author_date": "2020-05-21T22:58:37Z",
+          "message": "change url for new octicons-v2\n\nupdated link to point to url within primer.style domain.",
+          "html_url": "https://github.com/primer/octicons/commit/6a28f40cdd0fca5e6fd9e70e6a90748673f76e4d"
+        },
+        {
+          "sha": "00071be2d689fd199ee1b301e60846a84f56c2e6",
+          "author_date": "2020-05-21T23:08:01Z",
+          "message": "Merge pull request #427 from primer/ashygee-patch-1\n\nchange url for new octicons-v2",
+          "html_url": "https://github.com/primer/octicons/commit/00071be2d689fd199ee1b301e60846a84f56c2e6"
+        },
+        {
+          "sha": "53e900dbcf2e9c5c8176a9c96f8b4e9418a4a560",
+          "author_date": "2020-05-22T01:56:52Z",
+          "message": "Change prefix to octicons-v2 (#428)\n\n* Change prefix to octicons-v2\r\n\r\n* Update now.json\r\n\r\n* Update now.json",
+          "html_url": "https://github.com/primer/octicons/commit/53e900dbcf2e9c5c8176a9c96f8b4e9418a4a560"
+        },
+        {
+          "sha": "12fb159c312b1d16420f924cb57733d0c3dfde05",
+          "author_date": "2020-06-01T19:22:40Z",
+          "message": "Set up workflow to optimize svgs on push (#433)\n\n* Add optimize action\r\n\r\n* Change author\r\n\r\n* Change email",
+          "html_url": "https://github.com/primer/octicons/commit/12fb159c312b1d16420f924cb57733d0c3dfde05"
+        },
+        {
+          "sha": "5f3829ae8efb1feae529d86b707bcc5445f81d6b",
+          "author_date": "2020-06-01T21:10:25Z",
+          "message": "Merge remote-tracking branch 'origin/master' into v2",
+          "html_url": "https://github.com/primer/octicons/commit/5f3829ae8efb1feae529d86b707bcc5445f81d6b"
+        },
+        {
+          "sha": "b988812081a366c3d61204b5514d7e2c7f214506",
+          "author_date": "2020-06-01T22:27:38Z",
+          "message": "Save sun-24.svg, moon-24.svg, sun-16.svg, moon-16.svg",
+          "html_url": "https://github.com/primer/octicons/commit/b988812081a366c3d61204b5514d7e2c7f214506"
+        },
+        {
+          "sha": "2c1a84031082b617aa1a99171f506f048b91c02c",
+          "author_date": "2020-06-01T22:28:13Z",
+          "message": "Optimize SVGs",
+          "html_url": "https://github.com/primer/octicons/commit/2c1a84031082b617aa1a99171f506f048b91c02c"
+        },
+        {
+          "sha": "436cd2c15581bde1ba332af42eb65634ae58744c",
+          "author_date": "2020-06-01T22:31:25Z",
+          "message": "remove bg from moon-16",
+          "html_url": "https://github.com/primer/octicons/commit/436cd2c15581bde1ba332af42eb65634ae58744c"
+        },
+        {
+          "sha": "37767fe3d5c123f2d7e3a7f31c85613ad7eac964",
+          "author_date": "2020-06-01T22:31:58Z",
+          "message": "Optimize SVGs",
+          "html_url": "https://github.com/primer/octicons/commit/37767fe3d5c123f2d7e3a7f31c85613ad7eac964"
+        },
+        {
+          "sha": "76f5f2b4e988dc9472c5a4080625abd10a47d2b4",
+          "author_date": "2020-06-01T22:32:30Z",
+          "message": "Merge remote-tracking branch 'origin/v2' into add-sun-moon",
+          "html_url": "https://github.com/primer/octicons/commit/76f5f2b4e988dc9472c5a4080625abd10a47d2b4"
+        },
+        {
+          "sha": "256cc72459b0df55162967d398aa6519b3481080",
+          "author_date": "2020-06-01T23:45:30Z",
+          "message": "Merge pull request #437 from primer/add-sun-moon\n\nSave sun-24.svg, moon-24.svg, sun-16.svg, moon-16.svg",
+          "html_url": "https://github.com/primer/octicons/commit/256cc72459b0df55162967d398aa6519b3481080"
+        },
+        {
+          "sha": "e54379b61c61c3464c4cabc7a2ecb2d91f922e1a",
+          "author_date": "2020-06-02T22:38:15Z",
+          "message": "Add briefcase icon (#434)\n\n* Save briefcase-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save briefcase-24.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Shorten briefcase\r\n\r\n* Optimize SVGs\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/e54379b61c61c3464c4cabc7a2ecb2d91f922e1a"
+        },
+        {
+          "sha": "a423abba8ec654030e90feec3f22e52b242760b4",
+          "author_date": "2020-06-02T22:38:29Z",
+          "message": "Add ellipsis icon (#435)\n\n* Save ellipsis-16.svg (https://www.figma.com/file/2rjsQp42uKvzPXzLZIqOeA/Octicons-v2-Source?node-id=1137%3A1780)\r\n\r\n* Optimize SVGs\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/a423abba8ec654030e90feec3f22e52b242760b4"
+        },
+        {
+          "sha": "37939a1a427a12808ff7e852735e655753a553ff",
+          "author_date": "2020-06-02T22:38:43Z",
+          "message": "Add ruby icon (#436)\n\n* Save ruby-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save ruby-24.svg\r\n\r\n* Optimize SVGs\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/37939a1a427a12808ff7e852735e655753a553ff"
+        },
+        {
+          "sha": "94d0d86ff9fe7a368cebdd7c0203daa7111a8eaf",
+          "author_date": "2020-06-03T16:33:25Z",
+          "message": "Update CHANGELOG table",
+          "html_url": "https://github.com/primer/octicons/commit/94d0d86ff9fe7a368cebdd7c0203daa7111a8eaf"
+        },
+        {
+          "sha": "ff9cdef38ab8d5bda5ea83c5403bd74cc8c800c3",
+          "author_date": "2020-06-03T20:09:49Z",
+          "message": "Add square icon (#439)\n\n* Save square-fill-16.svg, square-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save square-fill-16.svg, square-fill-16.svg, dot-fill-16.svg, dot-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save square-fill-16.svg, square-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save square-fill-24.svg, square-24.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Update CHANGELOG\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/ff9cdef38ab8d5bda5ea83c5403bd74cc8c800c3"
+        },
+        {
+          "sha": "a58c58c824ea187495c898d14062d74037790c59",
+          "author_date": "2020-06-05T07:18:39Z",
+          "message": "Add zap icon (#438)\n\n* Save zap-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save zap-2-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Delete zap-2-16.svg\r\n\r\n* Save zap-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save zap-24.svg\r\n\r\n* Optimize SVGs\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/a58c58c824ea187495c898d14062d74037790c59"
+        },
+        {
+          "sha": "1cb16f547e4efcc7e58c49cc17f35bae90bfee7e",
+          "author_date": "2020-06-08T22:12:33Z",
+          "message": "Add meter icon (#441)\n\n* Save meter-16.svg\r\n\r\n* Save meter-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Update changelog\r\n\r\n* Save meter-16.svg\r\n\r\n* Optimize SVGs\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/1cb16f547e4efcc7e58c49cc17f35bae90bfee7e"
+        },
+        {
+          "sha": "fb17b1ecf0c7f1ec69501a89daf826fecbb21a7d",
+          "author_date": "2020-06-09T18:41:01Z",
+          "message": "Add paintbrush icon (#440)\n\n* Save paintbrush-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save paintbrush-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Update changelog\r\n\r\n* Save paintbrush-16.svg\r\n\r\n* Optimize SVGs\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/fb17b1ecf0c7f1ec69501a89daf826fecbb21a7d"
+        },
+        {
+          "sha": "0823bfd6bc6c8d0eb10089e54dc57c90a6e2d771",
+          "author_date": "2020-06-09T18:41:23Z",
+          "message": "Add squirrel icon (#444)\n\n* Save squirrel-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save squirrel-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Save squirrel-16.svg\r\n\r\n* Optimize SVGs\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/0823bfd6bc6c8d0eb10089e54dc57c90a6e2d771"
+        },
+        {
+          "sha": "0ea81998142198c8a4bb2732acb3bd793bcf8aac",
+          "author_date": "2020-06-09T20:18:03Z",
+          "message": "Remove now added icons from v2 changelog (#446)",
+          "html_url": "https://github.com/primer/octicons/commit/0ea81998142198c8a4bb2732acb3bd793bcf8aac"
+        },
+        {
+          "sha": "387b0bbdb5766776546987a97063eb422e44cd83",
+          "author_date": "2020-06-10T20:18:48Z",
+          "message": "Add some v1 icons to v2 branch  (#448)\n\n* Save browser-16.svg, bug-16.svg, repo-clone-16.svg, repo-pull-16.svg, device-camera-16.svg\r\n\r\n* Optimize SVGs\r\n\r\nCo-authored-by: Cole Bemis <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/387b0bbdb5766776546987a97063eb422e44cd83"
+        },
+        {
+          "sha": "dcc6a36b5f8897a70b1ea1f21d5514181972789a",
+          "author_date": "2020-06-10T22:00:20Z",
+          "message": "Update JavaScript package to support 24px icons (#445)\n\n* Update node package to handle 24px icons\n\n* Update docs\n\n* Finish updating docs\n\n* Update changelog",
+          "html_url": "https://github.com/primer/octicons/commit/dcc6a36b5f8897a70b1ea1f21d5514181972789a"
+        },
+        {
+          "sha": "4feef6b26197a42d3aebb1767f012df46e80e434",
+          "author_date": "2020-06-10T22:55:44Z",
+          "message": "Remove \"v2\" from package names (#449)\n\n* Update package names in docs\n\n* Remove \"v2\" from package names\n\n* Update docs/content/packages/javascript.mdx",
+          "html_url": "https://github.com/primer/octicons/commit/4feef6b26197a42d3aebb1767f012df46e80e434"
+        },
+        {
+          "sha": "c9023545cf54ceaa6f8333b211eea91cb453f105",
+          "author_date": "2020-06-10T23:40:00Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/primer/octicons/commit/c9023545cf54ceaa6f8333b211eea91cb453f105"
+        },
+        {
+          "sha": "d56a724e3776dcfd138b4e37d0ef01f4c54c4f0a",
+          "author_date": "2020-06-10T23:40:39Z",
+          "message": "Update docs/content/packages/javascript.mdx",
+          "html_url": "https://github.com/primer/octicons/commit/d56a724e3776dcfd138b4e37d0ef01f4c54c4f0a"
+        },
+        {
+          "sha": "76baad62c480da77316ae759c542059205e2c599",
+          "author_date": "2020-06-10T23:41:14Z",
+          "message": "Update docs/content/packages/jekyll.mdx",
+          "html_url": "https://github.com/primer/octicons/commit/76baad62c480da77316ae759c542059205e2c599"
+        },
+        {
+          "sha": "8e7b0cd72c9c782274383c45721301be698ca5d1",
+          "author_date": "2020-06-10T23:41:30Z",
+          "message": "Update docs/content/packages/react.mdx",
+          "html_url": "https://github.com/primer/octicons/commit/8e7b0cd72c9c782274383c45721301be698ca5d1"
+        },
+        {
+          "sha": "dbf02d1bb8aa3fc3d3595dc1490dd1962cad0b99",
+          "author_date": "2020-06-10T23:53:44Z",
+          "message": "Merge pull request #370 from primer/v2\n\nOcticons v2 👀",
+          "html_url": "https://github.com/primer/octicons/commit/dbf02d1bb8aa3fc3d3595dc1490dd1962cad0b99"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v10.1.0",
@@ -3122,8 +4005,51 @@
     {
       "release": "v19.1.0",
       "previous_release": "v19.0.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "1ee89021b3030dfe12cf5c7a886cedb8b5a19638",
+          "author_date": "2023-05-10T00:12:10Z",
+          "message": "Update the node version and GH actions in workflows (#947)\n\n* Update the docker image for building nodes\r\n\r\n* Update node versions and GH actions",
+          "html_url": "https://github.com/primer/octicons/commit/1ee89021b3030dfe12cf5c7a886cedb8b5a19638"
+        },
+        {
+          "sha": "28d33b38489cff87bdfeb8a26b00708739e1b55e",
+          "author_date": "2023-05-10T03:53:42Z",
+          "message": "add workflow_dispatch trigger (#948)",
+          "html_url": "https://github.com/primer/octicons/commit/28d33b38489cff87bdfeb8a26b00708739e1b55e"
+        },
+        {
+          "sha": "f6796914732ef96052585adbd8dcccb554bfb2d6",
+          "author_date": "2023-05-10T23:35:11Z",
+          "message": "Save move-to-bottom-24.svg, move-to-top-16.svg, move-to-top-24.svg, m… (#949)\n\n* Save move-to-bottom-24.svg, move-to-top-16.svg, move-to-top-24.svg, move-to-bottom-16.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Create lemon-bulldogs-give.md\r\n\r\n---------\r\n\r\nCo-authored-by: Cameron Foxly <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/f6796914732ef96052585adbd8dcccb554bfb2d6"
+        },
+        {
+          "sha": "8f0edd9e3aade3901a10d133e14f0561919c945d",
+          "author_date": "2023-05-10T23:35:56Z",
+          "message": "Save pin-16.svg, pin-slash-16.svg, pin-24.svg, pin-slash-24.svg (#950)\n\n* Save pin-16.svg, pin-slash-16.svg, pin-24.svg, pin-slash-24.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Create gorgeous-windows-wash.md\r\n\r\n* Update keywords.json\r\n\r\nAdded `pin-slash`\r\n\r\n* Update public-api.test.js.snap\r\n\r\nAdded \"PinSlashIcon\"\r\n\r\n* Re-upload these with no BG color in their frames\r\n\r\n* Optimize SVGs\r\n\r\n---------\r\n\r\nCo-authored-by: Cameron Foxly <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/8f0edd9e3aade3901a10d133e14f0561919c945d"
+        },
+        {
+          "sha": "af6edab99d51f31eac23395b016dd988e34ef05d",
+          "author_date": "2023-05-10T23:40:51Z",
+          "message": "Add devices-16.svg, devices-24.svg (#933)\n\n* Save devices-16.svg, devices-24.svg\r\n\r\n* Optimize SVGs\r\n\r\n* Update public-api.test.js.snap\r\n\r\n* Create giant-fishes-relate.md\r\n\r\n---------\r\n\r\nCo-authored-by: Steve Hayes <actions@github.com>\r\nCo-authored-by: Cole Bemis <colebemis@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/af6edab99d51f31eac23395b016dd988e34ef05d"
+        },
+        {
+          "sha": "d1f48c12fb409c598183c05d071821ee1f6e3bbf",
+          "author_date": "2023-05-10T23:45:33Z",
+          "message": "Update node entrypoint script and ruby docker image (#951)\n\n* Use https for the npm registry url\r\n\r\n* try\r\n\r\n* --legacy-peer-deps\r\n\r\n* update ruby version",
+          "html_url": "https://github.com/primer/octicons/commit/d1f48c12fb409c598183c05d071821ee1f6e3bbf"
+        },
+        {
+          "sha": "57b5e6a9cf29a922a79007ed30cfadec810c3284",
+          "author_date": "2023-05-10T23:50:53Z",
+          "message": "Version Packages (#952)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/57b5e6a9cf29a922a79007ed30cfadec810c3284"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v19.2.0",
@@ -3194,8 +4120,33 @@
     {
       "release": "v19.13.0",
       "previous_release": "v19.12.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "12c6fb0033c8f9dd22b5e8f93ddf3dff9bb7acb1",
+          "author_date": "2024-10-30T22:05:33Z",
+          "message": "fix(octicons-styled): update how package is output to reduce bundle size (#1027)\n\n* fix(octicons-styled): update how package is output to reduce bundle size\n\n* chore: add changeset\n\n* chore: update rollup config\n\n---------\n\nCo-authored-by: Cameron Dutro <camertron@gmail.com>",
+          "html_url": "https://github.com/primer/octicons/commit/12c6fb0033c8f9dd22b5e8f93ddf3dff9bb7acb1"
+        },
+        {
+          "sha": "ddd0669e8b1c25e0830a61c19db0ac416bec63ab",
+          "author_date": "2024-12-03T08:26:32Z",
+          "message": "fixed error (#1042)",
+          "html_url": "https://github.com/primer/octicons/commit/ddd0669e8b1c25e0830a61c19db0ac416bec63ab"
+        },
+        {
+          "sha": "ef89a78f9c0b92a32b7476b5680c327bcd8a6d64",
+          "author_date": "2024-12-04T13:42:22Z",
+          "message": "Add new sparkles icon (#1041)\n\n* add new sparkles icon\r\n\r\n* rename icon to sparkles-fill\r\n\r\n* Optimize SVGs\r\n\r\n* update snapshot\r\n\r\n---------\r\n\r\nCo-authored-by: Lukas Oppermann <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/ef89a78f9c0b92a32b7476b5680c327bcd8a6d64"
+        },
+        {
+          "sha": "e01e42adbdf8a2bfd717c740259696d1956518d0",
+          "author_date": "2024-12-04T13:48:01Z",
+          "message": "Version Packages (#1036)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/e01e42adbdf8a2bfd717c740259696d1956518d0"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v19.14.0",
@@ -3212,8 +4163,57 @@
     {
       "release": "v19.15.1",
       "previous_release": "v19.15.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "482b8a411ef8197561aedbeac54aaf9cc08e4d05",
+          "author_date": "2025-02-05T19:56:49Z",
+          "message": "Fixes 24px id-badge asset (#1048)\n\n* fixes 24px id-badge asset\r\n\r\n* Optimize SVGs\r\n\r\n---------\r\n\r\nCo-authored-by: Mike Perrotti <actions@github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/482b8a411ef8197561aedbeac54aaf9cc08e4d05"
+        },
+        {
+          "sha": "cdb17c3f6c5e2ab093b415ecc18dd72c6aa210c2",
+          "author_date": "2025-02-18T20:43:28Z",
+          "message": "Update mark-github-24 sizing (#1050)\n\n* update mark-github-24 sizing\n\n* update *correct* icon",
+          "html_url": "https://github.com/primer/octicons/commit/cdb17c3f6c5e2ab093b415ecc18dd72c6aa210c2"
+        },
+        {
+          "sha": "818a40c5d5dec81ad048f3257f092f660b7c8ee5",
+          "author_date": "2025-02-18T20:45:57Z",
+          "message": "Adding changeset for merged pr",
+          "html_url": "https://github.com/primer/octicons/commit/818a40c5d5dec81ad048f3257f092f660b7c8ee5"
+        },
+        {
+          "sha": "a8e4b7bc4aed52fb7872aa001d0b4aa61ed6041d",
+          "author_date": "2025-02-18T21:59:17Z",
+          "message": "Disable Rails/Delegate linter for parse method in test/helper.rb (#1072)",
+          "html_url": "https://github.com/primer/octicons/commit/a8e4b7bc4aed52fb7872aa001d0b4aa61ed6041d"
+        },
+        {
+          "sha": "77c468a71613956c16a16fd2076b8bf75bc11585",
+          "author_date": "2025-02-28T16:26:28Z",
+          "message": "Bump next from 12.3.0 to 14.2.21 in /lib/octicons_react (#1073)\n\nBumps [next](https://github.com/vercel/next.js) from 12.3.0 to 14.2.21.\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Changelog](https://github.com/vercel/next.js/blob/canary/release.js)\n- [Commits](https://github.com/vercel/next.js/compare/v12.3.0...v14.2.21)\n\n---\nupdated-dependencies:\n- dependency-name: next\n  dependency-type: direct:development\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/77c468a71613956c16a16fd2076b8bf75bc11585"
+        },
+        {
+          "sha": "642dcaa5f2cd08914a17d333e6715ee8ac8b1b6e",
+          "author_date": "2025-03-03T22:33:36Z",
+          "message": "Bump elliptic from 6.5.4 to 6.6.1 in /lib/octicons_styled (#1076)\n\nBumps [elliptic](https://github.com/indutny/elliptic) from 6.5.4 to 6.6.1.\n- [Commits](https://github.com/indutny/elliptic/compare/v6.5.4...v6.6.1)\n\n---\nupdated-dependencies:\n- dependency-name: elliptic\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Marie Lucca <40550942+francinelucca@users.noreply.github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/642dcaa5f2cd08914a17d333e6715ee8ac8b1b6e"
+        },
+        {
+          "sha": "8c9b611271805a436b306beebd8400b502f4f386",
+          "author_date": "2025-03-04T19:44:30Z",
+          "message": "Create manual-changeset.md (#1078)",
+          "html_url": "https://github.com/primer/octicons/commit/8c9b611271805a436b306beebd8400b502f4f386"
+        },
+        {
+          "sha": "09f2a1367a1d8c79b5e25d580416f05e34d01e2b",
+          "author_date": "2025-03-04T19:47:30Z",
+          "message": "Version Packages (#1071)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/primer/octicons/commit/09f2a1367a1d8c79b5e25d580416f05e34d01e2b"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v19.15.2",
@@ -3608,8 +4608,8 @@
     {
       "release": "@primer/octicons-react@19.40.0",
       "previous_release": "jekyll-octicons@19.40.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [],
+      "ignored_reason": null
     }
   ],
   "runs_by_month": {

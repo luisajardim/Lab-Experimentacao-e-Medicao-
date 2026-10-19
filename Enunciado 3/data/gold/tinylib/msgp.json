@@ -398,56 +398,308 @@
       "ignored_reason": "no_previous_release"
     },
     {
-      "release": "v1.5.0",
-      "previous_release": "v1.4.0",
+      "release": "v1.0-beta",
+      "previous_release": "v1.0-alpha",
       "commits": [
         {
-          "sha": "bde549e1705939d03383c4b17fa5ec3b629c53fb",
-          "author_date": "2025-08-28T07:24:38Z",
-          "message": "Add Coerce functions to Number (#404)\n\n* Add `Coerse` functions to `Number`\n\nExpands/replaces https://github.com/tinylib/msgp/pull/143",
-          "html_url": "https://github.com/tinylib/msgp/commit/bde549e1705939d03383c4b17fa5ec3b629c53fb"
+          "sha": "3c84960f04988bade901ec4b4627ba91c3904ac9",
+          "author_date": "2015-06-09T05:10:46Z",
+          "message": "raw map and array headers",
+          "html_url": "https://github.com/tinylib/msgp/commit/3c84960f04988bade901ec4b4627ba91c3904ac9"
         },
         {
-          "sha": "2f1ed81ec8a024e30cd34e132a698851bb401b1f",
-          "author_date": "2025-08-28T07:26:11Z",
-          "message": "Handle atomic values (#405)\n\nHandle `atomic.Int64`, `atomic.Uint64`, `atomic.Int32`, `atomic.Uint32`, `atomic.Bool` types.\n\nWill use Load/Store for values. Values are serialized as their natural types.\n\nFixes #400",
-          "html_url": "https://github.com/tinylib/msgp/commit/2f1ed81ec8a024e30cd34e132a698851bb401b1f"
+          "sha": "0876d2fb0573a68f870d73116f16d1da19885242",
+          "author_date": "2015-06-09T17:52:04Z",
+          "message": "propogate constants to encode methods",
+          "html_url": "https://github.com/tinylib/msgp/commit/0876d2fb0573a68f870d73116f16d1da19885242"
         },
         {
-          "sha": "12a343662ab731a9919a900d487e8d5d4f9ab861",
-          "author_date": "2025-08-28T15:57:28Z",
-          "message": "Add Number.CoerceFloat (#407)\n\nAdd a convenience function to always get a number as float, even if converted.\n\nFixes https://github.com/tinylib/msgp/issues/152",
-          "html_url": "https://github.com/tinylib/msgp/commit/12a343662ab731a9919a900d487e8d5d4f9ab861"
+          "sha": "ead60c865eda1d3e48a824268d5f418513a51970",
+          "author_date": "2015-06-09T18:25:31Z",
+          "message": "propogate size information",
+          "html_url": "https://github.com/tinylib/msgp/commit/ead60c865eda1d3e48a824268d5f418513a51970"
         },
         {
-          "sha": "ae1aabc4ee1ae316c2e8968d7e7af9c53061c2f5",
-          "author_date": "2025-08-28T15:57:45Z",
-          "message": "Handle aliased types (#406)\n\nAllow for aliased types. By far the cleanest solution is to just use a replace directive.\n\nFixes #250",
-          "html_url": "https://github.com/tinylib/msgp/commit/ae1aabc4ee1ae316c2e8968d7e7af9c53061c2f5"
+          "sha": "30dbea81f42f49bdb68d2d622e61f254e10b695b",
+          "author_date": "2015-06-20T21:53:56Z",
+          "message": "Merge pull request #92 from tinylib/pre-gen\n\nConstant propogation",
+          "html_url": "https://github.com/tinylib/msgp/commit/30dbea81f42f49bdb68d2d622e61f254e10b695b"
         },
         {
-          "sha": "5817f9307040836747550f47fe3d9dd5792aa00c",
-          "author_date": "2025-08-29T17:51:30Z",
-          "message": "Add \"setof\" helpers (#408)\n\n* Add `FooFromSlice` that will convert a slice of type to map[foo]struct{}\n* Add `Foo.AsSlice` that will return the set as a slice (sorted on sorted types).\n* Use `clear` to clear maps (Go 1.21)\n\nWe can't use fancy `maps` and `slices` methods yet, since that is Go 1.23.",
-          "html_url": "https://github.com/tinylib/msgp/commit/5817f9307040836747550f47fe3d9dd5792aa00c"
+          "sha": "dd11d8f1c94f8e2da8622eee77104dc0409f42f0",
+          "author_date": "2015-06-20T22:08:01Z",
+          "message": "cleaning",
+          "html_url": "https://github.com/tinylib/msgp/commit/dd11d8f1c94f8e2da8622eee77104dc0409f42f0"
         },
         {
-          "sha": "924e018402578b9974fc2614de16ce8878340b60",
-          "author_date": "2025-09-17T12:07:25Z",
-          "message": "Add array/map iterators (#403)\n\nAllows to receive iterators for arrays or maps, so inputs can be directly iterated over.\n\nNew functions in msgp:\n\n```go\n// ReadArray returns an iterator that can be used to iterate over the elements\n// of an array in the MessagePack data while being read by the provided Reader.\n// The type parameter V specifies the type of the elements in the array.\n// The returned iterator implements the iter.Seq[V] interface,\n// allowing for sequential access to the array elements.\nfunc ReadArray[T any](m *Reader, readFn func() (T, error)) iter.Seq2[T, error]\n\n// WriteArray writes an array to the provided Writer.\n// The writeFn parameter specifies the function to use to write each element of the array.\nfunc WriteArray[T any](w *Writer, a []T, writeFn func(T) error) error\n\n// ReadMap returns an iterator that can be used to iterate over the elements\n// of a map in the MessagePack data while being read by the provided Reader.\n// The type parameters K and V specify the types of the keys and values in the map.\n// The returned iterator implements the iter.Seq2[K, V] interface,\n// allowing for sequential access to the map elements.\n// The returned function can be used to read any error that\n// occurred during iteration when iteration is done.\nfunc ReadMap[K, V any](m *Reader, readKey func() (K, error), readVal func() (V, error)) (iter.Seq2[K, V], func() error)\n\n// WriteMap writes a map to the provided Writer.\n// The writeKey and writeVal parameters specify the functions\n// to use to write each key and value of the map.\nfunc WriteMap[K comparable, V any](w *Writer, m map[K]V, writeKey func(K) error, writeVal func(V) error) error\n\n// WriteMapSorted writes a map to the provided Writer.\n// The keys of the map are sorted before writing.\n// This provides deterministic output, but will allocate to sort the keys.\n// The writeKey and writeVal parameters specify the functions\n// to use to write each key and value of the map.\nfunc WriteMapSorted[K cmp.Ordered, V any](w *Writer, m map[K]V, writeKey func(K) error, writeVal func(V) error) error \n\n// ReadArrayBytes returns an iterator that can be used to iterate over the elements\n// of an array in the MessagePack data while being read by the provided Reader.\n// The type parameter V specifies the type of the elements in the array.\n// After the iterator is exhausted, the remaining bytes in the buffer\n// and any error can be read by calling the returned function.\nfunc ReadArrayBytes[T any](b []byte, readFn func([]byte) (T, []byte, error)) (iter.Seq[T], func() (remain []byte, err error))\n\n// AppendArray writes an array to the provided buffer.\n// The writeFn parameter specifies the function to use to write each element of the array.\n// The returned buffer contains the encoded array.\n// The function panics if the array is larger than math.MaxUint32 elements.\nfunc AppendArray[T any](b []byte, a []T, writeFn func(b []byte, v T) []byte) []byte\n\n// ReadMapBytes returns an iterator over key/value\n// pairs from a MessagePack map encoded in b.\n// The iterator yields K,V pairs, and this function also returns\n// a closure to get the remaining bytes and any error.\nfunc ReadMapBytes[K any, V any](b []byte,\n\treadK func([]byte) (K, []byte, error),\n\treadV func([]byte) (V, []byte, error)) (iter.Seq2[K, V], func() (remain []byte, err error))\n\n\n// AppendMap writes a map to the provided buffer.\n// The writeK and writeV parameters specify the functions to use to write each key and value of the map.\n// The returned buffer contains the encoded map.\n// The function panics if the map is larger than math.MaxUint32 elements.\nfunc AppendMap[K comparable, V any](b []byte, m map[K]V,\n\twriteK func(b []byte, k K) []byte,\n\twriteV func(b []byte, v V) []byte) []byte\n\n// AppendMapSorted writes a map to the provided buffer.\n// Keys are sorted before writing.\n// This provides deterministic output, but will allocate to sort the keys.\n// The writeK and writeV parameters specify the functions to use to write each key and value of the map.\n// The returned buffer contains the encoded map.\n// The function panics if the map is larger than math.MaxUint32 elements.\nfunc AppendMapSorted[K cmp.Ordered, V any](b []byte, m map[K]V,\n\twriteK func(b []byte, k K) []byte,\n\twriteV func(b []byte, v V) []byte) []byte\n\n// DecoderFrom allows augmenting any type with a DecodeMsg method into a method\n// that reads from Reader and returns a T.\n// Provide an instance of T. This value isn't used.\n// See ReadArray/ReadMap \"struct\" examples for usage.\nfunc DecoderFrom[T any, PT DecodePtr[T]](r *Reader, _ T) func() (T, error)\n\n// DecoderFromBytes allows augmenting any type with an UnmarshalMsg\n// method into a method that reads from []byte and returns a T.\n// Provide an instance of T. This value isn't used.\n// See ReadArrayBytes or ReadMapBytes \"struct\" examples for usage.\nfunc DecoderFromBytes[T any, PT UnmarshalPtr[T]](_ T) func([]byte) (T, []byte, error) \n\n// EncoderTo allows augmenting any type with an EncodeMsg\n// method into a method that writes to Writer on each call.\n// Provide an instance of T. This value isn't used.\n// See ReadArray or ReadMap \"struct\" examples for usage.\nfunc EncoderTo[T any, _ FlexibleEncoder[T]](w *Writer, _ T) func(T) error \n\n// EncoderToBytes allows augmenting any type with a MarshalMsg method into a method\n// that reads from T and returns a []byte.\n// Provide an instance of T. This value isn't used.\n// See ReadArrayBytes or ReadMapBytes \"struct\" examples for usage.\nfunc EncoderToBytes[T any, _ FlexibleMarshaler[T]](_ T) func([]byte, T) []byte\n```\n\nExamples included in godoc.",
-          "html_url": "https://github.com/tinylib/msgp/commit/924e018402578b9974fc2614de16ce8878340b60"
+          "sha": "102b6cc967718045f158e210834f28e0a45a882c",
+          "author_date": "2015-06-20T22:18:22Z",
+          "message": "add option to allow processing of unexported types",
+          "html_url": "https://github.com/tinylib/msgp/commit/102b6cc967718045f158e210834f28e0a45a882c"
         },
         {
-          "sha": "e9e666aee02b7d59cc213f6a3501733b0d2ca18f",
-          "author_date": "2025-10-24T19:56:10Z",
-          "message": "msgp: fuzz test: fix overflow on 32-bit systems (#412)\n\nOn 32-bit systems, int(sz) can yield a negative value,\nwhich in turn leads to us passing a negative value to\nfwd.Reader.Next. (See https://github.com/philhofer/fwd/issues/36.)\n\nThe simplest fix here is just to check that the conversion\ndoesn't yield a negative value.",
-          "html_url": "https://github.com/tinylib/msgp/commit/e9e666aee02b7d59cc213f6a3501733b0d2ca18f"
+          "sha": "b32fe1d43cae988ce29950960e344e750ad4eb00",
+          "author_date": "2015-06-20T23:12:04Z",
+          "message": "adjust benchmark/test names for unexported types",
+          "html_url": "https://github.com/tinylib/msgp/commit/b32fe1d43cae988ce29950960e344e750ad4eb00"
         },
         {
-          "sha": "9ed94a8707a1404c1f59197572fa7a8e37899f52",
-          "author_date": "2025-10-27T14:18:51Z",
-          "message": "feat: Support generic types (#410)\n\nThis adds support for generic types.\n\nSay you have `type Foo[T any] struct`, you must add a constraint that it can be handled properly. The constraint is added with a built-in `type Foo[T any, _ msgp.RTFor[T]`.\n\nIf `T` supports serialization this will work. Multiple types can be added, but each must have the constraint.\n\nNested of types are supported. For example:\n\n```go\ntype Foo[T any, P msgp.RTFor[T]] struct {\n    X  Bar[T, P] `msg:\",allownil\"`\n}\n\ntype Bar[T any, _ msgp.RTFor[T]] struct {...}\n```\n\nNotice how `P` can be used for a nested generic type.\n\n## Limitations\n\n* Types cannot be primitives since they must support marshalling. It can however be an `type Int64 int` with generation should still work\n* Since we cannot reliably create instances with arbitrary types there are no tests.\n* The `msgp.RTFor[T]` type shouldn't be used for types in the struct since new instances cannot be created and can cause a runtime crash.\n* There will be warnings like: `warn: generics.go: GenericTest: A: possible non-local identifier: T`.\n* Some directives may exhibit unexpected behaviour. Not tested too deeply.\n\n## Example\n\n\n```go\n// MyStruct can be instantiated with any type T that supports marshaling.\n// T must be the base type and not a pointer to work. \ntype MyStruct[T any, P msgp.RTFor[T]] struct {\n\t// Direct use of T\n\tA  T\n\tC  []T\n\tD  map[string]T\n\n\t// T used for another generic.\n\tE  MyStruct2[T, P, string]\n\tF  []MyStruct2[T, P, string]\n\tG  map[string]MyStruct2[T, P, string]\n\n\t// Same with pointers\n\tAP *T\n\tCP []*T\n\tDP map[string]*T\n\tEP *MyStruct2[T, P, string]\n\tFP []*MyStruct2[T, P, string]\n\tGP map[string]*MyStruct2[T, P, string]\n}\n\n// MyStruct2 can be used inside MyStruct.\ntype MyStruct2[T any, P msgp.RTFor[T], B any] struct {\n\tA T\n}\n```",
-          "html_url": "https://github.com/tinylib/msgp/commit/9ed94a8707a1404c1f59197572fa7a8e37899f52"
+          "sha": "f943e8818b8969a414c8b72d1056df1c3be6d07b",
+          "author_date": "2015-06-21T06:13:30Z",
+          "message": "Merge pull request #95 from ebfe/exports\n\nadd -unexported flag",
+          "html_url": "https://github.com/tinylib/msgp/commit/f943e8818b8969a414c8b72d1056df1c3be6d07b"
+        },
+        {
+          "sha": "9b68ed40a4fd267bde32b1b51cb308d65dbde212",
+          "author_date": "2015-06-21T06:43:02Z",
+          "message": "fuse raw appends into each other",
+          "html_url": "https://github.com/tinylib/msgp/commit/9b68ed40a4fd267bde32b1b51cb308d65dbde212"
+        },
+        {
+          "sha": "d538b18863f7885baf31fb70743724212adb9087",
+          "author_date": "2015-06-27T23:35:24Z",
+          "message": "Merge pull request #97 from tinylib/fuse\n\nFuse adjacent raw data appends",
+          "html_url": "https://github.com/tinylib/msgp/commit/d538b18863f7885baf31fb70743724212adb9087"
+        },
+        {
+          "sha": "e30b856062419ca36230f9cd0f259f5014a83574",
+          "author_date": "2015-06-21T20:41:48Z",
+          "message": "ReadFile and WriteFile",
+          "html_url": "https://github.com/tinylib/msgp/commit/e30b856062419ca36230f9cd0f259f5014a83574"
+        },
+        {
+          "sha": "85d9a2ee893ce2d25e0a53b37d81360959b1b3e0",
+          "author_date": "2015-06-28T00:10:52Z",
+          "message": "make",
+          "html_url": "https://github.com/tinylib/msgp/commit/85d9a2ee893ce2d25e0a53b37d81360959b1b3e0"
+        },
+        {
+          "sha": "2db3cc759d9ba98e1fefa9983399bfb6eeb28a17",
+          "author_date": "2015-06-28T00:52:59Z",
+          "message": "Merge pull request #98 from tinylib/readfile\n\nReadFile and WriteFile, plus makefile improvements",
+          "html_url": "https://github.com/tinylib/msgp/commit/2db3cc759d9ba98e1fefa9983399bfb6eeb28a17"
+        },
+        {
+          "sha": "cc8a1e5174215894c59f8e2b984ca97c0baa010d",
+          "author_date": "2015-07-17T18:03:18Z",
+          "message": "constprop for fixed-size structs",
+          "html_url": "https://github.com/tinylib/msgp/commit/cc8a1e5174215894c59f8e2b984ca97c0baa010d"
+        },
+        {
+          "sha": "ae2d27e6b10e11840e783fd49430fb13d7113ff2",
+          "author_date": "2015-07-17T18:29:25Z",
+          "message": "Merge pull request #100 from tinylib/hotfix-unused-idx\n\nconstprop for fixed-size structs; fixes #99",
+          "html_url": "https://github.com/tinylib/msgp/commit/ae2d27e6b10e11840e783fd49430fb13d7113ff2"
+        },
+        {
+          "sha": "1a9b122e0a01a9e61b0f6318433946d2be9841d4",
+          "author_date": "2015-07-19T18:11:36Z",
+          "message": "add more string-as-bytes methods",
+          "html_url": "https://github.com/tinylib/msgp/commit/1a9b122e0a01a9e61b0f6318433946d2be9841d4"
+        },
+        {
+          "sha": "d07c86a62498d5ae78ac6dcffccc33be9369663a",
+          "author_date": "2015-07-20T00:03:07Z",
+          "message": "Merge pull request #105 from tinylib/str-to-bts\n\nAdd more string-to-bytes and bytes-to-string methods; fixes #104.",
+          "html_url": "https://github.com/tinylib/msgp/commit/d07c86a62498d5ae78ac6dcffccc33be9369663a"
+        },
+        {
+          "sha": "65796be8032ba01ee7467f63c0429e038868fd0f",
+          "author_date": "2015-07-20T22:31:12Z",
+          "message": "Break dependency on \"testing\" package\n\nImporting the \"testing\" standard library package automatically registers the\ntesting commandline flags. This side effect cluttered up the output of --help\nfor any program that imported msgp.\n\nI replaced the dependency on testing.B with an interface containing the required\nmethods.",
+          "html_url": "https://github.com/tinylib/msgp/commit/65796be8032ba01ee7467f63c0429e038868fd0f"
+        },
+        {
+          "sha": "2e776fce9d47cb00819f6dc939a708dbb3085cb6",
+          "author_date": "2015-07-20T22:52:04Z",
+          "message": "Merge pull request #106 from alexandercampbell/stop_importing_testing\n\nBreak dependency on \"testing\" package in msgp/circular.go to avoid cluttering flag registration",
+          "html_url": "https://github.com/tinylib/msgp/commit/2e776fce9d47cb00819f6dc939a708dbb3085cb6"
+        },
+        {
+          "sha": "d5a67b0f43b3ca0400b4ecb7dea26d1e3cc2af3b",
+          "author_date": "2015-07-21T11:29:18Z",
+          "message": "De-randomize type order in generated code\n\nFixes #107",
+          "html_url": "https://github.com/tinylib/msgp/commit/d5a67b0f43b3ca0400b4ecb7dea26d1e3cc2af3b"
+        },
+        {
+          "sha": "0c28d0d0ade2c6b502ea2609e3fccb1a56a8bb50",
+          "author_date": "2015-07-21T15:19:00Z",
+          "message": "Merge pull request #108 from ebfe/sorted_names\n\nDe-randomize type order in generated code",
+          "html_url": "https://github.com/tinylib/msgp/commit/0c28d0d0ade2c6b502ea2609e3fccb1a56a8bb50"
+        },
+        {
+          "sha": "6dd7619a22b33784bcbe3236ae33fb1b4f1a2205",
+          "author_date": "2015-07-21T19:01:28Z",
+          "message": "msgp.Reader.r -> msgp.Reader.R. Allow client Peek. workaround #109\n\n  Makes the msgp.Reader member r *fwd.Reader into R, making it\n  public instead of private so clients of msgp can call m.R.Peek\n  and handle torn objects/EOF on streams gracefully. Allows\n  clients of msgp to work around #109 and is in general useful\n  to be able to Peek ahead in the data stream, leveraging the\n  useful properties of the fwd library from the application.",
+          "html_url": "https://github.com/tinylib/msgp/commit/6dd7619a22b33784bcbe3236ae33fb1b4f1a2205"
+        },
+        {
+          "sha": "aa2abc1a240470bf316de75e392c3808de344d50",
+          "author_date": "2015-07-22T01:10:00Z",
+          "message": "add str/bin header methods",
+          "html_url": "https://github.com/tinylib/msgp/commit/aa2abc1a240470bf316de75e392c3808de344d50"
+        },
+        {
+          "sha": "f52a79370e1f20345a2112d381a8b0d88a029a8c",
+          "author_date": "2015-07-22T02:28:44Z",
+          "message": "add tests",
+          "html_url": "https://github.com/tinylib/msgp/commit/f52a79370e1f20345a2112d381a8b0d88a029a8c"
+        },
+        {
+          "sha": "35d2fff179bf798eb0de0a0f23dc7bc64d34c0eb",
+          "author_date": "2015-07-23T14:49:11Z",
+          "message": "appengine compatibility",
+          "html_url": "https://github.com/tinylib/msgp/commit/35d2fff179bf798eb0de0a0f23dc7bc64d34c0eb"
+        },
+        {
+          "sha": "bca804214c658a919f7eac3599193421cf4eb5fa",
+          "author_date": "2015-07-23T15:31:57Z",
+          "message": "Merge pull request #113 from jfbus/appengine\n\nappengine compatibility for read/writefile",
+          "html_url": "https://github.com/tinylib/msgp/commit/bca804214c658a919f7eac3599193421cf4eb5fa"
+        },
+        {
+          "sha": "49171c91691a712da619b1fe5803a0e9ad252bb4",
+          "author_date": "2015-07-24T17:17:06Z",
+          "message": "Merge pull request #111 from tinylib/strbin-header\n\nAdd methods to read/write str/bin headers",
+          "html_url": "https://github.com/tinylib/msgp/commit/49171c91691a712da619b1fe5803a0e9ad252bb4"
+        },
+        {
+          "sha": "9f39d3e004c9250b54d8fdb90bb1b4ca0d6fa42d",
+          "author_date": "2015-08-01T22:22:19Z",
+          "message": "fix issue 116 (signed integer overflow with -((1<<61)-1)",
+          "html_url": "https://github.com/tinylib/msgp/commit/9f39d3e004c9250b54d8fdb90bb1b4ca0d6fa42d"
+        },
+        {
+          "sha": "4cc67b4c80fd845804c8818d88ac23a29188a28b",
+          "author_date": "2015-08-01T22:26:40Z",
+          "message": "document (*Reader).ReadByte()",
+          "html_url": "https://github.com/tinylib/msgp/commit/4cc67b4c80fd845804c8818d88ac23a29188a28b"
+        },
+        {
+          "sha": "738d219a8870f4875e814c39ebdd5b199a647d51",
+          "author_date": "2015-08-01T22:32:36Z",
+          "message": "Merge pull request #110 from glycerine/workaround109\n\nmsgp.Reader.r -> msgp.Reader.R. Allow client m.R.Peek(). workaround #109",
+          "html_url": "https://github.com/tinylib/msgp/commit/738d219a8870f4875e814c39ebdd5b199a647d51"
+        },
+        {
+          "sha": "0750fc0576a305c1e4c89de4ed9a571a1192207c",
+          "author_date": "2015-08-01T22:33:32Z",
+          "message": "hotfix",
+          "html_url": "https://github.com/tinylib/msgp/commit/0750fc0576a305c1e4c89de4ed9a571a1192207c"
+        },
+        {
+          "sha": "104d0a3a051f488b8b0e1ecfe461f1254e959da6",
+          "author_date": "2015-08-01T22:34:27Z",
+          "message": "Merge pull request #117 from tinylib/hotfix-116\n\nFix issue #116",
+          "html_url": "https://github.com/tinylib/msgp/commit/104d0a3a051f488b8b0e1ecfe461f1254e959da6"
+        },
+        {
+          "sha": "827d3362027c38d3575c21985aa686b94d7840b6",
+          "author_date": "2015-08-01T22:34:36Z",
+          "message": "Merge pull request #118 from tinylib/hotfix-114\n\nDocument (*Reader).ReadByte()",
+          "html_url": "https://github.com/tinylib/msgp/commit/827d3362027c38d3575c21985aa686b94d7840b6"
+        },
+        {
+          "sha": "4ca3ecb42b3a4fa53657e895e543ce5087e6263a",
+          "author_date": "2015-08-01T22:38:29Z",
+          "message": "document Reader.R",
+          "html_url": "https://github.com/tinylib/msgp/commit/4ca3ecb42b3a4fa53657e895e543ce5087e6263a"
+        },
+        {
+          "sha": "1e9cde87f96f29f28c9ab8e483cd501bb1f040a3",
+          "author_date": "2015-08-02T00:24:58Z",
+          "message": "issue #119",
+          "html_url": "https://github.com/tinylib/msgp/commit/1e9cde87f96f29f28c9ab8e483cd501bb1f040a3"
+        },
+        {
+          "sha": "c3ed66c04c80e32e5c34c800adef85720a300a62",
+          "author_date": "2015-08-02T03:14:20Z",
+          "message": "Merge pull request #120 from tinylib/compare\n\nFix #119",
+          "html_url": "https://github.com/tinylib/msgp/commit/c3ed66c04c80e32e5c34c800adef85720a300a62"
+        },
+        {
+          "sha": "a5ccbe7928ceab0b8277a941e2478de37cf8177e",
+          "author_date": "2015-08-03T00:38:09Z",
+          "message": "0b111xxxxx fits -32",
+          "html_url": "https://github.com/tinylib/msgp/commit/a5ccbe7928ceab0b8277a941e2478de37cf8177e"
+        },
+        {
+          "sha": "3d11b60ef2976326249f6400a0c74b7fcb77ded3",
+          "author_date": "2015-08-03T01:06:01Z",
+          "message": "fix Require()",
+          "html_url": "https://github.com/tinylib/msgp/commit/3d11b60ef2976326249f6400a0c74b7fcb77ded3"
+        },
+        {
+          "sha": "b12388c848cf5ad2bf4c6cb9efd80c5f8e31a259",
+          "author_date": "2015-08-03T23:36:42Z",
+          "message": "Merge pull request #124 from tinylib/fix-require\n\nfix Require()",
+          "html_url": "https://github.com/tinylib/msgp/commit/b12388c848cf5ad2bf4c6cb9efd80c5f8e31a259"
+        },
+        {
+          "sha": "3e538841a7ebda9c043d98f302a27c320f25f610",
+          "author_date": "2015-08-03T23:44:21Z",
+          "message": "GOBIN is friendlier to multiple-GOPATH setups",
+          "html_url": "https://github.com/tinylib/msgp/commit/3e538841a7ebda9c043d98f302a27c320f25f610"
+        },
+        {
+          "sha": "dc4a56d510c6f6c50ca5c3aff52f7db2bf2e46fe",
+          "author_date": "2015-08-04T22:07:35Z",
+          "message": "defer resolution of links of aliases until all concrete types have been parsed",
+          "html_url": "https://github.com/tinylib/msgp/commit/dc4a56d510c6f6c50ca5c3aff52f7db2bf2e46fe"
+        },
+        {
+          "sha": "942bb9a8801d40de1b08af571a05b8580bbfa707",
+          "author_date": "2015-08-05T00:51:48Z",
+          "message": "update logging to show parse state",
+          "html_url": "https://github.com/tinylib/msgp/commit/942bb9a8801d40de1b08af571a05b8580bbfa707"
+        },
+        {
+          "sha": "cd4fb1548c31d88af25205dc021be20935aec720",
+          "author_date": "2015-08-05T04:23:39Z",
+          "message": "Merge pull request #126 from tinylib/hotfix-structalias\n\nWalk the alias graph",
+          "html_url": "https://github.com/tinylib/msgp/commit/cd4fb1548c31d88af25205dc021be20935aec720"
+        },
+        {
+          "sha": "6983ea473bf10f9a9781756663444e5ef0645d7c",
+          "author_date": "2015-08-24T16:37:55Z",
+          "message": "Fix variable redeclaration in nested tuples\n\nFixes #129",
+          "html_url": "https://github.com/tinylib/msgp/commit/6983ea473bf10f9a9781756663444e5ef0645d7c"
+        },
+        {
+          "sha": "a6c8e50810140ec8ba771bbbbc22fa45e156816b",
+          "author_date": "2015-08-24T18:29:38Z",
+          "message": "Merge pull request #130 from ebfe/nested_tuple\n\nFix variable redeclaration in nested tuples",
+          "html_url": "https://github.com/tinylib/msgp/commit/a6c8e50810140ec8ba771bbbbc22fa45e156816b"
+        },
+        {
+          "sha": "bde89de8895aa246ba99f6ecbeb87b75985d2a9b",
+          "author_date": "2015-09-12T15:56:08Z",
+          "message": "fix AppendIntf missing pointer direction",
+          "html_url": "https://github.com/tinylib/msgp/commit/bde89de8895aa246ba99f6ecbeb87b75985d2a9b"
+        },
+        {
+          "sha": "c46fbee0675f25770e5f340dc9bc22bf4a108ad4",
+          "author_date": "2015-09-12T17:02:43Z",
+          "message": "Merge pull request #133 from mengzhuo/fix132\n\nfix AppendIntf missing pointer direction #132",
+          "html_url": "https://github.com/tinylib/msgp/commit/c46fbee0675f25770e5f340dc9bc22bf4a108ad4"
+        },
+        {
+          "sha": "09055e9ab0cdd3c8b3e561556962cd3fc4daa22f",
+          "author_date": "2015-10-23T21:18:35Z",
+          "message": "Add some explicit type declarations to fix 32bit",
+          "html_url": "https://github.com/tinylib/msgp/commit/09055e9ab0cdd3c8b3e561556962cd3fc4daa22f"
+        },
+        {
+          "sha": "35de2458a8180b13ac2f6d327a070d05c003722c",
+          "author_date": "2015-10-23T21:20:07Z",
+          "message": "Cross-compile for 386 and Go 1.5 in Travis\n\nAlso, update \"travis\" rule to be explicit",
+          "html_url": "https://github.com/tinylib/msgp/commit/35de2458a8180b13ac2f6d327a070d05c003722c"
+        },
+        {
+          "sha": "0cea1fa86e8403be1284013014f87ab942056de8",
+          "author_date": "2015-10-23T22:38:53Z",
+          "message": "Merge pull request #135 from tianon/386\n\nAdd some explicit type declarations to fix 32bit",
+          "html_url": "https://github.com/tinylib/msgp/commit/0cea1fa86e8403be1284013014f87ab942056de8"
         }
       ],
       "ignored_reason": null
@@ -526,14 +778,20 @@
       "ignored_reason": null
     },
     {
-      "release": "v1.6.1",
-      "previous_release": "v1.6.0",
+      "release": "v1.0.1",
+      "previous_release": "v1.0",
       "commits": [
         {
-          "sha": "332807098b528e40e5fca255bf0828eae29f42df",
-          "author_date": "2025-12-04T16:43:24Z",
-          "message": "Fix WriteBytes/WriteString/WriteStringFromBytes limit (#429)",
-          "html_url": "https://github.com/tinylib/msgp/commit/332807098b528e40e5fca255bf0828eae29f42df"
+          "sha": "362bfb3384d53ae4d5dd745983a4d70b6d23628c",
+          "author_date": "2017-01-01T02:31:10Z",
+          "message": "switch root element when inlining (#172)\n\n* switch root element when propogating inlines; add a test for recursive and mutually-recursive types",
+          "html_url": "https://github.com/tinylib/msgp/commit/362bfb3384d53ae4d5dd745983a4d70b6d23628c"
+        },
+        {
+          "sha": "1cce05a45012c07001dbfb1679c2f25ac0c189e6",
+          "author_date": "2017-05-10T15:53:24Z",
+          "message": "apply pragmas to unmarshal printer (#176)\n\n* fix issue 174: apply pragmas to unmarshal printer\r\n\r\n* fix build on tip; time.Time representation has changed",
+          "html_url": "https://github.com/tinylib/msgp/commit/1cce05a45012c07001dbfb1679c2f25ac0c189e6"
         }
       ],
       "ignored_reason": null

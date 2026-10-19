@@ -5401,8 +5401,27 @@
     {
       "release": "0.4.4",
       "previous_release": "0.4.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "42aacf6348f59e3a8cabdb73b5418b669025b2d2",
+          "author_date": "2022-06-21T22:32:05Z",
+          "message": "Restart phoenix on setcap; only pick the latest erts path (#740)",
+          "html_url": "https://github.com/firezone/firezone/commit/42aacf6348f59e3a8cabdb73b5418b669025b2d2"
+        },
+        {
+          "sha": "42dc05c7e7bdba42a6774e28312f12130fd8bc35",
+          "author_date": "2022-06-22T00:31:40Z",
+          "message": "set default MTU to 1280 (#742)",
+          "html_url": "https://github.com/firezone/firezone/commit/42dc05c7e7bdba42a6774e28312f12130fd8bc35"
+        },
+        {
+          "sha": "7b92db57369b2d4c76b7c67a767e65514ca4c7bf",
+          "author_date": "2022-06-22T00:41:24Z",
+          "message": "Add user_count, device_count, users_with_mfa_count (#741)",
+          "html_url": "https://github.com/firezone/firezone/commit/7b92db57369b2d4c76b7c67a767e65514ca4c7bf"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.4.5",
@@ -5569,8 +5588,33 @@
     {
       "release": "0.6.14",
       "previous_release": "0.6.13",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "38c41feb67c270efbe511db271ec3d9a44f79ea8",
+          "author_date": "2022-12-22T19:08:04Z",
+          "message": "Don't cache Elixir build in static_analysis workflow (#1227)\n\nStill [having\r\nissues](https://github.com/firezone/firezone/actions/runs/3759257641)\r\nwith the Elixir cache.\r\n\r\nThings tried that didn't work:\r\n- Namespacing by branch name. Github does this already.\r\n- Removing the `restore-keys` in order to only restore the cache if it's\r\na direct hit.\r\n\r\nThe `static_analysis` workflow runs `mix compile --force\r\n--warnings-as-errors` which doesn't use the build cache, so it's\r\nremoved, which fixes the problem.",
+          "html_url": "https://github.com/firezone/firezone/commit/38c41feb67c270efbe511db271ec3d9a44f79ea8"
+        },
+        {
+          "sha": "e49d5631a5e7dd7ee762453d40a5bb1cbbfd473d",
+          "author_date": "2022-12-24T00:13:11Z",
+          "message": "fix: endpoint migration when `EXTERNAL_URL` is not present (#1232)\n\nFor `URI.parse` to work the URI needs to be a FQDN otherwise `nil` is\r\nreturned.",
+          "html_url": "https://github.com/firezone/firezone/commit/e49d5631a5e7dd7ee762453d40a5bb1cbbfd473d"
+        },
+        {
+          "sha": "9eb622fe39b1949cd8c791f8c8c827cf3dde2298",
+          "author_date": "2022-12-24T11:32:01Z",
+          "message": "Removes `hammer` and `hammer_plug` deps and their code references (#1230)\n\nResolves Issue https://github.com/firezone/firezone/issues/1216\r\n\r\nCo-authored-by: Austin Saunders <austinsaunders@paczek.lan>",
+          "html_url": "https://github.com/firezone/firezone/commit/9eb622fe39b1949cd8c791f8c8c827cf3dde2298"
+        },
+        {
+          "sha": "f749ba2bb22023c5ad352069fca3f3572e91d94d",
+          "author_date": "2022-12-24T13:09:37Z",
+          "message": "Change foreign key constraint to cascading delete (#1235)\n\nFixes #1234",
+          "html_url": "https://github.com/firezone/firezone/commit/f749ba2bb22023c5ad352069fca3f3572e91d94d"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.6.15",
@@ -6217,8 +6261,135 @@
     {
       "release": "gui-client-1.3.5",
       "previous_release": "gui-client-1.3.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "4a1dc23a7e8a3f47023201684873f1223004d26a",
+          "author_date": "2024-09-19T14:13:33Z",
+          "message": "ci: Bump Apple and GUI versions (#6776)\n\nMainly to get DNS logging improvements out.",
+          "html_url": "https://github.com/firezone/firezone/commit/4a1dc23a7e8a3f47023201684873f1223004d26a"
+        },
+        {
+          "sha": "4a5061b2978b3acf7b7e484383b5a9e7f4e8529d",
+          "author_date": "2024-09-19T15:29:55Z",
+          "message": "docs(client/linux): document known issue with ZFS (#6756)\n\n`atomicwrites` will have a fix soon probably\nhttps://github.com/untitaker/rust-atomicwrites/pull/64, but if they\ndon't, we should document it",
+          "html_url": "https://github.com/firezone/firezone/commit/4a5061b2978b3acf7b7e484383b5a9e7f4e8529d"
+        },
+        {
+          "sha": "c901d76501cead30b437aa053289b3b0f22a15df",
+          "author_date": "2024-09-19T15:30:05Z",
+          "message": "docs(contributing): corrections (#6760)\n\n1. `asdf install` doesn't seem to list which plugins you need, so we\nexplain that\n2. No longer recommending `brew` for installing `pre-commit` since all\nsystems should have `pip` from `asdf` by the time they reach this step\n3. Explain how to install from `requirements.txt` since that is needed\nfor all the pre-commit stuff to run like prettier and codespell.\n\n---------\n\nSigned-off-by: Reactor Scram <ReactorScram@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/c901d76501cead30b437aa053289b3b0f22a15df"
+        },
+        {
+          "sha": "b06f2e30e9e4750175e17028753927086ff887b1",
+          "author_date": "2024-09-19T15:31:50Z",
+          "message": "chore(rust/gui-client): Iced prototype (#6606)\n\nAdds a prototype `iced` GUI client to the workspace. This needs more\nwork before we can swap it in and replace the Tauri client.\n\nRefs #4883 \n\n<img width=\"683\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/b2c85224-fb7f-4f3e-a2e0-3b184e971dda\">",
+          "html_url": "https://github.com/firezone/firezone/commit/b06f2e30e9e4750175e17028753927086ff887b1"
+        },
+        {
+          "sha": "7f11772b05458b56b1c222aa68ff562d4202bf37",
+          "author_date": "2024-09-19T17:35:42Z",
+          "message": "fix(portal): Fallback to the user token if service account token is not available (#6764)",
+          "html_url": "https://github.com/firezone/firezone/commit/7f11772b05458b56b1c222aa68ff562d4202bf37"
+        },
+        {
+          "sha": "c7429b39827a39e69bfd271862a3142dadcab113",
+          "author_date": "2024-09-19T18:44:05Z",
+          "message": "docs: Add known issue regarding macOS and SentinelOne agent (#6784)\n\nRefs:\nhttps://firezonehq.slack.com/archives/C069H865MHP/p1726599863041099",
+          "html_url": "https://github.com/firezone/firezone/commit/c7429b39827a39e69bfd271862a3142dadcab113"
+        },
+        {
+          "sha": "0d6c15c7874e86729f7ac81503162e7ef2a001c4",
+          "author_date": "2024-09-19T22:09:38Z",
+          "message": "fix(portal): Do not break Flowbite popovers on DOM patching (#6787)\n\nCloses [#6682](https://github.com/firezone/firezone/issues/6682)",
+          "html_url": "https://github.com/firezone/firezone/commit/0d6c15c7874e86729f7ac81503162e7ef2a001c4"
+        },
+        {
+          "sha": "c0f451ebea14cdb7122cad01f3bd2ac919aec1a5",
+          "author_date": "2024-09-19T23:20:17Z",
+          "message": "fix(connlib): blackhole DNS HTTPS type queries for resources (#6788)\n\nFix #6781\nFix #6375\n\nThe problem was that browsers in iOS(and possible other OSes) queries\nfor A, AAAA and HTTPS, and we correctly intercept A and AAAA.\n\nCorrectly intercepting HTTPS queries is more tricky since we need the\nserver's alpn, before this PR we were just forwarding those and then the\nresponse back but the problem with that is that it'd return the real IP\nfor the service instead of our proxy IP.\n\nSo to quickly fix this we simply blackhole the query so the browser\nnever use that response.\n\nIn the future an improvement over this would be to intercept the\nresponse instead of the query and mangle the ips there.\n\n---------\n\nSigned-off-by: Gabi <gabrielalejandro7@gmail.com>\nCo-authored-by: Reactor Scram <ReactorScram@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/c0f451ebea14cdb7122cad01f3bd2ac919aec1a5"
+        },
+        {
+          "sha": "990119b0f16bd62ad3b8051fad6b2155103c8e25",
+          "author_date": "2024-09-20T14:14:04Z",
+          "message": "chore(codespell): tell codespell to ignore `rust/iced-client/target` (#6785)\n\nAlso put the `/rust` skips together\n\nI overlooked this in the previous PR because I committed everything\nbefore my new VM had codespell set up",
+          "html_url": "https://github.com/firezone/firezone/commit/990119b0f16bd62ad3b8051fad6b2155103c8e25"
+        },
+        {
+          "sha": "c53d1abab32dcac5e81603c184ba3da03ed5d916",
+          "author_date": "2024-09-20T14:14:14Z",
+          "message": "fix(client/linux): bump `atomicwrites` to fix behavior on ZFS (#6780)\n\nCloses #6704",
+          "html_url": "https://github.com/firezone/firezone/commit/c53d1abab32dcac5e81603c184ba3da03ed5d916"
+        },
+        {
+          "sha": "7470bfda9a31116fafd3d02af137640981567138",
+          "author_date": "2024-09-20T16:00:16Z",
+          "message": "chore(infra): Add Microsoft TXT verification record (#6771)\n\nNeeded to use firezone.dev for 365 account.",
+          "html_url": "https://github.com/firezone/firezone/commit/7470bfda9a31116fafd3d02af137640981567138"
+        },
+        {
+          "sha": "d69788fde67e0f8a6208bab1877ba531ea5910af",
+          "author_date": "2024-09-20T20:22:44Z",
+          "message": "fix(portal): Throttle reqs/sec and scheduled frequency on Okta sync jobs (#6794)\n\nWhy:\n\n* Our current Okta sync job has no throttle, which has caused an issue\nwith customers that have other applications hitting their Okta API by\ngoing over their API rate limits. By throttling the requests per second\nand by lowering the frequency of how often the job runs we should\nhopefully aleviate any Okta API rate limiting issues. This will come at\nthe expense of syncs taking longer and not happening as often, however,\nthis tradeoff seems worthwhile to ensure Firezone isn't hindering a\ncustomers use of their Okta API.\n\nCloses: #6748\n\n---------\n\nSigned-off-by: Brian Manifold <bmanifold@users.noreply.github.com>\nCo-authored-by: Jamil <jamilbk@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/d69788fde67e0f8a6208bab1877ba531ea5910af"
+        },
+        {
+          "sha": "4c6a64defe2e2c6c7159159bf57bc5488b9a4d8d",
+          "author_date": "2024-09-20T20:50:54Z",
+          "message": "fix(portal): Fix order of desc and name (#6796)\n\nUpdated to match the precedent set by `new`",
+          "html_url": "https://github.com/firezone/firezone/commit/4c6a64defe2e2c6c7159159bf57bc5488b9a4d8d"
+        },
+        {
+          "sha": "be058fdd9645d6c8b081ee4da98f1e3a7f7e58b6",
+          "author_date": "2024-09-23T14:06:26Z",
+          "message": "test(rust/gui-client/auth): manual test for auto-sign-in with invalid token (#6792)\n\nSynthetic replication for #6791.\n\nThe diff for the fix will probably be short, so I wanted this diff for\nthe test to be reviewed separately.\n\nIn your normal terminal: `cargo build -p firezone-gui-client -p\ngui-smoke-test`\n\nWith sudo / admin powers: `./target/debug/gui-smoke-test.exe\n--manual-tests`\n\nSome customers _must_ have hit this, it's so easy to trigger.\n\nI can't add it to the CI smoke test because there's no portal in CI\nduring the smoke test, unless we use Staging.",
+          "html_url": "https://github.com/firezone/firezone/commit/be058fdd9645d6c8b081ee4da98f1e3a7f7e58b6"
+        },
+        {
+          "sha": "f4554d2795a9b5b5b61497e26b6c9397af7e49b0",
+          "author_date": "2024-09-23T19:30:48Z",
+          "message": "fix(portal): Update IDP sync error notification threshold (#6797)\n\nWhy:\n\n* Instead of sending a notification to users when an identity provider\nin their account fails to sync 1 time, we've now decided to wait until\nthe sync failures have reached 10 times to account for various anomalies\nthat might occur with any given identity providers API.",
+          "html_url": "https://github.com/firezone/firezone/commit/f4554d2795a9b5b5b61497e26b6c9397af7e49b0"
+        },
+        {
+          "sha": "86910f477dc1a3b3d07349d045446094a98ca168",
+          "author_date": "2024-09-24T14:13:01Z",
+          "message": "fix(rust/gui-client/auth): destroy the connlib session on disconnect (#6795)\n\nCloses #6791\n\nWe weren't closing the connlib session immediately when we get\n`on_disconnect`, this patch fixes that.\n\nThis passes the manual test established in #6792. I also cycled through\nsign-in, close, open, sign-out, and it looks fine.\n\n---------\n\nSigned-off-by: Reactor Scram <ReactorScram@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/86910f477dc1a3b3d07349d045446094a98ca168"
+        },
+        {
+          "sha": "fec6cc9923d5c8351a86167c1ba4258a54bbfee1",
+          "author_date": "2024-09-24T14:22:12Z",
+          "message": "build(deps): Bump clap from 4.5.4 to 4.5.13 in /rust (#6800)\n\nBumps [clap](https://github.com/clap-rs/clap) from 4.5.4 to 4.5.13.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/clap-rs/clap/releases\">clap's\nreleases</a>.</em></p>\n<blockquote>\n<h2>v4.5.13</h2>\n<h2>[4.5.13] - 2024-07-31</h2>\n<h3>Fixes</h3>\n<ul>\n<li><em>(derive)</em> Improve error message when\n<code>#[flatten]</code>ing an optional <code>#[group(skip)]</code></li>\n<li><em>(help)</em> Properly wrap long subcommand descriptions in\nhelp</li>\n</ul>\n<h2>v4.5.12</h2>\n<h2>[4.5.12] - 2024-07-31</h2>\n<h2>v4.5.10</h2>\n<h2>[4.5.10] - 2024-07-23</h2>\n<h2>v4.5.9</h2>\n<h2>[4.5.9] - 2024-07-09</h2>\n<h3>Fixes</h3>\n<ul>\n<li><em>(error)</em> When defining a custom help flag, be sure to\nsuggest it like we do the built-in one</li>\n</ul>\n<h2>v4.5.8</h2>\n<h2>[4.5.8] - 2024-06-28</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Reduce extra flushes</li>\n</ul>\n<h2>v4.5.7</h2>\n<h2>[4.5.7] - 2024-06-10</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Clean up error message when too few arguments for\n<code>num_args</code></li>\n</ul>\n<h2>v4.5.6</h2>\n<h2>[4.5.6] - 2024-06-06</h2>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/clap-rs/clap/blob/master/CHANGELOG.md\">clap's\nchangelog</a>.</em></p>\n<blockquote>\n<h2>[4.5.13] - 2024-07-31</h2>\n<h3>Fixes</h3>\n<ul>\n<li><em>(derive)</em> Improve error message when\n<code>#[flatten]</code>ing an optional <code>#[group(skip)]</code></li>\n<li><em>(help)</em> Properly wrap long subcommand descriptions in\nhelp</li>\n</ul>\n<h2>[4.5.12] - 2024-07-31</h2>\n<h2>[4.5.11] - 2024-07-25</h2>\n<h2>[4.5.10] - 2024-07-23</h2>\n<h2>[4.5.9] - 2024-07-09</h2>\n<h3>Fixes</h3>\n<ul>\n<li><em>(error)</em> When defining a custom help flag, be sure to\nsuggest it like we do the built-in one</li>\n</ul>\n<h2>[4.5.8] - 2024-06-28</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Reduce extra flushes</li>\n</ul>\n<h2>[4.5.7] - 2024-06-10</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Clean up error message when too few arguments for\n<code>num_args</code></li>\n</ul>\n<h2>[4.5.6] - 2024-06-06</h2>\n<h2>[4.5.5] - 2024-06-06</h2>\n<h3>Fixes</h3>\n<ul>\n<li>Allow <code>exclusive</code> to override\n<code>required_unless_present</code>,\n<code>required_unless_present_any</code>,\n<code>required_unless_present_all</code></li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/d222ae4cb62d08b4d8f635aa80ddb3c880b82e6e\"><code>d222ae4</code></a>\nchore: Release</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/a8abcb40c5f2628bfa671adf61a090a1bbfbcfa2\"><code>a8abcb4</code></a>\ndocs: Update changelog</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/2690e1bdb19df3e4dde7a50fc33b14a3bf6f0b8a\"><code>2690e1b</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/clap-rs/clap/issues/5621\">#5621</a>\nfrom shannmu/dynamic_valuehint</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/7fd7b3e40bd835070253432accf4076bb020beda\"><code>7fd7b3e</code></a>\nfeat(clap_complete): Support to complete custom value of argument</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/fc6aaca52b42d0e4ae13805e7480cbb05f63a0ca\"><code>fc6aaca</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/clap-rs/clap/issues/5638\">#5638</a>\nfrom epage/cargo</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/631e54bc715ed2fa53d8457dc273a25b92d3b354\"><code>631e54b</code></a>\ndocs(cookbook): Style cargo plugin</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/6fb49d08bb2acfbc2f2aa5f717ccd4a4018ca872\"><code>6fb49d0</code></a>\nMerge pull request <a\nhref=\"https://redirect.github.com/clap-rs/clap/issues/5636\">#5636</a>\nfrom gibfahn/styles_const</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/6f215eee98c4f73099b0ede2ac62ba019ada24ce\"><code>6f215ee</code></a>\nrefactor(styles): make styles example use a const</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/bbb2e6fdde1c724e39c2f2616332310252c12ab8\"><code>bbb2e6f</code></a>\ntest: Add test case for completing custom value of argument</li>\n<li><a\nhref=\"https://github.com/clap-rs/clap/commit/999071c46dca0367d93f66ecd97b2e3507963284\"><code>999071c</code></a>\nfix: Change <code>visible</code> to <code>hidden</code></li>\n<li>Additional commits viewable in <a\nhref=\"https://github.com/clap-rs/clap/compare/clap_complete-v4.5.4...clap_complete-v4.5.13\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=clap&package-manager=cargo&previous-version=4.5.4&new-version=4.5.13)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't\nalter it yourself. You can also trigger a rebase manually by commenting\n`@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits\nthat have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after\nyour CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge\nand block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating\nit. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all\nof the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop\nDependabot creating any more for this major version (unless you reopen\nthe PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop\nDependabot creating any more for this minor version (unless you reopen\nthe PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop\nDependabot creating any more for this dependency (unless you reopen the\nPR or upgrade to it yourself)\n\n\n</details>\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Reactor Scram <ReactorScram@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/fec6cc9923d5c8351a86167c1ba4258a54bbfee1"
+        },
+        {
+          "sha": "081c4471136b5104dc79cda8e64a3f51c9ed37fa",
+          "author_date": "2024-09-24T14:28:10Z",
+          "message": "build(deps): Bump tauri-runtime from 0.14.4 to 0.14.5 in /rust (#6799)\n\nBumps [tauri-runtime](https://github.com/tauri-apps/tauri) from 0.14.4\nto 0.14.5.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/tauri-apps/tauri/releases\">tauri-runtime's\nreleases</a>.</em></p>\n<blockquote>\n<h2>tauri-runtime v0.14.5</h2>\n<p>Updating crates.io index\nLocking 595 packages to latest compatible versions\nAdding addr2line v0.22.0 (latest: v0.24.1)\nAdding atk v0.15.1 (latest: v0.18.0)\nAdding atk-sys v0.15.1 (latest: v0.18.0)\nAdding base64 v0.13.1 (latest: v0.22.1)\nAdding base64 v0.21.7 (latest: v0.22.1)\nAdding bit-set v0.5.3 (latest: v0.8.0)\nAdding bit-vec v0.6.3 (latest: v0.8.0)\nAdding bitflags v1.3.2 (latest: v2.6.0)\nAdding cairo-rs v0.15.12 (latest: v0.20.1)\nAdding cairo-sys-rs v0.15.1 (latest: v0.20.0)\nAdding cargo_toml v0.15.3 (latest: v0.20.4)\nAdding cfb v0.7.3 (latest: v0.10.0)\nAdding cfg-expr v0.9.1 (latest: v0.16.0)\nAdding cfg-expr v0.15.8 (latest: v0.16.0)\nAdding cfg_aliases v0.1.1 (latest: v0.2.1)\nAdding clap v3.2.25 (latest: v4.5.16)\nAdding clap_lex v0.2.4 (latest: v0.7.2)\nAdding cocoa v0.24.1 (latest: v0.26.0)\nAdding cocoa-foundation v0.1.2 (latest: v0.2.0)\nAdding convert_case v0.4.0 (latest: v0.6.0)\nAdding core-foundation v0.9.4 (latest: v0.10.0)\nAdding core-graphics v0.22.3 (latest: v0.24.0)\nAdding core-graphics v0.23.2 (latest: v0.24.0)\nAdding core-graphics-types v0.1.3 (latest: v0.2.0)\nAdding cssparser v0.27.2 (latest: v0.34.0)\nAdding derive_more v0.99.18 (latest: v1.0.0)\nAdding env_logger v0.8.4 (latest: v0.11.5)\nAdding fixedbitset v0.4.2 (latest: v0.5.7)\nAdding fluent-uri v0.1.4 (latest: v0.2.0)\nAdding foreign-types v0.3.2 (latest: v0.5.0)\nAdding foreign-types-shared v0.1.1 (latest: v0.3.1)\nAdding freetype-sys v0.20.1 (latest: v0.22.0)\nAdding gdk v0.15.4 (latest: v0.18.0)\nAdding gdk-pixbuf v0.15.11 (latest: v0.20.1)\nAdding gdk-pixbuf-sys v0.15.10 (latest: v0.20.1)\nAdding gdk-sys v0.15.1 (latest: v0.18.0)\nAdding gdkwayland-sys v0.15.3 (latest: v0.18.0)\nAdding gdkx11-sys v0.15.1 (latest: v0.18.0)\nAdding generator v0.7.5 (latest: v0.8.2)\nAdding generic-array v0.14.7 (latest: v1.1.0)\nAdding gethostname v0.4.3 (latest: v0.5.0)\nAdding getrandom v0.1.16 (latest: v0.2.15)\nAdding gimli v0.29.0 (latest: v0.31.0)\nAdding gio v0.15.12 (latest: v0.20.1)\nAdding gio-sys v0.15.10 (latest: v0.20.1)\nAdding glib v0.15.12 (latest: v0.20.1)\nAdding glib-macros v0.15.13 (latest: v0.20.1)</p>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/1f45808ba0fa2a0bbd4a3a160a14a61fcb9b1df9\"><code>1f45808</code></a>\nApply Version Updates From Current Changes (v1) (<a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/10220\">#10220</a>)</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/9082a396043547f0daab4dd096b9a6d95813a036\"><code>9082a39</code></a>\nfix(cli): env_logger usage</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/d84ae448e5dfcdcead0d219e2ace8426a5527baf\"><code>d84ae44</code></a>\nfix(cli): downgrade env_logger to 0.10 to satisfy MSRV, fix CI</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/3e1c28b90cc940a4f7a270a7e8cdc95ff8e023de\"><code>3e1c28b</code></a>\nchore(deps) Update dependency <code>@​types/node</code> to v20.16.1 (<a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/10722\">#10722</a>)</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/2b61447dfc167ec11724f99671bf9e2de0bf6768\"><code>2b61447</code></a>\nchore(deps) Update Rust crate proc-macro2 to v1.0.86 (<a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/10621\">#10621</a>)</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/0469b6b0784c93cb2085966d704e03d4d5c2031f\"><code>0469b6b</code></a>\nchore(deps) Update Tauri API Definitions (1.x) (<a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/10622\">#10622</a>)</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/3b841f28bb53ad4d2401207c2a837ae6944388c8\"><code>3b841f2</code></a>\nchore(deps) Update Tauri CLI (1.x) (<a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/10628\">#10628</a>)</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/c3a90e5c274cf840124bf380fa49c73190d0f286\"><code>c3a90e5</code></a>\nfix(tauri-runtime-wry): ensure tray is created when event loop ready (<a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/10611\">#10611</a>)</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/937849f28cf5c21739501058a159752262bb1fd2\"><code>937849f</code></a>\nrefactor(tauri-runtime-wry): Arc instead of Rc, closes <a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/9775\">#9775</a>\n(<a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/10587\">#10587</a>)</li>\n<li><a\nhref=\"https://github.com/tauri-apps/tauri/commit/48a7415c21d3f7634948558215dbfe4d1cc0460e\"><code>48a7415</code></a>\nchore(deps): update serialize-to-javascript to 0.1.2 (<a\nhref=\"https://redirect.github.com/tauri-apps/tauri/issues/10594\">#10594</a>)</li>\n<li>Additional commits viewable in <a\nhref=\"https://github.com/tauri-apps/tauri/compare/tauri-runtime-v0.14.4...tauri-runtime-v0.14.5\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tauri-runtime&package-manager=cargo&previous-version=0.14.4&new-version=0.14.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't\nalter it yourself. You can also trigger a rebase manually by commenting\n`@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits\nthat have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after\nyour CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge\nand block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating\nit. You can achieve the same result by closing it manually\n- `@dependabot show <dependency name> ignore conditions` will show all\nof the ignore conditions of the specified dependency\n- `@dependabot ignore this major version` will close this PR and stop\nDependabot creating any more for this major version (unless you reopen\nthe PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop\nDependabot creating any more for this minor version (unless you reopen\nthe PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop\nDependabot creating any more for this dependency (unless you reopen the\nPR or upgrade to it yourself)\n\n\n</details>\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Reactor Scram <ReactorScram@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/081c4471136b5104dc79cda8e64a3f51c9ed37fa"
+        },
+        {
+          "sha": "6c61c6ffcb422f855e4b034f3aaa270507ad962c",
+          "author_date": "2024-09-25T15:31:56Z",
+          "message": "chore(kotlin/android): add TODO comment (#6813)\n\nSigned-off-by: Reactor Scram <ReactorScram@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/6c61c6ffcb422f855e4b034f3aaa270507ad962c"
+        },
+        {
+          "sha": "f2d8b0f7e36ff0040d6a8fe66baaac812164bc2d",
+          "author_date": "2024-09-25T16:06:36Z",
+          "message": "docs(maintainers): suggest always keeping a draft entry open (#6790)\n\nThis reduces merge conflicts when 2 PRs both want to make the first\nchange to a draft entry\n\nSigned-off-by: Reactor Scram <ReactorScram@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/f2d8b0f7e36ff0040d6a8fe66baaac812164bc2d"
+        },
+        {
+          "sha": "bb2dd81ac6b1ea57eeb85127aa7789e08b9ba9af",
+          "author_date": "2024-09-25T16:21:30Z",
+          "message": "refactor(android): Fix Kotlin compile warnings (#6773)\n\nSomehow these snuck in. I would turn on warnings-as-errors but we are\nusing deprecated functions that don't have good replacements.",
+          "html_url": "https://github.com/firezone/firezone/commit/bb2dd81ac6b1ea57eeb85127aa7789e08b9ba9af"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "headless-client-1.3.2",
@@ -6511,8 +6682,8 @@
     {
       "release": "android-client-1.4.5",
       "previous_release": "macos-client-1.4.7",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [],
+      "ignored_reason": null
     },
     {
       "release": "headless-client-1.4.5",
@@ -7153,8 +7324,153 @@
     {
       "release": "apple-client-1.5.20",
       "previous_release": "android-client-1.5.14",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d69e44ecbc31c8b9e96bc216399feff8c36d324f",
+          "author_date": "2026-09-07T05:26:41Z",
+          "message": "fix(ci): select store screenshots from the submission commit (#15137)\n\nUse screenshot manifests from the commit that started the Apple or\nAndroid submission workflow, while retaining image files from the draft\nbuild commit. This allows changing the store screenshot selection\nwithout rebuilding an already-tested app.\n\nAndroid preparation and submission restore the same manifest, so the\nupload selection matches the approval summary. Missing images still fail\npreparation or submission.",
+          "html_url": "https://github.com/firezone/firezone/commit/d69e44ecbc31c8b9e96bc216399feff8c36d324f"
+        },
+        {
+          "sha": "dae7c388e3c28b03d65cfeae40d0c0a5ad03f611",
+          "author_date": "2026-09-07T05:33:56Z",
+          "message": "build(deps): bump jsonschema from 0.51.0 to 0.52.0 in /rust (#15111)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/dae7c388e3c28b03d65cfeae40d0c0a5ad03f611"
+        },
+        {
+          "sha": "c18bf319c77de9665eb9995e140403548573fb5d",
+          "author_date": "2026-09-07T05:34:13Z",
+          "message": "build(deps): bump lru from 0.18.2 to 0.18.4 in /rust (#15102)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/c18bf319c77de9665eb9995e140403548573fb5d"
+        },
+        {
+          "sha": "6f8a342f65011ee7e00d67d88e27eace3a0dec8e",
+          "author_date": "2026-09-07T05:34:17Z",
+          "message": "build(deps): bump toml from 1.1.4+spec-1.1.0 to 1.1.5+spec-1.1.0 in /rust (#15099)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/6f8a342f65011ee7e00d67d88e27eace3a0dec8e"
+        },
+        {
+          "sha": "00324165e05b6c81e03784d8d44a9ae50b8c0b60",
+          "author_date": "2026-09-07T05:34:21Z",
+          "message": "build(deps): bump mio from 1.2.2 to 1.2.3 in /rust (#15093)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/00324165e05b6c81e03784d8d44a9ae50b8c0b60"
+        },
+        {
+          "sha": "fadea5fdecbbc0b0305b52857bc0b2d5c3122f96",
+          "author_date": "2026-09-07T05:34:25Z",
+          "message": "build(deps): bump uuid from 1.25.0 to 1.26.0 in /rust (#15090)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/fadea5fdecbbc0b0305b52857bc0b2d5c3122f96"
+        },
+        {
+          "sha": "3279124acee52943162e00a9053aad8d7a66c572",
+          "author_date": "2026-09-07T05:49:33Z",
+          "message": "fix(apple): refresh store screenshot selection and sizes (#15138)\n\nRemove obsolete iPhone and iPad screenshots after uploading their\nreplacements so Apple scales the maintained sizes instead of retaining\nstale size-specific images. Cleanup is limited to the prepared iOS\nversion and English (US) localization; app previews are unchanged.\n\nPut sign-in, the resource list, and resource details first in the iPhone\nand iPad store selection, and remove the account pop-over screenshot.",
+          "html_url": "https://github.com/firezone/firezone/commit/3279124acee52943162e00a9053aad8d7a66c572"
+        },
+        {
+          "sha": "c62bfb4894e712995de467639e8c537546946008",
+          "author_date": "2026-09-07T05:51:01Z",
+          "message": "fix(android): use the Intune track name for submissions (#15139)\n\nUse `Intune` as the Google Play API track name instead of the numeric\nPlay Console identifier, which returns a track-not-found error.\n\nLoad the upload script and screenshot selection from the submission\ncommit in both preparation and submission. This lets workflow fixes\napply to an existing draft without rebuilding it, while screenshot\ncontent and the release artifact remain tied to the draft build.",
+          "html_url": "https://github.com/firezone/firezone/commit/c62bfb4894e712995de467639e8c537546946008"
+        },
+        {
+          "sha": "5ba374407d20faeef5503bf8e423ca4d780f9edf",
+          "author_date": "2026-09-07T06:05:01Z",
+          "message": "build(deps): bump rcgen from 0.14.9 to 0.14.10 in /rust (#15107)\n\nBumps [rcgen](https://github.com/rustls/rcgen) from 0.14.9 to 0.14.10.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a\nhref=\"https://github.com/rustls/rcgen/releases\">rcgen's\nreleases</a>.</em></p>\n<blockquote>\n<h2>0.14.10</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Spec compliance bug fixes by <a\nhref=\"https://github.com/cpu\"><code>@​cpu</code></a> in <a\nhref=\"https://redirect.github.com/rustls/rcgen/pull/445\">rustls/rcgen#445</a></li>\n<li>Take advantage of stable ML-DSA in aws-lc-rs by <a\nhref=\"https://github.com/djc\"><code>@​djc</code></a> in <a\nhref=\"https://redirect.github.com/rustls/rcgen/pull/447\">rustls/rcgen#447</a></li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/f4a3b165c467c070d5c74b86acc2c3f0a0be10ab\"><code>f4a3b16</code></a>\nBump version to 0.14.10</li>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/dea3d4d4e39a5c6b5d28ec72d62f4f6f3a7a5e21\"><code>dea3d4d</code></a>\nUpgrade to botan 0.13</li>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/788b093aaac16013abf2a72a8615efd4e9dfe021\"><code>788b093</code></a>\nUpgrade to pem 4</li>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/7ce21f4f0aa25d6c7d625ad22494a54285c5a554\"><code>7ce21f4</code></a>\nTake advantage of stable ML-DSA in aws-lc-rs</li>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/e2dba45e6f47c4c765dc55f41a1a5c39d90778a0\"><code>e2dba45</code></a>\nRemove unused RSASSA-PSS signature algorithm</li>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/37070de9c421d5289f5b8d948bd049fc8bc7980a\"><code>37070de</code></a>\nOmit reasonCode unspecified(0) from CRL entry extensions</li>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/b247a87ecb116f83f371335e75072e7b7828d2f9\"><code>b247a87</code></a>\nWrite extensions for certs that only set KeyUsage or CRLDP</li>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/85eafdd23a37f0a6fb2981860cf9abd2be204a85\"><code>85eafdd</code></a>\nReject empty CRL distribution point URIs</li>\n<li><a\nhref=\"https://github.com/rustls/rcgen/commit/3a99b505659fc867955c23b4bd282637b8f54e28\"><code>3a99b50</code></a>\nEncode CRL invalidityDate as GeneralizedTime</li>\n<li>See full diff in <a\nhref=\"https://github.com/rustls/rcgen/compare/v/0.14.9...v0.14.10\">compare\nview</a></li>\n</ul>\n</details>\n<br />\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/5ba374407d20faeef5503bf8e423ca4d780f9edf"
+        },
+        {
+          "sha": "e4b056856878ad8752afa2e33d44f81ed9e33048",
+          "author_date": "2026-09-07T06:19:59Z",
+          "message": "fix(android): update store assets only for production (#15140)\n\nKeep the shared Google Play listing unchanged when promoting a release\nto the Intune closed testing track. Only production submissions replace\nscreenshots and upload the app icon, using assets from the draft build.\nThe approval summary shows which listing assets will change.",
+          "html_url": "https://github.com/firezone/firezone/commit/e4b056856878ad8752afa2e33d44f81ed9e33048"
+        },
+        {
+          "sha": "587678d74f3bb444489fe1d15ea9de5943b2b3fd",
+          "author_date": "2026-09-07T06:08:49Z",
+          "message": "build(deps): bump tokio-rustls from 0.26.4 to 0.26.5 in /rust (#15105)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/587678d74f3bb444489fe1d15ea9de5943b2b3fd"
+        },
+        {
+          "sha": "aac07260f537dc38877ff6c312d878ee53b2de5b",
+          "author_date": "2026-09-07T11:57:31Z",
+          "message": "fix(portal): preserve conn state on request body errors (#15127)\n\nMalformed or oversized request bodies can discard the connection\nreturned by `read_body`, causing error responses to raise Bandit's\nstale-connection exception. This affects flow-log ingestion's standard\nJSON parser and error branches in Entra, Stripe, and Azure Communication\nServices webhooks.\n\nUse the existing connection-preserving JSON parser for\n`/ingestion/flow_logs`, retaining its 10 MB limit and\nauthentication/rate limiting before parsing. Refactor webhook body reads\ninto `case` branches that pass the updated connection through validation\nand dispatch, including partial reads. Oversized Stripe bodies now\nreturn 413.\n\nRegression tests reproduce the reported HTTP/2 stack before the fix and\npass afterward. They cover malformed and oversized bodies, the 10 MB\nboundary, authentication ordering, webhook errors, read failures, and\nsubsequent requests on the same connection. All 126 focused tests pass.\n\n---\n\nRelated: #15123",
+          "html_url": "https://github.com/firezone/firezone/commit/aac07260f537dc38877ff6c312d878ee53b2de5b"
+        },
+        {
+          "sha": "9b340495ab7062f8fa8038276426437729a60e27",
+          "author_date": "2026-09-07T11:58:26Z",
+          "message": "fix(portal): return valid provisioned gateway token (#15142)\n\n- return the already encoded gateway token from the REST gateway\nprovisioning endpoint instead of re-encoding a struct whose virtual\nsecret fragment has been scrubbed\n- reject signed credentials with malformed secret fields as\n`:invalid_token` instead of raising during binary construction\n- add regressions that authenticate tokens emitted by both REST API and\nWeb UI gateway provisioning paths",
+          "html_url": "https://github.com/firezone/firezone/commit/9b340495ab7062f8fa8038276426437729a60e27"
+        },
+        {
+          "sha": "b5b7567b0787388c4c8563ee12f9e70da644ab72",
+          "author_date": "2026-09-07T11:59:13Z",
+          "message": "fix(android): report the user's device name to the portal (#15124)\n\nIt looks like we can report the Android device name to the portal using\nthe more identifiable and expect \"DEVICE_NAME\" key. This is used to (a)\nbetter support the use case of accessing your own devices and (b) to\nmake the device more identifiable to admins for posture conditions.\n\n---\n\nRelated: #15125",
+          "html_url": "https://github.com/firezone/firezone/commit/b5b7567b0787388c4c8563ee12f9e70da644ab72"
+        },
+        {
+          "sha": "ce600637deac2be461487ecc2d4a8fbfe50da0d9",
+          "author_date": "2026-09-07T12:28:23Z",
+          "message": "build(deps): bump oban_web from 2.12.6 to 2.12.7 in /elixir (#15077)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/ce600637deac2be461487ecc2d4a8fbfe50da0d9"
+        },
+        {
+          "sha": "09a252dcce92645a409f5cb25557d92c4decac34",
+          "author_date": "2026-09-07T15:08:42Z",
+          "message": "fix(portal): serialize directory sync jobs without a lock (#15067)\n\nThe directory lock added in #15041 kept one job pool connection checked\nout for the whole sync. DBConnection closed that connection at its\ncheckout deadline, so every longer sync failed and then crashed again on\nunlock. Behind PgBouncer the session lock also stuck to a random server\nconnection and was never released.\n\nJobs for one directory now take turns without a lock. Each full sync or\nwebhook job first asks whether another job for its directory is\nexecuting and young enough that its process may still be alive, and\nsnoozes with a jittered delay if so. Oban kills a job at its timeout, so\nan older executing row is dead, and a node that shuts down re-queues the\nrows of the jobs Oban killed on the way out, so a deploy does not leave\ndirectories waiting. Leaving the cluster does not count, because a\ndisconnected node can still reach the database. Oban commits a job to\nexecuting before it runs, so two jobs for one directory can never both\npass that check. Every job re-reads the provider when it runs, so a\nchange that arrives during a full sync is applied by a fresh read after\nthe sync finishes, and nothing is held across a sync.\n\nFull syncs time out after 100 minutes and webhook jobs after 30 minutes,\nunder Lifeline's 120 minute rescue, so a job that overruns fails loudly\ninstead of running twice. A timeout is reported to Sentry only; it is\nnot recorded on the directory, because it is not something an admin can\nfix. While a job for a directory is executing, the webhook endpoints\nalso queue notifications for users and groups the directory does not\nknow yet, because the running job may still insert them from a response\nfetched before the change.\n\nEvery Entra notification is a ping, deletions included: the worker\nalways re-reads the object, so a queued deletion that Graph has since\nundone refreshes the object instead. Entra group members are now read by\nwalking the direct members of a group and of every group nested in it,\nthe way the Google sync already does. The transitive reads that Graph\nserves from its eventual-consistency index are gone, so a change is\nvisible as soon as Graph knows it, each group is read once per full sync\nhowever many groups nest it, and each tracked group records the groups\nthe walk passed through, under an index that serves both lookups on that\nnesting. Group notifications become jobs only for tracked groups and the\ngroups nested in them, so a change to an untracked nested group resyncs\nthe tracked groups that recorded it, and a group Graph no longer returns\nresyncs exactly those parents. A group's walk writes nothing until it is\ncomplete: then its memberships, its nesting, and the pruning of the\nmemberships it did not find commit together, so a walk that fails\npartway grants nothing and a crash cannot leave a parent that has\nforgotten a child whose stale members it still holds. A nested group\nthat is deleted while the walk runs used to fail the whole sync and\ndisable the directory; it now counts as empty, whichever page the 404\narrives on, and stays in the parent's nesting until the next read. Each\nroot writes its users in a few bounded batches instead of one statement\nper nested group, and one webhook job reads each group once however many\nparents it resyncs. Removing an identity with its memberships and actor\nis one transaction that locks the actor first, the order an actor\ndeletion takes, so the two cannot deadlock, and it only removes that one\nactor.\n\nRelated: #15041",
+          "html_url": "https://github.com/firezone/firezone/commit/09a252dcce92645a409f5cb25557d92c4decac34"
+        },
+        {
+          "sha": "11d3316bf58db1b2ef36005a2563104790d21a48",
+          "author_date": "2026-09-07T16:22:48Z",
+          "message": "fix(portal): render errors with the conn after a body read (#15147)\n\nStripe webhooks were still failing with Bandit's \"Stale conn\" error\nafter #15127. That PR fixed the controllers' own error branches, but not\nexceptions. Phoenix renders an exception with the conn it held before\nthe failing action or plug ran. After a body read that conn is stale,\nBandit refuses to send on it, and the client got a bare 500 while the\noriginal exception was never logged.\n\nThe same problem existed in three places: the four webhook controllers,\nthe API pipeline plugs that ran after the body parser, and the stock\nPlug parsers in the web and ops endpoints, which turned a malformed or\noversized body into a bare 500 instead of a 400 or 413.\n\nEvery error path now carries the post-read conn. The webhook controllers\nrun their post-read work through a small wrapper, the API pipeline\nparses the body last, and the web and ops endpoints use conn-preserving\nform and JSON parsers. Multipart parsing is dropped from those endpoints\nbecause nothing posts multipart forms and Plug's multipart parser cannot\nbe wrapped.\n\nTests now run the real endpoints over a Bandit socket, which is the only\nway to catch this. They cover a handler raising after the body read for\neach webhook, and malformed and oversized bodies for the web and ops\nendpoints.\n\nRelated: #15123, #15127",
+          "html_url": "https://github.com/firezone/firezone/commit/11d3316bf58db1b2ef36005a2563104790d21a48"
+        },
+        {
+          "sha": "6b4d5c985e2a043c45c6e2bb16db14672a043eb7",
+          "author_date": "2026-09-07T16:30:48Z",
+          "message": "fix(portal): name the directory sync column Last Full Sync (#15148)\n\nThe directory sync table called its time column Last Synced. Since\nwebhooks now apply changes between syncs, that time is the last full\nsync, and the column now says so.\n\nRelated: #15067",
+          "html_url": "https://github.com/firezone/firezone/commit/6b4d5c985e2a043c45c6e2bb16db14672a043eb7"
+        },
+        {
+          "sha": "7a90eca8faefea193b142d0c012b08c7eb5c4f2b",
+          "author_date": "2026-09-07T16:30:58Z",
+          "message": "fix(portal): keep a synced actor's name and email current (#15146)\n\nWhen directory sync met a user for the first time it created an actor\nwith the user's name and email, and it deleted that actor again once the\nuser's last identity was gone. It never updated the actor in between.\nEvery later sync and webhook refreshed the identity, so a user whose\nname or email changed in the provider kept the old values on the actors\nlist, in welcome mail, and for email sign-in, while the identity panel\non the same page showed the new ones.\n\nThe identity upsert now keeps the name and email of the actor the\ndirectory created in line with what it just read, every time it writes\nthat user's identity, so a full sync or a webhook that learns of a\nchange applies it to both, and an actor that fell behind before this\nchange is caught up by the next sync. An older sync can no more move an\nactor back than it can an identity. Actors an admin created keep their\nown name and email: the directory only links an identity to them. When\nthe new address already belongs to another actor in the account, the\nname still changes and the email stays, because the identity records the\nnew address either way and two actors cannot share one.\n\nEntra, Google, and Okta each carried the same identity upsert statement\nwith only the provider's profile column differing. The statement now\nlives once in the shared directory sync module and is generated from the\nfield list a provider passes in, which is why the actor update lands in\none place.\n\nRelated: #15067",
+          "html_url": "https://github.com/firezone/firezone/commit/7a90eca8faefea193b142d0c012b08c7eb5c4f2b"
+        },
+        {
+          "sha": "469683fdd0fac314774b0c5c8d725572dc3ccb5c",
+          "author_date": "2026-09-07T21:55:32Z",
+          "message": "chore(gui-client): serve the Apple mock scenario (#15143)\n\nThe mock tunnel now serves the same account, resources and connected\ndevices as the Apple client's `connected` mock scenario, so screenshots\nof every client show the same data. It also answers `Connect` with\n`ConnectedToPortal`, which the mock never sent before, so the tray shows\nthe signed-in state rather than waiting for the portal.\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/469683fdd0fac314774b0c5c8d725572dc3ccb5c"
+        },
+        {
+          "sha": "cb99fedc71b02770275675e380b92819e451b956",
+          "author_date": "2026-09-07T23:02:24Z",
+          "message": "chore(apple): collect MetricKit diagnostics (#15150)\n\nEnable MetricKit's system-provided hang, CPU, and disk-write diagnostics\nin the Apple UI app alongside existing app-hang tracking. This gives us\ncomparison data to validate MetricKit before retiring the legacy\ndetector.",
+          "html_url": "https://github.com/firezone/firezone/commit/cb99fedc71b02770275675e380b92819e451b956"
+        },
+        {
+          "sha": "c797062490a97285c221a7c16e55c7c8f93bd5af",
+          "author_date": "2026-09-07T23:08:56Z",
+          "message": "ci(apple): photograph the macOS menu bar menu (#15141)\n\nThe current gallery of screenshots for macOS includes only the main\nwindows but not the menu bar itself. Our previous App Store screenshots\nalso had one for the menu bar. In order to not regress that, this PR\nadds a screenshot of the menu bar with an expanded resource. It only\nruns on macOS 26. The rendering on macOS 15 is not byte-stable across\nseveral runs but looks almost identical. Plus, we only upload macOS 26\nscreenshots anyway.\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/c797062490a97285c221a7c16e55c7c8f93bd5af"
+        },
+        {
+          "sha": "c42aac1265487d9e17212f66b69c1df0fdffe2c1",
+          "author_date": "2026-09-07T23:11:44Z",
+          "message": "fix(gui-client): keep redirected stdout on console attach (#15116)\n\nWhen the GUI client is started with a redirected stdout, for instance\n`firezone list-resources | findstr foo`, `AttachConsole` replaced the\ninherited pipe with the console and the redirection broke. Redirected\nstdout is now left alone: the console is only attached when the process\nhas no usable stdout yet, so piping works and the plain terminal launch\nbehaves as before.\n\nRelated: #15071\nRelated: #15074\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/c42aac1265487d9e17212f66b69c1df0fdffe2c1"
+        },
+        {
+          "sha": "98aff8867ca0ed2426c6f6706a9dad2311c69eee",
+          "author_date": "2026-09-07T23:16:10Z",
+          "message": "refactor(gui-client): flatten and hide the command tree (#15152)\n\nThe client's commands sat in two levels, with the development-only ones\nbehind a `debug` namespace, and every one of them was advertised in\n`--help` even though `open-deep-link` is the only one anyone is meant to\ntype. They are one flat set now, and it is the only one still listed.\n\nRelated: #15074\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/firezone/firezone/commit/98aff8867ca0ed2426c6f6706a9dad2311c69eee"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "gui-client-1.5.18",

@@ -3324,8 +3324,21 @@
     {
       "release": "v5.1.1",
       "previous_release": "v5.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "0db010dd8871942d542ea7a756804cce5981b2f9",
+          "author_date": "2016-05-09T23:02:51Z",
+          "message": "Fix require-render-return crash (fixes #589)",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/0db010dd8871942d542ea7a756804cce5981b2f9"
+        },
+        {
+          "sha": "6affab36f5553d1d5f065dfaa9cdb04c9509dfaa",
+          "author_date": "2016-05-09T23:07:48Z",
+          "message": "Update CHANGELOG and bump version",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/6affab36f5553d1d5f065dfaa9cdb04c9509dfaa"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v5.2.0",
@@ -3402,8 +3415,75 @@
     {
       "release": "v6.2.1",
       "previous_release": "v6.2.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9f764599a537728e7ac9fa332d0ac6e3a6deb788",
+          "author_date": "2016-08-29T06:16:14Z",
+          "message": "[Docs] `prefer-stateless-function`: fix docs for `ignorePureComponents` option.\n\nPer https://github.com/yannickcr/eslint-plugin-react/pull/781/files#r76556839",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/9f764599a537728e7ac9fa332d0ac6e3a6deb788"
+        },
+        {
+          "sha": "fd06c063b32f433f93a4d1fad11575deb6a69d1d",
+          "author_date": "2016-08-30T19:38:23Z",
+          "message": "Fix readme link (#794)",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/fd06c063b32f433f93a4d1fad11575deb6a69d1d"
+        },
+        {
+          "sha": "36a4a406d5be556ae8f43c63daab96ec51cf9df3",
+          "author_date": "2016-09-09T05:50:03Z",
+          "message": "Add examples of correctly specified propTypes",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/36a4a406d5be556ae8f43c63daab96ec51cf9df3"
+        },
+        {
+          "sha": "7abd9e8606381cb482a0c10fc1ae4203d7ed9237",
+          "author_date": "2016-09-09T08:30:50Z",
+          "message": "Merge pull request #813 from AndiDog/patch-1\n\n[Docs] Add examples of correctly specified propTypes",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/7abd9e8606381cb482a0c10fc1ae4203d7ed9237"
+        },
+        {
+          "sha": "bb5b1df5a13ff504c4f241f3a4f674e99ed4043e",
+          "author_date": "2016-09-09T16:39:06Z",
+          "message": "Fix typo in no-unused-prop-types.md (#815)",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/bb5b1df5a13ff504c4f241f3a4f674e99ed4043e"
+        },
+        {
+          "sha": "79b56b49857f213235ece5356b95171e3b305334",
+          "author_date": "2016-09-12T22:06:37Z",
+          "message": "Fix false positive in no-unused-prop-types (fixes #801)",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/79b56b49857f213235ece5356b95171e3b305334"
+        },
+        {
+          "sha": "ffd8ea77d103cf981fe1086deabf449bd5ffdfc1",
+          "author_date": "2016-09-12T22:09:43Z",
+          "message": "Fix jsx-no-target-blank to target only anchor elements",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/ffd8ea77d103cf981fe1086deabf449bd5ffdfc1"
+        },
+        {
+          "sha": "329135873ceb928860e46871be418ace4d7dd8ab",
+          "author_date": "2016-09-12T22:41:34Z",
+          "message": "Use ESLint markVariableAsUsed method instead of our (now useless) custom one (fixes #799)",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/329135873ceb928860e46871be418ace4d7dd8ab"
+        },
+        {
+          "sha": "fa99e13629c025d46220d0b57fecbe5823320f4f",
+          "author_date": "2016-09-12T22:46:41Z",
+          "message": "Fix no-target-blank to be case insensitive",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/fa99e13629c025d46220d0b57fecbe5823320f4f"
+        },
+        {
+          "sha": "d75dc089a915e39286d9420639d07edb4df278f8",
+          "author_date": "2016-09-12T23:11:30Z",
+          "message": "Update dependencies",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/d75dc089a915e39286d9420639d07edb4df278f8"
+        },
+        {
+          "sha": "0de2a9e9c75a13af1415efa3d2566b6ac28e5b7d",
+          "author_date": "2016-09-12T23:12:25Z",
+          "message": "Update CHANGELOG and bump version",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/0de2a9e9c75a13af1415efa3d2566b6ac28e5b7d"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v6.2.2",
@@ -3582,8 +3662,183 @@
     {
       "release": "v7.7.0",
       "previous_release": "v7.6.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "3194de2fdb24d8aa7f858a62cf95b36172a75b88",
+          "author_date": "2017-12-15T23:40:06Z",
+          "message": "Exclude references to this.state in setState callback",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/3194de2fdb24d8aa7f858a62cf95b36172a75b88"
+        },
+        {
+          "sha": "af6cb319a578b78c21b8e5a03f6a80c6d1d41961",
+          "author_date": "2017-12-15T23:42:07Z",
+          "message": "Fix typo in comment",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/af6cb319a578b78c21b8e5a03f6a80c6d1d41961"
+        },
+        {
+          "sha": "7443a37fff3d2cfc77d9c4379e19bb0bc8266800",
+          "author_date": "2018-01-23T21:56:58Z",
+          "message": "[New] `forbid-foreign-prop-types`: Add `allowInPropTypes` option\n\nFixes #1647.",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/7443a37fff3d2cfc77d9c4379e19bb0bc8266800"
+        },
+        {
+          "sha": "cfd3959ff8e3b11262b0006dff28d0c957b282a2",
+          "author_date": "2018-01-30T20:04:06Z",
+          "message": "[Docs] add `jsx-child-element-spacing`",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/cfd3959ff8e3b11262b0006dff28d0c957b282a2"
+        },
+        {
+          "sha": "70e8a023ee6d37ccd090161a747a8c35ca78081c",
+          "author_date": "2018-01-31T06:47:49Z",
+          "message": "Merge pull request #1610 from pfhayes/setstate\n\nExclude references to this.state in setState callback",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/70e8a023ee6d37ccd090161a747a8c35ca78081c"
+        },
+        {
+          "sha": "5e1a64c14f8fda5e186991b1e09a55f476a64e27",
+          "author_date": "2018-01-31T07:08:34Z",
+          "message": "[Fix] `no-danger-with-children`: prevent infinite loop\n\nFixes #1571",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/5e1a64c14f8fda5e186991b1e09a55f476a64e27"
+        },
+        {
+          "sha": "d8dff2639d7085ccbf9dd52d027e787f1494c962",
+          "author_date": "2018-01-31T19:17:31Z",
+          "message": "test(sort-prop-types) Add failing test for when `sortShapeProp` is true and shape not object literal",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/d8dff2639d7085ccbf9dd52d027e787f1494c962"
+        },
+        {
+          "sha": "17ac433b4d97659b74cf682b7e79d48542a13822",
+          "author_date": "2018-01-31T19:20:04Z",
+          "message": "fix(sort-prop-types): Fix sortShapeProp when shape is not an object literal",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/17ac433b4d97659b74cf682b7e79d48542a13822"
+        },
+        {
+          "sha": "d818f2b87eb4edd0ecbb4f3839389e75cc38bc00",
+          "author_date": "2018-01-31T21:40:32Z",
+          "message": "Merge pull request #1669 from justinanastos/fix/sort-prop-types-shape-no-properties-1668\n\nfix(sort-prop-types): Fix sortShapeProp when shape is not an object literal",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/d818f2b87eb4edd0ecbb4f3839389e75cc38bc00"
+        },
+        {
+          "sha": "05c49d4d322f255fbdc304a7593a1471dd0a781a",
+          "author_date": "2018-01-30T20:16:40Z",
+          "message": "[Fix] `jsx-child-element-spacing`: fix error location",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/05c49d4d322f255fbdc304a7593a1471dd0a781a"
+        },
+        {
+          "sha": "2839b5d4c618450d094ab9715a95eff7b7e30942",
+          "author_date": "2018-02-01T11:16:03Z",
+          "message": "Fix an issue with the documentation for 'jsx-child-element-spacing'",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/2839b5d4c618450d094ab9715a95eff7b7e30942"
+        },
+        {
+          "sha": "dda03e934468f4b2b6f088146e070296a64ae463",
+          "author_date": "2018-02-03T15:45:09Z",
+          "message": "Created test",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/dda03e934468f4b2b6f088146e070296a64ae463"
+        },
+        {
+          "sha": "78e29517a285d905f109b62dccab0f76d10dc219",
+          "author_date": "2018-02-03T22:17:02Z",
+          "message": "Fixed bug",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/78e29517a285d905f109b62dccab0f76d10dc219"
+        },
+        {
+          "sha": "b1444be8dd8dc56a5936e540487dc2e8e3eb0d3b",
+          "author_date": "2018-02-03T22:53:15Z",
+          "message": "Added more tests",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/b1444be8dd8dc56a5936e540487dc2e8e3eb0d3b"
+        },
+        {
+          "sha": "24658b56968d25c1b0fb4f3f238c7abbf4f4b5ba",
+          "author_date": "2018-02-04T19:57:38Z",
+          "message": "Added more valid tests",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/24658b56968d25c1b0fb4f3f238c7abbf4f4b5ba"
+        },
+        {
+          "sha": "3d83d13fe1900c8b16f7f65019e38d83e98746e5",
+          "author_date": "2018-02-05T07:27:17Z",
+          "message": "Added more tests",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/3d83d13fe1900c8b16f7f65019e38d83e98746e5"
+        },
+        {
+          "sha": "fb2fefd05cd28f0f4f021d82a26b7bb0105e4637",
+          "author_date": "2018-02-06T08:49:34Z",
+          "message": "Merge pull request #1675 from yuri-sakharov/fix/react-no-unused-prop-types\n\nFixed \"PropType is defined but prop is never used  react/no-unused-prop-types\"",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/fb2fefd05cd28f0f4f021d82a26b7bb0105e4637"
+        },
+        {
+          "sha": "e77c97fc9fd54316bea9551af1f77f5d2298288f",
+          "author_date": "2018-02-08T18:05:47Z",
+          "message": "Test",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/e77c97fc9fd54316bea9551af1f77f5d2298288f"
+        },
+        {
+          "sha": "0fa0761734d0f6c40f1bb4e0dad3a2a4ff6984ef",
+          "author_date": "2018-02-08T18:15:22Z",
+          "message": "Added test & working",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/0fa0761734d0f6c40f1bb4e0dad3a2a4ff6984ef"
+        },
+        {
+          "sha": "3ac79437a3461bc8c4fa17fd5fd7a8b4b029836c",
+          "author_date": "2018-02-18T05:50:50Z",
+          "message": "[docs] add missing rule to readme\n\nPer https://github.com/yannickcr/eslint-plugin-react/commit/2839b5d4c618450d094ab9715a95eff7b7e30942#commitcomment-27350115",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/3ac79437a3461bc8c4fa17fd5fd7a8b4b029836c"
+        },
+        {
+          "sha": "8ca344a6d1c98f97e65a44511f0e2d0a6bd5351c",
+          "author_date": "2018-02-19T18:01:01Z",
+          "message": "Rearranged tests to be at the bottom of componentWillReceiveProps tests. Added a default parser test.",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/8ca344a6d1c98f97e65a44511f0e2d0a6bd5351c"
+        },
+        {
+          "sha": "e26b7e2061e7fe9ba505527c28811e1199ce5945",
+          "author_date": "2018-02-19T22:23:11Z",
+          "message": "[Tests] clean up some formatting",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/e26b7e2061e7fe9ba505527c28811e1199ce5945"
+        },
+        {
+          "sha": "c99674001db435b327e019ff1d9a7ab512da0ec9",
+          "author_date": "2018-02-19T22:27:51Z",
+          "message": "Merge pull request #1690 from mindspacepdx/am-should-component-update\n\n[Fix] Rule prop-types includes nextProps checking in shouldComponentUpdate",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/c99674001db435b327e019ff1d9a7ab512da0ec9"
+        },
+        {
+          "sha": "b4141d801dd7b22268c687feaa9b7b2477e91180",
+          "author_date": "2017-09-06T16:18:14Z",
+          "message": "[Tests] Added tests for jsx-curly-spacing that deal with comments in children.\n\nSee also:\nhttps://github.com/yannickcr/eslint-plugin-react/issues/648#issuecomment-327519650",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/b4141d801dd7b22268c687feaa9b7b2477e91180"
+        },
+        {
+          "sha": "a2764d9e235a4aab89116ba5899a29b78c45aff4",
+          "author_date": "2017-12-20T00:40:10Z",
+          "message": "[Tests] number comments to more easily locate failures",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/a2764d9e235a4aab89116ba5899a29b78c45aff4"
+        },
+        {
+          "sha": "e4de3600c281c87bcb18d62c10ce279374ddcde4",
+          "author_date": "2018-02-16T00:24:43Z",
+          "message": "[Fix] jsx-curly-spacing problem in new tests, fixes #1414\n\nBefore this, spaces before/after braces when there should be none resulted in two overlapping fixes for the full brace content.\nAnd so they required two passes. But the tester does only one pass, so only one white space was fixed and the test failed.\n\nBy including comments in the range calculation for the fix, the range is now properly limited, making it possible to have start and end fixes in one pass.",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/e4de3600c281c87bcb18d62c10ce279374ddcde4"
+        },
+        {
+          "sha": "34f83a540d0f088882e349f744c8a6360f6cd544",
+          "author_date": "2017-06-05T10:26:33Z",
+          "message": "[New] Add `jsx-max-depth`\n\nFixes #1219.",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/34f83a540d0f088882e349f744c8a6360f6cd544"
+        },
+        {
+          "sha": "0e2e0463cb73663d7d2ead66b7418c574ffd9704",
+          "author_date": "2018-02-20T07:03:04Z",
+          "message": "[Dev Deps] update `babel-eslint`, `eslint`, `istanbul`, `mocha`",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/0e2e0463cb73663d7d2ead66b7418c574ffd9704"
+        },
+        {
+          "sha": "abe8381c0d6748047224c430ce47f02e40160ed0",
+          "author_date": "2018-02-20T07:49:57Z",
+          "message": "Update CHANGELOG and bump version",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/abe8381c0d6748047224c430ce47f02e40160ed0"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v7.8.0-rc.0",
@@ -3954,8 +4209,45 @@
     {
       "release": "v7.32.2",
       "previous_release": "v7.32.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "0479acdb05b29cda759e9df34e08e33168362152",
+          "author_date": "2023-01-18T18:43:46Z",
+          "message": "[Fix] configs: restore `parserOptions` in legacy configs\n\nFixes #3523",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/0479acdb05b29cda759e9df34e08e33168362152"
+        },
+        {
+          "sha": "d2194a5d85bb60be9b93fe928aa592a4467c2ead",
+          "author_date": "2023-01-18T18:51:01Z",
+          "message": "[Tests] avoid a deprecation warning",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/d2194a5d85bb60be9b93fe928aa592a4467c2ead"
+        },
+        {
+          "sha": "4523e73747029e1593014bac76b9682911c7539d",
+          "author_date": "2023-01-18T18:57:02Z",
+          "message": "[Fix] `jsx-no-constructed-context-values`, `jsx-no-useless-fragment`: add a rule schema",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/4523e73747029e1593014bac76b9682911c7539d"
+        },
+        {
+          "sha": "14e315a83e3607f93bf52d4836ab8e79902397e4",
+          "author_date": "2023-01-24T17:34:47Z",
+          "message": "[Fix] `no-unknown-property`: add `fill` for `<marker>`",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/14e315a83e3607f93bf52d4836ab8e79902397e4"
+        },
+        {
+          "sha": "373167c2494727cfb4c44e7865bf8d70653a73a6",
+          "author_date": "2023-01-26T21:40:48Z",
+          "message": "[Tests] `button-has-type`: add passing test\n\nCloses https://github.com/jsx-eslint/jsx-ast-utils/issues/125",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/373167c2494727cfb4c44e7865bf8d70653a73a6"
+        },
+        {
+          "sha": "66b58dd4864678eb869a7bf434c72ff7ac530eb1",
+          "author_date": "2023-01-29T06:20:58Z",
+          "message": "Update CHANGELOG and bump version",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/66b58dd4864678eb869a7bf434c72ff7ac530eb1"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v7.33.0",
@@ -4008,8 +4300,135 @@
     {
       "release": "v7.35.0",
       "previous_release": "v7.34.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "e64e2608c725a7786cecd843044d4b7d74117cac",
+          "author_date": "2024-02-21T22:06:30Z",
+          "message": "[New] export flat configs from plugin root and fix flat config crash\n\nCo-authored-by: Brad Zacher <brad.zacher@gmail.com>\nCo-authored-by: Milos Djermanovic <milos.djermanovic@gmail.com>",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/e64e2608c725a7786cecd843044d4b7d74117cac"
+        },
+        {
+          "sha": "a762b25e6dcbdca9e4ff1eb1c564123a1105b075",
+          "author_date": "2024-04-03T03:47:46Z",
+          "message": "[New] add `jsx-props-no-spread-multi`",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/a762b25e6dcbdca9e4ff1eb1c564123a1105b075"
+        },
+        {
+          "sha": "c9b60a6d556cce989928bbab21586c44fd12bd6a",
+          "author_date": "2024-05-20T23:38:00Z",
+          "message": "[Tests] remove duplicate tests",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/c9b60a6d556cce989928bbab21586c44fd12bd6a"
+        },
+        {
+          "sha": "84781c786d117f732eeb09345fcfbcaf2daec1f0",
+          "author_date": "2024-05-20T19:01:10Z",
+          "message": "[Tests] `hook-use-state`: test suggestions with `messageId` instead of `desc`",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/84781c786d117f732eeb09345fcfbcaf2daec1f0"
+        },
+        {
+          "sha": "0effd6247ccc1c41d6b2d7753af4a84cc4b95d3c",
+          "author_date": "2024-05-19T18:49:53Z",
+          "message": "[Tests] test rules with ESLint v9",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/0effd6247ccc1c41d6b2d7753af4a84cc4b95d3c"
+        },
+        {
+          "sha": "e621e30be8c08da642e09f673fd66ac9865ceb0a",
+          "author_date": "2024-05-20T09:27:48Z",
+          "message": "add `tests/helpers/getRuleDefiner.js`",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/e621e30be8c08da642e09f673fd66ac9865ceb0a"
+        },
+        {
+          "sha": "4e3f2aeca5614d292bbf04f75ebba0b7537ebefb",
+          "author_date": "2024-05-20T10:44:03Z",
+          "message": "[New] support eslint v9",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/4e3f2aeca5614d292bbf04f75ebba0b7537ebefb"
+        },
+        {
+          "sha": "917240b0eea85f4ed8c30532a687a12d75126356",
+          "author_date": "2024-05-20T21:56:18Z",
+          "message": "[Fix] `no-invalid-html-attribute`: substitute placeholders in suggestion messages",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/917240b0eea85f4ed8c30532a687a12d75126356"
+        },
+        {
+          "sha": "9cd79041b3d6be13065adcf1940f5fab0ae90dc5",
+          "author_date": "2024-05-30T21:23:38Z",
+          "message": "[actions] Don't install with `--legacy-peer-deps` in pretest check",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/9cd79041b3d6be13065adcf1940f5fab0ae90dc5"
+        },
+        {
+          "sha": "9bf81af7e792e60237d689706e50b1db02e7d96e",
+          "author_date": "2024-07-15T05:32:53Z",
+          "message": "[New] support eslint v9\n\nMerge pull request #3759 from mdjermanovic/eslint-v9-rule-tests",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/9bf81af7e792e60237d689706e50b1db02e7d96e"
+        },
+        {
+          "sha": "6ce58e52cda582171522bb27279b3329c22ae800",
+          "author_date": "2024-06-27T08:53:56Z",
+          "message": "[New] `forbid-component-props`: add `propNamePattern` to allow / disallow prop name patterns",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/6ce58e52cda582171522bb27279b3329c22ae800"
+        },
+        {
+          "sha": "6a83d67842b79e472fdb301f567b66218df53f66",
+          "author_date": "2024-06-21T06:20:26Z",
+          "message": "[New] `jsx-handler-names`: support ignoring component names",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/6a83d67842b79e472fdb301f567b66218df53f66"
+        },
+        {
+          "sha": "4d2fd861d2f9e561144c5926cc8b73fe7fff7f3e",
+          "author_date": "2024-07-15T17:46:00Z",
+          "message": "[Refactor] `variableUtil`: Avoid creating a single flat variable scope for each lookup",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/4d2fd861d2f9e561144c5926cc8b73fe7fff7f3e"
+        },
+        {
+          "sha": "00b89fe86d07ade8146f48681122b3110cd2cf78",
+          "author_date": "2024-06-20T22:53:43Z",
+          "message": "[New] version settings: Allow react defaultVersion to be configurable",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/00b89fe86d07ade8146f48681122b3110cd2cf78"
+        },
+        {
+          "sha": "c58f04b474dbb0ccf18fab77f9afa698020e575f",
+          "author_date": "2024-07-03T02:34:57Z",
+          "message": "[New] `jsx-closing-tag-location`: add `line-aligned` option",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/c58f04b474dbb0ccf18fab77f9afa698020e575f"
+        },
+        {
+          "sha": "597553d1307a6a2eb04c79d4a3b97431f977a8a0",
+          "author_date": "2024-05-06T06:35:19Z",
+          "message": "[New] `no-danger`: add `customComponentNames` option",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/597553d1307a6a2eb04c79d4a3b97431f977a8a0"
+        },
+        {
+          "sha": "ca8b11ef6e4f183a5aaf354a5b4c312b33a37486",
+          "author_date": "2024-07-16T18:53:37Z",
+          "message": "[Dev Deps] update `@babel/core`, `@babel/eslint-parser`",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/ca8b11ef6e4f183a5aaf354a5b4c312b33a37486"
+        },
+        {
+          "sha": "4b3209bf3a65502a279da1d98b80d2d998d27357",
+          "author_date": "2024-07-16T18:54:12Z",
+          "message": "[meta] no point in supporting eslint 9.0 - 9.6 initially",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/4b3209bf3a65502a279da1d98b80d2d998d27357"
+        },
+        {
+          "sha": "a08cb93fdb49b8b5a91315c7b7d99d38a4318809",
+          "author_date": "2024-07-18T03:56:06Z",
+          "message": "[Fix] `sort-prop-types`: single line type ending without semicolon",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/a08cb93fdb49b8b5a91315c7b7d99d38a4318809"
+        },
+        {
+          "sha": "a4b0bbcf559f4f316ea5b7708f74961f030c70cb",
+          "author_date": "2024-07-18T17:20:37Z",
+          "message": "[Fix] `require-default-props`: report when required props have default value",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/a4b0bbcf559f4f316ea5b7708f74961f030c70cb"
+        },
+        {
+          "sha": "c6fdccde50f6e6cc445858b9a1e8d9980f3a86cb",
+          "author_date": "2024-07-20T04:38:13Z",
+          "message": "Update CHANGELOG and bump version",
+          "html_url": "https://github.com/jsx-eslint/eslint-plugin-react/commit/c6fdccde50f6e6cc445858b9a1e8d9980f3a86cb"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v7.35.1",

@@ -891,14 +891,436 @@
     {
       "release": "0.10.4",
       "previous_release": "0.10.2-p1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "31e99627546a84946a8571d129933fbc025ab7f6",
+          "author_date": "2015-05-17T11:04:40Z",
+          "message": "[Documentation][Markdown] Use correct help option for cmake.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/31e99627546a84946a8571d129933fbc025ab7f6"
+        },
+        {
+          "sha": "d57ac97db8c8a1480639b42ab8c95a9a79be0493",
+          "author_date": "2015-05-18T17:06:21Z",
+          "message": "make the unix make example work\n\n...by setting the archive directory variable",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d57ac97db8c8a1480639b42ab8c95a9a79be0493"
+        },
+        {
+          "sha": "97e093a361d7235e414807bdad2c41cc4d75f804",
+          "author_date": "2015-05-18T17:31:05Z",
+          "message": "fix compile error on android",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/97e093a361d7235e414807bdad2c41cc4d75f804"
+        },
+        {
+          "sha": "d5e54d2609046ecdef5458f36dbad963808c88bb",
+          "author_date": "2015-05-19T06:52:57Z",
+          "message": "Merge pull request #277 from gogo40/master\n\nfix compile error on android\r\n\r\nBut note that we do not have continuous integration testing for Android. This could break again.\r\n\r\n`snprintf` drives me crazy. It should have been part of every C library 20 years ago.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d5e54d2609046ecdef5458f36dbad963808c88bb"
+        },
+        {
+          "sha": "64441486ace99abee0371a3481632fe0d1400cca",
+          "author_date": "2015-05-19T06:53:11Z",
+          "message": "Merge pull request #275 from stefan-it/stefan/cmake-generator-fix\n\n[Documentation][Markdown] Use correct help option for cmake.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/64441486ace99abee0371a3481632fe0d1400cca"
+        },
+        {
+          "sha": "e6f1cffdd3fb04a0ed96319e6f8df6a7cbdd1557",
+          "author_date": "2015-05-19T15:32:31Z",
+          "message": "Fix custom includedir & libdir substitution in pkg-config\n\nDo not prepend ${prefix} to substituted includedir & libdir\nin the pkg-config file -- if the paths are overriden by user, CMake puts\nabsolute paths there (even if user specifies a relative path). Instead,\nuse the absolute path provided by CMake and appropriately default\nLIBRARY_INSTALL_DIR & INCLUDE_INSTALL_DIR to absolute paths with\n${CMAKE_INSTALL_PREFIX} prepended.\n\nFixes: https://github.com/open-source-parsers/jsoncpp/issues/279\nSigned-off-by: Michał Górny <mgorny@gentoo.org>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/e6f1cffdd3fb04a0ed96319e6f8df6a7cbdd1557"
+        },
+        {
+          "sha": "89c51f345799b233e104585d5e139b10aa43dd1c",
+          "author_date": "2015-05-20T16:43:47Z",
+          "message": "Clarify which parts of README for users vs devs\n\nWhen I arrived at the JsonCpp GitHub page, as an intermediate C++ developer, I could not figure out how to include JsonCpp into my project. The changes I propose to the README make this much clearer, and define a clear distinction between which instructions are for those developing and contributing to JsonCpp, and those who are just using it.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/89c51f345799b233e104585d5e139b10aa43dd1c"
+        },
+        {
+          "sha": "b389d81bf95837b4f52cf0a177355d883973d7f9",
+          "author_date": "2015-05-21T01:24:37Z",
+          "message": "Merge pull request #280 from mgorny/pkg-config-fix\n\nFix custom includedir & libdir substitution in pkg-config",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/b389d81bf95837b4f52cf0a177355d883973d7f9"
+        },
+        {
+          "sha": "de2c85f5768e35b98119a3ffb2ca537b1064afea",
+          "author_date": "2015-05-21T01:33:31Z",
+          "message": "Merge pull request #282 from keithkml/patch-1\n\nClarify which parts of README for users vs devs",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/de2c85f5768e35b98119a3ffb2ca537b1064afea"
+        },
+        {
+          "sha": "3f05b1a89708381c6f42b3f62cb4203557cb7f35",
+          "author_date": "2015-05-21T05:47:35Z",
+          "message": "Merge pull request #276 from bmyerz/master\n\nmake the unix cmake example work",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/3f05b1a89708381c6f42b3f62cb4203557cb7f35"
+        },
+        {
+          "sha": "f1ff13767cb8b93c88572d1722f77f8b5b7c1691",
+          "author_date": "2015-06-11T03:05:45Z",
+          "message": "Merge pull request #291 from cdunn2001/0.y.z\n\nfix #290",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/f1ff13767cb8b93c88572d1722f77f8b5b7c1691"
+        },
+        {
+          "sha": "bcb83b921c9f94d569ba4ce1fb2f0dd8b087efaf",
+          "author_date": "2015-06-05T04:57:29Z",
+          "message": "fix doxybuild.py for Windows\n\nissue #287 (tylerknott@)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/bcb83b921c9f94d569ba4ce1fb2f0dd8b087efaf"
+        },
+        {
+          "sha": "07623b71f279191eeab4326da6dc2e1b2d40c469",
+          "author_date": "2015-06-19T03:34:40Z",
+          "message": "Merge branch 'master' into 0.y.z",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/07623b71f279191eeab4326da6dc2e1b2d40c469"
+        },
+        {
+          "sha": "6416350438ed90d29d3b4baa847f51c480943a9e",
+          "author_date": "2015-06-19T03:41:49Z",
+          "message": "fix ,/. problem in reader\n\nfixes #293",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/6416350438ed90d29d3b4baa847f51c480943a9e"
+        },
+        {
+          "sha": "6e52e272da5e1434d6735f2b5d194724f85458ae",
+          "author_date": "2015-06-19T05:10:32Z",
+          "message": "Merge pull request #294 from cdunn2001/master\n\nfix ,/. problem in reader",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/6e52e272da5e1434d6735f2b5d194724f85458ae"
+        },
+        {
+          "sha": "17181acf74c599b391ce60d63e4fa85f35bc20b5",
+          "author_date": "2015-06-19T05:11:52Z",
+          "message": "Merge remote-tracking branch 'up/master' into 0.y.z\n\nfix ,/. problem in #294",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/17181acf74c599b391ce60d63e4fa85f35bc20b5"
+        },
+        {
+          "sha": "7bc97db496c40d2cbbbc0d4dddd36f4479fbd81d",
+          "author_date": "2015-07-11T15:46:24Z",
+          "message": "fix appveyor 32-bit windows build\n\n* http://help.appveyor.com/discussions/problems/2229-v140-not-found-on-vs2105rc\n```\nDone Building Project \"C:\\projects\\jsoncpp\\jsoncpp.sln\" (default targets) -- FAILED.\n\nBuild FAILED.\n\n\"C:\\projects\\jsoncpp\\jsoncpp.sln\" (default target) (1) ->\n\"C:\\projects\\jsoncpp\\ALL_BUILD.vcxproj.metaproj\" (default target) (2) ->\n\"C:\\projects\\jsoncpp\\ZERO_CHECK.vcxproj\" (default target) (3) ->\n(PlatformPrepareForBuild target) ->\n  C:\\Program Files (x86)\\MSBuild\\Microsoft.Cpp\\v4.0\\V120\\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for v140 (Platform Toolset = 'v140') cannot be found. To build using the v140 build tools, please install v140 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting \"Upgrade Solution...\". [C:\\projects\\jsoncpp\\ZERO_CHECK.vcxproj]\n```",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/7bc97db496c40d2cbbbc0d4dddd36f4479fbd81d"
+        },
+        {
+          "sha": "a13303e4568df875ead8799e10903765972fc6bd",
+          "author_date": "2015-07-11T16:52:16Z",
+          "message": "Merge pull request #306 from cdunn2001/0.y.z\n\nfix appveyor 32-bit windows build",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/a13303e4568df875ead8799e10903765972fc6bd"
+        },
+        {
+          "sha": "f1cafb6ded2d76392c6bffe71c4d06990a018f27",
+          "author_date": "2015-07-04T07:00:24Z",
+          "message": "GCC warning removal for long long\n\n(was #300)\n\nI got below warning message on x86 linux machine :\n```\n\"jsoncpp-0.10.2-p1/include/json/config.h:100: warning: ISO C++ 1998 does not support ‘long long’\"\ngcc version 4.4.7 20120313 (Red Hat 4.4.7-4) (GCC)\n```\nIn reference to\n\n* https://github.com/open-source-parsers/jsoncpp/pull/292\n\n**long long** is supported in c++-11; for old compilers i.e `0.y.z` branch this patch should be merged.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/f1cafb6ded2d76392c6bffe71c4d06990a018f27"
+        },
+        {
+          "sha": "ef38374e993747f53130191b5bf5ca5d1737a053",
+          "author_date": "2015-07-05T08:54:35Z",
+          "message": "Gcc warning unused \"tokenStart\"\n\n(was #301)\n\nIn `0.y.z` branch, `tokenStart` is not used.\nComment it as done in other cases.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ef38374e993747f53130191b5bf5ca5d1737a053"
+        },
+        {
+          "sha": "dbda2aa36f61dea8ed2e251a14f74117621fe09d",
+          "author_date": "2015-07-11T17:02:22Z",
+          "message": "Merge pull request #307 from cdunn2001/gaurav-fix-warnings\n\nfix warnings (-Wno-long-long and unused tokenStart)\r\n\r\n* closes #300\r\n* closes #301",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/dbda2aa36f61dea8ed2e251a14f74117621fe09d"
+        },
+        {
+          "sha": "710260d07060e95bebad01fa6bc9c81531075fa8",
+          "author_date": "2015-06-29T18:20:08Z",
+          "message": "Allow an optional suffix on the debug library name in CMake.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/710260d07060e95bebad01fa6bc9c81531075fa8"
+        },
+        {
+          "sha": "bb5d0249ed8f592169e1fdb617531b4e5dfe84ad",
+          "author_date": "2015-07-01T21:05:54Z",
+          "message": "Warn about implicit 64 to 32 bit conversions when using clang",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/bb5d0249ed8f592169e1fdb617531b4e5dfe84ad"
+        },
+        {
+          "sha": "cb8259f545d940c1b87b9142e234f1b9a4568d3b",
+          "author_date": "2015-07-01T21:18:15Z",
+          "message": "Fix #296: Explicitly cast size_t results to unsigned when needed\n\nThis is rebased from #297, where AppVeyor had been failing, and which\nwas not properly based on the master branch.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/cb8259f545d940c1b87b9142e234f1b9a4568d3b"
+        },
+        {
+          "sha": "2e185081b2d05123c69a77b1535a27e047632646",
+          "author_date": "2015-07-03T22:47:00Z",
+          "message": "Fix undefined name \"sys\"\n\nSame as #299 (bca0eff81a1c5ef160d9858b8e89b1c919b71c1f), but an earlier\ncommit needed to be rebased.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/2e185081b2d05123c69a77b1535a27e047632646"
+        },
+        {
+          "sha": "7670e5151b0dcf28362932e1abdb5a535c69bd17",
+          "author_date": "2015-07-11T18:53:05Z",
+          "message": "0.10.3",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/7670e5151b0dcf28362932e1abdb5a535c69bd17"
+        },
+        {
+          "sha": "fb1301274f08562bfcfd599b78f4d97946661cf3",
+          "author_date": "2015-07-11T19:07:55Z",
+          "message": "Merge pull request #308 from cdunn2001/0.y.z\n\n0.10.3\r\n\r\nNo significant changes.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/fb1301274f08562bfcfd599b78f4d97946661cf3"
+        },
+        {
+          "sha": "c6fa95931872316a235c801a490bcd618445b530",
+          "author_date": "2015-07-11T19:06:18Z",
+          "message": "dockerize the Travis build\n\nDocker builds are *much* faster in Travis.\n\nAlso, we prepare to enable C++11.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/c6fa95931872316a235c801a490bcd618445b530"
+        },
+        {
+          "sha": "72fb4a5b08d941b631c9b5bcc104718be18c6965",
+          "author_date": "2015-07-11T19:09:52Z",
+          "message": "valgrind in Travis",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/72fb4a5b08d941b631c9b5bcc104718be18c6965"
+        },
+        {
+          "sha": "138c48b7e8b370fb0e86c3a2239eaf1cc54acb2b",
+          "author_date": "2015-07-11T19:27:19Z",
+          "message": "gcc-4.6, clang-3.3",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/138c48b7e8b370fb0e86c3a2239eaf1cc54acb2b"
+        },
+        {
+          "sha": "02839ef5b19ce5be91d8dc70c2dcde3033b775df",
+          "author_date": "2015-07-12T14:55:20Z",
+          "message": "Merge pull request #310 from cdunn2001/0.y.z\n\ngcc-4.6, clang-3.3",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/02839ef5b19ce5be91d8dc70c2dcde3033b775df"
+        },
+        {
+          "sha": "75747db30c1bde38a9c55e226c4a47c39412815d",
+          "author_date": "2015-07-12T17:32:33Z",
+          "message": "-Wshadow\n\n* https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html\n* http://programmers.stackexchange.com/questions/122608/clang-warning-flags-for-objective-c-development/124574#124574\n\nIn clang: `-Wconversion` implies `-Wshorten-64-to-32`, but we cannot use\n`-Wconversion` yet.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/75747db30c1bde38a9c55e226c4a47c39412815d"
+        },
+        {
+          "sha": "17360f3d4bbfe9c5b47cf5aef11554d3a02c854a",
+          "author_date": "2015-07-12T17:55:18Z",
+          "message": "fix some warnings",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/17360f3d4bbfe9c5b47cf5aef11554d3a02c854a"
+        },
+        {
+          "sha": "542354902e42529da3156d9b56f460342eabfe09",
+          "author_date": "2015-07-12T17:58:54Z",
+          "message": "fixed a bug found by -Wshadow",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/542354902e42529da3156d9b56f460342eabfe09"
+        },
+        {
+          "sha": "b97e624ac1f9f29dbfeeb85b548119107fdc8968",
+          "author_date": "2015-07-12T19:25:21Z",
+          "message": "-Werror",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/b97e624ac1f9f29dbfeeb85b548119107fdc8968"
+        },
+        {
+          "sha": "ed5d73fe1dc28086d9bd576467482c227a22cb1e",
+          "author_date": "2015-07-12T19:37:38Z",
+          "message": "0.6.4",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ed5d73fe1dc28086d9bd576467482c227a22cb1e"
+        },
+        {
+          "sha": "93d74678dac790cd17cd9fa06ea09bcc23ed31ba",
+          "author_date": "2015-07-12T19:52:00Z",
+          "message": "Merge pull request #315 from cdunn2001/0.y.z\n\n-Werror\r\n\r\nand fixed a minor bug found by -Wshadow",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/93d74678dac790cd17cd9fa06ea09bcc23ed31ba"
+        },
+        {
+          "sha": "d48bff5fcbdffe872f7f68919a34af3d3e0d44e8",
+          "author_date": "2015-07-12T19:56:36Z",
+          "message": "gcc-4.6 in Travis\n\nand clang-3.0, the default",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d48bff5fcbdffe872f7f68919a34af3d3e0d44e8"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.10.5",
       "previous_release": "0.10.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "717c791d4e40c3f923e79ff8d4a72111f079eaa5",
+          "author_date": "2015-06-29T18:20:08Z",
+          "message": "Allow an optional suffix on the debug library name in CMake.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/717c791d4e40c3f923e79ff8d4a72111f079eaa5"
+        },
+        {
+          "sha": "ce32274ba53858e5e53618467b9c9582b41f5567",
+          "author_date": "2015-07-01T08:18:33Z",
+          "message": "Merge pull request #295 from martyngigg/master\n\nAllow an optional suffix on the debug library name in CMake",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ce32274ba53858e5e53618467b9c9582b41f5567"
+        },
+        {
+          "sha": "4652f818fee737005eff731c6d1d285772b8f061",
+          "author_date": "2015-07-11T15:46:24Z",
+          "message": "fix appveyor 32-bit windows build\n\n* http://help.appveyor.com/discussions/problems/2229-v140-not-found-on-vs2105rc\n```\nDone Building Project \"C:\\projects\\jsoncpp\\jsoncpp.sln\" (default targets) -- FAILED.\n\nBuild FAILED.\n\n\"C:\\projects\\jsoncpp\\jsoncpp.sln\" (default target) (1) ->\n\"C:\\projects\\jsoncpp\\ALL_BUILD.vcxproj.metaproj\" (default target) (2) ->\n\"C:\\projects\\jsoncpp\\ZERO_CHECK.vcxproj\" (default target) (3) ->\n(PlatformPrepareForBuild target) ->\n  C:\\Program Files (x86)\\MSBuild\\Microsoft.Cpp\\v4.0\\V120\\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for v140 (Platform Toolset = 'v140') cannot be found. To build using the v140 build tools, please install v140 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting \"Upgrade Solution...\". [C:\\projects\\jsoncpp\\ZERO_CHECK.vcxproj]\n```",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/4652f818fee737005eff731c6d1d285772b8f061"
+        },
+        {
+          "sha": "d259f608fd2a52f94f9e5fa470cc8dc98dde8bb9",
+          "author_date": "2015-07-11T15:58:59Z",
+          "message": "Merge pull request #303 from cdunn2001/appveyor-14.0\n\nfix appveyor 32-bit windows build\r\n\r\nI've backed rebased under #297 because AppVeyor has been failing since there, and because that was not properly based on master anyway.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d259f608fd2a52f94f9e5fa470cc8dc98dde8bb9"
+        },
+        {
+          "sha": "81cb7e5c5b95ac0677c3381d46d05ddb9b25ad5d",
+          "author_date": "2015-07-01T21:05:54Z",
+          "message": "Warn about implicit 64 to 32 bit conversions when using clang",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/81cb7e5c5b95ac0677c3381d46d05ddb9b25ad5d"
+        },
+        {
+          "sha": "702a53976260608c4497d99f00f01ff55aff7791",
+          "author_date": "2015-07-01T21:18:15Z",
+          "message": "Fix #296: Explicitly cast size_t results to unsigned when needed\n\nThis is rebased from #297, where AppVeyor had been failing, and which\nwas not properly based on the master branch.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/702a53976260608c4497d99f00f01ff55aff7791"
+        },
+        {
+          "sha": "b26804d1c217eced84ab57cbffe8a0baf4db8f9f",
+          "author_date": "2015-07-11T16:08:47Z",
+          "message": "Merge pull request #304 from cdunn2001/297\n\nSame as #297 (1c4f274ab32594d717fc442a0f8a68d9e7633637), but properly rebased",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/b26804d1c217eced84ab57cbffe8a0baf4db8f9f"
+        },
+        {
+          "sha": "b5e70f950e8e01d5830f4d969b2703b5cc6cd289",
+          "author_date": "2015-07-03T22:47:00Z",
+          "message": "Fix undefined name \"sys\"\n\nSame as #299 (bca0eff81a1c5ef160d9858b8e89b1c919b71c1f), but an earlier\ncommit needed to be rebased.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/b5e70f950e8e01d5830f4d969b2703b5cc6cd289"
+        },
+        {
+          "sha": "6ca8ffcb91104acfaf42d33c554e957817f619da",
+          "author_date": "2015-07-11T16:17:09Z",
+          "message": "Merge pull request #305 from cdunn2001/fix-fixeol-undefined-name-sys\n\nFix undefined name \"sys\"\r\n\r\nSame as #299 (bca0eff), but an earlier commit needed to be rebased.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/6ca8ffcb91104acfaf42d33c554e957817f619da"
+        },
+        {
+          "sha": "89704039a030d150651ef32e9c5a9b78953b4a5a",
+          "author_date": "2015-07-11T17:09:59Z",
+          "message": "minor doc fix, for #302",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/89704039a030d150651ef32e9c5a9b78953b4a5a"
+        },
+        {
+          "sha": "24288898137d874d2ddb57e28de093c3f349062c",
+          "author_date": "2015-07-11T18:41:13Z",
+          "message": "1.6.3",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/24288898137d874d2ddb57e28de093c3f349062c"
+        },
+        {
+          "sha": "f4e6fccd46cd39a07ec7ef381f159bb8cb5e3938",
+          "author_date": "2015-07-11T19:06:18Z",
+          "message": "dockerize the Travis build\n\nDocker builds are *much* faster in Travis.\n\nAlso, we prepare to enable C++11.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/f4e6fccd46cd39a07ec7ef381f159bb8cb5e3938"
+        },
+        {
+          "sha": "d8e8c14ffc54d9926da184dd666d95ed6c3a9603",
+          "author_date": "2015-07-11T19:09:52Z",
+          "message": "valgrind in Travis",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d8e8c14ffc54d9926da184dd666d95ed6c3a9603"
+        },
+        {
+          "sha": "056e5f9b640771d156c500be038e50547214c862",
+          "author_date": "2015-07-11T19:19:02Z",
+          "message": "Merge pull request #309 from cdunn2001/master\n\ndockerize the Travis build, and allow C++11",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/056e5f9b640771d156c500be038e50547214c862"
+        },
+        {
+          "sha": "658fa37e638732325eac9f46c37da82a11fbe38e",
+          "author_date": "2015-07-12T14:53:40Z",
+          "message": "gcc-4.9, clang (3.0)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/658fa37e638732325eac9f46c37da82a11fbe38e"
+        },
+        {
+          "sha": "14fc9f124edb76a5426c1a166e984947a26c437e",
+          "author_date": "2015-07-12T17:04:41Z",
+          "message": "Merge pull request #312 from cdunn2001/master\n\ngcc-4.9, clang (3.0)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/14fc9f124edb76a5426c1a166e984947a26c437e"
+        },
+        {
+          "sha": "fac87108a49fb1b2640eff5d8e4cc7a12723a510",
+          "author_date": "2015-07-12T17:08:34Z",
+          "message": "-std=c++11 for gcc builds too",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/fac87108a49fb1b2640eff5d8e4cc7a12723a510"
+        },
+        {
+          "sha": "e22a2f36f7e8e9ec7598d1b58c1c7992b1b5b02e",
+          "author_date": "2015-07-12T17:18:28Z",
+          "message": "Merge pull request #313 from cdunn2001/master\n\n`-std=c++11` for gcc builds too\r\n\r\nThere was an issue with Travis, but we seem to be past that now.\r\n\r\nWe were using only -std=c++0x for gcc, as you can see in the diff.\r\n\r\nresolves #134",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/e22a2f36f7e8e9ec7598d1b58c1c7992b1b5b02e"
+        },
+        {
+          "sha": "f94a0e8989150d2224e731a037e9546580a2924b",
+          "author_date": "2015-07-12T17:31:43Z",
+          "message": "auto-generated file with minor update",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/f94a0e8989150d2224e731a037e9546580a2924b"
+        },
+        {
+          "sha": "46aa9d75fa9b633124025e5b85c37e25fe039d62",
+          "author_date": "2015-07-12T17:32:33Z",
+          "message": "-Wconversion\n\n* https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html\n* http://programmers.stackexchange.com/questions/122608/clang-warning-flags-for-objective-c-development/124574#124574\n\nIn clang: `-Wconversion` implies `-Wshorten-64-to-32`",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/46aa9d75fa9b633124025e5b85c37e25fe039d62"
+        },
+        {
+          "sha": "7275e3ce3c1139c350df20b3c3b19881148bb757",
+          "author_date": "2015-07-12T17:49:57Z",
+          "message": "drop -Wsign-conversion",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/7275e3ce3c1139c350df20b3c3b19881148bb757"
+        },
+        {
+          "sha": "784433ac72c0864600655c29607df716f2259186",
+          "author_date": "2015-07-12T17:55:18Z",
+          "message": "fix some warnings",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/784433ac72c0864600655c29607df716f2259186"
+        },
+        {
+          "sha": "7f240623d333bac4be4f791f5354cb95da744c16",
+          "author_date": "2015-07-12T17:58:54Z",
+          "message": "fixed a bug found by -Wshadow",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/7f240623d333bac4be4f791f5354cb95da744c16"
+        },
+        {
+          "sha": "d8186f36a683a70143e7e1870d9d6727820b8a22",
+          "author_date": "2015-07-12T19:25:21Z",
+          "message": "-Werror",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d8186f36a683a70143e7e1870d9d6727820b8a22"
+        },
+        {
+          "sha": "cac79543f8c7cf8dab7ffcaff77e10284f173ed4",
+          "author_date": "2015-07-12T19:29:51Z",
+          "message": "1.6.4\n\nminor bug-fix",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/cac79543f8c7cf8dab7ffcaff77e10284f173ed4"
+        },
+        {
+          "sha": "81cf237917b6873decd27e15b7fe8473003a2762",
+          "author_date": "2015-07-12T19:38:02Z",
+          "message": "Merge pull request #314 from cdunn2001/master\n\n-Werror\r\n\r\nplus small bug-fix",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/81cf237917b6873decd27e15b7fe8473003a2762"
+        },
+        {
+          "sha": "770fdda28b1a4a4418ee1af3aaacdb6c7ffd7ec4",
+          "author_date": "2015-07-14T12:34:07Z",
+          "message": "Update json_tool.h\n\nFix a typo in comment.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/770fdda28b1a4a4418ee1af3aaacdb6c7ffd7ec4"
+        },
+        {
+          "sha": "1c69568f8dcb8052c6a4d179f10f1db79e69f5ca",
+          "author_date": "2015-07-17T11:44:33Z",
+          "message": "Merge pull request #316 from filipjs/master\n\nUpdate json_tool.h\r\n\r\ntypo in a comment",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/1c69568f8dcb8052c6a4d179f10f1db79e69f5ca"
+        },
+        {
+          "sha": "6ed877c77cde496a915c584343d16397df25c6ff",
+          "author_date": "2015-07-23T05:25:56Z",
+          "message": "correction for #316",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/6ed877c77cde496a915c584343d16397df25c6ff"
+        },
+        {
+          "sha": "949babd7b0924910564aef46aacbedaf29e1866e",
+          "author_date": "2015-07-23T05:19:12Z",
+          "message": "Exceptions declared in header\n\nresolves #272",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/949babd7b0924910564aef46aacbedaf29e1866e"
+        },
+        {
+          "sha": "d84702c9036505d0906b2f3d222ce5498ec65bc6",
+          "author_date": "2015-07-23T05:20:35Z",
+          "message": "1.6.5",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d84702c9036505d0906b2f3d222ce5498ec65bc6"
+        },
+        {
+          "sha": "18e4d04e8e8b0164fc83c79cde14f60517d4610e",
+          "author_date": "2015-07-23T05:32:47Z",
+          "message": "merged from 1.6.5",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/18e4d04e8e8b0164fc83c79cde14f60517d4610e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.6.5",
@@ -921,8 +1343,27 @@
     {
       "release": "1.7.2",
       "previous_release": "1.7.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "ef2ff8754a00c3c7f938683d4f815fa4d53cd8b2",
+          "author_date": "2016-03-24T03:33:18Z",
+          "message": "Fix a clang warning\n\nResolves #451.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ef2ff8754a00c3c7f938683d4f815fa4d53cd8b2"
+        },
+        {
+          "sha": "96d32b37eac518147f3d733012a6c28db3720328",
+          "author_date": "2016-03-24T05:27:13Z",
+          "message": "Merge pull request #452 from cdunn2001/fix-451\n\nFix a clang warning",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/96d32b37eac518147f3d733012a6c28db3720328"
+        },
+        {
+          "sha": "c8054483f82afc3b4db7efe4e5dc034721649ec8",
+          "author_date": "2016-03-25T20:00:36Z",
+          "message": "1.7.2 <- 1.7.1\n\nThis only fixes a clang warning, but we have already\nseen more than one report for it.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/c8054483f82afc3b4db7efe4e5dc034721649ec8"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.10.6",
@@ -987,8 +1428,255 @@
     {
       "release": "1.8.4",
       "previous_release": "1.8.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "e8378d1e7469902551bfad2bcac9d9e661a649fd",
+          "author_date": "2017-09-04T19:07:49Z",
+          "message": "Fixed swiched parameters in install",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/e8378d1e7469902551bfad2bcac9d9e661a649fd"
+        },
+        {
+          "sha": "49da91c786855228158cb8937c972cd741bd4c79",
+          "author_date": "2017-09-04T19:10:15Z",
+          "message": "Fixed compile bug",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/49da91c786855228158cb8937c972cd741bd4c79"
+        },
+        {
+          "sha": "adb9ab142416639a6b521230fd5126e6c90702d2",
+          "author_date": "2017-09-05T07:58:50Z",
+          "message": "Merge pull request #660 from SloCompTech/master\n\nfixes #659\r\nfixes #661",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/adb9ab142416639a6b521230fd5126e6c90702d2"
+        },
+        {
+          "sha": "1b68b02ccd8af929cd19fab17aba991ef798c11e",
+          "author_date": "2017-09-09T19:46:07Z",
+          "message": "Try adding python-3.5 in TravisCI",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/1b68b02ccd8af929cd19fab17aba991ef798c11e"
+        },
+        {
+          "sha": "c89f0282d1ce31e752a80eae224cdd5aa92fae4b",
+          "author_date": "2017-09-09T19:49:55Z",
+          "message": "Do not write to stderr\n\nfixes #665\ncloses #666",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/c89f0282d1ce31e752a80eae224cdd5aa92fae4b"
+        },
+        {
+          "sha": "3b5f8bef413a10d99111bc33506bcb9a75f6c19b",
+          "author_date": "2017-09-09T20:15:10Z",
+          "message": "Merge pull request #667 from cdunn2001/foo\n\nDrop stderr",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/3b5f8bef413a10d99111bc33506bcb9a75f6c19b"
+        },
+        {
+          "sha": "e895eccd18d7afc7d17fe3f22c67b09ad4efe208",
+          "author_date": "2017-09-11T00:28:32Z",
+          "message": "Generated new footer.html",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/e895eccd18d7afc7d17fe3f22c67b09ad4efe208"
+        },
+        {
+          "sha": "c95a841fef740c57ba5b3bcd53542f3bec5e2830",
+          "author_date": "2017-09-11T00:29:00Z",
+          "message": "Generated new header.html",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/c95a841fef740c57ba5b3bcd53542f3bec5e2830"
+        },
+        {
+          "sha": "692164d471160dafcc4419c37b005ec46c079eff",
+          "author_date": "2017-09-11T00:53:42Z",
+          "message": "Update header.html",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/692164d471160dafcc4419c37b005ec46c079eff"
+        },
+        {
+          "sha": "a7ad98fb824bf527b5e82c40de98f0bc366d7adb",
+          "author_date": "2017-09-11T00:54:23Z",
+          "message": "rsync less",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/a7ad98fb824bf527b5e82c40de98f0bc366d7adb"
+        },
+        {
+          "sha": "1a54511aa1558dc9c58322704f31b44fa9e7441b",
+          "author_date": "2017-09-11T01:00:43Z",
+          "message": "Drop timestamp from HTML doxygen",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/1a54511aa1558dc9c58322704f31b44fa9e7441b"
+        },
+        {
+          "sha": "b29fc9834ffab3d9eb1e0919f9c72f80f9918e38",
+          "author_date": "2017-09-11T01:04:24Z",
+          "message": "Link classes and namespace",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/b29fc9834ffab3d9eb1e0919f9c72f80f9918e38"
+        },
+        {
+          "sha": "66d4573206ac7b6ae1002b5f37d4f821802dd356",
+          "author_date": "2017-09-11T01:10:18Z",
+          "message": "Drop TITLE from Doxygen docs\n\nIt took up too much room at the top.\n\nNote that we needed to remove it from 2 places, since the main\nindex.html seems not to use the same top-of-page as the rest uses.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/66d4573206ac7b6ae1002b5f37d4f821802dd356"
+        },
+        {
+          "sha": "9bb984a59444c26a3509b8de9c5c5d4dec7985b3",
+          "author_date": "2017-09-11T13:14:52Z",
+          "message": "Update writer.h\n\nfix typos",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/9bb984a59444c26a3509b8de9c5c5d4dec7985b3"
+        },
+        {
+          "sha": "132840aaa14421f1424fb174ebf8fd2d5991fe1f",
+          "author_date": "2017-09-11T18:39:38Z",
+          "message": "More VS warning prevention\n\nSee comment by jpo38 in SO:\n* https://stackoverflow.com/questions/46151531/how-works-deprecated-warnings-and-how-to-remove-them-when-using-jsoncpp/46156833#46156833",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/132840aaa14421f1424fb174ebf8fd2d5991fe1f"
+        },
+        {
+          "sha": "614671d09b41912aef395e6a3f5fdda2dce1e503",
+          "author_date": "2017-09-11T19:00:59Z",
+          "message": "Merge pull request #669 from cdunn2001/avoid-redundant-depreciation-warnings\n\nIgnoring the unrelated TravisCI build errors. Those are being addressed separately, in #670.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/614671d09b41912aef395e6a3f5fdda2dce1e503"
+        },
+        {
+          "sha": "026c39fa1aa94fc63f2cb96a1e32daef541a3c67",
+          "author_date": "2017-09-11T18:26:37Z",
+          "message": "Try Travis support suggestion for py3\n\nHi Christopher,\n\nThank you for reaching out and sorry to hear about the troubles.\n\nRegarding the pip3 error, it was indeed caused by our image updates. We've cleaned-up the way we set-up the Python environment and now strictly enforce Python version use using pyenv. Which means that if you want to use a different Python version than the system one (which is 2.7.6), you have to explicitly specify it. Adding a \"before_install: pyenv global 3.5\" step to your travis.yml should switch the system version and make pip3 work without installing any additional packages.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/026c39fa1aa94fc63f2cb96a1e32daef541a3c67"
+        },
+        {
+          "sha": "f2f19b03fb1504d5f99c213a8b85f72484a4aff3",
+          "author_date": "2017-09-14T04:07:21Z",
+          "message": "Merge pull request #670 from cdunn2001/fix-travis\n\nFix travis",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/f2f19b03fb1504d5f99c213a8b85f72484a4aff3"
+        },
+        {
+          "sha": "ff6b449a07469ced280a76eaf1abaa1ca766b840",
+          "author_date": "2017-09-14T07:31:36Z",
+          "message": "Add value_type to improve integration with boost\n\nWithout value_type, Boost.Test version 1.65.0 throws a compiler error when a Json::Value object is compared to another with BOOST_TEST. Example and further discussion are in https://github.com/open-source-parsers/jsoncpp/issues/671.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ff6b449a07469ced280a76eaf1abaa1ca766b840"
+        },
+        {
+          "sha": "21e133c6fb477530c2095aad16278368e721b327",
+          "author_date": "2017-09-15T06:11:24Z",
+          "message": "Merge pull request #675 from wolframroesler/patch-1\n\ncloses #671",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/21e133c6fb477530c2095aad16278368e721b327"
+        },
+        {
+          "sha": "17c14e73a9588536dc613fbb523cedcd5964c33f",
+          "author_date": "2017-09-15T23:55:50Z",
+          "message": "Use move ctor in append()",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/17c14e73a9588536dc613fbb523cedcd5964c33f"
+        },
+        {
+          "sha": "9249878229e03a594eb6276c8f0ed6f9c21cb51f",
+          "author_date": "2017-09-16T00:15:50Z",
+          "message": "Merge pull request #678 from open-source-parsers/append-move\n\nfixes #677",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/9249878229e03a594eb6276c8f0ed6f9c21cb51f"
+        },
+        {
+          "sha": "7287065b6306961fd15abf0d60b061ee3233d62f",
+          "author_date": "2017-09-16T09:01:09Z",
+          "message": "Fix unknown pragma warnings with clang",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/7287065b6306961fd15abf0d60b061ee3233d62f"
+        },
+        {
+          "sha": "43fd41d1fc31bfaa9606004fc89aa2b7b33d74c6",
+          "author_date": "2017-09-16T10:19:30Z",
+          "message": "Fix meson.build to allow using jsoncpp as a subproject",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/43fd41d1fc31bfaa9606004fc89aa2b7b33d74c6"
+        },
+        {
+          "sha": "75e0c39393228103b225ca1fa5902fe934b79a97",
+          "author_date": "2017-09-17T07:54:43Z",
+          "message": "Merge pull request #680 from jasonszang/master\n\nFix meson.build to allow using jsoncpp as a subproject",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/75e0c39393228103b225ca1fa5902fe934b79a97"
+        },
+        {
+          "sha": "4d587638af9b79ad379cf831f28f19f64f33c0ef",
+          "author_date": "2017-09-17T07:56:21Z",
+          "message": "Merge pull request #679 from hughbe/clang-warnings\n\nFix unknown pragma warnings with clang",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/4d587638af9b79ad379cf831f28f19f64f33c0ef"
+        },
+        {
+          "sha": "a3a40593670d16a534a94a81063ff54201c9a63b",
+          "author_date": "2017-09-30T05:46:15Z",
+          "message": "Use non-deprecated removeMember()\n\ncloses #683",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/a3a40593670d16a534a94a81063ff54201c9a63b"
+        },
+        {
+          "sha": "42a161fc80b32cc63c1a3e7ab1c9ed588a83edaa",
+          "author_date": "2017-10-04T01:19:20Z",
+          "message": "Serialize UTF-8 string with Unicode escapes (#687)\n\nSquashed and merged.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/42a161fc80b32cc63c1a3e7ab1c9ed588a83edaa"
+        },
+        {
+          "sha": "a06b390187c0b01ea0363b93e3e74117aa55da4b",
+          "author_date": "2017-10-18T05:19:27Z",
+          "message": "Un-deprecate removeMember overloads, return void (#693)\n\n* Un-deprecate removeMember overloads, return void\r\n\r\nSometimes we just want to remove something we don't need anymore. Having\r\nto supply a return buffer for the removeMember function to return something\r\nwe don't care about is a nuisance. There are removeMember overloads that\r\ndon't need a return buffer but they are deprecated. This commit un-deprecates\r\nthese overloads and modifies them to return nothing (void) instead of the\r\nobject that was removed.\r\n\r\nFurther discussion: https://github.com/open-source-parsers/jsoncpp/pull/689\r\n\r\nWARNING: Changes the return type of the formerly deprecated removeMember\r\noverloads from Value to void. May break existing client code.\r\n\r\n* Minor stylistic fixes\r\n\r\nDon't explicitly return a void value from a void function. Also, convert\r\nsize_t to unsigned in the CZString ctor to avoid a compiler warning.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/a06b390187c0b01ea0363b93e3e74117aa55da4b"
+        },
+        {
+          "sha": "5a2dc7a2ad889bfe38901f93c2f694ffae306d4d",
+          "author_date": "2017-10-18T05:20:45Z",
+          "message": "Add comment to README giving instructions on how to install to a directory other than /usr/local (#694)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/5a2dc7a2ad889bfe38901f93c2f694ffae306d4d"
+        },
+        {
+          "sha": "d61cddedac68f6dd3991d285045a23aeb253aa53",
+          "author_date": "2017-10-30T04:45:01Z",
+          "message": "rm unused func",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d61cddedac68f6dd3991d285045a23aeb253aa53"
+        },
+        {
+          "sha": "240c85a10c6e2267cae1122247f763e1cb087b59",
+          "author_date": "2017-11-10T09:58:43Z",
+          "message": "MSVC warning fixes in tests\n\n- only use \"#pragma GCC\" on GCC-compatible compilers\n- suppress deprecation warnings also on MSVC",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/240c85a10c6e2267cae1122247f763e1cb087b59"
+        },
+        {
+          "sha": "c469326b4741cda1798de312379f952a08d47e5e",
+          "author_date": "2017-11-16T19:08:39Z",
+          "message": "Merge pull request #699 from MarcelRaad/msvc_warnings\n\nMSVC warning fixes in tests",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/c469326b4741cda1798de312379f952a08d47e5e"
+        },
+        {
+          "sha": "7c979e86610f48fa50e740854bcfce170b50fb46",
+          "author_date": "2017-11-16T19:13:55Z",
+          "message": "Suppress implicit-fallthrough warnings from GCC 7 (#697)\n\nGCC 7, when compiling with -Wimplicit-fallthrough=1 or higher, issues a warning which can be suppressed using a comment that matches certain regular expressions. The comment change does just that: signal to GCC that the fall through is intentional.\r\n\r\nFixes #676",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/7c979e86610f48fa50e740854bcfce170b50fb46"
+        },
+        {
+          "sha": "e6a588a2461f6c7cc7af37604363dd67757ccae1",
+          "author_date": "2017-12-03T16:54:29Z",
+          "message": "Spelling (#703)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/e6a588a2461f6c7cc7af37604363dd67757ccae1"
+        },
+        {
+          "sha": "42ca02b83399c42efee63344574260cbdb38d075",
+          "author_date": "2017-12-05T01:49:36Z",
+          "message": "Fix sign mismatch in `valueToString`\n\n`valueToString` takes an argument `unsigned int precision`, but it is used with `%d` rather than `%u` in the `snprintf` format string. Make the format string look for an unsigned value instead.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/42ca02b83399c42efee63344574260cbdb38d075"
+        },
+        {
+          "sha": "c39aa295e4935d71ff3b420ad24d8f75f3b84e97",
+          "author_date": "2017-12-05T02:02:47Z",
+          "message": "Merge pull request #707 from remyjette/valuetostring-sign-mismatch\n\nFix sign mismatch in `valueToString`",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/c39aa295e4935d71ff3b420ad24d8f75f3b84e97"
+        },
+        {
+          "sha": "9079422ac11314e7f6485ac35e8d66c5bdaad4ba",
+          "author_date": "2017-12-05T17:18:55Z",
+          "message": "Allow Json::Value to be used in a boolean context (#695)\n\nMust bump soversion too.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/9079422ac11314e7f6485ac35e8d66c5bdaad4ba"
+        },
+        {
+          "sha": "41ff85f443e67eeefb33dbdc6e15dc4373f544c5",
+          "author_date": "2017-12-20T20:24:51Z",
+          "message": "pyenv install (#713)\n\n```\r\nUnfortunately, since our latest image update, Python 3.5 doesn't come pre-installed anymore. Hence, you will have to install it via `pyenv` as a first step e.g.\r\n\r\nbefore_install\r\n  - pyenv install 3.5.0 && pyenv global 3.5.0\r\n\r\nsupport@travis-ci.com\r\n```",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/41ff85f443e67eeefb33dbdc6e15dc4373f544c5"
+        },
+        {
+          "sha": "63ab03ca28d13763f7e05dedf3eca90cbf052a64",
+          "author_date": "2017-12-20T20:43:55Z",
+          "message": "replace code point in range(0xD800, 0xDFFF) to replacement mark (#714)\n\ncloses #712",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/63ab03ca28d13763f7e05dedf3eca90cbf052a64"
+        },
+        {
+          "sha": "ddabf50f72cf369bf652a95c4d9fe31a1865a781",
+          "author_date": "2017-12-20T20:52:26Z",
+          "message": "1.8.4; soversion=20",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ddabf50f72cf369bf652a95c4d9fe31a1865a781"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.10.7",
@@ -1047,8 +1735,309 @@
     {
       "release": "1.9.7",
       "previous_release": "1.9.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "76ff1db84d5f3b7515eb3934126b78d178057af9",
+          "author_date": "2024-09-11T23:47:59Z",
+          "message": "Fixes PreventInSourceBuilds.cmake to work with add_subdirectory (#1383)\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/76ff1db84d5f3b7515eb3934126b78d178057af9"
+        },
+        {
+          "sha": "54fc4e28ed98ecaa8ce79d39d72bc9e3f8b35c13",
+          "author_date": "2024-09-11T23:53:22Z",
+          "message": "json_value.cpp bug in the edges of uint/int (#1519)\n\n* json_value.cpp bug in the edges of uint/int\r\n\r\nFixing bug of sending a number that is a bit bigger than max<uint64_t> it returns 0:\r\nhttps://stackoverflow.com/questions/77261400/jsoncpp-do-not-protect-from-uint64-overflow-and-have-weird-behavior/77261716#77261716\r\n\r\n* Update json_value.cpp\r\n\r\nFixing bug of sending a number that is a bit bigger than max<uint64_t> it returns 0: https://stackoverflow.com/questions/77261400/jsoncpp-do-not-protect-from-uint64-overflow-and-have-weird-behavior/77261716#77261716\r\n\r\n* Update test cases\r\n\r\n* json_value.cpp bug in the edges of uint/int\r\n\r\nFixing bug of sending a number that is a bit bigger than max<uint64_t> it returns 0:\r\nhttps://stackoverflow.com/questions/77261400/jsoncpp-do-not-protect-from-uint64-overflow-and-have-weird-behavior/77261716#77261716\r\n\r\n* Run clang tidy\r\n\r\n---------\r\n\r\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/54fc4e28ed98ecaa8ce79d39d72bc9e3f8b35c13"
+        },
+        {
+          "sha": "871f0cc43bbd9ccf4e4a67df5a7751f53b49d99e",
+          "author_date": "2024-09-12T00:01:27Z",
+          "message": "Release 1.9.6 and move versions to 1.9.7 (#1566)\n\n* Release 1.9.6 and move versions to 1.9.7\r\n\r\nThis patch updates versions to be for version 1.9.7.\r\n\r\n* remove log.txt",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/871f0cc43bbd9ccf4e4a67df5a7751f53b49d99e"
+        },
+        {
+          "sha": "07e3d1b076aff1700daf188cd8a00b25b9712af9",
+          "author_date": "2024-09-12T00:43:25Z",
+          "message": "Fix deallocate for working on old compiers (#1478)\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/07e3d1b076aff1700daf188cd8a00b25b9712af9"
+        },
+        {
+          "sha": "8214f717e7c7d361f002b6c3d1b1086ddd096315",
+          "author_date": "2024-09-12T17:58:39Z",
+          "message": "Fix typo in JSONCPP_USE_SECURE_MEMORY vs JSONCPP_USING_SECURE_MEMORY (#1567)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/8214f717e7c7d361f002b6c3d1b1086ddd096315"
+        },
+        {
+          "sha": "bd25fc5ea0e14d19e1451632205c8b99ec0b1c09",
+          "author_date": "2024-09-30T22:23:00Z",
+          "message": "fix(build): remove `check_required_components` for meson build (#1570)\n\nSigned-off-by: Rui Chen <rui@chenrui.dev>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/bd25fc5ea0e14d19e1451632205c8b99ec0b1c09"
+        },
+        {
+          "sha": "2b3815c90d163d34bed75dbc657f9545cb3d382f",
+          "author_date": "2024-12-03T07:00:25Z",
+          "message": "the cgi module was removed from Python3.13 (#1578)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/2b3815c90d163d34bed75dbc657f9545cb3d382f"
+        },
+        {
+          "sha": "3f86349128b044598ce9a19c1ef92f2b7f4131bc",
+          "author_date": "2024-12-03T07:19:05Z",
+          "message": "Fix name of static library when targeting MinGW. (#1579)\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/3f86349128b044598ce9a19c1ef92f2b7f4131bc"
+        },
+        {
+          "sha": "dca8a24cf8da1fc61b5cf0422cad03474124196c",
+          "author_date": "2024-12-05T06:28:16Z",
+          "message": "Fix comparison warnings caused by 54fc4e2 (#1575)\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/dca8a24cf8da1fc61b5cf0422cad03474124196c"
+        },
+        {
+          "sha": "07a8fe6a235a91e9ad9bd69fae25a3ed07162ac0",
+          "author_date": "2025-01-10T23:17:00Z",
+          "message": "Drop pre-C++11 alternatives (#1593)\n\n* Assume C++11\n\nWe already assume C++11 elsewhere, so all pre-11 `#ifdef` branches are\ndead code at this point. Fixes issue #1591 because we can just use\n`std::isfinite` etc.\n\nassume C++11 in json_reader.cpp as well\n\napply clang-format\n\n* valueToString: simplify lookup of special float name",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/07a8fe6a235a91e9ad9bd69fae25a3ed07162ac0"
+        },
+        {
+          "sha": "60ccc1f5deb671e95d2a6cc761f6d03f3c8ade07",
+          "author_date": "2025-01-10T23:25:25Z",
+          "message": "feat: support std::string_view in Value API (#1584)\n\nThis adds direct support for `std::string_view` when available (C++17\r\nand above). The current API can be used with `std::string_view` via the\r\nlow-level two-pointer methods, but is not ergonomic. E.g., compare:\r\n\r\n```\r\nJson::Value node;\r\nstd::string foo, bar, baz;\r\nstd::string_view foo_sv, bar_sv, baz_sv;\r\n\r\n// Efficient & readable:\r\nnode[foo][bar][baz];\r\n// Less efficient, less readable:\r\nnode[std::string(foo_sv)][std::string(bar_sv)][std::string(baz_sv)];\r\n// Efficient, but a lot less readable:\r\n*node.demand(foo_sv.data(), foo_sv.data() + foo_sv.size())\r\n    ->demand(bar_sv.data(), bar_sv.data() + bar_sv.size())\r\n    ->demand(baz_sv.data(), baz_sv.data() + baz_sv.size())\r\n// After this change, efficient & readable:\r\nnode[foo_sv][bar_sv][baz_sv];\r\n```\r\n\r\n*   The constructor can take a `std::string_view` parameter. The existing\r\n    overloads taking `const std::string&` and `const char*` are still necessary\r\n    to support assignment from those types.\r\n*   `operator[]`, `get()`, `isMember()` and `removeMember()` take a\r\n    `std::string_view` parameter. This supersedes the overloads taking\r\n    `const std::string&` and `const char*`. The overloads taking a pair of\r\n    pointers (begin, end) are preserved for source compatibility.\r\n*   `getString()` has an overload with a `std::string_view` output parameter.\r\n    The one with a pair of pointers is preserved for source compatibility.\r\n\r\nSigned-off-by: Lev Kandel <lmakhlis@google.com>\r\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/60ccc1f5deb671e95d2a6cc761f6d03f3c8ade07"
+        },
+        {
+          "sha": "ba004477a6f260dedbe6ef6470b3760192e8d232",
+          "author_date": "2025-01-10T23:38:47Z",
+          "message": "Added Value::findType with String key (#1574)\n\nThis adds a convenience function to return a member if it has a specific\r\njson type. All isType values are supported.\r\n\r\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ba004477a6f260dedbe6ef6470b3760192e8d232"
+        },
+        {
+          "sha": "037752d9a1e48c8b7e5a62ee895a352166df03e3",
+          "author_date": "2025-03-12T22:57:16Z",
+          "message": "Set up for Bazel module builds. (#1597)\n\n* Set up for Bazel module builds.\n\nNote: the MODULE.bazel is copied from https://github.com/bazelbuild/bazel-central-registry/blob/main/modules/jsoncpp/1.9.6/MODULE.bazel\n\n* More tweaks to .gitignore",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/037752d9a1e48c8b7e5a62ee895a352166df03e3"
+        },
+        {
+          "sha": "ca98c98457b1163cca1f7d8db62827c115fec6d1",
+          "author_date": "2025-03-18T23:15:37Z",
+          "message": "Add a BUILD.bazel file for //example. (#1602)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ca98c98457b1163cca1f7d8db62827c115fec6d1"
+        },
+        {
+          "sha": "9af09c4a4abe5928d1f7a6e7ec1c73a565bb362e",
+          "author_date": "2025-11-11T01:51:20Z",
+          "message": "Fix \"include what you use\" issue (#1625)\n\nFix IWYU for istreambuf_iterator.\n\nCo-authored-by: Victor Hugo Vianna Silva <victorvianna@google.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/9af09c4a4abe5928d1f7a6e7ec1c73a565bb362e"
+        },
+        {
+          "sha": "6f6aca167fb016a47d6bb320e6bcce8e4bfe5708",
+          "author_date": "2025-11-12T07:58:32Z",
+          "message": "Make the build configuration under Bazel more correct. (#1600)\n\n* Expose JSON_USE_EXCEPTION and JSON_HAS_INT64 as Bazel config flags with defaults that match the existing Bazel build.\nSwitch //:jsoncpp from using copts ro defines for JSON_USE_EXCEPTION and JSON_HAS_INT64 so that rules that depend on it get the same config.\nMake src/test_lib_json/fuzz.cpp respect JSON_USE_EXCEPTION.\n\n* #ifdef stuff that should only be used with JSON_USE_EXCEPTION.\n\n---------\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/6f6aca167fb016a47d6bb320e6bcce8e4bfe5708"
+        },
+        {
+          "sha": "4bcbc6ac0509cc8b0d0d84618cfd518dd945c114",
+          "author_date": "2025-11-12T08:01:15Z",
+          "message": "Add Bazel tests (#1601)\n\n* Expose JSON_USE_EXCEPTION and JSON_HAS_INT64 as Bazel config flags with defaults that match the existing Bazel build.\nSwitch //:jsoncpp from using copts ro defines for JSON_USE_EXCEPTION and JSON_HAS_INT64 so that rules that depend on it get the same config.\nMake src/test_lib_json/fuzz.cpp respect JSON_USE_EXCEPTION.\n\n* #ifdef stuff that should only be used with JSON_USE_EXCEPTION.\n\n* Modify runjsontests.py to allow passing a single test case file.\n\n* Add tests to the Bazel builds.\n\n* Reverse the polarity to fix a bug.\n\n---------\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/4bcbc6ac0509cc8b0d0d84618cfd518dd945c114"
+        },
+        {
+          "sha": "30e7528001e17d0a03e33797010b146ae1ec2d89",
+          "author_date": "2025-11-12T08:07:06Z",
+          "message": "Return false in Reader::readValue when stack limit is exceeded (#1619)\n\njsoncpp, as a shared library, should not call `abort` merely because there's an error reading a value.\n\nSee https://en.cppreference.com/w/c/program/abort, `abort` should only be called to **abnormally** cause the program to exit. Functions inserted by `atexit` are also not called, meaning that the host program may have not cleaned up resources properly. But here, exceeding stack limit isn't a sign of abnormalty.\n\n`exit` is not a good substitute either, see the `exit-in-shared-library` from Debian:\nhttps://lintian.debian.org/tags/exit-in-shared-library.html\n\nFix #1618\n\nIn this case, returning false seems like a better idea.\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/30e7528001e17d0a03e33797010b146ae1ec2d89"
+        },
+        {
+          "sha": "e16663cc02ac1dc38f59e8a61d00fd5bcc24bc7d",
+          "author_date": "2025-11-12T08:10:33Z",
+          "message": "Remove deprecated/removed clang-tidy key AnalyzeTemporaryDtors (#1614) (#1615)\n\nCo-authored-by: Ben Magistro <ben.magistro@trinitycyber.com>\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/e16663cc02ac1dc38f59e8a61d00fd5bcc24bc7d"
+        },
+        {
+          "sha": "b511d9e64956db998b74909df112ac8c8f41d6ff",
+          "author_date": "2025-11-12T08:14:04Z",
+          "message": "[docs] Consuming JSONCpp via Conan package manager (#1622)\n\n* Fix Conan badge URL\n\nSigned-off-by: Uilian Ries <uilianries@gmail.com>\n\n* Add Conan instructions in README\n\nSigned-off-by: Uilian Ries <uilianries@gmail.com>\n\n* Add build missing\n\nSigned-off-by: Uilian Ries <uilianries@gmail.com>\n\n---------\n\nSigned-off-by: Uilian Ries <uilianries@gmail.com>\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/b511d9e64956db998b74909df112ac8c8f41d6ff"
+        },
+        {
+          "sha": "32f924ffb01abf7efb0b56f100932505e882c099",
+          "author_date": "2026-02-02T20:58:19Z",
+          "message": "Cleanup README.md, fix broken link. (#1633)\n\n* Cleanup README.md, fix broken link.\n\n* cleanup readme vcpkg notes",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/32f924ffb01abf7efb0b56f100932505e882c099"
+        },
+        {
+          "sha": "e799ca052df0f859d8d4133211344581c211b925",
+          "author_date": "2026-02-03T19:54:59Z",
+          "message": "Add gcovr.cfg to fix CI coverage merge errors (#1635)\n\nConfigures gcovr to use 'merge-mode-functions = separate', resolving the\nGcovrMergeAssertionError caused by strict merging of header-only functions\nin `jsontest.h`.\n\nAlso adds source filtering to focus reports on `src/lib_json/` and\n`include/json/`, and excludes throw branches to reduce false positives.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/e799ca052df0f859d8d4133211344581c211b925"
+        },
+        {
+          "sha": "2b3cc5a6ebd63ee8ee5e5b25e50947d3de35e6a4",
+          "author_date": "2026-03-03T01:37:00Z",
+          "message": "Remove build directory exclusion from gcovr config (#1640)\n\nRemove exclusion of the build directory from coverage.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/2b3cc5a6ebd63ee8ee5e5b25e50947d3de35e6a4"
+        },
+        {
+          "sha": "4188925158cd4d88105ba36ec5b4d56cf098085b",
+          "author_date": "2026-03-03T02:11:03Z",
+          "message": "Add workflow for version bumping",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/4188925158cd4d88105ba36ec5b4d56cf098085b"
+        },
+        {
+          "sha": "257e15aa31885d6f378b1be5094da759326efb5e",
+          "author_date": "2026-03-03T02:11:42Z",
+          "message": "Add version-bump workflow configuration",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/257e15aa31885d6f378b1be5094da759326efb5e"
+        },
+        {
+          "sha": "3b8f743eeca2e164fc80a32f6ee3078f12aa39fc",
+          "author_date": "2026-03-03T02:18:31Z",
+          "message": "Rename version-bump.yml to update-project-version.yml",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/3b8f743eeca2e164fc80a32f6ee3078f12aa39fc"
+        },
+        {
+          "sha": "fb3e7504ac9749c27c5510ccfff9089bd062d51d",
+          "author_date": "2026-03-03T02:22:46Z",
+          "message": "Refactor version bump workflow for clarity and functionality\n\nUpdated the workflow name and added target_soversion input. Modified version update commands for CMakeLists.txt, meson.build, and include/json/version.h.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/fb3e7504ac9749c27c5510ccfff9089bd062d51d"
+        },
+        {
+          "sha": "e7324155432f0c20200ee12178c73d35f96afb05",
+          "author_date": "2026-03-03T02:23:43Z",
+          "message": "Rename workflow and update descriptions",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/e7324155432f0c20200ee12178c73d35f96afb05"
+        },
+        {
+          "sha": "3b558716d00c28a51da2d0cf551b94da936171ec",
+          "author_date": "2026-03-03T02:26:01Z",
+          "message": "Enhance version update workflow with input validation\n\nUpdated descriptions for workflow inputs and added checks for file existence before updating version files.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/3b558716d00c28a51da2d0cf551b94da936171ec"
+        },
+        {
+          "sha": "50dbfd6ffb5006952ceaddf4733ddadfaf9ba1c8",
+          "author_date": "2026-03-03T02:30:20Z",
+          "message": "Update version input descriptions and handling",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/50dbfd6ffb5006952ceaddf4733ddadfaf9ba1c8"
+        },
+        {
+          "sha": "4bf4e7fcb4c1181be6ae0e3a32ba7e2b7cee1a99",
+          "author_date": "2026-03-03T02:37:44Z",
+          "message": "Update version descriptions and improve sed commands",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/4bf4e7fcb4c1181be6ae0e3a32ba7e2b7cee1a99"
+        },
+        {
+          "sha": "b52dce4e2ba4bc55d268523b4cd405990109a3ad",
+          "author_date": "2026-03-03T02:42:21Z",
+          "message": "Update versioning logic in workflow configuration",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/b52dce4e2ba4bc55d268523b4cd405990109a3ad"
+        },
+        {
+          "sha": "c4a1e4ccf8f2d7e3d8801b04eae1c76700900383",
+          "author_date": "2026-03-03T02:45:47Z",
+          "message": "Update versioning in update-project-version.yml",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/c4a1e4ccf8f2d7e3d8801b04eae1c76700900383"
+        },
+        {
+          "sha": "728ad03790d21d31140b530c97dfcce6234ed993",
+          "author_date": "2026-03-03T02:48:27Z",
+          "message": "Clarify version update comments in workflow script\n\nUpdated comments in the version bumping script to clarify that only the version inside the project() or module() blocks is updated for CMakeLists.txt, meson.build, and MODULE.bazel. Removed unnecessary version updates for include/json/version.h and related sanity checks.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/728ad03790d21d31140b530c97dfcce6234ed993"
+        },
+        {
+          "sha": "acf3b5dbaca090a53e3bc3f21a52c0052d37c10f",
+          "author_date": "2026-03-03T02:50:47Z",
+          "message": "Add test for allowDroppedNullPlaceholders (#1648)",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/acf3b5dbaca090a53e3bc3f21a52c0052d37c10f"
+        },
+        {
+          "sha": "1d5b0b1abecb1b00694a069a8160dc02ab667c06",
+          "author_date": "2026-03-03T02:59:37Z",
+          "message": "prevent test colision when running in parallel via RESOURCE_LOCK (#1637)\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/1d5b0b1abecb1b00694a069a8160dc02ab667c06"
+        },
+        {
+          "sha": "dc45da884eb49636e53329d4776a6be9d80a0b22",
+          "author_date": "2026-03-03T03:19:30Z",
+          "message": "fixup project version updater (#1649)\n\n* fixup project version updater\n\n* Enhance version bumping workflow in YAML\n\nUpdated the versioning script to handle version bumps in various files, including CMakeLists.txt, meson.build, MODULE.bazel, vcpkg.json, and include/json/version.h. Improved echo statements and jq command usage.\n\n* fix meson inclusion probably.\n\n* Refactor update-project-version workflow\n\nRemoved sanity check and pull request creation steps from the workflow.\n\n* Add version verification and pull request creation steps\n\n* Simplify version update workflow\n\nRefactor version update logic and remove unnecessary checks.\n\n* Refactor version extraction in workflow script\n\n* Enhance workflow with CMake sanity check and version bump\n\nAdd sanity check for CMake configuration and automate version bump process.\n\n* Fix regex patterns for version updates in YAML\n\n* Refactor version update script for clarity and efficiency\n\n* Fix label formatting in update-project-version.yml",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/dc45da884eb49636e53329d4776a6be9d80a0b22"
+        },
+        {
+          "sha": "87139ddc8614767e36969838c18483227dd15318",
+          "author_date": "2026-03-09T19:15:08Z",
+          "message": "Update README with project status and focus (#1639)\n\n* Update README with project status and focus\n\nAdd project status and focus areas to README\n\n* Update README.md\n\n* docs: Restore maintainer disclaimers and fix Conan instructions\n\nThis commit adds back the warning about community-maintained package managers and the warning about the Amalgamated Source being possibly outdated to prevent misdirected issues. It also includes the necessary generators for Conan 2 in the README's Conan section to resolve issue #1629 while preserving the brevity of the new layout.",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/87139ddc8614767e36969838c18483227dd15318"
+        },
+        {
+          "sha": "dbd0850e9ac2b18b91fa5588b1243bbc0eb037c6",
+          "author_date": "2026-03-10T00:33:25Z",
+          "message": "Adding a cmake option to exclude the jsoncpp files from install. (#1596)\n\n* Adding a cmake option to exclude the jsoncpp files from install. Useful when used used as a submodule\n\n* Updaing help text\n\n---------\n\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/dbd0850e9ac2b18b91fa5588b1243bbc0eb037c6"
+        },
+        {
+          "sha": "715735abbe29ee973049b34a7b6336b93d321284",
+          "author_date": "2026-03-15T20:57:22Z",
+          "message": "Change stack depth limit to 256 (#1657)\n\n* Change stack depth limit to 256\n\n* run clang format",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/715735abbe29ee973049b34a7b6336b93d321284"
+        },
+        {
+          "sha": "134138d0eb404eedd7b421609e795c858895c0ab",
+          "author_date": "2026-03-15T23:33:53Z",
+          "message": "Fix uninitialized CMake variable in version.in (#1658)\n\nCMake's project() command sets jsoncpp_VERSION (lowercase prefix),\nnot JSONCPP_VERSION. The wrong variable caused the generated version\nfile to be empty.\n\nFixes #1656\n\nCo-authored-by: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/134138d0eb404eedd7b421609e795c858895c0ab"
+        },
+        {
+          "sha": "ef0877151eb14f2d75fea139b5de34a048733e8b",
+          "author_date": "2026-03-16T00:54:08Z",
+          "message": "Fix CMake deprecation warning for compatibility with CMake < 3.10    (#1659)\n\n* Fix uninitialized CMake variable in version.in\n\nCMake's project() command sets jsoncpp_VERSION (lowercase prefix),\nnot JSONCPP_VERSION. The wrong variable caused the generated version\nfile to be empty.\n\nFixes #1656\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* Fix CMake deprecation warning for compatibility with CMake < 3.10\n\nBump JSONCPP_OLDEST_VALIDATED_POLICIES_VERSION from 3.8.0 to 3.10.0\nto silence the CMake 3.31 deprecation warning.\n\nFixes #1598\n\n---------\n\nCo-authored-by: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ef0877151eb14f2d75fea139b5de34a048733e8b"
+        },
+        {
+          "sha": "215b0258171aef90a708a7e4a2c40ba19a74a13a",
+          "author_date": "2026-03-16T00:57:42Z",
+          "message": "Scope JSON_DLL_BUILD to shared lib target only (#1660)\n\nReplaced directory-wide add_compile_definitions/add_definitions with\ntarget_compile_definitions PRIVATE on the shared lib target, so\nJSON_DLL_BUILD is not incorrectly applied to static and object libs.\n\nFixes #1634",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/215b0258171aef90a708a7e4a2c40ba19a74a13a"
+        },
+        {
+          "sha": "8661f9e5fb51ae6bd839c635ba325f0fe7ba4974",
+          "author_date": "2026-03-16T05:33:54Z",
+          "message": "Fix number parsing failing under non-C locales (#1662)\n\nIStringStream inherits the global locale, so parsing doubles with\noperator>> fails when the locale uses ',' as the decimal separator\n(e.g. de_DE). Imbue the stream with std::locale::classic() in both\nReader::decodeDouble and OurReader::decodeDouble.\n\nThe writer already handles this correctly via fixNumericLocale().\n\nFixes #1565",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/8661f9e5fb51ae6bd839c635ba325f0fe7ba4974"
+        },
+        {
+          "sha": "94aee4f71552afcb8968ca8c7c1631471afa7ad8",
+          "author_date": "2026-03-16T05:36:14Z",
+          "message": "Reject unescaped control characters in JSON strings (#1663)\n\nRFC 8259 requires that control characters (U+0000-U+001F) be escaped\nwhen they appear inside strings. jsoncpp previously accepted them\nsilently. Add a check in Reader::decodeString and\nOurReader::decodeString to return an error when an unescaped control\ncharacter is encountered.\n\nFixes #1546",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/94aee4f71552afcb8968ca8c7c1631471afa7ad8"
+        },
+        {
+          "sha": "d4742c2b4550d4ee516f065c87315c756ac2430f",
+          "author_date": "2026-03-16T05:36:29Z",
+          "message": "Fix MSAN issue in #1626 (#1654)\n\n* Fix MSAN issue in #1626\n\nThis patch fixes an MSAN issue by changing CZString\ninitialization.\n\n* add test\n\n* expand tests\n\n* fix build\n\n* Export CZString with JSON_API to fix Windows DLL linker errors",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/d4742c2b4550d4ee516f065c87315c756ac2430f"
+        },
+        {
+          "sha": "9a5bbec0d63804de9cf028a9fbc69f8fa0dc901e",
+          "author_date": "2026-03-16T05:38:17Z",
+          "message": "Fix string_view ABI mismatch between library and consumers (#1661)\n\nThe library was forced to build with CMAKE_CXX_STANDARD 11, so\nJSONCPP_HAS_STRING_VIEW was never defined at compile time. Consumers\nbuilding with C++17 would see the string_view APIs in the header but\nfail to link them.\n\nFix:\n- Remove the global CMAKE_CXX_STANDARD 11 override; the existing\n  target_compile_features(cxx_std_11) already enforces the minimum.\n- Detect string_view support at configure time with\n  check_cxx_source_compiles and export JSONCPP_HAS_STRING_VIEW as a\n  PUBLIC compile definition on all library targets, so consumers\n  always see the same value the library was built with.\n- Guard the __cplusplus fallback in value.h so it does not override\n  the CMake-set define.\n\nFixes #1595",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/9a5bbec0d63804de9cf028a9fbc69f8fa0dc901e"
+        },
+        {
+          "sha": "02e903a847fb30366491007b45cf8e90ac871114",
+          "author_date": "2026-03-16T05:45:14Z",
+          "message": "Revert \"Fix number parsing failing under non-C locales\" (#1664)\n\n* Revert \"Fix number parsing failing under non-C locales (#1662)\"\n\nThis reverts commit 8661f9e5fb51ae6bd839c635ba325f0fe7ba4974.\n\n* readd json reader changes",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/02e903a847fb30366491007b45cf8e90ac871114"
+        },
+        {
+          "sha": "ce757bee45b84a42885af06897e378247ccecb94",
+          "author_date": "2026-03-16T05:51:09Z",
+          "message": "Fix use-after-free in Reader::parse(std::istream&) (#1665)\n\nThe istream overload stored the document in a local String then\npassed raw pointers into it to parse(const char*, const char*),\nwhich kept those pointers in begin_/end_. After parse() returned\nthe local String was destroyed, leaving begin_/end_ dangling.\nAny subsequent call to getFormattedErrorMessages() would then\nread freed memory.\n\nFix by reading the stream into the member document_ instead, matching\nthe behavior of parse(const std::string&).\n\nAlso document the lifetime requirement on parse(const char*, const\nchar*): the caller's buffer must outlive the Reader if error-reporting\nmethods are used after parsing.\n\nFixes #1623",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/ce757bee45b84a42885af06897e378247ccecb94"
+        },
+        {
+          "sha": "3455302847cf1e4671f1d8f5fa953fd46a7b1404",
+          "author_date": "2026-03-16T20:09:40Z",
+          "message": "Update bazel config for 9.x (#1655)\n\n* Update bazel config for 9.x\n\nBazel 9.x+ requires explicit load statements for things that were\npreviously included in bazel. I automatically added these with\n`buildifier` and added some reasonable minimum versions to the\nMODULE.bazel file.\n\n* Fix tests for Bazel 9.x sandbox\n\n---------\n\nCo-authored-by: Jordan Bayles <jophba@chromium.org>\nCo-authored-by: Jordan Bayles <bayles.jordan@gmail.com>",
+          "html_url": "https://github.com/open-source-parsers/jsoncpp/commit/3455302847cf1e4671f1d8f5fa953fd46a7b1404"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.9.8",

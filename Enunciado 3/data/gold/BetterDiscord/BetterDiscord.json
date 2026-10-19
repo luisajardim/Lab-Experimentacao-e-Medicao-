@@ -1182,8 +1182,177 @@
     {
       "release": "v1.1.0",
       "previous_release": "v1.0.0-beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "1312bca78f8160638820b6d13376224da5008362",
+          "author_date": "2021-03-18T14:00:12Z",
+          "message": "Fix build and add instructions",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/1312bca78f8160638820b6d13376224da5008362"
+        },
+        {
+          "sha": "f3f15ec72cdcff56c81dfa89d6a84d91ad11b311",
+          "author_date": "2021-03-18T21:50:47Z",
+          "message": "Fix multiple bugs, change to sync loading\n\n- Removes copy selector developer option\n- Add a crash check in the injector\n- Switch from throwing over the wall to using <script> elements\n- Revert to synchronous loading due to above\n- Don't load on login screen\n- Plugin logging includes version numbers\n- Fix blankslate links\n- Fix changelog overflow",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/f3f15ec72cdcff56c81dfa89d6a84d91ad11b311"
+        },
+        {
+          "sha": "bd9b681e3fd8371387846ba63c5ce09e9dc445d2",
+          "author_date": "2021-03-25T16:19:55Z",
+          "message": "Fixes issues with bd folder",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/bd9b681e3fd8371387846ba63c5ce09e9dc445d2"
+        },
+        {
+          "sha": "59d9ec3deaeebc63d67ed4a8d2d2656a285539c7",
+          "author_date": "2021-03-31T20:28:43Z",
+          "message": "Update the README",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/59d9ec3deaeebc63d67ed4a8d2d2656a285539c7"
+        },
+        {
+          "sha": "a2238060607a98720b761672f603bbff4a40f99b",
+          "author_date": "2021-04-03T03:16:23Z",
+          "message": "Add a few small features\n\n- Fixes colored text\n- Fixes detach window not showing saved css (closes #635)\n- Adds option to prevent Discord from hijacking the media keys (closes #410)\n- Adds command line flag to launch a vanilla version of Discord `--vanilla` (closes #337)\n- Adds option for app-wide ctrl+shift+c shortcut for inspect element (closes #349)\n- Adds emote blocklist to BdApi via `BdApi.Emotes.blocklist` (closes #408)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/a2238060607a98720b761672f603bbff4a40f99b"
+        },
+        {
+          "sha": "b739fc6f38898e283c47f83398cf8ed7a31e74b6",
+          "author_date": "2021-04-03T03:36:55Z",
+          "message": "Remove class normalizer",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/b739fc6f38898e283c47f83398cf8ed7a31e74b6"
+        },
+        {
+          "sha": "a33279ea71c1e866a2d923d5d64aa59a35d1dfd8",
+          "author_date": "2021-04-03T03:49:32Z",
+          "message": "Fix issues removing settings panels\n\nCloses #627",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/a33279ea71c1e866a2d923d5d64aa59a35d1dfd8"
+        },
+        {
+          "sha": "826aa7999cd941c775e47d21176d284696f47915",
+          "author_date": "2021-04-03T04:17:55Z",
+          "message": "Add ability to remove discord's minimum size restriction",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/826aa7999cd941c775e47d21176d284696f47915"
+        },
+        {
+          "sha": "66d8d7a069aae366dfe8e7c3ae7657ac429b9b4b",
+          "author_date": "2021-04-03T19:56:46Z",
+          "message": "Fix bugs for plugins and themes",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/66d8d7a069aae366dfe8e7c3ae7657ac429b9b4b"
+        },
+        {
+          "sha": "5b1900fe3da07f0c1e7a872e66d1fe79f0b85c37",
+          "author_date": "2021-04-05T05:43:30Z",
+          "message": "Add initial pass at core updater\n\n- Fix duplicate file regex\n- Add core updater\n- Unify versions\n- Add sanity for plugin/theme folder",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/5b1900fe3da07f0c1e7a872e66d1fe79f0b85c37"
+        },
+        {
+          "sha": "aeeb95d84bfd334b17daa7c817ada3df23a5c8dd",
+          "author_date": "2021-04-06T06:03:08Z",
+          "message": "Add more developer tools",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/aeeb95d84bfd334b17daa7c817ada3df23a5c8dd"
+        },
+        {
+          "sha": "e1a510ab4c7694408542b6759d0113aea3d6fbd4",
+          "author_date": "2021-04-06T18:09:43Z",
+          "message": "Revamp error modal",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/e1a510ab4c7694408542b6759d0113aea3d6fbd4"
+        },
+        {
+          "sha": "1c25997c4a3c89b56174711e2b85feafef2cf194",
+          "author_date": "2021-04-07T01:40:19Z",
+          "message": "Fix some smaller bugs",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/1c25997c4a3c89b56174711e2b85feafef2cf194"
+        },
+        {
+          "sha": "ebba553ed251d124981f5360a5c1f45ac2eeb84d",
+          "author_date": "2021-04-08T00:31:02Z",
+          "message": "Switch how assets are handled",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/ebba553ed251d124981f5360a5c1f45ac2eeb84d"
+        },
+        {
+          "sha": "2b4c07737883342b2756abbeb1013a15475c57cf",
+          "author_date": "2021-04-08T07:10:19Z",
+          "message": "Add French translation (#649)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/2b4c07737883342b2756abbeb1013a15475c57cf"
+        },
+        {
+          "sha": "fd43ebf7b8f0a19c2f9a6d7b3204e951e5a2697e",
+          "author_date": "2021-04-12T05:07:00Z",
+          "message": "Clean up code, add more linting, update emote styling",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/fd43ebf7b8f0a19c2f9a6d7b3204e951e5a2697e"
+        },
+        {
+          "sha": "01941c1178c13e1229e39e1f1434678a39a020b8",
+          "author_date": "2021-04-15T22:03:59Z",
+          "message": "Fix various bugs\n\n- Fix an issue removing settings collection\n- Fix bugs related to opening in system editor\n- Check for guild glasses (in webpack) a little bit later to allow for slower loading\n- Add addition try..catch around file operations in DataStore",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/01941c1178c13e1229e39e1f1434678a39a020b8"
+        },
+        {
+          "sha": "2779d9bc4f5bff18e4046317fcc648047e186272",
+          "author_date": "2021-04-15T22:08:00Z",
+          "message": "Update various pieces of UI\n\n- fix minimal mode\r\n- revamp addon error modal\r\n- restyle some aspects of toasts (includes light mode support)\r\n- overhaul addon error modal (thanks to @Strencher for some react help)\r\n- update switches to match discord's latest design",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/2779d9bc4f5bff18e4046317fcc648047e186272"
+        },
+        {
+          "sha": "2ace4925a26eae7ba2cc2a945050540b59845649",
+          "author_date": "2021-04-16T02:18:17Z",
+          "message": "Adjust how locales are handled\n\nAllows POEditor to be the main copy of translated strings (aside from en-US)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/2ace4925a26eae7ba2cc2a945050540b59845649"
+        },
+        {
+          "sha": "97f89898ab10b4e1660fdbf52a7106711e6e0fec",
+          "author_date": "2021-04-16T23:28:34Z",
+          "message": "Fix startup bug for folder users",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/97f89898ab10b4e1660fdbf52a7106711e6e0fec"
+        },
+        {
+          "sha": "eecc22d937728cce84a5836d6b041de189fe104e",
+          "author_date": "2021-04-17T16:49:03Z",
+          "message": "Update zh-cn.json (POEditor.com)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/eecc22d937728cce84a5836d6b041de189fe104e"
+        },
+        {
+          "sha": "bf20c88fcf3c41684aecf3898a47b9b8d894a23e",
+          "author_date": "2021-04-17T16:49:04Z",
+          "message": "Update zh-tw.json (POEditor.com)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/bf20c88fcf3c41684aecf3898a47b9b8d894a23e"
+        },
+        {
+          "sha": "9f1506e3798acd8a2cc6a10a928cfa36cf302b34",
+          "author_date": "2021-04-17T16:49:05Z",
+          "message": "Update fr.json (POEditor.com)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/9f1506e3798acd8a2cc6a10a928cfa36cf302b34"
+        },
+        {
+          "sha": "c988e87346da94f394361d7fc91a72e41fcdead7",
+          "author_date": "2021-04-17T16:49:07Z",
+          "message": "Update de.json (POEditor.com)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/c988e87346da94f394361d7fc91a72e41fcdead7"
+        },
+        {
+          "sha": "22ce7a7a552f160ccbcb437f0357e93779d0a874",
+          "author_date": "2021-04-17T16:49:08Z",
+          "message": "Update pl.json (POEditor.com)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/22ce7a7a552f160ccbcb437f0357e93779d0a874"
+        },
+        {
+          "sha": "eaf87f224f939af2689d12cd9166caf5b81319f1",
+          "author_date": "2021-04-17T16:49:09Z",
+          "message": "Update pt-br.json (POEditor.com)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/eaf87f224f939af2689d12cd9166caf5b81319f1"
+        },
+        {
+          "sha": "a187e8088fa66dbe390e12b1e3c7a2b479f8ef4c",
+          "author_date": "2021-04-17T16:49:10Z",
+          "message": "Update sk.json (POEditor.com)",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/a187e8088fa66dbe390e12b1e3c7a2b479f8ef4c"
+        },
+        {
+          "sha": "25873eaa96dfb59c92ed6c1ecd8b84e33fff3270",
+          "author_date": "2021-04-19T01:48:41Z",
+          "message": "Update some metadata and bump version",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/25873eaa96dfb59c92ed6c1ecd8b84e33fff3270"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.1.1",
@@ -1224,8 +1393,27 @@
     {
       "release": "v1.3.0",
       "previous_release": "v1.2.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "52fa9307bb34b92e42f7e800f07dd91c1df8821b",
+          "author_date": "2021-11-14T05:53:45Z",
+          "message": "Change startup await",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/52fa9307bb34b92e42f7e800f07dd91c1df8821b"
+        },
+        {
+          "sha": "f47c35a29efb96c851688566fec9fbdbfeaf410c",
+          "author_date": "2021-11-14T05:54:03Z",
+          "message": "Update emote menu for Discord's changes",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/f47c35a29efb96c851688566fec9fbdbfeaf410c"
+        },
+        {
+          "sha": "c662666c423f73e4086a39376b09fc5356c0a6e9",
+          "author_date": "2021-11-14T05:57:45Z",
+          "message": "Update changelog and version",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/c662666c423f73e4086a39376b09fc5356c0a6e9"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.4.0",
@@ -1266,8 +1454,15 @@
     {
       "release": "v1.5.3-hotfix2",
       "previous_release": "v1.5.3-hotfix",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c1bd4bfc6947a614367be8ed1c1001fb5d0b5f66",
+          "author_date": "2022-08-03T02:25:38Z",
+          "message": "New hotfix",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/c1bd4bfc6947a614367be8ed1c1001fb5d0b5f66"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.6.1",
@@ -1296,8 +1491,75 @@
     {
       "release": "v1.7.0",
       "previous_release": "v1.6.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9b38e442da7f24024997e0509e3e7dd343507a7c",
+          "author_date": "2022-08-31T15:59:17Z",
+          "message": "Documentation fixes & consistency improvements (#1378)\n\n* Fix incorrect docs\r\n\r\n* Adjust wording & formatting for consistency\r\n\r\n* Fix missing \"is\"",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/9b38e442da7f24024997e0509e3e7dd343507a7c"
+        },
+        {
+          "sha": "99ad2269ac833e8d100b6ce1b94286ddb55cb588",
+          "author_date": "2022-08-31T15:59:53Z",
+          "message": "Add Translations section to CONTRIBUTING.md (#1367)\n\nAs was correctly pointed out in #1356 there is no documentation about how to submit translations in the contributing guide or the readme.",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/99ad2269ac833e8d100b6ce1b94286ddb55cb588"
+        },
+        {
+          "sha": "7af885c10d3f0f45746174b724f4d56de1669be6",
+          "author_date": "2022-09-04T22:51:15Z",
+          "message": "Move public servers",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/7af885c10d3f0f45746174b724f4d56de1669be6"
+        },
+        {
+          "sha": "088ae6f10e526ef386b60caaa852f686901ef358",
+          "author_date": "2022-06-27T05:22:27Z",
+          "message": "Initial switch to pnpm",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/088ae6f10e526ef386b60caaa852f686901ef358"
+        },
+        {
+          "sha": "ff8280e2b560a1441b15f5f076ac5ea651ab5b20",
+          "author_date": "2022-07-10T20:31:10Z",
+          "message": "Move remaining things to pnpm",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/ff8280e2b560a1441b15f5f076ac5ea651ab5b20"
+        },
+        {
+          "sha": "3b9ad9b75b6ac64e6740e9c2f1d19fd4615010c7",
+          "author_date": "2022-09-06T03:58:16Z",
+          "message": "First pass polyfill",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/3b9ad9b75b6ac64e6740e9c2f1d19fd4615010c7"
+        },
+        {
+          "sha": "6d37fb63fc3d5acb0259e72b2f95055baa75bd53",
+          "author_date": "2022-09-25T19:29:17Z",
+          "message": "Fix small bugs",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/6d37fb63fc3d5acb0259e72b2f95055baa75bd53"
+        },
+        {
+          "sha": "b5a69db0b3bce83e0f72e115c748d602aa9bd590",
+          "author_date": "2022-09-26T05:57:35Z",
+          "message": "feat: move away from `request` dependency",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/b5a69db0b3bce83e0f72e115c748d602aa9bd590"
+        },
+        {
+          "sha": "8601193b51f799cc04f3fd66acd97ff90d761087",
+          "author_date": "2022-09-26T07:01:16Z",
+          "message": "Use remote vm for better error messages",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/8601193b51f799cc04f3fd66acd97ff90d761087"
+        },
+        {
+          "sha": "90b2870aa2bc79f8e74c7480b025e7b185064d0c",
+          "author_date": "2022-09-27T03:33:51Z",
+          "message": "Partial fix for swc",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/90b2870aa2bc79f8e74c7480b025e7b185064d0c"
+        },
+        {
+          "sha": "b2aae545c47adb156c8adcf1c4bf04945a22d710",
+          "author_date": "2022-09-27T03:39:31Z",
+          "message": "Merge pull request #1408 from BetterDiscord/electron17\n\nPrepare for electron 17 and patch for swc",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/b2aae545c47adb156c8adcf1c4bf04945a22d710"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.8.0",
@@ -1326,8 +1588,27 @@
     {
       "release": "v1.8.4",
       "previous_release": "v1.8.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9d7264be96b48ce1c96cb4a8da55f81c80959fdf",
+          "author_date": "2022-12-12T23:53:21Z",
+          "message": "Update version and changelog",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/9d7264be96b48ce1c96cb4a8da55f81c80959fdf"
+        },
+        {
+          "sha": "5b8a173aa0a718f21b8403c84827de3df8d95818",
+          "author_date": "2022-12-13T01:59:28Z",
+          "message": "Fix ContextMenu part two",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/5b8a173aa0a718f21b8403c84827de3df8d95818"
+        },
+        {
+          "sha": "daafbf51b135a9d903a26c79623e7b0d319b7be9",
+          "author_date": "2022-12-14T20:26:36Z",
+          "message": "Change version for hotfix",
+          "html_url": "https://github.com/BetterDiscord/BetterDiscord/commit/daafbf51b135a9d903a26c79623e7b0d319b7be9"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.8.5",

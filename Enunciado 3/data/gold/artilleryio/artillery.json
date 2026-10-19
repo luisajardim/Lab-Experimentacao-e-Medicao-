@@ -2267,8 +2267,2043 @@
     {
       "release": "v2.0.0-7",
       "previous_release": "v1.7.9",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "3db4a06f715228c99878b4b79a52922214d8df37",
+          "author_date": "2019-05-21T04:54:07Z",
+          "message": "refactor: Track all metrics with generic histogram/counter methods\n\nThis change retires the old HTTP-centric/non-generic way of tracking\nrunner & engine metrics.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3db4a06f715228c99878b4b79a52922214d8df37"
+        },
+        {
+          "sha": "188e8f7057a484adc9afa8ad9ca39caf3941c7b1",
+          "author_date": "2019-05-21T15:37:04Z",
+          "message": "feat(metrics): Add support for serialization and HDR histograms",
+          "html_url": "https://github.com/artilleryio/artillery/commit/188e8f7057a484adc9afa8ad9ca39caf3941c7b1"
+        },
+        {
+          "sha": "86fbaf7908ff53cecb9bf35af4dd86a0ada606b5",
+          "author_date": "2019-05-21T15:13:43Z",
+          "message": "feat(console-reporter): Support table-formatted output",
+          "html_url": "https://github.com/artilleryio/artillery/commit/86fbaf7908ff53cecb9bf35af4dd86a0ada606b5"
+        },
+        {
+          "sha": "cdc008fb894e5f7ae672e014d3ecb237cc045da3",
+          "author_date": "2019-05-21T19:58:37Z",
+          "message": "fix(multicore): Serialize/deserialize metrics objects",
+          "html_url": "https://github.com/artilleryio/artillery/commit/cdc008fb894e5f7ae672e014d3ecb237cc045da3"
+        },
+        {
+          "sha": "3288f15ffd2460ee5d334361c1f019d046d9c7af",
+          "author_date": "2019-05-26T09:17:44Z",
+          "message": "fix(metrics): Maintain backwards-compatibility with third-party code\n\nThis change makes sure that any third-party engines and other code\nthat relies on current way of tracking metrics will continue to work.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3288f15ffd2460ee5d334361c1f019d046d9c7af"
+        },
+        {
+          "sha": "2ab91f32dea3d753143b3538d12c41ffb24754a2",
+          "author_date": "2019-05-25T10:01:37Z",
+          "message": "chore(test): Remove unnecessary test\n\nThe test case does not exercise any logic not covered by other\ntests.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2ab91f32dea3d753143b3538d12c41ffb24754a2"
+        },
+        {
+          "sha": "716b01e72390d557c9bc55e7e6e26ed30a61a796",
+          "author_date": "2020-02-07T19:13:56Z",
+          "message": "feat: Use new metric implementation in WS and HTTP engines",
+          "html_url": "https://github.com/artilleryio/artillery/commit/716b01e72390d557c9bc55e7e6e26ed30a61a796"
+        },
+        {
+          "sha": "2bec4be7bae4910d9876f47d2137976856064f01",
+          "author_date": "2020-02-07T19:24:22Z",
+          "message": "feat(core): Use standard prefixes for core metrics",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2bec4be7bae4910d9876f47d2137976856064f01"
+        },
+        {
+          "sha": "4e38a27ae375ae30934bd8d32fbc565b335493c7",
+          "author_date": "2020-02-07T20:25:21Z",
+          "message": "feat(stats): Tweak HDR histogram settings",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4e38a27ae375ae30934bd8d32fbc565b335493c7"
+        },
+        {
+          "sha": "7710341cdc15b2854fb958a0856e06d438e41579",
+          "author_date": "2020-02-11T12:25:51Z",
+          "message": "feat(metrics): Rename histograms to summaries\n\n- Metric type is now called \"summary\" rather than histogram\n  See [1]\n- \"histogram\" may still be used but will be deprecated in future\n\n1. https://prometheus.io/docs/concepts/metric_types/#summary",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7710341cdc15b2854fb958a0856e06d438e41579"
+        },
+        {
+          "sha": "03404031f3ce3318b671d0d67f926e99327e435f",
+          "author_date": "2020-02-11T12:27:01Z",
+          "message": "feat(metrics): Add support for tracking rate metrics",
+          "html_url": "https://github.com/artilleryio/artillery/commit/03404031f3ce3318b671d0d67f926e99327e435f"
+        },
+        {
+          "sha": "5d1612d6f93fb5cb69ba36b387e3a4f11da2c605",
+          "author_date": "2020-02-14T17:40:21Z",
+          "message": "feat: Use new metric implementation in Socket.io engine",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5d1612d6f93fb5cb69ba36b387e3a4f11da2c605"
+        },
+        {
+          "sha": "d2fa6d6848d1fa30e6707666bc88a068eb549bfb",
+          "author_date": "2020-02-14T17:41:12Z",
+          "message": "feat(ws): Track send rate",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d2fa6d6848d1fa30e6707666bc88a068eb549bfb"
+        },
+        {
+          "sha": "01ceb6586e04824beb222399abd8203a12c49dc2",
+          "author_date": "2020-02-14T18:16:13Z",
+          "message": "feat(stats): Add getRate method",
+          "html_url": "https://github.com/artilleryio/artillery/commit/01ceb6586e04824beb222399abd8203a12c49dc2"
+        },
+        {
+          "sha": "efe340a740a8333a40e224c13e049d7e4d7b7a2a",
+          "author_date": "2020-02-14T18:16:56Z",
+          "message": "feat(stats): Produce a backwards-compatible report",
+          "html_url": "https://github.com/artilleryio/artillery/commit/efe340a740a8333a40e224c13e049d7e4d7b7a2a"
+        },
+        {
+          "sha": "6784bd63910b7b70edd2b065bbae0c7651c89a73",
+          "author_date": "2020-02-14T18:17:15Z",
+          "message": "feat(stats): Default to adding one in counter()",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6784bd63910b7b70edd2b065bbae0c7651c89a73"
+        },
+        {
+          "sha": "50797bf6e7018aff984070088a26ae3637c92d1e",
+          "author_date": "2020-02-14T18:18:08Z",
+          "message": "feat(runner): Add ability to track summary and rate metrics",
+          "html_url": "https://github.com/artilleryio/artillery/commit/50797bf6e7018aff984070088a26ae3637c92d1e"
+        },
+        {
+          "sha": "ecbf88fe14b55584215a00a6e1b6ef4b14f30e49",
+          "author_date": "2020-02-14T18:18:41Z",
+          "message": "feat(runner): Track scenario metrics",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ecbf88fe14b55584215a00a6e1b6ef4b14f30e49"
+        },
+        {
+          "sha": "520ddc1a0c63a13f417d81e24d19665df1bcbc12",
+          "author_date": "2020-02-14T18:20:22Z",
+          "message": "feat(console-reporter): Use a line spinner",
+          "html_url": "https://github.com/artilleryio/artillery/commit/520ddc1a0c63a13f417d81e24d19665df1bcbc12"
+        },
+        {
+          "sha": "79f0d4c93caffe80504e70e161a4aead9e1ffe10",
+          "author_date": "2020-02-14T18:23:33Z",
+          "message": "feat(console-reporter): Add new look for console reports\n\n- New default output format 🎉\n- Classic output can be set via OUTPUT_FORMAT=classic",
+          "html_url": "https://github.com/artilleryio/artillery/commit/79f0d4c93caffe80504e70e161a4aead9e1ffe10"
+        },
+        {
+          "sha": "b23046e47ad9210b06bb703796f63e20c13d0b09",
+          "author_date": "2020-02-15T10:22:18Z",
+          "message": "fix(http): Track response code counts",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b23046e47ad9210b06bb703796f63e20c13d0b09"
+        },
+        {
+          "sha": "7efa3f369c2fb4941b5ec03c1000e5836f808e83",
+          "author_date": "2020-02-15T10:34:51Z",
+          "message": "ci: Disable Docker layer caching on Circle\n\nNot available on current CircleCI plan.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7efa3f369c2fb4941b5ec03c1000e5836f808e83"
+        },
+        {
+          "sha": "6c4ff0b2a67527d13d8d61e859a428ea76766ace",
+          "author_date": "2020-02-15T15:12:55Z",
+          "message": "Merge branch 'master' into refactor/metrics",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6c4ff0b2a67527d13d8d61e859a428ea76766ace"
+        },
+        {
+          "sha": "6c4bc08803be22b69d60e0cef3bd1058f909c1da",
+          "author_date": "2020-02-15T15:14:50Z",
+          "message": "ci: Remove Travis CI",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6c4bc08803be22b69d60e0cef3bd1058f909c1da"
+        },
+        {
+          "sha": "069ff24fd1f4fa601f3f86a090645f7a523eb689",
+          "author_date": "2020-02-15T15:54:55Z",
+          "message": "fix(test): Matches are deprecated in their current form",
+          "html_url": "https://github.com/artilleryio/artillery/commit/069ff24fd1f4fa601f3f86a090645f7a523eb689"
+        },
+        {
+          "sha": "5dae93d3a91a0da4f47b766f8dca1bcc046a5d4f",
+          "author_date": "2020-02-15T16:15:43Z",
+          "message": "Merge pull request #709 from hassy/refactor/metrics\n\nNew metrics store implementation",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5dae93d3a91a0da4f47b766f8dca1bcc046a5d4f"
+        },
+        {
+          "sha": "1dc02761d1336c328c98a11ea77621b165271582",
+          "author_date": "2020-02-15T18:07:09Z",
+          "message": "feat(http): Replace Request.js with Got\n\nRef: https://github.com/artilleryio/artillery/issues/802",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1dc02761d1336c328c98a11ea77621b165271582"
+        },
+        {
+          "sha": "60760a00b6b8654c2dd81392e1c2c7d7b736f6d9",
+          "author_date": "2020-02-15T18:27:08Z",
+          "message": "Merge pull request #803 from hassy/feat/request-to-got\n\nfeat(http): Replace Request.js with Got",
+          "html_url": "https://github.com/artilleryio/artillery/commit/60760a00b6b8654c2dd81392e1c2c7d7b736f6d9"
+        },
+        {
+          "sha": "acc6b7ac5892d2971a572fb406fa438aa7c35890",
+          "author_date": "2020-02-15T18:39:51Z",
+          "message": "docs: Update README",
+          "html_url": "https://github.com/artilleryio/artillery/commit/acc6b7ac5892d2971a572fb406fa438aa7c35890"
+        },
+        {
+          "sha": "c67f77fd2be4f2ed1fd5a66cccc7218f0ab9dbec",
+          "author_date": "2020-02-16T10:14:46Z",
+          "message": "fix(stats): Calculate average rate over the whole recorded period",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c67f77fd2be4f2ed1fd5a66cccc7218f0ab9dbec"
+        },
+        {
+          "sha": "97715b76678470290905c707f4a1cfae985642e9",
+          "author_date": "2020-02-16T10:17:32Z",
+          "message": "feat: Allow for config.ensure to be disabled\n\nIf ARTILLERY_DISABLE_ENSURE environment variable is set, ensure\nconditions won't be evaluated.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/97715b76678470290905c707f4a1cfae985642e9"
+        },
+        {
+          "sha": "624328ed3e1c7cee41a36c0c996f3ebd74f57078",
+          "author_date": "2020-02-16T10:21:58Z",
+          "message": "feat: Set recommended version to 10.19.0 (latest v10 Active LTS)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/624328ed3e1c7cee41a36c0c996f3ebd74f57078"
+        },
+        {
+          "sha": "0ae9d5cbdf00ed4a95895f47815d39ae4d02698a",
+          "author_date": "2020-02-16T10:56:23Z",
+          "message": "docs: Update README",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0ae9d5cbdf00ed4a95895f47815d39ae4d02698a"
+        },
+        {
+          "sha": "b73d7e362a99829c6b6395fb86de57301e053944",
+          "author_date": "2020-02-16T10:59:09Z",
+          "message": "docs: Update README",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b73d7e362a99829c6b6395fb86de57301e053944"
+        },
+        {
+          "sha": "65a5510b117f1f13054d587627f79095ae40cc0d",
+          "author_date": "2020-02-16T11:16:38Z",
+          "message": "chore: Remove Request.js\n\nThank you Request and farewell 👋\n\nhttps://github.com/request/request/issues/3142",
+          "html_url": "https://github.com/artilleryio/artillery/commit/65a5510b117f1f13054d587627f79095ae40cc0d"
+        },
+        {
+          "sha": "2d9ac2613c62e72257078e1b438448890a93d381",
+          "author_date": "2020-02-17T10:48:06Z",
+          "message": "test: Remove dev dependency on bcrypt",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2d9ac2613c62e72257078e1b438448890a93d381"
+        },
+        {
+          "sha": "bc38edbee21f3ce42464d524d762fac6271acc5a",
+          "author_date": "2020-04-24T21:27:56Z",
+          "message": "Correct documentation\n\n]→)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/bc38edbee21f3ce42464d524d762fac6271acc5a"
+        },
+        {
+          "sha": "ad1aa36d7b0ba26b299ca63cf7ac4fc40004cc71",
+          "author_date": "2020-04-28T18:49:42Z",
+          "message": "feat(http): Make qs and gzip work with Got-based implementation",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ad1aa36d7b0ba26b299ca63cf7ac4fc40004cc71"
+        },
+        {
+          "sha": "d11dc47180e44e89095c3bf7cd2a6fc5467d4d96",
+          "author_date": "2020-04-28T18:50:58Z",
+          "message": "fix(tests): Prevent ECONNRESETs on tests that use think",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d11dc47180e44e89095c3bf7cd2a6fc5467d4d96"
+        },
+        {
+          "sha": "59eeb9914851d64b9663e1c1224f94208847d94e",
+          "author_date": "2020-04-28T18:52:47Z",
+          "message": "chore: Upgrade Got.js to latest version (v11.0.2)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/59eeb9914851d64b9663e1c1224f94208847d94e"
+        },
+        {
+          "sha": "7579f9db11552ab56f3dd9874a3b634c20dfefcd",
+          "author_date": "2020-04-28T18:54:06Z",
+          "message": "chore: Update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7579f9db11552ab56f3dd9874a3b634c20dfefcd"
+        },
+        {
+          "sha": "0e2ec3ef248d1892acbb114faf3ceb7dcd32457e",
+          "author_date": "2020-04-28T19:31:09Z",
+          "message": "fix(tests): Remove bcrypt-encoded password",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0e2ec3ef248d1892acbb114faf3ceb7dcd32457e"
+        },
+        {
+          "sha": "866783fb0f4883caaac99d20d58f104da65e1531",
+          "author_date": "2020-05-09T09:17:19Z",
+          "message": "chore: update commitlint rules\n\n- Add \"dep\" to allowed commit types\n- Subjects should start with a lowercase letter",
+          "html_url": "https://github.com/artilleryio/artillery/commit/866783fb0f4883caaac99d20d58f104da65e1531"
+        },
+        {
+          "sha": "d09b19655e893db262c6c5317114b524ce42b36e",
+          "author_date": "2020-05-09T09:15:28Z",
+          "message": "feat: remove high CPU warnings",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d09b19655e893db262c6c5317114b524ce42b36e"
+        },
+        {
+          "sha": "ae056b1edf7b450b04437374c63eb6b7fcd94fee",
+          "author_date": "2020-05-09T11:25:31Z",
+          "message": "refactor(http): set config.defaults to {} to avoid extra checks",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ae056b1edf7b450b04437374c63eb6b7fcd94fee"
+        },
+        {
+          "sha": "1ef06ba9e322f96fbf0387243fb4f4ffb2a93104",
+          "author_date": "2020-05-09T11:27:39Z",
+          "message": "fix(http): disable cookie jar unless it's needed\n\nThis change will disable Got.js's cookie jar functionality by default,\nunless:\n\n- A set-cookie header is seen in a response\n- A default cookie is set via config.defaults.cookie\n- A cookie is set for a request with request.cookie\n\nSetting cookieJar makes Got.js attempt to read the cookie jar for\nevery request made, regardless of whether a cookie has actually been set or\nnot, which is a CPU-expensive operation.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1ef06ba9e322f96fbf0387243fb4f4ffb2a93104"
+        },
+        {
+          "sha": "e282aa6605a7caa1a3e5dcf5c946e9d394597291",
+          "author_date": "2020-05-09T11:33:16Z",
+          "message": "fix(http): disable gzip by default\n\nThis change is to maintain backwards-compatibility with Request.js,\nwhich did not set an Accept-Encoding header by default.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e282aa6605a7caa1a3e5dcf5c946e9d394597291"
+        },
+        {
+          "sha": "6c305ffca3cae1206bf208b2d0def1e4c2b3fa6d",
+          "author_date": "2020-05-09T11:34:55Z",
+          "message": "refactor(http): remove unneeded check for config.defaults",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6c305ffca3cae1206bf208b2d0def1e4c2b3fa6d"
+        },
+        {
+          "sha": "8b1dc585b30350283ede4247d36beecebc9fc16d",
+          "author_date": "2020-05-09T11:35:23Z",
+          "message": "refactor(http): remove unnecessary reassignment of this",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8b1dc585b30350283ede4247d36beecebc9fc16d"
+        },
+        {
+          "sha": "17f2d2ef749acf178e421079e1f8f606e8c3c03b",
+          "author_date": "2020-05-09T11:36:39Z",
+          "message": "refactor(runner): remove unnecessary _.deepClone() call",
+          "html_url": "https://github.com/artilleryio/artillery/commit/17f2d2ef749acf178e421079e1f8f606e8c3c03b"
+        },
+        {
+          "sha": "bd43419a08e74ac14d814d9f217c7311e123fbd3",
+          "author_date": "2020-05-09T11:39:14Z",
+          "message": "dep: upgrade to uuid@8 and tough-cookie@4",
+          "html_url": "https://github.com/artilleryio/artillery/commit/bd43419a08e74ac14d814d9f217c7311e123fbd3"
+        },
+        {
+          "sha": "f9d3127921761a716f4c0fdbb38592535fccf766",
+          "author_date": "2020-05-09T11:40:22Z",
+          "message": "dep: upgrade to got to latest version",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f9d3127921761a716f4c0fdbb38592535fccf766"
+        },
+        {
+          "sha": "1ffdb2e0dde440478c995e891800c84d7e81f904",
+          "author_date": "2020-05-09T11:48:02Z",
+          "message": "perf(stats): more efficient merging of rate metrics",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1ffdb2e0dde440478c995e891800c84d7e81f904"
+        },
+        {
+          "sha": "b68cf1de624d4e96c478cae71b4721cd1673ff91",
+          "author_date": "2020-05-09T12:06:51Z",
+          "message": "feat(console-reporter): use a dot spinner with higher interval",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b68cf1de624d4e96c478cae71b4721cd1673ff91"
+        },
+        {
+          "sha": "b64b48b4c04f51c55ef19bad3018dedfccdb6980",
+          "author_date": "2020-05-09T12:13:50Z",
+          "message": "dep: upgrade to ora@4",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b64b48b4c04f51c55ef19bad3018dedfccdb6980"
+        },
+        {
+          "sha": "e2d6351e6add3a5fac08dad573f99469dc6772ac",
+          "author_date": "2020-05-09T12:17:47Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e2d6351e6add3a5fac08dad573f99469dc6772ac"
+        },
+        {
+          "sha": "e2d91ded984c051a05754626f5308f68f7be8791",
+          "author_date": "2020-05-09T12:22:18Z",
+          "message": "ci: lint the most recent commit only",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e2d91ded984c051a05754626f5308f68f7be8791"
+        },
+        {
+          "sha": "0ea2390e32fd5f05ed10673132b56063d01bd66c",
+          "author_date": "2020-05-09T13:11:29Z",
+          "message": "test: remove test for high CPU warnings",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0ea2390e32fd5f05ed10673132b56063d01bd66c"
+        },
+        {
+          "sha": "bb0b81be0f18b7b456a5ad13539f218c493ad954",
+          "author_date": "2020-05-09T13:37:34Z",
+          "message": "fix(http): res.headers['header'] is an array",
+          "html_url": "https://github.com/artilleryio/artillery/commit/bb0b81be0f18b7b456a5ad13539f218c493ad954"
+        },
+        {
+          "sha": "186607cc0a2045e366345e18f4650ed9019b031f",
+          "author_date": "2020-05-09T14:56:11Z",
+          "message": "Merge pull request #838 from artilleryio/wip/perf",
+          "html_url": "https://github.com/artilleryio/artillery/commit/186607cc0a2045e366345e18f4650ed9019b031f"
+        },
+        {
+          "sha": "0e3c411d274fd3e15d93d76322b0aa12018ccca2",
+          "author_date": "2020-05-11T18:21:19Z",
+          "message": "feat(http): allow non-strict captures\n\nAllow the user to turn off the default strict-capture behavior,\nwhich aborts the scenario if any of the capture actions fail.\n\nNon-strict capture can be set by either:\n\n- Setting config.defaults.strictCapture to false to make all\n  captures non-strict\n- Setting \"strict\" attribute on a capture action to false, to\n  make that particular capture non-strict.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0e3c411d274fd3e15d93d76322b0aa12018ccca2"
+        },
+        {
+          "sha": "dbbf7f09e41b831e55942c80f7a230a36278e785",
+          "author_date": "2020-05-16T09:29:59Z",
+          "message": "Merge pull request #840 from artilleryio/feat/http-non-strict-capture\n\nfeat(http): allow non-strict captures",
+          "html_url": "https://github.com/artilleryio/artillery/commit/dbbf7f09e41b831e55942c80f7a230a36278e785"
+        },
+        {
+          "sha": "034902616845da7a62b687359a466905f67f3819",
+          "author_date": "2020-07-30T15:01:31Z",
+          "message": "fix: resolve dot-prop and lodash vulnerabilities",
+          "html_url": "https://github.com/artilleryio/artillery/commit/034902616845da7a62b687359a466905f67f3819"
+        },
+        {
+          "sha": "f7000b76aad9f0e1d366674667649b5b5cc29189",
+          "author_date": "2020-08-11T10:05:17Z",
+          "message": "Merge pull request #866 from cmdcarini/master\n\nfix: resolve dot-prop and lodash vulnerabilities",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f7000b76aad9f0e1d366674667649b5b5cc29189"
+        },
+        {
+          "sha": "f377d1a787061342c3e8b6f8413e2e51c82de63f",
+          "author_date": "2020-10-01T02:31:48Z",
+          "message": "Merge any socketio config specified in a scenario into the socketio static config set at the config section of the yaml file.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f377d1a787061342c3e8b6f8413e2e51c82de63f"
+        },
+        {
+          "sha": "5863813d93f17cc89f05c0e762835006d8308c86",
+          "author_date": "2020-10-09T09:34:35Z",
+          "message": "dep: use eventemitter3",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5863813d93f17cc89f05c0e762835006d8308c86"
+        },
+        {
+          "sha": "2df418c66b1fae0e902703c71aebe30a9b6a06a5",
+          "author_date": "2020-10-09T09:35:23Z",
+          "message": "feat: output intermediate reports every 30s by default",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2df418c66b1fae0e902703c71aebe30a9b6a06a5"
+        },
+        {
+          "sha": "ee3c3719d86dbc1f12f125b9362c8bcf1ac59637",
+          "author_date": "2020-10-09T09:43:46Z",
+          "message": "fix(http): make response body available in afterResponse hooks",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ee3c3719d86dbc1f12f125b9362c8bcf1ac59637"
+        },
+        {
+          "sha": "7a609aa06b27a4e95e0020a24f038bc609af8666",
+          "author_date": "2020-10-09T14:42:05Z",
+          "message": "feat(http): add support for forwarding proxies\n\nAdd support for using forwarding proxies via HTTP_PROXY and HTTPS_PROXY\nenvironnment variables like Request.js [1]\n\n1. https://github.com/request/request#controlling-proxy-behaviour-using-environment-variables",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7a609aa06b27a4e95e0020a24f038bc609af8666"
+        },
+        {
+          "sha": "4c22eaa68dc2ae1c0fa80290c4a3342d09696c12",
+          "author_date": "2020-10-09T15:41:00Z",
+          "message": "dep: update to latest version of Hapi",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4c22eaa68dc2ae1c0fa80290c4a3342d09696c12"
+        },
+        {
+          "sha": "6ed9d1bbd00c1f18ef93926ca0a11f7ee9da1978",
+          "author_date": "2020-10-09T15:43:37Z",
+          "message": "chore: remove istanbul",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6ed9d1bbd00c1f18ef93926ca0a11f7ee9da1978"
+        },
+        {
+          "sha": "c6a7092a6588aec8c7d693950ba87bc68590ea72",
+          "author_date": "2020-10-09T15:44:04Z",
+          "message": "chore: update lockfile",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c6a7092a6588aec8c7d693950ba87bc68590ea72"
+        },
+        {
+          "sha": "2c1e189c81737ba4cdaa7ae3bcc8277532b004ab",
+          "author_date": "2020-10-09T16:11:35Z",
+          "message": "ci: use Node 12",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2c1e189c81737ba4cdaa7ae3bcc8277532b004ab"
+        },
+        {
+          "sha": "a5cc3079042f8fa88097bfc0838cc2fd2717ddbb",
+          "author_date": "2020-10-12T11:26:28Z",
+          "message": "Merge pull request #886 from artilleryio/feat/http-proxy\n\nfeat(http): add support for forwarding proxies",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a5cc3079042f8fa88097bfc0838cc2fd2717ddbb"
+        },
+        {
+          "sha": "c3af8ba4da3a6481195a4f2b581c9dee5a2ebc09",
+          "author_date": "2020-10-23T16:32:29Z",
+          "message": "feat: make the global artillery object available everywhere\n\n- make global.artillery available everywhere\n- add support for extension points via artillery.ext()",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c3af8ba4da3a6481195a4f2b581c9dee5a2ebc09"
+        },
+        {
+          "sha": "c5dba49740ee0cfdf5ca257d6413f1633e95fdb7",
+          "author_date": "2020-10-23T16:34:28Z",
+          "message": "feat(run): use extension points, and remove config.ensure support\n\nconfig.ensure will be handled by a plugin making use of new extension points",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c5dba49740ee0cfdf5ca257d6413f1633e95fdb7"
+        },
+        {
+          "sha": "4acd507809040c4418ff5501d99a9e2d17dca93b",
+          "author_date": "2020-11-27T11:29:42Z",
+          "message": "chore: remove dead code in unit test templates",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4acd507809040c4418ff5501d99a9e2d17dca93b"
+        },
+        {
+          "sha": "624abad121018237b7cfd4bf27968d1707ee4c46",
+          "author_date": "2020-11-27T11:31:37Z",
+          "message": "chore: add missing hpagent lib (required for test)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/624abad121018237b7cfd4bf27968d1707ee4c46"
+        },
+        {
+          "sha": "548e6963b4c1eda0fe428e7c5a9d950ad32a9874",
+          "author_date": "2020-11-27T11:49:53Z",
+          "message": "test: add tests asserting that sanitize keeps null / undefined values",
+          "html_url": "https://github.com/artilleryio/artillery/commit/548e6963b4c1eda0fe428e7c5a9d950ad32a9874"
+        },
+        {
+          "sha": "7add9fb1da5a00669ac870917820a8c8b1fe643c",
+          "author_date": "2020-11-27T11:53:56Z",
+          "message": "fix: prevent sanitize form converting null/undefined to ''",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7add9fb1da5a00669ac870917820a8c8b1fe643c"
+        },
+        {
+          "sha": "3f6f5907228b14c871da0f0e80c9ca10d571142c",
+          "author_date": "2020-12-02T09:36:56Z",
+          "message": "Merge pull request #905 from tychota/fix/sanitize-striping-null-and-undefined\n\nFix: prevent sanitize form converting null/undefined to ''",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3f6f5907228b14c871da0f0e80c9ca10d571142c"
+        },
+        {
+          "sha": "7d33b25f9033d1722ec8a9796e6a1ce4c104542b",
+          "author_date": "2020-12-08T12:18:49Z",
+          "message": "Merge pull request #894 from artilleryio/feat/extension-points\n\nfeat: allow plugins to run code before Artillery exits",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7d33b25f9033d1722ec8a9796e6a1ce4c104542b"
+        },
+        {
+          "sha": "e385ae6fc0ad0e44bcc04704644b5021f8edbe5b",
+          "author_date": "2020-12-08T12:19:57Z",
+          "message": "Merge pull request #820 from vegerot/patch-1\n\nCorrect documentation",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e385ae6fc0ad0e44bcc04704644b5021f8edbe5b"
+        },
+        {
+          "sha": "6211c1775fb33653e25df743998a262d91904785",
+          "author_date": "2020-12-09T14:26:56Z",
+          "message": "fix(http): multipart form data support\n\n- Add formData support - Request handled it for us behind the scenes, but we\n  need to do it ourselves with Got\n- Add test for using formData\n- Add missing test for redirect handling",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6211c1775fb33653e25df743998a262d91904785"
+        },
+        {
+          "sha": "58db662666f5e68300ed28511a67e897d5410cc3",
+          "author_date": "2020-12-09T14:39:58Z",
+          "message": "Merge pull request #909 from artilleryio/feat/http-engine\n\nfix(http): multipart form data support",
+          "html_url": "https://github.com/artilleryio/artillery/commit/58db662666f5e68300ed28511a67e897d5410cc3"
+        },
+        {
+          "sha": "aac3077bc45ddc6b709e930b52b4483771f1a1ef",
+          "author_date": "2020-12-09T14:43:27Z",
+          "message": "chore: update lockfile",
+          "html_url": "https://github.com/artilleryio/artillery/commit/aac3077bc45ddc6b709e930b52b4483771f1a1ef"
+        },
+        {
+          "sha": "10d8b961b35a931d33e575caaf5670390eb011ec",
+          "author_date": "2020-05-31T12:33:56Z",
+          "message": "refactor(cli): move to oclif\n\n- Use oclif as the underlying CLI framework\n- [BREAKING CHANGE] Remove \"quick\" command\n- [BREAKING CHANGE] Remove \"convert\" command\n- Refactor utility functions for parsing input script files\n- Add support for specifying multiple input arguments\n- Remove rc and opn dependencies",
+          "html_url": "https://github.com/artilleryio/artillery/commit/10d8b961b35a931d33e575caaf5670390eb011ec"
+        },
+        {
+          "sha": "cbfa6382689cc19055f95d9c9eb5f269455cfcd2",
+          "author_date": "2020-12-14T15:19:26Z",
+          "message": "Merge pull request #912 from artilleryio/feat/oclif\n\nfeat: move to Oclif",
+          "html_url": "https://github.com/artilleryio/artillery/commit/cbfa6382689cc19055f95d9c9eb5f269455cfcd2"
+        },
+        {
+          "sha": "0f4daf82bebea1410043d0eb2184647ff27e95ba",
+          "author_date": "2020-12-14T15:05:16Z",
+          "message": "chore: bump version to 2.0.0",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0f4daf82bebea1410043d0eb2184647ff27e95ba"
+        },
+        {
+          "sha": "1015d1ae8ee3b9bef7f06bb62d45ff313aea94f7",
+          "author_date": "2020-12-14T15:05:39Z",
+          "message": "dep: prefer Node.js v12+",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1015d1ae8ee3b9bef7f06bb62d45ff313aea94f7"
+        },
+        {
+          "sha": "9363aaca01e028513a19bc24238cb0e23706c59d",
+          "author_date": "2020-12-14T15:26:19Z",
+          "message": "docs: remove Gitter link",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9363aaca01e028513a19bc24238cb0e23706c59d"
+        },
+        {
+          "sha": "11a6bb9a35befc4ed8d99d3de1e2408efb6aa4ff",
+          "author_date": "2021-01-10T15:17:15Z",
+          "message": "feat: add capture support to ws engine\n\nFixes #800. Retains backwards compatibility with existing send api and will support existing capture api too.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/11a6bb9a35befc4ed8d99d3de1e2408efb6aa4ff"
+        },
+        {
+          "sha": "e1175610c37bd779ef38ed71fcc317a2e496191a",
+          "author_date": "2021-01-13T11:38:39Z",
+          "message": "Merge pull request #917 from mintdevops/master\n\nfeat: add capture support to ws engine",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e1175610c37bd779ef38ed71fcc317a2e496191a"
+        },
+        {
+          "sha": "f429bcfdd4b1adb70f25648e713a2dfa003e503e",
+          "author_date": "2021-01-15T11:14:12Z",
+          "message": "docs: update README\n\n- Spectrum -> Discussions\r\n- Update tree section 🌳",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f429bcfdd4b1adb70f25648e713a2dfa003e503e"
+        },
+        {
+          "sha": "59c9e377a4f2306cc72bf00b810bb33d5d19f1f7",
+          "author_date": "2021-02-18T12:59:13Z",
+          "message": "fix: report duration of pause phases correctly",
+          "html_url": "https://github.com/artilleryio/artillery/commit/59c9e377a4f2306cc72bf00b810bb33d5d19f1f7"
+        },
+        {
+          "sha": "17345a60dd60fe6d76f63f48038fba4111f1e7bf",
+          "author_date": "2021-02-18T13:02:05Z",
+          "message": "docs: fix logo URL",
+          "html_url": "https://github.com/artilleryio/artillery/commit/17345a60dd60fe6d76f63f48038fba4111f1e7bf"
+        },
+        {
+          "sha": "c3448a255c7d16f8e6d066157ce5f84cee85f3fb",
+          "author_date": "2021-02-25T20:51:58Z",
+          "message": "docs: Fix links to docs and website\n\nhttps://github.com/artilleryio/artillery/issues/936",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c3448a255c7d16f8e6d066157ce5f84cee85f3fb"
+        },
+        {
+          "sha": "c0ec6a2f49428fc345b2183c28c2d2e557257ef7",
+          "author_date": "2021-02-26T06:10:48Z",
+          "message": "chore: remove unneeded files\n\n- Vagrantfile - not update in 4 years and out of date\n- CHANGELOG - not maintained, Github Releases tab has information on changes\n- Docs - moving to the documentation repo",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c0ec6a2f49428fc345b2183c28c2d2e557257ef7"
+        },
+        {
+          "sha": "9c18e2e73b3a358d0d2fbb92aec6e1b6202b0b5c",
+          "author_date": "2021-02-26T10:04:52Z",
+          "message": "feat: print dev preview warning",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9c18e2e73b3a358d0d2fbb92aec6e1b6202b0b5c"
+        },
+        {
+          "sha": "a8a0aff12b494ea4c9a221b10c0d30b8fca28de3",
+          "author_date": "2021-02-26T10:05:12Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a8a0aff12b494ea4c9a221b10c0d30b8fca28de3"
+        },
+        {
+          "sha": "f3cd5fcbb7c400cabcefa1e9b196b588fb230e89",
+          "author_date": "2021-02-26T10:29:18Z",
+          "message": "ci: npm publish from Circle",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f3cd5fcbb7c400cabcefa1e9b196b588fb230e89"
+        },
+        {
+          "sha": "e2bd82a95e9062af63c4e91befa64bc0ee024096",
+          "author_date": "2021-02-26T10:34:57Z",
+          "message": "docs: update use cases in README",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e2bd82a95e9062af63c4e91befa64bc0ee024096"
+        },
+        {
+          "sha": "09d7ec0b4af2e3bce90315b85edd7e9aa421362e",
+          "author_date": "2021-02-26T10:36:54Z",
+          "message": "2.0.0-dev0",
+          "html_url": "https://github.com/artilleryio/artillery/commit/09d7ec0b4af2e3bce90315b85edd7e9aa421362e"
+        },
+        {
+          "sha": "6c9a0e11db959757d97ed62da9b171ae0d8ca3e2",
+          "author_date": "2021-01-19T17:58:38Z",
+          "message": "feat: new implementation of internal metric store\n\n- support for counter, histogram, and rate metric types\n- fully mergeable\n- core, engines, plugins and custom code will all use the exact same\n  interface to record merasurements",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6c9a0e11db959757d97ed62da9b171ae0d8ca3e2"
+        },
+        {
+          "sha": "5d87c9a3f8fe2b22cd7cf94a40c07a5f51235302",
+          "author_date": "2021-02-26T18:11:33Z",
+          "message": "feat: backwards-compatible JSON reports",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5d87c9a3f8fe2b22cd7cf94a40c07a5f51235302"
+        },
+        {
+          "sha": "e4abe43ad778ff7e798ea610c38a43f8f2ca1d7f",
+          "author_date": "2021-02-26T18:12:56Z",
+          "message": "fix(console-reporter): phase started event output",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e4abe43ad778ff7e798ea610c38a43f8f2ca1d7f"
+        },
+        {
+          "sha": "9741ca5b4ff8a491ffe566781a2c90a45784d5a3",
+          "author_date": "2021-02-26T18:14:12Z",
+          "message": "style(ssms): fixes for xo",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9741ca5b4ff8a491ffe566781a2c90a45784d5a3"
+        },
+        {
+          "sha": "690954b84082f2f12477bda8ab7f5eb3f8b99452",
+          "author_date": "2021-03-02T10:42:01Z",
+          "message": "fix(core): create global artillery object",
+          "html_url": "https://github.com/artilleryio/artillery/commit/690954b84082f2f12477bda8ab7f5eb3f8b99452"
+        },
+        {
+          "sha": "61c069c638d8359f0657fe1272228efd39298bd2",
+          "author_date": "2021-03-02T10:54:28Z",
+          "message": "feat(runner): plugins get backwards-compatible reports when enabled",
+          "html_url": "https://github.com/artilleryio/artillery/commit/61c069c638d8359f0657fe1272228efd39298bd2"
+        },
+        {
+          "sha": "bc9f6f70b70ef6db8baafe39fcc792f64bee9316",
+          "author_date": "2021-03-02T10:54:47Z",
+          "message": "feat(ssms): improve backwards-compatible reports",
+          "html_url": "https://github.com/artilleryio/artillery/commit/bc9f6f70b70ef6db8baafe39fcc792f64bee9316"
+        },
+        {
+          "sha": "0a8614f97b493b2f2241e212a20a1e4e1907ec03",
+          "author_date": "2021-03-02T10:56:20Z",
+          "message": "fix(test): ability to run individual suites",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0a8614f97b493b2f2241e212a20a1e4e1907ec03"
+        },
+        {
+          "sha": "01fa961487c722c751c14f2c3fdb694db6fd8cac",
+          "author_date": "2021-03-02T10:56:29Z",
+          "message": "test: use legacy reports so that existing assertions just work",
+          "html_url": "https://github.com/artilleryio/artillery/commit/01fa961487c722c751c14f2c3fdb694db6fd8cac"
+        },
+        {
+          "sha": "2371a9b23b82d3c7b38b46a39348f1b3d02dd51a",
+          "author_date": "2021-03-02T10:57:58Z",
+          "message": "test: update assertions / use legacy reporting where appropriate",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2371a9b23b82d3c7b38b46a39348f1b3d02dd51a"
+        },
+        {
+          "sha": "c564814bfdcb9d4d134989c82c20217264ed3cc3",
+          "author_date": "2021-03-02T12:43:35Z",
+          "message": "feat(ssms): add stop method\n\n- Clear intervals to clear active handles in the Node.js process",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c564814bfdcb9d4d134989c82c20217264ed3cc3"
+        },
+        {
+          "sha": "7fb0f5a19ce5ff1fb48a82cb39180c30368ef91e",
+          "author_date": "2021-03-02T12:44:36Z",
+          "message": "fix(test): stop the runner so that tests exit properly on completion",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7fb0f5a19ce5ff1fb48a82cb39180c30368ef91e"
+        },
+        {
+          "sha": "955363e0a30a182e4c1fceebad457f2c2ff21b31",
+          "author_date": "2021-03-02T14:27:12Z",
+          "message": "Merge pull request #937 from artilleryio/feat/metrics-store\n\nfeat: new metrics store",
+          "html_url": "https://github.com/artilleryio/artillery/commit/955363e0a30a182e4c1fceebad457f2c2ff21b31"
+        },
+        {
+          "sha": "f6200f7e74704102748aceeacaae0085309c3820",
+          "author_date": "2021-03-02T14:29:32Z",
+          "message": "Merge pull request #883 from ravelantunes/master\n\nAllow scenarios to override socketio configs",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f6200f7e74704102748aceeacaae0085309c3820"
+        },
+        {
+          "sha": "07cb546242a22a25b60edb97e444d6b674698d15",
+          "author_date": "2021-03-02T16:54:37Z",
+          "message": "ci: publish tags",
+          "html_url": "https://github.com/artilleryio/artillery/commit/07cb546242a22a25b60edb97e444d6b674698d15"
+        },
+        {
+          "sha": "719b504c00bcff48ecf014011c3b8dcd2bb11cae",
+          "author_date": "2021-03-02T16:54:46Z",
+          "message": "docs: update README",
+          "html_url": "https://github.com/artilleryio/artillery/commit/719b504c00bcff48ecf014011c3b8dcd2bb11cae"
+        },
+        {
+          "sha": "f5b5d32a6e94c86c98d2060d43ce29470d31ebe6",
+          "author_date": "2021-03-02T16:56:04Z",
+          "message": "2.0.0-dev1",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f5b5d32a6e94c86c98d2060d43ce29470d31ebe6"
+        },
+        {
+          "sha": "3a52eff2bfca19b3c5c144df83075e9923572274",
+          "author_date": "2021-03-02T17:10:55Z",
+          "message": "fix(ci): use bash",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3a52eff2bfca19b3c5c144df83075e9923572274"
+        },
+        {
+          "sha": "221ab28a2982693cf7ab8530a3a3ea115ab53bcc",
+          "author_date": "2021-03-02T20:41:45Z",
+          "message": "fix: include missing files for publishing",
+          "html_url": "https://github.com/artilleryio/artillery/commit/221ab28a2982693cf7ab8530a3a3ea115ab53bcc"
+        },
+        {
+          "sha": "126de7d55199d1b23de7bf14d39f04826d66cca3",
+          "author_date": "2021-03-02T20:55:03Z",
+          "message": "Merge pull request #941 from artilleryio/fix/npm-publish\n\nfix: include missing files for publishing",
+          "html_url": "https://github.com/artilleryio/artillery/commit/126de7d55199d1b23de7bf14d39f04826d66cca3"
+        },
+        {
+          "sha": "dcd248a151cab32500e255287c4110f2ecfd1a4f",
+          "author_date": "2021-03-02T20:56:16Z",
+          "message": "2.0.0-dev2",
+          "html_url": "https://github.com/artilleryio/artillery/commit/dcd248a151cab32500e255287c4110f2ecfd1a4f"
+        },
+        {
+          "sha": "7cc6c045a9abb2b81cd1941916563c6705a09c26",
+          "author_date": "2021-03-23T10:32:22Z",
+          "message": "docs: update README",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7cc6c045a9abb2b81cd1941916563c6705a09c26"
+        },
+        {
+          "sha": "74baeac42a7bfb9ad9378ce7b9a01f4535eb1490",
+          "author_date": "2021-03-25T16:57:02Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/artilleryio/artillery/commit/74baeac42a7bfb9ad9378ce7b9a01f4535eb1490"
+        },
+        {
+          "sha": "7d272afe5a8d6bfbc16ce707df59c6726f858dc7",
+          "author_date": "2021-04-01T17:21:31Z",
+          "message": "feat: cast string-valued phase configs\n\nAllows for (eg: ENV-based) phase configuration values which are strings\nby checking their definedness and casting them to numbers as necessary.\nPreviously, implementation was breaking under some (eg: rampTo) string\nvalue configs. Addresses GH #977",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7d272afe5a8d6bfbc16ce707df59c6726f858dc7"
+        },
+        {
+          "sha": "7d50e395ef6982b6ce8e164d63403fb5ca58f35c",
+          "author_date": "2021-04-01T19:45:24Z",
+          "message": "Correct test case language",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7d50e395ef6982b6ce8e164d63403fb5ca58f35c"
+        },
+        {
+          "sha": "b06ef295ec1387b96df8cebc8605b8fabfe60a9d",
+          "author_date": "2021-04-02T08:41:26Z",
+          "message": "feat: cast string-valued phase configs (#978)\n\n* feat: cast string-valued phase configs\r\n\r\nAllows for (eg: ENV-based) phase configuration values which are strings\r\nby checking their definedness and casting them to numbers as necessary.\r\nPreviously, implementation was breaking under some (eg: rampTo) string\r\nvalue configs. Addresses GH #977",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b06ef295ec1387b96df8cebc8605b8fabfe60a9d"
+        },
+        {
+          "sha": "68a7cfcb6e81397affcfed7d4df829b30b657674",
+          "author_date": "2021-04-16T10:27:55Z",
+          "message": "fix(console-reporter): handle report object not having any tracked rates",
+          "html_url": "https://github.com/artilleryio/artillery/commit/68a7cfcb6e81397affcfed7d4df829b30b657674"
+        },
+        {
+          "sha": "5bf60c25fd3d52b64314d348dbdcc27af1ba7575",
+          "author_date": "2021-04-17T10:20:04Z",
+          "message": "chore: update Dockerfile and .dockerignore (#994)\n\n- Update base image to node:12-alpine (since Artillery requires\r\nNode.js 12 and above).\r\n- Copy package.json and package-lock.json separately to help speed up\r\nthe build process if no dependencies have changed.\r\n- Update .dockerignore to exclude all files first, and only include the\r\nfiles needed for the CLI to work.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5bf60c25fd3d52b64314d348dbdcc27af1ba7575"
+        },
+        {
+          "sha": "1ffc35844cecf827862930627d7252cc70777a8e",
+          "author_date": "2021-04-17T17:33:49Z",
+          "message": "docs: update README\n\n- Tweak tagline\r\n- Update tree count🌳🌳📈",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1ffc35844cecf827862930627d7252cc70777a8e"
+        },
+        {
+          "sha": "bca98bdeae5feeea979d239ca5559e98053daef3",
+          "author_date": "2021-04-19T07:25:49Z",
+          "message": "ci: execute Docker/NPM workflows when tag is pushed\n\nBy default, CircleCI doesn't execute workflows for any pushed tags\nunless specified",
+          "html_url": "https://github.com/artilleryio/artillery/commit/bca98bdeae5feeea979d239ca5559e98053daef3"
+        },
+        {
+          "sha": "a899b4732be9e1f1bd15953623312b835eff4c4c",
+          "author_date": "2021-04-19T07:28:00Z",
+          "message": "ci: update Docker build script\n\n- Remove check for CIRCLE_TAG since this script will only get executed\n  when a Git tag is pushed.\n- Remove check for CIRCLE_BRANCH since tagged pushes won't have this\n  information.\n- Fixed command to check that CLI is working in the built image since\n  `artillery quick` doesn't seem to exist anymore.\n- If the pushed tag is not a dev release (the tag does not contain\n  '-dev'), also tag the built image as latest.\n- Push all images to Docker Hub (tagged build + latest tag).",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a899b4732be9e1f1bd15953623312b835eff4c4c"
+        },
+        {
+          "sha": "0c71b35755ceb40eeb8df4a8824a280f70249076",
+          "author_date": "2021-04-19T07:38:51Z",
+          "message": "ci: update npm publish script\n\n- Remove check for CIRCLE_TAG since this script will only get executed\nwhen a Git tag is pushed.\n\n- Remove check for CIRCLE_BRANCH since tagged pushes won't have this\ninformation.\n\n- If the pushed tag is a dev release (the tag does contains '-dev'),\npublish the package with the 'dev' dist-tag. Otherwise, publish as\nthe latest release",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0c71b35755ceb40eeb8df4a8824a280f70249076"
+        },
+        {
+          "sha": "a34e84625e7b28e757543b2a1144a04ccfbd6d48",
+          "author_date": "2021-04-19T13:33:46Z",
+          "message": "ci: fix build scripts to check tags\n\nI mistakenly thought these would only execute when a Git tag was pushed\nbut that's not the case.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a34e84625e7b28e757543b2a1144a04ccfbd6d48"
+        },
+        {
+          "sha": "7ce39ce8c6897654b57f7a444c189cd9a87ace53",
+          "author_date": "2021-04-20T08:00:14Z",
+          "message": "ci: tag Docker image with version number only",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7ce39ce8c6897654b57f7a444c189cd9a87ace53"
+        },
+        {
+          "sha": "4f143fe2061a30dc11d8eee27d9a5941355222e3",
+          "author_date": "2021-04-20T17:00:22Z",
+          "message": "fix(http): remove DeprecationWarning from Got\n\nFixes https://github.com/artilleryio/artillery/issues/996",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4f143fe2061a30dc11d8eee27d9a5941355222e3"
+        },
+        {
+          "sha": "63086d804f2e35f961854b2a9c0d403b3507aa44",
+          "author_date": "2021-04-20T17:44:27Z",
+          "message": "dep: remove artillery-plugin-statsd",
+          "html_url": "https://github.com/artilleryio/artillery/commit/63086d804f2e35f961854b2a9c0d403b3507aa44"
+        },
+        {
+          "sha": "b01089efe81d9e23e18a51db6d27bcec35f03ccd",
+          "author_date": "2021-04-21T06:04:21Z",
+          "message": "Merge pull request #997 from dennmart/circleci-updates\n\nUpdate CI scripts for building Docker image and publishing NPM package",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b01089efe81d9e23e18a51db6d27bcec35f03ccd"
+        },
+        {
+          "sha": "c6ab0168e780f0710c025ab586bd9ac404bfe42c",
+          "author_date": "2021-04-21T07:02:05Z",
+          "message": "feat(http): decompress response when gzip=true\n\nhttps://github.com/artilleryio/artillery/issues/998",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c6ab0168e780f0710c025ab586bd9ac404bfe42c"
+        },
+        {
+          "sha": "ddbfae6dfdb8c8132c3a320a08e68770dfec4139",
+          "author_date": "2021-04-23T08:03:34Z",
+          "message": "ci: split publish workflow\n\nThis change splits up the CircleCI workflow into two separate flows:\n\n- When pushing any branch, it will run the test workflow, which will\n  only run the test suite. By default, CircleCI runs jobs for all\n  branches.\n- When pushing any tag starting with `v`, it will run the publish\n  workflow. It will first run tests, and if they pass it will build and\n  publish the Docker image for that version, and also publish the\n  package on NPM.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ddbfae6dfdb8c8132c3a320a08e68770dfec4139"
+        },
+        {
+          "sha": "6514d30c7f8709cba1131cfdbe6c561c148f4db9",
+          "author_date": "2021-04-27T16:44:09Z",
+          "message": "Merge pull request #1004 from dennmart/circleci-publish-workflows\n\nSplit CircleCI into two separate workflows for tests and publishing",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6514d30c7f8709cba1131cfdbe6c561c148f4db9"
+        },
+        {
+          "sha": "ee544032ae42b3bff38fa2741b9a5c99114469cb",
+          "author_date": "2021-05-06T05:51:17Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ee544032ae42b3bff38fa2741b9a5c99114469cb"
+        },
+        {
+          "sha": "15ca0cbe7ccb7eb741f5e742136264061451d77e",
+          "author_date": "2021-05-10T16:46:29Z",
+          "message": "Merge branch 'artilleryio:master' into master",
+          "html_url": "https://github.com/artilleryio/artillery/commit/15ca0cbe7ccb7eb741f5e742136264061451d77e"
+        },
+        {
+          "sha": "c995fbf087036ddf95ff9f4d3f4bfae91876a76e",
+          "author_date": "2021-05-10T17:10:26Z",
+          "message": "feat: add maxVusers to casted string-valued phase configs",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c995fbf087036ddf95ff9f4d3f4bfae91876a76e"
+        },
+        {
+          "sha": "7e684b2fc23bf89660c1736a0b4a1008f9094a77",
+          "author_date": "2021-05-11T08:16:13Z",
+          "message": "Merge pull request #1025 from idpbond/master\n\nfeat: add maxVusers to casted string-valued phase configs",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7e684b2fc23bf89660c1736a0b4a1008f9094a77"
+        },
+        {
+          "sha": "91fef4f2345ed4f075e1161c7327b360f74a4073",
+          "author_date": "2021-05-11T17:11:43Z",
+          "message": "feat(websockets): support \"log\" action",
+          "html_url": "https://github.com/artilleryio/artillery/commit/91fef4f2345ed4f075e1161c7327b360f74a4073"
+        },
+        {
+          "sha": "b20d192e74406243f6a4d5c421075e73eb2c12bc",
+          "author_date": "2021-05-11T17:20:08Z",
+          "message": "Merge pull request #1026 from artilleryio/feat/ws-log\n\nfeat(websockets): support \"log\" action",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b20d192e74406243f6a4d5c421075e73eb2c12bc"
+        },
+        {
+          "sha": "48c2ae690d374f3438e12745ba31ee1cd1e678eb",
+          "author_date": "2021-05-03T22:56:40Z",
+          "message": "fix(template): retain keys with periods",
+          "html_url": "https://github.com/artilleryio/artillery/commit/48c2ae690d374f3438e12745ba31ee1cd1e678eb"
+        },
+        {
+          "sha": "e558d48a4fa23a1c84c057e372f6ff6b27acf9fb",
+          "author_date": "2021-05-04T17:45:03Z",
+          "message": "test(template): add case for when the dotted key appears as actual path",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e558d48a4fa23a1c84c057e372f6ff6b27acf9fb"
+        },
+        {
+          "sha": "2bdbf1b8471b0daada55159ee1143b5387a6f97d",
+          "author_date": "2021-05-18T16:38:08Z",
+          "message": "fix: set default to empty object",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2bdbf1b8471b0daada55159ee1143b5387a6f97d"
+        },
+        {
+          "sha": "6d3a18ed7b51c473b00a63a5f243fd846d89cf3d",
+          "author_date": "2021-05-18T18:23:37Z",
+          "message": "Merge pull request #1033 from dav1app/fix/undefined-on-console\n\nfix: set default to empty object",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6d3a18ed7b51c473b00a63a5f243fd846d89cf3d"
+        },
+        {
+          "sha": "0aae8fbf901802c1dba07128b1bbe37ba1c8ed66",
+          "author_date": "2021-05-22T21:52:44Z",
+          "message": "fix: don't fail capture on false boolean values",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0aae8fbf901802c1dba07128b1bbe37ba1c8ed66"
+        },
+        {
+          "sha": "631e7c6335bf5d14bf3b5fac3934b8ecb5978ec9",
+          "author_date": "2021-05-24T07:21:27Z",
+          "message": "fix: ability to match falsy values",
+          "html_url": "https://github.com/artilleryio/artillery/commit/631e7c6335bf5d14bf3b5fac3934b8ecb5978ec9"
+        },
+        {
+          "sha": "855462a35b2efd17a3d6552d743ce10877cca9ab",
+          "author_date": "2021-05-24T08:19:29Z",
+          "message": "Merge pull request #1044 from RohanNagar/master\n\nFix #1027: Don't fail capture on false boolean values",
+          "html_url": "https://github.com/artilleryio/artillery/commit/855462a35b2efd17a3d6552d743ce10877cca9ab"
+        },
+        {
+          "sha": "1330ae50222528c09536fce3629f39ffdfc1128d",
+          "author_date": "2021-05-24T08:20:22Z",
+          "message": "Merge pull request #1045 from mkadirtan/master\n\nfix: ability to match falsy values",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1330ae50222528c09536fce3629f39ffdfc1128d"
+        },
+        {
+          "sha": "73c6f6c8bd891557705d7f4fa7b20684b40aa94e",
+          "author_date": "2021-06-11T10:10:18Z",
+          "message": "fix: pass spec headers to beforeRequest processors",
+          "html_url": "https://github.com/artilleryio/artillery/commit/73c6f6c8bd891557705d7f4fa7b20684b40aa94e"
+        },
+        {
+          "sha": "ee02c778a35a606a16ae892751b401e81a828073",
+          "author_date": "2021-06-17T22:13:32Z",
+          "message": "2.0.0-dev3",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ee02c778a35a606a16ae892751b401e81a828073"
+        },
+        {
+          "sha": "5c315c87e2ebaecdcb392c35465f93a62a4ee333",
+          "author_date": "2021-06-20T19:01:17Z",
+          "message": "feat: allow running an after test flow\n\nAllow adding a flow in an \"after\" section in the test definition\nto be run after the test scenarios (see #751 and #842)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5c315c87e2ebaecdcb392c35465f93a62a4ee333"
+        },
+        {
+          "sha": "8568ae9e7cc5c55b8593566d65647736b724e769",
+          "author_date": "2021-06-22T15:42:44Z",
+          "message": "fix: revert before and after hooks event names",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8568ae9e7cc5c55b8593566d65647736b724e769"
+        },
+        {
+          "sha": "ddbbd871c038dbd9e50e7b228755b52bba919c51",
+          "author_date": "2021-06-23T09:52:42Z",
+          "message": "fix: remove leftover .only in core unit tests",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ddbbd871c038dbd9e50e7b228755b52bba919c51"
+        },
+        {
+          "sha": "42e93d3ebcd35ccb21704b8e7318c161c41c1e26",
+          "author_date": "2021-06-23T10:39:40Z",
+          "message": "Merge pull request #1091 from flentini/fix-core-tests-run\n\nfix: remove leftover .only in core unit tests",
+          "html_url": "https://github.com/artilleryio/artillery/commit/42e93d3ebcd35ccb21704b8e7318c161c41c1e26"
+        },
+        {
+          "sha": "52e1bffc04463fec7f319e4dd9e038473b29fa94",
+          "author_date": "2021-06-23T13:52:01Z",
+          "message": "Merge pull request #1084 from philharmoniedeparis/feat/run-an-after-test-flow\n\nfeat: allow running an after test flow",
+          "html_url": "https://github.com/artilleryio/artillery/commit/52e1bffc04463fec7f319e4dd9e038473b29fa94"
+        },
+        {
+          "sha": "a1454d99b9f829a1a9db43c70354cfb1a8772d00",
+          "author_date": "2021-06-23T17:04:36Z",
+          "message": "fix: pass scenario context vars\n\nto after script hook",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a1454d99b9f829a1a9db43c70354cfb1a8772d00"
+        },
+        {
+          "sha": "0bf97b8c4aa028d36f8fc8a63e5e3c39ac6759d2",
+          "author_date": "2021-06-23T20:29:53Z",
+          "message": "Merge pull request #1093 from flentini/fix/after-tests\n\nfix: pass scenario context vars",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0bf97b8c4aa028d36f8fc8a63e5e3c39ac6759d2"
+        },
+        {
+          "sha": "163ded379a3b2d42d834a7ac7071c3634d3a2240",
+          "author_date": "2021-06-24T17:38:24Z",
+          "message": "feat: add telemetry",
+          "html_url": "https://github.com/artilleryio/artillery/commit/163ded379a3b2d42d834a7ac7071c3634d3a2240"
+        },
+        {
+          "sha": "b3f2f46b613f1b05fbc6f10c8fbdc773ce70cfe9",
+          "author_date": "2021-06-25T11:55:04Z",
+          "message": "feat: add operating system to telemetry payload",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b3f2f46b613f1b05fbc6f10c8fbdc773ce70cfe9"
+        },
+        {
+          "sha": "08bb29a7be0f2a36b2f134fbcc273afe236b62db",
+          "author_date": "2021-06-25T11:59:11Z",
+          "message": "feat: add isCi property to telemetry data",
+          "html_url": "https://github.com/artilleryio/artillery/commit/08bb29a7be0f2a36b2f134fbcc273afe236b62db"
+        },
+        {
+          "sha": "ca01742d810d786548b44bd63b2e935891e639a4",
+          "author_date": "2021-06-25T12:11:41Z",
+          "message": "feat: print telemetry debug message in yellow",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ca01742d810d786548b44bd63b2e935891e639a4"
+        },
+        {
+          "sha": "838d9965656c6b963fea85dcd34e6715b5e56608",
+          "author_date": "2021-06-25T14:15:16Z",
+          "message": "feat: add updateArtilleryConfig and readArtilleryConfig\n\nto lib/util",
+          "html_url": "https://github.com/artilleryio/artillery/commit/838d9965656c6b963fea85dcd34e6715b5e56608"
+        },
+        {
+          "sha": "9611fe10559965251041130b3eccb92667cd30a0",
+          "author_date": "2021-06-25T14:30:26Z",
+          "message": "feat: log telemetry notification message\n\non first test run and help screen",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9611fe10559965251041130b3eccb92667cd30a0"
+        },
+        {
+          "sha": "24130d113e89e16f59a9eab5a919d18cc36787ec",
+          "author_date": "2021-06-25T14:33:43Z",
+          "message": "chore: update .eslintrc ecmaVersion to 9",
+          "html_url": "https://github.com/artilleryio/artillery/commit/24130d113e89e16f59a9eab5a919d18cc36787ec"
+        },
+        {
+          "sha": "4269c3b6b0871554266ff29676484399b193a7cd",
+          "author_date": "2021-06-25T14:45:50Z",
+          "message": "fix: telemetry tests",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4269c3b6b0871554266ff29676484399b193a7cd"
+        },
+        {
+          "sha": "8a9adaab2a1485f82f56d161c5c8b151b4510ed7",
+          "author_date": "2021-06-25T16:06:57Z",
+          "message": "fix: telemetry tests",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8a9adaab2a1485f82f56d161c5c8b151b4510ed7"
+        },
+        {
+          "sha": "095738bbb581b0c11f17d386bf71560321f43e45",
+          "author_date": "2021-06-25T16:14:21Z",
+          "message": "fix: print telemetry notice only\n\nwhen running without arguments",
+          "html_url": "https://github.com/artilleryio/artillery/commit/095738bbb581b0c11f17d386bf71560321f43e45"
+        },
+        {
+          "sha": "c42fdb324d525718771a3c8e15b244eabadff96f",
+          "author_date": "2021-06-25T16:38:49Z",
+          "message": "feat: telemetry capture report generate",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c42fdb324d525718771a3c8e15b244eabadff96f"
+        },
+        {
+          "sha": "7953fb957327a8fe32d0fd7f24cd3ef253837797",
+          "author_date": "2021-06-25T16:39:28Z",
+          "message": "fix: telemetry tests",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7953fb957327a8fe32d0fd7f24cd3ef253837797"
+        },
+        {
+          "sha": "dce19ea0cf2a82ea1c0c101736ef976463fac756",
+          "author_date": "2021-06-25T16:41:13Z",
+          "message": "feat: add Posthog token",
+          "html_url": "https://github.com/artilleryio/artillery/commit/dce19ea0cf2a82ea1c0c101736ef976463fac756"
+        },
+        {
+          "sha": "331b50e7be027235a8d881340fc45d5d2869b612",
+          "author_date": "2021-06-25T16:55:41Z",
+          "message": "Merge pull request #1101 from flentini/feat/telemetry\n\nFeat add telemetry",
+          "html_url": "https://github.com/artilleryio/artillery/commit/331b50e7be027235a8d881340fc45d5d2869b612"
+        },
+        {
+          "sha": "103bf34beb8240827a2f820f176f5e27ec47fd23",
+          "author_date": "2021-06-25T21:45:38Z",
+          "message": "Merge pull request #1074 from keizie/master\n\nfix: pass spec headers to beforeRequest processors",
+          "html_url": "https://github.com/artilleryio/artillery/commit/103bf34beb8240827a2f820f176f5e27ec47fd23"
+        },
+        {
+          "sha": "8a56b884deac65ede3089b240e6789c4740b1139",
+          "author_date": "2021-06-25T21:48:01Z",
+          "message": "fix: typo in engine_util.js (#1075)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8a56b884deac65ede3089b240e6789c4740b1139"
+        },
+        {
+          "sha": "4d5756dea716f64efdb21c0544e8895cd5b81236",
+          "author_date": "2021-06-25T21:50:23Z",
+          "message": "feat: set path to Artillery in Dockerfile (#1062)\n\nThis will allow for an easier way to access the binary when using the\r\nimage directly, such as in a CI/CD environment.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4d5756dea716f64efdb21c0544e8895cd5b81236"
+        },
+        {
+          "sha": "86c3278ef9e3ccfc96dd5fd4ca1018be54d94703",
+          "author_date": "2021-06-25T21:50:42Z",
+          "message": "chore(deps): bump ws from 5.2.2 to 7.4.6 (#1055)\n\nBumps [ws](https://github.com/websockets/ws) from 5.2.2 to 7.4.6.\r\n- [Release notes](https://github.com/websockets/ws/releases)\r\n- [Commits](https://github.com/websockets/ws/compare/5.2.2...7.4.6)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/artilleryio/artillery/commit/86c3278ef9e3ccfc96dd5fd4ca1018be54d94703"
+        },
+        {
+          "sha": "da063ae354b78a56d2f446e50eb331c3a77cf4dc",
+          "author_date": "2021-06-25T21:58:55Z",
+          "message": "chore: remove unused code",
+          "html_url": "https://github.com/artilleryio/artillery/commit/da063ae354b78a56d2f446e50eb331c3a77cf4dc"
+        },
+        {
+          "sha": "ef205d66b90894078cb3707311f91d764b792333",
+          "author_date": "2021-06-25T21:59:00Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ef205d66b90894078cb3707311f91d764b792333"
+        },
+        {
+          "sha": "63dea2e0a02398664ee56e18b6d3eaac7cf9f7a9",
+          "author_date": "2021-06-24T10:41:55Z",
+          "message": "fix: reference correct requestParams",
+          "html_url": "https://github.com/artilleryio/artillery/commit/63dea2e0a02398664ee56e18b6d3eaac7cf9f7a9"
+        },
+        {
+          "sha": "d3a4d7bfb1545cdd0d00f6cdf4a670d30be5edc0",
+          "author_date": "2021-06-25T22:22:14Z",
+          "message": "2.0.0-dev4",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d3a4d7bfb1545cdd0d00f6cdf4a670d30be5edc0"
+        },
+        {
+          "sha": "18dee91ba833f4caf25cb1ddfe06f88af8139b05",
+          "author_date": "2021-06-28T16:25:55Z",
+          "message": "fix: replace spy with stub in test utils\n\nupdateArtilleryConfig function",
+          "html_url": "https://github.com/artilleryio/artillery/commit/18dee91ba833f4caf25cb1ddfe06f88af8139b05"
+        },
+        {
+          "sha": "c8e0e1c5fe893692e510434df1fe5cf1c2ff53d5",
+          "author_date": "2021-06-28T17:07:01Z",
+          "message": "Merge pull request #1103 from flentini/fix-utils-tests\n\nfix: replace spy with stub in test utils",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c8e0e1c5fe893692e510434df1fe5cf1c2ff53d5"
+        },
+        {
+          "sha": "7c52e7e5c59c04d6cb38714c4bf37ad4ffc87897",
+          "author_date": "2021-06-30T10:42:25Z",
+          "message": "fix(ci): add filters to publish workflow",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7c52e7e5c59c04d6cb38714c4bf37ad4ffc87897"
+        },
+        {
+          "sha": "0f12091dfec7628a059455a5383db00250f739dd",
+          "author_date": "2021-06-30T12:40:13Z",
+          "message": "Merge pull request #1106 from flentini/fix/deploy-workflow\n\nfix(ci): add filters to publish workflow",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0f12091dfec7628a059455a5383db00250f739dd"
+        },
+        {
+          "sha": "1b42718d49d67fd84cfcfb3b3f79d6eb88a69c73",
+          "author_date": "2021-06-29T13:31:38Z",
+          "message": "feat: copy tweak on telemetry notice",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1b42718d49d67fd84cfcfb3b3f79d6eb88a69c73"
+        },
+        {
+          "sha": "5e5c8296084d327587a18345321b1f4f93cb789b",
+          "author_date": "2021-06-30T14:55:52Z",
+          "message": "feat(run): add solo mode\n\n- If a phase definition is missing (at the top level, or in specified\n  environment), create a single virtual user\n- If \"--solo\" flag is set, create a single VU regardless of the phase\n  definition",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5e5c8296084d327587a18345321b1f4f93cb789b"
+        },
+        {
+          "sha": "d64f4914d20e5b14f09edb371dc4308eed704c28",
+          "author_date": "2021-06-30T15:00:04Z",
+          "message": "feat(run): track solo runs",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d64f4914d20e5b14f09edb371dc4308eed704c28"
+        },
+        {
+          "sha": "8c43febe9ef9c87badc61b6479a847a2572a2488",
+          "author_date": "2021-06-30T15:38:31Z",
+          "message": "feat: add CI name to telemetry events\n\nwhen running in CI",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8c43febe9ef9c87badc61b6479a847a2572a2488"
+        },
+        {
+          "sha": "9abdef30f02aae9bd83df3f98cc64ffe6c54d65d",
+          "author_date": "2021-06-30T16:03:21Z",
+          "message": "chore: disable telemetry when running npm test",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9abdef30f02aae9bd83df3f98cc64ffe6c54d65d"
+        },
+        {
+          "sha": "c46e65ee441101ef07e345d8909e85500a5be8db",
+          "author_date": "2021-06-30T16:48:05Z",
+          "message": "Merge pull request #1108 from flentini/feat/ci-info\n\nFeat/ci info",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c46e65ee441101ef07e345d8909e85500a5be8db"
+        },
+        {
+          "sha": "4ee88fbb6e2a51b091d7072a7afa162b02257d0d",
+          "author_date": "2021-06-30T17:24:09Z",
+          "message": "2.0.0-dev5",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4ee88fbb6e2a51b091d7072a7afa162b02257d0d"
+        },
+        {
+          "sha": "1498e91654ac4838e4caf94f81c1852dcc9fa9c9",
+          "author_date": "2021-06-27T19:34:04Z",
+          "message": "fix: Emit error if function does not exist",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1498e91654ac4838e4caf94f81c1852dcc9fa9c9"
+        },
+        {
+          "sha": "365f1bfc392ec39ea23fdf2277c7da771d5d21d2",
+          "author_date": "2021-06-27T19:34:22Z",
+          "message": "test: Add http custom function test",
+          "html_url": "https://github.com/artilleryio/artillery/commit/365f1bfc392ec39ea23fdf2277c7da771d5d21d2"
+        },
+        {
+          "sha": "6bebe2c07d29b3c4cd670d59dbbf4642898254e2",
+          "author_date": "2021-06-27T20:05:09Z",
+          "message": "test: Include http test folder",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6bebe2c07d29b3c4cd670d59dbbf4642898254e2"
+        },
+        {
+          "sha": "a81fa798bc23c728217eeca4cf03e6a6ef1d53da",
+          "author_date": "2021-07-01T10:25:51Z",
+          "message": "Merge pull request #1110 from flentini/fix/count-error-if-function-does-not-exist\n\nFix/count error if function does not exist",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a81fa798bc23c728217eeca4cf03e6a6ef1d53da"
+        },
+        {
+          "sha": "00db841d53954f646b058ef535ac44555b49bfa9",
+          "author_date": "2021-07-01T12:03:08Z",
+          "message": "fix(tests): fix core http tests (#1111)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/00db841d53954f646b058ef535ac44555b49bfa9"
+        },
+        {
+          "sha": "729ac3e378d5d6b0dd3ec77cceb6807322cfd5f3",
+          "author_date": "2021-07-05T10:39:51Z",
+          "message": "Feat/socketio engine updates (#1112)\n\n* feat: update socketio engine to v3\r\n* chore: add no-const-assign to eslint\r\n* chore: replace socketio engine with v3\r\n* test(socketio): add tests for arbitary number of emitted data\r\n* chore: bump socket.io-client to 4.1.2",
+          "html_url": "https://github.com/artilleryio/artillery/commit/729ac3e378d5d6b0dd3ec77cceb6807322cfd5f3"
+        },
+        {
+          "sha": "5ef7a1804fdfe2d1b1868a483f447c177d2d1eaa",
+          "author_date": "2021-07-03T16:11:34Z",
+          "message": "chore: bump ws to 7.5.1",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5ef7a1804fdfe2d1b1868a483f447c177d2d1eaa"
+        },
+        {
+          "sha": "50932e4e77d5a0221e87df73ebf33225064dbda8",
+          "author_date": "2021-07-04T15:19:44Z",
+          "message": "feat: add support for http(s) proxy\n\nto websocket engine",
+          "html_url": "https://github.com/artilleryio/artillery/commit/50932e4e77d5a0221e87df73ebf33225064dbda8"
+        },
+        {
+          "sha": "69bb25d702328541e91a259e0cb64dd723a880a6",
+          "author_date": "2021-07-05T15:28:35Z",
+          "message": "Merge pull request #1115 from flentini/feat/ws-engine-updates\n\nFeat/ws engine updates",
+          "html_url": "https://github.com/artilleryio/artillery/commit/69bb25d702328541e91a259e0cb64dd723a880a6"
+        },
+        {
+          "sha": "81e6c2028cd7dbbf745b93a2e91f6ac3d1a5775a",
+          "author_date": "2021-07-06T09:00:39Z",
+          "message": "feat(ws): add connect hook before\n\ncreating WebSocket connection",
+          "html_url": "https://github.com/artilleryio/artillery/commit/81e6c2028cd7dbbf745b93a2e91f6ac3d1a5775a"
+        },
+        {
+          "sha": "e1031d6f9935928910e506f2690ddfbbd5a1316c",
+          "author_date": "2021-07-07T10:36:49Z",
+          "message": "feat: update ws connect hook",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e1031d6f9935928910e506f2690ddfbbd5a1316c"
+        },
+        {
+          "sha": "08dbd68d83261f22e7d8403128185bb50d12cd0b",
+          "author_date": "2021-07-08T09:22:11Z",
+          "message": "docs: fix Discord invite URL\n\nOld one expired, new one is set to not expire.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/08dbd68d83261f22e7d8403128185bb50d12cd0b"
+        },
+        {
+          "sha": "ef6f13d7f7bfcb134bad9dd91547e3a819df7644",
+          "author_date": "2021-07-08T11:41:41Z",
+          "message": "feat: websocket connect action as object",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ef6f13d7f7bfcb134bad9dd91547e3a819df7644"
+        },
+        {
+          "sha": "c50587eb7a62cb7681e2c99723e3b50ac98a0ba8",
+          "author_date": "2021-07-09T10:05:53Z",
+          "message": "Merge pull request #1119 from flentini/feat/ws-connect-action\n\nWebsocket \"connect\" action",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c50587eb7a62cb7681e2c99723e3b50ac98a0ba8"
+        },
+        {
+          "sha": "87058bbd82354697d241248ec2df6afc2ca15ff3",
+          "author_date": "2021-07-16T15:13:20Z",
+          "message": "Update index.html.ejs\n\nWikipedia-Url #hash fixed",
+          "html_url": "https://github.com/artilleryio/artillery/commit/87058bbd82354697d241248ec2df6afc2ca15ff3"
+        },
+        {
+          "sha": "31719504dcb55d208b43421ae7a308cab231a8ae",
+          "author_date": "2021-07-28T12:52:59Z",
+          "message": "feat(console-reporter): tweaks for v1 and v2 compatibility",
+          "html_url": "https://github.com/artilleryio/artillery/commit/31719504dcb55d208b43421ae7a308cab231a8ae"
+        },
+        {
+          "sha": "b6cec228f3a8c68422cf73f6961f322c589a29cf",
+          "author_date": "2021-07-28T16:33:37Z",
+          "message": "2.0.0-dev6",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b6cec228f3a8c68422cf73f6961f322c589a29cf"
+        },
+        {
+          "sha": "9d85efca39da3f623662250e0461c3a4167a5838",
+          "author_date": "2021-05-21T13:46:38Z",
+          "message": "feat: add tests for metrics store",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9d85efca39da3f623662250e0461c3a4167a5838"
+        },
+        {
+          "sha": "18ee95c25526194adcf5ccb5e5e85a38f79d2ee5",
+          "author_date": "2021-07-29T06:48:33Z",
+          "message": "test(ssms): run SSMS tests as part of the test suite\n\nUse our own fork of sketches-js until the PR is merged upstream:\nhttps://github.com/DataDog/sketches-js/pull/13",
+          "html_url": "https://github.com/artilleryio/artillery/commit/18ee95c25526194adcf5ccb5e5e85a38f79d2ee5"
+        },
+        {
+          "sha": "d37df3fe422a8cf5eff39dece22f7dfbcd89fc04",
+          "author_date": "2021-07-29T09:43:53Z",
+          "message": "test: update target\n\n- set payload size explicitly\n- update module for basic auth",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d37df3fe422a8cf5eff39dece22f7dfbcd89fc04"
+        },
+        {
+          "sha": "8beb82c437ef61bb06207a575def5d331227dbd0",
+          "author_date": "2021-08-05T11:23:42Z",
+          "message": "feat: distribute work across worker threads",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8beb82c437ef61bb06207a575def5d331227dbd0"
+        },
+        {
+          "sha": "d1fa6ceecac98c75f86c123fb422f5736facc728",
+          "author_date": "2021-08-11T13:49:02Z",
+          "message": "feat(console-reporter): update console reporter\n\n- Change to a snakey dots spinner\n- Make console.log() respect the spinner\n- Use summaries field on stats objects (histograms is now always raw DDSketch\n  instances)\n- Output formatting tweaks",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d1fa6ceecac98c75f86c123fb422f5736facc728"
+        },
+        {
+          "sha": "ee92b2c5bae04d996f2d9febb0ca474b1745e9ba",
+          "author_date": "2021-08-11T14:02:49Z",
+          "message": "feat(ssms): update SSMS\n\n- Retain original DDSketch objects\n- histograms field will contain DDSketch objects, whereas summaries field will\n  contain summarized sketch values\n- Rename zoomOut to pack",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ee92b2c5bae04d996f2d9febb0ca474b1745e9ba"
+        },
+        {
+          "sha": "ed9b429b0031d39dcab3d71d43ab921b849bfdc7",
+          "author_date": "2021-08-11T14:05:37Z",
+          "message": "fix: make creating the global artillery object an async operation",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ed9b429b0031d39dcab3d71d43ab921b849bfdc7"
+        },
+        {
+          "sha": "dfd95adb60bd0ff8e452e4a215419b14b6547ad4",
+          "author_date": "2021-08-11T14:06:45Z",
+          "message": "fix(phases): handle phases with arrivalCount = 0",
+          "html_url": "https://github.com/artilleryio/artillery/commit/dfd95adb60bd0ff8e452e4a215419b14b6547ad4"
+        },
+        {
+          "sha": "595971c30ef57f47490194aff21983fbe6b39e9a",
+          "author_date": "2021-08-11T14:15:18Z",
+          "message": "feat: ensure we don't have idle workers when splitting up work",
+          "html_url": "https://github.com/artilleryio/artillery/commit/595971c30ef57f47490194aff21983fbe6b39e9a"
+        },
+        {
+          "sha": "cf60f2ee41d3ca76e83d7419ca81659266c29d48",
+          "author_date": "2021-08-11T15:09:10Z",
+          "message": "fix: remove unnecessary require",
+          "html_url": "https://github.com/artilleryio/artillery/commit/cf60f2ee41d3ca76e83d7419ca81659266c29d48"
+        },
+        {
+          "sha": "7cd2b65d661b7e1dc4465bb90a88f13b4bf3aff7",
+          "author_date": "2021-08-11T17:32:56Z",
+          "message": "fix: remove typo",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7cd2b65d661b7e1dc4465bb90a88f13b4bf3aff7"
+        },
+        {
+          "sha": "ba8f9e065f919515dd85f50e05a560710a895f40",
+          "author_date": "2021-08-11T17:41:18Z",
+          "message": "fix: remove unused code",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ba8f9e065f919515dd85f50e05a560710a895f40"
+        },
+        {
+          "sha": "f55ab7ca12829a865b7efd55aadeb92dfe6b0212",
+          "author_date": "2021-08-11T18:34:46Z",
+          "message": "fix: pass legacy stats object correctly",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f55ab7ca12829a865b7efd55aadeb92dfe6b0212"
+        },
+        {
+          "sha": "8dba12b21c27a3fb1aad47916721ccb654673631",
+          "author_date": "2021-08-11T22:23:34Z",
+          "message": "feat(util): add awaitOnEE and sleep",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8dba12b21c27a3fb1aad47916721ccb654673631"
+        },
+        {
+          "sha": "504f12a9ae39baac766c73a2be5876e7780f9377",
+          "author_date": "2021-08-11T22:25:04Z",
+          "message": "test: fix function step tests",
+          "html_url": "https://github.com/artilleryio/artillery/commit/504f12a9ae39baac766c73a2be5876e7780f9377"
+        },
+        {
+          "sha": "bf2419b522cf5d7ab4f686e2a7f07764606b2cd1",
+          "author_date": "2021-08-11T22:25:50Z",
+          "message": "refactor: use new util functions",
+          "html_url": "https://github.com/artilleryio/artillery/commit/bf2419b522cf5d7ab4f686e2a7f07764606b2cd1"
+        },
+        {
+          "sha": "95c8d42b1f427b99670160c0e96483ea82db141f",
+          "author_date": "2021-08-11T22:51:40Z",
+          "message": "fix(tests): runner.stop() returns a promise now",
+          "html_url": "https://github.com/artilleryio/artillery/commit/95c8d42b1f427b99670160c0e96483ea82db141f"
+        },
+        {
+          "sha": "5d9ba01ff8ef40380d219e7f8ee2f5adf06a5837",
+          "author_date": "2021-08-13T10:46:27Z",
+          "message": "feat(console-reporter): show timestamp next to summary report",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5d9ba01ff8ef40380d219e7f8ee2f5adf06a5837"
+        },
+        {
+          "sha": "0c5420586822783dcb39b39809ca299fce78acec",
+          "author_date": "2021-08-23T11:03:52Z",
+          "message": "feat(cli): rename run to run:local\n\nThis will allow us to add other launch platforms in a pluggable way.\n\n\"run\" still works as an alias for \"run:local\".",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0c5420586822783dcb39b39809ca299fce78acec"
+        },
+        {
+          "sha": "7aa5507503ec119a4b34875c0fe88acd50db90ce",
+          "author_date": "2021-08-23T11:05:23Z",
+          "message": "feat: expose console-reporter, util and SSMS via global object",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7aa5507503ec119a4b34875c0fe88acd50db90ce"
+        },
+        {
+          "sha": "ceb4f887e354b10797a3e1394cbf52b9711c3f97",
+          "author_date": "2021-08-23T11:06:48Z",
+          "message": "feat: add artillery.log() function",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ceb4f887e354b10797a3e1394cbf52b9711c3f97"
+        },
+        {
+          "sha": "847b86382077b511da5b132498bf4c8f30e2ec97",
+          "author_date": "2021-08-23T11:07:41Z",
+          "message": "feat(console-reporter): subscribe to artillery.log events",
+          "html_url": "https://github.com/artilleryio/artillery/commit/847b86382077b511da5b132498bf4c8f30e2ec97"
+        },
+        {
+          "sha": "a25a73f228e4ea92bfc0ea4ce3732f46ad922fc9",
+          "author_date": "2021-08-23T11:09:03Z",
+          "message": "fix: set this for Plugin.cleanup",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a25a73f228e4ea92bfc0ea4ce3732f46ad922fc9"
+        },
+        {
+          "sha": "49081d83a85778102dcdc344d4864294e60919a3",
+          "author_date": "2021-08-23T11:14:49Z",
+          "message": "fix: provide more precise plugin loading error messages",
+          "html_url": "https://github.com/artilleryio/artillery/commit/49081d83a85778102dcdc344d4864294e60919a3"
+        },
+        {
+          "sha": "be68905bfd895dcb3c83c7f763b4194782cc16bb",
+          "author_date": "2021-08-23T11:18:59Z",
+          "message": "feat: allow v2 plugins to opt-out of legacy reporting format\n\nProvide SSMS-based metrics objects to plugins that export\nLEGACY_METRICS_FORMAT=false.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/be68905bfd895dcb3c83c7f763b4194782cc16bb"
+        },
+        {
+          "sha": "d2ba118e3913b917a58711a2aba82a2abf580e24",
+          "author_date": "2021-08-23T11:20:08Z",
+          "message": "refactor: move ArtilleryWorker definition into its own module",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d2ba118e3913b917a58711a2aba82a2abf580e24"
+        },
+        {
+          "sha": "5a200fd1cff84335bb7cbc940b2ee393344fd341",
+          "author_date": "2021-08-23T11:23:40Z",
+          "message": "v2.0.0-dev7",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5a200fd1cff84335bb7cbc940b2ee393344fd341"
+        },
+        {
+          "sha": "ea2f7153a793a8301a16a99d9d3a4340a93f5046",
+          "author_date": "2021-08-23T15:31:43Z",
+          "message": "feat: add run:aws command",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ea2f7153a793a8301a16a99d9d3a4340a93f5046"
+        },
+        {
+          "sha": "b35ad396e4dfaad71b3248091bb74282d114d821",
+          "author_date": "2021-08-23T23:17:15Z",
+          "message": "feat: expose telemetry object via artillery global",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b35ad396e4dfaad71b3248091bb74282d114d821"
+        },
+        {
+          "sha": "650a880bccb94b63b82ae9bcea164c0177332270",
+          "author_date": "2021-08-23T23:16:33Z",
+          "message": "feat: put Pro commands under pro and aws namespaces",
+          "html_url": "https://github.com/artilleryio/artillery/commit/650a880bccb94b63b82ae9bcea164c0177332270"
+        },
+        {
+          "sha": "a05b788d3239fcc22f9ffd260a0365c67d49ec7a",
+          "author_date": "2021-08-23T23:20:17Z",
+          "message": "fix: remove Pro command",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a05b788d3239fcc22f9ffd260a0365c67d49ec7a"
+        },
+        {
+          "sha": "c0a02b880e9930c90363d517ebe357a116b27457",
+          "author_date": "2021-08-23T23:37:38Z",
+          "message": "2.0.0-dev8",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c0a02b880e9930c90363d517ebe357a116b27457"
+        },
+        {
+          "sha": "c4403e149e4b7a14ac8f2a6fb1228b7491c5c7c4",
+          "author_date": "2021-08-24T00:35:22Z",
+          "message": "feat: expose Artillery Pro commands",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c4403e149e4b7a14ac8f2a6fb1228b7491c5c7c4"
+        },
+        {
+          "sha": "ffe1c9b03f5fd0175f8d99c8f6ee2ce7017397cf",
+          "author_date": "2021-08-24T00:36:16Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ffe1c9b03f5fd0175f8d99c8f6ee2ce7017397cf"
+        },
+        {
+          "sha": "a1f639730bc266633db956e8c8839a353214cbf4",
+          "author_date": "2021-08-24T00:36:20Z",
+          "message": "2.0.0-dev9",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a1f639730bc266633db956e8c8839a353214cbf4"
+        },
+        {
+          "sha": "6bd0b9dd3af923597bcafb5f6b0e05c5c73287b5",
+          "author_date": "2021-08-25T14:12:51Z",
+          "message": "docs: add CLA",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6bd0b9dd3af923597bcafb5f6b0e05c5c73287b5"
+        },
+        {
+          "sha": "a2741e54a16af8738852e1466ff8d15880cfe31d",
+          "author_date": "2021-08-25T14:21:38Z",
+          "message": "ci: add CLA assistant",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a2741e54a16af8738852e1466ff8d15880cfe31d"
+        },
+        {
+          "sha": "3db3d1869bbfc01df41657ce458af504e669d06f",
+          "author_date": "2021-08-25T21:37:32Z",
+          "message": "ci(cla): fix allowlist to be an empty string",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3db3d1869bbfc01df41657ce458af504e669d06f"
+        },
+        {
+          "sha": "eff4388b784f07f58544b93dbceee5d659582bd1",
+          "author_date": "2021-08-25T20:58:56Z",
+          "message": "fix(http): handle case when request URL is undefined",
+          "html_url": "https://github.com/artilleryio/artillery/commit/eff4388b784f07f58544b93dbceee5d659582bd1"
+        },
+        {
+          "sha": "8a58d09665eba2ddb12a85424a16442e3e79dac5",
+          "author_date": "2021-08-25T20:59:57Z",
+          "message": "fix(global): handle artillery.log() with just one argument",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8a58d09665eba2ddb12a85424a16442e3e79dac5"
+        },
+        {
+          "sha": "87e9d4deae5e25e784fc88875dea5abce2090df8",
+          "author_date": "2021-08-25T21:00:39Z",
+          "message": "fix(run): set \"this\" in calls to reporter cleanup() method",
+          "html_url": "https://github.com/artilleryio/artillery/commit/87e9d4deae5e25e784fc88875dea5abce2090df8"
+        },
+        {
+          "sha": "cf4709a7d1dfa6179fbea6a2dbe40e9fc5b4f9c4",
+          "author_date": "2021-08-25T21:02:04Z",
+          "message": "fix: relay global 'log' messages from workers into main thread\n\nThis makes artillery.log() in worker threads work as expected.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/cf4709a7d1dfa6179fbea6a2dbe40e9fc5b4f9c4"
+        },
+        {
+          "sha": "f3e776d9f3c447b7808234dbcc3157b34dcf27b0",
+          "author_date": "2021-08-25T21:02:54Z",
+          "message": "fix(console-reporter): make the spinner behave well\n\n- start/stop spinner as needed when logging with artillery.log\n- clear spinner on exit",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f3e776d9f3c447b7808234dbcc3157b34dcf27b0"
+        },
+        {
+          "sha": "cce3824f33dbad8a977a7098835e117f39c456e5",
+          "author_date": "2021-08-25T21:04:12Z",
+          "message": "fix: load plugins from default NODE_PATH",
+          "html_url": "https://github.com/artilleryio/artillery/commit/cce3824f33dbad8a977a7098835e117f39c456e5"
+        },
+        {
+          "sha": "cc169cebe577d567a8be5ff2a28a52e9c4871299",
+          "author_date": "2021-08-25T21:49:51Z",
+          "message": "2.0.0-dev10",
+          "html_url": "https://github.com/artilleryio/artillery/commit/cc169cebe577d567a8be5ff2a28a52e9c4871299"
+        },
+        {
+          "sha": "743a4c154e237e238c3e54f345ad6728844675de",
+          "author_date": "2021-08-26T09:38:20Z",
+          "message": "feat(http): remove http.response_rate metric\n\nThe number of responses is already provided by http.responses\ncounter.\n\nMoreover, http.response_rate can sometimes appear to give\nunintuitive results compared to http.request_rate for the same time\nperiod, due to how rates are calculated.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/743a4c154e237e238c3e54f345ad6728844675de"
+        },
+        {
+          "sha": "cfe14edfcdf4f4534ed95a8938cf7baab23ac0ea",
+          "author_date": "2021-08-26T09:41:06Z",
+          "message": "ci: remove CLA assistant action",
+          "html_url": "https://github.com/artilleryio/artillery/commit/cfe14edfcdf4f4534ed95a8938cf7baab23ac0ea"
+        },
+        {
+          "sha": "fc40ed18a6d3c8a598ba11fbc577ff7efbe1a7f5",
+          "author_date": "2021-08-26T09:41:28Z",
+          "message": "ci: push Docker tags explicitly",
+          "html_url": "https://github.com/artilleryio/artillery/commit/fc40ed18a6d3c8a598ba11fbc577ff7efbe1a7f5"
+        },
+        {
+          "sha": "41715258ce1ad708adf045ad76c431352efb4e9a",
+          "author_date": "2021-08-25T20:16:22Z",
+          "message": "chore: move padded function to util",
+          "html_url": "https://github.com/artilleryio/artillery/commit/41715258ce1ad708adf045ad76c431352efb4e9a"
+        },
+        {
+          "sha": "6e23f08b5c62bd910337d2754e83d705ad2c102e",
+          "author_date": "2021-08-25T20:58:50Z",
+          "message": "refactor: allow formatPadding function to be passed as an arg",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6e23f08b5c62bd910337d2754e83d705ad2c102e"
+        },
+        {
+          "sha": "54dd0f9848e64cd860771f82e8311a861ec255c4",
+          "author_date": "2021-08-25T23:15:53Z",
+          "message": "test: add test for default behavior",
+          "html_url": "https://github.com/artilleryio/artillery/commit/54dd0f9848e64cd860771f82e8311a861ec255c4"
+        },
+        {
+          "sha": "d3cb703f2720a3902a0d1af2454717b6e5a41074",
+          "author_date": "2021-08-25T23:16:51Z",
+          "message": "fix: truncate str1 when length will result in a range error",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d3cb703f2720a3902a0d1af2454717b6e5a41074"
+        },
+        {
+          "sha": "b6cf30808976952cf7fe9dd4755a492d17d89d27",
+          "author_date": "2021-09-02T21:09:04Z",
+          "message": "fix(http): emit \"end\" event\n\neven if the response is decompressed",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b6cf30808976952cf7fe9dd4755a492d17d89d27"
+        },
+        {
+          "sha": "0a4a3afdf3569b69f211f7b30ae4bdcab40c6921",
+          "author_date": "2021-09-15T16:17:54Z",
+          "message": "Merge pull request #1164 from flentini/fix-decompress-response\n\nfix(http): emit \"end\" event",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0a4a3afdf3569b69f211f7b30ae4bdcab40c6921"
+        },
+        {
+          "sha": "e8f34e2c73efaba0c2cf0b493636712390bd0f2c",
+          "author_date": "2021-09-10T12:42:43Z",
+          "message": "fix(console-reporter): add plugins. to known prefixes",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e8f34e2c73efaba0c2cf0b493636712390bd0f2c"
+        },
+        {
+          "sha": "345ec70aead67c660e9ca52705f9caf4614fcea7",
+          "author_date": "2021-09-16T10:48:14Z",
+          "message": "feat(http): add support for extended metrics\n\nIf config.http.extendedMetrics is set to true, or if the\nARTILLERY_EXTENDED_HTTP_METRICS env var is set, track and report\nadditional metrics:\n\n- TCP connection establishment time\n- DNS lookup time\n- TLS handshake time\n- Total HTTP response time (ttfb + download)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/345ec70aead67c660e9ca52705f9caf4614fcea7"
+        },
+        {
+          "sha": "50fa1350b25748dfb4008f4f4b0c646d514ff2cd",
+          "author_date": "2021-09-16T10:50:18Z",
+          "message": "fix: Use LOCAL_WORKER_ID for local worker threads\n\nUsing WORKER_ID clashes with the convention used in Artillery Pro\nfor making worker IDs available to custom code.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/50fa1350b25748dfb4008f4f4b0c646d514ff2cd"
+        },
+        {
+          "sha": "195630509b9c0e456e8623195a4c80f419f14d45",
+          "author_date": "2021-09-16T10:52:16Z",
+          "message": "feat(console-reporter): group metrics by source rather than type",
+          "html_url": "https://github.com/artilleryio/artillery/commit/195630509b9c0e456e8623195a4c80f419f14d45"
+        },
+        {
+          "sha": "1da582fb884a2f09a13a62ed87cb6084785e47ed",
+          "author_date": "2021-09-16T10:53:38Z",
+          "message": "fix(console-reporter): make classic report format work again",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1da582fb884a2f09a13a62ed87cb6084785e47ed"
+        },
+        {
+          "sha": "86dadf0d13c0f57501218a73e7a5e68e43004b0a",
+          "author_date": "2021-09-16T10:54:12Z",
+          "message": "dep: clean up dependencies\n\n- commander and piscina are in use\n- artillery-pro - will be rolled into the main source tree",
+          "html_url": "https://github.com/artilleryio/artillery/commit/86dadf0d13c0f57501218a73e7a5e68e43004b0a"
+        },
+        {
+          "sha": "96585887ff3edfc2b2a6ba862838e9089dd170d8",
+          "author_date": "2021-09-16T10:55:14Z",
+          "message": "feat: recommend Node.js 14 (LTS)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/96585887ff3edfc2b2a6ba862838e9089dd170d8"
+        },
+        {
+          "sha": "6c8411298005d502c35bc0f3892b759ae6c57f6d",
+          "author_date": "2021-09-16T10:59:22Z",
+          "message": "dep: update update-notifier to latest version",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6c8411298005d502c35bc0f3892b759ae6c57f6d"
+        },
+        {
+          "sha": "b2d2d4ab312a710305340aa78970feadc4cc187b",
+          "author_date": "2021-09-16T11:00:04Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b2d2d4ab312a710305340aa78970feadc4cc187b"
+        },
+        {
+          "sha": "3169eb9d181b9cb0dc3e8e54b4d75a8b49812217",
+          "author_date": "2021-09-16T11:41:44Z",
+          "message": "2.0.0-dev10.0",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3169eb9d181b9cb0dc3e8e54b4d75a8b49812217"
+        },
+        {
+          "sha": "4b070fb9bdd740a3ab20fb67fd39c68129eb6be2",
+          "author_date": "2021-09-16T11:43:04Z",
+          "message": "2.0.0-0",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4b070fb9bdd740a3ab20fb67fd39c68129eb6be2"
+        },
+        {
+          "sha": "0a16f659bdd8e9c9f40e97b7999ee985be149a42",
+          "author_date": "2021-09-16T14:51:00Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0a16f659bdd8e9c9f40e97b7999ee985be149a42"
+        },
+        {
+          "sha": "162df379293b6b653b0ea040a4b8a085b9583586",
+          "author_date": "2021-09-16T20:31:47Z",
+          "message": "fix(plugins): load plugins set by ARTILLERY_PLUGINS",
+          "html_url": "https://github.com/artilleryio/artillery/commit/162df379293b6b653b0ea040a4b8a085b9583586"
+        },
+        {
+          "sha": "c1c30e97c94f909856a7c023410fa582b70727a2",
+          "author_date": "2021-09-27T08:17:46Z",
+          "message": "chore: debug print number of threads",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c1c30e97c94f909856a7c023410fa582b70727a2"
+        },
+        {
+          "sha": "89efc71f9e982c8fca70423a89a70c1238ed5f3a",
+          "author_date": "2021-09-27T08:18:19Z",
+          "message": "refactor: use artillery.log() in console-reporter",
+          "html_url": "https://github.com/artilleryio/artillery/commit/89efc71f9e982c8fca70423a89a70c1238ed5f3a"
+        },
+        {
+          "sha": "d8af8d19f6a256eb687da4ef25e4daddaa3f35e1",
+          "author_date": "2021-09-27T08:50:26Z",
+          "message": "fix: handle scripts with no plugins",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d8af8d19f6a256eb687da4ef25e4daddaa3f35e1"
+        },
+        {
+          "sha": "98274eadd6a517da1b0d9a8e4bb85322e083431c",
+          "author_date": "2021-09-27T09:03:11Z",
+          "message": "2.0.0-1",
+          "html_url": "https://github.com/artilleryio/artillery/commit/98274eadd6a517da1b0d9a8e4bb85322e083431c"
+        },
+        {
+          "sha": "8341aeef8d09e92b7db7bcd136592b9e452c1a47",
+          "author_date": "2021-09-27T15:20:08Z",
+          "message": "dep: add direct dependency on artillery-pro",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8341aeef8d09e92b7db7bcd136592b9e452c1a47"
+        },
+        {
+          "sha": "6469af465fb156bc25cd07d9528d02e3e34f3272",
+          "author_date": "2021-09-27T21:11:34Z",
+          "message": "fix: default to console.log for output",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6469af465fb156bc25cd07d9528d02e3e34f3272"
+        },
+        {
+          "sha": "8da7bd7953cd8e6d7c205a6a5724302419b9933f",
+          "author_date": "2021-09-27T21:12:25Z",
+          "message": "fix: pass absoluteScrpitPath in for consistency\n\nworkers pass in absolute path which may be used by some plugins",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8da7bd7953cd8e6d7c205a6a5724302419b9933f"
+        },
+        {
+          "sha": "5718f0f84ea05f299bf896fc9e39a5204fd09c48",
+          "author_date": "2021-10-04T21:04:04Z",
+          "message": "fix(workers): relay global log events from workers directly\n\nInstead of using artillery.log() which results in an extranous\nempty opts object being prepended and printed.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5718f0f84ea05f299bf896fc9e39a5204fd09c48"
+        },
+        {
+          "sha": "6f1e8434a0906f69e265e53a40ba7f83d38a4160",
+          "author_date": "2021-10-04T21:43:30Z",
+          "message": "feat: make pro optional",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6f1e8434a0906f69e265e53a40ba7f83d38a4160"
+        },
+        {
+          "sha": "3df019df9bebfe63210e10714178e536dc62e571",
+          "author_date": "2021-10-04T21:46:38Z",
+          "message": "2.0.0-2",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3df019df9bebfe63210e10714178e536dc62e571"
+        },
+        {
+          "sha": "3aa20111f09208a4f757c1e8002bc978636d413b",
+          "author_date": "2021-10-18T16:11:01Z",
+          "message": "feat: extend telemetry events\n\nTrack usage of official plugins, and unique targets (via one-way hash).",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3aa20111f09208a4f757c1e8002bc978636d413b"
+        },
+        {
+          "sha": "c0d868425eff7f3d0d58349f071539ffa250301a",
+          "author_date": "2021-10-18T21:12:00Z",
+          "message": "feat: expose stop-test and describe-test-run",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c0d868425eff7f3d0d58349f071539ffa250301a"
+        },
+        {
+          "sha": "288f85358c84e099618a250e4b46fb953203aebb",
+          "author_date": "2021-10-18T21:16:43Z",
+          "message": "feat: remove dev preview banner",
+          "html_url": "https://github.com/artilleryio/artillery/commit/288f85358c84e099618a250e4b46fb953203aebb"
+        },
+        {
+          "sha": "f335022d06b0e36a1017893a9003df807029e529",
+          "author_date": "2021-10-18T21:18:12Z",
+          "message": "2.0.0-3",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f335022d06b0e36a1017893a9003df807029e529"
+        },
+        {
+          "sha": "5823135efcd546e31eb585e3b234371d4148fc1a",
+          "author_date": "2021-10-18T21:42:58Z",
+          "message": "feat(telemetry): set distinctId if provided",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5823135efcd546e31eb585e3b234371d4148fc1a"
+        },
+        {
+          "sha": "91d21ac43248911bba90a64a8512eca57b83c050",
+          "author_date": "2021-10-18T21:43:34Z",
+          "message": "feat: add extra segmentation properties to telemetry events\n\n- hash of the hostname\n- hash of the username\n- set target hash when provided via \"--target\"\n- hash of IP and MAC addresses\n- set distinctId to equal targetHash",
+          "html_url": "https://github.com/artilleryio/artillery/commit/91d21ac43248911bba90a64a8512eca57b83c050"
+        },
+        {
+          "sha": "b5310a7f47b3adcce5ce4013e54f80253309a896",
+          "author_date": "2021-10-18T21:45:39Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b5310a7f47b3adcce5ce4013e54f80253309a896"
+        },
+        {
+          "sha": "e23303f1a78b0d7f3b080e2e78bf2cce3b3ae290",
+          "author_date": "2021-10-19T11:23:47Z",
+          "message": "docs: update README\n\n- Add links to docs\n- Remove Artillery Pro callout\n- Update Artillery forest stats",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e23303f1a78b0d7f3b080e2e78bf2cce3b3ae290"
+        },
+        {
+          "sha": "dbb14a21845225f10a4120a1103272c484ad0498",
+          "author_date": "2021-10-26T20:52:54Z",
+          "message": "fix(plugins): pass environment plugin configuration\n\nwhen a plugin is initialized",
+          "html_url": "https://github.com/artilleryio/artillery/commit/dbb14a21845225f10a4120a1103272c484ad0498"
+        },
+        {
+          "sha": "17ef81c4d7464cf2d60dd1236f45db5ec66eeb43",
+          "author_date": "2021-10-27T10:58:10Z",
+          "message": "Merge pull request #1187 from flentini/fix-plugins-extra-conf\n\nfix(plugins): pass extra configuration to plugins",
+          "html_url": "https://github.com/artilleryio/artillery/commit/17ef81c4d7464cf2d60dd1236f45db5ec66eeb43"
+        },
+        {
+          "sha": "8bae4440823c835a85d0946d00e4ecdfc5ac86ba",
+          "author_date": "2021-10-27T16:37:23Z",
+          "message": "2.0.0-4",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8bae4440823c835a85d0946d00e4ecdfc5ac86ba"
+        },
+        {
+          "sha": "4585303976de1aaccddbda4048fe2b1a56d50c14",
+          "author_date": "2021-11-01T11:27:23Z",
+          "message": "chore: remove ava",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4585303976de1aaccddbda4048fe2b1a56d50c14"
+        },
+        {
+          "sha": "78dabbf2cce07520e83431caebd6aa443ac574ed",
+          "author_date": "2021-11-02T10:36:17Z",
+          "message": "Merge pull request #1129 from mersahin/patch-1\n\nfix: Update index.html.ejs",
+          "html_url": "https://github.com/artilleryio/artillery/commit/78dabbf2cce07520e83431caebd6aa443ac574ed"
+        },
+        {
+          "sha": "c8b8e97834556722842888cad9d91719df4777fd",
+          "author_date": "2021-11-03T07:35:43Z",
+          "message": "feat(reports): add support for v2 metrics",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c8b8e97834556722842888cad9d91719df4777fd"
+        },
+        {
+          "sha": "93e866c561116ab67a6d37abc326c348ac624b18",
+          "author_date": "2021-11-05T09:24:31Z",
+          "message": "feat(reports): v2 latency at intervals chart",
+          "html_url": "https://github.com/artilleryio/artillery/commit/93e866c561116ab67a6d37abc326c348ac624b18"
+        },
+        {
+          "sha": "8d9f2ce3a0c5d46833c16d3e7859b3a967574b9a",
+          "author_date": "2021-11-08T09:39:15Z",
+          "message": "feat(reports): v2 http codes at intervals chart",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8d9f2ce3a0c5d46833c16d3e7859b3a967574b9a"
+        },
+        {
+          "sha": "13240c3d625e14ea8cad559a68f2e02e22cd1107",
+          "author_date": "2021-11-08T09:41:42Z",
+          "message": "feat(reports): v2 http codes pie chart",
+          "html_url": "https://github.com/artilleryio/artillery/commit/13240c3d625e14ea8cad559a68f2e02e22cd1107"
+        },
+        {
+          "sha": "cb99e73cbd8297f8e3579ca2271cc8bad383e5be",
+          "author_date": "2021-11-08T13:40:19Z",
+          "message": "feat(reports): add v2 errors chart",
+          "html_url": "https://github.com/artilleryio/artillery/commit/cb99e73cbd8297f8e3579ca2271cc8bad383e5be"
+        },
+        {
+          "sha": "88b3716d5b9df5acaa8ad3663cce96e61e301c76",
+          "author_date": "2021-11-09T10:51:37Z",
+          "message": "feat(reports): v2 custom stats charts",
+          "html_url": "https://github.com/artilleryio/artillery/commit/88b3716d5b9df5acaa8ad3663cce96e61e301c76"
+        },
+        {
+          "sha": "0acddc1cdc5be77dbd78cf0073a637e9b577dcab",
+          "author_date": "2021-11-09T13:47:33Z",
+          "message": "feat(reports): add errors at intervals line chart",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0acddc1cdc5be77dbd78cf0073a637e9b577dcab"
+        },
+        {
+          "sha": "15dba4f41a193b69b91f3a7c676e0e11587da8c2",
+          "author_date": "2021-11-09T15:31:52Z",
+          "message": "fix(reports): remove window.Report",
+          "html_url": "https://github.com/artilleryio/artillery/commit/15dba4f41a193b69b91f3a7c676e0e11587da8c2"
+        },
+        {
+          "sha": "6ee0bc6ac8eddd0ec972897b274e69019016cbbd",
+          "author_date": "2021-11-10T10:40:34Z",
+          "message": "fix(reports): same ASCII title as the CLI",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6ee0bc6ac8eddd0ec972897b274e69019016cbbd"
+        },
+        {
+          "sha": "7a38837f7f5844f4c56fbe6fb9e8584a48006236",
+          "author_date": "2021-11-10T10:41:13Z",
+          "message": "fix(reports): report date/time",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7a38837f7f5844f4c56fbe6fb9e8584a48006236"
+        },
+        {
+          "sha": "8806de33e390547feea60f89c82bcc1fb0900f13",
+          "author_date": "2021-11-10T15:40:43Z",
+          "message": "Merge pull request #1203 from flentini/reports-facelift\n\nfeat: v2 reports",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8806de33e390547feea60f89c82bcc1fb0900f13"
+        },
+        {
+          "sha": "5d6c5c4d04d53c1002b3767b9cf0615325f059f3",
+          "author_date": "2021-11-10T16:24:40Z",
+          "message": "fix: propagate suggested exit code from workers to main thread\n\nFixes: https://github.com/artilleryio/artillery/issues/1206",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5d6c5c4d04d53c1002b3767b9cf0615325f059f3"
+        },
+        {
+          "sha": "6933bd0454e9dd03d0004c03db0e6f5853b8bf72",
+          "author_date": "2021-11-10T16:38:53Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6933bd0454e9dd03d0004c03db0e6f5853b8bf72"
+        },
+        {
+          "sha": "dd2a547db2b7420ef7bab8b1f432c3bdfa2e0815",
+          "author_date": "2021-11-11T13:04:15Z",
+          "message": "fix: typo in README",
+          "html_url": "https://github.com/artilleryio/artillery/commit/dd2a547db2b7420ef7bab8b1f432c3bdfa2e0815"
+        },
+        {
+          "sha": "ba0a53d8f018deaa0db95bb7690f340c03f0f08b",
+          "author_date": "2021-11-15T20:49:58Z",
+          "message": "2.0.0-5",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ba0a53d8f018deaa0db95bb7690f340c03f0f08b"
+        },
+        {
+          "sha": "87989ea353dc666c9affde2278010dbeb7266e50",
+          "author_date": "2021-11-15T15:03:50Z",
+          "message": "feat(reports): add custom counters charts and summary",
+          "html_url": "https://github.com/artilleryio/artillery/commit/87989ea353dc666c9affde2278010dbeb7266e50"
+        },
+        {
+          "sha": "0930cb83d665cb41b007674458211b36446d1aa3",
+          "author_date": "2021-11-15T15:42:47Z",
+          "message": "fix(reports) line charts colors",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0930cb83d665cb41b007674458211b36446d1aa3"
+        },
+        {
+          "sha": "0138a0f476967f5976894193b42cf66e407f16f9",
+          "author_date": "2021-11-15T15:47:53Z",
+          "message": "fix(reports): title",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0138a0f476967f5976894193b42cf66e407f16f9"
+        },
+        {
+          "sha": "a42858e08adfd78a4556c4c8ae689f1df2d513f0",
+          "author_date": "2021-11-15T15:51:54Z",
+          "message": "fix(reports): errors at intervals chart",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a42858e08adfd78a4556c4c8ae689f1df2d513f0"
+        },
+        {
+          "sha": "fed972a965b23db9ffed9b8e1b08f66e4c69decb",
+          "author_date": "2021-11-11T21:03:11Z",
+          "message": "fix(core): run before/after hook once,\n\nbefore workers",
+          "html_url": "https://github.com/artilleryio/artillery/commit/fed972a965b23db9ffed9b8e1b08f66e4c69decb"
+        },
+        {
+          "sha": "788e2e24a2e0c696fad3f32a11230cab52297fad",
+          "author_date": "2021-11-12T07:03:04Z",
+          "message": "fix: pass contextVars to 'after' hook",
+          "html_url": "https://github.com/artilleryio/artillery/commit/788e2e24a2e0c696fad3f32a11230cab52297fad"
+        },
+        {
+          "sha": "6a56a0c6f01b0b8563a1d7566b88a1058dbc1aff",
+          "author_date": "2021-11-13T12:57:35Z",
+          "message": "test: before/after hooks in main thread",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6a56a0c6f01b0b8563a1d7566b88a1058dbc1aff"
+        },
+        {
+          "sha": "0a8bc4c164eeec81ae58675802cd8c5a7d40aca0",
+          "author_date": "2021-11-19T10:00:44Z",
+          "message": "feat: add usage of before and after\n\nhooks to 'test run' telemetry event",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0a8bc4c164eeec81ae58675802cd8c5a7d40aca0"
+        },
+        {
+          "sha": "b5f8d593ae3a4c87a76f4b1c10fbdba51ad6d0fb",
+          "author_date": "2021-11-11T11:42:34Z",
+          "message": "test(ssms): update test with multiple instances of SSMS\n\n- Increase the number of datapoints to 100k\n- Increase number of workers from 4 to 7\n- Add sanity checks: max should never be < p99, all values should be positive",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b5f8d593ae3a4c87a76f4b1c10fbdba51ad6d0fb"
+        },
+        {
+          "sha": "a2a9439491069552b2c6e4428b0838b873167712",
+          "author_date": "2021-11-24T15:14:22Z",
+          "message": "wip: reproducible bug",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a2a9439491069552b2c6e4428b0838b873167712"
+        },
+        {
+          "sha": "3d342425893141fe0aeecdcf6783a45ccdc97d88",
+          "author_date": "2021-11-29T09:58:43Z",
+          "message": "2.0.0-6",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3d342425893141fe0aeecdcf6783a45ccdc97d88"
+        },
+        {
+          "sha": "69697d733622460fd7c766c3899a8681000d82d4",
+          "author_date": "2021-11-29T11:25:16Z",
+          "message": "fix(ssms): set lastCounterAt and lastHistogramAt\n\nusing the correct properties from the time period",
+          "html_url": "https://github.com/artilleryio/artillery/commit/69697d733622460fd7c766c3899a8681000d82d4"
+        },
+        {
+          "sha": "366bb82d65c25dace0453f5baccce6cd02128857",
+          "author_date": "2021-11-30T15:26:53Z",
+          "message": "fix(ssms): update mergeBuckets function\n\nto clone histograms before merging them",
+          "html_url": "https://github.com/artilleryio/artillery/commit/366bb82d65c25dace0453f5baccce6cd02128857"
+        },
+        {
+          "sha": "8ce474f9a83111d06554c48fe958759bbab8a4d9",
+          "author_date": "2021-11-30T16:02:45Z",
+          "message": "Merge pull request #1247 from artilleryio/fix/art-67-ssms-p99-aggregation\n\nfix: ssms p99 aggregation",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8ce474f9a83111d06554c48fe958759bbab8a4d9"
+        },
+        {
+          "sha": "783f025be256f5a0785e9e3840bb012f75294161",
+          "author_date": "2021-12-01T09:28:01Z",
+          "message": "fix(phases): set default values for createRamp",
+          "html_url": "https://github.com/artilleryio/artillery/commit/783f025be256f5a0785e9e3840bb012f75294161"
+        },
+        {
+          "sha": "6f330387ddadf713d7de66768bf7e6a072d2da20",
+          "author_date": "2021-12-01T21:25:27Z",
+          "message": "dep: update to latest version of sketches-js",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6f330387ddadf713d7de66768bf7e6a072d2da20"
+        },
+        {
+          "sha": "f827a9dcedb21bf6118e2a225d4c1013c7a4cce2",
+          "author_date": "2021-12-02T23:51:35Z",
+          "message": "dep: update with npm audit fix",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f827a9dcedb21bf6118e2a225d4c1013c7a4cce2"
+        },
+        {
+          "sha": "429ddbc981f1be7d4fbdb225346d3f7c04a87fe3",
+          "author_date": "2021-12-02T23:58:16Z",
+          "message": "2.0.0-7",
+          "html_url": "https://github.com/artilleryio/artillery/commit/429ddbc981f1be7d4fbdb225346d3f7c04a87fe3"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.0.0-10",
@@ -2333,8 +4368,87 @@
     {
       "release": "v2.0.0-20",
       "previous_release": "v2.0.0-19",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9791e3aace66bd58416a6e6ee509f8192240ad9d",
+          "author_date": "2022-06-28T22:31:57Z",
+          "message": "fix(http): avoid multiple callbacks on redirects\n\nresponse event will be fired for each request in a redirect chain which will\nlead to the top-level request callback being called more than once",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9791e3aace66bd58416a6e6ee509f8192240ad9d"
+        },
+        {
+          "sha": "5539ebfa4f249a9d641bd4c8be4a1b5c5a1fd0ca",
+          "author_date": "2022-06-30T19:56:33Z",
+          "message": "dep: upgrade async to v2.6.4",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5539ebfa4f249a9d641bd4c8be4a1b5c5a1fd0ca"
+        },
+        {
+          "sha": "a058add94a27d0985591f08d04d07f7a9fc77c19",
+          "author_date": "2022-06-29T09:39:59Z",
+          "message": "test(ws): fix use of globals in WS test",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a058add94a27d0985591f08d04d07f7a9fc77c19"
+        },
+        {
+          "sha": "0f97a8ddc5b860f72ddb9c4cfcdb3f2e9bd77552",
+          "author_date": "2022-06-30T20:38:37Z",
+          "message": "fix: allow some properties to be numbers or strings\n\nAllow think, count and timeout properties to be string for when\nthey are set through environment variable with \"{{ $processEnvironment.SOME_VAR }}\"",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0f97a8ddc5b860f72ddb9c4cfcdb3f2e9bd77552"
+        },
+        {
+          "sha": "de69a1bae297bd33a3d39a985fd6821ede5fa6d9",
+          "author_date": "2022-07-01T08:14:17Z",
+          "message": "fix: allow zero-duration think steps",
+          "html_url": "https://github.com/artilleryio/artillery/commit/de69a1bae297bd33a3d39a985fd6821ede5fa6d9"
+        },
+        {
+          "sha": "687654af889daa60d06bea9ed72bc38b0fd0bf37",
+          "author_date": "2022-07-01T08:17:00Z",
+          "message": "dep: upgrade dependencies\n\n- @oclif/command\n- @oclif/config\n- chalk\n- cli-table3\n- got\n- moment\n- socket.io-client\n- ws\n- tap",
+          "html_url": "https://github.com/artilleryio/artillery/commit/687654af889daa60d06bea9ed72bc38b0fd0bf37"
+        },
+        {
+          "sha": "c34af50d65757d1a459692d463512b34b475273a",
+          "author_date": "2022-07-01T08:31:25Z",
+          "message": "Merge pull request #1494 from artilleryio/dep/dependency-upgrades\n\ndep: upgrade dependencies",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c34af50d65757d1a459692d463512b34b475273a"
+        },
+        {
+          "sha": "6215bf037a3b3cce9bcc2fe3afa0ef1c72803109",
+          "author_date": "2022-07-02T03:41:43Z",
+          "message": "fix: upgrade chalk from 2.0.0 to 2.4.2\n\nSnyk has created this PR to upgrade chalk from 2.0.0 to 2.4.2.\n\nSee this package in npm:\nhttps://www.npmjs.com/package/chalk\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/h-w88/project/202fc17f-c22b-4b1a-8d9b-7886b67269da?utm_source=github&utm_medium=referral&page=upgrade-pr",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6215bf037a3b3cce9bcc2fe3afa0ef1c72803109"
+        },
+        {
+          "sha": "7c544266255a621b07723c82cdb236a795933aa8",
+          "author_date": "2022-07-03T16:52:32Z",
+          "message": "Merge pull request #1495 from artilleryio/snyk-upgrade-2ad28616d3118b7fe941cb34193c3b15\n\n[Snyk] Upgrade chalk from 2.0.0 to 2.4.2",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7c544266255a621b07723c82cdb236a795933aa8"
+        },
+        {
+          "sha": "d91ba98b141c219b11e4bf20baaa384ecb02f8ba",
+          "author_date": "2022-07-02T03:41:47Z",
+          "message": "fix: upgrade ip from 1.1.5 to 1.1.8\n\nSnyk has created this PR to upgrade ip from 1.1.5 to 1.1.8.\n\nSee this package in npm:\nhttps://www.npmjs.com/package/ip\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/h-w88/project/202fc17f-c22b-4b1a-8d9b-7886b67269da?utm_source=github&utm_medium=referral&page=upgrade-pr",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d91ba98b141c219b11e4bf20baaa384ecb02f8ba"
+        },
+        {
+          "sha": "4bd762b7fdec5d614e6125c26c2d02fae26df8eb",
+          "author_date": "2022-07-02T03:41:52Z",
+          "message": "fix: upgrade socket.io-client from 4.4.1 to 4.5.1\n\nSnyk has created this PR to upgrade socket.io-client from 4.4.1 to 4.5.1.\n\nSee this package in npm:\nhttps://www.npmjs.com/package/socket.io-client\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/h-w88/project/202fc17f-c22b-4b1a-8d9b-7886b67269da?utm_source=github&utm_medium=referral&page=upgrade-pr",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4bd762b7fdec5d614e6125c26c2d02fae26df8eb"
+        },
+        {
+          "sha": "b5e518aa719b10c03db34aa1ac9d880bd44aacf0",
+          "author_date": "2022-07-02T03:41:56Z",
+          "message": "fix: upgrade cli-table3 from 0.6.1 to 0.6.2\n\nSnyk has created this PR to upgrade cli-table3 from 0.6.1 to 0.6.2.\n\nSee this package in npm:\nhttps://www.npmjs.com/package/cli-table3\n\nSee this project in Snyk:\nhttps://app.snyk.io/org/h-w88/project/202fc17f-c22b-4b1a-8d9b-7886b67269da?utm_source=github&utm_medium=referral&page=upgrade-pr",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b5e518aa719b10c03db34aa1ac9d880bd44aacf0"
+        },
+        {
+          "sha": "e9be0e673fc66538932372402dcf13f596635bca",
+          "author_date": "2022-07-04T15:24:23Z",
+          "message": "2.0.0-20",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e9be0e673fc66538932372402dcf13f596635bca"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.0.0-21",
@@ -2375,8 +4489,75 @@
     {
       "release": "v2.0.0-27",
       "previous_release": "v2.0.0-26",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d422ba4e796015159155b235e6d0de5524cb7a54",
+          "author_date": "2022-11-07T13:24:57Z",
+          "message": "fix: emit stats for sleeping workers on phaseStarted event\n\nWhen running a test with sleeping workers, this means that stats\nagregation does not wait until timeout for all worker metrics to arrive, so:\n  - Short tests are going to finish sooner (3-4s in my machine but its\n    tied to number of workers)\n  - Short tests are going to emit the final report properly as we geet rid\n    of the race condition were report aggregation and app shutdown are competing",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d422ba4e796015159155b235e6d0de5524cb7a54"
+        },
+        {
+          "sha": "eb86903bf9782c0a04a2e2a0e6adada4b257c138",
+          "author_date": "2022-11-07T14:34:54Z",
+          "message": "refactor: move new logic to isIdlePhase method",
+          "html_url": "https://github.com/artilleryio/artillery/commit/eb86903bf9782c0a04a2e2a0e6adada4b257c138"
+        },
+        {
+          "sha": "f484630ba199e46c6a63e93b90e0b1a3d7a95de8",
+          "author_date": "2022-11-07T18:28:12Z",
+          "message": "test: add new test for divideWork for multiple scenarios\n\nThis is to take into account that now workers that _only_ sleep are filtered from 'divideWork' return values",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f484630ba199e46c6a63e93b90e0b1a3d7a95de8"
+        },
+        {
+          "sha": "c15b0d1d638907049477d6d085127560bc81cea8",
+          "author_date": "2022-11-08T19:50:24Z",
+          "message": "test: test already known case\n\nUpdate script to reflect a case which cause previous versions to send abnormal traffic\nCheck against that particular case so it can run independently of ramp probability",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c15b0d1d638907049477d6d085127560bc81cea8"
+        },
+        {
+          "sha": "4f6435ba54bac8d16283f9a33c3dc82a0e64636c",
+          "author_date": "2022-11-10T13:40:44Z",
+          "message": "Merge pull request #1654 from artilleryio/hotfix/missing_report_when_no_phase_defined\n\nfix: test with no explicit phases do not create final report in distributed mode",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4f6435ba54bac8d16283f9a33c3dc82a0e64636c"
+        },
+        {
+          "sha": "65020300e6cc8a57f351bae29e125a3e2d5cbc88",
+          "author_date": "2022-11-10T13:42:36Z",
+          "message": "Merge pull request #1657 from artilleryio/hotfix/flaky_ramp_test\n\nfix flaky test",
+          "html_url": "https://github.com/artilleryio/artillery/commit/65020300e6cc8a57f351bae29e125a3e2d5cbc88"
+        },
+        {
+          "sha": "8fa044638a920b6a1a0e2822d51c2646d88bf67b",
+          "author_date": "2022-11-15T15:27:27Z",
+          "message": "feat(lambda): use arm64/Graviton by default",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8fa044638a920b6a1a0e2822d51c2646d88bf67b"
+        },
+        {
+          "sha": "07e0e06214eb7ba74dc859ff1a589b6031fc0c02",
+          "author_date": "2022-11-15T17:09:21Z",
+          "message": "fix(console-reporter): count elapsed time from first recorded metric",
+          "html_url": "https://github.com/artilleryio/artillery/commit/07e0e06214eb7ba74dc859ff1a589b6031fc0c02"
+        },
+        {
+          "sha": "06aa19c840f40781899f93bdd05786ea6faa6bca",
+          "author_date": "2022-11-15T17:12:45Z",
+          "message": "feat: use a pool of SQS consumers",
+          "html_url": "https://github.com/artilleryio/artillery/commit/06aa19c840f40781899f93bdd05786ea6faa6bca"
+        },
+        {
+          "sha": "081d4e48826f80256305fa58211788c9452bd72f",
+          "author_date": "2022-11-15T17:15:03Z",
+          "message": "fix: make sure intermediates are flushed before done",
+          "html_url": "https://github.com/artilleryio/artillery/commit/081d4e48826f80256305fa58211788c9452bd72f"
+        },
+        {
+          "sha": "3cb6b0f549f918a7619d4022046423a57dc9232e",
+          "author_date": "2022-11-15T21:18:38Z",
+          "message": "2.0.0-27",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3cb6b0f549f918a7619d4022046423a57dc9232e"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "artillery-2.0.0-28",
@@ -2453,8 +4634,261 @@
     {
       "release": "v2.0.0-37",
       "previous_release": "artillery-2.0.0-36",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "fec62919bf3a4b8ff73877f12ecc68a5380cbd74",
+          "author_date": "2023-08-21T11:56:27Z",
+          "message": "chore: post slack notifications only on failures in main (#2063)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/fec62919bf3a4b8ff73877f12ecc68a5380cbd74"
+        },
+        {
+          "sha": "f3512943cab3dafed90e8b02b33929dffdfd54cd",
+          "author_date": "2023-08-21T13:26:55Z",
+          "message": "chore: change mockingjay port to 9099 (#2071)\n\n* chore: change mockingjay port to 9099\r\n\r\n* chore: flip the order of mockingjay ports",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f3512943cab3dafed90e8b02b33929dffdfd54cd"
+        },
+        {
+          "sha": "d1b2e78f4a9cf3e0893e04aa69b21a7ba802559e",
+          "author_date": "2023-08-21T13:39:16Z",
+          "message": "fix(types): implies default \"http\" engine, fixes request \"cookies\" and \"match\" (#2054)\n\n* fix: support \"http\" as the implicit engine\r\n\r\n* fix: support \"match\" on http requests\r\n\r\n* fix: annotate request \"cookies\" as free-form object\r\n\r\n* chore: run build before tests\r\n\r\n* test: add example-based tests for types\r\n\r\n* fix: mark request \"match\" as deprecated\r\n\r\n* fix: make root-level \"scenarios\" optional\r\n\r\n* feat: annotate expect plugin\r\n\r\n* test: add additional example tests\r\n\r\n* fix(expect): \"notStatusCode\" can be a number\r\n\r\n* feat(expect): document \"useOnlyRequestNames\" option",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d1b2e78f4a9cf3e0893e04aa69b21a7ba802559e"
+        },
+        {
+          "sha": "0debe44f8201f3a970d6ac583757e92ffdbcde50",
+          "author_date": "2023-08-22T08:51:43Z",
+          "message": "fix(publish-metrics): fix operator in honeycomb reporter",
+          "html_url": "https://github.com/artilleryio/artillery/commit/0debe44f8201f3a970d6ac583757e92ffdbcde50"
+        },
+        {
+          "sha": "076314a411cec40ec26929bdd2e0eb55e0ae6a28",
+          "author_date": "2023-08-22T09:16:23Z",
+          "message": "Merge pull request #2075 from artilleryio/fix-honeycomb-fail\n\nfix(publish-metrics): change operator in honeycomb reporter",
+          "html_url": "https://github.com/artilleryio/artillery/commit/076314a411cec40ec26929bdd2e0eb55e0ae6a28"
+        },
+        {
+          "sha": "53d1f90aa133e823a29dfa062eb6c83d393ca4f4",
+          "author_date": "2023-08-22T11:37:53Z",
+          "message": "ci: release v0.1.4 @artilleryio/types (#2072)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/53d1f90aa133e823a29dfa062eb6c83d393ca4f4"
+        },
+        {
+          "sha": "839736fb2322b7fba797e942a73eb40347875a94",
+          "author_date": "2023-08-23T08:11:08Z",
+          "message": "feat(ensure): add colored output to checks (#2074)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/839736fb2322b7fba797e942a73eb40347875a94"
+        },
+        {
+          "sha": "651351e567ae0cc88027796eda3f8817a31dc03b",
+          "author_date": "2023-08-23T08:12:00Z",
+          "message": "feat: add support for app keys to Datadog reporter (#2067)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/651351e567ae0cc88027796eda3f8817a31dc03b"
+        },
+        {
+          "sha": "7c83e2bc2961297f4a5f417f7d846042d7ba1aaa",
+          "author_date": "2023-08-23T08:15:47Z",
+          "message": "feat(cloud): show test run url at the end of the run too (#2070)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7c83e2bc2961297f4a5f417f7d846042d7ba1aaa"
+        },
+        {
+          "sha": "8ac06779d9f614873d07acbac0e7ce7a954ea01a",
+          "author_date": "2023-08-23T14:41:38Z",
+          "message": "docs: point to Playwright engine docs in the README",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8ac06779d9f614873d07acbac0e7ce7a954ea01a"
+        },
+        {
+          "sha": "382e2910f0724f3a5ecf3d8454220d977144a9df",
+          "author_date": "2023-08-24T08:42:32Z",
+          "message": "chore(artillery): change repeated test names",
+          "html_url": "https://github.com/artilleryio/artillery/commit/382e2910f0724f3a5ecf3d8454220d977144a9df"
+        },
+        {
+          "sha": "c20229c8e7145cf19453f91ec14baa10362ec2a9",
+          "author_date": "2023-08-24T09:17:49Z",
+          "message": "Merge pull request #2081 from artilleryio/change-duplicated-test-name\n\nchore(artillery): change repeated test names",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c20229c8e7145cf19453f91ec14baa10362ec2a9"
+        },
+        {
+          "sha": "6e5a31c623c360763c8832bfaed021f878db72dd",
+          "author_date": "2023-08-24T11:45:38Z",
+          "message": "fix(types): support array of expectation metrics (#2077)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/6e5a31c623c360763c8832bfaed021f878db72dd"
+        },
+        {
+          "sha": "3d7279ce4f247985c954ad98a9c409031333b9df",
+          "author_date": "2023-08-24T14:42:52Z",
+          "message": "feat(core): allow multiple time formats in duration and pauses",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3d7279ce4f247985c954ad98a9c409031333b9df"
+        },
+        {
+          "sha": "2e91c3ff5b74de0dd285fd9d101fb2bb87b26708",
+          "author_date": "2023-08-24T14:47:38Z",
+          "message": "fix(types): correct phase types",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2e91c3ff5b74de0dd285fd9d101fb2bb87b26708"
+        },
+        {
+          "sha": "68ad29892d0c471a623e230a7fc655ab1a91fac4",
+          "author_date": "2023-08-24T14:57:47Z",
+          "message": "chore(types): add ms link to tip on pause and duration",
+          "html_url": "https://github.com/artilleryio/artillery/commit/68ad29892d0c471a623e230a7fc655ab1a91fac4"
+        },
+        {
+          "sha": "c613494fbbb96488e03d9796ee885af2942ff2bb",
+          "author_date": "2023-08-24T15:12:53Z",
+          "message": "Merge pull request #2084 from artilleryio/bernardobridge/art-1081-support-multiple-time-formats-in-artillery-cli\n\nfeat(core): support multiple time formats in artillery cli",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c613494fbbb96488e03d9796ee885af2942ff2bb"
+        },
+        {
+          "sha": "4030f6df7ffb2cae31af29064c9ce73f1bdddbdb",
+          "author_date": "2023-08-25T07:33:08Z",
+          "message": "dep(publish-metrics): update Honeycomb client (#2076)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4030f6df7ffb2cae31af29064c9ce73f1bdddbdb"
+        },
+        {
+          "sha": "285d783d784c833c989bc6e1101f32833f8228dc",
+          "author_date": "2023-08-25T07:40:20Z",
+          "message": "fix(cloud): display api key error when invalid key is set (#2078)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/285d783d784c833c989bc6e1101f32833f8228dc"
+        },
+        {
+          "sha": "31b424e55fcc8b529d9b16a787aeaaf96e59883d",
+          "author_date": "2023-08-25T08:28:12Z",
+          "message": "test(artillery): increase timeout",
+          "html_url": "https://github.com/artilleryio/artillery/commit/31b424e55fcc8b529d9b16a787aeaaf96e59883d"
+        },
+        {
+          "sha": "006b8d09d198d36b1060f444b6dd172720113026",
+          "author_date": "2023-08-25T08:51:13Z",
+          "message": "Merge pull request #2088 from artilleryio/bernardobridge/increase-cli-test-timeout\n\ntest(artillery): increase timeout of suite",
+          "html_url": "https://github.com/artilleryio/artillery/commit/006b8d09d198d36b1060f444b6dd172720113026"
+        },
+        {
+          "sha": "508f5f52db8667f1495f31639d50d2d4d4e7f323",
+          "author_date": "2023-08-25T13:36:59Z",
+          "message": "fix(types): rename \"followRedirects\" to \"followRedirect\" (#2089)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/508f5f52db8667f1495f31639d50d2d4d4e7f323"
+        },
+        {
+          "sha": "96a494bc1bc9fbfa676c042ca0d5f9d9717ab8db",
+          "author_date": "2023-08-25T14:42:34Z",
+          "message": "fix(types): annotate \"config.http.defaults\" (#2090)\n\n* fix(types): annotate \"config.http.defaults\"\r\n\r\n* fix: make \"strictCapture\" option a string too",
+          "html_url": "https://github.com/artilleryio/artillery/commit/96a494bc1bc9fbfa676c042ca0d5f9d9717ab8db"
+        },
+        {
+          "sha": "7883ffbf218b6735f32217ab033b86651e32aaa0",
+          "author_date": "2023-08-25T14:43:37Z",
+          "message": "ci: release v0.1.5 (#2091)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7883ffbf218b6735f32217ab033b86651e32aaa0"
+        },
+        {
+          "sha": "9215c2f17622e3eb027f9abedc1636d4153a6fd9",
+          "author_date": "2023-08-29T15:56:25Z",
+          "message": "refactor(examples): make playwright smoke example have more interaction (#2103)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9215c2f17622e3eb027f9abedc1636d4153a6fd9"
+        },
+        {
+          "sha": "eeee67c933637be164591e175a37287666ad9817",
+          "author_date": "2023-08-31T13:13:15Z",
+          "message": "fix: calculate common prefix taking directory separators into account (#2106)\n\n* fix(bom): calculate common prefix based on filepath components\r\n\r\nThe current implementation of commonPrefix treats inputs as just\r\nstrings, whereas the intention is to return common *directory*\r\nprefix for a bunch of filenames.\r\n\r\nCurrent implementation breaks on inputs such as:\r\n\r\n['/test/acme.js', '/test/acme.yml']\r\n\r\nreturning '/test/acme.' as the result.\r\n\r\nThis change fixes that issue. The result for the input above\r\nwill now be: '/test/'.\r\n\r\nRef: https://github.com/artilleryio/artillery/issues/2092",
+          "html_url": "https://github.com/artilleryio/artillery/commit/eeee67c933637be164591e175a37287666ad9817"
+        },
+        {
+          "sha": "b9eed29b2f9093c2492f6b322652a5ef2fd05667",
+          "author_date": "2023-08-31T13:25:55Z",
+          "message": "dep(playwright): update playwright version to 1.37.1 (#2105)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/b9eed29b2f9093c2492f6b322652a5ef2fd05667"
+        },
+        {
+          "sha": "50b24a3b953f8020c40361ad395ffdd83239b531",
+          "author_date": "2023-08-31T21:12:05Z",
+          "message": "ci(test): change to better formatted slack notification github action (#2107)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/50b24a3b953f8020c40361ad395ffdd83239b531"
+        },
+        {
+          "sha": "4dd45b71ebf8a27614810023bcbbf2f3052fcf14",
+          "author_date": "2023-09-01T14:49:14Z",
+          "message": "fix(examples): artillery cli using data from csv example (#2108)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4dd45b71ebf8a27614810023bcbbf2f3052fcf14"
+        },
+        {
+          "sha": "101a555a5fbbe68c40e3e220877e7aaf6ea59389",
+          "author_date": "2023-09-01T16:10:10Z",
+          "message": "ci(examples): make gh action examples report to artillery cloud (#2109)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/101a555a5fbbe68c40e3e220877e7aaf6ea59389"
+        },
+        {
+          "sha": "47b5181256669ea8d43b32df3bfe9f2c71503cbb",
+          "author_date": "2023-09-06T08:32:59Z",
+          "message": "dep(artillery): update ci-info to get more up-to-date telemetry (#2116)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/47b5181256669ea8d43b32df3bfe9f2c71503cbb"
+        },
+        {
+          "sha": "708514632b23d40d04475ecae715dbb3ea2d95ec",
+          "author_date": "2023-09-06T08:35:20Z",
+          "message": "feat(publish-metrics): add OpenTelemetry tracing support (#2073)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/708514632b23d40d04475ecae715dbb3ea2d95ec"
+        },
+        {
+          "sha": "c34ae8a41577786a4ce83db148c0a46ec2341641",
+          "author_date": "2023-09-06T14:27:59Z",
+          "message": "feat(publish-metrics): implement sending metrics with OpenTelemetry (#2113)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c34ae8a41577786a4ce83db148c0a46ec2341641"
+        },
+        {
+          "sha": "2f484f8ab0f58f0d45f482907ed875b0d256535b",
+          "author_date": "2023-09-07T13:56:53Z",
+          "message": "fix(publish-metrics): remove undefined prefix from rate names (#2121)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/2f484f8ab0f58f0d45f482907ed875b0d256535b"
+        },
+        {
+          "sha": "648869d5cc5bb6373e1c382315c0f85749b4173e",
+          "author_date": "2023-09-08T12:51:59Z",
+          "message": "ci: release v0.3.2 of artillery-engine-playwright",
+          "html_url": "https://github.com/artilleryio/artillery/commit/648869d5cc5bb6373e1c382315c0f85749b4173e"
+        },
+        {
+          "sha": "719981a308a2a19c908574ad39f2093b3c7dc63d",
+          "author_date": "2023-09-08T18:37:43Z",
+          "message": "docs: update README\n\nSimplify to focus on just load testing for now.",
+          "html_url": "https://github.com/artilleryio/artillery/commit/719981a308a2a19c908574ad39f2093b3c7dc63d"
+        },
+        {
+          "sha": "7dfdba3c85c27ad38947e001fb85bf192d2a25b5",
+          "author_date": "2023-09-11T12:14:06Z",
+          "message": "ci: release v1.2.0 of artillery-plugin-ensure",
+          "html_url": "https://github.com/artilleryio/artillery/commit/7dfdba3c85c27ad38947e001fb85bf192d2a25b5"
+        },
+        {
+          "sha": "3ab8e07a0c677fadfa327c2fe87e534934cba0ef",
+          "author_date": "2023-09-11T12:23:02Z",
+          "message": "ci: release v2.7.0 of artillery-plugin-publish-metrics",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3ab8e07a0c677fadfa327c2fe87e534934cba0ef"
+        },
+        {
+          "sha": "d39abda455d2b4eef13fd3250c46c240dc94f0fc",
+          "author_date": "2023-09-11T12:28:53Z",
+          "message": "ci: release v2.1.0 of @artilleryio/int-core",
+          "html_url": "https://github.com/artilleryio/artillery/commit/d39abda455d2b4eef13fd3250c46c240dc94f0fc"
+        },
+        {
+          "sha": "8697334b9c06dd5ea66c8fc83c30714035b4212e",
+          "author_date": "2023-09-11T13:04:50Z",
+          "message": "dep(artillery): update platform-fargate to 2.1.0",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8697334b9c06dd5ea66c8fc83c30714035b4212e"
+        },
+        {
+          "sha": "52d7ade5f47cb89ae5d7ef52794db7c2f2b8986d",
+          "author_date": "2023-09-11T13:15:28Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/52d7ade5f47cb89ae5d7ef52794db7c2f2b8986d"
+        },
+        {
+          "sha": "a77a3e9df98d0df3b6ebf7d6441251044d1b3762",
+          "author_date": "2023-09-11T16:00:32Z",
+          "message": "ci: release v2.0.0-37 of Artillery",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a77a3e9df98d0df3b6ebf7d6441251044d1b3762"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v2.0.0-38",
@@ -2603,8 +5037,147 @@
     {
       "release": "artillery-2.0.24",
       "previous_release": "artillery-2.0.23",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "968461645f178a7f796632c08bcb80c266745d1a",
+          "author_date": "2025-05-22T12:54:39Z",
+          "message": "fix(azure): process AQS messages faster\n\n- Add a pool of AQS consumers. This increases throughput for large load tests (200+ workers)\n- Change default pool size",
+          "html_url": "https://github.com/artilleryio/artillery/commit/968461645f178a7f796632c08bcb80c266745d1a"
+        },
+        {
+          "sha": "f836c9f3fb654483ad6b2dc6925657eba7de5f97",
+          "author_date": "2025-05-22T12:56:53Z",
+          "message": "fix(azure): decrease delay between starting batches of workers",
+          "html_url": "https://github.com/artilleryio/artillery/commit/f836c9f3fb654483ad6b2dc6925657eba7de5f97"
+        },
+        {
+          "sha": "1a1f704ef81bb568ac54c1251f3cdf1bdd420bc7",
+          "author_date": "2025-05-22T14:22:46Z",
+          "message": "fix: Azure message processing throughput (#3542)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/1a1f704ef81bb568ac54c1251f3cdf1bdd420bc7"
+        },
+        {
+          "sha": "9fa9c8b944615ed7aeb5b59ebe4af0f1920afe17",
+          "author_date": "2025-06-02T15:24:52Z",
+          "message": "fix: take distributed phases into account in TypeScript scripts (#3548)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9fa9c8b944615ed7aeb5b59ebe4af0f1920afe17"
+        },
+        {
+          "sha": "e393a6c727f414f399d8670938a62575ccb61b50",
+          "author_date": "2025-06-13T08:55:11Z",
+          "message": "dep: upgrade Playwright to v1.53.0 (#3556)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e393a6c727f414f399d8670938a62575ccb61b50"
+        },
+        {
+          "sha": "82a8529c463611a585ce384a3f2ddca35edc8198",
+          "author_date": "2025-06-17T11:41:27Z",
+          "message": "fix: Slack plugin not reporting duration and status correctly (#3555)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/82a8529c463611a585ce384a3f2ddca35edc8198"
+        },
+        {
+          "sha": "5546a03e1fd60c64c18b213e68e464757df7a132",
+          "author_date": "2025-07-11T10:35:32Z",
+          "message": "dep(apdex): move tap to devDependencies (#3573)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/5546a03e1fd60c64c18b213e68e464757df7a132"
+        },
+        {
+          "sha": "631e5c30cfcd0654385c85878c0339ff0c1b121b",
+          "author_date": "2025-07-11T10:37:03Z",
+          "message": "ci: run tests on Node.js 22 and 24 (#3572)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/631e5c30cfcd0654385c85878c0339ff0c1b121b"
+        },
+        {
+          "sha": "e216258b5e664c7112c6568b11183d2eda58e6c7",
+          "author_date": "2025-07-04T10:36:05Z",
+          "message": "dep: upgrade outdated dependencies",
+          "html_url": "https://github.com/artilleryio/artillery/commit/e216258b5e664c7112c6568b11183d2eda58e6c7"
+        },
+        {
+          "sha": "3305a7d37959a2bea044a1a4d423e2cfb962b0ab",
+          "author_date": "2025-07-11T11:04:21Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/3305a7d37959a2bea044a1a4d423e2cfb962b0ab"
+        },
+        {
+          "sha": "a3b60db7f48dcee5b08b832f1d74e54e0b92fca5",
+          "author_date": "2025-07-11T11:10:14Z",
+          "message": "dep: upgrade Playwright to v1.54.0",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a3b60db7f48dcee5b08b832f1d74e54e0b92fca5"
+        },
+        {
+          "sha": "a01bdfb4572cdfcb266d0ab815467067686d482f",
+          "author_date": "2025-07-11T11:10:27Z",
+          "message": "chore: update package-lock.json",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a01bdfb4572cdfcb266d0ab815467067686d482f"
+        },
+        {
+          "sha": "58369ba52a30548c46c0bf6484ee93c11214d7a8",
+          "author_date": "2025-07-11T13:03:55Z",
+          "message": "Merge pull request #3574 from artilleryio/dep/playwright-v1.54.0\n\ndep: upgrade to Playwright v1.54.0",
+          "html_url": "https://github.com/artilleryio/artillery/commit/58369ba52a30548c46c0bf6484ee93c11214d7a8"
+        },
+        {
+          "sha": "8dd6f0602496ca30eb47faad38d1e19c7c06ba35",
+          "author_date": "2025-07-11T13:04:28Z",
+          "message": "test: skip tests for suggested commands",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8dd6f0602496ca30eb47faad38d1e19c7c06ba35"
+        },
+        {
+          "sha": "8f6e17cbd2664bf82f895742726050c3f3e9ed56",
+          "author_date": "2025-07-11T13:04:53Z",
+          "message": "refactor: exit from the main Oclif callback",
+          "html_url": "https://github.com/artilleryio/artillery/commit/8f6e17cbd2664bf82f895742726050c3f3e9ed56"
+        },
+        {
+          "sha": "4601adcc8e87add559d4d89213f738f99e901672",
+          "author_date": "2025-07-11T13:35:11Z",
+          "message": "refactor: handle prepareTestExecutionPlan errors",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4601adcc8e87add559d4d89213f738f99e901672"
+        },
+        {
+          "sha": "62b9c1dc89c0929d254b4af850c694c6308f508a",
+          "author_date": "2025-07-11T13:35:43Z",
+          "message": "Merge pull request #3568 from artilleryio/dep/upgrade\n\ndep: upgrade dependency versions for artillery, core, and commons",
+          "html_url": "https://github.com/artilleryio/artillery/commit/62b9c1dc89c0929d254b4af850c694c6308f508a"
+        },
+        {
+          "sha": "ec9481d2038aca04a9cea090b0a203b07ee50d93",
+          "author_date": "2025-07-11T14:03:09Z",
+          "message": "feat: remove Lightstep integration via lightstep-tracer (#3575)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ec9481d2038aca04a9cea090b0a203b07ee50d93"
+        },
+        {
+          "sha": "a931211a7b3927367f1e5dca7965a43a4e36ed21",
+          "author_date": "2025-07-11T15:48:09Z",
+          "message": "test: increase amount of memory for memory use stress test (#3576)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/a931211a7b3927367f1e5dca7965a43a4e36ed21"
+        },
+        {
+          "sha": "c01f43acd6fd9c5385e1d4627307cd7d6a3dc95d",
+          "author_date": "2025-07-14T12:23:00Z",
+          "message": "test: increase resources for both configs (#3578)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/c01f43acd6fd9c5385e1d4627307cd7d6a3dc95d"
+        },
+        {
+          "sha": "ab659cb685d1289fb1c0506c7805bd1d5a8f0276",
+          "author_date": "2025-07-18T16:21:21Z",
+          "message": "fix: apdex score not showing (#3579)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/ab659cb685d1289fb1c0506c7805bd1d5a8f0276"
+        },
+        {
+          "sha": "9f74d0fc449a03367475920ae55ed3c3c6e8975e",
+          "author_date": "2025-08-11T11:15:31Z",
+          "message": "dep: upgrade to Playwright v1.54.2 (#3593)",
+          "html_url": "https://github.com/artilleryio/artillery/commit/9f74d0fc449a03367475920ae55ed3c3c6e8975e"
+        },
+        {
+          "sha": "4322557de8cd04a379064c96dbcc95f4cf94a57f",
+          "author_date": "2025-08-11T11:50:08Z",
+          "message": "ci: release v2.0.24 of artillery (#3594)\n\nCo-authored-by: hassy <hassy@users.noreply.github.com>",
+          "html_url": "https://github.com/artilleryio/artillery/commit/4322557de8cd04a379064c96dbcc95f4cf94a57f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "artillery-2.0.25",

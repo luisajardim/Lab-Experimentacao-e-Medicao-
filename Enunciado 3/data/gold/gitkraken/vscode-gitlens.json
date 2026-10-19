@@ -5145,8 +5145,183 @@
     {
       "release": "v8.2.0",
       "previous_release": "v8.1.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "059199bd30007b2dbab89ea6a5e494fda3ce8746",
+          "author_date": "2018-03-16T05:42:28Z",
+          "message": "Updates vscode & dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/059199bd30007b2dbab89ea6a5e494fda3ce8746"
+        },
+        {
+          "sha": "f2dd2b4c549212f9359e81eb72a051fc1bc90ddd",
+          "author_date": "2018-03-16T07:30:52Z",
+          "message": "Fixes #312 - simplify date style switching",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f2dd2b4c549212f9359e81eb72a051fc1bc90ddd"
+        },
+        {
+          "sha": "3cafcf30738fe8fb5a36bdfc3d9e9abef52c5dc9",
+          "author_date": "2018-03-19T06:52:48Z",
+          "message": "Fixes #314 - Toggle line annotation doesn't work",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3cafcf30738fe8fb5a36bdfc3d9e9abef52c5dc9"
+        },
+        {
+          "sha": "7c360836f3c92412c6e26ec67e16714005d78bdb",
+          "author_date": "2018-03-19T21:37:27Z",
+          "message": "Fixes #310 - quote path",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7c360836f3c92412c6e26ec67e16714005d78bdb"
+        },
+        {
+          "sha": "7e165882e6f888119977ed9c2818c10401970ee8",
+          "author_date": "2018-03-20T04:12:43Z",
+          "message": "Switches to cd rather than git -C\n\ngit -C breaks many terminal completions",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7e165882e6f888119977ed9c2818c10401970ee8"
+        },
+        {
+          "sha": "2ac71647cb755726e73ab8bc79a398b840afe3cd",
+          "author_date": "2018-03-20T06:09:52Z",
+          "message": "Fixes #309 - comparision commands terminology",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2ac71647cb755726e73ab8bc79a398b840afe3cd"
+        },
+        {
+          "sha": "0363bcf6c6f3f188d9489ea3053828acc01e9fd2",
+          "author_date": "2018-03-20T06:28:55Z",
+          "message": "Fixes issue with paths that contain `.git`",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/0363bcf6c6f3f188d9489ea3053828acc01e9fd2"
+        },
+        {
+          "sha": "5267804919d8f2962bee8d367aae2bce56a90cf3",
+          "author_date": "2018-03-20T07:07:15Z",
+          "message": "Adds remote merge-base indicator",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5267804919d8f2962bee8d367aae2bce56a90cf3"
+        },
+        {
+          "sha": "5b5bad84fad9d0e3a68a8d9c9820316a85a7207e",
+          "author_date": "2018-03-21T20:48:42Z",
+          "message": "Fixes issues with image & binary files\n\nFixes open file, open revision, & show file history",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5b5bad84fad9d0e3a68a8d9c9820316a85a7207e"
+        },
+        {
+          "sha": "39d8683e72a5461d75dae694179c2f59d68b21b2",
+          "author_date": "2018-03-22T04:28:24Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/39d8683e72a5461d75dae694179c2f59d68b21b2"
+        },
+        {
+          "sha": "ae8428c3161013b8d2124205c9887d9959bc41ba",
+          "author_date": "2018-03-23T06:54:25Z",
+          "message": "Removes open working file when unneeded",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ae8428c3161013b8d2124205c9887d9959bc41ba"
+        },
+        {
+          "sha": "28b87cfc92633e06b2a6282f13311962ed54a698",
+          "author_date": "2018-03-23T07:04:38Z",
+          "message": "Refactors current line tracking\n\nSplits currentLineController into:\nlineAnnotationController - end of line annotation\nlineHoverController - hovers to current line(s)\nstatusBarController - blame on the statusbar",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/28b87cfc92633e06b2a6282f13311962ed54a698"
+        },
+        {
+          "sha": "3dfdbd7c85a413d3edff1463b75ea07bfc733f4e",
+          "author_date": "2018-03-23T15:14:29Z",
+          "message": "Adds scrollable setting to the current line annotation\n\nCloses #149, #290, #265",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3dfdbd7c85a413d3edff1463b75ea07bfc733f4e"
+        },
+        {
+          "sha": "38b81f6d3024fbc3d2583925e4a2153d4ac661a8",
+          "author_date": "2018-03-24T06:41:06Z",
+          "message": "Fixes issue with active repo not updating",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/38b81f6d3024fbc3d2583925e4a2153d4ac661a8"
+        },
+        {
+          "sha": "249474139eafe5a31c5970c88559ca0e77cb152e",
+          "author_date": "2018-03-26T06:47:43Z",
+          "message": "Adds rich tooltips to views\n\nFixes duplicate upstream node issue\nFixes results explorer node refreshing",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/249474139eafe5a31c5970c88559ca0e77cb152e"
+        },
+        {
+          "sha": "26a30c4d176ae048c7b45f817a99dc0c16802fcf",
+          "author_date": "2018-03-26T16:41:52Z",
+          "message": "Adds notification for conflicting shortcuts",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/26a30c4d176ae048c7b45f817a99dc0c16802fcf"
+        },
+        {
+          "sha": "e52510bcdc7a555b6dee192da38bb7b70bd7df61",
+          "author_date": "2018-03-26T17:05:39Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/e52510bcdc7a555b6dee192da38bb7b70bd7df61"
+        },
+        {
+          "sha": "6563d4f1775dc8ebc78d79c0b9256d1b5f3ee8fb",
+          "author_date": "2018-03-26T17:32:32Z",
+          "message": "Preps v8.2.0-beta",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6563d4f1775dc8ebc78d79c0b9256d1b5f3ee8fb"
+        },
+        {
+          "sha": "c285c82691802c98edb7a1b8999b3c9356fb4b7e",
+          "author_date": "2018-03-28T13:39:39Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c285c82691802c98edb7a1b8999b3c9356fb4b7e"
+        },
+        {
+          "sha": "044e607b9419f9a9f6fd6e767d1081539a61efec",
+          "author_date": "2018-03-28T21:53:46Z",
+          "message": "Adds settings to the settings editor\n\nAdds the status bar reduce flashing setting\nAdds the current line scrollable setting",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/044e607b9419f9a9f6fd6e767d1081539a61efec"
+        },
+        {
+          "sha": "58cd5c19969a058de145b806a6e761b3b70a3acf",
+          "author_date": "2018-03-28T23:16:47Z",
+          "message": "Fixes backwards indicator",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/58cd5c19969a058de145b806a6e761b3b70a3acf"
+        },
+        {
+          "sha": "88341d3a236f00c3afe816474beb29388b5b8557",
+          "author_date": "2018-03-28T23:17:02Z",
+          "message": "Fixes inaccurate count",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/88341d3a236f00c3afe816474beb29388b5b8557"
+        },
+        {
+          "sha": "dd577505e1acffaa9e2bc0d342bbb130ed26bcf1",
+          "author_date": "2018-03-28T23:17:22Z",
+          "message": "Updates screenshots",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/dd577505e1acffaa9e2bc0d342bbb130ed26bcf1"
+        },
+        {
+          "sha": "d9174dee92ac71fea9ba2c7ff6f71887fe60d1ca",
+          "author_date": "2018-03-31T16:03:04Z",
+          "message": "Adds many new settings to the UI\n\nAdds new General section with data/time settings\nMoves Keyboard Shortcuts to General\nAdds annotation format settings with popup UI\nAdds text input support to settings",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d9174dee92ac71fea9ba2c7ff6f71887fe60d1ca"
+        },
+        {
+          "sha": "c42b1667308344e512c5316a9c0242eb1d481672",
+          "author_date": "2018-03-31T16:03:32Z",
+          "message": "Adds tracking branch into indicator",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c42b1667308344e512c5316a9c0242eb1d481672"
+        },
+        {
+          "sha": "c34ed2d13f4e16e77ab23306c30992723afacc94",
+          "author_date": "2018-03-31T09:24:20Z",
+          "message": "Adds history explorer",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c34ed2d13f4e16e77ab23306c30992723afacc94"
+        },
+        {
+          "sha": "e5436bd7f48c76c37598f48b10cba5739a9ea79a",
+          "author_date": "2018-03-31T17:28:11Z",
+          "message": "Fixes build issues with minification\n\nMinification removes type=\"text\" from inputs\nAdapts css/js to account for it",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/e5436bd7f48c76c37598f48b10cba5739a9ea79a"
+        },
+        {
+          "sha": "4ff2f000c8141d6e1af3a3e10fcbc27cf3904a67",
+          "author_date": "2018-03-31T18:00:01Z",
+          "message": "Updates backers and sponsors",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4ff2f000c8141d6e1af3a3e10fcbc27cf3904a67"
+        },
+        {
+          "sha": "88e0a1b45a9b6f53b6865798e745037207f8c2da",
+          "author_date": "2018-03-31T16:03:38Z",
+          "message": "Preps v8.2.0",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/88e0a1b45a9b6f53b6865798e745037207f8c2da"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v8.2.1",
@@ -5229,8 +5404,291 @@
     {
       "release": "v8.5.1",
       "previous_release": "v8.5.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "bffe2238f7697ca74448f519ae5635c50dbc31ea",
+          "author_date": "2018-07-09T17:33:02Z",
+          "message": "Add the gitlens.hovers.avatars configuration option\n\nThis setting allows disabling/enabling showing avatars in hovers. We\nalready have settings for the explorer and blame gutter, so it makes\nsense to also have one for the hovers.",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/bffe2238f7697ca74448f519ae5635c50dbc31ea"
+        },
+        {
+          "sha": "7201935053a4c95d789b331abb1438518efea8e3",
+          "author_date": "2018-07-11T05:44:10Z",
+          "message": "Adds recognition for Segev Finer's contribution",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7201935053a4c95d789b331abb1438518efea8e3"
+        },
+        {
+          "sha": "9c0d6553a5eba6efcf7d3f8b626f553f58c1ff7f",
+          "author_date": "2018-07-11T05:46:15Z",
+          "message": "Adds hovers.avatars setting to the interactive settings editor",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/9c0d6553a5eba6efcf7d3f8b626f553f58c1ff7f"
+        },
+        {
+          "sha": "1185fa2a5804ad429d86cbc4244ba2af5b109bd7",
+          "author_date": "2018-07-08T20:34:18Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1185fa2a5804ad429d86cbc4244ba2af5b109bd7"
+        },
+        {
+          "sha": "f47a92e324dd33d145d0c07c74cec889ffba819e",
+          "author_date": "2018-07-08T20:47:36Z",
+          "message": "Resolves #436 - Copy to clipboard not working",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f47a92e324dd33d145d0c07c74cec889ffba819e"
+        },
+        {
+          "sha": "5158736ca2ff48133bad40a37609690e0f355788",
+          "author_date": "2018-07-08T21:11:19Z",
+          "message": "Adds languageId to debug code lens",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5158736ca2ff48133bad40a37609690e0f355788"
+        },
+        {
+          "sha": "b25234c3a0f55a9e0ecd74b6e2b3cf1ef5bdb94d",
+          "author_date": "2018-07-09T05:17:18Z",
+          "message": "Removes \"configuration\" from config title",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b25234c3a0f55a9e0ecd74b6e2b3cf1ef5bdb94d"
+        },
+        {
+          "sha": "d790e9db047769de079f6838c3578f3a47bf5930",
+          "author_date": "2018-07-10T23:10:24Z",
+          "message": "Prettier all-the-things",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d790e9db047769de079f6838c3578f3a47bf5930"
+        },
+        {
+          "sha": "164b0f0d0fecc56a17c9c49da8eee80ff162a78c",
+          "author_date": "2018-07-11T04:03:24Z",
+          "message": "Renames history explorer to file history explorer",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/164b0f0d0fecc56a17c9c49da8eee80ff162a78c"
+        },
+        {
+          "sha": "059ba44c079a6d35c8e92a27f177c196e1d06074",
+          "author_date": "2018-07-11T04:08:36Z",
+          "message": "Adds ability to show explorers in a GitLens view",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/059ba44c079a6d35c8e92a27f177c196e1d06074"
+        },
+        {
+          "sha": "91a54757de2165cf40f62a86180af2f5602ee1a8",
+          "author_date": "2018-07-11T06:24:46Z",
+          "message": "Fixes #442 - File status fails if name (or path) starts with -",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/91a54757de2165cf40f62a86180af2f5602ee1a8"
+        },
+        {
+          "sha": "9dbb25ac12043867daf2b4b6acd51be7772f48d1",
+          "author_date": "2018-07-11T07:38:27Z",
+          "message": "Fixes issue where changed files count was wrong when behind upstream",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/9dbb25ac12043867daf2b4b6acd51be7772f48d1"
+        },
+        {
+          "sha": "d81f4f43398e2db658678dad19acedca27c5cd09",
+          "author_date": "2018-07-11T07:40:27Z",
+          "message": "Fixes issue where file history wasn't auto updated",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d81f4f43398e2db658678dad19acedca27c5cd09"
+        },
+        {
+          "sha": "500323a70fcb6bf389f321ec4e69ff8431207c26",
+          "author_date": "2018-07-14T01:22:24Z",
+          "message": "Fixes issue with editor focus and compare commands",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/500323a70fcb6bf389f321ec4e69ff8431207c26"
+        },
+        {
+          "sha": "2d68740de5b585a7c96e7d025710b80b909c301d",
+          "author_date": "2018-07-14T01:27:22Z",
+          "message": "Fixes empty scope box",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2d68740de5b585a7c96e7d025710b80b909c301d"
+        },
+        {
+          "sha": "83d2815beb11d7605ddb50d1c20806a555e4377f",
+          "author_date": "2018-07-14T01:27:42Z",
+          "message": "Fixes missing image from package",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/83d2815beb11d7605ddb50d1c20806a555e4377f"
+        },
+        {
+          "sha": "e04e78383c0f2143de7578866393aa1f43f7b3ee",
+          "author_date": "2018-07-14T01:27:49Z",
+          "message": "Updates backers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/e04e78383c0f2143de7578866393aa1f43f7b3ee"
+        },
+        {
+          "sha": "7fb1705661428a21b57b6fa275f50c97a909f3b2",
+          "author_date": "2018-07-14T01:44:11Z",
+          "message": "Update dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7fb1705661428a21b57b6fa275f50c97a909f3b2"
+        },
+        {
+          "sha": "1aad930203d69420a7b761aab5d280c413584a75",
+          "author_date": "2018-07-14T05:01:19Z",
+          "message": "Removes unneeded tslint disables",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1aad930203d69420a7b761aab5d280c413584a75"
+        },
+        {
+          "sha": "bfbefd03ca1cf1765628ee0edf83b01328f0aa66",
+          "author_date": "2018-07-14T05:04:03Z",
+          "message": "Closes #431 - adds tag annotations to tooltips",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/bfbefd03ca1cf1765628ee0edf83b01328f0aa66"
+        },
+        {
+          "sha": "f8e287615fb75150e2bc1750a6a216a91ef1b20a",
+          "author_date": "2018-07-14T05:24:17Z",
+          "message": "Fixes #440 - Increases max buffer to 100MB",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f8e287615fb75150e2bc1750a6a216a91ef1b20a"
+        },
+        {
+          "sha": "d11aac0febc1b340609fd69d06fdfc68f34ca6ff",
+          "author_date": "2018-07-14T06:45:38Z",
+          "message": "Fixes issue with diff with previous and renames",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d11aac0febc1b340609fd69d06fdfc68f34ca6ff"
+        },
+        {
+          "sha": "df98b110cc136b68a803a01158b6a6f6810dab87",
+          "author_date": "2018-07-14T21:06:12Z",
+          "message": "Consolidates gitlens:active* contexts into gitlens:activeFileStatus\n\nLess roundtrips through to the UI on changes for better performance/UX\nAlso adds \"flash\" protection to deal with the active editor changing to undefined between changes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/df98b110cc136b68a803a01158b6a6f6810dab87"
+        },
+        {
+          "sha": "2cb5b9b37efb5f97b2033a886961bbf0b857fc19",
+          "author_date": "2018-07-14T21:07:58Z",
+          "message": "Changes file history to always be the full history",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2cb5b9b37efb5f97b2033a886961bbf0b857fc19"
+        },
+        {
+          "sha": "32d683ce5eecdba3dace7714faeda9896bf98c8c",
+          "author_date": "2018-07-14T21:09:04Z",
+          "message": "Fixes compare with prev/next with renames (especially case only renames)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/32d683ce5eecdba3dace7714faeda9896bf98c8c"
+        },
+        {
+          "sha": "a04f25f4e852c4dfec8163417ab26d56dd943c6a",
+          "author_date": "2018-07-15T04:28:51Z",
+          "message": "Removes space before ellipsis for consistency",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a04f25f4e852c4dfec8163417ab26d56dd943c6a"
+        },
+        {
+          "sha": "a911aca471e8791388b37ec7f0588e7089c01dc3",
+          "author_date": "2018-07-15T04:40:22Z",
+          "message": "Closes #316 - Show file history from another branch or tag\n\nRenames Show Branches and Tags -> Choose from Branch or Tag History...\nChanges it to show the revision history rather than immediate executing",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a911aca471e8791388b37ec7f0588e7089c01dc3"
+        },
+        {
+          "sha": "4afe1507cee5d979cd0282d1dd0662d35ca3b37f",
+          "author_date": "2018-07-15T04:48:19Z",
+          "message": "Enables the new GitLens sidebar view by default",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4afe1507cee5d979cd0282d1dd0662d35ca3b37f"
+        },
+        {
+          "sha": "5da25f16983ae2def3450c2a0149bed21246ff0e",
+          "author_date": "2018-07-15T18:30:41Z",
+          "message": "Adds alt command to compare with previous toolbar command",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5da25f16983ae2def3450c2a0149bed21246ff0e"
+        },
+        {
+          "sha": "8939ac3ed17a07fa95909b3ef72b59c3a1f3e515",
+          "author_date": "2018-07-16T05:38:26Z",
+          "message": "Reorders imports (via tslint) and moves some files for better structure",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8939ac3ed17a07fa95909b3ef72b59c3a1f3e515"
+        },
+        {
+          "sha": "64199eda4e105dea892992b0c829840d04bd8e52",
+          "author_date": "2018-07-16T05:49:22Z",
+          "message": "Moves getHistoryNode to History explorer",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/64199eda4e105dea892992b0c829840d04bd8e52"
+        },
+        {
+          "sha": "806a9f312be3f034ba052a573ed400709a9b6cb3",
+          "author_date": "2018-07-16T06:29:14Z",
+          "message": "Preps v8.5.0",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/806a9f312be3f034ba052a573ed400709a9b6cb3"
+        },
+        {
+          "sha": "4cb8b689860c0448520198334354e81ac86a28b0",
+          "author_date": "2018-07-16T20:35:13Z",
+          "message": "Replace `--` with `—` in package.json",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4cb8b689860c0448520198334354e81ac86a28b0"
+        },
+        {
+          "sha": "7cb1b65e19684aef4d958002958408481cde4bb3",
+          "author_date": "2018-07-17T06:47:50Z",
+          "message": "Adds recognition for korigod's contribution",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7cb1b65e19684aef4d958002958408481cde4bb3"
+        },
+        {
+          "sha": "67df234b1976b4034121aaaa7345816ef3ef8c36",
+          "author_date": "2018-07-17T03:07:59Z",
+          "message": "Fixes #444 - Resizes activity bar icon",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/67df234b1976b4034121aaaa7345816ef3ef8c36"
+        },
+        {
+          "sha": "99d1ef0f182a10456122078533f452a94171b437",
+          "author_date": "2018-07-17T03:15:22Z",
+          "message": "Updates github issue templates",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/99d1ef0f182a10456122078533f452a94171b437"
+        },
+        {
+          "sha": "1551e1405d4b846d687ed04619226553c647adb7",
+          "author_date": "2018-07-17T03:22:52Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1551e1405d4b846d687ed04619226553c647adb7"
+        },
+        {
+          "sha": "0bbf600b79fd97904160d9e834e4748ef6da9c30",
+          "author_date": "2018-07-17T03:46:53Z",
+          "message": "Replaces encoded chars with unicode (stops fighting with npm)\n\nPreserves spaces in format strings",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/0bbf600b79fd97904160d9e834e4748ef6da9c30"
+        },
+        {
+          "sha": "93598182167ef961b1998724d573e5b130a7d9a8",
+          "author_date": "2018-07-17T04:48:04Z",
+          "message": "Closes #446 - Adds ability to compare arbitrary file revisions",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/93598182167ef961b1998724d573e5b130a7d9a8"
+        },
+        {
+          "sha": "e6f2ef15a6c00ab71607b63e6068583333801e0b",
+          "author_date": "2018-07-17T05:35:13Z",
+          "message": "Fixes refresh issue on config change",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/e6f2ef15a6c00ab71607b63e6068583333801e0b"
+        },
+        {
+          "sha": "ae107ef0a8459618cacab47c25b3a38a89c1857e",
+          "author_date": "2018-07-17T06:44:04Z",
+          "message": "Fixes #437 - Removes --first-parent and -m from file history",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ae107ef0a8459618cacab47c25b3a38a89c1857e"
+        },
+        {
+          "sha": "28f5eb66a657aee2afcfd6c2d48d6c6e9f1b308f",
+          "author_date": "2018-07-18T02:40:41Z",
+          "message": "Fixes issue with saving settings with default values",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/28f5eb66a657aee2afcfd6c2d48d6c6e9f1b308f"
+        },
+        {
+          "sha": "22a5722a250a314e5e624127201fc55b47b6b0eb",
+          "author_date": "2018-07-18T02:43:12Z",
+          "message": "Adds historyExplorer.avatars setting",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/22a5722a250a314e5e624127201fc55b47b6b0eb"
+        },
+        {
+          "sha": "307090a70a2bbc3f8229fae9a9b3054e6bb75f03",
+          "author_date": "2018-07-18T03:50:33Z",
+          "message": "Closes #429 - Adds emoji support :smile:",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/307090a70a2bbc3f8229fae9a9b3054e6bb75f03"
+        },
+        {
+          "sha": "86f4a42443bdcc555066f0b878664692c036020d",
+          "author_date": "2018-07-18T05:23:24Z",
+          "message": "Adds renameLimit value to avoid warnings",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/86f4a42443bdcc555066f0b878664692c036020d"
+        },
+        {
+          "sha": "0bec73ad8ae50323bd14f2793806c997c893b7ef",
+          "author_date": "2018-07-18T05:44:29Z",
+          "message": "Fixes #252 - this.children reset because of await",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/0bec73ad8ae50323bd14f2793806c997c893b7ef"
+        },
+        {
+          "sha": "bbd5933f08de4d96b5a36146a825486bebd0ff91",
+          "author_date": "2018-07-18T06:00:45Z",
+          "message": "Preps v8.5.1",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/bbd5933f08de4d96b5a36146a825486bebd0ff91"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v8.5.2",
@@ -5265,8 +5723,1347 @@
     {
       "release": "v9.0.0",
       "previous_release": "v8.5.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d53b45432df59f502b9c110b4e07dde9fa793ba9",
+          "author_date": "2018-08-31T22:29:39Z",
+          "message": "Prettiers more things",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d53b45432df59f502b9c110b4e07dde9fa793ba9"
+        },
+        {
+          "sha": "1215efd1415f4f36f5af67e577707de40f9b7acb",
+          "author_date": "2018-08-22T04:16:23Z",
+          "message": "Updates dependencies & more\n\nChanges from out to dist\nAdds size-plugin (commented out for now)\nAdds image cache to improve bundle performance",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1215efd1415f4f36f5af67e577707de40f9b7acb"
+        },
+        {
+          "sha": "638c9f565e16216b9b4f908719dcd3b0cfe44a40",
+          "author_date": "2018-09-01T03:48:03Z",
+          "message": "Adds logging for finding a new repository\nRemoves start logging from isTracked",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/638c9f565e16216b9b4f908719dcd3b0cfe44a40"
+        },
+        {
+          "sha": "d9807774ec4f310d5d2779e56fd9d228164824e7",
+          "author_date": "2018-08-31T22:05:54Z",
+          "message": "Switches to use new git extension api (for git path)\nRemoves gitlens.advanced.git setting",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d9807774ec4f310d5d2779e56fd9d228164824e7"
+        },
+        {
+          "sha": "a42fc650e0310601ff6bde65a5eaef8f08bfed27",
+          "author_date": "2018-08-30T06:41:58Z",
+          "message": "Fixes issue with log cache (exact match miss)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a42fc650e0310601ff6bde65a5eaef8f08bfed27"
+        },
+        {
+          "sha": "c6f2c8e2f720730a65b286becd7d9736aee42da2",
+          "author_date": "2018-09-04T06:48:40Z",
+          "message": "Fixes incorrect status when parsing logs with diffs",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c6f2c8e2f720730a65b286becd7d9736aee42da2"
+        },
+        {
+          "sha": "6ac613961b92df55757626035ceed953520eb8fb",
+          "author_date": "2018-09-04T06:49:09Z",
+          "message": "Adds the current user e-mail when uncommitted",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6ac613961b92df55757626035ceed953520eb8fb"
+        },
+        {
+          "sha": "ac786a42a01330281d64bf4987c8cacfe2c52d60",
+          "author_date": "2018-09-07T05:17:48Z",
+          "message": "Changes mm Gravatar fallback to mp (since Gravatar renamed it)\nRemoves Uri monkey patch as it no longer will work\nSee https://github.com/Microsoft/vscode/commit/03432806c8ebc02ee2042cb1696c587e20f7ad93\nStops encoding uris in .toString calls",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ac786a42a01330281d64bf4987c8cacfe2c52d60"
+        },
+        {
+          "sha": "d7212eb419ce5c7f265a3559f1a57c2b2bd43a65",
+          "author_date": "2018-08-30T05:11:20Z",
+          "message": "Reworks git commands a bit to reduce rethrows\nFixes #405 - stops non-repo from showing up in explorer",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d7212eb419ce5c7f265a3559f1a57c2b2bd43a65"
+        },
+        {
+          "sha": "897676e371e89ad9578d8fdb35937c8a70cac5df",
+          "author_date": "2018-08-21T07:31:31Z",
+          "message": "Add support to filter logs by author",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/897676e371e89ad9578d8fdb35937c8a70cac5df"
+        },
+        {
+          "sha": "0f2f79fca7020c98976a73fba1ffde34db2bd871",
+          "author_date": "2018-09-01T03:16:47Z",
+          "message": "Fixes #430 - Use content provider instead of tmp files (for text docs)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/0f2f79fca7020c98976a73fba1ffde34db2bd871"
+        },
+        {
+          "sha": "b58dc49d07e46c949ed29ee29df4501c29e6f157",
+          "author_date": "2018-09-01T03:37:39Z",
+          "message": "Adds diffWithWorking to editor toolbar when diffing\nRenanes \"Compare x with\" commands",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b58dc49d07e46c949ed29ee29df4501c29e6f157"
+        },
+        {
+          "sha": "2d977262d23fe3343be180e55e77888bbd398c59",
+          "author_date": "2018-09-01T08:48:05Z",
+          "message": "Closes #493 - Adds changes to commits in explorers\n\nAdds new ${changes} and ${changesShort} template tokens\nAdds support for prefixes and suffixes around tokens\nFixes missing/mismatched token option issues",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2d977262d23fe3343be180e55e77888bbd398c59"
+        },
+        {
+          "sha": "54ecf456d850e9e3193b8b88ad9df09dfe3829a7",
+          "author_date": "2018-09-01T17:54:24Z",
+          "message": "Defaults compact to false in getFormattedDiffStatus",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/54ecf456d850e9e3193b8b88ad9df09dfe3829a7"
+        },
+        {
+          "sha": "26fc11f9dfdb387a2e01dcee34d51d23b49e5704",
+          "author_date": "2018-09-04T06:54:36Z",
+          "message": "Fixes path formatting & adds optional suffix",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/26fc11f9dfdb387a2e01dcee34d51d23b49e5704"
+        },
+        {
+          "sha": "6565951e81e20aeea483c452399807f6e605a33a",
+          "author_date": "2018-09-06T04:19:29Z",
+          "message": "Closes #388 - Adds git mailmap support",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6565951e81e20aeea483c452399807f6e605a33a"
+        },
+        {
+          "sha": "81dc577362a66d23fb3107a85df6607e78d12672",
+          "author_date": "2018-09-07T05:58:28Z",
+          "message": "Adds another git warning",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/81dc577362a66d23fb3107a85df6607e78d12672"
+        },
+        {
+          "sha": "4320f5342c538f5423f138e9e5148d9fda55e46c",
+          "author_date": "2018-09-07T02:49:13Z",
+          "message": "Adds explore repo from here command (wip)\nReplaces git content provider with git fs provider\nAdds Buffer output support to git calls",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4320f5342c538f5423f138e9e5148d9fda55e46c"
+        },
+        {
+          "sha": "0b0137f3a4cd88ad08fa1a44842e9a5ad9ec695b",
+          "author_date": "2018-09-09T07:59:26Z",
+          "message": "Moves gitService into git folder & renames a couple of git files",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/0b0137f3a4cd88ad08fa1a44842e9a5ad9ec695b"
+        },
+        {
+          "sha": "f93d8ca2dbe9d843b87540cfe60a29132c95efb1",
+          "author_date": "2018-09-10T05:05:00Z",
+          "message": "Bundles node_modules directly into extension.js\nUpdates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f93d8ca2dbe9d843b87540cfe60a29132c95efb1"
+        },
+        {
+          "sha": "85bcbf2be73d71034c804d77fec3407d59fdc0a4",
+          "author_date": "2018-09-10T05:07:27Z",
+          "message": "Fixes floating promises",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/85bcbf2be73d71034c804d77fec3407d59fdc0a4"
+        },
+        {
+          "sha": "4de6ac2d44b5851cdcffd904a8eb2a318bf40131",
+          "author_date": "2018-09-10T04:33:17Z",
+          "message": "Renames a few interfaces to remove I prefix",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4de6ac2d44b5851cdcffd904a8eb2a318bf40131"
+        },
+        {
+          "sha": "f01a8b7430eafcae8b8bd0df34d3fd124b48c6ad",
+          "author_date": "2018-09-10T17:15:42Z",
+          "message": "Consolidates error messaging to show output channel button",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f01a8b7430eafcae8b8bd0df34d3fd124b48c6ad"
+        },
+        {
+          "sha": "37798357cbafcf1217fed5b8943c948284e66e28",
+          "author_date": "2018-07-25T07:12:50Z",
+          "message": "Removes docked history view (wip)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/37798357cbafcf1217fed5b8943c948284e66e28"
+        },
+        {
+          "sha": "2e4cbcad106654a878c77a9f898a05d76fdbd27e",
+          "author_date": "2018-08-07T07:21:40Z",
+          "message": "Reworks explorers (wip)\nCloses #354 - Adds line history explorer (wip)\nCloses #456 - Adds repository status to the repository nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2e4cbcad106654a878c77a9f898a05d76fdbd27e"
+        },
+        {
+          "sha": "a722a995ead93c94714feb1cf2b5566b2ed56d23",
+          "author_date": "2018-09-10T17:06:40Z",
+          "message": "Adds new repository commands (fetch, pull, push) (wip)\nCloses #470 - Adds fetch command to Repository explorer",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a722a995ead93c94714feb1cf2b5566b2ed56d23"
+        },
+        {
+          "sha": "f2aab9968c199ad636863900ebaa110bcdfd18d9",
+          "author_date": "2018-09-11T04:39:05Z",
+          "message": "Shows explorer when adding revision workspace folder",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f2aab9968c199ad636863900ebaa110bcdfd18d9"
+        },
+        {
+          "sha": "ae6f3ecbcd5b2a099026f25d89bf957cd818029c",
+          "author_date": "2018-09-11T05:45:42Z",
+          "message": "Bumps version to eventual 9.0.0-alpha",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ae6f3ecbcd5b2a099026f25d89bf957cd818029c"
+        },
+        {
+          "sha": "bb2b0c2504e21e165546e21a85db5325fb973b98",
+          "author_date": "2018-09-12T02:22:08Z",
+          "message": "Updates config types to better match",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/bb2b0c2504e21e165546e21a85db5325fb973b98"
+        },
+        {
+          "sha": "d086131bb582d2e3b720b7eeed77c30327ad7039",
+          "author_date": "2018-09-12T05:18:34Z",
+          "message": "Fixes issue with line history refreshing on all selection changes\nChanges line history to use GitLineTracker for better resource usage",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d086131bb582d2e3b720b7eeed77c30327ad7039"
+        },
+        {
+          "sha": "453dc0c5d930442c8a0768933d97561fe5fda0d5",
+          "author_date": "2018-09-12T05:51:15Z",
+          "message": "Adds progress notification to fetch, pull, push ops",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/453dc0c5d930442c8a0768933d97561fe5fda0d5"
+        },
+        {
+          "sha": "4c72765b77a32a0354170b0f9d6ebe91f50137d0",
+          "author_date": "2018-09-12T07:39:51Z",
+          "message": "Fixes issues with comparing added/deleted files\nFixes path issues with git fs provider",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4c72765b77a32a0354170b0f9d6ebe91f50137d0"
+        },
+        {
+          "sha": "ae2c47b81bba8cc4745f2dfbd03f8e8d18db1b30",
+          "author_date": "2018-09-12T07:57:04Z",
+          "message": "Saves children to avoid losing state on tree update",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ae2c47b81bba8cc4745f2dfbd03f8e8d18db1b30"
+        },
+        {
+          "sha": "8ea92332c467a77e38e69bf4649fd0c25641aeb9",
+          "author_date": "2018-09-12T08:46:45Z",
+          "message": "Adds parent links to all nodes\nWhen tracking the active file, only select the repo if in another",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8ea92332c467a77e38e69bf4649fd0c25641aeb9"
+        },
+        {
+          "sha": "521644109d982d2fabbad9adc883477f96f84022",
+          "author_date": "2018-09-14T03:26:00Z",
+          "message": "Only await if we need to",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/521644109d982d2fabbad9adc883477f96f84022"
+        },
+        {
+          "sha": "5a88901a3c6822c8b22c89b79316eb29aae976b0",
+          "author_date": "2018-09-14T05:52:11Z",
+          "message": "Renames GitLens explorer to Repositories explorer\nChanges changelog image links to permalinks\nMoves all images for docs into a docs folder\nRemoves unused images",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5a88901a3c6822c8b22c89b79316eb29aae976b0"
+        },
+        {
+          "sha": "f27e080f8d42c68b1ea5d066799e351c2465db04",
+          "author_date": "2018-09-14T05:58:46Z",
+          "message": "Adds pull all command to repos explorer",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f27e080f8d42c68b1ea5d066799e351c2465db04"
+        },
+        {
+          "sha": "5947ae58de138e9b8bd73965242418cd28b0a5b9",
+          "author_date": "2018-09-14T05:59:50Z",
+          "message": "Adds changes into commit format in explorers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5947ae58de138e9b8bd73965242418cd28b0a5b9"
+        },
+        {
+          "sha": "afd815531f5f1e06c458ec4d52adee9c3fba15cc",
+          "author_date": "2018-09-14T06:07:59Z",
+          "message": "Removes dead code",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/afd815531f5f1e06c458ec4d52adee9c3fba15cc"
+        },
+        {
+          "sha": "a544383eb9d6190430f70b8ca4a63f0134aa6d0f",
+          "author_date": "2018-09-14T06:08:25Z",
+          "message": "Renames CodeLensController to GitCodeLensController",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a544383eb9d6190430f70b8ca4a63f0134aa6d0f"
+        },
+        {
+          "sha": "f13d354449d0ecae8cc06083ed30e65e3124a49a",
+          "author_date": "2018-09-14T07:31:02Z",
+          "message": "Adds message when trying to compare to a deleted working file",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f13d354449d0ecae8cc06083ed30e65e3124a49a"
+        },
+        {
+          "sha": "c439ea0f186abde4187e870fb49b946f4232095f",
+          "author_date": "2018-09-14T07:33:22Z",
+          "message": "Fixes issues with open changes with working on results file nodes\nFixes issues with open revision on results file nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c439ea0f186abde4187e870fb49b946f4232095f"
+        },
+        {
+          "sha": "d6728b6d82d357811695b8bc9297efb4e2a4670f",
+          "author_date": "2018-09-14T08:15:55Z",
+          "message": "Adds autoReveal setting for repositories explorer",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d6728b6d82d357811695b8bc9297efb4e2a4670f"
+        },
+        {
+          "sha": "78aa0a49949abeff111114dda987212f4388fbe2",
+          "author_date": "2018-09-14T08:18:00Z",
+          "message": "Fixes issue with settings editor not refreshing after being hidden\nAdds the gitlens icon to settings editor and welcome page",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/78aa0a49949abeff111114dda987212f4388fbe2"
+        },
+        {
+          "sha": "f26523583f23d8be4c2fb38325b003e11dd8b684",
+          "author_date": "2018-09-14T16:15:21Z",
+          "message": "Fixes compare titles in certain cases",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f26523583f23d8be4c2fb38325b003e11dd8b684"
+        },
+        {
+          "sha": "a284728137ade929564a128a0d61d46dfc53fa99",
+          "author_date": "2018-09-16T04:44:09Z",
+          "message": "Renames sha to ref in more places\nRenames path to paths\nReworks sha regex & methods",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a284728137ade929564a128a0d61d46dfc53fa99"
+        },
+        {
+          "sha": "d4b29ca22160c42e5f9af2d8047bbfc436141eea",
+          "author_date": "2018-09-16T04:45:13Z",
+          "message": "Don't consider uncommitted ref",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d4b29ca22160c42e5f9af2d8047bbfc436141eea"
+        },
+        {
+          "sha": "acbdf73177846d97801503fc82c302369df47829",
+          "author_date": "2018-09-16T06:57:35Z",
+          "message": "Adds warning message if working file is missing",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/acbdf73177846d97801503fc82c302369df47829"
+        },
+        {
+          "sha": "fb09ce08a3af0ee28910dc1ad1dea231bec53f65",
+          "author_date": "2018-09-16T07:05:30Z",
+          "message": "Removes unused version uri cache",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/fb09ce08a3af0ee28910dc1ad1dea231bec53f65"
+        },
+        {
+          "sha": "52a549e85bd6ee9f0cd26061b580fb2eaca662f6",
+          "author_date": "2018-09-16T07:21:52Z",
+          "message": "Renames/reworks git models for files and statuses",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/52a549e85bd6ee9f0cd26061b580fb2eaca662f6"
+        },
+        {
+          "sha": "73614cbca3282f38de302ba30e9e82890e74e738",
+          "author_date": "2018-09-16T07:25:27Z",
+          "message": "Renames StatusFileNode to ResultsFileNode",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/73614cbca3282f38de302ba30e9e82890e74e738"
+        },
+        {
+          "sha": "33c06266e22651cd109cf4324097fd015fcad7ce",
+          "author_date": "2018-09-16T07:26:13Z",
+          "message": "Fixes revision uri with / in ref",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/33c06266e22651cd109cf4324097fd015fcad7ce"
+        },
+        {
+          "sha": "70ebec7b81a57211b50bc02a4fd6a69d0cf39a1d",
+          "author_date": "2018-09-16T07:27:55Z",
+          "message": "Fixes issues showing uncommitted and staged content",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/70ebec7b81a57211b50bc02a4fd6a69d0cf39a1d"
+        },
+        {
+          "sha": "229c8cce6141ebe6208d66aa5a288bb2ba1b8f4d",
+          "author_date": "2018-09-16T07:31:04Z",
+          "message": "Adds working and stage status in status files node\nAdds git status decoration to status file nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/229c8cce6141ebe6208d66aa5a288bb2ba1b8f4d"
+        },
+        {
+          "sha": "53edd00dc5fb63de3c75a6c27b874afe7b8cb57a",
+          "author_date": "2018-09-16T07:46:23Z",
+          "message": "Replaces !! with Boolean",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/53edd00dc5fb63de3c75a6c27b874afe7b8cb57a"
+        },
+        {
+          "sha": "14809ab45ca4509693cd34387b8b274e40c9f1d8",
+          "author_date": "2018-09-16T08:13:07Z",
+          "message": "Renames StatusFileCommitsNode to StatusFileNode",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/14809ab45ca4509693cd34387b8b274e40c9f1d8"
+        },
+        {
+          "sha": "1cb072a039af7d8e29dd50fa1de1b6b917768512",
+          "author_date": "2018-09-16T08:31:02Z",
+          "message": "Always return spacing for ${working}",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1cb072a039af7d8e29dd50fa1de1b6b917768512"
+        },
+        {
+          "sha": "530bba47a29be179291b2904b69d4ef010679107",
+          "author_date": "2018-09-21T03:11:02Z",
+          "message": "Changes on status bar to in status bar",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/530bba47a29be179291b2904b69d4ef010679107"
+        },
+        {
+          "sha": "065bd0ff400914be3b643d56129b0fb0725d2339",
+          "author_date": "2018-09-21T03:16:36Z",
+          "message": "Fixes #503 - Open Changes (w difftool) should only open single file\nChanges Open All Changes (w difftool) to open files, rather than dirdiff\nChanges Open All Changes (w difftool) to prompt for repo when needed",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/065bd0ff400914be3b643d56129b0fb0725d2339"
+        },
+        {
+          "sha": "1fa211d084d171d9ae419a9ba074128e45db45ab",
+          "author_date": "2018-09-21T03:18:12Z",
+          "message": "Fixes issues with Close Unchanged Files and prompts for repo",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1fa211d084d171d9ae419a9ba074128e45db45ab"
+        },
+        {
+          "sha": "9c8b81090c122b5b84f7d4976facecfa7a8fa09d",
+          "author_date": "2018-09-21T03:18:41Z",
+          "message": "Changes Open Changed Files to prompt for repo",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/9c8b81090c122b5b84f7d4976facecfa7a8fa09d"
+        },
+        {
+          "sha": "9ae4877f051c8c116b12a09b4531d6efdd12cea7",
+          "author_date": "2018-09-21T03:20:23Z",
+          "message": "Fixes #496 - matches git's default abbrev sha length",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/9ae4877f051c8c116b12a09b4531d6efdd12cea7"
+        },
+        {
+          "sha": "c2ca69d26769f44ed1fa8770389c535f15d39dbd",
+          "author_date": "2018-09-21T03:22:00Z",
+          "message": "Adds relative date markers to history in explorers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c2ca69d26769f44ed1fa8770389c535f15d39dbd"
+        },
+        {
+          "sha": "dab4fd647b33debc4a06f60b32cffcb1e6d9d681",
+          "author_date": "2018-09-21T03:41:41Z",
+          "message": "Adds dashes to fill working status for better display",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/dab4fd647b33debc4a06f60b32cffcb1e6d9d681"
+        },
+        {
+          "sha": "ffdb98ae4000654e6136a3921fbbd4828164acbd",
+          "author_date": "2018-09-21T04:08:03Z",
+          "message": "Stops showing the oldest date marker as the first entry",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ffdb98ae4000654e6136a3921fbbd4828164acbd"
+        },
+        {
+          "sha": "d91ddd24c4cc01bc72df9a493d948a5e2935d4ff",
+          "author_date": "2018-09-23T11:20:23Z",
+          "message": "Added some missing emoji names\n\nAdded some missing names according to the emoji names used in https://gitmoji.carloscuesta.me/",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d91ddd24c4cc01bc72df9a493d948a5e2935d4ff"
+        },
+        {
+          "sha": "f13fd60bab20efc23670eb2213983fc4bda4b9c6",
+          "author_date": "2018-09-28T04:26:14Z",
+          "message": "Adds recognition for Loris Bettazza's contribution",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f13fd60bab20efc23670eb2213983fc4bda4b9c6"
+        },
+        {
+          "sha": "ec1a81001c608fbd962c7cb65aba3c7608c8a499",
+          "author_date": "2018-09-28T04:36:00Z",
+          "message": "Updates with latest backers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ec1a81001c608fbd962c7cb65aba3c7608c8a499"
+        },
+        {
+          "sha": "11afc45ee14e750fcde51c9dac63c8d1d4cef3db",
+          "author_date": "2018-09-22T20:00:14Z",
+          "message": "Fixes blame toolbar button to work on the left diff",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/11afc45ee14e750fcde51c9dac63c8d1d4cef3db"
+        },
+        {
+          "sha": "687087f2e7228a28111a57d53faf39c941cd9792",
+          "author_date": "2018-09-22T20:02:40Z",
+          "message": "Changes Show Commit Details on files to jump to commit\nHides Show Commit Details on status files",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/687087f2e7228a28111a57d53faf39c941cd9792"
+        },
+        {
+          "sha": "865459534a78b7bc45d9b49c97c9b97e85ad0f57",
+          "author_date": "2018-09-23T20:02:41Z",
+          "message": "Normalizes all icons to viewbox",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/865459534a78b7bc45d9b49c97c9b97e85ad0f57"
+        },
+        {
+          "sha": "8e381a28382b6c616380c6e8a7d7f67e643c8600",
+          "author_date": "2018-09-23T20:04:25Z",
+          "message": "Switches to cloud icons for push and pull",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8e381a28382b6c616380c6e8a7d7f67e643c8600"
+        },
+        {
+          "sha": "3d620107ec2c6883d2ca0ee8b78be5a08898f517",
+          "author_date": "2018-09-24T03:42:03Z",
+          "message": "Adds gitmojis & better automates emoji build",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3d620107ec2c6883d2ca0ee8b78be5a08898f517"
+        },
+        {
+          "sha": "f9c8fdba7d8aada95f62a5e109240b8fde90f767",
+          "author_date": "2018-09-28T03:17:35Z",
+          "message": "Fixes #412 - Uses env variable to control debug output",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f9c8fdba7d8aada95f62a5e109240b8fde90f767"
+        },
+        {
+          "sha": "9eaac0ed54441b77c93f3daf0663fff74a237265",
+          "author_date": "2018-09-28T03:22:57Z",
+          "message": "Removes working status placeholders if not changed in working tree\nAdds better sorting of working tree file changes\nChanges non-working tree file changes back to use status icons",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/9eaac0ed54441b77c93f3daf0663fff74a237265"
+        },
+        {
+          "sha": "04f7cd6b406252d37eb5a4fcbf886fd9622cf103",
+          "author_date": "2018-09-28T04:00:24Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/04f7cd6b406252d37eb5a4fcbf886fd9622cf103"
+        },
+        {
+          "sha": "f547487e418abb4f0c3f3a41ffead25207d0e382",
+          "author_date": "2018-09-28T04:10:15Z",
+          "message": "Fixes issues with showing deleted file changes\nFixes issues with added files in diff title",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f547487e418abb4f0c3f3a41ffead25207d0e382"
+        },
+        {
+          "sha": "f0c5df885f2ede4aad6cbda8526a13948a265cee",
+          "author_date": "2018-09-28T05:45:37Z",
+          "message": "Fixes issue with diff files added in index/working tree",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f0c5df885f2ede4aad6cbda8526a13948a265cee"
+        },
+        {
+          "sha": "0c75e4079ab6e85a01e897e354c8c58a5401a7ea",
+          "author_date": "2018-09-28T05:46:59Z",
+          "message": "Adds stage/unstage commands to repo explorer",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/0c75e4079ab6e85a01e897e354c8c58a5401a7ea"
+        },
+        {
+          "sha": "88fc0bfa6572109cff5eddac9b115a533365e918",
+          "author_date": "2018-09-28T06:27:11Z",
+          "message": "Adds stash changes command to working tree files",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/88fc0bfa6572109cff5eddac9b115a533365e918"
+        },
+        {
+          "sha": "c7e162fdbc9348d9a584efa8f0752c6b0febc535",
+          "author_date": "2018-09-29T03:29:10Z",
+          "message": "Updates clipboard error message for better clarity",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c7e162fdbc9348d9a584efa8f0752c6b0febc535"
+        },
+        {
+          "sha": "1cc142c28cfa485fd04faff6d116e0daea58a919",
+          "author_date": "2018-09-29T04:12:13Z",
+          "message": "Changes to \"on remote\" terminology vs \"in remote\"",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1cc142c28cfa485fd04faff6d116e0daea58a919"
+        },
+        {
+          "sha": "9c038ace33fe25ab25edb334a93814fb9d80e534",
+          "author_date": "2018-09-29T05:03:49Z",
+          "message": "Reorders fetch/push/pull\n\nAdds fetch/push/pull to repo context menu",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/9c038ace33fe25ab25edb334a93814fb9d80e534"
+        },
+        {
+          "sha": "c3a36f26762560145b176f364e013b41fd53ad12",
+          "author_date": "2018-09-29T05:06:02Z",
+          "message": "Adds stash/apply changes to repo menu\nAdds stash changes to stashes toolbar\nAdds apply changes to stashes menu\nFixes stash/apply changes to honor repository context",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c3a36f26762560145b176f364e013b41fd53ad12"
+        },
+        {
+          "sha": "453f8a02354c5ddc36b143a9c1c851d6778ea0d0",
+          "author_date": "2018-09-29T05:18:10Z",
+          "message": "Adds commit search to repo menu",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/453f8a02354c5ddc36b143a9c1c851d6778ea0d0"
+        },
+        {
+          "sha": "7e8b404c2c4c59f3528f9e00bf57a9a2562eac8a",
+          "author_date": "2018-09-29T06:31:59Z",
+          "message": "Closes #389 - Adds difftool command to files in explorers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7e8b404c2c4c59f3528f9e00bf57a9a2562eac8a"
+        },
+        {
+          "sha": "ed5c898f27674196ca6f232e1f4846c85753236b",
+          "author_date": "2018-09-29T18:12:59Z",
+          "message": "Adds apply changes to stash toolbar\nUpdates stash icons",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ed5c898f27674196ca6f232e1f4846c85753236b"
+        },
+        {
+          "sha": "66d1ff189601531d347ba94f7e0a48f53da75fcd",
+          "author_date": "2018-09-29T18:23:44Z",
+          "message": "Adds pause/resume tracking support in file/line explorers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/66d1ff189601531d347ba94f7e0a48f53da75fcd"
+        },
+        {
+          "sha": "4fc70396c797134e9652450ea0e30452c44d40a2",
+          "author_date": "2018-09-29T18:29:49Z",
+          "message": "Adds image optimization if folder is missing",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4fc70396c797134e9652450ea0e30452c44d40a2"
+        },
+        {
+          "sha": "51c2445d7224a6a4a465b0176d4791204165b8f0",
+          "author_date": "2018-09-29T18:44:24Z",
+          "message": "Updates to latest webpack to fix problem matchers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/51c2445d7224a6a4a465b0176d4791204165b8f0"
+        },
+        {
+          "sha": "cf71595fe5c7ade3e71d1ac5f9cfe3cb2791cd43",
+          "author_date": "2018-09-29T20:21:09Z",
+          "message": "Removes open working file & diff with working from diffs with files",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/cf71595fe5c7ade3e71d1ac5f9cfe3cb2791cd43"
+        },
+        {
+          "sha": "2c32a4b0c629ac3e2dd7c6eebc21eae8c7badf6c",
+          "author_date": "2018-09-29T21:53:22Z",
+          "message": "Fixes truncation detection with dupes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2c32a4b0c629ac3e2dd7c6eebc21eae8c7badf6c"
+        },
+        {
+          "sha": "d7fee60abe3df65ecbb96fcaddb1e1a437489d54",
+          "author_date": "2018-09-29T21:55:04Z",
+          "message": "Adds support for view command detection",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d7fee60abe3df65ecbb96fcaddb1e1a437489d54"
+        },
+        {
+          "sha": "af71820813fa79e8d397b772ad6bce0bb56ae97f",
+          "author_date": "2018-09-30T02:27:38Z",
+          "message": "Changes commit search from the views to open in results",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/af71820813fa79e8d397b772ad6bce0bb56ae97f"
+        },
+        {
+          "sha": "3452cf3bdd1b7f51a348ec919b9191fd1940ca30",
+          "author_date": "2018-09-30T03:07:09Z",
+          "message": "Fixes apply changes command to actually apply patch",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3452cf3bdd1b7f51a348ec919b9191fd1940ca30"
+        },
+        {
+          "sha": "dbeddcb2078d6489c1b432b774b950fe1483aaec",
+          "author_date": "2018-09-30T03:39:07Z",
+          "message": "Adds Show Revision Details command to editor toolbar",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/dbeddcb2078d6489c1b432b774b950fe1483aaec"
+        },
+        {
+          "sha": "879c498f647b09d3cfaad96f5dd95ef1f1677aa7",
+          "author_date": "2018-09-30T04:20:08Z",
+          "message": "Closes #502 - Adds show commit in results command\n\nAdds show file history in results command",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/879c498f647b09d3cfaad96f5dd95ef1f1677aa7"
+        },
+        {
+          "sha": "1d36b809ca8346148400f14d4a3d19c52f8c7f11",
+          "author_date": "2018-09-30T04:41:15Z",
+          "message": "Closes #501 - Adds support for Azure DevOps",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1d36b809ca8346148400f14d4a3d19c52f8c7f11"
+        },
+        {
+          "sha": "5e4b049c2f62efc39cebfd8656fcc0c4b275f15d",
+          "author_date": "2018-09-30T05:27:50Z",
+          "message": "Closes #214 - Allows better remote detection with gitlab & bitbucket",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5e4b049c2f62efc39cebfd8656fcc0c4b275f15d"
+        },
+        {
+          "sha": "76067831326768a4589e94a9eb0fa2bad25e29a7",
+          "author_date": "2018-09-30T07:47:06Z",
+          "message": "Renames explorer to view",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/76067831326768a4589e94a9eb0fa2bad25e29a7"
+        },
+        {
+          "sha": "59b39fda2bf536a13fdb59c64a13fe79136b617f",
+          "author_date": "2018-09-30T20:27:06Z",
+          "message": "Removes forEach call",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/59b39fda2bf536a13fdb59c64a13fe79136b617f"
+        },
+        {
+          "sha": "84992d81e6e94334d8934a473e0555f1125f4c8f",
+          "author_date": "2018-09-30T20:27:41Z",
+          "message": "Adds support for DocumentSymbols (hierachy)\nAdds codeLens.includeSingleLineSymbols setting",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/84992d81e6e94334d8934a473e0555f1125f4c8f"
+        },
+        {
+          "sha": "6399188334eaca727837b4ebabd3b44c22afecef",
+          "author_date": "2018-10-03T03:58:51Z",
+          "message": "Adds : separator to views when outside of the GitLens sidebar",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6399188334eaca727837b4ebabd3b44c22afecef"
+        },
+        {
+          "sha": "1e04d8c27922af3ce438337416a4247cb757c1e4",
+          "author_date": "2018-10-03T03:59:04Z",
+          "message": "Fixes broken settings due to renames",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1e04d8c27922af3ce438337416a4247cb757c1e4"
+        },
+        {
+          "sha": "aab8af3859848f9811ada71f48b8f6ac8547329c",
+          "author_date": "2018-10-03T04:31:57Z",
+          "message": "Adds ability to apply a patch with conflicts via prompt",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/aab8af3859848f9811ada71f48b8f6ac8547329c"
+        },
+        {
+          "sha": "5802a1f0490f8e5111b5ad61dcfdc11e7936bcef",
+          "author_date": "2018-10-04T08:05:22Z",
+          "message": "Updates backer tiers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5802a1f0490f8e5111b5ad61dcfdc11e7936bcef"
+        },
+        {
+          "sha": "6bf026f21b1fe0bd966583993ff6e73eab892336",
+          "author_date": "2018-10-20T05:22:34Z",
+          "message": "${workspaceRoot} -> ${workspaceFolder} (#519)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6bf026f21b1fe0bd966583993ff6e73eab892336"
+        },
+        {
+          "sha": "98e6ce4ca4dbdb3b575de773e389da80d2e9fe29",
+          "author_date": "2018-10-20T05:25:45Z",
+          "message": "use hexcode for spaces in format arg (#517)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/98e6ce4ca4dbdb3b575de773e389da80d2e9fe29"
+        },
+        {
+          "sha": "3d8141fd85bb4cde2fda598a51303de2012f4774",
+          "author_date": "2018-10-21T02:43:54Z",
+          "message": "Fixes subscription issues with nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3d8141fd85bb4cde2fda598a51303de2012f4774"
+        },
+        {
+          "sha": "914b363a042e6a0ba2f5b486b3538dce07d46417",
+          "author_date": "2018-10-21T02:46:24Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/914b363a042e6a0ba2f5b486b3538dce07d46417"
+        },
+        {
+          "sha": "2f3eb5863a57d184fc2c7f6ec7048424cf067647",
+          "author_date": "2018-10-21T03:41:49Z",
+          "message": "Removes unused decorator emit",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2f3eb5863a57d184fc2c7f6ec7048424cf067647"
+        },
+        {
+          "sha": "948e359506c0a4bd258fbb2857541c2f5effcd9c",
+          "author_date": "2018-10-21T03:42:07Z",
+          "message": "Updates skipFiles",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/948e359506c0a4bd258fbb2857541c2f5effcd9c"
+        },
+        {
+          "sha": "554336586c01e0bcfe23b1eb92589d1c4b6561b3",
+          "author_date": "2018-10-21T03:56:26Z",
+          "message": "Adds @debug, @log, @logName decorators\nAdds Logger.debug, Logger.logWithDebugParams\nRefactors logging and renames TraceLevel to LogLevel\nAdds logging for views and view nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/554336586c01e0bcfe23b1eb92589d1c4b6561b3"
+        },
+        {
+          "sha": "73690a41f6e3f7deb95bbc500310f0508ca1e46e",
+          "author_date": "2018-10-21T03:57:57Z",
+          "message": "Adds node events for expand/collapse",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/73690a41f6e3f7deb95bbc500310f0508ca1e46e"
+        },
+        {
+          "sha": "c4bc7d1cee1e61e6b5b62e2144f0181232ca6e6f",
+          "author_date": "2018-10-21T03:59:17Z",
+          "message": "Adds more excludes for node_modules",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c4bc7d1cee1e61e6b5b62e2144f0181232ca6e6f"
+        },
+        {
+          "sha": "2921aebc828b76d130afe6f2525f4374d6c624f9",
+          "author_date": "2018-10-21T04:39:10Z",
+          "message": "Adds traps for stringify errors\nFixes sanitize support",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2921aebc828b76d130afe6f2525f4374d6c624f9"
+        },
+        {
+          "sha": "bfa7509119e29ef4ccf0adae598bff8b0cc5c2fe",
+          "author_date": "2018-10-21T19:36:02Z",
+          "message": "Fixes @log issues when code is minified (can't look up by name)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/bfa7509119e29ef4ccf0adae598bff8b0cc5c2fe"
+        },
+        {
+          "sha": "ad0aae7c99e948fcbe6cd99928fa60ffb7f20069",
+          "author_date": "2018-10-21T19:37:47Z",
+          "message": "Switches to use terser (rather than uglify)\nSwitches to use full source-map for better debugging (stepping)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ad0aae7c99e948fcbe6cd99928fa60ffb7f20069"
+        },
+        {
+          "sha": "aceab8179d7cfc5fbdcd4491e83cf0ca6f831021",
+          "author_date": "2018-10-21T20:46:05Z",
+          "message": "Adds gating via @gate to many node methods",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/aceab8179d7cfc5fbdcd4491e83cf0ca6f831021"
+        },
+        {
+          "sha": "70933cfa13dfc36d45af4d3d9062335c4e71ee3e",
+          "author_date": "2018-10-23T08:40:55Z",
+          "message": "Changes config.changed to always return true when initializing\nFixes auto-refresh context on repositories view loading",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/70933cfa13dfc36d45af4d3d9062335c4e71ee3e"
+        },
+        {
+          "sha": "af82b4461b1b427629c1f8cc67b5a344af1e9b00",
+          "author_date": "2018-10-23T08:42:28Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/af82b4461b1b427629c1f8cc67b5a344af1e9b00"
+        },
+        {
+          "sha": "4265a8762b9ccc28d1483fe58e5d398dea04b93e",
+          "author_date": "2018-10-27T20:54:38Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4265a8762b9ccc28d1483fe58e5d398dea04b93e"
+        },
+        {
+          "sha": "1088e3e685d70d885c7f3818c810804e6e185714",
+          "author_date": "2018-10-27T21:07:09Z",
+          "message": "Fixes logging",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1088e3e685d70d885c7f3818c810804e6e185714"
+        },
+        {
+          "sha": "37bf8835f459554caf1384b0210b2f76adaf092d",
+          "author_date": "2018-10-27T21:08:12Z",
+          "message": "Adds pull to behind upstream & push to ahead upstream nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/37bf8835f459554caf1384b0210b2f76adaf092d"
+        },
+        {
+          "sha": "35b254424ceba9a6f3b4a9c1ab07b8211ef212b5",
+          "author_date": "2018-10-28T00:28:17Z",
+          "message": "Adds global fetch & pull all repositories commands\nAdds push with force command to repo nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/35b254424ceba9a6f3b4a9c1ab07b8211ef212b5"
+        },
+        {
+          "sha": "95d75581cbfb4aeb80d06a21cf1fd3230b37f446",
+          "author_date": "2018-10-28T00:33:51Z",
+          "message": "Adds stash command to files node",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/95d75581cbfb4aeb80d06a21cf1fd3230b37f446"
+        },
+        {
+          "sha": "2a5744b70abc2e2a05299e89e4af4c3917000b5e",
+          "author_date": "2018-10-28T01:12:03Z",
+          "message": "Fixes bad anchor",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2a5744b70abc2e2a05299e89e4af4c3917000b5e"
+        },
+        {
+          "sha": "c8d42357a07bf3d26931271259bd75aa7a6192d1",
+          "author_date": "2018-10-28T03:01:00Z",
+          "message": "Switches when's to use config's when possible\nConfig when's can be resolved before extension activation",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c8d42357a07bf3d26931271259bd75aa7a6192d1"
+        },
+        {
+          "sha": "f6f0fd48bc73f3d3c4470b2d52b67d0c6d507962",
+          "author_date": "2018-10-28T03:51:00Z",
+          "message": "Fixes showing views",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f6f0fd48bc73f3d3c4470b2d52b67d0c6d507962"
+        },
+        {
+          "sha": "b2750e965439a5ef09bbed3fed523cbf897d2396",
+          "author_date": "2018-10-28T04:26:25Z",
+          "message": "Fixes relative paths when repoPath is missing\nRenames path import to paths for less naming conflicts",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b2750e965439a5ef09bbed3fed523cbf897d2396"
+        },
+        {
+          "sha": "bf255e97da206ba0912280fd7b9fd3361b5dd5ee",
+          "author_date": "2018-10-28T04:42:48Z",
+          "message": "Updates empty state messaging",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/bf255e97da206ba0912280fd7b9fd3361b5dd5ee"
+        },
+        {
+          "sha": "56a67bd92c23335dff85223d8d518dc56fde35fe",
+          "author_date": "2018-10-28T04:44:43Z",
+          "message": "Changes views in the GitLens side bar to only use when's based on config\nThis avoids unnecessary flickering of the GitLens side bar icon",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/56a67bd92c23335dff85223d8d518dc56fde35fe"
+        },
+        {
+          "sha": "2de6cb2c301a4b92c8c40f1bab4606cb00d6eb68",
+          "author_date": "2018-10-28T05:27:01Z",
+          "message": "Adds apply stash changes to stashes node",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2de6cb2c301a4b92c8c40f1bab4606cb00d6eb68"
+        },
+        {
+          "sha": "5ecf70cbbe22e4b89c4d9f95030e34b23ec87f8b",
+          "author_date": "2018-10-29T04:19:30Z",
+          "message": "Redraws stash arrow",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5ecf70cbbe22e4b89c4d9f95030e34b23ec87f8b"
+        },
+        {
+          "sha": "12bb8293a41f274b8819ec0c2c7ed64ee019bcef",
+          "author_date": "2018-10-29T04:21:42Z",
+          "message": "Adds new pull, push, & push with force icons",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/12bb8293a41f274b8819ec0c2c7ed64ee019bcef"
+        },
+        {
+          "sha": "77f66032bf8eabc7b8ed5374429ca0f9406f1395",
+          "author_date": "2018-10-29T04:24:30Z",
+          "message": "Adds copy sha/message to commit nodes toolbar",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/77f66032bf8eabc7b8ed5374429ca0f9406f1395"
+        },
+        {
+          "sha": "154f269e120718ccfb81cb772d740b868d625162",
+          "author_date": "2018-10-29T04:27:05Z",
+          "message": "Adds open in remote / copy remote url to many node toolbars",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/154f269e120718ccfb81cb772d740b868d625162"
+        },
+        {
+          "sha": "99688c28ba9bb5661556d997abe426454d9f36e0",
+          "author_date": "2018-10-29T06:22:07Z",
+          "message": "Adds comparison commands to branch nodes toolbar",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/99688c28ba9bb5661556d997abe426454d9f36e0"
+        },
+        {
+          "sha": "4861017d43bf8353b3721c06352fabda4fdceed7",
+          "author_date": "2018-10-29T06:22:43Z",
+          "message": "Adds more icons",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4861017d43bf8353b3721c06352fabda4fdceed7"
+        },
+        {
+          "sha": "6857f7c6b51bce1115222ba72b9d0eb9a624541e",
+          "author_date": "2018-10-29T07:13:33Z",
+          "message": "Adds fetch command to remotes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6857f7c6b51bce1115222ba72b9d0eb9a624541e"
+        },
+        {
+          "sha": "6934dc7c1499d4ca18d72c56029248cd3f14fba4",
+          "author_date": "2018-11-01T05:58:18Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6934dc7c1499d4ca18d72c56029248cd3f14fba4"
+        },
+        {
+          "sha": "9a1b48af192ce7d385028dd9af40321ddc5c11b5",
+          "author_date": "2018-11-01T05:58:06Z",
+          "message": "Adds push repositories command\nAdds @command decorator\nChanges (fetch|pull|push)All to be cancelable",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/9a1b48af192ce7d385028dd9af40321ddc5c11b5"
+        },
+        {
+          "sha": "80c290435869fbc5d1d72a2922d7a55553a2db0b",
+          "author_date": "2018-11-01T06:12:47Z",
+          "message": "Debounces view visibility change",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/80c290435869fbc5d1d72a2922d7a55553a2db0b"
+        },
+        {
+          "sha": "c5d68e05f571b751c51804015e233cfd6e7937b4",
+          "author_date": "2018-11-01T06:13:00Z",
+          "message": "Changes to only show the root node (for now?)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c5d68e05f571b751c51804015e233cfd6e7937b4"
+        },
+        {
+          "sha": "08e31f1fbc78b3137c83a555a8e5089d902befb8",
+          "author_date": "2018-11-01T15:47:35Z",
+          "message": "Executes multi-repo commands in order",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/08e31f1fbc78b3137c83a555a8e5089d902befb8"
+        },
+        {
+          "sha": "e0df9a8c30d5a8f4bb76fb9617b6ede414ed329e",
+          "author_date": "2018-11-02T04:59:37Z",
+          "message": "Fixes issues detected by DeepScan",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/e0df9a8c30d5a8f4bb76fb9617b6ede414ed329e"
+        },
+        {
+          "sha": "c49e0788a47ba71318f7961aa7c32972839f705f",
+          "author_date": "2018-11-02T05:42:20Z",
+          "message": "Update tslint recommendation",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c49e0788a47ba71318f7961aa7c32972839f705f"
+        },
+        {
+          "sha": "755c1ff6f991fae458f48b64956ba4faa1c9f97f",
+          "author_date": "2018-11-03T03:50:58Z",
+          "message": "Adds Change Base (branch/tag) command to file history view\nAdds Change Base (branch/tag) command to line history view",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/755c1ff6f991fae458f48b64956ba4faa1c9f97f"
+        },
+        {
+          "sha": "87e214c51bc34e2d1ac7dd8e570b304d1ffb891d",
+          "author_date": "2018-11-03T05:21:18Z",
+          "message": "Reworks branches/tags quickpick",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/87e214c51bc34e2d1ac7dd8e570b304d1ffb891d"
+        },
+        {
+          "sha": "106259eb17e2d438768648b2315cf8d5d1ace5ca",
+          "author_date": "2018-11-03T05:28:36Z",
+          "message": "Adds current branch hint to quickpick",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/106259eb17e2d438768648b2315cf8d5d1ace5ca"
+        },
+        {
+          "sha": "933cd10dcb80a96fab39883c30ea557b095b0367",
+          "author_date": "2018-11-03T05:38:34Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/933cd10dcb80a96fab39883c30ea557b095b0367"
+        },
+        {
+          "sha": "5e30864af7be89f5ca7d613ae4e434bb3df31b86",
+          "author_date": "2018-11-08T04:52:36Z",
+          "message": "Adds view reference to all ViewNodes\nNormalizes ctor parameters for ViewNodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5e30864af7be89f5ca7d613ae4e434bb3df31b86"
+        },
+        {
+          "sha": "3f3b8d28d6ad783efc687a16be9e5f0d9eaf8497",
+          "author_date": "2018-11-08T05:09:31Z",
+          "message": "Adds Search Commits view\nRenames showCommitInResults to showCommitInView\nRenames showFileHistoryInResults to showFileHistoryInView",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3f3b8d28d6ad783efc687a16be9e5f0d9eaf8497"
+        },
+        {
+          "sha": "d62a6f5f32c20929b975ceaf2b57ac147e2010e8",
+          "author_date": "2018-11-08T05:10:23Z",
+          "message": "Updates dependencies & bumps required vscode version",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d62a6f5f32c20929b975ceaf2b57ac147e2010e8"
+        },
+        {
+          "sha": "55bc8c243ff58077105d174a17bb2f4cbe0c51f7",
+          "author_date": "2018-11-10T08:02:05Z",
+          "message": "Changes Results view into Compare view\nAdds ability to start a compare directly from the view",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/55bc8c243ff58077105d174a17bb2f4cbe0c51f7"
+        },
+        {
+          "sha": "63a17deff3f21d3f98dcc99f6673ac7272dcfeb3",
+          "author_date": "2018-11-10T22:40:53Z",
+          "message": "Renames Results view files to Compare view\nUpdates README (wip)\nUpdates welcome & settings pages (wip)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/63a17deff3f21d3f98dcc99f6673ac7272dcfeb3"
+        },
+        {
+          "sha": "2d583c83d12330b466e4e297bebebdcce63c2af8",
+          "author_date": "2018-11-11T05:48:00Z",
+          "message": "Uses compare with vs compare to",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2d583c83d12330b466e4e297bebebdcce63c2af8"
+        },
+        {
+          "sha": "3f8923c8f6b4d56deda2cc98156687238cc06e6f",
+          "author_date": "2018-11-11T05:50:04Z",
+          "message": "Renames show commit search to search commits\nAdds search commits button to view",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3f8923c8f6b4d56deda2cc98156687238cc06e6f"
+        },
+        {
+          "sha": "126b838563c2fcc6ae617be99e8f2614ffe22740",
+          "author_date": "2018-11-11T05:50:32Z",
+          "message": "Adds compare button to compare view",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/126b838563c2fcc6ae617be99e8f2614ffe22740"
+        },
+        {
+          "sha": "5d1b5cd6f1008d7ea22562054a79fb996d82f678",
+          "author_date": "2018-11-11T05:51:24Z",
+          "message": "Fixes missing enabled checkbox for compare & search views\nPrettiers html",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5d1b5cd6f1008d7ea22562054a79fb996d82f678"
+        },
+        {
+          "sha": "8c27adb1ec92d3113ffba16ed599583852ede5b5",
+          "author_date": "2018-11-11T06:06:58Z",
+          "message": "Updates dependencies & switches to lodash-es",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8c27adb1ec92d3113ffba16ed599583852ede5b5"
+        },
+        {
+          "sha": "7b34a945b6c2e4af12850c4cc04455fb65f20620",
+          "author_date": "2018-11-11T06:22:51Z",
+          "message": "Adds settings menu choice to views",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7b34a945b6c2e4af12850c4cc04455fb65f20620"
+        },
+        {
+          "sha": "0ee7e5e4255f57bc893f7214eba33f4ff6f02252",
+          "author_date": "2018-11-12T05:55:47Z",
+          "message": "Closes #535 - Support commit ids in compares",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/0ee7e5e4255f57bc893f7214eba33f4ff6f02252"
+        },
+        {
+          "sha": "a78456e2aeb4071f1c74b3119b71d9f375e22574",
+          "author_date": "2018-11-13T05:50:46Z",
+          "message": "Adds better logging support",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a78456e2aeb4071f1c74b3119b71d9f375e22574"
+        },
+        {
+          "sha": "df07b28065198ac47dba1379d476a827dafe16d0",
+          "author_date": "2018-11-13T08:30:13Z",
+          "message": "Adds support gitlens command and icon to views",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/df07b28065198ac47dba1379d476a827dafe16d0"
+        },
+        {
+          "sha": "ee3b69c2d8766cc3d0344cc75ad32b0dd75dd233",
+          "author_date": "2018-11-13T08:47:04Z",
+          "message": "Update dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ee3b69c2d8766cc3d0344cc75ad32b0dd75dd233"
+        },
+        {
+          "sha": "3d09e0edfaedfd3f54311d2027d04bed97d9376e",
+          "author_date": "2018-11-13T08:49:45Z",
+          "message": "Adds auto-expand repo nodes when tracking repositories\nProgramatically expands search/compare results for better experience\n - Adding collapsed &  then expanding provides better feedback (spinner)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3d09e0edfaedfd3f54311d2027d04bed97d9376e"
+        },
+        {
+          "sha": "8f30bf3caed907620f4c5206bdb97237990fd26f",
+          "author_date": "2018-11-13T09:10:28Z",
+          "message": "Adds stash changes to scm headers",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8f30bf3caed907620f4c5206bdb97237990fd26f"
+        },
+        {
+          "sha": "042f703791c21d22d1c7f7f791769287d6c5995c",
+          "author_date": "2018-11-13T17:55:43Z",
+          "message": "Add delete to stash node's toolbar",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/042f703791c21d22d1c7f7f791769287d6c5995c"
+        },
+        {
+          "sha": "3f6cf7ed660019120acd2f7836ac11bcbfc7ed15",
+          "author_date": "2018-11-14T04:32:29Z",
+          "message": "Updates decorators",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/3f6cf7ed660019120acd2f7836ac11bcbfc7ed15"
+        },
+        {
+          "sha": "b28c811489c4d1b4fdc03d06635a3a1e360cd8cb",
+          "author_date": "2018-11-14T05:33:41Z",
+          "message": "Adds checkout command to branches and tags",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b28c811489c4d1b4fdc03d06635a3a1e360cd8cb"
+        },
+        {
+          "sha": "1b5afad466b74d1c05ef0dde36bacbed14137063",
+          "author_date": "2018-11-14T07:03:50Z",
+          "message": "Fixes issue with command execution",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/1b5afad466b74d1c05ef0dde36bacbed14137063"
+        },
+        {
+          "sha": "8cf77169d1e710974d840e36540b9b7ab559e13e",
+          "author_date": "2018-11-15T19:00:00Z",
+          "message": "Adds excluding args to logging",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8cf77169d1e710974d840e36540b9b7ab559e13e"
+        },
+        {
+          "sha": "353934c675955462764cfd21eb2f46fe5702f59a",
+          "author_date": "2018-11-15T22:07:09Z",
+          "message": "Fixes #544 - stop sometimes clipping the last char of a log message",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/353934c675955462764cfd21eb2f46fe5702f59a"
+        },
+        {
+          "sha": "84f7ee93c61f8df35bb2414efdcbe2bb24ab8513",
+          "author_date": "2018-11-16T16:01:40Z",
+          "message": "Closes #547 - Adds natural sorting to branches, tags, and files",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/84f7ee93c61f8df35bb2414efdcbe2bb24ab8513"
+        },
+        {
+          "sha": "6c2545d107f337c593a54f3e4a76aeaa77d15b83",
+          "author_date": "2018-11-16T23:13:21Z",
+          "message": "Fixes logger correlation and other tweaks",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6c2545d107f337c593a54f3e4a76aeaa77d15b83"
+        },
+        {
+          "sha": "5d972292a23a8604ac5923d5fb36d8d011fad7d0",
+          "author_date": "2018-11-17T02:16:54Z",
+          "message": "Fixes hiding support heart after interaction",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5d972292a23a8604ac5923d5fb36d8d011fad7d0"
+        },
+        {
+          "sha": "bf697d86ceeaf6611d2ccd46f4eb54bfd659f121",
+          "author_date": "2018-11-19T06:58:49Z",
+          "message": "Adds -- before filename for better git handling",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/bf697d86ceeaf6611d2ccd46f4eb54bfd659f121"
+        },
+        {
+          "sha": "d8d13c7301b6460f8299ba153624502ea2343fcd",
+          "author_date": "2018-11-19T07:14:41Z",
+          "message": "Consolidates path resolving and Uri.file to GitUri",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/d8d13c7301b6460f8299ba153624502ea2343fcd"
+        },
+        {
+          "sha": "e4477734ce7736e6e3f761ab88ceb8987baf4916",
+          "author_date": "2018-11-19T07:18:59Z",
+          "message": "Replaces custom git error handling with enum",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/e4477734ce7736e6e3f761ab88ceb8987baf4916"
+        },
+        {
+          "sha": "4e0e661e8fc12330f765818e2aeb4ef41188043d",
+          "author_date": "2018-11-20T03:14:11Z",
+          "message": "Fixes compile issue with TypeScript 3.2",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4e0e661e8fc12330f765818e2aeb4ef41188043d"
+        },
+        {
+          "sha": "fe6f05334cb0cd6da3ad0597521c34cbc762dc02",
+          "author_date": "2018-11-20T04:42:04Z",
+          "message": "Splits git configs from args to keep args[0] = git cmd\nMerges options.env with process.env",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/fe6f05334cb0cd6da3ad0597521c34cbc762dc02"
+        },
+        {
+          "sha": "b68fd7da90e59ba282a919d373921e6794a2a6ce",
+          "author_date": "2018-11-20T16:04:23Z",
+          "message": "Moves order for consistency",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b68fd7da90e59ba282a919d373921e6794a2a6ce"
+        },
+        {
+          "sha": "b497faeaac70f656b127ee01d8f61780bbb8384e",
+          "author_date": "2018-11-21T05:58:22Z",
+          "message": "Updates to latest webpack\n\nEnables source maps always\nMinifies css\nRemoves unused plugins",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b497faeaac70f656b127ee01d8f61780bbb8384e"
+        },
+        {
+          "sha": "8a9f7e672a6c9def10109554d629c178e0b0e367",
+          "author_date": "2018-11-21T05:58:39Z",
+          "message": "Fixes logging of static class methods",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8a9f7e672a6c9def10109554d629c178e0b0e367"
+        },
+        {
+          "sha": "7677a34203f3d8b8a3c86d510afe015dae11c823",
+          "author_date": "2018-11-21T06:42:00Z",
+          "message": "Closes #275 - Adds expand menu to some nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7677a34203f3d8b8a3c86d510afe015dae11c823"
+        },
+        {
+          "sha": "67c4a334d2c1e4a25b30ceff5c11b4af7be584a3",
+          "author_date": "2018-11-21T22:09:09Z",
+          "message": "Updates images for the settings editor",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/67c4a334d2c1e4a25b30ceff5c11b4af7be584a3"
+        },
+        {
+          "sha": "7a32208da17682727ac553ba6e86efaaf36d15fe",
+          "author_date": "2018-11-22T00:10:40Z",
+          "message": "Updates README with latest features & changes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7a32208da17682727ac553ba6e86efaaf36d15fe"
+        },
+        {
+          "sha": "f94685b408bda5c007b6ff3fc7cad6814714cb24",
+          "author_date": "2018-11-22T00:19:21Z",
+          "message": "Removes broken commands from upstream nodes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f94685b408bda5c007b6ff3fc7cad6814714cb24"
+        },
+        {
+          "sha": "99a3733964918554e6b44c369b7ceeddf010dd49",
+          "author_date": "2018-11-22T04:57:47Z",
+          "message": "Removes unused import",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/99a3733964918554e6b44c369b7ceeddf010dd49"
+        },
+        {
+          "sha": "f9ae631d8121aab39ab48b31594440e937e9c499",
+          "author_date": "2018-11-22T04:58:39Z",
+          "message": "Fixes issue when comparing before the view is visible wouldn't expand",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f9ae631d8121aab39ab48b31594440e937e9c499"
+        },
+        {
+          "sha": "5cc08a533f6466459d86611659c54438cfce24a2",
+          "author_date": "2018-11-22T05:38:50Z",
+          "message": "Updates to remote images",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5cc08a533f6466459d86611659c54438cfce24a2"
+        },
+        {
+          "sha": "fa04a75010bc0372ca2bd90c56714124b399e70e",
+          "author_date": "2018-11-22T08:14:46Z",
+          "message": "Fixes #533 - Updates setting descriptions to markdown",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/fa04a75010bc0372ca2bd90c56714124b399e70e"
+        },
+        {
+          "sha": "9ccbae352180e194c917665f9d8514dff6eb2a89",
+          "author_date": "2018-11-19T07:03:17Z",
+          "message": "Adds live share support\n\nKeeps all path manipulation on the host rather than guest\nFixes shared/local path munging for mac/windows\nKeeps current user lookup local when a guest\nKeeps difftool lookup local when a guest\nAvoids fetch date lookup when a guest\nStops clearing node_modules (for now)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/9ccbae352180e194c917665f9d8514dff6eb2a89"
+        },
+        {
+          "sha": "0415c6426a1b04a5da43b36fe68320af95c436eb",
+          "author_date": "2018-11-22T05:13:15Z",
+          "message": "Changes many commands to be read-only when a guest\n\nAdds whitelist for allowed git methods to be run on the host",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/0415c6426a1b04a5da43b36fe68320af95c436eb"
+        },
+        {
+          "sha": "68edc49e80fd391872dc2654a06cd01b12036e19",
+          "author_date": "2018-11-22T08:44:34Z",
+          "message": "Adds protection for reversed ranges",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/68edc49e80fd391872dc2654a06cd01b12036e19"
+        },
+        {
+          "sha": "681129dc6c055b2cbc5402ef55a9028e32f6053b",
+          "author_date": "2018-11-22T08:45:15Z",
+          "message": "Hides the search view if GitLens is not enabled",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/681129dc6c055b2cbc5402ef55a9028e32f6053b"
+        },
+        {
+          "sha": "a69125425958f7ccc1d19591ef5e71c5c1359c99",
+          "author_date": "2018-11-24T06:49:01Z",
+          "message": "Fixes image sizes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a69125425958f7ccc1d19591ef5e71c5c1359c99"
+        },
+        {
+          "sha": "b6a3160624e9f7cb65a9ed9f51698a59f63c4769",
+          "author_date": "2018-11-24T06:49:12Z",
+          "message": "Fixes links",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b6a3160624e9f7cb65a9ed9f51698a59f63c4769"
+        },
+        {
+          "sha": "840904dd5fe0b641217711d10674763a738fbd7f",
+          "author_date": "2018-11-24T06:49:34Z",
+          "message": "Fixes links",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/840904dd5fe0b641217711d10674763a738fbd7f"
+        },
+        {
+          "sha": "a9ad6acf90de2197bf22bca9ce3da579d03ca97a",
+          "author_date": "2018-11-24T20:08:37Z",
+          "message": "Updates documentation, welcome, & settings",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a9ad6acf90de2197bf22bca9ce3da579d03ca97a"
+        },
+        {
+          "sha": "ba8714285339c45351e7d6188476109cf7cc9071",
+          "author_date": "2018-11-26T08:00:41Z",
+          "message": "Preps v9.0-beta - Updates Welcome, README, & CHANGELOG",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/ba8714285339c45351e7d6188476109cf7cc9071"
+        },
+        {
+          "sha": "315df9b3d112b55ec47741be23af433cf6b44da7",
+          "author_date": "2018-11-26T20:50:23Z",
+          "message": "Downgrades to event-stream to 3.3.5\n\nhttps://github.com/dominictarr/event-stream/issues/116",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/315df9b3d112b55ec47741be23af433cf6b44da7"
+        },
+        {
+          "sha": "02fd9652316872d53734556707a5bb40fad59d81",
+          "author_date": "2018-11-26T21:04:18Z",
+          "message": "Downgrades to event-stream to 3.3.4 (recommended version)\n\nhttps://github.com/dominictarr/event-stream/issues/116",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/02fd9652316872d53734556707a5bb40fad59d81"
+        },
+        {
+          "sha": "6a9d81bfa2bd032501d4ce4ccb492598f1b70630",
+          "author_date": "2018-11-16T14:53:53Z",
+          "message": "Make Azure Pipelines use document scope",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6a9d81bfa2bd032501d4ce4ccb492598f1b70630"
+        },
+        {
+          "sha": "a90934b9a844e1c95bc4d4a204937d9bf6fe8bbd",
+          "author_date": "2018-11-27T04:48:18Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a90934b9a844e1c95bc4d4a204937d9bf6fe8bbd"
+        },
+        {
+          "sha": "fa4a2dd24206185ee9d64b6aa4defdf05b9f9fb1",
+          "author_date": "2018-11-27T04:54:42Z",
+          "message": "Adds recognition for Matt Cooper's contribution",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/fa4a2dd24206185ee9d64b6aa4defdf05b9f9fb1"
+        },
+        {
+          "sha": "a746c27b5f05beb635ebe0ade494d1ec91510af8",
+          "author_date": "2018-11-29T06:47:08Z",
+          "message": "Updates dependencies",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/a746c27b5f05beb635ebe0ade494d1ec91510af8"
+        },
+        {
+          "sha": "e6712e1ae6ce98fbaf76024176ca5398c6534eb5",
+          "author_date": "2018-11-29T08:04:32Z",
+          "message": "Closes #560 - Adds tag markers to all commit lists\n\nAdds branch markers to all commit lists",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/e6712e1ae6ce98fbaf76024176ca5398c6534eb5"
+        },
+        {
+          "sha": "6ce00f686860865a24808f3ced7099c16a0ef03c",
+          "author_date": "2018-11-29T08:04:45Z",
+          "message": "Adds branch and tag caching",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6ce00f686860865a24808f3ced7099c16a0ef03c"
+        },
+        {
+          "sha": "b1fbad527722c16e79304f8dd484a2ece9998eea",
+          "author_date": "2018-11-29T22:59:19Z",
+          "message": "Removes unneeded webpack config",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b1fbad527722c16e79304f8dd484a2ece9998eea"
+        },
+        {
+          "sha": "cf795a628056f8378337438f6f53fdb0561bd746",
+          "author_date": "2018-11-29T22:59:32Z",
+          "message": "Escapes . in regex",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/cf795a628056f8378337438f6f53fdb0561bd746"
+        },
+        {
+          "sha": "6bab295572b7e7d61ba9917062d4d8b13cdf1f86",
+          "author_date": "2018-11-30T05:13:12Z",
+          "message": "Updates to TypeScript 3.2.1",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6bab295572b7e7d61ba9917062d4d8b13cdf1f86"
+        },
+        {
+          "sha": "edb0a17516ebde3e1e0e4138edcf1e6c0982dfdf",
+          "author_date": "2018-11-30T05:13:24Z",
+          "message": "Fixes webview source maps",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/edb0a17516ebde3e1e0e4138edcf1e6c0982dfdf"
+        },
+        {
+          "sha": "6483c19e7c533b1d702d15bef3f6acb28a027e5d",
+          "author_date": "2018-11-30T05:15:15Z",
+          "message": "Adds smooth scrolling to settings jumps",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6483c19e7c533b1d702d15bef3f6acb28a027e5d"
+        },
+        {
+          "sha": "b7da064db62c6f0e1beba1ea7e0de5524fcdbc6c",
+          "author_date": "2018-11-30T05:16:05Z",
+          "message": "Adds what's new notification if page is disabled",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/b7da064db62c6f0e1beba1ea7e0de5524fcdbc6c"
+        },
+        {
+          "sha": "5693a58588e89a37cb01a85086e81f4570e1e3e1",
+          "author_date": "2018-11-30T07:19:19Z",
+          "message": "Revamps GitLens Welcome page\n\nMoves Support GitLens up in README\nRemoves Support GitLens from Settings page",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5693a58588e89a37cb01a85086e81f4570e1e3e1"
+        },
+        {
+          "sha": "81033fba759f2f95cd2433b5930dfec0a7ee571e",
+          "author_date": "2018-11-27T11:15:53Z",
+          "message": "Update CHANGELOG.md\n\n- Surround `:smile:` with code backticks, as this gets parsed in GitHub.",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/81033fba759f2f95cd2433b5930dfec0a7ee571e"
+        },
+        {
+          "sha": "625aa292b573d9161f4c592c38b0fd2eb2ed735e",
+          "author_date": "2018-12-01T20:34:05Z",
+          "message": "Handles *.dev.azure.com remotes",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/625aa292b573d9161f4c592c38b0fd2eb2ed735e"
+        },
+        {
+          "sha": "02f35540fda4b9aa3a62177b86006b5c12872575",
+          "author_date": "2018-12-01T20:44:45Z",
+          "message": "Adds recognition for Ash Clarke's contribution",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/02f35540fda4b9aa3a62177b86006b5c12872575"
+        },
+        {
+          "sha": "900d12b59d21761d08f8d9b1a51705634d35acbb",
+          "author_date": "2018-12-02T09:15:09Z",
+          "message": "Update BACKERS & adds CodeStream sponsor",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/900d12b59d21761d08f8d9b1a51705634d35acbb"
+        },
+        {
+          "sha": "6ac3128b7107f22dffbc5d082daf66198b8bea07",
+          "author_date": "2018-12-02T09:16:56Z",
+          "message": "Preps v9.0\n\nUpdates GitLens logo\nAdds CodeStream sponsor",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6ac3128b7107f22dffbc5d082daf66198b8bea07"
+        },
+        {
+          "sha": "c993cfd83c0f60e3af5b5fe161ec2d5898059bb7",
+          "author_date": "2018-12-02T09:35:08Z",
+          "message": "Update README date",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c993cfd83c0f60e3af5b5fe161ec2d5898059bb7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v9.0.1",
@@ -5553,8 +7350,87 @@
     {
       "release": "v11.0.2",
       "previous_release": "v11.0.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "f49fc0913ee8535376284bd53f7e89ba19ee970d",
+          "author_date": "2020-11-16T17:08:50Z",
+          "message": "Fixes #1166 - Bad size for GitHub fallback avatars",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/f49fc0913ee8535376284bd53f7e89ba19ee970d"
+        },
+        {
+          "sha": "51ee91e3ce26af613d375815fbd331b2b4868eb4",
+          "author_date": "2020-11-19T11:40:54Z",
+          "message": "Fixes #1187 - adds missing escape in regexp",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/51ee91e3ce26af613d375815fbd331b2b4868eb4"
+        },
+        {
+          "sha": "5946007bcc9b7016a583d3bcd9450e8c57ae13d7",
+          "author_date": "2020-11-18T05:57:10Z",
+          "message": "Updates dependencies\nRemoves unused pngquant",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5946007bcc9b7016a583d3bcd9450e8c57ae13d7"
+        },
+        {
+          "sha": "cbdb575a6dffac3c5494238d128ff5006475cf9b",
+          "author_date": "2020-11-18T06:30:26Z",
+          "message": "Fixes #1151 - missing codicons",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/cbdb575a6dffac3c5494238d128ff5006475cf9b"
+        },
+        {
+          "sha": "5a397a59781fafe93dec5eca61f03049ad00e55a",
+          "author_date": "2020-11-18T08:14:18Z",
+          "message": "Updates regex to not be positional",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/5a397a59781fafe93dec5eca61f03049ad00e55a"
+        },
+        {
+          "sha": "c5bd58472eaeaf2b4d5ad76604ece48c992bc351",
+          "author_date": "2020-11-18T08:14:37Z",
+          "message": "Removes unneeded debug logging",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/c5bd58472eaeaf2b4d5ad76604ece48c992bc351"
+        },
+        {
+          "sha": "2fccf2fad258b1033f9277fadbc35d0a8a27902f",
+          "author_date": "2020-11-18T08:15:12Z",
+          "message": "Adds shortcut keys to rebase buttons",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/2fccf2fad258b1033f9277fadbc35d0a8a27902f"
+        },
+        {
+          "sha": "08e1adf580bef8f6315835e9cd3a12d7de7182bd",
+          "author_date": "2020-11-18T08:15:36Z",
+          "message": "Reduces padding on rebase entries",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/08e1adf580bef8f6315835e9cd3a12d7de7182bd"
+        },
+        {
+          "sha": "8d4a874fbd577bc5581d5da6a8e6d6030b1973f7",
+          "author_date": "2020-11-19T06:37:30Z",
+          "message": "Adds debug logging for sync'd settings",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8d4a874fbd577bc5581d5da6a8e6d6030b1973f7"
+        },
+        {
+          "sha": "8d499eca55e2e26cd7d9adc2988d00a8f7b1df81",
+          "author_date": "2020-11-19T06:38:04Z",
+          "message": "Hides the show line history command unless enabled",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/8d499eca55e2e26cd7d9adc2988d00a8f7b1df81"
+        },
+        {
+          "sha": "6f05dcb2e9c7a412310306aa463e1dbdb3afb9c8",
+          "author_date": "2020-11-19T06:40:15Z",
+          "message": "Adds range support to compare refs",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/6f05dcb2e9c7a412310306aa463e1dbdb3afb9c8"
+        },
+        {
+          "sha": "913c0606d03befc4f025d325a53df22be9df8221",
+          "author_date": "2020-11-19T09:02:54Z",
+          "message": "Refines rebase editor\nAdds button to rebase editor to toggle it on/off\nAdds commands to toggle rebase editor on/off\nAdds settings UI to toggle rebase editor on/off",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/913c0606d03befc4f025d325a53df22be9df8221"
+        },
+        {
+          "sha": "236c178ae7eed7f3d808715c12350c3afc1e3027",
+          "author_date": "2020-11-20T08:11:12Z",
+          "message": "Bumps to v11.0.1",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/236c178ae7eed7f3d808715c12350c3afc1e3027"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v11.0.3",
@@ -5673,8 +7549,39 @@
     {
       "release": "v12.0.3",
       "previous_release": "v12.0.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "afd80ea8feb15698d0b0ce9b7f09fccb1b8d876f",
+          "author_date": "2022-03-10T05:16:43Z",
+          "message": "Reset octokit on logging change to enable logging",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/afd80ea8feb15698d0b0ce9b7f09fccb1b8d876f"
+        },
+        {
+          "sha": "555bd74a0651e60b70c05d6146e552ebbbfe19f5",
+          "author_date": "2022-03-10T05:43:28Z",
+          "message": "Avoids unhelpful gate",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/555bd74a0651e60b70c05d6146e552ebbbfe19f5"
+        },
+        {
+          "sha": "7a5191fa268054e6f137767d75e1a47174c96b70",
+          "author_date": "2022-03-10T05:17:35Z",
+          "message": "Starts handling rate limits (wip)",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/7a5191fa268054e6f137767d75e1a47174c96b70"
+        },
+        {
+          "sha": "948405e2823640066e36300aab323d1a3ef5fd1a",
+          "author_date": "2022-03-10T06:03:23Z",
+          "message": "Fixes #1897 avoid messages on 500 errors\nHides unexpected GitHub errors for now\nRefs #1893",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/948405e2823640066e36300aab323d1a3ef5fd1a"
+        },
+        {
+          "sha": "4b8677cfbcb3cb5ce97fb0cb3b889ef36592b754",
+          "author_date": "2022-03-10T06:20:45Z",
+          "message": "Bumps to v12.0.3",
+          "html_url": "https://github.com/gitkraken/vscode-gitlens/commit/4b8677cfbcb3cb5ce97fb0cb3b889ef36592b754"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v12.0.4",

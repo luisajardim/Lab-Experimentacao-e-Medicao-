@@ -585,8 +585,135 @@
     {
       "release": "1.4.1",
       "previous_release": "1.4.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "b331ba769c13809d3a33d2706c56846c2c68fa4f",
+          "author_date": "2026-01-22T18:37:01Z",
+          "message": "fix: Adjust class count in `train_from_config` for Roboflow datasets (#588)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/b331ba769c13809d3a33d2706c56846c2c68fa4f"
+        },
+        {
+          "sha": "3a55ede0c70c6b180f6857ae934cabc6d2b8d0ef",
+          "author_date": "2026-01-22T18:53:16Z",
+          "message": "make the release action trigger with post tags (#589)\n\n* make the release action trigger with post tags\n\n* remove unnecessary escape",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/3a55ede0c70c6b180f6857ae934cabc6d2b8d0ef"
+        },
+        {
+          "sha": "eb91fd671aad293527bb34f8f5e17a2a2c428c25",
+          "author_date": "2026-01-22T18:54:40Z",
+          "message": "bump version from `1.4.0` to `1.4.0.post0`",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/eb91fd671aad293527bb34f8f5e17a2a2c428c25"
+        },
+        {
+          "sha": "10d21e4b12a0feb7addc218fcfe9ace35b1a7dd3",
+          "author_date": "2026-01-22T18:58:45Z",
+          "message": "Merge pull request #590 from roboflow/develop\n\nRF-DETR 1.4.0.post0 release",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/10d21e4b12a0feb7addc218fcfe9ace35b1a7dd3"
+        },
+        {
+          "sha": "43c888bd5f270abc78370bbcde653379df065266",
+          "author_date": "2026-01-23T05:31:18Z",
+          "message": "Fix license link badges in installation section (#591)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/43c888bd5f270abc78370bbcde653379df065266"
+        },
+        {
+          "sha": "2a2dd9cf91a009e091a5f4c43fd2a779e7b02399",
+          "author_date": "2026-01-23T05:37:08Z",
+          "message": "update YOLO dataset format support (#74)\n\n* Dev YOLO dataset format support\n* Rename is_correct_yolo_format method\n* Add YOLO format data loader, ensure COCO API compliance\n* image_ids should start at 1 and class ids were mismatched\n* Cleanup docs of latest changes\n* Ensure non-string idx\n* Try to fix COCO like API\n* Use proper dataset structure in COCOLikeAPI\n* Fix image and annotation ID in COCOLikeAPI\n* Consistency between images and annotations in COCOLikeAPI\n* Remove default list when retrieving class names from data.yaml\n* Code Review improvements\n* Remove more unnecessary inline comments\n* More code review improvements\n* Notify user, if image or label files are skipped\n* Correct usage of supervision file util methods\n* Fix params of parse_yolo_annotations\n* Forgot to return boxes and labels\n* Use constant in build_yolo for consistency\n* update / picks\n* Apply suggestion from @Borda\n* fix(pre-commit): 🎨 auto format pre-commit hooks\n\n---------\n\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/2a2dd9cf91a009e091a5f4c43fd2a779e7b02399"
+        },
+        {
+          "sha": "d8bbdf9558b97555fcb44c1172415d0b8aa04049",
+          "author_date": "2026-01-24T23:29:55Z",
+          "message": "chore: exclude python 3.9 from `pyproject.toml` (#594)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/d8bbdf9558b97555fcb44c1172415d0b8aa04049"
+        },
+        {
+          "sha": "db14b32dfcff7324e9b0909ff920e1ec938927b9",
+          "author_date": "2026-01-26T17:47:07Z",
+          "message": "Hotfix: pin `transformers` dependency to version range >4.0.0, <5.0.0 (#599)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/db14b32dfcff7324e9b0909ff920e1ec938927b9"
+        },
+        {
+          "sha": "a6273a78d46a4e8ecd8a58a1fe738deaad180065",
+          "author_date": "2026-01-26T17:50:50Z",
+          "message": "chore(pre-commit): ⬆ pre_commit autoupdate (#598)\n\nupdates:\n- [github.com/astral-sh/ruff-pre-commit: v0.14.11 → v0.14.14](https://github.com/astral-sh/ruff-pre-commit/compare/v0.14.11...v0.14.14)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/a6273a78d46a4e8ecd8a58a1fe738deaad180065"
+        },
+        {
+          "sha": "bdfe2d33dcae0d000a12b5a2e56f73063f6a6afb",
+          "author_date": "2026-01-26T17:51:52Z",
+          "message": "Chore GH Actions workflows to use `release` event & asset uploads (#575)\n\n* Chore GH Actions workflows to use `release` event and enable asset uploads\n* Add conditional guards to prevent workflow race conditions on pre-releases\n* Fix conditional logic in release workflow to correctly handle pre-releases\n* Update release workflow to support manual triggering with `workflow_dispatch` event\n\n---------\n\nCo-authored-by: Copilot <198982749+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/bdfe2d33dcae0d000a12b5a2e56f73063f6a6afb"
+        },
+        {
+          "sha": "dc8b61f652539b5f76cde7e39acbb5c0352e296d",
+          "author_date": "2026-01-26T18:06:21Z",
+          "message": "[BUG][CLI] Fix error in cli script (#246)\n\n* Fix error in cli script\n* Use DEVICE instead\n\n---------\n\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/dc8b61f652539b5f76cde7e39acbb5c0352e296d"
+        },
+        {
+          "sha": "916b2e7e3a8d53d2ba73e48d6b2d237d2c6e9cf1",
+          "author_date": "2026-01-28T14:09:08Z",
+          "message": "Modified misleading num_classes Warnings (#261)\n\n* Modify num_classes Warnings\n\n---------\n\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/916b2e7e3a8d53d2ba73e48d6b2d237d2c6e9cf1"
+        },
+        {
+          "sha": "7de5e6104f6b35160d1b2506741cc52294c13ef8",
+          "author_date": "2026-01-28T14:10:57Z",
+          "message": "enh: add custom print-freq argument (#603)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/7de5e6104f6b35160d1b2506741cc52294c13ef8"
+        },
+        {
+          "sha": "3db2a334d452840c1aaafe5bcbb3f3f0509ae664",
+          "author_date": "2026-01-28T14:13:32Z",
+          "message": "add type annotations to cli (#604)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/3db2a334d452840c1aaafe5bcbb3f3f0509ae664"
+        },
+        {
+          "sha": "fd27fa84d1f51bf8d0235338872275765f26bb86",
+          "author_date": "2026-01-28T14:13:50Z",
+          "message": "ENH: add type annotations to platform module (#605)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/fd27fa84d1f51bf8d0235338872275765f26bb86"
+        },
+        {
+          "sha": "23979359332fd57d9a1f536d335523f650456a7b",
+          "author_date": "2026-01-28T14:14:43Z",
+          "message": "Add F1 score assertions and clarify IoU threshold in `test_intermediate_scenario` (#596)\n\n* Initial commit - establish baseline\n* Add F1 score support and improve test documentation\n\n- Modified sweep_confidence_thresholds to include per_class_f1 in results\n- Updated coco_extended_metrics to return f1_score in both per-class and overall results\n- Added F1 score assertions to test_intermediate_scenario (macro: 0.8334, class_1: 1.0, class_2: 0.667)\n- Improved test docstring: moved IoU=0.5 assumption to top, clarified best F1 confidence threshold, documented confidence=0.0 edge case\n- Updated fixture docstring: made IoU=0.5 more prominent, fixed 0.46->0.5 reference, added edge case notes\n- Added test_visualizations/ to .gitignore\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/23979359332fd57d9a1f536d335523f650456a7b"
+        },
+        {
+          "sha": "818b841daa86615b28af669d7c92351d8dd42270",
+          "author_date": "2026-01-29T17:46:42Z",
+          "message": "Simplify PR conflict labeler workflow (#613)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/818b841daa86615b28af669d7c92351d8dd42270"
+        },
+        {
+          "sha": "3cfcf6e3669949f855ae736a3e7246d586d74cef",
+          "author_date": "2026-01-28T23:43:37Z",
+          "message": "add missing warnings module import",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/3cfcf6e3669949f855ae736a3e7246d586d74cef"
+        },
+        {
+          "sha": "5fc2bd9f668bc9bd3d9e79c96f0eb1004b4329fc",
+          "author_date": "2026-01-29T22:01:51Z",
+          "message": "update checkpoint tables with license column (#614)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/5fc2bd9f668bc9bd3d9e79c96f0eb1004b4329fc"
+        },
+        {
+          "sha": "39a470eda48876d3bcebd06922e8351ab8207172",
+          "author_date": "2026-01-30T07:41:58Z",
+          "message": "bump version to `1.4.1`",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/39a470eda48876d3bcebd06922e8351ab8207172"
+        },
+        {
+          "sha": "28f6ebdc78812136578987cdb8b55606ceeb0f7c",
+          "author_date": "2026-01-30T14:50:34Z",
+          "message": "Reorder `Upload assets to GitHub Release` step in workflow",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/28f6ebdc78812136578987cdb8b55606ceeb0f7c"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.4.2",
@@ -645,8 +772,93 @@
     {
       "release": "1.6.4",
       "previous_release": "1.6.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c4b0efebbd9eb788b3c422937aa0f128aef69e0f",
+          "author_date": "2026-04-02T21:41:16Z",
+          "message": "Add `class_name` to `predict()` detections data to clarify 0-indexed class IDs (#914)\n\n* Add class_name to predict() output data dict for clear class identification\n* fix: hoist class_names lookup, warn on OOB class IDs, fix dtype=object\n* test: assert dtype=object on empty class_name, add batch test, drop dead link\n* fix: aggregate OOB class_id warnings with warning_once\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/c4b0efebbd9eb788b3c422937aa0f128aef69e0f"
+        },
+        {
+          "sha": "1769423b9a65b9034955bbaeab68317e7afea4e9",
+          "author_date": "2026-04-06T18:30:55Z",
+          "message": "chore(pre-commit): ⬆ pre_commit autoupdate (#926)\n\nupdates:\n- [github.com/astral-sh/ruff-pre-commit: v0.15.6 → v0.15.9](https://github.com/astral-sh/ruff-pre-commit/compare/v0.15.6...v0.15.9)\n- [github.com/pre-commit/mirrors-mypy: v1.19.1 → v1.20.0](https://github.com/pre-commit/mirrors-mypy/compare/v1.19.1...v1.20.0)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/1769423b9a65b9034955bbaeab68317e7afea4e9"
+        },
+        {
+          "sha": "85f3b486f821565159be008af3cd713f67353c98",
+          "author_date": "2026-04-08T19:00:07Z",
+          "message": "Fix missing Optional type hint in config.py (#795)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/85f3b486f821565159be008af3cd713f67353c98"
+        },
+        {
+          "sha": "221ce0014b9f3076ccaefb6760ea6fb271302bb2",
+          "author_date": "2026-04-08T20:19:18Z",
+          "message": "fix: enable multi-GPU DDP training in Jupyter notebooks (#928)\n\n* fix: defer CUDA init to enable DDP training in notebooks\n* fix: skip CUDA bf16 probe for ddp_notebook strategy\n* fix: eliminate all CUDA driver context leaks before DDP fork\n* fix: use overridden num_workers in all dataloaders for ddp_notebook\n* fix: use spawn-based DDP for ddp_notebook to avoid OpenMP SIGABRT\n* fix: adding logger for ddp_notebook strategy\n* fix: use spawn-based DDP for ddp_notebook to avoid OpenMP SIGABRT\n* fix: remove unnecessary num_workers=0 override for ddp_notebook\n* fix: use standard precision probing for DDP and guard auto-batch\n* fix: handle None from torch.accelerator on CPU-only environments\n* fix: guard torch.accelerator access before current_accelerator check\n* fix: replace assert with RuntimeError in _NotebookSpawnDDPStrategy\n* docs: note private PTL launcher API risk in trainer.py\n* docs: update _build_model_context docstring for lazy device placement\n* docs: explain why CUDA calls in _resolve_precision are safe with spawn DDP\n* docs: consolidate duplicated OMP fork explanation in trainer.py\n* test: add coverage for _ensure_model_on_device auto-batch path + _detect_device fallback\n* refactor(tests): convert mocking to @patch decorator style\n* refactor(tests): convert test_amp_true_ddp_notebook_probes_bf16_normally to @patch decorators\n* fix: address PR #928 unresolved reviews and CPU CI failure\n\n---------\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/221ce0014b9f3076ccaefb6760ea6fb271302bb2"
+        },
+        {
+          "sha": "357d29f9ddce9a41f0ec241ff91f954308b24541",
+          "author_date": "2026-04-08T21:53:31Z",
+          "message": "fix: preserve fine-tuned checkpoints when MD5 mismatches on existing file (#935)\n\n* fix: preserve fine-tuned checkpoints when MD5 hash mismatches redownload=False\n* fix: update misleading inline comment in download_pretrain_weights\n* test: add redownload=True + incorrect MD5 coverage\n* docs: add CHANGELOG entry for fine-tuned checkpoint preservation fix\n* test: validate warning on MD5 mismatch without re-download\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/357d29f9ddce9a41f0ec241ff91f954308b24541"
+        },
+        {
+          "sha": "e7b862aac2abf5c2c704a4f65250f2b00462e3a1",
+          "author_date": "2026-04-08T22:01:48Z",
+          "message": "Fix: resolution kwarg silently ignored in RFDETR.train() (#933)\n\n* Fix: handle resolution kwarg in RFDETR.train() to override model_config.resolution\n* Fix comment in test to use num_windows instead of block_size notation\n* fix(detr): robust resolution validation + smart PE update\n* test(detr): harden resolution kwarg test coverage\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/e7b862aac2abf5c2c704a4f65250f2b00462e3a1"
+        },
+        {
+          "sha": "7c4f1334e66a2e7992f71d47a7a8f9e20dbf0ce2",
+          "author_date": "2026-04-08T22:40:55Z",
+          "message": "refactor: add missing explicit (non-dynamic) imports silence linter errors (#719)\n\n* refactor: add explicit (non-dynamic) imports for _develop.py to silence linter errors\n* refactor: move `numpy`, `torch`, and `PIL` imports to top-level\n\n---------\n\nCo-authored-by: Anatoly Ryabchenko <anatoly@linqapp.io>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/7c4f1334e66a2e7992f71d47a7a8f9e20dbf0ce2"
+        },
+        {
+          "sha": "d236f500a0baa6d91a214d57476f97120663c908",
+          "author_date": "2026-04-09T09:14:43Z",
+          "message": "Fix `torch.export.export` compatibility in transformer decoder (#936)\n\n* Fix torch.export.export compatibility in ms_deform_attn and transformer decoder chain\n* Address code review: add type hints and fix hardcoded values in tests\n* fix: add type hints to ms_deform_attn_core_pytorch params\n* docs: convert MSDeformAttn.forward docstring to Google style\n* test: add MSDeformAttn module tests and torch.export smoke test\n* test: fix assert-less test and add int-pair spatial shapes regression\n* test: refactor transformer tests with fixtures and type hints\n* refactor: streamline test cases for MSDeformAttn module and transformer utilities\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/d236f500a0baa6d91a214d57476f97120663c908"
+        },
+        {
+          "sha": "174e5af80496a646836d105a3c46cb9e06402a10",
+          "author_date": "2026-04-09T09:15:28Z",
+          "message": "fix: pad training dataset to prevent partial grad-accum windows (#937)\n\n* fix: add GradAccumAlignedDataset to prevent partial grad-accum windows (PTL#19987)\n* fix: remove unnecessary empty-dataset skip in test_length_always_multiple_of_pad_unit\n* fix: correct GradAccumAlignedDataset docstring alignment unit\n* fix: add Any return type and fixed-padding comment to GradAccumAlignedDataset\n* fix: validate alignment inputs and add train dataloader world_size test\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/174e5af80496a646836d105a3c46cb9e06402a10"
+        },
+        {
+          "sha": "f73201646263ca0f1ff384096acb00ded46ddc7f",
+          "author_date": "2026-04-09T10:22:31Z",
+          "message": "Add regression test for fine-tuned checkpoint returning OOB class IDs (#938)\n\n* Add regression test for 8-class fine-tuned checkpoint OOB class IDs (issue fix)\n* Add mc.num_classes assertion to 2-class finetune test\n* Parametrize 8-class regression test over all non-deprecated model configs\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/f73201646263ca0f1ff384096acb00ded46ddc7f"
+        },
+        {
+          "sha": "0083a96655fbc11b30a23392a3d2f33511039525",
+          "author_date": "2026-04-09T19:11:09Z",
+          "message": "fix: wire DatasetGridSaver into training — save_dataset_grids was silently a no-op (#946)\n\n* fix: wire save_dataset_grids into training via DatasetGridSaver\n* fix(test): add save_dataset_grids to SimpleNamespace in test_auto_batch\n* fix(detr): guard grid save with LOCAL_RANK and wrap in try/except\n* test: verify grid-save failure does not abort training\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/0083a96655fbc11b30a23392a3d2f33511039525"
+        },
+        {
+          "sha": "a6d8914f1b8d3c7587bc3e35faea64502eae332a",
+          "author_date": "2026-04-09T19:51:09Z",
+          "message": "Fix segmentation multi-GPU DDP crash: find_unused_parameters + fused AdamW precision gate (#947)\n\n* DDP+segmentation find_unused_parameters and fused AdamW precision gate\n* restore TestPredictStep class declaration and improve fused check assertion\n* refactor: extract use_fused to _use_fused_optimizer property\n* test: add clip_gradients precision gate coverage\n* test: assert ddp_spawn+segmentation preserves find_unused_parameters\n* chore: add CHANGELOG entries for multi-GPU DDP crash fixes\n* test: add docstring example for fused optimizer precision gate\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/a6d8914f1b8d3c7587bc3e35faea64502eae332a"
+        },
+        {
+          "sha": "de022a32ac29d3124c55bdd059e272f0c5221ae3",
+          "author_date": "2026-04-10T07:26:52Z",
+          "message": "fix: reconcile cherry-picked training regressions\n\nRestore compatibility for the training/grid-save and pretrain-weight regression tests.\n\n- warn on deprecated SegmentationTrainConfig.num_select\n- align detr pretrain loading with fine-tuned checkpoint class counts\n- add config-native rfdetr.models.weights loader expected by tests\n- fix stale test expectations introduced by cherry-picked changes\n\nCo-authored-by: Codex <codex@openai.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/de022a32ac29d3124c55bdd059e272f0c5221ae3"
+        },
+        {
+          "sha": "a926351f87c9792760d5fd1bde68d2de6f137f62",
+          "author_date": "2026-04-10T08:41:04Z",
+          "message": "releasing `1.6.4`",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/a926351f87c9792760d5fd1bde68d2de6f137f62"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.6.5",
@@ -669,8 +881,63 @@
     {
       "release": "1.7.1",
       "previous_release": "1.7.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "bbcfc757fa982ac29ce8b93535fc57b3af382224",
+          "author_date": "2026-05-22T05:51:33Z",
+          "message": "rolling to the future `1.8.0.dev`",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/bbcfc757fa982ac29ce8b93535fc57b3af382224"
+        },
+        {
+          "sha": "fc3e968151db33d138fc3fcc350abc29d4c94a8e",
+          "author_date": "2026-05-25T17:41:24Z",
+          "message": "Add NumPy 2.x `np.complex_` compatibility shim in package init (#1064)\n\n* fix: add numpy complex alias compatibility in package init\n* test: strengthen numpy compatibility assertion and clarify shim docs\n* refactor: clean numpy shim typing and side-effect import test\n* refactor: tighten numpy module typing in init shim\n* refactor: simplify numpy compatibility handling, remove redundant alias setup\n* docs(__init__): add NumPy shim rationale comment and removal trigger\n* refactor(__init__): guard numpy.complex128 access in shim\n* test: fix np.complex_ shim test — use subprocess for fresh interpreter\n* docs(changelog): add Fixed entry for NumPy 2.x np.complex_ compatibility\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/fc3e968151db33d138fc3fcc350abc29d4c94a8e"
+        },
+        {
+          "sha": "20c7e1fc57fbd8981ba12123a271137ad10166db",
+          "author_date": "2026-05-25T20:01:44Z",
+          "message": "Handle starter checkpoints in `RFDETR.from_checkpoint` when `pretrain_weights` is unset-like (#1065)\n\n* fix: infer model variant from checkpoint filename when pretrain tag missing\n* test: cover starter-like checkpoint fallback paths\n* docs(detr): document 3-tier inference order in from_checkpoint\n* test(from_checkpoint): guard .strip() via whitespace-padded sentinel variants\n* test(try_instantiate): run starter-like checkpoint test once per class\n* refine(detr): log inferred model class when filename-fallback fires\n* test(from_checkpoint): cover Namespace-args path of filename fallback\n* fix(detr): use str(path) instead of os.fspath(path) for filename fallback\n* docs(detr): clarify sentinel set semantics for pretrain_weights fallback\n* test(from_checkpoint): cover ValueError and ImportError via filename-fallback\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Borda <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/20c7e1fc57fbd8981ba12123a271137ad10166db"
+        },
+        {
+          "sha": "2c632110ac16cd06fe26c43bfc53eec6840d8940",
+          "author_date": "2026-05-26T20:51:17Z",
+          "message": "test(tflite): mask ai_edge_litert in the interpreter mock fixture (#1069)\n\n* fix failing tests\n* docs(tests): expand _mock_tflite_runtime inline comment\n* docs(tests): update _mock_tflite_runtime fixture docstring\n* refactor(tests): extract _AI_EDGE_LITERT_MASK constant\n* rename test_uses_tflite_runtime_when_available\n* add allocate_tensors assert to tf-fallback test\n* add ai_edge_litert happy-path tests\n* add ImportError test for all-backends-absent case\n\n---------\n\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/2c632110ac16cd06fe26c43bfc53eec6840d8940"
+        },
+        {
+          "sha": "384ef5ec939e2758065c9a065b27b15c75f1d369",
+          "author_date": "2026-05-27T22:12:46Z",
+          "message": "tests: add regression and integrity checks for benchmark download helpers (#1075)\n\n* tests: add regression and integrity checks for benchmark download helpers\n* fix(tests): wire _coco_val_images_complete into download fixture\n* feat(tests): implement _nonempty_file_exists and TestNonemptyFileExists\n* test(develop): add lock timeout, path-traversal, and threshold boundary tests\n* docs(_develop): tighten _coco_val_images_complete — .jpg filter and OSError raises\n* refactor(tests): directly import benchmark helpers from `_develop` and simplify calls\n\n---------\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/384ef5ec939e2758065c9a065b27b15c75f1d369"
+        },
+        {
+          "sha": "e67a85885092968474c4f1858a2bbf358c42677c",
+          "author_date": "2026-05-27T22:13:34Z",
+          "message": "fix(segm): keep grad_input fp32 in bf16-mixed AMP backward (#1076)\n\nFix: remove the .to(dtype=input_dtype) cast; grad_input stays in\nweight.dtype (fp32), matching standard F.conv2d backward behaviour.\n\n- Add regression test driving backward with bf16 saved activation to pin the dtype contract on CPU without a GPU\n- Update AGENTS.md CPU/GPU worker counts\n\n---\n\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/e67a85885092968474c4f1858a2bbf358c42677c"
+        },
+        {
+          "sha": "b4e318f7e6c7c9d799cf4479403c99413f65452b",
+          "author_date": "2026-05-27T22:28:14Z",
+          "message": "test(datasets): add output-size regression tests (#1077)\n\nAdds TestMakeCocoTransformsOutputSize to test_augmentations.py — 7 tests\nthat verify make_coco_transforms and make_coco_transforms_square_div_64\nactually resize high-resolution images (1920×1080) to the target resolution,\nnot emit original dimensions.\n\nPrior tests only verified pipeline structure and routing (which function is\ncalled, how many wrappers exist). No test executed transforms on real images\nand checked output tensor shape.\n\nDiscovered during writing: LongestMaxSize(1333) resizes to exactly 1333px\n(not a cap); for 1920×1080 the val pipeline produces 750×1333, not 640×1138.\nTests reflect actual Albumentations 1.4.x behavior.\n\n---------\n\nCo-authored-by: Claude Code <noreply@anthropic.com>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/b4e318f7e6c7c9d799cf4479403c99413f65452b"
+        },
+        {
+          "sha": "47f668ebd6afcaff36058fa2ab4cb65faed3786e",
+          "author_date": "2026-05-28T16:07:01Z",
+          "message": "fix(training): make `_use_fused_optimizer` doctest HW-deterministic (#1081)\n\n- Replace trainer-stub doctest with patch(\"torch.cuda.is_available\", return_value=False); stub was bypassed on CPU (is_available short-circuits) but hit Lightning trainer property validation on GPU, re-surfacing as AttributeError: 'RFDETRModelModule' object has no attribute '_use_fused_optimizer'\n- Add test_fused_optimizer_disabled_when_cuda_unavailable to TestConfigureOptimizers, covering the CUDA-unavailable path that was only validated by the broken doctest\n\n---\n\nCo-authored-by: Claude Code <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/47f668ebd6afcaff36058fa2ab4cb65faed3786e"
+        },
+        {
+          "sha": "6e1620e751f3c814ead8648cada51ceff9029e5c",
+          "author_date": "2026-05-28T18:31:55Z",
+          "message": "releasing `1.7.1`",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/6e1620e751f3c814ead8648cada51ceff9029e5c"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.8.0",
@@ -705,14 +972,256 @@
     {
       "release": "1.9.1",
       "previous_release": "1.9.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "9898b3954a3add735a392cab1754ab3e03084782",
+          "author_date": "2026-07-30T07:48:35Z",
+          "message": "fix(config): `keypoint_flip_pairs` accepts None (#1248)\n\n* fix(config): keypoint_flip_pairs accepts None\n* fix(config): revert keypoint_flip_pairs to non-optional list default\n* docs: fix keypoint_flip_pairs default, add CHANGELOG entry\n* test(datasets): close keypoint_flip_pairs coverage gaps\n* refactor(datasets): extract shared keypoint_flip_pairs resolver\n\n---------\n\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/9898b3954a3add735a392cab1754ab3e03084782"
+        },
+        {
+          "sha": "d6d869dc96e32512d2710c277962c51d598d7de9",
+          "author_date": "2026-07-30T08:02:45Z",
+          "message": "docs(export): fix ONNX Runtime example missing decode step (#1251)\n\nRaw session.run output was unpacked directly as boxes/labels with no\nsigmoid, no background-column drop, and no name-based output matching.\nAt num_classes=3 the logits dim (num_classes+1=4) collides with the\nbox dim (4, cxcywh), so shape-based disambiguation silently swaps\ntensors and produces garbage boxes (#1247). Adds the missing decode\nand a warning about the collision, mirroring export/_onnx/inference.py.\n\n---------\n\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/d6d869dc96e32512d2710c277962c51d598d7de9"
+        },
+        {
+          "sha": "11dafd5511a32ab40945fb3409441510f71c9530",
+          "author_date": "2026-07-30T19:02:12Z",
+          "message": "fix: slight correction needed for \"uv sync\" to work (#1253)\n\n* slight correction needed for \"uv sync\" to work\n\n---------\n\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/11dafd5511a32ab40945fb3409441510f71c9530"
+        },
+        {
+          "sha": "5826594e5171b4e3f92107f80b42a9b9da76646c",
+          "author_date": "2026-07-31T08:36:15Z",
+          "message": "fix(docs): correct keypoint Params (126.4 → 40.7) and add Params to keypoint benchmarks (#1258)\n\n* fix(docs): correct keypoint Params (126.4 -> 40.7) and add Params to keypoint benchmarks\n\nThe keypoint model tables listed 126.4 M parameters for RFDETRKeypointPreview.\nThat is RF-DETR-XL's parameter count, apparently copied across because the\nkeypoint checkpoint is named rf-detr-keypoint-preview-xlarge.pth.\n\nThe real count is 40.7 M, confirmed three ways:\n  - instantiated nn.Module:            40,724,248 params\n  - released checkpoint tensors:       40,851,564 params\n  - checkpoint file size:              163.7 MB, all fp32 -> ~40.9 M params\n\nThe counting method (sum of p.numel()) was validated against the already\npublished detection numbers and reproduces them exactly: N 30.47->30.5,\nS 32.11->32.1, M 33.69->33.7, L 33.93->33.9.\n\nAlso adds a Params (M) column to the keypoint benchmark comparison tables.\nYOLO figures are deployment (fused) counts and match Ultralytics' published\nvalues for all ten models; note that raw training-mode counts for YOLO26-pose\nare substantially higher (e.g. 3.68 M vs 2.9 M for the nano) because the\nYOLO26 head carries training-only structure, including a RealNVP flow model,\nthat folds away at deployment. RF-DETR contains no BatchNorm, so its fused\nand unfused counts are identical.\n\nFinally, documents the accuracy methodology alongside the existing latency\nnote: COCO accuracy is measured in-house for every model with pycocotools in\nSAB over the full 5,000-image val2017 split, so all rows are directly\ncomparable and may differ from vendor-reported figures.\n\nCo-Authored-By: Claude <noreply@anthropic.com>\n\n* docs: add SAM 3's reported RF100-VL result to the detection benchmarks (#1261)\n\nSAM 3 reports a fully fine-tuned RF100-VL result of 61.6 AP in Table 36 of its\nappendix (arXiv:2511.16719). This is the same fully-supervised setting as our\nRF100VL columns, and is distinct from the 15.2 zero-shot / 36.5 10-shot numbers\nin the paper's main few-shot table.\n\nProtocol alignment is confirmed by a shared anchor: SAM 3's Table 36 lists\nLW-DETR-m at 59.8 on RF100-VL, which matches both our own measurement and\nTable 7 of the RF100-VL paper. So SAM 3's \"All\" column is directly comparable\nto our RF100VL AP50:95 column.\n\nFor context, this places RF-DETR-L (62.2 AP, 33.9 M params) ahead of SAM 3\n(61.6 AP, ~850 M params) on RF100-VL at roughly 25x fewer parameters, with\nRF-DETR-XL and 2XL ahead of both.\n\nThe row is marked with a dagger and carries an explicit footnote, because\nunlike every other row in these tables it is quoted from the authors' paper\nrather than measured by us in SAB. The benchmark methodology statements are\namended accordingly so the \"measured in-house in SAB\" claim stays accurate.\n\nParameter count (~850 M: ~450 M vision + ~300 M text encoders + ~100 M\ndetector/tracker) is the figure stated in the SAM 3 paper.\n\nDashes mark COCO AP, RF100VL AP50 and latency, which SAM 3 does not report\nunder this protocol.\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/5826594e5171b4e3f92107f80b42a9b9da76646c"
+        },
+        {
+          "sha": "592b3567a845d2d8fa053ad80c57c238a45e2a18",
+          "author_date": "2026-07-31T08:37:09Z",
+          "message": "docs(llms): add keypoint coverage to llms.txt and llms-full.txt (#1260)\n\nBoth LLM-facing files describe RF-DETR as an object detection and instance\nsegmentation model only. They have \"Run Detection\" and \"Run Segmentation\"\nsections and detection/segmentation benchmark tables, but no keypoint content\nof any kind - no task listing, no usage snippet, no benchmark row, no API\nreference link.\n\nThese files are served at /llms.txt and /llms-full.txt specifically so that\nassistants can ingest them, so an assistant answering \"does RF-DETR support\nkeypoint detection?\" from these files would answer no - while the project's\nown title is \"Real-Time SOTA Object Detection, Instance Segmentation, and\nKeypoint Detection\".\n\nNeither file is generated; publish-docs.yml copies them verbatim to the\ngh-pages root, so they drifted when keypoint support was added.\n\nllms.txt: keypoints added to the summary line, task list, Getting Started,\nBenchmarks, Model Selection Answers, and API Reference.\n\nllms-full.txt: keypoints added to the summary line, Overview, licensing, plus\na new \"Run Keypoints\" section and a \"Keypoint Results\" benchmark table.\n\nAll numeric cells were cross-checked against the README tables; the existing\ndetection and segmentation rows already matched exactly and are unchanged.\nEvery new documentation URL was verified to resolve to a real page.\n\nNote: the keypoint Params value used here (40.7 M) is the corrected figure\nfrom #1258. Until that PR lands, README.md still shows the incorrect 126.4 M\n(which is RF-DETR-XL's parameter count).\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/592b3567a845d2d8fa053ad80c57c238a45e2a18"
+        },
+        {
+          "sha": "32c0ef28682647e49a120280b107b66247c68680",
+          "author_date": "2026-07-31T15:48:08Z",
+          "message": "perf: 2.5x faster ExecuTorch XNNPACK inference (#1262)\n\n* feat(perf): recombine addmm into aten.linear in ExecuTorch lowering\n* fix(export): scope AddmmToLinear import to non-QNN path\n\n---------\n\nCo-authored-by: Claude Fable 5 <noreply@anthropic.com>\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: chmjkb <chmjkb@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/32c0ef28682647e49a120280b107b66247c68680"
+        },
+        {
+          "sha": "37aef21a123385f3076dadfac98d57a536be25f5",
+          "author_date": "2026-07-31T17:50:17Z",
+          "message": "fix(augment): accept a scalar or a pair for Kornia range params (#1255)\n\nAlbumentations accepts either form for these, and _make_rotate already\ntreats 'limit' the same way, but three builders indexed or took len() of\nthe value directly. A config that is valid on the CPU path raised a bare\nTypeError from inside the Kornia builder:\n\n  GaussianBlur sigma=1.5        -> TypeError: object of type 'float' has no len()\n  GaussianBlur blur_limit=(3,7) -> TypeError: unsupported operand type(s) for %\n  GaussNoise   std_range=0.05   -> TypeError: 'float' object is not subscriptable\n\nAdd a shared _as_range helper and use it for 'sigma' and 'std_range'.\n'blur_limit' takes the upper bound of a pair, since Kornia takes a single\nkernel size, matching how the GaussNoise builder already resolves its\nrange.\n\n* fix(augment): harden Kornia range-param builders (review follow-ups)\n* test(augment): cover Kornia range-param edge cases (review follow-ups)\n* docs(augment): document Kornia range-param shapes and asymmetry (review follow-ups)\n\n---------\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/37aef21a123385f3076dadfac98d57a536be25f5"
+        },
+        {
+          "sha": "47736af99cdbbcaa14e947fad7713b8fe5bc336a",
+          "author_date": "2026-07-31T19:28:52Z",
+          "message": "perf(inference): skip upsampling masks the caller's threshold discards (#1265)\n\n* perf(inference): skip upsampling masks the caller's threshold discards\n* perf(inference): coalesce mask-filter selects into one device sync\n* docs(inference): note the mask pre-filter predicate invariant\n* test(postprocess): exercise chunked upsample under score_threshold\n* test(inference): add predict()-level mask pre-filter equivalence\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/47736af99cdbbcaa14e947fad7713b8fe5bc336a"
+        },
+        {
+          "sha": "2bb3f04433a1bd4f41c280385c0f6c288f306cf3",
+          "author_date": "2026-08-03T17:00:10Z",
+          "message": "fix(deps): gate onnx and executorch extras to interpreters with wheels (#1267)\n\n* fix(deps): gate onnx and executorch extras to interpreters with wheels\n* docs: fix py3.14 wording in extras deps notes\n* ci(deps): install-plan per-extra matrix jobs\n* ci(deps): derive install-plan extras dynamically\n* ci(deps): install-plan covers all extras\n* ci(deps): drop redundant tflite-resolution job\n* ci(deps): add aggregate gate for the install-plan matrix\n* ci(deps): exclude tensorrt/3.10 and xla/3.14 from install-plan\n\n---------\n\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/2bb3f04433a1bd4f41c280385c0f6c288f306cf3"
+        },
+        {
+          "sha": "7d2c14f668dbe5a77dc76f8e0cf028c570c9e949",
+          "author_date": "2026-08-03T17:45:58Z",
+          "message": "perf(postprocess): pick selected rows without materialising repeated index tensors (#1268)\n\n* perf: pick selected rows without materialising repeated index tensors\n* test: pin dupe-index selection paths\n* test: dupe/out-of-order box pin on the production _gather_and_scale_boxes path (finding: shipped box path untested, only the benchmark.py twin was)\n* test: mask dupe through the upsample=True branch, straddling _MASK_CHUNK (finding: mask dupe test covered only upsample=False)\n* test: keypoint dupe/out-of-order through the class-filtering decode path (finding: keypoint dupe coverage stopped at the raw gather helper)\n* test: CUDA-parity gpu-marked box equivalence (finding: CUDA parity never directly executed)\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/7d2c14f668dbe5a77dc76f8e0cf028c570c9e949"
+        },
+        {
+          "sha": "1a4a49e22a93f86837f30d18135f0b55d52ffee8",
+          "author_date": "2026-08-03T19:07:04Z",
+          "message": "fix(export): match predict()'s antialias=False resize in ONNX/TFLite inference, benchmark and INT8 calibration (#1269)\n\n* fix(export): match predict()'s antialias=False resize in ONNX/TFLite inference, benchmark and INT8 calibration\n* docs(export): fix stale ONNX resize docstring\n* docs: add CHANGELOG entry for export resize fix\n* test(export): add ONNX antialias discriminator\n* refactor(export): close Image.open via with\n* refactor(export): use contextlib.suppress for torch detection\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: jirka <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>\nCo-authored-by: OpenAI Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/1a4a49e22a93f86837f30d18135f0b55d52ffee8"
+        },
+        {
+          "sha": "5dd63a841fcb941c25e5e41ff0b573b29c14bdee",
+          "author_date": "2026-08-03T19:07:56Z",
+          "message": "chore(pre-commit): ⬆ pre_commit autoupdate (#1274)\n\nupdates:\n- [github.com/JoC0de/pre-commit-prettier: v3.9.4 → v3.9.6](https://github.com/JoC0de/pre-commit-prettier/compare/v3.9.4...v3.9.6)\n- [github.com/astral-sh/ruff-pre-commit: v0.15.20 → v0.16.1](https://github.com/astral-sh/ruff-pre-commit/compare/v0.15.20...v0.16.1)\n- [github.com/codespell-project/codespell: v2.4.2 → v2.4.3](https://github.com/codespell-project/codespell/compare/v2.4.2...v2.4.3)\n\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/5dd63a841fcb941c25e5e41ff0b573b29c14bdee"
+        },
+        {
+          "sha": "4b1804922d21af695292d2b359d6448a64566fea",
+          "author_date": "2026-08-03T19:08:35Z",
+          "message": "refactor: enable mypy strict checking for rfdetr.variants (#1270)\n\nRFDETRLarge.get_model_config omitted the **kwargs annotation that the base\nclass in rfdetr.detr already declares, tripping no-untyped-def under strict\nmode. Align the override with the base signature and drop rfdetr.variants\nfrom the ignore_errors override block in pyproject.toml.\n\nPart of #564.",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/4b1804922d21af695292d2b359d6448a64566fea"
+        },
+        {
+          "sha": "afc455ce16fbbd8a284c271c8b7f2e80b8335022",
+          "author_date": "2026-08-03T19:30:16Z",
+          "message": "refactor: enable mypy strict checking for rfdetr.assets.model_weights (#1273)\n\nModelWeightsBase is an Enum carrying a ModelWeightAsset payload assigned via\nobj._value_ in __new__, so mypy typed .value as Any and every accessor reading\nthrough it returned Any from a function declared to return str.\n\nDeclare the payload type once as _value_: ModelWeightAsset and read the\naccessors through it. mypy does not propagate that annotation to .value, and\nEnum.value is a DynamicClassAttribute returning self._value_, so the two are\nthe same object at runtime. This avoids four cast() calls. The annotation has\nno assignment, so it does not become an enum member and has no runtime effect.\n\nAlso drop rfdetr.assets.model_weights from the ignore_errors override block in\npyproject.toml.\n\nPart of #564.",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/afc455ce16fbbd8a284c271c8b7f2e80b8335022"
+        },
+        {
+          "sha": "fe2de73803968bc057833f5d36a328eb44acf545",
+          "author_date": "2026-08-04T11:27:20Z",
+          "message": "ci(deps): harden optional dependency resolution\n\n- Resolve Python 3.10 ONNX Runtime with the same Windows-compatible support policy as v1.9.0.\n- Run the extras collector through its provisioned Python 3.11 interpreter and isolate extra install plans.\n\n---\n\nCo-authored-by: Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/fe2de73803968bc057833f5d36a328eb44acf545"
+        },
+        {
+          "sha": "0964e0d336c87e8e8eb72d92caf0c85ef2b211e6",
+          "author_date": "2026-08-04T11:28:27Z",
+          "message": "test(predict): cover threshold forwarding\n\n- Assert that predict forwards its public confidence threshold to post-processing before mask work.\n\n---\n\nCo-authored-by: Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/0964e0d336c87e8e8eb72d92caf0c85ef2b211e6"
+        },
+        {
+          "sha": "0ac7ea871b2be957a2a5709be71f5de5eaa41295",
+          "author_date": "2026-08-04T11:27:07Z",
+          "message": "releasing `1.9.1`\n\n- Align every public export and INT8 calibration example with predict preprocessing and robust TFLite output matching.\n- Restore accurate migration history; this patch release has no migration entry.\n\nCo-authored-by: Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/0ac7ea871b2be957a2a5709be71f5de5eaa41295"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.9.2",
       "previous_release": "1.9.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "4c538a61014739035fdd6cc887b753b945cdac91",
+          "author_date": "2026-08-04T14:05:13Z",
+          "message": "perf(eval): count labels on host in matching (#1276)\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/4c538a61014739035fdd6cc887b753b945cdac91"
+        },
+        {
+          "sha": "6a52bc30dbd5f2a91b24105eb780b6322f62c24f",
+          "author_date": "2026-08-05T09:53:12Z",
+          "message": "perf(transformer): avoid materialising repeated top-k gather indices in two-stage selection (#1278)\n\n* perf(transformer): avoid materialising repeated top-k gather indices in two-stage selection\n* test-coverage: narrow repeat-guard to index.stride(-1)==0; broaden group_detr/bbox_reparam/grad/GPU-parity coverage\n* style: replace hard-coded line refs with symbol names in test\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/6a52bc30dbd5f2a91b24105eb780b6322f62c24f"
+        },
+        {
+          "sha": "98397eb13394cee4ec08b9cc6804ee932e0a6335",
+          "author_date": "2026-08-05T20:52:16Z",
+          "message": "fix(detr): use the resolution-override config when building evaluate()'s datamodule (#1280)\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/98397eb13394cee4ec08b9cc6804ee932e0a6335"
+        },
+        {
+          "sha": "89e08db9f59f2bb5f9edb1c47c1490a10bfd3983",
+          "author_date": "2026-08-05T21:00:58Z",
+          "message": "perf(matcher): copy only the diagonal cost blocks to CPU before assignment (#1281)\n\n* perf: copy only the diagonal cost blocks to CPU before assignment\n* perf: release full-size finite_mask before diagonal-block extraction\n* fix: restore method-body indentation lost applying the finite-check suggestion\n* test: enable doctest for test helpers with targeted exclusions\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>\nCo-authored-by: jirka <6035284+borda@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/89e08db9f59f2bb5f9edb1c47c1490a10bfd3983"
+        },
+        {
+          "sha": "97ac4da9cab01727b77c833031c1de2bc040d3d3",
+          "author_date": "2026-08-05T21:02:25Z",
+          "message": "perf(postprocess): skip redundant CUDA presence checks in keypoint decode (#1282)\n\n* perf(postprocess): skip redundant CUDA presence checks in keypoint decode\n* fix(pre-commit): 🎨 auto format pre-commit hooks\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/97ac4da9cab01727b77c833031c1de2bc040d3d3"
+        },
+        {
+          "sha": "bee6b46c4827e8a53e94ffa9cb08c55b5c5a8e57",
+          "author_date": "2026-08-05T21:43:46Z",
+          "message": "fix: guard `ModelContext.reinitialize_detection_head` against cleared weights (#1283)\n\n* fix: guard ModelContext.reinitialize_detection_head against cleared weights\n\nModelContext.model is declared torch.nn.Module, and it is neither of those things.\n\nIt is an LWDETR. inference.py asserts isinstance(nn_model, LWDETR) immediately\nbefore the only construction site, and the class docstring already called it an\nLWDETR instance, but the declaration stayed loose.\n\nIt is also optional. RFDETR.inference(inplace=True) sets it to None to free the\nweights, and three methods already raise RuntimeError when they find it None:\nevaluate(), export(), and deploy_to_roboflow().\n\nreinitialize_detection_head() had no such guard, so calling it after an inplace\noptimization failed with AttributeError: 'NoneType' object has no attribute\n'reinitialize_detection_head'. It now raises RuntimeError with a message in the\nsame style as the three existing checks, and before args.num_classes is mutated,\nso a rejected call cannot leave the context half updated.\n\nDeclare the attribute LWDETR | None so the type says what the code already does.\n\nAdd tests for the guard. The method had no coverage: it has no in-package callers,\nand every existing test matching that name targets LWDETR.reinitialize_detection_head\nor RFDETRModule.reinitialize_detection_head instead. Both tests were checked against\nthe unguarded version and fail there with the original AttributeError.\n\n* docs: address review feedback on the cleared-weights guard\n\nName the owning method in the Raises docstring. ModelContext has no inference()\nof its own, so bare inference(inplace=True) was ambiguous; the class docstring\nalready refers to RFDETR.inference.\n\nGive the error an actionable recovery step, matching the shape RFDETR.export()\nalready uses for the same condition: state what failed, state that the weights\nare gone, say what to do about it.\n\nUpdate the test to match on the stable leading clause rather than the wording\nthat changed.",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/bee6b46c4827e8a53e94ffa9cb08c55b5c5a8e57"
+        },
+        {
+          "sha": "c8fd9f12541b9aebcec880153c2fa9b7a8603fa5",
+          "author_date": "2026-08-05T21:47:16Z",
+          "message": "refactor: enable mypy strict checking for rfdetr.datasets.yolo (#1288)\n\nSixteen of the 23 errors were the bare-ndarray type-arg case. Per the convention\nquestion on #564, these use the precise NDArray[dtype] form rather than a loose\nndarray[Any, Any], because yolo.py fixes the dtype at every construction site:\nnp.float32 for boxes, polygons and keypoints, np.int64 for class_id, bool for\nrasterized masks, and uint8 for decoded RGB images.\n\nThe remaining seven:\n\n- UnidentifiedImageError is imported from PIL directly. Reaching it through\n  Image.UnidentifiedImageError is an implicit re-export that strict mode rejects.\n- ConvertYolo.__call__ declares its dict and tuple parameters, and target_out is\n  declared dict[str, Tensor] to match what it is built from.\n- YoloDetection subclasses VisionDataset, which is Any because torchvision ships\n  no py.typed and is declared in the ignore_missing_imports block. Suppressed at\n  the class with a note, since there is nothing to fix on this side.\n- YoloDetection.__init__ declares its transforms parameter as Compose | None, and\n  __getitem__ declares its return type. The prepared image and target are bound to\n  their own names so the pre-transform and post-transform types stay distinct.\n- keypoint_schema is declared YoloKeypointSchema | None before the branch that\n  assigns it, since it is None on the non-keypoint path.\n\nThe dataset-selection branch now tests keypoint_schema is not None rather than\ninclude_keypoints. The two are equivalent (the schema is set exactly on that path,\nand a failed inference re-raises), the line above it already tests the schema the\nsame way, and stating it this way makes the non-None argument provable instead of\nrequiring an assert.\n\nAlso drop rfdetr.datasets.yolo from the ignore_errors override block.\n\nPart of #564.",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/c8fd9f12541b9aebcec880153c2fa9b7a8603fa5"
+        },
+        {
+          "sha": "9d8cc0ec3c34446c987a6e7295a30c8c9837cbe6",
+          "author_date": "2026-08-06T05:52:23Z",
+          "message": "fix(eval): log EMA validation metrics under `eval_ema_only` when the base metric is empty (#1289)\n\n* fix(eval): log EMA validation metrics under eval_ema_only when the base metric is empty\n* fix(eval): clear _ema_has_updates when map_metric_ema is reset\n* test(eval): cover PR #1289's 3 uncovered EMA-only branches\n* test(eval): assert _ema_has_updates clears after gate-True EMA compute\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: jirka <6035284+borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>\nCo-authored-by: OpenAI Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/9d8cc0ec3c34446c987a6e7295a30c8c9837cbe6"
+        },
+        {
+          "sha": "547c6270951ca98b9ce0933a5b58bf27162808dd",
+          "author_date": "2026-08-07T05:55:44Z",
+          "message": "refactor: enable mypy strict checking for rfdetr.detr (#1299)\n\nWith ModelContext.model declared correctly, rfdetr.detr has two errors left and\nneither one is in detr.py.\n\nexport_onnx is defined in rfdetr.export._onnx.exporter and re-imported by\nrfdetr.export.main, which no_implicit_reexport rejects. Make that re-export\nexplicit using the import-as form already used in rfdetr/datasets/__init__.py.\nImporting it straight from its defining module also satisfies mypy but silently\nbypasses the tests that patch rfdetr.export.main.export_onnx, so 25 of them fail.\n\nDeclare roboflow in the ignore_missing_imports override block, alongside the other\nthird-party packages that ship no stubs.\n\nAlso drop rfdetr.detr from the ignore_errors override block in pyproject.toml.\n\nPart of #564.",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/547c6270951ca98b9ce0933a5b58bf27162808dd"
+        },
+        {
+          "sha": "1077983518a14c824733b977aa473945ff8f8fd3",
+          "author_date": "2026-08-07T13:41:01Z",
+          "message": "refine(repro): enable deterministic algorithms (#1307)\n\n- seed_all now calls torch.use_deterministic_algorithms(True, warn_only=True) after the cuDNN flags, so every op with a deterministic kernel uses it and the rest warn at execution time instead of raising\n- guard the call with try/except RuntimeError, logging via get_logger so a failure to enable determinism degrades to a warning rather than propagating out of seed_all\n- import get_logger in reproducibility\n- test_train_convergence_segmentation: raise epochs 5 -> 6 and update the docstring epoch references, widening the convergence margin above GPU run-to-run noise\n\n---------\n\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>\nCo-authored-by: Claude Opus 4.8 (1M context) <noreply@anthropic.com>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/1077983518a14c824733b977aa473945ff8f8fd3"
+        },
+        {
+          "sha": "fb2fdfbbfbd411628baf7323770a2f3112773c44",
+          "author_date": "2026-08-07T15:59:44Z",
+          "message": "fix(datasets): retry corrupt COCO zip downloads (#1306)\n\n- validate downloaded size vs Content-Length; a truncated transfer raises BadZipFile before extraction (new _fetch_zip)\n- retry download+extract up to 3x on BadZipFile/zlib.error/OSError with linear backoff\n- always unlink the partial zip on failure and success, so a corrupt archive never persists for the next run\n- split extraction into _extract_zip (path-traversal guard unchanged)\n- import torch lazily inside _SimpleDataset.__getitem__ to keep it off the module-load path\n\n---------\n\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/fb2fdfbbfbd411628baf7323770a2f3112773c44"
+        },
+        {
+          "sha": "97e5ab71a0d826eb2a19c299793d4dde0cf799c9",
+          "author_date": "2026-08-07T18:44:14Z",
+          "message": "perf(matcher): compute detection-only cost matrix padded to max(T_i), not sum(T_i) (#1297)\n\n- Improved Hungarian matching performance by using a compact detection cost matrix that scales with per-image target counts while preserving assignment behavior and falling back to the full path for unsafe or incompatible inputs\n- Improved matcher validation for target dtype/device mismatches, out-of-range labels, non-finite relevant costs, extreme coordinates, grouped-query constraints, and float64 inputs while preserving established full-path behavior\n- Refactored focal classification cost calculation so compact and full Hungarian matching paths share the same formula\n- Fixed concurrent COCO dataset downloads by serializing access per asset, using process-unique staging files, retrying truncated archives, cleaning up partial downloads, and avoiding redundant downloads after another process completes extraction\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/97e5ab71a0d826eb2a19c299793d4dde0cf799c9"
+        },
+        {
+          "sha": "35f50e2009b5d29e5a1a196f9713993a58efc9d4",
+          "author_date": "2026-08-07T20:24:33Z",
+          "message": "fix(weights): don't warn about the deterministic `_kp_active_mask` buffer as a missing weight (#1302)\n\nFixed false-positive partial-load warnings for missing _kp_active_mask keypoint schema buffers while preserving warnings for similarly named parameters and unexpected checkpoint keys.\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>\nCo-authored-by: OpenAI Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/35f50e2009b5d29e5a1a196f9713993a58efc9d4"
+        },
+        {
+          "sha": "a80b0e29a2dca754225c485f8c9bdb0cd26bae24",
+          "author_date": "2026-08-07T22:08:01Z",
+          "message": "fix(weights): only warn about the legacy query fallback when it actually truncates (#1301)\n\n* only warn about the legacy query fallback when it actually truncates\n* comments+predicate: reword overclaim comments, cover BestModelCallback, gate scan on cheap guards\n* tests: pin false-negative, mirror TypeError guard, cover fewer-rows and mixed-tensor cases\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>\nCo-authored-by: OpenAI Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/a80b0e29a2dca754225c485f8c9bdb0cd26bae24"
+        },
+        {
+          "sha": "055c7c29be4e16bda17cbfff60f00f53ac3e53d2",
+          "author_date": "2026-08-07T22:11:26Z",
+          "message": "refactor: enable mypy strict checking for rfdetr.datasets.save_grids (#1304)",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/055c7c29be4e16bda17cbfff60f00f53ac3e53d2"
+        },
+        {
+          "sha": "8424ad72acd2241707f04e0eda8b58cb8b82f1c7",
+          "author_date": "2026-08-10T10:10:33Z",
+          "message": "fix(coco): drop unannotated grouping categories (#1303)\n\n- Fixed COCO category mapping to ignore unannotated grouping categories used only as supercategory roots, preventing extra output classes and keeping class names, labels, and category IDs aligned.\n- Updated COCO class-count auto-detection to use the same filtered category set, so hierarchical datasets train with the correct number of classes.\n- Improved category filtering for split-local datasets, multiple roots, self-parent relationships, zero-annotation datasets, and normalized category IDs while preserving annotated parent categories.\n- Updated COCO class loading to share the same filtering behavior and report skipped grouping categories.\n- Preserved keypoint category mapping behavior unchanged.\n\n---------\n\nCo-authored-by: claude[bot] <209825114+claude[bot]@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/8424ad72acd2241707f04e0eda8b58cb8b82f1c7"
+        },
+        {
+          "sha": "77c820068b82498ae7c19b611c95b9dd13a5bca0",
+          "author_date": "2026-08-10T11:00:34Z",
+          "message": "fix(inference): normalise the index-less cuda device before the deferred-move guard compares it (#1311)\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/77c820068b82498ae7c19b611c95b9dd13a5bca0"
+        },
+        {
+          "sha": "80b6ad57110dde4811756c67070e19a13fb1a136",
+          "author_date": "2026-08-10T15:48:52Z",
+          "message": "perf(matcher): vectorize the compact-path safety gate's box/label sweeps (#1312)\n\n* perf(matcher): vectorize the compact-path safety gate's box/label sweeps\n* test(models): cover finite target-box fallback\n* fix(models): guard mixed target-label dtypes\n* fix(backbone): narrow nullable classifier label count\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: jirka <6035284+borda@users.noreply.github.com>\nCo-authored-by: Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/80b6ad57110dde4811756c67070e19a13fb1a136"
+        },
+        {
+          "sha": "3ec72e25b4cb8817813abeed4e5327c008564aad",
+          "author_date": "2026-08-10T17:47:48Z",
+          "message": "perf(inference): pin CPU image tensors before the CUDA transfer in predict() (#1313)\n\n* perf(inference): pin CPU image tensors before the CUDA transfer in predict()\n* test(tests): harden pinned transfer verification\n* chore(tests): remove standalone transfer benchmark\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: jirka <6035284+borda@users.noreply.github.com>\nCo-authored-by: Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/3ec72e25b4cb8817813abeed4e5327c008564aad"
+        },
+        {
+          "sha": "cad85afa8c66e37826a041f996be1801ccaa4afd",
+          "author_date": "2026-08-10T19:27:32Z",
+          "message": "fix(training): leave completed Rich epoch bars in terminal history without corrupting them (#1316)\n\n_RedirectAwareStreamHandler now re-resolves the current sys.stdout on\nevery emit(), which is the whole point of the fix (following Rich's\nredirect while RichProgressBar is live) — but it also means logger.info()\ncorrectly reaches pytest-doctestplus's own stdout capture during a\ndoctest, where the previous stale-reference bug happened to hide it.\n\nAlbumentationsWrapper.from_config() logs \"Built N Albumentations\ntransforms from config\" on every call, and two doctests call it without\ndeclaring that as expected output, so CI failed on all CPU-tests matrix\njobs. Declared it with `# doctest: +ELLIPSIS` for the timestamp.\n\n- Add stdout-none fallback coverage for redirect-aware handlers\n- Align Rich logger tests and doctest directive conventions\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: jirka <6035284+borda@users.noreply.github.com>\nCo-authored-by: Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/cad85afa8c66e37826a041f996be1801ccaa4afd"
+        },
+        {
+          "sha": "cbaa59e7e183bf983f93de006ed19a67025628d6",
+          "author_date": "2026-08-10T23:25:30Z",
+          "message": "fix(training): restore callback state when resuming from `BestModelCallback`'s checkpoints (#1318)\n\n- resume EMA updates and deduplicate EMA checkpoint state\n- clarify resume contract, add regression coverage, and clear mypy gate\n- Refactor matcher: ensure explicit typing for cost tensor.\n- Harden EMA setup: validate `device` type during initialization.\n- Switch `ipywidgets` import to dynamic `importlib` for robustness.\n\n---------\n\nCo-authored-by: Jesús Royeth <JESUSROYETH@users.noreply.github.com>\nCo-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>\nCo-authored-by: jirka <6035284+borda@users.noreply.github.com>\nCo-authored-by: Codex <codex@openai.com>",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/cbaa59e7e183bf983f93de006ed19a67025628d6"
+        },
+        {
+          "sha": "d4e60f7e330b3a4f5ab5d892880be36c34e2ef77",
+          "author_date": "2026-08-11T08:35:55Z",
+          "message": "fix(training): remove stale mypy type: ignore in module_data.py\n\nsupervision 0.30.0's LabelAnnotator.annotate() now types ndarray scene\ninput correctly, making the assignment/arg-type ignores from #1197 dead\nweight — mypy flags them as unused-ignore.",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/d4e60f7e330b3a4f5ab5d892880be36c34e2ef77"
+        },
+        {
+          "sha": "2c05ea2e95bc0234b66137c45be79474be7dd3c2",
+          "author_date": "2026-08-11T06:20:04Z",
+          "message": "releasing `1.9.2`",
+          "html_url": "https://github.com/roboflow/rf-detr/commit/2c05ea2e95bc0234b66137c45be79474be7dd3c2"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.9.3",

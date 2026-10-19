@@ -1396,20 +1396,56 @@
       "ignored_reason": null
     },
     {
-      "release": "v2.48.1",
-      "previous_release": "v2.48.0",
+      "release": "v1.2",
+      "previous_release": "v1.1",
       "commits": [
         {
-          "sha": "6fd043518de0d02e0904b140cf9e1cb9aaf58254",
-          "author_date": "2025-10-17T05:19:53Z",
-          "message": "Fixes file type filter for Python files (#545)\n\nCo-authored-by: Mehmet Aksoy <mehmet.aksoy@audivo.com>",
-          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/6fd043518de0d02e0904b140cf9e1cb9aaf58254"
+          "sha": "18a3bfcb1fa7b5c7c61a6537e722d2182f291985",
+          "author_date": "2018-05-15T05:03:55Z",
+          "message": "Add a note regarding how to put additional files in the projects root directory",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/18a3bfcb1fa7b5c7c61a6537e722d2182f291985"
         },
         {
-          "sha": "be7cefada8e625f016b29017169cd81700d05825",
-          "author_date": "2025-10-17T05:27:04Z",
-          "message": "Bump to 2.48.1",
-          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/be7cefada8e625f016b29017169cd81700d05825"
+          "sha": "af9fca55d36f7a9675a2bdde36fa8a8349f321fc",
+          "author_date": "2018-05-16T04:59:56Z",
+          "message": "Partial fix for issue #10\n - Random port is generated\n - If port is already taken, try again\n - After 10 failed attempts the script will give up and provide a message",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/af9fca55d36f7a9675a2bdde36fa8a8349f321fc"
+        },
+        {
+          "sha": "e2d99b9e99c49683dda975c908b6c16cde796a9c",
+          "author_date": "2018-05-25T02:58:10Z",
+          "message": "Fixed calling outside project root",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/e2d99b9e99c49683dda975c908b6c16cde796a9c"
+        },
+        {
+          "sha": "08388cb48378b35e70f74200120170768cc717f3",
+          "author_date": "2018-05-25T08:54:39Z",
+          "message": "When passing a file as an argument convert it to an absolute path",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/08388cb48378b35e70f74200120170768cc717f3"
+        },
+        {
+          "sha": "8752d75acfaaddbf9fbe4e7ac027a26e52cb66de",
+          "author_date": "2018-05-25T09:08:56Z",
+          "message": "Bring back fix for issue #10 (accidentally removed)\n ~ Different format; no more looping",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/8752d75acfaaddbf9fbe4e7ac027a26e52cb66de"
+        },
+        {
+          "sha": "e4f41c84d9ab7bf842d48431fa7665cb13351080",
+          "author_date": "2018-05-26T13:13:22Z",
+          "message": "Fixed port clash as the temp socket was never closed. Was reported in YouTube comments that this was occurring.",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/e4f41c84d9ab7bf842d48431fa7665cb13351080"
+        },
+        {
+          "sha": "bb750b035689ed995e7a79e5c733b91228e6fb11",
+          "author_date": "2018-05-27T11:50:17Z",
+          "message": "Attempting to add support for other characters by ignoring non-utf-8 characters when displaying output in the interface",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/bb750b035689ed995e7a79e5c733b91228e6fb11"
+        },
+        {
+          "sha": "3ce9a0e9c06627fdc0896a4c4c15e76f7f6ab134",
+          "author_date": "2018-05-27T12:01:27Z",
+          "message": "Updated requirements for future",
+          "html_url": "https://github.com/brentvollebregt/auto-py-to-exe/commit/3ce9a0e9c06627fdc0896a4c4c15e76f7f6ab134"
         }
       ],
       "ignored_reason": null

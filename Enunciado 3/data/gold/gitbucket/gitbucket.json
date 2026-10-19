@@ -1699,8 +1699,759 @@
     {
       "release": "1.7",
       "previous_release": "1.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "828688ddd07f4a4ec993c6f0d5018fec1b22677a",
+          "author_date": "2013-07-11T19:27:20Z",
+          "message": "(refs #33)Match committer by mail address.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/828688ddd07f4a4ec993c6f0d5018fec1b22677a"
+        },
+        {
+          "sha": "000afa1ed61e8ba8c706a1a3ee4d245b9206cebe",
+          "author_date": "2013-07-18T06:49:56Z",
+          "message": "Merge branch 'master' into #33_match-by-email\n\nConflicts:\n\tsrc/main/scala/util/JGitUtil.scala\n\tsrc/main/scala/view/helpers.scala\n\tsrc/main/twirl/repo/blob.scala.html\n\tsrc/main/twirl/repo/commit.scala.html\n\tsrc/main/twirl/repo/commits.scala.html\n\tsrc/main/twirl/repo/files.scala.html",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/000afa1ed61e8ba8c706a1a3ee4d245b9206cebe"
+        },
+        {
+          "sha": "c0713eaeda5aaed46a3d06caf59423e42107d0d0",
+          "author_date": "2013-07-18T06:55:59Z",
+          "message": "(refs #33)Use RequestCache instead of AccountService directly.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c0713eaeda5aaed46a3d06caf59423e42107d0d0"
+        },
+        {
+          "sha": "9c14ddda18bf38b9d213447efcca559964421b29",
+          "author_date": "2013-09-27T13:13:23Z",
+          "message": "allow users to build a war on Linux",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9c14ddda18bf38b9d213447efcca559964421b29"
+        },
+        {
+          "sha": "8617f02b016d7de14153387f88bc94b68afcff15",
+          "author_date": "2013-09-30T18:56:19Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/8617f02b016d7de14153387f88bc94b68afcff15"
+        },
+        {
+          "sha": "9ecd1620408e6467e0c9b5e691770e864fdff897",
+          "author_date": "2013-09-30T18:56:48Z",
+          "message": "GitBucket 1.6 released.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9ecd1620408e6467e0c9b5e691770e864fdff897"
+        },
+        {
+          "sha": "09f8cff4c96ea7af6e141b1d73b4a74b49f15a49",
+          "author_date": "2013-09-30T18:58:40Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/09f8cff4c96ea7af6e141b1d73b4a74b49f15a49"
+        },
+        {
+          "sha": "4afbfcb016db0ef6c5e8eb4d3fe1df989fd1fdea",
+          "author_date": "2013-10-01T17:48:49Z",
+          "message": "(refs #106)Skip migration if the current version is illegal.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/4afbfcb016db0ef6c5e8eb4d3fe1df989fd1fdea"
+        },
+        {
+          "sha": "aef3c5c12168b28f46a89bd0738acb4adcbd2599",
+          "author_date": "2013-10-01T18:31:01Z",
+          "message": "(refs #106)Don't use DbStarter because GitBucket does not use tcp server and it also create connection for each transaction.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/aef3c5c12168b28f46a89bd0738acb4adcbd2599"
+        },
+        {
+          "sha": "b2e4853976d7e49f696f960834c128c3d4be2c0e",
+          "author_date": "2013-10-01T18:31:28Z",
+          "message": "Merge branch 'master' of https://github.com/takezoe/gitbucket",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b2e4853976d7e49f696f960834c128c3d4be2c0e"
+        },
+        {
+          "sha": "b74bff3b2e5815c062d4dbd7200d041562b46227",
+          "author_date": "2013-10-02T02:03:30Z",
+          "message": "Add org.h2.Driver.load().",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b74bff3b2e5815c062d4dbd7200d041562b46227"
+        },
+        {
+          "sha": "cf7caf55da449e53301234057074fa48aefe9816",
+          "author_date": "2013-10-02T15:57:17Z",
+          "message": "(refs #108)Add ZIP download button to the repository viewer tab.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/cf7caf55da449e53301234057074fa48aefe9816"
+        },
+        {
+          "sha": "70ca98d6a27ab94b9f132331593e988059fc1f4b",
+          "author_date": "2013-10-02T18:42:38Z",
+          "message": "(refs #38)Add reverting wiki from history.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/70ca98d6a27ab94b9f132331593e988059fc1f4b"
+        },
+        {
+          "sha": "d95bd20cbe14c14f0dad2a87f3bf8f399651477e",
+          "author_date": "2013-10-03T02:44:15Z",
+          "message": "Fix commit message for Wiki editing.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d95bd20cbe14c14f0dad2a87f3bf8f399651477e"
+        },
+        {
+          "sha": "40a52d5ad548a9780805f57adc952e517f04ae70",
+          "author_date": "2013-10-03T04:48:31Z",
+          "message": "Clone Wiki working repository if it does not exist before reverting.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/40a52d5ad548a9780805f57adc952e517f04ae70"
+        },
+        {
+          "sha": "f37eca7c6165c1c6646e4b609e3ae75cff7b2d02",
+          "author_date": "2013-10-03T04:49:09Z",
+          "message": "(refs #109)Change link color for absent Wiki pages.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f37eca7c6165c1c6646e4b609e3ae75cff7b2d02"
+        },
+        {
+          "sha": "537773f975b2a19ef4914f815f324390cada3342",
+          "author_date": "2013-10-03T05:02:54Z",
+          "message": "Add testcase example.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/537773f975b2a19ef4914f815f324390cada3342"
+        },
+        {
+          "sha": "c39703c61c1b07c09e5df164c29d095ce87330f7",
+          "author_date": "2013-10-03T12:58:38Z",
+          "message": "Fix bug dot not skip migration when first init",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c39703c61c1b07c09e5df164c29d095ce87330f7"
+        },
+        {
+          "sha": "ed713d80a9f730b8dc2eff7dbaa475bebb37dbf6",
+          "author_date": "2013-10-03T16:41:13Z",
+          "message": "Merge pull request #110 from tanacasino/fix/migration-skip\n\nFix bug dot not skip migration when first init",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ed713d80a9f730b8dc2eff7dbaa475bebb37dbf6"
+        },
+        {
+          "sha": "f4f2bf34fc900b156f70952169f9861126a881f2",
+          "author_date": "2013-10-03T18:48:51Z",
+          "message": "(refs #73)Add Wiki conflict detection and some fix.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f4f2bf34fc900b156f70952169f9861126a881f2"
+        },
+        {
+          "sha": "380cdbcf75b3250c0c13be5dfa397c7294b0ef08",
+          "author_date": "2013-10-03T19:17:30Z",
+          "message": "Add FileUtil#getContentType().",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/380cdbcf75b3250c0c13be5dfa397c7294b0ef08"
+        },
+        {
+          "sha": "17bc422e7a648541fd5681be9d00f647da35dd7b",
+          "author_date": "2013-10-04T00:32:32Z",
+          "message": "(refs #84)Add jquery.elastic and apply to issue and comment textarea.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/17bc422e7a648541fd5681be9d00f647da35dd7b"
+        },
+        {
+          "sha": "dd8f440be079bbc750813e79b46146181da724ad",
+          "author_date": "2013-10-04T18:39:46Z",
+          "message": "Add testcase.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/dd8f440be079bbc750813e79b46146181da724ad"
+        },
+        {
+          "sha": "fcadcb34a20db927a6993589d403e20f8a76105d",
+          "author_date": "2013-10-04T19:31:45Z",
+          "message": "Add testcase for Pagination.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/fcadcb34a20db927a6993589d403e20f8a76105d"
+        },
+        {
+          "sha": "cc1e0030dfcb582447f12ffe3000b4d5f3c15cb2",
+          "author_date": "2013-10-04T22:21:10Z",
+          "message": "Did a lot of design-optimizations\nmainly added icons and set correct bootstrap classes for forms, but also used some new fonts, provided via google webfonts",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/cc1e0030dfcb582447f12ffe3000b4d5f3c15cb2"
+        },
+        {
+          "sha": "d5a14482a6b78ef0722fd7596b5810a3e830b9df",
+          "author_date": "2013-10-05T03:58:26Z",
+          "message": "Fix for pull request #119 to take some part of design fix.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d5a14482a6b78ef0722fd7596b5810a3e830b9df"
+        },
+        {
+          "sha": "688bf645b4cb29e5f2603fd9390379009606d164",
+          "author_date": "2013-10-05T12:51:26Z",
+          "message": "Fix typo when assigning issues",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/688bf645b4cb29e5f2603fd9390379009606d164"
+        },
+        {
+          "sha": "0d55d6ef6b0ad41549a9f716369b4dc446be3068",
+          "author_date": "2013-10-05T16:51:50Z",
+          "message": "Merge pull request #122 from lucas-clemente/patch-1\n\nFix typo when assigning issues",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0d55d6ef6b0ad41549a9f716369b4dc446be3068"
+        },
+        {
+          "sha": "36880ace278bcbee3ddbd8bc1fcc612820ec17d6",
+          "author_date": "2013-10-06T06:56:47Z",
+          "message": "(refs #116)Add --host option to bind Jetty connector to the specified hostname.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/36880ace278bcbee3ddbd8bc1fcc612820ec17d6"
+        },
+        {
+          "sha": "1c5201dcf1a8149445d6189bbcd94a1f320b4fb1",
+          "author_date": "2013-10-06T07:03:25Z",
+          "message": "Merge branch 'buildXML' of https://github.com/ssogabe/gitbucket",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1c5201dcf1a8149445d6189bbcd94a1f320b4fb1"
+        },
+        {
+          "sha": "332246aed6b49bc332695d0868382a58eb309f99",
+          "author_date": "2013-10-06T08:40:10Z",
+          "message": "Add testcase for AvatarImageProvider.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/332246aed6b49bc332695d0868382a58eb309f99"
+        },
+        {
+          "sha": "f1476c52e6284b0b4371251a1b6d98cd82db8e48",
+          "author_date": "2013-10-06T09:30:43Z",
+          "message": "(refs #121)Optimize push performance for a lot of commit.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f1476c52e6284b0b4371251a1b6d98cd82db8e48"
+        },
+        {
+          "sha": "e457cfb212e3471aba4c54b69966752ae361d8c2",
+          "author_date": "2013-10-06T10:49:46Z",
+          "message": "Fix branch name.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e457cfb212e3471aba4c54b69966752ae361d8c2"
+        },
+        {
+          "sha": "b92b429ffaf315d47f1aa608fb41a432c3ee1255",
+          "author_date": "2013-10-06T12:31:55Z",
+          "message": "(refs #121)Configure maxIdleTime and soLingerTime.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b92b429ffaf315d47f1aa608fb41a432c3ee1255"
+        },
+        {
+          "sha": "e94411ebeb95e7a9cbfae45e65bc1d2af879afde",
+          "author_date": "2013-10-06T14:22:29Z",
+          "message": "(refs #121)Create WebHookPayload only when web hook has been registered.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e94411ebeb95e7a9cbfae45e65bc1d2af879afde"
+        },
+        {
+          "sha": "82ced9233a556d1a60dca5a42ed734e648c7cbac",
+          "author_date": "2013-10-06T14:23:04Z",
+          "message": "Remove debug code.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/82ced9233a556d1a60dca5a42ed734e648c7cbac"
+        },
+        {
+          "sha": "65e6de5ba436c5fc75757d3ffab2ef91a9796102",
+          "author_date": "2013-10-06T17:36:35Z",
+          "message": "(refs #120)URL encode branch name except '/'.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/65e6de5ba436c5fc75757d3ffab2ef91a9796102"
+        },
+        {
+          "sha": "035f3f9e02183cc533a5068ee083a0c9ca793592",
+          "author_date": "2013-10-06T20:12:03Z",
+          "message": "Add padding around repository readme content\n\nIt looks quite bad without padding.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/035f3f9e02183cc533a5068ee083a0c9ca793592"
+        },
+        {
+          "sha": "13bff2963e59633611ea3a2d577be6bfd716d0a1",
+          "author_date": "2013-10-06T21:11:09Z",
+          "message": "Add full name to account and use it to create commits (#125)\n\nThe Git practice is to use the full name when creating commits, not a\nuser name. This commit fixes that by introducing a fullName field to\nAccount and using it when creating commits.\n\nFor migrating from earlier versions, the user name is used as an initial\nvalue for the full name field.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/13bff2963e59633611ea3a2d577be6bfd716d0a1"
+        },
+        {
+          "sha": "8287c84dc7ee5fd022cb8e44a58ce298d48a1daf",
+          "author_date": "2013-10-07T01:42:39Z",
+          "message": "Merge pull request #126 from robinst/readme-padding\n\nAdd padding around repository readme content",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/8287c84dc7ee5fd022cb8e44a58ce298d48a1daf"
+        },
+        {
+          "sha": "c1f98ac4816c8e438f8b87fdf223abd5172384f0",
+          "author_date": "2013-10-07T14:55:27Z",
+          "message": "(refs #120) Use encodeBranchName to tab links",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c1f98ac4816c8e438f8b87fdf223abd5172384f0"
+        },
+        {
+          "sha": "f2d68be0a35d7c775c766546ce539941a2dec35d",
+          "author_date": "2013-10-07T16:16:52Z",
+          "message": "Merge pull request #134 from tanacasino/fix-link-use-urlencode\n\n(refs #120) Use encodeBranchName to tab links",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f2d68be0a35d7c775c766546ce539941a2dec35d"
+        },
+        {
+          "sha": "c3ec52b39129f87e0363fe443dca67a59fa2a172",
+          "author_date": "2013-10-07T18:07:33Z",
+          "message": "(refs #128)Add javacOptions to specify 6 as compilation target.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c3ec52b39129f87e0363fe443dca67a59fa2a172"
+        },
+        {
+          "sha": "5a19a307a9994cbd9352f46051c4aa8d01e14cf0",
+          "author_date": "2013-10-07T18:08:06Z",
+          "message": "Merge remote-tracking branch 'origin/master'",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/5a19a307a9994cbd9352f46051c4aa8d01e14cf0"
+        },
+        {
+          "sha": "49fbc5cb6266cc416f91b0d41d7ffb18ceee5591",
+          "author_date": "2013-10-07T22:34:02Z",
+          "message": "Change link text to 'Older'\n\nUpdates the link text for previous commits to read 'Older' and not 'Order'.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/49fbc5cb6266cc416f91b0d41d7ffb18ceee5591"
+        },
+        {
+          "sha": "fe23a5c6daf9779169a92a65ce16b04b5a4c25b2",
+          "author_date": "2013-10-08T01:21:30Z",
+          "message": "Merge pull request #136 from talios/patch-1\n\nChange link text to 'Older'",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/fe23a5c6daf9779169a92a65ce16b04b5a4c25b2"
+        },
+        {
+          "sha": "72b25591a5877fd8107c91329a7f66f05719fa60",
+          "author_date": "2013-10-08T18:11:27Z",
+          "message": "Resolve length issue in Slick.\nhttps://github.com/slick/slick/issues/170",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/72b25591a5877fd8107c91329a7f66f05719fa60"
+        },
+        {
+          "sha": "f74f2c47d3d9155ee209485648cd54fb5fb65c0d",
+          "author_date": "2013-10-09T00:59:30Z",
+          "message": "(refs #120) URL encode tag name\n\nURL encode tag name URL like branch name.\nAnd rename encodeBranchName to encodeRefName.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f74f2c47d3d9155ee209485648cd54fb5fb65c0d"
+        },
+        {
+          "sha": "f3507cf4659f1af6d7da3ba6789a208e7b4935d6",
+          "author_date": "2013-10-09T01:44:52Z",
+          "message": "(refs #117)Add build.properties to fix sbt version.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f3507cf4659f1af6d7da3ba6789a208e7b4935d6"
+        },
+        {
+          "sha": "84ce2cac8d81e7d418eb9f45bcc1f82b5b5d1377",
+          "author_date": "2013-10-09T02:09:06Z",
+          "message": "remove unnecessary code",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/84ce2cac8d81e7d418eb9f45bcc1f82b5b5d1377"
+        },
+        {
+          "sha": "195364223f13cf14031d3dd3d2bc586af6aba58c",
+          "author_date": "2013-10-09T04:17:50Z",
+          "message": "Merge pull request #140 from xuwei-k/remove-unnecessary-code\n\nremove unnecessary code",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/195364223f13cf14031d3dd3d2bc586af6aba58c"
+        },
+        {
+          "sha": "e667b6c139668ff4fb78621e610b08686059ce17",
+          "author_date": "2013-10-09T15:57:46Z",
+          "message": "(refs #139) Add info log for debugging LDAP Auth",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e667b6c139668ff4fb78621e610b08686059ce17"
+        },
+        {
+          "sha": "25bbc00ff35a3fd3b200437ecebc785f063addc4",
+          "author_date": "2013-10-10T10:00:56Z",
+          "message": "Display repository search field on pull request pages.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/25bbc00ff35a3fd3b200437ecebc785f063addc4"
+        },
+        {
+          "sha": "c16b89b0be4bc41be9c786e4142d4036a13f1d94",
+          "author_date": "2013-10-10T14:57:45Z",
+          "message": "(refs #99) Improved to configure the FROM field of the email.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c16b89b0be4bc41be9c786e4142d4036a13f1d94"
+        },
+        {
+          "sha": "8aab7a16c4dc312f986905601647e5c4380284c1",
+          "author_date": "2013-10-10T16:41:10Z",
+          "message": "Add note that installation on windows server IIS is possible",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/8aab7a16c4dc312f986905601647e5c4380284c1"
+        },
+        {
+          "sha": "cf79ac106933adeaadb99071b3dc10d8e9562948",
+          "author_date": "2013-10-10T17:42:07Z",
+          "message": "(refs #142)Fix NoSuchElementException for empty repository.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/cf79ac106933adeaadb99071b3dc10d8e9562948"
+        },
+        {
+          "sha": "79e560b7bfedfdb64ffd3004da0345010641b340",
+          "author_date": "2013-10-10T17:42:16Z",
+          "message": "add FileUtil.withTmpDir",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/79e560b7bfedfdb64ffd3004da0345010641b340"
+        },
+        {
+          "sha": "dae0d0ad4bbcdc860c408bab7cb999ff49024ac0",
+          "author_date": "2013-10-10T17:43:34Z",
+          "message": "use FileUtil.withTmpDir and FileUtil.using",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/dae0d0ad4bbcdc860c408bab7cb999ff49024ac0"
+        },
+        {
+          "sha": "b0c506969555d9de80595a69df036cde3a9db578",
+          "author_date": "2013-10-10T18:01:26Z",
+          "message": "Merge pull request #145 from xuwei-k/refactoring\n\nrefactoring",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b0c506969555d9de80595a69df036cde3a9db578"
+        },
+        {
+          "sha": "35d1b4ea3768062d87b81275dc0b714a0828c197",
+          "author_date": "2013-10-10T18:09:25Z",
+          "message": "(refs #142)Hide \"Fork\" button for repositories which have no commit.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/35d1b4ea3768062d87b81275dc0b714a0828c197"
+        },
+        {
+          "sha": "006e1bc61e29e1f0478e027bcfd8a10299978c2f",
+          "author_date": "2013-10-10T18:10:10Z",
+          "message": "Merge branch 'master' of https://github.com/takezoe/gitbucket",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/006e1bc61e29e1f0478e027bcfd8a10299978c2f"
+        },
+        {
+          "sha": "3351eabc4fc82e363985ab4453dbce302366c180",
+          "author_date": "2013-10-11T03:26:14Z",
+          "message": "add AccountServiceSpec",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/3351eabc4fc82e363985ab4453dbce302366c180"
+        },
+        {
+          "sha": "841d442f0d34b69719d26c173a93d56d34ff0511",
+          "author_date": "2013-10-11T17:54:33Z",
+          "message": "(refs #131)Don't create Dropzone if image has been registered.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/841d442f0d34b69719d26c173a93d56d34ff0511"
+        },
+        {
+          "sha": "faa6591d273708896305641aa0a76b8033be7c5f",
+          "author_date": "2013-10-12T11:41:56Z",
+          "message": "Fix activity message problem (related to #120)",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/faa6591d273708896305641aa0a76b8033be7c5f"
+        },
+        {
+          "sha": "5ba9c86bee06bcc9c211da2d7c9386feddfa8123",
+          "author_date": "2013-10-12T15:14:13Z",
+          "message": "Merge pull request #149 from jparound30/activity_problem\n\nFix activity message problem (related to #120)",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/5ba9c86bee06bcc9c211da2d7c9386feddfa8123"
+        },
+        {
+          "sha": "280df2cedd3a18ee3332a87e474d36e692f8efcf",
+          "author_date": "2013-10-13T00:38:52Z",
+          "message": "configure sbt to use the junitxml option with specs2",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/280df2cedd3a18ee3332a87e474d36e692f8efcf"
+        },
+        {
+          "sha": "25c55ecbd0c3663ad495e4c17a8454d508ecffcd",
+          "author_date": "2013-10-13T01:31:13Z",
+          "message": "Merge pull request #150 from ssogabe/specs2\n\nconfigure sbt to use the junitxml option with specs2",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/25c55ecbd0c3663ad495e4c17a8454d508ecffcd"
+        },
+        {
+          "sha": "eb8710a3367434b1c0d197376b28ecb5a79b0721",
+          "author_date": "2013-10-13T01:45:30Z",
+          "message": "Merge pull request #144 from chris-vanvranken/patch-1\n\nAdd note that installation on windows server IIS is possible",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/eb8710a3367434b1c0d197376b28ecb5a79b0721"
+        },
+        {
+          "sha": "7de0a3fd707dabf0eaf92cfdb7f2dadee75ba36d",
+          "author_date": "2013-10-13T01:47:06Z",
+          "message": "Fix link to IIS installation wiki page.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7de0a3fd707dabf0eaf92cfdb7f2dadee75ba36d"
+        },
+        {
+          "sha": "d772fc3ba277b68a06c8eb072915e17512a29cf7",
+          "author_date": "2013-10-13T16:18:31Z",
+          "message": "refactoring. avoid Option#get",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d772fc3ba277b68a06c8eb072915e17512a29cf7"
+        },
+        {
+          "sha": "3eab4955b9195fa5a33edd0d90b428fbf2b3cb9b",
+          "author_date": "2013-10-13T16:41:09Z",
+          "message": "Merge pull request #152 from xuwei-k/avoid-option-get\n\nrefactoring. avoid Option#get",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/3eab4955b9195fa5a33edd0d90b428fbf2b3cb9b"
+        },
+        {
+          "sha": "5a3207ae4237db82ce376e598ee2d4d5c4d7d9f9",
+          "author_date": "2013-10-13T18:26:47Z",
+          "message": "avoid NumberFormatException",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/5a3207ae4237db82ce376e598ee2d4d5c4d7d9f9"
+        },
+        {
+          "sha": "7b2ee25ea2cd1d0c96e5e3d0b3e968c991aed785",
+          "author_date": "2013-10-13T19:16:10Z",
+          "message": "Add plugin, Update versions",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7b2ee25ea2cd1d0c96e5e3d0b3e968c991aed785"
+        },
+        {
+          "sha": "faf1252597d2a86eb9af30e09a9d93ca3cd46cff",
+          "author_date": "2013-10-14T04:24:49Z",
+          "message": "(refs #154)Remove comparison for original repository which does not exist.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/faf1252597d2a86eb9af30e09a9d93ca3cd46cff"
+        },
+        {
+          "sha": "d6c9ace306a499971621b188c3dc104d8a668f09",
+          "author_date": "2013-10-14T04:25:01Z",
+          "message": "Merge branch 'master' of https://github.com/takezoe/gitbucket",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d6c9ace306a499971621b188c3dc104d8a668f09"
+        },
+        {
+          "sha": "21c30583e5e18e5d1d01c0ec9407676c961ef868",
+          "author_date": "2013-10-14T04:32:52Z",
+          "message": "Merge pull request #153 from xuwei-k/number-format-exception\n\navoid NumberFormatException",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/21c30583e5e18e5d1d01c0ec9407676c961ef868"
+        },
+        {
+          "sha": "ebf4e5f2e9778be1b0c8a7c11ef6e1ca30ec2da6",
+          "author_date": "2013-10-14T04:40:06Z",
+          "message": "Merge branch 'account-full-name' of https://github.com/robinst/gitbucket into robinst-account-full-name\n\nConflicts:\n\tsrc/main/scala/app/PullRequestsController.scala",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ebf4e5f2e9778be1b0c8a7c11ef6e1ca30ec2da6"
+        },
+        {
+          "sha": "ff9b2dbe934414faf5c16cf52e4befcef794cdde",
+          "author_date": "2013-10-14T05:05:25Z",
+          "message": "(refs #127)Display full name at the account page.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ff9b2dbe934414faf5c16cf52e4befcef794cdde"
+        },
+        {
+          "sha": "83107c7974e59bd7121505bd81af4ec6ba8141ca",
+          "author_date": "2013-10-14T05:13:16Z",
+          "message": "Merge pull request #155 from HairyFotr/patch-2\n\nAdd plugin, Update versions",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/83107c7974e59bd7121505bd81af4ec6ba8141ca"
+        },
+        {
+          "sha": "0e7078c479febd55e942d66c5993c617e893e626",
+          "author_date": "2013-10-14T05:44:26Z",
+          "message": "(refs #151)Add unique checking to group creation.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0e7078c479febd55e942d66c5993c617e893e626"
+        },
+        {
+          "sha": "af759a815f3780cd9b33728b5bc270dc72e974d6",
+          "author_date": "2013-10-14T05:49:52Z",
+          "message": "add scalacOptions",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/af759a815f3780cd9b33728b5bc270dc72e974d6"
+        },
+        {
+          "sha": "9794f14a6533645e001fad34d3b3438eee216459",
+          "author_date": "2013-10-14T05:50:46Z",
+          "message": "fix deprecation warning. use HttpClientBuilder\n\nhttps://github.com/apache/httpclient/blob/4.3/httpclient/src/main/java-deprecated/org/apache/http/impl/client/DefaultHttpClient.java#L113",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9794f14a6533645e001fad34d3b3438eee216459"
+        },
+        {
+          "sha": "107622942b4fe13ef6b3389fdd8ffcfbb2902c0a",
+          "author_date": "2013-10-14T05:54:38Z",
+          "message": "(refs #127)Fix testcase.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/107622942b4fe13ef6b3389fdd8ffcfbb2902c0a"
+        },
+        {
+          "sha": "99800a27f50d4f6bd2b0b3772240ccb9591278d9",
+          "author_date": "2013-10-14T06:01:30Z",
+          "message": "Abort build process if sbt reports errors",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/99800a27f50d4f6bd2b0b3772240ccb9591278d9"
+        },
+        {
+          "sha": "3885fcb2ecde017eb280a8f30df065ebc8d2245e",
+          "author_date": "2013-10-14T13:42:18Z",
+          "message": "Merge pull request #157 from ssogabe/failonerror\n\nAbort build process if sbt reports errors",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/3885fcb2ecde017eb280a8f30df065ebc8d2245e"
+        },
+        {
+          "sha": "ba70fdda485864087e770ca3e00e143dcc469833",
+          "author_date": "2013-10-14T13:42:35Z",
+          "message": "Merge pull request #156 from xuwei-k/deprecated\n\nfix deprecation warning",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ba70fdda485864087e770ca3e00e143dcc469833"
+        },
+        {
+          "sha": "05adf9345f0add88c0cf874b797e86c1abd59fad",
+          "author_date": "2013-10-10T15:24:07Z",
+          "message": "retrieve LDAP emails as lowercase to avoid confusing gravatar",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/05adf9345f0add88c0cf874b797e86c1abd59fad"
+        },
+        {
+          "sha": "ff0af477cbaf15e4d54ab82fd3c7e039995f1c20",
+          "author_date": "2013-10-15T16:51:44Z",
+          "message": "Merge branch 'master' into #33_match-by-email\n\nConflicts:\n\tsrc/main/scala/view/helpers.scala",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ff0af477cbaf15e4d54ab82fd3c7e039995f1c20"
+        },
+        {
+          "sha": "9a6a2d9b78f7c339594dcaf17ea76b4a309e69a2",
+          "author_date": "2013-10-15T17:24:40Z",
+          "message": "(refs #33)Improve avatar image searching behavior.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9a6a2d9b78f7c339594dcaf17ea76b4a309e69a2"
+        },
+        {
+          "sha": "cb12d03262249c2148b1e2181b7e8435da586056",
+          "author_date": "2013-10-15T17:28:05Z",
+          "message": "Merge pull request #143 from chris-vanvranken/master\n\nretrieve LDAP emails as lowercase to avoid confusion",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/cb12d03262249c2148b1e2181b7e8435da586056"
+        },
+        {
+          "sha": "4d066738eb8c9e93ce3201609dfe5c3bbc342597",
+          "author_date": "2013-10-15T17:34:12Z",
+          "message": "Merge branch 'master' into #33_match-by-email\n\nConflicts:\n\tsrc/main/scala/view/AvatarImageProvider.scala",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/4d066738eb8c9e93ce3201609dfe5c3bbc342597"
+        },
+        {
+          "sha": "da62c6181e61a1fa2cfd5476bfab6ae559491fde",
+          "author_date": "2013-10-15T19:10:00Z",
+          "message": "(refs #33)Fix avatar icon and account link in the commits page for pull request.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/da62c6181e61a1fa2cfd5476bfab6ae559491fde"
+        },
+        {
+          "sha": "f40c7ff4fa012e75b75cc3f762aa744f0ab179ed",
+          "author_date": "2013-10-15T19:47:43Z",
+          "message": "Fix testcase.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f40c7ff4fa012e75b75cc3f762aa744f0ab179ed"
+        },
+        {
+          "sha": "605855265425e42f33ec41f042a0fffeeeb08cbf",
+          "author_date": "2013-10-16T23:41:51Z",
+          "message": "System support for RedHat\n\nThis commit is adding init.d script and sysconfig file which allows to\nrun GitBucket in the standalone mode. It also adds the spec file which\nallows to build RPM package.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/605855265425e42f33ec41f042a0fffeeeb08cbf"
+        },
+        {
+          "sha": "e5e7b2484cd5706722b45aeb32d376d3329fc04f",
+          "author_date": "2013-10-17T15:59:16Z",
+          "message": "Describe version of Servlet container",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e5e7b2484cd5706722b45aeb32d376d3329fc04f"
+        },
+        {
+          "sha": "2d85d41e9c79f3744a8e4693b8ca5937d8360d42",
+          "author_date": "2013-10-17T17:36:09Z",
+          "message": "Merge pull request #161 from jtyr/master\n\nSystem support for RedHat",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2d85d41e9c79f3744a8e4693b8ca5937d8360d42"
+        },
+        {
+          "sha": "bf2ed81eb1f860eae9b3398c2b018d2a93aaaad5",
+          "author_date": "2013-10-19T03:56:55Z",
+          "message": "(refs #163)Allow '.' in user name.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/bf2ed81eb1f860eae9b3398c2b018d2a93aaaad5"
+        },
+        {
+          "sha": "41941df87a6c600f80e91fa50cd527433d17a0cf",
+          "author_date": "2013-10-19T04:58:04Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/41941df87a6c600f80e91fa50cd527433d17a0cf"
+        },
+        {
+          "sha": "37358e9c8cfa749733a1dcfa936524f894af830c",
+          "author_date": "2013-10-19T05:20:35Z",
+          "message": "Fix a problem to redirect wikipage named by multi-byte characters\n\nIn some specific case, redirect path (created from route params) is incorrect.\n`redirectUrl` is expected to be encoded,\nbut scalatra decodes route params by rl.UrlCodingUtils via ScalatraBase.UriDecoder.\nTo avoid this problem, I add dirty workaround to encode redirect path.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/37358e9c8cfa749733a1dcfa936524f894af830c"
+        },
+        {
+          "sha": "7c7da7379da3ba830dc5cfdbe72fe868eb1e1898",
+          "author_date": "2013-10-19T09:48:50Z",
+          "message": "(refs #163)Fixed",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7c7da7379da3ba830dc5cfdbe72fe868eb1e1898"
+        },
+        {
+          "sha": "7afe7fbb5f2058180a4d5507dbfc58a9abca45b1",
+          "author_date": "2013-10-20T20:11:53Z",
+          "message": "(refs #103) Add issue comment deletion.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7afe7fbb5f2058180a4d5507dbfc58a9abca45b1"
+        },
+        {
+          "sha": "bbcb04b263a17928dd3a22afb16d1c9f3d8a2727",
+          "author_date": "2013-10-20T20:16:55Z",
+          "message": "Fix bug.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/bbcb04b263a17928dd3a22afb16d1c9f3d8a2727"
+        },
+        {
+          "sha": "2316a80be9c6adb9f078cd53493e3944cc148e47",
+          "author_date": "2013-10-21T01:53:36Z",
+          "message": "(refs #163)Remove escaping for '.'",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2316a80be9c6adb9f078cd53493e3944cc148e47"
+        },
+        {
+          "sha": "a697f186afc99666f1adc235bafa4aff7b5a2ca4",
+          "author_date": "2013-10-21T02:33:37Z",
+          "message": "Merge pull request #164 from smly/feature/bugfix-redirect-encode\n\nFix a problem to redirect wikipage named by multi-byte characters",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a697f186afc99666f1adc235bafa4aff7b5a2ca4"
+        },
+        {
+          "sha": "254509f243f36e31c0350060c98bb00e17f9f0eb",
+          "author_date": "2013-10-21T13:32:46Z",
+          "message": "Fix bug.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/254509f243f36e31c0350060c98bb00e17f9f0eb"
+        },
+        {
+          "sha": "53269096a6823628a54bb850ba8db6cca063529b",
+          "author_date": "2013-10-21T13:32:53Z",
+          "message": "Allow to force HTTPS scheme\n\nIf the standalone GitBucket instance runs behind HTTPS proxy, the\nrepository URL always shows HTTP scheme dispute the fact that the\nconnection is HTTPS. This patch is adding a command line option which\nallows to force the HTTPS scheme.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/53269096a6823628a54bb850ba8db6cca063529b"
+        },
+        {
+          "sha": "90ab882e8e1294178dcc73d561daad1e53fece6c",
+          "author_date": "2013-10-21T16:01:11Z",
+          "message": "Merge pull request #147 from xuwei-k/AccountServiceSpec\n\nadd AccountServiceSpec",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/90ab882e8e1294178dcc73d561daad1e53fece6c"
+        },
+        {
+          "sha": "f3ad1a019debdbdb2c39544a80bc75115183ecac",
+          "author_date": "2013-10-21T16:09:22Z",
+          "message": "Small fix for #147",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f3ad1a019debdbdb2c39544a80bc75115183ecac"
+        },
+        {
+          "sha": "6de5babd5b6e7dbb98a32b366071354a50d530a9",
+          "author_date": "2013-10-21T16:40:42Z",
+          "message": "Merge remote-tracking branch 'upstream/master'",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6de5babd5b6e7dbb98a32b366071354a50d530a9"
+        },
+        {
+          "sha": "2e239d16d44c43276aaf9ecc0ac1a6731e568428",
+          "author_date": "2013-10-21T21:45:34Z",
+          "message": "Refactorization of the https command line option\n\nRenaming the flag variable and the Connector class.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2e239d16d44c43276aaf9ecc0ac1a6731e568428"
+        },
+        {
+          "sha": "99517fa5087f9722ebf87e448b34f94ce6955da2",
+          "author_date": "2013-10-21T21:47:27Z",
+          "message": "Fixing command line options in init.d script\n\nAdding missing \"--host\" option and fixing the declaration of other\ncommand line options.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/99517fa5087f9722ebf87e448b34f94ce6955da2"
+        },
+        {
+          "sha": "53fa60b0f8f4723e7e3c491f37048b9701654021",
+          "author_date": "2013-10-23T17:00:14Z",
+          "message": "Exclude owner from assigned user list in the group repository.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/53fa60b0f8f4723e7e3c491f37048b9701654021"
+        },
+        {
+          "sha": "0d0bf4ad3f207b00ee64bc18112df865c40e4f72",
+          "author_date": "2013-10-23T17:08:14Z",
+          "message": "Don't add group account as a collaborator.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0d0bf4ad3f207b00ee64bc18112df865c40e4f72"
+        },
+        {
+          "sha": "2968b926774f8eebb9dc2b4be9e2ebca7f473607",
+          "author_date": "2013-10-23T19:25:50Z",
+          "message": "Add the commit link to refs comment.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2968b926774f8eebb9dc2b4be9e2ebca7f473607"
+        },
+        {
+          "sha": "6d4b3e54d08c14e864ed4de94ce5ebcea1addc56",
+          "author_date": "2013-10-24T02:03:47Z",
+          "message": "Fix style problem in Wiki.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6d4b3e54d08c14e864ed4de94ce5ebcea1addc56"
+        },
+        {
+          "sha": "6dbfc12896683743b6458945f1cb3f1a0e0ce7f7",
+          "author_date": "2013-10-24T02:07:26Z",
+          "message": "Merge branch 'master' of https://github.com/takezoe/gitbucket",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6dbfc12896683743b6458945f1cb3f1a0e0ce7f7"
+        },
+        {
+          "sha": "60e71659830bb732894c5503398e9c7e6d9466b3",
+          "author_date": "2013-10-24T02:29:23Z",
+          "message": "(refs #104)Zip file is exported from the bare repository directly.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/60e71659830bb732894c5503398e9c7e6d9466b3"
+        },
+        {
+          "sha": "06be5266fdaf1ea7659f54164ddd3cd633b8ab93",
+          "author_date": "2013-10-24T06:04:32Z",
+          "message": "Fix refs message.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/06be5266fdaf1ea7659f54164ddd3cd633b8ab93"
+        },
+        {
+          "sha": "167a0f28b2e3fd15c0c0291cd7a7662ac505e610",
+          "author_date": "2013-10-24T19:00:25Z",
+          "message": "Merge pull request #170 from jtyr/master\n\nAllow to force HTTPS scheme",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/167a0f28b2e3fd15c0c0291cd7a7662ac505e610"
+        },
+        {
+          "sha": "d1f0d01ae88fa68343e04d072cc2fce6c8a0b7bf",
+          "author_date": "2013-10-24T19:05:34Z",
+          "message": "Small fix for #170",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d1f0d01ae88fa68343e04d072cc2fce6c8a0b7bf"
+        },
+        {
+          "sha": "1e750f4b9d39d65509aa546a0708e3c8883504ba",
+          "author_date": "2013-10-24T19:28:58Z",
+          "message": "(refs #171)Fix link target of pull request number.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1e750f4b9d39d65509aa546a0708e3c8883504ba"
+        },
+        {
+          "sha": "7604c2172f8fb5039e2221bc181d5dac484aa3d8",
+          "author_date": "2013-10-24T19:44:03Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7604c2172f8fb5039e2221bc181d5dac484aa3d8"
+        },
+        {
+          "sha": "2235dab550c9b05f57eb6d1107d6e43d9f3a11e3",
+          "author_date": "2013-10-25T16:40:26Z",
+          "message": "(refs #174)Fix commit hook for DELETE command.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2235dab550c9b05f57eb6d1107d6e43d9f3a11e3"
+        },
+        {
+          "sha": "6ac27e89b3738141cf913c8f959c4eeec453c284",
+          "author_date": "2013-10-25T16:45:59Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6ac27e89b3738141cf913c8f959c4eeec453c284"
+        },
+        {
+          "sha": "6e169ab3c25f568fd899105f0a8a92daff4464eb",
+          "author_date": "2013-10-25T16:46:39Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6e169ab3c25f568fd899105f0a8a92daff4464eb"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.8",
@@ -1801,8 +2552,129 @@
     {
       "release": "2.7",
       "previous_release": "2.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "676670e9e3a1666404bedb4cccf54de2773ad0b9",
+          "author_date": "2014-11-24T02:29:10Z",
+          "message": "Enable contrib init file and RPM's spec file to run on RHEL 6/CentOS 6 as non root user.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/676670e9e3a1666404bedb4cccf54de2773ad0b9"
+        },
+        {
+          "sha": "af58e99dcf1b07f38b7f4c9af258ac055bc6c9fc",
+          "author_date": "2014-10-25T01:22:31Z",
+          "message": "(refs #9) Comments for commit and diff",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/af58e99dcf1b07f38b7f4c9af258ac055bc6c9fc"
+        },
+        {
+          "sha": "c23985c1a7a8c95a09d3283aa8b538d72b75689e",
+          "author_date": "2014-11-27T15:08:59Z",
+          "message": "Merge pull request #564 from mrkm4ntr/coment-for-diff\n\n(refs #9) Comments for commit and diff",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c23985c1a7a8c95a09d3283aa8b538d72b75689e"
+        },
+        {
+          "sha": "63627fc1d02de6420a92921d6640a11bbbb99f68",
+          "author_date": "2014-11-27T15:20:46Z",
+          "message": "(refs #564)Change the attached files directory to /commens from /issues",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/63627fc1d02de6420a92921d6640a11bbbb99f68"
+        },
+        {
+          "sha": "bc75f9f8a25ce2135705d6eb5ec8fb9f5a9ac634",
+          "author_date": "2014-11-27T16:42:44Z",
+          "message": "(refs #564)Fix for repository renaming",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/bc75f9f8a25ce2135705d6eb5ec8fb9f5a9ac634"
+        },
+        {
+          "sha": "9767903252af9aa4447cba5ddd4620ee73d6e022",
+          "author_date": "2014-12-04T17:10:28Z",
+          "message": "(refs #567)Fix condition of repository search for issues.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9767903252af9aa4447cba5ddd4620ee73d6e022"
+        },
+        {
+          "sha": "ddea4e12f02c3d71b5fb073b6163f3f9519883e9",
+          "author_date": "2014-11-19T03:26:46Z",
+          "message": "Add SSH clone url option when enabled SSH access",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ddea4e12f02c3d71b5fb073b6163f3f9519883e9"
+        },
+        {
+          "sha": "af091117b74d709f5b1c11fc5f565b9e1a558587",
+          "author_date": "2014-12-19T16:51:15Z",
+          "message": "(refs #577)Remove all HTML tags in Markdown",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/af091117b74d709f5b1c11fc5f565b9e1a558587"
+        },
+        {
+          "sha": "238dedb6dfb3366e73aa0461e1474c5cab2052e9",
+          "author_date": "2014-12-21T12:39:20Z",
+          "message": "(refs #578)Clean original and parent repository information when it's deleted",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/238dedb6dfb3366e73aa0461e1474c5cab2052e9"
+        },
+        {
+          "sha": "39fec57f7274e3dcfc598bcf9a2aa6b18f35b4e7",
+          "author_date": "2014-12-21T16:32:15Z",
+          "message": "(refs #578)Add migration for repositories which have removed parent or origin repository.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/39fec57f7274e3dcfc598bcf9a2aa6b18f35b4e7"
+        },
+        {
+          "sha": "b7b5af2b7234e3f8c011442751a40ec26760e5d9",
+          "author_date": "2014-12-22T10:35:43Z",
+          "message": "add enableTaskList to post params for _preview",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b7b5af2b7234e3f8c011442751a40ec26760e5d9"
+        },
+        {
+          "sha": "427b6ce846d28ce10b12f153ab87aa3f7bf61443",
+          "author_date": "2014-12-22T14:06:46Z",
+          "message": "Merge pull request #579 from banjun/fix-editor-preview-NoSuchElementException-enableTaskList\n\nfix repo editor fails to preview",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/427b6ce846d28ce10b12f153ab87aa3f7bf61443"
+        },
+        {
+          "sha": "a01b5a4a5911ac3c15dc981da35ad28030db3fc7",
+          "author_date": "2014-12-26T14:26:45Z",
+          "message": "Fix a few issues detected by static analysis",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a01b5a4a5911ac3c15dc981da35ad28030db3fc7"
+        },
+        {
+          "sha": "e04c230c6eb47f596f84e88213a13ba16141ac33",
+          "author_date": "2014-12-27T11:10:02Z",
+          "message": "Merge pull request #580 from HairyFotr/patch-lint\n\nFix a few issues detected by static analysis",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e04c230c6eb47f596f84e88213a13ba16141ac33"
+        },
+        {
+          "sha": "837b1e44a7bc23f1a38203d17f249fe502d2b4d6",
+          "author_date": "2014-12-27T11:55:26Z",
+          "message": "Merge pull request #561 from torutk/rpm_nonroot\n\nEnable contrib init file and RPM's spec file to run on RHEL 6/CentOS 6 a...",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/837b1e44a7bc23f1a38203d17f249fe502d2b4d6"
+        },
+        {
+          "sha": "6e2b67ec0bbda645488ed33c346eb154e64549f5",
+          "author_date": "2014-12-28T11:04:11Z",
+          "message": "Fix bug on showing inline comments in Pull Request.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6e2b67ec0bbda645488ed33c346eb154e64549f5"
+        },
+        {
+          "sha": "5518eca952b43156a9c9523132ce0981be5bb146",
+          "author_date": "2014-12-28T17:10:57Z",
+          "message": "Merge pull request #581 from mrkm4ntr/fix-comment-in-pr\n\nFix bug on showing inline comments in Pull Request.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/5518eca952b43156a9c9523132ce0981be5bb146"
+        },
+        {
+          "sha": "c58c2d67000080710ab10793fcf84ddbd2c0aaf7",
+          "author_date": "2014-12-28T17:12:18Z",
+          "message": "Merge pull request #556 from michaeljayt/add-ssh-clone-url\n\nAdd SSH clone url option when enabled SSH access",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c58c2d67000080710ab10793fcf84ddbd2c0aaf7"
+        },
+        {
+          "sha": "527c91ff9d5930cab8afca825a8d9cacd470a687",
+          "author_date": "2014-12-28T18:24:04Z",
+          "message": "Fix for #581. Column name and CSS is changed.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/527c91ff9d5930cab8afca825a8d9cacd470a687"
+        },
+        {
+          "sha": "9d56d7261164b6b2ddfb06c29df2447accc1ddbc",
+          "author_date": "2014-12-29T02:32:23Z",
+          "message": "Update README.md for 2.7 release",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9d56d7261164b6b2ddfb06c29df2447accc1ddbc"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "2.8",
@@ -1879,8 +2751,543 @@
     {
       "release": "3.10",
       "previous_release": "3.9",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "7b6d9850a26ed37795bfc7af867227304dc21e4d",
+          "author_date": "2015-11-10T02:06:11Z",
+          "message": "Moving to Bootstrap3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7b6d9850a26ed37795bfc7af867227304dc21e4d"
+        },
+        {
+          "sha": "c6804fe58917c28d38402b1fcc2e0047addc357f",
+          "author_date": "2015-11-11T18:44:37Z",
+          "message": "Add bootstrap-theme-github",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c6804fe58917c28d38402b1fcc2e0047addc357f"
+        },
+        {
+          "sha": "7c95bfc77e0f5cd79e84a9c854b2c94d06e2b0cc",
+          "author_date": "2015-11-11T18:45:00Z",
+          "message": "Merge branch 'master' into css_bootstrap3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7c95bfc77e0f5cd79e84a9c854b2c94d06e2b0cc"
+        },
+        {
+          "sha": "31b5583896378c6495a91f1cd2d56f3073c9e7d9",
+          "author_date": "2015-11-12T17:09:41Z",
+          "message": "Fix header styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/31b5583896378c6495a91f1cd2d56f3073c9e7d9"
+        },
+        {
+          "sha": "092c8971507b87ae8f8dcc72fd5441be41b8bc90",
+          "author_date": "2015-11-14T17:05:24Z",
+          "message": "Fix sidebar style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/092c8971507b87ae8f8dcc72fd5441be41b8bc90"
+        },
+        {
+          "sha": "2f6febb748b713a60792b46a437aff4de214c733",
+          "author_date": "2015-11-14T17:27:55Z",
+          "message": "Adjust styles for Bootstrap3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2f6febb748b713a60792b46a437aff4de214c733"
+        },
+        {
+          "sha": "7ffe2ab864f44079bbb293c79bff663e7fbacf4d",
+          "author_date": "2015-11-15T03:54:34Z",
+          "message": "Fix global header style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7ffe2ab864f44079bbb293c79bff663e7fbacf4d"
+        },
+        {
+          "sha": "12fba30ef89a9c4193ebbee15bf907baaec00307",
+          "author_date": "2015-11-25T01:44:55Z",
+          "message": "Fix styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/12fba30ef89a9c4193ebbee15bf907baaec00307"
+        },
+        {
+          "sha": "b8bd8f5512add7d85fd8e956c3d524412cb8c1e1",
+          "author_date": "2015-11-26T17:40:48Z",
+          "message": "Fix branch list styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b8bd8f5512add7d85fd8e956c3d524412cb8c1e1"
+        },
+        {
+          "sha": "0bf843ce2abab1253d666d52f1d4dfeb6765d395",
+          "author_date": "2015-11-27T01:10:15Z",
+          "message": "Fix styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0bf843ce2abab1253d666d52f1d4dfeb6765d395"
+        },
+        {
+          "sha": "1080821862f06a81fcb859393749bcc33cfdba6f",
+          "author_date": "2015-11-27T01:16:17Z",
+          "message": "Fix issue styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1080821862f06a81fcb859393749bcc33cfdba6f"
+        },
+        {
+          "sha": "7cf23b6c5661198767a22f383acfee3bd20e0bbc",
+          "author_date": "2015-11-27T03:37:16Z",
+          "message": "Fix pull request creation form style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7cf23b6c5661198767a22f383acfee3bd20e0bbc"
+        },
+        {
+          "sha": "cead7e9e4e25c188f01bc83193df85ce4fc8df78",
+          "author_date": "2015-11-27T03:37:26Z",
+          "message": "Fix commit list style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/cead7e9e4e25c188f01bc83193df85ce4fc8df78"
+        },
+        {
+          "sha": "fb5564de079da7b4fa542dce97dfa6665c08f223",
+          "author_date": "2015-11-27T03:53:10Z",
+          "message": "Fix diff styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/fb5564de079da7b4fa542dce97dfa6665c08f223"
+        },
+        {
+          "sha": "ea37a34476a7944d0128f000af837af701d70535",
+          "author_date": "2015-11-29T16:16:27Z",
+          "message": "Fix styles of issues and pull requests",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ea37a34476a7944d0128f000af837af701d70535"
+        },
+        {
+          "sha": "7e0e172d3785c6744d05419ad9bd98be2c7656ab",
+          "author_date": "2015-11-30T14:22:16Z",
+          "message": "Fix fork button",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7e0e172d3785c6744d05419ad9bd98be2c7656ab"
+        },
+        {
+          "sha": "b7a9236283844af45143d0d123256a5afe09c623",
+          "author_date": "2015-11-30T16:37:14Z",
+          "message": "Merge branch 'master' of https://github.com/takezoe/gitbucket into css_bootstrap3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b7a9236283844af45143d0d123256a5afe09c623"
+        },
+        {
+          "sha": "bb75f1c034b4fcfee30491ffba06ebcba91bb2b1",
+          "author_date": "2015-11-30T17:12:08Z",
+          "message": "Merge branch 'css_bootstrap3' of https://github.com/takezoe/gitbucket into css_bootstrap3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/bb75f1c034b4fcfee30491ffba06ebcba91bb2b1"
+        },
+        {
+          "sha": "583830c1c2551ad4205c4d1235b72ae4ad791bd4",
+          "author_date": "2015-11-30T17:47:09Z",
+          "message": "Fix styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/583830c1c2551ad4205c4d1235b72ae4ad791bd4"
+        },
+        {
+          "sha": "6710393a532a4449c6f71904271a22f3369dafe9",
+          "author_date": "2015-12-05T02:53:15Z",
+          "message": "Merge branch 'master' into css_bootstrap3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6710393a532a4449c6f71904271a22f3369dafe9"
+        },
+        {
+          "sha": "dd73405aa92e5770a669e81ed8521d0a12dd8a88",
+          "author_date": "2015-12-05T03:41:55Z",
+          "message": "Fix styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/dd73405aa92e5770a669e81ed8521d0a12dd8a88"
+        },
+        {
+          "sha": "44aa12108c042c6b7e70bad63177e4daf3255ae1",
+          "author_date": "2015-12-05T05:54:50Z",
+          "message": "Fix styles of the repository creation page and more",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/44aa12108c042c6b7e70bad63177e4daf3255ae1"
+        },
+        {
+          "sha": "38e8247483bfc571b10f0064ce657db6fd1344f4",
+          "author_date": "2015-12-05T10:38:02Z",
+          "message": "Fix styles of system administration page",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/38e8247483bfc571b10f0064ce657db6fd1344f4"
+        },
+        {
+          "sha": "0cdcc252e0ab797fab8584cd31f79cb4c3578708",
+          "author_date": "2015-12-06T23:33:22Z",
+          "message": "Merge branch 'master' into css_bootstrap3\n\nConflicts:\n\tsrc/main/twirl/gitbucket/core/account/edit.scala.html",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0cdcc252e0ab797fab8584cd31f79cb4c3578708"
+        },
+        {
+          "sha": "8622bbd2ac98942d167f424f8e27e0fd5509df7f",
+          "author_date": "2015-12-07T05:38:18Z",
+          "message": "Fix styles of account and group creation page",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/8622bbd2ac98942d167f424f8e27e0fd5509df7f"
+        },
+        {
+          "sha": "9475215fa6352e47043bdd49df222febecfa04a5",
+          "author_date": "2015-12-07T06:20:06Z",
+          "message": "Fix styles of plugins page",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9475215fa6352e47043bdd49df222febecfa04a5"
+        },
+        {
+          "sha": "7853b22522742c326d5889fc42181e672a467c65",
+          "author_date": "2015-12-07T07:01:03Z",
+          "message": "Fix sidebar style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7853b22522742c326d5889fc42181e672a467c65"
+        },
+        {
+          "sha": "e4992bbd171cd600cf2dbf2fbadc738021a90917",
+          "author_date": "2015-12-07T07:53:11Z",
+          "message": "Fix styles of repository setting pages",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e4992bbd171cd600cf2dbf2fbadc738021a90917"
+        },
+        {
+          "sha": "d90938421f049b45f53063424368ddaf60f1f9c9",
+          "author_date": "2015-12-07T14:17:33Z",
+          "message": "Fix ZeroClipboard button",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d90938421f049b45f53063424368ddaf60f1f9c9"
+        },
+        {
+          "sha": "2aa71ed217a884db5a1bdf021a25dddf107e99cb",
+          "author_date": "2015-12-07T16:59:31Z",
+          "message": "Fix borderd table style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2aa71ed217a884db5a1bdf021a25dddf107e99cb"
+        },
+        {
+          "sha": "54bef6505fc5e575c6dacda49d1c5cd3283e6a46",
+          "author_date": "2015-12-07T17:26:11Z",
+          "message": "Fix issue search box",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/54bef6505fc5e575c6dacda49d1c5cd3283e6a46"
+        },
+        {
+          "sha": "4dfb01d59e255f0c41af74fd1eccca3efbb464cd",
+          "author_date": "2015-12-07T17:35:52Z",
+          "message": "Fix typo",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/4dfb01d59e255f0c41af74fd1eccca3efbb464cd"
+        },
+        {
+          "sha": "c7bf47820cca1a24de80fc35e5bdf58b5ceeae59",
+          "author_date": "2015-12-08T00:33:22Z",
+          "message": "Use customized Bootstrap3 theme",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c7bf47820cca1a24de80fc35e5bdf58b5ceeae59"
+        },
+        {
+          "sha": "d09ddd8d0789b563266608784f1a82f6f166cdb1",
+          "author_date": "2015-12-08T10:21:08Z",
+          "message": "Fix tables and some pages",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d09ddd8d0789b563266608784f1a82f6f166cdb1"
+        },
+        {
+          "sha": "ee5b4bbf2ec07a3af3ddb82012c63e986ec1c153",
+          "author_date": "2015-12-08T17:48:10Z",
+          "message": "Fix styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ee5b4bbf2ec07a3af3ddb82012c63e986ec1c153"
+        },
+        {
+          "sha": "a982b64fd4ad6af99b2ebe7dd776f4c709d101e8",
+          "author_date": "2015-12-09T09:29:41Z",
+          "message": "Use Bootstrap panels instead of GitBucket original styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a982b64fd4ad6af99b2ebe7dd776f4c709d101e8"
+        },
+        {
+          "sha": "94a12cd28cf40817c17f989c83abfd2b661daa55",
+          "author_date": "2015-12-09T10:16:34Z",
+          "message": "Fix label editing form",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/94a12cd28cf40817c17f989c83abfd2b661daa55"
+        },
+        {
+          "sha": "27dcc2ef48557ef5dca465eec76ce62f6b95dacc",
+          "author_date": "2015-12-09T16:16:17Z",
+          "message": "Fix table vertical border",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/27dcc2ef48557ef5dca465eec76ce62f6b95dacc"
+        },
+        {
+          "sha": "8650abf67902b849566460b0204097b30ecb0087",
+          "author_date": "2015-12-09T17:00:42Z",
+          "message": "Fix milestone creation / editing form",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/8650abf67902b849566460b0204097b30ecb0087"
+        },
+        {
+          "sha": "4d8b47732e52d9eb75f1fb647b907968724de835",
+          "author_date": "2015-12-09T17:03:46Z",
+          "message": "Remove unused bootstrap files",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/4d8b47732e52d9eb75f1fb647b907968724de835"
+        },
+        {
+          "sha": "1c639474d30b9928560ec5321fa79c963c70fd2e",
+          "author_date": "2015-12-10T03:03:15Z",
+          "message": "Fix milestone list and progress bar",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1c639474d30b9928560ec5321fa79c963c70fd2e"
+        },
+        {
+          "sha": "354dc27e84102f7586d7a777167541248d4f6e29",
+          "author_date": "2015-12-10T03:13:22Z",
+          "message": "Use Bootstrap panel instead of custom CSS",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/354dc27e84102f7586d7a777167541248d4f6e29"
+        },
+        {
+          "sha": "9d644b4625106b81592511ce9d5fb5f7d75a81af",
+          "author_date": "2015-12-10T05:04:44Z",
+          "message": "Fix buttons of webhook list",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9d644b4625106b81592511ce9d5fb5f7d75a81af"
+        },
+        {
+          "sha": "de4db0764c499d0fa5f4fb7be98691e068de0c0d",
+          "author_date": "2015-12-10T05:32:11Z",
+          "message": "Use Bootstrap panel instead of custom CSS",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/de4db0764c499d0fa5f4fb7be98691e068de0c0d"
+        },
+        {
+          "sha": "db55fe9ff3fc6284fed0185a67b678abe0ad53b6",
+          "author_date": "2015-12-10T07:02:58Z",
+          "message": "Fixup",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/db55fe9ff3fc6284fed0185a67b678abe0ad53b6"
+        },
+        {
+          "sha": "e27bf7868f219dd6b28b17e7a397a5f30806b368",
+          "author_date": "2015-12-10T08:17:18Z",
+          "message": "Tweak pagination padding",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e27bf7868f219dd6b28b17e7a397a5f30806b368"
+        },
+        {
+          "sha": "f080e8693ec437ed89196c5129faca6a8a0a9acc",
+          "author_date": "2015-12-12T04:20:05Z",
+          "message": "Fix right margin of account search box",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f080e8693ec437ed89196c5129faca6a8a0a9acc"
+        },
+        {
+          "sha": "7ad605afbaca53ca988a06a99f91bb7d6266bcc6",
+          "author_date": "2015-12-13T14:59:42Z",
+          "message": "Fix style of issue comment form and more",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7ad605afbaca53ca988a06a99f91bb7d6266bcc6"
+        },
+        {
+          "sha": "8f36ff60decb0806b75cf881752858767d9c7ca8",
+          "author_date": "2015-12-13T15:16:18Z",
+          "message": "Use bootstrap panel instead of custom box styles",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/8f36ff60decb0806b75cf881752858767d9c7ca8"
+        },
+        {
+          "sha": "17636a5ecf82ca635bf2baee66631397b2d3e3e1",
+          "author_date": "2015-12-13T16:11:42Z",
+          "message": "Fixup",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/17636a5ecf82ca635bf2baee66631397b2d3e3e1"
+        },
+        {
+          "sha": "e8824ad1ac7c6876d0b3e0bdaecba01e6d3526ff",
+          "author_date": "2015-12-13T16:56:15Z",
+          "message": "Imporve styles for mobile",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e8824ad1ac7c6876d0b3e0bdaecba01e6d3526ff"
+        },
+        {
+          "sha": "31bd8e17413329828f42413eacf1935f959bc6c6",
+          "author_date": "2015-12-14T09:48:22Z",
+          "message": "Fix button size",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/31bd8e17413329828f42413eacf1935f959bc6c6"
+        },
+        {
+          "sha": "1a4b94e5df8d1ac9d9bf9ea4a265455c1b30ac7c",
+          "author_date": "2015-12-15T02:46:47Z",
+          "message": "Fix modal dialog",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1a4b94e5df8d1ac9d9bf9ea4a265455c1b30ac7c"
+        },
+        {
+          "sha": "1c36b185ec041055af992efa5297d881b20e2d8c",
+          "author_date": "2015-12-15T05:56:24Z",
+          "message": "Fix width and font of the dropzone",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1c36b185ec041055af992efa5297d881b20e2d8c"
+        },
+        {
+          "sha": "1754d37ac0e367e464579cf1ee9bfe533ab7377e",
+          "author_date": "2015-12-15T06:13:54Z",
+          "message": "Fix style of circle icons",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1754d37ac0e367e464579cf1ee9bfe533ab7377e"
+        },
+        {
+          "sha": "21363794b6bfa0822ba06bf0563802d55baca489",
+          "author_date": "2015-12-15T06:58:54Z",
+          "message": "Merge pull request #999 from gitbucket/css_bootstrap3\n\nMove to Bootstrap3 with GitHub theme",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/21363794b6bfa0822ba06bf0563802d55baca489"
+        },
+        {
+          "sha": "b229058726400d43da5b7fb88e037ad6e003e43f",
+          "author_date": "2015-12-15T10:39:18Z",
+          "message": "Fix fork button group style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b229058726400d43da5b7fb88e037ad6e003e43f"
+        },
+        {
+          "sha": "c6f4ec7250bbaa2dc49a44a5f98781f25f9a607f",
+          "author_date": "2015-12-15T10:51:16Z",
+          "message": "Fix header-link style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c6f4ec7250bbaa2dc49a44a5f98781f25f9a607f"
+        },
+        {
+          "sha": "10b5de571ec82f1575d659139ccd291cd479d79a",
+          "author_date": "2015-12-16T12:41:14Z",
+          "message": "(fixes #1008) pusher of webhook push event is not same as github's it",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/10b5de571ec82f1575d659139ccd291cd479d79a"
+        },
+        {
+          "sha": "c30ee24f8d44ca1562e8f4da413675b53fa17ab6",
+          "author_date": "2015-12-16T12:54:47Z",
+          "message": "support legacy route of List Statuses for a specific Ref api",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c30ee24f8d44ca1562e8f4da413675b53fa17ab6"
+        },
+        {
+          "sha": "a919ae34309788ab510748a68143eec1ccb75b09",
+          "author_date": "2015-12-17T16:31:28Z",
+          "message": "Merge pull request #1010 from team-lab/suppot-legacy-statuses-api\n\nsupport legacy route of List Statuses for a specific Ref api",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a919ae34309788ab510748a68143eec1ccb75b09"
+        },
+        {
+          "sha": "7511701bb28fc9f8a8ed441bc7ac08aff7aca35a",
+          "author_date": "2015-12-17T16:32:18Z",
+          "message": "Merge pull request #1009 from team-lab/fix/webhook-push-pusher\n\n(fixes #1008) pusher of webhook push event is not same as github's it",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7511701bb28fc9f8a8ed441bc7ac08aff7aca35a"
+        },
+        {
+          "sha": "30b0279efef1f14e7910dc9940706fd2dbad96d4",
+          "author_date": "2015-12-17T16:40:32Z",
+          "message": "(refs #1005)Fix typo",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/30b0279efef1f14e7910dc9940706fd2dbad96d4"
+        },
+        {
+          "sha": "2ea4a5a7efb3b6eb17f8b561f64152b0f5221a02",
+          "author_date": "2015-12-17T16:46:25Z",
+          "message": "(refs #1007)Fix max length constraint for repository owner and name at the repository creation form",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2ea4a5a7efb3b6eb17f8b561f64152b0f5221a02"
+        },
+        {
+          "sha": "117655b01166a4f790c218dfc3394e79337f4eda",
+          "author_date": "2015-12-19T03:56:34Z",
+          "message": "(refs #1002)Upgrade markedj to 1.0.6-SNAPSHOT to solve IndexOutOfBoundsException in the table",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/117655b01166a4f790c218dfc3394e79337f4eda"
+        },
+        {
+          "sha": "407e926abe45aad38184665ea4b544d623b791a6",
+          "author_date": "2015-12-21T06:14:21Z",
+          "message": "Fix styles in file editing form in the repository viewer",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/407e926abe45aad38184665ea4b544d623b791a6"
+        },
+        {
+          "sha": "be6bc16d3d9c3d3cd73e1c1ae6a4061bd179631c",
+          "author_date": "2015-12-21T06:14:51Z",
+          "message": "Fix global header style",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/be6bc16d3d9c3d3cd73e1c1ae6a4061bd179631c"
+        },
+        {
+          "sha": "d77973a29eb2b341750d3f090b0af2c9fcde9845",
+          "author_date": "2015-12-21T22:58:30Z",
+          "message": "Remove IDE plugins and add logback-classic",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d77973a29eb2b341750d3f090b0af2c9fcde9845"
+        },
+        {
+          "sha": "59ef44dd719eb3e716d5ab2bbdb656179868726a",
+          "author_date": "2015-12-21T22:59:15Z",
+          "message": "Update logging configuration",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/59ef44dd719eb3e716d5ab2bbdb656179868726a"
+        },
+        {
+          "sha": "809443a46f0d49d903649e033e5ee5b2fc83336e",
+          "author_date": "2015-12-21T22:59:47Z",
+          "message": "Zip logback.xml into the root of gitbucket.war",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/809443a46f0d49d903649e033e5ee5b2fc83336e"
+        },
+        {
+          "sha": "b0a749bdc1ad42bf5901954a61f285285e4f813b",
+          "author_date": "2015-12-22T06:51:12Z",
+          "message": "Upgrade c3p0 and tweak default config to avoid Tomcat issues\n\nAdds a standard typesafe-config reference.conf file that sets c3p0\nconfig to prevents Tomcat memory leaks on hot-redeploy/shutdown.\n\nSee\n   http://www.mchange.com/projects/c3p0/#configuring_to_avoid_memory_leaks_on_redeploy\n   http://www.mchange.com/projects/c3p0/#tomcat-specific\n\nThis new config can be overridden in an application.conf or\nc3p0.properties file.\n\n( See http://www.mchange.com/projects/c3p0/#configuration_precedence )\n\nUpdates c3p0 version to c3p0-0.9.5.2, which fixes that leads to\nunnecessary String allocation when logging via slf4j.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b0a749bdc1ad42bf5901954a61f285285e4f813b"
+        },
+        {
+          "sha": "53e06c5e86674b6261832286f758d165bbf412c7",
+          "author_date": "2015-12-23T12:37:25Z",
+          "message": "(refs #1018)Move to xsbt-web-plugin from scalatra-sbt",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/53e06c5e86674b6261832286f758d165bbf412c7"
+        },
+        {
+          "sha": "c072ab2dc5fbbd3f42d295801fe2ca858c190e12",
+          "author_date": "2015-12-23T13:44:20Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c072ab2dc5fbbd3f42d295801fe2ca858c190e12"
+        },
+        {
+          "sha": "3bfd228df1b812d6d7b60cc2cdbbc2c064f56556",
+          "author_date": "2015-12-23T14:03:32Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/3bfd228df1b812d6d7b60cc2cdbbc2c064f56556"
+        },
+        {
+          "sha": "18f525523b18c1dd9b489119e5f3050206053338",
+          "author_date": "2015-12-23T14:06:22Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/18f525523b18c1dd9b489119e5f3050206053338"
+        },
+        {
+          "sha": "c773bb90f6d9bb4bcd4e912142c4c2e7dfcf4ee8",
+          "author_date": "2015-12-23T14:26:59Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c773bb90f6d9bb4bcd4e912142c4c2e7dfcf4ee8"
+        },
+        {
+          "sha": "669949aa8c000265d0d85d20f52aa3f44bd12383",
+          "author_date": "2015-12-23T14:30:10Z",
+          "message": "Update docs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/669949aa8c000265d0d85d20f52aa3f44bd12383"
+        },
+        {
+          "sha": "a47404130b1eca55c7519594d006c1bf76bd1642",
+          "author_date": "2015-12-23T17:58:39Z",
+          "message": "Don't break lines in Wiki or markdown files on the repository viewer",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a47404130b1eca55c7519594d006c1bf76bd1642"
+        },
+        {
+          "sha": "7bd17ed03849dfa795eba6a339b96906a32e97e9",
+          "author_date": "2015-12-24T16:11:40Z",
+          "message": "update sshd dependency\nmigrate to new sshd api\nchange the default key provider algorithm to RSA",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7bd17ed03849dfa795eba6a339b96906a32e97e9"
+        },
+        {
+          "sha": "44e161f6ec51ff8b4616778b036fec54f3c9806a",
+          "author_date": "2015-12-24T16:16:20Z",
+          "message": "update version",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/44e161f6ec51ff8b4616778b036fec54f3c9806a"
+        },
+        {
+          "sha": "7e1f5aa353082cf3ac0f87a44c782b32f4b905cc",
+          "author_date": "2015-12-25T01:26:30Z",
+          "message": "Fix branch control dropdown",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7e1f5aa353082cf3ac0f87a44c782b32f4b905cc"
+        },
+        {
+          "sha": "8191a4bedba830ebdccbd8ca90a6e75dbe699df1",
+          "author_date": "2015-12-25T18:25:49Z",
+          "message": "(refs #1004)Fix edit webhook link url",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/8191a4bedba830ebdccbd8ca90a6e75dbe699df1"
+        },
+        {
+          "sha": "a7024615e1e675b92a91e8987982bbff2ac8df0e",
+          "author_date": "2015-12-26T07:59:30Z",
+          "message": "Merge pull request #1020 from P1tt187/sshd-RSA-keyprovider\n\nupdate sshd dependency, rsa keyprovider as default",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a7024615e1e675b92a91e8987982bbff2ac8df0e"
+        },
+        {
+          "sha": "25031eadfb179a48d62f202da3553801be86443b",
+          "author_date": "2015-12-26T08:00:33Z",
+          "message": "Merge pull request #1017 from swaldman/minor-c3p0-tweaks\n\nUpgrade c3p0 and tweak default config to avoid Tomcat issues",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/25031eadfb179a48d62f202da3553801be86443b"
+        },
+        {
+          "sha": "92f6792ad90e0e152d0d0b26209dc594ece4b6e2",
+          "author_date": "2015-12-26T11:35:55Z",
+          "message": "Adjust format",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/92f6792ad90e0e152d0d0b26209dc594ece4b6e2"
+        },
+        {
+          "sha": "9cc6beead7ff0450b10d041646928e07e5400e8a",
+          "author_date": "2015-12-26T13:48:28Z",
+          "message": "(refs #990)Provides path for raw contents instead of ?raw=true",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9cc6beead7ff0450b10d041646928e07e5400e8a"
+        },
+        {
+          "sha": "c077dd0046f043c6613663ee04d8156f24c3f4c3",
+          "author_date": "2015-12-27T05:40:54Z",
+          "message": "Rename logback-test.xml to logback-dev.xml",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c077dd0046f043c6613663ee04d8156f24c3f4c3"
+        },
+        {
+          "sha": "dfe3fbc02f25e93bb7849b98e76e81c9e92f785e",
+          "author_date": "2015-12-28T16:37:52Z",
+          "message": "Bump up H2 to 1.4.190",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/dfe3fbc02f25e93bb7849b98e76e81c9e92f785e"
+        },
+        {
+          "sha": "990d0824226a5b3cf9e398480f5af243cfa344c1",
+          "author_date": "2015-12-29T16:18:13Z",
+          "message": "3.10 release",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/990d0824226a5b3cf9e398480f5af243cfa344c1"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "3.10_h2-1.4.180",
@@ -2173,8 +3580,741 @@
     {
       "release": "4.30.0",
       "previous_release": "4.29.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "34bbc10f760c84e9af77571173553bda78134002",
+          "author_date": "2018-10-03T10:15:50Z",
+          "message": "Upgraded mariadb-java-client: 2.2.6 -> 2.3.0",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/34bbc10f760c84e9af77571173553bda78134002"
+        },
+        {
+          "sha": "047082b29d9b4856abfb9ac0389c2910477c4ad4",
+          "author_date": "2018-10-03T10:27:14Z",
+          "message": "Upgraded postgresql jdbc: 42.2.4 -> 42.2.5",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/047082b29d9b4856abfb9ac0389c2910477c4ad4"
+        },
+        {
+          "sha": "804027c898340a124ac745784e60700a770c6285",
+          "author_date": "2018-10-03T10:33:07Z",
+          "message": "apache-sshd: 1.6.0 -> 1.7.0",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/804027c898340a124ac745784e60700a770c6285"
+        },
+        {
+          "sha": "de6f173b2e79bb5b42301c7de630c9dffbd1b9c3",
+          "author_date": "2018-10-03T10:39:05Z",
+          "message": "tika-core: 1.17 -> 1.19",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/de6f173b2e79bb5b42301c7de630c9dffbd1b9c3"
+        },
+        {
+          "sha": "243548559f38c7c37eacbbfa5e29366aafe9d9c7",
+          "author_date": "2018-10-03T10:45:11Z",
+          "message": "commons-compress: 1.15 -> 1.18",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/243548559f38c7c37eacbbfa5e29366aafe9d9c7"
+        },
+        {
+          "sha": "0ad66fd64ac5b63cf0a9120b7edc50b5bc748202",
+          "author_date": "2018-10-03T10:50:02Z",
+          "message": "httpclient: 4.5.4 -> 4.5.6",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0ad66fd64ac5b63cf0a9120b7edc50b5bc748202"
+        },
+        {
+          "sha": "fd0d5ca7da14047c78454cec6e77ffc93a1eaa50",
+          "author_date": "2018-10-03T14:21:09Z",
+          "message": "Merge pull request #2155 from uli-heller/mariadb-jdbc-230\n\nUpgraded mariadb-java-client: 2.2.6 -> 2.3.0",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/fd0d5ca7da14047c78454cec6e77ffc93a1eaa50"
+        },
+        {
+          "sha": "2c8671f7122c2812c41ede227701c3c19e0be6c9",
+          "author_date": "2018-10-03T14:21:48Z",
+          "message": "Merge pull request #2158 from uli-heller/tika-1.19\n\ntika-core: 1.17 -> 1.19",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2c8671f7122c2812c41ede227701c3c19e0be6c9"
+        },
+        {
+          "sha": "4aad4e9b741f41465a9260747f1b603b430837f6",
+          "author_date": "2018-10-03T14:22:01Z",
+          "message": "Merge pull request #2159 from uli-heller/commons-compress-118\n\ncommons-compress: 1.15 -> 1.18",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/4aad4e9b741f41465a9260747f1b603b430837f6"
+        },
+        {
+          "sha": "262ee3a74c65945eea31c908a2e3e2b493e553df",
+          "author_date": "2018-10-03T14:22:19Z",
+          "message": "Merge pull request #2160 from uli-heller/httpclient-456\n\nhttpclient: 4.5.4 -> 4.5.6",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/262ee3a74c65945eea31c908a2e3e2b493e553df"
+        },
+        {
+          "sha": "6e17f746f64950779aed7080affa036871cf9405",
+          "author_date": "2018-10-03T14:24:12Z",
+          "message": "Merge branch 'master' into postgresql-jdbc-4225",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6e17f746f64950779aed7080affa036871cf9405"
+        },
+        {
+          "sha": "3d7fe9c0180d82ca9ac6a4d9e371835cddf9caf0",
+          "author_date": "2018-10-03T14:38:58Z",
+          "message": "Merge pull request #2156 from uli-heller/postgresql-jdbc-4225\n\nUpgraded postgresql jdbc: 42.2.4 -> 42.2.5",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/3d7fe9c0180d82ca9ac6a4d9e371835cddf9caf0"
+        },
+        {
+          "sha": "fc0beaec826bc2fccbad36c2f9182434f93e0ff3",
+          "author_date": "2018-10-03T14:39:41Z",
+          "message": "Merge branch 'master' into apache-sshd-170",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/fc0beaec826bc2fccbad36c2f9182434f93e0ff3"
+        },
+        {
+          "sha": "c1433f39954e5478d377528e16fabb817756bb78",
+          "author_date": "2018-10-03T14:50:38Z",
+          "message": "Merge pull request #2157 from uli-heller/apache-sshd-170\n\napache-sshd: 1.6.0 -> 1.7.0",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c1433f39954e5478d377528e16fabb817756bb78"
+        },
+        {
+          "sha": "22cde10e60069f22e8872027eb25ac0e555568e4",
+          "author_date": "2018-10-05T11:44:56Z",
+          "message": "Upgraded apache-sshd: 1.7.0 -> 2.1.0",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/22cde10e60069f22e8872027eb25ac0e555568e4"
+        },
+        {
+          "sha": "c47e48ace88f143d7bcdd6bdbdf9f35cc50e75bd",
+          "author_date": "2018-10-05T11:45:40Z",
+          "message": "Fixes for apache-sshd-2.1.0: Package name for Command and CommandFactory",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c47e48ace88f143d7bcdd6bdbdf9f35cc50e75bd"
+        },
+        {
+          "sha": "bc18abe18512f81937fec41989629a34b1098bcc",
+          "author_date": "2018-10-05T11:55:38Z",
+          "message": "Fixes for apache-sshd-2.1.0: use java.nio.file.Path instead of java.io.File",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/bc18abe18512f81937fec41989629a34b1098bcc"
+        },
+        {
+          "sha": "0cc42f34926b8aac7017036ae18bbe508742aee5",
+          "author_date": "2018-10-05T12:24:56Z",
+          "message": "Fixes for apache-sshd-2.1.0: Fixed package for 'UnknownCommand' - closes #2161",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0cc42f34926b8aac7017036ae18bbe508742aee5"
+        },
+        {
+          "sha": "6ac7429f66d53131088659641d6714e507f4749c",
+          "author_date": "2018-10-07T02:47:53Z",
+          "message": "Split ApiController",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6ac7429f66d53131088659641d6714e507f4749c"
+        },
+        {
+          "sha": "cd49e9b25a2c21d18f82052589f465eb7135a81a",
+          "author_date": "2018-10-07T02:59:35Z",
+          "message": "add 404 for post/put/delete/patch. see #1445",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/cd49e9b25a2c21d18f82052589f465eb7135a81a"
+        },
+        {
+          "sha": "2c3a1b011c86ea0bae811b611f07fd89b80fe3be",
+          "author_date": "2018-10-07T03:27:00Z",
+          "message": "fix comments",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2c3a1b011c86ea0bae811b611f07fd89b80fe3be"
+        },
+        {
+          "sha": "efff209ebde7114b6fa6905385de5d5c703a9e30",
+          "author_date": "2018-10-07T04:31:43Z",
+          "message": "Add removeUser method for move responsibility of calling hooks",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/efff209ebde7114b6fa6905385de5d5c703a9e30"
+        },
+        {
+          "sha": "1da813c7b7b311598082aef32e9c8446be743076",
+          "author_date": "2018-10-07T04:37:13Z",
+          "message": "Move management of directories and calling hooks from Controller to Service",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1da813c7b7b311598082aef32e9c8446be743076"
+        },
+        {
+          "sha": "b797f2384477b7f97a36b8d909d0f1ce56a16278",
+          "author_date": "2018-10-07T05:23:40Z",
+          "message": "Move locks from Controller to Service and other changes.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b797f2384477b7f97a36b8d909d0f1ce56a16278"
+        },
+        {
+          "sha": "481eae1a6e2d237459c2c6d716313c1f01056dba",
+          "author_date": "2018-10-07T09:58:29Z",
+          "message": "Merge pull request #2163 from kounoike/pr-refactor-apicontroller\n\nSplit ApiController",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/481eae1a6e2d237459c2c6d716313c1f01056dba"
+        },
+        {
+          "sha": "06b2bf53338ca4e2d6476b56fa97ef56800be065",
+          "author_date": "2018-10-07T09:58:58Z",
+          "message": "Merge pull request #2162 from uli-heller/apache-sshd-210\n\nApache sshd 210 - closes #2161",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/06b2bf53338ca4e2d6476b56fa97ef56800be065"
+        },
+        {
+          "sha": "6c17b54577c26ff5cb13ef2e4780584e2d5e1e88",
+          "author_date": "2018-10-07T12:37:21Z",
+          "message": "Move some methods to Service from Controller.",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6c17b54577c26ff5cb13ef2e4780584e2d5e1e88"
+        },
+        {
+          "sha": "bf5c1a98ed19315ed424e5fd13b138cc9d5fb330",
+          "author_date": "2018-10-07T12:37:30Z",
+          "message": "fix test",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/bf5c1a98ed19315ed424e5fd13b138cc9d5fb330"
+        },
+        {
+          "sha": "afd68da2c543f1817d1b000ab69199990f7a9ed8",
+          "author_date": "2018-10-07T12:43:58Z",
+          "message": "remove unused argument(baseUrl)",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/afd68da2c543f1817d1b000ab69199990f7a9ed8"
+        },
+        {
+          "sha": "a826589cdb4758c25cc41f3d1bd0b947e5cc2068",
+          "author_date": "2018-10-08T07:53:33Z",
+          "message": "Move webhook call to service",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a826589cdb4758c25cc41f3d1bd0b947e5cc2068"
+        },
+        {
+          "sha": "e961f54405a9b3cbe3ad1aa1739e8a620e54b14d",
+          "author_date": "2018-10-08T07:53:55Z",
+          "message": "Merge remote-tracking branch 'upstream/master' into pr-call-hook-moveto-service",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e961f54405a9b3cbe3ad1aa1739e8a620e54b14d"
+        },
+        {
+          "sha": "78c7a4be0bb8f55618047cedf1c9000c7e05a68d",
+          "author_date": "2018-10-08T08:06:57Z",
+          "message": "fix test's inheritances",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/78c7a4be0bb8f55618047cedf1c9000c7e05a68d"
+        },
+        {
+          "sha": "697415885063a5fb5f1903bab0e94f2fa913a815",
+          "author_date": "2018-10-08T08:07:11Z",
+          "message": "fix visibility for test",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/697415885063a5fb5f1903bab0e94f2fa913a815"
+        },
+        {
+          "sha": "a8f53d965a52fe39353ede7f3889a05300c239b3",
+          "author_date": "2018-10-08T10:00:43Z",
+          "message": "Update version to 4.30.0-SNAPSHOT",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a8f53d965a52fe39353ede7f3889a05300c239b3"
+        },
+        {
+          "sha": "1fe3213e683eb2090063e5bd300f019f892916c1",
+          "author_date": "2018-10-08T14:30:00Z",
+          "message": "Add suspendAccount method",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1fe3213e683eb2090063e5bd300f019f892916c1"
+        },
+        {
+          "sha": "28567acffae8e800a976d29b64488b22fad78feb",
+          "author_date": "2018-10-10T02:22:57Z",
+          "message": "add missing ApiXXControllerBase",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/28567acffae8e800a976d29b64488b22fad78feb"
+        },
+        {
+          "sha": "bb4fe1314b3fcc7f5079c3540edecfad093bf2a0",
+          "author_date": "2018-10-10T02:31:02Z",
+          "message": "scalafmt",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/bb4fe1314b3fcc7f5079c3540edecfad093bf2a0"
+        },
+        {
+          "sha": "ed17f0a9121f3cc7c9f69f1c2d68a6e6505abd26",
+          "author_date": "2018-10-11T04:29:52Z",
+          "message": "tika: Upgraded to 1.19.1",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ed17f0a9121f3cc7c9f69f1c2d68a6e6505abd26"
+        },
+        {
+          "sha": "a1b78a8f2a6ab7368ee58ea8328db6e523eb548b",
+          "author_date": "2018-10-11T04:45:19Z",
+          "message": "jgit: Upgraded to 5.1.2",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a1b78a8f2a6ab7368ee58ea8328db6e523eb548b"
+        },
+        {
+          "sha": "9d32b3841fd461010f38daf332ca77d4f676be24",
+          "author_date": "2018-10-13T00:21:08Z",
+          "message": "Merge pull request #2166 from uli-heller/tika-1191\n\ntika: Upgraded to 1.19.1",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9d32b3841fd461010f38daf332ca77d4f676be24"
+        },
+        {
+          "sha": "a8114216fe2e03b13d40ccbc60d93d1de62a20ad",
+          "author_date": "2018-10-13T00:21:35Z",
+          "message": "Merge pull request #2167 from uli-heller/jgit-512\n\njgit: Upgraded to 5.1.2",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a8114216fe2e03b13d40ccbc60d93d1de62a20ad"
+        },
+        {
+          "sha": "47f1241a937e7da3dfe68861ba0d3fbf7fe9bc3c",
+          "author_date": "2018-10-13T00:21:58Z",
+          "message": "Merge pull request #2165 from kounoike/pr-fixup-2163\n\nadd missing ApiXXControllerBase",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/47f1241a937e7da3dfe68861ba0d3fbf7fe9bc3c"
+        },
+        {
+          "sha": "8c46c730906d197268f05b56d73798d16c44cb7b",
+          "author_date": "2018-10-13T15:46:18Z",
+          "message": "(refs #2168) Revert #2162",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/8c46c730906d197268f05b56d73798d16c44cb7b"
+        },
+        {
+          "sha": "5aac99daf20019117ef1a9f8dceadc3d1217d048",
+          "author_date": "2018-10-13T16:08:09Z",
+          "message": "(refs #2168) Revert #2162",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/5aac99daf20019117ef1a9f8dceadc3d1217d048"
+        },
+        {
+          "sha": "4e65818a1650aa19f70898311c5664cc9dd9fedc",
+          "author_date": "2018-10-14T14:03:16Z",
+          "message": "Merge pull request #2164 from kounoike/pr-call-hook-moveto-service\n\nMove Plugin/Web Hook call to service layer",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/4e65818a1650aa19f70898311c5664cc9dd9fedc"
+        },
+        {
+          "sha": "2fedbbc84b95af95f357489462c1158f34a01e71",
+          "author_date": "2018-10-22T15:41:11Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2fedbbc84b95af95f357489462c1158f34a01e71"
+        },
+        {
+          "sha": "63ae013895d612a7014d4fb5fc31700c9635d971",
+          "author_date": "2018-10-27T08:59:59Z",
+          "message": "update dependencies",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/63ae013895d612a7014d4fb5fc31700c9635d971"
+        },
+        {
+          "sha": "fbf11b7ec4bb12c98882e1f900dbba552e43dad6",
+          "author_date": "2018-10-27T12:06:27Z",
+          "message": "Merge pull request #2174 from xuwei-k/update\n\nupdate dependencies",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/fbf11b7ec4bb12c98882e1f900dbba552e43dad6"
+        },
+        {
+          "sha": "2492046db26a46025e07a5cd50c6ae331fd6fce1",
+          "author_date": "2018-10-31T07:24:27Z",
+          "message": "jgit: upgraded to 5.1.3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2492046db26a46025e07a5cd50c6ae331fd6fce1"
+        },
+        {
+          "sha": "1abec64da705802120143a2a5652072549cd2217",
+          "author_date": "2018-10-31T16:03:24Z",
+          "message": "Merge pull request #2175 from uli-heller/jgit-513\n\njgit: upgraded to 5.1.3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1abec64da705802120143a2a5652072549cd2217"
+        },
+        {
+          "sha": "68609b89961b5516846d378008975cd83d3c03bc",
+          "author_date": "2018-11-01T12:49:19Z",
+          "message": "Remove repeat plugin name\n\nAs the name is already in the panel header, don't repeat it",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/68609b89961b5516846d378008975cd83d3c03bc"
+        },
+        {
+          "sha": "7ab1f3e886fd2b574e66194c85aa3a4eb2b75ba1",
+          "author_date": "2018-11-02T08:39:11Z",
+          "message": "Allow to redirect to Release page from activity",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7ab1f3e886fd2b574e66194c85aa3a4eb2b75ba1"
+        },
+        {
+          "sha": "0c78e38e8f109d9d4179feef5624f1ff213955e5",
+          "author_date": "2018-11-02T17:03:03Z",
+          "message": "Merge pull request #2178 from SIkebe/redirect-to-releasePage-from-activity\n\nAllow to redirect to Release page from activity",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0c78e38e8f109d9d4179feef5624f1ff213955e5"
+        },
+        {
+          "sha": "21cc64feb566d9df98e3233defaf19816c83bc5b",
+          "author_date": "2018-11-02T17:19:20Z",
+          "message": "Merge pull request #2177 from reap3r119/patch-1\n\nRemove repeat plugin name",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/21cc64feb566d9df98e3233defaf19816c83bc5b"
+        },
+        {
+          "sha": "d496e78acd5076f746b4be0b16fdfc91976efee5",
+          "author_date": "2018-11-03T16:44:35Z",
+          "message": "Bump sbt-scalatra plugin to 1.0.3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d496e78acd5076f746b4be0b16fdfc91976efee5"
+        },
+        {
+          "sha": "a92f4ceece7e6fe000091228f62cba58ef84a11e",
+          "author_date": "2018-11-03T17:01:27Z",
+          "message": "Merge pull request #2180 from gitbucket/sbt-scalatra-1.0.3\n\nBump sbt-scalatra plugin to 1.0.3",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a92f4ceece7e6fe000091228f62cba58ef84a11e"
+        },
+        {
+          "sha": "86a849634431d61e8531c7bc086c333a1b52da88",
+          "author_date": "2018-10-05T11:44:56Z",
+          "message": "Upgraded apache-sshd: 1.7.0 -> 2.1.0",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/86a849634431d61e8531c7bc086c333a1b52da88"
+        },
+        {
+          "sha": "ebd2efcd6e6dc48e606bd23edd2b842bf9a1525f",
+          "author_date": "2018-10-05T11:45:40Z",
+          "message": "Fixes for apache-sshd-2.1.0: Package name for Command and CommandFactory",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ebd2efcd6e6dc48e606bd23edd2b842bf9a1525f"
+        },
+        {
+          "sha": "e513a581e747393a4e8161aa18e7e793fe79ea61",
+          "author_date": "2018-10-05T12:24:56Z",
+          "message": "Fixes for apache-sshd-2.1.0: Fixed package for 'UnknownCommand' - closes #2161",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e513a581e747393a4e8161aa18e7e793fe79ea61"
+        },
+        {
+          "sha": "03e32f970e1ea7aa599dddfbe718105bc9e54388",
+          "author_date": "2018-11-04T08:56:29Z",
+          "message": "Fixes for apache-sshd-2.1.0: exclude sshd-mina and sshd-netty - closes #2168",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/03e32f970e1ea7aa599dddfbe718105bc9e54388"
+        },
+        {
+          "sha": "32ef9205495fe5cb6cdea183145909dd59d240c2",
+          "author_date": "2018-11-04T09:44:21Z",
+          "message": "Added sbt plugin in order to determine transitive dependencies - 'sbt dependencyTree'",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/32ef9205495fe5cb6cdea183145909dd59d240c2"
+        },
+        {
+          "sha": "e5c6b9f67ea757b8eddba0383eee2cd8b7246d94",
+          "author_date": "2018-11-04T09:45:17Z",
+          "message": "Exclude HikariCP-java6 - fixes #2181",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e5c6b9f67ea757b8eddba0383eee2cd8b7246d94"
+        },
+        {
+          "sha": "44370452486f4f5ab900b142d780c8e979a5e85d",
+          "author_date": "2018-11-05T03:24:21Z",
+          "message": "Fix typo",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/44370452486f4f5ab900b142d780c8e979a5e85d"
+        },
+        {
+          "sha": "12dcba4a841d23e335d7f56d6bba6a1e1166e651",
+          "author_date": "2018-11-05T03:33:12Z",
+          "message": "Merge pull request #2185 from SIkebe/fix-typo\n\nFix typo",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/12dcba4a841d23e335d7f56d6bba6a1e1166e651"
+        },
+        {
+          "sha": "7fe3211485c734e90f7fd5bd0d732f4a23551f92",
+          "author_date": "2018-11-05T05:37:07Z",
+          "message": "Fixed scalafmtSbtCheck",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7fe3211485c734e90f7fd5bd0d732f4a23551f92"
+        },
+        {
+          "sha": "7f8e36eb6618fc57eed4c148b9953ee904a632e9",
+          "author_date": "2018-11-05T05:50:26Z",
+          "message": "Merge pull request #2183 from uli-heller/hikaricp-java6\n\nHikaricp java6",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7f8e36eb6618fc57eed4c148b9953ee904a632e9"
+        },
+        {
+          "sha": "e65b0f63bbeafa99e9ff4828623e78267b849add",
+          "author_date": "2018-11-05T12:35:51Z",
+          "message": "add openjdk 8 & 11 in the travis-ci build matrix",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e65b0f63bbeafa99e9ff4828623e78267b849add"
+        },
+        {
+          "sha": "20140fffe93305d1a44d7dc5e511968d77593777",
+          "author_date": "2018-11-05T16:07:16Z",
+          "message": "Merge pull request #2182 from uli-heller/sshd-210\n\nSshd 210",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/20140fffe93305d1a44d7dc5e511968d77593777"
+        },
+        {
+          "sha": "7a6635214424dc59f9e437306b2c4ed95fe1c3ad",
+          "author_date": "2018-11-05T23:52:39Z",
+          "message": "Merge pull request #2187 from McFoggy/openjdks\n\nadd openjdk 8 & 11 in the travis-ci build matrix",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7a6635214424dc59f9e437306b2c4ed95fe1c3ad"
+        },
+        {
+          "sha": "3782c74f61ee7e6996989a9c11671ad526641a86",
+          "author_date": "2018-11-09T01:16:35Z",
+          "message": "Fix markdown rendering",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/3782c74f61ee7e6996989a9c11671ad526641a86"
+        },
+        {
+          "sha": "37df03815e93e831c81fc732b7cf303cada3b18d",
+          "author_date": "2018-11-09T05:03:49Z",
+          "message": "Cleanup",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/37df03815e93e831c81fc732b7cf303cada3b18d"
+        },
+        {
+          "sha": "d8220a9021c67d753a3bcf62471360883bd49478",
+          "author_date": "2018-11-09T09:10:49Z",
+          "message": "Merge pull request #2189 from gitbucket/fix-markdown-rendering\n\nFix link rendering in Markdown",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d8220a9021c67d753a3bcf62471360883bd49478"
+        },
+        {
+          "sha": "36ce8701ef095da416eb3aba393b4ef85187bcfa",
+          "author_date": "2018-11-11T05:30:40Z",
+          "message": "add fail pattern for resolve warning",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/36ce8701ef095da416eb3aba393b4ef85187bcfa"
+        },
+        {
+          "sha": "5375ec88c888eb7dd7ddfbf4986f413b92ff61a7",
+          "author_date": "2018-11-11T05:31:25Z",
+          "message": "Update akka-actor 2.5.17 -> 2.5.18",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/5375ec88c888eb7dd7ddfbf4986f413b92ff61a7"
+        },
+        {
+          "sha": "43febc2f55676fce8cc99b9400fb489a35eb7932",
+          "author_date": "2018-11-11T05:34:04Z",
+          "message": "delete unused import",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/43febc2f55676fce8cc99b9400fb489a35eb7932"
+        },
+        {
+          "sha": "ab21d06848aa6150fb8d9a70d10a5037d3aebbdc",
+          "author_date": "2018-11-11T05:47:29Z",
+          "message": "Merge pull request #2190 from NomadBlacky/akka-actor-2.5.18\n\nUpdate akka-actor 2.5.17 -> 2.5.18",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ab21d06848aa6150fb8d9a70d10a5037d3aebbdc"
+        },
+        {
+          "sha": "fda847640da6069a9f058e9c0bc606f4057369f9",
+          "author_date": "2018-11-11T05:53:14Z",
+          "message": "Merge pull request #2191 from ROki1988/add_fail_pattern_at_access-token\n\nAdd fail pattern at access token test",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/fda847640da6069a9f058e9c0bc606f4057369f9"
+        },
+        {
+          "sha": "7e0fb5b2bbec7fb924fe50427ede10f64ba19d60",
+          "author_date": "2018-11-11T06:14:03Z",
+          "message": "Fix Map#get & getOrElse to Map#getOrElse",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7e0fb5b2bbec7fb924fe50427ede10f64ba19d60"
+        },
+        {
+          "sha": "d17070bc35beb4851e3634859dc1c1e16b65da0b",
+          "author_date": "2018-11-11T11:04:05Z",
+          "message": "Set commit date time to archive entries",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d17070bc35beb4851e3634859dc1c1e16b65da0b"
+        },
+        {
+          "sha": "1799e9b487d1659bbf9bc5cc3f50b3ec1cbf488c",
+          "author_date": "2018-11-11T17:27:57Z",
+          "message": "Merge pull request #2193 from NomadBlacky/get-and-getOrElse-to-getOrElse\n\nFix Map#get & getOrElse to Map#getOrElse",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1799e9b487d1659bbf9bc5cc3f50b3ec1cbf488c"
+        },
+        {
+          "sha": "2592e5a41d2d2529c773d58a8a3bb811c71d1fa2",
+          "author_date": "2018-11-12T02:49:21Z",
+          "message": "Update dependencies",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2592e5a41d2d2529c773d58a8a3bb811c71d1fa2"
+        },
+        {
+          "sha": "13f19fd260ed9a63daa29a41b17b338905aed25f",
+          "author_date": "2018-11-12T13:17:44Z",
+          "message": "Merge pull request #2194 from xuwei-k/update\n\nUpdate dependencies",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/13f19fd260ed9a63daa29a41b17b338905aed25f"
+        },
+        {
+          "sha": "b3294f03fdfee4090c04d1dcbeaa7c9f2632ad4a",
+          "author_date": "2018-11-12T14:38:35Z",
+          "message": "Use java.util.Date instead of Long for modtime of archive entries",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/b3294f03fdfee4090c04d1dcbeaa7c9f2632ad4a"
+        },
+        {
+          "sha": "e8262cf5ced67e77ae69ba4d6d5826fa7c0a717f",
+          "author_date": "2018-11-12T15:01:04Z",
+          "message": "Merge pull request #2192 from gitbucket/set-archive-entry-date\n\nSet the commit datetime to archive entries",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e8262cf5ced67e77ae69ba4d6d5826fa7c0a717f"
+        },
+        {
+          "sha": "41f1c0c136ef4f6d89d23935ce19186646b6568a",
+          "author_date": "2018-11-13T12:32:31Z",
+          "message": "(refs #2184) Fix authorization for group web hook  configuration page",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/41f1c0c136ef4f6d89d23935ce19186646b6568a"
+        },
+        {
+          "sha": "694b77294cea10fc4030f177e24c781a73d23baa",
+          "author_date": "2018-11-15T14:46:25Z",
+          "message": "Remove deprecated methods",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/694b77294cea10fc4030f177e24c781a73d23baa"
+        },
+        {
+          "sha": "d5f1fc33d159fff59a0a3c21d104de6646a8095e",
+          "author_date": "2018-11-15T15:00:18Z",
+          "message": "Add new extension point: anonymousAccessiblePaths",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d5f1fc33d159fff59a0a3c21d104de6646a8095e"
+        },
+        {
+          "sha": "52eb2a13846500db6d635675a45f383e8818b285",
+          "author_date": "2018-11-15T23:10:41Z",
+          "message": "Merge pull request #2196 from gitbucket/fix-group-webhook-auth\n\n Fix authorization for group web hook  configuration page",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/52eb2a13846500db6d635675a45f383e8818b285"
+        },
+        {
+          "sha": "2a093df13e6361fe59935df038d528e0fb93df43",
+          "author_date": "2018-11-15T23:12:23Z",
+          "message": "Merge pull request #2199 from gitbucket/anonymous-accessible-paths\n\nAdd new extension point: anonymousAccessiblePaths",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2a093df13e6361fe59935df038d528e0fb93df43"
+        },
+        {
+          "sha": "6104d7657b4718d2d18319c7ed91ad4d834fba43",
+          "author_date": "2018-11-15T23:19:41Z",
+          "message": "Leaked implementation #2199",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/6104d7657b4718d2d18319c7ed91ad4d834fba43"
+        },
+        {
+          "sha": "60592debe35ca9721f9dc102bb474e82de76faf6",
+          "author_date": "2018-11-22T18:14:57Z",
+          "message": "update some more dependencies",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/60592debe35ca9721f9dc102bb474e82de76faf6"
+        },
+        {
+          "sha": "ace583ecce80ccdec8cf02ee3a41ea8d3a78a7b0",
+          "author_date": "2018-11-23T09:16:49Z",
+          "message": "remove commented out parameter",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ace583ecce80ccdec8cf02ee3a41ea8d3a78a7b0"
+        },
+        {
+          "sha": "3c7816be6ca2e2d378be735b218d2de6fbd2b083",
+          "author_date": "2018-11-23T12:29:38Z",
+          "message": "Merge pull request #2200 from aadrian/deps_updates_november\n\nupdate some more dependencies",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/3c7816be6ca2e2d378be735b218d2de6fbd2b083"
+        },
+        {
+          "sha": "1e59941ca595af4be819a8d987cd6aabb14c2444",
+          "author_date": "2018-11-30T03:49:01Z",
+          "message": "Display disabled checkbox in markdown files",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1e59941ca595af4be819a8d987cd6aabb14c2444"
+        },
+        {
+          "sha": "93687dd8054043c875fca6d393a0d1423c78a74a",
+          "author_date": "2018-12-01T01:48:48Z",
+          "message": "Merge pull request #2205 from gitbucket/markdown-checkbox\n\nDisplay disabled checkbox in markdown files",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/93687dd8054043c875fca6d393a0d1423c78a74a"
+        },
+        {
+          "sha": "c47ddf02b14a760b3b9b2db2f3185057aabba369",
+          "author_date": "2018-12-07T05:40:07Z",
+          "message": "scala-2.12.7 -> 2.12.8",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c47ddf02b14a760b3b9b2db2f3185057aabba369"
+        },
+        {
+          "sha": "d135f959f9c48b59140bc700d367aca56eb6bdcf",
+          "author_date": "2018-12-08T01:54:54Z",
+          "message": "(refs #2209) Aggregate the line separator conversion to StringUtil",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d135f959f9c48b59140bc700d367aca56eb6bdcf"
+        },
+        {
+          "sha": "816f2d30ae7f62599d930303e2f0357bc5ab16cc",
+          "author_date": "2018-12-08T01:56:35Z",
+          "message": "Merge pull request #2208 from uli-heller/scala-2128\n\nscala-2.12.7 -> 2.12.8",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/816f2d30ae7f62599d930303e2f0357bc5ab16cc"
+        },
+        {
+          "sha": "79267a63b11816a8c3c5c8652fce888ccefe5e06",
+          "author_date": "2018-12-08T03:01:29Z",
+          "message": "Merge pull request #2211 from gitbucket/convert-line-separator\n\nAggregate the line separator conversion to StringUtil",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/79267a63b11816a8c3c5c8652fce888ccefe5e06"
+        },
+        {
+          "sha": "f42ff607728fe051c3988e50e641b27301544c64",
+          "author_date": "2018-10-08T14:23:18Z",
+          "message": "Add some GitHub compatible API, close #2079",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/f42ff607728fe051c3988e50e641b27301544c64"
+        },
+        {
+          "sha": "2eee95bd2da8a5cc09fec2100a82be811d5bbd53",
+          "author_date": "2018-10-13T00:40:18Z",
+          "message": "Add Issue label related APIs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2eee95bd2da8a5cc09fec2100a82be811d5bbd53"
+        },
+        {
+          "sha": "12d41cc3ce4c22c023ca69302750f5452052c656",
+          "author_date": "2018-12-08T10:13:12Z",
+          "message": "Merge remote-tracking branch 'upstream/master' into pr-implemt-apis",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/12d41cc3ce4c22c023ca69302750f5452052c656"
+        },
+        {
+          "sha": "023d150d95917547d6899c5d9fab6a332a718d0e",
+          "author_date": "2018-10-13T01:24:34Z",
+          "message": "Add user management related APIs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/023d150d95917547d6899c5d9fab6a332a718d0e"
+        },
+        {
+          "sha": "a66041de88ae6f9675b1baceea3971db0446f71b",
+          "author_date": "2018-10-13T01:24:49Z",
+          "message": "CRLF->LF",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/a66041de88ae6f9675b1baceea3971db0446f71b"
+        },
+        {
+          "sha": "c5760bd378521ab1134380d801276f70d9d5be59",
+          "author_date": "2018-10-13T01:26:01Z",
+          "message": "scalafmt",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c5760bd378521ab1134380d801276f70d9d5be59"
+        },
+        {
+          "sha": "ac00c03a9636727b7c46d676dd203a4d7e901b6a",
+          "author_date": "2018-10-13T01:48:10Z",
+          "message": "modify fields to option",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/ac00c03a9636727b7c46d676dd203a4d7e901b6a"
+        },
+        {
+          "sha": "90f0006bc0dc109935e1cf45fa35daff56acb3f3",
+          "author_date": "2018-10-13T08:16:35Z",
+          "message": "implement PullRequest related APIs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/90f0006bc0dc109935e1cf45fa35daff56acb3f3"
+        },
+        {
+          "sha": "edf0903620745d7a64268357054e52299c408fcc",
+          "author_date": "2018-10-13T14:47:45Z",
+          "message": "scalafmt",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/edf0903620745d7a64268357054e52299c408fcc"
+        },
+        {
+          "sha": "1afa893596c4c94b6d74b252de6809d05bc9371e",
+          "author_date": "2018-11-23T17:09:05Z",
+          "message": "Merge remote-tracking branch 'upstream/master' into pr-implemt-apis",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1afa893596c4c94b6d74b252de6809d05bc9371e"
+        },
+        {
+          "sha": "0e4b7f951d0a6faa558f451e21c2bfa3fa5c11e2",
+          "author_date": "2018-11-23T17:10:03Z",
+          "message": "Merge remote-tracking branch 'upstream/master' into pr-implemt-apis",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/0e4b7f951d0a6faa558f451e21c2bfa3fa5c11e2"
+        },
+        {
+          "sha": "1d6abae837024c3741e92af46b796c3a81cc2246",
+          "author_date": "2018-12-08T10:22:59Z",
+          "message": "Merge remote-tracking branch 'upstream/master' into pr-implemt-apis",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1d6abae837024c3741e92af46b796c3a81cc2246"
+        },
+        {
+          "sha": "de0bdac66b8358bb636e0e0360aaa82d3482179a",
+          "author_date": "2018-12-08T10:53:32Z",
+          "message": "fix inherit error",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/de0bdac66b8358bb636e0e0360aaa82d3482179a"
+        },
+        {
+          "sha": "347490ed400def3249693d0fc492972c93725249",
+          "author_date": "2018-12-08T13:19:12Z",
+          "message": "Update maven badge",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/347490ed400def3249693d0fc492972c93725249"
+        },
+        {
+          "sha": "1a031b964d03412d8dc87e547906e4cf846e489e",
+          "author_date": "2018-12-09T01:24:18Z",
+          "message": "Merge pull request #2212 from kounoike/pr-implemt-apis\n\nAdd GitHub compatible APIs",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1a031b964d03412d8dc87e547906e4cf846e489e"
+        },
+        {
+          "sha": "2296a2524b1673a3191758a8199b20aff5c28464",
+          "author_date": "2018-12-08T12:05:38Z",
+          "message": "Generate ChangeLog for description of releases",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/2296a2524b1673a3191758a8199b20aff5c28464"
+        },
+        {
+          "sha": "7fdb5ab1426737c629d046c617b7cc4cff5a5c30",
+          "author_date": "2018-12-09T03:02:18Z",
+          "message": "Merge pull request #2213 from gitbucket/generate-changelog\n\nGenerate ChangeLog for description of releases",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/7fdb5ab1426737c629d046c617b7cc4cff5a5c30"
+        },
+        {
+          "sha": "9d827eaa29efb4d7d77ac3e96909de2b5f7bca09",
+          "author_date": "2018-12-09T03:14:50Z",
+          "message": "Updates for GitBucket 4.30.0 release",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9d827eaa29efb4d7d77ac3e96909de2b5f7bca09"
+        },
+        {
+          "sha": "9408a168fbfd2d5cf910e3533508a00b5ea64b47",
+          "author_date": "2018-12-09T13:36:40Z",
+          "message": "improve wording",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/9408a168fbfd2d5cf910e3533508a00b5ea64b47"
+        },
+        {
+          "sha": "d7cf60c9d617944ab3ff4fc83d8a9cf130619ba6",
+          "author_date": "2018-12-09T13:37:15Z",
+          "message": "improve wording",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d7cf60c9d617944ab3ff4fc83d8a9cf130619ba6"
+        },
+        {
+          "sha": "e205c0082e68ecf9c7aceabf23b752d0d823ecee",
+          "author_date": "2018-12-09T14:01:54Z",
+          "message": "typo",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e205c0082e68ecf9c7aceabf23b752d0d823ecee"
+        },
+        {
+          "sha": "dad7e03ec110b92a2433d571905e202243bcdad0",
+          "author_date": "2018-12-09T14:02:26Z",
+          "message": "typo",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/dad7e03ec110b92a2433d571905e202243bcdad0"
+        },
+        {
+          "sha": "d536504e32240d9139086db7aec1907bf716dc71",
+          "author_date": "2018-12-11T16:00:11Z",
+          "message": "Merge pull request #2214 from gitbucket/gitbucket-4.30.0-release\n\nUpdates for GitBucket 4.30.0 release",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/d536504e32240d9139086db7aec1907bf716dc71"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "4.30.1",
@@ -2227,8 +4367,45 @@
     {
       "release": "4.35.1",
       "previous_release": "4.35.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "66be84289dff6bb090648a74ea10d7662b8b9af3",
+          "author_date": "2020-12-25T13:34:47Z",
+          "message": "Show commit status at commits tab of pull request (#2606)",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/66be84289dff6bb090648a74ea10d7662b8b9af3"
+        },
+        {
+          "sha": "e7ddfc7ebbd6135db084c5b0b1c2186d02c3d6aa",
+          "author_date": "2020-12-27T04:35:57Z",
+          "message": "Bump to sbt 1.4.6, Scala 2.13.3, and Scalatra 2.7.1 (#2609)\n\n* Bump to sbt 1.4.6, Scala 2.13.3, and Scalatra 2.7.1\r\n* Fix warnings in Scala 2.13",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/e7ddfc7ebbd6135db084c5b0b1c2186d02c3d6aa"
+        },
+        {
+          "sha": "1dfe76e21c823eb17e5ca74f206cc9303cc82c3c",
+          "author_date": "2020-12-27T10:10:07Z",
+          "message": "Fix WEB_HOOK table migration issue in 4.35.0 (#2610)",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/1dfe76e21c823eb17e5ca74f206cc9303cc82c3c"
+        },
+        {
+          "sha": "736fdafea448750d6895a6f31b09c30c4432883f",
+          "author_date": "2020-12-28T01:54:48Z",
+          "message": "Call webhook when pull request is merged (#2611)",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/736fdafea448750d6895a6f31b09c30c4432883f"
+        },
+        {
+          "sha": "c63e20ce7da7589852bb33409c49785855d65d47",
+          "author_date": "2020-12-28T15:26:58Z",
+          "message": "Resurrect ActivityComponent for binary compatibility in 4.35.1 (#2612)",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/c63e20ce7da7589852bb33409c49785855d65d47"
+        },
+        {
+          "sha": "41d13db5d48bea22b5db4dd1ccf59b165f01779f",
+          "author_date": "2020-12-28T15:31:22Z",
+          "message": "Release 4.35.1",
+          "html_url": "https://github.com/gitbucket/gitbucket/commit/41d13db5d48bea22b5db4dd1ccf59b165f01779f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "4.35.2",
