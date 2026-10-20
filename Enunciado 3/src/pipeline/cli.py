@@ -9,6 +9,7 @@ import csv
 import json
 import logging
 import os
+import random
 import sys
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -26,7 +27,7 @@ from cache.sqlite_store import SQLiteStore
 from collector.commits import collect_commits_between
 from collector.releases import collect_releases
 from collector.runs import collect_runs
-from collector.search import collect_candidates
+from collector.search import collect_candidates, load_candidate_manifest
 from collector.tags import collect_tags
 from github.models import Release
 from github.rest import GitHubRESTClient
@@ -34,8 +35,8 @@ from metrics import (
     DORAClassification,
     DORAVariant,
     censored_proportion,
-    classify_dora,
     cfr_a,
+    classify_dora,
     deployment_frequency,
     kaplan_meier_recovery,
     lead_time_by_commit,
@@ -117,6 +118,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Limite de repositórios processados (para smoke tests)",
     )
+    parser.add_argument("--candidate-manifest", help="CSV versionado que congela os candidatos.")
     parser.add_argument(
         "--force",
         action="store_true",
@@ -225,7 +227,11 @@ def _run_collect_commits(config_path: str, limit: int | None, token: str) -> int
             log.error("JSON ouro ausente para %s", full_name)
             return full_name, 0
         data = json.loads(path.read_text(encoding="utf-8"))
-        releases = [Release(**item) for item in data.get("releases", [])]
+        releases = [
+            Release(**item)
+            for item in data.get("releases", [])
+            if not item.get("draft", False) and not item.get("prerelease", False)
+        ]
         by_tag = {release.tag_name: index for index, release in enumerate(releases)}
         client = _create_client_from_pool(cfg, token_pool)
         store = SQLiteStore(cache_db)
@@ -276,7 +282,10 @@ def _run_collect_commits(config_path: str, limit: int | None, token: str) -> int
     return 0
 
 
-def _run_collect(config_path: str, limit: int | None, token: str, force: bool = False) -> int:
+def _run_collect(
+    config_path: str, limit: int | None, token: str, force: bool = False,
+    candidate_manifest: str | None = None,
+) -> int:
     """Executa o estágio de coleta (T04 + T05) com paralelismo e pool de tokens."""
     config_path = Path(config_path)
     with open(config_path, "rb") as handle:
@@ -305,16 +314,15 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
     token_pool = _create_token_pool(cfg, token)
 
     # 1. Buscar candidatos (usa primeiro token do pool)
-    log.info("Iniciando busca de candidatos...")
-    search_client = _create_client_from_pool(cfg, token_pool)
-    candidates = collect_candidates(
-        search_client,
-        config_path,
-        limit=limit,
-        store=store,
-        stage="collect:search",
-    )
-    search_client.close()
+    manifest_path = candidate_manifest or paths_cfg.get("candidate_manifest_csv")
+    if manifest_path:
+        candidates = load_candidate_manifest(base / Path(manifest_path))
+        log.info("Carregados %d candidatos do manifesto", len(candidates))
+    else:
+        log.info("Iniciando busca de candidatos...")
+        search_client = _create_client_from_pool(cfg, token_pool)
+        candidates = collect_candidates(search_client, config_path, limit=limit, store=store, stage="collect:search")
+        search_client.close()
 
     if limit is not None:
         candidates = candidates[:limit]
@@ -363,8 +371,11 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                 stage="collect:releases",
             )
 
+            principal_releases = [
+                r for r in releases if not r.draft and not r.prerelease
+            ]
             releases_in_window = [
-                r for r in releases if _in_window(r.published_at, start_date, end_date)
+                r for r in principal_releases if _eligible_release(r, start_date, end_date)
             ]
             if len(releases_in_window) < min_releases:
                 log.info(
@@ -414,7 +425,7 @@ def _run_collect(config_path: str, limit: int | None, token: str, force: bool = 
                 repo_client,
                 owner,
                 repo,
-                _commit_scope(releases, start_date, end_date),
+                _commit_scope(principal_releases, start_date, end_date),
                 store=local_store,
                 stage="collect:commits",
             )
@@ -524,6 +535,19 @@ def _in_window(timestamp: str | None, start: str, end: str) -> bool:
     return start <= timestamp[:10] <= end
 
 
+def _eligible_release(release: Any, start: str, end: str) -> bool:
+    """Return whether a release belongs to the principal DORA definition."""
+    if isinstance(release, dict):
+        published_at = release.get("published_at")
+        draft = release.get("draft", False)
+        prerelease = release.get("prerelease", False)
+    else:
+        published_at = getattr(release, "published_at", None)
+        draft = getattr(release, "draft", False)
+        prerelease = getattr(release, "prerelease", False)
+    return not draft and not prerelease and _in_window(published_at, start, end)
+
+
 def _commit_scope(releases: list, start: str, end: str) -> list:
     """Releases na janela mais a release anterior (necessária para o compare).
 
@@ -579,8 +603,14 @@ def _run_metrics(config_path: str) -> int:
     window_end = window_cfg["end"]
     min_releases = cfg["filters"]["min_releases"]
     min_workflow_runs = cfg["filters"]["min_workflow_runs"]
+    final_sample_size = int(cfg["filters"].get("final_sample_size", 0))
 
     repos = _load_gold_repos(gold_dir)
+    manifest_path = paths_cfg.get("candidate_manifest_csv")
+    if manifest_path:
+        manifest = load_candidate_manifest(base / Path(manifest_path))
+        allowed_names = {candidate.full_name for candidate in manifest}
+        repos = [repo for repo in repos if repo["repository"]["full_name"] in allowed_names]
     log.info("Carregados %d repositórios de %s", len(repos), gold_dir)
 
     if not repos:
@@ -600,7 +630,7 @@ def _run_metrics(config_path: str) -> int:
         # Só entram releases, tags e runs publicados dentro da janela (ENUNCIADO §3)
         releases = [
             r for r in repo_data["releases"]
-            if _in_window(r["published_at"], window_start, window_end)
+            if _eligible_release(r, window_start, window_end)
         ]
         tags = [
             t for t in repo_data["tags"]
@@ -666,13 +696,18 @@ def _run_metrics(config_path: str) -> int:
                     run_started_at=run["run_started_at"],
                     updated_at=run["updated_at"],
                 ))
-        episodes = recovery_episodes(runs_flat)
+        episodes = recovery_episodes(runs_flat, censor_at=f"{window_end}T23:59:59Z")
         recovery_hours = median_recovery_hours(episodes)
         censored_prop = censored_proportion(episodes)
 
         # Deployment frequency (releases only)
         release_infos = [
-            ReleaseInfo(published_at=r["published_at"], draft=r["draft"]) for r in releases
+            ReleaseInfo(
+                published_at=r["published_at"],
+                draft=r.get("draft", False),
+                prerelease=r.get("prerelease", False),
+            )
+            for r in releases
         ]
         deploy_freq = deployment_frequency(release_infos, window_weeks=window_weeks)
 
@@ -724,9 +759,28 @@ def _run_metrics(config_path: str) -> int:
                 "n_censored": survival.n_censored,
                 "n_total": survival.n_total,
             },
+            # Mantém a unidade mínima necessária para refazer a Kaplan--Meier
+            # agregada sem nova chamada à API (T19). Datas e mensagens não são
+            # replicadas aqui porque já não são necessárias à análise.
+            "recovery_episodes": [
+                {"duration_hours": episode.duration_hours, "censored": episode.censored}
+                for episode in episodes
+                if episode.duration_hours is not None
+            ],
         }
 
         repo_metrics.append(repo_result)
+
+    if final_sample_size:
+        if len(repo_metrics) < final_sample_size:
+            raise ValueError(
+                f"manifesto produziu {len(repo_metrics)} repositórios elegíveis; "
+                f"mínimo fixado: {final_sample_size}"
+            )
+        repo_metrics = sorted(
+            random.Random(42).sample(repo_metrics, final_sample_size),
+            key=lambda item: item["repository"]["full_name"].casefold(),
+        )
 
     log.info(
         "Funil (metrics): %d repositórios lidos, %d descartados, %d na amostra final",
@@ -840,7 +894,6 @@ def _run_report(config_path: str) -> int:
 
     metrics_csv = datasets_dir / "metrics.csv"
     corr_json = datasets_dir / "correlations.json"
-    metrics_json = datasets_dir / "metrics_full.json"
 
     if not metrics_csv.exists():
         log.error("Arquivo %s não encontrado. Rode 'metrics' primeiro.", metrics_csv)
@@ -968,7 +1021,7 @@ def main(argv: list[str] | None = None) -> int:
             log.info("Limite ativado: processando no máximo %d repositório(s).", args.limit)
         if args.force:
             log.info("Modo --force ativado: ignorando cache.")
-        return _run_collect(args.config, args.limit, env_token or "", args.force)
+        return _run_collect(args.config, args.limit, env_token or "", args.force, args.candidate_manifest)
 
     if args.stage == "collect-commits":
         log.info("Iniciando pipeline, estágio: collect-commits")

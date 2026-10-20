@@ -34,7 +34,7 @@ def _runs_from_fixture(data):
 
 def test_episode_matches_enunciado_example(enunciado_example):
     runs = _runs_from_fixture(enunciado_example)
-    episodes = recovery_episodes(runs)
+    episodes = recovery_episodes(runs, censor_at="2026-01-01T12:00:00Z")
 
     assert len(episodes) == 1
     episode = episodes[0]
@@ -57,12 +57,12 @@ def test_censored_episode_when_window_ends_mid_failure():
         WorkflowRunSample(1, "failure", "2026-01-01T10:00:00Z", "2026-01-01T10:05:00Z"),
         # janela termina aqui: nenhum sucesso depois da falha
     ]
-    episodes = recovery_episodes(runs)
+    episodes = recovery_episodes(runs, censor_at="2026-01-01T12:00:00Z")
 
     assert len(episodes) == 1
     assert episodes[0].censored is True
     assert episodes[0].recovered_at is None
-    assert episodes[0].duration_hours is None
+    assert episodes[0].duration_hours == pytest.approx(2.0)
     assert median_recovery_hours(episodes) is None
     assert censored_proportion(episodes) == 1.0
 

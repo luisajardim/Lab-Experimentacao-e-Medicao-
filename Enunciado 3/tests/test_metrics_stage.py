@@ -71,7 +71,7 @@ def test_metrics_stage_generates_one_csv_per_variant(tmp_path):
             rows = list(reader)
         assert len(rows) == 1
         assert rows[0]["full_name"] == "owner/repo"
-        assert rows[0]["dora_category"] == "Medium/Low"
+        assert rows[0]["dora_category"] == "Medium"
 
 
 def test_dora_to_dict_includes_category_and_variant():
@@ -119,6 +119,57 @@ def test_metrics_stage_discards_repo_with_releases_outside_window(tmp_path):
 
     with open(tmp_path / "datasets" / "dora_c1.csv", newline="", encoding="utf-8") as handle:
         assert list(csv.DictReader(handle)) == []
+
+
+def test_metrics_stage_discards_prereleases_from_principal_definition(tmp_path):
+    config = _write_config(tmp_path)
+    _write_repo(tmp_path)
+    path = tmp_path / "gold" / "owner" / "repo.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data["releases"][1]["prerelease"] = True
+    path.write_text(json.dumps(data), encoding="utf-8")
+
+    assert _run_metrics(str(config)) == 0
+
+    with open(tmp_path / "datasets" / "dora_c1.csv", newline="", encoding="utf-8") as handle:
+        assert list(csv.DictReader(handle)) == []
+
+
+def test_metrics_stage_keeps_censored_episodes_for_survival(tmp_path):
+    config = _write_config(tmp_path)
+    _write_repo(tmp_path)
+    path = tmp_path / "gold" / "owner" / "repo.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data["runs_by_month"]["2025-11"][2]["conclusion"] = "failure"
+    path.write_text(json.dumps(data), encoding="utf-8")
+
+    assert _run_metrics(str(config)) == 0
+
+    with open(tmp_path / "datasets" / "metrics.csv", newline="", encoding="utf-8") as handle:
+        row = next(csv.DictReader(handle))
+    assert row["survival_n_censored"] == "1"
+
+
+def test_metrics_stage_uses_only_the_versioned_manifest(tmp_path):
+    config = _write_config(tmp_path)
+    config.write_text(
+        config.read_text(encoding="utf-8").replace(
+            'datasets_dir = "datasets"',
+            'datasets_dir = "datasets"\ncandidate_manifest_csv = "raw/manifest.csv"',
+        ),
+        encoding="utf-8",
+    )
+    _write_repo(tmp_path)
+    manifest = tmp_path / "raw" / "manifest.csv"
+    manifest.parent.mkdir()
+    manifest.write_text(
+        "full_name,stars,language,default_branch,created_at\nother/repo,1,,,\n",
+        encoding="utf-8",
+    )
+
+    assert _run_metrics(str(config)) == 0
+
+    assert not (tmp_path / "datasets" / "metrics.csv").exists()
 
 
 def test_write_funnel_report_generates_markdown_table(tmp_path):

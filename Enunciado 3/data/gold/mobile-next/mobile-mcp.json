@@ -879,8 +879,8 @@
     {
       "release": "0.0.14",
       "previous_release": "0.0.15",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [],
+      "ignored_reason": null
     },
     {
       "release": "0.0.12",
@@ -909,8 +909,57 @@
     {
       "release": "0.0.20",
       "previous_release": "0.0.19",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "19d7504b851e8b25b7892127c2093b7852be4111",
+          "author_date": "2025-06-16T08:50:43Z",
+          "message": "fix: disable auto-rotation before setting device orientation manually",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/19d7504b851e8b25b7892127c2093b7852be4111"
+        },
+        {
+          "sha": "0ef4d0b3482b594d97f393a2c77ec45709989f40",
+          "author_date": "2025-06-16T08:57:59Z",
+          "message": "test: swiping direction was incorrect",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/0ef4d0b3482b594d97f393a2c77ec45709989f40"
+        },
+        {
+          "sha": "7261c7b90f91246afb485f453fcd1dd3d0ff1c9a",
+          "author_date": "2025-06-16T08:58:14Z",
+          "message": "test: test android orientation change",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/7261c7b90f91246afb485f453fcd1dd3d0ff1c9a"
+        },
+        {
+          "sha": "0d3d67956f49096f12a9905a68a32d4fdd77a454",
+          "author_date": "2025-06-16T09:07:52Z",
+          "message": "chore: version 0.0.19 changes",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/0d3d67956f49096f12a9905a68a32d4fdd77a454"
+        },
+        {
+          "sha": "e1647c5d7cc689a023f65af35c85e05f662a1899",
+          "author_date": "2025-06-20T09:13:32Z",
+          "message": "feat: save_screenshot tool, and use_default_device",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/e1647c5d7cc689a023f65af35c85e05f662a1899"
+        },
+        {
+          "sha": "75a4115e23ab10aff7e12aacd88119a44f9aa0b2",
+          "author_date": "2025-06-23T08:27:26Z",
+          "message": "fix: use wda to take screenshots for both ios and simulators",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/75a4115e23ab10aff7e12aacd88119a44f9aa0b2"
+        },
+        {
+          "sha": "cfda91edd5ef217b18fa644ae3266306a83578fc",
+          "author_date": "2025-06-23T10:15:38Z",
+          "message": "fix: support non-ascii characters in android's sendKeys() using devicekit",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/cfda91edd5ef217b18fa644ae3266306a83578fc"
+        },
+        {
+          "sha": "b4c7c482085557274371ffcd98eb798580fe30d7",
+          "author_date": "2025-06-23T10:32:49Z",
+          "message": "chore: update changes for 0.0.20",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/b4c7c482085557274371ffcd98eb798580fe30d7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.0.21",
@@ -987,8 +1036,39 @@
     {
       "release": "0.0.33",
       "previous_release": "0.0.32",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "e902e91c4790d0a2aa296182fbe373df0a184762",
+          "author_date": "2025-10-08T16:16:21Z",
+          "message": "feat: automatic publish versions to github mcp-registry (#212)",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/e902e91c4790d0a2aa296182fbe373df0a184762"
+        },
+        {
+          "sha": "fc176e50f1722682602b22259f003fc2f88287e9",
+          "author_date": "2025-10-09T13:26:37Z",
+          "message": "Merge branch 'main' of github.com:mobile-next/mobile-mcp",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/fc176e50f1722682602b22259f003fc2f88287e9"
+        },
+        {
+          "sha": "1d9952fff321c7a57fa522b3c6e31adbd557c6ac",
+          "author_date": "2025-10-20T18:13:13Z",
+          "message": "feat: collect problematic screenshot events (#213)",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/1d9952fff321c7a57fa522b3c6e31adbd557c6ac"
+        },
+        {
+          "sha": "8c5159ee5cbd21ee938e172f539b8736982e9f91",
+          "author_date": "2025-10-20T18:14:04Z",
+          "message": "Merge branch 'main' of github.com:mobile-next/mobile-mcp",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/8c5159ee5cbd21ee938e172f539b8736982e9f91"
+        },
+        {
+          "sha": "c187ebc76ce0fa4c663eadc17199909f8de43d54",
+          "author_date": "2025-10-20T18:15:26Z",
+          "message": "feat: version 0.0.33",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/c187ebc76ce0fa4c663eadc17199909f8de43d54"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.0.34",
@@ -1065,8 +1145,27 @@
     {
       "release": "0.0.46",
       "previous_release": "0.0.45",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "5b875bd6d4e03a03f7c5679389dd7a7304abd285",
+          "author_date": "2026-03-03T16:13:00Z",
+          "message": "feat: add screenrecording to mp4 (#282)",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/5b875bd6d4e03a03f7c5679389dd7a7304abd285"
+        },
+        {
+          "sha": "84edb68fb96fe11767b96b2fe36352805ba6f3e5",
+          "author_date": "2026-03-03T16:13:14Z",
+          "message": "Merge branch 'main' of github.com:mobile-next/mobile-mcp",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/84edb68fb96fe11767b96b2fe36352805ba6f3e5"
+        },
+        {
+          "sha": "e0b925493d835c070b0c28ee0f477a02ed819766",
+          "author_date": "2026-03-03T16:15:18Z",
+          "message": "feat: version 0.0.46",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/e0b925493d835c070b0c28ee0f477a02ed819766"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "0.0.47",
@@ -1143,8 +1242,27 @@
     {
       "release": "0.0.59",
       "previous_release": "0.0.58",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "da4e14ad87f61218c9c92df93125b44a9514668d",
+          "author_date": "2026-06-08T19:16:51Z",
+          "message": "chore: updated hono packages for security (#349)",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/da4e14ad87f61218c9c92df93125b44a9514668d"
+        },
+        {
+          "sha": "815701c1accda8bdbe71819e91825224e4052c14",
+          "author_date": "2026-06-09T12:52:09Z",
+          "message": "chore: updated mobilewright sdk version (#350)",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/815701c1accda8bdbe71819e91825224e4052c14"
+        },
+        {
+          "sha": "9008f712891b39c751dfc1f5a39f1368d1e38a5f",
+          "author_date": "2026-06-09T13:02:11Z",
+          "message": "docs: update changelog for v0.0.59 (#351)",
+          "html_url": "https://github.com/mobile-next/mobile-mcp/commit/9008f712891b39c751dfc1f5a39f1368d1e38a5f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "1.0.0",

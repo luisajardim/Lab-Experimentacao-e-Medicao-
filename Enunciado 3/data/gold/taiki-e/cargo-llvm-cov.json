@@ -1,0 +1,4179 @@
+{
+  "repository": {
+    "full_name": "taiki-e/cargo-llvm-cov",
+    "stars": 1478,
+    "language": "Rust",
+    "default_branch": "main",
+    "created_at": "2021-01-16T16:59:06Z"
+  },
+  "releases": [
+    {
+      "id": 36798606,
+      "tag_name": "v0.1.0-alpha.1",
+      "name": "0.1.0-alpha.1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-01-23T05:13:57Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.0-alpha.1"
+    },
+    {
+      "id": 37951141,
+      "tag_name": "v0.1.0-alpha.2",
+      "name": "0.1.0-alpha.2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-02-12T00:37:10Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.0-alpha.2"
+    },
+    {
+      "id": 44131492,
+      "tag_name": "v0.1.0-alpha.3",
+      "name": "0.1.0-alpha.3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-06-04T20:42:31Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.0-alpha.3"
+    },
+    {
+      "id": 44544463,
+      "tag_name": "v0.1.0-alpha.4",
+      "name": "0.1.0-alpha.4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-06-13T23:33:12Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.0-alpha.4"
+    },
+    {
+      "id": 47482934,
+      "tag_name": "v0.1.0-alpha.5",
+      "name": "0.1.0-alpha.5",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-08-07T22:01:53Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.0-alpha.5"
+    },
+    {
+      "id": 47874439,
+      "tag_name": "v0.1.0",
+      "name": "0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-08-15T18:15:21Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.0"
+    },
+    {
+      "id": 48453339,
+      "tag_name": "v0.1.1",
+      "name": "0.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-08-25T19:06:00Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.1"
+    },
+    {
+      "id": 48516032,
+      "tag_name": "v0.1.2",
+      "name": "0.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-08-26T16:41:52Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.2"
+    },
+    {
+      "id": 48521724,
+      "tag_name": "v0.1.3",
+      "name": "0.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-08-26T18:23:33Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.3"
+    },
+    {
+      "id": 48628403,
+      "tag_name": "v0.1.4",
+      "name": "0.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-08-29T09:10:31Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.4"
+    },
+    {
+      "id": 48812325,
+      "tag_name": "v0.1.5",
+      "name": "0.1.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-09-01T12:15:45Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.5"
+    },
+    {
+      "id": 48952003,
+      "tag_name": "v0.1.6",
+      "name": "0.1.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-09-03T10:07:00Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.6"
+    },
+    {
+      "id": 49813776,
+      "tag_name": "v0.1.7",
+      "name": "0.1.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-09-19T13:10:12Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.7"
+    },
+    {
+      "id": 50755881,
+      "tag_name": "v0.1.8",
+      "name": "0.1.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-10-04T16:18:19Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.8"
+    },
+    {
+      "id": 51297446,
+      "tag_name": "v0.1.9",
+      "name": "0.1.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-10-13T15:55:45Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.9"
+    },
+    {
+      "id": 51920056,
+      "tag_name": "v0.1.10",
+      "name": "0.1.10",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-10-23T23:50:35Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.10"
+    },
+    {
+      "id": 53287617,
+      "tag_name": "v0.1.11",
+      "name": "0.1.11",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-11-13T09:38:57Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.11"
+    },
+    {
+      "id": 53396336,
+      "tag_name": "v0.1.12",
+      "name": "0.1.12",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-11-15T14:53:47Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.12"
+    },
+    {
+      "id": 55268843,
+      "tag_name": "v0.1.13",
+      "name": "0.1.13",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-12-14T12:30:45Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.13"
+    },
+    {
+      "id": 56547784,
+      "tag_name": "v0.1.14",
+      "name": "0.1.14",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-06T15:59:35Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.14"
+    },
+    {
+      "id": 56556510,
+      "tag_name": "v0.1.15",
+      "name": "0.1.15",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-06T17:59:47Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.15"
+    },
+    {
+      "id": 57696802,
+      "tag_name": "v0.1.16",
+      "name": "0.1.16",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-21T14:53:52Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.1.16"
+    },
+    {
+      "id": 58815511,
+      "tag_name": "v0.2.0",
+      "name": "0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-02-06T13:50:38Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.2.0"
+    },
+    {
+      "id": 59867687,
+      "tag_name": "v0.2.1",
+      "name": "0.2.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-02-18T02:35:23Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.2.1"
+    },
+    {
+      "id": 60702300,
+      "tag_name": "v0.2.2",
+      "name": "0.2.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-03-01T12:47:58Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.2.2"
+    },
+    {
+      "id": 61054689,
+      "tag_name": "v0.2.3",
+      "name": "0.2.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-03-05T10:47:43Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.2.3"
+    },
+    {
+      "id": 62202793,
+      "tag_name": "v0.2.4",
+      "name": "0.2.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-03-18T15:37:55Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.2.4"
+    },
+    {
+      "id": 63961269,
+      "tag_name": "v0.3.0",
+      "name": "0.3.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-08T10:46:46Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.3.0"
+    },
+    {
+      "id": 65749478,
+      "tag_name": "v0.3.1",
+      "name": "0.3.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-01T03:55:43Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.3.1"
+    },
+    {
+      "id": 66172773,
+      "tag_name": "v0.3.2",
+      "name": "0.3.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-05T22:39:58Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.3.2"
+    },
+    {
+      "id": 66272129,
+      "tag_name": "v0.3.3",
+      "name": "0.3.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-06T22:31:32Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.3.3"
+    },
+    {
+      "id": 66637981,
+      "tag_name": "v0.4.0",
+      "name": "0.4.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-12T00:39:44Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.0"
+    },
+    {
+      "id": 67663421,
+      "tag_name": "v0.4.1",
+      "name": "0.4.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-24T13:31:10Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.1"
+    },
+    {
+      "id": 68093866,
+      "tag_name": "v0.4.2",
+      "name": "0.4.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-29T13:32:48Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.2"
+    },
+    {
+      "id": 68094486,
+      "tag_name": "v0.4.3",
+      "name": "0.4.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-29T14:03:22Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.3"
+    },
+    {
+      "id": 68107290,
+      "tag_name": "v0.4.4",
+      "name": "0.4.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-30T01:20:48Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.4"
+    },
+    {
+      "id": 68446626,
+      "tag_name": "v0.4.5",
+      "name": "0.4.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-02T13:17:21Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.5"
+    },
+    {
+      "id": 69296617,
+      "tag_name": "v0.4.6",
+      "name": "0.4.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-13T12:40:53Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.6"
+    },
+    {
+      "id": 69316247,
+      "tag_name": "v0.4.7",
+      "name": "0.4.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-13T15:53:02Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.7"
+    },
+    {
+      "id": 69634057,
+      "tag_name": "v0.4.8",
+      "name": "0.4.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-16T15:47:57Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.8"
+    },
+    {
+      "id": 71487094,
+      "tag_name": "v0.4.9",
+      "name": "0.4.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-07T15:19:47Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.9"
+    },
+    {
+      "id": 72195020,
+      "tag_name": "v0.4.10",
+      "name": "0.4.10",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-18T06:53:34Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.10"
+    },
+    {
+      "id": 72430853,
+      "tag_name": "v0.4.11",
+      "name": "0.4.11",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-20T13:48:46Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.11"
+    },
+    {
+      "id": 73235345,
+      "tag_name": "v0.4.12",
+      "name": "0.4.12",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-30T07:42:45Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.12"
+    },
+    {
+      "id": 73301039,
+      "tag_name": "v0.4.13",
+      "name": "0.4.13",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-01T02:54:08Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.13"
+    },
+    {
+      "id": 73812772,
+      "tag_name": "v0.4.14",
+      "name": "0.4.14",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-06T16:50:49Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.4.14"
+    },
+    {
+      "id": 76786647,
+      "tag_name": "v0.5.0",
+      "name": "0.5.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-10T08:15:22Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.0"
+    },
+    {
+      "id": 84260473,
+      "tag_name": "v0.5.1",
+      "name": "0.5.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-27T12:24:29Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.1"
+    },
+    {
+      "id": 84265125,
+      "tag_name": "v0.5.2",
+      "name": "0.5.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-27T15:41:59Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.2"
+    },
+    {
+      "id": 86153213,
+      "tag_name": "v0.5.3",
+      "name": "0.5.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-12-15T11:59:33Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.3"
+    },
+    {
+      "id": 88292972,
+      "tag_name": "v0.5.4",
+      "name": "0.5.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-09T11:01:10Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.4"
+    },
+    {
+      "id": 88402605,
+      "tag_name": "v0.5.5",
+      "name": "0.5.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-10T05:50:43Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.5"
+    },
+    {
+      "id": 88587174,
+      "tag_name": "v0.5.6",
+      "name": "0.5.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-11T13:40:41Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.6"
+    },
+    {
+      "id": 88600179,
+      "tag_name": "v0.5.7",
+      "name": "0.5.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-11T15:10:08Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.7"
+    },
+    {
+      "id": 89000006,
+      "tag_name": "v0.5.8",
+      "name": "0.5.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-15T03:00:02Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.8"
+    },
+    {
+      "id": 89069984,
+      "tag_name": "v0.5.9",
+      "name": "0.5.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-15T23:48:54Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.9"
+    },
+    {
+      "id": 93461582,
+      "tag_name": "v0.5.10",
+      "name": "0.5.10",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-23T15:56:56Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.10"
+    },
+    {
+      "id": 93966631,
+      "tag_name": "v0.5.11",
+      "name": "0.5.11",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-28T17:14:38Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.11"
+    },
+    {
+      "id": 97777475,
+      "tag_name": "v0.5.12",
+      "name": "0.5.12",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-02T20:55:29Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.12"
+    },
+    {
+      "id": 97860427,
+      "tag_name": "v0.5.13",
+      "name": "0.5.13",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-03T14:10:34Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.13"
+    },
+    {
+      "id": 98188873,
+      "tag_name": "v0.5.14",
+      "name": "0.5.14",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-05T13:21:39Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.14"
+    },
+    {
+      "id": 99618544,
+      "tag_name": "v0.5.15",
+      "name": "0.5.15",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-15T08:06:09Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.15"
+    },
+    {
+      "id": 99959847,
+      "tag_name": "v0.5.16",
+      "name": "0.5.16",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-18T19:02:59Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.16"
+    },
+    {
+      "id": 100353578,
+      "tag_name": "v0.5.17",
+      "name": "0.5.17",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-21T15:05:41Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.17"
+    },
+    {
+      "id": 100814905,
+      "tag_name": "v0.5.18",
+      "name": "0.5.18",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-25T13:50:25Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.18"
+    },
+    {
+      "id": 101314741,
+      "tag_name": "v0.5.19",
+      "name": "0.5.19",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-28T17:16:25Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.19"
+    },
+    {
+      "id": 105868872,
+      "tag_name": "v0.5.20",
+      "name": "0.5.20",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-02T17:38:40Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.20"
+    },
+    {
+      "id": 110368458,
+      "tag_name": "v0.5.21",
+      "name": "0.5.21",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-29T14:14:18Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.21"
+    },
+    {
+      "id": 110391048,
+      "tag_name": "v0.5.22",
+      "name": "0.5.22",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-29T16:50:29Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.22"
+    },
+    {
+      "id": 111427105,
+      "tag_name": "v0.5.23",
+      "name": "0.5.23",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-07-07T15:07:19Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.23"
+    },
+    {
+      "id": 114044327,
+      "tag_name": "v0.5.24",
+      "name": "0.5.24",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-07-28T19:25:44Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.24"
+    },
+    {
+      "id": 115368986,
+      "tag_name": "v0.5.25",
+      "name": "0.5.25",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-06T09:13:25Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.25"
+    },
+    {
+      "id": 116650110,
+      "tag_name": "v0.5.26",
+      "name": "0.5.26",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-12T14:31:06Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.26"
+    },
+    {
+      "id": 117176826,
+      "tag_name": "v0.5.27",
+      "name": "0.5.27",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-14T14:58:22Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.27"
+    },
+    {
+      "id": 118241712,
+      "tag_name": "v0.5.28",
+      "name": "0.5.28",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-22T16:41:23Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.28"
+    },
+    {
+      "id": 118400285,
+      "tag_name": "v0.5.29",
+      "name": "0.5.29",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-23T12:53:04Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.29"
+    },
+    {
+      "id": 118420713,
+      "tag_name": "v0.5.30",
+      "name": "0.5.30",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-23T14:51:07Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.30"
+    },
+    {
+      "id": 118612263,
+      "tag_name": "v0.5.31",
+      "name": "0.5.31",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-24T18:51:21Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.31"
+    },
+    {
+      "id": 122312354,
+      "tag_name": "v0.5.32",
+      "name": "0.5.32",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-23T11:25:15Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.32"
+    },
+    {
+      "id": 122658281,
+      "tag_name": "v0.5.33",
+      "name": "0.5.33",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-26T17:31:00Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.33"
+    },
+    {
+      "id": 125423857,
+      "tag_name": "v0.5.34",
+      "name": "0.5.34",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-17T13:35:06Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.34"
+    },
+    {
+      "id": 125662628,
+      "tag_name": "v0.5.35",
+      "name": "0.5.35",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-18T17:50:50Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.35"
+    },
+    {
+      "id": 127254558,
+      "tag_name": "v0.5.36",
+      "name": "0.5.36",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-30T20:37:27Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.36"
+    },
+    {
+      "id": 129872388,
+      "tag_name": "v0.5.37",
+      "name": "0.5.37",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-17T01:44:07Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.37"
+    },
+    {
+      "id": 133758831,
+      "tag_name": "v0.5.38",
+      "name": "0.5.38",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-13T14:48:48Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.38"
+    },
+    {
+      "id": 134184807,
+      "tag_name": "v0.5.39",
+      "name": "0.5.39",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-16T12:55:31Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.5.39"
+    },
+    {
+      "id": 135257363,
+      "tag_name": "v0.6.0",
+      "name": "0.6.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-28T10:16:29Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.0"
+    },
+    {
+      "id": 136922271,
+      "tag_name": "v0.6.1",
+      "name": "0.6.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-13T05:59:37Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.1"
+    },
+    {
+      "id": 137574279,
+      "tag_name": "v0.6.2",
+      "name": "0.6.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-18T14:40:36Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.2"
+    },
+    {
+      "id": 138330512,
+      "tag_name": "v0.6.3",
+      "name": "0.6.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-24T13:25:01Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.3"
+    },
+    {
+      "id": 138517251,
+      "tag_name": "v0.6.4",
+      "name": "0.6.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-25T13:45:34Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.4"
+    },
+    {
+      "id": 140364840,
+      "tag_name": "v0.6.5",
+      "name": "0.6.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-02-07T16:31:47Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.5"
+    },
+    {
+      "id": 143112325,
+      "tag_name": "v0.6.6",
+      "name": "0.6.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-02-22T05:53:23Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.6"
+    },
+    {
+      "id": 145712752,
+      "tag_name": "v0.6.7",
+      "name": "0.6.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-10T11:09:49Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.7"
+    },
+    {
+      "id": 146882729,
+      "tag_name": "v0.6.8",
+      "name": "0.6.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-16T09:29:15Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.8"
+    },
+    {
+      "id": 149927231,
+      "tag_name": "v0.6.9",
+      "name": "0.6.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-05T11:09:02Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.9"
+    },
+    {
+      "id": 158457882,
+      "tag_name": "v0.6.10",
+      "name": "0.6.10",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-01T14:03:25Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.10"
+    },
+    {
+      "id": 166096584,
+      "tag_name": "v0.6.11",
+      "name": "0.6.11",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-07-18T16:58:24Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.11"
+    },
+    {
+      "id": 173240094,
+      "tag_name": "v0.6.12",
+      "name": "0.6.12",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-09-03T14:49:38Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.12"
+    },
+    {
+      "id": 175093734,
+      "tag_name": "v0.6.13",
+      "name": "0.6.13",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-09-14T21:03:39Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.13"
+    },
+    {
+      "id": 179638299,
+      "tag_name": "v0.6.14",
+      "name": "0.6.14",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-12T10:32:31Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.14"
+    },
+    {
+      "id": 191982683,
+      "tag_name": "v0.6.15",
+      "name": "0.6.15",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-12-21T19:52:39Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.15"
+    },
+    {
+      "id": 195170583,
+      "tag_name": "v0.6.16",
+      "name": "0.6.16",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-01-16T16:30:41Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.16"
+    },
+    {
+      "id": 230265272,
+      "tag_name": "v0.6.17",
+      "name": "0.6.17",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-07-06T04:51:06Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.17"
+    },
+    {
+      "id": 233671873,
+      "tag_name": "v0.6.18",
+      "name": "0.6.18",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-07-19T10:22:07Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.18"
+    },
+    {
+      "id": 245352145,
+      "tag_name": "v0.6.19",
+      "name": "0.6.19",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-09-07T13:40:56Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.19"
+    },
+    {
+      "id": 252163700,
+      "tag_name": "v0.6.20",
+      "name": "0.6.20",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-04T05:42:48Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.20"
+    },
+    {
+      "id": 253704814,
+      "tag_name": "v0.6.21",
+      "name": "0.6.21",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-10T17:18:22Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.21"
+    },
+    {
+      "id": 273358109,
+      "tag_name": "v0.6.22",
+      "name": "0.6.22",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-30T08:44:31Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.22"
+    },
+    {
+      "id": 274569949,
+      "tag_name": "v0.6.23",
+      "name": "0.6.23",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-06T16:24:38Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.23"
+    },
+    {
+      "id": 279081216,
+      "tag_name": "v0.6.24",
+      "name": "0.6.24",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-22T16:47:08Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.6.24"
+    },
+    {
+      "id": 279611945,
+      "tag_name": "v0.7.0",
+      "name": "0.7.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-24T09:40:21Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.7.0"
+    },
+    {
+      "id": 279620596,
+      "tag_name": "v0.7.1",
+      "name": "0.7.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-24T11:56:53Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.7.1"
+    },
+    {
+      "id": 279971291,
+      "tag_name": "v0.8.0",
+      "name": "0.8.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-26T15:49:46Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.8.0"
+    },
+    {
+      "id": 279998153,
+      "tag_name": "v0.8.1",
+      "name": "0.8.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-26T17:16:04Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.8.1"
+    },
+    {
+      "id": 280260196,
+      "tag_name": "v0.8.2",
+      "name": "0.8.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-27T11:47:30Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.8.2"
+    },
+    {
+      "id": 283427690,
+      "tag_name": "v0.8.3",
+      "name": "0.8.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-05T16:32:08Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.8.3"
+    },
+    {
+      "id": 283879212,
+      "tag_name": "v0.8.4",
+      "name": "0.8.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-06T19:59:48Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.8.4"
+    },
+    {
+      "id": 299326804,
+      "tag_name": "v0.8.5",
+      "name": "0.8.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-20T09:37:04Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.8.5"
+    },
+    {
+      "id": 319876355,
+      "tag_name": "v0.8.6",
+      "name": "0.8.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-09T07:43:05Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.8.6"
+    },
+    {
+      "id": 321527146,
+      "tag_name": "v0.8.7",
+      "name": "0.8.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-13T01:05:10Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.8.7"
+    },
+    {
+      "id": 371424223,
+      "tag_name": "v0.9.0",
+      "name": "0.9.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-08-16T20:19:51Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.9.0"
+    },
+    {
+      "id": 383645519,
+      "tag_name": "v0.9.1",
+      "name": "0.9.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-09-06T16:23:43Z",
+      "html_url": "https://github.com/taiki-e/cargo-llvm-cov/releases/tag/v0.9.1"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.9.1",
+      "sha": "0dc905679ae6b4740b186f6e2c2ef1ab78fb76d7",
+      "date": "2026-09-06T16:20:41Z"
+    },
+    {
+      "name": "v0.8.7",
+      "sha": "c9df45843b856adffbd891c3a9854927e9528523",
+      "date": "2026-05-13T00:59:49Z"
+    },
+    {
+      "name": "v0.8.6",
+      "sha": "082a4669ad3425184e577279fadac6841ef8cc56",
+      "date": "2026-05-09T07:37:01Z"
+    },
+    {
+      "name": "v0.8.5",
+      "sha": "f3db8a1e3770a7e66681ee1b9597398e7d3f87a4",
+      "date": "2026-03-20T09:29:20Z"
+    },
+    {
+      "name": "v0.8.4",
+      "sha": "88655648110d83d256f8c26bd201fd7135564cad",
+      "date": "2026-02-06T19:55:26Z"
+    },
+    {
+      "name": "v0.8.3",
+      "sha": "8ac72d17b6a27348ee23d88920e98882e7840389",
+      "date": "2026-02-05T16:26:28Z"
+    },
+    {
+      "name": "v0.8.2",
+      "sha": "c3c29e15a751bc1e62fee43d496434efbd483bad",
+      "date": "2026-01-27T11:39:48Z"
+    },
+    {
+      "name": "v0.8.1",
+      "sha": "a8e590cae03b643aa66d16d44743d0b4ea97126d",
+      "date": "2026-01-26T17:03:25Z"
+    },
+    {
+      "name": "v0.8.0",
+      "sha": "9ffb15ed39cce9a6e677a04492513d0bd66e272f",
+      "date": "2026-01-26T15:44:44Z"
+    },
+    {
+      "name": "v0.7.1",
+      "sha": "eac9449cef7deb55cbded92af68f1cb2b95e2b02",
+      "date": "2026-01-24T11:51:38Z"
+    },
+    {
+      "name": "v0.9.0",
+      "sha": "be59056988acd54c7f984b7c85643daea3711b29",
+      "date": "2026-08-16T20:16:29Z"
+    },
+    {
+      "name": "v0.7.0",
+      "sha": "822bf6c217d541d4ca3ba91d2f4fc998154cec34",
+      "date": "2026-01-24T09:36:39Z"
+    },
+    {
+      "name": "v0.6.24",
+      "sha": "b26773615b4b639c969810468924e8d22d58dd75",
+      "date": "2026-01-22T16:42:05Z"
+    },
+    {
+      "name": "v0.6.23",
+      "sha": "ba7c31b66a9387b433c77da64cc4d622b341a338",
+      "date": "2026-01-06T16:15:26Z"
+    },
+    {
+      "name": "v0.6.22",
+      "sha": "a99fc0090dcde73086326151b250ab4ef206d6ed",
+      "date": "2025-12-30T08:44:29Z"
+    },
+    {
+      "name": "v0.6.20",
+      "sha": "5c982b4eedcd7f7e541fef8516485205c05ad888",
+      "date": "2025-10-04T05:40:03Z"
+    },
+    {
+      "name": "v0.6.21",
+      "sha": "31b63e9d6b24bc337e8b138edd6514fe903b7889",
+      "date": "2025-10-10T17:16:49Z"
+    },
+    {
+      "name": "v0.6.18",
+      "sha": "41bc491939ec27f2ee73b1bdaf48c4e627cc84e2",
+      "date": "2025-07-19T10:21:36Z"
+    },
+    {
+      "name": "v0.6.19",
+      "sha": "b6e0e800275831ad121eb9bdb0c52635d36da3d4",
+      "date": "2025-09-07T13:39:56Z"
+    },
+    {
+      "name": "v0.6.17",
+      "sha": "6c8640e8d2ddb8a4d072a4c16c1b5ff47ac0c210",
+      "date": "2025-07-06T04:50:31Z"
+    },
+    {
+      "name": "v0.6.16",
+      "sha": "ad4b5765dbeb1ea7f22c0df5ff1e502ec73d162f",
+      "date": "2025-01-16T16:30:03Z"
+    },
+    {
+      "name": "v0.6.14",
+      "sha": "955dd1329ba25c5029572f0e933d54cd78ed86e6",
+      "date": "2024-10-12T10:31:58Z"
+    },
+    {
+      "name": "v0.6.15",
+      "sha": "e95c27b6b6e9b1d32452239976a02ce7dd5c4fb0",
+      "date": "2024-12-21T19:52:07Z"
+    },
+    {
+      "name": "v0.6.13",
+      "sha": "2cc13f9c430c17b35d490ced2091975c443c9c31",
+      "date": "2024-09-14T21:03:07Z"
+    },
+    {
+      "name": "v0.6.12",
+      "sha": "1615781357ededa2415ca74984aef092d70de5d3",
+      "date": "2024-09-03T14:48:56Z"
+    },
+    {
+      "name": "v0.6.10",
+      "sha": "60b54ac797eea9dcae7c8524c44b5de07fa1b11d",
+      "date": "2024-06-01T14:02:50Z"
+    },
+    {
+      "name": "v0.6.11",
+      "sha": "1a43c62171f73e92c0308ec5f95293731055d445",
+      "date": "2024-07-18T16:57:52Z"
+    },
+    {
+      "name": "v0.6.9",
+      "sha": "757c4783dc650138ad733061dfebdb40f10fc5ce",
+      "date": "2024-04-05T11:08:16Z"
+    },
+    {
+      "name": "v0.6.8",
+      "sha": "f74997dc3cf6663a947c63fac44cbc8a89b81882",
+      "date": "2024-03-16T09:28:40Z"
+    },
+    {
+      "name": "v0.6.7",
+      "sha": "a2593c08092d537882c2cf6227289289941faf30",
+      "date": "2024-03-10T11:09:15Z"
+    },
+    {
+      "name": "v0.6.6",
+      "sha": "ccefa1e8199d46193a2569441a7a5e21ac824d9f",
+      "date": "2024-02-22T05:52:48Z"
+    },
+    {
+      "name": "v0.6.5",
+      "sha": "7dc30d4b43d343c365ed59b678ea674eaacd22aa",
+      "date": "2024-02-07T16:31:10Z"
+    },
+    {
+      "name": "v0.6.4",
+      "sha": "20bee281156c404896457a8dd037a5eeb06f3881",
+      "date": "2024-01-25T13:44:17Z"
+    },
+    {
+      "name": "v0.6.3",
+      "sha": "b822f19b7dea14c418962d9a3f613e1a1da06f6f",
+      "date": "2024-01-24T13:24:25Z"
+    },
+    {
+      "name": "v0.6.2",
+      "sha": "071a9efe6b9837a1e0ddc522df98e0ab7170e488",
+      "date": "2024-01-18T14:39:57Z"
+    },
+    {
+      "name": "v0.6.1",
+      "sha": "bab773225daf2763eeeed6399f87a651a65f825d",
+      "date": "2024-01-13T05:59:00Z"
+    },
+    {
+      "name": "v0.6.0",
+      "sha": "f003745fa03d49a1135eaf43027d9f2cb7d64bf2",
+      "date": "2023-12-28T10:15:53Z"
+    },
+    {
+      "name": "v0.5.39",
+      "sha": "0bfd42ffebcfec4398d87341929de4484638c92e",
+      "date": "2023-12-16T12:54:53Z"
+    },
+    {
+      "name": "v0.5.38",
+      "sha": "05e5308800d43e0bc67c22325f2d92150329ac86",
+      "date": "2023-12-13T14:48:07Z"
+    },
+    {
+      "name": "v0.5.37",
+      "sha": "746bcdeba5320be4c7cab2235d7870cb3542f746",
+      "date": "2023-11-17T01:43:24Z"
+    },
+    {
+      "name": "v0.5.36",
+      "sha": "8e48504bb5651e1c21d7a629ef97d71a9494ee64",
+      "date": "2023-10-30T20:36:30Z"
+    },
+    {
+      "name": "v0.5.35",
+      "sha": "5aab043909de199c4f3ec01a1a88502a91037110",
+      "date": "2023-10-18T17:49:44Z"
+    },
+    {
+      "name": "v0.5.34",
+      "sha": "8f90c616702e3d289b0de234e29d8889d0b50174",
+      "date": "2023-10-17T13:33:59Z"
+    },
+    {
+      "name": "v0.5.33",
+      "sha": "44006f279fad5493ec69268217a0fa934a3d3d05",
+      "date": "2023-09-26T17:28:46Z"
+    },
+    {
+      "name": "v0.5.32",
+      "sha": "892665c550d41f226da11eeee5849f36aeea9179",
+      "date": "2023-09-23T11:23:16Z"
+    },
+    {
+      "name": "v0.5.31",
+      "sha": "d871542c59ac2ea2b265daf6e441a6b578a76df9",
+      "date": "2023-08-24T18:50:21Z"
+    },
+    {
+      "name": "v0.5.30",
+      "sha": "c087e994b9a9f417eeeb0e7d69ea11013b1116f0",
+      "date": "2023-08-23T14:50:02Z"
+    },
+    {
+      "name": "v0.5.28",
+      "sha": "0e80d23f18b3e3ab5b06bb8bfe50db122b962261",
+      "date": "2023-08-22T16:40:26Z"
+    },
+    {
+      "name": "v0.5.29",
+      "sha": "4da937187b2d456e2c09d114bcb0cc37f4acbd8e",
+      "date": "2023-08-23T12:46:05Z"
+    },
+    {
+      "name": "v0.5.27",
+      "sha": "4e328ca27255fe98b2a0a0f6a772f26d8cbfa9d2",
+      "date": "2023-08-14T14:57:20Z"
+    },
+    {
+      "name": "v0.5.26",
+      "sha": "6b9627df6dc19dd436ab90ac4edac9528dc94141",
+      "date": "2023-08-12T14:30:12Z"
+    },
+    {
+      "name": "v0.5.24",
+      "sha": "195f2ab78b978b086d45cc8daed06202e0b8e8c1",
+      "date": "2023-07-28T19:24:41Z"
+    },
+    {
+      "name": "v0.5.25",
+      "sha": "8edb98ac10f2f1dcecb9bfcdc60484a5615d8168",
+      "date": "2023-08-06T09:12:23Z"
+    },
+    {
+      "name": "v0.5.22",
+      "sha": "f8236b0081118dbba9fe214402201b9ab0493ea0",
+      "date": "2023-06-29T16:49:38Z"
+    },
+    {
+      "name": "v0.5.23",
+      "sha": "f549f67247df20a4d854b1927fe6a13bcf1cdd33",
+      "date": "2023-07-07T15:06:14Z"
+    },
+    {
+      "name": "v0.5.21",
+      "sha": "661abb1e84842554f332f882c9e255ab78072879",
+      "date": "2023-06-29T14:13:09Z"
+    },
+    {
+      "name": "v0.5.20",
+      "sha": "e42f476def5583a49885adfbed596a6948f2a5f3",
+      "date": "2023-06-02T17:37:41Z"
+    },
+    {
+      "name": "v0.5.18",
+      "sha": "5f904dad0d58400a58d3df5d5df238a454fa4b12",
+      "date": "2023-04-25T13:48:54Z"
+    },
+    {
+      "name": "v0.5.19",
+      "sha": "08015c42a5537e714a03b2c1f1cbbd323ea0643e",
+      "date": "2023-04-28T17:00:28Z"
+    },
+    {
+      "name": "v0.5.17",
+      "sha": "e2156287fb9cc80500f8a3e2178fe55d0db4eff6",
+      "date": "2023-04-21T15:03:56Z"
+    },
+    {
+      "name": "v0.5.16",
+      "sha": "cf0c365a17c879cc3a0e504e248439017d02a9cf",
+      "date": "2023-04-18T19:01:51Z"
+    },
+    {
+      "name": "v0.5.14",
+      "sha": "f32d4d8f47b5ab884b047b1ed814b99569f37f1d",
+      "date": "2023-04-05T13:19:32Z"
+    },
+    {
+      "name": "v0.5.15",
+      "sha": "256cc94a248e479c6cc501697aff8fa92c05fc2f",
+      "date": "2023-04-15T08:04:47Z"
+    },
+    {
+      "name": "v0.5.12",
+      "sha": "676c9e7bcc7a94a9c617fde56ae8166657262f0e",
+      "date": "2023-04-02T20:43:37Z"
+    },
+    {
+      "name": "v0.5.13",
+      "sha": "557669ad6a24ec9c57710c94496b52ba501ae8b3",
+      "date": "2023-04-03T14:08:16Z"
+    },
+    {
+      "name": "v0.5.10",
+      "sha": "90f6b73375077bda3a9b31def59d8eebafb536ea",
+      "date": "2023-02-23T15:55:06Z"
+    },
+    {
+      "name": "v0.5.11",
+      "sha": "cd5c5c2eb500d3d540b3964e68729edaf16735b8",
+      "date": "2023-02-28T17:05:41Z"
+    },
+    {
+      "name": "v0.5.9",
+      "sha": "11bb3d3c91c22818f2b046d2812644b73fce360c",
+      "date": "2023-01-15T23:47:27Z"
+    },
+    {
+      "name": "v0.5.8",
+      "sha": "94db59b3961161fa64177e4bf04af5a4f69c9bc5",
+      "date": "2023-01-15T02:57:59Z"
+    },
+    {
+      "name": "v0.5.7",
+      "sha": "e7581d5b4e5895d6e540ebd2abf5b827669cbbc9",
+      "date": "2023-01-11T15:08:31Z"
+    },
+    {
+      "name": "v0.5.6",
+      "sha": "7c9b515eab4939d874cba9e61f10905c6702e822",
+      "date": "2023-01-11T13:38:17Z"
+    },
+    {
+      "name": "v0.5.5",
+      "sha": "9a4f4abe04a8f14f9978178210085c19aa31cf20",
+      "date": "2023-01-10T05:49:17Z"
+    },
+    {
+      "name": "v0.5.4",
+      "sha": "0abc4036247378c5231e6f1dc109fa0f3b98f9e4",
+      "date": "2023-01-09T10:59:36Z"
+    },
+    {
+      "name": "v0.5.2",
+      "sha": "30b8af86f480d6dff7bae4588570caa7e8d61a37",
+      "date": "2022-11-27T15:39:09Z"
+    },
+    {
+      "name": "v0.5.3",
+      "sha": "7e531da0c6ae171eb018ee77155daf6bc7484674",
+      "date": "2022-12-15T11:56:48Z"
+    },
+    {
+      "name": "v0.5.1",
+      "sha": "a318ee7f5693afc0984e8856ef25f9c5a50a88bc",
+      "date": "2022-11-27T12:21:15Z"
+    },
+    {
+      "name": "v0.5.0",
+      "sha": "70df59fcfc3db2c4f2745004e60d1a3f892f104e",
+      "date": "2022-09-10T08:13:57Z"
+    },
+    {
+      "name": "v0.4.14",
+      "sha": "f0d8d3a5278a56a7b560a228f6e51d5fd48369ce",
+      "date": "2022-08-06T16:49:12Z"
+    },
+    {
+      "name": "v0.4.13",
+      "sha": "fb346a213f0c32b93908c7becacdb80268928eb4",
+      "date": "2022-08-01T02:52:10Z"
+    },
+    {
+      "name": "v0.4.11",
+      "sha": "fd7d8ae4d68e44a1c4f0578548f490e41d56e7c6",
+      "date": "2022-07-20T13:46:48Z"
+    },
+    {
+      "name": "v0.4.12",
+      "sha": "9ad98b920cfa03ce4e6034ce85af2a510617d22a",
+      "date": "2022-07-30T07:41:08Z"
+    },
+    {
+      "name": "v0.4.10",
+      "sha": "53bbd65fe29e60e96cf62563523212435428e0e8",
+      "date": "2022-07-18T06:51:56Z"
+    },
+    {
+      "name": "v0.4.9",
+      "sha": "c4e823a9377bb1430326ac8e63d2c811db04102a",
+      "date": "2022-07-07T15:17:27Z"
+    },
+    {
+      "name": "v0.4.7",
+      "sha": "b426d91ce33924c39ba448d1cc47b87e4fc9e341",
+      "date": "2022-06-13T15:50:42Z"
+    },
+    {
+      "name": "v0.4.8",
+      "sha": "4dffb105770f73e11669656d5beaed79ab017b5e",
+      "date": "2022-06-16T15:45:21Z"
+    },
+    {
+      "name": "v0.4.5",
+      "sha": "2bc632d92771eabecc78c5da0a436b623bc0ac83",
+      "date": "2022-06-02T13:13:43Z"
+    },
+    {
+      "name": "v0.4.4",
+      "sha": "1493c50f77861929c98e610d49cc86bc9f8e7cbf",
+      "date": "2022-05-30T01:18:26Z"
+    },
+    {
+      "name": "v0.4.3",
+      "sha": "8d8669a21e079c6a4cdbeb52561d8fb71ea651ca",
+      "date": "2022-05-29T14:01:00Z"
+    },
+    {
+      "name": "v0.4.6",
+      "sha": "fa7c45c20c7a6fcf10567841442327d8f15b4593",
+      "date": "2022-06-13T12:38:49Z"
+    },
+    {
+      "name": "v0.4.2",
+      "sha": "5df0fc8d6fdb87f8438b534327c481733993089c",
+      "date": "2022-05-29T13:30:43Z"
+    },
+    {
+      "name": "v0.4.1",
+      "sha": "f568f84b2d80a9a54ac529331a8f8d22910c3284",
+      "date": "2022-05-24T13:29:11Z"
+    },
+    {
+      "name": "v0.4.0",
+      "sha": "8d08ce23bfb989a8bd844b159c2245fe006867cc",
+      "date": "2022-05-12T00:35:44Z"
+    },
+    {
+      "name": "v0.3.3",
+      "sha": "0252b977062ac0007e75e03dcf273b1d0944845a",
+      "date": "2022-05-06T22:29:51Z"
+    },
+    {
+      "name": "v0.3.2",
+      "sha": "18586c34b812aba480e5ff26b708a89480810deb",
+      "date": "2022-05-05T22:38:03Z"
+    },
+    {
+      "name": "v0.3.1",
+      "sha": "70b72a7205da5b5931557420bdde62f77c961ca9",
+      "date": "2022-05-01T03:53:39Z"
+    },
+    {
+      "name": "v0.3.0",
+      "sha": "7448e48b438797efb446a98ebd8ff22d3fae5ebe",
+      "date": "2022-04-08T10:45:07Z"
+    },
+    {
+      "name": "v0.2.4",
+      "sha": "d070f376d135fb49da95ab3c5c4211f827997ad6",
+      "date": "2022-03-18T15:36:11Z"
+    },
+    {
+      "name": "v0.2.3",
+      "sha": "e8ae56d561f19a205ce4bd5ec882ab3ada314b16",
+      "date": "2022-03-05T10:45:51Z"
+    },
+    {
+      "name": "v0.2.2",
+      "sha": "d7112bbe62d78af60a4a2579233829d8e1f65d36",
+      "date": "2022-03-01T12:46:00Z"
+    },
+    {
+      "name": "v0.2.1",
+      "sha": "0798e99594fba80abb2f27d9ef2ae2910679b77d",
+      "date": "2022-02-18T02:31:29Z"
+    },
+    {
+      "name": "v0.2.0",
+      "sha": "3c054df8c2e45942bedbdf9b37dae3b49ed7d227",
+      "date": "2022-02-06T13:47:26Z"
+    },
+    {
+      "name": "v0.1.15",
+      "sha": "30efe472911693470cca4a8491ac3abea73ac423",
+      "date": "2022-01-06T17:57:55Z"
+    },
+    {
+      "name": "v0.1.16",
+      "sha": "863a8a053c3ded2863b032fbe024c7a74bfa68d0",
+      "date": "2022-01-21T14:47:35Z"
+    },
+    {
+      "name": "v0.1.14",
+      "sha": "681f574529fce5917da4cdd9a5f5397860945753",
+      "date": "2022-01-06T15:49:48Z"
+    },
+    {
+      "name": "v0.1.13",
+      "sha": "4ab29e414135735b893cfad3dc4532d9fc4d449d",
+      "date": "2021-12-14T12:24:41Z"
+    },
+    {
+      "name": "v0.1.12",
+      "sha": "f6a08fb221b574aa00e46205c64c8d987b258fd8",
+      "date": "2021-11-15T14:52:02Z"
+    },
+    {
+      "name": "v0.1.11",
+      "sha": "aab783f9d94420bef6fa7c6e0f9e1d369431ee1b",
+      "date": "2021-11-13T09:36:50Z"
+    },
+    {
+      "name": "v0.1.10",
+      "sha": "f4d32f7a753f7edf10d9f442181744ebd2c4d456",
+      "date": "2021-10-23T23:48:38Z"
+    },
+    {
+      "name": "v0.1.9",
+      "sha": "c619e7b521a247ef39174137d0956f7416f3b152",
+      "date": "2021-10-13T15:53:50Z"
+    },
+    {
+      "name": "v0.1.8",
+      "sha": "d245ad33fc81ea480eb4d2f283500a60726c5421",
+      "date": "2021-10-04T16:15:39Z"
+    },
+    {
+      "name": "v0.1.7",
+      "sha": "80c0dd8ad1d9407f3960f7c319b8127ab862ba44",
+      "date": "2021-09-19T13:05:36Z"
+    },
+    {
+      "name": "v0.1.6",
+      "sha": "515aa55340192fa64250d8d82316649a7f2d6381",
+      "date": "2021-09-03T10:03:15Z"
+    },
+    {
+      "name": "v0.1.5",
+      "sha": "3c59d13f79505054b17b5d31c07e69e5a1c0b255",
+      "date": "2021-09-01T12:13:12Z"
+    },
+    {
+      "name": "v0.1.4",
+      "sha": "eb7c3f350bb787d6a91fcbb1ee28af4f55c678ce",
+      "date": "2021-08-29T09:03:36Z"
+    },
+    {
+      "name": "v0.1.3",
+      "sha": "701b1fe8b5c7fc5a0166980049529843ba933c7b",
+      "date": "2021-08-26T18:20:31Z"
+    },
+    {
+      "name": "v0.1.2",
+      "sha": "26baf387d10a322e0828f214ba13e1d1d23da470",
+      "date": "2021-08-26T16:38:28Z"
+    },
+    {
+      "name": "v0.1.1",
+      "sha": "da0c11a71fcd20103b1f3eaa18281d2672626094",
+      "date": "2021-08-25T19:02:45Z"
+    },
+    {
+      "name": "v0.1.0",
+      "sha": "69fe0259f129ed0fb1442e40091b2bd25c7f29e0",
+      "date": "2021-08-15T18:02:55Z"
+    },
+    {
+      "name": "v0.1.0-alpha.5",
+      "sha": "f77c1ccb207d8ce328be494a5236ecc479ea0d4f",
+      "date": "2021-08-07T21:58:02Z"
+    },
+    {
+      "name": "v0.1.0-alpha.4",
+      "sha": "b634bd0e26f793e1329af57b61cd985c23c13eba",
+      "date": "2021-06-13T23:23:19Z"
+    },
+    {
+      "name": "v0.1.0-alpha.3",
+      "sha": "c93c3a64e0d2de7524c60ef9130ef0dc6fb22ed1",
+      "date": "2021-06-04T20:40:49Z"
+    },
+    {
+      "name": "v0.1.0-alpha.2",
+      "sha": "ab9829e2c862f720a437b79acca336063d68c3aa",
+      "date": "2021-02-12T00:34:16Z"
+    },
+    {
+      "name": "v0.1.0-alpha.1",
+      "sha": "b12a62216590a56618cf76e5abaab028db6e162b",
+      "date": "2021-01-23T05:12:19Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v0.6.19",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v0.6.20",
+      "previous_release": "v0.6.19",
+      "commits": [
+        {
+          "sha": "c3643b9794bbb2e217bb46b53aeae6c4ad2ec9c9",
+          "author_date": "2025-09-13T13:03:30Z",
+          "message": "docs: Update Github Actions example (#449)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c3643b9794bbb2e217bb46b53aeae6c4ad2ec9c9"
+        },
+        {
+          "sha": "c13a84ca073c08d4c4616c934aa23073fd190337",
+          "author_date": "2025-09-13T13:45:54Z",
+          "message": "ci: Pass `runner: none` to setup-cross-toolchain-action",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c13a84ca073c08d4c4616c934aa23073fd190337"
+        },
+        {
+          "sha": "d0f7d8ea8fc0a2520c48429bf5eb4749d409a68c",
+          "author_date": "2025-09-15T08:36:38Z",
+          "message": "Update .deny.toml",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/d0f7d8ea8fc0a2520c48429bf5eb4749d409a68c"
+        },
+        {
+          "sha": "a8d3d899eba8af4d3ffba77ddec02199f00d17c1",
+          "author_date": "2025-09-21T12:55:55Z",
+          "message": "Fix clippy::uninlined_format_args warning\n\n```\nerror: variables can be used directly in the `format!` string\n   --> src/context.rs:323:18\n    |\n323 |             a => bail!(\"invalid answer `{}`\", a),\n    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    |\n    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#uninlined_format_args\n    = note: `-D clippy::uninlined-format-args` implied by `-D warnings`\n    = help: to override `-D warnings` add `#[allow(clippy::uninlined_format_args)]`\nhelp: change this to\n    |\n323 -             a => bail!(\"invalid answer `{}`\", a),\n323 +             a => bail!(\"invalid answer `{a}`\"),\n    |\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/a8d3d899eba8af4d3ffba77ddec02199f00d17c1"
+        },
+        {
+          "sha": "b6cce14b95d670cd511bc2b91cff0bf002dfaf8c",
+          "author_date": "2025-09-29T14:29:09Z",
+          "message": "Update .deny.toml\n\n```\nerror[build-script-not-allowed]: crate 'quote = 1.0.41' has a build script but is not allowed to have one\n ├ quote v1.0.41\n   ├── serde_derive v1.0.228\n   │   ├── cargo-config2 v0.1.36\n   │   │   └── cargo-llvm-cov v0.6.19\n   │   └── cargo-llvm-cov v0.6.19 (*)\n   └── syn v2.0.106\n       └── serde_derive v1.0.228 (*)\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/b6cce14b95d670cd511bc2b91cff0bf002dfaf8c"
+        },
+        {
+          "sha": "4d3adff8dd230cd4c0799fdc9c453b7092b031d2",
+          "author_date": "2025-10-03T15:26:25Z",
+          "message": "Update readme",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/4d3adff8dd230cd4c0799fdc9c453b7092b031d2"
+        },
+        {
+          "sha": "7d3506e1e4a62f2fa6cdf4c378b069d618bdb7d0",
+          "author_date": "2025-10-04T02:45:11Z",
+          "message": "Update minimal version of cargo-config2 to 0.1.38\n\nFor https://github.com/taiki-e/cargo-llvm-cov/issues/446.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/7d3506e1e4a62f2fa6cdf4c378b069d618bdb7d0"
+        },
+        {
+          "sha": "33502f481780a966017c913484cbef053606220e",
+          "author_date": "2025-10-04T05:28:47Z",
+          "message": "Support Cargo build-dir",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/33502f481780a966017c913484cbef053606220e"
+        },
+        {
+          "sha": "5c982b4eedcd7f7e541fef8516485205c05ad888",
+          "author_date": "2025-10-04T05:40:03Z",
+          "message": "Release 0.6.20",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/5c982b4eedcd7f7e541fef8516485205c05ad888"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.6.21",
+      "previous_release": "v0.6.20",
+      "commits": [
+        {
+          "sha": "a6b5975317dc4253a8a5af149c926fe183d062a8",
+          "author_date": "2025-10-10T17:04:23Z",
+          "message": "Update minimal version of cargo-config2 to 0.1.39\n\nFor https://github.com/taiki-e/cargo-llvm-cov/issues/454",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/a6b5975317dc4253a8a5af149c926fe183d062a8"
+        },
+        {
+          "sha": "230349f86c1d8394bd29fb61f30806095852a0b3",
+          "author_date": "2025-10-10T17:04:28Z",
+          "message": "Update .deny.toml\n\n```\nerror[detected-executable-script]: detected executable\n ├ path = '$CARGO_HOME/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.177/cherry-pick-stable.sh'\n ├ interpreter = 'bash'\n ├ libc v0.2.177\n   ├── duct v1.1.0\n   │   └── cargo-llvm-cov v0.6.20\n   ├── errno v0.3.14\n   │   └── rustix v1.1.2\n   │       └── xattr v1.6.1\n   │           └── tar v0.4.44\n   │               └── cargo-llvm-cov v0.6.20 (*)\n   ├── filetime v0.2.26\n   │   └── tar v0.4.44 (*)\n   ├── libredox v0.1.10\n   │   └── filetime v0.2.26 (*)\n   ├── os_pipe v1.2.2\n   │   └── duct v1.1.0 (*)\n   ├── rustix v1.1.2 (*)\n   ├── shared_child v1.1.1\n   │   └── duct v1.1.0 (*)\n   ├── tar v0.4.44 (*)\n   └── xattr v1.6.1 (*)\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/230349f86c1d8394bd29fb61f30806095852a0b3"
+        },
+        {
+          "sha": "31b63e9d6b24bc337e8b138edd6514fe903b7889",
+          "author_date": "2025-10-10T17:16:49Z",
+          "message": "Release 0.6.21",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/31b63e9d6b24bc337e8b138edd6514fe903b7889"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.6.22",
+      "previous_release": "v0.6.21",
+      "commits": [
+        {
+          "sha": "56b77f80a4610e0349869af84265899c075e6e51",
+          "author_date": "2025-10-11T04:07:03Z",
+          "message": "term: Adjust imports",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/56b77f80a4610e0349869af84265899c075e6e51"
+        },
+        {
+          "sha": "d1cfc17663f8c54e98578bacf47e68a229e6ad65",
+          "author_date": "2025-10-11T14:23:34Z",
+          "message": "ci: Use macos-14\n\nhttps://github.blog/changelog/2025-07-11-upcoming-changes-to-macos-hosted-runners-macos-latest-migration-and-xcode-support-policy-updates/",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/d1cfc17663f8c54e98578bacf47e68a229e6ad65"
+        },
+        {
+          "sha": "5a7f37a938d0dd0b469a7571644eb89f9fac4652",
+          "author_date": "2025-10-14T14:32:50Z",
+          "message": "ci: Use new publish mechanism",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/5a7f37a938d0dd0b469a7571644eb89f9fac4652"
+        },
+        {
+          "sha": "4d87161f598e71c9dd4cbb14605fd328ec4cccff",
+          "author_date": "2025-10-27T02:43:44Z",
+          "message": "Update cspell dictionary",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/4d87161f598e71c9dd4cbb14605fd328ec4cccff"
+        },
+        {
+          "sha": "497c6cbec61cfdb23d5a0f240e080b3a9bb87f96",
+          "author_date": "2025-11-29T16:56:34Z",
+          "message": "ci: Update publish workflow",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/497c6cbec61cfdb23d5a0f240e080b3a9bb87f96"
+        },
+        {
+          "sha": "ac6907ecca5fef538afc6d4e93f25d52cdd1b635",
+          "author_date": "2025-11-29T17:25:29Z",
+          "message": "Bump MSRV to 1.87\n\n```\nerror: failed to parse manifest at `/home/runner/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ruzstd-0.8.2/Cargo.toml`\n\nCaused by:\n  feature `edition2024` is required\n\n  The package requires the Cargo feature called `edition2024`, but that feature is not stabilized in this version of Cargo (1.81.0 (2dbb1af80 2024-08-20)).\n  Consider trying a newer version of Cargo (this may require the nightly release).\n  See https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#edition-2024 for more information about the status of this feature.\n```\n\n```\nerror[E0658]: use of unstable library feature `unsigned_is_multiple_of`\n  --> /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ruzstd-0.8.2/src/bit_io/bit_reader.rs:69:30\n   |\n69 |             assert!(self.idx.is_multiple_of(8));\n   |                              ^^^^^^^^^^^^^^\n   |\n```\n\nCloses #464",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ac6907ecca5fef538afc6d4e93f25d52cdd1b635"
+        },
+        {
+          "sha": "8da7c5b661abceaaec6e0b67086b22466359e97f",
+          "author_date": "2025-11-29T17:40:55Z",
+          "message": "Ignore clippy::unnecessary_debug_formatting in error messages\n\n```\nerror: unnecessary `Debug` formatting in `anyhow!` args\n   --> src/cli.rs:483:84\n    |\n483 |                     .map_err(|arg| format_err!(\"argument {} is not valid Unicode: {arg:?}\", i + 1))\n    |                                                                                    ^^^\n    |\n    = help: use `Display` formatting and change this to `arg.display()`\n    = note: switching to `Display` formatting will change how the value is shown; escaped characters will no longer be escaped and surrounding quotes will be removed\n    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_debug_formatting\n    = note: `-D clippy::unnecessary-debug-formatting` implied by `-D warnings`\n    = help: to override `-D warnings` add `#[allow(clippy::unnecessary_debug_formatting)]`\n\nerror: unnecessary `Debug` formatting in `format!` args\n   --> src/main.rs:675:78\n    |\n675 |             format!(\"{} ({:?}) contains invalid utf-8 data\", path.display(), path.as_os_str())\n    |                                                                              ^^^^^^^^^^^^^^^^\n    |\n    = help: use `Display` formatting and change this to `path.as_os_str().display()`\n    = note: switching to `Display` formatting will change how the value is shown; escaped characters will no longer be escaped and surrounding quotes will be removed\n    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#unnecessary_debug_formatting\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/8da7c5b661abceaaec6e0b67086b22466359e97f"
+        },
+        {
+          "sha": "4b24f565fbd286b4fa1292c568d2df1c3220467a",
+          "author_date": "2025-12-14T13:00:38Z",
+          "message": "tests: Ignore clippy::decimal_bitwise_operands\n\n```\nerror: using decimal literal for bitwise operation\n   --> tests/auxiliary/mod.rs:147:7\n    |\n147 |     | 129_u64;\n    |       ^^^^^^^\n    |\n    = help: use binary (0b1000_0001_u64), hex (0x0081_u64), or octal (0o201_u64) notation for better readability\n    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#decimal_bitwise_operands\n    = note: `-D clippy::decimal-bitwise-operands` implied by `-D warnings`\n    = help: to override `-D warnings` add `#[allow(clippy::decimal_bitwise_operands)]`\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/4b24f565fbd286b4fa1292c568d2df1c3220467a"
+        },
+        {
+          "sha": "f7f6cb86f9e501702adcb1833492cf19adbc5dce",
+          "author_date": "2025-12-14T13:03:34Z",
+          "message": "ci: Merge release-related workflows",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/f7f6cb86f9e501702adcb1833492cf19adbc5dce"
+        },
+        {
+          "sha": "8ac98d6c6eec3af747c2abd427f7a51be2c724ee",
+          "author_date": "2025-12-14T13:05:46Z",
+          "message": "Apply zizmor and update scripts",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/8ac98d6c6eec3af747c2abd427f7a51be2c724ee"
+        },
+        {
+          "sha": "2e2e4b79abc3caf12f0ec6ae39c86f6aa0fae858",
+          "author_date": "2025-12-30T05:44:36Z",
+          "message": "Update .deny.toml\n\n```\nwarning[unmatched-glob]: glob was not encountered\n   ┌─ /home/runner/work/cargo-llvm-cov/cargo-llvm-cov/.deny.toml:39:38\n   │\n39 │     { name = \"libc\", allow-globs = [\"cherry-pick-stable.sh\"] },\n   │                                      ━━━━━━━━━━━━━━━━━━━━━\n   │\n   ├ libc v0.2.178\n     ├── duct v1.1.1\n     │   └── cargo-llvm-cov v0.6.21\n     ├── errno v0.3.14\n     │   └── rustix v1.1.3\n     │       └── xattr v1.6.1\n     │           └── tar v0.4.44\n     │               └── cargo-llvm-cov v0.6.21 (*)\n     ├── filetime v0.2.26\n     │   └── tar v0.4.44 (*)\n     ├── libredox v0.1.12\n     │   └── filetime v0.2.26 (*)\n     ├── os_pipe v1.2.3\n     │   └── duct v1.1.1 (*)\n     ├── rustix v1.1.3 (*)\n     ├── shared_child v1.1.1\n     │   └── duct v1.1.1 (*)\n     ├── tar v0.4.44 (*)\n     └── xattr v1.6.1 (*)\n\nerror[build-script-not-allowed]: crate 'zmij = 1.0.3' has a build script but is not allowed to have one\n ├ zmij v1.0.3\n   └── serde_json v1.0.148\n       └── cargo-llvm-cov v0.6.21\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/2e2e4b79abc3caf12f0ec6ae39c86f6aa0fae858"
+        },
+        {
+          "sha": "921c1494b8cbfb64aab1256e19739fbfb151f159",
+          "author_date": "2025-12-30T05:50:51Z",
+          "message": "Revert \"ci: Pin version of easytime used in test\"\n\nThis reverts commit 59cba33384e02ce543f450f2bb8734e7abc236ea.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/921c1494b8cbfb64aab1256e19739fbfb151f159"
+        },
+        {
+          "sha": "870e2338abbd3afd2fd4f61530a15cad4faaeca1",
+          "author_date": "2025-12-30T06:23:04Z",
+          "message": "Exclude tests.rs, *_tests.rs, and *-tests.rs by default\n\nPer https://github.com/taiki-e/cargo-llvm-cov/issues/123#issuecomment-2246323732.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/870e2338abbd3afd2fd4f61530a15cad4faaeca1"
+        },
+        {
+          "sha": "7e4b702198ae0850eee586be51d3cb687cf9a192",
+          "author_date": "2025-12-30T06:47:31Z",
+          "message": "Document WASM support\n\nCloses #221\nCloses #337\nCloses #338",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/7e4b702198ae0850eee586be51d3cb687cf9a192"
+        },
+        {
+          "sha": "0c399f6465f4197c17367f39a8eef577bc34c843",
+          "author_date": "2025-12-30T08:30:12Z",
+          "message": "Document Windows support and test i686-pc-windows-msvc in CI\n\ncc #254\ncc #436",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/0c399f6465f4197c17367f39a8eef577bc34c843"
+        },
+        {
+          "sha": "a99fc0090dcde73086326151b250ab4ef206d6ed",
+          "author_date": "2025-12-30T08:44:29Z",
+          "message": "Release 0.6.22",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/a99fc0090dcde73086326151b250ab4ef206d6ed"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.6.23",
+      "previous_release": "v0.6.22",
+      "commits": [
+        {
+          "sha": "a53384eb42d0875e6b46dd7c8efbdb7f874b7f77",
+          "author_date": "2026-01-06T16:01:46Z",
+          "message": "ci: Enable release immutability\n\nhttps://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/immutable-releases",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/a53384eb42d0875e6b46dd7c8efbdb7f874b7f77"
+        },
+        {
+          "sha": "cbc25a51df87c4127751a537f2bd00beb01d7d60",
+          "author_date": "2026-01-06T16:02:11Z",
+          "message": "rustfmt: Set hex_literal_case = \"Upper\"",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/cbc25a51df87c4127751a537f2bd00beb01d7d60"
+        },
+        {
+          "sha": "ba7c31b66a9387b433c77da64cc4d622b341a338",
+          "author_date": "2026-01-06T16:15:26Z",
+          "message": "Release 0.6.23",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ba7c31b66a9387b433c77da64cc4d622b341a338"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.6.24",
+      "previous_release": "v0.6.23",
+      "commits": [
+        {
+          "sha": "9fb2f2e576b8ce94baf83fb7e96f3991b0173ac5",
+          "author_date": "2026-01-22T12:16:33Z",
+          "message": "Fix a bug causing `--profraw-only` to remove too many files (#469)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/9fb2f2e576b8ce94baf83fb7e96f3991b0173ac5"
+        },
+        {
+          "sha": "15f1ef2070d841fb65716077c0591d84cf5963be",
+          "author_date": "2026-01-11T10:15:12Z",
+          "message": "Update .deny.toml",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/15f1ef2070d841fb65716077c0591d84cf5963be"
+        },
+        {
+          "sha": "f19145bef5fcd5284b62b641d3df4e2212c9c840",
+          "author_date": "2026-01-22T16:17:46Z",
+          "message": "Support *-windows-gnullvm targets (#470)\n\nCo-authored-by: Mateusz Mikuła <oss@mateuszmikula.dev>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/f19145bef5fcd5284b62b641d3df4e2212c9c840"
+        },
+        {
+          "sha": "f5af3105beae06b77b63a90d920d56623ebe9446",
+          "author_date": "2026-01-22T16:18:29Z",
+          "message": "Distribute prebuilt binary for AArch64 Windows",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/f5af3105beae06b77b63a90d920d56623ebe9446"
+        },
+        {
+          "sha": "482efdac7b260595f6b1eacb3cce24b32001ca9e",
+          "author_date": "2026-01-22T16:19:32Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/482efdac7b260595f6b1eacb3cce24b32001ca9e"
+        },
+        {
+          "sha": "b26773615b4b639c969810468924e8d22d58dd75",
+          "author_date": "2026-01-22T16:42:05Z",
+          "message": "Release 0.6.24",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/b26773615b4b639c969810468924e8d22d58dd75"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.7.0",
+      "previous_release": "v0.6.24",
+      "commits": [
+        {
+          "sha": "00358ab53f67d872063041be53728f780bbd23d5",
+          "author_date": "2026-01-23T14:28:28Z",
+          "message": "Turn internal demangler mode from subcommand into current_exe with env var",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/00358ab53f67d872063041be53728f780bbd23d5"
+        },
+        {
+          "sha": "adeab51c1b3003f61d014376218d507e5819acb9",
+          "author_date": "2026-01-23T15:06:20Z",
+          "message": "Propagate exit code from last failed command",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/adeab51c1b3003f61d014376218d507e5819acb9"
+        },
+        {
+          "sha": "6c7655e31e15e5867eebea0e7170222009bc01e2",
+          "author_date": "2026-01-23T21:26:42Z",
+          "message": "Add Workspace::target_is_windows",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/6c7655e31e15e5867eebea0e7170222009bc01e2"
+        },
+        {
+          "sha": "e2c0422fead70c155114a5fb355ade123953376f",
+          "author_date": "2026-01-23T21:29:55Z",
+          "message": "Add os_str_to_str",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/e2c0422fead70c155114a5fb355ade123953376f"
+        },
+        {
+          "sha": "ac9806e2eba41654680cb353a81e5ecd6e8238be",
+          "author_date": "2026-01-23T21:41:41Z",
+          "message": "Use RUSTC_WRAPPER by default to pass flags to rustc",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ac9806e2eba41654680cb353a81e5ecd6e8238be"
+        },
+        {
+          "sha": "e15e39e61244973de74a5148bd34da253b7f7b89",
+          "author_date": "2026-01-24T00:33:26Z",
+          "message": "show-env: Add --sh (alias of --export-prefix), --pwsh (alias of --with-pwsh-env-prefix), --cmd, --fish",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/e15e39e61244973de74a5148bd34da253b7f7b89"
+        },
+        {
+          "sha": "837a118f4945867a6c83cb87abe634979e8789b2",
+          "author_date": "2026-01-24T06:13:37Z",
+          "message": "Turn some warnings into hard error",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/837a118f4945867a6c83cb87abe634979e8789b2"
+        },
+        {
+          "sha": "eedd265195c0ea937cf4d7323b4a1d1960923bfb",
+          "author_date": "2026-01-24T03:13:36Z",
+          "message": "docs: Mention about tracking issue for --branch flag",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/eedd265195c0ea937cf4d7323b4a1d1960923bfb"
+        },
+        {
+          "sha": "b3c3b517c14e60c1a836f3dbb719facba70dd56a",
+          "author_date": "2026-01-24T06:02:25Z",
+          "message": "Resolve clippy::map_unwrap_or lint\n\n```\nerror: called `map(<f>).unwrap_or(false)` on a `Result` value\n   --> src/clean.rs:185:8\n    |\n185 |     if m.as_ref().map(fs::Metadata::is_dir).unwrap_or(false) {\n    |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    |\n    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#map_unwrap_or\n    = note: `-D clippy::map-unwrap-or` implied by `-D warnings`\n    = help: to override `-D warnings` add `#[allow(clippy::map_unwrap_or)]`\nhelp: use `is_ok_and(<f>)` instead\n    |\n185 -     if m.as_ref().map(fs::Metadata::is_dir).unwrap_or(false) {\n185 +     if m.as_ref().is_ok_and(fs::Metadata::is_dir) {\n    |\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/b3c3b517c14e60c1a836f3dbb719facba70dd56a"
+        },
+        {
+          "sha": "8db80d570ed5e5cee4bbd8bf8b10da22717ba94e",
+          "author_date": "2026-01-24T04:00:07Z",
+          "message": "Stabilize --disable-default-ignore-filename-regex as --no-default-ignore-filename-regex, deprecated old names",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/8db80d570ed5e5cee4bbd8bf8b10da22717ba94e"
+        },
+        {
+          "sha": "a7130cee94dfe80c92efdb60c97935a26282927c",
+          "author_date": "2026-01-24T04:14:47Z",
+          "message": "Add warning for --no-rustc-wrapper with --dep-coverage",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/a7130cee94dfe80c92efdb60c97935a26282927c"
+        },
+        {
+          "sha": "93840f8ba681112a0ec185f423ad071ee5658638",
+          "author_date": "2026-01-24T06:40:37Z",
+          "message": "Improve error for flags specific to subcommand",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/93840f8ba681112a0ec185f423ad071ee5658638"
+        },
+        {
+          "sha": "5bc5190ea5f3b296a5b8342b1cf225e4c1dac56b",
+          "author_date": "2026-01-24T08:08:19Z",
+          "message": "Add test case from issue 303\n\nIt appears to have been fixed at some point.\n\nCloses #303",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/5bc5190ea5f3b296a5b8342b1cf225e4c1dac56b"
+        },
+        {
+          "sha": "9227895af86f444adf7a0fbb21bd7c8b527e40e4",
+          "author_date": "2026-01-24T06:53:55Z",
+          "message": "Add test case from issue 361",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/9227895af86f444adf7a0fbb21bd7c8b527e40e4"
+        },
+        {
+          "sha": "6366378d9773d331d07c9a6679bbc3fb8dc1a1ba",
+          "author_date": "2026-01-24T08:09:02Z",
+          "message": "Handle --package in WorkspaceMembers::new",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/6366378d9773d331d07c9a6679bbc3fb8dc1a1ba"
+        },
+        {
+          "sha": "254e54185ddfbbc4d30b094e01731a62d8a5b594",
+          "author_date": "2026-01-24T08:45:44Z",
+          "message": "metadata: Turn PackageId into index",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/254e54185ddfbbc4d30b094e01731a62d8a5b594"
+        },
+        {
+          "sha": "539c796a184e3b5832a6f5761aed373f734062d8",
+          "author_date": "2026-01-24T09:22:17Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/539c796a184e3b5832a6f5761aed373f734062d8"
+        },
+        {
+          "sha": "822bf6c217d541d4ca3ba91d2f4fc998154cec34",
+          "author_date": "2026-01-24T09:36:39Z",
+          "message": "Release 0.7.0",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/822bf6c217d541d4ca3ba91d2f4fc998154cec34"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.7.1",
+      "previous_release": "v0.7.0",
+      "commits": [
+        {
+          "sha": "6e30e6f691e44a718fcb8dad7edb8bef3ab24307",
+          "author_date": "2026-01-24T11:33:48Z",
+          "message": "Fix regression causing coverage test failure in nextest's CI\n\nhttps://github.com/nextest-rs/nextest/pull/2993#issuecomment-3794432609",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/6e30e6f691e44a718fcb8dad7edb8bef3ab24307"
+        },
+        {
+          "sha": "4cd3d3fce179398d3a56d66b70812c38b67c6232",
+          "author_date": "2026-01-24T11:36:22Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/4cd3d3fce179398d3a56d66b70812c38b67c6232"
+        },
+        {
+          "sha": "eac9449cef7deb55cbded92af68f1cb2b95e2b02",
+          "author_date": "2026-01-24T11:51:38Z",
+          "message": "Release 0.7.1",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/eac9449cef7deb55cbded92af68f1cb2b95e2b02"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.8.0",
+      "previous_release": "v0.7.1",
+      "commits": [
+        {
+          "sha": "f44ab08e9165364eb509f3706d110fde5efe83dc",
+          "author_date": "2026-01-26T14:59:40Z",
+          "message": "Rework WorkspaceMembers::new",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/f44ab08e9165364eb509f3706d110fde5efe83dc"
+        },
+        {
+          "sha": "9ffb15ed39cce9a6e677a04492513d0bd66e272f",
+          "author_date": "2026-01-26T15:44:44Z",
+          "message": "Release 0.8.0",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/9ffb15ed39cce9a6e677a04492513d0bd66e272f"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.8.1",
+      "previous_release": "v0.8.0",
+      "commits": [
+        {
+          "sha": "8352850eb0bd896e7593c1dec4522053e6fc8bcd",
+          "author_date": "2026-01-26T16:55:52Z",
+          "message": "Back \"cargo-llvm-cov subcommands other than report and clean may not work correctly ...\" error to warning\n\nhttps://github.com/taiki-e/cargo-llvm-cov/commit/837a118f4945867a6c83cb87abe634979e8789b2#r175661865",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/8352850eb0bd896e7593c1dec4522053e6fc8bcd"
+        },
+        {
+          "sha": "a8e590cae03b643aa66d16d44743d0b4ea97126d",
+          "author_date": "2026-01-26T17:03:25Z",
+          "message": "Release 0.8.1",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/a8e590cae03b643aa66d16d44743d0b4ea97126d"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.8.2",
+      "previous_release": "v0.8.1",
+      "commits": [
+        {
+          "sha": "c428a962bcdd2170c645cf0363f4982f0a850afb",
+          "author_date": "2026-01-27T11:02:15Z",
+          "message": "Support ui_test\n\nThis also moves trybuild test to tests/test.rs.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c428a962bcdd2170c645cf0363f4982f0a850afb"
+        },
+        {
+          "sha": "c3c29e15a751bc1e62fee43d496434efbd483bad",
+          "author_date": "2026-01-27T11:39:48Z",
+          "message": "Release 0.8.2",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c3c29e15a751bc1e62fee43d496434efbd483bad"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.8.3",
+      "previous_release": "v0.8.2",
+      "commits": [
+        {
+          "sha": "ac31049125e12c8356ccc083bd331023dc6d30d5",
+          "author_date": "2026-01-27T14:43:48Z",
+          "message": "Clean up and split Args",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ac31049125e12c8356ccc083bd331023dc6d30d5"
+        },
+        {
+          "sha": "0be38ab3d352efcad6db395e9af12b5e87a804ab",
+          "author_date": "2026-01-27T14:44:46Z",
+          "message": "Move report generation code into its own module",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/0be38ab3d352efcad6db395e9af12b5e87a804ab"
+        },
+        {
+          "sha": "ec58892c86c5739a5db867c82a8a2525c0c3eec0",
+          "author_date": "2026-01-27T14:46:24Z",
+          "message": "Update readme",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ec58892c86c5739a5db867c82a8a2525c0c3eec0"
+        },
+        {
+          "sha": "11327c9fac0319a2f8f403f4908a4703315513d3",
+          "author_date": "2026-02-04T09:28:03Z",
+          "message": "tests: Update generated reports to nightly-2026-02-03",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/11327c9fac0319a2f8f403f4908a4703315513d3"
+        },
+        {
+          "sha": "36e15754ef19583e658659bde573745a3c8aa809",
+          "author_date": "2026-02-04T10:34:32Z",
+          "message": "metadata: Use boxed slice more",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/36e15754ef19583e658659bde573745a3c8aa809"
+        },
+        {
+          "sha": "9b16b9b366b84ad38d8050a6275e3fb65c3a35fb",
+          "author_date": "2026-02-04T10:53:33Z",
+          "message": "Remove some uses of .collect()",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/9b16b9b366b84ad38d8050a6275e3fb65c3a35fb"
+        },
+        {
+          "sha": "1be58348a84b7bf309fa8752f4021a6977c1f815",
+          "author_date": "2026-02-04T11:20:35Z",
+          "message": "Clean up Args more\n\nFollow-up to ac31049125e12c8356ccc083bd331023dc6d30d5.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/1be58348a84b7bf309fa8752f4021a6977c1f815"
+        },
+        {
+          "sha": "c55c33ec545a630412c03b7b3a89f1e6cd5d1830",
+          "author_date": "2026-02-04T11:12:20Z",
+          "message": "Avoid extra format in ShowEnvWriter::set",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c55c33ec545a630412c03b7b3a89f1e6cd5d1830"
+        },
+        {
+          "sha": "4ddedae8cf1c306d17c05d09c38658ed5043800f",
+          "author_date": "2026-02-04T11:15:04Z",
+          "message": "Use format args capture in macros",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/4ddedae8cf1c306d17c05d09c38658ed5043800f"
+        },
+        {
+          "sha": "4c184c3568ca4b729b68fe7e3c6faebf40d3d7e3",
+          "author_date": "2026-02-04T12:21:57Z",
+          "message": "show-env: Add --csh",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/4c184c3568ca4b729b68fe7e3c6faebf40d3d7e3"
+        },
+        {
+          "sha": "fdd073df007fcf9b7fcd9549518953af60d580b5",
+          "author_date": "2026-02-04T13:22:59Z",
+          "message": "show-env: Add --nu",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/fdd073df007fcf9b7fcd9549518953af60d580b5"
+        },
+        {
+          "sha": "e293b38ae4749d4cf97f152473922e4c68f60e95",
+          "author_date": "2026-02-04T13:43:09Z",
+          "message": "show-env: Add --xonsh",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/e293b38ae4749d4cf97f152473922e4c68f60e95"
+        },
+        {
+          "sha": "d137323033c4e8a5cdfc54a688fa89c281f30681",
+          "author_date": "2026-02-04T15:57:40Z",
+          "message": "Use Box::default instead of vec![].into_boxed_slice()",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/d137323033c4e8a5cdfc54a688fa89c281f30681"
+        },
+        {
+          "sha": "7788a43aae4c920281aa4ba93f04d83fbff78067",
+          "author_date": "2026-02-05T15:48:10Z",
+          "message": "ci: Use --retry-all-errors instead of --retry-connrefused",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/7788a43aae4c920281aa4ba93f04d83fbff78067"
+        },
+        {
+          "sha": "10587295fc648a98e2bedc7cf6d97dd74b19e083",
+          "author_date": "2026-02-05T15:53:02Z",
+          "message": "Update readme",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/10587295fc648a98e2bedc7cf6d97dd74b19e083"
+        },
+        {
+          "sha": "8ac72d17b6a27348ee23d88920e98882e7840389",
+          "author_date": "2026-02-05T16:26:28Z",
+          "message": "Release 0.8.3",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/8ac72d17b6a27348ee23d88920e98882e7840389"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.8.4",
+      "previous_release": "v0.8.3",
+      "commits": [
+        {
+          "sha": "7d3aeb4eddab9768f700f56b5e381a6af25e9211",
+          "author_date": "2026-02-06T19:21:10Z",
+          "message": "Update minimal version of cargo-config2 to 0.1.40",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/7d3aeb4eddab9768f700f56b5e381a6af25e9211"
+        },
+        {
+          "sha": "230a2eeb31cf89de7e5692059e0238132068d14b",
+          "author_date": "2026-02-06T19:25:01Z",
+          "message": "Move various checks from Workspace::new to Context::new\n\nThey are unrelated to clean subcommand.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/230a2eeb31cf89de7e5692059e0238132068d14b"
+        },
+        {
+          "sha": "60b708c107a654c8beccf8532237a395e4634bbe",
+          "author_date": "2026-02-06T19:25:04Z",
+          "message": "cli: Cleanup",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/60b708c107a654c8beccf8532237a395e4634bbe"
+        },
+        {
+          "sha": "88655648110d83d256f8c26bd201fd7135564cad",
+          "author_date": "2026-02-06T19:55:26Z",
+          "message": "Release 0.8.4",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/88655648110d83d256f8c26bd201fd7135564cad"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.8.5",
+      "previous_release": "v0.8.4",
+      "commits": [
+        {
+          "sha": "c14fa88225aa27c7b51e0c5ee15b7afd4808077e",
+          "author_date": "2026-02-10T14:37:53Z",
+          "message": "Use cargo_config2::Config::cfg",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c14fa88225aa27c7b51e0c5ee15b7afd4808077e"
+        },
+        {
+          "sha": "2cc1f1d4bc502bb9ef7ee27f566724737ec08bd5",
+          "author_date": "2026-02-10T14:38:06Z",
+          "message": "tools: Update tidy.sh",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/2cc1f1d4bc502bb9ef7ee27f566724737ec08bd5"
+        },
+        {
+          "sha": "ffaa5336ebff79e7b829ed85c9703e3ecdc99780",
+          "author_date": "2026-02-11T12:14:39Z",
+          "message": "docs: Update actions/checkout action in example",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ffaa5336ebff79e7b829ed85c9703e3ecdc99780"
+        },
+        {
+          "sha": "d1948259b3a91573ed9762268366db1375bb882a",
+          "author_date": "2026-02-21T17:54:31Z",
+          "message": "docs: Fix link to gitlab limits (#481)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/d1948259b3a91573ed9762268366db1375bb882a"
+        },
+        {
+          "sha": "fc55544b08be9b86c44731dbeceb01cc399f0045",
+          "author_date": "2026-02-27T14:11:37Z",
+          "message": "Update allowed lint list",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/fc55544b08be9b86c44731dbeceb01cc399f0045"
+        },
+        {
+          "sha": "a688738ee49eb08e5b774eb7c4470c40dd11feaa",
+          "author_date": "2026-02-27T14:11:49Z",
+          "message": "Add comment about rust-version field to Cargo.toml",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/a688738ee49eb08e5b774eb7c4470c40dd11feaa"
+        },
+        {
+          "sha": "81e242d46c87ea2679b74778963cb3a49b0bb52e",
+          "author_date": "2026-02-27T14:11:57Z",
+          "message": "ci: Test LLVM 22",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/81e242d46c87ea2679b74778963cb3a49b0bb52e"
+        },
+        {
+          "sha": "70a66a53b4f9f637cf0980e8d8cc2f078106afd4",
+          "author_date": "2026-02-27T14:13:05Z",
+          "message": "Resolve clippy::iter_kv_map warning\n\n```\nerror: iterating on a map's values\n   --> src/report.rs:840:13\n    |\n840 |             cx.ws.config.source.iter().filter_map(|(_, source)| source.directory.as_deref());\n    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: try: `cx.ws.config.source.values().filter_map(|source| source.directory.as_deref())`\n    |\n    = help: for further information visit https://rust-lang.github.io/rust-clippy/master/index.html#iter_kv_map\n    = note: `-D clippy::iter-kv-map` implied by `-D warnings`\n    = help: to override `-D warnings` add `#[allow(clippy::iter_kv_map)]`\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/70a66a53b4f9f637cf0980e8d8cc2f078106afd4"
+        },
+        {
+          "sha": "503329a29b29cc61aa6f8f8a3e73aca7ceee3ef3",
+          "author_date": "2026-03-03T15:13:15Z",
+          "message": "ci: Update permissions for tidy reusable workflow",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/503329a29b29cc61aa6f8f8a3e73aca7ceee3ef3"
+        },
+        {
+          "sha": "b3b93b0d6f84db495338ec598a68023f973dd029",
+          "author_date": "2026-03-05T14:37:16Z",
+          "message": "docs: Update document about cargo-afl",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/b3b93b0d6f84db495338ec598a68023f973dd029"
+        },
+        {
+          "sha": "bafcd2adf4af4a5f040cd2e51eeae566eb104384",
+          "author_date": "2026-03-12T15:24:41Z",
+          "message": "Update scripts and CI config",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/bafcd2adf4af4a5f040cd2e51eeae566eb104384"
+        },
+        {
+          "sha": "e98cc2589f03d018a135828555dab1ec1d155211",
+          "author_date": "2026-03-20T09:03:23Z",
+          "message": "ci: Update release workflow",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/e98cc2589f03d018a135828555dab1ec1d155211"
+        },
+        {
+          "sha": "f3db8a1e3770a7e66681ee1b9597398e7d3f87a4",
+          "author_date": "2026-03-20T09:29:20Z",
+          "message": "Release 0.8.5",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/f3db8a1e3770a7e66681ee1b9597398e7d3f87a4"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.8.6",
+      "previous_release": "v0.8.5",
+      "commits": [
+        {
+          "sha": "08051c5c3e9ff1332ed29305c15d353cc4e5cd90",
+          "author_date": "2026-03-24T14:03:35Z",
+          "message": "docs: Use --signer-workflow in verification example\n\nhttps://cli.github.com/manual/gh_attestation_verify\n\n> The more precisely you specify the identity, the more control you will\n> have over the security guarantees offered by the verification process.\n>\n> Ideally, the path of the signer workflow is also validated using the\n> --signer-workflow or --cert-identity flags.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/08051c5c3e9ff1332ed29305c15d353cc4e5cd90"
+        },
+        {
+          "sha": "361077af06306191a639c56dbebabd8f17c1d9ed",
+          "author_date": "2026-03-28T17:10:31Z",
+          "message": "tools: Update tidy.sh and related config",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/361077af06306191a639c56dbebabd8f17c1d9ed"
+        },
+        {
+          "sha": "f594f83522c1c2355d64c5ec257cc67b3e5a4e0b",
+          "author_date": "2026-03-28T17:11:12Z",
+          "message": "Remove duplicated retry",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/f594f83522c1c2355d64c5ec257cc67b3e5a4e0b"
+        },
+        {
+          "sha": "c5f31b7eb2f1862f8299cbc3bb61622d3120d6c0",
+          "author_date": "2026-03-28T17:11:43Z",
+          "message": "tests: Update comment",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c5f31b7eb2f1862f8299cbc3bb61622d3120d6c0"
+        },
+        {
+          "sha": "c67ddf05aa61802f84c8b17bfe5bb891553a70a6",
+          "author_date": "2026-03-29T19:04:14Z",
+          "message": "zizmor: Apply more lints",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c67ddf05aa61802f84c8b17bfe5bb891553a70a6"
+        },
+        {
+          "sha": "03f6467e307a31c5b561124ffc3963c1605e9f6c",
+          "author_date": "2026-04-03T19:12:21Z",
+          "message": "tools: Update tidy.sh and related config",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/03f6467e307a31c5b561124ffc3963c1605e9f6c"
+        },
+        {
+          "sha": "5f7d178c87578985e2f4736304cfa7cdcdd03bf8",
+          "author_date": "2026-04-10T14:34:52Z",
+          "message": "Update scripts and CI config",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/5f7d178c87578985e2f4736304cfa7cdcdd03bf8"
+        },
+        {
+          "sha": "0f6417132d22074a2f2ce17c6001ecf3ad056d65",
+          "author_date": "2026-04-10T14:34:55Z",
+          "message": "tests: Update generated reports to nightly-2026-04-10",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/0f6417132d22074a2f2ce17c6001ecf3ad056d65"
+        },
+        {
+          "sha": "2f2812ee6d87fc3a05d73e1a56ac3c7bc0a87c3a",
+          "author_date": "2026-04-12T15:25:44Z",
+          "message": "Add support for build-dir layout v2 (#483)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/2f2812ee6d87fc3a05d73e1a56ac3c7bc0a87c3a"
+        },
+        {
+          "sha": "657e359d12678460c99c2ff3c7e854a13856aebb",
+          "author_date": "2026-05-09T03:53:01Z",
+          "message": "Remove create_dirs_for_build\n\n```\nwarning: process didn't exit successfully: `/home/runner/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/cargo clean --target-dir /tmp/.tmpVKxu0N/target/llvm-cov-target --package merge` (exit status: 101)\n--- stderr\nerror: cannot clean `/tmp/.tmpVKxu0N/target/llvm-cov-target`: missing or invalid `CACHEDIR.TAG` file\n  |\n  = note: cleaning has been aborted to prevent accidental deletion of unrelated files\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/657e359d12678460c99c2ff3c7e854a13856aebb"
+        },
+        {
+          "sha": "4f5059873bc26c24826b1e8ee7ed43faa324d25d",
+          "author_date": "2026-05-09T06:03:31Z",
+          "message": "Ask to run `rustup install` on `stderr` (#490)\n\nWhen `stdout` is not visible, e. g. when piping the output of\n`cargo llvm-cov` to a file, it seems like `cargo llvm-cov` hangs without\ndoing anything when the `llvm-tools-preview` rustup component is not\ninstalled. `stderr` is less likely to be redirected, so asking on there\nis less likely to not be visible.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/4f5059873bc26c24826b1e8ee7ed43faa324d25d"
+        },
+        {
+          "sha": "496247f2315118e1097f6693ed48c5ffed939ea8",
+          "author_date": "2026-05-09T06:05:12Z",
+          "message": "Add option for setting per-file coverage threshold (#486)\n\nFixes #485",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/496247f2315118e1097f6693ed48c5ffed939ea8"
+        },
+        {
+          "sha": "128210dc4c4a1955f17e51652d1b2ad200325c9a",
+          "author_date": "2026-05-09T06:25:40Z",
+          "message": "tests: Disable core.fsmonitor in git diff in assert_output",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/128210dc4c4a1955f17e51652d1b2ad200325c9a"
+        },
+        {
+          "sha": "ac35ac94902df4f454f500b936698bc19aef2442",
+          "author_date": "2026-05-09T06:25:51Z",
+          "message": "ci,tools: Update config and script",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ac35ac94902df4f454f500b936698bc19aef2442"
+        },
+        {
+          "sha": "679e978e01d17e0e78317c171adc68e55179ad44",
+          "author_date": "2026-05-09T07:04:01Z",
+          "message": "ci: Update config",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/679e978e01d17e0e78317c171adc68e55179ad44"
+        },
+        {
+          "sha": "0072a5d428cac3b3bf72aec8476c2e8df757083f",
+          "author_date": "2026-05-09T07:13:07Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/0072a5d428cac3b3bf72aec8476c2e8df757083f"
+        },
+        {
+          "sha": "082a4669ad3425184e577279fadac6841ef8cc56",
+          "author_date": "2026-05-09T07:37:01Z",
+          "message": "Release 0.8.6",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/082a4669ad3425184e577279fadac6841ef8cc56"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.8.7",
+      "previous_release": "v0.8.6",
+      "commits": [
+        {
+          "sha": "0f71d4f55197d5b00e446ceb3007c28b98cc2b0e",
+          "author_date": "2026-05-13T00:18:40Z",
+          "message": "Add `--coverage-host-only` flag (#493)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/0f71d4f55197d5b00e446ceb3007c28b98cc2b0e"
+        },
+        {
+          "sha": "13ec9fe2b176862d8d4fdcde0b6273674eb8f203",
+          "author_date": "2026-05-13T00:35:05Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/13ec9fe2b176862d8d4fdcde0b6273674eb8f203"
+        },
+        {
+          "sha": "c9df45843b856adffbd891c3a9854927e9528523",
+          "author_date": "2026-05-13T00:59:49Z",
+          "message": "Release 0.8.7",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c9df45843b856adffbd891c3a9854927e9528523"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.9.0",
+      "previous_release": "v0.8.7",
+      "commits": [
+        {
+          "sha": "89cd706cd8e10e081d814948ce28ac5ebd153c78",
+          "author_date": "2026-05-24T13:06:55Z",
+          "message": "ci,tools: Update config and script",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/89cd706cd8e10e081d814948ce28ac5ebd153c78"
+        },
+        {
+          "sha": "000bbdc1c507decf77169e5d50609e80c22311e8",
+          "author_date": "2026-05-24T13:07:15Z",
+          "message": "Revert \"tests: Update generated reports to nightly-2026-04-10\"\n\nThis reverts commit 0f6417132d22074a2f2ce17c6001ecf3ad056d65.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/000bbdc1c507decf77169e5d50609e80c22311e8"
+        },
+        {
+          "sha": "80ef2944fc3145006dbef9ee4c9d3e6d29cb07c6",
+          "author_date": "2026-05-26T15:48:56Z",
+          "message": "ci: Update config",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/80ef2944fc3145006dbef9ee4c9d3e6d29cb07c6"
+        },
+        {
+          "sha": "75a455c817148edaf5d9075b6290ea1b81b69143",
+          "author_date": "2026-05-30T09:25:18Z",
+          "message": "Update test-helper",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/75a455c817148edaf5d9075b6290ea1b81b69143"
+        },
+        {
+          "sha": "9098888c4afc752975d51b971c3b9d7595c73c40",
+          "author_date": "2026-07-03T17:54:14Z",
+          "message": "ci: Update taiki-e/github-actions workflows",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/9098888c4afc752975d51b971c3b9d7595c73c40"
+        },
+        {
+          "sha": "ad4445682f7cac827afc1c0fe842d27582d1d3e1",
+          "author_date": "2026-07-03T19:34:20Z",
+          "message": "Update .deny.toml\n\n```\n  error[vulnerability]: Quadratic run time when checking a start tag for duplicate attribute names\n     ┌─ /home/runner/work/cargo-llvm-cov/cargo-llvm-cov/Cargo.lock:25:1\n     │\n  25 │ quick-xml 0.39.4 registry+https://github.com/rust-lang/crates.io-index\n     │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ security vulnerability detected\n     │\n     ├ ID: RUSTSEC-2026-0194\n     ├ Advisory: https://rustsec.org/advisories/RUSTSEC-2026-0194\n     ├ `BytesStart::attributes()` returns an `Attributes` iterator which, by default\n       (`with_checks(true)`), rejects a start tag that repeats an attribute name. For\n       each attribute yielded, the iterator compared the new name against every name\n       seen so far in the same tag using a linear scan, so a start tag with `N`\n       distinct attribute names cost `O(N²)` byte comparisons. There was no bound on\n       `N` other than the size of the buffered start tag.\n\n       ## Impact\n\n       Any code that parses untrusted XML and iterates a start tag's attributes with\n       the default duplicate check enabled can be made to spend CPU time quadratic in\n       the number of attributes on a single tag. Because the check is pure computation\n       with no `.await`/I/O, an I/O-based timeout on the consumer (for example a read\n       or request timeout) cannot interrupt it while it runs.\n\n       Measured cost of a single start tag, release build:\n\n       | Attributes on one tag | Time |\n       |---|---|\n       | 80,000  | ~6 s   |\n       | 800,000 | ~10 min |\n\n       The cost grows with the square of the attribute count, so a start tag of a few\n       tens of megabytes can stall a parsing thread for hours. No memory is exhausted\n       and the parser does not crash; the effect is CPU exhaustion on the thread doing\n       the parsing: a single crafted start tag can pin a CPU core for minutes to hours,\n       denying service to that worker. A deployment that places a wall-clock bound on\n       parsing, or confines it to a non-critical thread, may consider the availability\n       impact lower.\n\n       ## Affected code paths\n\n       * `BytesStart::attributes()` / `Attributes` iterated with checks enabled (the\n         default), and `BytesStart::try_get_attribute`.\n       * `NsReader`, which resolves namespaces by iterating a tag's attributes and so\n         reaches the same check internally.\n\n       Consumers that iterate attributes with `.attributes().with_checks(false)` and do\n       not use `NsReader` are not affected.\n\n       This was reported as reachable by a remote, unauthenticated attacker in a\n       real-world RPKI relying party (NLnet Labs Routinator) via a crafted RRDP\n       `snapshot.xml`.\n\n       ## Remediation\n\n       Upgrade to `quick-xml >= 0.41.0`, where the duplicate check keeps the linear\n       scan for start tags with a small number of attributes and switches to an `O(1)`\n       hash pre-filter above a threshold, making the whole tag `O(N)`. The reported\n       `AttrError::Duplicated` positions are unchanged.\n\n       If upgrading is not possible and duplicate-name detection is not required,\n       disable it with `.attributes().with_checks(false)` (this does not help\n       `NsReader` consumers, which have no equivalent opt-out before 0.41.0).\n     ├ Announcement: https://github.com/tafia/quick-xml/issues/969\n     ├ Solution: Upgrade to >=0.41.0 (try `cargo update -p quick-xml`)\n     ├ quick-xml v0.39.4\n       └── lcov2cobertura v1.0.9\n           └── cargo-llvm-cov v0.8.7\n\n  error[vulnerability]: Unbounded namespace-declaration allocation in `NsReader` enables memory-exhaustion denial of service\n     ┌─ /home/runner/work/cargo-llvm-cov/cargo-llvm-cov/Cargo.lock:25:1\n     │\n  25 │ quick-xml 0.39.4 registry+https://github.com/rust-lang/crates.io-index\n     │ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ security vulnerability detected\n     │\n     ├ ID: RUSTSEC-2026-0195\n     ├ Advisory: https://rustsec.org/advisories/RUSTSEC-2026-0195\n     ├ `NsReader` resolves namespaces by calling `NamespaceResolver::push` for every\n       `Start`/`Empty` event *before* the event is returned to the caller. `push`\n       iterated all `xmlns` / `xmlns:*` attributes on the start tag and, for each one,\n       appended the prefix bytes to an internal buffer and pushed a `NamespaceBinding`\n       (32 bytes on 64-bit) to an internal `Vec`, with no upper bound on the number of\n       declarations.\n\n       ## Impact\n\n       A start tag with `N` namespace declarations drove roughly `3×` the tag's byte\n       size in `NamespaceResolver` heap, allocated *inside* `quick-xml` before the\n       `NsReader` consumer ever received the event and could inspect or reject it. A\n       consumer that bounds its *input* size therefore still cannot bound this\n       allocation: an `M`-byte start tag yields on the order of `3 × M` bytes of\n       resolver heap the caller never sees.\n\n       On untrusted XML this lets a remote, unauthenticated attacker force large heap\n       allocations with a single start tag. With several `NsReader`s running\n       concurrently on independent inputs (a common server pattern), the allocations\n       stack and can exhaust process memory, causing the operating system to kill the\n       process (OOM). This was confirmed against a real-world RPKI relying party (NLnet\n       Labs Routinator), where concurrent RRDP validation workers parsing a crafted\n       `snapshot.xml` exceeded the memory limit and the process was OOM-killed.\n\n       ## Affected code paths\n\n       Consumers using `NsReader` (which always calls `NamespaceResolver::push` before\n       yielding `Start`/`Empty`), or calling `NamespaceResolver::push` directly. A plain\n       `Reader` that does not perform namespace resolution is not affected.\n\n       ## Remediation\n\n       Upgrade to `quick-xml >= 0.41.0`. `NamespaceResolver::push` now rejects a start\n       tag that declares more than `DEFAULT_MAX_DECLARATIONS_PER_ELEMENT` (256)\n       namespace bindings, returning the new `NamespaceError::TooManyDeclarations`\n       instead of allocating without limit. The limit is configurable via\n       `NamespaceResolver::set_max_declarations_per_element` (use `usize::MAX` to\n       restore the previous unbounded behavior), and `NsReader::resolver_mut()` is\n       provided to reach it.\n\n       There is no clean workaround for `NsReader` consumers before 0.41.0, as the\n       allocation happens inside the reader with no configuration knob to cap it.\n     ├ Announcement: https://github.com/tafia/quick-xml/issues/970\n     ├ Solution: Upgrade to >=0.41.0 (try `cargo update -p quick-xml`)\n     ├ quick-xml v0.39.4\n       └── lcov2cobertura v1.0.9\n           └── cargo-llvm-cov v0.8.7\n```",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ad4445682f7cac827afc1c0fe842d27582d1d3e1"
+        },
+        {
+          "sha": "2ca641d693e82f72f9347d88e0c91379188093ac",
+          "author_date": "2026-07-03T19:37:08Z",
+          "message": "ci: Disable test-nextest on windows, which has been broken for some time",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/2ca641d693e82f72f9347d88e0c91379188093ac"
+        },
+        {
+          "sha": "511e173dcc78a7f274bd7653416c4a2db2099108",
+          "author_date": "2026-07-04T19:20:23Z",
+          "message": "Bump taiki-e/install-action from 2.77.6 to 2.82.0 (#502)\n\nBumps [taiki-e/install-action](https://github.com/taiki-e/install-action) from 2.77.6 to 2.82.0.\n- [Release notes](https://github.com/taiki-e/install-action/releases)\n- [Changelog](https://github.com/taiki-e/install-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/taiki-e/install-action/compare/c070f87102a1c75b3183910f391c1cb887fe13c8...b8cecb83565409bcc297b2df6e77f030b2a468d5)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/install-action\n  dependency-version: 2.82.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Taiki Endo <te316e89@gmail.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/511e173dcc78a7f274bd7653416c4a2db2099108"
+        },
+        {
+          "sha": "97ce591fd84ac54388079e93c52a89321f59afde",
+          "author_date": "2026-08-08T16:40:50Z",
+          "message": "Fix CI failures (#505)\n\n* Fix deny failure\n\n* Fix base-output-directories problem\n\n* Fix LLVM test failure\n\n* Ignore clippy::assert_is_empty lint\n\nCo-authored-by: Taiki Endo <te316e89@gmail.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/97ce591fd84ac54388079e93c52a89321f59afde"
+        },
+        {
+          "sha": "a3e977429fb07367756d4b0ef9e5b2eac0318bb2",
+          "author_date": "2026-07-11T16:56:23Z",
+          "message": "Support -m alias added in Cargo 1.97\n\nhttps://github.com/rust-lang/cargo/commit/0bcac2eecc8caf1f0c62c51df6214e8cc6c9c178",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/a3e977429fb07367756d4b0ef9e5b2eac0318bb2"
+        },
+        {
+          "sha": "90d9cd2abb82108af087c382737c7f22078406af",
+          "author_date": "2026-08-08T20:17:00Z",
+          "message": "Adds workspace support to report command (#500)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/90d9cd2abb82108af087c382737c7f22078406af"
+        },
+        {
+          "sha": "b699f484cd6f514ee5f6b8c884875e4c7d60275c",
+          "author_date": "2026-08-08T20:18:56Z",
+          "message": "Bump taiki-e/install-action from 2.82.0 to 2.85.1 (#506)\n\nBumps [taiki-e/install-action](https://github.com/taiki-e/install-action) from 2.82.0 to 2.85.1.\n- [Release notes](https://github.com/taiki-e/install-action/releases)\n- [Changelog](https://github.com/taiki-e/install-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/taiki-e/install-action/compare/b8cecb83565409bcc297b2df6e77f030b2a468d5...3d7d7cd5ac7f994c1892ae0c06165095b9139094)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/install-action\n  dependency-version: 2.83.4\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/b699f484cd6f514ee5f6b8c884875e4c7d60275c"
+        },
+        {
+          "sha": "495bb2105693e8a227390da766a914d9c185bf11",
+          "author_date": "2026-08-08T20:21:43Z",
+          "message": "Fix ShowEnvFormat::Fish formatting (#504)\n\nSeparate the variable name and the value by a whitespace instead of '='.",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/495bb2105693e8a227390da766a914d9c185bf11"
+        },
+        {
+          "sha": "2e1f71b403f090d1036c834f816afdc1acd5da54",
+          "author_date": "2026-08-14T13:32:22Z",
+          "message": "Update ruzstd requirement from 0.8 to 0.9 (#510)\n\nUpdates the requirements on [ruzstd](https://github.com/KillingSpark/zstd-rs) to permit the latest version.\n- [Release notes](https://github.com/KillingSpark/zstd-rs/releases)\n- [Changelog](https://github.com/KillingSpark/zstd-rs/blob/master/Changelog.md)\n- [Commits](https://github.com/KillingSpark/zstd-rs/compare/v0.8.0...v0.9.0)\n\n---\nupdated-dependencies:\n- dependency-name: ruzstd\n  dependency-version: 0.9.0\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/2e1f71b403f090d1036c834f816afdc1acd5da54"
+        },
+        {
+          "sha": "c485e901fa881da632448fe73d0592990de4c1c0",
+          "author_date": "2026-08-14T14:32:00Z",
+          "message": "Fix doctest coverage in workspaces with multiple packages (#507)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c485e901fa881da632448fe73d0592990de4c1c0"
+        },
+        {
+          "sha": "c434e53407e04a188612e7a5dbc088e314a98d98",
+          "author_date": "2026-08-16T11:28:05Z",
+          "message": "Enhance uncovered lines reporting by aggregating consecutive line numbers (#497)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c434e53407e04a188612e7a5dbc088e314a98d98"
+        },
+        {
+          "sha": "c54b41095a21887372b546728d36ff65d4c147eb",
+          "author_date": "2026-08-16T18:49:28Z",
+          "message": "Fix build script handling with Cargo's new build-dir layout",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/c54b41095a21887372b546728d36ff65d4c147eb"
+        },
+        {
+          "sha": "2d17a93eb397cf8b8272abb561568cc990a7ba46",
+          "author_date": "2026-08-16T19:02:47Z",
+          "message": "Touch up PR 497",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/2d17a93eb397cf8b8272abb561568cc990a7ba46"
+        },
+        {
+          "sha": "b4273693458731e752402b03b39cb0378f0f9296",
+          "author_date": "2026-08-16T19:25:12Z",
+          "message": "ci: Test LLVM 23",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/b4273693458731e752402b03b39cb0378f0f9296"
+        },
+        {
+          "sha": "08c3b424bb29a778e078b2ddcbd6481bc690203c",
+          "author_date": "2026-08-16T19:27:03Z",
+          "message": "Update .gitignore",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/08c3b424bb29a778e078b2ddcbd6481bc690203c"
+        },
+        {
+          "sha": "f05fe9f9a1243c3bda92b05a4fb2c737189e5204",
+          "author_date": "2026-08-16T19:30:29Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/f05fe9f9a1243c3bda92b05a4fb2c737189e5204"
+        },
+        {
+          "sha": "be59056988acd54c7f984b7c85643daea3711b29",
+          "author_date": "2026-08-16T20:16:29Z",
+          "message": "Release 0.9.0",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/be59056988acd54c7f984b7c85643daea3711b29"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.9.1",
+      "previous_release": "v0.9.0",
+      "commits": [
+        {
+          "sha": "ea4d30ad4b82f19acb1a55ee61fc1a5c94498a96",
+          "author_date": "2026-08-21T12:05:43Z",
+          "message": "ci: Update LLVM test",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ea4d30ad4b82f19acb1a55ee61fc1a5c94498a96"
+        },
+        {
+          "sha": "3fbec7ab75829068dde2b4ee7563a287cec0b7e5",
+          "author_date": "2026-09-01T23:33:32Z",
+          "message": "Bump taiki-e/github-actions/.github/workflows/rust-release.yml\n\nBumps [taiki-e/github-actions/.github/workflows/rust-release.yml](https://github.com/taiki-e/github-actions) from 2026.7.3 to 2026.8.8.\n- [Release notes](https://github.com/taiki-e/github-actions/releases)\n- [Commits](https://github.com/taiki-e/github-actions/compare/e6a1170cbd07eb898017958967912976fce18f2d...dc24bff2366e8ddeea5e0e4168df3d6f4b93f596)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/github-actions/.github/workflows/rust-release.yml\n  dependency-version: 2026.8.8\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/3fbec7ab75829068dde2b4ee7563a287cec0b7e5"
+        },
+        {
+          "sha": "1b6db2ffd8269d56f320b0a3800435a6ff83d0c1",
+          "author_date": "2026-09-01T23:33:31Z",
+          "message": "Bump taiki-e/github-actions/.github/workflows/tidy.yml\n\nBumps [taiki-e/github-actions/.github/workflows/tidy.yml](https://github.com/taiki-e/github-actions) from 2026.7.3 to 2026.8.8.\n- [Release notes](https://github.com/taiki-e/github-actions/releases)\n- [Commits](https://github.com/taiki-e/github-actions/compare/e6a1170cbd07eb898017958967912976fce18f2d...dc24bff2366e8ddeea5e0e4168df3d6f4b93f596)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/github-actions/.github/workflows/tidy.yml\n  dependency-version: 2026.8.8\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/1b6db2ffd8269d56f320b0a3800435a6ff83d0c1"
+        },
+        {
+          "sha": "05c9eb32f1566d876644c88d0d624011fcdf48c9",
+          "author_date": "2026-09-01T23:33:30Z",
+          "message": "Bump taiki-e/install-action from 2.85.1 to 2.86.3\n\nBumps [taiki-e/install-action](https://github.com/taiki-e/install-action) from 2.85.1 to 2.86.3.\n- [Release notes](https://github.com/taiki-e/install-action/releases)\n- [Changelog](https://github.com/taiki-e/install-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/taiki-e/install-action/compare/3d7d7cd5ac7f994c1892ae0c06165095b9139094...5b4d68e2e660441203ab128a23676f1e4faf1532)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/install-action\n  dependency-version: 2.86.3\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/05c9eb32f1566d876644c88d0d624011fcdf48c9"
+        },
+        {
+          "sha": "410f98b1b73ecd015ff5ae982873f6ec466960a7",
+          "author_date": "2026-09-01T23:32:42Z",
+          "message": "Bump taiki-e/github-actions/.github/workflows/rust-msrv.yml\n\nBumps [taiki-e/github-actions/.github/workflows/rust-msrv.yml](https://github.com/taiki-e/github-actions) from 2026.7.3 to 2026.8.8.\n- [Release notes](https://github.com/taiki-e/github-actions/releases)\n- [Commits](https://github.com/taiki-e/github-actions/compare/e6a1170cbd07eb898017958967912976fce18f2d...dc24bff2366e8ddeea5e0e4168df3d6f4b93f596)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/github-actions/.github/workflows/rust-msrv.yml\n  dependency-version: 2026.8.8\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/410f98b1b73ecd015ff5ae982873f6ec466960a7"
+        },
+        {
+          "sha": "29387632c2d44fff2c7526517c1aa75bb2ee4445",
+          "author_date": "2026-09-01T23:32:39Z",
+          "message": "Bump taiki-e/setup-cross-toolchain-action from 1.41.0 to 1.42.0\n\nBumps [taiki-e/setup-cross-toolchain-action](https://github.com/taiki-e/setup-cross-toolchain-action) from 1.41.0 to 1.42.0.\n- [Release notes](https://github.com/taiki-e/setup-cross-toolchain-action/releases)\n- [Changelog](https://github.com/taiki-e/setup-cross-toolchain-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/taiki-e/setup-cross-toolchain-action/compare/3d9770ce98eb7dbcf378563182a5e8031165f75b...12b7ad4acfa95a1476779d6c06699b96ec1691f8)\n\n---\nupdated-dependencies:\n- dependency-name: taiki-e/setup-cross-toolchain-action\n  dependency-version: 1.42.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/29387632c2d44fff2c7526517c1aa75bb2ee4445"
+        },
+        {
+          "sha": "dda20e9e0ce0b3acb3b6583924461f289fc79684",
+          "author_date": "2026-09-06T14:14:43Z",
+          "message": "Fix build-dir v2 path matching on Windows (#521)",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/dda20e9e0ce0b3acb3b6583924461f289fc79684"
+        },
+        {
+          "sha": "ff7de46c296060ef86cd0975c3ff724c8bb22b24",
+          "author_date": "2026-09-06T15:33:57Z",
+          "message": "Update changelog",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/ff7de46c296060ef86cd0975c3ff724c8bb22b24"
+        },
+        {
+          "sha": "0dc905679ae6b4740b186f6e2c2ef1ab78fb76d7",
+          "author_date": "2026-09-06T16:20:41Z",
+          "message": "Release 0.9.1",
+          "html_url": "https://github.com/taiki-e/cargo-llvm-cov/commit/0dc905679ae6b4740b186f6e2c2ef1ab78fb76d7"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [
+      {
+        "id": 18849700068,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-27T17:12:47Z",
+        "updated_at": "2025-10-27T17:25:37Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18849700068"
+      },
+      {
+        "id": 18500073798,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-14T14:33:02Z",
+        "updated_at": "2025-10-14T14:51:35Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18500073798"
+      },
+      {
+        "id": 18430700056,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-11T14:30:41Z",
+        "updated_at": "2025-10-11T14:41:50Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18430700056"
+      },
+      {
+        "id": 18413526146,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-10T17:16:53Z",
+        "updated_at": "2025-10-10T17:28:20Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18413526146"
+      },
+      {
+        "id": 18413242821,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-10T17:05:02Z",
+        "updated_at": "2025-10-10T17:15:36Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18413242821"
+      },
+      {
+        "id": 18240312608,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-04T05:40:06Z",
+        "updated_at": "2025-10-04T06:01:11Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18240312608"
+      },
+      {
+        "id": 18240300339,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-04T05:38:57Z",
+        "updated_at": "2025-10-04T05:51:35Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18240300339"
+      },
+      {
+        "id": 18238505977,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-04T02:45:20Z",
+        "updated_at": "2025-10-04T04:52:58Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18238505977"
+      },
+      {
+        "id": 18226563729,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-03T15:26:35Z",
+        "updated_at": "2025-10-03T15:38:18Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/18226563729"
+      }
+    ],
+    "2025-11": [
+      {
+        "id": 19787190786,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-29T17:41:05Z",
+        "updated_at": "2025-11-29T17:45:58Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/19787190786"
+      }
+    ],
+    "2025-12": [
+      {
+        "id": 20592581386,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T08:44:32Z",
+        "updated_at": "2025-12-30T08:51:15Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/20592581386"
+      },
+      {
+        "id": 20592432890,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T08:35:11Z",
+        "updated_at": "2025-12-30T08:41:55Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/20592432890"
+      },
+      {
+        "id": 20590900178,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T06:57:11Z",
+        "updated_at": "2025-12-30T07:04:17Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/20590900178"
+      },
+      {
+        "id": 20590404919,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T06:23:12Z",
+        "updated_at": "2025-12-30T06:29:11Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/20590404919"
+      },
+      {
+        "id": 20589957497,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T05:51:05Z",
+        "updated_at": "2025-12-30T05:56:36Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/20589957497"
+      },
+      {
+        "id": 20208416731,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-14T13:06:42Z",
+        "updated_at": "2025-12-14T13:16:50Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/20208416731"
+      }
+    ],
+    "2026-01": [
+      {
+        "id": 21401672405,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T14:46:34Z",
+        "updated_at": "2026-01-27T15:08:03Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21401672405"
+      },
+      {
+        "id": 21401617899,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T14:45:00Z",
+        "updated_at": "2026-01-27T15:05:30Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21401617899"
+      },
+      {
+        "id": 21401078831,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T14:29:31Z",
+        "updated_at": "2026-01-27T14:49:24Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21401078831"
+      },
+      {
+        "id": 21400722478,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T14:19:27Z",
+        "updated_at": "2026-01-27T14:40:19Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21400722478"
+      },
+      {
+        "id": 21395751779,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T11:39:51Z",
+        "updated_at": "2026-01-27T12:03:25Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21395751779"
+      },
+      {
+        "id": 21395647438,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T11:36:08Z",
+        "updated_at": "2026-01-27T12:01:10Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21395647438"
+      },
+      {
+        "id": 21366506597,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T17:23:40Z",
+        "updated_at": "2026-01-26T17:28:23Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21366506597"
+      },
+      {
+        "id": 21366261189,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T17:12:37Z",
+        "updated_at": "2026-01-26T17:15:12Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21366261189"
+      },
+      {
+        "id": 21363872770,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T16:05:17Z",
+        "updated_at": "2026-01-26T16:15:06Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21363872770"
+      },
+      {
+        "id": 21363645836,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-26T15:38:15Z",
+        "updated_at": "2026-01-26T15:54:08Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21363645836"
+      },
+      {
+        "id": 21314665279,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T11:51:41Z",
+        "updated_at": "2026-01-24T12:06:24Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21314665279"
+      },
+      {
+        "id": 21314570813,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T11:43:08Z",
+        "updated_at": "2026-01-24T11:57:06Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21314570813"
+      },
+      {
+        "id": 21314464054,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T11:34:05Z",
+        "updated_at": "2026-01-24T11:48:23Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21314464054"
+      },
+      {
+        "id": 21313050205,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T09:36:42Z",
+        "updated_at": "2026-01-24T09:48:22Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21313050205"
+      },
+      {
+        "id": 21312875734,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T09:22:29Z",
+        "updated_at": "2026-01-24T09:34:22Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21312875734"
+      },
+      {
+        "id": 21312416255,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T08:45:53Z",
+        "updated_at": "2026-01-24T08:57:50Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21312416255"
+      },
+      {
+        "id": 21312277329,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T08:34:20Z",
+        "updated_at": "2026-01-24T08:47:34Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21312277329"
+      },
+      {
+        "id": 21311961707,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T08:08:31Z",
+        "updated_at": "2026-01-24T08:20:22Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21311961707"
+      },
+      {
+        "id": 21310862491,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T06:40:43Z",
+        "updated_at": "2026-01-24T06:52:38Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21310862491"
+      },
+      {
+        "id": 21310564765,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-01-24T06:17:19Z",
+        "updated_at": "2026-01-24T06:23:09Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21310564765"
+      },
+      {
+        "id": 21310438801,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-01-24T06:07:55Z",
+        "updated_at": "2026-01-24T06:13:01Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21310438801"
+      },
+      {
+        "id": 21310346617,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-01-24T06:01:08Z",
+        "updated_at": "2026-01-24T06:07:42Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21310346617"
+      },
+      {
+        "id": 21308621678,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-01-24T03:43:37Z",
+        "updated_at": "2026-01-24T05:05:06Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21308621678"
+      },
+      {
+        "id": 21306421421,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T01:05:37Z",
+        "updated_at": "2026-01-24T01:17:40Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21306421421"
+      },
+      {
+        "id": 21302489465,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-23T21:56:13Z",
+        "updated_at": "2026-01-23T22:12:20Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21302489465"
+      },
+      {
+        "id": 21301862668,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-23T21:32:02Z",
+        "updated_at": "2026-01-23T21:39:12Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21301862668"
+      },
+      {
+        "id": 21290752736,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-23T15:06:27Z",
+        "updated_at": "2026-01-23T15:15:13Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21290752736"
+      },
+      {
+        "id": 21290712861,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-01-23T15:05:14Z",
+        "updated_at": "2026-01-23T15:09:30Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21290712861"
+      },
+      {
+        "id": 21289587740,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-23T14:28:55Z",
+        "updated_at": "2026-01-23T14:36:21Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21289587740"
+      },
+      {
+        "id": 21256725553,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T16:42:09Z",
+        "updated_at": "2026-01-22T16:49:25Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21256725553"
+      },
+      {
+        "id": 21255979799,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T16:19:44Z",
+        "updated_at": "2026-01-22T16:27:02Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21255979799"
+      },
+      {
+        "id": 21255917157,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T16:17:50Z",
+        "updated_at": "2026-01-22T16:25:13Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21255917157"
+      },
+      {
+        "id": 21253756738,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T15:15:33Z",
+        "updated_at": "2026-01-22T15:23:15Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21253756738"
+      },
+      {
+        "id": 21248107301,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-22T12:16:36Z",
+        "updated_at": "2026-01-22T12:24:04Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21248107301"
+      },
+      {
+        "id": 20754408065,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T16:15:29Z",
+        "updated_at": "2026-01-06T16:25:02Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/20754408065"
+      },
+      {
+        "id": 20754051501,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T16:03:39Z",
+        "updated_at": "2026-01-06T16:13:04Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/20754051501"
+      }
+    ],
+    "2026-02": [
+      {
+        "id": 22489642979,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T14:13:15Z",
+        "updated_at": "2026-02-27T14:42:41Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/22489642979"
+      },
+      {
+        "id": 22261486654,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-21T17:54:34Z",
+        "updated_at": "2026-02-21T18:14:59Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/22261486654"
+      },
+      {
+        "id": 21904646069,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-11T12:14:57Z",
+        "updated_at": "2026-02-11T12:35:13Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21904646069"
+      },
+      {
+        "id": 21869259650,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-10T14:38:39Z",
+        "updated_at": "2026-02-10T14:59:25Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21869259650"
+      },
+      {
+        "id": 21763934131,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-06T19:55:38Z",
+        "updated_at": "2026-02-06T20:15:53Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21763934131"
+      },
+      {
+        "id": 21763113697,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-06T19:26:22Z",
+        "updated_at": "2026-02-06T19:49:49Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21763113697"
+      },
+      {
+        "id": 21719584547,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-05T16:26:32Z",
+        "updated_at": "2026-02-05T16:44:51Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21719584547"
+      },
+      {
+        "id": 21718365265,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-05T15:53:11Z",
+        "updated_at": "2026-02-05T16:23:42Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21718365265"
+      },
+      {
+        "id": 21680741433,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T17:03:47Z",
+        "updated_at": "2026-02-04T17:24:41Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21680741433"
+      },
+      {
+        "id": 21673792437,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T13:43:53Z",
+        "updated_at": "2026-02-04T14:18:12Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21673792437"
+      },
+      {
+        "id": 21673122043,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T13:23:07Z",
+        "updated_at": "2026-02-04T13:43:22Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21673122043"
+      },
+      {
+        "id": 21671258533,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T12:22:03Z",
+        "updated_at": "2026-02-04T12:42:56Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21671258533"
+      },
+      {
+        "id": 21669475900,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T11:21:17Z",
+        "updated_at": "2026-02-04T11:41:13Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21669475900"
+      },
+      {
+        "id": 21666188350,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-04T09:34:58Z",
+        "updated_at": "2026-02-04T09:52:31Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21666188350"
+      },
+      {
+        "id": 21665603221,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-04T09:16:42Z",
+        "updated_at": "2026-02-04T09:30:50Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/21665603221"
+      }
+    ],
+    "2026-03": [
+      {
+        "id": 23716713421,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-29T19:04:35Z",
+        "updated_at": "2026-03-29T19:29:54Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/23716713421"
+      },
+      {
+        "id": 23714750331,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-29T17:25:50Z",
+        "updated_at": "2026-03-29T18:50:53Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/23714750331"
+      },
+      {
+        "id": 23690157222,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-28T17:11:49Z",
+        "updated_at": "2026-03-28T17:36:35Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/23690157222"
+      },
+      {
+        "id": 23493575015,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-24T14:03:49Z",
+        "updated_at": "2026-03-24T14:24:02Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/23493575015"
+      },
+      {
+        "id": 23336860692,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-20T09:29:24Z",
+        "updated_at": "2026-03-20T09:49:45Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/23336860692"
+      },
+      {
+        "id": 23336004699,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-20T09:03:29Z",
+        "updated_at": "2026-03-20T09:23:50Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/23336004699"
+      },
+      {
+        "id": 23009644811,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-12T15:24:52Z",
+        "updated_at": "2026-03-12T15:45:59Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/23009644811"
+      },
+      {
+        "id": 22722873551,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-05T17:36:12Z",
+        "updated_at": "2026-03-05T18:02:56Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/22722873551"
+      },
+      {
+        "id": 22722836733,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-05T14:36:31Z",
+        "updated_at": "2026-03-05T14:57:07Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/22722836733"
+      },
+      {
+        "id": 22629390686,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-03T15:13:24Z",
+        "updated_at": "2026-03-03T15:34:27Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/22629390686"
+      }
+    ],
+    "2026-04": [
+      {
+        "id": 24309981378,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-12T15:25:47Z",
+        "updated_at": "2026-04-12T15:46:37Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/24309981378"
+      },
+      {
+        "id": 24248261447,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-10T14:35:53Z",
+        "updated_at": "2026-04-10T14:56:29Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/24248261447"
+      },
+      {
+        "id": 23958738292,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-03T19:12:33Z",
+        "updated_at": "2026-04-03T19:31:03Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/23958738292"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 26459104009,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-26T15:49:07Z",
+        "updated_at": "2026-05-26T16:12:29Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/26459104009"
+      },
+      {
+        "id": 26362119293,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T13:08:11Z",
+        "updated_at": "2026-05-24T13:31:38Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/26362119293"
+      },
+      {
+        "id": 26361908739,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-24T12:58:40Z",
+        "updated_at": "2026-05-24T13:01:37Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/26361908739"
+      },
+      {
+        "id": 25771505818,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-13T00:59:53Z",
+        "updated_at": "2026-05-13T01:25:21Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25771505818"
+      },
+      {
+        "id": 25770658589,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-13T01:09:05Z",
+        "updated_at": "2026-05-13T01:17:27Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25770658589"
+      },
+      {
+        "id": 25770090763,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-13T00:18:44Z",
+        "updated_at": "2026-05-13T00:39:51Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25770090763"
+      },
+      {
+        "id": 25595515256,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-09T07:37:06Z",
+        "updated_at": "2026-05-09T08:00:31Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25595515256"
+      },
+      {
+        "id": 25595046258,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-09T07:13:35Z",
+        "updated_at": "2026-05-09T07:34:45Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25595046258"
+      },
+      {
+        "id": 25594998707,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-09T07:11:08Z",
+        "updated_at": "2026-05-09T07:13:52Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25594998707"
+      },
+      {
+        "id": 25594084675,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-09T06:26:20Z",
+        "updated_at": "2026-05-09T06:45:25Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25594084675"
+      },
+      {
+        "id": 25593665052,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-09T07:12:02Z",
+        "updated_at": "2026-05-09T07:13:58Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25593665052"
+      },
+      {
+        "id": 25593630409,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-09T06:03:35Z",
+        "updated_at": "2026-05-09T06:23:36Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25593630409"
+      },
+      {
+        "id": 25593152501,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-09T05:40:21Z",
+        "updated_at": "2026-05-09T06:00:00Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/25593152501"
+      }
+    ],
+    "2026-06": [],
+    "2026-07": [
+      {
+        "id": 28716978109,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-04T19:20:27Z",
+        "updated_at": "2026-07-04T20:04:25Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/28716978109"
+      },
+      {
+        "id": 28680168920,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-03T19:37:21Z",
+        "updated_at": "2026-07-03T20:13:59Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/28680168920"
+      },
+      {
+        "id": 28677880562,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-07-03T18:37:26Z",
+        "updated_at": "2026-07-03T19:13:58Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/28677880562"
+      },
+      {
+        "id": 28677309613,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-07-03T18:22:53Z",
+        "updated_at": "2026-07-03T18:34:27Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/28677309613"
+      },
+      {
+        "id": 28673516398,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-07-03T16:48:56Z",
+        "updated_at": "2026-07-03T17:11:18Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/28673516398"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 32480297141,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-21T12:06:23Z",
+        "updated_at": "2026-08-21T12:27:13Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/32480297141"
+      },
+      {
+        "id": 31970076596,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-16T20:16:34Z",
+        "updated_at": "2026-08-16T20:41:54Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31970076596"
+      },
+      {
+        "id": 31967829669,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-16T19:31:21Z",
+        "updated_at": "2026-08-16T19:56:21Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31967829669"
+      },
+      {
+        "id": 31944403449,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-16T11:28:09Z",
+        "updated_at": "2026-08-16T11:54:51Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31944403449"
+      },
+      {
+        "id": 31809969468,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-14T14:32:04Z",
+        "updated_at": "2026-08-14T15:00:07Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31809969468"
+      },
+      {
+        "id": 31805185623,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-14T13:32:26Z",
+        "updated_at": "2026-08-14T13:57:31Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31805185623"
+      },
+      {
+        "id": 31276721451,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-08T20:21:46Z",
+        "updated_at": "2026-08-08T23:46:55Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31276721451"
+      },
+      {
+        "id": 31276607618,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-08T20:18:59Z",
+        "updated_at": "2026-08-08T23:44:25Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31276607618"
+      },
+      {
+        "id": 31276530117,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-08T20:17:03Z",
+        "updated_at": "2026-08-08T22:33:38Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31276530117"
+      },
+      {
+        "id": 31267780276,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-08T16:46:49Z",
+        "updated_at": "2026-08-08T20:11:55Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31267780276"
+      },
+      {
+        "id": 31267536119,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-08T16:40:53Z",
+        "updated_at": "2026-08-08T20:03:39Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/31267536119"
+      }
+    ],
+    "2026-09": [
+      {
+        "id": 34045137734,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-06T16:20:47Z",
+        "updated_at": "2026-09-06T16:46:42Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/34045137734"
+      },
+      {
+        "id": 34042718912,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-06T15:34:06Z",
+        "updated_at": "2026-09-06T15:59:12Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/34042718912"
+      },
+      {
+        "id": 34038555088,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-06T14:14:47Z",
+        "updated_at": "2026-09-06T14:41:36Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/34038555088"
+      },
+      {
+        "id": 33627306117,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T11:57:31Z",
+        "updated_at": "2026-09-02T13:01:34Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/33627306117"
+      },
+      {
+        "id": 33627289043,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T11:57:18Z",
+        "updated_at": "2026-09-02T12:48:25Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/33627289043"
+      },
+      {
+        "id": 33626170114,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T11:44:25Z",
+        "updated_at": "2026-09-02T12:31:28Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/33626170114"
+      },
+      {
+        "id": 33625846132,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T11:40:40Z",
+        "updated_at": "2026-09-02T12:22:11Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/33625846132"
+      },
+      {
+        "id": 33625520050,
+        "name": "CI",
+        "workflow_id": 5193978,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-02T11:36:54Z",
+        "updated_at": "2026-09-02T12:15:54Z",
+        "html_url": "https://github.com/taiki-e/cargo-llvm-cov/actions/runs/33625520050"
+      }
+    ]
+  }
+}

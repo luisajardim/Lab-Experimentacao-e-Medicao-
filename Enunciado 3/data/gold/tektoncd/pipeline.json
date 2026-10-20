@@ -3702,78 +3702,6 @@
   ],
   "commits_between": [
     {
-      "release": "v0.1.0",
-      "previous_release": null,
-      "commits": null,
-      "ignored_reason": "no_previous_release"
-    },
-    {
-      "release": "v0.2.0",
-      "previous_release": "v0.1.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.3.0",
-      "previous_release": "v0.2.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.3.1",
-      "previous_release": "v0.3.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.4.0",
-      "previous_release": "v0.3.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.5.0",
-      "previous_release": "v0.4.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.5.1",
-      "previous_release": "v0.5.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.5.2",
-      "previous_release": "v0.5.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.6.0",
-      "previous_release": "v0.5.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.7.0",
-      "previous_release": "v0.6.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.8.0",
-      "previous_release": "v0.7.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.9.0",
-      "previous_release": "v0.8.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v0.9.1",
       "previous_release": "v0.9.0",
       "commits": null,
@@ -3794,36 +3722,6 @@
     {
       "release": "v0.10.1",
       "previous_release": "v0.10.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.11.0-rc1",
-      "previous_release": "v0.10.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.11.0-rc2",
-      "previous_release": "v0.11.0-rc1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.10.2",
-      "previous_release": "v0.11.0-rc2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.11.0-rc3",
-      "previous_release": "v0.10.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v0.11.0-rc4",
-      "previous_release": "v0.11.0-rc3",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -3962,8 +3860,27 @@
     {
       "release": "v0.17.2",
       "previous_release": "v0.17.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "5313762058afe6485eb478b9c966fcce8c0f6050",
+          "author_date": "2020-10-14T20:48:01Z",
+          "message": "Fix json annotations in WhenExpression\n\nWhen a pipeline with when expressions is created in v0.16.* then it is\nrun in a pipelinerun in v0.17.0 or v0.17.1, a pipeline validation error\nabout missing fields would be thrown -- as reported in #3382\n\nThat happened because json annotations were added to when expressions\ntype in v0.17.0 so that the fields would have lowercase, such as in the\ncode completion in tekton intellij plugin as described in\nredhat-developer/intellij-tekton#223\n\nWithout the json annotations, the fields were stored with first letters\ncapitalized, that is Input, Operator and Values. With the json\nannotations, the fields were expected to be lowercase, that is input,\noperator and values, causing the missing fields error in pipeline\nvalidation\n\nAs such, users would have to reapply pipelines definitions created in\nprevious versions to make them work in v0.17.0 or v0.17.1 -- to remove\nthis requirement, we need to support both the uppercase and lowercase\nfirst letters for the annotations\n\nFixes #3382\n\n(cherry picked from commit 4edcbc19ee96d5adf9098143677a4bbd697ed0e4)\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5313762058afe6485eb478b9c966fcce8c0f6050"
+        },
+        {
+          "sha": "9bd3e8a50ad851f0a4ad610540882039101f4d71",
+          "author_date": "2020-10-22T08:57:36Z",
+          "message": "Fix TaskRunSpec overrides when empty 🗜\n\nIn case of TaskRunSpec being present on a PipelineRun, we override the\nPipelineTask PodTemplate and ServiceAccount blindly, even if those\nvalues are empty (empty string, nil point)\n\nThis fixes this behavior by overriding PodTemplate and/or\nServiceAccountName only when they are not empty values.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>\n(cherry picked from commit 695d117bb82e6e7c8f67d1a5620bc94de63e5a85)\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/9bd3e8a50ad851f0a4ad610540882039101f4d71"
+        },
+        {
+          "sha": "3e31262031c124a638c94c563dc7f8ef0471bc88",
+          "author_date": "2020-10-26T13:17:51Z",
+          "message": "tekton: port koparse fix to release-0.17.x\n\nWithout porting those fixes to the release branch, we cannot do a\nrelease 😅\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3e31262031c124a638c94c563dc7f8ef0471bc88"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.17.3",
@@ -4382,8 +4299,33 @@
     {
       "release": "v0.43.1",
       "previous_release": "v0.43.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "d5a98a676b4a7f8b8fec9eaea655724cf42e7dfa",
+          "author_date": "2023-01-04T15:40:53Z",
+          "message": "Use the golangci-lint configured in Makefile in build tests\n\nWe hit an issue on https://github.com/tektoncd/pipeline/pull/5941 due to the golangci-lint installed on the `test-runner` image being upgraded and reporting new issues that weren't encountered at the time of the v0.43.0 release. Ideally, the build tests job should be using the same golangci-lint version as is defined in the Makefile, so let's switch to calling a make target.\n\nSigned-off-by: Andrew Bayer <andrew.bayer@gmail.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/d5a98a676b4a7f8b8fec9eaea655724cf42e7dfa"
+        },
+        {
+          "sha": "8587b7b492e5d5216f0ddb0f1d8f9fd3d8c99600",
+          "author_date": "2023-01-04T16:52:41Z",
+          "message": "Register informers for v1 TaskRun and PipelineRun\n\nThis commit registers the v1 types so knative can generate informers for them.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/8587b7b492e5d5216f0ddb0f1d8f9fd3d8c99600"
+        },
+        {
+          "sha": "a1bac546fcd4c0f26a4271fa6a5dfc6d382972c2",
+          "author_date": "2023-01-03T16:13:21Z",
+          "message": "ChildReference status helper functions should support both CustomRuns and Runs\n\nfixes #5933\n\nI updated `pkg/status` to support `CustomRun`s early in the work for supporting `CustomRun`s in the `PipelineRun` reconciler, but forgot to add back support for `Run`s as well when we moved to the reconciler supporting both, depending on a feature flag. This broke https://github.com/tektoncd/cli/pull/1838. This change brings back support for `Run`s in the status helper functions, alongside the support for `CustomRun`s.\n\nSigned-off-by: Andrew Bayer <andrew.bayer@gmail.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a1bac546fcd4c0f26a4271fa6a5dfc6d382972c2"
+        },
+        {
+          "sha": "be1ce9d3a86bddb3bffff1a3f2954dbf3e2c312f",
+          "author_date": "2023-01-04T09:44:00Z",
+          "message": "tekton: fix KO_CONFIG_PATH on release pipeline\n\n- Export the `KO_CONFIG_PATH` variable 🤦\n- Using KO_CONFIG_PATH pointing to a file doesn't seem to work with ko\n  0.12.0 (https://github.com/ko-build/ko/issues/919)\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/be1ce9d3a86bddb3bffff1a3f2954dbf3e2c312f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.43.2",
@@ -4862,8 +4804,111 @@
     {
       "release": "v0.62.6",
       "previous_release": "v0.65.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "e58ca130a3c7ccb7fff1362d9093f7da95558f75",
+          "author_date": "2024-07-29T12:53:26Z",
+          "message": "Refine check if the result is from a matrix task\n\nGiven a matrix run of a TaskRun with cardinality of 1, the result from\nit will not be converted to an array but kept as a string, i.e. as if\nthe TaskRun was not configured to run with matrix.\n\nThis causes issues for consumers of the TaskRun's results as they will\nbe configured to consume array results. As a result making the passed\nvalue equal to expression value instead.\n\nResolves: #8157",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/e58ca130a3c7ccb7fff1362d9093f7da95558f75"
+        },
+        {
+          "sha": "9cf967291977e17c39778179424cf8f9f1a5b47a",
+          "author_date": "2024-08-06T16:42:16Z",
+          "message": "pkg/taskrunmetrics/fake shouldn't be imported…\n\n… in production code. It is used for unit-tests only. This might mess\nup the injection code and which code is executed when for metrics.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/9cf967291977e17c39778179424cf8f9f1a5b47a"
+        },
+        {
+          "sha": "3429744a7b3f6bdd5306d655944a4da6a70ceb46",
+          "author_date": "2024-08-07T15:27:05Z",
+          "message": "{taskrun,pipelinerun}metrics: make sure config is up-to-date\n\nThis updates some metrics package and struct to be able to\nkeep up-to-date the metrics configuration in the background go\nroutines that are used.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3429744a7b3f6bdd5306d655944a4da6a70ceb46"
+        },
+        {
+          "sha": "ecad3faf475da46c11d6031ebfb0745fbd059573",
+          "author_date": "2024-08-07T18:14:19Z",
+          "message": "check namespace config for node throttle metric\n\nNow that @vdemeester 's fix so that the background metric polling goroutines for pipelinerunmetrics and taskrunmetrics can access config.observability, we can properly address issue around verifiying non-default config around adding the namespace label for the node and quota throttle metrics that @divyansh42 @khrm and myself discovered last week.\n\nSigned-off-by: gabemontero <gmontero@redhat.com>\n\nrh-pre-commit.version: 2.3.1\nrh-pre-commit.check-secrets: ENABLED",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/ecad3faf475da46c11d6031ebfb0745fbd059573"
+        },
+        {
+          "sha": "68e5117849a45ca2b6a4ce025d15c6bb08108229",
+          "author_date": "2024-08-09T04:21:09Z",
+          "message": "apply default-container-resource-requirements before LimitRange transformer\n\nSigned-off-by: Jeeva Kandasamy <jkandasa@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/68e5117849a45ca2b6a4ce025d15c6bb08108229"
+        },
+        {
+          "sha": "fd2fdf9a9da203f0d8d91f3a5aebf45cafb6bd8c",
+          "author_date": "2024-09-02T12:29:18Z",
+          "message": "Fix Artifact type to a pointer\n\nPrior to this, the Artifacts in TaskRunStatusFields was not set to\na pointer of the underlying struct. As a result, it was incompatible\nwith `tkn`. Here we fix that issue by updating it to a `pointer`.\n\n(cherry picked from commit c9105944929841916450b9e32b3b7c818ed9b7d1)\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/fd2fdf9a9da203f0d8d91f3a5aebf45cafb6bd8c"
+        },
+        {
+          "sha": "1f7ec4923646d1bb4d52ea7cea7701ed3f877341",
+          "author_date": "2024-09-17T12:21:44Z",
+          "message": "Fix isolated workspaces ignored when using StepTemplate\n\nPrior to this fix, when one would use isolated workspaces (per step\nworkspace) in a `Task` *and* a `stepTemplate`, the isolated workspace\nwould be ignored and thus mounted in all steps instead.\n\nThis is now fixed by ensuring we do not loose the `Workspaces`\ndefinition from a `Step` when we merge it with a `StepTemplate`.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/1f7ec4923646d1bb4d52ea7cea7701ed3f877341"
+        },
+        {
+          "sha": "e259e361cbebbed9bd8875ae03d891c1ac23643b",
+          "author_date": "2024-09-25T12:44:46Z",
+          "message": "Mark steps as deleted when TaskRun fails\n\nToday this is done after the Pod is handled. If Pod deletion fails\nfor some reason, the steps are not updated.\n\nTekton only makes one attempt to delete the Pod to try and avoid\nthat it keeps running even if the TaskRun failed. If this deletion\nfails for whatever reason, Tekton should still update the TaskRun\nstatus to mark the steps as failed, as they are failed from\nTekton POV.\n\nFixes: #8293\n\nSigned-off-by: Andrea Frittoli <andrea.frittoli@uk.ibm.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/e259e361cbebbed9bd8875ae03d891c1ac23643b"
+        },
+        {
+          "sha": "66adde49eb71871a4bf9906029ae59684119f39b",
+          "author_date": "2024-10-15T13:01:48Z",
+          "message": "Backport release \"scripts\" changes from main…\n\n… as we switch to ghcr.io, we need those to be updated to work as they\nare referered during releases.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/66adde49eb71871a4bf9906029ae59684119f39b"
+        },
+        {
+          "sha": "ce6e7e48acd0fc885387bf8a56904c54a1c0e79d",
+          "author_date": "2024-10-24T01:27:50Z",
+          "message": "Expose Resolvers Controller performance tuning configurations\n\nThis changes the resolvers controllers to start with a config.\nWe expose ThreadsPerController, QPS and Burst for performance\ntuning as we do for pipelines controller.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/ce6e7e48acd0fc885387bf8a56904c54a1c0e79d"
+        },
+        {
+          "sha": "83ee000986de037df8a0a899bab02c7395f478dc",
+          "author_date": "2024-10-07T13:01:48Z",
+          "message": "Run finally pipeline even if task is failed at the validation\n\nPresently if one of the task in pipeline is consuming result from the previous task\nbut the previous failed to produce the result then pipeline fails without running\nthe finally tasks. These changes handles tasks which got failed in the validation\nstep.\n\nSigned-off-by: divyansh42 <diagrawa@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/83ee000986de037df8a0a899bab02c7395f478dc"
+        },
+        {
+          "sha": "1b2038531ce74744f03f468b5d164e3524f5223d",
+          "author_date": "2024-10-16T10:17:18Z",
+          "message": "Resolve review comments 1\n\nSigned-off-by: divyansh42 <diagrawa@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/1b2038531ce74744f03f468b5d164e3524f5223d"
+        },
+        {
+          "sha": "67c52552fb15aafe9aaf5be08a7cb663cec96e76",
+          "author_date": "2024-10-16T14:42:40Z",
+          "message": "Exit reconcilation and markfailed if finally is not present\n\nSigned-off-by divyansh42 <diagrawa@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/67c52552fb15aafe9aaf5be08a7cb663cec96e76"
+        },
+        {
+          "sha": "2659995c8867cb5b6e0ab40277f7ebd1a1b4bcfc",
+          "author_date": "2024-10-22T13:06:37Z",
+          "message": "Remove permanent error and improve skip logic\n\nSigned-off-by: divyansh42 <diagrawa@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/2659995c8867cb5b6e0ab40277f7ebd1a1b4bcfc"
+        },
+        {
+          "sha": "fb1e3f55adff537e75a21e704a77cee755ffca8b",
+          "author_date": "2024-10-30T09:56:49Z",
+          "message": "Fix number of completed and failed task in case of ValidationFailed\n\nSigned-off-by: divyansh42 <diagrawa@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/fb1e3f55adff537e75a21e704a77cee755ffca8b"
+        },
+        {
+          "sha": "f00cdf02b35d45723fa943eb802b75d15d2afc6b",
+          "author_date": "2024-09-03T01:32:40Z",
+          "message": "fix(pipelinerun): resolve issue with PipelineRun not timing out successfully\n\nfix #8230\n\nWhen the PipelineRun timeout, validation errors returned when patch a\ncompleted TaskRun should be ignored.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/f00cdf02b35d45723fa943eb802b75d15d2afc6b"
+        },
+        {
+          "sha": "127aa64b8923d3ac00f00e59ff6aa5070f511d40",
+          "author_date": "2024-11-18T14:56:03Z",
+          "message": "Use io.ReadFull to read the bundle content\n\nThe io.Reader documentation says:\n\n> Read reads up to len(p) bytes into p. It returns the number of bytes\n> read (0 <= n <= len(p)) and any error encountered. ... If some data is\n> available but not len(p) bytes, Read conventionally returns what is\n> available instead of waiting for more.\n\nRead is not guaranteed to fill the data argument. Use io.ReadFull to\nfill the buffer.\n\nIn some cases (a relatively big bundle), the bundle content was not\ncompletely read and it would fail to parse. Using `io.ReadFull` fixes\nthe issue.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/127aa64b8923d3ac00f00e59ff6aa5070f511d40"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.59.5",
@@ -5180,8 +5225,369 @@
     {
       "release": "v1.9.5",
       "previous_release": "v1.13.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "11f5bb23699247f9b5b9f55aab0804d78cd2ffd4",
+          "author_date": "2026-02-11T19:20:12Z",
+          "message": "fix(pipelines): allow pipeline param defaults to use non-param variables\n\nBefore this fix, a recent change caused pipeline param default evaluation\nto fail if any variabes were referenced besides other params, such as\n`$(context.pipeline.name)`. This was due to the recursive parameter\ndefault resolution was expecting all `$(*)` variables to be resolvable\nwhile it was only expanding `$(params.*)` variables.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/11f5bb23699247f9b5b9f55aab0804d78cd2ffd4"
+        },
+        {
+          "sha": "e3bd070ad0247269ee17523988db49ec0b14029b",
+          "author_date": "2026-02-18T12:00:10Z",
+          "message": "tekton: update plumbing ref to include full image references fix\n\nUpdate the plumbing revision used by the precheck task to include\nthe fix from tektoncd/plumbing#3110 which replaces short image URLs\nwith full image references (e.g. alpine -> docker.io/library/alpine).\n\nNewer k8s versions no longer allow short image URLs.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/e3bd070ad0247269ee17523988db49ec0b14029b"
+        },
+        {
+          "sha": "694129117b06e10ef5ea9ef34b909d577aaba289",
+          "author_date": "2026-02-19T05:21:32Z",
+          "message": "ci: add CI summary fan-in job for branch protection\n\nAdd a ci-summary job that fans in all CI jobs (build, buildFips,\nlinting, tests, generated, multi-arch-build, e2e-tests) and checks\ntheir results. This job accepts both \"success\" and \"skipped\" as\npassing states, which is needed for branch protection rules to work\ncorrectly with conditional/skipped jobs (e.g. docs-only PRs).\n\nThis is a port of 579ccafe99a6 from main.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/694129117b06e10ef5ea9ef34b909d577aaba289"
+        },
+        {
+          "sha": "5a40b3f2b83cc80b5c18f2aeabb509ef1217ea99",
+          "author_date": "2026-02-19T05:12:03Z",
+          "message": "tekton: update plumbing ref to latest commit\n\nUpdate the plumbing revision used by the precheck task to the latest\ncommit on tektoncd/plumbing main. This includes all the full image\nreference fixes (tektoncd/plumbing#3110, #3112, and follow-ups).\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5a40b3f2b83cc80b5c18f2aeabb509ef1217ea99"
+        },
+        {
+          "sha": "edc64bbf22323fcf218170f19047c9bcd8163e90",
+          "author_date": "2026-03-11T13:54:28Z",
+          "message": "Fix panic in GenerateDeterministicNameFromSpec with long resolver names\n\nGenerateDeterministicNameFromSpec panics when the generated name\nexceeds 63 characters (DNS-1123 label max length) because\nstrings.LastIndex is used to find a space character as a truncation\nboundary. The generated name format is '{prefix}-{hex_hash}' which\nnever contains spaces, so LastIndex returns -1, causing a slice\nbounds panic.\n\nAn attacker who can create TaskRuns or PipelineRuns can set the\nresolver name to a string >= 30 characters to trigger this panic,\ncrashing the controller into a CrashLoopBackOff.\n\nFix: compute the hash first, then truncate only the prefix to make\nroom, preserving the full hash to maintain determinism and\nuniqueness of generated ResolutionRequest names.\n\nFixes: GHSA-cv4x-93xx-wgfj",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/edc64bbf22323fcf218170f19047c9bcd8163e90"
+        },
+        {
+          "sha": "3ca7bc6e6dd1d97f80b84f78370d91edaf023cbd",
+          "author_date": "2026-03-11T18:15:48Z",
+          "message": "fix: prevent path traversal in git resolver pathInRepo parameter\n\nThe git resolver's pathInRepo parameter was not validated for path\ntraversal, allowing a tenant to read arbitrary files from the resolver\npod's filesystem by supplying paths like '../../../../etc/passwd' or\n'../../../../var/run/secrets/kubernetes.io/serviceaccount/token'.\n\nThe resolved file contents were then written into\nresolutionrequest.status.data (base64-encoded), creating an\nexfiltration channel. Since the resolver pod's ServiceAccount typically\nhas broad RBAC permissions (including read access to secrets), this\ncould lead to full privilege escalation.\n\nThe fix adds two layers of defense:\n\n1. Validate pathInRepo in PopulateDefaultParams() to reject paths\n   containing '..' components. Leading slashes are stripped for\n   backwards compatibility (filepath.Join already handles them safely).\n\n2. Switch getFileContent() to use 'git show HEAD:<path>' to read files\n   from git's object store instead of os.ReadFile from the filesystem.\n   Symlinks are resolved via filepath.EvalSymlinks before computing the\n   relative path for git show, so in-repo symlinks work correctly while\n   escape symlinks produce paths that git show rejects.\n\nUnit and e2e regression tests are added for traversal patterns,\nsymlink escapes, and valid leading-slash paths.\n\nThe vulnerability was introduced in commit 318006c4e3a5 when the git\nresolver switched from go-git's in-memory filesystem (memfs) to\nshelling out to git and reading files with os.ReadFile(). All releases\nfrom v1.0.0 through v1.10.0 are affected.\n\nFixes: GHSA-j5q5-j9gm-2w5c",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3ca7bc6e6dd1d97f80b84f78370d91edaf023cbd"
+        },
+        {
+          "sha": "3e729e08be6a9b4196d76921d2a9b44f167bebbd",
+          "author_date": "2026-03-17T13:58:19Z",
+          "message": "Re-enable pipeline-api.md generation\n\nThis picks up a fix in the forked/vendored tool that adds minimal\nsupport for aliased types. It also enhances the configuration to\naddress some missing external URLs.\n\nWith the update in, the generation of docs/pipeline-api.md can\nbe re-enabled.\n\nMerging this might trigger rebase for other PRs, but it's best\ndone sooner than later as the current docs we publish to tekton.dev\nis slightly out of date.\n\nSigned-off-by: Andrea Frittoli <andrea.frittoli@uk.ibm.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3e729e08be6a9b4196d76921d2a9b44f167bebbd"
+        },
+        {
+          "sha": "38582baeca5a0b50d8397bb6313af44a02074907",
+          "author_date": "2026-01-31T10:30:17Z",
+          "message": "fix: Align cache configstore with framework implementation\nRemove the custom Config struct and NewConfigFromConfigMap function in the resolver cache package. Instead, use the standard map[string]string pattern and DataFromConfigMap from the resolution framework.\n\nThis aligns the cache configuration handling with other Tekton resolvers for better consistency and maintainability.\n\nConsolidate unit tests into TestOnCacheConfigMapChanged for better flow verification\nFixes #9275",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/38582baeca5a0b50d8397bb6313af44a02074907"
+        },
+        {
+          "sha": "53deb94c7235b571a875453c625ed434c50574cd",
+          "author_date": "2026-02-15T18:17:49Z",
+          "message": "fix: resolve cache race with singleflight\n\nBefore this change, cache Get and Add were separate operations,\ncreating a TOCTOU race: concurrent requests for the same resource\ncould all miss the cache and each trigger a remote resolution.\n\nMerge Get/Add/GetFromCacheOrResolve into a single\nGetCachedOrResolveFromRemote method on resolverCache that wraps\nthe resolve callback with golang.org/x/sync/singleflight. Only\none in-flight resolution per cache key proceeds; all concurrent\ncallers share its result.\n\nOther changes in this commit:\n- Use strings.Builder in generateCacheKey instead of\n  string concatenation\n- Remove unused resolverType param from ShouldUse\n- Rework e2e tests to verify caching by counting actual\n  registry GET requests (via logs and metrics) instead of\n  checking resolver log messages\n- Add multi-replica resolver test (4 replicas, 200 TaskRuns)\n- Allow -run flag to bypass category filtering in TestMain\n- Log when resolution was deduped by singleflight\n\nIssue #9364\n\nSigned-off-by: Stanislav Jakuschevskij <stas@two-giants.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/53deb94c7235b571a875453c625ed434c50574cd"
+        },
+        {
+          "sha": "297edbb675eb3e1307bffd9b4baf70dd833dd5bd",
+          "author_date": "2026-03-21T10:35:41Z",
+          "message": "fix: remove corrupted cache entries on type error\n\nBefore, a corrupted cache entry (one that fails type assertion)\nwould return an error but stay in the cache, blocking all future\nlookups for that key until TTL expiration or LRU eviction.\n\nNow the corrupted entry is removed immediately so the next\nrequest triggers a fresh resolution.\n\nAlso deduplicate the kubeconfig log line in TestMain by moving\nit before the category-filtering branches.\n\nIssue #9364",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/297edbb675eb3e1307bffd9b4baf70dd833dd5bd"
+        },
+        {
+          "sha": "52a824a1a459db1461390074ce2f1ac438aa3c32",
+          "author_date": "2026-03-25T16:29:09Z",
+          "message": "fix: use TextParser struct directly for prometheus/common v0.62.0 compatibility\n\nNewTextParser() was added in a later version of prometheus/common.\nThe v1.9.x branch uses v0.62.0 which only has the TextParser struct.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/52a824a1a459db1461390074ce2f1ac438aa3c32"
+        },
+        {
+          "sha": "1b37704157112af3b7e4234000995cce8ebfa03c",
+          "author_date": "2026-04-07T06:16:56Z",
+          "message": "fix: bump Go to 1.24.13 to fix CVE-2025-61728, CVE-2025-61726, CVE-2025-61729\n\n- CVE-2025-61728: Excessive CPU consumption in archive/zip\n- CVE-2025-61726: Memory exhaustion in net/url\n- CVE-2025-61729: Resource exhaustion in crypto/x509\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/1b37704157112af3b7e4234000995cce8ebfa03c"
+        },
+        {
+          "sha": "64e3723e35df9a5461cda9427a0f2c2013ecf3ca",
+          "author_date": "2026-04-10T14:24:41Z",
+          "message": "fix: pin registry image and relax log-based cache assertion\n\nDistribution v3.1.0 (released April 7, 2026) changed its HTTP logging\nformat, causing each manifest GET to produce two log lines instead of\none. This broke TestBundleResolverCacheWithFourResolverReplicas which\ncounted registry GET requests by parsing container logs.\n\n- Pin registry e2e image to :3 to avoid future surprise breakage\n- Demote log-based request count from t.Errorf to t.Logf since\n  registry log formats vary across versions; metrics are authoritative\n\nFixes #9758\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/64e3723e35df9a5461cda9427a0f2c2013ecf3ca"
+        },
+        {
+          "sha": "aa0fc1f047ed914aaf08f91481b77f51ce13d2c4",
+          "author_date": "2026-04-16T16:39:32Z",
+          "message": "fix(e2e): replace ubuntu with busybox in dind-sidecar test Dockerfile\n\nThe dind-sidecar test Dockerfile used FROM ubuntu + RUN apt-get update,\nwhich hits external Ubuntu mirrors and fails intermittently with\nHash Sum mismatch errors. Replace with FROM busybox which has no\nexternal dependency and is already cached from the earlier docker run.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/aa0fc1f047ed914aaf08f91481b77f51ce13d2c4"
+        },
+        {
+          "sha": "a26e9c612af2552084a8d3c302f650a674be5b30",
+          "author_date": "2026-04-20T08:02:08Z",
+          "message": "Fix running_taskruns metric overcounting TaskRuns with no condition\n\nReplace !tr.IsDone() with an explicit nil + ConditionUnknown check so that\nnewly created TaskRuns (before their first reconcile) are no longer counted\nas running. Apply the same fix to PipelineRun metrics.\n\nThis is a manual backport of #9485.\n\nFixes #9438",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a26e9c612af2552084a8d3c302f650a674be5b30"
+        },
+        {
+          "sha": "39e14d42a5a1a144eb131627ea63790f31683db0",
+          "author_date": "2026-04-09T09:10:19Z",
+          "message": "Security: reject system API token with user-controlled serverURL\n\nWhen a user specifies a custom serverURL but omits the token parameter,\nthe git resolver's API mode falls back to the system-configured API\ntoken and sends it as an Authorization header to the user-controlled\nserver. This allows a namespace-scoped tenant with TaskRun create\npermission to exfiltrate the shared system Git API token (GitHub PAT,\nGitLab token, etc.) to an attacker-controlled endpoint.\n\nThe fix validates that when serverURL differs from the system-configured\nserver URL, the user must provide their own token parameter. Using the\nsystem token with a non-default server URL is rejected with an explicit\nerror message.\n\nThis follows the same threat model as GHSA-j5q5-j9gm-2w5c (path\ntraversal in the git resolver): a namespace-scoped tenant exploits the\ngit resolver to exfiltrate credentials they should not have access to.\n\nReported-by: Koda Reef <kodareef5@gmail.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/39e14d42a5a1a144eb131627ea63790f31683db0"
+        },
+        {
+          "sha": "bb76e37a9890112d9c7ef841f9ff02f0537defce",
+          "author_date": "2026-04-10T15:08:33Z",
+          "message": "fix: prevent git argument injection via revision parameter (GHSA-94jr-7pqp-xhcq)\n\nThe git resolver passed the user-supplied revision parameter directly as\na positional argument to git fetch without validation or a -- separator.\nAn attacker could inject --upload-pack=/path/to/binary as the revision,\ncausing git to execute the specified binary.\n\nThe fix applies three defense-in-depth layers:\n\n1. Reject revision starting with - in PopulateDefaultParams() to block\n   argument injection at the parameter validation level.\n2. Remove local path support (/ and file://) from validateRepoURL() and\n   add ssh, ftp, ftps URL scheme support.\n3. Add -- separator to git fetch and git clone commands to ensure\n   arguments are always interpreted as refspecs, never as flags.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/bb76e37a9890112d9c7ef841f9ff02f0537defce"
+        },
+        {
+          "sha": "603644f08a1db28dd15b653d40a8321447ad065d",
+          "author_date": "2026-03-31T13:14:02Z",
+          "message": "fix: normalize VolumeMount paths before /tekton/ restriction check\n\nAdd filepath.Clean before the strings.HasPrefix check in the VolumeMount\npath validation to prevent path traversal bypass via '..' components.\n\nA mount path like '/tekton/home/../results' previously passed validation\nbecause it matched the '/tekton/home' allowed prefix, but at runtime the\ncontainer runtime resolves '..' so the actual mount becomes\n'/tekton/results', which should have been blocked.\n\nThe fix normalizes the path before checking, consistent with how\ntask_validation.go already uses filepath.Clean for mount path operations.\n\nApplied to both v1 (container_validation.go) and v1beta1\n(task_validation.go).\n\nFixes: GHSA-rx35-6rhx-7858",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/603644f08a1db28dd15b653d40a8321447ad065d"
+        },
+        {
+          "sha": "34bfa92b2f47e6fc425f2c76392f4ce16d4a0577",
+          "author_date": "2026-03-18T09:44:38Z",
+          "message": "fix: strip resolver prefixes and use non-capturing group for pattern anchoring\n\nThe previous commit naively prepended ^ and appended $ to patterns,\nwhich broke backward compatibility with the git resolver's SPDX\n\"git+\" URI prefix.  Sources like \"git+https://github.com/…\" no\nlonger matched patterns written as \"https://github.com/…\".\n\nFix the approach:\n- Strip known resolver prefixes (\"git+\") from the source URI before\n  matching, so patterns don't need to account for resolver-specific\n  URI schemes.\n- Wrap unanchored patterns in ^(?:…)$ (non-capturing group) instead\n  of naively prepending/appending anchors, which correctly handles\n  patterns that are only partially anchored.\n- Preserve already fully-anchored patterns (^…$) unchanged.\n\nReplace the single bypass-control test with comprehensive test\ncoverage: bypass rejection, prefix stripping, already-anchored\npatterns, anchorPattern() unit tests, and stripResolverPrefix() unit\ntests.\n\nFixes: GHSA-rmx9-2pp3-xhcr",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/34bfa92b2f47e6fc425f2c76392f4ce16d4a0577"
+        },
+        {
+          "sha": "87a401f74a42cbfd38a5786530af1d66c3bfebe2",
+          "author_date": "2026-03-18T09:04:49Z",
+          "message": "fix: limit HTTP resolver response body size to prevent OOM DoS\n\nBound response body with io.LimitedReader to prevent memory exhaustion\nfrom malicious or oversized HTTP responses. The limit is hardcoded to\n1 MiB, which is below the etcd maximum object size (1.5 MiB), leaving\nroom for the ResolutionRequest CRD wrapper and base64 encoding overhead.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/87a401f74a42cbfd38a5786530af1d66c3bfebe2"
+        },
+        {
+          "sha": "4b778d175176f80561df787f0b390a34b6904961",
+          "author_date": "2026-04-21T14:23:34Z",
+          "message": "fix: trim whitespace from source URI before pattern matching\n\nstripResolverPrefix now trims leading/trailing whitespace from URIs\nbefore matching against VerificationPolicy patterns. The anchored\npattern matching introduced in the previous commit requires exact\nfull-string matches, so stray whitespace would cause false negatives.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/4b778d175176f80561df787f0b390a34b6904961"
+        },
+        {
+          "sha": "14e1d15de4db6cf9a3a9b72797b37e86ce49a5e8",
+          "author_date": "2026-04-24T09:20:36Z",
+          "message": "build(deps): bump k8s.io/api from 0.32.11 to 0.32.13\n\nBumps [k8s.io/api](https://github.com/kubernetes/api) from 0.32.11 to 0.32.13.\n- [Commits](https://github.com/kubernetes/api/compare/v0.32.11...v0.32.13)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/api\n  dependency-version: 0.32.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/14e1d15de4db6cf9a3a9b72797b37e86ce49a5e8"
+        },
+        {
+          "sha": "26f096ad47575ff99c3feb48de67000d16939b2c",
+          "author_date": "2026-04-24T21:30:27Z",
+          "message": "build(deps): bump k8s.io/client-go from 0.32.11 to 0.32.13\n\nBumps [k8s.io/client-go](https://github.com/kubernetes/client-go) from 0.32.11 to 0.32.13.\n- [Changelog](https://github.com/kubernetes/client-go/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/kubernetes/client-go/compare/v0.32.11...v0.32.13)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/client-go\n  dependency-version: 0.32.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/26f096ad47575ff99c3feb48de67000d16939b2c"
+        },
+        {
+          "sha": "d95db6302e9feb97b8302b972e56a7f61856bb3e",
+          "author_date": "2026-04-27T06:02:10Z",
+          "message": "build(deps): bump k8s.io/apiextensions-apiserver from 0.32.11 to 0.32.13\n\nBumps [k8s.io/apiextensions-apiserver](https://github.com/kubernetes/apiextensions-apiserver) from 0.32.11 to 0.32.13.\n- [Release notes](https://github.com/kubernetes/apiextensions-apiserver/releases)\n- [Commits](https://github.com/kubernetes/apiextensions-apiserver/compare/v0.32.11...v0.32.13)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/apiextensions-apiserver\n  dependency-version: 0.32.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/d95db6302e9feb97b8302b972e56a7f61856bb3e"
+        },
+        {
+          "sha": "f491d2c8e540a0a7b38a079f7cca7537dea8eae9",
+          "author_date": "2026-04-27T22:22:13Z",
+          "message": "build(deps): bump k8s.io/apimachinery from 0.33.7 to 0.33.11\n\nBumps [k8s.io/apimachinery](https://github.com/kubernetes/apimachinery) from 0.33.7 to 0.33.11.\n- [Commits](https://github.com/kubernetes/apimachinery/compare/v0.33.7...v0.33.11)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/apimachinery\n  dependency-version: 0.33.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/f491d2c8e540a0a7b38a079f7cca7537dea8eae9"
+        },
+        {
+          "sha": "25eaaf6c47aa49261d2c426af5c141d52e32204d",
+          "author_date": "2026-04-27T22:22:20Z",
+          "message": "build(deps): bump github.com/go-jose/go-jose/v3 from 3.0.4 to 3.0.5\n\nBumps [github.com/go-jose/go-jose/v3](https://github.com/go-jose/go-jose) from 3.0.4 to 3.0.5.\n- [Release notes](https://github.com/go-jose/go-jose/releases)\n- [Commits](https://github.com/go-jose/go-jose/compare/v3.0.4...v3.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/go-jose/go-jose/v3\n  dependency-version: 3.0.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/25eaaf6c47aa49261d2c426af5c141d52e32204d"
+        },
+        {
+          "sha": "d799108d2f7b56d904b89141affc5b17c2c3f71e",
+          "author_date": "2026-04-29T18:29:38Z",
+          "message": "build(deps): bump github.com/spiffe/spire-api-sdk from 1.14.0 to 1.14.6\n\nBumps [github.com/spiffe/spire-api-sdk](https://github.com/spiffe/spire-api-sdk) from 1.14.0 to 1.14.6.\n- [Commits](https://github.com/spiffe/spire-api-sdk/compare/v1.14.0...v1.14.6)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/spiffe/spire-api-sdk\n  dependency-version: 1.14.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/d799108d2f7b56d904b89141affc5b17c2c3f71e"
+        },
+        {
+          "sha": "37be52dcd687cdfff1ff1aa6f877f6898f02e029",
+          "author_date": "2026-04-24T09:19:10Z",
+          "message": "build(deps): bump actions/cache from 4.2.3 to 4.2.4\n\nBumps [actions/cache](https://github.com/actions/cache) from 4.2.3 to 4.2.4.\n- [Release notes](https://github.com/actions/cache/releases)\n- [Changelog](https://github.com/actions/cache/blob/main/RELEASES.md)\n- [Commits](https://github.com/actions/cache/compare/v4.2.3...0400d5f644dc74513175e3cd8d07132dd4860809)\n\n---\nupdated-dependencies:\n- dependency-name: actions/cache\n  dependency-version: 4.2.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/37be52dcd687cdfff1ff1aa6f877f6898f02e029"
+        },
+        {
+          "sha": "c8667866f027b34e087f32614d524da6c59825fa",
+          "author_date": "2026-04-24T09:19:28Z",
+          "message": "build(deps): bump tj-actions/changed-files from 47.0.1 to 47.0.6\n\nBumps [tj-actions/changed-files](https://github.com/tj-actions/changed-files) from 47.0.1 to 47.0.6.\n- [Release notes](https://github.com/tj-actions/changed-files/releases)\n- [Changelog](https://github.com/tj-actions/changed-files/blob/main/HISTORY.md)\n- [Commits](https://github.com/tj-actions/changed-files/compare/e0021407031f5be11a464abee9a0776171c79891...9426d40962ed5378910ee2e21d5f8c6fcbf2dd96)\n\n---\nupdated-dependencies:\n- dependency-name: tj-actions/changed-files\n  dependency-version: 47.0.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/c8667866f027b34e087f32614d524da6c59825fa"
+        },
+        {
+          "sha": "4e20a06c7973af690cfc45627cb8664fb4bb1aed",
+          "author_date": "2026-04-24T09:19:46Z",
+          "message": "build(deps): bump github/codeql-action from 4.32.0 to 4.32.6\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 4.32.0 to 4.32.6.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/b20883b0cd1f46c72ae0ba6d1090936928f9fa30...0d579ffd059c29b07949a3cce3983f0780820c98)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: 4.32.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/4e20a06c7973af690cfc45627cb8664fb4bb1aed"
+        },
+        {
+          "sha": "0d5c3a466a7a71e8ca9eea6b489230a1f7e4d54f",
+          "author_date": "2026-04-24T09:19:36Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `c036327` to `b6b15a1`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `efb75d8` to `a604adf`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `292f9c1` to `5a0e550`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `dc18889` to `37deddc`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 5a0e550c39ad2c7e5226d5524199bfdbce1e72b6a5dc09536ff060ea103074fc\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 37deddc03c0ef946819d296dc75fadd511fd8c113c255d1699d4ebf24cf5feda\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/0d5c3a466a7a71e8ca9eea6b489230a1f7e4d54f"
+        },
+        {
+          "sha": "a79aad939c5995d26cf6ef72cc2197a9ce9b6c3e",
+          "author_date": "2026-05-04T10:23:23Z",
+          "message": "build(deps): bump step-security/harden-runner from 2.14.1 to 2.14.2\n\nBumps [step-security/harden-runner](https://github.com/step-security/harden-runner) from 2.14.1 to 2.14.2.\n- [Release notes](https://github.com/step-security/harden-runner/releases)\n- [Commits](https://github.com/step-security/harden-runner/compare/e3f713f2d8f53843e71c69a996d56f51aa9adfb9...5ef0c079ce82195b2a36a210272d6b661572d83e)\n\n---\nupdated-dependencies:\n- dependency-name: step-security/harden-runner\n  dependency-version: 2.14.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a79aad939c5995d26cf6ef72cc2197a9ce9b6c3e"
+        },
+        {
+          "sha": "72be32ca28763c3c39134151c847de64cd65c899",
+          "author_date": "2026-04-13T11:03:12Z",
+          "message": "fix: surface clear errors when completed tasks miss referenced results\n\nWhen a successfully completed task doesn't emit a result that downstream\ntasks reference, the PipelineRun now reports a clear error message\nidentifying the missing result and its source task, instead of silently\nskipping the downstream task.\n\nFixes #9527\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/72be32ca28763c3c39134151c847de64cd65c899"
+        },
+        {
+          "sha": "ced4669595f67592514dead6392994a8635e4364",
+          "author_date": "2026-04-24T09:19:18Z",
+          "message": "build(deps): bump github.com/tektoncd/pipeline\n\nBumps [github.com/tektoncd/pipeline](https://github.com/tektoncd/pipeline) from 0.53.1 to 0.53.9.\n- [Release notes](https://github.com/tektoncd/pipeline/releases)\n- [Changelog](https://github.com/tektoncd/pipeline/blob/main/releases.md)\n- [Commits](https://github.com/tektoncd/pipeline/compare/v0.53.1...v0.53.9)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/tektoncd/pipeline\n  dependency-version: 0.53.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/ced4669595f67592514dead6392994a8635e4364"
+        },
+        {
+          "sha": "85c2109f0fd6d69e0f00ca7eabaf9d0c9f109ac5",
+          "author_date": "2026-05-07T18:37:48Z",
+          "message": "build(deps): bump the all group across 1 directory with 4 updates\n\nBumps the all group with 4 updates in the /tekton directory: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `b6b15a1` to `902dacf`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `a604adf` to `a4477c3`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `5a0e550` to `23f1b49`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `37deddc` to `15b3ef8`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 23f1b4980b4cba96eebb32802b61703b1e382563f39fffaa43bde92f103bf3bb\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 15b3ef8dc31151b3a527dc842111e78d3eb2dc336d3c959411c945a0ca31e0f4\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/85c2109f0fd6d69e0f00ca7eabaf9d0c9f109ac5"
+        },
+        {
+          "sha": "0e8782047409a88d7512f665b7a1a33aeb939c8b",
+          "author_date": "2026-05-04T14:31:26Z",
+          "message": "build(deps): bump chainguard-dev/actions from 1.5.13 to 1.5.16\n\nBumps [chainguard-dev/actions](https://github.com/chainguard-dev/actions) from 1.5.13 to 1.5.16.\n- [Release notes](https://github.com/chainguard-dev/actions/releases)\n- [Commits](https://github.com/chainguard-dev/actions/compare/18e5e3427cf9d6bcfbefe60dca48e40292f000c5...eba358c567c5b091e34187d905258baebdd2a4ec)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard-dev/actions\n  dependency-version: 1.5.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/0e8782047409a88d7512f665b7a1a33aeb939c8b"
+        },
+        {
+          "sha": "a12eb1083ced24cf9b9e564a70ae23c58a8466ca",
+          "author_date": "2026-05-11T08:13:29Z",
+          "message": "build(deps): bump actions/dependency-review-action from 4.8.2 to 4.8.3\n\nBumps [actions/dependency-review-action](https://github.com/actions/dependency-review-action) from 4.8.2 to 4.8.3.\n- [Release notes](https://github.com/actions/dependency-review-action/releases)\n- [Commits](https://github.com/actions/dependency-review-action/compare/3c4e3dcb1aa7874d2c16be7d79418e9b7efd6261...05fe4576374b728f0c523d6a13d64c25081e0803)\n\n---\nupdated-dependencies:\n- dependency-name: actions/dependency-review-action\n  dependency-version: 4.8.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a12eb1083ced24cf9b9e564a70ae23c58a8466ca"
+        },
+        {
+          "sha": "f962a7673aa0eef7f993070a893fd4eac35b56ef",
+          "author_date": "2026-05-11T14:05:37Z",
+          "message": "[cherry-pick: release-v1.9.x] fix: bump google.golang.org/grpc to 1.79.3 (CVE-2026-33186)\n\nBumps gRPC to 1.79.3 to fix CVE-2026-33186 (authorization bypass due\nto improper HTTP/2 path validation). Also bumps transitive dependencies\nto resolve their own advisories:\n\n- go.opentelemetry.io/otel/sdk v1.41.0 -> v1.43.0 (CVE-2026-39883)\n- github.com/go-jose/go-jose/v4 v4.0.5 -> v4.1.4 (GHSA-78h2-9frx-2jm8)\n- golangci-lint v2.1.6 -> v2.8.0 (Go 1.25 support)\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/f962a7673aa0eef7f993070a893fd4eac35b56ef"
+        },
+        {
+          "sha": "ef83caa2b8a78898f3cf1f3a6aac1fbd85567fa4",
+          "author_date": "2026-05-12T07:34:46Z",
+          "message": "build(deps): bump github.com/google/go-containerregistry\n\nBumps [github.com/google/go-containerregistry](https://github.com/google/go-containerregistry) from 0.20.6 to 0.20.8.\n- [Release notes](https://github.com/google/go-containerregistry/releases)\n- [Commits](https://github.com/google/go-containerregistry/compare/v0.20.6...v0.20.8)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/google/go-containerregistry\n  dependency-version: 0.20.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/ef83caa2b8a78898f3cf1f3a6aac1fbd85567fa4"
+        },
+        {
+          "sha": "7a4d5687eb82acde6340c5495a0412017a04543d",
+          "author_date": "2026-05-12T22:47:43Z",
+          "message": "build(deps): bump k8s.io/apimachinery from 0.33.11 to 0.33.12\n\nBumps [k8s.io/apimachinery](https://github.com/kubernetes/apimachinery) from 0.33.11 to 0.33.12.\n- [Commits](https://github.com/kubernetes/apimachinery/compare/v0.33.11...v0.33.12)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/apimachinery\n  dependency-version: 0.33.12\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/7a4d5687eb82acde6340c5495a0412017a04543d"
+        },
+        {
+          "sha": "01141e2081ddeed3cd358b1706995bba4c4aed9c",
+          "author_date": "2026-05-14T18:58:32Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `902dacf` to `71d9d1b`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `a4477c3` to `a174ef0`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `23f1b49` to `987bfc9`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `15b3ef8` to `2627c0f`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 987bfc94f101540c71c94062923a5b2fbf145a5784e7efb2782a05f1e66adb04\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 2627c0fb7a32509b1b69a04ef7e6d3ad0ff415ce8fc1167f2f2bbcea5d8fdc6e\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/01141e2081ddeed3cd358b1706995bba4c4aed9c"
+        },
+        {
+          "sha": "f431300b1cc53730356113126d3d7ce681a0d0de",
+          "author_date": "2026-05-21T19:25:10Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `71d9d1b` to `d6db0be`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `a174ef0` to `28e361b`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `987bfc9` to `61db6a3`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `2627c0f` to `731747f`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 61db6a3794a984c6cb50e90d494c8662565cc27fbdbe0823a53a84c3600299d5\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 731747f34d2b5fb41dbfc8beadf3e3988802710bb51ce0ae6ac1dae0566a0135\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/f431300b1cc53730356113126d3d7ce681a0d0de"
+        },
+        {
+          "sha": "a7aaf4b6c690ef465595a68616c13947ec88a207",
+          "author_date": "2026-03-09T17:09:22Z",
+          "message": "fix: convert pod latency metric to histogram and remove pod label\n\nThe tekton_pipelines_controller_taskruns_pod_latency_milliseconds metric\nwas a Float64Gauge which cannot be used with Prometheus rate() or\nhistogram_quantile(). The hardcoded pod label created a unique time\nseries per TaskRun, causing 1.2M+ active series on large clusters.\n\nConvert to Float64Histogram with explicit bucket boundaries and remove\nthe pod label to keep cardinality bounded.\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a7aaf4b6c690ef465595a68616c13947ec88a207"
+        },
+        {
+          "sha": "79ffb982e5ae7155168a6d16798b9df4b1748448",
+          "author_date": "2026-03-17T07:55:32Z",
+          "message": "docs: add pod latency histogram metric to metrics.md\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/79ffb982e5ae7155168a6d16798b9df4b1748448"
+        },
+        {
+          "sha": "db7dd685f958feeb8848c288e86173ef157a15b8",
+          "author_date": "2026-03-16T19:29:02Z",
+          "message": "fix(resolvers): validate data is Tekton object in resolver framework\n\nValidate that the data resolved by resolvers is a Pipeline, Task, or\nStepAction object before writing the data to the ResolutionRequest.\n\nFundamentally ResolutionRequests are only supposed to resolve Tekton\ntypes (specifically Pipelines, Tasks, and StepActions). However they may\nfetch any object or string and mark the ResolutionRequest as \"successful\".\nCurrently the data validation is only done when the \"successful\"\nResolutionRequest is being injected into the parent Run object.\n\nMinimally validating the object before updating the ResolutionRequest\ntakes some of the validation burden off of the Pipelines controller and\nmay catch errors faster and ensures sensitive, non-tekton objects cannot\nbe written into ResolutionRequests, which are considered less restricted",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/db7dd685f958feeb8848c288e86173ef157a15b8"
+        },
+        {
+          "sha": "154cff67c18b0f0edcb4ca8c03e620bace7e5d59",
+          "author_date": "2026-05-25T10:02:21Z",
+          "message": "fix: resolve goroutine leak from unbuffered channels in resolver reconcilers\n\nWhen a resolution times out, the outer select returns via\nresolutionCtx.Done(), but the spawned goroutine is still running.\nWhen it eventually completes, it tries to send on the unbuffered\nerrChan or resourceChan — but no receiver exists. The goroutine\nblocks forever, leaking memory and holding backend connections open.\n\nBuffer both channels to 1 so the goroutine can always complete its\nsend and be collected, regardless of whether the caller has already\nreturned.\n\nSigned-off-by: Shubham Bhardwaj <shubbhar@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/154cff67c18b0f0edcb4ca8c03e620bace7e5d59"
+        },
+        {
+          "sha": "fafa9ee37666d990ba1b796139c4b9152a8d8217",
+          "author_date": "2026-05-28T20:25:55Z",
+          "message": "build(deps): bump golangci/golangci-lint-action from 9.2.0 to 9.2.1\n\nBumps [golangci/golangci-lint-action](https://github.com/golangci/golangci-lint-action) from 9.2.0 to 9.2.1.\n- [Release notes](https://github.com/golangci/golangci-lint-action/releases)\n- [Commits](https://github.com/golangci/golangci-lint-action/compare/1e7e51e771db61008b38414a730f564565cf7c20...82606bf257cbaff209d206a39f5134f0cfbfd2ee)\n\n---\nupdated-dependencies:\n- dependency-name: golangci/golangci-lint-action\n  dependency-version: 9.2.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/fafa9ee37666d990ba1b796139c4b9152a8d8217"
+        },
+        {
+          "sha": "d343c6a38ac9b0548b53b50d65030870165a6bbc",
+          "author_date": "2026-05-28T21:05:56Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `d6db0be` to `c265d96`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `28e361b` to `5b88981`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `61db6a3` to `05f1fd6`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `731747f` to `f383e55`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 05f1fd6e4f3a20bf47132671323fd8a82b210ee95314cd6585c19e3dd4a005b3\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: f383e5581b6c912ba7bb5a057d718637cec735ed3deb1fa216596ca86403fcd8\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/d343c6a38ac9b0548b53b50d65030870165a6bbc"
+        },
+        {
+          "sha": "85285970366c90577454deca2feec5a8a4dd67df",
+          "author_date": "2026-04-17T20:09:38Z",
+          "message": "fix(pipelinerun): use generateName for anonymous pipeline label\n\nFor PipelineRuns using an inline PipelineSpec, if generateName is set use\nit as the pipeline label value instead of name and by proxy the TaskRun\nmetrics' pipeline label.\n\nFixes #9140\n\n💘 Generated with Crush\n\nAssisted-by: Claude Sonnet 4.6 via Crush <crush@charm.land>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/85285970366c90577454deca2feec5a8a4dd67df"
+        },
+        {
+          "sha": "daf477c6532160035f19ba3721f3119476cfe944",
+          "author_date": "2026-05-29T21:47:08Z",
+          "message": "build(deps): bump github.com/spiffe/spire-api-sdk from 1.14.6 to 1.14.7\n\nBumps [github.com/spiffe/spire-api-sdk](https://github.com/spiffe/spire-api-sdk) from 1.14.6 to 1.14.7.\n- [Commits](https://github.com/spiffe/spire-api-sdk/compare/v1.14.6...v1.14.7)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/spiffe/spire-api-sdk\n  dependency-version: 1.14.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/daf477c6532160035f19ba3721f3119476cfe944"
+        },
+        {
+          "sha": "474b1c740078b018181fb716f19e677637887d2d",
+          "author_date": "2026-05-29T14:31:32Z",
+          "message": "fix: prevent controller CPU variant from leaking into platform commands\n\nWhen the controller runs on ARM (e.g., arm64/v8) and resolves the\nentrypoint for a single-platform image of a different architecture,\nimageInfo() was calling platforms.NewPlatform() which picks up the\ncontroller's CPU variant, then only overriding OS and Architecture\nfrom the image config. This caused the variant to leak into the\nTEKTON_PLATFORM_COMMANDS map key (e.g., 'linux/amd64/v8'), which\nthe entrypoint on an amd64 node couldn't match against 'linux/amd64'.\n\nFix by constructing the Platform directly from the image's config\nmetadata without including the controller's runtime variant.\n\nFixes #10073",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/474b1c740078b018181fb716f19e677637887d2d"
+        },
+        {
+          "sha": "7666a7d98dfe9624012d407c4a8791240feb8011",
+          "author_date": "2026-06-04T18:37:42Z",
+          "message": "build(deps): bump actions/checkout from 6.0.2 to 6.0.3\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 6.0.2 to 6.0.3.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/de0fac2e4500dabe0009e67214ff5f5447ce83dd...df4cb1c069e1874edd31b4311f1884172cec0e10)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: 6.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/7666a7d98dfe9624012d407c4a8791240feb8011"
+        },
+        {
+          "sha": "99375716c1d3612a7e018ddce82f730f77719d14",
+          "author_date": "2026-06-08T08:38:33Z",
+          "message": "fix: add automated draft release support to release pipeline\n\n- Add draft release tasks (wait-for-chains, prepare-draft-release,\n  create-draft-release) with proper subpath params instead of symlinks\n- Fetch full Rekor UUID from API instead of just logIndex number\n\nCherry-pick of #10203, #9420 adapted for release-v1.9.x.\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/99375716c1d3612a7e018ddce82f730f77719d14"
+        },
+        {
+          "sha": "7237155b165f2f48ffff58a05b16156475e42c08",
+          "author_date": "2026-06-08T10:36:51Z",
+          "message": "build(deps): bump the all group across 1 directory with 4 updates\n\nBumps the all group with 4 updates in the /tekton directory: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `c265d96` to `9a96887`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `5b88981` to `12913d2`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `05f1fd6` to `c797fde`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `f383e55` to `045d46d`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: cee71b88f5ab890171b55603c1b20390bd508f733ce9fb10ed421d272f6976f7\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 3edbb5e1bf53821be5fe3482e5ddbbbec1ef9fdcc177ac9895bb90209282f5af\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/7237155b165f2f48ffff58a05b16156475e42c08"
+        },
+        {
+          "sha": "b6b85c5d3bd600529a6fc6cbf4f5f31435fe3d82",
+          "author_date": "2026-06-09T20:05:42Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `9a96887` to `0cb513f`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `12913d2` to `3cb640a`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `c797fde` to `0e959bc`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `045d46d` to `dcb3257`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 0e959bc6297d4779093ca6fa264b45756e03faaaf4ba311d35de10e78baddccd\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: dcb3257a663a079de5b61426c0b18a2aae24002cc044fec63da10d39f965d469\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/b6b85c5d3bd600529a6fc6cbf4f5f31435fe3d82"
+        },
+        {
+          "sha": "1eb2fe31dd4d782d17776d8aa43eb7a893c48e6d",
+          "author_date": "2026-06-10T15:52:24Z",
+          "message": "fix(resolvers): Allow ResolutionRequests to resolve all Tekton kinds\n\nTekton controllers only create ResolutionRequests for Pipelines, Tasks,\nand StepActions, however other cluster services only use Tekton\nResolvers to fetch things like PipelineRun definitions. This is arguably\na reasonable use-case and previously-supported (though undocumented)\nbehaviour.\n\nThe security model of the original commit was to ensure irrelevant\nobjects or sensitive data (such as source code, Secrets on disk, or\nbinaries) would not be written into the ResolutionRequest's status.data\nfield. This change preserves that security model while allowing the\nresolvers to remain somewhat flexible for synergistic use-cases.\n\nSee also: 0c1a6dea9bf5ba6533fa6ddc45f9e5d1cefc1d1f\n\n(cherry picked from commit 7a6c28c678839f22d273b84d829a7eab9c848b59)",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/1eb2fe31dd4d782d17776d8aa43eb7a893c48e6d"
+        },
+        {
+          "sha": "52d677f26d2b1363817c12a2bc306f2120bc8bed",
+          "author_date": "2026-06-11T18:33:48Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `0cb513f` to `8f8dfec`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `3cb640a` to `a87f612`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `0e959bc` to `5fdaae4`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `dcb3257` to `9aec1c4`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 5fdaae419280233a40fabf21b8b663797a3a16df5e13f7e473b4ec53b86e04c0\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 9aec1c450b48d074e5d8bb04c10dfc3ce9a50f6a7f55d8fd6e2fca688b6d93e8\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/52d677f26d2b1363817c12a2bc306f2120bc8bed"
+        },
+        {
+          "sha": "469e782919a4232389da7de58816018ba93e0074",
+          "author_date": "2026-06-15T18:28:09Z",
+          "message": "build(deps): bump k8s.io/apimachinery from 0.33.12 to 0.33.13\n\nBumps [k8s.io/apimachinery](https://github.com/kubernetes/apimachinery) from 0.33.12 to 0.33.13.\n- [Commits](https://github.com/kubernetes/apimachinery/compare/v0.33.12...v0.33.13)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/apimachinery\n  dependency-version: 0.33.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/469e782919a4232389da7de58816018ba93e0074"
+        },
+        {
+          "sha": "fb18736c5c0b6cb786f17ac58b54f3694140599a",
+          "author_date": "2026-06-18T10:39:59Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `8f8dfec` to `1169249`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `a87f612` to `ac41c87`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `5fdaae4` to `4d7d757`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `9aec1c4` to `e962f3a`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 4d7d757376ea375f77d41130bbc7b796c3adc2e5ea354fdd13d6d5565c81fb7d\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: e962f3a102e054e460ef555e3d142e7f993b8926d83852c63b18bd7245abed0d\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/fb18736c5c0b6cb786f17ac58b54f3694140599a"
+        },
+        {
+          "sha": "c56834ba0162dcfbae6470fe59274576fd904e10",
+          "author_date": "2026-06-18T18:24:23Z",
+          "message": "build(deps): bump the all group in /tekton with 3 updates\n\nBumps the all group in /tekton with 3 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images) and [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `1169249` to `f793bd3`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `ac41c87` to `39a2d60`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `4d7d757` to `15910b7`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 15910b7409fbf09b67696e8cbf2ee5f72386bee7d1d5917ddd8e3c2febf92d39\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/c56834ba0162dcfbae6470fe59274576fd904e10"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.6.4",
@@ -5192,8 +5598,561 @@
     {
       "release": "v1.3.6",
       "previous_release": "v1.6.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a53cdad1636e62dc6aa6df68c22ee48af64effd2",
+          "author_date": "2025-08-04T19:09:43Z",
+          "message": "Fix tini-git image to be multi-arch\n\nThe previous image was built for amd64 only, which makes any image\nusing it as base image (such as the resolvers one) also only\ntargeting amd64.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a53cdad1636e62dc6aa6df68c22ee48af64effd2"
+        },
+        {
+          "sha": "5b024a6c8b0fa05edc97dfda437e89bcccacbb0d",
+          "author_date": "2025-08-06T10:39:41Z",
+          "message": "fix: exclude pending PipelineRuns from tekton_pipelines_controller_running_pipelineruns metric\n\nThe running_pipelineruns metric incorrectly counted pending PipelineRuns\nas running. Add !pr.IsPending() check to exclude them.\n\nFixes #8949\n\nSigned-off-by: divyansh42 <diagrawa@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5b024a6c8b0fa05edc97dfda437e89bcccacbb0d"
+        },
+        {
+          "sha": "3d4874f32217b6b8cc6ddc8ca07942c02b492631",
+          "author_date": "2025-09-03T20:05:43Z",
+          "message": "Disable the Gitea e2e tests temporarily to unblock\n\nThis disables the Gitea e2e tests temporarily to unblock\ntemporarily. Gitea chart has changed. We are working to include\nthat soon.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3d4874f32217b6b8cc6ddc8ca07942c02b492631"
+        },
+        {
+          "sha": "f2d8d3d99e2efc408d612e724257630bce29ddd7",
+          "author_date": "2025-08-21T15:29:50Z",
+          "message": "check initContainers for kubernetes sidecar implementation\n\nThis code checks if all containers in a Pod, including init containers, have\ncompleted their execution before marking a TaskRun as complete when kubernetes\nnative sidecar is enabled. It's part of the TaskRun status determination logic.\n\nSigned-off-by: Priti Desai <pdesai@us.ibm.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/f2d8d3d99e2efc408d612e724257630bce29ddd7"
+        },
+        {
+          "sha": "ea3dc051dae2c5b37a3910454e64936e43ab1409",
+          "author_date": "2025-07-23T09:22:29Z",
+          "message": "Do not fail PipelineRun if pvc creation error is because of exceeded quotas\n\nIn case of the PVC creation (from volumeclaimtemplate) is due to a\nquota error (quota exceeded), do not fail with a permanent error, and\ninstead mark the PipelineRun as pending. Once there is some quota\navailable back, it will be able to start.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/ea3dc051dae2c5b37a3910454e64936e43ab1409"
+        },
+        {
+          "sha": "f224e9b7296e78f6d573c08f61ef2d1f55e323f7",
+          "author_date": "2025-08-20T10:03:39Z",
+          "message": "Refactor CreatePVCFromVolumClaimTemplate condition logic\n\nCo-authored-by: Stanislav Jakuschevskij <stas@two-giants.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/f224e9b7296e78f6d573c08f61ef2d1f55e323f7"
+        },
+        {
+          "sha": "c76e840aab010299562316e2b802cd3f7443ba8f",
+          "author_date": "2025-09-04T08:45:15Z",
+          "message": "fix: allow finalizer updates on completed TaskRuns\n\nSimilar to issue #8824 for PipelineRuns, the webhook was denying\nfinalizer updates on completed TaskRuns. The validation webhook was\nblocking all updates when TaskRun.IsDone() returned true, preventing\ntools like Tekton Chains from clearing finalizers.\n\nTo ensure we don't have old obj default drift, we are adding\na fast path check for spec equality and are normalizing the old spec\nwith current defaults before comparison. Then we allow updates when\nonly finalizers differ and reject spec changes.\n\nThis mirrors the fix applied to PipelineRun validation.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/c76e840aab010299562316e2b802cd3f7443ba8f"
+        },
+        {
+          "sha": "49ae750e623d08873a03d11ef3d9f8e3f1c44702",
+          "author_date": "2025-09-02T18:46:36Z",
+          "message": "fix: allow finalizer updates on completed PipelineRuns\n\nfixes issue #8824 where webhook denied finalizer updates on completed\nPipelineRuns. The validation webhook was blocking all updates when\nPipelineRun.IsDone() returned true, preventing from\nclearing finalizers\n\nto make sure that we don't have old obj default drift we are adding\na fast path check for spec equality and are normalizing the old spec\nwith current defaults before comparison. Then we allow updates when\nonly finalizers differ and reject spec changes\n\nSigned-off-by: Vibhav Bobade <vibhav.bobde@gmail.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/49ae750e623d08873a03d11ef3d9f8e3f1c44702"
+        },
+        {
+          "sha": "9ba3a79e9aa31ad6c79a53f9539e0f572662ad8a",
+          "author_date": "2025-09-08T07:33:56Z",
+          "message": "fix: update tests after cherrypicking from PR 9011\n\nadded strings package import to v1/pipelinerun_validation_test.go and v1beta1/pipelinerun_validation_test.go\nreplaced all t.Context() calls with context.Background() in test files (this method doesn't exist in the testing package)\nremoved TestPipelineRunTaskRunSpecTimeout_Validate from both v1 and v1beta1 test files as it referenced a non-existent Timeout field in PipelineTaskRunSpec",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/9ba3a79e9aa31ad6c79a53f9539e0f572662ad8a"
+        },
+        {
+          "sha": "4902dac3a012236dbe426246b87265ba0aef07cf",
+          "author_date": "2025-07-31T20:26:42Z",
+          "message": "fix(#8940): Fix token-authentication header in git resolver\n\nThe header specified for the git resolver's http auth contained a typo\nleading to authentication tokens not being properly sent to the remote.\n\nAdditionally, this change fixes the outdated token-authenticated git\nresolver example and adds an e2e regression test for authenticated git\ncloning.\n\nResolves: https://github.com/tektoncd/pipeline/issues/8940\nResolves: https://issues.redhat.com/browse/SRVKP-8260",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/4902dac3a012236dbe426246b87265ba0aef07cf"
+        },
+        {
+          "sha": "6139fe7a3c040b7224533dcf188daa3c4d3b837d",
+          "author_date": "2025-08-02T17:09:32Z",
+          "message": "chore: fix unit test action name",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/6139fe7a3c040b7224533dcf188daa3c4d3b837d"
+        },
+        {
+          "sha": "078dbbf09d267cea383b710e6021be9c71fde9f7",
+          "author_date": "2025-10-21T11:15:52Z",
+          "message": "tests: pdate csi-node-driver-registrar image reference\n\nSeems like the quay.io image is either gone, or at least sometimes\ngone. The repository for this is\nhttps://github.com/kubernetes-csi/node-driver-registrar, the image\nreferenced there is from k8s.gcr.io, so let's use it.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/078dbbf09d267cea383b710e6021be9c71fde9f7"
+        },
+        {
+          "sha": "e5ed49f75f3c7b9462b076aac7ef430090101bbf",
+          "author_date": "2025-10-07T22:48:38Z",
+          "message": "Pin actions by commit SHA or image digest",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/e5ed49f75f3c7b9462b076aac7ef430090101bbf"
+        },
+        {
+          "sha": "7d7f6c940b7463aa9a6d95bbac23b992b29e8f30",
+          "author_date": "2025-10-08T08:48:19Z",
+          "message": "test/e2e: remove data race on global variable requireAlphaFeatureFlag\n\nThis variable was set at different places by different tests that may\nrun in parallel. The fix is to remove the variable altogether and just\ninline the function.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/7d7f6c940b7463aa9a6d95bbac23b992b29e8f30"
+        },
+        {
+          "sha": "d8faac2772455390e5b8e7bd47598dc398bdc9c3",
+          "author_date": "2025-10-08T14:03:15Z",
+          "message": "test/e2e: remove prow from env-file names\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/d8faac2772455390e5b8e7bd47598dc398bdc9c3"
+        },
+        {
+          "sha": "2d6d774030258ae136717bedd58e62ec884fbc93",
+          "author_date": "2025-10-09T08:53:12Z",
+          "message": "Add comments on ignore to highlight why they are here\n\nCo-authored-by: Stanislav Jakuschevskij <stas@two-giants.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/2d6d774030258ae136717bedd58e62ec884fbc93"
+        },
+        {
+          "sha": "c3acac86b920e4c2a3b2b66a737914aeedce5f98",
+          "author_date": "2025-11-12T09:53:38Z",
+          "message": "examples: make sure we use the same image for sidecar and step\n\nWe should run the same version of docker for both the sidecar (daemon)\nand the task (client). Otherwise we could get a mismatch version error\nlike the following\n\n    2025-11-12T09:41:13.7066287Z         docker: Error response from daemon: client version 1.52 is too new. Maximum supported API version is 1.43\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/c3acac86b920e4c2a3b2b66a737914aeedce5f98"
+        },
+        {
+          "sha": "5d49ee87c76c482aa83173337bf8c50b7a17bdf9",
+          "author_date": "2025-10-29T14:15:10Z",
+          "message": "test: reduce the number of examples tests running in parallel\n\n- `t.Parallel()` marks a test function, telling Go that it can be run\nin parallel with other functions in the same package.\n- `-parallel` determines \"how many test functions inside a single test\npackage can run in parallel\".\n\nAs all examples tests are using `t.Parallel()`, they all run in\nparallel. This might overwhelm the kind cluster a bit. This is making\nsure we run at most 6 of them at the same time.\n\nIt also removes the parents `t.Parallel()` as this is.. just weird.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5d49ee87c76c482aa83173337bf8c50b7a17bdf9"
+        },
+        {
+          "sha": "456b153d1cdfb110515821cbcb2280e230e6763a",
+          "author_date": "2025-11-20T13:11:07Z",
+          "message": "Migrate tests images out of dockerhub.\n\nCloses #4551.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/456b153d1cdfb110515821cbcb2280e230e6763a"
+        },
+        {
+          "sha": "259dadf04a7886d85eab197a6ed826d50a767f5d",
+          "author_date": "2025-12-04T11:12:47Z",
+          "message": "test: limit examples test parallelism to 2 to prevent timeouts\n\nReduced parallel test execution from 6 to 2 concurrent tests to mitigate\nresource contention and API rate limiting issues that were causing timeouts\nin alpha test runs.\n\nAlpha tests run 125 examples (all tests), which with high parallelism (6)\nwas causing Kubernetes API rate limiting and timeout failures. Sequential\nexecution (parallel=1) works but takes ~49 minutes. This change aims to\nbalance speed (~25-30 min expected) with reliability.\n\nRelated to #9062\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/259dadf04a7886d85eab197a6ed826d50a767f5d"
+        },
+        {
+          "sha": "7d4cfe0affc7a26cdd051aa86d967da78b18f66e",
+          "author_date": "2025-12-17T09:27:17Z",
+          "message": "test(e2e): move flaky retry/matrix tests to no-ci temporarily\n\nMove two consistently flaky e2e tests to no-ci to unblock CI while we\ninvestigate and fix the root cause:\n\n1. pipelinerun-with-matrix - Times out at 900s on k8s-oldest + alpha\n2. using-retries-and-retry-count-variables - Times out at 900s on k8s-oldest + alpha\n\nBoth tests timeout at exactly 15 minutes (global test timeout) when\nrunning on k8s-oldest with alpha features enabled. The issue appears to\nbe related to retry logic with matrix expansion or context variable\nsubstitution.\n\nRelated to #9201, #9062",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/7d4cfe0affc7a26cdd051aa86d967da78b18f66e"
+        },
+        {
+          "sha": "f8330bcaf9cc1c7178874ff0f0f0cca672ca736c",
+          "author_date": "2025-10-16T20:30:54Z",
+          "message": "ci: Ensure e2e setup errors fail tests, add retries during e2e setup\n\nSetting up the correct configuration values like `enable-api-fields` is\nnot optional since many tests depend on these values at runtime. If\na test requires non-default config values which failed to be set, the\nfailure may not cause an e2e test to fail for some time and the test\nfailure message will cause confusion; the configuration being correct\nduring setup is a given. By ensuring a failure in any of the\nconfiguration setup functions results in the test suite failing, we\nensure the tests will only run against the expected configuration. This\nchange ensures that if the e2e test configuration fails, the tests will\nnot continue.\n\nFixing that improves the clarity of some flaky failures, but it doesn't\nreduce the flakiness itself. To reduce failures during e2e environment\nconfiguration, this change also implements a retry mechanism to each of\nthe set configuration functions. This reduces flakiness due to network\nconnectivity or race conditions during environment setup. If all config\nretries are exhausted with failure, then the tests will fail as above.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/f8330bcaf9cc1c7178874ff0f0f0cca672ca736c"
+        },
+        {
+          "sha": "9d0f1c8f6f7ffea5d08108a34355d1dc6d6add26",
+          "author_date": "2025-12-01T09:44:59Z",
+          "message": "e2e: give more time for dind-sidecar to start\n\nThis changes the check period to 2s instead of one, and also introduce\na 3 initial delay seconds to give some time to the docker daemon to\ngenerate certificates.\n\nThis is a relatively conservative approach.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/9d0f1c8f6f7ffea5d08108a34355d1dc6d6add26"
+        },
+        {
+          "sha": "ce3a889be4f254c56758b0c6406aa543decaee9f",
+          "author_date": "2025-12-11T19:17:58Z",
+          "message": "Add hostUsers field support to PodTemplate\n\nSigned-off-by: ab-ghosh <abghosh@redhat.com>\n\nCo-authored-by: Shubham Bhardwaj <shubbhar@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/ce3a889be4f254c56758b0c6406aa543decaee9f"
+        },
+        {
+          "sha": "35c3414ff8608712147b745a708cf31053674814",
+          "author_date": "2026-01-19T07:39:00Z",
+          "message": "chore(pipelinerun): remove cmpopts.SortSlices from pkg/reconciler/pipelinerun/pipelinerun_updatestatus_test.go",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/35c3414ff8608712147b745a708cf31053674814"
+        },
+        {
+          "sha": "e36e8782594ada1a40533b6f6b27fe4b2cef2414",
+          "author_date": "2026-02-04T14:05:04Z",
+          "message": "Add missing sort.Slice for childRefs ordering\n\nThe test file changes from #9295 were cherry-picked but the actual\nsorting logic in pipelinerun.go was missing. This adds the sort.Slice\ncall that ensures childRefs are sorted by PipelineTaskName, then Name,\nthen Kind, preventing excessive apiserver status updates caused by\nnon-deterministic map iteration order.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/e36e8782594ada1a40533b6f6b27fe4b2cef2414"
+        },
+        {
+          "sha": "cc0a734c811d8b5759dafe7d856e1877de10db6e",
+          "author_date": "2026-02-18T14:38:45Z",
+          "message": "tekton: update plumbing ref to include full image references fix\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/cc0a734c811d8b5759dafe7d856e1877de10db6e"
+        },
+        {
+          "sha": "4475203e9c7b53932a233cf912248e587ce33d61",
+          "author_date": "2026-02-19T05:12:03Z",
+          "message": "tekton: update plumbing ref to latest commit\n\nUpdate the plumbing revision used by the precheck task to the latest\ncommit on tektoncd/plumbing main. This includes all the full image\nreference fixes (tektoncd/plumbing#3110, #3112, and follow-ups).\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/4475203e9c7b53932a233cf912248e587ce33d61"
+        },
+        {
+          "sha": "e44aed22f19f2b4030ce4ba3ea48d4cd3a51576b",
+          "author_date": "2026-02-19T05:21:49Z",
+          "message": "ci: add CI summary fan-in job for branch protection\n\nAdd a ci-summary job that fans in all CI jobs (build, buildFips,\nlinting, tests, generated, multi-arch-build, e2e-tests) and checks\ntheir results. This job accepts both \"success\" and \"skipped\" as\npassing states, which is needed for branch protection rules to work\ncorrectly with conditional/skipped jobs (e.g. docs-only PRs).\n\nThis is a port of 579ccafe99a6 from main.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/e44aed22f19f2b4030ce4ba3ea48d4cd3a51576b"
+        },
+        {
+          "sha": "a62d804634d2dffe93d181c096fa395dc0e3d4dd",
+          "author_date": "2025-11-18T18:34:00Z",
+          "message": "fix: panic in v1beta1 matrix validation for invalid result refs",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a62d804634d2dffe93d181c096fa395dc0e3d4dd"
+        },
+        {
+          "sha": "a9ffe2593780b68172eb558c51c743631f46dacf",
+          "author_date": "2025-12-09T10:13:00Z",
+          "message": "fix: Prevent excessive reconciliation when timeout disabled\n\n- Stop immediate requeue loops when default-timeout-minutes is \"0\"\n- Remove redundant hasCondition checks (Knative already deduplicates)\n\nThis adds an e2e tests that looks at pipeline logs to see how much\nreconciler loop there is. If you run it before the fix, it would count\nmore than 1500 reconciler loop, whereas with the fix, only about 10.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>\nCo-Authored-By: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a9ffe2593780b68172eb558c51c743631f46dacf"
+        },
+        {
+          "sha": "b05720df9c4daf16aa6e41ac0c6ce6836556ca7a",
+          "author_date": "2025-10-28T15:06:40Z",
+          "message": "chore: centralize ko base image configuration\n\n- Add defaultBaseImage to .ko.yaml for consistent base image usage\n- Remove inline .ko.yaml generation from CI workflow\n- Remove inline .ko.yaml generation from presubmit test script\n- Use repository's .ko.yaml as single source of truth\n\nThis eliminates duplication and makes base image configuration\neasier to maintain and update in one place.\n\nSigned-off-by: Vibhav Bobade <vibhav.bobde@gmail.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/b05720df9c4daf16aa6e41ac0c6ce6836556ca7a"
+        },
+        {
+          "sha": "7471b26b66b839b9cd276eecaf0038cf28bf6183",
+          "author_date": "2025-10-30T21:13:11Z",
+          "message": "Fix tekton/publish sed for combined-based-image digest replacement\n\nIt would generate an invalid image reference.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/7471b26b66b839b9cd276eecaf0038cf28bf6183"
+        },
+        {
+          "sha": "d3294863628e91c91bc426cfd59d6611fdb27aa0",
+          "author_date": "2025-11-03T03:49:32Z",
+          "message": "feat: upload release manifests to oracle cloud",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/d3294863628e91c91bc426cfd59d6611fdb27aa0"
+        },
+        {
+          "sha": "3f3e5497e72862d4ae89c117bed1da4ebf50b320",
+          "author_date": "2025-12-01T09:15:57Z",
+          "message": "chore(release-pipeline): update references to oci bucket\n\nSigned-off-by: Anitha Natarajan <anataraj@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3f3e5497e72862d4ae89c117bed1da4ebf50b320"
+        },
+        {
+          "sha": "5e4905fb6754efa5ecea54de195738d73fb0e01d",
+          "author_date": "2026-03-11T13:54:28Z",
+          "message": "Fix panic in GenerateDeterministicNameFromSpec with long resolver names\n\nGenerateDeterministicNameFromSpec panics when the generated name\nexceeds 63 characters (DNS-1123 label max length) because\nstrings.LastIndex is used to find a space character as a truncation\nboundary. The generated name format is '{prefix}-{hex_hash}' which\nnever contains spaces, so LastIndex returns -1, causing a slice\nbounds panic.\n\nAn attacker who can create TaskRuns or PipelineRuns can set the\nresolver name to a string >= 30 characters to trigger this panic,\ncrashing the controller into a CrashLoopBackOff.\n\nFix: compute the hash first, then truncate only the prefix to make\nroom, preserving the full hash to maintain determinism and\nuniqueness of generated ResolutionRequest names.\n\nFixes: GHSA-cv4x-93xx-wgfj",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5e4905fb6754efa5ecea54de195738d73fb0e01d"
+        },
+        {
+          "sha": "10fa538f9a2b6d01c75138f1ed7ba3da0e34687c",
+          "author_date": "2026-03-11T18:15:48Z",
+          "message": "fix: prevent path traversal in git resolver pathInRepo parameter\n\nThe git resolver's pathInRepo parameter was not validated for path\ntraversal, allowing a tenant to read arbitrary files from the resolver\npod's filesystem by supplying paths like '../../../../etc/passwd' or\n'../../../../var/run/secrets/kubernetes.io/serviceaccount/token'.\n\nThe resolved file contents were then written into\nresolutionrequest.status.data (base64-encoded), creating an\nexfiltration channel. Since the resolver pod's ServiceAccount typically\nhas broad RBAC permissions (including read access to secrets), this\ncould lead to full privilege escalation.\n\nThe fix adds two layers of defense:\n\n1. Validate pathInRepo in PopulateDefaultParams() to reject paths\n   containing '..' components. Leading slashes are stripped for\n   backwards compatibility (filepath.Join already handles them safely).\n\n2. Switch getFileContent() to use 'git show HEAD:<path>' to read files\n   from git's object store instead of os.ReadFile from the filesystem.\n   Symlinks are resolved via filepath.EvalSymlinks before computing the\n   relative path for git show, so in-repo symlinks work correctly while\n   escape symlinks produce paths that git show rejects.\n\nUnit and e2e regression tests are added for traversal patterns,\nsymlink escapes, and valid leading-slash paths.\n\nThe vulnerability was introduced in commit 318006c4e3a5 when the git\nresolver switched from go-git's in-memory filesystem (memfs) to\nshelling out to git and reading files with os.ReadFile(). All releases\nfrom v1.0.0 through v1.10.0 are affected.\n\nFixes: GHSA-j5q5-j9gm-2w5c",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/10fa538f9a2b6d01c75138f1ed7ba3da0e34687c"
+        },
+        {
+          "sha": "a03a1d10e3d1c4c3b2c469cf2813683bcc8a3035",
+          "author_date": "2026-03-18T16:03:52Z",
+          "message": "fix(ci): fix e2e test failures on release-v1.3.x\n\nThree categories of e2e test failures are addressed:\n\n1. http-resolver and http-resolver-credentials examples: Switch from\n   deprecated api.hub.tekton.dev to raw.githubusercontent.com/tektoncd/catalog.\n   The Tekton Hub API has been deprecated and is no longer available,\n   causing these examples to fail in e2e tests.\n\n2. pipelinerun-with-matrix-and-taskrunspecs-param-substitution: Remove\n   unsupported displayName field from step spec. The displayName field\n   was not available in the v1.3.x API and the webhook correctly rejects\n   it with 'unknown field' error.\n\n3. e2e CI matrix: Reduce CI load by running beta and alpha feature flag\n   tests only on k8s-oldest and k8s-latest versions, matching the\n   approach used in release-v1.6.x. This prevents flaky timing-sensitive\n   tests (like TestPipelineRunExcessiveReconciliation) from failing on\n   intermediate k8s versions.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a03a1d10e3d1c4c3b2c469cf2813683bcc8a3035"
+        },
+        {
+          "sha": "99195de00f642a86ca522455e2101826f8fe8601",
+          "author_date": "2026-03-23T10:40:17Z",
+          "message": "fix: add signal handling in sidecarlogresults for native k8s sidecars\n\nCherry-pick of fcba522a3270 from main.\n\nIn the native Kubernetes sidecar model, sidecars are implemented as init\ncontainers with RestartPolicy: Always, which means they run for the entire\nduration of the pod's lifecycle. The sidecar log results implementation\ndidn't account for this behavior and exited after processing results,\ncausing the container to restart repeatedly (crash loop).\n\nThis adds a -kubernetes-sidecar-mode flag to the sidecarlogresults binary\nthat makes it wait indefinitely (with signal handling for graceful shutdown)\ninstead of exiting after processing results.\n\nThis fixes the TestPipelineRunExcessiveReconciliation e2e test failure on\nalpha feature gates where enable-kubernetes-sidecar is true.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/99195de00f642a86ca522455e2101826f8fe8601"
+        },
+        {
+          "sha": "dae22ae8399a8cc521b40cd4e306eaeac9e13acb",
+          "author_date": "2026-03-17T13:58:19Z",
+          "message": "Re-enable pipeline-api.md generation\n\nThis picks up a fix in the forked/vendored tool that adds minimal\nsupport for aliased types. It also enhances the configuration to\naddress some missing external URLs.\n\nWith the update in, the generation of docs/pipeline-api.md can\nbe re-enabled.\n\nMerging this might trigger rebase for other PRs, but it's best\ndone sooner than later as the current docs we publish to tekton.dev\nis slightly out of date.\n\nSigned-off-by: Andrea Frittoli <andrea.frittoli@uk.ibm.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/dae22ae8399a8cc521b40cd4e306eaeac9e13acb"
+        },
+        {
+          "sha": "87f060d03f1feeac644ecaacc56d8975ed4ae315",
+          "author_date": "2026-02-25T12:27:04Z",
+          "message": "tekton: update plumbing ref to latest commit\n\nUpdate the plumbing revision used by the precheck task to the latest\ncommit on tektoncd/plumbing main. This includes all the full image\nreference fixes (tektoncd/plumbing#3110, #3112, and follow-ups).\n\nThis is a cherry-pick of 5a40b3f2b83c from main.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/87f060d03f1feeac644ecaacc56d8975ed4ae315"
+        },
+        {
+          "sha": "5e3f5af0ec3475362ab2c445a78160c4fea6e4c6",
+          "author_date": "2026-04-07T06:16:27Z",
+          "message": "fix: bump Go to 1.24.13 to fix CVE-2025-61728, CVE-2025-61726, CVE-2025-61729\n\n- CVE-2025-61728: Excessive CPU consumption in archive/zip\n- CVE-2025-61726: Memory exhaustion in net/url\n- CVE-2025-61729: Resource exhaustion in crypto/x509\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5e3f5af0ec3475362ab2c445a78160c4fea6e4c6"
+        },
+        {
+          "sha": "f457c91c3447049794008a43349c4f9152770953",
+          "author_date": "2026-04-20T08:02:46Z",
+          "message": "Fix running_taskruns metric overcounting TaskRuns with no condition\n\nReplace !tr.IsDone() with an explicit nil + ConditionUnknown check so that\nnewly created TaskRuns (before their first reconcile) are no longer counted\nas running. Apply the same fix to PipelineRun metrics.\n\nThis is a manual backport of #9485.\n\nFixes #9438",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/f457c91c3447049794008a43349c4f9152770953"
+        },
+        {
+          "sha": "5e0151efdae906e105ccfaa9f2309db98775f30d",
+          "author_date": "2026-04-13T12:23:08Z",
+          "message": "Security: reject system API token with user-controlled serverURL\n\nWhen a user specifies a custom serverURL but omits the token parameter,\nthe git resolver's API mode falls back to the system-configured API\ntoken and sends it as an Authorization header to the user-controlled\nserver. This allows a namespace-scoped tenant with TaskRun create\npermission to exfiltrate the shared system Git API token (GitHub PAT,\nGitLab token, etc.) to an attacker-controlled endpoint.\n\nThe fix validates that when serverURL differs from the system-configured\nserver URL, the user must provide their own token parameter. Using the\nsystem token with a non-default server URL is rejected with an explicit\nerror message.\n\nThis follows the same threat model as GHSA-j5q5-j9gm-2w5c (path\ntraversal in the git resolver): a namespace-scoped tenant exploits the\ngit resolver to exfiltrate credentials they should not have access to.\n\nReported-by: Koda Reef <kodareef5@gmail.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5e0151efdae906e105ccfaa9f2309db98775f30d"
+        },
+        {
+          "sha": "e5487b538fee93c8a7602ddd95ff1d88a952b3aa",
+          "author_date": "2026-04-10T15:08:40Z",
+          "message": "fix: prevent git argument injection via revision parameter (GHSA-94jr-7pqp-xhcq)\n\nThe git resolver passed the user-supplied revision parameter directly as\na positional argument to git fetch without validation or a -- separator.\nAn attacker could inject --upload-pack=/path/to/binary as the revision,\ncausing git to execute the specified binary.\n\nThe fix applies three defense-in-depth layers:\n\n1. Reject revision starting with - in PopulateDefaultParams() to block\n   argument injection at the parameter validation level.\n2. Remove local path support (/ and file://) from validateRepoURL() and\n   add ssh, ftp, ftps URL scheme support.\n3. Add -- separator to git fetch and git clone commands to ensure\n   arguments are always interpreted as refspecs, never as flags.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/e5487b538fee93c8a7602ddd95ff1d88a952b3aa"
+        },
+        {
+          "sha": "17489e63745c11e3c7631ee6111ec10b00643084",
+          "author_date": "2026-04-09T10:56:31Z",
+          "message": "fix: normalize VolumeMount paths before /tekton/ restriction check\n\nAdd filepath.Clean before the strings.HasPrefix check in the VolumeMount\npath validation to prevent path traversal bypass via '..' components.\n\nA mount path like '/tekton/home/../results' previously passed validation\nbecause it matched the '/tekton/home' allowed prefix, but at runtime the\ncontainer runtime resolves '..' so the actual mount becomes\n'/tekton/results', which should have been blocked.\n\nThe fix normalizes the path before checking, consistent with how\ntask_validation.go already uses filepath.Clean for mount path operations.\n\nApplied to both v1 (container_validation.go) and v1beta1\n(task_validation.go).\n\nFixes: GHSA-rx35-6rhx-7858",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/17489e63745c11e3c7631ee6111ec10b00643084"
+        },
+        {
+          "sha": "3d0bdd9659a9f18d4fcb279cf2e5bd921ba3e906",
+          "author_date": "2026-03-18T09:44:38Z",
+          "message": "fix: strip resolver prefixes and use non-capturing group for pattern anchoring\n\nThe previous commit naively prepended ^ and appended $ to patterns,\nwhich broke backward compatibility with the git resolver's SPDX\n\"git+\" URI prefix.  Sources like \"git+https://github.com/…\" no\nlonger matched patterns written as \"https://github.com/…\".\n\nFix the approach:\n- Strip known resolver prefixes (\"git+\") from the source URI before\n  matching, so patterns don't need to account for resolver-specific\n  URI schemes.\n- Wrap unanchored patterns in ^(?:…)$ (non-capturing group) instead\n  of naively prepending/appending anchors, which correctly handles\n  patterns that are only partially anchored.\n- Preserve already fully-anchored patterns (^…$) unchanged.\n\nReplace the single bypass-control test with comprehensive test\ncoverage: bypass rejection, prefix stripping, already-anchored\npatterns, anchorPattern() unit tests, and stripResolverPrefix() unit\ntests.\n\nFixes: GHSA-rmx9-2pp3-xhcr",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3d0bdd9659a9f18d4fcb279cf2e5bd921ba3e906"
+        },
+        {
+          "sha": "854515f6187472a242e04fbe1d4df406135f5886",
+          "author_date": "2026-03-18T09:04:49Z",
+          "message": "fix: limit HTTP resolver response body size to prevent OOM DoS\n\nBound response body with io.LimitedReader to prevent memory exhaustion\nfrom malicious or oversized HTTP responses. The limit is hardcoded to\n1 MiB, which is below the etcd maximum object size (1.5 MiB), leaving\nroom for the ResolutionRequest CRD wrapper and base64 encoding overhead.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/854515f6187472a242e04fbe1d4df406135f5886"
+        },
+        {
+          "sha": "5edc4cbde548bb33c6244d480d14eeb4eab4eced",
+          "author_date": "2026-04-21T14:23:34Z",
+          "message": "fix: trim whitespace from source URI before pattern matching\n\nstripResolverPrefix now trims leading/trailing whitespace from URIs\nbefore matching against VerificationPolicy patterns. The anchored\npattern matching introduced in the previous commit requires exact\nfull-string matches, so stray whitespace would cause false negatives.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5edc4cbde548bb33c6244d480d14eeb4eab4eced"
+        },
+        {
+          "sha": "3826751c7f0433e5dda8f94ffb9aba2b82688289",
+          "author_date": "2026-04-21T15:14:16Z",
+          "message": "fix: set GOTOOLCHAIN=auto in publish task for Go version compatibility\n\nThe ko image ships Go 1.24.5 but go.mod requires >= 1.24.13. Setting\nGOTOOLCHAIN=auto lets Go download the required toolchain automatically.\n\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3826751c7f0433e5dda8f94ffb9aba2b82688289"
+        },
+        {
+          "sha": "06fd89890e5e593fdb661afb277a747904b59bf3",
+          "author_date": "2026-04-24T09:20:37Z",
+          "message": "build(deps): bump k8s.io/api from 0.32.7 to 0.32.13\n\nBumps [k8s.io/api](https://github.com/kubernetes/api) from 0.32.7 to 0.32.13.\n- [Commits](https://github.com/kubernetes/api/compare/v0.32.7...v0.32.13)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/api\n  dependency-version: 0.32.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/06fd89890e5e593fdb661afb277a747904b59bf3"
+        },
+        {
+          "sha": "a09495327f014586e50d5671b462a2bd7c2148fa",
+          "author_date": "2026-04-24T09:22:14Z",
+          "message": "build(deps): bump ossf/scorecard-action from 2.4.2 to 2.4.3\n\nBumps [ossf/scorecard-action](https://github.com/ossf/scorecard-action) from 2.4.2 to 2.4.3.\n- [Release notes](https://github.com/ossf/scorecard-action/releases)\n- [Changelog](https://github.com/ossf/scorecard-action/blob/main/RELEASE.md)\n- [Commits](https://github.com/ossf/scorecard-action/compare/05b42c624433fc40578a4040d5cf5e36ddca8cde...4eaacf0543bb3f2c246792bd56e8cdeffafb205a)\n\n---\nupdated-dependencies:\n- dependency-name: ossf/scorecard-action\n  dependency-version: 2.4.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a09495327f014586e50d5671b462a2bd7c2148fa"
+        },
+        {
+          "sha": "8b95bdd001e0f3ade0e1f4b215540e6c5d48d2d4",
+          "author_date": "2026-04-24T09:22:05Z",
+          "message": "build(deps): bump actions/dependency-review-action from 4.7.1 to 4.7.4\n\nBumps [actions/dependency-review-action](https://github.com/actions/dependency-review-action) from 4.7.1 to 4.7.4.\n- [Release notes](https://github.com/actions/dependency-review-action/releases)\n- [Commits](https://github.com/actions/dependency-review-action/compare/da24556b548a50705dd671f47852072ea4c105d9...31c9f175b9cbbdee66d6ab34ed35e2c827f8be10)\n\n---\nupdated-dependencies:\n- dependency-name: actions/dependency-review-action\n  dependency-version: 4.7.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/8b95bdd001e0f3ade0e1f4b215540e6c5d48d2d4"
+        },
+        {
+          "sha": "032158a443694fb0eeec1ef439cd4f1656f8b1f2",
+          "author_date": "2026-04-24T09:22:30Z",
+          "message": "build(deps): bump github/codeql-action from 3.29.3 to 3.29.11\n\nBumps [github/codeql-action](https://github.com/github/codeql-action) from 3.29.3 to 3.29.11.\n- [Release notes](https://github.com/github/codeql-action/releases)\n- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/github/codeql-action/compare/d6bbdef45e766d081b84a2def353b0055f728d3e...3c3833e0f8c1c83d449a7478aa59c036a9165498)\n\n---\nupdated-dependencies:\n- dependency-name: github/codeql-action\n  dependency-version: 3.29.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/032158a443694fb0eeec1ef439cd4f1656f8b1f2"
+        },
+        {
+          "sha": "de7a5e3c3c8b4faddcc21b8f0617b45901441b20",
+          "author_date": "2026-04-24T09:22:03Z",
+          "message": "build(deps): bump tj-actions/changed-files\n\nBumps [tj-actions/changed-files](https://github.com/tj-actions/changed-files) from 055970845dd036d7345da7399b7e89f2e10f2b04 to 5f4a0b68ac816d8cb4a52bd88b460549197b7ff1.\n- [Release notes](https://github.com/tj-actions/changed-files/releases)\n- [Changelog](https://github.com/tj-actions/changed-files/blob/main/HISTORY.md)\n- [Commits](https://github.com/tj-actions/changed-files/compare/055970845dd036d7345da7399b7e89f2e10f2b04...5f4a0b68ac816d8cb4a52bd88b460549197b7ff1)\n\n---\nupdated-dependencies:\n- dependency-name: tj-actions/changed-files\n  dependency-version: 5f4a0b68ac816d8cb4a52bd88b460549197b7ff1\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/de7a5e3c3c8b4faddcc21b8f0617b45901441b20"
+        },
+        {
+          "sha": "b0f944d1d6294b8b933365ad17f485d181fb6e2d",
+          "author_date": "2026-04-24T22:07:16Z",
+          "message": "build(deps): bump step-security/harden-runner from 2.13.0 to 2.13.3\n\nBumps [step-security/harden-runner](https://github.com/step-security/harden-runner) from 2.13.0 to 2.13.3.\n- [Release notes](https://github.com/step-security/harden-runner/releases)\n- [Commits](https://github.com/step-security/harden-runner/compare/ec9f2d5744a09debf3a187a3f4f675c53b671911...df199fb7be9f65074067a9eb93f12bb4c5547cf2)\n\n---\nupdated-dependencies:\n- dependency-name: step-security/harden-runner\n  dependency-version: 2.13.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/b0f944d1d6294b8b933365ad17f485d181fb6e2d"
+        },
+        {
+          "sha": "abf6761eb5d9d31911f9046be20c5dbfe73cb64c",
+          "author_date": "2026-04-24T09:21:05Z",
+          "message": "build(deps): bump github.com/tektoncd/pipeline\n\nBumps [github.com/tektoncd/pipeline](https://github.com/tektoncd/pipeline) from 0.53.1 to 0.53.9.\n- [Release notes](https://github.com/tektoncd/pipeline/releases)\n- [Changelog](https://github.com/tektoncd/pipeline/blob/main/releases.md)\n- [Commits](https://github.com/tektoncd/pipeline/compare/v0.53.1...v0.53.9)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/tektoncd/pipeline\n  dependency-version: 0.53.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/abf6761eb5d9d31911f9046be20c5dbfe73cb64c"
+        },
+        {
+          "sha": "184ef786501e60dab461079102012a98776fa6ad",
+          "author_date": "2026-04-27T22:22:35Z",
+          "message": "build(deps): bump google.golang.org/protobuf from 1.36.6 to 1.36.11\n\nBumps google.golang.org/protobuf from 1.36.6 to 1.36.11.\n\n---\nupdated-dependencies:\n- dependency-name: google.golang.org/protobuf\n  dependency-version: 1.36.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/184ef786501e60dab461079102012a98776fa6ad"
+        },
+        {
+          "sha": "ef56aa129c9faf5bf16de6dec7c56eccb7df10a5",
+          "author_date": "2026-04-29T08:02:24Z",
+          "message": "build(deps): bump k8s.io/code-generator from 0.32.7 to 0.32.13\n\nBumps [k8s.io/code-generator](https://github.com/kubernetes/code-generator) from 0.32.7 to 0.32.13.\n- [Commits](https://github.com/kubernetes/code-generator/compare/v0.32.7...v0.32.13)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/code-generator\n  dependency-version: 0.32.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/ef56aa129c9faf5bf16de6dec7c56eccb7df10a5"
+        },
+        {
+          "sha": "cc087223320e5d028a6e9c0d6063b4ecc5eaba6c",
+          "author_date": "2026-04-29T18:29:46Z",
+          "message": "build(deps): bump k8s.io/apiextensions-apiserver from 0.32.6 to 0.32.13\n\nBumps [k8s.io/apiextensions-apiserver](https://github.com/kubernetes/apiextensions-apiserver) from 0.32.6 to 0.32.13.\n- [Release notes](https://github.com/kubernetes/apiextensions-apiserver/releases)\n- [Commits](https://github.com/kubernetes/apiextensions-apiserver/compare/v0.32.6...v0.32.13)\n\n---\nupdated-dependencies:\n- dependency-name: k8s.io/apiextensions-apiserver\n  dependency-version: 0.32.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/cc087223320e5d028a6e9c0d6063b4ecc5eaba6c"
+        },
+        {
+          "sha": "33ef014f47e04b051caa65dd25b88df40f6b1239",
+          "author_date": "2026-04-29T18:29:31Z",
+          "message": "build(deps): bump go.uber.org/zap from 1.27.0 to 1.27.1\n\nBumps [go.uber.org/zap](https://github.com/uber-go/zap) from 1.27.0 to 1.27.1.\n- [Release notes](https://github.com/uber-go/zap/releases)\n- [Changelog](https://github.com/uber-go/zap/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/uber-go/zap/compare/v1.27.0...v1.27.1)\n\n---\nupdated-dependencies:\n- dependency-name: go.uber.org/zap\n  dependency-version: 1.27.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/33ef014f47e04b051caa65dd25b88df40f6b1239"
+        },
+        {
+          "sha": "54c7780ea59704f7aed0c9d0e5937f5cc3667d73",
+          "author_date": "2026-05-01T22:00:25Z",
+          "message": "build(deps): bump github.com/go-jose/go-jose/v3 from 3.0.4 to 3.0.5\n\nBumps [github.com/go-jose/go-jose/v3](https://github.com/go-jose/go-jose) from 3.0.4 to 3.0.5.\n- [Release notes](https://github.com/go-jose/go-jose/releases)\n- [Commits](https://github.com/go-jose/go-jose/compare/v3.0.4...v3.0.5)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/go-jose/go-jose/v3\n  dependency-version: 3.0.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/54c7780ea59704f7aed0c9d0e5937f5cc3667d73"
+        },
+        {
+          "sha": "6996b57918ef84c1896eeb1c439ac4bd4a05fb16",
+          "author_date": "2026-04-30T18:46:54Z",
+          "message": "build(deps): bump the all group across 1 directory with 4 updates\n\nBumps the all group with 4 updates in the /tekton directory: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `430c781` to `9ade36a`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `8e2632f` to `0016ae6`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `d21b05e` to `029871f`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `1898ef5` to `cb7ad45`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 5a0e550c39ad2c7e5226d5524199bfdbce1e72b6a5dc09536ff060ea103074fc\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 37deddc03c0ef946819d296dc75fadd511fd8c113c255d1699d4ebf24cf5feda\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/6996b57918ef84c1896eeb1c439ac4bd4a05fb16"
+        },
+        {
+          "sha": "1227ba54dfc0560afeb49af07a5b846238c3ab41",
+          "author_date": "2026-04-30T18:32:45Z",
+          "message": "build(deps): bump actions/cache from 4.2.3 to 4.2.4\n\nBumps [actions/cache](https://github.com/actions/cache) from 4.2.3 to 4.2.4.\n- [Release notes](https://github.com/actions/cache/releases)\n- [Changelog](https://github.com/actions/cache/blob/main/RELEASES.md)\n- [Commits](https://github.com/actions/cache/compare/5a3ec84eff668545956fd18022155c47e93e2684...0400d5f644dc74513175e3cd8d07132dd4860809)\n\n---\nupdated-dependencies:\n- dependency-name: actions/cache\n  dependency-version: 4.2.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/1227ba54dfc0560afeb49af07a5b846238c3ab41"
+        },
+        {
+          "sha": "39173a0c0b96b3fb55098bd66fa47c2dcacaf7a7",
+          "author_date": "2026-04-30T18:33:00Z",
+          "message": "build(deps): bump tj-actions/changed-files\n\nBumps [tj-actions/changed-files](https://github.com/tj-actions/changed-files) from 5f4a0b68ac816d8cb4a52bd88b460549197b7ff1 to 778ca51dd262f0b33085d14089d652a53707f25b.\n- [Release notes](https://github.com/tj-actions/changed-files/releases)\n- [Changelog](https://github.com/tj-actions/changed-files/blob/main/HISTORY.md)\n- [Commits](https://github.com/tj-actions/changed-files/compare/5f4a0b68ac816d8cb4a52bd88b460549197b7ff1...778ca51dd262f0b33085d14089d652a53707f25b)\n\n---\nupdated-dependencies:\n- dependency-name: tj-actions/changed-files\n  dependency-version: 778ca51dd262f0b33085d14089d652a53707f25b\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/39173a0c0b96b3fb55098bd66fa47c2dcacaf7a7"
+        },
+        {
+          "sha": "dae1f28a91ba5851ddf006ab7272286f3051ef66",
+          "author_date": "2026-05-04T10:31:18Z",
+          "message": "build(deps): bump chainguard-dev/actions from 1.5.3 to 1.5.16\n\nBumps [chainguard-dev/actions](https://github.com/chainguard-dev/actions) from 1.5.3 to 1.5.16.\n- [Release notes](https://github.com/chainguard-dev/actions/releases)\n- [Commits](https://github.com/chainguard-dev/actions/compare/v1.5.3...eba358c567c5b091e34187d905258baebdd2a4ec)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard-dev/actions\n  dependency-version: 1.5.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/dae1f28a91ba5851ddf006ab7272286f3051ef66"
+        },
+        {
+          "sha": "805cb6e20ccdfac980ea0a52dd2c832729b5cd6e",
+          "author_date": "2026-05-04T09:05:50Z",
+          "message": "build(deps): bump github.com/google/cel-go from 0.26.0 to 0.26.1\n\nBumps [github.com/google/cel-go](https://github.com/google/cel-go) from 0.26.0 to 0.26.1.\n- [Release notes](https://github.com/google/cel-go/releases)\n- [Commits](https://github.com/google/cel-go/compare/v0.26.0...v0.26.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/google/cel-go\n  dependency-version: 0.26.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/805cb6e20ccdfac980ea0a52dd2c832729b5cd6e"
+        },
+        {
+          "sha": "b85a26e8cc697d23265503941bf5da5e86bbe2b9",
+          "author_date": "2026-05-04T16:08:49Z",
+          "message": "build(deps): bump github.com/cloudevents/sdk-go/v2 from 2.16.1 to 2.16.2\n\nBumps [github.com/cloudevents/sdk-go/v2](https://github.com/cloudevents/sdk-go) from 2.16.1 to 2.16.2.\n- [Release notes](https://github.com/cloudevents/sdk-go/releases)\n- [Commits](https://github.com/cloudevents/sdk-go/compare/v2.16.1...v2.16.2)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/cloudevents/sdk-go/v2\n  dependency-version: 2.16.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/b85a26e8cc697d23265503941bf5da5e86bbe2b9"
+        },
+        {
+          "sha": "3c8c62bb728eedcb5c1d6eec503de236f9fb5c81",
+          "author_date": "2026-03-16T19:29:02Z",
+          "message": "fix(resolvers): validate data is Tekton object in resolver framework\n\nValidate that the data resolved by resolvers is a Pipeline, Task, or\nStepAction object before writing the data to the ResolutionRequest.\n\nFundamentally ResolutionRequests are only supposed to resolve Tekton\ntypes (specifically Pipelines, Tasks, and StepActions). However they may\nfetch any object or string and mark the ResolutionRequest as \"successful\".\nCurrently the data validation is only done when the \"successful\"\nResolutionRequest is being injected into the parent Run object.\n\nMinimally validating the object before updating the ResolutionRequest\ntakes some of the validation burden off of the Pipelines controller and\nmay catch errors faster and ensures sensitive, non-tekton objects cannot\nbe written into ResolutionRequests, which are considered less restricted",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/3c8c62bb728eedcb5c1d6eec503de236f9fb5c81"
+        },
+        {
+          "sha": "5a9d0e3c1b1390e8d63cac1cb0d7260cc1836bdc",
+          "author_date": "2026-05-04T18:05:44Z",
+          "message": "build(deps): bump google.golang.org/grpc from 1.74.2 to 1.74.3\n\nBumps [google.golang.org/grpc](https://github.com/grpc/grpc-go) from 1.74.2 to 1.74.3.\n- [Release notes](https://github.com/grpc/grpc-go/releases)\n- [Commits](https://github.com/grpc/grpc-go/compare/v1.74.2...v1.74.3)\n\n---\nupdated-dependencies:\n- dependency-name: google.golang.org/grpc\n  dependency-version: 1.74.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5a9d0e3c1b1390e8d63cac1cb0d7260cc1836bdc"
+        },
+        {
+          "sha": "61da93372b00c4784ac0906369e15237dee7ce87",
+          "author_date": "2026-05-07T14:32:36Z",
+          "message": "build(deps): bump tj-actions/changed-files\n\nBumps [tj-actions/changed-files](https://github.com/tj-actions/changed-files) from 778ca51dd262f0b33085d14089d652a53707f25b to 7dc4d75b6aa91041857e522f1426c3d1ac5d13b6.\n- [Release notes](https://github.com/tj-actions/changed-files/releases)\n- [Changelog](https://github.com/tj-actions/changed-files/blob/main/HISTORY.md)\n- [Commits](https://github.com/tj-actions/changed-files/compare/778ca51dd262f0b33085d14089d652a53707f25b...7dc4d75b6aa91041857e522f1426c3d1ac5d13b6)\n\n---\nupdated-dependencies:\n- dependency-name: tj-actions/changed-files\n  dependency-version: 7dc4d75b6aa91041857e522f1426c3d1ac5d13b6\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/61da93372b00c4784ac0906369e15237dee7ce87"
+        },
+        {
+          "sha": "bcad07505e6d3ae4658081db5ab7ccc085548a04",
+          "author_date": "2026-05-07T18:43:27Z",
+          "message": "build(deps): bump the all group across 1 directory with 4 updates\n\nBumps the all group with 4 updates in the /tekton directory: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `9ade36a` to `902dacf`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `0016ae6` to `a4477c3`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `029871f` to `23f1b49`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `cb7ad45` to `15b3ef8`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 23f1b4980b4cba96eebb32802b61703b1e382563f39fffaa43bde92f103bf3bb\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 15b3ef8dc31151b3a527dc842111e78d3eb2dc336d3c959411c945a0ca31e0f4\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/bcad07505e6d3ae4658081db5ab7ccc085548a04"
+        },
+        {
+          "sha": "36c630215a075d917b7ff50cb427374fcb645dfe",
+          "author_date": "2026-05-14T19:02:29Z",
+          "message": "build(deps): bump tj-actions/changed-files\n\nBumps [tj-actions/changed-files](https://github.com/tj-actions/changed-files) from 7dc4d75b6aa91041857e522f1426c3d1ac5d13b6 to 6b924b1775b8688e12ffb9b5cb5e968e1eb682ec.\n- [Release notes](https://github.com/tj-actions/changed-files/releases)\n- [Changelog](https://github.com/tj-actions/changed-files/blob/main/HISTORY.md)\n- [Commits](https://github.com/tj-actions/changed-files/compare/7dc4d75b6aa91041857e522f1426c3d1ac5d13b6...6b924b1775b8688e12ffb9b5cb5e968e1eb682ec)\n\n---\nupdated-dependencies:\n- dependency-name: tj-actions/changed-files\n  dependency-version: 6b924b1775b8688e12ffb9b5cb5e968e1eb682ec\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/36c630215a075d917b7ff50cb427374fcb645dfe"
+        },
+        {
+          "sha": "e4409a820c0501da0245ca32563502ac080e9a13",
+          "author_date": "2026-05-14T18:31:51Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `902dacf` to `71d9d1b`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `a4477c3` to `a174ef0`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `23f1b49` to `987bfc9`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `15b3ef8` to `2627c0f`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 987bfc94f101540c71c94062923a5b2fbf145a5784e7efb2782a05f1e66adb04\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 2627c0fb7a32509b1b69a04ef7e6d3ad0ff415ce8fc1167f2f2bbcea5d8fdc6e\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/e4409a820c0501da0245ca32563502ac080e9a13"
+        },
+        {
+          "sha": "cc400f8955bfa674fb9ef513669f771e05cec340",
+          "author_date": "2026-04-17T20:09:38Z",
+          "message": "fix(pipelinerun): use generateName for anonymous pipeline label\n\nFor PipelineRuns using an inline PipelineSpec, if generateName is set use\nit as the pipeline label value instead of name and by proxy the TaskRun\nmetrics' pipeline label.\n\nFixes #9140\n\n💘 Generated with Crush\n\nAssisted-by: Claude Sonnet 4.6 via Crush <crush@charm.land>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/cc400f8955bfa674fb9ef513669f771e05cec340"
+        },
+        {
+          "sha": "b1a691a9df52ddc4db691353e76f81a82e4dd732",
+          "author_date": "2026-05-25T15:22:47Z",
+          "message": "build(deps): bump tj-actions/changed-files\n\nBumps [tj-actions/changed-files](https://github.com/tj-actions/changed-files) from 6b924b1775b8688e12ffb9b5cb5e968e1eb682ec to 934b2d2c7e653bb8c968afed5a0428617f09aa24.\n- [Release notes](https://github.com/tj-actions/changed-files/releases)\n- [Changelog](https://github.com/tj-actions/changed-files/blob/main/HISTORY.md)\n- [Commits](https://github.com/tj-actions/changed-files/compare/6b924b1775b8688e12ffb9b5cb5e968e1eb682ec...934b2d2c7e653bb8c968afed5a0428617f09aa24)\n\n---\nupdated-dependencies:\n- dependency-name: tj-actions/changed-files\n  dependency-version: 934b2d2c7e653bb8c968afed5a0428617f09aa24\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/b1a691a9df52ddc4db691353e76f81a82e4dd732"
+        },
+        {
+          "sha": "8d79dd177434d9447e981f7bcf3737ca1b3bee6f",
+          "author_date": "2026-03-09T17:09:22Z",
+          "message": "fix: convert pod latency metric to histogram and remove pod label\n\nThe tekton_pipelines_controller_taskruns_pod_latency_milliseconds metric\nwas a Float64Gauge which cannot be used with Prometheus rate() or\nhistogram_quantile(). The hardcoded pod label created a unique time\nseries per TaskRun, causing 1.2M+ active series on large clusters.\n\nConvert to Float64Histogram with explicit bucket boundaries and remove\nthe pod label to keep cardinality bounded.\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/8d79dd177434d9447e981f7bcf3737ca1b3bee6f"
+        },
+        {
+          "sha": "1990281c45be8a526c058bcf203244e5be844c48",
+          "author_date": "2026-03-17T07:55:32Z",
+          "message": "docs: add pod latency histogram metric to metrics.md\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/1990281c45be8a526c058bcf203244e5be844c48"
+        },
+        {
+          "sha": "ce0a0ecda3cf985e55f286b25deac77843bcb098",
+          "author_date": "2026-05-21T19:29:27Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `71d9d1b` to `d6db0be`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `a174ef0` to `28e361b`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `987bfc9` to `61db6a3`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `2627c0f` to `731747f`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 61db6a3794a984c6cb50e90d494c8662565cc27fbdbe0823a53a84c3600299d5\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 731747f34d2b5fb41dbfc8beadf3e3988802710bb51ce0ae6ac1dae0566a0135\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/ce0a0ecda3cf985e55f286b25deac77843bcb098"
+        },
+        {
+          "sha": "4d89a7550b1cbe8fd33e2cea646f66d0bcff2dc4",
+          "author_date": "2026-05-25T10:02:21Z",
+          "message": "fix: resolve goroutine leak from unbuffered channels in resolver reconcilers\n\nWhen a resolution times out, the outer select returns via\nresolutionCtx.Done(), but the spawned goroutine is still running.\nWhen it eventually completes, it tries to send on the unbuffered\nerrChan or resourceChan — but no receiver exists. The goroutine\nblocks forever, leaking memory and holding backend connections open.\n\nBuffer both channels to 1 so the goroutine can always complete its\nsend and be collected, regardless of whether the caller has already\nreturned.\n\nSigned-off-by: Shubham Bhardwaj <shubbhar@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/4d89a7550b1cbe8fd33e2cea646f66d0bcff2dc4"
+        },
+        {
+          "sha": "321a8bd1d8a59b548398e213a67f6365ffe70dfe",
+          "author_date": "2026-05-28T20:25:13Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `d6db0be` to `c265d96`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `28e361b` to `5b88981`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `61db6a3` to `05f1fd6`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `731747f` to `f383e55`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 05f1fd6e4f3a20bf47132671323fd8a82b210ee95314cd6585c19e3dd4a005b3\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: f383e5581b6c912ba7bb5a057d718637cec735ed3deb1fa216596ca86403fcd8\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/321a8bd1d8a59b548398e213a67f6365ffe70dfe"
+        },
+        {
+          "sha": "a71ea3bb1ef8a4fffdefd84e381b0784055d4ab3",
+          "author_date": "2025-08-14T10:54:43Z",
+          "message": "docs: Switch from deprecated Tekton Hub to ArtifactHub\n\nSigned-off-by: Shubham Bhardwaj <shubbhar@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/a71ea3bb1ef8a4fffdefd84e381b0784055d4ab3"
+        },
+        {
+          "sha": "eb7ebdf6dac7833282f0bc7413aa18f84ec6490c",
+          "author_date": "2026-06-04T18:35:02Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `c265d96` to `7469bb7`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `5b88981` to `df345ed`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `05f1fd6` to `cee71b8`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `f383e55` to `3edbb5e`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: cee71b88f5ab890171b55603c1b20390bd508f733ce9fb10ed421d272f6976f7\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 3edbb5e1bf53821be5fe3482e5ddbbbec1ef9fdcc177ac9895bb90209282f5af\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/eb7ebdf6dac7833282f0bc7413aa18f84ec6490c"
+        },
+        {
+          "sha": "53c97d7f575a71ce05569703d2f2224b539504b4",
+          "author_date": "2026-06-08T08:38:22Z",
+          "message": "fix: add automated draft release support to release pipeline\n\n- Add draft release tasks (wait-for-chains, prepare-draft-release,\n  create-draft-release) with proper subpath params instead of symlinks\n- Fetch full Rekor UUID from API instead of just logIndex number\n\nCherry-pick of #10203, #9420 adapted for release-v1.3.x.\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nSigned-off-by: Vincent Demeester <vdemeest@redhat.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/53c97d7f575a71ce05569703d2f2224b539504b4"
+        },
+        {
+          "sha": "5abd0d81e456ae837fe1ea1058f143843c475dc1",
+          "author_date": "2026-05-13T07:54:07Z",
+          "message": "build: bump go directive to 1.25\n\nBump the go directive in go.mod and sub-modules from 1.24.13/1.23.0\nto 1.25. This fixes golangci-lint compatibility issues where the\nlinter (built with Go 1.24) cannot target Go versions higher than\nits own build version.",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5abd0d81e456ae837fe1ea1058f143843c475dc1"
+        },
+        {
+          "sha": "9fa977a02222a0846b426b48ab68ab72938afda6",
+          "author_date": "2026-06-09T12:51:02Z",
+          "message": "Fix golangci-lint action step for large diff\n\nThis fixes the golangci-lint action failure for large diff by doing\na fetch and then diffing from it.\n\nCherry-picked from main (e5925dd8989e) and adapted to the older\ngolangci-lint-action/checkout versions on release-v1.3.x.\n\n(cherry picked from commit e5925dd8989e3eca41f5e24d5f4aaf61e3a323d6)",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/9fa977a02222a0846b426b48ab68ab72938afda6"
+        },
+        {
+          "sha": "0d0957101d848e011a5f8539d8fb832019a9ca5c",
+          "author_date": "2026-06-09T20:04:57Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `7469bb7` to `0cb513f`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `df345ed` to `3cb640a`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `cee71b8` to `0e959bc`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `3edbb5e` to `dcb3257`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 0e959bc6297d4779093ca6fa264b45756e03faaaf4ba311d35de10e78baddccd\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: dcb3257a663a079de5b61426c0b18a2aae24002cc044fec63da10d39f965d469\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/0d0957101d848e011a5f8539d8fb832019a9ca5c"
+        },
+        {
+          "sha": "aa0d1fd4f4b822670d7b34175ba8fe4b2722fe44",
+          "author_date": "2026-06-10T15:52:24Z",
+          "message": "fix(resolvers): Allow ResolutionRequests to resolve all Tekton kinds\n\nTekton controllers only create ResolutionRequests for Pipelines, Tasks,\nand StepActions, however other cluster services only use Tekton\nResolvers to fetch things like PipelineRun definitions. This is arguably\na reasonable use-case and previously-supported (though undocumented)\nbehaviour.\n\nThe security model of the original commit was to ensure irrelevant\nobjects or sensitive data (such as source code, Secrets on disk, or\nbinaries) would not be written into the ResolutionRequest's status.data\nfield. This change preserves that security model while allowing the\nresolvers to remain somewhat flexible for synergistic use-cases.\n\nSee also: 0c1a6dea9bf5ba6533fa6ddc45f9e5d1cefc1d1f\n\n(cherry picked from commit 7a6c28c678839f22d273b84d829a7eab9c848b59)",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/aa0d1fd4f4b822670d7b34175ba8fe4b2722fe44"
+        },
+        {
+          "sha": "bdae8086ddf86140a753b11bf32768c8a8e9b165",
+          "author_date": "2026-06-11T17:55:00Z",
+          "message": "build(deps): bump go-jose v4 to 4.1.4",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/bdae8086ddf86140a753b11bf32768c8a8e9b165"
+        },
+        {
+          "sha": "108d4b84c4bf21ad35b787220efc7371388309f5",
+          "author_date": "2026-06-11T18:33:49Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `0cb513f` to `8f8dfec`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `3cb640a` to `a87f612`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `0e959bc` to `5fdaae4`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `dcb3257` to `9aec1c4`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 5fdaae419280233a40fabf21b8b663797a3a16df5e13f7e473b4ec53b86e04c0\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: 9aec1c450b48d074e5d8bb04c10dfc3ce9a50f6a7f55d8fd6e2fca688b6d93e8\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/108d4b84c4bf21ad35b787220efc7371388309f5"
+        },
+        {
+          "sha": "5fff81914ad9e3a95a9ebe48d5034d434beaa0da",
+          "author_date": "2026-06-18T10:42:51Z",
+          "message": "build(deps): bump the all group in /tekton with 4 updates\n\nBumps the all group in /tekton with 4 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images), [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing) and [tektoncd/plumbing/koparse](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `8f8dfec` to `1169249`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `a87f612` to `ac41c87`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `5fdaae4` to `4d7d757`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\nUpdates `tektoncd/plumbing/koparse` from `9aec1c4` to `e962f3a`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 4d7d757376ea375f77d41130bbc7b796c3adc2e5ea354fdd13d6d5565c81fb7d\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/koparse\n  dependency-version: e962f3a102e054e460ef555e3d142e7f993b8926d83852c63b18bd7245abed0d\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/5fff81914ad9e3a95a9ebe48d5034d434beaa0da"
+        },
+        {
+          "sha": "6827e778b8b2e9b2b0e0b5cf59f3977b6da935f3",
+          "author_date": "2026-06-18T18:24:42Z",
+          "message": "build(deps): bump the all group in /tekton with 3 updates\n\nBumps the all group in /tekton with 3 updates: [chainguard/crane](https://github.com/chainguard-images/images), [chainguard/go](https://github.com/chainguard-images/images) and [tektoncd/plumbing/ko](https://github.com/tektoncd/plumbing).\n\n\nUpdates `chainguard/crane` from `1169249` to `f793bd3`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `chainguard/go` from `ac41c87` to `39a2d60`\n- [Commits](https://github.com/chainguard-images/images/commits)\n\nUpdates `tektoncd/plumbing/ko` from `4d7d757` to `15910b7`\n- [Commits](https://github.com/tektoncd/plumbing/commits)\n\n---\nupdated-dependencies:\n- dependency-name: chainguard/crane\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: chainguard/go\n  dependency-version: latest-dev\n  dependency-type: direct:production\n  dependency-group: all\n- dependency-name: tektoncd/plumbing/ko\n  dependency-version: 15910b7409fbf09b67696e8cbf2ee5f72386bee7d1d5917ddd8e3c2febf92d39\n  dependency-type: direct:production\n  dependency-group: all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/tektoncd/pipeline/commit/6827e778b8b2e9b2b0e0b5cf59f3977b6da935f3"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.12.2",

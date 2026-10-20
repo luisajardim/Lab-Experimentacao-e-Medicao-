@@ -44,16 +44,28 @@ class RecoveryEpisode:
     failure_started_at: str
     recovered_at: str | None
     censored: bool
+    censored_at: str | None = None
 
     @property
     def duration_hours(self) -> float | None:
-        if self.censored or self.recovered_at is None:
+        if self.censored:
+            return (
+                _hours_between(self.failure_started_at, self.censored_at)
+                if self.censored_at is not None
+                else None
+            )
+        if self.recovered_at is None:
             return None
         return _hours_between(self.failure_started_at, self.recovered_at)
 
 
-def recovery_episodes(runs: list[WorkflowRunSample]) -> list[RecoveryEpisode]:
+def recovery_episodes(
+    runs: list[WorkflowRunSample], censor_at: str | None = None
+) -> list[RecoveryEpisode]:
     """Episódios de falha->recuperação, agrupados por ``workflow_id``.
+
+    ``censor_at`` é o fim da janela de observação. Quando informado, um
+    episódio censurado recebe duração até esse instante para Kaplan--Meier.
 
     Runs com conclusão ignorada (``cancelled``, ``skipped``, ``neutral``,
     ``action_required``, ``stale``, vazia) são descartados antes do
@@ -99,6 +111,7 @@ def recovery_episodes(runs: list[WorkflowRunSample]) -> list[RecoveryEpisode]:
                     failure_started_at=open_failure_start,
                     recovered_at=None,
                     censored=True,
+                        censored_at=censor_at,
                 )
             )
 

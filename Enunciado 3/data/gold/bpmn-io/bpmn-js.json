@@ -2864,18 +2864,6 @@
   ],
   "commits_between": [
     {
-      "release": "v4.0.0-beta.10",
-      "previous_release": null,
-      "commits": null,
-      "ignored_reason": "no_previous_release"
-    },
-    {
-      "release": "v4.0.0-beta.11",
-      "previous_release": "v4.0.0-beta.10",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v14.1.0",
       "previous_release": "v4.0.0-beta.11",
       "commits": null,
@@ -3118,8 +3106,135 @@
     {
       "release": "v17.10.0",
       "previous_release": "v17.9.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c9cb0bd929413699b414e22d6f182d2ceeb6a68b",
+          "author_date": "2024-06-28T13:20:53Z",
+          "message": "docs: update translations for v17.9.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/c9cb0bd929413699b414e22d6f182d2ceeb6a68b"
+        },
+        {
+          "sha": "8025600bcdc43dfb3c7bcad31d0b13479b85dee6",
+          "author_date": "2024-07-05T22:13:31Z",
+          "message": "chore: update dependency babel-plugin-istanbul to v7",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/8025600bcdc43dfb3c7bcad31d0b13479b85dee6"
+        },
+        {
+          "sha": "82e8fa7822ba3e670211220120f55253b62b1ee9",
+          "author_date": "2024-07-23T09:07:51Z",
+          "message": "docs(modeling): improve connect optional param jsdoc definition",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/82e8fa7822ba3e670211220120f55253b62b1ee9"
+        },
+        {
+          "sha": "a1eea14a4bb34e8f3e372290afdb9d65947496ad",
+          "author_date": "2024-07-23T09:17:33Z",
+          "message": "docs(context-pad): correct argument type (#2204)",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/a1eea14a4bb34e8f3e372290afdb9d65947496ad"
+        },
+        {
+          "sha": "cdf7461c846be05a0416210ec6ca478dfcbbb933",
+          "author_date": "2024-08-08T00:19:42Z",
+          "message": "chore: update dependency puppeteer to v23",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/cdf7461c846be05a0416210ec6ca478dfcbbb933"
+        },
+        {
+          "sha": "3153b083f99b12bc0786f75b2114c70ec4b3cea6",
+          "author_date": "2024-08-19T13:47:15Z",
+          "message": "fix: auto-place elements vertically in sub-processes\n\nCloses #2127",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/3153b083f99b12bc0786f75b2114c70ec4b3cea6"
+        },
+        {
+          "sha": "7737f9d3d93c483c9a1860962086f4da7c88f6fa",
+          "author_date": "2024-08-20T19:42:37Z",
+          "message": "deps: update to diagram-js@14.9.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/7737f9d3d93c483c9a1860962086f4da7c88f6fa"
+        },
+        {
+          "sha": "93e59cb2e103b94327270cac617e8a47c9822bee",
+          "author_date": "2024-08-19T20:10:08Z",
+          "message": "chore(types): correct type used",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/93e59cb2e103b94327270cac617e8a47c9822bee"
+        },
+        {
+          "sha": "1994afd38d1614b877e122f63aa2c36fcb3f7e4d",
+          "author_date": "2024-08-19T20:10:41Z",
+          "message": "chore(types): add missing type",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/1994afd38d1614b877e122f63aa2c36fcb3f7e4d"
+        },
+        {
+          "sha": "da59558548df1a40c5442af44f04a31de0c94e2c",
+          "author_date": "2024-08-19T20:11:14Z",
+          "message": "chore(types): add missing type declarations",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/da59558548df1a40c5442af44f04a31de0c94e2c"
+        },
+        {
+          "sha": "c840a9fabbc3042aa570a9ed76e43b818aa25fb7",
+          "author_date": "2024-08-19T20:46:38Z",
+          "message": "chore(types): correct renderer types",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/c840a9fabbc3042aa570a9ed76e43b818aa25fb7"
+        },
+        {
+          "sha": "9f50b97effeaf68714e40cdd9aae5ff275674c84",
+          "author_date": "2024-08-19T20:47:09Z",
+          "message": "chore(types): implement generic element",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/9f50b97effeaf68714e40cdd9aae5ff275674c84"
+        },
+        {
+          "sha": "392f4845be2515d268fb55fa32b15ed4aa3c9c0a",
+          "author_date": "2024-08-19T20:47:55Z",
+          "message": "chore: test types without skipping lib check\n\nThis ensures we validate in strict mode and do not ignore\ncertain issues.",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/392f4845be2515d268fb55fa32b15ed4aa3c9c0a"
+        },
+        {
+          "sha": "988cb29f50218d0bc758fbe2ffe6416192251d8e",
+          "author_date": "2024-08-27T14:46:46Z",
+          "message": "fix: label text visible while editing\n\nRelated to https://github.com/camunda/camunda-modeler/issues/4477",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/988cb29f50218d0bc758fbe2ffe6416192251d8e"
+        },
+        {
+          "sha": "7a137cc502687763965059b1aa7f8a5792d177ee",
+          "author_date": "2024-08-12T13:03:39Z",
+          "message": "fix: lane resize constraints for horizontal and vertical lanes\n\nCloses #2209",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/7a137cc502687763965059b1aa7f8a5792d177ee"
+        },
+        {
+          "sha": "cd6bcadecd8a50c441d4abf495426b6a518781ef",
+          "author_date": "2024-08-12T13:18:55Z",
+          "message": "test: add unit tests for resize constraints to cover all directions inc. vertical lanes",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/cd6bcadecd8a50c441d4abf495426b6a518781ef"
+        },
+        {
+          "sha": "afdd67612142d5af88082a0c04946bceecefca3c",
+          "author_date": "2024-08-12T14:10:15Z",
+          "message": "chore: update changelog",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/afdd67612142d5af88082a0c04946bceecefca3c"
+        },
+        {
+          "sha": "4359f184098a809a1080384a72addd440cb3b74f",
+          "author_date": "2024-08-20T19:33:10Z",
+          "message": "fix: pasting compensation activity without boundary event\n\nCloses #2070",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/4359f184098a809a1080384a72addd440cb3b74f"
+        },
+        {
+          "sha": "235d9b94a1d444830174b8d6735e301c3f110d76",
+          "author_date": "2024-08-28T15:07:38Z",
+          "message": "test: properly provide businessObject with label",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/235d9b94a1d444830174b8d6735e301c3f110d76"
+        },
+        {
+          "sha": "2373641bbf68b302ed622d2e61c2349ac845eda5",
+          "author_date": "2024-09-09T12:50:14Z",
+          "message": "chore(CHANGELOG): update to v17.10.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/2373641bbf68b302ed622d2e61c2349ac845eda5"
+        },
+        {
+          "sha": "6c9450913a4be8138ff01ced60d2873a65dad1a7",
+          "author_date": "2024-09-09T15:11:16Z",
+          "message": "17.10.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/6c9450913a4be8138ff01ced60d2873a65dad1a7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v17.11.0",
@@ -3184,8 +3299,21 @@
     {
       "release": "v18.4.0",
       "previous_release": "v18.3.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "cfec0a9d5a59dd282eb1548d54b23887a9615e7e",
+          "author_date": "2025-03-10T09:04:40Z",
+          "message": "feat: render event subprocess icons\n\nCloses #50",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/cfec0a9d5a59dd282eb1548d54b23887a9615e7e"
+        },
+        {
+          "sha": "601b0f8c0bc68b88b65f522c856f322d20ccc8cb",
+          "author_date": "2025-03-19T07:56:11Z",
+          "message": "chore(main): release 18.4.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/601b0f8c0bc68b88b65f522c856f322d20ccc8cb"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v18.5.0",
@@ -3334,8 +3462,33 @@
     {
       "release": "v18.17.1",
       "previous_release": "v18.17.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "42cfb58a74ef0550d58731e1857b15dcb3c99522",
+          "author_date": "2026-06-03T11:14:17Z",
+          "message": "chore(CHANGELOG): remove duplicate entry",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/42cfb58a74ef0550d58731e1857b15dcb3c99522"
+        },
+        {
+          "sha": "1a76a7a1ed58d46517cd8be0677f30019cbded8c",
+          "author_date": "2026-06-04T13:00:38Z",
+          "message": "deps: update to diagram-js@15.15.1",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/1a76a7a1ed58d46517cd8be0677f30019cbded8c"
+        },
+        {
+          "sha": "1324d39a9c304a26854f154d6809a7b6e4b6daea",
+          "author_date": "2026-06-04T13:23:15Z",
+          "message": "chore(CHANGELOG): update to v18.17.1",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/1324d39a9c304a26854f154d6809a7b6e4b6daea"
+        },
+        {
+          "sha": "64d6e8a4b339cbdb8b758845bcdf8718cb180033",
+          "author_date": "2026-06-04T13:26:53Z",
+          "message": "18.17.1",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/64d6e8a4b339cbdb8b758845bcdf8718cb180033"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v18.18.0",
@@ -3352,8 +3505,171 @@
     {
       "release": "v18.20.0",
       "previous_release": "v18.19.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "5e4e5ed51cb81f2d1b2eea14df9303e6249efb08",
+          "author_date": "2026-06-24T15:16:01Z",
+          "message": "chore(CHANGELOG): correct formatting",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/5e4e5ed51cb81f2d1b2eea14df9303e6249efb08"
+        },
+        {
+          "sha": "2067c99c8a807061ed78a7c0d6de9329610c3c44",
+          "author_date": "2026-06-26T00:34:46Z",
+          "message": "chore: update actions/checkout action to v7",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/2067c99c8a807061ed78a7c0d6de9329610c3c44"
+        },
+        {
+          "sha": "3585b26673780941e9e3e2e959f2d990bc113441",
+          "author_date": "2026-06-29T22:01:14Z",
+          "message": "chore: update dependency karma-tldr-reporter to v1",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/3585b26673780941e9e3e2e959f2d990bc113441"
+        },
+        {
+          "sha": "1284b8c96988a46b6ad95b0c3db1161085e88f52",
+          "author_date": "2026-07-03T20:57:57Z",
+          "message": "chore: approve unrs-resolver script",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/1284b8c96988a46b6ad95b0c3db1161085e88f52"
+        },
+        {
+          "sha": "f3c5062af8cdb3e9b8a36279b3d911d06e2d50f2",
+          "author_date": "2026-07-03T21:24:18Z",
+          "message": "chore: merge main to develop",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/f3c5062af8cdb3e9b8a36279b3d911d06e2d50f2"
+        },
+        {
+          "sha": "240c44a2c69a6da665776810a93231c9af555c76",
+          "author_date": "2026-07-05T18:15:49Z",
+          "message": "chore(label-link): derive offset from circular outline shape\n\nRemoves reliance on internal outline configuration.\nImproves correctness - outlines _always_ respect shape look.",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/240c44a2c69a6da665776810a93231c9af555c76"
+        },
+        {
+          "sha": "d4ab1deb77155de1c733776c6afabd6347de4aed",
+          "author_date": "2026-07-05T16:31:35Z",
+          "message": "test(replace-preview): verify visuals equal\n\nMakes the test more robust - do not assert non-visuals.",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/d4ab1deb77155de1c733776c6afabd6347de4aed"
+        },
+        {
+          "sha": "0f5be7d96c28ec660748705513e856085bbf4600",
+          "author_date": "2026-05-30T19:12:17Z",
+          "message": "fix(rules): disallow move when dropped outside the canvas\n\nSigned-off-by: Ravi <13908473+rkdfx@users.noreply.github.com>\nCo-authored-by: Adam Thometz <adamthometz@gmail.com>",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/0f5be7d96c28ec660748705513e856085bbf4600"
+        },
+        {
+          "sha": "6730e229a1f904e35a7fafc7a8efec6e7e9ceeab",
+          "author_date": "2026-07-05T19:16:40Z",
+          "message": "fix(modeling): do not adjust parent when moving out of canvas\n\nFixHoverBehavior was forcing the parent to be the root element\nfor move \"out of canvas\" - preventing rules to ever kick in that\nprevent such.\n\nWe now fix hover only for drag operations that are happening *on*\nthe canvas.",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/6730e229a1f904e35a7fafc7a8efec6e7e9ceeab"
+        },
+        {
+          "sha": "6d8e92ee3d34fd741b94759748824813e5f9d690",
+          "author_date": "2026-07-05T19:36:18Z",
+          "message": "chore(CHANGELOG): update",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/6d8e92ee3d34fd741b94759748824813e5f9d690"
+        },
+        {
+          "sha": "5993d1ef86b840bd7c94dfe2001cfd1af08b6f1f",
+          "author_date": "2026-07-05T17:21:43Z",
+          "message": "style: turn helper function into standard test helper",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/5993d1ef86b840bd7c94dfe2001cfd1af08b6f1f"
+        },
+        {
+          "sha": "73a15fb5b177a66e8e87ed0acd66d014d8b0fd9a",
+          "author_date": "2026-07-05T17:22:29Z",
+          "message": "test(modeling): ensure outline before verifying update semantics",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/73a15fb5b177a66e8e87ed0acd66d014d8b0fd9a"
+        },
+        {
+          "sha": "896438c357c6efa70ded2250181e187cee6db0ba",
+          "author_date": "2026-07-06T06:35:39Z",
+          "message": "chore(label-link): use native `Selection#isSelected` API for check",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/896438c357c6efa70ded2250181e187cee6db0ba"
+        },
+        {
+          "sha": "205addda239d8fe17a3f9486c8547c7b1ce0234b",
+          "author_date": "2026-07-05T20:58:21Z",
+          "message": "chore(test): publish CI env var to browser\n\nThe env preprocessor reads `config.envPreprocessor`, but the config used\n`envPreProcessor` (capital P), so the listed `CI` variable was never\npublished to `window.__env__`. As a result `window.__env__.CI` was always\nundefined and CI-only test skips (e.g. `skipCI`) never triggered.\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/205addda239d8fe17a3f9486c8547c7b1ce0234b"
+        },
+        {
+          "sha": "c77c2fa2489fe718e064329a3c853e3f5dce03a5",
+          "author_date": "2026-07-05T20:59:15Z",
+          "message": "test: add benchmark script to validate key scenarios against HUGE diagrams\n\nExecute via:\n\n```sh\nnpm run benchmark\n```",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/c77c2fa2489fe718e064329a3c853e3f5dce03a5"
+        },
+        {
+          "sha": "d3a13b9f92be34996e89a22f1f27e97269360e0a",
+          "author_date": "2026-07-06T05:32:20Z",
+          "message": "test(benchmark): validate spacetool preview",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/d3a13b9f92be34996e89a22f1f27e97269360e0a"
+        },
+        {
+          "sha": "26ac04551dfbc56156790838b22542169eda4468",
+          "author_date": "2026-07-06T05:49:05Z",
+          "message": "deps: update to diagram-js@15.18.1",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/26ac04551dfbc56156790838b22542169eda4468"
+        },
+        {
+          "sha": "8fec40612a34773e696c29475f3428b8812564f8",
+          "author_date": "2026-07-06T06:36:46Z",
+          "message": "test(benchmark): validate selection",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/8fec40612a34773e696c29475f3428b8812564f8"
+        },
+        {
+          "sha": "c6c3b7915f890537879d737204301560945bf5e3",
+          "author_date": "2026-07-06T07:22:31Z",
+          "message": "test(benchmark): verify move commit",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/c6c3b7915f890537879d737204301560945bf5e3"
+        },
+        {
+          "sha": "6401da8172a902e7b0df5e4f4ccd0f2450d8aee5",
+          "author_date": "2026-07-06T07:22:52Z",
+          "message": "test(benchmark): verify paste",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/6401da8172a902e7b0df5e4f4ccd0f2450d8aee5"
+        },
+        {
+          "sha": "a82f0057bb6d678c9eb86019ccbce33083965c99",
+          "author_date": "2026-07-06T07:23:23Z",
+          "message": "test(benchmark): verify small diagram",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/a82f0057bb6d678c9eb86019ccbce33083965c99"
+        },
+        {
+          "sha": "15b6afe07452e1031eb8769dc38541d1aa8e787f",
+          "author_date": "2026-07-06T16:26:42Z",
+          "message": "chore: revert to @babel/core@7.29.7\n\nBabel@8 flagged as incompatible with parts of our tool stack.",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/15b6afe07452e1031eb8769dc38541d1aa8e787f"
+        },
+        {
+          "sha": "25adea56c7c9d171098b0d97d809aa344fbae81b",
+          "author_date": "2026-07-06T16:32:58Z",
+          "message": "deps: update to diagram-js@15.19.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/25adea56c7c9d171098b0d97d809aa344fbae81b"
+        },
+        {
+          "sha": "e2a9eb01b2e7cb23ce4c5328881efd3f45fc0ad6",
+          "author_date": "2026-07-06T16:36:26Z",
+          "message": "chore(CHANGELOG): update to v18.20.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/e2a9eb01b2e7cb23ce4c5328881efd3f45fc0ad6"
+        },
+        {
+          "sha": "42eb3fd75e001a1b345d64ed52b153bab32f0173",
+          "author_date": "2026-07-06T16:36:52Z",
+          "message": "chore: update to npm-run-all2@9.0.2",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/42eb3fd75e001a1b345d64ed52b153bab32f0173"
+        },
+        {
+          "sha": "724798b8780309f0a93fa578a037c5c3c6473493",
+          "author_date": "2026-07-06T16:37:21Z",
+          "message": "chore: update to bio-dts@0.15.3",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/724798b8780309f0a93fa578a037c5c3c6473493"
+        },
+        {
+          "sha": "857fc69147af064c86994f6d17aa695f143c5dd7",
+          "author_date": "2026-07-06T16:40:45Z",
+          "message": "18.20.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/857fc69147af064c86994f6d17aa695f143c5dd7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v18.21.0",
@@ -3388,8 +3704,27 @@
     {
       "release": "v18.25.0",
       "previous_release": "v18.24.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "6423f3f2321b2724e7f49e6732f47f304e7a2ee2",
+          "author_date": "2026-08-19T06:54:06Z",
+          "message": "feat: extract default element sizes into ElementSizeUtil\n\n Default element sizes were only reachable through the DI-injected\n`ElementFactory`, so consumers (e.g. a bpmnlint rule that enforces\ndefault sizes) had to bootstrap a Modeler or hardcode a copy that\nsilently drifts.\n\nMove them into `lib/util/ElementSizeUtil`, a DI-free module exposing\nthe sizes as named constants plus a pure `getDefaultSize(element, di)`.\n`ElementFactory#getDefaultSize` delegates to it, keeping behavior and\nthe override contract intact.\n\nAlso guard the `di.isHorizontal` dereference, which threw when getting\nthe default size of a participant without DI.\n\nCloses bpmn-io#2485",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/6423f3f2321b2724e7f49e6732f47f304e7a2ee2"
+        },
+        {
+          "sha": "d26ed8ae8fe6e7a7ae3feb42ba434c3cfefc9ad2",
+          "author_date": "2026-08-19T06:55:29Z",
+          "message": "chore(CHANGELOG): update to v18.25.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/d26ed8ae8fe6e7a7ae3feb42ba434c3cfefc9ad2"
+        },
+        {
+          "sha": "2f0f951e64adbd90632bf45608bda4e1232ce377",
+          "author_date": "2026-08-19T06:58:42Z",
+          "message": "18.25.0",
+          "html_url": "https://github.com/bpmn-io/bpmn-js/commit/2f0f951e64adbd90632bf45608bda4e1232ce377"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v18.25.1",

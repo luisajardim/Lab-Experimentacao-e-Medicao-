@@ -1,0 +1,4071 @@
+{
+  "repository": {
+    "full_name": "sql-formatter-org/sql-formatter",
+    "stars": 2898,
+    "language": "TypeScript",
+    "default_branch": "master",
+    "created_at": "2016-09-12T13:09:04Z"
+  },
+  "releases": [
+    {
+      "id": 4130369,
+      "tag_name": "v0.0.1",
+      "name": "v0.0.1 - First release",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2016-09-14T13:12:46Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v0.0.1"
+    },
+    {
+      "id": 4143290,
+      "tag_name": "v0.0.2",
+      "name": "v0.0.2 - Configuration options",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2016-09-15T14:57:11Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v0.0.2"
+    },
+    {
+      "id": 4180362,
+      "tag_name": "v0.0.3",
+      "name": "v0.0.3 - Avoid usage of babel-polyfill",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2016-09-20T11:46:26Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v0.0.3"
+    },
+    {
+      "id": 4589982,
+      "tag_name": "v1.0.0",
+      "name": "v1.0.0 - Production ready",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2016-11-07T13:03:10Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v1.0.0"
+    },
+    {
+      "id": 4651283,
+      "tag_name": "v1.1.0",
+      "name": "v1.1.0 - Placeholders replacement",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2016-11-14T12:27:48Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v1.1.0"
+    },
+    {
+      "id": 4672585,
+      "tag_name": "v1.1.1",
+      "name": "v1.1.1 - Add babel-runtime dependency",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2016-11-16T09:08:40Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v1.1.1"
+    },
+    {
+      "id": 5192917,
+      "tag_name": "v1.1.2",
+      "name": "v1.1.2 - Keep SET SCHEMA query on one line",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-01-18T12:20:34Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v1.1.2"
+    },
+    {
+      "id": 5583467,
+      "tag_name": "v1.2.0",
+      "name": "v1.2.0 - Add TSQL keywords",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-02-27T15:46:49Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v1.2.0"
+    },
+    {
+      "id": 6693204,
+      "tag_name": "v1.2.1",
+      "name": "v1.2.1 - Fix PostgreSQL specific operators formatting",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-06-13T09:55:30Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v1.2.1"
+    },
+    {
+      "id": 6710380,
+      "tag_name": "v1.2.2",
+      "name": "v1.2.2 - Fix MSSQL national characters formatting",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-06-14T13:01:45Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v1.2.2"
+    },
+    {
+      "id": 6964223,
+      "tag_name": "v1.3.0",
+      "name": "v1.3.0 - IBM DB2 support",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-07-07T12:18:19Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v1.3.0"
+    },
+    {
+      "id": 7009291,
+      "tag_name": "v2.0.0",
+      "name": "v2.0.0 - Remove line break from the end of the output",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-07-12T07:23:43Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v2.0.0"
+    },
+    {
+      "id": 7789529,
+      "tag_name": "v2.1.0",
+      "name": "v2.1.0 - Improve bundle size",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-09-18T10:06:05Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v2.1.0"
+    },
+    {
+      "id": 10492429,
+      "tag_name": "v2.3.0",
+      "name": "v2.3.0 - Add support for PL/SQL",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-04-11T09:47:21Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v2.3.0"
+    },
+    {
+      "id": 17887229,
+      "tag_name": "v2.3.3",
+      "name": "v2.3.3 - Upgrade dependencies",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-06-10T13:32:05Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v2.3.3"
+    },
+    {
+      "id": 36846659,
+      "tag_name": "v3.1.0",
+      "name": "v3.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-25T09:32:40Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v3.1.0"
+    },
+    {
+      "id": 36846844,
+      "tag_name": "v2.3.4",
+      "name": "v2.3.4 - upgrade Lodash (to fix vulnerability)",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-25T09:36:55Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v2.3.4"
+    },
+    {
+      "id": 36847630,
+      "tag_name": "v3.0.0",
+      "name": "@gwax/sql-formatter v3.0.0 - CLI, Spark & Redshift",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-25T09:56:38Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v3.0.0"
+    },
+    {
+      "id": 36848226,
+      "tag_name": "v4.0.0-beta.0",
+      "name": "v4.0.0-beta.0",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-01-25T10:09:22Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v4.0.0-beta.0"
+    },
+    {
+      "id": 37083564,
+      "tag_name": "v4.0.0",
+      "name": "v4.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-31T18:56:35Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v4.0.0"
+    },
+    {
+      "id": 66338904,
+      "tag_name": "v4.0.1",
+      "name": "v4.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-09T06:58:13Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v4.0.1"
+    },
+    {
+      "id": 66338957,
+      "tag_name": "v4.0.2",
+      "name": "v4.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-09T06:59:05Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v4.0.2"
+    },
+    {
+      "id": 66339245,
+      "tag_name": "v5.0.0-beta",
+      "name": "prettier-sql v5.0.0-beta",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-05-09T07:03:52Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v5.0.0-beta"
+    },
+    {
+      "id": 66339338,
+      "tag_name": "v5.0.0-beta.1",
+      "name": "prettier-sql v5.0.0-beta.1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-05-09T07:05:29Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v5.0.0-beta.1"
+    },
+    {
+      "id": 66339373,
+      "tag_name": "v5.0.0",
+      "name": "prettier-sql v5.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-09T07:06:10Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v5.0.0"
+    },
+    {
+      "id": 66339398,
+      "tag_name": "v5.0.1",
+      "name": "prettier-sql v5.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-09T07:06:42Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v5.0.1"
+    },
+    {
+      "id": 66339462,
+      "tag_name": "v5.1.0",
+      "name": "prettier-sql v5.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-09T07:07:45Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v5.1.0"
+    },
+    {
+      "id": 66339502,
+      "tag_name": "v5.1.1",
+      "name": "prettier-sql v5.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-09T07:08:26Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v5.1.1"
+    },
+    {
+      "id": 66341963,
+      "tag_name": "v6.0.0-beta.1",
+      "name": "v6.0.0-beta.1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-05-09T07:45:39Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.0.0-beta.1"
+    },
+    {
+      "id": 66417224,
+      "tag_name": "v6.0.0-beta.2",
+      "name": "6.0.0-beta.2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-05-09T21:20:36Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.0.0-beta.2"
+    },
+    {
+      "id": 66457168,
+      "tag_name": "v6.0.0-beta.3",
+      "name": "6.0.0-beta.3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-05-10T10:07:20Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.0.0-beta.3"
+    },
+    {
+      "id": 66571834,
+      "tag_name": "v6.0.0-beta.4",
+      "name": "6.0.0-beta.4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-05-11T11:51:30Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.0.0-beta.4"
+    },
+    {
+      "id": 66512963,
+      "tag_name": "v6.0.0",
+      "name": "6.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-11T12:04:24Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.0.0"
+    },
+    {
+      "id": 66668459,
+      "tag_name": "v6.0.1",
+      "name": "6.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-12T09:45:35Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.0.1"
+    },
+    {
+      "id": 66672156,
+      "tag_name": "v6.0.2",
+      "name": "6.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-12T10:29:39Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.0.2"
+    },
+    {
+      "id": 66696320,
+      "tag_name": "v6.1.0",
+      "name": "6.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-12T14:06:06Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.1.0"
+    },
+    {
+      "id": 66950949,
+      "tag_name": "v6.1.1",
+      "name": "6.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-16T11:07:33Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.1.1"
+    },
+    {
+      "id": 67632438,
+      "tag_name": "v6.1.2",
+      "name": "6.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-05-24T07:45:48Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.1.2"
+    },
+    {
+      "id": 69053238,
+      "tag_name": "v6.1.3",
+      "name": "6.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-09T12:26:32Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.1.3"
+    },
+    {
+      "id": 69066364,
+      "tag_name": "v6.1.4",
+      "name": "6.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-09T14:28:49Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.1.4"
+    },
+    {
+      "id": 69072721,
+      "tag_name": "v6.1.5",
+      "name": "6.1.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-09T15:23:09Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v6.1.5"
+    },
+    {
+      "id": 69380911,
+      "tag_name": "v7.0.0",
+      "name": "7.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-14T09:40:10Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v7.0.0"
+    },
+    {
+      "id": 69592478,
+      "tag_name": "v7.0.1",
+      "name": "7.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-16T08:08:48Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v7.0.1"
+    },
+    {
+      "id": 69927763,
+      "tag_name": "v7.0.2",
+      "name": "7.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-21T12:30:08Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v7.0.2"
+    },
+    {
+      "id": 71044011,
+      "tag_name": "v7.0.3",
+      "name": "7.0.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-01T06:47:09Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v7.0.3"
+    },
+    {
+      "id": 71144250,
+      "tag_name": "v7.0.4",
+      "name": "7.0.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-03T11:35:01Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v7.0.4"
+    },
+    {
+      "id": 71187448,
+      "tag_name": "v8.0.0",
+      "name": "8.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-04T10:32:41Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v8.0.0"
+    },
+    {
+      "id": 71218566,
+      "tag_name": "v8.0.1",
+      "name": "8.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-04T17:45:12Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v8.0.1"
+    },
+    {
+      "id": 71254291,
+      "tag_name": "v8.0.2",
+      "name": "8.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-05T08:44:11Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v8.0.2"
+    },
+    {
+      "id": 71784462,
+      "tag_name": "v8.1.0",
+      "name": "8.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-12T09:55:23Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v8.1.0"
+    },
+    {
+      "id": 71928303,
+      "tag_name": "v8.2.0",
+      "name": "8.2.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-13T18:02:59Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v8.2.0"
+    },
+    {
+      "id": 71981823,
+      "tag_name": "v9.0.0-beta1",
+      "name": "9.0.0-beta1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-14T09:47:18Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.0-beta1"
+    },
+    {
+      "id": 72141382,
+      "tag_name": "v9.0.0-beta2",
+      "name": "9.0.0-beta2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-16T09:00:40Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.0-beta2"
+    },
+    {
+      "id": 72151232,
+      "tag_name": "v9.0.0-beta3",
+      "name": "9.0.0-beta3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-16T18:21:03Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.0-beta3"
+    },
+    {
+      "id": 72942013,
+      "tag_name": "v9.0.0-beta4",
+      "name": "9.0.0-beta4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-27T09:52:29Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.0-beta4"
+    },
+    {
+      "id": 73070614,
+      "tag_name": "v9.0.0-beta.5",
+      "name": "9.0.0-beta.5",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-28T14:37:06Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.0-beta.5"
+    },
+    {
+      "id": 73278270,
+      "tag_name": "v9.0.0-beta.6",
+      "name": "9.0.0-beta.6",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-07-31T10:08:25Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.0-beta.6"
+    },
+    {
+      "id": 73836628,
+      "tag_name": "v9.0.0-beta.7",
+      "name": "9.0.0-beta.7",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-07T16:25:13Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.0-beta.7"
+    },
+    {
+      "id": 73887720,
+      "tag_name": "v9.0.0",
+      "name": "9.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-08T19:11:52Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.0"
+    },
+    {
+      "id": 74183153,
+      "tag_name": "v9.0.1",
+      "name": "9.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-11T09:31:02Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.0.1"
+    },
+    {
+      "id": 74241197,
+      "tag_name": "v9.1.0",
+      "name": "9.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-11T20:13:50Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.1.0"
+    },
+    {
+      "id": 74443058,
+      "tag_name": "v9.2.0",
+      "name": "9.2.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-15T16:37:24Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v9.2.0"
+    },
+    {
+      "id": 74995485,
+      "tag_name": "v10.0.0-beta.1",
+      "name": "10.0.0-beta.1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-22T13:59:33Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.0.0-beta.1"
+    },
+    {
+      "id": 75316124,
+      "tag_name": "v10.0.0",
+      "name": "10.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-25T08:21:36Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.0.0"
+    },
+    {
+      "id": 75876882,
+      "tag_name": "v10.1.0",
+      "name": "10.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-31T10:53:04Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.1.0"
+    },
+    {
+      "id": 75984743,
+      "tag_name": "v10.1.1",
+      "name": "10.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-01T05:58:07Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.1.1"
+    },
+    {
+      "id": 76015660,
+      "tag_name": "v10.2.0",
+      "name": "10.2.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-01T11:13:45Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.2.0"
+    },
+    {
+      "id": 76199332,
+      "tag_name": "v10.3.0",
+      "name": "10.3.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-03T08:44:08Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.3.0"
+    },
+    {
+      "id": 76259927,
+      "tag_name": "v10.4.0",
+      "name": "10.4.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-05T07:36:29Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.4.0"
+    },
+    {
+      "id": 76310129,
+      "tag_name": "v10.5.0",
+      "name": "10.5.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-05T17:03:03Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.5.0"
+    },
+    {
+      "id": 76340519,
+      "tag_name": "v10.5.1",
+      "name": "10.5.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-06T05:50:52Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.5.1"
+    },
+    {
+      "id": 76557789,
+      "tag_name": "v10.6.0",
+      "name": "10.6.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-08T06:47:33Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.6.0"
+    },
+    {
+      "id": 77654996,
+      "tag_name": "v10.7.0",
+      "name": "10.7.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-20T13:02:12Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.7.0"
+    },
+    {
+      "id": 77689224,
+      "tag_name": "v10.7.1",
+      "name": "10.7.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-20T18:35:53Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.7.1"
+    },
+    {
+      "id": 78076685,
+      "tag_name": "v10.7.2",
+      "name": "10.7.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-25T16:28:32Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.7.2"
+    },
+    {
+      "id": 78236718,
+      "tag_name": "v10.8.0-beta.1",
+      "name": "10.8.0-beta.1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-27T06:03:29Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.8.0-beta.1"
+    },
+    {
+      "id": 78250503,
+      "tag_name": "v10.8.0-beta.2",
+      "name": "10.8.0-beta.2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-27T07:58:04Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.8.0-beta.2"
+    },
+    {
+      "id": 78254607,
+      "tag_name": "v10.8.0-beta.3",
+      "name": "10.8.0-beta.3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-27T08:20:51Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.8.0-beta.3"
+    },
+    {
+      "id": 78256107,
+      "tag_name": "v10.8.0-beta.4",
+      "name": "10.8.0-beta.4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-27T08:32:59Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.8.0-beta.4"
+    },
+    {
+      "id": 78257911,
+      "tag_name": "v10.8.0-beta.5",
+      "name": "10.8.0-beta.5",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-27T08:43:19Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.8.0-beta.5"
+    },
+    {
+      "id": 78534350,
+      "tag_name": "v10.8.0-beta.6",
+      "name": "10.8.0-beta.6",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-29T06:51:51Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v10.8.0-beta.6"
+    },
+    {
+      "id": 78558965,
+      "tag_name": "v11.0.0-beta.1",
+      "name": "11.0.0-beta.1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-29T10:57:38Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v11.0.0-beta.1"
+    },
+    {
+      "id": 78610190,
+      "tag_name": "v11.0.0-beta.2",
+      "name": "11.0.0-beta.2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-09-29T16:41:51Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v11.0.0-beta.2"
+    },
+    {
+      "id": 78663950,
+      "tag_name": "v11.0.0",
+      "name": "11.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-30T07:40:41Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v11.0.0"
+    },
+    {
+      "id": 78843838,
+      "tag_name": "v11.0.1",
+      "name": "11.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-03T13:02:45Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v11.0.1"
+    },
+    {
+      "id": 79025972,
+      "tag_name": "v11.0.2",
+      "name": "11.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-05T06:50:00Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v11.0.2"
+    },
+    {
+      "id": 79557760,
+      "tag_name": "v12.0.0-beta.1",
+      "name": "12.0.0-beta.1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-11T16:55:25Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.0-beta.1"
+    },
+    {
+      "id": 80450380,
+      "tag_name": "v12.0.0-beta.2",
+      "name": "12.0.0-beta.2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-20T13:04:03Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.0-beta.2"
+    },
+    {
+      "id": 81804237,
+      "tag_name": "v12.0.0-beta.3",
+      "name": "12.0.0-beta.3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-02T11:53:55Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.0-beta.3"
+    },
+    {
+      "id": 82115355,
+      "tag_name": "v12.0.0-beta.4",
+      "name": "12.0.0-beta.4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-04T17:48:24Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.0-beta.4"
+    },
+    {
+      "id": 82157431,
+      "tag_name": "v12.0.0-beta.5",
+      "name": "12.0.0-beta.5",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-05T10:01:38Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.0-beta.5"
+    },
+    {
+      "id": 82403263,
+      "tag_name": "v12.0.0-beta.6",
+      "name": "12.0.0-beta.6",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-08T15:09:46Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.0-beta.6"
+    },
+    {
+      "id": 82782453,
+      "tag_name": "v12.0.0",
+      "name": "12.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-11T10:42:35Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.0"
+    },
+    {
+      "id": 83099459,
+      "tag_name": "v12.0.1",
+      "name": "12.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-15T09:16:32Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.1"
+    },
+    {
+      "id": 83356260,
+      "tag_name": "v12.0.2",
+      "name": "12.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-17T07:56:38Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.2"
+    },
+    {
+      "id": 83846311,
+      "tag_name": "v12.0.3",
+      "name": "12.0.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-11-22T09:44:13Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.3"
+    },
+    {
+      "id": 86152670,
+      "tag_name": "v12.0.4",
+      "name": "12.0.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-12-15T11:53:53Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.4"
+    },
+    {
+      "id": 88480323,
+      "tag_name": "v12.0.5",
+      "name": "12.0.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-10T17:40:57Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.5"
+    },
+    {
+      "id": 89848370,
+      "tag_name": "v12.0.6",
+      "name": "12.0.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-22T19:00:37Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.0.6"
+    },
+    {
+      "id": 90401697,
+      "tag_name": "v12.1.0",
+      "name": "12.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-01-27T10:15:57Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.1.0"
+    },
+    {
+      "id": 92839625,
+      "tag_name": "v12.1.1",
+      "name": "12.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-17T13:45:27Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.1.1"
+    },
+    {
+      "id": 92879307,
+      "tag_name": "v12.1.2",
+      "name": "12.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-17T19:50:25Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.1.2"
+    },
+    {
+      "id": 95031191,
+      "tag_name": "v12.1.3",
+      "name": "12.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-09T08:15:57Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.1.3"
+    },
+    {
+      "id": 96318635,
+      "tag_name": "v12.1.4",
+      "name": "12.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-21T10:12:19Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.1.4"
+    },
+    {
+      "id": 96514720,
+      "tag_name": "v12.2.0",
+      "name": "12.2.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-22T15:50:53Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.2.0"
+    },
+    {
+      "id": 103734804,
+      "tag_name": "v12.2.1",
+      "name": "12.2.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-05-21T18:04:27Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.2.1"
+    },
+    {
+      "id": 107936856,
+      "tag_name": "v12.2.2",
+      "name": "12.2.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-09T06:17:11Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.2.2"
+    },
+    {
+      "id": 108546848,
+      "tag_name": "v12.2.3",
+      "name": "12.2.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-14T09:51:08Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.2.3"
+    },
+    {
+      "id": 113220243,
+      "tag_name": "v12.2.4",
+      "name": "12.2.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-07-23T12:02:15Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v12.2.4"
+    },
+    {
+      "id": 119583727,
+      "tag_name": "v13.0.0",
+      "name": "13.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-01T11:06:03Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v13.0.0"
+    },
+    {
+      "id": 126268011,
+      "tag_name": "v13.0.1",
+      "name": "13.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-23T15:22:06Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v13.0.1"
+    },
+    {
+      "id": 126558537,
+      "tag_name": "v13.0.2",
+      "name": "13.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-25T08:25:30Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v13.0.2"
+    },
+    {
+      "id": 127353425,
+      "tag_name": "v13.0.3",
+      "name": "13.0.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-31T13:04:05Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v13.0.3"
+    },
+    {
+      "id": 127493029,
+      "tag_name": "v13.0.4",
+      "name": "13.0.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-01T09:08:32Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v13.0.4"
+    },
+    {
+      "id": 128882962,
+      "tag_name": "v13.1.0",
+      "name": "13.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-10T09:56:58Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v13.1.0"
+    },
+    {
+      "id": 129565305,
+      "tag_name": "v14.0.0",
+      "name": "14.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-21T08:31:17Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v14.0.0"
+    },
+    {
+      "id": 133071196,
+      "tag_name": "v15.0.0",
+      "name": "15.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-07T18:35:33Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.0.0"
+    },
+    {
+      "id": 133309985,
+      "tag_name": "v15.0.1",
+      "name": "15.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-10T07:36:24Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.0.1"
+    },
+    {
+      "id": 133310462,
+      "tag_name": "v15.0.2",
+      "name": "15.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-10T08:00:44Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.0.2"
+    },
+    {
+      "id": 137894656,
+      "tag_name": "v15.1.0",
+      "name": "15.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-21T17:57:25Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.1.0"
+    },
+    {
+      "id": 137958886,
+      "tag_name": "v15.1.1",
+      "name": "15.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-22T11:06:17Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.1.1"
+    },
+    {
+      "id": 137998962,
+      "tag_name": "v15.1.2",
+      "name": "15.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-22T15:06:45Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.1.2"
+    },
+    {
+      "id": 138634286,
+      "tag_name": "v15.1.3",
+      "name": "15.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-26T09:32:50Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.1.3"
+    },
+    {
+      "id": 139082364,
+      "tag_name": "v15.2.0",
+      "name": "15.2.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-01-30T09:15:06Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.2.0"
+    },
+    {
+      "id": 146902791,
+      "tag_name": "v15.3.0",
+      "name": "15.3.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-16T18:56:06Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.3.0"
+    },
+    {
+      "id": 152333517,
+      "tag_name": "v15.3.1",
+      "name": "15.3.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-23T06:27:12Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.3.1"
+    },
+    {
+      "id": 161412469,
+      "tag_name": "v15.3.2",
+      "name": "15.3.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-20T07:05:34Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.3.2"
+    },
+    {
+      "id": 169495448,
+      "tag_name": "v15.4.0",
+      "name": "15.4.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-08-09T10:57:11Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.0"
+    },
+    {
+      "id": 172284480,
+      "tag_name": "v15.4.1",
+      "name": "15.4.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-08-28T06:37:03Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.1"
+    },
+    {
+      "id": 173775082,
+      "tag_name": "v15.4.2",
+      "name": "15.4.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-09-06T06:10:43Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.2"
+    },
+    {
+      "id": 178824983,
+      "tag_name": "v15.4.3",
+      "name": "15.4.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-08T06:25:28Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.3"
+    },
+    {
+      "id": 180682125,
+      "tag_name": "v15.4.4",
+      "name": "15.4.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-18T14:08:07Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.4"
+    },
+    {
+      "id": 180960550,
+      "tag_name": "v15.4.5",
+      "name": "15.4.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-21T09:29:37Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.5"
+    },
+    {
+      "id": 184945899,
+      "tag_name": "v15.4.6",
+      "name": "15.4.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-11-12T17:54:35Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.6"
+    },
+    {
+      "id": 191631672,
+      "tag_name": "v15.4.7",
+      "name": "15.4.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-12-19T10:47:59Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.7"
+    },
+    {
+      "id": 191965401,
+      "tag_name": "v15.4.8",
+      "name": "15.4.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-12-21T10:23:08Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.8"
+    },
+    {
+      "id": 193215870,
+      "tag_name": "v15.4.9",
+      "name": "15.4.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-01-05T17:34:14Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.9"
+    },
+    {
+      "id": 196778646,
+      "tag_name": "v15.4.10",
+      "name": "15.4.10",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-01-25T15:58:00Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.10"
+    },
+    {
+      "id": 201833371,
+      "tag_name": "v15.4.11",
+      "name": "15.4.11",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-02-22T08:05:36Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.4.11"
+    },
+    {
+      "id": 206462648,
+      "tag_name": "v15.5.0-beta.1",
+      "name": "15.5.0-beta.1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-03-18T07:30:41Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.5.0-beta.1"
+    },
+    {
+      "id": 206464719,
+      "tag_name": "v15.5.0-beta.2",
+      "name": "15.5.0-beta.2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-03-18T07:40:59Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.5.0-beta.2"
+    },
+    {
+      "id": 207074939,
+      "tag_name": "v15.5.0",
+      "name": "15.5.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-03-20T06:42:48Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.5.0"
+    },
+    {
+      "id": 207105927,
+      "tag_name": "v15.5.1",
+      "name": "15.5.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-03-20T09:28:52Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.5.1"
+    },
+    {
+      "id": 208330370,
+      "tag_name": "v15.5.2",
+      "name": "15.5.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-03-26T08:21:39Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.5.2"
+    },
+    {
+      "id": 213566849,
+      "tag_name": "v15.6.0",
+      "name": "15.6.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-04-20T17:58:39Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.0"
+    },
+    {
+      "id": 214424057,
+      "tag_name": "v15.6.1",
+      "name": "15.6.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-04-24T07:04:35Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.1"
+    },
+    {
+      "id": 220047311,
+      "tag_name": "v15.6.2",
+      "name": "15.6.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-05-21T11:48:59Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.2"
+    },
+    {
+      "id": 223609098,
+      "tag_name": "v15.6.3",
+      "name": "15.6.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-06T10:31:39Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.3"
+    },
+    {
+      "id": 224274287,
+      "tag_name": "v15.6.4",
+      "name": "15.6.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-10T10:16:16Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.4"
+    },
+    {
+      "id": 226110871,
+      "tag_name": "v15.6.5",
+      "name": "15.6.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-18T09:51:28Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.5"
+    },
+    {
+      "id": 228548699,
+      "tag_name": "v15.6.6",
+      "name": "15.6.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-28T17:40:30Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.6"
+    },
+    {
+      "id": 244707522,
+      "tag_name": "v15.6.7",
+      "name": "15.6.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-09-04T09:06:38Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.7"
+    },
+    {
+      "id": 245008630,
+      "tag_name": "v15.6.8",
+      "name": "15.6.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-09-05T08:43:12Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.8"
+    },
+    {
+      "id": 246370821,
+      "tag_name": "v15.6.9",
+      "name": "15.6.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-09-11T05:27:13Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.9"
+    },
+    {
+      "id": 251656592,
+      "tag_name": "v15.6.10",
+      "name": "15.6.10",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-02T07:55:16Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.10"
+    },
+    {
+      "id": 269022829,
+      "tag_name": "v15.6.11",
+      "name": "15.6.11",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-10T08:20:08Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.11"
+    },
+    {
+      "id": 270313801,
+      "tag_name": "v15.6.12",
+      "name": "15.6.12",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-15T08:31:56Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.6.12"
+    },
+    {
+      "id": 276868854,
+      "tag_name": "v15.7.0",
+      "name": "15.7.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-14T21:15:55Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.7.0"
+    },
+    {
+      "id": 286194833,
+      "tag_name": "v15.7.1",
+      "name": "15.7.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-13T18:23:49Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.7.1"
+    },
+    {
+      "id": 287217000,
+      "tag_name": "v15.7.2",
+      "name": "15.7.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-17T11:47:33Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.7.2"
+    },
+    {
+      "id": 302657507,
+      "tag_name": "v15.7.3",
+      "name": "15.7.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-28T08:19:55Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.7.3"
+    },
+    {
+      "id": 321082353,
+      "tag_name": "v15.7.4",
+      "name": "15.7.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-12T10:39:52Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.7.4"
+    },
+    {
+      "id": 323938227,
+      "tag_name": "v15.8.0",
+      "name": "15.8.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-17T18:06:28Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.8.0"
+    },
+    {
+      "id": 334557677,
+      "tag_name": "v15.8.1",
+      "name": "15.8.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-04T19:20:23Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.8.1"
+    },
+    {
+      "id": 342505099,
+      "tag_name": "v15.8.2",
+      "name": "15.8.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-21T10:52:41Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.8.2"
+    },
+    {
+      "id": 394391389,
+      "tag_name": "v15.9.0",
+      "name": "15.9.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-09-23T07:25:02Z",
+      "html_url": "https://github.com/sql-formatter-org/sql-formatter/releases/tag/v15.9.0"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v15.9.0",
+      "sha": "63dc9f835cef4738ef107bf2306b20fd7e7a4d20",
+      "date": "2026-09-23T07:17:00Z"
+    },
+    {
+      "name": "v15.8.2",
+      "sha": "7d5803238f3a898eb88906b0138bf92edfdfd5f4",
+      "date": "2026-06-21T10:48:35Z"
+    },
+    {
+      "name": "v15.8.1",
+      "sha": "f3707ba179fac6bee8489144cbd66ed7038530dd",
+      "date": "2026-06-04T19:13:08Z"
+    },
+    {
+      "name": "v15.8.0",
+      "sha": "a3bfeeb4e96415efe4820a1b2c7ed592384aa0be",
+      "date": "2026-05-17T18:02:54Z"
+    },
+    {
+      "name": "v15.7.4",
+      "sha": "7bdeba552e0bc63681e7ce1bf2a95bbf3c3b7401",
+      "date": "2026-05-12T10:38:28Z"
+    },
+    {
+      "name": "v15.7.3",
+      "sha": "baf6cba99799586353b3319feb7e00c05146b4a3",
+      "date": "2026-03-28T08:15:46Z"
+    },
+    {
+      "name": "v15.7.2",
+      "sha": "a9849494212c0a61fb6b0c1461db84e93ab2ac96",
+      "date": "2026-02-17T11:47:06Z"
+    },
+    {
+      "name": "v15.7.1",
+      "sha": "6291ebb1f91e9f5dc623e22a7747ae9e51a33bdb",
+      "date": "2026-02-13T18:22:51Z"
+    },
+    {
+      "name": "v15.6.11",
+      "sha": "f6d8c8106fec679e513d9198b04b0cb9bd2081a2",
+      "date": "2025-12-10T08:18:52Z"
+    },
+    {
+      "name": "v15.7.0",
+      "sha": "7751899813cf7c9b6c52e5642541a8a03365b4ef",
+      "date": "2026-01-14T21:13:22Z"
+    },
+    {
+      "name": "v15.6.12",
+      "sha": "3c96d067489f6c3b751dfecaa1bbe3281d198b73",
+      "date": "2025-12-15T08:31:08Z"
+    },
+    {
+      "name": "v15.6.10",
+      "sha": "dae29a38c1e008d7bbd52d483c7302aa12e4e4cf",
+      "date": "2025-10-02T07:51:41Z"
+    },
+    {
+      "name": "v15.6.9",
+      "sha": "5c869273b6ba05c5b4abe6935ed79a90abdb1d03",
+      "date": "2025-09-11T05:26:37Z"
+    },
+    {
+      "name": "v15.6.6",
+      "sha": "9c3feb4bf0bff0cd6ceaa9a487f1aa521e79f7a4",
+      "date": "2025-06-28T17:39:01Z"
+    },
+    {
+      "name": "v15.6.8",
+      "sha": "1ce3717748bec9c05898a29aedd025377823576d",
+      "date": "2025-09-05T08:42:42Z"
+    },
+    {
+      "name": "v15.6.7",
+      "sha": "3f7cd82dac5dedc018bf63087b7de89c758f480a",
+      "date": "2025-09-04T09:03:13Z"
+    },
+    {
+      "name": "v15.6.5",
+      "sha": "efee49f91f76e5d2ea356e628e959ac8cf0a7ddd",
+      "date": "2025-06-18T09:50:57Z"
+    },
+    {
+      "name": "v15.6.3",
+      "sha": "7bc3e83ce802be44429055a339aa0eb8d475ded6",
+      "date": "2025-06-06T10:31:13Z"
+    },
+    {
+      "name": "v15.6.2",
+      "sha": "bfe1a6057aa83513d8658e38ba66dcb503777866",
+      "date": "2025-05-21T11:48:28Z"
+    },
+    {
+      "name": "v15.6.4",
+      "sha": "16f8623acb19b2a64adf7b566fe128749a8a391c",
+      "date": "2025-06-10T10:15:52Z"
+    },
+    {
+      "name": "v15.6.1",
+      "sha": "bbb7df21443ca8128cbc0e223fcdc2193d0ebce5",
+      "date": "2025-04-24T07:04:02Z"
+    },
+    {
+      "name": "v15.5.2",
+      "sha": "672623ab6bb4137b3cd33be9de32cddc3c0158e2",
+      "date": "2025-03-26T08:19:13Z"
+    },
+    {
+      "name": "v15.6.0",
+      "sha": "2f206d1d8fc8939ee0e95336d7b6ec55425f14a8",
+      "date": "2025-04-20T17:57:38Z"
+    },
+    {
+      "name": "v15.5.0",
+      "sha": "032dc7c797200eee880e14c32cb530b0435f84f5",
+      "date": "2025-03-20T06:37:46Z"
+    },
+    {
+      "name": "v15.5.0-beta.2",
+      "sha": "8e3f63797a16f97deb474e0041dabeddf4060a66",
+      "date": "2025-03-18T07:40:39Z"
+    },
+    {
+      "name": "v15.5.0-beta.1",
+      "sha": "32fb2e77c73358df10b1c4de3355a82612207347",
+      "date": "2025-03-18T07:29:30Z"
+    },
+    {
+      "name": "v15.5.1",
+      "sha": "ca79269e8f9cf141adb26cd054e7cf7d2af01f36",
+      "date": "2025-03-20T09:27:27Z"
+    },
+    {
+      "name": "v15.4.11",
+      "sha": "5bd4d457bba1c0d8864c338d1ac0b45e326c2e1b",
+      "date": "2025-02-22T08:04:30Z"
+    },
+    {
+      "name": "v15.4.10",
+      "sha": "c57377fa078a1891bf5f6cfc87c73c72a3cb4c61",
+      "date": "2025-01-25T15:55:26Z"
+    },
+    {
+      "name": "v15.4.9",
+      "sha": "178e02c20ce4195d059d7f704cc570bdf6522cb7",
+      "date": "2025-01-05T17:29:54Z"
+    },
+    {
+      "name": "v15.4.8",
+      "sha": "121f6acd194007285ef81a67ec30306c7254941c",
+      "date": "2024-12-21T10:18:57Z"
+    },
+    {
+      "name": "v15.4.7",
+      "sha": "ec5c3c17f1f8ea4eea1139bd84df733a5fb757f2",
+      "date": "2024-12-19T10:45:27Z"
+    },
+    {
+      "name": "v15.4.6",
+      "sha": "8fae43e4425ed0009080b576ae60b553eac827ec",
+      "date": "2024-11-12T17:24:10Z"
+    },
+    {
+      "name": "v15.4.5",
+      "sha": "9dc0a04dcfef84020eb22a0d90cb3daa93a11045",
+      "date": "2024-10-21T09:29:15Z"
+    },
+    {
+      "name": "v15.4.4",
+      "sha": "8672ca4c9d2e5616303a4bb8177cc11de3058731",
+      "date": "2024-10-18T14:07:44Z"
+    },
+    {
+      "name": "v15.4.3",
+      "sha": "2c495334f1ea78e07fea0ddd6b2ddbe9dd9f5583",
+      "date": "2024-10-08T06:24:41Z"
+    },
+    {
+      "name": "v15.4.2",
+      "sha": "8e353336d9ae29919c7b76482ecd7178d13cec20",
+      "date": "2024-09-06T06:10:07Z"
+    },
+    {
+      "name": "v15.4.1",
+      "sha": "f55e3c3b86497803bb4e1dc1691fa126d50ad473",
+      "date": "2024-08-28T06:36:30Z"
+    },
+    {
+      "name": "v15.4.0",
+      "sha": "c8194bdd5985b6ab098664d3aa9e71bfe117a943",
+      "date": "2024-08-09T10:51:15Z"
+    },
+    {
+      "name": "v15.3.2",
+      "sha": "0ca99cc5112598a04b617fb11f8810a4d0d088a3",
+      "date": "2024-06-20T07:04:06Z"
+    },
+    {
+      "name": "v15.3.1",
+      "sha": "cc96dfce7b4e6dcd3939d7cd43e41aa7fa4587b7",
+      "date": "2024-04-23T06:24:10Z"
+    },
+    {
+      "name": "v15.3.0",
+      "sha": "dd5dd1efd324a8bef5d0281f2106235cfa4ec01b",
+      "date": "2024-03-16T18:51:49Z"
+    },
+    {
+      "name": "v15.2.0",
+      "sha": "d5a6c7a40359f4c903f3484ae8947cb1fc871598",
+      "date": "2024-01-30T09:09:07Z"
+    },
+    {
+      "name": "v15.1.3",
+      "sha": "eb4933f1fc90a016800d4be412a6af618abf03ad",
+      "date": "2024-01-26T09:31:39Z"
+    },
+    {
+      "name": "v15.1.0",
+      "sha": "e0534860585eb3a64382ba421e70a35cdc6b302d",
+      "date": "2024-01-21T17:50:34Z"
+    },
+    {
+      "name": "v15.1.2",
+      "sha": "b9f8268dffdf40e28aac6df364460c850d3f6a23",
+      "date": "2024-01-22T15:06:14Z"
+    },
+    {
+      "name": "v15.0.2",
+      "sha": "9c228945ff9492b853d4082153d70d72eb5d672c",
+      "date": "2023-12-10T08:00:15Z"
+    },
+    {
+      "name": "v15.1.1",
+      "sha": "bec158b61dcb9b2754a6e9a5a2825d20560c942f",
+      "date": "2024-01-22T11:04:26Z"
+    },
+    {
+      "name": "v15.0.1",
+      "sha": "d64d3e1aec81e855e37811c0b27d21c1be2685aa",
+      "date": "2023-12-10T07:34:34Z"
+    },
+    {
+      "name": "v14.1.0-beta.2",
+      "sha": "7978ec3eae312c2c001bce71a04e80a0a19632ef",
+      "date": "2023-11-23T15:06:50Z"
+    },
+    {
+      "name": "v14.1.0-beta.1",
+      "sha": "590627cf755ca6fa76b551c4c3ad54bd8b5b7008",
+      "date": "2023-11-23T14:47:02Z"
+    },
+    {
+      "name": "v15.0.0",
+      "sha": "371c091f4e2fde5dd55c6a7bc1de3483a43cf17a",
+      "date": "2023-12-07T18:24:14Z"
+    },
+    {
+      "name": "v14.0.0",
+      "sha": "700a89caba19ac9c63725fdd6ba8d689ca0e4799",
+      "date": "2023-11-21T08:30:40Z"
+    },
+    {
+      "name": "v14.0.0-beta.4",
+      "sha": "15d117bd34c7545e8e5fdac6281401b2d85e3eed",
+      "date": "2023-11-20T13:18:51Z"
+    },
+    {
+      "name": "v14.0.0-beta.3",
+      "sha": "f1ea1201da5d08839e26516ea208a8ad6ac8aad6",
+      "date": "2023-11-15T10:12:09Z"
+    },
+    {
+      "name": "v14.0.0-beta.2",
+      "sha": "9895c0d6aa6c7ad141d8a46d3457c18c61801a8a",
+      "date": "2023-11-15T10:05:52Z"
+    },
+    {
+      "name": "v14.0.0-beta.1",
+      "sha": "48b0c95a486507d4d8eddcfef4d065b46978ff5c",
+      "date": "2023-11-15T09:46:13Z"
+    },
+    {
+      "name": "v13.1.0",
+      "sha": "5d03f2b5bbf36ebc69ce497dd135a61a5c361012",
+      "date": "2023-11-10T09:54:24Z"
+    },
+    {
+      "name": "v13.0.3",
+      "sha": "08c80cc0cba2de43d2eb3beb040047cb3fd2fb41",
+      "date": "2023-10-31T13:01:43Z"
+    },
+    {
+      "name": "v13.0.4",
+      "sha": "90ef35de278e1a8ba42e597fc0199f03f75e89b0",
+      "date": "2023-11-01T09:06:56Z"
+    },
+    {
+      "name": "v13.0.2",
+      "sha": "777d419434bda817225fe12ee58ec52fb8783db1",
+      "date": "2023-10-25T08:23:51Z"
+    },
+    {
+      "name": "v13.0.1",
+      "sha": "c95354ca72565843f63d051f5385972e8cad4bf9",
+      "date": "2023-10-23T15:21:10Z"
+    },
+    {
+      "name": "v13.0.0",
+      "sha": "58ac0fb4b2c802d4abdbc16e8888e417e894aa39",
+      "date": "2023-09-01T10:56:29Z"
+    },
+    {
+      "name": "v12.2.3",
+      "sha": "d6c830c2d0de67d8a09a12ebf9548c8ed8efb401",
+      "date": "2023-06-14T09:49:30Z"
+    },
+    {
+      "name": "v12.2.2",
+      "sha": "7f48f155f371b20bf18ab7f79f888ddb960b4208",
+      "date": "2023-06-09T06:15:18Z"
+    },
+    {
+      "name": "v12.2.4",
+      "sha": "091b180667f3f58cb42482ff497b033bb09682bd",
+      "date": "2023-07-23T12:00:33Z"
+    },
+    {
+      "name": "v12.2.1",
+      "sha": "8260e4fd6887483c2da2ce4807c6e76f515b41b3",
+      "date": "2023-05-21T18:03:31Z"
+    },
+    {
+      "name": "v12.2.0",
+      "sha": "2628fe6245f60922d1b9d5a18ba2317bf857effa",
+      "date": "2023-03-22T15:50:00Z"
+    },
+    {
+      "name": "v12.1.4",
+      "sha": "949569b996abde18a10a4d023a7b87ee6f1e7e48",
+      "date": "2023-03-21T10:11:46Z"
+    },
+    {
+      "name": "v12.1.3",
+      "sha": "27875c7471a1cf42d8c98a23a4c26a639fd490b8",
+      "date": "2023-03-09T08:15:01Z"
+    },
+    {
+      "name": "v12.1.2",
+      "sha": "71cb85a6ef9f36b0505fc1804a49a430e486b0e7",
+      "date": "2023-02-17T19:49:41Z"
+    },
+    {
+      "name": "v12.1.0",
+      "sha": "6362e2334f2a1c946f9ddf2fda8f07f1165b8ef0",
+      "date": "2023-01-27T10:14:09Z"
+    },
+    {
+      "name": "v12.1.1",
+      "sha": "a1aa6678d986bbadaa7ba199b0fa6e07d6513f84",
+      "date": "2023-02-17T13:43:31Z"
+    },
+    {
+      "name": "v12.0.5",
+      "sha": "6280df332bd5acc340e36407ac9afa4dbf70b791",
+      "date": "2023-01-10T17:37:36Z"
+    },
+    {
+      "name": "v12.0.6",
+      "sha": "1be6cb07fddc24d3a54eb6624db9861e2dd604bb",
+      "date": "2023-01-22T18:59:57Z"
+    },
+    {
+      "name": "v12.0.4",
+      "sha": "ab5a183a340ba0701dc2f24a34ce23f3a48be434",
+      "date": "2022-12-15T11:52:03Z"
+    },
+    {
+      "name": "v12.0.3",
+      "sha": "4d540ca62055c075e003395716aa3ce94cd275c3",
+      "date": "2022-11-22T09:42:40Z"
+    },
+    {
+      "name": "v12.0.2",
+      "sha": "deb357f498e8b1029e7f0baef96f9071de3a10c9",
+      "date": "2022-11-17T07:55:16Z"
+    },
+    {
+      "name": "v12.0.1",
+      "sha": "08eb2b1d47dbeac42d717c9654a9ffeffabf81dc",
+      "date": "2022-11-15T09:15:55Z"
+    },
+    {
+      "name": "v12.0.0",
+      "sha": "175835c97546b82802ebcda1436f08a07b15e86e",
+      "date": "2022-11-11T10:18:08Z"
+    },
+    {
+      "name": "v12.0.0-beta.6",
+      "sha": "9829a4e3a9397957c713a41050122c265d595138",
+      "date": "2022-11-08T15:08:12Z"
+    },
+    {
+      "name": "v12.0.0-beta.4",
+      "sha": "039f655aec2597e020c6d721f7acf335ab565984",
+      "date": "2022-11-04T17:44:04Z"
+    },
+    {
+      "name": "v12.0.0-beta.5",
+      "sha": "d071f7102990a8f446a868a486d586e07c1e32b5",
+      "date": "2022-11-05T10:00:09Z"
+    },
+    {
+      "name": "v12.0.0-beta.3",
+      "sha": "a9b846b36a13ce1899d4617d79205abca0e2c865",
+      "date": "2022-11-02T11:53:14Z"
+    },
+    {
+      "name": "v12.0.0-beta.2",
+      "sha": "a5294a077b95acdad11aa03340169946fd1f3d5b",
+      "date": "2022-10-20T13:03:15Z"
+    },
+    {
+      "name": "v12.0.0-beta.1",
+      "sha": "bb086b488bd12c4f3e2469d46742c3b990c21c37",
+      "date": "2022-10-11T16:42:52Z"
+    },
+    {
+      "name": "v11.0.2",
+      "sha": "e33a2261310407ccf8d046ccd2a60140da4785f7",
+      "date": "2022-10-05T06:49:17Z"
+    },
+    {
+      "name": "v11.0.1",
+      "sha": "bc6a8a5cb1abb657f96f294a282d69dd0fcb3c4e",
+      "date": "2022-10-03T13:01:10Z"
+    },
+    {
+      "name": "v11.0.0-beta.2",
+      "sha": "ab8e5ee9cfe63002289d3a7598361b70264b63c9",
+      "date": "2022-09-29T16:37:08Z"
+    },
+    {
+      "name": "v11.0.0",
+      "sha": "2e15dadc5ba05c8753cd38a5cb55ed39bd4a770b",
+      "date": "2022-09-30T07:31:19Z"
+    },
+    {
+      "name": "v11.0.0-beta.1",
+      "sha": "fb66d1d318646649953cbf406950cad3081ea497",
+      "date": "2022-09-29T10:56:49Z"
+    },
+    {
+      "name": "v10.8.0-beta.6",
+      "sha": "b33245bff69e1ca94b892a35aaf01434c136c2fc",
+      "date": "2022-09-29T06:50:05Z"
+    },
+    {
+      "name": "v10.8.0-beta.5",
+      "sha": "d211abdd4a952d1775f3bf77cb04fa32e05ce9bf",
+      "date": "2022-09-27T08:42:58Z"
+    },
+    {
+      "name": "v10.8.0-beta.3",
+      "sha": "10367b31aabe743648f99c6bac47585824d6c8c8",
+      "date": "2022-09-27T08:20:14Z"
+    },
+    {
+      "name": "v10.8.0-beta.4",
+      "sha": "3c848f9e158ecd919c6a2f1ff237d4a055934a87",
+      "date": "2022-09-27T08:31:31Z"
+    },
+    {
+      "name": "v10.8.0-beta.2",
+      "sha": "14148830d2424666f12df3c0a61071f184f23545",
+      "date": "2022-09-27T07:57:20Z"
+    },
+    {
+      "name": "v10.7.2",
+      "sha": "4795196184bda691ea007269eda781f4443813c6",
+      "date": "2022-09-25T16:27:19Z"
+    },
+    {
+      "name": "v10.8.0-beta.1",
+      "sha": "4f6def1275509549074bfc52f697ab35bcffb7ae",
+      "date": "2022-09-27T05:59:51Z"
+    },
+    {
+      "name": "v10.7.1",
+      "sha": "946facc31823101b0907aa4770f61fcf920a67aa",
+      "date": "2022-09-20T18:34:41Z"
+    },
+    {
+      "name": "v10.7.0",
+      "sha": "a7c799c4070c8da22d44cc620676fe9053946fb2",
+      "date": "2022-09-20T12:58:04Z"
+    },
+    {
+      "name": "v10.6.0",
+      "sha": "7690cda81c24dfc91bd65c0b796ba6c16b8ea22a",
+      "date": "2022-09-08T06:42:20Z"
+    },
+    {
+      "name": "v10.5.0",
+      "sha": "4128d393ba143e6358ff35f02d27c4fe0edfee2a",
+      "date": "2022-09-05T17:01:58Z"
+    },
+    {
+      "name": "v10.5.1",
+      "sha": "c75adf7313f0a7f1afb5eb76a09b2387b2fc6546",
+      "date": "2022-09-06T05:46:25Z"
+    },
+    {
+      "name": "v10.4.0",
+      "sha": "bc4b5c5dc86eaec9cb2a0c92b5525808db7e5fac",
+      "date": "2022-09-05T07:28:00Z"
+    },
+    {
+      "name": "v10.3.0",
+      "sha": "895106b7c4c99d94723b4c8744e1a96fa041c530",
+      "date": "2022-09-03T08:42:35Z"
+    },
+    {
+      "name": "v10.2.0",
+      "sha": "fb656bf691481b6b8bbade52c8c2e86ac4bdb3bd",
+      "date": "2022-09-01T11:11:33Z"
+    },
+    {
+      "name": "v10.1.1",
+      "sha": "b2eb1cc53aca2cb4480babb3ea5f7bc099034691",
+      "date": "2022-09-01T05:56:46Z"
+    },
+    {
+      "name": "v10.1.0",
+      "sha": "adddedc1160c03d1a4f22f9eccfde492b424ac77",
+      "date": "2022-08-31T10:42:28Z"
+    },
+    {
+      "name": "v10.0.0-beta.1",
+      "sha": "ff5215178b9aaabb50907160f3125871ace28d24",
+      "date": "2022-08-22T13:43:47Z"
+    },
+    {
+      "name": "v10.0.0",
+      "sha": "fd3e894e8456058c1033a04ed65783b1da6771bf",
+      "date": "2022-08-25T08:18:20Z"
+    },
+    {
+      "name": "v9.2.0",
+      "sha": "fd1a67ac7b5f897001c9322a6def73d9e7bbb030",
+      "date": "2022-08-15T16:31:19Z"
+    },
+    {
+      "name": "v9.1.0",
+      "sha": "6ee1dab43326540cf6c07a470f276b93d3121915",
+      "date": "2022-08-11T20:09:42Z"
+    },
+    {
+      "name": "v9.0.1",
+      "sha": "873a48263e7a5d4255d411be6bbc3f8b8a0cc053",
+      "date": "2022-08-11T09:28:54Z"
+    },
+    {
+      "name": "v9.0.0-beta.7",
+      "sha": "56de11091ed9db55ab578dee7adcd0075a54234e",
+      "date": "2022-08-07T16:16:49Z"
+    },
+    {
+      "name": "v9.0.0",
+      "sha": "82c40ce2452c5b9c57193a82de1e41975d3477a8",
+      "date": "2022-08-08T19:11:17Z"
+    },
+    {
+      "name": "v9.0.0-beta.6",
+      "sha": "a9fd3cbc1fc594b2960cc9d3edb0a3e2d34cccde",
+      "date": "2022-07-31T09:56:52Z"
+    },
+    {
+      "name": "v9.0.0-beta.5",
+      "sha": "ee1631617a1bf5d33d61dd84fda05a8da7eb3580",
+      "date": "2022-07-28T14:32:24Z"
+    },
+    {
+      "name": "v9.0.0-beta3",
+      "sha": "de98475e5872bedabd6f9bed1a51e8b20da02dee",
+      "date": "2022-07-16T18:18:41Z"
+    },
+    {
+      "name": "v9.0.0-beta4",
+      "sha": "3091c328f08702ae60ae5451dd1ceae6f2412f86",
+      "date": "2022-07-27T09:40:00Z"
+    },
+    {
+      "name": "v9.0.0-beta2",
+      "sha": "6b1b1b04d81de77e41dbe4c726c169140b7a4358",
+      "date": "2022-07-16T08:50:06Z"
+    },
+    {
+      "name": "v9.0.0-beta1",
+      "sha": "dcb51abcf4e993cc9b86c4032005945baf5a5262",
+      "date": "2022-07-14T09:39:42Z"
+    },
+    {
+      "name": "v8.1.0",
+      "sha": "0592b0189293651ad034151eb59770fa0d00274a",
+      "date": "2022-07-12T09:33:22Z"
+    },
+    {
+      "name": "v8.2.0",
+      "sha": "da16787971540fd99af74158219b10d9ce7ebea5",
+      "date": "2022-07-13T18:00:54Z"
+    },
+    {
+      "name": "v8.0.2",
+      "sha": "b06125685cad855095df92012ce2a0043e6079b6",
+      "date": "2022-07-05T08:42:50Z"
+    },
+    {
+      "name": "v8.0.1",
+      "sha": "7dd5b944e32a4fff7eed27fa40168815a754250f",
+      "date": "2022-07-04T17:44:11Z"
+    },
+    {
+      "name": "v8.0.0",
+      "sha": "16c9091c109d4b77becd3da39f996d73be8a6992",
+      "date": "2022-07-04T10:26:21Z"
+    },
+    {
+      "name": "v7.0.4",
+      "sha": "97c9c49257c837c10f019312f4874fed64d2221d",
+      "date": "2022-07-03T11:32:21Z"
+    },
+    {
+      "name": "v7.0.3",
+      "sha": "75caa72ca0b766d2f504ca2991277bde09f68799",
+      "date": "2022-07-01T06:40:45Z"
+    },
+    {
+      "name": "v7.0.2",
+      "sha": "2e47295f1e7106d162b4308a3bc4ffbeefe8de18",
+      "date": "2022-06-21T12:28:21Z"
+    },
+    {
+      "name": "v7.0.0",
+      "sha": "0e89f57a0d25ff411af09752634188ec481f9f01",
+      "date": "2022-06-14T08:44:12Z"
+    },
+    {
+      "name": "v7.0.1",
+      "sha": "06b5da5d8e4ed59a109ae00b15040e6aafcc0ddc",
+      "date": "2022-06-16T08:06:05Z"
+    },
+    {
+      "name": "v6.1.5",
+      "sha": "db195eb98355b0d797197f221864ac0c44e00919",
+      "date": "2022-06-09T15:20:56Z"
+    },
+    {
+      "name": "v6.1.4",
+      "sha": "bc4dd08b32e7e7adc42549ba4c0946b161d5b479",
+      "date": "2022-06-09T14:27:47Z"
+    },
+    {
+      "name": "v6.1.3",
+      "sha": "bc76eda5b6cd1aaf47388a71fa59bd0131fce43d",
+      "date": "2022-06-09T12:23:02Z"
+    },
+    {
+      "name": "v6.1.2",
+      "sha": "2b045e526aade5e3da91d6df6d4fdb193548d4de",
+      "date": "2022-05-24T07:36:29Z"
+    },
+    {
+      "name": "v6.1.1",
+      "sha": "6622ee07a169164222fa4a228ce7f0942ce6f1bc",
+      "date": "2022-05-16T11:04:11Z"
+    },
+    {
+      "name": "v6.1.0",
+      "sha": "6f267242e0bad4041a015db0a3d83e2deb37449b",
+      "date": "2022-05-12T14:02:34Z"
+    },
+    {
+      "name": "v6.0.2",
+      "sha": "71485e392dd06e641b0f7ada20781e98f378eb74",
+      "date": "2022-05-12T10:27:29Z"
+    },
+    {
+      "name": "v6.0.1",
+      "sha": "d2915e0a5c2f1df23c7082481c1835328ca95759",
+      "date": "2022-05-12T09:44:08Z"
+    },
+    {
+      "name": "v6.0.0",
+      "sha": "294b2a8ffe3230c0b28b6665575a666383888526",
+      "date": "2022-05-11T12:03:15Z"
+    },
+    {
+      "name": "v6.0.0-beta.4",
+      "sha": "c6e9e4639c70309497c82c87baef231a9d513a3f",
+      "date": "2022-05-11T11:50:04Z"
+    },
+    {
+      "name": "v6.0.0-beta.3",
+      "sha": "03ad97c444adaacf20e6d309c81b12a3c713427a",
+      "date": "2022-05-10T10:05:30Z"
+    },
+    {
+      "name": "v6.0.0-beta.2",
+      "sha": "69d9f87f0dc01c662092c28bcd75afe0a4f59dea",
+      "date": "2022-05-09T21:14:35Z"
+    },
+    {
+      "name": "v6.0.0-beta.1",
+      "sha": "6ede39e4ee8453ad33040669f2c77c3a1829c2c8",
+      "date": "2022-05-09T07:43:15Z"
+    },
+    {
+      "name": "v5.1.1",
+      "sha": "db8f64c280b67098a5fbe4e0cf7f2c1b04424068",
+      "date": "2022-04-09T14:31:27Z"
+    },
+    {
+      "name": "v5.1.0",
+      "sha": "047084b2ed8b47aa0d24c8f9621ebd3363ede913",
+      "date": "2021-12-23T23:30:01Z"
+    },
+    {
+      "name": "v5.0.1",
+      "sha": "f9d7caeaaf7ae38ca67391bd70bd5f5a6860c7d0",
+      "date": "2021-11-25T05:30:09Z"
+    },
+    {
+      "name": "v5.0.0",
+      "sha": "5f21dba640c33d54e94eb90e832173c9c6abcdc6",
+      "date": "2021-11-25T02:56:44Z"
+    },
+    {
+      "name": "v4.0.2",
+      "sha": "237c1e740b728472e4e86f2973754a11501f7833",
+      "date": "2021-02-05T09:28:20Z"
+    },
+    {
+      "name": "v5.0.0-beta.1",
+      "sha": "9d30c4b09ae7eb2b2ad5b98593eb5c625a00293c",
+      "date": "2021-11-15T22:31:54Z"
+    },
+    {
+      "name": "v5.0.0-beta",
+      "sha": "84b513e3bb5ff58405c598a4a4679fb275a0f53c",
+      "date": "2021-11-05T00:08:05Z"
+    },
+    {
+      "name": "v4.0.1",
+      "sha": "ac5e705f2343922511e15a74b3da0a200392acfd",
+      "date": "2021-02-01T18:10:32Z"
+    },
+    {
+      "name": "v4.0.0",
+      "sha": "f1dd29117bd317cfb7fe3c3590f5532a7a28392a",
+      "date": "2021-01-31T18:55:06Z"
+    },
+    {
+      "name": "v4.0.0-beta.8",
+      "sha": "a57a7953939643a89ff52d72496610f361e26280",
+      "date": "2021-01-29T12:50:06Z"
+    },
+    {
+      "name": "v4.0.0-beta.7",
+      "sha": "5416ca593c6a4f3d0bf3379a61e9a3c7fe5eb2dd",
+      "date": "2021-01-29T11:56:55Z"
+    },
+    {
+      "name": "v4.0.0-beta.5",
+      "sha": "1ffa2eeb683a1bfe9cc2e34dcb436a2090492724",
+      "date": "2021-01-28T12:34:27Z"
+    },
+    {
+      "name": "v4.0.0-beta.6",
+      "sha": "f192d53ea84cfdfe7bb689b1b00e17c01b594e90",
+      "date": "2021-01-28T13:35:03Z"
+    },
+    {
+      "name": "v4.0.0-beta.4",
+      "sha": "77acd53af5143481cee2ff06da344960426596e6",
+      "date": "2021-01-28T11:59:21Z"
+    },
+    {
+      "name": "v4.0.0-beta.3",
+      "sha": "abc02e77dbadaf79c5adef6d1699b3286e9aea15",
+      "date": "2021-01-26T15:46:05Z"
+    },
+    {
+      "name": "v4.0.0-beta.2",
+      "sha": "9d6a224c0088450eb12f4091c86590f71acee233",
+      "date": "2021-01-26T12:59:15Z"
+    },
+    {
+      "name": "v4.0.0-beta.1",
+      "sha": "034f8dcbd636fe0d549b16206e87377fcbcbac40",
+      "date": "2021-01-25T20:34:30Z"
+    },
+    {
+      "name": "v4.0.0-beta.0",
+      "sha": "37a9c9cba35fef2cde446f3f29007fae8efbe33e",
+      "date": "2021-01-25T10:00:28Z"
+    },
+    {
+      "name": "v3.1.0",
+      "sha": "64f18a8a1032b0f7696099b01f2d0c9d91b79b06",
+      "date": "2021-01-23T19:32:32Z"
+    },
+    {
+      "name": "v3.0.3",
+      "sha": "72343d7574d6f7e6910c7f663625701d350b3e38",
+      "date": "2020-07-13T17:26:50Z"
+    },
+    {
+      "name": "v3.0.2",
+      "sha": "7dbad9feac7731e8e056aff244957dcd9cfb3aaa",
+      "date": "2020-07-13T17:18:54Z"
+    },
+    {
+      "name": "v3.0.1",
+      "sha": "8bead246a7541ae746e3ef885380752433c903f7",
+      "date": "2020-07-13T16:56:43Z"
+    },
+    {
+      "name": "v3.0.0",
+      "sha": "ea9e13373299ff71938b0ea0e573549ff448f743",
+      "date": "2020-07-13T07:34:43Z"
+    },
+    {
+      "name": "v3.0.0-beta.2",
+      "sha": "dafe235fb0e691d1af44bb6fda467fc2c6e34071",
+      "date": "2020-07-10T07:05:42Z"
+    },
+    {
+      "name": "v3.0.0-beta.1",
+      "sha": "b75e550ad7ed0cae17098a01950c4093f1b907f1",
+      "date": "2020-07-10T07:03:14Z"
+    },
+    {
+      "name": "v3.0.0-alpha.2",
+      "sha": "bc733e8349a1494fbbb7eda131087609e1705e2f",
+      "date": "2020-07-09T08:40:44Z"
+    },
+    {
+      "name": "v3.0.0-alpha.1",
+      "sha": "cd9a191fc8a5dc4d465aea5cbb2239a9ff3dda8f",
+      "date": "2020-07-09T07:04:44Z"
+    },
+    {
+      "name": "v3.0.0-alpha.0",
+      "sha": "ebc8e8110b3d7a6b43c4c71e6f8075748ce778a5",
+      "date": "2020-07-08T05:42:46Z"
+    },
+    {
+      "name": "v2.3.4",
+      "sha": "2bf46931d519f6e098e628a12eb3c1b1e2342079",
+      "date": "2021-01-21T17:56:10Z"
+    },
+    {
+      "name": "v2.3.2",
+      "sha": "7d7a4b6ea2c1681023aaa29ad337a2d9751b2867",
+      "date": "2018-10-28T19:46:51Z"
+    },
+    {
+      "name": "v2.3.3",
+      "sha": "5ed09d96b9a1d95157b066e91d46260f0b723bb8",
+      "date": "2019-06-10T13:26:29Z"
+    },
+    {
+      "name": "v2.3.1",
+      "sha": "ab5481befe23be215379da6faa8d0c789748e436",
+      "date": "2018-05-08T11:00:33Z"
+    },
+    {
+      "name": "v2.3.0",
+      "sha": "413b12323cf98eccc2fb28d43505479ff4e1f194",
+      "date": "2018-04-11T09:02:24Z"
+    },
+    {
+      "name": "v2.2.0",
+      "sha": "a645e185d26a54d576a1e89d62274b6e868d2279",
+      "date": "2018-03-14T07:25:33Z"
+    },
+    {
+      "name": "v2.1.2",
+      "sha": "1df30e677458b66ca31691f42f4a89dc3dafc78d",
+      "date": "2018-02-11T15:19:30Z"
+    },
+    {
+      "name": "v2.1.1",
+      "sha": "f2fb36bff44c0bee1d4ed56314c63d760a9dc6b5",
+      "date": "2018-02-01T07:11:25Z"
+    },
+    {
+      "name": "v2.1.0",
+      "sha": "7507c818fd5e0d6c449bc6d5800f7ffd67c59b9a",
+      "date": "2017-09-18T10:01:44Z"
+    },
+    {
+      "name": "v2.0.0",
+      "sha": "7f13306af657a12bada27d134501dec011219a3b",
+      "date": "2017-07-12T07:19:27Z"
+    },
+    {
+      "name": "v1.3.0",
+      "sha": "4a265a48898de7bfb2cc31c78d7ad8fbfa5a6ceb",
+      "date": "2017-07-07T12:16:32Z"
+    },
+    {
+      "name": "v1.2.2",
+      "sha": "69a12460054724769fea637a9f119b57140f66b3",
+      "date": "2017-06-14T12:56:45Z"
+    },
+    {
+      "name": "v1.2.1",
+      "sha": "ca510d956d4aff97a028a49e580aee81dcf2376b",
+      "date": "2017-06-13T09:51:26Z"
+    },
+    {
+      "name": "v1.2.0",
+      "sha": "c29c7f6e8cff280fca4ef3746e516c00f65b2f02",
+      "date": "2017-02-27T15:44:27Z"
+    },
+    {
+      "name": "v1.1.2",
+      "sha": "e4337d690dbf7b8368119a203a11e47ed98b74ff",
+      "date": "2017-01-18T12:13:48Z"
+    },
+    {
+      "name": "v1.1.0",
+      "sha": "7983751df8f645f10abda17d14e121d776396236",
+      "date": "2016-11-14T12:25:55Z"
+    },
+    {
+      "name": "v1.1.1",
+      "sha": "2d6cda3af1ebe82c56c25158b72fad4ced0d78bd",
+      "date": "2016-11-16T09:07:21Z"
+    },
+    {
+      "name": "v1.0.0",
+      "sha": "d60431f37064bcaf2d3cae64c8d59f1e571a2814",
+      "date": "2016-11-07T13:01:02Z"
+    },
+    {
+      "name": "v0.0.3",
+      "sha": "f6eb166e5647a0ecfab34dd71b7bbeb1dfcefbe5",
+      "date": "2016-09-20T11:41:06Z"
+    },
+    {
+      "name": "v0.0.1",
+      "sha": "94a7afad3031b9264133f40297f0e81de4631f07",
+      "date": "2016-09-14T13:11:40Z"
+    },
+    {
+      "name": "v0.0.2",
+      "sha": "4356398060de2653cecf1bc80bfa2731bb05fee8",
+      "date": "2016-09-15T14:56:31Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v15.6.9",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v15.6.10",
+      "previous_release": "v15.6.9",
+      "commits": [
+        {
+          "sha": "2f9476e12222b2cfcff46f6e9debb8b53dc854fa",
+          "author_date": "2025-09-24T18:30:45Z",
+          "message": "Don't format COLLATE as statement in Transact-SQL\n\nFixes #905",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/2f9476e12222b2cfcff46f6e9debb8b53dc854fa"
+        },
+        {
+          "sha": "8910c5d27680eb4199d3ed3b7f56c2a113c17b86",
+          "author_date": "2025-09-24T18:42:54Z",
+          "message": "Support basic CREATE/DROP/ALTER FUNCTION in Transact-SQL\n\nFixes #865",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/8910c5d27680eb4199d3ed3b7f56c2a113c17b86"
+        },
+        {
+          "sha": "1ef9847185ec0da736c17b963855671896e450c9",
+          "author_date": "2025-09-24T19:03:58Z",
+          "message": "Format CREATE PROCEDURE on a single line\n\nRefs #865",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1ef9847185ec0da736c17b963855671896e450c9"
+        },
+        {
+          "sha": "7138741835c5d426e65c8306a66ad9e532036d9a",
+          "author_date": "2025-10-02T07:45:45Z",
+          "message": "Don't treat sql-formatter-disable blocks as block-comments\n\nFixes #906",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/7138741835c5d426e65c8306a66ad9e532036d9a"
+        },
+        {
+          "sha": "dae29a38c1e008d7bbd52d483c7302aa12e4e4cf",
+          "author_date": "2025-10-02T07:51:41Z",
+          "message": "Release v15.6.10",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/dae29a38c1e008d7bbd52d483c7302aa12e4e4cf"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.6.11",
+      "previous_release": "v15.6.10",
+      "commits": [
+        {
+          "sha": "07ae785257eff641912efddbf70a5b942e796534",
+          "author_date": "2025-10-16T14:48:48Z",
+          "message": "feat: #889 support json schema",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/07ae785257eff641912efddbf70a5b942e796534"
+        },
+        {
+          "sha": "068787e8b98d6bb8238914155ef75a4184abff4c",
+          "author_date": "2025-10-16T17:07:22Z",
+          "message": "fix: custom description, add readme desc",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/068787e8b98d6bb8238914155ef75a4184abff4c"
+        },
+        {
+          "sha": "b9d2db938e6c80da7cd2d888079c8a515419a379",
+          "author_date": "2025-10-16T17:52:45Z",
+          "message": "Support JSON schema (#909)\n\nResolves: #889",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/b9d2db938e6c80da7cd2d888079c8a515419a379"
+        },
+        {
+          "sha": "20fe46e7aaab7b6196cac1ffbf062c73f4b75e2a",
+          "author_date": "2025-10-17T06:16:16Z",
+          "message": "Add Shub to AUTHORS file",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/20fe46e7aaab7b6196cac1ffbf062c73f4b75e2a"
+        },
+        {
+          "sha": "f30e23f2b046352553984b3044904e1a3138697e",
+          "author_date": "2025-10-17T06:18:51Z",
+          "message": "Fix tabWidth docs",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/f30e23f2b046352553984b3044904e1a3138697e"
+        },
+        {
+          "sha": "976f97df76b0d44a77fb37b703d85be889457da8",
+          "author_date": "2025-10-21T11:41:39Z",
+          "message": "Correct dialect option in SQL-Formatter-VSCode settings",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/976f97df76b0d44a77fb37b703d85be889457da8"
+        },
+        {
+          "sha": "5df3046d079c5fabdff1ffced02e953cb66c525d",
+          "author_date": "2025-11-05T06:05:39Z",
+          "message": "Add $schema property to schema.json\n\nAdded $schema property to define schema verification.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/5df3046d079c5fabdff1ffced02e953cb66c525d"
+        },
+        {
+          "sha": "f676e37b393cf6908ea7c09432ed21ec1bf3c9c2",
+          "author_date": "2025-11-05T09:17:18Z",
+          "message": "Add $schema property to schema.json (#919)\n\nThis will allow one to link the schema directly in the file, as\nsupported by editors like VSCode and Zed by default.\n\nExample:\n\n```json\n{\n  \"$schema\": \"https://raw.githubusercontent.com/sql-formatter-org/sql-formatter/refs/heads/master/schema.json\",\n  \"language\": \"sqlite\",\n  \"tabWidth\": 2,\n  \"keywordCase\": \"upper\",\n}\n```",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/f676e37b393cf6908ea7c09432ed21ec1bf3c9c2"
+        },
+        {
+          "sha": "2edffbe15e85bd51646dbc982642343f3fd1fb35",
+          "author_date": "2025-12-10T08:13:18Z",
+          "message": "Format COMMENT ON as keywords\n\nRefs #924",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/2edffbe15e85bd51646dbc982642343f3fd1fb35"
+        },
+        {
+          "sha": "f6d8c8106fec679e513d9198b04b0cb9bd2081a2",
+          "author_date": "2025-12-10T08:18:52Z",
+          "message": "Release v15.6.11",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/f6d8c8106fec679e513d9198b04b0cb9bd2081a2"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.6.12",
+      "previous_release": "v15.6.11",
+      "commits": [
+        {
+          "sha": "9aa93c6b74918b2e04edba7a69560869bc45f102",
+          "author_date": "2025-12-10T08:21:48Z",
+          "message": "Delete empty line in README",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/9aa93c6b74918b2e04edba7a69560869bc45f102"
+        },
+        {
+          "sha": "9b93a91e936f0d5650b7ea1af552219108ce4fc0",
+          "author_date": "2025-12-15T08:28:00Z",
+          "message": "Support UUID functions of PostgreSQL 18\n\nFixes #925",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/9b93a91e936f0d5650b7ea1af552219108ce4fc0"
+        },
+        {
+          "sha": "3c96d067489f6c3b751dfecaa1bbe3281d198b73",
+          "author_date": "2025-12-15T08:31:08Z",
+          "message": "Release v15.6.12",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/3c96d067489f6c3b751dfecaa1bbe3281d198b73"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.7.0",
+      "previous_release": "v15.6.12",
+      "commits": [
+        {
+          "sha": "80f6e1ee8924f50a5efe24ef0cfe76022adb532b",
+          "author_date": "2025-11-14T20:58:59Z",
+          "message": "Add preliminary Clickhouse formatter",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/80f6e1ee8924f50a5efe24ef0cfe76022adb532b"
+        },
+        {
+          "sha": "d457a9833ca9e379d2f9dad1a00a297f18853e8e",
+          "author_date": "2025-11-17T22:38:23Z",
+          "message": "Get formatter working with existing features",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/d457a9833ca9e379d2f9dad1a00a297f18853e8e"
+        },
+        {
+          "sha": "510997c4ae5b5372ccce982b531b1549fe78dca7",
+          "author_date": "2025-11-18T22:57:44Z",
+          "message": "Checkpoint tests",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/510997c4ae5b5372ccce982b531b1549fe78dca7"
+        },
+        {
+          "sha": "be7a20d77a329689049d5761b0c205a6d09ffbfc",
+          "author_date": "2025-11-19T14:56:13Z",
+          "message": "Breaking tests for consistency within Clickhouse formatter",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/be7a20d77a329689049d5761b0c205a6d09ffbfc"
+        },
+        {
+          "sha": "7c4f79821593cb479ce915a54866ebd5066ee02f",
+          "author_date": "2025-12-05T00:56:11Z",
+          "message": "Finish getting the tests together",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/7c4f79821593cb479ce915a54866ebd5066ee02f"
+        },
+        {
+          "sha": "1c19d1a31fdd42dd525d217415e5af5f25c87987",
+          "author_date": "2025-12-05T00:59:27Z",
+          "message": "Cleanup",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1c19d1a31fdd42dd525d217415e5af5f25c87987"
+        },
+        {
+          "sha": "28dd0f0928439370382cc7234155f7c33d763703",
+          "author_date": "2025-12-10T16:53:11Z",
+          "message": "Cleanup from review feedback, WIP",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/28dd0f0928439370382cc7234155f7c33d763703"
+        },
+        {
+          "sha": "ae7ee87546ba9270d6d8097963e93797260e202a",
+          "author_date": "2025-12-10T20:26:37Z",
+          "message": "Clean up keyword vs operator for in/any",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/ae7ee87546ba9270d6d8097963e93797260e202a"
+        },
+        {
+          "sha": "c4bef8879cfca2e8acb920a28e3118c0090e8e58",
+          "author_date": "2025-12-10T21:18:35Z",
+          "message": "Reduce intersection between functions and keywords",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/c4bef8879cfca2e8acb920a28e3118c0090e8e58"
+        },
+        {
+          "sha": "b912e099984eeaa7b30ef7e0b26817fb8a9d558e",
+          "author_date": "2025-12-12T17:50:30Z",
+          "message": "Remove special casing for in()",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/b912e099984eeaa7b30ef7e0b26817fb8a9d558e"
+        },
+        {
+          "sha": "ec1418581f40e5410879b05c666ee567a2cd8a5c",
+          "author_date": "2026-01-09T17:59:02Z",
+          "message": "Changes from feedback",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/ec1418581f40e5410879b05c666ee567a2cd8a5c"
+        },
+        {
+          "sha": "d3060a46daeeca2cf9e7c07bbf667b98b15226a5",
+          "author_date": "2026-01-10T00:06:47Z",
+          "message": "Parens, map literals",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/d3060a46daeeca2cf9e7c07bbf667b98b15226a5"
+        },
+        {
+          "sha": "1c642737a60645dfe83ae7d2efba7d814d043e73",
+          "author_date": "2026-01-10T00:08:44Z",
+          "message": "Lint and check prettier in CI",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1c642737a60645dfe83ae7d2efba7d814d043e73"
+        },
+        {
+          "sha": "7312aee625e9d2ab66fd0fb3766fb987db618ba7",
+          "author_date": "2026-01-14T21:00:12Z",
+          "message": "Add Clickhouse formatter (#922)\n\nAddresses https://github.com/sql-formatter-org/sql-formatter/issues/614",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/7312aee625e9d2ab66fd0fb3766fb987db618ba7"
+        },
+        {
+          "sha": "fa8cb46a9afd36b3e832bf278acc28d48e4da3e7",
+          "author_date": "2026-01-14T21:07:59Z",
+          "message": "Update documentation to include Clickhouse dialect everywhere",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/fa8cb46a9afd36b3e832bf278acc28d48e4da3e7"
+        },
+        {
+          "sha": "519997fe5b86106942fb1fa95ec8ee07fba9e0da",
+          "author_date": "2026-01-14T21:08:39Z",
+          "message": "Add Clickhouse to demo page language dropdown",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/519997fe5b86106942fb1fa95ec8ee07fba9e0da"
+        },
+        {
+          "sha": "7751899813cf7c9b6c52e5642541a8a03365b4ef",
+          "author_date": "2026-01-14T21:13:22Z",
+          "message": "Release v15.7.0",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/7751899813cf7c9b6c52e5642541a8a03365b4ef"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.7.1",
+      "previous_release": "v15.7.0",
+      "commits": [
+        {
+          "sha": "3418f7144a495657b91d0b11ff3d276479102d4a",
+          "author_date": "2026-01-14T21:17:59Z",
+          "message": "Add Matt Basta to AUTHORS file",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/3418f7144a495657b91d0b11ff3d276479102d4a"
+        },
+        {
+          "sha": "bda3c29b9ef4204fda11a8e6e8a8b1241dcdf91f",
+          "author_date": "2026-01-30T17:07:05Z",
+          "message": "Link from CONTRIBUTING.md to prettier-plugin-sql-cst",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/bda3c29b9ef4204fda11a8e6e8a8b1241dcdf91f"
+        },
+        {
+          "sha": "3a1a7a82b61194c2af871d44acfe1124b3b07206",
+          "author_date": "2026-02-13T18:19:19Z",
+          "message": "Remove multi-word functions names from MySQL\n\nFixes #933",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/3a1a7a82b61194c2af871d44acfe1124b3b07206"
+        },
+        {
+          "sha": "6291ebb1f91e9f5dc623e22a7747ae9e51a33bdb",
+          "author_date": "2026-02-13T18:22:51Z",
+          "message": "Release v15.7.1",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/6291ebb1f91e9f5dc623e22a7747ae9e51a33bdb"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.7.2",
+      "previous_release": "v15.7.1",
+      "commits": [
+        {
+          "sha": "cd6db25280cc56a7a6af368ac007233b3b6dd32b",
+          "author_date": "2026-02-17T11:43:58Z",
+          "message": "Support CORRESPONDING keyword on Trino set operations\n\nFixes #934",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/cd6db25280cc56a7a6af368ac007233b3b6dd32b"
+        },
+        {
+          "sha": "a9849494212c0a61fb6b0c1461db84e93ab2ac96",
+          "author_date": "2026-02-17T11:47:06Z",
+          "message": "Release v15.7.2",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a9849494212c0a61fb6b0c1461db84e93ab2ac96"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.7.3",
+      "previous_release": "v15.7.2",
+      "commits": [
+        {
+          "sha": "74c83cd65f9ba18fccc65ddccbc8ed22f839d152",
+          "author_date": "2026-03-19T04:54:17Z",
+          "message": "Add the missing OPENJSON in the Transact-SQL function",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/74c83cd65f9ba18fccc65ddccbc8ed22f839d152"
+        },
+        {
+          "sha": "954e5a474b9e3d45ca58f02a3a4eac8e1947acc5",
+          "author_date": "2026-03-19T06:43:10Z",
+          "message": "Add the missing OPENJSON in the Transact-SQL function (#937)",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/954e5a474b9e3d45ca58f02a3a4eac8e1947acc5"
+        },
+        {
+          "sha": "a45ab63c11668ae6603f057584cef9ebe5cb1a6d",
+          "author_date": "2026-03-27T20:48:12Z",
+          "message": "Add missing PostgreSQL operators and fix >^ geometric operator\n\nAdds support for several PostgreSQL operators from core and popular\nextensions that were previously being split into shorter tokens:\n\n- <@> (earthdistance distance)\n- &&& (PostGIS 3D bounding box overlap)\n- |=| (PostGIS closest point of approach distance)\n- ~> (cube coordinate extraction)\n- #= (hstore replace fields)\n\nAlso fixes the geometric \"is above\" operator which was incorrectly\ndefined as ^> instead of >^ per the PostgreSQL docs.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a45ab63c11668ae6603f057584cef9ebe5cb1a6d"
+        },
+        {
+          "sha": "e920b72d61a9ceae49c9bb10570b3c168e28ee53",
+          "author_date": "2026-03-28T07:57:48Z",
+          "message": "Add Matthew Rathbone to AUTHORS",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/e920b72d61a9ceae49c9bb10570b3c168e28ee53"
+        },
+        {
+          "sha": "dad4d75e66c189fc0fb2d279ec898b80f2fef9df",
+          "author_date": "2026-03-28T08:01:08Z",
+          "message": "Groups PostGIS operators together",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/dad4d75e66c189fc0fb2d279ec898b80f2fef9df"
+        },
+        {
+          "sha": "e8d4518056f22bfc8f1e18de6c42618ff6b6d480",
+          "author_date": "2026-03-28T08:01:39Z",
+          "message": "Delete unnecessary operator tests",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/e8d4518056f22bfc8f1e18de6c42618ff6b6d480"
+        },
+        {
+          "sha": "911bfb0c8dd74d5c4ba25c603d1de2dc2874e923",
+          "author_date": "2026-03-28T08:12:11Z",
+          "message": "Format TIMESTAMP WITH TIME ZONE in Trino\n\nFixes #936",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/911bfb0c8dd74d5c4ba25c603d1de2dc2874e923"
+        },
+        {
+          "sha": "baf6cba99799586353b3319feb7e00c05146b4a3",
+          "author_date": "2026-03-28T08:15:46Z",
+          "message": "Release v15.7.3",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/baf6cba99799586353b3319feb7e00c05146b4a3"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.7.4",
+      "previous_release": "v15.7.3",
+      "commits": [
+        {
+          "sha": "a66b90020b7373155aa2e95a1bdc7d18055ae601",
+          "author_date": "2026-03-28T08:21:00Z",
+          "message": "Add nuintun to AUTHORS",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a66b90020b7373155aa2e95a1bdc7d18055ae601"
+        },
+        {
+          "sha": "1729b55597e15ce7c2cb55f71b8804513d10aecb",
+          "author_date": "2026-05-12T07:15:23Z",
+          "message": "fix(sqlite): support Tcl-style $param(...) syntax\n\nSQLite's $-prefixed placeholder follows Tcl variable syntax, allowing one\nor more '::'-separated suffixes and an optional '(...)' trailer.\n\nCloses #943",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1729b55597e15ce7c2cb55f71b8804513d10aecb"
+        },
+        {
+          "sha": "37b69eed8948c5e081f029bef85ec7e97f861cfa",
+          "author_date": "2026-05-12T10:36:08Z",
+          "message": "Add Sai Asish Y to AUTHORS",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/37b69eed8948c5e081f029bef85ec7e97f861cfa"
+        },
+        {
+          "sha": "995291c30b42b119abeb4141dba8d952c961108c",
+          "author_date": "2026-05-12T10:36:33Z",
+          "message": "fix(sqlite): support Tcl-style $param(...) syntax (#944)",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/995291c30b42b119abeb4141dba8d952c961108c"
+        },
+        {
+          "sha": "7bdeba552e0bc63681e7ce1bf2a95bbf3c3b7401",
+          "author_date": "2026-05-12T10:38:28Z",
+          "message": "Release v15.7.4",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/7bdeba552e0bc63681e7ce1bf2a95bbf3c3b7401"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.8.0",
+      "previous_release": "v15.7.4",
+      "commits": [
+        {
+          "sha": "7d4683fe488118ce6decf618d5512dc32f5b3e99",
+          "author_date": "2026-05-14T08:58:29Z",
+          "message": "Add packageManager field to package.json",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/7d4683fe488118ce6decf618d5512dc32f5b3e99"
+        },
+        {
+          "sha": "fb4a8e39547b84dc863f96b72953d982509d9104",
+          "author_date": "2026-05-14T09:49:02Z",
+          "message": "Switch to devEngines.packageManager for npm compatibility",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/fb4a8e39547b84dc863f96b72953d982509d9104"
+        },
+        {
+          "sha": "ccbb789a9cbb84be6be5926b3c635f51e839ba3d",
+          "author_date": "2026-05-14T09:51:40Z",
+          "message": "Fix JSON",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/ccbb789a9cbb84be6be5926b3c635f51e839ba3d"
+        },
+        {
+          "sha": "c302ee655d989d08703062c1a9d3b9753d27e37b",
+          "author_date": "2026-05-14T09:58:53Z",
+          "message": "Remove config for CodeSandbox CI",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/c302ee655d989d08703062c1a9d3b9753d27e37b"
+        },
+        {
+          "sha": "21006049e2aab96c7bc6fd5e9f02049c90dc684e",
+          "author_date": "2026-05-14T11:01:38Z",
+          "message": "Remove config for CodeSandbox CI (#946)\n\n[CodeSandbox CI is being\ndiscontinued](https://news.ycombinator.com/item?id=47418491#:~:text=CodeSandbox%20CI%3A%20Shutting%20down%20on%20April%2015%2C%202026.%20Migrate%20to%20an%20alternative%20CI%20provider%20before%20then)\nand its environment is stuck on Node.js v20, which is ancient and\nincompatible with an increasing range of new libraries.\n\n- [x] Remove CodeSandbox CI config\n- [x] Remove CodeSandbox CI app (in [`sql-formatter-org` GitHub Apps\nsettings](https://github.com/organizations/sql-formatter-org/settings/installations),\nprobably needs @nene)\n- [ ] Decide on a replacement, if any\n\n## Retaining the functionality\n\nFor Preflight, we switched to Git exotic sources (eg. `pnpm add\n\"upleveled/preflight#switch-codesandbox-to-pnpm-github-urls\"`), but this\nwas possible because we have no build step:\n\n- https://github.com/upleveled/preflight/pull/739\n\nI'm guessing this is not possible for `sql-formatter`, at least how it\nis currently set up.\n\nSo another option would be `pkg.pr.new` from StackBlitz:\n\n- https://pkg.pr.new/",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/21006049e2aab96c7bc6fd5e9f02049c90dc684e"
+        },
+        {
+          "sha": "04a43a30e89fc5e00c35e0be1c18f5791e2a6ef3",
+          "author_date": "2026-05-14T11:03:09Z",
+          "message": "Merge branch 'master' into add-packageManager-field-to-package.json",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/04a43a30e89fc5e00c35e0be1c18f5791e2a6ef3"
+        },
+        {
+          "sha": "acdb53431d25eb7fd306772849d32a00ac53fd8b",
+          "author_date": "2026-05-14T11:05:55Z",
+          "message": "Add `devEngines.packageManager` field to package.json (#945)\n\nHi @nene 👋 Hope thing are good 🙂 \n\n## Problem\n\nI was cloning the repo again and when I tried to use `yarn` to install\ndependencies (because I saw the `yarn.lock` file, Yarn 4.13.0 was\nselected by Corepack on my machine:\n\n```bash\n➜  sql-formatter git:(master) yarn\n➤ [YN0065](https://yarnpkg.com/advanced/error-codes#yn0065---telemetry_notice): Yarn will periodically gather anonymous telemetry: https://yarnpkg.com/advanced/telemetry\n➤ [YN0065](https://yarnpkg.com/advanced/error-codes#yn0065---telemetry_notice): Run yarn config set --home enableTelemetry 0 to disable\n\n➤ [YN0087](https://yarnpkg.com/advanced/error-codes#yn0087---migration_success): Migrated your project to the latest Yarn version 🚀\n\n➤ YN0000: · Yarn 4.13.0\n➤ YN0000: ┌ Resolution step\n➤ [YN0085](https://yarnpkg.com/advanced/error-codes#yn0085---updated_resolution_record): │ + @babel/cli@npm:7.25.9, @babel/core@npm:7.26.0, @babel/plugin-proposal-class-properties@npm:7.18.6, @babel/preset-env@npm:7.26.0, and 931 more.\n➤ YN0000: └ Completed in 2s 905ms\n➤ YN0000: ┌ Post-resolution validation\n➤ [YN0086](https://yarnpkg.com/advanced/error-codes#yn0086---explain_peer_dependencies_cta): │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.\n➤ YN0000: └ Completed\n➤ YN0000: ┌ Fetch step\n➤ [YN0013](https://yarnpkg.com/advanced/error-codes#yn0013---fetch_not_cached): │ 935 packages were added to the project (+ 237.88 MiB).\n➤ YN0000: └ Completed in 3s 341ms\n➤ YN0000: ┌ Link step\n➤ YN0000: └ Completed in 2s 915ms\n➤ YN0000: · Done with warnings in 9s 283ms\n```\n\nI think this is probably not the correct package manager - the project\nintends to use Yarn v1, right?\n\n## Solution\n\nThis PR specifies `yarn@1.22.22` in [the `devEngines.packageManager`\nfield](https://docs.npmjs.com/cli/v11/configuring-npm/package-json#devengines)\nof `package.json, to enable the following behavior:\n\n1. If Corepack is installed:\n   1. block usage of incorrect package manager\n2. download and install correct version of `yarn` upon command execution\n2. Without Corepack, if user runs `npm install`:\n1. Will be blocked with an `Invalid devEngines.packageManager` error\nmessage:\n      ```bash\n      $ npm info\n      npm error code EBADDEVENGINES\nnpm error EBADDEVENGINES The developer of this package has specified the\nfollowing through devEngines\n      npm error EBADDEVENGINES Invalid devEngines.packageManager\nnpm error EBADDEVENGINES Invalid name \"yarn\" does not match \"npm\" for\n\"packageManager\"\n      npm error EBADDEVENGINES {\nnpm error EBADDEVENGINES current: { name: 'npm', version: '11.6.2' },\n      npm error EBADDEVENGINES   required: {\n      npm error EBADDEVENGINES     name: 'yarn',\nnpm error EBADDEVENGINES version:\n'1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e'\n      npm error EBADDEVENGINES   }\n      npm error EBADDEVENGINES }\n      npm error A complete log of this run can be found in: ...\n      ```\n3. Without Corepack, if a user runs an invalid version of Yarn (eg.\n`yarn@1.22.21`) then nothing will happen. However, this is an unlikely\nsetup, since Yarn's installation docs start with installing Corepack.\n\nBefore (with `corepack@0.34.5`):\n\n```bash\n$ yarn -v\n4.13.0\n```\n\nAfter (with `corepack@0.34.5`):\n\n```bash\n$ yarn -v\n1.22.22\n```\n\n### Isn't Corepack going away?\n\nI'm aware that [Corepack is going away in Node.js\nv25+](https://github.com/nodejs/nodejs.org/issues/7555), but it's still\nrecommended on:\n\n1. The Node.js download page when selecting Yarn or pnpm:\nhttps://nodejs.org/en/download (PR:\nhttps://github.com/nodejs/nodejs.org/pull/8128 )\n2. The Yarn classic and modern installation guides:\nhttps://classic.yarnpkg.com/lang/en/docs/install/ and\nhttps://yarnpkg.com/getting-started/install\n3. The pnpm installation guide:\nhttps://pnpm.io/installation#using-corepack\n\n## Alternatives considered\n\nI also considered [the top-level `packageManager`\nfield](https://github.com/nodejs/corepack/blob/964d8cfaba59641128f8147668abca70bdfbac2b/README.md#when-authoring-packages),\nbut npm doesn't support or document this field, and it's considered as\nlegacy by some in the package manager space.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/acdb53431d25eb7fd306772849d32a00ac53fd8b"
+        },
+        {
+          "sha": "1d386382515611e6f0e4da158da6a233af93eda2",
+          "author_date": "2026-05-14T11:23:50Z",
+          "message": "Add support for PostgreSQL keyword phrases in CREATE CONSTRAINT TRIGGER",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1d386382515611e6f0e4da158da6a233af93eda2"
+        },
+        {
+          "sha": "2a9a404df2d2d30651dcfb7a5b2bb7d74112a6ea",
+          "author_date": "2026-05-14T11:36:57Z",
+          "message": "Add mixed case\n\nCo-authored-by: coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/2a9a404df2d2d30651dcfb7a5b2bb7d74112a6ea"
+        },
+        {
+          "sha": "307fe6e83869ff032d84b4bce2dbcdec231790ee",
+          "author_date": "2026-05-14T11:39:28Z",
+          "message": "Revert import diff",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/307fe6e83869ff032d84b4bce2dbcdec231790ee"
+        },
+        {
+          "sha": "b7e6ade4d2c9f7bddd3017e0a23c72430804dec4",
+          "author_date": "2026-05-14T16:10:19Z",
+          "message": "Use PostgreSQL trigger event phrases instead of standalone keywords",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/b7e6ade4d2c9f7bddd3017e0a23c72430804dec4"
+        },
+        {
+          "sha": "0668f33f203f74818d8f914bbea9f5f99002b951",
+          "author_date": "2026-05-14T17:02:04Z",
+          "message": "Extend DEFERRABLE syntax\n\nCo-authored-by: Copilot Autofix powered by AI <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/0668f33f203f74818d8f914bbea9f5f99002b951"
+        },
+        {
+          "sha": "2017285c6a61e594fc397325b9f5daf359f957ef",
+          "author_date": "2026-05-14T20:10:07Z",
+          "message": "Add support for PostgreSQL keywords in CREATE CONSTRAINT TRIGGER (#948)\n\nConfig:\n\n```js\nlanguage: 'postgresql',\nkeywordCase: 'upper',\nidentifierCase: 'lower',\n```\n\nBefore:\n\n```sql\nCREATE CONSTRAINT TRIGGER example_trigger\nAFTER insert\nOR\nUPDATE of column_a,\ncolumn_b ON example_table DEFERRABLE INITIALLY deferred FOR each ROW\nEXECUTE procedure example_function ();\n\nCREATE TRIGGER example_trigger\nAFTER insert\nOR\nUPDATE\nOR delete ON example_table FOR each ROW\nEXECUTE function example_function ();\n```\n\nAfter:\n\n```sql\nCREATE CONSTRAINT TRIGGER example_trigger\nAFTER INSERT OR UPDATE OF column_a,\ncolumn_b ON example_table\nDEFERRABLE INITIALLY DEFERRED FOR EACH ROW\nEXECUTE PROCEDURE example_function ();\n\nCREATE TRIGGER example_trigger\nAFTER INSERT OR UPDATE OR DELETE ON example_table FOR EACH ROW\nEXECUTE FUNCTION example_function ();\n```\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n## Summary by CodeRabbit\n\n* **Bug Fixes**\n* PostgreSQL formatting now recognizes additional reserved multi-word\nphrases and variants (improves handling of trigger/constraint event\nclauses, EXECUTE forms, AFTER/DEFERRABLE variants, and FOR EACH ROW) for\nmore accurate SQL output.\n\n* **Tests**\n* Added regression tests verifying CREATE CONSTRAINT/TRIGGER formatting\nand correct casing preservation for keywords and identifiers.\n\n<!-- review_stack_entry_start -->\n\n[![Review Change\nStack](https://storage.googleapis.com/coderabbit_public_assets/review-stack-in-coderabbit-ui.svg)](https://app.coderabbit.ai/change-stack/sql-formatter-org/sql-formatter/pull/948)\n\n<!-- review_stack_entry_end -->\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/2017285c6a61e594fc397325b9f5daf359f957ef"
+        },
+        {
+          "sha": "71b0abce652945bb73716a35a86989551858d156",
+          "author_date": "2026-05-14T13:07:21Z",
+          "message": "Switch from yarn@1.22.22 to pnpm@11.0.8",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/71b0abce652945bb73716a35a86989551858d156"
+        },
+        {
+          "sha": "1b71182285db5898e637cd66221db2cb70c79056",
+          "author_date": "2026-05-14T13:32:50Z",
+          "message": "Order alphabetically, add links",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1b71182285db5898e637cd66221db2cb70c79056"
+        },
+        {
+          "sha": "0b512da1de08d835a7385e80ac4bbdc26f2a73ae",
+          "author_date": "2026-05-14T13:34:06Z",
+          "message": "Remove pnpm code block from readme",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/0b512da1de08d835a7385e80ac4bbdc26f2a73ae"
+        },
+        {
+          "sha": "1b157801684a53752432c460e02ea2c3aaed8141",
+          "author_date": "2026-05-14T13:47:06Z",
+          "message": "Fix pnpm setup in CI",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1b157801684a53752432c460e02ea2c3aaed8141"
+        },
+        {
+          "sha": "a0411aa852115a755b1fce0ca69533933adfdc21",
+          "author_date": "2026-05-14T13:49:55Z",
+          "message": "Remove superfluous --frozen-lockfile flag",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a0411aa852115a755b1fce0ca69533933adfdc21"
+        },
+        {
+          "sha": "31274c075f8ea13440024e0f7e3e0ffbf9eaa5b7",
+          "author_date": "2026-05-14T14:01:52Z",
+          "message": "Work around pnpm/action-setup@6 version bug",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/31274c075f8ea13440024e0f7e3e0ffbf9eaa5b7"
+        },
+        {
+          "sha": "4459421180ec74448133b854dae6182dcad1c120",
+          "author_date": "2026-05-14T14:04:20Z",
+          "message": "Remove periods",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/4459421180ec74448133b854dae6182dcad1c120"
+        },
+        {
+          "sha": "e40ed4827f7951bb67171891b7bda100d4cd44c7",
+          "author_date": "2026-05-14T14:08:08Z",
+          "message": "Fix pnpm version extraction in CI",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/e40ed4827f7951bb67171891b7bda100d4cd44c7"
+        },
+        {
+          "sha": "13aa127b7a8b3ab5f875f636d08d6674af8e7de7",
+          "author_date": "2026-05-14T20:42:57Z",
+          "message": "Unconfigure `pmOnFail` back to default `'download'`",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/13aa127b7a8b3ab5f875f636d08d6674af8e7de7"
+        },
+        {
+          "sha": "78b508bbc81e3b12404ec6aed5521a3a3dc574fc",
+          "author_date": "2026-05-14T21:01:32Z",
+          "message": "Remove erroneous and superfluous settings",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/78b508bbc81e3b12404ec6aed5521a3a3dc574fc"
+        },
+        {
+          "sha": "b1d7dc651f3aefcbd2103ec35ad0d42c462403c2",
+          "author_date": "2026-05-15T10:06:47Z",
+          "message": "Add comments for trustPolicyExclude entries",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/b1d7dc651f3aefcbd2103ec35ad0d42c462403c2"
+        },
+        {
+          "sha": "ce140ed7a4c23765201c67eb22493e7dc6e90624",
+          "author_date": "2026-05-17T09:43:10Z",
+          "message": "Switch to trustPolicyIgnoreAfter",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/ce140ed7a4c23765201c67eb22493e7dc6e90624"
+        },
+        {
+          "sha": "dcee63f96d576ed828dd5af67d26ee9a3728e2db",
+          "author_date": "2026-05-17T12:12:22Z",
+          "message": "Work around pnpm bug with pmOnFail + devEngines.packageManager",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/dcee63f96d576ed828dd5af67d26ee9a3728e2db"
+        },
+        {
+          "sha": "ba7437e24b51bb7c5cf38dfcc9f4e58a5dc7fab5",
+          "author_date": "2026-05-17T12:15:32Z",
+          "message": "Ignore pnpm-lock.yaml from Prettier",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/ba7437e24b51bb7c5cf38dfcc9f4e58a5dc7fab5"
+        },
+        {
+          "sha": "af633e85fb684650ee7e3b48f1a9dcd897dc050e",
+          "author_date": "2026-05-17T12:26:02Z",
+          "message": "Switch from yarn@1.22.22 to pnpm@11.0.8 (#949)\n\nSwitch from yarn@1.22.22 to pnpm@11.0.8, as per\nhttps://github.com/sql-formatter-org/sql-formatter/pull/945#issuecomment-4450261762.\n\nThis also pins `@types/node@22.9.0`, matching the version previously\nresolved through `yarn.lock`. Without the pin, pnpm resolves\n`@types/node@25.6.0`, which TypeScript 4.9 cannot check. The observed\ndiagnostics:\n\n- `error TS1165: A computed property name in an ambient context must\nrefer to an expression whose type is a literal type or a 'unique symbol'\ntype`\n- `error TS2339: Property 'dispose' does not exist on type\n'SymbolConstructor'`\n- `error TS2726: Cannot find lib definition for 'esnext.disposable'`\n\nInstall pnpm via the methods on the installation page:\n\n- https://pnpm.io/installation\n\nTODO:\n\n- [x] Delete `yarn.lock`\n- [x] Generate `pnpm-lock.yaml`\n- [x] Update package scripts from Yarn commands to pnpm commands\n- [x] Update GitHub Actions from Yarn commands to pnpm commands\n- [x] Update contributor docs from Yarn commands to pnpm commands\n- [x] Remove the README install example with Yarn\n- [x] Update CI from Node 18 to Node 22 for pnpm 11 compatibility\n- [x] Enable pnpm dependency caching in CI\n- [x] Pin `devEngines.packageManager` to `pnpm@11.0.8`\n- [x] Pin `@types/node@22.9.0`\n- [x] Verify dependencies before scripts with `verifyDepsBeforeRun:\nerror`\n- [x] Declare the root workspace package with `packages: ['.']`\n- [x] Block packages newer than seven days with `minimumReleaseAge:\n10080`\n- [x] Apply release-age checks strictly with `minimumReleaseAgeStrict:\ntrue`\n- [x] Treat missing publish times as unsafe with\n`minimumReleaseAgeIgnoreMissingTime: false`\n- [x] Prevent trust downgrades with `trustPolicy: no-downgrade`\n- [x] Allow the trust-policy exception `eslint-config-prettier@8.10.2`\n- [x] Allow the trust-policy exception `eslint-plugin-prettier@4.2.5`\n- [x] Allow the trust-policy exception `semver@5.7.2 || 6.3.1`\n- [x] Allow the trust-policy exception `undici-types@6.19.8`\n- [x] Block exotic subdependencies with `blockExoticSubdeps: true`\n\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n## Summary by CodeRabbit\n\n* **Chores**\n  * Updated CI and project tooling to Node.js 22.x.\n* Migrated package management from Yarn to pnpm across CI, scripts, and\nproject config.\n* Added a pnpm workspace with stricter dependency and verification\npolicies.\n* Updated developer scripts and bumped dev tooling/type dependency\nversions.\n\n* **Documentation**\n* Updated install and contribution instructions to reflect pnpm and\nNode.js 22.x.\n\n<!-- review_stack_entry_start -->\n\n[![Review Change\nStack](https://storage.googleapis.com/coderabbit_public_assets/review-stack-in-coderabbit-ui.svg)](https://app.coderabbit.ai/change-stack/sql-formatter-org/sql-formatter/pull/949)\n\n<!-- review_stack_entry_end -->\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/af633e85fb684650ee7e3b48f1a9dcd897dc050e"
+        },
+        {
+          "sha": "6610b6a65a1f7a3654d45bc6100a897649b3136d",
+          "author_date": "2026-05-17T12:33:00Z",
+          "message": "Add pnpm to lockfile",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/6610b6a65a1f7a3654d45bc6100a897649b3136d"
+        },
+        {
+          "sha": "34fe5b080c11b1cecbe3a0c5d8b89ed8a62941ef",
+          "author_date": "2026-05-17T12:37:12Z",
+          "message": "Fix scripts using -- (pnpm interprets this as file name)",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/34fe5b080c11b1cecbe3a0c5d8b89ed8a62941ef"
+        },
+        {
+          "sha": "1a000ca83e2e30999f222193ef28c14a949998a2",
+          "author_date": "2026-05-17T17:49:55Z",
+          "message": "Configure release-it to use pnpm",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1a000ca83e2e30999f222193ef28c14a949998a2"
+        },
+        {
+          "sha": "5ab2c8019f9d09ccf3df388d74672821b27ce241",
+          "author_date": "2026-05-17T17:35:19Z",
+          "message": "Add release-it-pnpm",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/5ab2c8019f9d09ccf3df388d74672821b27ce241"
+        },
+        {
+          "sha": "dab8693b1728696981f3db9b0780b8a7229687c3",
+          "author_date": "2026-05-17T17:55:39Z",
+          "message": "Add release-it-pnpm as plugin to release-it",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/dab8693b1728696981f3db9b0780b8a7229687c3"
+        },
+        {
+          "sha": "a7f50d8a68f667b90cfd4e75b1fd683e67413a89",
+          "author_date": "2026-05-17T18:00:44Z",
+          "message": "Add tagName config to release-it",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a7f50d8a68f667b90cfd4e75b1fd683e67413a89"
+        },
+        {
+          "sha": "a3bfeeb4e96415efe4820a1b2c7ed592384aa0be",
+          "author_date": "2026-05-17T18:02:54Z",
+          "message": "Release v15.8.0",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a3bfeeb4e96415efe4820a1b2c7ed592384aa0be"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.8.1",
+      "previous_release": "v15.8.0",
+      "commits": [
+        {
+          "sha": "2b70a665025e1c6c4f1d310a540acb4b7b7616fe",
+          "author_date": "2026-06-03T07:15:04Z",
+          "message": "fix: keep leading block comment of clause item on its own line\n\nA block comment placed before the first item of a clause (e.g.\n`SELECT /* c */ foo FROM tbl`) was formatted inline on the first pass,\nbut moved onto its own line when the result was formatted again, making\nformatting non-idempotent.\n\nThe inline-vs-standalone decision for a block comment was based solely on\nits `precedingWhitespace`. The formatter always emits a newline before the\nfirst item of a clause body, so on a second pass that structural newline\nbecomes the comment's preceding whitespace and flips the decision.\n\nTreat a block comment as standalone whenever it is already at the start of\na line in the output being built, in addition to the existing checks. This\nmakes the first pass place such comments on their own line directly, so the\noutput is stable under repeated formatting. Inline block comments that\nfollow other tokens on the same line (trailing comments, comments between a\nfunction name and its parentheses, or around the `.` of a qualified name)\nare unaffected.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/2b70a665025e1c6c4f1d310a540acb4b7b7616fe"
+        },
+        {
+          "sha": "54d4cf2bbd6a42e3b2bd1563f9d6738aee65eefa",
+          "author_date": "2026-06-03T10:51:19Z",
+          "message": "test: cover block comments in more clause positions",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/54d4cf2bbd6a42e3b2bd1563f9d6738aee65eefa"
+        },
+        {
+          "sha": "953f228c994b9dd30cb60dfe47e44a7ed07cf288",
+          "author_date": "2026-06-04T18:34:29Z",
+          "message": "Reorganize idempotent comment tests\n\nMake it visible how the SQL gets actually formatted, not just that\nit doesn't change.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/953f228c994b9dd30cb60dfe47e44a7ed07cf288"
+        },
+        {
+          "sha": "71c0835fbfd8fa68cb0a007f8c7a9f415bf81b1a",
+          "author_date": "2026-06-04T18:42:32Z",
+          "message": "Rewrite comment inside isStandaloneBlockComment()",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/71c0835fbfd8fa68cb0a007f8c7a9f415bf81b1a"
+        },
+        {
+          "sha": "f9304a6ac14100930f3efd03f0e8f5e0829dd0a4",
+          "author_date": "2026-06-04T18:44:20Z",
+          "message": "Add Sarath Francis to AUTHORS",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/f9304a6ac14100930f3efd03f0e8f5e0829dd0a4"
+        },
+        {
+          "sha": "502224cdebc30288721f5a1f20c2400fbd46a775",
+          "author_date": "2026-06-04T18:44:59Z",
+          "message": "Merge branch 'fix-block-comment-idempotency'",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/502224cdebc30288721f5a1f20c2400fbd46a775"
+        },
+        {
+          "sha": "b6f936d8c95455f0d181898c0193b4353261030a",
+          "author_date": "2026-06-04T19:00:13Z",
+          "message": "Turn off verifyDepsBeforeRun\n\nThis is very annoying because it also fails the build when the version\nof sql-formatter itself has changed. That's just plain stupid.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/b6f936d8c95455f0d181898c0193b4353261030a"
+        },
+        {
+          "sha": "f3707ba179fac6bee8489144cbd66ed7038530dd",
+          "author_date": "2026-06-04T19:13:08Z",
+          "message": "Release 15.8.1",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/f3707ba179fac6bee8489144cbd66ed7038530dd"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.8.2",
+      "previous_release": "v15.8.1",
+      "commits": [
+        {
+          "sha": "68e8f7194685d55567d65636c6a0ba28a1185eed",
+          "author_date": "2026-06-12T10:53:05Z",
+          "message": "fix: keep spaces around - operator in dialects with dashed identifiers\n\nIn BigQuery (and any dialect allowing dashes inside identifiers) the\ndenseOperators option turned \"a - b\" into \"a-b\", which then re-parses\nas a single dashed identifier - corrupting the query. Skip densing the\n\"-\" operator for those dialects so the output round-trips.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/68e8f7194685d55567d65636c6a0ba28a1185eed"
+        },
+        {
+          "sha": "311c47841bd6a14f4429545ff13564b8358f11e2",
+          "author_date": "2026-06-21T10:23:00Z",
+          "message": "fix: keep spaces around - operator in dialects with dashed identifiers (#953)\n\nWith `denseOperators: true` on BigQuery, a subtraction like `a - b`\ncomes out as `a-b`. That's not just ugly: BigQuery allows dashes inside\nidentifiers, so the densed output re-parses as a single identifier\n`a-b`, and `format(format(sql))` no longer matches `format(sql)`. `a -\nfoo(y)` is worse — it becomes `a-foo (y)`, turning the expression into\nan identifier followed by a call.\n\nThe fix is to leave the `-` operator spaced in dialects that allow\ndashed identifiers (currently just BigQuery). I derived that flag from\nthe existing `identChars.dashes` tokenizer option so there's a single\nsource of truth. Numeric cases like `1 - 2` were already safe (the `-`\nis parsed into the literal), so this only affects the identifier case.\n\nThe shared dense-operator test in `operators.ts` was actually asserting\nthe broken `foo-bar` output for BigQuery; I scoped that to the\ndashed-identifier dialects and added a BigQuery regression test.\n\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **Bug Fixes**\n* Fixed formatting of the `-` operator in dialects that support dashes\nin identifiers, such as BigQuery. When dense operator formatting is\nenabled, spaces around the `-` operator are now properly preserved to\nprevent expressions from being incorrectly merged into dashed\nidentifiers.\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/311c47841bd6a14f4429545ff13564b8358f11e2"
+        },
+        {
+          "sha": "7d5803238f3a898eb88906b0138bf92edfdfd5f4",
+          "author_date": "2026-06-21T10:48:35Z",
+          "message": "Release 15.8.2",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/7d5803238f3a898eb88906b0138bf92edfdfd5f4"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v15.9.0",
+      "previous_release": "v15.8.2",
+      "commits": [
+        {
+          "sha": "327ea5c582e1065c34e2a62f14d322751c905e0e",
+          "author_date": "2026-06-21T17:00:04Z",
+          "message": "Improve Coderabbit config with .coderabbit.yaml",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/327ea5c582e1065c34e2a62f14d322751c905e0e"
+        },
+        {
+          "sha": "a1dc3d8a4e21d7b1613337f1ab468b3eb9b4918b",
+          "author_date": "2026-06-21T17:03:14Z",
+          "message": "Fix schema URL",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a1dc3d8a4e21d7b1613337f1ab468b3eb9b4918b"
+        },
+        {
+          "sha": "052832c5672288df667efe62ba68ecde8a775d38",
+          "author_date": "2026-06-21T17:10:19Z",
+          "message": "Disable useless fortune and ASCII art/emoji",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/052832c5672288df667efe62ba68ecde8a775d38"
+        },
+        {
+          "sha": "c087896369538d12ff398cd3e065efdf12cbbcda",
+          "author_date": "2026-06-21T19:13:35Z",
+          "message": "Improve Coderabbit config with .coderabbit.yaml (#955)\n\nAddress @nene's feedback in\nhttps://github.com/sql-formatter-org/sql-formatter/issues/947#issuecomment-4761681667\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai\n-->\n## Summary by CodeRabbit\n\n* **Chores**\n* Updated code review tool configuration settings (including review and\nchat features) to better control the format and focus of automated\nassistance.\n\n**Note:** This release contains no user-facing changes.\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/c087896369538d12ff398cd3e065efdf12cbbcda"
+        },
+        {
+          "sha": "3256b5504f575d2000866bac6d178e4a752da81a",
+          "author_date": "2026-06-26T06:30:22Z",
+          "message": "fix: keep a space when densing \"-\" before a negative operand\n\ndenseOperators removed the spaces around a \"-\" operator even when the\noperand that follows it starts with another \"-\" (a unary minus or a\nnegative number literal). That glues the two together into \"--\", which\nre-parses as a line comment and silently drops the rest of the line:\n\n  format(\"SELECT 1 - -1 AS x\", { denseOperators: true })\n  => \"SELECT\\n  1--1 AS x\"   // \"--1 AS x\" is now a comment\n\nGuard against this in the layout: when a token that starts with \"-\" would\nbe placed directly after one that ends with \"-\", keep a single space so the\n\"--\" comment marker can never form. Formatting is idempotent again.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/3256b5504f575d2000866bac6d178e4a752da81a"
+        },
+        {
+          "sha": "a904128b003136ee9560e263fd39352d684fdf40",
+          "author_date": "2026-06-26T10:10:21Z",
+          "message": "Upgrade to pnpm@11.9.0, remove `pmOnFail: download` config",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a904128b003136ee9560e263fd39352d684fdf40"
+        },
+        {
+          "sha": "e0e02c9f449926c92b850fd0458a5bdb97465be8",
+          "author_date": "2026-06-26T10:19:50Z",
+          "message": "Fix CodeRabbit config",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/e0e02c9f449926c92b850fd0458a5bdb97465be8"
+        },
+        {
+          "sha": "908d86fa35bf97a228107d4b6c0cf64b468f4c0b",
+          "author_date": "2026-06-26T10:36:18Z",
+          "message": "test: pin dense output around a negative operand\n\nAdd an exact-output assertion for the default dialect so the regression\nalso proves the left side still denses (\"a- -b\" / \"1- -1\"), not just that\nno \"--\" forms. Kept the shared cross-dialect check invariant-only since\ndialects with dashed identifiers (e.g. BigQuery) keep the \"-\" spaced.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/908d86fa35bf97a228107d4b6c0cf64b468f4c0b"
+        },
+        {
+          "sha": "501b550de249e8e778de69fcd49bb8de02632e30",
+          "author_date": "2026-06-29T14:22:16Z",
+          "message": "Explicitly add standardOperators to all supportsOperators() calls",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/501b550de249e8e778de69fcd49bb8de02632e30"
+        },
+        {
+          "sha": "b42c710567eb36733acca60df34d5a29f1f5d8c2",
+          "author_date": "2026-06-29T14:29:30Z",
+          "message": "Remove the special-casing of `-` operator from supportsOperators() test",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/b42c710567eb36733acca60df34d5a29f1f5d8c2"
+        },
+        {
+          "sha": "085915c64fbd0b834e92b27f6ef1c4d6f08ff8f2",
+          "author_date": "2026-06-29T14:36:48Z",
+          "message": "Move the BigQuery specific \"-\" operators tests to bigquery.test.ts",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/085915c64fbd0b834e92b27f6ef1c4d6f08ff8f2"
+        },
+        {
+          "sha": "8a16872f3cf9173063518a1b38a1128b6751e8ec",
+          "author_date": "2026-06-29T14:38:34Z",
+          "message": "Rename lastTokenEndsWith -> lastItemEndsWith",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/8a16872f3cf9173063518a1b38a1128b6751e8ec"
+        },
+        {
+          "sha": "29208f0780ec0051dc21181c915bce272cbfe41e",
+          "author_date": "2026-06-29T14:44:07Z",
+          "message": "Remove unnecessary typeof check",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/29208f0780ec0051dc21181c915bce272cbfe41e"
+        },
+        {
+          "sha": "a1f7e3f13321883d82ac9ed98133878ef652aab8",
+          "author_date": "2026-06-29T14:44:42Z",
+          "message": "Merge branch 'fix-dense-minus-comment'",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a1f7e3f13321883d82ac9ed98133878ef652aab8"
+        },
+        {
+          "sha": "a9528c94242192c78ec6522b22d1aa9d7b104da6",
+          "author_date": "2026-06-29T15:33:27Z",
+          "message": "Upgrade to pnpm@11.9.0, remove `pmOnFail: download` config (#957)\n\nUpgrade to\n[`pnpm@11.9.0`](https://github.com/pnpm/pnpm/releases/tag/v11.9.0) and\nremove `pmOnFail: download` workaround:\n\n-\nhttps://github.com/sql-formatter-org/sql-formatter/pull/949#pullrequestreview-4305290834\n- my pnpm issue: https://github.com/pnpm/pnpm/issues/11676\n- pnpm PR that fixed it: https://github.com/pnpm/pnpm/pull/11682\n- pnpm release v11.1.3 that contained the fix:\nhttps://github.com/pnpm/pnpm/releases/tag/v11.1.3#:~:text=Fix%20devEngines.packageManager%20(singular%20form%2C%20without%20onFail)%20defaulting%20to%20onFail%3A%20%22error%22%20instead%20of%20the%20documented%20pmOnFail%3A%20%22download%22",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a9528c94242192c78ec6522b22d1aa9d7b104da6"
+        },
+        {
+          "sha": "32a6520fde6dccdcbfd761a7ba9f8821404db732",
+          "author_date": "2026-06-30T03:02:15Z",
+          "message": "fix(postgresql): keep spaces around OPERATOR() with denseOperators\n\nWith denseOperators the PostgreSQL OPERATOR(schema.op) construct was densed into its operands, e.g. \"foo OPERATOR(public.===) bar\" became \"fooOPERATOR(public.===)bar\", which re-parses as invalid SQL. It's a keyword-like operator, so it now keeps its surrounding spaces like the dashed \"-\" case does.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/32a6520fde6dccdcbfd761a7ba9f8821404db732"
+        },
+        {
+          "sha": "b2ce5459c1861eac394a20ac69c7f222a5cebd95",
+          "author_date": "2026-06-30T06:43:08Z",
+          "message": "fix(postgresql): keep spaces around OPERATOR() with denseOperators (#958)\n\nI was trying out `denseOperators` on some Postgres queries and noticed\nit mangles the `OPERATOR(schema.op)` syntax:\n\n```\nformat('SELECT foo OPERATOR(public.===) bar;', { language: 'postgresql', denseOperators: true })\n// =>\n// SELECT\n//   fooOPERATOR(public.===)bar;\n```\n\nThe spaces around the operator get stripped, so `foo` runs into the\n`OPERATOR` keyword and the result no longer parses. Unlike `+`/`=`/etc.,\nthis one is keyword-like and can't be glued to its operands, so I made\nit keep its surrounding spaces even in dense mode — same idea as the\nexisting `-` exception for dialects with dashed identifiers.\n\nAdded a test under the existing OPERATOR() case in postgresql.test.ts.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/b2ce5459c1861eac394a20ac69c7f222a5cebd95"
+        },
+        {
+          "sha": "eb5bb5ea3682ebc8b9af56f9e4ea065fdfc9a1db",
+          "author_date": "2026-07-18T07:33:54Z",
+          "message": "fix: remove extra space after BETWEEN _ AND _ expression\n\nThe whitespace between the upper bound of a BETWEEN predicate and\nwhatever follows it was doubled, because the sub-expression already\nemits a trailing space and formatBetweenPredicate added another one on\ntop. It shows up with default options, e.g.\n\n    SELECT CASE WHEN foo BETWEEN 1 AND 2 THEN 3 END\n\nproduced \"WHEN foo BETWEEN 1 AND 2  THEN 3\".\n\nNormalize the trailing whitespace the same way the lower bound already\ndoes, with NO_SPACE followed by SPACE.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/eb5bb5ea3682ebc8b9af56f9e4ea065fdfc9a1db"
+        },
+        {
+          "sha": "aa8efaefa3596665638457ff0356e66c167ea127",
+          "author_date": "2026-07-23T12:42:17Z",
+          "message": "fix: remove extra space after BETWEEN _ AND _ expression (#959)\n\nI noticed the formatter emits two spaces after a BETWEEN predicate\nwhenever something follows it on the same line. With default options:\n\n```js\nformat('SELECT CASE WHEN foo BETWEEN 1 AND 2 THEN 3 END');\n```\n\ngives `WHEN foo BETWEEN 1 AND 2 THEN 3`. Same for\n`logicalOperatorNewline: 'after'` (`b BETWEEN 1 AND 2 AND`) and for `b\nBETWEEN 1 AND 2 IS TRUE`.\n\nThe cause is in `formatBetweenPredicate`: the sub-expression for the\nupper bound already ends with a trailing space, and the method then adds\nanother `WS.SPACE` on top. It usually goes unnoticed because with the\ndefault `logicalOperatorNewline: 'before'` the following `WS.NEWLINE`\ntrims the doubled space away. The lower bound already normalizes this\nwith `WS.NO_SPACE, WS.SPACE`, so I did the same for the upper bound.\n\nTwo existing expectations had the extra space baked in\n(`test/features/between.ts` and `test/features/case.ts`); both are\nupdated to the intended single space.\n\nTested with `pnpm run check` (typecheck, prettier, eslint, full jest\nsuite) — all green. I also re-ran a format/re-format idempotency sweep\nover the repo's own test queries across every dialect and the option\nmatrix; nothing changed apart from the removed space.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/aa8efaefa3596665638457ff0356e66c167ea127"
+        },
+        {
+          "sha": "d248e73d7595cc045bbbd0a9da6a9772f1e37065",
+          "author_date": "2026-07-27T23:46:11Z",
+          "message": "fix: keep DuckDB array-slice colon dense inside [ ]\n\nDuckDB dropped ':' from alwaysDenseOperators (f9575c0) so struct literals\nlike {'a': 1} get their key-value space. That also spaced the array-slice\ncolon, so foo[:5] formatted as foo[: 5] and baz[1:5] as baz[1: 5]. Only the\ncolon followed by a value was affected; bar[1:] and zap[:] were already fine.\n\nMake the ':' spacing depend on the nearest enclosing bracket rather than\nbeing dialect-global: dense inside [ ] (array slice), spaced elsewhere\n({ } struct keys, prefix aliases). This keeps the struct-literal fix intact.\n\nUn-skips the existing \"supports array slice operator\" test.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/d248e73d7595cc045bbbd0a9da6a9772f1e37065"
+        },
+        {
+          "sha": "8b5794d0f0993eb626f5b2aeebff9cbdd74bee24",
+          "author_date": "2026-08-22T12:44:24Z",
+          "message": "Remove coderabbit config file",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/8b5794d0f0993eb626f5b2aeebff9cbdd74bee24"
+        },
+        {
+          "sha": "ff457b4da1c19ee18cea8341de2c84d564636791",
+          "author_date": "2026-08-22T16:12:55Z",
+          "message": "Add Vincent Gao to AUTHORS file",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/ff457b4da1c19ee18cea8341de2c84d564636791"
+        },
+        {
+          "sha": "6e9baf14553d092ed6fb90ca3ad7c7f29b3c4b57",
+          "author_date": "2026-08-22T16:17:38Z",
+          "message": "Rename enclosingBracket to enclosingParenthesis",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/6e9baf14553d092ed6fb90ca3ad7c7f29b3c4b57"
+        },
+        {
+          "sha": "55f1453349cd045a538b0221a6eb0d445ce7660e",
+          "author_date": "2026-08-22T16:17:56Z",
+          "message": "Improve comment on array-slice formatting",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/55f1453349cd045a538b0221a6eb0d445ce7660e"
+        },
+        {
+          "sha": "d3f52aacf96782e0496b528026661d579c97fa6c",
+          "author_date": "2026-08-22T16:18:40Z",
+          "message": "fix: keep DuckDB array-slice colon dense inside [] (#960)",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/d3f52aacf96782e0496b528026661d579c97fa6c"
+        },
+        {
+          "sha": "44f3b4d51d00f1ec75c15491f5994f339d8104ee",
+          "author_date": "2026-08-22T16:22:02Z",
+          "message": "Remove coderabbit (#965)\n\nWe have been testing out Coderabbit. My conclusion is that it hasn't\nreally provided any real help. On the contrary, I find these Coderabbit\ncomments annoying: they just add noise. It's like in every pull request\nsome developer jumps in to report: hey! I'm here, I don't have anything\nuseful to add, but I say it anyway.\n\nOn the other hand, the real problem I'm having with pull request is that\nthe majority of them are written by AI in the first place. Like\ncurrently there's 5 pull requests open, and I have a strong suspicion\nthat they're all AI-written. Of course it's hard to say so for sure, but\nI very much feel the AI-written vibe. Like I have written some feedbeck\nto all of them, and then it's simply been silence from the author of the\nPR. Like in one case I wrote a comment about how that whole 20-line PR\ncould be achieved with just a single line, and then the author just\nmarked it as resolved, without doing anything.\n\nGiven that the problem is in noise created by AI, I think adding more AI\nnoise from our side isn't really helping.\n\nI disabled Coderabbit for now. Will likely completely uninstall it\nlater.\n\n@karlhorky",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/44f3b4d51d00f1ec75c15491f5994f339d8104ee"
+        },
+        {
+          "sha": "e2ed5ec8231714c6598ea41241ea2e47d2658993",
+          "author_date": "2026-08-07T23:50:41Z",
+          "message": "Avoid quadratic SQL expression list accumulation",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/e2ed5ec8231714c6598ea41241ea2e47d2658993"
+        },
+        {
+          "sha": "5975af94ac0349f4bf47f3e545be4d75261d8beb",
+          "author_date": "2026-08-23T07:29:51Z",
+          "message": "Add Alex Coleman to AUTHORS",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/5975af94ac0349f4bf47f3e545be4d75261d8beb"
+        },
+        {
+          "sha": "6c21ff5acab051713df3f1b101bb28f52adeb39f",
+          "author_date": "2026-08-23T07:30:57Z",
+          "message": "Avoid quadratic accumulation when parsing long SQL expression lists (#963)",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/6c21ff5acab051713df3f1b101bb28f52adeb39f"
+        },
+        {
+          "sha": "3f6178b7c6386f5dcc3ed39b557088fcbc87cadf",
+          "author_date": "2026-08-23T10:50:51Z",
+          "message": "Add types: [jest, node] to TSConfig\n\nThis will prevent editors like VSCode from complaining about\nundeclared variables - describe, it, expect - in tests.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/3f6178b7c6386f5dcc3ed39b557088fcbc87cadf"
+        },
+        {
+          "sha": "aaee3f129fdf755f4a56ca161bd04949b538f161",
+          "author_date": "2026-08-30T12:39:20Z",
+          "message": "fix: support pg_dump restrict commands",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/aaee3f129fdf755f4a56ca161bd04949b538f161"
+        },
+        {
+          "sha": "cf38fefb2f3bf3f64eacf04a1ba68164a4dcd9d2",
+          "author_date": "2026-08-30T15:37:21Z",
+          "message": "Add sophalter to AUTHORS file",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/cf38fefb2f3bf3f64eacf04a1ba68164a4dcd9d2"
+        },
+        {
+          "sha": "f77d46b9513f96f7076823a8959e5332837d7f6a",
+          "author_date": "2026-08-30T15:39:30Z",
+          "message": "Link the issue to the test",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/f77d46b9513f96f7076823a8959e5332837d7f6a"
+        },
+        {
+          "sha": "f6de1cd2959aafce48730172e8c6a0232b4ea5f2",
+          "author_date": "2026-08-30T15:39:54Z",
+          "message": "Merge branch 'fix/pgdump-restrict-commands'",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/f6de1cd2959aafce48730172e8c6a0232b4ea5f2"
+        },
+        {
+          "sha": "de7587e5fd123cf8025ef5e5dc281a5af82455c6",
+          "author_date": "2026-09-07T12:09:39Z",
+          "message": "fix(singlestoredb): support % as the modulo operator\n\nFormatting a SingleStoreDB query that uses % throws instead of\nreturning SQL:\n\n  format('SELECT 25 % 7', { language: 'singlestoredb' })\n  Parse error: Unexpected \"% 7\" at line 1 column 11.\n\nSingleStore documents three equivalent modulo forms, MOD(a, b),\na MOD b and a % b. The first two format fine, the third does not.\n\nThe tokenizer builds its OPERATOR rule from a fixed standard set\n(+ - / > < = <> <= >= !=) plus the dialect's own cfg.operators list,\nin src/lexer/Tokenizer.ts. % is not in the standard set, and the\noperators array in src/languages/singlestoredb/singlestoredb.formatter.ts\nomits it, so no rule matches the character and TokenizerEngine raises a\nparse error. Every MySQL-family sibling (mysql, mariadb, tidb) lists '%'\nfirst in the same array; the SingleStoreDB copy dropped it.\n\nAdd '%' to that array, in the same leading position the siblings use.\nregexFactory.operator sorts the alternatives by length descending, so\nSingleStore's ::% conversion path-operator still matches before the\nbare %.",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/de7587e5fd123cf8025ef5e5dc281a5af82455c6"
+        },
+        {
+          "sha": "1ff85d857cf5e06f2d73445b9f448d9bf749ef0a",
+          "author_date": "2026-09-16T19:32:05Z",
+          "message": "Add Max Freedom Pollard to AUTHORS",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/1ff85d857cf5e06f2d73445b9f448d9bf749ef0a"
+        },
+        {
+          "sha": "a68e988c91565383944db36cdcf8ed4595337da2",
+          "author_date": "2026-09-16T19:32:31Z",
+          "message": "Support % as the modulo operator in SingleStoreDB (#971)",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a68e988c91565383944db36cdcf8ed4595337da2"
+        },
+        {
+          "sha": "bcd3a426da9603f21dfac49eb9f8e4e43ebda79a",
+          "author_date": "2026-09-18T14:15:24Z",
+          "message": "Treat a reserved word after AS as an alias\n\nSome dialects allow reserved words as aliases, as in\n`SELECT id AS set FROM tbl`. The word is tokenized as a RESERVED_* token\nand the parser then reads it as the start of a clause, so the formatter\nbreaks the line and reindents.\n\nDirectly after AS a reserved word can only be an alias name, so convert\nit to IDENTIFIER there. Only the token types that cannot legitimately\nfollow AS are converted, leaving `CREATE TABLE t AS SELECT ...` and\n`PREPARE foo AS UPDATE ...` working.\n\nThe bare alias form, as in `FROM pg_settings set`, needs statement\nposition tracking and is not covered here.\n\nRefs #801",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/bcd3a426da9603f21dfac49eb9f8e4e43ebda79a"
+        },
+        {
+          "sha": "55c68bb0984059a5da5bbf02537023af95c132e5",
+          "author_date": "2026-09-22T18:42:39Z",
+          "message": "Address review: narrow isAsKeyword, move tests to shared helpers\n\nNo behaviour change.\n\nAS is never tokenized as RESERVED_KEYWORD_PHRASE: no dialect declares a\nbare \"AS\" phrase, only phrases containing it (AS MATERIALIZED, NULL AS,\nGENERATED ... AS IDENTITY), and those tokenize with the whole phrase as\nthe token text. Drop that branch from isAsKeyword.\n\nReword the disambiguateTokens doc comment, which claimed every reserved\nword after AS becomes an identifier. Only the types that cannot start a\nclause there are converted.\n\nMerge the two PostgreSQL-specific tests into the existing shared one, now\ncovering a column alias and a table alias in one statement and running\nfor every dialect. Drop the WHERE case: set.name disambiguation is\nhandled separately and is not part of #801.\n\nMove the SET-as-a-clause regression test to supportsUpdate(), since\nSparkSQL has no UPDATE statement and it cannot live in\nbehavesLikeSqlFormatter().\n\nRefs #801",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/55c68bb0984059a5da5bbf02537023af95c132e5"
+        },
+        {
+          "sha": "b77a5369548114bc0dfa1fbd6d7164526fb10659",
+          "author_date": "2026-09-23T06:33:51Z",
+          "message": "Add Christopher Pruijsen to AUTHORS",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/b77a5369548114bc0dfa1fbd6d7164526fb10659"
+        },
+        {
+          "sha": "021b391b1296b71e05c856a14a1541204c130fb9",
+          "author_date": "2026-09-23T06:34:21Z",
+          "message": "Treat a reserved word after AS as an alias (#972)",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/021b391b1296b71e05c856a14a1541204c130fb9"
+        },
+        {
+          "sha": "a9a22231cbad9dd24417332d61d46cfcb442d36e",
+          "author_date": "2026-09-23T07:14:59Z",
+          "message": "Add a note about the need to `pnpm login` for release",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/a9a22231cbad9dd24417332d61d46cfcb442d36e"
+        },
+        {
+          "sha": "63dc9f835cef4738ef107bf2306b20fd7e7a4d20",
+          "author_date": "2026-09-23T07:17:00Z",
+          "message": "15.9.0",
+          "html_url": "https://github.com/sql-formatter-org/sql-formatter/commit/63dc9f835cef4738ef107bf2306b20fd7e7a4d20"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [
+      {
+        "id": 18682658473,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-21T11:41:41Z",
+        "updated_at": "2025-10-21T11:42:35Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/18682658473"
+      },
+      {
+        "id": 18584299868,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-17T06:19:17Z",
+        "updated_at": "2025-10-17T06:20:16Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/18584299868"
+      },
+      {
+        "id": 18570160471,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-16T17:52:48Z",
+        "updated_at": "2025-10-16T17:53:37Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/18570160471"
+      },
+      {
+        "id": 18186860446,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-02T07:51:46Z",
+        "updated_at": "2025-10-02T07:52:32Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/18186860446"
+      },
+      {
+        "id": 18186806755,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-02T07:48:55Z",
+        "updated_at": "2025-10-02T07:50:00Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/18186806755"
+      }
+    ],
+    "2025-11": [
+      {
+        "id": 19097074530,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T09:17:20Z",
+        "updated_at": "2025-11-05T09:18:40Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/19097074530"
+      }
+    ],
+    "2025-12": [
+      {
+        "id": 20225480768,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-15T08:31:14Z",
+        "updated_at": "2025-12-15T08:32:06Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/20225480768"
+      },
+      {
+        "id": 20225411693,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-15T08:28:42Z",
+        "updated_at": "2025-12-15T08:29:36Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/20225411693"
+      },
+      {
+        "id": 20092018728,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-10T08:22:05Z",
+        "updated_at": "2025-12-10T08:22:54Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/20092018728"
+      },
+      {
+        "id": 20091940374,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-10T08:18:59Z",
+        "updated_at": "2025-12-10T08:19:49Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/20091940374"
+      },
+      {
+        "id": 20091849545,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-10T08:15:14Z",
+        "updated_at": "2025-12-10T08:16:07Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/20091849545"
+      }
+    ],
+    "2026-01": [
+      {
+        "id": 21524021997,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-30T17:07:08Z",
+        "updated_at": "2026-01-30T17:08:04Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/21524021997"
+      },
+      {
+        "id": 21010205870,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-14T21:18:18Z",
+        "updated_at": "2026-01-14T21:19:13Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/21010205870"
+      },
+      {
+        "id": 21010050289,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-14T21:13:29Z",
+        "updated_at": "2026-01-14T21:14:18Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/21010050289"
+      },
+      {
+        "id": 21009972331,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-14T21:11:00Z",
+        "updated_at": "2026-01-14T21:11:51Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/21009972331"
+      },
+      {
+        "id": 21009654252,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-14T21:00:15Z",
+        "updated_at": "2026-01-14T21:01:09Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/21009654252"
+      }
+    ],
+    "2026-02": [
+      {
+        "id": 22097248880,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T11:47:12Z",
+        "updated_at": "2026-02-17T11:48:04Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/22097248880"
+      },
+      {
+        "id": 22097175839,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T11:44:45Z",
+        "updated_at": "2026-02-17T11:45:38Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/22097175839"
+      },
+      {
+        "id": 21997997256,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-13T18:22:57Z",
+        "updated_at": "2026-02-13T18:23:53Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/21997997256"
+      },
+      {
+        "id": 21997912884,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-13T18:20:14Z",
+        "updated_at": "2026-02-13T18:21:13Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/21997912884"
+      }
+    ],
+    "2026-03": [
+      {
+        "id": 23681193112,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-28T08:21:13Z",
+        "updated_at": "2026-03-28T08:22:01Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/23681193112"
+      },
+      {
+        "id": 23681105566,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-28T08:15:51Z",
+        "updated_at": "2026-03-28T08:16:46Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/23681105566"
+      },
+      {
+        "id": 23681055816,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-28T08:12:43Z",
+        "updated_at": "2026-03-28T08:13:34Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/23681055816"
+      },
+      {
+        "id": 23680910046,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-28T08:03:13Z",
+        "updated_at": "2026-03-28T08:04:08Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/23680910046"
+      },
+      {
+        "id": 23283177251,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-19T06:43:13Z",
+        "updated_at": "2026-03-19T06:44:07Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/23283177251"
+      }
+    ],
+    "2026-04": [],
+    "2026-05": [
+      {
+        "id": 25998540776,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-17T18:03:04Z",
+        "updated_at": "2026-05-17T18:03:57Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25998540776"
+      },
+      {
+        "id": 25991069777,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-17T12:38:02Z",
+        "updated_at": "2026-05-17T12:38:49Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25991069777"
+      },
+      {
+        "id": 25991003186,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-17T12:35:01Z",
+        "updated_at": "2026-05-17T12:35:28Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25991003186"
+      },
+      {
+        "id": 25990800702,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-17T12:26:05Z",
+        "updated_at": "2026-05-17T12:26:26Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25990800702"
+      },
+      {
+        "id": 25882945441,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-14T20:10:11Z",
+        "updated_at": "2026-05-14T20:11:09Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25882945441"
+      },
+      {
+        "id": 25856658945,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-14T11:05:59Z",
+        "updated_at": "2026-05-14T11:06:55Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25856658945"
+      },
+      {
+        "id": 25856484698,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-14T11:01:42Z",
+        "updated_at": "2026-05-14T11:02:33Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25856484698"
+      },
+      {
+        "id": 25729147680,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-12T10:38:34Z",
+        "updated_at": "2026-05-12T10:39:28Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25729147680"
+      },
+      {
+        "id": 25729090054,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-12T10:37:19Z",
+        "updated_at": "2026-05-12T10:38:16Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/25729090054"
+      }
+    ],
+    "2026-06": [
+      {
+        "id": 28425584054,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-30T06:43:11Z",
+        "updated_at": "2026-06-30T06:44:06Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/28425584054"
+      },
+      {
+        "id": 28383725773,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-29T15:33:30Z",
+        "updated_at": "2026-06-29T15:34:43Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/28383725773"
+      },
+      {
+        "id": 28380556810,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-29T14:45:13Z",
+        "updated_at": "2026-06-29T14:45:57Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/28380556810"
+      },
+      {
+        "id": 27914672765,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-21T19:13:37Z",
+        "updated_at": "2026-06-21T19:14:23Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/27914672765"
+      },
+      {
+        "id": 27901972030,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-21T10:50:54Z",
+        "updated_at": "2026-06-21T10:51:33Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/27901972030"
+      },
+      {
+        "id": 27901335597,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-21T10:23:03Z",
+        "updated_at": "2026-06-21T10:23:44Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/27901335597"
+      },
+      {
+        "id": 26974064740,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-04T19:19:09Z",
+        "updated_at": "2026-06-04T19:19:49Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/26974064740"
+      },
+      {
+        "id": 26972323033,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-04T18:45:12Z",
+        "updated_at": "2026-06-04T18:46:00Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/26972323033"
+      }
+    ],
+    "2026-07": [
+      {
+        "id": 30008061813,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-23T12:42:21Z",
+        "updated_at": "2026-07-23T12:43:19Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/30008061813"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 33320289462,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-30T15:40:06Z",
+        "updated_at": "2026-08-30T15:40:52Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/33320289462"
+      },
+      {
+        "id": 32634957390,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-23T10:52:45Z",
+        "updated_at": "2026-08-23T10:53:45Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/32634957390"
+      },
+      {
+        "id": 32625787979,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-23T07:31:26Z",
+        "updated_at": "2026-08-23T07:32:14Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/32625787979"
+      },
+      {
+        "id": 32584486656,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-22T16:22:04Z",
+        "updated_at": "2026-08-22T16:22:59Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/32584486656"
+      },
+      {
+        "id": 32584373239,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-22T16:19:50Z",
+        "updated_at": "2026-08-22T16:20:45Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/32584373239"
+      }
+    ],
+    "2026-09": [
+      {
+        "id": 35831514869,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-23T07:24:08Z",
+        "updated_at": "2026-09-23T07:24:57Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/35831514869"
+      },
+      {
+        "id": 35831142388,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-23T07:19:51Z",
+        "updated_at": "2026-09-23T07:20:43Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/35831142388"
+      },
+      {
+        "id": 35827424598,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-23T06:34:59Z",
+        "updated_at": "2026-09-23T06:35:52Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/35827424598"
+      },
+      {
+        "id": 35141268553,
+        "name": "coveralls",
+        "workflow_id": 25370346,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T19:33:30Z",
+        "updated_at": "2026-09-16T19:34:29Z",
+        "html_url": "https://github.com/sql-formatter-org/sql-formatter/actions/runs/35141268553"
+      }
+    ]
+  }
+}

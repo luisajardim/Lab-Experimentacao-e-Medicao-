@@ -1,0 +1,1324 @@
+{
+  "repository": {
+    "full_name": "sebi2k1/node-can",
+    "stars": 249,
+    "language": "JavaScript",
+    "default_branch": "master",
+    "created_at": "2012-12-31T14:32:27Z"
+  },
+  "releases": [
+    {
+      "id": 82434488,
+      "tag_name": "v4.0.0pre",
+      "name": "v4.0.0 TypeScript test",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-11-08T19:57:17Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.0.0pre"
+    },
+    {
+      "id": 332099979,
+      "tag_name": "v4.2.1",
+      "name": "v4.2.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-31T09:40:02Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.2.1"
+    },
+    {
+      "id": 341832754,
+      "tag_name": "v4.2.2",
+      "name": "v4.2.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-19T08:35:12Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.2.2"
+    },
+    {
+      "id": 345771319,
+      "tag_name": "v4.2.3",
+      "name": "v4.2.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-27T19:28:03Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.2.3"
+    },
+    {
+      "id": 359737614,
+      "tag_name": "v4.2.4",
+      "name": "v4.2.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-07-25T10:48:32Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.2.4"
+    },
+    {
+      "id": 359750849,
+      "tag_name": "v4.2.5",
+      "name": "v4.2.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-07-25T12:09:20Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.2.5"
+    },
+    {
+      "id": 371018991,
+      "tag_name": "v4.3.0",
+      "name": "v4.3.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-08-15T10:13:26Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.3.0"
+    },
+    {
+      "id": 383193919,
+      "tag_name": "v4.3.1",
+      "name": "v4.3.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-09-05T09:05:34Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.3.1"
+    },
+    {
+      "id": 402467058,
+      "tag_name": "v4.3.2",
+      "name": "v4.3.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-10-03T10:53:43Z",
+      "html_url": "https://github.com/sebi2k1/node-can/releases/tag/v4.3.2"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v4.3.0",
+      "sha": "4e998e55a234e4a42ed09d0fff196e613dfad9b5",
+      "date": "2026-08-15T10:13:03Z"
+    },
+    {
+      "name": "v4.3.2",
+      "sha": "398db1b19e4dcb4c56b4852e80f9caa38646ab7f",
+      "date": "2026-10-03T10:51:29Z"
+    },
+    {
+      "name": "v4.3.1",
+      "sha": "f8ec9e143251cd03261e690c9e5eed1e75eb96d8",
+      "date": "2026-09-05T09:04:29Z"
+    },
+    {
+      "name": "v4.2.5",
+      "sha": "dad31a73a36f42995876d9e6a6258f6978b001c7",
+      "date": "2026-07-25T12:06:31Z"
+    },
+    {
+      "name": "v4.2.3",
+      "sha": "b8506db23b88aa1aef9c4bbefe5b2db07fe437aa",
+      "date": "2026-06-27T19:25:43Z"
+    },
+    {
+      "name": "v4.2.2",
+      "sha": "a07196f4d6659d1e63f99b289b81ed3144b3f0a3",
+      "date": "2026-06-19T08:35:05Z"
+    },
+    {
+      "name": "v4.2.4",
+      "sha": "54ab7a5d3e445da53af3e3d35c3b0c1fb2cd5658",
+      "date": "2026-07-25T10:48:14Z"
+    },
+    {
+      "name": "v4.2.1",
+      "sha": "5ec074c34ec70f745d3b3163ab088ee97b5407c4",
+      "date": "2026-05-31T09:39:41Z"
+    },
+    {
+      "name": "v4.0.0pre",
+      "sha": "9b320f3d2d449c3bd1903268c22da5b505045a0e",
+      "date": "2022-11-08T19:42:53Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v4.2.1",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v4.2.2",
+      "previous_release": "v4.2.1",
+      "commits": [
+        {
+          "sha": "2cf6e0aa1376410758709cf373501091c465440c",
+          "author_date": "2026-05-31T09:55:01Z",
+          "message": "Add float32 (single) and float64 (double) signal type support\n\nCloses #59. Extends encodeSignal/decodeSignal in the native addon to\nhandle IEEE-754 float and double types via a new SIGNAL_TYPE enum\n(0=unsigned, 1=signed, 2=float32, 3=float64). Byte order (Intel/Motorola)\nis handled correctly by the existing _getvalue/_setvalue infrastructure\nthrough a plain memcpy reinterpretation after byte-swapping. The TS layer\nmaps KCD type=\"single\"/\"double\" to the new codes and skips Math.round()\nfor float signal encoding. All existing integer tests continue to pass.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/2cf6e0aa1376410758709cf373501091c465440c"
+        },
+        {
+          "sha": "70c0756316c84aaca1d76b0ad595a1ffdbf0828b",
+          "author_date": "2026-05-31T10:00:58Z",
+          "message": "Fix review findings: effectiveBitLength, type safety, and test coverage\n\n- native/signals.cc: compute effectiveBitLength from the signal type before\n  calling _getvalue so a mismatched JS bitLength can never produce a silently\n  wrong float result; add bounds check in _parse_signal_type (values > 3 fall\n  back to unsigned instead of being cast to an undefined enum value); fix\n  \"bufer\" typo in both buffer comments\n- src/can_signals.d.ts: tighten SignalType back to boolean | 0 | 1 | 2 | 3\n- src/socketcan.ts: narrow signalTypeCode() return type to 0|1|2|3 to satisfy\n  the tighter SignalType; add console.warn for unrecognised type strings\n- test/test-signal_conversion.js: move SIGNAL_FLOAT32/FLOAT64 constants to\n  module scope alongside new SIGNAL_UNSIGNED/SIGNAL_SIGNED; add tests for\n  negative float64, IEEE-754 special values (Inf, -Inf, NaN) for both float32\n  and float64, and a dedicated test that the effectiveBitLength override\n  produces the correct result even when the caller passes the wrong bitLength\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/70c0756316c84aaca1d76b0ad595a1ffdbf0828b"
+        },
+        {
+          "sha": "4ac744892805f5e6b290b808a754d5f06385d188",
+          "author_date": "2026-05-31T10:11:03Z",
+          "message": "Improve readability: strong types, named constants, no magic numbers\n\nparse_kcd.ts\n- Export SignalType = \"unsigned\"|\"signed\"|\"single\"|\"double\" so the type\n  is named once and referenced everywhere instead of inlined as a literal\n\nsocketcan.ts\n- Export SignalType const object (UNSIGNED/SIGNED/FLOAT32/FLOAT64) so\n  callers of the native addon never need raw numeric literals\n- signalTypeCode() now takes kcd.SignalType instead of string — the\n  exhaustive switch lets the compiler catch any new type added to the union\n- Add isFloatSignal() predicate, removing the duplicated string comparison\n- Name UINT32_MAX and TWO_TO_32 constants in place of 0xffffffff and\n  Math.pow(2,32) in the integer word-split path\n- Fix == to === for all string comparisons on changed lines\n\nnative/signals.cc\n- Add signal_type_bit_width() helper so the IEEE-754 widths (32/64) are\n  derived from the enum in one place; both DecodeSignal and EncodeSignal\n  now call it instead of hardcoding the numbers independently\n- Unify all new/changed variable declarations to uint32_t/uint64_t (C99\n  standard names) in place of the POSIX u_int32_t/u_int64_t\n\ncan_signals.d.ts\n- Update comment to point callers toward the named SignalType constants\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/4ac744892805f5e6b290b808a754d5f06385d188"
+        },
+        {
+          "sha": "f2a591177dd9060bbdce55cdd12654f98a4fe739",
+          "author_date": "2026-05-31T10:31:42Z",
+          "message": "Apply C++20 best practices to signals.cc\n\n- Build: add -std=c++20 to both addon targets in binding.gyp\n- Remove vestigial __STDC_LIMIT_MACROS (unnecessary since C++11)\n- Switch to C++ headers (<cstdint>, <cstring>) and add <bit>\n- Convert typedef enum to enum class for ENDIANESS and SIGNAL_TYPE\n- Fix strict-aliasing UB in _getvalue/_setvalue: replace pointer casts\n  with memcpy-based loads; _getvalue now takes const uint8_t*\n- Fix misleading _setvalue signature: data[8] -> uint8_t* (64-byte buf)\n- Replace u_int*_t (POSIX-only) with uint*_t (ISO C++) throughout\n- Add [[nodiscard]] to _getvalue\n- _parse_signal_type: pass env, throw TypeError on unknown value instead\n  of silently falling back to unsigned; callers check IsExceptionPending\n- Replace memcpy type-punning with std::bit_cast for float/double\n- Replace C-style casts with static_cast<> throughout\n- Fix signed decode: int32_t -> int64_t; use XOR-subtract sign-extension\n  to correctly handle signals wider than 32 bits without UB\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/f2a591177dd9060bbdce55cdd12654f98a4fe739"
+        },
+        {
+          "sha": "5f759822d23ee66c5b2a70495546ff49b2c9b324",
+          "author_date": "2026-05-31T10:39:36Z",
+          "message": "Expand code style guidelines in CONTRIBUTING.md\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/5f759822d23ee66c5b2a70495546ff49b2c9b324"
+        },
+        {
+          "sha": "a640dcf142692b902741ab06c11c165725143581",
+          "author_date": "2026-06-01T18:59:07Z",
+          "message": "Bump @typescript-eslint/parser from 8.60.0 to 8.60.1\n\nBumps [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) from 8.60.0 to 8.60.1.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.60.1/packages/parser)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/parser\"\n  dependency-version: 8.60.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/a640dcf142692b902741ab06c11c165725143581"
+        },
+        {
+          "sha": "c6176c894255f45b4c3c0c21a5ca5feb796334ae",
+          "author_date": "2026-06-01T18:58:58Z",
+          "message": "Bump @typescript-eslint/eslint-plugin from 8.60.0 to 8.60.1\n\nBumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 8.60.0 to 8.60.1.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.60.1/packages/eslint-plugin)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.60.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/c6176c894255f45b4c3c0c21a5ca5feb796334ae"
+        },
+        {
+          "sha": "f1b97edd8a20cf3d9fbacfc5942b71a0d4d0d70c",
+          "author_date": "2026-06-08T05:52:58Z",
+          "message": "Bump @types/node from 25.9.1 to 25.9.2\n\nBumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 25.9.1 to 25.9.2.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 25.9.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/f1b97edd8a20cf3d9fbacfc5942b71a0d4d0d70c"
+        },
+        {
+          "sha": "e51c3205d33afd7166cb1382c2abf0fdcc1b9345",
+          "author_date": "2026-06-08T05:52:48Z",
+          "message": "Bump node-gyp from 12.3.0 to 12.4.0\n\nBumps [node-gyp](https://github.com/nodejs/node-gyp) from 12.3.0 to 12.4.0.\n- [Release notes](https://github.com/nodejs/node-gyp/releases)\n- [Changelog](https://github.com/nodejs/node-gyp/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/nodejs/node-gyp/compare/v12.3.0...v12.4.0)\n\n---\nupdated-dependencies:\n- dependency-name: node-gyp\n  dependency-version: 12.4.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/e51c3205d33afd7166cb1382c2abf0fdcc1b9345"
+        },
+        {
+          "sha": "22b22a32061638e698fb0226f08470314290829b",
+          "author_date": "2026-06-15T05:53:15Z",
+          "message": "Bump node-gyp from 12.4.0 to 13.0.0\n\nBumps [node-gyp](https://github.com/nodejs/node-gyp) from 12.4.0 to 13.0.0.\n- [Release notes](https://github.com/nodejs/node-gyp/releases)\n- [Changelog](https://github.com/nodejs/node-gyp/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/nodejs/node-gyp/compare/v12.4.0...v13.0.0)\n\n---\nupdated-dependencies:\n- dependency-name: node-gyp\n  dependency-version: 13.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/22b22a32061638e698fb0226f08470314290829b"
+        },
+        {
+          "sha": "88151ab0d793dc3dd69cfe46792297835c2ef622",
+          "author_date": "2026-06-15T05:53:02Z",
+          "message": "Bump @typescript-eslint/eslint-plugin from 8.60.1 to 8.61.0\n\nBumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 8.60.1 to 8.61.0.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.61.0/packages/eslint-plugin)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.61.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/88151ab0d793dc3dd69cfe46792297835c2ef622"
+        },
+        {
+          "sha": "4d3e8ce3441579de5dbda7714bf8b9906cf2f944",
+          "author_date": "2026-06-15T05:53:22Z",
+          "message": "Bump @types/node from 25.9.2 to 25.9.3\n\nBumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 25.9.2 to 25.9.3.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 25.9.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/4d3e8ce3441579de5dbda7714bf8b9906cf2f944"
+        },
+        {
+          "sha": "452e5f580b3843805948da11aac246743f9e287e",
+          "author_date": "2026-06-15T05:53:10Z",
+          "message": "Bump prettier from 3.8.3 to 3.8.4\n\nBumps [prettier](https://github.com/prettier/prettier) from 3.8.3 to 3.8.4.\n- [Release notes](https://github.com/prettier/prettier/releases)\n- [Changelog](https://github.com/prettier/prettier/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prettier/prettier/compare/3.8.3...3.8.4)\n\n---\nupdated-dependencies:\n- dependency-name: prettier\n  dependency-version: 3.8.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/452e5f580b3843805948da11aac246743f9e287e"
+        },
+        {
+          "sha": "1a6ac537f3027ad69ffb2e2f6425397222b71a02",
+          "author_date": "2026-06-15T05:52:48Z",
+          "message": "Bump eslint from 10.4.1 to 10.5.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 10.4.1 to 10.5.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v10.4.1...v10.5.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 10.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/1a6ac537f3027ad69ffb2e2f6425397222b71a02"
+        },
+        {
+          "sha": "a07196f4d6659d1e63f99b289b81ed3144b3f0a3",
+          "author_date": "2026-06-19T08:35:05Z",
+          "message": "Bump version to 4.2.2\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/a07196f4d6659d1e63f99b289b81ed3144b3f0a3"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v4.2.3",
+      "previous_release": "v4.2.2",
+      "commits": [
+        {
+          "sha": "d8dc0fb4e2a262748d9e49f5333874b93773113b",
+          "author_date": "2026-06-22T05:53:10Z",
+          "message": "Bump @typescript-eslint/eslint-plugin from 8.61.0 to 8.61.1\n\nBumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 8.61.0 to 8.61.1.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.61.1/packages/eslint-plugin)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.61.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/d8dc0fb4e2a262748d9e49f5333874b93773113b"
+        },
+        {
+          "sha": "bfe3ee947470774f20f661c549f2b1aa9c62f713",
+          "author_date": "2026-06-22T05:52:57Z",
+          "message": "Bump @types/node from 25.9.3 to 26.0.0\n\nBumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 25.9.3 to 26.0.0.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 26.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/bfe3ee947470774f20f661c549f2b1aa9c62f713"
+        },
+        {
+          "sha": "8bf3747060bfbe162935b4e7572c48c519c8113a",
+          "author_date": "2026-06-19T08:36:12Z",
+          "message": "Bump tar in the npm_and_yarn group across 1 directory\n\nBumps the npm_and_yarn group with 1 update in the / directory: [tar](https://github.com/isaacs/node-tar).\n\n\nUpdates `tar` from 7.5.15 to 7.5.16\n- [Release notes](https://github.com/isaacs/node-tar/releases)\n- [Changelog](https://github.com/isaacs/node-tar/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/isaacs/node-tar/compare/v7.5.15...v7.5.16)\n\n---\nupdated-dependencies:\n- dependency-name: tar\n  dependency-version: 7.5.16\n  dependency-type: indirect\n  dependency-group: npm_and_yarn\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/8bf3747060bfbe162935b4e7572c48c519c8113a"
+        },
+        {
+          "sha": "8c47c8ad05f9591bf1a9466882e18b553f3126dd",
+          "author_date": "2026-06-22T05:52:48Z",
+          "message": "Bump @typescript-eslint/parser from 8.61.0 to 8.61.1\n\nBumps [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) from 8.61.0 to 8.61.1.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.61.1/packages/parser)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/parser\"\n  dependency-version: 8.61.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/8c47c8ad05f9591bf1a9466882e18b553f3126dd"
+        },
+        {
+          "sha": "ab5918b384b7905fd137c1937a050c8d9d40653f",
+          "author_date": "2026-06-27T19:23:25Z",
+          "message": "fix(signals): add missing <endian.h> include for ARM64 build\n\nle64toh/be64toh/htole64/htobe64 are declared in <endian.h>. The header\nwas being pulled in transitively on x86 but not on ARM64, so the build\nfailed there with \"'le64toh' was not declared in this scope\". Include it\nexplicitly. Verified to compile under -std=c++20 on glibc and musl.\n\nFixes #182\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/ab5918b384b7905fd137c1937a050c8d9d40653f"
+        },
+        {
+          "sha": "8166f7359ac8d66b9fc8f061285554e08a85a665",
+          "author_date": "2026-06-27T19:23:25Z",
+          "message": "ci: build and test on ARM64 runners\n\nAdd ubuntu-24.04-arm to the matrix (with fail-fast: false) so the native\naddon is validated on ARM64, the platform that regressed in #182.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/8166f7359ac8d66b9fc8f061285554e08a85a665"
+        },
+        {
+          "sha": "b8506db23b88aa1aef9c4bbefe5b2db07fe437aa",
+          "author_date": "2026-06-27T19:25:43Z",
+          "message": "Bump version to 4.2.3\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/b8506db23b88aa1aef9c4bbefe5b2db07fe437aa"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v4.2.4",
+      "previous_release": "v4.2.3",
+      "commits": [
+        {
+          "sha": "3ee6394c19650ddb6253869cfed94617d31d772f",
+          "author_date": "2026-06-29T05:53:19Z",
+          "message": "Bump @typescript-eslint/eslint-plugin from 8.61.1 to 8.62.0\n\nBumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 8.61.1 to 8.62.0.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.62.0/packages/eslint-plugin)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.62.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/3ee6394c19650ddb6253869cfed94617d31d772f"
+        },
+        {
+          "sha": "c29f033ca86462c455a7837353ddd5a2a33a741e",
+          "author_date": "2026-06-29T05:53:09Z",
+          "message": "Bump node-addon-api from 8.8.0 to 8.9.0\n\nBumps [node-addon-api](https://github.com/nodejs/node-addon-api) from 8.8.0 to 8.9.0.\n- [Release notes](https://github.com/nodejs/node-addon-api/releases)\n- [Changelog](https://github.com/nodejs/node-addon-api/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/nodejs/node-addon-api/compare/v8.8.0...v8.9.0)\n\n---\nupdated-dependencies:\n- dependency-name: node-addon-api\n  dependency-version: 8.9.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/c29f033ca86462c455a7837353ddd5a2a33a741e"
+        },
+        {
+          "sha": "308887eec6cfb1755528d966ba97b62e04ac6049",
+          "author_date": "2026-06-29T05:52:45Z",
+          "message": "Bump prettier from 3.8.4 to 3.9.1\n\nBumps [prettier](https://github.com/prettier/prettier) from 3.8.4 to 3.9.1.\n- [Release notes](https://github.com/prettier/prettier/releases)\n- [Changelog](https://github.com/prettier/prettier/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prettier/prettier/compare/3.8.4...3.9.1)\n\n---\nupdated-dependencies:\n- dependency-name: prettier\n  dependency-version: 3.9.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/308887eec6cfb1755528d966ba97b62e04ac6049"
+        },
+        {
+          "sha": "52f162bb0eae0c3fe9d85c1eff11519ea35cbe4a",
+          "author_date": "2026-06-29T05:53:04Z",
+          "message": "Bump @types/node from 26.0.0 to 26.0.1\n\nBumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 26.0.0 to 26.0.1.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 26.0.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/52f162bb0eae0c3fe9d85c1eff11519ea35cbe4a"
+        },
+        {
+          "sha": "3db5e303674aec0c27871f73bf329ea73949f7bc",
+          "author_date": "2026-07-06T05:53:27Z",
+          "message": "Bump eslint from 10.5.0 to 10.6.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 10.5.0 to 10.6.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v10.5.0...v10.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 10.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/3db5e303674aec0c27871f73bf329ea73949f7bc"
+        },
+        {
+          "sha": "52e607262ef94169b55f12027334eca9f314ca8c",
+          "author_date": "2026-07-06T05:53:21Z",
+          "message": "Bump @types/node from 26.0.1 to 26.1.0\n\nBumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 26.0.1 to 26.1.0.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 26.1.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/52e607262ef94169b55f12027334eca9f314ca8c"
+        },
+        {
+          "sha": "b23575cf64db414c0f8d637c2e9160ca614c9a11",
+          "author_date": "2026-07-06T05:53:14Z",
+          "message": "Bump prettier from 3.9.1 to 3.9.4\n\nBumps [prettier](https://github.com/prettier/prettier) from 3.9.1 to 3.9.4.\n- [Release notes](https://github.com/prettier/prettier/releases)\n- [Changelog](https://github.com/prettier/prettier/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/prettier/prettier/compare/3.9.1...3.9.4)\n\n---\nupdated-dependencies:\n- dependency-name: prettier\n  dependency-version: 3.9.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/b23575cf64db414c0f8d637c2e9160ca614c9a11"
+        },
+        {
+          "sha": "a14e94471875b5848747e6ab4e47f924a0bcd690",
+          "author_date": "2026-07-06T05:53:08Z",
+          "message": "Bump @typescript-eslint/parser from 8.62.0 to 8.62.1\n\nBumps [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) from 8.62.0 to 8.62.1.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.62.1/packages/parser)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/parser\"\n  dependency-version: 8.62.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/a14e94471875b5848747e6ab4e47f924a0bcd690"
+        },
+        {
+          "sha": "dc4004c2dd92cdc4f3e579422c7921e7fe5a59b9",
+          "author_date": "2026-07-06T05:52:55Z",
+          "message": "Bump @typescript-eslint/eslint-plugin from 8.62.0 to 8.62.1\n\nBumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 8.62.0 to 8.62.1.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.62.1/packages/eslint-plugin)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.62.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/dc4004c2dd92cdc4f3e579422c7921e7fe5a59b9"
+        },
+        {
+          "sha": "912f12c4663a5fb17a6ad62a66b205400e585c3b",
+          "author_date": "2026-07-20T05:52:55Z",
+          "message": "Bump @types/node from 26.1.0 to 26.1.1\n\nBumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 26.1.0 to 26.1.1.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 26.1.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/912f12c4663a5fb17a6ad62a66b205400e585c3b"
+        },
+        {
+          "sha": "71637b5841f8dfdfa17e547ca35a0e966bc4046a",
+          "author_date": "2026-07-20T05:53:09Z",
+          "message": "Bump @typescript-eslint/eslint-plugin from 8.62.1 to 8.64.0\n\nBumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 8.62.1 to 8.64.0.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.64.0/packages/eslint-plugin)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.64.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/71637b5841f8dfdfa17e547ca35a0e966bc4046a"
+        },
+        {
+          "sha": "f7f1037e3e72c0048916752e25ec9bee07c27d5f",
+          "author_date": "2026-07-20T05:53:15Z",
+          "message": "Bump globals from 17.6.0 to 17.7.0\n\nBumps [globals](https://github.com/sindresorhus/globals) from 17.6.0 to 17.7.0.\n- [Release notes](https://github.com/sindresorhus/globals/releases)\n- [Commits](https://github.com/sindresorhus/globals/compare/v17.6.0...v17.7.0)\n\n---\nupdated-dependencies:\n- dependency-name: globals\n  dependency-version: 17.7.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/f7f1037e3e72c0048916752e25ec9bee07c27d5f"
+        },
+        {
+          "sha": "e88145fb9d7d93bbbefae5383588bce9a1d3e89b",
+          "author_date": "2026-07-20T05:53:22Z",
+          "message": "Bump node-gyp from 13.0.0 to 13.0.1\n\nBumps [node-gyp](https://github.com/nodejs/node-gyp) from 13.0.0 to 13.0.1.\n- [Release notes](https://github.com/nodejs/node-gyp/releases)\n- [Changelog](https://github.com/nodejs/node-gyp/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/nodejs/node-gyp/compare/v13.0.0...v13.0.1)\n\n---\nupdated-dependencies:\n- dependency-name: node-gyp\n  dependency-version: 13.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/e88145fb9d7d93bbbefae5383588bce9a1d3e89b"
+        },
+        {
+          "sha": "06b5788b20f438c2dbf84d58bf2b4630bb35c59e",
+          "author_date": "2026-07-25T10:33:41Z",
+          "message": "chore: upgrade dependencies, bump to v4.2.4 (#201)\n\n- Bump @types/node, @typescript-eslint/*, eslint, globals, node-addon-api,\n  node-gyp, prettier to latest within existing semver ranges\n- Pin brace-expansion to ^5.0.8 via overrides to fix high-severity DoS\n  (GHSA-mh99-v99m-4gvg) pulled in transitively via mocha's glob/minimatch,\n  following the same pattern used for diff/serialize-javascript/uuid\n- Reformat src/*.ts per updated prettier/eslint defaults (npm run lint --fix)\n- Leave typescript on ^6.0.0 (6.0.3): 7.0.2 is a same-day major release,\n  already tracked separately by the open dependabot/npm_and_yarn/typescript-7.0.2 PR\n\nCo-authored-by: Claude Sonnet 5 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/06b5788b20f438c2dbf84d58bf2b4630bb35c59e"
+        },
+        {
+          "sha": "54ab7a5d3e445da53af3e3d35c3b0c1fb2cd5658",
+          "author_date": "2026-07-25T10:48:14Z",
+          "message": "chore: sync package-lock.json version to 4.2.4\n\nPR #201 bumped package.json to 4.2.4 but left the lockfile's version\nfields at 4.2.3.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/54ab7a5d3e445da53af3e3d35c3b0c1fb2cd5658"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v4.2.5",
+      "previous_release": "v4.2.4",
+      "commits": [
+        {
+          "sha": "dad31a73a36f42995876d9e6a6258f6978b001c7",
+          "author_date": "2026-07-25T12:06:31Z",
+          "message": "fix: bound CAN data length before memcpy in Send/SendFD (#199, #200) (#202)\n\n* fix: bound CAN data length before memcpy in Send/SendFD (#199, #200)\n\nRawChannel::Send and RawChannel::SendFD copied the caller-controlled JS\nBuffer into a fixed-size stack field (frame.data[8] / frameFD.data[64])\nusing the Buffer's own byte length as the copy size, with no upper bound\nbefore the memcpy. A data Buffer longer than the field overflowed it and\nsmashed adjacent stack memory (CWE-787). In SendFD the existing len > 64\nclamp ran after the memcpy, so it never bounded the copy.\n\nReject over-length buffers with a thrown error before the copy, sized to\nthe actual struct field via sizeof(). Throwing rather than silently\ntruncating surfaces the caller's mistake instead of sending a malformed\nframe.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\n\n* chore: bump version to 4.2.5\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.8 <noreply@anthropic.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/dad31a73a36f42995876d9e6a6258f6978b001c7"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v4.3.0",
+      "previous_release": "v4.2.5",
+      "commits": [
+        {
+          "sha": "bba18950496e222381508936b3a813d43160a237",
+          "author_date": "2026-08-15T09:18:55Z",
+          "message": "Bump @types/node from 26.1.1 to 26.1.2 (#205)\n\nBumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 26.1.1 to 26.1.2.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 26.1.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/bba18950496e222381508936b3a813d43160a237"
+        },
+        {
+          "sha": "d644127ce7c86a64dc62698e6591affb80cbc66e",
+          "author_date": "2026-08-15T09:36:39Z",
+          "message": "Bump globals from 17.7.0 to 17.9.0 (#208)\n\nBumps [globals](https://github.com/sindresorhus/globals) from 17.7.0 to 17.9.0.\n- [Release notes](https://github.com/sindresorhus/globals/releases)\n- [Commits](https://github.com/sindresorhus/globals/compare/v17.7.0...v17.9.0)\n\n---\nupdated-dependencies:\n- dependency-name: globals\n  dependency-version: 17.9.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/d644127ce7c86a64dc62698e6591affb80cbc66e"
+        },
+        {
+          "sha": "a2ae50fe4c4cadc540aa0566ca7b74a49783d36a",
+          "author_date": "2026-08-15T09:36:56Z",
+          "message": "Bump @typescript-eslint/eslint-plugin from 8.65.0 to 8.66.0 (#206)\n\nBumps [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin) from 8.65.0 to 8.66.0.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.66.0/packages/eslint-plugin)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/eslint-plugin\"\n  dependency-version: 8.66.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/a2ae50fe4c4cadc540aa0566ca7b74a49783d36a"
+        },
+        {
+          "sha": "4654371c95b5b29f51a519826b8154dc96c4cd56",
+          "author_date": "2026-08-15T09:37:12Z",
+          "message": "Bump mocha from 11.7.6 to 11.8.0 (#207)\n\nBumps [mocha](https://github.com/mochajs/mocha) from 11.7.6 to 11.8.0.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/v11.8.0/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v11.7.6...v11.8.0)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-version: 11.8.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/4654371c95b5b29f51a519826b8154dc96c4cd56"
+        },
+        {
+          "sha": "2644ccb433d03b4e31433f20a8fd7329dffa5327",
+          "author_date": "2026-08-15T10:09:14Z",
+          "message": "chore: update dependencies and migrate to pnpm (#209)",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/2644ccb433d03b4e31433f20a8fd7329dffa5327"
+        },
+        {
+          "sha": "4e998e55a234e4a42ed09d0fff196e613dfad9b5",
+          "author_date": "2026-08-15T10:13:03Z",
+          "message": "chore: bump version to 4.3.0",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/4e998e55a234e4a42ed09d0fff196e613dfad9b5"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v4.3.1",
+      "previous_release": "v4.3.0",
+      "commits": [
+        {
+          "sha": "999dd3c0ee6cf125817c381abe4a586ed9cb42ce",
+          "author_date": "2026-08-15T10:28:31Z",
+          "message": "ci: use npm trusted publishing (#210)",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/999dd3c0ee6cf125817c381abe4a586ed9cb42ce"
+        },
+        {
+          "sha": "ea59950213acfddb1419102edb4523460ad7ee04",
+          "author_date": "2026-08-31T07:52:54Z",
+          "message": "Bump node-gyp from 13.0.1 to 13.0.2 (#214)\n\nBumps [node-gyp](https://github.com/nodejs/node-gyp) from 13.0.1 to 13.0.2.\n- [Release notes](https://github.com/nodejs/node-gyp/releases)\n- [Changelog](https://github.com/nodejs/node-gyp/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/nodejs/node-gyp/compare/v13.0.1...v13.0.2)\n\n---\nupdated-dependencies:\n- dependency-name: node-gyp\n  dependency-version: 13.0.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/ea59950213acfddb1419102edb4523460ad7ee04"
+        },
+        {
+          "sha": "7257c72a0ab89548140d2e4365cc110b4f34f51f",
+          "author_date": "2026-08-31T07:53:12Z",
+          "message": "Bump @types/node from 26.2.0 to 26.4.0 (#213)\n\nBumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 26.2.0 to 26.4.0.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/node\"\n  dependency-version: 26.4.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/7257c72a0ab89548140d2e4365cc110b4f34f51f"
+        },
+        {
+          "sha": "11f527949e4ba1fc4bb52a57fcb32b5b9f1d0308",
+          "author_date": "2026-08-31T07:53:31Z",
+          "message": "Bump eslint from 10.8.1 to 10.9.1 (#212)\n\nBumps [eslint](https://github.com/eslint/eslint) from 10.8.1 to 10.9.1.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v10.8.1...v10.9.1)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 10.9.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/11f527949e4ba1fc4bb52a57fcb32b5b9f1d0308"
+        },
+        {
+          "sha": "9d478dd7a2f110641b6af9e68d89100f6208c22a",
+          "author_date": "2026-08-31T07:56:22Z",
+          "message": "Bump @typescript-eslint/parser from 8.67.0 to 8.68.0 (#211)\n\nBumps [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser) from 8.67.0 to 8.68.0.\n- [Release notes](https://github.com/typescript-eslint/typescript-eslint/releases)\n- [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/CHANGELOG.md)\n- [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v8.68.0/packages/parser)\n\n---\nupdated-dependencies:\n- dependency-name: \"@typescript-eslint/parser\"\n  dependency-version: 8.68.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/9d478dd7a2f110641b6af9e68d89100f6208c22a"
+        },
+        {
+          "sha": "f8ec9e143251cd03261e690c9e5eed1e75eb96d8",
+          "author_date": "2026-09-05T09:04:29Z",
+          "message": "fix: recover RawChannel from transient POLLERR events (#216)\n\n* fix: recover RawChannel from transient poll errors\n\n* chore: bump version to 4.3.1\n\n* test: cover RawChannel interface lifecycle\n\n* test: expect channel recovery while interface is down",
+          "html_url": "https://github.com/sebi2k1/node-can/commit/f8ec9e143251cd03261e690c9e5eed1e75eb96d8"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [],
+    "2025-11": [],
+    "2025-12": [],
+    "2026-01": [],
+    "2026-02": [],
+    "2026-03": [],
+    "2026-04": [],
+    "2026-05": [
+      {
+        "id": 26710354554,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T10:40:25Z",
+        "updated_at": "2026-05-31T10:41:42Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26710354554"
+      },
+      {
+        "id": 26709137550,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:39:46Z",
+        "updated_at": "2026-05-31T09:40:54Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26709137550"
+      },
+      {
+        "id": 26709042673,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:34:56Z",
+        "updated_at": "2026-05-31T09:36:01Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26709042673"
+      },
+      {
+        "id": 26709027875,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:34:09Z",
+        "updated_at": "2026-05-31T09:35:03Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26709027875"
+      },
+      {
+        "id": 26709022924,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:33:55Z",
+        "updated_at": "2026-05-31T09:35:00Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26709022924"
+      },
+      {
+        "id": 26708985449,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:32:00Z",
+        "updated_at": "2026-05-31T09:33:00Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26708985449"
+      },
+      {
+        "id": 26708907110,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:28:18Z",
+        "updated_at": "2026-05-31T09:29:31Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26708907110"
+      },
+      {
+        "id": 26708812832,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:23:37Z",
+        "updated_at": "2026-05-31T09:24:49Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26708812832"
+      },
+      {
+        "id": 26708764066,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-31T09:21:08Z",
+        "updated_at": "2026-05-31T09:22:06Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26708764066"
+      },
+      {
+        "id": 26597979673,
+        "name": "Publish on NPM",
+        "workflow_id": 992795,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T19:50:26Z",
+        "updated_at": "2026-05-28T19:51:17Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26597979673"
+      },
+      {
+        "id": 26597979573,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T19:42:35Z",
+        "updated_at": "2026-05-28T19:43:29Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26597979573"
+      },
+      {
+        "id": 26496609271,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-27T07:13:19Z",
+        "updated_at": "2026-05-27T07:14:25Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26496609271"
+      },
+      {
+        "id": 26409232195,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-25T16:00:56Z",
+        "updated_at": "2026-05-25T16:01:58Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26409232195"
+      },
+      {
+        "id": 26409223583,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-25T16:00:43Z",
+        "updated_at": "2026-05-25T16:01:35Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26409223583"
+      },
+      {
+        "id": 26409214380,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-25T16:00:30Z",
+        "updated_at": "2026-05-25T16:01:26Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26409214380"
+      },
+      {
+        "id": 26409199597,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-25T16:00:10Z",
+        "updated_at": "2026-05-25T16:01:07Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26409199597"
+      },
+      {
+        "id": 26331954893,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T11:52:52Z",
+        "updated_at": "2026-05-23T11:53:51Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26331954893"
+      },
+      {
+        "id": 26331316021,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T11:20:12Z",
+        "updated_at": "2026-05-23T11:21:05Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26331316021"
+      },
+      {
+        "id": 26331310522,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-23T11:19:55Z",
+        "updated_at": "2026-05-23T11:21:05Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26331310522"
+      }
+    ],
+    "2026-06": [
+      {
+        "id": 28360867433,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-29T09:04:59Z",
+        "updated_at": "2026-06-29T09:06:40Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28360867433"
+      },
+      {
+        "id": 28360846402,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-29T09:04:36Z",
+        "updated_at": "2026-06-29T09:05:52Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28360846402"
+      },
+      {
+        "id": 28360833402,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-29T09:04:21Z",
+        "updated_at": "2026-06-29T09:05:44Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28360833402"
+      },
+      {
+        "id": 28360819548,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-29T09:04:05Z",
+        "updated_at": "2026-06-29T09:05:27Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28360819548"
+      },
+      {
+        "id": 28299372284,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-27T19:26:15Z",
+        "updated_at": "2026-06-27T19:27:34Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28299372284"
+      },
+      {
+        "id": 28074614303,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-24T04:11:54Z",
+        "updated_at": "2026-06-24T04:12:48Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28074614303"
+      },
+      {
+        "id": 28074602999,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-24T04:11:36Z",
+        "updated_at": "2026-06-24T04:12:32Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28074602999"
+      },
+      {
+        "id": 28074592208,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-24T04:11:17Z",
+        "updated_at": "2026-06-24T04:12:17Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28074592208"
+      },
+      {
+        "id": 28074581419,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-24T04:11:02Z",
+        "updated_at": "2026-06-24T04:11:59Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/28074581419"
+      },
+      {
+        "id": 27814977093,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-19T08:35:11Z",
+        "updated_at": "2026-06-19T08:36:05Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/27814977093"
+      },
+      {
+        "id": 27560386436,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-15T16:21:46Z",
+        "updated_at": "2026-06-15T16:23:24Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/27560386436"
+      },
+      {
+        "id": 27560355570,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-15T16:21:08Z",
+        "updated_at": "2026-06-15T16:23:34Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/27560355570"
+      },
+      {
+        "id": 27560340440,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-15T16:20:52Z",
+        "updated_at": "2026-06-15T16:23:08Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/27560340440"
+      },
+      {
+        "id": 27560331586,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-15T16:20:42Z",
+        "updated_at": "2026-06-15T16:23:12Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/27560331586"
+      },
+      {
+        "id": 27560291483,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-15T16:19:59Z",
+        "updated_at": "2026-06-15T16:21:26Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/27560291483"
+      },
+      {
+        "id": 27118803118,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-08T05:55:42Z",
+        "updated_at": "2026-06-08T05:56:47Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/27118803118"
+      },
+      {
+        "id": 27118792582,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-08T05:55:23Z",
+        "updated_at": "2026-06-08T05:56:25Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/27118792582"
+      },
+      {
+        "id": 26780550510,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T20:37:25Z",
+        "updated_at": "2026-06-01T20:38:26Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26780550510"
+      },
+      {
+        "id": 26780478841,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T20:36:06Z",
+        "updated_at": "2026-06-01T20:37:12Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/26780478841"
+      }
+    ],
+    "2026-07": [
+      {
+        "id": 30157409902,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-25T12:06:33Z",
+        "updated_at": "2026-07-25T12:08:00Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/30157409902"
+      },
+      {
+        "id": 30155120829,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-25T10:48:26Z",
+        "updated_at": "2026-07-25T10:49:36Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/30155120829"
+      },
+      {
+        "id": 30154681447,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-25T10:33:43Z",
+        "updated_at": "2026-07-25T10:35:00Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/30154681447"
+      },
+      {
+        "id": 29763920155,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-20T17:30:13Z",
+        "updated_at": "2026-07-20T17:32:07Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29763920155"
+      },
+      {
+        "id": 29763900580,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-20T17:29:58Z",
+        "updated_at": "2026-07-20T17:31:25Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29763900580"
+      },
+      {
+        "id": 29763884702,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-20T17:29:44Z",
+        "updated_at": "2026-07-20T17:31:22Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29763884702"
+      },
+      {
+        "id": 29763873016,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-20T17:29:32Z",
+        "updated_at": "2026-07-20T17:31:09Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29763873016"
+      },
+      {
+        "id": 29306564778,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-14T04:40:50Z",
+        "updated_at": "2026-07-14T04:42:14Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29306564778"
+      },
+      {
+        "id": 29306521676,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-14T04:39:49Z",
+        "updated_at": "2026-07-14T04:41:15Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29306521676"
+      },
+      {
+        "id": 29306511108,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-14T04:39:33Z",
+        "updated_at": "2026-07-14T04:40:56Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29306511108"
+      },
+      {
+        "id": 29306500248,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-14T04:39:17Z",
+        "updated_at": "2026-07-14T04:40:41Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29306500248"
+      },
+      {
+        "id": 29306477524,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-14T04:38:43Z",
+        "updated_at": "2026-07-14T04:40:05Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/29306477524"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 33370591551,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-31T07:56:25Z",
+        "updated_at": "2026-08-31T07:57:50Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/33370591551"
+      },
+      {
+        "id": 33370379409,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-31T07:53:34Z",
+        "updated_at": "2026-08-31T07:55:25Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/33370379409"
+      },
+      {
+        "id": 33370357859,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-31T07:53:15Z",
+        "updated_at": "2026-08-31T07:54:36Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/33370357859"
+      },
+      {
+        "id": 33370333562,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-31T07:52:56Z",
+        "updated_at": "2026-08-31T07:54:20Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/33370333562"
+      },
+      {
+        "id": 31879601373,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-15T10:28:33Z",
+        "updated_at": "2026-08-15T10:30:23Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/31879601373"
+      },
+      {
+        "id": 31878968867,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-15T10:13:10Z",
+        "updated_at": "2026-08-15T10:14:31Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/31878968867"
+      },
+      {
+        "id": 31878804215,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-15T10:09:16Z",
+        "updated_at": "2026-08-15T10:10:37Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/31878804215"
+      },
+      {
+        "id": 31877454981,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-15T09:37:14Z",
+        "updated_at": "2026-08-15T09:38:42Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/31877454981"
+      },
+      {
+        "id": 31877442757,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-15T09:36:59Z",
+        "updated_at": "2026-08-15T09:38:18Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/31877442757"
+      },
+      {
+        "id": 31877429974,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-15T09:36:41Z",
+        "updated_at": "2026-08-15T09:38:10Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/31877429974"
+      },
+      {
+        "id": 31876679366,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-15T09:18:57Z",
+        "updated_at": "2026-08-15T09:20:21Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/31876679366"
+      }
+    ],
+    "2026-09": [
+      {
+        "id": 34106740608,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-07T09:34:01Z",
+        "updated_at": "2026-09-07T09:35:57Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/34106740608"
+      },
+      {
+        "id": 34106430699,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-07T09:30:44Z",
+        "updated_at": "2026-09-07T09:33:54Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/34106430699"
+      },
+      {
+        "id": 34106391783,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-07T09:30:21Z",
+        "updated_at": "2026-09-07T09:33:04Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/34106391783"
+      },
+      {
+        "id": 34106359232,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-07T09:30:04Z",
+        "updated_at": "2026-09-07T09:31:56Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/34106359232"
+      },
+      {
+        "id": 34106356335,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-07T09:30:02Z",
+        "updated_at": "2026-09-07T09:31:34Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/34106356335"
+      },
+      {
+        "id": 34106325742,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-07T09:29:43Z",
+        "updated_at": "2026-09-07T09:31:23Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/34106325742"
+      },
+      {
+        "id": 33956987277,
+        "name": "Full build and test",
+        "workflow_id": 39703054,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-05T09:04:32Z",
+        "updated_at": "2026-09-05T09:06:03Z",
+        "html_url": "https://github.com/sebi2k1/node-can/actions/runs/33956987277"
+      }
+    ]
+  }
+}

@@ -205,6 +205,12 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         type=Path,
         help="Explicit output CSV path; takes precedence over --output-dir.",
     )
+    parser.add_argument(
+        "--population-csv",
+        type=Path,
+        metavar="CSV",
+        help="Restrict the draw to full_name values in the final metrics CSV.",
+    )
     parser.add_argument("--sample-size", type=int, default=DEFAULT_SAMPLE_SIZE)
     parser.add_argument("--random-state", type=int, default=DEFAULT_RANDOM_STATE)
     return parser.parse_args(argv)
@@ -217,6 +223,10 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     try:
         repositories = load_repositories(input_dirs)
+        if args.population_csv:
+            with args.population_csv.open(encoding="utf-8-sig", newline="") as file:
+                population = {row["full_name"].strip() for row in csv.DictReader(file) if row.get("full_name")}
+            repositories = [repository for repository in repositories if repository.full_name in population]
         sample = select_repositories(repositories, args.sample_size, args.random_state)
         write_csv(build_rows(sample, args.random_state), output_path)
     except ValueError as error:

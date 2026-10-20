@@ -4593,8 +4593,21 @@
     {
       "release": "v0.0.41",
       "previous_release": "v0.0.40",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "0d8a8fe1aca3fef121a57dbc2ae67cacb9939ee9",
+          "author_date": "2025-07-22T00:25:13Z",
+          "message": "chore: bump Claude Code version to 1.0.57",
+          "html_url": "https://github.com/anthropics/claude-code-action/commit/0d8a8fe1aca3fef121a57dbc2ae67cacb9939ee9"
+        },
+        {
+          "sha": "8f551b358eb856cb921515b1b024d6152edc30aa",
+          "author_date": "2025-07-22T00:41:25Z",
+          "message": "Add override prompt variable (#301)\n\n* Add override prompt variable\n\n* create test\n\n* Fix typechecks\n\n* remove use of `any` for additional type-safety\n\n---------\n\nCo-authored-by: km-anthropic <km-anthropic@users.noreply.github.com>",
+          "html_url": "https://github.com/anthropics/claude-code-action/commit/8f551b358eb856cb921515b1b024d6152edc30aa"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.0.42",
@@ -4641,8 +4654,15 @@
     {
       "release": "v0.0.50",
       "previous_release": "v0.0.49",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "1f6e3225b088699398302ad624c21c1d780d082f",
+          "author_date": "2025-07-30T21:49:34Z",
+          "message": "chore: bump Claude Code version to 1.0.64",
+          "html_url": "https://github.com/anthropics/claude-code-action/commit/1f6e3225b088699398302ad624c21c1d780d082f"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v0.0.51",
@@ -5283,8 +5303,21 @@
     {
       "release": "v1.0.93",
       "previous_release": "v1.0.92",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c26cb6427d54362f5fd9834ac6818cbaaf82490a",
+          "author_date": "2026-04-10T05:15:24Z",
+          "message": "chore: bump Claude Code to 2.1.100 and Agent SDK to 0.2.98",
+          "html_url": "https://github.com/anthropics/claude-code-action/commit/c26cb6427d54362f5fd9834ac6818cbaaf82490a"
+        },
+        {
+          "sha": "b47fd721da662d48c5680e154ad16a73ed74d2e0",
+          "author_date": "2026-04-10T19:06:59Z",
+          "message": "chore: bump Claude Code to 2.1.101 and Agent SDK to 0.2.101",
+          "html_url": "https://github.com/anthropics/claude-code-action/commit/b47fd721da662d48c5680e154ad16a73ed74d2e0"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.0.94",
@@ -5583,8 +5616,21 @@
     {
       "release": "v1.0.143",
       "previous_release": "v1.0.142",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "232c9a15f49822c165d462e7f0a3aa9287ed2a60",
+          "author_date": "2026-06-09T21:12:16Z",
+          "message": "Drop --tsconfig-override from Bun invocations to avoid runtime crash (#1315)\n\n* Drop --tsconfig-override from Bun invocations to avoid runtime crash\n\nPassing --tsconfig-override to `bun run` triggers a Bun runtime bug\n(\"Internal error: directory mismatch for directory .../tsconfig.json\")\nthat aborts the action with exit code 1 before any work is done.\n\nBun already auto-discovers the action's own tsconfig.json by walking up\nthe directory tree from the entry file, so the override is redundant —\nthe workspace's tsconfig is never an ancestor of the action checkout.\nDropping the flag preserves tsconfig resolution while avoiding the crash.\n\nRefs: oven-sh/bun#25730\n\nhttps://claude.ai/code/session_01L763e4S7zBnzDqmYYEJS1A\n\n* Fix prettier formatting in create-prompt/index.ts\n\nRemoves redundant outer parentheses that were tripping format:check.\nPre-existing on main; unrelated to the action.yml change but needed\nto keep CI green on this branch.\n\nhttps://claude.ai/code/session_01L763e4S7zBnzDqmYYEJS1A\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/anthropics/claude-code-action/commit/232c9a15f49822c165d462e7f0a3aa9287ed2a60"
+        },
+        {
+          "sha": "eee73e2ae5399c561de4ff038aa7b36a7aa991a7",
+          "author_date": "2026-06-10T21:01:40Z",
+          "message": "chore: bump Claude Code to 2.1.172 and Agent SDK to 0.3.172",
+          "html_url": "https://github.com/anthropics/claude-code-action/commit/eee73e2ae5399c561de4ff038aa7b36a7aa991a7"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.0.144",
@@ -6099,8 +6145,15 @@
     {
       "release": "v1.0.229",
       "previous_release": "v1.0.228",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "a4f54ef2c58884867281bd8e2f8d63352ad019a9",
+          "author_date": "2026-09-18T02:13:13Z",
+          "message": "chore: bump Claude Code to 2.1.276 and Agent SDK to 0.3.276",
+          "html_url": "https://github.com/anthropics/claude-code-action/commit/a4f54ef2c58884867281bd8e2f8d63352ad019a9"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v1.0.230",
