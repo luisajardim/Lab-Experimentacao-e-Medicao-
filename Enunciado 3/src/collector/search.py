@@ -102,6 +102,11 @@ def _read_csv(csv_path: Path) -> list[Candidate]:
     return candidates
 
 
+def load_candidate_manifest(csv_path: Path) -> list[Candidate]:
+    """Load a versioned candidate manifest without contacting GitHub."""
+    return _read_csv(csv_path)
+
+
 def _record_query(queries_dir: Path, idx: int, query: str, count: int) -> None:
     queries_dir.mkdir(parents=True, exist_ok=True)
     path = queries_dir / f"query_{idx:03d}.txt"

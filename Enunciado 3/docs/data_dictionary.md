@@ -49,6 +49,7 @@ Uma linha por repositório da amostra final, com **todas** as métricas e as tr�
 | `survival_median_hours` | float | horas | Mediana do tempo de recuperação estimada por **Kaplan-Meier** (`lifelines.KaplanMeierFitter`). | `7.34` |
 | `survival_n_events` | inteiro | episódios | Nº de episódios encerrados (recuperados) usados no Kaplan-Meier. | `149` |
 | `survival_n_censored` | inteiro | episódios | Nº de episódios censurados usados no Kaplan-Meier. | `0` |
+| `recovery_episodes` (`metrics_full.json`) | lista de objetos | horas + booleano | Duração de cada episódio de recovery e se foi censurado; permite refazer a curva Kaplan-Meier agregada sem consultar a API. | `[{"duration_hours": 7.34, "censored": false}]` |
 
 ---
 

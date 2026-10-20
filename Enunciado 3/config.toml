@@ -19,6 +19,7 @@ per_page = 100
 # Critério mínimo de inclusão (ENUNCIADO §3): repositórios abaixo disso saem no funil.
 min_releases = 5
 min_workflow_runs = 50
+final_sample_size = 315
 
 [api]
 base_url = "https://api.github.com"
@@ -36,6 +37,7 @@ cache_db = "data/cache/api_responses.db"
 raw_dir = "data/raw"
 meta_dir = "meta"
 candidates_csv = "data/raw/candidates.csv"
+candidate_manifest_csv = "data/raw/candidate_manifest.csv"
 gold_dir = "data/gold"
 datasets_dir = "data/datasets"
 reports_dir = "reports"

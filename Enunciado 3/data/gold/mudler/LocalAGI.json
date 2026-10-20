@@ -186,6 +186,988 @@
       "ignored_reason": "no_previous_release"
     },
     {
+      "release": "v2.1.0",
+      "previous_release": "v2.0.0",
+      "commits": [
+        {
+          "sha": "42590a7371337fed44fb42e5f4ffdddd8865413f",
+          "author_date": "2025-04-16T06:45:53Z",
+          "message": "chore(deps): Update dependencies (#42)",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/42590a7371337fed44fb42e5f4ffdddd8865413f"
+        },
+        {
+          "sha": "59ab91d7df59cd179ea1ab1fcd7d20280f9da762",
+          "author_date": "2025-04-16T06:54:17Z",
+          "message": "chore: update telegram\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/59ab91d7df59cd179ea1ab1fcd7d20280f9da762"
+        },
+        {
+          "sha": "93154a0a27d1988be9b2540174fb96a10fc1eb50",
+          "author_date": "2025-04-16T07:45:22Z",
+          "message": "chore(deps): bump docker/metadata-action (#43)\n\nBumps [docker/metadata-action](https://github.com/docker/metadata-action) from 2a4836ac76fe8f5d0ee3a0d89aa12a80cc552ad3 to 902fa8ec7d6ecbf8d84d538b9b233a880e428804.\n- [Release notes](https://github.com/docker/metadata-action/releases)\n- [Commits](https://github.com/docker/metadata-action/compare/2a4836ac76fe8f5d0ee3a0d89aa12a80cc552ad3...902fa8ec7d6ecbf8d84d538b9b233a880e428804)\n\n---\nupdated-dependencies:\n- dependency-name: docker/metadata-action\n  dependency-version: 902fa8ec7d6ecbf8d84d538b9b233a880e428804\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/93154a0a27d1988be9b2540174fb96a10fc1eb50"
+        },
+        {
+          "sha": "4a3f471f72e41e922955e89b3a6c4145f21668a4",
+          "author_date": "2025-04-16T17:54:49Z",
+          "message": "docs: update README.md (#48)\n\nseperate -> separate",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/4a3f471f72e41e922955e89b3a6c4145f21668a4"
+        },
+        {
+          "sha": "d25aed9a1a57c574aa4f680edff9080ef3d7ebfc",
+          "author_date": "2025-04-17T06:04:06Z",
+          "message": "chore(deps): bump github.com/sashabaranov/go-openai from 1.19.4 to 1.38.1 (#47)\n\n* chore(deps): bump github.com/sashabaranov/go-openai\n\nBumps [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) from 1.19.4 to 1.38.1.\n- [Release notes](https://github.com/sashabaranov/go-openai/releases)\n- [Commits](https://github.com/sashabaranov/go-openai/compare/v1.19.4...v1.38.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sashabaranov/go-openai\n  dependency-version: 1.38.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* chore: minor adaptations\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/d25aed9a1a57c574aa4f680edff9080ef3d7ebfc"
+        },
+        {
+          "sha": "a6b41fd3abbf5e5a7dd33597f78b45132fa518d9",
+          "author_date": "2025-04-17T08:26:30Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/a6b41fd3abbf5e5a7dd33597f78b45132fa518d9"
+        },
+        {
+          "sha": "4888dfcdca1c45089d82bdbf8d9a8b83fc1796ae",
+          "author_date": "2025-04-17T12:43:52Z",
+          "message": "chore(ui): Switch to text-based Bun lock file to allow diffing (#50)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/4888dfcdca1c45089d82bdbf8d9a8b83fc1796ae"
+        },
+        {
+          "sha": "8ee5956bdbcbc40b5960c783d8af139ab7f40f21",
+          "author_date": "2025-04-17T17:52:10Z",
+          "message": "fix: correct image name, switch to sd-1.5-ggml as default (#51)\n\n* fix: correct image name, switch to flux.1-dev-ggml as default\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* standardize around sd-1.5-ggml since it's smaller\n\nSigned-off-by: mudler <mudler@localai.io>\n\n---------\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8ee5956bdbcbc40b5960c783d8af139ab7f40f21"
+        },
+        {
+          "sha": "43a2a142fa0d342bad3a9d6714b549e47beeb805",
+          "author_date": "2025-04-17T17:53:13Z",
+          "message": "chore(deps-dev): bump globals from 15.15.0 to 16.0.0 in /webui/react-ui (#45)\n\nBumps [globals](https://github.com/sindresorhus/globals) from 15.15.0 to 16.0.0.\n- [Release notes](https://github.com/sindresorhus/globals/releases)\n- [Commits](https://github.com/sindresorhus/globals/compare/v15.15.0...v16.0.0)\n\n---\nupdated-dependencies:\n- dependency-name: globals\n  dependency-version: 16.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/43a2a142fa0d342bad3a9d6714b549e47beeb805"
+        },
+        {
+          "sha": "784a4c7969c55c5a405f561998b15929f461f82b",
+          "author_date": "2025-04-17T20:45:24Z",
+          "message": "fix(githubreader): do not use pointers (#53)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/784a4c7969c55c5a405f561998b15929f461f82b"
+        },
+        {
+          "sha": "70e749b53a9bb3759c751cee87ba6317c2c8b611",
+          "author_date": "2025-04-17T21:01:19Z",
+          "message": "fix(github*): pass by correctly owner and repository (#54)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/70e749b53a9bb3759c751cee87ba6317c2c8b611"
+        },
+        {
+          "sha": "b5a12a1da6b44e616fef7ffe9628b1067286c3e1",
+          "author_date": "2025-04-18T15:32:43Z",
+          "message": "feat(ui): Structured observability/status view (#40)\n\n* refactor(ui): Make message status SSE name more specific\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>\n\n* feat(ui): Add structured observability events\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>\n\n---------\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/b5a12a1da6b44e616fef7ffe9628b1067286c3e1"
+        },
+        {
+          "sha": "50e56fe22feaad54bb0ba8aa1e30de34bb4ec9aa",
+          "author_date": "2025-04-18T20:42:17Z",
+          "message": "feat(browseragent): add browser agent runner action (#55)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/50e56fe22feaad54bb0ba8aa1e30de34bb4ec9aa"
+        },
+        {
+          "sha": "8b2900c6d84f1a95e55ec412062f1fa56d5a2bf5",
+          "author_date": "2025-04-21T19:09:16Z",
+          "message": "chore(deps): bump github.com/sashabaranov/go-openai (#63)\n\nBumps [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) from 1.38.1 to 1.38.2.\n- [Release notes](https://github.com/sashabaranov/go-openai/releases)\n- [Commits](https://github.com/sashabaranov/go-openai/compare/v1.38.1...v1.38.2)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sashabaranov/go-openai\n  dependency-version: 1.38.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8b2900c6d84f1a95e55ec412062f1fa56d5a2bf5"
+        },
+        {
+          "sha": "985f07a52949969da9be9827081f9453b6bf172f",
+          "author_date": "2025-04-21T19:09:39Z",
+          "message": "chore(deps): bump github.com/metoro-io/mcp-golang from 0.9.0 to 0.11.0 (#64)\n\nBumps [github.com/metoro-io/mcp-golang](https://github.com/metoro-io/mcp-golang) from 0.9.0 to 0.11.0.\n- [Release notes](https://github.com/metoro-io/mcp-golang/releases)\n- [Changelog](https://github.com/metoro-io/mcp-golang/blob/main/.goreleaser.yml)\n- [Commits](https://github.com/metoro-io/mcp-golang/compare/v0.9.0...v0.11.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/metoro-io/mcp-golang\n  dependency-version: 0.11.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/985f07a52949969da9be9827081f9453b6bf172f"
+        },
+        {
+          "sha": "8ecc18f76f4e44e46adbfba6ac3b5b50dc662c8b",
+          "author_date": "2025-04-21T19:09:56Z",
+          "message": "chore(deps-dev): bump react-router-dom in /webui/react-ui (#65)\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.5.0 to 7.5.1.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/react-router-dom@7.5.1/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8ecc18f76f4e44e46adbfba6ac3b5b50dc662c8b"
+        },
+        {
+          "sha": "bafd26e92c8be29f3ee5e519b173e2e04d904a17",
+          "author_date": "2025-04-21T19:31:48Z",
+          "message": "chore(deps-dev): bump eslint-plugin-react-hooks in /webui/react-ui (#67)\n\nBumps [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/HEAD/packages/eslint-plugin-react-hooks) from 5.2.0 to 6.0.0.\n- [Release notes](https://github.com/facebook/react/releases)\n- [Changelog](https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/CHANGELOG.md)\n- [Commits](https://github.com/facebook/react/commits/HEAD/packages/eslint-plugin-react-hooks)\n\n---\nupdated-dependencies:\n- dependency-name: eslint-plugin-react-hooks\n  dependency-version: 6.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/bafd26e92c8be29f3ee5e519b173e2e04d904a17"
+        },
+        {
+          "sha": "ee1667d51a319ee1a5dafc5f7d4a7454e3dd0ed5",
+          "author_date": "2025-04-21T20:52:04Z",
+          "message": "feat: add history metadata of agent browser (#71)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/ee1667d51a319ee1a5dafc5f7d4a7454e3dd0ed5"
+        },
+        {
+          "sha": "c4618896cf8b5d81e4467a10843f05985b7a9f53",
+          "author_date": "2025-04-22T09:44:42Z",
+          "message": "chore: default to gemma-3-12b-it-qat (#60)\n\n* chore: default to gemma-3-12b-it-qat\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* fix: simplify tests to run faster\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/c4618896cf8b5d81e4467a10843f05985b7a9f53"
+        },
+        {
+          "sha": "9e5243887753b7ff13fe627ac7ffb84b111d73cd",
+          "author_date": "2025-04-22T09:44:53Z",
+          "message": "chore(deps-dev): bump vite from 6.3.1 to 6.3.2 in /webui/react-ui (#69)\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 6.3.1 to 6.3.2.\n- [Release notes](https://github.com/vitejs/vite/releases)\n- [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite/commits/v6.3.2/packages/vite)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 6.3.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/9e5243887753b7ff13fe627ac7ffb84b111d73cd"
+        },
+        {
+          "sha": "25bb3fb1230973ac1d2b290cfb6013ca1dedb693",
+          "author_date": "2025-04-22T14:49:28Z",
+          "message": "feat: allow the agent to perform things concurrently (#74)\n\n* feat: allow the agent to perform things concurrently\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Apply suggestions from code review\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* collect errors\n\nSigned-off-by: mudler <mudler@localai.io>\n\n---------\n\nSigned-off-by: mudler <mudler@localai.io>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/25bb3fb1230973ac1d2b290cfb6013ca1dedb693"
+        },
+        {
+          "sha": "56cd0e05ca0699ca4e46213f68a8599b95d76f11",
+          "author_date": "2025-04-22T22:12:44Z",
+          "message": "chore: better defaults for parallel jobs (#76)\n\n* chore: better defaults for parallel jobs\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* chore(tests): add timeout\n\n---------\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/56cd0e05ca0699ca4e46213f68a8599b95d76f11"
+        },
+        {
+          "sha": "ce997d24254a7bb0aebf88f878c29352447be983",
+          "author_date": "2025-04-23T13:29:06Z",
+          "message": "fix: Handle state on agent restart and update observables (#75)\n\nKeep some agent start across restarts, such as the SSE manager and\nobserver. This allows restarts to be shown on the state page and also\nallows avatars to be kept when reconfiguring the agent.\n\nAlso observable updates can happen out of order because SSE manager has\nmultiple workers. For now handle this in the client.\n\nFinally fix an issue with the IRC client to make it disconnect and\nhandle being assigned a different nickname by the server.\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/ce997d24254a7bb0aebf88f878c29352447be983"
+        },
+        {
+          "sha": "eb8663ada188acda18f366b7ae3ed9e625c3376a",
+          "author_date": "2025-04-24T14:39:20Z",
+          "message": "feat: local MCP server support (#61)\n\n* wip\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nSigned-off-by: mudler <mudler@localai.io>\n\n* Add groups to mcpbox\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nSigned-off-by: mudler <mudler@localai.io>\n\n* Add mcpbox dockerfile and entrypoint\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Attach mcp stdio box to agent\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nSigned-off-by: mudler <mudler@localai.io>\n\n* Add to dockerfile\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Attach to config\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Attach to ui\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Revert \"Attach to ui\"\n\nThis reverts commit 088d0c47e87ee8f84297e47d178fb7384bbe6d45.\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* add one-time process, attach to UI the mcp server json configuration\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* quality of life improvements\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* fixes\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Make it working, expose MCP prepare script to UI\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Add container image to CI builds\n\n* Wire mcpbox to tests\n\n* Improve setup'\n\n* Not needed anymore, using tests\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* fix: do not override actions\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* chore(tests): fix env var\n\nSigned-off-by: mudler <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/eb8663ada188acda18f366b7ae3ed9e625c3376a"
+        },
+        {
+          "sha": "6a1e536ca760a98ced2ee3af45e09984ec677bb7",
+          "author_date": "2025-04-24T16:01:58Z",
+          "message": "Update README.md (#80)\n\nAdd observability screenshot and bullet point. Also update strap line and descriptions at the top to try and describe the benefit of this software",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/6a1e536ca760a98ced2ee3af45e09984ec677bb7"
+        },
+        {
+          "sha": "547e9cd0c47c32e66716f8043634f05b386969b0",
+          "author_date": "2025-04-24T20:45:29Z",
+          "message": "chore(deps): bump actions/checkout from 2 to 4 (#44)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 2 to 4.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v2...v4)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '4'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/547e9cd0c47c32e66716f8043634f05b386969b0"
+        },
+        {
+          "sha": "12209ab926c8bdd083f6821247a47a444cdedf04",
+          "author_date": "2025-04-24T21:17:10Z",
+          "message": "feat(browseragent): post screenshot on slack (#81)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/12209ab926c8bdd083f6821247a47a444cdedf04"
+        },
+        {
+          "sha": "5e3bc0f89bcbf1c7550473838d46f55dcacc44dd",
+          "author_date": "2025-04-25T14:20:29Z",
+          "message": "fix(discord): automatically add 'Bot' prefix to token if missing (#83)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5e3bc0f89bcbf1c7550473838d46f55dcacc44dd"
+        },
+        {
+          "sha": "15efd2d5279cfd1c4c4660ae5e82ad53d1900f24",
+          "author_date": "2025-04-25T15:04:06Z",
+          "message": "fix(docker): Add mcpbox server to extended compose files (#84)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/15efd2d5279cfd1c4c4660ae5e82ad53d1900f24"
+        },
+        {
+          "sha": "c1844f7230a2077fba78841cae6557526a3ced4e",
+          "author_date": "2025-04-25T15:05:56Z",
+          "message": "chore(mcpbox): use dind (#85)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/c1844f7230a2077fba78841cae6557526a3ced4e"
+        },
+        {
+          "sha": "b81624bfc2c7b15013b24405f07de98979885baa",
+          "author_date": "2025-04-25T15:06:50Z",
+          "message": "chore(mcpbox): use ubuntu:24.04 as base (#86)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/b81624bfc2c7b15013b24405f07de98979885baa"
+        },
+        {
+          "sha": "f6b6d5246cbf87da34af8682c66c763559ee9cf5",
+          "author_date": "2025-04-08T21:41:19Z",
+          "message": "feat(ui): Action playground config and parameter forms\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/f6b6d5246cbf87da34af8682c66c763559ee9cf5"
+        },
+        {
+          "sha": "6209ededff04d39e0d586f2b78e89ae25c2ed359",
+          "author_date": "2025-04-25T16:11:13Z",
+          "message": "fix(ci): add DEBIAN_FRONTEND\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/6209ededff04d39e0d586f2b78e89ae25c2ed359"
+        },
+        {
+          "sha": "5faa5993215a447cb06f7f511bce3c9eda2052ad",
+          "author_date": "2025-04-25T16:19:57Z",
+          "message": "chore(mcpbox): add wget and curl\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5faa5993215a447cb06f7f511bce3c9eda2052ad"
+        },
+        {
+          "sha": "77680c6fee96b68865171d4ad310bf72d0defd7e",
+          "author_date": "2025-04-23T13:11:52Z",
+          "message": "feat(ui): Add summary details of each observable\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/77680c6fee96b68865171d4ad310bf72d0defd7e"
+        },
+        {
+          "sha": "6516af6c34b034486c5016b0d1d9c6f2cdc15c6d",
+          "author_date": "2025-04-25T13:21:25Z",
+          "message": "Update README with videos\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/6516af6c34b034486c5016b0d1d9c6f2cdc15c6d"
+        },
+        {
+          "sha": "f3884c0244f052b48431b2d17635a13a799c250c",
+          "author_date": "2025-04-27T15:42:53Z",
+          "message": "chore(defaults): Enable reasoning by default (#89)",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/f3884c0244f052b48431b2d17635a13a799c250c"
+        },
+        {
+          "sha": "29f7644577a6ae745bb364ce86cada260e80fbca",
+          "author_date": "2025-04-29T06:46:55Z",
+          "message": "feat: add deep research action (#91)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/29f7644577a6ae745bb364ce86cada260e80fbca"
+        },
+        {
+          "sha": "a1efa07b248d7db0b7d9130daf4cc720be95023f",
+          "author_date": "2025-04-29T08:51:00Z",
+          "message": "fix: set default timeout",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/a1efa07b248d7db0b7d9130daf4cc720be95023f"
+        },
+        {
+          "sha": "7406db58823d0a5d7a07d7b5d40f4e43467f79c7",
+          "author_date": "2025-04-29T15:10:11Z",
+          "message": "feat: specify timeout (#97)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/7406db58823d0a5d7a07d7b5d40f4e43467f79c7"
+        },
+        {
+          "sha": "bd1b06f32674f6396ee10a2b6421193cca5aefb9",
+          "author_date": "2025-04-29T15:10:44Z",
+          "message": "chore: Update all deps (#95)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/bd1b06f32674f6396ee10a2b6421193cca5aefb9"
+        },
+        {
+          "sha": "1109b0a533c660f46d7e977adb7e9c5f18dea373",
+          "author_date": "2025-04-30T09:05:39Z",
+          "message": "feat: add option to strip thinking from output (#100)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/1109b0a533c660f46d7e977adb7e9c5f18dea373"
+        },
+        {
+          "sha": "45dd74d27cd9cff0b5fd8eea0c4f10d060663865",
+          "author_date": "2025-04-30T09:44:26Z",
+          "message": "fix: multiline\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/45dd74d27cd9cff0b5fd8eea0c4f10d060663865"
+        },
+        {
+          "sha": "8abf5512a49050f295960b6b0f50ce2af0419c65",
+          "author_date": "2025-04-30T13:51:43Z",
+          "message": "fix(core): Add recursive loop detection and move loop detection (#101)\n\n* fix(core): Add recursive loop detection and move loop detection\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>\n\n* fix(ci): Free up space after installation to avoid out of space error\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>\n\n---------\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8abf5512a49050f295960b6b0f50ce2af0419c65"
+        },
+        {
+          "sha": "67cb5937e7be221d2069b0c31200b73cd5df78e8",
+          "author_date": "2025-04-30T20:15:34Z",
+          "message": "fix: cleanup responses also when not picking any tool (#102)\n\n* fix: process response also when no action is picked\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* chore: rename method to be more meaningful\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/67cb5937e7be221d2069b0c31200b73cd5df78e8"
+        },
+        {
+          "sha": "087a5fbe0ffccc64b601102721ea13f2a459be28",
+          "author_date": "2025-05-01T18:10:19Z",
+          "message": "feat(connectors): add support for Matrix (#82)\n\n* feat(connectors): add support for Matrix\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* make it functional\n\nSigned-off-by: mudler <mudler@localai.io>\n\n---------\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/087a5fbe0ffccc64b601102721ea13f2a459be28"
+        },
+        {
+          "sha": "5981109730b7acb9154d6e50fe1c8b06eb9860db",
+          "author_date": "2025-05-01T19:59:28Z",
+          "message": "feat(github): add option to create PR from forks (#105)\n\n* feat(github): add option to create PR from forks\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* extend delays in waiting forking from github\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: mudler <mudler@localai.io>\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5981109730b7acb9154d6e50fe1c8b06eb9860db"
+        },
+        {
+          "sha": "9c555bd99f24f3480a0b479f5426cf2410324c31",
+          "author_date": "2025-05-01T20:00:07Z",
+          "message": "chore(deps): bump ubuntu from 22.04 to 24.04 (#107)\n\nBumps ubuntu from 22.04 to 24.04.\n\n---\nupdated-dependencies:\n- dependency-name: ubuntu\n  dependency-version: '24.04'\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/9c555bd99f24f3480a0b479f5426cf2410324c31"
+        },
+        {
+          "sha": "62ce629bf1526b500ed6399adb7970feb429cf26",
+          "author_date": "2025-05-01T20:07:41Z",
+          "message": "feat(github): add issue editor (#106)\n\n* feat(github): add issue editor\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Small changes\n\n---------\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/62ce629bf1526b500ed6399adb7970feb429cf26"
+        },
+        {
+          "sha": "f726d3c3e502d5e94614f1c0130be4adcec57c45",
+          "author_date": "2025-05-01T20:08:08Z",
+          "message": "chore(deps): bump github.com/sashabaranov/go-openai from 1.38.2 to 1.38.3 (#93)\n\nchore(deps): bump github.com/sashabaranov/go-openai\n\nBumps [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) from 1.38.2 to 1.38.3.\n- [Release notes](https://github.com/sashabaranov/go-openai/releases)\n- [Commits](https://github.com/sashabaranov/go-openai/compare/v1.38.2...v1.38.3)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sashabaranov/go-openai\n  dependency-version: 1.38.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/f726d3c3e502d5e94614f1c0130be4adcec57c45"
+        },
+        {
+          "sha": "904765591cfaa48d2786010665675725aecd23fd",
+          "author_date": "2025-05-01T20:15:19Z",
+          "message": "fix(github/issue-editor): also update the title",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/904765591cfaa48d2786010665675725aecd23fd"
+        },
+        {
+          "sha": "18eb40ec148c14eb4611b712539842afcff6ac19",
+          "author_date": "2025-05-01T20:24:11Z",
+          "message": "fix(actions): make sure to initialize a config (#109)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/18eb40ec148c14eb4611b712539842afcff6ac19"
+        },
+        {
+          "sha": "c529f880d3adbd0909fb5a086943b861ac9dc07c",
+          "author_date": "2025-05-02T12:49:01Z",
+          "message": "feat(github): add action to list and search files in a repository (#110)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/c529f880d3adbd0909fb5a086943b861ac9dc07c"
+        },
+        {
+          "sha": "5e5224da25a201f82d2286d2908d279246208dc5",
+          "author_date": "2025-05-02T20:34:37Z",
+          "message": "fix(github): skip binary files\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5e5224da25a201f82d2286d2908d279246208dc5"
+        },
+        {
+          "sha": "02c6b5ad4e0806d37b6e8325e1969b224475edd5",
+          "author_date": "2025-05-05T16:33:53Z",
+          "message": "fix(reply): force replying without using tools (#131)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/02c6b5ad4e0806d37b6e8325e1969b224475edd5"
+        },
+        {
+          "sha": "f2c3b9dbdb7cc6d09ffe31e8fba2e4118acdafb2",
+          "author_date": "2025-04-29T20:07:40Z",
+          "message": "feat(filters): Add configurable filters for incoming jobs\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/f2c3b9dbdb7cc6d09ffe31e8fba2e4118acdafb2"
+        },
+        {
+          "sha": "8bdb575bb275914315037e9f3bf0be5aa8563b5d",
+          "author_date": "2025-05-06T08:11:43Z",
+          "message": "chore(deps): bump github.com/go-telegram/bot from 1.14.2 to 1.15.0 (#132)\n\nBumps [github.com/go-telegram/bot](https://github.com/go-telegram/bot) from 1.14.2 to 1.15.0.\n- [Release notes](https://github.com/go-telegram/bot/releases)\n- [Changelog](https://github.com/go-telegram/bot/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/go-telegram/bot/compare/v1.14.2...v1.15.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/go-telegram/bot\n  dependency-version: 1.15.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8bdb575bb275914315037e9f3bf0be5aa8563b5d"
+        },
+        {
+          "sha": "0464a5b344fa59d005994c117c63e029aa9d5236",
+          "author_date": "2025-05-06T08:12:07Z",
+          "message": "chore(deps): bump github.com/sashabaranov/go-openai from 1.39.0 to 1.39.1 (#134)\n\nchore(deps): bump github.com/sashabaranov/go-openai\n\nBumps [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) from 1.39.0 to 1.39.1.\n- [Release notes](https://github.com/sashabaranov/go-openai/releases)\n- [Commits](https://github.com/sashabaranov/go-openai/compare/v1.39.0...v1.39.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sashabaranov/go-openai\n  dependency-version: 1.39.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/0464a5b344fa59d005994c117c63e029aa9d5236"
+        },
+        {
+          "sha": "c92acd670ee8c6594c75a6ad09af93c33b803230",
+          "author_date": "2025-05-06T08:12:31Z",
+          "message": "chore(deps-dev): bump @types/react-dom from 19.1.2 to 19.1.3 in /webui/react-ui (#135)\n\nchore(deps-dev): bump @types/react-dom in /webui/react-ui\n\nBumps [@types/react-dom](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react-dom) from 19.1.2 to 19.1.3.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react-dom)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react-dom\"\n  dependency-version: 19.1.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/c92acd670ee8c6594c75a6ad09af93c33b803230"
+        },
+        {
+          "sha": "cc3fdecfc9936a7e34b89c5af2894d45e47d8e94",
+          "author_date": "2025-05-06T20:24:11Z",
+          "message": "feat(telegram): show thought process (#140)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/cc3fdecfc9936a7e34b89c5af2894d45e47d8e94"
+        },
+        {
+          "sha": "94f4d350c9feb6d32c5e86c28b97e5a913871553",
+          "author_date": "2025-05-06T20:38:33Z",
+          "message": "feat(telegram): handle correctly generated multimedia and links (#141)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/94f4d350c9feb6d32c5e86c28b97e5a913871553"
+        },
+        {
+          "sha": "fb1ab70650723915be2aa6bc555a48132e104bf6",
+          "author_date": "2025-05-07T18:10:51Z",
+          "message": "fix(telegram): upload of images (#143)\n\n* fix(telegram): upload of images\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Parse markdown\n\nSigned-off-by: mudler <mudler@localai.io>\n\n---------\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/fb1ab70650723915be2aa6bc555a48132e104bf6"
+        },
+        {
+          "sha": "0e4e60cc155cb5553e2dacf54b09738feb166973",
+          "author_date": "2025-05-07T16:54:42Z",
+          "message": "fix(playground): convert fieldType number to string for json unmarshalling",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/0e4e60cc155cb5553e2dacf54b09738feb166973"
+        },
+        {
+          "sha": "8b504a5e1e2be54986327a822667755150534caa",
+          "author_date": "2025-05-07T20:22:41Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8b504a5e1e2be54986327a822667755150534caa"
+        },
+        {
+          "sha": "2bacac687f7a20e16f9ceeac086f3534e6ef15ef",
+          "author_date": "2025-05-07T20:23:04Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/2bacac687f7a20e16f9ceeac086f3534e6ef15ef"
+        },
+        {
+          "sha": "324124e002d93a76108dc874b4750ab185f33b47",
+          "author_date": "2025-05-07T20:23:31Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/324124e002d93a76108dc874b4750ab185f33b47"
+        },
+        {
+          "sha": "289edb67a69d084e13063ba690fd58b7a0b525a0",
+          "author_date": "2025-05-10T20:27:34Z",
+          "message": "feat(call_agents): allow to specify whitelist and blacklist agents (#144)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/289edb67a69d084e13063ba690fd58b7a0b525a0"
+        },
+        {
+          "sha": "e431bc234b9d81eeab612e845150dca818f9257c",
+          "author_date": "2025-05-11T16:31:04Z",
+          "message": "feat(evaluation): add deep evaluation mechanism (#145)\n\n* feat(evaluation): add deep evaluation mechanism\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* consider whole conversation when evaluating\n\nSigned-off-by: mudler <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/e431bc234b9d81eeab612e845150dca818f9257c"
+        },
+        {
+          "sha": "8d527d6a09fef2808454f8a474e8f76c40685836",
+          "author_date": "2025-05-11T16:40:16Z",
+          "message": "Update README",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8d527d6a09fef2808454f8a474e8f76c40685836"
+        },
+        {
+          "sha": "cc0f5cbdccc5e6c865facd54f0b2e600247bbcc2",
+          "author_date": "2025-05-11T16:41:43Z",
+          "message": "Update README",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/cc0f5cbdccc5e6c865facd54f0b2e600247bbcc2"
+        },
+        {
+          "sha": "60c53c8f3ec1673251e83f305bfeba65511b9799",
+          "author_date": "2025-05-11T16:43:17Z",
+          "message": "Update README",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/60c53c8f3ec1673251e83f305bfeba65511b9799"
+        },
+        {
+          "sha": "864bf8b94cc35934a955089fceffef4c6229dee7",
+          "author_date": "2025-05-11T17:01:25Z",
+          "message": "fix(telegram): split long messages (#146)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/864bf8b94cc35934a955089fceffef4c6229dee7"
+        },
+        {
+          "sha": "2b07dd79ecdb630c1d28ab59f437430b721f8dbc",
+          "author_date": "2025-05-11T17:17:20Z",
+          "message": "feat(telegram): add action to send telegram message (#147)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/2b07dd79ecdb630c1d28ab59f437430b721f8dbc"
+        },
+        {
+          "sha": "c23e655f44ba649aac803ff840e46c613cb0d31c",
+          "author_date": "2025-05-11T20:23:01Z",
+          "message": "feat(agent): shared state, allow to track conversations globally (#148)\n\n* feat(agent): shared state, allow to track conversations globally\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* Cleanup\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* track conversations initiated by the bot\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/c23e655f44ba649aac803ff840e46c613cb0d31c"
+        },
+        {
+          "sha": "1a53d24890d5776f443668ec933d6f9760cc675a",
+          "author_date": "2025-05-13T11:10:23Z",
+          "message": "fix(matrix): Stop Sync Go routine and correct logs (#154)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/1a53d24890d5776f443668ec933d6f9760cc675a"
+        },
+        {
+          "sha": "fd60daad7a1077c7690846bbf96a7fee820fb253",
+          "author_date": "2025-05-13T12:39:54Z",
+          "message": "chore(deps-dev): bump @types/react-dom from 19.1.3 to 19.1.4 in /webui/react-ui (#153)\n\nchore(deps-dev): bump @types/react-dom in /webui/react-ui\n\nBumps [@types/react-dom](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react-dom) from 19.1.3 to 19.1.4.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react-dom)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react-dom\"\n  dependency-version: 19.1.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/fd60daad7a1077c7690846bbf96a7fee820fb253"
+        },
+        {
+          "sha": "255435c260ea8e36fba81b88de87875f1882f322",
+          "author_date": "2025-05-13T20:04:20Z",
+          "message": "Update docker-compose.yaml",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/255435c260ea8e36fba81b88de87875f1882f322"
+        },
+        {
+          "sha": "f97865f7d8ec1f661923d719447354261699c402",
+          "author_date": "2025-05-13T20:05:22Z",
+          "message": "Update docker-compose.yaml",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/f97865f7d8ec1f661923d719447354261699c402"
+        },
+        {
+          "sha": "4c2ca24203643c1e81689a0a201a46d03c9c1fd7",
+          "author_date": "2025-05-13T20:07:43Z",
+          "message": "chore(deps-dev): bump vite from 6.3.3 to 6.3.5 in /webui/react-ui (#136)\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 6.3.3 to 6.3.5.\n- [Release notes](https://github.com/vitejs/vite/releases)\n- [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite/commits/v6.3.5/packages/vite)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 6.3.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/4c2ca24203643c1e81689a0a201a46d03c9c1fd7"
+        },
+        {
+          "sha": "a288ea9a36a12c9ff4ec4d4bdfef6427bbae27ad",
+          "author_date": "2025-05-13T21:03:53Z",
+          "message": "chore(deps-dev): bump react-router-dom from 7.5.3 to 7.6.0 in /webui/react-ui (#152)\n\nchore(deps-dev): bump react-router-dom in /webui/react-ui\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.5.3 to 7.6.0.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/react-router-dom@7.6.0/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/a288ea9a36a12c9ff4ec4d4bdfef6427bbae27ad"
+        },
+        {
+          "sha": "112cb1f955583a3ef51454949471f8c47b3fdeca",
+          "author_date": "2025-05-13T22:09:43Z",
+          "message": "fix(core): Add prompt generated from KB to conv (#156)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/112cb1f955583a3ef51454949471f8c47b3fdeca"
+        },
+        {
+          "sha": "e1c44d3f5cb1c45a36f134b872af182f9296d1cd",
+          "author_date": "2025-05-13T21:05:11Z",
+          "message": "chore(deps-dev): bump eslint from 9.25.1 to 9.26.0 in /webui/react-ui\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.25.1 to 9.26.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.25.1...v9.26.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.26.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/e1c44d3f5cb1c45a36f134b872af182f9296d1cd"
+        },
+        {
+          "sha": "2b4b2c513c41153038f08f748cd457b7e3e52bf2",
+          "author_date": "2025-05-15T14:35:39Z",
+          "message": "feat: email connector (#157)\n\n* new: add email connection shell\n\n* new: add secure & insecure smtp\n\n* new: read email\n\n* new: more email logic\n\n* feat: automatically reply\n\n* feat: poc email response\n\n* feat: introduce email concurrency and reply functionality\n\n* feat: html replies\n\n* refactor: make email.go legible\n\n* feat: add email connection docs\n\n* fix: startup error handling and dial error",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/2b4b2c513c41153038f08f748cd457b7e3e52bf2"
+        },
+        {
+          "sha": "8849a9ba1b2aafc17cde7dbfdad5d544e45b1a64",
+          "author_date": "2025-05-13T21:11:10Z",
+          "message": "fix(matrix): Limit msg history to stop responses to old msgs\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8849a9ba1b2aafc17cde7dbfdad5d544e45b1a64"
+        },
+        {
+          "sha": "367832ddb21980ddfb755e0cb03a142bcc9f930d",
+          "author_date": "2025-05-14T11:11:47Z",
+          "message": "feat(core): Add observability for KB lookup\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/367832ddb21980ddfb755e0cb03a142bcc9f930d"
+        },
+        {
+          "sha": "a03098b01e170bca26ba53a3d5dc20342a989a65",
+          "author_date": "2025-05-15T10:39:24Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/a03098b01e170bca26ba53a3d5dc20342a989a65"
+        },
+        {
+          "sha": "a3977c2b1c956f6dbe5f65f1e32840a6ec040e93",
+          "author_date": "2025-05-15T22:08:50Z",
+          "message": "fix: errored ssh output (#158)\n\nfix: explain ssh output",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/a3977c2b1c956f6dbe5f65f1e32840a6ec040e93"
+        },
+        {
+          "sha": "a668830a799cdb81e680461b77d2029308866523",
+          "author_date": "2025-05-17T20:17:51Z",
+          "message": "chore(docker-compose): update LocalAI images (#160)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/a668830a799cdb81e680461b77d2029308866523"
+        },
+        {
+          "sha": "4a0d3a7a9464cdc3db7290062c30b73d5b932f28",
+          "author_date": "2025-05-17T21:34:51Z",
+          "message": "feat(sshbox): add sshbox to run commands (#161)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/4a0d3a7a9464cdc3db7290062c30b73d5b932f28"
+        },
+        {
+          "sha": "48f15a479a9d88ff670b9a036d32a692448bdd1e",
+          "author_date": "2025-05-18T12:20:38Z",
+          "message": "chore(deps): bump github.com/metoro-io/mcp-golang from 0.11.0 to 0.12.0 (#151)\n\nBumps [github.com/metoro-io/mcp-golang](https://github.com/metoro-io/mcp-golang) from 0.11.0 to 0.12.0.\n- [Release notes](https://github.com/metoro-io/mcp-golang/releases)\n- [Changelog](https://github.com/metoro-io/mcp-golang/blob/main/.goreleaser.yml)\n- [Commits](https://github.com/metoro-io/mcp-golang/compare/v0.11.0...v0.12.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/metoro-io/mcp-golang\n  dependency-version: 0.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/48f15a479a9d88ff670b9a036d32a692448bdd1e"
+        },
+        {
+          "sha": "843a912a03a086b1d261df0946b1b80f537af460",
+          "author_date": "2025-05-18T12:20:59Z",
+          "message": "chore(deps): bump github.com/valyala/fasthttp from 1.61.0 to 1.62.0 (#150)\n\nBumps [github.com/valyala/fasthttp](https://github.com/valyala/fasthttp) from 1.61.0 to 1.62.0.\n- [Release notes](https://github.com/valyala/fasthttp/releases)\n- [Commits](https://github.com/valyala/fasthttp/compare/v1.61.0...v1.62.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/valyala/fasthttp\n  dependency-version: 1.62.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/843a912a03a086b1d261df0946b1b80f537af460"
+        },
+        {
+          "sha": "b01d46908939b400c31f734e7d4309e31356436c",
+          "author_date": "2025-05-18T12:21:32Z",
+          "message": "chore(deps-dev): bump @eslint/js from 9.25.1 to 9.26.0 in /webui/react-ui (#138)\n\nchore(deps-dev): bump @eslint/js in /webui/react-ui\n\nBumps [@eslint/js](https://github.com/eslint/eslint/tree/HEAD/packages/js) from 9.25.1 to 9.26.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/commits/v9.26.0/packages/js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@eslint/js\"\n  dependency-version: 9.26.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/b01d46908939b400c31f734e7d4309e31356436c"
+        },
+        {
+          "sha": "35eb9ee25920f29eb912194eaa8bd0c79aa90bf4",
+          "author_date": "2025-05-19T06:35:03Z",
+          "message": "ci: enable multi-arch Docker builds for amd64 and arm64 in image workflow (#164)",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/35eb9ee25920f29eb912194eaa8bd0c79aa90bf4"
+        },
+        {
+          "sha": "02284998891333c9fa0709f74e0ace83b5ab0496",
+          "author_date": "2025-05-20T19:57:52Z",
+          "message": "chore(deps-dev): bump @eslint/js from 9.26.0 to 9.27.0 in /webui/react-ui (#171)\n\nchore(deps-dev): bump @eslint/js in /webui/react-ui\n\nBumps [@eslint/js](https://github.com/eslint/eslint/tree/HEAD/packages/js) from 9.26.0 to 9.27.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/commits/v9.27.0/packages/js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@eslint/js\"\n  dependency-version: 9.27.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/02284998891333c9fa0709f74e0ace83b5ab0496"
+        },
+        {
+          "sha": "fb1643f1c1e6925c2ca68a46c2a6a76203658c85",
+          "author_date": "2025-05-20T19:58:32Z",
+          "message": "chore(deps-dev): bump @types/react-dom from 19.1.4 to 19.1.5 in /webui/react-ui (#167)\n\nchore(deps-dev): bump @types/react-dom in /webui/react-ui\n\nBumps [@types/react-dom](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react-dom) from 19.1.4 to 19.1.5.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react-dom)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react-dom\"\n  dependency-version: 19.1.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/fb1643f1c1e6925c2ca68a46c2a6a76203658c85"
+        },
+        {
+          "sha": "9caaaf187a89231fe8867b6ce85f97970149c710",
+          "author_date": "2025-05-21T15:29:56Z",
+          "message": "chore(deps-dev): bump @types/react from 19.1.2 to 19.1.4 in /webui/react-ui (#169)\n\nchore(deps-dev): bump @types/react in /webui/react-ui\n\nBumps [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react) from 19.1.2 to 19.1.4.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react\"\n  dependency-version: 19.1.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/9caaaf187a89231fe8867b6ce85f97970149c710"
+        },
+        {
+          "sha": "490bf998a4b153c3dfd1884d1452478a22fa1187",
+          "author_date": "2025-05-21T15:33:23Z",
+          "message": "chore(deps-dev): bump eslint from 9.26.0 to 9.27.0 in /webui/react-ui (#165)\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.26.0 to 9.27.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.26.0...v9.27.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.27.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/490bf998a4b153c3dfd1884d1452478a22fa1187"
+        },
+        {
+          "sha": "9a90153dc6abb4216a12ef16d082b94c7930a4f1",
+          "author_date": "2025-05-24T20:15:33Z",
+          "message": "feat(reminders): add reminder system to perform long-term goals in the background (#176)\n\n* feat(reminders): add self-ability to set reminders\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* feat(reminders): surface reminders result to the user as new conversations\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* Fixups\n\n* Subscribe all connectors to agents new messages\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* Set reminders in the list\n\n* fix(telegram): do not always auth\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* Small fixups\n\n* Improve UX\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/9a90153dc6abb4216a12ef16d082b94c7930a4f1"
+        },
+        {
+          "sha": "37aa532cc2bf077522d964eac95473246e205ff1",
+          "author_date": "2025-05-26T07:40:41Z",
+          "message": "feat(telegram): Add support for groups (#183)\n\nAdd support for groups\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/37aa532cc2bf077522d964eac95473246e205ff1"
+        },
+        {
+          "sha": "5af97a5dd322064d8960361f9de9544b50124c51",
+          "author_date": "2025-05-28T20:02:17Z",
+          "message": "chore(deps): bump github.com/gofiber/fiber/v2 from 2.52.6 to 2.52.8 (#190)\n\nBumps [github.com/gofiber/fiber/v2](https://github.com/gofiber/fiber) from 2.52.6 to 2.52.8.\n- [Release notes](https://github.com/gofiber/fiber/releases)\n- [Commits](https://github.com/gofiber/fiber/compare/v2.52.6...v2.52.8)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/gofiber/fiber/v2\n  dependency-version: 2.52.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5af97a5dd322064d8960361f9de9544b50124c51"
+        },
+        {
+          "sha": "4a0ff179904efd1e9e43fee7fddce2b7782cdb09",
+          "author_date": "2025-05-28T20:02:31Z",
+          "message": "chore(deps): bump github.com/metoro-io/mcp-golang from 0.12.0 to 0.13.0 (#189)\n\nBumps [github.com/metoro-io/mcp-golang](https://github.com/metoro-io/mcp-golang) from 0.12.0 to 0.13.0.\n- [Release notes](https://github.com/metoro-io/mcp-golang/releases)\n- [Changelog](https://github.com/metoro-io/mcp-golang/blob/main/.goreleaser.yml)\n- [Commits](https://github.com/metoro-io/mcp-golang/compare/v0.12.0...v0.13.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/metoro-io/mcp-golang\n  dependency-version: 0.13.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/4a0ff179904efd1e9e43fee7fddce2b7782cdb09"
+        },
+        {
+          "sha": "e2679fae5cd2ad624fdc51f66b14a1442e1c4b95",
+          "author_date": "2025-05-28T20:02:47Z",
+          "message": "chore(deps-dev): bump react-router-dom from 7.6.0 to 7.6.1 in /webui/react-ui (#186)\n\nchore(deps-dev): bump react-router-dom in /webui/react-ui\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.6.0 to 7.6.1.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/react-router-dom@7.6.1/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.6.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/e2679fae5cd2ad624fdc51f66b14a1442e1c4b95"
+        },
+        {
+          "sha": "037aab3bddf70f98e1da6447a61d4dfe7a1736ca",
+          "author_date": "2025-05-28T20:03:02Z",
+          "message": "chore(deps-dev): bump @vitejs/plugin-react from 4.4.1 to 4.5.0 in /webui/react-ui (#184)\n\nchore(deps-dev): bump @vitejs/plugin-react in /webui/react-ui\n\nBumps [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/tree/HEAD/packages/plugin-react) from 4.4.1 to 4.5.0.\n- [Release notes](https://github.com/vitejs/vite-plugin-react/releases)\n- [Changelog](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite-plugin-react/commits/plugin-react@4.5.0/packages/plugin-react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@vitejs/plugin-react\"\n  dependency-version: 4.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/037aab3bddf70f98e1da6447a61d4dfe7a1736ca"
+        },
+        {
+          "sha": "c9bc5808c200f3d320afa073a1c848db0a3dbdcb",
+          "author_date": "2025-06-01T07:23:07Z",
+          "message": "chore(deps): bump github.com/sashabaranov/go-openai from 1.39.1 to 1.40.0 (#170)\n\nchore(deps): bump github.com/sashabaranov/go-openai\n\nBumps [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) from 1.39.1 to 1.40.0.\n- [Release notes](https://github.com/sashabaranov/go-openai/releases)\n- [Commits](https://github.com/sashabaranov/go-openai/compare/v1.39.1...v1.40.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sashabaranov/go-openai\n  dependency-version: 1.40.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/c9bc5808c200f3d320afa073a1c848db0a3dbdcb"
+        },
+        {
+          "sha": "f0dac5ca228fb2edc6f18645a938b40e51903010",
+          "author_date": "2025-06-01T07:23:24Z",
+          "message": "chore(deps-dev): bump globals from 16.0.0 to 16.2.0 in /webui/react-ui (#185)\n\nBumps [globals](https://github.com/sindresorhus/globals) from 16.0.0 to 16.2.0.\n- [Release notes](https://github.com/sindresorhus/globals/releases)\n- [Commits](https://github.com/sindresorhus/globals/compare/v16.0.0...v16.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: globals\n  dependency-version: 16.2.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/f0dac5ca228fb2edc6f18645a938b40e51903010"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v2.2.0",
+      "previous_release": "v2.1.0",
+      "commits": [
+        {
+          "sha": "56b6f7240cd10029192847edb5903f22d65b5da4",
+          "author_date": "2025-06-01T08:11:04Z",
+          "message": "feat: improve parameter generation by forcing reasoning (#193)\n\n* feat: improve parameter generation by forcing reasoning\n\nSigned-off-by: mudler <mudler@localai.io>\n\n* Update core/agent/actions.go\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Update core/agent/actions.go\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Try to change default models\n\nSigned-off-by: mudler <mudler@localai.io>\n\n---------\n\nSigned-off-by: mudler <mudler@localai.io>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/56b6f7240cd10029192847edb5903f22d65b5da4"
+        },
+        {
+          "sha": "50cad776aaa62d045560c32e50ce321752354ad4",
+          "author_date": "2025-06-02T08:29:19Z",
+          "message": "feat: do not use JSON extraction for reasoning (#194)\n\nSigned-off-by: mudler <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/50cad776aaa62d045560c32e50ce321752354ad4"
+        },
+        {
+          "sha": "80871db0de7dc91fcf8105a675368d6fdedcf8c2",
+          "author_date": "2025-06-03T06:21:15Z",
+          "message": "chore(deps): bump github.com/bwmarrin/discordgo from 0.28.1 to 0.29.0 (#197)\n\nBumps [github.com/bwmarrin/discordgo](https://github.com/bwmarrin/discordgo) from 0.28.1 to 0.29.0.\n- [Release notes](https://github.com/bwmarrin/discordgo/releases)\n- [Commits](https://github.com/bwmarrin/discordgo/compare/v0.28.1...v0.29.0)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/bwmarrin/discordgo\n  dependency-version: 0.29.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/80871db0de7dc91fcf8105a675368d6fdedcf8c2"
+        },
+        {
+          "sha": "e2de768e09675ea625e76a81e9702cc4ea5266b0",
+          "author_date": "2025-06-03T06:21:41Z",
+          "message": "chore(deps-dev): bump eslint from 9.27.0 to 9.28.0 in /webui/react-ui (#198)\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.27.0 to 9.28.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.27.0...v9.28.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.28.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/e2de768e09675ea625e76a81e9702cc4ea5266b0"
+        },
+        {
+          "sha": "cff90bc709e7ef0564f19d9dc97d4e3541aaa3c8",
+          "author_date": "2025-06-03T06:22:02Z",
+          "message": "chore(deps): bump github.com/JohannesKaufmann/html-to-markdown/v2 from 2.3.2 to 2.3.3 (#199)\n\nchore(deps): bump github.com/JohannesKaufmann/html-to-markdown/v2\n\nBumps [github.com/JohannesKaufmann/html-to-markdown/v2](https://github.com/JohannesKaufmann/html-to-markdown) from 2.3.2 to 2.3.3.\n- [Release notes](https://github.com/JohannesKaufmann/html-to-markdown/releases)\n- [Changelog](https://github.com/JohannesKaufmann/html-to-markdown/blob/main/.goreleaser.yaml)\n- [Commits](https://github.com/JohannesKaufmann/html-to-markdown/compare/v2.3.2...v2.3.3)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/JohannesKaufmann/html-to-markdown/v2\n  dependency-version: 2.3.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/cff90bc709e7ef0564f19d9dc97d4e3541aaa3c8"
+        },
+        {
+          "sha": "aafbd9159a87aba128c38723bc8487f872207a94",
+          "author_date": "2025-06-04T07:25:22Z",
+          "message": "chore(deps-dev): bump @eslint/js from 9.27.0 to 9.28.0 in /webui/react-ui (#200)\n\nchore(deps-dev): bump @eslint/js in /webui/react-ui\n\nBumps [@eslint/js](https://github.com/eslint/eslint/tree/HEAD/packages/js) from 9.27.0 to 9.28.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/commits/v9.28.0/packages/js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@eslint/js\"\n  dependency-version: 9.28.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/aafbd9159a87aba128c38723bc8487f872207a94"
+        },
+        {
+          "sha": "1313f805aeb329e2cb4f323391376e23a77dd02e",
+          "author_date": "2025-06-10T15:47:55Z",
+          "message": "chore(deps-dev): bump @types/react from 19.1.4 to 19.1.6 in /webui/react-ui (#201)\n\nchore(deps-dev): bump @types/react in /webui/react-ui\n\nBumps [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react) from 19.1.4 to 19.1.6.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react\"\n  dependency-version: 19.1.6\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/1313f805aeb329e2cb4f323391376e23a77dd02e"
+        },
+        {
+          "sha": "e97cd43cdb5c898f91c7b2eac056fd87c494931e",
+          "author_date": "2025-06-10T15:48:12Z",
+          "message": "chore(deps): bump github.com/slack-go/slack from 0.16.0 to 0.17.1 (#202)\n\nBumps [github.com/slack-go/slack](https://github.com/slack-go/slack) from 0.16.0 to 0.17.1.\n- [Release notes](https://github.com/slack-go/slack/releases)\n- [Changelog](https://github.com/slack-go/slack/blob/master/history.go)\n- [Commits](https://github.com/slack-go/slack/compare/v0.16.0...v0.17.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/slack-go/slack\n  dependency-version: 0.17.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/e97cd43cdb5c898f91c7b2eac056fd87c494931e"
+        },
+        {
+          "sha": "15237d313772b5566af6b6f6d301e56036285b94",
+          "author_date": "2025-06-10T15:48:41Z",
+          "message": "chore(deps): bump golang.org/x/crypto from 0.38.0 to 0.39.0 (#203)\n\nBumps [golang.org/x/crypto](https://github.com/golang/crypto) from 0.38.0 to 0.39.0.\n- [Commits](https://github.com/golang/crypto/compare/v0.38.0...v0.39.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/crypto\n  dependency-version: 0.39.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/15237d313772b5566af6b6f6d301e56036285b94"
+        },
+        {
+          "sha": "a0a9299cdae1c7e83bc34bec3d3913165fd46f8e",
+          "author_date": "2025-06-10T15:48:58Z",
+          "message": "chore(deps-dev): bump react-router-dom from 7.6.1 to 7.6.2 in /webui/react-ui (#204)\n\nchore(deps-dev): bump react-router-dom in /webui/react-ui\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.6.1 to 7.6.2.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/7.6.2/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.6.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/a0a9299cdae1c7e83bc34bec3d3913165fd46f8e"
+        },
+        {
+          "sha": "13e0f12c1bf4c26b73af8635378cb2d1d0d109a6",
+          "author_date": "2025-06-10T15:50:49Z",
+          "message": "fix(api): Use RawMessage for nested polymorphic JSON in OpenAI request input (#207)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/13e0f12c1bf4c26b73af8635378cb2d1d0d109a6"
+        },
+        {
+          "sha": "da7cb91f83e00bce7d0cb63cbca893de493e1542",
+          "author_date": "2025-06-10T16:34:49Z",
+          "message": "chore(deps-dev): bump @types/react-dom from 19.1.5 to 19.1.6 in /webui/react-ui (#205)\n\nchore(deps-dev): bump @types/react-dom in /webui/react-ui\n\nBumps [@types/react-dom](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react-dom) from 19.1.5 to 19.1.6.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react-dom)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react-dom\"\n  dependency-version: 19.1.6\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/da7cb91f83e00bce7d0cb63cbca893de493e1542"
+        },
+        {
+          "sha": "2a6378764bd60b69233b2d3ba0cddf7352d5c1be",
+          "author_date": "2025-06-10T16:41:11Z",
+          "message": "chore(deps): bump github.com/sashabaranov/go-openai from 1.40.0 to 1.40.1 (#196)\n\nchore(deps): bump github.com/sashabaranov/go-openai\n\nBumps [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) from 1.40.0 to 1.40.1.\n- [Release notes](https://github.com/sashabaranov/go-openai/releases)\n- [Commits](https://github.com/sashabaranov/go-openai/compare/v1.40.0...v1.40.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sashabaranov/go-openai\n  dependency-version: 1.40.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/2a6378764bd60b69233b2d3ba0cddf7352d5c1be"
+        },
+        {
+          "sha": "863c6f3dcb3020adcfeadbd4584f6bede9efaa3c",
+          "author_date": "2025-06-10T17:04:20Z",
+          "message": "chore(deps-dev): bump @vitejs/plugin-react from 4.5.0 to 4.5.1 in /webui/react-ui (#206)\n\nchore(deps-dev): bump @vitejs/plugin-react in /webui/react-ui\n\nBumps [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/tree/HEAD/packages/plugin-react) from 4.5.0 to 4.5.1.\n- [Release notes](https://github.com/vitejs/vite-plugin-react/releases)\n- [Changelog](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite-plugin-react/commits/plugin-react@4.5.1/packages/plugin-react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@vitejs/plugin-react\"\n  dependency-version: 4.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/863c6f3dcb3020adcfeadbd4584f6bede9efaa3c"
+        },
+        {
+          "sha": "6e999927ec23df177decbcb7de971f5a16de0af5",
+          "author_date": "2025-06-23T16:31:18Z",
+          "message": "fix: use correct env key in panic (#215)",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/6e999927ec23df177decbcb7de971f5a16de0af5"
+        },
+        {
+          "sha": "86659e704ae78838a1585784c8490c92ca3802de",
+          "author_date": "2025-06-23T16:32:37Z",
+          "message": "Fix/catch nil panic (#216)\n\n* fix: use correct env key in panic\n\n* fix: prevent panic, catch nil pointer",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/86659e704ae78838a1585784c8490c92ca3802de"
+        },
+        {
+          "sha": "7a8b3d93cff052c19e78692912834f16948151e4",
+          "author_date": "2025-06-24T07:40:40Z",
+          "message": "chore(deps-dev): bump @vitejs/plugin-react from 4.5.2 to 4.6.0 in /webui/react-ui (#217)\n\nchore(deps-dev): bump @vitejs/plugin-react in /webui/react-ui\n\nBumps [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/tree/HEAD/packages/plugin-react) from 4.5.2 to 4.6.0.\n- [Release notes](https://github.com/vitejs/vite-plugin-react/releases)\n- [Changelog](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite-plugin-react/commits/plugin-react@4.6.0/packages/plugin-react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@vitejs/plugin-react\"\n  dependency-version: 4.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/7a8b3d93cff052c19e78692912834f16948151e4"
+        },
+        {
+          "sha": "9160ca598e991fbf7b3d942b8ca0bcff533bb165",
+          "author_date": "2025-06-24T21:00:45Z",
+          "message": "fix(multimodal): fix multimodal input in telegram and slack (#219)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/9160ca598e991fbf7b3d942b8ca0bcff533bb165"
+        },
+        {
+          "sha": "ff6890c9c1c8ed2342ab8228a09630ff48399afa",
+          "author_date": "2025-06-12T04:11:43Z",
+          "message": "feat(api): Handle tool calls in responses API\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/ff6890c9c1c8ed2342ab8228a09630ff48399afa"
+        },
+        {
+          "sha": "aff460c7c20bdf5d5408715bad475020443c4b83",
+          "author_date": "2025-06-25T19:46:14Z",
+          "message": "chore(deps-dev): bump @types/react from 19.1.6 to 19.1.8 in /webui/react-ui (#213)\n\nchore(deps-dev): bump @types/react in /webui/react-ui\n\nBumps [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react) from 19.1.6 to 19.1.8.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react\"\n  dependency-version: 19.1.8\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/aff460c7c20bdf5d5408715bad475020443c4b83"
+        },
+        {
+          "sha": "578de58e445c232092f8b8fa313a42862148f1d6",
+          "author_date": "2025-06-25T19:46:26Z",
+          "message": "chore(deps-dev): bump eslint from 9.28.0 to 9.29.0 in /webui/react-ui (#211)\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.28.0 to 9.29.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.28.0...v9.29.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.29.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/578de58e445c232092f8b8fa313a42862148f1d6"
+        },
+        {
+          "sha": "e4da4b307c060c845a24182f37970a80d62d3daa",
+          "author_date": "2025-06-28T15:40:08Z",
+          "message": "Update README with docs on how to create custom actions\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/e4da4b307c060c845a24182f37970a80d62d3daa"
+        },
+        {
+          "sha": "62723267a97508e6dced6e0b4704e73ec1fc0ab8",
+          "author_date": "2025-06-28T15:42:11Z",
+          "message": "Add final remarks",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/62723267a97508e6dced6e0b4704e73ec1fc0ab8"
+        },
+        {
+          "sha": "1fb7f8bc752a836df40d4864cffc02308faa47af",
+          "author_date": "2025-06-28T16:31:42Z",
+          "message": "Update LocalAI images\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/1fb7f8bc752a836df40d4864cffc02308faa47af"
+        },
+        {
+          "sha": "9500ec7af04dfc97d92df24749403b3835e2eaad",
+          "author_date": "2025-06-30T20:56:30Z",
+          "message": "feat(mutlimodal): do parse all images shared in the conversation (#221)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/9500ec7af04dfc97d92df24749403b3835e2eaad"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v2.2.1",
+      "previous_release": "v2.2.0",
+      "commits": [
+        {
+          "sha": "5c233c8aa5a0e62c8ae7f893d9aa80d1151be7ec",
+          "author_date": "2025-07-02T07:30:19Z",
+          "message": "chore(deps): bump github.com/sashabaranov/go-openai from 1.40.1 to 1.40.3 (#225)\n\nchore(deps): bump github.com/sashabaranov/go-openai\n\nBumps [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) from 1.40.1 to 1.40.3.\n- [Release notes](https://github.com/sashabaranov/go-openai/releases)\n- [Commits](https://github.com/sashabaranov/go-openai/compare/v1.40.1...v1.40.3)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sashabaranov/go-openai\n  dependency-version: 1.40.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5c233c8aa5a0e62c8ae7f893d9aa80d1151be7ec"
+        },
+        {
+          "sha": "20511283b58f23c859e5c1b14f44d58abced81d3",
+          "author_date": "2025-07-02T07:30:37Z",
+          "message": "chore(deps-dev): bump eslint from 9.29.0 to 9.30.0 in /webui/react-ui (#228)\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.29.0 to 9.30.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.29.0...v9.30.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.30.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/20511283b58f23c859e5c1b14f44d58abced81d3"
+        },
+        {
+          "sha": "dc7badd03449c7966ff650118694556757a1d8ad",
+          "author_date": "2025-07-02T07:30:58Z",
+          "message": "chore(deps-dev): bump vite from 6.3.5 to 7.0.0 in /webui/react-ui (#226)\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 6.3.5 to 7.0.0.\n- [Release notes](https://github.com/vitejs/vite/releases)\n- [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite/commits/create-vite@7.0.0/packages/vite)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 7.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/dc7badd03449c7966ff650118694556757a1d8ad"
+        },
+        {
+          "sha": "cf60dd88c48b95edd879c895ba01191cb80ceaf7",
+          "author_date": "2025-07-02T21:15:13Z",
+          "message": "Add docker compose for amd gpu (#230)\n\nadd docker compose for amd gpu",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/cf60dd88c48b95edd879c895ba01191cb80ceaf7"
+        },
+        {
+          "sha": "f98c306b48b198d39926c07ae379cd99e1c4d7f5",
+          "author_date": "2025-07-02T09:54:27Z",
+          "message": "chore: Add web search test\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/f98c306b48b198d39926c07ae379cd99e1c4d7f5"
+        },
+        {
+          "sha": "5bd97908b5cf5a12e8041b1914cdbea7b8da6712",
+          "author_date": "2025-07-03T14:33:43Z",
+          "message": "fix(observability): Show tool calls as the completion of jobs",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5bd97908b5cf5a12e8041b1914cdbea7b8da6712"
+        },
+        {
+          "sha": "e630ead9c0a4ad22773902e81ac0c512ccf5e436",
+          "author_date": "2025-07-07T09:20:20Z",
+          "message": "fix(docker): Update model and backend directories (#232)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/e630ead9c0a4ad22773902e81ac0c512ccf5e436"
+        },
+        {
+          "sha": "4bd86bd842e38eefbe1ce6d52de50aae23aa8189",
+          "author_date": "2025-07-07T09:20:40Z",
+          "message": "chore(deps-dev): bump @eslint/js from 9.28.0 to 9.30.0 in /webui/react-ui (#227)\n\nchore(deps-dev): bump @eslint/js in /webui/react-ui\n\nBumps [@eslint/js](https://github.com/eslint/eslint/tree/HEAD/packages/js) from 9.28.0 to 9.30.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/commits/v9.30.0/packages/js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@eslint/js\"\n  dependency-version: 9.30.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/4bd86bd842e38eefbe1ce6d52de50aae23aa8189"
+        },
+        {
+          "sha": "d6784f11a792fd287563583d262316d5c3406df5",
+          "author_date": "2025-07-07T09:20:58Z",
+          "message": "chore(deps-dev): bump react-router-dom from 7.6.2 to 7.6.3 in /webui/react-ui (#224)\n\nchore(deps-dev): bump react-router-dom in /webui/react-ui\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.6.2 to 7.6.3.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/react-router-dom@7.6.3/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.6.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/d6784f11a792fd287563583d262316d5c3406df5"
+        },
+        {
+          "sha": "46adfb5258b494a7d929782ebac5bb55957980f9",
+          "author_date": "2025-07-07T09:21:12Z",
+          "message": "chore(deps): bump github.com/slack-go/slack from 0.17.1 to 0.17.2 (#222)\n\nBumps [github.com/slack-go/slack](https://github.com/slack-go/slack) from 0.17.1 to 0.17.2.\n- [Release notes](https://github.com/slack-go/slack/releases)\n- [Changelog](https://github.com/slack-go/slack/blob/master/history.go)\n- [Commits](https://github.com/slack-go/slack/compare/v0.17.1...v0.17.2)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/slack-go/slack\n  dependency-version: 0.17.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/46adfb5258b494a7d929782ebac5bb55957980f9"
+        },
+        {
+          "sha": "f05af02864c269a650d1ca2e840fa7ddf2f44129",
+          "author_date": "2025-07-10T06:20:05Z",
+          "message": "chore(deps): bump github.com/slack-go/slack from 0.17.2 to 0.17.3 (#237)\n\nBumps [github.com/slack-go/slack](https://github.com/slack-go/slack) from 0.17.2 to 0.17.3.\n- [Release notes](https://github.com/slack-go/slack/releases)\n- [Changelog](https://github.com/slack-go/slack/blob/master/history.go)\n- [Commits](https://github.com/slack-go/slack/compare/v0.17.2...v0.17.3)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/slack-go/slack\n  dependency-version: 0.17.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/f05af02864c269a650d1ca2e840fa7ddf2f44129"
+        },
+        {
+          "sha": "aab73ead5c56009451bfa88b3a99d78357518956",
+          "author_date": "2025-07-10T06:20:29Z",
+          "message": "chore(deps-dev): bump globals from 16.2.0 to 16.3.0 in /webui/react-ui (#236)\n\nBumps [globals](https://github.com/sindresorhus/globals) from 16.2.0 to 16.3.0.\n- [Release notes](https://github.com/sindresorhus/globals/releases)\n- [Commits](https://github.com/sindresorhus/globals/compare/v16.2.0...v16.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: globals\n  dependency-version: 16.3.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/aab73ead5c56009451bfa88b3a99d78357518956"
+        },
+        {
+          "sha": "c0a4f1026f88f9a8875521c35fbbaab9ae37cd67",
+          "author_date": "2025-07-10T06:21:03Z",
+          "message": "chore(deps-dev): bump eslint from 9.30.0 to 9.30.1 in /webui/react-ui (#233)\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.30.0 to 9.30.1.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.30.0...v9.30.1)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.30.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/c0a4f1026f88f9a8875521c35fbbaab9ae37cd67"
+        },
+        {
+          "sha": "b52571dbea4b3ac14f50357fcc67cc0cb3a96b31",
+          "author_date": "2025-07-10T13:12:59Z",
+          "message": "fix(api): Validate input function call result message (#239)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/b52571dbea4b3ac14f50357fcc67cc0cb3a96b31"
+        },
+        {
+          "sha": "153fcf6cf07315e99b24c561ad61fa69a3aa7f3f",
+          "author_date": "2025-07-10T13:13:17Z",
+          "message": "chore(deps-dev): bump vite from 7.0.0 to 7.0.2 in /webui/react-ui (#234)\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 7.0.0 to 7.0.2.\n- [Release notes](https://github.com/vitejs/vite/releases)\n- [Changelog](https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite/commits/v7.0.2/packages/vite)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 7.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/153fcf6cf07315e99b24c561ad61fa69a3aa7f3f"
+        },
+        {
+          "sha": "51bb368073640555debe3df3fc904cd6745fbc28",
+          "author_date": "2025-07-22T14:51:42Z",
+          "message": "chore(deps): bump golang.org/x/crypto from 0.39.0 to 0.40.0 (#244)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/crypto\n  dependency-version: 0.40.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/51bb368073640555debe3df3fc904cd6745fbc28"
+        },
+        {
+          "sha": "b0a43b0cb79ff691ef6b3c49ccce24602aeba975",
+          "author_date": "2025-07-22T20:25:13Z",
+          "message": "fix(telegram): correctly process group chat messages\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/b0a43b0cb79ff691ef6b3c49ccce24602aeba975"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v2.4.0",
+      "previous_release": "v2.2.1",
+      "commits": [
+        {
+          "sha": "5b93e5c21cecabdd35d5e18d3458b6554fc3f770",
+          "author_date": "2025-07-23T20:02:27Z",
+          "message": "chore(deps-dev): bump @vitejs/plugin-react from 4.6.0 to 4.7.0 in /webui/react-ui (#249)\n\nchore(deps-dev): bump @vitejs/plugin-react in /webui/react-ui\n\n---\nupdated-dependencies:\n- dependency-name: \"@vitejs/plugin-react\"\n  dependency-version: 4.7.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5b93e5c21cecabdd35d5e18d3458b6554fc3f770"
+        },
+        {
+          "sha": "5784be285328bd72ded7b94bffb52e73d9be9809",
+          "author_date": "2025-07-24T06:30:58Z",
+          "message": "chore(deps-dev): bump eslint from 9.30.1 to 9.31.0 in /webui/react-ui (#241)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.31.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/5784be285328bd72ded7b94bffb52e73d9be9809"
+        },
+        {
+          "sha": "36770b70aeddde95c909be0b891374390121be85",
+          "author_date": "2025-07-24T13:19:09Z",
+          "message": "chore(deps-dev): bump react-router-dom from 7.6.3 to 7.7.0 in /webui/react-ui (#248)\n\nchore(deps-dev): bump react-router-dom in /webui/react-ui\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.7.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Ettore Di Giacinto <mudler@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/36770b70aeddde95c909be0b891374390121be85"
+        },
+        {
+          "sha": "ba8ea0117e84d7b03b43a603c0a8d36ece8663be",
+          "author_date": "2025-07-24T13:19:27Z",
+          "message": "chore(deps-dev): bump @eslint/js from 9.30.1 to 9.31.0 in /webui/react-ui (#240)\n\nchore(deps-dev): bump @eslint/js in /webui/react-ui\n\n---\nupdated-dependencies:\n- dependency-name: \"@eslint/js\"\n  dependency-version: 9.31.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/ba8ea0117e84d7b03b43a603c0a8d36ece8663be"
+        },
+        {
+          "sha": "4cf52ec698f027387bb9b5e044bf1f62786e52a1",
+          "author_date": "2025-07-24T21:17:05Z",
+          "message": "feat(memories): add action to handle simple memory as flat files (#252)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/4cf52ec698f027387bb9b5e044bf1f62786e52a1"
+        },
+        {
+          "sha": "efee3c462d84a5c0c7f15a992a143dd45c02024e",
+          "author_date": "2025-07-25T09:12:20Z",
+          "message": "chore(deps-dev): bump vite from 7.0.3 to 7.0.5 in /webui/react-ui (#246)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 7.0.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/efee3c462d84a5c0c7f15a992a143dd45c02024e"
+        },
+        {
+          "sha": "26ec4795968d5d504b610b8d97c360659c3b7692",
+          "author_date": "2025-07-25T14:27:27Z",
+          "message": "fix(ui): Avoid passing object (multimedia message) into React template\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/26ec4795968d5d504b610b8d97c360659c3b7692"
+        },
+        {
+          "sha": "be1acb06fda0fe90fec66e2f1f3a7b356e8933bf",
+          "author_date": "2025-07-25T21:04:09Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/be1acb06fda0fe90fec66e2f1f3a7b356e8933bf"
+        },
+        {
+          "sha": "be336adf02b8b5aaaa1b8c66dfe6380b88ebefca",
+          "author_date": "2025-08-04T14:58:11Z",
+          "message": "feat(dynamic-prompts): add memory tool to dynamic prompt (#256)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/be336adf02b8b5aaaa1b8c66dfe6380b88ebefca"
+        },
+        {
+          "sha": "8487459d90cc81b808fa9b5a9cbe08a5b33128ea",
+          "author_date": "2025-08-05T16:43:50Z",
+          "message": "feat: multimodal action and dynamic prompts results (#257)\n\n* feat(actions): allow actions to return images\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* feat(prompts): allow to have images in dynamic prompts\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* chore: change signature of dynamic prompts to allow to return base64 images\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* chore: fixups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/8487459d90cc81b808fa9b5a9cbe08a5b33128ea"
+        },
+        {
+          "sha": "79b72ec31182756c51eae38ea5b4b1f39ab3b448",
+          "author_date": "2025-08-05T16:44:08Z",
+          "message": "fix(ui): Correct typos in dynamic prompts (#258)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/79b72ec31182756c51eae38ea5b4b1f39ab3b448"
+        },
+        {
+          "sha": "4d875e9e2abbfc6ef0408a10dd87be5a8c9fb71e",
+          "author_date": "2025-08-07T16:55:29Z",
+          "message": "fix: gen memory actions only in DynamicPromptMemory (#259)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
+          "html_url": "https://github.com/mudler/LocalAGI/commit/4d875e9e2abbfc6ef0408a10dd87be5a8c9fb71e"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
       "release": "v2.5.0",
       "previous_release": "v2.4.0",
       "commits": [
@@ -634,814 +1616,6 @@
           "author_date": "2025-12-19T21:26:22Z",
           "message": "chore(deps-dev): bump eslint-plugin-react-refresh from 0.4.24 to 0.4.25 in /webui/react-ui (#378)\n\nchore(deps-dev): bump eslint-plugin-react-refresh in /webui/react-ui\n\nBumps [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) from 0.4.24 to 0.4.25.\n- [Release notes](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/releases)\n- [Changelog](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/compare/v0.4.24...v0.4.25)\n\n---\nupdated-dependencies:\n- dependency-name: eslint-plugin-react-refresh\n  dependency-version: 0.4.25\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
           "html_url": "https://github.com/mudler/LocalAGI/commit/c7040585d3f01f96eca34bc29b99557ea7b539dc"
-        }
-      ],
-      "ignored_reason": null
-    },
-    {
-      "release": "v2.7.1",
-      "previous_release": "v2.7.0",
-      "commits": [
-        {
-          "sha": "9a33537ae0834e2bfe8e4cf335b3388519343653",
-          "author_date": "2025-12-19T22:05:04Z",
-          "message": "chore: move logging to its own package so can be shared across repos (#380)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/9a33537ae0834e2bfe8e4cf335b3388519343653"
-        },
-        {
-          "sha": "e33046db03fa56af681ac4196ac802444e2fea44",
-          "author_date": "2025-12-21T20:27:10Z",
-          "message": "chore(deps): bump react-dom from 19.2.1 to 19.2.3 in /webui/react-ui (#375)\n\nBumps [react-dom](https://github.com/facebook/react/tree/HEAD/packages/react-dom) from 19.2.1 to 19.2.3.\n- [Release notes](https://github.com/facebook/react/releases)\n- [Changelog](https://github.com/facebook/react/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/facebook/react/commits/v19.2.3/packages/react-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-dom\n  dependency-version: 19.2.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/e33046db03fa56af681ac4196ac802444e2fea44"
-        },
-        {
-          "sha": "7e50afde734faec1a7133fd7835b7297c9ae651b",
-          "author_date": "2025-12-23T08:07:29Z",
-          "message": "chore(deps-dev): bump eslint from 9.39.1 to 9.39.2 in /webui/react-ui (#381)\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.39.1 to 9.39.2.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v9.39.1...v9.39.2)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.39.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/7e50afde734faec1a7133fd7835b7297c9ae651b"
-        },
-        {
-          "sha": "345dd672d24441911af9a32b7941f608fdbade2f",
-          "author_date": "2025-12-23T08:07:42Z",
-          "message": "chore(deps-dev): bump eslint-plugin-react-refresh from 0.4.25 to 0.4.26 in /webui/react-ui (#382)\n\nchore(deps-dev): bump eslint-plugin-react-refresh in /webui/react-ui\n\nBumps [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) from 0.4.25 to 0.4.26.\n- [Release notes](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/releases)\n- [Changelog](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/compare/v0.4.25...v0.4.26)\n\n---\nupdated-dependencies:\n- dependency-name: eslint-plugin-react-refresh\n  dependency-version: 0.4.26\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/345dd672d24441911af9a32b7941f608fdbade2f"
-        },
-        {
-          "sha": "ec3f302cdf0467bbeacb4bcaf0f3b9899a64c68d",
-          "author_date": "2025-12-23T08:07:57Z",
-          "message": "chore(deps-dev): bump react-router-dom from 7.10.1 to 7.11.0 in /webui/react-ui (#383)\n\nchore(deps-dev): bump react-router-dom in /webui/react-ui\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.10.1 to 7.11.0.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/react-router-dom@7.11.0/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.11.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/ec3f302cdf0467bbeacb4bcaf0f3b9899a64c68d"
-        },
-        {
-          "sha": "cfdefcd0752ee802f338cca26628b4ef451f0bbf",
-          "author_date": "2026-01-12T22:15:19Z",
-          "message": "chore(knowledgebase): clean collection names (no spaces,no uppercase) (#385)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/cfdefcd0752ee802f338cca26628b4ef451f0bbf"
-        }
-      ],
-      "ignored_reason": null
-    },
-    {
-      "release": "v2.8.0",
-      "previous_release": "v2.7.1",
-      "commits": [
-        {
-          "sha": "9a669e25524c2f6d47894fbce41422dde0bfd152",
-          "author_date": "2026-01-28T10:39:52Z",
-          "message": "chore(deps-dev): bump globals from 16.5.0 to 17.1.0 in /webui/react-ui (#390)\n\nBumps [globals](https://github.com/sindresorhus/globals) from 16.5.0 to 17.1.0.\n- [Release notes](https://github.com/sindresorhus/globals/releases)\n- [Commits](https://github.com/sindresorhus/globals/compare/v16.5.0...v17.1.0)\n\n---\nupdated-dependencies:\n- dependency-name: globals\n  dependency-version: 17.1.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/9a669e25524c2f6d47894fbce41422dde0bfd152"
-        },
-        {
-          "sha": "a1036a166bb99a21a627bf2708824c192491435f",
-          "author_date": "2026-01-28T10:40:05Z",
-          "message": "chore(deps): bump react-dom from 19.2.3 to 19.2.4 in /webui/react-ui (#391)\n\nBumps [react-dom](https://github.com/facebook/react/tree/HEAD/packages/react-dom) from 19.2.3 to 19.2.4.\n- [Release notes](https://github.com/facebook/react/releases)\n- [Changelog](https://github.com/facebook/react/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/facebook/react/commits/v19.2.4/packages/react-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-dom\n  dependency-version: 19.2.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/a1036a166bb99a21a627bf2708824c192491435f"
-        },
-        {
-          "sha": "73c1158aa241458386c55ceb22fcdd2c6928661b",
-          "author_date": "2026-01-29T08:40:30Z",
-          "message": "chore(deps): bump react and @types/react in /webui/react-ui (#393)\n\nBumps [react](https://github.com/facebook/react/tree/HEAD/packages/react) and [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react). These dependencies needed to be updated together.\n\nUpdates `react` from 19.2.3 to 19.2.4\n- [Release notes](https://github.com/facebook/react/releases)\n- [Changelog](https://github.com/facebook/react/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/facebook/react/commits/v19.2.4/packages/react)\n\nUpdates `@types/react` from 19.2.7 to 19.2.9\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)\n\n---\nupdated-dependencies:\n- dependency-name: react\n  dependency-version: 19.2.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n- dependency-name: \"@types/react\"\n  dependency-version: 19.2.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/73c1158aa241458386c55ceb22fcdd2c6928661b"
-        },
-        {
-          "sha": "c703495e8cd276d09cab4f41f9be80d397c1e6b7",
-          "author_date": "2026-01-29T08:40:41Z",
-          "message": "chore(deps-dev): bump react-router-dom from 7.11.0 to 7.13.0 in /webui/react-ui (#392)\n\nchore(deps-dev): bump react-router-dom in /webui/react-ui\n\nBumps [react-router-dom](https://github.com/remix-run/react-router/tree/HEAD/packages/react-router-dom) from 7.11.0 to 7.13.0.\n- [Release notes](https://github.com/remix-run/react-router/releases)\n- [Changelog](https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/CHANGELOG.md)\n- [Commits](https://github.com/remix-run/react-router/commits/react-router-dom@7.13.0/packages/react-router-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react-router-dom\n  dependency-version: 7.13.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c703495e8cd276d09cab4f41f9be80d397c1e6b7"
-        },
-        {
-          "sha": "2288e7f08d66a1c831efb71ebb81e9693d5787ec",
-          "author_date": "2026-01-29T09:26:25Z",
-          "message": "feat: update localrecall and use postgresql as default (#394)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/2288e7f08d66a1c831efb71ebb81e9693d5787ec"
-        },
-        {
-          "sha": "a363682b39a0c207e2ae98c5e26b62d7861e3751",
-          "author_date": "2026-01-29T09:33:37Z",
-          "message": "chore(deps-dev): bump vite from 7.3.0 to 7.3.1 in /webui/react-ui (#387)\n\nBumps [vite](https://github.com/vitejs/vite/tree/HEAD/packages/vite) from 7.3.0 to 7.3.1.\n- [Release notes](https://github.com/vitejs/vite/releases)\n- [Changelog](https://github.com/vitejs/vite/blob/v7.3.1/packages/vite/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite/commits/v7.3.1/packages/vite)\n\n---\nupdated-dependencies:\n- dependency-name: vite\n  dependency-version: 7.3.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/a363682b39a0c207e2ae98c5e26b62d7861e3751"
-        },
-        {
-          "sha": "16775f356a71778b088bdfc0c819bb431c5d204b",
-          "author_date": "2026-01-30T14:41:23Z",
-          "message": "Use bleve for indexing short-term memory (#397)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/16775f356a71778b088bdfc0c819bb431c5d204b"
-        },
-        {
-          "sha": "72a7807a813fd519f872b51bb876aa36c6197a47",
-          "author_date": "2026-01-30T14:43:34Z",
-          "message": "HTTP MCP Fixes (#395)\n\nAdd support for Streamable MCP over HTTP - fallback on legacy SSE transport. Fix: Prevent HTTP MCP servers from being closed immediately after initialization.",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/72a7807a813fd519f872b51bb876aa36c6197a47"
-        },
-        {
-          "sha": "73ce451c137e8c389ac46e317f6495dc69d0c12f",
-          "author_date": "2026-01-30T17:00:06Z",
-          "message": "feat: add automatic compaction of knowledge base (#398)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/73ce451c137e8c389ac46e317f6495dc69d0c12f"
-        },
-        {
-          "sha": "7cc0c3e85b4d6de9f71fe992593b986709103378",
-          "author_date": "2026-01-30T20:20:46Z",
-          "message": "chore: do not wait for agents to start, add timeout on MCP connections\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/7cc0c3e85b4d6de9f71fe992593b986709103378"
-        },
-        {
-          "sha": "b527cbc332ffb89ea17f81539943d460ef12bb7c",
-          "author_date": "2026-01-31T08:19:26Z",
-          "message": "Revert \"chore: do not wait for agents to start, add timeout on MCP connections\"\n\nThis reverts commit 7cc0c3e85b4d6de9f71fe992593b986709103378.",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/b527cbc332ffb89ea17f81539943d460ef12bb7c"
-        },
-        {
-          "sha": "456c32c284b58d88c6d932d5625747f2fe2cb8df",
-          "author_date": "2026-01-31T08:19:54Z",
-          "message": "use volumes\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/456c32c284b58d88c6d932d5625747f2fe2cb8df"
-        },
-        {
-          "sha": "9f358abb546e645389babb3fb883c7dbe7236e24",
-          "author_date": "2026-01-31T08:25:17Z",
-          "message": "chore(memory): open index only once\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/9f358abb546e645389babb3fb883c7dbe7236e24"
-        },
-        {
-          "sha": "c3bd2bee424ab59ed5b31c05dd365c7ff4dd8493",
-          "author_date": "2026-01-31T08:41:14Z",
-          "message": "feat: bump cogito, allow to enable guidelines\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c3bd2bee424ab59ed5b31c05dd365c7ff4dd8493"
-        },
-        {
-          "sha": "4e89c8aac01283dbddd644896a48af422c9d4c90",
-          "author_date": "2026-02-01T08:36:24Z",
-          "message": "chore: attach observables for standalone jobs (#399)\n\n* chore: add observable for standalone jobs\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* chore: update docker compose with latest models\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/4e89c8aac01283dbddd644896a48af422c9d4c90"
-        },
-        {
-          "sha": "c98178d41d9bc0300b292d11a268bd11dc38a28f",
-          "author_date": "2026-02-01T17:23:41Z",
-          "message": "chore(settings): move mcp config to the MCP section and rework form (#400)\n\n* chore: move MCP configuration to the MCP section\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* add MCP stdio form, visually split the two\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c98178d41d9bc0300b292d11a268bd11dc38a28f"
-        },
-        {
-          "sha": "e3d4ac3d0b7422ab33f0f5b9322cf2c0f10bbaac",
-          "author_date": "2026-02-01T17:30:48Z",
-          "message": "Enhance LocalAGI description in README\n\nExpanded description of LocalAGI to include agent creation and skillserver integration.",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/e3d4ac3d0b7422ab33f0f5b9322cf2c0f10bbaac"
-        },
-        {
-          "sha": "f47d5d0e018394fcd50d6b24186a6871c7757e9c",
-          "author_date": "2026-02-03T11:25:57Z",
-          "message": "fix(ui): checkbox event propagation\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/f47d5d0e018394fcd50d6b24186a6871c7757e9c"
-        },
-        {
-          "sha": "0950791be6b61c8972db80f502df5e04012d55ef",
-          "author_date": "2026-02-05T09:46:35Z",
-          "message": "fix: skip KB if not enabled\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/0950791be6b61c8972db80f502df5e04012d55ef"
-        },
-        {
-          "sha": "4f4ad5069d1864aa8ac1fda8e10d17adc6d1a2c9",
-          "author_date": "2026-02-05T18:00:50Z",
-          "message": "feat(gen-song): add song generation action (#404)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/4f4ad5069d1864aa8ac1fda8e10d17adc6d1a2c9"
-        },
-        {
-          "sha": "cbe4cd62ca145ea2938448b2b1fed11731d0f776",
-          "author_date": "2026-02-05T21:49:18Z",
-          "message": "fix: correct API url\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/cbe4cd62ca145ea2938448b2b1fed11731d0f776"
-        },
-        {
-          "sha": "ba2eafe4b25e364567a400fbba3570c94999a067",
-          "author_date": "2026-02-06T15:50:33Z",
-          "message": "fix: pass-by state result\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/ba2eafe4b25e364567a400fbba3570c94999a067"
-        },
-        {
-          "sha": "b09da13111220a551923c99b4cf427a803f1ee4f",
-          "author_date": "2026-02-06T20:05:16Z",
-          "message": "chore(deps-dev): bump globals from 17.1.0 to 17.3.0 in /webui/react-ui (#403)\n\nBumps [globals](https://github.com/sindresorhus/globals) from 17.1.0 to 17.3.0.\n- [Release notes](https://github.com/sindresorhus/globals/releases)\n- [Commits](https://github.com/sindresorhus/globals/compare/v17.1.0...v17.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: globals\n  dependency-version: 17.3.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/b09da13111220a551923c99b4cf427a803f1ee4f"
-        },
-        {
-          "sha": "1d574069f25f1855da6dbae6b78ec2d438ec9cec",
-          "author_date": "2026-02-06T20:36:44Z",
-          "message": "feat: allow to adjust knowledgebase usage (#406)\n\nThis allows to configure specifically how the Knowledge base should be\naccessible to the agent.\n\n- Auto search: When enabled, every message will trigger a search to the\n  knowledge base. This is useful mostly if you mean to give immediate\n  context to the agent. Particularly suited for search agents.\n- As tools: it will inject search and add tools to the knowledge base so\n  the agent can handle these autonomously.\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/1d574069f25f1855da6dbae6b78ec2d438ec9cec"
-        },
-        {
-          "sha": "cea3b7b1114c5aa7004add92ea60eb263ef63c85",
-          "author_date": "2026-02-06T20:51:54Z",
-          "message": "chore: drop LocalOperator actions, we will use MCP for this (#407)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/cea3b7b1114c5aa7004add92ea60eb263ef63c85"
-        },
-        {
-          "sha": "d804ef66e5eff37158d26100242e0013ce63c53c",
-          "author_date": "2026-02-06T22:21:38Z",
-          "message": "fix: register actions\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/d804ef66e5eff37158d26100242e0013ce63c53c"
-        },
-        {
-          "sha": "4a3ee020816344ad541b0b366a21f8ac00cd6dc8",
-          "author_date": "2026-02-07T08:00:12Z",
-          "message": "chore: cleanup\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/4a3ee020816344ad541b0b366a21f8ac00cd6dc8"
-        },
-        {
-          "sha": "1c3e9b36e734e368c6b29c6bcf0d704b1d9bc155",
-          "author_date": "2026-02-08T20:09:04Z",
-          "message": "Add generate_pdf action with connector support (#409)\n\n* Initial plan\n\n* Add PDF generation action with tests and connector support\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Address code review feedback: Add error logging and clarify filename description\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Add path traversal protection for filename parameter\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/1c3e9b36e734e368c6b29c6bcf0d704b1d9bc155"
-        },
-        {
-          "sha": "57023d63866d15d705d4f2f6e3f3fa13b237213b",
-          "author_date": "2026-02-08T21:19:22Z",
-          "message": "Integrate task scheduler into agent reminder system (#408)\n\n* Initial plan\n\n* Add task scheduler with cron/interval/once support and comprehensive tests\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Add comprehensive documentation for scheduler package\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Add working example demonstrating scheduler usage\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Update .gitignore to exclude example binaries and task files\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Integrate task scheduler into existing reminder system\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Fix scheduler integration and compilation errors\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Remove standalone scheduler example - integrated into agent system\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* Update scheduler README to reflect integration with agent system\n\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\n\n* replace old reminders logic\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* A task scheduler for each agent\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* fixups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* tests\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* fixups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* change to duration\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: mudler <2420543+mudler@users.noreply.github.com>\nCo-authored-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/57023d63866d15d705d4f2f6e3f3fa13b237213b"
-        },
-        {
-          "sha": "d0bfa014948b574988eb08126e157610d4e538c9",
-          "author_date": "2026-02-08T21:34:31Z",
-          "message": "Change runner to arc-runner-localagent",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/d0bfa014948b574988eb08126e157610d4e538c9"
-        },
-        {
-          "sha": "2a4bc0eb0a367a50088fc9a31401ad2775b3626c",
-          "author_date": "2026-02-08T21:56:25Z",
-          "message": "chore: mark scheduled jobs so we inject tools to initiate new conversations\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/2a4bc0eb0a367a50088fc9a31401ad2775b3626c"
-        },
-        {
-          "sha": "25ce5475dec1274e0da4e68d81bdc975b195ebba",
-          "author_date": "2026-02-08T22:03:03Z",
-          "message": "chore: drop deprecated set reminders\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/25ce5475dec1274e0da4e68d81bdc975b195ebba"
-        },
-        {
-          "sha": "8847bfe0fc7c5113118ae6c933c5ca865d3c2742",
-          "author_date": "2026-02-08T22:26:27Z",
-          "message": "chore: allow to set scheduler poll interval\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/8847bfe0fc7c5113118ae6c933c5ca865d3c2742"
-        },
-        {
-          "sha": "1128615140550ab7f6eed6f79f2ce7e275c7fcd6",
-          "author_date": "2026-02-08T23:32:28Z",
-          "message": "Rename ConversationActionName to 'send_message'",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/1128615140550ab7f6eed6f79f2ce7e275c7fcd6"
-        },
-        {
-          "sha": "80a12f666250f03c2a5add4527ed94e9ca37d36d",
-          "author_date": "2026-02-08T23:33:40Z",
-          "message": "Rename reminder actions to task actions",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/80a12f666250f03c2a5add4527ed94e9ca37d36d"
-        },
-        {
-          "sha": "c75da2235dfea83026a9b8e53313d3e28871d546",
-          "author_date": "2026-02-08T23:41:27Z",
-          "message": "Rename actions from knowledge base to memory",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c75da2235dfea83026a9b8e53313d3e28871d546"
-        },
-        {
-          "sha": "807b7e756bd825ba246b27f00885e9dba0edf415",
-          "author_date": "2026-02-09T10:22:43Z",
-          "message": "Small fixups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/807b7e756bd825ba246b27f00885e9dba0edf415"
-        },
-        {
-          "sha": "673909918a5222d3ef096d2a7b329fe4c94b3254",
-          "author_date": "2026-02-09T14:46:01Z",
-          "message": "feat: improve theme to follow LocalAI (#410)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/673909918a5222d3ef096d2a7b329fe4c94b3254"
-        },
-        {
-          "sha": "775b1a9ab83b6c74e75291d534dd0365e46dbbc3",
-          "author_date": "2026-02-09T17:59:52Z",
-          "message": "chore: drop agents avatars (#411)\n\nThis functionality makes LocalAGI harder to starts without no real gain.\nWhile having agents avatars is nice, on generating a new agent is\nrequired a new image to be created, which, on small HW could become a\nhuge computational strain.\n\nIt moves the agent list view to tabular, and cleanups the index page to\nimprove readability.\n\nWe can go back at this, but the motivations are mainly:\n\n- Do not waste computation and be more lightweight\n- Less models to download unless the user wants to download image models\n- Let's not make look the application \"weird\" as images could be\n  generated which are not good looking at all\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/775b1a9ab83b6c74e75291d534dd0365e46dbbc3"
-        },
-        {
-          "sha": "272c54f851a94270e0c8062eca56125e7dd79223",
-          "author_date": "2026-02-09T20:49:37Z",
-          "message": "fix: int type passing from react\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/272c54f851a94270e0c8062eca56125e7dd79223"
-        },
-        {
-          "sha": "ef2a6e229602c29131fc15afd0c326b0e2a4c6b5",
-          "author_date": "2026-02-09T21:26:57Z",
-          "message": "chore: bump LocalRecall\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/ef2a6e229602c29131fc15afd0c326b0e2a4c6b5"
-        },
-        {
-          "sha": "0845e9dc815f9d0f51d1e5a69be1164a2e0824a9",
-          "author_date": "2026-02-10T08:07:40Z",
-          "message": "chore(deps-dev): bump eslint-plugin-react-refresh from 0.4.26 to 0.5.0 in /webui/react-ui (#401)\n\nchore(deps-dev): bump eslint-plugin-react-refresh in /webui/react-ui\n\nBumps [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) from 0.4.26 to 0.5.0.\n- [Release notes](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/releases)\n- [Changelog](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/compare/v0.4.26...v0.5.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint-plugin-react-refresh\n  dependency-version: 0.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/0845e9dc815f9d0f51d1e5a69be1164a2e0824a9"
-        },
-        {
-          "sha": "5743d6f75772c28f81d44d14d59b166c5b490c3b",
-          "author_date": "2026-02-10T12:02:50Z",
-          "message": "chore(deps-dev): bump eslint from 9.39.2 to 10.0.0 in /webui/react-ui (#412)\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.39.2 to 10.0.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v9.39.2...v10.0.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 10.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/5743d6f75772c28f81d44d14d59b166c5b490c3b"
-        },
-        {
-          "sha": "bdf12e4c3ddbf3b96a780fb86edab7a378e10579",
-          "author_date": "2026-02-10T12:03:02Z",
-          "message": "chore(deps-dev): bump @types/react from 19.2.10 to 19.2.13 in /webui/react-ui (#413)\n\nchore(deps-dev): bump @types/react in /webui/react-ui\n\nBumps [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react) from 19.2.10 to 19.2.13.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react\"\n  dependency-version: 19.2.13\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/bdf12e4c3ddbf3b96a780fb86edab7a378e10579"
-        },
-        {
-          "sha": "6a33484fcec317179191d657725b1308fa2c028b",
-          "author_date": "2026-02-10T14:32:36Z",
-          "message": "chore(deps-dev): bump @eslint/js from 9.39.2 to 10.0.1 in /webui/react-ui (#414)\n\nchore(deps-dev): bump @eslint/js in /webui/react-ui\n\nBumps [@eslint/js](https://github.com/eslint/eslint/tree/HEAD/packages/js) from 9.39.2 to 10.0.1.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/commits/HEAD/packages/js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@eslint/js\"\n  dependency-version: 10.0.1\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/6a33484fcec317179191d657725b1308fa2c028b"
-        },
-        {
-          "sha": "7f2e52c0c87ee370a983603120888045ef916331",
-          "author_date": "2026-02-10T15:45:09Z",
-          "message": "chore(deps-dev): bump @vitejs/plugin-react from 5.1.2 to 5.1.3 in /webui/react-ui (#402)\n\nchore(deps-dev): bump @vitejs/plugin-react in /webui/react-ui\n\nBumps [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/tree/HEAD/packages/plugin-react) from 5.1.2 to 5.1.3.\n- [Release notes](https://github.com/vitejs/vite-plugin-react/releases)\n- [Changelog](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/CHANGELOG.md)\n- [Commits](https://github.com/vitejs/vite-plugin-react/commits/plugin-react@5.1.3/packages/plugin-react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@vitejs/plugin-react\"\n  dependency-version: 5.1.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/7f2e52c0c87ee370a983603120888045ef916331"
-        },
-        {
-          "sha": "da9e8d7c20b9e9489a99db56f24f6ea357d3487b",
-          "author_date": "2026-02-10T17:18:53Z",
-          "message": "feat: add support to medatata to messages sent from the agents (#415)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/da9e8d7c20b9e9489a99db56f24f6ea357d3487b"
-        },
-        {
-          "sha": "9965e3df3686f6ccbbf462ccf4097af9ceccda53",
-          "author_date": "2026-02-10T21:43:26Z",
-          "message": "Comment out DisableSinkState in agent configuration\n\nComment out the DisableSinkState option in agent.go.",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/9965e3df3686f6ccbbf462ccf4097af9ceccda53"
-        },
-        {
-          "sha": "9110e9cfdb83285fbbe200d726bfd742b725ab5e",
-          "author_date": "2026-02-10T21:50:15Z",
-          "message": "fix: set sink state tool with a custom name\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/9110e9cfdb83285fbbe200d726bfd742b725ab5e"
-        },
-        {
-          "sha": "6dc515bae5d3fe5b346a676c764d864c8c0ece4c",
-          "author_date": "2026-02-14T18:15:55Z",
-          "message": "feat: expose further cogito settings\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/6dc515bae5d3fe5b346a676c764d864c8c0ece4c"
-        },
-        {
-          "sha": "0762d6fabb29d88e66e02b4f78604f34b29f62b9",
-          "author_date": "2026-02-14T20:25:43Z",
-          "message": "bump cogito (#416)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/0762d6fabb29d88e66e02b4f78604f34b29f62b9"
-        },
-        {
-          "sha": "b5dacb0e4f8e97960f8bef9bd305a3f43e5e2d9a",
-          "author_date": "2026-02-14T22:06:49Z",
-          "message": "chore: allow to choose how we store things in the vector database (#417)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/b5dacb0e4f8e97960f8bef9bd305a3f43e5e2d9a"
-        },
-        {
-          "sha": "50f168f322f1851a1ef5fd97b354e1c21bbec8e1",
-          "author_date": "2026-02-14T22:07:47Z",
-          "message": "drop unused code, run compaction immediately at start\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/50f168f322f1851a1ef5fd97b354e1c21bbec8e1"
-        },
-        {
-          "sha": "c1e2eeb8af4bd084a00dc65490c3f4064cd7d76d",
-          "author_date": "2026-02-15T21:34:59Z",
-          "message": "chore(cogito): bump\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c1e2eeb8af4bd084a00dc65490c3f4064cd7d76d"
-        },
-        {
-          "sha": "55b631bc512bf146d84875a5836fc2f3b870fccf",
-          "author_date": "2026-02-15T21:56:44Z",
-          "message": "fix: append user actions\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/55b631bc512bf146d84875a5836fc2f3b870fccf"
-        },
-        {
-          "sha": "8b5188c35b951215178aa4e6cb8695d56871e554",
-          "author_date": "2026-02-15T23:08:10Z",
-          "message": "chore(cogito): bump\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/8b5188c35b951215178aa4e6cb8695d56871e554"
-        }
-      ],
-      "ignored_reason": null
-    },
-    {
-      "release": "v2.8.1",
-      "previous_release": "v2.8.0",
-      "commits": [
-        {
-          "sha": "c8e83dc4b914e0512421a3d985ae1cb98728d3e2",
-          "author_date": "2026-02-16T14:45:19Z",
-          "message": "chore: bump cogito\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c8e83dc4b914e0512421a3d985ae1cb98728d3e2"
-        },
-        {
-          "sha": "1147e028440a92df978847cc5a18252e49126023",
-          "author_date": "2026-02-16T16:31:49Z",
-          "message": "chore: bump cogito\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/1147e028440a92df978847cc5a18252e49126023"
-        },
-        {
-          "sha": "292d0c9c19a37ff92781a63de7554761ab855fba",
-          "author_date": "2026-02-16T18:29:03Z",
-          "message": "chore: improvements to sink state handling\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/292d0c9c19a37ff92781a63de7554761ab855fba"
-        },
-        {
-          "sha": "419a4363c3fe8acb7fc7828e2065435652ca032e",
-          "author_date": "2026-02-16T21:35:14Z",
-          "message": "chore(deps-dev): bump @types/react from 19.2.13 to 19.2.14 in /webui/react-ui (#420)\n\nchore(deps-dev): bump @types/react in /webui/react-ui\n\nBumps [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react) from 19.2.13 to 19.2.14.\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)\n\n---\nupdated-dependencies:\n- dependency-name: \"@types/react\"\n  dependency-version: 19.2.14\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/419a4363c3fe8acb7fc7828e2065435652ca032e"
-        }
-      ],
-      "ignored_reason": null
-    },
-    {
-      "release": "v2.9.0",
-      "previous_release": "v2.8.1",
-      "commits": [
-        {
-          "sha": "700047c6b9a901ea45636caa52a7d1f41350916c",
-          "author_date": "2026-02-17T12:13:41Z",
-          "message": "chore: allow to set force reasoning tool\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/700047c6b9a901ea45636caa52a7d1f41350916c"
-        },
-        {
-          "sha": "8f64d246d892a4916113ddc5825ce226ff678588",
-          "author_date": "2026-02-17T15:05:16Z",
-          "message": "chore: bump cogito\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/8f64d246d892a4916113ddc5825ce226ff678588"
-        },
-        {
-          "sha": "1c083abc6098b127438abb308ecced716da1c4ae",
-          "author_date": "2026-02-17T15:15:50Z",
-          "message": "Add back old webui (login)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/1c083abc6098b127438abb308ecced716da1c4ae"
-        },
-        {
-          "sha": "a8decbcc857c8886a2591de518cb0a736b4dd877",
-          "author_date": "2026-02-17T16:16:42Z",
-          "message": "chore: fix login\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/a8decbcc857c8886a2591de518cb0a736b4dd877"
-        },
-        {
-          "sha": "27cc58a25fe956e5b80431350078012324f5025a",
-          "author_date": "2026-02-17T22:21:34Z",
-          "message": "feat(ui): left navbar, dark/light theme (#421)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/27cc58a25fe956e5b80431350078012324f5025a"
-        },
-        {
-          "sha": "8a16ad5407bfe04710fbf9a3e230b8099cf254d5",
-          "author_date": "2026-02-19T21:25:05Z",
-          "message": "feat: bump cogito, use LocalAILLM\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/8a16ad5407bfe04710fbf9a3e230b8099cf254d5"
-        },
-        {
-          "sha": "508a307e8b3148eb5291e6b99bc24ebea7eb4cd2",
-          "author_date": "2026-02-20T09:02:21Z",
-          "message": "chore: update cogito\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/508a307e8b3148eb5291e6b99bc24ebea7eb4cd2"
-        },
-        {
-          "sha": "5daf4bda8e93eb4fc9a7ab1cf9a068d8a514a060",
-          "author_date": "2026-02-20T09:08:16Z",
-          "message": "fix: do not let agents override each other configuration\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/5daf4bda8e93eb4fc9a7ab1cf9a068d8a514a060"
-        },
-        {
-          "sha": "cea2d9d618313656060508a313b900f4665bd70d",
-          "author_date": "2026-02-20T21:51:00Z",
-          "message": "chore: hook reasoning callback to status updates\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/cea2d9d618313656060508a313b900f4665bd70d"
-        },
-        {
-          "sha": "3828dd7cccf1260e4bab2075ffeb25c4393454a9",
-          "author_date": "2026-02-20T22:07:33Z",
-          "message": "chore(deps): bump cogito\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/3828dd7cccf1260e4bab2075ffeb25c4393454a9"
-        },
-        {
-          "sha": "52e8df65992a04d3dca3f036b8b89da73c709a46",
-          "author_date": "2026-02-20T22:15:02Z",
-          "message": "fix(slack): another attempt to fix markdown result display (#422)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/52e8df65992a04d3dca3f036b8b89da73c709a46"
-        },
-        {
-          "sha": "73d8304e2eea2308308729afdc28d641240f0578",
-          "author_date": "2026-02-20T22:44:41Z",
-          "message": "fix: do not imply there is an action\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/73d8304e2eea2308308729afdc28d641240f0578"
-        },
-        {
-          "sha": "f29e98bccbecbc966fb4688caad53c6120cbc025",
-          "author_date": "2026-02-21T14:15:57Z",
-          "message": "fix(reasoning): do not update if no new content\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/f29e98bccbecbc966fb4688caad53c6120cbc025"
-        },
-        {
-          "sha": "bc567ef7dd40ec5dc0b53a1e4d0482033a183c1e",
-          "author_date": "2026-02-21T21:21:33Z",
-          "message": "feat(skills): add skills management (#423)\n\n* feat(skills): add skills management\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* improve ui\n\n* Update webui/skills_handlers.go\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Update webui/skills_handlers.go\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Update webui/skills_handlers.go\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Update webui/skills_handlers.go\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Update Dockerfile.webui\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Update go.mod\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Update webui/skills_handlers.go\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* Address feedback from review\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* Fixups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* allow to customize skill prompt\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* Fixups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/bc567ef7dd40ec5dc0b53a1e4d0482033a183c1e"
-        },
-        {
-          "sha": "c56cc4355235955be619b039e100a420a935f950",
-          "author_date": "2026-02-21T22:17:33Z",
-          "message": "feat(memory): add knowledgebase and memory management from LocalRecall (#424)\n\n* feat: integrate knowledge base management\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* refactorings\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c56cc4355235955be619b039e100a420a935f950"
-        },
-        {
-          "sha": "410ba7a467dc53a5f677da3cc358eb99f950aa7e",
-          "author_date": "2026-02-21T23:02:12Z",
-          "message": "feat: allow to manage external localrecall instances (#425)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/410ba7a467dc53a5f677da3cc358eb99f950aa7e"
-        },
-        {
-          "sha": "8014d22588f5ee6507fa3080bd9ad32147e407ea",
-          "author_date": "2026-02-21T23:39:19Z",
-          "message": "fix: unify api keys for collection endpoint\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/8014d22588f5ee6507fa3080bd9ad32147e407ea"
-        },
-        {
-          "sha": "bc256fbbe2589610f35c3134fedd1f3d6be85b1a",
-          "author_date": "2026-02-22T08:49:03Z",
-          "message": "chore: avoid panics from Slack connector\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/bc256fbbe2589610f35c3134fedd1f3d6be85b1a"
-        },
-        {
-          "sha": "cb37f807241eb1f06775de3dccfdb095a6654ae1",
-          "author_date": "2026-02-22T09:12:13Z",
-          "message": "fix(slack): process all metadata\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/cb37f807241eb1f06775de3dccfdb095a6654ae1"
-        },
-        {
-          "sha": "c5e3df41eef23080813c58ce5d3c83d7e7f3d9b6",
-          "author_date": "2026-02-22T18:11:46Z",
-          "message": "fix: atomic writes to the pool, create backups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c5e3df41eef23080813c58ce5d3c83d7e7f3d9b6"
-        },
-        {
-          "sha": "61a89aaf5879dea5d948d53807637891a9f35d2c",
-          "author_date": "2026-02-22T21:42:36Z",
-          "message": "feat(pdf): improve pdf markdown rendering (#426)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/61a89aaf5879dea5d948d53807637891a9f35d2c"
-        },
-        {
-          "sha": "32a1a593890e5031023e00d48837d94a9372d8d3",
-          "author_date": "2026-02-22T21:44:19Z",
-          "message": "feat: add accumulator to print tool status/results during execution (#427)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/32a1a593890e5031023e00d48837d94a9372d8d3"
-        },
-        {
-          "sha": "d2407105a4e8dc1d7877b88d7c6a34bc5bdea97c",
-          "author_date": "2026-02-22T23:24:30Z",
-          "message": "fix: remove the duplicated unlock call\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/d2407105a4e8dc1d7877b88d7c6a34bc5bdea97c"
-        },
-        {
-          "sha": "b46c3003079411c3082ad5c92b49c58ebb0de9ee",
-          "author_date": "2026-02-23T10:42:30Z",
-          "message": "chore: enable more behavioral settings\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/b46c3003079411c3082ad5c92b49c58ebb0de9ee"
-        },
-        {
-          "sha": "2efadbf6c4ba5f8ff7acfd469f340aeedafc91f8",
-          "author_date": "2026-02-23T10:55:42Z",
-          "message": "bump go mod\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/2efadbf6c4ba5f8ff7acfd469f340aeedafc91f8"
-        },
-        {
-          "sha": "78defbad322e0e944cdb1ad2dabe78a284753a3a",
-          "author_date": "2026-02-23T14:31:04Z",
-          "message": "fix: avoid panics\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/78defbad322e0e944cdb1ad2dabe78a284753a3a"
-        },
-        {
-          "sha": "9406d699cc4641cd17c635767aba3988e5aa915d",
-          "author_date": "2026-02-23T17:43:25Z",
-          "message": "chore: allow to configure inner monologue template\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/9406d699cc4641cd17c635767aba3988e5aa915d"
-        },
-        {
-          "sha": "5b90d4c3e2366826ae170fc9603d79038b9ff477",
-          "author_date": "2026-02-23T18:06:31Z",
-          "message": "chore: stop tool call when model calls send_message\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/5b90d4c3e2366826ae170fc9603d79038b9ff477"
-        },
-        {
-          "sha": "99f7e3ab605109a9ac55de69825580dc1cb46986",
-          "author_date": "2026-02-23T18:10:29Z",
-          "message": "fix: finish the job once\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/99f7e3ab605109a9ac55de69825580dc1cb46986"
-        },
-        {
-          "sha": "3dad5acf1f64bc8099001d02c4b4ea785e9ab205",
-          "author_date": "2026-02-23T20:53:02Z",
-          "message": "chore(pdf): refactor and try to always send pdf\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/3dad5acf1f64bc8099001d02c4b4ea785e9ab205"
-        },
-        {
-          "sha": "7494a1559ed2e39b036caa75b074d304c072a6a5",
-          "author_date": "2026-02-23T21:09:01Z",
-          "message": "chore(observables): add missing observables\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/7494a1559ed2e39b036caa75b074d304c072a6a5"
-        },
-        {
-          "sha": "a0faa14ffed6a589650e48df9a3f7611a798694d",
-          "author_date": "2026-02-23T22:39:23Z",
-          "message": "fix(slack/files): trying to debug files upload\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/a0faa14ffed6a589650e48df9a3f7611a798694d"
-        },
-        {
-          "sha": "56ecd1921e479a11a12e9bad8e8e843590200fcf",
-          "author_date": "2026-02-24T20:50:55Z",
-          "message": "chore: disable reasoning by default (#433)\n\nSet EnableReasoning DefaultValue to false in agent config form metadata.\n\nSigned-off-by: mudler <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/56ecd1921e479a11a12e9bad8e8e843590200fcf"
-        },
-        {
-          "sha": "cb82322df21df786f052d97a69b8d3436fd84061",
-          "author_date": "2026-02-25T17:44:49Z",
-          "message": "feat: add inner monologue template support for scheduler and template-based skills prompt (#435)\n\n* feat: add scheduler task template and template-based skills prompt\n\n- Add WithSchedulerTaskTemplate option for recurring tasks run by scheduler\n- Expose scheduler_task_template in core/state/config.go for user configuration\n- Add WithSkillPromptTemplate option for custom skill prompt templates\n- Use {{.Skills}} slice in templates to iterate over Skill.Name, Skill.Description\n- Default template mimics current XML behavior with <available_skills> format\n- Rename customIntro to customTemplate in services/skills for consistency\n\n* cleanups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\n\n* Update core/state/config.go\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n---------\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>\nCo-authored-by: Ettore Di Giacinto <mudler@localai.io>\nCo-authored-by: Ettore Di Giacinto <mudler@users.noreply.github.com>\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/cb82322df21df786f052d97a69b8d3436fd84061"
-        },
-        {
-          "sha": "905ffcb18523342bfc37767f670b28e367bb1055",
-          "author_date": "2026-02-26T00:12:12Z",
-          "message": "chore: update cogito go dependency to latest main (#436)\n\nUpdated github.com/mudler/cogito from\nv0.9.2-0.20260223101954-070948df04f7 to\nv0.9.2-0.20260225234859-b76691637703\n\nCo-authored-by: Ettore Di Giacinto <mudler@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/905ffcb18523342bfc37767f670b28e367bb1055"
-        },
-        {
-          "sha": "7bbec7b6dd44fe18cf4c631e873200eadcdad473",
-          "author_date": "2026-02-26T14:43:13Z",
-          "message": "fix(templates): add agentname in prompt templates (#438)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/7bbec7b6dd44fe18cf4c631e873200eadcdad473"
-        },
-        {
-          "sha": "fb20d12ae13b3df6301f3d9cfa5b00f04c073160",
-          "author_date": "2026-02-26T20:32:27Z",
-          "message": "feat: add automatic compaction settings to agent config (#437)\n\n* Merge origin/main and resolve conflicts: keep all features including auto-compaction and evaluation\n\n* fix: resolve merge conflict syntax errors in config.go\n\n* feat: wire auto-compaction options to cogito\n\nWire enableAutoCompaction and autoCompactionThreshold options to\ncogito.WithCompactionThreshold() when starting the agent.\n\n---------\n\nCo-authored-by: Team Coding Agent 1 <team-coding-agent-1@local>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/fb20d12ae13b3df6301f3d9cfa5b00f04c073160"
-        },
-        {
-          "sha": "2acdc6688c24afc10b15e3478cd1196df9c81c75",
-          "author_date": "2026-02-27T10:08:16Z",
-          "message": "fix(conv): merge system messages\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/2acdc6688c24afc10b15e3478cd1196df9c81c75"
-        },
-        {
-          "sha": "d9bf1934576f790ca4ade461b0c3f46a7b0e0e8d",
-          "author_date": "2026-03-04T17:39:11Z",
-          "message": "feat(ui): allow to edit agent before importing (#444)\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/d9bf1934576f790ca4ade461b0c3f46a7b0e0e8d"
-        },
-        {
-          "sha": "3ecbbf3eaceff4b3f6bd9791494f1f09bd892bbb",
-          "author_date": "2026-03-06T15:39:30Z",
-          "message": "chore: minor enhancement to be fully importable\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/3ecbbf3eaceff4b3f6bd9791494f1f09bd892bbb"
-        },
-        {
-          "sha": "5a27c471ca780237932b87c351aba91def49e591",
-          "author_date": "2026-03-06T15:49:48Z",
-          "message": "chore: refactoring to make it importable\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/5a27c471ca780237932b87c351aba91def49e591"
-        },
-        {
-          "sha": "34db83dc322090376ff49fbfdbce677127194d58",
-          "author_date": "2026-03-08T14:59:37Z",
-          "message": "fix(slack): correct thread timestamp and improve file upload handling (#447)\n\nRoot cause: uploadJobResultFiles was passing msgTs (placeholder reply timestamp)\nas thread_ts for file uploads. Slack's API rejects this - it requires the\nparent thread timestamp, not a reply's timestamp.\n\nChanges:\n1. Use 'ts' (thread root timestamp) instead of 'msgTs' in replyToUpdateMessage\n2. Fix type handling in attachmentsFromMetadataOnly to handle []interface{}\n3. Download and upload generated images (e.g., DALL-E) as files instead of\n   just adding link attachments, to preserve temporary URLs\n4. Remove dead code: generateAttachmentsFromJobResponse was never called\n\nThis matches Telegram connector behavior where files are properly uploaded\nrather than just referenced by URL.\n\nCo-authored-by: localai-bot <localai-bot@noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/34db83dc322090376ff49fbfdbce677127194d58"
-        },
-        {
-          "sha": "4177479f82289da5b9fcd75e0bad800ede766650",
-          "author_date": "2026-03-09T21:37:10Z",
-          "message": "chore(deps): bump cogito from v0.9.2 to v0.9.3 (#452)\n\nCo-authored-by: LocalAI Bot <localai-bot@example.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/4177479f82289da5b9fcd75e0bad800ede766650"
-        },
-        {
-          "sha": "9b744d2bacc6a60252e0f45b82d060ee78c3ff3b",
-          "author_date": "2026-03-09T22:05:19Z",
-          "message": "chore(deps-dev): bump eslint from 10.0.0 to 10.0.3 in /webui/react-ui (#451)\n\nBumps [eslint](https://github.com/eslint/eslint) from 10.0.0 to 10.0.3.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Commits](https://github.com/eslint/eslint/compare/v10.0.0...v10.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 10.0.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/9b744d2bacc6a60252e0f45b82d060ee78c3ff3b"
-        },
-        {
-          "sha": "dc21ee83bc41cb72df6916959fede92c09e6eff0",
-          "author_date": "2026-03-10T21:09:02Z",
-          "message": "feat: implement 'agent run' CLI command (#448) (#449)\n\n* feat: implement 'agent run' CLI command (#448)\n\n- Add 'local-agi agent run' command supporting agent name or config file\n- Support 'local-agi agent run <name>' to run agent from registry (pool.json)\n- Support 'local-agi agent run --config <file.json>' to run from JSON config\n- Extract web server into 'local-agi serve' subcommand\n- Implement agent name lookup from registry\n- Add JSON config file parsing and validation\n- Create standalone agent execution logic\n- Add proper error handling for invalid inputs\n- Reuse existing service factories (actions, connectors, filters, skills)\n- Environment variable fallback for config values\n- No web server - agent runs in foreground with clean SIGINT/SIGTERM handling\n\nReferences: https://github.com/mudler/LocalAGI/issues/448\n\n* refactor(cmd): use pool to start agent instead of duplicating logic\n\nReplace ~220 lines of duplicated agent initialization code in\nstartStandaloneAgent() with a call to pool.StartAgentStandalone().\nThe new pool method delegates to the existing startAgentWithConfig(),\neliminating code duplication between the CLI and the pool.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\n\n* fix: add default help command to root\n\n* fix: default to serve command when no subcommand provided\n\nThe e2e tests fail because when the container starts with no arguments,\nthe root command shows help instead of starting the web server.\n\nChanged the root command to call serveCmd.RunE() directly when no\nsubcommand is provided, ensuring the web server starts by default.\n\nThis fixes the CI e2e test failure where the web server wasn't starting.\n\n* fix: add serve subcommand to Dockerfile ENTRYPOINT\n\n* refactor: remove unused GetRAGProvider function\n\n* refactor: centralize env var setup in cmd/env.go\n\n---------\n\nCo-authored-by: localai-bot <localai-bot@noreply.github.com>\nCo-authored-by: Claude Opus 4.6 <noreply@anthropic.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/dc21ee83bc41cb72df6916959fede92c09e6eff0"
-        },
-        {
-          "sha": "2d2da7df95e16516e969f2dad2da9ecd88896fc3",
-          "author_date": "2026-03-11T16:53:47Z",
-          "message": "feat: add --prompt flag for foreground agent mode (#454)\n\n* feat: add --prompt flag for foreground agent mode\n\n- Add --prompt/-p flag to 'agent run' command\n- When --prompt is provided, runs agent in foreground mode\n- Creates agent, executes Ask() with the prompt, prints response, and exits\n- Supports both agent name and --config file input modes\n- Follows existing code patterns in the repository\n\n* fix: correct JobResult field access for error and response\n\n---------\n\nCo-authored-by: localai-bot <localai-bot@noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/2d2da7df95e16516e969f2dad2da9ecd88896fc3"
-        },
-        {
-          "sha": "e38f13ab8cecb8ba8a2f4c0503a856d2b95efe79",
-          "author_date": "2026-03-14T22:27:40Z",
-          "message": "feat: add handler to serve raw files\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/e38f13ab8cecb8ba8a2f4c0503a856d2b95efe79"
-        },
-        {
-          "sha": "9438d39f70c33e277d3357f110545214cf2a6d30",
-          "author_date": "2026-03-15T22:33:51Z",
-          "message": "feat: support streaming mode for tool calls\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/9438d39f70c33e277d3357f110545214cf2a6d30"
-        },
-        {
-          "sha": "da286065e1268c538359bab1d2859767a515e79d",
-          "author_date": "2026-03-15T22:34:07Z",
-          "message": "feat: support streaming mode for tool calls\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/da286065e1268c538359bab1d2859767a515e79d"
-        },
-        {
-          "sha": "cc2d2838ca4f56bf7b633a55161044167c459284",
-          "author_date": "2026-03-18T07:43:54Z",
-          "message": "chore(deps-dev): bump eslint-plugin-react-refresh from 0.5.0 to 0.5.2 in /webui/react-ui (#430)\n\nchore(deps-dev): bump eslint-plugin-react-refresh in /webui/react-ui\n\nBumps [eslint-plugin-react-refresh](https://github.com/ArnaudBarre/eslint-plugin-react-refresh) from 0.5.0 to 0.5.2.\n- [Release notes](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/releases)\n- [Changelog](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ArnaudBarre/eslint-plugin-react-refresh/compare/v0.5.0...v0.5.2)\n\n---\nupdated-dependencies:\n- dependency-name: eslint-plugin-react-refresh\n  dependency-version: 0.5.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/cc2d2838ca4f56bf7b633a55161044167c459284"
-        },
-        {
-          "sha": "43c65ec7e88aff9bbd5b5a17c7eded4e72cdcd91",
-          "author_date": "2026-03-19T17:45:13Z",
-          "message": "feat: update localrecall to support files with same names in the collections\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/43c65ec7e88aff9bbd5b5a17c7eded4e72cdcd91"
-        },
-        {
-          "sha": "07caa0b95d4a391219dd7d516fef4f9554744740",
-          "author_date": "2026-03-21T00:46:41Z",
-          "message": "Adapt client too\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/07caa0b95d4a391219dd7d516fef4f9554744740"
-        },
-        {
-          "sha": "b485b77037c40be38c5556d4c5112dce7e9201b0",
-          "author_date": "2026-03-21T00:47:23Z",
-          "message": "Adapt client too\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/b485b77037c40be38c5556d4c5112dce7e9201b0"
-        },
-        {
-          "sha": "1b87514b2fecb3bc7addda781c9b1f9a5dd79376",
-          "author_date": "2026-03-25T08:33:17Z",
-          "message": "allow to ask directly\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/1b87514b2fecb3bc7addda781c9b1f9a5dd79376"
-        },
-        {
-          "sha": "3d0af0088e691c3c8cf393c53fdd93787764c2de",
-          "author_date": "2026-03-25T13:48:23Z",
-          "message": "split run from start\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/3d0af0088e691c3c8cf393c53fdd93787764c2de"
-        },
-        {
-          "sha": "23344560f02da05beba990eff9b72e5ab75cabc1",
-          "author_date": "2026-03-25T14:25:29Z",
-          "message": "small fixups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/23344560f02da05beba990eff9b72e5ab75cabc1"
-        },
-        {
-          "sha": "640d97b6db4609dd24d91cc38c4438ab9d0482f2",
-          "author_date": "2026-03-25T15:38:18Z",
-          "message": "small fixups\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/640d97b6db4609dd24d91cc38c4438ab9d0482f2"
-        },
-        {
-          "sha": "736ccbb95ec88d24983255c8104c7adf0ad059c8",
-          "author_date": "2026-03-25T17:28:45Z",
-          "message": "forward reasoning\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/736ccbb95ec88d24983255c8104c7adf0ad059c8"
-        },
-        {
-          "sha": "c65d62e7622bf99b87c3277faa9877cd191f3133",
-          "author_date": "2026-03-31T17:38:55Z",
-          "message": "chore: Update fiber to v2.52.11 (#461)\n\nSigned-off-by: Richard Palethorpe <io@richiejp.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c65d62e7622bf99b87c3277faa9877cd191f3133"
-        },
-        {
-          "sha": "3369136c738047d3e5e4ebd5e9cf18faf2e6d6b9",
-          "author_date": "2026-04-15T16:51:42Z",
-          "message": "chore(deps): bump localrecall for vector-dim migration fix\n\nPicks up the postgres backend fix where switching the embedding model\non an existing collection now resizes the VECTOR column instead of\nfailing every subsequent insert with SQLSTATE 22000.",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/3369136c738047d3e5e4ebd5e9cf18faf2e6d6b9"
-        },
-        {
-          "sha": "e83bf515d0109d9b7e0ca3dafed7897dff53c0a0",
-          "author_date": "2026-05-04T16:51:00Z",
-          "message": "fix(collections): handle errors from LocalRecall constructors\n\nLocalRecall's NewPersistent{Chrome,LocalAI,Postgres}Collection now\nreturn errors instead of os.Exit'ing on init failure. Bump the dep and\nupdate newVectorEngine to consume the new signatures, surfacing failures\nas a nil collection (the existing \"engine misconfigured\" code path)\ninstead of letting the upstream os.Exit kill the embedding process.\n\nWithout this, a transient embedding-service or PostgreSQL outage during\nlazy RAG init would crash any long-running host (e.g. the LocalAI\ndistributed orchestrator) instead of degrading to \"no RAG available\".\n\nRAGProviderFromState already handles a nil collection from\nEnsureCollection by returning (nil, nil, false) to the agent pool, which\nis the same path agents take when no RAG is configured — so callers\nupstream need no further change.\n\nSigned-off-by: Ettore Di Giacinto <mudler@localai.io>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/e83bf515d0109d9b7e0ca3dafed7897dff53c0a0"
-        },
-        {
-          "sha": "facd8881b135a511d733e85f138a9ea96e38826e",
-          "author_date": "2026-05-06T23:07:19Z",
-          "message": "chore(deps): bump localrecall to v0.6.0 for go-fitz PDF extraction\n\nLocalRecall v0.6.0 swaps the PDF text extractor from dslipak/pdf to\ngen2brain/go-fitz (libmupdf bindings) and wraps the call in a 60s\ngoroutine timeout. Fixes upload hangs that affected adversarial PDFs\n(broken xref tables, encrypted, image-only without OCR) where the\nprevious parser would block indefinitely.\n\nPure dep bump — no LocalAGI source code changes. Indirect graph picks\nup gen2brain/go-fitz, ebitengine/purego, jupiterrider/ffi; drops\ndslipak/pdf.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/facd8881b135a511d733e85f138a9ea96e38826e"
-        },
-        {
-          "sha": "c1a12317930d3154c6e49eea1e8e39e3eef1b5f5",
-          "author_date": "2026-05-07T07:47:08Z",
-          "message": "chore(deps): bump localrecall — go-fitz cgo → go-pdfium WASM\n\nPulls LocalRecall@a7724fe which switches PDF extraction from\ngen2brain/go-fitz to klippa-app/go-pdfium with the WebAssembly backend.\nFixes aarch64 link failures (`__isoc23_strtol` undefined reference) in\nbinaries that pull LocalRecall through cgo.\n\nPure dep bump — no LocalAGI source changes. Indirect graph picks up\ngo-pdfium + tetratelabs/wazero; drops gen2brain/go-fitz +\nebitengine/purego + jupiterrider/ffi.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/c1a12317930d3154c6e49eea1e8e39e3eef1b5f5"
-        },
-        {
-          "sha": "37810d918a871c2b4ea20f75aa55e91ab1319322",
-          "author_date": "2026-05-08T12:52:35Z",
-          "message": "fix(collections): rehydrate in-process collections lazily after init failure (#468)\n\nWhen NewInProcessBackend boots, it iterates every on-disk collection and\ncalls newVectorEngine to construct its engine wrapper. For the postgres\nengine that constructor performs a \"test embedding\" probe that requires\nthe embedding model to be reachable. If the embedding service is briefly\nunavailable at boot — e.g. the node hosting the embedding model has\ntemporary NATS connectivity issues — the construction fails and the\ncollection is silently dropped from the in-memory map. Subsequent\noperations against that collection (Upload / Search / ListEntries / …)\nall return \"collection not found\" indefinitely, even after the embedding\nservice comes back, because nothing ever retries.\n\nWorse, the collection still exists on disk (its JSON sidecar) and its\ndata still exists in the vector DB (e.g. the per-collection\ndocuments_col_<uuid> table in PostgreSQL). From the user's perspective\ntheir collection has silently disappeared.\n\nTwo changes:\n\n1. NewInProcessBackend always registers every on-disk collection in\n   state.Collections — even when newVectorEngine returns nil. A nil\n   entry is a placeholder meaning \"known on disk, not yet loaded\".\n\n2. backendInProcess.lookup centralises the cache read for every\n   operation. If the cache holds a placeholder, it retries\n   newVectorEngine now, under the write lock. So as soon as the\n   embedding service is reachable again, the next request to the\n   collection will rehydrate it transparently. If init still fails or\n   the collection isn't on disk at all, lookup returns (nil, false)\n   and the operation surfaces \"collection not found\" as before.\n\nThe state.EnsureCollection callback used by the internal RAG provider\nalready handled the placeholder case (it re-inits whenever the cache\nentry is missing or nil), so it needs no change.\n\nThis does not address the underlying probe-and-cache pattern in\nLocalRecall's NewPersistentPostgresCollection — read-only operations\non existing collections still require an embedding probe at engine\nconstruction. That is a separate, deeper fix worth pursuing in\nLocalRecall directly.",
-          "html_url": "https://github.com/mudler/LocalAGI/commit/37810d918a871c2b4ea20f75aa55e91ab1319322"
         }
       ],
       "ignored_reason": null

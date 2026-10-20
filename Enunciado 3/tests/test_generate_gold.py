@@ -54,6 +54,9 @@ def test_main_generates_reproducible_template_from_multiple_input_directories(
     (first_input / "llm_suggestions.json").write_text("[]", encoding="utf-8")
 
     output = tmp_path / "gold" / "template.csv"
+    population = tmp_path / "datasets" / "metrics.csv"
+    population.parent.mkdir()
+    population.write_text("full_name\norg/one\norg/two\n", encoding="utf-8")
     arguments = [
         "--input-dir",
         str(first_input),
@@ -61,6 +64,8 @@ def test_main_generates_reproducible_template_from_multiple_input_directories(
         str(tmp_path / "second"),
         "--output",
         str(output),
+        "--population-csv",
+        str(population),
         "--sample-size",
         "2",
     ]

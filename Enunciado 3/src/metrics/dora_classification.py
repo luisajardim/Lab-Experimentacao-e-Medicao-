@@ -10,11 +10,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from enum import Enum
 
-from .cfr import cfr_a
-from .deployment_frequency import deployment_frequency
-from .lead_time import lead_time_by_release, lead_time_by_commit
-from .recovery import median_recovery_hours
-
 
 class DORAVariant(Enum):
     C1 = "C1"
@@ -31,35 +26,27 @@ class DORAClassification:
     recovery_hours: float | None
     deployment_frequency_per_week: float | None
 
-    def elite(self) -> bool | None:
-        if any(v is None for v in (self.lead_time_hours, self.cfr, self.recovery_hours, self.deployment_frequency_per_week)):
-            return None
-        # ENUNCIADO §5: Elite = Lead time < 1h, CFR < 0.15, Recovery < 1h, Deploy >= 1/dia (7/semana)
-        return (
-            self.lead_time_hours < 1.0
-            and self.cfr < 0.15
-            and self.recovery_hours < 1.0
-            and self.deployment_frequency_per_week >= 7.0
-        )
-
-    def high(self) -> bool | None:
-        if any(v is None for v in (self.lead_time_hours, self.cfr, self.recovery_hours, self.deployment_frequency_per_week)):
-            return None
-        return (
-            self.lead_time_hours < 24.0
-            and self.cfr < 0.30
-            and self.recovery_hours < 24.0
-            and self.deployment_frequency_per_week >= 1.0
-        )
-
     def category(self) -> str | None:
-        if self.elite():
-            return "Elite"
-        if self.high():
-            return "High"
-        if all(v is not None for v in (self.lead_time_hours, self.cfr, self.recovery_hours, self.deployment_frequency_per_week)):
-            return "Medium/Low"
-        return None
+        """Return the median of the four DORA tier scores, rounded down."""
+        values = (
+            self.deployment_frequency_per_week,
+            self.lead_time_hours,
+            self.cfr,
+            self.recovery_hours,
+        )
+        if any(value is None for value in values):
+            return None
+        deployment_frequency, lead_time, cfr, recovery = values
+        assert all(value is not None for value in values)
+        scores = sorted(
+            (
+                4 if deployment_frequency >= 7 else 3 if deployment_frequency >= 1 else 2 if deployment_frequency >= 1 / 4.345 else 1,
+                4 if lead_time < 24 else 3 if lead_time < 24 * 7 else 2 if lead_time < 24 * 30 else 1,
+                4 if cfr <= 0.15 else 3 if cfr <= 0.30 else 2 if cfr <= 0.45 else 1,
+                4 if recovery < 1 else 3 if recovery < 24 else 2 if recovery < 24 * 7 else 1,
+            )
+        )
+        return {4: "Elite", 3: "High", 2: "Medium", 1: "Low"}[(scores[1] + scores[2]) // 2]
 
 
 def classify_dora(

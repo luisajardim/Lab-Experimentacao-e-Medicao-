@@ -5734,104 +5734,530 @@
       "ignored_reason": null
     },
     {
-      "release": "v4.50.0",
-      "previous_release": "v4.49.0",
+      "release": "v1.29.0",
+      "previous_release": "v1.28.0",
       "commits": [
         {
-          "sha": "a6f0f4e514d3f1ea536b89dbce0e98e436e9a283",
-          "author_date": "2025-10-17T06:39:46Z",
-          "message": "`dependencies` update `go-azure-sdk` to `v0.20251016.1163854` (#30883)\n\n[ENHANCEMENT] * `go-azure-sdk` update to `v0.20251016.1163854`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a6f0f4e514d3f1ea536b89dbce0e98e436e9a283"
+          "sha": "27dbebb7be20a6a8de13dd0d6d792b06b42cb926",
+          "author_date": "2019-04-16T01:48:07Z",
+          "message": "Enable correlation request ID header in ARM API.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/27dbebb7be20a6a8de13dd0d6d792b06b42cb926"
         },
         {
-          "sha": "afb01a98555dc70d8b55b6e99e4f87bb189cef7f",
-          "author_date": "2025-10-17T20:59:15Z",
-          "message": "`azurerm_container_app_environment` - add support for the `public_network_access` property (#30817)\n\n[ENHANCEMENT] * `azurerm_container_app_environment` - add support for the `public_network_access` property",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/afb01a98555dc70d8b55b6e99e4f87bb189cef7f"
+          "sha": "084983158ac7ffc8d141a10b60d2e5ce93735027",
+          "author_date": "2019-05-17T17:49:14Z",
+          "message": "Cleanup after v1.28.0 release",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/084983158ac7ffc8d141a10b60d2e5ce93735027"
         },
         {
-          "sha": "cc9b53e5845a5d9b219ae754064c026791e6bc20",
-          "author_date": "2025-10-17T21:33:06Z",
-          "message": "`azurerm_mssql_job_target_group` - remove validation that made `job_target.job_credential_id` required (#30898)\n\n[ENHANCEMENT] * `azurerm_mssql_job_target_group` - the `job_target.job_credential_id` property is no longer required when `database_name` is not set to allow for authentication using a managed identity",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cc9b53e5845a5d9b219ae754064c026791e6bc20"
+          "sha": "7a38074010cf2b722f742b98ccf46283aac3f6a2",
+          "author_date": "2019-05-17T18:21:40Z",
+          "message": "Application Gateway: Rewrite Rules (#3423)\n\nAdds support for rewrite rules #3284 \r\n\r\n(fixes #3284)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7a38074010cf2b722f742b98ccf46283aac3f6a2"
         },
         {
-          "sha": "fa058334159c83c30b98b14ebacf790ec9e9afc2",
-          "author_date": "2025-10-20T14:19:51Z",
-          "message": "issue-template: fix 404 Link (#30905)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fa058334159c83c30b98b14ebacf790ec9e9afc2"
+          "sha": "c1b2e2ddb7bfcf0dd85c643948bd3d2677528d71",
+          "author_date": "2019-05-17T18:23:05Z",
+          "message": "Update CHANGELOG.md to include #3423",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c1b2e2ddb7bfcf0dd85c643948bd3d2677528d71"
         },
         {
-          "sha": "91624ba4c98f85806b1d90328aaabc9c764305cc",
-          "author_date": "2025-10-20T21:08:13Z",
-          "message": "Docs: Fix typos in code examples in best practices documentation (#30914)\n\nCo-authored-by: Mads Jensen <atombrella@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/91624ba4c98f85806b1d90328aaabc9c764305cc"
+          "sha": "a42d581e51afa79db626d96bfe71a84e93cc9338",
+          "author_date": "2019-05-17T18:57:33Z",
+          "message": "Update CHANGELOG.md to include #3360",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a42d581e51afa79db626d96bfe71a84e93cc9338"
         },
         {
-          "sha": "c0a26d27bfc50ff9a70544f9f41163c964a51499",
-          "author_date": "2025-10-20T21:35:17Z",
-          "message": "`azurerm_app_service_environment_v3`: Remove a dead if-statement (#30901)\n\nCo-authored-by: Mads Jensen <atombrella@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c0a26d27bfc50ff9a70544f9f41163c964a51499"
+          "sha": "0f4767496711f959d7b67b098ed3d2d51519c2c4",
+          "author_date": "2019-05-17T18:58:21Z",
+          "message": "application gateway: add advanced ssl_policies (#3360)\n\nThis PR should fix the Issue #1536",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0f4767496711f959d7b67b098ed3d2d51519c2c4"
         },
         {
-          "sha": "83b56c2831b325eb986bf1f1b3c7d603d813a41b",
-          "author_date": "2025-10-20T23:37:39Z",
-          "message": "`azurerm_search_service` - implement plan time error when `local_authentication_enabled = false` and `authentication_failure_mode` is set (#30882)\n\n[ENHANCEMENT] * `azurerm_search_service` - implement plan time error when `local_authentication_enabled = false` and `authentication_failure_mode` is set",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/83b56c2831b325eb986bf1f1b3c7d603d813a41b"
+          "sha": "c96c5d0eeff2f9356619b535ee62e378079c578b",
+          "author_date": "2019-05-17T21:20:04Z",
+          "message": "Fix TestAccAzureRMStorageShare_disappears (#3467)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c96c5d0eeff2f9356619b535ee62e378079c578b"
         },
         {
-          "sha": "c109e1bb23f13fe059b27463d5386ca6d28d743c",
-          "author_date": "2025-10-21T17:15:03Z",
-          "message": "docs: `data.azurerm_api_management` - replace outdated `sku` block with `sku_name` property (#30921)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c109e1bb23f13fe059b27463d5386ca6d28d743c"
+          "sha": "661b47e078b996517d688594a0804b5d81a37bcf",
+          "author_date": "2019-05-17T21:28:12Z",
+          "message": "Fix TestAccAzureRMContainerGroup_windows (#3468)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/661b47e078b996517d688594a0804b5d81a37bcf"
         },
         {
-          "sha": "c9c087c129b8012ae43e8c319797cf5eae70ea2a",
-          "author_date": "2025-10-21T18:54:03Z",
-          "message": "`azurerm_netapp_volume_resource` - support for Cross Zone Region replication through the `data_protection_replication` block (#30872)\n\n[ENHANCEMENT] * `azurerm_netapp_volume_resource` - support for Cross Zone Region replication through the `data_protection_replication` block",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c9c087c129b8012ae43e8c319797cf5eae70ea2a"
+          "sha": "ae14bfa54699133c8d7c0e8c8f5f4845355a54a4",
+          "author_date": "2019-05-18T18:11:51Z",
+          "message": "Application Insights Webtests (#3331)\n\nfixes #1687",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ae14bfa54699133c8d7c0e8c8f5f4845355a54a4"
         },
         {
-          "sha": "ff27a21cf6b2b605ef5300c11a04a2ef03d367f7",
-          "author_date": "2025-10-22T10:02:24Z",
-          "message": "azurerm_managed_redis: Deprecate redis_enterprise in favor of managed_redis + new features: more SKUs, UAI, CMK, access keys auth and PE (#30060)\n\n[FEATURE] * **New Resource**: `azurerm_managed_redis`\n[FEATURE] * **New Resource**: `azurerm_managed_redis_geo_replication`\n[FEATURE] * **New Data Source**: `azurerm_managed_redis`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ff27a21cf6b2b605ef5300c11a04a2ef03d367f7"
+          "sha": "45f01f10a22203f106fc792eca91e9c0d91b8dc8",
+          "author_date": "2019-05-18T18:13:19Z",
+          "message": "Update CHANGELOG.md to include #3331",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/45f01f10a22203f106fc792eca91e9c0d91b8dc8"
         },
         {
-          "sha": "ca915c93ad5f81e3af1b99d579bbdab1f1a1a0bf",
-          "author_date": "2025-10-22T14:00:39Z",
-          "message": "`azurerm_mssql_database` - allow existing zero or null value for `auto_pause_delay_in_minutes` and `min_capacity` of non-serverless database (#30924)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ca915c93ad5f81e3af1b99d579bbdab1f1a1a0bf"
+          "sha": "477facbf2b841af4dbeeafa28d3751dce11e03e4",
+          "author_date": "2019-01-30T11:36:00Z",
+          "message": "Add initial implementation for Authentication Settings in read & update",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/477facbf2b841af4dbeeafa28d3751dce11e03e4"
         },
         {
-          "sha": "03fbbbcf49e4554ee2c206272c6605a8f77362dd",
-          "author_date": "2025-10-22T17:23:23Z",
-          "message": "oracle - update to API version 2025-09-01  (#30796)\n\n[ENHANCEMENT] * dependencies: `oracle` - update to API version `2025-09-01`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/03fbbbcf49e4554ee2c206272c6605a8f77362dd"
+          "sha": "10cd657ed059fa40eacb922deaf0391c46f88e5d",
+          "author_date": "2019-02-01T09:55:14Z",
+          "message": "Add initial active directory section",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/10cd657ed059fa40eacb922deaf0391c46f88e5d"
         },
         {
-          "sha": "98365b8bb04caa750efe5a886ae23e24feba1a2a",
-          "author_date": "2025-10-23T09:34:00Z",
-          "message": "`azurerm_site_recovery_replicated_vm` - update document for `target_replica_disk_type` (#30931)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/98365b8bb04caa750efe5a886ae23e24feba1a2a"
+          "sha": "f2270063e5da4b83fdac98b2d429a46c6b404d1a",
+          "author_date": "2019-02-01T10:02:37Z",
+          "message": "Add allowedAudiences to schema, flatten and expand",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/f2270063e5da4b83fdac98b2d429a46c6b404d1a"
         },
         {
-          "sha": "f33137ef65d88d1d27ad0150920f400a448fcf31",
-          "author_date": "2025-10-23T14:00:40Z",
-          "message": "azurerm_managed_redis: extend create timeout from 30 to 45 min (#30932)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/f33137ef65d88d1d27ad0150920f400a448fcf31"
+          "sha": "69c6707192196b3722dc268f2f627f8699e91553",
+          "author_date": "2019-02-01T10:04:56Z",
+          "message": "Add facebook auth settings schema",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/69c6707192196b3722dc268f2f627f8699e91553"
         },
         {
-          "sha": "7feaf28156f2be11199cf89aeffed18344fe0e23",
-          "author_date": "2025-10-23T14:09:32Z",
-          "message": "docs: `azurerm_subnet` - remove note that is no longer relevant (#30928)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7feaf28156f2be11199cf89aeffed18344fe0e23"
+          "sha": "627d41a096aee0ed6c3fda6d971a8a92706a630f",
+          "author_date": "2019-02-01T10:05:31Z",
+          "message": "Add 'auth' to facebook schema function name",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/627d41a096aee0ed6c3fda6d971a8a92706a630f"
         },
         {
-          "sha": "211156b6c9c3c4721a2a4631998a6bd08433a9ee",
-          "author_date": "2025-10-23T20:11:24Z",
-          "message": "CHANGELOG.md for 4.50.0 (#30891)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>\nCo-authored-by: sreallymatt <106555974+sreallymatt@users.noreply.github.com>\nCo-authored-by: jackofallops <11830746+jackofallops@users.noreply.github.com>\nCo-authored-by: catriona-m <86247157+catriona-m@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/211156b6c9c3c4721a2a4631998a6bd08433a9ee"
+          "sha": "54205f2bedde09da79b1b8c668124f37195eb131",
+          "author_date": "2019-02-01T10:14:22Z",
+          "message": "Add google auth settings schema",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/54205f2bedde09da79b1b8c668124f37195eb131"
+        },
+        {
+          "sha": "7a46c0eca3cef74a2f10c05d13ae401eee5d0c1c",
+          "author_date": "2019-02-01T10:14:49Z",
+          "message": "Make sure facebook app secret is required",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7a46c0eca3cef74a2f10c05d13ae401eee5d0c1c"
+        },
+        {
+          "sha": "a7cf8454fd30ba26e10645f830ecb72aec4f5d41",
+          "author_date": "2019-02-01T10:16:43Z",
+          "message": "Add microsoft auth settings schema",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a7cf8454fd30ba26e10645f830ecb72aec4f5d41"
+        },
+        {
+          "sha": "c0333254d1926a77ce97c8d762303a8e75aef89d",
+          "author_date": "2019-02-01T10:17:54Z",
+          "message": "Add providers to main auth schema",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c0333254d1926a77ce97c8d762303a8e75aef89d"
+        },
+        {
+          "sha": "6c183e2e0fdc9e264c5c69637aa0ee1b9cd24977",
+          "author_date": "2019-02-01T10:29:26Z",
+          "message": "Add twitter auth settings schema",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/6c183e2e0fdc9e264c5c69637aa0ee1b9cd24977"
+        },
+        {
+          "sha": "902dea65f7929822d361bfae78c9d266a1872d80",
+          "author_date": "2019-02-01T10:32:01Z",
+          "message": "Add remaining properties for main schema",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/902dea65f7929822d361bfae78c9d266a1872d80"
+        },
+        {
+          "sha": "04df693b69d164c6065652e817daa12cfc8b15e3",
+          "author_date": "2019-02-01T10:48:29Z",
+          "message": "Add facebook, google, microsoft and twitter to expand",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/04df693b69d164c6065652e817daa12cfc8b15e3"
+        },
+        {
+          "sha": "8b93fc8167588c351ff32a517480f36c29194fd9",
+          "author_date": "2019-02-01T10:58:44Z",
+          "message": "Add facebook, google, microsoft and twitter to flatten",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/8b93fc8167588c351ff32a517480f36c29194fd9"
+        },
+        {
+          "sha": "92ed8b0703983312e9f7cfa59ccf4d8a6e11f72b",
+          "author_date": "2019-02-01T12:05:39Z",
+          "message": "Add remaining main auth properties",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/92ed8b0703983312e9f7cfa59ccf4d8a6e11f72b"
+        },
+        {
+          "sha": "018ea100e414161f4e708246874327df688465f0",
+          "author_date": "2019-02-01T12:28:57Z",
+          "message": "Add remaining auth settings to flatten function",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/018ea100e414161f4e708246874327df688465f0"
+        },
+        {
+          "sha": "eb7a1042493248c872c247d3772081245d84f94f",
+          "author_date": "2019-02-01T14:18:17Z",
+          "message": "Add check for providers",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/eb7a1042493248c872c247d3772081245d84f94f"
+        },
+        {
+          "sha": "3e117c89d1d685b60ef35c122aad43d3b463539d",
+          "author_date": "2019-02-01T14:18:37Z",
+          "message": "Add acctest for Active Directory authentication",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3e117c89d1d685b60ef35c122aad43d3b463539d"
+        },
+        {
+          "sha": "9e042e60e981f0fdae523a26f7ad3239a955e4ed",
+          "author_date": "2019-02-01T14:27:22Z",
+          "message": "Add missing check for Active Directory authentication",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9e042e60e981f0fdae523a26f7ad3239a955e4ed"
+        },
+        {
+          "sha": "8c799b9fbf37ed3669c0ec332afc3a71aaf12b05",
+          "author_date": "2019-02-01T14:28:30Z",
+          "message": "Add acctest for Facebook authentication",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/8c799b9fbf37ed3669c0ec332afc3a71aaf12b05"
+        },
+        {
+          "sha": "ac3ffc528e0aa8ce65cb7fd78193043a0032d1e4",
+          "author_date": "2019-02-01T14:43:52Z",
+          "message": "Add acctest for Google authentication",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ac3ffc528e0aa8ce65cb7fd78193043a0032d1e4"
+        },
+        {
+          "sha": "e0912fc144457a864bd0e3a00894b69e126e2f4b",
+          "author_date": "2019-02-01T14:49:08Z",
+          "message": "Add acctest for Microsoft authentication",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e0912fc144457a864bd0e3a00894b69e126e2f4b"
+        },
+        {
+          "sha": "6c32a36cb6ac068f960898604811c106d76813cd",
+          "author_date": "2019-02-01T14:53:57Z",
+          "message": "Add acctest for Twitter authentication",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/6c32a36cb6ac068f960898604811c106d76813cd"
+        },
+        {
+          "sha": "64f9c9859ef7dcd4e67f3f697a8ad3b5ba39a831",
+          "author_date": "2019-02-01T15:34:40Z",
+          "message": "RandInt -> AccRandTimeInt",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/64f9c9859ef7dcd4e67f3f697a8ad3b5ba39a831"
+        },
+        {
+          "sha": "806d98b8da9d11290b6f019d0bd8e08c15aeb26a",
+          "author_date": "2019-02-01T16:37:15Z",
+          "message": "Check for nil interfaces in different auth settings",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/806d98b8da9d11290b6f019d0bd8e08c15aeb26a"
+        },
+        {
+          "sha": "0889395e0dc22889c4913ec3c24785f2469d851b",
+          "author_date": "2019-02-01T16:37:55Z",
+          "message": "Add acc test for multiple authentication providers",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0889395e0dc22889c4913ec3c24785f2469d851b"
+        },
+        {
+          "sha": "651917150d6507363947aa722d04327f71f004e3",
+          "author_date": "2019-02-01T17:42:01Z",
+          "message": "Add acctests for remaining main auth settings",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/651917150d6507363947aa722d04327f71f004e3"
+        },
+        {
+          "sha": "818881161a1e4de42bc58c101de13cd28267b95d",
+          "author_date": "2019-02-01T20:00:50Z",
+          "message": "Add Authentication documentation",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/818881161a1e4de42bc58c101de13cd28267b95d"
+        },
+        {
+          "sha": "380c63ce1f790223b22be2210d6fa8e43e38c06f",
+          "author_date": "2019-02-01T20:12:16Z",
+          "message": "Add token_store_enabled setting",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/380c63ce1f790223b22be2210d6fa8e43e38c06f"
+        },
+        {
+          "sha": "aebad28b4392c17e6b5c2cd36e6f2ca6c88c387e",
+          "author_date": "2019-02-01T20:52:17Z",
+          "message": "Fix linting error when updating auth settings in read",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/aebad28b4392c17e6b5c2cd36e6f2ca6c88c387e"
+        },
+        {
+          "sha": "cc54d0990c9eb6fb4bacda7d6f6f82283e544742",
+          "author_date": "2019-02-01T21:08:47Z",
+          "message": "Add missing acceptance test for runtime version",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cc54d0990c9eb6fb4bacda7d6f6f82283e544742"
+        },
+        {
+          "sha": "85a61bdff20e3d667df72d01fedc55625835b18c",
+          "author_date": "2019-04-23T12:09:01Z",
+          "message": "Update head and resolve comment about TypeMap for additional_login_params",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/85a61bdff20e3d667df72d01fedc55625835b18c"
+        },
+        {
+          "sha": "545b6bec176cda7e4dd7a18bc1fab21fababa46c",
+          "author_date": "2019-04-23T13:49:20Z",
+          "message": "Resolve comments from review for app_service.go",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/545b6bec176cda7e4dd7a18bc1fab21fababa46c"
+        },
+        {
+          "sha": "9b18c1e590241372df90d052b4201fad87dc34d0",
+          "author_date": "2019-05-19T17:21:22Z",
+          "message": "Explicitly cast before using expander function",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9b18c1e590241372df90d052b4201fad87dc34d0"
+        },
+        {
+          "sha": "92da8f8e1e30832d9ac13e92a3fa1087e8a32938",
+          "author_date": "2019-05-19T17:31:28Z",
+          "message": "Add authentication examples to examples/app-service",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/92da8f8e1e30832d9ac13e92a3fa1087e8a32938"
+        },
+        {
+          "sha": "517b906ef7a17a9e21d405ed357efe769cb202ff",
+          "author_date": "2019-05-19T18:00:51Z",
+          "message": "Resolve last comments from review",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/517b906ef7a17a9e21d405ed357efe769cb202ff"
+        },
+        {
+          "sha": "447ffad632e720e3fedb33b15a66870f4c96a84b",
+          "author_date": "2019-05-19T20:40:27Z",
+          "message": "Fix linter error",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/447ffad632e720e3fedb33b15a66870f4c96a84b"
+        },
+        {
+          "sha": "de3ffa3cd68f24645f8a0f66d744f12d6e563b43",
+          "author_date": "2019-05-20T15:18:20Z",
+          "message": "Remove extra wording (#3474)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/de3ffa3cd68f24645f8a0f66d744f12d6e563b43"
+        },
+        {
+          "sha": "d5e19d72552e4e51feef76f040f35a8544d370a4",
+          "author_date": "2019-05-21T13:52:45Z",
+          "message": "r/data_factory: documenting the `principal_id` and `tenant_id` fields (#3479)\n\nFixes #3454",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d5e19d72552e4e51feef76f040f35a8544d370a4"
+        },
+        {
+          "sha": "cb34db58ec92ee225b6d399635cccc6a42d81454",
+          "author_date": "2019-05-21T13:53:07Z",
+          "message": "r/automation_module: polling until the module's finished provisioning (#3482)\n\nFixes #2600",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cb34db58ec92ee225b6d399635cccc6a42d81454"
+        },
+        {
+          "sha": "49d904fbb459533193b17380b482226dc6b0ea3d",
+          "author_date": "2019-05-21T13:54:23Z",
+          "message": "Update CHANGELOG.md to include #3482",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/49d904fbb459533193b17380b482226dc6b0ea3d"
+        },
+        {
+          "sha": "0b36f4a35aad48cee8c71896231381f552d72ac5",
+          "author_date": "2019-05-21T13:39:03Z",
+          "message": "Changed casing for current api version.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0b36f4a35aad48cee8c71896231381f552d72ac5"
+        },
+        {
+          "sha": "fa3c9639abfe988360d19e0fabfd2675d8c8f1b3",
+          "author_date": "2019-05-21T20:22:30Z",
+          "message": "Add support multiple agent pool profiles",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fa3c9639abfe988360d19e0fabfd2675d8c8f1b3"
+        },
+        {
+          "sha": "051a17b248dd484274b360ccb4e6e3089bb1afbf",
+          "author_date": "2019-05-21T21:04:59Z",
+          "message": "Update api_management.go (#3475)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/051a17b248dd484274b360ccb4e6e3089bb1afbf"
+        },
+        {
+          "sha": "cb3fce7dba307b6fbdf0173397f3ddf82ea408ef",
+          "author_date": "2019-05-21T21:07:17Z",
+          "message": "Update CHANGELOG,md to include #3475",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cb3fce7dba307b6fbdf0173397f3ddf82ea408ef"
+        },
+        {
+          "sha": "a8f0ba299c8ca3975ea1f8ee63d926742b1e9472",
+          "author_date": "2019-05-21T21:17:03Z",
+          "message": "Fix d/azurerm_kubernetes_service_versions example usage documentation (#3487)\n\nFixes #3486.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a8f0ba299c8ca3975ea1f8ee63d926742b1e9472"
+        },
+        {
+          "sha": "2ed3dbf2001a943305c0fee74646dc66d08b1b9b",
+          "author_date": "2019-05-22T06:38:18Z",
+          "message": "Remove `advanced_schedule` block from the azurerm_automation_schedule example\n\nThe `advanced_schedule` block is not valid, and the contained `week_days` argument should not be inside it.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2ed3dbf2001a943305c0fee74646dc66d08b1b9b"
+        },
+        {
+          "sha": "188baac43bf442b907812c0ee102bb931a9c6ed1",
+          "author_date": "2019-05-22T06:42:12Z",
+          "message": "formatting",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/188baac43bf442b907812c0ee102bb931a9c6ed1"
+        },
+        {
+          "sha": "1eadf18e203e400f365fda4084910c2b803705f7",
+          "author_date": "2019-05-22T08:58:20Z",
+          "message": "Merge pull request #3497 from BenDutton/patch-1\n\nRemove `advanced_schedule` block from the azurerm_automation_schedule documentation example",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1eadf18e203e400f365fda4084910c2b803705f7"
+        },
+        {
+          "sha": "84a83903f8eda76f0bb0c11ce7516c3971c81615",
+          "author_date": "2019-05-22T10:39:10Z",
+          "message": "Merge pull request #3253 from terraform-providers/correlationID\n\nEnable correlation request ID header in ARM API.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/84a83903f8eda76f0bb0c11ce7516c3971c81615"
+        },
+        {
+          "sha": "051e029e2d295916c56fd9998fdc9dfe97d76c1e",
+          "author_date": "2019-05-22T10:39:37Z",
+          "message": "Updating to include #3253",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/051e029e2d295916c56fd9998fdc9dfe97d76c1e"
+        },
+        {
+          "sha": "006cfb100b43a07022edda509481effa33360fa7",
+          "author_date": "2019-05-22T10:39:53Z",
+          "message": "Role Assignment - Treat name as case insensitive\n\nWhen the wrong case is used for a role name, e.g. acrpull instead of the\ncorrect AcrPull, azure will accept the request and return the correct\ncasing. This results in Terraform believing it needs to update the\nresource incorrectly.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/006cfb100b43a07022edda509481effa33360fa7"
+        },
+        {
+          "sha": "b2e0bbc98b31d8f777f1d4fd759f8ac132ccf057",
+          "author_date": "2019-05-22T10:56:44Z",
+          "message": "r/app_service: updating the docs per the PR comments",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b2e0bbc98b31d8f777f1d4fd759f8ac132ccf057"
+        },
+        {
+          "sha": "c3f04e9199146c3f615164fbfa94ce6543980be9",
+          "author_date": "2019-05-22T12:43:15Z",
+          "message": "Merge pull request #3484 from jlpedrosa/bugifx/aks_addons_casing\n\nChanged casing of field \"SubnetName\" for the virtual kubelet/aci addon in AKS",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c3f04e9199146c3f615164fbfa94ce6543980be9"
+        },
+        {
+          "sha": "4509a41e37384fd8300e3baea5c510807cd3348b",
+          "author_date": "2019-05-22T12:43:51Z",
+          "message": "Updating to include #3484",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4509a41e37384fd8300e3baea5c510807cd3348b"
+        },
+        {
+          "sha": "5a9e7fcbb4e08aeffb3b022419b75139ae8b1811",
+          "author_date": "2019-05-22T13:32:13Z",
+          "message": "r/app_service: making `auth_settings` computed/the linux tests pass",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5a9e7fcbb4e08aeffb3b022419b75139ae8b1811"
+        },
+        {
+          "sha": "ef1914f59abd5bd7413be99a1bc5433aae6b9321",
+          "author_date": "2019-05-22T13:50:37Z",
+          "message": "Merge pull request #2831 from joakimhew/feature/app_service_site_auth_settings\n\nazurerm_app_service: Adds authentication support",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ef1914f59abd5bd7413be99a1bc5433aae6b9321"
+        },
+        {
+          "sha": "bc99f1a3a5c11854007ed54db45c26f4f2ac9526",
+          "author_date": "2019-05-22T13:51:13Z",
+          "message": "Updating to include #2831",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bc99f1a3a5c11854007ed54db45c26f4f2ac9526"
+        },
+        {
+          "sha": "878d870c2a398537ad408fdf611dba9c259c3e03",
+          "author_date": "2019-05-22T14:44:20Z",
+          "message": "Add test for multi agent pool profiles",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/878d870c2a398537ad408fdf611dba9c259c3e03"
+        },
+        {
+          "sha": "1e4974c1e961831a360e49e22824c422f0ced584",
+          "author_date": "2019-05-22T15:06:25Z",
+          "message": "Add documentation for multi agent pool profiles",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1e4974c1e961831a360e49e22824c422f0ced584"
+        },
+        {
+          "sha": "0466f58c6ca79e02b92559cabb14343eb98f7034",
+          "author_date": "2019-05-22T21:59:56Z",
+          "message": "go get github.com/hashicorp/terraform@v0.12.0; go mod tidy; go mod vendor;",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0466f58c6ca79e02b92559cabb14343eb98f7034"
+        },
+        {
+          "sha": "5e29755a740457b5fae426942e87fa46dfdf583e",
+          "author_date": "2019-05-22T22:10:37Z",
+          "message": "Adding update method to resource_arm_dev_test_virtual_network_test (#3501)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5e29755a740457b5fae426942e87fa46dfdf583e"
+        },
+        {
+          "sha": "929a937739c2c6c1b54ae3b3ef0a3e4a6c57ae32",
+          "author_date": "2019-05-22T22:15:21Z",
+          "message": "Bug Fix: `azurerm_express_route_circuit` (#3496)\n\n* Fixing express route circuit\r\n\r\n* UPpdate comment",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/929a937739c2c6c1b54ae3b3ef0a3e4a6c57ae32"
+        },
+        {
+          "sha": "14918ad78198a2a5f210eeb2f622bf7c33a7d01c",
+          "author_date": "2019-05-22T22:18:20Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/14918ad78198a2a5f210eeb2f622bf7c33a7d01c"
+        },
+        {
+          "sha": "7ce4b69e298926404c6bf3de223f05955cd2973a",
+          "author_date": "2019-05-23T03:05:05Z",
+          "message": "data.azurerm_virtual_network: add network_space property to match resource (#3494)\n\nFixes #3373\r\nFixes #3384",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7ce4b69e298926404c6bf3de223f05955cd2973a"
+        },
+        {
+          "sha": "705468e51c12836ebc7dc417549c5de035711f7b",
+          "author_date": "2019-05-23T03:06:22Z",
+          "message": "Update CHANGELOG.md to include #3494",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/705468e51c12836ebc7dc417549c5de035711f7b"
+        },
+        {
+          "sha": "92f7ea3f5c67768fc53d6c2a9403c5941d3605d0",
+          "author_date": "2019-05-23T05:48:04Z",
+          "message": "Merge pull request #3417 from terraform-providers/012/rc1\n\nUpgrade terraform provider SDK to v0.12.0",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/92f7ea3f5c67768fc53d6c2a9403c5941d3605d0"
+        },
+        {
+          "sha": "8b7c603dc2b4037276bb42692c3a38860cac128a",
+          "author_date": "2019-05-23T05:48:29Z",
+          "message": "Updating to include #3417",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/8b7c603dc2b4037276bb42692c3a38860cac128a"
+        },
+        {
+          "sha": "53df12641bf1c4cf140096a6f5567407aab2726d",
+          "author_date": "2019-05-23T06:03:08Z",
+          "message": "r/kubernetes_cluster: documenting that multiple `agent_pool_profile` blocks can be specified",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/53df12641bf1c4cf140096a6f5567407aab2726d"
+        },
+        {
+          "sha": "794370bfaf12801b8c8d03906a06aca5cd8301d6",
+          "author_date": "2019-05-23T07:22:18Z",
+          "message": "Merge pull request #3499 from kiall/bug/roles-case-insensitive\n\nRole Assignment - Treat name as case insensitive",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/794370bfaf12801b8c8d03906a06aca5cd8301d6"
+        },
+        {
+          "sha": "66aa9bca03481c2b1ccb76e466cc8ee9ec8f4bbb",
+          "author_date": "2019-05-23T07:22:52Z",
+          "message": "Updating to include #3499",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/66aa9bca03481c2b1ccb76e466cc8ee9ec8f4bbb"
+        },
+        {
+          "sha": "eafa81217d58a29dce51f6e975ae9c4fbb408768",
+          "author_date": "2019-05-23T07:25:48Z",
+          "message": "Merge pull request #3491 from titilambert/master\n\nAdd support multiple agent pool profiles",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/eafa81217d58a29dce51f6e975ae9c4fbb408768"
+        },
+        {
+          "sha": "bc1c65db920e8d4ea89eeedebada61cb9d647f63",
+          "author_date": "2019-05-23T07:26:13Z",
+          "message": "Updating to include #3491",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bc1c65db920e8d4ea89eeedebada61cb9d647f63"
+        },
+        {
+          "sha": "b24dec19f76e8a93c25b3223fa4bc159092a5474",
+          "author_date": "2019-05-23T07:59:34Z",
+          "message": "updating the phrasing",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b24dec19f76e8a93c25b3223fa4bc159092a5474"
+        },
+        {
+          "sha": "0e71c19b7d18b84cbef8f4de7d2896d9a74c50b6",
+          "author_date": "2019-05-24T14:32:35Z",
+          "message": "Updated import statement (#3518)\n\nImport statement had a extract character `1`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0e71c19b7d18b84cbef8f4de7d2896d9a74c50b6"
+        },
+        {
+          "sha": "fd182cd41a7beef2a8bdf232f99fbeb9fd7caf82",
+          "author_date": "2019-05-24T16:03:45Z",
+          "message": "linting: re-enable goimports linter (#3521)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fd182cd41a7beef2a8bdf232f99fbeb9fd7caf82"
+        },
+        {
+          "sha": "08ac659a2164158f66214d50613b47e32c4c8dcb",
+          "author_date": "2019-05-25T02:18:32Z",
+          "message": "azurerm_cosmosdb_account: fix panic from issue #3523 (#3524)\n\n* azurerm_cosmosdb_account: fix panic from issue #3523",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/08ac659a2164158f66214d50613b47e32c4c8dcb"
+        },
+        {
+          "sha": "353dcb46113c920cb3fa4c73b76784534f863493",
+          "author_date": "2019-05-25T03:13:33Z",
+          "message": "v1.29.0",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/353dcb46113c920cb3fa4c73b76784534f863493"
         }
       ],
       "ignored_reason": null
@@ -10870,146 +11296,1250 @@
       "ignored_reason": null
     },
     {
-      "release": "v4.79.0",
-      "previous_release": "v4.78.0",
+      "release": "v2.9.0",
+      "previous_release": "v2.8.0",
       "commits": [
         {
-          "sha": "d8d16f06d20315e6e29a2eaf01e3ef2a910f953e",
-          "author_date": "2026-06-19T14:03:50Z",
-          "message": "`azurerm_data_protection_backup_instance_data_lake_storage` - increase `storage_container_names` max items from `100` to `1000`  (#32643)\n\n[ENHANCEMENT] * `azurerm_data_protection_backup_instance_data_lake_storage` - increase the limit of items for `storage_container_names` from 100 to 1000",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d8d16f06d20315e6e29a2eaf01e3ef2a910f953e"
+          "sha": "5525a83600d22da62050990943ea8864294d0710",
+          "author_date": "2020-03-17T18:09:07Z",
+          "message": "Support for external Hive metastore",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5525a83600d22da62050990943ea8864294d0710"
         },
         {
-          "sha": "7dbc3ffa7d263f9670a84d680f91f03cce07d5d7",
-          "author_date": "2026-06-19T14:32:14Z",
-          "message": "GHA: `update-changelog` - replace `go-version` with `go-version-file` (#32655)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7dbc3ffa7d263f9670a84d680f91f03cce07d5d7"
+          "sha": "b2309425710144dc087dad92b20af1415ccf5162",
+          "author_date": "2020-03-17T18:37:25Z",
+          "message": "Fix formatting",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b2309425710144dc087dad92b20af1415ccf5162"
         },
         {
-          "sha": "e0e598c4db447001fbdb5c71decab2507e452121",
-          "author_date": "2026-06-19T15:07:38Z",
-          "message": "add location to bug report template (#32656)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e0e598c4db447001fbdb5c71decab2507e452121"
+          "sha": "ce341b97fe95786d4812849b5e6c7ad5a6c18ee0",
+          "author_date": "2020-03-23T20:45:02Z",
+          "message": "Support for Oozie and Ambari",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ce341b97fe95786d4812849b5e6c7ad5a6c18ee0"
         },
         {
-          "sha": "a1d56df504423e306cdaa6c7da4f56b1f0972582",
-          "author_date": "2026-06-19T15:18:05Z",
-          "message": "list and identity implementation - `azurerm_signalr_service_custom_certificate` (#32114)\n\n[FEATURE] * **New List Resource**: `azurerm_signalr_service_custom_certificate`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a1d56df504423e306cdaa6c7da4f56b1f0972582"
+          "sha": "56d4233fdd3870247e97e7ed2443ae907cb8900f",
+          "author_date": "2020-03-24T11:46:16Z",
+          "message": "Make metastores optional",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/56d4233fdd3870247e97e7ed2443ae907cb8900f"
         },
         {
-          "sha": "d6ab5d100298c873f325453765612c215165cd73",
-          "author_date": "2026-06-19T18:36:01Z",
-          "message": "`azurerm_virtual_network_gateway`: Add support for `max_scale_unit` and `min_scale_unit` (#32647)\n\n[ENHANCEMENT] * `azurerm_virtual_network_gateway`: Add support for `max_scale_unit` and `min_scale_unit`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d6ab5d100298c873f325453765612c215165cd73"
+          "sha": "2d6b93ffa88f7ae44b7777e756dbdcfb1ad1e6f4",
+          "author_date": "2020-03-25T23:52:34Z",
+          "message": "Fix\nAzureRMHDInsightHadoopCluster_requiresImport",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2d6b93ffa88f7ae44b7777e756dbdcfb1ad1e6f4"
         },
         {
-          "sha": "772950696bbfc2106862b5833f491817b79375bb",
-          "author_date": "2026-06-19T22:59:23Z",
-          "message": "Docs: add guidance to avoid reordering existing properties in the same PR (#32652)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/772950696bbfc2106862b5833f491817b79375bb"
+          "sha": "713ccd34ae74dcf323c1418f8fc1f4c390554162",
+          "author_date": "2020-03-30T14:22:18Z",
+          "message": "Fix doc",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/713ccd34ae74dcf323c1418f8fc1f4c390554162"
         },
         {
-          "sha": "9d8ffff16e4f456477f04779a037c27a1c04da16",
-          "author_date": "2026-06-22T12:39:18Z",
-          "message": "`azurerm_postgresql_flexible_server` add Ddsv6 skus to validation (#32657)\n\n[ENHANCEMENT] * `azurerm_postgresql_flexible_server` add Ddsv6 skus to validation",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9d8ffff16e4f456477f04779a037c27a1c04da16"
+          "sha": "47ca82c478ad5d1ceb6eede0e845c17a3d757c5b",
+          "author_date": "2020-04-13T16:42:49Z",
+          "message": "Merge remote-tracking branch 'upstream/master' into hdi/external_metastore",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/47ca82c478ad5d1ceb6eede0e845c17a3d757c5b"
         },
         {
-          "sha": "e7dc10f9c3cd135ea101ed220d5d831822f89f74",
-          "author_date": "2026-06-22T14:50:36Z",
-          "message": "GHA - add additional flag to `tctest` command on `/test` comment (#32651)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e7dc10f9c3cd135ea101ed220d5d831822f89f74"
+          "sha": "a16d4db7b9caae013eadb1c7361236432cfef590",
+          "author_date": "2020-04-23T02:18:57Z",
+          "message": "Fix update scenario for network interface",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a16d4db7b9caae013eadb1c7361236432cfef590"
         },
         {
-          "sha": "a3e1fadc58a098085a2a7d722db18ad70f225cee",
-          "author_date": "2026-06-22T17:22:45Z",
-          "message": "test: `batch`, `blueprint`, `bot`, `chaosstudio` - 5.0 beta test fixes (#32650)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a3e1fadc58a098085a2a7d722db18ad70f225cee"
+          "sha": "03c8e92e65fae631602e7b1652ea5c8c4d669c9f",
+          "author_date": "2020-04-23T08:41:39Z",
+          "message": "Merge remote-tracking branch 'upstream/master' into fix_nic",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/03c8e92e65fae631602e7b1652ea5c8c4d669c9f"
         },
         {
-          "sha": "9b82d1c84d1dbb04449c9652ae04ad6797ae84c1",
-          "author_date": "2026-06-22T21:21:13Z",
-          "message": "Bump actions/setup-java from 5.2.0 to 5.3.0 (#32663)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9b82d1c84d1dbb04449c9652ae04ad6797ae84c1"
+          "sha": "0076714b9f0713fb4ee2ece88716770d45ca496a",
+          "author_date": "2020-04-22T06:16:34Z",
+          "message": "provider: update terrafmt checks with make terrafmt command (#6567)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0076714b9f0713fb4ee2ece88716770d45ca496a"
         },
         {
-          "sha": "466c6ad4c1d96017894d1b36164af633b12139cc",
-          "author_date": "2026-06-22T21:30:53Z",
-          "message": "chore: update hcl samples in docs (#32648)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/466c6ad4c1d96017894d1b36164af633b12139cc"
+          "sha": "fbb8ed00c248701f416bc42fc2d541991da10744",
+          "author_date": "2020-04-22T07:02:38Z",
+          "message": "provider: pin golangci to 1.24 (#6577)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fbb8ed00c248701f416bc42fc2d541991da10744"
         },
         {
-          "sha": "79113fb08002c6482f41f63bc03f9503fadde5d0",
-          "author_date": "2026-06-23T14:50:33Z",
-          "message": "`azurerm_dedicated_host` - remove `None` from the `license_type` property in 5.0 (#32642)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/79113fb08002c6482f41f63bc03f9503fadde5d0"
+          "sha": "7a306d2e3915a5be489985021016934a90f71a00",
+          "author_date": "2020-04-22T07:26:46Z",
+          "message": "provider tests: removes the requires import feature flag [L-W] (#6573)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7a306d2e3915a5be489985021016934a90f71a00"
         },
         {
-          "sha": "d3009dc81828311b5278c781d2f05f09af80549f",
-          "author_date": "2026-06-23T14:52:05Z",
-          "message": "appservice - resolve 4.0 TODOs (#32547)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d3009dc81828311b5278c781d2f05f09af80549f"
+          "sha": "df1abaf105da4b0c5641eebcf87f14c9a157485c",
+          "author_date": "2020-04-22T15:42:15Z",
+          "message": "`azurerm_function_app` - Added `storage_account_id` and `storage_account_access_key` (#6304)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/df1abaf105da4b0c5641eebcf87f14c9a157485c"
         },
         {
-          "sha": "958d6203e19ac40d9365ae334a5d08fa226a6206",
-          "author_date": "2026-06-23T15:56:56Z",
-          "message": "`batch` - migrate to `go-azure-sdk` (#32662)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/958d6203e19ac40d9365ae334a5d08fa226a6206"
+          "sha": "418c381414f53487b1541218a6fbc2291f7c27ab",
+          "author_date": "2020-04-22T15:43:02Z",
+          "message": "update for #6304",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/418c381414f53487b1541218a6fbc2291f7c27ab"
         },
         {
-          "sha": "d1c81a091a47dbd2968a8ef55b20cb85ed2369d3",
-          "author_date": "2026-06-23T16:19:21Z",
-          "message": "Compute - fix acceptance test failure due to generalization issue (#32550)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d1c81a091a47dbd2968a8ef55b20cb85ed2369d3"
+          "sha": "134823a2b033f90b7931ca987fc67c920d822426",
+          "author_date": "2020-04-22T15:46:27Z",
+          "message": "`azurerm_iothub_dps` - fix crash when path isn't cased correctly #6570",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/134823a2b033f90b7931ca987fc67c920d822426"
         },
         {
-          "sha": "c7c1a674cd1791016d8b92acd11320cd3e2c3919",
-          "author_date": "2026-06-23T20:33:04Z",
-          "message": "test: `containers` package 5.0 test fixes (#32670)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c7c1a674cd1791016d8b92acd11320cd3e2c3919"
+          "sha": "06ed60a5deaa8ad27c0eb16b0635a982f3ac1024",
+          "author_date": "2020-04-22T15:47:11Z",
+          "message": "Update for #6570",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/06ed60a5deaa8ad27c0eb16b0635a982f3ac1024"
         },
         {
-          "sha": "279c8cdc3bd42b71ebba763ad77cad84bd5c5a15",
-          "author_date": "2026-06-23T22:30:16Z",
-          "message": "Compute - fix `TestAccLinuxVirtualMachineScaleSet_networkMultipleIPConfigurationsIPv6` and `TestAccLinuxVirtualMachine_networkIPv6` (#31922)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/279c8cdc3bd42b71ebba763ad77cad84bd5c5a15"
+          "sha": "1b52ecf6fd6f0e4914e293ecd916fa781866b9a6",
+          "author_date": "2020-04-22T15:47:38Z",
+          "message": "`azurerm_linux_virtual_machine_scale_set` - fixes crash with `boot_diagnositics` #6569",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1b52ecf6fd6f0e4914e293ecd916fa781866b9a6"
         },
         {
-          "sha": "5a698be561efc782ff27cd8d6147c9bd66462073",
-          "author_date": "2026-06-23T22:56:37Z",
-          "message": "`azurerm_virtual_machine_run_command` - fix acceptance test (#31945)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5a698be561efc782ff27cd8d6147c9bd66462073"
+          "sha": "60f23e09ee823cb92bcd267a444057e48047537d",
+          "author_date": "2020-04-22T15:48:12Z",
+          "message": "Update for #6569",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/60f23e09ee823cb92bcd267a444057e48047537d"
         },
         {
-          "sha": "687f55dca69ac9bd9a0e00a7cdac7e0e19c45616",
-          "author_date": "2026-06-24T14:42:35Z",
-          "message": "Desktop virtualization - bump API version to 2025-10-10 (#32563)\n\n[ENHANCEMENT] * `desktopvirtualization` - upgrade API version to `2025-10-10`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/687f55dca69ac9bd9a0e00a7cdac7e0e19c45616"
+          "sha": "8786915e48c5bf9832ce1e7a30dbf8c107929b96",
+          "author_date": "2020-04-22T16:54:22Z",
+          "message": "provider: upgrade API Management to 2019-12-01 (#6479)\n\nunblocks #2613 #5769",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/8786915e48c5bf9832ce1e7a30dbf8c107929b96"
         },
         {
-          "sha": "ae11817931e8c74408a0667a1962db7d94685235",
-          "author_date": "2026-06-25T14:02:46Z",
-          "message": "test: `databricks`, `datashare`, `dataprotection`, `devtestlabs`, `digitaltwins`, `dns`, `dynatrace` - 5.0 testing fixes (#32676)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ae11817931e8c74408a0667a1962db7d94685235"
+          "sha": "1da7541d595735fa7a0892a8fc2a6666d89c8524",
+          "author_date": "2020-04-22T17:12:36Z",
+          "message": "update CHANGELOG.md to include #6479",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1da7541d595735fa7a0892a8fc2a6666d89c8524"
         },
         {
-          "sha": "fa79eaf6f51dfbafd624a013276c31c8754cbc19",
-          "author_date": "2026-06-25T21:55:00Z",
-          "message": "New Resource: `azurerm_netapp_volume_bucket`, `azurerm_netapp_volume_bucket_credentials` and `azurerm_netapp_volume_bucket` data source - Object REST API support (#32319)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fa79eaf6f51dfbafd624a013276c31c8754cbc19"
+          "sha": "b0d2780d8f4e7c3e268a42615536f20de4780b2d",
+          "author_date": "2020-04-23T05:10:51Z",
+          "message": "`azurerm_private_endpoint`: Add support for tags (#6574)\n\n* Add support for tags of private endpoint\r\n\r\n* Fix test issue\r\n\r\nCo-authored-by: Jeffrey Cline <20408400+WodansSon@users.noreply.github.com>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b0d2780d8f4e7c3e268a42615536f20de4780b2d"
         },
         {
-          "sha": "3fc41eee04dcf801e2d5887567472b76d768a474",
-          "author_date": "2026-06-25T22:11:52Z",
-          "message": "CHANGELOG.md for 4.79.0 (#32654)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3fc41eee04dcf801e2d5887567472b76d768a474"
+          "sha": "1e55c7036c632dc05c12fd59118f5470ded6f3a9",
+          "author_date": "2020-04-23T05:12:07Z",
+          "message": "`azurerm_public_ip_prefix`: Update `prefix_length` validation to accept all valid IPv4 address ranges (#6589)\n\n* Update prefix length validation\r\n\r\n* Updated documentation for new ranges\r\n\r\n* Add test and change upper limit to 31\r\n\r\n* Update error msgs to be go compliant\r\n\r\n* Add note to test case about subscription config",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1e55c7036c632dc05c12fd59118f5470ded6f3a9"
         },
         {
-          "sha": "54e8dfa43d9980bb9d6e720eda3c04e9c25b0f78",
-          "author_date": "2026-06-25T22:47:56Z",
-          "message": "Fix secvuln for software.sslmate.com/src/go-pkcs12 (#32681)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/54e8dfa43d9980bb9d6e720eda3c04e9c25b0f78"
+          "sha": "44b223ea126e935a73f37fc3fbb0901999e8765b",
+          "author_date": "2020-04-23T05:14:21Z",
+          "message": "updating to include #6574 and #6589",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/44b223ea126e935a73f37fc3fbb0901999e8765b"
+        },
+        {
+          "sha": "4223b999285a6aaa21d4647e9cc0f3838600c34d",
+          "author_date": "2020-04-23T06:21:59Z",
+          "message": "Updating instead of foo to example (#6591)\n\nUpdating instead of foo to example -code correction",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4223b999285a6aaa21d4647e9cc0f3838600c34d"
+        },
+        {
+          "sha": "66f67d47d347ef974fe8ad04d3b02560379e1ae5",
+          "author_date": "2020-04-23T06:23:17Z",
+          "message": "Revert \"CDN Endpoint: make origin_host_header required \" (#6583)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/66f67d47d347ef974fe8ad04d3b02560379e1ae5"
+        },
+        {
+          "sha": "538f7b1f38784d5df2e5c1573ad5a0ca1f8afd81",
+          "author_date": "2020-04-24T07:30:55Z",
+          "message": "...",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/538f7b1f38784d5df2e5c1573ad5a0ca1f8afd81"
+        },
+        {
+          "sha": "ac23ac7c064874614a2e9e1d82376e9d053cf704",
+          "author_date": "2020-04-24T07:31:15Z",
+          "message": "...",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ac23ac7c064874614a2e9e1d82376e9d053cf704"
+        },
+        {
+          "sha": "80b656e43f3aa465cb345e4292cc775e76dc90ca",
+          "author_date": "2020-04-24T07:32:48Z",
+          "message": "Merge branch 'fix_nic' of https://github.com/microsoft/terraform-provider-azurerm into fix_nic",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/80b656e43f3aa465cb345e4292cc775e76dc90ca"
+        },
+        {
+          "sha": "0b228b555d649e3a579d9a1a2267a7194f846efd",
+          "author_date": "2020-04-24T14:49:57Z",
+          "message": "Fix typo\n\nCo-Authored-By: Steve <11830746+jackofallops@users.noreply.github.com>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0b228b555d649e3a579d9a1a2267a7194f846efd"
+        },
+        {
+          "sha": "72652caf5e27e0aa5e135fd7dfa25f0ad017595f",
+          "author_date": "2020-04-24T16:55:24Z",
+          "message": "Added test for hive only and check in reading code",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/72652caf5e27e0aa5e135fd7dfa25f0ad017595f"
+        },
+        {
+          "sha": "189a4599e83e233afb59505f0a458bbf80285a6a",
+          "author_date": "2020-04-25T00:54:18Z",
+          "message": "Update tests",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/189a4599e83e233afb59505f0a458bbf80285a6a"
+        },
+        {
+          "sha": "b4701927198e05f2be4feb490e2c521f5955a5e2",
+          "author_date": "2020-04-25T00:56:43Z",
+          "message": "Merge branch 'hdi/external_metastore' of github.com:kosinsky/terraform-provider-azurerm into hdi/external_metastore",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b4701927198e05f2be4feb490e2c521f5955a5e2"
+        },
+        {
+          "sha": "27e5d73ee364ca17e3376868b729bee247af8957",
+          "author_date": "2020-04-30T01:58:44Z",
+          "message": "add name and priority to ip_restriction for app_service",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/27e5d73ee364ca17e3376868b729bee247af8957"
+        },
+        {
+          "sha": "88f3786b5cf51581d2527f86db2c6c37dfb57750",
+          "author_date": "2020-04-30T05:21:04Z",
+          "message": "make priority computed",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/88f3786b5cf51581d2527f86db2c6c37dfb57750"
+        },
+        {
+          "sha": "e99e6b4571ef1f1ef8df89986864d3d659896c4f",
+          "author_date": "2020-04-30T13:02:07Z",
+          "message": "added recovery capabilty for secrets",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e99e6b4571ef1f1ef8df89986864d3d659896c4f"
+        },
+        {
+          "sha": "366b1848282dc546b01fa65ed964da5aac3c8676",
+          "author_date": "2020-04-30T14:28:48Z",
+          "message": "added key soft-delete recovery support",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/366b1848282dc546b01fa65ed964da5aac3c8676"
+        },
+        {
+          "sha": "d63759018d3d7ace0fd59218a03a1459f2c8066c",
+          "author_date": "2020-04-30T15:26:33Z",
+          "message": "added certificate soft-delete recovery support",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d63759018d3d7ace0fd59218a03a1459f2c8066c"
+        },
+        {
+          "sha": "2b9f82a5270a091cef4cc66b02c347922c990416",
+          "author_date": "2020-04-30T15:38:26Z",
+          "message": "simplified recovery logic",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2b9f82a5270a091cef4cc66b02c347922c990416"
+        },
+        {
+          "sha": "b092666463de7ec683a0ee4e6624363fa8db7bdb",
+          "author_date": "2020-04-30T23:54:47Z",
+          "message": "Cleanup after v2.8.0 release",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b092666463de7ec683a0ee4e6624363fa8db7bdb"
+        },
+        {
+          "sha": "088554728f790598262960f46a4e7947c8ef5d5c",
+          "author_date": "2020-05-01T06:00:02Z",
+          "message": "acctests: boosting the default concurrency to 20",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/088554728f790598262960f46a4e7947c8ef5d5c"
+        },
+        {
+          "sha": "35d2c8e023fa60f679abbf960acf6c59f2beb826",
+          "author_date": "2020-05-01T06:01:19Z",
+          "message": "acctest: updating to v0.2.0 of tombuildsstuff/teamcity-go-test-json",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/35d2c8e023fa60f679abbf960acf6c59f2beb826"
+        },
+        {
+          "sha": "49758c038926bff3ca858c473047e46c2532465b",
+          "author_date": "2020-05-01T06:07:36Z",
+          "message": "acctests: hooking up ARM_CLIENT_ID_ALT and ARM_CLIENT_SECRET_ALT",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/49758c038926bff3ca858c473047e46c2532465b"
+        },
+        {
+          "sha": "57c73af925c1d2fd064a890e94ef3f0ae61e0f28",
+          "author_date": "2020-05-01T06:28:30Z",
+          "message": "Merge pull request #6729 from terraform-providers/f/build-config-tweaks\n\nacctests: boosting the default concurrency to 20",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/57c73af925c1d2fd064a890e94ef3f0ae61e0f28"
+        },
+        {
+          "sha": "24e224651906fc1b256425c4c62697af2bf495d8",
+          "author_date": "2020-05-01T10:19:01Z",
+          "message": "fix purge_protection keyvault tests",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/24e224651906fc1b256425c4c62697af2bf495d8"
+        },
+        {
+          "sha": "54df90c15d4d039ac1d044f5be80afefef86d889",
+          "author_date": "2020-05-01T10:49:10Z",
+          "message": "missed a fix",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/54df90c15d4d039ac1d044f5be80afefef86d889"
+        },
+        {
+          "sha": "e937dc6b3a973ada021450b6ff6e4c2759fd887c",
+          "author_date": "2020-05-01T12:34:41Z",
+          "message": "Merge pull request #6716 from terraform-providers/f/kv-soft-delete-child-recovery",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e937dc6b3a973ada021450b6ff6e4c2759fd887c"
+        },
+        {
+          "sha": "f256bf978087a8b3b32fbdee6a05e5c2bc82fac6",
+          "author_date": "2020-05-01T12:38:30Z",
+          "message": "Updated for #6716",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/f256bf978087a8b3b32fbdee6a05e5c2bc82fac6"
+        },
+        {
+          "sha": "6c111a510b14b279c3e4d2cd124ce7461cac5449",
+          "author_date": "2020-05-01T15:10:48Z",
+          "message": "Custom metadata DiffSuppressFunc - issue #5014",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/6c111a510b14b279c3e4d2cd124ce7461cac5449"
+        },
+        {
+          "sha": "1270e902cfbb20d0ff50d7aa071dd88969219810",
+          "author_date": "2020-05-01T22:11:34Z",
+          "message": "changes for review feedback",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1270e902cfbb20d0ff50d7aa071dd88969219810"
+        },
+        {
+          "sha": "b3c16f4c7893e119214c0afdc25b91ab388484cd",
+          "author_date": "2020-05-01T22:47:14Z",
+          "message": "update max allowed priority",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b3c16f4c7893e119214c0afdc25b91ab388484cd"
+        },
+        {
+          "sha": "974709a8bad74390ba3955d9f0c76786a43b8a6e",
+          "author_date": "2020-05-02T06:25:09Z",
+          "message": "Add test for cert with empty password",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/974709a8bad74390ba3955d9f0c76786a43b8a6e"
+        },
+        {
+          "sha": "300d7857dbd5882674f2df4c1a82c00b1482fbdf",
+          "author_date": "2020-05-02T06:39:17Z",
+          "message": "Remove empty string password check\n\nFix terraform-providers/terraform-provider-azurerm#6368\nFix terraform-providers/terraform-provider-azurerm#6295",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/300d7857dbd5882674f2df4c1a82c00b1482fbdf"
+        },
+        {
+          "sha": "d9b3408c1b8ae47cb48599489989cd80f3d60527",
+          "author_date": "2020-05-02T07:24:46Z",
+          "message": "fix gofmt",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d9b3408c1b8ae47cb48599489989cd80f3d60527"
+        },
+        {
+          "sha": "7707160d41ac18ed93f30c86a378b905bf1c3795",
+          "author_date": "2020-05-02T10:37:07Z",
+          "message": "support create option",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7707160d41ac18ed93f30c86a378b905bf1c3795"
+        },
+        {
+          "sha": "af8760cddf0d9e3a6cf0e28f0e0b703acd6b5135",
+          "author_date": "2020-05-02T15:25:01Z",
+          "message": "Custom DiffSuppressFunc for policy definition",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/af8760cddf0d9e3a6cf0e28f0e0b703acd6b5135"
+        },
+        {
+          "sha": "b002ce4e4bf63e3231e216a4eefd2cdc19490eb1",
+          "author_date": "2020-05-02T15:25:13Z",
+          "message": "Tests for custom DiffSuppressFuncs",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b002ce4e4bf63e3231e216a4eefd2cdc19490eb1"
+        },
+        {
+          "sha": "ca024d3e7e2f13229061cfd6663c5a2b15f51c5b",
+          "author_date": "2020-05-02T15:50:39Z",
+          "message": "terrafmt for tflint compliance",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ca024d3e7e2f13229061cfd6663c5a2b15f51c5b"
+        },
+        {
+          "sha": "b2d58c483e95d3311a5b2338ee3d2ad49a4091fe",
+          "author_date": "2020-05-03T19:18:29Z",
+          "message": "Workaround for strange response code in recovery services network mappings API. Fixes issue #6026",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b2d58c483e95d3311a5b2338ee3d2ad49a4091fe"
+        },
+        {
+          "sha": "c3da179a318df3caee2b635339007141bfa448b9",
+          "author_date": "2020-05-04T00:50:55Z",
+          "message": "make dfault explicit",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c3da179a318df3caee2b635339007141bfa448b9"
+        },
+        {
+          "sha": "a02f33c8ce6409960bf644a286602931c45527a4",
+          "author_date": "2020-05-04T02:46:05Z",
+          "message": "Update resource_arm_stream_analytics_function_javascript_udf_test.go",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a02f33c8ce6409960bf644a286602931c45527a4"
+        },
+        {
+          "sha": "43aa88981d367e481cba84d7e2938b78ee003559",
+          "author_date": "2020-05-04T04:37:04Z",
+          "message": "Merge pull request #6749 from lrxtom2/fix-testConfig\n\nFix test config issue in stream_analytics_function_javascript_udf_test",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/43aa88981d367e481cba84d7e2938b78ee003559"
+        },
+        {
+          "sha": "3a4f6cea52ef082131e8acf55ab697c75ff012cd",
+          "author_date": "2020-05-04T05:03:06Z",
+          "message": "Merge pull request #6734 from richeney/policy_set_metadata\n\nCustom metadata DiffSuppressFunc - issue #5014",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3a4f6cea52ef082131e8acf55ab697c75ff012cd"
+        },
+        {
+          "sha": "9853ea53fb15629debb4eb6bee1397d2cb086759",
+          "author_date": "2020-05-04T05:05:00Z",
+          "message": "updating to include #6734",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9853ea53fb15629debb4eb6bee1397d2cb086759"
+        },
+        {
+          "sha": "2e5b10003df366c9fa4717624e9686d398f6008d",
+          "author_date": "2020-05-04T05:58:04Z",
+          "message": "Merge pull request #6744 from clearbank/data_disk_create_option\n\nSupport create option for scale set data disks",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2e5b10003df366c9fa4717624e9686d398f6008d"
+        },
+        {
+          "sha": "facfa2121deb8d4cfe9e2c71ad4b734a8e324177",
+          "author_date": "2020-05-04T05:59:16Z",
+          "message": "updating to include #6744",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/facfa2121deb8d4cfe9e2c71ad4b734a8e324177"
+        },
+        {
+          "sha": "461f6c577e9d462b221c58126d1f94292f70bbd0",
+          "author_date": "2020-05-04T06:01:15Z",
+          "message": "updating the changelog for #6716",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/461f6c577e9d462b221c58126d1f94292f70bbd0"
+        },
+        {
+          "sha": "1ff777357bee0478efccd438830e33309e3e1c91",
+          "author_date": "2020-05-04T06:09:15Z",
+          "message": "r/application_gateway: ignoring an import diff with cert data/password",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1ff777357bee0478efccd438830e33309e3e1c91"
+        },
+        {
+          "sha": "675c83e893615a152fa24744e2a117f7dc32eb57",
+          "author_date": "2020-05-04T07:32:42Z",
+          "message": "Merge pull request #6742 from gpduck/gpduck-patch-1\n\nFixes resource_arm_application_gateway with empty string password",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/675c83e893615a152fa24744e2a117f7dc32eb57"
+        },
+        {
+          "sha": "cfe072856947e086ef8516efb30f3cc452050973",
+          "author_date": "2020-05-04T07:33:11Z",
+          "message": "updating to include #6742",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cfe072856947e086ef8516efb30f3cc452050973"
+        },
+        {
+          "sha": "0cc4b04ce8b19749973bd7baa7794e4ba9b76fbc",
+          "author_date": "2020-05-04T08:12:24Z",
+          "message": "minor docs update",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0cc4b04ce8b19749973bd7baa7794e4ba9b76fbc"
+        },
+        {
+          "sha": "fd892f619628f829119daef879858fb2c15c2f43",
+          "author_date": "2020-05-04T08:47:07Z",
+          "message": "acctests: switching to use the native runner",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fd892f619628f829119daef879858fb2c15c2f43"
+        },
+        {
+          "sha": "5ad0f7b8bbd20cfdcc460409a92a3f5df3ebe21a",
+          "author_date": "2020-05-04T08:51:02Z",
+          "message": "Merge pull request #6751 from terraform-providers/f/native-test-runner\n\nacctests: switching to use the native runner",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5ad0f7b8bbd20cfdcc460409a92a3f5df3ebe21a"
+        },
+        {
+          "sha": "b16f7e5db833fee5fb8df487e12f74904c79690c",
+          "author_date": "2020-05-04T09:55:23Z",
+          "message": "Merge pull request #6145 from kosinsky/hdi/external_metastore",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b16f7e5db833fee5fb8df487e12f74904c79690c"
+        },
+        {
+          "sha": "978cb72fa65e4bf080e8fb195be1f21b5214f3f3",
+          "author_date": "2020-05-04T09:58:02Z",
+          "message": "Update for #6145",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/978cb72fa65e4bf080e8fb195be1f21b5214f3f3"
+        },
+        {
+          "sha": "72a81514d03f03c0741c242f3ce3dc971d28257e",
+          "author_date": "2020-05-04T13:34:45Z",
+          "message": "Added reference to bug reported on azure-sdk-for-go.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/72a81514d03f03c0741c242f3ce3dc971d28257e"
+        },
+        {
+          "sha": "78074c8d81ef642ce7ad8827ed12064a7d267084",
+          "author_date": "2020-05-05T03:35:40Z",
+          "message": "New resource/Data source `azurerm_data_share_account` (#6575)\n\nfix #6480",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/78074c8d81ef642ce7ad8827ed12064a7d267084"
+        },
+        {
+          "sha": "1a66619bb105a1c5c33afab08fc7266732eab927",
+          "author_date": "2020-05-05T03:36:45Z",
+          "message": "update CHANGELOG.md to include #6575",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1a66619bb105a1c5c33afab08fc7266732eab927"
+        },
+        {
+          "sha": "df84537c98010f83b0b8f5eca3f1da5d436daeae",
+          "author_date": "2020-05-05T07:29:41Z",
+          "message": "vhub_conn add doc note",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/df84537c98010f83b0b8f5eca3f1da5d436daeae"
+        },
+        {
+          "sha": "33c0dd8e99feb1c7fc8cab16bb955a4fbb782a4b",
+          "author_date": "2020-05-05T11:07:15Z",
+          "message": "fixes panic on nil value for",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/33c0dd8e99feb1c7fc8cab16bb955a4fbb782a4b"
+        },
+        {
+          "sha": "ad5bedfdcc7572f1ec07ea022e217d9da74ff7a6",
+          "author_date": "2020-05-05T12:48:29Z",
+          "message": "Merge pull request #6772 from terraform-providers/b/function-app-prewarm-panic",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ad5bedfdcc7572f1ec07ea022e217d9da74ff7a6"
+        },
+        {
+          "sha": "a5c1ef1bb2e6abf1238a14bc0a9f19f0e544f0ed",
+          "author_date": "2020-05-05T13:24:18Z",
+          "message": "use custom hash function to not distinguish between upper- and lowercase name of a analysis services server ipv4 fw rule",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a5c1ef1bb2e6abf1238a14bc0a9f19f0e544f0ed"
+        },
+        {
+          "sha": "d8e7355ea897dc8d4494e0bb932611fdc4147890",
+          "author_date": "2020-05-05T13:31:56Z",
+          "message": "fix imports",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d8e7355ea897dc8d4494e0bb932611fdc4147890"
+        },
+        {
+          "sha": "22f4c13da805a377d0e038130b599d296ab8b883",
+          "author_date": "2020-04-10T00:22:24Z",
+          "message": "init",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/22f4c13da805a377d0e038130b599d296ab8b883"
+        },
+        {
+          "sha": "9e8bc29beff89cc6e851a283e3901901b983f602",
+          "author_date": "2020-04-13T10:50:46Z",
+          "message": "rename filename",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9e8bc29beff89cc6e851a283e3901901b983f602"
+        },
+        {
+          "sha": "bd17edd3231bfadc227473299ca485517c69207e",
+          "author_date": "2020-04-13T21:04:30Z",
+          "message": "extra function version test",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bd17edd3231bfadc227473299ca485517c69207e"
+        },
+        {
+          "sha": "d048804091bf52641856f5bb6bf7e7335c6784c8",
+          "author_date": "2020-05-01T15:46:57Z",
+          "message": "fix comments",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d048804091bf52641856f5bb6bf7e7335c6784c8"
+        },
+        {
+          "sha": "4d4ee482ce96b2dad4f785c86f74b9bf685ac9cc",
+          "author_date": "2020-05-05T14:42:34Z",
+          "message": "fix comments 2nd round",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4d4ee482ce96b2dad4f785c86f74b9bf685ac9cc"
+        },
+        {
+          "sha": "53218ea28671227717fea90e323f29d25272d40f",
+          "author_date": "2020-05-05T20:18:15Z",
+          "message": "add pre_warmed_instance_count",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/53218ea28671227717fea90e323f29d25272d40f"
+        },
+        {
+          "sha": "dfd926d0a1538cd01d1d20455be14f97df5e2871",
+          "author_date": "2020-05-06T01:20:39Z",
+          "message": "Update code",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/dfd926d0a1538cd01d1d20455be14f97df5e2871"
+        },
+        {
+          "sha": "58d57c5a4df0328d12e1f6d88a3041bf440a93be",
+          "author_date": "2020-05-06T05:11:52Z",
+          "message": "start server when it was stopped before updating it",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/58d57c5a4df0328d12e1f6d88a3041bf440a93be"
+        },
+        {
+          "sha": "09857dcea730200346fb76c7236032e13f26d45b",
+          "author_date": "2020-05-06T05:13:55Z",
+          "message": "fix lintrest problem",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/09857dcea730200346fb76c7236032e13f26d45b"
+        },
+        {
+          "sha": "15f53419150a56ff05f1df5a8d6d0e4c8d3fa096",
+          "author_date": "2020-05-06T06:36:20Z",
+          "message": "Update doc for property default_action of eventhub namespace",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/15f53419150a56ff05f1df5a8d6d0e4c8d3fa096"
+        },
+        {
+          "sha": "093a62ce54c6eab38bee784ff4a57d11f6673dcc",
+          "author_date": "2020-05-06T07:12:05Z",
+          "message": "Changed: notes regarding configuring 'TLS termination with Key Vault certificates' for App Gateway were added.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/093a62ce54c6eab38bee784ff4a57d11f6673dcc"
+        },
+        {
+          "sha": "c441e859dd54e808ef2c81403c430f34b1adef99",
+          "author_date": "2020-05-06T07:26:04Z",
+          "message": "Merge pull request #6624 from neil-yechenwei/fix_nic",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c441e859dd54e808ef2c81403c430f34b1adef99"
+        },
+        {
+          "sha": "e432fce2eaa2887dac856d6f572456c9d034092e",
+          "author_date": "2020-05-06T07:31:44Z",
+          "message": "Update for #6624",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e432fce2eaa2887dac856d6f572456c9d034092e"
+        },
+        {
+          "sha": "46a1cf3735314a4177787537a3a80d2c84642e39",
+          "author_date": "2020-05-06T10:17:00Z",
+          "message": "Merge pull request #6785 from arestarh/azurerm_app_gw_ssl_cert_key_vault_doc\n\nChanged: notes regarding configuring 'TLS termination with Key Vault …",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/46a1cf3735314a4177787537a3a80d2c84642e39"
+        },
+        {
+          "sha": "c0f16b5b86511c41a3ddcf91e715dd85e9fb4946",
+          "author_date": "2020-05-06T10:23:25Z",
+          "message": "Merge branch 'master' into analysis-services-server-update-when-paused",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c0f16b5b86511c41a3ddcf91e715dd85e9fb4946"
+        },
+        {
+          "sha": "82378fcbd55a51660d01e60d564114d62078166e",
+          "author_date": "2020-05-06T10:23:55Z",
+          "message": "fix PR recommendations",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/82378fcbd55a51660d01e60d564114d62078166e"
+        },
+        {
+          "sha": "56f2f17ff842a01d92284a715ffd0c1d496fad59",
+          "author_date": "2020-05-06T10:44:32Z",
+          "message": "Merge pull request #6774 from r0bnet/analysis-services-server-ipv4-rule-name-case-fix",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/56f2f17ff842a01d92284a715ffd0c1d496fad59"
+        },
+        {
+          "sha": "bc7d732a27492632532a07c53031feccae34d0c2",
+          "author_date": "2020-05-06T10:47:54Z",
+          "message": "Update for #6774",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bc7d732a27492632532a07c53031feccae34d0c2"
+        },
+        {
+          "sha": "5285e57ccafa1f149033ed8b1786ab08417d1aa9",
+          "author_date": "2020-05-06T10:54:40Z",
+          "message": "Merge pull request #6747 from Avinode/recovery-network-mapping-fix-for-issue-6026\n\nWorkaround for strange response code in recovery services network mappings API. Fixes issue #6026",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5285e57ccafa1f149033ed8b1786ab08417d1aa9"
+        },
+        {
+          "sha": "2c60f4017fa96859755b295b174454e167ace32d",
+          "author_date": "2020-05-06T10:55:24Z",
+          "message": "updating to include #6747",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2c60f4017fa96859755b295b174454e167ace32d"
+        },
+        {
+          "sha": "e0397cdc4b202d30702e0e56d51da87d948046ad",
+          "author_date": "2020-05-06T13:19:33Z",
+          "message": "Merge pull request #6435 from aristosvo/functionslot",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e0397cdc4b202d30702e0e56d51da87d948046ad"
+        },
+        {
+          "sha": "63028d8188f747213967231bde38d559d2b91e71",
+          "author_date": "2020-05-06T13:22:04Z",
+          "message": "Update for #6435",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/63028d8188f747213967231bde38d559d2b91e71"
+        },
+        {
+          "sha": "e49fe66acc8dc4a7602c832132698663343fbce5",
+          "author_date": "2020-05-06T13:48:03Z",
+          "message": "add test for updating a paused analysis services server",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e49fe66acc8dc4a7602c832132698663343fbce5"
+        },
+        {
+          "sha": "3023af9c1c99b7de17d094dbdf497da627a2402b",
+          "author_date": "2020-05-06T17:46:14Z",
+          "message": "Updates `apimanagement`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3023af9c1c99b7de17d094dbdf497da627a2402b"
+        },
+        {
+          "sha": "2602d138d20237548aa3bfd230de3bebbb2393a0",
+          "author_date": "2020-05-06T17:46:29Z",
+          "message": "Updates `applicationinsights`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2602d138d20237548aa3bfd230de3bebbb2393a0"
+        },
+        {
+          "sha": "0eedcec626d7597e6f2f0478ccd1e4cc2da86587",
+          "author_date": "2020-05-06T17:46:39Z",
+          "message": "Updates `appplatform`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0eedcec626d7597e6f2f0478ccd1e4cc2da86587"
+        },
+        {
+          "sha": "06d0fb6dcb283a01c76da908789178ca8012f3d5",
+          "author_date": "2020-05-06T17:46:52Z",
+          "message": "Updates `authorization`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/06d0fb6dcb283a01c76da908789178ca8012f3d5"
+        },
+        {
+          "sha": "e04002537edd0479833c34598d42e98c4b467e0a",
+          "author_date": "2020-05-06T17:47:01Z",
+          "message": "Updates `automation`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e04002537edd0479833c34598d42e98c4b467e0a"
+        },
+        {
+          "sha": "4b92512faa538881a8c819d8c9f4e6f0aeb43463",
+          "author_date": "2020-05-06T17:47:54Z",
+          "message": "Updates `batch`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4b92512faa538881a8c819d8c9f4e6f0aeb43463"
+        },
+        {
+          "sha": "9bd602db7859a52aa7a9aa2b08409b05de60fa70",
+          "author_date": "2020-05-06T17:48:09Z",
+          "message": "Updates `bot`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9bd602db7859a52aa7a9aa2b08409b05de60fa70"
+        },
+        {
+          "sha": "d48eacfba0b17933536878cfbb5df00f9b3a195b",
+          "author_date": "2020-05-06T17:48:17Z",
+          "message": "Updates `cdn`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d48eacfba0b17933536878cfbb5df00f9b3a195b"
+        },
+        {
+          "sha": "983c0d5691d534d94860d4d080f874e5068a866c",
+          "author_date": "2020-05-06T17:48:25Z",
+          "message": "Updates `cognitive`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/983c0d5691d534d94860d4d080f874e5068a866c"
+        },
+        {
+          "sha": "20ac9e0821a13a9be35d8e88514dbf0e8a0cd8dd",
+          "author_date": "2020-05-06T18:13:06Z",
+          "message": "Updates `compute`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/20ac9e0821a13a9be35d8e88514dbf0e8a0cd8dd"
+        },
+        {
+          "sha": "471f5bcd9e51a0034e890897a56ee80442dfead1",
+          "author_date": "2020-05-06T18:13:20Z",
+          "message": "Updates `containers`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/471f5bcd9e51a0034e890897a56ee80442dfead1"
+        },
+        {
+          "sha": "6958f21de8f32d0e3294dedfd4408e05c7738792",
+          "author_date": "2020-05-06T18:13:32Z",
+          "message": "Updates `cosmos`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/6958f21de8f32d0e3294dedfd4408e05c7738792"
+        },
+        {
+          "sha": "b08468effe4f1dc4d546030bcd85fdf22b3e5b21",
+          "author_date": "2020-05-06T18:13:44Z",
+          "message": "Updates `costmanagement`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b08468effe4f1dc4d546030bcd85fdf22b3e5b21"
+        },
+        {
+          "sha": "89e295d9d91de20000716752c0d309a6ed1f797d",
+          "author_date": "2020-05-06T18:13:56Z",
+          "message": "Updates `customproviders`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/89e295d9d91de20000716752c0d309a6ed1f797d"
+        },
+        {
+          "sha": "901f22f335656a5fc0add515b9a29d3abb73cdf0",
+          "author_date": "2020-05-06T18:14:06Z",
+          "message": "Updates `databasemigration`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/901f22f335656a5fc0add515b9a29d3abb73cdf0"
+        },
+        {
+          "sha": "17abdd3426941dad547fbce6ac506a15a99b1387",
+          "author_date": "2020-05-06T18:14:15Z",
+          "message": "Updates `databricks`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/17abdd3426941dad547fbce6ac506a15a99b1387"
+        },
+        {
+          "sha": "50def81289bb5a83c8105683f35f5007e1c16120",
+          "author_date": "2020-05-06T18:14:27Z",
+          "message": "updates `datafactory`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/50def81289bb5a83c8105683f35f5007e1c16120"
+        },
+        {
+          "sha": "a0e7d98d0a125f17e8fbf3fe39b6fbee930ce830",
+          "author_date": "2020-05-06T18:14:38Z",
+          "message": "Updates `datalake`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a0e7d98d0a125f17e8fbf3fe39b6fbee930ce830"
+        },
+        {
+          "sha": "0bed50dbebd78620d428a20da23d1035cda3375d",
+          "author_date": "2020-05-06T18:14:45Z",
+          "message": "Updates `datashare`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0bed50dbebd78620d428a20da23d1035cda3375d"
+        },
+        {
+          "sha": "21cf5fd4b9f0ad71670405f00031ee19c83e40dd",
+          "author_date": "2020-05-06T18:14:58Z",
+          "message": "Updates `devspace`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/21cf5fd4b9f0ad71670405f00031ee19c83e40dd"
+        },
+        {
+          "sha": "2edccc6c5188b361a73b1ad26bee6b8d8cb8f4b0",
+          "author_date": "2020-05-06T18:15:07Z",
+          "message": "Updates `devtestlabs`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2edccc6c5188b361a73b1ad26bee6b8d8cb8f4b0"
+        },
+        {
+          "sha": "64bda2b9592dcd6ade211c4d0b6b41143ceb0704",
+          "author_date": "2020-05-06T18:15:15Z",
+          "message": "Updates `dns`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/64bda2b9592dcd6ade211c4d0b6b41143ceb0704"
+        },
+        {
+          "sha": "3ab9e1c8af713230ea4166a188699ed93d342d62",
+          "author_date": "2020-05-06T18:18:55Z",
+          "message": "fmts & builds",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3ab9e1c8af713230ea4166a188699ed93d342d62"
+        },
+        {
+          "sha": "221f39e33f6855acf9845f754a545302148f633e",
+          "author_date": "2020-05-06T18:30:39Z",
+          "message": "azurerm_eventhub_namespace_authorization_rule  - lock so multiple resource updates won't clash (#6701)\n\nFixes #4893",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/221f39e33f6855acf9845f754a545302148f633e"
+        },
+        {
+          "sha": "0897c751936f559cb8e00f6d9fecd32f582d2f7b",
+          "author_date": "2020-05-06T18:31:54Z",
+          "message": "update CHANGELOG.md to include #6701",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0897c751936f559cb8e00f6d9fecd32f582d2f7b"
+        },
+        {
+          "sha": "274c4b5b641d812f0805014a2e0fd8874d905afc",
+          "author_date": "2020-05-06T18:50:32Z",
+          "message": "Merge pull request #6797 from terraform-providers/tph/file-rename",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/274c4b5b641d812f0805014a2e0fd8874d905afc"
+        },
+        {
+          "sha": "805f90d9956ab57ee042da273d233f3c5bcd9706",
+          "author_date": "2020-05-06T19:32:05Z",
+          "message": "`azurerm_monitor_diagnostic_setting` - `log_analytics_destination_type` supports `AzureDiagnostics` #6769",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/805f90d9956ab57ee042da273d233f3c5bcd9706"
+        },
+        {
+          "sha": "785b43c329bfce034f7985f46706a20adb4879d0",
+          "author_date": "2020-05-06T19:33:03Z",
+          "message": "Update for #6769",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/785b43c329bfce034f7985f46706a20adb4879d0"
+        },
+        {
+          "sha": "a8b7c68c7d19b0f52bd8291a4e34fd6fe8983339",
+          "author_date": "2020-05-06T20:38:25Z",
+          "message": "updates `eventgrid`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a8b7c68c7d19b0f52bd8291a4e34fd6fe8983339"
+        },
+        {
+          "sha": "a7424d6facf901058f1ad3213f6cd2e0cc5c890a",
+          "author_date": "2020-05-06T20:38:35Z",
+          "message": "updates `eventhub`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a7424d6facf901058f1ad3213f6cd2e0cc5c890a"
+        },
+        {
+          "sha": "45b4d40fb67936435e9fafc27119ff7a70602f14",
+          "author_date": "2020-05-06T20:38:43Z",
+          "message": "updates `frontdoor`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/45b4d40fb67936435e9fafc27119ff7a70602f14"
+        },
+        {
+          "sha": "d5e1985291acf559e136da649db49f84b844fcb5",
+          "author_date": "2020-05-06T20:38:56Z",
+          "message": "updates `hdinsight`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d5e1985291acf559e136da649db49f84b844fcb5"
+        },
+        {
+          "sha": "c287e5bb0fe958960bcd5e7c703bd148f4e45b0d",
+          "author_date": "2020-05-06T20:39:05Z",
+          "message": "updates `healthcare`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c287e5bb0fe958960bcd5e7c703bd148f4e45b0d"
+        },
+        {
+          "sha": "1d6e773819e26c1bd1050af398e2567c709a6b37",
+          "author_date": "2020-05-06T20:39:14Z",
+          "message": "updates `iotcentral`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1d6e773819e26c1bd1050af398e2567c709a6b37"
+        },
+        {
+          "sha": "d13dd8083e5b77ad1e70c2e5679bf8d730f9575c",
+          "author_date": "2020-05-06T20:39:22Z",
+          "message": "updates `iothub`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d13dd8083e5b77ad1e70c2e5679bf8d730f9575c"
+        },
+        {
+          "sha": "b15e52cebdd69c72050ed9830e6bb4e4bf44f4f3",
+          "author_date": "2020-05-06T20:39:31Z",
+          "message": "Updates `keyvault`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b15e52cebdd69c72050ed9830e6bb4e4bf44f4f3"
+        },
+        {
+          "sha": "bece6791be800b15d0f3179e55fd1afc88f79a7f",
+          "author_date": "2020-05-06T20:39:39Z",
+          "message": "updates `kusto`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bece6791be800b15d0f3179e55fd1afc88f79a7f"
+        },
+        {
+          "sha": "2190ef8a97d4a1e9fe63e2bf9b2bb8c6546ddffd",
+          "author_date": "2020-05-06T20:39:48Z",
+          "message": "updates `loganalytics`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2190ef8a97d4a1e9fe63e2bf9b2bb8c6546ddffd"
+        },
+        {
+          "sha": "ee0a728c0990f2be6ce04988a8b3c3076703168e",
+          "author_date": "2020-05-06T20:39:55Z",
+          "message": "updates `logic`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ee0a728c0990f2be6ce04988a8b3c3076703168e"
+        },
+        {
+          "sha": "ca834a459a77786a9e2b708b4634351f66c9b290",
+          "author_date": "2020-05-06T20:53:39Z",
+          "message": "updates `machinelearning`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ca834a459a77786a9e2b708b4634351f66c9b290"
+        },
+        {
+          "sha": "95c9bd70c14ea1c157a319c09bdcd6e0e8b45750",
+          "author_date": "2020-05-06T20:53:48Z",
+          "message": "updates `maintenance`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/95c9bd70c14ea1c157a319c09bdcd6e0e8b45750"
+        },
+        {
+          "sha": "8d6046191b49d51e9538d61f417060e54fafd68d",
+          "author_date": "2020-05-06T20:53:57Z",
+          "message": "updates `managementgroup`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/8d6046191b49d51e9538d61f417060e54fafd68d"
+        },
+        {
+          "sha": "4fac77127a1a99f27b49f7d84f4b962d911d2a1a",
+          "author_date": "2020-05-06T20:54:04Z",
+          "message": "updates `maps`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4fac77127a1a99f27b49f7d84f4b962d911d2a1a"
+        },
+        {
+          "sha": "e2ac536461d089d3c7a37c66913c3130e96a0eac",
+          "author_date": "2020-05-06T20:54:12Z",
+          "message": "updates `mariadb`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e2ac536461d089d3c7a37c66913c3130e96a0eac"
+        },
+        {
+          "sha": "36350c2c06e6a5fc59d6c417ea633e73e53a65ab",
+          "author_date": "2020-05-06T20:54:19Z",
+          "message": "updates `media`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/36350c2c06e6a5fc59d6c417ea633e73e53a65ab"
+        },
+        {
+          "sha": "e4de0ebab3111bbbda078e1e6d239ea01b228a8c",
+          "author_date": "2020-05-06T20:54:29Z",
+          "message": "updates `mixedreality`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e4de0ebab3111bbbda078e1e6d239ea01b228a8c"
+        },
+        {
+          "sha": "582da87dc1e1bc63b3cfaeff1ffcad24edc58623",
+          "author_date": "2020-05-06T20:54:37Z",
+          "message": "updates `monitor`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/582da87dc1e1bc63b3cfaeff1ffcad24edc58623"
+        },
+        {
+          "sha": "1f3e14c2098e1c7d99e4b80dfc9b16da342c6a4e",
+          "author_date": "2020-05-06T20:54:44Z",
+          "message": "updates `msi`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1f3e14c2098e1c7d99e4b80dfc9b16da342c6a4e"
+        },
+        {
+          "sha": "0e08e1f5b489db78767fab9f408cabe959b8ca96",
+          "author_date": "2020-05-06T20:54:53Z",
+          "message": "updates `mssql`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0e08e1f5b489db78767fab9f408cabe959b8ca96"
+        },
+        {
+          "sha": "e004705e2afa78d3a9f8bf3a9cac65fa734ca0ad",
+          "author_date": "2020-05-06T20:55:01Z",
+          "message": "updates `mysql`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e004705e2afa78d3a9f8bf3a9cac65fa734ca0ad"
+        },
+        {
+          "sha": "4b8ff98b8679cb882e379ce25a5c02069784c86f",
+          "author_date": "2020-05-06T20:55:10Z",
+          "message": "updates `netapp`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4b8ff98b8679cb882e379ce25a5c02069784c86f"
+        },
+        {
+          "sha": "a504016a364a25d9be9d0d3ae014f769f4865c22",
+          "author_date": "2020-05-06T20:55:24Z",
+          "message": "updates `notificationhub`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a504016a364a25d9be9d0d3ae014f769f4865c22"
+        },
+        {
+          "sha": "ef8b613f67f16dc5078966b969b214febab4ba61",
+          "author_date": "2020-05-06T21:01:41Z",
+          "message": "updates `network`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ef8b613f67f16dc5078966b969b214febab4ba61"
+        },
+        {
+          "sha": "d2ee416fe23344d823747af41c61e3d129a1fde7",
+          "author_date": "2020-05-06T21:01:50Z",
+          "message": "updates `policy`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d2ee416fe23344d823747af41c61e3d129a1fde7"
+        },
+        {
+          "sha": "4ef6736b64dfa68ef7d9e26fd4d52a271f84a662",
+          "author_date": "2020-05-06T21:01:57Z",
+          "message": "updates `portal`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4ef6736b64dfa68ef7d9e26fd4d52a271f84a662"
+        },
+        {
+          "sha": "e7ce639577696ab07643b35895deb82036789a34",
+          "author_date": "2020-05-06T21:02:04Z",
+          "message": "updates `postgres`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e7ce639577696ab07643b35895deb82036789a34"
+        },
+        {
+          "sha": "e9ab5ea904d7f078c5b440cc2e054d6667a11fbd",
+          "author_date": "2020-05-06T21:02:12Z",
+          "message": "updates `powerbi`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e9ab5ea904d7f078c5b440cc2e054d6667a11fbd"
+        },
+        {
+          "sha": "cb000a4a7ac6150375fa4df4c4c8300ec77cc20c",
+          "author_date": "2020-05-06T21:02:22Z",
+          "message": "updates `privatedns`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cb000a4a7ac6150375fa4df4c4c8300ec77cc20c"
+        },
+        {
+          "sha": "094181e516ebc369f27abe24ab94407ef63253b5",
+          "author_date": "2020-05-06T21:07:57Z",
+          "message": "Merge pull request #6798 from terraform-providers/tph/moar-file-rename",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/094181e516ebc369f27abe24ab94407ef63253b5"
+        },
+        {
+          "sha": "5a3dcc6bffe13ce52400b9f0f224d5e19d7bd21e",
+          "author_date": "2020-05-06T22:03:31Z",
+          "message": "Merge pull request #6799 from terraform-providers/tph/extra-moar-file-rename",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5a3dcc6bffe13ce52400b9f0f224d5e19d7bd21e"
+        },
+        {
+          "sha": "1c7a516d1914137f3e246bac7cf5300b1ed98f26",
+          "author_date": "2020-05-06T22:05:04Z",
+          "message": "Merge pull request #6800 from terraform-providers/tph/some-moar-file-rename",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1c7a516d1914137f3e246bac7cf5300b1ed98f26"
+        },
+        {
+          "sha": "f1caf0910a56690c24e787bb17c6b373479b4f68",
+          "author_date": "2020-05-06T22:26:15Z",
+          "message": "address review",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/f1caf0910a56690c24e787bb17c6b373479b4f68"
+        },
+        {
+          "sha": "581e48e56b93f4fce91dd37d19e2ca72a0e80b4a",
+          "author_date": "2020-05-06T23:16:23Z",
+          "message": "formatting",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/581e48e56b93f4fce91dd37d19e2ca72a0e80b4a"
+        },
+        {
+          "sha": "4c3ce829971f51b1f5347906e1b6b7c52c9a009c",
+          "author_date": "2020-05-06T23:27:19Z",
+          "message": "formatting",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4c3ce829971f51b1f5347906e1b6b7c52c9a009c"
+        },
+        {
+          "sha": "fc209f94842c4900350a288ca157894f472c033c",
+          "author_date": "2020-05-06T23:30:11Z",
+          "message": "formatting",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fc209f94842c4900350a288ca157894f472c033c"
+        },
+        {
+          "sha": "0f8b50a8a9c5d8e815623b24c550fb155e23ce7b",
+          "author_date": "2020-05-07T02:52:37Z",
+          "message": "Update website/docs/r/virtual_hub_connection.html.markdown\n\nCo-authored-by: Matthew Frahry <mbfrahry@gmail.com>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0f8b50a8a9c5d8e815623b24c550fb155e23ce7b"
+        },
+        {
+          "sha": "7983489501acda1bce4e6219d65e2e607af90ccc",
+          "author_date": "2020-05-07T03:00:31Z",
+          "message": "Update doc for property sku of servicebus namespace",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7983489501acda1bce4e6219d65e2e607af90ccc"
+        },
+        {
+          "sha": "ade48d7a304e4d861d13e11cb0b446633e61d0e6",
+          "author_date": "2020-05-07T05:46:50Z",
+          "message": "Merge branch 'master' into analysis-services-server-update-when-paused",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ade48d7a304e4d861d13e11cb0b446633e61d0e6"
+        },
+        {
+          "sha": "867fb0433820aca69cbc1fc072d703c4e2ae5efc",
+          "author_date": "2020-05-07T05:47:39Z",
+          "message": "add note that analysis services server is started and stopped during update",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/867fb0433820aca69cbc1fc072d703c4e2ae5efc"
+        },
+        {
+          "sha": "1d2d6ea3662f29c53b44d9ca8312c15f8ba61e83",
+          "author_date": "2020-05-07T08:18:52Z",
+          "message": "Merge pull request #6766 from magodo/vhub_doc\n\nAdd documentation about virtual hub connection field `vitual_network_to_hub_gateways_traffic_allowed`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1d2d6ea3662f29c53b44d9ca8312c15f8ba61e83"
+        },
+        {
+          "sha": "b9962da1721e21204c8fca5e58a8c70d79592228",
+          "author_date": "2020-05-07T08:21:07Z",
+          "message": "Merge pull request #6806 from neil-yechenwei/fix_eventhub_namespace\n\nUpdate doc for property default_action of eventhub namespace",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b9962da1721e21204c8fca5e58a8c70d79592228"
+        },
+        {
+          "sha": "ab9a3d1f6848eca8d6ce732e799c3b6eedea0357",
+          "author_date": "2020-05-07T08:55:17Z",
+          "message": "Merge pull request #6804 from neil-yechenwei/fix_doc_eventhubns\n\nUpdate doc for property sku of servicebus namespace",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ab9a3d1f6848eca8d6ce732e799c3b6eedea0357"
+        },
+        {
+          "sha": "3f07b5a56164823320b7ae8ac8e873e97041e5dc",
+          "author_date": "2020-05-07T09:21:46Z",
+          "message": "Merge pull request #6786 from r0bnet/analysis-services-server-update-when-paused\n\n[Enhancement] Allow updating Analysis Services Server when paused",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3f07b5a56164823320b7ae8ac8e873e97041e5dc"
+        },
+        {
+          "sha": "e5813a3f1048576a677eaba2465c07fa62b2b090",
+          "author_date": "2020-05-07T09:22:29Z",
+          "message": "updating to include #6786",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e5813a3f1048576a677eaba2465c07fa62b2b090"
+        },
+        {
+          "sha": "a6362e492bd71002280852e7d9bcb41e5dfb021f",
+          "author_date": "2020-05-07T09:43:02Z",
+          "message": "fix broken test param for remoteDebugging",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a6362e492bd71002280852e7d9bcb41e5dfb021f"
+        },
+        {
+          "sha": "4fcedbb13e782c54b83e7c0bc82e67644d119a8d",
+          "author_date": "2020-05-07T09:54:05Z",
+          "message": "fixes some broken tests",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4fcedbb13e782c54b83e7c0bc82e67644d119a8d"
+        },
+        {
+          "sha": "0c663c556d39d19cd3265d62f0155fcd595ae643",
+          "author_date": "2020-05-07T10:14:13Z",
+          "message": "update validation for new value in remoteDebuggingVersion",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0c663c556d39d19cd3265d62f0155fcd595ae643"
+        },
+        {
+          "sha": "cff1fa5989431d0c4b115d16fcabda264267cf09",
+          "author_date": "2020-05-07T11:10:38Z",
+          "message": "added todo",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cff1fa5989431d0c4b115d16fcabda264267cf09"
+        },
+        {
+          "sha": "c690b95ab5d6e06416dbc1ee30e85cab61577b10",
+          "author_date": "2020-05-07T11:13:37Z",
+          "message": "Merge pull request #6812 from terraform-providers/t/web-test-fixes-20200507",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c690b95ab5d6e06416dbc1ee30e85cab61577b10"
+        },
+        {
+          "sha": "e6ad22baad929299e241b0d77497a92923efac6c",
+          "author_date": "2020-04-28T10:27:18Z",
+          "message": "Add health_check_path to site_config\n\nSigned-off-by: Sune Keller <absukl@almbrand.dk>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e6ad22baad929299e241b0d77497a92923efac6c"
+        },
+        {
+          "sha": "cfa844c335babd1b235939401feadb27f46fcfc1",
+          "author_date": "2020-04-29T07:14:11Z",
+          "message": "Add acceptance test for health_check_path\n\nSigned-off-by: Sune Keller <absukl@almbrand.dk>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cfa844c335babd1b235939401feadb27f46fcfc1"
+        },
+        {
+          "sha": "c3fe74b290cd05dda4a94f1c325d619804d3ecf8",
+          "author_date": "2020-04-30T21:43:49Z",
+          "message": "Document health_check_path on azurerm_app_service\n\nSigned-off-by: Sune Keller <absukl@almbrand.dk>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c3fe74b290cd05dda4a94f1c325d619804d3ecf8"
+        },
+        {
+          "sha": "6cb1da5bb3791dbaba7e3949fe75ee4a842be368",
+          "author_date": "2020-05-07T11:05:14Z",
+          "message": "Note that App Service Health Check is in Preview\n\nCo-authored-by: Tom Harvey <tombuildsstuff@users.noreply.github.com>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/6cb1da5bb3791dbaba7e3949fe75ee4a842be368"
+        },
+        {
+          "sha": "918273d211823a4f882a17b5002007bec3cd9235",
+          "author_date": "2020-05-07T13:12:52Z",
+          "message": "Merge pull request #6661 from sirlatrom/fix-6429",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/918273d211823a4f882a17b5002007bec3cd9235"
+        },
+        {
+          "sha": "e451b1115559d5a963c5ad7ebf8de419bd429705",
+          "author_date": "2020-05-07T13:16:13Z",
+          "message": "Update for #6661",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e451b1115559d5a963c5ad7ebf8de419bd429705"
+        },
+        {
+          "sha": "59f2dddcd67e4565f18caa229e34b86d04206bf7",
+          "author_date": "2020-05-07T13:25:58Z",
+          "message": "Merge pull request #6705 from aqche/app_service_ip_restriction_name_and_priority",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/59f2dddcd67e4565f18caa229e34b86d04206bf7"
+        },
+        {
+          "sha": "d1c5abbe9d796e096e3059d3a01643596027023d",
+          "author_date": "2020-05-07T13:27:48Z",
+          "message": "Update for #6705",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d1c5abbe9d796e096e3059d3a01643596027023d"
+        },
+        {
+          "sha": "9498ad8c764efd77660927ba16c26f0fe0e53586",
+          "author_date": "2020-05-07T14:33:33Z",
+          "message": "New resource: `azurerm_sentinel_alert_rule_scheduled` #6650",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9498ad8c764efd77660927ba16c26f0fe0e53586"
+        },
+        {
+          "sha": "24b380766f299e05cd5263ba768843630e54e5fb",
+          "author_date": "2020-05-07T14:34:10Z",
+          "message": "Update for #6650",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/24b380766f299e05cd5263ba768843630e54e5fb"
+        },
+        {
+          "sha": "3ac50cc56d4e565fcfd90dcb2c43c54d6e44f734",
+          "author_date": "2020-05-07T16:52:21Z",
+          "message": "builder: raising an error if environment is unintentionally set to \"AZURESTACKCLOUD\"\n\nUsers should instead use the separate \"azurestack\" provider which offers integration\nwith Azure Stack via the Azure Stack Profiles",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3ac50cc56d4e565fcfd90dcb2c43c54d6e44f734"
+        },
+        {
+          "sha": "776a23d4998b79e04d56956ddc287f9ae1073989",
+          "author_date": "2020-05-07T17:24:07Z",
+          "message": "support alias connection strings for eventhub resources (#6708)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/776a23d4998b79e04d56956ddc287f9ae1073989"
+        },
+        {
+          "sha": "26b97918ba94c97ca2559d31ea2b9d95253ff2cc",
+          "author_date": "2020-05-07T17:31:30Z",
+          "message": "update CHANGELOG.md to include #6708",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/26b97918ba94c97ca2559d31ea2b9d95253ff2cc"
+        },
+        {
+          "sha": "9e920ab31fa0524e05191ce6babe5e94a94db33b",
+          "author_date": "2020-05-07T17:42:40Z",
+          "message": "Merge pull request #6817 from terraform-providers/b/azure-stack\n\nbuilder: raising an error for unsupported environments",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9e920ab31fa0524e05191ce6babe5e94a94db33b"
+        },
+        {
+          "sha": "2cceff12e442cbc4de5fdaabded200a75ba0b99f",
+          "author_date": "2020-05-07T17:43:47Z",
+          "message": "updating to include #6817 / formatting",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2cceff12e442cbc4de5fdaabded200a75ba0b99f"
+        },
+        {
+          "sha": "382e56f0a3fb0eae386c8e5290129e226d666fc2",
+          "author_date": "2020-05-07T19:31:10Z",
+          "message": "update doc for \"azurerm_redis_cache\" (#6807)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/382e56f0a3fb0eae386c8e5290129e226d666fc2"
+        },
+        {
+          "sha": "893307fb8b8e49eb1f8835f35a09d63bc4a81f4b",
+          "author_date": "2020-05-07T22:13:27Z",
+          "message": "update `azurerm_policy_assignment` - allow scopes of policy set definition without `subscription/<id>` (#6792)\n\nFixes #6671",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/893307fb8b8e49eb1f8835f35a09d63bc4a81f4b"
+        },
+        {
+          "sha": "cae117e30194d44d3b4e978cb512c246896c8c84",
+          "author_date": "2020-05-07T22:14:55Z",
+          "message": "update CHANGELOG.md to include #6792",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cae117e30194d44d3b4e978cb512c246896c8c84"
+        },
+        {
+          "sha": "090deae255362612360707fd45bb3eed61e91bd7",
+          "author_date": "2020-05-07T22:55:27Z",
+          "message": "`azurerm_automation_runbook` - add support for create runbook as draft and then publish  (#6813)\n\nfixes #6588\r\nfixes #4403\r\nfixes #3086",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/090deae255362612360707fd45bb3eed61e91bd7"
+        },
+        {
+          "sha": "44bb6ad307976ff92c6d6dfef24f150d0d6e404b",
+          "author_date": "2020-05-07T22:57:03Z",
+          "message": "update CHANGELOG.md to include #6813",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/44bb6ad307976ff92c6d6dfef24f150d0d6e404b"
+        },
+        {
+          "sha": "4b4a54e02b7323e329eebf8152372514ec4be241",
+          "author_date": "2020-05-07T23:15:31Z",
+          "message": "[BUG] azurerm_redis_cache backup requires connection string (#6819)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4b4a54e02b7323e329eebf8152372514ec4be241"
+        },
+        {
+          "sha": "e78759033d6c00ca0a128927ae023c1b771c7f48",
+          "author_date": "2020-05-07T23:16:57Z",
+          "message": "update CHANGELOG.md to include #6819",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e78759033d6c00ca0a128927ae023c1b771c7f48"
+        },
+        {
+          "sha": "d4da9b2012c386c5c5e181aca03e19b88171a2e7",
+          "author_date": "2020-05-08T00:02:50Z",
+          "message": "v2.9.0",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d4da9b2012c386c5c5e181aca03e19b88171a2e7"
         }
       ],
       "ignored_reason": null
@@ -11401,350 +12931,446 @@
       "ignored_reason": null
     },
     {
-      "release": "v5.0.0",
-      "previous_release": "v4.81.0",
+      "release": "v2.12.0",
+      "previous_release": "v2.11.0",
       "commits": [
         {
-          "sha": "36985390e49b24957bad7e7d40b178a76a6c053a",
-          "author_date": "2026-07-14T14:58:29Z",
-          "message": "5.0: `sentinel` - migrate to `go-azure-sdk` (#32759)\n\n[ENHANCEMENT] * `sentinel` - migrate to `go-azure-sdk`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/36985390e49b24957bad7e7d40b178a76a6c053a"
+          "sha": "9cc33a71dde0469cdb3d0c48867487d17ebefd3e",
+          "author_date": "2020-05-16T16:01:41Z",
+          "message": "Align azurerm_sql_virtual_network_rule name validation with azure validation",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9cc33a71dde0469cdb3d0c48867487d17ebefd3e"
         },
         {
-          "sha": "1e495a3c809579476018b4f8f692496dd71be1a4",
-          "author_date": "2026-07-14T15:01:05Z",
-          "message": "5.0: `azurerm_cosmosdb_account` - resolve TODO 4.0 (#32762)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1e495a3c809579476018b4f8f692496dd71be1a4"
+          "sha": "e9ecab41fa7953f6eb302233e859ff2049e4fe20",
+          "author_date": "2020-05-16T16:07:10Z",
+          "message": "minor test fixes",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e9ecab41fa7953f6eb302233e859ff2049e4fe20"
         },
         {
-          "sha": "4c33b0b686e46a7251655378cb0a71ceacb1560d",
-          "author_date": "2026-07-14T15:34:04Z",
-          "message": "force 5.0 mode (#32789)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4c33b0b686e46a7251655378cb0a71ceacb1560d"
+          "sha": "f183a6a1e06897add2a5d92b09f0346dbbd89673",
+          "author_date": "2020-05-17T11:43:17Z",
+          "message": "Test fix - name too short error returned for empty name",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/f183a6a1e06897add2a5d92b09f0346dbbd89673"
         },
         {
-          "sha": "4e88585f65e60c5a991da573bed9daf7cf7324c9",
-          "author_date": "2026-07-14T15:37:51Z",
-          "message": "enable beta version for default (#32787)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4e88585f65e60c5a991da573bed9daf7cf7324c9"
+          "sha": "b790b80c88d571861fee056b22f33001d811389d",
+          "author_date": "2020-05-22T00:02:32Z",
+          "message": "Cleanup after v2.11.0 release",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b790b80c88d571861fee056b22f33001d811389d"
         },
         {
-          "sha": "fd131ce52bbe7f4dcb9fb57b6664ddda261aea6b",
-          "author_date": "2026-07-15T14:07:54Z",
-          "message": "5.0: `maps` - resolve TODO 4.0 (#32776)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fd131ce52bbe7f4dcb9fb57b6664ddda261aea6b"
+          "sha": "c89a117f965c7a2355fcbc2a44f03f5c4c923549",
+          "author_date": "2020-05-22T20:44:10Z",
+          "message": "Add note about certificate format (#7054)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c89a117f965c7a2355fcbc2a44f03f5c4c923549"
         },
         {
-          "sha": "58c5b3871d4a5e51b436116760805f15c50a0332",
-          "author_date": "2026-07-15T14:09:23Z",
-          "message": "5.0: `securitycenter` - resolve TODO 4.0 (#32790)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/58c5b3871d4a5e51b436116760805f15c50a0332"
+          "sha": "910dc765a60f1eda2946ff3bfcdf3aff34b2675b",
+          "author_date": "2020-05-22T22:02:31Z",
+          "message": "OMS Agent Identity Export",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/910dc765a60f1eda2946ff3bfcdf3aff34b2675b"
         },
         {
-          "sha": "bf42348542287c88bc961ce9ca2c04bd32252f58",
-          "author_date": "2026-07-15T14:10:32Z",
-          "message": "5.0: `containers` - resolve TODO 4.0 comments (#32792)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bf42348542287c88bc961ce9ca2c04bd32252f58"
+          "sha": "6d977d39027e29063116977cd0e76e10aff3f90c",
+          "author_date": "2020-05-24T14:35:04Z",
+          "message": "Clarify the content of the parameters_body argument (#7060)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/6d977d39027e29063116977cd0e76e10aff3f90c"
         },
         {
-          "sha": "0e8d93ebbad2a2ce2027640243f939f0168751b2",
-          "author_date": "2026-07-15T15:32:24Z",
-          "message": "5.0: `network` - resolve TODO 4.0 comments (#32791)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0e8d93ebbad2a2ce2027640243f939f0168751b2"
+          "sha": "0c8651b9807aa60c6b37f5bb8b6d88c3205f0118",
+          "author_date": "2020-05-24T14:39:27Z",
+          "message": "azurern_[linux|windows]_virtual_machine - Correctly check the length of the rsa ssh `public_key` property (#7061)\n\nFixes #6044",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0c8651b9807aa60c6b37f5bb8b6d88c3205f0118"
         },
         {
-          "sha": "f95ad21b9544c72aab7ba2b91d41001e09c3d39f",
-          "author_date": "2026-07-15T21:17:26Z",
-          "message": "5.0: `recoveryservices` - resolve TODO 4.0 comments (#32795)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/f95ad21b9544c72aab7ba2b91d41001e09c3d39f"
+          "sha": "62fae2514e2e54197ceb67231a30e9f0040e7b0e",
+          "author_date": "2020-05-24T14:40:33Z",
+          "message": "update CHANGELOG.md to include #7061",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/62fae2514e2e54197ceb67231a30e9f0040e7b0e"
         },
         {
-          "sha": "644c2f2038aebc8a2b7b7b168f5b500cf628ec80",
-          "author_date": "2026-07-16T16:14:15Z",
-          "message": "`5.0` - provider base prep (#32807)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/644c2f2038aebc8a2b7b7b168f5b500cf628ec80"
+          "sha": "00f95f01cdf55a53f3877364115903864933c864",
+          "author_date": "2020-05-24T21:29:12Z",
+          "message": "Fix `azurerm_orchestrated_virtual_machine_scale_set` - `azurerm_linux|windows_virtual_machine` should allow to assign `virtual_machine_scale_set_id` in non-zonal deployment (#7057)\n\nThe zone in azurerm_linux|windows_virtual_machine should be allowed to be empty when the virtual_machine_scale_set_id is assigned, since the VMSS referenced by the VM can be deployed non-zonal.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/00f95f01cdf55a53f3877364115903864933c864"
         },
         {
-          "sha": "946a6ce055f3fdd6057604ccb2df60e954272b4a",
-          "author_date": "2026-07-16T17:21:46Z",
-          "message": "`acctests` - Fix missing key vault rbac attr in tests (#32806)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/946a6ce055f3fdd6057604ccb2df60e954272b4a"
+          "sha": "cb928f50db1ab302239ccf4968d0a4abbd5bfad1",
+          "author_date": "2020-05-24T21:30:38Z",
+          "message": "update CHANGELOG.md to include #7057",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cb928f50db1ab302239ccf4968d0a4abbd5bfad1"
         },
         {
-          "sha": "b868b2f36898dfe3dab6d935de362a1d1c55eb1f",
-          "author_date": "2026-07-17T23:09:18Z",
-          "message": "`azurerm_data_factory_pipeline` - rename `moniter_metrics_after_duration` property to `monitor_metrics_after_duration`  (#32177)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b868b2f36898dfe3dab6d935de362a1d1c55eb1f"
+          "sha": "8d11a863feb22a337b6c8d68a37d434e9be48d63",
+          "author_date": "2020-05-24T22:07:54Z",
+          "message": "Update Resource: `azurerm_eventgrid_event_subscription` (#6860)\n\nUpdates/extends resource azurerm_eventgrid_event_subscription\r\n\r\nAdditions to resource azurerm_eventgrid_event_subscription:\r\n\r\nservice_bus_queue_endpoint\r\nservice_bus_topic_endpoint\r\nexpiration_time_utc\r\nFixes #4308\r\nFixes #4857",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/8d11a863feb22a337b6c8d68a37d434e9be48d63"
         },
         {
-          "sha": "15b5aa5774542397716c50721fd056e7d1f50c3a",
-          "author_date": "2026-07-20T08:45:36Z",
-          "message": "`azurerm_container_registry` - Deprecated `trust_policy_enabled` (#32752)\n\n[ENHANCEMENT] * `azurerm_container_registry` - the `trust_policy_enabled` property has been deprecated and removed from the provider",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/15b5aa5774542397716c50721fd056e7d1f50c3a"
+          "sha": "c2422bdf0b52f8d6f5d20b0f5ea916c2e7133ca9",
+          "author_date": "2020-05-24T22:10:23Z",
+          "message": "update CHANGELOG.md to include #6860",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c2422bdf0b52f8d6f5d20b0f5ea916c2e7133ca9"
         },
         {
-          "sha": "e5b8fade7cb8b908bda89dd546159e8a6e8372b1",
-          "author_date": "2026-07-20T13:55:36Z",
-          "message": "5.0: resolve TODO 5.0s (#32815)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e5b8fade7cb8b908bda89dd546159e8a6e8372b1"
+          "sha": "1e0814c262bed5e849f99efde00b42605fe767fc",
+          "author_date": "2020-05-25T02:19:28Z",
+          "message": "Fix validation for serivce bus topic name",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1e0814c262bed5e849f99efde00b42605fe767fc"
         },
         {
-          "sha": "ca5493032e0caef848a11e1544e51d27a9b3738e",
-          "author_date": "2026-07-20T15:16:11Z",
-          "message": "`streamanalytics` - fix-up 5.0 testing configs (#32675)\n\nCo-authored-by: catriona-m <86247157+catriona-m@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ca5493032e0caef848a11e1544e51d27a9b3738e"
+          "sha": "18385f9343c7c91d6fcb3ca7add57e075a3dc2c9",
+          "author_date": "2020-05-25T02:43:33Z",
+          "message": "Update code",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/18385f9343c7c91d6fcb3ca7add57e075a3dc2c9"
         },
         {
-          "sha": "87e81a89b70a5900a561f026c9847be872f55b3f",
-          "author_date": "2026-07-20T15:38:33Z",
-          "message": "azurerm_storage_share_file: support inline content via source_content (#32756)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/87e81a89b70a5900a561f026c9847be872f55b3f"
+          "sha": "91d52872726e87b72e9982e5c461742f833ec7f0",
+          "author_date": "2020-05-25T05:26:57Z",
+          "message": "azurerm_batch_pool - support `container_image_names` property (#6689)\n\nthis is a pr which helps to configure docs.microsoft.com/en-us/dotnet/api/microsoft.azure.batch.containerconfiguration.containerimagenames?view=azure-dotnet",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/91d52872726e87b72e9982e5c461742f833ec7f0"
         },
         {
-          "sha": "e07564c519aba0e65ee0841b3384999646c32198",
-          "author_date": "2026-07-20T15:58:23Z",
-          "message": "5.0: `privatedns` - resolve TODO 4.0s (#32765)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e07564c519aba0e65ee0841b3384999646c32198"
+          "sha": "ee6d71cf176cbf4ae524559a5dfad38991191bf2",
+          "author_date": "2020-05-25T05:27:29Z",
+          "message": "update CHANGELOG.md to include #6689",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ee6d71cf176cbf4ae524559a5dfad38991191bf2"
         },
         {
-          "sha": "4bca4c6ca2b861fbf571978f5da96d04f2e1d501",
-          "author_date": "2026-07-20T15:58:40Z",
-          "message": "5.0: prepare docs for release (#32816)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4bca4c6ca2b861fbf571978f5da96d04f2e1d501"
+          "sha": "4226473df8960e1f165432ee0b619e152483fdd1",
+          "author_date": "2020-05-25T05:29:42Z",
+          "message": "New resource: azurerm_dev_test_global_shutdown_schedule (#5536)\n\nThis resource enables the \"Auto-shutdown\" functionality of regular ARM-based VMs. It's basically a hack of the Dev Test Labs schedules resource known as a \"Global Schedule\" in the API docs. The API looks like it would support multiple types of schedules and timings, but in reality based on testing only \"ComputeVMShutdownTask\" schedules are supported and only with a daily recurrence. The API also seems to require a specific naming standard of the resource of \"shutdown-computevm-{{VM Name}}\". Anything else results in a 400 Bad Request.\r\n\r\nBecause of these restrictions, for ease of use, I opted to create a resource specifically for shutdown schedules that essentially maps to the \"Auto-shutdown\" blade in the Portal. If in the future, if additional types of schedules like Auto-starts are supported, my thought is new resources could be created or a more general resource could be created to support multiple types.\r\n\r\nI'm very open to feedback on resource naming and overall approach.\r\n\r\nReferences:\r\n\r\nFeature Announcement\r\nazure.microsoft.com/en-us/blog/announcing-auto-shutdown-for-vms-using-azure-resource-manager\r\n\r\nAPI Docs\r\ndocs.microsoft.com/en-us/rest/api/dtl/globalschedules\r\n\r\nExample Usage Forum Post\r\nsocial.msdn.microsoft.com/Forums/en-US/25a02403-dba9-4bcb-bdcc-1f4afcba5b65/powershell-script-to-autoshutdown-azure-virtual-machine?forum=WAVirtualMachinesforWindows",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4226473df8960e1f165432ee0b619e152483fdd1"
         },
         {
-          "sha": "242fe4b6616331ba784965c85b9040ec2a5646a3",
-          "author_date": "2026-07-20T15:59:03Z",
-          "message": "5.0: `maintenance` - resolve TODO 4.0s (#32801)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/242fe4b6616331ba784965c85b9040ec2a5646a3"
+          "sha": "d29460bc1ed3b4f4108ebf297aaf84fd897277c3",
+          "author_date": "2020-05-25T05:30:45Z",
+          "message": "update CHANGELO.md to include #5536",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d29460bc1ed3b4f4108ebf297aaf84fd897277c3"
         },
         {
-          "sha": "9856d7e8a992f6feca8448b818fdfd949e1113e8",
-          "author_date": "2026-07-20T16:03:57Z",
-          "message": "`mssql` - resolve TODO 4.0 comments (#32669)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9856d7e8a992f6feca8448b818fdfd949e1113e8"
+          "sha": "9695772c7cd8eee5c24e578988b42f529b04b582",
+          "author_date": "2020-05-17T12:57:19Z",
+          "message": "Fixed 'Unknown' issuer not working",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9695772c7cd8eee5c24e578988b42f529b04b582"
         },
         {
-          "sha": "0eff59149303050fe16b4e946a14733d59bc5fdf",
-          "author_date": "2026-07-20T17:06:47Z",
-          "message": "teamcity builds added to comment after test (#32812)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0eff59149303050fe16b4e946a14733d59bc5fdf"
+          "sha": "bbc9ca6c7371496b7cb057039006c552e4a237bf",
+          "author_date": "2020-05-25T09:25:38Z",
+          "message": "Update code",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bbc9ca6c7371496b7cb057039006c552e4a237bf"
         },
         {
-          "sha": "af0c80c40be4329351abf0e5e475acf81befba26",
-          "author_date": "2026-07-20T18:53:59Z",
-          "message": "service/storagemover: add list support for `azurerm_storage_mover_target_endpoint` (#32180)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/af0c80c40be4329351abf0e5e475acf81befba26"
+          "sha": "d154300842d98a83496d16768272ea099bd7ac84",
+          "author_date": "2020-05-25T09:44:20Z",
+          "message": "Update code",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d154300842d98a83496d16768272ea099bd7ac84"
         },
         {
-          "sha": "c8dc0e8dda6d77fd3d22fc2871bb88ca8ba03396",
-          "author_date": "2026-07-20T20:50:16Z",
-          "message": "5.0: `compute` - resolve TODO 4.0s (#32779)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c8dc0e8dda6d77fd3d22fc2871bb88ca8ba03396"
+          "sha": "afd607473c6578551cccf655266d36d6d1a535ad",
+          "author_date": "2020-05-25T09:46:56Z",
+          "message": "Update code",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/afd607473c6578551cccf655266d36d6d1a535ad"
         },
         {
-          "sha": "571b2b5824ee2724ed1638ae08ba1bd32c26a1e3",
-          "author_date": "2026-07-20T20:56:02Z",
-          "message": "Bump actions/setup-java from 5.5.0 to 5.6.0 (#32830)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/571b2b5824ee2724ed1638ae08ba1bd32c26a1e3"
+          "sha": "b532b127b1df00d8e3e7f9699bc08584f3c097b3",
+          "author_date": "2020-05-25T11:22:50Z",
+          "message": "Merge pull request #7056 from aristosvo/oms-agent-identity\n\nSupport for `azurerm_kubernetes_cluster` OMS Agent Identity export",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b532b127b1df00d8e3e7f9699bc08584f3c097b3"
         },
         {
-          "sha": "04b4258d2d707374604adee42e5f73f6d46e4cf0",
-          "author_date": "2026-07-20T21:00:51Z",
-          "message": "Bump actions/checkout from 4.2.2 to 4.4.0 (#32829)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/04b4258d2d707374604adee42e5f73f6d46e4cf0"
+          "sha": "7d3980d83c5919692572b79ac74bfcfdbc41b7d5",
+          "author_date": "2020-05-25T11:23:37Z",
+          "message": "updating to include #7056",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7d3980d83c5919692572b79ac74bfcfdbc41b7d5"
         },
         {
-          "sha": "d944a439ec7ba405cf9180dcb0b3d3cb204a2f38",
-          "author_date": "2026-07-21T07:30:49Z",
-          "message": "`azurerm_dashboard_grafana` - update `grafana_major_version` possible values to `12` and `13` (#32777)\n\n[ENHANCEMENT] * `azurerm_dashboard_grafana` - the `11` value for the `grafana_major_version` property has been deprecated and the property now supports `13`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d944a439ec7ba405cf9180dcb0b3d3cb204a2f38"
+          "sha": "bb5d0818a737bdef44e6ccb678be0407d774cf21",
+          "author_date": "2020-05-25T13:48:40Z",
+          "message": "Merge pull request #6968 from robselway/hotfix/sql-vnet-rule-validation\n\nazurerm_sql_virtual_network_rule name validation",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bb5d0818a737bdef44e6ccb678be0407d774cf21"
         },
         {
-          "sha": "2d5a240b0a3e6f62b8a00c6b7741b965a0934097",
-          "author_date": "2026-07-21T14:33:03Z",
-          "message": "5.0: resolve todo 4.0s (#32811)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2d5a240b0a3e6f62b8a00c6b7741b965a0934097"
+          "sha": "557f693f559fff934a9e4cf645628993d3a9a5d8",
+          "author_date": "2020-05-25T13:49:05Z",
+          "message": "updating to include #6968",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/557f693f559fff934a9e4cf645628993d3a9a5d8"
         },
         {
-          "sha": "ec6fd9ef7b8162f6d575f8fafdeedd2065288f58",
-          "author_date": "2026-07-21T15:28:03Z",
-          "message": "`azurerm_cost_management_scheduled_action` - fix acceptance tests (#32833)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ec6fd9ef7b8162f6d575f8fafdeedd2065288f58"
+          "sha": "fd770c4faead400cad02d8ff2940e41d863fa025",
+          "author_date": "2020-05-25T14:34:58Z",
+          "message": "Merge pull request #6979 from ThomasZeman/master\n\nazurerm_key_vault_certificate: fixed 'Unknown' issuer not working Issue #5589",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fd770c4faead400cad02d8ff2940e41d863fa025"
         },
         {
-          "sha": "9b07fc8d90edc8bb298c11850d403217347b4adb",
-          "author_date": "2026-07-22T17:31:39Z",
-          "message": "schema lint (#32772)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/9b07fc8d90edc8bb298c11850d403217347b4adb"
+          "sha": "94cc01426bc93acc7916dbe7350bb02754cdfa88",
+          "author_date": "2020-05-25T14:35:37Z",
+          "message": "updating to include #6979",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/94cc01426bc93acc7916dbe7350bb02754cdfa88"
         },
         {
-          "sha": "81c60de1ff6625cdf86d5743065d9b152e7e4745",
-          "author_date": "2026-07-22T17:52:34Z",
-          "message": "make tflint -> make tfproviderlint to prevent confusion (#32831)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/81c60de1ff6625cdf86d5743065d9b152e7e4745"
+          "sha": "c2d9c962e06072384e4d3509b78f07648d3bfddf",
+          "author_date": "2020-05-25T15:53:19Z",
+          "message": "Use address_prefixes in azurerm_application_gateway (#7072)\n\nUse address_prefixes instead of deprecated address_prefix in example",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c2d9c962e06072384e4d3509b78f07648d3bfddf"
         },
         {
-          "sha": "7a876a9a86bca392c4ed4697a9c03f5756c0cda8",
-          "author_date": "2026-07-22T19:47:33Z",
-          "message": "GHA - `/test` default to pushing build to top of queue (#32850)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7a876a9a86bca392c4ed4697a9c03f5756c0cda8"
+          "sha": "3c3ef815587ea458c92ff8e2d28f99a7442504de",
+          "author_date": "2020-05-25T20:29:17Z",
+          "message": "r/api_management_api_version_set: handling changes to the Azure Resource ID (#7071)\n\nThis PR is a continuation of the changes done by @jochenrichter in #7055 but adds a State Migration for migrating from the old -> new ID\r\n\r\nFixes #6609",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3c3ef815587ea458c92ff8e2d28f99a7442504de"
         },
         {
-          "sha": "e8ca691a303a1fc716fe5e2f5762cd5efe39a412",
-          "author_date": "2026-07-23T08:55:50Z",
-          "message": "Bump google.golang.org/grpc from 1.79.3 to 1.82.1 (#32852)\n\n[ENHANCEMENT] * dependencies: `grpc` update to `1.82.1`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e8ca691a303a1fc716fe5e2f5762cd5efe39a412"
+          "sha": "1a074c68c61d5911d515b9dcd49e45750e1d95f8",
+          "author_date": "2020-05-25T20:33:17Z",
+          "message": "update CHANGELOG.md to include #7071",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/1a074c68c61d5911d515b9dcd49e45750e1d95f8"
         },
         {
-          "sha": "10118c801a375d1418b02efaec8ed0edcb8cd918",
-          "author_date": "2026-07-23T13:05:56Z",
-          "message": "`acceptance` - restore `ForceNew` catcher (#32860)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/10118c801a375d1418b02efaec8ed0edcb8cd918"
+          "sha": "526019c8f527c2732969d3b282b456119983dffe",
+          "author_date": "2020-05-25T22:30:46Z",
+          "message": "d/azurerm_kubernetes_cluster extended with kubelet_identity and identity (#6527)\n\nCo-authored-by: kt <kt@katbyte.me>\r\n\r\nFixes #6514",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/526019c8f527c2732969d3b282b456119983dffe"
         },
         {
-          "sha": "dc5cc4d7f30261f5f8b71452e16637b607c04f91",
-          "author_date": "2026-07-23T15:48:21Z",
-          "message": "`azurerm_cognitive_account_rai_policy` - make `severity_threshold` optional in `content_filter` (#32100)\n\n[ENHANCEMENT] * `azurerm_cognitive_account_rai_policy` - the `content_filter.severity_threshold` property is now optional",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/dc5cc4d7f30261f5f8b71452e16637b607c04f91"
+          "sha": "194c86e6ecf6eb0a5aeede9ca7cf4be71c1cbb8b",
+          "author_date": "2020-05-25T22:31:56Z",
+          "message": "update CHANGELOG.md to include #6527",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/194c86e6ecf6eb0a5aeede9ca7cf4be71c1cbb8b"
         },
         {
-          "sha": "f1308e3fdf45fe6f710fad00e8f1dfa3341db3a6",
-          "author_date": "2026-07-23T19:11:47Z",
-          "message": "`azurerm_windows_web_app[_slot]` - add support for node `~24` (#32840)\n\n[ENHANCEMENT] `azurerm_windows_web_app` - add support for `~24` to `site_config.application_stack.node_version`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/f1308e3fdf45fe6f710fad00e8f1dfa3341db3a6"
+          "sha": "4c9f1f03b728a24349579d8ad81f72a8c007187e",
+          "author_date": "2020-05-26T05:17:31Z",
+          "message": "Update doc for access_tier of storage account",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4c9f1f03b728a24349579d8ad81f72a8c007187e"
         },
         {
-          "sha": "8e97bb20c090a1a3e89172bdd784467e7b696dec",
-          "author_date": "2026-07-24T14:31:34Z",
-          "message": "`azurerm_sentinel_threat_intelligence_indicator` - `display_name`,`description` and `validate_from_utc` forces new, add custom poller to fix `Root resource was present, but now absent` (#30037)\n\nCo-authored-by: Tao <104055472+teowa@users.noreply.github.com>\nCo-authored-by: Zhen Teng <zhenteng@microsoft.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/8e97bb20c090a1a3e89172bdd784467e7b696dec"
+          "sha": "2771e20e335bad9eba126b50206cb33cdfddb088",
+          "author_date": "2020-05-26T05:52:45Z",
+          "message": "Update code",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2771e20e335bad9eba126b50206cb33cdfddb088"
         },
         {
-          "sha": "4bb3dcc0907a187015b157e4db1ec2b39bc2b2ee",
-          "author_date": "2026-07-24T15:01:52Z",
-          "message": "`cdn` - migrate to `go-azure-sdk` (#32849)\n\n[ENHANCEMENT] * `cdn` - migrate to `go-azure-sdk`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4bb3dcc0907a187015b157e4db1ec2b39bc2b2ee"
+          "sha": "de443e11cd79691a57cdc637d4fa9148ef7f916c",
+          "author_date": "2020-05-26T05:53:53Z",
+          "message": "Update code",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/de443e11cd79691a57cdc637d4fa9148ef7f916c"
         },
         {
-          "sha": "67b05f9a423f8ce0300071496caa7b27a0c20999",
-          "author_date": "2026-07-24T15:04:53Z",
-          "message": "Load balancer: bump API version to 2025-01-01 (#32644)\n\n[ENHANCEMENT] * dependencies: `loadbalancers` - update to API version `2025-01-01`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/67b05f9a423f8ce0300071496caa7b27a0c20999"
+          "sha": "19393d016dc3234c684e8cae2f77ab21ebd14424",
+          "author_date": "2020-05-26T09:01:35Z",
+          "message": "acctest: updating the build config definition to 2020.1\n\nRecommended after upgrading to 2020.1",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/19393d016dc3234c684e8cae2f77ab21ebd14424"
         },
         {
-          "sha": "d5e439836a6dbd3a592581288a7681cd3753c9b4",
-          "author_date": "2026-07-24T15:26:26Z",
-          "message": "`azurerm_container_registry_cache_rule` - Fix name length validation error message (#32866)\n\n[BUG] * `azurerm_container_registry_cache_rule` - fix the error message for the `name` property's validation",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d5e439836a6dbd3a592581288a7681cd3753c9b4"
+          "sha": "deb9f05491e44a29768f6179b25b78b9a53599fe",
+          "author_date": "2020-05-11T10:39:58Z",
+          "message": "acctest: using teamcity-go-test for service packages",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/deb9f05491e44a29768f6179b25b78b9a53599fe"
         },
         {
-          "sha": "bbcdf11fea42042acc1c63ebe323eb6f49c93450",
-          "author_date": "2026-07-24T15:34:52Z",
-          "message": "`azurerm_subnet` - allow create-time NSG and RT via Write Only values. (#32847)\n\nCo-authored-by: sreallymatt <106555974+sreallymatt@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bbcdf11fea42042acc1c63ebe323eb6f49c93450"
+          "sha": "7329b64e5d37de5e8b959a8dabe0d3301cba6c83",
+          "author_date": "2020-05-26T10:02:47Z",
+          "message": "acctest: moving off the built-in test parser for now",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7329b64e5d37de5e8b959a8dabe0d3301cba6c83"
         },
         {
-          "sha": "3e83b3ae9ee14d13a56c55a722b518528041e6e6",
-          "author_date": "2026-07-24T16:08:14Z",
-          "message": "Confidential ledger - fix `TestAccConfidentialLedger*` (#32698)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3e83b3ae9ee14d13a56c55a722b518528041e6e6"
+          "sha": "c4332c76e655074ab60dacbd12e9dcfbe839c817",
+          "author_date": "2020-05-26T10:04:43Z",
+          "message": "Merge pull request #7084 from neil-yechenwei/storagedoc\n\nUpdate doc for access_tier of storage account",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c4332c76e655074ab60dacbd12e9dcfbe839c817"
         },
         {
-          "sha": "de2320b8907cbad96e62f8c3308e90d6ef047d1d",
-          "author_date": "2026-07-24T16:24:08Z",
-          "message": "Data Source: `azurerm_role_definition` - fix `role_definition_id` to return GUID (#32238)\n\nCo-authored-by: Egor Shulga <egorshulga@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/de2320b8907cbad96e62f8c3308e90d6ef047d1d"
+          "sha": "ec1f2e6e8241721730216c992c06f36180e10ad8",
+          "author_date": "2020-05-26T10:13:04Z",
+          "message": "Merge pull request #7083 from neil-yechenwei/sbnamevalidate\n\nFix validation for serivce bus topic name",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/ec1f2e6e8241721730216c992c06f36180e10ad8"
         },
         {
-          "sha": "538d56aed1b9b8c9c0deb6c5de05ea7ec326fb77",
-          "author_date": "2026-07-27T12:38:37Z",
-          "message": "fix bug in testcase dropping import checks (#32878)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/538d56aed1b9b8c9c0deb6c5de05ea7ec326fb77"
+          "sha": "f3e3db96bef4076a65e625191c2b0ea8e0360096",
+          "author_date": "2020-05-26T10:13:28Z",
+          "message": "updating to include #7027",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/f3e3db96bef4076a65e625191c2b0ea8e0360096"
         },
         {
-          "sha": "c05a5d12932cde25bfaf2742b227c527585b5d23",
-          "author_date": "2026-07-27T14:10:42Z",
-          "message": "`azurerm_site_recovery_replicated_vm` - deprecate `network_interface.target_*` property, add `network_interface.ip_configuration.*` (#30562)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c05a5d12932cde25bfaf2742b227c527585b5d23"
+          "sha": "25fed6f969f22efc5b8e29e4a4ae446ff399d491",
+          "author_date": "2020-05-26T13:12:15Z",
+          "message": "Updated import example for EventGrid Event Subscriptions (#7088)\n\nCo-authored-by: Jens Heremans <jens.heremans@gluo.be>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/25fed6f969f22efc5b8e29e4a4ae446ff399d491"
         },
         {
-          "sha": "189d05ef7dfd2a6092c874a5540739fa89e8bacd",
-          "author_date": "2026-07-27T14:33:11Z",
-          "message": "azurerm_container_registry - deprecate `regional_endpoint_enabled` in favour of `global_endpoint_routing_enabled` (#32680)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/189d05ef7dfd2a6092c874a5540739fa89e8bacd"
+          "sha": "869886e5c7594522e6265351d8531b1d7dae22b2",
+          "author_date": "2020-05-26T13:17:13Z",
+          "message": "azurerm_logic_app_action_http: add `run_after` (#7079)\n\nFixes #7069",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/869886e5c7594522e6265351d8531b1d7dae22b2"
         },
         {
-          "sha": "37457956a82cf059b2bd1ffc3021271c43f59ee2",
-          "author_date": "2026-07-27T15:12:52Z",
-          "message": "5.0: `azurerm_cdn_frontdoor_rule` - rework to match new batch rule set resource (#32848)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/37457956a82cf059b2bd1ffc3021271c43f59ee2"
+          "sha": "312c7de0840e2dbedeb84624974ae0ffbed71203",
+          "author_date": "2020-05-26T13:18:22Z",
+          "message": "update CHANGELOG.md to include #7079",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/312c7de0840e2dbedeb84624974ae0ffbed71203"
         },
         {
-          "sha": "efc07c201f22a89563a6888a7126654d52dc955d",
-          "author_date": "2026-07-27T15:25:06Z",
-          "message": "New Action: `azurerm_web_app_set_slot_distribution` (#32364)\n\n[FEATURE] * New Action: `azurerm_web_app_set_slot_distribution`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/efc07c201f22a89563a6888a7126654d52dc955d"
+          "sha": "280297ce5584eac6fe2c945746ad4e2f303eb6a6",
+          "author_date": "2020-05-26T14:01:06Z",
+          "message": "Merge pull request #7082 from terraform-providers/f/acctest-config\n\nacctest: updating the build config definition to 2020.1",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/280297ce5584eac6fe2c945746ad4e2f303eb6a6"
         },
         {
-          "sha": "5f45203068888afbaa20cbd19351463d83cc796c",
-          "author_date": "2026-07-27T17:24:40Z",
-          "message": "5.0: update guides (#32880)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5f45203068888afbaa20cbd19351463d83cc796c"
+          "sha": "7a0592040559f02af39894d03cca405486e2ea29",
+          "author_date": "2020-05-26T14:03:37Z",
+          "message": "Merge pull request #7086 from terraform-providers/f/build-tctest\n\nacctest: using teamcity-go-test for service packages",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7a0592040559f02af39894d03cca405486e2ea29"
         },
         {
-          "sha": "c84e68f2c9dfcc457bb5a9f18bc6abe3c36c6a91",
-          "author_date": "2026-07-27T17:28:59Z",
-          "message": "`azurerm_application_gateway` - Deprecate `authentication_certificate` property (#31400)\n\nCo-authored-by: sreallymatt <106555974+sreallymatt@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/c84e68f2c9dfcc457bb5a9f18bc6abe3c36c6a91"
+          "sha": "6b2b5d3a0a0ca02d82306bcda9c3f0f8493ff625",
+          "author_date": "2020-05-26T14:47:19Z",
+          "message": "New data source: `azurerm_advisor_recommendations` (#6867)\n\nrelated: #6119",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/6b2b5d3a0a0ca02d82306bcda9c3f0f8493ff625"
         },
         {
-          "sha": "fa8d26c15a50f101e379a00e78b7e0d3ec66dbe6",
-          "author_date": "2026-07-27T18:14:24Z",
-          "message": "`azurerm_netapp_volume` - support for new property `mount_targets` (#32677)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/fa8d26c15a50f101e379a00e78b7e0d3ec66dbe6"
+          "sha": "7dca75015498b686ae1d1df03d9c162160354ebe",
+          "author_date": "2020-05-26T14:48:00Z",
+          "message": "update CHANGELOG.md to include #6867",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7dca75015498b686ae1d1df03d9c162160354ebe"
         },
         {
-          "sha": "2ba2a12f1350a379b2888d247d5c420ac7b508a3",
-          "author_date": "2026-07-27T19:37:34Z",
-          "message": "5.0 - `hdinsights` (#32853)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2ba2a12f1350a379b2888d247d5c420ac7b508a3"
+          "sha": "4a36671e9bef2e988d839cbb45ebbd898f19bf69",
+          "author_date": "2020-05-26T16:08:12Z",
+          "message": "Removes preview note\n\nDisk Encryption Set no longer in Public Preview. Fixes #7065",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/4a36671e9bef2e988d839cbb45ebbd898f19bf69"
         },
         {
-          "sha": "0c8c11a0ba7d003c3ee7882a37b02ad66dd8ea5c",
-          "author_date": "2026-07-27T19:44:44Z",
-          "message": "`azurerm_virtual_network` & `azurerm_subnet` - Add `network_identifier` to `service_endpoint` field (#32413)\n\nCo-authored-by: sreallymatt <106555974+sreallymatt@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/0c8c11a0ba7d003c3ee7882a37b02ad66dd8ea5c"
+          "sha": "11e24cd35ae6ad598fac90843050ea41cb987d3f",
+          "author_date": "2020-05-26T16:22:43Z",
+          "message": "Merge pull request #7090 from terraform-providers/tph/disk_encryption-docs-update\n\ndocs: removes preview note from `disk_encryption_set`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/11e24cd35ae6ad598fac90843050ea41cb987d3f"
         },
         {
-          "sha": "e82afb4fb671395ac72307b30198ab797b596973",
-          "author_date": "2026-07-27T20:16:44Z",
-          "message": "add `kubernetes_automatic_cluster` datasource (#32881)\n\n[FEATURE] * **New Datasource** adds `azurerm_kubernetes_automatic_cluster_datasource`",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e82afb4fb671395ac72307b30198ab797b596973"
+          "sha": "5da4f81889a28de65d609a40038b5b24465d0749",
+          "author_date": "2020-05-26T20:51:03Z",
+          "message": "`azurerm_eventgrid_topic` - support for `input_schema`, `input_mapping_fields`, and `input_mapping_default_values` (#6858)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/5da4f81889a28de65d609a40038b5b24465d0749"
         },
         {
-          "sha": "eeb33a2e6c987f13560eb55230c067fc6e9104d4",
-          "author_date": "2026-07-27T20:22:25Z",
-          "message": "`azurerm_container_registry` - `georeplications.x.global_endpoint_routing_enabled` is now Required (#32882)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/eeb33a2e6c987f13560eb55230c067fc6e9104d4"
+          "sha": "bb4c6035da4927555e30dd3f976f978f6911b549",
+          "author_date": "2020-05-26T20:51:53Z",
+          "message": "Update changelog for #6858",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bb4c6035da4927555e30dd3f976f978f6911b549"
         },
         {
-          "sha": "14e8416517f2cb3ba7fd2f587fd877ae109ce34a",
-          "author_date": "2026-07-27T20:23:01Z",
-          "message": "azurerm_key_vault - fixed resource delete when it does not exist (#31119)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/14e8416517f2cb3ba7fd2f587fd877ae109ce34a"
+          "sha": "48d9da1d8553fcb580d15c360391a484b7d6a612",
+          "author_date": "2020-05-26T23:51:17Z",
+          "message": "Fix typo in docs (#7096)\n\nCo-authored-by: Moutaz Samir <moutaz.samir@avelabs.com>",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/48d9da1d8553fcb580d15c360391a484b7d6a612"
         },
         {
-          "sha": "3b1e83cfd2d461c4f80b1799c345b8c3756ec0d7",
-          "author_date": "2026-07-27T20:34:05Z",
-          "message": "`azurerm_log_analytics_workspace` - Add SecuredByPerimeter support for public network access (#32562)",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3b1e83cfd2d461c4f80b1799c345b8c3756ec0d7"
+          "sha": "d22a9d97a0cb55fda65d1a3dae0d3b6f5684401d",
+          "author_date": "2020-05-27T00:20:24Z",
+          "message": "Add virtual resource association: azurerm_nat_gateway_public_ip (#6450)\n\nfixes #6052",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d22a9d97a0cb55fda65d1a3dae0d3b6f5684401d"
         },
         {
-          "sha": "b241ed4b62ce683f74730401392ebb94b96d3981",
-          "author_date": "2026-07-27T20:43:41Z",
-          "message": "CHANGELOG.md for 5.0.0 (#32788)\n\nCo-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>\nCo-authored-by: sreallymatt <106555974+sreallymatt@users.noreply.github.com>",
-          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/b241ed4b62ce683f74730401392ebb94b96d3981"
+          "sha": "d15d71abc58729c194ac112e01d08d18a2c3bff8",
+          "author_date": "2020-05-27T00:21:37Z",
+          "message": "update CHANGELOG.md to include #6450",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d15d71abc58729c194ac112e01d08d18a2c3bff8"
+        },
+        {
+          "sha": "11a17e9dd9ba32253df32370f4c35f7c4df1d487",
+          "author_date": "2020-05-27T00:28:35Z",
+          "message": "add 1.x and 2.x changelog files back into master",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/11a17e9dd9ba32253df32370f4c35f7c4df1d487"
+        },
+        {
+          "sha": "7247fc4d47d12a38ee22425cf8ddc62975e91b8c",
+          "author_date": "2020-05-27T08:15:58Z",
+          "message": "acctests: fixing a missing `%`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/7247fc4d47d12a38ee22425cf8ddc62975e91b8c"
+        },
+        {
+          "sha": "86a96a553918505b415b88abcf1379b53058b58c",
+          "author_date": "2020-05-27T08:25:47Z",
+          "message": "Merge pull request #7105 from terraform-providers/tombuildsstuff-patch-1\n\nacctests: fixing a missing `%`",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/86a96a553918505b415b88abcf1379b53058b58c"
+        },
+        {
+          "sha": "2b5fc7f0586918deed97d1f18b33bf6757d581f1",
+          "author_date": "2020-05-27T08:32:34Z",
+          "message": "Merge pull request #7098 from terraform-providers/kt/change-changelog\n\nadd 1.x and 2.x changelog entries back into master",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/2b5fc7f0586918deed97d1f18b33bf6757d581f1"
+        },
+        {
+          "sha": "459f232d5ef17e56806aba13c1375ecd77725524",
+          "author_date": "2020-05-27T21:51:23Z",
+          "message": "`azurerm_shared_image_version` - `target_region.x.storage_account_type` is now defaulted and multiple `target_region`s can be added/removed (#6940)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/459f232d5ef17e56806aba13c1375ecd77725524"
+        },
+        {
+          "sha": "489f340c5874ae1a8a8b08893649d31943c70ad6",
+          "author_date": "2020-05-27T21:52:03Z",
+          "message": "Update CHANGELOG.md",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/489f340c5874ae1a8a8b08893649d31943c70ad6"
+        },
+        {
+          "sha": "8a478cbfc590285fac92ce178850407a058d4be0",
+          "author_date": "2020-05-27T22:04:09Z",
+          "message": "docs: fix monitor_action_group azure_function_receiver function_app_resource_id typo (#7091)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/8a478cbfc590285fac92ce178850407a058d4be0"
+        },
+        {
+          "sha": "103d0df57bf56593ed0b30e9281c151b1a2c0db7",
+          "author_date": "2020-05-28T05:12:03Z",
+          "message": "r/nat_gateway_public_ip_association: using a custom ID / support for delta updates in `azurerm_nat_gateway` (#7106)\n\nThis PR fixes some issues spotted in #6450 - namely:\r\n\r\nUsing a custom Resource ID for the azurerm_nat_gateway_public_ip_association resource - which includes the Public IP Address ID so that we can determine which Public IP Address is being referenced\r\nSupporting delta updates in the azurerm_nat_gateway resource",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/103d0df57bf56593ed0b30e9281c151b1a2c0db7"
+        },
+        {
+          "sha": "bc62a890fca5ee50b6953ab06c6247a8e8e603e2",
+          "author_date": "2020-05-28T13:26:45Z",
+          "message": "fix duplicate underscore",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/bc62a890fca5ee50b6953ab06c6247a8e8e603e2"
+        },
+        {
+          "sha": "e70247681deda1f6b482c8aec3b64907ac84ffce",
+          "author_date": "2020-05-28T14:16:58Z",
+          "message": "Merge pull request #7120 from r0bnet/fix-duplicate-underscore\n\n[FIX] Remove duplicate underscore in documentation",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/e70247681deda1f6b482c8aec3b64907ac84ffce"
+        },
+        {
+          "sha": "cf404ca4732adc131f546adba0e9ff098334b43c",
+          "author_date": "2020-05-28T18:41:40Z",
+          "message": "Update public_ip.html.markdown (#7119)\n\nUse location from resource group",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/cf404ca4732adc131f546adba0e9ff098334b43c"
+        },
+        {
+          "sha": "08642e2a512f09a0795b875fe9682c60c2fe0c64",
+          "author_date": "2020-05-28T20:01:09Z",
+          "message": "Update `azurerm_policy_assignment` - `location` should be required when `identity` is assigned (#7075)\n\nFixes #4950\r\n\r\nThis PR enforce this logic in the code. Previously, this is only documented, but not enforced in the code.",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/08642e2a512f09a0795b875fe9682c60c2fe0c64"
+        },
+        {
+          "sha": "86bfbd8898569f1aa3a584da297c1900e83ef14e",
+          "author_date": "2020-05-28T20:15:03Z",
+          "message": "azurerm_public_ip - update docs wrt zone redundant IPs (#7124)",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/86bfbd8898569f1aa3a584da297c1900e83ef14e"
+        },
+        {
+          "sha": "3d15d24ba261870b60123bda2a56cf7af4e6ef8f",
+          "author_date": "2020-05-28T21:18:33Z",
+          "message": "`azurerm_storage_account` - Support RAGZRS and GZRS `account_replication_type` (#7080)\n\nFixes #7051",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/3d15d24ba261870b60123bda2a56cf7af4e6ef8f"
+        },
+        {
+          "sha": "a3c542d9411b1e2894ee45f3c1c699e9e7b48e87",
+          "author_date": "2020-05-28T21:19:45Z",
+          "message": "update CHANGELOG.md to include #7080",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/a3c542d9411b1e2894ee45f3c1c699e9e7b48e87"
+        },
+        {
+          "sha": "d45548d2659a91b6734aa0b996381f2ab33555d2",
+          "author_date": "2020-05-28T21:39:56Z",
+          "message": "v2.12.0",
+          "html_url": "https://github.com/hashicorp/terraform-provider-azurerm/commit/d45548d2659a91b6734aa0b996381f2ab33555d2"
         }
       ],
       "ignored_reason": null

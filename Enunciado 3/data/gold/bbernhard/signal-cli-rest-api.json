@@ -1,0 +1,4632 @@
+{
+  "repository": {
+    "full_name": "bbernhard/signal-cli-rest-api",
+    "stars": 2884,
+    "language": "Go",
+    "default_branch": "master",
+    "created_at": "2019-05-30T17:51:57Z"
+  },
+  "releases": [
+    {
+      "id": 21176110,
+      "tag_name": "0.1",
+      "name": "Version 0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-11-03T18:27:33Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.1"
+    },
+    {
+      "id": 21176818,
+      "tag_name": "0.2",
+      "name": "Version 0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-11-03T20:05:47Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.2"
+    },
+    {
+      "id": 21350169,
+      "tag_name": "0.3",
+      "name": "Version 0.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-11-10T20:39:34Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.3"
+    },
+    {
+      "id": 21873508,
+      "tag_name": "0.4",
+      "name": "Version 0.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-11-30T20:29:48Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.4"
+    },
+    {
+      "id": 22900192,
+      "tag_name": "0.5",
+      "name": "Version 0.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-01-16T16:43:55Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.5"
+    },
+    {
+      "id": 22959767,
+      "tag_name": "0.6",
+      "name": "Version 0.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-01-19T21:00:19Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.6"
+    },
+    {
+      "id": 23123493,
+      "tag_name": "0.8",
+      "name": "Version 0.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-01-25T11:54:04Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.8"
+    },
+    {
+      "id": 23310459,
+      "tag_name": "0.9",
+      "name": "Version 0.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-02-01T13:12:25Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.9"
+    },
+    {
+      "id": 25179001,
+      "tag_name": "0.10",
+      "name": "Version 0.10",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-04-03T16:16:16Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.10"
+    },
+    {
+      "id": 25635768,
+      "tag_name": "0.11",
+      "name": "Version 0.11",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-04-18T06:31:19Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.11"
+    },
+    {
+      "id": 25880944,
+      "tag_name": "0.12",
+      "name": "Version 0.12",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-04-25T15:14:28Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.12"
+    },
+    {
+      "id": 27055375,
+      "tag_name": "0.14",
+      "name": "Version 0.14",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-05-30T07:39:28Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.14"
+    },
+    {
+      "id": 28471696,
+      "tag_name": "0.15",
+      "name": "Version 0.15",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-07-11T21:26:21Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.15"
+    },
+    {
+      "id": 29664880,
+      "tag_name": "0.16",
+      "name": "Version 0.16",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-08-13T17:24:38Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.16"
+    },
+    {
+      "id": 30328702,
+      "tag_name": "0.17",
+      "name": "Version 0.17",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-08-28T14:21:03Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.17"
+    },
+    {
+      "id": 31204966,
+      "tag_name": "0.18-pre",
+      "name": "Version 0.18",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2020-09-13T10:26:56Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.18-pre"
+    },
+    {
+      "id": 32469024,
+      "tag_name": "0.19",
+      "name": "Version 0.19",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2020-10-12T19:43:38Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.19"
+    },
+    {
+      "id": 32728949,
+      "tag_name": "0.20",
+      "name": "Version 0.20",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2020-10-18T20:42:10Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.20"
+    },
+    {
+      "id": 34279188,
+      "tag_name": "0.21",
+      "name": "Version 0.21",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2020-11-22T12:54:16Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.21"
+    },
+    {
+      "id": 34328439,
+      "tag_name": "0.22",
+      "name": "Version 0.22",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2020-11-23T20:04:06Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.22"
+    },
+    {
+      "id": 34504524,
+      "tag_name": "0.25",
+      "name": "Version 0.25",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-11-27T13:29:58Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.25"
+    },
+    {
+      "id": 35208590,
+      "tag_name": "0.26",
+      "name": "Version 0.26",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2020-12-13T19:25:26Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.26"
+    },
+    {
+      "id": 35542063,
+      "tag_name": "0.27",
+      "name": "Version 0.27",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2020-12-20T16:28:10Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.27"
+    },
+    {
+      "id": 35721206,
+      "tag_name": "0.29",
+      "name": "Version 0.29",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2020-12-25T17:49:09Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.29"
+    },
+    {
+      "id": 35970231,
+      "tag_name": "0.30",
+      "name": "Version 0.30",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-04T21:46:26Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.30"
+    },
+    {
+      "id": 36156133,
+      "tag_name": "0.31",
+      "name": "Version 0.31",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-08T18:15:56Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.31"
+    },
+    {
+      "id": 36514439,
+      "tag_name": "0.32",
+      "name": "Version 0.32",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-17T13:14:53Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.32"
+    },
+    {
+      "id": 36830209,
+      "tag_name": "0.33-pre",
+      "name": "Version 0.33-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-01-24T20:13:39Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.33-pre"
+    },
+    {
+      "id": 36883658,
+      "tag_name": "0.33",
+      "name": "Version 0.33",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-25T21:34:17Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.33"
+    },
+    {
+      "id": 37049171,
+      "tag_name": "0.34",
+      "name": "Version 0.34",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-01-28T19:51:24Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.34"
+    },
+    {
+      "id": 38672884,
+      "tag_name": "0.35",
+      "name": "Version 0.35",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-02-24T19:04:06Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.35"
+    },
+    {
+      "id": 38822306,
+      "tag_name": "0.36",
+      "name": "Version 0.36",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-02-26T20:56:11Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.36"
+    },
+    {
+      "id": 39789879,
+      "tag_name": "0.37-pre",
+      "name": "Version 0.37-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-03-14T21:50:36Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.37-pre"
+    },
+    {
+      "id": 40127903,
+      "tag_name": "0.37",
+      "name": "Version 0.37",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-03-21T20:14:29Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.37"
+    },
+    {
+      "id": 42950324,
+      "tag_name": "0.38",
+      "name": "Version 0.38",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-05-14T09:56:53Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.38"
+    },
+    {
+      "id": 43407131,
+      "tag_name": "0.39",
+      "name": "Version 0.39",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-05-22T09:35:54Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.39"
+    },
+    {
+      "id": 44373922,
+      "tag_name": "0.40",
+      "name": "Version 0.40",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-06-09T20:39:15Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.40"
+    },
+    {
+      "id": 44775347,
+      "tag_name": "0.41-pre",
+      "name": "Version 0.41-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-06-17T07:23:08Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.41-pre"
+    },
+    {
+      "id": 45256493,
+      "tag_name": "0.41",
+      "name": "Version 0.41",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-06-25T19:45:01Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.41"
+    },
+    {
+      "id": 47109041,
+      "tag_name": "0.42",
+      "name": "Version 0.42 ",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-08-01T09:43:10Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.42"
+    },
+    {
+      "id": 51565359,
+      "tag_name": "0.50",
+      "name": "Version 0.50",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-10-18T19:34:31Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.50"
+    },
+    {
+      "id": 51735483,
+      "tag_name": "0.51",
+      "name": "Version 0.51",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-10-20T19:44:38Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.51"
+    },
+    {
+      "id": 52404977,
+      "tag_name": "0.52",
+      "name": "Version 0.52",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-10-31T17:54:34Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.52"
+    },
+    {
+      "id": 53117344,
+      "tag_name": "0.53",
+      "name": "Version 0.53",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-11-10T20:02:51Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.53"
+    },
+    {
+      "id": 55485020,
+      "tag_name": "0.54",
+      "name": "Version 0.54",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-12-16T19:00:28Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.54"
+    },
+    {
+      "id": 56201986,
+      "tag_name": "0.55-pre",
+      "name": "Version 0.55",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-12-30T18:40:38Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.55-pre"
+    },
+    {
+      "id": 57315075,
+      "tag_name": "0.55",
+      "name": "Version 0.55",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-01-17T18:51:30Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.55"
+    },
+    {
+      "id": 60510374,
+      "tag_name": "0.56",
+      "name": "Version 0.56",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-02-25T19:39:33Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.56"
+    },
+    {
+      "id": 61092084,
+      "tag_name": "0.57",
+      "name": "Version 0.57",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-03-06T18:36:54Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.57"
+    },
+    {
+      "id": 63407415,
+      "tag_name": "0.58",
+      "name": "Version 0.58",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-01T18:08:42Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.58"
+    },
+    {
+      "id": 64608050,
+      "tag_name": "0.59",
+      "name": "Version 0.59",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-04-17T16:47:52Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.59"
+    },
+    {
+      "id": 69320166,
+      "tag_name": "0.60",
+      "name": "Version 0.60",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-06-13T16:41:57Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.60"
+    },
+    {
+      "id": 72175078,
+      "tag_name": "0.61",
+      "name": "Version 0.61",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-07-17T17:16:28Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.61"
+    },
+    {
+      "id": 73783665,
+      "tag_name": "0.62",
+      "name": "Version 0.62",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-05T19:34:38Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.62"
+    },
+    {
+      "id": 79182439,
+      "tag_name": "0.63",
+      "name": "Version 0.63",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-06T15:46:24Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.63"
+    },
+    {
+      "id": 79680607,
+      "tag_name": "0.64-pre",
+      "name": "Version 0.64",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-10-12T18:52:53Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.64-pre"
+    },
+    {
+      "id": 80831904,
+      "tag_name": "0.64",
+      "name": "Version 0.64",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-10-24T19:44:06Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.64"
+    },
+    {
+      "id": 87640123,
+      "tag_name": "0.65",
+      "name": "Version 0.65",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-12-31T21:11:57Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.65"
+    },
+    {
+      "id": 95322106,
+      "tag_name": "0.66-pre",
+      "name": "Version 0.66",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-03-12T17:21:37Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.66-pre"
+    },
+    {
+      "id": 96124754,
+      "tag_name": "0.66",
+      "name": "Version 0.66",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-19T22:00:42Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.66"
+    },
+    {
+      "id": 108009257,
+      "tag_name": "0.67",
+      "name": "Version 0.67",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-09T17:54:44Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.67"
+    },
+    {
+      "id": 121365358,
+      "tag_name": "0.68-pre",
+      "name": "Version 0.68-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-09-15T20:38:05Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.68-pre"
+    },
+    {
+      "id": 122841609,
+      "tag_name": "0.68",
+      "name": "Version 0.68",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-27T19:26:05Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.68"
+    },
+    {
+      "id": 123557445,
+      "tag_name": "0.69",
+      "name": "Version 0.69",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-03T19:11:53Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.69"
+    },
+    {
+      "id": 126160331,
+      "tag_name": "0.70-pre",
+      "name": "Version 0.70-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-10-22T18:32:31Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.70-pre"
+    },
+    {
+      "id": 126675571,
+      "tag_name": "0.71-pre",
+      "name": "Version 0.71-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-10-25T20:29:09Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.71-pre"
+    },
+    {
+      "id": 126993908,
+      "tag_name": "0.70",
+      "name": "Version 0.70",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-27T18:00:18Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.70"
+    },
+    {
+      "id": 134682888,
+      "tag_name": "0.80",
+      "name": "Version 0.80",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-12-20T19:48:00Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.80"
+    },
+    {
+      "id": 140070728,
+      "tag_name": "0.81",
+      "name": "Version 0.81",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-02-06T11:25:25Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.81"
+    },
+    {
+      "id": 143016897,
+      "tag_name": "0.82-pre",
+      "name": "Version 0.82",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-02-21T16:22:23Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.82-pre"
+    },
+    {
+      "id": 149043935,
+      "tag_name": "0.82-pre2",
+      "name": "Version 0.82-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-03-29T17:13:53Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.82-pre2"
+    },
+    {
+      "id": 149435583,
+      "tag_name": "0.82",
+      "name": "Version 0.82",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-02T16:49:03Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.82"
+    },
+    {
+      "id": 150119157,
+      "tag_name": "0.83",
+      "name": "Version 0.83",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-07T18:47:03Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.83"
+    },
+    {
+      "id": 157674703,
+      "tag_name": "0.84-pre",
+      "name": "Version 0.84-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-05-27T18:37:12Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.84-pre"
+    },
+    {
+      "id": 159722671,
+      "tag_name": "0.84",
+      "name": "Version 0.84",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-10T18:16:24Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.84"
+    },
+    {
+      "id": 162627928,
+      "tag_name": "0.85",
+      "name": "Version 0.85",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-26T20:04:06Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.85"
+    },
+    {
+      "id": 168616971,
+      "tag_name": "0.86",
+      "name": "Version 0.86",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-08-04T19:24:40Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.86"
+    },
+    {
+      "id": 169370000,
+      "tag_name": "0.87",
+      "name": "Version 0.87",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-08-08T16:26:52Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.87"
+    },
+    {
+      "id": 169677072,
+      "tag_name": "0.88",
+      "name": "Version 0.88",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-08-11T16:28:05Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.88"
+    },
+    {
+      "id": 178465667,
+      "tag_name": "0.89",
+      "name": "Version 0.89",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-04T18:45:58Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.89"
+    },
+    {
+      "id": 190842714,
+      "tag_name": "0.90-pre",
+      "name": "Version 0.90-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-12-15T22:12:10Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.90-pre"
+    },
+    {
+      "id": 191288807,
+      "tag_name": "0.90",
+      "name": "Version 0.90",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-12-17T22:34:15Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.90"
+    },
+    {
+      "id": 195267102,
+      "tag_name": "0.91",
+      "name": "Version 0.91",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-01-17T05:54:36Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.91"
+    },
+    {
+      "id": 202912373,
+      "tag_name": "0.92-pre",
+      "name": "Version 0.92-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-02-27T22:32:50Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.92-pre"
+    },
+    {
+      "id": 203695574,
+      "tag_name": "0.92-pre-2",
+      "name": "Version 0.92-pre-2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-03-04T20:40:57Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.92-pre-2"
+    },
+    {
+      "id": 204187433,
+      "tag_name": "0.92",
+      "name": "Version 0.92",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-03-06T18:15:11Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.92"
+    },
+    {
+      "id": 222294305,
+      "tag_name": "0.93",
+      "name": "Version 0.93-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-06-01T19:16:45Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.93"
+    },
+    {
+      "id": 223739273,
+      "tag_name": "0.93-1",
+      "name": "Version 0.93",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-06T21:06:20Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.93-1"
+    },
+    {
+      "id": 235401745,
+      "tag_name": "0.94",
+      "name": "Version 0.94",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-07-26T21:02:57Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.94"
+    },
+    {
+      "id": 252083292,
+      "tag_name": "0.95",
+      "name": "Version 0.95",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-03T19:03:05Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.95"
+    },
+    {
+      "id": 266896333,
+      "tag_name": "0.96",
+      "name": "Version 0.96",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-02T21:50:22Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.96"
+    },
+    {
+      "id": 281783588,
+      "tag_name": "0.97",
+      "name": "Version 0.97",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-31T12:43:32Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.97"
+    },
+    {
+      "id": 294847901,
+      "tag_name": "0.98-pre",
+      "name": "Version 0.98-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-03-09T18:53:46Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.98-pre"
+    },
+    {
+      "id": 295375550,
+      "tag_name": "0.98",
+      "name": "Version 0.98",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-10T21:11:35Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.98"
+    },
+    {
+      "id": 310923957,
+      "tag_name": "0.99-pre",
+      "name": "Version 0.99-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-04-19T19:56:39Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.99-pre"
+    },
+    {
+      "id": 315465549,
+      "tag_name": "0.99",
+      "name": "Version 0.99",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-29T21:32:08Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.99"
+    },
+    {
+      "id": 333375617,
+      "tag_name": "0.100-pre",
+      "name": "Version 0.100-pre",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-06-02T21:03:08Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.100-pre"
+    },
+    {
+      "id": 338281560,
+      "tag_name": "0.100",
+      "name": "Version 0.100",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-11T22:27:44Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.100"
+    },
+    {
+      "id": 383224428,
+      "tag_name": "0.101-pre",
+      "name": "Version 0.101",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-09-05T11:19:52Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.101-pre"
+    },
+    {
+      "id": 396940410,
+      "tag_name": "0.101",
+      "name": "Version 0.101",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-09-25T21:34:32Z",
+      "html_url": "https://github.com/bbernhard/signal-cli-rest-api/releases/tag/0.101"
+    }
+  ],
+  "tags": [
+    {
+      "name": "0.101",
+      "sha": "74253a3a41c2cade40fd4a53cf3fb7a3fdf305dc",
+      "date": "2026-09-25T20:44:28Z"
+    },
+    {
+      "name": "0.100-pre",
+      "sha": "81efbd25e12963bc8be03d25c2612000d3e7859c",
+      "date": "2026-06-01T18:47:46Z"
+    },
+    {
+      "name": "0.100",
+      "sha": "a4f5855b65d47bfe427735b5660053d1cc00c580",
+      "date": "2026-06-11T14:12:56Z"
+    },
+    {
+      "name": "0.101-pre",
+      "sha": "1fface6074e41a13dcbd65ae376f0f3c055f5086",
+      "date": "2026-09-05T09:57:06Z"
+    },
+    {
+      "name": "0.99",
+      "sha": "184231020c6b23ebb31e05d6732dc819987d1c84",
+      "date": "2026-04-26T21:54:22Z"
+    },
+    {
+      "name": "0.99-pre",
+      "sha": "1b1873ce17d625ac857011fcdb69c2a247c3edcd",
+      "date": "2026-04-19T19:52:44Z"
+    },
+    {
+      "name": "0.98",
+      "sha": "d11faf371431acfe5643eeeff02243f4b0ea6b60",
+      "date": "2026-03-08T16:43:24Z"
+    },
+    {
+      "name": "0.98-pre",
+      "sha": "d11faf371431acfe5643eeeff02243f4b0ea6b60",
+      "date": "2026-03-08T16:43:24Z"
+    },
+    {
+      "name": "0.96",
+      "sha": "79bab15541c800da05baff491de5bd2891173919",
+      "date": "2025-11-24T22:04:23Z"
+    },
+    {
+      "name": "0.95",
+      "sha": "08cd2bd12ce00c08c2c8a1063a0f925cf3f171b5",
+      "date": "2025-09-30T20:31:10Z"
+    },
+    {
+      "name": "0.94",
+      "sha": "aa1924aa8c9de8267485b413f81716e0136b471c",
+      "date": "2025-07-25T20:59:00Z"
+    },
+    {
+      "name": "0.93-1",
+      "sha": "fb6ec6013b87a8cfbd53e424144de897c5aa7720",
+      "date": "2025-06-03T20:19:22Z"
+    },
+    {
+      "name": "0.93",
+      "sha": "59207541c1f94e572f0e7b36de401f18ce723a3c",
+      "date": "2025-05-26T19:56:28Z"
+    },
+    {
+      "name": "0.92",
+      "sha": "2833a9b8a73090520ddc67ffb6b863faabd0ee7f",
+      "date": "2025-03-04T20:46:57Z"
+    },
+    {
+      "name": "0.97",
+      "sha": "82d88c353a4305bb9467583c9fdfd64e2b8845f4",
+      "date": "2026-01-24T23:04:30Z"
+    },
+    {
+      "name": "0.92-pre-2",
+      "sha": "970347db278c6a74eb6823a99fe9afcffd8060b6",
+      "date": "2025-03-04T16:40:25Z"
+    },
+    {
+      "name": "0.92-pre",
+      "sha": "4404929c90de86c8ec690ddfe5f0e985c2ac47b3",
+      "date": "2025-02-26T21:26:13Z"
+    },
+    {
+      "name": "0.91",
+      "sha": "7ac0b8807da770ffaac1eaa1563106ca8fe6e7e5",
+      "date": "2025-01-08T20:31:24Z"
+    },
+    {
+      "name": "0.90",
+      "sha": "54c884c06e083360ac62fb0183ce025acd9371ac",
+      "date": "2024-12-11T19:13:45Z"
+    },
+    {
+      "name": "0.90-pre",
+      "sha": "54c884c06e083360ac62fb0183ce025acd9371ac",
+      "date": "2024-12-11T19:13:45Z"
+    },
+    {
+      "name": "0.89",
+      "sha": "1506c1c9d4002d51bd40c4004861534964eb5054",
+      "date": "2024-09-30T15:33:43Z"
+    },
+    {
+      "name": "0.88",
+      "sha": "e6ff51e3d80b33b32669184f9dbfd4b412a8e7aa",
+      "date": "2024-08-09T21:02:40Z"
+    },
+    {
+      "name": "0.87",
+      "sha": "f3289395ae503ec6c236219a10e8d96a4eecce0d",
+      "date": "2024-08-07T15:07:12Z"
+    },
+    {
+      "name": "0.86",
+      "sha": "a6624c5dee6f07d5eb8e8f7182d8bdec9c16d4a1",
+      "date": "2024-08-04T18:49:08Z"
+    },
+    {
+      "name": "0.85",
+      "sha": "911b6867787fc79c878064dbf7db9cfa078b1144",
+      "date": "2024-06-20T16:29:31Z"
+    },
+    {
+      "name": "0.84",
+      "sha": "db4554d5ff2a76f945435f6a6d2520371ae0d29a",
+      "date": "2024-06-06T17:58:39Z"
+    },
+    {
+      "name": "0.84-pre",
+      "sha": "14707c7f5fb7ab258154ef49e80c4c66b0c13a00",
+      "date": "2024-05-22T17:22:57Z"
+    },
+    {
+      "name": "0.82-pre2",
+      "sha": "16a3f896ad833cd769a3731ee869501ff674cfd6",
+      "date": "2024-03-28T18:28:13Z"
+    },
+    {
+      "name": "0.82",
+      "sha": "16a3f896ad833cd769a3731ee869501ff674cfd6",
+      "date": "2024-03-28T18:28:13Z"
+    },
+    {
+      "name": "0.83",
+      "sha": "8b93a82b85e925e7e5ae6d1c517efe9fe57d0e3f",
+      "date": "2024-04-04T20:14:11Z"
+    },
+    {
+      "name": "0.82-pre",
+      "sha": "05f6434630d617c67528131a05882dd49304c7e2",
+      "date": "2024-02-21T15:26:47Z"
+    },
+    {
+      "name": "0.80",
+      "sha": "7fcb70e673aa7189bfe5330b1e62077ad9d00957",
+      "date": "2023-12-20T19:20:31Z"
+    },
+    {
+      "name": "0.81",
+      "sha": "4c560800f7b3ec2349cbf190a1dc2cba1c051505",
+      "date": "2024-02-06T10:11:34Z"
+    },
+    {
+      "name": "0.71-pre",
+      "sha": "54fd4db81e7a041341dfaf1f99cd5b7641c1a46a",
+      "date": "2023-10-25T16:31:09Z"
+    },
+    {
+      "name": "0.70",
+      "sha": "54fd4db81e7a041341dfaf1f99cd5b7641c1a46a",
+      "date": "2023-10-25T16:31:09Z"
+    },
+    {
+      "name": "0.70-pre",
+      "sha": "fa91a58bf23b69a63147ab7e5918579f912362f8",
+      "date": "2023-10-19T18:19:16Z"
+    },
+    {
+      "name": "0.68",
+      "sha": "4f3ebf0bfcf28b6633ac06238a488e86ee9ee5eb",
+      "date": "2023-09-26T20:30:43Z"
+    },
+    {
+      "name": "0.69",
+      "sha": "b39980e66b301e4b29268b89625f07ee8bd2b0ea",
+      "date": "2023-10-03T17:31:10Z"
+    },
+    {
+      "name": "0.68-pre",
+      "sha": "35e2e903df3e66436836e0d6080664fc83f7db57",
+      "date": "2023-09-08T20:45:50Z"
+    },
+    {
+      "name": "0.65",
+      "sha": "3f898ba3d4ab578d8f3e7eaa2701e60ec3bb9db2",
+      "date": "2022-12-26T16:41:56Z"
+    },
+    {
+      "name": "0.67",
+      "sha": "2519d83ac73870a069c0b947522725c340f4a70c",
+      "date": "2023-06-08T19:07:43Z"
+    },
+    {
+      "name": "0.66",
+      "sha": "5130282dc40b4f4458b430f9d406d03a28a5afdd",
+      "date": "2023-03-05T22:15:59Z"
+    },
+    {
+      "name": "0.66-pre",
+      "sha": "5130282dc40b4f4458b430f9d406d03a28a5afdd",
+      "date": "2023-03-05T22:15:59Z"
+    },
+    {
+      "name": "0.64-pre",
+      "sha": "ff52c8d4b027757ff880eb2e302b55bd40eeba21",
+      "date": "2022-10-12T12:56:58Z"
+    },
+    {
+      "name": "0.64",
+      "sha": "7e911bdc01591c45b68520b0a831bdcc918d783e",
+      "date": "2022-10-21T17:46:28Z"
+    },
+    {
+      "name": "0.63",
+      "sha": "f3f6e9390d672f3e95f744315bee9d26ad974e00",
+      "date": "2022-10-06T07:50:34Z"
+    },
+    {
+      "name": "0.62",
+      "sha": "352e068e5b922cbd6476b2677d00f87ceac1c2c6",
+      "date": "2022-07-26T18:37:15Z"
+    },
+    {
+      "name": "0.61",
+      "sha": "1fbef2aed05f910e2c0dec0039b293d28ae537f6",
+      "date": "2022-07-08T17:34:50Z"
+    },
+    {
+      "name": "0.60",
+      "sha": "3286a07f92930414810adba74843add8c6f91a5a",
+      "date": "2022-06-08T13:44:20Z"
+    },
+    {
+      "name": "0.59",
+      "sha": "a6927896ef4b831fbb41dd3044cc47472fcea445",
+      "date": "2022-04-14T17:53:11Z"
+    },
+    {
+      "name": "0.58",
+      "sha": "0b6bd4483827ca2454e4aed4c7bb2a9064aef681",
+      "date": "2022-04-01T17:08:07Z"
+    },
+    {
+      "name": "0.57",
+      "sha": "f97626327e53934ed447c229b5b6316ab597571e",
+      "date": "2022-03-06T17:12:32Z"
+    },
+    {
+      "name": "0.56",
+      "sha": "ed83d2c240cac6cecfe2e6dd78631d7222c8cc32",
+      "date": "2022-02-25T17:43:11Z"
+    },
+    {
+      "name": "0.55",
+      "sha": "284e92107cd62b108bad3183c9831145838b6225",
+      "date": "2022-01-16T21:00:12Z"
+    },
+    {
+      "name": "0.55-pre",
+      "sha": "2e6e45b18a4f390db144537a654292d620eda2b3",
+      "date": "2021-12-30T18:13:21Z"
+    },
+    {
+      "name": "0.53",
+      "sha": "7b9c5a3fcb7853f099e6f623666faff18058f7eb",
+      "date": "2021-11-10T17:57:26Z"
+    },
+    {
+      "name": "0.52",
+      "sha": "ee6ef0b8424edcbaf363600c3d75ccb2ac742ff7",
+      "date": "2021-10-30T19:43:09Z"
+    },
+    {
+      "name": "0.54",
+      "sha": "0d0b061b373dda86fff09988e422c1b7ba7d400e",
+      "date": "2021-12-14T20:14:13Z"
+    },
+    {
+      "name": "0.51",
+      "sha": "29919413439e5a57494bdcaa5bdd4344a781f208",
+      "date": "2021-10-20T17:17:15Z"
+    },
+    {
+      "name": "0.42",
+      "sha": "719d8d640003c7172c405f0442b385c2570a4283",
+      "date": "2021-07-29T18:55:28Z"
+    },
+    {
+      "name": "0.41",
+      "sha": "3d8133284e2719a7eb0c95f04a748801e861cc3c",
+      "date": "2021-06-22T17:44:45Z"
+    },
+    {
+      "name": "0.41-pre",
+      "sha": "37fba31d304e152f4c17ff9c258a44b90a419f56",
+      "date": "2021-06-16T09:15:56Z"
+    },
+    {
+      "name": "0.50",
+      "sha": "6679a145fc9e75fdd0674823973813e821fa526e",
+      "date": "2021-10-18T17:58:17Z"
+    },
+    {
+      "name": "0.40",
+      "sha": "1fcc2d4acfe191ebd61b44881071fcbf967617b8",
+      "date": "2021-06-08T19:39:51Z"
+    },
+    {
+      "name": "0.39",
+      "sha": "6d39ac124fd199185e9f07282be480db718e9b1b",
+      "date": "2021-05-22T08:26:08Z"
+    },
+    {
+      "name": "0.38",
+      "sha": "f50eed204a732947e4752bcea9eb72d5256999ba",
+      "date": "2021-05-14T07:10:25Z"
+    },
+    {
+      "name": "0.37",
+      "sha": "7674a9cc4b6f19ffeb4ff5457b1ab071b514ee84",
+      "date": "2021-03-20T21:18:13Z"
+    },
+    {
+      "name": "0.36",
+      "sha": "a8620463cb4cd777f1a2f18762d0577c565a50d5",
+      "date": "2021-02-26T12:25:47Z"
+    },
+    {
+      "name": "0.37-pre",
+      "sha": "87f9d66cb792757fe452de949eab96029d026bb6",
+      "date": "2021-03-14T08:52:22Z"
+    },
+    {
+      "name": "0.34",
+      "sha": "445cff9516ead9225ccf0b5bb14c19ad47b9373e",
+      "date": "2021-01-27T17:21:15Z"
+    },
+    {
+      "name": "0.35",
+      "sha": "a1c2cd110657e14872d7c011e4c63861f514f5bd",
+      "date": "2021-02-24T17:26:43Z"
+    },
+    {
+      "name": "0.33",
+      "sha": "04e67d058b186a011265126935331a8c6264966d",
+      "date": "2021-01-23T18:21:17Z"
+    },
+    {
+      "name": "0.33-pre",
+      "sha": "04e67d058b186a011265126935331a8c6264966d",
+      "date": "2021-01-23T18:21:17Z"
+    },
+    {
+      "name": "0.32",
+      "sha": "4d5f7bed7d12f06b002ecdb02d84a3315a93d7f7",
+      "date": "2021-01-17T08:49:12Z"
+    },
+    {
+      "name": "0.31",
+      "sha": "a63a80d46411c291373ad21fe7d4dc76b74ede4d",
+      "date": "2021-01-08T18:12:32Z"
+    },
+    {
+      "name": "0.30",
+      "sha": "313e87c102562445288e94f8ce1355fb1a828c0d",
+      "date": "2020-12-25T16:04:52Z"
+    },
+    {
+      "name": "0.29",
+      "sha": "313e87c102562445288e94f8ce1355fb1a828c0d",
+      "date": "2020-12-25T16:04:52Z"
+    },
+    {
+      "name": "0.28",
+      "sha": "3ef1665e6fae8b2c3f5770cd41df6e62a2e8222f",
+      "date": "2020-12-25T11:59:30Z"
+    },
+    {
+      "name": "0.27",
+      "sha": "5c33d818179551634cb86751835506c57988d557",
+      "date": "2020-12-20T12:25:01Z"
+    },
+    {
+      "name": "0.26",
+      "sha": "430df9749ccd94553d1cf977da233dbd9d154029",
+      "date": "2020-12-13T18:23:12Z"
+    },
+    {
+      "name": "0.25",
+      "sha": "c01abfac34664a5650a7255302e78e7c687d0fb1",
+      "date": "2020-11-23T20:01:13Z"
+    },
+    {
+      "name": "0.22",
+      "sha": "c01abfac34664a5650a7255302e78e7c687d0fb1",
+      "date": "2020-11-23T20:01:13Z"
+    },
+    {
+      "name": "0.20",
+      "sha": "136fa6269815b1155a1fa5804dcfd4701f15e651",
+      "date": "2020-10-18T19:33:52Z"
+    },
+    {
+      "name": "0.19",
+      "sha": "9b4ee24a0e3bc675b6e974cd456a378fe562c19f",
+      "date": "2020-10-08T19:14:06Z"
+    },
+    {
+      "name": "0.21",
+      "sha": "12a16c381b92acf2eff3d632b0df31149cd179a7",
+      "date": "2020-11-22T12:28:54Z"
+    },
+    {
+      "name": "0.18-pre",
+      "sha": "524939dd0af44c90d076d9315ca6a59a866b9350",
+      "date": "2020-08-28T14:18:44Z"
+    },
+    {
+      "name": "0.17",
+      "sha": "524939dd0af44c90d076d9315ca6a59a866b9350",
+      "date": "2020-08-28T14:18:44Z"
+    },
+    {
+      "name": "0.16",
+      "sha": "4e4829b6505bab2816c7d4dd3d36459992b60538",
+      "date": "2020-08-13T17:21:18Z"
+    },
+    {
+      "name": "0.15",
+      "sha": "3b6957299209f14e2023268219e41fc32d5ec184",
+      "date": "2020-07-10T20:06:36Z"
+    },
+    {
+      "name": "0.14",
+      "sha": "f2818b32b683cbf8a819d11395410bacea8eca00",
+      "date": "2020-05-30T07:38:05Z"
+    },
+    {
+      "name": "0.12",
+      "sha": "023862f8fad3d1d8300a8f43c191c33a7cacb4ee",
+      "date": "2020-04-25T08:35:05Z"
+    },
+    {
+      "name": "0.11",
+      "sha": "5cd4b8ae039c52453fc74fee7b5563c80c3b13e0",
+      "date": "2020-04-18T06:28:02Z"
+    },
+    {
+      "name": "0.10",
+      "sha": "a70f0a9d446332fc9041b7338aeb5269dc7d6a92",
+      "date": "2020-04-03T16:14:22Z"
+    },
+    {
+      "name": "0.9",
+      "sha": "82ac097854c152e609ea55e059ec6ae4ad1aba04",
+      "date": "2020-02-01T13:07:59Z"
+    },
+    {
+      "name": "0.8",
+      "sha": "e3fb01a2b380981e683ec42a86faf400260d951e",
+      "date": "2020-01-21T20:58:12Z"
+    },
+    {
+      "name": "0.6",
+      "sha": "cabab32e2f984758b5d47784206b6ff17f9c69ed",
+      "date": "2020-01-19T17:22:12Z"
+    },
+    {
+      "name": "0.5",
+      "sha": "487092e6d6a47b88f4472b217d9697ca2a2a8c27",
+      "date": "2020-01-16T16:17:19Z"
+    },
+    {
+      "name": "0.4",
+      "sha": "b0d922630f11e203bc89780e64284454d4d89857",
+      "date": "2019-11-30T20:28:16Z"
+    },
+    {
+      "name": "0.3",
+      "sha": "7a3651e5c2398a54b815a1d52dacf15d1527077f",
+      "date": "2019-11-10T20:38:00Z"
+    },
+    {
+      "name": "0.2",
+      "sha": "d8e54c71644bca53c74166ad6a3e8b3911e5811e",
+      "date": "2019-11-03T19:49:06Z"
+    },
+    {
+      "name": "0.1",
+      "sha": "6d9c85599d8354877ba57590effbe37db0db27aa",
+      "date": "2019-11-03T18:25:15Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "0.94",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "0.95",
+      "previous_release": "0.94",
+      "commits": [
+        {
+          "sha": "e381abd921e584c7c77353695f4f246d735feea2",
+          "author_date": "2025-07-22T21:16:47Z",
+          "message": "Update captcha instructions in HOMEASSISTANT.md\n\nI had trouble with the current instructions to find the correct link in dev tools. After seeing the instructions is https://github.com/bbernhard/signal-cli-rest-api/issues/706 I could easily get it to work. \r\n\r\nUpdating the instructions here per issue above, as this seems much more accessible / easy than trying to find this in dev tools. \r\n\r\ncc @wassong since you shared those in https://github.com/bbernhard/signal-cli-rest-api/issues/706 (thank you!)",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e381abd921e584c7c77353695f4f246d735feea2"
+        },
+        {
+          "sha": "3b55103e7bbd68c5dbb682f46d4169b5f243232b",
+          "author_date": "2025-07-30T20:39:10Z",
+          "message": "Merge pull request #727 from jakommo/patch-1\n\nUpdate captcha instructions in HOMEASSISTANT.md",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3b55103e7bbd68c5dbb682f46d4169b5f243232b"
+        },
+        {
+          "sha": "e87ff587626844060d2fe280bca58c177684c1c3",
+          "author_date": "2025-08-01T19:11:47Z",
+          "message": "fixed typo in error message\n\nsee #729",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e87ff587626844060d2fe280bca58c177684c1c3"
+        },
+        {
+          "sha": "3b7ade3dad546028103d7130890b95a6bffab3b4",
+          "author_date": "2025-08-06T20:46:02Z",
+          "message": "fixed bug in /v2/send request\n\n* added missing linkpreview description parameter\n\nsee #732",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3b7ade3dad546028103d7130890b95a6bffab3b4"
+        },
+        {
+          "sha": "ce5a95f94844e328c6dfb7fde805e0e47d39dc84",
+          "author_date": "2025-08-10T03:20:49Z",
+          "message": "update troubleshooting docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ce5a95f94844e328c6dfb7fde805e0e47d39dc84"
+        },
+        {
+          "sha": "9131096e6d3f8aa3ec276af48cb0845df2ba2bb0",
+          "author_date": "2025-08-10T08:38:14Z",
+          "message": "Merge pull request #733 from f2calv/f2calv/troubleshooting-update\n\nupdate troubleshooting docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9131096e6d3f8aa3ec276af48cb0845df2ba2bb0"
+        },
+        {
+          "sha": "72b4e2253b66e6ad1985f3241fcf90f1bff6cf68",
+          "author_date": "2025-08-11T22:05:23Z",
+          "message": "Allow the startup chown to be optional with SIGNAL_CLI_CHOWN_ON_STARTUP variable",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/72b4e2253b66e6ad1985f3241fcf90f1bff6cf68"
+        },
+        {
+          "sha": "f52f177a724610330ac2ba49d3ad3e5112c1edd0",
+          "author_date": "2025-08-17T20:55:06Z",
+          "message": "Merge pull request #735 from WeldFire/master\n\nAllow the startup chown to be optional",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/f52f177a724610330ac2ba49d3ad3e5112c1edd0"
+        },
+        {
+          "sha": "3e6437b8bc7197e3c4c3be02984b622a03f298ff",
+          "author_date": "2025-08-24T09:32:06Z",
+          "message": "added secured-signal-api to \"Third Party Apps\" Section",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3e6437b8bc7197e3c4c3be02984b622a03f298ff"
+        },
+        {
+          "sha": "5330e0dff5509f6448322ef9602224c595fec0a8",
+          "author_date": "2025-08-26T21:15:47Z",
+          "message": "fixed getContainerId() function\n\n* since switching to podman builds in the CI, the getContainerId()\n  function wasn't working anymore. As per default the hostname of the\n  container is the same as the container id, we use the GetHostname()\n  function to get the container id inside the container.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5330e0dff5509f6448322ef9602224c595fec0a8"
+        },
+        {
+          "sha": "221762b935dd20d521d56f6cabf45c421d717725",
+          "author_date": "2025-08-26T21:23:53Z",
+          "message": "Merge pull request #738 from CodeShellDev/master\n\nAdd Secured-Signal-API to Third Party Apps",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/221762b935dd20d521d56f6cabf45c421d717725"
+        },
+        {
+          "sha": "9325022e460163bcbf928d461ae912e11941a213",
+          "author_date": "2025-08-27T22:27:09Z",
+          "message": "Add message deletion endpoint",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9325022e460163bcbf928d461ae912e11941a213"
+        },
+        {
+          "sha": "bcb2100169356c1400d8489829fdd96ec35f39ab",
+          "author_date": "2025-08-27T22:32:10Z",
+          "message": "Fix comments for the RemoteDelete function",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/bcb2100169356c1400d8489829fdd96ec35f39ab"
+        },
+        {
+          "sha": "a93eed6e560de30539100e91002dfa3a4f0824b6",
+          "author_date": "2025-08-27T22:34:41Z",
+          "message": "Add extra error check after unmarshal",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a93eed6e560de30539100e91002dfa3a4f0824b6"
+        },
+        {
+          "sha": "6b3916e5970a53135a8941d0ad3130f03f5bb8b1",
+          "author_date": "2025-08-27T22:37:56Z",
+          "message": "Remove if statement",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6b3916e5970a53135a8941d0ad3130f03f5bb8b1"
+        },
+        {
+          "sha": "d25a454f39e8705e0eb666f57e6a3df19ca119f8",
+          "author_date": "2025-08-27T22:40:22Z",
+          "message": "Fix tab error",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d25a454f39e8705e0eb666f57e6a3df19ca119f8"
+        },
+        {
+          "sha": "f078e1a2aecb546aceb25091e417bb7d53f8c5e0",
+          "author_date": "2025-08-29T17:55:45Z",
+          "message": "Add documentation",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/f078e1a2aecb546aceb25091e417bb7d53f8c5e0"
+        },
+        {
+          "sha": "af3eadbbc0cc988d223926fc4f1a2e4c94355425",
+          "author_date": "2025-08-29T17:59:56Z",
+          "message": "Replace the handler from post to delete",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/af3eadbbc0cc988d223926fc4f1a2e4c94355425"
+        },
+        {
+          "sha": "3eb3db0a9fd9c87a091746a52cb6bfc5c339a32f",
+          "author_date": "2025-08-29T18:19:25Z",
+          "message": "docs: add contributing.md and additional instructions on building the docs.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3eb3db0a9fd9c87a091746a52cb6bfc5c339a32f"
+        },
+        {
+          "sha": "1cd6b3afcd244e01b8c8f4a91905b1a67cc24302",
+          "author_date": "2025-09-04T21:16:47Z",
+          "message": "Simplify dev environment setup instructions",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1cd6b3afcd244e01b8c8f4a91905b1a67cc24302"
+        },
+        {
+          "sha": "ae342a440390ab264d566261536462167831c16a",
+          "author_date": "2025-09-04T21:17:04Z",
+          "message": "Better wording in readme in docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ae342a440390ab264d566261536462167831c16a"
+        },
+        {
+          "sha": "7222b931aed26148440220b0f8d7757a524eeea9",
+          "author_date": "2025-09-08T12:35:11Z",
+          "message": "fixed bug in phone number verification\n\n* allow whitespaces in phone number\n\nsee #743",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7222b931aed26148440220b0f8d7757a524eeea9"
+        },
+        {
+          "sha": "cfc652dfbc07e97a91d3ff0038cd68012f374607",
+          "author_date": "2025-09-09T10:50:16Z",
+          "message": "Merge pull request #741 from Era-Dorta/contributing-readme\n\ndocs: add contributing.md and additional instructions on building the docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/cfc652dfbc07e97a91d3ff0038cd68012f374607"
+        },
+        {
+          "sha": "de2cb043fc83e07229518b51d9cafd3bd2815a2d",
+          "author_date": "2025-09-09T12:29:17Z",
+          "message": "fix: use getRecipientType instead of HasPrefix in RemoteDelete",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/de2cb043fc83e07229518b51d9cafd3bd2815a2d"
+        },
+        {
+          "sha": "3c2a8a2156ddd5126f1c467fc30ceaa2fa680422",
+          "author_date": "2025-09-10T20:18:06Z",
+          "message": "Merge pull request #740 from Era-Dorta/remote-delete\n\nAdd message deletion endpoint",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3c2a8a2156ddd5126f1c467fc30ceaa2fa680422"
+        },
+        {
+          "sha": "7c9e9ce04fc4985414120965d622fb876646b0a3",
+          "author_date": "2025-09-15T10:34:43Z",
+          "message": "extended groups POST/PUT request\n\n* added possibility to change permissions with the groups PUT request\n* added possibility to change the send messages permission when creating\n  a group with the POST request\n\nsee #746",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7c9e9ce04fc4985414120965d622fb876646b0a3"
+        },
+        {
+          "sha": "5000662557c030afc76a89c5e58f7d5904f73180",
+          "author_date": "2025-09-15T15:54:58Z",
+          "message": "updated signal-cli to v0.13.19",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5000662557c030afc76a89c5e58f7d5904f73180"
+        },
+        {
+          "sha": "3335d9be75dbf361d0f43ffcf7a0c5d94ef38cec",
+          "author_date": "2025-09-21T14:41:16Z",
+          "message": "update secured-signal-api Description",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3335d9be75dbf361d0f43ffcf7a0c5d94ef38cec"
+        },
+        {
+          "sha": "b6d3bba0f305fb2cf4e5966a0ba450281ecaf15e",
+          "author_date": "2025-09-21T14:47:50Z",
+          "message": "rename section",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b6d3bba0f305fb2cf4e5966a0ba450281ecaf15e"
+        },
+        {
+          "sha": "e17ba2fb12779863180545d1b59ee03969e1c74f",
+          "author_date": "2025-09-21T14:52:21Z",
+          "message": "Merge pull request #749 from CodeShellDev/master\n\nUpdate secured-signal-api Description",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e17ba2fb12779863180545d1b59ee03969e1c74f"
+        },
+        {
+          "sha": "3a2b77b31fde7b11b6367c48bc3477770c6bb2fe",
+          "author_date": "2025-09-27T17:13:43Z",
+          "message": "upgraded signal-cli to v0.13.20",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3a2b77b31fde7b11b6367c48bc3477770c6bb2fe"
+        },
+        {
+          "sha": "08cd2bd12ce00c08c2c8a1063a0f925cf3f171b5",
+          "author_date": "2025-09-30T20:31:10Z",
+          "message": "added two new endpoints\n\n* added endpoint to list a contact\n* added endpoint to get a contact's avatar",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/08cd2bd12ce00c08c2c8a1063a0f925cf3f171b5"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "0.96",
+      "previous_release": "0.95",
+      "commits": [
+        {
+          "sha": "d6488d6c8ef6d351b392fcecebba056e6a4bfb87",
+          "author_date": "2025-11-01T22:31:45Z",
+          "message": "fixed escaping of formatting characters\n\nsee #757",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d6488d6c8ef6d351b392fcecebba056e6a4bfb87"
+        },
+        {
+          "sha": "87ca449e8cb5532cf67d8c7ed812104187bbddde",
+          "author_date": "2025-11-02T21:24:42Z",
+          "message": "updated signal-cli to version 0.13.21",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/87ca449e8cb5532cf67d8c7ed812104187bbddde"
+        },
+        {
+          "sha": "b25692a6f24a2e471cfa6b04b4ef15f6ad09eb5a",
+          "author_date": "2025-11-02T22:07:26Z",
+          "message": "updated signal-cli-native version",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b25692a6f24a2e471cfa6b04b4ef15f6ad09eb5a"
+        },
+        {
+          "sha": "ec9cd56c0d65a7405ea46c2621db4da0d4c35e14",
+          "author_date": "2025-11-19T00:53:49Z",
+          "message": "Fix typo in HOMEASSISTANT.md",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ec9cd56c0d65a7405ea46c2621db4da0d4c35e14"
+        },
+        {
+          "sha": "565b0dbf860cb74681715c861c6f2e61372943c3",
+          "author_date": "2025-11-19T19:10:56Z",
+          "message": "Merge pull request #763 from emrikol/patch-1\n\nFix typo in HOMEASSISTANT.md",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/565b0dbf860cb74681715c861c6f2e61372943c3"
+        },
+        {
+          "sha": "b6f619b7dbd0b1238f35446ad124cd454c24ece4",
+          "author_date": "2025-11-20T02:01:57Z",
+          "message": "Bump golang.org/x/crypto from 0.36.0 to 0.45.0 in /src\n\nBumps [golang.org/x/crypto](https://github.com/golang/crypto) from 0.36.0 to 0.45.0.\n- [Commits](https://github.com/golang/crypto/compare/v0.36.0...v0.45.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/crypto\n  dependency-version: 0.45.0\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b6f619b7dbd0b1238f35446ad124cd454c24ece4"
+        },
+        {
+          "sha": "452d899f07fc8ee159d891131ca90db8933c225b",
+          "author_date": "2025-11-20T21:17:31Z",
+          "message": "Merge pull request #764 from bbernhard/dependabot/go_modules/src/golang.org/x/crypto-0.45.0\n\nBump golang.org/x/crypto from 0.36.0 to 0.45.0 in /src",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/452d899f07fc8ee159d891131ca90db8933c225b"
+        },
+        {
+          "sha": "c049764d3b47cf332adb561d3f7806e70c26e966",
+          "author_date": "2025-11-23T16:57:14Z",
+          "message": "updated signal-cli to v0.13.22",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c049764d3b47cf332adb561d3f7806e70c26e966"
+        },
+        {
+          "sha": "142a7c2eb6bf64db53ee105da078dc3767107dda",
+          "author_date": "2025-11-23T20:54:58Z",
+          "message": "avoid running out of disk space during docker image building\n\n* remove unnecessary data from base image to avoid running out\n  of disk space during docker image building.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/142a7c2eb6bf64db53ee105da078dc3767107dda"
+        },
+        {
+          "sha": "e41bec91a0bb95e6618523ce9e14933ec0bcbde8",
+          "author_date": "2025-11-23T22:27:20Z",
+          "message": "clean up free disk space",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e41bec91a0bb95e6618523ce9e14933ec0bcbde8"
+        },
+        {
+          "sha": "7da210906c67343dec629004bf9696b4030e7c12",
+          "author_date": "2025-11-23T22:30:40Z",
+          "message": "free up some disk space",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7da210906c67343dec629004bf9696b4030e7c12"
+        },
+        {
+          "sha": "8713741e949e4b88dede24d90e5ea6327d5acba8",
+          "author_date": "2025-11-24T17:10:12Z",
+          "message": "free up more disk space",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8713741e949e4b88dede24d90e5ea6327d5acba8"
+        },
+        {
+          "sha": "e0f4517f00ed3e86f29dc4a50f6cf4dc5f96c76e",
+          "author_date": "2025-11-24T18:21:30Z",
+          "message": "debugging: print out disk space",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e0f4517f00ed3e86f29dc4a50f6cf4dc5f96c76e"
+        },
+        {
+          "sha": "990a300ca74d80929157a2bfc7411349a531753d",
+          "author_date": "2025-11-24T18:27:47Z",
+          "message": "free up disk space in CI",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/990a300ca74d80929157a2bfc7411349a531753d"
+        },
+        {
+          "sha": "48ebe4f98c793f209e48b48580f61ef69a145448",
+          "author_date": "2025-11-24T18:30:13Z",
+          "message": "fixed syntax in YAML file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/48ebe4f98c793f209e48b48580f61ef69a145448"
+        },
+        {
+          "sha": "d42f6d04c50d23d8601bd2cc5973a45cd167cfe5",
+          "author_date": "2025-11-24T18:31:46Z",
+          "message": "fixed syntax error in YAML file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d42f6d04c50d23d8601bd2cc5973a45cd167cfe5"
+        },
+        {
+          "sha": "6325cb2fe475038cd3d3d917304b12bfe9466653",
+          "author_date": "2025-11-24T18:33:30Z",
+          "message": "fixed syntax error in YAML file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6325cb2fe475038cd3d3d917304b12bfe9466653"
+        },
+        {
+          "sha": "cbfc6b9e94816e2a796db3691fd3a1f4d5aedc01",
+          "author_date": "2025-11-24T19:29:33Z",
+          "message": "free up disk space",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/cbfc6b9e94816e2a796db3691fd3a1f4d5aedc01"
+        },
+        {
+          "sha": "79bab15541c800da05baff491de5bd2891173919",
+          "author_date": "2025-11-24T22:04:23Z",
+          "message": "free up more disk space",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/79bab15541c800da05baff491de5bd2891173919"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "0.97",
+      "previous_release": "0.96",
+      "commits": [
+        {
+          "sha": "4a2bf9182d2b33bdb18db691c46f1b008edc8f96",
+          "author_date": "2025-12-05T02:36:43Z",
+          "message": "Bump github.com/sirupsen/logrus from 1.9.0 to 1.9.1 in /src\n\nBumps [github.com/sirupsen/logrus](https://github.com/sirupsen/logrus) from 1.9.0 to 1.9.1.\n- [Release notes](https://github.com/sirupsen/logrus/releases)\n- [Changelog](https://github.com/sirupsen/logrus/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/sirupsen/logrus/compare/v1.9.0...v1.9.1)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/sirupsen/logrus\n  dependency-version: 1.9.1\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/4a2bf9182d2b33bdb18db691c46f1b008edc8f96"
+        },
+        {
+          "sha": "d102da4ba26c7399a850cda727bcd6c5ab2e967f",
+          "author_date": "2025-12-05T04:14:49Z",
+          "message": "Improve captcha documentation to provide example captcha string format\n\nSigned-off-by: Jason Trumpio <jason@trumpio.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d102da4ba26c7399a850cda727bcd6c5ab2e967f"
+        },
+        {
+          "sha": "9ea4407ac20b7daaa17759081aa9b6bea2464d0f",
+          "author_date": "2025-12-05T04:23:29Z",
+          "message": "Improve captcha documentation to provide example captcha string format\n\nSigned-off-by: Jason Trumpio <jason@trumpio.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9ea4407ac20b7daaa17759081aa9b6bea2464d0f"
+        },
+        {
+          "sha": "a7f531d17fd43e003b29651c229a31a3552edd12",
+          "author_date": "2025-12-05T04:25:42Z",
+          "message": "Improve captcha documentation to provide example captcha string format\n\nSigned-off-by: Jason Trumpio <jason@trumpio.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a7f531d17fd43e003b29651c229a31a3552edd12"
+        },
+        {
+          "sha": "c45b9059b53fcff06f84710bd07aac40e2365ed5",
+          "author_date": "2025-12-05T04:27:11Z",
+          "message": "Improve captcha documentation to provide example captcha string format\n\nSigned-off-by: Jason Trumpio <jason@trumpio.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c45b9059b53fcff06f84710bd07aac40e2365ed5"
+        },
+        {
+          "sha": "8a75633ca906d03eb66f12bd7a55b3715f765745",
+          "author_date": "2025-12-05T04:28:08Z",
+          "message": "Improve captcha documentation to provide example captcha string format\n\nSigned-off-by: Jason Trumpio <jason@trumpio.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8a75633ca906d03eb66f12bd7a55b3715f765745"
+        },
+        {
+          "sha": "0c081ec7cf9c39d5a4d355afa6a59bc0be0df40e",
+          "author_date": "2025-12-05T21:59:23Z",
+          "message": "Merge pull request #770 from jtrumpio/improve-captcha-documentation\n\nImprove captcha documentation",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/0c081ec7cf9c39d5a4d355afa6a59bc0be0df40e"
+        },
+        {
+          "sha": "57ebd2acb8d8648a7cd931dbfacc7f1cf5999291",
+          "author_date": "2025-12-05T22:00:51Z",
+          "message": "Merge pull request #769 from bbernhard/dependabot/go_modules/src/github.com/sirupsen/logrus-1.9.1\n\nBump github.com/sirupsen/logrus from 1.9.0 to 1.9.1 in /src",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/57ebd2acb8d8648a7cd931dbfacc7f1cf5999291"
+        },
+        {
+          "sha": "57141615675e7000c700ba1e5eb38ecb5c7d6486",
+          "author_date": "2025-12-08T21:38:50Z",
+          "message": "fixed bug in json-rpc mode\n\n* handle 'trust-new-identities' setting in json-rpc mode\n\nsee #771",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/57141615675e7000c700ba1e5eb38ecb5c7d6486"
+        },
+        {
+          "sha": "2e507699c53dd7b33545e99f8983f40e147bd409",
+          "author_date": "2026-01-08T15:46:13Z",
+          "message": "Changed the ListDevices endpoint to return the device id, created three new endpoints, one to return the device link to permit new device links without the qrcode, one to remove the linked devices and another to delete local-data",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2e507699c53dd7b33545e99f8983f40e147bd409"
+        },
+        {
+          "sha": "0650451a02e19befc66ddfc7c9aeaa1ebda730e8",
+          "author_date": "2026-01-09T20:10:54Z",
+          "message": "Merge pull request #772 from Kamaradas/master\n\nNew/changes endpoints for linking devices",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/0650451a02e19befc66ddfc7c9aeaa1ebda730e8"
+        },
+        {
+          "sha": "354df7472c7d86acd0d21a4a977ed39c3cd2549e",
+          "author_date": "2026-01-13T21:21:20Z",
+          "message": "implemented unregister in json-rpc mode\n\nsee #774",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/354df7472c7d86acd0d21a4a977ed39c3cd2549e"
+        },
+        {
+          "sha": "e5e21518a5b0a1898e3f47334a76348f11f1a343",
+          "author_date": "2026-01-13T21:23:02Z",
+          "message": "reformatted code with gofmt",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e5e21518a5b0a1898e3f47334a76348f11f1a343"
+        },
+        {
+          "sha": "7711ad5503f8cee37fac0170f0b11f20b24006e4",
+          "author_date": "2026-01-24T16:37:20Z",
+          "message": "added REST API endpoints for Signal Polls\n\nsee #765",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7711ad5503f8cee37fac0170f0b11f20b24006e4"
+        },
+        {
+          "sha": "43b1704e66474d7b6e4cdb43efeb2f5e9ee73fa1",
+          "author_date": "2026-01-24T19:56:42Z",
+          "message": "updated signal-cli to v0.13.23",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/43b1704e66474d7b6e4cdb43efeb2f5e9ee73fa1"
+        },
+        {
+          "sha": "82d88c353a4305bb9467583c9fdfd64e2b8845f4",
+          "author_date": "2026-01-24T23:04:30Z",
+          "message": "fixed file location",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/82d88c353a4305bb9467583c9fdfd64e2b8845f4"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "0.98",
+      "previous_release": "0.97",
+      "commits": [
+        {
+          "sha": "cdb7d0bf9723ca2514a3bc29b384f6052263b4d3",
+          "author_date": "2026-02-06T18:48:58Z",
+          "message": "updated signal-cli to v0.13.24",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/cdb7d0bf9723ca2514a3bc29b384f6052263b4d3"
+        },
+        {
+          "sha": "23c53382c2f9e6ff9cf958fec82e5c9ba7db13ed",
+          "author_date": "2026-02-06T23:15:21Z",
+          "message": "return group permissions in groups request\n\nsee #781",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/23c53382c2f9e6ff9cf958fec82e5c9ba7db13ed"
+        },
+        {
+          "sha": "ef302dbdc36c271f8d36e52c37beb903be83b966",
+          "author_date": "2026-02-10T16:12:27Z",
+          "message": "docs: add signalbot-org as maintainer of signalbot",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ef302dbdc36c271f8d36e52c37beb903be83b966"
+        },
+        {
+          "sha": "92a65ec78133be11482868a8e39631d41d8c8fec",
+          "author_date": "2026-02-10T22:07:04Z",
+          "message": "Merge pull request #784 from Era-Dorta/signalbot-url-update\n\ndocs: add signalbot-org as maintainer of signalbot",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/92a65ec78133be11482868a8e39631d41d8c8fec"
+        },
+        {
+          "sha": "379ff16ca66ff949ad57294dd7e04ff159a65f4c",
+          "author_date": "2026-02-12T03:40:20Z",
+          "message": "direct uuid contact search",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/379ff16ca66ff949ad57294dd7e04ff159a65f4c"
+        },
+        {
+          "sha": "6ec6e198d7aad4672ec9072de2fcc5decbe10efe",
+          "author_date": "2026-02-12T21:36:42Z",
+          "message": "Adds --all-recipient handling for ListContact endpoints",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6ec6e198d7aad4672ec9072de2fcc5decbe10efe"
+        },
+        {
+          "sha": "5fcaa2ca2ca6a65812e8d832eaffc4a300ab5fa1",
+          "author_date": "2026-02-12T21:51:21Z",
+          "message": "type cleanup, fix typo",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5fcaa2ca2ca6a65812e8d832eaffc4a300ab5fa1"
+        },
+        {
+          "sha": "eece5f4e925c5cdd04272aeca6ad43e2161114af",
+          "author_date": "2026-02-13T03:52:22Z",
+          "message": "remove ListContact, extended ListContacts to accept uuid",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/eece5f4e925c5cdd04272aeca6ad43e2161114af"
+        },
+        {
+          "sha": "59f9cd3140009b14364975a41c165eb3920be5fe",
+          "author_date": "2026-02-13T04:00:42Z",
+          "message": "revert moving list contact types around",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/59f9cd3140009b14364975a41c165eb3920be5fe"
+        },
+        {
+          "sha": "bdaf55a68ff66b8dd02ae6420a244650a355af17",
+          "author_date": "2026-02-13T21:32:22Z",
+          "message": "Merge pull request #787 from dangnabit/improved_contacts_search\n\nListContact Improvements",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/bdaf55a68ff66b8dd02ae6420a244650a355af17"
+        },
+        {
+          "sha": "6c5dcdad2e7561118f7713369b037c61d3b8a277",
+          "author_date": "2026-02-17T21:01:30Z",
+          "message": "fixed error handling in updateGroupMembers function\n\nsee #790",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6c5dcdad2e7561118f7713369b037c61d3b8a277"
+        },
+        {
+          "sha": "5d5fa64f01601538f6c410695f633302ea5c933f",
+          "author_date": "2026-02-17T21:04:07Z",
+          "message": "code cleanup: removed unused variable",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5d5fa64f01601538f6c410695f633302ea5c933f"
+        },
+        {
+          "sha": "9a24992b94bed600a0040495a5e4a74b5339d925",
+          "author_date": "2026-02-17T22:49:55Z",
+          "message": "switch back to GraalVM v21.0.0\n\n* accidentally switched to early to GraalVM 25.0.0 -\n  signal-cli v0.13.24 requires still GraalVM v21.0.0.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9a24992b94bed600a0040495a5e4a74b5339d925"
+        },
+        {
+          "sha": "8533043ba2b4f03510cfc3ee9839140ec21c4fe2",
+          "author_date": "2026-02-17T22:51:02Z",
+          "message": "updated signal-cli-native package",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8533043ba2b4f03510cfc3ee9839140ec21c4fe2"
+        },
+        {
+          "sha": "1129e5a7bec43c90dc0631b8090a7ea590bcf082",
+          "author_date": "2026-02-22T21:11:46Z",
+          "message": "fixed error handling in updateGroupAdmins function\n\nsee #790",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1129e5a7bec43c90dc0631b8090a7ea590bcf082"
+        },
+        {
+          "sha": "3a36a04b09e5876698e3b09b3c6381184c3bbd76",
+          "author_date": "2026-02-23T00:00:15Z",
+          "message": "Swap PendingRequests and PendingInvites assignments\n\nFix for https://github.com/bbernhard/signal-cli-rest-api/issues/792",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3a36a04b09e5876698e3b09b3c6381184c3bbd76"
+        },
+        {
+          "sha": "bd9e6487396c964d8aabbc06119dc98ee489aa76",
+          "author_date": "2026-03-01T21:37:52Z",
+          "message": "updated signal-cli to v0.14.0",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/bd9e6487396c964d8aabbc06119dc98ee489aa76"
+        },
+        {
+          "sha": "8d13f5f3836d5fd5fcdeda57f3a17c2e81f2426b",
+          "author_date": "2026-03-02T16:38:47Z",
+          "message": "updated signal-cli-native version",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8d13f5f3836d5fd5fcdeda57f3a17c2e81f2426b"
+        },
+        {
+          "sha": "a9c367a5b19c536f362ce01cf646ecdbdc2b53e5",
+          "author_date": "2026-03-03T20:16:20Z",
+          "message": "updated golang buildcontainer",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a9c367a5b19c536f362ce01cf646ecdbdc2b53e5"
+        },
+        {
+          "sha": "d080e8d478dd0e74431279f8fc97a11305dd4699",
+          "author_date": "2026-03-03T20:25:24Z",
+          "message": "Merge pull request #793 from revilo951/master\n\nSwap PendingRequests and PendingInvites assignments",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d080e8d478dd0e74431279f8fc97a11305dd4699"
+        },
+        {
+          "sha": "9e5d73b5c03980f681a740fe330660d922ca37db",
+          "author_date": "2026-03-03T21:07:33Z",
+          "message": "temporarily switch back to signal-cli-native v0.13.24",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9e5d73b5c03980f681a740fe330660d922ca37db"
+        },
+        {
+          "sha": "1ea89705d5db1af62b2f8f404230eb5c03c7e645",
+          "author_date": "2026-03-04T15:33:45Z",
+          "message": "updated signal-cli-native to v0.14.0",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1ea89705d5db1af62b2f8f404230eb5c03c7e645"
+        },
+        {
+          "sha": "dd6d7636180f95758c861b6044651a9e0495d71b",
+          "author_date": "2026-03-04T16:55:31Z",
+          "message": "switch back to old buildcontainer image",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/dd6d7636180f95758c861b6044651a9e0495d71b"
+        },
+        {
+          "sha": "6257fa754d0f986ab45774e8b3c42e8c84043e56",
+          "author_date": "2026-03-04T19:15:18Z",
+          "message": "updated buildcontainer to golang:1.26-trixie",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6257fa754d0f986ab45774e8b3c42e8c84043e56"
+        },
+        {
+          "sha": "ed3626fa77db5929d8234a94492046ca7d828cb5",
+          "author_date": "2026-03-04T20:36:34Z",
+          "message": "removed \"apt-key add\"\n\n* \"apt-key add\" was removed from Debian, since it was insecure.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ed3626fa77db5929d8234a94492046ca7d828cb5"
+        },
+        {
+          "sha": "af18c7aea86ec48c53bdf2e4a3ec54193a71d29a",
+          "author_date": "2026-03-05T19:41:17Z",
+          "message": "switched to signal-cli daemon mode\n\n* this gets rid off the ugly netcat workaround and should improve\n  the general stability of the connection to the signal-cli binary\n  in json-rpc mode.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/af18c7aea86ec48c53bdf2e4a3ec54193a71d29a"
+        },
+        {
+          "sha": "c7cb9ab13e49913ff0b0490aa27a78cd9607cd96",
+          "author_date": "2026-03-05T19:43:22Z",
+          "message": "improved json-rpc reconnection logic\n\n* when the connection the signal-cli daemon is lost in json-rpc mode,\n  the open connection will be closed and a new connection attempt will\n  be made. If after 15 connection attempts we are unable to connect to\n  the signal-cli daemon, we give up and abort.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c7cb9ab13e49913ff0b0490aa27a78cd9607cd96"
+        },
+        {
+          "sha": "af34a0881c5ae4efa727e4389251305508ab6a57",
+          "author_date": "2026-03-05T19:50:42Z",
+          "message": "fixed small bug in json-rpc reconnect mechanism\n\n* after we successfully reconnected, wait for new data",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/af34a0881c5ae4efa727e4389251305508ab6a57"
+        },
+        {
+          "sha": "e3d503c746ebf63d8d65d29037ec9bb1a39fc43c",
+          "author_date": "2026-03-06T14:13:13Z",
+          "message": "Mention `LOG_LEVEL` environment variable in debug docs\n\nThis updates the debug docs to mention the `LOG_LEVEL` environment\nvariable.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e3d503c746ebf63d8d65d29037ec9bb1a39fc43c"
+        },
+        {
+          "sha": "884582a71e29f45a5fc4c57b1dc11f5c9eceb45c",
+          "author_date": "2026-03-06T16:38:45Z",
+          "message": "Merge pull request #807 from EvanHahn/debug-log-level-env-variable-docs\n\nMention `LOG_LEVEL` environment variable in debug docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/884582a71e29f45a5fc4c57b1dc11f5c9eceb45c"
+        },
+        {
+          "sha": "00bbfca878a82192fc73290e4e582d80b4fb05ca",
+          "author_date": "2026-03-07T12:35:13Z",
+          "message": "updated signal-cli-native to 0.14.0+5",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/00bbfca878a82192fc73290e4e582d80b4fb05ca"
+        },
+        {
+          "sha": "ddc5aa55df34229f7cc2c452275ef3014b820361",
+          "author_date": "2026-03-07T12:35:42Z",
+          "message": "remove netcat-openbsd\n\n* not needed anymore",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ddc5aa55df34229f7cc2c452275ef3014b820361"
+        },
+        {
+          "sha": "877bc9e8455461f557eab9cd18bd9c5b162238a9",
+          "author_date": "2026-03-07T15:53:27Z",
+          "message": "remove accidental commit",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/877bc9e8455461f557eab9cd18bd9c5b162238a9"
+        },
+        {
+          "sha": "4fb1be665729cfee524a5786a4af783adbc4d741",
+          "author_date": "2026-03-07T20:17:45Z",
+          "message": "removed fifo pathname from json-rpc config\n\n* not needed anymore",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/4fb1be665729cfee524a5786a4af783adbc4d741"
+        },
+        {
+          "sha": "2760fe0b70279e9028cfacee18b1108079f6202c",
+          "author_date": "2026-03-07T21:52:26Z",
+          "message": "add --ignore-avatars and --ignore-stickers support\n\nExpose the new signal-cli v0.14.0 --ignore-avatars and --ignore-stickers\nflags across all modes:\n\n* JSON-RPC mode: JSON_RPC_IGNORE_AVATARS and JSON_RPC_IGNORE_STICKERS\n  environment variables\n* Normal/Native mode: ignore_avatars and ignore_stickers query parameters\n  on the /v1/receive endpoint\n* Auto-receive scheduler: AUTO_RECEIVE_SCHEDULE_IGNORE_AVATARS and\n  AUTO_RECEIVE_SCHEDULE_IGNORE_STICKERS environment variables\n\nFollows the existing pattern of --ignore-attachments and --ignore-stories.\n\nRefs #776, #723\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2760fe0b70279e9028cfacee18b1108079f6202c"
+        },
+        {
+          "sha": "d7ffe54883dc4a26a082788c498cdcbeb83b830b",
+          "author_date": "2026-03-07T21:58:57Z",
+          "message": "removed debug logging",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d7ffe54883dc4a26a082788c498cdcbeb83b830b"
+        },
+        {
+          "sha": "05235bd7aec6cc528d091f261d2a5c572e3680ab",
+          "author_date": "2026-03-07T22:01:40Z",
+          "message": "fixed docker-compose.yml\n\n* removed accidental debug commit",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/05235bd7aec6cc528d091f261d2a5c572e3680ab"
+        },
+        {
+          "sha": "fcc62a7fe7dad6686d8f766b91bebcd0e2ba7f86",
+          "author_date": "2026-03-07T22:17:01Z",
+          "message": "Merge branch 'master' into feature/ignore-avatars-stickers",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/fcc62a7fe7dad6686d8f766b91bebcd0e2ba7f86"
+        },
+        {
+          "sha": "76511ae14f15bcbbe0f55d4683c5003bd14ddc1f",
+          "author_date": "2026-03-07T22:17:23Z",
+          "message": "Merge pull request #809 from bexelbie/feature/ignore-avatars-stickers\n\nAdd --ignore-avatars and --ignore-stickers support",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/76511ae14f15bcbbe0f55d4683c5003bd14ddc1f"
+        },
+        {
+          "sha": "a15e6ef409fc6551e904b85cf86992ace6dbdeaa",
+          "author_date": "2026-03-08T16:03:47Z",
+          "message": "updated signal-cli to v0.14.1",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a15e6ef409fc6551e904b85cf86992ace6dbdeaa"
+        },
+        {
+          "sha": "d11faf371431acfe5643eeeff02243f4b0ea6b60",
+          "author_date": "2026-03-08T16:43:24Z",
+          "message": "updated signal-cli-native to v0.14.1+1",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d11faf371431acfe5643eeeff02243f4b0ea6b60"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "0.99",
+      "previous_release": "0.98",
+      "commits": [
+        {
+          "sha": "5317ba9362786ad3d10ff96ef785966682102cd4",
+          "author_date": "2026-02-12T17:56:56Z",
+          "message": "update type of secured-signal-api => API Gateway",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5317ba9362786ad3d10ff96ef785966682102cd4"
+        },
+        {
+          "sha": "44ce4fe83d964f39d6677fa46186bc1126fd069c",
+          "author_date": "2026-03-13T20:18:28Z",
+          "message": "added query parameter 'use_only_uuid_as_identifier' to group(s) GET endpoint\n\nsee #790",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/44ce4fe83d964f39d6677fa46186bc1126fd069c"
+        },
+        {
+          "sha": "baca954dccc390aa1ecbba17ddd18dc97eff24b2",
+          "author_date": "2026-03-13T20:24:15Z",
+          "message": "updated swagger documentation",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/baca954dccc390aa1ecbba17ddd18dc97eff24b2"
+        },
+        {
+          "sha": "eeacb488ad7157b6c515f807a9b28f22517ce09c",
+          "author_date": "2026-03-13T21:42:36Z",
+          "message": "updated signal-cli-native version",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/eeacb488ad7157b6c515f807a9b28f22517ce09c"
+        },
+        {
+          "sha": "07260c081190b1565cc41ab99fbb8c4526821de7",
+          "author_date": "2026-03-14T14:54:49Z",
+          "message": "fixed bug in json-rpc webhook\n\n* only post messages that were received via 'receive'\n\nsee #813",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/07260c081190b1565cc41ab99fbb8c4526821de7"
+        },
+        {
+          "sha": "5435b12e810cf16e51a2b3123f32a9906a54cd9d",
+          "author_date": "2026-03-19T16:24:30Z",
+          "message": "Revert \"added query parameter 'use_only_uuid_as_identifier' to group(s) GET endpoint\"\n\nThis reverts commit 44ce4fe83d964f39d6677fa46186bc1126fd069c.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5435b12e810cf16e51a2b3123f32a9906a54cd9d"
+        },
+        {
+          "sha": "d45b906aa9d10d6d7fb50ebb76daf023f66b80bf",
+          "author_date": "2026-03-21T18:48:10Z",
+          "message": "regenerated swagger documentation",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d45b906aa9d10d6d7fb50ebb76daf023f66b80bf"
+        },
+        {
+          "sha": "f142e8089c1d2386070f97e2bbe462c3e0e2e0b9",
+          "author_date": "2026-03-21T18:49:26Z",
+          "message": "added new json-rpc-native mode",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/f142e8089c1d2386070f97e2bbe462c3e0e2e0b9"
+        },
+        {
+          "sha": "6ca5ff1aeeb12fb6a1be98977e8ea7fff435b669",
+          "author_date": "2026-03-21T20:38:49Z",
+          "message": "added expand query parameter to /groups endpoints\n\nsee #790",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6ca5ff1aeeb12fb6a1be98977e8ea7fff435b669"
+        },
+        {
+          "sha": "5c6fd1494483ea87bf550e4cf74ac14bff1d63df",
+          "author_date": "2026-03-22T21:18:16Z",
+          "message": "improved error handling in jsonrpc2-helper",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5c6fd1494483ea87bf550e4cf74ac14bff1d63df"
+        },
+        {
+          "sha": "ef16efca123d28b61d01c8e98184764f88551b1e",
+          "author_date": "2026-03-27T20:05:35Z",
+          "message": "Merge pull request #786 from CodeShellDev/patch-1\n\nUpdate secured-signal-api (API Gateway)",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ef16efca123d28b61d01c8e98184764f88551b1e"
+        },
+        {
+          "sha": "7687c5240b2c7aed8936d227f497c1a02f499bd4",
+          "author_date": "2026-03-27T20:15:17Z",
+          "message": "added API endpoints for pinning/unpinning messages in groups\n\nsee #820",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7687c5240b2c7aed8936d227f497c1a02f499bd4"
+        },
+        {
+          "sha": "eb345422162c07c79a2549dacaf1b6b292f23768",
+          "author_date": "2026-04-01T20:45:22Z",
+          "message": "increased timeout to account for slow startup on slow machines",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/eb345422162c07c79a2549dacaf1b6b292f23768"
+        },
+        {
+          "sha": "8345672499eaf9435002d2f50040b88adab1a9f6",
+          "author_date": "2026-04-04T19:08:51Z",
+          "message": "updated signal-cli to v0.14.2",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8345672499eaf9435002d2f50040b88adab1a9f6"
+        },
+        {
+          "sha": "d1d8ddc71194c7d4ed755549df2749da773fa326",
+          "author_date": "2026-04-04T19:14:48Z",
+          "message": "updated cross build instructions",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d1d8ddc71194c7d4ed755549df2749da773fa326"
+        },
+        {
+          "sha": "7a9b9919ef27f52a915f9c54529e9c265e70d949",
+          "author_date": "2026-04-04T19:36:01Z",
+          "message": "updated signal-cli-native.patch",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7a9b9919ef27f52a915f9c54529e9c265e70d949"
+        },
+        {
+          "sha": "40f299deff65c4eb7080d861ba17473cfde7abb5",
+          "author_date": "2026-04-06T14:57:14Z",
+          "message": "fix: add omitempty and generate swagger json with required fields",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/40f299deff65c4eb7080d861ba17473cfde7abb5"
+        },
+        {
+          "sha": "4e541848e24ad7fd39398d6f2701d6215d428856",
+          "author_date": "2026-04-06T14:57:57Z",
+          "message": "docs: regenerated docs with `required` fields",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/4e541848e24ad7fd39398d6f2701d6215d428856"
+        },
+        {
+          "sha": "87ab2bb398ee910268563e2014c503f0326f7640",
+          "author_date": "2026-04-06T15:05:45Z",
+          "message": "refactor: split Reaction in two classes to mark the Reaction field as optional",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/87ab2bb398ee910268563e2014c503f0326f7640"
+        },
+        {
+          "sha": "b51505c8d978f39fcb35117465ec6349e75b7ae0",
+          "author_date": "2026-04-06T15:35:45Z",
+          "message": "Better formatting for the docs Readme instructions",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b51505c8d978f39fcb35117465ec6349e75b7ae0"
+        },
+        {
+          "sha": "3dd0001a32d4bb94aee9815409a9142836ae0b1d",
+          "author_date": "2026-04-06T16:15:06Z",
+          "message": "Set docs version dynamically.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3dd0001a32d4bb94aee9815409a9142836ae0b1d"
+        },
+        {
+          "sha": "b3ba748dd380a0370eb254b28a9ff227680df4ef",
+          "author_date": "2026-04-06T19:05:52Z",
+          "message": "Merge pull request #826 from Gara-Dorta/add-required-to-json-schema\n\nAdd required to json schema",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b3ba748dd380a0370eb254b28a9ff227680df4ef"
+        },
+        {
+          "sha": "bc0ea66c041637b3e599302eb8c9a0abb2b2e21c",
+          "author_date": "2026-04-06T19:07:44Z",
+          "message": "Merge pull request #830 from Gara-Dorta/docs-version\n\nSet docs version dynamically.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/bc0ea66c041637b3e599302eb8c9a0abb2b2e21c"
+        },
+        {
+          "sha": "2911bc363220f041b0adc26972455c7f5d1dae78",
+          "author_date": "2026-04-06T19:26:17Z",
+          "message": "Merge branch 'master' into readme-docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2911bc363220f041b0adc26972455c7f5d1dae78"
+        },
+        {
+          "sha": "33829b2fa5986c729e46112af8e5f13b1564180b",
+          "author_date": "2026-04-06T19:29:09Z",
+          "message": "Merge pull request #829 from Gara-Dorta/readme-docs\n\nBetter formatting for the docs Readme instructions",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/33829b2fa5986c729e46112af8e5f13b1564180b"
+        },
+        {
+          "sha": "e46b1c9ea73762b6cc42777c26380445646ab30b",
+          "author_date": "2026-04-06T19:34:31Z",
+          "message": "Merge branch 'master' into split-reaction-request-class",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e46b1c9ea73762b6cc42777c26380445646ab30b"
+        },
+        {
+          "sha": "a01c2a61faeada0c3b72e8d4e666179411387095",
+          "author_date": "2026-04-07T13:12:57Z",
+          "message": "fix: resolve Go variable shadowing that silently swallows errors in JSON-RPC mode\n\n24 functions in client.go use 'jsonRpc2Client, err :=' inside if blocks\nwhere 'var err error' is already declared at function scope. The := creates\na new block-scoped err that shadows the outer one, causing 15 functions to\nsilently return nil instead of the actual error in JSON-RPC mode.\n\nFixes #506",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a01c2a61faeada0c3b72e8d4e666179411387095"
+        },
+        {
+          "sha": "fc99aba2f4e3bb3204535791e093674d5acf75c1",
+          "author_date": "2026-04-07T17:51:54Z",
+          "message": "Merge pull request #831 from philljolly/fix/jsonrpc-variable-shadowing\n\nfix: resolve Go variable shadowing that silently swallows errors in JSON-RPC mode",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/fc99aba2f4e3bb3204535791e093674d5acf75c1"
+        },
+        {
+          "sha": "2a776618e9a7ecaf8eb58110075d245f6ea74fda",
+          "author_date": "2026-04-07T17:53:41Z",
+          "message": "Merge pull request #827 from Gara-Dorta/split-reaction-request-class\n\nSplit reaction request class",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2a776618e9a7ecaf8eb58110075d245f6ea74fda"
+        },
+        {
+          "sha": "5a883826ae492769297bd0bcdf2aabdc446a0bc9",
+          "author_date": "2026-04-06T15:08:57Z",
+          "message": "refactor: add missing checks on required fields",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5a883826ae492769297bd0bcdf2aabdc446a0bc9"
+        },
+        {
+          "sha": "59d6912f21913d3b93268c5743a0c2dbb2656bfb",
+          "author_date": "2026-04-08T17:26:42Z",
+          "message": "Mark name and members as optional fields in CreateGroupRequest",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/59d6912f21913d3b93268c5743a0c2dbb2656bfb"
+        },
+        {
+          "sha": "2838e1f879ff3641a3ef1f25a6466417756bbfd8",
+          "author_date": "2026-04-09T20:18:55Z",
+          "message": "Merge pull request #828 from Gara-Dorta/additional-api-checks\n\nrefactor: add missing checks on required fields",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2838e1f879ff3641a3ef1f25a6466417756bbfd8"
+        },
+        {
+          "sha": "f159947e07f8aed075f2060e65fcc74d68d8c027",
+          "author_date": "2026-04-09T20:48:04Z",
+          "message": "Merge pull request #833 from Gara-Dorta/optional-group-creation-fields\n\nMark name and members as optional fields in CreateGroupRequest",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/f159947e07f8aed075f2060e65fcc74d68d8c027"
+        },
+        {
+          "sha": "8b8614bb18b766540030989ce62f6f19fce20beb",
+          "author_date": "2026-04-16T20:00:50Z",
+          "message": "updated signal-cli-native to latest version",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8b8614bb18b766540030989ce62f6f19fce20beb"
+        },
+        {
+          "sha": "1b1873ce17d625ac857011fcdb69c2a247c3edcd",
+          "author_date": "2026-04-19T19:52:44Z",
+          "message": "add json-rpc-native mode to issue template",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1b1873ce17d625ac857011fcdb69c2a247c3edcd"
+        },
+        {
+          "sha": "40232de0d0c4059c7594b1ae7bb29481176502b1",
+          "author_date": "2026-04-20T21:33:19Z",
+          "message": "handle InvalidTransportModeException error\n\nsee #837",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/40232de0d0c4059c7594b1ae7bb29481176502b1"
+        },
+        {
+          "sha": "246ebfd4e68b7e53ccdf6fe7b6c10f3cb7bbcec2",
+          "author_date": "2026-04-23T20:14:20Z",
+          "message": "updated signal-cli to v0.14.3",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/246ebfd4e68b7e53ccdf6fe7b6c10f3cb7bbcec2"
+        },
+        {
+          "sha": "e19dc961fd74003b733f841f708bd17c795afadb",
+          "author_date": "2026-04-23T21:10:18Z",
+          "message": "updated signal-cli-native.patch",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e19dc961fd74003b733f841f708bd17c795afadb"
+        },
+        {
+          "sha": "97197f1fbec15544edb8a7477819818db2ee98a3",
+          "author_date": "2026-04-24T17:31:57Z",
+          "message": "updated signal-cli-native version",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/97197f1fbec15544edb8a7477819818db2ee98a3"
+        },
+        {
+          "sha": "e8a80ef89610b34fb4cebd80a62635bd99b44a94",
+          "author_date": "2026-04-25T20:33:47Z",
+          "message": "fixed signal-cli-native version",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e8a80ef89610b34fb4cebd80a62635bd99b44a94"
+        },
+        {
+          "sha": "52e058eb0622019d088b61b1d6ecc64860476cda",
+          "author_date": "2026-04-25T21:15:31Z",
+          "message": "temporarily fix build",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/52e058eb0622019d088b61b1d6ecc64860476cda"
+        },
+        {
+          "sha": "184231020c6b23ebb31e05d6732dc819987d1c84",
+          "author_date": "2026-04-26T21:54:22Z",
+          "message": "changed source for libsignal-client\n\n* use github actions builds instead of precompiled shared objects",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/184231020c6b23ebb31e05d6732dc819987d1c84"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "0.100",
+      "previous_release": "0.99",
+      "commits": [
+        {
+          "sha": "252389efbe7222185c9b2b23d5cfa2c11d2f6717",
+          "author_date": "2026-04-19T09:26:49Z",
+          "message": "Pin dependencies",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/252389efbe7222185c9b2b23d5cfa2c11d2f6717"
+        },
+        {
+          "sha": "e0af0091c94635f229417d5b45a2ac1817d5872e",
+          "author_date": "2026-04-19T20:40:42Z",
+          "message": "Add receive v1 json schemas to swagger\n\nThis is done with a custom script to embed the schemas from signal-cli into the docs.go file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e0af0091c94635f229417d5b45a2ac1817d5872e"
+        },
+        {
+          "sha": "e712494d7f36f3afd49dba3fed0ab41c224e3bfd",
+          "author_date": "2026-04-19T22:20:37Z",
+          "message": "Only build docs on x86_64",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e712494d7f36f3afd49dba3fed0ab41c224e3bfd"
+        },
+        {
+          "sha": "0f2c12f28ee5af6ae1a8f40d26599357ee01fbc6",
+          "author_date": "2026-04-19T22:21:33Z",
+          "message": "Use tabs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/0f2c12f28ee5af6ae1a8f40d26599357ee01fbc6"
+        },
+        {
+          "sha": "e2523b102c2dd035c09846f936f83faf29c92cfe",
+          "author_date": "2026-05-02T20:04:49Z",
+          "message": "Merge pull request #838 from ildyria/pin-dependencies\n\nPin dependencies",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e2523b102c2dd035c09846f936f83faf29c92cfe"
+        },
+        {
+          "sha": "881e9203c1cec2f0cbdb25978b7242fe5cee8c9f",
+          "author_date": "2026-05-02T20:54:44Z",
+          "message": "switch back to apt-download for arm64 package",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/881e9203c1cec2f0cbdb25978b7242fe5cee8c9f"
+        },
+        {
+          "sha": "09252b4b87197077dad56a1478741bcca3ada367",
+          "author_date": "2026-05-04T11:10:18Z",
+          "message": "Merge branch 'master' into receive-swagger",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/09252b4b87197077dad56a1478741bcca3ada367"
+        },
+        {
+          "sha": "0a7c53a10a7672f90cc47fbe11cd41ad231585f4",
+          "author_date": "2026-05-04T11:50:49Z",
+          "message": "fix: docs paths in docker build",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/0a7c53a10a7672f90cc47fbe11cd41ad231585f4"
+        },
+        {
+          "sha": "cb5e64a6d59f750b81a5f1c7b179c34d0b2e2e77",
+          "author_date": "2026-05-04T12:00:45Z",
+          "message": "Add the schemas before building the binary",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/cb5e64a6d59f750b81a5f1c7b179c34d0b2e2e77"
+        },
+        {
+          "sha": "2ac55eec07166806e196285074a415d50091be28",
+          "author_date": "2026-05-04T12:02:51Z",
+          "message": "Split comments in docker build",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2ac55eec07166806e196285074a415d50091be28"
+        },
+        {
+          "sha": "eda99213a7ff163867645a233ab857c3a2fcdfd5",
+          "author_date": "2026-05-04T12:36:25Z",
+          "message": "fix: remove swagger.json and swagger.yaml files",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/eda99213a7ff163867645a233ab857c3a2fcdfd5"
+        },
+        {
+          "sha": "6fa06f961186bd77aacbb2044c6929472b532a3f",
+          "author_date": "2026-05-04T12:39:43Z",
+          "message": "Add back swagger.json file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6fa06f961186bd77aacbb2044c6929472b532a3f"
+        },
+        {
+          "sha": "948a522ad8c189e3a2a53f22c3223082fb091f8e",
+          "author_date": "2026-05-04T12:44:20Z",
+          "message": "Add back json generation",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/948a522ad8c189e3a2a53f22c3223082fb091f8e"
+        },
+        {
+          "sha": "6ac432b509f3b9b9a65ba9e3fcb11d521d85d2f4",
+          "author_date": "2026-05-04T13:09:12Z",
+          "message": "Update script to also modify the json file\n\nCo-authored-by: Copilot <copilot@github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6ac432b509f3b9b9a65ba9e3fcb11d521d85d2f4"
+        },
+        {
+          "sha": "1f222d72617516589f894b216b0f5065a8facaba",
+          "author_date": "2026-05-04T13:09:43Z",
+          "message": "Add receive definitions to the docs files",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1f222d72617516589f894b216b0f5065a8facaba"
+        },
+        {
+          "sha": "a168cf5547654b42cf96448992114c21086fb4d6",
+          "author_date": "2026-05-04T13:59:48Z",
+          "message": "Simplify the instructions in the readme",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a168cf5547654b42cf96448992114c21086fb4d6"
+        },
+        {
+          "sha": "16c3214862eba3ff9223d8f0e5f9a06f6489a6f5",
+          "author_date": "2026-05-06T11:28:43Z",
+          "message": "Add update docs ci",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/16c3214862eba3ff9223d8f0e5f9a06f6489a6f5"
+        },
+        {
+          "sha": "419b18331d192c126db5eaff0e299a001b2afb58",
+          "author_date": "2026-05-08T20:39:21Z",
+          "message": "improved Dockerfile\n\n* do not build signal-cli-native in Dockerfile, but instead use\n  pre-built binary from bbernhard/libsignal-client-builds",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/419b18331d192c126db5eaff0e299a001b2afb58"
+        },
+        {
+          "sha": "2e8171d84c8edbd1620a8578eb7ebb57ab91791d",
+          "author_date": "2026-05-09T16:56:36Z",
+          "message": "Pin actions/checkout to a commit SHA\n\nFollow-up to #838: actions/checkout was the only third-party action\nleft on a mutable ref (@master). Pin it to v6.0.2's commit SHA, matching\nthe pattern used for docker/setup-qemu-action, docker/setup-buildx-action,\nand docker/login-action.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2e8171d84c8edbd1620a8578eb7ebb57ab91791d"
+        },
+        {
+          "sha": "69457e8f8138e7e1b1e9e8a6cc88af40f55cb41b",
+          "author_date": "2026-05-09T17:00:28Z",
+          "message": "Add empty permissions block at workflow level\n\nCaps GITHUB_TOKEN's blast radius. None of these workflows need any\nGitHub API write scope — they only push to Docker Hub — so the safest\ndefault is permissions: {}, matching the posture used by AsamK/signal-cli.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/69457e8f8138e7e1b1e9e8a6cc88af40f55cb41b"
+        },
+        {
+          "sha": "650367e88a01d7632bd8da5ce769fcaf3078542f",
+          "author_date": "2026-05-10T21:02:13Z",
+          "message": "Merge pull request #847 from arnehuang/pin-actions-checkout-sha\n\nPin actions/checkout to a commit SHA",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/650367e88a01d7632bd8da5ce769fcaf3078542f"
+        },
+        {
+          "sha": "db63fd15e0bc2e2de4cff0b1969b12c23508a8d7",
+          "author_date": "2026-05-10T21:03:19Z",
+          "message": "Merge pull request #848 from arnehuang/add-permissions-block\n\nAdd empty permissions block at workflow level",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/db63fd15e0bc2e2de4cff0b1969b12c23508a8d7"
+        },
+        {
+          "sha": "b37aac4d5f0e05259e50fa083bc4e94cc04201e4",
+          "author_date": "2026-05-10T21:12:48Z",
+          "message": "Merge branch 'master' into receive-swagger",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b37aac4d5f0e05259e50fa083bc4e94cc04201e4"
+        },
+        {
+          "sha": "4bbadbf29ed11bec1c3f6577208f7b19f002bfd1",
+          "author_date": "2026-05-10T21:14:19Z",
+          "message": "fix: download schemas from signal-cli releases",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/4bbadbf29ed11bec1c3f6577208f7b19f002bfd1"
+        },
+        {
+          "sha": "e68cabf88f873ec70b93af27dcd945a417069ec4",
+          "author_date": "2026-05-10T21:18:07Z",
+          "message": "fix: the docs regarless of architecture",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e68cabf88f873ec70b93af27dcd945a417069ec4"
+        },
+        {
+          "sha": "82f71512129b1d32603a6b5c695f5287e652b864",
+          "author_date": "2026-05-10T22:23:39Z",
+          "message": "fix: download the schemas from signal-cli's fork",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/82f71512129b1d32603a6b5c695f5287e652b864"
+        },
+        {
+          "sha": "7aa70683aaa4eeeec77d3d00552ab4ca57a4ad62",
+          "author_date": "2026-05-15T16:29:20Z",
+          "message": "Simplify the add_v1_receive_schemas.go my marshalling the whole document",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7aa70683aaa4eeeec77d3d00552ab4ca57a4ad62"
+        },
+        {
+          "sha": "fa0f67fa6920428e760f50219d0a68155f776593",
+          "author_date": "2026-05-15T16:34:50Z",
+          "message": "Remove uneeded if statement",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/fa0f67fa6920428e760f50219d0a68155f776593"
+        },
+        {
+          "sha": "d0ec5b1b28ae572770f4b757b7b0e3c7c56df1c9",
+          "author_date": "2026-05-15T16:51:22Z",
+          "message": "Better variable naming",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d0ec5b1b28ae572770f4b757b7b0e3c7c56df1c9"
+        },
+        {
+          "sha": "9155e505af9641247132c9159f555b83bc00154a",
+          "author_date": "2026-05-15T16:52:32Z",
+          "message": "Remove check for running swag init first",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9155e505af9641247132c9159f555b83bc00154a"
+        },
+        {
+          "sha": "af48a4304b179235c443af7df5cb0eda2e479c20",
+          "author_date": "2026-05-15T16:55:26Z",
+          "message": "Regenerate docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/af48a4304b179235c443af7df5cb0eda2e479c20"
+        },
+        {
+          "sha": "a7c91737b8193674173f806687a517818e035dca",
+          "author_date": "2026-05-15T17:28:57Z",
+          "message": "Refactor",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a7c91737b8193674173f806687a517818e035dca"
+        },
+        {
+          "sha": "91bdd60c7a40c3b50ed0acf5fc3c5a8042aa3ee5",
+          "author_date": "2026-05-15T17:31:52Z",
+          "message": "Additional refactor",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/91bdd60c7a40c3b50ed0acf5fc3c5a8042aa3ee5"
+        },
+        {
+          "sha": "e8c8b54d523dc1cf98ca30a46d706e43280b6c14",
+          "author_date": "2026-05-15T17:41:52Z",
+          "message": "Merge branch 'master' into check-docs-are-updated",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e8c8b54d523dc1cf98ca30a46d706e43280b6c14"
+        },
+        {
+          "sha": "44ac16d49cae38f7a086ced29e1f3f851161c38c",
+          "author_date": "2026-05-15T17:47:51Z",
+          "message": "check docs before a release",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/44ac16d49cae38f7a086ced29e1f3f851161c38c"
+        },
+        {
+          "sha": "0aaab36e5f6759c7a28ba4b2470efac4a8e6778d",
+          "author_date": "2026-05-15T17:50:35Z",
+          "message": "Enable read of repo",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/0aaab36e5f6759c7a28ba4b2470efac4a8e6778d"
+        },
+        {
+          "sha": "ad5d3b76dbf87f601e1e9cbfa998a114a54a1c75",
+          "author_date": "2026-05-17T20:24:09Z",
+          "message": "Merge pull request #849 from Gara-Dorta/check-docs-are-updated\n\nCheck docs are updated",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ad5d3b76dbf87f601e1e9cbfa998a114a54a1c75"
+        },
+        {
+          "sha": "5c0bd056a73576fcd6ac4db36c9fdb6e070af616",
+          "author_date": "2026-05-17T20:35:43Z",
+          "message": "Merge pull request #842 from Gara-Dorta/receive-swagger\n\nAdd swagger definitions for the receive end point",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5c0bd056a73576fcd6ac4db36c9fdb6e070af616"
+        },
+        {
+          "sha": "6e7941b1c1d91b4bbf9471fc3fa6b8b061657761",
+          "author_date": "2026-05-23T11:18:37Z",
+          "message": "improved plugin mechanism + added sqlite3 plugin",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6e7941b1c1d91b4bbf9471fc3fa6b8b061657761"
+        },
+        {
+          "sha": "e63536cb7a86b303447da3c5c916d5ce004c1408",
+          "author_date": "2026-05-23T18:51:47Z",
+          "message": "feat: add receive schemas to check-docks worflow",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e63536cb7a86b303447da3c5c916d5ce004c1408"
+        },
+        {
+          "sha": "c8c461627f91fab1eaa6cd456e42c6be22086694",
+          "author_date": "2026-05-24T19:25:57Z",
+          "message": "updated signal-cli to v0.14.4.1",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c8c461627f91fab1eaa6cd456e42c6be22086694"
+        },
+        {
+          "sha": "9a2e93a6fa7b5f03e3f7c3e442211e563514e7ed",
+          "author_date": "2026-05-24T19:27:07Z",
+          "message": "build json-schemas directly from the signal-cli source",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9a2e93a6fa7b5f03e3f7c3e442211e563514e7ed"
+        },
+        {
+          "sha": "99157a035fb46c27d31c3f8773bd30e511f23f9f",
+          "author_date": "2026-05-24T21:44:21Z",
+          "message": "renamed file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/99157a035fb46c27d31c3f8773bd30e511f23f9f"
+        },
+        {
+          "sha": "6b89035dd5322c451d122851111ac7baac0aad96",
+          "author_date": "2026-05-24T23:21:46Z",
+          "message": "fix: prevent slice out of range when attachment data starts with base64,\n\nSigned-off-by: SAY-5 <say.apm35@gmail.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6b89035dd5322c451d122851111ac7baac0aad96"
+        },
+        {
+          "sha": "7d8f62a4bb19572f5bc2203aeeebc242c4b3c35d",
+          "author_date": "2026-05-25T15:33:51Z",
+          "message": "updated go.sum",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7d8f62a4bb19572f5bc2203aeeebc242c4b3c35d"
+        },
+        {
+          "sha": "d1a3956c8c2d994bf72ea7d8c39611c769fcf57c",
+          "author_date": "2026-05-25T19:52:06Z",
+          "message": "download gradle manually",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d1a3956c8c2d994bf72ea7d8c39611c769fcf57c"
+        },
+        {
+          "sha": "52d902cda42679416672135022ea0577f3952f2e",
+          "author_date": "2026-05-26T20:11:26Z",
+          "message": "temporary fix to get the build working again",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/52d902cda42679416672135022ea0577f3952f2e"
+        },
+        {
+          "sha": "d4e86642739f4b253afb10df5b61ab8969a7c1f4",
+          "author_date": "2026-05-26T20:50:03Z",
+          "message": "Merge pull request #854 from SAY-5/fix-attachment-base64-prefix-oob\n\nfix: prevent slice out of range when attachment data starts with base64,",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d4e86642739f4b253afb10df5b61ab8969a7c1f4"
+        },
+        {
+          "sha": "595e53d397425611fa3036110d4bec5b90072815",
+          "author_date": "2026-05-27T20:23:20Z",
+          "message": "updated gitignore",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/595e53d397425611fa3036110d4bec5b90072815"
+        },
+        {
+          "sha": "e6810926ca47d9e6aabfabcf0c8ef84304a38977",
+          "author_date": "2026-05-28T21:57:26Z",
+          "message": "fixed bug in Dockerfile\n\n* make signal-cli-native binary executable",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e6810926ca47d9e6aabfabcf0c8ef84304a38977"
+        },
+        {
+          "sha": "c88c3f18c25db5ef09c3197cb2fa3e23ce46a4e5",
+          "author_date": "2026-06-01T18:13:58Z",
+          "message": "Merge pull request #853 from Gara-Dorta/release-fix\n\nfeat: add receive schemas to check-docks worflow",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c88c3f18c25db5ef09c3197cb2fa3e23ce46a4e5"
+        },
+        {
+          "sha": "60b19339c371e56f2a5451b1e0dfaf5d5812056d",
+          "author_date": "2026-06-01T18:25:00Z",
+          "message": "updated check-docs.yml\n\n* build signal-cli json schemas inside the CI job",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/60b19339c371e56f2a5451b1e0dfaf5d5812056d"
+        },
+        {
+          "sha": "25eaf7a5ebed6700047e1edb6b745bc367534039",
+          "author_date": "2026-06-01T18:29:24Z",
+          "message": "fixed bug in check-docs.yml\n\n* forgot to add 'sudo'",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/25eaf7a5ebed6700047e1edb6b745bc367534039"
+        },
+        {
+          "sha": "9e7fa344a8313dbf75e6b38c02254ecb283940f9",
+          "author_date": "2026-06-01T18:35:05Z",
+          "message": "fixed typo in check-docs.yml",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9e7fa344a8313dbf75e6b38c02254ecb283940f9"
+        },
+        {
+          "sha": "81efbd25e12963bc8be03d25c2612000d3e7859c",
+          "author_date": "2026-06-01T18:47:46Z",
+          "message": "use java 25 in check-docs.yml",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/81efbd25e12963bc8be03d25c2612000d3e7859c"
+        },
+        {
+          "sha": "a4f5855b65d47bfe427735b5660053d1cc00c580",
+          "author_date": "2026-06-11T14:12:56Z",
+          "message": "updated signal-cli to v0.14.5",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a4f5855b65d47bfe427735b5660053d1cc00c580"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "0.101",
+      "previous_release": "0.100",
+      "commits": [
+        {
+          "sha": "24513e9cf32ba56a7ad9c9da13aab8eda7734df2",
+          "author_date": "2026-02-27T13:40:58Z",
+          "message": "non-root container with s6-overlay\n\nThis using s6-overlay to manage processes need to run in the container.\njsonrpc2-helper is migrated into the startscript.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/24513e9cf32ba56a7ad9c9da13aab8eda7734df2"
+        },
+        {
+          "sha": "ab30ba5bba35a07ca9cb9dda5d656cc85b3d63c0",
+          "author_date": "2026-03-04T21:18:31Z",
+          "message": "add GIN_MODE, moved S6_OVERLAY_VERSION to the top",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ab30ba5bba35a07ca9cb9dda5d656cc85b3d63c0"
+        },
+        {
+          "sha": "53cd2dc0146efd784bf294f3ea5f4935b6317371",
+          "author_date": "2026-03-07T15:16:21Z",
+          "message": "Merge pull request #798 from poggenpower/non-root\n\nnon-root container with s6-overlay",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/53cd2dc0146efd784bf294f3ea5f4935b6317371"
+        },
+        {
+          "sha": "808bad21ab69c259090523a2f5faf944949bce80",
+          "author_date": "2026-03-07T15:52:50Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/808bad21ab69c259090523a2f5faf944949bce80"
+        },
+        {
+          "sha": "b527cba5845584a7463821b1e6414c1ceba92320",
+          "author_date": "2026-03-07T15:55:15Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b527cba5845584a7463821b1e6414c1ceba92320"
+        },
+        {
+          "sha": "1543997e0244ca8d85fb04a0beca836654644d4f",
+          "author_date": "2026-03-07T16:02:54Z",
+          "message": "set S6_OVERLAY_VERSION in target container",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1543997e0244ca8d85fb04a0beca836654644d4f"
+        },
+        {
+          "sha": "bb8c0efcacf99a57b133df5faf34c54f1326b0a5",
+          "author_date": "2026-03-07T20:08:18Z",
+          "message": "changes signal-json-rpc run script\n\n* switched to signal-cli daemon mode - this way we don't need to\n  pipe signal-cli's output to netcat.\n\n* removed fifo pathname from the json-rpc config (not needed anymore)",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/bb8c0efcacf99a57b133df5faf34c54f1326b0a5"
+        },
+        {
+          "sha": "f1c7525292c1b17f74c56f6264d436d252a51147",
+          "author_date": "2026-03-07T22:07:23Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/f1c7525292c1b17f74c56f6264d436d252a51147"
+        },
+        {
+          "sha": "cbefcb2ecdb3acc4722ba5b8f01485783e1647be",
+          "author_date": "2026-03-07T22:22:39Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/cbefcb2ecdb3acc4722ba5b8f01485783e1647be"
+        },
+        {
+          "sha": "808a88afcadbe43d82d70d6c65e654125fbd4dca",
+          "author_date": "2026-03-14T21:20:37Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/808a88afcadbe43d82d70d6c65e654125fbd4dca"
+        },
+        {
+          "sha": "50041eb9478e4ea86e89b839889b8be007887aba",
+          "author_date": "2026-03-22T20:58:49Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/50041eb9478e4ea86e89b839889b8be007887aba"
+        },
+        {
+          "sha": "fbf99edf0f1c88ce2876091746309c46f02e70f3",
+          "author_date": "2026-03-22T21:10:16Z",
+          "message": "added mode 'json-rpc-native' to signal-json-rpc service",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/fbf99edf0f1c88ce2876091746309c46f02e70f3"
+        },
+        {
+          "sha": "c0734976da9cfcb45b78594f3d83de62145474d3",
+          "author_date": "2026-03-27T20:19:53Z",
+          "message": "updated github workflows to tag images with 'rootless' keyword",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c0734976da9cfcb45b78594f3d83de62145474d3"
+        },
+        {
+          "sha": "4bbc0b83338de20147ed7b8af015f66df77ae8fe",
+          "author_date": "2026-04-16T20:07:07Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/4bbc0b83338de20147ed7b8af015f66df77ae8fe"
+        },
+        {
+          "sha": "d4ce02e9a75f0f44779a7de40f684a40ade7d13f",
+          "author_date": "2026-04-27T20:50:51Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d4ce02e9a75f0f44779a7de40f684a40ade7d13f"
+        },
+        {
+          "sha": "6e1698e8200a2ffdc41f59b9e7bb16caa7ad60c4",
+          "author_date": "2026-05-06T10:57:16Z",
+          "message": "feat: deploy pages with CI\n\nCo-authored-by: Copilot <copilot@github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6e1698e8200a2ffdc41f59b9e7bb16caa7ad60c4"
+        },
+        {
+          "sha": "79b2f60cf18c7005762e6cda599a0356d4e62403",
+          "author_date": "2026-05-07T22:03:35Z",
+          "message": "Update docker-compose for root-less\n\nfrom test and conversation in closed PR #798",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/79b2f60cf18c7005762e6cda599a0356d4e62403"
+        },
+        {
+          "sha": "c1d889d6d324ecae29d532c59ea28b2911f15ef6",
+          "author_date": "2026-05-10T20:58:54Z",
+          "message": "Merge pull request #846 from poggenpower/patch-1\n\nUpdate docker-compose for root-less",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c1d889d6d324ecae29d532c59ea28b2911f15ef6"
+        },
+        {
+          "sha": "641fd2d097f8c01983847a4bc3d9ad86c2a87f26",
+          "author_date": "2026-04-19T09:26:49Z",
+          "message": "Pin dependencies",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/641fd2d097f8c01983847a4bc3d9ad86c2a87f26"
+        },
+        {
+          "sha": "9844aaeb31c371085b30d820e94f03a9ecd92290",
+          "author_date": "2026-05-02T20:54:44Z",
+          "message": "switch back to apt-download for arm64 package",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9844aaeb31c371085b30d820e94f03a9ecd92290"
+        },
+        {
+          "sha": "c089d1bb5ce60c829e6ba51177bc730aefe10f14",
+          "author_date": "2026-05-06T11:28:43Z",
+          "message": "Add update docs ci",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c089d1bb5ce60c829e6ba51177bc730aefe10f14"
+        },
+        {
+          "sha": "59e048df574fcb48fa56dfa7b267fec043e6921a",
+          "author_date": "2026-05-08T20:39:21Z",
+          "message": "improved Dockerfile\n\n* do not build signal-cli-native in Dockerfile, but instead use\n  pre-built binary from bbernhard/libsignal-client-builds",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/59e048df574fcb48fa56dfa7b267fec043e6921a"
+        },
+        {
+          "sha": "bb4078f78bfdf12f73c9d2685ddafac786e63cec",
+          "author_date": "2026-05-09T16:56:36Z",
+          "message": "Pin actions/checkout to a commit SHA\n\nFollow-up to #838: actions/checkout was the only third-party action\nleft on a mutable ref (@master). Pin it to v6.0.2's commit SHA, matching\nthe pattern used for docker/setup-qemu-action, docker/setup-buildx-action,\nand docker/login-action.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/bb4078f78bfdf12f73c9d2685ddafac786e63cec"
+        },
+        {
+          "sha": "9b6231165eaad4923845ff4c8ef9883cc337a598",
+          "author_date": "2026-05-09T17:00:28Z",
+          "message": "Add empty permissions block at workflow level\n\nCaps GITHUB_TOKEN's blast radius. None of these workflows need any\nGitHub API write scope — they only push to Docker Hub — so the safest\ndefault is permissions: {}, matching the posture used by AsamK/signal-cli.\n\nCo-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/9b6231165eaad4923845ff4c8ef9883cc337a598"
+        },
+        {
+          "sha": "3f9e967a31f11c8bd77f18baf77ddb59724bdffd",
+          "author_date": "2026-05-15T17:47:51Z",
+          "message": "check docs before a release",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3f9e967a31f11c8bd77f18baf77ddb59724bdffd"
+        },
+        {
+          "sha": "d5d28ec0696f92adf5740811551c1e74c7d7ebc7",
+          "author_date": "2026-05-15T17:50:35Z",
+          "message": "Enable read of repo",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d5d28ec0696f92adf5740811551c1e74c7d7ebc7"
+        },
+        {
+          "sha": "b8d4ff504755f38b7c4170f5f67eab36d2fbf0b1",
+          "author_date": "2026-05-27T20:26:44Z",
+          "message": "Add receive v1 json schemas to swagger\n\nThis is done with a custom script to embed the schemas from signal-cli into the docs.go file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b8d4ff504755f38b7c4170f5f67eab36d2fbf0b1"
+        },
+        {
+          "sha": "c2c7753791b7df480b3087e3b7190514f0ca0148",
+          "author_date": "2026-04-19T22:20:37Z",
+          "message": "Only build docs on x86_64",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/c2c7753791b7df480b3087e3b7190514f0ca0148"
+        },
+        {
+          "sha": "25672f9af2710c73d34de3d9b07cc89c77634f9f",
+          "author_date": "2026-04-19T22:21:33Z",
+          "message": "Use tabs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/25672f9af2710c73d34de3d9b07cc89c77634f9f"
+        },
+        {
+          "sha": "0a3b9fa5eb44e3a645bc36027ae780662dae7e95",
+          "author_date": "2026-05-04T11:50:49Z",
+          "message": "fix: docs paths in docker build",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/0a3b9fa5eb44e3a645bc36027ae780662dae7e95"
+        },
+        {
+          "sha": "add82c6240979793f7d34039d5e8affb84591c8c",
+          "author_date": "2026-05-04T12:00:45Z",
+          "message": "Add the schemas before building the binary",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/add82c6240979793f7d34039d5e8affb84591c8c"
+        },
+        {
+          "sha": "e62bbe511abb82f266dfb07d028977707a422183",
+          "author_date": "2026-05-04T12:02:51Z",
+          "message": "Split comments in docker build",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e62bbe511abb82f266dfb07d028977707a422183"
+        },
+        {
+          "sha": "002a81a4b759eaf399b05fb127bf4a897f2cf240",
+          "author_date": "2026-05-04T12:36:25Z",
+          "message": "fix: remove swagger.json and swagger.yaml files",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/002a81a4b759eaf399b05fb127bf4a897f2cf240"
+        },
+        {
+          "sha": "11c0f2a163c074c604c583d829ede9c046d95a38",
+          "author_date": "2026-05-04T12:39:43Z",
+          "message": "Add back swagger.json file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/11c0f2a163c074c604c583d829ede9c046d95a38"
+        },
+        {
+          "sha": "3856ab5ce9b42727d14ac2ab7a61e67f48e96096",
+          "author_date": "2026-05-04T12:44:20Z",
+          "message": "Add back json generation",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3856ab5ce9b42727d14ac2ab7a61e67f48e96096"
+        },
+        {
+          "sha": "d862a5e8ddff943c8ab816c5b7ee554b2f3098c0",
+          "author_date": "2026-05-04T13:09:12Z",
+          "message": "Update script to also modify the json file\n\nCo-authored-by: Copilot <copilot@github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d862a5e8ddff943c8ab816c5b7ee554b2f3098c0"
+        },
+        {
+          "sha": "a1607d12c0ee4c76d4dc5457e22b0a30707042fa",
+          "author_date": "2026-05-04T13:09:43Z",
+          "message": "Add receive definitions to the docs files",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a1607d12c0ee4c76d4dc5457e22b0a30707042fa"
+        },
+        {
+          "sha": "fd5ff761049711a1127c6fa48e765b94520aca31",
+          "author_date": "2026-05-04T13:59:48Z",
+          "message": "Simplify the instructions in the readme",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/fd5ff761049711a1127c6fa48e765b94520aca31"
+        },
+        {
+          "sha": "8375412fc49fd339c4b22e16cbbbb1a0c4c374ca",
+          "author_date": "2026-05-10T21:14:19Z",
+          "message": "fix: download schemas from signal-cli releases",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8375412fc49fd339c4b22e16cbbbb1a0c4c374ca"
+        },
+        {
+          "sha": "8fe548e98f1b8b9651fdea94045082b5415eb23d",
+          "author_date": "2026-05-10T21:18:07Z",
+          "message": "fix: the docs regarless of architecture",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8fe548e98f1b8b9651fdea94045082b5415eb23d"
+        },
+        {
+          "sha": "8c2d43aa6b3f11501ec24c56b43eed61f01ea294",
+          "author_date": "2026-05-10T22:23:39Z",
+          "message": "fix: download the schemas from signal-cli's fork",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8c2d43aa6b3f11501ec24c56b43eed61f01ea294"
+        },
+        {
+          "sha": "4f60f4f7f1fb68e2be2525c933f23050b57e8a93",
+          "author_date": "2026-05-15T16:29:20Z",
+          "message": "Simplify the add_v1_receive_schemas.go my marshalling the whole document",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/4f60f4f7f1fb68e2be2525c933f23050b57e8a93"
+        },
+        {
+          "sha": "ccacd4de501b908b566a31000d6cab30536ec655",
+          "author_date": "2026-05-15T16:34:50Z",
+          "message": "Remove uneeded if statement",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ccacd4de501b908b566a31000d6cab30536ec655"
+        },
+        {
+          "sha": "88bdbdd26d52c4e035e86c62b76d240b33316d53",
+          "author_date": "2026-05-15T16:51:22Z",
+          "message": "Better variable naming",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/88bdbdd26d52c4e035e86c62b76d240b33316d53"
+        },
+        {
+          "sha": "735a8ea276389f42dbee9691166931ce897a719f",
+          "author_date": "2026-05-15T16:52:32Z",
+          "message": "Remove check for running swag init first",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/735a8ea276389f42dbee9691166931ce897a719f"
+        },
+        {
+          "sha": "f43ea746a26f720903e3d484d29019d05377c0b0",
+          "author_date": "2026-05-15T16:55:26Z",
+          "message": "Regenerate docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/f43ea746a26f720903e3d484d29019d05377c0b0"
+        },
+        {
+          "sha": "cc93362ef0e65649ee62da71315093af335b6f32",
+          "author_date": "2026-05-15T17:28:57Z",
+          "message": "Refactor",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/cc93362ef0e65649ee62da71315093af335b6f32"
+        },
+        {
+          "sha": "e70674510247ca8c2e7156002c1f4bac59936625",
+          "author_date": "2026-05-15T17:31:52Z",
+          "message": "Additional refactor",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e70674510247ca8c2e7156002c1f4bac59936625"
+        },
+        {
+          "sha": "f82dd000618164e41996a9dc86704e32cae33e8b",
+          "author_date": "2026-05-23T11:18:37Z",
+          "message": "improved plugin mechanism + added sqlite3 plugin",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/f82dd000618164e41996a9dc86704e32cae33e8b"
+        },
+        {
+          "sha": "165755f2db2925009e644c959c57385a9bcf7e87",
+          "author_date": "2026-05-24T19:25:57Z",
+          "message": "updated signal-cli to v0.14.4.1",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/165755f2db2925009e644c959c57385a9bcf7e87"
+        },
+        {
+          "sha": "fc9a78b451211061e8a764fcbda9308300d4c326",
+          "author_date": "2026-05-24T19:27:07Z",
+          "message": "build json-schemas directly from the signal-cli source",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/fc9a78b451211061e8a764fcbda9308300d4c326"
+        },
+        {
+          "sha": "92ae1a583715d59223f600bdb1fa451a06ff0641",
+          "author_date": "2026-05-24T21:44:21Z",
+          "message": "renamed file",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/92ae1a583715d59223f600bdb1fa451a06ff0641"
+        },
+        {
+          "sha": "21ecb465c3dea601bfc29a1a9730e974fcc27bfe",
+          "author_date": "2026-05-25T15:33:51Z",
+          "message": "updated go.sum",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/21ecb465c3dea601bfc29a1a9730e974fcc27bfe"
+        },
+        {
+          "sha": "7a6ab7972744abf5a19e7f7df41468b27bd26242",
+          "author_date": "2026-05-25T19:52:06Z",
+          "message": "download gradle manually",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7a6ab7972744abf5a19e7f7df41468b27bd26242"
+        },
+        {
+          "sha": "3e5587ee0b5d0ea8709459630a6a036acbd9b04d",
+          "author_date": "2026-05-26T20:11:26Z",
+          "message": "temporary fix to get the build working again",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/3e5587ee0b5d0ea8709459630a6a036acbd9b04d"
+        },
+        {
+          "sha": "dac961b6996a114f6c99945eaf1ec86afdeda1db",
+          "author_date": "2026-05-27T20:23:20Z",
+          "message": "updated gitignore",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/dac961b6996a114f6c99945eaf1ec86afdeda1db"
+        },
+        {
+          "sha": "15f7ef2b28d801259686c976d3bd48e8b4b5fc37",
+          "author_date": "2026-05-28T21:59:55Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/15f7ef2b28d801259686c976d3bd48e8b4b5fc37"
+        },
+        {
+          "sha": "00fdcadd72a8ffc3133166dbf9f4ab4696d9fefc",
+          "author_date": "2026-06-01T20:38:07Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/00fdcadd72a8ffc3133166dbf9f4ab4696d9fefc"
+        },
+        {
+          "sha": "ede08b64d8b95f3c2a10f6e76cdd6a37ed2303c2",
+          "author_date": "2026-06-05T08:05:41Z",
+          "message": "expose group membership isMember via the REST API",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ede08b64d8b95f3c2a10f6e76cdd6a37ed2303c2"
+        },
+        {
+          "sha": "555c1cc62621c8068b5b5d0212c0a85280177272",
+          "author_date": "2026-06-11T14:13:24Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/555c1cc62621c8068b5b5d0212c0a85280177272"
+        },
+        {
+          "sha": "fe9df012f17e1d2612847c0563ee383df9f3479b",
+          "author_date": "2026-06-25T20:14:25Z",
+          "message": "Merge pull request #859 from pinkustar/expose-group-membership\n\nExpose group membership (isMember) on the /v1/groups endpoints",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/fe9df012f17e1d2612847c0563ee383df9f3479b"
+        },
+        {
+          "sha": "e34cd5af876b4cfbe4c68581fa7e613455a67643",
+          "author_date": "2026-07-02T06:13:13Z",
+          "message": "Bump golang.org/x/net from 0.47.0 to 0.55.0 in /src\n\nBumps [golang.org/x/net](https://github.com/golang/net) from 0.47.0 to 0.55.0.\n- [Commits](https://github.com/golang/net/compare/v0.47.0...v0.55.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/net\n  dependency-version: 0.55.0\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/e34cd5af876b4cfbe4c68581fa7e613455a67643"
+        },
+        {
+          "sha": "af64b772cd54c591186a536e41354e36b892fdee",
+          "author_date": "2026-07-02T19:57:51Z",
+          "message": "Merge pull request #865 from bbernhard/dependabot/go_modules/src/golang.org/x/net-0.55.0\n\nBump golang.org/x/net from 0.47.0 to 0.55.0 in /src",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/af64b772cd54c591186a536e41354e36b892fdee"
+        },
+        {
+          "sha": "2ee3907d9ec779d9e6791ab9e4a6f2b8846a6b84",
+          "author_date": "2026-07-10T21:35:10Z",
+          "message": "Bump golang.org/x/crypto from 0.51.0 to 0.52.0 in /src\n\nBumps [golang.org/x/crypto](https://github.com/golang/crypto) from 0.51.0 to 0.52.0.\n- [Commits](https://github.com/golang/crypto/compare/v0.51.0...v0.52.0)\n\n---\nupdated-dependencies:\n- dependency-name: golang.org/x/crypto\n  dependency-version: 0.52.0\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2ee3907d9ec779d9e6791ab9e4a6f2b8846a6b84"
+        },
+        {
+          "sha": "17b86412f37cfd4936fafac9a6ee4ca57e9ac475",
+          "author_date": "2026-07-11T20:23:26Z",
+          "message": "Merge pull request #868 from bbernhard/dependabot/go_modules/src/golang.org/x/crypto-0.52.0\n\nBump golang.org/x/crypto from 0.51.0 to 0.52.0 in /src",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/17b86412f37cfd4936fafac9a6ee4ca57e9ac475"
+        },
+        {
+          "sha": "be0842fdb26caceefed56b3382bb16bca34c2666",
+          "author_date": "2026-07-13T20:29:46Z",
+          "message": "Merge pull request #844 from Gara-Dorta/deploy-pages\n\nfeat: deploy pages with CI",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/be0842fdb26caceefed56b3382bb16bca34c2666"
+        },
+        {
+          "sha": "b13a74f43e6b349ed2512106fa6c762a8c662079",
+          "author_date": "2026-07-14T18:08:28Z",
+          "message": "feat: download the json schemas from the signal-cli releases",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/b13a74f43e6b349ed2512106fa6c762a8c662079"
+        },
+        {
+          "sha": "d258f01d59a3c1d54d512541fd0502509b08934d",
+          "author_date": "2026-07-14T19:50:32Z",
+          "message": "Merge pull request #869 from Gara-Dorta/json-schema-dowload\n\nfeat: download the json schemas from the signal-cli releases",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d258f01d59a3c1d54d512541fd0502509b08934d"
+        },
+        {
+          "sha": "2d03a6c0ce7e1b96d2003b8a7dab0bbee710a0d4",
+          "author_date": "2026-07-18T10:53:53Z",
+          "message": "added debug output to deploy-pages.yml",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2d03a6c0ce7e1b96d2003b8a7dab0bbee710a0d4"
+        },
+        {
+          "sha": "bef11316e330835d2a1478d82a8be1d4e6b6050f",
+          "author_date": "2026-07-18T11:03:20Z",
+          "message": "dummy change to test github workflow",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/bef11316e330835d2a1478d82a8be1d4e6b6050f"
+        },
+        {
+          "sha": "7c12204889285f9753c464731c816d700c72e72e",
+          "author_date": "2026-07-18T11:05:41Z",
+          "message": "execute deploy-pages workflow for every commit",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7c12204889285f9753c464731c816d700c72e72e"
+        },
+        {
+          "sha": "7138ffde7c80d16a890b9cd1c023a3a6819e4f25",
+          "author_date": "2026-07-18T11:09:22Z",
+          "message": "fixed version in deploy-pages.yml",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/7138ffde7c80d16a890b9cd1c023a3a6819e4f25"
+        },
+        {
+          "sha": "0e36e15f606f1f3b38ddb87d7c223309844cfa8f",
+          "author_date": "2026-07-18T20:21:40Z",
+          "message": "remove debug logging",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/0e36e15f606f1f3b38ddb87d7c223309844cfa8f"
+        },
+        {
+          "sha": "6a225e62c15f5274e24158b779769b8470374cd7",
+          "author_date": "2026-07-23T20:47:13Z",
+          "message": "fixed bug in send endpoint\n\n* in case a message is sent to either multiple recipients or a group,\n  it is always possible that the message couldn't be sent to some\n  recipients (e.g because of an untrusted identity). This is now\n  reflected in the API by returning an additional `errors` object in\n  that case.",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/6a225e62c15f5274e24158b779769b8470374cd7"
+        },
+        {
+          "sha": "54507eba20904238dd4db8056b4529bd3199dbd2",
+          "author_date": "2026-07-23T20:51:35Z",
+          "message": "handle status code -4 in the `getRaw` method of the JsonRpc2Client",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/54507eba20904238dd4db8056b4529bd3199dbd2"
+        },
+        {
+          "sha": "1a2da6c79b6dce68317a714d3f4015d18e30dcad",
+          "author_date": "2026-08-01T13:06:43Z",
+          "message": "updated signal-cli to v0.14.7",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1a2da6c79b6dce68317a714d3f4015d18e30dcad"
+        },
+        {
+          "sha": "5cc379fde09edf0753be8d8a871ca5a3003913f7",
+          "author_date": "2026-08-09T19:39:35Z",
+          "message": "only (re-)build github pages documentation when a new release is published\n\nsee #872",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/5cc379fde09edf0753be8d8a871ca5a3003913f7"
+        },
+        {
+          "sha": "a08db23a31b5c2fb6535ebe0977a7420848019b8",
+          "author_date": "2026-08-16T20:51:31Z",
+          "message": "fixed bug in textstyleparser\n\n* the textstyleparser now properly handles `***` and marks the\n  text as bold and italic.\n\nsee #879",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/a08db23a31b5c2fb6535ebe0977a7420848019b8"
+        },
+        {
+          "sha": "1491a52285260e2b9fd0f64b6c770a814b88407b",
+          "author_date": "2026-08-24T21:37:32Z",
+          "message": "Bump github.com/gorilla/websocket from 1.5.0 to 1.5.3 in /src\n\nBumps [github.com/gorilla/websocket](https://github.com/gorilla/websocket) from 1.5.0 to 1.5.3.\n- [Release notes](https://github.com/gorilla/websocket/releases)\n- [Commits](https://github.com/gorilla/websocket/compare/v1.5.0...v1.5.3)\n\n---\nupdated-dependencies:\n- dependency-name: github.com/gorilla/websocket\n  dependency-version: 1.5.3\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1491a52285260e2b9fd0f64b6c770a814b88407b"
+        },
+        {
+          "sha": "2fe9eb5bf39fc75fe4c21693c065db588768dac1",
+          "author_date": "2026-08-26T20:24:54Z",
+          "message": "Merge pull request #880 from bbernhard/dependabot/go_modules/src/github.com/gorilla/websocket-1.5.3\n\nBump github.com/gorilla/websocket from 1.5.0 to 1.5.3 in /src",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/2fe9eb5bf39fc75fe4c21693c065db588768dac1"
+        },
+        {
+          "sha": "d4ab41ad2b7246215c0d432304732d8b2c1de4af",
+          "author_date": "2026-09-03T18:05:06Z",
+          "message": "updated golang.org/x/crypto to v0.55.0\n\nsee #883",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/d4ab41ad2b7246215c0d432304732d8b2c1de4af"
+        },
+        {
+          "sha": "bbdb75aa9c7b80334e3c266f127695a0ada9a0ab",
+          "author_date": "2026-09-03T18:07:06Z",
+          "message": "Merge branch 'master' into rootless_s6",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/bbdb75aa9c7b80334e3c266f127695a0ada9a0ab"
+        },
+        {
+          "sha": "fd9bdae58340931922b95acb89c7633d323a5024",
+          "author_date": "2026-09-03T20:12:19Z",
+          "message": "Merge branch 'rootless_s6'",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/fd9bdae58340931922b95acb89c7633d323a5024"
+        },
+        {
+          "sha": "8cc38d439a55911aae02f3d6c5794b98fd7cbc98",
+          "author_date": "2026-09-04T13:23:28Z",
+          "message": "updated swagger docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/8cc38d439a55911aae02f3d6c5794b98fd7cbc98"
+        },
+        {
+          "sha": "1fface6074e41a13dcbd65ae376f0f3c055f5086",
+          "author_date": "2026-09-05T09:57:06Z",
+          "message": "remove 'rootless' from github actions workflows",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/1fface6074e41a13dcbd65ae376f0f3c055f5086"
+        },
+        {
+          "sha": "ebb7c1d4dc18cf07397443a840d7effc3216f046",
+          "author_date": "2026-09-16T20:47:01Z",
+          "message": "updated signal-cli to v0.14.8",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/ebb7c1d4dc18cf07397443a840d7effc3216f046"
+        },
+        {
+          "sha": "14998109e30413dac30b96163c3361688a8cc112",
+          "author_date": "2026-09-25T20:35:05Z",
+          "message": "updated swagger docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/14998109e30413dac30b96163c3361688a8cc112"
+        },
+        {
+          "sha": "74253a3a41c2cade40fd4a53cf3fb7a3fdf305dc",
+          "author_date": "2026-09-25T20:44:28Z",
+          "message": "updated swagger docs",
+          "html_url": "https://github.com/bbernhard/signal-cli-rest-api/commit/74253a3a41c2cade40fd4a53cf3fb7a3fdf305dc"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [],
+    "2025-11": [
+      {
+        "id": 19650748571,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-24T22:04:39Z",
+        "updated_at": "2025-11-24T22:53:22Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19650748571"
+      },
+      {
+        "id": 19646706483,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-24T19:29:49Z",
+        "updated_at": "2025-11-24T20:25:02Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19646706483"
+      },
+      {
+        "id": 19645128088,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-24T18:33:42Z",
+        "updated_at": "2025-11-24T19:23:32Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19645128088"
+      },
+      {
+        "id": 19645080439,
+        "name": ".github/workflows/ci.yml",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-24T18:31:59Z",
+        "updated_at": "2025-11-24T18:31:59Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19645080439"
+      },
+      {
+        "id": 19645036483,
+        "name": ".github/workflows/ci.yml",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-24T18:30:26Z",
+        "updated_at": "2025-11-24T18:30:26Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19645036483"
+      },
+      {
+        "id": 19644968194,
+        "name": ".github/workflows/ci.yml",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-24T18:27:59Z",
+        "updated_at": "2025-11-24T18:27:59Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19644968194"
+      },
+      {
+        "id": 19642792277,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-24T17:10:26Z",
+        "updated_at": "2025-11-24T18:03:15Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19642792277"
+      },
+      {
+        "id": 19618275278,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-23T22:30:54Z",
+        "updated_at": "2025-11-23T23:19:41Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19618275278"
+      },
+      {
+        "id": 19617156338,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-23T20:56:00Z",
+        "updated_at": "2025-11-23T21:50:18Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19617156338"
+      },
+      {
+        "id": 19614403224,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-23T17:54:15Z",
+        "updated_at": "2025-11-23T18:46:54Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19614403224"
+      },
+      {
+        "id": 19551618107,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-20T21:17:34Z",
+        "updated_at": "2025-11-20T21:56:13Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19551618107"
+      },
+      {
+        "id": 19513364673,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-19T19:10:59Z",
+        "updated_at": "2025-11-19T19:50:21Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19513364673"
+      },
+      {
+        "id": 19018833549,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-02T22:08:16Z",
+        "updated_at": "2025-11-02T23:03:06Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19018833549"
+      },
+      {
+        "id": 19018373591,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-02T21:25:15Z",
+        "updated_at": "2025-11-02T22:04:18Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19018373591"
+      },
+      {
+        "id": 19003622732,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-01T22:33:43Z",
+        "updated_at": "2025-11-01T23:12:51Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19003622732"
+      }
+    ],
+    "2025-12": [
+      {
+        "id": 20043724266,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-08T21:40:11Z",
+        "updated_at": "2025-12-08T22:34:12Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/20043724266"
+      },
+      {
+        "id": 19977179864,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-05T22:00:53Z",
+        "updated_at": "2025-12-05T22:55:58Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19977179864"
+      },
+      {
+        "id": 19977148886,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-05T21:59:26Z",
+        "updated_at": "2025-12-05T22:54:29Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/19977148886"
+      }
+    ],
+    "2026-01": [
+      {
+        "id": 21323052792,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T23:04:46Z",
+        "updated_at": "2026-01-24T23:57:27Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/21323052792"
+      },
+      {
+        "id": 21320754909,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-01-24T22:21:59Z",
+        "updated_at": "2026-01-24T22:54:41Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/21320754909"
+      },
+      {
+        "id": 21318196730,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-24T16:37:50Z",
+        "updated_at": "2026-01-24T17:32:00Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/21318196730"
+      },
+      {
+        "id": 20973083047,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T21:23:20Z",
+        "updated_at": "2026-01-13T22:18:45Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/20973083047"
+      },
+      {
+        "id": 20973058822,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-13T21:22:29Z",
+        "updated_at": "2026-01-13T22:17:25Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/20973058822"
+      },
+      {
+        "id": 20864225351,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-09T20:10:57Z",
+        "updated_at": "2026-01-09T21:06:12Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/20864225351"
+      }
+    ],
+    "2026-02": [
+      {
+        "id": 22285446584,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-22T21:12:32Z",
+        "updated_at": "2026-02-22T22:06:09Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22285446584"
+      },
+      {
+        "id": 22118890783,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-17T22:51:21Z",
+        "updated_at": "2026-02-17T23:43:19Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22118890783"
+      },
+      {
+        "id": 22115639245,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-17T21:04:28Z",
+        "updated_at": "2026-02-17T21:42:43Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22115639245"
+      },
+      {
+        "id": 22115582510,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-02-17T21:02:38Z",
+        "updated_at": "2026-02-17T21:43:08Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22115582510"
+      },
+      {
+        "id": 22003569925,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-13T21:32:37Z",
+        "updated_at": "2026-02-13T22:26:54Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22003569925"
+      },
+      {
+        "id": 21884232393,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-10T22:07:10Z",
+        "updated_at": "2026-02-10T23:03:40Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/21884232393"
+      },
+      {
+        "id": 21769322922,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-06T23:16:28Z",
+        "updated_at": "2026-02-07T00:11:55Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/21769322922"
+      },
+      {
+        "id": 21762050778,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-06T18:49:26Z",
+        "updated_at": "2026-02-06T19:44:02Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/21762050778"
+      }
+    ],
+    "2026-03": [
+      {
+        "id": 23665251682,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-27T20:05:38Z",
+        "updated_at": "2026-03-27T20:58:53Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23665251682"
+      },
+      {
+        "id": 23412752043,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-22T21:19:22Z",
+        "updated_at": "2026-03-22T22:17:38Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23412752043"
+      },
+      {
+        "id": 23388340771,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-21T20:39:22Z",
+        "updated_at": "2026-03-21T21:36:59Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23388340771"
+      },
+      {
+        "id": 23090304049,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-14T14:56:38Z",
+        "updated_at": "2026-03-14T15:55:08Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23090304049"
+      },
+      {
+        "id": 23071682401,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-13T21:42:52Z",
+        "updated_at": "2026-03-13T22:37:59Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23071682401"
+      },
+      {
+        "id": 23069118908,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-13T20:24:29Z",
+        "updated_at": "2026-03-13T21:04:28Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23069118908"
+      },
+      {
+        "id": 23068958575,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-13T20:19:52Z",
+        "updated_at": "2026-03-13T21:00:20Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23068958575"
+      },
+      {
+        "id": 22825347825,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-08T16:43:44Z",
+        "updated_at": "2026-03-08T17:42:25Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22825347825"
+      },
+      {
+        "id": 22824686314,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-08T16:04:05Z",
+        "updated_at": "2026-03-08T17:01:11Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22824686314"
+      },
+      {
+        "id": 22808400496,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-07T22:17:25Z",
+        "updated_at": "2026-03-07T23:15:00Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22808400496"
+      },
+      {
+        "id": 22808146014,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-07T22:02:01Z",
+        "updated_at": "2026-03-07T23:00:50Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22808146014"
+      },
+      {
+        "id": 22806473853,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-07T20:18:10Z",
+        "updated_at": "2026-03-07T21:15:27Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22806473853"
+      },
+      {
+        "id": 22799624615,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-07T14:27:45Z",
+        "updated_at": "2026-03-07T15:26:27Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22799624615"
+      },
+      {
+        "id": 22772648798,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-06T16:38:48Z",
+        "updated_at": "2026-03-06T17:19:27Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22772648798"
+      },
+      {
+        "id": 22733985368,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-05T19:51:50Z",
+        "updated_at": "2026-03-05T20:49:46Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22733985368"
+      },
+      {
+        "id": 22733746873,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-05T19:45:27Z",
+        "updated_at": "2026-03-05T20:42:06Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22733746873"
+      },
+      {
+        "id": 22688201841,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-04T20:37:25Z",
+        "updated_at": "2026-03-04T21:35:18Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22688201841"
+      },
+      {
+        "id": 22685141447,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-04T19:15:42Z",
+        "updated_at": "2026-03-04T19:55:51Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22685141447"
+      },
+      {
+        "id": 22679837140,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-04T16:56:01Z",
+        "updated_at": "2026-03-04T17:51:36Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22679837140"
+      },
+      {
+        "id": 22676465594,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-04T15:34:01Z",
+        "updated_at": "2026-03-04T16:13:01Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22676465594"
+      },
+      {
+        "id": 22642779412,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-03T21:08:05Z",
+        "updated_at": "2026-03-03T21:46:32Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22642779412"
+      },
+      {
+        "id": 22641199332,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-03T20:25:27Z",
+        "updated_at": "2026-03-03T21:03:28Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22641199332"
+      },
+      {
+        "id": 22640856937,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-03T20:16:51Z",
+        "updated_at": "2026-03-03T20:56:06Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22640856937"
+      },
+      {
+        "id": 22585741601,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-02T16:39:07Z",
+        "updated_at": "2026-03-02T17:19:03Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22585741601"
+      },
+      {
+        "id": 22553308480,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-02T15:55:36Z",
+        "updated_at": "2026-03-02T16:36:20Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/22553308480"
+      }
+    ],
+    "2026-04": [
+      {
+        "id": 24968010656,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-26T21:55:17Z",
+        "updated_at": "2026-04-26T22:50:32Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24968010656"
+      },
+      {
+        "id": 24940852124,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-25T21:15:45Z",
+        "updated_at": "2026-04-25T22:08:07Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24940852124"
+      },
+      {
+        "id": 24940067447,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-25T20:34:01Z",
+        "updated_at": "2026-04-25T21:13:43Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24940067447"
+      },
+      {
+        "id": 24903050250,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-24T17:32:12Z",
+        "updated_at": "2026-04-24T18:09:53Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24903050250"
+      },
+      {
+        "id": 24859055733,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-24T08:46:28Z",
+        "updated_at": "2026-04-24T09:27:51Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24859055733"
+      },
+      {
+        "id": 24856632906,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-23T20:14:59Z",
+        "updated_at": "2026-04-23T20:52:00Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24856632906"
+      },
+      {
+        "id": 24691577381,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-20T21:34:44Z",
+        "updated_at": "2026-04-20T22:32:18Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24691577381"
+      },
+      {
+        "id": 24637717935,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-19T19:53:01Z",
+        "updated_at": "2026-04-19T20:46:40Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24637717935"
+      },
+      {
+        "id": 24531162553,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-16T20:01:07Z",
+        "updated_at": "2026-04-16T20:55:39Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24531162553"
+      },
+      {
+        "id": 24212585727,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T20:48:07Z",
+        "updated_at": "2026-04-09T21:42:39Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24212585727"
+      },
+      {
+        "id": 24211347771,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-09T20:18:59Z",
+        "updated_at": "2026-04-09T21:17:05Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24211347771"
+      },
+      {
+        "id": 24096211538,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-07T17:53:44Z",
+        "updated_at": "2026-04-07T18:46:04Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24096211538"
+      },
+      {
+        "id": 24096134248,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-07T17:51:58Z",
+        "updated_at": "2026-04-07T18:46:26Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24096134248"
+      },
+      {
+        "id": 24047313382,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-06T19:29:12Z",
+        "updated_at": "2026-04-06T20:26:51Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24047313382"
+      },
+      {
+        "id": 24046451663,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-06T19:07:49Z",
+        "updated_at": "2026-04-06T20:04:41Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24046451663"
+      },
+      {
+        "id": 24046375218,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-06T19:05:55Z",
+        "updated_at": "2026-04-06T20:04:35Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/24046375218"
+      },
+      {
+        "id": 23986092235,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-04T19:36:24Z",
+        "updated_at": "2026-04-04T20:34:24Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23986092235"
+      },
+      {
+        "id": 23985734167,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-04T19:15:19Z",
+        "updated_at": "2026-04-04T20:05:49Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23985734167"
+      },
+      {
+        "id": 23985640406,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-04T19:09:52Z",
+        "updated_at": "2026-04-04T20:00:13Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23985640406"
+      },
+      {
+        "id": 23870099428,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-01T20:47:28Z",
+        "updated_at": "2026-04-01T21:41:26Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/23870099428"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 26604716795,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T21:58:23Z",
+        "updated_at": "2026-05-28T23:26:17Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26604716795"
+      },
+      {
+        "id": 26474366170,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-26T20:50:06Z",
+        "updated_at": "2026-05-26T22:19:02Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26474366170"
+      },
+      {
+        "id": 26472458880,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-26T20:11:46Z",
+        "updated_at": "2026-05-26T21:34:42Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26472458880"
+      },
+      {
+        "id": 26417338086,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-25T19:52:25Z",
+        "updated_at": "2026-05-25T22:23:23Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26417338086"
+      },
+      {
+        "id": 26408188792,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-25T17:20:12Z",
+        "updated_at": "2026-05-25T18:24:24Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26408188792"
+      },
+      {
+        "id": 26373582626,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-25T14:02:55Z",
+        "updated_at": "2026-05-25T14:47:08Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26373582626"
+      },
+      {
+        "id": 26371511693,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-24T20:08:38Z",
+        "updated_at": "2026-05-24T20:47:38Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26371511693"
+      },
+      {
+        "id": 26002022962,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-17T20:35:46Z",
+        "updated_at": "2026-05-17T21:28:58Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26002022962"
+      },
+      {
+        "id": 26001752574,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-17T20:24:12Z",
+        "updated_at": "2026-05-17T21:15:40Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26001752574"
+      },
+      {
+        "id": 25639723712,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-10T21:03:22Z",
+        "updated_at": "2026-05-10T21:55:55Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/25639723712"
+      },
+      {
+        "id": 25639700043,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-10T21:02:16Z",
+        "updated_at": "2026-05-10T21:54:09Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/25639700043"
+      },
+      {
+        "id": 25578450539,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-08T20:40:34Z",
+        "updated_at": "2026-05-08T21:35:01Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/25578450539"
+      },
+      {
+        "id": 25261671934,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-02T20:55:24Z",
+        "updated_at": "2026-05-02T21:33:56Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/25261671934"
+      },
+      {
+        "id": 25260675601,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-02T20:04:52Z",
+        "updated_at": "2026-05-02T20:43:21Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/25260675601"
+      }
+    ],
+    "2026-06": [
+      {
+        "id": 28197703424,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-25T20:14:29Z",
+        "updated_at": "2026-06-25T21:44:21Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/28197703424"
+      },
+      {
+        "id": 27353097867,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-11T14:13:18Z",
+        "updated_at": "2026-06-11T15:38:51Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/27353097867"
+      },
+      {
+        "id": 26773188563,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-01T18:14:05Z",
+        "updated_at": "2026-06-01T19:36:18Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/26773188563"
+      }
+    ],
+    "2026-07": [
+      {
+        "id": 30043906441,
+        "name": "Deploy API Docs to GitHub Pages",
+        "workflow_id": 312561004,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-23T20:52:25Z",
+        "updated_at": "2026-07-23T20:53:41Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/30043906441"
+      },
+      {
+        "id": 30043906349,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-07-23T20:52:25Z",
+        "updated_at": "2026-07-23T21:11:14Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/30043906349"
+      },
+      {
+        "id": 29659557364,
+        "name": "Deploy API Docs to GitHub Pages",
+        "workflow_id": 312561004,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-18T20:21:52Z",
+        "updated_at": "2026-07-18T20:22:58Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/29659557364"
+      },
+      {
+        "id": 29642078328,
+        "name": "Deploy API Docs to GitHub Pages",
+        "workflow_id": 312561004,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-18T11:09:41Z",
+        "updated_at": "2026-07-18T11:10:47Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/29642078328"
+      },
+      {
+        "id": 29641976440,
+        "name": "Deploy API Docs to GitHub Pages",
+        "workflow_id": 312561004,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-07-18T11:05:59Z",
+        "updated_at": "2026-07-18T11:07:20Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/29641976440"
+      },
+      {
+        "id": 29363365727,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-07-14T19:50:35Z",
+        "updated_at": "2026-07-14T20:09:07Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/29363365727"
+      },
+      {
+        "id": 29282606341,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-13T20:29:50Z",
+        "updated_at": "2026-07-13T22:00:13Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/29282606341"
+      },
+      {
+        "id": 29166937102,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-11T20:23:28Z",
+        "updated_at": "2026-07-11T21:53:25Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/29166937102"
+      },
+      {
+        "id": 28617814548,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-02T19:57:54Z",
+        "updated_at": "2026-07-02T20:54:27Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/28617814548"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 33010281578,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T20:24:57Z",
+        "updated_at": "2026-08-26T21:23:38Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/33010281578"
+      },
+      {
+        "id": 31971934627,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-16T20:54:57Z",
+        "updated_at": "2026-08-16T21:59:08Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/31971934627"
+      },
+      {
+        "id": 31332299961,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-09T19:41:20Z",
+        "updated_at": "2026-08-09T20:47:03Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/31332299961"
+      },
+      {
+        "id": 30701080823,
+        "name": "Deploy API Docs to GitHub Pages",
+        "workflow_id": 312561004,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-01T13:07:22Z",
+        "updated_at": "2026-08-01T13:08:37Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/30701080823"
+      },
+      {
+        "id": 30701080825,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-01T13:07:22Z",
+        "updated_at": "2026-08-01T14:11:53Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/30701080825"
+      }
+    ],
+    "2026-09": [
+      {
+        "id": 36266521010,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-26T19:34:26Z",
+        "updated_at": "2026-09-26T20:36:14Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/36266521010"
+      },
+      {
+        "id": 35148669018,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-16T20:47:32Z",
+        "updated_at": "2026-09-16T21:55:34Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/35148669018"
+      },
+      {
+        "id": 33959364438,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-05T09:57:39Z",
+        "updated_at": "2026-09-05T11:02:20Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/33959364438"
+      },
+      {
+        "id": 33877811326,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-04T13:23:43Z",
+        "updated_at": "2026-09-04T14:26:24Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/33877811326"
+      },
+      {
+        "id": 33800902044,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-03T20:12:32Z",
+        "updated_at": "2026-09-03T21:12:11Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/33800902044"
+      },
+      {
+        "id": 33788525858,
+        "name": "ci",
+        "workflow_id": 5981531,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-03T18:06:26Z",
+        "updated_at": "2026-09-03T19:09:33Z",
+        "html_url": "https://github.com/bbernhard/signal-cli-rest-api/actions/runs/33788525858"
+      }
+    ]
+  }
+}

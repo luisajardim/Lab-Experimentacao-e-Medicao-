@@ -1,0 +1,2957 @@
+{
+  "repository": {
+    "full_name": "mstorsjo/llvm-mingw",
+    "stars": 2999,
+    "language": "C",
+    "default_branch": "master",
+    "created_at": "2017-11-27T22:11:17Z"
+  },
+  "releases": [
+    {
+      "id": 13490556,
+      "tag_name": "20181017",
+      "name": "20181017",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-10-17T20:31:23Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20181017"
+    },
+    {
+      "id": 14792933,
+      "tag_name": "20190103",
+      "name": "20190103",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-01-03T21:09:23Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20190103"
+    },
+    {
+      "id": 15167998,
+      "tag_name": "20190124",
+      "name": "20190124",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-01-24T20:13:50Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20190124"
+    },
+    {
+      "id": 17151291,
+      "tag_name": "20190504",
+      "name": "20190504",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-05-04T19:28:53Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20190504"
+    },
+    {
+      "id": 17639906,
+      "tag_name": "20190528",
+      "name": "20190528",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-05-28T20:53:02Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20190528"
+    },
+    {
+      "id": 20135068,
+      "tag_name": "20190920",
+      "name": "20190920 with LLVM stable 9.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-09-20T10:47:14Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20190920"
+    },
+    {
+      "id": 22522712,
+      "tag_name": "20191230",
+      "name": "20191230",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-12-30T21:54:03Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20191230"
+    },
+    {
+      "id": 24849782,
+      "tag_name": "20200325",
+      "name": "20200325 with LLVM stable 10.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-03-25T13:38:43Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20200325"
+    },
+    {
+      "id": 32832140,
+      "tag_name": "20201020",
+      "name": "20201020 with LLVM stable 11.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-10-20T20:42:49Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20201020"
+    },
+    {
+      "id": 41898696,
+      "tag_name": "20210423",
+      "name": "20210423 with LLVM stable 12.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-04-23T12:17:45Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20210423"
+    },
+    {
+      "id": 47908354,
+      "tag_name": "20210816",
+      "name": "20210816 with LLVM 13.0.0 RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2021-08-16T13:16:30Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20210816"
+    },
+    {
+      "id": 50672681,
+      "tag_name": "20211002",
+      "name": "20211002 with LLVM stable 13.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-10-02T07:08:55Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20211002"
+    },
+    {
+      "id": 59138020,
+      "tag_name": "20220209",
+      "name": "20220209 with LLVM 14.0.0 RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-02-09T15:51:02Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20220209"
+    },
+    {
+      "id": 62573145,
+      "tag_name": "20220323",
+      "name": "llvm-mingw 20220323 with LLVM 14.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-03-23T13:04:01Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20220323"
+    },
+    {
+      "id": 73419144,
+      "tag_name": "20220802",
+      "name": "llvm-mingw 20220802 with LLVM 15.0.0 RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2022-08-02T10:00:37Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20220802"
+    },
+    {
+      "id": 76367940,
+      "tag_name": "20220906",
+      "name": "llvm-mingw 20220906 with LLVM 15.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-09-06T11:25:26Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20220906"
+    },
+    {
+      "id": 90669464,
+      "tag_name": "20230130",
+      "name": "llvm-mingw 20230130 with LLVM 16.0.0 RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-01-30T11:37:27Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230130"
+    },
+    {
+      "id": 96182709,
+      "tag_name": "20230320",
+      "name": "llvm-mingw 20230320 with LLVM 16.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-03-20T10:35:05Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230320"
+    },
+    {
+      "id": 100756046,
+      "tag_name": "nightly",
+      "name": "llvm-mingw nightly builds",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-04-25T07:04:47Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/nightly"
+    },
+    {
+      "id": 101179739,
+      "tag_name": "20230427",
+      "name": "llvm-mingw 20230427 with LLVM 16.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-04-27T20:21:36Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230427"
+    },
+    {
+      "id": 101931096,
+      "tag_name": "20230504",
+      "name": "llvm-mingw 20230504 with LLVM 16.0.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-05-04T20:03:01Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230504"
+    },
+    {
+      "id": 103381267,
+      "tag_name": "20230517",
+      "name": "llvm-mingw 20230517 with LLVM 16.0.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-05-17T21:12:54Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230517"
+    },
+    {
+      "id": 106496447,
+      "tag_name": "20230603",
+      "name": "llvm-mingw 20230603 with LLVM 16.0.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-03T15:48:27Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230603"
+    },
+    {
+      "id": 108675687,
+      "tag_name": "20230614",
+      "name": "llvm-mingw 20230614 with LLVM 16.0.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-06-15T06:24:59Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230614"
+    },
+    {
+      "id": 114408363,
+      "tag_name": "20230730",
+      "name": "llvm-mingw 20230730 with LLVM 17.0.0 RC1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-07-30T18:48:25Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230730"
+    },
+    {
+      "id": 116110623,
+      "tag_name": "20230811",
+      "name": "llvm-mingw 20230811 with LLVM 17.0.0 RC2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-08-11T19:11:07Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230811"
+    },
+    {
+      "id": 118347146,
+      "tag_name": "20230822",
+      "name": "llvm-mingw 20230822 with LLVM 17.0.0 RC3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-08-23T05:58:58Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230822"
+    },
+    {
+      "id": 120066516,
+      "tag_name": "20230905",
+      "name": "llvm-mingw 20230905 with LLVM 17.0.0 RC4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2023-09-06T07:31:03Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230905"
+    },
+    {
+      "id": 121820735,
+      "tag_name": "20230919",
+      "name": "llvm-mingw 20230919 with LLVM 17.0.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-20T07:35:37Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20230919"
+    },
+    {
+      "id": 123553913,
+      "tag_name": "20231003",
+      "name": "llvm-mingw 20231003 with LLVM 17.0.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-03T18:43:34Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20231003"
+    },
+    {
+      "id": 125504786,
+      "tag_name": "20231017",
+      "name": "llvm-mingw 20231017 with LLVM 17.0.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-17T21:43:38Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20231017"
+    },
+    {
+      "id": 127431413,
+      "tag_name": "20231031",
+      "name": "llvm-mingw 20231031 with LLVM 17.0.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-31T20:22:47Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20231031"
+    },
+    {
+      "id": 129451802,
+      "tag_name": "20231114",
+      "name": "llvm-mingw 20231114 with LLVM 17.0.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-14T21:37:34Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20231114"
+    },
+    {
+      "id": 131813285,
+      "tag_name": "20231128",
+      "name": "llvm-mingw 20231128 with LLVM 17.0.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-11-28T21:24:44Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20231128"
+    },
+    {
+      "id": 139143177,
+      "tag_name": "20240130",
+      "name": "llvm-mingw 20240130 with LLVM 18.1.0 RC 1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-01-30T14:50:04Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240130"
+    },
+    {
+      "id": 140320179,
+      "tag_name": "20240207",
+      "name": "llvm-mingw 20240207 with LLVM 18.1.0 RC 2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-02-07T13:01:14Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240207"
+    },
+    {
+      "id": 142963071,
+      "tag_name": "20240221",
+      "name": "llvm-mingw 20240221 with LLVM 18.1.0 RC 3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-02-21T12:38:04Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240221"
+    },
+    {
+      "id": 143941785,
+      "tag_name": "20240227",
+      "name": "llvm-mingw 20240227 with LLVM 18.1.0 RC 4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-02-28T06:53:38Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240227"
+    },
+    {
+      "id": 145106578,
+      "tag_name": "20240306",
+      "name": "llvm-mingw 20240306 with LLVM 18.1.0 final",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-06T17:24:20Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240306"
+    },
+    {
+      "id": 145610200,
+      "tag_name": "20240308",
+      "name": "llvm-mingw 20240308 with LLVM 18.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-09T08:55:21Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240308"
+    },
+    {
+      "id": 147467077,
+      "tag_name": "20240320",
+      "name": "llvm-mingw 20240320 with LLVM 18.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-03-20T13:37:18Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240320"
+    },
+    {
+      "id": 149843110,
+      "tag_name": "20240404",
+      "name": "llvm-mingw 20240404 with LLVM 18.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-04T20:21:35Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240404"
+    },
+    {
+      "id": 151627372,
+      "tag_name": "20240417",
+      "name": "llvm-mingw 20240417 with LLVM 18.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-04-17T20:02:39Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240417"
+    },
+    {
+      "id": 153909663,
+      "tag_name": "20240502",
+      "name": "llvm-mingw 20240502 with LLVM 18.1.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-05-02T22:23:51Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240502"
+    },
+    {
+      "id": 156428833,
+      "tag_name": "20240518",
+      "name": "llvm-mingw 20240518 with LLVM 18.1.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-05-19T20:46:56Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240518"
+    },
+    {
+      "id": 159266412,
+      "tag_name": "20240606",
+      "name": "llvm-mingw 20240606 with LLVM 18.1.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-06T20:27:56Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240606"
+    },
+    {
+      "id": 161354578,
+      "tag_name": "20240619",
+      "name": "llvm-mingw 20240619 with LLVM 18.1.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-19T20:07:55Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240619"
+    },
+    {
+      "id": 167426947,
+      "tag_name": "20240726",
+      "name": "llvm-mingw 20240726 with LLVM 19.1.0 RC 1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-07-26T20:22:45Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240726"
+    },
+    {
+      "id": 168787868,
+      "tag_name": "20240805",
+      "name": "llvm-mingw 20240805 with LLVM 19.1.0 RC 2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-08-05T20:55:09Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240805"
+    },
+    {
+      "id": 171137852,
+      "tag_name": "20240820",
+      "name": "llvm-mingw 20240820 with LLVM 19.1.0 RC 3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-08-20T19:06:32Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240820"
+    },
+    {
+      "id": 173360060,
+      "tag_name": "20240903",
+      "name": "llvm-mingw 20240903 with LLVM 19.1.0 RC 4",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2024-09-04T07:35:48Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240903"
+    },
+    {
+      "id": 175531698,
+      "tag_name": "20240917",
+      "name": "llvm-mingw 20240917 with LLVM 19.1.0 final",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-09-17T19:39:19Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20240917"
+    },
+    {
+      "id": 177882714,
+      "tag_name": "20241001",
+      "name": "llvm-mingw 20241001 with LLVM 19.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-01T20:03:12Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20241001"
+    },
+    {
+      "id": 180093648,
+      "tag_name": "20241015",
+      "name": "llvm-mingw 20241015 with LLVM 19.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-15T19:53:28Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20241015"
+    },
+    {
+      "id": 182950735,
+      "tag_name": "20241030",
+      "name": "llvm-mingw 20241030 with LLVM 19.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-10-31T15:30:28Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20241030"
+    },
+    {
+      "id": 186371768,
+      "tag_name": "20241119",
+      "name": "llvm-mingw 20241119 with LLVM 19.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-11-20T09:45:12Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20241119"
+    },
+    {
+      "id": 188811273,
+      "tag_name": "20241203",
+      "name": "llvm-mingw 20241203 with LLVM 19.1.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-12-03T21:45:55Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20241203"
+    },
+    {
+      "id": 191417108,
+      "tag_name": "20241217",
+      "name": "llvm-mingw 20241217 with LLVM 19.1.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-12-18T11:42:49Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20241217"
+    },
+    {
+      "id": 194788611,
+      "tag_name": "20250114",
+      "name": "llvm-mingw 20250114 with LLVM 19.1.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-01-14T22:20:59Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250114"
+    },
+    {
+      "id": 198203186,
+      "tag_name": "20250203",
+      "name": "llvm-mingw 20250203 with LLVM 20.1.0 RC 1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-02-03T22:00:06Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250203"
+    },
+    {
+      "id": 199910445,
+      "tag_name": "20250212",
+      "name": "llvm-mingw 20250212 with LLVM 20.1.0 RC 2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-02-12T16:31:09Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250212"
+    },
+    {
+      "id": 202901159,
+      "tag_name": "20250227",
+      "name": "llvm-mingw 20250227 with LLVM 20.1.0 RC 3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-02-27T21:16:32Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250227"
+    },
+    {
+      "id": 203963714,
+      "tag_name": "20250305",
+      "name": "llvm-mingw 20250305 with LLVM 20.1.0 final",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-03-05T21:10:35Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250305"
+    },
+    {
+      "id": 206904003,
+      "tag_name": "20250319",
+      "name": "llvm-mingw 20250319 with LLVM 20.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-03-19T16:11:38Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250319"
+    },
+    {
+      "id": 209910640,
+      "tag_name": "20250402",
+      "name": "llvm-mingw 20250402 with LLVM 20.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-04-02T17:01:57Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250402"
+    },
+    {
+      "id": 213190688,
+      "tag_name": "20250417",
+      "name": "llvm-mingw 20250417 with LLVM 20.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-04-17T20:14:04Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250417"
+    },
+    {
+      "id": 215973063,
+      "tag_name": "20250430",
+      "name": "llvm-mingw 20250430 with LLVM 20.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-05-01T11:37:56Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250430"
+    },
+    {
+      "id": 218768417,
+      "tag_name": "20250514",
+      "name": "llvm-mingw 20250514 with LLVM 20.1.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-05-15T09:20:50Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250514"
+    },
+    {
+      "id": 221777345,
+      "tag_name": "20250528",
+      "name": "llvm-mingw 20250528 with LLVM 20.1.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-05-29T09:28:53Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250528"
+    },
+    {
+      "id": 225165046,
+      "tag_name": "20250613",
+      "name": "llvm-mingw 20250613 with LLVM 20.1.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-06-13T13:09:17Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250613"
+    },
+    {
+      "id": 231347301,
+      "tag_name": "20250709",
+      "name": "llvm-mingw 20250709 with LLVM 20.1.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-07-10T06:32:34Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250709"
+    },
+    {
+      "id": 233389268,
+      "tag_name": "20250717",
+      "name": "llvm-mingw 20250717 with LLVM 21.1.0 RC 1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-07-18T06:02:15Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250717"
+    },
+    {
+      "id": 236390199,
+      "tag_name": "20250730",
+      "name": "llvm-mingw 20250730 with LLVM 21.1.0 RC 2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-07-30T20:01:48Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250730"
+    },
+    {
+      "id": 239578432,
+      "tag_name": "20250812",
+      "name": "llvm-mingw 20250812 with LLVM 21.1.0 RC 3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2025-08-13T07:35:21Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250812"
+    },
+    {
+      "id": 242779219,
+      "tag_name": "20250826",
+      "name": "llvm-mingw 20250826 with LLVM 21.1.0 final",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-08-27T06:31:49Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250826"
+    },
+    {
+      "id": 246281599,
+      "tag_name": "20250910",
+      "name": "llvm-mingw 20250910 with LLVM 21.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-09-10T19:25:29Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250910"
+    },
+    {
+      "id": 249787955,
+      "tag_name": "20250924",
+      "name": "llvm-mingw 20250924 with LLVM 21.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-09-24T19:19:01Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20250924"
+    },
+    {
+      "id": 252930728,
+      "tag_name": "20251007",
+      "name": "llvm-mingw 20251007 with LLVM 21.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-08T07:21:53Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20251007"
+    },
+    {
+      "id": 256122474,
+      "tag_name": "20251021",
+      "name": "llvm-mingw 20251021 with LLVM 21.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-10-21T19:16:41Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20251021"
+    },
+    {
+      "id": 259808834,
+      "tag_name": "20251104",
+      "name": "llvm-mingw 20251104 with LLVM 21.1.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-05T08:23:13Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20251104"
+    },
+    {
+      "id": 263622490,
+      "tag_name": "20251118",
+      "name": "llvm-mingw 20251118 with LLVM 21.1.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-19T12:50:40Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20251118"
+    },
+    {
+      "id": 266842289,
+      "tag_name": "20251202",
+      "name": "llvm-mingw 20251202 with LLVM 21.1.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-02T18:34:14Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20251202"
+    },
+    {
+      "id": 271008408,
+      "tag_name": "20251216",
+      "name": "llvm-mingw 20251216 with LLVM 21.1.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-12-17T09:00:57Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20251216"
+    },
+    {
+      "id": 277540964,
+      "tag_name": "20260116",
+      "name": "llvm-mingw 20260116 with LLVM 22.1.0 RC 1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-01-16T21:27:49Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260116"
+    },
+    {
+      "id": 280608591,
+      "tag_name": "20260127",
+      "name": "llvm-mingw 20260127 with LLVM 22.1.0 RC 2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-01-28T08:50:43Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260127"
+    },
+    {
+      "id": 285108629,
+      "tag_name": "20260210",
+      "name": "llvm-mingw 20260210 with LLVM 22.1.0 RC 3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-02-11T06:08:19Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260210"
+    },
+    {
+      "id": 290076805,
+      "tag_name": "20260224",
+      "name": "llvm-mingw 20260224 with LLVM 22.1.0 final",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-24T21:41:02Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260224"
+    },
+    {
+      "id": 295744071,
+      "tag_name": "20260311",
+      "name": "llvm-mingw 20260311 with LLVM 22.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-11T16:06:19Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260311"
+    },
+    {
+      "id": 301020209,
+      "tag_name": "20260324",
+      "name": "llvm-mingw 20260324 with LLVM 22.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-25T06:13:09Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260324"
+    },
+    {
+      "id": 306303421,
+      "tag_name": "20260407",
+      "name": "llvm-mingw 20260407 with LLVM 22.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-07T21:27:04Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260407"
+    },
+    {
+      "id": 311910272,
+      "tag_name": "20260421",
+      "name": "llvm-mingw 20260421 with LLVM 22.1.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-21T19:35:01Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260421"
+    },
+    {
+      "id": 318239920,
+      "tag_name": "20260505",
+      "name": "llvm-mingw 20260505 with LLVM 22.1.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-06T07:08:15Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260505"
+    },
+    {
+      "id": 325351914,
+      "tag_name": "20260519",
+      "name": "llvm-mingw 20260519 with LLVM 22.1.6",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-19T20:45:35Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260519"
+    },
+    {
+      "id": 333337557,
+      "tag_name": "20260602",
+      "name": "llvm-mingw 20260602 with LLVM 22.1.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-02T19:39:26Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260602"
+    },
+    {
+      "id": 341048778,
+      "tag_name": "20260616",
+      "name": "llvm-mingw 20260616 with LLVM 22.1.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-06-17T21:08:13Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260616"
+    },
+    {
+      "id": 357467261,
+      "tag_name": "20260721",
+      "name": "llvm-mingw 20260721 with LLVM 23.1.0 RC 1",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-07-21T15:59:03Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260721"
+    },
+    {
+      "id": 361398800,
+      "tag_name": "20260728",
+      "name": "llvm-mingw 20260728 with LLVM 23.1.0 RC 2",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-07-28T21:55:33Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260728"
+    },
+    {
+      "id": 369385953,
+      "tag_name": "20260812",
+      "name": "llvm-mingw 20260812 with LLVM 23.1.0 RC 3",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2026-08-12T16:37:52Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260812"
+    },
+    {
+      "id": 377373805,
+      "tag_name": "20260826",
+      "name": "llvm-mingw 20260826 with LLVM 23.1.0 final",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-08-26T19:34:08Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260826"
+    },
+    {
+      "id": 385043112,
+      "tag_name": "20260908",
+      "name": "llvm-mingw 20260908 with LLVM 23.1.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-09-08T20:31:08Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260908"
+    },
+    {
+      "id": 393916024,
+      "tag_name": "20260922",
+      "name": "llvm-mingw 20260922 with LLVM 23.1.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-09-22T16:15:04Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20260922"
+    },
+    {
+      "id": 405539774,
+      "tag_name": "20261006",
+      "name": "llvm-mingw 20261006 with LLVM 23.1.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-10-07T08:23:32Z",
+      "html_url": "https://github.com/mstorsjo/llvm-mingw/releases/tag/20261006"
+    }
+  ],
+  "tags": [
+    {
+      "name": "20261006",
+      "sha": "e1878a59f8bf3e1a73afe28f1b83168b1d029ed8",
+      "date": "2026-10-06T16:18:12Z"
+    },
+    {
+      "name": "20260922",
+      "sha": "0eca5ac93da14a74bc81c249e841356ececc5d95",
+      "date": "2026-09-22T09:31:01Z"
+    },
+    {
+      "name": "nightly",
+      "sha": "586a9acf02b3007086d68c94968cca81d078be9d",
+      "date": "2023-04-21T21:37:18Z"
+    },
+    {
+      "name": "20260908",
+      "sha": "030097eeee87fcfd0f3bfe536b21cbd6e5d3b324",
+      "date": "2026-09-08T11:49:19Z"
+    },
+    {
+      "name": "20260826",
+      "sha": "14614551fb5fc0f725933e4959c75c06d347acfa",
+      "date": "2026-08-26T09:57:39Z"
+    },
+    {
+      "name": "20260728",
+      "sha": "327d1a081c1ae2ea787bb5235d91867695a947c7",
+      "date": "2026-07-28T15:50:47Z"
+    },
+    {
+      "name": "20260721",
+      "sha": "3f54c5b996f1817d1bf359efc454a59123c0119f",
+      "date": "2026-03-31T20:51:18Z"
+    },
+    {
+      "name": "20260812",
+      "sha": "26a7ab6ff08e1bb323ed0740a15a553fbc0997f9",
+      "date": "2026-07-27T17:12:19Z"
+    },
+    {
+      "name": "20260616",
+      "sha": "170b7e1ec4ad1d9264e6ba320cd4d02f96299c60",
+      "date": "2026-06-16T19:02:42Z"
+    },
+    {
+      "name": "20260602",
+      "sha": "0272df2cc108a3392d5dcf1cc20c3b48910b08af",
+      "date": "2026-06-02T09:20:07Z"
+    },
+    {
+      "name": "20260505",
+      "sha": "ba72461e23d4c39af693c30556e24346194c144b",
+      "date": "2026-05-05T19:53:07Z"
+    },
+    {
+      "name": "20260519",
+      "sha": "8adc11d4cf27c2301b788bb473b1c19addd26d5b",
+      "date": "2026-05-19T09:27:40Z"
+    },
+    {
+      "name": "20260421",
+      "sha": "81fba99f8a388b07b2c14be0e4e17af6bd9d59a4",
+      "date": "2026-04-21T08:59:07Z"
+    },
+    {
+      "name": "20260407",
+      "sha": "49df766757bd19368a2bc27552f58d157b8dd57b",
+      "date": "2026-04-07T11:08:35Z"
+    },
+    {
+      "name": "20260311",
+      "sha": "cb0e9ef0be34b66fcf4d9edcdb8f1c69f2df1d3a",
+      "date": "2026-03-11T07:39:31Z"
+    },
+    {
+      "name": "20260324",
+      "sha": "16f4a0af0c81ef9fcaa85f7c02b9eab29e4bc462",
+      "date": "2026-03-24T21:42:53Z"
+    },
+    {
+      "name": "20260224",
+      "sha": "9610c61240a3fad2637f199c093de15cd68bac14",
+      "date": "2026-02-24T08:26:41Z"
+    },
+    {
+      "name": "20260210",
+      "sha": "5da3d4b11b799026f5cee0e7267984a6ab30d4b5",
+      "date": "2026-02-10T08:07:25Z"
+    },
+    {
+      "name": "20260127",
+      "sha": "498cc00a1d9b7ed19017da6fd0c61f9e7b5016af",
+      "date": "2026-01-27T11:33:36Z"
+    },
+    {
+      "name": "20260116",
+      "sha": "1032736a4ce1c6abc8cb8029eb4e41acbbaf41e4",
+      "date": "2026-01-16T11:09:06Z"
+    },
+    {
+      "name": "20251216",
+      "sha": "88f330fefc1b438cad524c4fde2e76da4d7692f9",
+      "date": "2025-12-16T13:15:59Z"
+    },
+    {
+      "name": "20251202",
+      "sha": "1c915916c70d7be82e0c2ebfee58079e9302551b",
+      "date": "2025-12-02T09:29:17Z"
+    },
+    {
+      "name": "20251118",
+      "sha": "259cd18db3419d4c68571f6edb87828f8dc77894",
+      "date": "2025-11-18T12:40:09Z"
+    },
+    {
+      "name": "20251104",
+      "sha": "466fbcb68f024758c20cbea9544a44d1e5194bdc",
+      "date": "2025-11-04T09:47:32Z"
+    },
+    {
+      "name": "20251021",
+      "sha": "035a464964ff4b618a0505cbc14bc3e3804e3b2c",
+      "date": "2025-10-21T08:30:31Z"
+    },
+    {
+      "name": "20251007",
+      "sha": "6f078940a390a3391ad87835cd634b5ae6212a64",
+      "date": "2025-10-07T19:33:31Z"
+    },
+    {
+      "name": "20250924",
+      "sha": "796122a1075c5db77b20faf539dde83cc21be900",
+      "date": "2025-09-24T06:42:54Z"
+    },
+    {
+      "name": "20250910",
+      "sha": "1afe6393260a2cfb3406b42e96a4b24171dedda0",
+      "date": "2025-09-10T08:45:56Z"
+    },
+    {
+      "name": "20250826",
+      "sha": "096033f443be65786d03f4ca1cc489ae3cc7baa0",
+      "date": "2025-08-26T19:37:10Z"
+    },
+    {
+      "name": "20250812",
+      "sha": "5bade0999855b0e5f9d01e51a75601a0dab55520",
+      "date": "2025-08-12T10:37:27Z"
+    },
+    {
+      "name": "20250730",
+      "sha": "fd7848ea841c6e4a8e4eaa4448ca90a622ebc0a9",
+      "date": "2025-07-30T07:38:30Z"
+    },
+    {
+      "name": "20250717",
+      "sha": "4a6030a85063358deb2b94605ef5a54a9997c449",
+      "date": "2025-05-23T07:46:41Z"
+    },
+    {
+      "name": "20250709",
+      "sha": "a1f6413e5c21fd74b64137b56167f4fba500d1d8",
+      "date": "2025-07-09T16:50:09Z"
+    },
+    {
+      "name": "20250613",
+      "sha": "28748c4b2dbc7396f095bafd92321958c5a2db1c",
+      "date": "2025-06-13T06:56:49Z"
+    },
+    {
+      "name": "20250528",
+      "sha": "40ccfd163eee35468c0cc5f356649d13029aec8b",
+      "date": "2025-05-28T20:03:14Z"
+    },
+    {
+      "name": "20250514",
+      "sha": "5609c66213f6f2fa4911e86bce3207b9121c9f13",
+      "date": "2025-05-14T19:25:18Z"
+    },
+    {
+      "name": "20250430",
+      "sha": "4c82a47afb8ab80a58fe08f19021e4feb9ee3cb5",
+      "date": "2025-04-30T09:07:34Z"
+    },
+    {
+      "name": "20250417",
+      "sha": "c608b57a2e8d040fc418327c3a0ca0e9daf9fd8f",
+      "date": "2025-04-17T11:56:18Z"
+    },
+    {
+      "name": "20250402",
+      "sha": "c2b534c2062bf10b422838ecd476613ee155eed0",
+      "date": "2025-04-02T08:47:31Z"
+    },
+    {
+      "name": "20250319",
+      "sha": "4ba117875555a51c911cc3fe7b2dac9f4c648377",
+      "date": "2025-03-19T09:18:31Z"
+    },
+    {
+      "name": "20250305",
+      "sha": "dc3e0ecbe646d504ef616eafe5c454ee4293e8a7",
+      "date": "2025-03-05T07:48:12Z"
+    },
+    {
+      "name": "20250212",
+      "sha": "73e313146e7cef5f7af5e9507f842313b318a423",
+      "date": "2025-02-12T08:47:21Z"
+    },
+    {
+      "name": "20250227",
+      "sha": "d3ba074621b3355ce8c28f4b2f30e48aed0826ad",
+      "date": "2025-02-27T12:02:22Z"
+    },
+    {
+      "name": "20250203",
+      "sha": "e3a808fec679b68706a1e175add4caa3cf3a2c8a",
+      "date": "2025-02-03T13:02:29Z"
+    },
+    {
+      "name": "20250114",
+      "sha": "0087c59c17cbf02066abf71bed3300ce68babc19",
+      "date": "2025-01-14T15:55:21Z"
+    },
+    {
+      "name": "20241217",
+      "sha": "8400557f2b489b1bf1ed29e0e90eb9c27b19688f",
+      "date": "2024-12-17T15:35:19Z"
+    },
+    {
+      "name": "20241119",
+      "sha": "9128fa8dbaea64ded0bae9edd1ca06e10b0d19f4",
+      "date": "2024-11-19T13:21:30Z"
+    },
+    {
+      "name": "20241203",
+      "sha": "14dad0c971297ac4fd21d1019ca8274956216d15",
+      "date": "2024-12-03T13:09:48Z"
+    },
+    {
+      "name": "20241015",
+      "sha": "7851e99345a782a836612aa6e06fdd23350034b5",
+      "date": "2024-10-15T12:02:57Z"
+    },
+    {
+      "name": "20241030",
+      "sha": "0ebb52ae0ef9d58f26dcb87d0807808615b722dd",
+      "date": "2024-10-30T13:41:58Z"
+    },
+    {
+      "name": "20241001",
+      "sha": "d9d46de5f3d48a0799af90c9254d3e989862bc36",
+      "date": "2024-10-01T13:34:57Z"
+    },
+    {
+      "name": "20240917",
+      "sha": "b4c27601004dc3056886da27e5c1108200da95d8",
+      "date": "2024-09-17T11:49:31Z"
+    },
+    {
+      "name": "20240903",
+      "sha": "a7f4cf9670638a4b913821ae0bd512eeaf0a5f80",
+      "date": "2024-09-03T15:45:45Z"
+    },
+    {
+      "name": "20240820",
+      "sha": "c5d169f1dc4b51481d86748e817878b6951c7eaa",
+      "date": "2024-08-20T08:30:25Z"
+    },
+    {
+      "name": "20240726",
+      "sha": "27c551ddb105503b94f9bb4dc526c38c6068b8f7",
+      "date": "2024-07-26T13:07:12Z"
+    },
+    {
+      "name": "20240805",
+      "sha": "bab9e279e3974f1df170e0fe4741ea07611014da",
+      "date": "2024-08-05T11:37:21Z"
+    },
+    {
+      "name": "20240606",
+      "sha": "ab7e195ef3b3bd8dcacc1d4fe5d18992710cf060",
+      "date": "2024-06-06T07:54:22Z"
+    },
+    {
+      "name": "20240619",
+      "sha": "e3e9f97fab0d880df39dc4237c9e315bfa90fcf6",
+      "date": "2024-06-19T09:56:40Z"
+    },
+    {
+      "name": "20240502",
+      "sha": "6c748d21ddd212ecbe8d2ee0e0164763a836f40f",
+      "date": "2024-04-23T09:48:57Z"
+    },
+    {
+      "name": "20240518",
+      "sha": "f2ca758fcd924ebec5500e8434f7f9a156213ce7",
+      "date": "2024-05-18T21:24:40Z"
+    },
+    {
+      "name": "20240417",
+      "sha": "760b639c20663da504d757338b405ea53215d7d1",
+      "date": "2024-04-17T07:53:21Z"
+    },
+    {
+      "name": "20240404",
+      "sha": "03948b69d7ef63ffbee2f31faf341d032d3220be",
+      "date": "2024-04-04T08:25:09Z"
+    },
+    {
+      "name": "20240308",
+      "sha": "79e51a92c3454f3b6a6022b3d925d34d8115d125",
+      "date": "2024-03-08T21:57:07Z"
+    },
+    {
+      "name": "20240320",
+      "sha": "4a60685f51f4148d93f2f6539d25361a7074e8a8",
+      "date": "2024-03-20T07:12:51Z"
+    },
+    {
+      "name": "20240306",
+      "sha": "5bf2c94e6f0cebf185b17837ac444208dc849b85",
+      "date": "2024-03-06T07:45:31Z"
+    },
+    {
+      "name": "20240227",
+      "sha": "eda1a47ce0d4361e59b28b4876e4f2cd81075133",
+      "date": "2024-02-27T21:34:35Z"
+    },
+    {
+      "name": "20240207",
+      "sha": "6775203bdeed002e2df3a94fc0d5ccbb16d0d9fb",
+      "date": "2024-02-07T07:34:56Z"
+    },
+    {
+      "name": "20240221",
+      "sha": "489a96cc70882da6ade6706340a6b17276a3601f",
+      "date": "2024-02-21T07:04:04Z"
+    },
+    {
+      "name": "20240130",
+      "sha": "f4f78cd9842a76ed32ad376c23ea81e9ddcb695e",
+      "date": "2024-01-30T07:13:18Z"
+    },
+    {
+      "name": "20231128",
+      "sha": "387bfba3cbba12f6ecb864a286e73a86251182d6",
+      "date": "2023-11-28T11:19:45Z"
+    },
+    {
+      "name": "20231031",
+      "sha": "845805bcfe127126657bed8b962ce72ed863ccba",
+      "date": "2023-10-04T10:20:26Z"
+    },
+    {
+      "name": "20231114",
+      "sha": "57298c1a93831667ead3d672441d95a181b3b339",
+      "date": "2023-11-14T10:42:27Z"
+    },
+    {
+      "name": "20231017",
+      "sha": "58cbdf94530cd49a1c628d8e209b102d50acdeaf",
+      "date": "2023-10-17T06:51:55Z"
+    },
+    {
+      "name": "20231003",
+      "sha": "d21c2d471647204b061231daa04e951b27d53797",
+      "date": "2023-10-03T07:33:11Z"
+    },
+    {
+      "name": "20230919",
+      "sha": "dc034e28601af11df4cf80de60154aac98a9dca8",
+      "date": "2023-09-19T11:06:24Z"
+    },
+    {
+      "name": "20230905",
+      "sha": "5ee46738a176409436129b87ccac1298fca0186c",
+      "date": "2023-09-05T19:00:10Z"
+    },
+    {
+      "name": "20230822",
+      "sha": "e3545e2ffc3f6e62a9ce96ce125a04a19c2be7d6",
+      "date": "2023-08-22T08:31:09Z"
+    },
+    {
+      "name": "20230811",
+      "sha": "464de1eb89348a64c3ac7c91740917350307d534",
+      "date": "2023-08-09T20:20:50Z"
+    },
+    {
+      "name": "20230730",
+      "sha": "fec22cf2ddd468b5d83ed7cdf00ee20c5147e1e5",
+      "date": "2023-07-29T11:04:10Z"
+    },
+    {
+      "name": "20230614",
+      "sha": "271242426ac982458304f9573f515e26342d1062",
+      "date": "2023-06-14T06:19:01Z"
+    },
+    {
+      "name": "20230603",
+      "sha": "7e8bcdc43c8b68dd25d39e583cb41dc21a0d6c22",
+      "date": "2023-06-02T14:42:49Z"
+    },
+    {
+      "name": "20230517",
+      "sha": "274a30cff5bf96efeb6b6c7a5a4783fa6fda1e69",
+      "date": "2023-05-17T06:02:02Z"
+    },
+    {
+      "name": "20230504",
+      "sha": "001c3a2bcf3748bd88b39e2d0a2d2a6030a43016",
+      "date": "2023-05-03T06:27:30Z"
+    },
+    {
+      "name": "20230427",
+      "sha": "0e13ea4e5a88b58a114d6e65e9ef6efa45e06e9c",
+      "date": "2023-04-24T07:41:10Z"
+    },
+    {
+      "name": "20230320",
+      "sha": "1ca5ecf22fb1d43231df406a6c0f8d8db21e23d3",
+      "date": "2023-03-20T08:02:31Z"
+    },
+    {
+      "name": "20230130",
+      "sha": "8536b740e3d438a120b5432fe6cf2b4277f8daa6",
+      "date": "2023-01-18T19:34:44Z"
+    },
+    {
+      "name": "20220906",
+      "sha": "0a980a4f1c3710cb1a6d1db10be527d3a0ec7cbe",
+      "date": "2022-09-06T07:44:45Z"
+    },
+    {
+      "name": "20220802",
+      "sha": "f2ebd644aee08a4b7dc6d7668e39fd389ea3af72",
+      "date": "2022-06-22T05:12:59Z"
+    },
+    {
+      "name": "20220323",
+      "sha": "8009a236b8dc5c3e2446bc901e8d94855864f04a",
+      "date": "2022-03-23T08:16:18Z"
+    },
+    {
+      "name": "20211002",
+      "sha": "378525eb9b72a7deacdde084356926724238e231",
+      "date": "2021-10-01T19:27:24Z"
+    },
+    {
+      "name": "20210816",
+      "sha": "b0864ea9ae521362e1f7c893a95cd66248cc1c28",
+      "date": "2021-08-16T10:59:24Z"
+    },
+    {
+      "name": "20220209",
+      "sha": "26dd3e46fe630495a174b58273c45ec72b306307",
+      "date": "2022-02-09T13:49:43Z"
+    },
+    {
+      "name": "20210423",
+      "sha": "173ac732e9a8c8e7ff3047581a4b4abcb2c40a7a",
+      "date": "2021-04-23T11:38:15Z"
+    },
+    {
+      "name": "20201020",
+      "sha": "0e3600182d13138aa7c0b3cca862552f782e3cb1",
+      "date": "2020-10-20T11:36:16Z"
+    },
+    {
+      "name": "20200325",
+      "sha": "ca303864baec8f7f9d86768a10f813395d049086",
+      "date": "2019-12-30T21:10:45Z"
+    },
+    {
+      "name": "20191230",
+      "sha": "de510f07b5fc00d4bb03ef89a9ee1bae4c7b8147",
+      "date": "2019-09-16T08:44:03Z"
+    },
+    {
+      "name": "20190528",
+      "sha": "7edc154d50ac50f84c5309487b31ba43086f2889",
+      "date": "2019-05-28T12:29:08Z"
+    },
+    {
+      "name": "20190920",
+      "sha": "ef9af0d3ad9aac1cdbdba0e800c130776be5a1d7",
+      "date": "2019-07-30T12:48:15Z"
+    },
+    {
+      "name": "20190124",
+      "sha": "68aa79a99b2d7da639088f116a62fa19f3f6b4f1",
+      "date": "2019-01-24T11:44:47Z"
+    },
+    {
+      "name": "20190504",
+      "sha": "debd8ca3825738006abfc6e64151b57fa123c39e",
+      "date": "2019-05-03T11:36:38Z"
+    },
+    {
+      "name": "20181017",
+      "sha": "f09fc9d618a53ee3ee24aeef2c84c3f8419be51a",
+      "date": "2018-10-17T15:32:02Z"
+    },
+    {
+      "name": "20190103",
+      "sha": "6d9eb8296f0c128005377a6f2462fb54875033f9",
+      "date": "2019-01-03T06:56:39Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "20250924",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "20251007",
+      "previous_release": "20250924",
+      "commits": [
+        {
+          "sha": "ec3b6109a377c15cb4f82259b490b21c49a51676",
+          "author_date": "2025-10-07T19:33:13Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Oct 7th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/ec3b6109a377c15cb4f82259b490b21c49a51676"
+        },
+        {
+          "sha": "6f078940a390a3391ad87835cd634b5ae6212a64",
+          "author_date": "2025-10-07T19:33:31Z",
+          "message": "build-llvm: Bump to LLVM 21.1.3",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/6f078940a390a3391ad87835cd634b5ae6212a64"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20251021",
+      "previous_release": "20251007",
+      "commits": [
+        {
+          "sha": "b482faa3c123eedc8aa3ae2dedcda1d0ed8fff46",
+          "author_date": "2025-04-06T20:27:18Z",
+          "message": "fix: repair check if existing clang supports CFG\n\nAn existing clang might support Control flow guard, but does\nso only for Windows targets.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/b482faa3c123eedc8aa3ae2dedcda1d0ed8fff46"
+        },
+        {
+          "sha": "84abc5e88a080bc087efe781e98ddea4ce011f49",
+          "author_date": "2025-10-21T08:30:11Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Oct 21st",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/84abc5e88a080bc087efe781e98ddea4ce011f49"
+        },
+        {
+          "sha": "035a464964ff4b618a0505cbc14bc3e3804e3b2c",
+          "author_date": "2025-10-21T08:30:31Z",
+          "message": "build-llvm: Bump to LLVM 21.1.4\n\nThis version fixes catching pointer data types by reference in C++.\n\nThis version also fixes throwing C++ exceptions on aarch64 with\na debugger attached to the process.\n\nFinally, this version fixes delayimport calling of C++ methods that\nreturn structs on aarch64.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/035a464964ff4b618a0505cbc14bc3e3804e3b2c"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20251104",
+      "previous_release": "20251021",
+      "commits": [
+        {
+          "sha": "e6cbbe9a352fe6da6ba587fa4f6317f0701fdf5a",
+          "author_date": "2025-10-08T20:43:05Z",
+          "message": "test: Add a test for catching pointers by reference\n\nThis test should make sure that\nhttps://github.com/mstorsjo/llvm-mingw/issues/522 doesn't\nregress again.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/e6cbbe9a352fe6da6ba587fa4f6317f0701fdf5a"
+        },
+        {
+          "sha": "09aac5c1210acb851e7542bd10952993f86c54d2",
+          "author_date": "2025-10-25T18:56:24Z",
+          "message": "strip-llvm: Extend patterns to remove \"offload-arch\" and \"yaml2macho-core\"",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/09aac5c1210acb851e7542bd10952993f86c54d2"
+        },
+        {
+          "sha": "18964a2b0bd288e9b58dafa45ec0c26fe82d79f3",
+          "author_date": "2025-11-04T09:47:09Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Nov 4th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/18964a2b0bd288e9b58dafa45ec0c26fe82d79f3"
+        },
+        {
+          "sha": "466fbcb68f024758c20cbea9544a44d1e5194bdc",
+          "author_date": "2025-11-04T09:47:32Z",
+          "message": "build-llvm: Bump to LLVM 21.1.5",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/466fbcb68f024758c20cbea9544a44d1e5194bdc"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20251118",
+      "previous_release": "20251104",
+      "commits": [
+        {
+          "sha": "9e39b82907a039dfe51cb899137a2d697eefd29b",
+          "author_date": "2025-11-17T19:47:01Z",
+          "message": "install-wrappers: Add config file symlinks for triples with vendor \"pc\"",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/9e39b82907a039dfe51cb899137a2d697eefd29b"
+        },
+        {
+          "sha": "ac41e524f3d2be76568495df8c8450917d978283",
+          "author_date": "2025-11-18T12:39:53Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Nov 18th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/ac41e524f3d2be76568495df8c8450917d978283"
+        },
+        {
+          "sha": "259cd18db3419d4c68571f6edb87828f8dc77894",
+          "author_date": "2025-11-18T12:40:09Z",
+          "message": "build-llvm: Bump to LLVM 21.1.6",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/259cd18db3419d4c68571f6edb87828f8dc77894"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20251202",
+      "previous_release": "20251118",
+      "commits": [
+        {
+          "sha": "3b2ce1d0d02df89d7d2996654db5ab698054e6a0",
+          "author_date": "2025-12-02T09:28:35Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Dec 2nd",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/3b2ce1d0d02df89d7d2996654db5ab698054e6a0"
+        },
+        {
+          "sha": "1c915916c70d7be82e0c2ebfee58079e9302551b",
+          "author_date": "2025-12-02T09:29:17Z",
+          "message": "build-llvm: Bump to LLVM 21.1.7",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/1c915916c70d7be82e0c2ebfee58079e9302551b"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20251216",
+      "previous_release": "20251202",
+      "commits": [
+        {
+          "sha": "06e91d01b0e05eeac0d245435a5ab8abdef48cfa",
+          "author_date": "2025-12-02T11:38:25Z",
+          "message": "github: Fix passing arguments to lit for the openmp tests\n\nThe previous parameter wasn't used.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/06e91d01b0e05eeac0d245435a5ab8abdef48cfa"
+        },
+        {
+          "sha": "b0bbde007362ba95d2f3b3d8c29e7055910b5258",
+          "author_date": "2025-11-22T23:35:44Z",
+          "message": "github: Cache the gnu make tarball\n\nThis avoids breaking the build if the gnu download server is\nunavailable.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/b0bbde007362ba95d2f3b3d8c29e7055910b5258"
+        },
+        {
+          "sha": "1ce1cf7c3dcb62b39de6bc9c062e569978a1c660",
+          "author_date": "2025-12-08T12:47:41Z",
+          "message": "build-llvm: Allow overriding the llvm repo url through LLVM_REPOSITORY\n\nThis matches the existing LLVM_VERSION env variable.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/1ce1cf7c3dcb62b39de6bc9c062e569978a1c660"
+        },
+        {
+          "sha": "309cdd56904826e53b28de3ccab958edfbb15209",
+          "author_date": "2025-12-04T14:21:51Z",
+          "message": "run-tests: Improve a comment",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/309cdd56904826e53b28de3ccab958edfbb15209"
+        },
+        {
+          "sha": "322c941069a1b5b8f8ec9621a82bb006c72f84ed",
+          "author_date": "2025-12-05T07:59:41Z",
+          "message": "run-tests: Use \"uname\" instead of \"uname -s\"\n\n\"-s\" is the default option if none is specified.\n\nThis improves consistency with other uses of \"uname\" in the\nscripts.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/322c941069a1b5b8f8ec9621a82bb006c72f84ed"
+        },
+        {
+          "sha": "ecabce6cc38f28c37c1402d92b6ad5df21ca9112",
+          "author_date": "2025-12-16T13:15:28Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Dec 16th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/ecabce6cc38f28c37c1402d92b6ad5df21ca9112"
+        },
+        {
+          "sha": "88f330fefc1b438cad524c4fde2e76da4d7692f9",
+          "author_date": "2025-12-16T13:15:59Z",
+          "message": "build-llvm: Bump to LLVM 21.1.8",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/88f330fefc1b438cad524c4fde2e76da4d7692f9"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260224",
+      "previous_release": "20251216",
+      "commits": [
+        {
+          "sha": "6465b7f2ca7d32db5aa3d0a1b003e3b46bf9013a",
+          "author_date": "2025-12-17T11:48:30Z",
+          "message": "github: Cache the gnu make tarball in the msvcrt build too\n\nThis applies the changes from b0bbde007362ba95d2f3b3d8c29e7055910b5258\nto the msvcrt toolchain build as well.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/6465b7f2ca7d32db5aa3d0a1b003e3b46bf9013a"
+        },
+        {
+          "sha": "83a3ca8e0997794c8812230ce24766f07545d168",
+          "author_date": "2025-12-25T22:34:06Z",
+          "message": "build-llvm: Disable LLVM_ENABLE_BINDINGS\n\nAccording to https://github.com/mstorsjo/llvm-mingw/issues/533,\nif OCaml support is detected and the LLVM OCaml bindings are built,\nthey are attempted to be installed in a path that require root access.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/83a3ca8e0997794c8812230ce24766f07545d168"
+        },
+        {
+          "sha": "9e00ce96c7a1706ed2a2558508df7b1ceefafea2",
+          "author_date": "2025-12-03T12:55:30Z",
+          "message": "build-python: Install the license files for libffi and python",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/9e00ce96c7a1706ed2a2558508df7b1ceefafea2"
+        },
+        {
+          "sha": "0b6cd54c4f0ecdf9b4ef5150a3c8459f0d4a9c2b",
+          "author_date": "2026-01-08T09:31:38Z",
+          "message": "build-mingw-w64-tools: Add a .txt suffix on the COPYING files",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/0b6cd54c4f0ecdf9b4ef5150a3c8459f0d4a9c2b"
+        },
+        {
+          "sha": "4a02966e4b87da0cfe4d639f68a114f651705f4c",
+          "author_date": "2026-01-08T09:31:52Z",
+          "message": "build-make: Install the license file",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/4a02966e4b87da0cfe4d639f68a114f651705f4c"
+        },
+        {
+          "sha": "8fb8fb4b05906dfaeb5e019ec689ed9fe992e4ed",
+          "author_date": "2025-12-03T14:30:12Z",
+          "message": "build-busybox: Add a script for building busybox for Windows",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/8fb8fb4b05906dfaeb5e019ec689ed9fe992e4ed"
+        },
+        {
+          "sha": "49aa05c5bce46559252784bef727966a4cdb5f56",
+          "author_date": "2025-12-03T18:13:58Z",
+          "message": "build-busybox: Disable building the AR applet\n\nWhen building with mingw32-make, it prefers executing commands\nthrough \"sh.exe\" if it is available.\n\nWhen busybox sh.exe executes \"ar\", it prefers executing its own\ninternal tool over a potential external tool found in $PATH.\n\n(This can be avoided by setting 'export BB_OVERRIDE_APPLETS=\"ar\"',\nbut as this build of busybox is expected to be used with llvm-mingw,\ndisable the built-in \"ar\" tool outright.)",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/49aa05c5bce46559252784bef727966a4cdb5f56"
+        },
+        {
+          "sha": "15659f926b793afb4044404d16aa0df39345afa7",
+          "author_date": "2025-12-06T22:42:53Z",
+          "message": "build-busybox: Disable CONFIG_FEATURE_FAIL_IF_UTF8_MANIFEST_UNSUPPORTED\n\nThis allows running the built busybox on older versions of\nWindows that don't support the utf8 manifest. (The utf8 manifest\nis supported since Windows 10 update 1903.)",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/15659f926b793afb4044404d16aa0df39345afa7"
+        },
+        {
+          "sha": "e4bee5bfa44ac876b17c01e016c4d086c036593f",
+          "author_date": "2025-12-03T14:46:41Z",
+          "message": "build-cross-tools: Add an option for building busybox",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/e4bee5bfa44ac876b17c01e016c4d086c036593f"
+        },
+        {
+          "sha": "1c87f455432500469847ec9c8b0c1c9b9dda174e",
+          "author_date": "2025-12-03T14:47:58Z",
+          "message": "dockerfile: Add an option for building busybox",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/1c87f455432500469847ec9c8b0c1c9b9dda174e"
+        },
+        {
+          "sha": "64363c14db5dbe564233c6bcf929c7442533f1c3",
+          "author_date": "2025-12-06T22:48:03Z",
+          "message": "build-busybox: Disable make, copy mingw32-make.exe as make.exe\n\nThe built-in make is a POSIX make tool, which doesn't support\nGNU make features.\n\nAs we do have GNU make, insert that as \"make.exe\" in the busybox\ndirectory. Don't do that in the main llvm-mingw bin directory,\nwhich can be used with other environments (e.g. msys2), where the\nnative make is to be preferred.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/64363c14db5dbe564233c6bcf929c7442533f1c3"
+        },
+        {
+          "sha": "17864b5274defc7b56a8dbf0ea92e42c5da0ef2c",
+          "author_date": "2025-12-03T14:48:30Z",
+          "message": "github: Build busybox in the windows toolchains",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/17864b5274defc7b56a8dbf0ea92e42c5da0ef2c"
+        },
+        {
+          "sha": "e2a64961c685a31a96156d13c821be620b8cf9c6",
+          "author_date": "2025-12-06T22:47:09Z",
+          "message": "release.sh: Enable WITH_BUSYBOX",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/e2a64961c685a31a96156d13c821be620b8cf9c6"
+        },
+        {
+          "sha": "90633bc87b22f0e30ef71d32012254a8c68a69e9",
+          "author_date": "2025-12-04T14:21:59Z",
+          "message": "run-tests: Add busybox specific logic for figuring out what architectures we can execute",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/90633bc87b22f0e30ef71d32012254a8c68a69e9"
+        },
+        {
+          "sha": "98a14ed36fcbb8faaad6c5706d54f7c84754217c",
+          "author_date": "2025-12-04T21:48:24Z",
+          "message": "test: Support mingw32-make running with a proper sh.exe",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/98a14ed36fcbb8faaad6c5706d54f7c84754217c"
+        },
+        {
+          "sha": "8220db557f0399858fbd66a0f00e7e331d962c31",
+          "author_date": "2025-12-05T08:16:38Z",
+          "message": "run-tests: Use mingw32-make in busybox\n\nThis is the make tool we'd expect to use in such a setup.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/8220db557f0399858fbd66a0f00e7e331d962c31"
+        },
+        {
+          "sha": "f5335a4479025d5e50869faf72280e8b7c652731",
+          "author_date": "2025-12-04T14:11:19Z",
+          "message": "github: Run test-toolchain using busybox rather than msys2",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/f5335a4479025d5e50869faf72280e8b7c652731"
+        },
+        {
+          "sha": "f06d2218d6031f1dab55778b9d03a6c0fa59b451",
+          "author_date": "2026-01-16T10:48:50Z",
+          "message": "build-mingw-w64: Bump to the current version as of Jan 16th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/f06d2218d6031f1dab55778b9d03a6c0fa59b451"
+        },
+        {
+          "sha": "1032736a4ce1c6abc8cb8029eb4e41acbbaf41e4",
+          "author_date": "2026-01-16T11:09:06Z",
+          "message": "build-llvm: Bump to LLVM 22.1.0 RC 1\n\nSome notable changes since LLVM 21.x related to mingw:\n\n- Handle an uncommon error code in libcxx's std::filesystem,\n  avoiding spurious test failures if running the libcxx test suite\n  (noted at least occasionally on Github Actions)\n- Reinstate x86 stack probe functions in compiler-rt, that we earlier\n  beleived weren't used - but turned out to be used by GCC in i386\n  mode\n- Fix interpretation of a few corner case aarch64 SEH unwind opcodes\n- Support for FAT LTO (compile with -ffat-lto-objects, link with\n  -Wl,--fat-lto-objects)\n- llvm-objcopy: Support the -p option for COFF targets\n- llvm-readobj: A new option --coff-pseudoreloc for dumping information\n  and symbols for mingw runtime pseudo relocations\n- Lots of various fixes for the cygwin target\n- Improve linking a custom CRT with binutils ld (by passing the custom\n  CRT -l option at the same place as the original default -lmsvcrt)\n- Make lld use the right mingw specific DLL entry point implicitly,\n  improving some Rust use cases\n- Fix running the libcxx tests with optimization for mingw targets,\n  allowing more test coverage of the code generation paths",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/1032736a4ce1c6abc8cb8029eb4e41acbbaf41e4"
+        },
+        {
+          "sha": "f25f2fb3aad3d28e8d2282fc089fae980c5b672d",
+          "author_date": "2026-01-16T11:46:37Z",
+          "message": "build-python: Update to Python 3.13.11",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/f25f2fb3aad3d28e8d2282fc089fae980c5b672d"
+        },
+        {
+          "sha": "1ea8bbae4e51ac232584458beb1834daf3dcb1fb",
+          "author_date": "2026-01-19T11:24:59Z",
+          "message": "build-busybox: Don't error out if reinstalling into an existing directory",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/1ea8bbae4e51ac232584458beb1834daf3dcb1fb"
+        },
+        {
+          "sha": "bfb071561478f3fdeae3111a7237306f4d425a23",
+          "author_date": "2026-01-19T21:23:00Z",
+          "message": "build-mingw-w64, build-busybox: Bump to a newer version\n\nThis version of mingw-w64 includes the function \"mkdtemp\", which\nbreaks building the previously pinned version of busybox-w32 on i686.\n\nUpdate both projects in sync, so that builds with newer nightly\nversions of mingw-w64 also succeed.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/bfb071561478f3fdeae3111a7237306f4d425a23"
+        },
+        {
+          "sha": "d1b94a9da6c3aa10acff1f6d30dbddfae02f0898",
+          "author_date": "2026-01-27T11:33:14Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Jan 27th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/d1b94a9da6c3aa10acff1f6d30dbddfae02f0898"
+        },
+        {
+          "sha": "498cc00a1d9b7ed19017da6fd0c61f9e7b5016af",
+          "author_date": "2026-01-27T11:33:36Z",
+          "message": "build-llvm: Bump to LLVM 22.1.0 RC 2",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/498cc00a1d9b7ed19017da6fd0c61f9e7b5016af"
+        },
+        {
+          "sha": "a68d8c042178dace48953fd6761eecd16ad466b0",
+          "author_date": "2026-02-10T08:07:07Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Feb 10th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/a68d8c042178dace48953fd6761eecd16ad466b0"
+        },
+        {
+          "sha": "5da3d4b11b799026f5cee0e7267984a6ab30d4b5",
+          "author_date": "2026-02-10T08:07:25Z",
+          "message": "build-llvm: Bump to LLVM 22.1.0 RC 3",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/5da3d4b11b799026f5cee0e7267984a6ab30d4b5"
+        },
+        {
+          "sha": "f415e25b3ef6472757bce28c7c45fae1cf8acde7",
+          "author_date": "2026-02-19T21:32:42Z",
+          "message": "build-openmp: Switch to building through the runtimes directory\n\nSince 6295b8e763503644961f9087382f80965b98d466 in llvm-project,\nit's no longer possible to build openmp entirely standalone;\nnow one has to build it through the runtimes directory.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/f415e25b3ef6472757bce28c7c45fae1cf8acde7"
+        },
+        {
+          "sha": "98684ab80772f01ca342836b41de81fbf6080582",
+          "author_date": "2026-02-19T21:37:10Z",
+          "message": "github: Try to test openmp through the runtimes directory\n\nSince 6295b8e763503644961f9087382f80965b98d466 in llvm-project,\none no longer can configure the openmp project entirely standalone,\none has to do it through the runtimes directory.\n\nHowever, in practice, this currently leads to no tests being\nexecuted at all, as the runtimes build setup doesn't support\npointing to an external FileCheck executable - it currently has\nto be part of a full bootstrapping build.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/98684ab80772f01ca342836b41de81fbf6080582"
+        },
+        {
+          "sha": "1d8aa59fbf31bc501791b9c221bf6b03447fa6d8",
+          "author_date": "2026-02-24T08:26:00Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Feb 24th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/1d8aa59fbf31bc501791b9c221bf6b03447fa6d8"
+        },
+        {
+          "sha": "9610c61240a3fad2637f199c093de15cd68bac14",
+          "author_date": "2026-02-24T08:26:41Z",
+          "message": "build-llvm: Bump to LLVM 22.1.0 final",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/9610c61240a3fad2637f199c093de15cd68bac14"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260311",
+      "previous_release": "20260224",
+      "commits": [
+        {
+          "sha": "49afca5984b62e99610c5617ed85e52d1ef2a714",
+          "author_date": "2026-02-13T12:42:13Z",
+          "message": "test: Add a test for atomic load/store of large integers\n\nTest atomically loading/storing 128 bit integers on 64 bit, and\n64 bit integers on 32 bit.\n\nThis test case covers the root cause of\nhttps://github.com/mstorsjo/llvm-mingw/issues/538.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/49afca5984b62e99610c5617ed85e52d1ef2a714"
+        },
+        {
+          "sha": "dc9837d908042be8229cf44448b63652ab4b315e",
+          "author_date": "2026-02-13T12:48:46Z",
+          "message": "test: Add the original test case for atomic loads of varying sizes\n\nThis covers the original testcase from\nhttps://github.com/mstorsjo/llvm-mingw/issues/538.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/dc9837d908042be8229cf44448b63652ab4b315e"
+        },
+        {
+          "sha": "a89f6c58f42380ba1936ddb2a92aeabdb3cdb7d2",
+          "author_date": "2026-03-03T08:51:42Z",
+          "message": "build-libcxx: Enable -D__USE_MINGW_ANSI_STDIO=1 for libcxx on x86\n\nThis ensures correctly formatted long doubles.\n\nThis fixes issue #545.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/a89f6c58f42380ba1936ddb2a92aeabdb3cdb7d2"
+        },
+        {
+          "sha": "644174c7cc78a47836670840a0a2814c2d50fcd1",
+          "author_date": "2026-03-11T07:38:58Z",
+          "message": "build-mingw-w64: Bump to the latest version as of March 11th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/644174c7cc78a47836670840a0a2814c2d50fcd1"
+        },
+        {
+          "sha": "cb0e9ef0be34b66fcf4d9edcdb8f1c69f2df1d3a",
+          "author_date": "2026-03-11T07:39:31Z",
+          "message": "build-llvm: Bump to LLVM 22.1.1",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/cb0e9ef0be34b66fcf4d9edcdb8f1c69f2df1d3a"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260324",
+      "previous_release": "20260311",
+      "commits": [
+        {
+          "sha": "84c8483ebab2132441573ab9101eb810a450d19b",
+          "author_date": "2026-02-24T10:14:31Z",
+          "message": "github: Fix testing openmp in the runtimes build\n\nThis makes sure the openmp tests actually are executed; since\nswitching to the runtimes build of openmp for the tests (in\n98684ab80772f01ca342836b41de81fbf6080582), the tests weren't\nexecuted, as it no longer found the tools necessary for executing\nthe tests - as they are expected to be specified differently\nin the runtimes build mode.\n\nThis requires the commit 48a5119d8e7d7236a28c14d06ec215ef3366ef90\n(backported to 22.x in 9794a7932465bdc244b327388905d66df38485e2,\npart of the 22.1.1 release) in llvm-project, to be able to run\ntests without actually building clang in the same build as the\ntest tools.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/84c8483ebab2132441573ab9101eb810a450d19b"
+        },
+        {
+          "sha": "fabc4571b25251d5200e03ce45cd5ee302a44533",
+          "author_date": "2026-03-13T10:17:19Z",
+          "message": "build-python: Build the native libffi as a static library only\n\nThis fixes importing the _ctypes module, if a shared libffi doesn't\nhappen to exist on the host system with the right so version.\nSince Python 3.12, such a build error ends up failing the build,\nwhile it previously passed silently even if some parts of the build\nhad failed.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/fabc4571b25251d5200e03ce45cd5ee302a44533"
+        },
+        {
+          "sha": "89faddb7a3c283c6553482c891f27ced810cec88",
+          "author_date": "2026-03-12T08:33:03Z",
+          "message": "github: Upgrade checkout@v4 to checkout@v6\n\ncheckout@v5 should be the same as checkout@v4, just running on\nNode 24. checkout@v6 has got a few other minor changes that\nshouldn't make any difference; opt in to newer behaviours now.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/89faddb7a3c283c6553482c891f27ced810cec88"
+        },
+        {
+          "sha": "ed1e71ba541b6e5c3474a44df8c511ff05950a7e",
+          "author_date": "2026-03-12T08:35:22Z",
+          "message": "github: Upgrade upload-artifact@v4 to upload-artifact@v6",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/ed1e71ba541b6e5c3474a44df8c511ff05950a7e"
+        },
+        {
+          "sha": "b8c5a4ffa1961032b9661981603cfc2414078bc1",
+          "author_date": "2026-03-12T08:39:09Z",
+          "message": "github: Upgrade download-artifact@v4 to download-artifact@v7",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/b8c5a4ffa1961032b9661981603cfc2414078bc1"
+        },
+        {
+          "sha": "c7e087fbd4af477887aedc5960421beb9ed0edfe",
+          "author_date": "2026-03-12T08:39:43Z",
+          "message": "github: Upgrade download-artifact@v7 to download-artifact@v8\n\nThis has some behaviour changes, but I believe it shouldn't hit\nour usage.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/c7e087fbd4af477887aedc5960421beb9ed0edfe"
+        },
+        {
+          "sha": "98dddfb9a40b0366ed931d240da66f3ef23400ec",
+          "author_date": "2026-03-12T16:10:03Z",
+          "message": "github: Upgrade cache@v4 to cache@v5",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/98dddfb9a40b0366ed931d240da66f3ef23400ec"
+        },
+        {
+          "sha": "c737c4a0b64dcf3e443989eed24b9e4b89497fdc",
+          "author_date": "2026-03-13T12:01:35Z",
+          "message": "build-python: Add --with-pic to fix the native static libffi on x86_64\n\nThis fixes building python on x86_64 linux after\nfabc4571b25251d5200e03ce45cd5ee302a44533.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/c737c4a0b64dcf3e443989eed24b9e4b89497fdc"
+        },
+        {
+          "sha": "13e18154e6c34ff2efbeedf1af737bd86cb8821b",
+          "author_date": "2026-03-20T10:18:05Z",
+          "message": "github: Upgrade dawidd6/action-download-artifact to v19",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/13e18154e6c34ff2efbeedf1af737bd86cb8821b"
+        },
+        {
+          "sha": "abc77c22a8896de4724efdfdfd46114d6c37da4e",
+          "author_date": "2026-03-22T10:33:20Z",
+          "message": "build-compiler-rt: Stop providing asan in msvcrt builds\n\nSee 0b296aefc0ce1dad3abd0351768c8edfebfc43a8 for context, where\nwe stopped testing asan in msvcrt builds - see discussion at\nhttps://github.com/llvm/llvm-project/pull/120397,\nhttps://github.com/mstorsjo/llvm-mingw/issues/224 and\nhttps://github.com/mstorsjo/llvm-mingw/issues/552.\n\nThis should make it clearer that asan isn't supported in msvcrt\nbuilds, instead of silently just providing files that are known\nnot to work.\n\nSee 4718b814193493f45f5c64df1df7dfd6d51d669f for earlier context\nfor where we remove the asan runtimes in armv7/aarch64 builds,\nwhere the files do get built, but they don't work properly yet\n(even on UCRT).",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/abc77c22a8896de4724efdfdfd46114d6c37da4e"
+        },
+        {
+          "sha": "dfb90d5ea71d1497f088af7cefa46b54c4342630",
+          "author_date": "2026-03-24T21:42:33Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Mar 24th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/dfb90d5ea71d1497f088af7cefa46b54c4342630"
+        },
+        {
+          "sha": "16f4a0af0c81ef9fcaa85f7c02b9eab29e4bc462",
+          "author_date": "2026-03-24T21:42:53Z",
+          "message": "build-llvm: Bump to LLVM 22.1.2",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/16f4a0af0c81ef9fcaa85f7c02b9eab29e4bc462"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260407",
+      "previous_release": "20260324",
+      "commits": [
+        {
+          "sha": "0456111453950bf7ca99408fa7cc02474e4784b7",
+          "author_date": "2026-04-07T11:07:53Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Apr 7th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/0456111453950bf7ca99408fa7cc02474e4784b7"
+        },
+        {
+          "sha": "49df766757bd19368a2bc27552f58d157b8dd57b",
+          "author_date": "2026-04-07T11:08:35Z",
+          "message": "build-llvm: Bump to LLVM 22.1.3",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/49df766757bd19368a2bc27552f58d157b8dd57b"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260421",
+      "previous_release": "20260407",
+      "commits": [
+        {
+          "sha": "11786a6d76f48f396d74ffe3034e4738e6e9bfbd",
+          "author_date": "2026-04-21T08:57:48Z",
+          "message": "build-mingw-w64: Bump to the latest version as of April 21st",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/11786a6d76f48f396d74ffe3034e4738e6e9bfbd"
+        },
+        {
+          "sha": "81fba99f8a388b07b2c14be0e4e17af6bd9d59a4",
+          "author_date": "2026-04-21T08:59:07Z",
+          "message": "build-llvm: Bump to LLVM 22.1.4",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/81fba99f8a388b07b2c14be0e4e17af6bd9d59a4"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260505",
+      "previous_release": "20260421",
+      "commits": [
+        {
+          "sha": "b68aefdbb5a495aecb05def2b0f0d89cf139551c",
+          "author_date": "2026-04-24T11:34:20Z",
+          "message": "test: crt-test: Remove unused variables",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/b68aefdbb5a495aecb05def2b0f0d89cf139551c"
+        },
+        {
+          "sha": "e604eb6f1fa72d0d8c68dfbb6126b6a252c8aae0",
+          "author_date": "2026-04-24T11:37:53Z",
+          "message": "test: crt-test: Remove a comment which no longer is accurate\n\nSince 9be66e9d22257ab008e1da58d2af3c3b9e0cacec, the F() macro\nno longer uses strtod(), so the details about what strtod(\"NAN\")\nand strtod(\"-NAN\") returns are no longer relevant.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/e604eb6f1fa72d0d8c68dfbb6126b6a252c8aae0"
+        },
+        {
+          "sha": "49e14021bee3a970cf29ed326c0b2fe0fc3dfb95",
+          "author_date": "2026-04-24T11:39:15Z",
+          "message": "test: crt-test: Prefer F(-NAN) instead of -F(NAN)\n\nIn the former form, the negation of NAN is hidden inside the\noptimization blocking macro/wrapper. After\n9be66e9d22257ab008e1da58d2af3c3b9e0cacec, F(-NAN) works just as\nwell as -F(NAN).\n\nThis avoids test issues with recent optimizations in LLVM.\nhttps://github.com/llvm/llvm-project/pull/193586 seems to make\nthe compiler consider known symmetry for hyperbolic math functions,\nexploiting the fact that cosh(-x) is equal to cosh(x) (for values\nother than NANs). By hiding the negation inside the F() wrapper,\nthe compiler can't reason about is existence.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/49e14021bee3a970cf29ed326c0b2fe0fc3dfb95"
+        },
+        {
+          "sha": "61ddd976fe46723e1a367f6658d2872b6908a765",
+          "author_date": "2026-04-24T12:36:37Z",
+          "message": "Revert \"test: crt-test: Skip a test for cos(-NAN) == -NAN when optimizing\"\n\nThis reverts commit 1d8c107d49ec09ff7a953e4cbcaa0c5137b9367d.\n\nAfter 49e14021bee3a970cf29ed326c0b2fe0fc3dfb95, when using F(-NAN)\ninstead of -F(NAN) to hide the negation, this test passes correctly.\nI hadn't realized that GCC and Clang optimized cos(-x) = cos(x), when\nI made 1d8c107d49ec09ff7a953e4cbcaa0c5137b9367d (and at the time, the\nF() macro didn't work properly with -NAN on all toolchains).",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/61ddd976fe46723e1a367f6658d2872b6908a765"
+        },
+        {
+          "sha": "b59056fe41d93f0996a8fe7c73f7960f1a0a3783",
+          "author_date": "2026-04-28T11:17:43Z",
+          "message": "docker: Remove arm64ec from the system-clang testcase\n\nBuilding for arm64ec requires Clang/LLD 21.\n\nThis was added in cb92de78e709ff04c4ebf148d84539abe62e94c9 without\nconsidering the context in this testcase properly.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/b59056fe41d93f0996a8fe7c73f7960f1a0a3783"
+        },
+        {
+          "sha": "d69f101b0973766b61c53b4fb3af213c69350019",
+          "author_date": "2026-04-28T11:18:39Z",
+          "message": "docker: Update the system-clang testcase to use Clang 20\n\nThis is the newest version currently available in the Ubuntu 24.04\nrepos.\n\nThis fixes building; previously it failed to build libc++, which only\nsupports being built with one of the two preceding versions of Clang.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/d69f101b0973766b61c53b4fb3af213c69350019"
+        },
+        {
+          "sha": "88885f361e1d4c0f43f34287f69ed5c4f85f2d85",
+          "author_date": "2026-05-05T19:52:21Z",
+          "message": "build-mingw-w64: Update to the latest version as of May 5th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/88885f361e1d4c0f43f34287f69ed5c4f85f2d85"
+        },
+        {
+          "sha": "ba72461e23d4c39af693c30556e24346194c144b",
+          "author_date": "2026-05-05T19:53:07Z",
+          "message": "build-llvm: Bump to LLVM 22.1.5",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/ba72461e23d4c39af693c30556e24346194c144b"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260519",
+      "previous_release": "20260505",
+      "commits": [
+        {
+          "sha": "4ccd3644573eedfc1b473fe2e4c67ec359678b03",
+          "author_date": "2026-05-19T09:27:22Z",
+          "message": "build-mingw-w64: Bump to the latest version as of May 19th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/4ccd3644573eedfc1b473fe2e4c67ec359678b03"
+        },
+        {
+          "sha": "8adc11d4cf27c2301b788bb473b1c19addd26d5b",
+          "author_date": "2026-05-19T09:27:40Z",
+          "message": "build-llvm: Bump to LLVM 22.1.6",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/8adc11d4cf27c2301b788bb473b1c19addd26d5b"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260602",
+      "previous_release": "20260519",
+      "commits": [
+        {
+          "sha": "de5e31d1dd1c94117d987be1e034f20300dcb3e9",
+          "author_date": "2026-06-02T09:19:51Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Jun 2nd",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/de5e31d1dd1c94117d987be1e034f20300dcb3e9"
+        },
+        {
+          "sha": "0272df2cc108a3392d5dcf1cc20c3b48910b08af",
+          "author_date": "2026-06-02T09:20:07Z",
+          "message": "build-llvm: Bump to LLVM 22.1.7",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/0272df2cc108a3392d5dcf1cc20c3b48910b08af"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260616",
+      "previous_release": "20260602",
+      "commits": [
+        {
+          "sha": "5e74b0c0ea258889b572e6661da76d8c0dd43fc5",
+          "author_date": "2026-06-04T09:38:09Z",
+          "message": "build-python: Update to Python 3.14.5",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/5e74b0c0ea258889b572e6661da76d8c0dd43fc5"
+        },
+        {
+          "sha": "3dce018647e2981cb176382aa46a431644c96d2d",
+          "author_date": "2026-06-16T19:02:25Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Jun 16th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/3dce018647e2981cb176382aa46a431644c96d2d"
+        },
+        {
+          "sha": "170b7e1ec4ad1d9264e6ba320cd4d02f96299c60",
+          "author_date": "2026-06-16T19:02:42Z",
+          "message": "build-llvm: Bump to LLVM 22.1.8",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/170b7e1ec4ad1d9264e6ba320cd4d02f96299c60"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260826",
+      "previous_release": "20260616",
+      "commits": [
+        {
+          "sha": "0abb154828f4d46b67ab3f4709183481d8582a1e",
+          "author_date": "2026-07-05T19:49:16Z",
+          "message": "github: Don't add the bundled Python to PATH in test-llvm\n\nPreviously, we added the llvm-mingw bundled python to the head\nof PATH, but we didn't expect to use it after all.\n\n(In other tests, where we explicitly want to use the llvm-mingw\nbundled python, we set -DPython3_EXECUTABLE=\"$Env:PYTHON_EXE.)\n\nPreviously (with runner image version 20260622.87.1), CMake ended\nup choosing\nC:/hostedtoolcache/windows/Python/3.13.14/x64/python3.exe, but\nnow (with runner image version 20260629.93.2) we ended up picking\nC:/llvm-mingw/python/bin/python3.14.exe instead.\n\nWith the newer runner images, we do have\nC:\\hostedtoolcache\\windows\\Python\\3.13.14\\arm64\\python3.exe in\nPATH, but it is unclear why that doesn't get picked.\n\n(Picking another version than the first one in PATH would make\nsense if we'd have Python_FIND_STRATEGY=VERSION set. According to\nthe docs, that shouldn't be the default any longer though, and it\nwouldn't explain why it picked 3.13 before when we provide\n3.14.)\n\nIn any case, just skip adding our version to PATH since we\ndon't intend to use it, to make it use the system provided\nversion.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/0abb154828f4d46b67ab3f4709183481d8582a1e"
+        },
+        {
+          "sha": "44c9c5fa20f46331c8a89346838995d8a8efaffb",
+          "author_date": "2026-07-18T10:09:09Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Jul 18th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/44c9c5fa20f46331c8a89346838995d8a8efaffb"
+        },
+        {
+          "sha": "e5235c32872cd303c05f05dc00d9fe2f13419525",
+          "author_date": "2026-07-18T10:04:27Z",
+          "message": "build-llvm: Bump to LLVM 23.1.0 RC 1\n\nSome notable changes since 22.x:\n- Linking a weak declaration against a weak definition now works\n  properly\n- Many improvements for ARM64EC, including supporting linking\n  against ARM64EC thin libraries\n- Support for compiling for ARM64X (files targeting both native\n  aarch64 and ARM64EC) with the -marm64x flag, which generates\n  a multi-architecture object file. This should make it much\n  more feasible, build system wise, to actually build things for\n  ARM64X.\n- Fixed aarch64 branch protection on Windows to use the right\n  signing key (previously it the wrong one, which was inactive on\n  Windows, and which broke unwinding in older versions of Wine)",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/e5235c32872cd303c05f05dc00d9fe2f13419525"
+        },
+        {
+          "sha": "d7490b5ef2d3651f0dedcede36b74e60d7d9bdcf",
+          "author_date": "2026-07-13T20:23:28Z",
+          "message": "build-openmp: Build openmp for arm64ec too",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/d7490b5ef2d3651f0dedcede36b74e60d7d9bdcf"
+        },
+        {
+          "sha": "20f2ac78ae6aa57024a1f8a247ec281c0a908bad",
+          "author_date": "2026-07-13T20:24:09Z",
+          "message": "tests: Test building/using openmp on arm64ec too",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/20f2ac78ae6aa57024a1f8a247ec281c0a908bad"
+        },
+        {
+          "sha": "3f54c5b996f1817d1bf359efc454a59123c0119f",
+          "author_date": "2026-03-31T20:51:18Z",
+          "message": "github: Test openmp on arm64ec too, in the test-openmp job",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/3f54c5b996f1817d1bf359efc454a59123c0119f"
+        },
+        {
+          "sha": "5e3f73a650298961fcb854e6ef85c5bacccf1c4d",
+          "author_date": "2026-07-18T06:43:48Z",
+          "message": "run-tests: Temporarily compile all executables before running them\n\nWhen building throwcatch-main.exe, we link with \"-L.\". Since we\ncopy in the runtime libraries for executing tests, we might have\nlibc++.dll present if we aim for the target \"test\" while\ncompiling.\n\nFor arm64x builds, we could end up trying to link directly against\nthe arm64x libc++.dll rather than with the import library. Linking\ndirectly against an arm64x DLL doesn't work yet in 23.1.0-rc1, so\navoid hitting this situation for now.\n\nThis is a temporary workaround; linking against an arm64x DLL should\nwork too, and the fix is being backported to the next RC.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/5e3f73a650298961fcb854e6ef85c5bacccf1c4d"
+        },
+        {
+          "sha": "64effa9a71d55e9e14533c8efb63098c6e03a3ff",
+          "author_date": "2026-07-18T12:31:22Z",
+          "message": "Add ARM64X support\n\nExtend the aarch64-w64-mingw32 prefix to provide ARM64EC libraries\nalongside standard AArch64 libraries, replacing the separate\narm64ec-w64-mingw32 prefix. This aligns with how MSVC distributes\nARM64EC libraries and enables the linker to process both targets\nsimultaneously into a single hybrid binary.\n\nThis extensively utilizes LLVM's -marm64x option, compiling both\ntargets in a single compiler invocation to produce hybrid object\nfiles (unlike MSVC tools, which require separate compilation passes).",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/64effa9a71d55e9e14533c8efb63098c6e03a3ff"
+        },
+        {
+          "sha": "d6fbc4a7eb5e53699b32a2632c86dda7322010bd",
+          "author_date": "2026-07-27T17:12:19Z",
+          "message": "github: Drop -static-libstdc++ -static-libgcc from the openmp tests\n\nWith arm64ec now being built as arm64x, sharing DLLs with the\nregular aarch64 target, we no longer need these options - the\nregular libc++.dll/libunwind.dll from $PATH (from the toolchain\nbin directory) work for the arm64ec build as well.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/d6fbc4a7eb5e53699b32a2632c86dda7322010bd"
+        },
+        {
+          "sha": "c77d93ace9250ef87499816ff3b479ee949e12ac",
+          "author_date": "2026-07-28T15:44:40Z",
+          "message": "Revert \"github: Drop -static-libstdc++ -static-libgcc from the openmp tests\"\n\nThis reverts commit d6fbc4a7eb5e53699b32a2632c86dda7322010bd.\n\nI'm going to revert the arm64x support, so this needs to be reverted\nfor now.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/c77d93ace9250ef87499816ff3b479ee949e12ac"
+        },
+        {
+          "sha": "975930b5b7f8a0a594de179825eae84b674c51bd",
+          "author_date": "2026-07-28T15:44:59Z",
+          "message": "Revert \"Add ARM64X support\"\n\nThis reverts commit 64effa9a71d55e9e14533c8efb63098c6e03a3ff.\n\nIt turns out that the LLD handling of the TLS data structures\n(\"_tls_used\" and \"_tls_index\") needs more work, causing the\narm64ec side of arm64x binaries to not get them hooked up properly.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/975930b5b7f8a0a594de179825eae84b674c51bd"
+        },
+        {
+          "sha": "ef0fadb5b5fc84fc77ff8cb028ee8686d7409266",
+          "author_date": "2026-07-28T15:45:52Z",
+          "message": "Revert \"run-tests: Temporarily compile all executables before running them\"\n\nThis reverts commit 5e3f73a650298961fcb854e6ef85c5bacccf1c4d.\n\nAs the arm64x support has been reverted, this isn't needed. And\nafter bumping to LLVM 23.1.0 RC 2, we won't need it anyway.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/ef0fadb5b5fc84fc77ff8cb028ee8686d7409266"
+        },
+        {
+          "sha": "ce6e1683f780fcafbd52b943f24c475d5f008682",
+          "author_date": "2026-07-28T15:48:31Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Jul 27th\n\nThis version is the one used in the latest successful nightly\nbuild.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/ce6e1683f780fcafbd52b943f24c475d5f008682"
+        },
+        {
+          "sha": "327d1a081c1ae2ea787bb5235d91867695a947c7",
+          "author_date": "2026-07-28T15:50:47Z",
+          "message": "build-llvm: Bump to LLVM 23.1.0 RC 2\n\nThis version includes a fix for linking directly against an ARM64X\nDLL.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/327d1a081c1ae2ea787bb5235d91867695a947c7"
+        },
+        {
+          "sha": "34f111adcb3c80c5cd912ed93bb181f644a80714",
+          "author_date": "2026-08-03T07:04:15Z",
+          "message": "github: Upgrade the docker actions to the latest version\n\nThis avoids warnings about the actions targeting Node 20.\n\nThere is no easily available documentation about whether there are\nany other API changes in the newer versions of these actions - in\nparticular the bump of build-push-action which advances by two\nversions.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/34f111adcb3c80c5cd912ed93bb181f644a80714"
+        },
+        {
+          "sha": "d5f44860c5f33be667ee2b2d0732e07eb307e0e7",
+          "author_date": "2026-08-02T18:34:57Z",
+          "message": "github: Allow triggering a pipeline equal to the scheduled nightly ones",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/d5f44860c5f33be667ee2b2d0732e07eb307e0e7"
+        },
+        {
+          "sha": "78fe776c0c4b54ed5832baadb5986dee00eb0c6c",
+          "author_date": "2026-08-12T09:18:01Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Aug 12th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/78fe776c0c4b54ed5832baadb5986dee00eb0c6c"
+        },
+        {
+          "sha": "eae760ec8820547c41d790ed522f96c5ae740275",
+          "author_date": "2026-08-12T09:18:17Z",
+          "message": "build-llvm: Bump to LLVM 23.1.0 RC 3",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/eae760ec8820547c41d790ed522f96c5ae740275"
+        },
+        {
+          "sha": "986847858c5d598682bedef87987290c8754d7ad",
+          "author_date": "2026-07-18T12:31:22Z",
+          "message": "Add ARM64X support\n\nExtend the aarch64-w64-mingw32 prefix to provide ARM64EC libraries\nalongside standard AArch64 libraries, replacing the separate\narm64ec-w64-mingw32 prefix. This aligns with how MSVC distributes\nARM64EC libraries and enables the linker to process both targets\nsimultaneously into a single hybrid binary.\n\nThis extensively utilizes LLVM's -marm64x option, compiling both\ntargets in a single compiler invocation to produce hybrid object\nfiles (unlike MSVC tools, which require separate compilation passes).",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/986847858c5d598682bedef87987290c8754d7ad"
+        },
+        {
+          "sha": "26a7ab6ff08e1bb323ed0740a15a553fbc0997f9",
+          "author_date": "2026-07-27T17:12:19Z",
+          "message": "github: Drop -static-libstdc++ -static-libgcc from the openmp tests\n\nWith arm64ec now being built as arm64x, sharing DLLs with the\nregular aarch64 target, we no longer need these options - the\nregular libc++.dll/libunwind.dll from $PATH (from the toolchain\nbin directory) work for the arm64ec build as well.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/26a7ab6ff08e1bb323ed0740a15a553fbc0997f9"
+        },
+        {
+          "sha": "8d8653d73cd6bf19b1e91fdac5503676562e6f52",
+          "author_date": "2026-08-12T17:16:56Z",
+          "message": "docker: Fix line continuation after 986847858c5d59",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/8d8653d73cd6bf19b1e91fdac5503676562e6f52"
+        },
+        {
+          "sha": "0e35436e9e8c21248f3e73fc05f8e03917192203",
+          "author_date": "2026-08-26T09:57:13Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Aug 26th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/0e35436e9e8c21248f3e73fc05f8e03917192203"
+        },
+        {
+          "sha": "14614551fb5fc0f725933e4959c75c06d347acfa",
+          "author_date": "2026-08-26T09:57:39Z",
+          "message": "build-llvm: Bump to LLVM 23.1.0 final",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/14614551fb5fc0f725933e4959c75c06d347acfa"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260908",
+      "previous_release": "20260826",
+      "commits": [
+        {
+          "sha": "48f50b100b1dbdb884b210d2bfaa53c4ea7f7ccd",
+          "author_date": "2026-08-27T07:40:59Z",
+          "message": "test: Ignore failures to remove the output file in some cases\n\nWhen running tests on Windows with busybox-w32 as shell, removing\nthe output log file for the stacksmash-asan testcase fails like this\noccasionally:\n\n    rm: can't remove 'log1-stacksmash-asan': Permission denied\n\nThis only seems to happen with the i686 build of busybox-w32, but\nhappens for the stacksmash-asan test built as either i686 or x86_64.\n\n(If running run-test.sh repeatedly, it seems like the issue either\nhappens right away on the first iteration, or doesn't happen at all.)\n\nAvoid breaking builds by simply making it ignore errors from this\nparticular \"rm\" command.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/48f50b100b1dbdb884b210d2bfaa53c4ea7f7ccd"
+        },
+        {
+          "sha": "de1d2a519206acd917838b2f20b72e34e559b1bd",
+          "author_date": "2026-08-23T09:21:51Z",
+          "message": "github: Stop disabling LLVM_WINDOWS_PREFER_FORWARD_SLASH in test-llvm\n\nSince LLVM 23, the testcases should pass with\nLLVM_WINDOWS_PREFER_FORWARD_SLASH enabled. For mingw build\nconfigurations, this is enabled by default.",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/de1d2a519206acd917838b2f20b72e34e559b1bd"
+        },
+        {
+          "sha": "24c2a9c5390e2fed0d4ddba22bd7a2f770377b0a",
+          "author_date": "2026-09-08T11:48:58Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Sep 8th",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/24c2a9c5390e2fed0d4ddba22bd7a2f770377b0a"
+        },
+        {
+          "sha": "030097eeee87fcfd0f3bfe536b21cbd6e5d3b324",
+          "author_date": "2026-09-08T11:49:19Z",
+          "message": "build-llvm: Bump to LLVM 23.1.1",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/030097eeee87fcfd0f3bfe536b21cbd6e5d3b324"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "20260922",
+      "previous_release": "20260908",
+      "commits": [
+        {
+          "sha": "f03b9610e07262b8a09fe67cf2dba9b6f55413b9",
+          "author_date": "2026-09-22T09:30:44Z",
+          "message": "build-mingw-w64: Bump to the latest version as of Sep 22nd",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/f03b9610e07262b8a09fe67cf2dba9b6f55413b9"
+        },
+        {
+          "sha": "0eca5ac93da14a74bc81c249e841356ececc5d95",
+          "author_date": "2026-09-22T09:31:01Z",
+          "message": "build-llvm: Bump to LLVM 23.1.2",
+          "html_url": "https://github.com/mstorsjo/llvm-mingw/commit/0eca5ac93da14a74bc81c249e841356ececc5d95"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [
+      {
+        "id": 18807180915,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-25T18:57:02Z",
+        "updated_at": "2025-10-26T02:39:36Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/18807180915"
+      },
+      {
+        "id": 18707897463,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-22T06:52:32Z",
+        "updated_at": "2025-10-22T15:03:42Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/18707897463"
+      },
+      {
+        "id": 18678141690,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-21T08:43:13Z",
+        "updated_at": "2025-10-21T17:18:36Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/18678141690"
+      },
+      {
+        "id": 18620569224,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-19T06:49:10Z",
+        "updated_at": "2025-10-19T08:56:29Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/18620569224"
+      },
+      {
+        "id": 18324036205,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-10-07T19:33:48Z",
+        "updated_at": "2025-10-08T03:53:12Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/18324036205"
+      }
+    ],
+    "2025-11": [
+      {
+        "id": 19466501422,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-19T05:04:54Z",
+        "updated_at": "2025-11-19T09:39:55Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/19466501422"
+      },
+      {
+        "id": 19466469688,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-19T05:04:38Z",
+        "updated_at": "2025-11-19T08:59:28Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/19466469688"
+      },
+      {
+        "id": 19064531174,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T09:48:14Z",
+        "updated_at": "2025-11-04T18:36:30Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/19064531174"
+      }
+    ],
+    "2025-12": [
+      {
+        "id": 20312046748,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-17T17:44:39Z",
+        "updated_at": "2025-12-18T02:18:20Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/20312046748"
+      },
+      {
+        "id": 20269235578,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-16T13:16:20Z",
+        "updated_at": "2025-12-16T21:07:41Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/20269235578"
+      },
+      {
+        "id": 20028736879,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-08T12:51:54Z",
+        "updated_at": "2025-12-08T21:04:00Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/20028736879"
+      },
+      {
+        "id": 19891700687,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-03T11:07:39Z",
+        "updated_at": "2025-12-03T18:34:23Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/19891700687"
+      },
+      {
+        "id": 19853714967,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-02T09:29:31Z",
+        "updated_at": "2025-12-02T18:15:42Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/19853714967"
+      }
+    ],
+    "2026-01": [
+      {
+        "id": 21395581646,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-27T11:33:50Z",
+        "updated_at": "2026-01-27T20:50:32Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/21395581646"
+      },
+      {
+        "id": 21152261726,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-19T21:45:56Z",
+        "updated_at": "2026-01-20T05:09:28Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/21152261726"
+      },
+      {
+        "id": 21119303925,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-18T22:00:56Z",
+        "updated_at": "2026-01-19T06:30:44Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/21119303925"
+      },
+      {
+        "id": 21065471057,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-16T11:41:55Z",
+        "updated_at": "2026-01-16T21:24:11Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/21065471057"
+      },
+      {
+        "id": 20928297699,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-12T17:12:33Z",
+        "updated_at": "2026-01-13T02:05:28Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/20928297699"
+      },
+      {
+        "id": 20815836764,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-08T11:50:32Z",
+        "updated_at": "2026-01-08T21:16:53Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/20815836764"
+      },
+      {
+        "id": 20760327727,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-06T19:56:23Z",
+        "updated_at": "2026-01-07T04:43:41Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/20760327727"
+      }
+    ],
+    "2026-02": [
+      {
+        "id": 22435455116,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-26T09:12:55Z",
+        "updated_at": "2026-02-26T17:03:09Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/22435455116"
+      },
+      {
+        "id": 22342658411,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-24T08:27:08Z",
+        "updated_at": "2026-02-24T17:21:13Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/22342658411"
+      },
+      {
+        "id": 22201368360,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-19T21:44:52Z",
+        "updated_at": "2026-02-20T06:44:39Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/22201368360"
+      },
+      {
+        "id": 21857892625,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-10T19:49:04Z",
+        "updated_at": "2026-02-11T01:06:19Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/21857892625"
+      }
+    ],
+    "2026-03": [
+      {
+        "id": 23513641514,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-24T21:43:09Z",
+        "updated_at": "2026-03-25T05:53:38Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/23513641514"
+      },
+      {
+        "id": 23398674438,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-22T07:55:37Z",
+        "updated_at": "2026-03-22T15:41:27Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/23398674438"
+      },
+      {
+        "id": 23050225689,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-13T12:11:04Z",
+        "updated_at": "2026-03-13T19:48:13Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/23050225689"
+      },
+      {
+        "id": 23046410134,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-13T10:19:38Z",
+        "updated_at": "2026-03-13T18:06:34Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/23046410134"
+      },
+      {
+        "id": 22971868018,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-11T20:00:36Z",
+        "updated_at": "2026-03-12T03:48:51Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/22971868018"
+      },
+      {
+        "id": 22941966269,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-11T07:39:47Z",
+        "updated_at": "2026-03-11T15:46:00Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/22941966269"
+      },
+      {
+        "id": 22615514829,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-03T08:55:03Z",
+        "updated_at": "2026-03-03T17:32:51Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/22615514829"
+      }
+    ],
+    "2026-04": [
+      {
+        "id": 25050675139,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-28T11:40:14Z",
+        "updated_at": "2026-04-28T18:58:03Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/25050675139"
+      },
+      {
+        "id": 24890071436,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-24T12:42:26Z",
+        "updated_at": "2026-04-24T20:59:15Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/24890071436"
+      },
+      {
+        "id": 24887933915,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-24T11:48:54Z",
+        "updated_at": "2026-04-24T19:23:28Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/24887933915"
+      },
+      {
+        "id": 24713559245,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-21T08:59:21Z",
+        "updated_at": "2026-04-21T17:30:56Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/24713559245"
+      },
+      {
+        "id": 24078273627,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-07T11:09:03Z",
+        "updated_at": "2026-04-07T19:11:18Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/24078273627"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 26088518115,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-19T09:27:57Z",
+        "updated_at": "2026-05-19T18:48:22Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/26088518115"
+      },
+      {
+        "id": 25398828142,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T19:53:36Z",
+        "updated_at": "2026-05-06T03:53:53Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/25398828142"
+      }
+    ],
+    "2026-06": [
+      {
+        "id": 27641173311,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-16T19:03:09Z",
+        "updated_at": "2026-06-17T03:14:15Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/27641173311"
+      },
+      {
+        "id": 27025101193,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-05T15:51:11Z",
+        "updated_at": "2026-06-05T23:35:04Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/27025101193"
+      },
+      {
+        "id": 26810570796,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-02T09:20:23Z",
+        "updated_at": "2026-06-02T17:24:12Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/26810570796"
+      }
+    ],
+    "2026-07": [
+      {
+        "id": 30375414997,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-28T15:51:28Z",
+        "updated_at": "2026-07-28T21:50:20Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/30375414997"
+      },
+      {
+        "id": 30339478258,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-28T07:43:06Z",
+        "updated_at": "2026-07-28T13:44:42Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/30339478258"
+      },
+      {
+        "id": 30287924733,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-28T06:39:49Z",
+        "updated_at": "2026-07-28T09:02:34Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/30287924733"
+      },
+      {
+        "id": 29815573534,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-21T08:46:16Z",
+        "updated_at": "2026-07-21T15:04:23Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/29815573534"
+      },
+      {
+        "id": 28783332371,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-06T09:57:53Z",
+        "updated_at": "2026-07-06T17:48:35Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/28783332371"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 33116147693,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-27T21:01:17Z",
+        "updated_at": "2026-08-28T03:59:00Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/33116147693"
+      },
+      {
+        "id": 32955800518,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-26T19:21:15Z",
+        "updated_at": "2026-08-26T19:23:15Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/32955800518"
+      },
+      {
+        "id": 31635664704,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-13T03:48:28Z",
+        "updated_at": "2026-08-13T05:03:04Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/31635664704"
+      },
+      {
+        "id": 31582364949,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-12T09:19:17Z",
+        "updated_at": "2026-08-12T15:13:45Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/31582364949"
+      },
+      {
+        "id": 30887876056,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-04T07:27:20Z",
+        "updated_at": "2026-08-04T13:23:34Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/30887876056"
+      }
+    ],
+    "2026-09": [
+      {
+        "id": 36733107764,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-30T14:57:57Z",
+        "updated_at": "2026-09-30T21:12:11Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/36733107764"
+      },
+      {
+        "id": 36476077222,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-28T19:59:54Z",
+        "updated_at": "2026-09-29T02:01:54Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/36476077222"
+      },
+      {
+        "id": 35711787259,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-22T09:41:13Z",
+        "updated_at": "2026-09-22T16:11:55Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/35711787259"
+      },
+      {
+        "id": 34222735188,
+        "name": "Builds",
+        "workflow_id": 28257461,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-09-08T18:01:56Z",
+        "updated_at": "2026-09-08T19:34:58Z",
+        "html_url": "https://github.com/mstorsjo/llvm-mingw/actions/runs/34222735188"
+      }
+    ]
+  }
+}

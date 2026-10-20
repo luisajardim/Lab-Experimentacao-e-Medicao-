@@ -1,0 +1,3727 @@
+{
+  "repository": {
+    "full_name": "ekzhu/datasketch",
+    "stars": 2971,
+    "language": "Python",
+    "default_branch": "master",
+    "created_at": "2015-03-20T01:21:46Z"
+  },
+  "releases": [
+    {
+      "id": 3004032,
+      "tag_name": "v0.2.1",
+      "name": "Introduce Weighted MinHash and interface change",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2016-04-12T17:14:54Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v0.2.1"
+    },
+    {
+      "id": 3006038,
+      "tag_name": "v0.2.3",
+      "name": "Functionality for removing key from LSH index",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2016-04-12T21:30:48Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v0.2.3"
+    },
+    {
+      "id": 3622935,
+      "tag_name": "v0.2.4",
+      "name": "Windows compatibility",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2016-07-10T01:30:43Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v0.2.4"
+    },
+    {
+      "id": 5094479,
+      "tag_name": "v0.2.6",
+      "name": "MinHash LSH Forest",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2017-01-07T09:03:48Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v0.2.6"
+    },
+    {
+      "id": 5433563,
+      "tag_name": "v1.0.0",
+      "name": "First stable release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-02-12T19:41:04Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.0.0"
+    },
+    {
+      "id": 5748087,
+      "tag_name": "v1.1.2",
+      "name": "Introduce Lean MinHash and better documentation",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-03-15T05:18:35Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.1.2"
+    },
+    {
+      "id": 5872075,
+      "tag_name": "v1.1.3",
+      "name": "Consistent MinHash hash values across Python versions",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-03-26T17:32:41Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.1.3"
+    },
+    {
+      "id": 5939145,
+      "tag_name": "v1.2.0",
+      "name": "LSH Ensemble",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2017-03-31T17:06:36Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.0"
+    },
+    {
+      "id": 7691270,
+      "tag_name": "v1.2.3",
+      "name": "Redis storage layer for MinHash LSH",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2017-09-08T21:25:42Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.3"
+    },
+    {
+      "id": 8434991,
+      "tag_name": "v1.2.4",
+      "name": "Optional redis storage requirement.",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2017-11-08T15:43:33Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.4"
+    },
+    {
+      "id": 8607929,
+      "tag_name": "v1.2.5",
+      "name": "Fix bug in LSH Forest for Weighted MinHash",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2017-11-21T18:35:43Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.5"
+    },
+    {
+      "id": 12037760,
+      "tag_name": "v1.2.6",
+      "name": "Fix bug in storage",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2018-07-21T07:19:55Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.6"
+    },
+    {
+      "id": 12127615,
+      "tag_name": "v1.2.7",
+      "name": "Asynchronous MinHash LSH module and storage base name",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2018-07-27T00:28:28Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.7"
+    },
+    {
+      "id": 13468238,
+      "tag_name": "v1.2.8",
+      "name": "Fix bug #68 ",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2018-10-17T04:16:57Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.8"
+    },
+    {
+      "id": 13592295,
+      "tag_name": "v1.2.9",
+      "name": "MongoDB replicas",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2018-10-22T21:32:35Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.9"
+    },
+    {
+      "id": 13806133,
+      "tag_name": "v1.2.10",
+      "name": "Batch removal of keys from Async MinHashLSH index",
+      "draft": false,
+      "prerelease": true,
+      "published_at": "2018-11-02T20:56:26Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.2.10"
+    },
+    {
+      "id": 14717492,
+      "tag_name": "v.1.3.0",
+      "name": "Better LSH Ensemble",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2018-12-27T16:02:31Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v.1.3.0"
+    },
+    {
+      "id": 14824546,
+      "tag_name": "v1.4.0",
+      "name": "hashfunc to replace hashobj",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-01-06T22:25:36Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.4.0"
+    },
+    {
+      "id": 21751114,
+      "tag_name": "v1.5.0",
+      "name": "Add Cassandra storage layer.",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2019-11-26T00:13:31Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.5.0"
+    },
+    {
+      "id": 35314886,
+      "tag_name": "1.5.2",
+      "name": "Improved performance for MinHash and MinHashLSH ",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2020-12-15T20:57:53Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/1.5.2"
+    },
+    {
+      "id": 54624195,
+      "tag_name": "v1.5.4",
+      "name": "v1.5.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-12-04T06:29:48Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.5.4"
+    },
+    {
+      "id": 55422538,
+      "tag_name": "v1.5.5",
+      "name": "v1.5.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-12-16T05:59:19Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.5.5"
+    },
+    {
+      "id": 56050529,
+      "tag_name": "v1.5.6",
+      "name": "Fixed broken packaging script for datasketch/experimental/aio",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2021-12-27T20:13:28Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.5.6"
+    },
+    {
+      "id": 58669898,
+      "tag_name": "v1.5.7",
+      "name": "v1.5.7",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-02-04T09:05:43Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.5.7"
+    },
+    {
+      "id": 74921138,
+      "tag_name": "v1.5.8",
+      "name": "v1.5.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2022-08-21T03:02:55Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.5.8"
+    },
+    {
+      "id": 92949138,
+      "tag_name": "v1.5.9",
+      "name": "v1.5.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-02-19T15:27:02Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.5.9"
+    },
+    {
+      "id": 119333275,
+      "tag_name": "v1.6.0",
+      "name": "v1.6.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-08-30T19:50:12Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.6.0"
+    },
+    {
+      "id": 120082696,
+      "tag_name": "v1.6.1",
+      "name": "v1.6.1",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-06T09:13:31Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.6.1"
+    },
+    {
+      "id": 120201360,
+      "tag_name": "v1.6.2",
+      "name": "v1.6.2",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-06T22:53:16Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.6.2"
+    },
+    {
+      "id": 120752623,
+      "tag_name": "v1.6.3",
+      "name": "v1.6.3",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-09-12T08:10:38Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.6.3"
+    },
+    {
+      "id": 123465822,
+      "tag_name": "v1.6.4",
+      "name": "v1.6.4",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2023-10-03T09:59:29Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.6.4"
+    },
+    {
+      "id": 158706076,
+      "tag_name": "v1.6.5",
+      "name": "v1.6.5",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2024-06-04T00:43:43Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.6.5"
+    },
+    {
+      "id": 259782310,
+      "tag_name": "v1.7.0",
+      "name": "v1.7.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-05T05:46:51Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.7.0"
+    },
+    {
+      "id": 265869081,
+      "tag_name": "v1.8.0",
+      "name": "v1.8.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2025-11-28T00:44:41Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.8.0"
+    },
+    {
+      "id": 277759836,
+      "tag_name": "v1.9.0",
+      "name": "v1.9.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-01-18T22:45:25Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.9.0"
+    },
+    {
+      "id": 310589214,
+      "tag_name": "v1.10.0",
+      "name": "v1.10.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-17T23:05:30Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v1.10.0"
+    },
+    {
+      "id": 349105148,
+      "tag_name": "v2.0.0",
+      "name": "v2.0.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-07-05T06:34:52Z",
+      "html_url": "https://github.com/ekzhu/datasketch/releases/tag/v2.0.0"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v1.8.0",
+      "sha": "7b4ebacafe39c93b28058f7da9e4881cedac1c46",
+      "date": "2025-11-28T00:42:23Z"
+    },
+    {
+      "name": "v1.9.0",
+      "sha": "a1c1e292c08e052aaa9557115098c1e289344f9e",
+      "date": "2026-01-18T22:44:40Z"
+    },
+    {
+      "name": "v2.0.0",
+      "sha": "3da96a591c954952c9dd367567db720cfdc151e0",
+      "date": "2026-07-05T06:33:13Z"
+    },
+    {
+      "name": "v1.10.0",
+      "sha": "c7c8df07ad9b90f0f81ddc2ee3ffb5f37e18a2a9",
+      "date": "2026-04-17T23:04:43Z"
+    },
+    {
+      "name": "v1.6.5",
+      "sha": "5512549871d29c55b3cd8e99a79fcbd14859b77d",
+      "date": "2024-03-26T19:24:40Z"
+    },
+    {
+      "name": "v1.7.0",
+      "sha": "7bbc3ba367f2818b73be448d1b02022f911806bd",
+      "date": "2025-11-05T05:46:07Z"
+    },
+    {
+      "name": "v1.6.4",
+      "sha": "1ce3f6926172027d0d0df810dbb52ec3a5232741",
+      "date": "2023-10-02T23:00:49Z"
+    },
+    {
+      "name": "v1.6.3",
+      "sha": "c98c145417965d015103f2a1bfcf59658e90b470",
+      "date": "2023-09-12T08:00:25Z"
+    },
+    {
+      "name": "v1.6.1",
+      "sha": "e8d1cfa077f377928c066944598ed4ad03c0a99e",
+      "date": "2023-09-06T09:02:00Z"
+    },
+    {
+      "name": "v1.6.0",
+      "sha": "144db691e466a2de74fce2bc5702a406901f478a",
+      "date": "2023-08-30T19:47:58Z"
+    },
+    {
+      "name": "v1.6.2",
+      "sha": "fe047f1921e84ae61511f43535877db9a3f1c4fd",
+      "date": "2023-09-06T22:51:07Z"
+    },
+    {
+      "name": "v1.5.9",
+      "sha": "bc1b76217690b7f2a65f7ad14f0991b13c8cfe75",
+      "date": "2023-02-19T15:23:54Z"
+    },
+    {
+      "name": "v1.5.8",
+      "sha": "c096b4d5d73ffa5423910ee708ebaa8feadba788",
+      "date": "2022-08-19T15:44:41Z"
+    },
+    {
+      "name": "v1.5.5",
+      "sha": "082b7f62983e9576bc541a2fe3c3fa3c871193f1",
+      "date": "2021-12-16T05:57:50Z"
+    },
+    {
+      "name": "v1.5.7",
+      "sha": "ec36c20caeda6a1fbcbefcd92161bb9d2a8b8d78",
+      "date": "2022-02-04T08:52:34Z"
+    },
+    {
+      "name": "v1.5.6",
+      "sha": "14a116f2e9adbbbaf9a50f25121af92ade68938e",
+      "date": "2021-12-27T20:10:03Z"
+    },
+    {
+      "name": "v1.5.4",
+      "sha": "fc26932521e299ab0574ac3203da9e74b7f44d4b",
+      "date": "2021-12-04T06:24:53Z"
+    },
+    {
+      "name": "v1.5.0",
+      "sha": "512026d2dadc79ce1c71e921af8885b15cf993c3",
+      "date": "2019-11-26T00:10:20Z"
+    },
+    {
+      "name": "v1.4.0",
+      "sha": "ff34e735639b5082dff92f18d58cbf2a8a12cc29",
+      "date": "2019-01-06T22:23:23Z"
+    },
+    {
+      "name": "v.1.3.0",
+      "sha": "54d053c3c29207276b186fe5031721bae8231b3b",
+      "date": "2018-12-27T15:55:37Z"
+    },
+    {
+      "name": "v1.2.9",
+      "sha": "cd08b3598494bd9b90f042d918ffcec6f3e06c37",
+      "date": "2018-10-22T21:31:55Z"
+    },
+    {
+      "name": "v1.2.10",
+      "sha": "82d9639bc0011932a952bbae1d4b5bd5ac03c7c8",
+      "date": "2018-11-02T20:52:31Z"
+    },
+    {
+      "name": "v1.2.8",
+      "sha": "1ccbcd4f16c925160d6fad7e338c9d422a295cc0",
+      "date": "2018-10-17T04:11:07Z"
+    },
+    {
+      "name": "v1.2.6",
+      "sha": "b44f6c24a7d5f2d69da94d948806ca12bc58b51f",
+      "date": "2018-07-15T23:49:05Z"
+    },
+    {
+      "name": "v1.2.7",
+      "sha": "e5439a9a974ff1bc74334c95dab70f633c78c546",
+      "date": "2018-07-27T00:18:05Z"
+    },
+    {
+      "name": "v1.2.5",
+      "sha": "ae9edad7b43ab6eccd86537cc9bfdea11fddb485",
+      "date": "2017-11-21T18:25:30Z"
+    },
+    {
+      "name": "v1.2.4",
+      "sha": "b685544918b9ea217cb3e793984f163bce03cf14",
+      "date": "2017-11-08T15:41:00Z"
+    },
+    {
+      "name": "v1.2.3",
+      "sha": "def542da8aede48a262f70187b6d543935744e5d",
+      "date": "2017-09-08T21:20:41Z"
+    },
+    {
+      "name": "v1.2.0",
+      "sha": "3ab270561e36d261fe92da80c5d4f51fe7436f0b",
+      "date": "2017-03-31T17:02:36Z"
+    },
+    {
+      "name": "v1.1.3",
+      "sha": "832103623860c823833baca5246a38e1e8df325d",
+      "date": "2017-03-26T17:27:01Z"
+    },
+    {
+      "name": "v1.1.2",
+      "sha": "a483b39fe4e444c372792e5c91c86d9d8d27a4a5",
+      "date": "2017-03-15T07:16:12Z"
+    },
+    {
+      "name": "v1.1.1",
+      "sha": "5d1641a98fc6630d91638424881099852809af16",
+      "date": "2017-03-15T05:07:17Z"
+    },
+    {
+      "name": "v1.0.0",
+      "sha": "d939f603818a0025185c30b9522a02eb4950b6ed",
+      "date": "2017-01-07T08:54:53Z"
+    },
+    {
+      "name": "v0.2.6",
+      "sha": "d939f603818a0025185c30b9522a02eb4950b6ed",
+      "date": "2017-01-07T08:54:53Z"
+    },
+    {
+      "name": "v0.2.4",
+      "sha": "e05dc123d728cf9a775ba9f7cece3923c6bca1aa",
+      "date": "2016-07-10T01:20:14Z"
+    },
+    {
+      "name": "v0.2.3",
+      "sha": "1be2a0529da0dd6da816f8c615ba638d82150633",
+      "date": "2016-04-12T21:26:26Z"
+    },
+    {
+      "name": "v0.2.1",
+      "sha": "ad1297eb48274e42f9e4bb88bd8c6e31b32126e9",
+      "date": "2016-03-18T08:45:44Z"
+    },
+    {
+      "name": "1.5.2",
+      "sha": "9fafb0a573070f32d0f4cb75532f884c46315e6b",
+      "date": "2020-12-15T20:46:43Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v1.6.5",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v1.7.0",
+      "previous_release": "v1.6.5",
+      "commits": [
+        {
+          "sha": "f52e02372145f50f54884fb75ca8b8c3027cf7f8",
+          "author_date": "2025-11-03T07:29:41Z",
+          "message": "Fix bBitMinHash NumPy pickling issue (#248)\n\n* fix bbitminhash numpy pickling issue\n\n* update ubuntu version to ensure python 3.7 support in github actions",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/f52e02372145f50f54884fb75ca8b8c3027cf7f8"
+        },
+        {
+          "sha": "14ce29902e3592ddaacae752452a837a2d60dd62",
+          "author_date": "2025-11-04T05:42:41Z",
+          "message": "chore: Add Dependabot configuration (#253)\n\n* Add Dependabot config\n\n* Update dependabot.yml to refine configuration for Python and GitHub Actions",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/14ce29902e3592ddaacae752452a837a2d60dd62"
+        },
+        {
+          "sha": "44f7d19260bcdd4bbb60df6b8612586b7a26865a",
+          "author_date": "2025-11-04T19:47:47Z",
+          "message": "drop versioning strategy (#255)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/44f7d19260bcdd4bbb60df6b8612586b7a26865a"
+        },
+        {
+          "sha": "9ed379577d2bd4c31d8ec22690123e8fcfec5a74",
+          "author_date": "2025-11-04T20:14:13Z",
+          "message": "Bump actions/setup-python from 4 to 6 (#259)\n\nBumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 6.\n- [Release notes](https://github.com/actions/setup-python/releases)\n- [Commits](https://github.com/actions/setup-python/compare/v4...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-python\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/9ed379577d2bd4c31d8ec22690123e8fcfec5a74"
+        },
+        {
+          "sha": "f193f87f8f75f643dc2c9113a3aedb7c79de9d2c",
+          "author_date": "2025-11-04T20:16:13Z",
+          "message": "Bump supercharge/mongodb-github-action from 1.8.0 to 1.12.0 (#260)\n\nBumps [supercharge/mongodb-github-action](https://github.com/supercharge/mongodb-github-action) from 1.8.0 to 1.12.0.\n- [Release notes](https://github.com/supercharge/mongodb-github-action/releases)\n- [Changelog](https://github.com/supercharge/mongodb-github-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/supercharge/mongodb-github-action/compare/1.8.0...1.12.0)\n\n---\nupdated-dependencies:\n- dependency-name: supercharge/mongodb-github-action\n  dependency-version: 1.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/f193f87f8f75f643dc2c9113a3aedb7c79de9d2c"
+        },
+        {
+          "sha": "15ce03c95a2f43482c51bfea75585786bf944437",
+          "author_date": "2025-11-04T20:18:19Z",
+          "message": "Bump actions/checkout from 3 to 5 (#262)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 3 to 5.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v3...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/15ce03c95a2f43482c51bfea75585786bf944437"
+        },
+        {
+          "sha": "3358d84facf6a4905ce526c8f30f5c23b0937a0a",
+          "author_date": "2025-11-04T20:15:33Z",
+          "message": "Update pypi.yml to use Trusted Publisher and latest action versions\n\nCo-authored-by: ekzhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/3358d84facf6a4905ce526c8f30f5c23b0937a0a"
+        },
+        {
+          "sha": "998923cb1ddd8f50d6af032263de10c5e0eb9a9a",
+          "author_date": "2025-11-04T20:17:31Z",
+          "message": "Pin pypa/gh-action-pypi-publish to specific version v1.13.0\n\nCo-authored-by: ekzhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/998923cb1ddd8f50d6af032263de10c5e0eb9a9a"
+        },
+        {
+          "sha": "935e4e98040b3d266079babadb832d505260ac7c",
+          "author_date": "2025-11-05T00:28:41Z",
+          "message": "Add CODEOWNERS file with ekzhu as owner of .github/**\n\nCo-authored-by: ekzhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/935e4e98040b3d266079babadb832d505260ac7c"
+        },
+        {
+          "sha": "bf716b1bcdf4ff0f1e7740f25cc4660f7b8a5b27",
+          "author_date": "2025-11-05T01:01:34Z",
+          "message": "Add workflow_dispatch trigger to pypi.yml for manual execution\n\nCo-authored-by: ekzhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/bf716b1bcdf4ff0f1e7740f25cc4660f7b8a5b27"
+        },
+        {
+          "sha": "be909f2f039d9c8ec1240fd0865b111d6f236070",
+          "author_date": "2025-11-05T01:46:50Z",
+          "message": "Remove release trigger and add tag input to workflow_dispatch\n\nCo-authored-by: ekzhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/be909f2f039d9c8ec1240fd0865b111d6f236070"
+        },
+        {
+          "sha": "8dd8d3217038947cd6ae30e6911942cae29d228d",
+          "author_date": "2025-11-04T07:46:15Z",
+          "message": "Add simple/minimal PR template",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/8dd8d3217038947cd6ae30e6911942cae29d228d"
+        },
+        {
+          "sha": "2cac1a926ecd115a0ecf9a07b4530d8c3ecc2e71",
+          "author_date": "2025-11-05T01:37:26Z",
+          "message": "apply suggestions",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/2cac1a926ecd115a0ecf9a07b4530d8c3ecc2e71"
+        },
+        {
+          "sha": "fab3b555b26cab29a5b4d1a338852e017aa88709",
+          "author_date": "2025-11-05T05:32:12Z",
+          "message": "[BREAKING] Dropping nominal support for 3.7; update GitHub Actions workflow to use `uv` (#257)\n\n* chore: Update GitHub Actions(test.yml) workflow\n\n* Drop Python 3.7 support (EOL), require Python 3.8+\n\n* Drop Python 3.7 support, add Python 3.12 support\n\n- Remove Python 3.7 classifier from setup.py\n- Add Python 3.12 classifier to setup.py\n- Update CI matrix to include Python 3.12, remove 3.7\n- Update Travis CI config to match supported versions\n- Update README.rst minimum version requirement to 3.8+\n\n* Update dependencies to require Python 3.8 for experimental features\n\n* add list\n\n* pin motor with min dep\n\n* Add step to minimize uv cache in CI workflow\n\n* Update Cassandra and MongoDB workflows to use uv\n\n- Upgrade test-cassandra.yml to use uv instead of pip\n- Upgrade test-mongo.yml to use uv instead of pip\n- Update action versions to latest\n- This ensures consistency across all CI workflows\n\n* Add step to minimize uv cache in Cassandra and MongoDB workflows\n\n* trigger with new updates\n\n* Revert \"trigger with new updates\"\n\nThis reverts commit 4b81babb67ca20c7f84c8b2e14737a4d4fbcad7c.\n\n* re-trigger\n\n* re-trigger\n\n* Update Python version matrix in CI workflow and add support for Python 3.13 and 3.14 in setup.py\n\n* Update cassandra-driver requirement to version 3.25 in setup.py to make it compatibal ewith higher py versions\n\n* Revert \"Update cassandra-driver requirement to version 3.25 in setup.py to make it compatibal ewith higher py versions\"\n\nThis reverts commit 49d8d0335ff438cde42735a9553457e09b5d04c6.\n\n* Revert \"Update Python version matrix in CI workflow and add support for Python 3.13 and 3.14 in setup.py\"\n\nThis reverts commit d15fbf395f45fe91258f1fc7cce8f5c331e36b46.\n\n---------\n\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/fab3b555b26cab29a5b4d1a338852e017aa88709"
+        },
+        {
+          "sha": "a2a4db2169486800d69fd83ca9dacdde669c1622",
+          "author_date": "2025-11-05T05:39:20Z",
+          "message": "Add LSHBloom to Datasketch (#246)\n\n* add bitarray and bitarray tests\n\n* add truncated minhash impl\n\n* truncate hashrange using bBitMinHash\n\n* add bloom filter impl, add benchmarks\n\n* use pybloomfiltermmap3\n\n* add pybloomfiltermmap3 as a dependency\n\n* remove unused dependencies\n\n* make in-memory default\n\n* add sync to lsh_bloom\n\n* make mmap default\n\n* fix bloom filter creation\n\n* clean up lshbloom impl\n\n* update bloom docs\n\n* update benchmarks\n\n* update docs\n\n* revert hashfunc\n\n* fix whitespace\n\n* add pybloomfilter version to setup.py\n\n* make bloom dependency optional\n\n* update lshbloom docs\n\n* update github actions\n\n* update doc workflow\n\n* update pybloomfilter version\n\n* conditional bloom deps\n\n* downgrade pybloomfiltermmap for <3.9 compat\n\n* clean up hanging import for bloom filter\n\n---------\n\nCo-authored-by: Arham Khan <arham23@polaris-login-01.hsn.cm.polaris.alcf.anl.gov>\nCo-authored-by: Arham Khan <arham23@polaris-login-02.hsn.cm.polaris.alcf.anl.gov>\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/a2a4db2169486800d69fd83ca9dacdde669c1622"
+        },
+        {
+          "sha": "7bbc3ba367f2818b73be448d1b02022f911806bd",
+          "author_date": "2025-11-05T05:46:07Z",
+          "message": "Bump version from 1.6.5 to 1.7.0 (#270)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/7bbc3ba367f2818b73be448d1b02022f911806bd"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v1.8.0",
+      "previous_release": "v1.7.0",
+      "commits": [
+        {
+          "sha": "deddaeca1723f3bde9e25c5f00f0167d5a02c6d4",
+          "author_date": "2025-11-08T01:38:57Z",
+          "message": "[247] Implement `MinHashLSHDeletionSession` to speed up key deletions (#272)\n\n* implement buffered removal for Redis storage\n\n* implement MinHashLSHDeletionSession\n\n* add unit tests for session deletion\n\n* add unit test for redis deletion session\n\n* pass config and name (actual params of constructor) instead of *args\n\n* re-write comment for clarity",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/deddaeca1723f3bde9e25c5f00f0167d5a02c6d4"
+        },
+        {
+          "sha": "e7e229a5651cc6c30e30e4b1b3e1886659db8690",
+          "author_date": "2025-11-10T06:56:43Z",
+          "message": "[BREAKING] Migrate to uv package management and also update CI/CD (#271)\n\n* Migrate build system to pyproject.toml and uv\n\n* Update Readme docs for the uv build\n\n* python version update and readme fixes as per review feedback\n\n* update pyprojct config and remove setup py and all\n\n* Fix formatting and punctuation in pyproject.toml\n\n* Update ignore list in ruff configuration to include E731\n\n* style: fix import ordering with ruff (I001)\n\n* style: remove trailing whitespace (W291, W293)\n\n* refactor: apply pyupgrade fixes - remove useless object inheritance and encode UTF-8 (UP004, UP012, UP026, UP032)\n\n* style: fix import ordering (I001)\n\n* refactor: apply minor pyupgrade fixes (UP005, UP034, W292)\n\n* style: remove more trailing whitespace\n\n* fix formatting\n\n* style: reorganize imports to use collections.abc for type hints\n\n* style: ignore deprecated imports (UP035)\n\n* style: reorganize imports to use collections.abc for type hints\n\n* ignore N801 and N803\n\n* style: move version import to top of file (E402)\n\n* style: move version import above weighted_minhash imports\n\n* style: remove Python version check for AsyncMinHashLSH import\n\n* style: reorder import statements for consistency\n\n* style: ignore F841 for unused local variable assignments\n\n* style: ignore UP028 for using `yield from` instead of `for` loop\n\n* style: add additional ignore rules for ruff linter\n\n* style: revert to Optional and Union syntax instead of | operator\n\n* style: add ignore rule for undefined name `buffer` in ruff linter\n\n* style: update type hints to use built-in list and tuple syntax\n\n* style: add ignore rule for invalid function name in ruff linter\n\n* style: add ignore rule for super-call-with-parameters in ruff linter\n\n* style: add ignore rule for ambiguous variable name in ruff linter\n\n* style: update ruff linter ignore rules for yield-in-for-loop and printf-string-formatting\n\n* style: add ignore rule for non-lowercase-variable-in-function in ruff linter\n\n* fix tab-indentation (W191)\n\n* style: update workflows to use 'uv' for package management and installation\n\n* style: update import statement for MinHash to correct module path\n\n* style: reorganize steps in pypi.yml for clarity and consistency\n\n* style: enhance pypi.yml workflow by adding package checks and default branch handling\n\n* style: update pypi.yml to remove default branch reference and clean up steps\n\n* style: rename workflow to 'Build and Publish Package' and update steps for clarity\n\n* style: add comment to clarify condition for manual trigger in PyPI publish step\n\n* comment trigger for build\n\n* style: update license format in pyproject.toml and clean up ignored lint rules\n\n* drop 3.8 as it's already EOL\n\n* update\n\n* comment environment temporarily\n\n* chore: switch to hatchling for build system and update project configuration\n\n* update lock file\n\n* revert almost to original origianl\n\n* add GitHub Actions workflow for building and verifying package\n\n* add pytest configuration to pyproject.toml\n\n* docs: update README to include contributing guidelines and development setup instructions\n\n* activate env\n\n* test extra tests to verify\n\n* ci: update Python version to 3.12 in CI workflows for Cassandra and MongoDB\n\n* update lock\n\n* fix headings\n\n* add pytest-rerunfailures dependency and flaky test marker\n\n* okay; mongo and cassandra tests are also passing let's remove the pr trigger\n\n* update\n\n* exclude formatting for `datasketch/hyperloglog_const.py` adding major file changes\n\n* fix type checks\n\n* apply suggestiosn to use `3.10` in ci for compatibility\n\n* fix formatting\n\n* apply suggestions for version\n\n* updated lock file\n\n* update ordering in classifiers\n\n* fix: SIM401\n\n* fix: SIM300\n\n* fix: SIM210\n\n* fix SIM117\n\n* fix: S108\n\n* fix S101\n\n* fix : RUF005\n\n* fix: RET508\n\n* fix ISC003\n\n* fix ERA001\n\n* fix D405\n\n* fix SIM108\n\n* fix SIM103\n\n* fix : D413\n\n* fix: D202\n\n* fix: D212\n\n* fix D208\n\n* fix RUF023\n\n* fix RUF023\n\n* fix RUF023\n\n* fix D403\n\n* fix D209\n\n* updated pyproect toml in ref with: https://github.com/microsoft/agent-framework/blob/1aaf37dab8ee4534ae2000082a08ba112173cc4c/python/pyproject.toml#L116\n\n* fix RET505\n\n* fix D412\n\n* add ignore and tdo\n\n* remove unused imports from multiple files\n\n* fix F401\n\n* add todo ignores\n\n* fix D200\n\n* add ignores\n\n* update\n\n* fix D415\n\n* update\n\n* fix RET504\n\n* fix RET503\n\n* fix B023\n\n* fix T201, replace print with logger\n\n* fix SIM102\n\n* fix SIM212\n\n* fix SIM212\n\n* fix SIM118\n\n* update\n\n* fix D415\n\n* add ignore todo for pickle\n\n* fix E501\n\n* update\n\n* fix B007\n\n* fix RUF013\n\n* fix RUF059\n\n* fix RUF059\n\n* fix F841\n\n* fix stack level warning\n\n* fix D404\n\n* ad ignore\n\n* refactor: replace ABCMeta with ABC for compatibility\n\n* apply formatting\n\n* chore: add ruff checks workflow and remove lint step from test workflow\n\n* update\n\n* update readme\n\n* feat: add link-check job to workflow for README.md validation\n\n* update\n\n* fix dead links\n\n* add ignore\n\n* trigger all tests\n\n* all tests passing, revert temp trigger\n\n* update to 3.10\n\n---------\n\nCo-authored-by: Sarang Pratham <sarangpratham720@gmail.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/e7e229a5651cc6c30e30e4b1b3e1886659db8690"
+        },
+        {
+          "sha": "a07fd3c57e2e2b24924bc75e65ff5e933f12eec3",
+          "author_date": "2025-11-11T06:36:01Z",
+          "message": "fix: link check failure occurring in the master branch. (#276)\n\n* Update link-check action to exclude 'ieee.org' from checks\n\n* update\n\n* update\n\n* update\n\n* update\n\n* update\n\n* update\n\n* update\n\n* update\n\n* try with jusrt domain exclude",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/a07fd3c57e2e2b24924bc75e65ff5e933f12eec3"
+        },
+        {
+          "sha": "e457f95e8486a652b1aa7e7e3b272c47489d9a64",
+          "author_date": "2025-11-11T06:41:12Z",
+          "message": "Update README to reflect changes in virtual environment setup using uv (#277)\n\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/e457f95e8486a652b1aa7e7e3b272c47489d9a64"
+        },
+        {
+          "sha": "1681eeec334ccbdf02aec3556d40a82c2fba3230",
+          "author_date": "2025-11-11T06:43:36Z",
+          "message": "Bump supercharge/mongodb-github-action from 1.8.0 to 1.12.0 (#279)\n\nBumps [supercharge/mongodb-github-action](https://github.com/supercharge/mongodb-github-action) from 1.8.0 to 1.12.0.\n- [Release notes](https://github.com/supercharge/mongodb-github-action/releases)\n- [Changelog](https://github.com/supercharge/mongodb-github-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/supercharge/mongodb-github-action/compare/1.8.0...1.12.0)\n\n---\nupdated-dependencies:\n- dependency-name: supercharge/mongodb-github-action\n  dependency-version: 1.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/1681eeec334ccbdf02aec3556d40a82c2fba3230"
+        },
+        {
+          "sha": "396d08c0ae38b32b41fe95ead8512744652d6286",
+          "author_date": "2025-11-11T06:46:20Z",
+          "message": "Bump actions/checkout from 4 to 5 (#278)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 4 to 5.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/396d08c0ae38b32b41fe95ead8512744652d6286"
+        },
+        {
+          "sha": "b27cb86ab6724bf92b87ad8937812d283b4f8f21",
+          "author_date": "2025-11-11T06:50:45Z",
+          "message": "[PATCH][273] Allow `prepickle` to be False for `Redis` storage (#274)\n\n* implement buffered removal for Redis storage\n\n* implement MinHashLSHDeletionSession\n\n* add unit tests for session deletion\n\n* add unit test for redis deletion session\n\n* pass config and name (actual params of constructor) instead of *args\n\n* re-write comment for clarity\n\n* only default to True for redis if prepickle is `None`.\n\n* account for byte storage of keys\n\n* [BREAKING] Migrate to uv package management and also update CI/CD (#271)\n\n* Migrate build system to pyproject.toml and uv\n\n* Update Readme docs for the uv build\n\n* python version update and readme fixes as per review feedback\n\n* update pyprojct config and remove setup py and all\n\n* Fix formatting and punctuation in pyproject.toml\n\n* Update ignore list in ruff configuration to include E731\n\n* style: fix import ordering with ruff (I001)\n\n* style: remove trailing whitespace (W291, W293)\n\n* refactor: apply pyupgrade fixes - remove useless object inheritance and encode UTF-8 (UP004, UP012, UP026, UP032)\n\n* style: fix import ordering (I001)\n\n* refactor: apply minor pyupgrade fixes (UP005, UP034, W292)\n\n* style: remove more trailing whitespace\n\n* fix formatting\n\n* style: reorganize imports to use collections.abc for type hints\n\n* style: ignore deprecated imports (UP035)\n\n* style: reorganize imports to use collections.abc for type hints\n\n* ignore N801 and N803\n\n* style: move version import to top of file (E402)\n\n* style: move version import above weighted_minhash imports\n\n* style: remove Python version check for AsyncMinHashLSH import\n\n* style: reorder import statements for consistency\n\n* style: ignore F841 for unused local variable assignments\n\n* style: ignore UP028 for using `yield from` instead of `for` loop\n\n* style: add additional ignore rules for ruff linter\n\n* style: revert to Optional and Union syntax instead of | operator\n\n* style: add ignore rule for undefined name `buffer` in ruff linter\n\n* style: update type hints to use built-in list and tuple syntax\n\n* style: add ignore rule for invalid function name in ruff linter\n\n* style: add ignore rule for super-call-with-parameters in ruff linter\n\n* style: add ignore rule for ambiguous variable name in ruff linter\n\n* style: update ruff linter ignore rules for yield-in-for-loop and printf-string-formatting\n\n* style: add ignore rule for non-lowercase-variable-in-function in ruff linter\n\n* fix tab-indentation (W191)\n\n* style: update workflows to use 'uv' for package management and installation\n\n* style: update import statement for MinHash to correct module path\n\n* style: reorganize steps in pypi.yml for clarity and consistency\n\n* style: enhance pypi.yml workflow by adding package checks and default branch handling\n\n* style: update pypi.yml to remove default branch reference and clean up steps\n\n* style: rename workflow to 'Build and Publish Package' and update steps for clarity\n\n* style: add comment to clarify condition for manual trigger in PyPI publish step\n\n* comment trigger for build\n\n* style: update license format in pyproject.toml and clean up ignored lint rules\n\n* drop 3.8 as it's already EOL\n\n* update\n\n* comment environment temporarily\n\n* chore: switch to hatchling for build system and update project configuration\n\n* update lock file\n\n* revert almost to original origianl\n\n* add GitHub Actions workflow for building and verifying package\n\n* add pytest configuration to pyproject.toml\n\n* docs: update README to include contributing guidelines and development setup instructions\n\n* activate env\n\n* test extra tests to verify\n\n* ci: update Python version to 3.12 in CI workflows for Cassandra and MongoDB\n\n* update lock\n\n* fix headings\n\n* add pytest-rerunfailures dependency and flaky test marker\n\n* okay; mongo and cassandra tests are also passing let's remove the pr trigger\n\n* update\n\n* exclude formatting for `datasketch/hyperloglog_const.py` adding major file changes\n\n* fix type checks\n\n* apply suggestiosn to use `3.10` in ci for compatibility\n\n* fix formatting\n\n* apply suggestions for version\n\n* updated lock file\n\n* update ordering in classifiers\n\n* fix: SIM401\n\n* fix: SIM300\n\n* fix: SIM210\n\n* fix SIM117\n\n* fix: S108\n\n* fix S101\n\n* fix : RUF005\n\n* fix: RET508\n\n* fix ISC003\n\n* fix ERA001\n\n* fix D405\n\n* fix SIM108\n\n* fix SIM103\n\n* fix : D413\n\n* fix: D202\n\n* fix: D212\n\n* fix D208\n\n* fix RUF023\n\n* fix RUF023\n\n* fix RUF023\n\n* fix D403\n\n* fix D209\n\n* updated pyproect toml in ref with: https://github.com/microsoft/agent-framework/blob/1aaf37dab8ee4534ae2000082a08ba112173cc4c/python/pyproject.toml#L116\n\n* fix RET505\n\n* fix D412\n\n* add ignore and tdo\n\n* remove unused imports from multiple files\n\n* fix F401\n\n* add todo ignores\n\n* fix D200\n\n* add ignores\n\n* update\n\n* fix D415\n\n* update\n\n* fix RET504\n\n* fix RET503\n\n* fix B023\n\n* fix T201, replace print with logger\n\n* fix SIM102\n\n* fix SIM212\n\n* fix SIM212\n\n* fix SIM118\n\n* update\n\n* fix D415\n\n* add ignore todo for pickle\n\n* fix E501\n\n* update\n\n* fix B007\n\n* fix RUF013\n\n* fix RUF059\n\n* fix RUF059\n\n* fix F841\n\n* fix stack level warning\n\n* fix D404\n\n* ad ignore\n\n* refactor: replace ABCMeta with ABC for compatibility\n\n* apply formatting\n\n* chore: add ruff checks workflow and remove lint step from test workflow\n\n* update\n\n* update readme\n\n* feat: add link-check job to workflow for README.md validation\n\n* update\n\n* fix dead links\n\n* add ignore\n\n* trigger all tests\n\n* all tests passing, revert temp trigger\n\n* update to 3.10\n\n---------\n\nCo-authored-by: Sarang Pratham <sarangpratham720@gmail.com>\n\nremove excess files\n\n* align with ruff formatting\n\n---------\n\nCo-authored-by: Bhimraj Yadav <bhimrajyadav977@gmail.com>\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/b27cb86ab6724bf92b87ad8937812d283b4f8f21"
+        },
+        {
+          "sha": "13263c3b4e1f03ea09d30cef56f993b0f370b58c",
+          "author_date": "2025-11-11T06:58:40Z",
+          "message": "Update pyproject.toml (#281)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/13263c3b4e1f03ea09d30cef56f993b0f370b58c"
+        },
+        {
+          "sha": "668ed8b3608ad666cfc10d395db983d4058825ac",
+          "author_date": "2025-11-12T06:25:06Z",
+          "message": "Fix formatting in README  (#283)\n\n* Fix formatting in README for virtual environment setup instructions\n\n* trigegr build check always",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/668ed8b3608ad666cfc10d395db983d4058825ac"
+        },
+        {
+          "sha": "8235680860a0a7c38ec9bc8b65ee1c0b512abd72",
+          "author_date": "2025-11-12T07:03:11Z",
+          "message": "fix: python version in readme (#285)\n\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/8235680860a0a7c38ec9bc8b65ee1c0b512abd72"
+        },
+        {
+          "sha": "15550055abe840a440c788a866f0149c15db0bbc",
+          "author_date": "2025-11-16T20:32:46Z",
+          "message": "fix: replace `buffer` with `memoryview` for compatibility (#289)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/15550055abe840a440c788a866f0149c15db0bbc"
+        },
+        {
+          "sha": "77ec0a1b31b275cdc1137aaf2711de87c9262b54",
+          "author_date": "2025-11-18T03:47:09Z",
+          "message": "Introduce `Redis` integration tests + resolve key type disparity across `Redis` and `Cassandra` (#284)\n\n* rename test_lsh_cassandra to general integration test file\n\n* preliminary changes\n\n* Revert \"preliminary changes\"\n\nThis reverts commit 36f0ef53207467dcf5f3f9ac791decd0bf383fc7.\n\n* initial pytest integration tests\n\n* preliminary storage changes\n\n* add key encoder and decoder\n\n* ruff complaints\n\n* redis test workflow\n\n* minimise diff in storage\n\n* less destructive basename\n\n* simplify code\n\n* expect byte keys when prepickle is false\n\nfor now, regardless of stoarge\n\n* require bytes keys for non dict storage\n\n* remove excess else\n\n* remove excess unittest.main invocation\n\n* make require_bytes_keys private\n\n* remove explicit teardown invocation\n\n* fix over-indentation in docstring (caught by ruff)\n\n* remove `requirements.txt` expectation from test workflows\n\n* ensure TypeError is raised when inserting some non-bytes keys with prepickle False",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/77ec0a1b31b275cdc1137aaf2711de87c9262b54"
+        },
+        {
+          "sha": "1380a6058a6eb60d4f73429d8842a35ececea55b",
+          "author_date": "2025-11-18T03:48:09Z",
+          "message": "Bump supercharge/mongodb-github-action from 1.12.0 to 1.12.1 (#291)\n\nBumps [supercharge/mongodb-github-action](https://github.com/supercharge/mongodb-github-action) from 1.12.0 to 1.12.1.\n- [Release notes](https://github.com/supercharge/mongodb-github-action/releases)\n- [Changelog](https://github.com/supercharge/mongodb-github-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/supercharge/mongodb-github-action/compare/1.12.0...1.12.1)\n\n---\nupdated-dependencies:\n- dependency-name: supercharge/mongodb-github-action\n  dependency-version: 1.12.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/1380a6058a6eb60d4f73429d8842a35ececea55b"
+        },
+        {
+          "sha": "a902423bf2a5847f9a2a95ef75e9a47c0b470917",
+          "author_date": "2025-11-25T23:13:25Z",
+          "message": "feat(minhash): optional CuPy backend for MinHash.update_batch (#286)\n\n* fix: python version in readme\n\n* feat: add optional CuPy backend for update_batch\n\n* feat: add benchmark for cpu vs gpu, docs, and all\n\n* feat: update API doc string, different GPU settings\n\n* fix: per call override\n\n* feat: skip benchmark code block, add results with discussion, update docs\n\n* feat: keeping only used plots and tiny code block for cpu/gpu usage",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/a902423bf2a5847f9a2a95ef75e9a47c0b470917"
+        },
+        {
+          "sha": "51c59af5f97e2872ab838b0490fc48814b2e703d",
+          "author_date": "2025-11-28T00:24:35Z",
+          "message": "fix: use of perf_counter() instead of deprecated clock() in time module (#290)\n\n* fix: python version in readme\n\n* feat: add optional CuPy backend for update_batch\n\n* feat: add benchmark for cpu vs gpu, docs, and all\n\n* fix: change deprecated clock to perf_counter\n\n* fix merge conflicts\n\n* fix merge conflicts\n\n* feat: embedding figures",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/51c59af5f97e2872ab838b0490fc48814b2e703d"
+        },
+        {
+          "sha": "7b4ebacafe39c93b28058f7da9e4881cedac1c46",
+          "author_date": "2025-11-28T00:42:23Z",
+          "message": "Bump version from 1.7.1 to 1.8.0 (#292)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/7b4ebacafe39c93b28058f7da9e4881cedac1c46"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v1.9.0",
+      "previous_release": "v1.8.0",
+      "commits": [
+        {
+          "sha": "658bf24e0f9cbbfb4983fed1569d056d8322d4dd",
+          "author_date": "2025-12-19T15:42:04Z",
+          "message": "Bump actions/checkout from 5 to 6 (#294)\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 5 to 6.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/658bf24e0f9cbbfb4983fed1569d056d8322d4dd"
+        },
+        {
+          "sha": "18bac673403a8c9756aabb64544644d1b242fad3",
+          "author_date": "2025-12-26T17:12:17Z",
+          "message": "Match async `Redis` interface with sync + introduce `aioredis` integration tests (#293)\n\n* rename test_lsh_mongo to test_lsh\n\n* add async tests for aioredis and unify storage behaviour\n\n* ruff format\n\n* remove try catch around key cleanup, correct searched key in test remove\n\n* update uv lock\n\n* make cleanup conditional",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/18bac673403a8c9756aabb64544644d1b242fad3"
+        },
+        {
+          "sha": "753e4741c1262b4b8bf5176f3b7dec5a0ee79407",
+          "author_date": "2025-12-30T08:59:18Z",
+          "message": "chore: add Python 3.13 to CI workflow matrix (#295)\n\n* chore: add Python 3.13 to CI workflow matrix\n\n* chore: update CI workflow to include Python 3.14\n\n* test\n\n* update\n\n* update\n\n* update\n\n* update",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/753e4741c1262b4b8bf5176f3b7dec5a0ee79407"
+        },
+        {
+          "sha": "2bf46faab2ba49f8a673c157ee9778fd7db96491",
+          "author_date": "2025-12-30T09:05:28Z",
+          "message": "Add code coverage support with pytest-cov and Codecov integration (#296)\n\n- Add pytest-cov to test dependencies\n- Configure pytest to run with coverage for datasketch package\n- Update GitHub Actions workflow to upload coverage reports to Codecov\n- Add Codecov badge to README\n- Configure coverage to omit experimental and test directories\n\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/2bf46faab2ba49f8a673c157ee9778fd7db96491"
+        },
+        {
+          "sha": "4e29f977da3a6bc91cfe7d904fae7d448b77e45a",
+          "author_date": "2025-12-30T09:06:37Z",
+          "message": "chore: remove Travis CI configuration and related scripts (#298)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/4e29f977da3a6bc91cfe7d904fae7d448b77e45a"
+        },
+        {
+          "sha": "50ce2a016cf5dbb2c50ba82d9ecbaeeb986d0514",
+          "author_date": "2026-01-02T16:56:13Z",
+          "message": "chore: add pyright type checking and ci checks for it  (#280)\n\n* add config to pyproject toml\n\n* add checks for pyright\n\n* update\n\n* update\n\n* fix: add type ignore comments for Redis storage methods and update type hints in MinHash and LSH classes\n\n* fix: update input validation in WeightedMinHashGenerator to check for sized iterables\n\n* fix: add type hints and improve error handling in storage functions\n\n* fix: add assertions to ensure keys and hashtables are initialized in AsyncMinHashLSH\n\n* fix: update _merge method signature to return None and improve error handling in _hashed_byteswap\n\n* fix: remove unnecessary assertion for upper bound in MinHashLSHEnsemble\n\n* fix: simplify hashvalues initialization in WeightedMinHashGenerator\n\n* fix: remove unnecessary assertions for keys and hashtables in AsyncMinHashLSH\n\n* refactor: remove duplicate parsing of hashvalues\n\n* refactor: update type hints for hashvalues and permutations in MinHash class\n\n* apply suggestion\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>\n\n* revert seeds none change\n\n---------\n\nCo-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/50ce2a016cf5dbb2c50ba82d9ecbaeeb986d0514"
+        },
+        {
+          "sha": "a1c1e292c08e052aaa9557115098c1e289344f9e",
+          "author_date": "2026-01-18T22:44:40Z",
+          "message": "Bump version from 1.8.0 to 1.9.0 (#299)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/a1c1e292c08e052aaa9557115098c1e289344f9e"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v1.10.0",
+      "previous_release": "v1.9.0",
+      "commits": [
+        {
+          "sha": "cc635ed140dc2ef7fa5c88b60883cd36d021809b",
+          "author_date": "2026-03-25T18:49:52Z",
+          "message": "Update hash function to use unsigned 32-bit integer (#304)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/cc635ed140dc2ef7fa5c88b60883cd36d021809b"
+        },
+        {
+          "sha": "25032a4d1970fd7712cd550460e38cf54f2d5aa8",
+          "author_date": "2026-04-14T02:55:29Z",
+          "message": "Bump pypa/gh-action-pypi-publish from 1.13.0 to 1.14.0 (#308)\n\n* Bump pypa/gh-action-pypi-publish from 1.13.0 to 1.14.0\n\nBumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from 1.13.0 to 1.14.0.\n- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)\n- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.13.0...v1.14.0)\n\n---\nupdated-dependencies:\n- dependency-name: pypa/gh-action-pypi-publish\n  dependency-version: 1.14.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\n* Remove unnecessary list argument from deque initialization (#309)\n\n* Fix ruff RUF037: replace deque([]) with deque()\n\nhttps://claude.ai/code/session_01LXPFPqVYySeSgtYYdKU56U\n\n* Accept 403/429 status codes in lychee link check\n\nAcademic PDF servers (Stanford, Brown, Inria, VLDB, etc.) and some other\nsites block lychee's user-agent with 403 responses despite being valid\nlinks. Accept 403 and 429 (rate-limit) status codes to avoid false\npositives in the link-check CI job.\n\nhttps://claude.ai/code/session_01LXPFPqVYySeSgtYYdKU56U\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>\n\n---------\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Eric Zhu <320302+ekzhu@users.noreply.github.com>\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/25032a4d1970fd7712cd550460e38cf54f2d5aa8"
+        },
+        {
+          "sha": "1e6c764c293c55ef06b4a56b323165d6c7119eea",
+          "author_date": "2026-04-14T02:56:21Z",
+          "message": "Bump codecov/codecov-action from 5 to 6 (#306)\n\nBumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 5 to 6.\n- [Release notes](https://github.com/codecov/codecov-action/releases)\n- [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/codecov/codecov-action/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: codecov/codecov-action\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Eric Zhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/1e6c764c293c55ef06b4a56b323165d6c7119eea"
+        },
+        {
+          "sha": "cb708a83048e4769a525f1e3a341b2a14e476a84",
+          "author_date": "2026-04-14T04:46:40Z",
+          "message": "Fix buffered MinHashLSH query aggregation across storage backends (#307)\n\n* Fix MinHashLSH buffered query candidate aggregation\n\n* Fix Ruff lint in MinHashLSHEnsemble\n\n* Cover prepickled buffered MinHashLSH queries\n\n* Fix buffered LSH queries and broken docs link\n\n* Remove rate-limited LSH Forest paper link\n\n---------\n\nCo-authored-by: Eric Zhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/cb708a83048e4769a525f1e3a341b2a14e476a84"
+        },
+        {
+          "sha": "785c4b32f083ee43e316b83818024812f4e4a41d",
+          "author_date": "2026-04-14T05:06:42Z",
+          "message": "Pin transitive dependencies to avoid dependabot uv.lock-only PRs (#312)\n\n* Pin pillow, pygments, and fonttools in pyproject.toml\n\nThese are transitive deps of matplotlib (benchmark group) and pytest\n(test group). Pinning them directly avoids repeated dependabot\nuv.lock-only PRs and lets us own the version bumps explicitly.\n\n- pillow==12.2.0 (Python >= 3.10 only; 12.x dropped 3.9 support, so\n  Python 3.9 continues to resolve pillow 11.3.0 via matplotlib)\n- fonttools==4.60.2\n- pygments==2.20.0\n\nhttps://claude.ai/code/session_016PmmThgtWzGhjy1aQZa9kC\n\n* Use >= instead of == for pillow, pygments, and fonttools\n\nRelaxes the pins added in the previous commit to minimum-version\nconstraints so the resolver can still pick newer versions without\nrequiring a pyproject.toml edit.\n\nhttps://claude.ai/code/session_016PmmThgtWzGhjy1aQZa9kC\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/785c4b32f083ee43e316b83818024812f4e4a41d"
+        },
+        {
+          "sha": "848917377d8e02d1ba943f239fad92d85965d9b1",
+          "author_date": "2026-04-17T22:39:34Z",
+          "message": "Move AsyncMinHashLSH from experimental to datasketch.aio (#314)\n\n* Move AsyncMinHashLSH from experimental to datasketch.aio\n\n- Create new `datasketch/aio/` submodule with AsyncMinHashLSH,\n  AsyncMinHashLSHInsertionSession, and AsyncMinHashLSHDeleteSession\n- Add optional AsyncMinHashLSH export to main datasketch package\n- Deprecate experimental module with warnings pointing to new location\n- Update tests to use new import path\n- Rename `experimental_aio` dependency group to `aio` (keep alias)\n- Remove experimental from coverage omit\n\nNew import paths:\n- `from datasketch.aio import AsyncMinHashLSH`\n- `from datasketch import AsyncMinHashLSH`\n\nOld imports still work but emit DeprecationWarning.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* Fix ruff linting errors\n\n- Sort __all__ lists alphabetically (RUF022)\n- Add noqa: E402 for intentional imports after deprecation warnings\n- Add blank line after docstring Example section (D413)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* Address code review feedback from gemini-code-assist\n\nBug fixes:\n- Add missing await on self.execute() in AsyncRedisBuffer\n- Fix getmany() to correctly use Redis pipeline (don't await individual commands)\n- Add getmany() method to AsyncMongoListStorage for get_subset_counts support\n- Fix typo: \"AsyncMinHash\" -> \"AsyncMinHashLSH\" in error message\n- Remove dead code: await self.keys (storage objects aren't awaitable)\n\nPerformance:\n- Change tuple buffers to lists in AsyncMongoBuffer for O(1) append\n\nDocumentation:\n- Fix module docstring example to use prepickle=True for string keys\n- Simplify insertion_session and delete_session docstring examples\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* Add test for get_subset_counts async method\n\nThis test exercises the getmany() method that was fixed in a previous\ncommit, ensuring proper coverage for the async implementation.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* Run MongoDB and Redis integration tests on PRs\n\nChange workflow triggers from workflow_run (which runs after main Test\ncompletes and doesn't show as PR checks) to push/pull_request triggers.\nThis makes integration test results visible directly in PR status checks.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* Run Cassandra integration tests on PRs\n\nChange workflow trigger from workflow_run to push/pull_request triggers\nfor consistency with MongoDB and Redis test workflows.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\n\n* Move AsyncMinHashLSH from experimental to datasketch.aio (#302)\n\n* Initial plan\n\n* Update documentation and fix RedisStorage import issue\n\nCo-authored-by: ekzhu <320302+ekzhu@users.noreply.github.com>\n\n* Add clarifying comments for optional Redis dependency handling\n\nCo-authored-by: ekzhu <320302+ekzhu@users.noreply.github.com>\n\n---------\n\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: ekzhu <320302+ekzhu@users.noreply.github.com>\n\n* Address PR #301 review: drop dead code, fix prepickle bug, quiet deprecations (#313)\n\n- Delete orphaned datasketch/experimental/aio/storage.py. Nothing imports\n  from it (the shims all forward to datasketch.aio.lsh), and the stale\n  file still contained the pre-fix bugs that datasketch/aio/storage.py\n  silently fixed: un-awaited AsyncRedisBuffer.execute(), tuple-based\n  buffer stacks, missing AsyncMongoListStorage.getmany, and a broken\n  pipeline getmany impl.\n\n- Drop the dead try/except ImportError fallback around\n  `from datasketch.aio import AsyncMinHashLSH` in datasketch/__init__.py.\n  datasketch.aio.storage already degrades gracefully when motor/redis are\n  absent, so the fallback was unreachable and only served to rebind the\n  public symbol to None for type checkers.\n\n- Fix AsyncMinHashLSH.get_subset_counts under prepickle=True: query keys\n  now get pickled to match the stored representation, so the lookup\n  actually finds the inserted keys. Adds a regression test.\n\n- Refactor the experimental deprecation shims to emit exactly one\n  DeprecationWarning per deprecated import path (down from three). Uses\n  PEP 562 __getattr__ with globals() caching so the warning fires on\n  first attribute access and subsequent accesses skip the hook. Static\n  analyzers see the __all__ names via TYPE_CHECKING-guarded imports.\n\n- Minor: add asyncio.run(main()) to the datasketch.aio docstring example\n  so it's copy-paste runnable, and add a KEEP IN SYNC comment on the\n  duplicated experimental_aio extras group in pyproject.toml.\n\nCo-authored-by: Claude <noreply@anthropic.com>\n\n* Parallelize AsyncMongoListStorage.getmany with asyncio.gather\n\nAddresses the gemini-code-assist review comment on PR #314: the previous\nsequential loop issued N round trips in series. asyncio.gather runs the\nunderlying find() queries concurrently.\n\nhttps://claude.ai/code\n\n* Fix Redis set-backed getmany and wire CI to the new aio extra\n\nHardcoding `LRANGE` in `AsyncRedisListStorage.getmany` broke the\ninherited method on `AsyncRedisSetStorage`: the subclass overrides\n`_get_items` to use `SMEMBERS`, but the pipeline in `getmany` bypassed\nthat override and would fail with `WRONGTYPE` against set keys.\n\nRoute `getmany` through `_get_items` so the subclass override applies,\nfollowing the existing `itemcounts`/`_get_len` pattern in the same file.\n\nAdd a regression test that calls `getmany` on an unordered (set-backed)\nhashtable storage, which exercises the previously-broken path under\nRedis.\n\nUpdate the three integration-test workflows (mongo, redis, cassandra)\nto install the new `aio` extra instead of the deprecated\n`experimental_aio` alias, aligning CI install coverage with the new\npublic API surface.\n\nhttps://claude.ai/code\n\n* Apply prepickle consistently in async has_key and remove\n\n`AsyncMinHashLSH.has_key()` forwarded the caller's raw key to storage,\nand `_remove()` reused the raw key for the existence check, hashtable\nlookup, and the delete itself. Under `prepickle=True` the storage holds\npickled bytes, so:\n\n  await lsh.insert(\"a\", m)\n  await lsh.has_key(\"a\")   # returned False\n  await lsh.remove(\"a\")    # raised ValueError\n\nMirror the sync `MinHashLSH._remove` pattern: pickle the key inside\n`_remove` first and call the storage primitives (`self.keys.has_key`,\n`self.keys.get`, `self.keys.remove`, `hashtable.remove_val`) directly so\nthey all see the stored representation.\n\n`has_key()` now pickles internally for the public API. `_insert()` was\ncalling `has_key()` after it had already pickled the key, which\naccidentally worked but would have started double-pickling once\n`has_key` learned to pickle on its own; switch `_insert`'s duplicate\ncheck to `self.keys.has_key()` directly to keep that path single-pickle.\n\nAdd regression tests under `TestAsyncMinHashLSHWithPrepickle` covering\n`has_key`, `remove`, and `delete_session.remove` with string keys.\n\nhttps://claude.ai/code\n\n* Close behavioral-parity gaps in async LSH test coverage\n\nAdd four tests covering behaviors that are part of the public async\ncontract but were only tested implicitly (or not at all):\n\n- test_insert_duplicate_raises: re-inserting an existing bytes key\n  must raise ValueError\n- test_insert_check_duplication_false: check_duplication=False bypass\n  must allow re-insertion without error\n- test_is_empty: is_empty() must flip False after insert and back to\n  True after removing all keys\n- test_insert_duplicate_prepickle: duplicate detection must also work\n  for pickled string keys and the bypass must still apply\n\nDesign gaps (no async `merge` or `add_to_query_buffer`) are tracked\nseparately - they are missing APIs rather than missing tests and are\nout of scope for this PR.\n\nhttps://claude.ai/code\n\n* Fix Redis getmany: use direct pipeline calls instead of _get_items\n\nPipeline command methods in redis.asyncio are synchronous (they queue\nand return self). The previous approach routed through async _get_items\nwhich awaited the pipeline return value — while Pipeline.__await__\nmakes this technically valid, it adds unnecessary async machinery to\nwhat should be a synchronous queue operation.\n\nRevert AsyncRedisListStorage.getmany to the original direct\npipe.lrange() pattern, and add an explicit getmany override in\nAsyncRedisSetStorage that uses pipe.smembers(). This is the\n\"override in subclass\" approach from the reviewer's suggestion, and\nkeeps pipeline command queuing purely synchronous.\n\nhttps://claude.ai/code\n\n* Fix _query_b to unpickle keys under prepickle=True\n\nThe sync MinHashLSH._query_b unpickles candidates before returning\nthem when prepickle is enabled. The async version was missing this\nstep, returning raw pickled bytes instead of original keys.\n\nhttps://claude.ai/code\n\n---------\n\nCo-authored-by: Claude Opus 4.5 <noreply@anthropic.com>\nCo-authored-by: Copilot <198982749+Copilot@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/848917377d8e02d1ba943f239fad92d85965d9b1"
+        },
+        {
+          "sha": "0f2b55444e078a207b353c54553247ab3add58b9",
+          "author_date": "2026-04-17T22:43:45Z",
+          "message": "Bump version from 1.9.0 to 1.10.0 (#315)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/0f2b55444e078a207b353c54553247ab3add58b9"
+        },
+        {
+          "sha": "c7c8df07ad9b90f0f81ddc2ee3ffb5f37e18a2a9",
+          "author_date": "2026-04-17T23:04:43Z",
+          "message": "Add Python 3.10+ version constraints and GitHub workflow permissions (#316)\n\n* Add permissions to workflows and scrub example MongoDB URI\n\nAdd minimal permission blocks to GitHub Actions workflows flagged by\ncode scanning, and replace a sample MongoDB Atlas connection string\nin the docs with a placeholder to silence secret scanning.\n\nhttps://claude.ai/code/session_01TpxJA1jStTbtLqB6FgNFm4\n\n* Bump nltk and pytest to address dependabot alerts\n\nPin nltk>=3.9.4 and pytest>=9.0.3 on Python >= 3.10 to pick up fixes\nfor the critical nltk zip-slip, the nltk path traversal, the nltk\nwordnet_app XSS/remote-shutdown/recursion issues, and the pytest\ntmpdir CVE. Both fix versions dropped Python 3.9 support, so the\nconstraint is guarded by a python_version marker to keep 3.9 builds\nresolvable.\n\nPillow remains at the most recent version compatible with each Python\n(12.2.0 on >=3.10, 11.3.0 on 3.9); the outstanding Pillow PSD/FITS\nalerts only affect the 3.9 resolution and cannot be fixed without\ndropping 3.9 support.\n\nhttps://claude.ai/code/session_01TpxJA1jStTbtLqB6FgNFm4\n\n* Keep pre-3.10 constraints for nltk and pytest\n\nAddresses gemini-code-assist review: the python_version >= '3.10'\nmarker on its own drops these packages from the resolution on Python\n3.9 entirely. Add fallback entries so Python 3.9 users still get\nnltk>=3.4.5 (the previous minimum) and an unpinned pytest.\n\nhttps://claude.ai/code/session_01TpxJA1jStTbtLqB6FgNFm4\n\n---------\n\nCo-authored-by: Claude <noreply@anthropic.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/c7c8df07ad9b90f0f81ddc2ee3ffb5f37e18a2a9"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v2.0.0",
+      "previous_release": "v1.10.0",
+      "commits": [
+        {
+          "sha": "2d3655fb7f144d76a82d615ae7bea9df934413af",
+          "author_date": "2026-04-17T23:14:23Z",
+          "message": "Fix WeightedMinHash input mutation (#317)\n\nCo-authored-by: Eric Zhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/2d3655fb7f144d76a82d615ae7bea9df934413af"
+        },
+        {
+          "sha": "f84c431ba6f463302a7f42f48b494b4d3e2287b3",
+          "author_date": "2026-04-18T23:33:25Z",
+          "message": "Preserve custom hash functions in sketch unions (#318)\n\n* Preserve hash functions in sketch unions\n\n* Preserve GPU mode in MinHash union",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/f84c431ba6f463302a7f42f48b494b4d3e2287b3"
+        },
+        {
+          "sha": "8d4bda1b3085c8174f6f7c850c12644c87f135cf",
+          "author_date": "2026-06-23T12:03:58Z",
+          "message": "Bump actions/checkout from 6 to 7 (#322)",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/8d4bda1b3085c8174f6f7c850c12644c87f135cf"
+        },
+        {
+          "sha": "24e27cd72108a7efea1dba0e2f30b6aced0eacc5",
+          "author_date": "2026-07-05T06:28:54Z",
+          "message": "Add affine MinHash permutation schemes; refresh benchmarks and docs (#323)\n\n* Add affine MinHash permutation schemes; refresh benchmarks and docs\n\nIntroduce affine multiply-shift permutation schemes for MinHash --\naffine32 (the new default) and affine64 -- which remove the legacy\nscheme's large-set similarity bias, run faster, and use less memory,\nkeeping a legacy mode for backward compatibility. Also refreshes the\nsynthetic benchmarks, figures, and documentation across the MinHash,\nLSH, LSH Forest, and LSH Ensemble pages, and adds an optional GPU\nupdate path for update_batch.\n\n* Address review: b-bit per-scheme accuracy test and clarifying notes\n\n- Add test_estimation_accuracy_per_scheme: b-bit Jaccard estimates stay\n  within tolerance of the true similarity under affine32/affine64/legacy\n  (defense-in-depth, since b-bit keeps the softer low bits of the\n  multiply-shift output).\n- Note that the LSH Ensemble permutation-scheme guard lives in the inner\n  MinHashLSH (_query_b), so it is checked lazily and per non-empty\n  partition; a query reaching only empty partitions returns nothing.\n- Note that the affine estimator's accuracy is empirical (a*x+b mod 2^w\n  is 2-universal but not provably min-wise independent), resting on the\n  bijection property, the fmix pre-mix, and the bias benchmarks.\n\n* Address review: CPU-executable GPU parity test and scheme guard tests\n\n- test_minhash_gpu.py: add TestGPUPathOnCPU, which injects a\n  numpy-backed CuPy stand-in (and forces the availability cache) so the\n  GPU branch of update_batch executes on CPU and is asserted equal to\n  the CPU path for all three schemes. Includes a mutation guard --\n  wrong-dtype (uint64) affine32 caches change the pre-truncation min\n  ordering and are caught. This always runs, unlike the hardware-gated\n  parity tests.\n- test_minhash_schemes.py: assert LeanMinHash and bBitMinHash\n  __setstate__ reject a corrupt scheme-code byte (the pickle path,\n  distinct from the already-tested deserialize path); add count()\n  cardinality accuracy per scheme on structured input -- affine stays\n  within tolerance, legacy collapses -- the exact bias class the affine\n  schemes fix.\n\n* Skip LSH Bloom tests when pybloomfilter is not installed\n\npybloomfilter is an optional dependency (the bloom extra); the tests\nerrored with ImportError when it was absent instead of skipping. Guard\nboth test classes with skipUnless on an availability flag, matching how\nthe GPU and storage-backend tests handle their optional dependencies.\nTests still run and pass when the bloom extra is installed.\n\n* Require the bloom extra under CI so its tests never silently skip\n\nThe pybloomfilter skip guard keeps local runs green without the optional\nbloom extra, but CI installs it (.github/workflows/test.yml), so a\nmissing pybloomfilter under CI is a broken setup, not an absent optional\ndependency. Re-raise the ImportError when the CI env var is set, so the\nbloom tests fail loudly rather than silently skipping and dropping\ncoverage.\n\n* Address review: clean error messages and validate stored hash segments\n\nCollapse backslash line-continuations inside ValueError message\nliterals (13 sites in minhash.py, lean_minhash.py, b_bit_minhash.py) --\nthey embedded the source indentation into user-facing error text.\n\nValidate segment bytes in MinHashLSHForest.get_minhash_hashvalues\nbefore inferring the value width: the segment length must be a whole\nnumber of 4- or 8-byte values and all segments must agree, so corrupted\nor truncated storage raises ValueError instead of being silently\nreinterpreted with the wrong dtype. Add a corrupt-segment test.\n\n---------\n\nCo-authored-by: Eric Zhu <ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/24e27cd72108a7efea1dba0e2f30b6aced0eacc5"
+        },
+        {
+          "sha": "7c08d396ffde5ba0fc3bf021e277bdbe49da9b8b",
+          "author_date": "2026-07-05T06:31:24Z",
+          "message": "Bump codecov/codecov-action from 6 to 7 (#321)\n\nBumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 6 to 7.\n- [Release notes](https://github.com/codecov/codecov-action/releases)\n- [Changelog](https://github.com/codecov/codecov-action/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/codecov/codecov-action/compare/v6...v7)\n\n---\nupdated-dependencies:\n- dependency-name: codecov/codecov-action\n  dependency-version: '7'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Eric Zhu <320302+ekzhu@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/7c08d396ffde5ba0fc3bf021e277bdbe49da9b8b"
+        },
+        {
+          "sha": "3da96a591c954952c9dd367567db720cfdc151e0",
+          "author_date": "2026-07-05T06:33:13Z",
+          "message": "Bump pillow from 11.3.0 to 12.2.0 in the uv group across 1 directory (#324)\n\nBumps the uv group with 1 update in the / directory: [pillow](https://github.com/python-pillow/Pillow).\n\n\nUpdates `pillow` from 11.3.0 to 12.2.0\n- [Release notes](https://github.com/python-pillow/Pillow/releases)\n- [Changelog](https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst)\n- [Commits](https://github.com/python-pillow/Pillow/compare/11.3.0...12.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: pillow\n  dependency-version: 12.2.0\n  dependency-type: direct:production\n  dependency-group: uv\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/ekzhu/datasketch/commit/3da96a591c954952c9dd367567db720cfdc151e0"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [],
+    "2025-11": [
+      {
+        "id": 19750864081,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-28T00:42:26Z",
+        "updated_at": "2025-11-28T00:42:41Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19750864081"
+      },
+      {
+        "id": 19750864039,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-28T00:42:26Z",
+        "updated_at": "2025-11-28T00:42:57Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19750864039"
+      },
+      {
+        "id": 19750864037,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-28T00:42:26Z",
+        "updated_at": "2025-11-28T00:42:44Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19750864037"
+      },
+      {
+        "id": 19750864033,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-28T00:42:26Z",
+        "updated_at": "2025-11-28T00:43:29Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19750864033"
+      },
+      {
+        "id": 19750611435,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-28T00:24:38Z",
+        "updated_at": "2025-11-28T00:25:08Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19750611435"
+      },
+      {
+        "id": 19750611458,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-28T00:24:38Z",
+        "updated_at": "2025-11-28T00:24:57Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19750611458"
+      },
+      {
+        "id": 19750611433,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-28T00:24:38Z",
+        "updated_at": "2025-11-28T00:24:50Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19750611433"
+      },
+      {
+        "id": 19750611445,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-28T00:24:38Z",
+        "updated_at": "2025-11-28T00:25:36Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19750611445"
+      },
+      {
+        "id": 19686942187,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-25T23:13:27Z",
+        "updated_at": "2025-11-25T23:13:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19686942187"
+      },
+      {
+        "id": 19686942164,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-25T23:13:27Z",
+        "updated_at": "2025-11-25T23:13:52Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19686942164"
+      },
+      {
+        "id": 19686942177,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-25T23:13:27Z",
+        "updated_at": "2025-11-25T23:14:00Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19686942177"
+      },
+      {
+        "id": 19686942167,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-25T23:13:27Z",
+        "updated_at": "2025-11-25T23:14:30Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19686942167"
+      },
+      {
+        "id": 19453402809,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T03:48:11Z",
+        "updated_at": "2025-11-18T03:48:23Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19453402809"
+      },
+      {
+        "id": 19453402812,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T03:48:11Z",
+        "updated_at": "2025-11-18T03:48:27Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19453402812"
+      },
+      {
+        "id": 19453402813,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T03:48:11Z",
+        "updated_at": "2025-11-18T03:49:13Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19453402813"
+      },
+      {
+        "id": 19453402821,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T03:48:11Z",
+        "updated_at": "2025-11-18T03:48:41Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19453402821"
+      },
+      {
+        "id": 19453385116,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T03:47:12Z",
+        "updated_at": "2025-11-18T03:48:13Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19453385116"
+      },
+      {
+        "id": 19453385101,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T03:47:12Z",
+        "updated_at": "2025-11-18T03:47:24Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19453385101"
+      },
+      {
+        "id": 19453385099,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T03:47:12Z",
+        "updated_at": "2025-11-18T03:47:48Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19453385099"
+      },
+      {
+        "id": 19453385100,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-18T03:47:12Z",
+        "updated_at": "2025-11-18T03:47:31Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19453385100"
+      },
+      {
+        "id": 19411615697,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-16T20:32:48Z",
+        "updated_at": "2025-11-16T20:33:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19411615697"
+      },
+      {
+        "id": 19411615702,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-16T20:32:48Z",
+        "updated_at": "2025-11-16T20:33:10Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19411615702"
+      },
+      {
+        "id": 19411615695,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-16T20:32:48Z",
+        "updated_at": "2025-11-16T20:33:55Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19411615695"
+      },
+      {
+        "id": 19411615703,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-16T20:32:48Z",
+        "updated_at": "2025-11-16T20:33:18Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19411615703"
+      },
+      {
+        "id": 19289216260,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-12T07:03:14Z",
+        "updated_at": "2025-11-12T07:03:37Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19289216260"
+      },
+      {
+        "id": 19289216271,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-12T07:03:14Z",
+        "updated_at": "2025-11-12T07:03:34Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19289216271"
+      },
+      {
+        "id": 19289216274,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-12T07:03:14Z",
+        "updated_at": "2025-11-12T07:04:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19289216274"
+      },
+      {
+        "id": 19289216315,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-12T07:03:14Z",
+        "updated_at": "2025-11-12T07:03:27Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19289216315"
+      },
+      {
+        "id": 19288464416,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-12T06:25:08Z",
+        "updated_at": "2025-11-12T06:26:13Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19288464416"
+      },
+      {
+        "id": 19288464419,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-12T06:25:08Z",
+        "updated_at": "2025-11-12T06:25:25Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19288464419"
+      },
+      {
+        "id": 19288464421,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-12T06:25:08Z",
+        "updated_at": "2025-11-12T06:25:38Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19288464421"
+      },
+      {
+        "id": 19288464430,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-12T06:25:08Z",
+        "updated_at": "2025-11-12T06:25:21Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19288464430"
+      },
+      {
+        "id": 19257691919,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:58:42Z",
+        "updated_at": "2025-11-11T06:59:14Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257691919"
+      },
+      {
+        "id": 19257691922,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-11T06:58:42Z",
+        "updated_at": "2025-11-11T06:58:57Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257691922"
+      },
+      {
+        "id": 19257691923,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:58:42Z",
+        "updated_at": "2025-11-11T06:58:54Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257691923"
+      },
+      {
+        "id": 19257691970,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:58:42Z",
+        "updated_at": "2025-11-11T06:59:45Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257691970"
+      },
+      {
+        "id": 19257539982,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-11T06:50:48Z",
+        "updated_at": "2025-11-11T06:51:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257539982"
+      },
+      {
+        "id": 19257539984,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:50:48Z",
+        "updated_at": "2025-11-11T06:51:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257539984"
+      },
+      {
+        "id": 19257539989,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:50:48Z",
+        "updated_at": "2025-11-11T06:51:21Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257539989"
+      },
+      {
+        "id": 19257539996,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:50:48Z",
+        "updated_at": "2025-11-11T06:51:49Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257539996"
+      },
+      {
+        "id": 19257458372,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-11T06:46:22Z",
+        "updated_at": "2025-11-11T06:46:40Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257458372"
+      },
+      {
+        "id": 19257458374,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:46:22Z",
+        "updated_at": "2025-11-11T06:47:24Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257458374"
+      },
+      {
+        "id": 19257458375,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:46:22Z",
+        "updated_at": "2025-11-11T06:46:37Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257458375"
+      },
+      {
+        "id": 19257458407,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:46:22Z",
+        "updated_at": "2025-11-11T06:46:51Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257458407"
+      },
+      {
+        "id": 19257408847,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:43:38Z",
+        "updated_at": "2025-11-11T06:44:38Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257408847"
+      },
+      {
+        "id": 19257408855,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:43:38Z",
+        "updated_at": "2025-11-11T06:43:53Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257408855"
+      },
+      {
+        "id": 19257408863,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:43:38Z",
+        "updated_at": "2025-11-11T06:44:05Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257408863"
+      },
+      {
+        "id": 19257408876,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-11T06:43:38Z",
+        "updated_at": "2025-11-11T06:43:51Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257408876"
+      },
+      {
+        "id": 19257362915,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:41:15Z",
+        "updated_at": "2025-11-11T06:41:30Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257362915"
+      },
+      {
+        "id": 19257362922,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-11T06:41:15Z",
+        "updated_at": "2025-11-11T06:41:34Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257362922"
+      },
+      {
+        "id": 19257362925,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:41:15Z",
+        "updated_at": "2025-11-11T06:41:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257362925"
+      },
+      {
+        "id": 19257362940,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:41:15Z",
+        "updated_at": "2025-11-11T06:42:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257362940"
+      },
+      {
+        "id": 19257266850,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:36:04Z",
+        "updated_at": "2025-11-11T06:36:17Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257266850"
+      },
+      {
+        "id": 19257266853,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:36:04Z",
+        "updated_at": "2025-11-11T06:36:23Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257266853"
+      },
+      {
+        "id": 19257266857,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:36:04Z",
+        "updated_at": "2025-11-11T06:36:29Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257266857"
+      },
+      {
+        "id": 19257266859,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-11T06:36:04Z",
+        "updated_at": "2025-11-11T06:37:07Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19257266859"
+      },
+      {
+        "id": 19223355353,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-10T06:56:45Z",
+        "updated_at": "2025-11-10T06:57:12Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19223355353"
+      },
+      {
+        "id": 19223355357,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-10T06:56:45Z",
+        "updated_at": "2025-11-10T06:57:00Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19223355357"
+      },
+      {
+        "id": 19223355358,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-10T06:56:45Z",
+        "updated_at": "2025-11-10T06:57:45Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19223355358"
+      },
+      {
+        "id": 19223355363,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-10T06:56:45Z",
+        "updated_at": "2025-11-10T06:57:07Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19223355363"
+      },
+      {
+        "id": 19185975675,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-08T01:39:00Z",
+        "updated_at": "2025-11-08T01:40:05Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19185975675"
+      },
+      {
+        "id": 19185975677,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-08T01:39:00Z",
+        "updated_at": "2025-11-08T01:39:51Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19185975677"
+      },
+      {
+        "id": 19092589816,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T05:46:09Z",
+        "updated_at": "2025-11-05T05:47:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19092589816"
+      },
+      {
+        "id": 19092589824,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T05:46:09Z",
+        "updated_at": "2025-11-05T05:47:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19092589824"
+      },
+      {
+        "id": 19092474475,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T05:39:22Z",
+        "updated_at": "2025-11-05T05:40:25Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19092474475"
+      },
+      {
+        "id": 19092474485,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T05:39:22Z",
+        "updated_at": "2025-11-05T05:40:11Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19092474485"
+      },
+      {
+        "id": 19092351953,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T05:32:14Z",
+        "updated_at": "2025-11-05T05:32:55Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19092351953"
+      },
+      {
+        "id": 19092351959,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T05:32:14Z",
+        "updated_at": "2025-11-05T05:33:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19092351959"
+      },
+      {
+        "id": 19092185011,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T05:23:00Z",
+        "updated_at": "2025-11-05T05:24:28Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19092185011"
+      },
+      {
+        "id": 19092185012,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T05:23:00Z",
+        "updated_at": "2025-11-05T05:23:36Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19092185012"
+      },
+      {
+        "id": 19088701479,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T01:53:23Z",
+        "updated_at": "2025-11-05T01:54:49Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19088701479"
+      },
+      {
+        "id": 19088701480,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T01:53:23Z",
+        "updated_at": "2025-11-05T01:53:58Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19088701480"
+      },
+      {
+        "id": 19087632941,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-11-05T00:52:53Z",
+        "updated_at": "2025-11-05T00:54:21Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19087632941"
+      },
+      {
+        "id": 19087632942,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-05T00:52:53Z",
+        "updated_at": "2025-11-05T00:53:38Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19087632942"
+      },
+      {
+        "id": 19085194812,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T23:23:52Z",
+        "updated_at": "2025-11-04T23:25:25Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19085194812"
+      },
+      {
+        "id": 19085194849,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T22:49:18Z",
+        "updated_at": "2025-11-04T22:49:50Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19085194849"
+      },
+      {
+        "id": 19081683954,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T20:18:21Z",
+        "updated_at": "2025-11-04T20:19:54Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19081683954"
+      },
+      {
+        "id": 19081684000,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T20:18:21Z",
+        "updated_at": "2025-11-04T20:19:07Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19081684000"
+      },
+      {
+        "id": 19081632983,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T20:16:16Z",
+        "updated_at": "2025-11-04T20:16:50Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19081632983"
+      },
+      {
+        "id": 19081632991,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T20:16:16Z",
+        "updated_at": "2025-11-04T20:17:49Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19081632991"
+      },
+      {
+        "id": 19081585369,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T20:14:16Z",
+        "updated_at": "2025-11-04T20:14:53Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19081585369"
+      },
+      {
+        "id": 19081585382,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T20:14:16Z",
+        "updated_at": "2025-11-04T20:15:50Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19081585382"
+      },
+      {
+        "id": 19080945919,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T19:47:50Z",
+        "updated_at": "2025-11-04T19:48:26Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19080945919"
+      },
+      {
+        "id": 19080945928,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T19:47:50Z",
+        "updated_at": "2025-11-04T19:49:21Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19080945928"
+      },
+      {
+        "id": 19059070367,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T05:42:43Z",
+        "updated_at": "2025-11-04T05:44:10Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19059070367"
+      },
+      {
+        "id": 19059070375,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-04T05:42:43Z",
+        "updated_at": "2025-11-04T05:43:20Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19059070375"
+      },
+      {
+        "id": 19027079255,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-03T07:29:44Z",
+        "updated_at": "2025-11-03T07:31:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19027079255"
+      },
+      {
+        "id": 19027079295,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-11-03T07:29:44Z",
+        "updated_at": "2025-11-03T07:30:19Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/19027079295"
+      }
+    ],
+    "2025-12": [
+      {
+        "id": 20592965793,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T09:06:39Z",
+        "updated_at": "2025-12-30T09:06:53Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592965793"
+      },
+      {
+        "id": 20592965801,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T09:06:39Z",
+        "updated_at": "2025-12-30T09:06:57Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592965801"
+      },
+      {
+        "id": 20592965799,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T09:06:39Z",
+        "updated_at": "2025-12-30T09:07:11Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592965799"
+      },
+      {
+        "id": 20592965818,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T09:06:39Z",
+        "updated_at": "2025-12-30T09:08:12Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592965818"
+      },
+      {
+        "id": 20592944206,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T09:05:31Z",
+        "updated_at": "2025-12-30T09:05:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592944206"
+      },
+      {
+        "id": 20592944228,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T09:05:31Z",
+        "updated_at": "2025-12-30T09:05:50Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592944228"
+      },
+      {
+        "id": 20592944214,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T09:05:31Z",
+        "updated_at": "2025-12-30T09:06:04Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592944214"
+      },
+      {
+        "id": 20592944207,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2025-12-30T09:05:31Z",
+        "updated_at": "2025-12-30T09:07:07Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592944207"
+      },
+      {
+        "id": 20592831323,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T08:59:21Z",
+        "updated_at": "2025-12-30T08:59:40Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592831323"
+      },
+      {
+        "id": 20592831322,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T08:59:21Z",
+        "updated_at": "2025-12-30T08:59:45Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592831322"
+      },
+      {
+        "id": 20592831321,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T08:59:21Z",
+        "updated_at": "2025-12-30T09:00:24Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592831321"
+      },
+      {
+        "id": 20592831306,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-30T08:59:20Z",
+        "updated_at": "2025-12-30T08:59:33Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20592831306"
+      },
+      {
+        "id": 20526295551,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-26T17:12:20Z",
+        "updated_at": "2025-12-26T17:12:30Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20526295551"
+      },
+      {
+        "id": 20526295549,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-26T17:12:20Z",
+        "updated_at": "2025-12-26T17:12:37Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20526295549"
+      },
+      {
+        "id": 20526295554,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-26T17:12:20Z",
+        "updated_at": "2025-12-26T17:12:51Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20526295554"
+      },
+      {
+        "id": 20526295544,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-26T17:12:20Z",
+        "updated_at": "2025-12-26T17:13:20Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20526295544"
+      },
+      {
+        "id": 20374879090,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-19T15:42:07Z",
+        "updated_at": "2025-12-19T15:42:21Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20374879090"
+      },
+      {
+        "id": 20374879093,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-19T15:42:07Z",
+        "updated_at": "2025-12-19T15:42:25Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20374879093"
+      },
+      {
+        "id": 20374879098,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-19T15:42:07Z",
+        "updated_at": "2025-12-19T15:42:39Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20374879098"
+      },
+      {
+        "id": 20374879105,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2025-12-19T15:42:07Z",
+        "updated_at": "2025-12-19T15:43:10Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20374879105"
+      }
+    ],
+    "2026-01": [
+      {
+        "id": 21119896227,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-18T22:44:42Z",
+        "updated_at": "2026-01-18T22:44:58Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/21119896227"
+      },
+      {
+        "id": 21119896238,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-18T22:44:42Z",
+        "updated_at": "2026-01-18T22:45:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/21119896238"
+      },
+      {
+        "id": 21119896247,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-18T22:44:42Z",
+        "updated_at": "2026-01-18T22:45:10Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/21119896247"
+      },
+      {
+        "id": 21119896226,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-18T22:44:42Z",
+        "updated_at": "2026-01-18T22:46:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/21119896226"
+      },
+      {
+        "id": 20662491865,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T16:56:16Z",
+        "updated_at": "2026-01-02T16:56:32Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20662491865"
+      },
+      {
+        "id": 20662491858,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T16:56:16Z",
+        "updated_at": "2026-01-02T16:56:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20662491858"
+      },
+      {
+        "id": 20662491868,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T16:56:16Z",
+        "updated_at": "2026-01-02T16:56:35Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20662491868"
+      },
+      {
+        "id": 20662491873,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-01-02T16:56:16Z",
+        "updated_at": "2026-01-02T16:57:55Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/20662491873"
+      }
+    ],
+    "2026-02": [],
+    "2026-03": [
+      {
+        "id": 23558377293,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-25T18:49:55Z",
+        "updated_at": "2026-03-25T18:50:14Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/23558377293"
+      },
+      {
+        "id": 23558377256,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-03-25T18:49:55Z",
+        "updated_at": "2026-03-25T18:50:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/23558377256"
+      },
+      {
+        "id": 23558377294,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-25T18:49:55Z",
+        "updated_at": "2026-03-25T18:50:24Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/23558377294"
+      },
+      {
+        "id": 23558377286,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-25T18:49:55Z",
+        "updated_at": "2026-03-25T18:51:29Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/23558377286"
+      }
+    ],
+    "2026-04": [
+      {
+        "id": 24616376517,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T23:33:28Z",
+        "updated_at": "2026-04-18T23:33:43Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24616376517"
+      },
+      {
+        "id": 24616376522,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T23:33:28Z",
+        "updated_at": "2026-04-18T23:33:44Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24616376522"
+      },
+      {
+        "id": 24616376524,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T23:33:28Z",
+        "updated_at": "2026-04-18T23:33:59Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24616376524"
+      },
+      {
+        "id": 24616376536,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T23:33:28Z",
+        "updated_at": "2026-04-18T23:34:58Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24616376536"
+      },
+      {
+        "id": 24616376521,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T23:33:28Z",
+        "updated_at": "2026-04-18T23:34:54Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24616376521"
+      },
+      {
+        "id": 24616376515,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T23:33:28Z",
+        "updated_at": "2026-04-18T23:35:19Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24616376515"
+      },
+      {
+        "id": 24616376525,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-18T23:33:28Z",
+        "updated_at": "2026-04-18T23:36:43Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24616376525"
+      },
+      {
+        "id": 24590749427,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:14:27Z",
+        "updated_at": "2026-04-17T23:14:43Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590749427"
+      },
+      {
+        "id": 24590749426,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:14:27Z",
+        "updated_at": "2026-04-17T23:14:44Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590749426"
+      },
+      {
+        "id": 24590749447,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:14:27Z",
+        "updated_at": "2026-04-17T23:15:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590749447"
+      },
+      {
+        "id": 24590749412,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:14:27Z",
+        "updated_at": "2026-04-17T23:15:56Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590749412"
+      },
+      {
+        "id": 24590749423,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:14:27Z",
+        "updated_at": "2026-04-17T23:15:52Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590749423"
+      },
+      {
+        "id": 24590749424,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:14:27Z",
+        "updated_at": "2026-04-17T23:16:19Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590749424"
+      },
+      {
+        "id": 24590749414,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:14:27Z",
+        "updated_at": "2026-04-17T23:17:50Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590749414"
+      },
+      {
+        "id": 24590485628,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:04:46Z",
+        "updated_at": "2026-04-17T23:07:56Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590485628"
+      },
+      {
+        "id": 24590485621,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:04:46Z",
+        "updated_at": "2026-04-17T23:05:04Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590485621"
+      },
+      {
+        "id": 24590485619,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:04:46Z",
+        "updated_at": "2026-04-17T23:05:05Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590485619"
+      },
+      {
+        "id": 24590485613,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:04:46Z",
+        "updated_at": "2026-04-17T23:05:17Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590485613"
+      },
+      {
+        "id": 24590485610,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:04:46Z",
+        "updated_at": "2026-04-17T23:06:22Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590485610"
+      },
+      {
+        "id": 24590485598,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:04:46Z",
+        "updated_at": "2026-04-17T23:06:12Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590485598"
+      },
+      {
+        "id": 24590485601,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T23:04:46Z",
+        "updated_at": "2026-04-17T23:06:34Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24590485601"
+      },
+      {
+        "id": 24589904804,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:43:48Z",
+        "updated_at": "2026-04-17T22:44:02Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589904804"
+      },
+      {
+        "id": 24589904797,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:43:48Z",
+        "updated_at": "2026-04-17T22:44:10Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589904797"
+      },
+      {
+        "id": 24589904827,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:43:48Z",
+        "updated_at": "2026-04-17T22:44:20Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589904827"
+      },
+      {
+        "id": 24589904807,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:43:48Z",
+        "updated_at": "2026-04-17T22:45:18Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589904807"
+      },
+      {
+        "id": 24589904787,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:43:48Z",
+        "updated_at": "2026-04-17T22:45:25Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589904787"
+      },
+      {
+        "id": 24589904798,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:43:48Z",
+        "updated_at": "2026-04-17T22:45:36Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589904798"
+      },
+      {
+        "id": 24589904793,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:43:48Z",
+        "updated_at": "2026-04-17T22:47:14Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589904793"
+      },
+      {
+        "id": 24589774386,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:39:37Z",
+        "updated_at": "2026-04-17T22:39:58Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589774386"
+      },
+      {
+        "id": 24589774394,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:39:37Z",
+        "updated_at": "2026-04-17T22:39:54Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589774394"
+      },
+      {
+        "id": 24589774395,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:39:37Z",
+        "updated_at": "2026-04-17T22:40:08Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589774395"
+      },
+      {
+        "id": 24589774379,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:39:37Z",
+        "updated_at": "2026-04-17T22:41:12Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589774379"
+      },
+      {
+        "id": 24589774372,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:39:37Z",
+        "updated_at": "2026-04-17T22:41:12Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589774372"
+      },
+      {
+        "id": 24589774380,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:39:37Z",
+        "updated_at": "2026-04-17T22:41:21Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589774380"
+      },
+      {
+        "id": 24589774375,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-17T22:39:37Z",
+        "updated_at": "2026-04-17T22:42:57Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24589774375"
+      },
+      {
+        "id": 24381983632,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T05:06:46Z",
+        "updated_at": "2026-04-14T05:07:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24381983632"
+      },
+      {
+        "id": 24381983634,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T05:06:46Z",
+        "updated_at": "2026-04-14T05:07:04Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24381983634"
+      },
+      {
+        "id": 24381983639,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T05:06:46Z",
+        "updated_at": "2026-04-14T05:07:12Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24381983639"
+      },
+      {
+        "id": 24381983638,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T05:06:46Z",
+        "updated_at": "2026-04-14T05:08:22Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24381983638"
+      },
+      {
+        "id": 24381439994,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T04:46:43Z",
+        "updated_at": "2026-04-14T04:47:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24381439994"
+      },
+      {
+        "id": 24381439980,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T04:46:43Z",
+        "updated_at": "2026-04-14T04:47:10Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24381439980"
+      },
+      {
+        "id": 24381439986,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T04:46:43Z",
+        "updated_at": "2026-04-14T04:47:06Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24381439986"
+      },
+      {
+        "id": 24381439984,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-14T04:46:43Z",
+        "updated_at": "2026-04-14T04:48:13Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24381439984"
+      },
+      {
+        "id": 24378507807,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-14T02:56:24Z",
+        "updated_at": "2026-04-14T02:56:41Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24378507807"
+      },
+      {
+        "id": 24378507803,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T02:56:24Z",
+        "updated_at": "2026-04-14T02:56:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24378507803"
+      },
+      {
+        "id": 24378507799,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T02:56:24Z",
+        "updated_at": "2026-04-14T02:56:55Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24378507799"
+      },
+      {
+        "id": 24378507813,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T02:56:24Z",
+        "updated_at": "2026-04-14T02:57:58Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24378507813"
+      },
+      {
+        "id": 24378484037,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-04-14T02:55:32Z",
+        "updated_at": "2026-04-14T02:55:56Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24378484037"
+      },
+      {
+        "id": 24378484033,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T02:55:32Z",
+        "updated_at": "2026-04-14T02:55:49Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24378484033"
+      },
+      {
+        "id": 24378484038,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T02:55:32Z",
+        "updated_at": "2026-04-14T02:55:59Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24378484038"
+      },
+      {
+        "id": 24378484030,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-14T02:55:32Z",
+        "updated_at": "2026-04-14T02:57:07Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/24378484030"
+      }
+    ],
+    "2026-05": [],
+    "2026-06": [
+      {
+        "id": 28024806593,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T12:04:03Z",
+        "updated_at": "2026-06-23T12:04:21Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28024806593"
+      },
+      {
+        "id": 28024806392,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T12:04:03Z",
+        "updated_at": "2026-06-23T12:04:25Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28024806392"
+      },
+      {
+        "id": 28024805829,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T12:04:03Z",
+        "updated_at": "2026-06-23T12:04:36Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28024805829"
+      },
+      {
+        "id": 28024805780,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T12:04:03Z",
+        "updated_at": "2026-06-23T12:05:34Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28024805780"
+      },
+      {
+        "id": 28024805853,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T12:04:03Z",
+        "updated_at": "2026-06-23T12:05:53Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28024805853"
+      },
+      {
+        "id": 28024806436,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T12:04:03Z",
+        "updated_at": "2026-06-23T12:07:29Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28024806436"
+      },
+      {
+        "id": 28024806401,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-06-23T12:04:03Z",
+        "updated_at": "2026-06-23T12:07:50Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28024806401"
+      }
+    ],
+    "2026-07": [
+      {
+        "id": 29894804644,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:47:58Z",
+        "updated_at": "2026-07-22T05:48:33Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894804644"
+      },
+      {
+        "id": 29894804657,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:47:58Z",
+        "updated_at": "2026-07-22T05:48:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894804657"
+      },
+      {
+        "id": 29894804666,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:47:58Z",
+        "updated_at": "2026-07-22T05:48:18Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894804666"
+      },
+      {
+        "id": 29894804679,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:47:58Z",
+        "updated_at": "2026-07-22T05:49:14Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894804679"
+      },
+      {
+        "id": 29894804671,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:47:58Z",
+        "updated_at": "2026-07-22T05:49:19Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894804671"
+      },
+      {
+        "id": 29894804689,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:47:58Z",
+        "updated_at": "2026-07-22T05:49:48Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894804689"
+      },
+      {
+        "id": 29894804678,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:47:58Z",
+        "updated_at": "2026-07-22T05:51:07Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894804678"
+      },
+      {
+        "id": 29894693329,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:45:34Z",
+        "updated_at": "2026-07-22T05:45:51Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894693329"
+      },
+      {
+        "id": 29894693349,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:45:34Z",
+        "updated_at": "2026-07-22T05:45:51Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894693349"
+      },
+      {
+        "id": 29894693347,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:45:34Z",
+        "updated_at": "2026-07-22T05:47:06Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894693347"
+      },
+      {
+        "id": 29894693412,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:45:34Z",
+        "updated_at": "2026-07-22T05:47:03Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894693412"
+      },
+      {
+        "id": 29894693435,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:45:34Z",
+        "updated_at": "2026-07-22T05:46:07Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894693435"
+      },
+      {
+        "id": 29894693315,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:45:34Z",
+        "updated_at": "2026-07-22T05:47:12Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894693315"
+      },
+      {
+        "id": 29894693463,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:45:34Z",
+        "updated_at": "2026-07-22T05:48:44Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894693463"
+      },
+      {
+        "id": 29894353749,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:38:27Z",
+        "updated_at": "2026-07-22T05:38:47Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894353749"
+      },
+      {
+        "id": 29894353726,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:38:27Z",
+        "updated_at": "2026-07-22T05:38:48Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894353726"
+      },
+      {
+        "id": 29894353697,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:38:27Z",
+        "updated_at": "2026-07-22T05:39:01Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894353697"
+      },
+      {
+        "id": 29894353692,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:38:27Z",
+        "updated_at": "2026-07-22T05:39:45Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894353692"
+      },
+      {
+        "id": 29894353708,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:38:27Z",
+        "updated_at": "2026-07-22T05:40:09Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894353708"
+      },
+      {
+        "id": 29894353689,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:38:27Z",
+        "updated_at": "2026-07-22T05:39:55Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894353689"
+      },
+      {
+        "id": 29894353742,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:38:27Z",
+        "updated_at": "2026-07-22T05:41:54Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894353742"
+      },
+      {
+        "id": 29894246859,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:36:10Z",
+        "updated_at": "2026-07-22T05:36:32Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894246859"
+      },
+      {
+        "id": 29894246860,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:36:10Z",
+        "updated_at": "2026-07-22T05:36:30Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894246860"
+      },
+      {
+        "id": 29894246850,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:36:10Z",
+        "updated_at": "2026-07-22T05:36:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894246850"
+      },
+      {
+        "id": 29894246834,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:36:10Z",
+        "updated_at": "2026-07-22T05:37:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894246834"
+      },
+      {
+        "id": 29894246827,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:36:10Z",
+        "updated_at": "2026-07-22T05:37:35Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894246827"
+      },
+      {
+        "id": 29894246831,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:36:10Z",
+        "updated_at": "2026-07-22T05:37:59Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894246831"
+      },
+      {
+        "id": 29894246849,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-22T05:36:10Z",
+        "updated_at": "2026-07-22T05:39:17Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/29894246849"
+      },
+      {
+        "id": 28732107512,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:33:15Z",
+        "updated_at": "2026-07-05T06:33:43Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732107512"
+      },
+      {
+        "id": 28732107525,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:33:15Z",
+        "updated_at": "2026-07-05T06:33:33Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732107525"
+      },
+      {
+        "id": 28732107520,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:33:15Z",
+        "updated_at": "2026-07-05T06:33:35Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732107520"
+      },
+      {
+        "id": 28732107521,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:33:15Z",
+        "updated_at": "2026-07-05T06:34:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732107521"
+      },
+      {
+        "id": 28732107540,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:33:15Z",
+        "updated_at": "2026-07-05T06:34:40Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732107540"
+      },
+      {
+        "id": 28732107528,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:33:15Z",
+        "updated_at": "2026-07-05T06:34:56Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732107528"
+      },
+      {
+        "id": 28732107541,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:33:15Z",
+        "updated_at": "2026-07-05T06:36:24Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732107541"
+      },
+      {
+        "id": 28732066536,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:31:27Z",
+        "updated_at": "2026-07-05T06:31:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732066536"
+      },
+      {
+        "id": 28732066539,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:31:27Z",
+        "updated_at": "2026-07-05T06:31:44Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732066539"
+      },
+      {
+        "id": 28732066543,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:31:27Z",
+        "updated_at": "2026-07-05T06:31:55Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732066543"
+      },
+      {
+        "id": 28732066532,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:31:27Z",
+        "updated_at": "2026-07-05T06:32:51Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732066532"
+      },
+      {
+        "id": 28732066531,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:31:27Z",
+        "updated_at": "2026-07-05T06:32:47Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732066531"
+      },
+      {
+        "id": 28732066542,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:31:27Z",
+        "updated_at": "2026-07-05T06:33:09Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732066542"
+      },
+      {
+        "id": 28732066553,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:31:27Z",
+        "updated_at": "2026-07-05T06:34:50Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732066553"
+      },
+      {
+        "id": 28732008589,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:28:57Z",
+        "updated_at": "2026-07-05T06:29:14Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732008589"
+      },
+      {
+        "id": 28732008594,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:28:57Z",
+        "updated_at": "2026-07-05T06:29:15Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732008594"
+      },
+      {
+        "id": 28732008600,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:28:57Z",
+        "updated_at": "2026-07-05T06:29:31Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732008600"
+      },
+      {
+        "id": 28732008591,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:28:57Z",
+        "updated_at": "2026-07-05T06:30:28Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732008591"
+      },
+      {
+        "id": 28732008578,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:28:57Z",
+        "updated_at": "2026-07-05T06:30:34Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732008578"
+      },
+      {
+        "id": 28732008597,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:28:57Z",
+        "updated_at": "2026-07-05T06:30:19Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732008597"
+      },
+      {
+        "id": 28732008581,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-05T06:28:57Z",
+        "updated_at": "2026-07-05T06:32:12Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/28732008581"
+      }
+    ],
+    "2026-08": [
+      {
+        "id": 31301565956,
+        "name": "Test Cassandra",
+        "workflow_id": 48851149,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-09T07:37:03Z",
+        "updated_at": "2026-08-09T07:40:13Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/31301565956"
+      },
+      {
+        "id": 31301565971,
+        "name": "Build Documentation",
+        "workflow_id": 48851147,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-09T07:37:03Z",
+        "updated_at": "2026-08-09T07:37:38Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/31301565971"
+      },
+      {
+        "id": 31301565972,
+        "name": "Checks",
+        "workflow_id": 205082612,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-09T07:37:03Z",
+        "updated_at": "2026-08-09T07:37:19Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/31301565972"
+      },
+      {
+        "id": 31301565974,
+        "name": "Build and Verify Package",
+        "workflow_id": 204757016,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-09T07:37:03Z",
+        "updated_at": "2026-08-09T07:37:19Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/31301565974"
+      },
+      {
+        "id": 31301565983,
+        "name": "Test",
+        "workflow_id": 48850580,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-08-09T07:37:03Z",
+        "updated_at": "2026-08-09T07:38:22Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/31301565983"
+      },
+      {
+        "id": 31301565942,
+        "name": "Test Redis",
+        "workflow_id": 207958982,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-09T07:37:03Z",
+        "updated_at": "2026-08-09T07:38:33Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/31301565942"
+      },
+      {
+        "id": 31301565968,
+        "name": "Test Mongo",
+        "workflow_id": 48851150,
+        "branch": "master",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-08-09T07:37:03Z",
+        "updated_at": "2026-08-09T07:38:42Z",
+        "html_url": "https://github.com/ekzhu/datasketch/actions/runs/31301565968"
+      }
+    ],
+    "2026-09": []
+  }
+}

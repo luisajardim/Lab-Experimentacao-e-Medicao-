@@ -4909,78 +4909,6 @@
       "ignored_reason": "compare_404"
     },
     {
-      "release": "v8.0.0-beta.1@beta",
-      "previous_release": "v7.5.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.2@beta",
-      "previous_release": "v8.0.0-beta.1@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.3@beta",
-      "previous_release": "v8.0.0-beta.2@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.4@beta",
-      "previous_release": "v8.0.0-beta.3@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.5@beta",
-      "previous_release": "v8.0.0-beta.4@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.6@beta",
-      "previous_release": "v8.0.0-beta.5@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.7@beta",
-      "previous_release": "v8.0.0-beta.6@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.8@beta",
-      "previous_release": "v8.0.0-beta.7@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.9@beta",
-      "previous_release": "v8.0.0-beta.8@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.10@beta",
-      "previous_release": "v8.0.0-beta.9@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.11@beta",
-      "previous_release": "v8.0.0-beta.10@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v8.0.0-beta.12@beta",
-      "previous_release": "v8.0.0-beta.11@beta",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v8.0.0",
       "previous_release": "v8.0.0-beta.12@beta",
       "commits": null,
@@ -5283,8 +5211,45 @@
     {
       "release": "v9.8.0",
       "previous_release": "v9.7.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "b35379450b0ebeae9ae2e19a181953ea24dc7d80",
+          "author_date": "2019-12-23T18:21:07Z",
+          "message": "chore(package): update @types/resolve to version 1.14.0",
+          "html_url": "https://github.com/probot/probot/commit/b35379450b0ebeae9ae2e19a181953ea24dc7d80"
+        },
+        {
+          "sha": "b8410d3dcf6aeda7bbe46dcc8ba12bec2d5888dd",
+          "author_date": "2019-12-23T18:21:12Z",
+          "message": "chore(package): update lockfile package-lock.json",
+          "html_url": "https://github.com/probot/probot/commit/b8410d3dcf6aeda7bbe46dcc8ba12bec2d5888dd"
+        },
+        {
+          "sha": "5c2070de51823c0fa80c18101f7f3cee83f2da39",
+          "author_date": "2019-12-23T17:37:03Z",
+          "message": "chore(package): update @types/node to version 13.1.0",
+          "html_url": "https://github.com/probot/probot/commit/5c2070de51823c0fa80c18101f7f3cee83f2da39"
+        },
+        {
+          "sha": "5b86e1bb6a3bae80e3200482565e0f4f919d2147",
+          "author_date": "2019-12-23T17:37:20Z",
+          "message": "chore(package): update lockfile package-lock.json",
+          "html_url": "https://github.com/probot/probot/commit/5b86e1bb6a3bae80e3200482565e0f4f919d2147"
+        },
+        {
+          "sha": "f368013729187cc374845b6439fa7c880bebbf26",
+          "author_date": "2019-12-25T03:11:58Z",
+          "message": "feat: warn on passing in unknown commands",
+          "html_url": "https://github.com/probot/probot/commit/f368013729187cc374845b6439fa7c880bebbf26"
+        },
+        {
+          "sha": "28a4d43185b57620508563e07df295b41e92423a",
+          "author_date": "2019-12-25T09:37:06Z",
+          "message": "fix: Limit webhook-event-check to known events in `/app` response (#1092)\n\nBecause `GET /app` does not include many events (e.g. `fork`, `installation`, etc.), we don't want to compare some events to the results of `GET /app`.\r\n\r\nIn these cases, webhook-event-check will silently ignore verifying whether the GitHub App is subscribed to the event.",
+          "html_url": "https://github.com/probot/probot/commit/28a4d43185b57620508563e07df295b41e92423a"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v9.8.1",
@@ -5391,8 +5356,21 @@
     {
       "release": "v9.11.6",
       "previous_release": "v9.11.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "3f0d529d1da63e3564122b9a958d20686d624502",
+          "author_date": "2020-07-08T19:57:37Z",
+          "message": "build(deps): bump npm from 6.13.7 to 6.14.6\n\nBumps [npm](https://github.com/npm/cli) from 6.13.7 to 6.14.6.\n- [Release notes](https://github.com/npm/cli/releases)\n- [Changelog](https://github.com/npm/cli/blob/latest/CHANGELOG.md)\n- [Commits](https://github.com/npm/cli/compare/v6.13.7...v6.14.6)\n\nSigned-off-by: dependabot[bot] <support@github.com>\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "html_url": "https://github.com/probot/probot/commit/3f0d529d1da63e3564122b9a958d20686d624502"
+        },
+        {
+          "sha": "8f626590cb2b6a21ea4a90d78359b8474b1ea684",
+          "author_date": "2020-07-10T19:04:46Z",
+          "message": "fix(TypeScript): context.config() type (#1252)",
+          "html_url": "https://github.com/probot/probot/commit/8f626590cb2b6a21ea4a90d78359b8474b1ea684"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v9.11.7",
@@ -5413,236 +5391,8 @@
       "ignored_reason": "compare_404"
     },
     {
-      "release": "v10.0.0-beta.1",
-      "previous_release": "v9.13.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.2",
-      "previous_release": "v10.0.0-beta.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.3",
-      "previous_release": "v10.0.0-beta.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.4",
-      "previous_release": "v10.0.0-beta.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.5",
-      "previous_release": "v10.0.0-beta.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.6",
-      "previous_release": "v10.0.0-beta.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.7",
-      "previous_release": "v10.0.0-beta.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.8",
-      "previous_release": "v10.0.0-beta.7",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.9",
-      "previous_release": "v10.0.0-beta.8",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.10",
-      "previous_release": "v10.0.0-beta.9",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.11",
-      "previous_release": "v10.0.0-beta.10",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.12",
-      "previous_release": "v10.0.0-beta.11",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.13",
-      "previous_release": "v10.0.0-beta.12",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.14",
-      "previous_release": "v10.0.0-beta.13",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.15",
-      "previous_release": "v10.0.0-beta.14",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.16",
-      "previous_release": "v10.0.0-beta.15",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.17",
-      "previous_release": "v10.0.0-beta.16",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.18",
-      "previous_release": "v10.0.0-beta.17",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.19",
-      "previous_release": "v10.0.0-beta.18",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.20",
-      "previous_release": "v10.0.0-beta.19",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.21",
-      "previous_release": "v10.0.0-beta.20",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.22",
-      "previous_release": "v10.0.0-beta.21",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.23",
-      "previous_release": "v10.0.0-beta.22",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.24",
-      "previous_release": "v10.0.0-beta.23",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.25",
-      "previous_release": "v10.0.0-beta.24",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.26",
-      "previous_release": "v10.0.0-beta.25",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.27",
-      "previous_release": "v10.0.0-beta.26",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.28",
-      "previous_release": "v10.0.0-beta.27",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.29",
-      "previous_release": "v10.0.0-beta.28",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.30",
-      "previous_release": "v10.0.0-beta.29",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.31",
-      "previous_release": "v10.0.0-beta.30",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.32",
-      "previous_release": "v10.0.0-beta.31",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.33",
-      "previous_release": "v10.0.0-beta.32",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.34",
-      "previous_release": "v10.0.0-beta.33",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.35",
-      "previous_release": "v10.0.0-beta.34",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0-beta.36",
-      "previous_release": "v10.0.0-beta.35",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.0",
-      "previous_release": "v10.0.0-beta.36",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v9.13.2",
       "previous_release": "v10.0.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.0.1",
-      "previous_release": "v9.13.2",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -5655,12 +5405,6 @@
     {
       "release": "v9.14.1",
       "previous_release": "v9.14.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.1.0",
-      "previous_release": "v9.14.1",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -5703,8 +5447,15 @@
     {
       "release": "v10.1.5",
       "previous_release": "v10.1.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "e0760b0ef9b6c2d1572b40208a075a397cc012c8",
+          "author_date": "2020-09-07T17:23:54Z",
+          "message": "fix: remove redundant string in deprecation warning (#1336)\n\nSigned-off-by: Frankzhaopku <syzhao1988@126.com>",
+          "html_url": "https://github.com/probot/probot/commit/e0760b0ef9b6c2d1572b40208a075a397cc012c8"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v10.2.0",
@@ -5859,8 +5610,15 @@
     {
       "release": "v10.16.0",
       "previous_release": "v10.15.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "47d9f3a2e19b3fce3e9b657a8c312ea35b9f939c",
+          "author_date": "2020-11-18T20:14:03Z",
+          "message": "feat: use `@probot/get-private-key` (#1414)\n\npart of #1309",
+          "html_url": "https://github.com/probot/probot/commit/47d9f3a2e19b3fce3e9b657a8c312ea35b9f939c"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v10.17.0",
@@ -5881,62 +5639,14 @@
       "ignored_reason": "compare_404"
     },
     {
-      "release": "v10.18.0-beta.1",
-      "previous_release": "v10.17.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.18.0-beta.2",
-      "previous_release": "v10.18.0-beta.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v10.17.3",
       "previous_release": "v10.18.0-beta.2",
       "commits": null,
       "ignored_reason": "compare_404"
     },
     {
-      "release": "v10.18.0-beta.3",
-      "previous_release": "v10.17.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.18.0-beta.4",
-      "previous_release": "v10.18.0-beta.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v10.18.0-beta.5",
-      "previous_release": "v10.18.0-beta.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v10.18.0",
       "previous_release": "v10.18.0-beta.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v11.0.0-beta.1",
-      "previous_release": "v10.18.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v11.0.0-beta.2",
-      "previous_release": "v11.0.0-beta.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v11.0.0-beta.3",
-      "previous_release": "v11.0.0-beta.2",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -5949,12 +5659,6 @@
     {
       "release": "v11.0.0",
       "previous_release": "v10.19.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v11.0.0-beta.4",
-      "previous_release": "v11.0.0",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -6063,12 +5767,6 @@
     {
       "release": "v11.4.1",
       "previous_release": "v11.4.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v12.0.0-beta.1",
-      "previous_release": "v11.4.1",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -6187,54 +5885,6 @@
       "ignored_reason": "compare_404"
     },
     {
-      "release": "v13.0.0-beta.1",
-      "previous_release": "v12.3.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.2",
-      "previous_release": "v13.0.0-beta.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.3",
-      "previous_release": "v13.0.0-beta.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.4",
-      "previous_release": "v13.0.0-beta.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.5",
-      "previous_release": "v13.0.0-beta.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.6",
-      "previous_release": "v13.0.0-beta.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.7",
-      "previous_release": "v13.0.0-beta.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.8",
-      "previous_release": "v13.0.0-beta.7",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v12.3.2",
       "previous_release": "v13.0.0-beta.8",
       "commits": null,
@@ -6243,60 +5893,6 @@
     {
       "release": "v12.3.3",
       "previous_release": "v12.3.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.9",
-      "previous_release": "v12.3.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.10",
-      "previous_release": "v13.0.0-beta.9",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.11",
-      "previous_release": "v13.0.0-beta.10",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.12",
-      "previous_release": "v13.0.0-beta.11",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.13",
-      "previous_release": "v13.0.0-beta.12",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.14",
-      "previous_release": "v13.0.0-beta.13",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.15",
-      "previous_release": "v13.0.0-beta.14",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.16",
-      "previous_release": "v13.0.0-beta.15",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v13.0.0-beta.17",
-      "previous_release": "v13.0.0-beta.16",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -6439,18 +6035,6 @@
       "ignored_reason": "compare_404"
     },
     {
-      "release": "v13.4.1-full-esm.1",
-      "previous_release": "v13.4.0",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-full-esm.1",
-      "previous_release": "v13.4.1-full-esm.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v13.4.1",
       "previous_release": "v14.0.0-full-esm.1",
       "commits": null,
@@ -6463,50 +6047,8 @@
       "ignored_reason": "compare_404"
     },
     {
-      "release": "v14.0.0-full-esm.2",
-      "previous_release": "v13.4.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v13.4.3",
       "previous_release": "v14.0.0-full-esm.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-full-esm.3",
-      "previous_release": "v13.4.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.1",
-      "previous_release": "v14.0.0-full-esm.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.2",
-      "previous_release": "v14.0.0-beta.1",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.3",
-      "previous_release": "v14.0.0-beta.2",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.4",
-      "previous_release": "v14.0.0-beta.3",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.5",
-      "previous_release": "v14.0.0-beta.4",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -6517,134 +6059,8 @@
       "ignored_reason": "compare_404"
     },
     {
-      "release": "v14.0.0-beta.6",
-      "previous_release": "v13.4.4",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.7",
-      "previous_release": "v14.0.0-beta.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.8",
-      "previous_release": "v14.0.0-beta.7",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.9",
-      "previous_release": "v14.0.0-beta.8",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
       "release": "v13.4.5",
       "previous_release": "v14.0.0-beta.9",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.10",
-      "previous_release": "v13.4.5",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.11",
-      "previous_release": "v14.0.0-beta.10",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.12",
-      "previous_release": "v14.0.0-beta.11",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.13",
-      "previous_release": "v14.0.0-beta.12",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.14",
-      "previous_release": "v14.0.0-beta.13",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.15",
-      "previous_release": "v14.0.0-beta.14",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.16",
-      "previous_release": "v14.0.0-beta.15",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.17",
-      "previous_release": "v14.0.0-beta.16",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.18",
-      "previous_release": "v14.0.0-beta.17",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.19",
-      "previous_release": "v14.0.0-beta.18",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.20",
-      "previous_release": "v14.0.0-beta.19",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.21",
-      "previous_release": "v14.0.0-beta.20",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.22",
-      "previous_release": "v14.0.0-beta.21",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.23",
-      "previous_release": "v14.0.0-beta.22",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.24",
-      "previous_release": "v14.0.0-beta.23",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.25",
-      "previous_release": "v14.0.0-beta.24",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.26",
-      "previous_release": "v14.0.0-beta.25",
       "commits": null,
       "ignored_reason": "compare_404"
     },
@@ -6657,38 +6073,15 @@
     {
       "release": "v13.4.7",
       "previous_release": "v13.4.6",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.27",
-      "previous_release": "v13.4.7",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.28",
-      "previous_release": "v14.0.0-beta.27",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.29",
-      "previous_release": "v14.0.0-beta.28",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.30",
-      "previous_release": "v14.0.0-beta.29",
-      "commits": null,
-      "ignored_reason": "compare_404"
-    },
-    {
-      "release": "v14.0.0-beta.31",
-      "previous_release": "v14.0.0-beta.30",
-      "commits": null,
-      "ignored_reason": "compare_404"
+      "commits": [
+        {
+          "sha": "c4c67c3c3d83ea8e2cc01e8b43b91e8fe7d4f91b",
+          "author_date": "2025-07-11T08:47:22Z",
+          "message": "fix: update `@octokit/webhooks`, remove internal `rebindLog()` function (#2220)\n\n* fix: update `@octokit/webhooks` remove internal `rebindLog()` function\n\nPart of #2062\n\n* style: prettier",
+          "html_url": "https://github.com/probot/probot/commit/c4c67c3c3d83ea8e2cc01e8b43b91e8fe7d4f91b"
+        }
+      ],
+      "ignored_reason": null
     },
     {
       "release": "v14.0.0",

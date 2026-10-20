@@ -1,0 +1,1488 @@
+{
+  "repository": {
+    "full_name": "open-gitagent/opengap",
+    "stars": 2980,
+    "language": "TypeScript",
+    "default_branch": "main",
+    "created_at": "2026-02-24T16:08:24Z"
+  },
+  "releases": [
+    {
+      "id": 291141333,
+      "tag_name": "v0.1.7",
+      "name": "v0.1.7 — First Public Release",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-26T22:48:32Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.1.7"
+    },
+    {
+      "id": 302918245,
+      "tag_name": "v0.1.8",
+      "name": "v0.1.8",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-03-29T22:12:38Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.1.8"
+    },
+    {
+      "id": 304928770,
+      "tag_name": "v0.1.9",
+      "name": "v0.1.9",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-03T03:05:20Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.1.9"
+    },
+    {
+      "id": 305461483,
+      "tag_name": "v0.2.0",
+      "name": "v0.2.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-05T18:52:17Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.2.0"
+    },
+    {
+      "id": 311362280,
+      "tag_name": "v0.3.0",
+      "name": "v0.3.0 — Rebrand to GitAgentProtocol (Open GAP), published as gapman",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-20T18:40:03Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.3.0"
+    },
+    {
+      "id": 311363934,
+      "tag_name": "v0.3.1",
+      "name": "v0.3.1 — gapman published under @open-gitagent/gapman",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-20T18:44:23Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.3.1"
+    },
+    {
+      "id": 311369693,
+      "tag_name": "v0.3.2",
+      "name": "v0.3.2 — publish gapman both scoped and unscoped",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-04-20T18:59:16Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.3.2"
+    },
+    {
+      "id": 328545307,
+      "tag_name": "v0.4.0",
+      "name": "v0.4.0 — OpenGAP (rebrand from gapman)",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-05-24T17:15:17Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.4.0"
+    },
+    {
+      "id": 348295322,
+      "tag_name": "v0.5.0",
+      "name": "v0.5.0 — Claude session continuation (--continue, --resume, --session-id)",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-07-02T21:15:46Z",
+      "html_url": "https://github.com/open-gitagent/opengap/releases/tag/v0.5.0"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.5.0",
+      "sha": "d7a8e2edb54b942d6b4635cdd8b919ebd23e5da5",
+      "date": "2026-07-02T21:15:24Z"
+    },
+    {
+      "name": "v0.4.0",
+      "sha": "22fc9394239c85d2e4d3d590a0063161cd60f106",
+      "date": "2026-05-24T17:14:49Z"
+    },
+    {
+      "name": "v0.3.2",
+      "sha": "26d2aaf63aa3b887f8d2edba3a69e5ef587174af",
+      "date": "2026-04-20T18:59:01Z"
+    },
+    {
+      "name": "v0.3.1",
+      "sha": "a70a6a115c88945cd942116c6ec6bceee0ea7b78",
+      "date": "2026-04-20T18:43:23Z"
+    },
+    {
+      "name": "v0.3.0",
+      "sha": "82b278c74d8e83ae858c5fd5c5371e3ffbccd45b",
+      "date": "2026-04-20T18:35:58Z"
+    },
+    {
+      "name": "v0.1.8",
+      "sha": "24ed35985b6b6d9f85f1d2eb9f7708bfd3ec0cb3",
+      "date": "2026-03-29T22:12:13Z"
+    },
+    {
+      "name": "v0.2.0",
+      "sha": "51b1f5d610d9ceb7c62b57bc05c42b51c553cc17",
+      "date": "2026-04-05T18:51:41Z"
+    },
+    {
+      "name": "v0.1.9",
+      "sha": "0ef6b9129ef79bcfb5c86b378e8bf1a1df74689f",
+      "date": "2026-04-03T02:53:23Z"
+    },
+    {
+      "name": "v0.1.7",
+      "sha": "06626dfa10739018b5db5c5db7285c67efc1bc34",
+      "date": "2026-02-24T18:14:14Z"
+    }
+  ],
+  "commits_between": [
+    {
+      "release": "v0.1.7",
+      "previous_release": null,
+      "commits": null,
+      "ignored_reason": "no_previous_release"
+    },
+    {
+      "release": "v0.1.8",
+      "previous_release": "v0.1.7",
+      "commits": [
+        {
+          "sha": "2f9502288e8f1f97329e78b4c94bdc5d27388fb0",
+          "author_date": "2026-02-26T22:55:20Z",
+          "message": "docs: add CONTRIBUTING.md and MIT LICENSE\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/2f9502288e8f1f97329e78b4c94bdc5d27388fb0"
+        },
+        {
+          "sha": "b6d4f14b56f1301972cc6cf5a00eec2ac17a9d23",
+          "author_date": "2026-02-27T00:02:31Z",
+          "message": "repo: add CI, templates, badges, and community infrastructure\n\n- GitHub Actions CI workflow (Node 18/20/22, build + validate examples)\n- Issue templates (bug report, feature request, new adapter)\n- PR template with checklist\n- CODE_OF_CONDUCT.md (Contributor Covenant v2.1)\n- FUNDING.yml for GitHub Sponsors\n- README badges (npm, CI, license, spec, node)\n- README star history chart and \"Built with gitagent\" CTA\n- Expanded package.json keywords for npm discoverability\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/b6d4f14b56f1301972cc6cf5a00eec2ac17a9d23"
+        },
+        {
+          "sha": "3ca08ee3c170772cd6e449cfbbb5136863240080",
+          "author_date": "2026-02-27T00:07:27Z",
+          "message": "docs: add logo to README\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/3ca08ee3c170772cd6e449cfbbb5136863240080"
+        },
+        {
+          "sha": "c6010898757b435ff9483f94f7ee3a0bbe42d363",
+          "author_date": "2026-02-27T01:18:39Z",
+          "message": "update code of conduct",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/c6010898757b435ff9483f94f7ee3a0bbe42d363"
+        },
+        {
+          "sha": "99297ad06965eb587388da6836a54d86021e1851",
+          "author_date": "2026-02-27T01:21:06Z",
+          "message": "docs: replace logo with banner image in README\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/99297ad06965eb587388da6836a54d86021e1851"
+        },
+        {
+          "sha": "19d20872a55a847e0385eff773b6a180233e33ec",
+          "author_date": "2026-02-27T07:53:09Z",
+          "message": "docs: add all 12 pattern images to README\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/19d20872a55a847e0385eff773b6a180233e33ec"
+        },
+        {
+          "sha": "64f8a8b812fcdd20d38ed54437a721fa32d5c892",
+          "author_date": "2026-02-27T07:59:40Z",
+          "message": "docs: move directory structure to top as \"The Standard\" section\n\nThe file structure IS the standard — it should be the first thing\nreaders see after the intro.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/64f8a8b812fcdd20d38ed54437a721fa32d5c892"
+        },
+        {
+          "sha": "74ff6c6fc524e7c62073e423e7317d63e727bc09",
+          "author_date": "2026-02-27T08:01:21Z",
+          "message": "docs: update Standard section — your repository becomes your agent\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/74ff6c6fc524e7c62073e423e7317d63e727bc09"
+        },
+        {
+          "sha": "f512c10531674190634b4ff8fb6d4a658b97a01d",
+          "author_date": "2026-02-27T08:02:02Z",
+          "message": "docs: restructure directory tree with grouped categories and examples\n\nShows branching into subdirectories (skills/, agents/, memory/runtime/)\nand organizes by purpose: Core Identity, Behavior, Capabilities,\nKnowledge & Memory, Lifecycle & Ops, Composition, Runtime.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/f512c10531674190634b4ff8fb6d4a658b97a01d"
+        },
+        {
+          "sha": "3323932ca938868a45c4537b9de3db133f903c87",
+          "author_date": "2026-02-27T08:07:18Z",
+          "message": "docs: update README title to \"gitagent | your repository becomes your agent\"\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/3323932ca938868a45c4537b9de3db133f903c87"
+        },
+        {
+          "sha": "106dcd22e26ebf9a91db4f82c3ddd95e0062a45b",
+          "author_date": "2026-02-27T20:08:52Z",
+          "message": "feat: add segregation of duties schema, types, and spec (#11)\n\nAdd the `segregation_of_duties` subsection to the compliance schema with\nsupport for roles, conflict matrix, assignments, isolation levels,\nhandoff workflows, and enforcement modes.\n\n- JSON Schema definition in agent-yaml.schema.json\n- TypeScript types in loader.ts ComplianceConfig interface\n- Spec documentation including DUTIES.md convention, validation rules,\n  and regulatory reference table\n\nCloses #10 (part 1 of 4)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/106dcd22e26ebf9a91db4f82c3ddd95e0062a45b"
+        },
+        {
+          "sha": "c10d431a743ca5b7698225eb830338e3148bead2",
+          "author_date": "2026-02-27T20:10:38Z",
+          "message": "feat: add SOD validation, audit reporting, and init scaffolding (#12)\n\n* feat: add segregation of duties schema, types, and spec\n\nAdd the `segregation_of_duties` subsection to the compliance schema with\nsupport for roles, conflict matrix, assignments, isolation levels,\nhandoff workflows, and enforcement modes.\n\n- JSON Schema definition in agent-yaml.schema.json\n- TypeScript types in loader.ts ComplianceConfig interface\n- Spec documentation including DUTIES.md convention, validation rules,\n  and regulatory reference table\n\nCloses #10 (part 1 of 4)\n\n* feat: add SOD validation, audit reporting, and init scaffolding\n\n- validate.ts: 16 validation rules for SOD (role uniqueness, conflict\n  detection, assignment integrity, handoff validation, risk tier checks)\n- audit.ts: new \"Segregation of Duties\" section in audit report\n- init.ts: DUTIES.md scaffolding in full template\n\nPart 2 of 4 — depends on feat/sod-1-spec-schema",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/c10d431a743ca5b7698225eb830338e3148bead2"
+        },
+        {
+          "sha": "57ad3ce08a42b19ce2496013706223c393288f56",
+          "author_date": "2026-02-27T20:10:46Z",
+          "message": "feat: add SOD constraints to system-prompt and claude-code adapters (#13)\n\n* feat: add segregation of duties schema, types, and spec\n\nAdd the `segregation_of_duties` subsection to the compliance schema with\nsupport for roles, conflict matrix, assignments, isolation levels,\nhandoff workflows, and enforcement modes.\n\n- JSON Schema definition in agent-yaml.schema.json\n- TypeScript types in loader.ts ComplianceConfig interface\n- Spec documentation including DUTIES.md convention, validation rules,\n  and regulatory reference table\n\nCloses #10 (part 1 of 4)\n\n* feat: add SOD validation, audit reporting, and init scaffolding\n\n- validate.ts: 16 validation rules for SOD (role uniqueness, conflict\n  detection, assignment integrity, handoff validation, risk tier checks)\n- audit.ts: new \"Segregation of Duties\" section in audit report\n- init.ts: DUTIES.md scaffolding in full template\n\nPart 2 of 4 — depends on feat/sod-1-spec-schema\n\n* feat: add SOD constraints to system-prompt and claude-code adapters\n\n- system-prompt.ts: exports SOD role assignments, conflict rules,\n  handoff requirements, isolation constraints, and DUTIES.md content\n- claude-code.ts: includes SOD subsection in Compliance output and\n  loads DUTIES.md into generated CLAUDE.md\n\nPart 3 of 4 — depends on feat/sod-2-cli-commands",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/57ad3ce08a42b19ce2496013706223c393288f56"
+        },
+        {
+          "sha": "8e01947baf4716361980e6cf98f3236cccab8a59",
+          "author_date": "2026-02-27T20:10:54Z",
+          "message": "feat: add SOD examples, DUTIES.md files, and README documentation (#14)\n\n* feat: add segregation of duties schema, types, and spec\n\nAdd the `segregation_of_duties` subsection to the compliance schema with\nsupport for roles, conflict matrix, assignments, isolation levels,\nhandoff workflows, and enforcement modes.\n\n- JSON Schema definition in agent-yaml.schema.json\n- TypeScript types in loader.ts ComplianceConfig interface\n- Spec documentation including DUTIES.md convention, validation rules,\n  and regulatory reference table\n\nCloses #10 (part 1 of 4)\n\n* feat: add SOD validation, audit reporting, and init scaffolding\n\n- validate.ts: 16 validation rules for SOD (role uniqueness, conflict\n  detection, assignment integrity, handoff validation, risk tier checks)\n- audit.ts: new \"Segregation of Duties\" section in audit report\n- init.ts: DUTIES.md scaffolding in full template\n\nPart 2 of 4 — depends on feat/sod-1-spec-schema\n\n* feat: add SOD constraints to system-prompt and claude-code adapters\n\n- system-prompt.ts: exports SOD role assignments, conflict rules,\n  handoff requirements, isolation constraints, and DUTIES.md content\n- claude-code.ts: includes SOD subsection in Compliance output and\n  loads DUTIES.md into generated CLAUDE.md\n\nPart 3 of 4 — depends on feat/sod-2-cli-commands\n\n* feat: add SOD examples, DUTIES.md files, and README documentation\n\n- examples/full/agent.yaml: segregation_of_duties config with analyst,\n  reviewer, and auditor roles\n- examples/full/DUTIES.md: root-level SOD policy (roles, conflicts,\n  handoffs, isolation, enforcement)\n- examples/full/agents/fact-checker/DUTIES.md: per-agent role declaration\n- examples/full/compliance/regulatory-map.yaml: duty_segregation mapping\n- README.md: SOD pattern section, updated directory tree, compliance docs\n\nPart 4 of 4 — depends on feat/sod-3-adapters\n\n* fix: align DUTIES.md entries in README directory tree\n\nMatch the comment alignment style used by RULES.md and AGENTS.md\nin the grouped category format.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/8e01947baf4716361980e6cf98f3236cccab8a59"
+        },
+        {
+          "sha": "4d091cc0739d6210d78198217a3968f3d6c53efb",
+          "author_date": "2026-03-01T19:28:52Z",
+          "message": "feat: add 'gitagent registry' command — submit agents to the registry\n\n- Validates local agent (agent.yaml + SOUL.md)\n- Detects GitHub user via gh CLI\n- Builds metadata.json from agent manifest\n- Forks open-gitagent/registry, clones fork\n- Creates agents/<user>__<name>/ with metadata + README\n- Opens PR against the registry repo\n- CI validates, maintainer reviews, agent goes live\n\nUsage: gitagent registry -r <repo-url> [-c category] [-a adapters]",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/4d091cc0739d6210d78198217a3968f3d6c53efb"
+        },
+        {
+          "sha": "eb331dbb9bb136a81881438d4ff30fb1336ed1b6",
+          "author_date": "2026-03-01T21:08:02Z",
+          "message": "fix: auto-detect default branch when 'main' doesn't exist\n\n- Uses git ls-remote --symref to detect default branch (main/master/etc)\n- Falls back gracefully: try requested branch → detect → retry\n- Fixes repos using 'master' or other non-main default branches\n- Also fixes stale empty cache dirs from failed clones",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/eb331dbb9bb136a81881438d4ff30fb1336ed1b6"
+        },
+        {
+          "sha": "e0c2661991d36c5e9ae5c8f2fbe895e4ccdd2194",
+          "author_date": "2026-03-15T08:11:23Z",
+          "message": "fix: use progressive skill disclosure in claude-code adapter (#20)\n\nSwitch claude-code adapter from loadAllSkills() to loadAllSkillMetadata()\nso CLAUDE.md only inlines skill name, description, and allowed-tools with\na file path reference instead of full SKILL.md instructions. Claude Code\ncan read the full instructions on demand, saving ~5000 tokens per skill.\n\nCloses #19\n\nCo-authored-by: Claude Opus 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/e0c2661991d36c5e9ae5c8f2fbe895e4ccdd2194"
+        },
+        {
+          "sha": "dcac5ceb7f53b81f3c009cac126b8eed42523eae",
+          "author_date": "2026-03-15T15:16:42Z",
+          "message": "docs: add SkillsFlow pattern to README\n\nAdd deterministic multi-step workflow pattern matching the landing page,\nwith YAML example showing skill/agent/tool step chaining.\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/dcac5ceb7f53b81f3c009cac126b8eed42523eae"
+        },
+        {
+          "sha": "abb36744f4f9bf156710713db6521bf8da76cd40",
+          "author_date": "2026-03-16T21:02:08Z",
+          "message": "feat: improve skill scores across all examples (#23)\n\nHullo 👋 @shreyas-lyzr\n\nI ran your skills through `tessl skill review` at work and found some targeted improvements. Here's the full before/after:\n\n| Skill | Before | After | Change |\n|-------|--------|-------|--------|\n| regulatory-analysis | 44% | 94% | +50% |\n| code-review | 53% | 94% | +41% |\n| export-agent | 55% | 94% | +39% |\n| research | 55% | 89% | +34% |\n| document-review | 49% | 79% | +30% |\n| create-agent | 60% | 90% | +30% |\n| run-agent | 60% | 90% | +30% |\n| get-started | 66% | 95% | +29% |\n| manage-skills | 66% | 94% | +28% |\n\n## What\n\nImproved all 9 example skills across the `examples/` directory — descriptions, trigger terms, concrete examples, and workflow clarity.\n\n## Why\n\nThe skill descriptions lacked explicit \"Use when...\" clauses and specific trigger terms, making it harder for agents to select the right skill. Content was solid but missing concrete examples and validation steps in several cases.\n\n<details>\n<summary>Changes made</summary>\n\n**Description improvements (all 9 skills):**\n- Added explicit \"Use when...\" clauses with natural trigger keywords\n- Expanded descriptions with specific concrete actions and domain terms\n- Switched from vague \"Help users...\" to third-person action verbs\n- Added specific framework/tool names as trigger terms\n\n**Content improvements:**\n- `document-review`: Added structured output format with example finding (FINRA 2210 violation)\n- `regulatory-analysis`: Added citation validation step and example finding with rule reference\n- `create-agent`: Replaced \"When to Use\" with actionable Quick Start workflow (5 numbered steps)\n- `export-agent`: Replaced \"When to Use\" with export verification step\n- `run-agent`: Added troubleshooting section for common authentication errors\n- `research`: Added complete example output demonstrating expected quality\n- `code-review`: Added example finding with before/after code fix (SQL injection)\n- `manage-skills`: Added installation verification step\n- `get-started`: Improved description specificity (content already scored 100%)\n\n</details>\n\n## How Tested\n- [x] `tessl skill review` passed on all 9 skills with score improvements\n- [x] YAML frontmatter validates correctly (all skills pass validation checks)\n- [x] No changes to agent.yaml files or directory structure\n\n## Checklist\n- [x] My code follows the existing style of this project\n- [x] I have updated documentation (if applicable)\n- [x] I have read the [CONTRIBUTING.md](../CONTRIBUTING.md)\n\n---\n\nHonest disclosure — I work at @tesslio where we build tooling around skills like these. Not a pitch - just saw room for improvement and wanted to contribute.\n\nWant to self-improve your skills? Just point your agent (Claude Code, Codex, etc.) at [this Tessl guide](https://docs.tessl.io/evaluate/optimize-a-skill-using-best-practices) and ask it to optimize your skill. Ping me - [@popey](https://github.com/popey) - if you hit any snags.\n\nThanks in advance 🙏",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/abb36744f4f9bf156710713db6521bf8da76cd40"
+        },
+        {
+          "sha": "0ba59858e65bc86df37477afd5a0198f980ce7ce",
+          "author_date": "2026-03-16T21:22:25Z",
+          "message": "feat: add GitHub Copilot CLI adapter for export (#24)\n\nAdd `copilot` format to `gitagent export` that generates `.github/agents/<name>.agent.md`\nand `.github/skills/<name>/SKILL.md` files compatible with GitHub Copilot CLI.\n\nThe adapter maps gitagent's SOUL.md, RULES.md, DUTIES.md, skills, knowledge,\nand compliance constraints into Copilot's agent.md format with YAML frontmatter.\n\nCloses #18\n\nCo-authored-by: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/0ba59858e65bc86df37477afd5a0198f980ce7ce"
+        },
+        {
+          "sha": "b3c7abf83b7c70d6f6e20e3a02f2d86bfe6f1dc3",
+          "author_date": "2026-03-18T11:24:36Z",
+          "message": "docs: add gitagent vs alternatives comparison document (#25)\n\nCloses #6.\n\nAdds docs/comparison.md comparing gitagent against:\n- ADL and similar emerging agent definition formats\n- Raw YAML/JSON config files\n- Framework-native (inline code) approaches such as LangChain, CrewAI, AutoGen\n\nCovers portability, versioning, compliance, skills ecosystem, and multi-agent\ntopology dimensions. Includes migration guidance and hybrid patterns.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/b3c7abf83b7c70d6f6e20e3a02f2d86bfe6f1dc3"
+        },
+        {
+          "sha": "998793a68ce3822142229c9c0d0d837de167338e",
+          "author_date": "2026-03-18T11:07:28Z",
+          "message": "Add full OpenCode adapter: export, runner, import, and auto-detection\n\n- Export adapter (src/adapters/opencode.ts): generates .opencode/instructions.md\n  and opencode.json with provider/model config from agent.yaml\n- Runner (src/runners/opencode.ts): creates temp workspace with instructions +\n  config, launches `opencode` CLI in interactive or single-shot mode\n- Import (src/commands/import.ts): reads .opencode/instructions.md + opencode.json,\n  produces agent.yaml, SOUL.md, and RULES.md\n- Git runner auto-detection: detects .opencode/ or opencode.json and routes to\n  the opencode adapter\n- Wired into export, run, and import commands with updated help text and README\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/998793a68ce3822142229c9c0d0d837de167338e"
+        },
+        {
+          "sha": "173eac1838dbe5aaf893f421f4d3253dc459349d",
+          "author_date": "2026-03-20T10:23:11Z",
+          "message": "fix: address review feedback on OpenCode adapter (#29)\n\n- Use AGENTS.md instead of .opencode/instructions.md (per OpenCode docs)\n- Fix opencode.json config: model uses provider/model format, provider is object with npm package\n- Fix runner CLI: use `opencode run --prompt` for single-shot mode\n- Fix process.exit() before finally cleanup — move cleanup before exit\n- Extract shared buildComplianceSection to src/adapters/shared.ts (dedup from copilot.ts)\n- Fix importer to read AGENTS.md and parse provider/model format\n- Fix git auto-detection to check opencode.json instead of .opencode/\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/173eac1838dbe5aaf893f421f4d3253dc459349d"
+        },
+        {
+          "sha": "ebbfecba8bb470e9053eb47fe849e81ab39fbab0",
+          "author_date": "2026-03-22T16:02:11Z",
+          "message": "fix: generate correct Claude Code hooks JSON structure (#36)\n\nThe hooks JSON was missing the required nested structure. Claude Code\nexpects each event entry to have a `matcher` field and a `hooks` array,\nnot bare command objects.\n\nAlso fixes event mapping to use correct Claude Code event names:\n- on_session_start → SessionStart (was PreToolUse)\n- on_error → PostToolUseFailure (was PostToolUse)\n- pre_response → UserPromptSubmit (was PostToolUse)\n- post_response → Stop (was PostToolUse)\n- on_session_end → SessionEnd (was PostToolUse)\n\nFixes #36\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/ebbfecba8bb470e9053eb47fe849e81ab39fbab0"
+        },
+        {
+          "sha": "3816fceb9513dd366a4f52ba1c0ab5c19f016660",
+          "author_date": "2026-03-22T16:02:17Z",
+          "message": "fix: generate correct Claude Code hooks JSON structure (#36)\n\nCo-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/3816fceb9513dd366a4f52ba1c0ab5c19f016660"
+        },
+        {
+          "sha": "d9a8dae5e1e53f76aa3fa9918ade36f596c7e4c4",
+          "author_date": "2026-03-22T23:05:49Z",
+          "message": "feat(adapters): add Cursor adapter with export and enhanced import\n\nCloses #34.\n\n## Export: gitagent export --format cursor\n\nGenerates .cursor/rules/*.mdc files:\n- SOUL.md + RULES.md → <agent-name>.mdc (alwaysApply: true)\n- Each skill → <skill-name>.mdc (alwaysApply: false)\n- Skills with metadata.globs get scoped file patterns in frontmatter\n\n## Enhanced Import: gitagent import --from cursor\n\nReads .cursor/rules/*.mdc directory (not just legacy .cursorrules):\n- alwaysApply: true rules → SOUL.md\n- Scoped skill rules → skills/<name>/SKILL.md\n- Globs preserved in metadata.globs for round-trip fidelity\n- Falls back to .cursorrules / AGENTS.md when no .cursor/rules/ found\n\n## Tests\n\n14 tests across 5 suites covering:\n- parseMdcFile (frontmatter + body, missing frontmatter, array globs)\n- readCursorRules (empty dir, .mdc filtering)\n- exportToCursor (global rule, skill rules, globs, slugification)\n- exportToCursorString (file header format)\n\n## Files\n\n- src/adapters/cursor.ts — new adapter (export + import helpers)\n- src/adapters/cursor.test.ts — 14 tests, all passing\n- src/adapters/index.ts — re-export exportToCursorString, exportToCursor\n- src/commands/export.ts — wire cursor case + update format list\n- src/commands/import.ts — enhanced importFromCursor using readCursorRules\n- README.md — add cursor to adapter table",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/d9a8dae5e1e53f76aa3fa9918ade36f596c7e4c4"
+        },
+        {
+          "sha": "257e59d2eadd4c7b717a97fd4410d92bc7385c4d",
+          "author_date": "2026-03-23T10:14:57Z",
+          "message": "feat: add Google Gemini CLI adapter for export, import, and run\n\nAdd `gemini` format that generates GEMINI.md and .gemini/settings.json compatible with Google Gemini CLI.\n\nThe adapter maps gitagent's SOUL.md, RULES.md, skills, knowledge, and compliance constraints into Gemini's instruction format. Import reads GEMINI.md and settings.json to reconstruct agent.yaml with model preferences and approval mode mappings (plan→always, default→conditional, yolo→none, auto_edit→advisory).",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/257e59d2eadd4c7b717a97fd4410d92bc7385c4d"
+        },
+        {
+          "sha": "01894e42ec6ddc6e57b1e9e6ac5d9a68da061493",
+          "author_date": "2026-03-23T10:27:31Z",
+          "message": "feat: add Google Gemini CLI runner for interactive and single-shot mode\n\nAdd `gemini` runner that creates temp workspace with GEMINI.md and .gemini/settings.json, then launches `gemini` CLI in interactive or single-shot mode (`-p` flag).\n\nThe runner copies hooks directory if present, maps approval modes to CLI flags (plan/default/yolo/auto_edit), and handles Windows shell quoting for args with spaces.\n\nAlso fixes buildHooksConfig to check hooks.yaml existence inside try block and use consistent null",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/01894e42ec6ddc6e57b1e9e6ac5d9a68da061493"
+        },
+        {
+          "sha": "2eb45f37ca7eaa7e7b135f6852cf6d5d0c592546",
+          "author_date": "2026-03-23T10:59:00Z",
+          "message": "fix: prefix .sh hook scripts with 'bash hooks/' on Windows for Gemini CLI\n\nOn Windows, Gemini CLI uses PowerShell which can't execute .sh files directly. Prepend 'bash' and include the hooks/ directory path when the script ends with .sh on win32 platform.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/2eb45f37ca7eaa7e7b135f6852cf6d5d0c592546"
+        },
+        {
+          "sha": "f3c7abc5d0f9aa2db5786ab3dd6787cbed955802",
+          "author_date": "2026-03-23T10:59:20Z",
+          "message": "fix: always prefix hook scripts with 'hooks/' directory in Gemini adapter\n\nPreviously only Windows .sh scripts got the hooks/ prefix. Now all hook scripts include the hooks/ directory path, with Windows .sh scripts additionally getting the 'bash' prefix.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/f3c7abc5d0f9aa2db5786ab3dd6787cbed955802"
+        },
+        {
+          "sha": "fe3768766330c8294610a1f8bb604beac25010de",
+          "author_date": "2026-03-23T11:13:53Z",
+          "message": "chore: update documentation for gemini adaptor",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/fe3768766330c8294610a1f8bb604beac25010de"
+        },
+        {
+          "sha": "fe1ff02922de3a306d2e0141e62aaeaeda193ad3",
+          "author_date": "2026-03-23T12:57:24Z",
+          "message": "feat(adapters): Cursor adapter — export + enhanced import (#34)\n\nAdd full Cursor adapter with .cursor/rules/*.mdc export and enhanced\nimport that reads modern .mdc files (not just legacy .cursorrules).\n\nCloses #34",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/fe1ff02922de3a306d2e0141e62aaeaeda193ad3"
+        },
+        {
+          "sha": "cc60a4c0517344de087bb4385add099944456174",
+          "author_date": "2026-03-23T14:13:08Z",
+          "message": "feat: OpenClaw adapter multi-agent workspace export (#42)\n\nExport sub-agents as separate OpenClaw workspaces instead of just\nmetadata in AGENTS.md. Each sub-agent gets its own workspace directory\nwith SOUL.md, AGENTS.md, TOOLS.md, and skills.\n\nMulti-agent openclaw.json now uses agents.list format with per-agent\nworkspace paths and model config. Single-agent export unchanged.\n\nFixes #42",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/cc60a4c0517344de087bb4385add099944456174"
+        },
+        {
+          "sha": "a6a4fa97a519356e51ffb7425ba0fa5260726dab",
+          "author_date": "2026-03-23T14:13:13Z",
+          "message": "feat: OpenClaw multi-agent workspace export (#42)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/a6a4fa97a519356e51ffb7425ba0fa5260726dab"
+        },
+        {
+          "sha": "5cc04640f76a45d18b42ec40bcdc9cb458a11b6a",
+          "author_date": "2026-03-23T17:50:22Z",
+          "message": "docs: add regulated-industries section with isomorphism table and GitClose example\n\nMade-with: Cursor",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/5cc04640f76a45d18b42ec40bcdc9cb458a11b6a"
+        },
+        {
+          "sha": "22f74c56f73fe49a98e2e6444f8e5d98e8111c8c",
+          "author_date": "2026-03-24T07:08:39Z",
+          "message": "Merge branch 'feat/gemini-cli' into merge-fix",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/22f74c56f73fe49a98e2e6444f8e5d98e8111c8c"
+        },
+        {
+          "sha": "e2a9050f6c31f9c7d4eaaa3710d73a726183ed83",
+          "author_date": "2026-03-24T07:08:50Z",
+          "message": "Merge pull request #2 from AJAmit17/merge-fix\n\nMerge fix",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/e2a9050f6c31f9c7d4eaaa3710d73a726183ed83"
+        },
+        {
+          "sha": "fdd07a3a89dad35cbe697c5a9ac864c92d8ce2e9",
+          "author_date": "2026-03-24T07:39:41Z",
+          "message": "feat(adapters): Codex CLI adapter — export + import (#32)\n\nAdd OpenAI Codex CLI adapter, closing #32 (help wanted).\n\n## What\n\n- New  —  and\n- New  — 15 tests, 29/29 total suite pass\n- Updated  — re-exports the new adapter\n- Updated  — adds 'codex' format case\n- Updated  — adds importFromCodex() for 'codex' source\n\n## Why\n\nCodex CLI (openai/codex) is OpenAI's open-source terminal coding agent.\nGitagent can now round-trip agents to/from Codex CLI format.\n\n## Format mapping\n\n| gitagent            | Codex CLI            |\n|---------------------|----------------------|\n| agent.yaml + SOUL.md + RULES.md | AGENTS.md |\n| model.preferred     | codex.json model     |\n| model → claude/gemini | provider: openai-compatible |\n| model → llama/mistral | provider: ollama   |\n| model → gpt/o-series | (default, no provider field) |\n\n## Export\n\n```\ngitagent export --format codex\n```\n\nEmits:\n- AGENTS.md — identity (SOUL.md), rules (RULES.md), skills, compliance\n- codex.json — { model, provider? }\n\n## Import\n\n```\ngitagent import --from codex <path>\n```\n\nReads AGENTS.md + codex.json, writes:\n- agent.yaml — name, model (from codex.json)\n- SOUL.md — all non-rule sections\n- RULES.md — rule/constraint/compliance sections (when present)\n\n## Tests\n\n15 new tests covering: struct shape, SOUL/RULES/skill content, config\nmodel/provider inference for OpenAI/o-series/Claude/Llama/Mistral, string\nexport section headers, JSON validity.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/fdd07a3a89dad35cbe697c5a9ac864c92d8ce2e9"
+        },
+        {
+          "sha": "c510a698391659b211110d4620d7d639ef9e11c8",
+          "author_date": "2026-03-25T06:38:50Z",
+          "message": "feat: add Google Gemini CLI adapter with export, run, and import (#33)\n\nFull Gemini CLI adapter:\n- Export: GEMINI.md + .gemini/settings.json with model, tools, approval mode, hooks\n- Run: launches gemini CLI in temp workspace (interactive + single-shot)\n- Import: reads GEMINI.md + settings.json, parses model object format\n- Hooks mapped: SessionStart, BeforeTool, AfterTool, AfterModel, AfterAgent\n- Uses shared buildComplianceSection\n- Comprehensive docs at docs/adapters/gemini.md\n\nFix: import handles model as both string and {id, provider} object\n\nCloses #33",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/c510a698391659b211110d4620d7d639ef9e11c8"
+        },
+        {
+          "sha": "01f72c7227b9e39eb0f3937d9827f207413afc46",
+          "author_date": "2026-03-25T06:39:12Z",
+          "message": "feat: add Google Gemini CLI adapter (#33)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/01f72c7227b9e39eb0f3937d9827f207413afc46"
+        },
+        {
+          "sha": "2058a9569bd4bd5c418dc965c27524ec5a82157b",
+          "author_date": "2026-03-25T15:07:34Z",
+          "message": "fix: replace execSync string interpolation with execFileSync to prevent command injection\n\nexecSync with template strings passes user-supplied URL, branch, repo, and\nsubPath values through the shell, allowing an attacker to inject arbitrary\nshell commands (e.g. a malicious git URL like `foo; rm -rf /`).\n\nSwitch to execFileSync with explicit argument arrays in git-cache.ts and\nregistry-provider.ts so arguments are never interpreted by the shell.\nAlso replace the remaining execSync rm -rf call with rmSync.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/2058a9569bd4bd5c418dc965c27524ec5a82157b"
+        },
+        {
+          "sha": "40c19a28af06493a54487183d50f796471c396a1",
+          "author_date": "2026-03-25T15:09:04Z",
+          "message": "fix: use process.exitCode instead of process.exit() so runner finally blocks clean up temp files\n\nprocess.exit() terminates the Node.js process immediately without executing\npending finally blocks. All five runners (claude, openai, crewai, nanobot,\nopenclaw) write temporary files or directories then call process.exit() inside\na try block, so the finally cleanup is always skipped.\n\nReplace process.exit(N) with process.exitCode = N; return so the finally\nblock executes and removes temporary files before the process exits naturally.\nThis prevents system prompt content, agent configs, and API key material\nwritten to /tmp from persisting on disk indefinitely.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/40c19a28af06493a54487183d50f796471c396a1"
+        },
+        {
+          "sha": "bf3a363a97f9d6f26dad6284075a14fdfae6a9ad",
+          "author_date": "2026-03-25T19:52:11Z",
+          "message": "fix: replace execSync with execFileSync to prevent command injection (#48)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/bf3a363a97f9d6f26dad6284075a14fdfae6a9ad"
+        },
+        {
+          "sha": "fa163efed5722ea64c72961fbff182a39077750a",
+          "author_date": "2026-03-25T19:52:14Z",
+          "message": "fix: use process.exitCode instead of process.exit() for proper cleanup (#49)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/fa163efed5722ea64c72961fbff182a39077750a"
+        },
+        {
+          "sha": "333e1dbcf79bd4a45da4d50e26b71041b31fdecb",
+          "author_date": "2026-03-25T19:54:03Z",
+          "message": "feat: add Codex CLI adapter with export + import (#32)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/333e1dbcf79bd4a45da4d50e26b71041b31fdecb"
+        },
+        {
+          "sha": "618b46d3ea812c86f573f50bff3ff4cdce5dfebc",
+          "author_date": "2026-03-25T20:38:16Z",
+          "message": "docs: add regulated-industries guide (#44)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/618b46d3ea812c86f573f50bff3ff4cdce5dfebc"
+        },
+        {
+          "sha": "5533b98c93c40870a5c9431bba2391d95720db52",
+          "author_date": "2026-03-27T19:14:28Z",
+          "message": "Update install path for npm in README",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/5533b98c93c40870a5c9431bba2391d95720db52"
+        },
+        {
+          "sha": "c141ac1ece349e9f228e33b483a1e64f67d799c5",
+          "author_date": "2026-03-29T22:10:17Z",
+          "message": "chore: bump version to 0.1.8\n\nRelease highlights:\n- feat: Google Gemini CLI adapter (export, run, import)\n- feat: OpenAI Codex CLI adapter (export, import)\n- feat: Cursor adapter (export, enhanced import with .mdc support)\n- feat: OpenCode adapter fixes (AGENTS.md, correct config format)\n- feat: OpenClaw multi-agent workspace export\n- fix: Claude Code hooks JSON structure (matcher + nested hooks)\n- fix: command injection prevention (execFileSync)\n- fix: process.exitCode for proper temp file cleanup\n- fix: shared buildComplianceSection (dedup from copilot/opencode)\n- docs: regulated-industries guide",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/c141ac1ece349e9f228e33b483a1e64f67d799c5"
+        },
+        {
+          "sha": "24ed35985b6b6d9f85f1d2eb9f7708bfd3ec0cb3",
+          "author_date": "2026-03-29T22:12:13Z",
+          "message": "chore: bump version to 0.1.8 and update package name to @open-gitagent/gitagent",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/24ed35985b6b6d9f85f1d2eb9f7708bfd3ec0cb3"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.1.9",
+      "previous_release": "v0.1.8",
+      "commits": [
+        {
+          "sha": "cf029df850e466b5b07477efc05b57f2b820b777",
+          "author_date": "2026-03-31T14:24:10Z",
+          "message": "fix(issue,53): fixed duplicated required options in export and import",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/cf029df850e466b5b07477efc05b57f2b820b777"
+        },
+        {
+          "sha": "a8d561da650b5870384840d56e8c9519d1fc2f49",
+          "author_date": "2026-03-31T15:44:31Z",
+          "message": "fix: resolve duplicate requiredOption and broken switch fallthrough (#53)\n\nFix three issues from bad merge of gemini + codex adapters:\n- Duplicate .requiredOption() calls on export and import commands\n- case 'codex' placed after default: with no break (unknown formats\n  fell through into codex handler)\n- Broken indentation on gemini/codex case blocks\n\nFixes #53",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/a8d561da650b5870384840d56e8c9519d1fc2f49"
+        },
+        {
+          "sha": "2c2bad7828e6a6acd69043d569ddc81c050eb13b",
+          "author_date": "2026-03-31T15:44:31Z",
+          "message": "fix: resolve duplicate requiredOption and broken switch fallthrough (#53)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/2c2bad7828e6a6acd69043d569ddc81c050eb13b"
+        },
+        {
+          "sha": "0ef6b9129ef79bcfb5c86b378e8bf1a1df74689f",
+          "author_date": "2026-04-03T02:53:23Z",
+          "message": "chore: bump version to 0.1.9",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/0ef6b9129ef79bcfb5c86b378e8bf1a1df74689f"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.2.0",
+      "previous_release": "v0.1.9",
+      "commits": [
+        {
+          "sha": "795fa2e46f667044c16e50b067cdae9ea2e34aea",
+          "author_date": "2026-04-03T03:11:06Z",
+          "message": "feat: implement extends resolution, --force flag, and parent merge in export (#55)\n\n- `gitagent install` now resolves `extends` field — clones parent agent\n  to .gitagent/parent/\n- `--force` flag removes and re-installs existing deps/parent\n- `gitagent export -f claude-code` merges parent content:\n  - SOUL.md: child replaces parent\n  - RULES.md: parent + child appended (union)\n  - skills/: parent skills copied where child doesn't shadow\n- Git source detection supports GitHub, Bitbucket, and GitLab\n- Security: uses execFileSync (not execSync) and cpSync (not cp -r shell)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/795fa2e46f667044c16e50b067cdae9ea2e34aea"
+        },
+        {
+          "sha": "053dd953bd578b8553a584f4ff127566c2b8d512",
+          "author_date": "2026-04-03T03:34:31Z",
+          "message": "feat(adapter): add Kiro CLI export adapter (#46)\n\nExport gitagent to AWS Kiro custom agent format:\n- .kiro/agents/<name>.json with name, description, prompt, model,\n  tools, allowedTools, mcpServers, hooks\n- prompt.md referenced via file:// URI\n\nFix: hook events use camelCase per Kiro docs (preToolUse, postToolUse,\nstop, agentSpawn, userPromptSubmit) — not PascalCase. Removed\nnon-existent 'Notification' event.\n\nCloses #46",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/053dd953bd578b8553a584f4ff127566c2b8d512"
+        },
+        {
+          "sha": "53e77f7ce3d96dffcf78d0f8ec450738d5ca563e",
+          "author_date": "2026-04-03T03:46:03Z",
+          "message": "unes: hackathon.md",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/53e77f7ce3d96dffcf78d0f8ec450738d5ca563e"
+        },
+        {
+          "sha": "a69de38f8016a2375bd505f6e3ec67bc8fe551dc",
+          "author_date": "2026-04-03T03:53:24Z",
+          "message": "feat(adapter): add gitclaw export adapter\n\nExport gitagent to gitclaw SDK format:\n- agent.yaml with provider:model-id format (colon separator)\n- knowledge/index.yaml converted from documents to entries\n- SOUL.md, RULES.md, DUTIES.md, skills/, tools/, hooks/ pass through\n- Tool names collected as flat array in agent.yaml\n\nGitclaw reads the same git-native directory structure but with slight\nschema differences that this adapter handles.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/a69de38f8016a2375bd505f6e3ec67bc8fe551dc"
+        },
+        {
+          "sha": "03b648efbef8c85a624771dcc7e98ef92a8b1efd",
+          "author_date": "2026-04-03T04:11:33Z",
+          "message": "feat: add gitclaw runner for run command\n\nCreates temp workspace with full gitclaw directory structure\n(agent.yaml, SOUL.md, RULES.md, skills/, tools/, hooks/, knowledge/)\nand launches gitclaw CLI. Supports interactive and single-shot mode.\n\nUses process.exitCode (not process.exit) for proper cleanup.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/03b648efbef8c85a624771dcc7e98ef92a8b1efd"
+        },
+        {
+          "sha": "fb3c247288c988b381986d47cc47fb40a7a87805",
+          "author_date": "2026-04-05T18:17:54Z",
+          "message": "feat: add LLM Wiki example agent and init template\n\nImplements Karpathy's LLM Wiki pattern as a gitagent agent:\n- wiki-ingest skill: process sources into wiki pages with cross-references\n- wiki-query skill: search wiki, synthesize answers, file back valuable results\n- wiki-lint skill: health-check for contradictions, orphans, gaps\n\nAvailable as:\n- Example: examples/llm-wiki/\n- Template: gitagent init --template llm-wiki\n\nThe pattern uses gitagent's existing knowledge/ (raw sources), memory/\n(wiki pages), and skills/ (operations) layers — no new CLI features needed.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/fb3c247288c988b381986d47cc47fb40a7a87805"
+        },
+        {
+          "sha": "51b1f5d610d9ceb7c62b57bc05c42b51c553cc17",
+          "author_date": "2026-04-05T18:51:41Z",
+          "message": "chore: bump version to 0.2.0",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/51b1f5d610d9ceb7c62b57bc05c42b51c553cc17"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.3.0",
+      "previous_release": "v0.2.0",
+      "commits": [
+        {
+          "sha": "91b8282fab13b476ebed2d4f44e40a0983ccf876",
+          "author_date": "2026-04-13T04:51:44Z",
+          "message": "docs: fix scoped npm package references (#67)\n\n* docs: fix scoped npm package references\n\n* docs: fix contributing link in PR template",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/91b8282fab13b476ebed2d4f44e40a0983ccf876"
+        },
+        {
+          "sha": "7a0632c6db2c4609363e61c0775e3fa87ee4f3b6",
+          "author_date": "2026-04-13T05:59:15Z",
+          "message": "fix: opencode adapter passes prompt as positional arg not --prompt (#68)\n\nopencode CLI uses -p/--password, NOT -p for prompts. The prompt should\nbe passed as a positional 'message' argument to 'opencode run'.\n\nBefore: opencode run --prompt \"hello\"  (hit help text, no execution)\nAfter:  opencode run \"hello\"            (executes the prompt)\n\nFixes #68",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/7a0632c6db2c4609363e61c0775e3fa87ee4f3b6"
+        },
+        {
+          "sha": "82b278c74d8e83ae858c5fd5c5371e3ffbccd45b",
+          "author_date": "2026-04-20T18:35:58Z",
+          "message": "feat: rebrand to GitAgentProtocol (Open GAP), publish as gapman v0.3.0\n\n- Rename npm package from @open-gitagent/gitagent to gapman\n- Add gapman + gitagent bin aliases (both commands work)\n- Bump version to 0.3.0\n- Update CLI self-name and description\n- Update README and docs.md with Open GAP branding and new install commands",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/82b278c74d8e83ae858c5fd5c5371e3ffbccd45b"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.3.1",
+      "previous_release": "v0.3.0",
+      "commits": [
+        {
+          "sha": "a70a6a115c88945cd942116c6ec6bceee0ea7b78",
+          "author_date": "2026-04-20T18:43:23Z",
+          "message": "fix: publish as @open-gitagent/gapman (scoped) for v0.3.1\n\nNPM_TOKEN is scoped to @open-gitagent, so unscoped gapman 404'd. Using\nscoped name matches prior package pattern.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/a70a6a115c88945cd942116c6ec6bceee0ea7b78"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.3.2",
+      "previous_release": "v0.3.1",
+      "commits": [
+        {
+          "sha": "26d2aaf63aa3b887f8d2edba3a69e5ef587174af",
+          "author_date": "2026-04-20T18:59:01Z",
+          "message": "chore: publish both @open-gitagent/gapman and unscoped gapman via CI\n\nv0.3.2 — add a second publish step in publish.yml that flips the\npackage.json name to unscoped 'gapman' and publishes it as an alias.\nToken updated to cover both.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/26d2aaf63aa3b887f8d2edba3a69e5ef587174af"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.4.0",
+      "previous_release": "v0.3.2",
+      "commits": [
+        {
+          "sha": "6fa061026af2f92f1aaf513bd8b7120de2b69679",
+          "author_date": "2026-04-23T19:10:10Z",
+          "message": "docs: add OpenGAP (GitAgentProtocol) research paper\n\nAdd paper/ directory with:\n- open-gap.tex: arXiv-ready LaTeX master (~981 lines)\n- open-gap.md: detailed Markdown mirror (~862 lines)\n- bibliography.bib: 22 references (MCP, A2A, FINRA/SEC/SR 11-7, Karpathy LLM Wiki, GitClose, TLA+/Alloy, EU AI Act, ISO 42001)\n- Makefile: pdflatex + bibtex build\n- tables/fidelity-matrix.csv: regenerable adapter fidelity data\n- README.md: build instructions and citation\n\nCovers: design lineage (Unix → GitOps → agents), protocol spec with formal\n10-tuple definition, 15-adapter portability model with fidelity function,\n14 lifecycle patterns grouped into 4 meta-patterns, compliance mapping\n(FINRA/SEC/SR 11-7/CFPB/EU AI Act/ISO 42001), hook-based enforcement,\nstructural SOD theorem, three case studies, threat model, conformance levels.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/6fa061026af2f92f1aaf513bd8b7120de2b69679"
+        },
+        {
+          "sha": "76ef9e4fd1203110054a0e0bc59bf6e0f87610a6",
+          "author_date": "2026-05-04T16:03:24Z",
+          "message": "feat: add run workspace option (#71)",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/76ef9e4fd1203110054a0e0bc59bf6e0f87610a6"
+        },
+        {
+          "sha": "95fb64282564dac6db2d3f7dd50e0d675a6678d3",
+          "author_date": "2026-05-04T16:04:05Z",
+          "message": "feat: jason-openclaw example — ClawLaw operating system (#62)\n\n* feat: add jason-openclaw example with ClawLaw operating system\n\nJason is an autonomous CEO-mode agent running on OpenClaw under ClawLaw —\ntwo disciplines that prevent scope creep, context overflow, and hallucinated\noutputs: atomic work packets (every side effect needs an APPROVED packet before\ndispatch) and the compute ladder (model selection by provider health, not task\ncomplexity; local-first, paid break-glass only).\n\nIncludes agent.yaml manifest, SOUL.md, RULES.md, packet-factory/compute-ladder/\nnarco-check skills, full architecture workflow with implementation checklist, and\na 42-test validation harness covering all ClawLaw rules.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* refactor: rename agent to jason-my-claw-is-the-law-deebee-4567b4\n\nDeeBee #4567b4 (blue). Updated directory, agent.yaml name/display_name/\ncallsign/color fields, and README badge. No content changes.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* fix: swap Groq for Cerebras as tier-1 compute ladder provider\n\nGroq console is geo-blocked. Cerebras verified working: 235B Qwen3 and\nLlama 3.1 8B available, up to 2100 TPS. Updated agent.yaml fallback chain,\ncompute-ladder SKILL.md health check URL and model list.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\n\n* fix(jason): strip fallback chain to prevent context blowout and cost overruns\n\nSession hit 97k tokens after hallucination loop, fell through all 7 fallbacks\nto GLM-4.5-air which returned empty content arrays (the null response bug).\n\nChanges:\n- Fallback: 7 models → 1 (cerebras/qwen-3-235b-a22b-instruct-2507 only)\n- context_window_limit: 65536 → 32768 (RTX 3090 hard limit)\n- context_budget_tokens: 40000 → 18000 (matches 55% compaction threshold)\n\nMatching changes applied to openclaw.json + lossless-claw threshold 0.7 → 0.55.\nWeb search disabled (grok provider broken without xai plugin).\n\n* fix(jason): correct context window and budget for 65536 RTX 3090 limit\n\nqwen3-coder safe limit is 65536 (not 32768 - that was gpt-oss:20b's limit).\nSystem prompt alone is ~33k tokens, so 32768 left zero room for conversation.\n\n- context_window_limit: 32768 → 65536\n- context_budget_tokens: 18000 → 36000 (55% of 65536)\n\n---------\n\nCo-authored-by: bengii <bengii@users.noreply.github.com>\nCo-authored-by: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/95fb64282564dac6db2d3f7dd50e0d675a6678d3"
+        },
+        {
+          "sha": "085954b430b10a7990261b33731e84e96b0b1f28",
+          "author_date": "2026-05-05T22:55:56Z",
+          "message": "docs: rename gitagent CLI command references to gapman (#74)\n\nThe CLI binary was renamed gitagent → gapman in v0.3.0, with gitagent\nkept as an alias. This sweep updates all command-line examples in docs\nand example READMEs to use the canonical 'gapman' invocation.\n\n- README.md, docs.md, CONTRIBUTING.md\n- spec/SPECIFICATION.md\n- docs/comparison.md, docs/adapters/gemini.md\n- examples/gitagent-helper/, examples/lyzr-agent/, examples/nvidia-deep-researcher/, examples/jason-my-claw-is-the-law-deebee-4567b4/\n- .github/ISSUE_TEMPLATE/bug_report.md\n- @shreyaskapale/gitagent (deprecated) and @open-gitagent/gitagent (renamed) install commands updated to @open-gitagent/gapman\n\nThe gitagent alias still works at runtime — backward-compat notes preserved.\nProject / protocol / repo names (\"gitagent\", \"open-gitagent/gitagent-protocol\")\nare unchanged; only CLI invocations and npm package names were rewritten.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/085954b430b10a7990261b33731e84e96b0b1f28"
+        },
+        {
+          "sha": "e8d553b491be52d260e1ab6f995d80551c1072ea",
+          "author_date": "2026-05-13T16:59:19Z",
+          "message": "fix: encodeURIComponent agentId in lyzr runner URL paths (#51)\n\n* fix: add parameterized queries in lyzr.ts\n\nSQL query constructed using JavaScript template literals with dynamic input\nResolves utils.custom.sql-injection-template-literal\n\n* drop template-literal-to-concat changes\n\n---------\n\nCo-authored-by: orbisai0security <orbisai0security@users.noreply.github.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/e8d553b491be52d260e1ab6f995d80551c1072ea"
+        },
+        {
+          "sha": "1762a72b712ebfee42972a458eda0834bb47ae4c",
+          "author_date": "2026-05-13T16:59:26Z",
+          "message": "docs: update adapter table — add missing copilot, codex, kiro, gitclaw (#78)\n\nREADME adapter table listed 12 adapters but export.ts supports 15.\nAdded: copilot, codex, kiro (export-only) and gitclaw.\nAlso corrected github description from 'GitHub Actions' to\n'GitHub Models inference' to match actual implementation.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/1762a72b712ebfee42972a458eda0834bb47ae4c"
+        },
+        {
+          "sha": "958ca966e3643a0117ca00251c164a2fa6be7897",
+          "author_date": "2026-05-13T16:59:32Z",
+          "message": "feat: financial_governance spec block — Phase 1 (schema + example) (#79)\n\n* Refine descriptions in agent-yaml.schema.json\n\nschema: add financial_governance block to compliance_config\n\n* examples: add financial-agent with financial_governance block\n\nAddresses RFC #38 feedback:\r\n- financial_governance nested under compliance (not top-level)\r\n- firewall field is a named identifier, not an endpoint\r\n- blocked_categories evaluated before allowed_categories\r\n- auto_deny_on_timeout defaults to true (timeout = DENIED)\r\n- audit handled via compliance.recordkeeping (no duplicate fields)\n\n* spec: add financial_governance to compliance section and validation rules\n\nAddresses RFC #38 feedback — adds financial_governance to compliance section and validation rules in SPECIFICATION.md\n\n* validate: add financial_governance checks to compliance validation\n\nAddresses RFC #38 feedback — warns when high/critical risk agents have financial tools but no financial_governance block, and validates firewall field is a named identifier not an endpoint URL\n\n* adapters: surface financial_governance caps in buildComplianceSection\n\nAddresses RFC #38 feedback — exposes spending caps, category controls, and approval threshold in the shared compliance section surfaced by all adapters",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/958ca966e3643a0117ca00251c164a2fa6be7897"
+        },
+        {
+          "sha": "2ed20a2bb171f5dfec8abcca76ebaa06ffe5faac",
+          "author_date": "2026-05-13T17:07:59Z",
+          "message": "feat: add mcp_servers field to agent.yaml for portable MCP server definitions (#66)\n\nDefine MCP servers once in agent.yaml and export to each provider's native\nformat. Supports both stdio-based (command + args) and HTTP-based (url) servers.\n\nTier 1 adapters (native MCP config): Claude Code (.mcp.json), Cursor\n(.cursor/mcp.json), Gemini (.gemini/settings.json), Codex (codex.json),\nOpenCode (opencode.json).\n\nTier 2 adapters (markdown docs): system-prompt, copilot, openai, crewai,\nlyzr, nanobot, openclaw.\n\nAlso fixes pre-existing duplicate .requiredOption bugs in export and import\ncommands, and fixes codex case placed after default in export switch.\n\nCloses #57\n\nCo-authored-by: Claude Opus 4.6 (1M context) <noreply@anthropic.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/2ed20a2bb171f5dfec8abcca76ebaa06ffe5faac"
+        },
+        {
+          "sha": "b3a057ad9857b3b69e3aeb8bf4b2393d4e2bf288",
+          "author_date": "2026-05-13T17:09:23Z",
+          "message": "rfc(identity): optional cryptographic identity layer for gitagent manifests (#73)\n\nCloses #70 (proposal). Adds spec/rfcs/identity.md per shreyas-lyzr's review.\n\n- Optional identity block in agent.yaml (public_key, key_fingerprint, passport_uri, signatures)\n- Verification semantics in spec, enforcement in runtime\n- Two-deep delegation example with parent-signs-child manifest flow\n- Revocation behavior tight enough to keep two implementations from diverging\n- Non-goals section bounding scope\n- Cross-walk to Agent Passport System as one reference impl\n\nBackwards compatible: existing agent.yaml files validate unchanged.\n\nCo-authored-by: Tymofii Pidlisnyi <tima@aeoess.com>",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/b3a057ad9857b3b69e3aeb8bf4b2393d4e2bf288"
+        },
+        {
+          "sha": "5ffc84d5c607a0ef908793e15bbcbb5df401cb5c",
+          "author_date": "2026-05-24T16:50:52Z",
+          "message": "chore: rebrand gapman → opengap (package, CLI, docs) (#82)\n\nRenames the package and CLI to OpenGAP and updates all documentation.\n\n- package.json: name @open-gitagent/gapman → @open-gitagent/opengap, bin\n  gapman → opengap (gitagent alias kept), version 0.3.2 → 0.4.0,\n  description + keywords updated\n- package-lock.json: name/version/bin updated\n- src/index.ts: CLI self-name gapman → opengap, version 0.4.0\n- src/commands/registry.ts: npx @open-gitagent/opengap\n- .github/workflows/publish.yml: publishes @open-gitagent/opengap (scoped)\n  + opengap (unscoped alias)\n- 274 doc edits across README, docs.md, CONTRIBUTING, spec, examples, paper:\n  all 'gapman <verb>' CLI examples → 'opengap <verb>', npm install lines,\n  inline code names\n- Historical migration notes in README/docs preserved (gitagent → gapman →\n  opengap chain) so existing gapman users can find the new package\n- gitagent command remains installed as a backward-compat alias",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/5ffc84d5c607a0ef908793e15bbcbb5df401cb5c"
+        },
+        {
+          "sha": "686ddda9bd84652c0fa5b467b2c9ced62fed487c",
+          "author_date": "2026-05-24T17:08:41Z",
+          "message": "fix: add financial_governance to ComplianceConfig type (#83)\n\nPR #79 added financial_governance usage in src/adapters/shared.ts and\nsrc/commands/validate.ts and the JSON schema, but never added the field\nto the ComplianceConfig TypeScript interface — breaking the build with\nTS2339 and blocking the npm release.\n\nAdds the financial_governance shape (enabled, firewall, spending,\napproval) matching all field accesses. spending.max_per_transaction_cents\nis required (number) so validate.ts's '<= 0' check compiles under strict.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/686ddda9bd84652c0fa5b467b2c9ced62fed487c"
+        },
+        {
+          "sha": "22fc9394239c85d2e4d3d590a0063161cd60f106",
+          "author_date": "2026-05-24T17:14:49Z",
+          "message": "fix: point package.json repository.url at open-gitagent/opengap (#84)\n\nnpm publish --provenance failed with E422: the sigstore provenance bundle\nrequires repository.url to match the repo the build runs in. It still\npointed at open-gitagent/gitagent (the original repo name). Updates\nrepository.url (with git+ prefix to avoid npm auto-correction) and\nbugs.url to open-gitagent/opengap.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/22fc9394239c85d2e4d3d590a0063161cd60f106"
+        }
+      ],
+      "ignored_reason": null
+    },
+    {
+      "release": "v0.5.0",
+      "previous_release": "v0.4.0",
+      "commits": [
+        {
+          "sha": "9cab16eaf8d9a548a8daa13624a32857300914b9",
+          "author_date": "2026-05-24T17:31:50Z",
+          "message": "ci: publish scoped @open-gitagent/opengap only (#85)\n\nnpm rejects the unscoped root name 'opengap' with E403 (too similar to\n'openai' — typosquatting guard). Removed the unscoped publish step so the\nrelease workflow no longer fails. Package ships under the scoped name.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/9cab16eaf8d9a548a8daa13624a32857300914b9"
+        },
+        {
+          "sha": "ac10c98d1deea12ea42a4949b2b6b708b2776f5b",
+          "author_date": "2026-05-25T17:37:18Z",
+          "message": "docs: refresh OpenGAP paper for v0.4 (mcp_servers, financial_governance, identity) (#86)\n\nUpdates the paper to the current repo state:\n- Rebrand complete: opengap CLI / @open-gitagent/opengap v0.4.0; repo URL\n  → open-gitagent/opengap; honest note on the unscoped-name npm block\n- Capabilities §: add mcp_servers as a first-class portable concern\n- Compliance §: financial_governance is now a shipped, schema-validated\n  block (was hypothetical) with the real YAML and validate-time warnings\n- New §: cryptographic-identity RFC (provenance vs runtime delegation,\n  Ed25519, passport_uri, optional)\n- Reference impl §: opengap verbs, v0.4.0, provenance, gitagent alias\n- Evaluation §: 15 adapters + 11 runners, three community-originated spec\n  features, CI on Node 18/20/22, accurate npm publish state\n- Future work §: financial_governance Phase 1 shipped → Phase 2/3 remain;\n  identity-layer implementation added",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/ac10c98d1deea12ea42a4949b2b6b708b2776f5b"
+        },
+        {
+          "sha": "14fdaab4f81d443d587d93148a9b9c4a36ee5c95",
+          "author_date": "2026-05-28T04:53:49Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/14fdaab4f81d443d587d93148a9b9c4a36ee5c95"
+        },
+        {
+          "sha": "0b913da41bf4cbc3cac30bcde16bf5bb42186e43",
+          "author_date": "2026-05-28T04:57:06Z",
+          "message": "Update star history link in README.md",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/0b913da41bf4cbc3cac30bcde16bf5bb42186e43"
+        },
+        {
+          "sha": "459ed97e34f63d9ce247847e2cda04188130a79a",
+          "author_date": "2026-05-28T05:32:54Z",
+          "message": "docs: add hero image to README above the title (#88)\n\nAdds hero.png (147 KB) directly above the 'OpenGAP | your repository\nbecomes your agent' H1, showing the GitAgentProtocol (Open GAP) brand\nhero from the landing page.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/459ed97e34f63d9ce247847e2cda04188130a79a"
+        },
+        {
+          "sha": "e6fa3915c3e909533fa8807848a3bb1e2236e563",
+          "author_date": "2026-05-28T05:42:52Z",
+          "message": "docs: replace banner.png with hero.png in README (#89)\n\nThe previous PR (#88) accidentally added hero.png alongside banner.png\ninstead of replacing it. Now: hero.png is the single top image, banner.png\nremoved (it had no other references in the repo).",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/e6fa3915c3e909533fa8807848a3bb1e2236e563"
+        },
+        {
+          "sha": "1aa5e2b17934522d409c4398ae3cf2aab470b4c9",
+          "author_date": "2026-07-02T20:48:13Z",
+          "message": "feat: session continuation for claude adapter (--continue, --resume, --session-id)\n\nopengap run -a claude previously had no way to continue a prior Claude Code\nconversation — every run started fresh. Adds three flags mapped to Claude\nCode's native session flags:\n\n- -c, --continue: continue the most recent session in the working directory\n  (pairs with --workspace, which decides where the session is looked up)\n- --resume <sessionId>: reopen an exact session by ID\n- --session-id <uuid>: pin a new session to a known UUID so scripts can\n  resume deterministically later\n\nGuards: --continue and --resume are mutually exclusive; --session-id must\nbe a valid UUID; all three are rejected with a clear error for non-claude\nadapters instead of being silently ignored. Docs updated with a session-\ncontinuation section and examples.",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/1aa5e2b17934522d409c4398ae3cf2aab470b4c9"
+        },
+        {
+          "sha": "d7a8e2edb54b942d6b4635cdd8b919ebd23e5da5",
+          "author_date": "2026-07-02T21:15:24Z",
+          "message": "chore: bump version to 0.5.0 for session-continuation release",
+          "html_url": "https://github.com/open-gitagent/opengap/commit/d7a8e2edb54b942d6b4635cdd8b919ebd23e5da5"
+        }
+      ],
+      "ignored_reason": null
+    }
+  ],
+  "runs_by_month": {
+    "2025-10": [],
+    "2025-11": [],
+    "2025-12": [],
+    "2026-01": [],
+    "2026-02": [
+      {
+        "id": 22502053308,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T20:10:56Z",
+        "updated_at": "2026-02-27T20:11:18Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22502053308"
+      },
+      {
+        "id": 22502049605,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T20:10:49Z",
+        "updated_at": "2026-02-27T20:11:07Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22502049605"
+      },
+      {
+        "id": 22502045913,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T20:10:41Z",
+        "updated_at": "2026-02-27T20:11:00Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22502045913"
+      },
+      {
+        "id": 22501989832,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T20:08:55Z",
+        "updated_at": "2026-02-27T20:09:13Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22501989832"
+      },
+      {
+        "id": 22478102349,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T08:07:26Z",
+        "updated_at": "2026-02-27T08:07:47Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22478102349"
+      },
+      {
+        "id": 22477949838,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T08:02:10Z",
+        "updated_at": "2026-02-27T08:02:29Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22477949838"
+      },
+      {
+        "id": 22477929260,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T08:01:29Z",
+        "updated_at": "2026-02-27T08:01:52Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22477929260"
+      },
+      {
+        "id": 22477882778,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T07:59:48Z",
+        "updated_at": "2026-02-27T08:00:10Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22477882778"
+      },
+      {
+        "id": 22477710502,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T07:53:26Z",
+        "updated_at": "2026-02-27T07:53:47Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22477710502"
+      },
+      {
+        "id": 22468646843,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T01:21:29Z",
+        "updated_at": "2026-02-27T01:21:46Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22468646843"
+      },
+      {
+        "id": 22468581639,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T01:18:42Z",
+        "updated_at": "2026-02-27T01:19:01Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22468581639"
+      },
+      {
+        "id": 22466734272,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T00:07:38Z",
+        "updated_at": "2026-02-27T00:07:58Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22466734272"
+      },
+      {
+        "id": 22466606175,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-02-27T00:02:45Z",
+        "updated_at": "2026-02-27T00:03:02Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22466606175"
+      }
+    ],
+    "2026-03": [
+      {
+        "id": 23806249214,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-31T15:44:41Z",
+        "updated_at": "2026-03-31T15:45:07Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23806249214"
+      },
+      {
+        "id": 23720311245,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-29T22:12:18Z",
+        "updated_at": "2026-03-29T22:12:36Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23720311245"
+      },
+      {
+        "id": 23720279153,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-29T22:10:34Z",
+        "updated_at": "2026-03-29T22:10:55Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23720279153"
+      },
+      {
+        "id": 23663298852,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-27T19:14:31Z",
+        "updated_at": "2026-03-27T19:14:49Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23663298852"
+      },
+      {
+        "id": 23562928950,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-25T20:38:23Z",
+        "updated_at": "2026-03-25T20:38:44Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23562928950"
+      },
+      {
+        "id": 23561058606,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-25T19:54:10Z",
+        "updated_at": "2026-03-25T19:54:30Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23561058606"
+      },
+      {
+        "id": 23528359540,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-25T06:39:18Z",
+        "updated_at": "2026-03-25T06:39:40Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23528359540"
+      },
+      {
+        "id": 23441755499,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-23T14:13:24Z",
+        "updated_at": "2026-03-23T14:13:45Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23441755499"
+      },
+      {
+        "id": 23438419820,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-23T12:57:30Z",
+        "updated_at": "2026-03-23T12:58:05Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23438419820"
+      },
+      {
+        "id": 23406903205,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-22T16:02:33Z",
+        "updated_at": "2026-03-22T16:02:53Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23406903205"
+      },
+      {
+        "id": 23338690581,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-20T10:24:01Z",
+        "updated_at": "2026-03-20T10:24:23Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23338690581"
+      },
+      {
+        "id": 23242351233,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-18T11:24:39Z",
+        "updated_at": "2026-03-18T11:24:59Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23242351233"
+      },
+      {
+        "id": 23166547656,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-16T21:22:29Z",
+        "updated_at": "2026-03-16T21:22:52Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23166547656"
+      },
+      {
+        "id": 23165771360,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-16T21:02:12Z",
+        "updated_at": "2026-03-16T21:02:58Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23165771360"
+      },
+      {
+        "id": 23113190241,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-15T15:16:50Z",
+        "updated_at": "2026-03-15T15:17:10Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23113190241"
+      },
+      {
+        "id": 23106460792,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-15T08:11:26Z",
+        "updated_at": "2026-03-15T08:11:47Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23106460792"
+      },
+      {
+        "id": 22552703075,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-01T21:08:13Z",
+        "updated_at": "2026-03-01T21:08:35Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22552703075"
+      },
+      {
+        "id": 22550848750,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-03-01T19:29:35Z",
+        "updated_at": "2026-03-01T19:29:52Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/22550848750"
+      }
+    ],
+    "2026-04": [
+      {
+        "id": 24853826757,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-23T19:10:17Z",
+        "updated_at": "2026-04-23T19:10:37Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/24853826757"
+      },
+      {
+        "id": 24684786573,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-20T18:59:09Z",
+        "updated_at": "2026-04-20T18:59:30Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/24684786573"
+      },
+      {
+        "id": 24684102316,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-20T18:44:14Z",
+        "updated_at": "2026-04-20T18:44:32Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/24684102316"
+      },
+      {
+        "id": 24683900657,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-20T18:39:46Z",
+        "updated_at": "2026-04-20T18:40:08Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/24683900657"
+      },
+      {
+        "id": 24328121013,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-13T05:59:32Z",
+        "updated_at": "2026-04-13T05:59:54Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/24328121013"
+      },
+      {
+        "id": 24326258519,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-13T04:51:47Z",
+        "updated_at": "2026-04-13T04:52:11Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/24326258519"
+      },
+      {
+        "id": 24008137249,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-05T18:51:57Z",
+        "updated_at": "2026-04-05T18:52:16Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/24008137249"
+      },
+      {
+        "id": 24007548297,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-05T18:18:05Z",
+        "updated_at": "2026-04-05T18:18:27Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/24007548297"
+      },
+      {
+        "id": 23933463576,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-03T04:14:00Z",
+        "updated_at": "2026-04-03T04:14:26Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23933463576"
+      },
+      {
+        "id": 23933359890,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-03T04:09:23Z",
+        "updated_at": "2026-04-03T04:09:40Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23933359890"
+      },
+      {
+        "id": 23932819223,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-03T03:46:06Z",
+        "updated_at": "2026-04-03T03:46:31Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23932819223"
+      },
+      {
+        "id": 23932552035,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-03T03:34:39Z",
+        "updated_at": "2026-04-03T03:35:01Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23932552035"
+      },
+      {
+        "id": 23932049509,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-03T03:11:17Z",
+        "updated_at": "2026-04-03T03:11:36Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23932049509"
+      },
+      {
+        "id": 23931644671,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-04-03T02:53:32Z",
+        "updated_at": "2026-04-03T02:53:57Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/23931644671"
+      }
+    ],
+    "2026-05": [
+      {
+        "id": 26557071299,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T05:42:56Z",
+        "updated_at": "2026-05-28T05:43:18Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26557071299"
+      },
+      {
+        "id": 26556731967,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T05:32:57Z",
+        "updated_at": "2026-05-28T05:33:17Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26556731967"
+      },
+      {
+        "id": 26555597911,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T04:57:08Z",
+        "updated_at": "2026-05-28T04:57:26Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26555597911"
+      },
+      {
+        "id": 26555488944,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-28T04:53:52Z",
+        "updated_at": "2026-05-28T04:54:12Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26555488944"
+      },
+      {
+        "id": 26412676211,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-25T17:37:21Z",
+        "updated_at": "2026-05-25T17:37:45Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26412676211"
+      },
+      {
+        "id": 26368041470,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T17:31:53Z",
+        "updated_at": "2026-05-24T17:32:14Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26368041470"
+      },
+      {
+        "id": 26367661549,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T17:14:52Z",
+        "updated_at": "2026-05-24T17:15:14Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26367661549"
+      },
+      {
+        "id": 26367525589,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-24T17:08:44Z",
+        "updated_at": "2026-05-24T17:09:03Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26367525589"
+      },
+      {
+        "id": 26367124470,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-24T16:50:54Z",
+        "updated_at": "2026-05-24T16:51:10Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/26367124470"
+      },
+      {
+        "id": 25814445179,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-13T17:09:27Z",
+        "updated_at": "2026-05-13T17:09:53Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/25814445179"
+      },
+      {
+        "id": 25814379075,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-13T17:08:07Z",
+        "updated_at": "2026-05-13T17:08:29Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/25814379075"
+      },
+      {
+        "id": 25813933284,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "failure",
+        "run_started_at": "2026-05-13T16:59:36Z",
+        "updated_at": "2026-05-13T16:59:59Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/25813933284"
+      },
+      {
+        "id": 25813927184,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-13T16:59:30Z",
+        "updated_at": "2026-05-13T16:59:56Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/25813927184"
+      },
+      {
+        "id": 25813923429,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-13T16:59:25Z",
+        "updated_at": "2026-05-13T16:59:51Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/25813923429"
+      },
+      {
+        "id": 25406808549,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-05T22:55:59Z",
+        "updated_at": "2026-05-05T22:56:27Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/25406808549"
+      },
+      {
+        "id": 25329323206,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-05-04T16:04:11Z",
+        "updated_at": "2026-05-04T16:04:37Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/25329323206"
+      }
+    ],
+    "2026-06": [],
+    "2026-07": [
+      {
+        "id": 28622059355,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-02T21:15:29Z",
+        "updated_at": "2026-07-02T21:15:51Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/28622059355"
+      },
+      {
+        "id": 28621184794,
+        "name": "CI",
+        "workflow_id": 239255026,
+        "branch": "main",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "run_started_at": "2026-07-02T20:59:08Z",
+        "updated_at": "2026-07-02T20:59:30Z",
+        "html_url": "https://github.com/open-gitagent/opengap/actions/runs/28621184794"
+      }
+    ],
+    "2026-08": [],
+    "2026-09": []
+  }
+}

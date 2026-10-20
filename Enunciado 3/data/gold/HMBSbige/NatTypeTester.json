@@ -1006,110 +1006,38 @@
       "ignored_reason": null
     },
     {
-      "release": "10.0.3",
-      "previous_release": "10.0.2",
+      "release": "2.1",
+      "previous_release": "2.0",
       "commits": [
         {
-          "sha": "9b90f478c7ee7ba0609d06a5c60e3fb4138a7013",
-          "author_date": "2026-03-03T02:20:13Z",
-          "message": "chore: optimize CI workflow and update TUnit to 1.18.9",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/9b90f478c7ee7ba0609d06a5c60e3fb4138a7013"
+          "sha": "ddcbb1d68bd8d5896b7acc25f03813ed2b31d3df",
+          "author_date": "2019-10-07T15:51:32Z",
+          "message": "Add console version",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/ddcbb1d68bd8d5896b7acc25f03813ed2b31d3df"
         },
         {
-          "sha": "f7ae4795f8a2ab4ec4c50c791e8330e550ff495b",
-          "author_date": "2026-03-03T09:05:44Z",
-          "message": "refactor: decouple services from UI layer and improve architecture\n\nMove service interfaces (INotificationService, ILauncherService) to Application.Contracts\nand AppNotificationType to Domain.Shared. Replace Process.Start with ILauncherService\nusing Avalonia's TopLevel.Launcher. Make NotificationService self-contained by managing\nits own WindowNotificationManager. Add ObservableExtensions (CatchDefault, WhenActivatedAsync)\nto reduce boilerplate. Remove Nito.AsyncEx dependency in favor of reactive activation.",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/f7ae4795f8a2ab4ec4c50c791e8330e550ff495b"
+          "sha": "2cb36c49e0f63e2d64d6341ad828c19d29a07950",
+          "author_date": "2019-10-09T03:15:18Z",
+          "message": "Fix typo",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/2cb36c49e0f63e2d64d6341ad828c19d29a07950"
         },
         {
-          "sha": "f29134f712ded4e7b4166f5f48f7999373e322cb",
-          "author_date": "2026-03-03T09:11:06Z",
-          "message": "chore(deps): bump ABP packages to 10.1.1\n\nUpdate centralized ABP package versions to 10.1.1 to keep dependencies aligned and pick up latest patch fixes.",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/f29134f712ded4e7b4166f5f48f7999373e322cb"
+          "sha": "dfbc1ae47fe69a4fc52b81f28b00f69f040011e0",
+          "author_date": "2019-10-09T03:19:05Z",
+          "message": "Update README.md",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/dfbc1ae47fe69a4fc52b81f28b00f69f040011e0"
         },
         {
-          "sha": "a053ac9b52441fde58c130666aa0d8d968079308",
-          "author_date": "2026-03-03T09:43:23Z",
-          "message": "Fix config directory launch and move exception handler initialization",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/a053ac9b52441fde58c130666aa0d8d968079308"
+          "sha": "644505cb6cd268790b3be2d66196a8aaf9685997",
+          "author_date": "2019-11-18T12:52:59Z",
+          "message": "Remove submod",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/644505cb6cd268790b3be2d66196a8aaf9685997"
         },
         {
-          "sha": "f548dc733a031478efe89bf4cc8a46730ce748fb",
-          "author_date": "2026-03-03T09:48:48Z",
-          "message": "fix: format",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/f548dc733a031478efe89bf4cc8a46730ce748fb"
-        },
-        {
-          "sha": "10b4d653325b8856b84eaaae76642617ea745731",
-          "author_date": "2026-03-03T19:57:57Z",
-          "message": "chore(deps): update dependency fluenticons.avalonia to 2.0.320",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/10b4d653325b8856b84eaaae76642617ea745731"
-        },
-        {
-          "sha": "5aa4b4160f5ae8db3551d871cd493f3e1f252d5e",
-          "author_date": "2026-03-03T21:31:32Z",
-          "message": "feat: Add Android entry layer and update CI (#310)\n\nCo-authored-by: HMBSbige <19153265+HMBSbige@users.noreply.github.com>\nCo-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>\nCo-authored-by: Bruce Wayne <admin@bige0.com>",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/5aa4b4160f5ae8db3551d871cd493f3e1f252d5e"
-        },
-        {
-          "sha": "00c04dab9614ea4ba6f9447c0a3a868347a3e653",
-          "author_date": "2026-03-04T03:43:54Z",
-          "message": "ci: add Android APK signing and improve CI job names",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/00c04dab9614ea4ba6f9447c0a3a868347a3e653"
-        },
-        {
-          "sha": "4cbe493fb16817f9ab1523e2d82567c8dcbc8821",
-          "author_date": "2026-03-04T03:50:31Z",
-          "message": "fix: ci",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/4cbe493fb16817f9ab1523e2d82567c8dcbc8821"
-        },
-        {
-          "sha": "4358622202555dd67aa9435eff9c87e460ca90ff",
-          "author_date": "2026-03-04T03:56:13Z",
-          "message": "fix: ci",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/4358622202555dd67aa9435eff9c87e460ca90ff"
-        },
-        {
-          "sha": "84e57923ae4a68c746d3588089834f840e833e30",
-          "author_date": "2026-03-04T04:18:58Z",
-          "message": "fix: ci",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/84e57923ae4a68c746d3588089834f840e833e30"
-        },
-        {
-          "sha": "d8ebd956a24e6b8abe5daa975211884658bc5f6f",
-          "author_date": "2026-03-04T04:36:40Z",
-          "message": "fix: ci",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/d8ebd956a24e6b8abe5daa975211884658bc5f6f"
-        },
-        {
-          "sha": "7843c771ab30e4dd0c5cb761b8bc437b540737c0",
-          "author_date": "2026-03-04T04:45:22Z",
-          "message": "fix: ci",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/7843c771ab30e4dd0c5cb761b8bc437b540737c0"
-        },
-        {
-          "sha": "f12018d8abb07d0b1f05570af8987228597a3285",
-          "author_date": "2026-03-04T05:10:08Z",
-          "message": "fix: ci",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/f12018d8abb07d0b1f05570af8987228597a3285"
-        },
-        {
-          "sha": "92668a5be1b0d198b45e63f24a17a96cef936c55",
-          "author_date": "2026-03-04T05:10:42Z",
-          "message": "chore(deps): update dependency tunit to 1.18.21",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/92668a5be1b0d198b45e63f24a17a96cef936c55"
-        },
-        {
-          "sha": "b43515fba2b6b57c9f19db41efdddb41c05867b5",
-          "author_date": "2026-03-04T10:01:33Z",
-          "message": "feat(views): refactor UI and add STUN server card",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/b43515fba2b6b57c9f19db41efdddb41c05867b5"
-        },
-        {
-          "sha": "6fb4c858b642a93428325a66c75423250ce4d0da",
-          "author_date": "2026-03-04T10:11:02Z",
-          "message": "chore: update ci",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/6fb4c858b642a93428325a66c75423250ce4d0da"
+          "sha": "c3aeef3ba210744085f0d401a962eb4d80e26838",
+          "author_date": "2019-11-18T12:57:00Z",
+          "message": "Bump version number to 2.1",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/c3aeef3ba210744085f0d401a962eb4d80e26838"
         }
       ],
       "ignored_reason": null
@@ -1249,50 +1177,32 @@
       "ignored_reason": null
     },
     {
-      "release": "10.0.6",
-      "previous_release": "10.0.5",
+      "release": "3.1",
+      "previous_release": "3.0",
       "commits": [
         {
-          "sha": "a4028fcfdda2a3acfdc1810f6c24ff5f937999bc",
-          "author_date": "2026-03-12T09:45:34Z",
-          "message": "chore(deps): update dependency reactiveui.avalonia.autofac to 11.4.12",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/a4028fcfdda2a3acfdc1810f6c24ff5f937999bc"
+          "sha": "eced950c906ef3bdcf500e06cb6d0e9d7e7c8cf8",
+          "author_date": "2020-08-12T16:20:59Z",
+          "message": "Update logic",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/eced950c906ef3bdcf500e06cb6d0e9d7e7c8cf8"
         },
         {
-          "sha": "71409bb2ce357d7c2b1d893a78865380acf15201",
-          "author_date": "2026-03-12T17:55:36Z",
-          "message": "chore(deps): update dotnet monorepo",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/71409bb2ce357d7c2b1d893a78865380acf15201"
+          "sha": "7f84e8f2b538d2262a3b106cc47daab38fe79be7",
+          "author_date": "2020-08-12T16:57:19Z",
+          "message": "Fix IPv6",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/7f84e8f2b538d2262a3b106cc47daab38fe79be7"
         },
         {
-          "sha": "2da3e6db6c7d2d5d206ed21fb5ffa023cd6a6855",
-          "author_date": "2026-03-13T10:10:09Z",
-          "message": "refactor(stun): extract NAT discovery logic into pure state machines\n\nSeparate protocol state machines from I/O in STUN clients, enabling\nindependent unit testing of NAT type and behavior discovery logic.",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/2da3e6db6c7d2d5d206ed21fb5ffa023cd6a6855"
+          "sha": "ccc579f60b046ab153e0725aa97d575a6bed0a00",
+          "author_date": "2020-08-13T10:49:17Z",
+          "message": "Better",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/ccc579f60b046ab153e0725aa97d575a6bed0a00"
         },
         {
-          "sha": "667ad15151e0c5b5bf7fa496cde9881ab512bf0c",
-          "author_date": "2026-03-13T14:58:59Z",
-          "message": "feat(rfc5780): add individual test execution and cancel support",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/667ad15151e0c5b5bf7fa496cde9881ab512bf0c"
-        },
-        {
-          "sha": "5303ae962a0c60ad8bc18d5634d64cf512360503",
-          "author_date": "2026-03-13T15:22:42Z",
-          "message": "docs(stun): add XML documentation comments to all public members\n\nRemove NoWarn CS1591 suppression and add XML doc comments to all public\ntypes and members across 42 files. Replace per-project XML file\nexclusion targets with PublishReferencesDocumentationFiles property in\nDirectory.Build.props.",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/5303ae962a0c60ad8bc18d5634d64cf512360503"
-        },
-        {
-          "sha": "cd330aed5cd450063e1f6ae677a1eb12ef9f5127",
-          "author_date": "2026-03-13T15:38:30Z",
-          "message": "refactor(slnx): organize projects into subfolders and normalize paths\n\nCategorize entry points (Android/Console/Desktop) into /src/EntryPoints/,\nSTUN into /src/Libraries/, and normalize all paths to forward slashes.",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/cd330aed5cd450063e1f6ae677a1eb12ef9f5127"
-        },
-        {
-          "sha": "d8aac9d323b5f70dff60a842d94e7e0d0098e0e5",
-          "author_date": "2026-03-13T15:42:50Z",
-          "message": "chore: update NuGet dependencies",
-          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/d8aac9d323b5f70dff60a842d94e7e0d0098e0e5"
+          "sha": "81c8818fb4e4fb4205ac59f789e9763def3f7623",
+          "author_date": "2020-08-13T12:48:16Z",
+          "message": "Bump version number to 3.1",
+          "html_url": "https://github.com/HMBSbige/NatTypeTester/commit/81c8818fb4e4fb4205ac59f789e9763def3f7623"
         }
       ],
       "ignored_reason": null
