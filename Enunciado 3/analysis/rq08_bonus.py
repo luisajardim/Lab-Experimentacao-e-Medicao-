@@ -91,7 +91,11 @@ def load_heuristic_pattern(cfr_metrics_path: Path) -> tuple[re.Pattern[str], str
             best = meta.get("best", {})
             kw_list = best.get("keyword_list") or list(DEFAULT_KEYWORDS)
             match_mode = best.get("match") == "palavra"
-            return keyword_pattern(kw_list, whole_word=match_mode), str(best.get("name", "v2"))
+            name = str(best.get("name", "v2"))
+            if "f1" in best:
+                status = "atinge" if meta.get("meets_target") else "NÃO atinge"
+                name += f"; F1 = {best['f1']:.3f}, {status} a meta de {meta.get('target_f1', 0.7):.2f}"
+            return keyword_pattern(kw_list, whole_word=match_mode), name
         except Exception:
             pass
     return keyword_pattern(DEFAULT_KEYWORDS, whole_word=True), "v2 kw=base match=palavra"
@@ -314,7 +318,8 @@ def markdown(
         "",
         f"Amostra analisada: **{n_repos} repositórios** no período de observação "
         f"({WINDOW_START} a {WINDOW_END}).",
-        f"Heurística de release corretiva: **{heur_name}** (calibrada e validada contra consenso com F1 ≥ 0,70).",
+        f"Heurística de release corretiva: regra v2 (patch-only OU palavra-chave) com as palavras-chave "
+        f"da calibração contra o consenso (**{heur_name}**).",
         "",
         "---",
         "",

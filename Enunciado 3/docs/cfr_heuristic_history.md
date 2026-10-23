@@ -58,224 +58,224 @@ F1 = 0,633. A análise dos erros contra o consenso mostrou dois problemas:
 A seção abaixo é reescrita por `python scripts/tune_cfr.py`.
 
 <!-- tuning:start -->
-## Execução de 2026-10-20T16:50:23+00:00
+## Execução de 2026-10-23T00:40:30+00:00
 
 Gerado por `scripts/tune_cfr.py`; o texto entre os marcadores é reescrito a cada execução.
 
-- Itens (releases com consenso): 300 (146 corretivas)
+- Itens (releases com consenso): 300 (104 corretivas)
 - Com commits coletados: 188; com release anterior: 294
 - Palavras-chave: `base` = fix, revert, hotfix; `ampliado` = fix, revert, hotfix, bug, patch, regression, crash
-- **Melhor: v2 kw=base match=palavra** — precisão 0.730, recall 1.000, F1 0.844 (atinge a meta de 0.70)
-- F1 fora da amostra (5-fold por repositório, 20 repetições): média 0.837 (mín. 0.801, máx. 0.844)
+- **Melhor: v4 kw=base match=palavra feat=-0 corte=0.75** — precisão 0.437, recall 0.837, F1 0.574 (NÃO atinge a meta de 0.70)
+- F1 fora da amostra (5-fold por repositório, 20 repetições): média 0.528 (mín. 0.500, máx. 0.556)
 
 ### Melhor combinação de cada versão
 
 | Versão | Combinação | F1 |
 |---|---|---:|
-| v1 | v1 | 0.644 |
-| v2 | v2 kw=base match=palavra | 0.844 |
-| v3 | v3 kw=ampliado match=palavra corte=0.25 | 0.831 |
-| v4 | v4 kw=ampliado match=substring feat=-0 corte=1.25 | 0.798 |
+| v1 | v1 | 0.530 |
+| v2 | v2 kw=base match=palavra | 0.539 |
+| v3 | v3 kw=base match=palavra corte=0.75 | 0.561 |
+| v4 | v4 kw=base match=palavra feat=-0 corte=0.75 | 0.574 |
 
 ### Todas as combinações
 
 | Combinação | Precisão | Recall | F1 | TP | FP | FN | TN |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| v1 | 0.638 | 0.651 | 0.644 | 95 | 54 | 51 | 100 |
-| v2 kw=base match=substring | 0.723 | 1.000 | 0.839 | 146 | 56 | 0 | 98 |
-| v2 kw=base match=palavra | 0.730 | 1.000 | 0.844 | 146 | 54 | 0 | 100 |
-| v2 kw=ampliado match=substring | 0.719 | 1.000 | 0.837 | 146 | 57 | 0 | 97 |
-| v2 kw=ampliado match=palavra | 0.723 | 1.000 | 0.839 | 146 | 56 | 0 | 98 |
-| v3 kw=base match=substring corte=0.25 | 0.721 | 0.973 | 0.828 | 142 | 55 | 4 | 99 |
-| v3 kw=base match=substring corte=0.50 | 0.703 | 0.877 | 0.780 | 128 | 54 | 18 | 100 |
-| v3 kw=base match=substring corte=0.75 | 0.679 | 0.781 | 0.726 | 114 | 54 | 32 | 100 |
-| v3 kw=base match=substring corte=1.00 | 0.660 | 0.719 | 0.689 | 105 | 54 | 41 | 100 |
-| v3 kw=base match=substring corte=1.25 | 1.000 | 0.582 | 0.736 | 85 | 0 | 61 | 154 |
-| v3 kw=base match=substring corte=1.50 | 1.000 | 0.514 | 0.679 | 75 | 0 | 71 | 154 |
-| v3 kw=base match=substring corte=1.75 | 1.000 | 0.363 | 0.533 | 53 | 0 | 93 | 154 |
-| v3 kw=base match=substring corte=2.00 | 1.000 | 0.260 | 0.413 | 38 | 0 | 108 | 154 |
-| v3 kw=base match=substring corte=2.25 | 1.000 | 0.158 | 0.272 | 23 | 0 | 123 | 154 |
-| v3 kw=base match=substring corte=2.50 | 1.000 | 0.144 | 0.251 | 21 | 0 | 125 | 154 |
-| v3 kw=base match=substring corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v3 kw=base match=substring corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v3 kw=base match=palavra corte=0.25 | 0.724 | 0.973 | 0.830 | 142 | 54 | 4 | 100 |
-| v3 kw=base match=palavra corte=0.50 | 0.703 | 0.877 | 0.780 | 128 | 54 | 18 | 100 |
-| v3 kw=base match=palavra corte=0.75 | 0.677 | 0.774 | 0.722 | 113 | 54 | 33 | 100 |
-| v3 kw=base match=palavra corte=1.00 | 0.656 | 0.705 | 0.680 | 103 | 54 | 43 | 100 |
-| v3 kw=base match=palavra corte=1.25 | 1.000 | 0.575 | 0.730 | 84 | 0 | 62 | 154 |
-| v3 kw=base match=palavra corte=1.50 | 1.000 | 0.507 | 0.673 | 74 | 0 | 72 | 154 |
-| v3 kw=base match=palavra corte=1.75 | 1.000 | 0.349 | 0.518 | 51 | 0 | 95 | 154 |
-| v3 kw=base match=palavra corte=2.00 | 1.000 | 0.247 | 0.396 | 36 | 0 | 110 | 154 |
-| v3 kw=base match=palavra corte=2.25 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v3 kw=base match=palavra corte=2.50 | 1.000 | 0.137 | 0.241 | 20 | 0 | 126 | 154 |
-| v3 kw=base match=palavra corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v3 kw=base match=palavra corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v3 kw=ampliado match=substring corte=0.25 | 0.719 | 0.979 | 0.829 | 143 | 56 | 3 | 98 |
-| v3 kw=ampliado match=substring corte=0.50 | 0.704 | 0.897 | 0.789 | 131 | 55 | 15 | 99 |
-| v3 kw=ampliado match=substring corte=0.75 | 0.680 | 0.788 | 0.730 | 115 | 54 | 31 | 100 |
-| v3 kw=ampliado match=substring corte=1.00 | 0.665 | 0.733 | 0.697 | 107 | 54 | 39 | 100 |
-| v3 kw=ampliado match=substring corte=1.25 | 1.000 | 0.603 | 0.752 | 88 | 0 | 58 | 154 |
-| v3 kw=ampliado match=substring corte=1.50 | 1.000 | 0.534 | 0.696 | 78 | 0 | 68 | 154 |
-| v3 kw=ampliado match=substring corte=1.75 | 1.000 | 0.384 | 0.554 | 56 | 0 | 90 | 154 |
-| v3 kw=ampliado match=substring corte=2.00 | 1.000 | 0.288 | 0.447 | 42 | 0 | 104 | 154 |
-| v3 kw=ampliado match=substring corte=2.25 | 1.000 | 0.164 | 0.282 | 24 | 0 | 122 | 154 |
-| v3 kw=ampliado match=substring corte=2.50 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v3 kw=ampliado match=substring corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v3 kw=ampliado match=substring corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v3 kw=ampliado match=palavra corte=0.25 | 0.722 | 0.979 | 0.831 | 143 | 55 | 3 | 99 |
-| v3 kw=ampliado match=palavra corte=0.50 | 0.707 | 0.890 | 0.788 | 130 | 54 | 16 | 100 |
-| v3 kw=ampliado match=palavra corte=0.75 | 0.680 | 0.788 | 0.730 | 115 | 54 | 31 | 100 |
-| v3 kw=ampliado match=palavra corte=1.00 | 0.662 | 0.726 | 0.693 | 106 | 54 | 40 | 100 |
-| v3 kw=ampliado match=palavra corte=1.25 | 1.000 | 0.596 | 0.747 | 87 | 0 | 59 | 154 |
-| v3 kw=ampliado match=palavra corte=1.50 | 1.000 | 0.527 | 0.691 | 77 | 0 | 69 | 154 |
-| v3 kw=ampliado match=palavra corte=1.75 | 1.000 | 0.377 | 0.547 | 55 | 0 | 91 | 154 |
-| v3 kw=ampliado match=palavra corte=2.00 | 1.000 | 0.267 | 0.422 | 39 | 0 | 107 | 154 |
-| v3 kw=ampliado match=palavra corte=2.25 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v3 kw=ampliado match=palavra corte=2.50 | 1.000 | 0.144 | 0.251 | 21 | 0 | 125 | 154 |
-| v3 kw=ampliado match=palavra corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v3 kw=ampliado match=palavra corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=base match=substring feat=-0 corte=0.25 | 0.637 | 0.973 | 0.770 | 142 | 81 | 4 | 73 |
-| v4 kw=base match=substring feat=-0 corte=0.50 | 0.617 | 0.884 | 0.727 | 129 | 80 | 17 | 74 |
-| v4 kw=base match=substring feat=-0 corte=0.75 | 0.600 | 0.822 | 0.694 | 120 | 80 | 26 | 74 |
-| v4 kw=base match=substring feat=-0 corte=1.00 | 0.588 | 0.781 | 0.671 | 114 | 80 | 32 | 74 |
-| v4 kw=base match=substring feat=-0 corte=1.25 | 1.000 | 0.651 | 0.788 | 95 | 0 | 51 | 154 |
-| v4 kw=base match=substring feat=-0 corte=1.50 | 1.000 | 0.575 | 0.730 | 84 | 0 | 62 | 154 |
-| v4 kw=base match=substring feat=-0 corte=1.75 | 1.000 | 0.390 | 0.562 | 57 | 0 | 89 | 154 |
-| v4 kw=base match=substring feat=-0 corte=2.00 | 1.000 | 0.267 | 0.422 | 39 | 0 | 107 | 154 |
-| v4 kw=base match=substring feat=-0 corte=2.25 | 1.000 | 0.158 | 0.272 | 23 | 0 | 123 | 154 |
-| v4 kw=base match=substring feat=-0 corte=2.50 | 1.000 | 0.144 | 0.251 | 21 | 0 | 125 | 154 |
-| v4 kw=base match=substring feat=-0 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=base match=substring feat=-0 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=base match=substring feat=-1 corte=0.25 | 0.621 | 0.863 | 0.722 | 126 | 77 | 20 | 77 |
-| v4 kw=base match=substring feat=-1 corte=0.50 | 0.606 | 0.801 | 0.690 | 117 | 76 | 29 | 78 |
-| v4 kw=base match=substring feat=-1 corte=0.75 | 0.563 | 0.671 | 0.613 | 98 | 76 | 48 | 78 |
-| v4 kw=base match=substring feat=-1 corte=1.00 | 0.537 | 0.603 | 0.568 | 88 | 76 | 58 | 78 |
-| v4 kw=base match=substring feat=-1 corte=1.25 | 1.000 | 0.479 | 0.648 | 70 | 0 | 76 | 154 |
-| v4 kw=base match=substring feat=-1 corte=1.50 | 1.000 | 0.418 | 0.589 | 61 | 0 | 85 | 154 |
-| v4 kw=base match=substring feat=-1 corte=1.75 | 1.000 | 0.308 | 0.471 | 45 | 0 | 101 | 154 |
-| v4 kw=base match=substring feat=-1 corte=2.00 | 1.000 | 0.240 | 0.387 | 35 | 0 | 111 | 154 |
-| v4 kw=base match=substring feat=-1 corte=2.25 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v4 kw=base match=substring feat=-1 corte=2.50 | 1.000 | 0.144 | 0.251 | 21 | 0 | 125 | 154 |
-| v4 kw=base match=substring feat=-1 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=base match=substring feat=-1 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=base match=substring feat=-2 corte=0.25 | 0.567 | 0.692 | 0.623 | 101 | 77 | 45 | 77 |
-| v4 kw=base match=substring feat=-2 corte=0.50 | 0.553 | 0.644 | 0.595 | 94 | 76 | 52 | 78 |
-| v4 kw=base match=substring feat=-2 corte=0.75 | 0.531 | 0.589 | 0.558 | 86 | 76 | 60 | 78 |
-| v4 kw=base match=substring feat=-2 corte=1.00 | 0.525 | 0.575 | 0.549 | 84 | 76 | 62 | 78 |
-| v4 kw=base match=substring feat=-2 corte=1.25 | 1.000 | 0.473 | 0.642 | 69 | 0 | 77 | 154 |
-| v4 kw=base match=substring feat=-2 corte=1.50 | 1.000 | 0.418 | 0.589 | 61 | 0 | 85 | 154 |
-| v4 kw=base match=substring feat=-2 corte=1.75 | 1.000 | 0.308 | 0.471 | 45 | 0 | 101 | 154 |
-| v4 kw=base match=substring feat=-2 corte=2.00 | 1.000 | 0.240 | 0.387 | 35 | 0 | 111 | 154 |
-| v4 kw=base match=substring feat=-2 corte=2.25 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v4 kw=base match=substring feat=-2 corte=2.50 | 1.000 | 0.144 | 0.251 | 21 | 0 | 125 | 154 |
-| v4 kw=base match=substring feat=-2 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=base match=substring feat=-2 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=base match=palavra feat=-0 corte=0.25 | 0.640 | 0.973 | 0.772 | 142 | 80 | 4 | 74 |
-| v4 kw=base match=palavra feat=-0 corte=0.50 | 0.617 | 0.884 | 0.727 | 129 | 80 | 17 | 74 |
-| v4 kw=base match=palavra feat=-0 corte=0.75 | 0.598 | 0.815 | 0.690 | 119 | 80 | 27 | 74 |
-| v4 kw=base match=palavra feat=-0 corte=1.00 | 0.583 | 0.767 | 0.663 | 112 | 80 | 34 | 74 |
-| v4 kw=base match=palavra feat=-0 corte=1.25 | 1.000 | 0.644 | 0.783 | 94 | 0 | 52 | 154 |
-| v4 kw=base match=palavra feat=-0 corte=1.50 | 1.000 | 0.568 | 0.725 | 83 | 0 | 63 | 154 |
-| v4 kw=base match=palavra feat=-0 corte=1.75 | 1.000 | 0.377 | 0.547 | 55 | 0 | 91 | 154 |
-| v4 kw=base match=palavra feat=-0 corte=2.00 | 1.000 | 0.253 | 0.404 | 37 | 0 | 109 | 154 |
-| v4 kw=base match=palavra feat=-0 corte=2.25 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v4 kw=base match=palavra feat=-0 corte=2.50 | 1.000 | 0.137 | 0.241 | 20 | 0 | 126 | 154 |
-| v4 kw=base match=palavra feat=-0 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=base match=palavra feat=-0 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=base match=palavra feat=-1 corte=0.25 | 0.622 | 0.856 | 0.720 | 125 | 76 | 21 | 78 |
-| v4 kw=base match=palavra feat=-1 corte=0.50 | 0.606 | 0.801 | 0.690 | 117 | 76 | 29 | 78 |
-| v4 kw=base match=palavra feat=-1 corte=0.75 | 0.561 | 0.664 | 0.608 | 97 | 76 | 49 | 78 |
-| v4 kw=base match=palavra feat=-1 corte=1.00 | 0.534 | 0.596 | 0.563 | 87 | 76 | 59 | 78 |
-| v4 kw=base match=palavra feat=-1 corte=1.25 | 1.000 | 0.479 | 0.648 | 70 | 0 | 76 | 154 |
-| v4 kw=base match=palavra feat=-1 corte=1.50 | 1.000 | 0.411 | 0.583 | 60 | 0 | 86 | 154 |
-| v4 kw=base match=palavra feat=-1 corte=1.75 | 1.000 | 0.295 | 0.455 | 43 | 0 | 103 | 154 |
-| v4 kw=base match=palavra feat=-1 corte=2.00 | 1.000 | 0.226 | 0.369 | 33 | 0 | 113 | 154 |
-| v4 kw=base match=palavra feat=-1 corte=2.25 | 1.000 | 0.144 | 0.251 | 21 | 0 | 125 | 154 |
-| v4 kw=base match=palavra feat=-1 corte=2.50 | 1.000 | 0.137 | 0.241 | 20 | 0 | 126 | 154 |
-| v4 kw=base match=palavra feat=-1 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=base match=palavra feat=-1 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=base match=palavra feat=-2 corte=0.25 | 0.571 | 0.692 | 0.625 | 101 | 76 | 45 | 78 |
-| v4 kw=base match=palavra feat=-2 corte=0.50 | 0.553 | 0.644 | 0.595 | 94 | 76 | 52 | 78 |
-| v4 kw=base match=palavra feat=-2 corte=0.75 | 0.528 | 0.582 | 0.554 | 85 | 76 | 61 | 78 |
-| v4 kw=base match=palavra feat=-2 corte=1.00 | 0.522 | 0.568 | 0.544 | 83 | 76 | 63 | 78 |
-| v4 kw=base match=palavra feat=-2 corte=1.25 | 1.000 | 0.473 | 0.642 | 69 | 0 | 77 | 154 |
-| v4 kw=base match=palavra feat=-2 corte=1.50 | 1.000 | 0.411 | 0.583 | 60 | 0 | 86 | 154 |
-| v4 kw=base match=palavra feat=-2 corte=1.75 | 1.000 | 0.295 | 0.455 | 43 | 0 | 103 | 154 |
-| v4 kw=base match=palavra feat=-2 corte=2.00 | 1.000 | 0.226 | 0.369 | 33 | 0 | 113 | 154 |
-| v4 kw=base match=palavra feat=-2 corte=2.25 | 1.000 | 0.144 | 0.251 | 21 | 0 | 125 | 154 |
-| v4 kw=base match=palavra feat=-2 corte=2.50 | 1.000 | 0.137 | 0.241 | 20 | 0 | 126 | 154 |
-| v4 kw=base match=palavra feat=-2 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=base match=palavra feat=-2 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=ampliado match=substring feat=-0 corte=0.25 | 0.636 | 0.979 | 0.771 | 143 | 82 | 3 | 72 |
-| v4 kw=ampliado match=substring feat=-0 corte=0.50 | 0.620 | 0.904 | 0.735 | 132 | 81 | 14 | 73 |
-| v4 kw=ampliado match=substring feat=-0 corte=0.75 | 0.602 | 0.829 | 0.697 | 121 | 80 | 25 | 74 |
-| v4 kw=ampliado match=substring feat=-0 corte=1.00 | 0.588 | 0.781 | 0.671 | 114 | 80 | 32 | 74 |
-| v4 kw=ampliado match=substring feat=-0 corte=1.25 | 1.000 | 0.664 | 0.798 | 97 | 0 | 49 | 154 |
-| v4 kw=ampliado match=substring feat=-0 corte=1.50 | 1.000 | 0.589 | 0.741 | 86 | 0 | 60 | 154 |
-| v4 kw=ampliado match=substring feat=-0 corte=1.75 | 1.000 | 0.411 | 0.583 | 60 | 0 | 86 | 154 |
-| v4 kw=ampliado match=substring feat=-0 corte=2.00 | 1.000 | 0.308 | 0.471 | 45 | 0 | 101 | 154 |
-| v4 kw=ampliado match=substring feat=-0 corte=2.25 | 1.000 | 0.171 | 0.292 | 25 | 0 | 121 | 154 |
-| v4 kw=ampliado match=substring feat=-0 corte=2.50 | 1.000 | 0.158 | 0.272 | 23 | 0 | 123 | 154 |
-| v4 kw=ampliado match=substring feat=-0 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=ampliado match=substring feat=-0 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=ampliado match=substring feat=-1 corte=0.25 | 0.623 | 0.870 | 0.726 | 127 | 77 | 19 | 77 |
-| v4 kw=ampliado match=substring feat=-1 corte=0.50 | 0.606 | 0.801 | 0.690 | 117 | 76 | 29 | 78 |
-| v4 kw=ampliado match=substring feat=-1 corte=0.75 | 0.566 | 0.678 | 0.617 | 99 | 76 | 47 | 78 |
-| v4 kw=ampliado match=substring feat=-1 corte=1.00 | 0.539 | 0.610 | 0.572 | 89 | 76 | 57 | 78 |
-| v4 kw=ampliado match=substring feat=-1 corte=1.25 | 1.000 | 0.486 | 0.654 | 71 | 0 | 75 | 154 |
-| v4 kw=ampliado match=substring feat=-1 corte=1.50 | 1.000 | 0.432 | 0.603 | 63 | 0 | 83 | 154 |
-| v4 kw=ampliado match=substring feat=-1 corte=1.75 | 1.000 | 0.322 | 0.487 | 47 | 0 | 99 | 154 |
-| v4 kw=ampliado match=substring feat=-1 corte=2.00 | 1.000 | 0.274 | 0.430 | 40 | 0 | 106 | 154 |
-| v4 kw=ampliado match=substring feat=-1 corte=2.25 | 1.000 | 0.164 | 0.282 | 24 | 0 | 122 | 154 |
-| v4 kw=ampliado match=substring feat=-1 corte=2.50 | 1.000 | 0.158 | 0.272 | 23 | 0 | 123 | 154 |
-| v4 kw=ampliado match=substring feat=-1 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=ampliado match=substring feat=-1 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=ampliado match=substring feat=-2 corte=0.25 | 0.567 | 0.692 | 0.623 | 101 | 77 | 45 | 77 |
-| v4 kw=ampliado match=substring feat=-2 corte=0.50 | 0.553 | 0.644 | 0.595 | 94 | 76 | 52 | 78 |
-| v4 kw=ampliado match=substring feat=-2 corte=0.75 | 0.531 | 0.589 | 0.558 | 86 | 76 | 60 | 78 |
-| v4 kw=ampliado match=substring feat=-2 corte=1.00 | 0.525 | 0.575 | 0.549 | 84 | 76 | 62 | 78 |
-| v4 kw=ampliado match=substring feat=-2 corte=1.25 | 1.000 | 0.479 | 0.648 | 70 | 0 | 76 | 154 |
-| v4 kw=ampliado match=substring feat=-2 corte=1.50 | 1.000 | 0.432 | 0.603 | 63 | 0 | 83 | 154 |
-| v4 kw=ampliado match=substring feat=-2 corte=1.75 | 1.000 | 0.322 | 0.487 | 47 | 0 | 99 | 154 |
-| v4 kw=ampliado match=substring feat=-2 corte=2.00 | 1.000 | 0.274 | 0.430 | 40 | 0 | 106 | 154 |
-| v4 kw=ampliado match=substring feat=-2 corte=2.25 | 1.000 | 0.164 | 0.282 | 24 | 0 | 122 | 154 |
-| v4 kw=ampliado match=substring feat=-2 corte=2.50 | 1.000 | 0.158 | 0.272 | 23 | 0 | 123 | 154 |
-| v4 kw=ampliado match=substring feat=-2 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=ampliado match=substring feat=-2 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=ampliado match=palavra feat=-0 corte=0.25 | 0.638 | 0.979 | 0.773 | 143 | 81 | 3 | 73 |
-| v4 kw=ampliado match=palavra feat=-0 corte=0.50 | 0.621 | 0.897 | 0.734 | 131 | 80 | 15 | 74 |
-| v4 kw=ampliado match=palavra feat=-0 corte=0.75 | 0.602 | 0.829 | 0.697 | 121 | 80 | 25 | 74 |
-| v4 kw=ampliado match=palavra feat=-0 corte=1.00 | 0.585 | 0.774 | 0.667 | 113 | 80 | 33 | 74 |
-| v4 kw=ampliado match=palavra feat=-0 corte=1.25 | 1.000 | 0.658 | 0.793 | 96 | 0 | 50 | 154 |
-| v4 kw=ampliado match=palavra feat=-0 corte=1.50 | 1.000 | 0.582 | 0.736 | 85 | 0 | 61 | 154 |
-| v4 kw=ampliado match=palavra feat=-0 corte=1.75 | 1.000 | 0.404 | 0.576 | 59 | 0 | 87 | 154 |
-| v4 kw=ampliado match=palavra feat=-0 corte=2.00 | 1.000 | 0.288 | 0.447 | 42 | 0 | 104 | 154 |
-| v4 kw=ampliado match=palavra feat=-0 corte=2.25 | 1.000 | 0.158 | 0.272 | 23 | 0 | 123 | 154 |
-| v4 kw=ampliado match=palavra feat=-0 corte=2.50 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v4 kw=ampliado match=palavra feat=-0 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=ampliado match=palavra feat=-0 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=ampliado match=palavra feat=-1 corte=0.25 | 0.621 | 0.863 | 0.722 | 126 | 77 | 20 | 77 |
-| v4 kw=ampliado match=palavra feat=-1 corte=0.50 | 0.606 | 0.801 | 0.690 | 117 | 76 | 29 | 78 |
-| v4 kw=ampliado match=palavra feat=-1 corte=0.75 | 0.566 | 0.678 | 0.617 | 99 | 76 | 47 | 78 |
-| v4 kw=ampliado match=palavra feat=-1 corte=1.00 | 0.539 | 0.610 | 0.572 | 89 | 76 | 57 | 78 |
-| v4 kw=ampliado match=palavra feat=-1 corte=1.25 | 1.000 | 0.486 | 0.654 | 71 | 0 | 75 | 154 |
-| v4 kw=ampliado match=palavra feat=-1 corte=1.50 | 1.000 | 0.425 | 0.596 | 62 | 0 | 84 | 154 |
-| v4 kw=ampliado match=palavra feat=-1 corte=1.75 | 1.000 | 0.315 | 0.479 | 46 | 0 | 100 | 154 |
-| v4 kw=ampliado match=palavra feat=-1 corte=2.00 | 1.000 | 0.253 | 0.404 | 37 | 0 | 109 | 154 |
-| v4 kw=ampliado match=palavra feat=-1 corte=2.25 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v4 kw=ampliado match=palavra feat=-1 corte=2.50 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v4 kw=ampliado match=palavra feat=-1 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=ampliado match=palavra feat=-1 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
-| v4 kw=ampliado match=palavra feat=-2 corte=0.25 | 0.567 | 0.692 | 0.623 | 101 | 77 | 45 | 77 |
-| v4 kw=ampliado match=palavra feat=-2 corte=0.50 | 0.553 | 0.644 | 0.595 | 94 | 76 | 52 | 78 |
-| v4 kw=ampliado match=palavra feat=-2 corte=0.75 | 0.531 | 0.589 | 0.558 | 86 | 76 | 60 | 78 |
-| v4 kw=ampliado match=palavra feat=-2 corte=1.00 | 0.525 | 0.575 | 0.549 | 84 | 76 | 62 | 78 |
-| v4 kw=ampliado match=palavra feat=-2 corte=1.25 | 1.000 | 0.479 | 0.648 | 70 | 0 | 76 | 154 |
-| v4 kw=ampliado match=palavra feat=-2 corte=1.50 | 1.000 | 0.425 | 0.596 | 62 | 0 | 84 | 154 |
-| v4 kw=ampliado match=palavra feat=-2 corte=1.75 | 1.000 | 0.315 | 0.479 | 46 | 0 | 100 | 154 |
-| v4 kw=ampliado match=palavra feat=-2 corte=2.00 | 1.000 | 0.253 | 0.404 | 37 | 0 | 109 | 154 |
-| v4 kw=ampliado match=palavra feat=-2 corte=2.25 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v4 kw=ampliado match=palavra feat=-2 corte=2.50 | 1.000 | 0.151 | 0.262 | 22 | 0 | 124 | 154 |
-| v4 kw=ampliado match=palavra feat=-2 corte=2.75 | 1.000 | 0.103 | 0.186 | 15 | 0 | 131 | 154 |
-| v4 kw=ampliado match=palavra feat=-2 corte=3.00 | 1.000 | 0.089 | 0.164 | 13 | 0 | 133 | 154 |
+| v1 | 0.450 | 0.644 | 0.530 | 67 | 82 | 37 | 114 |
+| v2 kw=base match=substring | 0.406 | 0.788 | 0.536 | 82 | 120 | 22 | 76 |
+| v2 kw=base match=palavra | 0.410 | 0.788 | 0.539 | 82 | 118 | 22 | 78 |
+| v2 kw=ampliado match=substring | 0.404 | 0.788 | 0.534 | 82 | 121 | 22 | 75 |
+| v2 kw=ampliado match=palavra | 0.406 | 0.788 | 0.536 | 82 | 120 | 22 | 76 |
+| v3 kw=base match=substring corte=0.25 | 0.411 | 0.779 | 0.538 | 81 | 116 | 23 | 80 |
+| v3 kw=base match=substring corte=0.50 | 0.434 | 0.760 | 0.552 | 79 | 103 | 25 | 93 |
+| v3 kw=base match=substring corte=0.75 | 0.452 | 0.731 | 0.559 | 76 | 92 | 28 | 104 |
+| v3 kw=base match=substring corte=1.00 | 0.459 | 0.702 | 0.555 | 73 | 86 | 31 | 110 |
+| v3 kw=base match=substring corte=1.25 | 0.612 | 0.500 | 0.550 | 52 | 33 | 52 | 163 |
+| v3 kw=base match=substring corte=1.50 | 0.600 | 0.433 | 0.503 | 45 | 30 | 59 | 166 |
+| v3 kw=base match=substring corte=1.75 | 0.679 | 0.346 | 0.459 | 36 | 17 | 68 | 179 |
+| v3 kw=base match=substring corte=2.00 | 0.684 | 0.250 | 0.366 | 26 | 12 | 78 | 184 |
+| v3 kw=base match=substring corte=2.25 | 0.696 | 0.154 | 0.252 | 16 | 7 | 88 | 189 |
+| v3 kw=base match=substring corte=2.50 | 0.714 | 0.144 | 0.240 | 15 | 6 | 89 | 190 |
+| v3 kw=base match=substring corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v3 kw=base match=substring corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v3 kw=base match=palavra corte=0.25 | 0.413 | 0.779 | 0.540 | 81 | 115 | 23 | 81 |
+| v3 kw=base match=palavra corte=0.50 | 0.434 | 0.760 | 0.552 | 79 | 103 | 25 | 93 |
+| v3 kw=base match=palavra corte=0.75 | 0.455 | 0.731 | 0.561 | 76 | 91 | 28 | 105 |
+| v3 kw=base match=palavra corte=1.00 | 0.459 | 0.692 | 0.552 | 72 | 85 | 32 | 111 |
+| v3 kw=base match=palavra corte=1.25 | 0.619 | 0.500 | 0.553 | 52 | 32 | 52 | 164 |
+| v3 kw=base match=palavra corte=1.50 | 0.608 | 0.433 | 0.506 | 45 | 29 | 59 | 167 |
+| v3 kw=base match=palavra corte=1.75 | 0.667 | 0.327 | 0.439 | 34 | 17 | 70 | 179 |
+| v3 kw=base match=palavra corte=2.00 | 0.694 | 0.240 | 0.357 | 25 | 11 | 79 | 185 |
+| v3 kw=base match=palavra corte=2.25 | 0.682 | 0.144 | 0.238 | 15 | 7 | 89 | 189 |
+| v3 kw=base match=palavra corte=2.50 | 0.700 | 0.135 | 0.226 | 14 | 6 | 90 | 190 |
+| v3 kw=base match=palavra corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v3 kw=base match=palavra corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v3 kw=ampliado match=substring corte=0.25 | 0.407 | 0.779 | 0.535 | 81 | 118 | 23 | 78 |
+| v3 kw=ampliado match=substring corte=0.50 | 0.425 | 0.760 | 0.545 | 79 | 107 | 25 | 89 |
+| v3 kw=ampliado match=substring corte=0.75 | 0.450 | 0.731 | 0.557 | 76 | 93 | 28 | 103 |
+| v3 kw=ampliado match=substring corte=1.00 | 0.453 | 0.702 | 0.551 | 73 | 88 | 31 | 108 |
+| v3 kw=ampliado match=substring corte=1.25 | 0.602 | 0.510 | 0.552 | 53 | 35 | 51 | 161 |
+| v3 kw=ampliado match=substring corte=1.50 | 0.603 | 0.452 | 0.516 | 47 | 31 | 57 | 165 |
+| v3 kw=ampliado match=substring corte=1.75 | 0.679 | 0.365 | 0.475 | 38 | 18 | 66 | 178 |
+| v3 kw=ampliado match=substring corte=2.00 | 0.667 | 0.269 | 0.384 | 28 | 14 | 76 | 182 |
+| v3 kw=ampliado match=substring corte=2.25 | 0.708 | 0.163 | 0.266 | 17 | 7 | 87 | 189 |
+| v3 kw=ampliado match=substring corte=2.50 | 0.727 | 0.154 | 0.254 | 16 | 6 | 88 | 190 |
+| v3 kw=ampliado match=substring corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v3 kw=ampliado match=substring corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v3 kw=ampliado match=palavra corte=0.25 | 0.409 | 0.779 | 0.536 | 81 | 117 | 23 | 79 |
+| v3 kw=ampliado match=palavra corte=0.50 | 0.429 | 0.760 | 0.549 | 79 | 105 | 25 | 91 |
+| v3 kw=ampliado match=palavra corte=0.75 | 0.450 | 0.731 | 0.557 | 76 | 93 | 28 | 103 |
+| v3 kw=ampliado match=palavra corte=1.00 | 0.450 | 0.692 | 0.545 | 72 | 88 | 32 | 108 |
+| v3 kw=ampliado match=palavra corte=1.25 | 0.609 | 0.510 | 0.555 | 53 | 34 | 51 | 162 |
+| v3 kw=ampliado match=palavra corte=1.50 | 0.597 | 0.442 | 0.508 | 46 | 31 | 58 | 165 |
+| v3 kw=ampliado match=palavra corte=1.75 | 0.673 | 0.356 | 0.465 | 37 | 18 | 67 | 178 |
+| v3 kw=ampliado match=palavra corte=2.00 | 0.692 | 0.260 | 0.378 | 27 | 12 | 77 | 184 |
+| v3 kw=ampliado match=palavra corte=2.25 | 0.682 | 0.144 | 0.238 | 15 | 7 | 89 | 189 |
+| v3 kw=ampliado match=palavra corte=2.50 | 0.714 | 0.144 | 0.240 | 15 | 6 | 89 | 190 |
+| v3 kw=ampliado match=palavra corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v3 kw=ampliado match=palavra corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=base match=substring feat=-0 corte=0.25 | 0.404 | 0.865 | 0.550 | 90 | 133 | 14 | 63 |
+| v4 kw=base match=substring feat=-0 corte=0.50 | 0.421 | 0.846 | 0.562 | 88 | 121 | 16 | 75 |
+| v4 kw=base match=substring feat=-0 corte=0.75 | 0.435 | 0.837 | 0.572 | 87 | 113 | 17 | 83 |
+| v4 kw=base match=substring feat=-0 corte=1.00 | 0.438 | 0.817 | 0.570 | 85 | 109 | 19 | 87 |
+| v4 kw=base match=substring feat=-0 corte=1.25 | 0.589 | 0.538 | 0.563 | 56 | 39 | 48 | 157 |
+| v4 kw=base match=substring feat=-0 corte=1.50 | 0.583 | 0.471 | 0.521 | 49 | 35 | 55 | 161 |
+| v4 kw=base match=substring feat=-0 corte=1.75 | 0.667 | 0.365 | 0.472 | 38 | 19 | 66 | 177 |
+| v4 kw=base match=substring feat=-0 corte=2.00 | 0.692 | 0.260 | 0.378 | 27 | 12 | 77 | 184 |
+| v4 kw=base match=substring feat=-0 corte=2.25 | 0.696 | 0.154 | 0.252 | 16 | 7 | 88 | 189 |
+| v4 kw=base match=substring feat=-0 corte=2.50 | 0.714 | 0.144 | 0.240 | 15 | 6 | 89 | 190 |
+| v4 kw=base match=substring feat=-0 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=base match=substring feat=-0 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=base match=substring feat=-1 corte=0.25 | 0.419 | 0.817 | 0.554 | 85 | 118 | 19 | 78 |
+| v4 kw=base match=substring feat=-1 corte=0.50 | 0.430 | 0.798 | 0.559 | 83 | 110 | 21 | 86 |
+| v4 kw=base match=substring feat=-1 corte=0.75 | 0.443 | 0.740 | 0.554 | 77 | 97 | 27 | 99 |
+| v4 kw=base match=substring feat=-1 corte=1.00 | 0.427 | 0.673 | 0.522 | 70 | 94 | 34 | 102 |
+| v4 kw=base match=substring feat=-1 corte=1.25 | 0.629 | 0.423 | 0.506 | 44 | 26 | 60 | 170 |
+| v4 kw=base match=substring feat=-1 corte=1.50 | 0.623 | 0.365 | 0.461 | 38 | 23 | 66 | 173 |
+| v4 kw=base match=substring feat=-1 corte=1.75 | 0.711 | 0.308 | 0.430 | 32 | 13 | 72 | 183 |
+| v4 kw=base match=substring feat=-1 corte=2.00 | 0.743 | 0.250 | 0.374 | 26 | 9 | 78 | 187 |
+| v4 kw=base match=substring feat=-1 corte=2.25 | 0.727 | 0.154 | 0.254 | 16 | 6 | 88 | 190 |
+| v4 kw=base match=substring feat=-1 corte=2.50 | 0.714 | 0.144 | 0.240 | 15 | 6 | 89 | 190 |
+| v4 kw=base match=substring feat=-1 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=base match=substring feat=-1 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=base match=substring feat=-2 corte=0.25 | 0.410 | 0.702 | 0.518 | 73 | 105 | 31 | 91 |
+| v4 kw=base match=substring feat=-2 corte=0.50 | 0.424 | 0.692 | 0.526 | 72 | 98 | 32 | 98 |
+| v4 kw=base match=substring feat=-2 corte=0.75 | 0.438 | 0.683 | 0.534 | 71 | 91 | 33 | 105 |
+| v4 kw=base match=substring feat=-2 corte=1.00 | 0.431 | 0.663 | 0.523 | 69 | 91 | 35 | 105 |
+| v4 kw=base match=substring feat=-2 corte=1.25 | 0.638 | 0.423 | 0.509 | 44 | 25 | 60 | 171 |
+| v4 kw=base match=substring feat=-2 corte=1.50 | 0.623 | 0.365 | 0.461 | 38 | 23 | 66 | 173 |
+| v4 kw=base match=substring feat=-2 corte=1.75 | 0.711 | 0.308 | 0.430 | 32 | 13 | 72 | 183 |
+| v4 kw=base match=substring feat=-2 corte=2.00 | 0.743 | 0.250 | 0.374 | 26 | 9 | 78 | 187 |
+| v4 kw=base match=substring feat=-2 corte=2.25 | 0.727 | 0.154 | 0.254 | 16 | 6 | 88 | 190 |
+| v4 kw=base match=substring feat=-2 corte=2.50 | 0.714 | 0.144 | 0.240 | 15 | 6 | 89 | 190 |
+| v4 kw=base match=substring feat=-2 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=base match=substring feat=-2 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=base match=palavra feat=-0 corte=0.25 | 0.405 | 0.865 | 0.552 | 90 | 132 | 14 | 64 |
+| v4 kw=base match=palavra feat=-0 corte=0.50 | 0.421 | 0.846 | 0.562 | 88 | 121 | 16 | 75 |
+| v4 kw=base match=palavra feat=-0 corte=0.75 | 0.437 | 0.837 | 0.574 | 87 | 112 | 17 | 84 |
+| v4 kw=base match=palavra feat=-0 corte=1.00 | 0.438 | 0.808 | 0.568 | 84 | 108 | 20 | 88 |
+| v4 kw=base match=palavra feat=-0 corte=1.25 | 0.596 | 0.538 | 0.566 | 56 | 38 | 48 | 158 |
+| v4 kw=base match=palavra feat=-0 corte=1.50 | 0.590 | 0.471 | 0.524 | 49 | 34 | 55 | 162 |
+| v4 kw=base match=palavra feat=-0 corte=1.75 | 0.655 | 0.346 | 0.453 | 36 | 19 | 68 | 177 |
+| v4 kw=base match=palavra feat=-0 corte=2.00 | 0.703 | 0.250 | 0.369 | 26 | 11 | 78 | 185 |
+| v4 kw=base match=palavra feat=-0 corte=2.25 | 0.682 | 0.144 | 0.238 | 15 | 7 | 89 | 189 |
+| v4 kw=base match=palavra feat=-0 corte=2.50 | 0.700 | 0.135 | 0.226 | 14 | 6 | 90 | 190 |
+| v4 kw=base match=palavra feat=-0 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=base match=palavra feat=-0 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=base match=palavra feat=-1 corte=0.25 | 0.423 | 0.817 | 0.557 | 85 | 116 | 19 | 80 |
+| v4 kw=base match=palavra feat=-1 corte=0.50 | 0.430 | 0.798 | 0.559 | 83 | 110 | 21 | 86 |
+| v4 kw=base match=palavra feat=-1 corte=0.75 | 0.445 | 0.740 | 0.556 | 77 | 96 | 27 | 100 |
+| v4 kw=base match=palavra feat=-1 corte=1.00 | 0.429 | 0.673 | 0.524 | 70 | 93 | 34 | 103 |
+| v4 kw=base match=palavra feat=-1 corte=1.25 | 0.629 | 0.423 | 0.506 | 44 | 26 | 60 | 170 |
+| v4 kw=base match=palavra feat=-1 corte=1.50 | 0.633 | 0.365 | 0.463 | 38 | 22 | 66 | 174 |
+| v4 kw=base match=palavra feat=-1 corte=1.75 | 0.698 | 0.288 | 0.408 | 30 | 13 | 74 | 183 |
+| v4 kw=base match=palavra feat=-1 corte=2.00 | 0.758 | 0.240 | 0.365 | 25 | 8 | 79 | 188 |
+| v4 kw=base match=palavra feat=-1 corte=2.25 | 0.714 | 0.144 | 0.240 | 15 | 6 | 89 | 190 |
+| v4 kw=base match=palavra feat=-1 corte=2.50 | 0.700 | 0.135 | 0.226 | 14 | 6 | 90 | 190 |
+| v4 kw=base match=palavra feat=-1 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=base match=palavra feat=-1 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=base match=palavra feat=-2 corte=0.25 | 0.412 | 0.702 | 0.520 | 73 | 104 | 31 | 92 |
+| v4 kw=base match=palavra feat=-2 corte=0.50 | 0.424 | 0.692 | 0.526 | 72 | 98 | 32 | 98 |
+| v4 kw=base match=palavra feat=-2 corte=0.75 | 0.441 | 0.683 | 0.536 | 71 | 90 | 33 | 106 |
+| v4 kw=base match=palavra feat=-2 corte=1.00 | 0.434 | 0.663 | 0.525 | 69 | 90 | 35 | 106 |
+| v4 kw=base match=palavra feat=-2 corte=1.25 | 0.638 | 0.423 | 0.509 | 44 | 25 | 60 | 171 |
+| v4 kw=base match=palavra feat=-2 corte=1.50 | 0.633 | 0.365 | 0.463 | 38 | 22 | 66 | 174 |
+| v4 kw=base match=palavra feat=-2 corte=1.75 | 0.698 | 0.288 | 0.408 | 30 | 13 | 74 | 183 |
+| v4 kw=base match=palavra feat=-2 corte=2.00 | 0.758 | 0.240 | 0.365 | 25 | 8 | 79 | 188 |
+| v4 kw=base match=palavra feat=-2 corte=2.25 | 0.714 | 0.144 | 0.240 | 15 | 6 | 89 | 190 |
+| v4 kw=base match=palavra feat=-2 corte=2.50 | 0.700 | 0.135 | 0.226 | 14 | 6 | 90 | 190 |
+| v4 kw=base match=palavra feat=-2 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=base match=palavra feat=-2 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=ampliado match=substring feat=-0 corte=0.25 | 0.400 | 0.865 | 0.547 | 90 | 135 | 14 | 61 |
+| v4 kw=ampliado match=substring feat=-0 corte=0.50 | 0.413 | 0.846 | 0.555 | 88 | 125 | 16 | 71 |
+| v4 kw=ampliado match=substring feat=-0 corte=0.75 | 0.433 | 0.837 | 0.570 | 87 | 114 | 17 | 82 |
+| v4 kw=ampliado match=substring feat=-0 corte=1.00 | 0.438 | 0.817 | 0.570 | 85 | 109 | 19 | 87 |
+| v4 kw=ampliado match=substring feat=-0 corte=1.25 | 0.588 | 0.548 | 0.567 | 57 | 40 | 47 | 156 |
+| v4 kw=ampliado match=substring feat=-0 corte=1.50 | 0.593 | 0.490 | 0.537 | 51 | 35 | 53 | 161 |
+| v4 kw=ampliado match=substring feat=-0 corte=1.75 | 0.667 | 0.385 | 0.488 | 40 | 20 | 64 | 176 |
+| v4 kw=ampliado match=substring feat=-0 corte=2.00 | 0.644 | 0.279 | 0.389 | 29 | 16 | 75 | 180 |
+| v4 kw=ampliado match=substring feat=-0 corte=2.25 | 0.680 | 0.163 | 0.264 | 17 | 8 | 87 | 188 |
+| v4 kw=ampliado match=substring feat=-0 corte=2.50 | 0.696 | 0.154 | 0.252 | 16 | 7 | 88 | 189 |
+| v4 kw=ampliado match=substring feat=-0 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=ampliado match=substring feat=-0 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=ampliado match=substring feat=-1 corte=0.25 | 0.422 | 0.827 | 0.558 | 86 | 118 | 18 | 78 |
+| v4 kw=ampliado match=substring feat=-1 corte=0.50 | 0.430 | 0.798 | 0.559 | 83 | 110 | 21 | 86 |
+| v4 kw=ampliado match=substring feat=-1 corte=0.75 | 0.446 | 0.750 | 0.559 | 78 | 97 | 26 | 99 |
+| v4 kw=ampliado match=substring feat=-1 corte=1.00 | 0.424 | 0.673 | 0.520 | 70 | 95 | 34 | 101 |
+| v4 kw=ampliado match=substring feat=-1 corte=1.25 | 0.620 | 0.423 | 0.503 | 44 | 27 | 60 | 169 |
+| v4 kw=ampliado match=substring feat=-1 corte=1.50 | 0.635 | 0.385 | 0.479 | 40 | 23 | 64 | 173 |
+| v4 kw=ampliado match=substring feat=-1 corte=1.75 | 0.702 | 0.317 | 0.437 | 33 | 14 | 71 | 182 |
+| v4 kw=ampliado match=substring feat=-1 corte=2.00 | 0.700 | 0.269 | 0.389 | 28 | 12 | 76 | 184 |
+| v4 kw=ampliado match=substring feat=-1 corte=2.25 | 0.708 | 0.163 | 0.266 | 17 | 7 | 87 | 189 |
+| v4 kw=ampliado match=substring feat=-1 corte=2.50 | 0.696 | 0.154 | 0.252 | 16 | 7 | 88 | 189 |
+| v4 kw=ampliado match=substring feat=-1 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=ampliado match=substring feat=-1 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=ampliado match=substring feat=-2 corte=0.25 | 0.410 | 0.702 | 0.518 | 73 | 105 | 31 | 91 |
+| v4 kw=ampliado match=substring feat=-2 corte=0.50 | 0.424 | 0.692 | 0.526 | 72 | 98 | 32 | 98 |
+| v4 kw=ampliado match=substring feat=-2 corte=0.75 | 0.438 | 0.683 | 0.534 | 71 | 91 | 33 | 105 |
+| v4 kw=ampliado match=substring feat=-2 corte=1.00 | 0.431 | 0.663 | 0.523 | 69 | 91 | 35 | 105 |
+| v4 kw=ampliado match=substring feat=-2 corte=1.25 | 0.629 | 0.423 | 0.506 | 44 | 26 | 60 | 170 |
+| v4 kw=ampliado match=substring feat=-2 corte=1.50 | 0.635 | 0.385 | 0.479 | 40 | 23 | 64 | 173 |
+| v4 kw=ampliado match=substring feat=-2 corte=1.75 | 0.702 | 0.317 | 0.437 | 33 | 14 | 71 | 182 |
+| v4 kw=ampliado match=substring feat=-2 corte=2.00 | 0.700 | 0.269 | 0.389 | 28 | 12 | 76 | 184 |
+| v4 kw=ampliado match=substring feat=-2 corte=2.25 | 0.708 | 0.163 | 0.266 | 17 | 7 | 87 | 189 |
+| v4 kw=ampliado match=substring feat=-2 corte=2.50 | 0.696 | 0.154 | 0.252 | 16 | 7 | 88 | 189 |
+| v4 kw=ampliado match=substring feat=-2 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=ampliado match=substring feat=-2 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=ampliado match=palavra feat=-0 corte=0.25 | 0.402 | 0.865 | 0.549 | 90 | 134 | 14 | 62 |
+| v4 kw=ampliado match=palavra feat=-0 corte=0.50 | 0.417 | 0.846 | 0.559 | 88 | 123 | 16 | 73 |
+| v4 kw=ampliado match=palavra feat=-0 corte=0.75 | 0.433 | 0.837 | 0.570 | 87 | 114 | 17 | 82 |
+| v4 kw=ampliado match=palavra feat=-0 corte=1.00 | 0.435 | 0.808 | 0.566 | 84 | 109 | 20 | 87 |
+| v4 kw=ampliado match=palavra feat=-0 corte=1.25 | 0.594 | 0.548 | 0.570 | 57 | 39 | 47 | 157 |
+| v4 kw=ampliado match=palavra feat=-0 corte=1.50 | 0.588 | 0.481 | 0.529 | 50 | 35 | 54 | 161 |
+| v4 kw=ampliado match=palavra feat=-0 corte=1.75 | 0.661 | 0.375 | 0.479 | 39 | 20 | 65 | 176 |
+| v4 kw=ampliado match=palavra feat=-0 corte=2.00 | 0.667 | 0.269 | 0.384 | 28 | 14 | 76 | 182 |
+| v4 kw=ampliado match=palavra feat=-0 corte=2.25 | 0.652 | 0.144 | 0.236 | 15 | 8 | 89 | 188 |
+| v4 kw=ampliado match=palavra feat=-0 corte=2.50 | 0.682 | 0.144 | 0.238 | 15 | 7 | 89 | 189 |
+| v4 kw=ampliado match=palavra feat=-0 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=ampliado match=palavra feat=-0 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=ampliado match=palavra feat=-1 corte=0.25 | 0.424 | 0.827 | 0.560 | 86 | 117 | 18 | 79 |
+| v4 kw=ampliado match=palavra feat=-1 corte=0.50 | 0.430 | 0.798 | 0.559 | 83 | 110 | 21 | 86 |
+| v4 kw=ampliado match=palavra feat=-1 corte=0.75 | 0.446 | 0.750 | 0.559 | 78 | 97 | 26 | 99 |
+| v4 kw=ampliado match=palavra feat=-1 corte=1.00 | 0.424 | 0.673 | 0.520 | 70 | 95 | 34 | 101 |
+| v4 kw=ampliado match=palavra feat=-1 corte=1.25 | 0.620 | 0.423 | 0.503 | 44 | 27 | 60 | 169 |
+| v4 kw=ampliado match=palavra feat=-1 corte=1.50 | 0.629 | 0.375 | 0.470 | 39 | 23 | 65 | 173 |
+| v4 kw=ampliado match=palavra feat=-1 corte=1.75 | 0.696 | 0.308 | 0.427 | 32 | 14 | 72 | 182 |
+| v4 kw=ampliado match=palavra feat=-1 corte=2.00 | 0.730 | 0.260 | 0.383 | 27 | 10 | 77 | 186 |
+| v4 kw=ampliado match=palavra feat=-1 corte=2.25 | 0.682 | 0.144 | 0.238 | 15 | 7 | 89 | 189 |
+| v4 kw=ampliado match=palavra feat=-1 corte=2.50 | 0.682 | 0.144 | 0.238 | 15 | 7 | 89 | 189 |
+| v4 kw=ampliado match=palavra feat=-1 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=ampliado match=palavra feat=-1 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
+| v4 kw=ampliado match=palavra feat=-2 corte=0.25 | 0.410 | 0.702 | 0.518 | 73 | 105 | 31 | 91 |
+| v4 kw=ampliado match=palavra feat=-2 corte=0.50 | 0.424 | 0.692 | 0.526 | 72 | 98 | 32 | 98 |
+| v4 kw=ampliado match=palavra feat=-2 corte=0.75 | 0.438 | 0.683 | 0.534 | 71 | 91 | 33 | 105 |
+| v4 kw=ampliado match=palavra feat=-2 corte=1.00 | 0.431 | 0.663 | 0.523 | 69 | 91 | 35 | 105 |
+| v4 kw=ampliado match=palavra feat=-2 corte=1.25 | 0.629 | 0.423 | 0.506 | 44 | 26 | 60 | 170 |
+| v4 kw=ampliado match=palavra feat=-2 corte=1.50 | 0.629 | 0.375 | 0.470 | 39 | 23 | 65 | 173 |
+| v4 kw=ampliado match=palavra feat=-2 corte=1.75 | 0.696 | 0.308 | 0.427 | 32 | 14 | 72 | 182 |
+| v4 kw=ampliado match=palavra feat=-2 corte=2.00 | 0.730 | 0.260 | 0.383 | 27 | 10 | 77 | 186 |
+| v4 kw=ampliado match=palavra feat=-2 corte=2.25 | 0.682 | 0.144 | 0.238 | 15 | 7 | 89 | 189 |
+| v4 kw=ampliado match=palavra feat=-2 corte=2.50 | 0.682 | 0.144 | 0.238 | 15 | 7 | 89 | 189 |
+| v4 kw=ampliado match=palavra feat=-2 corte=2.75 | 0.667 | 0.096 | 0.168 | 10 | 5 | 94 | 191 |
+| v4 kw=ampliado match=palavra feat=-2 corte=3.00 | 0.615 | 0.077 | 0.137 | 8 | 5 | 96 | 191 |
 <!-- tuning:end -->

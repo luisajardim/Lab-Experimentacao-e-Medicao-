@@ -1,7 +1,7 @@
 # T23 — RQ08 (Bônus): Taxa de Retrabalho e Evolução Temporal
 
 Amostra analisada: **315 repositórios** no período de observação (2025-10-01 a 2026-09-30).
-Heurística de release corretiva: **v2 kw=base match=palavra** (calibrada e validada contra consenso com F1 ≥ 0,70).
+Heurística de release corretiva: regra v2 (patch-only OU palavra-chave) com as palavras-chave da calibração contra o consenso (**v4 kw=base match=palavra feat=-0 corte=0.75; F1 = 0.574, NÃO atinge a meta de 0.70**).
 
 ---
 

@@ -170,6 +170,11 @@ Com os datasets finais gerados, execute a T19 sem token e sem novas chamadas
 ```bash
 uv run python analysis/rq01_rq04.py
 uv run python analysis/recovery_survival.py
+uv run python analysis/rq05_spearman.py
+uv run python analysis/rq06_kruskal.py
+uv run python analysis/rq07_sensitivity.py
+uv run python analysis/rq08_bonus.py
+uv run python analysis/figures.py      # figuras do relatório em analysis/output/figures/
 ```
 
 Os comandos criam `analysis/output/rq01_rq04.md`, os CSVs de estatística e
