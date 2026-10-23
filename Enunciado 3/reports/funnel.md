@@ -1,11 +1,13 @@
-# Funil de Seleção de Repositórios
+# Funil de seleção de repositórios
 
-Este documento registra as etapas do processo de seleção da amostra de repositórios para o cálculo das métricas DORA.
+Gerado por `python -m pipeline --stage report` a partir do snapshot versionado; não edite à mão.
 
-| Etapa | Filtro Aplicado | Motivo de Descarte | Sobras (Contagem Real) |
-|---|---|---|---|
-| **1. Candidatos Iniciais** | Repositórios open-source extraídos via Search API (agrupados por faixas de estrelas) | - | 1600 |
-| **2. ≥ 5 Releases** | Histórico mínimo de entregas (`config.toml: min_releases`) | Repositório possui menos de 5 releases publicadas na janela de observação (1209 descartados). | 391 |
-| **3. Com Actions** | Filtragem de repositórios que utilizam o GitHub Actions (`/actions/runs`) | Repositório não possui workflow runs válidos na janela de observação (12 descartados). | 379 |
-| **4. ≥ 50 Runs** | Histórico mínimo de execuções de CI/CD (`config.toml: min_workflow_runs`) | Repositório possui menos de 50 execuções válidas de workflow disparadas por push no default branch (68 descartados). | 311 |
-| **5. Amostra Final** | Conjunto final validado para o cálculo das métricas DORA | (Nenhum, compõem o dataset final definitivo) | 311 |
+| Etapa | Critério | Descartados | Restantes |
+|---|---|---|---:|
+| 1. Resultados da busca | Search API, 12 faixas de estrelas (máx. 1.000 por consulta) | — | 12000 |
+| 2. Coletados | JSON de releases, tags, commits e runs salvo em `data/gold/` | 11175 não persistidos: descartados no collect (sem Actions, poucas releases ou poucos runs) ou não visitados; o snapshot não guarda o motivo por repositório | 825 |
+| 3. Com Actions | ≥ 1 workflow run `push` no default branch na janela | 0 sem runs válidos | 825 |
+| 4. ≥ 5 releases | releases publicadas (não-draft, não-pré-release) na janela | 64 com poucas releases | 761 |
+| 5. ≥ 50 runs | runs `push` no default branch na janela | 0 com poucos runs | 761 |
+| 6. Manifesto | população congelada (`candidate_manifest.csv`, seed 42) | 11 fora do corte | 750 |
+| 7. Amostra final | corte determinístico do estágio `metrics` (seed 42) | 435 fora do corte | 315 |

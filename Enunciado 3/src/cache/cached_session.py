@@ -9,7 +9,6 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-from github.rest import BaseGitHubClient, GitHubHTTPError
 from cache.sqlite_store import SQLiteStore
 
 log = logging.getLogger(__name__)

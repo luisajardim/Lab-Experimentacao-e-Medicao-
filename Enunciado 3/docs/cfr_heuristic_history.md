@@ -28,8 +28,9 @@ A combinação escolhida é a de maior F1; em empate, vale a mais simples
 
 ### Por que a v4
 
-Com os commits recoletados (289 de 300 releases), a melhor v3 parou em
-F1 = 0,633. A análise dos erros contra o consenso mostrou dois problemas:
+A v4 foi desenhada na **amostra-ouro anterior** (antes do novo corte do
+commit `ef9a837`, #74), em que a melhor v3 parou em F1 = 0,633. A análise dos
+erros contra aquele consenso mostrou dois problemas (números daquela amostra):
 
 1. **Release anterior cronológica ≠ antecessora SemVer.** Em backports a
    release publicada logo antes é de outra linha (ex.: `aeron 1.45.1` depois de
@@ -40,6 +41,13 @@ F1 = 0,633. A análise dos erros contra o consenso mostrou dois problemas:
    corretivas têm algum commit `feat`/`feat(...)`, contra 78 das 229 não
    corretivas.
 
+Na amostra-ouro atual (300 releases, 104 corretivas no consenso), a v4 continua
+a melhor versão (F1 = 0,574), mas a vantagem sobre v1–v3 é pequena (0,53–0,56) e
+nenhuma versão atinge a meta de 0,70 do ENUNCIADO §6. O limite parece estar no
+próprio gabarito: a concordância na dimensão corretiva é só moderada
+(κ = 0,596), e o avaliador C marcou 183 das 300 releases como corretivas, contra
+99 (A) e 103 (B).
+
 ### Ressalvas sobre o F1
 
 - **Otimismo do tuning.** O corte e os pesos são escolhidos na própria
@@ -49,9 +57,9 @@ F1 = 0,633. A análise dos erros contra o consenso mostrou dois problemas:
   execução abaixo e em `cfr_metrics.json` (`cross_validation`).
 - **Avaliador B não humano.** O consenso inclui os rótulos do Claude
   (`labels_B.csv`, ver `docs/consensus_protocol.md`). Contra cada avaliador
-  isolado, a v4 escolhida obteve F1 = 0,630 (A), 0,695 (B) e 0,632 (C); a v1,
-  0,490, 0,611 e 0,469. A v4 melhora sobre a v1 contra os humanos também, mas
-  concorda um pouco mais com o avaliador B, o que deve constar como limitação.
+  isolado (amostra atual), a v4 escolhida obteve F1 = 0,557 (A), 0,570 (B) e
+  0,660 (C); a v1, 0,516, 0,516 e 0,602. A v4 melhora sobre a v1 contra os três
+  avaliadores e não favorece o avaliador B.
 
 ## Execuções
 

@@ -1,7 +1,7 @@
 # T23 — RQ08 (Bônus): Taxa de Retrabalho e Evolução Temporal
 
 Amostra analisada: **315 repositórios** no período de observação (2025-10-01 a 2026-09-30).
-Heurística de release corretiva: regra v2 (patch-only OU palavra-chave) com as palavras-chave da calibração contra o consenso (**v4 kw=base match=palavra feat=-0 corte=0.75; F1 = 0.574, NÃO atinge a meta de 0.70**).
+Heurística de release corretiva: a mesma da CFR (b), escolhida no tuning contra o consenso (**v4 kw=base match=palavra feat=-0 corte=0.75; F1 = 0.574 no consenso da amostra-ouro**). Deploy = release publicada, não-draft e não-pré-release.
 
 ---
 
@@ -13,14 +13,14 @@ A *Rework Rate* mede a proporção de releases corretivas frente ao total de rel
 
 | Métrica | n | Média | Mediana | Desv. Padrão | Q1 (25%) | Q3 (75%) | IQR | Min | Max |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rework Rate (janela) | 315 | 0.7459 | 0.8750 | 0.2895 | 0.5869 | 0.9733 | 0.3864 | 0.0000 | 1.0000 |
+| Rework Rate (janela) | 315 | 0.6976 | 0.7692 | 0.2661 | 0.5240 | 0.9091 | 0.3851 | 0.0000 | 1.0000 |
 | Change Failure Rate (CFR a) | 315 | 0.0997 | 0.0530 | 0.1446 | 0.0203 | 0.1157 | 0.0953 | 0.0000 | 1.0000 |
-| Diferença (Rework − CFR) | 315 | 0.6462 | 0.7545 | 0.3385 | 0.4616 | 0.9102 | 0.4486 | -0.8000 | 1.0000 |
+| Diferença (Rework − CFR) | 315 | 0.5978 | 0.6712 | 0.2991 | 0.4139 | 0.8308 | 0.4168 | -0.3596 | 1.0000 |
 
 ### Discussão Conceitual: Rework Rate vs. Change Failure Rate
 
 1. **Unidade de análise:** O CFR(a) baseia-se em *execuções de workflow de CI*, capturando falhas imediatas de integração antes ou durante a entrega. Já a Rework Rate baseia-se em *releases completas*, capturando defeitos pós-entrega que demandaram uma nova versão com foco corretivo.
-2. **Ordem de magnitude observada:** A mediana da Rework Rate é expressivamente superior à do CFR(a). Enquanto os testes automatizados de CI mantêm uma taxa de falha baixa (mediana ~5,3%), a grande maioria dos repositórios tem lançamentos de patch frequentes (mediana de retrabalho ~87,5%), indicando que a natureza iterativa de projetos open-source é predominantemente corretiva entre versões principais.
+2. **Ordem de magnitude observada:** a mediana da Rework Rate (76,9%) é muito superior à do CFR (a) (5,3%). A diferença vem da unidade: o CI corrige falhas de integração antes da release, enquanto boa parte das releases de projetos open-source é de patch, que a heurística tende a marcar como corretiva (precisão baixa na amostra-ouro).
 
 ---
 
@@ -35,10 +35,10 @@ Para cada repositório, foi aplicado o teste não-paramétrico de Mann-Kendall (
 | Deploy Frequency (Trimestral) | 315 | 0 | 0.0% | 0 | 0.0% | 315 | 100.0% |
 | Rework Rate (Trimestral) | 315 | 0 | 0.0% | 0 | 0.0% | 315 | 100.0% |
 | CFR CI (Trimestral) | 315 | 0 | 0.0% | 0 | 0.0% | 315 | 100.0% |
-| Deploy Frequency (Mensal) | 315 | 53 | 16.8% | 19 | 6.0% | 243 | 77.1% |
-| CFR CI (Mensal) | 315 | 35 | 11.1% | 18 | 5.7% | 262 | 83.2% |
+| Deploy Frequency (Mensal) | 315 | 48 | 15.2% | 21 | 6.7% | 246 | 78.1% |
+| CFR CI (Mensal) | 315 | 14 | 4.4% | 23 | 7.3% | 278 | 88.3% |
 
 ### Achado Metodológico: Escala Trimestral vs. Mensal
 
 - **Limitação assintótica na escala trimestral ($n = 4$):** O teste de Mann-Kendall com apenas 4 observações possui poder estatístico limitado para atingir $p < 0{,}05$ assintótico (a sequência monótona perfeita atinge $p \approx 0{,}089$). Portanto, 100% dos repositórios são classificados como `negligible` (sem tendência estatisticamente comprovável a 5%).
-- **Resolução na escala mensal ($n = 12$):** Ao expandir para os 12 meses da janela, detectam-se tendências significativas: **16,8% dos repositórios aumentaram sua frequência de deploy** e **11,1% apresentaram aumento na taxa de falha de CI**, enquanto a vasta maioria (~77% a 83%) manteve desempenho estável ao longo de todo o ano de observação.
+- **Resolução na escala mensal ($n = 12$):** a frequência de deploy aumenta em 15,2% dos repositórios e cai em 6,7%; o CFR (a) aumenta em 4,4% e cai em 7,3%. Os demais não têm tendência significativa a 5%.

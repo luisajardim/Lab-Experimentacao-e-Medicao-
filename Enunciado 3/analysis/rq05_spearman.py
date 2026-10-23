@@ -16,7 +16,7 @@ Para cada variante reporta ρ, p-valor, n e IC 95% por bootstrap BCa pareado
 Saídas em ``analysis/output/``:
 * ``rq05_metrics.csv``: uma linha por variante;
 * ``rq05_cfr_b.csv``: CFR(b) por repositório (releases avaliadas e que falharam);
-* ``rq05_scatter.png``: dispersão com eixo x em escala logarítmica.
+* ``figures/rq05_scatter.png``: dispersão com eixo x em escala logarítmica.
 
 Uso:
     python -m analysis.rq05_spearman
@@ -273,7 +273,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     args.output_dir.mkdir(parents=True, exist_ok=True)
     summary.to_csv(args.output_dir / "rq05_metrics.csv", index=False)
     cfr_b_df.to_csv(args.output_dir / "rq05_cfr_b.csv", index=False)
-    plot(merged, summary, args.output_dir / "rq05_scatter.png")
+    figures_dir = args.output_dir / "figures"
+    figures_dir.mkdir(parents=True, exist_ok=True)
+    plot(merged, summary, figures_dir / "rq05_scatter.png")
 
     for _, row in summary.iterrows():
         print(

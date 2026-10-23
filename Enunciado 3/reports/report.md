@@ -38,5 +38,16 @@ Total de repositórios analisados: 315
 - **deploy_freq_vs_recovery**: ρ=-0.167, p=0.0046, significativo
 - **deploy_freq_tags_vs_recovery**: ρ=-0.152, p=0.0103, significativo
 
+## Lead time: releases usadas e ignoradas
+
+| Situação | Releases | % |
+|---|---:|---:|
+| `used` | 8312 | 62.6% |
+| `no_new_commits` | 2796 | 21.1% |
+| `compare_404` | 2092 | 15.8% |
+| `no_previous_release` | 67 | 0.5% |
+| `compare_422_diff_too_large` | 3 | 0.0% |
+| **total na janela** | 13270 | 100% |
+
 ---
 *Gerado automaticamente pelo pipeline DORA Miner (Lab03).*

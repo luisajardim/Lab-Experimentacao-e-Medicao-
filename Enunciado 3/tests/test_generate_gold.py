@@ -3,9 +3,8 @@ from __future__ import annotations
 import csv
 import importlib.util
 import json
-from pathlib import Path
 import sys
-
+from pathlib import Path
 
 SCRIPT_PATH = Path(__file__).parents[1] / "scripts" / "generate_gold.py"
 SPEC = importlib.util.spec_from_file_location("generate_gold", SCRIPT_PATH)

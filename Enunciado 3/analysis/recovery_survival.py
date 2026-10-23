@@ -71,6 +71,14 @@ def save_plot(model: KaplanMeierFitter, output: Path) -> None:
     plt.close(fig)
 
 
+def _relative(path: Path) -> str:
+    """Caminho relativo ao projeto, para as saídas não dependerem da máquina."""
+    try:
+        return str(path.resolve().relative_to(PROJECT_ROOT))
+    except ValueError:
+        return str(path)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--metrics-full", type=Path, default=DEFAULT_METRICS)
@@ -84,7 +92,7 @@ def main() -> int:
     save_plot(model, args.output_dir / "recovery_survival.png")
     median = model.median_survival_time_
     summary = {
-        "source": str(args.metrics_full),
+        "source": _relative(args.metrics_full),
         "n_episodes": int(len(episodes)),
         "n_repositories": int(episodes["full_name"].nunique()),
         "n_events": int((~episodes["censored"]).sum()),

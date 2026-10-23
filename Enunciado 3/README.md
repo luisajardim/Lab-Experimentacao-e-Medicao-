@@ -59,7 +59,7 @@ coleta não deve ser esperada produzir números idênticos.
 ```bash
 git clone https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-.git
 cd Lab-Experimentacao-e-Medicao-/"Enunciado 3"
-git checkout fix/dataset            # ou a tag/commit informado pelo grupo
+git checkout main                   # ou a tag/commit informado pelo grupo
 uv sync
 uv run pytest -q
 ```
@@ -169,6 +169,7 @@ Com os datasets finais gerados, execute a T19 sem token e sem novas chamadas
 
 ```bash
 uv run python analysis/rq01_rq04.py
+uv run python analysis/rq04_hypothesis.py
 uv run python analysis/recovery_survival.py
 uv run python analysis/rq05_spearman.py
 uv run python analysis/rq06_kruskal.py
@@ -177,8 +178,10 @@ uv run python analysis/rq08_bonus.py
 uv run python analysis/figures.py      # figuras do relatório em analysis/output/figures/
 ```
 
-Os comandos criam `analysis/output/rq01_rq04.md`, os CSVs de estatística e
-distribuição C1, além de `recovery_survival.png` e seu resumo JSON. As
+Os comandos criam os relatórios `analysis/output/rq*.md`, os CSVs de cada RQ
+e as figuras em `analysis/output/figures/` (inclusive `rq05_scatter.png`).
+`rq05_spearman.py` e `rq08_bonus.py` usam a heurística de release corretiva
+escolhida em `data/gold/cfr_metrics.json`; rode-os depois de `tune_cfr.py`. As
 medianas e IQRs usam o repositório como unidade de análise; os ICs de 95% são
 bootstrap BCa com 2.000 reamostragens (semente 42). A curva Kaplan--Meier usa
 os episódios de recovery, inclusive os censurados.
@@ -187,6 +190,23 @@ Ao final da replicação, registre no Issue: hash do commit, versão do Python,
 comandos usados, contagem de linhas de `metrics.csv`, conteúdo de
 `reports/funnel.md` e diferenças encontradas. Não substitua esses scripts por
 cálculos manuais ao reportar resultados reproduzidos.
+
+## Artigo (LaTeX, template SBC)
+
+O artigo fica em `latex/main.tex` (referências em `latex/referencias.bib`) e usa
+o template oficial da SBC, versionado em `templates/sbc/`. As figuras vêm direto
+de `analysis/output/figures/`. Para gerar `RELATORIO.pdf` na raiz:
+
+```bash
+uv run python scripts/build_report.py      # --clean apaga latex/build antes
+```
+
+Na primeira execução, o script baixa o TinyTeX (via `pytinytex`, em
+`~/.pytinytex`) e alguns pacotes do CTAN, e gera um formato `pdflatex` com
+hifenização em português. Nada disso exige `sudo` nem Perl. As execuções
+seguintes só compilam. Para usar no Overleaf, envie `latex/main.tex`,
+`latex/referencias.bib`, `templates/sbc/sbc-template.sty`,
+`templates/sbc/sbc.bst` e as figuras, e ajuste o `\graphicspath`.
 
 ## Estrutura
 
@@ -202,9 +222,11 @@ src/metrics/     Funções PURAS de cálculo das métricas (sem I/O)
 tests/           Testes + fixtures (pytest)
 scripts/         Ferramentas de validação manual e replicação
 analysis/        Análises das RQ01-RQ08 (reexecutáveis a partir dos CSVs)
+latex/           Artigo em LaTeX (template SBC) → RELATORIO.pdf
 data/            raw/ (bruto, ignorado) · gold/ · datasets/ · cache/ (ignorado)
 docs/            Arquitetura, dicionário de dados, protocolos
 reports/         Funil de seleção, relatórios de replicação
+templates/       Template SBC e template de Issue de replicação
 ```
 
 ## Notas

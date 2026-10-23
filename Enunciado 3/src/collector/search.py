@@ -19,7 +19,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from cache.cached_session import CachedSession
 from cache.sqlite_store import SQLiteStore
 from github.rest import GitHubRESTClient
 

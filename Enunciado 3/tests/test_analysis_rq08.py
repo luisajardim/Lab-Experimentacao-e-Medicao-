@@ -10,7 +10,10 @@ from analysis.rq08_bonus import (
     process_repository,
     run_mann_kendall,
 )
-from metrics.cfr_release import DEFAULT_KEYWORDS, keyword_pattern
+from scripts.tune_cfr import Candidate
+
+V2 = Candidate(version="v2", keywords="base", match="palavra")
+V4 = Candidate(version="v4", keywords="base", match="palavra", cutoff=0.75, feature_weight=0.0)
 
 
 def test_mann_kendall_detects_significant_trends():
@@ -36,7 +39,6 @@ def test_mann_kendall_handles_flat_or_short_series():
 
 
 def test_is_release_corrective():
-    pattern = keyword_pattern(DEFAULT_KEYWORDS, whole_word=True)
     payload = {
         "releases": [
             {"tag_name": "v1.0.0", "html_url": "u1", "published_at": "2025-10-01T00:00:00Z"},
@@ -50,13 +52,12 @@ def test_is_release_corrective():
     }
 
     # v1.0.1 é patch bump e tem commit com fix -> corretiva
-    assert is_release_corrective(payload, payload["releases"][1], pattern) is True
+    assert is_release_corrective(payload, payload["releases"][1], V2) is True
     # v1.1.0 é minor bump e commit feat -> não corretiva
-    assert is_release_corrective(payload, payload["releases"][2], pattern) is False
+    assert is_release_corrective(payload, payload["releases"][2], V2) is False
 
 
 def test_process_repository_computes_rework_and_quarterly():
-    pattern = keyword_pattern(DEFAULT_KEYWORDS, whole_word=True)
     payload = {
         "repository": {"full_name": "owner/repo"},
         "releases": [
@@ -74,7 +75,7 @@ def test_process_repository_computes_rework_and_quarterly():
         },
     }
 
-    res = process_repository("owner/repo", payload, pattern)
+    res = process_repository("owner/repo", payload, V2)
     assert res["full_name"] == "owner/repo"
     assert res["total_releases_window"] == 3
     # v1.0.1 e v1.0.2 são corretivas
@@ -84,6 +85,49 @@ def test_process_repository_computes_rework_and_quarterly():
     assert res["q2_releases"] == 1  # 2026-02
     assert res["q3_releases"] == 0
     assert res["deploy_trend_quarterly"] in ("increasing", "decreasing", "negligible")
+
+
+def test_v4_candidate_matches_cfr_b_heuristic():
+    payload = {
+        "releases": [
+            {"tag_name": "v2.0.0", "html_url": "u1", "published_at": "2025-10-01T00:00:00Z"},
+            {"tag_name": "v2.0.3", "html_url": "u2", "published_at": "2025-10-05T00:00:00Z"},
+            {"tag_name": "v2.1.0", "html_url": "u3", "published_at": "2025-10-10T00:00:00Z"},
+        ],
+        "commits_between": [
+            {"release": "v2.0.3", "commits": [{"commit": {"message": "docs: readme"}}]},
+            {"release": "v2.1.0", "commits": [{"commit": {"message": "fix: crash"}}]},
+        ],
+    }
+    # v4: 1·(PATCH > 0) = 1 ≥ 0,75 → corretiva, mesmo sem palavra-chave
+    assert is_release_corrective(payload, payload["releases"][1], V4) is True
+    # v4: 2·(1/1 commits com fix) = 2 ≥ 0,75 → corretiva, mesmo sendo minor
+    assert is_release_corrective(payload, payload["releases"][2], V4) is True
+
+
+def test_prereleases_and_cancelled_runs_are_ignored():
+    payload = {
+        "repository": {"full_name": "owner/repo"},
+        "releases": [
+            {"tag_name": "v1.0.0", "html_url": "u1", "published_at": "2025-10-10T00:00:00Z"},
+            {"tag_name": "v1.1.0-rc1", "html_url": "u2", "published_at": "2025-10-12T00:00:00Z",
+             "prerelease": True},
+        ],
+        "runs_by_month": {
+            "2025-10": [
+                {"conclusion": "success"},
+                {"conclusion": "failure"},
+                {"conclusion": "cancelled"},
+                {"conclusion": "skipped"},
+            ],
+        },
+    }
+    res = process_repository("owner/repo", payload, V2)
+    assert res["total_releases_window"] == 1
+    # CFR (a) do trimestre = 1 falha / (1 falha + 1 sucesso); cancelled/skipped fora
+    assert res["q1_cfr"] == pytest.approx(0.5)
+    # trimestres sem runs ficam vazios, não viram 0
+    assert res["q2_cfr"] is None
 
 
 def test_main_generates_all_output_csvs(tmp_path: Path):

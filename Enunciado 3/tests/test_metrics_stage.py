@@ -2,9 +2,9 @@
 
 import csv
 import json
-
 from types import SimpleNamespace
 
+from metrics import DORAVariant, classify_dora
 from pipeline.cli import (
     DORA_VARIANT_COLUMNS,
     _commit_scope,
@@ -14,7 +14,6 @@ from pipeline.cli import (
     _run_metrics,
     write_funnel_report,
 )
-from metrics import DORAVariant, classify_dora
 
 
 def _write_config(tmp_path):
@@ -191,3 +190,73 @@ def test_write_funnel_report_generates_markdown_table(tmp_path):
     assert "400" in content
     assert "| **1. Candidatos Iniciais**" in content
     assert "| **5. Amostra Final**" in content
+
+
+def test_snapshot_funnel_counts_each_discard_reason(tmp_path):
+    import json
+
+    from pipeline.cli import snapshot_funnel, write_snapshot_funnel_report
+
+    gold = tmp_path / "gold"
+
+    def repo(name, n_releases, n_runs, event="push"):
+        owner, short = name.split("/")
+        (gold / owner).mkdir(parents=True, exist_ok=True)
+        payload = {
+            "repository": {"full_name": name, "default_branch": "main"},
+            "releases": [
+                {"tag_name": f"v1.0.{i}", "published_at": "2026-01-10T00:00:00Z"}
+                for i in range(n_releases)
+            ],
+            "runs_by_month": {
+                "2026-01": [{"branch": "main", "event": event, "conclusion": "success"}] * n_runs
+            },
+        }
+        (gold / owner / f"{short}.json").write_text(json.dumps(payload), encoding="utf-8")
+
+    repo("a/ok", 5, 50)
+    repo("a/no-actions", 5, 50, event="schedule")
+    repo("a/few-releases", 4, 50)
+    repo("a/few-runs", 5, 49)
+    candidates = tmp_path / "candidates.csv"
+    candidates.write_text("full_name\n" + "\n".join(f"r/{i}" for i in range(10)) + "\n")
+    metrics = tmp_path / "metrics.csv"
+    metrics.write_text("full_name\na/ok\n")
+
+    counts = snapshot_funnel(gold, candidates, None, metrics, "2025-10-01", "2026-09-30", 5, 50)
+    assert counts == {
+        "candidates": 10, "collected": 4, "no_actions": 1, "few_releases": 1,
+        "few_runs": 1, "eligible": 1, "manifest": 0, "final": 1,
+    }
+
+    out = tmp_path / "funnel.md"
+    write_snapshot_funnel_report(out, counts, 5, 50)
+    text = out.read_text(encoding="utf-8")
+    assert "| 5. ≥ 50 runs |" in text and "| 1 |" in text
+
+
+def test_lead_time_coverage_counts_ignored_releases_by_reason(tmp_path):
+    import json
+
+    from pipeline.cli import lead_time_coverage
+
+    (tmp_path / "o").mkdir()
+    payload = {
+        "releases": [
+            {"tag_name": t, "published_at": "2026-01-10T00:00:00Z"} for t in ("a", "b", "c", "d")
+        ]
+        + [{"tag_name": "old", "published_at": "2024-01-10T00:00:00Z"}],
+        "commits_between": [
+            {"release": "a", "ignored_reason": "no_previous_release", "commits": None},
+            {"release": "b", "ignored_reason": "compare_404", "commits": None},
+            {"release": "c", "ignored_reason": None, "commits": []},
+            {"release": "d", "ignored_reason": None, "commits": [{"author_date": "x"}]},
+            {"release": "old", "ignored_reason": "compare_404", "commits": None},
+        ],
+    }
+    (tmp_path / "o" / "r.json").write_text(json.dumps(payload), encoding="utf-8")
+    counts = lead_time_coverage(tmp_path, ["o/r"], "2025-10-01", "2026-09-30")
+    assert counts == {
+        "releases": 4, "used": 1, "no_new_commits": 1,
+        "no_previous_release": 1, "compare_404": 1,
+    }

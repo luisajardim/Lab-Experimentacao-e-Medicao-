@@ -7,7 +7,6 @@ Episódios censurados (não recuperados dentro da janela) são incluídos.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Literal
 
 from lifelines import KaplanMeierFitter
 

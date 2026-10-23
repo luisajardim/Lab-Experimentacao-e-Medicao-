@@ -17,7 +17,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from collections.abc import Sequence
 from dataclasses import dataclass
@@ -37,8 +36,9 @@ sys.path.insert(0, str(PROJECT_ROOT / "src"))
 sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 
 from build_dossiers import _commit_message, _commits_for, _previous_release  # noqa: E402
+from tune_cfr import Candidate, Item, predict  # noqa: E402
 
-from metrics.cfr_release import DEFAULT_KEYWORDS, keyword_pattern, keyword_ratio, v2  # noqa: E402
+from metrics.cfr import cfr_a  # noqa: E402
 
 QUARTERS = (
     ("Q1", "2025-10-01", "2025-12-31", ("2025-10", "2025-11", "2025-12")),
@@ -83,50 +83,75 @@ def run_mann_kendall(series: Sequence[float | int], alpha: float = 0.05) -> MKRe
         return MKResult(trend="negligible", p_value=1.0, tau=0.0, slope=0.0)
 
 
-def load_heuristic_pattern(cfr_metrics_path: Path) -> tuple[re.Pattern[str], str]:
-    """Carrega as palavras-chave validadas na calibração (cfr_metrics.json)."""
-    if cfr_metrics_path.exists():
-        try:
-            meta = json.loads(cfr_metrics_path.read_text(encoding="utf-8"))
-            best = meta.get("best", {})
-            kw_list = best.get("keyword_list") or list(DEFAULT_KEYWORDS)
-            match_mode = best.get("match") == "palavra"
-            name = str(best.get("name", "v2"))
-            if "f1" in best:
-                status = "atinge" if meta.get("meets_target") else "NÃO atinge"
-                name += f"; F1 = {best['f1']:.3f}, {status} a meta de {meta.get('target_f1', 0.7):.2f}"
-            return keyword_pattern(kw_list, whole_word=match_mode), name
-        except Exception:
-            pass
-    return keyword_pattern(DEFAULT_KEYWORDS, whole_word=True), "v2 kw=base match=palavra"
+DEFAULT_CANDIDATE = Candidate(version="v2", keywords="base", match="palavra")
+
+
+def load_candidate(cfr_metrics_path: Path) -> tuple[Candidate, str]:
+    """Heurística escolhida no tuning (T14), a mesma usada na CFR (b) da RQ03/RQ05."""
+    if not cfr_metrics_path.exists():
+        return DEFAULT_CANDIDATE, DEFAULT_CANDIDATE.name
+    meta = json.loads(cfr_metrics_path.read_text(encoding="utf-8"))
+    best = meta["best"]
+    candidate = Candidate(
+        version=best["version"],
+        keywords=best.get("keywords"),
+        match=best.get("match"),
+        cutoff=best.get("cutoff"),
+        feature_weight=best.get("feature_weight"),
+    )
+    name = candidate.name
+    if "f1" in best:
+        name += f"; F1 = {best['f1']:.3f} no consenso da amostra-ouro"
+    return candidate, name
 
 
 def is_release_corrective(
     payload: dict[str, Any],
     release: dict[str, Any],
-    pattern: re.Pattern[str],
+    candidate: Candidate,
 ) -> bool:
-    """Classifica se uma release é corretiva usando a heurística v2 validada."""
+    """Classifica a release com a mesma heurística da CFR (b)."""
     prev = _previous_release(payload, release)
-    c_list = _commits_for(payload, release)
-    msgs = [_commit_message(c) for c in (c_list or [])]
-    ratio = keyword_ratio(msgs, pattern)
-    return v2(release.get("tag_name"), prev.get("tag_name") if prev else None, ratio)
+    commits = _commits_for(payload, release)
+    item = Item(
+        full_name=str(payload.get("repository", {}).get("full_name", "")),
+        tag=release.get("tag_name"),
+        previous_tag=prev.get("tag_name") if prev else None,
+        messages=None if commits is None else tuple(map(_commit_message, commits)),
+        expected=False,
+    )
+    return predict(candidate, [item])[0]
+
+
+def _cfr_a_or_none(runs: list[dict[str, Any]]) -> float | None:
+    """CFR (a) do período com a tabela de ``conclusion`` do ENUNCIADO §3."""
+    return cfr_a([run.get("conclusion") for run in runs])
+
+
+def _present(series: list[float | None]) -> list[float]:
+    """Remove períodos sem nenhum run válido (sem sucesso nem falha)."""
+    return [value for value in series if value is not None]
 
 
 def process_repository(
     name: str,
     payload: dict[str, Any],
-    pattern: re.Pattern[str],
+    candidate: Candidate,
 ) -> dict[str, Any]:
     """Processa um repositório calculando taxa de retrabalho e séries trimestrais/mensais."""
-    releases = [r for r in payload.get("releases", []) if not r.get("draft", False) and r.get("published_at")]
+    # Deploy = release publicada, não-draft e não-pré-release (definição principal, como na RQ03 b).
+    releases = [
+        r
+        for r in payload.get("releases", [])
+        if not r.get("draft", False) and not r.get("prerelease", False) and r.get("published_at")
+    ]
     releases.sort(key=lambda r: str(r["published_at"]))
+    corrective = {id(r): is_release_corrective(payload, r, candidate) for r in releases}
 
     # Rework rate na janela
     window_releases = [r for r in releases if WINDOW_START <= str(r["published_at"])[:10] <= WINDOW_END]
-    window_corrective = [r for r in window_releases if is_release_corrective(payload, r, pattern)]
-    all_corrective = [r for r in releases if is_release_corrective(payload, r, pattern)]
+    window_corrective = [r for r in window_releases if corrective[id(r)]]
+    all_corrective = [r for r in releases if corrective[id(r)]]
 
     total_w = len(window_releases)
     corr_w = len(window_corrective)
@@ -139,7 +164,7 @@ def process_repository(
     # Séries trimestrais
     q_releases: list[int] = []
     q_rework: list[float] = []
-    q_cfr: list[float] = []
+    q_cfr: list[float | None] = []
 
     rbm = payload.get("runs_by_month", {})
 
@@ -147,39 +172,30 @@ def process_repository(
         q_rels = [r for r in window_releases if q_start <= str(r["published_at"])[:10] <= q_end]
         n_rel = len(q_rels)
         q_releases.append(n_rel)
-        n_corr = sum(1 for r in q_rels if is_release_corrective(payload, r, pattern))
+        n_corr = sum(1 for r in q_rels if corrective[id(r)])
         q_rework.append(n_corr / n_rel if n_rel > 0 else 0.0)
 
         q_runs: list[dict[str, Any]] = []
         for m in q_months:
             q_runs.extend(rbm.get(m, []))
-        total_runs = len(q_runs)
-        failed_runs = sum(
-            1 for run in q_runs if run.get("conclusion") in ("failure", "timed_out", "cancelled")
-        )
-        q_cfr.append(failed_runs / total_runs if total_runs > 0 else 0.0)
+        q_cfr.append(_cfr_a_or_none(q_runs))
 
     # Séries mensais
     m_releases: list[int] = []
-    m_cfr: list[float] = []
+    m_cfr: list[float | None] = []
     for m in MONTHS:
         m_rels = [r for r in window_releases if str(r["published_at"])[:7] == m]
         m_releases.append(len(m_rels))
-        runs = rbm.get(m, [])
-        total_runs = len(runs)
-        failed_runs = sum(
-            1 for run in runs if run.get("conclusion") in ("failure", "timed_out", "cancelled")
-        )
-        m_cfr.append(failed_runs / total_runs if total_runs > 0 else 0.0)
+        m_cfr.append(_cfr_a_or_none(rbm.get(m, [])))
 
     # Mann-Kendall Trimestral
     mk_d_q = run_mann_kendall(q_releases)
     mk_r_q = run_mann_kendall(q_rework)
-    mk_c_q = run_mann_kendall(q_cfr)
+    mk_c_q = run_mann_kendall(_present(q_cfr))
 
     # Mann-Kendall Mensal
     mk_d_m = run_mann_kendall(m_releases)
-    mk_c_m = run_mann_kendall(m_cfr)
+    mk_c_m = run_mann_kendall(_present(m_cfr))
 
     return {
         "full_name": name,
@@ -225,7 +241,7 @@ def compute_bonus_metrics(
     cfr_metrics_path: Path,
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, str]:
     """Calcula todas as métricas da RQ08 para a amostra final."""
-    pattern, heur_name = load_heuristic_pattern(cfr_metrics_path)
+    candidate, heur_name = load_candidate(cfr_metrics_path)
     metrics_df = pd.read_csv(metrics_csv)
 
     rows: list[dict[str, Any]] = []
@@ -237,7 +253,7 @@ def compute_bonus_metrics(
             payload = json.loads(json_path.read_text(encoding="utf-8"))
         except Exception:
             continue
-        rows.append(process_repository(name, payload, pattern))
+        rows.append(process_repository(name, payload, candidate))
 
     df = pd.DataFrame(rows)
     merged = pd.merge(metrics_df[["full_name", "cfr_a", "stars", "language"]], df, on="full_name", how="inner")
@@ -302,6 +318,21 @@ def compute_bonus_metrics(
     return rework_df, trend_df, summary_df, heur_name
 
 
+def _pct(value: float) -> str:
+    return f"{value:.1%}".replace(".", ",")
+
+
+def _trend_sentence(summary_df: pd.DataFrame) -> str:
+    rows = {r["metric_scale"]: r for r in summary_df.to_dict("records")}
+    deploy = rows["Deploy Frequency (Mensal)"]
+    cfr = rows["CFR CI (Mensal)"]
+    return (
+        f"a frequência de deploy aumenta em {_pct(deploy['pct_increasing'])} dos repositórios e cai em "
+        f"{_pct(deploy['pct_decreasing'])}; o CFR (a) aumenta em {_pct(cfr['pct_increasing'])} e cai em "
+        f"{_pct(cfr['pct_decreasing'])}. Os demais não têm tendência significativa a 5%."
+    )
+
+
 def markdown(
     rework_df: pd.DataFrame,
     summary_df: pd.DataFrame,
@@ -318,8 +349,8 @@ def markdown(
         "",
         f"Amostra analisada: **{n_repos} repositórios** no período de observação "
         f"({WINDOW_START} a {WINDOW_END}).",
-        f"Heurística de release corretiva: regra v2 (patch-only OU palavra-chave) com as palavras-chave "
-        f"da calibração contra o consenso (**{heur_name}**).",
+        f"Heurística de release corretiva: a mesma da CFR (b), escolhida no tuning contra o consenso "
+        f"(**{heur_name}**). Deploy = release publicada, não-draft e não-pré-release.",
         "",
         "---",
         "",
@@ -348,10 +379,10 @@ def markdown(
         "1. **Unidade de análise:** O CFR(a) baseia-se em *execuções de workflow de CI*, capturando falhas "
         "imediatas de integração antes ou durante a entrega. Já a Rework Rate baseia-se em *releases completas*, "
         "capturando defeitos pós-entrega que demandaram uma nova versão com foco corretivo.",
-        "2. **Ordem de magnitude observada:** A mediana da Rework Rate é expressivamente superior à do CFR(a). "
-        "Enquanto os testes automatizados de CI mantêm uma taxa de falha baixa (mediana ~5,3%), a grande maioria "
-        "dos repositórios tem lançamentos de patch frequentes (mediana de retrabalho ~87,5%), indicando que a "
-        "natureza iterativa de projetos open-source é predominantemente corretiva entre versões principais.",
+        f"2. **Ordem de magnitude observada:** a mediana da Rework Rate ({_pct(rw.median())}) é "
+        f"muito superior à do CFR (a) ({_pct(cfr.median())}). A diferença vem da unidade: o CI corrige "
+        "falhas de integração antes da release, enquanto boa parte das releases de projetos open-source "
+        "é de patch, que a heurística tende a marcar como corretiva (precisão baixa na amostra-ouro).",
         "",
         "---",
         "",
@@ -380,10 +411,7 @@ def markdown(
         "4 observações possui poder estatístico limitado para atingir $p < 0{,}05$ assintótico "
         "(a sequência monótona perfeita atinge $p \\approx 0{,}089$). Portanto, 100% dos repositórios "
         "são classificados como `negligible` (sem tendência estatisticamente comprovável a 5%).",
-        "- **Resolução na escala mensal ($n = 12$):** Ao expandir para os 12 meses da janela, "
-        "detectam-se tendências significativas: **16,8% dos repositórios aumentaram sua frequência de deploy** "
-        "e **11,1% apresentaram aumento na taxa de falha de CI**, enquanto a vasta maioria (~77% a 83%) "
-        "manteve desempenho estável ao longo de todo o ano de observação.",
+        f"- **Resolução na escala mensal ($n = 12$):** {_trend_sentence(summary_df)}",
         "",
     ]
     return "\n".join(lines)

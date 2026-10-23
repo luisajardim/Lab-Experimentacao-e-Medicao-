@@ -486,7 +486,9 @@ def _run_collect(
                              total_done, len(candidates), processed, skipped)
 
     log.info("Coleta concluída: %d repositórios processados, %d ignorados", processed, skipped)
-    funnel_md = reports_dir / "funnel.md"
+    # Log da última execução do collect. O funil oficial (reports/funnel.md) é gerado
+    # pelo estágio report a partir do snapshot versionado (ver snapshot_funnel).
+    funnel_md = reports_dir / "funnel_collect.md"
     write_funnel_report(
         funnel_md,
         total_candidates=funnel_stats["candidates"],
@@ -526,6 +528,135 @@ def write_funnel_report(
         f"| **5. Amostra Final** | Conjunto final validado para o cálculo das métricas DORA | (Nenhum, compõem o dataset final) | {final_sample} |\n"
     )
     funnel_path.write_text(content, encoding="utf-8")
+
+
+def snapshot_funnel(
+    gold_dir: Path,
+    candidates_csv: Path,
+    manifest_csv: Path | None,
+    metrics_csv: Path,
+    window_start: str,
+    window_end: str,
+    min_releases: int,
+    min_workflow_runs: int,
+) -> dict[str, int]:
+    """Contagens do funil a partir do snapshot local (JSONs em gold + manifesto + metrics.csv).
+
+    Ordem do ENUNCIADO §4/§7: usa Actions → ≥ min_releases → ≥ min_workflow_runs.
+    Runs válidos: ``event=push`` no default branch (como em create_candidate_manifest).
+    """
+    def _rows(path: Path | None) -> int:
+        if path is None or not path.exists():
+            return 0
+        with path.open(encoding="utf-8") as handle:
+            return max(0, sum(1 for _ in handle) - 1)
+
+    counts = {"no_actions": 0, "few_releases": 0, "few_runs": 0, "eligible": 0, "collected": 0}
+    for path in gold_dir.rglob("*.json"):
+        if path.parent == gold_dir or path.parent.name == "dossiers":
+            continue
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        repository = payload.get("repository", {})
+        if not isinstance(repository.get("full_name"), str):
+            continue
+        counts["collected"] += 1
+        branch = repository.get("default_branch")
+        runs = [
+            run
+            for month in payload.get("runs_by_month", {}).values()
+            for run in month
+            if run.get("branch") == branch and run.get("event") == "push"
+        ]
+        releases = [
+            r for r in payload.get("releases", []) if _eligible_release(r, window_start, window_end)
+        ]
+        if not runs:
+            counts["no_actions"] += 1
+        elif len(releases) < min_releases:
+            counts["few_releases"] += 1
+        elif len(runs) < min_workflow_runs:
+            counts["few_runs"] += 1
+        else:
+            counts["eligible"] += 1
+    counts["candidates"] = _rows(candidates_csv)
+    counts["manifest"] = _rows(manifest_csv)
+    counts["final"] = _rows(metrics_csv)
+    return counts
+
+
+def lead_time_coverage(
+    gold_dir: Path, names: list[str], window_start: str, window_end: str
+) -> dict[str, int]:
+    """Quantas releases da janela entram no lead time e por que as demais ficam de fora.
+
+    ENUNCIADO §11: releases com compare 404 são ignoradas e contadas.
+    """
+    counts: dict[str, int] = {"releases": 0, "used": 0, "no_new_commits": 0}
+    for name in names:
+        owner, repo = name.split("/", 1)
+        path = gold_dir / owner / f"{repo}.json"
+        if not path.exists():
+            continue
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        window = {
+            r["tag_name"]
+            for r in payload.get("releases", [])
+            if _eligible_release(r, window_start, window_end)
+        }
+        for item in payload.get("commits_between", []):
+            if item.get("release") not in window:
+                continue
+            counts["releases"] += 1
+            reason = item.get("ignored_reason")
+            if reason:
+                counts[reason] = counts.get(reason, 0) + 1
+            elif not item.get("commits"):
+                counts["no_new_commits"] += 1
+            else:
+                counts["used"] += 1
+    return counts
+
+
+def write_snapshot_funnel_report(
+    funnel_path: Path, counts: dict[str, int], min_releases: int, min_workflow_runs: int
+) -> None:
+    """Escreve reports/funnel.md com as contagens de ``snapshot_funnel``."""
+    after_actions = counts["collected"] - counts["no_actions"]
+    after_releases = after_actions - counts["few_releases"]
+    not_collected = counts["candidates"] - counts["collected"]
+    rows = [
+        ("1. Resultados da busca", "Search API, 12 faixas de estrelas (máx. 1.000 por consulta)",
+         "—", counts["candidates"]),
+        ("2. Coletados", "JSON de releases, tags, commits e runs salvo em `data/gold/`",
+         f"{not_collected} não persistidos: descartados no collect (sem Actions, poucas releases "
+         "ou poucos runs) ou não visitados; o snapshot não guarda o motivo por repositório",
+         counts["collected"]),
+        ("3. Com Actions", "≥ 1 workflow run `push` no default branch na janela",
+         f"{counts['no_actions']} sem runs válidos", after_actions),
+        (f"4. ≥ {min_releases} releases", "releases publicadas (não-draft, não-pré-release) na janela",
+         f"{counts['few_releases']} com poucas releases", after_releases),
+        (f"5. ≥ {min_workflow_runs} runs", "runs `push` no default branch na janela",
+         f"{counts['few_runs']} com poucos runs", counts["eligible"]),
+        ("6. Manifesto", "população congelada (`candidate_manifest.csv`, seed 42)",
+         f"{counts['eligible'] - counts['manifest']} fora do corte", counts["manifest"]),
+        ("7. Amostra final", "corte determinístico do estágio `metrics` (seed 42)",
+         f"{counts['manifest'] - counts['final']} fora do corte", counts["final"]),
+    ]
+    lines = [
+        "# Funil de seleção de repositórios",
+        "",
+        "Gerado por `python -m pipeline --stage report` a partir do snapshot versionado; não edite à mão.",
+        "",
+        "| Etapa | Critério | Descartados | Restantes |",
+        "|---|---|---|---:|",
+        *[f"| {a} | {b} | {c} | {d} |" for a, b, c, d in rows],
+        "",
+    ]
+    funnel_path.parent.mkdir(parents=True, exist_ok=True)
+    funnel_path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def _in_window(timestamp: str | None, start: str, end: str) -> bool:
@@ -936,9 +1067,40 @@ def _run_report(config_path: str) -> int:
             f.write(f"- **{name}**: ρ={result['rho']:.3f}, p={result['p_value']:.4f}, "
                     f"{'significativo' if result['significant'] else 'não significativo'}\n")
 
+        coverage = lead_time_coverage(
+            base / Path(paths_cfg["gold_dir"]),
+            list(df["full_name"]),
+            cfg["window"]["start"],
+            cfg["window"]["end"],
+        )
+        f.write("\n## Lead time: releases usadas e ignoradas\n\n")
+        f.write("| Situação | Releases | % |\n|---|---:|---:|\n")
+        total = coverage["releases"] or 1
+        for key, count in sorted(coverage.items(), key=lambda kv: -kv[1]):
+            if key != "releases":
+                f.write(f"| `{key}` | {count} | {count / total:.1%} |\n")
+        f.write(f"| **total na janela** | {coverage['releases']} | 100% |\n")
+
         f.write("\n---\n*Gerado automaticamente pelo pipeline DORA Miner (Lab03).*\n")
 
     log.info("Relatório salvo em %s", report_md)
+
+    manifest_cfg = paths_cfg.get("candidate_manifest_csv")
+    counts = snapshot_funnel(
+        gold_dir=base / Path(paths_cfg["gold_dir"]),
+        candidates_csv=base / Path(paths_cfg["candidates_csv"]),
+        manifest_csv=base / Path(manifest_cfg) if manifest_cfg else None,
+        metrics_csv=metrics_csv,
+        window_start=cfg["window"]["start"],
+        window_end=cfg["window"]["end"],
+        min_releases=cfg["filters"]["min_releases"],
+        min_workflow_runs=cfg["filters"]["min_workflow_runs"],
+    )
+    funnel_md = reports_dir / "funnel.md"
+    write_snapshot_funnel_report(
+        funnel_md, counts, cfg["filters"]["min_releases"], cfg["filters"]["min_workflow_runs"]
+    )
+    log.info("Funil de seleção salvo em %s", funnel_md)
 
     # Gerar também um CSV resumo para fácil importação
     summary_csv = reports_dir / "summary.csv"

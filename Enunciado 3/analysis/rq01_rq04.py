@@ -74,11 +74,19 @@ def describe_c1(frame: pd.DataFrame) -> pd.DataFrame:
     )
 
 
+def _relative(path: Path) -> str:
+    """Caminho relativo ao projeto, para as saídas não dependerem da máquina."""
+    try:
+        return str(path.resolve().relative_to(PROJECT_ROOT))
+    except ValueError:
+        return str(path)
+
+
 def markdown(summary: pd.DataFrame, c1: pd.DataFrame, source: Path) -> str:
     lines = [
         "# T19 — RQ01--RQ04 e classificação DORA C1",
         "",
-        f"Fonte: `{source}`. ICs de 95% por bootstrap BCa com 2.000 reamostragens (semente 42).",
+        f"Fonte: `{_relative(source)}`. ICs de 95% por bootstrap BCa com 2.000 reamostragens (semente 42).",
         "",
         "## Estatística descritiva por repositório",
         "",
