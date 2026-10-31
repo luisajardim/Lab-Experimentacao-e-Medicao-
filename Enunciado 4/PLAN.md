@@ -43,11 +43,17 @@ conhecidas à qualidade dos dados da NASA (Shepperd et al., 2013) e LOC da class
 
 | Sprint | Membro A — Bernardo | Membro B — Luísa | Membro C — Pedro |
 |---|---|---|---|
-| **S01** (7 pt) | T01 scaffold + comando único · T04 gerador de dados simulados (cópula) · T07 dashboard base (7 seções) + deploy no Streamlit Cloud | T02 coleta do KC1 + amostra 30 + proveniência · T03 cenário (pergunta, H₀/H₁, parâmetros, expectativa) · T06a **G1** | T05 Pearson/Spearman vetorizados + aplicação a um dataset simulado com interpretação · T06b **G2** |
-| **S02** (7 pt) | T08 motor de simulação (10.000 réplicas × 3 situações × 7 efeitos) · T14 extra: tamanho da amostra (opcional) | T10 poder (Q2/Q3) + **G4** · T11 seção 6: tabela dos dados reais | T09 erro tipo I (Q1/Q3) + **G3** · T12 seção 7: conclusão + seletor de α + revisão dos textos |
-| **Final** (6 pt) | T13 apresentação: perguntas 9, 10, 11, 13, 15 | T13 apresentação: perguntas 1, 2, 3, 4, 14 | T13 apresentação: perguntas 5, 6, 7, 8, 12 |
+| **S01** (7 pt) | T01 scaffold + comando único ✅ · T02 coleta do KC1 + amostra 30 + proveniência → T03 cenário (pergunta, H₀/H₁, parâmetros, expectativa) → T04 gerador de dados simulados (cópula) | T05 Pearson/Spearman vetorizados + aplicação a um dataset simulado com interpretação → T06b **G2** | T07 dashboard base (7 seções) + deploy no Streamlit Cloud → T06a **G1** |
+| **S02** (7 pt) | T08 motor de simulação (10.000 réplicas × 3 situações × 7 efeitos) · T14 extra: tamanho da amostra (opcional) | T11 seção 6: tabela dos dados reais → T09 erro tipo I (Q1/Q3) + **G3** | T10 poder (Q2/Q3) + **G4** → T12 seção 7: conclusão + seletor de α + revisão dos textos |
+| **Final** (6 pt) | T13 apresentação: perguntas 1, 2, 3, 4, 11 | T13 apresentação: perguntas 5, 6, 7, 9, 14 | T13 apresentação: perguntas 8, 10, 12, 13, 15 |
 
-> Papéis são uma **proposta**. Ajustes via Issues com `Assignee` por integrante.
+> Divisão **por sequências de dependência**: cada integrante fica com uma cadeia de tarefas, para
+> reduzir esperas entre pessoas e cada um continuar no próprio código (A: dados → cenário → gerador →
+> motor; B: testes → G2 → dados reais → G3; C: dashboard → G1 → G4 → conclusão). As perguntas da
+> apresentação acompanham o que cada um construiu. Ajustes via Issues com `Assignee` por integrante.
+>
+> **Caminho crítico da S01:** T02 → T03 → T04 (A) → T06a (C). A T04 precisa ficar pronta até ~03/11
+> para o G1 fechar até 05/11.
 > Regra do enunciado: em cada sprint, cada integrante é Assignee de ≥ 1 Issue com código commitado,
 > e **todo commit referencia o número da Issue** (`#NN`).
 
@@ -231,7 +237,7 @@ para os gráficos serem construídos em paralelo.
 - *Objetivo:* Responder às 15 perguntas em até 7 minutos usando o dashboard.
 - *Regras de negócio / restrições:*
   - Respostas curtas (~30 s cada); cada integrante responde ≥ 4 perguntas, mas todos devem saber responder qualquer uma.
-  - Divisão: **A** 9, 10, 11, 13, 15 · **B** 1, 2, 3, 4, 14 · **C** 5, 6, 7, 8, 12.
+  - Divisão: **A** 1, 2, 3, 4, 11 · **B** 5, 6, 7, 9, 14 · **C** 8, 10, 12, 13, 15.
   - Pelo menos um ensaio cronometrado antes de 12/11.
 - *Critérios de aceitação:* `APRESENTACAO.md` com o roteiro (pergunta → seção/gráfico do dashboard → resposta curta).
 - *Dependências:* T12.
@@ -264,7 +270,7 @@ para os gráficos serem construídos em paralelo.
 
 | Risco | Mitigação |
 |---|---|
-| S01 curta (até 05/11) | T02/T05/T01 começam em paralelo no 1º dia; T04 só depende de `params.json` (T03) |
+| S01 curta (até 05/11) | T02 (A), T05 (B) e T07 (C) começam em paralelo no 1º dia; T04 só depende de `params.json` (T03) e precisa ficar pronta até ~03/11 |
 | G3/G4 travados pelo motor (T08) | Schema + rodada de 500 réplicas no 1º dia da S02 |
 | Deploy no Cloud falhar por causa do caminho com espaço | Deploy já na S01 (T07); se falhar, usar `requirements.txt` na pasta e/ou ajustar o caminho do app |
 | Efeito no eixo X favorecer um teste | ρ latente comum aos dois testes, com r e ρ_s populacionais anotados |
@@ -289,19 +295,19 @@ Todo commit deve citar o número da Issue (ex.: `feat(generate): cópula gaussia
 | Tarefa | Issue | Responsável | Milestone |
 |---|---|---|---|
 | T01 Estruturar Projeto | #75 | A (alvimdev) | SPRINT 1 (E4) |
-| T02 Coletar Dados Reais (KC1) | #76 | B (luisajardim) | SPRINT 1 (E4) |
-| T03 Definir Cenário | #77 | B (luisajardim) | SPRINT 1 (E4) |
+| T02 Coletar Dados Reais (KC1) | #76 | A (alvimdev) | SPRINT 1 (E4) |
+| T03 Definir Cenário | #77 | A (alvimdev) | SPRINT 1 (E4) |
 | T04 Implementar Gerador de Dados Simulados | #78 | A (alvimdev) | SPRINT 1 (E4) |
-| T05 Implementar Testes de Pearson e Spearman | #79 | C (pedroseabra27) | SPRINT 1 (E4) |
-| T06a Construir Gráfico G1 | #80 | B (luisajardim) | SPRINT 1 (E4) |
-| T06b Construir Gráfico G2 | #81 | C (pedroseabra27) | SPRINT 1 (E4) |
-| T07 Construir Dashboard Base + Deploy | #82 | A (alvimdev) | SPRINT 1 (E4) |
+| T05 Implementar Testes de Pearson e Spearman | #79 | B (luisajardim) | SPRINT 1 (E4) |
+| T06a Construir Gráfico G1 | #80 | C (pedroseabra27) | SPRINT 1 (E4) |
+| T06b Construir Gráfico G2 | #81 | B (luisajardim) | SPRINT 1 (E4) |
+| T07 Construir Dashboard Base + Deploy | #82 | C (pedroseabra27) | SPRINT 1 (E4) |
 | T08 Implementar Motor de Simulação | #83 | A (alvimdev) | SPRINT 2 / FINAL (E4) |
-| T09 Avaliar Erro Tipo I + Gráfico G3 | #84 | C (pedroseabra27) | SPRINT 2 / FINAL (E4) |
-| T10 Avaliar Poder + Gráfico G4 | #85 | B (luisajardim) | SPRINT 2 / FINAL (E4) |
+| T09 Avaliar Erro Tipo I + Gráfico G3 | #84 | B (luisajardim) | SPRINT 2 / FINAL (E4) |
+| T10 Avaliar Poder + Gráfico G4 | #85 | C (pedroseabra27) | SPRINT 2 / FINAL (E4) |
 | T11 Aplicar Testes aos Dados Reais | #86 | B (luisajardim) | SPRINT 2 / FINAL (E4) |
 | T12 Escrever Conclusão + Seletor de α | #87 | C (pedroseabra27) | SPRINT 2 / FINAL (E4) |
-| T13 Preparar Apresentação (9, 10, 11, 13, 15) | #88 | A (alvimdev) | SPRINT 2 / FINAL (E4) |
-| T13 Preparar Apresentação (1, 2, 3, 4, 14) | #89 | B (luisajardim) | SPRINT 2 / FINAL (E4) |
-| T13 Preparar Apresentação (5, 6, 7, 8, 12) | #90 | C (pedroseabra27) | SPRINT 2 / FINAL (E4) |
+| T13 Preparar Apresentação (1, 2, 3, 4, 11) | #88 | A (alvimdev) | SPRINT 2 / FINAL (E4) |
+| T13 Preparar Apresentação (5, 6, 7, 9, 14) | #89 | B (luisajardim) | SPRINT 2 / FINAL (E4) |
+| T13 Preparar Apresentação (8, 10, 12, 13, 15) | #90 | C (pedroseabra27) | SPRINT 2 / FINAL (E4) |
 | T14 Discutir Tamanho da Amostra (opcional) | #91 | A (alvimdev) | SPRINT 2 / FINAL (E4) |
