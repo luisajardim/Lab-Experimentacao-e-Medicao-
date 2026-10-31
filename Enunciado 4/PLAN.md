@@ -82,10 +82,9 @@ para os gráficos serem construídos em paralelo.
 #### T01 Estruturar Projeto
 - *Objetivo:* Criar a estrutura base do projeto Python do Lab04 com dependências, testes e comando único.
 - *Regras de negócio / restrições:*
-  - Layout: `src/lab04/` (`data.py`, `fit.py`, `generate.py`, `stat_tests.py`, `simulate.py`, `figures.py`, `cli.py`), `app.py`, `data/real/`, `data/sim/`, `docs/`, `tests/`.
+  - Layout: `src/` (`config.py`, `data.py`, `fit.py`, `generate.py`, `stat_tests.py`, `simulate.py`, `figures.py`, `cli.py`), `app.py`, `data/real/`, `data/sim/`, `docs/`, `tests/`.
   - Python 3.12 mínimo; `uv` como gerenciador de ambiente e lock file.
   - Entrada única `uv run lab04` (entry point em `[project.scripts]`).
-  - Semente fixa centralizada (ex.: `SEED = 42` em `src/lab04/config.py`).
 - *Critérios de aceitação:*
   - `uv sync` instala sem erros; `uv run pytest` e `uv run ruff check` passam.
   - `README.md` com pré-requisitos e o comando único.
@@ -102,7 +101,7 @@ para os gráficos serem construídos em paralelo.
 - *Critérios de aceitação:*
   - `data/real/kc1_full.csv` e `data/real/kc1_sample30.csv`; rodar de novo gera a mesma amostra.
   - `docs/fonte_dados.md`: origem, URL, citação PROMISE, data da coleta, como foi coletado, descrição das colunas e limitações.
-- *Implementação:* `src/lab04/data.py`.
+- *Implementação:* `src/data.py`.
 - *Dependências:* T01.
 
 #### T03 Definir Cenário
@@ -114,7 +113,7 @@ para os gráficos serem construídos em paralelo.
   - Registrar, **antes de simular**, qual teste o grupo espera que se saia melhor e por quê.
 - *Critérios de aceitação:*
   - `docs/cenario.md` completo; parâmetros ajustados salvos em `data/real/params.json`.
-- *Implementação:* `src/lab04/fit.py` + documentação.
+- *Implementação:* `src/fit.py` + documentação.
 - *Dependências:* T02.
 
 #### T04 Implementar Gerador de Dados Simulados
@@ -123,9 +122,10 @@ para os gráficos serem construídos em paralelo.
   - S-base: normal bivariada com correlação ρ.
   - S-real: cópula gaussiana (correlação latente ρ) → marginais lognormal (LOC) e binomial negativa (defeitos) com os parâmetros de `params.json`.
   - Assinatura vetorizada: `generate(situacao, rho, n, reps, rng) -> (x[reps, n], y[reps, n])`.
+  - Definir a semente fixa centralizada (`SEED = 42` em `src/config.py`), importada por todos os módulos que sorteiam dados (incluindo a amostra de 30 da T02).
 - *Critérios de aceitação:*
   - Testes: com ρ = 0 a correlação média é ≈ 0; marginais simuladas batem com os parâmetros ajustados; mesma semente ⇒ mesmos dados.
-- *Implementação:* `src/lab04/generate.py` + `tests/test_generate.py`.
+- *Implementação:* `src/generate.py` + `tests/test_generate.py`.
 - *Dependências:* T01, T03.
 
 #### T05 Implementar Testes de Pearson e Spearman
@@ -137,7 +137,7 @@ para os gráficos serem construídos em paralelo.
 - *Critérios de aceitação:*
   - Testes comparam com `scipy.stats.pearsonr` e `spearmanr` (tolerância numérica).
   - Os dois testes aplicados a **um** conjunto simulado (S-real, ρ escolhido) com texto de interpretação do resultado.
-- *Implementação:* `src/lab04/stat_tests.py` + `tests/test_stat_tests.py`.
+- *Implementação:* `src/stat_tests.py` + `tests/test_stat_tests.py`.
 - *Dependências:* T01.
 
 #### T06a Construir Gráfico G1
@@ -147,7 +147,7 @@ para os gráficos serem construídos em paralelo.
   - Título, eixos com nome e unidade, legenda.
   - Texto de 2–4 frases: forma dos dados (assimetria, outliers, zeros) e por que os parâmetros foram escolhidos assim.
 - *Critérios de aceitação:* G1 renderizado na seção 2 do dashboard.
-- *Implementação:* `src/lab04/figures.py` (`fig_g1`).
+- *Implementação:* `src/figures.py` (`fig_g1`).
 - *Dependências:* T04, T07.
 
 #### T06b Construir Gráfico G2
@@ -158,7 +158,7 @@ para os gráficos serem construídos em paralelo.
   - Mesma cor para cada teste em todos os gráficos.
   - Texto: o que cada teste compara, onde fica a região de rejeição e o que significa (e o que não significa) o p-valor.
 - *Critérios de aceitação:* G2 renderizado na seção 3 do dashboard.
-- *Implementação:* `src/lab04/figures.py` (`fig_g2`).
+- *Implementação:* `src/figures.py` (`fig_g2`).
 - *Dependências:* T05, T07.
 
 #### T07 Construir Dashboard Base + Deploy
@@ -170,7 +170,7 @@ para os gráficos serem construídos em paralelo.
   - Deploy no Streamlit Community Cloud cedo, para validar o caminho `Enunciado 4/app.py` (há espaço no nome da pasta).
 - *Critérios de aceitação:*
   - `uv run lab04` abre o dashboard localmente; URL pública funcionando; G1 e G2 visíveis ao fim da S01.
-- *Implementação:* `app.py`, `src/lab04/cli.py`.
+- *Implementação:* `app.py`, `src/cli.py`.
 - *Dependências:* T01.
 
 ### S02 — Simulações Q1–Q3, G3, G4 e entrega final
@@ -185,7 +185,7 @@ para os gráficos serem construídos em paralelo.
   - Estimar r e ρ_s populacionais para cada ρ latente (amostra grande).
 - *Critérios de aceitação:*
   - `uv run lab04` regenera os mesmos resultados; tempo total de simulação documentado no README.
-- *Implementação:* `src/lab04/simulate.py`.
+- *Implementação:* `src/simulate.py`.
 - *Dependências:* T04, T05.
 
 #### T09 Avaliar Erro Tipo I + Gráfico G3
@@ -195,7 +195,7 @@ para os gráficos serem construídos em paralelo.
   - Linha em 5% e faixa de Monte Carlo (±0,43 pp).
   - Texto: se cada teste ficou perto de 5% em cada situação, qual se desviou, se ficou liberal ou conservador e por quê.
 - *Critérios de aceitação:* G3 renderizado na seção 4.
-- *Implementação:* `src/lab04/figures.py` (`fig_g3`).
+- *Implementação:* `src/figures.py` (`fig_g3`).
 - *Dependências:* T08.
 
 #### T10 Avaliar Poder + Gráfico G4
@@ -205,7 +205,7 @@ para os gráficos serem construídos em paralelo.
   - Anotar r e ρ_s populacionais correspondentes a cada ρ latente.
   - Texto: qual teste detecta melhor o efeito e em que situações a vantagem muda de lado.
 - *Critérios de aceitação:* G4 renderizado na seção 5.
-- *Implementação:* `src/lab04/figures.py` (`fig_g4`).
+- *Implementação:* `src/figures.py` (`fig_g4`).
 - *Dependências:* T08.
 
 #### T11 Aplicar Testes aos Dados Reais
@@ -214,7 +214,7 @@ para os gráficos serem construídos em paralelo.
   - Na amostra de 30: estatística (r, ρ_s, t), p-valor, tamanho do efeito com IC 95% (Fisher z para r; bootstrap para ρ_s) e conclusão de cada teste.
   - Comentar a importância prática do efeito (pergunta 14).
 - *Critérios de aceitação:* Tabela renderizada na seção 6.
-- *Implementação:* `src/lab04/stat_tests.py` + `app.py`.
+- *Implementação:* `src/stat_tests.py` + `app.py`.
 - *Dependências:* T02, T05.
 
 #### T12 Escrever Conclusão + Seletor de α
