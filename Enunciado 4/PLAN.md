@@ -103,6 +103,7 @@ para os gráficos serem construídos em paralelo.
   - Fonte: OpenML id 1070 (`kc1-numeric`, PROMISE/NASA MDP), arquivo ARFF.
   - Colunas usadas: `sumLOC_TOTAL` (LOC da classe) e `NUMDEFECTS` (nº de defeitos da classe).
   - Salvar o dataset completo (145 classes) e a amostra de 30 classes sorteada com `default_rng(42)`.
+  - Criar a semente fixa centralizada (`SEED = 42` em `src/config.py`), usada pela amostra e por todos os módulos que sorteiam dados.
   - Não é preciso pipeline: um script curto + CSV bastam.
 - *Critérios de aceitação:*
   - `data/real/kc1_full.csv` e `data/real/kc1_sample30.csv`; rodar de novo gera a mesma amostra.
@@ -128,7 +129,7 @@ para os gráficos serem construídos em paralelo.
   - S-base: normal bivariada com correlação ρ.
   - S-real: cópula gaussiana (correlação latente ρ) → marginais lognormal (LOC) e binomial negativa (defeitos) com os parâmetros de `params.json`.
   - Assinatura vetorizada: `generate(situacao, rho, n, reps, rng) -> (x[reps, n], y[reps, n])`.
-  - Definir a semente fixa centralizada (`SEED = 42` em `src/config.py`), importada por todos os módulos que sorteiam dados (incluindo a amostra de 30 da T02).
+  - Usar a semente fixa centralizada `SEED` de `src/config.py` (criada na T02).
 - *Critérios de aceitação:*
   - Testes: com ρ = 0 a correlação média é ≈ 0; marginais simuladas batem com os parâmetros ajustados; mesma semente ⇒ mesmos dados.
 - *Implementação:* `src/generate.py` + `tests/test_generate.py`.

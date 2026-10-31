@@ -34,6 +34,7 @@ Desenvolvimento:
 ```bash
 uv run pytest
 uv run ruff check .
+uv run python -m data   # (re)gera os CSVs do KC1 em data/real/ (T02)
 ```
 
 Todas as etapas usam semente fixa (`numpy.random.default_rng(42)`), então os resultados são
