@@ -194,7 +194,7 @@ cálculos manuais ao reportar resultados reproduzidos.
 ## Artigo (LaTeX, template SBC)
 
 O artigo fica em `latex/main.tex` (referências em `latex/referencias.bib`) e usa
-o template oficial da SBC, versionado em `templates/sbc/`. As figuras vêm direto
+o template oficial da SBC, versionado em `Templates/SBC/` (raiz do repositório). As figuras vêm direto
 de `analysis/output/figures/`. Para gerar `RELATORIO.pdf` na raiz:
 
 ```bash
@@ -205,8 +205,8 @@ Na primeira execução, o script baixa o TinyTeX (via `pytinytex`, em
 `~/.pytinytex`) e alguns pacotes do CTAN, e gera um formato `pdflatex` com
 hifenização em português. Nada disso exige `sudo` nem Perl. As execuções
 seguintes só compilam. Para usar no Overleaf, envie `latex/main.tex`,
-`latex/referencias.bib`, `templates/sbc/sbc-template.sty`,
-`templates/sbc/sbc.bst` e as figuras, e ajuste o `\graphicspath`.
+`latex/referencias.bib`, `../Templates/SBC/sbc-template.sty`,
+`../Templates/SBC/sbc.bst` e as figuras, e ajuste o `\graphicspath`.
 
 ## Estrutura
 

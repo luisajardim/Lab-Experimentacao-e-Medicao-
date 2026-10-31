@@ -11,7 +11,7 @@ releases recentes do TinyTeX, então o download é feito aqui, com versão fixa.
 O ``tlmgr`` do TinyTeX exige módulos Perl (``File::Find``) que nem toda
 distribuição traz, então os pacotes extras são baixados direto do repositório
 do TeX Live no CTAN e extraídos numa árvore ``TEXMFHOME`` própria.
-O template SBC fica em ``templates/sbc/`` e entra no caminho de busca do TeX
+O template SBC fica em ``Templates/SBC/`` (raiz do repositório) e entra no caminho de busca do TeX
 por ``TEXINPUTS``/``BSTINPUTS``; as figuras vêm de ``analysis/output/figures/``.
 """
 
@@ -33,7 +33,7 @@ import pytinytex
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LATEX_DIR = PROJECT_ROOT / "latex"
-TEMPLATE_DIR = PROJECT_ROOT / "templates" / "sbc"
+TEMPLATE_DIR = PROJECT_ROOT.parent / "Templates" / "SBC"
 BUILD_DIR = LATEX_DIR / "build"
 OUTPUT_PDF = PROJECT_ROOT / "RELATORIO.pdf"
 MAIN = "main"
