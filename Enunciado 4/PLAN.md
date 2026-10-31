@@ -44,7 +44,7 @@ conhecidas à qualidade dos dados da NASA (Shepperd et al., 2013) e LOC da class
 | Sprint | Membro A — Bernardo | Membro B — Luísa | Membro C — Pedro |
 |---|---|---|---|
 | **S01** (7 pt) | T01 scaffold + comando único ✅ · T02 coleta do KC1 + amostra 30 + proveniência → T03 cenário (pergunta, H₀/H₁, parâmetros, expectativa) → T04 gerador de dados simulados (cópula) | T05 Pearson/Spearman vetorizados + aplicação a um dataset simulado com interpretação → T06b **G2** | T07 dashboard base (7 seções) + deploy no Streamlit Cloud → T06a **G1** |
-| **S02** (7 pt) | T08 motor de simulação (10.000 réplicas × 3 situações × 7 efeitos) · T14 extra: tamanho da amostra (opcional) | T11 seção 6: tabela dos dados reais → T09 erro tipo I (Q1/Q3) + **G3** | T10 poder (Q2/Q3) + **G4** → T12 seção 7: conclusão + seletor de α + revisão dos textos |
+| **S02** (7 pt) | T08 motor de simulação (10.000 réplicas × 4 situações × 7 efeitos) · T14 extra: tamanho da amostra (opcional) | T11 seção 6: tabela dos dados reais → T09 erro tipo I (Q1/Q3) + **G3** | T10 poder (Q2/Q3) + **G4** → T12 seção 7: conclusão + seletor de α + revisão dos textos |
 | **Final** (6 pt) | T13 apresentação: perguntas 1, 2, 3, 4, 11 | T13 apresentação: perguntas 5, 6, 7, 9, 14 | T13 apresentação: perguntas 8, 10, 12, 13, 15 |
 
 > Divisão **por sequências de dependência**: cada integrante fica com uma cadeia de tarefas, para
@@ -70,6 +70,7 @@ para os gráficos serem construídos em paralelo.
 | **S-base** (bem-comportada) | Normal bivariada padronizada (média 0, dp 1) com correlação ρ | 30 | Cenário ideal para o Pearson |
 | **S-real** (realista) | Cópula gaussiana com correlação latente ρ → LOC ~ Gamma e defeitos ~ binomial negativa, parâmetros ajustados no KC1 inteiro por máxima verossimilhança | 30 | "Dados como os reais": assimetria, outliers, zeros/empates (viola pressupostos do Pearson) |
 | **S-real-n10** (amostra pequena) | Mesmo gerador da S-real | 10 | Violação por amostra pequena |
+| **S-outlier** (ponto dominante) | S-real em que cada classe tem chance de 1/145 (proporção do KC1) de ser trocada por uma classe extrema, acima do percentil 99 em LOC e em defeitos | 30 | Violação por outlier e o fenômeno da pergunta: no KC1, uma só classe sobe o r de 0,57 para 0,69 (ver `docs/cenario.md`) |
 
 - **Tamanho do efeito (eixo do G4):** ρ latente da cópula ∈ {0; 0,1; 0,2; 0,3; 0,4; 0,5; 0,6}. Para cada valor,
   reportar também o r de Pearson e o ρ de Spearman populacionais resultantes (estimados numa amostra grande).
@@ -125,10 +126,11 @@ para os gráficos serem construídos em paralelo.
 - *Dependências:* T02.
 
 #### T04 Implementar Gerador de Dados Simulados
-- *Objetivo:* Gerar conjuntos de dados simulados para as três situações.
+- *Objetivo:* Gerar conjuntos de dados simulados para as quatro situações.
 - *Regras de negócio / restrições:*
   - S-base: normal bivariada padronizada (média 0, dp 1) com correlação ρ.
   - S-real: cópula gaussiana (correlação latente ρ) → marginais Gamma (LOC) e binomial negativa (defeitos) com os parâmetros de `params.json`.
+  - S-outlier: S-real com contaminação — cada classe tem chance de 1/145 de ser trocada por uma classe extrema (acima do percentil 99 em LOC e em defeitos).
   - Assinatura vetorizada: `generate(situacao, rho, n, reps, rng) -> (x[reps, n], y[reps, n])`.
   - Usar a semente fixa centralizada `SEED` de `src/config.py` (criada na T02).
 - *Critérios de aceitação:*
@@ -186,7 +188,7 @@ para os gráficos serem construídos em paralelo.
 #### T08 Implementar Motor de Simulação
 - *Objetivo:* Rodar as simulações de Monte Carlo das perguntas Q1, Q2 e Q3.
 - *Regras de negócio / restrições:*
-  - 10.000 réplicas × 3 situações × 7 efeitos (ρ = 0; 0,1; …; 0,6); semente fixa com streams por situação.
+  - 10.000 réplicas × 4 situações × 7 efeitos (ρ = 0; 0,1; …; 0,6); semente fixa com streams por situação.
   - Salvar todos os p-valores (para trocar α no dashboard) em `data/sim/` e commitar (o Cloud não re-simula).
   - Cache: não re-simular se parâmetros e semente não mudaram.
   - **Publicar o schema dos resultados no 1º dia** e uma rodada de 500 réplicas para T09/T10.
@@ -259,7 +261,7 @@ para os gráficos serem construídos em paralelo.
 | Decisão | Valor |
 |---|---|
 | Dados reais | KC1 por classe (OpenML 1070); amostra de 30 com `default_rng(42)`; parâmetros ajustados no dataset inteiro |
-| Gerador | Cópula gaussiana → Gamma (LOC) + binomial negativa (defeitos); S-base normal bivariada padronizada |
+| Gerador | Cópula gaussiana → Gamma (LOC) + binomial negativa (defeitos); S-base normal bivariada padronizada; S-outlier com contaminação de 1/145 na cauda |
 | Efeito | ρ latente ∈ {0; 0,1; …; 0,6}, com r e ρ_s populacionais reportados |
 | Testes | Bicaudais, α = 0,05 (seletor 0,01); p pela t(n−2), validado contra scipy |
 | Simulação | 10.000 réplicas por célula, vetorizada, p-valores salvos em `data/sim/` |

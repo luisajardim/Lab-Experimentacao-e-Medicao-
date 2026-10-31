@@ -32,18 +32,38 @@
 
 ## Como os dados da simulação são gerados
 
-Três situações. Em todas, o tamanho do efeito é o **ρ latente** ∈ {0; 0,1; 0,2; 0,3; 0,4; 0,5; 0,6}, com
+Quatro situações. Em todas, o tamanho do efeito é o **ρ latente** ∈ {0; 0,1; 0,2; 0,3; 0,4; 0,5; 0,6}, com
 **10.000 réplicas** por combinação (margem de Monte Carlo ≈ ±0,43 pp em torno de 5%). Com ρ = 0, X e Y são
-independentes, então H₀ é verdadeira para os dois testes.
+independentes nas três primeiras situações, então H₀ é verdadeira para os dois testes. Na S-outlier, ρ = 0
+significa que não há relação entre as classes comuns; qualquer rejeição vem só das classes extremas.
 
 | Situação | Geração | n | Por quê |
 |---|---|---|---|
 | **S-base** | Normal bivariada padronizada (médias 0, desvios 1, correlação ρ) | 30 | Caso ideal para o Pearson. Os dois testes não mudam com mudança de escala, então média e desvio não alteram nada. |
 | **S-real** | Cópula gaussiana: Z ~ N₂(0, ρ) → U = Φ(Z) → LOC = Gamma⁻¹(U₁) e defeitos = BinNeg⁻¹(U₂) | 30 | Reproduz a forma dos dados reais (assimetria, classes gigantes, muitos zeros), que viola os pressupostos do Pearson. |
 | **S-real-n10** | Mesmo gerador da S-real | 10 | Violação por amostra pequena. |
+| **S-outlier** | S-real em que cada classe tem chance de 1 em 145 de ser trocada por uma classe extrema: LOC e defeitos sorteados acima do percentil 99 das distribuições ajustadas (≥ 1.770 LOC e ≥ 57 defeitos) | 30 | Violação por outlier, e o fenômeno da pergunta. Cerca de 19% das amostras recebem uma classe extrema. |
 
 A cópula gaussiana mantém exatamente as distribuições ajustadas de cada variável e controla a dependência
 entre elas só pelo ρ latente.
+
+### Por que a S-outlier existe
+
+A S-outlier foi acrescentada em 31/10/2026, depois de testarmos o gerador. Ao comparar as correlações geradas
+com as do KC1, vimos que a cópula gaussiana não reproduz o que acontece nos dados reais:
+
+| | r (Pearson) | ρ (Spearman) |
+|---|---|---|
+| Gerador S-real, ρ latente = 0,6 (amostra enorme) | 0,47 | 0,52 |
+| KC1 completo | 0,69 | 0,57 |
+| KC1 sem a classe de 2.883 LOC e 101 defeitos | 0,57 | 0,56 |
+| KC1 sem as 3 classes com mais defeitos | 0,52 | 0,55 |
+
+No KC1, **uma única classe** sobe o r de 0,57 para 0,69, enquanto o ρ quase não muda. A proporção de classes que
+estão ao mesmo tempo entre as 10% maiores e as 10% com mais defeitos é parecida no KC1 (4,8%) e no gerador
+(4,1%): a diferença é um ponto dominante, que a cópula praticamente nunca produz. A S-outlier coloca esse tipo de
+ponto na simulação, na mesma frequência do KC1 (1 classe extrema em 145). A classe do KC1 equivale a um extremo
+de cerca de 1 em 1.000 nas distribuições ajustadas (percentil 99,9: 2.817 LOC e 108 defeitos).
 
 ### Parâmetros (ajustados no KC1 inteiro, máxima verossimilhança)
 
@@ -72,8 +92,9 @@ Gerados por [`src/fit.py`](../src/fit.py) (`uv run python -m fit`) e salvos em `
 - Contagens com muitos zeros e cauda longa (máximo 101, assimetria 5,53). A variância real (≈ 118) é 25 vezes
   a média, o que descarta a Poisson. A dispersão r = 0,17 captura esse excesso de variabilidade.
 
-**Efeito de referência:** a correlação de escores normais do KC1 (estimativa do ρ latente da cópula) é 0,59,
-então a grade de 0 a 0,6 cobre de "sem efeito" até o efeito observado nos dados reais.
+**Efeito de referência:** a correlação de escores normais do KC1 (estimativa do ρ latente da cópula) é 0,59.
+Com ρ latente = 0,6, o gerador produz ρ_s ≈ 0,52 (os empates nos defeitos atenuam a correlação), um pouco abaixo
+do 0,57 do KC1; então a grade de 0 a 0,6 vai de "sem efeito" até perto do efeito observado.
 
 ## Expectativa antes de simular
 
@@ -91,6 +112,11 @@ então a grade de 0 a 0,6 cobre de "sem efeito" até o efeito observado nos dado
 - **Poder na S-real-n10 (Q3):** os dois perdem muito poder. A vantagem do Spearman deve continuar, mas menor,
   porque com 10 classes e ~57% de zeros sobram muitos empates nos postos.
 
+**S-outlier (sem expectativa a priori).** Essa situação foi criada depois da análise exploratória descrita
+acima, que já mediu o comportamento dos testes nela: com ρ = 0, o Pearson rejeitou H₀ em ~20% das amostras e o
+Spearman em ~6%; com ρ = 0,3, 39% contra 31%. Por isso ela **não** entra na comparação "esperado × encontrado"
+da conclusão; serve para mostrar o efeito de um ponto dominante, que é o fenômeno da pergunta.
+
 **Evidência que embasa a expectativa:** num piloto com 2.000 subamostras de 30 classes do próprio KC1
 ([`scripts/piloto.py`](../scripts/piloto.py), resultado em `data/real/piloto.json`), o Spearman rejeitou H₀ em
 94,5% delas e o Pearson em 84,7%, apesar de o r do dataset inteiro (0,69) ser maior que o ρ (0,57). O piloto
@@ -101,6 +127,9 @@ usa só dados reais: mostra com que frequência cada teste "vê" a associação 
 - A Gamma subestima a cauda extrema do LOC (percentil 99 = 1.770 contra 2.356), então a simulação gera um pouco
   menos classes gigantes que os dados reais. Isso tende a *favorecer* o Pearson na S-real.
 - A binomial negativa superestima a proporção de classes com ≥ 50 defeitos (1,4% contra 0,7%).
-- A cópula gaussiana impõe uma forma específica de dependência (simétrica, sem dependência extra nas caudas);
-  nos dados reais, a relação pode ser diferente.
+- A cópula gaussiana impõe uma forma específica de dependência (simétrica, sem dependência extra nas caudas).
+  Por isso, nas situações S-real e S-real-n10 o r fica abaixo do ρ, ao contrário do KC1; a S-outlier
+  existe para cobrir essa diferença.
+- Na S-outlier, LOC e defeitos da classe extrema são sorteados de forma independente dentro das caudas, e a
+  taxa (1/145) vem de uma única classe do KC1.
 - Os parâmetros vêm das 145 classes do KC1, não da amostra de 30, para ficarem mais estáveis.
