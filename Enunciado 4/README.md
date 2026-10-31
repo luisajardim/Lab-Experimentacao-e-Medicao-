@@ -35,6 +35,8 @@ Desenvolvimento:
 uv run pytest
 uv run ruff check .
 uv run python -m data   # (re)gera os CSVs do KC1 em data/real/ (T02)
+uv run python -m fit    # (re)ajusta os parâmetros da simulação em data/real/params.json (T03)
+uv run python scripts/piloto.py   # piloto Pearson × Spearman em subamostras do KC1 (T03)
 ```
 
 Todas as etapas usam semente fixa (`numpy.random.default_rng(42)`), então os resultados são
@@ -48,16 +50,17 @@ Enunciado 4/
 ├── src/
 │   ├── config.py     # semente, caminhos, situações, grade de efeitos, paleta
 │   ├── data.py       # coleta do KC1 + amostra de 30 classes
-│   ├── fit.py        # ajuste lognormal (LOC) e binomial negativa (defeitos)
+│   ├── fit.py        # ajuste Gamma (LOC) e binomial negativa (defeitos)
 │   ├── generate.py   # gerador de dados simulados (cópula gaussiana)
 │   ├── stat_tests.py # Pearson e Spearman vetorizados + dados reais
 │   ├── simulate.py   # Monte Carlo (Q1, Q2, Q3)
 │   ├── figures.py    # gráficos G1–G4
 │   └── cli.py        # comando único `lab04`
 ├── data/
-│   ├── real/         # CSVs do KC1 (completo e amostra) + params.json
+│   ├── real/         # ARFF e CSVs do KC1, params.json e piloto.json
 │   └── sim/          # p-valores das simulações
 ├── docs/             # fonte dos dados, cenário
+├── scripts/          # análises auxiliares (piloto nos dados reais)
 └── tests/
 ```
 

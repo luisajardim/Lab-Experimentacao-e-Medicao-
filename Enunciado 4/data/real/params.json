@@ -1,0 +1,60 @@
+{
+  "source": "NASA KC1 por classe (OpenML 1070), 145 classes — ver docs/fonte_dados.md",
+  "base": {
+    "dist": "normal bivariada padronizada",
+    "mean": [
+      0.0,
+      0.0
+    ],
+    "sd": [
+      1.0,
+      1.0
+    ]
+  },
+  "loc": {
+    "dist": "gamma",
+    "method": "MLE",
+    "shape": 0.6072677757078635,
+    "scale": 487.91746174701757,
+    "ks_pvalue": 0.22160058921238912,
+    "quantiles_fit": [
+      9.3,
+      43.8,
+      157.2,
+      402.3,
+      768.5,
+      1769.6
+    ],
+    "quantiles_obs": [
+      8.8,
+      44.0,
+      162.0,
+      315.0,
+      699.8,
+      2356.3
+    ],
+    "mean_fit": 296.29655172413794
+  },
+  "defects": {
+    "dist": "nbinom",
+    "method": "MLE",
+    "r": 0.169511412256945,
+    "mean": 4.613793247662516,
+    "p": 0.03543813833923745,
+    "p_zero_fit": 0.5676998292444859,
+    "p_zero_obs": 0.5862068965517241,
+    "p_ge20_fit": 0.0698917455489642,
+    "p_ge20_obs": 0.06896551724137931
+  },
+  "observed": {
+    "n": 145,
+    "loc_median": 162.0,
+    "loc_skew": 3.39693612716746,
+    "defects_median": 0.0,
+    "defects_skew": 5.533384026829362,
+    "defects_zero_share": 0.5862068965517241,
+    "pearson_r": 0.6901021307618357,
+    "spearman_rho": 0.5733995351853985,
+    "normal_scores_rho": 0.5941635899013736
+  }
+}

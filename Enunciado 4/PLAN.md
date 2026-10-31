@@ -67,8 +67,8 @@ para os gráficos serem construídos em paralelo.
 
 | Situação | Como os dados são gerados | n | Papel |
 |---|---|---|---|
-| **S-base** (bem-comportada) | Normal bivariada com correlação ρ | 30 | Cenário ideal para o Pearson |
-| **S-real** (realista) | Cópula gaussiana com correlação latente ρ → LOC ~ lognormal e defeitos ~ binomial negativa, parâmetros ajustados no KC1 inteiro | 30 | "Dados como os reais": assimetria, outliers, zeros/empates (viola pressupostos do Pearson) |
+| **S-base** (bem-comportada) | Normal bivariada padronizada (média 0, dp 1) com correlação ρ | 30 | Cenário ideal para o Pearson |
+| **S-real** (realista) | Cópula gaussiana com correlação latente ρ → LOC ~ Gamma e defeitos ~ binomial negativa, parâmetros ajustados no KC1 inteiro por máxima verossimilhança | 30 | "Dados como os reais": assimetria, outliers, zeros/empates (viola pressupostos do Pearson) |
 | **S-real-n10** (amostra pequena) | Mesmo gerador da S-real | 10 | Violação por amostra pequena |
 
 - **Tamanho do efeito (eixo do G4):** ρ latente da cópula ∈ {0; 0,1; 0,2; 0,3; 0,4; 0,5; 0,6}. Para cada valor,
@@ -115,7 +115,8 @@ para os gráficos serem construídos em paralelo.
 - *Objetivo:* Escrever o cenário completo do item (c) do enunciado.
 - *Regras de negócio / restrições:*
   - Pergunta em uma frase (definida: "Em um sistema C++ da NASA, classes maiores tendem a ter mais defeitos de modo geral, ou a associação observada é puxada por poucas classes gigantes?"); H₀ e H₁ (bicaudal) em palavras simples.
-  - Ajustar no KC1 inteiro: LOC ~ lognormal (média e desvio do log) e defeitos ~ binomial negativa (média e dispersão).
+  - Ajustar no KC1 inteiro, por máxima verossimilhança: LOC ~ Gamma (forma e escala) e defeitos ~ binomial negativa (média e dispersão). A Gamma substituiu a lognormal, que ajustou mal (KS p = 0,001; Gamma: KS p = 0,22).
+  - Situação base: normal bivariada padronizada (média 0, dp 1); os dois testes não mudam com mudança de escala.
   - Justificar cada parâmetro com estatísticas dos dados reais (assimetria, % de zeros, mediana).
   - Registrar, **antes de simular**, qual teste o grupo espera que se saia melhor e por quê.
 - *Critérios de aceitação:*
@@ -126,8 +127,8 @@ para os gráficos serem construídos em paralelo.
 #### T04 Implementar Gerador de Dados Simulados
 - *Objetivo:* Gerar conjuntos de dados simulados para as três situações.
 - *Regras de negócio / restrições:*
-  - S-base: normal bivariada com correlação ρ.
-  - S-real: cópula gaussiana (correlação latente ρ) → marginais lognormal (LOC) e binomial negativa (defeitos) com os parâmetros de `params.json`.
+  - S-base: normal bivariada padronizada (média 0, dp 1) com correlação ρ.
+  - S-real: cópula gaussiana (correlação latente ρ) → marginais Gamma (LOC) e binomial negativa (defeitos) com os parâmetros de `params.json`.
   - Assinatura vetorizada: `generate(situacao, rho, n, reps, rng) -> (x[reps, n], y[reps, n])`.
   - Usar a semente fixa centralizada `SEED` de `src/config.py` (criada na T02).
 - *Critérios de aceitação:*
@@ -258,7 +259,7 @@ para os gráficos serem construídos em paralelo.
 | Decisão | Valor |
 |---|---|
 | Dados reais | KC1 por classe (OpenML 1070); amostra de 30 com `default_rng(42)`; parâmetros ajustados no dataset inteiro |
-| Gerador | Cópula gaussiana → lognormal (LOC) + binomial negativa (defeitos); S-base normal bivariada |
+| Gerador | Cópula gaussiana → Gamma (LOC) + binomial negativa (defeitos); S-base normal bivariada padronizada |
 | Efeito | ρ latente ∈ {0; 0,1; …; 0,6}, com r e ρ_s populacionais reportados |
 | Testes | Bicaudais, α = 0,05 (seletor 0,01); p pela t(n−2), validado contra scipy |
 | Simulação | 10.000 réplicas por célula, vetorizada, p-valores salvos em `data/sim/` |
