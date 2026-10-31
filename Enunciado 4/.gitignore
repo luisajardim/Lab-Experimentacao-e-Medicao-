@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Ferramentas
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Streamlit (segredos locais do deploy)
+.streamlit/secrets.toml
+
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários de dados (os CSVs e resultados finais SÃO commitados)
+data/**/*.tmp
