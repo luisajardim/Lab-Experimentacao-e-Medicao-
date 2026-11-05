@@ -24,15 +24,14 @@ from fit import PARAMS_JSON
 from generate import generate, load_params
 
 G1_TEXT = (
-    "Os dados reais do NASA KC1 apresentam forte assimetria à direita tanto no tamanho da classe "
-    "(LOC com mediana de 162 linhas, assimetria de 3,40 e máximo de 2.883 linhas) quanto no número "
-    "de defeitos (assimetria de 5,53, máximo de 101 defeitos e 58,6% das classes empatadas com zero defeitos). "
-    "Por isso, na situação realista (S-real), o LOC foi modelado com uma distribuição Gamma(forma = 0,607; "
-    "escala = 487,9) — que captura a concentração de classes pequenas e a cauda longa sem ser rejeitada "
-    "no teste KS (p = 0,22, ao contrário da lognormal com p = 0,001) — e os defeitos com uma Binomial "
-    "Negativa(r = 0,170; média = 4,61), cuja sobredispersão reproduz o excesso de zeros (56,8%) e a cauda "
-    "pesada que uma Poisson não conseguiria representar. A cópula gaussiana conecta essas duas marginais "
-    "preservando a forma individual de cada variável ao lado da amostra real (n = 30) e do KC1 completo (n = 145)."
+    "Os dados reais têm forte assimetria à direita: a maioria das classes é pequena (mediana de "
+    "162 LOC), poucas são gigantes (até cerca de 2,9 mil LOC) e 58,6% não têm nenhum defeito, "
+    "enquanto uma única classe acumula 101. Por isso a S-real usa uma Gamma para o LOC, que "
+    "reproduz a cauda longa sem ser rejeitada pelo teste KS (p = 0,22, contra 0,001 da lognormal), "
+    "e uma binomial negativa para os defeitos, que reproduz o excesso de zeros (56,8%) que uma "
+    "Poisson não teria. Os histogramas simulados acompanham os reais nas duas variáveis; a principal "
+    "diferença é que a simulação raramente gera uma classe tão extrema quanto a de 101 defeitos, "
+    "motivo da situação S-outlier."
 )
 
 
@@ -192,8 +191,8 @@ def fig_g1(
         y=68,
         text=(
             f"<b>Excesso de zeros (empates):</b><br>"
-            f"KC1: {p_zero_obs:.1f}% sem defeitos<br>"
-            f"BinNeg (S-real): {p_zero_fit:.1f}% sem defeitos"
+            f"a 1ª barra junta 0 a 4 defeitos; exatamente zero:<br>"
+            f"KC1: {p_zero_obs:.1f}% · BinNeg (S-real): {p_zero_fit:.1f}%".replace(".", ",")
         ),
         showarrow=True,
         arrowhead=2,
@@ -253,25 +252,15 @@ G2_REJECTION_COLOR = "rgba(127, 140, 141, 0.22)"
 G2_INK = "#2C3E50"
 
 G2_TEXT = (
-    "**O que cada teste compara.** Os dois transformam um coeficiente na mesma estatística "
-    "$t = r\\sqrt{(n-2)/(1-r^2)}$ e a comparam com o que seria esperado se não houvesse associação "
-    "($H_0$), a distribuição $t$ com $n - 2$ graus de liberdade. O **Pearson** calcula o coeficiente "
-    "sobre os valores de LOC e defeitos, então classes gigantes pesam muito; o **Spearman** calcula "
-    "sobre os postos, então cada classe pesa igual. Por isso, sob $H_0$, o histograma do Spearman "
-    "acompanha a curva, enquanto o do Pearson é mais pontudo e assimétrico, com a cauda direita "
-    "longa: quando classes gigantes coincidem com muitos defeitos, o $t$ sobe bastante. Nesses dados, "
-    "a curva $t$ é só uma aproximação para o Pearson, e quase todas as suas rejeições indevidas "
-    "ficam na cauda direita.\n\n"
-    "**Onde fica a região de rejeição.** Nas duas caudas (faixas cinza), onde $|t|$ passa do $t$ "
-    "crítico: o teste é bicaudal, então rejeita $H_0$ tanto para associação positiva quanto negativa. "
-    "O $t$ crítico é escolhido para que essas caudas somem $\\alpha$ na curva, e muda com o seletor "
-    "de $\\alpha$.\n\n"
-    "**O que o p-valor significa.** É a área colorida: a probabilidade de obter um $|t|$ tão ou mais "
-    "extremo que o observado **se $H_0$ fosse verdadeira**. Rejeita-se $H_0$ quando ele é menor que "
-    "$\\alpha$, ou seja, quando o $t$ observado cai na faixa cinza.\n\n"
-    "**O que ele não significa.** Não é a probabilidade de $H_0$ ser verdadeira, nem a de o resultado "
-    "ser obra do acaso, e não mede o tamanho da associação. Um p-valor grande também não prova que "
-    "não há associação: pode faltar poder para detectá-la."
+    "O **Pearson** compara os valores de LOC e defeitos e o **Spearman** compara os postos; os dois "
+    "viram a estatística $t = r\\sqrt{(n-2)/(1-r^2)}$, cuja distribuição sob $H_0$ é aproximada pela "
+    "curva $t$ com $n - 2$ graus de liberdade. Nos dados assimétricos da S-real, o histograma do "
+    "Spearman acompanha a curva, mas o do Pearson tem a cauda direita longa, porque classes gigantes "
+    "com muitos defeitos inflam o $t$ (quase todas as suas rejeições indevidas ficam desse lado). "
+    "Como o teste é bicaudal, a região de rejeição são as duas faixas cinza, onde $|t|$ passa do $t$ "
+    "crítico, que muda com o seletor de $\\alpha$. O p-valor do exemplo é a área colorida: a "
+    "probabilidade de obter um $|t|$ tão ou mais extremo que o observado **se $H_0$ fosse "
+    "verdadeira**, e não é a probabilidade de $H_0$ ser verdadeira."
 )
 
 
