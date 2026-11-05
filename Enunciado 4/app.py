@@ -281,6 +281,10 @@ def render_sec3_como_funcionam(alpha: float) -> None:
         )
         st.caption("Gráfico G2 detalhado em integração pela tarefa T06b (Issue #81).")
 
+    example = stat_tests.run_example()
+    st.subheader(f"Exemplo: um conjunto simulado ({example.situation}, ρ latente = {example.rho})")
+    st.markdown(stat_tests.interpret_example(example, alpha=alpha))
+
 
 def render_sec4_erro_tipo1(alpha: float) -> None:
     """Seção 4 — Erro tipo I (G3)."""

@@ -32,3 +32,16 @@ def test_dashboard_renders_all_seven_sections_in_order():
     headers = [h.value for h in at.header]
     assert headers == list(app.SECTIONS)
     assert len(at.selectbox) >= 1
+
+
+def test_section3_shows_interpreted_example_and_follows_alpha():
+    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=30)
+    at.run()
+    assert not at.exception
+    assert any(s.value.startswith("Exemplo: um conjunto simulado") for s in at.subheader)
+    texts = [m.value for m in at.markdown]
+    assert any("com α = 0,05" in t and "S-real, n = 30" in t for t in texts)
+
+    at.selectbox[0].set_value(0.01).run()
+    assert not at.exception
+    assert any("com α = 0,01" in m.value for m in at.markdown)
