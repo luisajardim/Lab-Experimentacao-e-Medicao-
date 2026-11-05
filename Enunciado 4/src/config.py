@@ -46,8 +46,9 @@ PALETTE = {
     "spearman": COLOR_SPEARMAN,
     "real_sample": "#2B5C8F",
     "real_full": "#7F8C8D",
-    "sim_sample": "#E67E22",
-    "sim_expected": "#8E44AD",
+    # Simulados em roxo, para não confundir com o laranja do Pearson nem o verde do Spearman.
+    "sim_sample": "#7B2D8E",
+    "sim_expected": "#B57EDC",
 }
 
 REPO_URL = "https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-"

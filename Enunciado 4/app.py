@@ -154,12 +154,12 @@ def render_sec1_cenario(params: dict, pilot: dict | None) -> None:
         )
 
     st.subheader("Desenho da Simulação (4 Situações × 7 Tamanhos de Efeito)")
+    effects = "; ".join(f"{v:.1f}".replace(".", ",") for v in EFFECT_GRID)
+    reps = f"{REPS:,}".replace(",", ".")
     st.markdown(
         f"Em todas as situações, o efeito controlado é a correlação latente "
-        f"$\\rho \\in \\{{{', '.join(str(v).replace('.', ',') for v in EFFECT_GRID)}\\}}$ "
-        f"com **{REPS:,} réplicas** por combinação (margem de Monte Carlo $\\approx \\pm 0,43\\text{{ pp}}$ em $\\alpha = 5\\%$):".replace(
-            ",", "."
-        )
+        f"$\\rho \\in \\{{{effects}\\}}$, com **{reps} réplicas** por combinação "
+        f"(margem de Monte Carlo $\\approx \\pm 0,43$ pp em torno de $\\alpha = 5\\%$):"
     )
     situations_table = pd.DataFrame(
         [
@@ -195,7 +195,7 @@ def render_sec1_cenario(params: dict, pilot: dict | None) -> None:
             },
         ]
     )
-    st.dataframe(situations_table, use_container_width=True, hide_index=True)
+    st.dataframe(situations_table, width="stretch", hide_index=True)
 
     loc_p = params["loc"]
     def_p = params["defects"]
@@ -240,7 +240,7 @@ def render_sec2_dados(sample_df: pd.DataFrame, full_df: pd.DataFrame, params: di
     st.header("2. Os dados (G1)")
 
     fig1 = fig_g1(sample_df=sample_df, full_df=full_df)
-    st.plotly_chart(fig1, use_container_width=True)
+    st.plotly_chart(fig1, width="stretch")
 
     st.markdown(G1_TEXT)
 
@@ -262,11 +262,12 @@ def render_sec3_como_funcionam(alpha: float) -> None:
     """Seção 3 — Como os testes funcionam (G2)."""
     st.header("3. Como os testes funcionam (G2)")
 
-    st.plotly_chart(figures.fig_g2(alpha=alpha), use_container_width=True)
+    st.plotly_chart(figures.fig_g2(alpha=alpha), width="stretch")
     st.markdown(figures.G2_TEXT)
 
     example = stat_tests.run_example()
-    st.subheader(f"Exemplo: um conjunto simulado ({example.situation}, ρ latente = {example.rho})")
+    rho_text = f"{example.rho:.1f}".replace(".", ",")
+    st.subheader(f"Exemplo: um conjunto simulado ({example.situation}, ρ latente = {rho_text})")
     st.markdown(stat_tests.interpret_example(example, alpha=alpha))
 
 
@@ -276,7 +277,7 @@ def render_sec4_erro_tipo1(alpha: float) -> None:
 
     fig3 = _call_optional_figure("fig_g3", alpha=alpha)
     if fig3 is not None:
-        st.plotly_chart(fig3, use_container_width=True)
+        st.plotly_chart(fig3, width="stretch")
         g3_text = getattr(figures, "G3_TEXT", None)
         if g3_text:
             st.markdown(g3_text)
@@ -295,7 +296,7 @@ def render_sec5_poder(alpha: float) -> None:
 
     fig4 = _call_optional_figure("fig_g4", alpha=alpha)
     if fig4 is not None:
-        st.plotly_chart(fig4, use_container_width=True)
+        st.plotly_chart(fig4, width="stretch")
         g4_text = getattr(figures, "G4_TEXT", None)
         if g4_text:
             st.markdown(g4_text)
@@ -317,7 +318,7 @@ def render_sec6_dados_reais(sample_df: pd.DataFrame, full_df: pd.DataFrame) -> N
     )
     if callable(real_table_fn):
         result_df = real_table_fn(sample_df)
-        st.dataframe(result_df, use_container_width=True, hide_index=True)
+        st.dataframe(result_df, width="stretch", hide_index=True)
     else:
         st.markdown(
             "Amostra sorteada de **$n = 30$ classes** do NASA KC1 (`data/real/kc1_sample30.csv`, `SEED = 42`). "
@@ -326,7 +327,7 @@ def render_sec6_dados_reais(sample_df: pd.DataFrame, full_df: pd.DataFrame) -> N
         )
         col_a, col_b = st.columns([1.4, 1.0])
         with col_a:
-            st.dataframe(sample_df, use_container_width=True, hide_index=True, height=260)
+            st.dataframe(sample_df, width="stretch", hide_index=True, height=260)
         with col_b:
             summary_df = pd.DataFrame(
                 [
@@ -352,7 +353,7 @@ def render_sec6_dados_reais(sample_df: pd.DataFrame, full_df: pd.DataFrame) -> N
                     },
                 ]
             )
-            st.dataframe(summary_df, use_container_width=True, hide_index=True)
+            st.dataframe(summary_df, width="stretch", hide_index=True)
 
 
 def render_sec7_conclusao() -> None:

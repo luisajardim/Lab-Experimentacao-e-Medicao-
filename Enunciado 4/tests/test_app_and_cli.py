@@ -6,6 +6,7 @@ from streamlit.testing.v1 import AppTest
 
 import cli
 from config import COLOR_PEARSON, COLOR_SPEARMAN, PALETTE, ROOT
+from figures import G2_TEXT
 
 sys.path.insert(0, str(ROOT))
 import app  # noqa: E402, I001
@@ -51,5 +52,5 @@ def test_section3_renders_g2_with_its_text():
     at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
     at.run()
     assert not at.exception
-    assert any("O que o p-valor significa" in m.value for m in at.markdown)
+    assert any(m.value == G2_TEXT for m in at.markdown)
     assert not any("T06b" in c.value for c in at.caption)
