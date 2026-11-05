@@ -28,3 +28,28 @@ SITUATIONS = {
 # (1 em 145, a proporção do KC1), sorteada acima deste quantil nas duas variáveis.
 OUTLIER_RATE = 1 / 145
 OUTLIER_TAIL = 0.99
+
+# Grade de efeitos (ρ latente da cópula), réplicas de Monte Carlo e níveis de α.
+EFFECT_GRID = (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6)
+REPS = 10_000
+ALPHAS = (0.05, 0.01)
+DEFAULT_ALPHA = 0.05
+
+# Paleta fixa compartilhada por todos os gráficos do dashboard (T07, #82).
+COLOR_PEARSON = "#D95F02"   # Laranja queimado (ColorBrewer Dark2)
+COLOR_SPEARMAN = "#1B9E77"  # Verde-azulado (ColorBrewer Dark2)
+
+PALETTE = {
+    "Pearson": COLOR_PEARSON,
+    "Spearman": COLOR_SPEARMAN,
+    "pearson": COLOR_PEARSON,
+    "spearman": COLOR_SPEARMAN,
+    "real_sample": "#2B5C8F",
+    "real_full": "#7F8C8D",
+    "sim_sample": "#E67E22",
+    "sim_expected": "#8E44AD",
+}
+
+REPO_URL = "https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-"
+DASHBOARD_URL = "https://lab-experimentacao-medicao-lab04.streamlit.app"
+
