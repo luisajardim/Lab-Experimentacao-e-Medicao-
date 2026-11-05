@@ -9,12 +9,16 @@ Todos com título, eixos com unidade, legenda e a mesma cor para cada teste.
 Issues: #80 (G1), #81 (G2), #84 (G3), #85 (G4).
 """
 
+from functools import cache
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+from scipy import stats
 
-from config import PALETTE, SEED
+import stat_tests
+from config import DEFAULT_ALPHA, PALETTE, REPS, SEED
 from data import FULL_CSV, SAMPLE_CSV
 from fit import PARAMS_JSON
 from generate import generate, load_params
@@ -239,4 +243,219 @@ def fig_g1(
         margin=dict(t=105, b=60, l=60, r=30),
     )
 
+    return fig
+
+
+# Eixo t de -5 a 5; a densidade é relativa a todas as réplicas, mesmo as que ficam fora dele.
+G2_T_LIMIT = 5.0
+G2_BIN_WIDTH = 0.25
+G2_REJECTION_COLOR = "rgba(127, 140, 141, 0.22)"
+G2_INK = "#2C3E50"
+
+G2_TEXT = (
+    "**O que cada teste compara.** Os dois transformam um coeficiente na mesma estatística "
+    "$t = r\\sqrt{(n-2)/(1-r^2)}$ e a comparam com o que seria esperado se não houvesse associação "
+    "($H_0$), a distribuição $t$ com $n - 2$ graus de liberdade. O **Pearson** calcula o coeficiente "
+    "sobre os valores de LOC e defeitos, então classes gigantes pesam muito; o **Spearman** calcula "
+    "sobre os postos, então cada classe pesa igual. Por isso, sob $H_0$, o histograma do Spearman "
+    "acompanha a curva, enquanto o do Pearson é mais pontudo e assimétrico, com a cauda direita "
+    "longa: quando classes gigantes coincidem com muitos defeitos, o $t$ sobe bastante. Nesses dados, "
+    "a curva $t$ é só uma aproximação para o Pearson, e quase todas as suas rejeições indevidas "
+    "ficam na cauda direita.\n\n"
+    "**Onde fica a região de rejeição.** Nas duas caudas (faixas cinza), onde $|t|$ passa do $t$ "
+    "crítico: o teste é bicaudal, então rejeita $H_0$ tanto para associação positiva quanto negativa. "
+    "O $t$ crítico é escolhido para que essas caudas somem $\\alpha$ na curva, e muda com o seletor "
+    "de $\\alpha$.\n\n"
+    "**O que o p-valor significa.** É a área colorida: a probabilidade de obter um $|t|$ tão ou mais "
+    "extremo que o observado **se $H_0$ fosse verdadeira**. Rejeita-se $H_0$ quando ele é menor que "
+    "$\\alpha$, ou seja, quando o $t$ observado cai na faixa cinza.\n\n"
+    "**O que ele não significa.** Não é a probabilidade de $H_0$ ser verdadeira, nem a de o resultado "
+    "ser obra do acaso, e não mede o tamanho da associação. Um p-valor grande também não prova que "
+    "não há associação: pode faltar poder para detectá-la."
+)
+
+
+@cache
+def _null_t(reps: int, seed: int) -> tuple[np.ndarray, np.ndarray]:
+    """t de Pearson e de Spearman sob H₀ (situação do exemplo, ρ = 0), sem réplicas constantes."""
+    x, y = generate(stat_tests.EXAMPLE_SITUATION, 0.0, reps=reps, rng=np.random.default_rng(seed))
+    pearson_t, spearman_t = stat_tests.pearson(x, y).t, stat_tests.spearman(x, y).t
+    return pearson_t[~np.isnan(pearson_t)], spearman_t[~np.isnan(spearman_t)]
+
+
+def _null_density(t: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Centros e densidade dos bins; valores fora do eixo continuam no denominador."""
+    edges = np.arange(-G2_T_LIMIT, G2_T_LIMIT + G2_BIN_WIDTH, G2_BIN_WIDTH)
+    counts, edges = np.histogram(t, bins=edges)
+    return (edges[:-1] + edges[1:]) / 2, counts / (t.size * G2_BIN_WIDTH)
+
+
+def _two_tails(start: float, height) -> tuple[list, list]:
+    """Polígonos das caudas |t| ≥ start; `height(grade)` dá o contorno superior."""
+    grid = np.linspace(start, G2_T_LIMIT, 200)
+    right_x = [start, *grid, G2_T_LIMIT]
+    right_y = [0.0, *height(grid), 0.0]
+    return [*(-v for v in right_x), None, *right_x], [*right_y, None, *right_y]
+
+
+def _decimal(value: float, digits: int = 2) -> str:
+    return f"{value:.{digits}f}".replace(".", ",")
+
+
+def fig_g2(
+    alpha: float = DEFAULT_ALPHA,
+    example: stat_tests.Example | None = None,
+    reps: int = REPS,
+    seed: int = SEED,
+) -> go.Figure:
+    """Constrói o G2: nula de cada teste, curva t(n − 2), região de rejeição e p-valor do exemplo.
+
+    Um painel por teste, com a nula simulada na situação do exemplo (S-real, ρ = 0).
+    """
+    example = example or stat_tests.run_example()
+    df = example.pearson.df
+    t_critical = float(stats.t.ppf(1 - alpha / 2, df))
+    null_pearson, null_spearman = _null_t(reps, seed + 1)
+    panels = (
+        ("Pearson", example.pearson, _null_density(null_pearson)),
+        ("Spearman", example.spearman, _null_density(null_spearman)),
+    )
+
+    curve_x = np.linspace(-G2_T_LIMIT, G2_T_LIMIT, 501)
+    curve_y = stats.t.pdf(curve_x, df)
+    y_top = 1.3 * max(curve_y.max(), *(density.max() for _, _, (_, density) in panels))
+
+    fig = make_subplots(
+        rows=1,
+        cols=2,
+        shared_yaxes=True,
+        horizontal_spacing=0.05,
+        subplot_titles=[
+            f"{name}: t = {_decimal(result.t)}, p = {_decimal(result.p, 3)}"
+            for name, result, _ in panels
+        ],
+    )
+    for col, (name, result, (centers, density)) in enumerate(panels, start=1):
+        first = col == 1
+        color = PALETTE[name]
+        reject_x, reject_y = _two_tails(t_critical, lambda grid: np.full_like(grid, y_top))
+        fig.add_trace(
+            go.Scatter(
+                x=reject_x,
+                y=reject_y,
+                mode="lines",
+                line=dict(width=0),
+                fill="toself",
+                fillcolor=G2_REJECTION_COLOR,
+                name=f"Região de rejeição (|t| > {_decimal(t_critical)}, α = {_decimal(alpha)})",
+                legendgroup="rejeicao",
+                showlegend=first,
+                hoverinfo="skip",
+            ),
+            row=1,
+            col=col,
+        )
+        fig.add_trace(
+            go.Bar(
+                x=centers,
+                y=density,
+                width=G2_BIN_WIDTH * 0.92,
+                marker=dict(color=color, opacity=0.4, line=dict(width=0)),
+                name=f"Nula simulada — {name}",
+                legendgroup=f"nula-{name}",
+                hovertemplate=f"{name}, H₀ simulada<br>t ≈ %{{x}}<br>Densidade: %{{y:.3f}}<extra></extra>",
+            ),
+            row=1,
+            col=col,
+        )
+        if abs(result.t) < G2_T_LIMIT:
+            area_x, area_y = _two_tails(
+                abs(float(result.t)), lambda grid: stats.t.pdf(grid, df)
+            )
+            fig.add_trace(
+                go.Scatter(
+                    x=area_x,
+                    y=area_y,
+                    mode="lines",
+                    line=dict(width=0),
+                    fill="toself",
+                    fillcolor=color,
+                    opacity=0.55,
+                    name=f"p-valor do exemplo — {name}",
+                    legendgroup=f"p-{name}",
+                    hoverinfo="skip",
+                ),
+                row=1,
+                col=col,
+            )
+            for sign in (-1, 1):
+                fig.add_trace(
+                    go.Scatter(
+                        x=[sign * abs(result.t)] * 2,
+                        y=[0, 0.8 * y_top],
+                        mode="lines",
+                        line=dict(color=G2_INK, width=2, dash="dot"),
+                        showlegend=False,
+                        hovertemplate="t observado (±): %{x:.2f}<extra></extra>",
+                    ),
+                    row=1,
+                    col=col,
+                )
+            fig.add_annotation(
+                x=float(result.t),
+                y=0.8 * y_top,
+                text=f"t observado = {_decimal(result.t)}",
+                showarrow=False,
+                yanchor="bottom",
+                font=dict(color=G2_INK, size=11),
+                row=1,
+                col=col,
+            )
+        fig.add_trace(
+            go.Scatter(
+                x=curve_x,
+                y=curve_y,
+                mode="lines",
+                line=dict(color=G2_INK, width=2),
+                name=f"Curva teórica t({df})",
+                legendgroup="curva",
+                showlegend=first,
+                hovertemplate=f"t({df})<br>t = %{{x:.2f}}<br>Densidade: %{{y:.3f}}<extra></extra>",
+            ),
+            row=1,
+            col=col,
+        )
+        for sign in (-1, 1):
+            fig.add_annotation(
+                x=sign * (t_critical + G2_T_LIMIT) / 2,
+                y=y_top,
+                text="Rejeita H₀",
+                showarrow=False,
+                yanchor="top",
+                font=dict(color=G2_INK, size=11),
+                row=1,
+                col=col,
+            )
+        fig.update_xaxes(
+            title_text="Estatística t (adimensional)",
+            range=[-G2_T_LIMIT, G2_T_LIMIT],
+            dtick=1,
+            row=1,
+            col=col,
+        )
+    fig.update_yaxes(title_text="Densidade de probabilidade", range=[0, y_top], row=1, col=1)
+    fig.update_layout(
+        title=dict(
+            text=f"G2 — Estatística t sob H₀ ({example.situation}, n = {example.n}), "
+            "região de rejeição e p-valor do exemplo",
+            x=0.0,
+            xanchor="left",
+        ),
+        barmode="overlay",
+        height=520,
+        template="plotly_white",
+        separators=",.",
+        legend=dict(orientation="h", yanchor="top", y=-0.16, xanchor="left", x=0.0),
+        margin=dict(t=70, b=130, l=60, r=30),
+    )
     return fig

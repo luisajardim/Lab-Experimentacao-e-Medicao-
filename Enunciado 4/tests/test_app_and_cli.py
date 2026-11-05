@@ -45,3 +45,11 @@ def test_section3_shows_interpreted_example_and_follows_alpha():
     at.selectbox[0].set_value(0.01).run()
     assert not at.exception
     assert any("com α = 0,01" in m.value for m in at.markdown)
+
+
+def test_section3_renders_g2_with_its_text():
+    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
+    at.run()
+    assert not at.exception
+    assert any("O que o p-valor significa" in m.value for m in at.markdown)
+    assert not any("T06b" in c.value for c in at.caption)

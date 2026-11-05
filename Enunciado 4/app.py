@@ -262,24 +262,8 @@ def render_sec3_como_funcionam(alpha: float) -> None:
     """Seção 3 — Como os testes funcionam (G2)."""
     st.header("3. Como os testes funcionam (G2)")
 
-    fig2 = _call_optional_figure("fig_g2", alpha=alpha)
-    if fig2 is not None:
-        st.plotly_chart(fig2, use_container_width=True)
-        g2_text = getattr(figures, "G2_TEXT", None)
-        if g2_text:
-            st.markdown(g2_text)
-    else:
-        st.markdown(
-            "Ambos os testes avaliam a estatística $t = r \\sqrt{(n - 2) / (1 - r^2)}$ comparada à "
-            "distribuição $t$ de Student com $n - 2$ graus de liberdade sob $H_0: \\rho = 0$. "
-            "No **Pearson**, $r$ é calculado diretamente sobre os valores padronizados de LOC e defeitos; "
-            "no **Spearman**, a mesma fórmula é aplicada sobre os postos médios das observações. "
-            f"Para um teste bicaudal com $\\alpha = {alpha:.2f}$, a região de rejeição compreende as duas "
-            "caudas onde $|t| > t_{{1 - \\alpha/2,\\, n-2}}$, e o **p-valor** representa a probabilidade, "
-            "assumindo que $H_0$ é verdadeira, de observar uma estatística $|t|$ tão ou mais extrema que a "
-            "da amostra (não sendo a probabilidade de $H_0$ ser verdadeira)."
-        )
-        st.caption("Gráfico G2 detalhado em integração pela tarefa T06b (Issue #81).")
+    st.plotly_chart(figures.fig_g2(alpha=alpha), use_container_width=True)
+    st.markdown(figures.G2_TEXT)
 
     example = stat_tests.run_example()
     st.subheader(f"Exemplo: um conjunto simulado ({example.situation}, ρ latente = {example.rho})")
