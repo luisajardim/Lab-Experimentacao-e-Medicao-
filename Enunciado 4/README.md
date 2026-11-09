@@ -37,10 +37,14 @@ uv run ruff check .
 uv run python -m data   # (re)gera os CSVs do KC1 em data/real/ (T02)
 uv run python -m fit    # (re)ajusta os parâmetros da simulação em data/real/params.json (T03)
 uv run python scripts/piloto.py   # piloto Pearson × Spearman em subamostras do KC1 (T03)
+uv run python -m simulate         # simulações de Monte Carlo em data/sim/ (~50 s; usa cache) (T08)
+uv run python scripts/parquet_to_csv.py   # exporta pvalues.parquet para CSV em data/sim/export/
 ```
 
 Todas as etapas usam semente fixa (`numpy.random.default_rng(42)`), então os resultados são
 reproduzíveis.
+
+**Tempo de execução:** a simulação completa (4 situações × 7 efeitos × 10.000 réplicas = 280.000 conjuntos) leva cerca de **50 s**; com o cache válido, o `uv run lab04` reaproveita os resultados em ~1 s. Formato dos arquivos em [docs/simulacao.md](docs/simulacao.md).
 
 ## Estrutura
 
@@ -58,8 +62,8 @@ Enunciado 4/
 │   └── cli.py        # comando único `lab04`
 ├── data/
 │   ├── real/         # ARFF e CSVs do KC1, params.json e piloto.json
-│   └── sim/          # p-valores das simulações
-├── docs/             # fonte dos dados, cenário
+│   └── sim/          # resultados da simulação (pvalues.parquet, summary.csv, population.csv) — ver docs/simulacao.md
+├── docs/             # fonte dos dados, cenário, formato da simulação
 ├── scripts/          # análises auxiliares (piloto nos dados reais)
 └── tests/
 ```
