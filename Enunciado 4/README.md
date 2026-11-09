@@ -39,6 +39,7 @@ uv run python -m fit    # (re)ajusta os parâmetros da simulação em data/real/
 uv run python scripts/piloto.py   # piloto Pearson × Spearman em subamostras do KC1 (T03)
 uv run python -m simulate         # simulações de Monte Carlo em data/sim/ (~50 s; usa cache) (T08)
 uv run python scripts/parquet_to_csv.py   # exporta pvalues.parquet para CSV em data/sim/export/
+uv run lab04 --sample-size        # extra opcional: simulação por tamanho de amostra (~75 s; usa cache) (T14)
 ```
 
 Todas as etapas usam semente fixa (`numpy.random.default_rng(42)`), então os resultados são
@@ -58,6 +59,7 @@ Enunciado 4/
 │   ├── generate.py   # gerador de dados simulados (cópula gaussiana)
 │   ├── stat_tests.py # Pearson e Spearman vetorizados + dados reais
 │   ├── simulate.py   # Monte Carlo (Q1, Q2, Q3)
+│   ├── sample_size.py # extra: poder e erro tipo I × tamanho da amostra
 │   ├── figures.py    # gráficos G1–G4
 │   └── cli.py        # comando único `lab04`
 ├── data/

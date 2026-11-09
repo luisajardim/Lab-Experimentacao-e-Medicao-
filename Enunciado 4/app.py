@@ -22,6 +22,7 @@ import pandas as pd  # noqa: E402
 import streamlit as st  # noqa: E402
 
 import figures  # noqa: E402
+import sample_size  # noqa: E402
 import stat_tests  # noqa: E402
 from config import (  # noqa: E402
     ALPHAS,
@@ -397,6 +398,10 @@ def main() -> None:
     render_sec6_dados_reais(sample_df, full_df)
     st.divider()
     render_sec7_conclusao()
+    # Extra opcional (#91): aparece só se data/sim/sample_size.csv existir.
+    if sample_size.load() is not None:
+        st.divider()
+        sample_size.render_section(alpha)
 
 
 if __name__ == "__main__":

@@ -31,7 +31,9 @@ def test_dashboard_renders_all_seven_sections_in_order():
     assert not at.exception
 
     headers = [h.value for h in at.header]
-    assert headers == list(app.SECTIONS)
+    # As 7 seções do enunciado vêm primeiro e na ordem; extras opcionais (#91) só depois delas.
+    assert headers[: len(app.SECTIONS)] == list(app.SECTIONS)
+    assert headers[len(app.SECTIONS):] in ([], ["Para discutir: tamanho da amostra"])
     assert len(at.selectbox) >= 1
 
 
