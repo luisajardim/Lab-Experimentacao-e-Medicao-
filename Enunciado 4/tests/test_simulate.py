@@ -144,3 +144,14 @@ def test_cell_seed_depends_on_name_not_position():
 def test_cache_key_tracks_code_files():
     snap = config_snapshot(simulate.REPS)
     assert set(snap["code_sha256"]) == set(simulate.CODE_FILES)
+
+
+def test_file_hash_ignores_line_endings(tmp_path):
+    # No Windows o checkout grava CRLF; o cache não pode re-simular por causa disso (#83).
+    lf, crlf = tmp_path / "lf.py", tmp_path / "crlf.py"
+    lf.write_bytes(b"x = 1\ny = 2\n")
+    crlf.write_bytes(b"x = 1\r\ny = 2\r\n")
+    assert simulate.file_sha256(lf) == simulate.file_sha256(crlf)
+    other = tmp_path / "other.py"
+    other.write_bytes(b"x = 1\ny = 3\n")
+    assert simulate.file_sha256(other) != simulate.file_sha256(lf)

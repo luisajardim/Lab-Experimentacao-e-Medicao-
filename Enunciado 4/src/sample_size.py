@@ -17,7 +17,6 @@ Issue: #91 (T14).
 """
 
 import argparse
-import hashlib
 import json
 import time
 from pathlib import Path
@@ -73,7 +72,7 @@ def simulate_n_cell(situation: str, rho: float, n: int, reps: int) -> dict[str, 
 
 def config_snapshot(reps: int, target_rho_s: float) -> dict:
     code = {
-        name: hashlib.sha256((simulate.SRC_DIR / name).read_bytes()).hexdigest()
+        name: simulate.file_sha256(simulate.SRC_DIR / name)
         for name in (*simulate.CODE_FILES, "sample_size.py")
     }
     return {

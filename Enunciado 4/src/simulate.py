@@ -122,6 +122,15 @@ def summarize(pvalues: pd.DataFrame, alphas=ALPHAS) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def file_sha256(path: Path) -> str:
+    """SHA-256 do conteúdo com fim de linha normalizado para LF.
+
+    No Windows, o checkout com `core.autocrlf=true` grava os arquivos com CRLF; sem a
+    normalização, o hash mudaria e o cache re-simularia tudo com o mesmo código.
+    """
+    return hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+
+
 def config_snapshot(reps: int) -> dict:
     """Tudo o que, se mudar, exige re-simular."""
     return {
@@ -133,10 +142,8 @@ def config_snapshot(reps: int) -> dict:
         "outlier_rate": OUTLIER_RATE,
         "outlier_tail": OUTLIER_TAIL,
         "population_n": POPULATION_N,
-        "params_sha256": hashlib.sha256(PARAMS_JSON.read_bytes()).hexdigest(),
-        "code_sha256": {
-            name: hashlib.sha256((SRC_DIR / name).read_bytes()).hexdigest() for name in CODE_FILES
-        },
+        "params_sha256": file_sha256(PARAMS_JSON),
+        "code_sha256": {name: file_sha256(SRC_DIR / name) for name in CODE_FILES},
     }
 
 
