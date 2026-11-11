@@ -5,7 +5,7 @@ import tomllib
 
 from config import ROOT
 
-DEPLOY = ROOT.parent / "lab04_deploy"
+DEPLOY = ROOT / "deploy"
 
 
 def _pins(path):
@@ -19,8 +19,8 @@ def _pins(path):
 
 def test_deploy_entry_points_to_the_dashboard():
     entry = (DEPLOY / "streamlit_app.py").read_text(encoding="utf-8")
-    assert '"Enunciado 4" / "app.py"' in entry
-    assert ' ' not in str(DEPLOY.name)
+    assert 'parents[1] / "app.py"' in entry
+    assert (DEPLOY / "streamlit_app.py").resolve().parents[1] / "app.py" == ROOT / "app.py"
     assert (ROOT / "app.py").exists()
 
 
@@ -30,6 +30,6 @@ def test_deploy_requirements_match_the_lockfile():
     pins = _pins(DEPLOY / "requirements.txt")
     # As dependências diretas do app precisam estar fixadas, com a versão do uv.lock.
     for name in ("streamlit", "numpy", "scipy", "pandas", "plotly", "pyarrow"):
-        assert pins.get(name) == locked[name], f"{name}: regenere lab04_deploy/requirements.txt"
+        assert pins.get(name) == locked[name], f"{name}: regenere deploy/requirements.txt"
     # E nenhuma versão fixada pode divergir do lock.
     assert {name: v for name, v in pins.items() if locked.get(name) != v} == {}

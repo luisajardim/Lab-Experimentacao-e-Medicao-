@@ -7,7 +7,7 @@ NASA KC1 (C++). A entrega final é um dashboard Streamlit.
 > **Pergunta:** Em um sistema C++ da NASA, classes maiores tendem a ter mais defeitos de modo
 > geral, ou a associação observada é puxada por poucas classes gigantes?
 
-- **Dashboard:** _a preencher após o deploy (T07, #82)_
+- **Dashboard:** _a preencher após o deploy (T07, #82)_ · ver [Deploy](#deploy-streamlit-community-cloud)
 - **Repositório / GitHub Projects:** https://github.com/luisajardim/Lab-Experimentacao-e-Medicao- · board "Kanban Lab"
 - **Planejamento:** [PLAN.md](PLAN.md) · **Enunciado:** [ENUNCIADO.pdf](ENUNCIADO.pdf)
 
@@ -26,7 +26,7 @@ NASA KC1 (C++). A entrega final é um dashboard Streamlit.
 ```bash
 cd "Enunciado 4"
 uv sync               # instala as dependências
-uv run lab04          # comando único: dados → parâmetros → simulação → dashboard (implementado em T07, #82)
+uv run lab04          # comando único: dados → parâmetros → simulação → dashboard
 ```
 
 Desenvolvimento:
@@ -47,11 +47,26 @@ reproduzíveis.
 
 **Tempo de execução:** a simulação completa (4 situações × 7 efeitos × 10.000 réplicas = 280.000 conjuntos) leva cerca de **50 s**; com o cache válido, o `uv run lab04` reaproveita os resultados em ~1 s. Formato dos arquivos em [docs/simulacao.md](docs/simulacao.md).
 
+## Deploy (Streamlit Community Cloud)
+
+A porta de entrada é a pasta [`deploy/`](deploy/) (detalhes no README dela). O Cloud não aceita espaço no
+caminho do app, então o deploy é feito de um repositório com o conteúdo desta pasta na raiz, não do
+repositório da disciplina (que passa por `Enunciado 4/`). Configuração do app:
+
+- **Main file path:** `deploy/streamlit_app.py` · **branch:** `main` · **Python:** 3.12 (em *Advanced settings*)
+- **Visibilidade:** pública (*Share → "This app is public and searchable"*); sem isso, quem abre o link cai no login
+- **Subdomínio:** `lab-experimentacao-medicao-lab04` (igual a `DASHBOARD_URL` em `src/config.py`)
+- Se o `uv.lock` mudar, regenere `deploy/requirements.txt` (o `tests/test_deploy.py` acusa a divergência).
+
+O app só lê arquivos já commitados (`data/real/` e `data/sim/`): nada é simulado no Cloud. A primeira
+carga leva ~6 s, a troca de α ~1 s, e o pico de memória fica em ~340 MB.
+
 ## Estrutura
 
 ```
 Enunciado 4/
 ├── app.py            # dashboard Streamlit (7 seções)
+├── deploy/           # porta de entrada e requirements.txt do Streamlit Cloud
 ├── src/
 │   ├── config.py     # semente, caminhos, situações, grade de efeitos, paleta
 │   ├── data.py       # coleta do KC1 + amostra de 30 classes
