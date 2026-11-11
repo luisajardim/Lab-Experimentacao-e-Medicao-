@@ -2,7 +2,7 @@
 
 G1: dados reais × simulados (histogramas de LOC e defeitos).
 G2: distribuição da estatística sob H₀, região de rejeição e p-valor do exemplo.
-G3: erro tipo I dos dois testes por situação, com linha em 5%.
+G3: erro tipo I dos dois testes por situação, com linha em α e faixa de Monte Carlo.
 G4: curvas de poder dos dois testes × tamanho do efeito.
 Todos com título, eixos com unidade, legenda e a mesma cor para cada teste.
 
@@ -19,7 +19,7 @@ from scipy import stats
 
 import simulate
 import stat_tests
-from config import DEFAULT_ALPHA, PALETTE, REPS, SEED, SITUATIONS
+from config import DEFAULT_ALPHA, OUTLIER_RATE, PALETTE, REPS, SEED, SITUATIONS
 from data import FULL_CSV, SAMPLE_CSV
 from fit import PARAMS_JSON
 from generate import generate, load_params
@@ -449,6 +449,287 @@ def fig_g2(
         margin=dict(t=70, b=130, l=60, r=30),
     )
     return fig
+
+
+# --------------------------------------------------------------------------- G3 (T09, #84)
+
+G3_INK = "#2C3E50"
+G3_BAND_COLOR = "rgba(127, 140, 141, 0.22)"
+G3_TESTS = (("pearson", "Pearson", "r", "circle"), ("spearman", "Spearman", "rho_s", "diamond"))
+G3_VERDICTS = {"perto": "perto de α", "liberal": "liberal", "conservador": "conservador"}
+G3_OFFSCALE_FACTOR = 3.5  # taxas acima de 3,5·α ficam na borda do eixo (com seta)
+
+
+@cache
+def _g3_null() -> pd.DataFrame:
+    """p-valores e coeficientes das réplicas com ρ = 0 (todas as situações)."""
+    pvalues = simulate.load_pvalues()
+    null = pvalues[pvalues["rho"] == 0].copy()
+    null["situation"] = null["situation"].astype(str)
+    return null
+
+
+def mc_band(alpha: float, reps: int) -> tuple[float, float]:
+    """Faixa de 95% de Monte Carlo em torno de α: α ± 1,96·√(α(1−α)/R) (±0,43 pp com α = 5%)."""
+    half = 1.96 * np.sqrt(alpha * (1 - alpha) / reps)
+    return alpha - half, alpha + half
+
+
+def type1_table(alpha: float = DEFAULT_ALPHA, null: pd.DataFrame | None = None) -> pd.DataFrame:
+    """Erro tipo I (p < α com ρ = 0) por situação e teste, com a cauda das rejeições.
+
+    p-valor NaN (amostra constante) conta como "não rejeita", como no `simulate.summarize`.
+    `verdict` compara a taxa com a faixa de Monte Carlo: dentro é "perto", acima "liberal",
+    abaixo "conservador".
+    """
+    null = _g3_null() if null is None else null
+    rows = []
+    for situation in [s for s in SITUATIONS if s in set(null["situation"])]:
+        group = null[null["situation"] == situation]
+        reps = len(group)
+        low, high = mc_band(alpha, reps)
+        for test, name, coef, _ in G3_TESTS:
+            p = group[f"p_{test}"].to_numpy()
+            reject = p < alpha
+            rate = float(reject.mean())
+            verdict = "liberal" if rate > high else "conservador" if rate < low else "perto"
+            rows.append(
+                {
+                    "situation": situation,
+                    "test": name,
+                    "rate": rate,
+                    "mc_se": float(np.sqrt(rate * (1 - rate) / reps)),
+                    "right": float((reject & (group[coef].to_numpy() > 0)).mean()),
+                    "left": float((reject & (group[coef].to_numpy() < 0)).mean()),
+                    "band_low": low,
+                    "band_high": high,
+                    "n_reps": reps,
+                    "n_nan": int(np.isnan(p).sum()),
+                    "verdict": verdict,
+                }
+            )
+    return pd.DataFrame(rows)
+
+
+def _pct(value: float, digits: int = 2) -> str:
+    return f"{100 * value:.{digits}f}%".replace(".", ",")
+
+
+def fig_g3(alpha: float = DEFAULT_ALPHA, table: pd.DataFrame | None = None) -> go.Figure:
+    """Constrói o G3: taxa de rejeição com ρ = 0 de cada teste, por situação.
+
+    Uma linha por situação; cada teste é um ponto (cor e símbolo fixos) com barra de ±1,96 erro
+    padrão. Linha pontilhada em α e faixa cinza de Monte Carlo em torno dela.
+    """
+    table = type1_table(alpha) if table is None else table
+    situations = list(dict.fromkeys(table["situation"]))
+    low, high = table["band_low"].iloc[0], table["band_high"].iloc[0]
+    # Taxas muito acima de α (S-outlier) iriam espremer a região perto de α, onde estão as
+    # diferenças que importam: esses pontos ficam na borda, com seta, e o rótulo mostra o valor.
+    offscale = table["rate"] > G3_OFFSCALE_FACTOR * alpha
+    on_scale = table.loc[~offscale, "rate"] + 1.96 * table.loc[~offscale, "mc_se"]
+    x_max = max(2 * alpha, 1.25 * float(on_scale.max()))
+
+    fig = go.Figure()
+    fig.add_vrect(x0=low, x1=high, fillcolor=G3_BAND_COLOR, line_width=0, layer="below")
+    fig.add_trace(
+        go.Scatter(
+            x=[None],
+            y=[None],
+            mode="markers",
+            marker=dict(symbol="square", size=12, color=G3_BAND_COLOR),
+            name=f"Faixa de Monte Carlo ({_pct(low)} a {_pct(high)})",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=[alpha, alpha],
+            y=[-0.5, len(situations) - 0.5],
+            mode="lines",
+            line=dict(color=G3_INK, width=1.5, dash="dot"),
+            name=f"α = {_pct(alpha, 0)} (nível nominal)",
+            hoverinfo="skip",
+        )
+    )
+    for offset, (_, name, _, symbol) in zip((-0.17, 0.17), G3_TESTS, strict=True):
+        rows = table[table["test"] == name].set_index("situation").loc[situations]
+        beyond = (rows["rate"] > G3_OFFSCALE_FACTOR * alpha).to_numpy()
+        ys = np.arange(len(situations)) + offset
+        fig.add_trace(
+            go.Scatter(
+                x=np.where(beyond, 0.97 * x_max, rows["rate"]),
+                y=ys,
+                mode="markers",
+                name=name,
+                marker=dict(
+                    symbol=[f"{symbol}" if not b else "triangle-right" for b in beyond],
+                    size=[11 if not b else 14 for b in beyond],
+                    color=PALETTE[name],
+                    line=dict(color="white", width=2),
+                ),
+                error_x=dict(
+                    type="data",
+                    array=np.where(beyond, 0, 1.96 * rows["mc_se"]),
+                    color=PALETTE[name],
+                    thickness=1.5,
+                    width=4,
+                ),
+                customdata=np.stack(
+                    [
+                        [_pct(v) for v in rows["rate"]],
+                        [G3_VERDICTS[v] for v in rows["verdict"]],
+                        [_pct(v) for v in rows["right"]],
+                        [_pct(v) for v in rows["left"]],
+                        rows["n_nan"],
+                    ],
+                    axis=-1,
+                ),
+                hovertemplate=(
+                    f"<b>{name}</b> — %{{customdata[1]}}<br>Rejeições com ρ = 0: "
+                    "%{customdata[0]}<br>Cauda direita: %{customdata[2]} · esquerda: "
+                    "%{customdata[3]}<br>Amostras constantes (não rejeitam): %{customdata[4]}"
+                    "<extra></extra>"
+                ),
+            )
+        )
+        # Rótulos numa coluna à direita do gráfico, alinhados com cada ponto.
+        for y, rate, verdict, off in zip(ys, rows["rate"], rows["verdict"], beyond, strict=True):
+            fig.add_annotation(
+                x=1.01,
+                xref="paper",
+                y=y,
+                xanchor="left",
+                showarrow=False,
+                text=f"{name}: {_pct(rate)} · {G3_VERDICTS[verdict]}"
+                + (" (fora da escala)" if off else ""),
+                font=dict(color=G3_INK, size=11),
+            )
+
+    reps_text = f"{int(table['n_reps'].iloc[0]):,}".replace(",", ".")
+    fig.update_xaxes(
+        title_text="Taxa de rejeição com ρ = 0 (% de amostras com p < α)",
+        range=[0, x_max],
+        tickformat=".0%",
+    )
+    fig.update_yaxes(
+        tickvals=list(range(len(situations))),
+        ticktext=[G4_SITUATION_LABELS.get(s, s) for s in situations],
+        autorange="reversed",
+        showgrid=False,
+        zeroline=False,
+    )
+    fig.update_layout(
+        title=dict(
+            text=f"G3 — Erro tipo I do Pearson × Spearman (α = {_decimal(alpha)}, "
+            f"{reps_text} réplicas por ponto)",
+            x=0.0,
+            xanchor="left",
+        ),
+        height=500,
+        template="plotly_white",
+        separators=",.",
+        legend=dict(orientation="h", yanchor="top", y=-0.2, xanchor="left", x=0.0),
+        margin=dict(t=60, b=120, l=260, r=290),
+    )
+    return fig
+
+
+def g3_text(alpha: float = DEFAULT_ALPHA, table: pd.DataFrame | None = None,
+            population: pd.DataFrame | None = None) -> str:
+    """Texto do G3 (Markdown), montado a partir das taxas simuladas para o α escolhido."""
+    table = type1_table(alpha) if table is None else table
+    population = simulate.load_population() if population is None else population
+    low, high = table["band_low"].iloc[0], table["band_high"].iloc[0]
+    reps_text = f"{int(table['n_reps'].iloc[0]):,}".replace(",", ".")
+    rate = table.set_index(["situation", "test"])
+    situations = list(dict.fromkeys(table["situation"]))
+
+    def deviating(test: str, exclude: str | None = None) -> pd.DataFrame:
+        rows = table[(table["test"] == test) & (table["verdict"] != "perto")]
+        return rows[rows["situation"] != exclude]
+
+    def tails(rows: pd.DataFrame) -> str:
+        return "; ".join(
+            f"{row.situation}: {_pct(row.rate)}, {_pct(row.right)} à direita e "
+            f"{_pct(row.left)} à esquerda"
+            for row in rows.itertuples()
+        )
+
+    paragraphs = [
+        f"Com ρ = 0 e α = {_pct(alpha, 0)}, um teste correto rejeita H₀ em cerca de "
+        f"{_pct(alpha, 0)} das amostras. Com {reps_text} réplicas, taxas entre {_pct(low)} e "
+        f"{_pct(high)} (faixa cinza) não se distinguem de α; acima dela o teste é **liberal** "
+        "(rejeita H₀ verdadeira mais do que deveria) e abaixo, **conservador**.",
+        "\n".join(
+            f"- **{situation}:** "
+            + " · ".join(
+                f"{name} {_pct(rate.loc[(situation, name), 'rate'])} "
+                f"({G3_VERDICTS[rate.loc[(situation, name), 'verdict']]})"
+                for _, name, _, _ in G3_TESTS
+            )
+            for situation in situations
+        ),
+    ]
+
+    pearson_off = deviating("Pearson", exclude="S-outlier")
+    why = (
+        "**Por quê.** O Pearson só tem a distribuição t exata com dados normais (S-base). Com a "
+        "forma do KC1, uma classe com LOC e defeitos altos ao mesmo tempo empurra o r para cima, "
+        "então a distribuição do t sob H₀ fica assimétrica (veja o G2) e as rejeições do Pearson "
+        "caem quase todas na cauda direita."
+    )
+    if pearson_off.empty:
+        why += " Com este α, isso ainda não o tira da faixa fora da S-outlier."
+    else:
+        why += (
+            f" Por isso ele fica liberal ({tails(pearson_off)}): a cauda direita longa passa do "
+            "t crítico mais vezes do que a curva prevê, e isso pesa mais com n pequeno e com α "
+            "menor."
+        )
+    spearman_off = deviating("Spearman")
+    if spearman_off.empty:
+        why += (
+            " O Spearman fica perto de α em todas as situações: sob H₀, os postos de Y são uma "
+            "permutação ao acaso dos postos de X, qualquer que seja a forma dos dados, e a curva "
+            "t aproxima bem a distribuição dos postos."
+        )
+    else:
+        why += (
+            " O Spearman não depende da forma dos dados, mas a curva t é só uma aproximação da "
+            "distribuição dos postos, pior com poucas observações; "
+            f"por isso ele sai da faixa em {', '.join(spearman_off['situation'])} "
+            f"({tails(spearman_off)}), sem o desequilíbrio entre as caudas do Pearson."
+        )
+    paragraphs.append(why)
+
+    outlier_pop = population[(population["situation"] == "S-outlier") & (population["rho"] == 0)]
+    if "S-outlier" in situations and not outlier_pop.empty:
+        contaminated = 1 - (1 - OUTLIER_RATE) ** SITUATIONS["S-outlier"][1]
+        spearman = rate.loc[("S-outlier", "Spearman")]
+        spearman_text = (
+            "enquanto o Spearman continua perto de α"
+            if spearman["verdict"] == "perto"
+            else f"enquanto o Spearman fica em {_pct(spearman['rate'])}"
+        )
+        paragraphs.append(
+            "**S-outlier.** Aqui ρ = 0 vale só para as classes comuns: cerca de "
+            f"{_pct(contaminated, 0)} das amostras recebem uma classe extrema (LOC e defeitos "
+            f"altos), o que dá r = {_decimal(float(outlier_pop['r_pop'].iloc[0]))} na população, "
+            f"contra ρₛ = {_decimal(float(outlier_pop['rho_s_pop'].iloc[0]))}. Os "
+            f"{_pct(rate.loc[('S-outlier', 'Pearson'), 'rate'])} de rejeições do Pearson vêm "
+            "principalmente dessas amostras, em que ele rejeita na maior parte das vezes. Não "
+            "é um erro tipo I no sentido estrito, mas é o fenômeno da pergunta: o Pearson aponta "
+            f"uma associação que vem só de poucas classes gigantes, {spearman_text}."
+        )
+
+    with_nan = table[(table["test"] == "Pearson") & (table["n_nan"] > 0)]
+    if not with_nan.empty:
+        paragraphs.append(
+            f"As {int(with_nan['n_nan'].sum())} amostras em que todas as classes têm o mesmo "
+            f"número de defeitos ({', '.join(with_nan['situation'])}) não têm coeficiente "
+            "definido e contam como \"não rejeita\"."
+        )
+    return "\n\n".join(paragraphs)
 
 
 # --------------------------------------------------------------------------- G4 (T10, #85)

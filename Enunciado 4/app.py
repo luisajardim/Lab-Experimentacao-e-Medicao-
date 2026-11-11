@@ -277,19 +277,8 @@ def render_sec4_erro_tipo1(alpha: float) -> None:
     """Seção 4 — Erro tipo I (G3)."""
     st.header("4. Erro tipo I (G3)")
 
-    fig3 = _call_optional_figure("fig_g3", alpha=alpha)
-    if fig3 is not None:
-        st.plotly_chart(fig3, width="stretch")
-        g3_text = getattr(figures, "G3_TEXT", None)
-        if g3_text:
-            st.markdown(g3_text)
-    else:
-        st.info(
-            f"**Seção preparada para a Sprint 2 (T08 `#83` e T09 `#84`):** "
-            f"Exibirá a taxa empírica de rejeição sob $H_0$ ($\\rho = 0$) em 10.000 réplicas para as "
-            f"4 situações (`S-base`, `S-real`, `S-real-n10`, `S-outlier`) com linha de referência em "
-            f"$\\alpha = {alpha:.0%}$ e banda de erro de Monte Carlo."
-        )
+    st.plotly_chart(figures.fig_g3(alpha=alpha), width="stretch")
+    st.markdown(figures.g3_text(alpha=alpha))
 
 
 def render_sec5_poder(alpha: float) -> None:

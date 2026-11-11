@@ -6,7 +6,7 @@ from streamlit.testing.v1 import AppTest
 
 import cli
 from config import COLOR_PEARSON, COLOR_SPEARMAN, PALETTE, ROOT
-from figures import G2_TEXT
+from figures import G2_TEXT, g3_text
 
 sys.path.insert(0, str(ROOT))
 import app  # noqa: E402, I001
@@ -56,3 +56,15 @@ def test_section3_renders_g2_with_its_text():
     assert not at.exception
     assert any(m.value == G2_TEXT for m in at.markdown)
     assert not any("T06b" in c.value for c in at.caption)
+
+
+def test_section4_renders_g3_and_its_text_follows_alpha():
+    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
+    at.run()
+    assert not at.exception
+    assert any(m.value == g3_text(0.05) for m in at.markdown)
+    assert not any("T09" in i.value for i in at.info)
+
+    at.selectbox[0].set_value(0.01).run()
+    assert not at.exception
+    assert any(m.value == g3_text(0.01) for m in at.markdown)
