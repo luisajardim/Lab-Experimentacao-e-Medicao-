@@ -153,11 +153,21 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Quem:** Pedro · **Mostrar:** Seção 1 (hipóteses) ou Seção 7.
 
-**Resposta (~30 s):** _a preencher por @pedroseabra27 (#90)_
+**Resposta (~30 s):**
+> "Erro tipo I seria concluir que o tamanho da classe está associado aos defeitos quando não está: o
+> time passaria a concentrar revisão e testes nas classes grandes por causa de uma regra falsa, e as
+> pequenas com defeito ficariam sem atenção. Erro tipo II seria não detectar uma associação que existe, e
+> perder um sinal barato para priorizar testes. Para nós o tipo I é mais grave: é justamente o erro que uma
+> única classe gigante provoca no Pearson, e ele muda onde o esforço de qualidade é gasto."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar:** α = 0,05 controla o tipo I · na S-outlier o Pearson comete tipo I em **20,1%** das amostras (Spearman 5,4%) · tipo II = 1 − poder: na S-real com ρ = 0,6, o Pearson erra em 30% e o Spearman em 15%.
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"Mas a NASA não preferiria nunca perder defeitos?"* → Se a decisão fosse testar menos as classes
+  pequenas, o tipo II pesaria mais. Mas o teste é sobre a relação tamanho × defeitos, não sobre achar
+  defeitos; uma regra falsa (tipo I) desvia recursos de forma sistemática.
+- *"Como reduzir o tipo II sem aumentar o tipo I?"* → Mais classes na amostra ou um teste com mais poder
+  para esse tipo de dado (o Spearman, na S-real).
 
 ---
 
@@ -177,11 +187,21 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Quem:** Pedro · **Mostrar:** Seção 5 — G4.
 
-**Resposta (~30 s):** _a preencher por @pedroseabra27 (#90)_
+**Resposta (~30 s):**
+> "Depende dos dados. Na S-base, com dados normais, o Pearson tem um pouco mais de poder em todos os
+> efeitos, como a teoria prevê. Nos dados com a forma do KC1, a vantagem troca de lado a partir de ρ ≈ 0,3,
+> e com ρ = 0,6 o Spearman detecta 85% contra 70%. Com 10 classes os dois ficam abaixo de 40%. Na
+> S-outlier, a curva do Pearson já começa em 20% com ρ = 0: isso não é poder, são rejeições falsas."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar (α = 0,05, Pearson / Spearman):** S-base ρ = 0,4: 62,0 / 55,3% · S-real ρ = 0,3: 25,0 / 27,1% e ρ = 0,6: 69,8 / 84,5% · S-real-n10 ρ = 0,6: 38,3 / 33,1% · S-outlier ρ = 0: 20,1 / 5,4% e ρ = 0,6: 75,4 / 85,9%.
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"O eixo x não favorece um dos testes?"* → O eixo é o ρ latente da cópula, o mesmo para os dois. Embaixo
+  de cada ponto mostramos o r e o ρₛ populacionais: na S-real com ρ = 0,6, r = 0,47 e ρₛ = 0,52. Nesses
+  dados a associação monotônica é mais forte que a linear, e o Spearman mede exatamente ela.
+- *"E na amostra pequena o Pearson ganha?"* → Só na aparência: com ρ = 0 ele já rejeita 6,5% (acima de
+  5%), então parte do poder é erro tipo I inflado. O Spearman sofre com os empates em zero.
+- *"As barras nos pontos?"* → ±1,96 erro padrão de Monte Carlo (10.000 réplicas por ponto).
 
 ---
 
@@ -210,11 +230,20 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Quem:** Pedro · **Mostrar:** trocar o seletor de α no topo e mostrar o G3 e o G4 mudando.
 
-**Resposta (~30 s):** _a preencher por @pedroseabra27 (#90)_
+**Resposta (~30 s):** *(trocar o seletor para 0,01 enquanto fala)*
+> "No G3, a linha de referência desce para 1% e todas as taxas caem. O Spearman fica perto de 1% em todas
+> as situações, mas o Pearson fica proporcionalmente mais liberal: 2,3% na S-real, mais que o dobro do
+> nominal, e 15% na S-outlier. No G4, todas as curvas descem: menos falsos positivos custam poder. Na
+> S-real com ρ = 0,6, o Spearman cai de 85% para 65% e o Pearson de 70% para 53%."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar (α = 0,01, Pearson / Spearman):** erro tipo I — S-base 0,9 / 1,1% · S-real **2,3** / 1,1% · S-real-n10 **3,1** / 1,4% · S-outlier **15,4** / 1,1% · poder ρ = 0,6 — S-base 85,8 / 79,0% · S-real 53,2 / 65,0% · S-real-n10 24,4 / 13,7%.
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"Por que o Pearson piora relativamente com α menor?"* → α = 0,01 olha mais longe na cauda da
+  distribuição de t, e é justamente a cauda que as classes gigantes deformam (a cauda direita longa
+  do Pearson no G2). A aproximação pela t vale perto do centro e falha nos extremos.
+- *"E o ponto de troca no G4?"* → Na S-real ele vai de ρ ≈ 0,3 para ρ ≈ 0,5.
+- *"Precisou re-simular?"* → Não: salvamos todos os p-valores, então trocar α é só mudar o limiar.
 
 ---
 
@@ -222,11 +251,21 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Quem:** Pedro · **Mostrar:** "Expectativa registrada antes de simular" (Seção 1) × Seção 7.
 
-**Resposta (~30 s):** _a preencher por @pedroseabra27 (#90)_
+**Resposta (~30 s):**
+> "Em grande parte, sim. Acertamos que o Pearson teria um pouco mais de poder com dados normais e que o
+> Spearman ganharia nos dados com a forma do KC1. Erramos com 10 classes: esperávamos vantagem do
+> Spearman, mas o Pearson rejeitou mais. Isso tem duas causas: com ~57% de zeros, numa amostra de 10
+> sobram poucos postos distintos para o Spearman, e o Pearson ficou liberal, rejeitando 6,5% sem efeito
+> nenhum, então parte do 'poder' dele é falso."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar:** expectativa registrada em 31/10 (Seção 1) · S-base ρ = 0,4: 62,0 / 55,3% (confirmou) · S-real ρ = 0,6: 69,8 / 84,5% (confirmou) · S-real-n10 ρ = 0,6: 38,3 / 33,1% e erro tipo I 6,5 / 5,2% (não confirmou) · a S-outlier ficou fora da comparação porque foi criada depois da análise exploratória.
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"E o erro tipo I, também bateu?"* → Para o Spearman, sim, em todas as situações. Para o Pearson, não
+  com n = 10: 6,5% está fora da faixa de Monte Carlo (5% ± 0,43 pp). Esperávamos que, com X e Y
+  independentes, a t continuasse valendo; com dados tão assimétricos e n pequeno, não vale.
+- *"Por que a S-outlier não entrou?"* → Porque já tínhamos visto o resultado dela antes de registrar a
+  expectativa; incluí-la seria "prever" algo já conhecido.
 
 ---
 
@@ -246,11 +285,22 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Quem:** Pedro · **Mostrar:** Seção 7 — Conclusão.
 
-**Resposta (~30 s):** _a preencher por @pedroseabra27 (#90)_
+**Resposta (~30 s):**
+> "Recomendamos o Spearman: ele mantém o erro tipo I perto de 5% em todas as situações e tem mais poder
+> nos dados realistas. Mudaríamos para o Pearson se os dados fossem quase normais e sem classes extremas,
+> ou se a pergunta fosse sobre a relação linear nos valores, como prever defeitos a cada 100 LOC. A
+> principal limitação é que tudo depende do gerador: a S-outlier se apoia numa única classe real do KC1,
+> e os dados da NASA são antigos e têm problemas de qualidade conhecidos."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar:** S-real ρ = 0,6: Spearman 84,5% × Pearson 69,8% · S-outlier ρ = 0: Pearson 20,1% de falsos positivos × Spearman 5,4% · com n = 10, poder < 40% para os dois · amostra real: r = 0,84 × ρₛ = 0,515 (o r é puxado pela classe de 101 defeitos).
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"Então a resposta à pergunta de pesquisa é?"* → Há uma tendência geral (o Spearman a detecta na
+  maioria das amostras), mas a força que o Pearson mostra é inflada por poucas classes gigantes.
+- *"E com amostras pequenas?"* → Nenhum dos dois é confiável; o melhor é coletar mais classes (bloco
+  "Para discutir": n ≈ 28 para 80% de poder com o Spearman, ≈ 43 com o Pearson).
+- *"Outras limitações?"* → LOC da classe é a soma do LOC dos métodos, e a cópula gaussiana não tem
+  dependência extra nas caudas.
 
 ---
 
