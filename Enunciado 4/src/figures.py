@@ -17,8 +17,9 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from scipy import stats
 
+import simulate
 import stat_tests
-from config import DEFAULT_ALPHA, PALETTE, REPS, SEED
+from config import DEFAULT_ALPHA, PALETTE, REPS, SEED, SITUATIONS
 from data import FULL_CSV, SAMPLE_CSV
 from fit import PARAMS_JSON
 from generate import generate, load_params
@@ -446,5 +447,162 @@ def fig_g2(
         separators=",.",
         legend=dict(orientation="h", yanchor="top", y=-0.16, xanchor="left", x=0.0),
         margin=dict(t=70, b=130, l=60, r=30),
+    )
+    return fig
+
+
+# --------------------------------------------------------------------------- G4 (T10, #85)
+
+G4_TARGET_POWER = 0.80
+G4_INK = "#2C3E50"
+G4_SITUATION_LABELS = {
+    "S-base": "S-base — normal bivariada (n = 30)",
+    "S-real": "S-real — Gamma × BinNeg (n = 30)",
+    "S-real-n10": "S-real-n10 — amostra pequena (n = 10)",
+    "S-outlier": "S-outlier — ponto dominante (n = 30)",
+}
+
+G4_TEXT = (
+    "Na **S-base** (dados normais), o Pearson tem um pouco mais de poder em todos os efeitos "
+    "(com ρ = 0,4, 62% contra 55% com α = 0,05), como prevê a teoria. Nos dados com a forma do KC1 "
+    "(**S-real**), a vantagem troca de lado a partir de ρ ≈ 0,3: com ρ = 0,6 o Spearman detecta a "
+    "associação em 85% das amostras e o Pearson em 70%, porque poucas classes extremas deixam o r muito "
+    "instável. Com **n = 10** os dois ficam abaixo de 40% mesmo no maior efeito; o Pearson parece ganhar, "
+    "mas parte disso é ilusória, já que com ρ = 0 ele rejeita H₀ em 6,5% das vezes (acima de 5%). Na "
+    "**S-outlier**, a curva do Pearson já começa em 20% com ρ = 0 (rejeições falsas puxadas pela classe "
+    "gigante), e o Spearman o ultrapassa a partir de ρ ≈ 0,4."
+)
+
+
+@cache
+def _g4_data() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Resumo das simulações (taxas de rejeição) e r/ρₛ populacionais, lidos de `data/sim/`."""
+    return simulate.load_summary(), simulate.load_population()
+
+
+def _rho_ticks(population: pd.DataFrame, situation: str) -> tuple[list[float], list[str]]:
+    """Rótulos do eixo x: ρ latente + r e ρₛ populacionais correspondentes."""
+    pop = population[population["situation"] == situation].sort_values("rho")
+    vals = pop["rho"].tolist()
+    text = [
+        f"<b>{_decimal(rho, 1)}</b><br>r={_decimal(r)}<br>ρₛ={_decimal(rs)}"
+        for rho, r, rs in zip(pop["rho"], pop["r_pop"], pop["rho_s_pop"], strict=True)
+    ]
+    return vals, text
+
+
+def fig_g4(
+    alpha: float = DEFAULT_ALPHA,
+    summary: pd.DataFrame | None = None,
+    population: pd.DataFrame | None = None,
+) -> go.Figure:
+    """Constrói o G4: curvas de poder dos dois testes × ρ latente, um painel por situação.
+
+    Em cada painel, Pearson e Spearman (mesmas cores do dashboard) com barras de ±1,96 erro
+    padrão de Monte Carlo; linha pontilhada em α (o ponto em ρ = 0 é o erro tipo I) e linha
+    tracejada em 80% de poder. O eixo x mostra, abaixo de cada ρ latente, o r e o ρₛ
+    populacionais correspondentes (estimados numa amostra grande).
+    """
+    if summary is None or population is None:
+        default_summary, default_population = _g4_data()
+        summary = default_summary if summary is None else summary
+        population = default_population if population is None else population
+
+    data = summary[np.isclose(summary["alpha"], alpha)]
+    if data.empty:
+        raise ValueError(f"Não há resultados simulados para α = {alpha}")
+
+    situations = [s for s in SITUATIONS if s in set(data["situation"])]
+    fig = make_subplots(
+        rows=2,
+        cols=2,
+        shared_yaxes=True,
+        horizontal_spacing=0.06,
+        vertical_spacing=0.22,
+        subplot_titles=[G4_SITUATION_LABELS.get(s, s) for s in situations],
+    )
+
+    for i, situation in enumerate(situations):
+        row, col = divmod(i, 2)
+        row, col = row + 1, col + 1
+        first = i == 0
+        cell = data[data["situation"] == situation]
+        for test, name in (("pearson", "Pearson"), ("spearman", "Spearman")):
+            curve = cell[cell["test"] == test].sort_values("rho")
+            fig.add_trace(
+                go.Scatter(
+                    x=curve["rho"],
+                    y=curve["reject_rate"],
+                    mode="lines+markers",
+                    name=name,
+                    legendgroup=name,
+                    showlegend=first,
+                    line=dict(color=PALETTE[name], width=2.5),
+                    marker=dict(size=7, color=PALETTE[name]),
+                    error_y=dict(
+                        type="data",
+                        array=1.96 * curve["mc_se"],
+                        thickness=1.2,
+                        width=3,
+                        color=PALETTE[name],
+                    ),
+                    hovertemplate=(
+                        f"<b>{name}</b> — {situation}<br>ρ latente = %{{x:.1f}}<br>"
+                        "Rejeições: %{y:.1%}<extra></extra>"
+                    ),
+                ),
+                row=row,
+                col=col,
+            )
+
+        for level, dash, label in (
+            (alpha, "dot", f"α = {_decimal(alpha)} (nível nominal)"),
+            (G4_TARGET_POWER, "dash", "Poder de 80%"),
+        ):
+            fig.add_trace(
+                go.Scatter(
+                    x=[-0.03, 0.63],
+                    y=[level, level],
+                    mode="lines",
+                    line=dict(color=G4_INK, width=1, dash=dash),
+                    name=label,
+                    legendgroup=label,
+                    showlegend=first,
+                    hoverinfo="skip",
+                ),
+                row=row,
+                col=col,
+            )
+
+        tickvals, ticktext = _rho_ticks(population, situation)
+        fig.update_xaxes(
+            tickvals=tickvals,
+            ticktext=ticktext,
+            range=[-0.03, 0.63],
+            tickfont=dict(size=10),
+            title_text="ρ latente da cópula (r e ρₛ populacionais abaixo)",
+            title_font=dict(size=11),
+            row=row,
+            col=col,
+        )
+        fig.update_yaxes(range=[0, 1.02], tickformat=".0%", row=row, col=col)
+        if col == 1:
+            fig.update_yaxes(title_text="Poder (% de amostras com p < α)", row=row, col=col)
+
+    reps_text = f"{int(data['n_reps'].iloc[0]):,}".replace(",", ".")
+    fig.update_layout(
+        title=dict(
+            text=(
+                "G4 — Poder do Pearson × Spearman por tamanho do efeito "
+                f"(α = {_decimal(alpha)}, {reps_text} réplicas por ponto)"
+            ),
+            x=0.0,
+            xanchor="left",
+        ),
+        height=820,
+        template="plotly_white",
+        separators=",.",
+        legend=dict(orientation="h", yanchor="bottom", y=1.04, xanchor="left", x=0.0),
+        margin=dict(t=110, b=60, l=70, r=30),
     )
     return fig
