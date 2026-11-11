@@ -68,3 +68,17 @@ def test_section4_renders_g3_and_its_text_follows_alpha():
     at.selectbox[0].set_value(0.01).run()
     assert not at.exception
     assert any(m.value == g3_text(0.01) for m in at.markdown)
+
+
+def test_section6_renders_real_data_table_and_text():
+    import stat_tests
+
+    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
+    at.run()
+    assert not at.exception
+    assert any(m.value == stat_tests.real_data_text(alpha=0.05) for m in at.markdown)
+    assert any("Tamanho do efeito (IC 95%)" in list(df.value.columns) for df in at.dataframe)
+
+    at.selectbox[0].set_value(0.01).run()
+    assert not at.exception
+    assert any("Conclusão (α = 0,01)" in list(df.value.columns) for df in at.dataframe)

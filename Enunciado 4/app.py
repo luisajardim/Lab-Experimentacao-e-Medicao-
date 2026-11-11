@@ -300,51 +300,47 @@ def render_sec5_poder(alpha: float) -> None:
         )
 
 
-def render_sec6_dados_reais(sample_df: pd.DataFrame, full_df: pd.DataFrame) -> None:
+def render_sec6_dados_reais(sample_df: pd.DataFrame, full_df: pd.DataFrame, alpha: float) -> None:
     """Seção 6 — Aplicação dos testes aos dados reais (amostra n = 30 do KC1)."""
     st.header("6. Dados reais")
 
-    real_table_fn = getattr(stat_tests, "real_data_table", None) or getattr(
-        stat_tests, "evaluate_real_sample", None
+    st.markdown(
+        "Os dois testes aplicados à amostra sorteada de **30 classes** do NASA KC1 "
+        "(`data/real/kc1_sample30.csv`, `SEED = 42`), com H₀: ρ = 0 bicaudal."
     )
-    if callable(real_table_fn):
-        result_df = real_table_fn(sample_df)
-        st.dataframe(result_df, width="stretch", hide_index=True)
-    else:
-        st.markdown(
-            "Amostra sorteada de **$n = 30$ classes** do NASA KC1 (`data/real/kc1_sample30.csv`, `SEED = 42`). "
-            "A tabela comparativa com estatística $t$, p-valor e IC 95% (Fisher $z$ para Pearson e bootstrap "
-            "para Spearman) será consolidada na tarefa **T11 (Issue `#86`, Sprint 2)**."
+    st.dataframe(stat_tests.real_data_table(alpha=alpha), width="stretch", hide_index=True)
+    st.markdown(stat_tests.real_data_text(alpha=alpha))
+
+    st.subheader("A amostra")
+    col_a, col_b = st.columns([1.4, 1.0])
+    with col_a:
+        st.dataframe(sample_df, width="stretch", hide_index=True, height=260)
+    with col_b:
+        summary_df = pd.DataFrame(
+            [
+                {
+                    "Conjunto": "KC1 Completo (n = 145)",
+                    "LOC Mediana (IQR)": (
+                        f"{full_df['loc'].median():.0f} "
+                        f"({full_df['loc'].quantile(0.25):.0f}–{full_df['loc'].quantile(0.75):.0f})"
+                    ),
+                    "LOC Máx": int(full_df["loc"].max()),
+                    "Defeitos Máx": int(full_df["defects"].max()),
+                    "% Sem Defeitos": f"{(full_df['defects'] == 0).mean():.1%}",
+                },
+                {
+                    "Conjunto": "Amostra Real (n = 30)",
+                    "LOC Mediana (IQR)": (
+                        f"{sample_df['loc'].median():.0f} "
+                        f"({sample_df['loc'].quantile(0.25):.0f}–{sample_df['loc'].quantile(0.75):.0f})"
+                    ),
+                    "LOC Máx": int(sample_df["loc"].max()),
+                    "Defeitos Máx": int(sample_df["defects"].max()),
+                    "% Sem Defeitos": f"{(sample_df['defects'] == 0).mean():.1%}",
+                },
+            ]
         )
-        col_a, col_b = st.columns([1.4, 1.0])
-        with col_a:
-            st.dataframe(sample_df, width="stretch", hide_index=True, height=260)
-        with col_b:
-            summary_df = pd.DataFrame(
-                [
-                    {
-                        "Conjunto": "KC1 Completo (n = 145)",
-                        "LOC Mediana (IQR)": (
-                            f"{full_df['loc'].median():.0f} "
-                            f"({full_df['loc'].quantile(0.25):.0f}–{full_df['loc'].quantile(0.75):.0f})"
-                        ),
-                        "LOC Máx": int(full_df["loc"].max()),
-                        "Defeitos Máx": int(full_df["defects"].max()),
-                        "% Sem Defeitos": f"{(full_df['defects'] == 0).mean():.1%}",
-                    },
-                    {
-                        "Conjunto": "Amostra Real (n = 30)",
-                        "LOC Mediana (IQR)": (
-                            f"{sample_df['loc'].median():.0f} "
-                            f"({sample_df['loc'].quantile(0.25):.0f}–{sample_df['loc'].quantile(0.75):.0f})"
-                        ),
-                        "LOC Máx": int(sample_df["loc"].max()),
-                        "Defeitos Máx": int(sample_df["defects"].max()),
-                        "% Sem Defeitos": f"{(sample_df['defects'] == 0).mean():.1%}",
-                    },
-                ]
-            )
-            st.dataframe(summary_df, width="stretch", hide_index=True)
+        st.dataframe(summary_df, width="stretch", hide_index=True)
 
 
 def _rate(summary: pd.DataFrame, situation: str, rho: float, test: str, alpha: float) -> float:
@@ -501,7 +497,7 @@ def main() -> None:
     st.divider()
     render_sec5_poder(alpha)
     st.divider()
-    render_sec6_dados_reais(sample_df, full_df)
+    render_sec6_dados_reais(sample_df, full_df, alpha)
     st.divider()
     render_sec7_conclusao(alpha, sample_df)
     # Extra opcional (#91): aparece só se data/sim/sample_size.csv existir.

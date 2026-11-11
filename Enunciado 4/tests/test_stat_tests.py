@@ -1,16 +1,32 @@
 """Testes de Pearson e Spearman vetorizados (T05, #79)."""
 
+import re
 import warnings
 from dataclasses import replace
 
 import numpy as np
+import pandas as pd
 import pytest
 from scipy import stats
 
 import stat_tests
 from config import SEED, SITUATIONS
+from data import SAMPLE_CSV
 from generate import generate
-from stat_tests import CorrelationResult, interpret_example, pearson, run_example, spearman
+from stat_tests import (
+    CorrelationResult,
+    analyze_real,
+    bootstrap_ci,
+    cohen_label,
+    fisher_ci,
+    interpret_example,
+    pearson,
+    real_data_table,
+    real_data_text,
+    real_sample_analysis,
+    run_example,
+    spearman,
+)
 
 
 def _scipy_row(fn, x_row, y_row):
@@ -170,3 +186,79 @@ def test_interpretation_refuses_undefined_coefficient():
     nan_result = CorrelationResult(np.nan, np.nan, np.nan, 28)
     with pytest.raises(ValueError):
         interpret_example(replace(example, pearson=nan_result))
+
+
+# --- Dados reais (T11, #86) ---------------------------------------------------
+
+def test_fisher_ci_by_hand():
+    low, high = fisher_ci(0.5, 30)
+    half = 1.959963984540054 / np.sqrt(27)
+    z = np.arctanh(0.5)
+    assert (low, high) == pytest.approx((np.tanh(z - half), np.tanh(z + half)))
+    assert low < 0.5 < high
+
+
+@pytest.mark.parametrize(
+    ("coef", "label"),
+    [(0.05, "desprezível"), (-0.2, "pequeno"), (0.3, "moderado"), (0.51, "grande")],
+)
+def test_cohen_labels(coef, label):
+    assert cohen_label(coef) == label
+
+
+def test_bootstrap_ci_is_reproducible_and_contains_the_estimate():
+    rng = np.random.default_rng(0)
+    x = rng.normal(size=40)
+    y = x + rng.normal(size=40)
+    first, second = bootstrap_ci(x, y, n_resamples=2000), bootstrap_ci(x, y, n_resamples=2000)
+    assert first == second
+    assert first[0] < spearman(x, y).coef < first[1]
+
+
+def test_analyze_real_finds_the_influential_class_and_practical_numbers():
+    x = np.array([10.0, 20, 30, 40, 50, 60, 70, 80, 90, 5000])
+    y = np.array([0.0, 1, 0, 2, 1, 3, 0, 2, 4, 100])
+    a = analyze_real(x, y)
+    assert (a.influential_loc, a.influential_defects) == (5000, 100)
+    assert a.r_without_influential == pytest.approx(pearson(x[:-1], y[:-1]).coef)
+    assert a.rho_s_without_influential == pytest.approx(spearman(x[:-1], y[:-1]).coef)
+    larger = x > np.median(x)
+    assert a.share_defects_larger_half == pytest.approx(y[larger].sum() / y.sum())
+    assert a.any_defect_smaller_half == pytest.approx((y[~larger] > 0).mean())
+    assert a.pearson_ci == pytest.approx(fisher_ci(a.pearson.coef, 10))
+
+
+def test_real_sample_matches_scipy():
+    a = real_sample_analysis()
+    sample = pd.read_csv(SAMPLE_CSV)
+    assert a.n == 30
+    assert a.pearson.p == pytest.approx(stats.pearsonr(sample["loc"], sample["defects"]).pvalue)
+    assert a.spearman.p == pytest.approx(stats.spearmanr(sample["loc"], sample["defects"]).pvalue)
+
+
+def test_real_table_has_required_columns_and_conclusions_follow_alpha():
+    table = real_data_table(alpha=0.05)
+    assert list(table["Teste"]) == ["Pearson", "Spearman"]
+    for column in ("Estatística", "t (28 g.l.)", "p-valor", "Tamanho do efeito (IC 95%)",
+                   "Método do IC", "Conclusão (α = 0,05)"):
+        assert column in table
+    assert table["Método do IC"].str.contains("Fisher").iloc[0]
+    assert table["Método do IC"].str.contains("bootstrap").iloc[1]
+    a = real_sample_analysis()
+    fake = replace(a, spearman=a.spearman._replace(p=0.03))
+    conclusions = real_data_table(fake, alpha=0.01)["Conclusão (α = 0,01)"]
+    assert conclusions.iloc[0].startswith("Rejeita")
+    assert conclusions.iloc[1].startswith("Não rejeita")
+    assert "Conclusões diferentes" in real_data_text(fake, alpha=0.01)
+
+
+def test_real_text_reports_computed_numbers():
+    a = real_sample_analysis()
+    text = real_data_text(alpha=0.05)
+    assert "Mesma conclusão" in text
+    for value in (a.spearman.coef, *a.spearman_ci, a.r_without_influential):
+        assert f"{value:.2f}".replace(".", ",") in text
+    assert f"{100 * a.share_defects_larger_half:.0f}%" in text
+    assert "2.883 LOC e 101 defeitos" in text
+    # Decimais sempre com vírgula (o ponto só aparece como separador de milhar, ex.: 2.883).
+    assert re.search(r"\d\.\d{2}(?!\d)", text) is None
