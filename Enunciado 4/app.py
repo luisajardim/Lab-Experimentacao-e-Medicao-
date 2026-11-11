@@ -23,6 +23,7 @@ import streamlit as st  # noqa: E402
 
 import figures  # noqa: E402
 import sample_size  # noqa: E402
+import simulate  # noqa: E402
 import stat_tests  # noqa: E402
 from config import (  # noqa: E402
     ALPHAS,
@@ -357,20 +358,136 @@ def render_sec6_dados_reais(sample_df: pd.DataFrame, full_df: pd.DataFrame) -> N
             st.dataframe(summary_df, width="stretch", hide_index=True)
 
 
-def render_sec7_conclusao() -> None:
-    """Seção 7 — Conclusão (síntese esperado × encontrado, recomendação e limitações)."""
+def _rate(summary: pd.DataFrame, situation: str, rho: float, test: str, alpha: float) -> float:
+    """Taxa de rejeição simulada de uma célula (situação × ρ × teste × α)."""
+    row = summary[
+        (summary["situation"] == situation)
+        & ((summary["rho"] - rho).abs() < 1e-9)
+        & (summary["test"] == test)
+        & ((summary["alpha"] - alpha).abs() < 1e-9)
+    ]
+    return float(row["reject_rate"].iloc[0])
+
+
+def _pct(value: float) -> str:
+    return f"{value:.1%}".replace(".", ",")
+
+
+def _num(value: float, digits: int = 2) -> str:
+    return f"{value:.{digits}f}".replace(".", ",")
+
+
+def expectation_table(summary: pd.DataFrame, alpha: float) -> pd.DataFrame:
+    """Expectativa registrada na T03 × o que a simulação encontrou (números no α escolhido)."""
+
+    def pair(situation: str, rho: float) -> str:
+        p = _rate(summary, situation, rho, "pearson", alpha)
+        s = _rate(summary, situation, rho, "spearman", alpha)
+        return f"{_pct(p)} / {_pct(s)}"
+
+    return pd.DataFrame(
+        [
+            {
+                "Pergunta": "Q1 — Erro tipo I (ρ = 0)",
+                "O grupo esperava (31/10)": "Os dois perto de α em S-base, S-real e S-real-n10.",
+                "Simulação (Pearson / Spearman)": (
+                    f"S-base {pair('S-base', 0.0)} · S-real {pair('S-real', 0.0)} · "
+                    f"S-real-n10 {pair('S-real-n10', 0.0)}"
+                ),
+                "Confirmou?": (
+                    "Em parte: o Spearman ficou em α em todas; o Pearson ficou liberal com n = 10 "
+                    "(e, com α = 0,01, também na S-real)."
+                ),
+            },
+            {
+                "Pergunta": "Q2 — Poder na S-base (ρ = 0,4)",
+                "O grupo esperava (31/10)": "Pearson com um pouco mais de poder (teste ótimo na normal).",
+                "Simulação (Pearson / Spearman)": pair("S-base", 0.4),
+                "Confirmou?": "Sim.",
+            },
+            {
+                "Pergunta": "Q3 — Poder na S-real (ρ = 0,6)",
+                "O grupo esperava (31/10)": "Spearman com mais poder (postos limitam as classes extremas).",
+                "Simulação (Pearson / Spearman)": pair("S-real", 0.6),
+                "Confirmou?": "Sim, a partir de ρ ≈ 0,3; com efeitos pequenos os dois ficam parecidos.",
+            },
+            {
+                "Pergunta": "Q3 — Poder na S-real-n10 (ρ = 0,6)",
+                "O grupo esperava (31/10)": "Os dois perdem poder; vantagem menor do Spearman.",
+                "Simulação (Pearson / Spearman)": pair("S-real-n10", 0.6),
+                "Confirmou?": (
+                    "Não: o Pearson rejeita mais, mas parte disso é erro tipo I inflado; com ~57% de "
+                    "zeros, 10 classes deixam o Spearman com poucos postos distintos."
+                ),
+            },
+            {
+                "Pergunta": "S-outlier (sem expectativa a priori)",
+                "O grupo esperava (31/10)": "— (criada depois da análise exploratória).",
+                "Simulação (Pearson / Spearman)": (
+                    f"ρ = 0: {pair('S-outlier', 0.0)} · ρ = 0,6: {pair('S-outlier', 0.6)}"
+                ),
+                "Confirmou?": (
+                    "Mostra o fenômeno da pergunta: uma classe gigante gera falsos positivos no Pearson."
+                ),
+            },
+        ]
+    )
+
+
+def render_sec7_conclusao(alpha: float, sample_df: pd.DataFrame) -> None:
+    """Seção 7 — Conclusão: esperado × encontrado, resposta, recomendação e principal limitação."""
     st.header("7. Conclusão")
+
+    summary = simulate.load_summary()
+    st.subheader("O que esperávamos × o que encontramos")
+    st.caption(
+        f"Taxas de rejeição com α = {_num(alpha)} (mude o seletor no topo). A expectativa foi "
+        "registrada em `docs/cenario.md` antes de rodar a simulação."
+    )
+    st.dataframe(expectation_table(summary, alpha), width="stretch", hide_index=True)
+
+    x = sample_df["loc"].to_numpy(dtype=float)
+    y = sample_df["defects"].to_numpy(dtype=float)
+    r_real, s_real = stat_tests.pearson(x, y), stat_tests.spearman(x, y)
+    p_out0 = _rate(summary, "S-outlier", 0.0, "pearson", alpha)
+    s_out0 = _rate(summary, "S-outlier", 0.0, "spearman", alpha)
+    p_real6 = _rate(summary, "S-real", 0.6, "pearson", alpha)
+    s_real6 = _rate(summary, "S-real", 0.6, "spearman", alpha)
+
+    st.subheader("Resposta à pergunta")
     st.markdown(
-        "- **Síntese preliminar (Sprint 1):** Os dados reais do NASA KC1 violam severamente a normalidade "
-        "bivariada exigida pelo teste de Pearson, combinando forte assimetria positiva em LOC (`skew = 3,40`), "
-        "inflação de zeros em defeitos (`58,6%` das classes com zero defeitos) e um ponto extremo dominante "
-        "(`2.883 LOC`, `101 defeitos`) que sozinho desloca o $r$ de Pearson de `0,57` para `0,69`.\n"
-        "- **Próximo passo (Sprint 2 — T12, Issue `#87`):** Confrontar a expectativa registrada na Seção 1 "
-        "com as curvas empíricas de Erro Tipo I (G3) e Poder (G4) das 10.000 réplicas de Monte Carlo e "
-        "formular a recomendação prática de quando usar Spearman ou Pearson.\n"
-        "- **Principais limitações:** Dados históricos da NASA (2004/2005) sujeitos a críticas conhecidas de "
-        "qualidade e duplicatas de classes triviais (Shepperd et al., 2013); LOC da classe obtido pela soma "
-        "dos métodos; e simetria de cauda da cópula gaussiana (compensada pela criação da situação `S-outlier`)."
+        "Classes maiores **tendem, de modo geral, a ter mais defeitos**, mas a força da associação que o "
+        "Pearson mostra é inflada por poucas classes gigantes. Na amostra de 30 classes do KC1, o "
+        f"Spearman (ρₛ = {_num(s_real.coef)}) indica uma tendência moderada, que vale para a maioria "
+        f"das classes; o Pearson dá um valor bem mais alto (r = {_num(r_real.coef)}), puxado pela "
+        "classe de 2.883 LOC e 101 defeitos. No KC1 inteiro, tirar só essa classe derruba o r de "
+        "0,69 para 0,57, enquanto o ρₛ quase não muda (0,57 → 0,56). A simulação confirma o "
+        f"mecanismo: na S-outlier, sem efeito nenhum, o Pearson rejeita H₀ em {_pct(p_out0)} das "
+        f"amostras e o Spearman em {_pct(s_out0)}."
+    )
+
+    st.subheader("Recomendação")
+    st.markdown(
+        "- **Usar o Spearman** para LOC × defeitos e métricas de software parecidas (assimétricas, com "
+        "muitos zeros e classes gigantes): ele mantém o erro tipo I perto de α em todas as situações e "
+        f"tem mais poder nos dados realistas (S-real, ρ = 0,6: {_pct(s_real6)} contra "
+        f"{_pct(p_real6)}).\n"
+        "- **A escolha mudaria para o Pearson** se os dados fossem aproximadamente normais e sem pontos "
+        "extremos (S-base), onde ele tem um pouco mais de poder, ou se a pergunta fosse sobre "
+        "**relação linear nos valores** (por exemplo, quantos defeitos a mais cada 100 LOC trazem).\n"
+        "- **Com amostras muito pequenas (n ≈ 10)**, nenhum dos dois é confiável: o poder fica abaixo de "
+        "40% mesmo no maior efeito, e o Pearson ainda rejeita H₀ demais. O melhor é coletar mais "
+        "classes (o bloco \"Para discutir\" mostra quantas seriam necessárias)."
+    )
+
+    st.subheader("Principal limitação")
+    st.markdown(
+        "Os resultados de erro tipo I e de poder dependem de **como a simulação gera os dados**: a cópula "
+        "gaussiana não produz classes tão extremas quanto a do KC1, e a S-outlier, criada para cobrir "
+        "isso, se apoia em **uma única classe real** para definir a taxa de contaminação (1 em 145). "
+        "Além disso, os dados da NASA são antigos (2004/2005) e têm problemas de qualidade conhecidos "
+        "(Shepperd et al., 2013), então os números valem para sistemas parecidos com o KC1, não para "
+        "qualquer software."
     )
 
 
@@ -397,7 +514,7 @@ def main() -> None:
     st.divider()
     render_sec6_dados_reais(sample_df, full_df)
     st.divider()
-    render_sec7_conclusao()
+    render_sec7_conclusao(alpha, sample_df)
     # Extra opcional (#91): aparece só se data/sim/sample_size.csv existir.
     if sample_size.load() is not None:
         st.divider()
