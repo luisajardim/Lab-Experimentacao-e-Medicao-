@@ -1,0 +1,111 @@
+altair==6.3.0
+    # via streamlit
+anyio==4.15.1
+    # via
+    #   starlette
+    #   streamlit
+attrs==26.1.0
+    # via
+    #   jsonschema
+    #   referencing
+certifi==2026.10.23
+    # via requests
+charset-normalizer==3.5.2
+    # via requests
+click==8.5.0
+    # via
+    #   streamlit
+    #   uvicorn
+h11==0.16.0
+    # via uvicorn
+idna==3.20
+    # via
+    #   anyio
+    #   requests
+itsdangerous==2.2.0
+    # via streamlit
+jinja2==3.1.6
+    # via
+    #   altair
+    #   pydeck
+jsonschema==4.26.0
+    # via altair
+jsonschema-specifications==2025.9.1
+    # via jsonschema
+markupsafe==3.0.4
+    # via jinja2
+narwhals==2.28.0
+    # via
+    #   altair
+    #   plotly
+numpy==2.5.4
+    # via
+    #   lab04-testes-hipotese
+    #   pandas
+    #   pydeck
+    #   scipy
+    #   streamlit
+packaging==26.3
+    # via
+    #   altair
+    #   plotly
+    #   streamlit
+pandas==2.3.3
+    # via
+    #   lab04-testes-hipotese
+    #   streamlit
+pillow==13.0.0
+    # via streamlit
+plotly==6.9.0
+    # via lab04-testes-hipotese
+protobuf==7.36.2
+    # via streamlit
+pyarrow==26.0.1
+    # via
+    #   lab04-testes-hipotese
+    #   streamlit
+pydeck==0.9.3
+    # via streamlit
+python-dateutil==3.0.0
+    # via pandas
+python-multipart==0.0.33
+    # via streamlit
+pytz==2026.6
+    # via pandas
+referencing==0.37.0
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
+requests==2.34.2
+    # via streamlit
+rpds-py==2026.9.1
+    # via
+    #   jsonschema
+    #   referencing
+scipy==1.18.1
+    # via lab04-testes-hipotese
+six==1.17.0
+    # via python-dateutil
+starlette==1.10.0
+    # via streamlit
+streamlit==1.66.1
+    # via lab04-testes-hipotese
+typing-extensions==4.16.0
+    # via
+    #   altair
+    #   anyio
+    #   referencing
+    #   starlette
+    #   streamlit
+tzdata==2026.6
+    # via
+    #   pandas
+    #   python-dateutil
+urllib3==2.8.0
+    # via requests
+uvicorn==0.54.0
+    # via streamlit
+watchdog==6.0.0 ; sys_platform != 'darwin'
+    # via streamlit
+websockets==17.4
+    # via streamlit
