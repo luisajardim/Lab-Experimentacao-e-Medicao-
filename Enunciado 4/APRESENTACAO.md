@@ -115,13 +115,24 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 ## 5. O que cada um dos dois testes compara de fato (médias, postos, proporções...)?
 
-**Quem:** Luísa · **Mostrar:** Seção 3 — G2.
+**Quem:** Luísa · **Mostrar:** Seção 3 — G2 (os dois painéis, Pearson e Spearman).
 
-**Resposta (~30 s):** _a preencher por @luisajardim (#89)_
+**Resposta (~30 s):**
+> "Nenhum dos dois compara médias nem proporções: os dois medem associação entre LOC e defeitos. O Pearson
+> usa os **valores**: mede relação linear, e uma classe gigante pesa muito. O Spearman usa os **postos**: mede
+> se uma variável sobe quando a outra sobe, e cada classe pesa igual. Os dois transformam o coeficiente na mesma
+> estatística t e a comparam com a t de n − 2 graus de liberdade."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar:** t = r·√((n−2)/(1−r²)) · com n = 30, 28 g.l. · empates recebem o posto médio · na
+amostra real, r = 0,84 × ρₛ = 0,51: a diferença vem quase toda de uma classe.
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"O que são os postos?"* → A posição de cada classe quando ordenamos por LOC (1 = menor) e por defeitos. As 19
+  classes da amostra sem defeito empatam e recebem todas o mesmo posto médio.
+- *"O Spearman é não paramétrico, então não tem pressuposto?"* → Ele não supõe normalidade, mas o p-valor pela t
+  é uma aproximação da distribuição exata dos postos; com n = 10 essa aproximação piora (pergunta 9).
+- *"Implementaram ou usaram o SciPy?"* → Implementamos em lote (10.000 réplicas de uma vez) e conferimos linha a
+  linha contra `scipy.stats.pearsonr` e `spearmanr`.
 
 ---
 
@@ -129,11 +140,23 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Quem:** Luísa · **Mostrar:** Seção 3 — G2 (curva t, histogramas sob H₀, faixas cinza).
 
-**Resposta (~30 s):** _a preencher por @luisajardim (#89)_
+**Resposta (~30 s):**
+> "É o que a estatística t valeria se não houvesse associação. A curva escura é a teoria, a t com 28 graus de
+> liberdade; os histogramas são 10.000 amostras simuladas sem efeito. A rejeição fica nas duas caudas, onde
+> estão os t raros sob H₀, porque o teste é bicaudal: com α de 5%, |t| acima de 2,05. O Spearman segue a curva;
+> o Pearson é assimétrico, com a cauda direita longa."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar:** t crítico ±2,05 (α = 0,05) ou ±2,76 (α = 0,01) · nula simulada: S-real, ρ = 0,
+10.000 réplicas · Pearson: assimetria +1,55, rejeita 5,3% na cauda direita e 0,2% na esquerda · Spearman:
+assimetria ≈ 0, 2,5% e 2,7%.
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"Por que o Pearson fica assimétrico?"* → Com LOC e defeitos assimétricos, quando uma classe grande calha de ter
+  muitos defeitos, o r sobe bastante; o contrário quase não acontece. Conferimos com uma nula por permutação e com
+  dados normais (S-base), em que ele fica simétrico.
+- *"Então a curva t está errada para o Pearson?"* → É só uma aproximação nesses dados: o total de rejeições ainda
+  fica perto de 5%, mas quase todas de um lado. Isso aparece de novo no G3.
+- *"De onde vem o 2,05?"* → É o quantil 97,5% da t com 28 g.l.: deixa 2,5% de área em cada cauda.
 
 ---
 
@@ -141,11 +164,22 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Quem:** Luísa · **Mostrar:** Seção 3 — área colorida do G2 e o texto do exemplo logo abaixo.
 
-**Resposta (~30 s):** _a preencher por @luisajardim (#89)_
+**Resposta (~30 s):**
+> "O exemplo é uma amostra da S-real com efeito 0,3. O p-valor é a área colorida: a chance de um t tão ou mais
+> extremo que o nosso **se H₀ fosse verdadeira**. O Pearson deu 0,55 e o Spearman 0,13: nenhum rejeita, mas o
+> efeito existe, então os dois cometem erro tipo II. O p-valor não é a probabilidade de H₀ ser verdadeira, não
+> mede o tamanho do efeito, e um p grande não prova que não há associação."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar:** exemplo: S-real, ρ latente = 0,3, n = 30, semente 42 · Pearson r = 0,11, t = 0,61,
+p = 0,548 · Spearman ρₛ = 0,28, t = 1,54, p = 0,134 · nesse efeito, cada teste só rejeita em ~25% das amostras
+(25,0% / 27,1%).
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"Por que mostrar um exemplo que não rejeita?"* → Não escolhemos o resultado: o efeito e a semente foram fixados
+  antes. E ele é o caso típico: com ρ = 0,3 e 30 classes, não rejeitar acontece em ~75% das amostras.
+- *"Então o p = 0,13 do Spearman é 'quase significativo'?"* → Não usamos esse termo: com α = 0,05, não rejeita. O
+  p-valor menor só diz que o t dele ficou mais longe do centro.
+- *"Uma amostra diz qual teste é melhor?"* → Não; isso vem da taxa de rejeição em muitas réplicas (G3 e G4).
 
 ---
 
@@ -175,11 +209,25 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Quem:** Luísa · **Mostrar:** Seção 4 — G3 (linha em 5% e faixa de Monte Carlo).
 
-**Resposta (~30 s):** _a preencher por @luisajardim (#89)_
+**Resposta (~30 s):**
+> "O Spearman ficou dentro da faixa cinza, perto de 5%, nas quatro situações. O Pearson se afastou em duas e
+> ficou liberal: 6,5% com 10 classes e 20% na S-outlier. Liberal quer dizer que ele rejeita H₀ verdadeira mais
+> do que deveria. O motivo é o que vimos no G2: com dados assimétricos, a distribuição do Pearson tem a cauda
+> direita longa, e quase todas as rejeições caem desse lado. Nenhum teste ficou conservador."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar (α = 0,05, Pearson / Spearman):** faixa de Monte Carlo 4,57% a 5,43% (5% ± 0,43 pp, 10.000
+réplicas) · S-base 4,98 / 4,82% · S-real 5,27 / 5,07% · S-real-n10 **6,51** / 5,16% · S-outlier **20,14** / 5,37% ·
+na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"E com α = 0,01?"* → O Pearson também fica liberal na S-real (2,32% contra 1%), e o Spearman sai um pouco da
+  faixa com 10 classes (1,35%), mas sem desequilíbrio entre as caudas.
+- *"Na S-outlier é mesmo erro tipo I?"* → Não no sentido estrito: as classes extremas criam um r populacional de
+  0,18 (ρₛ = 0,02), então não há relação entre as classes comuns, mas há nos valores. O Pearson rejeita em 86% das
+  amostras que recebem uma classe extrema, contra 4,8% nas outras (o nível nominal): é exatamente o fenômeno da
+  nossa pergunta.
+- *"Como sabem que 5,27% é 'perto'?"* → Com 10.000 réplicas, o erro de Monte Carlo é ±0,43 pp; tudo dentro dessa
+  faixa não se distingue de 5%.
 
 ---
 
@@ -271,13 +319,25 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 ## 14. Nos dados reais, os dois testes chegaram à mesma conclusão? O tamanho do efeito tem importância prática?
 
-**Quem:** Luísa · **Mostrar:** Seção 6 — tabela dos dados reais.
+**Quem:** Luísa · **Mostrar:** Seção 6 — tabela dos dados reais e o texto abaixo dela.
 
-**Resposta (~30 s):** _a preencher por @luisajardim (#89)_
+**Resposta (~30 s):**
+> "Sim: os dois rejeitam H₀, com α de 5% ou de 1%. Mas o tamanho difere: r = 0,84 e ρₛ = 0,51. O r é inflado
+> por uma classe de 2.883 linhas e 101 defeitos; sem ela, cai para 0,58. Confiamos no Spearman: efeito grande,
+> mas com IC de 0,18 a 0,75, ainda incerto. Na prática, a metade maior das classes concentra 93% dos defeitos:
+> vale priorizar a revisão nelas."
 
-**Números para lembrar:** _a preencher_
+**Números para lembrar:** Pearson r = 0,84, t = 8,27, p < 0,001, IC Fisher [0,69; 0,92] · Spearman ρₛ = 0,51,
+t = 3,18, p = 0,004, IC bootstrap [0,18; 0,75] · sem a classe gigante: r = 0,58, ρₛ = 0,45 · metade maior: 93% dos
+defeitos (44% vêm só da classe gigante), 53% com algum defeito × 20% na metade menor.
 
-**Se o professor aprofundar:** _a preencher_
+**Se o professor aprofundar:**
+- *"Por que o IC do r é tão mais estreito?"* → O IC de Fisher supõe dados normais, o que não vale aqui. Um bootstrap
+  do próprio r dá [0,17; 0,99]: a incerteza real é bem maior do que o Fisher mostra.
+- *"Então LOC prevê defeitos?"* → Serve para priorizar, não para decidir caso a caso: 47% das classes da metade
+  maior não têm defeito nenhum.
+- *"Esse resultado vale para o KC1 inteiro?"* → É coerente: no KC1 inteiro, r = 0,69 e ρₛ = 0,57, e de novo uma
+  única classe sobe o r.
 
 ---
 
@@ -311,7 +371,9 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 | Dados reais | KC1 (NASA, C++), 145 classes; amostra de 30 com `SEED = 42` |
 | Forma dos dados | LOC: mediana 162, máx. 2.883 · defeitos: 58,6% zeros, máx. 101 |
 | Correlação no KC1 inteiro | r = 0,69 · ρₛ = 0,57 (sem a classe de 101 defeitos: r = 0,57 · ρₛ = 0,56) |
-| Correlação na amostra de 30 | r = 0,84 · ρₛ = 0,515 |
+| Correlação na amostra de 30 | r = 0,84 [0,69; 0,92] · ρₛ = 0,515 [0,18; 0,75] (sem a classe gigante: r = 0,58 · ρₛ = 0,45) |
+| Exemplo do G2 (S-real, ρ = 0,3) | r = 0,11 (p = 0,548) · ρₛ = 0,28 (p = 0,134): nenhum rejeita, erro tipo II |
+| t crítico (28 g.l.) | ±2,05 (α = 0,05) · ±2,76 (α = 0,01) |
 | Ajuste | LOC ~ Gamma(0,607; 487,9) · defeitos ~ BinNeg(r = 0,170; média = 4,61) |
 | Simulação | 4 situações × 7 efeitos (ρ latente 0 a 0,6) × 10.000 réplicas |
 | Erro tipo I (Pearson / Spearman) | S-base 5,0 / 4,8% · S-real 5,3 / 5,1% · S-real-n10 6,5 / 5,2% · S-outlier 20,1 / 5,4% |
