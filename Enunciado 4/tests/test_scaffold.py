@@ -10,7 +10,7 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-MODULES = ["config", "data", "fit", "generate", "stat_tests", "simulate", "figures", "cli"]
+MODULES = ["config", "data", "fit", "generate", "stat_tests", "simulate", "figures", "cli", "relatorio"]
 
 
 @pytest.mark.parametrize("name", MODULES)

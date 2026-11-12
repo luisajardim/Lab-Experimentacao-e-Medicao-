@@ -1,4 +1,10 @@
-"""Dashboard Streamlit do Lab04, no formato de painel (BI).
+"""App Streamlit do Lab04: página "Dashboard" (painel de BI) e navegação para o "Relatório".
+
+O app tem duas páginas, no menu do topo:
+- **Dashboard** (padrão, este arquivo): o formato de painel descrito abaixo.
+- **Relatório** (`src/relatorio.py`): as 7 seções com textos e tabelas que o enunciado avalia (§4).
+
+Dashboard Streamlit do Lab04, no formato de painel (BI).
 
 Só gráficos interativos e indicadores, com rótulos curtos; as explicações ficam na
 apresentação (`APRESENTACAO.md`). Filtros numa linha no topo (α e situações), seis
@@ -6,7 +12,7 @@ indicadores e os gráficos na ordem do estudo: dados (G1 e dispersão real), com
 testes funcionam (G2) e efeito na amostra real, erro tipo I (G3) e vantagem de poder,
 poder (G4) e, se a simulação extra existir, poder e erro tipo I × tamanho da amostra.
 
-Issues: #82 (T07), #87 (T12).
+Issues: #82 (T07), #87 (T12), #93 (navegação entre Dashboard e Relatório).
 """
 
 import sys
@@ -22,10 +28,11 @@ import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
 
 import figures  # noqa: E402
+import relatorio  # noqa: E402
 import sample_size  # noqa: E402
 import simulate  # noqa: E402
 import stat_tests  # noqa: E402
-from config import ALPHAS, DEFAULT_ALPHA, REPO_URL, SITUATIONS  # noqa: E402
+from config import ALPHAS, DASHBOARD_URL, DEFAULT_ALPHA, PROJECTS_URL, REPO_URL, SITUATIONS  # noqa: E402
 from data import FULL_CSV, SAMPLE_CSV  # noqa: E402
 
 TITLE = "Pearson × Spearman · NASA KC1"
@@ -214,12 +221,15 @@ def render_filters() -> tuple[float, list[str]]:
     col_title, col_alpha, col_sit = st.columns([2.2, 1.0, 2.4], vertical_alignment="bottom")
     with col_title:
         st.markdown(f"### {TITLE}")
-        st.caption(f"[Repositório]({REPO_URL}) · [Projects]({REPO_URL}/projects)")
+        st.caption(
+            f"[Dashboard online]({DASHBOARD_URL}) · [Repositório]({REPO_URL}) · "
+            f"[GitHub Projects]({PROJECTS_URL}) · textos e tabelas na página **Relatório**"
+        )
     with col_alpha:
         alpha = st.segmented_control(
             "α",
             options=list(ALPHAS),
-            default=DEFAULT_ALPHA,
+            default=st.session_state.get(relatorio.SHARED_ALPHA, DEFAULT_ALPHA),
             format_func=lambda a: _dec(a),
             key="alpha",
         )
@@ -232,6 +242,7 @@ def render_filters() -> tuple[float, list[str]]:
         )
     # Desmarcar tudo não deixa o painel vazio: volta ao padrão.
     alpha = DEFAULT_ALPHA if alpha is None else float(alpha)
+    st.session_state[relatorio.SHARED_ALPHA] = alpha  # o Relatório abre com o mesmo α
     situations = [s for s in SITUATIONS if s in situations] or list(SITUATIONS)
     return alpha, situations
 
@@ -260,8 +271,8 @@ def render_kpis(alpha: float, summary: pd.DataFrame, analysis) -> None:
         col.metric(label, value, delta=delta, delta_color=color, border=True)
 
 
-def main() -> None:
-    st.set_page_config(page_title="Lab04 · Pearson × Spearman", page_icon="📊", layout="wide")
+def dashboard_page() -> None:
+    """Página "Dashboard": filtros, indicadores e gráficos, sem textos explicativos."""
     st.markdown(
         "<style>.block-container{padding-top:1.6rem;padding-bottom:1rem}</style>",
         unsafe_allow_html=True,
@@ -296,6 +307,16 @@ def main() -> None:
     results = sample_size.load()
     if results is not None:
         show(chart_sample_size(results, alpha), "n")
+
+
+def main() -> None:
+    """Configura a página e monta o menu com as duas páginas (Dashboard é a padrão)."""
+    st.set_page_config(page_title="Lab04 · Pearson × Spearman", page_icon="📊", layout="wide")
+    pages = [
+        st.Page(dashboard_page, title="Dashboard", icon="📊", url_path="dashboard", default=True),
+        st.Page(relatorio.main, title="Relatório", icon="📄", url_path="relatorio"),
+    ]
+    st.navigation(pages, position="top").run()
 
 
 if __name__ == "__main__":
