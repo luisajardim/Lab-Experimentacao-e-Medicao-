@@ -12,8 +12,26 @@ Issue: #93.
 """
 
 import runpy
+import sys
 from pathlib import Path
 
-APP = Path(__file__).resolve().parents[1] / "app.py"
+ROOT = Path(__file__).resolve().parents[1]
+APP = ROOT / "app.py"
+SRC = ROOT / "src"
 
+
+def _forget_project_modules() -> None:
+    """Remove de `sys.modules` os módulos do Lab04 (`src/`) já importados.
+
+    O Streamlit só recarrega módulos da pasta do main file (`deploy/`). Sem isto, depois de
+    um push o Cloud roda o `app.py` novo com os módulos de `src/` da versão anterior ainda
+    em memória (ex.: `AttributeError` em `figures.fig_real_scatter`).
+    """
+    for name, module in list(sys.modules.items()):
+        file = getattr(module, "__file__", None)
+        if file and Path(file).resolve().is_relative_to(SRC):
+            del sys.modules[name]
+
+
+_forget_project_modules()
 runpy.run_path(str(APP), run_name="__main__")

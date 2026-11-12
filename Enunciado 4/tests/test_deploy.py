@@ -1,7 +1,9 @@
 """Testes da porta de entrada do deploy no Streamlit Cloud (#93)."""
 
 import re
+import sys
 import tomllib
+import types
 
 from config import ROOT
 
@@ -17,11 +19,30 @@ def _pins(path):
     return pins
 
 
+def _entry_namespace():
+    """Executa só as definições da porta de entrada (sem rodar o app)."""
+    source = (DEPLOY / "streamlit_app.py").read_text(encoding="utf-8")
+    source = source.replace("_forget_project_modules()\nrunpy.run_path", "pass  # runpy.run_path")
+    namespace = {"__file__": str(DEPLOY / "streamlit_app.py")}
+    exec(compile(source, "streamlit_app.py", "exec"), namespace)
+    return namespace
+
+
 def test_deploy_entry_points_to_the_dashboard():
-    entry = (DEPLOY / "streamlit_app.py").read_text(encoding="utf-8")
-    assert 'parents[1] / "app.py"' in entry
-    assert (DEPLOY / "streamlit_app.py").resolve().parents[1] / "app.py" == ROOT / "app.py"
+    namespace = _entry_namespace()
+    assert namespace["APP"] == ROOT / "app.py"
+    assert namespace["SRC"] == ROOT / "src"
     assert (ROOT / "app.py").exists()
+
+
+def test_deploy_entry_forgets_stale_project_modules(monkeypatch):
+    # Depois de um push, o Cloud mantém em memória os módulos de `src/` da versão anterior.
+    stale = types.ModuleType("figures")
+    stale.__file__ = str(ROOT / "src" / "figures.py")
+    monkeypatch.setitem(sys.modules, "figures", stale)
+    _entry_namespace()["_forget_project_modules"]()
+    assert "figures" not in sys.modules
+    assert "pytest" in sys.modules  # pacotes de fora de `src/` ficam
 
 
 def test_deploy_requirements_match_the_lockfile():
