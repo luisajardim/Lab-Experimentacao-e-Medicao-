@@ -10,36 +10,37 @@
 ## Regras (enunciado §5)
 
 - Até **7 minutos** no total → **~30 s por pergunta** (60 a 75 palavras faladas).
-- Respondemos **usando o dashboard**: cada resposta diz em que seção/gráfico apontar.
+- Respondemos **usando o dashboard**: cada resposta diz em que gráfico ou indicador apontar. O painel só tem
+  gráficos e rótulos; hipóteses, expectativa e recomendação são faladas (estão neste roteiro e em `docs/cenario.md`).
 - Cada integrante responde ≥ 4 perguntas, mas **o professor pode pedir qualquer pergunta a qualquer um**.
   Por isso, todos devem ler o roteiro inteiro, não só a própria parte.
-- Antes de começar: dashboard aberto no topo, α = 0,05 selecionado, tela em tela cheia.
+- Antes de começar: dashboard aberto no topo, α = 0,05 e as quatro situações selecionadas, tela em tela cheia.
 
 ## Quadro geral
 
 | # | Pergunta (resumo) | Quem | Mostrar no dashboard |
 |---|---|---|---|
-| 1 | Cenário, H₀ e H₁ | Bernardo | Topo (pergunta) + Seção 1 (hipóteses) |
-| 2 | Unicaudal ou bicaudal | Bernardo | Seção 1 (direção) + G2 (duas faixas cinza) |
-| 3 | Coleta dos dados reais e forma da distribuição | Bernardo | Seção 2 — G1 |
-| 4 | Dados reais → parâmetros da simulação | Bernardo | Seção 1 (parâmetros) + G1 |
-| 5 | O que cada teste compara | Luísa | Seção 3 — G2 |
-| 6 | Distribuição da estatística sob H₀ e região de rejeição | Luísa | Seção 3 — G2 |
-| 7 | O que o p-valor do exemplo significa (e não significa) | Luísa | Seção 3 — G2 + exemplo |
-| 8 | Erro tipo I e tipo II no cenário | Pedro | Seção 1 / Seção 7 |
-| 9 | G3: algum teste se afastou de 5%? | Luísa | Seção 4 — G3 |
-| 10 | G4: qual teste tem mais poder? | Pedro | Seção 5 — G4 |
-| 11 | Violação simulada e por que afeta mais um teste | Bernardo | Seção 1 (situações) + G3 + G4 |
-| 12 | α = 0,01 no lugar de 0,05 | Pedro | Seletor de α no topo → G3 e G4 |
-| 13 | A simulação confirmou o esperado? | Pedro | Seção 1 (expectativa) × Seção 7 |
-| 14 | Dados reais: mesma conclusão? Efeito prático? | Luísa | Seção 6 |
-| 15 | Recomendação, quando muda, principal limitação | Pedro | Seção 7 |
+| 1 | Cenário, H₀ e H₁ | Bernardo | Título + dispersão LOC × defeitos (falar as hipóteses) |
+| 2 | Unicaudal ou bicaudal | Bernardo | G2 (duas faixas cinza) |
+| 3 | Coleta dos dados reais e forma da distribuição | Bernardo | G1 + dispersão LOC × defeitos |
+| 4 | Dados reais → parâmetros da simulação | Bernardo | G1 (simulado em roxo × real) |
+| 5 | O que cada teste compara | Luísa | G2 |
+| 6 | Distribuição da estatística sob H₀ e região de rejeição | Luísa | G2 |
+| 7 | O que o p-valor do exemplo significa (e não significa) | Luísa | G2 (área colorida e t, p nos títulos dos painéis) |
+| 8 | Erro tipo I e tipo II no cenário | Pedro | Indicadores de erro tipo I e de poder |
+| 9 | G3: algum teste se afastou de 5%? | Luísa | G3 |
+| 10 | G4: qual teste tem mais poder? | Pedro | G4 + mapa Spearman − Pearson |
+| 11 | Violação simulada e por que afeta mais um teste | Bernardo | G3 (S-outlier) + G4 |
+| 12 | α = 0,01 no lugar de 0,05 | Pedro | Filtro de α no topo → indicadores, G3, mapa e G4 |
+| 13 | A simulação confirmou o esperado? | Pedro | Mapa Spearman − Pearson + G3 (falar a expectativa) |
+| 14 | Dados reais: mesma conclusão? Efeito prático? | Luísa | Correlação com IC 95% + dispersão + indicadores r e ρₛ |
+| 15 | Recomendação, quando muda, principal limitação | Pedro | Mapa Spearman − Pearson + indicadores |
 
 ---
 
 ## 1. Qual é o cenário de vocês e o que H₀ e H₁ afirmam, em palavras simples?
 
-**Quem:** Bernardo · **Mostrar:** a pergunta no topo do dashboard e a tabela de hipóteses da Seção 1.
+**Quem:** Bernardo · **Mostrar:** a dispersão LOC × defeitos (a classe de 2.883 LOC marcada); as hipóteses são faladas.
 
 **Resposta (~30 s):**
 > "Nosso cenário é um sistema C++ da NASA, o KC1. A pergunta é: classes maiores tendem a ter mais defeitos de
@@ -57,7 +58,7 @@
 
 ## 2. O teste de vocês é unicaudal ou bicaudal? Por quê?
 
-**Quem:** Bernardo · **Mostrar:** a linha "Direção" na Seção 1 e, no G2, as **duas** faixas cinza.
+**Quem:** Bernardo · **Mostrar:** no G2, as **duas** faixas cinza ("Rejeita H₀" dos dois lados).
 
 **Resposta (~30 s):**
 > "Bicaudal. A gente espera que classes maiores tenham mais defeitos, mas preferiu não usar essa aposta no teste:
@@ -74,7 +75,7 @@
 
 ## 3. Como os dados reais foram coletados, e o que eles mostraram sobre a forma da distribuição?
 
-**Quem:** Bernardo · **Mostrar:** Seção 2 — G1 (histogramas de LOC em escala log e de defeitos).
+**Quem:** Bernardo · **Mostrar:** G1 (histogramas de LOC em escala log e de defeitos) e a dispersão LOC × defeitos.
 
 **Resposta (~30 s):**
 > "Baixamos o dataset KC1 por classe do repositório PROMISE, pelo OpenML, com um script que confere o checksum do
@@ -94,7 +95,7 @@ assimetria 3,40 · defeitos: 58,6% zeros, máx. 101, assimetria 5,53.
 
 ## 4. Como os dados reais ajudaram a escolher os parâmetros da simulação?
 
-**Quem:** Bernardo · **Mostrar:** "Parâmetros ajustados no KC1" na Seção 1 e o G1 (simulado em roxo × real).
+**Quem:** Bernardo · **Mostrar:** o G1 (simulado em roxo × real); os parâmetros estão nos números abaixo.
 
 **Resposta (~30 s):**
 > "Ajustamos as distribuições nas 145 classes. Para o LOC, testamos a lognormal, mas ela errava a mediana e exagerava
@@ -107,7 +108,7 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 **Se o professor aprofundar:**
 - *"Por que não usar só os 30?"* → Com 30 classes, os parâmetros ficam instáveis; as 145 dão um ajuste melhor, e a
-  amostra de 30 fica para aplicar os testes (Seção 6).
+  amostra de 30 fica para aplicar os testes (gráfico de correlação com IC 95%).
 - *"O que a cópula não reproduz?"* → Ela quase nunca gera um ponto dominante como a classe de 101 defeitos. Por isso
   criamos a S-outlier.
 
@@ -115,7 +116,7 @@ média = 4,61), zeros 56,8% × 58,6% · grade de ρ latente 0 a 0,6 · S-outlier
 
 ## 5. O que cada um dos dois testes compara de fato (médias, postos, proporções...)?
 
-**Quem:** Luísa · **Mostrar:** Seção 3 — G2 (os dois painéis, Pearson e Spearman).
+**Quem:** Luísa · **Mostrar:** G2 (os dois painéis, Pearson e Spearman).
 
 **Resposta (~30 s):**
 > "Nenhum dos dois compara médias nem proporções: os dois medem associação entre LOC e defeitos. O Pearson
@@ -138,7 +139,7 @@ amostra real, r = 0,84 × ρₛ = 0,51: a diferença vem quase toda de uma class
 
 ## 6. No G2: o que é a distribuição da estatística sob H₀, e por que a região de rejeição fica onde fica?
 
-**Quem:** Luísa · **Mostrar:** Seção 3 — G2 (curva t, histogramas sob H₀, faixas cinza).
+**Quem:** Luísa · **Mostrar:** G2 (curva t, histogramas sob H₀, faixas cinza).
 
 **Resposta (~30 s):**
 > "É o que a estatística t valeria se não houvesse associação. A curva escura é a teoria, a t com 28 graus de
@@ -162,7 +163,7 @@ assimetria ≈ 0, 2,5% e 2,7%.
 
 ## 7. O que significa o p-valor do exemplo mostrado no G2? E o que ele não significa?
 
-**Quem:** Luísa · **Mostrar:** Seção 3 — área colorida do G2 e o texto do exemplo logo abaixo.
+**Quem:** Luísa · **Mostrar:** a área colorida do G2 e o t e o p do exemplo no título de cada painel.
 
 **Resposta (~30 s):**
 > "O exemplo é uma amostra da S-real com efeito 0,3. O p-valor é a área colorida: a chance de um t tão ou mais
@@ -185,7 +186,7 @@ p = 0,548 · Spearman ρₛ = 0,28, t = 1,54, p = 0,134 · nesse efeito, cada te
 
 ## 8. No cenário de vocês, o que seria um erro tipo I e um erro tipo II? Qual dos dois seria mais grave?
 
-**Quem:** Pedro · **Mostrar:** Seção 1 (hipóteses) ou Seção 7.
+**Quem:** Pedro · **Mostrar:** os indicadores de erro tipo I (S-outlier) e de poder (S-real) no topo.
 
 **Resposta (~30 s):**
 > "Erro tipo I seria concluir que o tamanho da classe está associado aos defeitos quando não está: o
@@ -207,7 +208,7 @@ p = 0,548 · Spearman ρₛ = 0,28, t = 1,54, p = 0,134 · nesse efeito, cada te
 
 ## 9. No G3, algum teste se afastou de 5%? Ele ficou liberal ou conservador, e por quê?
 
-**Quem:** Luísa · **Mostrar:** Seção 4 — G3 (linha em 5% e faixa de Monte Carlo).
+**Quem:** Luísa · **Mostrar:** G3 (linha em 5% e faixa de Monte Carlo; valores no hover).
 
 **Resposta (~30 s):**
 > "O Spearman ficou dentro da faixa cinza, perto de 5%, nas quatro situações. O Pearson se afastou em duas e
@@ -233,7 +234,7 @@ na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 
 ## 10. No G4, qual teste tem mais poder? A diferença entre eles muda conforme o tamanho do efeito?
 
-**Quem:** Pedro · **Mostrar:** Seção 5 — G4.
+**Quem:** Pedro · **Mostrar:** G4 e o mapa Spearman − Pearson (verde: Spearman rejeita mais; laranja: Pearson).
 
 **Resposta (~30 s):**
 > "Depende dos dados. Na S-base, com dados normais, o Pearson tem um pouco mais de poder em todos os
@@ -244,7 +245,7 @@ na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 **Números para lembrar (α = 0,05, Pearson / Spearman):** S-base ρ = 0,4: 62,0 / 55,3% · S-real ρ = 0,3: 25,0 / 27,1% e ρ = 0,6: 69,8 / 84,5% · S-real-n10 ρ = 0,6: 38,3 / 33,1% · S-outlier ρ = 0: 20,1 / 5,4% e ρ = 0,6: 75,4 / 85,9%.
 
 **Se o professor aprofundar:**
-- *"O eixo x não favorece um dos testes?"* → O eixo é o ρ latente da cópula, o mesmo para os dois. Embaixo
+- *"O eixo x não favorece um dos testes?"* → O eixo é o ρ latente da cópula, o mesmo para os dois. No hover
   de cada ponto mostramos o r e o ρₛ populacionais: na S-real com ρ = 0,6, r = 0,47 e ρₛ = 0,52. Nesses
   dados a associação monotônica é mais forte que a linear, e o Spearman mede exatamente ela.
 - *"E na amostra pequena o Pearson ganha?"* → Só na aparência: com ρ = 0 ele já rejeita 6,5% (acima de
@@ -255,7 +256,7 @@ na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 
 ## 11. Que violação de pressuposto vocês simularam, e por que ela afeta mais um teste do que o outro?
 
-**Quem:** Bernardo · **Mostrar:** tabela de situações na Seção 1 → G3 (S-outlier) → G4.
+**Quem:** Bernardo · **Mostrar:** G3 (S-outlier, ponto do Pearson fora da escala) → G4 (S-outlier).
 
 **Resposta (~30 s):**
 > "Simulamos três violações: dados assimétricos com muitos zeros, amostra pequena com 10 classes, e a S-outlier,
@@ -268,7 +269,7 @@ na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 
 **Se o professor aprofundar:**
 - *"E com mais dados o problema some?"* → Não: na S-outlier, o erro tipo I do Pearson cresce com o n, de 11% com
-  10 classes para 58% com 200 (bloco extra "Para discutir"). Mais classes, mais chances de uma classe extrema.
+  10 classes para 58% com 200 (último gráfico: poder e erro tipo I × tamanho da amostra). Mais classes, mais chances de uma classe extrema.
 - *"E a amostra pequena?"* → Com 10 classes, o Pearson fica levemente liberal (6,5%), e o Spearman perde poder por
   causa dos empates: com ~57% de zeros, sobram poucos postos distintos.
 
@@ -276,9 +277,9 @@ na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 
 ## 12. Se vocês usassem α = 0,01 em vez de 0,05, o que mudaria no G3 e no G4?
 
-**Quem:** Pedro · **Mostrar:** trocar o seletor de α no topo e mostrar o G3 e o G4 mudando.
+**Quem:** Pedro · **Mostrar:** trocar o filtro de α no topo e mostrar os indicadores, o G3 e o G4 mudando.
 
-**Resposta (~30 s):** *(trocar o seletor para 0,01 enquanto fala)*
+**Resposta (~30 s):** *(trocar o filtro para 0,01 enquanto fala)*
 > "No G3, a linha de referência desce para 1% e todas as taxas caem. O Spearman fica perto de 1% em todas
 > as situações, mas o Pearson fica proporcionalmente mais liberal: 2,3% na S-real, mais que o dobro do
 > nominal, e 15% na S-outlier. No G4, todas as curvas descem: menos falsos positivos custam poder. Na
@@ -297,7 +298,7 @@ na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 
 ## 13. A simulação confirmou o que o grupo esperava antes de simular? Se não, o que explica a diferença?
 
-**Quem:** Pedro · **Mostrar:** "Expectativa registrada antes de simular" (Seção 1) × Seção 7.
+**Quem:** Pedro · **Mostrar:** o mapa Spearman − Pearson (S-base laranja, S-real verde, S-real-n10 laranja) e o G3; a expectativa é falada.
 
 **Resposta (~30 s):**
 > "Em grande parte, sim. Acertamos que o Pearson teria um pouco mais de poder com dados normais e que o
@@ -306,7 +307,7 @@ na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 > sobram poucos postos distintos para o Spearman, e o Pearson ficou liberal, rejeitando 6,5% sem efeito
 > nenhum, então parte do 'poder' dele é falso."
 
-**Números para lembrar:** expectativa registrada em 31/10 (Seção 1) · S-base ρ = 0,4: 62,0 / 55,3% (confirmou) · S-real ρ = 0,6: 69,8 / 84,5% (confirmou) · S-real-n10 ρ = 0,6: 38,3 / 33,1% e erro tipo I 6,5 / 5,2% (não confirmou) · a S-outlier ficou fora da comparação porque foi criada depois da análise exploratória.
+**Números para lembrar:** expectativa registrada em 31/10 (`docs/cenario.md`) · S-base ρ = 0,4: 62,0 / 55,3% (confirmou) · S-real ρ = 0,6: 69,8 / 84,5% (confirmou) · S-real-n10 ρ = 0,6: 38,3 / 33,1% e erro tipo I 6,5 / 5,2% (não confirmou) · a S-outlier ficou fora da comparação porque foi criada depois da análise exploratória.
 
 **Se o professor aprofundar:**
 - *"E o erro tipo I, também bateu?"* → Para o Spearman, sim, em todas as situações. Para o Pearson, não
@@ -319,7 +320,7 @@ na S-real-n10, o Pearson rejeita 6,34% à direita e 0,17% à esquerda.
 
 ## 14. Nos dados reais, os dois testes chegaram à mesma conclusão? O tamanho do efeito tem importância prática?
 
-**Quem:** Luísa · **Mostrar:** Seção 6 — tabela dos dados reais e o texto abaixo dela.
+**Quem:** Luísa · **Mostrar:** o gráfico de correlação com IC 95% (os círculos vazios são sem a classe gigante), a dispersão e os indicadores r e ρₛ.
 
 **Resposta (~30 s):**
 > "Sim: os dois rejeitam H₀, com α de 5% ou de 1%. Mas o tamanho difere: r = 0,84 e ρₛ = 0,51. O r é inflado
@@ -343,7 +344,7 @@ defeitos (44% vêm só da classe gigante), 53% com algum defeito × 20% na metad
 
 ## 15. Qual teste vocês recomendam para o cenário, em que situação mudariam a recomendação, e qual é a principal limitação do estudo?
 
-**Quem:** Pedro · **Mostrar:** Seção 7 — Conclusão.
+**Quem:** Pedro · **Mostrar:** o mapa Spearman − Pearson e os indicadores de erro tipo I e de poder.
 
 **Resposta (~30 s):**
 > "Recomendamos o Spearman: ele mantém o erro tipo I perto de 5% em todas as situações e tem mais poder
@@ -357,8 +358,8 @@ defeitos (44% vêm só da classe gigante), 53% com algum defeito × 20% na metad
 **Se o professor aprofundar:**
 - *"Então a resposta à pergunta de pesquisa é?"* → Há uma tendência geral (o Spearman a detecta na
   maioria das amostras), mas a força que o Pearson mostra é inflada por poucas classes gigantes.
-- *"E com amostras pequenas?"* → Nenhum dos dois é confiável; o melhor é coletar mais classes (bloco
-  "Para discutir": n ≈ 28 para 80% de poder com o Spearman, ≈ 43 com o Pearson).
+- *"E com amostras pequenas?"* → Nenhum dos dois é confiável; o melhor é coletar mais classes (último
+  gráfico, tamanho da amostra: n ≈ 28 para 80% de poder com o Spearman, ≈ 43 com o Pearson).
 - *"Outras limitações?"* → LOC da classe é a soma do LOC dos métodos, e a cópula gaussiana não tem
   dependência extra nas caudas.
 

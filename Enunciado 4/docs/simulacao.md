@@ -92,7 +92,7 @@ Chave de cache, configuração usada (`config`) e tempo de execução (`elapsed_
 ## Extra: `sample_size.csv` — tamanho da amostra (#91)
 
 Simulação opcional, para as perguntas da seção 6 do enunciado ("Para discutir: tamanho da amostra"). Gerada por
-[`src/sample_size.py`](../src/sample_size.py) e mostrada no dashboard depois da seção 7.
+[`src/sample_size.py`](../src/sample_size.py) e mostrada no último gráfico do dashboard (poder e erro tipo I × tamanho da amostra).
 
 ```bash
 uv run lab04 --sample-size              # roda a simulação extra (com cache) e abre o dashboard
@@ -112,6 +112,6 @@ Uma linha por situação × efeito × n × α × teste. A coluna `effect` substi
 tamanho da amostra; as demais colunas (`rho`, `alpha`, `test`, `reject_rate`, `mc_se`, `n_nan`) têm o mesmo
 significado do `summary.csv`.
 
-O n para 80% de poder é interpolado no dashboard (linear em log n) a partir dessas curvas; quando o poder não
+O n para 80% de poder é interpolado por `sample_size.n80_table` (linear em log n) a partir dessas curvas; quando o poder não
 chega a 80% dentro da grade, aparece como "mais de 200". O cache (`sample_size_meta.json`) considera também o
 código de `sample_size.py` e o ρₛ da amostra real.

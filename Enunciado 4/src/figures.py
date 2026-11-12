@@ -776,13 +776,15 @@ def fig_g4(
     alpha: float = DEFAULT_ALPHA,
     summary: pd.DataFrame | None = None,
     population: pd.DataFrame | None = None,
+    cols: int = 2,
 ) -> go.Figure:
     """Constrói o G4: curvas de poder dos dois testes × ρ latente, um painel por situação.
 
     Em cada painel, Pearson e Spearman (mesmas cores do dashboard) com barras de ±1,96 erro
     padrão de Monte Carlo; linha pontilhada em α (o ponto em ρ = 0 é o erro tipo I) e linha
     tracejada em 80% de poder. O eixo x mostra, abaixo de cada ρ latente, o r e o ρₛ
-    populacionais correspondentes (estimados numa amostra grande).
+    populacionais correspondentes (estimados numa amostra grande). `cols` painéis por linha
+    (o dashboard usa uma linha só; as situações ausentes do `summary` não ganham painel).
     """
     if summary is None or population is None:
         default_summary, default_population = _g4_data()
@@ -794,22 +796,25 @@ def fig_g4(
         raise ValueError(f"Não há resultados simulados para α = {alpha}")
 
     situations = [s for s in SITUATIONS if s in set(data["situation"])]
+    cols = max(1, min(cols, len(situations)))
     fig = make_subplots(
-        rows=2,
-        cols=2,
+        rows=-(-len(situations) // cols),
+        cols=cols,
         shared_yaxes=True,
-        horizontal_spacing=0.06,
+        horizontal_spacing=0.06 if cols <= 2 else 0.03,
         vertical_spacing=0.22,
         subplot_titles=[G4_SITUATION_LABELS.get(s, s) for s in situations],
     )
 
     for i, situation in enumerate(situations):
-        row, col = divmod(i, 2)
+        row, col = divmod(i, cols)
         row, col = row + 1, col + 1
         first = i == 0
         cell = data[data["situation"] == situation]
+        pop = population[population["situation"] == situation].set_index("rho")
         for test, name in (("pearson", "Pearson"), ("spearman", "Spearman")):
             curve = cell[cell["test"] == test].sort_values("rho")
+            pop_at = pop.reindex(curve["rho"])
             fig.add_trace(
                 go.Scatter(
                     x=curve["rho"],
@@ -827,8 +832,10 @@ def fig_g4(
                         width=3,
                         color=PALETTE[name],
                     ),
+                    customdata=np.stack([pop_at["r_pop"], pop_at["rho_s_pop"]], axis=-1),
                     hovertemplate=(
-                        f"<b>{name}</b> — {situation}<br>ρ latente = %{{x:.1f}}<br>"
+                        f"<b>{name}</b> — {situation}<br>ρ latente = %{{x:.1f}} "
+                        "(r = %{customdata[0]:.2f}, ρₛ = %{customdata[1]:.2f})<br>"
                         "Rejeições: %{y:.1%}<extra></extra>"
                     ),
                 ),
@@ -886,4 +893,154 @@ def fig_g4(
         legend=dict(orientation="h", yanchor="bottom", y=1.04, xanchor="left", x=0.0),
         margin=dict(t=110, b=60, l=70, r=30),
     )
+    return fig
+
+
+# --------------------------------------------------------------------------- Dashboard (BI)
+# Gráficos que só existem no painel: os dados reais vistos ponto a ponto, o tamanho do efeito
+# com IC 95% e o resumo de onde cada teste tem mais poder.
+
+BI_INK = "#2C3E50"
+BI_NEUTRAL = "#E5E7EB"
+
+
+def fig_real_scatter(
+    sample_df: pd.DataFrame | None = None,
+    full_df: pd.DataFrame | None = None,
+    analysis: stat_tests.RealAnalysis | None = None,
+) -> go.Figure:
+    """LOC × defeitos: KC1 completo ao fundo, amostra de 30 por cima e a classe mais influente."""
+    sample_df = pd.read_csv(SAMPLE_CSV) if sample_df is None else sample_df
+    full_df = pd.read_csv(FULL_CSV) if full_df is None else full_df
+    analysis = stat_tests.real_sample_analysis() if analysis is None else analysis
+
+    fig = go.Figure()
+    for name, df, color, size, opacity in (
+        (f"KC1 (n = {len(full_df)})", full_df, PALETTE["real_full"], 7, 0.35),
+        (f"Amostra (n = {len(sample_df)})", sample_df, PALETTE["real_sample"], 10, 0.9),
+    ):
+        fig.add_trace(
+            go.Scatter(
+                x=df["loc"],
+                y=df["defects"],
+                mode="markers",
+                name=name,
+                marker=dict(color=color, size=size, opacity=opacity, line=dict(color="white", width=1)),
+                customdata=df["class_id"],
+                hovertemplate=(
+                    f"<b>{name}</b><br>Classe %{{customdata}}<br>LOC: %{{x:,.0f}}<br>"
+                    "Defeitos: %{y}<extra></extra>"
+                ),
+            )
+        )
+    fig.add_annotation(
+        x=float(np.log10(analysis.influential_loc)),
+        y=analysis.influential_defects,
+        text=f"{analysis.influential_loc:,.0f} LOC · {analysis.influential_defects:.0f} defeitos"
+        .replace(",", "."),
+        showarrow=True,
+        arrowhead=0,
+        ax=-70,
+        ay=8,
+        font=dict(size=11, color=BI_INK),
+    )
+    ticks = [1, 10, 100, 1000]
+    fig.update_xaxes(type="log", title_text="LOC (escala log)", tickvals=ticks,
+                     ticktext=[f"{v:,}".replace(",", ".") for v in ticks])
+    fig.update_yaxes(title_text="Defeitos", rangemode="tozero")
+    fig.update_layout(separators=",.", template="plotly_white")
+    return fig
+
+
+def fig_real_effect(analysis: stat_tests.RealAnalysis | None = None) -> go.Figure:
+    """r e ρₛ da amostra real com IC 95%, e o valor de cada um sem a classe mais influente."""
+    a = stat_tests.real_sample_analysis() if analysis is None else analysis
+    rows = (
+        ("Pearson", "r", a.pearson, a.pearson_ci, a.r_without_influential, "Fisher z"),
+        ("Spearman", "ρₛ", a.spearman, a.spearman_ci, a.rho_s_without_influential, "bootstrap BCa"),
+    )
+    fig = go.Figure()
+    fig.add_vline(x=0, line=dict(color=BI_INK, width=1, dash="dot"))
+    for name, symbol, result, (low, high), _, method in rows:
+        coef = float(result.coef)
+        fig.add_trace(
+            go.Scatter(
+                x=[coef],
+                y=[name],
+                mode="markers",
+                name=f"{name} (IC 95%)",
+                marker=dict(color=PALETTE[name], size=13, line=dict(color="white", width=2)),
+                error_x=dict(
+                    type="data", symmetric=False, array=[high - coef], arrayminus=[coef - low],
+                    color=PALETTE[name], thickness=2.5, width=6,
+                ),
+                hovertemplate=(
+                    f"<b>{name}</b><br>{symbol} = {_decimal(coef)}<br>IC 95% ({method}): "
+                    f"{_decimal(low)} a {_decimal(high)}<br>p = {_decimal(float(result.p), 4)}"
+                    "<extra></extra>"
+                ),
+            )
+        )
+    fig.add_trace(
+        go.Scatter(
+            x=[without for *_, without, _ in rows],
+            y=[name for name, *_ in rows],
+            mode="markers",
+            name="Sem a classe mais influente",
+            marker=dict(symbol="circle-open", size=13, color=BI_INK, line=dict(width=2)),
+            hovertemplate="<b>%{y}</b> sem a classe mais influente<br>%{x:.2f}<extra></extra>",
+        )
+    )
+    fig.update_xaxes(title_text="Coeficiente de correlação", range=[-0.1, 1.0], zeroline=False)
+    fig.update_yaxes(range=[1.6, -0.6], showgrid=False)
+    fig.update_layout(separators=",.", template="plotly_white")
+    return fig
+
+
+def power_gap_table(alpha: float = DEFAULT_ALPHA, summary: pd.DataFrame | None = None) -> pd.DataFrame:
+    """Taxa de rejeição do Spearman menos a do Pearson (pontos percentuais), situação × ρ."""
+    summary = _g4_data()[0] if summary is None else summary
+    data = summary[np.isclose(summary["alpha"], alpha)]
+    rates = data.pivot_table(index=["situation", "rho"], columns="test", values="reject_rate")
+    gap = (100 * (rates["spearman"] - rates["pearson"])).unstack("rho")
+    return gap.loc[[s for s in SITUATIONS if s in gap.index]]
+
+
+def _signed(value: float) -> str:
+    """Inteiro com sinal (+3, −7); o que arredonda para zero fica só "0"."""
+    rounded = int(round(value))
+    return "0" if rounded == 0 else f"{rounded:+d}".replace("-", "−")
+
+
+def fig_power_gap(alpha: float = DEFAULT_ALPHA, summary: pd.DataFrame | None = None) -> go.Figure:
+    """Mapa de calor da diferença Spearman − Pearson: verde onde o Spearman rejeita mais."""
+    gap = power_gap_table(alpha, summary)
+    limit = float(np.nanmax(np.abs(gap.to_numpy()))) or 1.0
+    fig = go.Figure(
+        go.Heatmap(
+            z=gap.to_numpy(),
+            x=[_decimal(rho, 1) for rho in gap.columns],
+            y=list(gap.index),
+            zmin=-limit,
+            zmax=limit,
+            colorscale=[
+                [0.0, PALETTE["Pearson"]],
+                [0.5, BI_NEUTRAL],
+                [1.0, PALETTE["Spearman"]],
+            ],
+            xgap=2,
+            ygap=2,
+            text=[[_signed(v) for v in row] for row in gap.to_numpy()],
+            texttemplate="%{text}",
+            textfont=dict(size=12),
+            colorbar=dict(title=dict(text="pp", side="top"), thickness=10, len=0.9),
+            hovertemplate=(
+                "<b>%{y}</b> · ρ latente = %{x}<br>Spearman − Pearson: %{z:+.1f} pp"
+                "<extra></extra>"
+            ),
+        )
+    )
+    fig.update_xaxes(title_text="ρ latente", type="category", showgrid=False)
+    fig.update_yaxes(autorange="reversed", showgrid=False)
+    fig.update_layout(separators=",.", template="plotly_white")
     return fig

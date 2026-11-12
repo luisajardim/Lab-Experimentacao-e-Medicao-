@@ -240,28 +240,6 @@ def fig_sample_size(results: pd.DataFrame, alpha: float = DEFAULT_ALPHA):
     return fig
 
 
-def render_section(alpha: float = DEFAULT_ALPHA) -> None:
-    """Bloco do dashboard; não mostra nada se a simulação extra ainda não foi gerada."""
-    import streamlit as st
-
-    results = load()
-    if results is None:
-        return
-    st.header("Para discutir: tamanho da amostra")
-    st.plotly_chart(fig_sample_size(results, alpha), width="stretch")
-    st.markdown(summary_text(results, alpha))
-    with st.expander("Poder com n = 30 e n necessário para 80% de poder"):
-        table = n80_table(results, alpha)
-        table["test"] = table["test"].map(lambda t: TESTS[t][0])
-        table["effect"] = table["effect"].map(EFFECT_LABELS)
-        table = table.rename(columns={
-            "situation": "Situação", "effect": "Efeito", "rho": "ρ latente", "test": "Teste",
-            "power_n30": "Poder com n = 30", "n80": "n para 80% de poder",
-        })
-        st.dataframe(table.round({"ρ latente": 2, "Poder com n = 30": 3, "n para 80% de poder": 0}),
-                     width="stretch", hide_index=True)
-
-
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Extra do Lab04: poder e erro tipo I × tamanho da amostra.")
     parser.add_argument("--force", action="store_true", help="re-simula mesmo com cache válido")

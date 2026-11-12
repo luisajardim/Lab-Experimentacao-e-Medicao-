@@ -76,3 +76,9 @@ def test_g4_text_is_short_and_covers_required_points():
     assert 2 <= len(sentences) <= 4
     for term in ("S-base", "S-real", "n = 10", "S-outlier", "Spearman", "Pearson"):
         assert term in G4_TEXT
+
+
+def test_fig_g4_can_put_every_situation_in_one_row():
+    fig = fig_g4(0.05, cols=len(SITUATIONS))
+    domains = {fig.layout[f"yaxis{i if i > 1 else ''}"].domain for i in range(1, len(SITUATIONS) + 1)}
+    assert len(domains) == 1  # todos os painéis na mesma altura

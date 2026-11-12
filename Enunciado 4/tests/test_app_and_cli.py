@@ -1,17 +1,16 @@
-"""Testes do dashboard base e do comando único `lab04` (T07, #82)."""
+"""Testes do dashboard (painel só com gráficos) e do comando único `lab04` (T07, #82; #87)."""
 
 import sys
 
+import pytest
 from streamlit.testing.v1 import AppTest
 
 import cli
-from config import COLOR_PEARSON, COLOR_SPEARMAN, PALETTE, ROOT
-from figures import G2_TEXT, g3_text
+import simulate
+from config import COLOR_PEARSON, COLOR_SPEARMAN, PALETTE, ROOT, SITUATIONS
 
 sys.path.insert(0, str(ROOT))
 import app  # noqa: E402, I001
-
-
 
 
 def test_palette_has_distinct_colors_for_both_tests():
@@ -25,60 +24,76 @@ def test_cli_prepare_only_succeeds():
     assert rc == 0
 
 
-def test_dashboard_renders_all_seven_sections_in_order():
-    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=30)
+@pytest.fixture(scope="module")
+def dashboard() -> AppTest:
+    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=120)
     at.run()
     assert not at.exception
-
-    headers = [h.value for h in at.header]
-    # As 7 seções do enunciado vêm primeiro e na ordem; extras opcionais (#91) só depois delas.
-    assert headers[: len(app.SECTIONS)] == list(app.SECTIONS)
-    assert headers[len(app.SECTIONS):] in ([], ["Para discutir: tamanho da amostra"])
-    assert len(at.selectbox) >= 1
+    return at
 
 
-def test_section3_shows_interpreted_example_and_follows_alpha():
-    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=30)
+def test_dashboard_is_only_charts_and_indicators(dashboard):
+    # Nada de seções, parágrafos ou tabelas: só o título, os filtros, os indicadores e os gráficos.
+    assert not dashboard.header and not dashboard.subheader
+    assert not dashboard.dataframe and not dashboard.info and not dashboard.expander
+    assert [m.value for m in dashboard.markdown if not m.value.startswith("<style>")] == [
+        f"### {app.TITLE}"
+    ]
+    assert len(dashboard.metric) == 6
+    expected = len(app.CHARTS) - (0 if app.sample_size.load() is not None else 1)
+    assert len(dashboard.get("plotly_chart")) == expected
+
+
+def test_dashboard_has_the_two_filters(dashboard):
+    assert dashboard.segmented_control(key="alpha").value == 0.05
+    assert dashboard.multiselect(key="situations").value == list(SITUATIONS)
+
+
+def test_alpha_filter_updates_the_indicators():
+    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=120)
     at.run()
+    before = [m.value for m in at.metric]
+    at.segmented_control(key="alpha").set_value(0.01).run()
     assert not at.exception
-    assert any(s.value.startswith("Exemplo: um conjunto simulado") for s in at.subheader)
-    texts = [m.value for m in at.markdown]
-    assert any("com α = 0,05" in t and "S-real, n = 30" in t for t in texts)
-
-    at.selectbox[0].set_value(0.01).run()
-    assert not at.exception
-    assert any("com α = 0,01" in m.value for m in at.markdown)
+    after = [m.value for m in at.metric]
+    summary = simulate.load_summary()
+    assert after[2] == app._pct(app.rate(summary, "S-outlier", 0.0, "pearson", 0.01))
+    assert after[:2] == before[:2]  # correlação da amostra real não depende de α
+    assert after[2:] != before[2:]
 
 
-def test_section3_renders_g2_with_its_text():
-    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
-    at.run()
-    assert not at.exception
-    assert any(m.value == G2_TEXT for m in at.markdown)
-    assert not any("T06b" in c.value for c in at.caption)
+def test_situation_filter_keeps_only_the_chosen_panels():
+    summary = simulate.load_summary()
+    fig = app.chart_g4(0.05, summary, ["S-real", "S-outlier"])
+    assert [a.text for a in fig.layout.annotations] == ["S-real", "S-outlier"]
+    gap = app.chart_gap(0.05, summary, ["S-real", "S-outlier"])
+    assert list(gap.data[0].y) == ["S-real", "S-outlier"]
+    g3 = app.chart_g3(0.05, ["S-base"])
+    assert set(g3.data[-1].y.round()) == {0}
 
 
-def test_section4_renders_g3_and_its_text_follows_alpha():
-    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
-    at.run()
-    assert not at.exception
-    assert any(m.value == g3_text(0.05) for m in at.markdown)
-    assert not any("T09" in i.value for i in at.info)
+def test_every_chart_has_a_short_label_and_no_long_text():
+    sample_df, full_df, summary = app.get_data()
+    analysis = app.get_analysis()
+    situations = list(SITUATIONS)
+    figs = {
+        "g1": app.chart_g1(sample_df, full_df),
+        "scatter": app.chart_scatter(sample_df, full_df, analysis),
+        "g2": app.chart_g2(0.05),
+        "effect": app.chart_effect(analysis),
+        "g3": app.chart_g3(0.05, situations),
+        "gap": app.chart_gap(0.05, summary, situations),
+        "g4": app.chart_g4(0.05, summary, situations),
+    }
+    for key, fig in figs.items():
+        assert fig.layout.title.text == app.CHARTS[key]
+        assert len(fig.layout.title.text) <= 45
+        for annotation in fig.layout.annotations:
+            assert len(annotation.text) <= 40, (key, annotation.text)
 
-    at.selectbox[0].set_value(0.01).run()
-    assert not at.exception
-    assert any(m.value == g3_text(0.01) for m in at.markdown)
 
-
-def test_section6_renders_real_data_table_and_text():
-    import stat_tests
-
-    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
-    at.run()
-    assert not at.exception
-    assert any(m.value == stat_tests.real_data_text(alpha=0.05) for m in at.markdown)
-    assert any("Tamanho do efeito (IC 95%)" in list(df.value.columns) for df in at.dataframe)
-
-    at.selectbox[0].set_value(0.01).run()
-    assert not at.exception
-    assert any("Conclusão (α = 0,01)" in list(df.value.columns) for df in at.dataframe)
+def test_offscale_point_in_g3_gets_its_value():
+    fig = app.chart_g3(0.05, list(SITUATIONS))
+    summary = simulate.load_summary()
+    value = app._pct(app.rate(summary, "S-outlier", 0.0, "pearson", 0.05))
+    assert [a.text for a in fig.layout.annotations] == [value]
