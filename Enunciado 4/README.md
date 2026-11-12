@@ -7,7 +7,10 @@ NASA KC1 (C++). A entrega final é um dashboard Streamlit.
 > **Pergunta:** Em um sistema C++ da NASA, classes maiores tendem a ter mais defeitos de modo
 > geral, ou a associação observada é puxada por poucas classes gigantes?
 
-- **Dashboard:** _a preencher após o deploy (T07, #82)_ · ver [Deploy](#deploy-streamlit-community-cloud)
+- **Dashboard:** <https://experimentacao-lab04-spearman.streamlit.app> · ver [Deploy](#deploy-streamlit-community-cloud)
+  - página **Dashboard** (padrão): painel só com gráficos e indicadores, como o professor pediu;
+  - página **Relatório**: as 7 seções do enunciado (§4) com os textos curtos de cada gráfico, a tabela dos
+    dados reais e a conclusão. As duas usam os mesmos gráficos, e o α escolhido vale nas duas.
 - **Repositório / GitHub Projects:** https://github.com/luisajardim/Lab-Experimentacao-e-Medicao- · board "Kanban Lab"
 - **Planejamento:** [PLAN.md](PLAN.md) · **Enunciado:** [ENUNCIADO.pdf](ENUNCIADO.pdf)
 
@@ -65,7 +68,7 @@ carga leva ~6 s, a troca de α ~1 s, e o pico de memória fica em ~340 MB.
 
 ```
 Enunciado 4/
-├── app.py            # dashboard Streamlit (painel: filtros, indicadores e gráficos)
+├── app.py            # app Streamlit: página Dashboard (painel) e menu para a página Relatório
 ├── deploy/           # porta de entrada e requirements.txt do Streamlit Cloud
 ├── src/
 │   ├── config.py     # semente, caminhos, situações, grade de efeitos, paleta
@@ -74,6 +77,7 @@ Enunciado 4/
 │   ├── generate.py   # gerador de dados simulados (cópula gaussiana)
 │   ├── stat_tests.py # Pearson e Spearman vetorizados + dados reais
 │   ├── simulate.py   # Monte Carlo (Q1, Q2, Q3)
+│   ├── relatorio.py  # página Relatório: as 7 seções com textos e tabelas (§4)
 │   ├── sample_size.py # extra: poder e erro tipo I × tamanho da amostra
 │   ├── figures.py    # gráficos G1–G4
 │   └── cli.py        # comando único `lab04`

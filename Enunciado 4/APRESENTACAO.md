@@ -4,7 +4,7 @@
 
 **Grupo:** Bernardo Souza Alvim · Luísa Oliveira Jardim · Pedro Augusto Santos Seabra
 **Disciplina:** Laboratório de Experimentação de Software · **Professor:** Danilo Maia
-**Dashboard:** _link após o deploy (#93)_ · local: `uv run lab04`
+**Dashboard:** <https://experimentacao-lab04-spearman.streamlit.app> (páginas **Dashboard** e **Relatório**, no menu do topo) · local: `uv run lab04`
 **Repositório:** [Lab-Experimentacao-e-Medicao-](https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-) · **Board:** [Kanban Lab](https://github.com/users/luisajardim/projects/2)
 
 ## Regras (enunciado §5)

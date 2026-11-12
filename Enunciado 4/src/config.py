@@ -52,5 +52,6 @@ PALETTE = {
 }
 
 REPO_URL = "https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-"
-DASHBOARD_URL = "https://lab-experimentacao-medicao-lab04.streamlit.app"
+DASHBOARD_URL = "https://experimentacao-lab04-spearman.streamlit.app"
+PROJECTS_URL = "https://github.com/users/luisajardim/projects/2"
 
