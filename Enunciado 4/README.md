@@ -65,7 +65,7 @@ carga leva ~6 s, a troca de α ~1 s, e o pico de memória fica em ~340 MB.
 
 ```
 Enunciado 4/
-├── app.py            # dashboard Streamlit (7 seções)
+├── app.py            # dashboard Streamlit (painel: filtros, indicadores e gráficos)
 ├── deploy/           # porta de entrada e requirements.txt do Streamlit Cloud
 ├── src/
 │   ├── config.py     # semente, caminhos, situações, grade de efeitos, paleta
