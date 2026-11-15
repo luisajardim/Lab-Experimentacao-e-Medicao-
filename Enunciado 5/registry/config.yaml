@@ -1,0 +1,35 @@
+# Verdaccio do Lab05 (T02, #97): registry npm local que faz cache dos pacotes.
+# Cada pacote é baixado do registry público uma única vez e depois servido daqui,
+# isolando o efeito do gerenciador da velocidade da internet de cada máquina.
+storage: ./storage
+
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+    cache: true
+    timeout: 60s
+    # Metadados ficam válidos durante toda a coleta: sem isso o Verdaccio volta ao registry
+    # público a cada poucos minutos e a internet entra na medição (cenário cold).
+    maxage: 30d
+
+packages:
+  '@*/*':
+    access: $all
+    publish: $nobody
+    unpublish: $nobody
+    proxy: npmjs
+  '**':
+    access: $all
+    publish: $nobody
+    unpublish: $nobody
+    proxy: npmjs
+
+max_body_size: 200mb
+
+server:
+  keepAliveTimeout: 60
+
+web:
+  enable: false
+
+log: { type: stdout, format: pretty, level: warn }

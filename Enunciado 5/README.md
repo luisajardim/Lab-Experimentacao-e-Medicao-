@@ -8,7 +8,7 @@ operação (séries de downloads da API pública do npm).
 
 - **Planejamento e tarefas:** [PLAN.md](PLAN.md) · **Enunciado:** [ENUNCIADO.pdf](ENUNCIADO.pdf)
 - **Repositório / GitHub Projects:** https://github.com/luisajardim/Lab-Experimentacao-e-Medicao- · board "Kanban Lab" (label `Enunciado 5`)
-- **Schema dos dados:** [docs/schema.md](docs/schema.md)
+- **Schema dos dados:** [docs/schema.md](docs/schema.md) · **Registry local:** [docs/registry.md](docs/registry.md)
 
 ## Integrantes
 
@@ -35,6 +35,7 @@ Desenvolvimento:
 uv run pytest
 uv run ruff check .
 uv run lab05 synthetic   # (re)gera o CSV sintético em data/raw/synthetic/ (T01)
+uv run lab05 registry up|status|warm|down   # Verdaccio local em http://localhost:4873/ (T02)
 ```
 
 Enquanto não há coleta real, o dashboard e a análise usam o **CSV sintético** (números inventados,

@@ -4,11 +4,12 @@ Sem subcomando, garante o CSV sintético (enquanto não há coleta real) e abre 
 Subcomandos são adicionados pelas tarefas que os implementam:
 
 - `synthetic`: (re)gera o CSV sintético no schema de `runs.csv` (T01, #96).
-- `registry`, `collect`, `specs`, `downloads`, `validate`: T02, T04, T07, T15 e T13.
+- `registry {up,down,status,warm}`: Verdaccio local (T02, #97).
+- `collect`, `specs`, `downloads`, `validate`: T04, T07, T15 e T13.
 
 Flags do dashboard: `--prepare-only` (não abre o Streamlit); o resto vai para o Streamlit.
 
-Issues: #96 (T01).
+Issues: #96 (T01), #97 (T02).
 """
 
 from __future__ import annotations
@@ -16,6 +17,7 @@ from __future__ import annotations
 import subprocess
 import sys
 
+import registry
 import synthetic
 from config import ROOT
 
@@ -23,6 +25,7 @@ APP_PATH = ROOT / "app.py"
 
 SUBCOMMANDS = {
     "synthetic": synthetic.main,
+    "registry": registry.main,
 }
 
 
