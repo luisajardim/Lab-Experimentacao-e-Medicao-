@@ -65,10 +65,11 @@ SPECS_FILENAME = "specs.json"
 # Tratamentos: id -> metadados. O npm é o controle (`CONTROL`).
 # `family` agrupa as variantes do Yarn (aba Yarn × Yarn). `expected_version` é o prefixo da
 # versão a usar; a versão exata instalada é registrada em cada linha do CSV
-# (`manager_version`) e fixada no protocolo de coleta (T07, #102).
+# (`manager_version`). Versões exatas fixadas em `scripts/windows_portable.ps1` (npm = o que vem
+# com o Node LTS; Yarn Berry 4.18.1 = o release versionado nos lockfiles da T03).
 MANAGERS = {
     "npm": {"label": "npm", "family": "npm", "expected_version": "11"},
-    "pnpm": {"label": "pnpm", "family": "pnpm", "expected_version": "10"},
+    "pnpm": {"label": "pnpm", "family": "pnpm", "expected_version": "12"},
     "bun": {"label": "Bun", "family": "bun", "expected_version": "1"},
     "yarn-classic": {"label": "Yarn Classic", "family": "yarn", "expected_version": "1.22"},
     "yarn-berry-nm": {"label": "Yarn Berry (node-modules)", "family": "yarn",

@@ -19,7 +19,8 @@ operação (séries de downloads da API pública do npm).
 ## Pré-requisitos
 
 - [uv](https://docs.astral.sh/uv/) (instala o Python 3.12 automaticamente se necessário)
-- Para a coleta (a partir da T02/T04): Node.js e os gerenciadores nas versões do protocolo (T07)
+- Para a coleta no Windows, sem instalar nada: [`scripts/windows_portable.ps1`](docs/windows_portable.md)
+  (Node, npm, pnpm, Yarn, Bun e uv numa pasta só, com as versões fixadas; `-Clean` apaga tudo)
 
 ## Como rodar
 

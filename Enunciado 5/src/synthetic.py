@@ -47,7 +47,7 @@ MANAGER_FACTOR = {
 NOISE_SIGMA = 0.12
 FAIL_RATE = 0.01
 PNP_NEXT_FAIL_RATE = 0.3   # fictício: ilustra a coluna build_ok na aba Yarn × Yarn
-FAKE_VERSIONS = {"npm": "11.0.0", "pnpm": "10.0.0", "bun": "1.0.0", "yarn-classic": "1.22.22",
+FAKE_VERSIONS = {"npm": "11.0.0", "pnpm": "12.0.0", "bun": "1.0.0", "yarn-classic": "1.22.22",
                  "yarn-berry-nm": "4.0.0", "yarn-berry-pnp": "4.0.0"}
 
 
