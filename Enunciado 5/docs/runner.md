@@ -110,3 +110,13 @@ porque muda a cada processo). `order` é a posição global na sequência e não
 - **Instalação preparatória falhando** (warm-cache/reinstall): o runner avisa no terminal e mede
   mesmo assim. A falha aparece na instalação medida (`exit_code`/`build_ok`).
 - O runner não aquece o Verdaccio: isso é a T02 (`uv run lab05 registry warm`).
+
+## Checagem de versões antes da coleta
+
+Antes da primeira instalação, `collect` confere se o Node e cada gerenciador estão na versão
+esperada (`expected_version` em `src/config.py`, que bate com `scripts/windows_portable.ps1`) e
+**aborta** se algum não estiver. O motivo principal: o Yarn Classic 1.22 obedece ao `yarnPath` de
+um `.yarnrc.yml` em **qualquer pasta acima** do projeto (ou na home). Um arquivo esquecido
+transformaria o tratamento `yarn-classic` em Berry sem aviso, com as linhas rotuladas errado
+(conferido em 14/11: numa pasta isolada responde 1.22.22; abaixo de um `.yarnrc.yml` com
+`yarnPath`, responde 4.18.1). `--skip-version-check` desliga a checagem, só para depurar.

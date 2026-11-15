@@ -45,7 +45,8 @@ def run_collect(tmp_path, managers=("npm", "pnpm", "bun"), reps=2, warmup=1, out
     out = out or tmp_path / "out" / "runs.csv"
     n = runner.collect("teste", projects=(PROJECT,), scenarios=tuple(SCENARIOS),
                        managers=managers, reps=reps, warmup=warmup, out=out,
-                       collector=make_collector(tmp_path), log=lambda s: None)
+                       collector=make_collector(tmp_path), log=lambda s: None,
+                       verify_versions=False)   # o fake imprime 9.9.9
     return n, out
 
 
@@ -181,3 +182,41 @@ def test_dry_run_and_args(capsys):
     assert args.reps == runner.DEFAULT_REPS and args.scenarios == tuple(SCENARIOS)
     with pytest.raises(SystemExit):
         runner.parse_args(["--machine", "x", "--managers", "pip"])
+
+
+# ---------------------------------------------------------------- checagem de versões
+
+
+def test_version_matches():
+    assert runner.version_matches("1.22.22", "1.22")
+    assert runner.version_matches("12", "12")
+    assert not runner.version_matches("1.220.0", "1.22")
+    assert not runner.version_matches("4.18.1", "1.22")
+    assert not runner.version_matches("", "11")
+
+
+def test_check_versions_aborts_on_wrong_version(env, monkeypatch):
+    tmp_path, _ = env
+    col = make_collector(tmp_path)
+    monkeypatch.setattr(col, "node_version", lambda: runner.NODE_EXPECTED_VERSION + ".0.0")
+    # O fake responde 9.9.9: é o caso de um Yarn Classic que virou Berry (outra versão).
+    with pytest.raises(SystemExit, match=r"npm: esperado .*encontrado 9\.9\.9"):
+        runner.check_versions(col, PROJECT, ("npm",))
+
+
+def test_check_versions_passes_and_cleans_up(env, monkeypatch):
+    tmp_path, _ = env
+    col = make_collector(tmp_path)
+    monkeypatch.setattr(col, "node_version", lambda: runner.NODE_EXPECTED_VERSION + ".1.2")
+    monkeypatch.setitem(runner.MANAGERS, "npm", {**runner.MANAGERS["npm"], "expected_version": "9"})
+    runner.check_versions(col, PROJECT, ("npm",))
+    assert not col.project_dir(PROJECT, "npm").exists()
+
+
+def test_check_versions_flags_node(env, monkeypatch):
+    tmp_path, _ = env
+    col = make_collector(tmp_path)
+    monkeypatch.setattr(col, "node_version", lambda: "20.1.0")
+    monkeypatch.setitem(runner.MANAGERS, "npm", {**runner.MANAGERS["npm"], "expected_version": "9"})
+    with pytest.raises(SystemExit, match="node: esperado"):
+        runner.check_versions(col, PROJECT, ("npm",))

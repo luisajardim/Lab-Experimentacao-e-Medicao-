@@ -41,6 +41,7 @@ from config import (
     DATA_RAW,
     DEFAULT_REGISTRY,
     MANAGERS,
+    NODE_EXPECTED_VERSION,
     PROJECTS,
     PROJECTS_DIR,
     REGISTRIES,
@@ -371,12 +372,43 @@ def append_row(row: dict, out: Path) -> None:
         os.fsync(fh.fileno())
 
 
+def version_matches(found: str, expected: str) -> bool:
+    """`found` é a versão `expected` ou uma versão dentro dela (ex.: 1.22.22 em 1.22)."""
+    return found == expected or found.startswith(expected + ".")
+
+
+def check_versions(col: Collector, project: str, managers: Iterable[str]) -> None:
+    """Aborta se algum gerenciador (ou o Node) não estiver na versão esperada de `config`.
+
+    Pega máquinas com versões erradas e, principalmente, o Yarn Classic que vira Berry sem
+    aviso: o Yarn 1.22 obedece ao `yarnPath` de um `.yarnrc.yml` em QUALQUER pasta acima do
+    projeto (ou na home), e aí as linhas sairiam rotuladas como yarn-classic sendo Berry.
+    """
+    wrong = []
+    node = col.node_version()
+    if not version_matches(node, NODE_EXPECTED_VERSION):
+        wrong.append(f"node: esperado {NODE_EXPECTED_VERSION}.x, encontrado {node or '?'}")
+    for manager in managers:
+        workdir = col.fresh_project(project, manager, with_lockfile=False)
+        found = col.manager_version(manager, workdir)
+        expected = MANAGERS[manager]["expected_version"]
+        if not version_matches(found, expected):
+            wrong.append(f"{manager}: esperado {expected}.x, encontrado {found or '?'}")
+        metrics.rmtree_robust(workdir)
+    if wrong:
+        raise SystemExit(
+            "[lab05] versões fora do esperado (config.py): " + "; ".join(wrong) + ". "
+            "Use o ambiente de scripts/windows_portable.ps1 e confira se não há um .yarnrc.yml "
+            f"numa pasta acima de {col.workdir} ou na sua home.")
+
+
 def collect(machine: str, *, projects: Iterable[str] = tuple(PROJECTS),
             scenarios: Iterable[str] = tuple(SCENARIOS), managers: Iterable[str] = tuple(MANAGERS),
             reps: int = DEFAULT_REPS, warmup: int = DEFAULT_WARMUP,
             registry: str = DEFAULT_REGISTRY, out: Path | None = None,
             timeout_s: float = DEFAULT_TIMEOUT_S, seed: int = SEED,
-            collector: Collector | None = None, log: Callable[[str], None] = print) -> int:
+            collector: Collector | None = None, log: Callable[[str], None] = print,
+            verify_versions: bool = True) -> int:
     """Roda (ou retoma) a coleta de uma máquina. Devolve quantas instalações foram feitas."""
     out = out or default_out(machine)
     managers = tuple(managers)
@@ -389,6 +421,9 @@ def collect(machine: str, *, projects: Iterable[str] = tuple(PROJECTS),
             missing.append(m)
     if missing:
         raise SystemExit(f"[lab05] gerenciadores não encontrados no PATH: {', '.join(missing)}")
+    projects = tuple(projects)
+    if verify_versions:
+        check_versions(col, projects[0], managers)
 
     seq = build_sequence(machine, projects, scenarios, managers, reps, warmup, seed)
     done = done_keys(out)
@@ -440,6 +475,8 @@ def parse_args(argv: list[str] | None) -> argparse.Namespace:
     p.add_argument("--timeout", type=float, default=DEFAULT_TIMEOUT_S,
                    help="timeout por instalação (s)")
     p.add_argument("--dry-run", action="store_true", help="só mostra a sequência")
+    p.add_argument("--skip-version-check", action="store_true",
+                   help="não confere as versões de config.py (só para depurar; nunca na coleta)")
     args = p.parse_args(argv)
     if args.scenarios is None:
         args.scenarios = PILOT_SCENARIOS if args.pilot else tuple(SCENARIOS)
@@ -463,7 +500,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     collect(args.machine, projects=args.projects, scenarios=args.scenarios,
             managers=args.managers, reps=args.reps, warmup=args.warmup, registry=args.registry,
-            out=args.out, timeout_s=args.timeout)
+            out=args.out, timeout_s=args.timeout, verify_versions=not args.skip_version_check)
     return 0
 
 
