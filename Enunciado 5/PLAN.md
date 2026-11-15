@@ -130,6 +130,12 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - Pronto até ~16/11 (caminho crítico do piloto).
 - *Implementação:* `projects/`.
 - *Dependências:* #96 (T01)
+- *Contexto do que já existe (T01, T02, T04):*
+  - O layout que o runner espera está em `projects/README.md`: `projects/<projeto>/package.json` (versões exatas, script `build`) + `projects/<projeto>/lockfiles/<gerenciador>/` com o lockfile e as configs de cada um dos 6 tratamentos. Os nomes dos projetos são os de `config.PROJECTS`.
+  - Gere os lockfiles **com o Verdaccio ligado** (`uv run lab05 registry up`): o lockfile grava a URL de onde cada pacote veio (`resolved`), e sem isso o cenário `ci` volta a baixar do registry público. Ver `docs/registry.md`.
+  - **A confirmar nesta tarefa:** o Yarn Classic 1.22 (global) respeita o `yarnPath` do `.yarnrc.yml` em `lockfiles/yarn-berry-*/` — é assim que o runner ativa o Yarn Berry. Não usar o campo `packageManager` no `package.json` (valeria para todos os tratamentos e acionaria o Corepack).
+  - Não ponha registry nem cache em `.npmrc`/`.yarnrc.yml`: o runner define os dois por variáveis de ambiente. Nada de `postinstall` próprio no projeto. O `build` não é cronometrado, só vira `build_ok`.
+  - Para testar: `uv run lab05 collect --machine teste --reps 1 --scenarios cold --projects <projeto> --out <pasta temporária>/runs.csv` mostra se os 6 tratamentos instalam e passam no build (o runner gera `runs.csv` de verdade; não commitar esse teste).
 
 #### T04 Implementar Runner de Instalação (#99, Bernardo)
 - *Objetivo:* Automatizar uma instalação medida: preparar o cenário, instalar, medir, validar com o build e gravar uma linha no CSV.
@@ -157,6 +163,11 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - Tempo total do piloto registrado (base para estimar a coleta completa).
 - *Implementação:* Execução + `docs/piloto.md`.
 - *Dependências:* #97 (T02), #98 (T03), #99 (T04), #102 (T07)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar.
+  - O piloto é `uv run lab05 collect --machine bernardo --pilot --out data/raw/pilot/runs.csv` (cenários cold e warm-cache, 5 repetições, 2 aquecimentos = 182 instalações). É o **primeiro teste real no Windows**: anotar em `docs/piloto.md` o que falhar (caminhos longos, antivírus segurando arquivos, junctions do pnpm).
+  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
+  - Decisão de método a validar com o grupo: o npm roda com `--no-audit --no-fund`, porque nenhum outro gerenciador audita na instalação e o Verdaccio pode não atender o audit.
 
 #### T06 Escrever Proposta do Estudo (#101, Luísa)
 - *Objetivo:* Escrever a proposta da S01: software, pergunta, caminhos, GQM, hipóteses e a primeira versão das 7 categorias.
@@ -170,6 +181,10 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `docs/proposta.md` completo, revisado pelo trio.
 - *Implementação:* `docs/proposta.md`.
 - *Dependências:* Nenhuma.
+- *Contexto do que já existe (T01, T02, T04):*
+  - Decisão de método a validar com o grupo: o npm roda com `--no-audit --no-fund`, porque nenhum outro gerenciador audita na instalação e o Verdaccio pode não atender o audit. Precisa aparecer no método da proposta.
+  - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
+  - Os cenários e os comandos de cada tratamento estão em `src/runner.py` (`COMMANDS`) e em `docs/runner.md`.
 
 #### T07 Escrever Protocolo de Coleta + Coletor de Specs (#102, Luísa)
 - *Objetivo:* Padronizar como cada integrante coleta na própria máquina e registrar automaticamente as specs de cada bloco.
@@ -182,6 +197,11 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - Usado no piloto (T05).
 - *Implementação:* `docs/protocolo.md`, `src/specs.py`.
 - *Dependências:* #96 (T01)
+- *Contexto do que já existe (T01, T02, T04):*
+  - O runner já registra em cada linha `manager_version` e `node_version`; o `specs.py` desta tarefa grava `data/raw/<maquina>/specs.json` (o runner não grava specs). Ligar como `uv run lab05 specs` (avisar o Bernardo para registrar no `cli.py`).
+  - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar. O protocolo deve incorporar esses passos.
+  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`. Registrar no protocolo o espaço livre necessário no disco.
+  - O Windows Defender fica no padrão (fixo, não é fator).
 
 #### T08 Implementar Testes Estatísticos (#103, Pedro)
 - *Objetivo:* Implementar a análise estatística usada nas abas, desenvolvida sobre o CSV sintético do T01.
@@ -195,6 +215,11 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `src/stats.py` validado contra `scipy.stats.wilcoxon` e `friedmanchisquare` em `tests/test_stats.py`.
 - *Implementação:* `src/stats.py`, `tests/test_stats.py`.
 - *Dependências:* #96 (T01)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Antes da coleta, use `load_runs(include_synthetic=True)` (CSV sintético em `data/raw/synthetic/`, `uv run lab05 synthetic`). Os números são **inventados**: servem para programar, nunca para resultado. O sintético ainda usa a definição antiga de disco (ver abaixo), então não tire conclusão de disco dele.
+  - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
+  - Instalações que falham não são apagadas: `exit_code ≠ 0` (`124` = timeout) ou `build_ok = false`. Tempo de instalação só faz sentido para linhas válidas; a taxa de `build_ok` é resultado à parte (compatibilidade).
 
 #### T09 Calcular Nº de Repetições por Poder (#104, Pedro)
 - *Objetivo:* Definir quantas repetições por célula a coleta completa precisa, usando a variância do piloto.
@@ -206,6 +231,10 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `src/power.py` + `docs/poder.md` com o N escolhido e a justificativa, até 19/11.
 - *Implementação:* `src/power.py`, `docs/poder.md`.
 - *Dependências:* #103 (T08), #100 (T05)
+- *Contexto do que já existe (T01, T02, T04):*
+  - O piloto chega em `data/raw/pilot/runs.csv` (machine = `bernardo`, cenários cold e warm-cache, 5 repetições), previsto para ~17/11. Até lá, use o sintético.
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Para estimar o tempo total da coleta: `uv run lab05 collect --machine x --reps <N> --dry-run` dá o nº de instalações; a duração média de cada uma sai do piloto (`wall_s` + build + preparação; o log mostra o andamento).
 
 #### T10 Construir Dashboard Base (#105, Pedro)
 - *Objetivo:* Montar o esqueleto do dashboard Streamlit com as 4 abas, lendo o schema do T01.
@@ -218,6 +247,11 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `uv run lab05` abre o dashboard com as 4 abas preenchidas pelos dados sintéticos.
 - *Implementação:* `app.py`, `src/figures.py`.
 - *Dependências:* #96 (T01)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Antes da coleta, use `load_runs(include_synthetic=True)` (CSV sintético em `data/raw/synthetic/`, `uv run lab05 synthetic`). Os números são **inventados**: servem para programar, nunca para resultado. O sintético ainda usa a definição antiga de disco (ver abaixo), então não tire conclusão de disco dele.
+  - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
+  - Já existe um `app.py` provisório (resumo dos dados): substitua pelas 4 abas. Use `config.PALETTE` para as cores.
 
 ### S02 — Coleta completa e análise (26/11)
 
@@ -242,6 +276,9 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `data/raw/bernardo/runs.csv` + `specs.json` commitados.
 - *Implementação:* Execução.
 - *Dependências:* #100 (T05), #102 (T07), #104 (T09)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar.
+  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
 
 #### T12b Executar Coleta Completa (máquina da Luísa) (#108, Luísa)
 - *Objetivo:* Rodar a coleta completa na máquina da Luísa, seguindo o protocolo e o N do T09.
@@ -253,6 +290,9 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `data/raw/luisa/runs.csv` + `specs.json` commitados.
 - *Implementação:* Execução.
 - *Dependências:* #100 (T05), #102 (T07), #104 (T09)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar.
+  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
 
 #### T12c Executar Coleta Completa (máquina do Pedro) (#109, Pedro)
 - *Objetivo:* Rodar a coleta completa na máquina do Pedro, seguindo o protocolo e o N do T09.
@@ -264,6 +304,9 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `data/raw/pedro/runs.csv` + `specs.json` commitados.
 - *Implementação:* Execução.
 - *Dependências:* #100 (T05), #102 (T07), #104 (T09)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar.
+  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
 
 #### T13 Validar e Versionar os Dados (#110, Bernardo)
 - *Objetivo:* Juntar as 3 coletas, checar a qualidade e congelar o dataset usado na análise.
@@ -275,6 +318,10 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `uv run lab05 validate` passa; o dataset final está commitado e é o que o dashboard lê.
 - *Implementação:* `src/validate.py`, `docs/validacao.md`.
 - *Dependências:* #107 (T12a), #108 (T12b), #109 (T12c)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Instalações que falham não são apagadas: `exit_code ≠ 0` (`124` = timeout) ou `build_ok = false`. Tempo de instalação só faz sentido para linhas válidas; a taxa de `build_ok` é resultado à parte (compatibilidade).
+  - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
+  - `exit_code = 124` indica timeout.
 
 #### T14 Construir Análise + Aba Yarn × Yarn (#111, Bernardo)
 - *Objetivo:* Comparar Yarn Classic, Berry (node-modules) e Berry (PnP): a evolução do mesmo software e o trade-off do PnP.
@@ -286,6 +333,11 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - Aba Yarn × Yarn com gráficos + texto interpretando o resultado.
 - *Implementação:* `app.py` (aba), `src/figures.py`.
 - *Dependências:* #103 (T08), #105 (T10)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
+  - Instalações que falham não são apagadas: `exit_code ≠ 0` (`124` = timeout) ou `build_ok = false`. Tempo de instalação só faz sentido para linhas válidas; a taxa de `build_ok` é resultado à parte (compatibilidade).
+  - No PnP não existe `node_modules`: o disco vem de `.pnp.*` e `.yarn/*` (já incluídos em `disk_mb`).
 
 #### T15 Coletar Downloads do npm (#112, Luísa)
 - *Objetivo:* Coletar as séries históricas de downloads dos gerenciadores (2º caminho: dados de operação).
@@ -318,6 +370,11 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `docs/ameacas.md` + `article/` compilando com a seção de Método.
 - *Implementação:* `docs/ameacas.md`, `article/`.
 - *Dependências:* #101 (T06)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Limitação conhecida: CPU e RAM são amostradas a cada 50 ms (psutil); processos filhos muito curtos escapam. No Windows a CPU tende a ser **subestimada** (no Linux há complemento por `getrusage`). Tempo de relógio e disco não são afetados.
+  - Decisão de método a validar com o grupo: o npm roda com `--no-audit --no-fund`, porque nenhum outro gerenciador audita na instalação e o Verdaccio pode não atender o audit.
+  - O Verdaccio guarda metadados por 30 dias (`registry/config.yaml`) para a internet não entrar na medição: isso é mitigação de validade interna; a checagem no registry real (T19) cobre a externa.
+  - Os lockfiles registram a URL do Verdaccio; lockfiles diferentes por gerenciador podem resolver árvores levemente diferentes.
 
 #### T18 Construir Análise + Aba Todos × npm (#115, Pedro)
 - *Objetivo:* Comparar cada gerenciador com o npm (controle) e conferir as promessas dos fabricantes.
@@ -329,6 +386,10 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - Aba Todos × npm com gráficos, tabela de testes e texto interpretando o resultado.
 - *Implementação:* `app.py` (aba), `src/figures.py`.
 - *Dependências:* #103 (T08), #105 (T10)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
+  - Instalações que falham não são apagadas: `exit_code ≠ 0` (`124` = timeout) ou `build_ok = false`. Tempo de instalação só faz sentido para linhas válidas; a taxa de `build_ok` é resultado à parte (compatibilidade).
 
 ### S03 + Final — Impacto, artigo e apresentação (03/12)
 
@@ -341,6 +402,8 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
   - `data/raw/registry_real/runs.csv` + parágrafo em `docs/ameacas.md`.
 - *Implementação:* Execução + `src/runner.py --registry public`.
 - *Dependências:* #99 (T04)
+- *Contexto do que já existe (T01, T02, T04):*
+  - Rodar com `uv run lab05 collect --machine bernardo --registry public --scenarios cold,ci --projects <projeto> --reps <poucas> --out data/raw/registry_real/runs.csv`. A coluna `registry` distingue as linhas. Ética: poucas instalações.
 
 #### T20 Estimar Impacto + Aba Impacto (#117, Pedro)
 - *Objetivo:* Traduzir o resultado para o mundo real: horas e dinheiro de CI, e disco na máquina do dev.
