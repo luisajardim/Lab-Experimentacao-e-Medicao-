@@ -43,11 +43,13 @@ COLUMNS: tuple[Column, ...] = (
     Column("cpu_s", "float64", "razão", "Tempo de CPU (usuário + sistema) da árvore de processos (s)"),
     Column("peak_rss_mb", "float64", "razão", "Pico de memória residente da árvore de processos (MB)"),
     Column("disk_mb", "float64", "razão",
-           "Disco do projeto após instalar: node_modules ou .yarn/.pnp (MB, hard links deduplicados)"),
-    Column("cache_mb", "float64", "razão", "Disco do cache/store global do gerenciador (MB)"),
+           "Disco dos artefatos da instalação no projeto: node_modules, .pnp.*, .yarn/* (MB)"),
+    Column("cache_mb", "float64", "razão",
+           "Disco do cache/store sem os arquivos já contados no projeto (MB); "
+           "disk_mb + cache_mb = pegada total"),
     Column("n_files", "int64", "razão", "Nº de arquivos criados no projeto"),
     Column("build_ok", "bool", "nominal", "O `build` do projeto passou após a instalação"),
-    Column("exit_code", "int64", "nominal", "Código de saída do comando de instalação"),
+    Column("exit_code", "int64", "nominal", "Código de saída da instalação (124 = timeout)"),
 )
 
 COLUMN_NAMES: tuple[str, ...] = tuple(c.name for c in COLUMNS)

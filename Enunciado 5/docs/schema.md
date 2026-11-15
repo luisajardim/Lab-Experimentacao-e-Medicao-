@@ -37,11 +37,19 @@ Uma linha = **uma instalação medida** (gerenciador × cenário × projeto × m
 | `wall_s` | real | razão | Tempo de relógio da instalação (s) |
 | `cpu_s` | real | razão | CPU (usuário + sistema) da árvore de processos (s) |
 | `peak_rss_mb` | real | razão | Pico de memória residente da árvore de processos (MB) |
-| `disk_mb` | real | razão | Disco do projeto após instalar: `node_modules` ou `.yarn`/`.pnp` (MB, hard links contados uma vez) |
-| `cache_mb` | real | razão | Disco do cache/store global do gerenciador após a instalação (MB) |
+| `disk_mb` | real | razão | Disco dos artefatos que a instalação criou no projeto: `node_modules`, `.pnp.*`, `.yarn/*` (MB) |
+| `cache_mb` | real | razão | Disco do cache/store do gerenciador **sem** os arquivos já contados no projeto (MB) |
 | `n_files` | inteiro | razão | Nº de arquivos criados no projeto |
 | `build_ok` | booleano | nominal | O `build` do projeto passou após a instalação (instalação válida) |
-| `exit_code` | inteiro | nominal | Código de saída do comando de instalação |
+| `exit_code` | inteiro | nominal | Código de saída da instalação (`124` = timeout) |
+
+### Disco: como ler `disk_mb` e `cache_mb`
+
+Cada arquivo é contado uma vez por inode (hard links), e links simbólicos/junctions não são
+seguidos. O pnpm (e o Yarn com cache global) cria hard links entre o store e o `node_modules`;
+esses arquivos entram em `disk_mb`, e o `cache_mb` fica só com o que está exclusivamente no
+cache. Assim **`disk_mb + cache_mb` é a pegada total sem dupla contagem**, e é essa soma que a
+análise usa para comparar o espaço ocupado. Detalhes da medição em [docs/runner.md](runner.md).
 
 ## Regras de validação (`schema.validate`)
 
