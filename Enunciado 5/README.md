@@ -29,6 +29,9 @@ uv sync               # instala as dependências
 uv run lab05          # comando único: prepara os dados e abre o dashboard
 ```
 
+Configuração local (opcional): copie `.env.example` para `.env`. Hoje ele só define
+`LAB05_WORKDIR`, a pasta de trabalho da coleta (padrão: `.work/`; nunca num `tmpfs` como o `/tmp` do WSL).
+
 Desenvolvimento:
 
 ```bash

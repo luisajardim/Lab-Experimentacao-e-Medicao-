@@ -7,11 +7,50 @@ projetos-carga, as versões esperadas e a paleta fixa (uma cor por gerenciador).
 Issues: #96 (T01).
 """
 
+import os
 from pathlib import Path
 
 SEED = 42
 
 ROOT = Path(__file__).resolve().parents[1]
+ENV_FILE = ROOT / ".env"
+
+
+def load_env(path: Path = ENV_FILE) -> dict[str, str]:
+    """Carrega `KEY=VALOR` do `.env` (sem dependência externa) em `os.environ`.
+
+    Variáveis já definidas no terminal têm prioridade sobre o arquivo. Linhas vazias e
+    comentários (`#`) são ignorados; aspas em volta do valor são removidas. Devolve o que foi lido.
+    """
+    values: dict[str, str] = {}
+    if not path.exists():
+        return values
+    for raw in path.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.removeprefix("export ").partition("=")
+        key, value = key.strip(), value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+            value = value[1:-1]
+        values[key] = value
+        os.environ.setdefault(key, value)
+    return values
+
+
+load_env()
+
+# Pasta de trabalho da coleta (projetos copiados, caches isolados, logs). Precisa ficar no
+# mesmo disco físico do cache, e NUNCA num tmpfs (o /tmp do WSL fica na RAM). Padrão: `.work/`
+# dentro do Enunciado 5 (ignorada pelo git); no Windows, prefira um caminho curto no `.env`
+# (ex.: F:\lab05\work) por causa do limite de 260 caracteres dos caminhos.
+WORKDIR_ENV = "LAB05_WORKDIR"
+
+
+def workdir() -> Path:
+    """Pasta de trabalho da coleta: `LAB05_WORKDIR` (terminal ou `.env`) ou `ROOT/.work`."""
+    value = os.environ.get(WORKDIR_ENV, "").strip()
+    return Path(value).expanduser() if value else ROOT / ".work"
 DATA = ROOT / "data"
 DATA_RAW = DATA / "raw"                    # data/raw/<maquina>/runs.csv + specs.json
 DATA_SYNTHETIC = DATA_RAW / "synthetic"    # CSV sintético (T01) para desenvolver antes da coleta

@@ -166,7 +166,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Contexto do que já existe (T01, T02, T04):*
   - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar.
   - O piloto é `uv run lab05 collect --machine bernardo --pilot --out data/raw/pilot/runs.csv` (cenários cold e warm-cache, 5 repetições, 2 aquecimentos = 182 instalações). É o **primeiro teste real no Windows**: anotar em `docs/piloto.md` o que falhar (caminhos longos, antivírus segurando arquivos, junctions do pnpm).
-  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
+  - O runner trabalha em `LAB05_WORKDIR`, definida no `.env` (modelo em `.env.example`; padrão: `Enunciado 5/.work/`), com cache isolado por gerenciador. Ela precisa ficar num disco de verdade e sempre no mesmo disco (senão pnpm/Yarn copiam em vez de criar hard links); **nunca** num `tmpfs` (o `/tmp` do WSL fica na RAM). No Windows, use um caminho curto (ex.: `F:\lab05\work`) por causa do limite de 260 caracteres. Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
   - Decisão de método a validar com o grupo: o npm roda com `--no-audit --no-fund`, porque nenhum outro gerenciador audita na instalação e o Verdaccio pode não atender o audit.
 
 #### T06 Escrever Proposta do Estudo (#101, Luísa)
@@ -200,7 +200,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Contexto do que já existe (T01, T02, T04):*
   - O runner já registra em cada linha `manager_version` e `node_version`; o `specs.py` desta tarefa grava `data/raw/<maquina>/specs.json` (o runner não grava specs). Ligar como `uv run lab05 specs` (avisar o Bernardo para registrar no `cli.py`).
   - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar. O protocolo deve incorporar esses passos.
-  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`. Registrar no protocolo o espaço livre necessário no disco.
+  - O runner trabalha em `LAB05_WORKDIR`, definida no `.env` (modelo em `.env.example`; padrão: `Enunciado 5/.work/`), com cache isolado por gerenciador. Ela precisa ficar num disco de verdade e sempre no mesmo disco (senão pnpm/Yarn copiam em vez de criar hard links); **nunca** num `tmpfs` (o `/tmp` do WSL fica na RAM). No Windows, use um caminho curto (ex.: `F:\lab05\work`) por causa do limite de 260 caracteres. Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`. Registrar no protocolo o espaço livre necessário no disco.
   - O Windows Defender fica no padrão (fixo, não é fator).
 
 #### T08 Implementar Testes Estatísticos (#103, Pedro)
@@ -278,7 +278,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Dependências:* #100 (T05), #102 (T07), #104 (T09)
 - *Contexto do que já existe (T01, T02, T04):*
   - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar.
-  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
+  - O runner trabalha em `LAB05_WORKDIR`, definida no `.env` (modelo em `.env.example`; padrão: `Enunciado 5/.work/`), com cache isolado por gerenciador. Ela precisa ficar num disco de verdade e sempre no mesmo disco (senão pnpm/Yarn copiam em vez de criar hard links); **nunca** num `tmpfs` (o `/tmp` do WSL fica na RAM). No Windows, use um caminho curto (ex.: `F:\lab05\work`) por causa do limite de 260 caracteres. Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
 
 #### T12b Executar Coleta Completa (máquina da Luísa) (#108, Luísa)
 - *Objetivo:* Rodar a coleta completa na máquina da Luísa, seguindo o protocolo e o N do T09.
@@ -292,7 +292,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Dependências:* #100 (T05), #102 (T07), #104 (T09)
 - *Contexto do que já existe (T01, T02, T04):*
   - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar.
-  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
+  - O runner trabalha em `LAB05_WORKDIR`, definida no `.env` (modelo em `.env.example`; padrão: `Enunciado 5/.work/`), com cache isolado por gerenciador. Ela precisa ficar num disco de verdade e sempre no mesmo disco (senão pnpm/Yarn copiam em vez de criar hard links); **nunca** num `tmpfs` (o `/tmp` do WSL fica na RAM). No Windows, use um caminho curto (ex.: `F:\lab05\work`) por causa do limite de 260 caracteres. Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
 
 #### T12c Executar Coleta Completa (máquina do Pedro) (#109, Pedro)
 - *Objetivo:* Rodar a coleta completa na máquina do Pedro, seguindo o protocolo e o N do T09.
@@ -306,7 +306,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Dependências:* #100 (T05), #102 (T07), #104 (T09)
 - *Contexto do que já existe (T01, T02, T04):*
   - Passo a passo (Windows, na raiz do `Enunciado 5/`): `uv sync` → `uv run lab05 registry up` → `uv run lab05 registry warm` (uma vez, enche o cache do Verdaccio) → `uv run lab05 collect --machine <nome> --dry-run` (confere a sequência e o nº de instalações) → `uv run lab05 collect --machine <nome> --reps <N do T09>` → `uv run lab05 registry down`. Se parar no meio, rodar o mesmo comando de novo **retoma** sem duplicar.
-  - O runner trabalha em `LAB05_WORKDIR` (padrão: pasta temporária do sistema, `lab05-work`), com cache isolado por gerenciador; ela precisa ficar **no mesmo disco** (senão pnpm/Yarn copiam em vez de criar hard links). Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
+  - O runner trabalha em `LAB05_WORKDIR`, definida no `.env` (modelo em `.env.example`; padrão: `Enunciado 5/.work/`), com cache isolado por gerenciador. Ela precisa ficar num disco de verdade e sempre no mesmo disco (senão pnpm/Yarn copiam em vez de criar hard links); **nunca** num `tmpfs` (o `/tmp` do WSL fica na RAM). No Windows, use um caminho curto (ex.: `F:\lab05\work`) por causa do limite de 260 caracteres. Logs de cada instalação ficam em `LAB05_WORKDIR/logs/<maquina>/`.
 
 #### T13 Validar e Versionar os Dados (#110, Bernardo)
 - *Objetivo:* Juntar as 3 coletas, checar a qualidade e congelar o dataset usado na análise.

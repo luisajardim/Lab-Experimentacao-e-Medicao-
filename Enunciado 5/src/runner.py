@@ -26,7 +26,6 @@ import os
 import shutil
 import subprocess
 import sys
-import tempfile
 import uuid
 from collections.abc import Callable, Iterable
 from dataclasses import dataclass, field
@@ -36,6 +35,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import config
 import metrics
 from config import (
     DATA_RAW,
@@ -204,8 +204,7 @@ class Collector:
     machine: str
     registry: str = DEFAULT_REGISTRY
     projects_dir: Path = PROJECTS_DIR
-    workdir: Path = field(default_factory=lambda: Path(
-        os.environ.get("LAB05_WORKDIR", Path(tempfile.gettempdir()) / "lab05-work")))
+    workdir: Path = field(default_factory=config.workdir)
     commands: dict[str, ManagerSpec] = field(default_factory=lambda: dict(COMMANDS))
     timeout_s: float = DEFAULT_TIMEOUT_S
     build_timeout_s: float = BUILD_TIMEOUT_S

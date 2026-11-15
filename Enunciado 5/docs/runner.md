@@ -20,7 +20,8 @@ aquecimento). Cada linha é gravada com `flush`/`fsync` assim que termina.
 ## O que acontece em cada instalação
 
 1. **Diretório limpo.** O projeto é copiado para `$LAB05_WORKDIR/run/<projeto>--<gerenciador>/`
-   (padrão: `<temp do sistema>/lab05-work`), junto com os arquivos de `lockfiles/<gerenciador>/`.
+   (padrão: `Enunciado 5/.work/`; mude no `.env`, ver `.env.example`), junto com os arquivos de
+   `lockfiles/<gerenciador>/`. Nunca use um `tmpfs` (o `/tmp` do WSL fica na RAM).
    O lockfile só entra nos cenários que o têm.
 2. **Cenário.** O cache do gerenciador é **sempre apagado e reconstruído do zero**, para conter só
    os pacotes deste projeto (senão o `cache_mb` misturaria projetos).
