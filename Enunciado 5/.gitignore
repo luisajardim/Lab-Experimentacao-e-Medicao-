@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Ferramentas
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Streamlit (segredos locais do deploy)
+.streamlit/secrets.toml
+
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários de dados (os CSVs e resultados finais SÃO commitados)
+data/**/*.tmp
+
+# Instalações dos projetos-carga durante a coleta (o runner limpa; nunca versionar)
+projects/**/node_modules/
+projects/**/.yarn/cache/
+projects/**/.yarn/install-state.gz
+projects/**/.pnp.*
+projects/**/dist/
+projects/**/.next/
+
+# Storage do Verdaccio (cache local de pacotes)
+registry/storage/

@@ -1,0 +1,55 @@
+"""Comando único do Lab05 (`uv run lab05`).
+
+Sem subcomando, garante o CSV sintético (enquanto não há coleta real) e abre o dashboard.
+Subcomandos são adicionados pelas tarefas que os implementam:
+
+- `synthetic`: (re)gera o CSV sintético no schema de `runs.csv` (T01, #96).
+- `registry`, `collect`, `specs`, `downloads`, `validate`: T02, T04, T07, T15 e T13.
+
+Flags do dashboard: `--prepare-only` (não abre o Streamlit); o resto vai para o Streamlit.
+
+Issues: #96 (T01).
+"""
+
+from __future__ import annotations
+
+import subprocess
+import sys
+
+import synthetic
+from config import ROOT
+
+APP_PATH = ROOT / "app.py"
+
+SUBCOMMANDS = {
+    "synthetic": synthetic.main,
+}
+
+
+def prepare_pipeline() -> None:
+    """Garante os dados mínimos para o dashboard abrir."""
+    if not synthetic.OUT_PATH.exists():
+        print("[lab05] Gerando o CSV sintético (desenvolvimento antes da coleta)...")
+        synthetic.main()
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Ponto de entrada do script `lab05` definido em `pyproject.toml`."""
+    args = list(sys.argv[1:] if argv is None else argv)
+    if args and args[0] in SUBCOMMANDS:
+        SUBCOMMANDS[args[0]](args[1:])
+        return 0
+    if args and not args[0].startswith("-"):
+        print(f"[lab05] subcomando desconhecido: {args[0]}. Disponíveis: {', '.join(SUBCOMMANDS)}")
+        return 2
+
+    prepare_pipeline()
+    if "--prepare-only" in args:
+        print("[lab05] Dados preparados (--prepare-only).")
+        return 0
+    cmd = [sys.executable, "-m", "streamlit", "run", str(APP_PATH), *args]
+    return subprocess.run(cmd, check=False).returncode
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
