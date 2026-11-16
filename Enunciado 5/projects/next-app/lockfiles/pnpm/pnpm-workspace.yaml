@@ -1,0 +1,9 @@
+# Config do pnpm para o tratamento `pnpm` (o pnpm 12 lê estas opções daqui, não do .npmrc).
+# Registry e store ficam fora daqui: o runner (T04, #99) define os dois por variáveis de ambiente.
+#
+# Os outros gerenciadores sem política de idade (npm, Bun, Yarn Classic) instalam qualquer versão;
+# o pnpm 12 recusa um lockfile com pacotes publicados há menos de 24h (minimumReleaseAge) e o
+# Yarn Berry faz o mesmo (npmMinimalAgeGate, desligado em lockfiles/yarn-berry-*/.yarnrc.yml).
+# Mantido em 0 para que a diferença medida entre os tratamentos seja o gerenciador, e não essa
+# checagem (um install que falha não vira medida).
+minimumReleaseAge: 0
