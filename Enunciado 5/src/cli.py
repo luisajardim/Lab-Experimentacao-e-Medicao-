@@ -6,11 +6,12 @@ Subcomandos são adicionados pelas tarefas que os implementam:
 - `synthetic`: (re)gera o CSV sintético no schema de `runs.csv` (T01, #96).
 - `registry {up,down,status,warm}`: Verdaccio local (T02, #97).
 - `collect --machine <nome> [--pilot] [--dry-run]`: coleta medida (T04, #99).
-- `specs`, `downloads`, `validate`: T07, T15 e T13.
+- `specs --machine <nome>`: specs da máquina + checklist do protocolo (T07, #102).
+- `downloads`, `validate`: T15 e T13.
 
 Flags do dashboard: `--prepare-only` (não abre o Streamlit); o resto vai para o Streamlit.
 
-Issues: #96 (T01), #97 (T02), #99 (T04).
+Issues: #96 (T01), #97 (T02), #99 (T04), #102 (T07).
 """
 
 from __future__ import annotations
@@ -20,6 +21,7 @@ import sys
 
 import registry
 import runner
+import specs
 import synthetic
 from config import ROOT
 
@@ -29,6 +31,7 @@ SUBCOMMANDS = {
     "synthetic": synthetic.main,
     "registry": registry.main,
     "collect": runner.main,
+    "specs": specs.main,
 }
 
 
