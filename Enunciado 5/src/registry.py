@@ -62,10 +62,13 @@ def registry_env(manager: str, registry: str = "local") -> dict[str, str]:
     if manager not in MANAGERS:
         raise ValueError(f"gerenciador inválido: {manager!r} (use {tuple(MANAGERS)})")
     url = registry_url(registry)
-    # npm e pnpm leem npm_config_*; o Bun lê BUN_CONFIG_REGISTRY (e respeita npm_config_registry);
-    # o Yarn Classic lê YARN_REGISTRY e npm_config_registry.
+    # O npm lê npm_config_*; o pnpm 11+ IGNORA npm_config_* e só lê pnpm_config_* (o piloto de
+    # 17/11 caiu nisso: o pnpm foi ao registry público); o Bun lê BUN_CONFIG_REGISTRY (e respeita
+    # npm_config_registry); o Yarn Classic lê YARN_REGISTRY e npm_config_registry.
     env = {"npm_config_registry": url}
-    if manager == "bun":
+    if manager == "pnpm":
+        env["pnpm_config_registry"] = url
+    elif manager == "bun":
         env["BUN_CONFIG_REGISTRY"] = url
     elif manager == "yarn-classic":
         env["YARN_REGISTRY"] = url

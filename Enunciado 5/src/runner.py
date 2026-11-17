@@ -131,9 +131,11 @@ def cache_env(manager: str, cache_dir: Path) -> dict[str, str]:
     if manager == "npm":
         env["npm_config_cache"] = c
     elif manager == "pnpm":
-        env["npm_config_store_dir"] = str(cache_dir / "store")
-        env["npm_config_cache_dir"] = str(cache_dir / "cache")
-        env["npm_config_state_dir"] = str(cache_dir / "state")
+        # pnpm 11+ só lê pnpm_config_* (npm_config_store_dir é ignorado e o store vai para
+        # <raiz do disco>\.pnpm-store, fora do cache isolado).
+        env["pnpm_config_store_dir"] = str(cache_dir / "store")
+        env["pnpm_config_cache_dir"] = str(cache_dir / "cache")
+        env["pnpm_config_state_dir"] = str(cache_dir / "state")
     elif manager == "bun":
         env["BUN_INSTALL_CACHE_DIR"] = c
     elif manager == "yarn-classic":
@@ -160,7 +162,7 @@ def build_env(manager: str, registry: str, cache_dir: Path, phase: str) -> dict[
     env.update({
         "NO_UPDATE_NOTIFIER": "1",
         "npm_config_update_notifier": "false",
-        "LAB05_PHASE": phase,   # prep | measure | build | version (aparece nos logs)
+        "LAB05_PHASE": phase,   # prep | measure | build | version | setup (aparece nos logs)
     })
     env.update(cache_env(manager, cache_dir))
     env.update(_registry_env(manager, registry))
@@ -372,6 +374,75 @@ def append_row(row: dict, out: Path) -> None:
         os.fsync(fh.fileno())
 
 
+# Consultas que mostram onde cada gerenciador VAI guardar o cache e de qual registry VAI baixar,
+# com o ambiente da coleta: (rótulo, argumentos, "cache" | "registry"). O cache só precisa ficar
+# dentro da pasta isolada (o pnpm acrescenta \v11 e o Yarn Classic \v6). O Bun não tem como
+# mostrar o registry; o lockfile dele grava a URL de cada pacote.
+SETUP_PROBES: dict[str, tuple[tuple[str, tuple[str, ...], str], ...]] = {
+    "npm": (("cache", ("config", "get", "cache"), "cache"),
+            ("registry", ("config", "get", "registry"), "registry")),
+    "pnpm": (("store", ("store", "path"), "cache"),
+             ("registry", ("config", "get", "registry"), "registry")),
+    "bun": (("cache", ("pm", "cache"), "cache"),),
+    "yarn-classic": (("cache", ("cache", "dir"), "cache"),
+                     ("registry", ("config", "get", "registry"), "registry")),
+    "yarn-berry-nm": (("cache", ("config", "get", "cacheFolder"), "cache"),
+                      ("registry", ("config", "get", "npmRegistryServer"), "registry")),
+    "yarn-berry-pnp": (("cache", ("config", "get", "cacheFolder"), "cache"),
+                       ("registry", ("config", "get", "npmRegistryServer"), "registry")),
+}
+
+
+def _norm(value: str) -> str:
+    return value.strip().replace("\\", "/").rstrip("/").lower()
+
+
+def setup_problem(manager: str, kind: str, found: str, cache_dir: Path,
+                  registry_url: str) -> str | None:
+    """Mensagem de erro se `found` não for o cache/registry esperado; None se estiver certo."""
+    value = found.strip().splitlines()[-1].strip() if found.strip() else ""
+    if kind == "cache":
+        expected = _norm(str(cache_dir))
+        ok = _norm(value) == expected or _norm(value).startswith(expected + "/")
+        want = str(cache_dir)
+    else:
+        ok = _norm(value) == _norm(registry_url)
+        want = registry_url
+    return None if ok else f"{manager} {kind}: esperado {want}, encontrado {value or '?'}"
+
+
+def check_setup(col: Collector, project: str, managers: Iterable[str]) -> None:
+    """Aborta se algum gerenciador não for usar o cache isolado ou o registry escolhido.
+
+    Pega variáveis de ambiente que a versão instalada ignora em silêncio: no piloto (17/11) o
+    pnpm 12 ignorou npm_config_store_dir e npm_config_registry, então o store ficou fora do
+    cache isolado (nenhum "a frio" foi a frio) e os pacotes vieram do registry público.
+    """
+    import registry as registry_mod  # T02 (#97)
+
+    url = registry_mod.registry_url(col.registry)
+    wrong = []
+    for manager in managers:
+        probes = SETUP_PROBES.get(manager, ())
+        if not probes or not isinstance(col.commands[manager].program, str):
+            continue   # comandos falsos dos testes não respondem às consultas
+        workdir = col.fresh_project(project, manager, with_lockfile=False)
+        cache = col.cache_dir(manager)
+        env = build_env(manager, col.registry, cache, "setup")
+        argv = col.commands[manager].argv()
+        for label, args, kind in probes:
+            code, out = col._run_plain(argv + list(args), workdir, env, 60)
+            problem = (f"{manager} {label}: consulta falhou (exit {code})" if code != 0
+                       else setup_problem(manager, kind, out, cache, url))
+            if problem:
+                wrong.append(problem)
+        metrics.rmtree_robust(workdir)
+    if wrong:
+        raise SystemExit("[lab05] cache/registry fora do lugar: " + "; ".join(wrong) + ". "
+                         "Confira cache_env (runner.py) e registry_env (registry.py) para a "
+                         "versão instalada do gerenciador.")
+
+
 def version_matches(found: str, expected: str) -> bool:
     """`found` é a versão `expected` ou uma versão dentro dela (ex.: 1.22.22 em 1.22)."""
     return found == expected or found.startswith(expected + ".")
@@ -424,6 +495,7 @@ def collect(machine: str, *, projects: Iterable[str] = tuple(PROJECTS),
     projects = tuple(projects)
     if verify_versions:
         check_versions(col, projects[0], managers)
+        check_setup(col, projects[0], managers)
 
     seq = build_sequence(machine, projects, scenarios, managers, reps, warmup, seed)
     done = done_keys(out)

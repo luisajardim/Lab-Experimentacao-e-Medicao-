@@ -65,7 +65,7 @@ Cada tratamento usa `$LAB05_WORKDIR/cache/<gerenciador>/`, definido **só por va
 | Tratamento | Variáveis |
 |---|---|
 | npm | `npm_config_cache` |
-| pnpm | `npm_config_store_dir` (store), `npm_config_cache_dir` (metadados), `npm_config_state_dir` |
+| pnpm | `pnpm_config_store_dir` (store), `pnpm_config_cache_dir` (metadados), `pnpm_config_state_dir` (o pnpm 11+ **ignora** `npm_config_*`) |
 | Bun | `BUN_INSTALL_CACHE_DIR` |
 | Yarn Classic | `YARN_CACHE_FOLDER` |
 | Yarn Berry | `YARN_ENABLE_GLOBAL_CACHE=true`, `YARN_GLOBAL_FOLDER` (o cache fica em `<global>/cache`), `YARN_CACHE_FOLDER` |
@@ -120,3 +120,17 @@ um `.yarnrc.yml` em **qualquer pasta acima** do projeto (ou na home). Um arquivo
 transformaria o tratamento `yarn-classic` em Berry sem aviso, com as linhas rotuladas errado
 (conferido em 14/11: numa pasta isolada responde 1.22.22; abaixo de um `.yarnrc.yml` com
 `yarnPath`, responde 4.18.1). `--skip-version-check` desliga a checagem, só para depurar.
+
+## Checagem de cache e registry antes da coleta
+
+Logo depois das versões, `collect` pergunta a cada gerenciador, **com o ambiente da coleta**,
+onde ele vai guardar o cache e de qual registry vai baixar (`SETUP_PROBES` em `src/runner.py`:
+`npm config get cache`, `pnpm store path`, `yarn cache dir`, `yarn config get cacheFolder`,
+`bun pm cache` e os `config get registry`). Se o cache não estiver dentro de
+`$LAB05_WORKDIR/cache/<gerenciador>/` ou o registry não for o escolhido, a coleta **aborta**.
+
+Motivo: no piloto de 17/11 o pnpm 12 ignorou em silêncio `npm_config_store_dir` e
+`npm_config_registry`. O store foi para `F:\.pnpm-store` (fora do cache isolado e nunca apagado,
+então nenhum "a frio" do pnpm foi a frio) e as instalações sem lockfile resolveram no registry
+público. Essas linhas foram descartadas e recoletadas com `pnpm_config_*`. A mesma flag
+`--skip-version-check` desliga esta checagem.

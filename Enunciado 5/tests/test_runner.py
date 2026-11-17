@@ -220,3 +220,32 @@ def test_check_versions_flags_node(env, monkeypatch):
     monkeypatch.setitem(runner.MANAGERS, "npm", {**runner.MANAGERS["npm"], "expected_version": "9"})
     with pytest.raises(SystemExit, match="node: esperado"):
         runner.check_versions(col, PROJECT, ("npm",))
+
+
+# ---------------------------------------------------------------- cache/registry (piloto 17/11)
+
+def test_pnpm_usa_variaveis_pnpm_config(tmp_path):
+    # pnpm 11+ ignora npm_config_*: sem isto o store foi para F:\.pnpm-store no piloto.
+    env = runner.cache_env("pnpm", tmp_path)
+    assert env["pnpm_config_store_dir"] == str(tmp_path / "store")
+    import registry
+    assert registry.registry_env("pnpm")["pnpm_config_registry"] == registry.LOCAL_URL
+
+
+def test_setup_problem_aceita_subpasta_do_cache_e_barra_final():
+    cache = Path("F:/lab05/work/cache/pnpm")
+    url = "http://localhost:4873/"
+    assert runner.setup_problem("pnpm", "cache", "F:\\lab05\\work\\cache\\pnpm\\store\\v11\n",
+                                cache, url) is None
+    assert runner.setup_problem("yarn-berry-nm", "registry", "http://localhost:4873", cache,
+                                url) is None
+
+
+def test_setup_problem_pega_store_e_registry_errados():
+    cache = Path("F:/lab05/work/cache/pnpm")
+    url = "http://localhost:4873/"
+    assert "esperado" in runner.setup_problem("pnpm", "cache", "F:\\.pnpm-store\\v11", cache, url)
+    assert "npmjs" in runner.setup_problem("pnpm", "registry", "https://registry.npmjs.org/",
+                                           cache, url)
+    # Prefixo parecido não conta como subpasta.
+    assert runner.setup_problem("npm", "cache", "F:/lab05/work/cache/pnpm-x", cache, url)

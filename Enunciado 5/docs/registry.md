@@ -32,7 +32,8 @@ Só por **variáveis de ambiente** (`registry_env(manager, registry)`). Nada é 
 
 | Gerenciador | Variáveis |
 |---|---|
-| npm, pnpm | `npm_config_registry=http://localhost:4873/` |
+| npm | `npm_config_registry=http://localhost:4873/` |
+| pnpm | `pnpm_config_registry` + `npm_config_registry` (o pnpm 11+ **ignora** `npm_config_*`) |
 | Bun | `BUN_CONFIG_REGISTRY` + `npm_config_registry` |
 | Yarn Classic | `YARN_REGISTRY` + `npm_config_registry` |
 | Yarn Berry (nm e PnP) | `YARN_NPM_REGISTRY_SERVER=http://localhost:4873` + `YARN_UNSAFE_HTTP_WHITELIST=localhost` (o Berry recusa http sem isso) |
