@@ -19,6 +19,7 @@ from __future__ import annotations
 import subprocess
 import sys
 
+import power
 import registry
 import runner
 import specs
@@ -32,6 +33,7 @@ SUBCOMMANDS = {
     "registry": registry.main,
     "collect": runner.main,
     "specs": specs.main,
+    "power": power.main,
 }
 
 
