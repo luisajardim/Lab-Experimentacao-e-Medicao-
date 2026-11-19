@@ -13,8 +13,11 @@ data/raw/synthetic/runs.csv     # CSV SINTÉTICO, números inventados (T01) — 
 data/processed/runs_all.csv     # dataset final validado (T13, #110)
 ```
 
-`schema.load_runs()` junta todos os `data/raw/*/runs.csv`. Por padrão, ele **ignora o
-sintético e as rodadas de aquecimento**; use `include_synthetic=True` enquanto não houver coleta.
+`schema.load_runs()` junta os `data/raw/<maquina>/runs.csv` da coleta completa. Por padrão, ele
+**ignora o sintético (`synthetic/`), o piloto (`pilot/`) e as rodadas de aquecimento**. O piloto
+fica de fora porque roda numa das máquinas da coleta, com outros cenários e outro N: misturado, ele
+duplicaria repetições do mesmo bloco. Para desenvolver antes da coleta completa, use
+`include_pilot=True` ou `include_synthetic=True`.
 
 ## Colunas
 

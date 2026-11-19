@@ -123,18 +123,23 @@ def write_runs(df: pd.DataFrame, path: Path) -> Path:
     return path
 
 
-def load_runs(root: Path = DATA_RAW, include_synthetic: bool = False,
-              include_warmup: bool = False) -> pd.DataFrame:
-    """Junta todos os `data/raw/<maquina>/runs.csv`.
+SYNTHETIC_DIR = "synthetic"   # números inventados, só para desenvolver (T01)
+PILOT_DIR = "pilot"           # coleta piloto (T05): outros cenários e N, não entra na análise
 
-    Por padrão ignora o CSV sintético e as rodadas de aquecimento. Use
-    `include_synthetic=True` para desenvolver antes da coleta real.
+
+def load_runs(root: Path = DATA_RAW, include_synthetic: bool = False,
+              include_pilot: bool = False, include_warmup: bool = False) -> pd.DataFrame:
+    """Junta os `data/raw/<maquina>/runs.csv` da coleta completa.
+
+    Por padrão ignora o CSV sintético (`synthetic/`), o piloto (`pilot/`) e as rodadas de
+    aquecimento: o piloto roda na mesma máquina de um dos blocos, com outros cenários e outro N, e
+    misturá-lo à coleta duplicaria repetições. Use `include_synthetic=True` ou `include_pilot=True`
+    para desenvolver antes da coleta completa.
     """
-    frames = []
-    for path in sorted(root.glob(f"*/{RUNS_FILENAME}")):
-        if path.parent.name == "synthetic" and not include_synthetic:
-            continue
-        frames.append(read_runs(path))
+    skip = {name for name, keep in ((SYNTHETIC_DIR, include_synthetic),
+                                    (PILOT_DIR, include_pilot)) if not keep}
+    frames = [read_runs(path) for path in sorted(root.glob(f"*/{RUNS_FILENAME}"))
+              if path.parent.name not in skip]
     if not frames:
         return empty_frame()
     df = validate(pd.concat(frames, ignore_index=True))

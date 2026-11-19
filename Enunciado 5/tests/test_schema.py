@@ -66,6 +66,19 @@ def test_roundtrip_and_load_runs(df, tmp_path):
     assert len(with_synth) == 2 * len(df)
 
 
+def test_load_runs_ignora_piloto_por_padrao(df, tmp_path):
+    schema.write_runs(df, tmp_path / "maq1" / "runs.csv")
+    schema.write_runs(df.assign(run_id=df["run_id"] + "-p"), tmp_path / "pilot" / "runs.csv")
+    schema.write_runs(df.assign(run_id=df["run_id"] + "-s"), tmp_path / "synthetic" / "runs.csv")
+
+    assert len(schema.load_runs(tmp_path, include_warmup=True)) == len(df)
+    with_pilot = schema.load_runs(tmp_path, include_pilot=True, include_warmup=True)
+    assert len(with_pilot) == 2 * len(df)
+    everything = schema.load_runs(tmp_path, include_synthetic=True, include_pilot=True,
+                                  include_warmup=True)
+    assert len(everything) == 3 * len(df)
+
+
 def test_load_runs_empty_dir_returns_typed_empty_frame(tmp_path):
     empty = schema.load_runs(tmp_path)
     assert empty.empty and tuple(empty.columns) == schema.COLUMN_NAMES

@@ -221,8 +221,8 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Implementação:* `src/stats.py`, `tests/test_stats.py`.
 - *Dependências:* #96 (T01)
 - *Contexto do que já existe (T01, T02, T04):*
-  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
-  - Antes da coleta, use `load_runs(include_synthetic=True)` (CSV sintético em `data/raw/synthetic/`, `uv run lab05 synthetic`). Os números são **inventados**: servem para programar, nunca para resultado. O sintético ainda usa a definição antiga de disco (ver abaixo), então não tire conclusão de disco dele.
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`), o piloto e o sintético. Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Antes da coleta completa, use `load_runs(include_pilot=True)` (dados reais do piloto, só cold e warm-cache) ou `load_runs(include_synthetic=True)` (CSV sintético em `data/raw/synthetic/`, `uv run lab05 synthetic`). Os números são **inventados**: servem para programar, nunca para resultado. O sintético ainda usa a definição antiga de disco (ver abaixo), então não tire conclusão de disco dele.
   - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
   - Instalações que falham não são apagadas: `exit_code ≠ 0` (`124` = timeout) ou `build_ok = false`. Tempo de instalação só faz sentido para linhas válidas; a taxa de `build_ok` é resultado à parte (compatibilidade).
 
@@ -238,7 +238,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Dependências:* #103 (T08), #100 (T05)
 - *Contexto do que já existe (T01, T02, T04):*
   - O piloto chega em `data/raw/pilot/runs.csv` (machine = `bernardo`, cenários cold e warm-cache, 5 repetições), previsto para ~17/11. Até lá, use o sintético.
-  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`), o piloto e o sintético. Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
   - Para estimar o tempo total da coleta: `uv run lab05 collect --machine x --reps <N> --dry-run` dá o nº de instalações; a duração média de cada uma sai do piloto (`wall_s` + build + preparação; o log mostra o andamento).
 
 #### T10 Construir Dashboard Base (#105, Pedro)
@@ -253,8 +253,8 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Implementação:* `app.py`, `src/figures.py`.
 - *Dependências:* #96 (T01)
 - *Contexto do que já existe (T01, T02, T04):*
-  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
-  - Antes da coleta, use `load_runs(include_synthetic=True)` (CSV sintético em `data/raw/synthetic/`, `uv run lab05 synthetic`). Os números são **inventados**: servem para programar, nunca para resultado. O sintético ainda usa a definição antiga de disco (ver abaixo), então não tire conclusão de disco dele.
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`), o piloto e o sintético. Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Antes da coleta completa, use `load_runs(include_pilot=True)` (dados reais do piloto, só cold e warm-cache) ou `load_runs(include_synthetic=True)` (CSV sintético em `data/raw/synthetic/`, `uv run lab05 synthetic`). Os números são **inventados**: servem para programar, nunca para resultado. O sintético ainda usa a definição antiga de disco (ver abaixo), então não tire conclusão de disco dele.
   - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
   - Já existe um `app.py` provisório (resumo dos dados): substitua pelas 4 abas. Use `config.PALETTE` para as cores.
 
@@ -342,7 +342,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Implementação:* `app.py` (aba), `src/figures.py`.
 - *Dependências:* #103 (T08), #105 (T10)
 - *Contexto do que já existe (T01, T02, T04):*
-  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`), o piloto e o sintético. Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
   - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
   - Instalações que falham não são apagadas: `exit_code ≠ 0` (`124` = timeout) ou `build_ok = false`. Tempo de instalação só faz sentido para linhas válidas; a taxa de `build_ok` é resultado à parte (compatibilidade).
   - No PnP não existe `node_modules`: o disco vem de `.pnp.*` e `.yarn/*` (já incluídos em `disk_mb`).
@@ -395,7 +395,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Implementação:* `app.py` (aba), `src/figures.py`.
 - *Dependências:* #103 (T08), #105 (T10)
 - *Contexto do que já existe (T01, T02, T04):*
-  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`). Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
+  - Dados: ler sempre com `schema.load_runs()` (`src/schema.py`), que junta `data/raw/<maquina>/runs.csv`, valida e já descarta as rodadas de aquecimento (`warmup`), o piloto e o sintético. Formato das colunas em `docs/schema.md`. Constantes (tratamentos, `CONTROL = "npm"`, `YARN_VARIANTS`, cenários, projetos, `PALETTE`) em `src/config.py`.
   - Disco: `disk_mb` = artefatos que a instalação criou no projeto (`node_modules`, `.pnp.*`, `.yarn/*`); `cache_mb` = cache/store **sem** os arquivos já contados no projeto (hard links do pnpm/Yarn contados uma vez). Para comparar espaço ocupado, use **`disk_mb + cache_mb`** (pegada total). Ver `docs/schema.md` e `docs/runner.md`.
   - Instalações que falham não são apagadas: `exit_code ≠ 0` (`124` = timeout) ou `build_ok = false`. Tempo de instalação só faz sentido para linhas válidas; a taxa de `build_ok` é resultado à parte (compatibilidade).
 

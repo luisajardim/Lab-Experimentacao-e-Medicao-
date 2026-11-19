@@ -1,8 +1,9 @@
 """Dashboard Streamlit do Lab05 — Experimento em Software Real (npm × pnpm × Yarn × Bun).
 
 Quatro abas: Todos × npm · Yarn × Yarn · Adoção × desempenho · Impacto (+ seção de método e links).
-Lê os dados reais em `data/raw/*/runs.csv` via `schema.load_runs()`; enquanto não há coleta
-completa (ou real), utiliza os dados disponíveis (piloto ou CSV sintético) com aviso explícito.
+Lê a coleta completa em `data/raw/<maquina>/runs.csv` via `schema.load_runs()`, que deixa de fora
+o piloto e o sintético. Enquanto ela não existe, mostra o piloto (ou, sem piloto, o CSV sintético)
+com aviso explícito.
 
 Issues: #105 (T10), #111 (T14), #113 (T16), #115 (T18), #117 (T20).
 """
@@ -45,13 +46,16 @@ TABS = (
 
 @st.cache_data
 def get_runs() -> tuple[pd.DataFrame, str]:
-    """Carrega os dados reais disponíveis; se vazio, cai para o CSV sintético."""
+    """Coleta completa; sem ela, o piloto; sem piloto, o CSV sintético."""
     df = load_runs()
     if not df.empty:
         machines = sorted(df["machine"].dropna().unique())
         if len(machines) < 3 or set(df["scenario"].unique()) < set(SCENARIOS):
             return df, "partial"
         return df, "full"
+    pilot = load_runs(include_pilot=True)
+    if not pilot.empty:
+        return pilot, "pilot"
     return load_runs(include_synthetic=True), "synthetic"
 
 
@@ -73,11 +77,12 @@ def render_header(df: pd.DataFrame, source_kind: str) -> None:
             "**Modo sintético:** Ainda não há coleta real versionada; exibindo `data/raw/synthetic/runs.csv` "
             "(números inventados apenas para desenvolvimento da interface e dos testes)."
         )
-    elif source_kind == "partial":
+    elif source_kind in ("partial", "pilot"):
         machines = ", ".join(sorted(df["machine"].unique()))
         scenarios = ", ".join(sorted(df["scenario"].unique()))
+        label = "Dados do piloto" if source_kind == "pilot" else "Coleta parcial"
         st.info(
-            f"**Dados parciais (piloto):** Exibindo {len(df)} instalações medidas "
+            f"**{label}:** Exibindo {len(df)} instalações medidas "
             f"(máquina(s): `{machines}`; cenário(s): `{scenarios}`). "
             "A análise definitiva entra após a coleta completa nas 3 máquinas (T12a/b/c)."
         )
