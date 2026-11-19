@@ -468,6 +468,7 @@ que não seria verdade numa escala intervalar.
 | Cache residual de uma medição contaminando a seguinte | O cache de cada gerenciador é apagado e reconstruído a cada instalação |
 | Versões diferentes entre máquinas | Ambiente portátil com versões fixadas; `collect` aborta se alguma divergir |
 | `yarn-classic` virar Berry sem aviso (o Yarn 1.22 obedece a `.yarnrc.yml` de pastas acima) | Checagem de versão antes da coleta; proibição de `.yarnrc.yml` acima do projeto |
+| Gerenciador ignorar em silêncio a configuração de cache ou de registry (o pnpm 12 ignorou `npm_config_*` no piloto) | Antes de coletar, o runner pergunta a cada gerenciador onde fica o cache e qual é o registry, e aborta se divergir; as linhas afetadas do piloto foram recoletadas |
 | Windows Update ou Defender agindo no meio da coleta | Update pausado; Defender **fixo no padrão** (vira limitação declarada, não fator) |
 
 ### 10.3 Construto
@@ -542,13 +543,16 @@ Documentos internos: [`schema.md`](schema.md) (formato dos dados), [`runner.md`]
 
 ---
 
-## 14. Pendências antes de fechar a S01
+## 14. Pendências da S01 (situação em 19/11)
 
-1. **Revisão do trio** (critério de aceitação desta tarefa).
-2. **Pedro:** confirmar a §7 (testes, efeito e poder) e devolver o **N de repetições** depois do
-   piloto (T09).
-3. **Bernardo:** confirmar a §5.5, item 1 (`--no-audit --no-fund` no npm) e reportar o que quebrou
-   no piloto (T05), para entrar nas ameaças internas.
-4. **Decisão aberta:** medir o **npm 11.19.1** (o que vem com o Node 24 LTS) ou o **npm 12.2.2**
-   (o mais recente, e o que os fabricantes usam nos benchmarks)? A proposta atual é manter o
-   11.19.1, por ser o que o desenvolvedor tem sem fazer nada, declarando a ressalva na RQ3.
+1. **Revisão do trio** (critério de aceitação desta tarefa): em aberto até a entrega.
+2. **Pedro, §7 e N:** resolvido. Testes implementados em `src/stats.py` (T08) e
+   **N = 10 repetições por máquina** pela análise de poder sobre o piloto (T09, `docs/poder.md`).
+3. **Bernardo, §5.5 item 1 e piloto:** resolvido. O runner roda o npm com `--no-audit --no-fund`
+   em todos os cenários (`src/runner.py`). O piloto (T05, 17/11, 182 instalações, nenhuma falha de
+   instalação nem de build) revelou um problema de instrumentação: o pnpm 12 ignorava em silêncio as
+   variáveis `npm_config_*`, então usou um store fora do cache isolado e o registry público. As 30
+   linhas do pnpm foram descartadas e recoletadas depois da correção, e a coleta agora aborta se
+   algum gerenciador não usar o cache e o registry esperados (§10.2).
+4. **npm 11.19.1 × 12.2.2:** adotado o **11.19.1** (o que vem com o Node 24 LTS), que é a versão
+   fixada no ambiente portátil e usada no piloto. A ressalva entra na RQ3.
