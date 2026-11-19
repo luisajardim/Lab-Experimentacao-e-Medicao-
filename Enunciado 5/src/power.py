@@ -149,11 +149,19 @@ def choose_n(table: pd.DataFrame, speedup: float = TARGET_SPEEDUP,
     return int(ok.min()) if len(ok) else None
 
 
-def seconds_per_install(path: Path = PILOT_CSV) -> float:
-    """Duração média de uma instalação no piloto, de início a início (inclui preparação e build)."""
+MAX_GAP_S = 600.0   # intervalo maior que isso é pausa da coleta, não instalação
+
+
+def seconds_per_install(path: Path = PILOT_CSV, max_gap_s: float = MAX_GAP_S) -> float:
+    """Duração média de uma instalação no piloto, de início a início (inclui preparação e build).
+
+    Intervalos acima de `max_gap_s` são pausas e ficam de fora: no piloto, as 30 linhas do pnpm
+    foram recoletadas 19 min depois do fim (correção c34174d), e contar essa pausa inflava a média
+    de ~24 s para ~30 s por instalação.
+    """
     df = read_runs(path)
-    ts = pd.to_datetime(df["timestamp"]).sort_values()
-    return float((ts.iloc[-1] - ts.iloc[0]).total_seconds() / (len(ts) - 1))
+    gaps = pd.to_datetime(df["timestamp"]).sort_values().diff().dt.total_seconds().dropna()
+    return float(gaps[gaps <= max_gap_s].mean())
 
 
 def collection_hours(reps: int, seconds: float, warmup: int = WARMUP) -> float:

@@ -1,6 +1,7 @@
 """Testes da análise de poder (T09, #104)."""
 
 import numpy as np
+import pandas as pd
 import pytest
 
 import power
@@ -44,3 +45,14 @@ def test_pilot_duration_and_collection_hours():
     assert 5.0 < sec < 120.0
     hrs = power.collection_hours(10, sec)
     assert hrs == pytest.approx((6 * 4 * 3 * 10 + power.WARMUP) * sec / 3600)
+
+
+def test_seconds_per_install_ignora_pausas(tmp_path):
+    df = pd.read_csv(power.PILOT_CSV)
+    base = pd.Timestamp("2026-11-17T10:00:00-03:00")
+    offsets = [0, 20, 40, 40 + 3600, 40 + 3620]   # uma pausa de 1 h no meio
+    small = df.head(5).copy()
+    small["timestamp"] = [(base + pd.Timedelta(seconds=o)).isoformat() for o in offsets]
+    out = tmp_path / "runs.csv"
+    small.to_csv(out, index=False)
+    assert power.seconds_per_install(out) == pytest.approx(20.0)

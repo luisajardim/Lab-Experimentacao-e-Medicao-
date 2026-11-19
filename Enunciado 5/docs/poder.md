@@ -1,6 +1,6 @@
 # Análise de Poder e Escolha de $N$ (T09, #104)
 
-> **Decisão:** **$N = 10$ repetições por máquina** (total de **30 blocos pareados** somando Bernardo, Luísa e Pedro), mantendo todos os **6 tratamentos × 4 cenários × 3 projetos** (720 instalações medidas + 2 aquecimentos = **722 instalações**, ~**6,0 horas** por máquina).
+> **Decisão:** **$N = 10$ repetições por máquina** (total de **30 blocos pareados** somando Bernardo, Luísa e Pedro), mantendo todos os **6 tratamentos × 4 cenários × 3 projetos** (720 instalações medidas + 2 aquecimentos = **722 instalações**, ~**4,8 horas** por máquina).
 
 ---
 
@@ -34,19 +34,19 @@ No piloto, o `npm` em `express-api cold` apresentou variância extrema entre rep
 
 ## 3. Viabilidade de Tempo até 23/11
 
-No piloto (182 instalações em `1,51 h`), a duração média completa — incluindo preparação do cenário, limpeza de cache e `build` — foi de **30,1 s por instalação**:
+No piloto (182 instalações em ~1,2 h de coleta efetiva, sem contar a pausa de 19 min antes da recoleta do pnpm), a duração média completa — incluindo preparação do cenário, limpeza de cache e `build` — foi de **24,0 s por instalação**:
 
 | $N$ (por máquina) | Pares totais (3 máquinas) | Instalações / máquina (+2 aquec.) | Tempo estimado / máquina | Cabe até 23/11? |
 |---|---|---|---|---|
-| 5 | 15 | 362 | 3,0 h | Sim (mas poder < 65% em `warm-cache`) |
-| 8 | 24 | 578 | 4,8 h | Sim |
-| **10 (escolhido)** | **30** | **722** | **6,0 h** | **Sim (sem cortar cenários/projetos)** |
-| 12 | 36 | 866 | 7,2 h | Apertado |
-| 15 | 45 | 1.082 | 9,0 h | Arriscado para rodar em 1 dia |
+| 5 | 15 | 362 | 2,4 h | Sim (mas poder < 65% em `warm-cache`) |
+| 8 | 24 | 578 | 3,9 h | Sim |
+| **10 (escolhido)** | **30** | **722** | **4,8 h** | **Sim (sem cortar cenários/projetos)** |
+| 12 | 36 | 866 | 5,8 h | Apertado |
+| 15 | 45 | 1.082 | 7,2 h | Arriscado para rodar em 1 dia |
 
 ### Conclusão da escolha
 Adotar **$N = 10$** garante:
 - **Poder ≥ 90%** para speedup 1,2× na maior parte das células (e **92% a 100%** para speedup 1,3× em todas as células estáveis);
 - **30 blocos pareados** no total (tamanho amostral robusto para o Wilcoxon pareado e IC bootstrap);
-- **Viabilidade de execução (~6,0 h por máquina)** até o prazo interno de **23/11**, mantendo o desenho completo (4 cenários × 3 projetos) sem necessidade de cortes.
+- **Viabilidade de execução (~4,8 h por máquina)** até o prazo interno de **23/11**, mantendo o desenho completo (4 cenários × 3 projetos) sem necessidade de cortes.
 
