@@ -27,7 +27,7 @@
 | Sprint | Bernardo: coleta e infra | Luísa: método, caminho 2 e escrita | Pedro: análise e dashboard |
 |---|---|---|---|
 | **S01** (19/11) | T01 scaffold + **schema dos dados** → T02 Verdaccio → T04 runner → T05 **piloto** | T03 projetos-carga + lockfiles → T06 proposta (3 critérios, GQM, hipóteses, 7 categorias) · T07 protocolo + specs | T08 testes estatísticos → T09 nº de repetições (poder) · T10 dashboard base |
-| **S02** (26/11) | T11 deploy (clone + subtree) · T12a coleta completa → T13 validação e versionamento · T14 aba Yarn × Yarn | T12b coleta completa · T15 downloads do npm → T16 aba Adoção × desempenho · T17 ameaças + esqueleto do artigo | T12c coleta completa · T18 aba Todos × npm |
+| **S02** (26/11) | T11 deploy (clone + subtree) · T12a coleta completa → T13 validação e versionamento · T14 aba Yarn × Yarn · T17 ameaças + esqueleto do artigo | T12b coleta completa · T15 downloads do npm → T16 aba Adoção × desempenho | T12c coleta completa · T18 aba Todos × npm |
 | **S03 + Final** (03/12) | T19 checagem no registry real · T22a artigo (instrumentação, reaproveitamento) · T23a apresentação | T21 7 categorias revisadas + conclusões · T22b artigo (intro, método, ameaças, conclusão) · T23b apresentação | T20 impacto + aba Impacto · T22c artigo (resultados, impacto) · T23c apresentação |
 
 > Regras: em cada sprint, cada integrante é Assignee de ≥ 1 Issue com código commitado, e **todo commit
@@ -369,7 +369,7 @@ As cadeias são **quase** ponta a ponta. Os bloqueios reais são poucos e têm m
 - *Implementação:* `app.py` (aba), `src/figures.py`.
 - *Dependências:* #105 (T10), #112 (T15)
 
-#### T17 Escrever Ameaças à Validade + Esqueleto do Artigo (#114, Luísa)
+#### T17 Escrever Ameaças à Validade + Esqueleto do Artigo (#114, Bernardo)
 - *Objetivo:* Escrever as ameaças dos 4 tipos e montar o esqueleto do artigo SBC com a seção de Método.
 - *Regras de negócio / restrições:*
   - Ameaças de conclusão, interna, construto e externa, cada uma com mitigação (ex.: Defender fixo, Verdaccio × registry real, só Windows, lockfiles diferentes, Goodhart no tempo de instalação).
@@ -555,7 +555,7 @@ Todo commit deve citar o número da Issue (ex.: `feat(runner): métricas de disc
 | T14 Construir Análise + Aba Yarn × Yarn | #111 | Bernardo (alvimdev) | SPRINT 2 (E5) |
 | T15 Coletar Downloads do npm | #112 | Luísa (luisajardim) | SPRINT 2 (E5) |
 | T16 Construir Aba Adoção × Desempenho | #113 | Luísa (luisajardim) | SPRINT 2 (E5) |
-| T17 Escrever Ameaças à Validade + Esqueleto do Artigo | #114 | Luísa (luisajardim) | SPRINT 2 (E5) |
+| T17 Escrever Ameaças à Validade + Esqueleto do Artigo | #114 | Bernardo (alvimdev) | SPRINT 2 (E5) |
 | T18 Construir Análise + Aba Todos × npm | #115 | Pedro (pedroseabra27) | SPRINT 2 (E5) |
 | T19 Executar Checagem no Registry Real | #116 | Bernardo (alvimdev) | SPRINT 3 / FINAL (E5) |
 | T20 Estimar Impacto + Aba Impacto | #117 | Pedro (pedroseabra27) | SPRINT 3 / FINAL (E5) |

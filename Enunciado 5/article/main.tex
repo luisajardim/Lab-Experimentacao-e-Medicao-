@@ -1,0 +1,241 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{sbc-template}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+\sloppy
+
+% Marca o que ainda falta escrever: tem de sumir antes da entrega final.
+\newcommand{\pendente}[2]{\textcolor{red!70!black}{\textbf{[#1]} #2}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\title{Quanto Custa Instalar? Um Experimento com\\
+  Seis Gerenciadores de Pacotes Node no Windows 11}
+
+\author{Bernardo S. Alvim\inst{1}, Luísa O. Jardim\inst{1}, Pedro A. S. Seabra\inst{1}}
+
+\address{Engenharia de Software\\
+  Pontifícia Universidade Católica de Minas Gerais (PUC Minas)\\
+  Belo Horizonte -- MG -- Brasil}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  \pendente{Luísa, T22b}{Abstract, depois dos resultados.}
+\end{abstract}
+
+\begin{resumo}
+  \pendente{Luísa, T22b}{Resumo, depois dos resultados.}
+\end{resumo}
+
+\section{Introdução}
+\label{sec:introducao}
+
+\pendente{Luísa, T22b}{Contexto, os três critérios do software (real, em operação e de alto
+impacto, com fontes e datas), as perguntas de pesquisa e as contribuições. Base:
+\texttt{docs/proposta.md}, §§2--3.}
+
+\section{Método}
+\label{sec:metodo}
+
+\subsection{Objetivo e perguntas de pesquisa}
+
+O estudo combina um experimento controlado com a análise de dados de operação. Seguindo o
+GQM~\cite{basili1994gqm}, o objetivo é \textbf{analisar} os gerenciadores de pacotes do ecossistema
+Node \textbf{com o propósito de} caracterizá-los e compará-los \textbf{com respeito a} tempo de
+instalação, consumo de CPU e memória, pegada em disco e validade da instalação, \textbf{do ponto de
+vista de} quem desenvolve e de quem mantém pipelines de integração contínua (CI), \textbf{no
+contexto de} três projetos Node, quatro cenários de instalação e três máquinas Windows~11, com um
+registry npm local isolando a rede.
+
+As perguntas de pesquisa são:
+
+\begin{itemize}
+  \item \textbf{RQ1 (Todos $\times$ npm):} cada gerenciador é mais rápido que o npm, o controle, em
+    cada cenário?
+  \item \textbf{RQ2 (Yarn $\times$ Yarn):} as três variantes do Yarn diferem entre si?
+  \item \textbf{RQ3 (Promessa $\times$ realidade):} o ganho medido confirma o que pnpm e Bun
+    anunciam?
+  \item \textbf{RQ4 (Adoção $\times$ desempenho):} o gerenciador mais rápido é o mais adotado?
+\end{itemize}
+
+\subsection{Desenho experimental}
+
+O experimento tem desenho fatorial $6 \times 4 \times 3$ (gerenciador, cenário e projeto) em blocos,
+com cada máquina sendo um bloco. São 72 células por máquina e 10 repetições por célula, número
+definido por uma análise de poder sobre uma coleta piloto. Cada máquina executa, portanto, 720
+instalações medidas e 2 de aquecimento, descartadas na análise. A ordem das células é sorteada a
+cada repetição, com semente derivada do nome da máquina. A Tabela~\ref{tab:variaveis} resume as
+variáveis.
+
+\begin{table}[ht]
+\centering
+\caption{Variáveis do experimento}
+\label{tab:variaveis}
+\small
+\begin{tabularx}{\textwidth}{@{}p{3cm}Y@{}}
+\toprule
+\textbf{Papel} & \textbf{Variáveis} \\
+\midrule
+Tratamento & npm 11.19.1 (controle), pnpm 12.21.0, Bun 1.4.4, Yarn Classic 1.22.22, Yarn Berry
+4.18.1 com \textit{node-modules} e Yarn Berry 4.18.1 com PnP \\
+Fatores & cenário (4) e projeto-carga (3) \\
+Bloco & máquina (3) \\
+Dependentes & tempo de relógio (principal), CPU, pico de RAM, disco do projeto, cache, número de
+arquivos e validade do build \\
+Controladas & Node 24.22.3, registry local, mesmo \texttt{package.json} nos seis tratamentos,
+Defender no padrão, perfil de alto desempenho, Windows Update pausado e máquina na tomada \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Os cenários (Tabela~\ref{tab:cenarios}) definem o que existe antes da instalação medida e seguem o
+esquema da página de benchmarks do pnpm, o que permite confrontar os resultados com os números
+divulgados.
+
+\begin{table}[ht]
+\centering
+\caption{Cenários de instalação}
+\label{tab:cenarios}
+\small
+\begin{tabularx}{\textwidth}{@{}lcccY@{}}
+\toprule
+\textbf{Cenário} & \textbf{Lockfile} & \textbf{Cache} & \textbf{\texttt{node\_modules}} &
+\textbf{Situação representada} \\
+\midrule
+\texttt{cold} & não & não & não & primeira instalação do projeto \\
+\texttt{ci} & sim & não & não & pipeline de CI sem cache \\
+\texttt{warm-cache} & sim & sim & não & CI com cache restaurado \\
+\texttt{reinstall} & sim & sim & sim & instalação repetida com tudo no lugar \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Objetos}
+
+Os projetos-carga (Tabela~\ref{tab:projetos}) têm dependências em versões exatas e perfis distintos.
+Dois vêm de templates oficiais, e a API Express foi escrita pelo grupo, pois o Express não oferece
+template oficial de servidor. O objeto de pesquisa é o gerenciador em funcionamento; o projeto é
+apenas a carga que ele processa.
+
+\begin{table}[ht]
+\centering
+\caption{Projetos-carga}
+\label{tab:projetos}
+\small
+\begin{tabularx}{\textwidth}{@{}lccY@{}}
+\toprule
+\textbf{Projeto} & \textbf{Diretas} & \textbf{Transitivas} & \textbf{Perfil} \\
+\midrule
+\texttt{express-api} & 4 & 82 & muitos pacotes pequenos \\
+\texttt{react-vite} & 9 & 88 & poucos pacotes grandes \\
+\texttt{next-app} & 7 & 53 & poucos pacotes muito grandes \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Instrumentação}
+
+Um coletor próprio em Python monta um diretório limpo com o projeto, prepara o cenário, executa e
+mede a instalação, calcula o disco, roda o build e grava uma linha por instalação. A retomada após
+interrupção não duplica medições. O tempo de relógio é a métrica principal. CPU e RAM vêm de
+amostragem da árvore de processos a cada 50~ms e são métricas secundárias, pois subestimam processos
+curtos. A pegada em disco soma os artefatos do projeto e o cache, contando cada inode uma vez para
+não duplicar arquivos ligados por \textit{hard link}.
+
+Todos os tratamentos instalam de um registry local (Verdaccio 7.1.0), o que retira da medição a
+velocidade da internet de cada casa e evita carga repetida sobre o registry público. Cada gerenciador
+tem um cache isolado, apagado antes de cada instalação. Antes de coletar, o coletor confere a versão
+de cada ferramenta e pergunta a cada gerenciador onde fica o cache e qual registry será usado,
+abortando se houver divergência. Essa checagem foi criada depois que o piloto revelou que o pnpm 12
+ignorava em silêncio a configuração recebida; as linhas afetadas foram descartadas e recoletadas.
+
+\subsection{Operação}
+
+A coleta segue um protocolo único nas três máquinas, com ambiente portátil de versões fixadas, apps
+fechados, Windows Update pausado e Defender no padrão. As especificações de cada máquina são
+registradas antes da coleta (Tabela~\ref{tab:maquinas}).
+
+\begin{table}[ht]
+\centering
+\caption{Máquinas (blocos)}
+\label{tab:maquinas}
+\small
+\begin{tabularx}{\textwidth}{@{}lYcc@{}}
+\toprule
+\textbf{Bloco} & \textbf{CPU} & \textbf{RAM} & \textbf{Sistema de arquivos} \\
+\midrule
+\texttt{bernardo} & AMD Ryzen 5 5500 (6 núcleos, 12 threads) & 15,9 GB & NTFS \\
+\texttt{luisa} & \pendente{T12b}{após a coleta} & -- & -- \\
+\texttt{pedro} & \pendente{T12c}{após a coleta} & -- & -- \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Em paralelo, a série histórica de downloads dos gerenciadores é coletada na API pública do npm, com
+no máximo uma requisição por segundo. \pendente{Luísa, T15}{Período e pacotes da série.}
+
+\subsection{Análise}
+
+As hipóteses são bicaudais, com $\alpha = 0{,}05$. Como os tempos são assimétricos, a análise é não
+paramétrica. Na RQ1, cada gerenciador é comparado ao npm com o teste de Wilcoxon
+pareado~\cite{wilcoxon1945} e correção de Holm~\cite{holm1979} sobre as cinco comparações de cada
+combinação de projeto e cenário. Na RQ2, as variantes do Yarn são comparadas com o teste de
+Friedman~\cite{friedman1937}, seguido de Wilcoxon com Holm. O tamanho do efeito é dado pelo $\delta$
+de Cliff~\cite{cliff1993}, com os limiares de \cite{romano2006}, e pelo
+\textit{speedup} (mediana do npm dividida pela mediana do tratamento), com intervalo de confiança de
+95\% por \textit{bootstrap}. Só entram nos testes as instalações válidas; a taxa de falhas é
+reportada à parte.
+
+Os pares são formados por máquina e repetição. Como repetições na mesma máquina não são independentes
+\cite{hurlbert1984}, os testes são interpretados como comparações \textbf{nas três máquinas
+estudadas}, e não como generalização para outras máquinas. Por isso, a discussão se apoia no tamanho
+do efeito e na consistência entre os blocos.
+
+\section{Resultados}
+\label{sec:resultados}
+
+\pendente{Pedro, T22c}{RQ1 a RQ3: descritiva, testes, efeito e figuras.}
+
+\pendente{Bernardo, T14}{RQ2: análise da aba Yarn $\times$ Yarn.}
+
+\pendente{Luísa, T16}{RQ4: adoção $\times$ desempenho.}
+
+\section{Impacto}
+\label{sec:impacto}
+
+\pendente{Pedro, T20 e T22c}{Horas e custo de CI, com fontes e o que não se pode afirmar.}
+
+\section{Ameaças à Validade}
+\label{sec:ameacas}
+
+\pendente{Bernardo, T17}{Condensar \texttt{docs/ameacas.md} nos quatro tipos~\cite{wohlin2012} depois
+dos resultados.}
+
+\section{Reaproveitamento dos Laboratórios}
+\label{sec:reaproveitamento}
+
+\pendente{Bernardo, T22a}{O que veio dos Labs 01 a 04 e o que foi feito de novo.}
+
+\section{Conclusão e Trabalhos Futuros}
+\label{sec:conclusao}
+
+\pendente{Luísa, T21 e T22b}{Conclusões, limitações e trabalhos futuros (\texttt{docs/ameacas.md},
+§5).}
+
+\bibliographystyle{sbc}
+\bibliography{referencias}
+
+\end{document}

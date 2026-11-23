@@ -11,6 +11,7 @@ operação (séries de downloads da API pública do npm).
 - **Repositório / GitHub Projects:** https://github.com/luisajardim/Lab-Experimentacao-e-Medicao- · board "Kanban Lab" (label `Enunciado 5`)
 - **Protocolo de coleta:** [docs/protocolo.md](docs/protocolo.md) · **Schema dos dados:** [docs/schema.md](docs/schema.md)
 - **Registry local:** [docs/registry.md](docs/registry.md) · **Runner:** [docs/runner.md](docs/runner.md)
+- **Ameaças à validade:** [docs/ameacas.md](docs/ameacas.md) · **Artigo SBC:** [article/](article/) (`cd article && latexmk -pdf -outdir=build main.tex`)
 
 ## Integrantes
 
@@ -60,5 +61,6 @@ projects/   projetos-carga + lockfiles por gerenciador (layout em projects/READM
 registry/   config do Verdaccio (storage local, não versionado)
 data/raw/   <maquina>/runs.csv + specs.json, uma pasta por bloco
 docs/       schema, proposta, protocolo, poder, ameaças
+article/    artigo no template SBC (seções pendentes marcadas em vermelho, com o responsável)
 tests/      pytest
 ```
