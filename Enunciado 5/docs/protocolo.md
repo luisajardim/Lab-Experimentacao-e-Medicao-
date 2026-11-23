@@ -15,8 +15,8 @@ Na raiz do `Enunciado 5/`, numa janela aberta pelo ambiente portátil (§1.1):
 ```bash
 uv sync                                        # dependências Python (uma vez)
 uv run lab05 specs --machine <nome>            # specs + checklist automático -> conferir avisos
+# trocar registry/storage pelo cache compartilhado (Passo 3); NÃO rodar `registry warm`
 uv run lab05 registry up                       # Verdaccio local
-uv run lab05 registry warm                     # enche o cache do Verdaccio (uma vez por máquina)
 uv run lab05 collect --machine <nome> --dry-run    # confere a sequência e o nº de instalações
 uv run lab05 collect --machine <nome> --reps <N>   # a coleta de verdade (N vem da T09)
 uv run lab05 registry down                     # ao terminar
@@ -170,18 +170,34 @@ uv run lab05 specs --machine <nome> --note "<o que o checklist pede e não é au
 Grava `data/raw/<nome>/specs.json` e imprime os avisos. **Resolva todos os avisos antes de
 continuar.** Rode de novo depois de corrigir.
 
-### Passo 3 — Subir o registry local
+### Passo 3 — Instalar o cache compartilhado e subir o registry local
 
-```bash
-uv run lab05 registry up       # http://localhost:4873/
-uv run lab05 registry warm     # uma vez por máquina: enche o cache com os 3 projetos
-uv run lab05 registry status   # confere
+As três máquinas usam **o mesmo `registry/storage/`**, publicado na
+[release `lab05-verdaccio-storage`](https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-/releases/tag/lab05-verdaccio-storage)
+(964 MB). **Não rode `uv run lab05 registry warm`.**
+
+```powershell
+$zip = "$HOME\Downloads\verdaccio-storage.zip"
+if (-not (Test-Path $zip)) { curl.exe -L --fail --retry 3 -o $zip "https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-/releases/download/lab05-verdaccio-storage/verdaccio-storage.zip" }
+(Get-FileHash $zip -Algorithm SHA256).Hash -eq "c780f749d8ff0c40f31097908512a7cce3a2475d0a4c30fb208efc07205fd4d9"   # True
+
+uv run lab05 registry down
+if (Test-Path registry\storage) { Remove-Item registry\storage -Recurse -Force }
+Expand-Archive -Path $zip -DestinationPath registry
+
+(Get-ChildItem registry\storage -Recurse -Filter *.tgz).Count     # 249
+Test-Path registry\storage\router\router-2.3.0.tgz               # True
+
+uv run lab05 registry up
+uv run lab05 registry status
 ```
 
-O `warm` é o único passo que usa a internet de verdade: ele baixa cada pacote do registry
-público **uma única vez**. Depois disso, as centenas de instalações da coleta são servidas do
-storage local — é o que isola o gerenciador da velocidade da sua internet e o que evita martelar
-um serviço público e gratuito.
+Se o hash der `False`, apague o zip e repita. **Por que não usar o `warm`:** o cenário `cold` roda
+sem lockfile e escolhe a versão mais nova na lista de versões do Verdaccio, que é a do dia em que
+ela foi baixada, e o `warm` só guarda o que está no lockfile. Com um `warm` por máquina, a árvore do
+`cold` poderia mudar entre os blocos e parte dos pacotes viria da internet durante a medição
+(ameaça I1 em [`ameacas.md`](ameacas.md)). Com o storage compartilhado, as instalações são servidas
+localmente, e o registry público não recebe as centenas de downloads da coleta.
 
 ### Passo 4 — Conferir a sequência
 
@@ -300,7 +316,7 @@ Ligação entre o protocolo e as ameaças à validade de [`proposta.md`](propost
 | Tomada, perfil de energia, apps fechados, máquina ociosa | **Conclusão:** variância do ambiente inflando o erro |
 | Windows Update pausado | **Interna:** evento externo no meio da sequência |
 | Defender fixo no padrão | **Externa:** o resultado vale para o Windows que as pessoas usam de fato |
-| Registry local + `warm` uma única vez | **Interna:** velocidade da internet entrando na medição · **ética:** não sobrecarregar um serviço público |
+| Registry local + storage compartilhado nas 3 máquinas | **Interna:** internet na medição e árvore do `cold` diferente entre blocos · **ética:** não sobrecarregar um serviço público |
 | Mesmo disco, caminho curto, fora do OneDrive | **Construto:** hard links e `disk_mb` medindo a mesma coisa do começo ao fim |
 | Ordem aleatorizada e aquecimento descartado (o runner faz) | **Interna:** efeito de ordem e de aquecimento do sistema de arquivos |
 | `specs.json` por bloco | **Conclusão:** diferença entre máquinas explicada, não tratada como ruído |
