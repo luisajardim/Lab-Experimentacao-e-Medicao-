@@ -290,6 +290,7 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "pytest" },
+    { name = "pytinytex" },
     { name = "ruff" },
 ]
 
@@ -307,6 +308,7 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "pytest", specifier = ">=8.3,<9" },
+    { name = "pytinytex", specifier = ">=0.5.1" },
     { name = "ruff", specifier = ">=0.6,<1" },
 ]
 
@@ -809,6 +811,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/9f/b7/15b905f6142a9a8a68f66900788da1a32e4d4254452783b37ad1eccb0506/python_multipart-0.0.33.tar.gz", hash = "sha256:b8112424a6abd162ec08d390565dd113ad699f2fe6fef3c987b8bbcbfe9e390d", size = 50499, upload-time = "2026-10-31T14:23:47.461Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/dd/1b/6b1b4164ec734cac911460ab599bfbe46afedd42c5c9627fe4235942c314/python_multipart-0.0.33-py3-none-any.whl", hash = "sha256:8f16c07b36add9da6b2ee87d3efcaf0a45a6de9c3d0a5dd94e9ccf7675a7bc45", size = 32253, upload-time = "2026-10-31T14:23:46.33Z" },
+]
+
+[[package]]
+name = "pytinytex"
+version = "0.5.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/7c/9c/dfbe60d3f33b3406fb9a50d06d9f1ad086e24d1bc83d6fdd992e12d02eb6/pytinytex-0.5.1.tar.gz", hash = "sha256:206d2adcbe58262ee501399c7aed30b684473b03dcb71fc248271d1801138525", size = 33203, upload-time = "2026-03-13T20:28:22.793Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/76/ae/169877f749443356ac9f5ff07dc128fdead4ccd4094ba3ad9bc5ee53d2a9/pytinytex-0.5.1-py3-none-any.whl", hash = "sha256:16cbad3f70e40a14855bbd807bab9ba74232e87268738dc4ce2af4f6abd6d248", size = 20694, upload-time = "2026-03-13T20:28:21.48Z" },
 ]
 
 [[package]]

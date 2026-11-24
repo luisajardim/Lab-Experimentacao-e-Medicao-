@@ -14,9 +14,8 @@ Cada ameaça tem uma situação:
 1. **A inferência vale para estas 3 máquinas.** As repetições não são amostras independentes de
    "máquinas Windows" (C1).
 2. **`wall_s` e o disco sustentam comparações. CPU e RAM do Bun, não** (Co1).
-3. **O cenário `cold` não instala exatamente a mesma árvore dos cenários com lockfile**, e ela pode
-   variar entre máquinas (I1). É o único item que ainda pode ser resolvido antes das coletas da
-   Luísa e do Pedro.
+3. **O cenário `cold` não instala exatamente a mesma árvore dos cenários com lockfile.** Entre as
+   máquinas, a árvore é a mesma porque as 3 usam o mesmo `registry/storage/` (I1).
 
 ---
 
@@ -36,7 +35,7 @@ Cada ameaça tem uma situação:
 
 | # | Ameaça | Evidência ou efeito | Mitigação ou limite | Situação |
 |---|---|---|---|---|
-| I1 | **`cold` resolve versões mais novas que os lockfiles** e o `registry warm` não as guarda | Sem lockfile, o gerenciador pega a versão mais nova permitida: `router` 2.3.0 em vez de 2.2.0, `csstype` 3.2.4 em vez de 3.2.3, `baseline-browser-mapping` 2.11.38 em vez de 2.11.37. No `express-api`, o `cold` instala 5 arquivos a mais. Na máquina `bernardo`, o `router` 2.3.0 foi baixado da internet durante o piloto, e a coleta completa já o encontrou no cache. Numa máquina sem piloto, a primeira instalação `cold` pode baixar da internet, e a árvore depende do dia do `warm` | Usar o **mesmo `registry/storage/`** nas 3 máquinas, ou rodar um `cold` de cada gerenciador antes de coletar. Comparar `n_files` do `cold` entre as máquinas na validação (#110) | **Aberta** (decidir antes da #108 e da #109) |
+| I1 | **`cold` resolve versões mais novas que os lockfiles** e o `registry warm` não as guarda | Sem lockfile, o gerenciador pega a versão mais nova permitida: `router` 2.3.0 em vez de 2.2.0, `csstype` 3.2.4 em vez de 3.2.3, `baseline-browser-mapping` 2.11.38 em vez de 2.11.37. No `express-api`, o `cold` instala 5 arquivos a mais. Na máquina `bernardo`, o `router` 2.3.0 foi baixado da internet durante o piloto, e a coleta completa já o encontrou no cache. Numa máquina sem piloto, a primeira instalação `cold` poderia baixar da internet, e a árvore dependeria do dia do `warm` | As 3 máquinas usam o **mesmo `registry/storage/`**, publicado numa release com SHA-256, sem rodar `warm` (`protocolo.md`, passo 3). O `cold` do npm foi testado offline nos 3 projetos com esse storage. A validação (#110) compara `n_files` do `cold` entre as máquinas. A diferença entre `cold` e os cenários com lockfile permanece e faz parte do cenário | Mitigada |
 | I2 | **"A frio" não é totalmente frio** | O runner apaga o cache dos gerenciadores, mas não o cache de arquivos do Windows; pacotes lidos há pouco podem vir da RAM | A ordem aleatorizada distribui o efeito entre os tratamentos. O construto é "sem cache do gerenciador", não "máquina recém-ligada" | Declarada |
 | I3 | Verdaccio disputa CPU e disco com a instalação medida | Roda na mesma máquina, e gerenciadores com mais downloads simultâneos o exigem mais | Igual para todos os tratamentos; a T19 (#116) confere contra o registry real | Declarada |
 | I4 | Efeito de ordem e aquecimento | Correlação de Spearman entre ordem e tempo relativo de -0,09 a 0,07 por cenário em `bernardo` | Ordem aleatória por repetição com semente fixa; aquecimento marcado e descartado | Mitigada |

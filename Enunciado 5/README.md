@@ -11,7 +11,7 @@ operação (séries de downloads da API pública do npm).
 - **Repositório / GitHub Projects:** https://github.com/luisajardim/Lab-Experimentacao-e-Medicao- · board "Kanban Lab" (label `Enunciado 5`)
 - **Protocolo de coleta:** [docs/protocolo.md](docs/protocolo.md) · **Schema dos dados:** [docs/schema.md](docs/schema.md)
 - **Registry local:** [docs/registry.md](docs/registry.md) · **Runner:** [docs/runner.md](docs/runner.md)
-- **Ameaças à validade:** [docs/ameacas.md](docs/ameacas.md) · **Artigo SBC:** [article/](article/) (`cd article && latexmk -pdf -outdir=build main.tex`)
+- **Ameaças à validade:** [docs/ameacas.md](docs/ameacas.md) · **Artigo SBC:** [article/](article/) → [RELATORIO.pdf](RELATORIO.pdf)
 
 ## Integrantes
 
@@ -45,7 +45,11 @@ uv run lab05 synthetic   # (re)gera o CSV sintético em data/raw/synthetic/ (T01
 uv run lab05 registry up|status|warm|down   # Verdaccio local em http://localhost:4873/ (T02)
 uv run lab05 collect --machine <nome> [--pilot] [--dry-run]   # coleta medida (T04)
 uv run lab05 specs --machine <nome>   # specs da máquina + checklist do protocolo (T07)
+uv run python scripts/build_report.py [--clean]   # compila article/ e gera RELATORIO.pdf
 ```
+
+Na primeira execução, o `build_report.py` baixa o TinyTeX (via `pytinytex`, em `~/.pytinytex`) e
+alguns pacotes do CTAN. Não precisa de `sudo`, Perl nem Docker.
 
 Enquanto não há coleta real, o dashboard e a análise usam o **CSV sintético** (números inventados,
 semente fixa), no mesmo formato da coleta. Ver [docs/schema.md](docs/schema.md).
