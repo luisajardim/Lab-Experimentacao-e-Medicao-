@@ -135,6 +135,7 @@ Faça na ordem. Os itens marcados com 🤖 o `uv run lab05 specs` confere sozinh
 | 7 | 🤖 **Versões conferidas** | `uv run lab05 specs --machine <nome>` | Pega versão errada e `.yarnrc.yml` perdido antes de gastar horas coletando |
 | 8 | **Temperatura inicial** | Máquina ligada e ociosa por ~10 min antes de começar; anote a temperatura se tiver como medir | Começar com a máquina fria e terminar com ela quente cria uma tendência ao longo da sequência |
 | 9 | **Não usar a máquina** | Deixe coletando e vá fazer outra coisa | Qualquer uso entra na medição |
+| 10 | **Suspensão desligada na tomada** | `powercfg /change standby-timeout-ac 0` e o mesmo para `hibernate-timeout-ac`, `disk-timeout-ac`, `monitor-timeout-ac` | O perfil "Alto desempenho" **não** desliga a suspensão: a máquina da Luísa dormiu por ~40 min no meio da coleta de #108. Devolva os valores depois (`powercfg /setactive SCHEME_BALANCED`) |
 
 O item 8 e as observações do 3, 4 e 9 não dão para automatizar: registre-as com `--note`:
 
@@ -272,6 +273,7 @@ Windows atualizou, as condições mudaram.
 | Erro de caminho muito longo | `LAB05_WORKDIR` fundo demais | Mude para um caminho curto (§1.2) e recomece aquela célula |
 | Instalação falha só no `pnpm` ou no Yarn Berry, com "publicado há menos de 24 h" | Política de idade de versão desses dois gerenciadores | Não deveria acontecer: está desligada nas configs dos tratamentos. Se acontecer, avise o grupo — algum arquivo de `projects/` mudou |
 | A coleta ficou muito mais lenta que a dos outros | Algum app subiu, o Windows atualizou ou a máquina esquentou | Pare, refaça o checklist da §2 e retome (§4) |
+| A máquina suspendeu no meio (tela apagada, sem ruído, lacuna de minutos entre dois `timestamp`) | O Windows adormeceu: o perfil "Alto desempenho" só não deixa os núcleos pararem, a suspensão é à parte (item 10 da §2) | Aplique o item 10 e veja onde a lacuna caiu. Se ela ficou **entre** duas linhas, nenhuma célula foi cronometrada durante o sono e os dados valem; se ela ficou **dentro** de uma linha (`wall_s` absurdo), descarte aquela célula e recolha-a |
 
 ---
 
