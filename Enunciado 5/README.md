@@ -47,6 +47,7 @@ uv run lab05 registry up|status|warm|down   # Verdaccio local em http://localhos
 uv run lab05 collect --machine <nome> [--pilot] [--dry-run]   # coleta medida (T04)
 uv run lab05 specs --machine <nome>   # specs da máquina + checklist do protocolo (T07)
 uv run lab05 downloads [--refresh]   # séries de downloads da API pública do npm (T15)
+uv run lab05 validate [--check]   # junta as 3 coletas, checa e congela data/processed/ (T13)
 uv run python scripts/build_report.py [--clean]   # compila article/ e gera RELATORIO.pdf
 ```
 

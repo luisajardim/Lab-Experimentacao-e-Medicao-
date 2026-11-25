@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from config import DATA_RAW, MANAGERS, PROJECTS, REGISTRIES, RUNS_FILENAME, SCENARIOS
+from config import DATA_RAW, MANAGERS, PROJECTS, REGISTRIES, RUNS_ALL, RUNS_FILENAME, SCENARIOS
 
 
 @dataclass(frozen=True)
@@ -143,6 +143,19 @@ def load_runs(root: Path = DATA_RAW, include_synthetic: bool = False,
     if not frames:
         return empty_frame()
     df = validate(pd.concat(frames, ignore_index=True))
+    if not include_warmup:
+        df = df[~df["warmup"]].reset_index(drop=True)
+    return df
+
+
+def load_dataset(path: Path = RUNS_ALL, include_warmup: bool = False) -> pd.DataFrame:
+    """Dataset congelado pela validação (T13, #110); vazio se ainda não existe.
+
+    É o que a análise e o dashboard leem. `uv run lab05 validate` o gera a partir de `load_runs`.
+    """
+    if not path.exists():
+        return empty_frame()
+    df = read_runs(path)
     if not include_warmup:
         df = df[~df["warmup"]].reset_index(drop=True)
     return df

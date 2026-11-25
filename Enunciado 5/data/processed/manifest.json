@@ -1,0 +1,56 @@
+{
+  "dataset": "data/processed/runs_all.csv",
+  "sha256": "4598d73860184c57b7ee1806c2447ea58dd88b8310acb7dd4b243efe0a2f6669",
+  "rows": 2166,
+  "measured_rows": 2160,
+  "machines": [
+    "bernardo",
+    "luisa",
+    "pedro"
+  ],
+  "sources": {
+    "data/raw/bernardo/runs.csv": "bfd83727db892363ff9f4480f15f51a81eec597681c2e9827f55807d3fc62b24",
+    "data/raw/bernardo/specs.json": "cc7bf7fbac6cd7a803a87e3c63cf44b8f47888b7a4fa7140d78504dcf6cdff2e",
+    "data/raw/luisa/runs.csv": "18a8fba21bc7709a5d394cb63fae7a02e7f3326ffdc19219dd99274053359f07",
+    "data/raw/luisa/specs.json": "ce76a71cb2db941c157e6f6b16b8d5231d8ae4866b9cd6807afb409820b189a3",
+    "data/raw/pedro/runs.csv": "7181d3fd508c99302a3b36e55249dd022d3953db3cbed7117d2a0987116abb09",
+    "data/raw/pedro/specs.json": "972c7891db1953d99f2788fd3e79917322912aeb642854fa8d3f8aa21e8896bb"
+  },
+  "checks": [
+    {
+      "name": "Desenho completo",
+      "status": "ok",
+      "summary": "3 máquinas × 72 células × 10 repetições + 2 aquecimentos por máquina"
+    },
+    {
+      "name": "Versões iguais nas máquinas",
+      "status": "ok",
+      "summary": "Node 24.22.3; npm 11.19.1, pnpm 12.21.0, bun 1.4.4, yarn-classic 1.22.22, yarn-berry-nm 4.18.1, yarn-berry-pnp 4.18.1"
+    },
+    {
+      "name": "Registry local",
+      "status": "ok",
+      "summary": "todas as linhas com registry `local`"
+    },
+    {
+      "name": "Instalações válidas",
+      "status": "ok",
+      "summary": "2166 de 2166 com `exit_code = 0` e `build_ok`"
+    },
+    {
+      "name": "Mesma árvore instalada nas máquinas (I1)",
+      "status": "ok",
+      "summary": "`n_files` igual entre as máquinas em 72 de 72 células"
+    },
+    {
+      "name": "Medições extremas (registradas, mantidas)",
+      "status": "aviso",
+      "summary": "11 de 1450 medições em células com mediana ≥ 1 s passaram de 3× a mediana"
+    },
+    {
+      "name": "Pausas durante a coleta",
+      "status": "aviso",
+      "summary": "1 lacuna(s) de mais de 5 min entre duas medições seguidas"
+    }
+  ]
+}

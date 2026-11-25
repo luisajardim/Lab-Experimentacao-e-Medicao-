@@ -55,6 +55,7 @@ DATA = ROOT / "data"
 DATA_RAW = DATA / "raw"                    # data/raw/<maquina>/runs.csv + specs.json
 DATA_SYNTHETIC = DATA_RAW / "synthetic"    # CSV sintético (T01) para desenvolver antes da coleta
 DATA_PROCESSED = DATA / "processed"        # dataset final validado (T13)
+RUNS_ALL = DATA_PROCESSED / "runs_all.csv"  # as 3 coletas juntas e validadas (T13, #110)
 DATA_DOWNLOADS = DATA / "npm_downloads"    # séries da API de downloads do npm (T15)
 PROJECTS_DIR = ROOT / "projects"           # projetos-carga (T03)
 DOCS = ROOT / "docs"

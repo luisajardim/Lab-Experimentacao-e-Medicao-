@@ -1,9 +1,10 @@
 """Dashboard Streamlit do Lab05 — Experimento em Software Real (npm × pnpm × Yarn × Bun).
 
 Quatro abas: Todos × npm · Yarn × Yarn · Adoção × desempenho · Impacto (+ seção de método e links).
-Lê a coleta completa em `data/raw/<maquina>/runs.csv` via `schema.load_runs()`, que deixa de fora
-o piloto e o sintético. Enquanto ela não existe, mostra o piloto (ou, sem piloto, o CSV sintético)
-com aviso explícito.
+Lê o dataset congelado pela validação (`data/processed/runs_all.csv`, T13). Sem ele, junta a coleta
+em `data/raw/<maquina>/runs.csv` via `schema.load_runs()`, que deixa de fora o piloto e o
+sintético. Enquanto ela não existe, mostra o piloto (ou, sem piloto, o CSV sintético) com aviso
+explícito.
 
 Issues: #105 (T10), #111 (T14), #113 (T16), #115 (T18), #117 (T20).
 """
@@ -33,7 +34,7 @@ from config import (  # noqa: E402
     SCENARIOS,
     YARN_VARIANTS,
 )
-from schema import load_runs  # noqa: E402
+from schema import load_dataset, load_runs  # noqa: E402
 
 TABS = (
     "Todos × npm",
@@ -46,8 +47,10 @@ TABS = (
 
 @st.cache_data
 def get_runs() -> tuple[pd.DataFrame, str]:
-    """Coleta completa; sem ela, o piloto; sem piloto, o CSV sintético."""
-    df = load_runs()
+    """Dataset validado; sem ele, a coleta crua; sem ela, o piloto; sem piloto, o sintético."""
+    df = load_dataset()
+    if df.empty:
+        df = load_runs()
     if not df.empty:
         machines = sorted(df["machine"].dropna().unique())
         if len(machines) < 3 or set(df["scenario"].unique()) < set(SCENARIOS):

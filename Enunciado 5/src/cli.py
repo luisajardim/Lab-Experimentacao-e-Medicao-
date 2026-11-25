@@ -8,11 +8,11 @@ Subcomandos são adicionados pelas tarefas que os implementam:
 - `collect --machine <nome> [--pilot] [--dry-run]`: coleta medida (T04, #99).
 - `specs --machine <nome>`: specs da máquina + checklist do protocolo (T07, #102).
 - `downloads`: séries de downloads da API pública do npm (T15, #112).
-- `validate`: T13.
+- `validate [--check]`: junta as 3 coletas, checa e congela o dataset (T13, #110).
 
 Flags do dashboard: `--prepare-only` (não abre o Streamlit); o resto vai para o Streamlit.
 
-Issues: #96 (T01), #97 (T02), #99 (T04), #102 (T07), #112 (T15).
+Issues: #96 (T01), #97 (T02), #99 (T04), #102 (T07), #110 (T13), #112 (T15).
 """
 
 from __future__ import annotations
@@ -26,6 +26,7 @@ import registry
 import runner
 import specs
 import synthetic
+import validate
 from config import ROOT
 
 APP_PATH = ROOT / "app.py"
@@ -37,6 +38,7 @@ SUBCOMMANDS = {
     "specs": specs.main,
     "power": power.main,
     "downloads": npm_downloads.main,
+    "validate": validate.main,
 }
 
 
