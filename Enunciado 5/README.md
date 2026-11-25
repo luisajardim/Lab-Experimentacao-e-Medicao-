@@ -61,9 +61,10 @@ semente fixa), no mesmo formato da coleta. Ver [docs/schema.md](docs/schema.md).
 ```
 src/        config.py (tratamentos, cenários, projetos, paleta) · schema.py (contrato de runs.csv)
             synthetic.py (CSV sintético) · registry.py (Verdaccio) · runner.py + metrics.py (coleta)
-            specs.py (specs da máquina + checklist) · npm_downloads.py (adoção, T15)
+            specs.py (specs da máquina + checklist) · npm_downloads.py (coleta da adoção, T15)
+            adoption.py (adoção × desempenho, T16)
             cli.py (uv run lab05)
-app.py      dashboard Streamlit (abas na T10)
+app.py      dashboard Streamlit (abas: Todos × npm · Yarn × Yarn · Adoção × desempenho · Impacto)
 projects/   projetos-carga + lockfiles por gerenciador (layout em projects/README.md)
 registry/   config do Verdaccio (storage local, não versionado)
 data/raw/   <maquina>/runs.csv + specs.json, uma pasta por bloco

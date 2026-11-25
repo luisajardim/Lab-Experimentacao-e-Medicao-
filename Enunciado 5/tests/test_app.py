@@ -3,8 +3,10 @@
 import sys
 
 import plotly.graph_objects as go
+import pytest
 from streamlit.testing.v1 import AppTest
 
+import adoption
 import figures
 import stats
 from config import PALETTE, ROOT
@@ -34,9 +36,31 @@ def test_figures_use_fixed_palette():
 
 
 def test_dashboard_renders_all_tabs_without_errors():
-    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=30)
+    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
     at.run()
     assert not at.exception
+    # `at.tabs` traz também as abas aninhadas, intercaladas (a de Adoção tem "Valores
+    # absolutos" e "Participação (%)" dentro dela). As 5 de primeiro nível têm de estar
+    # todas presentes e na ordem certa entre si.
     tab_labels = [t.label for t in at.tabs]
-    assert tab_labels == list(app.TABS)
+    assert set(app.TABS) <= set(tab_labels)
+    posicoes = [tab_labels.index(t) for t in app.TABS]
+    assert posicoes == sorted(posicoes)
+
+
+def test_aba_de_adocao_desenha_os_graficos():
+    """Com os CSVs da T15 presentes, a aba sai do estado de espera e mostra as figuras."""
+    if not adoption.available():
+        pytest.skip("sem data/npm_downloads/: rode `uv run lab05 downloads`")
+    at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=60)
+    at.run()
+    assert not at.exception
+    assert len(at.get("plotly_chart")) >= 4   # as outras abas + as 4 figuras da adoção
+    textos = " ".join(m.value for m in at.markdown)
+    assert "Séries históricas de downloads" in textos
+    assert "Crescimento no último ano" in textos
+    assert "Adoção × speedup medido" in textos
+    # a limitação central não pode sumir da tela
+    avisos = " ".join(e.value for e in at.error)
+    assert "download não é uso" in avisos.lower() or "já vem instalado" in avisos
 
