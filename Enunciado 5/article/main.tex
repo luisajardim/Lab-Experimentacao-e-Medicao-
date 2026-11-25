@@ -222,8 +222,48 @@ do efeito e na consistência entre os blocos.
 \section{Ameaças à Validade}
 \label{sec:ameacas}
 
-\pendente{Bernardo, T17}{Condensar \texttt{docs/ameacas.md} nos quatro tipos~\cite{wohlin2012} depois
-dos resultados.}
+As ameaças seguem a classificação de \cite{wohlin2012}. A versão completa, com a evidência de cada
+uma, está no repositório (\texttt{docs/ameacas.md}).
+
+\textbf{Conclusão.} Os pares são formados por máquina e repetição, e repetições na mesma máquina
+compartilham hardware e configuração. Tratá-las como independentes é pseudorreplicação
+\cite{hurlbert1984}: os p-valores valem para \textbf{estas três máquinas}, não para máquinas
+Windows em geral. Com só três medianas por tratamento, um teste no nível da máquina não chegaria a
+$p < 0{,}25$, por isso a discussão se apoia no tamanho do efeito e na consistência entre os blocos.
+Picos de espera aparecem em 11 das 1.450 medições de células com mediana de pelo menos 1~s (mais de
+três vezes a mediana), 10 delas do npm. Nenhuma linha foi removida, e a análise usa medianas e
+testes não paramétricos. A correção de Holm cobre as comparações múltiplas, e o
+\textit{speedup} e a diferença absoluta acompanham cada p-valor, porque no cenário
+\texttt{reinstall} diferenças de décimos de segundo podem ser significativas sem ser relevantes.
+
+\textbf{Interna.} O cenário \texttt{cold} resolve, sem lockfile, versões mais novas que as dos
+lockfiles. Para que a árvore não dependesse da data do download, as três máquinas usaram o mesmo
+armazenamento do Verdaccio, e o número de arquivos instalados foi idêntico entre elas nas 72
+células. O runner apaga o cache dos gerenciadores, mas não o cache de arquivos do Windows, então
+``a frio'' significa ``sem cache do gerenciador''. O Verdaccio roda na mesma máquina e disputa CPU e
+disco com a instalação, igualmente para todos os tratamentos. A ordem é sorteada a cada repetição, e
+a correlação entre a ordem e o tempo relativo ficou entre $-0{,}16$ e $0{,}02$. O Defender ficou
+ativo no padrão e não foi isolado, e é o principal suspeito dos picos de espera. As máquinas também
+diferem em configuração: uma usou outro perfil de energia e outra build do Windows, e a máquina com
+8~GB de RAM começou a coleta com 0,34~GB livres e suspendeu por 40 minutos entre duas medições. Como
+cada máquina é um bloco e as comparações são sempre feitas dentro dele, essas diferenças não se
+confundem com o efeito do gerenciador.
+
+\textbf{Construto.} CPU e pico de memória vêm de amostragem a cada 50~ms e ficam subestimados em
+processos curtos. No Bun, a razão mediana entre CPU e tempo é 0,23, contra 0,86 a 1,22 nos demais,
+e 55 instalações do Bun registraram CPU zero. Por isso, CPU e memória não sustentam conclusões sobre
+o Bun, enquanto o tempo de relógio e o disco não são afetados. O tempo de instalação é uma parte do
+fluxo de trabalho, não uma medida de produtividade, e a compilação de validação comprova que o
+projeto compila, não que funciona em execução. O npm roda sem auditoria, como em CI, e as políticas
+de idade mínima do pnpm e do Berry foram desligadas. Na RQ4, downloads não equivalem a uso, e os
+nomes \texttt{bun}, \texttt{pnpm} e \texttt{yarn} já existiam no registry como pacotes sem relação
+com as ferramentas.
+
+\textbf{Externa.} Os resultados valem para o Windows 11 em NTFS com o Defender ativo, três máquinas
+de estudantes, projetos pequenos e médios e as versões de novembro de 2026. Não se estendem a
+Linux, a \textit{runners} de CI, ao Dev Drive nem a monorepos. O registry local elimina a latência de
+rede, o que pode reduzir a vantagem de quem paraleliza downloads, e uma rodada contra o registry
+público confere a ordem de grandeza.
 
 \section{Reaproveitamento dos Laboratórios}
 \label{sec:reaproveitamento}
