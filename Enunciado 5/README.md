@@ -10,6 +10,7 @@ operação (séries de downloads da API pública do npm).
 - **Planejamento e tarefas:** [PLAN.md](PLAN.md) · **Enunciado:** [ENUNCIADO.pdf](ENUNCIADO.pdf)
 - **Repositório / GitHub Projects:** https://github.com/luisajardim/Lab-Experimentacao-e-Medicao- · board "Kanban Lab" (label `Enunciado 5`)
 - **Protocolo de coleta:** [docs/protocolo.md](docs/protocolo.md) · **Schema dos dados:** [docs/schema.md](docs/schema.md)
+- **Downloads do npm (2º caminho):** [docs/fonte_downloads.md](docs/fonte_downloads.md)
 - **Registry local:** [docs/registry.md](docs/registry.md) · **Runner:** [docs/runner.md](docs/runner.md)
 - **Ameaças à validade:** [docs/ameacas.md](docs/ameacas.md) · **Artigo SBC:** [article/](article/) → [RELATORIO.pdf](RELATORIO.pdf)
 
@@ -45,6 +46,7 @@ uv run lab05 synthetic   # (re)gera o CSV sintético em data/raw/synthetic/ (T01
 uv run lab05 registry up|status|warm|down   # Verdaccio local em http://localhost:4873/ (T02)
 uv run lab05 collect --machine <nome> [--pilot] [--dry-run]   # coleta medida (T04)
 uv run lab05 specs --machine <nome>   # specs da máquina + checklist do protocolo (T07)
+uv run lab05 downloads [--refresh]   # séries de downloads da API pública do npm (T15)
 uv run python scripts/build_report.py [--clean]   # compila article/ e gera RELATORIO.pdf
 ```
 
@@ -59,12 +61,14 @@ semente fixa), no mesmo formato da coleta. Ver [docs/schema.md](docs/schema.md).
 ```
 src/        config.py (tratamentos, cenários, projetos, paleta) · schema.py (contrato de runs.csv)
             synthetic.py (CSV sintético) · registry.py (Verdaccio) · runner.py + metrics.py (coleta)
-            specs.py (specs da máquina + checklist) · cli.py (uv run lab05)
+            specs.py (specs da máquina + checklist) · npm_downloads.py (adoção, T15)
+            cli.py (uv run lab05)
 app.py      dashboard Streamlit (abas na T10)
 projects/   projetos-carga + lockfiles por gerenciador (layout em projects/README.md)
 registry/   config do Verdaccio (storage local, não versionado)
 data/raw/   <maquina>/runs.csv + specs.json, uma pasta por bloco
-docs/       schema, proposta, protocolo, poder, ameaças
+data/npm_downloads/  séries diárias/semanais de downloads + metadados da coleta (T15)
+docs/       schema, proposta, protocolo, poder, ameaças, fonte_downloads
 article/    artigo no template SBC (seções pendentes marcadas em vermelho, com o responsável)
 tests/      pytest
 ```
