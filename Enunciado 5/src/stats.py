@@ -5,6 +5,8 @@
 - **Todos × npm:** Wilcoxon pareado bicaudal de cada gerenciador contra o controle, com correção
   de Holm dentro de cada família (as 5 comparações de um projeto × cenário).
 - **Yarn × Yarn:** Friedman entre as 3 variantes do Yarn + post-hoc de Wilcoxon pareado com Holm.
+  Para os gráficos: speedup do Berry em relação ao Classic e o mais rápido por célula e máquina
+  (T14, #111).
 - **Tamanho do efeito:** Cliff's δ (com a magnitude de Romano et al., 2006) e speedup = mediana do
   controle / mediana do tratamento (> 1: mais rápido que o npm), com IC 95% por bootstrap pareado.
 
@@ -14,7 +16,7 @@ bloco em que algum lado falhou sai do teste (a taxa de falhas é resultado à pa
 
 Validado contra `scipy.stats.wilcoxon` e `scipy.stats.friedmanchisquare` em `tests/test_stats.py`.
 
-Issue: #103 (T08).
+Issues: #103 (T08), #111 (T14).
 """
 
 from __future__ import annotations
@@ -297,3 +299,60 @@ def yarn_friedman(df: pd.DataFrame, metric: str = "wall_s", variants: Sequence[s
             row["reject"] = bool(adj < alpha) if not np.isnan(adj) else False
         posthoc.extend(family)
     return pd.DataFrame(omnibus), pd.DataFrame(posthoc)
+
+
+YARN_BASE = "yarn-classic"   # referência da aba Yarn × Yarn: a versão mais antiga do mesmo software
+
+
+def yarn_vs_classic(df: pd.DataFrame, metric: str = "wall_s", base: str = YARN_BASE,
+                    variants: Sequence[str] = YARN_VARIANTS, group: Sequence[str] = GROUP,
+                    n_resamples: int = BOOTSTRAP_RESAMPLES, seed: int = SEED) -> pd.DataFrame:
+    """Speedup de cada variante do Berry em relação ao Classic, por grupo, com IC 95% pareado.
+
+    Mesmas colunas que `compare_to_control` usa no gráfico (`speedup`, `speedup_low`,
+    `speedup_high`); a inferência fica com `yarn_friedman`, este é só o tamanho do efeito.
+    """
+    group = list(group)
+    rows = []
+    for key, sub in df.groupby(group, observed=True, sort=True):
+        key = key if isinstance(key, tuple) else (key,)
+        for manager in (v for v in variants if v != base):
+            wide = paired_wide(sub, [base, manager], metric)
+            c, t = wide[base].to_numpy(), wide[manager].to_numpy()
+            low, high = speedup_ci(c, t, n_resamples=n_resamples, seed=seed)
+            rows.append({
+                **dict(zip(group, key, strict=True)),
+                "manager": manager,
+                "n_pairs": int(len(wide)),
+                "median_control": float(np.median(c)) if len(c) else np.nan,
+                "median_manager": float(np.median(t)) if len(t) else np.nan,
+                "speedup": speedup(c, t) if len(c) else np.nan,
+                "speedup_low": low,
+                "speedup_high": high,
+            })
+    return pd.DataFrame(rows)
+
+
+def fastest_by_cell(df: pd.DataFrame, managers: Sequence[str], metric: str = "wall_s",
+                    by: Sequence[str] = GROUP) -> pd.DataFrame:
+    """O gerenciador de menor mediana (instalações válidas) em cada grupo de `by`."""
+    sub = add_derived(valid_runs(df))
+    sub = sub[sub["manager"].isin(managers)]
+    if sub.empty:
+        return pd.DataFrame(columns=[*by, "manager", "median"])
+    med = sub.groupby([*by, "manager"], observed=True)[metric].median().rename("median")
+    best = med.reset_index().sort_values("median", kind="stable")
+    return best.drop_duplicates(list(by)).sort_values(list(by)).reset_index(drop=True)
+
+
+def machine_agreement(df: pd.DataFrame, managers: Sequence[str],
+                      metric: str = "wall_s") -> pd.DataFrame:
+    """Para cada projeto × cenário, o mais rápido no geral e em quantas máquinas ele também é."""
+    overall = fastest_by_cell(df, managers, metric)
+    per_machine = fastest_by_cell(df, managers, metric, by=("machine", *GROUP))
+    merged = per_machine.merge(overall[[*GROUP, "manager"]], on=list(GROUP),
+                               suffixes=("_machine", ""))
+    agree = (merged["manager_machine"] == merged["manager"]).groupby(
+        [merged[c] for c in GROUP]).agg(["sum", "size"])
+    agree.columns = ["n_agree", "n_machines"]
+    return overall.merge(agree.reset_index(), on=list(GROUP), how="left")

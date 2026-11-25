@@ -22,6 +22,7 @@ METRIC_LABELS = {
     "wall_s": "Tempo de instalação (s)",
     "footprint_mb": "Pegada total em disco: projeto + cache (MB)",
     "disk_mb": "Disco no projeto (MB)",
+    "cpu_s": "Tempo de CPU (s)",
     "peak_rss_mb": "Pico de memória RAM (MB)",
     "n_files": "Nº de arquivos criados",
 }
@@ -100,8 +101,12 @@ def fig_metric_by_scenario(
     return fig
 
 
-def fig_speedup_vs_control(vs_ctrl: pd.DataFrame, control: str = CONTROL) -> go.Figure:
-    """Speedup (mediana npm / mediana gerenciador) com IC 95% por bootstrap."""
+def fig_speedup_vs_control(vs_ctrl: pd.DataFrame, control: str = CONTROL,
+                           log_y: bool = False) -> go.Figure:
+    """Speedup (mediana do controle / mediana do gerenciador) com IC 95% por bootstrap.
+
+    `log_y` deixa 2× e 0,5× à mesma distância do 1 (útil quando há ganhos e perdas).
+    """
     projects = [p for p in PROJECTS if p in set(vs_ctrl["project"])]
     scenarios = [s for s in SCENARIOS if s in set(vs_ctrl["scenario"])]
     order = [m for m in MANAGERS if m != control and m in set(vs_ctrl["manager"])]
@@ -150,6 +155,9 @@ def fig_speedup_vs_control(vs_ctrl: pd.DataFrame, control: str = CONTROL) -> go.
 
     fig.update_yaxes(title_text=f"Speedup vs. {MANAGERS[control]['label']} (×, >1 = mais rápido)",
                      row=1, col=1)
+    if log_y:
+        fig.update_yaxes(type="log", tickvals=[0.1, 0.25, 0.5, 1, 2, 4],
+                         ticktext=["0,1×", "0,25×", "0,5×", "1×", "2×", "4×"])
     fig.update_layout(
         title=dict(
             text=f"Speedup em relação ao {MANAGERS[control]['label']} (IC 95% por bootstrap)",
@@ -173,6 +181,54 @@ def fig_yarn_comparison(df: pd.DataFrame, metric: str = "wall_s") -> go.Figure:
         title=f"Família Yarn — {METRIC_LABELS.get(metric, metric)}",
         managers=list(YARN_VARIANTS),
     )
+
+
+FOOTPRINT_PARTS = (("disk_mb", "No projeto", ""), ("cache_mb", "No cache", "/"))
+
+
+def fig_yarn_footprint(df: pd.DataFrame, scenario: str = "ci") -> go.Figure:
+    """Pegada em disco das variantes do Yarn: projeto (sólido) + cache (hachurado), por projeto.
+
+    Usa um cenário só (`ci` por padrão: cache vazio antes, cheio depois), porque a pegada quase não
+    muda entre cenários. Cada projeto tem o próprio eixo y: as escalas vão de MB a GB.
+    """
+    sub = stats.valid_runs(df[(df["scenario"] == scenario) & df["manager"].isin(YARN_VARIANTS)])
+    med = sub.groupby(["project", "manager"])[["disk_mb", "cache_mb"]].median()
+    projects = [p for p in PROJECTS if p in set(sub["project"])]
+    order = _manager_order(sub["manager"])
+    fig = make_subplots(rows=1, cols=max(len(projects), 1),
+                        subplot_titles=[PROJECTS[p]["label"] for p in projects],
+                        horizontal_spacing=0.08)
+    for col, project in enumerate(projects, start=1):
+        for metric, part, pattern in FOOTPRINT_PARTS:
+            values = [med.loc[(project, m), metric] if (project, m) in med.index else np.nan
+                      for m in order]
+            fig.add_trace(
+                go.Bar(
+                    x=[MANAGERS[m]["label"] for m in order],
+                    y=values,
+                    name=part,
+                    legendgroup=part,
+                    showlegend=col == 1,
+                    marker=dict(color=[PALETTE[m] for m in order], pattern_shape=pattern,
+                                pattern_fgcolor="white", line=dict(color="white", width=0.5)),
+                    hovertemplate=f"<b>%{{x}}</b><br>{part}: %{{y:,.1f}} MB<extra></extra>",
+                ),
+                row=1, col=col,
+            )
+    fig.update_yaxes(title_text="Mediana (MB)", row=1, col=1)
+    fig.update_xaxes(tickangle=-20)
+    fig.update_layout(
+        title=dict(text=f"Pegada em disco: projeto + cache (mediana, cenário {scenario})",
+                   x=0.0, xanchor="left"),
+        barmode="stack",
+        template=TEMPLATE,
+        height=430,
+        legend=dict(orientation="h", yanchor="bottom", y=1.08, xanchor="left", x=0.0,
+                    title_text="Sólido = no projeto · hachurado = no cache  "),
+        margin=dict(t=95, b=70, l=65, r=25),
+    )
+    return fig
 
 
 # --------------------------------------------------------------------------- Adoção (T16, #113)

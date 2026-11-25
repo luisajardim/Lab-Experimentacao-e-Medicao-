@@ -195,3 +195,34 @@ def test_runs_on_the_committed_data():
     omnibus, posthoc = stats.yarn_friedman(df)
     assert not omnibus.empty and len(posthoc) == 3 * len(omnibus)
 
+
+
+# --------------------------------------------------------------------------- Yarn × Yarn (T14)
+
+
+def _yarn_frame():
+    """2 máquinas × 3 reps: Classic sempre 2 s, nm 4 s, PnP 1 s (na máquina b, nm < PnP)."""
+    rows = []
+    for machine in ("a", "b"):
+        for rep in (1, 2, 3):
+            for manager, wall in (("yarn-classic", 2.0), ("yarn-berry-nm", 4.0),
+                                  ("yarn-berry-pnp", 1.0 if machine == "a" else 5.0)):
+                rows.append(dict(machine=machine, rep=rep, project="next-app", scenario="ci",
+                                 manager=manager, wall_s=wall + rep / 100, disk_mb=1.0,
+                                 cache_mb=1.0, exit_code=0, build_ok=True))
+    return pd.DataFrame(rows)
+
+
+def test_yarn_vs_classic_speedup_direction():
+    out = stats.yarn_vs_classic(_yarn_frame(), n_resamples=50).set_index("manager")
+    assert set(out.index) == {"yarn-berry-nm", "yarn-berry-pnp"}
+    assert out.loc["yarn-berry-nm", "speedup"] < 1   # nm mais lento que o Classic
+    assert out.loc["yarn-berry-nm", "n_pairs"] == 6
+
+
+def test_fastest_and_machine_agreement():
+    df = _yarn_frame()
+    fastest = stats.fastest_by_cell(df, stats.YARN_VARIANTS)
+    assert fastest.loc[0, "manager"] == "yarn-classic"   # medianas: Classic 2, PnP 3, nm 4
+    agree = stats.machine_agreement(df, stats.YARN_VARIANTS)
+    assert agree.loc[0, "n_agree"] == 1 and agree.loc[0, "n_machines"] == 2

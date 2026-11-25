@@ -126,26 +126,252 @@ def render_tab_vs_npm(df: pd.DataFrame) -> None:
     st.caption("Análise completa e comparação com promessas dos fabricantes (pnpm / Bun) na T18 (#115).")
 
 
+def _num(x: float, decimals: int = 1) -> str:
+    """Número no formato brasileiro (1.234,5)."""
+    return f"{x:,.{decimals}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def _pval(p: float) -> str:
+    return "< 0,001" if p < 0.001 else _num(p, 3)
+
+
+def _range(low: float, high: float, decimals: int = 2) -> str:
+    """"de 0,46 a 0,96 s", ou "cerca de 0,23 s" quando os extremos coincidem no arredondamento."""
+    a, b = _num(low, decimals), _num(high, decimals)
+    return f"cerca de {a} s" if a == b else f"de {a} a {b} s"
+
+
+def _label(manager: str) -> str:
+    return MANAGERS[manager]["label"]
+
+
+def _cell(project: str, scenario: str) -> str:
+    return f"{PROJECTS[project]['label']} · {SCENARIOS[scenario]['label']}"
+
+
+def _join(items: list[str]) -> str:
+    return items[0] if len(items) == 1 else ", ".join(items[:-1]) + " e " + items[-1]
+
+
+def _yarn_time_reading(yarn_df: pd.DataFrame, best: pd.DataFrame) -> str:
+    """Leitura do tempo calculada dos dados: quem vence onde e se as máquinas concordam."""
+    lines = []
+    for manager in YARN_VARIANTS:
+        wins = best[best["manager"] == manager]
+        if wins.empty:
+            lines.append(f"- **{_label(manager)}** não é o mais rápido em nenhuma célula.")
+            continue
+        cells = _join([_cell(r.project, r.scenario) for r in wins.itertuples()])
+        lines.append(f"- **{_label(manager)}** é o mais rápido em {len(wins)} de {len(best)} "
+                     f"células: {cells}.")
+
+    med = (stats.valid_runs(yarn_df).groupby(["project", "scenario", "manager"])["wall_s"]
+           .median().unstack())
+    reinstall = med.xs("reinstall", level="scenario") if "reinstall" in med.index.get_level_values(
+        "scenario") else pd.DataFrame()
+    if not reinstall.empty and stats.YARN_BASE in reinstall:
+        berry = reinstall.drop(columns=stats.YARN_BASE)
+        lines.append(
+            f"- No **reinstalar**, com tudo já instalado, o Classic leva "
+            f"{_range(reinstall[stats.YARN_BASE].min(), reinstall[stats.YARN_BASE].max())}"
+            f" e o Berry, {_range(berry.min().min(), berry.max().max())}: o Classic "
+            "confere o arquivo de integridade e sai, e o Berry passa de novo pelas etapas de "
+            "resolução, busca e link, mesmo sem baixar nada. A diferença absoluta fica abaixo de "
+            "1 s, então é significativa, mas pouco relevante (C7 em `ameacas.md`)."
+        )
+
+    if {"yarn-berry-nm", "yarn-berry-pnp"} <= set(med.columns):
+        ratio = (med["yarn-berry-nm"] / med["yarn-berry-pnp"]).dropna()
+        if not ratio.empty:
+            project, scenario = ratio.idxmax()
+            files = (stats.valid_runs(yarn_df).query(
+                "project == @project and scenario == @scenario and manager == 'yarn-berry-nm'")
+                ["n_files"].median())
+            lines.append(
+                f"- A maior diferença entre os dois modos do Berry está em **{_cell(project, scenario)}**:"
+                f" {_num(med.loc[(project, scenario), 'yarn-berry-nm'])} s com `node_modules` contra "
+                f"{_num(med.loc[(project, scenario), 'yarn-berry-pnp'])} s com PnP "
+                f"({_num(ratio.max())}×). Com o cache cheio, o modo `node_modules` ainda precisa "
+                f"extrair cerca de {_num(files, 0)} arquivos dos zips do cache para o projeto; o PnP "
+                "só escreve o mapa e lê os pacotes direto dos zips."
+            )
+
+    if not best.empty and best["n_machines"].notna().all():
+        n_machines = int(best["n_machines"].max())
+        same = best[best["n_agree"] == best["n_machines"]]
+        text = (f"- O mais rápido é o mesmo nas {n_machines} máquinas em **{len(same)} de "
+                f"{len(best)} células**")
+        diff = best[best["n_agree"] < best["n_machines"]]
+        if not diff.empty:
+            text += (". Nas outras, a ordem muda em pelo menos uma máquina: "
+                     + _join([_cell(r.project, r.scenario) for r in diff.itertuples()]))
+        lines.append(text + ".")
+    return "\n".join(lines)
+
+
+def _yarn_disk_reading(yarn_df: pd.DataFrame, scenario: str = "ci") -> str:
+    """Leitura de disco, arquivos e memória (cenário `ci`, em que a pegada se estabiliza)."""
+    sub = stats.add_derived(stats.valid_runs(yarn_df[yarn_df["scenario"] == scenario]))
+    med = sub.groupby(["project", "manager"])[
+        ["n_files", "disk_mb", "cache_mb", "footprint_mb", "peak_rss_mb"]].median()
+    if med.empty:
+        return ""
+    lines = []
+    files = med["n_files"].unstack()
+    if {"yarn-berry-pnp", "yarn-berry-nm"} <= set(files.columns):
+        lines.append(
+            f"- **O PnP quase não cria arquivos no projeto:** de {_num(files['yarn-berry-pnp'].min(), 0)}"
+            f" a {_num(files['yarn-berry-pnp'].max(), 0)}, contra "
+            f"{_num(files.drop(columns='yarn-berry-pnp').min().min(), 0)} a "
+            f"{_num(files.drop(columns='yarn-berry-pnp').max().max(), 0)} das variantes com "
+            "`node_modules`. O que sobra no projeto são o `.pnp.cjs`, o carregador e os pacotes que "
+            "precisam ficar descompactados (binários nativos, por exemplo)."
+        )
+    disk = med["disk_mb"].unstack()
+    cache = med["cache_mb"].unstack()
+    if {"yarn-berry-pnp", "yarn-berry-nm"} <= set(disk.columns):
+        cut = (1 - disk["yarn-berry-pnp"] / disk["yarn-berry-nm"]).dropna()
+        lines.append(
+            f"- **No projeto, o PnP ocupa de {_num(100 * cut.min(), 0)} % a {_num(100 * cut.max(), 0)} % "
+            "menos disco** que o Berry com `node_modules`. O cache dos dois modos do Berry é o mesmo "
+            "(um zip por pacote), então a economia é toda no projeto."
+        )
+    if stats.YARN_BASE in cache and "yarn-berry-nm" in cache:
+        project = (cache[stats.YARN_BASE] / cache["yarn-berry-nm"]).idxmax()
+        lines.append(
+            f"- **O cache do Classic é o maior:** {_num(cache.loc[project, stats.YARN_BASE], 0)} MB "
+            f"no {PROJECTS[project]['label']}, contra {_num(cache.loc[project, 'yarn-berry-nm'], 0)} MB "
+            "do Berry. O Classic baixa para o cache os pacotes opcionais de **todas** as plataformas "
+            "(binários nativos para Linux, macOS, AIX etc.) e instala no projeto só o da plataforma "
+            "atual; o Berry baixa só o que a plataforma usa. No React + Vite, os 20 binários nativos "
+            "do TypeScript 7 somam cerca de 716 MB do cache do Classic (reproduzido fora da coleta). "
+            "Por isso a pegada total do Classic é a maior quando há dependências com binários nativos."
+        )
+    ram = med["peak_rss_mb"].unstack()
+    if stats.YARN_BASE in ram and len(ram.columns) == len(YARN_VARIANTS):
+        project = ram.max(axis=1).idxmax()
+        lines.append(
+            f"- Memória (métrica secundária, Co1): no {PROJECTS[project]['label']}, o Berry chega a "
+            f"{_num(ram.loc[project].drop(stats.YARN_BASE).max(), 0)} MB de pico, contra "
+            f"{_num(ram.loc[project, stats.YARN_BASE], 0)} MB do Classic. A amostragem subestima o "
+            "pico, então o valor do Berry é um piso."
+        )
+    return "\n".join(lines)
+
+
+def _yarn_compat_reading(yarn_df: pd.DataFrame) -> str:
+    ok = (yarn_df["exit_code"] == 0) & yarn_df["build_ok"].astype(bool)
+    rate = ok.groupby(yarn_df["manager"]).agg(["sum", "size"])
+    parts = [f"{_label(m)}: {int(rate.loc[m, 'sum'])} de {int(rate.loc[m, 'size'])}"
+             for m in YARN_VARIANTS if m in rate.index]
+    head = ("Todas as instalações das três variantes terminaram sem erro e o build passou"
+            if bool(ok.all()) else "Instalações que terminaram sem erro e com build válido")
+    return (f"{head} ({'; '.join(parts)}). O PnP só compila os três projetos com o build ajustado "
+            "(`vite build` sem `tsc -b` e `next build --webpack`), aplicado aos 6 tratamentos para "
+            "manter a comparação justa. O sucesso do PnP vale **nessa configuração** (Co7 em "
+            "`ameacas.md`); um projeto com ferramentas que leem o `node_modules` direto pode "
+            "exigir mais ajustes.")
+
+
 def render_tab_yarn(df: pd.DataFrame) -> None:
-    """Aba 2: Yarn × Yarn (Classic 1.22 × Berry 4 node-modules × Berry 4 PnP)."""
-    st.subheader("Evolução e Trade-offs na Família Yarn")
+    """Aba 2: Yarn × Yarn (Classic 1.22 × Berry 4 node-modules × Berry 4 PnP), T14 (#111)."""
+    st.subheader("Yarn × Yarn: a evolução do mesmo software e o trade-off do PnP")
+    st.markdown(
+        "Três modos do mesmo gerenciador: o **Yarn Classic 1.22**, a linha antiga, o **Yarn Berry 4 "
+        "com `node_modules`** e o **Yarn Berry 4 com Plug'n'Play (PnP)**, que troca o "
+        "`node_modules` por um mapa (`.pnp.cjs`) e lê os pacotes direto dos zips do cache. O "
+        "Classic é a referência: a pergunta é o que mudou da versão antiga para a nova (RQ2)."
+    )
     yarn_df = df[df["manager"].isin(YARN_VARIANTS)]
+    if yarn_df.empty:
+        st.info("Não há instalações do Yarn nos dados carregados.")
+        return
 
-    col1, col2 = st.columns(2)
-    with col1:
-        st.plotly_chart(figures.fig_yarn_comparison(yarn_df, metric="wall_s"), width="stretch")
-    with col2:
-        st.plotly_chart(figures.fig_yarn_comparison(yarn_df, metric="footprint_mb"), width="stretch")
+    st.markdown("#### Tempo de instalação: depende do projeto e do cenário")
+    vs_classic = stats.yarn_vs_classic(yarn_df)
+    st.plotly_chart(figures.fig_speedup_vs_control(vs_classic, control=stats.YARN_BASE, log_y=True),
+                    width="stretch")
+    st.caption(
+        "Speedup = mediana do Classic / mediana da variante, nos pares de mesma máquina e "
+        "repetição. Acima de 1×, o Berry é mais rápido que o Classic. Barras: IC 95% por bootstrap "
+        "pareado. Eixo em escala log, para 2× e 0,5× ficarem à mesma distância do 1×."
+    )
+    st.markdown(_yarn_time_reading(yarn_df, stats.machine_agreement(yarn_df, YARN_VARIANTS)))
+    metric = st.selectbox(
+        "Valores absolutos por métrica",
+        options=["wall_s", "cpu_s", "peak_rss_mb"],
+        format_func=lambda m: figures.METRIC_LABELS.get(m, m),
+        key="tab2_metric",
+    )
+    st.plotly_chart(figures.fig_yarn_comparison(yarn_df, metric=metric), width="stretch")
 
-    omnibus, posthoc = stats.yarn_friedman(df, metric="wall_s")
-    st.markdown("#### Teste de Friedman (Tempo de Instalação)")
+    st.markdown("#### Disco e arquivos: o que o PnP economiza")
+    st.plotly_chart(figures.fig_yarn_footprint(yarn_df), width="stretch")
+    st.markdown(_yarn_disk_reading(yarn_df))
+    ci = stats.add_derived(stats.valid_runs(yarn_df[yarn_df["scenario"] == "ci"]))
+    if not ci.empty:
+        table = (ci.groupby(["project", "manager"])[["n_files", "disk_mb", "cache_mb", "footprint_mb"]]
+                 .median().reset_index())
+        table["project"] = table["project"].map(lambda p: PROJECTS[p]["label"])
+        table["manager"] = table["manager"].map(_label)
+        st.dataframe(
+            table.rename(columns={"project": "Projeto", "manager": "Variante",
+                                  "n_files": "Arquivos no projeto", "disk_mb": "Projeto (MB)",
+                                  "cache_mb": "Cache (MB)", "footprint_mb": "Total (MB)"}).round(1),
+            width="stretch", hide_index=True,
+        )
+        st.caption("Medianas depois do cenário CI (lockfile presente, cache vazio antes da instalação).")
+
+    st.markdown("#### Compatibilidade")
+    st.markdown(_yarn_compat_reading(yarn_df))
+
+    st.markdown("#### Testes: Friedman + post-hoc de Wilcoxon com Holm (tempo)")
+    omnibus, posthoc = stats.yarn_friedman(yarn_df, metric="wall_s")
     if not omnibus.empty:
-        st.dataframe(omnibus.round(4), width="stretch", hide_index=True)
+        rejected = int(omnibus["reject"].sum())
+        st.markdown(
+            f"O Friedman rejeita a igualdade das três variantes em **{rejected} de {len(omnibus)}** "
+            f"combinações de projeto e cenário (α = {_num(ALPHA, 2)})."
+        )
+        view = pd.DataFrame({
+            "Projeto": omnibus["project"].map(lambda p: PROJECTS[p]["label"]),
+            "Cenário": omnibus["scenario"].map(lambda s: SCENARIOS[s]["label"]),
+            "Blocos": omnibus["n_blocks"],
+            **{f"Mediana {_label(v)} (s)": omnibus[f"median_{v}"].round(2) for v in YARN_VARIANTS},
+            "χ²": omnibus["statistic"].round(1),
+            "p": omnibus["p"].map(_pval),
+            "Rejeita H₀": omnibus["reject"].map({True: "sim", False: "não"}),
+        })
+        st.dataframe(view, width="stretch", hide_index=True)
     if not posthoc.empty:
-        with st.expander("Ver comparações post-hoc (Wilcoxon + Holm)"):
-            st.dataframe(posthoc.round(4), width="stretch", hide_index=True)
-
-    st.caption("Análise detalhada de compatibilidade (PnP vs node_modules) e nº de arquivos na T14 (#111).")
+        not_sig = posthoc[~posthoc["reject"]]
+        if not not_sig.empty:
+            st.markdown(
+                "No post-hoc, os pares **sem diferença significativa** depois do Holm são: "
+                + _join([f"{_label(r.a)} × {_label(r.b)} em {_cell(r.project, r.scenario)}"
+                         for r in not_sig.itertuples()]) + "."
+            )
+        faster_a = posthoc["median_a"] <= posthoc["median_b"]
+        pairs = pd.DataFrame({
+            "Projeto": posthoc["project"].map(lambda p: PROJECTS[p]["label"]),
+            "Cenário": posthoc["scenario"].map(lambda s: SCENARIOS[s]["label"]),
+            "Par": [f"{_label(a)} × {_label(b)}" for a, b in zip(posthoc["a"], posthoc["b"], strict=True)],
+            "Mais rápido": [_label(a if f else b)
+                            for a, b, f in zip(posthoc["a"], posthoc["b"], faster_a, strict=True)],
+            "Razão das medianas": (posthoc[["median_a", "median_b"]].max(axis=1)
+                                   / posthoc[["median_a", "median_b"]].min(axis=1)).round(2),
+            "Cliff's δ": posthoc["cliffs_delta"].abs().round(2),
+            "Magnitude": posthoc["magnitude"],
+            "p (Holm)": posthoc["p_holm"].map(_pval),
+            "Significativo": posthoc["reject"].map({True: "sim", False: "não"}),
+        })
+        with st.expander("Ver as comparações post-hoc"):
+            st.dataframe(pairs, width="stretch", hide_index=True)
+    st.caption(
+        "Os blocos (máquina × repetição) são tratados como independentes: leia os p-valores como "
+        "comparação **nestas 3 máquinas** (C1 em `ameacas.md`). O apoio mais forte para "
+        "generalizar é a concordância entre as máquinas, mostrada acima."
+    )
 
 
 @st.cache_data

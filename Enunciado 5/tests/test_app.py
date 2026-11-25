@@ -64,3 +64,21 @@ def test_aba_de_adocao_desenha_os_graficos():
     avisos = " ".join(e.value for e in at.error)
     assert "download não é uso" in avisos.lower() or "já vem instalado" in avisos
 
+
+
+def test_yarn_footprint_stacks_project_and_cache():
+    df = load_runs(include_synthetic=True)
+    fig = figures.fig_yarn_footprint(df)
+    assert fig.layout.barmode == "stack"
+    names = {t.name for t in fig.data}
+    assert names == {"No projeto", "No cache"}
+    for trace in fig.data:
+        assert set(trace.marker.color) <= set(PALETTE.values())
+
+
+def test_yarn_readings_use_data():
+    df = load_runs(include_synthetic=True)
+    yarn = df[df["manager"].isin(stats.YARN_VARIANTS)]
+    text = app._yarn_time_reading(yarn, stats.machine_agreement(yarn, stats.YARN_VARIANTS))
+    assert "células" in text
+    assert app._range(0.231, 0.229) == "cerca de 0,23 s"
