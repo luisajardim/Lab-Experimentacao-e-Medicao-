@@ -8,6 +8,7 @@ operação (séries de downloads da API pública do npm).
 
 - **Proposta do estudo** (3 critérios, GQM, hipóteses, 7 categorias): [docs/proposta.md](docs/proposta.md)
 - **Planejamento e tarefas:** [PLAN.md](PLAN.md) · **Enunciado:** [ENUNCIADO.pdf](ENUNCIADO.pdf)
+- **Dashboard publicado:** https://experimentacao-lab05-gerenciadores.streamlit.app
 - **Repositório / GitHub Projects:** https://github.com/luisajardim/Lab-Experimentacao-e-Medicao- · board "Kanban Lab" (label `Enunciado 5`)
 - **Protocolo de coleta:** [docs/protocolo.md](docs/protocolo.md) · **Schema dos dados:** [docs/schema.md](docs/schema.md)
 - **Downloads do npm (2º caminho):** [docs/fonte_downloads.md](docs/fonte_downloads.md)

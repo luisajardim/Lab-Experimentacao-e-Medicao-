@@ -27,6 +27,7 @@ import stats  # noqa: E402
 from config import (  # noqa: E402
     ALPHA,
     CONTROL,
+    DASHBOARD_URL,
     MANAGERS,
     PROJECTS,
     PROJECTS_URL,
@@ -71,8 +72,9 @@ def render_header(df: pd.DataFrame, source_kind: str) -> None:
         "o desempenho?*"
     )
     st.caption(
-        f"[Repositório GitHub]({REPO_URL}) · [Board Kanban Lab]({PROJECTS_URL}) · "
-        f"Controle: `{CONTROL}` · Nível de significância: `α = {ALPHA:.2f}`".replace(".", ",")
+        f"[Dashboard publicado]({DASHBOARD_URL}) · [Repositório GitHub]({REPO_URL}) · "
+        f"[Board Kanban Lab]({PROJECTS_URL}) · "
+        f"Controle: `{CONTROL}` · Nível de significância: `α = {ALPHA:.2f}`".replace("0.", "0,")
     )
 
     if source_kind == "synthetic":

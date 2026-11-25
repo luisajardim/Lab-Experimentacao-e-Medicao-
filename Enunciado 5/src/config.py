@@ -118,4 +118,4 @@ PALETTE = {
 
 REPO_URL = "https://github.com/luisajardim/Lab-Experimentacao-e-Medicao-"
 PROJECTS_URL = "https://github.com/users/luisajardim/projects/2"
-DASHBOARD_URL = ""   # preenchido no deploy (T11, #106)
+DASHBOARD_URL = "https://experimentacao-lab05-gerenciadores.streamlit.app"   # deploy (T11, #106)
