@@ -82,3 +82,22 @@ def test_yarn_readings_use_data():
     text = app._yarn_time_reading(yarn, stats.machine_agreement(yarn, stats.YARN_VARIANTS))
     assert "células" in text
     assert app._range(0.231, 0.229) == "cerca de 0,23 s"
+
+
+def test_tab_vs_npm_claims_and_footprint_figures():
+    df = load_runs(include_synthetic=True)
+    vs_ctrl = stats.compare_to_control(df, n_resamples=100)
+    claims = stats.compare_claims(vs_ctrl)
+    assert not claims.empty
+    fig_claims = figures.fig_claims_vs_measured(claims)
+    assert isinstance(fig_claims, go.Figure) and len(fig_claims.data) > 0
+
+    fig_all = figures.fig_footprint(df, scenario="ci")
+    assert fig_all.layout.barmode == "stack"
+    for trace in fig_all.data:
+        assert set(trace.marker.color) <= set(PALETTE.values())
+
+    agreement = stats.machine_agreement(df, list(PALETTE))
+    reading = app._vs_npm_time_reading(df, vs_ctrl, agreement)
+    assert "Wilcoxon" not in reading and "Holm" in reading
+    assert "promessas" in " ".join(m.value.lower() for m in []) or app._claims_reading(claims)

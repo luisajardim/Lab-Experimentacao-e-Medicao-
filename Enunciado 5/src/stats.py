@@ -356,3 +356,53 @@ def machine_agreement(df: pd.DataFrame, managers: Sequence[str],
         [merged[c] for c in GROUP]).agg(["sum", "size"])
     agree.columns = ["n_agree", "n_machines"]
     return overall.merge(agree.reset_index(), on=list(GROUP), how="left")
+
+
+# --------------------------------------------------------------------------- Promessas (T18, #115)
+
+# Valores publicados pelos fabricantes (acesso em 16/11/2026; docs/proposta.md §6.3):
+# - pnpm.io/benchmarks (dados de 13/11/2026, Linux x64, faixa = alotta-files / alotta-packages)
+# - bun.com/package-manager (Linux x64 EPYC 9R14, medianas de 3, além do slogan "up to 25x faster")
+MANUFACTURER_CLAIMS: tuple[dict, ...] = (
+    {"manager": "pnpm", "scenario": "cold", "claimed_low": 7.6, "claimed_high": 9.7,
+     "claimed_label": "7,6× – 9,7×", "source": "pnpm.io/benchmarks (13/11/2026)"},
+    {"manager": "pnpm", "scenario": "ci", "claimed_low": 3.2, "claimed_high": 3.2,
+     "claimed_label": "≈ 3,2×", "source": "pnpm.io/benchmarks (13/11/2026)"},
+    {"manager": "pnpm", "scenario": "warm-cache", "claimed_low": 6.4, "claimed_high": 7.2,
+     "claimed_label": "6,4× – 7,2×", "source": "pnpm.io/benchmarks (13/11/2026)"},
+    {"manager": "pnpm", "scenario": "reinstall", "claimed_low": 42.0, "claimed_high": 120.0,
+     "claimed_label": "42× – 120×", "source": "pnpm.io/benchmarks (13/11/2026)"},
+    {"manager": "bun", "scenario": "cold", "claimed_low": 12.9, "claimed_high": 12.9,
+     "claimed_label": "≈ 12,9×", "source": "bun.com/package-manager (16/11/2026)"},
+    {"manager": "bun", "scenario": "ci", "claimed_low": 5.2, "claimed_high": 5.2,
+     "claimed_label": "≈ 5,2×", "source": "bun.com/package-manager (16/11/2026)"},
+    {"manager": "bun", "scenario": "warm-cache", "claimed_low": 21.2, "claimed_high": 21.2,
+     "claimed_label": "≈ 21,2×", "source": "bun.com/package-manager (16/11/2026)"},
+    {"manager": "bun", "scenario": "reinstall", "claimed_low": 28.0, "claimed_high": 28.0,
+     "claimed_label": "≈ 28× (slogan até 25×)", "source": "bun.com/package-manager (16/11/2026)"},
+)
+
+
+def compare_claims(vs_ctrl: pd.DataFrame) -> pd.DataFrame:
+    """Cruza o speedup medido (com IC 95%) com as promessas publicadas por pnpm e Bun (RQ3).
+
+    H₀: a faixa/valor anunciado intercepta o IC 95% do speedup medido.
+    """
+    claims = pd.DataFrame(MANUFACTURER_CLAIMS)
+    merged = vs_ctrl.merge(claims, on=["manager", "scenario"], how="inner")
+    if merged.empty:
+        return merged
+
+    def _verdict(row) -> str:
+        lo, hi = row["speedup_low"], row["speedup_high"]
+        c_lo, c_hi = row["claimed_low"], row["claimed_high"]
+        if np.isnan(lo) or np.isnan(hi):
+            return "Indefinido"
+        if hi < c_lo:
+            return "Abaixo do anunciado"
+        if lo > c_hi:
+            return "Supera o anunciado"
+        return "Confirma (no IC 95%)"
+
+    merged["status"] = merged.apply(_verdict, axis=1)
+    return merged.sort_values(["manager", "project", "scenario"]).reset_index(drop=True)

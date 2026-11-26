@@ -226,3 +226,23 @@ def test_fastest_and_machine_agreement():
     assert fastest.loc[0, "manager"] == "yarn-classic"   # medianas: Classic 2, PnP 3, nm 4
     agree = stats.machine_agreement(df, stats.YARN_VARIANTS)
     assert agree.loc[0, "n_agree"] == 1 and agree.loc[0, "n_machines"] == 2
+
+
+# --------------------------------------------------------------------------- Promessas (T18)
+
+
+def test_compare_claims_classifies_ci_verdicts():
+    vs = pd.DataFrame(
+        [
+            {"project": "next-app", "scenario": "cold", "manager": "pnpm",
+             "speedup": 2.0, "speedup_low": 1.5, "speedup_high": 2.5},
+            {"project": "next-app", "scenario": "warm-cache", "manager": "pnpm",
+             "speedup": 10.0, "speedup_low": 8.0, "speedup_high": 12.0},
+            {"project": "express-api", "scenario": "reinstall", "manager": "bun",
+             "speedup": 28.0, "speedup_low": 5.0, "speedup_high": 35.0},
+        ]
+    )
+    out = stats.compare_claims(vs).set_index(["manager", "scenario"])
+    assert out.loc[("pnpm", "cold"), "status"] == "Abaixo do anunciado"
+    assert out.loc[("pnpm", "warm-cache"), "status"] == "Supera o anunciado"
+    assert out.loc[("bun", "reinstall"), "status"] == "Confirma (no IC 95%)"

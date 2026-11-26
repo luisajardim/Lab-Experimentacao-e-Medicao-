@@ -156,8 +156,8 @@ def fig_speedup_vs_control(vs_ctrl: pd.DataFrame, control: str = CONTROL,
     fig.update_yaxes(title_text=f"Speedup vs. {MANAGERS[control]['label']} (×, >1 = mais rápido)",
                      row=1, col=1)
     if log_y:
-        fig.update_yaxes(type="log", tickvals=[0.1, 0.25, 0.5, 1, 2, 4],
-                         ticktext=["0,1×", "0,25×", "0,5×", "1×", "2×", "4×"])
+        fig.update_yaxes(type="log", tickvals=[0.25, 0.5, 1, 2, 4, 8, 16, 32],
+                         ticktext=["0,25×", "0,5×", "1×", "2×", "4×", "8×", "16×", "32×"])
     fig.update_layout(
         title=dict(
             text=f"Speedup em relação ao {MANAGERS[control]['label']} (IC 95% por bootstrap)",
@@ -186,13 +186,19 @@ def fig_yarn_comparison(df: pd.DataFrame, metric: str = "wall_s") -> go.Figure:
 FOOTPRINT_PARTS = (("disk_mb", "No projeto", ""), ("cache_mb", "No cache", "/"))
 
 
-def fig_yarn_footprint(df: pd.DataFrame, scenario: str = "ci") -> go.Figure:
-    """Pegada em disco das variantes do Yarn: projeto (sólido) + cache (hachurado), por projeto.
+def fig_footprint(
+    df: pd.DataFrame,
+    scenario: str = "ci",
+    managers: list[str] | None = None,
+    title: str | None = None,
+) -> go.Figure:
+    """Pegada em disco: projeto (sólido) + cache (hachurado), por projeto.
 
     Usa um cenário só (`ci` por padrão: cache vazio antes, cheio depois), porque a pegada quase não
     muda entre cenários. Cada projeto tem o próprio eixo y: as escalas vão de MB a GB.
     """
-    sub = stats.valid_runs(df[(df["scenario"] == scenario) & df["manager"].isin(YARN_VARIANTS)])
+    selected = list(MANAGERS) if managers is None else list(managers)
+    sub = stats.valid_runs(df[(df["scenario"] == scenario) & df["manager"].isin(selected)])
     med = sub.groupby(["project", "manager"])[["disk_mb", "cache_mb"]].median()
     projects = [p for p in PROJECTS if p in set(sub["project"])]
     order = _manager_order(sub["manager"])
@@ -217,18 +223,23 @@ def fig_yarn_footprint(df: pd.DataFrame, scenario: str = "ci") -> go.Figure:
                 row=1, col=col,
             )
     fig.update_yaxes(title_text="Mediana (MB)", row=1, col=1)
-    fig.update_xaxes(tickangle=-20)
+    fig.update_xaxes(tickangle=-25)
     fig.update_layout(
-        title=dict(text=f"Pegada em disco: projeto + cache (mediana, cenário {scenario})",
+        title=dict(text=title or f"Pegada em disco: projeto + cache (mediana, cenário {scenario})",
                    x=0.0, xanchor="left"),
         barmode="stack",
         template=TEMPLATE,
         height=430,
         legend=dict(orientation="h", yanchor="bottom", y=1.08, xanchor="left", x=0.0,
                     title_text="Sólido = no projeto · hachurado = no cache  "),
-        margin=dict(t=95, b=70, l=65, r=25),
+        margin=dict(t=95, b=80, l=65, r=25),
     )
     return fig
+
+
+def fig_yarn_footprint(df: pd.DataFrame, scenario: str = "ci") -> go.Figure:
+    """Pegada em disco das variantes do Yarn: projeto (sólido) + cache (hachurado), por projeto."""
+    return fig_footprint(df, scenario=scenario, managers=list(YARN_VARIANTS))
 
 
 # --------------------------------------------------------------------------- Adoção (T16, #113)
@@ -480,5 +491,156 @@ def fig_adoption_vs_speedup(points: pd.DataFrame, control: str = CONTROL) -> go.
                     "Losango = tratamentos que compartilham o mesmo pacote."),
         xref="paper", yref="paper", x=0.0, y=-0.26, showarrow=False,
         font=dict(size=10, color="#7F8C8D"), xanchor="left", align="left",
+    )
+    return fig
+
+
+# --------------------------------------------------------------------------- Promessas (T18, #115)
+
+
+def fig_claims_vs_measured(claims_df: pd.DataFrame) -> go.Figure:
+    """Speedup medido (pontos com IC 95%) comparado às promessas de pnpm e Bun (eixo log)."""
+    managers = [m for m in ("pnpm", "bun") if m in set(claims_df["manager"])]
+    scenarios = [s for s in SCENARIOS if s in set(claims_df["scenario"])]
+    projects = [p for p in PROJECTS if p in set(claims_df["project"])]
+    symbols = {"express-api": "circle", "react-vite": "square", "next-app": "diamond"}
+
+    fig = make_subplots(
+        rows=1,
+        cols=max(len(managers), 1),
+        subplot_titles=[f"{MANAGERS[m]['label']} — prometido × medido" for m in managers],
+        shared_yaxes=True,
+        horizontal_spacing=0.08,
+    )
+
+    for col, manager in enumerate(managers, start=1):
+        sub_m = claims_df[claims_df["manager"] == manager]
+        # Faixa ou valor anunciado por cenário
+        for s_idx, scenario in enumerate(scenarios):
+            c_rows = sub_m[sub_m["scenario"] == scenario]
+            if c_rows.empty:
+                continue
+            c_lo = float(c_rows["claimed_low"].iloc[0])
+            c_hi = float(c_rows["claimed_high"].iloc[0])
+            x_left, x_right = s_idx - 0.34, s_idx + 0.34
+            if c_hi > c_lo:
+                fig.add_trace(
+                    go.Scatter(
+                        x=[x_left, x_right, x_right, x_left, x_left],
+                        y=[c_lo, c_lo, c_hi, c_hi, c_lo],
+                        fill="toself",
+                        fillcolor="rgba(44, 62, 80, 0.14)",
+                        line=dict(color="#2C3E50", width=1, dash="dot"),
+                        name="Faixa/valor anunciado" if (col == 1 and s_idx == 0) else None,
+                        legendgroup="anunciado",
+                        showlegend=(col == 1 and s_idx == 0),
+                        hovertemplate=(
+                            f"<b>Anunciado ({MANAGERS[manager]['label']})</b><br>"
+                            f"{SCENARIOS[scenario]['label']}: {c_rows['claimed_label'].iloc[0]}"
+                            "<extra></extra>"
+                        ),
+                    ),
+                    row=1,
+                    col=col,
+                )
+            else:
+                fig.add_trace(
+                    go.Scatter(
+                        x=[x_left, x_right],
+                        y=[c_lo, c_lo],
+                        mode="lines",
+                        line=dict(color="#2C3E50", width=2.5, dash="dash"),
+                        name="Faixa/valor anunciado" if (col == 1 and s_idx == 0) else None,
+                        legendgroup="anunciado",
+                        showlegend=(col == 1 and s_idx == 0),
+                        hovertemplate=(
+                            f"<b>Anunciado ({MANAGERS[manager]['label']})</b><br>"
+                            f"{SCENARIOS[scenario]['label']}: {c_rows['claimed_label'].iloc[0]}"
+                            "<extra></extra>"
+                        ),
+                    ),
+                    row=1,
+                    col=col,
+                )
+
+        # Pontos medidos (um deslocamento horizontal pequeno por projeto)
+        offsets = np.linspace(-0.18, 0.18, max(len(projects), 1))
+        for p_idx, project in enumerate(projects):
+            sub_p = sub_m[sub_m["project"] == project].set_index("scenario").reindex(scenarios)
+            err_hi = (sub_p["speedup_high"] - sub_p["speedup"]).clip(lower=0).fillna(0)
+            err_lo = (sub_p["speedup"] - sub_p["speedup_low"]).clip(lower=0).fillna(0)
+            x_pos = np.arange(len(scenarios)) + (offsets[p_idx] if len(projects) > 1 else 0.0)
+            fig.add_trace(
+                go.Scatter(
+                    x=x_pos,
+                    y=sub_p["speedup"],
+                    mode="markers",
+                    name=PROJECTS[project]["label"],
+                    legendgroup=project,
+                    showlegend=col == 1,
+                    marker=dict(
+                        size=10,
+                        symbol=symbols.get(project, "circle"),
+                        color=PALETTE[manager],
+                        line=dict(width=1, color="white"),
+                    ),
+                    error_y=dict(
+                        type="data",
+                        symmetric=False,
+                        array=err_hi,
+                        arrayminus=err_lo,
+                        thickness=1.5,
+                        color=PALETTE[manager],
+                    ),
+                    customdata=sub_p[["claimed_label", "status"]].to_numpy(),
+                    hovertemplate=(
+                        f"<b>{MANAGERS[manager]['label']} · {PROJECTS[project]['label']}</b><br>"
+                        "Speedup medido: %{y:.2f}×<br>"
+                        "Anunciado: %{customdata[0]}<br>"
+                        "Status: %{customdata[1]}<extra></extra>"
+                    ),
+                ),
+                row=1,
+                col=col,
+            )
+
+        fig.add_hline(y=1.0, line_dash="dot", line_color=PALETTE[CONTROL], row=1, col=col)
+        if manager == "bun":
+            fig.add_hline(
+                y=25.0,
+                line_dash="dot",
+                line_color=PALETTE["bun"],
+                annotation_text='Slogan Bun: "até 25×"',
+                annotation_position="top left",
+                row=1,
+                col=col,
+            )
+        fig.update_xaxes(
+            tickvals=list(range(len(scenarios))),
+            ticktext=[SCENARIOS[s]["label"] for s in scenarios],
+            row=1,
+            col=col,
+        )
+
+    fig.update_yaxes(
+        title_text="Speedup vs. npm (×, escala log)",
+        type="log",
+        tickvals=[0.25, 0.5, 1, 2, 4, 8, 16, 32, 64, 128],
+        ticktext=["0,25×", "0,5×", "1×", "2×", "4×", "8×", "16×", "32×", "64×", "128×"],
+        row=1,
+        col=1,
+    )
+    for col_i in range(2, len(managers) + 1):
+        fig.update_yaxes(type="log", row=1, col=col_i)
+    fig.update_layout(
+        title=dict(
+            text="Promessas dos fabricantes (Linux / npm 12) × speedup medido no Windows 11 (IC 95%)",
+            x=0.0,
+            xanchor="left",
+        ),
+        template=TEMPLATE,
+        height=460,
+        legend=dict(orientation="h", yanchor="bottom", y=1.08, xanchor="left", x=0.0),
+        margin=dict(t=100, b=55, l=70, r=25),
     )
     return fig

@@ -100,32 +100,274 @@ def render_header(df: pd.DataFrame, source_kind: str) -> None:
     c4.metric("Taxa de builds válidos", f"{valid_pct:.1%}".replace(".", ","))
 
 
+def _vs_npm_time_reading(
+    df: pd.DataFrame, vs_ctrl: pd.DataFrame, agreement: pd.DataFrame
+) -> str:
+    """Leitura do tempo e concordância entre máquinas calculada diretamente dos dados."""
+    if vs_ctrl.empty:
+        return ""
+    lines = []
+    n_cells = len(vs_ctrl[["project", "scenario"]].drop_duplicates())
+    n_sig = int(vs_ctrl["reject"].sum())
+    faster_sig = int((vs_ctrl["reject"] & (vs_ctrl["speedup"] > 1)).sum())
+    slower_sig = int((vs_ctrl["reject"] & (vs_ctrl["speedup"] < 1)).sum())
+    lines.append(
+        f"- Das **{len(vs_ctrl)} comparações** contra o `npm` ({n_cells} células × 5 tratamentos), "
+        f"**{n_sig}** rejeitam $H_0$ após correção de Holm ($\\alpha = {_num(ALPHA, 2)}$): em "
+        f"**{faster_sig}** o tratamento é significativamente mais rápido e em **{slower_sig}** é mais lento."
+    )
+
+    pnpm = vs_ctrl[vs_ctrl["manager"] == "pnpm"]
+    if not pnpm.empty:
+        wins_pnpm = int((pnpm["reject"] & (pnpm["speedup"] > 1)).sum())
+        lines.append(
+            f"- **{_label('pnpm')} é o mais consistente:** vence o `npm` em **{wins_pnpm} de "
+            f"{len(pnpm)} células**, com speedup de {_num(pnpm['speedup'].min())}× a "
+            f"{_num(pnpm['speedup'].max())}× (sem nenhuma derrota significativa)."
+        )
+
+    bun = vs_ctrl[vs_ctrl["manager"] == "bun"]
+    if not bun.empty:
+        reinst = bun[bun["scenario"] == "reinstall"]
+        other = bun[bun["scenario"] != "reinstall"]
+        slower = other[other["speedup"] < 1]
+        parts = []
+        if not reinst.empty:
+            parts.append(
+                f"no **reinstalar** dispara para {_num(reinst['speedup'].min())}×–"
+                f"{_num(reinst['speedup'].max())}× ({_range(reinst['median_manager'].min(), reinst['median_manager'].max())})"
+            )
+        if not slower.empty:
+            parts.append(
+                f"mas perde do `npm` em {len(slower)} células de projeto menor "
+                f"({_num(slower['speedup'].min())}×–{_num(slower['speedup'].max())}×)"
+            )
+        if parts:
+            lines.append(f"- **{_label('bun')} depende muito do cenário:** " + ", ".join(parts) + ".")
+
+    pnp_next = vs_ctrl[(vs_ctrl["manager"] == "yarn-berry-pnp") & (vs_ctrl["project"] == "next-app")]
+    if not pnp_next.empty:
+        warm = pnp_next[pnp_next["scenario"] == "warm-cache"]
+        if not warm.empty:
+            w = warm.iloc[0]
+            lines.append(
+                f"- **{_label('yarn-berry-pnp')}** brilha no projeto grande (`Next.js`), chegando a "
+                f"**{_num(w['speedup'])}×** no cache quente ({_num(w['median_manager'])} s contra "
+                f"{_num(w['median_control'])} s do `npm`), ao evitar a extração de milhares de arquivos no NTFS."
+            )
+
+    if not agreement.empty and agreement["n_machines"].notna().all():
+        n_machines = int(agreement["n_machines"].max())
+        if n_machines > 1:
+            same = agreement[agreement["n_agree"] == agreement["n_machines"]]
+            lines.append(
+                f"- **Concordância entre máquinas (ameaça C1):** o vencedor absoluto é o mesmo nas "
+                f"{n_machines} máquinas em **{len(same)} de {len(agreement)} células** "
+                "(ex.: `Bun` vence `reinstall` e `pnpm` vence `React + Vite` nas 3 máquinas)."
+            )
+    return "\n".join(lines)
+
+
+def _claims_reading(claims_df: pd.DataFrame) -> str:
+    """Resumo calculado dos dados sobre as promessas do pnpm e do Bun (RQ3)."""
+    if claims_df.empty:
+        return ""
+    lines = []
+    for manager in ("pnpm", "bun"):
+        sub = claims_df[claims_df["manager"] == manager]
+        if sub.empty:
+            continue
+        ok = sub[sub["status"].isin(["Confirma (no IC 95%)", "Supera o anunciado"])]
+        if ok.empty:
+            lines.append(
+                f"- **{_label(manager)}:** o intervalo de confiança de 95% fica abaixo do anunciado "
+                f"em todas as {len(sub)} células ({_num(sub['speedup'].min())}× a {_num(sub['speedup'].max())}×)."
+            )
+        else:
+            cells = _join([f"{_cell(r.project, r.scenario)} ({_num(r.speedup)}×)" for r in ok.itertuples()])
+            lines.append(
+                f"- **{_label(manager)}:** confirma ou supera o valor publicado em **{len(ok)} de "
+                f"{len(sub)} células** ({cells}); nas demais fica abaixo do benchmark Linux."
+            )
+    return "\n".join(lines)
+
+
+def _vs_npm_disk_reading(df: pd.DataFrame, scenario: str = "ci") -> str:
+    """Leitura da pegada em disco, nº de arquivos e compatibilidade no cenário `ci`."""
+    sub = stats.add_derived(stats.valid_runs(df[df["scenario"] == scenario]))
+    if sub.empty:
+        return ""
+    med = sub.groupby(["project", "manager"])[["disk_mb", "cache_mb", "footprint_mb", "n_files"]].median()
+    lines = []
+    if "next-app" in med.index.get_level_values("project"):
+        nx = med.loc["next-app"]
+        if {"pnpm", "npm", "yarn-classic"} <= set(nx.index):
+            lines.append(
+                f"- **Pegada total no `Next.js` (`disk_mb + cache_mb`):** "
+                f"`pnpm` gasta **{_num(nx.loc['pnpm', 'footprint_mb'], 0)} MB** (cache de só "
+                f"{_num(nx.loc['pnpm', 'cache_mb'], 0)} MB via hard links) contra "
+                f"{_num(nx.loc['npm', 'footprint_mb'], 0)} MB do `npm` e "
+                f"{_num(nx.loc['yarn-classic', 'footprint_mb'], 0)} MB do `Yarn Classic` "
+                "(que baixa binários nativos de todas as plataformas)."
+            )
+        if "yarn-berry-pnp" in nx.index:
+            lines.append(
+                f"- **Nº de arquivos no projeto (`Next.js`):** o `Yarn Berry (PnP)` cria só "
+                f"**{_num(nx.loc['yarn-berry-pnp', 'n_files'], 0)} arquivos** no projeto, contra mais de "
+                f"**10.300 arquivos** em qualquer gerenciador com `node_modules`."
+            )
+    ok = (df["exit_code"] == 0) & df["build_ok"].astype(bool)
+    rate_all = ok.mean()
+    lines.append(
+        f"- **Compatibilidade (`build_ok`):** taxa global de **{_num(100 * rate_all)}%** "
+        f"({int(ok.sum())} de {len(df)} instalações passaram no `build` após instalar)."
+    )
+    return "\n".join(lines)
+
+
 def render_tab_vs_npm(df: pd.DataFrame) -> None:
-    """Aba 1: Todos × npm (descritiva, speedup, Wilcoxon pareado + Holm, Cliff's δ e disco)."""
-    st.subheader("Desempenho vs. Controle (npm)")
+    """Aba 1: Todos × npm — testes contra controle, promessas (RQ3), disco e arquivos (T18, #115)."""
+    st.subheader("Todos × npm: desempenho, promessas dos fabricantes e disco")
+    st.markdown(
+        "Compara cada gerenciador contra o controle **`npm`** (`11.19.1`) nas 3 máquinas "
+        "(`Wilcoxon pareado` por máquina × repetição + correção de `Holm`, Cliff's δ e "
+        "speedup com IC 95% por bootstrap)."
+    )
+
+    vs_ctrl_time = stats.compare_to_control(df, metric="wall_s")
+    agreement = stats.machine_agreement(df, list(MANAGERS), metric="wall_s")
+
+    # ---------------------------------------------------------------- 1. Tempo e Speedup
+    st.markdown("#### 1. Tempo de instalação e speedup em relação ao npm (RQ1)")
+    if not vs_ctrl_time.empty:
+        st.plotly_chart(figures.fig_speedup_vs_control(vs_ctrl_time, log_y=True), width="stretch")
+        st.caption(
+            "Speedup = mediana do npm / mediana do tratamento (> 1× = mais rápido que o npm). "
+            "Barras: IC 95% por bootstrap pareado. Eixo Y em escala logarítmica."
+        )
+        st.markdown(_vs_npm_time_reading(df, vs_ctrl_time, agreement))
+
     metric = st.selectbox(
-        "Métrica de comparação",
-        options=["wall_s", "footprint_mb", "disk_mb", "peak_rss_mb", "n_files"],
+        "Explorar medianas absolutas por métrica",
+        options=["wall_s", "footprint_mb", "disk_mb", "n_files", "cpu_s", "peak_rss_mb"],
         format_func=lambda m: figures.METRIC_LABELS.get(m, m),
         key="tab1_metric",
     )
-
+    if metric in ("cpu_s", "peak_rss_mb"):
+        st.caption(
+            "Ressalva (ameaça Co1): `cpu_s` e `peak_rss_mb` são amostrados a cada 50 ms e "
+            "subestimados no Windows (sobretudo no Bun); use-os apenas como referência secundária."
+        )
     desc = stats.describe(df, metric=metric)
     st.plotly_chart(figures.fig_metric_by_scenario(desc, metric=metric), width="stretch")
 
-    vs_ctrl = stats.compare_to_control(df, metric=metric)
-    if metric == "wall_s" and not vs_ctrl.empty:
-        st.plotly_chart(figures.fig_speedup_vs_control(vs_ctrl), width="stretch")
+    # ---------------------------------------------------------------- 2. Promessas (RQ3)
+    st.markdown("#### 2. Promessas dos fabricantes × medido no Windows 11 (RQ3)")
+    claims_df = stats.compare_claims(vs_ctrl_time)
+    if not claims_df.empty:
+        st.plotly_chart(figures.fig_claims_vs_measured(claims_df), width="stretch")
+        st.markdown(_claims_reading(claims_df))
 
-    st.markdown("#### Tabela de Testes (Wilcoxon pareado + correção de Holm) e Tamanho do Efeito")
-    if not vs_ctrl.empty:
-        view = vs_ctrl.copy()
-        view["project"] = view["project"].map(lambda p: PROJECTS[p]["label"])
-        view["scenario"] = view["scenario"].map(lambda s: SCENARIOS[s]["label"])
-        view["manager"] = view["manager"].map(lambda m: MANAGERS[m]["label"])
-        st.dataframe(view.round(4), width="stretch", hide_index=True)
+        claims_view = pd.DataFrame({
+            "Gerenciador": claims_df["manager"].map(_label),
+            "Projeto": claims_df["project"].map(lambda p: PROJECTS[p]["label"]),
+            "Cenário": claims_df["scenario"].map(lambda s: SCENARIOS[s]["label"]),
+            "Anunciado": claims_df["claimed_label"],
+            "Speedup medido": claims_df["speedup"].map(lambda v: f"{_num(v, 2)}×"),
+            "IC 95% (bootstrap)": [
+                f"[{_num(lo, 2)}×; {_num(hi, 2)}×]"
+                for lo, hi in zip(claims_df["speedup_low"], claims_df["speedup_high"], strict=True)
+            ],
+            "Veredito": claims_df["status"],
+            "Fonte": claims_df["source"],
+        })
+        with st.expander("Ver tabela completa: prometido × medido"):
+            st.dataframe(claims_view, width="stretch", hide_index=True)
 
-    st.caption("Análise completa e comparação com promessas dos fabricantes (pnpm / Bun) na T18 (#115).")
+        st.info(
+            "**Quatro ressalvas declaradas antes de julgar as promessas (`docs/proposta.md` §6.3):** "
+            "(1) Os benchmarks do `pnpm` e do `Bun` rodam em **Linux x64**, enquanto medimos no **Windows 11** "
+            "(onde criar milhares de arquivos no NTFS + Defender custa mais caro); "
+            "(2) eles comparam contra o **npm 12**, e usamos o **npm 11.19.1** (Node 24 LTS); "
+            "(3) os projetos-carga são diferentes; e "
+            "(4) na página do Bun, há inconsistência entre gráfico (`0,21 s`) e tabela (`210 s`)."
+        )
+
+    # ---------------------------------------------------------------- 3. Disco e arquivos
+    st.markdown("#### 3. Disco, número de arquivos e compatibilidade (cenário CI)")
+    st.plotly_chart(
+        figures.fig_footprint(df, scenario="ci", title="Pegada total em disco: projeto + cache (mediana, cenário CI)"),
+        width="stretch",
+    )
+    st.markdown(_vs_npm_disk_reading(df, scenario="ci"))
+
+    ci_valid = stats.add_derived(stats.valid_runs(df[df["scenario"] == "ci"]))
+    if not ci_valid.empty:
+        ok_series = (df["exit_code"] == 0) & df["build_ok"].astype(bool)
+        compat = ok_series.groupby([df["project"], df["manager"]], observed=True).mean().rename("valid_rate")
+        summary_ci = (
+            ci_valid.groupby(["project", "manager"], observed=True)[
+                ["wall_s", "disk_mb", "cache_mb", "footprint_mb", "n_files"]
+            ]
+            .median()
+            .join(compat)
+            .reset_index()
+        )
+        ci_table = pd.DataFrame({
+            "Projeto": summary_ci["project"].map(lambda p: PROJECTS[p]["label"]),
+            "Gerenciador": summary_ci["manager"].map(_label),
+            "Tempo CI (s)": summary_ci["wall_s"].round(2),
+            "Projeto (MB)": summary_ci["disk_mb"].round(1),
+            "Cache (MB)": summary_ci["cache_mb"].round(1),
+            "Total em disco (MB)": summary_ci["footprint_mb"].round(1),
+            "Arquivos no projeto": summary_ci["n_files"].round(0).astype(int),
+            "Build válido": summary_ci["valid_rate"].map(lambda v: f"{_num(100 * v, 0)}%"),
+        })
+        st.dataframe(ci_table, width="stretch", hide_index=True)
+
+    # ---------------------------------------------------------------- 4. Testes estatísticos
+    st.markdown("#### 4. Testes: Wilcoxon pareado + correção de Holm e Cliff's δ (tempo)")
+    if not vs_ctrl_time.empty:
+        test_view = pd.DataFrame({
+            "Projeto": vs_ctrl_time["project"].map(lambda p: PROJECTS[p]["label"]),
+            "Cenário": vs_ctrl_time["scenario"].map(lambda s: SCENARIOS[s]["label"]),
+            "Gerenciador": vs_ctrl_time["manager"].map(_label),
+            "Pares": vs_ctrl_time["n_pairs"],
+            "Mediana npm (s)": vs_ctrl_time["median_control"].round(2),
+            "Mediana (s)": vs_ctrl_time["median_manager"].round(2),
+            "Speedup": vs_ctrl_time["speedup"].map(lambda v: f"{_num(v, 2)}×"),
+            "IC 95%": [
+                f"[{_num(lo, 2)}×; {_num(hi, 2)}×]"
+                for lo, hi in zip(vs_ctrl_time["speedup_low"], vs_ctrl_time["speedup_high"], strict=True)
+            ],
+            "Cliff's δ": vs_ctrl_time["cliffs_delta"].round(2),
+            "Magnitude": vs_ctrl_time["magnitude"],
+            "p (Holm)": vs_ctrl_time["p_holm"].map(_pval),
+            "Rejeita H₀": vs_ctrl_time["reject"].map({True: "sim", False: "não"}),
+        })
+        st.dataframe(test_view, width="stretch", hide_index=True)
+
+        by_machine = stats.compare_to_control(
+            df, metric="wall_s", group=("machine", "project", "scenario")
+        )
+        with st.expander("Ver análise por máquina (ameaça C1 — blocos individuais)"):
+            st.caption(
+                "Como as 10 repetições na mesma máquina não são totalmente independentes (C1), "
+                "mostramos também o speedup e o Wilcoxon pareado separadamente por máquina."
+            )
+            if not by_machine.empty:
+                m_view = pd.DataFrame({
+                    "Máquina": by_machine["machine"],
+                    "Projeto": by_machine["project"].map(lambda p: PROJECTS[p]["label"]),
+                    "Cenário": by_machine["scenario"].map(lambda s: SCENARIOS[s]["label"]),
+                    "Gerenciador": by_machine["manager"].map(_label),
+                    "Mediana npm (s)": by_machine["median_control"].round(2),
+                    "Mediana (s)": by_machine["median_manager"].round(2),
+                    "Speedup": by_machine["speedup"].map(lambda v: f"{_num(v, 2)}×"),
+                    "p (Holm)": by_machine["p_holm"].map(_pval),
+                    "Rejeita H₀": by_machine["reject"].map({True: "sim", False: "não"}),
+                })
+                st.dataframe(m_view, width="stretch", hide_index=True)
 
 
 def _num(x: float, decimals: int = 1) -> str:
