@@ -13,7 +13,8 @@ Cada ameaça tem uma situação:
 ## O que muda nas conclusões
 
 1. **A inferência vale para estas 3 máquinas.** As repetições não são amostras independentes de
-   "máquinas Windows" (C1).
+   "máquinas Windows" (C1). O sentido dos resultados se repete nas 3 máquinas em 48 das 51
+   comparações significativas contra o npm.
 2. **`wall_s` e o disco sustentam comparações. CPU e RAM do Bun, não** (Co1).
 3. **O cenário `cold` não instala exatamente a mesma árvore dos cenários com lockfile.** Entre as
    máquinas, a árvore é a mesma porque as 3 usam o mesmo `registry/storage/` (I1).
@@ -24,7 +25,7 @@ Cada ameaça tem uma situação:
 
 | # | Ameaça | Evidência ou efeito | Mitigação ou limite | Situação |
 |---|---|---|---|---|
-| C1 | **Pseudorreplicação** (Hurlbert, 1984): `stats.py` pareia por máquina × repetição e trata os 30 blocos como independentes | Repetições na mesma máquina compartilham hardware, disco e configuração. Os p-valores podem sair otimistas se lidos como generalização para outras máquinas | Ler os testes como comparação **nestas 3 máquinas**; mostrar o resultado por máquina e apoiar a conclusão no tamanho do efeito. Com só 3 medianas, um Wilcoxon bicaudal não passa de p = 0,25, então não dá para testar no nível da máquina | **Aberta** (definir na #115) |
+| C1 | **Pseudorreplicação** (Hurlbert, 1984): `stats.py` pareia por máquina × repetição e trata os 30 blocos como independentes | Repetições na mesma máquina compartilham hardware, disco e configuração. Os p-valores podem sair otimistas se lidos como generalização para outras máquinas | Os testes são lidos como comparação **nestas 3 máquinas**, e a conclusão se apoia no tamanho do efeito e na consistência entre blocos. Com só 3 medianas, um Wilcoxon bicaudal não passa de p = 0,25, então não dá para testar no nível da máquina. Decisão da #115: o dashboard repete a análise **separadamente por máquina**. Das 51 comparações contra o npm significativas no conjunto, 48 têm o mesmo sentido nas 3 máquinas e 32 também são significativas em cada máquina sozinha (139 de 180 no total por máquina). O mais rápido de cada célula é o mesmo nas 3 máquinas em 8 de 12 | Declarada |
 | C2 | Variância do ambiente inflando o erro | 11 de 1.450 medições em células com mediana ≥ 1 s passaram de 3× a mediana da célula: 10 do npm e 1 do Yarn Berry PnP. Sete delas são da máquina `luisa` (I9) | Protocolo fixo, aquecimento descartado, 10 repetições, mediana e testes não paramétricos. **Nenhuma linha é removida por ser "estranha"** | Mitigada |
 | C3 | Poder insuficiente | Na simulação sobre o piloto, `express-api cold` teve poder de 2% para speedup de 1,2×, por causa do ruído do npm naquela amostra | N = 10 pela análise de poder (`poder.md`); células com pouco poder não sustentam "não há diferença" | Declarada |
 | C4 | Poder estimado com cenários que o piloto não teve | `ci` e `reinstall` herdaram o ruído de `cold` e `warm-cache` | Recalcular a variância com a coleta completa e reportar a observada | Declarada |

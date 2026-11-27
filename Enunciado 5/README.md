@@ -55,8 +55,10 @@ uv run python scripts/build_report.py [--clean]   # compila article/ e gera RELA
 Na primeira execução, o `build_report.py` baixa o TinyTeX (via `pytinytex`, em `~/.pytinytex`) e
 alguns pacotes do CTAN. Não precisa de `sudo`, Perl nem Docker.
 
-Enquanto não há coleta real, o dashboard e a análise usam o **CSV sintético** (números inventados,
-semente fixa), no mesmo formato da coleta. Ver [docs/schema.md](docs/schema.md).
+O dashboard e a análise leem o dataset validado `data/processed/runs_all.csv` (as 3 coletas
+juntas, gerado por `uv run lab05 validate`). Sem ele, caem para a coleta crua, depois para o piloto
+e, por último, para o **CSV sintético** (números inventados, semente fixa), sempre com aviso. Ver
+[docs/schema.md](docs/schema.md) e [docs/validacao.md](docs/validacao.md).
 
 ## Estrutura
 
